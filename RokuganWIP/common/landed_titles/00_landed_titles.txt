@@ -62,6 +62,78 @@ e_rokugan = {
                  }
              }
          }
+		  d_doji = {
+             color = { 0 0 0 }
+             color2 = { 255 255 255 }
+             capital = c_kazenmuketsu_province
+             
+             c_oyomesan_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_oyomesan_shiro = {
+                     province = 12
+                 }
+                 b_benten_seido = {
+                     province = 13
+                 }
+				 b_seven_fold_palace = {
+                     province = 14
+                 }
+				 b_musume_mura = {
+                     province = 15
+                 }
+             }
+			 
+			 c_kazenmuketsu_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_kyuden_doji = {
+                     province = 16
+                 }
+                 b_kyuden_garden = {
+                     province = 17
+                 }
+				 b_blind_monk_temple = {
+                     province = 18
+                 }
+				 b_shizuka_toshi = {
+                     province = 19
+                 }
+				 b_kyuden_no_kin = {
+                     province = 20
+                 }
+             }
+			 c_itoshii_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_sea_watch_castle = {
+                     province = 21
+                 }
+			}
+			 c_umoeru_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_umoeru_mura = {
+                     province = 22
+                 }
+			}
+			
+			c_kougen_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_ookami_toshi = {
+                     province = 23
+                 }
+				 b_kougen_mura = {
+                     province = 24
+                 }
+			}
+         }
      }
  }
 
