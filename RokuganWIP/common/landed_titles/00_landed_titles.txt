@@ -2,55 +2,68 @@
 @better_than_the_alternatives_score = 50
 @always_primary_score = 1000
 
-e_maghreb = {
-	color = { 209 63 44 }
-	
-	capital = c_canarias # Canarias
-	
-	ai_primary_priority = {
-		if = {
-			limit = {
-				OR = {
-					culture = culture:baranis
-				}
-			}
-			add = @correct_culture_primary_score
-		}
-	}
-	
-	k_maghreb = {
-		color = { 196 36 18 }
-		
-		capital = c_canarias # Canarias
-		
-		ai_primary_priority = {
-			if = {
-				limit = {
-					OR = {
-						culture = culture:baranis
-					}
-				}
-				add = @correct_culture_primary_score
-			}
-		}
-		
-		d_canarias = {
-			color = { 42 127 201 }
-			
-			capital = c_canarias # Gran Canaria
-			
-			c_canarias = {
-				color = { 22 107 181 }
-				
-				b_grancanaria = {
-					province = 1
-					
-					color = { 22 107 181 }
-				}
-			}
-		}
-	}
-}
+e_rokugan = {
+     color = { 0 0 0 }
+     color2 = { 255 255 255 }
+     capital = c_shinkyou_province
+ 
+     k_crane_clan = {
+         color = { 0 0 0 }
+         color2 = { 255 255 255 }
+         capital = c_shinkyou_province
+ 
+         d_asahina = {
+             color = { 0 0 0 }
+             color2 = { 255 255 255 }
+             capital = c_shinkyou_province
+             
+             c_shinkyou_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shinden_asahina = {
+                     province = 3
+                 }
+                 b_shiro_hanamidoki = {
+                     province = 5
+                 }
+				 b_garden_under_shadow_city = {
+                     province = 4
+                 }
+				 b_bunya_sano_asahina = {
+                     province = 6
+                 }
+             }
+			 
+			 c_wakiaiai_province = {
+                 color = { 114 5 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_never_sleeps_port = {
+                     province = 7
+                 }
+             }
+			 
+			 c_anshin_province = {
+                 color = { 154 5 49 }
+                 color2 = { 255 255 255 }
+ 
+                 b_wall_above_ocean = {
+                     province = 8
+                 }
+				 b_zenshou_tetsu = {
+                     province = 9
+                 }
+				 b_oni_mura = {
+                     province = 10
+                 }
+				 b_heaven_wisdom_temple = {
+                     province = 11
+                 }
+             }
+         }
+     }
+ }
 
 # These titles cut hundreds of errors from logs. 
 e_hre = { landless = yes }
