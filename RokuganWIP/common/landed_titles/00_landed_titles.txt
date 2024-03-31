@@ -3,22 +3,22 @@
 @always_primary_score = 1000
 
 e_rokugan = {
-     color = { 0 0 0 }
+     color = { 74 140 137 }
      color2 = { 255 255 255 }
      capital = c_shinkyou_province
  
      k_crane_clan = {
-         color = { 0 0 0 }
+         color = { 168 221 254 }
          color2 = { 255 255 255 }
          capital = c_shinkyou_province
  
          d_asahina = {
-             color = { 0 0 0 }
+             color = { 108 199 254 }
              color2 = { 255 255 255 }
              capital = c_shinkyou_province
              
              c_shinkyou_province = {
-                 color = { 227 115 149 }
+                 color = { 108 199 254 }
                  color2 = { 255 255 255 }
  
                  b_shinden_asahina = {
@@ -36,7 +36,7 @@ e_rokugan = {
              }
 			 
 			 c_wakiaiai_province = {
-                 color = { 114 5 149 }
+                 color = { 18 151 206 }
                  color2 = { 255 255 255 }
  
                  b_never_sleeps_port = {
@@ -45,7 +45,7 @@ e_rokugan = {
              }
 			 
 			 c_anshin_province = {
-                 color = { 154 5 49 }
+                 color = { 166 200 219 }
                  color2 = { 255 255 255 }
  
                  b_wall_above_ocean = {
@@ -63,12 +63,12 @@ e_rokugan = {
              }
          }
 		  d_doji = {
-             color = { 0 0 0 }
+             color = { 168 221 254 }
              color2 = { 255 255 255 }
              capital = c_kazenmuketsu_province
              
              c_oyomesan_province = {
-                 color = { 227 115 149 }
+                 color = { 168 221 254 }
                  color2 = { 255 255 255 }
  
                  b_oyomesan_shiro = {
@@ -86,7 +86,7 @@ e_rokugan = {
              }
 			 
 			 c_kazenmuketsu_province = {
-                 color = { 227 115 149 }
+                 color = { 108 199 254 }
                  color2 = { 255 255 255 }
  
                  b_kyuden_doji = {
@@ -134,7 +134,235 @@ e_rokugan = {
                  }
 			}
          }
+		 d_daidoji = {
+             color = { 42 143 255 }
+             color2 = { 255 255 255 }
+             capital = c_hayaku_province
+             
+             c_kosaten_province = {
+                 color = { 42 143 255 }
+                 color2 = { 255 255 255 }
+ 
+                 b_kosaten_shiro = {
+                     province = 25
+                 }
+             }
+			 
+			 c_hayaku_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_daidoji = {
+                     province = 26
+                 }
+				 b_prosperous__plains_city = {
+                     province = 27
+                 }
+				 b_giji_seido = {
+                     province = 28
+                 }
+				 b_tsangusuri = {
+                     province = 29
+                 }
+             }
+			 c_sabishii_province = {
+                 color = { 42 41 255 }
+                 color2 = { 255 255 255 }
+ 
+                 b_mura_sabishii = {
+                     province = 31
+                 }
+				 b_water_music_village = {
+                     province = 30
+                 }
+				 b_song_bird_cage = {
+                     province = 32
+                 }
+             }
+			 c_ichigun_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_daidoji_estate = {
+                     province = 33
+                 }
+				 b_daidoji_training_grounds = {
+                     province = 34
+                 }
+             }
+		}
+		 d_kakita = {
+             color = { 0 0 0 }
+             color2 = { 255 255 255 }
+             capital = c_takuetsu_province
+             
+             c_takuetsu_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_kyuden_kakita = {
+                     province = 35
+                 }
+				 b_kakita_seido = {
+                     province = 38
+                 }
+				 b_tsuma = {
+                     province = 36
+                 }
+				 b_shiro_iwasaki = {
+                     province = 37
+                 }
+             }
+			 
+			c_nanhan_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_ashidaka = {
+                     province = 39
+                 }
+			}
+			
+			c_gyousha_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_samui_kaze_toshi = {
+                     province = 40
+                 }
+				 b_jurojin_seido = {
+                     province = 41
+                 }
+			}
+			
+			c_kishou_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_kishou_shiro = {
+                     province = 42
+                 }
+				 b_aketsu = {
+                     province = 43
+                 }
+				 b_ice_fish_village = {
+                     province = 44
+                 }
+			}
+			
+			c_kintani_province = {
+                 color = { 227 115 149 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_kyotei = {
+                     province = 45
+                 }
+			}
+		}
      }
+	 k_lion_clan = {
+         color = { 255 213 35 }
+         color2 = { 255 255 255 }
+         capital = c_yama_province #TODO
+ 
+         d_matsu = {
+             color = { 219 165 47 }
+             color2 = { 255 255 255 }
+             capital = c_yama_province
+             
+             c_yama_province = {
+                 color = { 219 165 47 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_matsu = {
+                     province = 46
+                 }
+                 b_hall_ancestors = {
+                     province = 47
+                 }
+				 b_ikeda_toshi = {
+                     province = 48
+                 }
+				 b_rei_seido = {
+                     province = 49
+                 }
+				 b_makoto_seido = {
+                     province = 50
+                 }
+             }
+			 c_azuma_province = {
+                 color = { 166 114 0 }
+                 color2 = { 255 255 255 }
+ 
+                 b_kyakuchu_mura = {
+                     province = 51
+                 }
+			}
+			c_heigen_province = {
+                 color = { 243 237 72 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_koritome = {
+                     province = 52
+                 }
+				 b_koritome_toshi = {
+                     province = 53
+                 }
+			}
+			c_kaeru_province = {
+                 color = { 226 247 13 }
+                 color2 = { 255 255 255 }
+ 
+                 b_capture_city = {
+                     province = 54
+                 }
+				 b_kitsu_tombs = {
+                     province = 55
+                 }
+				 b_tsumekurachi_kitsu_shinden = {
+                     province = 56
+                 }
+			}
+			c_tonfajutsen_province = {
+                 color = { 163 155 48 }
+                 color2 = { 255 255 255 }
+ 
+                 b_crossroad_castle = {
+                     province = 57
+                 }
+			}
+			c_yojin_province = {
+                 color = { 240 220 79 }
+                 color2 = { 255 255 255 }
+ 
+                 b_yojin_shiro = {
+                     province = 58
+                 }
+				 b_yojin_mura = {
+                     province = 59
+                 }
+			}
+			c_gakka_province = {
+                 color = { 69 67 42 }
+                 color2 = { 255 255 255 }
+ 
+                 b_kenson_gakka = {
+                     province = 60
+                 }
+				 b_yaruki_jukko_no_tera = {
+                     province = 61
+                 }
+			}
+			c_chugen_province = {
+                 color = { 229 215 23 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_chugen = {
+                     province = 62
+                 }
+			}
+		}
+	}
  }
 
 # These titles cut hundreds of errors from logs. 
