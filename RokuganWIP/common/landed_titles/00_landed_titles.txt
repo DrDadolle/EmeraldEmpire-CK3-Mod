@@ -264,7 +264,7 @@ e_rokugan = {
 	 k_lion_clan = {
          color = { 255 213 35 }
          color2 = { 255 255 255 }
-         capital = c_yama_province #TODO
+         capital = c_kenryu_province
  
          d_matsu = {
              color = { 219 165 47 }
@@ -362,6 +362,78 @@ e_rokugan = {
                      province = 62
                  }
 			}
+		}
+		 d_akodo = {
+             color = { 255 213 35 }
+             color2 = { 255 255 255 }
+             capital = c_kenryu_province
+             
+             c_kenryu_province = {
+                 color = { 255 213 35 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_akodo = {
+                     province = 63
+                 }
+                 b_yu_seido = {
+                     province = 64
+                 }
+            }
+			c_shimizu_province = {
+                 color = { 243 211 144 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_shimizu = {
+                     province = 65
+                 }
+            }
+			c_renga_province = {
+                 color = { 164 142 27 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_renga = {
+                     province = 66
+                 }
+				 b_renga_mura = {
+                     province = 67
+                 }
+            }
+			c_henkyou_province = {
+                 color = { 255 216 11 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_no_shin = {
+                     province = 68
+                 }
+				 b_henkyou_mura = {
+                     province = 69
+                 }
+            }
+			c_oiku_province = {
+                 color = { 244 213 48 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_oiku = {
+                     province = 71
+                 }
+				 b_oiku_mura = {
+                     province = 70
+                 }
+            }
+			c_kokoro_province = {
+                 color = { 252 241 180 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_seizaku = {
+                     province = 72
+                 }
+				 b_seizaku_toshi = {
+                     province = 73
+                 }
+				 b_nezuban_seido = {
+					province = 74
+				 }
+            }
 		}
 	}
  }
