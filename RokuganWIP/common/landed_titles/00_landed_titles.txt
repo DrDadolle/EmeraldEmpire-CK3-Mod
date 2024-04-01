@@ -106,7 +106,7 @@ e_rokugan = {
                  }
              }
 			 c_itoshii_province = {
-                 color = { 227 115 149 }
+                 color = { 39 83 89 }
                  color2 = { 255 255 255 }
  
                  b_sea_watch_castle = {
@@ -114,7 +114,7 @@ e_rokugan = {
                  }
 			}
 			 c_umoeru_province = {
-                 color = { 227 115 149 }
+                 color = { 121 241 251 }
                  color2 = { 255 255 255 }
  
                  b_umoeru_mura = {
@@ -123,7 +123,7 @@ e_rokugan = {
 			}
 			
 			c_kougen_province = {
-                 color = { 227 115 149 }
+                 color = { 21 115 193 }
                  color2 = { 255 255 255 }
  
                  b_ookami_toshi = {
@@ -140,7 +140,7 @@ e_rokugan = {
              capital = c_hayaku_province
              
              c_kosaten_province = {
-                 color = { 42 143 255 }
+                 color = { 17 51 55 }
                  color2 = { 255 255 255 }
  
                  b_kosaten_shiro = {
@@ -149,7 +149,7 @@ e_rokugan = {
              }
 			 
 			 c_hayaku_province = {
-                 color = { 227 115 149 }
+                 color = { 42 143 255 }
                  color2 = { 255 255 255 }
  
                  b_shiro_daidoji = {
@@ -169,18 +169,19 @@ e_rokugan = {
                  color = { 42 41 255 }
                  color2 = { 255 255 255 }
  
+				b_song_bird_cage = {
+                     province = 32
+                 }
                  b_mura_sabishii = {
                      province = 31
                  }
 				 b_water_music_village = {
                      province = 30
                  }
-				 b_song_bird_cage = {
-                     province = 32
-                 }
+				 
              }
 			 c_ichigun_province = {
-                 color = { 227 115 149 }
+                 color = { 9 31 38 }
                  color2 = { 255 255 255 }
  
                  b_daidoji_estate = {
@@ -192,12 +193,12 @@ e_rokugan = {
              }
 		}
 		 d_kakita = {
-             color = { 0 0 0 }
+             color = { 31 172 231 }
              color2 = { 255 255 255 }
              capital = c_takuetsu_province
              
              c_takuetsu_province = {
-                 color = { 227 115 149 }
+                 color = { 31 172 231 }
                  color2 = { 255 255 255 }
  
                  b_kyuden_kakita = {
@@ -215,7 +216,7 @@ e_rokugan = {
              }
 			 
 			c_nanhan_province = {
-                 color = { 227 115 149 }
+                 color = { 10 127 100 }
                  color2 = { 255 255 255 }
  
                  b_shiro_ashidaka = {
@@ -224,7 +225,7 @@ e_rokugan = {
 			}
 			
 			c_gyousha_province = {
-                 color = { 227 115 149 }
+                 color = { 86 138 207 }
                  color2 = { 255 255 255 }
  
                  b_samui_kaze_toshi = {
@@ -236,7 +237,7 @@ e_rokugan = {
 			}
 			
 			c_kishou_province = {
-                 color = { 227 115 149 }
+                 color = { 87 119 123 }
                  color2 = { 255 255 255 }
  
                  b_kishou_shiro = {
@@ -251,7 +252,7 @@ e_rokugan = {
 			}
 			
 			c_kintani_province = {
-                 color = { 227 115 149 }
+                 color = { 18 151 207 }
                  color2 = { 255 255 255 }
  
                  b_shiro_kyotei = {

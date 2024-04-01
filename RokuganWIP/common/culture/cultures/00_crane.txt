@@ -1,0 +1,105 @@
+﻿doji = {
+	color = { 0.0 1.0 1.0 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_courtly
+	heritage = heritage_crane
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+	 tradition_astute_diplomats
+	 tradition_esteemed_hospitality
+	 tradition_staunch_traditionalists
+	 tradition_agrarian
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+kakita = {
+	color = { 0.0 0.8 1.0 } # The color of the culture, used e.g. on the map
+	parents = { doji }
+
+	ethos = ethos_courtly
+	heritage = heritage_crane
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+	 tradition_metal_craftsmanship
+	 tradition_gardening
+	 tradition_esteemed_hospitality
+	 tradition_only_the_strong
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+daidoji = {
+	color = { 0.0 1.0 0.8 } # The color of the culture, used e.g. on the map
+	parents = { doji }
+
+	ethos = ethos_stoic
+	heritage = heritage_crane
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+	 tradition_castle_keepers
+	 tradition_adaptive_skirmishing
+	 tradition_esteemed_hospitality
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+asahina = {
+	color = { 0.0 0.8 0.8 } # The color of the culture, used e.g. on the map
+	parents = { doji }
+
+	ethos = ethos_spiritual
+	heritage = heritage_crane
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+	 tradition_isolationist
+	 tradition_esteemed_hospitality
+	 tradition_pacifism
+	 tradition_vegetarianism
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
