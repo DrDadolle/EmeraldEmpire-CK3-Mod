@@ -227,9 +227,9 @@ fortunism_religion = {
 			color = { 0.2 0.9 0.2 }
 			icon = lamaism_buddhism
 
-			holy_site = benten_temple
-			holy_site = jurojin_temple
-			#holy_site = kashima
+			holy_site = benten_seido
+			holy_site = jurojin_seido
+			holy_site = bishamon_seido
 			#holy_site = aso
 			#holy_site = mt_fuji
 

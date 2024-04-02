@@ -18,7 +18,7 @@ tdb_shinsei_holy_site_1 = {
 #################
 # Fortunism
 #################
-benten_temple = {
+benten_seido = {
 
 	county = c_oyomesan_province
 	barony = b_benten_seido
@@ -30,7 +30,7 @@ benten_temple = {
 	}
 }
 
-jurojin_temple = {
+jurojin_seido = {
 
 	county = c_gyousha_province
 	barony = b_jurojin_seido
@@ -39,6 +39,18 @@ jurojin_temple = {
 		name = jurojin_temple_effect_name
 		learning = 1
 		health = 0.1
+	}
+}
+
+bishamon_seido = {
+
+	county = c_daikiri_province
+	barony = b_bishamon_seido
+
+	character_modifier = {
+		name = jurojin_temple_effect_name
+		martial_per_prestige_level = 1
+		knight_effectiveness_mult = 0.1
 	}
 }
 

@@ -435,6 +435,62 @@ e_rokugan = {
 				 }
             }
 		}
+		 d_kitsu = {
+             color = { 217 210 55 }
+             color2 = { 255 255 255 }
+             capital = c_hayai_province
+             
+             c_hayai_province = {
+                 color = { 217 210 55 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_hayai = {
+                     province = 75
+                 }
+				 b_hayai_seido = {
+                     province = 76
+                 }
+             }
+			 c_rugashi_province = {
+                 color = { 155 130 28 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_rugashi = {
+                     province = 77
+                 }
+				 b_rugashi_seido = {
+                     province = 78
+                 }
+				 b_rugashi_toshi = {
+                     province = 79
+                 }
+             }
+			 c_foshi_province = {
+                 color = { 203 149 59 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_foshi = {
+                     province = 80
+                 }
+				 b_foshi_mura = {
+                     province = 81
+                 }
+             }
+			 c_daikiri_province = {
+                 color = { 99 83 13 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_daikiri = {
+                     province = 82
+                 }
+				 b_bishamon_seido = {
+                     province = 83
+                 }
+				 b_blue_chrysathemum_village = {
+                     province = 84
+                 }
+             }
+		}
 	}
  }
 
