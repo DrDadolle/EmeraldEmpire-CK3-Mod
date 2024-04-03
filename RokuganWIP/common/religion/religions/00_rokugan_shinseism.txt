@@ -29,10 +29,6 @@ shinseism_religion = {
 	doctrine = doctrine_clerical_marriage_disallowed
 	doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
 
-	##TODO to keep ?
-	#Special Doctrine for Eastern Syncretism
-	doctrine = special_doctrine_is_eastern_faith
-	
 	#Allow pilgrimages
 	doctrine = doctrine_pilgrimage_encouraged
 
@@ -236,6 +232,10 @@ shinseism_religion = {
 			doctrine = tenet_adaptive
 			doctrine = tenet_inner_journey
 			doctrine = tenet_monasticism
+			
+			##TODO to keep ?
+			#Special Doctrine for Eastern Syncretism
+			doctrine = special_doctrine_is_eastern_faith
 
 
 			doctrine = doctrine_clerical_succession_temporal_appointment
@@ -254,6 +254,11 @@ shinseism_religion = {
 			doctrine = tenet_adaptive
 			doctrine = tenet_inner_journey
 			doctrine = tenet_pacifism
+			
+			
+			#TODO No special doctrine => is heresy
+			#Special Doctrine for Eastern Syncretism
+			#doctrine = special_doctrine_is_eastern_faith
 		}
 
 	}
