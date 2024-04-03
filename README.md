@@ -6,6 +6,20 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 
 
 ## short term goals
+- custom bookmark at date 1123
+- creating dynasties
+	- new dynasty / CoA / Motto / House
+- creating Crane Coat of Arms (at least placeholders ones)
+- creating Doji Hotaru, her family, and Kakita/Daidoji/Asahina daimyo (except the DNA)
+- assigning titles to Crane Characters
+- custom bookmark Doji Hotaru
+- change duchy naming style to "arabic/dynastic one)
 - Have a not-so-ugly heightmap
 - paint the map
-- working provinces for at least 1 clan (crane for instance)
+
+
+
+## What is done
+- provinces 
+	- crane clan
+	- lion clan : Kitsu, Akodo, Matsu
