@@ -1,17 +1,14 @@
-akodo = {
-	color = { 1.0 0.75 0.0 } # The color of the culture, used e.g. on the map
+hantei = {
+	color = { 0.0 0.66 0.42 } # The color of the culture, used e.g. on the map
 	
-	ethos = ethos_bellicose
-	heritage = heritage_lion
+	ethos = ethos_courtly
+	heritage = heritage_imperial
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-		tradition_martial_admiration
-		tradition_agrarian
 		tradition_staunch_traditionalists
-		tradition_formation_fighting
-		tradition_forbearing
-		#TODO tabletop warrior
+		tradition_isolationist
+		tradition_hereditary_hierarchy
 	}
    
 	name_list = name_list_han
@@ -26,18 +23,16 @@ akodo = {
 	}
 }
 
-matsu = {
-	color = { 0.35 0.15 0.13 } # The color of the culture, used e.g. on the map
+otomo = {
+	color = { 0.0 0.56 0.0 } # The color of the culture, used e.g. on the map
 	
-	ethos = ethos_bellicose
-	heritage = heritage_lion
+	ethos = ethos_courtly
+	heritage = heritage_imperial
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-		tradition_female_only_inheritance
 		tradition_staunch_traditionalists
-		tradition_reverence_for_veterans
-		tradition_quarrelsome
+		tradition_legalistic
 		tradition_eye_for_an_eye
 	}
    
@@ -53,17 +48,17 @@ matsu = {
 	}
 }
 
-kitsu = {
-	color = { 0.99 0.93 0.0 } # The color of the culture, used e.g. on the map
+miya = {
+	color = { 0.74 0.85 0.34 } # The color of the culture, used e.g. on the map
 	
-	ethos = ethos_spiritual
-	heritage = heritage_lion
+	ethos = ethos_bureaucratic
+	heritage = heritage_imperial
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-		tradition_pastoralists
-		tradition_martial_admiration
-		tradition_mystical_ancestors
+		tradition_equitable
+		tradition_xenophilic
+		tradition_language_scholars
 	}
    
 	name_list = name_list_han
@@ -78,18 +73,17 @@ kitsu = {
 	}
 }
 
-ikoma = {
-	color = { 0.5 0.4 0.1 } # The color of the culture, used e.g. on the map
+seppun = {
+	color = { 0.16 0.67 0.53 } # The color of the culture, used e.g. on the map
 	
-	ethos = ethos_courtly
-	heritage = heritage_lion
+	ethos = ethos_stoic
+	heritage = heritage_imperial
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-		tradition_storytellers 
-		tradition_martial_admiration
-		tradition_mystical_ancestors
-		tradition_life_is_just_a_joke
+		tradition_staunch_traditionalists
+		tradition_strength_in_numbers
+		tradition_by_the_sword
 	}
    
 	name_list = name_list_han

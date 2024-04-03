@@ -1,69 +1,15 @@
-akodo = {
-	color = { 1.0 0.75 0.0 } # The color of the culture, used e.g. on the map
-	
-	ethos = ethos_bellicose
-	heritage = heritage_lion
-	language = language_rokugani
-	martial_custom = martial_custom_equal
-	traditions = {
-		tradition_martial_admiration
-		tradition_agrarian
-		tradition_staunch_traditionalists
-		tradition_formation_fighting
-		tradition_forbearing
-		#TODO tabletop warrior
-	}
-   
-	name_list = name_list_han
-	
-	coa_gfx = { chinese_group_coa_gfx }
-	building_gfx = { indian_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
-	unit_gfx = { mongol_unit_gfx }
-	
-	ethnicities = {
-		10 = asian
-	}
-}
-
-matsu = {
-	color = { 0.35 0.15 0.13 } # The color of the culture, used e.g. on the map
-	
-	ethos = ethos_bellicose
-	heritage = heritage_lion
-	language = language_rokugani
-	martial_custom = martial_custom_equal
-	traditions = {
-		tradition_female_only_inheritance
-		tradition_staunch_traditionalists
-		tradition_reverence_for_veterans
-		tradition_quarrelsome
-		tradition_eye_for_an_eye
-	}
-   
-	name_list = name_list_han
-	
-	coa_gfx = { chinese_group_coa_gfx }
-	building_gfx = { indian_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
-	unit_gfx = { mongol_unit_gfx }
-	
-	ethnicities = {
-		10 = asian
-	}
-}
-
-kitsu = {
-	color = { 0.99 0.93 0.0 } # The color of the culture, used e.g. on the map
+isawa = {
+	color = { 1.0 0.49 0.0 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_spiritual
-	heritage = heritage_lion
+	heritage = heritage_phoenix
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-		tradition_pastoralists
-		tradition_martial_admiration
-		tradition_mystical_ancestors
+		tradition_religious_patronage
+		tradition_mendicant_mystics
+		tradition_zealous_people
+		tradition_vegetarianism
 	}
    
 	name_list = name_list_han
@@ -78,18 +24,17 @@ kitsu = {
 	}
 }
 
-ikoma = {
-	color = { 0.5 0.4 0.1 } # The color of the culture, used e.g. on the map
+asako = {
+	color = { 1.0 0.6 0.4 } # The color of the culture, used e.g. on the map
 	
-	ethos = ethos_courtly
-	heritage = heritage_lion
+	ethos = ethos_bureaucratic
+	heritage = heritage_phoenix
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-		tradition_storytellers 
-		tradition_martial_admiration
-		tradition_mystical_ancestors
-		tradition_life_is_just_a_joke
+		tradition_philosopher_culture
+		tradition_zealous_people
+		tradition_medicinal_plants
 	}
    
 	name_list = name_list_han
@@ -102,4 +47,56 @@ ikoma = {
 	ethnicities = {
 		10 = asian
 	}
+}
+
+shiba = {
+	color = { 0.93 0.53 0.18 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_stoic
+	heritage = heritage_phoenix
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_stalwart_defenders
+		tradition_forbearing
+		tradition_modest
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+kaito = {
+	color = { 0.82 0.41 0.12 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_spiritual
+	heritage = heritage_phoenix
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_mountain_homes
+		tradition_mountaineers
+		tradition_longbow_competitions
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+	
+	#TODO make it divert from gaijin stuff ?
 }

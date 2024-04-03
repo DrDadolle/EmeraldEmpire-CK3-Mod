@@ -1,0 +1,129 @@
+hida = {
+	color = { 0.0 0.53 0.74 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_stoic
+	heritage = heritage_crab
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_ruling_caste
+		tradition_castle_keepers
+		tradition_talent_acquisition
+		tradition_stalwart_defenders
+		tradition_warrior_culture
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+hiruma = {
+	color = { 0.36 0.54 0.66 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_stoic
+	heritage = heritage_crab
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_adaptive_skirmishing
+		tradition_eye_for_an_eye
+		tradition_forbearing
+		tradition_hunters
+		tradition_warrior_culture
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+kuni = {
+	color = { 0.2 0.2 0.6 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_spiritual
+	heritage = heritage_crab
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_talent_acquisition
+		tradition_warrior_monks
+		tradition_warrior_culture
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+kaiu = {
+	color = { 0.4 0.6 0.8 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_crab
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_metal_craftsmanship
+		tradition_castle_keepers
+		tradition_warrior_culture
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+yasuki = {
+	color = { 0.11 0.67 0.84 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_communal
+	heritage = heritage_crab
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_family_entrepreneurship
+		tradition_maritime_mercantilism
+		tradition_fishermen
+		tradition_warrior_culture
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}

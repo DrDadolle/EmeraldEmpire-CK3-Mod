@@ -463,3 +463,63 @@ heritage_lion = {
 	}
 	audio_parameter = european
 }
+
+heritage_phoenix = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_phoenix
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_dragon = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_dragon
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_scorpion = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_scorpion
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_crab = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_crab
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_unicorn = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_unicorn
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_imperial = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_imperial
+		}
+	}
+	audio_parameter = european
+}

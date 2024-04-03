@@ -1,0 +1,129 @@
+shinjo = {
+	color = { 0.6 0.4 0.8 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_unicorn
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_pastoralists
+		tradition_culture_blending
+		tradition_horse_breeder
+		tradition_hunters
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+ide = {
+	color = { 0.57 0.36 0.51 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_unicorn
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_esteemed_hospitality
+		tradition_culture_blending
+		tradition_language_scholars
+		tradition_xenophilic
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+utaku = {
+	color = { 0.54 0.17 0.89 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bellicose
+	heritage = heritage_unicorn
+	language = language_rokugani
+	martial_custom = martial_custom_female_only
+	traditions = {
+		tradition_female_only_inheritance
+		tradition_culture_blending
+		tradition_horse_breeder
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+iuchi = {
+	color = { 0.82 0.62 0.91 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_spiritual
+	heritage = heritage_unicorn
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_culture_blending
+		tradition_horse_breeder
+		tradition_sacred_hunts
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+moto = {
+	color = { 0.44 0.16 0.39 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bellicose
+	heritage = heritage_unicorn
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_horse_breeder
+		tradition_quarrelsome
+		tradition_hunters
+		tradition_concubines
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+	
+	#TODO divergent from gaijin ? Hybrid ???
+}
