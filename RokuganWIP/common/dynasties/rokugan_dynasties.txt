@@ -1,0 +1,59 @@
+﻿##### Crane Clan
+2100001 = {
+	name = dynn_doji
+	culture = doji
+	motto = dynn_doji_motto
+}
+2100002 = {
+	name = dynn_daidoji
+	culture = daidoji
+	motto = dynn_daidoji_motto
+}
+2100003 = {
+	name = dynn_asahina
+	culture = asahina
+	motto = dynn_asahina_motto
+}
+
+2100004 = {
+	name = dynn_kakita
+	culture = kakita
+	motto = dynn_kakita_motto
+}
+
+##### Lion Clan
+2100005 = {
+	name = dynn_akodo
+	culture = akodo
+	motto = dynn_akodo_motto
+}
+2100006 = {
+	name = dynn_matsu
+	culture = matsu
+	motto = dynn_matsu_motto
+}
+2100007 = {
+	name = dynn_kitsu
+	culture = kitsu
+	motto = dynn_kitsu_motto
+}
+
+2100008 = {
+	name = dynn_ikoma
+	culture = ikoma
+	motto = dynn_ikoma_motto
+}
+
+
+
+
+100848 = {
+	name = "dynn_Tikanariyen"
+	culture = "maghrebi"
+}
+
+# Keeping Prydain to dodge a stubborn error.
+1029001 = {
+	name = "dynn_Prydain"
+	culture = "welsh"
+}
