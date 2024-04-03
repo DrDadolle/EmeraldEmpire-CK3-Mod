@@ -3,7 +3,7 @@ hantei = {
 	
 	ethos = ethos_courtly
 	heritage = heritage_imperial
-	language = language_rokugani
+	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_staunch_traditionalists
@@ -28,7 +28,7 @@ otomo = {
 	
 	ethos = ethos_courtly
 	heritage = heritage_imperial
-	language = language_rokugani
+	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_staunch_traditionalists
@@ -53,7 +53,7 @@ miya = {
 	
 	ethos = ethos_bureaucratic
 	heritage = heritage_imperial
-	language = language_rokugani
+	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_equitable
@@ -78,7 +78,7 @@ seppun = {
 	
 	ethos = ethos_stoic
 	heritage = heritage_imperial
-	language = language_rokugani
+	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_staunch_traditionalists
