@@ -13,7 +13,7 @@ hida = {
 		tradition_warrior_culture
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -40,7 +40,7 @@ hiruma = {
 		tradition_warrior_culture
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -65,7 +65,7 @@ kuni = {
 		tradition_warrior_culture
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -90,7 +90,7 @@ kaiu = {
 		tradition_warrior_culture
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -116,7 +116,7 @@ yasuki = {
 		tradition_warrior_culture
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }

@@ -14,7 +14,7 @@ akodo = {
 		#TODO tabletop warrior
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -41,7 +41,7 @@ matsu = {
 		tradition_eye_for_an_eye
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -66,7 +66,7 @@ kitsu = {
 		tradition_mystical_ancestors
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -92,7 +92,7 @@ ikoma = {
 		tradition_life_is_just_a_joke
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }

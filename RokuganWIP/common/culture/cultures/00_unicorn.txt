@@ -12,7 +12,7 @@ shinjo = {
 		tradition_hunters
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -38,7 +38,7 @@ ide = {
 		tradition_xenophilic
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -63,7 +63,7 @@ utaku = {
 		tradition_horse_breeder
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -88,7 +88,7 @@ iuchi = {
 		tradition_sacred_hunts
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -114,7 +114,7 @@ moto = {
 		tradition_concubines
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }

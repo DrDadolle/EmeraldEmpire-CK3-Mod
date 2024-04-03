@@ -1,0 +1,27 @@
+﻿3000001 = {
+	name = "Hotaru" 	# Crane Clan Champion of 1123
+	dynasty = 2100001 	# Doji
+	female = yes
+	religion = "seven_fortunes"
+	culture = "doji"
+	sexuality = bisexual
+	
+	### Stats
+	martial = 8
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 6
+	learning = 4
+	
+	### Traits
+	trait = education_martial_4
+	trait = strong
+	trait = brave
+	trait = calm
+	trait = beauty_good_2
+
+	1101.1.1 = {
+		birth = yes
+	}
+	dna = doji_hotaru_dna_entry
+}

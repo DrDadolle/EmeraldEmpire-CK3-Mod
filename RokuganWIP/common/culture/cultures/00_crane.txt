@@ -12,7 +12,7 @@
 	 tradition_agrarian
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -39,7 +39,7 @@ kakita = {
 		 tradition_only_the_strong
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -65,7 +65,7 @@ daidoji = {
 		 tradition_esteemed_hospitality
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -92,7 +92,7 @@ asahina = {
 		 tradition_vegetarianism
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }

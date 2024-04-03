@@ -12,7 +12,7 @@ bayushi = {
 		tradition_festivities
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -38,7 +38,7 @@ shosuro = {
 		tradition_city_keepers
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -63,7 +63,7 @@ soshi = {
 		tradition_ruling_caste
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -88,7 +88,7 @@ yogo = {
 		tradition_monastic_communities
 	}
    
-	name_list = name_list_han
+	name_list = name_list_crane_family
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }

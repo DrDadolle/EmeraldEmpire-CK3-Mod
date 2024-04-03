@@ -2,6 +2,7 @@ d_doji = {
 	1123.1.1 = { 
 					liege=0
 					liege = "k_crane_clan"
+					holder = 3000001 # Doji Hotaru
 	}
 }
 
@@ -9,6 +10,7 @@ c_oyomesan_province = {
 	1123.1.1 = { 
 					liege=0
 					liege = "d_doji"
+					holder = 3000001 # Doji Hotaru
 	}
 }
 
@@ -16,6 +18,7 @@ c_kazenmuketsu_province = {
 	1123.1.1 = { 
 					liege=0
 					liege = "d_doji"
+					holder = 3000001 # Doji Hotaru
 	}
 }
 
