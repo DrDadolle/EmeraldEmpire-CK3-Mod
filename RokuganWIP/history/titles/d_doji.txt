@@ -1,0 +1,41 @@
+d_doji = {
+	1123.1.1 = { 
+					liege=0
+					liege = "k_crane_clan"
+	}
+}
+
+c_oyomesan_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_doji"
+	}
+}
+
+c_kazenmuketsu_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_doji"
+	}
+}
+
+c_itoshii_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_doji"
+	}
+}
+
+c_kougen_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_doji"
+	}
+}
+
+c_umoeru_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_doji"
+	}
+}

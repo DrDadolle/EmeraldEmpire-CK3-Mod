@@ -1,0 +1,34 @@
+d_daidoji = {
+	1123.1.1 = { 
+					liege=0
+					liege = "k_crane_clan"
+	}
+}
+
+c_kosaten_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_daidoji"
+	}
+}
+
+c_hayaku_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_daidoji"
+	}
+}
+
+c_sabishii_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_daidoji"
+	}
+}
+
+c_ichigun_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_daidoji"
+	}
+}

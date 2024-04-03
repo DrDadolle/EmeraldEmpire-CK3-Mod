@@ -1,0 +1,41 @@
+d_kakita = {
+	1123.1.1 = { 
+					liege=0
+					liege = "k_crane_clan"
+	}
+}
+
+c_takuetsu_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_kakita"
+	}
+}
+
+c_nanhan_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_kakita"
+	}
+}
+
+c_gyousha_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_kakita"
+	}
+}
+
+c_kishou_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_kakita"
+	}
+}
+
+c_kintani_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_kakita"
+	}
+}

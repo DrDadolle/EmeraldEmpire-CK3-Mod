@@ -1,0 +1,27 @@
+d_asahina = {
+	1123.1.1 = { 
+					liege=0
+					liege = "k_crane_clan"
+	}
+}
+
+c_shinkyou_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_asahina"
+	}
+}
+
+c_wakiaiai_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_asahina"
+	}
+}
+
+c_anshin_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_asahina"
+	}
+}

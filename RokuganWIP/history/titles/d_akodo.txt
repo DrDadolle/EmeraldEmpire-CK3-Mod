@@ -1,0 +1,48 @@
+d_akodo = {
+	1123.1.1 = { 
+					liege=0
+					liege = "k_lion_clan"
+	}
+}
+
+c_kenryu_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_akodo"
+	}
+}
+
+c_shimizu_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_akodo"
+	}
+}
+
+c_renga_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_akodo"
+	}
+}
+
+c_henkyou_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_akodo"
+	}
+}
+
+c_oiku_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_akodo"
+	}
+}
+
+c_kokoro_province = {
+	1123.1.1 = { 
+					liege=0
+					liege = "d_akodo"
+	}
+}
