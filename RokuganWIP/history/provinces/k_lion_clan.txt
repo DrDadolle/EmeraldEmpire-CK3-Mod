@@ -1,0 +1,222 @@
+#k_lion_clan
+##d_matsu ###################################
+###c_yama_province
+46 = {		#b_shiro_matsu
+	culture = matsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+47 = {		#b_hall_ancestors
+	culture = matsu
+	religion = west_african_pagan
+	holding = church_holding
+}
+48 = {		#b_ikeda_toshi
+	culture = matsu
+	religion = west_african_pagan
+	holding = city_holding
+}
+49 = {		#b_rei_seido
+	culture = matsu
+	religion = west_african_pagan
+	holding = church_holding
+}
+50 = {		#b_makoto_seido
+	culture = matsu
+	religion = west_african_pagan
+	holding = church_holding
+}
+###c_azuma_province
+51 = {		#b_kyakuchu_mura
+	culture = matsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+###c_heigen_province
+52 = {		#b_shiro_koritome
+	culture = matsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+53 = {		#b_koritome_toshi
+	culture = matsu
+	religion = west_african_pagan
+	holding = city_holding
+}
+###c_kaeru_province
+54 = {		#b_capture_city
+	culture = matsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+55 = {		#b_kitsu_tombs
+	culture = matsu
+	religion = west_african_pagan
+	holding = church_holding
+}
+56 = {		#b_tsumekurachi_kitsu_shinden
+	culture = matsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+###c_tonfajutsen_province
+57 = {		#b_crossroad_castle
+	culture = matsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+###c_yojin_province
+58 = {		#b_yojin_shiro
+	culture = matsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+59 = {		#b_yojin_mura
+	culture = matsu
+	religion = west_african_pagan
+	holding = city_holding
+}
+###c_gakka_province
+60 = {		#b_kenson_gakka
+	culture = matsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+61 = {		#b_yaruki_jukko_no_tera
+	culture = matsu
+	religion = west_african_pagan
+	holding = church_holding
+}
+###c_chugen_province
+62 = {		#b_shiro_chugen
+	culture = matsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+##d_akodo ###################################
+###c_kenryu_province
+63 = {		#b_shiro_akodo
+	culture = akodo
+	religion = west_african_pagan
+	holding = castle_holding
+}
+64 = {		#b_yu_seido
+	culture = akodo
+	religion = west_african_pagan
+	holding = church_holding
+}
+###c_shimizu_province
+65 = {		#b_shiro_shimizu
+	culture = akodo
+	religion = west_african_pagan
+	holding = castle_holding
+}
+###c_renga_province
+66 = {		#b_shiro_renga
+	culture = akodo
+	religion = west_african_pagan
+	holding = castle_holding
+}
+67 = {		#b_renga_mura
+	culture = akodo
+	religion = west_african_pagan
+	holding = city_holding
+}
+###c_henkyou_province
+68 = {		#b_shiro_no_shin
+	culture = akodo
+	religion = west_african_pagan
+	holding = castle_holding
+}
+69 = {		#b_henkyou_mura
+	culture = akodo
+	religion = west_african_pagan
+	holding = city_holding
+}
+###c_oiku_province
+70 = {		#b_oiku_mura
+	culture = akodo
+	religion = west_african_pagan
+	holding = city_holding
+}
+71 = {		#b_shiro_oiku
+	culture = akodo
+	religion = west_african_pagan
+	holding = castle_holding
+}
+###c_kokoro_province
+72 = {		#b_shiro_seizaku
+	culture = akodo
+	religion = west_african_pagan
+	holding = castle_holding
+}
+73 = {		#b_seizaku_toshi
+	culture = akodo
+	religion = west_african_pagan
+	holding = city_holding
+}
+74 = {		#b_nezuban_seido
+	culture = akodo
+	religion = west_african_pagan
+	holding = church_holding
+}
+##d_kitsu ###################################
+###c_hayai_province
+75 = {		#b_shiro_hayai
+	culture = kitsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+76 = {		#b_hayai_seido
+	culture = kitsu
+	religion = west_african_pagan
+	holding = church_holding
+}
+###c_rugashi_province
+77 = {		#b_shiro_rugashi
+	culture = kitsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+78 = {		#b_rugashi_seido
+	culture = kitsu
+	religion = west_african_pagan
+	holding = church_holding
+}
+79 = {		#b_rugashi_toshi
+	culture = kitsu
+	religion = west_african_pagan
+	holding = city_holding
+}
+###c_foshi_province
+80 = {		#b_shiro_foshi
+	culture = kitsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+81 = {		#b_foshi_mura
+	culture = kitsu
+	religion = west_african_pagan
+	holding = city_holding
+}
+###c_daikiri_province
+82 = {		#b_shiro_daikiri
+	culture = kitsu
+	religion = west_african_pagan
+	holding = castle_holding
+}
+83 = {		#b_bishamon_seido
+	culture = kitsu
+	religion = west_african_pagan
+	holding = church_holding
+}
+84 = {		#b_blue_chrysathemum_village
+	culture = kitsu
+	religion = west_african_pagan
+	holding = city_holding
+}
+
+#castle_holding
+#church_holding
+#city_holding
+#none

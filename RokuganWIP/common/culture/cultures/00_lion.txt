@@ -1,15 +1,16 @@
-﻿doji = {
-	color = { 0.0 1.0 1.0 } # The color of the culture, used e.g. on the map
+akodo = {
+	color = { 1.0 0.75 0.0 } # The color of the culture, used e.g. on the map
 	
-	ethos = ethos_courtly
-	heritage = heritage_crane
+	ethos = ethos_bellicose
+	heritage = heritage_lion
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-	 tradition_astute_diplomats
-	 tradition_esteemed_hospitality
-	 tradition_welcoming
-	 tradition_agrarian
+		tradition_martial_admiration
+		tradition_agrarian
+		tradition_staunch_traditionalists
+		tradition_formation_fighting
+		tradition_forbearing
 	}
    
 	name_list = name_list_han
@@ -24,19 +25,19 @@
 	}
 }
 
-kakita = {
-	color = { 0.0 0.8 1.0 } # The color of the culture, used e.g. on the map
-	parents = { doji }
-
-	ethos = ethos_courtly
-	heritage = heritage_crane
+matsu = {
+	color = { 0.35 0.15 0.13 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bellicose
+	heritage = heritage_lion
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-		 tradition_metal_craftsmanship
-		 tradition_gardening
-		 tradition_esteemed_hospitality
-		 tradition_only_the_strong
+		tradition_female_only_inheritance
+		tradition_staunch_traditionalists
+		tradition_reverence_for_veterans
+		tradition_quarrelsome
+		tradition_eye_for_an_eye
 	}
    
 	name_list = name_list_han
@@ -51,45 +52,43 @@ kakita = {
 	}
 }
 
-daidoji = {
-	color = { 0.0 1.0 0.8 } # The color of the culture, used e.g. on the map
-	parents = { doji }
-
-	ethos = ethos_stoic
-	heritage = heritage_crane
-	language = language_rokugani
-	martial_custom = martial_custom_equal
-	traditions = {
-		 tradition_castle_keepers
-		 tradition_adaptive_skirmishing
-		 tradition_esteemed_hospitality
-	}
-   
-	name_list = name_list_han
+kitsu = {
+	color = { 0.99 0.93 0.0 } # The color of the culture, used e.g. on the map
 	
-	coa_gfx = { chinese_group_coa_gfx }
-	building_gfx = { indian_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
-	unit_gfx = { mongol_unit_gfx }
-	
-	ethnicities = {
-		10 = asian
-	}
-}
-
-asahina = {
-	color = { 0.0 0.8 0.8 } # The color of the culture, used e.g. on the map
-	parents = { doji }
-
 	ethos = ethos_spiritual
-	heritage = heritage_crane
+	heritage = heritage_lion
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-		 tradition_isolationist
-		 tradition_esteemed_hospitality
-		 tradition_pacifism
-		 tradition_vegetarianism
+		tradition_pastoralists
+		tradition_martial_admiration
+		tradition_mystical_ancestors
+	}
+   
+	name_list = name_list_han
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+ikoma = {
+	color = { 0.5 0.4 0.1 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_courtly
+	heritage = heritage_lion
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_storytellers 
+		tradition_martial_admiration
+		tradition_mystical_ancestors
+		tradition_life_is_just_a_joke
 	}
    
 	name_list = name_list_han
