@@ -96,6 +96,7 @@
 	name = name_teinko 	# Spouse of Doji Satsume
 	dynasty = 2100004 	# Kakita
 	religion = "seven_fortunes"
+	female = yes
 	culture = "kakita"
 	
 	### Stats
@@ -123,6 +124,7 @@
 	name = name_shizue 	# Adopted (TODO) sister of Doji Hotaru
 	dynasty = 2100001 	# Doji
 	religion = "seven_fortunes"
+	female = yes
 	culture = "doji"
 	
 	### Stats
@@ -159,6 +161,30 @@
 
 
 	1102.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Doji
+3000010 = {
+	name = name_aki 	
+	dynasty = 2100001 	# Doji Aki #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "doji"
+
+	1090.1.1 = {
+		birth = yes
+	}
+}
+
+3000011 = {
+	name = name_tsukasa 	
+	dynasty = 2100001 	# Doji Tsukasa #TODO replace by  like the dynn_katogama_doji
+	female = yes
+	religion = "seven_fortunes"
+	culture = "doji"
+
+	1095.1.1 = {
 		birth = yes
 	}
 }
@@ -249,6 +275,7 @@
 	dynasty = 2100004 	# Kakita
 	religion = "cult_ancestors"
 	culture = "kakita" 	
+	female = yes
 	
 	### Stats
 	

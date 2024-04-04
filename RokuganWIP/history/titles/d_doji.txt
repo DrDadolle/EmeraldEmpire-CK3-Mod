@@ -34,6 +34,7 @@ c_kougen_province = {
 	1123.1.1 = { 
 					liege=0
 					liege = "d_doji"
+					holder = 3000010 # Doji Aki # Random County Holder
 	}
 }
 
@@ -41,5 +42,6 @@ c_umoeru_province = {
 	1123.1.1 = { 
 					liege=0
 					liege = "d_doji"
+					holder = 3000011 # Doji Tsukasa # Random County Holder
 	}
 }
