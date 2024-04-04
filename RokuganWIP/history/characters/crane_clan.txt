@@ -167,24 +167,24 @@
 
 ##### Random county holder for the Doji
 3000010 = {
-	name = name_aki 	
-	dynasty = 2100001 	# Doji Aki #TODO replace by  like the dynn_morehei_doji
+	name = name_aki 	#  Doji Aki  #TODO replace name
+	dynasty = 2100001 	# Doji  #TODO replace by  like the dynn_morehei_doji
 	religion = "seven_fortunes"
 	culture = "doji"
 
-	1090.1.1 = {
+	1100.1.1 = {
 		birth = yes
 	}
 }
 
 3000011 = {
-	name = name_tsukasa 	
-	dynasty = 2100001 	# Doji Tsukasa #TODO replace by  like the dynn_katogama_doji
+	name = name_akiko	#  Doji Akiko  #TODO replace name
+	dynasty = 2100001 	# Doji #TODO replace by  like the dynn_morehei_doji
 	female = yes
 	religion = "seven_fortunes"
 	culture = "doji"
 
-	1095.1.1 = {
+	1100.1.1 = {
 		birth = yes
 	}
 }
@@ -312,6 +312,30 @@
 	}
 }
 
+##### Random county holder for the Kakita
+3000030 = {
+	name = name_aki 	#  Kakita Aki  #TODO replace name
+	dynasty = 2100004 	# Kakita  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "kakita"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000031 = {
+	name = name_akiko	#  Kakita Akiko  #TODO replace name
+	dynasty = 2100004 	# Kakita #TODO replace by  like the dynn_morehei_doji
+	female = yes
+	religion = "cult_ancestors"
+	culture = "kakita"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
 #####################
 #	ASAHINA
 #####################
@@ -354,6 +378,30 @@
 	}
 }
 
+##### Random county holder for the Asahina
+3000050 = {
+	name = name_aki 	#  Asahina Aki  #TODO replace name
+	dynasty = 2100003 	# Asahina  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "asahina"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000051 = {
+	name = name_akiko	#  Asahina Akiko  #TODO replace name
+	dynasty = 2100003 	# Asahina #TODO replace by  like the dynn_morehei_doji
+	female = yes
+	religion = "seven_fortunes"
+	culture = "asahina"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
 #####################
 #	DAIDOJI
 #####################
@@ -376,5 +424,29 @@
 	}
 	1110.1.1 = {
 		give_nickname = nick_iron_crane
+	}
+}
+
+##### Random county holder for the Asahina
+3000070 = {
+	name = name_aki 	#  Daidoji Aki  #TODO replace name
+	dynasty = 2100002 	# Daidoji  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "daidoji"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000071 = {
+	name = name_akiko	#  Daidoji Akiko  #TODO replace name
+	dynasty = 2100002 	# Daidoji #TODO replace by  like the dynn_morehei_doji
+	female = yes
+	religion = "seven_fortunes"
+	culture = "daidoji"
+
+	1100.1.1 = {
+		birth = yes
 	}
 }

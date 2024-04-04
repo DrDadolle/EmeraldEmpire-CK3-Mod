@@ -51,8 +51,9 @@
 
 	male_names = {
 		name_masakuni name_iemitsu name_uji name_aki name_anzai name_atsuki name_bakin name_bokaru name_daisetsu name_daizu name_fuchida name_genzo name_gombei name_gosuta
-		name_kuwanan name_satsume name_toshimoko name_shinta name_takamori name_toturi name_arasou name_daio
-		#### rest will be addid in localization file later
+		name_kuwanan name_satsume name_toshimoko name_shinta name_takamori name_toturi name_arasou name_daio name_hiroru name_uniri
+		
+		#### rest will be addid in localization file later 
 		#name_hachi name_haru name_hideki name_hideaki name_hitoshi name_hiyao  name_hio name_hogai name_hohiro name_akahito name_akihiro name_isamu name_inukai name_josuke name_junji
 		#name_junzo name_yoshi name_kabe name_kage name_kashin name_kaze name_kaii name_kengo name_keitaro name_kazuma name_kenzan name_kisada name_kuma name_kyuwa name_kiyoshi
 		#name_masaki name_masatari name_motaro name_naito name_naraku name_nagori name_oda name_oguri name_osuno name_okakura name_subaru name_seiki name_shihei name_shimura
@@ -61,7 +62,8 @@
 
 	female_names = {
 		name_sai name_fuse name_tomoe name_uta name_mai name_tsukasa name_fumi name_yume name_nozomi name_mitsu name_sakae name_akira name_megumi name_yoshi
-		name_hotaru name_shizue name_barahime name_takako name_kozue name_yokotsune
+		name_hotaru name_shizue name_barahime name_takako name_kozue name_yokotsune name_tsuko name_yunaki name_takeko name_akiko
+		
 		#### rest will be addid in localization file later
 		#name_kotobuki name_fuku name_sachi name_yui name_shinobu name_shizuka name_sei name_tomo name_haruka name_yuu name_hide name_aya name_moyabi name_tae name_rei
 		#name_sato name_miyako name_shiori name_suz name_koto name_nishiki name_kinu name_mari name_tama name_tamaki name_madoka name_hitomi name_hikari name_tsuki

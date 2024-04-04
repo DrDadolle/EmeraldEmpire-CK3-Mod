@@ -1,29 +1,34 @@
 d_kitsu = {
 	1123.1.1 = { 
 					liege = "k_lion_clan"
+					holder = 3000140 # Kitsu Takeko
 	}
 }
 
 c_hayai_province = {
 	1123.1.1 = { 
 					liege = "d_kitsu"
+					holder = 3000140 # Kitsu Takeko
 	}
 }
 
 c_rugashi_province = {
 	1123.1.1 = { 
 					liege = "d_kitsu"
+					holder = 3000140 # Kitsu Takeko
 	}
 }
 
 c_foshi_province = {
 	1123.1.1 = { 
 					liege = "d_kitsu"
+					holder = 3000150 # TODO placeholder name
 	}
 }
 
 c_daikiri_province = {
 	1123.1.1 = { 
 					liege = "d_kitsu"
+					holder = 3000151 # TODO placeholder name
 	}
 }

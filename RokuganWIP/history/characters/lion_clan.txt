@@ -29,7 +29,7 @@
 }
 
 3000102 = {
-	name = name_arasou 	# Akodo Arasou, Lion Clan Champion of 1122
+	name = name_arasou 	# Akodo Arasou, Lion Clan Champion of early 1123
 	dynasty = 2100005 	# Akodo
 	religion = "cult_ancestors"
 	culture = "akodo"
@@ -45,6 +45,7 @@
 	
 	### Family
 	father = 3000103 #Akodo Daio
+	#TODO : romance with Matsu UTsuko ?
 
 	1102.1.1 = {
 		birth = yes
@@ -74,7 +75,7 @@
 		birth = yes
 	}
 	
-	1113.1.1 = {
+	1123.1.1 = {
 		death = yes
 	}
 }
@@ -91,6 +92,7 @@
 	### Traits
 	
 	### Family
+	mother = 3000105 # Akodo Yokotsune
 
 	1048.1.1 = {
 		birth = yes
@@ -102,7 +104,7 @@
 }
 
 3000105 = {
-	name = name_yokotsune 	# Akodo Yokotsune,  Mother of Akodo Daio
+	name = name_yokotsune 	# Akodo Yokotsune,  Mother of Akodo Kozue
 	dynasty = 2100005 	# Akodo
 	religion = "cult_ancestors"
 	culture = "akodo"
@@ -120,5 +122,182 @@
 	
 	1075.1.1 = {
 		death = yes
+	}
+}
+
+##### Random county holder for the Akodo
+3000110 = {
+	name = name_aki 	#  Akodo Aki  #TODO replace name
+	dynasty = 2100005 	# Akodo  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "akodo"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000111 = {
+	name = name_akiko	#  Akodo Akiko  #TODO replace name
+	dynasty = 2100005 	# Akodo #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "akodo"
+	female = yes
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Matsu
+#####################
+3000121 = {
+	name = name_tsuko 	# Matsu Tsuko, Matsu Daimyo
+	dynasty = 2100006 	# Matsu
+	religion = "cult_ancestors"
+	culture = "matsu"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+	trait = education_martial_4
+	trait = brave
+	
+	### DNA
+	##TODO
+	
+	### Family
+	father = 3000123 #Matsu Uniri
+	mother = 3000124 #Matsu Yunaki
+	#TODO : romance with Akodo Arasou UTsuko ?
+
+	1090.1.1 = {
+		birth = yes
+	}
+}
+3000122 = {
+	name = name_hiroru 	# Matsu Hiroru, brother to Matsu Tsuko
+	dynasty = 2100006 	# Matsu
+	religion = "cult_ancestors"
+	culture = "matsu"
+	
+	### Stats
+	
+	### Traits
+	trait = education_martial_2
+	
+	
+	### Family
+	father = 3000123 #Matsu Uniri
+	mother = 3000124 #Matsu Yunaki
+
+	1095.1.1 = {
+		birth = yes
+	}
+}
+3000123 = {
+	name = name_uniri 	# Matsu Uniri, previous Matsu Daimyo
+	dynasty = 2100006 	# Matsu
+	religion = "cult_ancestors"
+	culture = "matsu"
+	
+	### Stats
+	
+	### Traits
+	trait = education_martial_4
+
+	1065.1.1 = {
+		birth = yes
+	}
+	
+	1100.1.1 = {
+		death = yes
+	}
+}
+3000124 = {
+	name = name_yunaki 	# Matsu Yunaki
+	dynasty = 2100006 	# Matsu
+	religion = "cult_ancestors"
+	culture = "matsu"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+
+	1062.1.1 = {
+		birth = yes
+	}
+	
+	1098.1.1 = {
+		death = yes
+	}
+}
+
+##### Random county holder for the Matsu
+3000130 = {
+	name = name_aki 	#  Matsu Aki  #TODO replace name
+	dynasty = 2100006 	# Matsu  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "matsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000131 = {
+	name = name_akiko	#  Matsu Akiko  #TODO replace name
+	dynasty = 2100006 	# Matsu #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "matsu"
+	female = yes
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Kitsu
+#####################
+3000140 = {
+	name = name_takeko 	# Kitsu Takeko, Kitsu Daimyo
+	dynasty = 2100007 	# Kitsu
+	religion = "cult_ancestors"
+	culture = "kitsu"
+	
+	### Stats
+	
+	### Traits
+
+	1109.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Kitsu
+3000150 = {
+	name = name_aki 	#  Kitsu Aki  #TODO replace name
+	dynasty = 2100007 	# Kitsu  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "kitsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000151 = {
+	name = name_akiko	#  Kitsu Akiko  #TODO replace name
+	dynasty = 2100007 	# Kitsu #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "kitsu"
+	female = yes
+
+	1100.1.1 = {
+		birth = yes
 	}
 }

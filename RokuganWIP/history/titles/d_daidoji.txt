@@ -22,11 +22,13 @@ c_hayaku_province = {
 c_sabishii_province = {
 	1123.1.1 = { 
 					liege = "d_daidoji"
+					holder = 3000070 # TODO placeholder name
 	}
 }
 
 c_ichigun_province = {
 	1123.1.1 = { 
 					liege = "d_daidoji"
+					holder = 3000071 # TODO placeholder name
 	}
 }

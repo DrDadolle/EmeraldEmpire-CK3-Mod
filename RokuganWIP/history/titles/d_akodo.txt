@@ -4,7 +4,7 @@ d_akodo = {
 		liege = "k_lion_clan"
 		holder = 3000103 # Akodo Daio
 	}
-	1113.1.1 = {
+	1123.1.1 = {
 		holder = 3000102 # Akodo Arasou
 	}
 	1123.3.1 = { 
@@ -18,7 +18,7 @@ c_kenryu_province = {
 		liege = "d_akodo"
 		holder = 3000103 # Akodo Daio
 	}
-	1113.1.1 = {
+	1123.1.1 = {
 		holder = 3000102 # Akodo Arasou
 	}
 	1123.3.1 = { 
@@ -31,7 +31,7 @@ c_shimizu_province = {
 		liege = "d_akodo"
 		holder = 3000103 # Akodo Daio
 	}
-	1113.1.1 = {
+	1123.1.1 = {
 		holder = 3000102 # Akodo Arasou
 	}
 	1123.3.1 = { 
@@ -44,7 +44,7 @@ c_renga_province = {
 		liege = "d_akodo"
 		holder = 3000103 # Akodo Daio
 	}
-	1113.1.1 = {
+	1123.1.1 = {
 		holder = 3000101 # Akodo Toturi
 	}
 }
@@ -52,17 +52,20 @@ c_renga_province = {
 c_henkyou_province = {
 	1123.1.1 = { 
 					liege = "d_akodo"
+					holder = 3000110 # TODO placeholder name
 	}
 }
 
 c_oiku_province = {
 	1123.1.1 = { 
 					liege = "d_akodo"
+					holder = 3000111 # TODO placeholder name
 	}
 }
 
 c_kokoro_province = {
 	1123.1.1 = { 
 					liege = "d_akodo"
+					holder = 3000111 # TODO placeholder name
 	}
 }
