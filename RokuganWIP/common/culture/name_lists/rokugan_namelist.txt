@@ -51,19 +51,21 @@
 
 	male_names = {
 		name_masakuni name_iemitsu name_uji name_aki name_anzai name_atsuki name_bakin name_bokaru name_daisetsu name_daizu name_fuchida name_genzo name_gombei name_gosuta
+		name_kuwanan name_satsume name_toshimoko name_shinta
 		#### rest will be addid in localization file later
 		#name_hachi name_haru name_hideki name_hideaki name_hitoshi name_hiyao  name_hio name_hogai name_hohiro name_akahito name_akihiro name_isamu name_inukai name_josuke name_junji
 		#name_junzo name_yoshi name_kabe name_kage name_kashin name_kaze name_kaii name_kengo name_keitaro name_kazuma name_kenzan name_kisada name_kuma name_kyuwa name_kiyoshi
-		#name_masaki name_masatari name_motaro name_naito name_naraku name_nagori name_oda name_oguri name_osuno name_okakura name_subaru name_satsume name_seiki name_shihei name_shimura
+		#name_masaki name_masatari name_motaro name_naito name_naraku name_nagori name_oda name_oguri name_osuno name_okakura name_subaru name_seiki name_shihei name_shimura
 		#name_sho name_sozen name_sugimoto name_sunao name_taka name_taki name_takuma name_tadaka name_tanaka name_taro name_tampako name_tsubaru name_tsuneo name_yajinden name_yori
 			}
 
 	female_names = {
 		name_sai name_fuse name_tomoe name_uta name_mai name_tsukasa name_fumi name_yume name_nozomi name_mitsu name_sakae name_akira name_megumi name_yoshi
+		name_hotaru name_shizue name_barahime
 		#### rest will be addid in localization file later
 		#name_kotobuki name_fuku name_sachi name_yui name_shinobu name_shizuka name_sei name_tomo name_haruka name_yuu name_hide name_aya name_moyabi name_tae name_rei
 		#name_sato name_miyako name_shiori name_suz name_koto name_nishiki name_kinu name_mari name_tama name_tamaki name_madoka name_hitomi name_hikari name_tsuki
-		#name_hoshi name_cho name_hotaru name_tsuru name_mio name_nami name_nagisa name_tsuyu name_yuki name_kaoru name_hana name_satsuki name_asa name_yuzu name_ran
+		#name_hoshi name_cho name_tsuru name_mio name_nami name_nagisa name_tsuyu name_yuki name_kaoru name_hana name_satsuki name_asa name_yuzu name_ran
 		#name_kaede name_tsubaki name_aoi name_tachibana name_sakura name_momo name_akane name_murasaki name_kurenai name_midori name_ina name_rin name_mizuki name_suzume name_tsubana name_yasu
 			}
 

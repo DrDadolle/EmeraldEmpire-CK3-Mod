@@ -26,6 +26,7 @@ c_itoshii_province = {
 	1123.1.1 = { 
 					liege=0
 					liege = "d_doji"
+					holder = 3000002 # Doji Kuwanan
 	}
 }
 
