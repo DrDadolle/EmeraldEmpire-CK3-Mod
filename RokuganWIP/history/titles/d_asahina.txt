@@ -1,27 +1,27 @@
 d_asahina = {
 	1123.1.1 = { 
-					liege=0
 					liege = "k_crane_clan"
+					holder = 3000040 # Asahina Takamori
 	}
 }
 
 c_shinkyou_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_asahina"
+					holder = 3000040 # Asahina Takamori
 	}
 }
 
 c_wakiaiai_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_asahina"
+					holder = 3000040 # Asahina Takamori
 	}
 }
 
 c_anshin_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_asahina"
+					holder = 3000040 # Asahina Takamori
 	}
 }

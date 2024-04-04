@@ -1,34 +1,32 @@
 d_daidoji = {
 	1123.1.1 = { 
-					liege=0
 					liege = "k_crane_clan"
+					holder = 3000060 # Daidoji Uji
 	}
 }
 
 c_kosaten_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_daidoji"
+					holder = 3000060 # Daidoji Uji
 	}
 }
 
 c_hayaku_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_daidoji"
+					holder = 3000060 # Daidoji Uji
 	}
 }
 
 c_sabishii_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_daidoji"
 	}
 }
 
 c_ichigun_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_daidoji"
 	}
 }

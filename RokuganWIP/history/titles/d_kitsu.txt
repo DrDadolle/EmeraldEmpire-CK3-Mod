@@ -1,34 +1,29 @@
 d_kitsu = {
 	1123.1.1 = { 
-					liege=0
 					liege = "k_lion_clan"
 	}
 }
 
 c_hayai_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_kitsu"
 	}
 }
 
 c_rugashi_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_kitsu"
 	}
 }
 
 c_foshi_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_kitsu"
 	}
 }
 
 c_daikiri_province = {
 	1123.1.1 = { 
-					liege=0
 					liege = "d_kitsu"
 	}
 }

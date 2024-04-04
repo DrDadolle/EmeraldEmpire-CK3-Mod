@@ -1,0 +1,124 @@
+﻿#####################
+#	AKODO
+#####################
+3000101 = {
+	name = name_toturi 	# Akodo Toturi, Lion Clan Champion of 1123
+	dynasty = 2100005 	# Akodo
+	religion = "cult_ancestors"
+	culture = "akodo"
+	
+	### Stats
+	
+	### Traits
+	trait = education_martial_4
+	trait = brave
+	
+	### DNA
+	##TODO
+	
+	### Family
+	father = 3000103 #Akodo Daio
+
+	1098.1.1 = {
+		birth = yes
+	}
+	
+	#1116.1.1 = {
+	#	spouse = ID # Isawa Kaede
+	#}
+}
+
+3000102 = {
+	name = name_arasou 	# Akodo Arasou, Lion Clan Champion of 1122
+	dynasty = 2100005 	# Akodo
+	religion = "cult_ancestors"
+	culture = "akodo"
+	
+	### Stats
+	
+	### Traits
+	trait = education_martial_4
+	trait = brave
+	
+	### DNA
+	##TODO
+	
+	### Family
+	father = 3000103 #Akodo Daio
+
+	1102.1.1 = {
+		birth = yes
+	}
+	
+	1123.3.1 = {
+		death = yes
+	}
+}
+
+3000103 = {
+	name = name_daio 	# Akodo Daio, Former Lion Clan Champion, father to Akodo Toturi & Akodo Arasou
+	dynasty = 2100005 	# Akodo
+	religion = "cult_ancestors"
+	culture = "akodo"
+	
+	### Stats
+	
+	### Traits
+	trait = education_martial_4
+	trait = brave
+		
+	### Family
+	mother = 3000104 # Akodo Kozue
+
+	1068.1.1 = {
+		birth = yes
+	}
+	
+	1113.1.1 = {
+		death = yes
+	}
+}
+
+3000104 = {
+	name = name_kozue 	# Akodo Kozue,  Mother of Akodo Daio
+	dynasty = 2100005 	# Akodo
+	religion = "cult_ancestors"
+	culture = "akodo"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+	
+	### Family
+
+	1048.1.1 = {
+		birth = yes
+	}
+	
+	1070.1.1 = {
+		death = yes
+	}
+}
+
+3000105 = {
+	name = name_yokotsune 	# Akodo Yokotsune,  Mother of Akodo Daio
+	dynasty = 2100005 	# Akodo
+	religion = "cult_ancestors"
+	culture = "akodo"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+	
+	### Family
+
+	1030.1.1 = {
+		birth = yes
+	}
+	
+	1075.1.1 = {
+		death = yes
+	}
+}

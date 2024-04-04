@@ -315,9 +315,8 @@
 #####################
 #	ASAHINA
 #####################
-#TODO
 3000040 = {
-	name = name_yoshi 	# 
+	name = name_takamori 	# Asahina Takamori, Asahina daimyo
 	dynasty = 2100003 	# Asahina
 	religion = "seven_fortunes"
 	culture = "asahina" 	
@@ -325,14 +324,57 @@
 	### Stats
 	
 	### Traits
-	trait = beauty_good_1
 	
 	### DNA
 	
 	### Family
 
-	1077.1.1 = {
+	1082.1.1 = {
 		birth = yes
 	}
+}
+
+3000041 = {
+	name = name_takako 	# Asahina Takako
+	dynasty = 2100003 	# Asahina
+	religion = "seven_fortunes"
+	culture = "asahina" 	
+	female = yes
 	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	
+	### Family
+
+	1097.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	DAIDOJI
+#####################
+3000060 = {
+	name = name_uji 	# Daidoji Uji, Daidoji daimyo
+	dynasty = 2100002 	# Daidoji
+	religion = "seven_fortunes"
+	culture = "daidoji" 	
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	
+	### Family
+
+	1082.1.1 = {
+		birth = yes
+	}
+	1110.1.1 = {
+		give_nickname = nick_iron_crane
+	}
 }
