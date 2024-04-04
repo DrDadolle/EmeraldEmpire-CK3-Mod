@@ -23,6 +23,7 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 
 ## Futures Features & Nice to have
 - Bushido & Duels
+- Seppuku
 - Child Adoption
 - Painting Hair White decision for crane cultures
 - Genetic Trait "Natural white hair" for Crane ???
