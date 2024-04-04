@@ -38,8 +38,8 @@ bm_1123_doji_hotaru = {
 	# Doji Hotaru
 	character = {
 		name = "bookmark_doji_hotaru"
-		dynasty = 100848
-		dynasty_splendor_level = 1
+		dynasty = 2100001
+		dynasty_splendor_level = 2
 		type = female
 		birth = 1100.1.1
 		title = c_oyomesan_province
@@ -47,7 +47,7 @@ bm_1123_doji_hotaru = {
 		culture = doji
 		religion = "seven_fortunes"
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-		history_id = 20842
+		history_id = 3000001
 		position = { 250 750 }
 
 		animation = happiness
