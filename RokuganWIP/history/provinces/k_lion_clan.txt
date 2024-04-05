@@ -215,7 +215,57 @@
 	religion = cult_ancestors
 	holding = city_holding
 }
-
+##d_ikoma ###################################
+###c_gunsho_province
+85 = {		#b_shiro_ikoma
+	culture = ikoma
+	religion = cult_ancestors
+	holding = castle_holding
+}
+86 = {		#b_murame_toshi
+	culture = ikoma
+	religion = cult_ancestors
+	holding = city_holding
+}
+###c_eiyu_province
+87 = {		#b_shiro_eiyu
+	culture = ikoma
+	religion = cult_ancestors
+	holding = castle_holding
+}
+88 = {		#b_mura_sano_eiyu
+	culture = ikoma
+	religion = cult_ancestors
+	holding = city_holding
+}
+###c_gisei_province
+89 = {		#b_gisei_toshi
+	culture = ikoma
+	religion = cult_ancestors
+	holding = castle_holding
+}
+###c_ikota_province
+90 = {		#b_shiro_kyube
+	culture = ikoma
+	religion = cult_ancestors
+	holding = castle_holding
+}
+91 = {		#b_great_hall
+	culture = ikoma
+	religion = cult_ancestors
+	holding = church_holding
+}
+###c_shiranai_province
+92 = {		#b_nishi_no_shiro
+	culture = ikoma
+	religion = cult_ancestors
+	holding = castle_holding
+}
+93 = {		#b_shiranai_toshi
+	culture = ikoma
+	religion = cult_ancestors
+	holding = city_holding
+}
 #castle_holding
 #church_holding
 #city_holding

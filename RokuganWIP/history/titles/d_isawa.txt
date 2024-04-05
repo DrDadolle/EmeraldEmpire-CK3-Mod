@@ -1,0 +1,34 @@
+d_isawa = {
+	1123.1.1 = {
+		liege = "k_phoenix_clan"
+		holder = 3000220 # Isawa Eju
+	}
+}
+
+c_aoijiroi_province = {
+	1123.1.1 = {
+		liege = "d_isawa"
+		holder = 3000221 # Isawa Rujo
+	}
+}
+
+c_yosomono_province = {
+	1123.1.1 = {
+		liege = "d_isawa"
+		holder = 3000223 # Isawa Ujina
+	}
+}
+
+c_kougen_province_phoenix = {
+	1123.1.1 = {
+		liege = "d_isawa"
+		holder = 3000225 # Isawa Tsuke
+	}
+}
+
+c_maryoku_province = {
+	1123.1.1 = {
+		liege = "d_isawa"
+		holder = 3000220 # Isawa Eju
+	}
+}

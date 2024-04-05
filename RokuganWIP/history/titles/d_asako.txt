@@ -1,0 +1,55 @@
+d_asako = {
+	1123.1.1 = {
+		liege = "k_phoenix_clan"
+		holder = 3000242 # Asako Togama
+	}
+}
+
+c_enjaku_province = {
+	1123.1.1 = {
+		liege = "d_asako"
+		holder = 3000242 # Asako Togama
+	}
+}
+
+c_anshin_phoenix_province = {
+	1123.1.1 = {
+		liege = "d_asako"
+		holder = 3000242 # Asako Togama
+	}
+}
+
+c_mihari_province = {
+	1123.1.1 = {
+		liege = "d_asako"
+		holder = 3000251 # TODO placeholder name
+	}
+}
+
+c_yogen_province = {
+	1123.1.1 = {
+		liege = "d_asako"
+		holder = 3000242 # Asako Togama
+	}
+}
+
+c_kyuukai_province = {
+	1123.1.1 = {
+		liege = "d_asako"
+		holder = 3000250 # TODO placeholder name
+	}
+}
+
+c_enju_province = {
+	1123.1.1 = {
+		liege = "d_asako"
+		holder = 3000250 # TODO placeholder name
+	}
+}
+
+c_kirin_province = {
+	1123.1.1 = {
+		liege = "d_asako"
+		holder = 3000251 # TODO placeholder name
+	}
+}

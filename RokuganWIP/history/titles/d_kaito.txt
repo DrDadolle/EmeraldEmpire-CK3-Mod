@@ -1,0 +1,30 @@
+d_kaito = {
+	1123.1.1 = {
+		liege = "k_phoenix_clan"
+		holder = 3000261 # Kaito Nobukai
+	}
+	1123.4.1 = {
+		holder = 3000260 # Kaito Kosori
+	}
+}
+
+c_garanto_province = {
+	1123.1.1 = {
+		liege = "d_kaito"
+		holder = 3000261 # Kaito Nobukai
+	}
+	1123.4.1 = {
+		holder = 3000260 # Kaito Kosori
+	}
+	
+}
+
+c_kinkaku_province = {
+	1123.1.1 = {
+		liege = "d_kaito"
+		holder = 3000261 # Kaito Nobukai
+	}
+	1123.4.1 = {
+		holder = 3000260 # Kaito Kosori
+	}
+}

@@ -8,9 +8,7 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 ## short term goals
 - custom bookmark at date 1123 => Remove  the previous 1066 bookmark
 - creating Crane Coat of Arms (at least placeholders ones for major families) & Mottos
-- Paint Duchy of Ikoma
-	- & create Ikoma characters to fill the map 
-- Paint Imperial Familly & Phoenix lands
+- Paint Imperial Familly
 - Play around with Religion to have the Emperor be the head of shinseism, fortunism & cult of ancestors
 -  creating Dynasty Houses
  	- Houses -> Vassal families (like the Tsume)
@@ -42,6 +40,8 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Shadowlands stuff (very low priority)
 
 ## What is done
-- provinces 
+- provinces with historic & placeholder characters (random traits)
 	- crane clan
-	- lion clan : Kitsu, Akodo, Matsu
+	- lion clan
+	- phoenix clan
+- all cultures & religion (draft)

@@ -1,0 +1,193 @@
+#k_phoenix_clan
+##d_asako ###################################
+###c_enjaku_province
+94 = {		#b_nikesake
+	culture = asako
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_anshin_phoenix_province
+95 = {		#b_honored_treaty_city
+	culture = asako
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_mihari_province
+96 = {		#b_zumiki_mihari
+	culture = asako
+	religion = shinseism
+	holding = castle_holding
+}
+97 = {		#b_orange_flame_village
+	culture = asako
+	religion = shinseism
+	holding = city_holding
+}
+###c_yogen_province
+98 = {		#b_kyuden_asako
+	culture = asako
+	religion = shinseism
+	holding = castle_holding
+}
+99 = {		#b_fiery_centiped_library
+	culture = asako
+	religion = shinseism
+	holding = church_holding
+}
+100 = {		#b_uikku_shrine
+	culture = asako
+	religion = shinseism
+	holding = city_holding
+}
+101 = {		#b_shinden_asako
+	culture = asako
+	religion = shinseism
+	holding = castle_holding
+}
+###c_kyuukai_province
+102 = {		#b_sheltered_plains_city
+	culture = asako
+	religion = shinseism
+	holding = castle_holding
+}
+###c_enju_province
+103 = {		#b_jurojin_seido_phoenix
+	culture = asako
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_kirin_province
+104 = {		#b_shiro_gisu
+	culture = asako
+	religion = seven_fortunes
+	holding = castle_holding
+}
+105 = {		#b_shrine_of_the_kirin
+	culture = asako
+	religion = seven_fortunes
+	holding = church_holding
+}
+##d_shiba ###################################
+###c_haimaato_province
+106 = {		#b_shiro_haimaato
+	culture = shiba
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_omoidasu_province
+107 = {		#b_shiro_omoidasu
+	culture = shiba
+	religion = shinseism
+	holding = castle_holding
+}
+108 = {		#b_city_of_remembrance
+	culture = shiba
+	religion = shinseism
+	holding = city_holding
+}
+###c_nanimo_province
+109 = {		#b_twin_soul_temple
+	culture = shiba
+	religion = seven_fortunes
+	holding = castle_holding
+}
+110 = {		#b_city_of_remembrance
+	culture = shiba
+	religion = seven_fortunes
+	holding = city_holding
+}
+###c_bachitari_province
+112 = {		#b_shiba_artisan_academy
+	culture = shiba
+	religion = seven_fortunes
+	holding = castle_holding
+}
+111 = {		#b_shadow_forest_village
+	culture = shiba
+	religion = seven_fortunes
+	holding = city_holding
+}
+###c_nejiro_province
+113 = {		#b_shiro_shiba
+	culture = shiba
+	religion = seven_fortunes
+	holding = castle_holding
+}
+114 = {		#b_shinsei_and_sumai_mura
+	culture = shiba
+	religion = seven_fortunes
+	holding = city_holding
+}
+115 = {		#b_temple_of_brillant_rebirth
+	culture = shiba
+	religion = seven_fortunes
+	holding = church_holding
+}
+116 = {		#b_nejiro_mura
+	culture = shiba
+	religion = seven_fortunes
+	holding = city_holding
+}
+##d_isawa ###################################
+###c_aoijiroi_province
+117 = {		#b_pale_oak_castle
+	culture = isawa
+	religion = seven_fortunes
+	holding = castle_holding
+}
+118 = {		#b_asahina_seido
+	culture = isawa
+	religion = seven_fortunes
+	holding = church_holding
+}
+###c_yosomono_province
+119 = {		#b_yobanjin_mura
+	culture = shinjo #TODO change for yobanjin culture ?
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_kougen_province_phoenix
+120 = {		#b_gisei_toshi_phoenix
+	culture = isawa
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_maryoku_province
+121 = {		#b_kyuden_isawa
+	culture = isawa
+	religion = seven_fortunes
+	holding = castle_holding
+}
+122 = {		#b_maryoku_mura
+	culture = isawa
+	religion = seven_fortunes
+	holding = city_holding
+}
+123 = {		#b_eight_guardian_temple
+	culture = isawa
+	religion = seven_fortunes
+	holding = church_holding
+}
+##d_kaito ###################################
+###c_garanto_province
+124 = {		#b_sanpuku_seido
+	culture = kaito
+	religion = seven_fortunes
+	holding = castle_holding
+}
+125 = {		#b_last_traveler_village
+	culture = kaito
+	religion = seven_fortunes
+	holding = city_holding
+}
+###c_kinkaku_province
+126 = {		#b_lost_arrow_shrine
+	culture = kaito
+	religion = seven_fortunes
+	holding = church_holding
+}
+
+#castle_holding
+#church_holding
+#city_holding
+#none

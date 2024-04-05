@@ -1,0 +1,50 @@
+d_shiba = {
+	1110.1.1 = {
+		liege = "k_phoenix_clan"
+		holder = 3000201 # Shiba Ujimitsu
+	}
+	1123.4.25 = {
+		holder = 3000200 # Shiba Tsukune
+	}
+}
+
+c_nejiro_province = {
+	1110.1.1 = {
+		liege = "d_shiba"
+		holder = 3000201 # Shiba Ujimitsu
+	}
+	1123.4.25 = {
+		holder = 3000200 # Shiba Tsukune
+	}
+}
+
+c_bachitari_province = {
+	1110.1.1 = {
+		liege = "d_shiba"
+		holder = 3000201 # Shiba Ujimitsu
+	}
+	1123.4.25 = {
+		holder = 3000200 # Shiba Tsukune
+	}
+}
+
+c_nanimo_province = {
+	1123.1.1 = { 
+					liege = "d_shiba"
+					holder = 3000210 # TODO placeholder name
+	}
+}
+
+c_omoidasu_province = {
+	1123.1.1 = { 
+					liege = "d_shiba"
+					holder = 3000211 # TODO placeholder name
+	}
+}
+
+c_haimaato_province = {
+	1123.1.1 = { 
+					liege = "d_shiba"
+					holder = 3000211 # TODO placeholder name
+	}
+}

@@ -2,10 +2,10 @@
 # Shinseism
 #################
 
-tdb_shinsei_holy_site_1 = {
+shinsei_and_sumai_mura = {
 
-	county = c_sabishii_province
-	barony = b_mura_sabishii
+	county = c_nejiro_province
+	barony = b_shinsei_and_sumai_mura
 
 	character_modifier = {
 		name = tdb_shinsei_holy_site_1_effect_name
@@ -75,6 +75,18 @@ doji_temple = {
 
 	county = c_kazenmuketsu_province
 	barony = b_kyuden_doji
+
+	character_modifier = {
+		name = benten_temple_effect_name
+		diplomacy_per_piety_level = 1
+		councillor_opinion = 5
+	}
+}
+
+shiba_temple = {
+
+	county = c_nejiro_province
+	barony = b_temple_of_brillant_rebirth
 
 	character_modifier = {
 		name = benten_temple_effect_name

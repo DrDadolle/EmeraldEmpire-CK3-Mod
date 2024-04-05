@@ -556,6 +556,230 @@ e_rokugan = {
             }
 		}
 	}
+	 k_phoenix_clan = {
+         color = { 228 88 0 }
+         color2 = { 255 255 255 }
+         capital = c_nejiro_province
+ 
+         d_asako = {
+             color = { 255 118 33 }
+             color2 = { 255 255 255 }
+             capital = c_yogen_province
+             
+             c_enjaku_province = {
+                 color = { 151 66 0 }
+                 color2 = { 255 255 255 }
+ 
+                 b_nikesake = {
+                     province = 94
+                 }
+            }
+			c_anshin_phoenix_province = {
+                 color = { 237 152 87 }
+                 color2 = { 255 255 255 }
+ 
+                 b_honored_treaty_city = {
+                     province = 95
+                 }
+            }
+			c_mihari_province = {
+                 color = { 148 86 16 }
+                 color2 = { 255 255 255 }
+ 
+                 b_zumiki_mihari = {
+                     province = 96
+                 }
+				 
+				  b_orange_flame_village = {
+                     province = 97
+                 }
+            }
+			c_yogen_province = {
+                 color = { 255 118 33 }
+                 color2 = { 255 255 255 }
+ 
+                 b_kyuden_asako = {
+                     province = 98
+                 }
+				 b_fiery_centiped_library = {
+                     province = 99
+                 }
+				 b_uikku_shrine = {
+                     province = 100
+                 }
+				 b_shinden_asako = {
+                     province = 101
+                 }
+            }
+			c_kyuukai_province = {
+                 color = { 255 114 18 }
+                 color2 = { 255 255 255 }
+ 
+                 b_sheltered_plains_city = {
+                     province = 102
+                 }
+            }
+			c_enju_province = {
+                 color = { 163 94 35 }
+                 color2 = { 255 255 255 }
+ 
+                 b_jurojin_seido_phoenix = {
+                     province = 103
+                 }
+            }
+			
+			c_kirin_province = {
+                 color = { 238 126 0 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_gisu = {
+                     province = 104
+                 }
+				 b_shrine_of_the_kirin = {
+                     province = 105
+                 }
+            }
+		}
+		d_shiba = {
+             color = { 214 112 0 }
+             color2 = { 255 255 255 }
+             capital = c_nejiro_province
+             
+             c_haimaato_province = {
+                 color = { 231 162 84 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_haimaato = {
+                     province = 106
+                 }
+            }
+			c_omoidasu_province = {
+                 color = { 234 136 27 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_omoidasu = {
+                     province = 107
+                 }
+				 b_city_of_remembrance = {
+                     province = 108
+                 }
+            }
+			c_nanimo_province = {
+                 color = { 201 109 7 }
+                 color2 = { 255 255 255 }
+ 
+                 b_twin_soul_temple = {
+                     province = 109
+                 }
+				 b_ubaku_mura = {
+                     province = 110
+                 }
+            }
+			c_bachitari_province = {
+                 color = { 247 162 66 }
+                 color2 = { 255 255 255 }
+ 
+				b_shiba_artisan_academy = {
+                     province = 112
+                }
+				 
+                 b_shadow_forest_village = {
+                     province = 111
+                 }
+				 
+            }
+			c_nejiro_province = {
+                 color = { 214 112 0 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_shiba = {
+                     province = 113
+                 }
+				 b_shinsei_and_sumai_mura = {
+                     province = 114
+                 }
+				 b_temple_of_brillant_rebirth = {
+					province = 115
+				 }
+				 b_nejiro_mura = {
+					province = 116
+				 }
+				 
+            }
+		}
+		d_isawa = {
+             color = { 214 112 0 } #TODO
+             color2 = { 255 255 255 }
+             capital = c_maryoku_province
+             
+             c_aoijiroi_province = {
+                 color = { 198 106 3 }
+                 color2 = { 255 255 255 }
+ 
+                 b_pale_oak_castle = {
+                     province = 117
+                 }
+				 b_asahina_seido = {
+                     province = 118
+                 }
+            }
+			c_yosomono_province = {
+                 color = { 201 126 43 }
+                 color2 = { 255 255 255 }
+ 
+                 b_yobanjin_mura = {
+                     province = 119
+                 }
+            }
+			c_kougen_province_phoenix = {
+                 color = { 233 192 147 }
+                 color2 = { 255 255 255 }
+ 
+                 b_gisei_toshi_phoenix = {
+                     province = 120
+                 }
+            }
+			c_maryoku_province = {
+                 color = { 159 103 39 }
+                 color2 = { 255 255 255 }
+ 
+                 b_kyuden_isawa = {
+                     province = 121
+                 }
+				 b_maryoku_mura = {
+                     province = 122
+                 }
+				 b_eight_guardian_temple = {
+                     province = 123
+                 }
+            }
+		}
+		d_kaito = {
+             color = { 225 102 18 }
+             color2 = { 255 255 255 }
+             capital = c_garanto_province
+             
+             c_garanto_province = {
+                 color = { 225 102 18 }
+                 color2 = { 255 255 255 }
+ 
+                 b_sanpuku_seido = {
+                     province = 124
+                 }
+				 b_last_traveler_village = {
+                     province = 125
+                 }
+            }
+			c_kinkaku_province = {
+                 color = { 225 107 24 }
+                 color2 = { 255 255 255 }
+ 
+                 b_lost_arrow_shrine = {
+                     province = 126
+                 }
+            }
+		}
+	}
  }
  
  #TODO title of master of elements Isawa as landless duchy titles ???
