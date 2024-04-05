@@ -10,10 +10,10 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - creating Crane Coat of Arms (at least placeholders ones for major families) & Mottos
 - Paint Duchy of Ikoma
 	- & create Ikoma characters to fill the map 
-- creating Dynasty Houses
- 	- Houses -> Vassal families (like the Tsume)
 - Paint Imperial Familly & Phoenix lands
 - Play around with Religion to have the Emperor be the head of shinseism, fortunism & cult of ancestors
+-  creating Dynasty Houses
+ 	- Houses -> Vassal families (like the Tsume)
 - Paint Scorpion lands
 - Paint some ronin lands & test counties & Duchy without   
 - Have a not-so-ugly heightmap
@@ -33,6 +33,9 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
  	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
 - Special Phoenix champion succession
 - Phoenix Council of 5 special government
+- Togashi special succession ?
+- Special weapon & artifacts
+- Black scrolls, cursed artifacts
 - Shindoshi stuff (very low priority)
 - Maho stuff (very low priority)
 - Shadowlands stuff (very low priority)
