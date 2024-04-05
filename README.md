@@ -28,6 +28,9 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Painting Hair White decision for crane cultures
 - Genetic Trait "Natural white hair" for Crane ???
 - Right/Left/UnderHand special trait for clan champion of crane/lion/scorpion
+- Special decisions
+	- Retake Yasuki Lands as Crane Clan
+ 	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
 - Special Phoenix champion succession
 - Phoenix Council of 5 special government
 - Shindoshi stuff (very low priority)
