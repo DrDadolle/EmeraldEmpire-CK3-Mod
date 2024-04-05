@@ -1,0 +1,399 @@
+﻿#####################
+#	Shiba
+#####################
+3000200 = {
+	name = name_tsukune 	# Shiba Tsukune, phoenix clan champion of 1123
+	dynasty = 2100009 	# Shiba
+	religion = "seven_fortunes"
+	culture = "shiba"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+	
+	### Family
+	#TODO lover Isawa Tadaka
+	#TODO sibling Hatsu RIP
+	#Add friend Kaito Kosori
+
+	1106.1.1 = {
+		birth = yes
+	}
+}
+
+3000201 = {
+	name = name_ujimitsu 	# Shiba Ujimitsu, previous phoenix clan champion 
+	dynasty = 2100009 	# Shiba
+	religion = "seven_fortunes"
+	culture = "shiba"
+	
+	### Stats
+	
+	### Traits
+	
+	### Family
+	#TODO brother Shiba Suzaku ?
+
+	1106.1.1 = {
+		birth = yes
+	}
+	
+	1123.4.25 = {
+		death = yes
+	}
+}
+
+##### Random county holder for the Shiba
+3000210 = {
+	name = name_aki 	#  Shiba Aki  #TODO replace name
+	dynasty = 2100009 	# Shiba  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "shiba"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000211 = {
+	name = name_akiko 	#  Shiba Aki  #TODO replace name
+	dynasty = 2100009 	# Shiba  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "shiba"
+	female = yes
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Isawa
+#####################
+3000220 = {
+	name = name_eju 	# Isawa Eju, master of Air of 1123
+	dynasty = 2100010 	# Isawa
+	religion = "seven_fortunes"
+	culture = "isawa"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+	
+	### Family
+
+	1056.1.1 = {
+		birth = yes
+	}
+}
+
+3000221 = {
+	name = name_rujo 	# Isawa Rujo, master of Earth of 1123
+	dynasty = 2100010 	# Isawa
+	religion = "seven_fortunes"
+	culture = "isawa"
+	
+	### Stats
+	
+	### Traits
+
+	1081.1.1 = {
+		birth = yes
+	}
+}
+
+3000222 = {
+	name = name_tadaka 	# Isawa Tadaka, future master of earth
+	dynasty = 2100010 	# Isawa
+	religion = "seven_fortunes"
+	culture = "isawa"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+	father = 3000223 # Isawa Ujina
+	#TODO lover Shiba Tsukune
+	# Sister Isaka Kaede
+
+	1103.1.1 = {
+		birth = yes
+	}
+}
+
+3000223 = {
+	name = name_ujina 	# Isawa Ujina, master of Void
+	dynasty = 2100010 	# Isawa
+	religion = "seven_fortunes"
+	culture = "isawa"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+	#TODO spouse Doji Ninube
+
+	1075.1.1 = {
+		birth = yes
+	}
+	
+	1095.1.1 = {
+		spouse = 3000007 # Doji Ninube
+	}
+}
+
+3000224 = {
+	name = name_kaede 	# Isawa Kaede,  daughter of the master of Void and future master of the void, spouse of Akodo Toturi
+	dynasty = 2100010 	# Isawa
+	religion = "seven_fortunes"
+	culture = "isawa"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+	father = 3000223 # Isawa Ujina
+	mother = 3000007 # Doji Ninube
+
+	1099.1.1 = {
+		birth = yes
+	}
+	
+	1116.1.1 = {
+		spouse = 3000101 # Akoto Toturi Kaede
+	}
+}
+
+3000225 = {
+	name = name_tsuke 	# Isawa Tsuke,  master of Fire in 1123
+	dynasty = 2100010 	# Isawa
+	religion = "seven_fortunes"
+	culture = "isawa"
+
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	#TODO
+
+	1088.1.1 = {
+		birth = yes
+	}
+	
+}
+
+3000226 = {
+	name = name_kaiyoko 	# Isawa Kaiyoko,  former master of Water in 1123
+	dynasty = 2100010 	# Isawa
+	religion = "seven_fortunes"
+	culture = "isawa"
+	female = yes
+
+	### Stats
+	
+	### Traits
+
+	1079.1.1 = {
+		birth = yes
+	}
+	
+}
+
+##### Random county holder for the Isawa
+3000230 = {
+	name = name_aki 	#  Isawa Aki  #TODO replace name
+	dynasty = 2100010 	# Isawa  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "isawa"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000231 = {
+	name = name_akiko 	#  Isawa Akiko #TODO replace name
+	dynasty = 2100010 	# Isawa  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "isawa"
+	female = yes
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Asako
+#####################
+3000240 = {
+	name = name_azunami 	# Asako Azunami, master of water of 1123
+	dynasty = 2100011 	# Asako
+	religion = "seven_fortunes"
+	culture = "asako"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+	
+	### Family
+
+	1098.1.1 = {
+		birth = yes
+	}
+}
+
+3000241 = {
+	name = name_akari 	# Asako Akari, wife of Ikoma daimyo
+	dynasty = 2100011 	# Asako
+	religion = "seven_fortunes"
+	culture = "asako"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+	
+	### Family
+	#TODO add ikoma Anakazu as lover
+
+	1073.1.1 = {
+		birth = yes
+	}
+	
+	1095.1.1 = {
+			spouse = 3000160 #  Ikoma Anakazu
+	}
+}
+
+3000242 = {
+	name = name_togama 	# Asako Togama, Asako daimyo
+	dynasty = 2100011 	# Asako
+	religion = "seven_fortunes"
+	culture = "asako"
+	
+	### Stats
+	
+	### Traits
+
+	1095.1.1 = {
+		birth = yes
+	}
+	
+
+}
+
+##### Random county holder for the Asako
+3000250 = {
+	name = name_aki 	#  Asako Aki  #TODO replace name
+	dynasty = 2100011 	# Asako  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "asako"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000251 = {
+	name = name_akiko 	#  Asako Akiko  #TODO replace name
+	dynasty = 2100011 	# Asako  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "asako"
+	female = yes
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Kaito
+#####################
+3000260 = {
+	name = name_kosori 	# Kaito Kosori, Kaito daimyo of 1123 & niece of Kaito Nobukai
+	dynasty = 2100012 	# Kaito
+	religion = "seven_fortunes"
+	culture = "kaito"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+	
+	### Family
+	# TODO Niece of Kaito Nobukai
+	# TODO add Shiba Tsukune as friend ?
+
+	1105.1.1 = {
+		birth = yes
+	}
+}
+
+3000261 = {
+	name = name_nobukai 	# Kaito Nobukai, previous Kaito daimyo of 1123
+	dynasty = 2100012 	# Kaito
+	religion = "seven_fortunes"
+	culture = "kaito"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+	
+	### Family
+
+	1080.1.1 = {
+		birth = yes
+	}
+	
+	1123.4.1 = {
+		death = yes
+	}
+}
+
+3000262 = {
+	name = name_uwazuru 	# Kaito Uwazuru, previous Kaito daimyo's son
+	dynasty = 2100012 	# Kaito
+	religion = "seven_fortunes"
+	culture = "kaito"
+	
+	### Stats
+	
+	### Traits
+	
+	### Family
+	father = 3000261 # Kaito Nobukai
+
+	1101.1.1 = {
+		birth = yes
+	}
+}

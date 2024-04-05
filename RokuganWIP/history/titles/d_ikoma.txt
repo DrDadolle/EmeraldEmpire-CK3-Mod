@@ -1,0 +1,41 @@
+d_ikoma = {
+	1098.1.1 = { 
+				liege = "k_lion_clan"
+				holder = 3000160 # Ikoma Anakazu
+	}
+}
+
+c_gunsho_province = {
+	1098.1.1 = { 
+					liege = "d_ikoma"
+					holder = 3000160 # Ikoma Anakazu
+	}
+}
+
+c_eiyu_province = {
+	1098.1.1 = { 
+					liege = "d_ikoma"
+					holder = 3000160 # Ikoma Anakazu
+	}
+}
+
+c_gisei_province = {
+	1123.1.1 = { 
+					liege = "d_ikoma"
+					holder = 3000170 # TODO placeholder name
+	}
+}
+
+c_ikota_province = {
+	1123.1.1 = { 
+					liege = "d_ikoma"
+					holder = 3000170 # TODO placeholder name
+	}
+}
+
+c_shiranai_province = {
+	1123.1.1 = { 
+					liege = "d_ikoma"
+					holder = 3000171 # TODO placeholder name
+	}
+}

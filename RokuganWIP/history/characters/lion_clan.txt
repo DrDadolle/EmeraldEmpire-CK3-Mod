@@ -23,9 +23,9 @@
 		birth = yes
 	}
 	
-	#1116.1.1 = {
-	#	spouse = ID # Isawa Kaede
-	#}
+	1116.1.1 = {
+		spouse = 3000224 # Isawa Kaede
+	}
 }
 
 3000102 = {
@@ -231,7 +231,7 @@
 		birth = yes
 	}
 	
-	1098.1.1 = {
+	1110.1.1 = {
 		death = yes
 	}
 }
@@ -295,6 +295,80 @@
 	dynasty = 2100007 	# Kitsu #TODO replace by  like the dynn_morehei_doji
 	religion = "cult_ancestors"
 	culture = "kitsu"
+	female = yes
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Ikoma
+#####################
+3000160 = {
+	name = name_anakazu 	# Ikoma Anakazu, ikoma Daimyo
+	dynasty = 2100008 	# Ikoma
+	religion = "cult_ancestors"
+	culture = "ikoma"
+	
+	### Stats
+	
+	### Traits
+	
+	##DNA
+	
+	##Family 
+	## TODO Asako Akari as lover
+
+	1075.1.1 = {
+		birth = yes
+	}
+	
+	1095.1.1 = {
+			spouse = 3000241 #  Asako Akari
+	}
+}
+
+3000161 = {
+	name = name_tsanuri 	# Ikoma Tsanuri, daughter of ikoma Daimyo
+	dynasty = 2100008 	# Ikoma
+	religion = "cult_ancestors"
+	culture = "ikoma"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+	trait = patient
+	
+	##DNA
+	
+	##Family 
+	father = 3000160 # Ikoma anakazu
+	mother = 3000241 # Asako Akari
+
+	1096.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Ikoma
+3000170 = {
+	name = name_aki 	#  Ikoma Aki  #TODO replace name
+	dynasty = 2100008 	# Ikoma  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "ikoma"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000171 = {
+	name = name_akiko	#  Ikoma Akiko  #TODO replace name
+	dynasty = 2100008 	# Ikoma #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "ikoma"
 	female = yes
 
 	1100.1.1 = {

@@ -557,6 +557,8 @@ e_rokugan = {
 		}
 	}
  }
+ 
+ #TODO title of master of elements Isawa as landless duchy titles ???
 
 # These titles cut hundreds of errors from logs. 
 e_hre = { landless = yes }

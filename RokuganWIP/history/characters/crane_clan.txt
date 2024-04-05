@@ -7,7 +7,7 @@
 	female = yes
 	religion = "seven_fortunes"
 	culture = "doji"
-	sexuality = homosexual
+	sexuality = bisexual
 	
 	### Stats
 	martial = 8
@@ -30,6 +30,7 @@
 	### Family
 	father = 3000003 #Doji Satsume
 	mother = 3000004 #Kakita Teinko
+	#add
 
 	1101.1.1 = {
 		birth = yes
@@ -162,6 +163,26 @@
 
 	1102.1.1 = {
 		birth = yes
+	}
+}
+
+3000007 = {
+	name = name_ninube 	# Doji Ninube, wife of Isawa Ujina
+	dynasty = 2100001 	# Doji
+	religion = "seven_fortunes"
+	culture = "doji"
+	female = yes
+
+	1075.1.1 = {
+		birth = yes
+	}
+	
+	1095.1.1 = {
+		spouse = 3000223 # Isawa Ujina
+	}
+	
+	1101.1.1 = {
+		death = yes
 	}
 }
 
