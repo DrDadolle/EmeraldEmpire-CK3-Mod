@@ -28,6 +28,8 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Painting Hair White decision for crane cultures
 - Genetic Trait "Natural white hair" for Crane ???
 - Right/Left/UnderHand special trait for clan champion of crane/lion/scorpion
+- Special Phoenix champion succession
+- Phoenix Council of 5 special government
 - Shindoshi stuff (very low priority)
 - Maho stuff (very low priority)
 - Shadowlands stuff (very low priority)
