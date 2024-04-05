@@ -491,6 +491,70 @@ e_rokugan = {
                  }
              }
 		}
+		d_ikoma = {
+             color = { 85 64 5 }
+             color2 = { 255 255 255 }
+             capital = c_gunsho_province
+             
+             c_gunsho_province = {
+                 color = { 85 64 5 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_ikoma = {
+                     province = 85
+                 }
+				 b_murame_toshi = {
+                     province = 86
+                 }
+            }
+			
+			c_eiyu_province = {
+                 color = { 248 247 10 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_eiyu = {
+                     province = 87
+                 }
+				 b_mura_sano_eiyu = {
+                     province = 88
+                 }
+            }
+			
+			c_gisei_province = {
+                 color = { 192 188 131 }
+                 color2 = { 255 255 255 }
+ 
+                 b_gisei_toshi = {
+                     province = 89
+                 }
+            }
+			
+			c_ikota_province = {
+                 color = { 166 166 12 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_kyube = {
+                     province = 90
+                 }
+				 
+				 b_great_hall = {
+                     province = 91
+                 }
+            }
+			
+			c_shiranai_province = {
+                 color = { 229 228 75 }
+                 color2 = { 255 255 255 }
+ 
+                 b_nishi_no_shiro = {
+                     province = 92
+                 }
+				 
+				 b_shiranai_toshi = {
+                     province = 93
+                 }
+            }
+		}
 	}
  }
 
