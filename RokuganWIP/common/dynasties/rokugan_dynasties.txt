@@ -1,4 +1,6 @@
-﻿##### Crane Clan
+﻿##########################
+##### Crane Clan
+##########################
 2100001 = {
 	name = dynn_doji
 	culture = doji
@@ -20,8 +22,9 @@
 	culture = kakita
 	motto = dynn_kakita_motto
 }
-
+##########################
 ##### Lion Clan
+##########################
 2100005 = {
 	name = dynn_akodo
 	culture = akodo
@@ -44,7 +47,163 @@
 	motto = dynn_ikoma_motto
 }
 
+##########################
+##### Phoenix Clan
+##########################
+2100009 = {
+	name = dynn_shiba
+	culture = shiba
+	motto = dynn_shiba_motto
+}
+2100010 = {
+	name = dynn_isawa
+	culture = isawa
+	motto = dynn_isawa_motto
+}
+2100011 = {
+	name = dynn_asako
+	culture = asako
+	motto = dynn_asako_motto
+}
+2100012 = {
+	name = dynn_kaito
+	culture = kaito
+	motto = dynn_kaito_motto
+}
+
+##########################
+##### Scorpion Clan
+##########################
+2100013 = {
+	name = dynn_bayushi
+	culture = bayushi
+	motto = dynn_bayushi_motto
+}
+2100014 = {
+	name = dynn_shosuro
+	culture = shosuro
+	motto = dynn_shosuro_motto
+}
+2100015 = {
+	name = dynn_soshi
+	culture = soshi
+	motto = dynn_soshi_motto
+}
+2100016 = {
+	name = dynn_yogo
+	culture = yogo
+	motto = dynn_yogo_motto
+}
+
+##########################
+##### Dragon Clan
+##########################
+2100017 = {
+	name = dynn_togashi
+	culture = togashi
+	motto = dynn_togashi_motto
+}
+2100018 = {
+	name = dynn_mirumoto
+	culture = mirumoto
+	motto = dynn_mirumoto_motto
+}
+2100019 = {
+	name = dynn_kitsuki
+	culture = kitsuki
+	motto = dynn_kitsuki_motto
+}
+2100020 = {
+	name = dynn_agasha
+	culture = agasha
+	motto = dynn_agasha_motto
+}
+
+##########################
+##### Crab Clan
+##########################
+2100021 = {
+	name = dynn_hida
+	culture = hida
+	motto = dynn_hida_motto
+}
+2100022 = {
+	name = dynn_hiruma
+	culture = hiruma
+	motto = dynn_hiruma_motto
+}
+2100023 = {
+	name = dynn_kaiu
+	culture = kaiu
+	motto = dynn_kaiu_motto
+}
+2100024 = {
+	name = dynn_kuni
+	culture = kuni
+	motto = dynn_kuni_motto
+}
+2100025 = {
+	name = dynn_yasuki
+	culture = yasuki
+	motto = dynn_yasuki_motto
+}
+
+##########################
+##### Unicorn Clan
+##########################
+2100026 = {
+	name = dynn_shinjo
+	culture = shinjo
+	motto = dynn_shinjo_motto
+}
+2100027 = {
+	name = dynn_ide
+	culture = ide
+	motto = dynn_ide_motto
+}
+2100028 = {
+	name = dynn_utaku
+	culture = utaku
+	motto = dynn_utaku_motto
+}
+2100029 = {
+	name = dynn_moto
+	culture = moto
+	motto = dynn_moto_motto
+}
+2100030 = {
+	name = dynn_iuchi
+	culture = iuchi
+	motto = dynn_iuchi_motto
+}
+
+##########################
+##### Imperial families
+##########################
+2100031 = {
+	name = dynn_hantei
+	culture = hantei
+	motto = dynn_hantei_motto
+}
+2100032 = {
+	name = dynn_otomo
+	culture = otomo
+	motto = dynn_otomo_motto
+}
+2100033 = {
+	name = dynn_seppun
+	culture = seppun
+	motto = dynn_seppun_motto
+}
+2100034 = {
+	name = dynn_miya
+	culture = miya
+	motto = dynn_miya_motto
+}
+
+##########################
 ##### Minor Clans
+##########################
 2100101 = {
 	name = dynn_kitsune
 	culture = kitsune

@@ -4,7 +4,7 @@ fortunism_religion = {
 	doctrine = eastern_hostility_doctrine
 
 	#Main Group
-	doctrine = doctrine_spiritual_head
+	doctrine = doctrine_temporal_head
 	doctrine = doctrine_gender_equal
 	doctrine = doctrine_pluralism_pluralistic
 	doctrine = doctrine_theocracy_temporal
@@ -12,7 +12,7 @@ fortunism_religion = {
 	#Marriage
 	doctrine = doctrine_monogamy
 	doctrine = doctrine_divorce_allowed
-	doctrine = doctrine_bastardry_none
+	doctrine = doctrine_bastardry_legitimization
 	doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
 
 	#Crimes
@@ -231,6 +231,8 @@ fortunism_religion = {
 			holy_site = jurojin_seido
 			holy_site = bishamon_seido
 			#holy_site = aso
+			#holy_site = mt_fuji
+			#holy_site = mt_fuji
 			#holy_site = mt_fuji
 
 			doctrine = tenet_astrology

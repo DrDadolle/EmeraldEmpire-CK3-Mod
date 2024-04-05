@@ -21,7 +21,7 @@ shinseism_religion = {
 	doctrine = doctrine_adultery_women_shunned
 	doctrine = doctrine_kinslaying_any_dynasty_member_crime
 	doctrine = doctrine_deviancy_shunned
-	doctrine = doctrine_witchcraft_shunned
+	doctrine = doctrine_witchcraft_crime
 
 	#Clerical Functions
 	doctrine = doctrine_clerical_function_alms_and_pacification
@@ -256,7 +256,7 @@ shinseism_religion = {
 			doctrine = tenet_pacifism
 			
 			
-			#TODO No special doctrine => is heresy
+			#TODO No special doctrine => is heresy ??
 			#Special Doctrine for Eastern Syncretism
 			#doctrine = special_doctrine_is_eastern_faith
 		}
