@@ -5,6 +5,8 @@ It is a WIP, not even alpha state
 ## Map reference 
 Atlas of Rokugan L5R 4e and L5R 5e
 https://www.reddit.com/r/rokugan/comments/jdcb7e/photoshopped_full_rokugan_map_w_provinces_families/#lightbox
+Old Map of 1ed for unaligned lands
+https://i.pinimg.com/originals/95/bc/75/95bc7582314663071bf04a08d022dffb.jpg
 
 ## How to install
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
