@@ -1,0 +1,93 @@
+##########################
+##### Crane Clan
+##########################
+2100001 = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_crane_doji_fullcolor.dds"
+	}
+}
+2100002 = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_crane_daidoji_fullcolor.dds"
+	}
+}
+2100003 = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_crane_asahina_fullcolor.dds"
+	}
+}
+2100004 = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_crane_kakita_fullcolor.dds"
+	}
+}
+##########################
+##### Lion Clan
+##########################
+2100005 = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_lion_akodo_fullcolor.dds"
+	}
+}
+2100006 = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_lion_matsu_fullcolor.dds"
+	}
+}
+2100007 = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_lion_kitsu_fullcolor.dds"
+	}
+}
+2100008 = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_lion_ikoma_fullcolor.dds"
+	}
+}
+##########################
+##### Phoenix Clan
+##########################
+2100009 = { #Shiba
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_phoenix_shiba_fullcolor.dds"
+	}
+}
+2100010 = { #Isawa
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_phoenix_isawa_fullcolor.dds"
+	}
+}
+2100011 = { #Asako
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_phoenix_asako_fullcolor.dds"
+	}
+}
+2100012 = { #Kaito
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_phoenix_kaito_fullcolor.dds"
+	}
+}

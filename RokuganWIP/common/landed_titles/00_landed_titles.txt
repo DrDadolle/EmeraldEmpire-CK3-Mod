@@ -780,6 +780,26 @@ e_rokugan = {
             }
 		}
 	}
+	k_imperial_clan = {
+		color = { 53 100 98 }
+		#TODO
+	}
+	k_dragon_clan = {
+		color = { 46 114 55 } 
+		#TODO
+	}
+	k_scorpion_clan = {
+		color = { 53 100 98 }
+		#TODO
+	}
+	k_crab_clan = {
+		color = { 41 31 91}
+		#TODO
+	}
+	k_unicorn_clan = {
+		color = { 108 52 179 }
+		#TODO
+	}
  }
  
  #TODO title of master of elements Isawa as landless duchy titles ???

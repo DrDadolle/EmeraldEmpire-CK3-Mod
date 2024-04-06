@@ -1,0 +1,184 @@
+﻿@smCastleX = 0.27
+@smCastleY = 0.23
+@smLysX = 0.23
+@smLysY = 0.26
+@smCross = 0.22
+
+e_rokugan = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_imperial_1.dds"
+		color1 = "green_light"
+	}
+}
+
+k_imperial_clan = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_imperial_1.dds"
+		color1 = "green_light"
+	}
+}
+
+##########################
+##### Crane Clan
+##########################
+k_crane_clan = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_crane_1.dds"
+		color1 = "blue_light"
+	}
+}
+
+d_doji = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_crane_doji_fullcolor.dds"
+	}
+}
+d_daidoji = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_crane_daidoji_fullcolor.dds"
+	}
+}
+d_asahina = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_crane_asahina_fullcolor.dds"
+	}
+}
+d_kakita = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_crane_kakita_fullcolor.dds"
+	}
+}
+##########################
+##### Lion Clan
+##########################
+k_lion_clan = {
+	pattern = "pattern_solid.dds"
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_lion_1.dds"
+		color1 = "yellow_light"
+	}
+}
+
+d_akodo = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_lion_akodo_fullcolor.dds"
+	}
+}
+d_matsu = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_lion_matsu_fullcolor.dds"
+	}
+}
+d_kitsu = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_lion_kitsu_fullcolor.dds"
+	}
+}
+d_ikoma = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_lion_ikoma_fullcolor.dds"
+	}
+}
+##########################
+##### Phoenix Clan
+##########################
+k_phoenix_clan = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_phoenix_1.dds"
+		color1 = "orange"
+	}
+}
+
+d_shiba = { #Shiba
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_phoenix_shiba_fullcolor.dds"
+	}
+}
+d_isawa = { #Isawa
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_phoenix_isawa_fullcolor.dds"
+	}
+}
+d_asako = { #Asako
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_phoenix_asako_fullcolor.dds"
+	}
+}
+d_kaito = { #Kaito
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_phoenix_kaito_fullcolor.dds"
+	}
+}
+
+##########################
+##### 
+##########################
+
+k_dragon_clan = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_dragon_1.dds"
+		color1 = "green"
+	}
+}
+
+k_scorpion_clan = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_scorpion_1.dds"
+		color1 = "red"
+	}
+}
+
+k_crab_clan = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_crab_1.dds"
+		color1 = "blue"
+	}
+}
+
+k_unicorn_clan = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_unicorn_1.dds"
+		color1 = "purple"
+	}
+}

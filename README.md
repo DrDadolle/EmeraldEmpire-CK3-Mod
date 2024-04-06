@@ -3,10 +3,13 @@ CK3 Mod of the Emerald Empire Rokugan from the TTRPG L5R.
 It is a WIP, not even alpha state
 
 ## Map reference 
-Atlas of Rokugan L5R 4e and L5R 5e
+Atlas of Rokugan L5R 4e
 https://www.reddit.com/r/rokugan/comments/jdcb7e/photoshopped_full_rokugan_map_w_provinces_families/#lightbox
 Old Map of 1ed for unaligned lands
 https://i.pinimg.com/originals/95/bc/75/95bc7582314663071bf04a08d022dffb.jpg
+L5R 5e map 
+https://cdn.svc.asmodee.net/production-l5r/uploads/2023/06/03_Map_Background-Rokugan-1900x2755.jpg
+
 
 ## How to install
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
@@ -51,3 +54,5 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 	- lion clan
 	- phoenix clan
 - all cultures & religion (draft)
+
+## Credit
