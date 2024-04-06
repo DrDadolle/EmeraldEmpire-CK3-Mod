@@ -47,3 +47,28 @@ moshi = {
 		10 = asian
 	}
 }
+
+kasuga = {
+	color = { .68 1.0 0.18 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_kasuga
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_maritime_mercantilism
+			tradition_hard_working
+			tradition_xenophilic
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}

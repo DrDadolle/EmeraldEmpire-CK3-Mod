@@ -10,6 +10,23 @@
 	religion = seven_fortunes
 	holding = church_holding
 }
+##d_kasuga ###################################
+###c_kasuga_province
+134 = {		#b_kyuden_kasuga
+	culture = kasuga
+	religion = seven_fortunes
+	holding = castle_holding
+}
+135 = {		#b_slow_tide_harbor
+	culture = kasuga
+	religion = seven_fortunes
+	holding = church_holding
+}
+136 = {		#b_kasuga_seido
+	culture = kasuga
+	religion = seven_fortunes
+	holding = city_holding
+}
 #castle_holding
 #church_holding
 #city_holding
