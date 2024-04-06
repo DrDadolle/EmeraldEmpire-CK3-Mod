@@ -15,8 +15,6 @@ https://cdn.svc.asmodee.net/production-l5r/uploads/2023/06/03_Map_Background-Rok
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
 ## short term goals
-- custom bookmark at date 1123 => Remove  the previous 1066 bookmark
-- creating Crane Coat of Arms (at least placeholders ones for major families) & Mottos
 - Paint Imperial Family
 - Play around with Religion to have the Emperor be the head of shinseism, fortunism & cult of ancestors
 - Paint & do Sea zones 
@@ -54,5 +52,6 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 	- lion clan
 	- phoenix clan
 - all cultures & religion (draft)
+- basic Coat of Arms for Clans & Families (late are buggy, weird colors)
 
 ## Credit
