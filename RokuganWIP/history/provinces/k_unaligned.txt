@@ -1,0 +1,34 @@
+##d_kintani_valley ###################################
+###c_north_kintani_province
+129 = {		#b_shinsei_monastery_1
+	culture = asako
+	religion = shinseism
+	holding = church_holding
+}
+###c_kintani_mori_province
+130 = {		#b_shinsei_monastery_2
+	culture = asako
+	religion = shinseism
+	holding = church_holding
+}
+131 = {		#b_kintani_mori_mura
+	culture = asako
+	religion = shinseism
+	holding = city_holding
+}
+132 = {		#b_shinsei_monastery_2
+	culture = asako
+	religion = shinseism
+	holding = none
+}
+###c_east_kintani_province
+133 = {		#b_shinsei_monastery_3
+	culture = moshi
+	religion = shinseism
+	holding = church_holding
+}
+
+#castle_holding
+#church_holding
+#city_holding
+#none

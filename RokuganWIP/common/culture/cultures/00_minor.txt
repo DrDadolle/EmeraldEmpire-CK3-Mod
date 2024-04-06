@@ -22,3 +22,28 @@
 		10 = asian
 	}
 }
+
+moshi = {
+	color = { 1.0 0.87 0.0 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_spiritual
+	heritage = heritage_moshi
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_female_only_inheritance
+		tradition_mountain_homes
+		tradition_charitable
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}

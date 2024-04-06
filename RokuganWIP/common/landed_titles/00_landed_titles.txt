@@ -800,6 +800,66 @@ e_rokugan = {
 		color = { 108 52 179 }
 		#TODO
 	}
+	#######################
+	###### Minor Clans
+	######### They are not in a de-jure kingdom #TODO see later how to create a kingdom through decision
+	d_moshi = {
+		 color = { 230 243 10 }
+		 color2 = { 255 255 255 }
+		 capital = c_mukade_no_tani_province
+		 
+		 c_mukade_no_tani_province = {
+			 color = { 230 243 10 }
+			 color2 = { 255 255 255 }
+
+			 b_shiro_moshi = {
+				 province = 127
+			 }
+			 b_amaterasu_seido = {
+				 province = 128
+			 }
+		}
+	}
+	#######################
+	###### Un-aligned lands
+	######### They are not in a de-jure kingdom #TODO see later how to create a kingdom through decision
+	d_kintani_valley = {
+		 color = { 141 129 124 }
+		 color2 = { 255 255 255 }
+		 capital = c_kintani_mori_province
+		 
+		 c_north_kintani_province = {
+			 color = { 171 159 144 }
+			 color2 = { 255 255 255 }
+
+			 b_shinsei_monastery_1 = {
+				 province = 129
+			 }
+		}
+		 
+		 c_kintani_mori_province = {
+			 color = { 141 129 124 }
+			 color2 = { 255 255 255 }
+
+			 b_shinsei_monastery_2 = {
+				 province = 130
+			 }
+			  b_kintani_mori_mura = {
+				 province = 131
+			 }
+			  b_kintani_mori_empty = {
+				 province = 132
+			 }
+		}
+		c_east_kintani_province = {
+			 color = { 75 26 7 }
+			 color2 = { 255 255 255 }
+
+			 b_shinsei_monastery_3 = {
+				 province = 133
+			 }
+		}
+	}
  }
  
  #TODO title of master of elements Isawa as landless duchy titles ???
