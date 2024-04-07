@@ -5,7 +5,7 @@
 e_rokugan = {
      color = { 74 140 137 }
      color2 = { 255 255 255 }
-     capital = c_kazenmuketsu_province
+     capital = c_otosan_uchi_province
  
      k_crane_clan = {
          color = { 168 221 254 }
@@ -780,10 +780,6 @@ e_rokugan = {
             }
 		}
 	}
-	k_imperial_clan = {
-		color = { 53 100 98 }
-		#TODO
-	}
 	k_dragon_clan = {
 		color = { 46 114 55 } 
 		#TODO
@@ -800,6 +796,102 @@ e_rokugan = {
 		color = { 108 52 179 }
 		#TODO
 	}
+	
+	k_imperial_families = {
+		color = {  53 100 98 }
+		capital = c_otosan_uchi_province
+ 
+         d_hantei = {
+             color = { 53 100 98 }
+             capital = c_otosan_uchi_province
+             
+             c_otosan_uchi_province = {
+                 color = {  53 100 98 }
+ 
+                 b_otosan_uchi = {
+                    province = 139
+                 }
+				 b_kita_chusin_mura = {
+                    province = 140
+                 }
+				 b_nishi_chusin_mura = {
+                    province = 141
+                 }
+				 b_sunset_tower = {
+                    province = 142
+                 }
+				 b_higashi_chushin_mura = {
+                    province = 143
+                 }
+				 b_minami_chushin_mura = {
+                    province = 144
+                 }
+            }
+		}
+		d_otomo = {
+             color = { 4 65 69 }
+			 #Special Title. Lore wise, Kyuden Otomo is in Otosan Uchi so... No land attached to it
+		}
+		d_seppun = {
+             color = { 57 139 135 }
+             capital = c_seppun_province
+             
+             c_seppun_province = {
+                 color = {  57 139 135 }
+ 
+                 b_kyuden_seppun = {
+                    province = 1
+                 }
+				 b_seppun_graves = {
+                    province = 138
+                 }
+            }
+			c_seppun_province_2 = {
+                 color = {  62 201 195 }
+ 
+                 shiro_seppun_2 = {
+                    province = 145
+                 }
+				 b_four_temples = {
+                    province = 146
+                 }
+				 b_seppun_port = {
+                    province = 147
+                 }
+				 b_seppun_tower = {
+                    province = 148
+                 }
+            }
+			c_seppun_province_3 = {
+                 color = {  73 247 240 }
+ 
+                 shiro_seppun_3 = {
+                    province = 149
+                 }
+            }
+		}
+	}
+	
+	#######################
+	# Special imp title
+	k_emerald_champ = {
+		color = {  74 140 137 }
+		capital = c_emerald_castle_province
+ 
+         d_emerald = {
+             color = {  74 140 137 }
+             capital = c_yogen_province
+             
+             c_emerald_castle_province = {
+                 color = {  74 140 137 }
+ 
+                 b_emerald_castle = {
+                    province = 137
+                 }
+            }
+		}
+	}
+	
 	#######################
 	###### Minor Clans
 	######### They are not in a de-jure kingdom #TODO see later how to create a kingdom through decision

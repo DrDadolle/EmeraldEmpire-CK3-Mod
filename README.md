@@ -9,6 +9,9 @@ Old Map of 1ed for unaligned lands
 https://i.pinimg.com/originals/95/bc/75/95bc7582314663071bf04a08d022dffb.jpg
 L5R 5e map 
 https://cdn.svc.asmodee.net/production-l5r/uploads/2023/06/03_Map_Background-Rokugan-1900x2755.jpg
+Some recap :
+https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MAP_PARTAGE_BASE_V4.png?ex=662022ef&is=660dadef&hm=419084cf70964e46659eb64fc07a20c3dd79c694952ad321db07dbcb972925cb&
+
 
 
 ## How to install
@@ -37,6 +40,7 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Special decisions
 	- Retake Yasuki Lands as Crane Clan
  	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
+- Special protection against conquest for un-aligned/minor/imperial lands => Casus belli way more costly + lose of prestige ?
 - Special Phoenix champion succession
 - Phoenix Council of 5 special government
 - Togashi special succession ?
