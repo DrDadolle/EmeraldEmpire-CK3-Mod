@@ -1,0 +1,88 @@
+#k_scorpion_clan
+##d_yogo ###################################
+###c_fukitsu_province
+151 = {		#b_shiro_yogo
+	culture = yogo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+152 = {		#b_nagamori_mura
+	culture = yogo
+	religion = seven_fortunes
+	holding = city_holding
+}
+###c_beiden_province
+153 = {		#b_seven_stings_keep
+	culture = yogo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+154 = {		#b_beiden
+	culture = yogo
+	religion = seven_fortunes
+	holding = city_holding
+}
+155 = {		#b_kagoki
+	culture = yogo
+	religion = seven_fortunes
+	holding = city_holding
+}
+##d_bayushi ###################################
+###c_nezuban_province
+156 = {		#b_fortunate_husband_keep
+	culture = bayushi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+157 = {		#b_hotei_seido
+	culture = bayushi
+	religion = seven_fortunes
+	holding = church_holding
+}
+###c_chuuou_province
+158 = {		#b_aitate_toshi
+	culture = bayushi
+	religion = cult_ancestors
+	holding = castle_holding
+}
+159 = {		#b_shimomura
+	culture = bayushi
+	religion = cult_ancestors
+	holding = city_holding
+}
+###c_hirozu_province
+160 = {		#b_palace_of_crimson_shadow
+	culture = bayushi
+	religion = cult_ancestors
+	holding = castle_holding
+}
+161 = {		#b_shimomura
+	culture = bayushi
+	religion = cult_ancestors
+	holding = city_holding
+}
+###c_kunizakai_province
+162 = {		#b_kyuden_bayushi
+	culture = bayushi
+	religion = cult_ancestors
+	holding = castle_holding
+}
+163 = {		#b_bayushi_seido
+	culture = bayushi
+	religion = cult_ancestors
+	holding = church_holding
+}
+164 = {		#b_traitor_grove_mura
+	culture = bayushi
+	religion = cult_ancestors
+	holding = city_holding
+}
+165 = {		#b_shiro_kuraishi
+	culture = bayushi
+	religion = cult_ancestors
+	holding = castle_holding
+}
+#castle_holding
+#church_holding
+#city_holding
+#none

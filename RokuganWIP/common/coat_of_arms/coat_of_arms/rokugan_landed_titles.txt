@@ -13,6 +13,10 @@ e_rokugan = {
 	}
 }
 
+##########################
+##### Imperial families Clan
+##########################
+
 k_imperial_clan = {
 	pattern = "pattern_solid.dds"
 	color1 = "black"
@@ -21,6 +25,49 @@ k_imperial_clan = {
 		color1 = "green_light"
 	}
 }
+
+d_hantei = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_imperial_1.dds"
+		color1 = "green_light"
+	}
+}
+
+c_otosan_uchi_province = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_imperial_1.dds"
+		color1 = "green_light"
+	}
+}
+
+d_miya = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_imperial_miya_fullcolor.dds"
+	}
+}
+
+d_otomo = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_imperial_otomo_fullcolor.dds"
+	}
+}
+
+d_seppun = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_imperial_seppun_fullcolor.dds"
+	}
+}
+
 
 ##########################
 ##### Crane Clan
@@ -115,38 +162,59 @@ k_phoenix_clan = {
 }
 
 d_shiba = { #Shiba
-	pattern = "pattern_solid.dds"	
-	color1 = "black"
+	#pattern = "pattern_solid.dds"	
+	#color1 = "black"
 	colored_emblem = {
 		texture = "ce_phoenix_shiba_fullcolor.dds"
 	}
 }
 d_isawa = { #Isawa
-	pattern = "pattern_solid.dds"	
-	color1 = "black"
+	#pattern = "pattern_solid.dds"	
+	#color1 = "black"
 	colored_emblem = {
 		texture = "ce_phoenix_isawa_fullcolor.dds"
 	}
 }
 d_asako = { #Asako
-	pattern = "pattern_solid.dds"	
-	color1 = "black"
+	#pattern = "pattern_solid.dds"	
+	#color1 = "black"
 	colored_emblem = {
 		texture = "ce_phoenix_asako_fullcolor.dds"
 	}
 }
 d_kaito = { #Kaito
-	pattern = "pattern_solid.dds"	
-	color1 = "white"
+	#pattern = "pattern_solid.dds"	
+	#color1 = "white"
 	colored_emblem = {
 		texture = "ce_phoenix_kaito_fullcolor.dds"
 	}
 }
 
 ##########################
-##### 
+##### Minor Clans
 ##########################
 
+d_moshi = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_minor_moshi.dds"
+		color1 = "orange"
+	}
+}
+
+d_kasuga = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_minor_kasuga.dds"
+		color1 = "yellow"
+	}
+}
+
+##########################
+##### 
+##########################
 k_dragon_clan = {
 	pattern = "pattern_solid.dds"
 	color1 = "black"

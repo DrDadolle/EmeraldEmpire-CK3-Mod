@@ -1,0 +1,94 @@
+##k_emerald_champ ############################################
+##d_emerald ###################################
+###c_emerald_castle_province
+137 = {		#b_emerald_castle
+	culture = doji
+	religion = seven_fortunes
+	holding = castle_holding
+}
+##k_imperial_families ############################################
+##d_hantei ###################################
+###c_otosan_uchi_province
+139 = {		#b_otosan_uchi
+	culture = hantei
+	religion = cult_ancestors
+	holding = castle_holding
+}
+140 = {		#b_kita_chusin_mura
+	culture = hantei
+	religion = cult_ancestors
+	holding = city_holding
+}
+141 = {		#b_nishi_chusin_mura
+	culture = hantei
+	religion = cult_ancestors
+	holding = city_holding
+}
+142 = {		#b_sunset_tower
+	culture = hantei
+	religion = cult_ancestors
+	holding = castle_holding
+}
+143 = {		#b_higashi_chushin_mura
+	culture = hantei
+	religion = cult_ancestors
+	holding = city_holding
+}
+144 = {		#b_minami_chushin_mura
+	culture = hantei
+	religion = cult_ancestors
+	holding = city_holding
+}
+150 = {		#hantei_seido
+	culture = hantei
+	religion = cult_ancestors
+	holding = church_holding
+}
+##d_otomo ###################################
+#No holdings
+#
+##d_seppun ###################################
+###c_seppun_province
+1 = {		#b_kyuden_seppun
+	culture = seppun
+	religion = shinseism
+	holding = castle_holding
+}
+138 = {		#b_seppun_graves
+	culture = seppun
+	religion = shinseism
+	holding = church_holding
+}
+###c_seppun_province_2
+145 = {		#b_shiro_seppun_2
+	culture = seppun
+	religion = shinseism
+	holding = castle_holding
+}
+146 = {		#b_four_temples
+	culture = seppun
+	religion = shinseism
+	holding = church_holding
+}
+147 = {		#b_seppun_port
+	culture = seppun
+	religion = shinseism
+	holding = city_holding
+}
+148 = {		#b_seppun_tower
+	culture = seppun
+	religion = shinseism
+	holding = castle_holding
+}
+###c_seppun_province_3
+149 = {		#b_shiro_seppun_3
+	culture = seppun
+	religion = shinseism
+	holding = castle_holding
+}
+
+
+#castle_holding
+#church_holding
+#city_holding
+#none

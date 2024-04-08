@@ -785,8 +785,88 @@ e_rokugan = {
 		#TODO
 	}
 	k_scorpion_clan = {
-		color = { 53 100 98 }
-		#TODO
+		color = { 145 1 11 }
+		capital = c_fukitsu_province #TODO change
+		
+		d_yogo = {
+             color = { 104 26 20 }
+             capital = c_fukitsu_province
+             
+             c_fukitsu_province = {
+                 color = { 104 26 20 }
+ 
+                 b_shiro_yogo = {
+                     province = 151
+                 }
+				 b_nagamori_mura = {
+                     province = 152
+                 }
+            }
+			c_beiden_province = {
+                 color = { 217 34 22 } 
+ 
+                 b_seven_stings_keep = {
+                     province = 153
+                 }
+				 b_beiden = {
+                     province = 154
+                 }
+				 b_kagoki = {
+                     province = 155
+                 }
+            }
+		}
+		d_bayushi = {
+             color = { 145 1 11 }
+             capital = c_kunizakai_province
+             
+             c_nezuban_province = {
+                 color = { 211 24 24 }
+ 
+                 b_fortunate_husband_keep = {
+                     province = 156
+                 }
+				 b_hotei_seido = {
+                     province = 157
+                 }
+            }
+			c_chuuou_province = {
+                 color = { 213 86 94 }
+ 
+                 b_aitate_toshi = {
+                     province = 158
+                 }
+				 b_shimomura = {
+                     province = 159
+                 }
+            }
+			c_hirozu_province = {
+                 color = { 221 15 29 }
+ 
+                 b_palace_of_crimson_shadow = {
+                     province = 160
+                 }
+				 b_shutai = {
+                     province = 161
+                 }
+            }
+			c_kunizakai_province = {
+                 color = { 145 1 11 }
+ 
+                 b_kyuden_bayushi = {
+                     province = 162
+                 }
+				 b_bayushi_seido = {
+                     province = 163
+                 }
+				 b_traitor_grove_mura = {
+                     province = 164
+                 }
+				 b_shiro_kuraishi = {
+                     province = 165
+                 }
+            }
+		}
 	}
 	k_crab_clan = {
 		color = { 41 31 91}
@@ -826,6 +906,9 @@ e_rokugan = {
 				 b_minami_chushin_mura = {
                     province = 144
                  }
+				 b_hantei_seido = {
+                    province = 150
+                 }
             }
 		}
 		d_otomo = {
@@ -849,7 +932,7 @@ e_rokugan = {
 			c_seppun_province_2 = {
                  color = {  62 201 195 }
  
-                 shiro_seppun_2 = {
+                 b_shiro_seppun_2 = {
                     province = 145
                  }
 				 b_four_temples = {
@@ -865,7 +948,7 @@ e_rokugan = {
 			c_seppun_province_3 = {
                  color = {  73 247 240 }
  
-                 shiro_seppun_3 = {
+                 b_shiro_seppun_3 = {
                     province = 149
                  }
             }
@@ -895,6 +978,7 @@ e_rokugan = {
 	#######################
 	###### Minor Clans
 	######### They are not in a de-jure kingdom #TODO see later how to create a kingdom through decision
+	######### Not in a kingdom => Not in an Empire #TODO fix it
 	d_moshi = {
 		 color = { 230 243 10 }
 		 color2 = { 255 255 255 }
@@ -935,6 +1019,7 @@ e_rokugan = {
 	#######################
 	###### Un-aligned lands
 	######### They are not in a de-jure kingdom #TODO see later how to create a kingdom through decision
+	######### Not in a kingdom => Not in an Empire #TODO fix it
 	d_kintani_valley = {
 		 color = { 141 129 124 }
 		 color2 = { 255 255 255 }
