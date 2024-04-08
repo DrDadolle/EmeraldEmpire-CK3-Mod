@@ -1,0 +1,35 @@
+d_bayushi = {
+	1123.1.1 = {
+		liege = "k_scorpion_clan"
+		holder = 3000320 # Bayushi Shoju
+	}
+
+}
+
+c_kunizakai_province = {
+	1123.1.1 = {
+		liege = "d_bayushi"
+		holder = 3000320 # Bayushi Shoju
+	}
+}
+
+c_hirozu_province = {
+	1123.1.1 = {
+		liege = "d_bayushi"
+		holder = 3000320 # Bayushi Shoju
+	}
+}
+
+c_nezuban_province = {
+	1123.1.1 = {
+		liege = "d_bayushi"
+		holder = 3000330 # TODO random placehorlder name
+	}
+}
+
+c_chuuou_province = {
+	1123.1.1 = {
+		liege = "d_bayushi"
+		holder = 3000331 # TODO random placehorlder name
+	}
+}

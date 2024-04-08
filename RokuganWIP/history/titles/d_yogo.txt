@@ -1,0 +1,21 @@
+d_yogo = {
+	1123.1.1 = {
+		liege = "k_scorpion_clan"
+		holder = 3000300 # Yogo Junzo
+	}
+
+}
+
+c_fukitsu_province = {
+	1123.1.1 = {
+		liege = "d_yogo"
+		holder = 3000300 # Yogo Junzo
+	}
+}
+
+c_beiden_province = {
+	1123.1.1 = {
+		liege = "d_yogo"
+		holder = 3000310 # TODO random placehorlder name
+	}
+}

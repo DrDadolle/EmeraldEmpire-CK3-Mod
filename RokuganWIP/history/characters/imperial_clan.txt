@@ -1,0 +1,141 @@
+﻿#####################
+#	HANTEI
+#####################
+3001000 = {
+	name = name_jodan 	# Hantei 38th
+	dynasty = 2100031 	# Hantei
+	religion = "cult_ancestors"
+	culture = "hantei"
+	sexuality = heterosexual
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+
+	1083.1.1 = {
+		birth = yes
+	}
+	
+	1099.1.1 = {
+		add_spouse=3001001 #Doji Hochiahime
+	}
+}
+
+3001001 = {
+	name = name_hochiahime 	# Hantei Hochiahime, spouse of Hantei 38th
+	dynasty = 2100001 	# Doji
+	religion = "seven_fortunes"
+	culture = "doji"
+	sexuality = heterosexual
+	female = yes
+	
+	### Stats
+	
+	### Traits
+
+
+	### Family
+
+	1081.1.1 = {
+		birth = yes
+	}
+}
+
+3001002 = {
+	name = name_sotorii 	# Hantei Sotorii, elder son of Hantei 38th
+	dynasty = 2100031 	# Hantei
+	religion = "cult_ancestors"
+	culture = "hantei"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	#TODO
+
+	### Family
+	father = 3001000 #Hantei 38th
+	mother = 3001001 #Hantei Hochiahime
+
+	1101.1.1 = {
+		birth = yes
+	}
+}
+
+3001003 = {
+	name = name_daisetsu 	# Hantei daisetsu, son of Hantei 38th
+	dynasty = 2100031 	# Hantei
+	religion = "cult_ancestors"
+	culture = "hantei"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	#TODO
+
+	### Family
+	father = 3001000 #Hantei 38th
+	mother = 3001001 #Hantei Hochiahime
+	#Friend with Bayushi Dairu
+
+	1104.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Seppun
+#####################
+3001020 = {
+	name = name_daiori 	# Seppun Daiori, seppun daimyo
+	dynasty = 2100033 	# Seppun
+	religion = "shinseism"
+	culture = "seppun"
+	
+	### Stats
+	
+	### Traits
+
+	1094.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Seppun
+3001030 = {
+	name = name_aki 	#  Doji Aki  #TODO replace name
+	dynasty = 2100033 	# Seppun #TODO replace by  like the dynn_morehei_doji
+	religion = "shinseism"
+	culture = "seppun"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Otomo
+#####################
+3001040 = {
+	name = name_sorai 	# Otomo Sorai, Otomo daimyo
+	dynasty = 2100022 	# Otomo
+	religion = "cult_ancestorsm"
+	culture = "otomo"
+	
+	### Stats
+	
+	### Traits
+
+	1074.1.1 = {
+		birth = yes
+	}
+}
+
+

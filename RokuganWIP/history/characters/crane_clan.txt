@@ -30,9 +30,9 @@
 	### Family
 	father = 3000003 #Doji Satsume
 	mother = 3000004 #Kakita Teinko
-	#add
+	#add lover with Bayushi Kachiko
 
-	1101.1.1 = {
+	1098.1.1 = {
 		birth = yes
 	}
 	
@@ -163,6 +163,10 @@
 
 	1102.1.1 = {
 		birth = yes
+	}
+	
+	1121.1.1 = {
+		add_spouse=3000006 #Kitsune Kuzunobu
 	}
 }
 

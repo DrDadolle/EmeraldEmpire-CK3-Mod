@@ -226,15 +226,17 @@ ancestors_religion = {
 		cult_ancestors = {
 			color = { 0.2 0.2 0.9 }
 			icon = vajrayana
+			religious_head = e_rokugan
 
 			holy_site = akodo_temple
 			holy_site = doji_temple
 			holy_site = shiba_temple
-			#holy_site = bayushi_temple
+			holy_site = bayushi_temple
+			holy_site = hantei_temple
 			#holy_site = togashi_temple
 			#holy_site = hida_temple
 			#holy_site = shinjo_temple
-			#holy_site = hantei_temple
+			
 
 			doctrine = tenet_unrelenting_faith
 			doctrine = tenet_ancestor_worship

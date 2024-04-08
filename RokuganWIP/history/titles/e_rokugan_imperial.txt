@@ -1,0 +1,68 @@
+e_rokugan = { 
+	1103.1.1 = {
+		holder = 3001000 # Hantei 38th
+	}
+}
+
+k_imperial_families = {
+	1103.1.1 = {
+		liege = "e_rokugan"
+		holder = 3001000 # Hantei 38th
+	}
+}
+
+d_hantei = {
+	1103.1.1 = {
+		liege = "k_imperial_families"
+		holder = 3001000 # Hantei 38th
+	}
+}
+
+c_otosan_uchi_province = {
+	1103.1.1 = {
+		liege = "d_hantei"
+		holder = 3001000 # Hantei 38th
+	}
+}
+
+d_otomo = {
+	1094.1.1 = {
+		liege = "k_imperial_families"
+		holder = 3001040 # Otomo Sorai
+	}
+}
+
+d_seppun = {
+	1094.1.1 = {
+		liege = "k_imperial_families"
+		holder = 3001020 # Seppun Daiori
+	}
+}
+
+c_seppun_province = {
+	1094.1.1 = {
+		liege = "d_seppun"
+		holder = 3001020 # Seppun Daiori
+	}
+}
+
+c_seppun_province_2 = {
+	1094.1.1 = {
+		liege = "d_seppun"
+		holder = 3001020 # Seppun Daiori
+	}
+}
+
+c_seppun_province_3 = {
+	1123.1.1 = {
+		liege = "d_seppun"
+		holder = 3001030 # TODO placeholder name
+	}
+}
+
+k_emerald_champ = {
+	1123.1.1 = { #TODO for now, it's not historic, but emerald champion stuff is not vanilla friendly. To code later
+		liege = "e_rokugan"
+		holder = 3000101 # Toturi
+	}
+}

@@ -1,0 +1,129 @@
+﻿#####################
+#	Yogo
+#####################
+3000300 = {
+	name = name_junzo 	# Yogo junzo, Yogo Daimyo
+	dynasty = 2100016 	# Yogo
+	religion = "seven_fortunes"
+	culture = "yogo"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+
+	1066.1.1 = {
+		birth = yes
+	}
+}
+
+
+##### Random county holder for the Yogo
+3000310 = {
+	name = name_aki 	#  Yogo Aki  #TODO replace name
+	dynasty = 2100016 	# Yogo  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "yogo"
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Bayushi
+#####################
+3000320 = {
+	name = name_shoju 	# Bayushi Shoju, Bayushi Daimyo & Clan champion of 1123
+	dynasty = 2100013 	# Bayushi
+	religion = "cult_ancestors"
+	culture = "bayushi"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+	
+
+	1087.1.1 = {
+		birth = yes
+	}
+	
+	1107.1.1 = {
+		spouse = 3000321 #Bayushi Kachiko
+	}
+}
+
+3000321 = {
+	name = name_kachiko 	# Bayushi Kachiko, Imperial advisor & Spouse of Bayushi Shoju
+	dynasty = 2100014 	# Shosuro
+	religion = "seven_fortunes"
+	culture = "soshuro"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+	trait = beauty_good_3
+	
+	### DNA
+	##TODO
+	
+	###Family
+	## TODO add doji hotaru as lover
+
+	1089.1.1 = {
+		birth = yes
+	}
+	
+	1107.1.1 = {
+		spouse = 3000320 #Bayushi Shoyu
+	}
+}
+3000322 = {
+	name = name_dairu 	# Bayushi Dairu, children of Bayushi Shoyu, Scorpion Heir
+	dynasty = 2100013 	# Bayushi
+	religion = "cult_ancestors"
+	culture = "bayushi"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+	
+	###Family
+	father = 3000320 #Bayushi Shoju
+	mother = 3000321 #Bayushi Kachiko
+	#TODO : friend with Hantei Daisetsu
+
+	1108.1.1 = {
+		birth = yes
+	}
+	
+}
+
+
+##### Random county holder for the Bayushi
+3000330 = {
+	name = name_aki 	#  Bayushi Aki  #TODO replace name
+	dynasty = 2100013 	# Bayushi  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "bayushi"
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000331 = {
+	name = name_akiko 	#  Bayushi Aki  #TODO replace name
+	dynasty = 2100013 	# Bayushi  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "bayushi"
+	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
