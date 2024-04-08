@@ -867,6 +867,63 @@ e_rokugan = {
                  }
             }
 		}
+		d_shosuro = {
+             color = { 190 15 15 }
+             capital = c_kawa_province
+             
+            c_kawa_province = {
+                 color = { 190 15 15 }
+ 
+                 b_shiro_shosuro = {
+                     province = 166
+                 }
+				 b_painted_city = {
+                     province = 167
+                 }
+				 b_ginasutra = {
+                     province = 168
+                 }
+            }
+			c_ryoko_province = {
+                 color = { 226 18 18 } 
+				 b_ryoko_no_owari_toshi = {
+                     province = 170
+                 }
+            }
+			c_kakushikoto_province = {
+                 color = { 182 61 61 } 
+				 b_nihai_tower = {
+                     province = 169
+                 }
+            }
+		}
+		d_soshi = {
+             color = { 123 11 11 }
+             capital = c_an_ei_province
+             
+            c_an_ei_province = {
+                 color = { 123 11 11 }
+ 
+                 b_shiro_soshi = {
+                     province = 171
+                 }
+            }
+			c_yuma_province = {
+                 color = { 211 41 41 } 
+				 b_hidden_watch_keep = {
+                     province = 172
+                 }
+            }
+			c_kimbouo_province = {
+                 color = { 157 23 23 } 
+				 b_pokau = {
+                     province = 173
+                 }
+				 b_shrine_of_shadows_eye = {
+                     province = 174
+                 }
+            }
+		}
 	}
 	k_crab_clan = {
 		color = { 41 31 91}
@@ -953,6 +1010,25 @@ e_rokugan = {
                  }
             }
 		}
+		d_kasuga = {
+		 color = { 230 243 10 }
+		 color2 = { 255 255 255 }
+		 capital = c_kasuga_province
+		 
+		 c_kasuga_province = {
+			 color = { 230 243 10 }
+			 color2 = { 255 255 255 }
+
+			 b_kyuden_kasuga = {
+				 province = 134
+			 }
+			 b_slow_tide_harbor = {
+				 province = 135
+			 }
+			 b_kasuga_seido = {
+				 province = 136
+			 }
+		}
 	}
 	
 	#######################
@@ -993,26 +1069,6 @@ e_rokugan = {
 			 }
 			 b_amaterasu_seido = {
 				 province = 128
-			 }
-		}
-	}
-	d_kasuga = {
-		 color = { 230 243 10 }
-		 color2 = { 255 255 255 }
-		 capital = c_kasuga_province
-		 
-		 c_kasuga_province = {
-			 color = { 230 243 10 }
-			 color2 = { 255 255 255 }
-
-			 b_kyuden_kasuga = {
-				 province = 134
-			 }
-			 b_slow_tide_harbor = {
-				 province = 135
-			 }
-			 b_kasuga_seido = {
-				 province = 136
 			 }
 		}
 	}

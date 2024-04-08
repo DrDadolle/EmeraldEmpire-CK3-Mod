@@ -18,16 +18,16 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
 ## short term goals
-- Paint Imperial Family
-- Play around with Religion to have the Emperor be the head of shinseism, fortunism & cult of ancestors
 - Paint & do Sea zones 
 - change naming of title (no Dukes or Califes please)
-- Paint Scorpion lands
 - Paint some ronin lands & test counties & Duchy without   
 - Have a not-so-ugly heightmap
 - Paint the map with materials
 - Paint & do rivers zones (and adjencies.csv)
 
+# Fixes to do
+- How to matrilinear mariage characters
+- How to duchy without kingdoms ...?
 
 ## Futures Features & Nice to have
 - Bushido & Duels
