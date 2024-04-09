@@ -73,6 +73,7 @@
 	
 	###Family
 	## TODO add doji hotaru as lover
+	##TODO add Shosuro Hametsu, daimyo of Shosuro as sibling & Rival
 
 	1089.1.1 = {
 		birth = yes
@@ -122,6 +123,90 @@
 	dynasty = 2100013 	# Bayushi  #TODO replace by  like the dynn_morehei_doji
 	religion = "cult_ancestors"
 	culture = "bayushi"
+	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Shosuro
+#####################
+3000340 = {
+	name = name_hametsu 	# Shosuro Hametsu, shosuro daimyo of 1123
+	dynasty = 2100014 	# Shosuro  
+	religion = "cult_ancestors"
+	culture = "shosuro"
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+	
+	###Family
+	##TODO add Bayushi Kachiko as sibling & Rival
+
+	1086.1.1 = {
+		birth = yes
+	}
+}
+##### Random county holder for the Shosuro
+3000350 = {
+	name = name_aki 	#  Shosuro Aki  #TODO replace name
+	dynasty = 2100014 	# Shosuro  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "shosuro"
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000351 = {
+	name = name_akiko 	#  Shosuro Aki  #TODO replace name
+	dynasty = 2100014 	# Shosuro  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "shosuro"
+	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Soshi
+#####################
+3000360 = {
+	name = name_shiori 	# Soshi Shiori, soshi daimyo of 1123
+	dynasty = 2100015 	# Soshi  
+	religion = "seven_fortunes"
+	culture = "soshi"
+	female = yes
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+
+	1096.1.1 = {
+		birth = yes
+	}
+}
+##### Random county holder for the Soshi
+3000370 = {
+	name = name_aki 	#  Soshi Aki  #TODO replace name
+	dynasty = 2100015 	# Soshi  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "soshi"
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000371 = {
+	name = name_akiko 	#  Soshi Aki  #TODO replace name
+	dynasty = 2100015 	# Soshi  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "soshi"
 	female = yes
 	1100.1.1 = {
 		birth = yes

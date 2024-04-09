@@ -82,6 +82,59 @@
 	religion = cult_ancestors
 	holding = castle_holding
 }
+##d_shosuro ###################################
+###c_kawa_province
+166 = {		#b_shiro_shosuro
+	culture = shosuro
+	religion = cult_ancestors
+	holding = castle_holding
+}
+167 = {		#b_painted_city
+	culture = shosuro
+	religion = cult_ancestors
+	holding = city_holding
+}
+168 = {		#b_ginasutra
+	culture = shosuro
+	religion = cult_ancestors
+	holding = church_holding
+}
+###c_kakushikoto_province
+169 = {		#b_nihai_tower
+	culture = shosuro
+	religion = cult_ancestors
+	holding = castle_holding
+}
+###c_ryoko_province
+170 = {		#b_ryoko_no_owari_toshi
+	culture = shosuro
+	religion = seven_fortunes
+	holding = castle_holding
+}
+##d_soshi ###################################
+###c_an_ei_province
+171 = {		#b_shiro_soshi
+	culture = soshi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_yuma_province
+172 = {		#b_hidden_watch_keep
+	culture = soshi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_kimbouo_province
+173 = {		#b_pokau
+	culture = soshi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+174 = {		#b_shrine_of_shadows_eye
+	culture = soshi
+	religion = seven_fortunes
+	holding = church_holding
+}
 #castle_holding
 #church_holding
 #city_holding
