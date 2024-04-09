@@ -53,19 +53,23 @@
 		name_masakuni name_iemitsu name_uji name_aki name_anzai name_atsuki name_bakin name_bokaru name_daisetsu name_daizu name_fuchida name_genzo name_gombei name_gosuta
 		name_kuwanan name_satsume name_toshimoko name_shinta name_takamori name_toturi name_arasou name_daio name_hiroru name_uniri name_anakazu name_ujimitsu
 		name_rujo name_tadaka name_ujina name_tsuke name_nobukai name_uwazuru name_jodan name_daiori name_sorai name_junzo name_shoju name_dairu name_hametsu
-		name_koshurin
+		name_koshurin name_kisada name_yakamo name_sukune name_yori name_taka name_oguri name_yasamura name_shono name_daiyu name_tadaji 
+		#Unicorn names
+		name_rumaru name_ogodei name_chagatai
 		
 		#### rest will be addid in localization file later 
 		#name_hachi name_haru name_hideki name_hideaki name_hitoshi name_hiyao  name_hio name_hogai name_hohiro name_akahito name_akihiro name_isamu name_inukai name_josuke name_junji
-		#name_junzo name_yoshi name_kabe name_kage name_kashin name_kaze name_kaii name_kengo name_keitaro name_kazuma name_kenzan name_kisada name_kuma name_kyuwa name_kiyoshi
-		#name_masaki name_masatari name_motaro name_naito name_naraku name_nagori name_oda name_oguri name_osuno name_okakura name_subaru name_seiki name_shihei name_shimura
-		#name_sho name_sozen name_sugimoto name_sunao name_taka name_taki name_takuma name_tanaka name_taro name_tampako name_tsubaru name_tsuneo name_yajinden name_yori
+		#name_junzo name_yoshi name_kabe name_kage name_kashin name_kaze name_kaii name_kengo name_keitaro name_kazuma name_kenzan  name_kuma name_kyuwa name_kiyoshi
+		#name_masaki name_masatari name_motaro name_naito name_naraku name_nagori name_oda name_osuno name_okakura name_subaru name_seiki name_shihei name_shimura
+		#name_sho name_sozen name_sugimoto name_sunao name_taki name_takuma name_tanaka name_taro name_tampako name_tsubaru name_tsuneo name_yajinden name_yori
 			}
 
 	female_names = {
 		name_sai name_fuse name_tomoe name_uta name_mai name_tsukasa name_fumi name_yume name_nozomi name_mitsu name_sakae name_akira name_megumi name_yoshi
 		name_hotaru name_shizue name_barahime name_takako name_kozue name_yokotsune name_tsuko name_yunaki name_takeko name_akiko name_tsanuri name_tsukune
-		name_kaede name_ninube name_kaiyoko name_akari name_kosori name_hochiahime name_kachiko
+		name_kaede name_ninube name_kaiyoko name_akari name_kosori name_hochiahime name_kachiko name_o_ushi name_shihobu name_haruko
+		#Unicorn names
+		name_altansarnai name_shahai name_khojin
 		
 		#### rest will be addid in localization file later
 		#name_kotobuki name_fuku name_sachi name_yui name_shinobu name_shizuka name_sei name_tomo name_haruka name_yuu name_hide name_aya name_moyabi name_tae name_rei

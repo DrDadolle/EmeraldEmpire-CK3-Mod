@@ -1,0 +1,360 @@
+﻿#####################
+#	Hida
+#####################
+3000400 = {
+	name = name_kisada 	# Hida Kisada, Hida Daimyo & Clan champion of 1123
+	dynasty = 2100021 	# Hida
+	religion = "cult_ancestors"
+	culture = "hida"
+	
+	### Stats
+	martial = 12
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 8
+	learning = 6
+	prowess = 10
+	
+	### Traits
+	trait = education_martial_4
+	trait = paranoid
+	trait = brave
+	trait = arrogant
+	trait = unyielding_defender
+	trait = giant
+	trait = strong
+	trait = physique_good_3
+	
+	### DNA
+	##TODO
+
+	1073.1.1 = {
+		birth = yes
+	}
+	
+	1097.1.1 = {
+		give_nickname = nick_great_bear
+	}
+}
+
+3000401 = {
+	name = name_yakamo 	# Hida Yakamo, Hida Daimyo's Heir
+	dynasty = 2100021 	# Hida
+	religion = "cult_ancestors"
+	culture = "hida"
+	
+	### Stats
+
+	
+	### Traits
+	trait = education_martial_3
+	
+	trait = wrathful
+	trait = brave
+	trait = deceitful
+	
+	trait = reckless
+	trait = strong
+	trait = physique_good_2
+	
+	### DNA
+	##TODO
+	
+	### Family
+	father = 3000400 #Hida Kisada
+
+	1094.1.1 = {
+		birth = yes
+	}
+}
+
+3000402 = {
+	name = name_o_ushi 	# Hida O-UShi, Hida Daimyo's daughter
+	dynasty = 2100021 	# Hida
+	religion = "cult_ancestors"
+	culture = "hida"
+	female = yes
+	
+	### Stats
+
+	
+	### Traits
+	trait = education_martial_4
+	
+	trait = patient
+	trait = brave
+	trait = stubborn
+	
+	trait = flexible_leader
+	trait = strong
+	trait = physique_good_2
+	
+	### DNA
+	##TODO
+	
+	### Family
+	father = 3000400 #Hida Kisada
+
+	1097.1.1 = {
+		birth = yes
+	}
+}
+
+3000403 = {
+	name = name_sukune 	# Hida sukune, Hida Daimyo's 3rd child
+	dynasty = 2100021 	# Hida
+	religion = "cult_ancestors"
+	culture = "hida"
+	
+	### Stats
+
+	
+	### Traits
+	trait = education_martial_3
+	
+	trait = shy
+	trait = just
+	trait = humble
+	
+	trait = logistician
+	trait = physique_bad_1
+	trait = intellect_good_1
+	
+	### DNA
+	##TODO
+	
+	### Family
+	father = 3000400 #Hida Kisada
+
+	1099.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Hida
+3000410 = {
+	name = name_aki 	#  Hida Aki  #TODO replace name
+	dynasty = 2100021 	# Hida  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "hida"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000411 = {
+	name = name_akiko 	#  Hida Aki  #TODO replace name
+	dynasty = 2100021 	# Hida  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "hida"
+	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Hiruma
+#####################
+3000420 = {
+	name = name_yoshino 	# Hiruma Yoshino, Hiruma Daimyo
+	dynasty = 2100022 	# Hiruma
+	religion = "cult_ancestors"
+	culture = "hiruma"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+
+	
+	### DNA
+	##TODO
+
+	1073.1.1 = {
+		birth = yes
+	}
+
+}
+
+##### Random county holder for the Hiruma
+3000430 = {
+	name = name_aki 	#  Hiruma Aki  #TODO replace name
+	dynasty = 2100022 	# Hiruma  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "hiruma"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000431 = {
+	name = name_akiko 	#  Hiruma Aki  #TODO replace name
+	dynasty = 2100022 	# Hiruma  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "hiruma"
+	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Kaiu
+#####################
+3000440 = {
+	name = name_shihobu 	# Kaiu Shihobu, Kaiu Daimyo
+	dynasty = 2100023 	# Kaiu
+	religion = "cult_ancestors"
+	culture = "kaiu"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+
+	
+	### DNA
+	##TODO
+
+	1095.1.1 = {
+		birth = yes
+	}
+	
+	##TODO add asako Betrothed
+
+}
+
+##### Random county holder for the Kaiu
+3000450 = {
+	name = name_aki 	#  Kaiu Aki  #TODO replace name
+	dynasty = 2100023 	# Kaiu  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "kaiu"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000451 = {
+	name = name_akiko 	#  Kaiu Aki  #TODO replace name
+	dynasty = 2100023 	# Kaiu  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors"
+	culture = "kaiu"
+	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Kuni
+#####################
+3000460 = {
+	name = name_yori 	# Kuni Yori, Kuni Daimyo
+	dynasty = 2100024 	# Kuni
+	religion = "seven_fortunes"
+	culture = "kuni"
+	
+	### Stats
+	
+	### Traits
+
+	
+	### DNA
+	##TODO
+
+	1083.1.1 = {
+		birth = yes
+	}
+
+}
+
+##### Random county holder for the Kuni
+3000470 = {
+	name = name_aki 	#  Kuni Aki  #TODO replace name
+	dynasty = 2100024 	# Kuni  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "kuni"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000471 = {
+	name = name_akiko 	#  Kuni Aki  #TODO replace name
+	dynasty = 2100024 	# Kuni  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "kuni"
+	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Yasuki
+#####################
+3000480 = {
+	name = name_taka 	# Yasuki Yasuki, Yasuki Daimyo
+	dynasty = 2100025 	# Yasuki
+	religion = "seven_fortunes"
+	culture = "yasuki"
+	
+	### Stats
+	
+	### Traits
+	trait = education_stewardship_4
+	trait = cynical
+	trait = gregarious
+	trait = greedy
+	
+	trait = intellect_good_1
+	
+	### DNA
+	##TODO
+
+	1075.1.1 = {
+		birth = yes
+	}
+}
+
+3000481 = {
+	name = name_oguri 	# Yasuki Yasuki, Yasuki Daimyo
+	dynasty = 2100025 	# Yasuki
+	religion = "seven_fortunes"
+	culture = "yasuki"
+	
+	### Stats
+	
+	### Traits
+	trait = education_stewardship_3 
+	
+	### DNA
+	##TODO
+	
+	### Family 
+	father = 3000480 # Yasuki Taka
+
+	1075.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Yasuki
+3000490 = {
+	name = name_aki 	#  Yasuki Aki  #TODO replace name
+	dynasty = 2100025 	# Yasuki  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "yasuki"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000491 = {
+	name = name_akiko 	#  Yasuki Aki  #TODO replace name
+	dynasty = 2100025 	# Yasuki  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "yasuki"
+	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}

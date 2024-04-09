@@ -1,0 +1,309 @@
+﻿#####################
+#	Shinjo
+#####################
+3000500 = {
+	name = name_altansarnai 	# Shinjo Altansarnai, Shinjo Daimyo & Clan champion of 1123
+	dynasty = 2100026 	# Shinjo
+	religion = "seven_fortunes"
+	culture = "shinjo"
+	female = yes
+	
+	### Stats
+
+	
+	### Traits
+
+	
+	### DNA
+	##TODO
+
+	1078.1.1 = {
+		birth = yes
+	}
+}
+
+3000501 = {
+	name = name_yasamura 	# Shinjo Yasamura, Shinjo Daimyo's Heir
+	dynasty = 2100026 	# Shinjo
+	religion = "seven_fortunes"
+	culture = "shinjo"
+	
+	### Stats
+
+	
+	### Traits
+
+	
+	### DNA
+	##TODO
+	
+	### Family
+	mother = 3000500 # Shinjo Altansarnai
+	father = 3000520 #Iuchi Shahai
+
+	1098.1.1 = {
+		birth = yes
+	}
+}
+3000502 = {
+	name = name_haruko 	# Shinjo Haruko, Shinjo Daimyo daughter
+	dynasty = 2100026 	# Shinjo
+	religion = "seven_fortunes"
+	culture = "shinjo"
+	female = yes
+	
+	### Stats
+
+	
+	### Traits
+
+	
+	### DNA
+	##TODO
+	
+	### Family
+	mother = 3000500 # Shinjo Altansarnai
+	father = 3000520 #Iuchi Shahai
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000503 = {
+	name = name_shono 	# Shinjo Shono, Shinjo Daimyo son
+	dynasty = 2100026 	# Shinjo
+	religion = "seven_fortunes"
+	culture = "shinjo"
+	
+	### Stats
+
+	
+	### Traits
+
+	
+	### DNA
+	##TODO
+	
+	### Family
+	mother = 3000500 # Shinjo Altansarnai
+	father = 3000520 #Iuchi Shahai
+
+	1103.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Shinjo
+3000510 = {
+	name = name_aki 	#  Shinjo Aki  #TODO replace name
+	dynasty = 2100021 	# Shinjo  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "shinjo"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Iuchi
+#####################
+3000520 = {
+	name = name_daiyu 	# Iuchi Daiyu, Iuchi Daimyo
+	dynasty = 2100030 	# Iuchi
+	religion = "seven_fortunes"
+	culture = "iuchi"
+	
+	### Stats
+
+	### Traits
+
+	### DNA
+	##TODO
+
+	1078.1.1 = {
+		birth = yes
+	}
+}
+3000521 = {
+	name = name_shahai 	# Iuchi Shahai, Iuchi Daimyo's heir
+	dynasty = 2100030 	# Iuchi
+	religion = "seven_fortunes"
+	culture = "iuchi"
+	female = yes
+	
+	### Stats
+
+	
+	### Traits
+
+	
+	### DNA
+	##TODO
+	
+	### Family
+	father = 3000520 #Iuchi Shahai
+	##TODO Hantei Daisetsu as lover
+	##TODO how to be solo Iuchi heir ???
+
+	1105.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Iuchi
+3000530 = {
+	name = name_aki 	#  Iuchi Aki  #TODO replace name
+	dynasty = 2100030 	# Iuchi  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "uchi"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Ide
+#####################
+3000540 = {
+	name = name_tadaji 	# Ide Tadaji, Ide Daimyo
+	dynasty = 2100027 	# Ide
+	religion = "seven_fortunes"
+	culture = "ide"
+	
+	### Stats
+
+	### Traits
+
+	### DNA
+	##TODO
+
+	1089.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Ide
+3000550 = {
+	name = name_aki 	#  Ide Aki  #TODO replace name
+	dynasty = 2100027 	# Ide  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "ide"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Utaku
+#####################
+3000560 = {
+	name = name_rumaru 	# Utaku Rumaru, Utaku Daimyo
+	dynasty = 2100028 	# Utaku
+	religion = "seven_fortunes"
+	culture = "utaku"
+	
+	### Stats
+
+	### Traits
+
+	### DNA
+	##TODO
+
+	1095.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Utaku
+3000570 = {
+	name = name_aki 	#  Utaku Aki  #TODO replace name
+	dynasty = 2100028 	# Utaku  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "utaku"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Moto
+#####################
+3000580 = {
+	name = name_ogodei 	# Moto Ogodei, Moto Daimyo
+	dynasty = 2100029 	# Moto
+	religion = "cult_ancestors" #TODO change with Lords of death ?
+	culture = "moto"
+	
+	### Stats
+
+	### Traits
+
+	### DNA
+	##TODO
+
+	1070.1.1 = {
+		birth = yes
+	}
+}
+
+3000581 = {
+	name = name_khojin 	# Moto Khojin , Moto Daimyo elder daughter but NO heir
+	dynasty = 2100029 	# Moto
+	religion = "cult_ancestors" #TODO change with Lords of death ?
+	culture = "moto"
+	female = yes 
+	
+	### Stats
+
+	### Traits
+	trait = disinherited # workaround because not heir
+
+	### DNA
+	##TODO
+	
+	###Family
+	father = 3000580 # Moto Ogodei
+	#mother = ID # Ujin Hogelun
+	#TODO 2 husband, one wife lol
+
+	1092.1.1 = {
+		birth = yes
+	}
+}
+
+3000582 = {
+	name = name_chagatai 	# Moto Chagatai , Moto Daimyo's heir
+	dynasty = 2100029 	# Moto
+	religion = "cult_ancestors" #TODO change with Lords of death ?
+	culture = "moto"
+	
+	### Stats
+
+	### Traits
+
+	### DNA
+	##TODO
+	
+	###Family
+	father = 3000580 # Moto Ogodei
+
+	1102.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Moto
+3000590 = {
+	name = name_aki 	#  Moto Aki  #TODO replace name
+	dynasty = 2100029 	# Moto  #TODO replace by  like the dynn_morehei_doji
+	religion = "cult_ancestors" #TODO change with Lords of death ?
+	culture = "moto"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
