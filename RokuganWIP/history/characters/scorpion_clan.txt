@@ -73,7 +73,8 @@
 	
 	###Family
 	## TODO add doji hotaru as lover
-	##TODO add Shosuro Hametsu, daimyo of Shosuro as sibling & Rival
+	##TODO add Shosuro Hametsu, daimyo of Shosuro Rival
+	father = 3000341 # Shosuro Koshurin
 
 	1089.1.1 = {
 		birth = yes
@@ -145,10 +146,29 @@
 	##TODO
 	
 	###Family
-	##TODO add Bayushi Kachiko as sibling & Rival
+	##TODO add Bayushi Kachiko  Rival
+	father = 3000341 # Shosuro Koshurin
 
 	1086.1.1 = {
 		birth = yes
+	}
+}
+
+3000341 = {
+	name = name_koshurin 	# Shosuro Koshurin, previous Shosuro. Taken from L5R 4e lore 'cause I need a father to Kachiko & Hametsu to make them siblings
+	dynasty = 2100014 	# Shosuro  
+	religion = "cult_ancestors"
+	culture = "shosuro"
+
+	### Stats
+	
+	### Traits
+
+	1056.1.1 = {
+		birth = yes
+	}
+	1110.1.1 = {
+		death = yes
 	}
 }
 ##### Random county holder for the Shosuro

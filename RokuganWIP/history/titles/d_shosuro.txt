@@ -1,14 +1,20 @@
 d_shosuro = {
-	1123.1.1 = {
+	1080.1.1 = {
 		liege = "k_scorpion_clan"
+		holder = 3000341 # Shosuro Koshurin
+	}
+	1110.1.1 = {
 		holder = 3000340 # Shosuro Hametsu
 	}
 
 }
 
 c_kawa_province = {
-	1123.1.1 = {
-		liege = "d_shosuro"
+	1080.1.1 = {
+		liege = "k_scorpion_clan"
+		holder = 3000341 # Shosuro Koshurin
+	}
+	1110.1.1 = {
 		holder = 3000340 # Shosuro Hametsu
 	}
 }

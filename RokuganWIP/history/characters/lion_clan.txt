@@ -52,7 +52,9 @@
 	}
 	
 	1123.3.1 = {
-		death = yes
+		death={
+			death_reason=death_battle
+		}
 	}
 }
 
@@ -76,7 +78,9 @@
 	}
 	
 	1123.1.1 = {
-		death = yes
+		death={
+			death_reason=death_battle
+		}
 	}
 }
 
@@ -213,7 +217,9 @@
 	}
 	
 	1100.1.1 = {
-		death = yes
+		death={
+			death_reason=death_battle
+		}
 	}
 }
 3000124 = {

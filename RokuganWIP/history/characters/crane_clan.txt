@@ -23,6 +23,7 @@
 	trait = calm
 	trait = beauty_good_2
 	trait = blademaster_2
+	trait = doji_descendant
 	
 	### DNA
 	dna = doji_hotaru_dna_entry
@@ -88,7 +89,10 @@
 	}
 	
 	1123.4.1 = {
-		death = yes
+		death={
+			death_reason=death_murder
+		}
+
 	}
 	
 }
@@ -117,7 +121,10 @@
 	}
 	
 	1107.1.1 = {
-		death = yes
+		death={
+			death_reason=death_suicide
+		}
+
 	}
 }
 
@@ -137,11 +144,17 @@
 	### DNA
 	
 	### Family
-	father = 3000003 #Doji Satsume
-	mother = 3000004 #Kakita Teinko
+	father = 3000003 #Doji Satsume #TODO change to real father
+	mother = 3000004 #Kakita Teinko #TODO change to real mother
 
 	1104.1.1 = {
 		birth = yes
+		#effect = {
+		#	set_father = character:12015014
+		#	set_real_father = character:12015009
+		#	add_trait = "child_of_adoption"
+		#}
+
 	}
 }
 

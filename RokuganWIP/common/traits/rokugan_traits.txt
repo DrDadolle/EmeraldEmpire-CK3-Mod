@@ -1,0 +1,40 @@
+## CK2 Compatibility
+
+stressed = {}
+is_fat = {}
+
+
+## Kami Traits
+doji_descendant = {
+	category = fame #TODO faith ? fame ?
+
+	#TODO inheritance
+	#TODO block to one max kami descenant max ?
+	
+	attraction_opinion = 5
+	legitimacy_gain_mult = 0.1
+	monthly_prestige = 0.1
+	genetic_constraint_all = beauty
+	
+	# Always inherited
+	inherit_chance = 100
+
+
+	icon = {
+		desc = female_commander.dds
+	}
+
+	ruler_designer_cost = 60
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_doji_descendant_desc
+			}
+			desc = trait_doji_descendant_character_desc
+		}
+	}
+}
