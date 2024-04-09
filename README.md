@@ -18,16 +18,23 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
 ## short term goals
-- Paint & do Sea zones 
-- change naming of title (no Dukes or Califes please)
+- Crab Lands
+- Unicorn Lands
+- Dragon lands
 - Paint some ronin lands & test counties & Duchy without   
 - Have a not-so-ugly heightmap
 - Paint the map with materials
 - Paint & do rivers zones (and adjencies.csv)
+- Paint & do Sea zones 
 
 # Fixes to do
-- How to matrilinear mariage characters
 - How to duchy without kingdoms ...?
+- How to prevent random mariage & children in existing character ?
+- Fix coast line ugly of Phoenix lands (& cranes)
+- husband/wife sharing the "Clan champion" title
+- Add last name before first name "Clan Champion Doji Hotaru of Crane Clan" instead "Clan Champion Hotaru of Crane Clan"
+- Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
+- Fix Dynasties visual display of CoA
 
 ## Futures Features & Nice to have
 - Bushido & Duels
@@ -55,6 +62,8 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 	- crane clan
 	- lion clan
 	- phoenix clan
+	- Scorpion clan
+	- Hantei & Seppun lands
 - all cultures & religion (draft)
 - basic Coat of Arms for Clans & Families (late are buggy, weird colors)
 

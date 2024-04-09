@@ -52,7 +52,7 @@
 	}
 	
 	1107.1.1 = {
-		spouse = 3000321 #Bayushi Kachiko
+		add_spouse = 3000321 #Bayushi Kachiko
 	}
 }
 
@@ -60,7 +60,7 @@
 	name = name_kachiko 	# Bayushi Kachiko, Imperial advisor & Spouse of Bayushi Shoju
 	dynasty = 2100014 	# Shosuro
 	religion = "seven_fortunes"
-	culture = "soshuro"
+	culture = "shosuro"
 	female = yes
 	
 	### Stats
@@ -72,8 +72,6 @@
 	##TODO
 	
 	###Family
-	## TODO add doji hotaru as lover
-	##TODO add Shosuro Hametsu, daimyo of Shosuro Rival
 	father = 3000341 # Shosuro Koshurin
 
 	1089.1.1 = {
@@ -81,7 +79,13 @@
 	}
 	
 	1107.1.1 = {
-		spouse = 3000320 #Bayushi Shoyu
+		add_spouse = 3000320 #Bayushi Shoyu
+	}
+	
+	1122.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:3000001 } # In love with Doji Hotaru
+		}
 	}
 }
 3000322 = {
@@ -100,10 +104,15 @@
 	###Family
 	father = 3000320 #Bayushi Shoju
 	mother = 3000321 #Bayushi Kachiko
-	#TODO : friend with Hantei Daisetsu
 
 	1108.1.1 = {
 		birth = yes
+	}
+	
+	1123.1.1 = {
+		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:3001003 } #friend with Hantei Daisetsu
+		}
 	}
 	
 }
@@ -146,12 +155,17 @@
 	##TODO
 	
 	###Family
-	##TODO add Bayushi Kachiko  Rival
 	father = 3000341 # Shosuro Koshurin
 
 	1086.1.1 = {
 		birth = yes
 	}
+	1100.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:3000321 reason = rival_historical  #Rival with his sister Bayushi Kachiko
+		}
+	}
+	
 }
 
 3000341 = {

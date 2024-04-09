@@ -24,7 +24,7 @@
 	}
 	
 	1116.1.1 = {
-		spouse = 3000224 # Isawa Kaede
+		add_spouse = 3000224 # Isawa Kaede
 	}
 }
 
@@ -45,10 +45,15 @@
 	
 	### Family
 	father = 3000103 #Akodo Daio
-	#TODO : romance with Matsu UTsuko ?
 
 	1102.1.1 = {
 		birth = yes
+	}
+	
+	1121.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:3000121 } # In love with Matsu Tsuko it seems
+		}
 	}
 	
 	1123.3.1 = {
@@ -175,10 +180,15 @@
 	### Family
 	father = 3000123 #Matsu Uniri
 	mother = 3000124 #Matsu Yunaki
-	#TODO : romance with Akodo Arasou UTsuko ?
 
 	1090.1.1 = {
 		birth = yes
+	}
+	
+	1121.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:3000102 } # In love with Akodo Arasou it seems
+		}
 	}
 }
 3000122 = {
@@ -279,7 +289,7 @@
 	
 	### Traits
 
-	1109.1.1 = {
+	1106.1.1 = {
 		birth = yes
 	}
 }
@@ -331,7 +341,12 @@
 	}
 	
 	1095.1.1 = {
-			spouse = 3000241 #  Asako Akari
+			add_spouse = 3000241 #  Asako Akari
+	}
+	1096.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:3000241 } # In love with his wife Asako Akari
+		}
 	}
 }
 

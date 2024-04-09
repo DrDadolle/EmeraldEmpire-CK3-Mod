@@ -16,12 +16,22 @@
 	##TODO
 	
 	### Family
-	#TODO lover Isawa Tadaka
 	#TODO sibling Hatsu RIP
-	#Add friend Kaito Kosori
 
 	1106.1.1 = {
 		birth = yes
+	}
+	
+	1122.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:3000222 } # In love with her former charge Isawa Tadaka
+		}
+	}
+	
+	1123.1.1 = {
+		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:3000260 } #friend with  Kaito Kosori since  the Sanpuku Seido incident
+		}
 	}
 }
 
@@ -146,7 +156,6 @@
 	#TODO
 	
 	### Family
-	#TODO spouse Doji Ninube
 
 	1075.1.1 = {
 		birth = yes
@@ -279,15 +288,20 @@
 	### Traits
 	
 	### Family
-	#TODO add ikoma Anakazu as lover
 
 	1073.1.1 = {
 		birth = yes
 	}
 	
 	1095.1.1 = {
-			spouse = 3000160 #  Ikoma Anakazu
+			#spouse = 3000160 #  Ikoma Anakazu
 	}
+	1096.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:3000160 } # In love with her husband Ikoma Anakazu
+		}
+	}
+	
 }
 
 3000242 = {
@@ -349,10 +363,14 @@
 	
 	### Family
 	# TODO Niece of Kaito Nobukai
-	# TODO add Shiba Tsukune as friend ?
 
 	1105.1.1 = {
 		birth = yes
+	}
+	1123.1.1 = {
+		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:3000200 } #friend with Shiba Tsukune since  the Sanpuku Seido incident
+		}
 	}
 }
 

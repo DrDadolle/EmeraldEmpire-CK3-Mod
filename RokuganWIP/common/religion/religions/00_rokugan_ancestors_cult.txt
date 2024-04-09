@@ -228,7 +228,7 @@ ancestors_religion = {
 		cult_ancestors = {
 			color = { 0.2 0.2 0.9 }
 			icon = vajrayana
-			religious_head = e_rokugan
+			#religious_head = e_rokugan
 
 			holy_site = akodo_temple
 			holy_site = doji_temple

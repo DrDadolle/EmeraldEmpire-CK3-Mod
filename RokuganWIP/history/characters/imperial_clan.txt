@@ -69,7 +69,7 @@
 }
 
 3001003 = {
-	name = name_daisetsu 	# Hantei daisetsu, son of Hantei 38th
+	name = name_daisetsu 	# Hantei Daisetsu, son of Hantei 38th
 	dynasty = 2100031 	# Hantei
 	religion = "cult_ancestors"
 	culture = "hantei"
@@ -89,6 +89,12 @@
 	1104.1.1 = {
 		birth = yes
 	}
+	1123.1.1 = {
+		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:3000322 } #friend with Bayushi Dairu
+		}
+	}
+	
 }
 #####################
 #	Seppun

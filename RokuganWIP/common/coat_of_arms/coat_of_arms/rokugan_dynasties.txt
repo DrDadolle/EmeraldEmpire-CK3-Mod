@@ -2,8 +2,8 @@
 ##### Crane Clan
 ##########################
 2100001 = { #Doji
-	pattern = "pattern_solid.dds"	
-	color1 = "white"
+	#pattern = "pattern_solid.dds"	
+	#color1 = "white"
 	colored_emblem = {
 		texture = "ce_crane_doji_fullcolor.dds"
 	}
