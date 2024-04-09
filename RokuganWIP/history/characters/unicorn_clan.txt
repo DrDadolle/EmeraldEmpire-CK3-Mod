@@ -235,7 +235,7 @@
 3000580 = {
 	name = name_ogodei 	# Moto Ogodei, Moto Daimyo
 	dynasty = 2100029 	# Moto
-	religion = "cult_ancestors" #TODO change with Lords of death ?
+	religion = "lords_of_the_death"
 	culture = "moto"
 	
 	### Stats
@@ -253,7 +253,7 @@
 3000581 = {
 	name = name_khojin 	# Moto Khojin , Moto Daimyo elder daughter but NO heir
 	dynasty = 2100029 	# Moto
-	religion = "cult_ancestors" #TODO change with Lords of death ?
+	religion = "lords_of_the_death"
 	culture = "moto"
 	female = yes 
 	
@@ -279,7 +279,7 @@
 3000582 = {
 	name = name_chagatai 	# Moto Chagatai , Moto Daimyo's heir
 	dynasty = 2100029 	# Moto
-	religion = "cult_ancestors" #TODO change with Lords of death ?
+	religion = "lords_of_the_death"
 	culture = "moto"
 	
 	### Stats
@@ -301,7 +301,7 @@
 3000590 = {
 	name = name_aki 	#  Moto Aki  #TODO replace name
 	dynasty = 2100029 	# Moto  #TODO replace by  like the dynn_morehei_doji
-	religion = "cult_ancestors" #TODO change with Lords of death ?
+	religion = "lords_of_the_death"
 	culture = "moto"
 	
 	1100.1.1 = {
