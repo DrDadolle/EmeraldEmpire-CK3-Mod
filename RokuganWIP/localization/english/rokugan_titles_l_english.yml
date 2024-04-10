@@ -1,19 +1,170 @@
 ﻿l_english:
- king_unicorn:0 "Khan of Khans"
- duke_unicorn:0 "Khan"
- king_feudal_male:0 "Clan Champion"
- king_feudal_female:0 "Clan Champion"
- kingdom_feudal:0 "Clan"
- emperor_feudal_male:0 "Emperor"
- emperor_feudal_female:0 "Empress"
- empire_feudal:0 "Empire"
- #TODO what about actual emperor which has theocratic name
- baron_feudal_male:0 "Shugo"
- baron_feudal_female:0 "Shugo"
- barony_feudal:0 "Shugo? todo"
- count_feudal_male:0 "Provincal Daimyo"
- count_feudal_female:0 "Provincal Daimyo"
- county_feudal:0 "Province"
- duke_feudal_male:0 "Daimyo"
- duke_feudal_female:0 "Daimyo"
- duchy_feudal:0 "Family lands"
+ # Rokugan Basic titles
+#TODO keep for search stuff
+ #shogunate_empire:0 "Shogunate"
+ 
+ rokugan_spouse_male:0 "male_spouse_todo"
+ rokugan_spouse_female:0 "female_spouse_todo"
+ 
+ rokugan_barony:0 "Shugo"
+ rokugan_county:0 "Province"
+ rokugan_duchy:0 "Kuni"
+ rokugan_kingdom:0 "Clan"
+ rokugan_empire:0 "Empire"
+ 
+ 
+ 
+ #======
+ rokugan_barony_republic:0 "City"
+ rokugan_empire_republic:0 "Government"
+
+ rokugan_barony_theocracy:0 "Jisharyo"
+ rokugan_empire_theocracy:0 "Kyodan"
+
+ rokugan_empire_mercenary:0 "Shu"
+
+ rokugan_baron:0 "Shugo_todo"
+ rokugan_count:0 "Provincial Daimyo"
+ rokugan_duke:0 "Daimyo"
+ rokugan_king:0 "Clan Champion"
+ rokugan_king_plural:0 "Clan Champions"
+ rokugan_emperor:0 "Emperor"
+ rokugan_emperor_female:0 "Empress"
+ rokugan_emperor_plural:0 "Emperors"
+ 
+
+
+ rokugan_baron_republic:0 "Toshiyori"
+ rokugan_count_republic:0 "Toshiyori"
+ rokugan_duke_republic:0 "Odoshiyori"
+ rokugan_king_republic:0 "Toryo"
+ rokugan_emperor_republic:0 "President"
+
+ rokugan_baron_theocracy:0 "Juji"
+ rokugan_count_theocracy:0 "Sojo"
+ rokugan_duke_theocracy:0 "Daisojo"
+ rokugan_king_theocracy:0 "Hossu"
+ rokugan_emperor_theocracy:0 "Daihossu"
+
+ rokugan_baron_mercenary:0 "Toryo"
+ rokugan_count_mercenary:0 "Toryo"
+ rokugan_duke_mercenary:0 "Toryo"
+ rokugan_king_mercenary:0 "Toryo"
+ rokugan_emperor_mercenary:0 "Toryo"
+
+ prince_empire:0 "Prince"
+ princess_empire:0 "Princess"
+ #Unicorn special cultural name
+ rokugan_king_unicorn:0 "Khan of Khans"
+ rokugan_duke_unicorn:0 "Khan"
+ 
+ 
+ # General names
+ 
+ barony:0 "$rokugan_barony$"
+ county:0 "$rokugan_county$"
+ duchy:0 "$rokugan_duchy$"
+ kingdom:0 "$rokugan_kingdom$"
+ empire:0 "$rokugan_empire$"
+
+ baron:0 "$rokugan_baron$"
+ baron_female:0 "$baron$"
+ baron_plural:0 "$baron$"
+
+ count:0 "$rokugan_count$"
+ count_female:0 "$count$"
+ count_plural:0 "$count$"
+
+ duke:0 "$rokugan_duke$"
+ duke_female:0 "$duke$"
+ duke_plural:0 "$duke$"
+
+ king:0 "$rokugan_king$"
+ king_female:0 "$king$"
+ king_plural:0 "$king$"
+
+ emperor:0 "$rokugan_emperor$"
+ emperor_female:0 "$rokugan_emperor_female$"
+ emperor_plural:0 "$rokugan_emperor_plural$"
+ 
+ 
+ 
+ # Default Feudal tiers 
+ barony_feudal:0 "$barony$"
+ county_feudal:0 "$county$"
+ duchy_feudal:0 "$duchy$"
+ duchy_feudal_independent:0 "$duchy$"
+ kingdom_feudal:0 "$kingdom$"
+ empire_feudal:0 "$empire$"
+ 
+ baron_feudal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron$', '$rokugan_spouse_male$' ), '$rokugan_baron$' )]"
+ baron_feudal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron$', '$rokugan_spouse_female$' ), '$rokugan_baron$' )]"
+ count_feudal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count$', '$rokugan_spouse_male$' ), '$rokugan_count$' )]"
+ count_feudal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count$', '$rokugan_spouse_female$' ), '$rokugan_count$' )]"
+ duke_feudal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke$', '$rokugan_spouse_male$' ), '$rokugan_duke$' )]"
+ duke_feudal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke$', '$rokugan_spouse_female$' ), '$rokugan_duke$' )]"
+ king_feudal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king$', '$rokugan_spouse_male$' ), '$rokugan_king$' )]"
+ king_feudal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king$', '$rokugan_spouse_female$' ), '$rokugan_king$' )]"
+ emperor_feudal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_emperor$', '$rokugan_spouse_male$' ), '$rokugan_emperor$' )]"
+ emperor_feudal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_emperor_female$', '$rokugan_spouse_female$' ), '$rokugan_emperor_female$' )]"
+
+ duke_feudal_independent:0 "$duke_feudal_male$"
+ duke_feudal_independent_female:0 "$duke_feudal_female$"
+ 
+ # Default Republic tiers
+ barony_republic:0 "$rokugan_barony_republic$"
+ county_republic:0 "$county$"
+ duchy_republic:0 "$duchy$"
+ kingdom_republic:0 "$kingdom$"
+ empire_republic:0 "$rokugan_empire_republic$"
+
+ baron_republic_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron_republic$', '$rokugan_spouse_male$' ), '$rokugan_baron_republic$' )]"
+ baron_republic_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron_republic$', '$rokugan_spouse_female$' ), '$rokugan_baron_republic$' )]"
+ count_republic_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count_republic$', '$rokugan_spouse_male$' ), '$rokugan_count_republic$' )]"
+ count_republic_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count_republic$', '$rokugan_spouse_female$' ), '$rokugan_count_republic$' )]"
+ duke_republic_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke_republic$', '$rokugan_spouse_male$' ), '$rokugan_duke_republic$' )]"
+ duke_republic_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke_republic$', '$rokugan_spouse_female$' ), '$rokugan_duke_republic$' )]"
+ king_republic_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king_republic$', '$rokugan_spouse_male$' ), '$rokugan_king_republic$' )]"
+ king_republic_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king_republic$', '$rokugan_spouse_female$' ), '$rokugan_king_republic$' )]"
+ emperor_republic_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_emperor_republic$', '$rokugan_spouse_male$' ), '$rokugan_emperor_republic$' )]"
+ emperor_republic_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_emperor_republic$', '$rokugan_spouse_female$' ), '$rokugan_emperor_republic$' )]"
+
+ 
+ # Default Theocracy tiers
+
+ barony_theocracy:0 "$rokugan_barony_theocracy$"
+ county_theocracy:0 "$county$"
+ duchy_theocracy:0 "$duchy$"
+ kingdom_theocracy:0 "$kingdom$"
+ empire_theocracy:0 "$rokugan_empire_theocracy$"
+
+ baron_theocracy_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron_theocracy$', '$rokugan_spouse_male$' ), '$rokugan_baron_theocracy$' )]"
+ baron_theocracy_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron_theocracy$', '$rokugan_spouse_female$' ), '$rokugan_baron_theocracy$' )]"
+ count_theocracy_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count_theocracy$', '$rokugan_spouse_male$' ), '$rokugan_count_theocracy$' )]"
+ count_theocracy_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count_theocracy$', '$rokugan_spouse_female$' ), '$rokugan_count_theocracy$' )]"
+ duke_theocracy_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke_theocracy$', '$rokugan_spouse_male$' ), '$rokugan_duke_theocracy$' )]"
+ duke_theocracy_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke_theocracy$', '$rokugan_spouse_female$' ), '$rokugan_duke_theocracy$' )]"
+ king_theocracy_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king_theocracy$', '$rokugan_spouse_male$' ), '$rokugan_king_theocracy$' )]"
+ king_theocracy_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king_theocracy$', '$rokugan_spouse_female$' ), '$rokugan_king_theocracy$' )]"
+ emperor_theocracy_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_emperor_theocracy$', '$rokugan_spouse_male$' ), '$rokugan_emperor_theocracy$' )]"
+ emperor_theocracy_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_emperor_theocracy$', '$rokugan_spouse_female$' ), '$rokugan_emperor_theocracy$' )]"
+
+
+ # Default Mercenary tiers
+
+ barony_mercenary:0 "$rokugan_empire_mercenary$"
+ county_mercenary:0 "$rokugan_empire_mercenary$"
+ duchy_mercenary:0 "$rokugan_empire_mercenary$"
+ kingdom_mercenary:0 "$rokugan_empire_mercenary$"
+ empire_mercenary:0 "$rokugan_empire_mercenary$"
+
+ baron_mercenary_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron_mercenary$', '$rokugan_spouse_male$' ), '$rokugan_baron_mercenary$' )]"
+ baron_mercenary_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron_mercenary$', '$rokugan_spouse_female$' ), '$rokugan_baron_mercenary$' )]"
+ count_mercenary_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count_mercenary$', '$rokugan_spouse_male$' ), '$rokugan_count_mercenary$' )]"
+ count_mercenary_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count_mercenary$', '$rokugan_spouse_female$' ), '$rokugan_count_mercenary$' )]"
+ duke_mercenary_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke_mercenary$', '$rokugan_spouse_male$' ), '$rokugan_duke_mercenary$' )]"
+ duke_mercenary_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke_mercenary$', '$rokugan_spouse_female$' ), '$rokugan_duke_mercenary$' )]"
+ king_mercenary_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king_mercenary$', '$rokugan_spouse_male$' ), '$rokugan_king_mercenary$' )]"
+ king_mercenary_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king_mercenary$', '$rokugan_spouse_female$' ), '$rokugan_king_mercenary$' )]"
+ emperor_mercenary_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_emperor_mercenary$', '$rokugan_spouse_male$' ), '$rokugan_emperor_mercenary$' )]"
+ emperor_mercenary_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_emperor_mercenary$', '$rokugan_spouse_female$' ), '$rokugan_emperor_mercenary$' )]"
