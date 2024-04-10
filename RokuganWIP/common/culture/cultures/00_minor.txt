@@ -2,7 +2,7 @@
 	color = { 0.97 0.51 0.47 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_spiritual
-	heritage = heritage_kitsune
+	heritage = heritage_unicorn # Descendant of Unicorn samurai
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -27,7 +27,7 @@ moshi = {
 	color = { 1.0 0.87 0.0 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_spiritual
-	heritage = heritage_moshi
+	heritage = heritage_phoenix # Descendant of Isawa Moshi
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -52,13 +52,327 @@ kasuga = {
 	color = { .68 1.0 0.18 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_egalitarian
-	heritage = heritage_kasuga
+	heritage = heritage_dragon # Descendant of Agasha Kasuga
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+tonbo = {
+	color = { 0.5 1.0 0.0 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_communal
+	heritage = heritage_dragon # Descendant of Mirumoto Ashijin
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_esteemed_hospitality
+			tradition_mountain_homes
+			tradition_philosopher_culture
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+toritaka = {
+	color = { 0.55 0.57 0.67 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_spiritual
+	heritage = heritage_crab # Close to Crab lands, and they become a family of the crab clan in V4
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_warrior_monks # For combat shugenja ?
+			tradition_yokai_hunter # new custom tradition, mix of philosopher & hunter.
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+usagi = {
+	color = { 0.72 0.45 0.2 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bellicose
+	heritage = heritage_crab # Descendant from Usagi Reichin aka Yasuki Reichin
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_yokai_hunter # new custom tradition, mix of philosopher & hunter.
+			tradition_forbearing
+			tradition_adaptive_skirmishing
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+yoritomo = {
+	color = { 0.01 0.75 0.24 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bellicose
+	heritage = heritage_crab # Descendant of Osano-wo, son of Hida himself.
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_praticed_pirates
+			tradition_seafaring
 			tradition_maritime_mercantilism
-			tradition_hard_working
-			tradition_xenophilic
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+tsuruchi = {
+	color = { 1.00 1.0 0.0 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bellicose
+	heritage = heritage_lion # Descendant of scorpion & lion. here Lion heritage so the scorpion clan hates them more
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_longbow_competitions
+			tradition_swords_for_hire
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+suzume = {
+	color = { 0.38 0.51 0.71 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_crane # Offspring of the Crane Clan
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_storytellers
+			tradition_hard_working #Keep it ?
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+ichiro = {
+	color = { 0.47 0.53 0.55 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_stoic
+	heritage = heritage_crab # Descendant of Hida Domogu
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_isolationist
+			tradition_metal_craftsmanship
+			tradition_mountain_homes
+			tradition_stand_and_fight
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+nekoma = {
+	color = { 1.0 0.0 0.5 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_courtly
+	heritage = heritage_phoenix # TODO I guess ?
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_family_entrepreneurship # No idea, placeholder
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+komori = {
+	color = { 0.4 1.0 0.0 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_spiritual
+	heritage = heritage_crab # Descendant of Yoritomo Komori
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_seafaring
+			tradition_philosopher_culture
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+shika = {
+	color = { 0.71 0.65 0.26 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_spiritual
+	heritage = heritage_crane # Descendant of Asahina Takuya & Daidoji Kokoro
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_wedding_ceremonies
+			tradition_forest_folk
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+kaikoga = {
+	color = { 0.5 0.5 0.5 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_spiritual
+	heritage = heritage_phoenix # No canon-source
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_philosopher_culture #Placeholder for shugenja families
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+chuda = { # Defunct culture
+	color = { 0.33 0.42 0.18 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_spiritual
+	heritage = heritage_phoenix # No canon-source
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_philosopher_culture #Placeholder for shugenja families
+			tradition_eye_for_an_eye
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+kuma = { # Defunct culture
+	color = { 0.28 0.24 0.2 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bellicose
+	heritage = heritage_scorpion # No canon-source. Their land being close to scorpion lands, so...
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_battlefield_looters # Why not
+			tradition_only_the_strong # Bears are big and strong and scary
+			tradition_forest_folk # their land were close to shinomen forest
 	}
    
 	name_list = name_list_crane_family

@@ -7,10 +7,9 @@ akodo = {
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_martial_admiration
-		tradition_agrarian
+		tradition_mystical_ancestors
 		tradition_staunch_traditionalists
 		tradition_formation_fighting
-		tradition_forbearing
 		#TODO tabletop warrior
 	}
    
@@ -39,6 +38,7 @@ matsu = {
 		tradition_reverence_for_veterans
 		tradition_quarrelsome
 		tradition_eye_for_an_eye
+		tradition_mystical_ancestors
 	}
    
 	name_list = name_list_crane_family

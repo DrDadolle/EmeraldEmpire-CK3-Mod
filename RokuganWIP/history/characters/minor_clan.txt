@@ -38,3 +38,22 @@
 		birth = yes
 	}
 }
+#####################
+#	Kitsune
+#####################
+3002020 = {
+	name = name_gohei 	# Kitsune Gohei, Daimyo of Kitsune Clan
+	dynasty = 2100101 	# Kitsune
+	religion = "seven_fortunes"
+	culture = "kitsune"
+	
+	### Stats
+	### Traits
+	
+	### Family 
+	### Doji (Kitsune) Kuzunobu is his great nephew
+
+	1063.1.1 = {
+		birth = yes
+	}
+}

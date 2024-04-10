@@ -204,18 +204,79 @@
 ##########################
 ##### Minor Clans
 ##########################
-2100101 = {
+2100101 = { # Fox Clan
 	name = dynn_kitsune
 	culture = kitsune
 }
-2100102 = {
+2100102 = {# Centipede Clan
 	name = dynn_moshi
 	culture = moshi
 }
-2100103 = {
+2100103 = { # Tortoise Clan
 	name = dynn_kasuga
 	culture = kasuga
 }
+2100104 = { # Firefly Clan
+	name = dynn_tonbo
+	culture = tonbo
+}
+2100105 = { # Falcon Clan
+	name = dynn_toritaka
+	culture = toritaka
+}
+2100106 = { # Hare Clan
+	name = dynn_usagi
+	culture = usagi
+}
+2100107 = { # Mantis Clan
+	name = dynn_yoritomo
+	culture = yoritomo
+}
+2100108 = { # Wasp Clan
+	name = dynn_tsuruchi
+	culture = tsuruchi
+}
+2100109 = { # Sparrow Clan
+	name = dynn_suzume
+	culture = suzume
+}
+2100110 = { # Badger Clan
+	name = dynn_ichiro
+	culture = ichiro
+}
+2100111 = { # Cat Clan
+	name = dynn_nekoma
+	culture = nekoma
+}
+2100112 = { # Bat Clan
+	name = dynn_komori
+	culture = komori
+}
+2100113 = { # Deer Clan
+	name = dynn_shika
+	culture = shika
+}
+2100114 = { # Moth Clan
+	name = dynn_kaikoga
+	culture = kaikoga
+}
+2100115 = { # Snake Clan. Should be extinct... in theory
+	name = dynn_chuda
+	culture = chuda
+}
+2100116 = { # Bear Clan.  Should be extinct... in theory
+	name = dynn_kuma
+	culture = kuma
+}
+#2100117 = { #TODO Otter Clan
+#	name = dynn_xxx
+#	culture = xxx
+#}
+#2100118 = { #TODO Boar clan Extinct, for real
+#	name = dynn_xxx
+#	culture = xxx
+#}
+
 
 
 100848 = {
