@@ -20,7 +20,7 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 ## short term goals
 - Crab Lands
 - Unicorn Lands
-- Dragon lands
+- Dragon lands => Theocracy ???? Because of weird heritage
 - Paint some ronin lands & test counties & Duchy without   
 - Have a not-so-ugly heightmap
 - Paint the map with materials
@@ -28,13 +28,12 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Paint & do Sea zones 
 
 # Fixes to do
-- How to duchy without kingdoms ...?
-- How to prevent random mariage & children in existing character ?
+- How to prevent random mariage & children in existing character ? => change game_rule.1001 ???
 - Fix coast line ugly of Phoenix lands (& cranes)
-- husband/wife sharing the "Clan champion" title
 - Add last name before first name "Clan Champion Doji Hotaru of Crane Clan" instead "Clan Champion Hotaru of Crane Clan"
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
-- Fix Dynasties visual display of CoA
+- Fix Dynasties visual display of CoA => remove all transparency ???
+- add culture title for kasuga : Kizoku
 
 ## Futures Features & Nice to have
 - Bushido & Duels

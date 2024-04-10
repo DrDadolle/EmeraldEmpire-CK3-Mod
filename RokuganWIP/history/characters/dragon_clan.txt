@@ -1,0 +1,274 @@
+﻿#####################
+#	Togashi
+#####################
+3000600 = {
+	name = name_yokuni 	# Togashi Yokuni Dragon Clan Champion of 1123
+	dynasty = 2100017 	# Togashi
+	religion = "shinseism"
+	culture = "togashi"
+	
+	### Stats
+
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+
+	1088.1.1 = {
+		birth = yes
+	}
+	
+
+}
+
+##### Random county holder for the Togashi
+3000610 = {
+	name = name_aki 	#  Togashi Aki  #TODO replace name
+	dynasty = 2100017 	# Togashi  #TODO replace by  like the dynn_morehei_doji
+	religion = "shinseism"
+	culture = "togashi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000611 = {
+	name = name_akiko	#  Togashi Akiko  #TODO replace name
+	dynasty = 2100017 	# Togashi #TODO replace by  like the dynn_morehei_doji
+	female = yes
+	religion = "shinseism"
+	culture = "togashi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Mirumoto
+#####################
+3000620 = {
+	name = name_masashige 	# Mirumoto Masashige, Mirumoto Daimyo
+	dynasty = 2100018 	# Mirumoto
+	religion = "shinseism"
+	culture = "mirumoto"
+	
+	### Stats
+
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+
+	1084.1.1 = {
+		birth = yes
+	}
+}
+
+3000621 = {
+	name = name_ichiro 	# Mirumoto Ichiro, Mirumoto Daimyo's son #TODO now a ronin
+	dynasty = 2100018 	# Mirumoto
+	religion = "shinseism"
+	culture = "mirumoto"
+	
+	### Stats
+
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+	father = 3000620 # Mirumoto Masashige
+
+	1002.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Mirumoto
+3000630 = {
+	name = name_aki 	#  Mirumoto Aki  #TODO replace name
+	dynasty = 2100018 	# Mirumoto  #TODO replace by  like the dynn_morehei_doji
+	religion = "shinseism"
+	culture = "mirumoto"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000631 = {
+	name = name_akiko	#  Mirumoto Akiko  #TODO replace name
+	dynasty = 2100018 	# Mirumoto #TODO replace by  like the dynn_morehei_doji
+	female = yes
+	religion = "shinseism"
+	culture = "mirumoto"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Kitsuki
+#####################
+3000640 = {
+	name = name_jusai 	# Kitsuki Jusai, Kitsuki Daimyo
+	dynasty = 2100019 	# Kitsuki
+	religion = "shinseism"
+	culture = "kitsuki"
+	
+	### Stats
+
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+
+	1084.1.1 = {
+		birth = yes
+	}
+}
+
+3000641 = {
+	name = name_jusai 	# Kitsuki Tomoyo, Kitsuki Daimyo's youngest daughter
+	dynasty = 2100019 	# Kitsuki
+	religion = "shinseism"
+	culture = "kitsuki"
+	female = yes
+	
+	### Stats
+
+	### Traits
+	##TODO adopted
+	
+	### DNA
+	#TODO
+	
+	### Family
+	father = 3000640 # Kitsuki Jusai
+
+	1107.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Kitsuki
+3000650 = {
+	name = name_aki 	#  Kitsuki Aki  #TODO replace name
+	dynasty = 2100019 	# Kitsuki  #TODO replace by  like the dynn_morehei_doji
+	religion = "shinseism"
+	culture = "kitsuki"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000651 = {
+	name = name_akiko	#  Kitsuki Akiko  #TODO replace name
+	dynasty = 2100019 	# Kitsuki #TODO replace by  like the dynn_morehei_doji
+	female = yes
+	religion = "shinseism"
+	culture = "kitsuki"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Agasha
+#####################
+3000660 = {
+	name = name_tamori 	# Agasha Tamori, Agasha's daimyo. #Source is V4, no Agasha daimyo in V5
+	dynasty = 2100020 	# Agasha
+	religion = "shinseism"
+	culture = "agasha"
+	
+	### Stats
+
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+
+	1096.1.1 = {
+		birth = yes
+	}
+}
+
+3000661 = {
+	name = name_tsutomu 	# Agasha Tsutomu, Agasha's daimyo wife. #Source is V4
+	dynasty = 2100017 	# Togashi
+	religion = "shinseism"
+	culture = "togashi"
+	female = yes
+	
+	### Stats
+
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+
+	1096.1.1 = {
+		birth = yes
+	}
+}
+
+3000662 = {
+	name = name_shaitung 	# Agasha Tamori's daugther #Source is V4
+	dynasty = 2100020 	# Agasha
+	religion = "shinseism"
+	culture = "agasha"
+	female = yes
+	
+	### Stats
+
+	### Traits
+	
+	### DNA
+	#TODO
+	
+	### Family
+	father = 3000660  # Agasha Tamori
+	mother = 3000661  # Agasha Tsutomu
+	
+	1096.1.1 = {
+		birth = yes
+	}
+}
+
+##### Random county holder for the Agasha
+3000670 = {
+	name = name_aki 	#  Agasha Aki  #TODO replace name
+	dynasty = 2100020 	# Agasha  #TODO replace by  like the dynn_morehei_doji
+	religion = "shinseism"
+	culture = "agasha"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3000671 = {
+	name = name_akiko	#  Agasha Akiko  #TODO replace name
+	dynasty = 2100020 	# Agasha #TODO replace by  like the dynn_morehei_doji
+	female = yes
+	religion = "shinseism"
+	culture = "agasha"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}

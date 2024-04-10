@@ -1,0 +1,27 @@
+d_kasuga = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3002000 # Moshi Chiasa
+	}
+}
+
+c_kasuga_province = {
+	1123.1.1 = {
+		liege = "d_kasuga"
+		holder = 3002000 # Moshi Chiasa
+	}
+}
+
+d_moshi = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3002010 # Kasuga Gima
+	}
+}
+
+c_mukade_no_tani_province = {
+	1123.1.1 = {
+		liege = "d_moshi"
+		holder = 3002010 # Kasuga Gima
+	}
+}

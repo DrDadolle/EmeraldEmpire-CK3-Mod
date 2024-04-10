@@ -250,15 +250,6 @@ e_rokugan = {
                      province = 44
                  }
 			}
-			
-			c_kintani_province = {
-                 color = { 18 151 207 }
-                 color2 = { 255 255 255 }
- 
-                 b_shiro_kyotei = {
-                     province = 45
-                 }
-			}
 		}
      }
 	 k_lion_clan = {
@@ -1010,25 +1001,6 @@ e_rokugan = {
                  }
             }
 		}
-		d_kasuga = {
-		 color = { 230 243 10 }
-		 color2 = { 255 255 255 }
-		 capital = c_kasuga_province
-		 
-		 c_kasuga_province = {
-			 color = { 230 243 10 }
-			 color2 = { 255 255 255 }
-
-			 b_kyuden_kasuga = {
-				 province = 134
-			 }
-			 b_slow_tide_harbor = {
-				 province = 135
-			 }
-			 b_kasuga_seido = {
-				 province = 136
-			 }
-		}
 	}
 	
 	#######################
@@ -1053,69 +1025,110 @@ e_rokugan = {
 	
 	#######################
 	###### Minor Clans
-	######### They are not in a de-jure kingdom #TODO see later how to create a kingdom through decision
-	######### Not in a kingdom => Not in an Empire #TODO fix it
-	d_moshi = {
-		 color = { 230 243 10 }
-		 color2 = { 255 255 255 }
-		 capital = c_mukade_no_tani_province
-		 
-		 c_mukade_no_tani_province = {
+	######### place them in a random kingdom k_minor_clan
+	k_minor_clans = {
+		#No color ?
+		#No capitals ?
+		
+		d_moshi = {
 			 color = { 230 243 10 }
 			 color2 = { 255 255 255 }
+			 capital = c_mukade_no_tani_province
+			 
+			 c_mukade_no_tani_province = {
+				 color = { 230 243 10 }
+				 color2 = { 255 255 255 }
 
-			 b_shiro_moshi = {
-				 province = 127
-			 }
-			 b_amaterasu_seido = {
-				 province = 128
-			 }
+				 b_shiro_moshi = {
+					 province = 127
+				 }
+				 b_amaterasu_seido = {
+					 province = 128
+				 }
+			}
+		}
+		d_kasuga = {
+			 color = { 230 243 10 }
+			 color2 = { 255 255 255 }
+			 capital = c_kasuga_province
+			 
+			 c_kasuga_province = {
+				 color = { 230 243 10 }
+				 color2 = { 255 255 255 }
+
+				 b_kyuden_kasuga = {
+					 province = 134
+				 }
+				 b_slow_tide_harbor = {
+					 province = 135
+				 }
+				 b_kasuga_seido = {
+					 province = 136
+				 }
+			}
 		}
 	}
+		
 	#######################
 	###### Un-aligned lands
-	######### They are not in a de-jure kingdom #TODO see later how to create a kingdom through decision
-	######### Not in a kingdom => Not in an Empire #TODO fix it
-	d_kintani_valley = {
-		 color = { 141 129 124 }
-		 color2 = { 255 255 255 }
-		 capital = c_kintani_mori_province
-		 
-		 c_north_kintani_province = {
-			 color = { 171 159 144 }
-			 color2 = { 255 255 255 }
-
-			 b_shinsei_monastery_1 = {
-				 province = 129
-			 }
-		}
-		 
-		 c_kintani_mori_province = {
+	######### adding non-canon kingdom to proper display counties as vassal of the emperor
+	k_kintani_valley = {
+		d_kintani_valley = {
 			 color = { 141 129 124 }
 			 color2 = { 255 255 255 }
+			 capital = c_kintani_mori_province
+			 
+			 c_north_kintani_province = {
+				 color = { 171 159 144 }
+				 color2 = { 255 255 255 }
 
-			 b_shinsei_monastery_2 = {
-				 province = 130
-			 }
-			  b_kintani_mori_mura = {
-				 province = 131
-			 }
-			  b_kintani_mori_empty = {
-				 province = 132
-			 }
-		}
-		c_east_kintani_province = {
-			 color = { 75 26 7 }
-			 color2 = { 255 255 255 }
+				 b_shinsei_monastery_1 = {
+					 province = 129
+				 }
+			}
+			 
+			 c_kintani_mori_province = {
+				 color = { 141 129 124 }
+				 color2 = { 255 255 255 }
 
-			 b_shinsei_monastery_3 = {
-				 province = 133
-			 }
+				 b_shinsei_monastery_2 = {
+					 province = 130
+				 }
+				  b_kintani_mori_mura = {
+					 province = 131
+				 }
+				  b_kintani_mori_empty = {
+					 province = 132
+				 }
+			}
+			c_east_kintani_province = {
+				 color = { 75 26 7 }
+				 color2 = { 255 255 255 }
+
+				 b_shinsei_monastery_3 = {
+					 province = 133
+				 }
+			}
+						
+			c_kintani_province = {
+                 color = { 18 151 207 }
+                 color2 = { 255 255 255 }
+ 
+                 b_shiro_kyotei = {
+                     province = 45
+                 }
+			}
 		}
 	}
  }
  
  #TODO title of master of elements Isawa as landless duchy titles ???
+ # Religious title here, to give to the Emperor, like a Caliphe ? 
+ # TODO based on caliphe
+#k_empire_head_of_faith = {
+#
+#}
+ 
 
 # These titles cut hundreds of errors from logs. 
 e_hre = { landless = yes }

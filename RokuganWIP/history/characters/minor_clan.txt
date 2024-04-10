@@ -1,31 +1,40 @@
 ﻿#####################
 #	Moshi
 #####################
-#TODO moshi Chiasa
-#3002200 = {
-#	name = name_chiasa 	# 
-#	dynasty = 2100009 	# Shiba
-#	religion = "seven_fortunes"
-#	culture = "shiba"
-#	female = yes
-#	
-#	### Stats
-#	
-#	### Traits
-#	
-#	### DNA
-##	##TODO
-#	
-#	### Family
-#	#TODO lover Isawa Tadaka
-#	#TODO sibling Hatsu RIP
-#	#Add friend Kaito Kosori
-#
-#	1106.1.1 = {
-#		birth = yes
-#	}
-#}
+3002000 = {
+	name = name_chiasa 	# 
+	dynasty = 2100102 	# Moshi
+	religion = "cult_amaterasu"
+	culture = "moshi"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+	
+	### DNA
+	##TODO
+	
+	### Family
+
+	1101.1.1 = {
+		birth = yes
+	}
+}
 #####################
 #	Kasuga
 #####################
-#TODO create new damyo !
+3002010 = {
+	name = name_gima 	# No actual daimyo for 1123, non-canon daimyo
+	dynasty = 2100103 	# Kasuga
+	religion = "seven_fortunes"
+	culture = "kasuga"
+	
+	### Stats
+	### Traits
+	# Everything is random, as there is no canon for this character
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
