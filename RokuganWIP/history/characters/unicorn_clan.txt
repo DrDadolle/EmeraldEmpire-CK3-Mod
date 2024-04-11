@@ -105,6 +105,16 @@
 		birth = yes
 	}
 }
+3000511 = {
+	name = name_akiko 	#  Shinjo Aki  #TODO replace name
+	dynasty = 2100021 	# Shinjo  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "shinjo"
+	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
 
 #####################
 #	Iuchi
@@ -159,6 +169,16 @@
 	religion = "seven_fortunes"
 	culture = "uchi"
 	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000531 = {
+	name = name_akiko 	#  Iuchi Akiko  #TODO replace name
+	dynasty = 2100030 	# Iuchi  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "uchi"
+	female = yes
 	1100.1.1 = {
 		birth = yes
 	}
@@ -225,6 +245,16 @@
 	religion = "seven_fortunes"
 	culture = "utaku"
 	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000571 = {
+	name = name_akiko 	#  Utaku Aki  #TODO replace name
+	dynasty = 2100028 	# Utaku  #TODO replace by  like the dynn_morehei_doji
+	religion = "seven_fortunes"
+	culture = "utaku"
+	female = yes
 	1100.1.1 = {
 		birth = yes
 	}
@@ -304,6 +334,16 @@
 	religion = "lords_of_the_death"
 	culture = "moto"
 	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3000591 = {
+	name = name_akiko 	#  Moto Akiko  #TODO replace name
+	dynasty = 2100029 	# Moto  #TODO replace by  like the dynn_morehei_doji
+	religion = "lords_of_the_death"
+	culture = "moto"
+	female = yes
 	1100.1.1 = {
 		birth = yes
 	}

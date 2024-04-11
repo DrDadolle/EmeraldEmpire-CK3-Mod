@@ -1,0 +1,21 @@
+d_ide = {
+	1111.1.1 = {
+		liege = "k_unicorn_clan"
+		holder = 3000540 # Ide Tadaji
+	}
+}
+
+c_garanto_province_unicorn = {
+	1111.1.1 = {
+		liege = "d_ide"
+		holder = 3000540 # Ide Tadaji
+	}
+}
+
+
+c_eijitsu_province = {
+	1111.1.1 = {
+		liege = "d_ide"
+		holder = 3000550 # TODO placeholder count
+	}
+}

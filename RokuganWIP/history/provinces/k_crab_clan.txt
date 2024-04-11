@@ -1,0 +1,171 @@
+#k_crab_clan
+##d_yasuki ###################################
+###c_junkin_province
+175 = {		#b_yasuki_yashiki
+	culture = yasuki
+	religion = seven_fortunes
+	holding = castle_holding
+}
+176 = {		#b_friendly_traveler_village
+	culture = yasuki
+	religion = seven_fortunes
+	holding = city_holding
+}
+177 = {		#b_watch_tower_east
+	culture = yasuki
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_sunda_mizu_mura_province
+178 = {		#b_clear_water_village
+	culture = yasuki
+	religion = seven_fortunes
+	holding = castle_holding
+}
+179 = {		#b_fundai_village
+	culture = yasuki
+	religion = seven_fortunes
+	holding = city_holding
+}
+180 = {		#b_watch_tower_east
+	culture = yasuki
+	religion = seven_fortunes
+	holding = castle_holding
+}
+181 = {		#b_yasuki_hanko
+	culture = yasuki
+	religion = seven_fortunes
+	holding = city_holding
+}
+##d_hida ###################################
+###c_ishibei_province
+182 = {		#b_shiro_kakeguchi
+	culture = hida
+	religion = cult_ancestors
+	holding = castle_holding
+}
+183 = {		#b_castle_of_the_forgotten
+	culture = hida
+	religion = cult_ancestors
+	holding = castle_holding
+}
+###c_kyoukan_province
+184 = {		#b_kyuden_hida
+	culture = hida
+	religion = cult_ancestors
+	holding = castle_holding
+}
+185 = {		#b_koten_seido
+	culture = hida
+	religion = cult_ancestors
+	holding = church_holding
+}
+186 = {		#b_ugawari_toride
+	culture = hida
+	religion = cult_ancestors
+	holding = city_holding
+}
+187 = {		#b_kyuden_moshibaru
+	culture = hida
+	religion = cult_ancestors
+	holding = church_holding
+}
+###c_juuin_province
+188 = {		#b_higashiyama_mura
+	culture = hida
+	religion = cult_ancestors
+	holding = castle_holding
+}
+189 = {		#b_nishiyama_mura
+	culture = hida
+	religion = cult_ancestors
+	holding = church_holding
+}
+###c_ishigaki_province
+190 = {		#b_shiro_ishigaki
+	culture = hida
+	religion = cult_ancestors
+	holding = castle_holding
+}
+191 = {		#b_shiro_ishigaki_2
+	culture = hida
+	religion = cult_ancestors
+	holding = castle_holding
+}
+###c_garanto_province
+192 = {		#b_nagai_aruki
+	culture = hiruma
+	religion = cult_ancestors
+	holding = castle_holding
+}
+##d_kuni ###################################
+###c_adauchi_province
+193 = {		#b_shiro_kuni
+	culture = kuni
+	religion = seven_fortunes
+	holding = castle_holding
+}
+194 = {		#b_castle_damned
+	culture = kuni
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_adauchi_province
+195 = {		#b_high_tree_village
+	culture = kuni
+	religion = seven_fortunes
+	holding = castle_holding
+}
+196 = {		#b_kakita_breath
+	culture = kuni
+	religion = seven_fortunes
+	holding = church_holding
+}
+##d_kaiu ###################################
+###c_yoake_province
+197 = {		#b_shiro_kaiu
+	culture = kaiu
+	religion = cult_ancestors
+	holding = castle_holding
+}
+198 = {		#b_razor_dawn_castle
+	culture = kaiu
+	religion = cult_ancestors
+	holding = castle_holding
+}
+###c_kuda_province
+199 = {		#b_kuda_mura
+	culture = kaiu
+	religion = cult_ancestors
+	holding = castle_holding
+}
+200 = {		#b_maemikake
+	culture = kaiu
+	religion = cult_ancestors
+	holding = city_holding
+}
+###c_hokufuu_province
+201 = {		#b_face_east_castle
+	culture = kaiu
+	religion = cult_ancestors
+	holding = castle_holding
+}
+202 = {		#b_maisuna_shiro
+	culture = kaiu
+	religion = cult_ancestors
+	holding = castle_holding
+}
+203 = {		#b_watch_tower_west
+	culture = kaiu
+	religion = cult_ancestors
+	holding = castle_holding
+}
+204 = {		#b_shattered_peak_castle
+	culture = kaiu
+	religion = cult_ancestors
+	holding = castle_holding
+}
+#castle_holding
+#church_holding
+#city_holding
+#none

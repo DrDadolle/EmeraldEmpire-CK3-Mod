@@ -1,0 +1,278 @@
+#k_unicorn_clan 
+##d_iuchi ###################################
+###c_kaihi_province
+205 = {		#b_shiro_iuchi
+	culture = iuchi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+206 = {		#b_hisatsu_kesu
+	culture = iuchi
+	religion = seven_fortunes
+	holding = city_holding
+}
+207 = {		#b_shiro_kenshin
+	culture = iuchi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+208 = {		#b_tower_kelet
+	culture = iuchi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+209 = {		#b_okuyaki
+	culture = iuchi
+	religion = seven_fortunes
+	holding = city_holding
+}
+210 = {		#b_sukoshi_zutsu
+	culture = iuchi
+	religion = seven_fortunes
+	holding = none
+}
+###c_shiten_province
+211 = {		#b_shiro_shinten
+	culture = iuchi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+212 = {		#b_shinten_plains
+	culture = iuchi
+	religion = seven_fortunes
+	holding = none
+}
+###c_ujidera_province
+213 = {		#b_shinden_horiuchi
+	culture = iuchi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+214 = {		#b_temple_child_innocence
+	culture = iuchi
+	religion = seven_fortunes
+	holding = church_holding
+}
+##d_ide ###################################
+###c_garanto_province_unicorn
+215 = {		#b_shiro_ide
+	culture = ide
+	religion = seven_fortunes
+	holding = castle_holding
+}
+216 = {		#b_duzaki_toshi
+	culture = ide
+	religion = seven_fortunes
+	holding = city_holding
+}
+217 = {		#b_empty_garanto_plains_1
+	culture = ide
+	religion = seven_fortunes
+	holding = none
+}
+218 = {		#b_empty_garanto_plains_2
+	culture = ide
+	religion = seven_fortunes
+	holding = none
+}
+###c_eijitsu_province
+219 = {		#b_turo_kojiri
+	culture = ide
+	religion = seven_fortunes
+	holding = castle_holding
+}
+220 = {		#b_jurojin_seido_unicorn
+	culture = ide
+	religion = seven_fortunes
+	holding = church_holding
+}
+221 = {		#b_shinomen_tower
+	culture = ide
+	religion = seven_fortunes
+	holding = castle_holding
+}
+222 = {		#b_temple_lost_moto
+	culture = ide
+	religion = seven_fortunes
+	holding = church_holding
+}
+223 = {		#b_kanosei_furudera
+	culture = ide
+	religion = seven_fortunes
+	holding = church_holding
+}
+##d_moto ###################################
+###c_enkaku_province
+224 = {		#b_watch_tower_river_unexpected_hero
+	culture = moto
+	religion = lords_of_the_death
+	holding = castle_holding
+}
+###c_zenzan_province
+225 = {		#b_shiro_zenzan
+	culture = moto
+	religion = lords_of_the_death
+	holding = castle_holding
+}
+226 = {		#b_chai_seido
+	culture = moto
+	religion = lords_of_the_death
+	holding = church_holding
+}
+227 = {		#b_plains_wind_monastery
+	culture = moto
+	religion = lords_of_the_death
+	holding = church_holding
+}
+###c_kawabe_province
+228 = {		#b_mizu_mura
+	culture = moto
+	religion = lords_of_the_death
+	holding = castle_holding
+}
+229 = {		#b_daikoku_seido
+	culture = moto
+	religion = seven_fortunes
+	holding = church_holding
+}
+###c_ikoku_province
+230 = {		#b_shiro_moto
+	culture = moto
+	religion = lords_of_the_death
+	holding = castle_holding
+}
+231 = {		#b_temple_of_death
+	culture = moto
+	religion = lords_of_the_death
+	holding = church_holding
+}
+232 = {		#b_mura_nisa_kawa_nemui
+	culture = moto
+	religion = lords_of_the_death
+	holding = city_holding
+}
+233 = {		#b_toshi_no_aida_no_kawa
+	culture = moto
+	religion = lords_of_the_death
+	holding = castle_holding
+}
+##d_utaku ###################################
+###c_isei_province
+234 = {		#b_shiro_isei
+	culture = utaku
+	religion = cult_ancestors
+	holding = castle_holding
+}
+235 = {		#b_utaku_seido
+	culture = utaku
+	religion = cult_ancestors
+	holding = church_holding
+}
+###c_manaka_province
+236 = {		#b_shiro_utaku
+	culture = utaku
+	religion = cult_ancestors
+	holding = castle_holding
+}
+237 = {		#b_shiro_naoko
+	culture = utaku
+	religion = cult_ancestors
+	holding = castle_holding
+}
+238 = {		#b_manaka_plains
+	culture = utaku
+	religion = cult_ancestors
+	holding = none
+}
+###c_tsuriai_province
+239 = {		#b_yashigi_village
+	culture = utaku
+	religion = cult_ancestors
+	holding = castle_holding
+}
+###c_koubaku_province
+240 = {		#b_dark_edge_village
+	culture = utaku
+	religion = cult_ancestors
+	holding = castle_holding
+}
+241 = {		#b_koubaku_plains
+	culture = utaku
+	religion = cult_ancestors
+	holding = none
+}
+###c_senseki_province
+242 = {		#b_kibukito
+	culture = utaku
+	religion = cult_ancestors
+	holding = castle_holding
+}
+243 = {		#b_akimi_village
+	culture = utaku
+	religion = cult_ancestors
+	holding = city_holding
+}
+244 = {		#b_bikami_village
+	culture = utaku
+	religion = cult_ancestors
+	holding = city_holding
+}
+##d_shinjo ###################################
+###c_bugaisha_province
+245 = {		#b_shiro_bugaisha
+	culture = shinjo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+246 = {		#b_kuroshin_shrine
+	culture = shinjo
+	religion = seven_fortunes
+	holding = church_holding
+}
+###c_aishou_province
+247 = {		#b_oshindoka_toshi
+	culture = shinjo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+248 = {		#b_3_unfortunate_villages
+	culture = shinjo
+	religion = seven_fortunes
+	holding = city_holding
+}
+###c_haisho_province
+249 = {		#b_egami_mura
+	culture = shinjo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+250 = {		#b_exile_watch_tower
+	culture = shinjo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+251 = {		#b_sorrow_path_mura
+	culture = shinjo
+	religion = seven_fortunes
+	holding = city_holding
+}
+252 = {		#b_exile_shrine
+	culture = shinjo
+	religion = seven_fortunes
+	holding = church_holding
+}
+###c_kouryo_province
+253 = {		#b_shiro_shinjo
+	culture = shinjo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+254 = {		#b_mountain_watch_tower
+	culture = shinjo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+#castle_holding
+#church_holding
+#city_holding
+#none

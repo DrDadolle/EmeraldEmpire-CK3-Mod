@@ -1,0 +1,29 @@
+d_iuchi = {
+	1111.1.1 = {
+		liege = "k_unicorn_clan"
+		holder = 3000520 # Iuchi Daiyu
+	}
+}
+
+c_kaihi_province = {
+	1111.1.1 = {
+		liege = "d_iuchi"
+		holder = 3000520 # Iuchi Daiyu
+	}
+}
+
+
+c_shiten_province = {
+	1111.1.1 = {
+		liege = "d_iuchi"
+		holder = 3000530 # TODO placeholder count
+	}
+}
+
+
+c_ujidera_province = {
+	1111.1.1 = {
+		liege = "d_iuchi"
+		holder = 3000531 # TODO placeholder count
+	}
+}

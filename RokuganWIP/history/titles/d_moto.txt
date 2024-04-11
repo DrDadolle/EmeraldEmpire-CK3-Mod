@@ -1,0 +1,35 @@
+d_moto = {
+	1111.1.1 = {
+		liege = "k_unicorn_clan"
+		holder = 3000580 # Moto Ogodei
+	}
+}
+
+c_ikoku_province = {
+	1111.1.1 = {
+		liege = "d_moto"
+		holder = 3000580 # Moto Ogodei
+	}
+}
+
+
+c_enkaku_province = {
+	1111.1.1 = {
+		liege = "d_moto"
+		holder = 3000590 # TODO placeholder count
+	}
+}
+
+c_zenzan_province = {
+	1111.1.1 = {
+		liege = "d_moto"
+		holder = 3000590 # TODO placeholder count
+	}
+}
+
+c_kawabe_province = {
+	1111.1.1 = {
+		liege = "d_moto"
+		holder = 3000591 # TODO placeholder count
+	}
+}

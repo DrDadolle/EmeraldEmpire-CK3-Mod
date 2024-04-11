@@ -1,0 +1,29 @@
+d_kaiu = {
+	1111.1.1 = {
+		liege = "k_crab_clan"
+		holder = 3000440 # Kaiu Shihobu
+	}
+}
+
+c_yoake_province = {
+	1111.1.1 = {
+		liege = "d_kaiu"
+		holder = 3000440 # Kaiu Shihobu
+	}
+}
+
+c_kuda_province = {
+	1111.1.1 = {
+		liege = "d_kaiu"
+		holder = 3000450 # TODO placeholder count
+	}
+}
+
+c_hokufuu_province = {
+	1111.1.1 = {
+		liege = "d_kaiu"
+		holder = 3000451 # TODO placeholder count
+	}
+}
+
+

@@ -18,17 +18,19 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
 ## short term goals
-- Crab Lands
-- Unicorn Lands
 - Dragon lands => Theocracy ???? Because of weird heritage
-- Paint some ronin lands & test counties & Duchy without   
+- paint minor clans
+- Paint some ronin lands 
 - Have a not-so-ugly heightmap
+- Fix river & coast => Once fixed, redo provinces
 - Paint the map with materials
-- Paint & do rivers zones (and adjencies.csv)
+- Paint & do rivers crossing zones (and adjencies.csv)
 - Paint & do Sea zones 
+- Rework provinces, so looks better
+- Add river map
 
 # Fixes to do
-- Redo provinces to add Kyuden Shika & Deer clan
+- Redo provinces to add Kyuden Shika & Deer clan ??
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ???
 - Fix coast line ugly of Phoenix lands (& cranes)
 - Add last name before first name "Clan Champion Doji Hotaru of Crane Clan" instead "Clan Champion Hotaru of Crane Clan"
@@ -42,12 +44,14 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Seppuku
 - Child Adoption
 - Painting Hair White decision for crane cultures
+- reduce size of domain that can be kept (à la AGOT mod), because map is so small (~10 counties per kindgom)
 - Genetic Trait "Natural white hair" for Crane ???
 - Right/Left/UnderHand special trait for clan champion of crane/lion/scorpion
 - Blood feud (like Matsu vs Kakita)
 - Special decisions
 	- Retake Yasuki Lands as Crane Clan
  	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
+	- reclaim ancestral hiruma lands as Hiruma familly
 - Special protection against conquest for un-aligned/minor/imperial lands => Casus belli way more costly + lose of prestige ?
 - Special Phoenix champion succession
 - Phoenix Council of 5 special government
@@ -65,6 +69,9 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 	- phoenix clan
 	- Scorpion clan
 	- Hantei & Seppun lands
+	- Crab lands
+	- Unicorn
+	- Kasuga/Moshi/Tsuruchi/Suzume/Kitsune
 - all cultures & religion (draft)
 - basic Coat of Arms for Clans & Families (late are buggy, weird colors)
 

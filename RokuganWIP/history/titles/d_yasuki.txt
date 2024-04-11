@@ -1,0 +1,21 @@
+d_yasuki = {
+	1111.1.1 = {
+		liege = "k_crab_clan"
+		holder = 3000480 # Yasuki Taka
+	}
+}
+
+c_junkin_province = {
+	1111.1.1 = {
+		liege = "d_yasuki"
+		holder = 3000480 # Yasuki Taka
+	}
+}
+
+c_sunda_mizu_mura_province = {
+	1111.1.1 = {
+		liege = "d_yasuki"
+		holder = 3000490 # TODO placeholder count
+	}
+}
+

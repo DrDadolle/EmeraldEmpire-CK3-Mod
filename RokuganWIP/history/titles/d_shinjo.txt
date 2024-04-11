@@ -1,0 +1,35 @@
+d_shinjo = {
+	1111.1.1 = {
+		liege = "k_unicorn_clan"
+		holder = 3000500 #Shinjo Altansarnai
+	}
+}
+
+c_kouryo_province = {
+	1111.1.1 = {
+		liege = "d_shinjo"
+		holder = 3000500 # Shinjo Altansarnai
+	}
+}
+
+
+c_bugaisha_province = {
+	1111.1.1 = {
+		liege = "d_shinjo"
+		holder = 3000510 # TODO placeholder count
+	}
+}
+
+c_aishou_province = {
+	1111.1.1 = {
+		liege = "d_shinjo"
+		holder = 3000510 # TODO placeholder count
+	}
+}
+
+c_haisho_province = {
+	1111.1.1 = {
+		liege = "d_shinjo"
+		holder = 3000511 # TODO placeholder count
+	}
+}

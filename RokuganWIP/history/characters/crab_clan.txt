@@ -292,7 +292,7 @@
 #	Yasuki
 #####################
 3000480 = {
-	name = name_taka 	# Yasuki Yasuki, Yasuki Daimyo
+	name = name_taka 	# Yasuki Taka, Yasuki Daimyo
 	dynasty = 2100025 	# Yasuki
 	religion = "seven_fortunes"
 	culture = "yasuki"
@@ -316,7 +316,7 @@
 }
 
 3000481 = {
-	name = name_oguri 	# Yasuki Yasuki, Yasuki Daimyo
+	name = name_oguri 	# Yasuki Oguri, Yasuki Daimyo's heir
 	dynasty = 2100025 	# Yasuki
 	religion = "seven_fortunes"
 	culture = "yasuki"
@@ -332,7 +332,7 @@
 	### Family 
 	father = 3000480 # Yasuki Taka
 
-	1075.1.1 = {
+	1105.1.1 = {
 		birth = yes
 	}
 }
