@@ -89,7 +89,13 @@
 	religion = shinseism
 	holding = castle_holding
 }
-
+##d_miya ###################################
+###c_miya_province
+333 = {		#b_kyuden_miya
+	culture = miya
+	religion = seven_fortunes
+	holding = castle_holding
+}
 
 #castle_holding
 #church_holding

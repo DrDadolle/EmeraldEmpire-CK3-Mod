@@ -77,3 +77,177 @@ heritage_imperial = {
 	}
 	audio_parameter = european
 }
+
+########
+###Minor
+########
+heritage_kitsune = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_kitsune
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_moshi = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_moshi
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_kasuga = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_kasuga
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_tonbo = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_tonbo
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_toritaka = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_toritaka
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_usagi = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_usagi
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_yoritomo = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_yoritomo
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_tsuruchi = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_tsuruchi
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_suzume = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_suzume
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_ichiro = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_ichiro
+		}
+	}
+	audio_parameter = european
+}
+
+
+heritage_nekoma = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_nekoma
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_komori = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_komori
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_shika = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_shika
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_kaikoga = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_kaikoga
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_chuda = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_chuda
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_kuma = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_kuma
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_kaeru = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_kaeru
+		}
+	}
+	audio_parameter = european
+}

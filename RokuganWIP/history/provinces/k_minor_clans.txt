@@ -27,6 +27,91 @@
 	religion = seven_fortunes
 	holding = city_holding
 }
+##d_suzume ###################################
+###c_suzume_province
+255 = {		#b_kyuden_suzume
+	culture = suzume
+	religion = seven_fortunes
+	holding = castle_holding
+}
+##d_kitsune ###################################
+###c_kakusu_province
+256 = {		#b_kyuden_kitsune
+	culture = kitsune
+	religion = seven_fortunes
+	holding = castle_holding
+}
+257 = {		#b_kitsune_mori_mura
+	culture = kitsune
+	religion = seven_fortunes
+	holding = city_holding
+}
+##d_usagi ###################################
+###c_usagi_province
+258 = {		#b_shiro_usagi
+	culture = usagi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+259 = {		#b_kudo_mura
+	culture = usagi
+	religion = seven_fortunes
+	holding = city_holding
+}
+260 = {		#b_meidochi
+	culture = usagi
+	religion = seven_fortunes
+	holding = city_holding
+}
+##d_tsuruchi ###################################
+###c_ashinagabachi_province
+261 = {		#b_kyuden_ashinagabachi
+	culture = tsuruchi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_enzan_province
+262 = {		#b_sakana_mura
+	culture = tsuruchi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_chuuhan_province
+263 = {		#b_gateway_village
+	culture = tsuruchi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+264 = {		#b_quiet_stream_village
+	culture = tsuruchi
+	religion = seven_fortunes
+	holding = city_holding
+}
+###c_shaiga_province
+265 = {		#b_shaiga
+	culture = tsuruchi
+	religion = seven_fortunes
+	holding = castle_holding
+}
+##d_nekoma ###################################
+###c_nekoma_province
+318 = {		#b_nekoma
+	culture = nekoma
+	religion = seven_fortunes
+	holding = castle_holding
+}
+##d_tonbo ###################################
+###c_tonbo_province
+319 = {		#b_kyuden_tonbo
+	culture = tonbo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+320 = {		#b_still_water_temple
+	culture = tonbo
+	religion = seven_fortunes
+	holding = church_holding
+}
 #castle_holding
 #church_holding
 #city_holding

@@ -14,6 +14,17 @@ shinsei_and_sumai_mura = {
 	}
 }
 
+pillars_of_virtue = {
+
+	county = c_mucha_province
+	barony = b_high_wall_village
+
+	character_modifier = {
+		name = pillars_of_virtue_effect_name
+		learning_per_piety_level = 1
+	}
+}
+
 
 #################
 # Fortunism

@@ -230,8 +230,14 @@
 	holding = city_holding
 }
 ###c_kintani_province
-45 = {		#b_kishou_shiro
-	culture = kakita
+45 = {		#b_shiro_kyotei
+	culture = doji
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_toshi_rambo
+323 = {		#b_toshi_rambo
+	culture = doji
 	religion = seven_fortunes
 	holding = castle_holding
 }

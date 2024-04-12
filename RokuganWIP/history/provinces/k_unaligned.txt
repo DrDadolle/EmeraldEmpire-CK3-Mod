@@ -27,6 +27,65 @@
 	religion = shinseism
 	holding = church_holding
 }
+##d_kintani_valley_2 ###################################
+###c_nanashi_mura_province
+129 = {		#b_nanashi_mura
+	culture = mirumoto
+	religion = shinseism
+	holding = castle_holding
+}
+###c_shinsei_monastery_rambo
+322 = {		#b_shinsei_monastery_rambo
+	culture = togashi
+	religion = shinseism
+	holding = church_holding
+}
+322 = {		#b_shinsei_monastery_rambo_empty
+	culture = togashi
+	religion = shinseism
+	holding = none
+}
+##d_rich_frog ###################################
+###c_rich_frog
+325 = {		#b_rich_frog
+	culture = kaeru
+	religion = seven_fortunes
+	holding = castle_holding
+}
+326 = {		#b_frog_temple
+	culture = kaeru
+	religion = seven_fortunes
+	holding = church_holding
+}
+327 = {		#b_frog_mura
+	culture = kaeru
+	religion = seven_fortunes
+	holding = city_holding
+}
+##d_ronin_south_west ###################################
+###c_daidoji_yukan_see
+328 = {		#b_daidoji_yukan_see
+	culture = daidoji
+	religion = shinseism
+	holding = castle_holding
+}
+329 = {		#b_shinsei_monastery_yukan_see
+	culture = daidoji
+	religion = shinseism
+	holding = castle_holding
+}
+###c_conflagration_temple
+330 = {		#b_conflagration_temple
+	culture = soshi
+	religion = shinseism
+	holding = church_holding
+}
+###c_shinden_kasai
+331 = {		#b_shinden_kasai
+	culture = soshi
+	religion = shinseism
+	holding = church_holding
+}
 
 #castle_holding
 #church_holding

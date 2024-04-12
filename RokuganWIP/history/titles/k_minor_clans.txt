@@ -25,3 +25,80 @@ c_mukade_no_tani_province = {
 		holder = 3002000 # Moshi Chiasa
 	}
 }
+
+d_kitsune = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3002020 # Kitsune Gohei
+	}
+}
+
+c_kakusu_province = {
+	1123.1.1 = {
+		liege = "d_kitsune"
+		holder = 3002020 # Kitsune Gohei
+	}
+}
+
+d_suzume = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3002030 # Suzume Kashira
+	}
+}
+
+c_suzume_province = {
+	1123.1.1 = {
+		liege = "d_suzume"
+		holder = 3002030 # Suzume Kashira
+	}
+}
+
+d_usagi = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3002040 #  Usagi Tsukiko
+	}
+}
+
+c_usagi_province = {
+	1123.1.1 = {
+		liege = "d_usagi"
+		holder = 3002040 #  Usagi Tsukiko
+	}
+}
+
+d_tsuruchi = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3002050 #  Tsuruchi
+	}
+}
+
+c_ashinagabachi_province = {
+	1123.1.1 = {
+		liege = "d_tsuruchi"
+		holder = 3002050 #  Tsuruchi
+	}
+}
+
+c_enzan_province = {
+	1123.1.1 = {
+		liege = "d_tsuruchi"
+		holder = 3002050 #  Tsuruchi
+	}
+}
+
+c_chuuhan_province = {
+	1123.1.1 = {
+		liege = "d_tsuruchi"
+		holder = 3002050 #  Tsuruchi
+	}
+}
+
+c_shaiga_province = {
+	1123.1.1 = {
+		liege = "d_tsuruchi"
+		holder = 3002050 #  Tsuruchi
+	}
+}

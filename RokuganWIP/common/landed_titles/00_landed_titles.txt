@@ -700,11 +700,135 @@ e_rokugan = {
 	}
 	k_dragon_clan = {
 		color = { 46 114 55 } 
-		#TODO
+		capital = c_mucha_province
+		
+		d_kitsuki = {
+             color = { 80 166 32 }
+             capital = c_shinpi_province
+             
+             c_shinpi_province = {
+                 color = { 80 166 32 }
+ 
+                 b_shiro_kitsuki = {
+                     province = 288
+                 }
+				 b_morning_frost_castle = {
+                     province = 289
+                 }
+				 b_keen_eyes_strike_village = {
+                     province = 290
+                 }
+            }
+			c_kaitou = {
+                 color = { 76 213 79 }
+ 
+                 b_great_fall_castle = {
+                     province = 291
+                 }
+            }
+			c_sinjutsu_province = {
+                 color = { 14 108 16 }
+ 
+                 b_toi_koku = {
+                     province = 292
+                 }
+            }
+		}
+		d_mirumoto = {
+             color = { 33 233 56 }
+             capital = c_toshibu_province
+             
+             c_gaien_province = {
+                 color = { 80 166 32 }
+ 
+                 b_foothills_keep = {
+                     province = 293
+                 }
+            }
+			c_yakeishi_province = {
+                 color = { 153 246 101 }
+ 
+                 b_shiro_zurui = {
+                     province = 294
+                 }
+				 b_tetsu_kama_mura = {
+                     province = 295
+                 }
+            }
+			c_toshibu_province = {
+                 color = { 33 233 56 }
+ 
+                 b_shiro_mirumoto = {
+                     province = 296
+                 }
+				 b_heibesu = {
+                     province = 297
+                 }
+            }
+			c_kousou_province = {
+                 color = { 19 170 38}
+ 
+                 b_nothern_tower_of_flame = {
+                     province = 300
+                 }
+				 b_shiransu = {
+                     province = 298
+                 }
+            }
+		}
+		d_togashi = {
+             color = { 46 114 55 }
+             capital = c_mucha_province
+             
+             c_mucha_province = {
+                 color = { 46 114 55 }
+ 
+                 b_shiro_togashi = {
+                     province = 303
+                 }
+				 b_furtherest_fortress = {
+                     province = 301
+                 }
+				 b_fukurokujin_seido = {
+                     province = 302
+                 }
+				 b_high_wall_village = {
+                     province = 304
+                 }
+				 b_moutain_summit_temple = {
+                     province = 305
+                 }
+            }
+		}
+		d_agasha = {
+             color = { 27 74 15 }
+             capital = c_kinenkan_province
+             
+             c_kinenkan_province = {
+                 color = { 27 74 15 }
+ 
+                 b_shiro_agasha = {
+                     province = 309
+                 }
+				 b_dragon_breath_castle = {
+                     province = 307
+                 }
+				 b_suigeki_toshi = {
+                     province = 308
+                 }
+            }
+			c_sabishii_province_dragon = {
+                 color = { 35 129 12 }
+ 
+                 b_yamasura = {
+                     province = 306
+				}
+            }
+		}
 	}
 	k_scorpion_clan = {
 		color = { 145 1 11 }
-		capital = c_fukitsu_province #TODO change
+		capital = c_kunizakai_province
 		
 		d_yogo = {
              color = { 104 26 20 }
@@ -930,6 +1054,13 @@ e_rokugan = {
                  }
 				 b_shiro_ishigaki_2 = {
                      province = 191
+                 }
+			}
+			c_shinsei_last_hope = { 
+                 color = { 17 23 52 }
+				 
+				 b_shinsei_last_hope = {
+                     province = 332
                  }
 			}
 			c_garanto_province_crab = { #Hiruma default province 
@@ -1310,6 +1441,12 @@ e_rokugan = {
 		d_otomo = {
              color = { 4 65 69 }
 			 #Special Title. Lore wise, Kyuden Otomo is in Otosan Uchi so... No land attached to it
+				definite_form = yes
+				ruler_uses_title_name = no
+				no_automatic_claims = yes
+				always_follows_primary_heir = yes
+				destroy_if_invalid_heir = yes
+				can_be_named_after_dynasty = no
 		}
 		d_seppun = {
              color = { 57 139 135 }
@@ -1346,6 +1483,18 @@ e_rokugan = {
  
                  b_shiro_seppun_3 = {
                     province = 149
+                 }
+            }
+		}
+		d_miya = {
+             color = { 41 198 137 }
+			 capital = c_miya_province
+			 
+			 c_miya_province = {
+                 color = {  41 198 137 }
+ 
+                 b_kyuden_miya = {
+                    province = 333
                  }
             }
 		}
@@ -1493,6 +1642,45 @@ e_rokugan = {
 				 }
 			}
 		}
+		d_chuda = {
+			 color = { 17 20 15 }
+			 capital = c_chuda_province
+			 
+			 c_chuda_province = {
+				 color = {  17 20 15 }
+
+				 b_shiro_chuda_ruins = {
+					 province = 299
+				 }
+			}
+		}
+		d_nekoma = {
+			 color = { 224 39 242 }
+			 capital = c_nekoma_province
+			 
+			 c_nekoma_province = {
+				 color = { 224 39 242 }
+
+				 b_nekoma = {
+					 province = 318
+				 }
+			}
+		}
+		d_tonbo = {
+			 color = { 81 155 90 }
+			 capital = c_tonbo_province
+			 
+			 c_tonbo_province = {
+				 color = { 81 155 90 }
+
+				 b_kyuden_tonbo = {
+					 province = 319
+				 }
+				 b_still_water_temple = {
+					 province = 320
+				 }
+			}
+		}
 	}
 		
 	#######################
@@ -1540,15 +1728,109 @@ e_rokugan = {
                  }
 			}
 		}
+		d_kintani_valley_2 = {
+			color = { 71 206 191 }
+			 capital = c_toshi_rambo
+			 
+			c_nanashi_mura_province = {
+                 color = { 141 129 124 }
+ 
+                 b_nanashi_mura = {
+                     province = 321
+                 }
+			}
+			c_shinsei_monastery_rambo = {
+                 color = { 141 129 124 }
+ 
+                 b_shinsei_monastery_rambo = {
+                     province = 322
+                 }
+				 b_shinsei_monastery_rambo_empty = {
+                     province = 324
+                 }
+			}
+			c_toshi_rambo = {
+                 color = { 71 206 191 }
+ 
+                 b_toshi_rambo = {
+                     province = 323
+                 }
+			}
+		
+		}
+	}
+	
+	##TODO placeholder title for all the ronins stuff
+	k_ronin = {
+		d_rich_frog = {
+			color = { 56 34 168 }
+			 capital = c_rich_frog
+			 
+			c_rich_frog = {
+                 color = { 56 34 168 }
+ 
+                 b_rich_frog = {
+                     province = 325
+                 }
+				 b_frog_temple = {
+                     province = 326
+                 }
+				 b_frog_mura = {
+                     province = 327
+                 }
+			}
+		}
+		d_ronin_south_west = {
+			color = { 103 74 41 }
+				 capital = c_daidoji_yukan_see
+				 
+				c_daidoji_yukan_see = {
+					 color = { 103 74 41 }
+	 
+					 b_daidoji_yukan_see = {
+						 province = 328
+					 }
+				}
+				c_shinsei_monastery_yukan_see = {
+					 color = { 183 152 121 }
+	 
+					 b_shinsei_monastery_yukan_see = {
+						 province = 329
+					 }
+				}
+				c_conflagration_temple = {
+					 color = { 70 57 43 }
+	 
+					 b_conflagration_temple = {
+						 province = 330
+					 }
+				}
+				c_shinden_kasai = {
+					 color = { 52 35 17 }
+	 
+					 b_shinden_kasai = {
+						 province = 331
+					 }
+				}
+		}
 	}
  }
  
  #TODO title of master of elements Isawa as landless duchy titles ???
- # Religious title here, to give to the Emperor, like a Caliphe ? 
- # TODO based on caliphe
-#k_empire_head_of_faith = {
-#
-#}
+ # Emperor Head of faith title, a la sunni_caliphate
+d_rokugani_faith = {
+	color = { 40 160 40 }
+	definite_form = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	destroy_if_invalid_heir = yes
+	can_be_named_after_dynasty = no
+	
+	capital = c_otosan_uchi_province
+
+}
+
  
 
 

@@ -20,6 +20,9 @@
 	color1 = "white"
 	colored_emblem = {
 		texture = "ce_crane_asahina_fullcolor.dds"
+		color1 = "blue_light"
+		color2 = "red"
+		color3 = "green"
 	}
 }
 2100004 = { #Kakita

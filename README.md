@@ -18,9 +18,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
 ## short term goals
-- Dragon lands => Theocracy ???? Because of weird heritage
 - paint minor clans
 - Paint some ronin lands 
+- Create Nekoma/Tonbo/Miya daimyo, count for LastHopeShinsei & some monks for the monasteries
+- create Kakoga lands near shinomen mori.
+- create toritaka lands
 - Have a not-so-ugly heightmap
 - Fix river & coast => Once fixed, redo provinces
 - Paint the map with materials
@@ -30,7 +32,6 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Add river map
 
 # Fixes to do
-- Redo provinces to add Kyuden Shika & Deer clan ??
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ???
 - Fix coast line ugly of Phoenix lands (& cranes)
 - Add last name before first name "Clan Champion Doji Hotaru of Crane Clan" instead "Clan Champion Hotaru of Crane Clan"
@@ -70,7 +71,8 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 	- Scorpion clan
 	- Hantei & Seppun lands
 	- Crab lands
-	- Unicorn
+	- Unicorn Lands
+	- Dragons Lands
 	- Kasuga/Moshi/Tsuruchi/Suzume/Kitsune
 - all cultures & religion (draft)
 - basic Coat of Arms for Clans & Families (late are buggy, weird colors)

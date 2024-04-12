@@ -1,0 +1,20 @@
+d_agasha = {
+	1111.1.1 = {
+		liege = "k_dragon_clan"
+		holder = 3000660 # Agasha Tamori
+	}
+}
+
+c_kinenkan_province = {
+	1111.1.1 = {
+		liege = "d_agasha"
+		holder = 3000660 # Agasha Tamori
+	}
+}
+
+c_sabishii_province_dragon = {
+	1111.1.1 = {
+		liege = "d_agasha"
+		holder = 3000670 # TODO placeholder count
+	}
+}

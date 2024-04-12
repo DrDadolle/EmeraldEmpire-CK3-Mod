@@ -22,16 +22,38 @@ sea_zones = LIST { 2 } #French & Iberian atlantic coasts
 ###############
 # MAJOR RIVERS
 ###############
-
+#Asahina Rivers
+river_provinces = RANGE { 266 274 }		
+#Wasp Rivers
+river_provinces = RANGE { 275 277 }	
+#Shiba Rivers
+river_provinces = RANGE { 278 285 }	
+#Asako Rivers
+river_provinces = LIST { 287 }	
 ########
 # LAKES
 ########
-
+lakes = LIST { 286 }	#Asako Lake
 #####################
 # IMPASSABLE TERRAIN
 #####################
 # Can be colored by whoever owns the most of the province's neighbours.
 # Blocks unit movement.
+
+# Dragon moutains
+impassable_mountains = LIST { 310 311 }
+
+#Moshi mountains
+impassable_mountains = LIST { 312 }
+
+# Spine of the world mountains 
+impassable_mountains = RANGE { 313 315 }
+
+# Isawa mori
+impassable_mountains = LIST { 316 }
+
+# Wall of the north
+impassable_mountains = LIST { 317 }
 
 ############
 # WASTELAND

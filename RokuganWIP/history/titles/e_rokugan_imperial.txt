@@ -4,6 +4,12 @@ e_rokugan = {
 	}
 }
 
+d_rokugani_faith = {
+	1103.1.1 = {
+		holder = 3001000 # Hantei 38th
+	}
+}
+
 k_imperial_families = {
 	1103.1.1 = {
 		liege = "e_rokugan"

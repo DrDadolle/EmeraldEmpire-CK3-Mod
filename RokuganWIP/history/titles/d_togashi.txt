@@ -1,0 +1,13 @@
+d_togashi = {
+	1110.1.1 = {
+		liege = "k_dragon_clan"
+		holder = 3000600 # Togashi Yokuni
+	}
+}
+
+c_mucha_province = {
+	1110.1.1 = {
+		liege = "d_togashi"
+		holder = 3000600 # Togashi Yokuni
+	}
+}

@@ -57,3 +57,62 @@
 		birth = yes
 	}
 }
+#####################
+#	Suzume
+#####################
+3002030 = {
+	name = name_kashira 	# Suzume Kashira, Daimyo of Sparrow Clan
+	dynasty = 2100109 	# Suzume
+	religion = "seven_fortunes"
+	culture = "suzume"
+	
+	### Stats
+	### Traits
+	
+	### Family 
+	#TODO father for lore
+
+	1093.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Usagi
+#####################
+3002040 = {
+	name = name_tsukiko 	# Usagi Tsukiko, Daimyo of Hare Clan
+	dynasty = 2100106 	# Usagi
+	religion = "seven_fortunes"
+	culture = "usagi"
+	female = yes
+	
+	### Stats
+	### Traits
+	
+	### Family 
+	#TODO father for lore
+
+	1103.1.1 = {
+		birth = yes
+	}
+}
+#####################
+#	Tsuruchi
+#####################
+3002050 = {
+	name = "" 	# Tsuruchi herself, Daimyo of Wasp Clan
+	dynasty = 2100108 	# Tsuruchi
+	religion = "seven_fortunes"
+	culture = "tsuruchi"
+	female = yes
+	
+	### Stats
+	### Traits
+	
+	### Family 
+	#TODO father & mother for lore
+
+	1101.1.1 = {
+		birth = yes
+	}
+}

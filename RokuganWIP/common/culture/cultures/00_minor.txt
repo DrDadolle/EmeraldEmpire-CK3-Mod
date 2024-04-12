@@ -2,7 +2,7 @@
 	color = { 0.97 0.51 0.47 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_spiritual
-	heritage = heritage_unicorn # Descendant of Unicorn samurai
+	heritage = heritage_kitsune
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -27,7 +27,7 @@ moshi = {
 	color = { 1.0 0.87 0.0 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_spiritual
-	heritage = heritage_phoenix # Descendant of Isawa Moshi
+	heritage = heritage_moshi
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -52,7 +52,7 @@ kasuga = {
 	color = { .68 1.0 0.18 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_egalitarian
-	heritage = heritage_dragon # Descendant of Agasha Kasuga
+	heritage = heritage_kasuga
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -75,7 +75,7 @@ tonbo = {
 	color = { 0.5 1.0 0.0 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_communal
-	heritage = heritage_dragon # Descendant of Mirumoto Ashijin
+	heritage = heritage_tonbo
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -100,7 +100,7 @@ toritaka = {
 	color = { 0.55 0.57 0.67 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_spiritual
-	heritage = heritage_crab # Close to Crab lands, and they become a family of the crab clan in V4
+	heritage = heritage_toritaka
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -124,7 +124,7 @@ usagi = {
 	color = { 0.72 0.45 0.2 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_bellicose
-	heritage = heritage_crab # Descendant from Usagi Reichin aka Yasuki Reichin
+	heritage = heritage_usagi
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -149,7 +149,7 @@ yoritomo = {
 	color = { 0.01 0.75 0.24 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_bellicose
-	heritage = heritage_crab # Descendant of Osano-wo, son of Hida himself.
+	heritage = heritage_yoritomo
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -174,7 +174,7 @@ tsuruchi = {
 	color = { 1.00 1.0 0.0 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_bellicose
-	heritage = heritage_lion # Descendant of scorpion & lion. here Lion heritage so the scorpion clan hates them more
+	heritage = heritage_tsuruchi
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -198,7 +198,7 @@ suzume = {
 	color = { 0.38 0.51 0.71 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_egalitarian
-	heritage = heritage_crane # Offspring of the Crane Clan
+	heritage = heritage_suzume
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -222,7 +222,7 @@ ichiro = {
 	color = { 0.47 0.53 0.55 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_stoic
-	heritage = heritage_crab # Descendant of Hida Domogu
+	heritage = heritage_ichiro
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -248,7 +248,7 @@ nekoma = {
 	color = { 1.0 0.0 0.5 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_courtly
-	heritage = heritage_phoenix # TODO I guess ?
+	heritage = heritage_nekoma
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -271,7 +271,7 @@ komori = {
 	color = { 0.4 1.0 0.0 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_spiritual
-	heritage = heritage_crab # Descendant of Yoritomo Komori
+	heritage = heritage_komori
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -295,7 +295,7 @@ shika = {
 	color = { 0.71 0.65 0.26 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_spiritual
-	heritage = heritage_crane # Descendant of Asahina Takuya & Daidoji Kokoro
+	heritage = heritage_shika
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -319,7 +319,7 @@ kaikoga = {
 	color = { 0.5 0.5 0.5 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_spiritual
-	heritage = heritage_phoenix # No canon-source
+	heritage = heritage_kaikoga
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -342,7 +342,7 @@ chuda = { # Defunct culture
 	color = { 0.33 0.42 0.18 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_spiritual
-	heritage = heritage_phoenix # No canon-source
+	heritage = heritage_chuda
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -366,13 +366,37 @@ kuma = { # Defunct culture
 	color = { 0.28 0.24 0.2 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_bellicose
-	heritage = heritage_scorpion # No canon-source. Their land being close to scorpion lands, so...
+	heritage = heritage_kuma 
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_battlefield_looters # Why not
 			tradition_only_the_strong # Bears are big and strong and scary
 			tradition_forest_folk # their land were close to shinomen forest
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+kaeru = { 
+	color = { 0.3 0.3 0.3 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bellicose
+	heritage = heritage_kaeru
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_battlefield_looters 
+			tradition_swords_for_hire
 	}
    
 	name_list = name_list_crane_family

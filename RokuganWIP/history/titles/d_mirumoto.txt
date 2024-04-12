@@ -1,0 +1,36 @@
+d_mirumoto = {
+	1111.1.1 = {
+		liege = "k_dragon_clan"
+		holder = 3000620 # Mirumoto Masashige
+	}
+}
+
+
+c_toshibu_province = {
+	1111.1.1 = {
+		liege = "d_mirumoto"
+		holder = 3000620 # Mirumoto Masashige
+	}
+}
+
+c_gaien_province = {
+	1111.1.1 = {
+		liege = "d_mirumoto"
+		holder = 3000630 #TODO placeholder count
+	}
+}
+
+c_yakeishi_province = {
+	1111.1.1 = {
+		liege = "d_mirumoto"
+		holder = 3000631 #TODO placeholder count
+	}
+}
+
+c_kousou_province = {
+	1111.1.1 = {
+		liege = "d_mirumoto"
+		holder = 3000630 #TODO placeholder count
+	}
+}
+

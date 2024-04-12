@@ -1,0 +1,125 @@
+#k_dragon_clan
+##d_kitsuki ###################################
+###c_shinpi_province
+288 = {		#b_shiro_kitsuki
+	culture = kitsuki
+	religion = shinseism
+	holding = castle_holding
+}
+289 = {		#b_morning_frost_castle
+	culture = kitsuki
+	religion = shinseism
+	holding = castle_holding
+}
+290 = {		#b_keen_eyes_strike_village
+	culture = kitsuki
+	religion = shinseism
+	holding = city_holding
+}
+###c_kaitou
+291 = {		#b_great_fall_castle
+	culture = kitsuki
+	religion = shinseism
+	holding = castle_holding
+}
+###c_sinjutsu_province
+292 = {		#b_toi_koku
+	culture = kitsuki
+	religion = shinseism
+	holding = castle_holding
+}
+##d_mirumoto ###################################
+###c_gaien_province
+293 = {		#b_shiro_kitsuki
+	culture = mirumoto
+	religion = shinseism
+	holding = castle_holding
+}
+###c_yakeishi_province
+294 = {		#b_shiro_zurui
+	culture = mirumoto
+	religion = shinseism
+	holding = castle_holding
+}
+295 = {		#b_tetsu_kama_mura
+	culture = mirumoto
+	religion = shinseism
+	holding = city_holding
+}
+###c_toshibu_province
+296 = {		#b_shiro_mirumoto
+	culture = mirumoto
+	religion = shinseism
+	holding = castle_holding
+}
+297 = {		#b_heibesu
+	culture = mirumoto
+	religion = shinseism
+	holding = city_holding
+}
+###c_kousou_province
+298 = {		#b_shiransu
+	culture = mirumoto
+	religion = shinseism
+	holding = city_holding
+}
+#299 is shiro chuda ruins... so not dragon
+300 = {		#b_nothern_tower_of_flame
+	culture = mirumoto
+	religion = shinseism
+	holding = castle_holding
+}
+##d_togashi ###################################
+###c_mucha_province
+301 = {		#b_furtherest_fortress
+	culture = togashi
+	religion = shinseism
+	holding = castle_holding
+}
+302 = {		#b_fukurokujin_seido
+	culture = togashi
+	religion = shinseism
+	holding = church_holding
+}
+303 = {		# b_shiro_togashi
+	culture = togashi
+	religion = shinseism
+	holding = castle_holding
+}
+304 = {		#b_high_wall_village
+	culture = togashi
+	religion = shinseism
+	holding = city_holding
+}
+305 = {		#b_moutain_summit_temple
+	culture = togashi
+	religion = shinseism
+	holding = church_holding
+}
+##d_agasha ###################################
+###c_sabishii_province_dragon
+306 = {		#b_yamasura
+	culture = agasha
+	religion = shinseism
+	holding = castle_holding
+}
+###c_kinenkan_province
+307 = {		#b_dragon_breath_castle
+	culture = agasha
+	religion = shinseism
+	holding = castle_holding
+}
+308 = {		# b_suigeki_toshi
+	culture = agasha
+	religion = shinseism
+	holding = city_holding
+}
+309 = {		#b_shiro_agasha
+	culture = agasha
+	religion = shinseism
+	holding = castle_holding
+}
+#castle_holding
+#church_holding
+#city_holding
+#none

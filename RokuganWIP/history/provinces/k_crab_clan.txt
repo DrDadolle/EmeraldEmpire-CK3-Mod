@@ -98,6 +98,12 @@
 	religion = cult_ancestors
 	holding = castle_holding
 }
+###c_shinsei_last_hope
+332 = {		#b_shinsei_last_hope
+	culture = hida
+	religion = shinseism
+	holding = castle_holding
+}
 ##d_kuni ###################################
 ###c_adauchi_province
 193 = {		#b_shiro_kuni

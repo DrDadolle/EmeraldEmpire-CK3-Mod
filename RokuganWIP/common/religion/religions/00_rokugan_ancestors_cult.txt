@@ -4,7 +4,6 @@ ancestors_religion = {
 	doctrine = eastern_hostility_doctrine
 
 	#Main Group
-	doctrine = doctrine_temporal_head
 	doctrine = doctrine_gender_equal
 	doctrine = doctrine_pluralism_pluralistic
 	doctrine = doctrine_theocracy_temporal
@@ -28,6 +27,7 @@ ancestors_religion = {
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_disallowed
 	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+	doctrine = doctrine_temporal_head
 
 	##TODO to keep ?
 	#Special Doctrine for Eastern Syncretism
@@ -228,7 +228,7 @@ ancestors_religion = {
 		cult_ancestors = {
 			color = { 0.2 0.2 0.9 }
 			icon = vajrayana
-			#religious_head = e_rokugan
+			religious_head = d_rokugani_faith
 
 			holy_site = akodo_temple
 			holy_site = doji_temple
@@ -243,7 +243,6 @@ ancestors_religion = {
 			doctrine = tenet_unrelenting_faith
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_reincarnation
-
 
 			doctrine = doctrine_clerical_succession_temporal_appointment
 		}
