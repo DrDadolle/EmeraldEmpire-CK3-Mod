@@ -144,4 +144,20 @@
 	}
 }
 
+#####################
+#	Miya
+#####################
+3001050 = {
+	name = name_satoshi 	# Miya Satoshi, Imperial herald & master Christanteum
+	dynasty = 2100034 	# Miya
+	religion = "shinseism"
+	culture = "miya"
+	
+	### Stats
+	
+	### Traits
 
+	1094.1.1 = {
+		birth = yes
+	}
+}

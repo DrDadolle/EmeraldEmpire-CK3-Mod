@@ -112,6 +112,73 @@
 	religion = seven_fortunes
 	holding = church_holding
 }
+##d_yoritomo ###################################
+###c_gotei_province
+337 = {		#b_kyuden_gotei
+	culture = yoritomo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_koutetsukan_province_mantis
+338 = {		#b_iron_city_turtle
+	culture = yoritomo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_kaze_province
+339 = {		#b_kaimetsu_uo_seido
+	culture = yoritomo
+	religion = seven_fortunes
+	holding = church_holding
+}
+###c_inazuma_province
+340 = {		#b_city_of_lightning
+	culture = yoritomo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_irie_province
+341 = {		#b_irie_toshi
+	culture = yoritomo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+342 = {		#b_irie_empty
+	culture = yoritomo
+	religion = seven_fortunes
+	holding = none
+}
+###c_tokigogachu_province
+343 = {		#b_tokigogachu
+	culture = yoritomo
+	religion = seven_fortunes
+	holding = castle_holding
+}
+###c_maigosera_province
+344 = {		#b_maigosera_seido
+	culture = yoritomo
+	religion = shinseism
+	holding = church_holding
+}
+##d_komori ###################################
+###c_komori_province
+345 = {		#b_kyuden_komori
+	culture = komori
+	religion = seven_fortunes
+	holding = castle_holding
+}
+##d_toritaka ###################################
+###c_toritaka_province
+346 = {		#b_shiro_toritaka
+	culture = toritaka
+	religion = seven_fortunes
+	holding = castle_holding
+}
+347 = {		#b_kyuden_toketsu
+	culture = toritaka
+	religion = seven_fortunes
+	holding = castle_holding
+}
 #castle_holding
 #church_holding
 #city_holding

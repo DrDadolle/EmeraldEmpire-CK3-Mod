@@ -1681,6 +1681,108 @@ e_rokugan = {
 				 }
 			}
 		}
+		d_ichiro = {
+			 color = { 131 141 137 }
+			 capital = c_ichiro_province
+			 
+			 c_ichiro_province = {
+				 color = { 131 141 137 }
+
+				 b_shiro_ichiro = {
+					 province = 334
+				 }
+				 b_ryoshun_seido = {
+					 province = 335
+				 }
+				 b_teeth_fortress = {
+					 province = 336
+				 }
+			}
+		}
+		d_yoritomo = {
+			 color = { 29 231 59 }
+			 capital = c_gotei_province
+			 
+			 c_gotei_province = {
+				 color = { 29 231 59 }
+
+				 b_kyuden_gotei = {
+					 province = 337
+				 }
+			}
+			c_koutetsukan_province_mantis = {
+				 color = { 13 104 27 }
+
+				 b_iron_city_turtle = {
+					 province = 338
+				 }
+			}
+			c_kaze_province = {
+				 color = { 106 184 117 }
+
+				 b_kaimetsu_uo_seido = {
+					 province = 339
+				 }
+			}
+			c_inazuma_province = {
+				 color = { 13 104 27 }
+
+				 b_city_of_lightning = {
+					 province = 340
+				 }
+			}
+			c_irie_province = {
+				 color = { 7 77 17 }
+
+				 b_irie_toshi = {
+					 province = 341
+				 }
+				 b_irie_empty = {
+					 province = 342
+				 }
+			}
+			c_tokigogachu_province = {
+				 color = { 33 128 47 }
+
+				 b_tokigogachu = {
+					 province = 343
+				 }
+			}
+			c_maigosera_province = {
+				 color = { 13 210 41 }
+
+				 b_maigosera_seido = {
+					 province = 344
+				 }
+			}
+		}
+		d_komori = {
+			 color = { 7 41 12 }
+			 capital = c_komori_province
+			 
+			 c_komori_province = {
+				 color = { 7 41 12 }
+
+				 b_kyuden_komori = {
+					 province = 345
+				 }
+			}
+		}
+		d_toritaka = {
+			 color = { 50 120 153 }
+			 capital = c_toritaka_province
+			 
+			 c_toritaka_province = {
+				 color = { 50 120 153 }
+
+				 b_shiro_toritaka = {
+					 province = 346
+				 }
+				 b_kyuden_toketsu = {
+					 province = 347
+				 }
+			}
+		}
 	}
 		
 	#######################

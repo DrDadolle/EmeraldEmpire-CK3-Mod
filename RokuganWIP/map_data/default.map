@@ -29,11 +29,17 @@ river_provinces = RANGE { 275 277 }
 #Shiba Rivers
 river_provinces = RANGE { 278 285 }	
 #Asako Rivers
+#Dragon-Lion Rivers
+river_provinces = RANGE { 348 353 }	
+#Unicorn Rivers
 river_provinces = LIST { 287 }	
+river_provinces = RANGE { 354 356 }	
+river_provinces = RANGE { 358 361 }	
 ########
 # LAKES
 ########
 lakes = LIST { 286 }	#Asako Lake
+lakes = LIST { 357 }	#Shinjo Lake
 #####################
 # IMPASSABLE TERRAIN
 #####################
