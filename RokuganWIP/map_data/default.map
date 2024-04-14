@@ -24,8 +24,10 @@ sea_zones = LIST { 2 } #French & Iberian atlantic coasts
 ###############
 #Asahina Rivers
 river_provinces = RANGE { 266 274 }		
-#Wasp Rivers
+#Tsuruchi Rivers
 river_provinces = RANGE { 275 277 }	
+river_provinces = LIST { 383 }
+river_provinces = LIST { 393 }
 #Shiba Rivers
 river_provinces = RANGE { 278 285 }	
 #Asako Rivers
@@ -33,13 +35,29 @@ river_provinces = RANGE { 278 285 }
 river_provinces = RANGE { 348 353 }	
 #Unicorn Rivers
 river_provinces = LIST { 287 }	
-river_provinces = RANGE { 354 356 }	
-river_provinces = RANGE { 358 361 }	
+river_provinces = RANGE { 354 358 }	
+river_provinces = RANGE { 360 363 }	
+# River of Gold
+river_provinces = RANGE { 364 369 }	
+river_provinces = RANGE { 370 379 }
+#Kakita River
+river_provinces = LIST { 384 }
+#Kitsu River
+river_provinces = RANGE { 386 388 }
+#Doji River
+river_provinces = RANGE { 389 392 }
+#Ide River
+river_provinces = RANGE { 396 399 }
 ########
 # LAKES
 ########
 lakes = LIST { 286 }	#Asako Lake
-lakes = LIST { 357 }	#Shinjo Lake
+lakes = LIST { 359 }	#Shinjo Lake
+lakes = LIST { 380 }	#Hare Lake
+lakes = LIST { 381 }	#Kakita Lake
+lakes = LIST { 382 }	#Tsuruchi Lake
+lakes = LIST { 385 }	#Kitsu Lake
+lakes = LIST { 394 }	#Ide Lake
 #####################
 # IMPASSABLE TERRAIN
 #####################

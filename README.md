@@ -20,9 +20,8 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 ## short term goals
 - paint minor clans
 - Paint some ronin lands 
-- Create Nekoma/Tonbo/Miya daimyo, count for LastHopeShinsei & some monks for the monasteries
+- count for LastHopeShinsei & some monks for the monasteries
 - create Kakoga lands near shinomen mori.
-- create toritaka lands
 - Have a not-so-ugly heightmap
 - Fix river & coast => Once fixed, redo provinces
 - Paint the map with materials
