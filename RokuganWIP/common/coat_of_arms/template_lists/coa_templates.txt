@@ -141,31 +141,7 @@ coat_of_arms_template_lists = {
 			150 = circled_indian_template_inverted
 			60  = circled_indian_template_offset
 			60  = circled_indian_template_offset_inverted				
-		}
-		# India proper (to tone down those very cultural specific designs vs catch all)
-		special_selection = {
-			trigger = {
-				exists = scope:title
-				scope:title = {
-					any_this_title_or_de_jure_above = {
-						OR = {
-							this = title:e_india
-							this = title:e_deccan
-							this = title:e_rajastan
-							this = title:k_gondwana
-							this = title:k_bihar
-							this = title:k_orissa
-						}
-					}
-				}
-			}	
-			100 = indian_single_template
-			100 = indian_single_template_inverted	
-			100 = indian_single_template_senester
-			100 = indian_single_template_senester_inverted				
-			100 = circled_indian_single_symbol_template
-			100 = circled_indian_single_symbol_template_inverted			
-		}		
+		}	
 		
 		# Tamgha users - Circle/Roundel
 		special_selection = {

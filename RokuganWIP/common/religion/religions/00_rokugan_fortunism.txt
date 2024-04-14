@@ -7,7 +7,7 @@ fortunism_religion = {
 	doctrine = doctrine_temporal_head
 	doctrine = doctrine_gender_equal
 	doctrine = doctrine_pluralism_pluralistic
-	doctrine = doctrine_theocracy_temporal
+	doctrine = doctrine_theocracy_lay_clergy
 
 	#Marriage
 	doctrine = doctrine_monogamy
@@ -225,7 +225,7 @@ fortunism_religion = {
 		seven_fortunes = {
 			color = { 0.2 0.9 0.2 }
 			icon = lamaism_buddhism
-			#religious_head = d_rokugani_faith
+			religious_head = d_rokugani_faith
 
 			holy_site = benten_seido
 			holy_site = jurojin_seido
@@ -245,7 +245,7 @@ fortunism_religion = {
 		cult_amaterasu = {
 			color = { 1.0 0.75 0.0 }
 			icon = mahayana
-			#religious_head = d_rokugani_faith
+			religious_head = d_rokugani_faith
 
 			#holy_site=aaaa
 

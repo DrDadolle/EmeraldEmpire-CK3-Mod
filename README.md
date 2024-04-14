@@ -18,6 +18,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
 ## short term goals
+- Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - paint minor clans
 - Paint some ronin lands 
 - count for LastHopeShinsei & some monks for the monasteries
@@ -25,15 +26,14 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Have a not-so-ugly heightmap
 - Fix river & coast => Once fixed, redo provinces
 - Paint the map with materials
-- Paint & do rivers crossing zones (and adjencies.csv)
 - Paint & do Sea zones 
 - Rework provinces, so looks better
 - Add river map
 
 # Fixes to do
+- Why map paiting texture so Small ?!?!?!
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ???
-- Fix coast line ugly of Phoenix lands (& cranes)
-- Add last name before first name "Clan Champion Doji Hotaru of Crane Clan" instead "Clan Champion Hotaru of Crane Clan"
+
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - Fix Dynasties visual display of CoA => remove all transparency ???
 - add culture title for kasuga : Kizoku
