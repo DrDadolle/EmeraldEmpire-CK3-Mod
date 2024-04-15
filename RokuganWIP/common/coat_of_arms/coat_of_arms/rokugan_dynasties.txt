@@ -2,34 +2,39 @@
 ##### Crane Clan
 ##########################
 2100001 = { #Doji
-	#pattern = "pattern_solid.dds"	
-	#color1 = "white"
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
 	colored_emblem = {
-		texture = "ce_crane_doji_fullcolor.dds"
+		texture = "ce_crane_doji.dds"
+		color1 = "white"
+		color2 = "blue_light"
 	}
 }
 2100002 = { #Daidoji
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	colored_emblem = {
-		texture = "ce_crane_daidoji_fullcolor.dds"
+		texture = "ce_crane_daidoji.dds"
+		color1 = "white"
+		color2 = "blue_light"
 	}
 }
 2100003 = { #Asahina
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	colored_emblem = {
-		texture = "ce_crane_asahina_fullcolor.dds"
-		color1 = "blue_light"
-		color2 = "red"
-		color3 = "green"
+		texture = "ce_crane_asahina.dds"
+		color1 = "white"
+		color2 = "blue_light"
 	}
 }
 2100004 = { #Kakita
 	pattern = "pattern_solid.dds"	
-	color1 = "black"
+	color1 = "white"
 	colored_emblem = {
-		texture = "ce_crane_kakita_fullcolor.dds"
+		texture = "ce_crane_kakita.dds"
+		color1 = "white"
+		color2 = "blue_light"
 	}
 }
 ##########################
@@ -39,28 +44,37 @@
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	colored_emblem = {
-		texture = "ce_lion_akodo_fullcolor.dds"
+		texture = "ce_lion_akodo.dds"
+		color1 = "black"
+		color2 = "white"
+		color3 = "yellow"
 	}
 }
 2100006 = { #matsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	colored_emblem = {
-		texture = "ce_lion_matsu_fullcolor.dds"
+		texture = "ce_lion_matsu.dds"
+		color1 = "black"
+		color2 = "yellow"
 	}
 }
 2100007 = { #kitsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	colored_emblem = {
-		texture = "ce_lion_kitsu_fullcolor.dds"
+		texture = "ce_lion_kitsu.dds"
+		color1 = "black"
+		color2 = "yellow"
 	}
 }
 2100008 = { #ikoma
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	colored_emblem = {
-		texture = "ce_lion_ikoma_fullcolor.dds"
+		texture = "ce_lion_ikoma.dds"
+		color1 = "black"
+		color2 = "yellow"
 	}
 }
 ##########################
@@ -68,29 +82,132 @@
 ##########################
 2100009 = { #Shiba
 	pattern = "pattern_solid.dds"	
-	color1 = "black"
+	color1 = "white"
 	colored_emblem = {
-		texture = "ce_phoenix_shiba_fullcolor.dds"
+		texture = "ce_phoenix_shiba.dds"
+		color1 = "black"
+		color2 = "orange"
+		color3 = "red"
 	}
 }
 2100010 = { #Isawa
 	pattern = "pattern_solid.dds"	
-	color1 = "black"
+	color1 = "white"
 	colored_emblem = {
-		texture = "ce_phoenix_isawa_fullcolor.dds"
+		texture = "ce_phoenix_isawa.dds"
+		color1 = "black"
+		color2 = "orange"
 	}
 }
 2100011 = { #Asako
 	pattern = "pattern_solid.dds"	
-	color1 = "black"
+	color1 = "white"
 	colored_emblem = {
-		texture = "ce_phoenix_asako_fullcolor.dds"
+		texture = "ce_phoenix_asako.dds"
+		color1 = "black"
+		color2 = "orange"
+		color3 = "white"
 	}
 }
 2100012 = { #Kaito
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	colored_emblem = {
-		texture = "ce_phoenix_kaito_fullcolor.dds"
+		texture = "ce_phoenix_kaito.dds"
+		color1 = "black"
+		color2 = "orange"
+	}
+}
+
+##########################
+##### Scorpion Clan
+##########################
+2100013 = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_scorpion_bayushi.dds"
+		color1 = "red"
+		color2 = "black"
+		color3 = "blue_light"
+	}
+}
+2100014 = { #Shosuro
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_scorpion_shosuro.dds"
+		color1 = "red"
+		color2 = "black"
+	}
+}
+2100015 = { #Soshi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_scorpion_soshi.dds"
+		color1 = "red"
+		color2 = "black"
+	}
+}
+2100016 = { #Yogo
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_scorpion_yogo.dds"
+		color1 = "red"
+		color2 = "black"
+		color3 = "orange"
+	}
+}
+##########################
+##### Crab Clan
+##########################
+2100021 = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_crab_hida.dds"
+		color1 = "black"
+		color2 = "blue"
+	}
+}
+2100021 = { #Hiruma
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_crab_hiruma.dds"
+		color1 = "blue"
+	}
+}
+
+2100023 = { #kaiu
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_crab_kaiu.dds"
+		color1 = "blue"
+		color2 = "black"
+		color3 = "red"
+	}
+}
+
+2100024 = { #kuni
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_crab_kuni.dds"
+		color1 = "blue"
+		color2 = "black"
+	}
+}
+
+2100025 = { #yasuki
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_crab_yasuki.dds"
+		color1 = "blue"
+		color2 = "black"
 	}
 }

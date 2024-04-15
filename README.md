@@ -31,9 +31,11 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Add river map
 
 # Fixes to do
-- Why map paiting texture so Small ?!?!?!
+- Soshi daimyo not generated
+- Some mon (lion & scorpion) not properly centered
+- mob yasuki
+- Yogo mon ugly (cause need 4 color, do some hack with transparency on BLACK)
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ???
-
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - Fix Dynasties visual display of CoA => remove all transparency ???
 - add culture title for kasuga : Kizoku
