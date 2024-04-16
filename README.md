@@ -32,9 +32,8 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 
 # Fixes to do
 - Soshi daimyo not generated
-- How to prevent random mariage & children in existing character ? => change game_rule.1001 ???
+- How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
-- Fix Dynasties visual display of CoA => remove all transparency ???
 - add culture title for kasuga : Kizoku
 - Do as "sultanate" based on dynasty name but ONLY for duchy titles ????
 

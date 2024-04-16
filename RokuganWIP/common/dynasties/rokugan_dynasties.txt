@@ -161,22 +161,18 @@
 2106023 = { # Kaiu vassal
 	name = dynn_maisuna
 	culture = kaiu
-	motto = dynn_maisuna_motto
 }
 2106024 = { # Kuni vassal
 	name = dynn_ugawari
 	culture = kuni
-	motto = dynn_ugwari_motto
 }
 2106025 = { # Yasuki Vassal
 	name = dynn_kano
 	culture = yasuki
-	motto = dynn_kano_motto
 }
 2106026 = { # Yasuki Vassal
 	name = dynn_nobuto
 	culture = yasuki
-	motto = dynn_nobuto_motto
 }
 
 ##########################
@@ -211,17 +207,14 @@
 2107028 = { # Utaku vassal
 	name = dynn_naoko
 	culture = utaku
-	motto = dynn_naoko_motto
 }
 2107030 = { # Iuchi vassal
 	name = dynn_battue
 	culture = iuchi
-	motto = dynn_battue_motto
 }
 2107031 = { # Iuchi vassal
 	name = dynn_horiuchi
 	culture = iuchi
-	motto = dynn_horiuchi_motto
 }
 ##########################
 ##### Imperial families
