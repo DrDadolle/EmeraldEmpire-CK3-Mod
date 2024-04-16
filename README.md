@@ -20,7 +20,8 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 ## short term goals
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - paint minor clans
-- Paint some ronin lands 
+- Paint some ronin lands
+- All mons for main families
 - count for LastHopeShinsei & some monks for the monasteries
 - create Kakoga lands near shinomen mori.
 - Have a not-so-ugly heightmap
