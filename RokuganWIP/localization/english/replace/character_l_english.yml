@@ -9,11 +9,11 @@
 
  # Default
 
- SHOGUNATE_CHARACTER_DEFAULT:0 "[SelectLocalization( EqualTo_string('$TIER$', 'TIER'), '', Concatenate( $SHOGUNATE_CHARACTER_TIER$, Concatenate( $SHOGUNATE_CHARACTER_NICK$, Concatenate( $SHOGUNATE_CHARACTER_DYNASTY$, Concatenate( $SHOGUNATE_CHARACTER_NAME$, $SHOGUNATE_CHARACTER_TITLE$ ) ) ) ) )]"
+ SHOGUNATE_CHARACTER_DEFAULT:0 "[Concatenate( $SHOGUNATE_CHARACTER_TIER$, Concatenate( $SHOGUNATE_CHARACTER_NICK$, Concatenate( $SHOGUNATE_CHARACTER_DYNASTY$, Concatenate( $SHOGUNATE_CHARACTER_NAME$, $SHOGUNATE_CHARACTER_TITLE$ ) ) ) )]"
 
- SHOGUNATE_GET_NAME_FROM_CHARACTER_DEFAULT:0 "[SelectLocalization( ROOT.Char.IsFemale, '', SelectLocalization( ROOT.Char.GetHouse.IsValid, Concatenate( ROOT.Char.GetHouse.GetBaseNameNoTooltip, ' ' ), '' ) )][ROOT.Char.GetFirstName]"
- SHOGUNATE_GET_NAME_NO_TOOLTIP_FROM_CHARACTER_DEFAULT:0 "[SelectLocalization( ROOT.Char.IsFemale, '', SelectLocalization( ROOT.Char.GetHouse.IsValid, Concatenate( ROOT.Char.GetHouse.GetBaseNameNoTooltip, ' ' ), '' ) )][ROOT.Char.GetFirstNameNoTooltip]"
- SHOGUNATE_GET_NAME_DYNASTY_TREE_DEFAULT:0 "[SelectLocalization(DynastyTreeItem.GetCharacter.IsFemale, '', SelectLocalization( DynastyTreeItem.GetCharacter.GetHouse.IsValid, Concatenate( DynastyTreeItem.GetCharacter.GetHouse.GetBaseNameNoTooltip, ' ' ), '' ) )][DynastyTreeItem.GetCharacter.GetFirstNameNoTooltip]"
+ SHOGUNATE_GET_NAME_FROM_CHARACTER_DEFAULT:0 "[SelectLocalization( ROOT.Char.GetHouse.IsValid, Concatenate( ROOT.Char.GetHouse.GetBaseNameNoTooltip, ' ' ), '' )][ROOT.Char.GetFirstName]"
+ SHOGUNATE_GET_NAME_NO_TOOLTIP_FROM_CHARACTER_DEFAULT:0 "[SelectLocalization( ROOT.Char.GetHouse.IsValid, Concatenate( ROOT.Char.GetHouse.GetBaseNameNoTooltip, ' ' ), '' )][ROOT.Char.GetFirstNameNoTooltip]"
+ SHOGUNATE_GET_NAME_DYNASTY_TREE_DEFAULT:0 "[SelectLocalization( DynastyTreeItem.GetCharacter.GetHouse.IsValid, Concatenate( DynastyTreeItem.GetCharacter.GetHouse.GetBaseNameNoTooltip, ' ' ), '' )][DynastyTreeItem.GetCharacter.GetFirstNameNoTooltip]"
 
 
  ### Name Elements

@@ -53,6 +53,7 @@ kakita = {
 
 daidoji = {
 	color = { 0.0 1.0 0.8 } # The color of the culture, used e.g. on the map
+	created = 45.1.1
 	parents = { doji }
 
 	ethos = ethos_stoic

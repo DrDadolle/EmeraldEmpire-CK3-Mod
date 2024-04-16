@@ -4,6 +4,10 @@
 @smLysY = 0.26
 @smCross = 0.22
 
+
+##########################
+##### Imperial families Clan
+##########################
 e_rokugan = {
 	pattern = "pattern_solid.dds"
 	color1 = "black"
@@ -12,10 +16,6 @@ e_rokugan = {
 		color1 = "green_light"
 	}
 }
-
-##########################
-##### Imperial families Clan
-##########################
 
 k_imperial_clan = {
 	pattern = "pattern_solid.dds"
@@ -27,44 +27,42 @@ k_imperial_clan = {
 }
 
 d_hantei = {
-	pattern = "pattern_solid.dds"
-	color1 = "black"
-	colored_emblem = {
-		texture = "ce_imperial_1.dds"
-		color1 = "green_light"
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
 	}
 }
 
 c_otosan_uchi_province = {
-	pattern = "pattern_solid.dds"
-	color1 = "black"
-	colored_emblem = {
-		texture = "ce_imperial_1.dds"
-		color1 = "green_light"
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
 	}
 }
 
 d_miya = {
-	pattern = "pattern_solid.dds"
+	pattern = "pattern_solid.dds"	
 	color1 = "white"
-	colored_emblem = {
-		texture = "ce_imperial_miya_fullcolor.dds"
+	textured_emblem = {
+		texture = "te_imperial_miya.dds"
 	}
 }
 
 d_otomo = {
-	pattern = "pattern_solid.dds"
-	color1 = "black"
-	colored_emblem = {
-		texture = "ce_imperial_otomo_fullcolor.dds"
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_otomo.dds"
 	}
 }
 
 d_seppun = {
-	pattern = "pattern_solid.dds"
-	color1 = "black"
-	colored_emblem = {
-		texture = "ce_imperial_seppun_fullcolor.dds"
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_seppun.dds"
 	}
 }
 
@@ -80,33 +78,100 @@ k_crane_clan = {
 		color1 = "blue_light"
 	}
 }
-
+##### Doji
 d_doji = { #Doji
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
-	colored_emblem = {
-		texture = "ce_crane_doji_fullcolor.dds"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
 	}
 }
+
+c_kazenmuketsu_province = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+
+b_kyuden_doji = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+##### Daidoji
 d_daidoji = { #Daidoji
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
-	colored_emblem = {
-		texture = "ce_crane_daidoji_fullcolor.dds"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
 	}
 }
+
+c_hayaku_province = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
+
+b_shiro_daidoji = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
+
+##### Asahina
 d_asahina = { #Asahina
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
-	colored_emblem = {
-		texture = "ce_crane_asahina_fullcolor.dds"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
 	}
 }
+c_shinkyou_province = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
+
+b_shinden_asahina = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
+##### Kakita
 d_kakita = { #Kakita
 	pattern = "pattern_solid.dds"	
-	color1 = "black"
-	colored_emblem = {
-		texture = "ce_crane_kakita_fullcolor.dds"
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
+
+c_takuetsu_province = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
+
+b_kyuden_kakita = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
 	}
 }
 ##########################
@@ -124,29 +189,29 @@ k_lion_clan = {
 d_akodo = { #akodo
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
-	colored_emblem = {
-		texture = "ce_lion_akodo_fullcolor.dds"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
 	}
 }
 d_matsu = { #matsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
-	colored_emblem = {
-		texture = "ce_lion_matsu_fullcolor.dds"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
 	}
 }
 d_kitsu = { #kitsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
-	colored_emblem = {
-		texture = "ce_lion_kitsu_fullcolor.dds"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
 	}
 }
 d_ikoma = { #ikoma
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
-	colored_emblem = {
-		texture = "ce_lion_ikoma_fullcolor.dds"
+	textured_emblem = {
+		texture = "te_lion_ikoma.dds"
 	}
 }
 ##########################
@@ -162,58 +227,37 @@ k_phoenix_clan = {
 }
 
 d_shiba = { #Shiba
-	#pattern = "pattern_solid.dds"	
-	#color1 = "black"
-	colored_emblem = {
-		texture = "ce_phoenix_shiba_fullcolor.dds"
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_phoenix_shiba.dds"
 	}
 }
 d_isawa = { #Isawa
-	#pattern = "pattern_solid.dds"	
-	#color1 = "black"
-	colored_emblem = {
-		texture = "ce_phoenix_isawa_fullcolor.dds"
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_phoenix_isawa.dds"
 	}
 }
 d_asako = { #Asako
-	#pattern = "pattern_solid.dds"	
-	#color1 = "black"
-	colored_emblem = {
-		texture = "ce_phoenix_asako_fullcolor.dds"
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_phoenix_asako.dds"
 	}
 }
 d_kaito = { #Kaito
-	#pattern = "pattern_solid.dds"	
-	#color1 = "white"
-	colored_emblem = {
-		texture = "ce_phoenix_kaito_fullcolor.dds"
-	}
-}
-
-##########################
-##### Minor Clans
-##########################
-
-d_moshi = {
-	pattern = "pattern_solid.dds"
+	pattern = "pattern_solid.dds"	
 	color1 = "white"
-	colored_emblem = {
-		texture = "ce_minor_moshi.dds"
-		color1 = "orange"
+	textured_emblem = {
+		texture = "te_phoenix_kaito.dds"
 	}
 }
 
-d_kasuga = {
-	pattern = "pattern_solid.dds"
-	color1 = "black"
-	colored_emblem = {
-		texture = "ce_minor_kasuga.dds"
-		color1 = "yellow"
-	}
-}
 
 ##########################
-##### 
+#####  Dragon Clan
 ##########################
 k_dragon_clan = {
 	pattern = "pattern_solid.dds"
@@ -224,6 +268,37 @@ k_dragon_clan = {
 	}
 }
 
+d_togashi = { # Togashi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_togashi.dds"
+	}
+}
+d_mirumoto = { # Mirumoto
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_mirumoto.dds"
+	}
+}
+d_kitsuki = { # Kitsuki
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_kitsuki.dds"
+	}
+}
+d_agasha = { #Agasha
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_agasha.dds"
+	}
+}
+##########################
+#####  Scorpion Clan
+##########################
 k_scorpion_clan = {
 	pattern = "pattern_solid.dds"
 	color1 = "black"
@@ -233,6 +308,37 @@ k_scorpion_clan = {
 	}
 }
 
+d_bayushi = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+d_shosuro = { #Shosuro
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_shosuro.dds"
+	}
+}
+d_soshi = { #Soshi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_soshi.dds"
+	}
+}
+d_yogo = { #Yogo
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_yogo.dds"
+	}
+}
+##########################
+#####  Crab Clan
+##########################
 k_crab_clan = {
 	pattern = "pattern_solid.dds"
 	color1 = "black"
@@ -242,6 +348,47 @@ k_crab_clan = {
 	}
 }
 
+d_hida = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+d_hiruma = { #Hiruma
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hiruma.dds"
+	}
+}
+
+d_kaiu = { #kaiu
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kaiu.dds"
+	}
+}
+
+d_kuni = { #kuni
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kuni.dds"
+	}
+}
+
+d_yasuki = { #yasuki
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crab_yasuki.dds"
+	}
+}
+##########################
+#####  Unicorn Clan
+##########################
 k_unicorn_clan = {
 	pattern = "pattern_solid.dds"
 	color1 = "white"
@@ -250,3 +397,162 @@ k_unicorn_clan = {
 		color1 = "purple"
 	}
 }
+
+d_shinjo = { #shinjo
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_unicorn_shinjo.dds"
+	}
+}
+d_ide = { #ide
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_unicorn_ide.dds"
+	}
+}
+d_utaku = { #utaku
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_unicorn_utaku.dds"
+	}
+}
+d_moto = { #moto
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_unicorn_moto.dds"
+	}
+}
+d_iuchi = { #iuchi
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_unicorn_iuchi.dds"
+	}
+}
+##########################
+##### Minor Clans
+##########################
+d_kitsune = { # Fox Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_fox.dds"
+	}
+}
+d_moshi = {# Centipede Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_centipede.dds"
+	}
+}
+d_kasuga = { # Tortoise Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_tortoise.dds"
+	}
+}
+d_tonbo = { # Dragonfly Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_dragonfly.dds"
+	}
+}
+d_toritaka = { # Falcon Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_falcon.dds"
+	}
+}
+d_usagi = { # Hare Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_hare.dds"
+	}
+}
+d_yoritomo = { # Mantis Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_mantis.dds"
+	}
+}
+d_tsuruchi = { # Wasp Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_wasp.dds"
+	}
+}
+d_suzume = { # Sparrow Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_sparrow.dds"
+	}
+}
+d_ichiro = { # Badger Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_badger.dds"
+	}
+}
+d_nekoma = { # Cat Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_cat.dds"
+	}
+}
+d_komori = { # Bat Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_bat.dds"
+	}
+}
+#2100113 = { # Deer Clan
+#	pattern = "pattern_solid.dds"	
+#	color1 = "white"
+#	textured_emblem = {
+#		texture = "te_minor_deer.dds"
+#	}
+#}
+#2100114 = { # Moth Clan
+#	pattern = "pattern_solid.dds"	
+#	color1 = "white"
+#	textured_emblem = {
+#		texture = "te_minor_moth.dds"
+#	}
+#}
+d_chuda = { # Snake Clan. Should be extinct... in theory
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_snake.dds"
+	}
+}
+#2100116 = { # Bear Clan.  Should be extinct... in theory
+#	pattern = "pattern_solid.dds"	
+#	color1 = "white"
+#	textured_emblem = {
+#		texture = "te_minor_bear.dds"
+#	}
+#}
+#2100117 = { #TODO Otter Clan
+#	name = dynn_xxx
+#	culture = xxx
+#}
+#2100118 = { #TODO Boar clan Extinct, for real
+#	name = dynn_xxx
+#	culture = xxx
+#}

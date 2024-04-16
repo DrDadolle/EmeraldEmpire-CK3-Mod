@@ -18,7 +18,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
 ## short term goals
-- All mons for main families & minor clans dynasties => Use as textured_emblems ! 
 - paint minor clans (Moth Clan north of Falcon Clan)
 - Paint some ronin lands & Brother hood to complete the map for now
 - count for LastHopeShinsei & some monks for the monasteries
@@ -32,6 +31,8 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 
 # Fixes to do
 - Soshi daimyo not generated
+- Change color of some textured emblmes
+- Kaito Lands not accessible, change mask of fog
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - add culture title for kasuga : Kizoku
