@@ -18,10 +18,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
 ## short term goals
+- All mons for main families & minor clans dynasties => Use as textured_emblems ! 
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - paint minor clans
 - Paint some ronin lands
-- All mons for main families
 - count for LastHopeShinsei & some monks for the monasteries
 - create Kakoga lands near shinomen mori.
 - Have a not-so-ugly heightmap
@@ -33,9 +33,6 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 
 # Fixes to do
 - Soshi daimyo not generated
-- Some mon (lion & scorpion) not properly centered
-- mob yasuki
-- Yogo mon ugly (cause need 4 color, do some hack with transparency on BLACK)
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ???
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - Fix Dynasties visual display of CoA => remove all transparency ???
@@ -43,6 +40,7 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Do as "sultanate" based on dynasty name but ONLY for duchy titles ????
 
 ## Futures Features & Nice to have
+- Remove AI Cadet branches
 - Bushido & Duels
 - Seppuku
 - Child Adoption
@@ -51,6 +49,7 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Genetic Trait "Natural white hair" for Crane ???
 - Right/Left/UnderHand special trait for clan champion of crane/lion/scorpion
 - Blood feud (like Matsu vs Kakita)
+- Add ancestral clan & family founders
 - Special decisions
 	- Retake Yasuki Lands as Crane Clan
  	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
