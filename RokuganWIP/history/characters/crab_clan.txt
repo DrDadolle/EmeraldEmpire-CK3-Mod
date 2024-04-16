@@ -152,6 +152,28 @@
 		birth = yes
 	}
 }
+##### Vassal
+3003400 = {
+	name = name_aki 	#  Kakeguchi Aki  #TODO replace name
+	dynasty = 2106021 	# Kakeguchi Vassal family 
+	religion = "cult_ancestors"
+	culture = "hida"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3003401 = {
+	name = name_aki 	#  Moshibaru Aki  #TODO replace name
+	dynasty = 2106022 	# Moshibaru Vassal family 
+	religion = "cult_ancestors"
+	culture = "hida"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
 #####################
 #	Hiruma
 #####################
@@ -244,6 +266,17 @@
 		birth = yes
 	}
 }
+##### Vassal
+3003440 = {
+	name = name_aki 	#  Maisuna Aki  #TODO replace name
+	dynasty = 2106023 	# Maisuna Vassal family 
+	religion = "cult_ancestors"
+	culture = "kaiu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
 #####################
 #	Kuni
 #####################
@@ -284,6 +317,17 @@
 	religion = "seven_fortunes"
 	culture = "kuni"
 	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
+##### Vassal
+3003460 = {
+	name = name_aki 	#  Ugawari Aki  #TODO replace name
+	dynasty = 2106024 	# Ugawari Vassal family 
+	religion = "seven_fortunes"
+	culture = "kuni"
+
 	1100.1.1 = {
 		birth = yes
 	}
@@ -349,11 +393,32 @@
 	}
 }
 3000491 = {
-	name = name_akiko 	#  Yasuki Aki  #TODO replace name
+	name = name_akiko 	#  Yasuki Akiko  #TODO replace name
 	dynasty = 2100025 	# Yasuki  #TODO replace by  like the dynn_morehei_doji
 	religion = "seven_fortunes"
 	culture = "yasuki"
 	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
+##### Vassal
+3003480 = {
+	name = name_aki 	#  Kano Aki  #TODO replace name
+	dynasty = 2106025 	# Kano Vassal family 
+	religion = "seven_fortunes"
+	culture = "yasuki"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3003481 = {
+	name = name_aki 	#  Nobuto Aki  #TODO replace name
+	dynasty = 2106026 	# Nobuto Vassal family 
+	religion = "seven_fortunes"
+	culture = "yasuki"
+
 	1100.1.1 = {
 		birth = yes
 	}

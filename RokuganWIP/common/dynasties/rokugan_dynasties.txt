@@ -147,6 +147,37 @@
 	culture = yasuki
 	motto = dynn_yasuki_motto
 }
+##### Vassals
+2106021 = { # Hida vassal
+	name = dynn_kakeguchi
+	culture = hida
+	motto = dynn_kakeguchi_motto
+}
+2106022 = { # Hida vassal
+	name = dynn_moshibaru
+	culture = hida
+	motto = dynn_moshibaru_motto
+}
+2106023 = { # Kaiu vassal
+	name = dynn_maisuna
+	culture = kaiu
+	motto = dynn_maisuna_motto
+}
+2106024 = { # Kuni vassal
+	name = dynn_ugawari
+	culture = kuni
+	motto = dynn_ugwari_motto
+}
+2106025 = { # Yasuki Vassal
+	name = dynn_kano
+	culture = yasuki
+	motto = dynn_kano_motto
+}
+2106026 = { # Yasuki Vassal
+	name = dynn_nobuto
+	culture = yasuki
+	motto = dynn_nobuto_motto
+}
 
 ##########################
 ##### Unicorn Clan

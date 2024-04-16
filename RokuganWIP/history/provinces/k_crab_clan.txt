@@ -27,7 +27,7 @@
 	religion = seven_fortunes
 	holding = city_holding
 }
-180 = {		#b_watch_tower_east
+180 = {		#b_shiro_kano
 	culture = yasuki
 	religion = seven_fortunes
 	holding = castle_holding
@@ -63,7 +63,7 @@
 186 = {		#b_ugawari_toride
 	culture = hida
 	religion = cult_ancestors
-	holding = city_holding
+	holding = castle_holding
 }
 187 = {		#b_kyuden_moshibaru
 	culture = hida

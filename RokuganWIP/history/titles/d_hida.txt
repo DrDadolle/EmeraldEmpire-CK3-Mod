@@ -12,12 +12,34 @@ c_ishibei_province = {
 	}
 }
 
+b_shiro_kakeguchi = {
+	1123.1.1 = {
+		liege = "c_ishibei_province"
+		holder = 3003400 # Kakeguchi Aki  #TODO replace name
+	}
+}
+
 c_kyoukan_province = {
 	1110.1.1 = {
 		liege = "d_hida"
 		holder = 3000400 # Hida Kisada
 	}
 }
+
+b_ugawari_toride = {
+	1110.1.1 = {
+		liege = "c_kyoukan_province"
+		holder = 3003460 # Ugawari Aki  #TODO replace name
+	}
+}
+
+b_kyuden_moshibaru = {
+	1110.1.1 = {
+		liege = "c_kyoukan_province"
+		holder = 3003401 # Moshibaru Aki  #TODO replace name
+	}
+}
+
 
 c_juuin_province = {
 	1110.1.1 = {
