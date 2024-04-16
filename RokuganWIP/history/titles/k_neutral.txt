@@ -1,0 +1,12 @@
+#####################
+#	Kintani
+#####################
+c_kintani_province = {
+	1090.1.1 = { 
+		liege = "d_doji"
+		holder = 3003000 #  Tsume Retsu
+	}
+	1120.4.4 = {
+		holder = 3003001 #  Tsume Takashi
+	}
+}

@@ -42,10 +42,3 @@ c_kishou_province = {
 					holder = 3000030 # TODO placeholder name
 	}
 }
-
-c_kintani_province = {
-	1123.1.1 = { 
-					liege = "d_kakita"
-					holder = 3000031 # TODO placeholder name
-	}
-}

@@ -1,14 +1,16 @@
 d_asako = {
-	1123.1.1 = {
+	1085.1.1 = {
 		liege = "k_phoenix_clan"
+	}
+	1123.1.1 = {
 		holder = 3000242 # Asako Togama
 	}
 }
 
 c_enjaku_province = {
-	1123.1.1 = {
+	1086.1.1 = {
 		liege = "d_asako"
-		holder = 3000242 # Asako Togama
+		holder = 3000203 #  Shiba Katsuda
 	}
 }
 

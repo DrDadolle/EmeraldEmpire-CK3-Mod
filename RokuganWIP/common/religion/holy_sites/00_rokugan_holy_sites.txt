@@ -113,10 +113,23 @@ amaterasu_temple = {
 	character_modifier = {
 		name = amaterasu_temple_effect_name
 		learning = 1
-		monthly_piety = 0.5
+		monthly_piety = 0.3
+	}
+}
+
+field_of_the_morning_sun = {
+
+	county = c_shinkyou_province
+	barony = b_bunya_sano_asahina
+
+	character_modifier = {
+		name = field_of_the_morning_sun_effect_name
+		learning = 1
+		monthly_piety = 0.3
 	}
 
 }
+
 
 
 #################

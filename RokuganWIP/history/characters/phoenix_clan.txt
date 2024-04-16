@@ -57,6 +57,57 @@
 	}
 }
 
+
+3000202 = {
+	name = name_itsuyo 	#  Shiba Itsuyo, wife of Tsume no Doji Takashi
+	dynasty = 2100009 	# Shiba
+	religion = "seven_fortunes"
+	culture = "shiba"
+	female = yes
+	
+	### Traits
+	# Martial training in the lore
+	
+	#Family
+	father = 3000203 # Shiba Katsuda Retsu
+	mother = 3000204 # Shiba Chisei
+
+	1101.1.1 = {
+		birth = yes
+	}
+}
+
+3000203 = {
+	name = name_katsuda	#  Shiba Katsuda, Lord of Nikesake
+	dynasty = 2100009 	# Shiba
+	religion = "seven_fortunes"
+	culture = "shiba"
+	
+	### Traits
+
+	1066.1.1 = {
+		birth = yes
+	}
+	
+	1086.1.1 = {
+		add_spouse = 3000204 # Shiba Chisei
+	}
+}
+
+3000204 = {
+	name = name_chisei	#  Shiba Chisei, wife of Shiba Katsuda
+	dynasty = 2100009 	# Shiba
+	religion = "seven_fortunes"
+	culture = "shiba"
+	
+	### Traits
+
+	1068.1.1 = {
+		birth = yes
+	}
+}
+
+
 ##### Random county holder for the Shiba
 3000210 = {
 	name = name_aki 	#  Shiba Aki  #TODO replace name

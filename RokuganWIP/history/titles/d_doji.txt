@@ -1,12 +1,12 @@
 d_doji = {
 
 	1110.1.1 = {
-					liege = "k_crane_clan"
-					holder = 3000003 # Doji Satsume
+		liege = "k_crane_clan"
+		holder = 3000003 # Doji Satsume
 	}
 
 	1123.1.1 = { 
-					holder = 3000001 # Doji Hotaru
+		holder = 3000001 # Doji Hotaru
 	}
 }
 
@@ -24,35 +24,35 @@ c_oyomesan_province = {
 c_kazenmuketsu_province = {
 
 	1110.1.1 = {
-					liege = "d_doji"
-					holder = 3000003 # Doji Satsume
+		liege = "d_doji"
+		holder = 3000003 # Doji Satsume
 	}
 	1123.1.1 = { 
-					holder = 3000001 # Doji Hotaru
+		holder = 3000001 # Doji Hotaru
 	}
 }
 
 c_itoshii_province = {
 
 	1110.1.1 = {
-					liege = "d_doji"
-					holder = 3000003 # Doji Satsume
+		liege = "d_doji"
+		holder = 3000003 # Doji Satsume
 	}
 	1123.1.1 = { 
-					holder = 3000002 # Doji Kuwanan
+		holder = 3000002 # Doji Kuwanan
 	}
 }
 
 c_kougen_province = {
 	1123.1.1 = { 
-					liege = "d_doji"
-					holder = 3000010 # Doji Aki # Random County Holder
+		liege = "d_doji"
+		holder = 3000010 # Doji Aki # Random County Holder
 	}
 }
 
 c_umoeru_province = {
 	1123.1.1 = { 
-					liege = "d_doji"
-					holder = 3000011 # Doji Tsukasa # Random County Holder
+		liege = "d_doji"
+		holder = 3000011 # Doji Tsukasa # Random County Holder
 	}
 }

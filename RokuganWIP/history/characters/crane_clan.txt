@@ -230,6 +230,59 @@
 		birth = yes
 	}
 }
+#############
+##### Vassal
+3003000 = {
+	name = name_retsu 	#  Tsume Retsu, daimyo of shiro Kyotei
+	dynasty = 2101008 	# Tsume  Vassal family 
+	religion = "seven_fortunes"
+	culture = "doji"
+
+	### Traits
+	trait = ambitious
+	trait = wrathful
+
+
+	1067.1.1 = {
+		birth = yes
+	}
+	1120.4.4 = {
+		death={
+			death_reason=death_murder
+		}
+
+	}
+}
+
+3003001 = {
+	name = name_takashi 	#  Tsume Takashi, daimyo of shiro Kyotei
+	dynasty = 2101008 	# Tsume  Vassal family 
+	religion = "seven_fortunes"
+	culture = "doji"
+
+	### Traits
+	trait = content
+	
+	
+	#Family
+	father = 3003000 # Tsume Retsu
+
+
+	1102.1.1 = {
+		birth = yes
+	}
+	
+	##TODO maybe rechange dates ??
+	1123.6.1 = {
+		add_spouse=3000202 #Shiba Itsuyo
+	}
+	1123.6.2 = {
+		death={
+			death_reason=death_seppuku
+		}
+
+	}
+}
 
 #####################
 #	KAKITA
@@ -443,7 +496,8 @@
 		birth = yes
 	}
 }
-
+##### VASSAL
+# There is no canon vassal families for the Asahina family
 #####################
 #	DAIDOJI
 #####################

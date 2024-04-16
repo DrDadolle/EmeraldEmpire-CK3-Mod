@@ -22,6 +22,39 @@
 	culture = kakita
 	motto = dynn_kakita_motto
 }
+##### Vassals
+2101001 = { # Kakita vassal
+	name = dynn_ashidaka
+	culture = kakita
+}
+2101002 = { # Daidoji vassal
+	name = dynn_fujihiro
+	culture = daidoji
+}
+2101003 = { # Daidoji vassal
+	name = dynn_hiramori
+	culture = daidoji
+}
+2101004 = { # Daidoji vassal
+	name = dynn_hiramichi
+	culture = daidoji
+}
+2101005 = { # Kakita vassal
+	name = dynn_iwasaki
+	culture = kakita
+}
+2101006 = { # Doji vassal
+	name = dynn_katogama
+	culture = doji
+}
+2101007 = { # Doji vassal
+	name = dynn_morehei
+	culture = doji
+}
+2101008 = { # Doji vassal
+	name = dynn_tsume
+	culture = doji
+}
 ##########################
 ##### Lion Clan
 ##########################
@@ -151,12 +184,10 @@
 2106021 = { # Hida vassal
 	name = dynn_kakeguchi
 	culture = hida
-	motto = dynn_kakeguchi_motto
 }
 2106022 = { # Hida vassal
 	name = dynn_moshibaru
 	culture = hida
-	motto = dynn_moshibaru_motto
 }
 2106023 = { # Kaiu vassal
 	name = dynn_maisuna
