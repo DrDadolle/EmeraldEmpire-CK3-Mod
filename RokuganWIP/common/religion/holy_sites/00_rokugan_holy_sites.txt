@@ -71,9 +71,53 @@ hotei_seido = {
 
 	character_modifier = {
 		name = hotei_seido_effect_name
-		stewardship_per_piety_level = 1
+		stress_gain_mult = -0.1
+		stress_loss_mult = 0.1
 	}
 }
+
+daikoku_seido = {
+
+	county = c_kawabe_province
+	barony = b_daikoku_seido
+
+	character_modifier = {
+		name = daikoku_seido_effect_name
+		tax_mult = 0.1
+	}
+}
+
+fukurokujin_seido = {
+
+	county = c_mucha_province
+	barony = b_fukurokujin_seido
+
+	character_modifier = {
+		name = fukurokujin_seido_effect_name
+		learning = 1
+		development_growth_factor = 0.1
+	}
+}
+
+# TODO Ebisu Seido
+# https://l5r.fandom.com/wiki/Zakyo_Toshi
+
+#################
+# cult_amaterasu
+
+amaterasu_temple = {
+
+	county = c_mukade_no_tani_province
+	barony = b_amaterasu_seido
+
+	character_modifier = {
+		name = amaterasu_temple_effect_name
+		learning = 1
+		monthly_piety = 0.5
+	}
+
+}
+
 
 #################
 # Cult of the Ancestors
@@ -112,7 +156,7 @@ shiba_temple = {
 	character_modifier = {
 		name = shiba_temple_effect_name
 		learning = 1
-		monthly_piety_gain_mult = 0.1
+		monthly_piety = 0.3
 	}
 }
 
@@ -124,7 +168,7 @@ bayushi_temple = {
 	character_modifier = {
 		name = bayushi_temple_effect_name
 		intrigue = 1
-		monthly_county_control_growth_factor = 0.05
+		dread_gain_mult = 0.1
 	}
 }
 
@@ -136,20 +180,73 @@ hantei_temple = {
 
 	character_modifier = {
 		name = hantei_temple_effect_name
-		diplomacy = 1
-		monthly_prestige_gain_mult = 0.1
+		direct_vassal_opinion  = 5
+	}
+}
+
+hida_temple = {
+
+	county = c_kyoukan_province
+	barony = b_koten_seido
+
+	character_modifier = {
+		name = hida_temple_effect_name
+		martial = 1
+		defender_advantage = 2
 	}
 }
 
 
+shinjo_temple = {
+
+	county = c_isei_province
+	barony = b_utaku_seido
+
+	character_modifier = {
+		name = shinjo_temple _effect_name
+		diplomacy = 1
+		light_cavalry_damage_mult = 0.1
+	}
+}
+
+togashis_seat = {
+
+	county = c_mucha_province
+	barony = b_moutain_summit_temple
+
+	character_modifier = {
+		name = togashis_seat_effect_name
+		learning = 1
+		monthly_piety_gain_mult = 0.1
+	}
+}
 
 
+#################
+# Lords of Death
+#################
 
+temple_of_death = {
 
+	county = c_ikoku_province
+	barony = b_temple_of_death
 
+	character_modifier = {
+		name = temple_of_death_effect_name
+		martial = 1
+	}
+}
 
+temple_lost_moto = {
 
+	county = c_ikoku_province
+	barony = b_temple_of_death
 
+	character_modifier = {
+		name = temple_of_death_effect_name
+		martial = 1
+	}
+}
 
 
 

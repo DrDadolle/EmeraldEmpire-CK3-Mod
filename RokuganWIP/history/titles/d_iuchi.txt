@@ -12,6 +12,13 @@ c_kaihi_province = {
 	}
 }
 
+b_tower_kelet = {
+	1123.1.1 = {
+		liege = "c_kaihi_province"
+		holder = 3003520 # Battue Aki #TODO replace name Aki
+	}
+}
+
 
 c_shiten_province = {
 	1111.1.1 = {
@@ -22,8 +29,8 @@ c_shiten_province = {
 
 
 c_ujidera_province = {
-	1111.1.1 = {
+	1115.1.1 = {
 		liege = "d_iuchi"
-		holder = 3000531 # TODO placeholder count
+		holder = 3003521 #  Horiuchi Shoan, Horiuchi founder
 	}
 }

@@ -19,17 +19,16 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 
 ## short term goals
 - All mons for main families & minor clans dynasties => Use as textured_emblems ! 
-- Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
-- paint minor clans
-- Paint some ronin lands
+- paint minor clans (Moth Clan north of Falcon Clan)
+- Paint some ronin lands & Brother hood to complete the map for now
 - count for LastHopeShinsei & some monks for the monasteries
-- create Kakoga lands near shinomen mori.
 - Have a not-so-ugly heightmap
-- Fix river & coast => Once fixed, redo provinces
+	- Fix river & coast => Once fixed, redo provinces
 - Paint the map with materials
 - Paint & do Sea zones 
 - Rework provinces, so looks better
 - Add river map
+- Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 
 # Fixes to do
 - Soshi daimyo not generated
@@ -51,6 +50,8 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Blood feud (like Matsu vs Kakita)
 - Add ancestral clan & family founders
 - Special decisions
+	-Become Great Clan : Requires X Duchy or Y counties. Emperor positive relation. Emperor MUST be direct liege. Name of Duchy Title => Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
+		- No other ways to create a kingdom title. Basically rework existing mechanics
 	- Retake Yasuki Lands as Crane Clan
  	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
 	- reclaim ancestral hiruma lands as Hiruma familly

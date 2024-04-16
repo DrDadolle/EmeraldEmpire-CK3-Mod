@@ -12,6 +12,12 @@ c_manaka_province = {
 	}
 }
 
+b_shiro_naoko = {
+	1123.1.1 = {
+		liege = "c_manaka_province"
+		holder = 3003560 # Naoko Aki #TODO change name
+	}
+}
 
 c_isei_province = {
 	1111.1.1 = {

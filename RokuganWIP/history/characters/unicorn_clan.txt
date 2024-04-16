@@ -183,6 +183,29 @@
 		birth = yes
 	}
 }
+##### Vassal
+3003520 = {
+	name = name_aki 	#  Battue Aki  #TODO replace name
+	dynasty = 2107030 	# Battue Vassal family 
+	religion = "seven_fortunes"
+	culture = "uchi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3003521 = {
+	name = name_shoan 	#  Horiuchi Shoan, Horiuchi founder
+	dynasty = 2107031 	# Horiuchi Vassal family 
+	religion = "seven_fortunes"
+	culture = "uchi"
+	female = yes
+	
+	1092.1.1 = {
+		birth = yes
+	}
+}
 
 #####################
 #	Ide
@@ -255,6 +278,18 @@
 	religion = "seven_fortunes"
 	culture = "utaku"
 	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
+##### Vassal
+3003560 = {
+	name = name_akiko 	#  Naoko Aki  #TODO replace name
+	dynasty = 2107028 	# Naoko Vassal family 
+	religion = "seven_fortunes"
+	culture = "utaku"
+	female = yes
+
 	1100.1.1 = {
 		birth = yes
 	}

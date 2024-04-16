@@ -207,7 +207,22 @@
 	culture = iuchi
 	motto = dynn_iuchi_motto
 }
-
+##### Vassals
+2107028 = { # Utaku vassal
+	name = dynn_naoko
+	culture = utaku
+	motto = dynn_naoko_motto
+}
+2107030 = { # Iuchi vassal
+	name = dynn_battue
+	culture = iuchi
+	motto = dynn_battue_motto
+}
+2107031 = { # Iuchi vassal
+	name = dynn_horiuchi
+	culture = iuchi
+	motto = dynn_horiuchi_motto
+}
 ##########################
 ##### Imperial families
 ##########################

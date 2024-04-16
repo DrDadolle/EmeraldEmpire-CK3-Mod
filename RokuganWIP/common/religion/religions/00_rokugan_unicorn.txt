@@ -1,7 +1,11 @@
-fortunism_religion = {
-	family = rf_rokugan
-	graphical_faith = dharmic_gfx
-	doctrine = eastern_hostility_doctrine
+##### Unicorn religions
+# 		faith lords_of_the_death
+
+
+unicorn_religion = {
+	family = rf_gaijin
+	graphical_faith = pagan_gfx
+	doctrine = pagan_hostility_doctrine
 
 	#Main Group
 	doctrine = doctrine_temporal_head
@@ -10,7 +14,7 @@ fortunism_religion = {
 	doctrine = doctrine_theocracy_lay_clergy
 
 	#Marriage
-	doctrine = doctrine_monogamy
+	doctrine = doctrine_polygamy
 	doctrine = doctrine_divorce_disallowed
 	doctrine = doctrine_bastardry_legitimization
 	doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -28,9 +32,6 @@ fortunism_religion = {
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
-
-	#Special Doctrine for Eastern Syncretism
-	doctrine = special_doctrine_is_eastern_faith
 	
 	#Allow pilgrimages
 	doctrine = doctrine_pilgrimage_encouraged
@@ -38,6 +39,7 @@ fortunism_religion = {
 	#Funeral tradition
 	doctrine = doctrine_funeral_cremation
 
+	#TODO change the virtues
 	traits = {
 		virtues = {
 			just
@@ -55,15 +57,7 @@ fortunism_religion = {
 		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 dualism_custom_1 zoroastrian_custom_1 zoroastrian_custom_2 buddhism_custom_1 buddhism_custom_2 buddhism_custom_3 buddhism_custom_4 taoism_custom_1 yazidi_custom_1 sunni_custom_2 sunni_custom_3 sunni_custom_4 muhakkima_1 muhakkima_2 muhakkima_4 muhakkima_5 muhakkima_6 judaism_custom_1 custom_faith_fp1_fenrir custom_faith_fp1_irminsul custom_faith_fp1_jormungandr custom_faith_fp1_odins_ravens custom_faith_fp1_runestone_moon custom_faith_fp1_thors_hammer custom_faith_fp1_valknut custom_faith_fp1_yggdrasil custom_faith_boromian_circles custom_faith_lotus custom_faith_aum_tibetan custom_faith_pentagram custom_faith_pentagram_inverted custom_faith_burning_bush custom_faith_allah custom_faith_gankyil custom_faith_eye_of_providence custom_faith_dove custom_faith_ichthys custom_faith_lamb custom_faith_black_sheep custom_faith_ankh custom_faith_chi_rho custom_faith_hamsa custom_faith_cool_s
 	}
 
-	holy_order_names = {
-		{ name = "holy_order_kuroiban" }
-		{ name = "holy_order_asako_inquisition" }
-	}
-
-	#TODO
-	#holy_order_maa = { mountaineer }
-
-
+	#TODO : change the localisation
 	localization = {
 		HighGodName = fortunism_high_god_name
 		HighGodName2 = fortunism_high_god_name
@@ -230,39 +224,21 @@ fortunism_religion = {
 	##TODO icon are placeholders
 	##TODO doctrines are placeholders too
 	faiths = {
-		seven_fortunes = {
-			color = { 0.2 0.9 0.2 }
-			icon = lamaism_buddhism
-			religious_head = d_rokugani_faith
+		lords_of_the_death = {
+			color = { 0.57 0.36 0.51 }
+			icon = vajrayana
 
-			holy_site = benten_seido
-			holy_site = jurojin_seido
-			holy_site = bishamon_seido
-			holy_site = hotei_seido
-			holy_site = daikoku_seido
-			#holy_site = ebisu_seido TODO
-			holy_site = fukurokujin_seido
+			holy_site = temple_of_death
 
-			doctrine = tenet_astrology
 			doctrine = tenet_reincarnation
-			doctrine = tenet_ritual_celebrations
-
-
-			doctrine = doctrine_clerical_succession_temporal_appointment
-		}
-		cult_amaterasu = {
-			color = { 1.0 0.75 0.0 }
-			icon = mahayana
-			religious_head = d_rokugani_faith
-
-			holy_site=amaterasu_temple
-
-			doctrine = tenet_astrology
-			doctrine = tenet_sun_worship #TODO adapt this tenet to make it less zunnist
-			doctrine = tenet_ritual_celebrations
-
+			doctrine = tenet_unrelenting_faith
+			doctrine = tenet_eastern_syncretism # To avoid being wyped by the classical rf_rokugan faiths
 
 			doctrine = doctrine_clerical_succession_temporal_appointment
+			
+			localization = {
+				#TODO
+			}
 		}
 	}
 }
