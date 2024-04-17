@@ -19,6 +19,7 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 
 ## short term goals
 - Check that Bushido tradition works :  Duels & Child Adoption
+- Check how kami_descendant trait reacts to both parents having one : random heritage, fixed based on alphabetic order ??? Crash ?
 - paint minor clans (Moth Clan north of Falcon Clan)
 - Paint some ronin lands & Brother hood to complete the map for now
 - count for LastHopeShinsei & some monks for the monasteries
@@ -40,6 +41,7 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - add culture title for kasuga : Kizoku
+- clean up of traits (like removing Hajji  from pilgrim traits)
 - Do as "sultanate" based on dynasty name but ONLY for duchy titles ????
 
 ## Futures Features & Nice to have
@@ -58,6 +60,7 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
  	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
 	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
+	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
 - Special protection against conquest for un-aligned/minor/imperial lands => Casus belli way more costly + lose of prestige ?
 - Special Phoenix champion succession
 - Phoenix Council of 5 special government

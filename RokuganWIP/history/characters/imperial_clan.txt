@@ -11,6 +11,7 @@
 	### Stats
 	
 	### Traits
+	trait = hantei_descendant
 	
 	### DNA
 	#TODO
@@ -58,6 +59,7 @@
 	trait = impatient
 	trait = wrathful
 	trait = callous
+	trait = hantei_descendant
 	
 	### DNA
 	#TODO
@@ -80,7 +82,7 @@
 	### Stats
 	
 	### Traits
-
+	trait = hantei_descendant
 	trait = beauty_good_2
 	
 	### DNA
@@ -93,6 +95,11 @@
 
 	1104.1.1 = {
 		birth = yes
+	}
+	1122.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:3000521 } # In love with Iuchi Shahai
+		}
 	}
 	1123.1.1 = {
 		effect = {

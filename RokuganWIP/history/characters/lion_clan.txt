@@ -16,6 +16,7 @@
 	trait = diligent
 	trait = logistician
 	trait = intellect_good_1
+	trait = akodo_descendant
 	
 	### DNA
 	##TODO
@@ -46,6 +47,7 @@
 	trait = brave
 	trait = ambitious
 	trait = reckless
+	
 	
 	### DNA
 	##TODO
@@ -301,6 +303,7 @@
 	### Traits
 	trait = education_learning_3
 	trait = patient
+	trait = shindoshi
 
 	1106.1.1 = {
 		birth = yes
@@ -351,7 +354,6 @@
 	##DNA
 	
 	##Family 
-	## TODO Asako Akari as lover
 
 	1075.1.1 = {
 		birth = yes

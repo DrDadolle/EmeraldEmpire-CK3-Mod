@@ -61,6 +61,7 @@
 	trait = cynical
 	trait = beauty_good_2
 	trait = lifestyle_blademaster
+	trait = doji_descendant
 	
 	### DNA
 	
@@ -95,6 +96,7 @@
 	trait = diligent
 	trait = beauty_good_1
 	trait = lifestyle_blademaster
+	trait = doji_descendant
 
 	1069.1.1 = {
 		birth = yes
@@ -471,6 +473,7 @@
 	trait = humble
 	trait = forgiving
 	trait = temperate
+	trait = shindoshi
 	
 	### DNA
 	
@@ -491,10 +494,12 @@
 	### Stats
 	
 	### Traits
+	trait = shindoshi
 	
 	### DNA
 	
 	### Family
+	father = 3000040 # Asahina Takamori
 
 	1097.1.1 = {
 		birth = yes

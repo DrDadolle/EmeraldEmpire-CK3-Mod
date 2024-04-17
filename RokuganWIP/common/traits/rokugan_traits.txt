@@ -3,28 +3,396 @@
 stressed = {}
 is_fat = {}
 
+### samurai lifestyle ? 
+# TODO like in SHogunate : painter, tea master, shinobi ??
+# TODO Shogunate 'Child of Adoption"'
 
-## Kami Traits
+
+### Shugenja Traits
+# Character can talk to the spirits and the kamis
+shindoshi = {
+	monthly_piety = 1
+	same_opinion = 5
+	learning = 3
+	#flag = lower_chance_of_dying_in_combat # Shindoshi are not killed often in battle ? Or Can't be on the battlefield ?
+	disables_combat_leadership = yes # Can't be on the battlefield ?
+	# prevent martial lifestyle ?
+
+	#group = sorcerer ? Magic ? Shindoshi ? TODO
+
+	birth=0.015 # 0.015% chance de be born with this trait 
+	random_creation=0.015 # 0% of new character have this ??
+	inherit_chance = 10 # 10% of chance to pass to the child
+	both_parent_has_trait_inherit_chance = 50 # 50% of chance to pass to the child if both parents have it
+
+	#TODO event when child with shindoshi is born ? Generate an elemental affinity ??
+
+	#TODO change icon
+	icon = {
+		desc = mystic.dds
+	}
+
+	ruler_designer_cost = 60
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_shindoshi_desc
+			}
+			desc = trait_shindoshi_desc
+		}
+	}
+
+}
+
+## Mahotsukai
+#TODO
+
+## Yogo Curse
+#TODO
+
+
+## Kami descendances Traits
 doji_descendant = {
-	category = fame #TODO faith ? fame ?
 
-	#TODO inheritance
-	#TODO block to one max kami descenant max ?
-	
-	attraction_opinion = 5
+	category = fame
+
+	#block other descendant traits
+	opposites = {
+		akodo_descendant
+		shinjo_descendant
+		hantei_descendant
+		bayushi_descendant
+		hida_descendant
+		shiba_descendant
+		togashi_descendant
+	}
+
 	legitimacy_gain_mult = 0.1
 	monthly_prestige = 0.1
-	genetic_constraint_all = beauty
-	
+	flag = initial_legitimacy_boost
+
 	# Always inherited
 	inherit_chance = 100
+	parent_inheritance_sex  = all
+	inherit_from_real_father = no
+
+	icon = {
+		desc = female_commander.dds
+	}
+
+	ruler_designer_cost = 100
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_doji_descendant_desc
+			}
+			desc = trait_doji_descendant_character_desc
+		}
+	}
+}
+
+akodo_descendant = {
+
+	category = fame
+
+	#block other descendant traits
+	opposites = {
+		doji_descendant
+		shinjo_descendant
+		hantei_descendant
+		bayushi_descendant
+		hida_descendant
+		shiba_descendant
+		togashi_descendant
+	}
+
+	legitimacy_gain_mult = 0.1
+	monthly_prestige = 0.1
+	flag = initial_legitimacy_boost
+
+	# Always inherited
+	inherit_chance = 100
+	parent_inheritance_sex  = all
+	inherit_from_real_father = no
 
 
 	icon = {
 		desc = female_commander.dds
 	}
 
-	ruler_designer_cost = 60
+	ruler_designer_cost = 100
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_doji_descendant_desc
+			}
+			desc = trait_doji_descendant_character_desc
+		}
+	}
+}
+
+shinjo_descendant = {
+
+	category = fame
+
+	#block other descendant traits
+	opposites = {
+		doji_descendant
+		akodo_descendant
+		hantei_descendant
+		bayushi_descendant
+		hida_descendant
+		shiba_descendant
+		togashi_descendant
+	}
+
+	legitimacy_gain_mult = 0.1
+	monthly_prestige = 0.1
+	flag = initial_legitimacy_boost
+
+	# Always inherited
+	inherit_chance = 100
+	parent_inheritance_sex  = all
+	inherit_from_real_father = no
+
+
+	icon = {
+		desc = female_commander.dds
+	}
+
+	ruler_designer_cost = 100
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_doji_descendant_desc
+			}
+			desc = trait_doji_descendant_character_desc
+		}
+	}
+}
+
+hantei_descendant = {
+
+	category = fame
+
+	#block other descendant traits
+	opposites = {
+		doji_descendant
+		akodo_descendant
+		shinjo_descendant
+		bayushi_descendant
+		hida_descendant
+		shiba_descendant
+		togashi_descendant
+	}
+
+	legitimacy_gain_mult = 0.5
+	monthly_prestige = 1.0
+	flag = initial_legitimacy_boost
+
+	# Always inherited
+	inherit_chance = 100
+	parent_inheritance_sex  = all
+	inherit_from_real_father = no
+
+
+	icon = {
+		desc = female_commander.dds
+	}
+
+	ruler_designer_cost = 100
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_doji_descendant_desc
+			}
+			desc = trait_doji_descendant_character_desc
+		}
+	}
+}
+
+bayushi_descendant = {
+
+	category = fame
+
+	#block other descendant traits
+	opposites = {
+		doji_descendant
+		akodo_descendant
+		shinjo_descendant
+		hida_descendant
+		hantei_descendant
+		shiba_descendant
+		togashi_descendant
+	}
+
+	legitimacy_gain_mult = 0.1
+	monthly_prestige = 0.1
+	flag = initial_legitimacy_boost
+
+	# Always inherited
+	inherit_chance = 100
+	parent_inheritance_sex  = all
+	inherit_from_real_father = no
+
+
+	icon = {
+		desc = female_commander.dds
+	}
+
+	ruler_designer_cost = 100
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_doji_descendant_desc
+			}
+			desc = trait_doji_descendant_character_desc
+		}
+	}
+}
+
+hida_descendant = {
+
+	category = fame
+
+	#block other descendant traits
+	opposites = {
+		doji_descendant
+		akodo_descendant
+		shinjo_descendant
+		hantei_descendant
+		bayushi_descendant
+		shiba_descendant
+		togashi_descendant
+	}
+
+	legitimacy_gain_mult = 0.1
+	monthly_prestige = 0.1
+	flag = initial_legitimacy_boost
+
+	# Always inherited
+	inherit_chance = 100
+	parent_inheritance_sex  = all
+	inherit_from_real_father = no
+
+
+	icon = {
+		desc = female_commander.dds
+	}
+
+	ruler_designer_cost = 100
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_doji_descendant_desc
+			}
+			desc = trait_doji_descendant_character_desc
+		}
+	}
+}
+
+shiba_descendant = { # Shiba Daimyo is rarely a direct descendant of Sir Shiba
+
+	category = fame
+
+	#block other descendant traits
+	opposites = {
+		doji_descendant
+		akodo_descendant
+		shinjo_descendant
+		hantei_descendant
+		bayushi_descendant
+		hida_descendant
+		togashi_descendant
+	}
+
+	legitimacy_gain_mult = 0.1
+	monthly_prestige = 0.1
+	flag = initial_legitimacy_boost
+
+	# Always inherited
+	inherit_chance = 100
+	parent_inheritance_sex  = all
+	inherit_from_real_father = no
+
+
+	icon = {
+		desc = female_commander.dds
+	}
+
+	ruler_designer_cost = 100
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_doji_descendant_desc
+			}
+			desc = trait_doji_descendant_character_desc
+		}
+	}
+}
+
+togashi_descendant = { # Togashi has no child, but this trait exist just in case
+
+	category = fame
+
+	#block other descendant traits
+	opposites = {
+		doji_descendant
+		akodo_descendant
+		shinjo_descendant
+		hantei_descendant
+		bayushi_descendant
+		hida_descendant
+		shiba_descendant
+	}
+
+	legitimacy_gain_mult = 0.1
+	monthly_prestige = 0.1
+	flag = initial_legitimacy_boost
+
+	# Always inherited
+	inherit_chance = 100
+	parent_inheritance_sex  = all
+	inherit_from_real_father = no
+
+
+	icon = {
+		desc = female_commander.dds
+	}
+
+	ruler_designer_cost = 100
 
 	desc = {
 		first_valid = {

@@ -12,7 +12,7 @@
 
 	
 	### Traits
-
+	trait = shinjo_descendant
 	
 	### DNA
 	##TODO
@@ -32,7 +32,7 @@
 
 	
 	### Traits
-
+	trait = shinjo_descendant
 	
 	### DNA
 	##TODO
@@ -56,6 +56,7 @@
 
 	
 	### Traits
+	trait = shinjo_descendant
 
 	
 	### DNA
@@ -80,6 +81,7 @@
 
 	
 	### Traits
+	trait = shinjo_descendant
 
 	
 	### DNA
@@ -153,12 +155,16 @@
 	##TODO
 	
 	### Family
-	father = 3000520 #Iuchi Shahai
-	##TODO Hantei Daisetsu as lover
+	father = 3000520 #Iuchi Daiyu
 	##TODO how to be solo Iuchi heir ???
 
 	1105.1.1 = {
 		birth = yes
+	}
+	1122.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:3001003 } # In love with Hantei Daisetsu
+		}
 	}
 }
 
