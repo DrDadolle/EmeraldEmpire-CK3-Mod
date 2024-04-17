@@ -1,4 +1,10 @@
 ﻿l_english:
+ # Kami descendant
  trait_kami_descendant:0 "Descendant of a founder Kami"
  trait_kami_descendant_desc:0 "This character is a direct descendant of one of the eight Kamis who fell in Ningendo. As such, they are the rightful leader of their vassals."
  trait_kami_descendant_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a direct descendant of one of the eight Kamis who fell in Ningendo. As such, [ROOT.GetCharacter.GetFirstNameNoTooltip] is the rightful leader of their vassals."
+ # shindoshi
+ trait_shindoshi:0 "Shindoshi"
+ trait_shindoshi_desc:0 "This character is a shindoshi, a priest and scribe, as well as the envoy of the fortunes and kami. They are able to create powerful spells by offering prayers."
+ trait_shindoshi_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] character is a shindoshi, a priest and scribe, as well as the envoy of the fortunes and kami. [ROOT.GetCharacter.GetFirstNameNoTooltip] is able to create powerful spells by offering prayers."
+
