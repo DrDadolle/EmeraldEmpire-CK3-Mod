@@ -6,6 +6,7 @@ hantei = {
 	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_staunch_traditionalists
 		tradition_isolationist
 		tradition_hereditary_hierarchy
@@ -31,6 +32,7 @@ otomo = {
 	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_staunch_traditionalists
 		tradition_legalistic
 		tradition_eye_for_an_eye
@@ -56,6 +58,7 @@ miya = {
 	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_equitable
 		tradition_xenophilic
 		tradition_language_scholars
@@ -81,6 +84,7 @@ seppun = {
 	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_staunch_traditionalists
 		tradition_strength_in_numbers
 		tradition_by_the_sword

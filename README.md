@@ -27,12 +27,14 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Paint & do Sea zones 
 - Rework provinces, so looks better
 - Add river map
+- provinces terrain (plains, etc...)
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 
 # Fixes to do
 - Soshi daimyo not generated
 - Change color of some textured emblmes
 - Kaito Lands not accessible, change mask of fog
+- Some counties are "coastal" even if they are near rivers...
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - add culture title for kasuga : Kizoku

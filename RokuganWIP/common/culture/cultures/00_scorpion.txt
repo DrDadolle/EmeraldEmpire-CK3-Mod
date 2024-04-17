@@ -6,10 +6,10 @@ bayushi = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_eye_for_an_eye
 		tradition_ruling_caste
 		tradition_welcoming
-		tradition_festivities
 	}
    
 	name_list = name_list_crane_family
@@ -32,9 +32,9 @@ shosuro = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_eye_for_an_eye
 		tradition_medicinal_plants
-		tradition_gardening
 		tradition_city_keepers
 	}
    
@@ -58,6 +58,7 @@ soshi = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_eye_for_an_eye
 		tradition_wedding_ceremonies
 		tradition_ruling_caste
@@ -83,6 +84,7 @@ yogo = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_isolationist
 		tradition_family_entrepreneurship
 		tradition_monastic_communities

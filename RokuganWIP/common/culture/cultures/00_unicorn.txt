@@ -6,7 +6,7 @@ shinjo = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-		tradition_pastoralists
+		tradition_bushido
 		tradition_culture_blending
 		tradition_horse_breeder
 		tradition_hunters
@@ -32,9 +32,9 @@ ide = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_esteemed_hospitality
 		tradition_culture_blending
-		tradition_language_scholars
 		tradition_xenophilic
 	}
    
@@ -58,6 +58,7 @@ utaku = {
 	language = language_rokugani
 	martial_custom = martial_custom_female_only
 	traditions = {
+		tradition_bushido
 		tradition_female_only_inheritance
 		tradition_culture_blending
 		tradition_horse_breeder
@@ -83,6 +84,7 @@ iuchi = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_culture_blending
 		tradition_horse_breeder
 		tradition_sacred_hunts
@@ -108,9 +110,9 @@ moto = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_horse_breeder
 		tradition_quarrelsome
-		tradition_hunters
 		tradition_polygamous
 	}
    

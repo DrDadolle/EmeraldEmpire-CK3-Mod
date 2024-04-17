@@ -6,8 +6,8 @@ akodo = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_martial_admiration
-		tradition_mystical_ancestors
 		tradition_staunch_traditionalists
 		tradition_formation_fighting
 		#TODO tabletop warrior
@@ -33,10 +33,10 @@ matsu = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_female_only_inheritance
 		tradition_reverence_for_veterans
 		tradition_quarrelsome
-		tradition_mystical_ancestors
 	}
    
 	name_list = name_list_crane_family
@@ -59,6 +59,7 @@ kitsu = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_pastoralists
 		tradition_martial_admiration
 		tradition_mystical_ancestors
@@ -84,9 +85,9 @@ ikoma = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_storytellers 
 		tradition_martial_admiration
-		tradition_mystical_ancestors
 		tradition_life_is_just_a_joke
 	}
    

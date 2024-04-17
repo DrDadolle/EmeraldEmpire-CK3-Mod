@@ -4,10 +4,8 @@
 ## Druzhina : single combat duel
 ##Futuwaa : sparring duels
 ## https://ck3.paradoxwikis.com/Duel
+## For now, it allows rival duels & adoption
 
-## For now, it is based on martial tradition
-## Maybe add more duel or stuff like that ????
-## Add noble adoption in it ??
 
 tradition_bushido = {
 	category = societal
@@ -19,6 +17,9 @@ tradition_bushido = {
 	}
 	
 	is_shown = {
+		NOT = { 
+				has_game_rule = no_adoption
+			}
 	}
 
 	can_pick = {
@@ -26,12 +27,13 @@ tradition_bushido = {
 	}
 
 	parameters = {
-		martial_education_more_valued = yes
-		prowess_traits_more_valued = yes
-		blademaster_trait_bonuses = yes
-		craven_and_content_traits_looked_down_upon = yes
-		knights_slightly_more_prone_to_injury = yes
+		#martial_education_more_valued = yes
+		#prowess_traits_more_valued = yes
+		#blademaster_trait_bonuses = yes
+		#craven_and_content_traits_looked_down_upon = yes
+		#knights_slightly_more_prone_to_injury = yes
 		can_duel_rivals = yes
+		allows_adoption = yes
 	}
 	
 	character_modifier = {

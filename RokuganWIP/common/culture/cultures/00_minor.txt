@@ -6,6 +6,7 @@
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_forest_folk
 		tradition_welcoming
 		tradition_vegetarian
@@ -31,6 +32,7 @@ moshi = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_female_only_inheritance
 		tradition_mountain_homes
 		tradition_charitable
@@ -56,7 +58,7 @@ kasuga = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-			
+			tradition_bushido
 	}
    
 	name_list = name_list_crane_family
@@ -79,9 +81,10 @@ tonbo = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-			tradition_esteemed_hospitality
-			tradition_mountain_homes
-			tradition_philosopher_culture
+		tradition_bushido
+		tradition_esteemed_hospitality
+		tradition_mountain_homes
+		tradition_philosopher_culture
 	}
    
 	name_list = name_list_crane_family
@@ -104,6 +107,7 @@ toritaka = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_warrior_monks # For combat shugenja ?
 			tradition_yokai_hunter # new custom tradition, mix of philosopher & hunter.
 	}
@@ -128,6 +132,7 @@ usagi = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_yokai_hunter # new custom tradition, mix of philosopher & hunter.
 			tradition_forbearing
 			tradition_adaptive_skirmishing
@@ -153,7 +158,8 @@ yoritomo = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-			tradition_praticed_pirates
+			tradition_bushido 
+			tradition_practiced_pirates
 			tradition_seafaring
 			tradition_maritime_mercantilism
 	}
@@ -178,6 +184,7 @@ tsuruchi = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_longbow_competitions
 			tradition_swords_for_hire
 	}
@@ -202,6 +209,7 @@ suzume = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_storytellers
 			tradition_hard_working #Keep it ?
 	}
@@ -226,7 +234,7 @@ ichiro = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-			tradition_isolationist
+			tradition_bushido
 			tradition_metal_craftsmanship
 			tradition_mountain_homes
 			tradition_stand_and_fight
@@ -252,6 +260,7 @@ nekoma = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_family_entrepreneurship # No idea, placeholder
 	}
    
@@ -275,6 +284,7 @@ komori = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_seafaring
 			tradition_philosopher_culture
 	}
@@ -299,6 +309,7 @@ shika = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_wedding_ceremonies
 			tradition_forest_folk
 	}
@@ -323,6 +334,7 @@ kaikoga = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_philosopher_culture #Placeholder for shugenja families
 	}
    
@@ -346,6 +358,7 @@ chuda = { # Defunct culture
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_philosopher_culture #Placeholder for shugenja families
 			tradition_eye_for_an_eye
 	}
@@ -370,6 +383,7 @@ kuma = { # Defunct culture
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_battlefield_looters # Why not
 			tradition_only_the_strong # Bears are big and strong and scary
 			tradition_forest_folk # their land were close to shinomen forest
@@ -395,6 +409,7 @@ kaeru = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+			tradition_bushido
 			tradition_battlefield_looters 
 			tradition_swords_for_hire
 	}

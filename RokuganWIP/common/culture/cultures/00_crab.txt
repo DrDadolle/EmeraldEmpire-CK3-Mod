@@ -6,8 +6,7 @@ hida = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
-		tradition_ruling_caste
-		tradition_castle_keepers
+		tradition_bushido
 		tradition_talent_acquisition
 		tradition_stalwart_defenders
 		tradition_warrior_culture
@@ -33,10 +32,9 @@ hiruma = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_adaptive_skirmishing
-		tradition_eye_for_an_eye
 		tradition_forbearing
-		tradition_hunters
 		tradition_warrior_culture
 	}
    
@@ -60,6 +58,7 @@ kuni = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_talent_acquisition
 		tradition_warrior_monks
 		tradition_warrior_culture
@@ -85,6 +84,7 @@ kaiu = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_metal_craftsmanship
 		tradition_castle_keepers
 		tradition_warrior_culture
@@ -110,9 +110,9 @@ yasuki = {
 	language = language_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
+		tradition_bushido
 		tradition_family_entrepreneurship
 		tradition_maritime_mercantilism
-		tradition_fishermen
 		tradition_warrior_culture
 	}
    
