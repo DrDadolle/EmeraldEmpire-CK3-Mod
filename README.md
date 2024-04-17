@@ -19,7 +19,6 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 
 ## short term goals
 - Check that Bushido tradition works :  Duels & Child Adoption
-- Check how kami_descendant trait reacts to both parents having one : random heritage, fixed based on alphabetic order ??? Crash ?
 - paint minor clans (Moth Clan north of Falcon Clan)
 - Paint some ronin lands & Brother hood to complete the map for now
 - count for LastHopeShinsei & some monks for the monasteries

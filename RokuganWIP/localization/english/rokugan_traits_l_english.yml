@@ -1,5 +1,4 @@
 ﻿l_english:
- # Crane traits
- trait_doji_descendant:0 "Descendant of Kami Doji"
- trait_doji_descendant_desc:0 "This character is a direct descendant of the Kami Doji, and a child of heaven blood. Kami Doji's children are beautiful, graceful and very cultured."
- trait_doji_descendant_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip], and a child of heaven blood. Kami Doji's children are beautiful, graceful and very cultured."
+ trait_kami_descendant:0 "Descendant of a founder Kami"
+ trait_kami_descendant_desc:0 "This character is a direct descendant of one of the eight Kamis who fell in Ningendo. As such, they are the rightful leader of their vassals."
+ trait_kami_descendant_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a direct descendant of one of the eight Kamis who fell in Ningendo. As such, [ROOT.GetCharacter.GetFirstNameNoTooltip] is the rightful leader of their vassals."
