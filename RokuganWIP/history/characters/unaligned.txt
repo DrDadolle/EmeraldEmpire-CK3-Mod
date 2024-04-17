@@ -1,0 +1,67 @@
+﻿#####################
+#	Monks
+#####################
+3004000 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "asako"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004001 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "togashi"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004002 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "kakita"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004003 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "shiba"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Ronins
+#####################
+3004100 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "cult_ancestors"
+	culture = "akodo"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+
+
+3004200 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "seven_fortunes"
+	culture = "kaeru"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}

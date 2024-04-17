@@ -11,6 +11,7 @@
 	### Stats
 	
 	### Traits
+	trait = education_learning_3
 	
 	### DNA
 	##TODO
@@ -126,7 +127,13 @@
 	culture = "yoritomo"
 	
 	### Stats
+	martial = 10
+	diplomacy = 12
 	### Traits
+	trait = education_martial_4
+	trait = ambitious
+	trait = brave
+	trait = patient
 	
 	### Family 
 
@@ -237,6 +244,7 @@
 	
 	### Stats
 	### Traits
+	trait = education_diplomacy_2
 	
 	### Family 
 

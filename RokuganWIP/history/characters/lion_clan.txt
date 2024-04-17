@@ -11,7 +11,11 @@
 	
 	### Traits
 	trait = education_martial_4
-	trait = brave
+	trait = patient
+	trait = content
+	trait = diligent
+	trait = logistician
+	trait = intellect_good_1
 	
 	### DNA
 	##TODO
@@ -38,7 +42,10 @@
 	
 	### Traits
 	trait = education_martial_4
+	trait = impatient
 	trait = brave
+	trait = ambitious
+	trait = reckless
 	
 	### DNA
 	##TODO
@@ -172,7 +179,10 @@
 	
 	### Traits
 	trait = education_martial_4
+	trait = impatient
+	trait = ambitious
 	trait = brave
+	trait = aggressive_attacker
 	
 	### DNA
 	##TODO
@@ -242,6 +252,7 @@
 	### Stats
 	
 	### Traits
+	trait = education_martial_3
 
 	1062.1.1 = {
 		birth = yes
@@ -288,6 +299,8 @@
 	### Stats
 	
 	### Traits
+	trait = education_learning_3
+	trait = patient
 
 	1106.1.1 = {
 		birth = yes
@@ -330,6 +343,10 @@
 	### Stats
 	
 	### Traits
+	trait = education_diplomacy_3
+	trait = ambitious
+	trait = vengeful
+	trait = impatient
 	
 	##DNA
 	

@@ -8,8 +8,14 @@
 	culture = "togashi"
 	
 	### Stats
+	learning = 15
+	prowess = 10
 
 	### Traits
+	trait = education_learning_4
+	trait = calm
+	trait = patient
+	trait = trusting
 	
 	### DNA
 	#TODO
@@ -58,6 +64,11 @@
 	### Stats
 
 	### Traits
+	trait = education_martial_4
+	trait = calm
+	trait = just
+	trait = trusting
+	trait = cautious_leader
 	
 	### DNA
 	#TODO
@@ -125,6 +136,8 @@
 	### Stats
 
 	### Traits
+	trait = education_intrigue_3
+	trait = diligent
 	
 	### DNA
 	#TODO
@@ -194,6 +207,10 @@
 	### Stats
 
 	### Traits
+	trait = education_learning_4
+	trait = cynical
+	trait = compassionate
+	trait = fickle
 	
 	### DNA
 	#TODO

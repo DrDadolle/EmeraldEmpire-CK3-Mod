@@ -1919,7 +1919,7 @@ e_rokugan = {
  }
  
  #TODO title of master of elements Isawa as landless duchy titles ???
- # Emperor Head of faith title, a la sunni_caliphate
+ # Emperor Head of faith title
 d_rokugani_faith = {
 	color = { 40 160 40 }
 	definite_form = yes

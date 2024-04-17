@@ -37,7 +37,7 @@
 	### Stats
 	
 	### Traits
-
+	trait = beauty_good_1
 
 	### Family
 
@@ -55,6 +55,9 @@
 	### Stats
 	
 	### Traits
+	trait = impatient
+	trait = wrathful
+	trait = callous
 	
 	### DNA
 	#TODO
@@ -77,6 +80,8 @@
 	### Stats
 	
 	### Traits
+
+	trait = beauty_good_2
 	
 	### DNA
 	#TODO
@@ -108,6 +113,11 @@
 	### Stats
 	
 	### Traits
+	trait = education_martial_4
+	trait = paranoid
+	trait = wrathful
+	trait = brave
+	trait = aggressive_attacker
 
 	1094.1.1 = {
 		birth = yes
@@ -138,6 +148,7 @@
 	### Stats
 	
 	### Traits
+	trait = education_intrigue_4
 
 	1074.1.1 = {
 		birth = yes
@@ -156,8 +167,29 @@
 	### Stats
 	
 	### Traits
+	trait = education_intrigue_4
+	trait = cynical
+	trait = deceitful
+	trait = just
 
 	1094.1.1 = {
+		birth = yes
+	}
+}
+
+3001051 = {
+	name = name_tetsua	# Miya Tetsua, imperiial governor of Kaeru Toshi
+	dynasty = 2100034 	# Miya
+	religion = "shinseism"
+	culture = "miya"
+	
+	### Stats
+	
+	### Traits
+	trait = education_stewardship_2
+
+
+	1083.1.1 = {
 		birth = yes
 	}
 }

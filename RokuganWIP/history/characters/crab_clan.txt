@@ -8,12 +8,8 @@
 	culture = "hida"
 	
 	### Stats
-	martial = 12
-	diplomacy = 5
-	intrigue = 4
-	stewardship = 8
-	learning = 6
-	prowess = 10
+	martial = 14
+	prowess = 14
 	
 	### Traits
 	trait = education_martial_4
@@ -44,7 +40,6 @@
 	culture = "hida"
 	
 	### Stats
-
 	
 	### Traits
 	trait = education_martial_3
@@ -76,7 +71,6 @@
 	female = yes
 	
 	### Stats
-
 	
 	### Traits
 	trait = education_martial_4
@@ -108,7 +102,6 @@
 	
 	### Stats
 
-	
 	### Traits
 	trait = education_martial_3
 	
@@ -187,7 +180,11 @@
 	### Stats
 	
 	### Traits
-
+	trait = education_martial_3
+	trait = patient	
+	trait = stubborn
+	trait = brave
+	trait = rough_terrain_expert
 	
 	### DNA
 	##TODO
@@ -232,7 +229,8 @@
 	### Stats
 	
 	### Traits
-
+	trait = education_learning_3 
+	trait = stubborn
 	
 	### DNA
 	##TODO
@@ -289,8 +287,11 @@
 	### Stats
 	
 	### Traits
+	trait = education_learning_4
+	trait = paranoid
+	trait = stubborn
+	trait = vengeful
 
-	
 	### DNA
 	##TODO
 

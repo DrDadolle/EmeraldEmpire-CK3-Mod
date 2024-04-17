@@ -10,18 +10,16 @@
 	sexuality = bisexual
 	
 	### Stats
-	martial = 8
-	diplomacy = 8
-	intrigue = 4
-	stewardship = 6
-	learning = 4
-	
+	martial = 10
+	diplomacy = 12
+	prowess = 15
+
 	### Traits
 	trait = education_martial_4
 	trait = brave
 	trait = calm
 	trait = beauty_good_2
-	trait = blademaster_2
+	trait = lifestyle_blademaster
 	trait = doji_descendant
 	
 	### DNA
@@ -57,10 +55,12 @@
 	### Stats
 	
 	### Traits
+	trait = education_martial_4
 	trait = ambitious
 	trait = arrogant
+	trait = cynical
 	trait = beauty_good_2
-	trait = blademaster_2
+	trait = lifestyle_blademaster
 	
 	### DNA
 	
@@ -87,10 +87,14 @@
 	culture = "doji"
 	
 	### Stats
-	
-	
+
 	### Traits
+	trait = education_diplomacy_4
+	trait = callous
+	trait = arbitrary
+	trait = diligent
 	trait = beauty_good_1
+	trait = lifestyle_blademaster
 
 	1069.1.1 = {
 		birth = yes
@@ -150,6 +154,7 @@
 	### Stats
 	
 	### Traits
+	trait = education_diplomacy_3
 	trait = calm
 	trait = clubfooted
 	
@@ -179,6 +184,11 @@
 	### Stats
 	
 	### Traits
+	trait = education_diplomacy_4
+	trait = content 
+	trait = just
+	trait = generous
+	#TODO changeling kitsune ?
 	trait = beauty_good_1
 	
 	### DNA
@@ -239,8 +249,11 @@
 	culture = "doji"
 
 	### Traits
+	trait = education_martial_4
 	trait = ambitious
 	trait = wrathful
+	trait = vengeful
+	trait = aggressive_attacker
 
 
 	1067.1.1 = {
@@ -261,7 +274,10 @@
 	culture = "doji"
 
 	### Traits
+	trait = education_diplomacy_1 
 	trait = content
+	trait = shy
+	trait = honest
 	
 	
 	#Family
@@ -302,6 +318,10 @@
 	### DNA
 	
 	### Family
+	trait = education_diplomacy_4
+	trait = just
+	trait = cynical
+	trait = gregarious
 	father = 3000022 #Kakita Toshimo
 
 	1077.1.1 = {
@@ -321,11 +341,15 @@
 	
 	### Stats
 	martial = 12
-	prowess = 20
+	prowess = 25
 	
 	### Traits
+	trait = education_martial_4
+	trait = lustful
+	trait = arrogant
+	trait = brave
 	trait = beauty_good_1
-	trait = blademaster_3
+	trait = lifestyle_blademaster
 	
 	### DNA
 	
@@ -443,6 +467,10 @@
 	### Stats
 	
 	### Traits
+	trait = education_learning_2
+	trait = humble
+	trait = forgiving
+	trait = temperate
 	
 	### DNA
 	
@@ -508,9 +536,18 @@
 	culture = "daidoji" 	
 	
 	### Stats
+	martial = 10
+	intrigue = 10
+	prowess = 10
 	
 	### Traits
-	
+	trait = education_martial_4
+	trait = deceitful
+	trait = patient
+	trait = vengeful
+	trait = flexible_leader
+	trait = physique_good_1
+
 	### DNA
 	
 	### Family

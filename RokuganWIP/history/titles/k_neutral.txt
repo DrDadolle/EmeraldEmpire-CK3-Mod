@@ -1,12 +1,78 @@
 #####################
 #	Kintani
 #####################
-c_kintani_province = {
+c_kintani_province = { # Shiro Kyotei
 	1090.1.1 = { 
 		liege = "d_doji"
 		holder = 3003000 #  Tsume Retsu
 	}
 	1120.4.4 = {
 		holder = 3003001 #  Tsume Takashi
+	}
+}
+
+c_north_kintani_province = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004000 #  PlaceHolder monk
+	}
+}
+
+c_kintani_mori_province = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004002 #  PlaceHolder monk
+	}
+}
+
+c_east_kintani_province = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004003 #  PlaceHolder monk
+	}
+}
+
+
+
+#####################
+#	West Dragon Lands (Nanashi mura)
+#####################
+
+c_nanashi_mura_province = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004100 #  PlaceHolder ronin
+	}
+}
+
+c_shinsei_monastery_rambo = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004001 #  PlaceHolder monk
+	}
+}
+
+c_toshi_rambo = { # Toshi Rambo
+	1123.1.1 = {
+		liege = "d_doji"
+		holder = 3000001 # Doji Hotaru
+	}
+}
+
+#####################
+#	City of the rich frog province province
+#####################
+
+d_rich_frog = {
+	1116.1.1 = {
+		liege = "k_imperial_families"
+		holder = 3001051 #  Miya Tetsua, imperiial governor of Kaeru Toshi
+	}
+}
+
+c_rich_frog = {
+	1116.1.1 = {
+		liege = "d_rich_frog"
+		holder = 3001051 #  Miya Tetsua, imperiial governor of Kaeru Toshi
 	}
 }

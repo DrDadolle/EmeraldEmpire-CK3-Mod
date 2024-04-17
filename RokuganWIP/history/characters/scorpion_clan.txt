@@ -10,6 +10,11 @@
 	### Stats
 	
 	### Traits
+	trait = education_learning_4
+	trait = zealous
+	trait = impatient
+
+	trait = intellect_good_1
 	
 	### DNA
 	##TODO
@@ -42,6 +47,8 @@
 	### Stats
 	
 	### Traits
+	trait = education_intrigue_4
+	trait = diligent
 	
 	### DNA
 	##TODO
@@ -66,6 +73,7 @@
 	### Stats
 	
 	### Traits
+	trait = education_intrigue_4
 	trait = beauty_good_3
 	
 	### DNA
@@ -97,6 +105,7 @@
 	### Stats
 	
 	### Traits
+	trait = education_intrigue_3
 	
 	### DNA
 	##TODO
@@ -150,6 +159,8 @@
 	### Stats
 	
 	### Traits
+	trait =  education_intrigue_4
+	trait = vengeful
 	
 	### DNA
 	##TODO
@@ -163,9 +174,9 @@
 	1100.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:3000321 reason = rival_historical  #Rival with his sister Bayushi Kachiko
+			}
 		}
 	}
-	
 }
 
 3000341 = {
