@@ -135,7 +135,54 @@
 		birth = yes
 	}
 }
+##### Vassal
+3003200 = {
+	name = name_aki 	# Nasu Aki  #TODO replace name
+	dynasty = 2103013 	# Nasu Vassal family 
+	religion = "shinseism"
+	culture = "shiba"
 
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+
+3003201 = {
+	name = name_aki 	# Sodona Aki  #TODO replace name
+	dynasty = 2103014 	# Sodona Vassal family 
+	religion = "shinseism"
+	culture = "shiba"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+
+3003202 = {
+	name = name_akiko 	# Iga Akiko  #TODO replace name
+	dynasty = 2103015 	# Iga Vassal family 
+	religion = "seven_fortunes"
+	culture = "shiba"
+	female = yes
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3003203 = {
+	name = name_aki 	# Koganshi Akiko  #TODO replace name
+	dynasty = 2103016 	# Koganshi Vassal family 
+	religion = "seven_fortunes"
+	culture = "shiba"
+	female = yes
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
 #####################
 #	Isawa
 #####################
@@ -318,7 +365,17 @@
 		birth = yes
 	}
 }
+##### Vassal
+3003220 = { #This vassal exists, but is landless for now...
+	name = name_aki 	# Shingon Aki  #TODO replace name
+	dynasty = 2103017 	# Shingon Vassal family 
+	religion = "seven_fortunes"
+	culture = "isawa"
 
+	1100.1.1 = {
+		birth = yes
+	}
+}
 #####################
 #	Asako
 #####################
@@ -406,6 +463,27 @@
 	religion = "seven_fortunes"
 	culture = "asako"
 	female = yes
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+##### Vassal
+3003240 = {
+	name = name_aki 	# Nani Aki  #TODO replace name
+	dynasty = 2103011 	# Nani Vassal family 
+	religion = "seven_fortunes"
+	culture = "asako"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3003241 = {
+	name = name_aki 	# Chukan Aki  #TODO replace name
+	dynasty = 2103012 	# Chukan Vassal family 
+	religion = "seven_fortunes"
+	culture = "asako"
 
 	1100.1.1 = {
 		birth = yes

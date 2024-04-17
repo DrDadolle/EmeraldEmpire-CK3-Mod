@@ -143,10 +143,10 @@
 	}
 }
 
-##### Random county holder for the Akodo
-3000110 = {
-	name = name_aki 	#  Akodo Aki  #TODO replace name
-	dynasty = 2100005 	# Akodo  #TODO replace by  like the dynn_morehei_doji
+##### Vassal
+3003100 = {
+	name = name_aki 	#  Shimizu Aki  #TODO replace name
+	dynasty = 2102005 	# Shimizu Vassal family 
 	religion = "cult_ancestors"
 	culture = "akodo"
 
@@ -155,18 +155,48 @@
 	}
 }
 
-3000111 = {
-	name = name_akiko	#  Akodo Akiko  #TODO replace name
-	dynasty = 2100005 	# Akodo #TODO replace by  like the dynn_morehei_doji
+3003101 = {
+	name = name_aki 	#  Ichime Aki  #TODO replace name
+	dynasty = 2102001 	# Ichime Vassal family 
 	religion = "cult_ancestors"
 	culture = "akodo"
-	female = yes
 
 	1100.1.1 = {
 		birth = yes
 	}
 }
 
+3003102 = {
+	name = name_aki 	#  Itagawa Aki  #TODO replace name
+	dynasty = 2102002 	# Itagawa Vassal family 
+	religion = "cult_ancestors"
+	culture = "akodo"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3003103 = {
+	name = name_aki 	#  katai Aki  #TODO replace name
+	dynasty = 2102003 	# katai Vassal family 
+	religion = "cult_ancestors"
+	culture = "akodo"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3003104 = {
+	name = name_aki 	#  Seizaku Aki  #TODO replace name
+	dynasty = 2102004 	# Seizaku Vassal family 
+	religion = "cult_ancestors"
+	culture = "akodo"
+
+	1100.1.1 = { # This dinasty doesn't exist in 1100, it exists in 1153 but the castle is already on the map... oops
+		birth = yes
+	}
+}
 #####################
 #	Matsu
 #####################
@@ -289,6 +319,18 @@
 	}
 }
 
+##### Vassal
+3003120 = {
+	name = name_aki 	#  Koritome Aki  #TODO replace name
+	dynasty = 2102006 	# Koritome Vassal family 
+	religion = "cult_ancestors"
+	culture = "matsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
 #####################
 #	Kitsu
 #####################
@@ -310,10 +352,10 @@
 	}
 }
 
-##### Random county holder for the Kitsu
-3000150 = {
-	name = name_aki 	#  Kitsu Aki  #TODO replace name
-	dynasty = 2100007 	# Kitsu  #TODO replace by  like the dynn_morehei_doji
+##### Vassal
+3003140 = {
+	name = name_aki 	#  Ise Aki  #TODO replace name
+	dynasty = 2102007 	# Ise Vassal family 
 	religion = "cult_ancestors"
 	culture = "kitsu"
 
@@ -322,9 +364,9 @@
 	}
 }
 
-3000151 = {
-	name = name_akiko	#  Kitsu Akiko  #TODO replace name
-	dynasty = 2100007 	# Kitsu #TODO replace by  like the dynn_morehei_doji
+3003141 = {
+	name = name_akiko 	#  Ise Aki  #TODO replace name
+	dynasty = 2102007 	# Ise Vassal family 
 	religion = "cult_ancestors"
 	culture = "kitsu"
 	female = yes
@@ -333,7 +375,6 @@
 		birth = yes
 	}
 }
-
 #####################
 #	Ikoma
 #####################
@@ -410,6 +451,17 @@
 	religion = "cult_ancestors"
 	culture = "ikoma"
 	female = yes
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+##### Vassal
+3003160 = {
+	name = name_aki 	# Hosokawa Aki  #TODO replace name
+	dynasty = 2102008 	# Hosokawa Vassal family 
+	religion = "cult_ancestors"
+	culture = "ikoma"
 
 	1100.1.1 = {
 		birth = yes

@@ -27,45 +27,36 @@ c_kenryu_province = {
 }
 
 c_shimizu_province = {
-	1090.1.1 = {
-		liege = "d_akodo"
-		holder = 3000103 # Akodo Daio
-	}
-	1123.1.1 = {
-		holder = 3000102 # Akodo Arasou
-	}
 	1123.3.1 = { 
-		holder = 3000101 # Akodo Toturi
+		liege = "d_akodo"
+		holder = 3003100 # Shimizu Aki #TODO change name
 	}
 }
 
 c_renga_province = {
-	1090.1.1 = {
-		liege = "d_akodo"
-		holder = 3000103 # Akodo Daio
-	}
 	1123.1.1 = {
-		holder = 3000101 # Akodo Toturi
+		liege = "d_akodo"
+		holder = 3003101 # Ichime Aki #TODO change name
 	}
 }
 
 c_henkyou_province = {
 	1123.1.1 = { 
-					liege = "d_akodo"
-					holder = 3000110 # TODO placeholder name
+		liege = "d_akodo"
+		holder = 3003102 # Itagawa Aki # TODO change name
 	}
 }
 
 c_oiku_province = {
 	1123.1.1 = { 
-					liege = "d_akodo"
-					holder = 3000111 # TODO placeholder name
+		liege = "d_akodo"
+		holder = 3003103 # Katai Aki # TODO change name
 	}
 }
 
 c_kokoro_province = {
 	1123.1.1 = { 
-					liege = "d_akodo"
-					holder = 3000111 # TODO placeholder name
+		liege = "d_akodo"
+		holder = 3003104 # Seizaku Aki # TODO change name
 	}
 }

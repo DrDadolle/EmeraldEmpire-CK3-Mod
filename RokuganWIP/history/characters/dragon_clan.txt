@@ -112,11 +112,20 @@
 		birth = yes
 	}
 }
+##### Vassal
+3003620 = { 
+	name = name_aki 	# Zurui Aki  #TODO replace name
+	dynasty = 2105018 	# Zurui Vassal family 
+	religion = "shinseism"
+	culture = "mirumoto"
 
-3000631 = {
-	name = name_akiko	#  Mirumoto Akiko  #TODO replace name
-	dynasty = 2100018 	# Mirumoto #TODO replace by  like the dynn_morehei_doji
-	female = yes
+	1100.1.1 = {
+		birth = yes
+	}
+}
+3003621 = { 
+	name = name_aki 	# Kouken Aki  #TODO replace name
+	dynasty = 2105019 	# Kouken Vassal family 
 	religion = "shinseism"
 	culture = "mirumoto"
 
@@ -195,6 +204,8 @@
 		birth = yes
 	}
 }
+##### Vassal
+#No vassal family (pre-1123)
 #####################
 #	Agasha
 #####################

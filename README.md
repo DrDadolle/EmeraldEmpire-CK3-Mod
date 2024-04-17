@@ -31,6 +31,7 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Add river map
 - provinces terrain (plains, etc...)
 - Add more characters 
+- vassal families
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 
 # Fixes to do

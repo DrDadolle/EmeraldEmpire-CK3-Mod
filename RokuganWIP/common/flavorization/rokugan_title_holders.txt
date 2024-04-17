@@ -28,7 +28,7 @@
 #############################################
 
 # Special Titles
-
+# Unicorn Title naming
 king_unicorn {
 	type = character
 	special = holder
@@ -45,14 +45,21 @@ duke_unicorn {
 	heritages = { heritage_unicorn }
 }
 
-#TODO : need special heritage tortoise ????
-#duke_tortoise {
-#	type = character
-#	special = holder
-#	tier = duchy
-#	priority = 300
-#	heritages = { heritage_unicorn }
-#}
+# Tortoise Title naming
+king_tortoise {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 300
+	heritages = { heritage_kasuga }
+}
+duke_tortoise {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 300
+	heritages = { heritage_kasuga }
+}
 
 ##### Imperial Family ######
 

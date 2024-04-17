@@ -25,13 +25,13 @@
 	}
 }
 
-
-##### Random county holder for the Yogo
-3000310 = {
-	name = name_aki 	#  Yogo Aki  #TODO replace name
-	dynasty = 2100016 	# Yogo  #TODO replace by  like the dynn_morehei_doji
+##### Vassal
+3003300 = {
+	name = name_aki 	#  Tansaku Aki  #TODO replace name
+	dynasty = 2104014 	# Tansaku Vassal family 
 	religion = "seven_fortunes"
 	culture = "yogo"
+
 	1100.1.1 = {
 		birth = yes
 	}
@@ -150,6 +150,17 @@
 		birth = yes
 	}
 }
+##### Vassal
+3003320 = {
+	name = name_aki 	#  Ugawa Aki  #TODO replace name
+	dynasty = 2104013 	# Ugawa Vassal family 
+	religion = "cult_ancestors"
+	culture = "bayushi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
 #####################
 #	Shosuro
 #####################
@@ -199,27 +210,28 @@
 		death = yes
 	}
 }
-##### Random county holder for the Shosuro
-3000350 = {
-	name = name_aki 	#  Shosuro Aki  #TODO replace name
-	dynasty = 2100014 	# Shosuro  #TODO replace by  like the dynn_morehei_doji
+##### Vassal
+3003340 = {
+	name = name_aki 	#  jitsuyoteki  Aki  #TODO replace name
+	dynasty = 2104015 	# jitsuyoteki  Vassal family 
 	religion = "cult_ancestors"
 	culture = "shosuro"
-	1100.1.1 = {
-		birth = yes
-	}
-}
-3000351 = {
-	name = name_akiko 	#  Shosuro Aki  #TODO replace name
-	dynasty = 2100014 	# Shosuro  #TODO replace by  like the dynn_morehei_doji
-	religion = "cult_ancestors"
-	culture = "shosuro"
-	female = yes
+
 	1100.1.1 = {
 		birth = yes
 	}
 }
 
+3003341 = {
+	name = name_aki 	#  Kochako  Aki  #TODO replace name
+	dynasty = 2104016 	# Kochako  Vassal family 
+	religion = "cult_ancestors"
+	culture = "shosuro"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
 #####################
 #	Soshi
 #####################
@@ -251,12 +263,13 @@
 		birth = yes
 	}
 }
-3000371 = {
-	name = name_akiko 	#  Soshi Aki  #TODO replace name
-	dynasty = 2100015 	# Soshi  #TODO replace by  like the dynn_morehei_doji
+##### Vassal
+3003360 = {
+	name = name_aki 	#  Nanbu  Aki  #TODO replace name
+	dynasty = 2104018 	# Nanbu  Vassal family 
 	religion = "seven_fortunes"
 	culture = "soshi"
-	female = yes
+
 	1100.1.1 = {
 		birth = yes
 	}

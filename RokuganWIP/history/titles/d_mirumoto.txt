@@ -23,14 +23,14 @@ c_gaien_province = {
 c_yakeishi_province = {
 	1111.1.1 = {
 		liege = "d_mirumoto"
-		holder = 3000631 #TODO placeholder count
+		holder = 3003620 # Zurui Aki # TODO change name
 	}
 }
 
 c_kousou_province = {
 	1111.1.1 = {
 		liege = "d_mirumoto"
-		holder = 3000630 #TODO placeholder count
+		holder = 3003621 # Kousou Aki # TODO change name
 	}
 }
 

@@ -31,10 +31,10 @@ c_azuma_province = {
 c_heigen_province = {
 	1082.1.1 = { 
 					liege = "d_matsu"
-					holder = 3000123 # Matsu Uniri
+					holder = 3003120 # Matsu Uniri
 	}
 	1100.1.1 = { 
-					holder = 3000122 # Matsu Hiroru
+					holder = 3003120 # Koritome Aki #TODO change name
 	}
 }
 

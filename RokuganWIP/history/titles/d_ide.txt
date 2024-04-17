@@ -16,6 +16,13 @@ c_garanto_province_unicorn = {
 c_eijitsu_province = {
 	1111.1.1 = {
 		liege = "d_ide"
-		holder = 3000550 # TODO placeholder count
+		holder = 3003540 # Hateru Aki # TODO replace name
+	}
+}
+
+b_shinomen_tower = {
+	1111.1.1 = {
+		liege = "c_eijitsu_province"
+		holder = 3003541 # Suio Aki # TODO replace name
 	}
 }

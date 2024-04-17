@@ -79,7 +79,39 @@
 	culture = ikoma
 	motto = dynn_ikoma_motto
 }
-
+##### Vassals
+2102001 = { # Akodo vassal
+	name = dynn_ichime
+	culture = akodo
+}
+2102002 = { # Akodo vassal
+	name = dynn_itagawa
+	culture = akodo
+}
+2102003 = { # Akodo vassal
+	name = dynn_katai
+	culture = akodo
+}
+2102004 = { # Akodo vassal
+	name = dynn_seizuka
+	culture = akodo
+}
+2102005 = { # Akodo vassal
+	name = dynn_shimizu
+	culture = akodo
+}
+2102006 = { # Matsu vassal
+	name = dynn_koritome
+	culture = matsu
+}
+2102007 = { # Kitsu vassal
+	name = dynn_ise
+	culture = kitsu
+}
+2102008 = { # Ikoma vassal
+	name = dynn_hosokawa
+	culture = ikoma
+}
 ##########################
 ##### Phoenix Clan
 ##########################
@@ -103,7 +135,35 @@
 	culture = kaito
 	motto = dynn_kaito_motto
 }
-
+##### Vassals
+2103011 = { # Asako vassal
+	name = dynn_nani
+	culture = asako
+}
+2103012 = { # Asako vassal
+	name = dynn_chukan
+	culture = asako
+}
+2103013 = { # Nasu vassal
+	name = dynn_nasu
+	culture = shiba
+}
+2103014 = { # Sodona vassal
+	name = dynn_sodona
+	culture = shiba
+}
+2103015 = { # Iga vassal
+	name = dynn_iga
+	culture = shiba
+}
+2103016 = { # Koganshi vassal
+	name = dynn_koganshi
+	culture = shiba
+}
+2103017 = { # Shingon vassal
+	name = dynn_shingon
+	culture = isawa
+}
 ##########################
 ##### Scorpion Clan
 ##########################
@@ -127,7 +187,31 @@
 	culture = yogo
 	motto = dynn_yogo_motto
 }
-
+##### Vassals
+2104013 = { # bayushi vassal
+	name = dynn_ugawa
+	culture = bayushi
+}
+2104014 = { # yogo vassal
+	name = dynn_tansaku
+	culture = yogo
+}
+2104015 = { # shosuro vassal
+	name = dynn_jitsuyoteki 
+	culture = shosuro
+}
+2104016 = { # shosuro vassal
+	name = dynn_kochako
+	culture = shosuro
+}
+2104017 = { # shosuro vassal
+	name = dynn_tokagure 
+	culture = shosuro
+}
+2104018 = { # soshi vassal
+	name = dynn_nanbu 
+	culture = soshi
+}
 ##########################
 ##### Dragon Clan
 ##########################
@@ -151,7 +235,15 @@
 	culture = agasha
 	motto = dynn_agasha_motto
 }
-
+##### Vassals
+2105018 = { # mirumoto vassal
+	name = dynn_zurui
+	culture = mirumoto
+}
+2105019 = { # mirumoto vassal
+	name = dynn_kouken
+	culture = mirumoto
+}
 ##########################
 ##### Crab Clan
 ##########################
@@ -247,6 +339,23 @@
 	name = dynn_horiuchi
 	culture = iuchi
 }
+2107032 = { # Ide vassal
+	name = dynn_suio
+	culture = ide
+}
+2107033 = { # Ide vassal
+	name = dynn_hateru
+	culture = ide
+}
+2107034 = { # Shinjo vassal
+	name = dynn_marta
+	culture = shinjo
+}
+2107035 = { # Moto vassal
+	name = dynn_onshigawa
+	culture = moto
+}
+#TODO Ujik dynasty !
 ##########################
 ##### Imperial families
 ##########################
