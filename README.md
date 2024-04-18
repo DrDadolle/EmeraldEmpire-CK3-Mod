@@ -18,7 +18,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
 ## short term goals
-- Check that Bushido tradition works :  Duels & Child Adoption
 - paint minor clans (Moth Clan north of Falcon Clan)
 - Paint some ronin lands & Brother hood to complete the map for now
 - count for LastHopeShinsei & some monks for the monasteries
@@ -29,12 +28,9 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - Rework provinces, so looks better
 - Add river map
 - provinces terrain (plains, etc...)
-- Add more characters 
-- vassal families
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 
 # Fixes to do
-- Soshi daimyo not generated
 - Change color of some textured emblmes
 - Kaito Lands not accessible, change mask of fog
 - Some counties are "coastal" even if they are near rivers... todo after all sea provinces mapped
@@ -43,9 +39,10 @@ Copy paste everything in your mod folder. Don't forget to update the path in Rok
 - add culture title for kasuga : Kizoku
 - clean up of traits (like removing Hajji  from pilgrim traits)
 - Do as "sultanate" based on dynasty name but ONLY for duchy titles ????
+- update holy_order decisions & dynasty decisions (taken from shogunate)
 
 ## Futures Features & Nice to have
-- Remove AI Cadet branches
+- Remove AI Cadet branches => Working ?
 - Seppuku as  part of "Bushido tradition". Special decision if "dishonored"
 - Painting Hair White decision for crane cultures
 - reduce size of domain that can be kept (à la AGOT mod), because map is so small (~10 counties per kindgom)

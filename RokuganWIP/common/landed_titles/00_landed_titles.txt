@@ -37,6 +37,9 @@ e_rokugan = {
                  b_never_sleeps_port = {
                      province = 7
                  }
+                 b_north_shinkyou = {
+                    province = 419
+                 }
              }
 			 
 			 c_anshin_province = {
@@ -161,6 +164,9 @@ e_rokugan = {
                  }
 				 b_water_music_village = {
                      province = 30
+                 }
+                 b_uebi_marshes = {
+                    province = 395
                  }
 				 
              }
@@ -1768,22 +1774,158 @@ e_rokugan = {
 				 }
 			}
 		}
-		d_toritaka = {
-			 color = { 50 120 153 }
-			 capital = c_toritaka_province
-			 
-			 c_toritaka_province = {
-				 color = { 50 120 153 }
-
-				 b_shiro_toritaka = {
-					 province = 346
-				 }
-				 b_kyuden_toketsu = {
-					 province = 347
-				 }
-			}
-		}
+		
+        
 	}
+
+    #######################
+	###### West Shinomen lands
+	######### adding non-canon kingdom to proper display counties as vassal of the emperor
+    k_west_shinomen_mori = {
+        d_kaikoga= {
+            color = { 163 223 135 }
+            capital = c_kaikoga_province
+            
+            c_kaikoga_province = {
+                color = { 50 120 153 }
+
+                b_shiro_kaikoga = {
+                    province = 406
+                }
+           }
+       }
+       d_toritaka = {
+            color = { 50 120 153 }
+            capital = c_toritaka_province
+            
+            c_toritaka_province = {
+                color = { 50 120 153 }
+
+                b_shiro_toritaka = {
+                    province = 346
+                }
+                b_kyuden_toketsu = {
+                    province = 347
+                }
+             }
+         }
+         d_west_shinomen_monasteries= {
+            color = { 83 55 35 }
+            
+            c_west_shinomen_monastery_1 = {
+                color = { 83 55 35 }
+
+                b_west_shinomen_monastery_1 = {
+                    province = 404
+                }
+             }
+             c_west_shinomen_monastery_2 = {
+                color = { 123 63 22 }
+
+                b_west_shinomen_monastery_2 = {
+                    province = 405
+                }
+             }
+             c_west_shinomen_monastery_3 = {
+                color = { 160 133 115 }
+
+                b_west_shinomen_monastery_3 = {
+                    province = 407
+                }
+             }
+             c_west_shinomen_monastery_4 = {
+                color = { 91 61 41}
+
+                b_west_shinomen_monastery_4 = {
+                    province = 408
+                }
+             }
+         }
+    }
+
+        #######################
+	###### South/East Shinomen lands
+	######### adding non-canon kingdom to proper display counties as vassal of the emperor
+    k_south_east_shinomen_mori = {
+        d_south_shinomen= {
+            color = { 83 55 35 }
+            capital = c_south_shinomen_ronin_2
+
+            c_south_shinomen_monastery_1 = {
+                color = { 133 119 108 }
+                b_south_shinomen_monastery_1 = {
+                    province = 412
+                }
+             }
+
+             c_south_shinomen_ronin_1 = {
+                color = { 103 49 12 }
+                b_south_shinomen_ronin_1 = {
+                    province = 413
+                }
+             }
+
+             c_south_shinomen_ronin_2 = {
+                color = { 152 98 62 }
+                b_south_shinomen_ronin_2 = {
+                    province = 414
+                }
+                b_cherry_blossom_village = {
+                    province = 415
+                }
+             }
+
+             c_south_shinomen_monastery_2 = {
+                color = { 153 118 94 }
+                b_south_shinomen_monastery_2 = {
+                    province = 416
+                }
+             }
+
+             c_south_shinomen_ronin_3 = {
+                color = { 73 41 20 }
+                b_south_shinomen_ronin_3 = {
+                    province = 417
+                }
+             }
+        }
+        d_ronin_central = {
+            color = { 139 80 18 }
+            capital = c_central_lands_ronin_4
+
+            c_central_lands_ronin_1 = {
+                color = { 69 42 14 }
+
+                b_central_lands_ronin_1  = {
+                    province = 400
+                }
+            }
+
+            c_central_lands_ronin_2 = {
+                color = { 128 67 2 }
+
+                b_central_lands_ronin_2  = {
+                    province = 401
+                }
+            }
+
+            c_central_lands_ronin_3 = {
+                color = { 92 75 56 }
+
+                b_central_lands_ronin_3  = {
+                    province = 402
+                }
+            }
+
+            c_central_lands_ronin_4 = {
+                color = { 139 80 18 }
+
+                b_central_lands_ronin_4  = {
+                    province = 403
+                }
+            }
+        }
+    }
 		
 	#######################
 	###### Un-aligned lands
@@ -1884,36 +2026,36 @@ e_rokugan = {
 		}
 		d_ronin_south_west = {
 			color = { 103 74 41 }
-				 capital = c_daidoji_yukan_see
+			capital = c_daidoji_yukan_see
 				 
-				c_daidoji_yukan_see = {
-					 color = { 103 74 41 }
-	 
-					 b_daidoji_yukan_see = {
-						 province = 328
-					 }
-				}
-				c_shinsei_monastery_yukan_see = {
-					 color = { 183 152 121 }
-	 
-					 b_shinsei_monastery_yukan_see = {
-						 province = 329
-					 }
-				}
-				c_conflagration_temple = {
-					 color = { 70 57 43 }
-	 
-					 b_conflagration_temple = {
-						 province = 330
-					 }
-				}
-				c_shinden_kasai = {
-					 color = { 52 35 17 }
-	 
-					 b_shinden_kasai = {
-						 province = 331
-					 }
-				}
+            c_daidoji_yukan_see = {
+                    color = { 103 74 41 }
+    
+                    b_daidoji_yukan_see = {
+                        province = 328
+                    }
+            }
+            c_shinsei_monastery_yukan_see = {
+                    color = { 183 152 121 }
+    
+                    b_shinsei_monastery_yukan_see = {
+                        province = 329
+                    }
+            }
+            c_conflagration_temple = {
+                    color = { 70 57 43 }
+    
+                    b_conflagration_temple = {
+                        province = 330
+                    }
+            }
+            c_shinden_kasai = {
+                    color = { 52 35 17 }
+    
+                    b_shinden_kasai = {
+                        province = 331
+                    }
+            }
 		}
 	}
  }

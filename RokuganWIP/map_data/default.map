@@ -72,12 +72,19 @@ impassable_mountains = LIST { 312 }
 
 # Spine of the world mountains 
 impassable_mountains = RANGE { 313 315 }
+impassable_mountains = LIST { 409 410 }
 
 # Isawa mori
 impassable_mountains = LIST { 316 }
 
 # Wall of the north
 impassable_mountains = LIST { 317 }
+
+# uninhabited_islands
+impassable_mountains = LIST { 411 }
+
+#Suzume Mountains
+impassable_mountains = LIST { 418 }
 
 ############
 # WASTELAND

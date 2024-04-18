@@ -27,12 +27,8 @@ tradition_bushido = {
 	}
 
 	parameters = {
-		#martial_education_more_valued = yes
-		#prowess_traits_more_valued = yes
-		#blademaster_trait_bonuses = yes
-		#craven_and_content_traits_looked_down_upon = yes
-		#knights_slightly_more_prone_to_injury = yes
 		can_duel_rivals = yes
+		can_use_sparring_duel = yes
 		allows_adoption = yes
 	}
 	

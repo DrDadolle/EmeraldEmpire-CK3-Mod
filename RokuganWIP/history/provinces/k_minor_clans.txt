@@ -179,6 +179,20 @@
 	religion = seven_fortunes
 	holding = castle_holding
 }
+##d_toritaka ###################################
+###c_toritaka_province
+346 = {		#b_shiro_toritaka
+	culture = toritaka
+	religion = seven_fortunes
+	holding = castle_holding
+}
+##d_kaikoga ###################################
+###c_kaikoga_province
+406 = {		#b_shiro_kaikoga
+	culture = kaikoga
+	religion = seven_fortunes
+	holding = castle_holding
+}
 #castle_holding
 #church_holding
 #city_holding

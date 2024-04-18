@@ -15,6 +15,10 @@
  
  
  #======
+ rokugan_head_of_faith_male:0 "Son of Heaven"
+ rokugan_head_of_faith_female:0 "Daughter of Heaven"
+
+
  rokugan_barony_republic:0 "City"
  rokugan_empire_republic:0 "Government"
 
@@ -57,6 +61,8 @@
  #Unicorn special cultural name
  rokugan_king_unicorn:0 "Khan of Khans"
  rokugan_duke_unicorn:0 "Khan"
+ rokugan_king_tortoise:0 "Kizoku"
+ rokugan_duke_tortoise:0 "Kizuko"
  
  
  # General names

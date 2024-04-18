@@ -19,7 +19,7 @@
 			}
 		}
 
-		# Shogunate: prevent nonsense cadet branches
+		# Rokugan: prevent nonsense cadet branches
 
 		house.house_head.current_military_strength > root.current_military_strength
 	}
@@ -115,7 +115,7 @@
 
 	effect = {
 
-		# Shogunate: Kamon CoA
+		# Rokugan: Kamon CoA
 
 		house = {
 			save_scope_as = former_house
@@ -138,7 +138,7 @@
 				}
 			}
 		}
-		title_to_kamon_coa_effect = yes
+		#title_to_kamon_coa_effect = yes
 
 		add_character_flag = {
 			flag = shogunate_recently_create_cadet_branch
@@ -217,7 +217,7 @@
 		# we don't want AI to split from their House unless they dislike their house head
 		modifier = {
 			factor = 0
-			government_has_flag = government_is_clan
+			government_has_flag = government_is_feudal
 			opinion = {
 				target = house.house_head
 				value >= -50

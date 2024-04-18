@@ -27,6 +27,11 @@
 	religion = seven_fortunes
 	holding = castle_holding
 }
+419 = { #b_north_shinkyou
+	culture = asahina
+	religion = seven_fortunes
+	holding = none
+}
 ###c_anshin_province
 8 = {		#b_wall_above_ocean
 	culture = asahina
@@ -162,6 +167,11 @@
 	culture = daidoji
 	religion = seven_fortunes
 	holding = castle_holding
+}
+395 = {		#uebi_marshes
+	culture = daidoji
+	religion = seven_fortunes
+	holding = none
 }
 ###c_ichigun_province
 33 = {		#b_daidoji_estate

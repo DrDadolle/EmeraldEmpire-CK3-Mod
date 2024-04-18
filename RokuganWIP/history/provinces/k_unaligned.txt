@@ -86,7 +86,92 @@
 	religion = shinseism
 	holding = church_holding
 }
-
+##d_ronin_central ###################################
+###c_central_lands_ronin_1
+400 = {		#b_central_lands_ronin_1
+	culture = bayushi
+	religion = cult_ancestors
+	holding = tribal_holding
+}
+###c_central_lands_ronin_2
+401 = {		#b_central_lands_ronin_2
+	culture = bayushi
+	religion = cult_ancestors
+	holding = tribal_holding
+}
+###c_central_lands_ronin_3
+402 = {		#b_central_lands_ronin_3
+	culture = daidoji
+	religion = seven_fortunes
+	holding = tribal_holding
+}
+###c_central_lands_ronin_4
+403 = {		#b_central_lands_ronin_4
+	culture = daidoji
+	religion = seven_fortunes
+	holding = tribal_holding
+}
+##d_west_shinomen_monasteries ###################################
+###c_west_shinomen_monastery_1
+404 = {		#b_west_shinomen_monastery_1
+	culture = toritaka
+	religion = shinseism
+	holding = church_holding
+}
+###c_west_shinomen_monastery_2
+405 = {		#b_west_shinomen_monastery_2
+	culture = toritaka
+	religion = shinseism
+	holding = church_holding
+}
+###c_west_shinomen_monastery_3
+407 = {		#b_west_shinomen_monastery_3
+	culture = toritaka
+	religion = shinseism
+	holding = church_holding
+}
+###c_west_shinomen_monastery_4
+408 = {		#b_west_shinomen_monastery_4
+	culture = ide
+	religion = shinseism
+	holding = church_holding
+}
+##d_south_shinomen ###################################
+###c_south_shinomen_monastery_1
+412 = {		#b_south_shinomen_monastery_1
+	culture = hida
+	religion = shinseism
+	holding = church_holding
+}
+###c_south_shinomen_ronin_1
+413 = {		#b_south_shinomen_ronin_1
+	culture = hida
+	religion = seven_fortunes
+	holding = tribal_holding
+}
+###c_south_shinomen_ronin_2
+414 = {		#b_south_shinomen_ronin_2
+	culture = toritaka
+	religion = seven_fortunes
+	holding = tribal_holding
+}
+415 = {		#b_cherry_blossom_village
+	culture = toritaka
+	religion = seven_fortunes
+	holding = city_holding
+}
+###c_south_shinomen_monastery_2
+416 = {		#b_south_shinomen_monastery_2
+	culture = hida
+	religion = shinseism
+	holding = church_holding
+}
+###c_south_shinomen_ronin_3
+417 = {		#b_south_shinomen_ronin_3
+	culture = hida
+	religion = seven_fortunes
+	holding = tribal_holding
+}
 #castle_holding
 #church_holding
 #city_holding

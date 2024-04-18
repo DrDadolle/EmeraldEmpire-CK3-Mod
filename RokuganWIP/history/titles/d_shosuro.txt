@@ -22,13 +22,13 @@ c_kawa_province = {
 c_ryoko_province = {
 	1123.1.1 = {
 		liege = "d_shosuro"
-		holder = 3003540 # jitsuyoteki  Aki # TODO replace name
+		holder = 3003340 # jitsuyoteki  Aki # TODO replace name
 	}
 }
 
 c_kakushikoto_province = {
 	1123.1.1 = {
 		liege = "d_shosuro"
-		holder = 3003541 # Kochako Aki # TODO replace name
+		holder = 3003341 # Kochako Aki # TODO replace name
 	}
 }
