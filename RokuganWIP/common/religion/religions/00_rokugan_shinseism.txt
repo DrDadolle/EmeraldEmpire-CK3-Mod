@@ -233,6 +233,8 @@ shinseism_religion = {
 			doctrine = tenet_adaptive
 			doctrine = tenet_inner_journey
 			doctrine = tenet_monasticism
+
+			religious_head = d_rokugani_faith
 			
 			##TODO to keep ?
 			#Special Doctrine for Eastern Syncretism
@@ -255,6 +257,9 @@ shinseism_religion = {
 			doctrine = tenet_adaptive
 			doctrine = tenet_inner_journey
 			doctrine = tenet_pacifism
+
+			# do not recognize the Son of Heaven
+			doctrine = doctrine_no_head
 			
 			
 			#TODO No special doctrine => is heresy ??
