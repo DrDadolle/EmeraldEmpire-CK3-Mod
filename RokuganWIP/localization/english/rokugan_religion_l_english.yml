@@ -16,8 +16,8 @@
  # High God
  fortunism_high_god_name:0 "Amaterasu"
  fortunism_high_god_name_possessive:0 "Amaterasu's"
- fortunism_high_god_name_alternate:0 "fortunism_high_god_name_alternate"
- fortunism_high_god_name_alternate_possessive:0 "fortunism_high_god_name_alternate_possessive"
+ fortunism_high_god_name_alternate:0 "Lady Sun"
+ fortunism_high_god_name_alternate_possessive:0 "Lady Sun's"
  #HealthGod
  fortunism_health_god_name:0 "Jurojin"
  fortunism_health_god_name_possessive:0 "Jurojin's"
@@ -86,8 +86,8 @@
 # High God
  ancestor_high_god_name:0 "Hantei"
  ancestor_high_god_name_possessive:0 "Hantei's"
- ancestor_high_god_name_alternate:0 "Amaterasu"
- ancestor_high_god_name_alternate_possessive:0 "Amaterasu's"
+ ancestor_high_god_name_alternate:0 "The First Emperor"
+ ancestor_high_god_name_alternate_possessive:0 "The First Emperor's"
  #Creator
  ancestor_creator_god_name:0 "Amaterasu"
  ancestor_creator_god_name_possessive:0 "Amaterasu's"
@@ -150,5 +150,55 @@
  ancestor_positive_afterlife:0 "Realm of Blessed Ancestors"
  ancestor_negative_afterlife:0 "Jigoku"
  
- 
+  ############################
+ # Shinseism Religion
+ shinseism_religion:0 "Shinseism"
+ shinseism_religion_adj:0 "Shinseism"
+ shinseism_religion_adherent:0 "Shinseist"
+ shinseism_religion_adherent_plural:0 "Shinseists"
+ shinseism_religion_desc:0 "Shinseism , the philosophy of the Five Rings, was the religion and philosophy devoted to the teachings of Shinsei. Its lessons came from the Tao of Shinsei, the written record of Shinsei's teachings across Rokugan. "
+
+ # shinseism Faith
+ shinseism:0 "Shinseism"
+ shinseism_adj:0 "Shinseism"
+ shinseism_adherent:0 "Shinseist"
+ shinseism_adherent_plural:0 "Shinseists"
+ shinseism_desc:0 "Shinseism , the philosophy of the Five Rings, was the religion and philosophy devoted to the teachings of Shinsei. Its lessons came from the Tao of Shinsei, the written record of Shinsei's teachings across Rokugan."
+
+ # Perfect Earth Sect Faith
+ perfect_earth_sect:0 "Shinseism"
+ perfect_earth_sect_adj:0 "Shinseism"
+ perfect_earth_sect_adherent:0 "Shinseist"
+ perfect_earth_sect_adherent_plural:0 "Shinseists"
+ perfect_earth_sect_desc:0 "The Perfect Land was a sect of the Brotherhood which taught that people did not have to learn any difficult practices or cultivate merit within themselves. Any who called on Shinsei the Little Teacher, chanting the phrase Shoshi ni kie would be freed from the cycle of rebirth. They said they would find enlightenment after death, in the paradise they said Shinsei had created for them. The sect did not tolerate worship of the Fortunes or even the ancestors."
+
+ # High God
+ shinseism_high_god_name:0 "Shinsei"
+ shinseism_high_god_name_possessive:0 "Shinsei's"
+ shinseism_high_god_name_alternate:0 "The Little Teacher"
+ shinseism_high_god_name_alternate_possessive:0 "The Little Teacher's"
+
+ shinseism_house_of_worship:0 "Monastery"
+ shinseism_house_of_worship_plural:0 "Monasteries"
+ shinseism_religious_symbol:0 "Crow"
+ shinseism_religious_text:0 "Tao of Shinsei"
+ shinseism_religious_head_title:0 "shinseism_religious_head_title"
+ shinseism_religious_head_title_name:0 "shinseism_religious_head_title_name"
+ shinseism_devotee_male:0 "shinseism_devotee_male"
+ shinseism_devotee_male_plural:0 "shinseism_devotee_male_plural"
+ shinseism_devotee_female:0 "shinseism_devotee_female"
+ shinseism_devotee_female_plural:0 "shinseism_devotee_female_plural"
+ shinseism_devotee_neuter:0 "shinseism_devotee_neuter"
+ shinseism_devotee_neuter_plural:0 "shinseism_devotee_neuter_plural"
+ shinseism_priest_male:0 "shinseism_priest_male"
+ shinseism_priest_male_plural:0 "shinseism_priest_male_plural"
+ shinseism_priest_female:0 "shinseism_priest_female"
+ shinseism_priest_female_plural:0 "shinseism_priest_female_plural"
+ shinseism_priest_neuter:0 "shinseism_priest_neuter"
+ shinseism_priest_neuter_plural:0 "shinseism_priest_neuter_plural"
+ shinseism_alternate_priest_term_plural:0 "shinseism_alternate_priest_term_plural"
         
+#Perfect lands sect doesn't recognize fortunes
+ # Others
+ religion_perfect_land_sect_gods:0 "religion_perfect_land_sect_gods"
+ religion_perfect_land_sect_gods_2:0 "religion_perfect_land_sect_gods_2"

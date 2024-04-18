@@ -247,3 +247,20 @@ c_toritaka_province = {
 		holder = 3002080 # TODO placeholder
 	}
 }
+
+#####################
+#	Kaikoga
+#####################
+d_kaikoga = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3002110 # Kaikoga Tsukasa
+	}
+}
+
+c_kaikoga_province = {
+	1123.1.1 = {
+		liege = "d_kaikoga"
+		holder = 3002110 # Kaikoga Tsukasa
+	}
+}

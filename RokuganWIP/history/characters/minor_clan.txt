@@ -257,6 +257,28 @@
 	}
 }
 #####################
+#	Kaikoga
+#####################
+3002110 = {
+	name = name_tsukasa 	# Kaikoga Tsukasa, fanon daimyo of 1123
+	dynasty = 2100114 	# kaikoga
+	religion = "seven_fortunes"
+	culture = "kaikoga"
+	female = yes
+	
+	### Stats
+	### Traits
+	trait = education_learning_3
+	trait = shindoshi
+	
+	### Family 
+
+	1104.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
 #	Komori
 #####################
 #No komori for now
