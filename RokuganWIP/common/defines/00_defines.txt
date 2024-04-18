@@ -399,8 +399,8 @@ NCharacterOpinion = {
 	CONCUBINIST = 0
 
 	# What penalty to give when at zero culture acceptance. Scales down to 0 at 100% acceptance. So -10 would be -10 at 0%, -5 at 50%, 0 at 100%
-	ZERO_CULTURE_ACCEPTANCE_SAME_REALM = -30
-	ZERO_CULTURE_ACCEPTANCE = -15
+	ZERO_CULTURE_ACCEPTANCE_SAME_REALM = -40
+	ZERO_CULTURE_ACCEPTANCE = -20
 	CULTURE_ACCEPTANCE_MULT_KNOWS_LANGUAGE = 0.5 # The penalty is multiplied by this amount if the target knows the lanauge of the opinion haver's culture
 
 	SAME_TRAIT = 5
@@ -454,7 +454,7 @@ NCharacterOpinion = {
 	NON_RIGHTFUL_LIEGE_LEVY_MULT = 0.5 					# Tax mult when non-rightful liege
 	PARTIALLY_NON_RIGHTFUL_LIEGE_OPINION = -5 			# Opinion penalty for being non-rightful liege
 	NON_RIGHTFUL_LIEGE_OPINION = -5						# Opinion penalty for being partially non-rightful liege
-	MAX_DUCHIES_BEFORE_PENALTY = 2						# How many duchies are vassals fine with you having? If you're a duke, they don't care; only if you're king or above
+	MAX_DUCHIES_BEFORE_PENALTY = 1						# How many duchies are vassals fine with you having? If you're a duke, they don't care; only if you're king or above
 	TOO_MANY_DUCHIES_OPINION = -15						# Penalty per duchy too many
 	COUNT_LIEGE_HOLDS_MY_DUCHY = -25					# Penalty with count vassals for whom you hold their dejure duchy (and you're above duchy tier)
 	VASSAL_SIZE_ANGER_THRESHOLD = 0.3						# Ratio of counties in vassal's realm (duke or above) compared to liege's full realm in order for the vassal to get angry at liege
@@ -904,7 +904,7 @@ NDomain = {
 	ABOVE_LIMIT_TAX_INCOME_PENALTY = 0.2		# How much tax income from domain is reduced per holding over the limit
 	ABOVE_LIMIT_MAX_TAX_INCOME_PENALTY = 1		# How much tax income from domain can be reduced at most
 	HOLDING_GRACE_PERIOD = 365					# How many days do newly gained holdings not count towards the domain size for the purposes of penalties (but also not produce any levies)
-	STEWARDSHIP_SKILL_FOR_DOMAIN_LIMIT_INCREASE = 6	# domain limit += floor( <stewardship skill> / STEWARDSHIP_SKILL_FOR_DOMAIN_LIMIT_INCREASE )
+	STEWARDSHIP_SKILL_FOR_DOMAIN_LIMIT_INCREASE = 7	# domain limit += floor( <stewardship skill> / STEWARDSHIP_SKILL_FOR_DOMAIN_LIMIT_INCREASE )
 	LEVIES_AT_ZERO_COUNTY_CONTROL = 0.5			# How many % levies do you get at 0 county control? Interpolated between this value and 100% when between 0 and 100
 	TAX_AT_ZERO_COUNTY_CONTROL = 0.0			# How much % tax do you get at 0 county control? Interpolated between this value and 100% when between 0 and 100
 	LEVIES_AT_MAX_COUNTY_DEVELOPMENT = 0.5		# How many % levies bonus do you get at 100 county development? Interpolated between this value and 0% when between 0 and 100

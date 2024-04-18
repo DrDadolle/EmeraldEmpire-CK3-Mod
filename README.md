@@ -17,23 +17,29 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ## How to install
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
+## Changes compared to Vanilla
+Those changes are made as the map is smaller and all samourai shares the same language.
+- Cultural Acceptance is lower, as all Clans share the same language (-15 -> -20 & -30 -> -40 for same realm)
+- Maximum 1 held duchy (if you are king or higher) before opinion loss
+- Stewardship grants less bonus domains (from /6 to /7)
+
 ## short term goals
-- paint minor clans (Moth Clan north of Falcon Clan)
-- Paint some ronin lands & Brother hood to complete the map for now
 - count for LastHopeShinsei & some monks for the monasteries
+- paint rivers & adjaciencies
 - Have a not-so-ugly heightmap
-	- Fix river & coast => Once fixed, redo provinces
+	- Fix river & coast 
 - Paint the map with materials
 - Paint & do Sea zones 
 - Rework provinces, so looks better
 - Add river map
 - provinces terrain (plains, etc...)
+- Climates
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 
 # Fixes to do
 - Change color of some textured emblmes
 - Kaito Lands not accessible, change mask of fog
-- Some counties are "coastal" even if they are near rivers... todo after all sea provinces mapped
+- Some counties are "coastal" even if they are near rivers... => Because of some micro holes up to sea level in provinces.png
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - add culture title for kasuga : Kizoku
