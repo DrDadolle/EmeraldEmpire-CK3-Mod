@@ -39,6 +39,6 @@ crane_iron_warrior= {
  	high_maintenance_cost = { gold = @maa_high_maintenance_cost }
 	
  	stack = 100
- 	ai_quality = { value = @cultural_maa_extra_ai_score }
+ 	ai_quality = { value = @[cultural_maa_extra_ai_score +20] }
  	icon = zupin_spearmen #TODO
 }

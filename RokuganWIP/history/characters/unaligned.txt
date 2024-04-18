@@ -52,7 +52,7 @@
 3004004 = {
 	name = name_aki 	# TODO Placeholder name
 	religion = "shinseism"
-	culture = "shiba"
+	culture = "hida"
 
 	trait = devoted 
 	
@@ -64,7 +64,91 @@
 3004005 = {
 	name = name_aki 	# TODO Placeholder name
 	religion = "shinseism"
-	culture = "shiba"
+	culture = "hida"
+
+	trait = devoted 
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004006 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "hida"
+
+	trait = devoted 
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004007 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "ide"
+
+	trait = devoted 
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004008 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "hida"
+
+	trait = devoted 
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004009 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "daidoji"
+
+	trait = devoted 
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004010 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "daidoji"
+
+	trait = devoted 
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004011 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "bayushi"
+
+	trait = devoted 
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004012 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "shinseism"
+	culture = "soshi"
 
 	trait = devoted 
 	
@@ -86,7 +170,85 @@
 	}
 }
 
+3004101 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "seven_fortunes"
+	culture = "hiruma"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
 
+3004102 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "seven_fortunes"
+	culture = "daidoji"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004103 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "seven_fortunes"
+	culture = "daidoji"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004104 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "seven_fortunes"
+	culture = "daidoji"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004105 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "seven_fortunes"
+	culture = "shosuro"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004106 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "seven_fortunes"
+	culture = "bayushi"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004107 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "seven_fortunes"
+	culture = "hare"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+3004108 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "seven_fortunes"
+	culture = "daidoji"
+	
+	1100.1.1 = {
+		birth = yes
+	}
+}
 
 3004200 = {
 	name = name_aki 	# TODO Placeholder name

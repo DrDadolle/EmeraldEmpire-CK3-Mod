@@ -35,7 +35,7 @@ c_east_kintani_province = {
 
 
 #####################
-#	West Dragon Lands (Nanashi mura)
+#	East Dragon Lands (Nanashi mura)
 #####################
 
 c_nanashi_mura_province = {
@@ -74,5 +74,156 @@ c_rich_frog = {
 	1116.1.1 = {
 		liege = "d_rich_frog"
 		holder = 3001051 #  Miya Tetsua, imperiial governor of Kaeru Toshi
+	}
+}
+
+#####################
+#	West Shinomen Monasteries
+#####################
+
+c_west_shinomen_monastery_1 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004004 #  PlaceHolder monk
+	}
+}
+
+c_west_shinomen_monastery_2 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004005 #  PlaceHolder monk
+	}
+}
+
+c_west_shinomen_monastery_3 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004006 #  PlaceHolder monk
+	}
+}
+
+c_west_shinomen_monastery_4 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004007 #  PlaceHolder monk
+	}
+}
+
+#####################
+#	South/East Shinomen lands
+#####################
+
+c_south_shinomen_monastery_1 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004008 #  PlaceHolder monk
+	}
+}
+
+c_south_shinomen_monastery_2 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004009 #  PlaceHolder monk
+	}
+}
+
+c_south_shinomen_ronin_1 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004101 #  PlaceHolder ronin
+	}
+}
+
+c_south_shinomen_ronin_2 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004102 #  PlaceHolder ronin
+	}
+}
+
+c_south_shinomen_ronin_3 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004103 #  PlaceHolder ronin
+	}
+}
+
+
+c_central_lands_ronin_1 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004104 #  PlaceHolder ronin
+	}
+}
+
+c_central_lands_ronin_2 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004105 #  PlaceHolder ronin
+	}
+}
+
+c_central_lands_ronin_3 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004106 #  PlaceHolder ronin
+	}
+}
+
+c_central_lands_ronin_4 = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004107 #  PlaceHolder ronin
+	}
+}
+
+#####################
+#	Ronin lands around Daidoji Yukan See
+#####################
+
+c_daidoji_yukan_see = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004108 #  PlaceHolder ronin
+	}
+}
+
+
+c_shinsei_monastery_yukan_see = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004010 #  PlaceHolder monk
+	}
+}
+
+
+c_conflagration_temple = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004011 #  PlaceHolder monk
+	}
+}
+
+c_shinden_kasai = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004012 #  PlaceHolder monk
 	}
 }

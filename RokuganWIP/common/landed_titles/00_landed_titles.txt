@@ -1843,7 +1843,7 @@ e_rokugan = {
          }
     }
 
-        #######################
+    #######################
 	###### South/East Shinomen lands
 	######### adding non-canon kingdom to proper display counties as vassal of the emperor
     k_south_east_shinomen_mori = {
@@ -2024,7 +2024,7 @@ e_rokugan = {
                  }
 			}
 		}
-		d_ronin_south_west = {
+		d_ronin_daidoji_yukan_see = {
 			color = { 103 74 41 }
 			capital = c_daidoji_yukan_see
 				 
