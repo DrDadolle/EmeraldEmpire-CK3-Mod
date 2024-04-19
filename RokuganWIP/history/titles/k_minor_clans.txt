@@ -264,3 +264,14 @@ c_kaikoga_province = {
 		holder = 3002110 # Kaikoga Tsukasa
 	}
 }
+
+
+#####################
+#	Chuda
+#####################
+c_chuda_province = {
+	1123.1.1 = {
+		liege = "d_isawa" #Held by Isawa family after the 5 Nights of Shame
+		holder = 3000211 # Shiba Akiko #TODO place Holder name
+	}
+}

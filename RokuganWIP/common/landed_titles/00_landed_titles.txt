@@ -640,7 +640,7 @@ e_rokugan = {
             }
 		}
 		d_isawa = {
-             color = { 214 112 0 } #TODO
+             color = { 214 112 0 } 
              capital = c_maryoku_province
              
              c_aoijiroi_province = {
@@ -679,6 +679,13 @@ e_rokugan = {
 				 b_eight_guardian_temple = {
                      province = 123
                  }
+            }
+            c_chuda_province = {
+                color = {  17 20 15 }
+
+                b_shiro_chuda_ruins = {
+                    province = 299
+                }
             }
 		}
 		d_kaito = {
@@ -1648,18 +1655,6 @@ e_rokugan = {
 				 }
 			}
 		}
-		d_chuda = {
-			 color = { 17 20 15 }
-			 capital = c_chuda_province
-			 
-			 c_chuda_province = {
-				 color = {  17 20 15 }
-
-				 b_shiro_chuda_ruins = {
-					 province = 299
-				 }
-			}
-		}
 		d_nekoma = {
 			 color = { 224 39 242 }
 			 capital = c_nekoma_province
@@ -2073,6 +2068,13 @@ d_rokugani_faith = {
 	
 	capital = c_otosan_uchi_province
 
+}
+
+#Special Chuda Title for restauration of Snake Clan ? 
+#TODO
+d_chuda = {
+    color = { 17 20 15 }
+    capital = c_chuda_province
 }
 
 

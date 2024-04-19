@@ -19,6 +19,12 @@ seasons = "seasons.txt"
 #North European Seas
 sea_zones = LIST { 2 } #French & Iberian atlantic coasts
 
+#Daidoji
+sea_zones = LIST { 420 }
+
+# Yasuki
+sea_zones = RANGE { 421 423 }
+
 ###############
 # MAJOR RIVERS
 ###############

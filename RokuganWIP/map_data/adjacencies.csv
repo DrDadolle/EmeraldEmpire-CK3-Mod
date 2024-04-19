@@ -3,14 +3,18 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 175;177;river_large;267;-1;-1;-1;-1;YasukiYashiki-WatchTowerEast
 180;181;river_large;268;-1;-1;-1;-1;YasukiHanko-ShiroKano
 178;9;river_large;269;-1;-1;-1;-1;zenshouTetsu-ClearWaterVillage
+332;176;sea;423;-1;-1;-1;-1;ShinseiLastHope-YasukiLands
 #DAIDOJI
 188;34;river_large;271;-1;-1;445;435;daidojiTrainingGrounds-HigashiyamaMura
 32;256;river_large;274;506;550;-1;-1;songbirdcage-KyudenKitsune
+395;32;sea;420;-1;-1;-1;-1;sabishiiDetroit
 #KAKITA
 39;37;river_large;384;-1;-1;-1;-1;x
 50;25;river_large;366;-1;-1;-1;-1;x
 #DOJI
 323;45;river_large;283;-1;-1;-1;-1;Toshiranbo-kyoteicastle
+27;262;river_large;390;-1;-1;-1;-1;wasp-DOJI
+20;15;river_large;391;-1;-1;-1;-1;doji-doji
 #TSURUCHI
 263;261;river_large;276;-1;-1;-1;-1;QuietStreamVillage-KyudenAshinagabachi
 #SHIBA
@@ -36,4 +40,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 257;256;river_large;376;-1;-1;-1;-1;KitsuneMori-KyudenKitsune
 #SEPPUN
 149;145;river_large;386;-1;-1;-1;-1;SeppunShiros
+#USAGI
+403;258;river_large;376;-1;-1;-1;-1;Hare-Ronin
+260;258;river_large;379;-1;-1;-1;-1;Hare-HareMura
+
 -1;-1;;-1;-1;-1;-1;-1;

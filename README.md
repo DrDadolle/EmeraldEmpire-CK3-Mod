@@ -24,12 +24,14 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Stewardship grants less bonus domains (from /6 to /7)
 
 ## short term goals
-- count for LastHopeShinsei & some monks for the monasteries
+- fix republic county
+- Paint & do Sea zones 
+- Add Locator for sea_provinces !
 - paint rivers & adjaciencies
+- fix title for tribal leader & Theocracy leader
 - Have a not-so-ugly heightmap
 	- Fix river & coast 
 - Paint the map with materials
-- Paint & do Sea zones 
 - Rework provinces, so looks better
 - Add river map
 - provinces terrain (plains, etc...)

@@ -29,10 +29,10 @@
 }
 ##d_kintani_valley_2 ###################################
 ###c_nanashi_mura_province
-129 = {		#b_nanashi_mura
+321 = {		#b_nanashi_mura
 	culture = mirumoto
 	religion = shinseism
-	holding = castle_holding
+	holding = tribal_holding
 }
 ###c_shinsei_monastery_rambo
 322 = {		#b_shinsei_monastery_rambo
@@ -40,7 +40,7 @@
 	religion = shinseism
 	holding = church_holding
 }
-322 = {		#b_shinsei_monastery_rambo_empty
+324 = {		#b_shinsei_monastery_rambo_empty
 	culture = togashi
 	religion = shinseism
 	holding = none
@@ -69,10 +69,11 @@
 	religion = shinseism
 	holding = castle_holding
 }
+###c_shinsei_monastery_yukan_see
 329 = {		#b_shinsei_monastery_yukan_see
 	culture = daidoji
 	religion = shinseism
-	holding = castle_holding
+	holding = church_holding
 }
 ###c_conflagration_temple
 330 = {		#b_conflagration_temple
