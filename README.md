@@ -23,40 +23,50 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Maximum 1 held duchy (if you are king or higher) before opinion loss
 - Stewardship grants less bonus domains (from /6 to /7)
 
-## short term goals
+## short term goals 
 - fix republic county
 - Paint & do Sea zones 
 - Add Locator for sea_provinces !
 - paint rivers & adjaciencies
-- fix title for tribal leader & Theocracy leader
+- fix title for tribal leader & Theocracy leader of countries/+++
 - Have a not-so-ugly heightmap
 	- Fix river & coast 
 - Paint the map with materials
 - Rework provinces, so looks better
-- Add river map
 - provinces terrain (plains, etc...)
 - Climates
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
+- Add river map
+- check Kizoku title
 
 # Fixes to do
-- Change color of some textured emblmes
 - Kaito Lands not accessible, change mask of fog
 - Some counties are "coastal" even if they are near rivers... => Because of some micro holes up to sea level in provinces.png
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
-- add culture title for kasuga : Kizoku
 - clean up of traits (like removing Hajji  from pilgrim traits)
-- Do as "sultanate" based on dynasty name but ONLY for duchy titles ????
+- Change color of some textured emblmes (very low priority)
 - update holy_order decisions & dynasty decisions (taken from shogunate)
 
 ## Futures Features & Nice to have
+- rename months / Date / etc... to L5R one (change localization, but not calendar itself) 
 - Remove AI Cadet branches => Working ?
 - Seppuku as  part of "Bushido tradition". Special decision if "dishonored"
+- Special protection against conquest for un-aligned/minor/imperial lands => Casus belli way more costly + lose of prestige ?
+	- How to distinuing between imperial families (based on dynasty ?) and minor clan ? (when not King & liege is the emperor directly ?)
+	- What are the rules ??? Protected by imperial law if :
+		- Target as smaller rank => gains trait "broke imperial peace" ?
+		- or Target is imperial Dynasty => gains trait excommunicated-like "attacked imperial family" (so others can attack you for it)
+		- is "Major Clan" and Target is not "Major Clan" => gains trait "broke imperial peace" ?
+			- Major clan is if liege or liege of liege is KING.
+		- It is "add_trait = broke_imperial_peace" "on_declaration" !
+		- Add it as a crime into the religion ?
+- Prevent imperial family from doing wars against other clans...? Dunno
 - Painting Hair White decision for crane cultures
-- reduce size of domain that can be kept (à la AGOT mod), because map is so small (~10 counties per kindgom)
 - Genetic Trait "Natural white hair" for Crane ???
-- Right/Left/UnderHand special trait for clan champion of crane/lion/scorpion
+- Right/Left/UnderHand special trait for clan champion of crane/lion/scorpion ??
 - Blood feud (like Matsu vs Kakita)
+- add trial by combat + choosing champion (AGOT mod does it ?)
 - Add ancestral clan & family founders
 - Special decisions
 	-Become Great Clan : Requires X Duchy or Y counties. Emperor positive relation. Emperor MUST be direct liege. Name of Duchy Title => Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
@@ -66,7 +76,7 @@ Those changes are made as the map is smaller and all samourai shares the same la
 	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
-- Special protection against conquest for un-aligned/minor/imperial lands => Casus belli way more costly + lose of prestige ?
+
 - Special Phoenix champion succession
 - Phoenix Council of 5 special government
 - Togashi special succession ?
@@ -75,19 +85,6 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Shindoshi stuff (very low priority)
 - Maho stuff (very low priority)
 - Shadowlands stuff (very low priority)
-
-## What is done
-- provinces with historic & placeholder characters (random traits)
-	- crane clan
-	- lion clan
-	- phoenix clan
-	- Scorpion clan
-	- Hantei & Seppun lands
-	- Crab lands
-	- Unicorn Lands
-	- Dragons Lands
-	- Kasuga/Moshi/Tsuruchi/Suzume/Kitsune/Toritaka/Komori/Nekoma
-- all cultures & religion (draft)
-- basic Coat of Arms for Clans & Families (late are buggy, weird colors)
+- Change calendar to lunar calendar (cf Lotr "Gwaeron" month or other TC mod does)
 
 ## Credit

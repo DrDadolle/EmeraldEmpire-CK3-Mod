@@ -7,6 +7,73 @@ is_fat = {}
 # TODO like in SHogunate : painter, tea master, shinobi ??
 # TODO Shogunate 'Child of Adoption"'
 
+### Imperial Law Trait
+#TODO
+broke_imperial_peace = {
+	category = fame
+	monthly_piety_gain_mult = -0.2
+	monthly_prestige_gain_mult = -0.2
+	zealot_opinion = -20
+	feudal_government_opinion = -20 #Affect almost everyone
+	
+	shown_in_ruler_designer = no
+
+	#triggered_opinion = {
+	#	parameter = excommunication_active # TODO to be added to a special "Imperial Law" Doctrine ??? As trigerred opinion is only on
+	#	opinion_modifier = tenet_excommunicated_crime
+	#	same_faith = yes
+	#}
+
+	icon = {
+		desc = excommunicated .dds
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_broke_imperial_peace_desc
+			}
+			desc = trait_broke_imperial_peace_character_desc
+		}
+	}
+}
+#TODO : attacked_imperial_lands
+# Should enable a pseudo-excommunication war !
+attacked_imperial_family = {
+	category = fame
+	monthly_piety_gain_mult = -0.4
+	monthly_prestige_gain_mult = -0.4
+	zealot_opinion = -40
+	feudal_government_opinion = -40 #Affect almost everyone
+	
+	shown_in_ruler_designer = no
+
+	#triggered_opinion = {
+	#	parameter = excommunication_active # TODO to be added to a special "Imperial Law" Doctrine ??? As trigerred opinion is only on
+	#	opinion_modifier = tenet_excommunicated_crime
+	#	same_faith = yes
+	#}
+	
+
+	icon = {
+		desc = excommunicated .dds
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_attacked_imperial_family_desc
+			}
+			desc = trait_attacked_imperial_family_character_desc
+		}
+	}
+}
 
 ### Shugenja Traits
 # Character can talk to the spirits and the kamis

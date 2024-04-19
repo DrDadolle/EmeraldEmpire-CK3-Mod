@@ -6,5 +6,12 @@
  # shindoshi
  trait_shindoshi:0 "Shindoshi"
  trait_shindoshi_desc:0 "This character is a shindoshi, a priest and scribe, as well as the envoy of the fortunes and kami. They are able to create powerful spells by offering prayers."
- trait_shindoshi_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] character is a shindoshi, a priest and scribe, as well as the envoy of the fortunes and kami. [ROOT.GetCharacter.GetFirstNameNoTooltip] is able to create powerful spells by offering prayers."
-
+ trait_shindoshi_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a shindoshi, a priest and scribe, as well as the envoy of the fortunes and kami. [ROOT.GetCharacter.GetFirstNameNoTooltip] is able to create powerful spells by offering prayers."
+ # broke_imperial_peace
+ trait_broke_imperial_peace:0 "Broke the imperial peace"
+ trait_broke_imperial_peace_desc:0 "This character attacked a Minor Clan, or a lower-ranked daimyo. As they have transgressed the imperial edict regarding the imperial peace, they are shunned by everyone else."
+ trait_broke_imperial_peace_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] attacked a Minor Clan, or a lower-ranked daimyo. As [ROOT.GetCharacter.GetFirstNameNoTooltip] have transgressed the imperial edict regarding the imperial peace, [ROOT.GetCharacter.GetFirstNameNoTooltip] are shunned by everyone else. "
+ # attacked_imperial_family
+ trait_attacked_imperial_family:0 "Attacked an Imperial Family"
+ trait_attacked_imperial_family_desc:0 "This character attacked the lands of the Otomo, Miya, Seppun or Hantei Imperial Family. It is a major crime and swift retribution should come their way."
+ trait_attacked_imperial_family_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] attacked the lands of the Otomo, Miya, Seppun or Hantei Imperial Family. It is a major crime and swift retribution should come their way."
