@@ -185,7 +185,7 @@
 	name = name_aki 	#  Iuchi Aki  #TODO replace name
 	dynasty = 2100030 	# Iuchi  #TODO replace by  like the dynn_morehei_doji
 	religion = "seven_fortunes"
-	culture = "uchi"
+	culture = "iuchi"
 	
 	1100.1.1 = {
 		birth = yes
@@ -196,7 +196,7 @@
 	name = name_aki 	#  Battue Aki  #TODO replace name
 	dynasty = 2107030 	# Battue Vassal family 
 	religion = "seven_fortunes"
-	culture = "uchi"
+	culture = "iuchi"
 
 	1100.1.1 = {
 		birth = yes
@@ -207,7 +207,7 @@
 	name = name_shoan 	#  Horiuchi Shoan, Horiuchi founder
 	dynasty = 2107031 	# Horiuchi Vassal family 
 	religion = "seven_fortunes"
-	culture = "uchi"
+	culture = "iuchi"
 	female = yes
 	
 	1092.1.1 = {

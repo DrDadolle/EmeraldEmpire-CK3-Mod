@@ -16,14 +16,32 @@ seasons = "seasons.txt"
 # SEA ZONES
 #############
 
-#North European Seas
-sea_zones = LIST { 2 } #French & Iberian atlantic coasts
+# Mantis Sea
+sea_zones = RANGE { 444 457 }
 
-#Daidoji
-sea_zones = LIST { 420 }
+# Phoenix Sea
+sea_zones = RANGE { 429 431 }
+
+# Imperial / Tortoise Sea
+sea_zones = RANGE { 432 434 }
+
+# Crane Coast
+# Doji 
+sea_zones = LIST { 435 }
+# Kakita
+sea_zones = LIST { 436 }
+# Daidoji
+sea_zones = LIST { 420 439 440}
+# Asahina
+sea_zones = LIST { 441 442 }
 
 # Yasuki
 sea_zones = RANGE { 421 423 }
+sea_zones = LIST { 443 } # Shadowlands
+
+# Neutral
+sea_zones = LIST { 2 } # Empty Mantis Sea
+sea_zones = LIST { 437 438 } #Empty islands
 
 ###############
 # MAJOR RIVERS
@@ -54,6 +72,13 @@ river_provinces = RANGE { 386 388 }
 river_provinces = RANGE { 389 392 }
 #Ide River
 river_provinces = RANGE { 396 399 }
+#Otosan Uchi Rivers
+river_provinces = RANGE { 424 428 }
+
+
+#Shadowlands river 
+#river_provinces = LIST { 461 }
+
 ########
 # LAKES
 ########
@@ -92,6 +117,12 @@ impassable_mountains = LIST { 411 }
 #Suzume Mountains
 impassable_mountains = LIST { 418 }
 
+#Shinomen Mori
+#impassable_mountains = LIST { 458 }
+
+#TODO placeholder
+#impassable_mountains = LIST { 460 }
+
 ############
 # WASTELAND
 ############
@@ -100,6 +131,7 @@ impassable_mountains = LIST { 418 }
 
 # IMPASSABLE SEA ZONES
 # These sea provinces cannot be crossed/sailed
+#impassable_seas = LIST { 459 }
 
 # UNUSED PROVINCES
 # These provinces cause issues because they are passable land, but not part of any title.

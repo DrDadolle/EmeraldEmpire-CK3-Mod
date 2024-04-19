@@ -8,8 +8,26 @@
 #	counties = { }, takes county title names declared in landed_titles.txt
 #	provinces = { }, takes province id numbers declared in /history/provinces
 
-island_region_canarias = {
+island_region_mantis = {
 	counties = {
-		c_canarias
+		c_gotei_province
+		c_koutetsukan_province_mantis
+		c_kaze_province
+		c_inazuma_province
+		c_irie_province
+		c_tokigogachu_province
+		c_maigosera_province
+	}
+}
+
+island_region_komori = {
+	counties = {
+		c_komori_province
+	}
+}
+
+island_region_nekoma = {
+	counties = {
+		c_nekoma_province
 	}
 }
