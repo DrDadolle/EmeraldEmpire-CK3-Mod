@@ -6,13 +6,12 @@ bleached_white_hair = {
 	category = fame
 
 	monthly_prestige = 0.01
-	same_opinion = 5
+	same_opinion = 2
 	physical = yes
 
-	# TODO
-	#opposites = {
-	#	Natural White Hair	
-	#}
+	opposites = {
+		natural_white_hair	
+	}
 
 	#TODO way of the crane maybe later, to add the opinion modifier to all "way of the crane" cultures ????
 	#culture_modifier = {
@@ -37,6 +36,48 @@ bleached_white_hair = {
 			desc = trait_bleached_white_hair_desc
 		}
 	}
+}
+
+natural_white_hair = {
+	category = fame
+
+	monthly_prestige = 0.1
+	same_opinion = 10
+	physical = yes
+	genetic = yes
+
+	birth = 0.15
+	random_creation = 0.15
+
+	opposites = {
+		bleached_white_hair
+	}
+
+	#TODO way of the crane maybe later, to add the opinion modifier to all "way of the crane" cultures ????
+	#culture_modifier = {
+	#	parameter = faith_warrior_traits_more_valued
+	#	monthly_prestige = 1
+	#}
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 50
+
+	icon = {
+		desc = reveler.dds #TODO
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_natural_white_hair_desc
+			}
+			desc = trait_natural_white_hair_desc
+		}
+	}
+
 }
 
 ### Imperial Law Trait

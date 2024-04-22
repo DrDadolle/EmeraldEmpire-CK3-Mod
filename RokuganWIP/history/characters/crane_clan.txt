@@ -21,6 +21,7 @@
 	trait = beauty_good_2
 	trait = lifestyle_blademaster
 	trait = kami_descendant
+	trait = natural_white_hair
 	
 	### DNA
 	dna = doji_hotaru_dna_entry
@@ -62,6 +63,7 @@
 	trait = beauty_good_2
 	trait = lifestyle_blademaster
 	trait = kami_descendant
+	trait = natural_white_hair
 	
 	### DNA
 	
@@ -97,6 +99,7 @@
 	trait = beauty_good_1
 	trait = lifestyle_blademaster
 	trait = kami_descendant
+	trait = natural_white_hair
 
 	1069.1.1 = {
 		birth = yes
@@ -127,6 +130,7 @@
 	
 	### Traits
 	trait = beauty_good_3
+	trait = natural_white_hair
 	
 	### DNA
 	
@@ -159,6 +163,7 @@
 	trait = education_diplomacy_3
 	trait = calm
 	trait = clubfooted
+	trait = bleached_white_hair
 	
 	### DNA
 	
@@ -210,6 +215,8 @@
 	culture = "doji"
 	female = yes
 
+	trait = bleached_white_hair
+
 	1075.1.1 = {
 		birth = yes
 	}
@@ -225,6 +232,8 @@
 	dynasty = 2100001 	# Doji  #TODO replace by  like the dynn_morehei_doji
 	religion = "seven_fortunes"
 	culture = "doji"
+
+	trait = bleached_white_hair
 
 	1100.1.1 = {
 		birth = yes
@@ -324,6 +333,7 @@
 	trait = just
 	trait = cynical
 	trait = gregarious
+	trait = natural_white_hair
 	father = 3000022 #Kakita Toshimo
 
 	1077.1.1 = {
@@ -376,7 +386,7 @@
 	### Stats
 	
 	### Traits
-	
+	trait = natural_white_hair
 	### DNA
 	
 	### Family

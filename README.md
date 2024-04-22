@@ -24,6 +24,7 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Stewardship grants less bonus domains (from /6 to /7)
 
 ## short term goals 
+- Add "way of" culture tradition for each major clan ?
 -Fix river width
 - Have a not-so-ugly heightmap
 	- Fix river & coast 
@@ -33,8 +34,7 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Climates
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - Add river map
-- Add "way of" culture tradition for each major clan ?
-- Genetic Trait "Natural white hair" for Crane ???
+
 
 # Fixes to do
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance

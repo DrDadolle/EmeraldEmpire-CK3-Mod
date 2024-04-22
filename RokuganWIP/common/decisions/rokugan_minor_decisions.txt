@@ -12,6 +12,7 @@ bleach_hair_white_crane_decision = {
 	is_shown = {
 		culture = { has_cultural_pillar = heritage_crane } # Only Crane clan Samurai can bleach their hair white
 		NOT = { has_trait = bleached_white_hair }
+		NOT = { has_trait = natural_white_hair }
 	}
 
 	cooldown = { days = @bleach_hair_cooldown_time }
@@ -27,7 +28,6 @@ bleach_hair_white_crane_decision = {
 			left_icon = root # TODO crane icon ???
 			add_trait = bleached_white_hair
 		}
-		##TODO change physical apparence
 	}
 	
 	ai_check_interval = 30
