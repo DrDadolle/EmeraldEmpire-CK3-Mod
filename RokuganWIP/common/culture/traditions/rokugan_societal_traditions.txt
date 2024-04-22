@@ -6,7 +6,88 @@
 ## https://ck3.paradoxwikis.com/Duel
 ## For now, it allows rival duels & adoption
 
+### TODO Add Clan tradition
+# Usage of Clan Culture could factorized shared believes (like Bushido ? No ! Bushido should be separated), like 
+#  tradition_stalwart_defenders & tradition_warrior_culture & tradition_bushido for crabe clan
+# It enables better opinion support for traits (can't reference heritage, only cultures or traditions)
+# It avoids harcoding stuff to a particular culture too, if someone wants to diverge from a culture
+# 
+# Way of the Lion
+# Way of the Scorpion
+# Way of the Crab
+# Way of the Unicorn
+# Way of the Phoenix
+# Way of the Dragon
+# Way of the Imperial family ?
+# Way of the minor clan ?
 
+
+# Way of the Crane
+tradition_way_of_the_crane = {
+	category = realm # Societal ??
+
+	layers = {
+		0 = learning
+		1 = indian
+		4 = crown.dds #TODO Change with crane ???
+	}
+
+	is_shown = {
+		has_cultural_pillar = heritage_crane
+	}
+
+	can_pick = { 
+		has_cultural_pillar = heritage_crane
+	}
+
+	#TODO combinaison of 
+	#tradition_astute_diplomats
+	#tradition_esteemed_hospitality
+	# White hair is cool
+	# TODO modify vanilla tradition to prevent cumulating tradition_welcoming AND this
+	parameters = {
+		diplomacy_education_better_outcomes = yes
+		charming_trait_more_common = yes
+		white_hair_valued = yes
+	}
+
+	character_modifier = {
+		monthly_court_grandeur_change_mult = 0.10
+		owned_personal_scheme_success_chance_add = 10
+		enemy_hostile_scheme_success_chance_add = 10
+	}
+
+	cost = { # Why ???
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_spiritual = { is_in_list = traits }
+						culture_pillar:ethos_bureaucratic = { is_in_list = traits } # Instead of Stoic of the Daidoji
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bureaucratic_courtly_or_spiritual_desc
+				}
+			}			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+
+	ai_will_do = {
+		value = 100
+	}
+
+}
+
+# Bushido, to be kept and added to each samurai culture, as well as the relevant "way of ..." if applicable
 tradition_bushido = {
 	category = societal
 

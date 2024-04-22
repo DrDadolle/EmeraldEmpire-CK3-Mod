@@ -5,19 +5,18 @@
 bleached_white_hair = {
 	category = fame
 
-	monthly_prestige = 0.01
-	same_opinion = 2
+	# No effect if not Crane Culture
 	physical = yes
 
 	opposites = {
 		natural_white_hair	
 	}
 
-	#TODO way of the crane maybe later, to add the opinion modifier to all "way of the crane" cultures ????
-	#culture_modifier = {
-	#	parameter = faith_warrior_traits_more_valued
-	#	monthly_prestige = 1
-	#}
+	culture_modifier = {
+		parameter = white_hair_valued
+		monthly_prestige = 0.05
+		same_culture_opinion = 5 # TODO : not same culture, but everyone who has this please ! white_hair_valued
+	}
 	
 	shown_in_ruler_designer = no
 
@@ -41,8 +40,8 @@ bleached_white_hair = {
 natural_white_hair = {
 	category = fame
 
-	monthly_prestige = 0.1
-	same_opinion = 10
+	same_opinion = 5
+
 	physical = yes
 	genetic = yes
 
@@ -53,11 +52,11 @@ natural_white_hair = {
 		bleached_white_hair
 	}
 
-	#TODO way of the crane maybe later, to add the opinion modifier to all "way of the crane" cultures ????
-	#culture_modifier = {
-	#	parameter = faith_warrior_traits_more_valued
-	#	monthly_prestige = 1
-	#}
+	culture_modifier = {
+		parameter = white_hair_valued
+		monthly_prestige = 1.0
+		same_culture_opinion = 10  # TODO : not same culture, but everyone who has this please ! white_hair_valued
+	}
 	
 	shown_in_ruler_designer = yes
 	ruler_designer_cost = 50

@@ -7,8 +7,8 @@
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
+		tradition_way_of_the_crane
 		tradition_astute_diplomats
-		tradition_esteemed_hospitality
 		tradition_agrarian
 	}
    
@@ -34,6 +34,7 @@ kakita = {
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
+		tradition_way_of_the_crane
 		tradition_metal_craftsmanship
 		tradition_gardening
 		tradition_only_the_strong
@@ -62,9 +63,9 @@ daidoji = {
 	martial_custom = martial_custom_equal
 	traditions = {
 		 tradition_bushido
+		 tradition_way_of_the_crane
 		 tradition_castle_keepers
 		 tradition_adaptive_skirmishing
-		 tradition_esteemed_hospitality
 	}
    
 	name_list = name_list_crane_family
@@ -89,7 +90,7 @@ asahina = {
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
-		tradition_esteemed_hospitality
+		tradition_way_of_the_crane
 		tradition_pacifism
 		tradition_vegetarianism
 	}
