@@ -1,11 +1,43 @@
-## CK2 Compatibility
-
-stressed = {}
-is_fat = {}
-
 ### samurai lifestyle ? 
 # TODO like in SHogunate : painter, tea master, shinobi ??
 # TODO Shogunate 'Child of Adoption"'
+
+bleached_white_hair = {
+	category = fame
+
+	monthly_prestige = 0.01
+	same_opinion = 5
+	physical = yes
+
+	# TODO
+	#opposites = {
+	#	Natural White Hair	
+	#}
+
+	#TODO way of the crane maybe later, to add the opinion modifier to all "way of the crane" cultures ????
+	#culture_modifier = {
+	#	parameter = faith_warrior_traits_more_valued
+	#	monthly_prestige = 1
+	#}
+	
+	shown_in_ruler_designer = no
+
+	icon = {
+		desc = reveler.dds #TODO
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_bleached_white_hair_desc
+			}
+			desc = trait_bleached_white_hair_desc
+		}
+	}
+}
 
 ### Imperial Law Trait
 #TODO
@@ -25,7 +57,7 @@ broke_imperial_peace = {
 	#}
 
 	icon = {
-		desc = excommunicated .dds
+		desc = excommunicated.dds
 	}
 
 	desc = {
@@ -59,7 +91,7 @@ attacked_imperial_family = {
 	
 
 	icon = {
-		desc = excommunicated .dds
+		desc = excommunicated.dds
 	}
 
 	desc = {

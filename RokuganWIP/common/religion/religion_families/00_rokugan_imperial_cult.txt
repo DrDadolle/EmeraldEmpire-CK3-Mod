@@ -1,6 +1,6 @@
 rf_rokugan = {
 	piety_icon_group = "eastern"
 	graphical_faith = "dharmic_gfx"
-	hostility_doctrine = eastern_hostility_doctrine #TODO change to a custom one fwith "same religion = 1" "same family =1 " but other = "3"
+	hostility_doctrine = rokugani_hostility_doctrine 
 	doctrine_background_icon = core_tenet_banner_eastern.dds
 }

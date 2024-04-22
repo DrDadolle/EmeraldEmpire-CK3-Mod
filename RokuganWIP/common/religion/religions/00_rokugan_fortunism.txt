@@ -1,7 +1,7 @@
 ﻿fortunism_religion = {
 	family = rf_rokugan
 	graphical_faith = dharmic_gfx
-	doctrine = eastern_hostility_doctrine
+	doctrine = rokugani_hostility_doctrine
 
 	#Main Group
 	doctrine = doctrine_temporal_head
@@ -29,8 +29,8 @@
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
 
-	#Special Doctrine for Eastern Syncretism
-	doctrine = special_doctrine_is_eastern_faith
+	#Special Doctrine for Syncretism
+	doctrine = special_doctrine_is_rokugani_faith
 	
 	#Allow pilgrimages
 	doctrine = doctrine_pilgrimage_encouraged
@@ -233,7 +233,7 @@
 		seven_fortunes = {
 			color = { 0.2 0.9 0.2 }
 			icon = lamaism_buddhism
-			religious_head = d_rokugani_faith
+
 
 			holy_site = benten_seido
 			holy_site = jurojin_seido
@@ -248,15 +248,23 @@
 			doctrine = tenet_ritual_celebrations
 
 
+			# Is an official cult of Rokugan
+			religious_head = d_rokugani_faith
+			doctrine = special_doctrine_imperial_cult
+
+
 			doctrine = doctrine_clerical_succession_temporal_appointment
 		}
 		cult_amaterasu = {
 			color = { 0.9 1.0 0.0 }
 			icon = zunist
-			religious_head = d_rokugani_faith
 
 			holy_site=amaterasu_temple
 			holy_site=field_of_the_morning_sun
+
+			# Is an official cult of Rokugan
+			religious_head = d_rokugani_faith
+			doctrine = special_doctrine_imperial_cult
 
 			doctrine = tenet_astrology
 			doctrine = tenet_sun_worship #TODO adapt this tenet to make it less zunnist

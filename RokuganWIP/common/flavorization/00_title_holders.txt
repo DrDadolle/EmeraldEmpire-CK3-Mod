@@ -6052,133 +6052,6 @@ empire_theocracy = {
 	governments = { theocracy_government }
 }
 
- #Default Islamic Clan tiers
-# baron_islamic_clan_male = {
-# 	type = character
-# 	gender = male
-# 	special = holder
-# 	tier = barony
-# 	priority = 7
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# baron_islamic_clan_female = {
-# 	type = character
-# 	gender = female
-# 	special = holder
-# 	tier = barony
-# 	priority = 7
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# barony_islamic_clan = {
-# 	type = title
-# 	tier = barony
-# 	priority = 7
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# count_islamic_clan_male = {
-# 	type = character
-# 	gender = male
-# 	special = holder
-# 	tier = county
-# 	priority = 17
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# count_islamic_clan_female = {
-# 	type = character
-# 	gender = female
-# 	special = holder
-# 	tier = county
-# 	priority = 17
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# county_islamic_clan = {
-# 	type = title
-# 	tier = county
-# 	priority = 17
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# duke_islamic_clan_male = {
-# 	type = character
-# 	gender = male
-# 	special = holder
-# 	tier = duchy
-# 	priority = 27
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# duke_islamic_clan_female = {
-# 	type = character
-# 	gender = female
-# 	special = holder
-# 	tier = duchy
-# 	priority = 27
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# duchy_islamic_clan = {
-# 	type = title
-# 	tier = duchy
-# 	priority = 27
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# king_islamic_clan_male = {
-# 	type = character
-# 	gender = male
-# 	special = holder
-# 	tier = kingdom
-# 	priority = 47
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# king_islamic_clan_female = {
-# 	type = character
-# 	gender = female
-# 	special = holder
-# 	tier = kingdom
-# 	priority = 47
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# kingdom_islamic_clan = {
-# 	type = title
-# 	tier = kingdom
-# 	priority = 47
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# emperor_islamic_clan_male = {
-# 	type = character
-# 	gender = male
-# 	special = holder
-# 	tier = empire
-# 	priority = 102
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# emperor_islamic_clan_female = {
-# 	type = character
-# 	gender = female
-# 	special = holder
-# 	tier = empire
-# 	priority = 102
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-# empire_islamic_clan = {
-# 	type = title
-# 	tier = empire
-# 	priority = 102
-# 	governments = { clan_government }
-# 	religions = { islam_religion }
-# }
-
  #Default Clan tiers
 baron_clan_male = {
 	type = character
@@ -6316,7 +6189,6 @@ barony_tribal = {
 	top_liege = no
 	priority = 6
 	governments = { tribal_government }
-	NOT = { has_cultural_pillar = heritage_taszok }
 }
 count_tribal_male = {
 	type = character
@@ -6342,7 +6214,6 @@ county_tribal = {
 	top_liege = no
 	priority = 16
 	governments = { tribal_government }
-	NOT = { has_cultural_pillar = heritage_taszok }
 }
 duke_tribal_male = {
 	type = character

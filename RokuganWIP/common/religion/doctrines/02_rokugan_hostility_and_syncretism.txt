@@ -1,0 +1,74 @@
+﻿### HOSTILITY ###
+rokugan_hostility_group = {
+
+	group = "not_creatable"
+
+	rokugani_hostility_doctrine = {
+		parameters = {
+			hostility_same_religion = 1 # FAITH_HOSTILITY_ASTRAY
+			hostility_same_family = 1 # FAITH_HOSTILITY_ASTRAY
+			hostility_others = 3 # FAITH_HOSTILITY_EVIL
+		}
+	}
+
+	gaijin_hostility_doctrine = { # Same as Pagan from vanilla
+		parameters = {
+			hostility_same_religion = 1 # FAITH_HOSTILITY_ASTRAY
+			hostility_same_family = 2 # FAITH_HOSTILITY_HOSTILE
+			hostility_others = 3 # FAITH_HOSTILITY_EVIL
+		}
+	}
+
+	shadowlands_hostility_doctrine = {
+		parameters = {
+			hostility_same_religion = 2 # FAITH_HOSTILITY_HOSTILE
+			hostility_same_family = 3 # FAITH_HOSTILITY_EVIL
+			hostility_others = 3 # FAITH_HOSTILITY_EVIL
+		}
+	}
+}
+
+### SYNCRETISM ###
+
+is_rokugani_faith = {
+	group = "special"
+	
+	is_available_on_create = {
+		has_doctrine = special_doctrine_is_rokugani_faith
+	}
+
+	special_doctrine_is_rokugani_faith = {
+		parameters = {
+			# Since doctrines cannot modify other faith's views of us, only our view of others
+			hostility_override_tenet_rejection_of_the_kami = 2
+			hostility_override_tenet_rokugani_syncretism = 1 # Syncretism goes to FAITH_HOSTILITY_ASTRAY
+			# For loc:
+			is_rokugani_faith_righteous_desc = 1
+			is_rokugani_faith_astray_desc = 1
+			is_rokugani_faith_hostile_desc = 1
+			is_rokugani_faith_evil_desc = 1
+		}
+	}
+}
+
+# No Gaijin Syncretism ?
+
+is_shadowlands_faith = {
+	group = "special"
+	
+	is_available_on_create = {
+		has_doctrine = special_doctrine_is_shadowlands_faith
+	}
+
+	special_doctrine_is_shadowlands_faith = {
+		parameters = {
+			# Since doctrines cannot modify other faith's views of us, only our view of others
+			hostility_override_tenet_rejection_of_the_kami = 2
+			hostility_override_tenet_shadowlands_veneration = 1 # Syncretism goes to FAITH_HOSTILITY_ASTRAY
+			# For loc:
+			is_shadowlands_faith_righteous_desc = 1
+			is_shadowlands_faith_hostile_desc = 1
+			is_shadowlands_faith_evil_desc = 1
+		}
+	}
+}

@@ -24,8 +24,6 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Stewardship grants less bonus domains (from /6 to /7)
 
 ## short term goals 
-- fix republic county
-- fix title for tribal leader & Theocracy leader of countries/+++
 -Fix river width
 - Have a not-so-ugly heightmap
 	- Fix river & coast 
@@ -35,7 +33,8 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Climates
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - Add river map
-- check Kizoku title
+- Add "way of" culture tradition for each major clan ?
+- Genetic Trait "Natural white hair" for Crane ???
 
 # Fixes to do
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
@@ -43,9 +42,10 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - clean up of traits (like removing Hajji  from pilgrim traits)
 - Change color of some textured emblmes (very low priority)
 - update holy_order decisions & dynasty decisions (taken from shogunate)
+- - fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
+- check Kizoku title & Khan title => Ask help to FUN ? Rework ?
 
 ## Futures Features & Nice to have
-- rename months / Date / etc... to L5R one (change localization, but not calendar itself) 
 - Remove AI Cadet branches => Working ?
 - Seppuku as  part of "Bushido tradition". Special decision if "dishonored"
 - Special protection against conquest for un-aligned/minor/imperial lands => Casus belli way more costly + lose of prestige ?
@@ -58,8 +58,6 @@ Those changes are made as the map is smaller and all samourai shares the same la
 		- It is "add_trait = broke_imperial_peace" "on_declaration" !
 		- Add it as a crime into the religion ?
 - Prevent imperial family from doing wars against other clans...? Dunno
-- Painting Hair White decision for crane cultures
-- Genetic Trait "Natural white hair" for Crane ???
 - Right/Left/UnderHand special trait for clan champion of crane/lion/scorpion ??
 - Blood feud (like Matsu vs Kakita)
 - add trial by combat + choosing champion (AGOT mod does it ?)
@@ -82,5 +80,8 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Maho stuff (very low priority)
 - Shadowlands stuff (very low priority)
 - Change calendar to lunar calendar (cf Lotr "Gwaeron" month or other TC mod does)
+
+# Decisions
+- Bleach Hair White
 
 ## Credit

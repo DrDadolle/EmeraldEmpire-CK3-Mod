@@ -2,7 +2,8 @@
  # Kami descendant
  trait_kami_descendant:0 "Descendant of a founder Kami"
  trait_kami_descendant_desc:0 "This character is a direct descendant of one of the eight Kamis who fell in Ningendo. As such, they are the rightful leader of their vassals."
- trait_kami_descendant_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a direct descendant of one of the eight Kamis who fell in Ningendo. As such, [ROOT.GetCharacter.GetFirstNameNoTooltip] is the rightful leader of their vassals."
+ trait_kami_descendant_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a direct descendant of one of the eight Kamis who fell in Ningendo. As such, [ROOT.GetCharacter.GetFirstNameNoTooltip] is the rightful leader of [ROOT.GetCharacter.GetHerHis] vassals."
+
  # shindoshi
  trait_shindoshi:0 "Shindoshi"
  trait_shindoshi_desc:0 "This character is a shindoshi, a priest and scribe, as well as the envoy of the fortunes and kami. They are able to create powerful spells by offering prayers."
@@ -14,4 +15,8 @@
  # attacked_imperial_family
  trait_attacked_imperial_family:0 "Attacked an Imperial Family"
  trait_attacked_imperial_family_desc:0 "This character attacked the lands of the Otomo, Miya, Seppun or Hantei Imperial Family. It is a major crime and swift retribution should come their way."
- trait_attacked_imperial_family_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] attacked the lands of the Otomo, Miya, Seppun or Hantei Imperial Family. It is a major crime and swift retribution should come their way."
+ trait_attacked_imperial_family_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] attacked the lands of the Otomo, Miya, Seppun or Hantei Imperial Family. It is a major crime and swift retribution should come [ROOT.GetCharacter.GetHerHis] way."
+ # bleached_white_hair
+ trait_bleached_white_hair:0 "Bleached White Hair"
+ trait_bleached_white_hair_desc:0 "This character decided to bleach their hair white to honor the courage of the Doji Hayaku, who returned from the Shadowlands with the sword of her brother and white hair."
+ trait_bleached_white_hair_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] decided to bleach [ROOT.GetCharacter.GetHerHis] hair white to honor the courage of the Doji Hayaku, who returned from the Shadowlands with the sword of his sister and white hair."

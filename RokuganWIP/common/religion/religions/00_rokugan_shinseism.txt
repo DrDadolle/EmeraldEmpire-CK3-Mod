@@ -1,7 +1,7 @@
 ﻿shinseism_religion = {
 	family = rf_rokugan
 	graphical_faith = dharmic_gfx
-	doctrine = eastern_hostility_doctrine
+	doctrine = rokugani_hostility_doctrine
 
 	#Main Group
 	doctrine = doctrine_temporal_head
@@ -28,6 +28,10 @@
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_disallowed
 	doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
+
+			
+	#Special Doctrine for Syncretism
+	doctrine = special_doctrine_is_rokugani_faith
 
 	#Allow pilgrimages
 	doctrine = doctrine_pilgrimage_encouraged
@@ -234,12 +238,9 @@
 			doctrine = tenet_inner_journey
 			doctrine = tenet_monasticism
 
+			# Is an official cult of Rokugan
 			religious_head = d_rokugani_faith
-			
-			##TODO to keep ?
-			#Special Doctrine for Eastern Syncretism
-			doctrine = special_doctrine_is_eastern_faith
-
+			doctrine = special_doctrine_imperial_cult
 
 			doctrine = doctrine_clerical_succession_temporal_appointment
 		}
@@ -256,15 +257,11 @@
 
 			doctrine = tenet_adaptive
 			doctrine = tenet_inner_journey
-			doctrine = tenet_pacifism
+			doctrine = tenet_rejection_of_the_kami
 
 			# do not recognize the Son of Heaven
+			#Hostile to the kami
 			doctrine = doctrine_no_head
-			
-			
-			#TODO No special doctrine => is heresy ??
-			#Special Doctrine for Eastern Syncretism
-			#doctrine = special_doctrine_is_eastern_faith
 			
 			# The Perfect Land Sect does not rever fortunes
 			localization = {

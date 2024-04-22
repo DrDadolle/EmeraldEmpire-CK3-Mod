@@ -1,7 +1,7 @@
 ﻿ancestors_religion = {
 	family = rf_rokugan
 	graphical_faith = dharmic_gfx
-	doctrine = eastern_hostility_doctrine
+	doctrine = rokugani_hostility_doctrine
 
 	#Main Group
 	doctrine = doctrine_temporal_head
@@ -30,9 +30,8 @@
 	doctrine = doctrine_clerical_succession_temporal_appointment
 	
 
-	##TODO to keep ?
-	#Special Doctrine for Eastern Syncretism
-	doctrine = special_doctrine_is_eastern_faith
+	#Special Doctrine for  Syncretism
+	doctrine = special_doctrine_is_rokugani_faith
 	
 	#Allow pilgrimages
 	doctrine = doctrine_pilgrimage_encouraged
@@ -231,7 +230,7 @@
 		cult_ancestors = {
 			color = { 0.2 0.2 0.9 }
 			icon = vajrayana
-			religious_head = d_rokugani_faith
+
 
 			holy_site = akodo_temple
 			holy_site = doji_temple
@@ -241,6 +240,10 @@
 			holy_site = togashis_seat
 			holy_site = hida_temple
 			holy_site = shinjo_temple
+
+			# Is an official cult of Rokugan
+			religious_head = d_rokugani_faith
+			doctrine = special_doctrine_imperial_cult
 			
 			#Tenet:
 			doctrine = tenet_warmonger

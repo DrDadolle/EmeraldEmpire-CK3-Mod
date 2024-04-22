@@ -1,6 +1,6 @@
 rf_shadowlands = {
 	piety_icon_group = "pagan"
 	graphical_faith = "dharmic_gfx"
-	hostility_doctrine = abrahamic_hostility_doctrine # Very hostile, to everyone
+	hostility_doctrine = shadowlands_hostility_doctrine 
 	doctrine_background_icon = core_tenet_banner_eastern.dds
 }
