@@ -25,10 +25,8 @@ Those changes are made as the map is smaller and all samourai shares the same la
 
 ## short term goals 
 - fix republic county
-- Paint & do Sea zones 
-- Add Locator for sea_provinces !
-- paint rivers & adjaciencies
 - fix title for tribal leader & Theocracy leader of countries/+++
+-Fix river width
 - Have a not-so-ugly heightmap
 	- Fix river & coast 
 - Paint the map with materials
@@ -40,8 +38,6 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - check Kizoku title
 
 # Fixes to do
-- Kaito Lands not accessible, change mask of fog
-- Some counties are "coastal" even if they are near rivers... => Because of some micro holes up to sea level in provinces.png
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - clean up of traits (like removing Hajji  from pilgrim traits)

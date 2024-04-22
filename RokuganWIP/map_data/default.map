@@ -20,7 +20,7 @@ seasons = "seasons.txt"
 sea_zones = RANGE { 444 457 }
 
 # Phoenix Sea
-sea_zones = RANGE { 429 431 }
+sea_zones = LIST { 429 430 431 }
 
 # Imperial / Tortoise Sea
 sea_zones = RANGE { 432 434 }
@@ -118,10 +118,10 @@ impassable_mountains = LIST { 411 }
 impassable_mountains = LIST { 418 }
 
 #Shinomen Mori
-#impassable_mountains = LIST { 458 }
+impassable_mountains = LIST { 458 }
 
 #TODO placeholder
-#impassable_mountains = LIST { 460 }
+impassable_mountains = LIST { 460 }
 
 ############
 # WASTELAND
@@ -131,7 +131,7 @@ impassable_mountains = LIST { 418 }
 
 # IMPASSABLE SEA ZONES
 # These sea provinces cannot be crossed/sailed
-#impassable_seas = LIST { 459 }
+impassable_seas = LIST { 459 }
 
 # UNUSED PROVINCES
 # These provinces cause issues because they are passable land, but not part of any title.
