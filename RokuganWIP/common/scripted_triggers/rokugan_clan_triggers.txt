@@ -1,0 +1,34 @@
+######################
+# Major/Minor Clan Definition
+######################
+# One of the lieges should be a pure king. And is Feudal
+is_major_clan = {
+    any_liege_or_above = {
+        AND = {
+            government_has_flag = government_is_feudal
+            highest_held_title_tier.tier = tier_kingdom
+            # and is human & and is rokugani
+        }
+    }
+}
+
+# All liege above dont have a highest held title a kingdom. And is Feudal.
+is_minor_clan = {
+    any_liege_or_above = {
+        AND = {
+            government_has_flag = government_is_feudal
+            # and is human & and is rokugani
+        }
+        NOT = {
+            highest_held_title_tier.tier = tier_kingdom
+        }
+    }
+}
+
+
+######################
+# Clan Definition
+######################
+
+
+

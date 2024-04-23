@@ -87,6 +87,7 @@ Those changes are made as the map is smaller and all samourai shares the same la
 # How-to Different species (à la Lotr)
 - stat, life expectancies :  based on the heritage of the culture
 - in lotr_race_triggers : culture_conversion_to_allowed_culture & same_race. it is used everywhere to prevent weird culture stuff
+	- prevent bethrohal in lotr_betrothal_to_allowed
 	- prevent cultural hybridization for instance : lotr_is_spirit_culture_trigger usage in "scripted_triggers" dir, used in 00_culture_interactions & culture_events/culture_emergence_events
 	- present in scripted_rules\00_rules
 
