@@ -81,8 +81,15 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Shadowlands stuff (very low priority)
 - Change calendar to lunar calendar (cf Lotr "Gwaeron" month or other TC mod does)
 
-# Decisions
-- Bleach Hair White, crane clan
+# Decisions Done
+- Bleach Hair White, crane clan (and it's opposite)
+
+# How-to Different species (à la Lotr)
+- stat, life expectancies :  based on the heritage of the culture
+- in lotr_race_triggers : culture_conversion_to_allowed_culture & same_race. it is used everywhere to prevent weird culture stuff
+	- prevent cultural hybridization for instance : lotr_is_spirit_culture_trigger usage in "scripted_triggers" dir, used in 00_culture_interactions & culture_events/culture_emergence_events
+	- present in scripted_rules\00_rules
 
 ## Credit
+
 Rinbro for the japanese coat of arms, with the authorization of the [Shogunate](https://steamcommunity.com/sharedfiles/filedetails/?id=2253278582) mod's lead dev FUN.

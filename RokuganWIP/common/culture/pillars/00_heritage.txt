@@ -1,5 +1,10 @@
 ﻿heritage_crane = {
 	type = heritage
+
+	parameters = {
+		white_hair_valued = yes
+	}
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_crane
@@ -251,3 +256,13 @@ heritage_kaeru = {
 	}
 	audio_parameter = european
 }
+
+
+
+#######################
+### Gaijin
+#############
+
+#######################
+### Non-Human Heritages
+#############
