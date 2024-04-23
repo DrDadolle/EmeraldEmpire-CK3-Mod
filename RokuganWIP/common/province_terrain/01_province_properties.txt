@@ -333,7 +333,206 @@
 	winter_severity_bias = @extreme_winter
 }
 
+#### k_crab_clan
+### d_yasuki
+## c_junkin_province 
+175 = { # b_yasuki_yashiki 
+	winter_severity_bias = @mild_winter
+}
+176 = { # b_friendly_traveler_village 
+	winter_severity_bias = @warm_winter
+}
+177 = { # b_watch_tower_east 
+	winter_severity_bias = @warm_winter
+}
+## c_sunda_mizu_mura_province 
+178 = { # b_clear_water_village 
+	winter_severity_bias = @mild_winter
+}
+179 = { # b_fundai_village 
+	winter_severity_bias = @warm_winter
+}
+180 = { # b_shiro_kano 
+	winter_severity_bias = @warm_winter
+}
+181 = { # b_yasuki_hanko 
+	winter_severity_bias = @warm_winter
+}
+### d_hida
+## c_ishibei_province 
+182 = { # b_shiro_kakeguchi 
+	winter_severity_bias = @mild_winter
+}
+183 = { # b_castle_of_the_forgotten 
+	winter_severity_bias = @mild_winter
+}
+## c_kyoukan_province 
+184 = { # b_kyuden_hida 
+	winter_severity_bias = @mild_winter
+}
+185 = { # b_koten_seido 
+	winter_severity_bias = @mild_winter
+}
+186 = { # b_ugawari_toride 
+	winter_severity_bias = @mild_winter
+}
+187 = { # b_kyuden_moshibaru 
+	winter_severity_bias = @mild_winter
+}
+## c_juuin_province 
+188 = { # b_higashiyama_mura 
+	winter_severity_bias = @mild_winter
+}
+189 = { # b_nishiyama_mura 
+	winter_severity_bias = @mild_winter
+}
+## c_ishigaki_province 
+190 = { # b_shiro_ishigaki 
+	winter_severity_bias = @mild_winter
+}
+191 = { # b_shiro_ishigaki_2 
+	winter_severity_bias = @mild_winter
+}
+## c_garanto_province_crab 
+192 = { # b_nagai_aruki 
+	winter_severity_bias = @warm_winter
+}
+### d_kuni
+## c_adauchi_province 
+193 = { # b_shiro_kuni 
+	winter_severity_bias = @warm_winter
+}
+194 = { # b_castle_damned 
+	winter_severity_bias = @warm_winter
+}
+## c_midakai_province 
+195 = { # b_high_tree_village 
+	winter_severity_bias = @warm_winter
+}
+196 = { # b_kakita_breath 
+	winter_severity_bias = @warm_winter
+}
+### d_kaiu
+## c_yoake_province 
+197 = { # b_shiro_kaiu 
+	winter_severity_bias = @mild_winter
+}
+198 = { # b_razor_dawn_castle 
+	winter_severity_bias = @mild_winter
+}
+## c_kuda_province 
+199 = { # b_kuda_mura 
+	winter_severity_bias = @warm_winter
+}
+200 = { # b_maemikake 
+	winter_severity_bias = @warm_winter
+}
+## c_hokufuu_province 
+201 = { # b_maisuna_shiro 
+	winter_severity_bias = @warm_winter
+}
+202 = { # b_watch_tower_west 
+	winter_severity_bias = @warm_winter
+}
+203 = { # b_shattered_peak_castle 
+	winter_severity_bias = @mild_winter
+}
+204 = { # b_face_east_castle 
+	winter_severity_bias = @warm_winter
+}
+
+
+#### k_dragon_clan
+### d_kitsuki
+## c_shinpi_province
+288 = { # b_shiro_kitsuki 
+	winter_severity_bias = @severe_winter
+}
+289 = { # b_morning_frost_castle 
+	winter_severity_bias = @severe_winter
+}
+290 = { # b_keen_eyes_strike_village 
+	winter_severity_bias = @cold_winter
+}
+## c_kaitou
+291 = { # b_great_fall_castle 
+	winter_severity_bias = @severe_winter
+}
+## c_sinjutsu_province
+292 = { # b_toi_koku 
+	winter_severity_bias = @cold_winter
+}
+### d_mirumoto
+## c_gaien_province
+293 = { # b_foothills_keep 
+	winter_severity_bias = @cold_winter
+}
+## c_yakeishi_province
+294 = { # b_shiro_zurui 
+	winter_severity_bias = @severe_winter
+}
+295 = { # b_tetsu_kama_mura 
+	winter_severity_bias = @severe_winter
+}
+## c_toshibu_province
+296 = { # b_shiro_mirumoto 
+	winter_severity_bias = @cold_winter
+}
+297 = { # b_heibesu 
+	winter_severity_bias = @severe_winter
+}
+## c_kousou_province
+298 = { # b_shiransu 
+	winter_severity_bias = @severe_winter
+}
 ##c_chuda_province
 299 = { # b_shiro_chuda_ruins 
 	winter_severity_bias = @severe_winter
+}
+## b_nothern_tower_of_flame
+300 = { # b_heibesu 
+	winter_severity_bias = @extreme_winter
+}
+### d_mirumoto
+## c_mucha_province
+301 = { # b_furtherest_fortress 
+	winter_severity_bias = @extreme_winter
+}
+302 = { # b_fukurokujin_seido 
+	winter_severity_bias = @severe_winter
+}
+303 = { # b_shiro_togashi 
+	winter_severity_bias = @extreme_winter
+}
+304 = { # b_high_wall_village 
+	winter_severity_bias = @severe_winter
+}
+305 = { # b_moutain_summit_temple 
+	winter_severity_bias = @extreme_winter
+}
+### d_agasha
+## c_sabishii_province_dragon
+306 = { # b_yamasura 
+	winter_severity_bias = @extreme_winter
+}
+## c_kinenkan_province
+307 = { # b_dragon_breath_castle 
+	winter_severity_bias = @cold_winter
+}
+308 = { # b_suigeki_toshi 
+	winter_severity_bias = @severe_winter
+}
+309 = { # b_shiro_agasha 
+	winter_severity_bias = @severe_winter
+}
+
+
+
+
+
+
+
+## c_shinsei_last_hope 
+332 = { # b_shinsei_last_hope 
+	winter_severity_bias = @warm_winter
 }

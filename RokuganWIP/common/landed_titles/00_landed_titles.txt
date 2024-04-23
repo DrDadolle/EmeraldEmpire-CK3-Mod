@@ -816,6 +816,14 @@ e_rokugan = {
 		d_agasha = {
              color = { 27 74 15 }
              capital = c_kinenkan_province
+
+             c_sabishii_province_dragon = {
+                 color = { 35 129 12 }
+ 
+                 b_yamasura = {
+                     province = 306
+				}
+            }
              
              c_kinenkan_province = {
                  color = { 27 74 15 }
@@ -829,13 +837,6 @@ e_rokugan = {
 				 b_suigeki_toshi = {
                      province = 308
                  }
-            }
-			c_sabishii_province_dragon = {
-                 color = { 35 129 12 }
- 
-                 b_yamasura = {
-                     province = 306
-				}
             }
 		}
 	}
