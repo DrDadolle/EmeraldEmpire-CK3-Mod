@@ -82,6 +82,7 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Change calendar to lunar calendar (cf Lotr "Gwaeron" month or other TC mod does)
 
 # Decisions
-- Bleach Hair White
+- Bleach Hair White, crane clan
 
 ## Credit
+Rinbro for the japanese coat of arms, with the authorization of the [Shogunate](https://steamcommunity.com/sharedfiles/filedetails/?id=2253278582) mod's lead dev FUN.
