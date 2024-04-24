@@ -25,18 +25,27 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 
 # Fixes to do
-- check Kizoku title & Khan title => Ask help to FUN ? Rework of how title are displayed and calculated.
+- check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - clean up of traits (like removing Hajji  from pilgrim traits)
 - Change color of some textured emblmes (very low priority)
 - update holy_order decisions & dynasty decisions (taken from shogunate)
-- - fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
+- fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
+found_empire_decision)
+## To Refines
+- Cultures
+- Holy sites/ Religions
+- Characters (traits, stats)
+- Add more historic characters (source : V5 in priority, V4/V1 if family/relationship needed)
+- traits & their icons
+- dynasty & titles kamon
+- generated kamon à la shogunate for random dynasties/titles ?
+- localization (missing one and change already existing one, like "levies" -> "ashigaru levies" for instance)
 
 
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?
-- Seppuku as  part of "Bushido tradition". Special decision if "dishonored"
 - Special protection against conquest for un-aligned/minor/imperial lands => Casus belli way more costly + lose of prestige ?
 	- How to distinuing between imperial families (based on dynasty ?) and minor clan ? (when not King & liege is the emperor directly ?)
 	- What are the rules ??? Protected by imperial law if :
@@ -46,9 +55,15 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 			- Major clan is if liege or liege of liege is KING.
 		- It is "add_trait = broke_imperial_peace" "on_declaration" !
 		- Add it as a crime into the religion ?
-- Prevent imperial family from doing wars against other clans...? Dunno
-- Right/Left/UnderHand special trait for clan champion of crane/lion/scorpion ??
+- Prevent imperial family from doing wars against other clans...? 
+- Seppuku as  part of "Bushido tradition". Special decision if "dishonored"
+- Becoming Minor or Major Clan IS a special decision which requires the Emperor acknowledgement.
+	- Adaptation of the decision "create custom kingdom" (found_kingdom_decision & found_empire_decision from 80_major_decisions.txt)
+	- diseable the "create de_jure kingdom" option ?????
 - Blood feud (like Matsu vs Kakita)
+- Holy sites
+- special buildings
+- Special events setting the start of the clan wars
 - add trial by combat + choosing champion (AGOT mod does it ?)
 - Add ancestral clan & family founders
 - Special decisions
@@ -71,9 +86,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Change calendar to lunar calendar (cf Lotr "Gwaeron" month or other TC mod does)
 
 # Decisions Done
-- Bleach Hair White, crane clan (and it's opposite)
+- Bleach Hair White (crane) and it's opposite
+- Avenge Yasuki War (crane)
 
-# How-to Different species (à la Lotr)
+# Ideas
+###
+- Revival of Chuda dynasty ? Special phoenix decision stuff.
+### How-to Different species (à la Lotr)
 - stat, life expectancies :  based on the heritage of the culture
 - in lotr_race_triggers : culture_conversion_to_allowed_culture & same_race. it is used everywhere to prevent weird culture stuff
 	- prevent bethrohal in lotr_betrothal_to_allowed

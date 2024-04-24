@@ -14,13 +14,13 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Stewardship grants less bonus domains (from /6 to /7)
 
 ## Features
-
+- The world of Rokugan (1123) with its 7 great clans, and numerous minor clans
 
 ## Planned
 - Shadowlands provinces & Struggle
 - Magic
 - Blood Magic
+- more bookmark dates
 
-## Credit
-
+## Special Credit
 Rinbro for the japanese coat of arms, with the authorization of the [Shogunate](https://steamcommunity.com/sharedfiles/filedetails/?id=2253278582) mod's lead dev FUN.
