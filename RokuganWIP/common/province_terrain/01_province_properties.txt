@@ -530,9 +530,46 @@
 
 
 
-
-
 ## c_shinsei_last_hope 
 332 = { # b_shinsei_last_hope 
 	winter_severity_bias = @warm_winter
+}
+
+##### k_minor_clans
+### d_yoritomo
+## c_gotei_province
+337 = { # b_kyuden_gotei 
+	winter_severity_bias = @no_winter
+}
+## c_koutetsukan_province_mantis
+338 = { # b_iron_city_turtle 
+	winter_severity_bias = @no_winter
+}
+## c_kaze_province
+339 = { # b_kaimetsu_uo_seido 
+	winter_severity_bias = @no_winter
+}
+## c_inazuma_province
+340 = { # b_city_of_lightning 
+	winter_severity_bias = @no_winter
+}
+## c_irie_province
+341 = { # b_irie_toshi 
+	winter_severity_bias = @no_winter
+}
+342 = { # b_irie_empty 
+	winter_severity_bias = @no_winter
+}
+## c_tokigogachu_province
+343 = { # b_tokigogachu 
+	winter_severity_bias = @no_winter
+}
+## c_maigosera_province
+344 = { # b_maigosera_seido 
+	winter_severity_bias = @no_winter
+}
+### d_komori
+## c_komori_province
+335 = { # b_kyuden_komori 
+	winter_severity_bias = @no_winter
 }

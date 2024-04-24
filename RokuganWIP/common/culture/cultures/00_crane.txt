@@ -106,3 +106,30 @@ asahina = {
 		10 = asian
 	}
 }
+
+# Represent pre-yasuki war yasuki culture
+yasuki_crane = {
+	color = { 0.11 0.67 0.84 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_communal
+	heritage = heritage_crane
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_bushido
+		tradition_family_entrepreneurship
+		tradition_maritime_mercantilism
+		tradition_welcoming # instead of tradition_warrior_culture
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}

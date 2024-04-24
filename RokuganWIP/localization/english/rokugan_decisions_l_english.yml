@@ -9,5 +9,10 @@
  abandon_white_hair_decision:0 "Stopping Bleaching Hair"
  abandon_white_hair_decision_desc:0 "There are other ways to honor the spirit of Doji Hayaku and to show dedication to the Crane Clan. I do not wish to continue to show it by bleaching my hair white."
  abandon_white_hair_decision_tooltip:0 "I want to bleaching my hair white"
-abandon_white_hair_decision_confirm:0 "No more bleaching"
+ abandon_white_hair_decision_confirm:0 "No more bleaching"
  msg_removed_white_bleach:0 "You returned to your original hair color."
+ # decision_avenge_yasuki_war
+ decision_avenge_yasuki_war:0 "Avenge the Yasuki War"
+ decision_avenge_yasuki_war_desc:0 "In the late fourth century, the traitous Yasuki Kiringu, daimyo of the Yasuki Family defected our honorable Clan to join the Crab Clan. Now, the Yasuki Lands are once again part of our lands, and will be forever."
+ decision_avenge_yasuki_war_tooltip:0 "We can reclaim the Yasuki Lands once and for all."
+ decision_avenge_yasuki_war_confirm:0 "Avenge our ancestors"

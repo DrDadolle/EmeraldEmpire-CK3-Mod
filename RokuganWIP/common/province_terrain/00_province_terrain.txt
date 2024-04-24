@@ -2,7 +2,8 @@
 default_sea=sea
 default_coastal_sea=coastal_sea
 
-#Crane
+###############
+### Crane
 1=plains
 3=plains
 4=plains
@@ -18,8 +19,8 @@ default_coastal_sea=coastal_sea
 32=farmlands
 33=mountains
 34=wetlands
-
-#Lion
+###############
+### Lion
 46=hills
 47=mountains
 48=hills
@@ -103,17 +104,20 @@ default_coastal_sea=coastal_sea
 124=mountains
 125=mountains
 126=mountains
-#Moshi
+###############
+### Moshi
 127=mountains
 128=mountains
-#Monks
+###############
+### Monks
 129=plains
 130=plains
 131=forest
 132=plains
 133=mountains
 
-#Crab
+###############
+### Crab
 175=hills
 176=plains
 177=wetlands
@@ -145,7 +149,8 @@ default_coastal_sea=coastal_sea
 203=mountains
 204=plains
 
-#Dragon
+###############
+### Dragon
 288=mountains
 289=mountains
 290=hills
@@ -173,7 +178,8 @@ default_coastal_sea=coastal_sea
 320=hills
 
 332=hills
-
+###############
+### Mantis & Komori
 337=hills
 338=hills
 339=hills
