@@ -3,7 +3,6 @@ CK3 Mod of the Emerald Empire Rokugan from the TTRPG L5R.
 It is a WIP, not even alpha state
 
 
-
 ## How to install
 Copy paste everything in your mod folder. Don't forget to update the path in RokuganWIP.mod.
 
@@ -17,6 +16,7 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - The world of Rokugan (1123) with its 7 great clans, and numerous minor clans
 
 ## Planned
+- Special decisions for each clan
 - Shadowlands provinces & Struggle
 - Magic
 - Blood Magic

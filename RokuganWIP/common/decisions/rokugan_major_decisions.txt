@@ -17,7 +17,12 @@ decision_avenge_yasuki_war = {
         is_landed = yes
         culture = { has_cultural_pillar = heritage_crane }
         
-        # Yasuki duchy not de jure in Crane lands
+        # Yasuki duchy not already de jure in Crane lands
+		title:d_yasuki = {
+			NOT = {
+				de_jure_liege = title:k_crane_clan
+			}
+		}
 
         # Can be done only once
         NOT = {
