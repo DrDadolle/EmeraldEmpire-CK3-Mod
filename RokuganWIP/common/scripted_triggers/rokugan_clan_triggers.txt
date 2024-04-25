@@ -8,6 +8,16 @@ is_under_e_rokugan_rule = {
     top_liege = { primary_title = title:e_rokugan }
 }
 
+# Hard-coded for now. Maybe it'll be a special flag on a title later ?
+is_imperial_family = {
+    OR = {
+        dynasty = dynasty:hantei
+        dynasty = dynasty:otomo
+        dynasty = dynasty:miya
+        dynasty = dynasty:seppun
+    }
+
+}
 
 
 # One of the lieges should be a pure king. And is Feudal

@@ -16,16 +16,16 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - name list by culture (mainly Kaito, Dragon & Unicorn ?)
 - Add more historic characters (source : V5 in priority, V4/V1 if family/relationship needed)
 - traits & their icons
-- dynasty & titles kamon
-- generated kamon à la shogunate for random dynasties/titles ?
+- dynasty & titles kamon for vassal families, some minor clans (moth), reworked the existing ones
+- Question : generated kamon à la shogunate for random dynasties/titles ?
 - localization (missing one and change already existing one, like "levies" -> "ashigaru levies" for instance)
-
+- How Minor/Major clan titles are handled
 
 ## short term goals 
 - Finish Unicorn Lands winter & terrain
 - Finish Crane lands winter & terrain
 - Finish minor, unaligned & imperial winter & terrain
--Fix river width
+- Fix river width
 - Have a not-so-ugly heightmap
 	- Fix river & coast 
 - Paint the map with materials
@@ -49,20 +49,12 @@ found_empire_decision)
 
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?
-- Special protection against conquest for un-aligned/minor/imperial lands => Casus belli way more costly + lose of prestige ?
-	- How to distinuing between imperial families (based on dynasty ?) and minor clan ? (when not King & liege is the emperor directly ?)
-	- What are the rules ??? Protected by imperial law if :
-		- Target as smaller rank => gains trait "broke imperial peace" ?
-		- or Target is imperial Dynasty => gains trait excommunicated-like "attacked imperial family" (so others can attack you for it)
-		- is "Major Clan" and Target is not "Major Clan" => gains trait "broke imperial peace" ?
-			- Major clan is if liege or liege of liege is KING.
-		- It is "add_trait = broke_imperial_peace" "on_declaration" !
-		- Add it as a crime into the religion ?
-- Prevent imperial family from doing wars against other clans...? 
+- Prevent imperial family from doing wars against other clans...? Only for AI ?
 - Seppuku as  part of "Bushido tradition". Special decision if "dishonored"
 - Becoming Minor or Major Clan IS a special decision which requires the Emperor acknowledgement.
 	- Adaptation of the decision "create custom kingdom" (found_kingdom_decision & found_empire_decision from 80_major_decisions.txt)
 	- diseable the "create de_jure kingdom" option ?????
+- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance.
 - Blood feud (like Matsu vs Kakita)
 - Holy sites
 - special buildings
