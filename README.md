@@ -12,6 +12,10 @@ Those changes are made as the map is smaller and all samourai shares the same la
 - Maximum 1 held duchy (if you are king or higher) before opinion loss
 - Stewardship grants less bonus domains (from /6 to /7)
 
+Wars requires more prestige within the emerald empire if
+- You are a Major Clan & target is minor Clan OR target primary title has a lower title (Minor Clan Protection by Imperial Edict)
+- You are a Major Clan & the target is a Major Clan (No Major Clan Warfare by Imperial Edict)
+
 ## Features
 - The world of Rokugan (1123) with its 7 great clans, and numerous minor clans
 
