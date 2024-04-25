@@ -8,8 +8,10 @@
 		is_landed = yes
 		faith = {
 			NOR = {
-				religion_tag = shinto_religion
-				religion_tag = eastern_pagan_religion
+				religion_tag = fortunism_religion
+				religion_tag = ancestors_religion
+				religion_tag = unicorn_religion
+				religion_tag = shinseism_religion
 			}		
 		}
 		NOT = {
@@ -18,13 +20,6 @@
 					holy_order_patron = root
 					save_temporary_scope_as = order
 				}
-			}
-		}
-		# Jomsvikings should use their special decision if appropriate.
-		trigger_if = {
-			limit = { has_fp1_dlc_trigger = yes }
-			faith = {
-				NOT = { fp1_valid_norse_faith_for_jomsvikings_trigger = yes }
 			}
 		}
 

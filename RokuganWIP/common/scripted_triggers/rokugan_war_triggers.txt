@@ -1,36 +1,32 @@
-is_war_respecting_imperial_peace = {
-
-    # scope:receiver is equal or stronger than scope:attacker (in title)
-    # AND (scope:attacker is_minor_clan OR scope:defender is_major_clan)
-    # Reuse of war_declarer_needs_hook_on_liege
-    scope:actor = {
-		trigger_if = {
-			limit = {
-				is_independent_ruler = no
-				liege = scope:recipient.liege
-				NOT = { liege = scope:recipient }
-				liege = { has_realm_law_flag = vassal_internal_wars_banned }
-				NOT = {
-					vassal_contract_has_flag = vassal_contract_war_override
+war_declarer_not_respecting_imperial_peace = {
+	#common_cb_prestige_cost_multiplier
+    scope:attacker = {
+		AND = {
+			is_under_e_rokugan_rule = yes
+			scope:defender.is_under_e_rokugan_rule = yes
+			#liege is rokugani emperor
+			top_liege = { primary_title = title:e_rokugan }
+			OR = {
+				AND = {
+					scope:attacker = { is_major_clan = yes }
+					scope:defender = { is_minor_clan = yes }
 				}
+				scope:defender.highest_held_title_tier < scope:attacker.highest_held_title_tier
 			}
-			always = yes
-		}
-		trigger_else_if = {
-			limit = {
-				is_independent_ruler = no
-				NOT = { liege = scope:recipient }
-				liege = { has_realm_law_flag = vassal_all_wars_banned }
-				NOT = {
-					vassal_contract_has_flag = vassal_contract_war_override
-				}
-			}
-			always = yes
-		}
-		trigger_else = {
-			always = no
-		}
+		}	
 	}
+}
 
-
+war_declarer_declaring_great_clan_war = {
+	#common_cb_prestige_cost_multiplier
+    scope:attacker = {
+			AND = {
+				#Prevent great clan vs great clan wars
+				is_under_e_rokugan_rule = yes
+				scope:defender.is_under_e_rokugan_rule = yes
+				# both are major clan champion
+				scope:attacker.highest_held_title_tier = tier_kingdom
+				scope:defender.highest_held_title_tier = tier_kingdom
+			}
+	}
 }

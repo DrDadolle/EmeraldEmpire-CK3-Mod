@@ -1,12 +1,27 @@
 ######################
 # Major/Minor Clan Definition
 ######################
+# Function to know when someone is under the emperor's reign
+is_under_e_rokugan_rule = {
+    is_independent_ruler = no
+    #liege is rokugani emperor
+    top_liege = { primary_title = title:e_rokugan }
+}
+
+
+
 # One of the lieges should be a pure king. And is Feudal
 is_major_clan = {
-    any_liege_or_above = {
+    is_independent_ruler = no
+    OR = {
+        any_liege_or_above = {
+            government_has_flag = government_is_feudal
+            highest_held_title_tier = tier_kingdom
+            # and is human & and is rokugani
+        }
         AND = {
             government_has_flag = government_is_feudal
-            highest_held_title_tier.tier = tier_kingdom
+            highest_held_title_tier = tier_kingdom
             # and is human & and is rokugani
         }
     }
@@ -14,13 +29,27 @@ is_major_clan = {
 
 # All liege above dont have a highest held title a kingdom. And is Feudal.
 is_minor_clan = {
-    any_liege_or_above = {
-        AND = {
+    is_independent_ruler = no
+    AND = {
+        government_has_flag = government_is_feudal
+        liege = {
             government_has_flag = government_is_feudal
-            # and is human & and is rokugani
+            NOT = {
+                highest_held_title_tier = tier_kingdom
+                # and is human & and is rokugani
+            }
+            liege = {
+                government_has_flag = government_is_feudal
+                NOT = {
+                    highest_held_title_tier = tier_kingdom
+                    # and is human & and is rokugani
+                }
+            }
         }
         NOT = {
-            highest_held_title_tier.tier = tier_kingdom
+             highest_held_title_tier = tier_kingdom
+
+             # and is human & and is rokugani
         }
     }
 }
