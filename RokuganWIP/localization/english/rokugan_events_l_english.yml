@@ -1,0 +1,25 @@
+﻿l_english:
+ ############################
+ ###### MAJOR DECISION
+ ############################
+
+ ############################
+ ###### MINOR DECISION
+ ############################
+ seppuku_decision_event.0001.t:0 "Today Is My Day"
+ seppuku_decision_event.0001.desc:0 "By cutting open my stomach, I shall prove my worth as a samurai to my clan and my ancestors!"
+ seppuku_decision_event.0001.a:0 "Commit Seppuku"
+ seppuku_decision_event.0001.b:0 "It is not my time to die."
+ shogunate_seppuku.0002.a0:0 "I shall share my fate with the castle. Retainer, assist me!"
+ shogunate_seppuku.0002.a1:0 "I shall share my fate with the castle. [supporter1.GetFirstNameNoTooltip], assist me!"
+ shogunate_seppuku.0002.a2:0 "I shall share my fate with the castle. [supporter2.GetFirstNameNoTooltip], assist me!"
+shogunate_seppuku.0002.c:0 "I hope to wait for the rematch, even if I live in shame."
+ shogunate_seppuku.0002.d:0 "In this situation, it's a dog's death to throw away my life."
+ shogunate_seppuku.0002.e:0 "No! I don't want Harakiri! Please help me!"
+ shogunate_seppuku.0002.f:0 "It would be a shame for generations that I avoided Seppuku."
+
+ msg_demanded_seppuku:0 "Committed Seppuku"
+ msg_demanded_seppuku_desc:0 "Your vassal has honoured your request and proven their eternal honour by committing Seppuku"
+
+ death_seppuku:0 "committed Seppuku"
+ death_seppuku_killer:0 "committed Seppuku, and [TARGET_CHARACTER.GetUINameNotMe] assisted in terminating [CHARACTER.GetHerHis] life"

@@ -3,20 +3,21 @@
 ######################
 # Function to know when someone is under the emperor's reign
 is_under_e_rokugan_rule = {
-    is_independent_ruler = no
-    #liege is rokugani emperor
-    top_liege = { primary_title = title:e_rokugan }
+    AND = {
+        is_independent_ruler = no
+        #liege is rokugani emperor
+        top_liege = { primary_title = title:e_rokugan }
+    }
 }
 
 # Hard-coded for now. Maybe it'll be a special flag on a title later ?
 is_imperial_family = {
     OR = {
-        dynasty = dynasty:hantei
-        dynasty = dynasty:otomo
-        dynasty = dynasty:miya
-        dynasty = dynasty:seppun
+        dynasty = dynasty:2100031 #Hantei
+        dynasty = dynasty:2100032 #Otomo
+        dynasty = dynasty:2100033 #Seppun
+        dynasty = dynasty:2100034 # Miya
     }
-
 }
 
 

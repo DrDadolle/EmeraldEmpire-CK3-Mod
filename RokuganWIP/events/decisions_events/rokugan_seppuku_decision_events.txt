@@ -1,0 +1,277 @@
+﻿namespace = rokugan_seppuku_decision
+
+# Commit seppuku by decision
+seppuku_decision_event.0001 = {
+	type = character_event
+	title = seppuku_decision_event.0001.t
+	desc = {
+		first_valid = {
+			desc = seppuku_decision_event.0001.desc
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = throne_room_ruler
+	}
+	theme = death
+	#override_background = { reference = shogunate_burning_castle }
+
+	immediate = {
+		play_music_cue = mx_cue_stress
+		if = {
+			every_courtier = {
+				limit = {
+					NOT = { is_in_list = supporters }
+					exists = location
+					location = root.location
+					is_imprisoned = no
+					is_capable_adult = yes
+					exists = dynasty
+					culture = { has_cultural_tradition = tradition_bushido }
+				}
+				add_to_list = supporters
+			}
+			if = {
+				limit = {
+					list_size = {
+						name = supporters
+						value >= 1
+					}
+				}
+				ordered_in_list = {
+					list = supporters
+					order_by = {
+						add = calc_rough_root_opinion_value
+					}
+					position = 0
+					save_scope_as = supporter1
+				}
+			}
+			if = {
+				limit = {
+					list_size = {
+						name = supporters
+						value >= 2
+					}
+				}
+				ordered_in_list = {
+					list = supporters
+					order_by = {
+						add = calc_rough_root_opinion_value
+					}
+					position = 1
+					save_scope_as = supporter2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = shogunate_seppuku.0002.a0
+		# 		name = seppuku_decision_event.0001.a
+
+		trigger = {
+			is_imprisoned = no
+			list_size = {
+				name = supporters
+				value = 0
+			}
+		}
+
+		dynasty ?= {
+			add_dynasty_prestige = medium_dynasty_prestige_gain
+		}
+		death = {
+			death_reason = death_seppuku
+		}
+
+		root = {
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_demanded_seppuku
+					right_icon = root
+					custom_tooltip = msg_demanded_seppuku_desc
+				}
+			}
+		}
+
+		# hidden_effect = {
+		# 	every_player = {
+		# 		limit = {
+		# 			NOT = { this = scope:actor }
+		# 		}
+		# 		trigger_event = shogunate_seppuku.0005
+		# 	}
+		# }
+	}
+
+	option = {
+		name = shogunate_seppuku.0002.a1
+
+		trigger = {
+			is_imprisoned = no
+			list_size = {
+				name = supporters
+				value >= 1
+			}
+		}
+
+		dynasty ?= {
+			add_dynasty_prestige = medium_dynasty_prestige_gain
+		}
+		death = {
+			death_reason = death_seppuku
+			killer = scope:supporter1
+		}
+
+		root = {
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_demanded_seppuku
+					right_icon = root
+					custom_tooltip = msg_demanded_seppuku_desc
+				}
+			}
+		}
+		# hidden_effect = {
+		# 	every_player = {
+		# 		limit = {
+		# 			NOT = { this = scope:actor }
+		# 		}
+		# 		trigger_event = shogunate_seppuku.0005
+		# 	}
+		# }
+	}
+
+	option = {
+		name = shogunate_seppuku.0002.a2
+
+		trigger = {
+			is_imprisoned = no
+			list_size = {
+				name = supporters
+				value >= 2
+			}
+		}
+
+		dynasty ?= {
+			add_dynasty_prestige = medium_dynasty_prestige_gain
+		}
+		death = {
+			death_reason = death_seppuku
+			killer = scope:supporter2
+		}
+
+		root = {
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_demanded_seppuku
+					right_icon = root
+					custom_tooltip = msg_demanded_seppuku_desc
+				}
+			}
+		}
+		# hidden_effect = {
+		# 	every_player = {
+		# 		limit = {
+		# 			NOT = { this = scope:actor }
+		# 		}
+		# 		trigger_event = shogunate_seppuku.0005
+		# 	}
+		# }
+	}
+
+	# option = {
+	# 	name = seppuku_decision_event.0001.b
+	# }
+
+	option = {
+		name = shogunate_seppuku.0002.c
+		trigger = {
+			is_imprisoned = no
+			OR = {
+				has_trait = ambitious
+				has_trait = vengeful
+				has_trait = patient
+			}
+		}
+		stress_impact = {
+			brave     = major_stress_impact_gain
+			stubborn  = medium_stress_impact_gain
+			impatient = medium_stress_impact_gain
+			just      = minor_stress_impact_gain
+			zealous   = minor_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = shogunate_seppuku.0002.d
+		trigger = {
+			is_imprisoned = no
+			OR = {
+				has_trait = arbitrary
+				has_trait = cynical
+			}
+		}
+
+		stress_impact = {
+			brave     = major_stress_impact_gain
+			stubborn  = medium_stress_impact_gain
+			impatient = medium_stress_impact_gain
+			just      = minor_stress_impact_gain
+			zealous   = minor_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = shogunate_seppuku.0002.e
+
+		trigger = {
+			is_imprisoned = no
+			OR = {
+				has_trait = craven
+				has_trait = lazy
+			}
+		}
+		stress_impact = {
+			brave     = major_stress_impact_gain
+			stubborn  = medium_stress_impact_gain
+			impatient = medium_stress_impact_gain
+			just      = minor_stress_impact_gain
+			zealous   = minor_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = shogunate_seppuku.0002.f
+		trigger = {
+			OR = {
+				is_imprisoned = yes
+				AND = {
+					NOT = { has_trait = ambitious }
+					NOT = { has_trait = vengeful }
+					NOT = { has_trait = patient }
+					NOT = { has_trait = arbitrary }
+					NOT = { has_trait = cynical }
+					NOT = { has_trait = craven }
+					NOT = { has_trait = lazy }
+				}
+			}
+		}
+
+		stress_impact = {
+			base      = medium_stress_impact_gain
+			brave     = major_stress_impact_gain
+			stubborn  = medium_stress_impact_gain
+			impatient = medium_stress_impact_gain
+			just      = minor_stress_impact_gain
+			zealous   = minor_stress_impact_gain
+		}
+	}
+
+
+}

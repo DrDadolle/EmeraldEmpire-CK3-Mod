@@ -3,7 +3,6 @@
     scope:attacker = {
 		AND = {
 			is_under_e_rokugan_rule = yes
-			scope:defender.is_under_e_rokugan_rule = yes
 			#liege is rokugani emperor
 			top_liege = { primary_title = title:e_rokugan }
 			OR = {
@@ -15,18 +14,44 @@
 			}
 		}	
 	}
+	scope:attacker = {
+		AND = {
+			is_under_e_rokugan_rule = yes
+		}
+	}
 }
 
 war_declarer_declaring_great_clan_war = {
 	#common_cb_prestige_cost_multiplier
     scope:attacker = {
-			AND = {
-				#Prevent great clan vs great clan wars
-				is_under_e_rokugan_rule = yes
-				scope:defender.is_under_e_rokugan_rule = yes
-				# both are major clan champion
-				scope:attacker.highest_held_title_tier = tier_kingdom
-				scope:defender.highest_held_title_tier = tier_kingdom
-			}
+		AND = {
+			#Prevent great clan vs great clan wars
+			is_under_e_rokugan_rule = yes
+			# both are major clan champion
+			highest_held_title_tier = tier_kingdom
+		}
+
+	}
+	scope:defender = {
+		AND = {
+			is_under_e_rokugan_rule = yes
+			highest_held_title_tier = tier_kingdom
+		}
+	}
+}
+
+war_declarer_declaring_war_on_imperial_family = {
+	#common_cb_prestige_cost_multiplier
+	scope:attacker = {
+		AND = {
+			#Prevent war vs imperial family
+			is_under_e_rokugan_rule = yes
+		}
+	}
+	scope:defender = {
+		AND = {
+			is_under_e_rokugan_rule = yes
+			is_imperial_family = yes
+		}
 	}
 }
