@@ -34,10 +34,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Climates
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - Add river map
-
+- Create MaA for each great clan, maybe each minor one
+	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
+	- 00_men_at_arms_values to update too
+	- update culture_has_skirmisher_maa to each culture with such maa
 
 ## Fixes to do
-- Finish Seppuku decision. Add seppuku character interaction ! (and made by liege too). No stress if back up please
+- Finish Seppuku decision.
 - Add "is from samurai culture"
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - clean up of traits (like removing Hajji  from pilgrim traits)
@@ -52,7 +55,6 @@ found_empire_decision)
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?
 - Prevent imperial family from doing wars against other clans...? Only for AI ?
-- Seppuku as  part of "Bushido tradition". Special decision if "dishonored"
 - Becoming Minor or Major Clan IS a special decision which requires the Emperor acknowledgement.
 	- Adaptation of the decision "create custom kingdom" (found_kingdom_decision & found_empire_decision from 80_major_decisions.txt)
 	- diseable the "create de_jure kingdom" option ?????
@@ -66,12 +68,11 @@ found_empire_decision)
 - Special decisions
 	-Become Great Clan : Requires X Duchy or Y counties. Emperor positive relation. Emperor MUST be direct liege. Name of Duchy Title => Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
 		- No other ways to create a kingdom title. Basically rework existing mechanics
-	- Retake Yasuki Lands as Crane Clan
  	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
 	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
-
+- Add demand seppuku character interaction ? (and made by liege too)
 - Special Phoenix champion succession
 - Phoenix Council of 5 special government
 - Togashi special succession ?
@@ -82,9 +83,11 @@ found_empire_decision)
 - Shadowlands stuff (very low priority)
 - Change calendar to lunar calendar (cf Lotr "Gwaeron" month or other TC mod does)
 
+
 # Decisions Done
 - Bleach Hair White (crane) and it's opposite
 - Avenge Yasuki War (crane)
+- Commit Seppuku (when dishonored)
 
 # Ideas
 ###

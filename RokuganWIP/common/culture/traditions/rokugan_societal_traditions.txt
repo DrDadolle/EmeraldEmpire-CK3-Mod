@@ -30,6 +30,7 @@ tradition_bushido = {
 		can_duel_rivals = yes
 		can_use_sparring_duel = yes
 		allows_adoption = yes
+		can_seppuku = yes
 	}
 	
 	character_modifier = {

@@ -10,6 +10,11 @@ is_under_e_rokugan_rule = {
     }
 }
 
+# Is from samurai culture
+is_from_samurai_culture = {
+        culture = { has_cultural_tradition =  = tradition_bushido }
+}
+
 # Hard-coded for now. Maybe it'll be a special flag on a title later ?
 is_imperial_family = {
     OR = {
