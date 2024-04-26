@@ -11,9 +11,6 @@ commit_seppuku_decision = {
 	cooldown = { days = 0 }
 
 	is_shown = {
-		#FIXME
-		# FOR NOW, IT CHAIN KILLS EVERYONE IN THE EMPIRE WTF
-		always = no
 		is_landed = yes
 		is_adult = yes
 		is_ruler = yes
