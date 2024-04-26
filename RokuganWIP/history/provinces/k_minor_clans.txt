@@ -20,12 +20,12 @@
 135 = {		#b_slow_tide_harbor
 	culture = kasuga
 	religion = seven_fortunes
-	holding = church_holding
+	holding = city_holding
 }
 136 = {		#b_kasuga_seido
 	culture = kasuga
 	religion = seven_fortunes
-	holding = city_holding
+	holding = church_holding
 }
 ##d_suzume ###################################
 ###c_suzume_province

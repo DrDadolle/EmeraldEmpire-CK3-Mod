@@ -115,6 +115,29 @@ default_coastal_sea=coastal_sea
 131=forest
 132=plains
 133=mountains
+###############
+### Kasuga
+134=plains
+135=plains
+136=plains
+###############
+### Imperial families
+1=hills
+137=plains #Emerald Champion castle
+138=hills
+139=plains
+140=farmlands
+141=farmlands
+142=plains
+143=plains
+144=plains
+145=plains
+146=plains
+147=plains
+148=plains
+149=plains
+150=plains
+333=mountains
 
 ###############
 ### Scorpion
@@ -227,6 +250,27 @@ default_coastal_sea=coastal_sea
 253=plains
 254=hills
 
+
+###############
+### Suzume
+255=wetlands
+###############
+### Kitsune
+256=farmlands
+257=forest
+###############
+### Usagi
+258=forest
+259=farmlands
+260=plains
+###############
+### Tsuruchi
+261=hills
+262=mountains
+263=hills
+264=plains
+265=hills
+
 ###############
 ### Dragon
 288=mountains
@@ -251,11 +295,21 @@ default_coastal_sea=coastal_sea
 307=mountains
 308=mountains
 309=mountains
+###############
+### Nekoma
+318=plains
 
+###############
+### Tonbo
 319=hills
 320=hills
 
 332=hills
+###############
+### Ichiro
+334=mountains
+335=mountains
+336=mountains
 ###############
 ### Mantis & Komori
 337=hills
@@ -267,3 +321,10 @@ default_coastal_sea=coastal_sea
 343=plains
 344=hills
 345=forest
+###############
+### Toritaka
+346=hills
+347=hills
+###############
+### Kaikoga
+406=forest
