@@ -39,7 +39,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- update culture_has_skirmisher_maa to each culture with such maa
 
 ## Fixes to do
-- Fix Seppuku decision : Right now, it chains kills everyone for some reasons...
+- Finish Seppuku decision.
 - Add "is from samurai culture"
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - clean up of traits (like removing Hajji  from pilgrim traits)
@@ -80,6 +80,7 @@ found_empire_decision)
 - Shindoshi stuff (very low priority)
 - Maho stuff (very low priority)
 - Shadowlands stuff (very low priority)
+
 
 
 # Decisions Done
