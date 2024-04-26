@@ -1,1 +1,167 @@
-﻿
+﻿namespace = rokugan_seppuku_decision
+
+# Commit seppuku by decision
+rokugan_seppuku_decision_event.0001 = {
+	type = character_event
+	title = rokugan_seppuku_decision.0001.t
+	desc = {
+		first_valid = {
+			desc = rokugan_seppuku_decision.0001.desc
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = throne_room_ruler
+	}
+	theme = death
+	#override_background = { reference = shogunate_burning_castle }
+
+	immediate = {
+		play_music_cue = mx_cue_stress
+		if = {
+			every_courtier = {
+				limit = {
+					NOT = { is_in_list = supporters }
+					exists = location
+					location = root.location
+					is_imprisoned = no
+					is_capable_adult = yes
+					exists = dynasty
+					culture = { has_cultural_tradition = tradition_bushido }
+				}
+				add_to_list = supporters
+			}
+			if = {
+				limit = {
+					list_size = {
+						name = supporters
+						value >= 1
+					}
+				}
+				ordered_in_list = {
+					list = supporters
+					order_by = {
+						add = calc_rough_root_opinion_value
+					}
+					position = 0
+					save_scope_as = supporter1
+				}
+			}
+			if = {
+				limit = {
+					list_size = {
+						name = supporters
+						value >= 2
+					}
+				}
+				ordered_in_list = {
+					list = supporters
+					order_by = {
+						add = calc_rough_root_opinion_value
+					}
+					position = 1
+					save_scope_as = supporter2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rokugan_seppuku_decision.0002.a0
+
+		trigger = {
+			is_imprisoned = no
+			list_size = {
+				name = supporters
+				value = 0
+			}
+		}
+
+		dynasty ?= {
+			add_dynasty_prestige = minor_dynasty_prestige_gain
+		}
+		death = {
+			death_reason = death_seppuku
+		}
+
+		root = {
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_demanded_seppuku
+					right_icon = root
+					custom_tooltip = msg_demanded_seppuku_desc
+				}
+			}
+		}
+
+	}
+
+	option = {
+		name = rokugan_seppuku_decision.0002.a1
+
+		trigger = {
+			is_imprisoned = no
+			list_size = {
+				name = supporters
+				value >= 1
+			}
+		}
+
+		dynasty ?= {
+			add_dynasty_prestige = minor_dynasty_prestige_gain
+		}
+		death = {
+			death_reason = death_seppuku
+			killer = scope:supporter1
+		}
+
+		root = {
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_demanded_seppuku
+					right_icon = root
+					custom_tooltip = msg_demanded_seppuku_desc
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rokugan_seppuku_decision.0002.a2
+
+		trigger = {
+			is_imprisoned = no
+			list_size = {
+				name = supporters
+				value >= 2
+			}
+		}
+
+		dynasty ?= {
+			add_dynasty_prestige = minor_dynasty_prestige_gain
+		}
+		death = {
+			death_reason = death_seppuku
+			killer = scope:supporter2
+		}
+
+		root = {
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_demanded_seppuku
+					right_icon = root
+					custom_tooltip = msg_demanded_seppuku_desc
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rokugan_seppuku_decision.0001.b
+	}
+
+}

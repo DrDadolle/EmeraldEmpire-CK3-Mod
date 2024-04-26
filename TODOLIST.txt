@@ -22,7 +22,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - How Minor/Major clan titles are handled
 
 ## short term goals 
-- Finish Unicorn Lands winter & terrain
 - Finish Crane lands winter & terrain
 - Finish minor, unaligned & imperial winter & terrain
 - Fix river width
@@ -40,7 +39,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- update culture_has_skirmisher_maa to each culture with such maa
 
 ## Fixes to do
-- Finish Seppuku decision.
+- Fix Seppuku decision : Right now, it chains kills everyone for some reasons...
 - Add "is from samurai culture"
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - clean up of traits (like removing Hajji  from pilgrim traits)
@@ -81,7 +80,6 @@ found_empire_decision)
 - Shindoshi stuff (very low priority)
 - Maho stuff (very low priority)
 - Shadowlands stuff (very low priority)
-- Change calendar to lunar calendar (cf Lotr "Gwaeron" month or other TC mod does)
 
 
 # Decisions Done
