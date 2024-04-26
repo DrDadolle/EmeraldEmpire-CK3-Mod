@@ -1,0 +1,23 @@
+﻿seppuku_effect = {
+
+	$VICTIM$ = {
+		save_scope_as = victim
+	}
+
+	show_as_tooltip = {
+		$VICTIM$ = {
+			death = {
+				death_reason = death_seppuku
+			}
+		}
+	}
+
+	#If you have the Human Sacrifice tenet, give victim an appropriate death reason
+	hidden_effect = {
+		$VICTIM$ = {
+			death = {
+				death_reason = death_seppuku
+			}
+		}
+	}
+}
