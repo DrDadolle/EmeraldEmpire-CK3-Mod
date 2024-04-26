@@ -15,14 +15,14 @@ commit_seppuku_decision = {
 		is_adult = yes
 		is_ruler = yes
 		#Dishonored
-		#prestige_level = 0
+		prestige_level = 0
 		#Can seppuku
 		culture = { has_cultural_parameter = can_seppuku }
 	}
 
 	effect = {
 		root = { 
-			trigger_event = seppuku_decision_event.0001 
+			trigger_event = rokugan_seppuku_decision_event.0001 
 		}
 		custom_tooltip = commit_seppuku_decision_effect_tooltip
 	}
