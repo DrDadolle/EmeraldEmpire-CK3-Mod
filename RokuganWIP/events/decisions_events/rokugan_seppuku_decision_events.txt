@@ -1,12 +1,12 @@
 ﻿namespace = rokugan_seppuku_decision
 
 # Commit seppuku by decision
-rokugan_seppuku_decision_event.0001 = {
+seppuku_decision_event.0001 = {
 	type = character_event
-	title = rokugan_seppuku_decision.0001.t
+	title = seppuku_decision_event.0001.t
 	desc = {
 		first_valid = {
-			desc = rokugan_seppuku_decision.0001.desc
+			desc = seppuku_decision_event.0001.desc
 		}
 	}
 
@@ -68,7 +68,8 @@ rokugan_seppuku_decision_event.0001 = {
 	}
 
 	option = {
-		name = rokugan_seppuku_decision.0002.a0
+		name = shogunate_seppuku.0002.a0
+		# 		name = seppuku_decision_event.0001.a
 
 		trigger = {
 			is_imprisoned = no
@@ -79,7 +80,7 @@ rokugan_seppuku_decision_event.0001 = {
 		}
 
 		dynasty ?= {
-			add_dynasty_prestige = minor_dynasty_prestige_gain
+			add_dynasty_prestige = medium_dynasty_prestige_gain
 		}
 		death = {
 			death_reason = death_seppuku
@@ -96,10 +97,18 @@ rokugan_seppuku_decision_event.0001 = {
 			}
 		}
 
+		# hidden_effect = {
+		# 	every_player = {
+		# 		limit = {
+		# 			NOT = { this = scope:actor }
+		# 		}
+		# 		trigger_event = shogunate_seppuku.0005
+		# 	}
+		# }
 	}
 
 	option = {
-		name = rokugan_seppuku_decision.0002.a1
+		name = shogunate_seppuku.0002.a1
 
 		trigger = {
 			is_imprisoned = no
@@ -110,7 +119,7 @@ rokugan_seppuku_decision_event.0001 = {
 		}
 
 		dynasty ?= {
-			add_dynasty_prestige = minor_dynasty_prestige_gain
+			add_dynasty_prestige = medium_dynasty_prestige_gain
 		}
 		death = {
 			death_reason = death_seppuku
@@ -127,10 +136,18 @@ rokugan_seppuku_decision_event.0001 = {
 				}
 			}
 		}
+		# hidden_effect = {
+		# 	every_player = {
+		# 		limit = {
+		# 			NOT = { this = scope:actor }
+		# 		}
+		# 		trigger_event = shogunate_seppuku.0005
+		# 	}
+		# }
 	}
 
 	option = {
-		name = rokugan_seppuku_decision.0002.a2
+		name = shogunate_seppuku.0002.a2
 
 		trigger = {
 			is_imprisoned = no
@@ -141,7 +158,7 @@ rokugan_seppuku_decision_event.0001 = {
 		}
 
 		dynasty ?= {
-			add_dynasty_prestige = minor_dynasty_prestige_gain
+			add_dynasty_prestige = medium_dynasty_prestige_gain
 		}
 		death = {
 			death_reason = death_seppuku
@@ -158,10 +175,103 @@ rokugan_seppuku_decision_event.0001 = {
 				}
 			}
 		}
+		# hidden_effect = {
+		# 	every_player = {
+		# 		limit = {
+		# 			NOT = { this = scope:actor }
+		# 		}
+		# 		trigger_event = shogunate_seppuku.0005
+		# 	}
+		# }
+	}
+
+	# option = {
+	# 	name = seppuku_decision_event.0001.b
+	# }
+
+	option = {
+		name = shogunate_seppuku.0002.c
+		trigger = {
+			is_imprisoned = no
+			OR = {
+				has_trait = ambitious
+				has_trait = vengeful
+				has_trait = patient
+			}
+		}
+		stress_impact = {
+			brave     = major_stress_impact_gain
+			stubborn  = medium_stress_impact_gain
+			impatient = medium_stress_impact_gain
+			just      = minor_stress_impact_gain
+			zealous   = minor_stress_impact_gain
+		}
 	}
 
 	option = {
-		name = rokugan_seppuku_decision.0001.b
+		name = shogunate_seppuku.0002.d
+		trigger = {
+			is_imprisoned = no
+			OR = {
+				has_trait = arbitrary
+				has_trait = cynical
+			}
+		}
+
+		stress_impact = {
+			brave     = major_stress_impact_gain
+			stubborn  = medium_stress_impact_gain
+			impatient = medium_stress_impact_gain
+			just      = minor_stress_impact_gain
+			zealous   = minor_stress_impact_gain
+		}
 	}
+
+	option = {
+		name = shogunate_seppuku.0002.e
+
+		trigger = {
+			is_imprisoned = no
+			OR = {
+				has_trait = craven
+				has_trait = lazy
+			}
+		}
+		stress_impact = {
+			brave     = major_stress_impact_gain
+			stubborn  = medium_stress_impact_gain
+			impatient = medium_stress_impact_gain
+			just      = minor_stress_impact_gain
+			zealous   = minor_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = shogunate_seppuku.0002.f
+		trigger = {
+			OR = {
+				is_imprisoned = yes
+				AND = {
+					NOT = { has_trait = ambitious }
+					NOT = { has_trait = vengeful }
+					NOT = { has_trait = patient }
+					NOT = { has_trait = arbitrary }
+					NOT = { has_trait = cynical }
+					NOT = { has_trait = craven }
+					NOT = { has_trait = lazy }
+				}
+			}
+		}
+
+		stress_impact = {
+			base      = medium_stress_impact_gain
+			brave     = major_stress_impact_gain
+			stubborn  = medium_stress_impact_gain
+			impatient = medium_stress_impact_gain
+			just      = minor_stress_impact_gain
+			zealous   = minor_stress_impact_gain
+		}
+	}
+
 
 }

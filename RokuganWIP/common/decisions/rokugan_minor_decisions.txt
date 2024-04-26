@@ -3,24 +3,18 @@
 # Seppuku
 commit_seppuku_decision = {
 	#picture = "gfx/interface/illustrations/decisions/decision_crane.dds"
-
+	ai_check_interval = 12
 
 	desc = commit_seppuku_decision_desc
 	selection_tooltip =  commit_seppuku_decision_tooltip
 
-	cooldown = { days = 0 }
+	cooldown = { days = 1825 }
 
 	is_shown = {
-		#FIXME
-		# FOR NOW, IT CHAIN KILLS EVERYONE IN THE EMPIRE WTF
-		always = no
 		is_landed = yes
 		is_adult = yes
 		is_ruler = yes
-		#Dishonored
-		#prestige_level = 0
-		#Can seppuku
-		culture = { has_cultural_parameter = can_seppuku }
+		prestige_level = 0
 	}
 
 	effect = {
@@ -30,20 +24,11 @@ commit_seppuku_decision = {
 		custom_tooltip = commit_seppuku_decision_effect_tooltip
 	}
 
-	ai_check_interval = 6
-	
+	# 5% chances
 	ai_will_do = {
 		base = 5
-
-		modifier = {
-			add = 20
-			has_trait = brave
-		}
-
-		modifier = {
-			add = 50
-			culture = { has_cultural_pillar = heritage_lion}
-		}
+		#TODO if lion, biais !
+		#TODO if certain traits, biais !
 	}
 }
 ##############################
