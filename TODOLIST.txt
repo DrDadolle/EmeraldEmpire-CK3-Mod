@@ -40,14 +40,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## Fixes to do
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
-- clean up of traits (like removing Hajji  from pilgrim traits)
 - Change color of some textured emblmes (very low priority)
 - update holy_order decisions & dynasty decisions (taken from shogunate)
 - fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
 found_empire_decision)
 - check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
-
+- Child can be born with white hair but without the Crane trait !
 
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?

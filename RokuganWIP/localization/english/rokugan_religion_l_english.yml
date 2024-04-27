@@ -1,5 +1,10 @@
 ﻿l_english:
  ############################
+ # Special Doctrines
+ special_doctrine_imperial_cult_name:0 "Official Imperial Cult"
+ special_doctrine_imperial_cult_desc:0 "Rokugan's religious beliefs actually encompass three different forms of worship - Shintao, Fortunism, and ancestral worship - all of which are united by the will of the Emperor into a single religious system."
+ doctrine_parameter_hostility_override_special_doctrine_imperial_cult:0 "Other Rokugani [faiths|E] that have the Official Imperial Cult doctrine are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_astray_tooltippable$"
+ ############################
  # Fortunism Religion
  fortunism_religion:0 "Fortunism"
  fortunism_religion_adj:0 "Fortunism"
