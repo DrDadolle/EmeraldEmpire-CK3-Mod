@@ -157,7 +157,7 @@ doji_temple = {
 	character_modifier = {
 		name = doji_temple_effect_name
 		diplomacy = 1
-		councillor_opinion = 5
+		general_opinion = 5
 	}
 }
 
@@ -246,18 +246,20 @@ temple_of_death = {
 
 	character_modifier = {
 		name = temple_of_death_effect_name
-		martial = 1
+		martial = 2
+		prowess = 2
 	}
 }
 
 temple_lost_moto = {
 
-	county = c_ikoku_province
-	barony = b_temple_of_death
+	county = c_eijitsu_province
+	barony = b_temple_lost_moto
 
 	character_modifier = {
-		name = temple_of_death_effect_name
-		martial = 1
+		name = temple_lost_moto_effect_name
+		martial = 2
+		prowess = 2
 	}
 }
 

@@ -1,0 +1,88 @@
+﻿l_english:
+ ############################
+ # Fortunism Religion
+ fortunism_religion:0 "Fortunism"
+ fortunism_religion_adj:0 "Fortunist"
+ fortunism_religion_adherent:0 "Fortunist"
+ fortunism_religion_adherent_plural:0 "Fortunists"
+ fortunism_religion_desc:0 "The people of Rokugan revered and appeased the elemental spirits of nature, agriculture, and other domains. This worship of the spirits and gods who dwelled in Tengoku and the myriad lesser spirits dwelling in Ningen-dō was known as Fortunism."
+
+ #####
+ # Seven Fortunes Faith
+ seven_fortunes:0 "Seven Great Fortunes"
+ seven_fortunes_adj:0 "Fortunist"
+ seven_fortunes_adherent:0 "Fortunist"
+ seven_fortunes_adherent_plural:0 "Fortunists"
+ seven_fortunes_desc:0 "The Seven Great Fortunes received a disproportionate amount of worship and obeisance, but their purviews were treasured above all others in Rokugan."
+ # High God
+ fortunism_high_god_name:0 "Amaterasu"
+ fortunism_high_god_name_possessive:0 "Amaterasu's"
+ fortunism_high_god_name_alternate:0 "Lady Sun"
+ fortunism_high_god_name_alternate_possessive:0 "Lady Sun's"
+ #HealthGod
+ fortunism_health_god_name:0 "Jurojin"
+ fortunism_health_god_name_possessive:0 "Jurojin's"
+ #FertilityGod
+ fortunism_fertility_god_name:0 "Benten"
+ fortunism_fertility_god_name_possessive:0 "Benten's"
+ #WealthGod
+ fortunism_wealth_god_name:0 "Daikoku"
+ fortunism_wealth_god_name_possessive:0 "Daikoku's"
+ #HouseholdGod
+ fortunism_household_god_name:0 "Ebisu"
+ fortunism_household_god_name_possessive:0 "Ebisu's"
+ #KnowledgeGod
+ fortunism_knowledge_god_name:0 "Fukurokujin"
+ fortunism_knowledge_god_name_possessive:0 "Fukurokujin's"
+ #WarGod
+ fortunism_war_god_name:0 "Bishamon"
+ fortunism_war_god_name_possessive:0 "Bishamon's"
+ #NightGod
+ fortunism_night_god_name:0 "Onotangu"
+ fortunism_night_god_name_possessive:0 "Onotangu's"
+ # Others
+ religion_fortunism_gods:0 "Seven Great Fortunes"
+ religion_fortunism_gods_2:0 "Ten Thousand Fortunes"
+ fortunism_devil_name:0 "Fu Leng"
+ fortunism_devil_name_possessive:0 "Fu Leng's"
+ fortunism_death_deity_name:0 "Emma-O"
+ fortunism_death_deity_name_possessive:0 "Emma-O's"
+ fortunism_house_of_worship:0 "Shrine"
+ fortunism_house_of_worship_plural:0 "Shrines"
+ fortunism_religious_symbol:0 "fortunism_religious_symbol"
+ fortunism_religious_text:0 "fortunism_religious_text"
+ fortunism_religious_head_title:0 "fortunism_religious_head_title"
+ fortunism_religious_head_title_name:0 "fortunism_religious_head_title_name"
+ fortunism_devotee_male:0 "fortunism_devotee_male"
+ fortunism_devotee_male_plural:0 "fortunism_devotee_male_plural"
+ fortunism_devotee_female:0 "fortunism_devotee_female"
+ fortunism_devotee_female_plural:0 "fortunism_devotee_female_plural"
+ fortunism_devotee_neuter:0 "fortunism_devotee_neuter"
+ fortunism_devotee_neuter_plural:0 "fortunism_devotee_neuter_plural"
+ fortunism_priest_male:0 "fortunism_priest_male"
+ fortunism_priest_male_plural:0 "fortunism_priest_male_plural"
+ fortunism_priest_female:0 "fortunism_priest_female"
+ fortunism_priest_female_plural:0 "fortunism_priest_female_plural"
+ fortunism_priest_neuter:0 "fortunism_priest_neuter"
+ fortunism_priest_neuter_plural:0 "fortunism_priest_neuter_plural"
+ fortunism_alternate_priest_term_plural:0 "fortunism_alternate_priest_term_plural"
+ fortunism_divine_realm:0 "Tengoku"
+ fortunism_positive_afterlife:0 "Realm of Blessed Ancestors"
+ fortunism_negative_afterlife:0 "Jigoku"
+
+
+ #####
+ # cult_amaterasu faith
+ cult_amaterasu:0 "Amaterasu"
+ cult_amaterasu_adj:0 "Amaterasu"
+ cult_amaterasu_adherent:0 "Amaterasu adept"
+ cult_amaterasu_adherent_plural:0 "Amaterasu adepts"
+ cult_amaterasu_desc:0 "Amaterasu, as the mother of the Kami, the mother of all of humanity, and chief of the Fortunes, is the central deity of the cosmology of Rokugan and as such receives the devotion she deserves."
+
+ #####
+ # cult_onotangu
+ cult_onotangu:0 "Cult of Onnotangu"
+ cult_onotangu_adj:0 "Cult of Onnotangu"
+ cult_onotangu_adherent:0 "Cult of Onnotangu adept"
+ cult_onotangu_adherent_plural:0 "Cult of Onnotangu adepts"
+ cult_onotangu_desc:0 "Onnotangu, as the father of the Kami, the father of all of humanity, and husband to Lady Sun, is a feared deity. Most Rokugani acknowledge Lord Moon existence and the role he played in the creation of the world and the Empire,  but they otherwise shun him and the sinister aura of chaos associated with him."

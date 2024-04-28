@@ -272,14 +272,14 @@
 	winter_severity_bias = @severe_winter
 }
 110 = { # b_ubaku_mura 
-	winter_severity_bias = @normal_winter
+	winter_severity_bias = @severe_winter
 }
 ## c_bachitari_province 
 111 = { # b_shadow_forest_village 
 	winter_severity_bias = @severe_winter
 }
 112 = { # b_shiba_artisan_academy 
-	winter_severity_bias = @normal_winter
+	winter_severity_bias = @severe_winter
 }
 ## c_bachitari_province 
 113 = { # b_shiro_shiba 

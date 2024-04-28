@@ -1,0 +1,35 @@
+﻿l_english:
+
+ ############################
+ # Family
+ rf_gaijin:0 "Gaijin Religion"
+ rf_rokugan:0 "Rokugan Religion"
+ rf_shadowlands:0 "Dark Kami Religion"
+
+ ############################
+ # Special Doctrines
+ special_doctrine_imperial_cult_name:0 "Official Imperial Cult"
+ special_doctrine_imperial_cult_desc:0 "Rokugan's religious beliefs actually encompass three different forms of worship - Shintao, Fortunism, and ancestral worship - all of which are united by the will of the Emperor into a single religious system."
+ doctrine_parameter_hostility_override_special_doctrine_imperial_cult:0 "Other Rokugani [faiths|E] that have the Official Imperial Cult doctrine are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_astray_tooltippable$"
+ 
+ special_doctrine_is_rokugani_faith_name:0 "The Three Imperial Faiths"
+ special_doctrine_is_rokugani_faith_desc:0 "Rokugan's religious beliefs actually encompass three different forms of worship - Shintao, Fortunism, and ancestral worship - all of which are united by the will of the Emperor into a single religious system. Gaijin religions or the veneration of the Dark Kami Fu Leng are heresy."
+ doctrine_parameter_hostility_override_tenet_rejection_of_the_kami:0 "Rokugani [faiths|E] with the $tenet_rejection_of_the_kami_name$ tenet are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_astray_tooltippable$"
+ doctrine_parameter_hostility_override_tenet_rokugani_syncretism:0 "Gaijin [faiths|E] with the $tenet_rokugani_syncretism_name$ tenet are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
+ doctrine_parameter_is_rokugani_faith_righteous_desc:0 ""
+ doctrine_parameter_is_rokugani_faith_astray_desc:0 ""
+ doctrine_parameter_is_rokugani_faith_hostile_desc:0 ""
+ doctrine_parameter_is_rokugani_faith_evil_desc:0 ""
+
+
+
+ ############################
+ # Tenets
+ tenet_rokugani_syncretism_name:0 "Rokugani Syncretism"
+ tenet_rokugani_syncretism_desc:0 "There is something to be learned from the way the different rokugani religions tolerate each other. They may not follow the true faith, but that does not make them evil."
+ doctrine_parameter_hostility_override_doctrine_rejection_of_the_kami:1 "Rokugani [faiths|E] with the tenet $tenet_rejection_of_the_kami_name$ are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_is_rokugani_faith:1 "Rokugani [faiths|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ 
+ tenet_rejection_of_the_kami_name:0 "Rejection of the Kami"
+ tenet_rejection_of_the_kami_desc:0 "Workshiping the Fortunes or the Ancestors are not the way to salvation. Only workshiping the teachings of the Little Teacher are."
+ doctrine_parameter_doctrine_rejection_of_the_kami_desc:0 ""
