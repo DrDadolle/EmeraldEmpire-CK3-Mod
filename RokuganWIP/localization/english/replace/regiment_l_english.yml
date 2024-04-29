@@ -1,0 +1,26 @@
+﻿l_english:
+
+ # Base MaA
+ light_footmen:0 "Elite Yari Ashigaru"
+ bowmen:0 "Elite Yumi Ashigaru"
+ #crossbowmen:0 "Elite Teppo Ashigaru"
+ #armored_footmen:0 "Kachimusha"
+ #armored_horsemen:0 "Kibamusha"
+
+ # Siege MaA
+ onager:0 "Kaidate"
+ mangonel:0 "Seiro"
+ #trebuchet:0 "Taketaba"
+ #bombard:0 "Ozutsu"
+
+ # MaA Descriptions
+ light_footmen_flavor:1 "#F Veteran skirmishers are invaluable harriers, disrupting enemy flanks and chipping away at morale.#!"
+ bowmen_flavor:1 "#F Professional archers fill the air with arrows, devastating the foremost enemy troops.#!"
+ #crossbowmen_flavor:0 "#F Though slow to reload, arquebuses are easy to use and fire bullets which can pierce through most armor at a good range.#!"
+ #armored_footmen_flavor:1 "#F Heavily armed and well-trained, these troops specialize in smashing massed infantry.#!"
+ #armored_horsemen_flavor:0 "#F Heavily armed and armored, these horsemen dominate warfare in the open plains.#!"
+
+ onager_flavor:0 "#F Kaidate consists of many shields arranged on the ground. It protects soldiers from enemy missiles.#!"
+ mangonel_flavor:0 "#F Seiro is a kind of watchtower made of wood or bamboo. It's also used as a simple siege tower.#!"
+ #trebuchet_flavor:0 "#F Taketaba is a shield made of bamboo. It can stop not only arrows but also bullets from arquebuses.#!"
+ #bombard_flavor:0 "#F Ozutsu is a sort of cannon. Though expensive and few, it can blast through fortifications with ease.#!"
