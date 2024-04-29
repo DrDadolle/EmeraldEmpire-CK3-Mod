@@ -22,7 +22,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - How Minor/Major clan titles are handled
 
 ## short term goals 
-- Finish unaligned winter & terrain
+- check that everything has terrain & winter defined
 - Rework provinces, so looks better
 	- Fix ID 25 provinces border & split between river (and river crossing)
 	- Split ID 21/22 provinces into smaller
@@ -56,6 +56,7 @@ found_empire_decision)
 
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?
+- Add "Trial-by-Combat" same as "performative honor tradition"
 - Abdication and become monk
 - Ponder the 3 teachings...???
 - Prevent imperial family from doing wars against other clans...? Only for AI ?

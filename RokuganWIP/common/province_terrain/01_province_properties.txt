@@ -497,7 +497,25 @@
 128 = { # b_amaterasu_seido 
 	winter_severity_bias = @severe_winter
 }
-
+### d_kintani_valley
+## c_north_kintani_province 
+129 = { # b_shinsei_monastery_1 
+	winter_severity_bias = @normal_winter
+}
+## c_north_kintani_province 
+130 = { # b_shinsei_monastery_2 
+	winter_severity_bias = @normal_winter
+}
+131 = { # b_kintani_mori_mura 
+	winter_severity_bias = @normal_winter
+}
+132 = { # b_kintani_mori_empty 
+	winter_severity_bias = @normal_winter
+}
+## c_east_kintani_province 
+133 = { # b_shinsei_monastery_3 
+	winter_severity_bias = @cold_winter
+}
 ### d_kasuga 
 ## c_kasuga_province 
 134 = { # b_kyuden_kasuga 
@@ -1106,12 +1124,59 @@
 320 = { # b_still_water_temple 
 	winter_severity_bias = @cold_winter
 }
-
+### d_kintani_valley_2
+## c_nanashi_mura_province
+321 = { # b_nanashi_mura 
+	winter_severity_bias = @cold_winter
+}
+## c_shinsei_monastery_rambo
+322 = { # b_shinsei_monastery_rambo 
+	winter_severity_bias = @cold_winter
+}
+324 = { # b_shinsei_monastery_rambo_empty 
+	winter_severity_bias = @normal_winter
+}
+## c_toshi_rambo
+323 = { # b_toshi_rambo 
+	winter_severity_bias = @normal_winter
+}
+### d_rich_frog
+## c_rich_frog
+325 = { # b_rich_frog 
+	winter_severity_bias = @normal_winter
+}
+326 = { # b_frog_temple 
+	winter_severity_bias = @cold_winter
+}
+327 = { # b_frog_mura 
+	winter_severity_bias = @cold_winter
+}
+### d_ronin_daidoji_yukan_see
+## c_daidoji_yukan_see
+328 = { # b_daidoji_yukan_see 
+	winter_severity_bias = @normal_winter
+}
+## c_shinsei_monastery_yukan_see
+329 = { # b_shinsei_monastery_yukan_see 
+	winter_severity_bias = @normal_winter
+}
+## c_conflagration_temple
+330 = { # b_conflagration_temple 
+	winter_severity_bias = @normal_winter
+}
+## c_shinden_kasai
+331 = { # b_shinden_kasai 
+	winter_severity_bias = @normal_winter
+}
 ## c_shinsei_last_hope 
 332 = { # b_shinsei_last_hope 
 	winter_severity_bias = @warm_winter
 }
-
+### d_miya
+## c_miya_province 
+333 = { # b_kyuden_miya 
+	winter_severity_bias = @cold_winter
+}
 ### d_ichiro 
 ## c_ichiro_province 
 334 = { # b_shiro_ichiro 
@@ -1168,6 +1233,42 @@
 347 = { # b_kyuden_toketsu 
 	winter_severity_bias = @normal_winter
 }
+### d_ronin_central
+## c_central_lands_ronin_1
+400 = { # b_central_lands_ronin_1 
+	winter_severity_bias = @normal_winter
+}
+## c_central_lands_ronin_2
+401 = { # b_central_lands_ronin_2 
+	winter_severity_bias = @normal_winter
+}
+## c_central_lands_ronin_3
+402 = { # b_central_lands_ronin_3 
+	winter_severity_bias = @normal_winter
+}
+## c_central_lands_ronin_4
+403 = { # b_central_lands_ronin_4 
+	winter_severity_bias = @normal_winter
+}
+### d_west_shinomen_monasteries
+## c_west_shinomen_monastery_1
+404 = { # b_west_shinomen_monastery_1 
+	winter_severity_bias = @normal_winter
+}
+## c_west_shinomen_monastery_2
+405 = { # b_west_shinomen_monastery_2
+	winter_severity_bias = @normal_winter
+}
+## c_west_shinomen_monastery_3
+407 = { # b_west_shinomen_monastery_3 
+	winter_severity_bias = @normal_winter
+}
+## c_west_shinomen_monastery_4
+408 = { # b_west_shinomen_monastery_4 
+	winter_severity_bias = @normal_winter
+}
+
+
 ### d_kaikoga
 ## c_kaikoga_province
 406 = { # b_shiro_kaikoga 
@@ -1178,9 +1279,45 @@
 409 = { # Spine of the world mountains
 	winter_severity_bias = @severe_winter
 }
+410 = { # Spine of the world mountains
+	winter_severity_bias = @severe_winter
+}
+411 = { # unhabited islands
+	winter_severity_bias = @mild_winter
+}
+
+### d_south_shinomen
+## c_south_shinomen_monastery_1
+412 = { # b_south_shinomen_monastery_1
+	winter_severity_bias = @mild_winter
+}
+## c_south_shinomen_ronin_1
+413 = { # b_south_shinomen_ronin_1
+	winter_severity_bias = @mild_winter
+}
+## c_south_shinomen_ronin_2
+414 = { # b_south_shinomen_ronin_2
+	winter_severity_bias = @mild_winter
+}
+415 = { # b_cherry_blossom_village
+	winter_severity_bias = @mild_winter
+}
+## c_south_shinomen_monastery_2
+416 = { # b_south_shinomen_monastery_2
+	winter_severity_bias = @mild_winter
+}
+## c_south_shinomen_ronin_3
+417 = { # b_south_shinomen_ronin_3
+	winter_severity_bias = @mild_winter
+}
 
 
 ## Impassible terrains 
 418 = { # Suzume mountains
 	winter_severity_bias = @severe_winter
+}
+
+## Impassible terrains 
+458 = { # shinomen mori
+	winter_severity_bias = @normal_winter
 }

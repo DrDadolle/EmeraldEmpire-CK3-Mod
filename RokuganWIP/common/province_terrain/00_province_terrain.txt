@@ -336,8 +336,23 @@ default_coastal_sea=coastal_sea
 ### Tonbo
 319=hills
 320=hills
-
+###############
+### Unaligned
+321=hills
+322=hills
+323=plains
+324=plains
+325=plains
+326=hills
+327=hills
+328=plains
+329=hills
+330=plains
+331=forest
 332=hills
+###############
+### Miya
+333=mountains
 ###############
 ### Ichiro
 334=mountains
@@ -358,6 +373,22 @@ default_coastal_sea=coastal_sea
 ### Toritaka
 346=hills
 347=hills
+###############
+### Unaligned
+400=hills
+401=plains
+402=plains
+403=plains
+404=hills
+405=hills
+407=hills
+408=hills
+412=hills
+413=plains
+414=plains
+415=plains
+416=plains
+417=plains
 ###############
 ### Kaikoga
 406=forest
