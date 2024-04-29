@@ -29,6 +29,7 @@ tradition_bushido = {
 	parameters = {
 		can_duel_rivals = yes
 		can_use_sparring_duel = yes
+		has_access_to_trials_by_combat = yes
 		allows_adoption = yes
 		can_seppuku = yes
 	}
