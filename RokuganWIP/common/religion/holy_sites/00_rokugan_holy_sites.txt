@@ -25,6 +25,18 @@ pillars_of_virtue = {
 	}
 }
 
+shinsei_last_hope = {
+
+	county = c_shinsei_last_hope
+	barony = b_shinsei_last_hope
+
+	character_modifier = {
+		name = pillars_of_virtue_effect_name
+		prowess = 3
+		knight_effectiveness_mult = 0.1
+	}
+}
+
 
 #################
 # Fortunism

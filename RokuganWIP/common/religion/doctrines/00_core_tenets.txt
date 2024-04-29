@@ -3149,7 +3149,7 @@
 
 	#Rokugan Syncretism for gaijin religions
 	tenet_rokugani_syncretism = {
-		icon = core_tenet_christian_syncretism
+		icon = core_tenet_rokugani_syncretism
 
 		piety_cost = {
 			value = faith_tenet_cost_mid
@@ -3233,7 +3233,7 @@
 
 	# For Heresy Rokugani Religions
 	tenet_rejection_of_the_kami = {
-		icon = core_tenet_christian_syncretism
+		icon = core_tenet_rejection_of_the_kami
 
 		piety_cost = {
 			value = faith_tenet_cost_mid
@@ -3252,6 +3252,13 @@
 			always = yes
 		}
 
+		# Based on communal possessions
+		character_modifier = {
+			monthly_county_control_growth_factor = -0.2
+			build_gold_cost = -0.1
+			county_opinion_add = 10 
+		}
+
 		parameters = {
 			hostility_override_special_doctrine_is_rokugani_faith = 2 # Hostile
 			#Localisation:
@@ -3259,8 +3266,8 @@
 		}
 
 		traits = { #Place Holder
-			virtues = { wrathful }
-			sins = { calm }
+			virtues = { calm }
+			sins = { wrathful }
 		}
 	}
 

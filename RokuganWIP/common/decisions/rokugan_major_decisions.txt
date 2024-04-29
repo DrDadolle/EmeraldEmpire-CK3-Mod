@@ -36,7 +36,7 @@ decision_avenge_yasuki_war = {
 
     is_valid = {
 		completely_controls = title:d_yasuki
-		prestige_level >= 2
+		prestige_level >= 3
 	}
 
     is_valid_showing_failures_only = {

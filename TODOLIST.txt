@@ -30,7 +30,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Paint the map with materials
 - Rework provinces, so looks better
 - provinces terrain (plains, etc...)
-- Climates
+- Fix the bookmarks, so Doji is not naked, and it looks better
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - Add river map
 - Create MaA for each great clan, maybe each minor one
@@ -50,6 +50,8 @@ found_empire_decision)
 
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?
+- Abdication and become monk
+- Ponder the 3 teachings...???
 - Prevent imperial family from doing wars against other clans...? Only for AI ?
 - Becoming Minor or Major Clan IS a special decision which requires the Emperor acknowledgement.
 	- Adaptation of the decision "create custom kingdom" (found_kingdom_decision & found_empire_decision from 80_major_decisions.txt)
