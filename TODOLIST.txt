@@ -48,28 +48,18 @@ found_empire_decision)
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Child can be born with white hair but without the Crane trait !
 
-## Permissions to asks
-- Asia Expansion Project @ Longus Cattus => Japanese unit models
-- Kefir => Japanese buildings & unit models
-- Tachi CK3 Mod dev, for inspiration
-- FUN for background images for council, characters, court, etc...
-
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?
-- Add "Trial-by-Combat" same as "performative honor tradition"
-- Abdication and become monk
-- Ponder the 3 teachings...???
-- Prevent imperial family from doing wars against other clans...? Only for AI ?
+- Test "Trial-by-Combat" works even without the DLC
+- Check the great walls (à la AEP ?)
+- Abdication and become monk (à la RoA)
+- Ponder the 3 teachings...??? (à la RoA)
+- Add demand seppuku character interaction ? (and made by liege too)
 - Becoming Minor or Major Clan IS a special decision which requires the Emperor acknowledgement.
+	- Adaptation of the decision "create custom kingdom" but for duchy ?
 	- Adaptation of the decision "create custom kingdom" (found_kingdom_decision & found_empire_decision from 80_major_decisions.txt)
 	- diseable the "create de_jure kingdom" option ?????
-- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance.
-- Blood feud (like Matsu vs Kakita)
-- Holy sites
-- special buildings
-- Special events setting the start of the clan wars
-- add trial by combat + choosing champion (AGOT mod does it ?)
-- Add ancestral clan & family founders
+	- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance. Are they all landless à la Hiruma ?
 - Special decisions
 	-Become Great Clan : Requires X Duchy or Y counties. Emperor positive relation. Emperor MUST be direct liege. Name of Duchy Title => Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
 		- No other ways to create a kingdom title. Basically rework existing mechanics
@@ -77,7 +67,12 @@ found_empire_decision)
 	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
-- Add demand seppuku character interaction ? (and made by liege too)
+- Starting crown authority, development, holdings & buildings
+- Prevent imperial family from doing wars against other clans...? Only for AI ?
+- Blood feud (like Matsu vs Kakita)
+- special buildings
+- Special events setting the start of the clan wars
+- Add ancestral clan & family founders
 - Special Phoenix champion succession
 - Phoenix Council of 5 special government
 - Togashi special succession ?
@@ -88,11 +83,17 @@ found_empire_decision)
 - Shadowlands stuff (very low priority)
 
 
-
 # Decisions Done
 - Bleach Hair White (crane) and it's opposite
 - Avenge Yasuki War (crane)
 - Commit Seppuku (when dishonored)
+
+
+# Permissions to asks
+- Asia Expansion Project @ Longus Cattus => Japanese unit models
+- Kefir => Japanese buildings & unit models
+- Tachi CK3 Mod dev, for inspiration
+- FUN for background images for council, characters, court, etc...
 
 # Ideas
 ###
