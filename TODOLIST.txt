@@ -22,14 +22,14 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - How Minor/Major clan titles are handled
 
 ## short term goals 
-- Finish Crane lands winter & terrain
 - Finish unaligned winter & terrain
+- Rework provinces, so looks better
+	- Fix ID 25 provinces border & split between river (and river crossing)
+	- Split ID 21/22 provinces into smaller
 - Fix river width
 - Have a not-so-ugly heightmap
 	- Fix river & coast 
 - Paint the map with materials
-- Rework provinces, so looks better
-- provinces terrain (plains, etc...)
 - Fix the bookmarks, so Doji is not naked, and it looks better
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - Add river map
@@ -47,6 +47,12 @@ found_empire_decision)
 - check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Child can be born with white hair but without the Crane trait !
+
+## Permissions to asks
+- Asia Expansion Project @ Longus Cattus => Japanese unit models
+- Kefir => Japanese buildings & unit models
+- Tachi CK3 Mod dev, for inspiration
+- FUN for background images for council, characters, court, etc...
 
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?

@@ -2,9 +2,10 @@
 default_sea=sea
 default_coastal_sea=coastal_sea
 
+# Seppun
+1=plains
 ###############
 ### Crane
-1=plains
 3=plains
 4=plains
 5=plains
@@ -14,11 +15,43 @@ default_coastal_sea=coastal_sea
 9=wetlands
 10=plains
 11=wetlands
-
+419=mountains
+12=hills
+13=forest
+14=hills
+15=mountains
+16=plains
+17=plains
+18=forest
+19=forest
+20=plains
+21=hills
+22=mountains
+23=farmlands
+24=farmlands
+25=plains
+26=plains
+27=plains
+28=plains
+29=forest
+30=hills
 31=plains
 32=farmlands
+395=farmlands
 33=mountains
 34=wetlands
+35=farmlands
+36=plains
+37=plains
+38=farmlands
+39=plains
+40=mountains
+41=mountains
+42=mountains
+43=farmlands
+44=mountains
+45=farmlands
+
 ###############
 ### Lion
 46=hills
