@@ -133,11 +133,14 @@ kami_descendant = {
 	legitimacy_gain_mult = 0.1
 	monthly_prestige = 1.0
 	flag = initial_legitimacy_boost
+	same_culture_opinion = 10 
 
 	# Always inherited
 	inherit_chance = 100
 	parent_inheritance_sex  = all
 	inherit_from_real_father = no
+
+
 
 	icon = {
 		desc = kami_descendant.dds

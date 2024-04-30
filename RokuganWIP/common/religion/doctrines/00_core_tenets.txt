@@ -3265,9 +3265,9 @@
 			doctrine_rejection_of_the_kami_desc = 0
 		}
 
-		traits = { #Place Holder
-			virtues = { calm }
-			sins = { wrathful }
+		traits = {
+			virtues = { just }
+			sins = { arbitrary }
 		}
 	}
 
