@@ -5,6 +5,12 @@
 	culture = matsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 47 = {		#b_hall_ancestors
 	culture = matsu
@@ -31,12 +37,24 @@
 	culture = matsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_heigen_province
 52 = {		#b_shiro_koritome
 	culture = matsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 53 = {		#b_koritome_toshi
 	culture = matsu
@@ -48,6 +66,12 @@
 	culture = matsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 55 = {		#b_kitsu_tombs
 	culture = matsu
@@ -58,18 +82,36 @@
 	culture = matsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_tonfajutsen_province
 57 = {		#b_crossroad_castle
 	culture = matsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_yojin_province
 58 = {		#b_yojin_shiro
 	culture = matsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 59 = {		#b_yojin_mura
 	culture = matsu
@@ -81,6 +123,12 @@
 	culture = matsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 61 = {		#b_yaruki_jukko_no_tera
 	culture = matsu
@@ -92,6 +140,12 @@
 	culture = matsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ##d_akodo ###################################
 ###c_kenryu_province
@@ -99,6 +153,12 @@
 	culture = akodo
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 64 = {		#b_yu_seido
 	culture = akodo
@@ -110,12 +170,24 @@
 	culture = akodo
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_renga_province
 66 = {		#b_shiro_renga
 	culture = akodo
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 67 = {		#b_renga_mura
 	culture = akodo
@@ -127,6 +199,12 @@
 	culture = akodo
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 69 = {		#b_henkyou_mura
 	culture = akodo
@@ -143,12 +221,24 @@
 	culture = akodo
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_kokoro_province
 72 = {		#b_shiro_seizaku
 	culture = akodo
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 73 = {		#b_seizaku_toshi
 	culture = akodo
@@ -166,6 +256,12 @@
 	culture = kitsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 76 = {		#b_hayai_seido
 	culture = kitsu
@@ -177,6 +273,12 @@
 	culture = kitsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 78 = {		#b_rugashi_seido
 	culture = kitsu
@@ -193,6 +295,12 @@
 	culture = kitsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 81 = {		#b_foshi_mura
 	culture = kitsu
@@ -204,6 +312,12 @@
 	culture = kitsu
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 83 = {		#b_bishamon_seido
 	culture = kitsu
@@ -221,6 +335,12 @@
 	culture = ikoma
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 86 = {		#b_murame_toshi
 	culture = ikoma
@@ -232,6 +352,12 @@
 	culture = ikoma
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 88 = {		#b_mura_sano_eiyu
 	culture = ikoma
@@ -243,12 +369,24 @@
 	culture = ikoma
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_ikota_province
 90 = {		#b_shiro_kyube
 	culture = ikoma
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 91 = {		#b_great_hall
 	culture = ikoma
@@ -260,6 +398,12 @@
 	culture = ikoma
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 93 = {		#b_shiranai_toshi
 	culture = ikoma

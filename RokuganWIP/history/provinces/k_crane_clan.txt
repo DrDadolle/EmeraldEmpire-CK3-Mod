@@ -5,6 +5,12 @@
 	culture = asahina
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 4 = {		#b_garden_under_shadow_city
 	culture = asahina
@@ -15,6 +21,12 @@
 	culture = asahina
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 6 = {		#b_bunya_sano_asahina
 	culture = asahina
@@ -37,11 +49,23 @@
 	culture = asahina
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 9 = {		#b_zenshou_tetsu
 	culture = asahina
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 10 = {		#b_oni_mura
 	culture = asahina
@@ -59,6 +83,12 @@
 	culture = doji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 13 = {		#b_benten_seido
 	culture = doji
@@ -69,6 +99,12 @@
 	culture = doji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 15 = {		#b_musume_mura
 	culture = doji
@@ -80,6 +116,13 @@
 	culture = doji
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
+
 }
 17 = {		#b_kyuden_garden
 	culture = doji
@@ -100,24 +143,49 @@
 	culture = doji
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_itoshii_province
 21 = {		#b_sea_watch_castle
 	culture = doji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_umoeru_province
 22 = {		#b_umoeru_mura
 	culture = doji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_kougen_province
 23 = {		#b_ookami_toshi
 	culture = doji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
+
 }
 24 = {		#b_kougen_mura
 	culture = doji
@@ -130,12 +198,25 @@
 	culture = daidoji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
+
 }
 ###c_hayaku_province
 26 = {		#b_shiro_daidoji
 	culture = daidoji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 27 = {		#b_prosperous__plains_city
 	culture = daidoji
@@ -151,6 +232,12 @@
 	culture = daidoji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_sabishii_province
 30 = {		#b_water_music_village
@@ -167,6 +254,12 @@
 	culture = daidoji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 395 = {		#uebi_marshes
 	culture = daidoji
@@ -178,6 +271,12 @@
 	culture = daidoji
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 34 = {		#b_daidoji_training_grounds
 	culture = daidoji
@@ -190,6 +289,12 @@
 	culture = kakita
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 36 = {		#b_tsuma
 	culture = kakita
@@ -200,6 +305,13 @@
 	culture = kakita
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
+
 }
 38 = {		#b_kakita_seido
 	culture = kakita
@@ -211,12 +323,26 @@
 	culture = kakita
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
+
 }
 ###c_gyousha_province
 40 = {		#b_samui_kaze_toshi
 	culture = kakita
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
+
 }
 41 = {		#b_jurojin_seido
 	culture = kakita
@@ -228,6 +354,12 @@
 	culture = kakita
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 43 = {		#b_aketsu
 	culture = kakita
@@ -244,12 +376,24 @@
 	culture = doji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_toshi_rambo
 323 = {		#b_toshi_rambo
 	culture = doji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 
 #castle_holding

@@ -29,12 +29,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Fix ID 25 provinces border & split between river (and river crossing)
 	- Split ID 21/22 provinces into smaller
 - Fix river width
-- Have a not-so-ugly heightmap
-	- Fix river & coast 
 - Paint the map with materials
 - Fix the bookmarks, so Doji is not naked, and it looks better
-- Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - Add river map
+- Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - Create MaA for each great clan, maybe each minor one
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
@@ -70,10 +68,20 @@ found_empire_decision)
 	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
-- Starting crown authority, development, holdings & buildings
+- Starting crown authority, buildings
+- yobanjin culture (for county kaito)
 - Prevent imperial family from doing wars against other clans...? Only for AI ?
 - Blood feud (like Matsu vs Kakita)
 - special buildings
+	- Gisei Toshi
+	- Pale Oak Castle tree
+	- Hall of Ancestors Lion
+	- Kyuden Hida special castle
+	- Kaiu Wall (cf great wall of chine)
+	- Ryoko Owari opium trade
+	- Sunda Mizu Mura trade 
+	- Traitor's Trove
+	- Turo Kojiri trade
 - Special events setting the start of the clan wars
 - Add ancestral clan & family founders
 - Special Phoenix champion succession

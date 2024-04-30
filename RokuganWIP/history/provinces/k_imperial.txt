@@ -5,6 +5,12 @@
 	culture = doji
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 ##k_imperial_families ############################################
 ##d_hantei ###################################
@@ -13,6 +19,12 @@
 	culture = hantei
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_04
+		}
+	}
 }
 140 = {		#b_kita_chusin_mura
 	culture = hantei
@@ -28,6 +40,12 @@
 	culture = hantei
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 143 = {		#b_higashi_chushin_mura
 	culture = hantei
@@ -56,6 +74,12 @@
 	culture = seppun
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 138 = {		#b_seppun_graves
 	culture = seppun
@@ -67,6 +91,12 @@
 	culture = seppun
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 146 = {		#b_four_temples
 	culture = seppun
@@ -82,12 +112,24 @@
 	culture = seppun
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_seppun_province_3
 149 = {		#b_shiro_seppun_3
 	culture = seppun
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ##d_miya ###################################
 ###c_miya_province
@@ -95,6 +137,12 @@
 	culture = miya
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 
 #castle_holding

@@ -5,6 +5,12 @@
 	culture = iuchi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 206 = {		#b_hisatsu_kesu
 	culture = iuchi
@@ -20,6 +26,12 @@
 	culture = iuchi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 209 = {		#b_okuyaki
 	culture = iuchi
@@ -36,6 +48,12 @@
 	culture = iuchi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 212 = {		#b_shinten_plains
 	culture = iuchi
@@ -47,6 +65,12 @@
 	culture = iuchi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 214 = {		#b_temple_child_innocence
 	culture = iuchi
@@ -59,6 +83,12 @@
 	culture = ide
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 216 = {		#b_duzaki_toshi
 	culture = ide
@@ -80,6 +110,12 @@
 	culture = ide
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 220 = {		#b_jurojin_seido_unicorn
 	culture = ide
@@ -90,6 +126,12 @@
 	culture = ide
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 222 = {		#b_temple_lost_moto
 	culture = ide
@@ -107,12 +149,24 @@
 	culture = moto
 	religion = lords_of_the_death
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_zenzan_province
 225 = {		#b_shiro_zenzan
 	culture = moto
 	religion = lords_of_the_death
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 226 = {		#b_chai_seido
 	culture = moto
@@ -129,6 +183,12 @@
 	culture = moto
 	religion = lords_of_the_death
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 229 = {		#b_daikoku_seido
 	culture = moto
@@ -140,6 +200,12 @@
 	culture = moto
 	religion = lords_of_the_death
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 231 = {		#b_temple_of_death
 	culture = moto
@@ -155,6 +221,12 @@
 	culture = moto
 	religion = lords_of_the_death
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ##d_utaku ###################################
 ###c_isei_province
@@ -162,6 +234,12 @@
 	culture = utaku
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 235 = {		#b_utaku_seido
 	culture = utaku
@@ -173,11 +251,23 @@
 	culture = utaku
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 237 = {		#b_shiro_naoko
 	culture = utaku
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 238 = {		#b_manaka_plains
 	culture = utaku
@@ -189,12 +279,24 @@
 	culture = utaku
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_koubaku_province
 240 = {		#b_dark_edge_village
 	culture = utaku
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 241 = {		#b_koubaku_plains
 	culture = utaku
@@ -206,6 +308,12 @@
 	culture = utaku
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 243 = {		#b_akimi_village
 	culture = utaku
@@ -223,6 +331,12 @@
 	culture = shinjo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 246 = {		#b_kuroshin_shrine
 	culture = shinjo
@@ -234,6 +348,12 @@
 	culture = shinjo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 248 = {		#b_3_unfortunate_villages
 	culture = shinjo
@@ -245,11 +365,23 @@
 	culture = shinjo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 250 = {		#b_exile_watch_tower
 	culture = shinjo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 251 = {		#b_sorrow_path_mura
 	culture = shinjo
@@ -266,11 +398,23 @@
 	culture = shinjo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 254 = {		#b_mountain_watch_tower
 	culture = shinjo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 #castle_holding
 #church_holding

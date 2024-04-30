@@ -5,11 +5,23 @@
 	culture = kitsuki
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 289 = {		#b_morning_frost_castle
 	culture = kitsuki
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 290 = {		#b_keen_eyes_strike_village
 	culture = kitsuki
@@ -21,25 +33,49 @@
 	culture = kitsuki
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_sinjutsu_province
 292 = {		#b_toi_koku
 	culture = kitsuki
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ##d_mirumoto ###################################
 ###c_gaien_province
-293 = {		#b_shiro_kitsuki
+293 = {		#b_foothills_keep
 	culture = mirumoto
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_yakeishi_province
 294 = {		#b_shiro_zurui
 	culture = mirumoto
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 295 = {		#b_tetsu_kama_mura
 	culture = mirumoto
@@ -51,6 +87,12 @@
 	culture = mirumoto
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 297 = {		#b_heibesu
 	culture = mirumoto
@@ -63,11 +105,17 @@
 	religion = shinseism
 	holding = city_holding
 }
-#299 is shiro chuda ruins... so not dragon
+#299 is shiro chuda ruins
 300 = {		#b_nothern_tower_of_flame
 	culture = mirumoto
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ##d_togashi ###################################
 ###c_mucha_province
@@ -75,6 +123,12 @@
 	culture = togashi
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 302 = {		#b_fukurokujin_seido
 	culture = togashi
@@ -85,6 +139,12 @@
 	culture = togashi
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 304 = {		#b_high_wall_village
 	culture = togashi
@@ -102,12 +162,24 @@
 	culture = agasha
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_kinenkan_province
 307 = {		#b_dragon_breath_castle
 	culture = agasha
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 308 = {		# b_suigeki_toshi
 	culture = agasha
@@ -118,6 +190,12 @@
 	culture = agasha
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 #castle_holding
 #church_holding

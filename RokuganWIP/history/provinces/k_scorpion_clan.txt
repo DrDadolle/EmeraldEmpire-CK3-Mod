@@ -5,6 +5,12 @@
 	culture = yogo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 152 = {		#b_nagamori_mura
 	culture = yogo
@@ -16,6 +22,12 @@
 	culture = yogo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 154 = {		#b_beiden
 	culture = yogo
@@ -33,6 +45,12 @@
 	culture = bayushi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 157 = {		#b_hotei_seido
 	culture = bayushi
@@ -44,6 +62,12 @@
 	culture = bayushi
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 159 = {		#b_shimomura
 	culture = bayushi
@@ -55,6 +79,12 @@
 	culture = bayushi
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 161 = {		#b_shimomura
 	culture = bayushi
@@ -66,6 +96,12 @@
 	culture = bayushi
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 163 = {		#b_bayushi_seido
 	culture = bayushi
@@ -81,6 +117,12 @@
 	culture = bayushi
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ##d_shosuro ###################################
 ###c_kawa_province
@@ -88,6 +130,12 @@
 	culture = shosuro
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 167 = {		#b_painted_city
 	culture = shosuro
@@ -104,12 +152,24 @@
 	culture = shosuro
 	religion = cult_ancestors
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_ryoko_province
 170 = {		#b_ryoko_no_owari_toshi
 	culture = shosuro
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 ##d_soshi ###################################
 ###c_an_ei_province
@@ -117,18 +177,36 @@
 	culture = soshi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 ###c_yuma_province
 172 = {		#b_hidden_watch_keep
 	culture = soshi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_kimbouo_province
 173 = {		#b_pokau
 	culture = soshi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 174 = {		#b_shrine_of_shadows_eye
 	culture = soshi

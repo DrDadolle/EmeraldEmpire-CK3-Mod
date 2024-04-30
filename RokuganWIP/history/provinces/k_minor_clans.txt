@@ -4,6 +4,12 @@
 	culture = moshi
 	religion = cult_amaterasu
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 128 = {		#b_amaterasu_seido
 	culture = moshi
@@ -16,6 +22,12 @@
 	culture = kasuga
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 135 = {		#b_slow_tide_harbor
 	culture = kasuga
@@ -33,6 +45,12 @@
 	culture = suzume
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ##d_kitsune ###################################
 ###c_kakusu_province
@@ -40,6 +58,12 @@
 	culture = kitsune
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 257 = {		#b_kitsune_mori_mura
 	culture = kitsune
@@ -52,6 +76,12 @@
 	culture = usagi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 259 = {		#b_kudo_mura
 	culture = usagi
@@ -69,18 +99,36 @@
 	culture = tsuruchi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_enzan_province
 262 = {		#b_sakana_mura
 	culture = tsuruchi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_chuuhan_province
 263 = {		#b_gateway_village
 	culture = tsuruchi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 264 = {		#b_quiet_stream_village
 	culture = tsuruchi
@@ -92,6 +140,12 @@
 	culture = tsuruchi
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ##d_nekoma ###################################
 ###c_nekoma_province
@@ -99,6 +153,12 @@
 	culture = nekoma
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ##d_tonbo ###################################
 ###c_tonbo_province
@@ -106,6 +166,12 @@
 	culture = tonbo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 320 = {		#b_still_water_temple
 	culture = tonbo
@@ -118,12 +184,24 @@
 	culture = yoritomo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 ###c_koutetsukan_province_mantis
 338 = {		#b_iron_city_turtle
 	culture = yoritomo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_kaze_province
 339 = {		#b_kaimetsu_uo_seido
@@ -136,12 +214,24 @@
 	culture = yoritomo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_irie_province
 341 = {		#b_irie_toshi
 	culture = yoritomo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 342 = {		#b_irie_empty
 	culture = yoritomo
@@ -153,6 +243,12 @@
 	culture = yoritomo
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_maigosera_province
 344 = {		#b_maigosera_seido
@@ -166,6 +262,12 @@
 	culture = komori
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ##d_toritaka ###################################
 ###c_toritaka_province
@@ -173,18 +275,23 @@
 	culture = toritaka
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 347 = {		#b_kyuden_toketsu
 	culture = toritaka
 	religion = seven_fortunes
 	holding = castle_holding
-}
-##d_toritaka ###################################
-###c_toritaka_province
-346 = {		#b_shiro_toritaka
-	culture = toritaka
-	religion = seven_fortunes
-	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ##d_kaikoga ###################################
 ###c_kaikoga_province
@@ -192,6 +299,12 @@
 	culture = kaikoga
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 #castle_holding
 #church_holding

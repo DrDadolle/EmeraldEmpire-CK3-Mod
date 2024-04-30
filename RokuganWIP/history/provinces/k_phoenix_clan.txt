@@ -5,18 +5,36 @@
 	culture = asako
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 ###c_anshin_phoenix_province
 95 = {		#b_honored_treaty_city
 	culture = asako
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_mihari_province
 96 = {		#b_zumiki_mihari
 	culture = asako
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 97 = {		#b_orange_flame_village
 	culture = asako
@@ -28,6 +46,12 @@
 	culture = asako
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 99 = {		#b_fiery_centiped_library
 	culture = asako
@@ -43,24 +67,42 @@
 	culture = asako
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_kyuukai_province
 102 = {		#b_sheltered_plains_city
 	culture = asako
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_enju_province
 103 = {		#b_jurojin_seido_phoenix
 	culture = asako
 	religion = seven_fortunes
-	holding = castle_holding
+	holding = church_holding
 }
 ###c_kirin_province
 104 = {		#b_shiro_gisu
 	culture = asako
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 105 = {		#b_shrine_of_the_kirin
 	culture = asako
@@ -73,12 +115,24 @@
 	culture = shiba
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_omoidasu_province
 107 = {		#b_shiro_omoidasu
 	culture = shiba
 	religion = shinseism
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 108 = {		#b_city_of_remembrance
 	culture = shiba
@@ -90,8 +144,14 @@
 	culture = shiba
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
-110 = {		#b_city_of_remembrance
+110 = {		#b_ubaku_mura
 	culture = shiba
 	religion = seven_fortunes
 	holding = city_holding
@@ -101,6 +161,12 @@
 	culture = shiba
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 111 = {		#b_shadow_forest_village
 	culture = shiba
@@ -112,6 +178,12 @@
 	culture = shiba
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 114 = {		#b_shinsei_and_sumai_mura
 	culture = shiba
@@ -134,6 +206,12 @@
 	culture = isawa
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 118 = {		#b_asahina_seido
 	culture = isawa
@@ -145,18 +223,36 @@
 	culture = shinjo #TODO change for yobanjin culture ?
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 ###c_kougen_province_phoenix
 120 = {		#b_gisei_toshi_phoenix
 	culture = isawa
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ###c_maryoku_province
 121 = {		#b_kyuden_isawa
 	culture = isawa
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_03
+		}
+	}
 }
 122 = {		#b_maryoku_mura
 	culture = isawa
@@ -174,6 +270,12 @@
 	culture = kaito
 	religion = seven_fortunes
 	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
 }
 125 = {		#b_last_traveler_village
 	culture = kaito

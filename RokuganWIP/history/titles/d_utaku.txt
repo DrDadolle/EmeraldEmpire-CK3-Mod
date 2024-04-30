@@ -33,7 +33,7 @@ c_tsuriai_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = 3000570 # TODO placeholder count
-		change_development_level = 5
+		change_development_level = 2
 	}
 }
 
@@ -41,7 +41,7 @@ c_koubaku_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = 3000571 # TODO placeholder count
-		change_development_level = 5
+		change_development_level = 2
 	}
 }
 
