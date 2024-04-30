@@ -20,6 +20,7 @@ c_kenryu_province = {
 	}
 	1123.1.1 = {
 		holder = 3000102 # Akodo Arasou
+		change_development_level = 20
 	}
 	1123.3.1 = { 
 		holder = 3000101 # Akodo Toturi
@@ -30,6 +31,7 @@ c_shimizu_province = {
 	1123.3.1 = { 
 		liege = "d_akodo"
 		holder = 3003100 # Shimizu Aki #TODO change name
+		change_development_level = 10 
 	}
 }
 
@@ -37,6 +39,7 @@ c_renga_province = {
 	1123.1.1 = {
 		liege = "d_akodo"
 		holder = 3003101 # Ichime Aki #TODO change name
+		change_development_level = 10
 	}
 }
 
@@ -44,6 +47,7 @@ c_henkyou_province = {
 	1123.1.1 = { 
 		liege = "d_akodo"
 		holder = 3003102 # Itagawa Aki # TODO change name
+		change_development_level = 15
 	}
 }
 
@@ -51,6 +55,7 @@ c_oiku_province = {
 	1123.1.1 = { 
 		liege = "d_akodo"
 		holder = 3003103 # Katai Aki # TODO change name
+		change_development_level = 15
 	}
 }
 
@@ -58,5 +63,6 @@ c_kokoro_province = {
 	1123.1.1 = { 
 		liege = "d_akodo"
 		holder = 3003104 # Seizaku Aki # TODO change name
+		change_development_level = 20
 	}
 }

@@ -9,6 +9,7 @@ c_kinenkan_province = {
 	1111.1.1 = {
 		liege = "d_agasha"
 		holder = 3000660 # Agasha Tamori
+		change_development_level = 10 
 	}
 }
 
@@ -16,5 +17,6 @@ c_sabishii_province_dragon = {
 	1111.1.1 = {
 		liege = "d_agasha"
 		holder = 3000670 # TODO placeholder count
+		change_development_level = 10 
 	}
 }

@@ -9,6 +9,7 @@ c_aoijiroi_province = {
 	1123.1.1 = {
 		liege = "d_isawa"
 		holder = 3000221 # Isawa Rujo
+		change_development_level = 13
 	}
 }
 
@@ -16,6 +17,7 @@ c_yosomono_province = {
 	1123.1.1 = {
 		liege = "d_isawa"
 		holder = 3003220 # Isawa Ujina
+		change_development_level = 10
 	}
 }
 
@@ -23,6 +25,7 @@ c_kougen_province_phoenix = {
 	1123.1.1 = {
 		liege = "d_isawa"
 		holder = 3000225 # Isawa Tsuke
+		change_development_level = 10
 	}
 }
 
@@ -30,6 +33,7 @@ c_maryoku_province = {
 	1123.1.1 = {
 		liege = "d_isawa"
 		holder = 3000220 # Isawa Eju
+		change_development_level = 17
 	}
 }
 

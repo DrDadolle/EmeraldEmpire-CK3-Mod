@@ -8,6 +8,7 @@ c_kintani_province = { # Shiro Kyotei
 	}
 	1120.4.4 = {
 		holder = 3003001 #  Tsume Takashi
+		change_development_level = 10 
 	}
 }
 
@@ -15,6 +16,7 @@ c_north_kintani_province = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004000 #  PlaceHolder monk
+		change_development_level = 5
 	}
 }
 
@@ -42,6 +44,7 @@ c_nanashi_mura_province = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004100 #  PlaceHolder ronin
+		change_development_level = 10 
 	}
 }
 
@@ -49,6 +52,7 @@ c_shinsei_monastery_rambo = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004001 #  PlaceHolder monk
+		change_development_level = 5
 	}
 }
 
@@ -56,6 +60,7 @@ c_toshi_rambo = { # Toshi Rambo
 	1123.1.1 = {
 		liege = "d_doji"
 		holder = 3000001 # Doji Hotaru
+		change_development_level = 15
 	}
 }
 
@@ -74,6 +79,7 @@ c_rich_frog = {
 	1116.1.1 = {
 		liege = "d_rich_frog"
 		holder = 3001051 #  Miya Tetsua, imperiial governor of Kaeru Toshi
+		change_development_level = 20
 	}
 }
 
@@ -138,6 +144,7 @@ c_south_shinomen_ronin_1 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004101 #  PlaceHolder ronin
+		change_development_level = 5
 	}
 }
 
@@ -146,6 +153,7 @@ c_south_shinomen_ronin_2 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004102 #  PlaceHolder ronin
+		change_development_level = 5
 	}
 }
 
@@ -154,6 +162,7 @@ c_south_shinomen_ronin_3 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004103 #  PlaceHolder ronin
+		change_development_level = 5
 	}
 }
 
@@ -163,6 +172,7 @@ c_central_lands_ronin_1 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004104 #  PlaceHolder ronin
+		change_development_level = 5
 	}
 }
 
@@ -171,6 +181,7 @@ c_central_lands_ronin_2 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004105 #  PlaceHolder ronin
+		change_development_level = 5
 	}
 }
 
@@ -179,6 +190,7 @@ c_central_lands_ronin_3 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004106 #  PlaceHolder ronin
+		change_development_level = 5
 	}
 }
 
@@ -187,6 +199,7 @@ c_central_lands_ronin_4 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004107 #  PlaceHolder ronin
+		change_development_level = 5
 	}
 }
 
@@ -199,6 +212,7 @@ c_daidoji_yukan_see = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004108 #  PlaceHolder ronin
+		change_development_level = 5
 	}
 }
 
@@ -208,6 +222,7 @@ c_shinsei_monastery_yukan_see = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004010 #  PlaceHolder monk
+		change_development_level = 5
 	}
 }
 
@@ -217,13 +232,14 @@ c_conflagration_temple = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004011 #  PlaceHolder monk
+		change_development_level = 5
 	}
 }
 
 c_shinden_kasai = {
-
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004012 #  PlaceHolder monk
+		change_development_level = 3
 	}
 }

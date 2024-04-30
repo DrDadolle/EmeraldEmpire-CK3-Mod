@@ -10,6 +10,7 @@ c_an_ei_province = {
 	1123.1.1 = {
 		liege = "d_soshi"
 		holder = 3000360 # Soshi Shiori
+		change_development_level = 5
 	}
 }
 
@@ -17,6 +18,7 @@ c_yuma_province = {
 	1123.1.1 = {
 		liege = "d_soshi"
 		holder = 3003560 # Nanbu Aki # TODO replace Name
+		change_development_level = 3
 	}
 }
 
@@ -24,5 +26,6 @@ c_kimbouo_province = {
 	1123.1.1 = {
 		liege = "d_soshi"
 		holder = 3000371 # TODO random placehorlder name
+		change_development_level = 3
 	}
 }

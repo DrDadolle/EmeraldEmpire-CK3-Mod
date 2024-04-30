@@ -12,6 +12,7 @@ c_nejiro_province = {
 	1110.1.1 = {
 		liege = "d_shiba"
 		holder = 3000201 # Shiba Ujimitsu
+		change_development_level = 20
 	}
 	1123.4.25 = {
 		holder = 3000200 # Shiba Tsukune
@@ -22,6 +23,7 @@ c_bachitari_province = {
 	1123.1.1 = {
 		liege = "d_shiba"
 		holder = 3003241 # Chukan Aki # TODO replace name
+		change_development_level = 10
 	}
 }
 
@@ -29,6 +31,7 @@ c_nanimo_province = {
 	1123.1.1 = { 
 		liege = "d_shiba"
 		holder = 3003203 # Koganshi Akiko # TODO replace name
+		change_development_level = 10
 	}
 }
 
@@ -36,6 +39,7 @@ c_omoidasu_province = {
 	1123.1.1 = { 
 		liege = "d_shiba"
 		holder = 3003202 # Iga Akiko # TODO replace name
+		change_development_level = 10
 	}
 }
 
@@ -43,5 +47,6 @@ c_haimaato_province = {
 	1123.1.1 = { 
 		liege = "d_shiba"
 		holder = 3003201 # Sodona Aki # TODO replace name
+		change_development_level = 10
 	}
 }

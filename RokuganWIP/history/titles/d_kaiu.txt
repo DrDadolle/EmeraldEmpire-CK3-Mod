@@ -9,6 +9,7 @@ c_yoake_province = {
 	1111.1.1 = {
 		liege = "d_kaiu"
 		holder = 3000440 # Kaiu Shihobu
+		change_development_level = 17
 	}
 }
 
@@ -16,6 +17,7 @@ c_kuda_province = {
 	1111.1.1 = {
 		liege = "d_kaiu"
 		holder = 3000450 # TODO placeholder count
+		change_development_level = 9
 	}
 }
 
@@ -23,6 +25,7 @@ c_hokufuu_province = {
 	1111.1.1 = {
 		liege = "d_kaiu"
 		holder = 3000451 # TODO placeholder count
+		change_development_level = 9
 	}
 }
 

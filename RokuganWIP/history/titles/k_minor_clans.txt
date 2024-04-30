@@ -12,6 +12,7 @@ c_kasuga_province = {
 	1123.1.1 = {
 		liege = "d_kasuga"
 		holder = 3002010 # Kasuga Gima
+		change_development_level = 20
 	}
 }
 #####################
@@ -28,6 +29,7 @@ c_mukade_no_tani_province = {
 	1123.1.1 = {
 		liege = "d_moshi"
 		holder = 3002000 # Moshi Chiasa
+		change_development_level = 10 
 	}
 }
 #####################
@@ -44,6 +46,7 @@ c_kakusu_province = {
 	1123.1.1 = {
 		liege = "d_kitsune"
 		holder = 3002020 # Kitsune Gohei
+		change_development_level = 15
 	}
 }
 #####################
@@ -76,6 +79,7 @@ c_usagi_province = {
 	1123.1.1 = {
 		liege = "d_usagi"
 		holder = 3002040 #  Usagi Tsukiko
+		change_development_level = 15
 	}
 }
 #####################
@@ -92,6 +96,7 @@ c_ashinagabachi_province = {
 	1123.1.1 = {
 		liege = "d_tsuruchi"
 		holder = 3002050 #  Tsuruchi
+		change_development_level = 15
 	}
 }
 
@@ -99,6 +104,7 @@ c_enzan_province = {
 	1123.1.1 = {
 		liege = "d_tsuruchi"
 		holder = 3002050 #  Tsuruchi
+		change_development_level = 10
 	}
 }
 
@@ -106,6 +112,7 @@ c_chuuhan_province = {
 	1123.1.1 = {
 		liege = "d_tsuruchi"
 		holder = 3002050 #  Tsuruchi
+		change_development_level = 10 
 	}
 }
 
@@ -113,12 +120,14 @@ c_shaiga_province = {
 	1123.1.1 = {
 		liege = "d_tsuruchi"
 		holder = 3002050 #  Tsuruchi
+		change_development_level = 10 
 	}
 }
 #####################
 #	Yoritomo
 #####################
 d_yoritomo = {
+
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3002060 #  Yoritomo
@@ -129,6 +138,7 @@ c_gotei_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002060 #  Yoritomo
+		change_development_level = 20
 	}
 }
 
@@ -136,6 +146,7 @@ c_koutetsukan_province_mantis = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002060 #  Yoritomo
+		change_development_level = 15
 	}
 }
 
@@ -143,6 +154,7 @@ c_inazuma_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002060 #  Yoritomo
+		change_development_level = 10 
 	}
 }
 
@@ -150,6 +162,7 @@ c_kaze_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002065 #  TODO placeholder
+		change_development_level = 0
 	}
 }
 
@@ -157,6 +170,7 @@ c_irie_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002065 #  TODO placeholder
+		change_development_level = 0
 	}
 }
 
@@ -164,6 +178,7 @@ c_tokigogachu_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002065 #  TODO placeholder
+		change_development_level = 0
 	}
 }
 
@@ -171,6 +186,7 @@ c_maigosera_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002065 #  TODO placeholder
+		change_development_level = 5
 	}
 }
 
@@ -178,6 +194,7 @@ c_komori_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002065 #  TODO placeholder
+		change_development_level = 5
 	}
 }
 #####################
@@ -194,6 +211,7 @@ c_nekoma_province = {
 	1123.1.1 = {
 		liege = "d_nekoma"
 		holder = 3002070 #  TODO placeholder
+		change_development_level = 10 
 	}
 }
 #####################
@@ -210,6 +228,7 @@ c_tonbo_province = {
 	1123.1.1 = {
 		liege = "d_tonbo"
 		holder = 3002100 # Tonbo Toryu
+		change_development_level = 10 
 	}
 }
 
@@ -228,6 +247,7 @@ c_ichiro_province = {
 	1123.1.1 = {
 		liege = "d_ichiro"
 		holder = 3002090 # Ichiro Chuga
+		change_development_level = 5
 	}
 }
 
@@ -245,6 +265,7 @@ c_toritaka_province = {
 	1123.1.1 = {
 		liege = "d_toritaka"
 		holder = 3002080 # TODO placeholder
+		change_development_level = 5
 	}
 }
 
@@ -262,6 +283,7 @@ c_kaikoga_province = {
 	1123.1.1 = {
 		liege = "d_kaikoga"
 		holder = 3002110 # Kaikoga Tsukasa
+		change_development_level = 5
 	}
 }
 
@@ -273,5 +295,6 @@ c_chuda_province = {
 	1123.1.1 = {
 		liege = "d_isawa" #Held by Isawa family after the 5 Nights of Shame
 		holder = 3000211 # Shiba Akiko #TODO place Holder name
+		change_development_level = 0
 	}
 }

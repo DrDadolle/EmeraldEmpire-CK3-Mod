@@ -10,6 +10,7 @@ c_toshibu_province = {
 	1111.1.1 = {
 		liege = "d_mirumoto"
 		holder = 3000620 # Mirumoto Masashige
+		change_development_level = 8
 	}
 }
 
@@ -17,6 +18,7 @@ c_gaien_province = {
 	1111.1.1 = {
 		liege = "d_mirumoto"
 		holder = 3000630 #TODO placeholder count
+		change_development_level = 5
 	}
 }
 
@@ -24,6 +26,7 @@ c_yakeishi_province = {
 	1111.1.1 = {
 		liege = "d_mirumoto"
 		holder = 3003620 # Zurui Aki # TODO change name
+		change_development_level = 5
 	}
 }
 
@@ -31,6 +34,7 @@ c_kousou_province = {
 	1111.1.1 = {
 		liege = "d_mirumoto"
 		holder = 3003621 # Kousou Aki # TODO change name
+		change_development_level = 5
 	}
 }
 

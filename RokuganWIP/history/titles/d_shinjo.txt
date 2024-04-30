@@ -9,6 +9,7 @@ c_kouryo_province = {
 	1111.1.1 = {
 		liege = "d_shinjo"
 		holder = 3000500 # Shinjo Altansarnai
+		change_development_level = 20
 	}
 }
 
@@ -17,6 +18,7 @@ c_bugaisha_province = {
 	1111.1.1 = {
 		liege = "d_shinjo"
 		holder = 3000510 # TODO placeholder count Change for a character very dishonorable !
+		change_development_level = 5
 	}
 }
 
@@ -24,6 +26,7 @@ c_aishou_province = {
 	1111.1.1 = {
 		liege = "d_shinjo"
 		holder = 3003500 # Marta Aki # TODO replace name
+		change_development_level = 10
 	}
 }
 
@@ -31,5 +34,6 @@ c_haisho_province = {
 	1111.1.1 = {
 		liege = "d_shinjo"
 		holder = 3000511 # TODO placeholder count
+		change_development_level = 10
 	}
 }

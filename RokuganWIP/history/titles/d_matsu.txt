@@ -1,77 +1,85 @@
 d_matsu = {
 	1082.1.1 = { 
-					liege = "k_lion_clan"
-					holder = 3000123 # Matsu Uniri
+		liege = "k_lion_clan"
+		holder = 3000123 # Matsu Uniri
 	}
 	1100.1.1 = { 
-					holder = 3000121 # Matsu Tsuko
+		holder = 3000121 # Matsu Tsuko
 	}
 }
 
 c_yama_province = {
 	1082.1.1 = { 
-					liege = "d_matsu"
-					holder = 3000123 # Matsu Uniri
+		liege = "d_matsu"
+		holder = 3000123 # Matsu Uniri
 	}
 	1100.1.1 = { 
-					holder = 3000121 # Matsu Tsuko
+		holder = 3000121 # Matsu Tsuko
+		change_development_level = 10
 	}
 }
 
 c_azuma_province = {
 	1082.1.1 = { 
-					liege = "d_matsu"
-					holder = 3000123 # Matsu Uniri
+		liege = "d_matsu"
+		holder = 3000123 # Matsu Uniri
 	}
 	1100.1.1 = { 
-					holder = 3000121 # Matsu Tsuko
+		holder = 3000121 # Matsu Tsuko
+		change_development_level = 15
 	}
 }
 
 c_heigen_province = {
 	1082.1.1 = { 
-					liege = "d_matsu"
-					holder = 3003120 # Matsu Uniri
+		liege = "d_matsu"
+		holder = 3003120 # Matsu Uniri
 	}
 	1100.1.1 = { 
-					holder = 3003120 # Koritome Aki #TODO change name
+		holder = 3003120 # Koritome Aki #TODO change name
+		change_development_level = 10
 	}
 }
 
 c_kaeru_province = {
 	1082.1.1 = { 
-					liege = "d_matsu"
-					holder = 3000123 # Matsu Uniri
+		liege = "d_matsu"
+		holder = 3000123 # Matsu Uniri
 	}
 	1100.1.1 = { 
-					holder = 3000122 # Matsu Hiroru
+		holder = 3000122 # Matsu Hiroru
+		change_development_level = 15
 	}
 }
 
 c_tonfajutsen_province = {
 	1123.1.1 = { 
-					liege = "d_matsu"
-					holder = 3000130 # TODO placeholder name
+		liege = "d_matsu"
+		holder = 3000130 # TODO placeholder name
+		change_development_level = 10
 	}
 }
 
 c_yojin_province = {
 	1123.1.1 = { 
-					liege = "d_matsu"
-					holder = 3000130 # TODO placeholder name
+		liege = "d_matsu"
+		holder = 3000130 # TODO placeholder name
+		change_development_level = 10
 	}
 }
 
 c_gakka_province = {
 	1123.1.1 = { 
-					liege = "d_matsu"
-					holder = 3000131 # TODO placeholder name
+		liege = "d_matsu"
+		holder = 3000131 # TODO placeholder name
+		change_development_level = 10
 	}
 }
 
 c_chugen_province = {
 	1123.1.1 = { 
-					liege = "d_matsu"
-					holder = 3000131 # TODO placeholder name
+		liege = "d_matsu"
+		holder = 3000131 # TODO placeholder name
+		change_development_level = 10
 	}
 }

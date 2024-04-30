@@ -11,8 +11,10 @@ k_lion_clan = {
 	}
 	1123.1.1 = {
 		holder = 3000102 # Akodo Arasou
+		change_development_level = 5 # general development
 	}
 	1123.3.1 = { 
 		holder = 3000101 # Akodo Toturi
+		
 	}
 }

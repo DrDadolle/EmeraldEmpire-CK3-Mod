@@ -13,11 +13,12 @@ d_doji = {
 c_oyomesan_province = {
 
 	1110.1.1 = {
-					liege = "d_doji"
-					holder = 3000003 # Doji Satsume
+		liege = "d_doji"
+		holder = 3000003 # Doji Satsume
 	}
 	1123.1.1 = { 
-					holder = 3000001 # Doji Hotaru
+		holder = 3000001 # Doji Hotaru
+		change_development_level = 20
 	}
 }
 
@@ -29,6 +30,7 @@ c_kazenmuketsu_province = {
 	}
 	1123.1.1 = { 
 		holder = 3000001 # Doji Hotaru
+		change_development_level = 20
 	}
 }
 
@@ -40,6 +42,7 @@ c_itoshii_province = {
 	}
 	1123.1.1 = { 
 		holder = 3000002 # Doji Kuwanan
+		change_development_level = 15
 	}
 }
 
@@ -47,6 +50,7 @@ c_kougen_province = {
 	1123.1.1 = { 
 		liege = "d_doji"
 		holder = 3000010 # Doji Aki # Random County Holder
+		change_development_level = 15
 	}
 }
 
@@ -54,5 +58,6 @@ c_umoeru_province = {
 	1123.1.1 = { 
 		liege = "d_doji"
 		holder = 3000011 # Doji Tsukasa # Random County Holder
+		change_development_level = 15
 	}
 }

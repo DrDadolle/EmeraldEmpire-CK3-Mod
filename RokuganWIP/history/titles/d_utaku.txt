@@ -9,6 +9,7 @@ c_manaka_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = 3000560 # Utaku Rumaru
+		change_development_level = 15
 	}
 }
 
@@ -16,6 +17,7 @@ b_shiro_naoko = {
 	1123.1.1 = {
 		liege = "c_manaka_province"
 		holder = 3003560 # Naoko Aki #TODO change name
+		change_development_level = 10
 	}
 }
 
@@ -23,6 +25,7 @@ c_isei_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = 3000570 # TODO placeholder count
+		change_development_level = 5
 	}
 }
 
@@ -30,6 +33,7 @@ c_tsuriai_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = 3000570 # TODO placeholder count
+		change_development_level = 5
 	}
 }
 
@@ -37,6 +41,7 @@ c_koubaku_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = 3000571 # TODO placeholder count
+		change_development_level = 5
 	}
 }
 
@@ -44,5 +49,6 @@ c_senseki_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = 3000571 # TODO placeholder count
+		change_development_level = 5
 	}
 }

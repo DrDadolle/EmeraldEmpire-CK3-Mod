@@ -7,35 +7,40 @@ d_ikoma = {
 
 c_gunsho_province = {
 	1098.1.1 = { 
-					liege = "d_ikoma"
-					holder = 3000160 # Ikoma Anakazu
+		liege = "d_ikoma"
+		holder = 3000160 # Ikoma Anakazu
+		change_development_level = 15
 	}
 }
 
 c_eiyu_province = {
 	1098.1.1 = { 
-					liege = "d_ikoma"
-					holder = 3000160 # Ikoma Anakazu
+		liege = "d_ikoma"
+		holder = 3000160 # Ikoma Anakazu
+		change_development_level = 15
 	}
 }
 
 c_gisei_province = {
 	1123.1.1 = { 
-					liege = "d_ikoma"
-					holder = 3000170 # TODO placeholder name
+		liege = "d_ikoma"
+		holder = 3000170 # TODO placeholder name
+		change_development_level = 10
 	}
 }
 
 c_ikota_province = {
 	1123.1.1 = { 
-					liege = "d_ikoma"
-					holder = 3003160 # Hosokawa Aki # TODO change name
+		liege = "d_ikoma"
+		holder = 3003160 # Hosokawa Aki # TODO change name
+		change_development_level = 10
 	}
 }
 
 c_shiranai_province = {
 	1123.1.1 = { 
-					liege = "d_ikoma"
-					holder = 3000171 # TODO placeholder name
+		liege = "d_ikoma"
+		holder = 3000171 # TODO placeholder name
+		change_development_level = 10
 	}
 }

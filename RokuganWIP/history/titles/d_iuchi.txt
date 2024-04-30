@@ -9,6 +9,7 @@ c_kaihi_province = {
 	1111.1.1 = {
 		liege = "d_iuchi"
 		holder = 3000520 # Iuchi Daiyu
+		change_development_level = 15
 	}
 }
 
@@ -24,6 +25,7 @@ c_shiten_province = {
 	1111.1.1 = {
 		liege = "d_iuchi"
 		holder = 3000530 # TODO placeholder count
+		change_development_level = 8
 	}
 }
 
@@ -32,5 +34,6 @@ c_ujidera_province = {
 	1115.1.1 = {
 		liege = "d_iuchi"
 		holder = 3003521 #  Horiuchi Shoan, Horiuchi founder
+		change_development_level = 8
 	}
 }

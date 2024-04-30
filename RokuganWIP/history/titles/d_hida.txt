@@ -9,6 +9,7 @@ c_ishibei_province = {
 	1110.1.1 = {
 		liege = "d_hida"
 		holder = 3000410 # placeholder count
+		change_development_level = 8
 	}
 }
 
@@ -23,6 +24,7 @@ c_kyoukan_province = {
 	1110.1.1 = {
 		liege = "d_hida"
 		holder = 3000400 # Hida Kisada
+		change_development_level = 13
 	}
 }
 
@@ -45,6 +47,7 @@ c_juuin_province = {
 	1110.1.1 = {
 		liege = "d_hida"
 		holder = 3000410 # placeholder count
+		change_development_level = 8
 	}
 }
 
@@ -52,6 +55,7 @@ c_ishigaki_province = {
 	1110.1.1 = {
 		liege = "d_hida"
 		holder = 3000411 # placeholder count
+		change_development_level = 4
 	}
 }
 
@@ -59,5 +63,6 @@ c_garanto_province_crab = {
 	1110.1.1 = {
 		liege = "d_hiruma"
 		holder = 3000420 # Hiruma Yoshino
+		change_development_level = 9
 	}
 }
