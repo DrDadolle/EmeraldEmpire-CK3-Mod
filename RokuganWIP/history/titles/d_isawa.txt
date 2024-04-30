@@ -17,7 +17,7 @@ c_yosomono_province = {
 	1123.1.1 = {
 		liege = "d_isawa"
 		holder = 3003220 # Isawa Ujina
-		change_development_level = 10
+		change_development_level = 2
 	}
 }
 
@@ -25,7 +25,7 @@ c_kougen_province_phoenix = {
 	1123.1.1 = {
 		liege = "d_isawa"
 		holder = 3000225 # Isawa Tsuke
-		change_development_level = 10
+		change_development_level = 2
 	}
 }
 

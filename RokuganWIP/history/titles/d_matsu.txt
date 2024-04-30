@@ -64,7 +64,7 @@ c_yojin_province = {
 	1123.1.1 = { 
 		liege = "d_matsu"
 		holder = 3000130 # TODO placeholder name
-		change_development_level = 10
+		change_development_level = 20
 	}
 }
 

@@ -24,6 +24,7 @@ c_kintani_mori_province = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004002 #  PlaceHolder monk
+		change_development_level = 5
 	}
 }
 
@@ -31,6 +32,7 @@ c_east_kintani_province = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004003 #  PlaceHolder monk
+		change_development_level = 5
 	}
 }
 
@@ -116,6 +118,7 @@ c_west_shinomen_monastery_4 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004007 #  PlaceHolder monk
+		change_development_level = 5
 	}
 }
 
@@ -136,6 +139,7 @@ c_south_shinomen_monastery_2 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004009 #  PlaceHolder monk
+		change_development_level = 5
 	}
 }
 

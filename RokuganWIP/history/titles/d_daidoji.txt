@@ -17,7 +17,7 @@ c_hayaku_province = {
 	1123.1.1 = { 
 		liege = "d_daidoji"
 		holder = 3000060 # Daidoji Uji
-		change_development_level = 5
+		change_development_level = 20
 	}
 }
 
@@ -25,7 +25,7 @@ c_sabishii_province = {
 	1123.1.1 = { 
 		liege = "d_daidoji"
 		holder = 3000070 # TODO placeholder name
-		change_development_level = 5
+		change_development_level = 11
 	}
 }
 
@@ -33,6 +33,6 @@ c_ichigun_province = {
 	1123.1.1 = { 
 		liege = "d_daidoji"
 		holder = 3000071 # TODO placeholder name
-		change_development_level = 5
+		change_development_level = 11
 	}
 }

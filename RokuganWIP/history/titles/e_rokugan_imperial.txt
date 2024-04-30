@@ -148,5 +148,6 @@ k_emerald_champ = {
 	1123.1.1 = { #TODO for now, it's not historic, but emerald champion stuff is not vanilla friendly. To code later
 		liege = "e_rokugan"
 		#holder = 3000101 # Toturi
+		change_development_level = 30
 	}
 }

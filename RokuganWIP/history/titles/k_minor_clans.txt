@@ -12,7 +12,7 @@ c_kasuga_province = {
 	1123.1.1 = {
 		liege = "d_kasuga"
 		holder = 3002010 # Kasuga Gima
-		change_development_level = 20
+		change_development_level = 25
 	}
 }
 #####################
@@ -162,7 +162,7 @@ c_kaze_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002065 #  TODO placeholder
-		change_development_level = 0
+		change_development_level = 5
 	}
 }
 
@@ -170,7 +170,7 @@ c_irie_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002065 #  TODO placeholder
-		change_development_level = 0
+		change_development_level = 2
 	}
 }
 
@@ -178,7 +178,7 @@ c_tokigogachu_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
 		holder = 3002065 #  TODO placeholder
-		change_development_level = 0
+		change_development_level = 5
 	}
 }
 
