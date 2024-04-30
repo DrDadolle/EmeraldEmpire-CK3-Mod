@@ -1,16 +1,31 @@
 e_rokugan = { 
+
+	5.1.1 = {
+		# holder = kami Hantei
+	}
+
 	1103.1.1 = {
 		holder = 3001000 # Hantei 38th
 	}
 }
 
 d_rokugani_faith = {
+
+	5.1.1 = {
+		# holder = kami Hantei
+	}
+
 	1103.1.1 = {
 		holder = 3001000 # Hantei 38th
 	}
 }
 
 k_imperial_families = {
+
+	5.1.1 = {
+		# holder = kami Hantei
+	}
+
 	1103.1.1 = {
 		liege = "e_rokugan"
 		holder = 3001000 # Hantei 38th
@@ -18,6 +33,11 @@ k_imperial_families = {
 }
 
 d_hantei = {
+
+	5.1.1 = {
+		# holder = kami Hantei
+	}
+
 	1103.1.1 = {
 		liege = "k_imperial_families"
 		holder = 3001000 # Hantei 38th
@@ -25,58 +45,102 @@ d_hantei = {
 }
 
 c_otosan_uchi_province = {
+
+	5.1.1 = {
+		# holder = kami Hantei
+	}
+
 	1103.1.1 = {
 		liege = "d_hantei"
 		holder = 3001000 # Hantei 38th
+		change_development_level = 40
 	}
 }
 
 d_otomo = {
-	1123.1.1 = {
+	7.1.1 = { # Swore fealty in 7
 		liege = "k_imperial_families"
+		#holder = Otomo
+	}
+
+	1123.1.1 = {
 		holder = 3001040 # Otomo Sorai
 	}
 }
 
 d_seppun = {
-	1123.1.1 = {
+
+	5.1.1 = { # Swore fealty in 5
 		liege = "k_imperial_families"
+		#holder = Seppun
+	}
+
+	1123.1.1 = {
 		holder = 3001020 # Seppun Daiori
 	}
 }
 
 c_seppun_province = {
-	1123.1.1 = {
+
+	5.1.1 = { 
 		liege = "d_seppun"
+		#holder = Seppun
+	}
+
+	1123.1.1 = {
 		holder = 3001020 # Seppun Daiori
+		change_development_level = 30
 	}
 }
 
 c_seppun_province_2 = {
-	1123.1.1 = {
+
+	5.1.1 = { 
 		liege = "d_seppun"
+		#holder = Seppun
+	}
+
+	1123.1.1 = {
 		holder = 3001020 # Seppun Daiori
+		change_development_level = 30
 	}
 }
 
 c_seppun_province_3 = {
-	1123.1.1 = {
+
+	5.1.1 = { 
 		liege = "d_seppun"
+		#holder = Seppun
+	}
+
+	1123.1.1 = {
 		holder = 3001030 # TODO placeholder name
+		change_development_level = 30
 	}
 }
 
 d_miya = {
-	1123.1.1 = {
+
+	46.1.1 = { # Swore fealty in 46
 		liege = "k_imperial_families"
+		#holder = miya
+	}
+
+	1123.1.1 = {
 		holder = 3001050 # Miya Satoshi
 	}
 }
 
 c_miya_province = {
-	1123.1.1 = {
+
+	46.1.1 = { 
 		liege = "d_miya"
+		#holder = miya
+	}
+
+	1123.1.1 = {
 		holder = 3001050 # Miya Satoshi
+		change_development_level = 15
 	}
 }
 

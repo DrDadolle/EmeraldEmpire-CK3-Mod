@@ -1,6 +1,11 @@
 k_crane_clan = { 
-	1110.1.1 = {
+
+	5.1.1 = {
 		liege = "e_rokugan"
+		# holder = kami Doji
+	}
+
+	1110.1.1 = {
 		holder = 3000003 # Doji Satsume
 	}
 	1123.1.1 = {
