@@ -1641,12 +1641,13 @@ e_rokugan = {
 			c_chuuhan_province = {
 				 color = { 201 198 96 }
 
+                 b_quiet_stream_village = {
+                    province = 263
+                }
+
 				 b_gateway_village = {
 					 province = 264
-				 }
-				 b_quiet_stream_village = {
-					 province = 263
-				 }
+				 } 
 			}
 			c_shaiga_province = {
 				 color = { 250 240 20 }
