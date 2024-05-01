@@ -138,7 +138,7 @@
 ##### Vassal
 3003200 = {
 	name = name_aki 	# Nasu Aki  #TODO replace name
-	dynasty = 2103013 	# Nasu Vassal family 
+	dynasty_shiba = 2103013 	# Nasu Vassal family 
 	religion = "shinseism"
 	culture = "shiba"
 
@@ -150,7 +150,7 @@
 
 3003201 = {
 	name = name_aki 	# Sodona Aki  #TODO replace name
-	dynasty = 2103014 	# Sodona Vassal family 
+	dynasty_house = 2103014 	# Sodona Vassal family 
 	religion = "shinseism"
 	culture = "shiba"
 
@@ -401,7 +401,7 @@ oshifukai_spirit = {
 ##### Vassal
 3003220 = { #This vassal exists, but is landless for now...
 	name = name_aki 	# Shingon Aki  #TODO replace name
-	dynasty = 2103017 	# Shingon Vassal family 
+	dynasty_house = 2103017 	# Shingon Vassal family 
 	religion = "seven_fortunes"
 	culture = "isawa"
 
@@ -504,7 +504,7 @@ oshifukai_spirit = {
 ##### Vassal
 3003240 = {
 	name = name_aki 	# Nani Aki  #TODO replace name
-	dynasty = 2103011 	# Nani Vassal family 
+	dynasty_house = 2103011 	# Nani Vassal family 
 	religion = "seven_fortunes"
 	culture = "asako"
 
@@ -514,7 +514,7 @@ oshifukai_spirit = {
 }
 3003241 = {
 	name = name_aki 	# Chukan Aki  #TODO replace name
-	dynasty = 2103012 	# Chukan Vassal family 
+	dynasty_house = 2103012 	# Chukan Vassal family 
 	religion = "seven_fortunes"
 	culture = "asako"
 

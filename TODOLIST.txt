@@ -26,18 +26,24 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Rework provinces, so looks better
 	- Fix ID 25 provinces border & split between river (and river crossing)
 	- Split ID 21/22 provinces into smaller
+	- split kyuden isawa county to add Shiro Shingon, barring the entry
+	- split hare village baronny in 2 (river crossing stuff)
+	- split soshi mountains baronnies (river crossing stuff)
+	- DONT FORGET TO add starting holding, titles, terrain & map object data
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 
+- Dynasty house 
+	- Lion/Crane/Phoenix Done
 - Fix river width
-- Paint the map with materials
-- Fix the bookmarks, so Doji is not naked, and it looks better
 - Add river map
+- Fix the bookmarks, so Doji is not naked, and it looks better
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - Create MaA for each great clan, maybe each minor one
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
 	- update culture_has_skirmisher_maa to each culture with such maa
 	- basic Mma and levies localization
+- Paint the map with materials
 
 ## Fixes to do
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
@@ -68,7 +74,7 @@ found_empire_decision)
 	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
-- Starting crown authority, buildings
+- Starting crown authority, buildings (no ?)
 - yobanjin culture (for county kaito)
 - Prevent imperial family from doing wars against other clans...? Only for AI ?
 - Blood feud (like Matsu vs Kakita)
@@ -77,21 +83,32 @@ found_empire_decision)
 	- Pale Oak Castle tree
 	- Hall of Ancestors Lion
 	- Kyuden Hida special castle
+		- For all Clan Champion Castle as well ? + Otosan Uchi
 	- Kaiu Wall (cf great wall of chine)
 	- Ryoko Owari opium trade
 	- Sunda Mizu Mura trade 
 	- Traitor's Trove
 	- Turo Kojiri trade
-	- Tsuma
+	- Tsuma Topaz building
+	- Mines
+		- Kaiu Steel
+		- Jade
+		- Gold
+		- Crystal
+		- Obsidian
+	- Chuda Ruins
+			- revive chuda dynasty decision !
 - Special events setting the start of the clan wars
 - Add ancestral clan & family founders
-
+- Innovations
+- ============ STOP TO POLISH & ADD 3D/2D ASSETS THEN RELEASE ====================
 - Phoenix Council of 5 special government
 - Togashi special succession ?
 - Special weapon & artifacts
 - Black scrolls, cursed artifacts
 - Shindoshi stuff (very low priority)
 - Maho stuff (very low priority)
+	- Tomb of Iuchiban special building ?
 - Shadowlands stuff (very low priority)
 
 
@@ -108,8 +125,6 @@ found_empire_decision)
 - FUN for background images for council, characters, court, etc...
 
 # Ideas
-###
-- Revival of Chuda dynasty ? Special phoenix decision stuff.
 ### How-to Different species (à la Lotr)
 - stat, life expectancies :  based on the heritage of the culture
 - in lotr_race_triggers : culture_conversion_to_allowed_culture & same_race. it is used everywhere to prevent weird culture stuff

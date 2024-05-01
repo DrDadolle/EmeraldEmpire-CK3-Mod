@@ -148,22 +148,26 @@
 	motto = dynn_kaito_motto
 }
 ##### Vassals
-2103011 = { # Asako vassal
-	name = dynn_nani
-	culture = asako
-}
-2103012 = { # Asako vassal
-	name = dynn_chukan
-	culture = asako
-}
-2103013 = { # Nasu vassal
-	name = dynn_nasu
-	culture = shiba
-}
-2103014 = { # Sodona vassal
-	name = dynn_sodona
-	culture = shiba
-}
+# Dynasty house from Asako
+# 2103011 = { # Asako vassal
+# 	name = dynn_nani
+# 	culture = asako
+# }
+# Dynasty house from Asako
+# 2103012 = { # Asako vassal
+# 	name = dynn_chukan
+# 	culture = asako
+# }
+# Dynasty house from Shiba
+# 2103013 = { # Nasu vassal
+# 	name = dynn_nasu
+# 	culture = shiba
+# }
+# Dynasty house from Shiba
+# 2103014 = { # Sodona vassal
+# 	name = dynn_sodona
+# 	culture = shiba
+# }
 2103015 = { # Iga vassal
 	name = dynn_iga
 	culture = shiba
@@ -172,10 +176,11 @@
 	name = dynn_koganshi
 	culture = shiba
 }
-2103017 = { # Shingon vassal
-	name = dynn_shingon
-	culture = isawa
-}
+# Dynasty house from Asako
+# 2103017 = { # Shingon vassal
+# 	name = dynn_shingon
+# 	culture = isawa
+# }
 ##########################
 ##### Scorpion Clan
 ##########################
