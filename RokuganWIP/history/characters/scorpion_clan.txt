@@ -28,7 +28,7 @@
 ##### Vassal
 3003300 = {
 	name = name_aki 	#  Tansaku Aki  #TODO replace name
-	dynasty = 2104014 	# Tansaku Vassal family 
+	dynasty_house = 2104014 	# Tansaku Vassal family 
 	religion = "seven_fortunes"
 	culture = "yogo"
 
@@ -153,7 +153,7 @@
 ##### Vassal
 3003320 = {
 	name = name_aki 	#  Ugawa Aki  #TODO replace name
-	dynasty = 2104013 	# Ugawa Vassal family 
+	dynasty_house = 2104013 	# Ugawa Vassal family 
 	religion = "cult_ancestors"
 	culture = "bayushi"
 
@@ -224,7 +224,7 @@
 
 3003341 = {
 	name = name_aki 	#  Kochako  Aki  #TODO replace name
-	dynasty = 2104016 	# Kochako  Vassal family 
+	dynasty_house = 2104016 	# Kochako  Vassal family 
 	religion = "cult_ancestors"
 	culture = "shosuro"
 

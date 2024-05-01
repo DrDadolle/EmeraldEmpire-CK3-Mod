@@ -115,7 +115,7 @@
 ##### Vassal
 3003620 = { 
 	name = name_aki 	# Zurui Aki  #TODO replace name
-	dynasty = 2105018 	# Zurui Vassal family 
+	dynasty_house = 2105018 	# Zurui Vassal family 
 	religion = "shinseism"
 	culture = "mirumoto"
 

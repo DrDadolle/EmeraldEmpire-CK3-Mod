@@ -114,6 +114,32 @@
     dynasty = 2100011 # Asako
 }
 ##########################
+##### Scorpion Clan
+##########################
+# Dynasty house from Bayushi
+2104013 = { # bayushi vassal
+	name = dynn_ugawa
+	culture = bayushi
+    dynasty = 2100013 # Bayushi
+}
+# Dynasty house from Yogo
+2104014 = { # yogo vassal
+	name = dynn_tansaku
+	culture = yogo
+    dynasty = 2100016 # Yogo
+}
+# Dynasty house from Shosuro
+2104016 = { # shosuro vassal
+	name = dynn_kochako
+	culture = shosuro
+    dynasty = 2100014 # shosuro
+}
+2104017 = { # shosuro vassal
+	name = dynn_tokagure 
+	culture = shosuro
+    dynasty = 2100014 # shosuro
+}
+##########################
 ##### Dragon Clan
 ##########################
 2100019 = {
@@ -121,5 +147,11 @@
 	culture = kitsuki
     dynasty = 2100020 # Agasha
 	motto = dynn_kitsuki_motto
+}
+# Dynasty house from Mirumoto
+2105018 = { # mirumoto vassal
+	name = dynn_zurui
+	culture = mirumoto
+    dynasty = 2100018 # Mirumoto
 }
 
