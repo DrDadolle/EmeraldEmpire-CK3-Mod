@@ -706,6 +706,7 @@ found_minor_clan_decision = {
 
 	effect = {
 		# TODO special event to choose the mon/animal of the new clan ?
+		# Create Own Dynasty based on your first name ?
 		# TODO replace with custom_duchy effect !!
 		#create_custom_kingdom_effect = yes
 		#if = {

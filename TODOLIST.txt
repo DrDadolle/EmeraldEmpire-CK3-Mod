@@ -30,6 +30,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- split hare village baronny in 2 (river crossing stuff)
 	- split soshi mountains baronnies (river crossing stuff)
 	- DONT FORGET TO add starting holding, titles, terrain & map object data
+	- Split 413 to add Mura no Kin (with Mine), if that's the county which is closest to the mountains
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 
 - Dynasty house  : check everything works
@@ -89,14 +90,32 @@ found_empire_decision)
 	- Traitor's Trove
 	- Turo Kojiri trade
 	- Tsuma Topaz building
+	- Steel crane forge (c_takuetsu_province  b_kyuden_kakita )
 	- Mines
+		- iron
 		- Kaiu Steel
 		- Jade
 		- Gold
 		- Crystal
 		- Obsidian
 		IN 
-			- Twilight Mountains (Maisuna Shiro, Hokufuu province) / Kaiu Steel
+			- Twilight Mountains (c_hokufuu_province b_maisuna_shiro ) / Kaiu Steel
+			- Twilight Mountains (c_ishibei_province b_shiro_kakeguchi) / Iron
+			- Wall above ocean mountains (c_juuin_province b_nishiyama_mura) / Jade
+			- Kuni Lands (c_midakai_province b_high_tree_village) / Iron
+			- Hills Daidoji (c_umoeru_province b_umoeru_mura) / Coal (keep it ?)
+			- c_yakeishi_province b_tetsu_kama_mura / Iron
+			- Serpent's Tail Mine (c_sabishii_province_dragon b_yamasura) / Gold & Iron
+			- c_shaiga_province b_shaiga / Gold
+			- c_mihari_province b_orange_flame_village / Stuff to make fireworks
+			- c_chuuou_province b_aitate_toshi / Silver mine
+			- c_kirin_province b_shiro_gisu / Silver mine
+			- c_kakushikoto_province b_nihai_tower / Iron
+			- c_fukitsu_province b_nagamori_mura / Iron
+			- c_ujidera_province b_shinden_horiuchi / Iron 
+			- c_bugaisha_province b_shiro_bugaisha / Diamond open pit
+			- c_tsuriai_province b_yashigi_village / jade
+			- c_south_shinomen_ronin_1 b_south_shinomen_ronin_1 (I guess ? need the one close to the mountains) / Gold
 	- Chuda Ruins
 			- revive chuda dynasty decision !
 - Special events setting the start of the clan wars
