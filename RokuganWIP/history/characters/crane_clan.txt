@@ -317,7 +317,7 @@
 
 3000020 = {
 	name = name_yoshi 	# Kakita Yoshi
-	dynasty = 2100004 	# Kakita
+	dynasty_house = 2100004 	# Kakita
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -347,7 +347,7 @@
 
 3000021 = {
 	name = name_toshimoko 	# Kakita Toshimoko
-	dynasty = 2100004 	# Kakita
+	dynasty_house = 2100004 	# Kakita
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -379,7 +379,7 @@
 
 3000022 = {
 	name = name_toshimo 	# Kakita Toshimo, father of Kakita Yoshi, Toshimoko & Teinko
-	dynasty = 2100004 	# Kakita
+	dynasty_house = 2100004 	# Kakita
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -403,7 +403,7 @@
 
 3000023 = {
 	name = name_barahime 	# Kakita Barahime, wife of Kakita Yoshi
-	dynasty = 2100004 	# Kakita
+	dynasty_house = 2100004 	# Kakita
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	female = yes
@@ -424,7 +424,7 @@
 
 3000024 = {
 	name = name_shinta 	# Kakita Shinta, son of Kakita Yoshi
-	dynasty = 2100004 	# Kakita
+	dynasty_house = 2100004 	# Kakita
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -446,7 +446,7 @@
 ##### Random county holder for the Kakita
 3000030 = {
 	name = name_aki 	#  Kakita Aki  #TODO replace name
-	dynasty = 2100004 	# Kakita  #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100004 	# Kakita  #TODO replace by  like the dynn_morehei_doji
 	religion = "cult_ancestors"
 	culture = "kakita"
 
@@ -457,7 +457,7 @@
 
 3000031 = {
 	name = name_akiko	#  Kakita Akiko  #TODO replace name
-	dynasty = 2100004 	# Kakita #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100004 	# Kakita #TODO replace by  like the dynn_morehei_doji
 	female = yes
 	religion = "cult_ancestors"
 	culture = "kakita"
@@ -472,7 +472,7 @@
 #####################
 3000040 = {
 	name = name_takamori 	# Asahina Takamori, Asahina daimyo
-	dynasty = 2100003 	# Asahina
+	dynasty_house = 2100003 	# Asahina
 	religion = "seven_fortunes"
 	culture = "asahina" 	
 	
@@ -496,7 +496,7 @@
 
 3000041 = {
 	name = name_takako 	# Asahina Takako
-	dynasty = 2100003 	# Asahina
+	dynasty_house = 2100003 	# Asahina
 	religion = "seven_fortunes"
 	culture = "asahina" 	
 	female = yes
@@ -519,7 +519,7 @@
 ##### Random county holder for the Asahina
 3000050 = {
 	name = name_aki 	#  Asahina Aki  #TODO replace name
-	dynasty = 2100003 	# Asahina  #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100003 	# Asahina  #TODO replace by  like the dynn_morehei_doji
 	religion = "seven_fortunes"
 	culture = "asahina"
 
@@ -530,7 +530,7 @@
 
 3000051 = {
 	name = name_akiko	#  Asahina Akiko  #TODO replace name
-	dynasty = 2100003 	# Asahina #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100003 	# Asahina #TODO replace by  like the dynn_morehei_doji
 	female = yes
 	religion = "seven_fortunes"
 	culture = "asahina"
@@ -546,7 +546,7 @@
 #####################
 3000060 = {
 	name = name_uji 	# Daidoji Uji, Daidoji daimyo
-	dynasty = 2100002 	# Daidoji
+	dynasty_house = 2100002 	# Daidoji
 	religion = "seven_fortunes"
 	culture = "daidoji" 	
 	
@@ -575,10 +575,10 @@
 	}
 }
 
-##### Random county holder for the Asahina
+##### Random county holder for the Daidoji
 3000070 = {
 	name = name_aki 	#  Daidoji Aki  #TODO replace name
-	dynasty = 2100002 	# Daidoji  #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100002 	# Daidoji  #TODO replace by  like the dynn_morehei_doji
 	religion = "seven_fortunes"
 	culture = "daidoji"
 
@@ -589,7 +589,7 @@
 
 3000071 = {
 	name = name_akiko	#  Daidoji Akiko  #TODO replace name
-	dynasty = 2100002 	# Daidoji #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100002 	# Daidoji #TODO replace by  like the dynn_morehei_doji
 	female = yes
 	religion = "seven_fortunes"
 	culture = "daidoji"

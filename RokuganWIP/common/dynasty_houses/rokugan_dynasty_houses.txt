@@ -1,1 +1,37 @@
-﻿
+﻿##########################
+##### Crane Clan
+##########################
+2100002 = {
+	name = dynn_daidoji
+	culture = daidoji
+    dynasty= 2100001 # Doji
+	motto = dynn_daidoji_motto
+}
+2100003 = {
+	name = dynn_asahina
+	culture = asahina
+    dynasty = 2100010 # isawa
+	motto = dynn_asahina_motto
+}
+2100004 = {
+	name = dynn_kakita
+	culture = kakita
+    dynasty = 2100001 # Doji
+	motto = dynn_kakita_motto
+}
+##### Vassals
+2101001 = { # Kakita vassal
+	name = dynn_ashidaka
+	culture = kakita
+    dynasty = 2100001 # Doji
+}
+##########################
+##### Dragon Clan
+##########################
+2100019 = {
+	name = dynn_kitsuki
+	culture = kitsuki
+    dynasty = 2100020 # Agasha
+	motto = dynn_kitsuki_motto
+}
+

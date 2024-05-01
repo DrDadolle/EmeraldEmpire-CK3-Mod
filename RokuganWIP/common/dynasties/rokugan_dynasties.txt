@@ -6,27 +6,30 @@
 	culture = doji
 	motto = dynn_doji_motto
 }
-2100002 = {
-	name = dynn_daidoji
-	culture = daidoji
-	motto = dynn_daidoji_motto
-}
-2100003 = {
-	name = dynn_asahina
-	culture = asahina
-	motto = dynn_asahina_motto
-}
-
-2100004 = {
-	name = dynn_kakita
-	culture = kakita
-	motto = dynn_kakita_motto
-}
+# Dynasty house from Doji now
+# 2100002 = {
+# 	name = dynn_daidoji
+# 	culture = daidoji
+# 	motto = dynn_daidoji_motto
+# }
+# Dynasty house from Isawa now
+# 2100003 = {
+# 	name = dynn_asahina
+# 	culture = asahina
+# 	motto = dynn_asahina_motto
+# }
+# Dynasty house from Doji now
+# 2100004 = {
+# 	name = dynn_kakita
+# 	culture = kakita
+# 	motto = dynn_kakita_motto
+# }
 ##### Vassals
-2101001 = { # Kakita vassal
-	name = dynn_ashidaka
-	culture = kakita
-}
+# Dynasty house from Kakita, aka from Doji
+# 2101001 = { # Kakita vassal
+# 	name = dynn_ashidaka
+# 	culture = kakita
+# }
 2101002 = { # Daidoji vassal
 	name = dynn_fujihiro
 	culture = daidoji
@@ -225,11 +228,12 @@
 	culture = mirumoto
 	motto = dynn_mirumoto_motto
 }
-2100019 = {
-	name = dynn_kitsuki
-	culture = kitsuki
-	motto = dynn_kitsuki_motto
-}
+# Dynasty house of the Agasha now
+# 2100019 = {
+# 	name = dynn_kitsuki
+# 	culture = kitsuki
+# 	motto = dynn_kitsuki_motto
+# }
 2100020 = {
 	name = dynn_agasha
 	culture = agasha

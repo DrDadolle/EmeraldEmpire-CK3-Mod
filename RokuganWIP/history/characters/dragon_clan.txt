@@ -138,7 +138,7 @@
 #####################
 3000640 = {
 	name = name_jusai 	# Kitsuki Jusai, Kitsuki Daimyo
-	dynasty = 2100019 	# Kitsuki
+	dynasty_house = 2100019 	# Kitsuki
 	religion = "shinseism"
 	culture = "kitsuki"
 	
@@ -160,7 +160,7 @@
 
 3000641 = {
 	name = name_jusai 	# Kitsuki Tomoyo, Kitsuki Daimyo's youngest daughter
-	dynasty = 2100019 	# Kitsuki
+	dynasty_house = 2100019 	# Kitsuki
 	religion = "shinseism"
 	culture = "kitsuki"
 	female = yes
@@ -184,7 +184,7 @@
 ##### Random county holder for the Kitsuki
 3000650 = {
 	name = name_aki 	#  Kitsuki Aki  #TODO replace name
-	dynasty = 2100019 	# Kitsuki  #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100019 	# Kitsuki  #TODO replace by  like the dynn_morehei_doji
 	religion = "shinseism"
 	culture = "kitsuki"
 
@@ -195,7 +195,7 @@
 
 3000651 = {
 	name = name_akiko	#  Kitsuki Akiko  #TODO replace name
-	dynasty = 2100019 	# Kitsuki #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100019 	# Kitsuki #TODO replace by  like the dynn_morehei_doji
 	female = yes
 	religion = "shinseism"
 	culture = "kitsuki"
