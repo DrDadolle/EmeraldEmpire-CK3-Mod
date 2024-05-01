@@ -154,4 +154,56 @@
 	culture = mirumoto
     dynasty = 2100018 # Mirumoto
 }
-
+##########################
+##### Crab Clan
+##########################
+# Dynasty house from Hida
+2106022 = { # Hida vassal
+	name = dynn_moshibaru
+	culture = hida
+    dynasty = 2100021 # Hida
+}
+# Dynasty house from Kaiu
+2106023 = { # Kaiu vassal
+	name = dynn_maisuna
+	culture = kaiu
+    dynasty = 2100023 # Kaiu
+}
+# Dynasty house from Kuni
+2106024 = { # Kuni vassal
+	name = dynn_ugawari
+	culture = kuni
+    dynasty = 2100024 # Kuni
+}
+# Dynasty house from Yasuki
+2106026 = { # Yasuki Vassal
+	name = dynn_nobuto
+	culture = yasuki
+    dynasty = 2100025 # Yasuki
+}
+##########################
+##### Unicorn Clan
+##########################
+# Dynasty house from Utaku
+2107028 = { # Utaku vassal
+	name = dynn_naoko
+	culture = utaku
+    dynasty = 2100028 # Utaku
+}
+# Dynasty house from Iuchi
+2107030 = { # Iuchi vassal
+	name = dynn_battue
+	culture = iuchi
+    dynasty = 2100030 # Iuchi
+}
+2107031 = { # Iuchi vassal
+	name = dynn_horiuchi
+	culture = iuchi
+    dynasty = 2100030 # Iuchi
+}
+# Dynasty house from Moto
+2107035 = { # Moto vassal
+	name = dynn_onshigawa
+	culture = moto
+    dynasty = 2100029 # Moto
+}

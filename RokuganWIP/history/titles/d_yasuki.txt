@@ -16,7 +16,7 @@ c_junkin_province = {
 c_sunda_mizu_mura_province = {
 	1111.1.1 = {
 		liege = "d_yasuki"
-		holder = 3000490 # TODO placeholder count
+		holder = 3000480 # Yasuki Taka
 		change_development_level = 30
 	}
 }

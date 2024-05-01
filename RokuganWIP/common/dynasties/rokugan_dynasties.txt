@@ -299,26 +299,30 @@
 	name = dynn_kakeguchi
 	culture = hida
 }
-2106022 = { # Hida vassal
-	name = dynn_moshibaru
-	culture = hida
-}
-2106023 = { # Kaiu vassal
-	name = dynn_maisuna
-	culture = kaiu
-}
-2106024 = { # Kuni vassal
-	name = dynn_ugawari
-	culture = kuni
-}
+# Dynasty house from Hida
+# 2106022 = { # Hida vassal
+# 	name = dynn_moshibaru
+# 	culture = hida
+# }
+# Dynasty house from Kaiu
+# 2106023 = { # Kaiu vassal
+# 	name = dynn_maisuna
+# 	culture = kaiu
+# }
+# Dynasty house from Kuni
+# 2106024 = { # Kuni vassal
+# 	name = dynn_ugawari
+# 	culture = kuni
+# }
 2106025 = { # Yasuki Vassal
 	name = dynn_kano
 	culture = yasuki
 }
-2106026 = { # Yasuki Vassal
-	name = dynn_nobuto
-	culture = yasuki
-}
+# Dynasty house from Yasuki
+# 2106026 = { # Yasuki Vassal
+# 	name = dynn_nobuto
+# 	culture = yasuki
+# }
 
 ##########################
 ##### Unicorn Clan
@@ -349,18 +353,21 @@
 	motto = dynn_iuchi_motto
 }
 ##### Vassals
-2107028 = { # Utaku vassal
-	name = dynn_naoko
-	culture = utaku
-}
-2107030 = { # Iuchi vassal
-	name = dynn_battue
-	culture = iuchi
-}
-2107031 = { # Iuchi vassal
-	name = dynn_horiuchi
-	culture = iuchi
-}
+# Dynasty house from Utaku
+# 2107028 = { # Utaku vassal
+# 	name = dynn_naoko
+# 	culture = utaku
+# }
+# Dynasty house from Iuchi
+# 2107030 = { # Iuchi vassal
+# 	name = dynn_battue
+# 	culture = iuchi
+# }
+# Dynasty house from Iuchi
+# 2107031 = { # Iuchi vassal
+# 	name = dynn_horiuchi
+# 	culture = iuchi
+# }
 2107032 = { # Ide vassal
 	name = dynn_suio
 	culture = ide
@@ -373,10 +380,11 @@
 	name = dynn_marta
 	culture = shinjo
 }
-2107035 = { # Moto vassal
-	name = dynn_onshigawa
-	culture = moto
-}
+# Dynasty house from Moto
+# 2107035 = { # Moto vassal
+# 	name = dynn_onshigawa
+# 	culture = moto
+# }
 #TODO Ujik dynasty !
 ##########################
 ##### Imperial families

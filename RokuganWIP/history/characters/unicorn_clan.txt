@@ -194,7 +194,7 @@
 ##### Vassal
 3003520 = {
 	name = name_aki 	#  Battue Aki  #TODO replace name
-	dynasty = 2107030 	# Battue Vassal family 
+	dynasty_house = 2107030 	# Battue Vassal family 
 	religion = "seven_fortunes"
 	culture = "iuchi"
 
@@ -205,7 +205,7 @@
 
 3003521 = {
 	name = name_shoan 	#  Horiuchi Shoan, Horiuchi founder
-	dynasty = 2107031 	# Horiuchi Vassal family 
+	dynasty_house = 2107031 	# Horiuchi Vassal family 
 	religion = "seven_fortunes"
 	culture = "iuchi"
 	female = yes
@@ -305,7 +305,7 @@
 ##### Vassal
 3003560 = {
 	name = name_akiko 	#  Naoko Aki  #TODO replace name
-	dynasty = 2107028 	# Naoko Vassal family 
+	dynasty_house = 2107028 	# Naoko Vassal family 
 	religion = "seven_fortunes"
 	culture = "utaku"
 	female = yes
@@ -406,7 +406,7 @@
 ##### Vassal
 3003580 = {
 	name = name_aki 	#  Onshigawa Aki  #TODO replace name
-	dynasty = 2107035 	# Onshigawa Vassal family 
+	dynasty_house = 2107035 	# Onshigawa Vassal family 
 	religion = "lords_of_the_death"
 	culture = "moto"
 
