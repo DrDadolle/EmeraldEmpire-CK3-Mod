@@ -38,26 +38,30 @@
 	name = dynn_hiramori
 	culture = daidoji
 }
-2101004 = { # Daidoji vassal
-	name = dynn_hiramichi
-	culture = daidoji
-}
-2101005 = { # Kakita vassal
-	name = dynn_iwasaki
-	culture = kakita
-}
-2101006 = { # Doji vassal
-	name = dynn_katogama
-	culture = doji
-}
+# Dynasty house from Daidoji, aka from Doji
+# 2101004 = { # Daidoji vassal
+# 	name = dynn_hiramichi
+# 	culture = daidoji
+# }
+# Dynasty house from Kakita, aka from Doji
+# 2101005 = { # Kakita vassal
+# 	name = dynn_iwasaki
+# 	culture = kakita
+# }
+# Dynasty house from Doji
+# 2101006 = { # Doji vassal
+# 	name = dynn_katogama
+# 	culture = doji
+# }
 2101007 = { # Doji vassal
 	name = dynn_morehei
 	culture = doji
 }
-2101008 = { # Doji vassal
-	name = dynn_tsume
-	culture = doji
-}
+# Dynasty house from Doji
+# 2101008 = { # Doji vassal
+# 	name = dynn_tsume
+# 	culture = doji
+# }
 ##########################
 ##### Lion Clan
 ##########################
@@ -76,7 +80,6 @@
 	culture = kitsu
 	motto = dynn_kitsu_motto
 }
-
 2100008 = {
 	name = dynn_ikoma
 	culture = ikoma
@@ -91,30 +94,36 @@
 	name = dynn_itagawa
 	culture = akodo
 }
-2102003 = { # Akodo vassal
-	name = dynn_katai
-	culture = akodo
-}
-2102004 = { # Akodo vassal
-	name = dynn_seizuka
-	culture = akodo
-}
-2102005 = { # Akodo vassal
-	name = dynn_shimizu
-	culture = akodo
-}
-2102006 = { # Matsu vassal
-	name = dynn_koritome
-	culture = matsu
-}
-2102007 = { # Kitsu vassal
-	name = dynn_ise
-	culture = kitsu
-}
-2102008 = { # Ikoma vassal
-	name = dynn_hosokawa
-	culture = ikoma
-}
+# Dynasty house from Akodo
+# 2102003 = { # Akodo vassal
+# 	name = dynn_katai
+# 	culture = akodo
+# }
+# Post 1123 family, from Akodo
+# 2102004 = { # Akodo vassal
+# 	name = dynn_seizuka
+# 	culture = akodo
+# }
+# Dynasty house from Akodo
+# 2102005 = { # Akodo vassal
+# 	name = dynn_shimizu
+# 	culture = akodo
+# }
+# Dynasty house from Matsu
+# 2102006 = { # Matsu vassal
+# 	name = dynn_koritome
+# 	culture = matsu
+# }
+# Dynasty house from Kitsu
+# 2102007 = { # Kitsu vassal
+# 	name = dynn_ise
+# 	culture = kitsu
+# }
+# Dynasty house from Ikoma
+# 2102008 = { # Ikoma vassal
+# 	name = dynn_hosokawa
+# 	culture = ikoma
+# }
 ##########################
 ##### Phoenix Clan
 ##########################

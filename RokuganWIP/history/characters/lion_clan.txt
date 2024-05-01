@@ -146,7 +146,7 @@
 ##### Vassal
 3003100 = {
 	name = name_aki 	#  Shimizu Aki  #TODO replace name
-	dynasty = 2102005 	# Shimizu Vassal family 
+	dynasty_house = 2102005 	# Shimizu Vassal family 
 	religion = "cult_ancestors"
 	culture = "akodo"
 
@@ -178,7 +178,7 @@
 }
 3003103 = {
 	name = name_aki 	#  katai Aki  #TODO replace name
-	dynasty = 2102003 	# katai Vassal family 
+	dynasty_house = 2102003 	# katai Vassal family 
 	religion = "cult_ancestors"
 	culture = "akodo"
 
@@ -189,7 +189,7 @@
 
 3003104 = {
 	name = name_aki 	#  Seizaku Aki  #TODO replace name
-	dynasty = 2102004 	# Seizaku Vassal family 
+	dynasty_house = 2102004 	# Seizaku Vassal family 
 	religion = "cult_ancestors"
 	culture = "akodo"
 
@@ -322,7 +322,7 @@
 ##### Vassal
 3003120 = {
 	name = name_aki 	#  Koritome Aki  #TODO replace name
-	dynasty = 2102006 	# Koritome Vassal family 
+	dynasty_house = 2102006 	# Koritome Vassal family 
 	religion = "cult_ancestors"
 	culture = "matsu"
 
@@ -355,7 +355,7 @@
 ##### Vassal
 3003140 = {
 	name = name_aki 	#  Ise Aki  #TODO replace name
-	dynasty = 2102007 	# Ise Vassal family 
+	dynasty_house = 2102007 	# Ise Vassal family 
 	religion = "cult_ancestors"
 	culture = "kitsu"
 
@@ -366,7 +366,7 @@
 
 3003141 = {
 	name = name_akiko 	#  Ise Aki  #TODO replace name
-	dynasty = 2102007 	# Ise Vassal family 
+	dynasty_house = 2102007 	# Ise Vassal family 
 	religion = "cult_ancestors"
 	culture = "kitsu"
 	female = yes
@@ -459,7 +459,7 @@
 ##### Vassal
 3003160 = {
 	name = name_aki 	# Hosokawa Aki  #TODO replace name
-	dynasty = 2102008 	# Hosokawa Vassal family 
+	dynasty_house = 2102008 	# Hosokawa Vassal family 
 	religion = "cult_ancestors"
 	culture = "ikoma"
 

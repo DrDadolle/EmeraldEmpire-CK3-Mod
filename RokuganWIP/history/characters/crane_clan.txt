@@ -255,7 +255,7 @@
 ##### Vassal
 3003000 = {
 	name = name_retsu 	#  Tsume Retsu, daimyo of shiro Kyotei
-	dynasty = 2101008 	# Tsume  Vassal family 
+	dynasty_house = 2101008 	# Tsume  Vassal family 
 	religion = "seven_fortunes"
 	culture = "doji"
 
@@ -280,7 +280,7 @@
 
 3003001 = {
 	name = name_takashi 	#  Tsume Takashi, daimyo of shiro Kyotei
-	dynasty = 2101008 	# Tsume  Vassal family 
+	dynasty_house = 2101008 	# Tsume  Vassal family 
 	religion = "seven_fortunes"
 	culture = "doji"
 

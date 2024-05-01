@@ -25,6 +25,63 @@
 	culture = kakita
     dynasty = 2100001 # Doji
 }
+2101004 = { # Daidoji vassal
+	name = dynn_hiramichi
+	culture = daidoji
+    dynasty = 2100001 # Doji
+}
+2101005 = { # Kakita vassal
+	name = dynn_iwasaki
+	culture = kakita
+    dynasty = 2100001 # Doji
+}
+2101006 = { # Doji vassal
+	name = dynn_katogama
+	culture = doji
+    dynasty = 2100001 # Doji
+}
+2101008 = { # Doji vassal
+	name = dynn_tsume
+	culture = doji
+    dynasty = 2100001 # Doji
+}
+##########################
+##### Dragon Clan
+##########################
+2102003 = { # Akodo vassal
+	name = dynn_katai
+	culture = akodo
+    dynasty = 2100005 #Akodo
+}
+2102004 = { # Akodo vassal, post 1123
+	name = dynn_seizuka
+	culture = akodo
+    dynasty = 2100005 #Akodo
+}
+# Dynasty house from Akodo
+2102005 = { # Akodo vassal
+	name = dynn_shimizu
+	culture = akodo
+    dynasty = 2100005 #Akodo
+}
+# Dynasty house from Matsu
+2102006 = { # Matsu vassal
+	name = dynn_koritome
+	culture = matsu
+    dynasty = 2100006 #Matsu
+}
+# Dynasty house from Kitsu
+2102007 = { # Kitsu vassal
+	name = dynn_ise
+	culture = kitsu
+    dynasty = 2100007 #Kitsu
+}
+# Dynasty house from Ikoma
+2102008 = { # Ikoma vassal
+	name = dynn_hosokawa
+	culture = ikoma
+    dynasty = 2100008 #Kitsu
+}
 ##########################
 ##### Dragon Clan
 ##########################
