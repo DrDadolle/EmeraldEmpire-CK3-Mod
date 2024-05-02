@@ -1,0 +1,191 @@
+﻿rokugan_building_name = {
+	type = character
+	text = {
+		trigger = {
+			exists = var:building_name
+			var:building_name = flag:iwami_silver_mines
+		}
+		localization_key = building_type_iwami_silver_mines_01
+	}
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:sado_gold_mines
+	# 	}
+	# 	localization_key = building_type_sado_gold_mines_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:innai_silver_mines
+	# 	}
+	# 	localization_key = building_type_innai_silver_mines_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:kurokawa_gold_mines
+	# 	}
+	# 	localization_key = building_type_kurokawa_gold_mines_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:ikuno_silver_mines
+	# 	}
+	# 	localization_key = building_type_ikuno_silver_mines_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:nobesawa_silver_mines
+	# 	}
+	# 	localization_key = building_type_nobesawa_silver_mines_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:tada_copper_mines
+	# 	}
+	# 	localization_key = building_type_tada_copper_mines_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:tamayama_gold_mines
+	# 	}
+	# 	localization_key = building_type_tamayama_gold_mines_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:sakai_trade_port
+	# 	}
+	# 	localization_key = building_type_sakai_trade_port_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:hakata_trade_port
+	# 	}
+	# 	localization_key = building_type_hakata_trade_port_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:hyogo_trade_port
+	# 	}
+	# 	localization_key = building_type_hyogo_trade_port_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:tosaminato_trade_port
+	# 	}
+	# 	localization_key = building_type_tosaminato_trade_port_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:anotsu_trade_port
+	# 	}
+	# 	localization_key = building_type_anotsu_trade_port_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:bonotsu_trade_port
+	# 	}
+	# 	localization_key = building_type_bonotsu_trade_port_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:kunitomo_gunsmiths
+	# 	}
+	# 	localization_key = building_type_kunitomo_gunsmiths_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:negoro_gunsmiths
+	# 	}
+	# 	localization_key = building_type_negoro_gunsmiths_01
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		var:building_name = flag:saika_gunsmiths
+	# 	}
+	# 	localization_key = building_type_saika_gunsmiths_01
+	# }
+	text = {
+		fallback = yes
+		localization_key = building_class_rokugan_default
+	}
+}
+
+rokugan_building_class = {
+	type = character
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		OR = {
+	# 			var:building_name = flag:kurokawa_gold_mines
+	# 			var:building_name = flag:sado_gold_mines
+	# 			var:building_name = flag:tamayama_gold_mines
+	# 		}
+	# 	}
+	# 	localization_key = building_class_rokugan_gold_mines
+	# }
+	text = {
+		trigger = {
+			exists = var:building_name
+			OR = {
+				var:building_name = flag:iwami_silver_mines
+				# var:building_name = flag:innai_silver_mines
+				# var:building_name = flag:ikuno_silver_mines
+				# var:building_name = flag:nobesawa_silver_mines
+			}
+		}
+		localization_key = building_class_rokugan_silver_mines
+	}
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		OR = {
+	# 			var:building_name = flag:tada_copper_mines
+	# 		}
+	# 	}
+	# 	localization_key = building_class_rokugan_copper_mines
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		OR = {
+	# 			var:building_name = flag:sakai_trade_port
+	# 			var:building_name = flag:hakata_trade_port
+	# 			var:building_name = flag:hyogo_trade_port
+	# 			var:building_name = flag:tosaminato_trade_port
+	# 			var:building_name = flag:anotsu_trade_port
+	# 			var:building_name = flag:bonotsu_trade_port
+	# 		}
+	# 	}
+	# 	localization_key = building_class_rokugan_trade_port
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:building_name
+	# 		OR = {
+	# 			var:building_name = flag:kunitomo_gunsmiths
+	# 			var:building_name = flag:negoro_gunsmiths
+	# 			var:building_name = flag:saika_gunsmiths
+	# 		}
+	# 	}
+	# 	localization_key = building_class_rokugan_gunsmiths
+	# }
+	text = {
+		fallback = yes
+		localization_key = building_class_rokugan_default
+	}
+}

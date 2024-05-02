@@ -16,3 +16,17 @@
 
  death_seppuku:0 "committed Seppuku"
  death_seppuku_killer:0 "committed Seppuku, and [TARGET_CHARACTER.GetUINameNotMe] assisted in terminating [CHARACTER.GetHerHis] life"
+
+ ############################
+ ###### Buildings
+ ############################
+ # Gain a building
+ rokugan_building.0003.t:0 "Acquisition of [temp_character.Custom('rokugan_building_name')]"
+ rokugan_building.0003.with_owner.desc:0 "The [temp_character.Custom('rokugan_building_name')], which had been under the control of [previous_owner.GetUIName], is now mine.\n\nThis strategically important [temp_character.Custom('rokugan_building_class')] is known to everyone in Japan and is located in [building_place.GetName], [building_place.GetDeJureLiege.GetName]."
+ rokugan_building.0003.without_owner.desc:0 "The [temp_character.Custom('rokugan_building_name')] is now mine.\n\nThis strategically important [temp_character.Custom('rokugan_building_class')] is known to everyone in Japan and is located in [building_place.GetName], [building_place.GetDeJureLiege.GetName]."
+ rokugan_building.0003.a:0 "I can't imagine not using this."
+
+ # Lose a building
+ rokugan_building.0004.t:0 "Loss of [temp_character.Custom('rokugan_building_name')]"
+ rokugan_building.0004.desc:0 "The [temp_character.Custom('rokugan_building_name')], which had been under my control, was taken away by [new_owner.GetUIName].\n\nThis strategically important [temp_character.Custom('rokugan_building_class')] is known to everyone in Japan and is located in [building_place.GetName], [building_place.GetDeJureLiege.GetName]."
+ rokugan_building.0004.a:0 "So be it."

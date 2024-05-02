@@ -1,0 +1,264 @@
+﻿namespace = rokugan_building
+
+# Setup Building Controllers (on game start)
+rokugan_building.0001 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		rokugan_building_controller_setup_effect = {
+			TITLE = c_nmih_ano
+			NAME  = iwami_silver_mines
+		}
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_sawata
+		# 	NAME  = sado_gold_mines
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_ogachi
+		# 	NAME  = innai_silver_mines
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_yamanashi
+		# 	NAME  = kurokawa_gold_mines
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_asago
+		# 	NAME  = ikuno_silver_mines
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_minami_murayama
+		# 	NAME  = nobesawa_silver_mines
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_kawabe
+		# 	NAME  = tada_copper_mines
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_kesen
+		# 	NAME  = tamayama_gold_mines
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_otori
+		# 	NAME  = sakai_trade_port
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_mikasa
+		# 	NAME  = hakata_trade_port
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_yatabe
+		# 	NAME  = hyogo_trade_port
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_inaka
+		# 	NAME  = tosaminato_trade_port
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_anou
+		# 	NAME  = anotsu_trade_port
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_kawanabe
+		# 	NAME  = bonotsu_trade_port
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_sakata
+		# 	NAME  = kunitomo_gunsmiths
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_naga
+		# 	NAME  = negoro_gunsmiths
+		# }
+		# rokugan_building_controller_setup_effect = {
+		# 	TITLE = c_nmih_nagusa
+		# 	NAME  = saika_gunsmiths
+		# }
+	}
+}
+
+# Change Building Controllers (on title change)
+rokugan_building.0002 = {
+	hidden = yes
+
+	immediate = {
+		rokugan_building_controller_change_effect = {
+			TITLE = c_nmih_ano
+			NAME  = iwami_silver_mines
+		}
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_sawata
+		# 	NAME  = sado_gold_mines
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_ogachi
+		# 	NAME  = innai_silver_mines
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_yamanashi
+		# 	NAME  = kurokawa_gold_mines
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_asago
+		# 	NAME  = ikuno_silver_mines
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_minami_murayama
+		# 	NAME  = nobesawa_silver_mines
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_kawabe
+		# 	NAME  = tada_copper_mines
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_kesen
+		# 	NAME  = tamayama_gold_mines
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_otori
+		# 	NAME  = sakai_trade_port
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_mikasa
+		# 	NAME  = hakata_trade_port
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_yatabe
+		# 	NAME  = hyogo_trade_port
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_inaka
+		# 	NAME  = tosaminato_trade_port
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_anou
+		# 	NAME  = anotsu_trade_port
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_kawanabe
+		# 	NAME  = bonotsu_trade_port
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_sakata
+		# 	NAME  = kunitomo_gunsmiths
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_naga
+		# 	NAME  = negoro_gunsmiths
+		# }
+		# rokugan_building_controller_change_effect = {
+		# 	TITLE = c_nmih_nagusa
+		# 	NAME  = saika_gunsmiths
+		# }
+	}
+}
+
+# Gain Building
+rokugan_building.0003 = {
+	type = character_event
+	title = rokugan_building.0003.t
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = scope:previous_owner }
+				desc = rokugan_building.0003.with_owner.desc
+			}
+			desc = rokugan_building.0003.without_owner.desc
+		}
+	}
+
+	theme = stewardship_wealth_focus	
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+	override_background = { reference = throne_room }
+
+	option = {
+		name = rokugan_building.0003.a
+		rokugan_building_add_modifier_effect = yes
+	}
+
+	after = {
+		hidden_effect = {
+			scope:temp_character = {
+				death = { death_reason = death_vanished }
+			}
+		}
+	}
+}
+
+# Lose Building
+rokugan_building.0004 = {
+	type = character_event
+	title = rokugan_building.0004.t
+	desc = rokugan_building.0004.desc
+	theme = stewardship_wealth_focus
+	left_portrait = {
+		character = root
+		animation = personality_vengeful
+	}
+	override_background = { reference = burning_building }
+
+	option = {
+		name = rokugan_building.0004.a
+		rokugan_building_remove_modifier_effect = yes
+	}
+
+	after = {
+		hidden_effect = {
+			scope:temp_character = {
+				death = { death_reason = death_vanished }
+			}
+		}
+	}
+}
+
+# Gain Building (Setup)
+rokugan_building.0005 = {
+	hidden = yes
+
+	immediate = {
+		random_province = {
+			save_scope_as = birthplace
+		}
+		create_character = {
+			gender = root
+			template_character = root
+			location = scope:birthplace
+			save_scope_as = temp_character
+		}
+		scope:temp_character = {
+			set_variable = {
+				name  = building_name
+				value = scope:building_name
+			}
+		}
+		trigger_event = rokugan_building.0003
+	}
+}
+
+# Lose Building (Setup)
+rokugan_building.0006 = {
+	hidden = yes
+
+	immediate = {
+		random_province = {
+			save_scope_as = birthplace
+		}
+		create_character = {
+			gender = root
+			template_character = root
+			location = scope:birthplace
+			save_scope_as = temp_character
+		}
+		scope:temp_character = {
+			set_variable = {
+				name  = building_name
+				value = scope:building_name
+			}
+		}
+		trigger_event = rokugan_building.0004
+	}
+}

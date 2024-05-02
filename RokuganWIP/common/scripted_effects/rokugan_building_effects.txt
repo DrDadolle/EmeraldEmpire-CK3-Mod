@@ -1,0 +1,317 @@
+﻿rokugan_building_controller_setup_effect = {
+
+	rokugan_building_controller_setup_with_tier_effect = { TITLE = $TITLE$ NAME = $NAME$ TIER = 01 }
+	rokugan_building_controller_setup_with_tier_effect = { TITLE = $TITLE$ NAME = $NAME$ TIER = 02 }
+	rokugan_building_controller_setup_with_tier_effect = { TITLE = $TITLE$ NAME = $NAME$ TIER = 03 }
+	rokugan_building_controller_setup_with_tier_effect = { TITLE = $TITLE$ NAME = $NAME$ TIER = 04 }
+
+}
+
+rokugan_building_controller_setup_with_tier_effect = {
+
+	if = {
+		limit = {
+			title:$TITLE$.title_province = { has_building = $NAME$_$TIER$ }
+		}
+		set_global_variable = {
+			name  = rokugan_$NAME$_controller
+			value = title:$TITLE$.holder.top_liege
+		}
+		set_global_variable = {
+			name  = rokugan_$NAME$_tier
+			value = $TIER$
+		}
+		global_var:rokugan_$NAME$_controller = {
+			add_character_modifier = rokugan_$NAME$_$TIER$_modifier
+		}
+	}
+
+}
+
+rokugan_building_controller_change_effect = {
+
+	rokugan_building_controller_change_with_tier_effect = { TITLE = $TITLE$ NAME = $NAME$ TIER = 01 TIER_PREV = 00 }
+	rokugan_building_controller_change_with_tier_effect = { TITLE = $TITLE$ NAME = $NAME$ TIER = 02 TIER_PREV = 01 }
+	rokugan_building_controller_change_with_tier_effect = { TITLE = $TITLE$ NAME = $NAME$ TIER = 03 TIER_PREV = 02 }
+	rokugan_building_controller_change_with_tier_effect = { TITLE = $TITLE$ NAME = $NAME$ TIER = 04 TIER_PREV = 03 }
+
+}
+
+rokugan_building_controller_change_with_tier_effect = {
+
+	if = {
+		limit = {
+			title:$TITLE$.title_province = { has_building = $NAME$_$TIER$ }
+		}
+		title:$TITLE$ = { save_scope_as = building_place }
+		if = {
+			limit = {
+				NOT = { exists = global_var:rokugan_$NAME$_tier }
+			}
+			save_scope_value_as = {
+				name = building_name
+				value = flag:$NAME$
+			}
+			save_scope_value_as = {
+				name = building_tier
+				value = flag:$TIER$
+			}
+			set_global_variable = {
+				name  = rokugan_$NAME$_controller
+				value = title:$TITLE$.holder.top_liege
+			}
+			set_global_variable = {
+				name  = rokugan_$NAME$_tier
+				value = $TIER$
+			}
+			global_var:rokugan_$NAME$_controller = {
+				if = {
+					limit = { is_alive = yes }
+				}
+				trigger_event = rokugan_building.0005
+			}
+		}
+		else_if = {
+			limit = {
+				exists = global_var:rokugan_$NAME$_controller
+				exists = global_var:rokugan_$NAME$_tier
+			}
+			if = {
+				limit = {
+					NOT = { global_var:rokugan_$NAME$_tier = $TIER$ }
+				}
+				global_var:rokugan_$NAME$_controller = {
+					if = {
+						limit = { is_alive = yes }
+					}
+					remove_character_modifier = rokugan_$NAME$_$TIER_PREV$_modifier
+					add_character_modifier = rokugan_$NAME$_$TIER$_modifier
+				}
+				set_global_variable = {
+					name  = rokugan_$NAME$_tier
+					value = $TIER$
+				}
+			}
+			if = {
+				limit = {
+					NOT = { global_var:rokugan_$NAME$_controller = title:$TITLE$.holder.top_liege }
+				}
+				global_var:rokugan_$NAME$_controller = { save_scope_as = previous_owner }
+				title:$TITLE$.holder.top_liege = { save_scope_as = new_owner }
+				save_scope_value_as = {
+					name = building_name
+					value = flag:$NAME$
+				}
+				save_scope_value_as = {
+					name = building_tier
+					value = flag:$TIER$
+				}
+				global_var:rokugan_$NAME$_controller = {
+					if = {
+						limit = { is_alive = yes }
+					}
+					trigger_event = rokugan_building.0006
+				}
+				set_global_variable = {
+					name  = rokugan_$NAME$_controller
+					value = title:$TITLE$.holder.top_liege
+				}
+				global_var:rokugan_$NAME$_controller = {
+					if = {
+						limit = { is_alive = yes }
+					}
+					trigger_event = rokugan_building.0005
+				}
+			}
+		}
+	}
+
+}
+
+rokugan_building_add_modifier_effect = {
+
+	if = {
+		limit = { scope:building_name = flag:iwami_silver_mines }
+		rokugan_building_add_modifier_with_tier_effect = { NAME = iwami_silver_mines }
+	}
+	# else_if = {
+	# 	limit = { scope:building_name = flag:sado_gold_mines }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = sado_gold_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:innai_silver_mines }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = innai_silver_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:kurokawa_gold_mines }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = kurokawa_gold_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:ikuno_silver_mines }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = ikuno_silver_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:nobesawa_silver_mines }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = nobesawa_silver_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:tada_copper_mines }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = tada_copper_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:tamayama_gold_mines }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = tamayama_gold_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:sakai_trade_port }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = sakai_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:hakata_trade_port }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = hakata_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:hyogo_trade_port }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = hyogo_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:tosaminato_trade_port }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = tosaminato_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:anotsu_trade_port }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = anotsu_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:bonotsu_trade_port }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = bonotsu_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:kunitomo_gunsmiths }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = kunitomo_gunsmiths }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:negoro_gunsmiths }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = negoro_gunsmiths }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:saika_gunsmiths }
+	# 	rokugan_building_add_modifier_with_tier_effect = { NAME = saika_gunsmiths }
+	# }
+
+}
+
+rokugan_building_remove_modifier_effect = {
+
+	if = {
+		limit = { scope:building_name = flag:iwami_silver_mines }
+		rokugan_building_remove_modifier_with_tier_effect = { NAME = iwami_silver_mines }
+	}
+	# else_if = {
+	# 	limit = { scope:building_name = flag:sado_gold_mines }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = sado_gold_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:innai_silver_mines }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = innai_silver_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:kurokawa_gold_mines }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = kurokawa_gold_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:ikuno_silver_mines }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = ikuno_silver_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:nobesawa_silver_mines }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = nobesawa_silver_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:tada_copper_mines }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = tada_copper_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:tamayama_gold_mines }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = tamayama_gold_mines }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:sakai_trade_port }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = sakai_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:hakata_trade_port }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = hakata_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:hyogo_trade_port }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = hyogo_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:tosaminato_trade_port }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = tosaminato_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:anotsu_trade_port }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = anotsu_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:bonotsu_trade_port }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = bonotsu_trade_port }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:kunitomo_gunsmiths }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = kunitomo_gunsmiths }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:negoro_gunsmiths }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = negoro_gunsmiths }
+	# }
+	# else_if = {
+	# 	limit = { scope:building_name = flag:saika_gunsmiths }
+	# 	rokugan_building_remove_modifier_with_tier_effect = { NAME = saika_gunsmiths }
+	# }
+
+}
+
+rokugan_building_add_modifier_with_tier_effect = {
+
+	if = {
+		limit = { scope:building_tier = flag:01 }
+		add_character_modifier = rokugan_$NAME$_01_modifier
+	}
+	else_if = {
+		limit = { scope:building_tier = flag:02 }
+		add_character_modifier = rokugan_$NAME$_02_modifier
+	}
+	else_if = {
+		limit = { scope:building_tier = flag:03 }
+		add_character_modifier = rokugan_$NAME$_03_modifier
+	}
+	else_if = {
+		limit = { scope:building_tier = flag:04 }
+		add_character_modifier = rokugan_$NAME$_04_modifier
+	}
+
+}
+
+rokugan_building_remove_modifier_with_tier_effect = {
+
+	if = {
+		limit = { scope:building_tier = flag:01 }
+		remove_character_modifier = rokugan_$NAME$_01_modifier
+	}
+	else_if = {
+		limit = { scope:building_tier = flag:02 }
+		remove_character_modifier = rokugan_$NAME$_02_modifier
+	}
+	else_if = {
+		limit = { scope:building_tier = flag:03 }
+		remove_character_modifier = rokugan_$NAME$_03_modifier
+	}
+	else_if = {
+		limit = { scope:building_tier = flag:04 }
+		remove_character_modifier = rokugan_$NAME$_04_modifier
+	}
+
+}
