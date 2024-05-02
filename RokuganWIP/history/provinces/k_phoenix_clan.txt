@@ -264,6 +264,18 @@
 	religion = seven_fortunes
 	holding = church_holding
 }
+468 = {		#b_shiro_shingon
+	culture = isawa
+	religion = seven_fortunes
+	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
+}
+
 ##d_kaito ###################################
 ###c_garanto_province
 124 = {		#b_sanpuku_seido

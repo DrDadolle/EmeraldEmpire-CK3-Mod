@@ -106,6 +106,12 @@
 21 = { # b_sea_watch_castle 
 	winter_severity_bias = @normal_winter
 }
+464 = { # b_itoshii_empty_1 
+	winter_severity_bias = @normal_winter
+}
+465 = { # b_itoshii_empty_2 
+	winter_severity_bias = @normal_winter
+}
 ## c_umoeru_province
 22 = { # b_umoeru_mura 
 	winter_severity_bias = @cold_winter
@@ -477,6 +483,9 @@
 123 = { # b_eight_guardian_temple 
 	winter_severity_bias = @severe_winter
 }
+468 = { # b_shiro_shingon
+	winter_severity_bias = @severe_winter
+}
 ### d_kaito 
 ## c_garanto_province 
 124 = { # b_sanpuku_seido 
@@ -682,7 +691,9 @@
 174 = { # b_shrine_of_shadows_eye 
 	winter_severity_bias = @severe_winter
 }
-
+466 = { # b_kimbouo_empty
+	winter_severity_bias = @severe_winter
+}
 #### k_crab_clan
 ### d_yasuki
 ## c_junkin_province 
@@ -987,6 +998,9 @@
 	winter_severity_bias = @normal_winter
 }
 260 = { # b_meidochi 
+	winter_severity_bias = @normal_winter
+}
+462 = { # b_usagi_mori 
 	winter_severity_bias = @normal_winter
 }
 ### d_tsuruchi 
@@ -1320,4 +1334,19 @@
 ## Impassible terrains 
 458 = { # shinomen mori
 	winter_severity_bias = @normal_winter
+}
+
+
+### d_shika 
+## c_shika_province
+461 = { # b_kyuden_shika
+	winter_severity_bias = @normal_winter
+}
+## Impassible terrains 
+463 = { # spine of the world mountains
+	winter_severity_bias = @severe_winter
+}
+## Impassible terrains 
+466 = { # Asako mountains
+	winter_severity_bias = @severe_winter
 }

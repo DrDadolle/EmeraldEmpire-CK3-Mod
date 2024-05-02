@@ -103,7 +103,7 @@ impassable_mountains = LIST { 312 }
 
 # Spine of the world mountains 
 impassable_mountains = RANGE { 313 315 }
-impassable_mountains = LIST { 409 410 }
+impassable_mountains = LIST { 409 410 463 }
 
 # Isawa mori
 impassable_mountains = LIST { 316 }
@@ -120,8 +120,11 @@ impassable_mountains = LIST { 418 }
 #Shinomen Mori
 impassable_mountains = LIST { 458 }
 
-#TODO placeholder
+#TODO placeholder rest of the map
 impassable_mountains = LIST { 460 }
+
+# Asako Mountains
+impassable_mountains = LIST { 469 }
 
 ############
 # WASTELAND

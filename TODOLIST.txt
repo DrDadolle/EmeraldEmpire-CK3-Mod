@@ -23,16 +23,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - innovation (special culture ones) and shared ones. Re-localization of some
 
 ## short term goals 
-- Rework provinces, so looks better
-	- Fix ID 25 provinces border & split between river (and river crossing)
-	- Split ID 21/22 provinces into smaller
-	- split kyuden isawa county to add Shiro Shingon, barring the entry
-	- split hare village baronny in 2 (river crossing stuff)
-	- split soshi mountains baronnies (river crossing stuff)
-	- DONT FORGET TO add starting holding, titles, terrain & map object data
-	- Split 413 to add Mura no Kin (with Mine), if that's the county which is closest to the mountains
+- move some map object data
+	- Musume mura : move the playstack map object to the mid-island
+	- Shiro Kosaten : move to the right the player stacck
 - Fix river width
+- better baronies shapes (crane clan, lion clan, scorpion clan)
 - Add river map
+- add missing baronies localization
 - Fix the bookmarks, so Doji is not naked, and it looks better
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - Create MaA for each great clan, maybe each minor one
@@ -41,6 +38,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- update culture_has_skirmisher_maa to each culture with such maa
 	- basic Mma and levies localization
 - Paint the map with materials
+- Add bridge mesh map objects
+
 
 ## Fixes to do
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
@@ -118,12 +117,12 @@ found_empire_decision)
 - Special events setting the start of the clan wars
 - Add ancestral clan & family founders
 - Innovations
+- ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 
 	- Current issues : only Holder can vote => Special landess title of Ofushikai.
 	- the system needs the current holder to vote.
 	- Idea => Create a special succession, and not a princely election ! Without a character Ofushikai !
-- ============ STOP TO POLISH & ADD 3D/2D ASSETS THEN RELEASE ====================
 - Phoenix Council of 5 special government
 - Togashi special succession ?
 - Special weapon & artifacts

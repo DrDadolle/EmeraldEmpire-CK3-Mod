@@ -213,6 +213,12 @@
 	religion = seven_fortunes
 	holding = church_holding
 }
+466 = {		#b_kimbouo_empty
+	culture = soshi
+	religion = seven_fortunes
+	holding = none
+
+}
 #castle_holding
 #church_holding
 #city_holding

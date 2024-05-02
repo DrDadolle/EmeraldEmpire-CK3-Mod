@@ -105,6 +105,12 @@ e_rokugan = {
                  b_sea_watch_castle = {
                      province = 21
                  }
+                 b_itoshii_empty_1 = {
+                    province = 464
+                }
+                b_itoshii_empty_2 = {
+                    province = 465
+                }
 			}
 			 c_umoeru_province = {
                  color = { 121 241 251 }
@@ -112,6 +118,9 @@ e_rokugan = {
                  b_umoeru_mura = {
                      province = 22
                  }
+                 b_umoeru_empty = {
+                    province = 467
+                }
 			}
 			
 			c_kougen_province = {
@@ -679,6 +688,9 @@ e_rokugan = {
 				 b_eight_guardian_temple = {
                      province = 123
                  }
+                 b_shiro_shingon = {
+                    province = 468
+                }
             }
             c_chuda_province = {
                 color = {  17 20 15 }
@@ -978,6 +990,9 @@ e_rokugan = {
 				 b_shrine_of_shadows_eye = {
                      province = 174
                  }
+                 b_kimbouo_empty = {
+                    province = 466
+                }
             }
 		}
 	}
@@ -1617,6 +1632,9 @@ e_rokugan = {
 				 b_meidochi = {
 					 province = 260
 				 }
+                 b_usagi_mori = {
+                    province = 462
+                }
 			}
 		}
 		d_tsuruchi = {
@@ -1771,6 +1789,19 @@ e_rokugan = {
 				 }
 			}
 		}
+
+        d_shika = {
+            color = { 131 105 83 }
+            capital = c_shika_province
+            
+            c_shika_province = {
+                color = { 131 105 83 }
+
+                b_kyuden_shika = {
+                    province = 461
+                }
+           }
+       }
 		
         
 	}

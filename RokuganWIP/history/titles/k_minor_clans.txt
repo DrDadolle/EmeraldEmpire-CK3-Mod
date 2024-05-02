@@ -287,6 +287,25 @@ c_kaikoga_province = {
 	}
 }
 
+#####################
+#	Shika
+#####################
+d_shika = {
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3002120 # Shika Renji
+	}
+}
+
+c_shika_province = {
+	1123.1.1 = {
+		liege = "d_shika"
+		holder = 3002120 # Shika Renji
+		change_development_level = 10
+	}
+}
+
+
 
 #####################
 #	Chuda

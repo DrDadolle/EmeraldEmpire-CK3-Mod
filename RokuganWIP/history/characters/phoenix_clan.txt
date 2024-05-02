@@ -366,7 +366,7 @@
 	}
 }
 ##### Vassal
-3003220 = { #This vassal exists, but is landless for now...
+3003220 = { #This vassal exists
 	name = name_aki 	# Shingon Aki  #TODO replace name
 	dynasty_house = 2103017 	# Shingon Vassal family 
 	religion = "seven_fortunes"

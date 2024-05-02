@@ -37,3 +37,12 @@ c_maryoku_province = {
 	}
 }
 
+b_shiro_shingon = {
+	1123.1.1 = {
+		liege = "d_isawa"
+		holder = 3003220 # Shingon Aki # TODO change plaecholder name
+		change_development_level = 15
+	}
+}
+
+

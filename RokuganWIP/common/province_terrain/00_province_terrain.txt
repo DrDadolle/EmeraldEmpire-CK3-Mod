@@ -26,7 +26,10 @@ default_coastal_sea=coastal_sea
 19=forest
 20=plains
 21=hills
+464=hills
+465=hills
 22=mountains
+467=hills
 23=farmlands
 24=farmlands
 25=plains
@@ -134,6 +137,7 @@ default_coastal_sea=coastal_sea
 121=farmlands
 122=farmlands
 123=plains
+468=farmlands
 124=mountains
 125=mountains
 126=mountains
@@ -198,6 +202,7 @@ default_coastal_sea=coastal_sea
 172=mountains
 173=mountains
 174=mountains
+466=mountains
 ###############
 ### Crab
 175=hills
@@ -293,9 +298,10 @@ default_coastal_sea=coastal_sea
 257=forest
 ###############
 ### Usagi
-258=forest
+258=plains
 259=farmlands
 260=plains
+462=forest
 ###############
 ### Tsuruchi
 261=hills
@@ -392,3 +398,6 @@ default_coastal_sea=coastal_sea
 ###############
 ### Kaikoga
 406=forest
+###############
+### Shika
+461=forest

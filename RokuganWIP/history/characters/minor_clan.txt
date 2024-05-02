@@ -280,6 +280,27 @@
 }
 
 #####################
+#	Shika
+#####################
+3002120 = {
+	name = name_renji 	# Shika Renji, daimyo of 1123
+	dynasty = 2100113 	# Shika
+	religion = "seven_fortunes"
+	culture = "kaikoga"
+	
+	### Stats
+	### Traits
+	trait = education_learning_3
+	trait = shindoshi
+	
+	### Family 
+
+	1104.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
 #	Komori
 #####################
 #No komori for now
