@@ -26,19 +26,15 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - move some map object data
 	- Musume mura : move the playstack map object to the mid-island
 	- Shiro Kosaten : move to the right the player stacck
-- Fix river width
+- Fix river width (3/4 pixel large everywhere)
 - better baronies shapes (crane clan, lion clan, scorpion clan)
+- fix river heightmap (using gimp I guess)
+- Paint the map with materials
+- Add bridge mesh map objects
 - Add river map
 - add missing baronies localization
 - Fix the bookmarks, so Doji is not naked, and it looks better
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
-- Create MaA for each great clan, maybe each minor one
-	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
-	- 00_men_at_arms_values to update too
-	- update culture_has_skirmisher_maa to each culture with such maa
-	- basic Mma and levies localization
-- Paint the map with materials
-- Add bridge mesh map objects
 
 
 ## Fixes to do
@@ -71,9 +67,8 @@ found_empire_decision)
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
 - Starting crown authority, buildings (no ?)
-
 - Prevent imperial family from doing wars against other clans...? Only for AI ?
-- Blood feud (like Matsu vs Kakita)
+- Blood feud (like Matsu vs Kakita)	
 - special buildings
 	- Gisei Toshi
 	- Pale Oak Castle tree
@@ -83,23 +78,24 @@ found_empire_decision)
 	- Kaiu Wall (cf great wall of chine)
 	- Ryoko Owari opium trade
 	- Sunda Mizu Mura trade 
+	- Beiden pass trade ?
+	- Silk/Spice trade port Mantis/Tortoise
 	- Traitor's Trove
 	- Turo Kojiri trade
 	- Tsuma Topaz building
 	- Steel crane forge (c_takuetsu_province  b_kyuden_kakita )
 	- Mines
 		- iron
-		- Kaiu Steel
 		- Jade
 		- Gold
 		- Crystal
 		- Obsidian
 		IN 
-			- Twilight Mountains (c_hokufuu_province b_maisuna_shiro ) / Kaiu Steel
+			- Twilight Mountains (c_hokufuu_province b_maisuna_shiro ) / Iron 
 			- Twilight Mountains (c_ishibei_province b_shiro_kakeguchi) / Iron
 			- Wall above ocean mountains (c_juuin_province b_nishiyama_mura) / Jade
 			- Kuni Lands (c_midakai_province b_high_tree_village) / Iron
-			- Hills Daidoji (c_umoeru_province b_umoeru_mura) / Coal (keep it ?)
+			- Hills Daidoji (c_umoeru_province b_umoeru_mura) / Coal (keep it ?Iron ?)
 			- c_yakeishi_province b_tetsu_kama_mura / Iron
 			- Serpent's Tail Mine (c_sabishii_province_dragon b_yamasura) / Gold & Iron
 			- c_shaiga_province b_shaiga / Gold
@@ -114,9 +110,43 @@ found_empire_decision)
 			- c_south_shinomen_ronin_1 b_south_shinomen_ronin_1 (I guess ? need the one close to the mountains) / Gold
 	- Chuda Ruins
 			- revive chuda dynasty decision !
+- Starting special buildings
 - Special events setting the start of the clan wars
+- Create MaA for each great clan, maybe each minor one
+	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
+	- 00_men_at_arms_values to update too
+	- update culture_has_skirmisher_maa to each culture with such maa
+	- basic Mma and levies localization
 - Add ancestral clan & family founders
+- artifacts (non nemuranai). Fluff in "Celestial realms"
+ 	- Chikara, ancestral sword of the crab, jade laced, nemuranai. Cannot be damaged. Is a Chokuto
+	- 5 Doji blades by Doji Yasuragi
+		Shukujo, ancestral sword of the crane. If descendant direct of Doji, more bonus. Uchigatana, for duel.
+	- The blade with no name -> No a sword but a concept. Should be special events.
+	- Shori, ancestra sword of the Lion. Tachi. need honor !
+	- Ofushikai, ancestral sword of the Phoenix. Tachi. Contains Shiba & ko. Cannot be damaged nor stolen. Only usable by clan champion phoenix.
+	- Itsuwari, ancestral sword of the Scorpion. Jian. Itsuwari. A random scorpion must own it. Bonus vs Clan champion scorpion ?
+	- Hayai, ancestral sword of the Unicorn. Scimitar
+	- Kunshi, Ancestral sword of the hantei (jian). detection if bad things.
+	- Ancestral sword sparrow, bonus against death
+	- Moshi ancestral sword, pious
+	- Sakusen & Shoubai, mantis ancestral sword. Daisho
+	- Ancestral sword of Dragonfly
+	- Ukyo, Ancestral sword Fox, lost.
+	- Kiro, lost ancestral sword ot the Kirin
+	- Bouishi Kasuga, ancestral sword Tortoise. Only usable by Tortoise or imperial
+	- Jadoku, ancestral sword Snake clan. magic
+	- Kenno, ancestral sword Hare clan. Protection & speed
+	- Fukutsu, ancestral armor crab
+	- Sasageru, ancestral armor crane 
+	- Kotoku, ancestra yari daidoji 
+	- Junsui, ancestral armor lion 
+	- Kaminari, ancestral armor mantis 
+	- Mezameru, ancestral armor phoenix 
+	- Yuki, ancestral unicorn armor
 - Innovations
+	- Wootz Steel -> Kaiu Steel (reskin)
+	- Gaijin trade (Mantis/Tortoise)
 - ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 
