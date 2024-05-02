@@ -3,46 +3,38 @@
 ##########################
 2100002 = {
 	name = dynn_daidoji
-	culture = daidoji
     dynasty= 2100001 # Doji
 	motto = dynn_daidoji_motto
 }
 2100003 = {
 	name = dynn_asahina
-	culture = asahina
     dynasty = 2100010 # isawa
 	motto = dynn_asahina_motto
 }
 2100004 = {
 	name = dynn_kakita
-	culture = kakita
     dynasty = 2100001 # Doji
 	motto = dynn_kakita_motto
 }
 ##### Vassals
 2101001 = { # Kakita vassal
 	name = dynn_ashidaka
-	culture = kakita
     dynasty = 2100001 # Doji
 }
 2101004 = { # Daidoji vassal
 	name = dynn_hiramichi
-	culture = daidoji
     dynasty = 2100001 # Doji
 }
 2101005 = { # Kakita vassal
 	name = dynn_iwasaki
-	culture = kakita
     dynasty = 2100001 # Doji
 }
 2101006 = { # Doji vassal
 	name = dynn_katogama
-	culture = doji
     dynasty = 2100001 # Doji
 }
 2101008 = { # Doji vassal
 	name = dynn_tsume
-	culture = doji
     dynasty = 2100001 # Doji
 }
 ##########################
@@ -50,36 +42,30 @@
 ##########################
 2102003 = { # Akodo vassal
 	name = dynn_katai
-	culture = akodo
     dynasty = 2100005 #Akodo
 }
 2102004 = { # Akodo vassal, post 1123
 	name = dynn_seizuka
-	culture = akodo
     dynasty = 2100005 #Akodo
 }
 # Dynasty house from Akodo
 2102005 = { # Akodo vassal
 	name = dynn_shimizu
-	culture = akodo
     dynasty = 2100005 #Akodo
 }
 # Dynasty house from Matsu
 2102006 = { # Matsu vassal
 	name = dynn_koritome
-	culture = matsu
     dynasty = 2100006 #Matsu
 }
 # Dynasty house from Kitsu
 2102007 = { # Kitsu vassal
 	name = dynn_ise
-	culture = kitsu
     dynasty = 2100007 #Kitsu
 }
 # Dynasty house from Ikoma
 2102008 = { # Ikoma vassal
 	name = dynn_hosokawa
-	culture = ikoma
     dynasty = 2100008 #Kitsu
 }
 ##########################
@@ -88,29 +74,24 @@
 # Dynasty house from Asako
 2103011 = { # Asako vassal
 	name = dynn_nani
-	culture = asako
     dynasty = 2100011 # Asako
 }
 2103012 = { # Asako vassal
 	name = dynn_chukan
-	culture = asako
     dynasty = 2100011 # Asako
 }
 # Dynasty house from Shiba
 2103013 = { # Nasu vassal
 	name = dynn_nasu
-	culture = shiba
     dynasty = 2100009 # Shiba
 }
 2103014 = { # Sodona vassal
 	name = dynn_sodona
-	culture = shiba
     dynasty = 2100009 # Shiba
 }
 # Dynasty house from Asako
 2103017 = { # Shingon vassal
 	name = dynn_shingon
-	culture = isawa
     dynasty = 2100011 # Asako
 }
 ##########################
@@ -119,24 +100,20 @@
 # Dynasty house from Bayushi
 2104013 = { # bayushi vassal
 	name = dynn_ugawa
-	culture = bayushi
     dynasty = 2100013 # Bayushi
 }
 # Dynasty house from Yogo
 2104014 = { # yogo vassal
 	name = dynn_tansaku
-	culture = yogo
     dynasty = 2100016 # Yogo
 }
 # Dynasty house from Shosuro
 2104016 = { # shosuro vassal
 	name = dynn_kochako
-	culture = shosuro
     dynasty = 2100014 # shosuro
 }
 2104017 = { # shosuro vassal
 	name = dynn_tokagure 
-	culture = shosuro
     dynasty = 2100014 # shosuro
 }
 ##########################
@@ -144,14 +121,12 @@
 ##########################
 2100019 = {
 	name = dynn_kitsuki
-	culture = kitsuki
     dynasty = 2100020 # Agasha
 	motto = dynn_kitsuki_motto
 }
 # Dynasty house from Mirumoto
 2105018 = { # mirumoto vassal
 	name = dynn_zurui
-	culture = mirumoto
     dynasty = 2100018 # Mirumoto
 }
 ##########################
@@ -160,25 +135,21 @@
 # Dynasty house from Hida
 2106022 = { # Hida vassal
 	name = dynn_moshibaru
-	culture = hida
     dynasty = 2100021 # Hida
 }
 # Dynasty house from Kaiu
 2106023 = { # Kaiu vassal
 	name = dynn_maisuna
-	culture = kaiu
     dynasty = 2100023 # Kaiu
 }
 # Dynasty house from Kuni
 2106024 = { # Kuni vassal
 	name = dynn_ugawari
-	culture = kuni
     dynasty = 2100024 # Kuni
 }
 # Dynasty house from Yasuki
 2106026 = { # Yasuki Vassal
 	name = dynn_nobuto
-	culture = yasuki
     dynasty = 2100025 # Yasuki
 }
 ##########################
@@ -187,23 +158,19 @@
 # Dynasty house from Utaku
 2107028 = { # Utaku vassal
 	name = dynn_naoko
-	culture = utaku
     dynasty = 2100028 # Utaku
 }
 # Dynasty house from Iuchi
 2107030 = { # Iuchi vassal
 	name = dynn_battue
-	culture = iuchi
     dynasty = 2100030 # Iuchi
 }
 2107031 = { # Iuchi vassal
 	name = dynn_horiuchi
-	culture = iuchi
     dynasty = 2100030 # Iuchi
 }
 # Dynasty house from Moto
 2107035 = { # Moto vassal
 	name = dynn_onshigawa
-	culture = moto
     dynasty = 2100029 # Moto
 }

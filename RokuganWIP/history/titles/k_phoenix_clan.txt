@@ -4,9 +4,9 @@ k_phoenix_clan = {
 		liege = "e_rokugan"
 		# holder = kami Shiba
 	}
-	42.1.1 = {
-		succession_laws = { phoenix_elective_succession_law }
-	}
+	# 43.1.1 = {
+	# 	succession_laws = { phoenix_elective_succession_law }
+	# }
 	1110.1.1 = {
 		holder = 3000201 # Shiba Ujimitsu
 	}

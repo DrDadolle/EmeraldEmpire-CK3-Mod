@@ -31,9 +31,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- split soshi mountains baronnies (river crossing stuff)
 	- DONT FORGET TO add starting holding, titles, terrain & map object data
 	- Split 413 to add Mura no Kin (with Mine), if that's the county which is closest to the mountains
-- Special Phoenix champion succession, test it !
-	- rework princely election, with special character "Ofushikai" being out of map immortal 
-- Dynasty house  : check everything works
 - Fix river width
 - Add river map
 - Fix the bookmarks, so Doji is not naked, and it looks better
@@ -75,7 +72,7 @@ found_empire_decision)
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
 - Starting crown authority, buildings (no ?)
-- yobanjin culture (for county kaito)
+
 - Prevent imperial family from doing wars against other clans...? Only for AI ?
 - Blood feud (like Matsu vs Kakita)
 - special buildings
@@ -121,6 +118,11 @@ found_empire_decision)
 - Special events setting the start of the clan wars
 - Add ancestral clan & family founders
 - Innovations
+- Special Phoenix champion succession, test it !
+	- rework princely election, with special character "Ofushikai" being out of map immortal 
+	- Current issues : only Holder can vote => Special landess title of Ofushikai.
+	- the system needs the current holder to vote.
+	- Idea => Create a special succession, and not a princely election ! Without a character Ofushikai !
 - ============ STOP TO POLISH & ADD 3D/2D ASSETS THEN RELEASE ====================
 - Phoenix Council of 5 special government
 - Togashi special succession ?

@@ -2080,6 +2080,11 @@ d_chuda = {
 }
 
 
+# d_ofushikai_special= {
+#     definite_form = yes
+#     destroy_if_invalid_heir = yes
+#     no_automatic_claims = yes
+# }
 
 # These titles cut hundreds of errors from logs. 
 e_hre = { landless = yes }

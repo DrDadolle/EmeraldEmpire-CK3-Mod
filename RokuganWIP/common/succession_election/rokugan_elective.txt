@@ -1,250 +1,251 @@
 ﻿
-# The entry should be named in the same way that the elective succession law is named to define it's voter's logic.
-# Root scope - Elector, the character voting in the election.
-# scope:candidate scope - Candidate, Character considered for the title.
-# scope:title scope - Title, The title the nomination is for.
-# scope:holder scope - Ruler, The ruler currently holding the title.
-# scope:holder_candidate scope - Favored Candidate, The title owner's candidate.
-# The voter will vote for the top score candidate calculated from this script.
-phoenix_elective = {
-    # Only Shiba decides, so no need for elective
-	elector_vote_strength = {}
+# # The entry should be named in the same way that the elective succession law is named to define it's voter's logic.
+# # Root scope - Elector, the character voting in the election.
+# # scope:candidate scope - Candidate, Character considered for the title.
+# # scope:title scope - Title, The title the nomination is for.
+# # scope:holder scope - Ruler, The ruler currently holding the title.
+# # scope:holder_candidate scope - Favored Candidate, The title owner's candidate.
+# # The voter will vote for the top score candidate calculated from this script.
+# phoenix_elective = {
+#     # Only Shiba decides, so no need for elective
+# 	elector_vote_strength = {}
 	
-	electors = {
-        ## add only ofushikai as an elector?
-        max = 1
-		add = {
-			type = holder_dynasty
-			limit = {
-				has_trait = ofushikai
-			}				
-		}
-	}
+# 	electors = {
+#         ## add only ofushikai as an elector?
+#         max = 15
+#         add = holder
+# 		add = {
+# 			type = title_claimants
+# 			 limit = {
+# 			 	has_trait = ofushikai
+# 			 }				
+# 		}
+# 	}
 
-	candidate_score = {
-		base = 0
-		# ######################	Elector self-voting pattern	##########################
-		modifier = {
-            desc = tooltip_feudal_elector_vote_myself
-            this = scope:candidate
-            add = -1000 # Won't vote for himself
-        }
-		##########################	Holder voting pattern	##########################
-		holder_voting_pattern_feudal_elective_modifier = no
+# 	candidate_score = {
+# 		base = 0
+# 		# ######################	Elector self-voting pattern	##########################
+# 		modifier = {
+#             desc = tooltip_feudal_elector_vote_myself
+#             this = scope:candidate
+#             add = -1000 # Won't vote for himself
+#         }
+# 		##########################	Holder voting pattern	##########################
+# 		#holder_voting_pattern_feudal_elective_modifier = no
 
-		# ##########################	Elector voting patterns (circumstances)	##########################
-        modifier = { # No baby
-            add = -30
-            desc = tooltip_feudal_elector_vote_baby
-            NOT = { this = scope:candidate }
-            scope:candidate = {
-                age < 5
-            }
-        }
-        modifier = { # Young child, no
-            desc = tooltip_feudal_elector_vote_child
-            NOT = { this = scope:candidate }
-            scope:candidate = {
-                age > 5
-                age < 16
-            }
-            add = {
-                subtract = 10
-                if = {
-                    limit = {
-                        age < 10
-                    }
-                    subtract = 15
-                }
-            }
-        }
-        modifier = { #Or simply too old overall.
-            add = -15
-            desc = tooltip_feudal_elector_vote_decrepit
-            NOT = { this = scope:candidate }
-            scope:candidate = { age > 50 }
-        }
+# 		# ##########################	Elector voting patterns (circumstances)	##########################
+#         modifier = { # No baby
+#             add = -30
+#             desc = tooltip_feudal_elector_vote_baby
+#             NOT = { this = scope:candidate }
+#             scope:candidate = {
+#                 age < 5
+#             }
+#         }
+#         modifier = { # Young child, no
+#             desc = tooltip_feudal_elector_vote_child
+#             NOT = { this = scope:candidate }
+#             scope:candidate = {
+#                 age > 5
+#                 age < 16
+#             }
+#             add = {
+#                 subtract = 10
+#                 if = {
+#                     limit = {
+#                         age < 10
+#                     }
+#                     subtract = 15
+#                 }
+#             }
+#         }
+#         modifier = { #Or simply too old overall.
+#             add = -15
+#             desc = tooltip_feudal_elector_vote_decrepit
+#             NOT = { this = scope:candidate }
+#             scope:candidate = { age > 50 }
+#         }
 
-        modifier = { # prefer same culture
-            desc = tooltip_feudal_elector_vote_fellow_culture
-            NOT = { this = scope:candidate }
-            root.culture = scope:candidate.culture
-            add = 10
-        }
-        modifier = { # Not same culture, but same heritage, small no
-            desc = tooltip_feudal_elector_vote_stranger
-            NOT = { this = scope:candidate }
-            NOT = { root.culture = scope:candidate.culture }
-            culture = { has_same_culture_heritage = scope:candidate.culture }
-            add = -15
-        }
-        modifier = { # Not same heritage,  no
-            desc = tooltip_feudal_elector_vote_foreigner
-            NOT = { this = scope:candidate }
-            NOT = { culture = { has_same_culture_heritage = scope:candidate.culture } }
-            add = -30
-        }
-        modifier = { #If candidate is elected, he will rule from a capital outside this de jure.
-            desc = tooltip_feudal_elector_vote_political_concerns
-            is_landed = yes
-            exists = capital_county
-            capital_county = { scope:title = { is_de_jure_liege_or_above_target = prev } }
+#         modifier = { # prefer same culture
+#             desc = tooltip_feudal_elector_vote_fellow_culture
+#             NOT = { this = scope:candidate }
+#             root.culture = scope:candidate.culture
+#             add = 10
+#         }
+#         modifier = { # Not same culture, but same heritage, small no
+#             desc = tooltip_feudal_elector_vote_stranger
+#             NOT = { this = scope:candidate }
+#             NOT = { root.culture = scope:candidate.culture }
+#             culture = { has_same_culture_heritage = scope:candidate.culture }
+#             add = -15
+#         }
+#         modifier = { # Not same heritage,  no
+#             desc = tooltip_feudal_elector_vote_foreigner
+#             NOT = { this = scope:candidate }
+#             NOT = { culture = { has_same_culture_heritage = scope:candidate.culture } }
+#             add = -30
+#         }
+#         modifier = { #If candidate is elected, he will rule from a capital outside this de jure.
+#             desc = tooltip_feudal_elector_vote_political_concerns
+#             is_landed = yes
+#             exists = capital_county
+#             capital_county = { scope:title = { is_de_jure_liege_or_above_target = prev } }
 
-            OR = { # If the current holder is reigning from within the title, there is no reason to believe a lower tier candidate would not.
-                scope:holder = { 
-                    capital_county = {
-                        scope:title = {
-                            NOT = { is_de_jure_liege_or_above_target = prev }
-                        }
-                    }
-                }
-                scope:candidate = {
-                    highest_held_title_tier >= scope:title.tier
-                }
-            }
+#             OR = { # If the current holder is reigning from within the title, there is no reason to believe a lower tier candidate would not.
+#                 scope:holder = { 
+#                     capital_county = {
+#                         scope:title = {
+#                             NOT = { is_de_jure_liege_or_above_target = prev }
+#                         }
+#                     }
+#                 }
+#                 scope:candidate = {
+#                     highest_held_title_tier >= scope:title.tier
+#                 }
+#             }
 
-            scope:candidate = {
-                is_ruler = yes
-                is_vassal_of = scope:holder
-                exists = capital_county
-                NOT = { capital_county = { scope:title = { is_de_jure_liege_or_above_target = prev } } }
-            }
-            add = -15
-        }
-        modifier = { #Candidate is a foreign ruler.
-            desc = tooltip_feudal_elector_vote_encroaching_foreigner
-            is_landed = yes
-            exists = capital_county
-            scope:candidate = {
-                is_ruler = yes
-                NOT = { target_is_liege_or_above = scope:holder }
-            }
-            add = {
-                subtract = 30
-                if = { #Candidate is a foreign non-dejure ruler.
-                    limit = {
-                        NOT = { capital_county = { scope:title = { is_de_jure_liege_or_above_target = prev } } }
-                    }
-                    subtract = 470
-                }
-            }
-        }
-        #Faithism
-        modifier = { #Accepted but different faith. (Imperial cult)
-            desc = tooltip_feudal_elector_vote_different_faith
-            NOT = { root.faith = scope:candidate.faith }
-            ai_zeal >= 0 #Does not care otherwise.
-            faith = {
-                faith_hostility_level = {
-                    target = scope:candidate.faith
-                    value = faith_fully_accepted_level
-                }
-            }
-            add = {
-                subtract = 15
-            }
-        }
-        modifier = { #Astray (non recognized fortunists sub faiths)
-            desc = tooltip_feudal_elector_vote_astray
-            NOT = { root.faith = scope:candidate.faith }
-            faith = {
-                faith_hostility_level = {
-                    target = scope:candidate.faith
-                    value = faith_astray_level
-                }
-            }
-            add = {
-                subtract = 50
-            }
-        }
-        modifier = { #Heretic (Perfect land sect vs Shinseism)
-            desc = tooltip_feudal_elector_vote_heretic
-            add = {
-                subtract = 150
-            }
-            NOT = { root.faith = scope:candidate.faith }
-            faith = {
-                faith_hostility_level = {
-                    target = scope:candidate.faith
-                    value = faith_hostile_level
-                }
-            }
-        }
-        modifier = { #Infidel (Evil faiths)
-            desc = tooltip_feudal_elector_vote_evil_heathen
-            add = {
-                subtract = 300
-            }
-            NOT = { root.faith = scope:candidate.faith }
-            faith = {
-                faith_hostility_level = {
-                    target = scope:candidate.faith
-                    value = faith_evil_level
-                }
-            }
-        }
-        #Barbarism
-        modifier = {
-            add = -15
-            desc = tooltip_feudal_elector_vote_uncivilized
-            government_has_flag = government_is_feudal
-            scope:candidate = {
-                OR = {
-                    government_has_flag = government_is_clan
-                    government_has_flag = government_is_tribal
-                }
-            }
-        }
-        #Educational preferences
-        modifier = { # Warrior society prefers warriors
-            add = 15
-            desc = tooltip_feudal_elector_vote_martial_education
-            NOT = { this = scope:candidate }
-            scope:candidate = {
-                martial >= 10
-                OR = {
-                    has_trait = education_martial
-                    has_lifestyle = martial_lifestyle
-                    has_trait = lifestyle_blademaster
-                    has_martial_lifestyle_trait_trigger = yes
-                }
-            }
+#             scope:candidate = {
+#                 is_ruler = yes
+#                 is_vassal_of = scope:holder
+#                 exists = capital_county
+#                 NOT = { capital_county = { scope:title = { is_de_jure_liege_or_above_target = prev } } }
+#             }
+#             add = -15
+#         }
+#         modifier = { #Candidate is a foreign ruler.
+#             desc = tooltip_feudal_elector_vote_encroaching_foreigner
+#             is_landed = yes
+#             exists = capital_county
+#             scope:candidate = {
+#                 is_ruler = yes
+#                 NOT = { target_is_liege_or_above = scope:holder }
+#             }
+#             add = {
+#                 subtract = 30
+#                 if = { #Candidate is a foreign non-dejure ruler.
+#                     limit = {
+#                         NOT = { capital_county = { scope:title = { is_de_jure_liege_or_above_target = prev } } }
+#                     }
+#                     subtract = 470
+#                 }
+#             }
+#         }
+#         #Faithism
+#         modifier = { #Accepted but different faith. (Imperial cult)
+#             desc = tooltip_feudal_elector_vote_different_faith
+#             NOT = { root.faith = scope:candidate.faith }
+#             ai_zeal >= 0 #Does not care otherwise.
+#             faith = {
+#                 faith_hostility_level = {
+#                     target = scope:candidate.faith
+#                     value = faith_fully_accepted_level
+#                 }
+#             }
+#             add = {
+#                 subtract = 15
+#             }
+#         }
+#         modifier = { #Astray (non recognized fortunists sub faiths)
+#             desc = tooltip_feudal_elector_vote_astray
+#             NOT = { root.faith = scope:candidate.faith }
+#             faith = {
+#                 faith_hostility_level = {
+#                     target = scope:candidate.faith
+#                     value = faith_astray_level
+#                 }
+#             }
+#             add = {
+#                 subtract = 50
+#             }
+#         }
+#         modifier = { #Heretic (Perfect land sect vs Shinseism)
+#             desc = tooltip_feudal_elector_vote_heretic
+#             add = {
+#                 subtract = 150
+#             }
+#             NOT = { root.faith = scope:candidate.faith }
+#             faith = {
+#                 faith_hostility_level = {
+#                     target = scope:candidate.faith
+#                     value = faith_hostile_level
+#                 }
+#             }
+#         }
+#         modifier = { #Infidel (Evil faiths)
+#             desc = tooltip_feudal_elector_vote_evil_heathen
+#             add = {
+#                 subtract = 300
+#             }
+#             NOT = { root.faith = scope:candidate.faith }
+#             faith = {
+#                 faith_hostility_level = {
+#                     target = scope:candidate.faith
+#                     value = faith_evil_level
+#                 }
+#             }
+#         }
+#         #Barbarism
+#         modifier = {
+#             add = -15
+#             desc = tooltip_feudal_elector_vote_uncivilized
+#             government_has_flag = government_is_feudal
+#             scope:candidate = {
+#                 OR = {
+#                     government_has_flag = government_is_clan
+#                     government_has_flag = government_is_tribal
+#                 }
+#             }
+#         }
+#         #Educational preferences
+#         modifier = { # Warrior society prefers warriors
+#             add = 15
+#             desc = tooltip_feudal_elector_vote_martial_education
+#             NOT = { this = scope:candidate }
+#             scope:candidate = {
+#                 martial >= 10
+#                 OR = {
+#                     has_trait = education_martial
+#                     has_lifestyle = martial_lifestyle
+#                     has_trait = lifestyle_blademaster
+#                     has_martial_lifestyle_trait_trigger = yes
+#                 }
+#             }
 
-        }
-        modifier = { # Spiritual society prefers scholars
-            add = 15
-            desc = tooltip_feudal_elector_vote_spiritual_education
-            NOT = { this = scope:candidate }
-            scope:candidate = {
-                learning >= 10
-                OR = {
-                    has_trait = education_learning
-                    has_lifestyle = learning_lifestyle
-                    has_learning_lifestyle_trait_trigger = yes
-                    has_trait = lifestyle_mystic
-                    has_trait = lifestyle_physician
-                }
-            }
-        }
+#         }
+#         modifier = { # Spiritual society prefers scholars
+#             add = 15
+#             desc = tooltip_feudal_elector_vote_spiritual_education
+#             NOT = { this = scope:candidate }
+#             scope:candidate = {
+#                 learning >= 10
+#                 OR = {
+#                     has_trait = education_learning
+#                     has_lifestyle = learning_lifestyle
+#                     has_learning_lifestyle_trait_trigger = yes
+#                     has_trait = lifestyle_mystic
+#                     has_trait = lifestyle_physician
+#                 }
+#             }
+#         }
 
-		##########################	Elector voting patterns (prestige/piety)	##########################
-		elector_voting_pattern_prestige_piety_feudal_elective_modifier = yes
+# 		##########################	Elector voting patterns (prestige/piety)	##########################
+# 		elector_voting_pattern_prestige_piety_feudal_elective_modifier = yes
 
-		##########################	Elector voting patterns (traits)	##########################
-		elector_voting_pattern_traits_feudal_elective_modifier = yes
+# 		##########################	Elector voting patterns (traits)	##########################
+# 		elector_voting_pattern_traits_feudal_elective_modifier = yes
 
-		##########################	Elector voting patterns (opinion)	##########################
-		elector_voting_pattern_opinion_feudal_elective_modifier = yes
-	}
+# 		##########################	Elector voting patterns (opinion)	##########################
+# 		elector_voting_pattern_opinion_feudal_elective_modifier = yes
+# 	}
 	
-	#scope:candidate = Candidate, scope:title = Title, scope:holder_candidate = Candidate currently selected by ruler.
-	candidates = {
-		add = {
-            # Every Shiba can become champion, that's some meritocracy :D
-			type = holder_dynasty
-			limit = {
-                dynasty = dynasty:2100009 # Shiba only
-			}
-		}
-	}
-}
+# 	#scope:candidate = Candidate, scope:title = Title, scope:holder_candidate = Candidate currently selected by ruler.
+# 	candidates = {
+# 		add = {
+#             # Every Shiba can become champion, that's some meritocracy :D
+# 			type = holder_dynasty
+# 			limit = {
+#                 dynasty = dynasty:2100009 # Shiba only
+# 			}
+# 		}
+# 	}
+# }

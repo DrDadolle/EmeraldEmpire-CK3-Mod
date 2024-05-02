@@ -1,0 +1,38 @@
+﻿# ###########
+# ### Special
+# ofushikai_spirit = {
+# 	name = name_ofushikai 	
+# 	dynasty = 2100009 	# Shiba
+# 	religion = "seven_fortunes"
+# 	culture = "shiba"
+# 	sexuality = asexual
+	
+# 	### Stats
+# 	martial = 40
+# 	learning = 30
+# 	diplomacy = 20
+# 	intrigue = 20
+# 	stewardship = 20
+# 	prowess = 40
+	
+# 	### Traits
+# 	trait = education_martial_4
+# 	trait = content
+# 	trait = brave
+# 	trait = humble
+# 	trait = ofushikai
+# 	trait = kami_descendant
+
+	
+# 	### DNA
+# 	##TODO
+# 	# Special spiritshader
+
+# 	1.1.1 = {
+# 		birth = yes
+# 	}
+# 	1123.1.1 = {
+# 		# Workaround for phoenix succession election
+# 		add_pressed_claim = title:k_phoenix_clan
+# 	}
+# }

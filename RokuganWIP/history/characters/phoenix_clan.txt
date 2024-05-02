@@ -183,39 +183,6 @@
 		birth = yes
 	}
 }
-###########
-### Special
-oshifukai_spirit = {
-	name = name_oshifukai 	# Shiba Tsukune, phoenix clan champion of 1123
-	dynasty = 2100009 	# Shiba
-	religion = "seven_fortunes"
-	culture = "shiba"
-	sexuality = asexual
-	
-	### Stats
-	martial = 40
-	learning = 30
-	diplomacy = 20
-	intrigue = 20
-	stewardship = 20
-	prowess = 40
-	
-	### Traits
-	trait = education_martial_4
-	trait = content
-	trait = brave
-	trait = humble
-	trait = oshifukai
-
-	
-	### DNA
-	##TODO
-	# Special spiritshader
-
-	1.1.1 = {
-		birth = yes
-	}
-}
 #####################
 #	Isawa
 #####################
