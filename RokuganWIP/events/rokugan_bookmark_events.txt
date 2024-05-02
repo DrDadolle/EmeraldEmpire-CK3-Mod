@@ -1,0 +1,216 @@
+﻿namespace = rokugan_bookmark
+
+# Setup Historical Situation (on startup)
+rokugan_bookmark.0001 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+
+		### Wars
+
+		# # Genpei War
+		# trigger_event = shogunate_bookmark.1000
+
+		# # Kenmu War
+		# trigger_event = shogunate_bookmark.1010
+
+		# # Nakasendai Rebellion
+		# trigger_event = shogunate_bookmark.1020
+
+		# # Kanno Disturbance
+		# trigger_event = shogunate_bookmark.1030
+
+		# # Battle of Musashino
+		# trigger_event = shogunate_bookmark.1040
+
+		# # Surprise Attacks
+		# trigger_event = shogunate_bookmark.1100
+
+		# # Historical Wars
+		# trigger_event = shogunate_bookmark.1200
+
+
+		# ### Alliances
+
+		# # Historical Alliances
+		# trigger_event = shogunate_bookmark.2000
+
+
+		# ### Rivalry
+
+		# # Historical Rivalry
+		# trigger_event = shogunate_bookmark.2100
+
+		# # Coalition against Oda Nobunaga
+		# trigger_event = shogunate_bookmark.2110
+
+		# # Honno-ji Incident
+		# trigger_event = shogunate_bookmark.2120
+
+
+		# ### Clans
+
+		# # Oda Clan
+		# trigger_event = shogunate_bookmark.3000
+
+		# # Toyotomi (Hashiba) Clan
+		# trigger_event = shogunate_bookmark.3010
+
+		# # Tokugawa (Matsudaira) Clan
+		# trigger_event = shogunate_bookmark.3020
+
+		# # Hojo Clan
+		# trigger_event = shogunate_bookmark.3100
+
+
+		# ### Traits
+
+		# # Personality Trait
+		# trigger_event = shogunate_bookmark.4000
+
+		# # Loyal Trait
+		# trigger_event = shogunate_bookmark.4010
+
+		# # Disloyal Trait
+		# trigger_event = shogunate_bookmark.4020
+
+		# # Eccentric Trait
+		# trigger_event = shogunate_bookmark.4030
+
+
+		# ### Regency / Hostage
+
+		# # Regency
+		# trigger_event = shogunate_bookmark.5000
+
+		# # Hostage
+		# trigger_event = shogunate_bookmark.5100
+
+
+		# ### Special Buildings
+
+		# # Military Buildings
+		# trigger_event = shogunate_bookmark.6000
+
+		# Economy Buildings
+		trigger_event = rokugan_bookmark.6100
+
+		# # Religious Buildings
+		# trigger_event = shogunate_bookmark.6200
+
+		# # Misc Buildings
+		# trigger_event = shogunate_bookmark.6300
+
+
+		# ### Misc
+
+		# # Aristocratic Daimyo
+		# trigger_event = shogunate_bookmark.8000
+
+		# # Cultures and Innovations
+		# trigger_event = shogunate_bookmark.8100
+
+		# # Cadet Branches
+		# trigger_event = shogunate_bookmark.8200
+
+		# # House Feud (after Cadet Branches)
+		# trigger_event = shogunate_bookmark.8300
+
+		# # House Unity (after Cadet Branches)
+		# trigger_event = shogunate_bookmark.8400
+	}
+}
+
+# Setup Historical Situation (on startup, after lobby)
+# shogunate_bookmark.0002 = {
+# 	scope = none
+# 	hidden = yes
+
+# 	immediate = {
+
+# 		### Artifacts
+
+# 		# Historical Artifacts
+# 		trigger_event = shogunate_bookmark.9000
+
+# 		### Achievements
+
+# 		# Achievements
+# #		trigger_event = shogunate_bookmark.9100
+
+# 		### Governments
+
+# 		# Theocracy
+# 		trigger_event = shogunate_bookmark.9200
+
+# 		# Republic
+# 		trigger_event = shogunate_bookmark.9210
+
+# 		### Misc
+
+# 		# AI Personality
+# 		trigger_event = shogunate_bookmark.9500
+
+# 		# AI Trait
+# 		trigger_event = shogunate_bookmark.9510
+
+# 		# AI Ambition
+# 		trigger_event = shogunate_bookmark.9520
+
+# 		# Capitals
+# 		trigger_event = shogunate_bookmark.9600
+
+# 	}
+# }
+
+# # Setup Historical Periods (on startup)
+# shogunate_bookmark.0003 = {
+# 	scope = none
+# 	hidden = yes
+
+# 	immediate = {
+
+# 		# Nanboku-cho Period
+
+# 		if = {
+# 			limit = {
+# 				shogunate_nanbokucho_period_start_date_trigger = yes
+# 			}
+# 			set_global_variable = shogunate_global_nanbokucho_start_flag
+# 		}
+# 		if = {
+# 			limit = {
+# 				shogunate_nanbokucho_period_end_date_trigger = yes
+# 			}
+# 			set_global_variable = shogunate_global_nanbokucho_end_flag
+# 			set_global_variable = shogunate_global_nanbokucho_northern_court_won_flag
+# 		}
+
+# 		# Sengoku Period
+
+# 		if = {
+# 			limit = {
+# 				shogunate_sengoku_period_start_date_trigger = yes
+# 			}
+# 			set_global_variable = shogunate_global_sengoku_start_flag
+# 		}
+# 		if = {
+# 			limit = {
+# 				shogunate_sengoku_period_end_date_trigger = yes
+# 			}
+# 			set_global_variable = shogunate_global_sengoku_end_flag
+# 		}
+
+# 	}
+# }
+
+# # Setup Map Colors (on startup)
+# shogunate_bookmark.0004 = {
+# 	scope = none
+# 	hidden = yes
+
+# 	immediate = {
+# 		shogunate_map_color_save_all_effect = yes
+# 	}
+# }

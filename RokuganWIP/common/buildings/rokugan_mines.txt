@@ -17,9 +17,9 @@ iwami_silver_mines_01 = {
 		building_requirement_tribal = no
 	}
 	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_manorialism	# Land Survey
-		}
+		# scope:holder.culture = {
+		# 	has_innovation = innovation_manorialism	# Land Survey
+		# }
 	}
 	
 	cost_gold = expensive_building_tier_3_cost
