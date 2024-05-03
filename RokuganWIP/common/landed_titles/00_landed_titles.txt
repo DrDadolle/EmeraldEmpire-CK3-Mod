@@ -63,6 +63,26 @@ e_rokugan = {
              color = { 168 221 254 }
              capital = c_kazenmuketsu_province
              
+			 c_kazenmuketsu_province = {
+                color = { 108 199 254 }
+
+                b_kyuden_doji = {
+                    province = 16
+                }
+                b_kyuden_garden = {
+                    province = 17
+                }
+                b_blind_monk_temple = {
+                    province = 18
+                }
+                b_shizuka_toshi = {
+                    province = 19
+                }
+                b_kyuden_no_kin = {
+                    province = 20
+                }
+            }
+
              c_oyomesan_province = {
                  color = { 168 221 254 }
  
@@ -80,25 +100,6 @@ e_rokugan = {
                  }
              }
 			 
-			 c_kazenmuketsu_province = {
-                 color = { 108 199 254 }
- 
-                 b_kyuden_doji = {
-                     province = 16
-                 }
-                 b_kyuden_garden = {
-                     province = 17
-                 }
-				 b_blind_monk_temple = {
-                     province = 18
-                 }
-				 b_shizuka_toshi = {
-                     province = 19
-                 }
-				 b_kyuden_no_kin = {
-                     province = 20
-                 }
-             }
 			 c_itoshii_province = {
                  color = { 39 83 89 }
  
@@ -137,6 +138,23 @@ e_rokugan = {
 		 d_daidoji = {
              color = { 42 143 255 }
              capital = c_hayaku_province
+
+             c_hayaku_province = {
+                color = { 42 143 255 }
+
+                b_shiro_daidoji = {
+                    province = 26
+                }
+                b_prosperous__plains_city = {
+                    province = 27
+                }
+                b_giji_seido = {
+                    province = 28
+                }
+                b_tsangusuri = {
+                    province = 29
+                }
+            }
              
              c_kosaten_province = {
                  color = { 17 51 55 }
@@ -145,23 +163,7 @@ e_rokugan = {
                      province = 25
                  }
              }
-			 
-			 c_hayaku_province = {
-                 color = { 42 143 255 }
- 
-                 b_shiro_daidoji = {
-                     province = 26
-                 }
-				 b_prosperous__plains_city = {
-                     province = 27
-                 }
-				 b_giji_seido = {
-                     province = 28
-                 }
-				 b_tsangusuri = {
-                     province = 29
-                 }
-             }
+
 			 c_sabishii_province = {
                  color = { 42 41 255 }
  
@@ -520,6 +522,23 @@ e_rokugan = {
              color = { 255 118 33 }
              capital = c_yogen_province
              
+             c_yogen_province = {
+                color = { 255 118 33 }
+
+                b_kyuden_asako = {
+                    province = 98
+                }
+                b_fiery_centiped_library = {
+                    province = 99
+                }
+                b_uikku_shrine = {
+                    province = 100
+                }
+                b_shinden_asako = {
+                    province = 101
+                }
+           }
+
              c_enjaku_province = {
                  color = { 151 66 0 }
  
@@ -543,22 +562,6 @@ e_rokugan = {
 				 
 				  b_orange_flame_village = {
                      province = 97
-                 }
-            }
-			c_yogen_province = {
-                 color = { 255 118 33 }
- 
-                 b_kyuden_asako = {
-                     province = 98
-                 }
-				 b_fiery_centiped_library = {
-                     province = 99
-                 }
-				 b_uikku_shrine = {
-                     province = 100
-                 }
-				 b_shinden_asako = {
-                     province = 101
                  }
             }
 			c_kyuukai_province = {
@@ -590,6 +593,23 @@ e_rokugan = {
 		d_shiba = {
              color = { 228 88 0 }
              capital = c_nejiro_province
+
+             c_nejiro_province = {
+                color = { 214 112 0 }
+
+                b_shiro_shiba = {
+                    province = 113
+                }
+                b_shinsei_and_sumai_mura = {
+                    province = 114
+                }
+                b_temple_of_brillant_rebirth = {
+                   province = 115
+                }
+                b_nejiro_mura = {
+                   province = 116
+                } 
+           }
              
              c_haimaato_province = {
                  color = { 231 162 84 }
@@ -630,27 +650,27 @@ e_rokugan = {
                  }
 				 
             }
-			c_nejiro_province = {
-                 color = { 214 112 0 }
- 
-                 b_shiro_shiba = {
-                     province = 113
-                 }
-				 b_shinsei_and_sumai_mura = {
-                     province = 114
-                 }
-				 b_temple_of_brillant_rebirth = {
-					province = 115
-				 }
-				 b_nejiro_mura = {
-					province = 116
-				 }
-				 
-            }
 		}
 		d_isawa = {
              color = { 214 112 0 } 
              capital = c_maryoku_province
+
+             c_maryoku_province = {
+                color = { 159 103 39 }
+
+                b_kyuden_isawa = {
+                    province = 121
+                }
+                b_maryoku_mura = {
+                    province = 122
+                }
+                b_eight_guardian_temple = {
+                    province = 123
+                }
+                b_shiro_shingon = {
+                   province = 468
+               }
+           }
              
              c_aoijiroi_province = {
                  color = { 198 106 3 }
@@ -675,22 +695,6 @@ e_rokugan = {
                  b_gisei_toshi_phoenix = {
                      province = 120
                  }
-            }
-			c_maryoku_province = {
-                 color = { 159 103 39 }
- 
-                 b_kyuden_isawa = {
-                     province = 121
-                 }
-				 b_maryoku_mura = {
-                     province = 122
-                 }
-				 b_eight_guardian_temple = {
-                     province = 123
-                 }
-                 b_shiro_shingon = {
-                    province = 468
-                }
             }
             c_chuda_province = {
                 color = {  17 20 15 }
@@ -762,6 +766,17 @@ e_rokugan = {
 		d_mirumoto = {
              color = { 33 233 56 }
              capital = c_toshibu_province
+
+             c_toshibu_province = {
+                color = { 33 233 56 }
+
+                b_shiro_mirumoto = {
+                    province = 296
+                }
+                b_heibesu = {
+                    province = 297
+                }
+           }
              
              c_gaien_province = {
                  color = { 80 166 32 }
@@ -780,16 +795,7 @@ e_rokugan = {
                      province = 295
                  }
             }
-			c_toshibu_province = {
-                 color = { 33 233 56 }
- 
-                 b_shiro_mirumoto = {
-                     province = 296
-                 }
-				 b_heibesu = {
-                     province = 297
-                 }
-            }
+
 			c_kousou_province = {
                  color = { 19 170 38}
  
@@ -829,6 +835,20 @@ e_rokugan = {
              color = { 27 74 15 }
              capital = c_kinenkan_province
 
+             c_kinenkan_province = {
+                color = { 27 74 15 }
+
+                b_shiro_agasha = {
+                    province = 309
+                }
+                b_dragon_breath_castle = {
+                    province = 307
+                }
+                b_suigeki_toshi = {
+                    province = 308
+                }
+           }
+
              c_sabishii_province_dragon = {
                  color = { 35 129 12 }
  
@@ -837,19 +857,7 @@ e_rokugan = {
 				}
             }
              
-             c_kinenkan_province = {
-                 color = { 27 74 15 }
- 
-                 b_shiro_agasha = {
-                     province = 309
-                 }
-				 b_dragon_breath_castle = {
-                     province = 307
-                 }
-				 b_suigeki_toshi = {
-                     province = 308
-                 }
-            }
+
 		}
 	}
 	k_scorpion_clan = {
@@ -887,6 +895,23 @@ e_rokugan = {
 		d_bayushi = {
              color = { 145 1 11 }
              capital = c_kunizakai_province
+
+             c_kunizakai_province = {
+                color = { 145 1 11 }
+
+                b_kyuden_bayushi = {
+                    province = 162
+                }
+                b_bayushi_seido = {
+                    province = 163
+                }
+                b_traitor_grove_mura = {
+                    province = 164
+                }
+                b_shiro_kuraishi = {
+                    province = 165
+                }
+           }
              
              c_nezuban_province = {
                  color = { 211 24 24 }
@@ -916,22 +941,6 @@ e_rokugan = {
                  }
 				 b_shutai = {
                      province = 161
-                 }
-            }
-			c_kunizakai_province = {
-                 color = { 145 1 11 }
- 
-                 b_kyuden_bayushi = {
-                     province = 162
-                 }
-				 b_bayushi_seido = {
-                     province = 163
-                 }
-				 b_traitor_grove_mura = {
-                     province = 164
-                 }
-				 b_shiro_kuraishi = {
-                     province = 165
                  }
             }
 		}
@@ -998,6 +1007,8 @@ e_rokugan = {
 	}
 	k_crab_clan = {
 		color = { 41 31 91 }
+        capital = c_kyoukan_province
+        
 		d_yasuki = {
 			color = { 72 19 202 } 
 			capital = c_junkin_province
@@ -1036,6 +1047,23 @@ e_rokugan = {
 		d_hida = {
 			color = { 41 31 91 } 
 			capital = c_kyoukan_province
+
+            c_kyoukan_province = {
+                color = { 41 31 91 }
+                
+                b_kyuden_hida = {
+                    province = 184
+                }
+                b_koten_seido = {
+                    province = 185
+                }
+                b_ugawari_toride = {
+                    province = 186
+                }
+                b_kyuden_moshibaru = {
+                    province = 187
+                }
+           }
 			
 			c_ishibei_province = {
                  color = { 6 23 108 }
@@ -1047,23 +1075,7 @@ e_rokugan = {
                      province = 183
                  }
 			}
-			
-			c_kyoukan_province = {
-                 color = { 41 31 91 }
-				 
-				 b_kyuden_hida = {
-                     province = 184
-                 }
-				 b_koten_seido = {
-                     province = 185
-                 }
-				 b_ugawari_toride = {
-                     province = 186
-                 }
-				 b_kyuden_moshibaru = {
-                     province = 187
-                 }
-			}
+
 			c_juuin_province = {
                  color = { 37 64 200 }
 				 
@@ -1272,6 +1284,23 @@ e_rokugan = {
 		d_moto = {
 			color = { 40 12 58 }  
 			capital = c_ikoku_province
+
+            c_ikoku_province = {
+                color = { 40 12 58 }
+                
+                b_shiro_moto = {
+                    province = 230
+                }
+                b_temple_of_death = {
+                    province = 231
+                }
+                b_mura_nisa_kawa_nemui = {
+                    province = 232
+                }
+                b_toshi_no_aida_no_kawa = {
+                    province = 233
+                }
+           }
 			
 			c_enkaku_province = {
                  color = { 131 54 182 }
@@ -1303,26 +1332,24 @@ e_rokugan = {
                      province = 229
                  }
 			}
-			c_ikoku_province = {
-                 color = { 40 12 58 }
-				 
-				 b_shiro_moto = {
-                     province = 230
-                 }
-				 b_temple_of_death = {
-                     province = 231
-                 }
-				 b_mura_nisa_kawa_nemui = {
-                     province = 232
-                 }
-				 b_toshi_no_aida_no_kawa = {
-                     province = 233
-                 }
-			}
 		}
 		d_utaku = {
 			color = { 158 17 211 } 
 			capital = c_manaka_province
+
+            c_manaka_province = {
+                color = { 158 17 211 }
+                
+                b_shiro_utaku = {
+                    province = 237
+                }
+                b_shiro_naoko = {
+                    province = 236
+                }
+                b_manaka_plains = {
+                    province = 238
+                }
+           }
 			
 			c_isei_province = {
                  color = { 56 7 89 }
@@ -1335,19 +1362,6 @@ e_rokugan = {
                  }
 			}
 			
-			c_manaka_province = {
-                 color = { 158 17 211 }
-				 
-				 b_shiro_utaku = {
-                     province = 237
-                 }
-				 b_shiro_naoko = {
-                     province = 236
-                 }
-				 b_manaka_plains = {
-                     province = 238
-                 }
-			}
 			c_tsuriai_province = {
                  color = { 136 56 190 }
 				 
@@ -1382,6 +1396,17 @@ e_rokugan = {
 		d_shinjo = {
 			color = { 108 52 179 }
 			capital = c_kouryo_province 
+
+            c_kouryo_province = {
+                color = { 108 52 179 }
+                
+                b_shiro_shinjo = {
+                    province = 253
+                }
+                b_mountain_watch_tower = {
+                    province = 254
+               }
+           }
 			
 			c_bugaisha_province = {
                  color = { 74 21 110 }
@@ -1420,16 +1445,7 @@ e_rokugan = {
                  }
 			}
 			
-			c_kouryo_province = {
-                 color = { 108 52 179 }
-				 
-				 b_shiro_shinjo = {
-                     province = 253
-                 }
-				 b_mountain_watch_tower = {
-                     province = 254
-				}
-			}
+
 		}
 	}
 	
@@ -1879,6 +1895,16 @@ e_rokugan = {
             color = { 83 55 35 }
             capital = c_south_shinomen_ronin_2
 
+            c_south_shinomen_ronin_2 = {
+                color = { 152 98 62 }
+                b_south_shinomen_ronin_2 = {
+                    province = 414
+                }
+                b_cherry_blossom_village = {
+                    province = 415
+                }
+             }
+
             c_south_shinomen_monastery_1 = {
                 color = { 133 119 108 }
                 b_south_shinomen_monastery_1 = {
@@ -1890,16 +1916,6 @@ e_rokugan = {
                 color = { 103 49 12 }
                 b_south_shinomen_ronin_1 = {
                     province = 413
-                }
-             }
-
-             c_south_shinomen_ronin_2 = {
-                color = { 152 98 62 }
-                b_south_shinomen_ronin_2 = {
-                    province = 414
-                }
-                b_cherry_blossom_village = {
-                    province = 415
                 }
              }
 
@@ -1920,6 +1936,14 @@ e_rokugan = {
         d_ronin_central = {
             color = { 139 80 18 }
             capital = c_central_lands_ronin_4
+
+            c_central_lands_ronin_4 = {
+                color = { 139 80 18 }
+
+                b_central_lands_ronin_4  = {
+                    province = 403
+                }
+            }
 
             c_central_lands_ronin_1 = {
                 color = { 69 42 14 }
@@ -1945,13 +1969,7 @@ e_rokugan = {
                 }
             }
 
-            c_central_lands_ronin_4 = {
-                color = { 139 80 18 }
 
-                b_central_lands_ronin_4  = {
-                    province = 403
-                }
-            }
         }
     }
 		
@@ -1961,7 +1979,15 @@ e_rokugan = {
 	k_kintani_valley = {
 		d_kintani_valley = {
 			 color = { 141 129 124 }
-			 capital = c_kintani_mori_province
+			 capital = c_kintani_province
+
+             c_kintani_province = {
+                color = { 18 151 207 }
+
+                b_shiro_kyotei = {
+                    province = 45
+                }
+           }
 			 
 			 c_north_kintani_province = {
 				 color = { 171 159 144 }
@@ -1992,17 +2018,18 @@ e_rokugan = {
 				 }
 			}
 						
-			c_kintani_province = {
-                 color = { 18 151 207 }
- 
-                 b_shiro_kyotei = {
-                     province = 45
-                 }
-			}
 		}
 		d_kintani_valley_2 = {
 			color = { 71 206 191 }
 			 capital = c_toshi_rambo
+
+             c_toshi_rambo = {
+                color = { 71 206 191 }
+
+                b_toshi_rambo = {
+                    province = 323
+                }
+           }
 			 
 			c_nanashi_mura_province = {
                  color = { 141 129 124 }
@@ -2021,13 +2048,7 @@ e_rokugan = {
                      province = 324
                  }
 			}
-			c_toshi_rambo = {
-                 color = { 71 206 191 }
- 
-                 b_toshi_rambo = {
-                     province = 323
-                 }
-			}
+
 		
 		}
 	}
