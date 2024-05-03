@@ -151,9 +151,10 @@ ryoko_owari_opium_ring_01 = {
 		travel_danger = 10
 	}
 	county_modifier = {
+		tax_mult = 0.2
 		development_growth = 0.2
 		development_growth_factor = 0.25
-		monthly_county_control_growth_add = -2
+		monthly_county_control_growth_add = -1
 	}
 	
 	next_building = ryoko_owari_opium_ring_02
@@ -193,9 +194,10 @@ ryoko_owari_opium_ring_02 = {
 		travel_danger = 20
 	}
 	county_modifier = {
-		development_growth = 0.4
-		development_growth_factor = 0.5
-		monthly_county_control_growth_add = -4
+		tax_mult = 0.3
+		development_growth = 0.3
+		development_growth_factor = 0.3
+		monthly_county_control_growth_add = -2
 	}
 	
 	next_building = ryoko_owari_opium_ring_03
@@ -235,9 +237,10 @@ ryoko_owari_opium_ring_03 = {
 		travel_danger = 30
 	}
 	county_modifier = {
-		development_growth = 0.6
-		development_growth_factor = 0.75
-		monthly_county_control_growth_add = -6
+		tax_mult = 0.4
+		development_growth = 0.4
+		development_growth_factor = 0.35
+		monthly_county_control_growth_add = -3
 	}
 	
 	next_building = ryoko_owari_opium_ring_04
@@ -277,9 +280,10 @@ ryoko_owari_opium_ring_04 = {
 		travel_danger = 40
 	}
 	county_modifier = {
-		development_growth = 0.8
-		development_growth_factor = 1.0
-		monthly_county_control_growth_add = -8
+		tax_mult = 0.5
+		development_growth = 0.5
+		development_growth_factor = 0.4
+		monthly_county_control_growth_add = -4
 	}
 
 	ai_value = {

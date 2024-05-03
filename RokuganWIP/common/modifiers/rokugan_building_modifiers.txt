@@ -1,0 +1,456 @@
+﻿### Special building modifiers
+
+
+# Iwami Silver Mines
+
+rokugan_iwami_silver_mines_00_modifier = {
+	icon = stewardship_positive
+}
+
+rokugan_iwami_silver_mines_01_modifier = {
+	icon = stewardship_positive
+	monthly_income = special_mine_building_tax_tier_1
+}
+
+rokugan_iwami_silver_mines_02_modifier = {
+	icon = stewardship_positive
+	monthly_income = special_mine_building_tax_tier_2
+}
+
+rokugan_iwami_silver_mines_03_modifier = {
+	icon = stewardship_positive
+	monthly_income = special_mine_building_tax_tier_3
+}
+
+rokugan_iwami_silver_mines_04_modifier = {
+	icon = stewardship_positive
+	monthly_income = special_mine_building_tax_tier_4
+}
+
+# # Sado Gold Mines
+
+# rokugan_sado_gold_mines_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_sado_gold_mines_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_1
+# }
+
+# rokugan_sado_gold_mines_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_2
+# }
+
+# rokugan_sado_gold_mines_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_3
+# }
+
+# rokugan_sado_gold_mines_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_4
+# }
+
+# # Innai Silver Mines
+
+# rokugan_innai_silver_mines_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_innai_silver_mines_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_1
+# }
+
+# rokugan_innai_silver_mines_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_2
+# }
+
+# rokugan_innai_silver_mines_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_3
+# }
+
+# rokugan_innai_silver_mines_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_4
+# }
+
+# # Kurokawa Gold Mines
+
+# rokugan_kurokawa_gold_mines_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_kurokawa_gold_mines_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_1
+# }
+
+# rokugan_kurokawa_gold_mines_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_2
+# }
+
+# rokugan_kurokawa_gold_mines_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_3
+# }
+
+# rokugan_kurokawa_gold_mines_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_4
+# }
+
+# # Ikuno Silver Mines
+
+# rokugan_ikuno_silver_mines_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_ikuno_silver_mines_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_1
+# }
+
+# rokugan_ikuno_silver_mines_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_2
+# }
+
+# rokugan_ikuno_silver_mines_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_3
+# }
+
+# rokugan_ikuno_silver_mines_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_4
+# }
+
+# # Nobesawa Silver Mines
+
+# rokugan_nobesawa_silver_mines_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_nobesawa_silver_mines_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_1
+# }
+
+# rokugan_nobesawa_silver_mines_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_2
+# }
+
+# rokugan_nobesawa_silver_mines_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_3
+# }
+
+# rokugan_nobesawa_silver_mines_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_4
+# }
+
+# # Tada Copper Mines
+
+# rokugan_tada_copper_mines_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_tada_copper_mines_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = copper_mine_building_tax_tier_1
+# }
+
+# rokugan_tada_copper_mines_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = copper_mine_building_tax_tier_2
+# }
+
+# rokugan_tada_copper_mines_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = copper_mine_building_tax_tier_3
+# }
+
+# rokugan_tada_copper_mines_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = copper_mine_building_tax_tier_4
+# }
+
+# # Tamayama Gold Mines
+
+# rokugan_tamayama_gold_mines_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_tamayama_gold_mines_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_1
+# }
+
+# rokugan_tamayama_gold_mines_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_2
+# }
+
+# rokugan_tamayama_gold_mines_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_3
+# }
+
+# rokugan_tamayama_gold_mines_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_4
+# }
+
+# # Sakai Trade Port
+
+# rokugan_sakai_trade_port_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_sakai_trade_port_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_1
+# }
+
+# rokugan_sakai_trade_port_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_2
+# 	archers_damage_mult = 0.1
+# }
+
+# rokugan_sakai_trade_port_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_3
+# 	archers_damage_mult = 0.2
+# }
+
+# rokugan_sakai_trade_port_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_4
+# 	archers_damage_mult = 0.3
+# 	siege_weapon_siege_value_mult = 0.3
+# }
+
+# # Hakata Trade Port
+
+# rokugan_hakata_trade_port_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_hakata_trade_port_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_1
+# }
+
+# rokugan_hakata_trade_port_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_2
+# }
+
+# rokugan_hakata_trade_port_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_3
+# }
+
+# rokugan_hakata_trade_port_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_4
+# 	siege_weapon_siege_value_mult = 0.2
+# }
+
+# # Hyogo Trade Port
+
+# rokugan_hyogo_trade_port_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_hyogo_trade_port_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_1
+# }
+
+# rokugan_hyogo_trade_port_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_2
+# }
+
+# rokugan_hyogo_trade_port_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_3
+# }
+
+# rokugan_hyogo_trade_port_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = special_mine_building_tax_tier_4
+# 	siege_weapon_siege_value_mult = 0.2
+# }
+
+# # Tosaminato Trade Port
+
+# rokugan_tosaminato_trade_port_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_tosaminato_trade_port_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_1
+# }
+
+# rokugan_tosaminato_trade_port_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_2
+# }
+
+# rokugan_tosaminato_trade_port_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_3
+# }
+
+# rokugan_tosaminato_trade_port_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_4
+# 	siege_weapon_siege_value_mult = 0.1
+# }
+
+# # Anotsu Trade Port
+
+# rokugan_anotsu_trade_port_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_anotsu_trade_port_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_1
+# }
+
+# rokugan_anotsu_trade_port_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_2
+# }
+
+# rokugan_anotsu_trade_port_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_3
+# }
+
+# rokugan_anotsu_trade_port_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_4
+# 	siege_weapon_siege_value_mult = 0.1
+# }
+
+# # Bonotsu Trade Port
+
+# rokugan_bonotsu_trade_port_00_modifier = {
+# 	icon = stewardship_positive
+# }
+
+# rokugan_bonotsu_trade_port_01_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_1
+# }
+
+# rokugan_bonotsu_trade_port_02_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_2
+# }
+
+# rokugan_bonotsu_trade_port_03_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_3
+# }
+
+# rokugan_bonotsu_trade_port_04_modifier = {
+# 	icon = stewardship_positive
+# 	monthly_income = silver_mine_building_tax_tier_4
+# 	siege_weapon_siege_value_mult = 0.1
+# }
+
+# # Kunitomo Gunsmiths
+
+# rokugan_kunitomo_gunsmiths_00_modifier = {
+# 	icon = martial_positive
+# }
+
+# rokugan_kunitomo_gunsmiths_01_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.1
+# }
+
+# rokugan_kunitomo_gunsmiths_02_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.2
+# }
+
+# rokugan_kunitomo_gunsmiths_03_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.3
+# }
+
+# rokugan_kunitomo_gunsmiths_04_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.4
+# 	siege_weapon_siege_value_mult = 0.2
+# }
+
+# # Negoro Gunsmiths
+
+# rokugan_negoro_gunsmiths_00_modifier = {
+# 	icon = martial_positive
+# }
+
+# rokugan_negoro_gunsmiths_01_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.1
+# }
+
+# rokugan_negoro_gunsmiths_02_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.2
+# }
+
+# rokugan_negoro_gunsmiths_03_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.3
+# }
+
+# rokugan_negoro_gunsmiths_04_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.4
+# 	siege_weapon_siege_value_mult = 0.2
+# }
+
+# # Saika Gunsmiths
+
+# rokugan_saika_gunsmiths_00_modifier = {
+# 	icon = martial_positive
+# }
+
+# rokugan_saika_gunsmiths_01_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.1
+# }
+
+# rokugan_saika_gunsmiths_02_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.2
+# }
+
+# rokugan_saika_gunsmiths_03_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.3
+# }
+
+# rokugan_saika_gunsmiths_04_modifier = {
+# 	icon = martial_positive
+# 	archers_damage_mult = 0.4
+# 	siege_weapon_siege_value_mult = 0.2
+# }
