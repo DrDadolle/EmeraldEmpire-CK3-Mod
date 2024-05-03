@@ -65,6 +65,7 @@
 	culture = iuchi
 	religion = seven_fortunes
 	holding = castle_holding
+	special_building = horiuchi_mines_01
 
 	1123.1.1={
 		buildings = {
@@ -279,6 +280,7 @@
 	culture = utaku
 	religion = cult_ancestors
 	holding = castle_holding
+	special_building = yashigi_mines_01
 
 	1123.1.1={
 		buildings = {
@@ -331,6 +333,7 @@
 	culture = shinjo
 	religion = seven_fortunes
 	holding = castle_holding
+	special_building = bugaisha_mines_01
 
 	1123.1.1={
 		buildings = {

@@ -1,191 +1,486 @@
-﻿rokugan_building_name = {
-	type = character
-	text = {
-		trigger = {
-			exists = var:building_name
-			var:building_name = flag:iwami_silver_mines
-		}
-		localization_key = building_type_iwami_silver_mines_01
-	}
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:sado_gold_mines
-	# 	}
-	# 	localization_key = building_type_sado_gold_mines_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:innai_silver_mines
-	# 	}
-	# 	localization_key = building_type_innai_silver_mines_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:kurokawa_gold_mines
-	# 	}
-	# 	localization_key = building_type_kurokawa_gold_mines_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:ikuno_silver_mines
-	# 	}
-	# 	localization_key = building_type_ikuno_silver_mines_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:nobesawa_silver_mines
-	# 	}
-	# 	localization_key = building_type_nobesawa_silver_mines_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:tada_copper_mines
-	# 	}
-	# 	localization_key = building_type_tada_copper_mines_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:tamayama_gold_mines
-	# 	}
-	# 	localization_key = building_type_tamayama_gold_mines_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:sakai_trade_port
-	# 	}
-	# 	localization_key = building_type_sakai_trade_port_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:hakata_trade_port
-	# 	}
-	# 	localization_key = building_type_hakata_trade_port_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:hyogo_trade_port
-	# 	}
-	# 	localization_key = building_type_hyogo_trade_port_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:tosaminato_trade_port
-	# 	}
-	# 	localization_key = building_type_tosaminato_trade_port_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:anotsu_trade_port
-	# 	}
-	# 	localization_key = building_type_anotsu_trade_port_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:bonotsu_trade_port
-	# 	}
-	# 	localization_key = building_type_bonotsu_trade_port_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:kunitomo_gunsmiths
-	# 	}
-	# 	localization_key = building_type_kunitomo_gunsmiths_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:negoro_gunsmiths
-	# 	}
-	# 	localization_key = building_type_negoro_gunsmiths_01
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		var:building_name = flag:saika_gunsmiths
-	# 	}
-	# 	localization_key = building_type_saika_gunsmiths_01
-	# }
-	text = {
-		fallback = yes
-		localization_key = building_class_rokugan_default
-	}
-}
+﻿# Surcharge existing method
+#TODO replace directly 00_custom_building_localization.txt later
+GetSpecialBuildingNameFromProvince = { 
+	type = province
 
-rokugan_building_class = {
-	type = character
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		OR = {
-	# 			var:building_name = flag:kurokawa_gold_mines
-	# 			var:building_name = flag:sado_gold_mines
-	# 			var:building_name = flag:tamayama_gold_mines
-	# 		}
-	# 	}
-	# 	localization_key = building_class_rokugan_gold_mines
-	# }
-	text = {
+	text = { # Maisuna Mines
 		trigger = {
-			exists = var:building_name
-			OR = {
-				var:building_name = flag:iwami_silver_mines
-				# var:building_name = flag:innai_silver_mines
-				# var:building_name = flag:ikuno_silver_mines
-				# var:building_name = flag:nobesawa_silver_mines
-			}
+			has_special_building = yes
+			has_building = maisuna_mines_01
 		}
-		localization_key = building_class_rokugan_silver_mines
+		localization_key = building_maisuna_mines_01
 	}
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		OR = {
-	# 			var:building_name = flag:tada_copper_mines
-	# 		}
-	# 	}
-	# 	localization_key = building_class_rokugan_copper_mines
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		OR = {
-	# 			var:building_name = flag:sakai_trade_port
-	# 			var:building_name = flag:hakata_trade_port
-	# 			var:building_name = flag:hyogo_trade_port
-	# 			var:building_name = flag:tosaminato_trade_port
-	# 			var:building_name = flag:anotsu_trade_port
-	# 			var:building_name = flag:bonotsu_trade_port
-	# 		}
-	# 	}
-	# 	localization_key = building_class_rokugan_trade_port
-	# }
-	# text = {
-	# 	trigger = {
-	# 		exists = var:building_name
-	# 		OR = {
-	# 			var:building_name = flag:kunitomo_gunsmiths
-	# 			var:building_name = flag:negoro_gunsmiths
-	# 			var:building_name = flag:saika_gunsmiths
-	# 		}
-	# 	}
-	# 	localization_key = building_class_rokugan_gunsmiths
-	# }
-	text = {
-		fallback = yes
-		localization_key = building_class_rokugan_default
+	text = { # Maisuna Mines
+		trigger = {
+			has_special_building = yes
+			has_building = maisuna_mines_02
+		}
+		localization_key = building_maisuna_mines_02
 	}
+	text = { # Maisuna Mines
+		trigger = {
+			has_special_building = yes
+			has_building = maisuna_mines_03
+		}
+		localization_key = building_maisuna_mines_03
+	}
+	text = { # Maisuna Mines
+		trigger = {
+			has_special_building = yes
+			has_building = maisuna_mines_04
+		}
+		localization_key = building_maisuna_mines_04
+	}
+
+	#####
+	text = { # Kakeguchi Mines
+		trigger = {
+			has_special_building = yes
+			has_building = kakeguchi_mines_01
+		}
+		localization_key = building_kakeguchi_mines_01
+	}
+	text = { # Kakeguchi Mines
+		trigger = {
+			has_special_building = yes
+			has_building = kakeguchi_mines_02
+		}
+		localization_key = building_kakeguchi_mines_02
+	}
+	text = { # Kakeguchi Mines
+		trigger = {
+			has_special_building = yes
+			has_building = kakeguchi_mines_03
+		}
+		localization_key = building_kakeguchi_mines_03
+	}
+	text = { # Kakeguchi Mines
+		trigger = {
+			has_special_building = yes
+			has_building = kakeguchi_mines_04
+		}
+		localization_key = building_kakeguchi_mines_04
+	}
+	
+	#####
+	text = { # Higashiyama Mines
+		trigger = {
+			has_special_building = yes
+			has_building = higashiyama_mines_01
+		}
+		localization_key = building_higashiyama_mines_01
+	}
+	text = { # Higashiyama Mines
+		trigger = {
+			has_special_building = yes
+			has_building = higashiyama_mines_02
+		}
+		localization_key = building_higashiyama_mines_02
+	}
+	text = { # Higashiyama Mines
+		trigger = {
+			has_special_building = yes
+			has_building = higashiyama_mines_03
+		}
+		localization_key = building_higashiyama_mines_03
+	}
+	text = { # Higashiyama Mines
+		trigger = {
+			has_special_building = yes
+			has_building = higashiyama_mines_04
+		}
+		localization_key = building_higashiyama_mines_04
+	}
+
+	#####
+	text = { # High Tree  Mines
+		trigger = {
+			has_special_building = yes
+			has_building = high_tree_mines_01
+		}
+		localization_key = building_high_tree_mines_01
+	}
+	text = { # High Tree  Mines
+		trigger = {
+			has_special_building = yes
+			has_building = high_tree_mines_02
+		}
+		localization_key = building_high_tree_mines_02
+	}
+	text = { # High Tree  Mines
+		trigger = {
+			has_special_building = yes
+			has_building = high_tree_mines_03
+		}
+		localization_key = building_high_tree_mines_03
+	}
+	text = { # High Tree  Mines
+		trigger = {
+			has_special_building = yes
+			has_building = high_tree_mines_04
+		}
+		localization_key = building_high_tree_mines_04
+	}
+
+
+	#####
+	text = { # Umoeru Mines
+		trigger = {
+			has_special_building = yes
+			has_building = umoeru_mines_01
+		}
+		localization_key = building_umoeru_mines_01
+	}
+	text = { # Umoeru Mines
+		trigger = {
+			has_special_building = yes
+			has_building = umoeru_mines_02
+		}
+		localization_key = building_umoeru_mines_02
+	}
+	text = { # Umoeru Mines
+		trigger = {
+			has_special_building = yes
+			has_building = umoeru_mines_03
+		}
+		localization_key = building_umoeru_mines_03
+	}
+	text = { # Umoeru Mines
+		trigger = {
+			has_special_building = yes
+			has_building = umoeru_mines_04
+		}
+		localization_key = building_umoeru_mines_04
+	}
+
+	#####
+	text = { # Tetsu Kama Mines
+		trigger = {
+			has_special_building = yes
+			has_building = tetsukama_mines_01
+		}
+		localization_key = building_tetsukama_mines_01
+	}
+	text = { # Tetsu Kama Mines
+		trigger = {
+			has_special_building = yes
+			has_building = tetsukama_mines_02
+		}
+		localization_key = building_tetsukama_mines_02
+	}
+	text = { # Tetsu Kama Mines
+		trigger = {
+			has_special_building = yes
+			has_building = tetsukama_mines_03
+		}
+		localization_key = building_tetsukama_mines_03
+	}
+	text = { # Tetsu Kama Mines
+		trigger = {
+			has_special_building = yes
+			has_building = tetsukama_mines_04
+		}
+		localization_key = building_tetsukama_mines_04
+	}
+
+	#####
+	text = { # Serpent Tail Mines
+		trigger = {
+			has_special_building = yes
+			has_building = serpentTail_mines_01
+		}
+		localization_key = building_serpentTail_mines_01
+	}
+	text = { # Serpent Tail Mines
+		trigger = {
+			has_special_building = yes
+			has_building = serpentTail_mines_02
+		}
+		localization_key = building_serpentTail_mines_02
+	}
+	text = { # Serpent Tail Mines
+		trigger = {
+			has_special_building = yes
+			has_building = serpentTail_mines_03
+		}
+		localization_key = building_serpentTail_mines_03
+	}
+	text = { # Serpent Tail Mines
+		trigger = {
+			has_special_building = yes
+			has_building = serpentTail_mines_04
+		}
+		localization_key = building_serpentTail_mines_04
+	}
+
+	#####
+	text = { # Shaiga Mines
+		trigger = {
+			has_special_building = yes
+			has_building = shaiga_mines_01
+		}
+		localization_key = building_shaiga_mines_01
+	}
+	text = { # Shaiga Mines
+		trigger = {
+			has_special_building = yes
+			has_building = shaiga_mines_02
+		}
+		localization_key = building_shaiga_mines_02
+	}
+	text = { # Shaiga Mines
+		trigger = {
+			has_special_building = yes
+			has_building = shaiga_mines_03
+		}
+		localization_key = building_shaiga_mines_03
+	}
+	text = { # Shaiga Mines
+		trigger = {
+			has_special_building = yes
+			has_building = shaiga_mines_04
+		}
+		localization_key = building_shaiga_mines_04
+	}
+
+	#####
+	text = { # Orange Flame Mines
+		trigger = {
+			has_special_building = yes
+			has_building = orange_flame_mines_01
+		}
+		localization_key = building_orange_flame_mines_01
+	}
+	text = { # Orange Flame Mines
+		trigger = {
+			has_special_building = yes
+			has_building = orange_flame_mines_02
+		}
+		localization_key = building_orange_flame_mines_02
+	}
+	text = { # Orange Flame Mines
+		trigger = {
+			has_special_building = yes
+			has_building = orange_flame_mines_03
+		}
+		localization_key = building_orange_flame_mines_03
+	}
+	text = { # Orange Flame Mines
+		trigger = {
+			has_special_building = yes
+			has_building = orange_flame_mines_04
+		}
+		localization_key = building_orange_flame_mines_04
+	}
+
+	#####
+	text = { # Aitate Mines
+		trigger = {
+			has_special_building = yes
+			has_building = aitate_mines_01
+		}
+		localization_key = building_aitate_mines_01
+	}
+	text = { # Aitate Mines
+		trigger = {
+			has_special_building = yes
+			has_building = aitate_mines_02
+		}
+		localization_key = building_aitate_mines_02
+	}
+	text = { # Aitate Mines
+		trigger = {
+			has_special_building = yes
+			has_building = aitate_mines_03
+		}
+		localization_key = building_aitate_mines_03
+	}
+	text = { # Aitate Mines
+		trigger = {
+			has_special_building = yes
+			has_building = aitate_mines_04
+		}
+		localization_key = building_aitate_mines_04
+	}
+
+	#####
+	text = { # Kirin Mines
+		trigger = {
+			has_special_building = yes
+			has_building = kirin_mines_01
+		}
+		localization_key = building_kirin_mines_01
+	}
+	text = { # Kirin Mines
+		trigger = {
+			has_special_building = yes
+			has_building = kirin_mines_02
+		}
+		localization_key = building_kirin_mines_02
+	}
+	text = { # Kirin Mines
+		trigger = {
+			has_special_building = yes
+			has_building = kirin_mines_03
+		}
+		localization_key = building_kirin_mines_03
+	}
+	text = { # Kirin Mines
+		trigger = {
+			has_special_building = yes
+			has_building = kirin_mines_04
+		}
+		localization_key = building_kirin_mines_04
+	}
+
+	#####
+	text = { # Nihai Mines
+		trigger = {
+			has_special_building = yes
+			has_building = nihai_mines_01
+		}
+		localization_key = building_nihai_mines_01
+	}
+	text = { # Nihai Mines
+		trigger = {
+			has_special_building = yes
+			has_building = nihai_mines_02
+		}
+		localization_key = building_nihai_mines_02
+	}
+	text = { # Nihai Mines
+		trigger = {
+			has_special_building = yes
+			has_building = nihai_mines_03
+		}
+		localization_key = building_nihai_mines_03
+	}
+	text = { # Nihai Mines
+		trigger = {
+			has_special_building = yes
+			has_building = nihai_mines_04
+		}
+		localization_key = building_nihai_mines_04
+	}
+
+	#####
+	text = { # Plum Bloom  Mines
+		trigger = {
+			has_special_building = yes
+			has_building = horiuchi_mines_01
+		}
+		localization_key = building_horiuchi_mines_01
+	}
+	text = { # Plum Bloom  Mines
+		trigger = {
+			has_special_building = yes
+			has_building = horiuchi_mines_02
+		}
+		localization_key = building_horiuchi_mines_02
+	}
+	text = { # Plum Bloom  Mines
+		trigger = {
+			has_special_building = yes
+			has_building = horiuchi_mines_03
+		}
+		localization_key = building_horiuchi_mines_03
+	}
+	text = { # Plum Bloom  Mines
+		trigger = {
+			has_special_building = yes
+			has_building = horiuchi_mines_04
+		}
+		localization_key = building_horiuchi_mines_04
+	}
+
+	#####
+	text = { # Bugaisha Mines
+		trigger = {
+			has_special_building = yes
+			has_building = bugaisha_mines_01
+		}
+		localization_key = building_bugaisha_mines_01
+	}
+	text = { # Bugaisha Mines
+		trigger = {
+			has_special_building = yes
+			has_building = bugaisha_mines_02
+		}
+		localization_key = building_bugaisha_mines_02
+	}
+	text = { # Bugaisha Mines
+		trigger = {
+			has_special_building = yes
+			has_building = bugaisha_mines_03
+		}
+		localization_key = building_bugaisha_mines_03
+	}
+	text = { # Umoeru Mines
+		trigger = {
+			has_special_building = yes
+			has_building = bugaisha_mines_04
+		}
+		localization_key = building_bugaisha_mines_04
+	}
+
+	#####
+	text = { # Yashigi Mines
+		trigger = {
+			has_special_building = yes
+			has_building = yashigi_mines_01
+		}
+		localization_key = building_yashigi_mines_01
+	}
+	text = { # Yashigi Mines
+		trigger = {
+			has_special_building = yes
+			has_building = yashigi_mines_02
+		}
+		localization_key = building_yashigi_mines_02
+	}
+	text = { # Yashigi Mines
+		trigger = {
+			has_special_building = yes
+			has_building = yashigi_mines_03
+		}
+		localization_key = building_yashigi_mines_03
+	}
+	text = { # Yashigi Mines
+		trigger = {
+			has_special_building = yes
+			has_building = yashigi_mines_04
+		}
+		localization_key = building_yashigi_mines_04
+	}
+
+	#####
+	text = { # Village of Gold Mines
+		trigger = {
+			has_special_building = yes
+			has_building = goldenland_mines_01
+		}
+		localization_key = building_goldenland_mines_01
+	}
+	text = { # Village of Gold Mines
+		trigger = {
+			has_special_building = yes
+			has_building = goldenland_mines_02
+		}
+		localization_key = building_goldenland_mines_02
+	}
+	text = { # Village of Gold Mines
+		trigger = {
+			has_special_building = yes
+			has_building = goldenland_mines_03
+		}
+		localization_key = building_goldenland_mines_03
+	}
+	text = { # Village of Gold Mines
+		trigger = {
+			has_special_building = yes
+			has_building = goldenland_mines_04
+		}
+		localization_key = building_goldenland_mines_04
+	}
+
 }
