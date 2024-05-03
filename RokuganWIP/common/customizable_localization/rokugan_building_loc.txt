@@ -3,6 +3,63 @@
 GetSpecialBuildingNameFromProvince = { 
 	type = province
 
+	##########
+	# Special Buildings
+	##########
+
+	text = { # Pale Aok palace
+		trigger = {
+			has_special_building = yes
+			has_building = pale_oak_palace_01
+		}
+		localization_key = building_pale_oak_palace_01
+	}
+
+	text = { # Gisei Toshi
+	trigger = {
+		has_special_building = yes
+		has_building = gisei_toshi_01
+	}
+	localization_key = building_gisei_toshi_01
+	}
+ 
+	##########
+	# Trade
+	##########
+
+	#####
+	text = { # Ryoko Owari Opium Ring
+		trigger = {
+			has_special_building = yes
+			has_building = ryoko_owari_opium_ring_01
+		}
+		localization_key = building_ryoko_owari_opium_ring_01
+	}
+	text = { # Ryoko Owari Opium Ring
+		trigger = {
+			has_special_building = yes
+			has_building = ryoko_owari_opium_ring_02
+		}
+		localization_key = building_ryoko_owari_opium_ring_02
+	}
+	text = { # Ryoko Owari Opium Ring
+		trigger = {
+			has_special_building = yes
+			has_building = ryoko_owari_opium_ring_03
+		}
+		localization_key = building_ryoko_owari_opium_ring_03
+	}
+	text = { # Ryoko Owari Opium Ring
+		trigger = {
+			has_special_building = yes
+			has_building = ryoko_owari_opium_ring_04
+		}
+		localization_key = building_ryoko_owari_opium_ring_04
+	}
+
+	##########
+	# Mines
+	##########
 	text = { # Maisuna Mines
 		trigger = {
 			has_special_building = yes

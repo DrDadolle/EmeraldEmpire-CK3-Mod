@@ -1,0 +1,297 @@
+﻿##########
+# Universities
+##########
+
+generic_university = {
+	construction_time = very_slow_construction_time
+	effect_desc = {
+		desc = unlocks_building_desc
+		triggered_desc = {
+			trigger = { has_dlc_feature = tours_and_tournaments }
+			desc = university_toto_effect_desc
+		}
+		triggered_desc = {
+			trigger = { has_dlc_feature = royal_court }
+			desc = university_roco_effect_desc
+		}
+		desc = university_effect_desc
+	}
+	flag = fully_upgraded #TODO
+
+	type_icon = "icon_building_university.dds"
+	
+	can_construct_potential = {
+		# building_requirement_tribal = no #TODO
+		# building_university_requirement = yes
+	}
+	
+	can_construct = {
+		always = no #TODO
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		learning_per_prestige_level = 1
+		monthly_lifestyle_xp_gain_mult = 0.1
+		cultural_head_fascination_mult = 0.05
+		monthly_dynasty_prestige = 0.25
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+}
+##########
+# Pale Oak Palace
+##########
+
+pale_oak_palace_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_palace_of_achen.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+		diplomacy_per_piety_level = 1
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth = 0.15
+		development_growth_factor = 0.25
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_diplomatic
+}
+
+##########
+# Gisei Toshi
+##########
+
+gisei_toshi_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_grand_library_of_baghdad.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		learning_per_prestige_level = 2
+		monthly_lifestyle_xp_gain_mult = 0.10
+		cultural_head_fascination_mult = 0.10
+		faith_creation_piety_cost_mult = -0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_diplomatic
+}
+
+##########
+# Ryoko Owari Opium Ring
+##########
+
+ryoko_owari_opium_ring_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_doges_palace.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		intrigue = 1
+	}
+
+	province_modifier = {
+		monthly_income = 4
+		travel_danger = 10
+	}
+	county_modifier = {
+		development_growth = 0.2
+		development_growth_factor = 0.25
+		monthly_county_control_growth_add = -2
+	}
+	
+	next_building = ryoko_owari_opium_ring_02
+
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	#TODO intrigue ?
+	flag = travel_point_of_interest_stewardship
+}
+
+ryoko_owari_opium_ring_02 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_doges_palace.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+	cost_gold = 2000
+
+	character_modifier = {
+		intrigue = 2
+	}
+
+	province_modifier = {
+		monthly_income = 8
+		travel_danger = 20
+	}
+	county_modifier = {
+		development_growth = 0.4
+		development_growth_factor = 0.5
+		monthly_county_control_growth_add = -4
+	}
+	
+	next_building = ryoko_owari_opium_ring_03
+
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	#TODO intrigue ?
+	flag = travel_point_of_interest_stewardship
+}
+
+ryoko_owari_opium_ring_03 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_doges_palace.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		intrigue = 3
+	}
+
+	province_modifier = {
+		monthly_income = 12
+		travel_danger = 30
+	}
+	county_modifier = {
+		development_growth = 0.6
+		development_growth_factor = 0.75
+		monthly_county_control_growth_add = -6
+	}
+	
+	next_building = ryoko_owari_opium_ring_04
+
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	#TODO intrigue ?
+	flag = travel_point_of_interest_stewardship
+}
+
+ryoko_owari_opium_ring_04 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_doges_palace.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+	cost_gold = 4000
+
+	character_modifier = {
+		intrigue = 4
+	}
+
+	province_modifier = {
+		monthly_income = 16
+		travel_danger = 40
+	}
+	county_modifier = {
+		development_growth = 0.8
+		development_growth_factor = 1.0
+		monthly_county_control_growth_add = -8
+	}
+
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	#TODO intrigue ?
+	flag = travel_point_of_interest_stewardship
+}

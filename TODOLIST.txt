@@ -70,28 +70,21 @@ found_empire_decision)
 - Prevent imperial family from doing wars against other clans...? Only for AI ?
 - Blood feud (like Matsu vs Kakita)	
 - special buildings
-	- Gisei Toshi
-	- Pale Oak Castle tree
+	- Gisei Toshi TODO
+	- Pale Oak Castle tree DONE
 	- Hall of Ancestors Lion
 	- Kyuden Hida special castle
 		- For all Clan Champion Castle as well ? + Otosan Uchi
 	- Kaiu Wall (cf great wall of chine)
-	- Ryoko Owari opium trade
+	- Ryoko Owari opium trade DONE
 	- Sunda Mizu Mura trade 
 	- Beiden pass trade ?
 	- Silk/Spice trade port Mantis/Tortoise
-	- Traitor's Trove
 	- Turo Kojiri trade
+	- Traitor's Trove
 	- Tsuma Topaz building
-	- Steel crane forge (c_takuetsu_province  b_kyuden_kakita )
 	- Mines
-		- iron
-		- Jade
-		- Gold
-		- Crystal
-		- Obsidian
 		IN 
-		TODO : add special mesh !
 			- Twilight Mountains (c_hokufuu_province b_maisuna_shiro ) / Iron  DONE
 			- Twilight Mountains (c_ishibei_province b_shiro_kakeguchi) / Iron DONE
 			- Wall above ocean mountains (c_juuin_province b_higashiyama_mura) / Jade DONE
@@ -104,7 +97,7 @@ found_empire_decision)
 			- c_chuuou_province b_aitate_toshi / Silver mine DONE
 			- c_kirin_province b_shiro_gisu / Silver mine DONE
 			- c_kakushikoto_province b_nihai_tower / Iron DONE
-						- (c_fukitsu_province b_nagamori_mura / Iron => Not Added by choice))
+						- (c_fukitsu_province b_nagamori_mura / Iron => NOT Added by choice))
 			- c_ujidera_province b_shinden_horiuchi / Iron  DONE
 			- c_bugaisha_province b_shiro_bugaisha / Diamond open pit DONE
 			- c_tsuriai_province b_yashigi_village / jade DONE

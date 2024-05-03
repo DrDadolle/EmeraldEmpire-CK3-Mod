@@ -209,6 +209,10 @@
 	religion = seven_fortunes
 	holding = castle_holding
 
+	700.1.1 = { # Built by Hantei XVII
+		special_building = pale_oak_palace_01
+	}
+
 	1123.1.1={
 		buildings = {
 			castle_03
@@ -237,6 +241,7 @@
 	culture = isawa
 	religion = seven_fortunes
 	holding = castle_holding
+	special_building = gisei_toshi_01
 
 	1123.1.1={
 		buildings = {

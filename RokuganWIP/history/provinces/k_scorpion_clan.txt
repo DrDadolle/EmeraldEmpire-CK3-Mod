@@ -166,6 +166,16 @@
 	culture = shosuro
 	religion = seven_fortunes
 	holding = castle_holding
+	special_building_slot = ryoko_owari_opium_ring_01
+
+	400.1.1 = {
+		special_building = ryoko_owari_opium_ring_01
+	}
+
+
+	1100.1.1 = {
+		special_building = ryoko_owari_opium_ring_02
+	}
 
 	1123.1.1={
 		buildings = {
