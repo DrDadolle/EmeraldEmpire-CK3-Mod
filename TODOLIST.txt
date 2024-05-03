@@ -24,11 +24,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## short term goals 
 - Check that mines works
-	- check  how mines are done in vanilla
-	- It kinda works but no bonus to holder ! Go the vanilla way ?
-	- Change the building file from "rokugan special mines" to "00_special_mines" from vanilla.
-	- Check if it works without special building map object data ?
 	- Add mines mesh and/or special building map object data
+	- Finish to add all of them (cool when on site)
 - move some map object data
 	- Musume mura : move the playstack map object to the mid-island
 	- Shiro Kosaten : move to the right the player stacck
@@ -97,15 +94,16 @@ found_empire_decision)
 		- Crystal
 		- Obsidian
 		IN 
-			- Twilight Mountains (c_hokufuu_province b_maisuna_shiro ) / Iron 
-			- Twilight Mountains (c_ishibei_province b_shiro_kakeguchi) / Iron
-			- Wall above ocean mountains (c_juuin_province b_nishiyama_mura) / Jade
-			- Kuni Lands (c_midakai_province b_high_tree_village) / Iron
-			- Hills Daidoji (c_umoeru_province b_umoeru_mura) / Coal (keep it ?Iron ?)
-			- c_yakeishi_province b_tetsu_kama_mura / Iron
-			- Serpent's Tail Mine (c_sabishii_province_dragon b_yamasura) / Gold & Iron
-			- c_shaiga_province b_shaiga / Gold
-			- c_mihari_province b_orange_flame_village / Stuff to make fireworks
+		TODO : add special mesh !
+			- Twilight Mountains (c_hokufuu_province b_maisuna_shiro ) / Iron  DONE
+			- Twilight Mountains (c_ishibei_province b_shiro_kakeguchi) / Iron DONE
+			- Wall above ocean mountains (c_juuin_province b_nishiyama_mura) / Jade DONE
+			- Kuni Lands (c_midakai_province b_high_tree_village) / Iron DONE
+			- Hills Daidoji (c_umoeru_province b_umoeru_mura) / Coal (keep it ?Iron ?) DONE
+			- c_yakeishi_province b_tetsu_kama_mura / Iron DONE
+			- Serpent's Tail Mine (c_sabishii_province_dragon b_yamasura) / Gold & Iron DONE
+			- c_shaiga_province b_shaiga / Gold DONE DONE
+			- c_mihari_province b_orange_flame_village / Stuff to make fireworks DONE
 			- c_chuuou_province b_aitate_toshi / Silver mine
 			- c_kirin_province b_shiro_gisu / Silver mine
 			- c_kakushikoto_province b_nihai_tower / Iron

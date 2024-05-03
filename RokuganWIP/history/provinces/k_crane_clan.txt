@@ -16,12 +16,6 @@
 	culture = asahina
 	religion = seven_fortunes
 	holding = city_holding
-	867.1.1 = {
-		special_building_slot = iwami_silver_mines_01
-	}
-	968.1.1 = {
-		special_building = iwami_silver_mines_01
-	}
 }
 5 = {		#b_shiro_hanamidoki
 	culture = asahina
@@ -183,6 +177,7 @@
 	culture = doji
 	religion = seven_fortunes
 	holding = castle_holding
+	special_building = umoeru_mines_01
 
 	1123.1.1={
 		buildings = {

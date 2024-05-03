@@ -145,6 +145,11 @@
 	culture = tsuruchi
 	religion = seven_fortunes
 	holding = castle_holding
+	special_building_slot = shaiga_mines_01
+
+	1000.1.1 = {
+		special_building = shaiga_mines_01
+	}
 
 	1123.1.1={
 		buildings = {

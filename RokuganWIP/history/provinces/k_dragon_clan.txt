@@ -81,6 +81,7 @@
 	culture = mirumoto
 	religion = shinseism
 	holding = city_holding
+	special_building = tetsukama_mines_01
 }
 ###c_toshibu_province
 296 = {		#b_shiro_mirumoto
@@ -162,6 +163,7 @@
 	culture = agasha
 	religion = shinseism
 	holding = castle_holding
+	special_building = serpentTail_mines_01
 
 	1123.1.1={
 		buildings = {

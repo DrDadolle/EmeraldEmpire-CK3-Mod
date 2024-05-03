@@ -68,6 +68,7 @@
 	culture = hida
 	religion = cult_ancestors
 	holding = castle_holding
+	special_building = kakeguchi_mines_01
 
 	1123.1.1={
 		buildings = {
@@ -124,6 +125,7 @@
 	culture = hida
 	religion = cult_ancestors
 	holding = castle_holding
+	special_building = higashiyama_mines_01
 
 	1123.1.1={
 		buildings = {
@@ -212,6 +214,7 @@
 	culture = kuni
 	religion = seven_fortunes
 	holding = castle_holding
+	special_building = high_tree_mines_01
 
 	1123.1.1={
 		buildings = {
@@ -266,10 +269,11 @@
 	holding = city_holding
 }
 ###c_hokufuu_province
-201 = {		#b_face_east_castle
+201 = {		# b_maisuna_shiro
 	culture = kaiu
 	religion = cult_ancestors
 	holding = castle_holding
+	special_building = maisuna_mines_01
 
 	1123.1.1={
 		buildings = {
@@ -277,10 +281,11 @@
 		}
 	}
 }
-202 = {		#b_maisuna_shiro
+202 = {		#b_face_east_castle
 	culture = kaiu
 	religion = cult_ancestors
 	holding = castle_holding
+
 
 	1123.1.1={
 		buildings = {
