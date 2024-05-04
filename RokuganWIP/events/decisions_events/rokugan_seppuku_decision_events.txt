@@ -3,6 +3,7 @@
 # Commit seppuku by decision
 rokugan_seppuku_decision_event.0001 = {
 	type = character_event
+	content_source = l5r_dlc
 	title = rokugan_seppuku_decision.0001.t
 	desc = {
 		first_valid = {
