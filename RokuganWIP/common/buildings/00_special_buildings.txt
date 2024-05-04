@@ -154,7 +154,7 @@ ryoko_owari_opium_ring_01 = {
 		tax_mult = 0.2
 		development_growth = 0.2
 		development_growth_factor = 0.25
-		monthly_county_control_growth_add = -1
+		monthly_county_control_growth_add = -0.5
 	}
 	
 	next_building = ryoko_owari_opium_ring_02
@@ -197,7 +197,7 @@ ryoko_owari_opium_ring_02 = {
 		tax_mult = 0.3
 		development_growth = 0.3
 		development_growth_factor = 0.3
-		monthly_county_control_growth_add = -2
+		monthly_county_control_growth_add = -1
 	}
 	
 	next_building = ryoko_owari_opium_ring_03
@@ -240,7 +240,7 @@ ryoko_owari_opium_ring_03 = {
 		tax_mult = 0.4
 		development_growth = 0.4
 		development_growth_factor = 0.35
-		monthly_county_control_growth_add = -3
+		monthly_county_control_growth_add = -1.5
 	}
 	
 	next_building = ryoko_owari_opium_ring_04
@@ -283,7 +283,7 @@ ryoko_owari_opium_ring_04 = {
 		tax_mult = 0.5
 		development_growth = 0.5
 		development_growth_factor = 0.4
-		monthly_county_control_growth_add = -4
+		monthly_county_control_growth_add = -2
 	}
 
 	ai_value = {
