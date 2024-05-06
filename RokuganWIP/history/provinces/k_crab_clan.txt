@@ -33,12 +33,23 @@
 	culture = yasuki
 	religion = seven_fortunes
 	holding = castle_holding
+	special_building_slot = sunda_mizu_mura_trade_port_01
+
+	400.1.1 = {
+		special_building = sunda_mizu_mura_trade_port_01
+	}
+
+
+	1100.1.1 = {
+		special_building = sunda_mizu_mura_trade_port_02
+	}
 
 	1123.1.1={
 		buildings = {
 			castle_03
 		}
 	}
+
 
 }
 179 = {		#b_fundai_village

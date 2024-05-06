@@ -1,5 +1,5 @@
 ﻿l_english:
-##################
+ ##################
  ##### Special Building
  ##################
  building_type_pale_oak_palace_01:0 "Pale Oak Palace"
@@ -12,6 +12,10 @@
  building_gisei_toshi_01:0 "$building_type_gisei_toshi_01$"
  building_gisei_toshi_01_desc:0 "$building_gisei_toshi_01_desc$"
 
+ ##################
+ ##### Opium Trade & Trade Port
+ ##################
+
  building_type_ryoko_owari_opium_ring_01:0 "Opium Ring"
  building_type_ryoko_owari_opium_ring_01_desc:0 "Ryoko Owari Toshi had a well-earned reputation as a den of vice: it was the center of the Empire's necessary poppy trade, was home to many criminal organizations, had a corrupt city government, and was all but run by gangs of firefighters who battled for territory throughout the city's six districts. Influence there was divided among wealthy merchants, Scorpion Clan nobles, and the more noteworthy commoners, resulting in an uneasy equality that many samurai regarded as chaotic. Yet this chaos was deemed a necessary evil by the city's Scorpion lords, as Journey's End City was not only the Empire's primary source of opium—one of the few effective painkillers available and an important medication when used responsibly—but also an important cover for more clandestine operations."
  building_ryoko_owari_opium_ring_01:0 "Small Opium Ring"
@@ -22,6 +26,29 @@
  building_ryoko_owari_opium_ring_03_desc:0 "building_ryoko_owari_opium_ring_03_desc"
  building_ryoko_owari_opium_ring_04:0 "Massive Opium Black Market"
  building_ryoko_owari_opium_ring_04_desc:0 "building_ryoko_owari_opium_ring_04_desc"
+
+ building_type_sunda_mizu_mura_trade_port_01:0 "Pearl Trade Port"
+ building_type_sunda_mizu_mura_trade_port_01_desc:0 "Clear Water Village's trading routes were vital to the continued operation of the Crab Clan. The martime trade from the port out to sea, or along the River of Gold, brought much needed resources to the maintenance and operation of a clan at war with the Shadowlands. Clear Water Village would export huge amounts of goods to the other clans, most notably ink, pearls, mother of pearls and snails."
+ building_sunda_mizu_mura_trade_port_01:0 "Small Pearl Trade Port"
+ building_sunda_mizu_mura_trade_port_01_desc:0 "building_sunda_mizu_mura_trade_port_01_desc"
+ building_sunda_mizu_mura_trade_port_02:0 "Pearl Trade Port"
+ building_sunda_mizu_mura_trade_port_02_desc:0 "building_sunda_mizu_mura_trade_port_02_desc"
+ building_sunda_mizu_mura_trade_port_03:0 "Large Pearl Trade Port"
+ building_sunda_mizu_mura_trade_port_03_desc:0 "building_sunda_mizu_mura_trade_port_03_desc"
+ building_sunda_mizu_mura_trade_port_04:0 "Massive Pearl Trade Port"
+ building_sunda_mizu_mura_trade_port_04_desc:0 "building_sunda_mizu_mura_trade_port_04_desc"
+
+
+ building_type_spice_and_silk_trade_port_01:0 "Spice and Silk Trade Port"
+ building_type_spice_and_silk_trade_port_01_desc:0 "The Islands of Spice and Silk were the home of the Mantis Clan, and named for their two chief exports, spices and silk."
+ building_spice_and_silk_trade_port_01:0 "Small Spice and Silk Trade Port"
+ building_spice_and_silk_trade_port_01_desc:0 "building_spice_and_silk_trade_port_01_desc"
+ building_spice_and_silk_trade_port_02:0 "Spice and Silk Trade Port"
+ building_spice_and_silk_trade_port_02_desc:0 "building_spice_and_silk_trade_port_02_desc"
+ building_spice_and_silk_trade_port_03:0 "Large Spice and Silk Trade Port"
+ building_spice_and_silk_trade_port_03_desc:0 "building_spice_and_silk_trade_port_03_desc"
+ building_spice_and_silk_trade_port_04:0 "Massive Spice and Silk Trade Port"
+ building_spice_and_silk_trade_port_04_desc:0 "building_spice_and_silk_trade_port_04_desc"
 
  ##################
  ##### Mines
