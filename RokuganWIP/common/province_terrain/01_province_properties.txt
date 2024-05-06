@@ -418,6 +418,9 @@
 105 = { # b_shrine_of_the_kirin 
 	winter_severity_bias = @severe_winter
 }
+469 = { # gisu Empty
+	winter_severity_bias = @severe_winter
+}
 ### d_shiba 
 ## c_haimaato_province 
 106 = { # b_shiro_haimaato 
@@ -948,6 +951,9 @@
 246 = { # b_kuroshin_shrine 
 	winter_severity_bias = @normal_winter
 }
+470 = { # b_kuroshin_shrine 
+	winter_severity_bias = @normal_winter
+}
 ## c_aishou_province
 247 = { # b_oshindoka_toshi 
 	winter_severity_bias = @normal_winter
@@ -975,7 +981,9 @@
 254 = { # b_mountain_watch_tower 
 	winter_severity_bias = @cold_winter
 }
-
+471 = { # b_mountain_watch_empty_delta
+	winter_severity_bias = @normal_winter
+}
 ### d_suzume 
 ## c_suzume_province 
 255 = { # b_kyuden_suzume 
@@ -1344,9 +1352,5 @@
 }
 ## Impassible terrains 
 463 = { # spine of the world mountains
-	winter_severity_bias = @severe_winter
-}
-## Impassible terrains 
-466 = { # Asako mountains
 	winter_severity_bias = @severe_winter
 }

@@ -346,6 +346,11 @@
 	religion = seven_fortunes
 	holding = church_holding
 }
+470 = {		#b_kuroshin_empty
+	culture = shinjo
+	religion = seven_fortunes
+	holding = none
+}
 ###c_aishou_province
 247 = {		#b_oshindoka_toshi
 	culture = shinjo
@@ -418,6 +423,11 @@
 			castle_01
 		}
 	}
+}
+471 = {		#b_mountain_watch_empty_delta
+	culture = shinjo
+	religion = seven_fortunes
+	holding = none
 }
 #castle_holding
 #church_holding

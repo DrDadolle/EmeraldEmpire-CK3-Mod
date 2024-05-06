@@ -23,18 +23,14 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - innovation (special culture ones) and shared ones. Re-localization of some
 
 ## short term goals 
-- Add river map
-
-- Rework provinces 
-	- cut pale oak in 2 (forest), same for asahina seido & gisei toshi
-	- cut kuroshin_shrine in 2 (weird west unicorn thingy)
-- better baronies shapes (crane clan, lion clan, scorpion clan)
-- Paint the map with materials
+- Abdication and become monk (à la RoA)
+- Ponder the 3 teachings...??? (à la RoA)
+- Add demand seppuku character interaction ? (and made by liege too)
 - Add bridge mesh map objects
 - add missing baronies localization
 - Fix the bookmarks, so Doji is not naked, and it looks better
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
-- fix river heightmap (using gimp I guess)
+- Add river map (more ?)
 
 ## Fixes to do
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
@@ -49,10 +45,6 @@ found_empire_decision)
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?
 - Test "Trial-by-Combat" works even without the DLC
-- Check the great walls (à la AEP ?)
-- Abdication and become monk (à la RoA)
-- Ponder the 3 teachings...??? (à la RoA)
-- Add demand seppuku character interaction ? (and made by liege too)
 - Becoming Minor or Major Clan IS a special decision which requires the Emperor acknowledgement.
 	- Adaptation of the decision "create custom kingdom" but for duchy ?
 	- Adaptation of the decision "create custom kingdom" (found_kingdom_decision & found_empire_decision from 80_major_decisions.txt)

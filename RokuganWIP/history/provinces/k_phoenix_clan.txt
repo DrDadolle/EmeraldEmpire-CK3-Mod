@@ -111,6 +111,12 @@
 	religion = seven_fortunes
 	holding = church_holding
 }
+
+469 = {		#b_gisu_empty
+	culture = asako
+	religion = seven_fortunes
+	holding = none
+}
 ##d_shiba ###################################
 ###c_haimaato_province
 106 = {		#b_shiro_haimaato

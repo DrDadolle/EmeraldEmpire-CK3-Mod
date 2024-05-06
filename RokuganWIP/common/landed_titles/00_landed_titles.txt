@@ -588,6 +588,9 @@ e_rokugan = {
 				 b_shrine_of_the_kirin = {
                      province = 105
                  }
+                 b_gisu_empty = {
+                     province = 469
+                 }
             }
 		}
 		d_shiba = {
@@ -1406,6 +1409,9 @@ e_rokugan = {
                 b_mountain_watch_tower = {
                     province = 254
                }
+               b_mountain_watch_empty_delta = {
+                    province = 471
+               }
            }
 			
 			c_bugaisha_province = {
@@ -1416,6 +1422,9 @@ e_rokugan = {
                  }
 				 b_kuroshin_shrine = {
                      province = 246
+                 }
+                 b_kuroshin_empty = {
+                     province = 470
                  }
 			}
 			c_aishou_province = {
