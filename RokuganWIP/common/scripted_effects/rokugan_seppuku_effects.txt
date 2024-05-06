@@ -1,23 +1,94 @@
-﻿seppuku_effect = {
+﻿#Used for all seppukus
+seppuku_effect = {
 
-	$VICTIM$ = {
-		save_scope_as = victim
-	}
-
-	show_as_tooltip = {
-		$VICTIM$ = {
-			death = {
-				death_reason = death_seppuku
+	if = {
+		every_courtier = {
+			limit = {
+				NOT = { is_in_list = supporters }
+				exists = location
+				location = root.location
+				is_imprisoned = no
+				is_capable_adult = yes
+				exists = dynasty
+				culture = { has_cultural_tradition = tradition_bushido }
+			}
+			add_to_list = supporters
+		}
+		if = {
+			limit = {
+				list_size = {
+					name = supporters
+					value >= 1
+				}
+			}
+			ordered_in_list = {
+				list = supporters
+				order_by = {
+					add = calc_rough_root_opinion_value
+				}
+				position = 0
+				save_scope_as = supporter1
 			}
 		}
 	}
 
-	#If you have the Human Sacrifice tenet, give victim an appropriate death reason
-	hidden_effect = {
-		$VICTIM$ = {
-			death = {
-				death_reason = death_seppuku
+	if = {
+		limit = {
+			list_size = {
+				name = supporters
+				value = 0
+			}
+		}
+
+		dynasty ?= {
+			add_dynasty_prestige = minor_dynasty_prestige_gain
+		}
+		death = {
+			death_reason = death_seppuku
+		}
+
+		root = {
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_demanded_seppuku
+					right_icon = root
+					custom_tooltip = msg_demanded_seppuku_desc
+				}
+			}
+		}
+
+	}
+
+	if = {
+		name = rokugan_seppuku_decision.0002.a1
+
+		limit = {
+			list_size = {
+				name = supporters
+				value >= 1
+			}
+		}
+
+		dynasty ?= {
+			add_dynasty_prestige = minor_dynasty_prestige_gain
+		}
+		death = {
+			death_reason = death_seppuku
+			killer = scope:supporter1
+		}
+
+		root = {
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_demanded_seppuku
+					right_icon = root
+					custom_tooltip = msg_demanded_seppuku_desc
+				}
 			}
 		}
 	}
 }
+
+

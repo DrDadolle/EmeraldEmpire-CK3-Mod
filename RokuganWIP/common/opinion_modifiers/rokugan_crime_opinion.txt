@@ -1,0 +1,20 @@
+﻿seppuku_demand_opinion = {
+	opinion = -40
+	years = 15
+	decaying = yes
+	has_seppuku_reason = yes
+}
+
+attempted_seppuku_demand_opinion = {
+	opinion = -30
+	years = 15
+	decaying = yes
+}
+
+treasonous_seppuku_refusal = {
+	opinion = -20
+	years = 10
+	imprisonment_reason = yes
+	seppuku_reason = yes
+	revoke_title_reason = yes
+}

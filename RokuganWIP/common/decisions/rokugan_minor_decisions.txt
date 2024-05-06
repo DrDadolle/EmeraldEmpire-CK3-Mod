@@ -13,7 +13,6 @@ commit_seppuku_decision = {
 	is_shown = {
 		is_landed = yes
 		is_adult = yes
-		is_ruler = yes
 		#Dishonored
 		prestige_level = 0
 		#Can seppuku
@@ -35,6 +34,11 @@ commit_seppuku_decision = {
 		modifier = {
 			add = 20
 			has_trait = brave
+		}
+
+		modifier = {
+			add = 50
+			ai_honor >= 25
 		}
 
 		modifier = {

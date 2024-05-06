@@ -1,0 +1,5 @@
+﻿allowed_to_ask_for_seppuku_character_trigger = {
+	# We separate these out so that diarchs can imprison characters they aren't liege over.
+	advanced_allowed_to_imprison_character_trigger = { CHARACTER = $CHARACTER$ }
+	basic_allowed_to_imprison_character_trigger = { CHARACTER = $CHARACTER$ }
+}
