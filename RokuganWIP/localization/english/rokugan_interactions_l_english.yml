@@ -1,0 +1,13 @@
+﻿l_english:
+  IS_ALLOWED_TO_DEMAND_SEPPUKU_DESC:4 "[Select_CString( recipient.IsLocalPlayer, 'You', recipient.GetShortUIName )] [Select_CString( recipient.IsLocalPlayer, 'are', 'is' )] a known [criminal|E] #weak ([recipient.GetImprisonmentReasons( actor.Self )])#!, allowing [imprisoner.GetShortUIName] to demand seppuku [Select_CString( recipient.IsLocalPlayer, 'you', recipient.GetHerHim )] without being viewed as a [tyrant|E]"
+ HIGHLIGHTED_HAS_SEPPUKU_REASON:2 "Highlighted because you have a valid reason to demand seppuku to [recipient.GetShortUIName]."
+ seppuku_interaction:0 "Demand Seppuku"
+ seppuku_interaction_desc:0 "Attempt to demand [seppuku|E] to [recipient.GetShortUINameNoTooltip]"
+ seppuku_interaction_extra_icon:0 "$hook_extra_icon$"
+ seppuku_decline_summary:1 "[recipient.Custom('SeppukuCharacterDeclineSummary')]"
+ seppuku_decline_summary_war:0 "@warning_icon! #X If you fail to demand seppuku [ROOT.Char.GetShortUINameNoTooltip] [ROOT.Char.GetSheHe] will rise up in rebellion with other disgruntled [vassals|E]!#!"
+ seppuku_decline_summary_no_war:0 "@warning_icon! #X If you fail to demand seppuku [ROOT.Char.GetShortUINameNoTooltip] [ROOT.Char.GetSheHe] will leave [ROOT.Char.GetLiege.GetShortUINamePossessiveNoTooltip] court!#!"
+ seppuku_decline_summary_no_war_your_courtier:0 "@warning_icon! #X If you fail to demand seppuku [ROOT.Char.GetShortUINameNoTooltip] [ROOT.Char.GetSheHe] will leave your court!#!"
+ seppuku_decline_summary_no_court:0 "@warning_icon! #X If you fail to demand seppuku [ROOT.Char.GetShortUINameNoTooltip] [ROOT.Char.GetSheHe] will leave to become a wanderer!#!"
+ seppuku_decline_summary_cannot_fire_court_chaplain:0 "@warning_icon! #X If you fail to demand seppuku [ROOT.Char.GetShortUINameNoTooltip] [ROOT.Char.GetSheHe] will still be [ROOT.Char.GetLiege.GetShortUINamePossessiveNoTooltip] [ROOT.Char.GetCouncilTitle]!#!"
+ seppuku_decline_summary_cannot_fire_HoF:0 "@warning_icon! #X Even if you demand seppuku [ROOT.Char.GetShortUINameNoTooltip] [ROOT.Char.GetSheHe] will still be the [ROOT.Char.GetTitleAsNameNoTooltip]!#!"

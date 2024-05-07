@@ -1,5 +1,8 @@
 ﻿l_english:
+ # Rokugan Common
+ language_rokugani_name:0 "Rokugani"
  #Crab
+ heritage_crab_name:0 "Crab"
  yasuki:0 "Yasuki"
  yasuki_collective_noun:0 "Yasuki"
  yasuki_prefix:0 "Yasuki"
@@ -26,6 +29,8 @@
  kaiu_desc:0 "#size:15    todo some blabla about the kaiu culture.#"
 
  #Crane
+ culture_parameter_white_hair_valued:0 "[traits|E] such as [GetTrait('natural_white_hair').GetName( GetNullCharacter )] or [GetTrait('bleached_white_hair').GetName( GetNullCharacter )] are seen as [prestige_i][prestigious|E]"
+ heritage_crane_name:0 "Crane"
  doji:0 "Doji"
  doji_collective_noun:0 "Doji"
  doji_prefix:0 "Doji"
@@ -47,6 +52,7 @@
  asahina_desc:0 "#size:15    todo some blabla about the asahina culture.#"
 
  #Lion
+ heritage_lion_name:0 "Lion"
  akodo:0 "Akodo"
  akodo_collective_noun:0 "Akodo"
  akodo_prefix:0 "Akodo"
@@ -68,6 +74,7 @@
  ikoma_desc:0 "#size:15    todo some blabla about the ikoma culture.#"
 
  #Phoenix
+ heritage_phoenix_name:0 "Phoenix"
  shiba:0 "Shiba"
  shiba_collective_noun:0 "Shiba"
  shiba_prefix:0 "Shiba"
@@ -89,6 +96,7 @@
  kaito_desc:0 "#size:15    todo some blabla about the kaito culture.#"
 
  #Scorpion
+ heritage_scorpion_name:0 "Scorpion"
  bayushi:0 "Bayushi"
  bayushi_collective_noun:0 "Bayushi"
  bayushi_prefix:0 "Bayushi"
@@ -110,6 +118,7 @@
  yogo_desc:0 "#size:15    todo some blabla about the yogo culture.#"
 
  #Dragon
+ heritage_dragon_name:0 "Dragon"
  togashi:0 "Togashi"
  togashi_collective_noun:0 "Togashi"
  togashi_prefix:0 "Togashi"
@@ -131,6 +140,7 @@
  agasha_desc:0 "#size:15    todo some blabla about the agasha culture.#"
 
  #Unicorn
+ heritage_unicorn_name:0 "Unicorn"
  shinjo:0 "Shinjo"
  shinjo_collective_noun:0 "Shinjo"
  shinjo_prefix:0 "Shinjo"
@@ -157,6 +167,7 @@
  moto_desc:0 "#size:15    todo some blabla about the moto culture.#"
 
  #Imperial
+ heritage_imperial_name:0 "Imperial"
  hantei:0 "Hantei"
  hantei_collective_noun:0 "Hantei"
  hantei_prefix:0 "Hantei"
@@ -178,86 +189,103 @@
  seppun_desc:0 "#size:15    todo some blabla about the seppun culture.#"
 
  #Minor
+ heritage_fox_name:0 "Fox"
  kitsune:0 "Kitsune"
  kitsune_collective_noun:0 "Kitsune"
  kitsune_prefix:0 "Kitsune"
  kitsune_desc:0 "#size:15    todo some blabla about the kitsu culture.#"
 
+ heritage_centipede_name:0 "Centipede"
  moshi:0 "Moshi"
  moshi_collective_noun:0 "Moshi"
  moshi_prefix:0 "Moshi"
  moshi_desc:0 "#size:15    todo some blabla about the moshi culture.#"
 
+ heritage_tortoise_name:0 "Tortoise"
  kasuga:0 "Kasuga"
  kasuga_collective_noun:0 "Kasuga"
  kasuga_prefix:0 "Kasuga"
  kasuga_desc:0 "#size:15    todo some blabla about the kasuga culture.#"
 
+ heritage_dragonfly_name:0 "Dragonfly"
  tonbo:0 "Tonbo"
  tonbo_collective_noun:0 "Tonbo"
  tonbo_prefix:0 "Tonbo"
  tonbo_desc:0 "#size:15    todo some blabla about the tonbo culture.#"
 
+ heritage_falcon_name:0 "Falcon"
  toritaka:0 "Toritaka"
  toritaka_collective_noun:0 "Toritaka"
  toritaka_prefix:0 "Toritaka"
  toritaka_desc:0 "#size:15    todo some blabla about the toritaka culture.#"
 
+ heritage_hare_name:0 "Hare"
  usagi:0 "Usagi"
  usagi_collective_noun:0 "Usagi"
  usagi_prefix:0 "Usagi"
  usagi_desc:0 "#size:15    todo some blabla about the usagi culture.#"
 
+ heritage_mantis_name:0 "Mantis"
  yoritomo:0 "Yoritomo"
  yoritomo_collective_noun:0 "Yoritomo"
  yoritomo_prefix:0 "Yoritomo"
  yoritomo_desc:0 "#size:15    todo some blabla about the yoritomo culture.#"
 
+ heritage_wasp_name:0 "Wasp"
  tsuruchi:0 "Tsuruchi"
  tsuruchi_collective_noun:0 "Tsuruchi"
  tsuruchi_prefix:0 "Tsuruchi"
  tsuruchi_desc:0 "#size:15    todo some blabla about the tsuruchi culture.#"
 
+ heritage_sparrow_name:0 "Sparrow"
  suzume:0 "Suzume"
  suzume_collective_noun:0 "Suzume"
  suzume_prefix:0 "Suzume"
  suzume_desc:0 "#size:15    todo some blabla about the suzume culture.#"
 
+ heritage_badger_name:0 "Badger"
  ichiro:0 "Ichiro"
  ichiro_collective_noun:0 "Ichiro"
  ichiro_prefix:0 "Ichiro"
  ichiro_desc:0 "#size:15    todo some blabla about the ichiro culture.#"
 
+ heritage_cat_name:0 "Cat"
  nekoma:0 "Nekoma"
  nekoma_collective_noun:0 "Nekoma"
  nekoma_prefix:0 "Nekoma"
  nekoma_desc:0 "#size:15    todo some blabla about the nekoma culture.#"
 
+ heritage_bat_name:0 "Bat"
  komori:0 "Komori"
  komori_collective_noun:0 "Komori"
  komori_prefix:0 "Komori"
  komori_desc:0 "#size:15    todo some blabla about the komori culture.#"
 
+ heritage_deer_name:0 "Deer"
  shika:0 "Shika"
  shika_collective_noun:0 "Shika"
  shika_prefix:0 "Shika"
  shika_desc:0 "#size:15    todo some blabla about the shika culture.#"
 
+ heritage_moth_name:0 "Moth"
  kaikoga:0 "Kaikoga"
  kaikoga_collective_noun:0 "Kaikoga"
  kaikoga_prefix:0 "Kaikoga"
  kaikoga_desc:0 "#size:15    todo some blabla about the kaikoga culture.#"
 
+ heritage_snake_name:0 "Snake"
  chuda:0 "Chuda"
  chuda_collective_noun:0 "Chuda"
  chuda_prefix:0 "Chuda"
  chuda_desc:0 "#size:15    todo some blabla about the chuda culture.#"
 
+ heritage_bear_name:0 "Bear"
  kuma:0 "Kuma"
  kuma_collective_noun:0 "Kuma"
  kuma_prefix:0 "Kuma"
  kuma_desc:0 "#size:15    todo some blabla about the kuma culture.#"
 
+ heritage_frog_name:0 "Frog"
  kaeru:0 "Kaeru"
  kaeru_collective_noun:0 "Kaeru"
  kaeru_prefix:0 "Kaeru"

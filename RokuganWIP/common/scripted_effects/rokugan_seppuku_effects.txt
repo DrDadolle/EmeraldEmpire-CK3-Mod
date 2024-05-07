@@ -1,6 +1,5 @@
 ﻿#Used for all seppukus
 seppuku_effect = {
-
 	if = {
 		every_courtier = {
 			limit = {
@@ -91,4 +90,153 @@ seppuku_effect = {
 	}
 }
 
+demanded_seppuku_effect = {
 
+	$VICTIM$ = {
+		dynasty ?= {
+			add_dynasty_prestige = minor_dynasty_prestige_gain
+		}
+		death = {
+			death_reason = death_demanded_seppuku
+			killer = $EXECUTIONER$
+		}
+
+		root = {
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_demanded_seppuku
+					right_icon = root
+					custom_tooltip = msg_demanded_seppuku_desc
+				}
+			}
+		}
+	}
+}
+
+demand_seppuku_opinion_effect = {
+	$VICTIM$ = {
+		# Victim's family & spouse hates executioner
+		every_close_family_member = {
+			limit = { NOT = { this = $EXECUTIONER$ } }
+			add_to_temporary_list = victim_family_list
+		}
+		every_spouse = {
+			limit = {
+				NOR = {
+					this = $EXECUTIONER$
+					is_in_list = victim_family_list
+				}
+			}
+			add_to_temporary_list = victim_family_list
+		}
+		
+		if = {
+			limit = {
+				any_in_list = {
+					list = victim_family_list
+					count > 0
+				}
+			}
+			if = {
+				limit = {
+					$EXECUTIONER$ = {
+						has_imprisonment_reason = $VICTIM$
+					}
+				}
+				every_in_list = {
+					list = victim_family_list
+					custom = all_close_family_and_spouses
+					add_opinion = {
+						target = $EXECUTIONER$
+						modifier = demanded_seppuku_close_family
+					}
+				}
+			}
+			else = {
+				every_in_list = {
+					list = victim_family_list
+					custom = all_close_family_and_spouses
+					add_opinion = {
+						target = $EXECUTIONER$
+						modifier = demanded_seppuku_close_family_crime
+					}
+				}
+			}
+		}
+
+		# Victim's dynasty hates executioner
+		if = {
+			limit = {
+				exists = dynasty
+				exists = $EXECUTIONER$.dynasty
+				NOT = { dynasty = $EXECUTIONER$.dynasty }
+				NOT = {
+					$EXECUTIONER$ = {
+						has_imprisonment_reason = $VICTIM$
+					}
+				}
+			}
+			dynasty = {
+				every_dynasty_member = {
+					limit = {
+						NOR = {
+							this = $VICTIM$
+							is_in_list = victim_family_list
+						}
+					}
+					custom = all_dynasty_members
+					add_to_temporary_list = victim_dynasty_list
+					add_opinion = {
+						target = $EXECUTIONER$
+						modifier = demanded_seppuku_dynasty_member
+					}
+				}
+			}
+		}
+		
+		# Victim's friends and lovers
+		every_relation = {
+			type = friend
+			limit = {
+				NOR = {
+					this = $VICTIM$
+					is_in_list = victim_family_list
+					is_in_list = victim_dynasty_list
+				}
+			}
+			add_to_list = victim_close_relations_list
+		}
+		every_relation = {
+			type = lover
+			limit = {
+				NOR = {
+					this = $VICTIM$
+					is_in_list = victim_family_list
+					is_in_list = victim_dynasty_list
+					is_in_list = victim_close_relations_list
+				}
+			}
+			add_to_list = victim_close_relations_list
+		}
+		if = {
+			limit = {
+				any_in_list = {
+					list = victim_close_relations_list
+					always = yes
+				}
+			}
+			every_in_list = {
+				list = victim_close_relations_list
+				limit = {
+					NOT = { this = $EXECUTIONER$ }
+				}
+				custom = all_friends_and_lovers
+				add_opinion = {
+					target = $EXECUTIONER$
+					modifier = demanded_seppuku_close_relation_opinion
+				}
+			}
+		}
+	}
+}

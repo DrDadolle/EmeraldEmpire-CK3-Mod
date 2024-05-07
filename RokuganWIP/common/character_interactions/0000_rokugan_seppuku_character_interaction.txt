@@ -1,7 +1,7 @@
 seppuku_interaction = {
 	interface_priority = 120
 	common_interaction = yes
-	icon = icon_hostile
+	icon = icon_dead
 
 	category = interaction_category_hostile
 	highlighted_reason = HIGHLIGHTED_HAS_SEPPUKU_REASON
@@ -81,7 +81,7 @@ seppuku_interaction = {
 			is_imprisoned = no
 		}
 		scope:actor = {
-			has_seppuku_reason = scope:recipient
+			 has_imprisonment_reason = scope:recipient
 		}
 	}
 
@@ -119,9 +119,6 @@ seppuku_interaction = {
 
 	on_auto_accept = {
 		illegal_seppuku_demand_dread_effect = yes
-		# illegal_imprisonment_dread_effect = yes
-		# imprison_court_chaplain_consequences_effect = yes
-		# imprison_HoF_consequences_effect = yes
 		asking_seppuku_court_chaplain_consequences_effect = yes
 		asking_seppuku_HoF_consequences_effect = yes
 		scope:recipient = {
@@ -133,18 +130,25 @@ seppuku_interaction = {
 				joined_faction = { save_scope_as = retaliating_faction }
 			}
 		}
-		# scope:recipient = {
-		# 	trigger_event = rokugan_seppuku_decision_event.0001 # Reuse of that ?
-		# }
-		# Seppuku time
-		scope:recipient = {
-			seppuku_effect = yes
+
+		scope:actor = {
+			imprison_tyranny_effect = yes
+			demand_seppuku_opinion_effect = {
+				VICTIM = scope:recipient
+				EXECUTIONER = scope:actor
+			}
 		}
+
+		demanded_seppuku_effect = {
+			VICTIM = scope:recipient
+			EXECUTIONER = scope:actor
+		}
+
 		scope:actor = {
 			trigger_event = rokugan_char_interaction.0231
 			if = {
 				limit = {
-					has_seppuku_reason = scope:recipient
+					has_imprisonment_reason = scope:recipient
 				}
 				stress_impact = {
 					compassionate = minor_stress_impact_gain
@@ -178,9 +182,6 @@ seppuku_interaction = {
 			scope:actor = { use_hook = scope:recipient }
 		}
 		illegal_seppuku_demand_dread_effect = yes
-		# illegal_imprisonment_dread_effect = yes
-		# imprison_court_chaplain_consequences_effect = yes
-		# imprison_HoF_consequences_effect = yes
 		asking_seppuku_court_chaplain_consequences_effect = yes
 		asking_seppuku_HoF_consequences_effect = yes
 		scope:recipient = {
@@ -192,9 +193,22 @@ seppuku_interaction = {
 				joined_faction = { save_scope_as = retaliating_faction }
 			}
 		}
-		scope:recipient = {
-			seppuku_effect = yes
+
+		scope:actor = {
+			imprison_tyranny_effect = yes
+			demand_seppuku_opinion_effect = {
+				VICTIM = scope:recipient
+				EXECUTIONER = scope:actor
+			}
 		}
+
+		demanded_seppuku_effect = {
+			VICTIM = scope:recipient
+			EXECUTIONER = scope:actor
+		}
+
+
+
 		# If they recently revoked your title, or asked for your excommunication, they become your rival
 		# imprison_attempt_escalates_rivalry_effect = yes
 		seppuku_demand_escalates_rivalry_effect = yes
@@ -202,7 +216,7 @@ seppuku_interaction = {
 			trigger_event = rokugan_char_interaction.0231
 			if = {
 				limit = {
-					has_seppuku_reason = scope:recipient
+					has_imprisonment_reason = scope:recipient
 				}
 				stress_impact = {
 					compassionate = minor_stress_impact_gain
@@ -232,7 +246,7 @@ seppuku_interaction = {
 		# If we're a clan this interaction affects unity
 		if = { # If you don't have an imprisonment reason, and the target is landed, you lose more unity
 			limit = {
-				NOT = { scope:actor = { has_seppuku_reason = scope:recipient } }
+				NOT = { scope:actor = { has_imprisonment_reason = scope:recipient } }
 				scope:recipient = { is_landed = yes }
 			}
 			add_clan_unity_interaction_effect = {
@@ -246,7 +260,7 @@ seppuku_interaction = {
 		else_if = { # If you don't have an imprisonment reason, and the target is unlanded, you lose slightly less unity
 			limit = {
 				NOT = {
-					scope:actor = { has_seppuku_reason = scope:recipient }
+					scope:actor = { has_imprisonment_reason = scope:recipient }
 					scope:recipient = { is_landed = yes }
 				}
 			}
@@ -493,7 +507,7 @@ seppuku_interaction = {
 		if = { # If you don't have an imprisonment reason, and the target is landed, you lose more unity
 			limit = {
 				NOT = {
-					scope:actor = { has_seppuku_reason = scope:recipient }
+					scope:actor = { has_imprisonment_reason = scope:recipient }
 				}
 				scope:recipient = { is_landed = yes }
 			}
@@ -508,7 +522,7 @@ seppuku_interaction = {
 		else_if = { # If you don't have an imprisonment reason, and the target is unlanded, you lose slightly less unity
 			limit = {
 				NOT = {
-					scope:actor = { has_seppuku_reason = scope:recipient }
+					scope:actor = { has_imprisonment_reason = scope:recipient }
 					scope:recipient = { is_landed = yes }
 				}
 			}
@@ -579,7 +593,7 @@ seppuku_interaction = {
 							ai_honor > 0
 						}
 						scope:actor = {
-							has_seppuku_reason = scope:recipient
+							has_imprisonment_reason = scope:recipient
 							has_realm_law_flag = vassal_refusal_is_treason
 						}
 					}
@@ -786,7 +800,7 @@ seppuku_interaction = {
 		modifier = { # Legalistic tradition
 			desc = tradition_legalistic_name
 			scope:actor = {
-				has_seppuku_reason = scope:recipient
+				has_imprisonment_reason = scope:recipient
 				culture = { has_cultural_parameter = vassals_more_likely_accept_punishments }
 			}
 			add = legalistic_vassal_punishment_acceptance
@@ -837,7 +851,7 @@ seppuku_interaction = {
 		modifier = {
 			add = 200
 			scope:actor = {
-				has_seppuku_reason = scope:recipient
+				has_imprisonment_reason = scope:recipient
 			}
 		}
 

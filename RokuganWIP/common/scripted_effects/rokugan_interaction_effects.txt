@@ -173,17 +173,33 @@ war_for_seppuku_effect = {
 		}
 	}
 }
-#Add tyranny if you don't have a justifiable reason
-# For renaming
-asking_seppuku_tyranny_effect = {
-	imprison_tyranny_effect = yes
-}
-# only for localization
-asking_seppuku_court_chaplain_consequences_effect = {
-	imprison_court_chaplain_consequences_effect = yes
-}
 
 # only for localization
 asking_seppuku_HoF_consequences_effect = {
 	imprison_HoF_consequences_effect = yes
+}
+
+#Are you unjustly trying to imprison your bishop? tut-tut
+asking_seppuku_court_chaplain_consequences_effect = {
+	if = {
+		limit = {
+			scope:actor = { NOT = { has_imprisonment_reason = scope:recipient } }
+			scope:recipient = { has_council_position = councillor_court_chaplain }
+		}
+		scope:actor = {
+			add_piety_level = -1
+		}
+		if = {
+			limit = {
+				exists = scope:actor.faith.religious_head
+			}
+			scope:actor.faith.religious_head = {
+				add_opinion = {
+					target = scope:actor
+					modifier = respect_opinion
+					opinion = -30
+				}
+			}
+		}
+	}
 }

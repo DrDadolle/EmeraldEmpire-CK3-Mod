@@ -2,7 +2,7 @@
 	opinion = -40
 	years = 15
 	decaying = yes
-	has_seppuku_reason = yes
+	# has_seppuku_reason = yes
 }
 
 attempted_seppuku_demand_opinion = {
@@ -15,6 +15,51 @@ treasonous_seppuku_refusal = {
 	opinion = -20
 	years = 10
 	imprisonment_reason = yes
-	seppuku_reason = yes
+	# seppuku_reason = yes
 	revoke_title_reason = yes
+}
+
+
+###SEPPUKU DEMAND###
+demanded_seppuku_close_family = {
+	opinion = -40
+	years = 20
+	decaying = yes
+}
+
+demanded_seppuku_close_family_crime = {
+	opinion = -40
+	imprisonment_reason = yes
+	execute_reason = yes
+	banish_reason = yes
+}
+
+demanded_seppuku_dynasty_member = {
+	opinion = -20
+	years = 10
+	decaying = yes
+}
+
+demanded_seppuku_close_relation_opinion = {
+	opinion = -30
+	years = 15
+	decaying = yes
+}
+
+demanded_seppuku_my_countryman_modifier = {
+	opinion = -25
+	years = 10
+	decaying = yes
+}
+
+demanded_seppuku_guest_modifier = {
+	opinion = -5
+	years = 5
+	decaying = yes
+}
+
+demanded_seppuku_valuable_prisoner_modifier = {
+	opinion = -25
+	years = 5
+	decaying = yes
 }

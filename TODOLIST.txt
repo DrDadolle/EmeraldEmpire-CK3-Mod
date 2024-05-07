@@ -24,9 +24,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## short term goals 
 - Add demand seppuku character interaction ? (and made by liege too)
-	- Lot of localization &  fixes to do, but works
-	- change icon to "skull"
-	- Add it as a sub-emprisonnement interaction  en plus de "execute" ?
+	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
+	- Display of dynasty splendor gain is not great, but that's okay.
 - Abdication and become monk (à la RoA)
 - Ponder the 3 teachings...??? (à la RoA)
 - Add bridge mesh map objects
@@ -61,8 +60,8 @@ found_empire_decision)
 	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
-- Starting crown authority
-
+- characters
+	- 	effect = {make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zun_pagan }} 
 - Prevent imperial family from doing wars against other clans...? Only for AI ?
 - Blood feud (like Matsu vs Kakita)	
 - special buildings

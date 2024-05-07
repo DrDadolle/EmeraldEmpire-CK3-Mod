@@ -3,14 +3,17 @@ rokugan_char_interaction.0231 = {
 	type = character_event
 	title = rokugan_char_interaction.0231.title
 	desc = { 
-			desc = rokugan_char_interaction.0231.desc_prison
+			desc = rokugan_char_interaction.0231.desc
 		}
-		
+
 	right_portrait = {
 		character = scope:recipient
-		animation = sadness
+		animation = pain
 	}
-	theme = prison
+
+	override_background = throne_room
+
+	theme = death
 	
 	immediate = {
 		# If you have no imprisonment reason and they're your rightful vassal you lose some legitimacy

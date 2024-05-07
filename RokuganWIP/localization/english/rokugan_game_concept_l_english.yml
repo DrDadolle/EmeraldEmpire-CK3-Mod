@@ -1,0 +1,7 @@
+﻿l_english:
+ game_concept_seppuku:0 "Seppuku"
+ game_concept_seppuku_desc:0 "[rulers|E] can demand their vassals to do Seppuku. This is viewed as [tyrannical|E] unless the Character is guilty of a [crime|E]. Demanding Seppuku increase your [dread|E] and are never well received by the [close_family|E] of the unfortunate target.\n\n Furthermore, [rulers|E] can also do seppuku themselves when they are [prestige_i][GetModifier( 'prestige_level_0' ).GetNameWithTooltip|L] "
+
+ game_concept_execute_desc:1 "[imprisoned|E] Characters can be $game_concept_executed$. This is considered [tyrannical|E] unless their imprisoner has an [execute_reason|E].\n\n"
+
+ game_concept_prison_desc:0 "[rulers|E] can keep other Characters as Prisoners, either in their [dungeon|E] or under simple [house_arrest|E]. Characters risk imprisonment in [battle|E] or at the end of a [siege|E].\n\nRulers can also arrest anyone inside their own [realm|E]. However, this is viewed as [tyrannical|E] unless the Character is guilty of a [crime|E].\n\nPrisoners are at your mercy and can be [executed|E], [tortured|E], Ransomed or simply Released."

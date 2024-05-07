@@ -1,0 +1,7 @@
+﻿seppuku = {
+	texture = "gfx/interface/icons/icon_dead.dds"
+}
+
+seppuku_reason = {
+	alias = { seppuku_reasons }
+}

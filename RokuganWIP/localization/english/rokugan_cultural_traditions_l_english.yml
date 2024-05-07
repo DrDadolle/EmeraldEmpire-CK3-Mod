@@ -3,4 +3,4 @@
  tradition_bushido_name:0 "Code of Akodo"
  tradition_bushido_desc:0 "This culture follows the Code of Akodo, which values honor above steel, and encourages duels as well as personal sacrifices."
  # Cultural Parameter
- culture_parameter_can_seppuku:1 "Gain a [decision|E] to make seppuku when the character has low [prestige_i][prestige|E]"
+ culture_parameter_can_seppuku:1 "Gain a [decision|E] to do seppuku when the character is [prestige_i][GetModifier( 'prestige_level_0' ).GetNameWithTooltip|L]"
