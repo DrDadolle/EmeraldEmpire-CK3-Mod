@@ -93,8 +93,16 @@ seppuku_effect = {
 demanded_seppuku_effect = {
 
 	$VICTIM$ = {
-		dynasty ?= {
-			add_dynasty_prestige = minor_dynasty_prestige_gain
+		if = {
+			#Add dynasty prestige only if dynasty is different (to prevent farming)
+			limit = {
+				dynasty = {
+					NOT = { this = $EXECUTIONER$.dynasty }
+				}
+			}
+			dynasty ?= {
+				add_dynasty_prestige = minor_dynasty_prestige_gain
+			}
 		}
 		death = {
 			death_reason = death_demanded_seppuku
