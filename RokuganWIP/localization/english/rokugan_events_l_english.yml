@@ -14,13 +14,16 @@
  rokugan_seppuku_decision.0002.a1:0 "I will commit seppuku. [supporter1.GetFirstNameNoTooltip], assist me!"
  rokugan_seppuku_decision.0002.a2:0 "I will commit seppuku. [supporter2.GetFirstNameNoTooltip], assist me!"
 
- death_seppuku:0 "committed Seppuku"
- death_seppuku_killer:0 "committed Seppuku, and [TARGET_CHARACTER.GetUINameNotMe] assisted in terminating [CHARACTER.GetHerHis] life"
- death_demanded_seppuku:0 "committed Seppuku at the demand" 
- death_demanded_seppuku_killer:0 "committed Seppuku at the demand of [TARGET_CHARACTER.GetUINameNotMe]"
+ rokugan_abdication_decision.0001.t:0 "Abdication"
+ rokugan_abdication_decision.0001.desc:0 "Every morning it is harder to get up and face my duties as [ROOT.Char.GetTitleAsNameNoTooltip] of [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]. Perhaps it is time to rest and hand the burden of ruling this [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip] over to my heir."
+ rokugan_abdication_decision.0001.a:0 "It is time for another ruler of the [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTooltip]."
+ rokugan_abdication_decision.0001.a.monk:0 "I will take the vows and live the rest of my days as a [Select_CString(ROOT.Char.IsFemale,ROOT.Char.GetFaith.DevoteeFemale,ROOT.Char.GetFaith.DevoteeMale)]."
+ rokugan_abdication_decision.0001.b:0 "No, it is not yet my time."
+ abdicate_decision_effect_tt:0 "You will abdicate and continue as your heir."
  ############################
- ###### Seppuku Event
+ ###### Seppuku Character interaction
  ############################
  rokugan_char_interaction.0231.title:0 "An honorable death"
  rokugan_char_interaction.0231.desc:0 "[recipient.GetUIName] had no choice but to obey my command to Seppuku."
  rokugan_char_interaction.0231.a:0 "At least, they died with honor."
+

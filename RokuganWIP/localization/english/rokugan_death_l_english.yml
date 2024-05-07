@@ -1,0 +1,5 @@
+﻿l_english:
+ death_seppuku:0 "committed Seppuku"
+ death_seppuku_killer:0 "committed Seppuku, and [TARGET_CHARACTER.GetUINameNotMe] assisted in terminating [CHARACTER.GetHerHis] life"
+ death_demanded_seppuku:0 "committed Seppuku at the demand" 
+ death_demanded_seppuku_killer:0 "committed Seppuku at the demand of [TARGET_CHARACTER.GetUINameNotMe]"

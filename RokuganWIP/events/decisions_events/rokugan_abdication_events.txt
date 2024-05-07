@@ -1,0 +1,68 @@
+﻿
+namespace = rokugan_abdication_decision_event
+
+rokugan_abdication_decision.0001 = {
+	type = character_event
+	content_source = l5r_dlc
+	title = rokugan_abdication_decision.0001.t
+	desc = rokugan_abdication_decision.0001.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					faith = { has_doctrine = tenet_monasticism }
+					religion = religion:ancestors_religion
+					religion = religion:fortunism_religion
+					religion = religion:shinseism_religion
+				}
+			}
+		}
+
+		name = rokugan_abdication_decision.0001.a
+		custom_tooltip = abdicate_decision_effect_tt
+
+		hidden_effect = {
+			depose = yes
+		}
+
+		dynasty = {
+			add_dynasty_prestige = minor_dynasty_prestige_loss
+		}
+	}
+
+	# If Rokugani religion, no cost
+
+	option = {
+		trigger = {
+			OR = {
+				faith = { has_doctrine = tenet_monasticism }
+				religion = religion:ancestors_religion
+				religion = religion:fortunism_religion
+				religion = religion:shinseism_religion
+			}
+		}
+
+		name = rokugan_abdication_decision.0001.a.monk
+		custom_tooltip = abdicate_decision_effect_tt
+
+		add_trait = devoted
+
+		hidden_effect = {
+			depose = yes
+		}
+
+		dynasty = {
+			add_dynasty_prestige = minor_dynasty_prestige_gain
+		}
+	}
+
+	option = {
+		name = rokugan_abdication_decision.0001.b
+	}
+}
