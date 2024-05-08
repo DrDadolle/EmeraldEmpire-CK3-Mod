@@ -49,9 +49,9 @@ commit_seppuku_decision = {
 }
 
 # Abdication
-abdicate_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
-	desc = abdicate_decision_desc
+rokugan_abdicate_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	desc = rokugan_abdicate_decision_desc
 
 	ai_check_interval = 36
 
@@ -75,7 +75,7 @@ abdicate_decision = {
 	}
 
 	effect = {
-		custom_tooltip = abdicate_decision_effect_text
+		custom_tooltip = rokugan_abdicate_decision_effect_text
 		trigger_event = abdication.0001
 		# If faith has a monastic tradition, may retire as a monk
 	}

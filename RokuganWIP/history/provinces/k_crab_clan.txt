@@ -79,11 +79,15 @@
 	culture = hida
 	religion = cult_ancestors
 	holding = castle_holding
-	special_building = kakeguchi_mines_01
+	special_building_slot = kaiu_wall_01
+
+	716.1.1 = {
+		special_building = kaiu_wall_01
+	}
 
 	1123.1.1={
 		buildings = {
-			castle_03
+			castle_02
 		}
 	}
 }
@@ -91,6 +95,11 @@
 	culture = hida
 	religion = cult_ancestors
 	holding = castle_holding
+	special_building_slot = kaiu_wall_01
+
+	716.1.1 = {
+		special_building = kaiu_wall_01
+	}
 
 	1123.1.1={
 		buildings = {
@@ -114,6 +123,7 @@
 	culture = hida
 	religion = cult_ancestors
 	holding = church_holding
+	special_building = kakeguchi_mines_01
 }
 186 = {		#b_ugawari_toride
 	culture = hida
@@ -154,6 +164,11 @@
 	culture = hida
 	religion = cult_ancestors
 	holding = castle_holding
+	special_building_slot = kaiu_wall_01
+
+	716.1.1 = {
+		special_building = kaiu_wall_01
+	}
 
 	1123.1.1={
 		buildings = {
@@ -165,6 +180,11 @@
 	culture = hida
 	religion = cult_ancestors
 	holding = castle_holding
+	special_building_slot = kaiu_wall_01
+
+	716.1.1 = {
+		special_building = kaiu_wall_01
+	}
 
 	1123.1.1={
 		buildings = {
@@ -244,6 +264,11 @@
 	culture = kaiu
 	religion = cult_ancestors
 	holding = castle_holding
+	special_building_slot = kaiu_wall_01
+
+	716.1.1 = {
+		special_building = kaiu_wall_01
+	}
 
 	1123.1.1={
 		buildings = {
@@ -255,6 +280,11 @@
 	culture = kaiu
 	religion = cult_ancestors
 	holding = castle_holding
+	special_building_slot = kaiu_wall_01
+
+	716.1.1 = {
+		special_building = kaiu_wall_01
+	}
 
 	1123.1.1={
 		buildings = {

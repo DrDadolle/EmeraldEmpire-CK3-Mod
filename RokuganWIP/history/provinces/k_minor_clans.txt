@@ -157,6 +157,19 @@
 		}
 	}
 }
+##d_chuda ###################################
+###c_chuda_province
+299 = {		#b_chuda
+	culture = asako
+	religion = seven_fortunes
+	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_01
+		}
+	}
+}
 ##d_nekoma ###################################
 ###c_nekoma_province
 318 = {		#b_nekoma
@@ -187,6 +200,36 @@
 	culture = tonbo
 	religion = seven_fortunes
 	holding = church_holding
+}
+##d_ichiro ###################################
+###c_ichiro_province
+334 = {		#b_shiro_ichiro
+	culture = ichiro
+	religion = cult_ancestors
+	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
+}
+335 = {		#b_ryoshun_seido
+	culture = ichiro
+	religion = cult_ancestors
+	holding = church_holding
+
+}
+336 = {		#b_teeth_keep
+	culture = ichiro
+	religion = cult_ancestors
+	holding = castle_holding
+
+	1123.1.1={
+		buildings = {
+			castle_02
+		}
+	}
 }
 ##d_yoritomo ###################################
 ###c_gotei_province

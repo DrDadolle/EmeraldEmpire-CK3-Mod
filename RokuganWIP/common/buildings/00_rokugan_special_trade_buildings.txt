@@ -179,7 +179,7 @@ ryoko_owari_opium_ring_04 = {
 sunda_mizu_mura_trade_port_01 = {
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_doges_palace.dds"
+	type_icon = "icon_building_tradeport.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -219,7 +219,7 @@ sunda_mizu_mura_trade_port_01 = {
 sunda_mizu_mura_trade_port_02 = {
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_doges_palace.dds"
+	type_icon = "icon_building_tradeport.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -257,7 +257,7 @@ sunda_mizu_mura_trade_port_02 = {
 sunda_mizu_mura_trade_port_03 = {
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_doges_palace.dds"
+	type_icon = "icon_building_tradeport.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -297,7 +297,7 @@ sunda_mizu_mura_trade_port_03 = {
 sunda_mizu_mura_trade_port_04 = {
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_doges_palace.dds"
+	type_icon = "icon_building_tradeport.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -341,7 +341,7 @@ sunda_mizu_mura_trade_port_04 = {
 spice_and_silk_trade_port_01 = {
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_doges_palace.dds"
+	type_icon = "icon_building_tradeport.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -381,7 +381,7 @@ spice_and_silk_trade_port_01 = {
 spice_and_silk_trade_port_02 = {
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_doges_palace.dds"
+	type_icon = "icon_building_tradeport.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -419,7 +419,7 @@ spice_and_silk_trade_port_02 = {
 spice_and_silk_trade_port_03 = {
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_doges_palace.dds"
+	type_icon = "icon_building_tradeport.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -459,7 +459,169 @@ spice_and_silk_trade_port_03 = {
 spice_and_silk_trade_port_04 = {
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_doges_palace.dds"
+	type_icon = "icon_building_tradeport.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+	cost_gold = 4000
+
+
+	character_modifier = {
+		stewardship = 4
+	}
+
+	province_modifier = {
+		monthly_income = 8
+	}
+	county_modifier = {
+		tax_mult = 0.5
+		development_growth = 0.5
+		development_growth_factor = 0.35
+	}
+
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_stewardship
+}
+
+
+##########
+# Golden River Trade Port
+##########
+
+golden_river_trade_port_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_tradeport.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		stewardship = 1
+	}
+
+	province_modifier = {
+		monthly_income = 2
+	}
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth = 0.2
+		development_growth_factor = 0.2
+	}
+	
+	next_building = golden_river_trade_port_02
+
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_stewardship
+}
+
+golden_river_trade_port_02 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_tradeport.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+	character_modifier = {
+		stewardship = 2
+	}
+
+	province_modifier = {
+		monthly_income = 4
+	}
+	county_modifier = {
+		tax_mult = 0.3
+		development_growth = 0.3
+		development_growth_factor = 0.25
+	}
+	
+	next_building = golden_river_trade_port_03
+
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_stewardship
+}
+
+golden_river_trade_port_03 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_tradeport.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		stewardship = 3
+	}
+
+	province_modifier = {
+		monthly_income = 6
+	}
+	county_modifier = {
+		tax_mult = 0.4
+		development_growth = 0.4
+		development_growth_factor = 0.3
+	}
+	
+	next_building = golden_river_trade_port_04
+
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_stewardship
+}
+
+golden_river_trade_port_04 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_tradeport.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no

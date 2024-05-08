@@ -125,3 +125,120 @@ gisei_toshi_01 = {
 
 	flag = travel_point_of_interest_learning
 }
+
+##########
+# Kaiu Wall
+##########
+
+kaiu_wall_01 = {
+
+	construction_time = very_slow_construction_time
+	
+	type_icon = "icon_structure_great_wall_of_gorgan.dds" 
+
+
+	asset = {
+		type = pdxmesh
+		name = "hadrians_wall_01_a_mesh"
+	}
+
+	can_construct_potential = {
+		OR = {
+			barony = title:b_shiro_kakeguchi
+			barony = title:b_castle_of_the_forgotten
+			barony = title:b_shiro_ishigaki_2
+			barony = title:b_shiro_ishigaki
+			barony = title:b_shiro_kaiu
+			barony = title:b_razor_dawn_castle
+		}
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_hoardings 
+		}
+	}
+	
+	cost_gold = 1000
+	
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_1
+		fort_level = good_building_fort_level_tier_1
+		stationed_maa_toughness_mult = normal_maa_toughness_tier_1
+		# garrison_size = 0.25
+		hostile_raid_time = 0.25
+	}
+
+	max_garrison = good_building_max_garrison_tier_1
+
+	next_building = kaiu_wall_02
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_martial_minor # wall
+}
+
+kaiu_wall_02 = {
+
+	construction_time = very_slow_construction_time
+	
+	type_icon = "icon_structure_great_wall_of_gorgan.dds" 
+
+	asset = {
+		type = pdxmesh
+		name = "hadrians_wall_01_a_mesh"
+	}
+
+	can_construct_potential = {
+		OR = {
+			barony = title:b_shiro_kakeguchi
+			barony = title:b_castle_of_the_forgotten
+			barony = title:b_shiro_ishigaki_2
+			barony = title:b_shiro_ishigaki
+			barony = title:b_shiro_kaiu
+			barony = title:b_razor_dawn_castle
+		}
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_machicolations 
+		}
+	}
+	
+	cost_gold = 2000
+	
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_2
+		fort_level = good_building_fort_level_tier_2
+		stationed_maa_toughness_mult = normal_maa_toughness_tier_2
+		garrison_size = 0.1
+		hostile_raid_time = 0.5
+	}
+
+	max_garrison = good_building_max_garrison_tier_2
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_martial_minor # wall
+}

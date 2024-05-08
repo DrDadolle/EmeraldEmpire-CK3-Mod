@@ -23,10 +23,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - innovation (special culture ones) and shared ones. Re-localization of some
 
 ## short term goals 
-- Abdication and become monk (à la RoA)
-- Ponder the 3 teachings...??? (à la RoA)
-- Add bridge mesh map objects
 - add missing baronies localization
+- check Asia Expansion, ask for rights W8t 4 response
+- Add bridge mesh map objects
 - Fix the bookmarks, so Doji is not naked, and it looks better
 - Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
 - Add river map (more ?)
@@ -42,9 +41,7 @@ found_empire_decision)
 - Child can be born with white hair but without the Crane trait !
 
 ## Futures Features & Nice to have
-- todo eras (change the limit date for each era)
 - Remove AI Cadet branches => Working ?
-- Test "Trial-by-Combat" works even without the DLC
 - Becoming Minor or Major Clan IS a special decision which requires the Emperor acknowledgement.
 	- Adaptation of the decision "create custom kingdom" but for duchy ?
 	- Adaptation of the decision "create custom kingdom" (found_kingdom_decision & found_empire_decision from 80_major_decisions.txt)
@@ -57,8 +54,7 @@ found_empire_decision)
 	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
-- characters
-	- 	effect = {make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zun_pagan }} 
+
 - Prevent imperial family from doing wars against other clans...? Only for AI ?
 - Blood feud (like Matsu vs Kakita)	
 - special buildings
@@ -71,6 +67,7 @@ found_empire_decision)
 	- Ryoko Owari opium trade DONE
 	- Sunda Mizu Mura pearl trade DONE
 	- Silk/Spice trade port Mantis/Tortoise DONE
+	- Kaiu wall done
 	- Traitor's Trove
 	- Tsuma Topaz building
 	- Mines
@@ -94,7 +91,8 @@ found_empire_decision)
 			- c_south_shinomen_ronin_1 b_south_shinomen_ronin_1 (I guess ? need the one close to the mountains) / Gold DONE
 	- Chuda Ruins
 			- revive chuda dynasty decision !
-- Starting special buildings
+- characters
+	- 	effect = {make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zun_pagan }} 
 - Special events setting the start of the clan wars
 - Create MaA for each great clan, maybe each minor one
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update

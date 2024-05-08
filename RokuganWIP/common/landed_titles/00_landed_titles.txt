@@ -1552,6 +1552,24 @@ e_rokugan = {
                  }
             }
 		}
+        d_rich_frog = {
+			color = { 56 34 168 }
+			 capital = c_rich_frog
+			 
+			c_rich_frog = {
+                 color = { 56 34 168 }
+ 
+                 b_rich_frog = {
+                     province = 325
+                 }
+				 b_frog_temple = {
+                     province = 326
+                 }
+				 b_frog_mura = {
+                     province = 327
+                 }
+			}
+		}
 	}
 	
 	#######################
@@ -1578,8 +1596,8 @@ e_rokugan = {
 	###### Minor Clans
 	######### place them in a random kingdom k_minor_clan
 	k_minor_clans = {
-		#No color ?
-		#No capitals ?
+		color = { 29 231 59 }
+		capital = c_gotei_province
 		
 		d_moshi = {
 			 color = { 230 243 10 }
@@ -1835,6 +1853,8 @@ e_rokugan = {
 	###### West Shinomen lands
 	######### adding non-canon kingdom to proper display counties as vassal of the emperor
     k_west_shinomen_mori = {
+        color = { 163 223 135 }
+
         d_kaikoga= {
             color = { 163 223 135 }
             capital = c_kaikoga_province
@@ -1862,6 +1882,25 @@ e_rokugan = {
                 }
              }
          }
+
+         d_east_shinomen_monasteries= {
+            color = { 83 55 35 }
+
+            c_conflagration_temple = {
+                color = { 70 57 43 }
+
+                b_conflagration_temple = {
+                    province = 330
+                }
+            }
+            c_shinden_kasai = {
+                    color = { 52 35 17 }
+
+                    b_shinden_kasai = {
+                        province = 331
+                    }
+            }
+        }
          d_west_shinomen_monasteries= {
             color = { 83 55 35 }
             
@@ -1900,12 +1939,15 @@ e_rokugan = {
 	###### South/East Shinomen lands
 	######### adding non-canon kingdom to proper display counties as vassal of the emperor
     k_south_east_shinomen_mori = {
+        color = { 100 72 77 }
+        capital = c_south_shinomen_ronin_2
+
         d_south_shinomen= {
-            color = { 83 55 35 }
+            color = { 100 72 77 }
             capital = c_south_shinomen_ronin_2
 
             c_south_shinomen_ronin_2 = {
-                color = { 152 98 62 }
+                color = { 100 72 77 }
                 b_south_shinomen_ronin_2 = {
                     province = 414
                 }
@@ -1962,6 +2004,18 @@ e_rokugan = {
                 }
             }
 
+            c_daidoji_yukan_see = {
+                color = { 103 74 41 }
+
+                b_daidoji_yukan_see = {
+                    province = 328
+                }
+
+                b_shinsei_monastery_yukan_see = {
+                    province = 329
+                }
+            }
+
             c_central_lands_ronin_2 = {
                 color = { 128 67 2 }
 
@@ -1986,8 +2040,11 @@ e_rokugan = {
 	###### Un-aligned lands
 	######### adding non-canon kingdom to proper display counties as vassal of the emperor
 	k_kintani_valley = {
+        color = { 212 175 55 }
+        capital = c_toshi_rambo
+
 		d_kintani_valley = {
-			 color = { 141 129 124 }
+			 color = { 218 165 32 }
 			 capital = c_kintani_province
 
              c_kintani_province = {
@@ -2029,7 +2086,7 @@ e_rokugan = {
 						
 		}
 		d_kintani_valley_2 = {
-			color = { 71 206 191 }
+			color = { 212 175 55 }
 			 capital = c_toshi_rambo
 
              c_toshi_rambo = {
@@ -2059,61 +2116,6 @@ e_rokugan = {
 			}
 
 		
-		}
-	}
-	
-	##TODO placeholder title for all the ronins stuff
-	k_ronin = {
-		d_rich_frog = {
-			color = { 56 34 168 }
-			 capital = c_rich_frog
-			 
-			c_rich_frog = {
-                 color = { 56 34 168 }
- 
-                 b_rich_frog = {
-                     province = 325
-                 }
-				 b_frog_temple = {
-                     province = 326
-                 }
-				 b_frog_mura = {
-                     province = 327
-                 }
-			}
-		}
-		d_ronin_daidoji_yukan_see = {
-			color = { 103 74 41 }
-			capital = c_daidoji_yukan_see
-				 
-            c_daidoji_yukan_see = {
-                    color = { 103 74 41 }
-    
-                    b_daidoji_yukan_see = {
-                        province = 328
-                    }
-            }
-            c_shinsei_monastery_yukan_see = {
-                    color = { 183 152 121 }
-    
-                    b_shinsei_monastery_yukan_see = {
-                        province = 329
-                    }
-            }
-            c_conflagration_temple = {
-                    color = { 70 57 43 }
-    
-                    b_conflagration_temple = {
-                        province = 330
-                    }
-            }
-            c_shinden_kasai = {
-                    color = { 52 35 17 }
-    
-                    b_shinden_kasai = {
-                        province = 331
-                    }
-            }
 		}
 	}
  }

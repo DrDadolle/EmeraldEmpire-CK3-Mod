@@ -30,8 +30,8 @@
  commit_seppuku_decision_tooltip:0 "Consider Seppuku"
  commit_seppuku_decision_effect_tooltip:0 "You will be given an event where you can choose to commit Seppuku"
  #Abdicate
- rokugan_abdication_decision:0 "Abdicate"
- rokugan_abdication_decision_tooltip:0 "Abdicate and continue as your heir"
- rokugan_abdication_decision_desc:0 "My time as [ROOT.Char.GetTitleAsNameNoTooltip] of [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip] has come to an end. I am sure the Realm will be in good hands with my heir."
- rokugan_abdication_decision_effect_text:0 "You will have the choice to abdicate and continue as your rightful heir."
- rokugan_abdication_decision_confirm:0 "It is time..."
+ rokugan_abdicate_decision:0 "Abdicate"
+ rokugan_abdicate_decision_tooltip:0 "Abdicate and continue as your heir"
+ rokugan_abdicate_decision_desc:0 "My time as [ROOT.Char.GetTitleAsNameNoTooltip] of [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip] has come to an end. I am sure the Realm will be in good hands with my heir."
+ rokugan_abdicate_decision_effect_text:0 "You will have the choice to abdicate and continue as your rightful heir."
+ rokugan_abdicate_decision_confirm:0 "It is time..."

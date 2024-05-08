@@ -25,7 +25,7 @@ c_yuma_province = {
 c_kimbouo_province = {
 	1123.1.1 = {
 		liege = "d_soshi"
-		holder = 3000371 # TODO random placehorlder name
+		holder = 3000370 # TODO random placehorlder name
 		change_development_level = 3
 	}
 }

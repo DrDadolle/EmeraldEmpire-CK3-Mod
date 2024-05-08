@@ -8,17 +8,17 @@ d_hida = {
 c_ishibei_province = {
 	1110.1.1 = {
 		liege = "d_hida"
-		holder = 3000410 # placeholder count
+		holder = 3003400 # placeholder count
 		change_development_level = 8
 	}
 }
 
-b_shiro_kakeguchi = {
-	1123.1.1 = {
-		liege = "c_ishibei_province"
-		holder = 3003400 # Kakeguchi Aki  #TODO replace name
-	}
-}
+# b_shiro_kakeguchi = {
+# 	1123.1.1 = {
+# 		liege = "c_ishibei_province"
+# 		holder = 3003400 # Kakeguchi Aki  #TODO replace name
+# 	}
+# }
 
 c_kyoukan_province = {
 	1110.1.1 = {
@@ -64,5 +64,13 @@ c_garanto_province_crab = {
 		liege = "d_hiruma"
 		holder = 3000420 # Hiruma Yoshino
 		change_development_level = 9
+	}
+}
+
+c_shinsei_last_hope = {
+	1110.1.1 = {
+		liege = "d_hida"
+		holder = 3000411 # placeholder count
+		change_development_level = 4
 	}
 }

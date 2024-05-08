@@ -232,10 +232,9 @@ c_shinsei_monastery_yukan_see = {
 
 
 c_conflagration_temple = {
-
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3004011 #  PlaceHolder monk
+		holder = 3004010 #  PlaceHolder monk
 		change_development_level = 5
 	}
 }
@@ -243,7 +242,7 @@ c_conflagration_temple = {
 c_shinden_kasai = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3004012 #  PlaceHolder monk
+		holder = 3004010 #  PlaceHolder monk
 		change_development_level = 3
 	}
 }

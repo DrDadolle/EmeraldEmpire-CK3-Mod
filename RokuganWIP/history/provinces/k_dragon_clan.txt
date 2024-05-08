@@ -46,6 +46,10 @@
 	religion = shinseism
 	holding = castle_holding
 
+	1120.1.1={
+		religion = perfect_earth_sect
+	}
+
 	1123.1.1={
 		buildings = {
 			castle_01
@@ -89,6 +93,10 @@
 	religion = shinseism
 	holding = castle_holding
 
+	1120.1.1={
+		religion = perfect_earth_sect
+	}
+
 	1123.1.1={
 		buildings = {
 			castle_03
@@ -99,6 +107,10 @@
 	culture = mirumoto
 	religion = shinseism
 	holding = city_holding
+
+	1120.1.1={
+		religion = perfect_earth_sect
+	}
 }
 ###c_kousou_province
 298 = {		#b_shiransu

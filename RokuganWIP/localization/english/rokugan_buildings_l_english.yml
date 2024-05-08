@@ -13,6 +13,16 @@
  building_gisei_toshi_01_desc:0 "$building_type_gisei_toshi_01_desc$"
 
  ##################
+ ##### Kaiu Wall
+ ##################
+ building_type_kaiu_wall_01:0 "Kaiu Wall"
+ building_type_kaiu_wall_01_desc:0 "The Kaiu Wall, also known as the Carpenter Wall or the Kaiu Miracle, for centuries was the very physical demarcation of the southern border of Rokugan. On its north side lie the lands of the Crab Clan, and on its south the River of the Last Stand separated it to the blighted reaches of the Shadowlands. [1] It was here that the forces of Rokugan entrenched themselves in their eternal battle against the forces of Jigoku.."
+ building_kaiu_wall_01:0 "Kaiu Wall"
+ building_kaiu_wall_01_desc:0 "building_kaiu_wall_01_desc"
+ building_kaiu_wall_02:0 "Kaiu Towers"
+ building_kaiu_wall_02_desc:0 "building_kaiu_wall_02_desc"
+
+ ##################
  ##### Opium Trade & Trade Port
  ##################
 
@@ -50,6 +60,18 @@
  building_spice_and_silk_trade_port_04:0 "Massive Spice and Silk Trade Port"
  building_spice_and_silk_trade_port_04_desc:0 "building_spice_and_silk_trade_port_04_desc"
 
+
+ building_type_golden_river_trade_port_01:0 "Golden River Trade Port"
+ building_type_golden_river_trade_port_01_desc:0 "The City of the Rich Frog was one of the most vital river ports in all of Rokugan, as it was located at the junction of two major rivers and three Great Clans’ domains. Despite being neutral territory according to official imperial records, the Dragon, Lion, and Unicorn clans had all claimed a city district for their own."
+ building_golden_river_trade_port_01:0 "Small Golden River Trade Port"
+ building_golden_river_trade_port_01_desc:0 "building_golden_river_trade_port_01_desc"
+ building_golden_river_trade_port_02:0 "Golden River Trade Port"
+ building_golden_river_trade_port_02_desc:0 "building_golden_river_trade_port_02_desc"
+ building_golden_river_trade_port_03:0 "Large Golden River Trade Port"
+ building_golden_river_trade_port_03_desc:0 "building_golden_river_trade_port_03_desc"
+ building_golden_river_trade_port_04:0 "Massive Golden River Trade Port"
+ building_golden_river_trade_port_04_desc:0 "building_golden_river_trade_port_04_desc"
+
  ##################
  ##### Mines
  ##################
@@ -65,15 +87,15 @@
  building_maisuna_mines_04:1 "Maisuna Mining Complex"
  building_maisuna_mines_04_desc:1 "As the production of ore increases, several foundries and smelters are set up around the settlement. The processing of metal has become second-nature to the inhabitants, and their skill is renowned across the known world."
 
- building_type_kakeguchi_mines_01:0 "The Kakeguchi Iron Mines"
+ building_type_kakeguchi_mines_01:0 "The Kyoukan Iron Mines"
  building_type_kakeguchi_mines_01_desc:1 "$building_type_maisuna_mines_01_desc$"
- building_kakeguchi_mines_01:1 "Kakeguchi Mining Settlement"
+ building_kakeguchi_mines_01:1 "Kyoukan Mining Settlement"
  building_kakeguchi_mines_01_desc:1 "$building_maisuna_mines_01_desc$"
- building_kakeguchi_mines_02:1 "Kakeguchi Mine"
+ building_kakeguchi_mines_02:1 "Kyoukan Mine"
  building_kakeguchi_mines_02_desc:1 "$building_maisuna_mines_02_desc$"
- building_kakeguchi_mines_03:1 "Large Kakeguchi Mine"
+ building_kakeguchi_mines_03:1 "Large Kyoukan Mine"
  building_kakeguchi_mines_03_desc:1 "$building_maisuna_mines_03_desc$"
- building_kakeguchi_mines_04:1 "Kakeguchi Mining Complex"
+ building_kakeguchi_mines_04:1 "Kyoukan Mining Complex"
  building_kakeguchi_mines_04_desc:1 "$building_maisuna_mines_04_desc$"
 
  building_type_higashiyama_mines_01:0 "The East Mountains Jade Mines"

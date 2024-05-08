@@ -33,17 +33,29 @@
 	culture = mirumoto
 	religion = shinseism
 	holding = tribal_holding
+
+	1120.1.1={
+		religion = perfect_earth_sect
+	}
 }
 ###c_shinsei_monastery_rambo
 322 = {		#b_shinsei_monastery_rambo
 	culture = togashi
 	religion = shinseism
 	holding = church_holding
+
+	1120.1.1={
+		religion = perfect_earth_sect
+	}
 }
 324 = {		#b_shinsei_monastery_rambo_empty
 	culture = togashi
 	religion = shinseism
 	holding = none
+
+	1120.1.1={
+		religion = perfect_earth_sect
+	}
 }
 ##d_rich_frog ###################################
 ###c_rich_frog
@@ -52,9 +64,20 @@
 	religion = seven_fortunes
 	holding = castle_holding
 
+	special_building_slot = golden_river_trade_port_01
+
+	400.1.1 = {
+		special_building = golden_river_trade_port_01
+	}
+
+
+	1100.1.1 = {
+		special_building = golden_river_trade_port_02
+	}
+
 	1123.1.1={
 		buildings = {
-			castle_03
+			castle_02
 		}
 	}
 }
@@ -145,8 +168,8 @@
 }
 ###c_west_shinomen_monastery_4
 408 = {		#b_west_shinomen_monastery_4
-	culture = ide
-	religion = shinseism
+	culture = kaikoga
+	religion = cult_amaterasu
 	holding = church_holding
 }
 ##d_south_shinomen ###################################

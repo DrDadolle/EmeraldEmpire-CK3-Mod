@@ -142,7 +142,18 @@ field_of_the_morning_sun = {
 
 }
 
+sunset_monastery = {
 
+	county = c_west_shinomen_monastery_4
+	barony = b_west_shinomen_monastery_4
+
+	character_modifier = {
+		name = field_of_the_morning_sun_effect_name
+		learning = 1
+		monthly_piety = 0.3
+	}
+
+}
 
 #################
 # Cult of the Ancestors
