@@ -15,7 +15,7 @@ unity_reinforce_army_decision = {
 	cooldown = { years = 20 }
 
 	is_shown = {
-		government_has_flag = government_is_feudal		# Shogunate
+		government_has_flag = government_is_feudal		# Rokugan
 		is_landed = yes
 		exists = house
 	}
@@ -87,7 +87,7 @@ unity_establish_network_decision = {
 	cooldown = { years = 20 }
 
 	is_shown = {
-		government_has_flag = government_is_feudal		# Shogunate
+		government_has_flag = government_is_feudal		# Rokugan
 		is_landed = yes
 		exists = house
 	}
@@ -159,7 +159,7 @@ unity_improve_taxation_decision = {
 	cooldown = { years = 20 }
 
 	is_shown = {
-		government_has_flag = government_is_feudal		# Shogunate
+		government_has_flag = government_is_feudal		# Rokugan
 		is_landed = yes
 		exists = house
 	}
@@ -228,7 +228,7 @@ unity_send_bailiffs_decision = {
 	cooldown = { years = 20 }
 
 	is_shown = {
-		government_has_flag = government_is_feudal		# Shogunate
+		government_has_flag = government_is_feudal		# Rokugan
 		is_landed = yes
 		exists = house
 	}
@@ -303,7 +303,7 @@ unity_placate_vassals_decision = {
 	cooldown = { years = 20 }
 
 	is_shown = {
-		government_has_flag = government_is_feudal		# Shogunate
+		government_has_flag = government_is_feudal		# Rokugan
 		is_landed = yes
 		exists = house
 	}
@@ -375,7 +375,7 @@ unity_organize_house_for_war_decision = {
 	cooldown = { years = 20 }
 
 	is_shown = {
-		government_has_flag = government_is_feudal		# Shogunate
+		government_has_flag = government_is_feudal		# Rokugan
 		is_landed = yes
 		exists = house
 	}
@@ -437,7 +437,7 @@ unity_encourage_house_economy_decision = {
 	cooldown = { years = 20 }
 
 	is_shown = {
-		government_has_flag = government_is_feudal		# Shogunate
+		government_has_flag = government_is_feudal		# Rokugan
 		is_landed = yes
 		exists = house
 	}
@@ -497,7 +497,7 @@ unity_steer_house_direction_decision = {
 	cooldown = { years = 10 }
 
 	is_shown = {
-		government_has_flag = government_is_feudal		# Shogunate
+		government_has_flag = government_is_feudal		# Rokugan
 		is_landed = yes
 		exists = house
 	}
@@ -750,7 +750,7 @@ unity_search_for_administrators_decision = {
 	cooldown = { years = 10 }
 
 	is_shown = {
-		government_has_flag = government_is_feudal		# Shogunate
+		government_has_flag = government_is_feudal		# Rokugan
 		is_landed = yes
 		exists = house
 	}
@@ -839,87 +839,87 @@ unity_search_for_administrators_decision = {
 	}
 }
 
-unity_promote_development_decision = {
-	ai_check_interval = 36
-	picture = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
-	is_invisible = yes
+# unity_promote_development_decision = {
+# 	ai_check_interval = 36
+# 	picture = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+# 	is_invisible = yes
 	
-	sort_order = 60
+# 	sort_order = 60
 
-	desc = unity_promote_development_decision_desc
+# 	desc = unity_promote_development_decision_desc
 
-	cooldown = { years = 20 }
+# 	cooldown = { years = 20 }
 
-	is_shown = {
-		has_fp3_dlc_trigger = yes
-		culture = { has_cultural_pillar = heritage_iranian }
-		government_has_flag = government_is_clan
-		is_landed = yes
-		exists = house
-	}
+# 	is_shown = {
+# 		has_fp3_dlc_trigger = yes
+# 		culture = { has_cultural_pillar = heritage_iranian }
+# 		government_has_flag = government_is_clan
+# 		is_landed = yes
+# 		exists = house
+# 	}
 
-	is_valid = {
-		# We show the culture requirement here to tell the player why they have the decision available
-		culture = { has_cultural_pillar = heritage_iranian }
-		house = {
-			OR = {
-				has_house_unity_stage = friendly
-				has_house_unity_stage = harmonious
-			}
-		}
-		is_house_head = yes
-	}
+# 	is_valid = {
+# 		# We show the culture requirement here to tell the player why they have the decision available
+# 		culture = { has_cultural_pillar = heritage_iranian }
+# 		house = {
+# 			OR = {
+# 				has_house_unity_stage = friendly
+# 				has_house_unity_stage = harmonious
+# 			}
+# 		}
+# 		is_house_head = yes
+# 	}
 
-	is_valid_showing_failures_only = {
-		house = {
-			OR = {
-				has_house_unity_stage = friendly
-				has_house_unity_stage = harmonious
-			}
-			NOT = { has_house_unity_modifier = fp3_unity_promoted_development_modifier }
-		}
-		is_house_head = yes
-	}
+# 	is_valid_showing_failures_only = {
+# 		house = {
+# 			OR = {
+# 				has_house_unity_stage = friendly
+# 				has_house_unity_stage = harmonious
+# 			}
+# 			NOT = { has_house_unity_modifier = fp3_unity_promoted_development_modifier }
+# 		}
+# 		is_house_head = yes
+# 	}
 
-	effect = {
-		house = {
-			add_house_unity_modifier = {
-				modifier = fp3_unity_promoted_development_modifier
-				years = 10
-			}
-		}
-	}
+# 	effect = {
+# 		house = {
+# 			add_house_unity_modifier = {
+# 				modifier = fp3_unity_promoted_development_modifier
+# 				years = 10
+# 			}
+# 		}
+# 	}
 
-	cost = {
-		gold = {
-			value = medium_gold_value
-		}
-		piety = {
-			value = unity_major_decision_piety_cost
-			add = {
-				value = 20
-				multiply = {
-					value = number_of_landed_house_members_value
-					subtract = 1 # We don't want to add any extra for the first ruler
-				}
-			}
-		}
-	}
+# 	cost = {
+# 		gold = {
+# 			value = medium_gold_value
+# 		}
+# 		piety = {
+# 			value = unity_major_decision_piety_cost
+# 			add = {
+# 				value = 20
+# 				multiply = {
+# 					value = number_of_landed_house_members_value
+# 					subtract = 1 # We don't want to add any extra for the first ruler
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	ai_potential = {
-		exists = house
-		house = { # Don't bother unless you have a few landed house members who would benefit
-			any_house_unity_member = {
-				count >= 3
-			}
-		}
-		ai_has_warlike_personality = no
-	}
+# 	ai_potential = {
+# 		exists = house
+# 		house = { # Don't bother unless you have a few landed house members who would benefit
+# 			any_house_unity_member = {
+# 				count >= 3
+# 			}
+# 		}
+# 		ai_has_warlike_personality = no
+# 	}
 
-	ai_will_do = {
-		base = 10
-	}
-}
+# 	ai_will_do = {
+# 		base = 10
+# 	}
+# }
 
 unity_consult_house_decision = {
 	ai_check_interval = 36
@@ -931,7 +931,7 @@ unity_consult_house_decision = {
 	desc = unity_consult_house_decision_desc
 
 	is_shown = {
-		government_has_flag = government_is_feudal		# Shogunate
+		government_has_flag = government_is_feudal		# Rokugan
 		is_landed = yes
 		exists = house
 	}
@@ -995,187 +995,187 @@ unity_consult_house_decision = {
 	}
 }
 
-unity_establish_futuwaa_lodges_decision = {
-	ai_check_interval = 36
-	picture = "gfx/interface/illustrations/decisions/fp3/competitive.dds"
-	is_invisible = yes
-	sort_order = 60
+# unity_establish_futuwaa_lodges_decision = {
+# 	ai_check_interval = 36
+# 	picture = "gfx/interface/illustrations/decisions/fp3/competitive.dds"
+# 	is_invisible = yes
+# 	sort_order = 60
 
-	desc = {
-		desc = unity_establish_futuwaa_lodges_decision_desc_intro
-		first_valid = {
-			# "People"
-			triggered_desc = {
-				trigger = {
-					OR = {
-						AND = {
-							has_dlc_feature = diverge_culture
-							culture = { has_cultural_parameter = martial_custom_equal_combatant } 
-						}
-						faith = { has_doctrine_parameter = combatant_can_be_either_gender_if_no_roco }
-						has_character_modifier = ignores_gender_army_rules
-						culture = { 
-							OR = {
-								has_cultural_parameter = has_access_to_shieldmaidens
-								has_cultural_parameter = high_prowess_ignores_knight_restrictions
-							}
-						}
-					}
-				}
-				desc = people
-			}
-			# "Women"
-			triggered_desc = {
-				trigger = {
-					OR = {
-						AND = {
-							has_dlc_feature = diverge_culture
-							culture = { has_cultural_parameter = martial_custom_female_only_combatant } 
-						}
-						faith = { has_doctrine_parameter = combatant_must_be_female_if_no_roco }
-					}
-				}
-				desc = women
-			}
-			# "Men"
-			triggered_desc = {
-				trigger = {
-					OR = {
-						AND = {
-							has_dlc_feature = diverge_culture
-							culture = { has_cultural_parameter = martial_custom_male_only_combatant } 
-						}
-						faith = { has_doctrine_parameter = combatant_must_be_male_if_no_roco }
-					}
-				}
-				desc = loc_men
-			}
-		}
-		desc = unity_establish_futuwaa_lodges_decision_desc_outro
-	}
+# 	desc = {
+# 		desc = unity_establish_futuwaa_lodges_decision_desc_intro
+# 		first_valid = {
+# 			# "People"
+# 			triggered_desc = {
+# 				trigger = {
+# 					OR = {
+# 						AND = {
+# 							has_dlc_feature = diverge_culture
+# 							culture = { has_cultural_parameter = martial_custom_equal_combatant } 
+# 						}
+# 						faith = { has_doctrine_parameter = combatant_can_be_either_gender_if_no_roco }
+# 						has_character_modifier = ignores_gender_army_rules
+# 						culture = { 
+# 							OR = {
+# 								has_cultural_parameter = has_access_to_shieldmaidens
+# 								has_cultural_parameter = high_prowess_ignores_knight_restrictions
+# 							}
+# 						}
+# 					}
+# 				}
+# 				desc = people
+# 			}
+# 			# "Women"
+# 			triggered_desc = {
+# 				trigger = {
+# 					OR = {
+# 						AND = {
+# 							has_dlc_feature = diverge_culture
+# 							culture = { has_cultural_parameter = martial_custom_female_only_combatant } 
+# 						}
+# 						faith = { has_doctrine_parameter = combatant_must_be_female_if_no_roco }
+# 					}
+# 				}
+# 				desc = women
+# 			}
+# 			# "Men"
+# 			triggered_desc = {
+# 				trigger = {
+# 					OR = {
+# 						AND = {
+# 							has_dlc_feature = diverge_culture
+# 							culture = { has_cultural_parameter = martial_custom_male_only_combatant } 
+# 						}
+# 						faith = { has_doctrine_parameter = combatant_must_be_male_if_no_roco }
+# 					}
+# 				}
+# 				desc = loc_men
+# 			}
+# 		}
+# 		desc = unity_establish_futuwaa_lodges_decision_desc_outro
+# 	}
 
-	cooldown = { years = 20 }
+# 	cooldown = { years = 20 }
 
-	is_shown = {
-		government_has_flag = government_is_clan
-		is_landed = yes
-		exists = house
-		exists = capital_province # Sanity check
-		# TODO_CD_EREN: Allow this for people w/o the tradition but nerf it (and rename it)
-		# Otherwise, put it in the valid as well so the tooltip is surfaced to the player
-		culture = { has_cultural_tradition = tradition_futuwaa }
-	}
+# 	is_shown = {
+# 		government_has_flag = government_is_clan
+# 		is_landed = yes
+# 		exists = house
+# 		exists = capital_province # Sanity check
+# 		# TODO_CD_EREN: Allow this for people w/o the tradition but nerf it (and rename it)
+# 		# Otherwise, put it in the valid as well so the tooltip is surfaced to the player
+# 		culture = { has_cultural_tradition = tradition_futuwaa }
+# 	}
 
-	is_valid = {
-		house = {
-			OR = {
-				has_house_unity_stage = antagonistic
-				has_house_unity_stage = competitive
-			}
-		}
-	}
+# 	is_valid = {
+# 		house = {
+# 			OR = {
+# 				has_house_unity_stage = antagonistic
+# 				has_house_unity_stage = competitive
+# 			}
+# 		}
+# 	}
 
-	effect = {
-		save_scope_as = sponsor # For loc
+# 	effect = {
+# 		save_scope_as = sponsor # For loc
 
-		# Yup this nonsense is necessary, custom_tooltip does not support triggered_desc
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						has_dlc_feature = diverge_culture
-						culture = { has_cultural_parameter = martial_custom_equal_combatant } 
-					}
-					faith = { has_doctrine_parameter = combatant_can_be_either_gender_if_no_roco }
-					has_character_modifier = ignores_gender_army_rules
-					culture = {
-						OR = {
-							has_cultural_parameter = has_access_to_shieldmaidens
-							has_cultural_parameter = high_prowess_ignores_knight_restrictions
-						}
-					}
-				}
-			}
-			save_scope_as = any_combatants # This is relevant for a TT later on
-			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_people }
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						has_dlc_feature = diverge_culture
-						culture = { has_cultural_parameter = martial_custom_female_only_combatant } 
-					}
-					faith = { has_doctrine_parameter = combatant_must_be_female_if_no_roco }
-				}
-			}
-			save_scope_as = female_combatants
-			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_women }
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						has_dlc_feature = diverge_culture
-						culture = { has_cultural_parameter = martial_custom_male_only_combatant } 
-					}
-					faith = { has_doctrine_parameter = combatant_must_be_male_if_no_roco }
-				}
-			}
-			save_scope_as = male_combatants
-			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_men }
-		}
+# 		# Yup this nonsense is necessary, custom_tooltip does not support triggered_desc
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					AND = {
+# 						has_dlc_feature = diverge_culture
+# 						culture = { has_cultural_parameter = martial_custom_equal_combatant } 
+# 					}
+# 					faith = { has_doctrine_parameter = combatant_can_be_either_gender_if_no_roco }
+# 					has_character_modifier = ignores_gender_army_rules
+# 					culture = {
+# 						OR = {
+# 							has_cultural_parameter = has_access_to_shieldmaidens
+# 							has_cultural_parameter = high_prowess_ignores_knight_restrictions
+# 						}
+# 					}
+# 				}
+# 			}
+# 			save_scope_as = any_combatants # This is relevant for a TT later on
+# 			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_people }
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				OR = {
+# 					AND = {
+# 						has_dlc_feature = diverge_culture
+# 						culture = { has_cultural_parameter = martial_custom_female_only_combatant } 
+# 					}
+# 					faith = { has_doctrine_parameter = combatant_must_be_female_if_no_roco }
+# 				}
+# 			}
+# 			save_scope_as = female_combatants
+# 			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_women }
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				OR = {
+# 					AND = {
+# 						has_dlc_feature = diverge_culture
+# 						culture = { has_cultural_parameter = martial_custom_male_only_combatant } 
+# 					}
+# 					faith = { has_doctrine_parameter = combatant_must_be_male_if_no_roco }
+# 				}
+# 			}
+# 			save_scope_as = male_combatants
+# 			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_men }
+# 		}
 		
 
-		if = {
-			limit = { exists = scope:any_combatants }
-			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_num_people }
-		}
-		else_if = {
-			limit = { exists = scope:female_combatants }
-			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_num_women }
-		}
-		else_if = {
-			limit = { exists = scope:male_combatants }
-			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_num_men }
-		}
+# 		if = {
+# 			limit = { exists = scope:any_combatants }
+# 			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_num_people }
+# 		}
+# 		else_if = {
+# 			limit = { exists = scope:female_combatants }
+# 			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_num_women }
+# 		}
+# 		else_if = {
+# 			limit = { exists = scope:male_combatants }
+# 			custom_tooltip = { text = unity_establish_futuwaa_lodges_decision.tt_num_men }
+# 		}
 
-		add_character_modifier = {
-			modifier = fp3_established_futuwaa_lodges_modifier
-			years = 20
-		}
+# 		add_character_modifier = {
+# 			modifier = fp3_established_futuwaa_lodges_modifier
+# 			years = 20
+# 		}
 
-		add_character_flag = {
-			flag = fp3_established_futuwaa_lodges
-			years = 20
-		}
+# 		add_character_flag = {
+# 			flag = fp3_established_futuwaa_lodges
+# 			years = 20
+# 		}
 		
-		create_story = story_cycle_futuwaa_lodges
-	}
+# 		create_story = story_cycle_futuwaa_lodges
+# 	}
 
-	cost = {
-		piety = { value = unity_minor_decision_piety_cost }
-	}
+# 	cost = {
+# 		piety = { value = unity_minor_decision_piety_cost }
+# 	}
 
-	ai_will_do = {
-		base = 20
-		# Chance increases if root has lots of valid members
-		modifier = {
-			add = 40
-			any_courtier = {
-				count >= 2
-				fp3_is_valid_futuwaa_member = { SPONSOR = root }
-			}
-		}
-		modifier = {
-			add = 40
-			any_courtier = {
-				count >= 4
-				fp3_is_valid_futuwaa_member = { SPONSOR = root }
-			}
-		}
-	}
-}
+# 	ai_will_do = {
+# 		base = 20
+# 		# Chance increases if root has lots of valid members
+# 		modifier = {
+# 			add = 40
+# 			any_courtier = {
+# 				count >= 2
+# 				fp3_is_valid_futuwaa_member = { SPONSOR = root }
+# 			}
+# 		}
+# 		modifier = {
+# 			add = 40
+# 			any_courtier = {
+# 				count >= 4
+# 				fp3_is_valid_futuwaa_member = { SPONSOR = root }
+# 			}
+# 		}
+# 	}
+# }
 
 unity_educate_youth_in_madrasas_decision = {
 	ai_check_interval = 36

@@ -78,6 +78,10 @@
 	1121.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:3000001 reason = rival_historical }
+			add_pressed_claim = title:k_crane_clan 
+			add_pressed_claim = title:d_doji
+			add_pressed_claim = title:c_oyomesan_province
+			add_pressed_claim = title:c_kazenmuketsu_province
 		}
 	}
 		

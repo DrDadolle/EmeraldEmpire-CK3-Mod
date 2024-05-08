@@ -76,7 +76,7 @@ rokugan_abdicate_decision = {
 
 	effect = {
 		custom_tooltip = rokugan_abdicate_decision_effect_text
-		trigger_event = abdication.0001
+		trigger_event = rokugan_abdication_decision.0001
 		# If faith has a monastic tradition, may retire as a monk
 	}
 
@@ -139,7 +139,7 @@ abandon_white_hair_decision = {
 
 	selection_tooltip = abandon_white_hair_decision_tooltip
 
-	cooldown = { days = @celibacy_cooldown_time }
+	cooldown = { days = @bleach_hair_cooldown_time }
 
 	is_shown = {
 		has_trait = bleached_white_hair
