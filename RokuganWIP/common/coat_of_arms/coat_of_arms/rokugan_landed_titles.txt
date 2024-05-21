@@ -344,6 +344,30 @@ c_renga_province = { #akodo
 		texture = "te_lion_akodo.dds"
 	}
 }
+
+c_henkyou_province = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+
+c_oiku_province = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+
+c_kokoro_province = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
 ##### Matsu
 d_matsu = { #matsu
 	pattern = "pattern_solid.dds"	
