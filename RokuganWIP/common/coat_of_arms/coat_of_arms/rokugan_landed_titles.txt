@@ -2309,6 +2309,36 @@ c_kyoukan_province = { #Hida
 		texture = "te_crab_hida.dds"
 	}
 }
+b_kyuden_hida = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+b_koten_seido = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+b_ugawari_toride = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+b_kyuden_moshibaru = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+
+
 c_ishibei_province = { #Hida
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -2316,6 +2346,22 @@ c_ishibei_province = { #Hida
 		texture = "te_crab_hida.dds"
 	}
 }
+b_shiro_kakeguchi = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+b_castle_of_the_forgotten = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+
+
 c_juuin_province = { #Hida
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -2323,6 +2369,21 @@ c_juuin_province = { #Hida
 		texture = "te_crab_hida.dds"
 	}
 }
+b_higashiyama_mura = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+b_nishiyama_mura = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+
 c_ishigaki_province = { #Hida
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -2330,6 +2391,21 @@ c_ishigaki_province = { #Hida
 		texture = "te_crab_hida.dds"
 	}
 }
+b_shiro_ishigaki = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+b_shiro_ishigaki_2 = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+
 c_shinsei_last_hope = { #Hida
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -2337,7 +2413,22 @@ c_shinsei_last_hope = { #Hida
 		texture = "te_crab_hida.dds"
 	}
 }
+b_shinsei_last_hope = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+
 c_garanto_province_crab = { #Hida
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_hida.dds"
+	}
+}
+b_nagai_aruki = { #Hida
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -2367,6 +2458,21 @@ c_yoake_province = { #kaiu
 		texture = "te_crab_kaiu.dds"
 	}
 }
+b_shiro_kaiu = { #kaiu
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kaiu.dds"
+	}
+}
+b_razor_dawn_castle = { #kaiu
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kaiu.dds"
+	}
+}
+
 c_kuda_province = { #kaiu
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -2374,7 +2480,50 @@ c_kuda_province = { #kaiu
 		texture = "te_crab_kaiu.dds"
 	}
 }
+b_kuda_mura = { #kaiu
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kaiu.dds"
+	}
+}
+b_maemikake = { #kaiu
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kaiu.dds"
+	}
+}
+
 c_hokufuu_province = { #kaiu
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kaiu.dds"
+	}
+}
+b_face_east_castle = { #kaiu
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kaiu.dds"
+	}
+}
+b_maisuna_shiro = { #kaiu
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kaiu.dds"
+	}
+}
+b_watch_tower_west = { #kaiu
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kaiu.dds"
+	}
+}
+b_shattered_peak_castle = { #kaiu
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -2396,7 +2545,36 @@ c_adauchi_province = { #kuni
 		texture = "te_crab_kuni.dds"
 	}
 }
+b_shiro_kuni = { #kuni
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kuni.dds"
+	}
+}
+b_castle_damned = { #kuni
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kuni.dds"
+	}
+}
+
 c_midakai_province = { #kuni
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kuni.dds"
+	}
+}
+b_high_tree_village = { #kuni
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_crab_kuni.dds"
+	}
+}
+b_kakita_breath = { #kuni
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -2418,7 +2596,57 @@ c_junkin_province = { #yasuki
 		texture = "te_crab_yasuki.dds"
 	}
 }
+b_yasuki_yashiki = { #yasuki
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crab_yasuki.dds"
+	}
+}
+b_friendly_traveler_village = { #yasuki
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crab_yasuki.dds"
+	}
+}
+b_watch_tower_east = { #yasuki
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crab_yasuki.dds"
+	}
+}
+
 c_sunda_mizu_mura_province = { #yasuki
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crab_yasuki.dds"
+	}
+}
+b_clear_water_village = { #yasuki
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crab_yasuki.dds"
+	}
+}
+b_fundai_village = { #yasuki
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crab_yasuki.dds"
+	}
+}
+b_shiro_kano = { #yasuki
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crab_yasuki.dds"
+	}
+}
+b_yasuki_hanko = { #yasuki
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
