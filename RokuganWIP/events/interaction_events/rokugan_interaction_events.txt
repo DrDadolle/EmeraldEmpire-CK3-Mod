@@ -1,6 +1,7 @@
 ﻿#Vassal Seppuku Attempt succeeded.
 rokugan_char_interaction.0231 = {
 	type = character_event
+	content_source = l5r_dlc
 	title = rokugan_char_interaction.0231.title
 	desc = { 
 			desc = rokugan_char_interaction.0231.desc
