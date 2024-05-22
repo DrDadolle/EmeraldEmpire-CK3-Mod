@@ -3225,6 +3225,20 @@ c_kakusu_province = { # Fox Clan
 		texture = "te_minor_fox.dds"
 	}
 }
+b_kyuden_kitsune = { # Fox Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_fox.dds"
+	}
+}
+b_kitsune_mori_mura = { # Fox Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_fox.dds"
+	}
+}
 ##### Moshi
 d_moshi = {# Centipede Clan
 	pattern = "pattern_solid.dds"	
@@ -3234,6 +3248,20 @@ d_moshi = {# Centipede Clan
 	}
 }
 c_mukade_no_tani_province = {# Centipede Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_centipede.dds"
+	}
+}
+b_shiro_moshi = {# Centipede Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_centipede.dds"
+	}
+}
+b_amaterasu_seido = {# Centipede Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -3255,6 +3283,27 @@ c_kasuga_province = { # Tortoise Clan
 		texture = "te_minor_tortoise.dds"
 	}
 }
+b_kyuden_kasuga = { # Tortoise Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_tortoise.dds"
+	}
+}
+b_slow_tide_harbor = { # Tortoise Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_tortoise.dds"
+	}
+}
+b_kasuga_seido = { # Tortoise Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_tortoise.dds"
+	}
+}
 ##### Tonbo
 d_tonbo = { # Dragonfly Clan
 	pattern = "pattern_solid.dds"	
@@ -3264,6 +3313,20 @@ d_tonbo = { # Dragonfly Clan
 	}
 }
 c_tonbo_province = { # Dragonfly Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_dragonfly.dds"
+	}
+}
+b_kyuden_tonbo = { # Dragonfly Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_dragonfly.dds"
+	}
+}
+b_still_water_temple = { # Dragonfly Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -3285,6 +3348,20 @@ c_toritaka_province = { # Falcon Clan
 		texture = "te_minor_falcon.dds"
 	}
 }
+b_shiro_toritaka = { # Falcon Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_falcon.dds"
+	}
+}
+b_kyuden_toketsu = { # Falcon Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_falcon.dds"
+	}
+}
 ##### Usagi
 d_usagi = { # Hare Clan
 	pattern = "pattern_solid.dds"	
@@ -3294,6 +3371,34 @@ d_usagi = { # Hare Clan
 	}
 }
 c_usagi_province = { # Hare Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_hare.dds"
+	}
+}
+b_shiro_usagi = { # Hare Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_hare.dds"
+	}
+}
+b_kudo_mura = { # Hare Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_hare.dds"
+	}
+}
+b_meidochi = { # Hare Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_hare.dds"
+	}
+}
+b_usagi_mori = { # Hare Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -3315,6 +3420,14 @@ c_gotei_province = { # Mantis Clan
 		texture = "te_minor_mantis.dds"
 	}
 }
+b_kyuden_gotei = { # Mantis Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_mantis.dds"
+	}
+}
+
 c_koutetsukan_province_mantis = { # Mantis Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
@@ -3322,6 +3435,14 @@ c_koutetsukan_province_mantis = { # Mantis Clan
 		texture = "te_minor_mantis.dds"
 	}
 }
+b_iron_city_turtle = { # Mantis Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_mantis.dds"
+	}
+}
+
 c_kaze_province = { # Mantis Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
@@ -3329,6 +3450,14 @@ c_kaze_province = { # Mantis Clan
 		texture = "te_minor_mantis.dds"
 	}
 }
+b_kaimetsu_uo_seido = { # Mantis Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_mantis.dds"
+	}
+}
+
 c_inazuma_province = { # Mantis Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
@@ -3336,6 +3465,14 @@ c_inazuma_province = { # Mantis Clan
 		texture = "te_minor_mantis.dds"
 	}
 }
+b_city_of_lightning = { # Mantis Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_mantis.dds"
+	}
+}
+
 c_irie_province = { # Mantis Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
@@ -3343,6 +3480,21 @@ c_irie_province = { # Mantis Clan
 		texture = "te_minor_mantis.dds"
 	}
 }
+b_irie_toshi = { # Mantis Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_mantis.dds"
+	}
+}
+b_irie_empty = { # Mantis Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_mantis.dds"
+	}
+}
+
 c_tokigogachu_province = { # Mantis Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
@@ -3350,7 +3502,22 @@ c_tokigogachu_province = { # Mantis Clan
 		texture = "te_minor_mantis.dds"
 	}
 }
+b_tokigogachu = { # Mantis Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_mantis.dds"
+	}
+}
+
 c_maigosera_province = { # Mantis Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_mantis.dds"
+	}
+}
+b_maigosera_seido = { # Mantis Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -3372,6 +3539,14 @@ c_ashinagabachi_province = { # Wasp Clan
 		texture = "te_minor_wasp.dds"
 	}
 }
+b_kyuden_ashinagabachi = { # Wasp Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_wasp.dds"
+	}
+}
+
 c_enzan_province = { # Wasp Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
@@ -3379,6 +3554,14 @@ c_enzan_province = { # Wasp Clan
 		texture = "te_minor_wasp.dds"
 	}
 }
+b_sakana_mura = { # Wasp Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_wasp.dds"
+	}
+}
+
 c_chuuhan_province = { # Wasp Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
@@ -3386,7 +3569,29 @@ c_chuuhan_province = { # Wasp Clan
 		texture = "te_minor_wasp.dds"
 	}
 }
+b_quiet_stream_village = { # Wasp Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_wasp.dds"
+	}
+}
+b_gateway_village = { # Wasp Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_wasp.dds"
+	}
+}
+
 c_shaiga_province = { # Wasp Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_wasp.dds"
+	}
+}
+b_shaiga = { # Wasp Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -3408,6 +3613,13 @@ c_suzume_province = { # Sparrow Clan
 		texture = "te_minor_sparrow.dds"
 	}
 }
+b_kyuden_suzume = { # Sparrow Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_sparrow.dds"
+	}
+}
 ##### Ichiro
 d_ichiro = { # Badger Clan
 	pattern = "pattern_solid.dds"	
@@ -3417,6 +3629,27 @@ d_ichiro = { # Badger Clan
 	}
 }
 c_ichiro_province = { # Badger Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_badger.dds"
+	}
+}
+b_shiro_ichiro = { # Badger Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_badger.dds"
+	}
+}
+b_ryoshun_seido = { # Badger Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_badger.dds"
+	}
+}
+b_teeth_fortress = { # Badger Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -3438,6 +3671,13 @@ c_nekoma_province = { # Cat Clan
 		texture = "te_minor_cat.dds"
 	}
 }
+b_nekoma = { # Cat Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_cat.dds"
+	}
+}
 ##### Bat
 d_komori = { # Bat Clan
 	pattern = "pattern_solid.dds"	
@@ -3447,6 +3687,13 @@ d_komori = { # Bat Clan
 	}
 }
 c_komori_province = { # Bat Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_bat.dds"
+	}
+}
+b_kyuden_komori = { # Bat Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -3468,6 +3715,13 @@ c_shika_province = { # Deer Clan
 		texture = "te_minor_deer.dds"
 	}
 }
+b_kyuden_shika = { # Deer Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_deer.dds"
+	}
+}
 ##### Kaikoga
 d_kaikoga = { # Moth Clan
 	pattern = "pattern_solid.dds"	
@@ -3477,6 +3731,13 @@ d_kaikoga = { # Moth Clan
 	}
 }
 c_kaikoga_province = { # Moth Clan
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_moth.dds"
+	}
+}
+b_shiro_kaikoga = { # Moth Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
