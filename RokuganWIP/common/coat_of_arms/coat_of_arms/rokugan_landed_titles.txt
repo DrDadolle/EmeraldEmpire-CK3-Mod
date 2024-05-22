@@ -41,6 +41,55 @@ c_otosan_uchi_province = {
 		texture = "te_imperial_hantei.dds"
 	}
 }
+b_otosan_uchi = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
+b_kita_chusin_mura = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
+b_nishi_chusin_mura = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
+b_sunset_tower = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
+b_higashi_chushin_mura = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
+b_minami_chushin_mura = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
+b_hantei_seido = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
 
 d_miya = {
 	pattern = "pattern_solid.dds"	
@@ -51,6 +100,13 @@ d_miya = {
 }
 
 c_miya_province = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_miya.dds"
+	}
+}
+b_kyuden_miya = {
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -81,6 +137,20 @@ c_seppun_province = {
 		texture = "te_imperial_seppun.dds"
 	}
 }
+b_kyuden_seppun = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_seppun.dds"
+	}
+}
+b_seppun_graves = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_seppun.dds"
+	}
+}
 
 c_seppun_province_2 = {
 	pattern = "pattern_solid.dds"	
@@ -89,8 +159,43 @@ c_seppun_province_2 = {
 		texture = "te_imperial_seppun.dds"
 	}
 }
+b_shiro_seppun_2 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_seppun.dds"
+	}
+}
+b_four_temples = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_seppun.dds"
+	}
+}
+b_seppun_port = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_seppun.dds"
+	}
+}
+b_seppun_tower = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_seppun.dds"
+	}
+}
 
 c_seppun_province_3 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_seppun.dds"
+	}
+}
+b_shiro_seppun_3 = {
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -126,8 +231,35 @@ c_kazenmuketsu_province = { #Doji
 		texture = "te_crane_doji.dds"
 	}
 }
-
 b_kyuden_doji = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_kyuden_garden = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_blind_monk_temple = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_shizuka_toshi = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_kyuden_no_kin = { #Doji
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -142,6 +274,34 @@ c_oyomesan_province = { #Doji
 		texture = "te_crane_doji.dds"
 	}
 }
+b_oyomesan_shiro = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_benten_seido = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_seven_fold_palace = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_musume_mura = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
 
 c_itoshii_province = { #Doji
 	pattern = "pattern_solid.dds"	
@@ -150,6 +310,28 @@ c_itoshii_province = { #Doji
 		texture = "te_crane_doji.dds"
 	}
 }
+b_sea_watch_castle = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_itoshii_empty_1 = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_itoshii_empty_2 = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+
 
 c_umoeru_province = { #Doji
 	pattern = "pattern_solid.dds"	
@@ -158,8 +340,36 @@ c_umoeru_province = { #Doji
 		texture = "te_crane_doji.dds"
 	}
 }
+b_umoeru_mura = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_umoeru_empty = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
 
 c_kougen_province = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_ookami_toshi = { #Doji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_doji.dds"
+	}
+}
+b_kougen_mura = { #Doji
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -182,8 +392,28 @@ c_hayaku_province = { #Daidoji
 		texture = "te_crane_daidoji.dds"
 	}
 }
-
 b_shiro_daidoji = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
+b_prosperous__plains_city = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
+b_giji_seido = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
+b_tsangusuri = { #Daidoji
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -198,6 +428,13 @@ c_kosaten_province = { #Daidoji
 		texture = "te_crane_daidoji.dds"
 	}
 }
+b_kosaten_shiro = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
 
 c_sabishii_province = { #Daidoji
 	pattern = "pattern_solid.dds"	
@@ -206,8 +443,50 @@ c_sabishii_province = { #Daidoji
 		texture = "te_crane_daidoji.dds"
 	}
 }
+b_song_bird_cage = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
+b_mura_sabishii = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
+b_water_music_village = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
+b_uebi_marshes = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
 
 c_ichigun_province = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
+b_daidoji_estate = { #Daidoji
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_daidoji.dds"
+	}
+}
+b_daidoji_training_grounds = { #Daidoji
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -229,8 +508,28 @@ c_shinkyou_province = { #Asahina
 		texture = "te_crane_asahina.dds"
 	}
 }
-
 b_shinden_asahina = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
+b_shiro_hanamidoki = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
+b_garden_under_shadow_city = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
+b_bunya_sano_asahina = { #Asahina
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -245,8 +544,50 @@ c_wakiaiai_province = { #Asahina
 		texture = "te_crane_asahina.dds"
 	}
 }
+b_never_sleeps_port = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
+b_north_shinkyou = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
 
 c_anshin_province = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
+b_wall_above_ocean = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
+b_zenshou_tetsu = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
+b_oni_mura = { #Asahina
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_asahina.dds"
+	}
+}
+b_heaven_wisdom_temple = { #Asahina
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -269,8 +610,28 @@ c_takuetsu_province = { #Kakita
 		texture = "te_crane_kakita.dds"
 	}
 }
-
 b_kyuden_kakita = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
+b_kakita_seido = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
+b_tsuma = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
+b_shiro_iwasaki = { #Kakita
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -285,6 +646,13 @@ c_nanhan_province = { #Kakita
 		texture = "te_crane_kakita.dds"
 	}
 }
+b_shiro_ashidaka = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
 
 c_gyousha_province = { #Kakita
 	pattern = "pattern_solid.dds"	
@@ -293,8 +661,43 @@ c_gyousha_province = { #Kakita
 		texture = "te_crane_kakita.dds"
 	}
 }
+b_samui_kaze_toshi = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
+b_jurojin_seido = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
 
 c_kishou_province = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
+b_kishou_shiro = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
+b_aketsu = { #Kakita
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_crane_kakita.dds"
+	}
+}
+b_ice_fish_village = { #Kakita
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -320,8 +723,21 @@ d_akodo = { #akodo
 		texture = "te_lion_akodo.dds"
 	}
 }
-
 c_kenryu_province = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+b_shiro_akodo = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+b_yu_seido = { #akodo
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
@@ -336,8 +752,29 @@ c_shimizu_province = { #akodo
 		texture = "te_lion_akodo.dds"
 	}
 }
+b_shiro_shimizu = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
 
 c_renga_province = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+b_shiro_renga = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+b_renga_mura = { #akodo
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
@@ -352,6 +789,20 @@ c_henkyou_province = { #akodo
 		texture = "te_lion_akodo.dds"
 	}
 }
+b_shiro_no_shin = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+b_henkyou_mura = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
 
 c_oiku_province = { #akodo
 	pattern = "pattern_solid.dds"	
@@ -360,8 +811,43 @@ c_oiku_province = { #akodo
 		texture = "te_lion_akodo.dds"
 	}
 }
+b_shiro_oiku = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+b_oiku_mura = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
 
 c_kokoro_province = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+b_shiro_seizaku = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+b_seizaku_toshi = { #akodo
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_akodo.dds"
+	}
+}
+b_nezuban_seido = { #akodo
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
@@ -383,6 +869,42 @@ c_yama_province = { #matsu
 		texture = "te_lion_matsu.dds"
 	}
 }
+b_shiro_matsu = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+b_hall_ancestors = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+b_ikeda_toshi = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+b_rei_seido = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+b_makoto_seido = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+
 c_azuma_province = { #matsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
@@ -390,6 +912,14 @@ c_azuma_province = { #matsu
 		texture = "te_lion_matsu.dds"
 	}
 }
+b_kyakuchu_mura = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+
 c_heigen_province = { #matsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
@@ -397,6 +927,21 @@ c_heigen_province = { #matsu
 		texture = "te_lion_matsu.dds"
 	}
 }
+b_shiro_koritome = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+b_koritome_toshi = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+
 c_kaeru_province = { #matsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
@@ -404,6 +949,28 @@ c_kaeru_province = { #matsu
 		texture = "te_lion_matsu.dds"
 	}
 }
+b_capture_city = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+b_kitsu_tombs = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+b_tsumekurachi_kitsu_shinden = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+
 c_tonfajutsen_province = { #matsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
@@ -411,6 +978,14 @@ c_tonfajutsen_province = { #matsu
 		texture = "te_lion_matsu.dds"
 	}
 }
+b_crossroad_castle = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+
 c_yojin_province = { #matsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
@@ -418,6 +993,21 @@ c_yojin_province = { #matsu
 		texture = "te_lion_matsu.dds"
 	}
 }
+b_yojin_shiro = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+b_yojin_mura = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+
 c_gakka_province = { #matsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
@@ -425,7 +1015,29 @@ c_gakka_province = { #matsu
 		texture = "te_lion_matsu.dds"
 	}
 }
+b_kenson_gakka = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+b_yaruki_jukko_no_tera = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+
 c_chugen_province = { #matsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_matsu.dds"
+	}
+}
+b_shiro_chugen = { #matsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
@@ -447,6 +1059,21 @@ c_hayai_province = { #kitsu
 		texture = "te_lion_kitsu.dds"
 	}
 }
+b_shiro_hayai = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
+	}
+}
+b_hayai_seido = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
+	}
+}
+
 c_rugashi_province = { #kitsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
@@ -454,6 +1081,28 @@ c_rugashi_province = { #kitsu
 		texture = "te_lion_kitsu.dds"
 	}
 }
+b_shiro_rugashi = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
+	}
+}
+b_rugashi_seido = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
+	}
+}
+b_rugashi_toshi = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
+	}
+}
+
 c_foshi_province = { #kitsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
@@ -461,7 +1110,43 @@ c_foshi_province = { #kitsu
 		texture = "te_lion_kitsu.dds"
 	}
 }
+b_shiro_foshi = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
+	}
+}
+b_foshi_mura = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
+	}
+}
+
 c_daikiri_province = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
+	}
+}
+b_shiro_daikiri = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
+	}
+}
+b_bishamon_seido = { #kitsu
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_kitsu.dds"
+	}
+}
+b_blue_chrysathemum_village = { #kitsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
@@ -484,8 +1169,36 @@ c_gunsho_province = { #ikoma
 		texture = "te_lion_ikoma.dds"
 	}
 }
+b_shiro_ikoma = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_ikoma.dds"
+	}
+}
+b_murame_toshi = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_ikoma.dds"
+	}
+}
 
 c_eiyu_province = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_ikoma.dds"
+	}
+}
+b_shiro_eiyu = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_ikoma.dds"
+	}
+}
+b_mura_sano_eiyu = { #ikoma
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
@@ -500,6 +1213,13 @@ c_gisei_province = { #ikoma
 		texture = "te_lion_ikoma.dds"
 	}
 }
+b_gisei_toshi = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_ikoma.dds"
+	}
+}
 
 c_ikota_province = { #ikoma
 	pattern = "pattern_solid.dds"	
@@ -508,8 +1228,36 @@ c_ikota_province = { #ikoma
 		texture = "te_lion_ikoma.dds"
 	}
 }
+b_shiro_kyube = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_ikoma.dds"
+	}
+}
+b_great_hall = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_ikoma.dds"
+	}
+}
 
 c_shiranai_province = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_ikoma.dds"
+	}
+}
+b_nishi_no_shiro = { #ikoma
+	pattern = "pattern_solid.dds"	
+	color1 = "brown"
+	textured_emblem = {
+		texture = "te_lion_ikoma.dds"
+	}
+}
+b_shiranai_toshi = { #ikoma
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
