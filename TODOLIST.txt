@@ -26,10 +26,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - check Asia Expansion, ask for rights W8t 4 response
 - Add bridge mesh map objects
 - Fix the bookmarks, so Doji is not naked, and it looks better
-- Last name added to names BUT, need to use spouse name if maried ? Add "of Lands" too ?
-- Add river map (more ?)
 - Add localization rivers
-- Add CoA à la AGOT for all baronnies
+- Add CoA à la AGOT for all baronnies (unaligned lands todo with wolf mon)
+- Add river map (more ?)
 
 ## Fixes to do
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
@@ -59,37 +58,10 @@ found_empire_decision)
 - Prevent imperial family from doing wars against other clans...? Only for AI ?
 - Blood feud (like Matsu vs Kakita)	
 - special buildings
-	- Gisei Toshi DONE
-	- Pale Oak Castle tree DONE
 	- Hall of Ancestors Lion
-	- Kyuden Hida special castle
-		- For all Clan Champion Castle as well ? + Otosan Uchi
-	- Kaiu Wall (cf great wall of chine)
-	- Ryoko Owari opium trade DONE
-	- Sunda Mizu Mura pearl trade DONE
-	- Silk/Spice trade port Mantis/Tortoise DONE
-	- Kaiu wall done
+	- Otosan Uchi
 	- Traitor's Trove
 	- Tsuma Topaz building
-	- Mines
-		IN 
-			- Twilight Mountains (c_hokufuu_province b_maisuna_shiro ) / Iron  DONE
-			- Twilight Mountains (c_ishibei_province b_shiro_kakeguchi) / Iron DONE
-			- Wall above ocean mountains (c_juuin_province b_higashiyama_mura) / Jade DONE
-			- Kuni Lands (c_midakai_province b_high_tree_village) / Iron DONE
-			- Hills Daidoji (c_umoeru_province b_umoeru_mura) / Coal (keep it ?Iron ?) DONE
-			- c_yakeishi_province b_tetsu_kama_mura / Iron DONE
-			- Serpent's Tail Mine (c_sabishii_province_dragon b_yamasura) / Gold & Iron DONE
-			- c_shaiga_province b_shaiga / Gold DONE DONE
-			- c_mihari_province b_orange_flame_village / Stuff to make fireworks DONE
-			- c_chuuou_province b_aitate_toshi / Silver mine DONE
-			- c_kirin_province b_shiro_gisu / Silver mine DONE
-			- c_kakushikoto_province b_nihai_tower / Iron DONE
-						- (c_fukitsu_province b_nagamori_mura / Iron => NOT Added by choice))
-			- c_ujidera_province b_shinden_horiuchi / Iron  DONE
-			- c_bugaisha_province b_shiro_bugaisha / Diamond open pit DONE
-			- c_tsuriai_province b_yashigi_village / jade DONE
-			- c_south_shinomen_ronin_1 b_south_shinomen_ronin_1 (I guess ? need the one close to the mountains) / Gold DONE
 	- Chuda Ruins
 			- revive chuda dynasty decision !
 - characters
