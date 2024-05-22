@@ -23,20 +23,16 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - innovation (special culture ones) and shared ones. Re-localization of some
 
 ## short term goals 
-- Add DLC L5R Icons in gfx/interface/illustrations/dlc_event_decorations/, which is the icon that shows up in the top right corner of your events. 526x128 resolution, A8R8G8B8, no mipmaps (cf "How to add a content source to your events" discord)
-- edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
-- add 1.12.5 Events - Basic Sanitation (cf discord)
 - check Asia Expansion, ask for rights W8t 4 response
-- Moth mon : https://cdn.discordapp.com/attachments/567780175824027688/727586930145099846/mothmon4.png?ex=664edde2&is=664d8c62&hm=a9bf70387d71393919c2641a7455880a49ff78897ccb2e31043371c153a10114&
-- Deer mon : https://ffg-forum-archive.entropicdreams.com/images/archive/ffg/Mfantflight/monthly_2017_05/Stag_Clan_Mon.png.1922d92d0f22b1d8b93f199a1a0c79cc.jpg
 - Cat mon : @Bamba
+- Add CoA Ronin
 - Add bridge mesh map objects
 - Fix the bookmarks, so Doji is not naked, and it looks better
-- Add localization rivers
 - Add CoA à la AGOT for all baronnies (unaligned lands todo with wolf mon)
 - Add river map (more ?)
 - Add Phoenix (Korean) & Dragon (Chinese) Castle aestethic (credit to Kefir)
 - Add Otosan Uchi special building + Kyoto Imperial Palace Model (Kefir)
+- edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
 
 ## Fixes to do
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...

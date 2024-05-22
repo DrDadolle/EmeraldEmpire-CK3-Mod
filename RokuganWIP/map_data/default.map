@@ -58,7 +58,6 @@ river_provinces = RANGE { 278 285 }
 #Dragon-Lion Rivers
 river_provinces = RANGE { 348 353 }	
 #Unicorn Rivers
-river_provinces = LIST { 287 }	
 river_provinces = RANGE { 354 358 }	
 river_provinces = RANGE { 360 363 }	
 # River of Gold
@@ -89,6 +88,7 @@ lakes = LIST { 381 }	#Kakita Lake
 lakes = LIST { 382 }	#Tsuruchi Lake
 lakes = LIST { 385 }	#Kitsu Lake
 lakes = LIST { 394 }	#Ide Lake
+lakes = LIST { 287 }	# Moto Lake
 #####################
 # IMPASSABLE TERRAIN
 #####################
