@@ -966,12 +966,14 @@ e_rokugan = {
             }
 			c_ryoko_province = {
                  color = { 226 18 18 } 
+                 
 				 b_ryoko_no_owari_toshi = {
                      province = 170
                  }
             }
 			c_kakushikoto_province = {
                  color = { 182 61 61 } 
+
 				 b_nihai_tower = {
                      province = 169
                  }
@@ -996,6 +998,7 @@ e_rokugan = {
             }
 			c_kimbouo_province = {
                  color = { 157 23 23 } 
+
 				 b_pokau = {
                      province = 173
                  }

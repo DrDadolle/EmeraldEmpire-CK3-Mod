@@ -1999,6 +1999,35 @@ c_kunizakai_province = { #Bayushi
 		texture = "te_scorpion_bayushi.dds"
 	}
 }
+b_kyuden_bayushi = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+b_bayushi_seido = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+b_traitor_grove_mura = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+b_shiro_kuraishi = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+
 c_nezuban_province = { #Bayushi
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -2006,6 +2035,21 @@ c_nezuban_province = { #Bayushi
 		texture = "te_scorpion_bayushi.dds"
 	}
 }
+b_fortunate_husband_keep = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+b_hotei_seido = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+
 c_chuuou_province = { #Bayushi
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -2013,7 +2057,36 @@ c_chuuou_province = { #Bayushi
 		texture = "te_scorpion_bayushi.dds"
 	}
 }
+b_aitate_toshi = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+b_shimomura = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+
 c_hirozu_province = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+b_palace_of_crimson_shadow = { #Bayushi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_bayushi.dds"
+	}
+}
+b_shutai = { #Bayushi
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -2035,6 +2108,28 @@ c_kawa_province = { #Shosuro
 		texture = "te_scorpion_shosuro.dds"
 	}
 }
+b_shiro_shosuro = { #Shosuro
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_shosuro.dds"
+	}
+}
+b_painted_city = { #Shosuro
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_shosuro.dds"
+	}
+}
+b_ginasutra = { #Shosuro
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_shosuro.dds"
+	}
+}
+
 c_ryoko_province = { #Shosuro
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -2042,7 +2137,22 @@ c_ryoko_province = { #Shosuro
 		texture = "te_scorpion_shosuro.dds"
 	}
 }
+b_ryoko_no_owari_toshi = { #Shosuro
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_shosuro.dds"
+	}
+}
+
 c_kakushikoto_province = { #Shosuro
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_shosuro.dds"
+	}
+}
+b_nihai_tower = { #Shosuro
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -2064,6 +2174,14 @@ c_an_ei_province = { #Soshi
 		texture = "te_scorpion_soshi.dds"
 	}
 }
+b_shiro_soshi = { #Soshi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_soshi.dds"
+	}
+}
+
 c_yuma_province = { #Soshi
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -2071,7 +2189,36 @@ c_yuma_province = { #Soshi
 		texture = "te_scorpion_soshi.dds"
 	}
 }
+b_hidden_watch_keep = { #Soshi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_soshi.dds"
+	}
+}
+
 c_kimbouo_province = { #Soshi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_soshi.dds"
+	}
+}
+b_pokau = { #Soshi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_soshi.dds"
+	}
+}
+b_shrine_of_shadows_eye = { #Soshi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_soshi.dds"
+	}
+}
+b_kimbouo_empty = { #Soshi
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -2093,7 +2240,43 @@ c_fukitsu_province = { #Yogo
 		texture = "te_scorpion_yogo.dds"
 	}
 }
+b_shiro_yogo = { #Yogo
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_yogo.dds"
+	}
+}
+b_nagamori_mura = { #Yogo
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_yogo.dds"
+	}
+}
+
 c_beiden_province = { #Yogo
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_yogo.dds"
+	}
+}
+b_seven_stings_keep = { #Yogo
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_yogo.dds"
+	}
+}
+b_beiden = { #Yogo
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_scorpion_yogo.dds"
+	}
+}
+b_kagoki = { #Yogo
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
