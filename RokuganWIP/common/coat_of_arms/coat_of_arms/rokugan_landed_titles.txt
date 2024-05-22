@@ -1733,6 +1733,41 @@ c_mucha_province = { # Togashi
 		texture = "te_dragon_togashi.dds"
 	}
 }
+b_shiro_togashi = { # Togashi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_togashi.dds"
+	}
+}
+b_furtherest_fortress = { # Togashi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_togashi.dds"
+	}
+}
+b_fukurokujin_seido = { # Togashi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_togashi.dds"
+	}
+}
+b_high_wall_village = { # Togashi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_togashi.dds"
+	}
+}
+b_moutain_summit_temple = { # Togashi
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_togashi.dds"
+	}
+}
 ##### Mirumoto
 d_mirumoto = { # Mirumoto
 	pattern = "pattern_solid.dds"	
@@ -1748,6 +1783,21 @@ c_toshibu_province = { # Mirumoto
 		texture = "te_dragon_mirumoto.dds"
 	}
 }
+b_shiro_mirumoto = { # Mirumoto
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_mirumoto.dds"
+	}
+}
+b_heibesu = { # Mirumoto
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_mirumoto.dds"
+	}
+}
+
 c_gaien_province = { # Mirumoto
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -1755,6 +1805,14 @@ c_gaien_province = { # Mirumoto
 		texture = "te_dragon_mirumoto.dds"
 	}
 }
+b_foothills_keep = { # Mirumoto
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_mirumoto.dds"
+	}
+}
+
 c_yakeishi_province = { # Mirumoto
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -1762,7 +1820,36 @@ c_yakeishi_province = { # Mirumoto
 		texture = "te_dragon_mirumoto.dds"
 	}
 }
+b_shiro_zurui = { # Mirumoto
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_mirumoto.dds"
+	}
+}
+b_tetsu_kama_mura = { # Mirumoto
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_mirumoto.dds"
+	}
+}
+
 c_kousou_province = { # Mirumoto
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_mirumoto.dds"
+	}
+}
+b_nothern_tower_of_flame = { # Mirumoto
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_mirumoto.dds"
+	}
+}
+b_shiransu = { # Mirumoto
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -1784,6 +1871,28 @@ c_shinpi_province = { # Kitsuki
 		texture = "te_dragon_kitsuki.dds"
 	}
 }
+b_shiro_kitsuki = { # Kitsuki
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_kitsuki.dds"
+	}
+}
+b_morning_frost_castle = { # Kitsuki
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_kitsuki.dds"
+	}
+}
+b_keen_eyes_strike_village = { # Kitsuki
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_kitsuki.dds"
+	}
+}
+
 c_kaitou = { # Kitsuki
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
@@ -1791,7 +1900,22 @@ c_kaitou = { # Kitsuki
 		texture = "te_dragon_kitsuki.dds"
 	}
 }
+b_great_fall_castle = { # Kitsuki
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_kitsuki.dds"
+	}
+}
+
 c_sinjutsu_province = { # Kitsuki
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_kitsuki.dds"
+	}
+}
+b_toi_koku = { # Kitsuki
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -1813,7 +1937,36 @@ c_kinenkan_province = { #Agasha
 		texture = "te_dragon_agasha.dds"
 	}
 }
+b_shiro_agasha = { #Agasha
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_agasha.dds"
+	}
+}
+b_dragon_breath_castle = { #Agasha
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_agasha.dds"
+	}
+}
+b_suigeki_toshi = { #Agasha
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_agasha.dds"
+	}
+}
+
 c_sabishii_province_dragon = { #Agasha
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_dragon_agasha.dds"
+	}
+}
+b_yamasura = { #Agasha
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
