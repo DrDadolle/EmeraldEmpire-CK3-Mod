@@ -25,15 +25,14 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ## short term goals 
 - check Asia Expansion, ask for rights W8t 4 response
 - Cat mon : @Bamba
-- Add CoA Ronin
 - Add japanese clothing, add credit (AJ cf how AEP has done)
 - Fix the bookmarks, so Doji is not naked, and it looks better
-- Add CoA à la AGOT for all baronnies (unaligned lands todo with wolf mon)
-- Add river map (more ?)
+- Add CoA à la AGOT for all baronnies/counties +++ (ronin done : missing Kingdoms/duchies/monasteries)
 - Add Phoenix (Korean) Castle aestethic (credit to ???)
 - Add Otosan Uchi special building + Kyoto Imperial Palace Model (Kefir). 
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
 - add volcano + texture for dragon lands. How to add new special building ???? 
+- Add river map (more ?)
 
 ## Fixes to do
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
@@ -42,7 +41,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
 found_empire_decision)
 - check Kizoku title & Khan title => Rework of how title are displayed and calculated.
-- How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
+- How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
 - change "farmlands" to "rice fields" texture (kefir)
 
@@ -111,7 +110,10 @@ found_empire_decision)
 - Volcano for Dragon (cf Discord "CK3 Volcano Map Items" shared ressources)	 & Shadowlands volcano textures !
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
+- do a starting event : "Welcome to Rokugan" event with explanations of a lot of stuff : This place and about myself. War Changes. Empire of Rokugan. Shadowlands. Magic System. I know everything already
+-Duel to end War (check Tales of Ireland mod)
 - genes & ethnicities
+-Add modifiers to dynasties to prove their link to great clans ????
 - ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 
@@ -122,7 +124,8 @@ found_empire_decision)
 - Togashi special succession ?
 - Special weapon & artifacts
 - Black scrolls, cursed artifacts
-- Shindoshi stuff (very low priority)
+- Bunch of new events !
+- Shindoshi stuff 
 - Maho stuff (very low priority)
 	- Tomb of Iuchiban special building ?
 - Shadowlands stuff (very low priority)

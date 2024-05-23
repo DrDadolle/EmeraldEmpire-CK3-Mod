@@ -3768,5 +3768,168 @@ d_chuda = { # Snake Clan. Should be extinct... in theory
 #	culture = xxx
 #}
 ##########################
-##### Unaligned
+##### Monasteries
 ##########################
+##########################
+##### Ronin 
+##########################
+#TODO : ronin mons for ronin duchies & Kingdoms ?
+##### South Shinomen
+d_south_shinomen = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+c_south_shinomen_ronin_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_south_shinomen_ronin_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_cherry_blossom_village = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+c_south_shinomen_ronin_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_south_shinomen_ronin_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+c_south_shinomen_ronin_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_south_shinomen_ronin_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+
+##### Lands 3 armies
+d_ronin_central = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+c_central_lands_ronin_4 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_central_lands_ronin_4 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+c_central_lands_ronin_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_central_lands_ronin_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+c_central_lands_ronin_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_central_lands_ronin_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+c_central_lands_ronin_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_central_lands_ronin_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+c_daidoji_yukan_see = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_daidoji_yukan_see = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+##### Kintani valley 2
+c_nanashi_mura_province = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_nanashi_mura = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
