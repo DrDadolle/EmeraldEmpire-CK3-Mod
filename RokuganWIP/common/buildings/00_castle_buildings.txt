@@ -7,6 +7,7 @@
 @holding_illustration_iranian = "gfx/interface/illustrations/holding_types/fp3_castle_iranian.dds" 
 #Rokugan
 @holding_illustration_japan= "gfx/interface/illustrations/holding_types/castle_japan.dds"
+@holding_illustration_china= "gfx/interface/illustrations/holding_types/castle_china.dds"
 
 castle_01 = {
 	construction_time = slow_construction_time
@@ -59,6 +60,13 @@ castle_01 = {
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { rokugani_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_chinese_castle_01_mesh"
+		illustration = @holding_illustration_china
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
 	}
 
 	### INDIAN ###
@@ -403,6 +411,13 @@ castle_02 = {
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { rokugani_building_gfx }
 	}
+	asset = {
+		type = pdxmesh
+		name = "building_chinese_castle_02_mesh"
+		illustration = @holding_illustration_china
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
+	}
 
 	### MENA ###
 	asset = {
@@ -746,6 +761,13 @@ castle_03 = {
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { rokugani_building_gfx }
 	}
+	asset = {
+		type = pdxmesh
+		name = "building_chinese_castle_03_mesh"
+		illustration = @holding_illustration_china
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
+	}
 
 	### MENA ###
 	asset = {
@@ -1079,6 +1101,13 @@ castle_04 = {
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { rokugani_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_chinese_castle_04_mesh"
+		illustration = @holding_illustration_china
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
 	}
 
 	### MENA ###

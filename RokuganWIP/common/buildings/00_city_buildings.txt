@@ -7,6 +7,7 @@
 @holding_illustration_iranian = "gfx/interface/illustrations/holding_types/fp3_city_iranian.dds"
 #Rokugan
 @holding_illustration_japan = "gfx/interface/illustrations/holding_types/city_japan.dds"
+@holding_illustration_china = "gfx/interface/illustrations/holding_types/city_china.dds"
 
 city_01 = {
 	construction_time = slow_construction_time
@@ -28,6 +29,13 @@ city_01 = {
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { rokugani_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_chinese_city_01_mesh"
+		illustration = @holding_illustration_china
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
 	}
 
 	asset = {
@@ -415,6 +423,13 @@ city_02 = {
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { rokugani_building_gfx }
 	}
+		asset = {
+		type = pdxmesh
+		name = "building_chinese_city_01_mesh"
+		illustration = @holding_illustration_china
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
+	}
 
 	asset = {
 		type = pdxmesh
@@ -779,6 +794,13 @@ city_03 = {
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { rokugani_building_gfx }
 	}
+		asset = {
+		type = pdxmesh
+		name = "building_chinese_city_02_mesh"
+		illustration = @holding_illustration_china
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
+	}
 
 	asset = {
 		type = pdxmesh
@@ -1131,6 +1153,14 @@ city_04 = {
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { rokugani_building_gfx }
 	}
+		asset = {
+		type = pdxmesh
+		name = "building_chinese_city_02_mesh"
+		illustration = @holding_illustration_china
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
+	}
+
 	asset = {
 		type = pdxmesh
 		names = {
