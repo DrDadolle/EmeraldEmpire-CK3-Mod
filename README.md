@@ -26,6 +26,6 @@ Wars requires more prestige within the emerald empire if
 - Blood Magic
 - more bookmark dates
 
-## Special Credit
+## Special Credits
 Rinbro for the japanese coat of arms, with the authorization of the [Shogunate](https://steamcommunity.com/sharedfiles/filedetails/?id=2253278582) mod's lead dev FUN.
-Kefir for the Japanese-style buildings & unit models
+Kefir for the Japanese-style & Chinese-style buildings, and Japanese-style unit models

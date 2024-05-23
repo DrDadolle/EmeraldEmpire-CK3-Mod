@@ -26,13 +26,14 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - check Asia Expansion, ask for rights W8t 4 response
 - Cat mon : @Bamba
 - Add CoA Ronin
-- Add bridge mesh map objects
+- Add japanese clothing, add credit (AJ cf how AEP has done)
 - Fix the bookmarks, so Doji is not naked, and it looks better
 - Add CoA à la AGOT for all baronnies (unaligned lands todo with wolf mon)
 - Add river map (more ?)
-- Add Phoenix (Korean) & Dragon (Chinese) Castle aestethic (credit to Kefir)
+- Add Phoenix (Korean) Castle aestethic (credit to ???)
 - Add Otosan Uchi special building + Kyoto Imperial Palace Model (Kefir)
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
+- add volcano texture for shadowlands & volcano for dragon lands
 
 ## Fixes to do
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
@@ -43,6 +44,7 @@ found_empire_decision)
 - check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance
 - Child can be born with white hair but without the Crane trait !
+- change "farmlands" to "rice fields" texture (kefir)
 
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?
@@ -106,8 +108,10 @@ found_empire_decision)
 - Innovations
 	- Wootz Steel -> Kaiu Steel (reskin)
 	- Gaijin trade (Mantis/Tortoise)
+- Volcano for Dragon (cf Discord "CK3 Volcano Map Items" shared ressources)	 & Shadowlands volcano textures !
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
+- genes & ethnicities
 - ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 

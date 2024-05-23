@@ -31,23 +31,20 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 239;236;river_large;357;-1;-1;-1;-1;x
 211;230;river_large;356;-1;-1;-1;-1;x
 222;223;river_large;396;-1;-1;-1;-1;Furudera-LostMoto
-#IUCHI
-221;231;river_large;393;-1;-1;-1;-1;x
 # Imperial
 148;145;river_large;426;-1;-1;-1;-1;SeppunTower-SeppunShiro2
 142;139;river_large;424;-1;-1;-1;-1;TowerSunSet;OTosanUchi
 147;142;river_large;425;-1;-1;-1;-1;SunsetTower-SeppunPort
+149;145;river_large;386;-1;-1;-1;-1;SeppunShiros
 #Dunno
-89;325;river_large;353;-1;-1;-1;-1;x
-70;319;river_large;350;-1;-1;-1;-1;x
-93;210;river_large;363;-1;-1;-1;-1;x
+89;325;river_large;353;-1;-1;-1;-1;GiseiLion-RichFrog
+70;319;river_large;350;-1;-1;-1;-1;Lion-Dragonfly
+93;210;river_large;363;-1;-1;-1;-1;Lion-Iuchi
 #Scorpion
 166;168;river_large;371;-1;-1;-32;;-1;CaslteOfPretenting-Ginasutra
 333;170;river_large;369;-1;-1;-1;-1;Miya-RyokoOwari
 #KITSUNE
 257;256;river_large;376;-1;-1;-1;-1;KitsuneMori-KyudenKitsune
-#SEPPUN
-149;145;river_large;386;-1;-1;-1;-1;SeppunShiros
 #USAGI
 259;258;river_large;376;-1;-1;-1;-1;Hare-Ronin
 260;258;river_large;379;-1;-1;-1;-1;Hare-HareMura
