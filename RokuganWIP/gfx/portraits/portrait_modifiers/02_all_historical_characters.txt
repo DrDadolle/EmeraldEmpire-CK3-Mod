@@ -1,0 +1,27 @@
+﻿historical_characters_accessories = {
+
+    usage = game
+    selection_behavior = max
+    priority = 2
+
+    shogunate_empty = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = scripted_character_beards_shogunate_01
+                accessory = no_beard
+            }
+        }
+        weight = {
+            base = 0
+            # modifier = {
+            #     add = 200
+            #     exists = this
+            #     exists = character:12030020    # Fujiwara Hidehira
+            #     this   = character:12030020
+            # }
+        }
+    }
+
+}
