@@ -1872,7 +1872,9 @@ fp2_hairstyles_iberian_muslim_curly_commoners = {
         weight = {
             base = 0
             modifier = {
-                add = 55
+                # TODO remove for now
+                # add = 55
+                add = 0
                 exists = this
                 shogunate_should_be_no_hair_trigger = yes
             }
