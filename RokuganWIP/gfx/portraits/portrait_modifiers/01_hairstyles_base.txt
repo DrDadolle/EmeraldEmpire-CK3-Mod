@@ -1808,6 +1808,7 @@ fp2_hairstyles_iberian_muslim_curly_commoners = {
                 }
                 OR = {
                     portrait_japanese_clothing_trigger = yes
+                    portrait_crane_clothing_trigger = yes
                 }
                 shogunate_should_be_no_hair_trigger = no
                 has_fp2_dlc_trigger = no
@@ -1853,6 +1854,7 @@ fp2_hairstyles_iberian_muslim_curly_commoners = {
                 }
                 OR = {
                     portrait_japanese_clothing_trigger = yes
+                    portrait_crane_clothing_trigger = yes
                 }
                 shogunate_should_be_no_hair_trigger = no
                 has_fp2_dlc_trigger = yes

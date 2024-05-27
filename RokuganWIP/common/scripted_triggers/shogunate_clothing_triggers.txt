@@ -86,3 +86,22 @@ portrait_japanese_clothing_contents_trigger = {
 		has_clothing_gfx = rokugani_clothing_gfx
 	}
 }
+
+##### Crane Clan
+portrait_crane_clothing_trigger = {
+	scope:culture = {
+		portrait_crane_clothing_contents_trigger = yes
+	}
+}
+
+portrait_crane_clothing_spouse_trigger = {
+	culture = {
+		portrait_crane_clothing_contents_trigger = yes
+	}
+}
+
+portrait_crane_clothing_contents_trigger = {
+	OR = {
+		has_clothing_gfx = rokugani_crane_clothing_gfx
+	}
+}

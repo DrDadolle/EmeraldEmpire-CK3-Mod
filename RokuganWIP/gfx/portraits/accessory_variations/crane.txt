@@ -1,0 +1,74 @@
+﻿#######################################
+########### COMMON ####################
+#######################################
+
+
+
+#######################################
+########### LOW    ####################
+#######################################
+
+
+#######################################
+########### HIGH   ####################
+#######################################
+
+variation = {
+	name = "japanese_kosode_kimono_crane_01_high"
+
+	### Floral - size varieties ###
+	pattern = { 
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "kimono_pattern_silk_steppe" layout = "aj_plain_fabric_layout_varied" }
+		g = { textures = "juban_plain_silk_01" layout = "plain_fabric_layout" }
+		b = { textures = "kimono_pattern_silk_steppe" layout = "aj_plain_fabric_layout_varied" }
+		a = { textures = "western_silk_plain_01"	layout = "plain_fabric_layout" }
+	}
+	###############################
+	
+	### Storks ###
+	pattern = { 
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "kimono_pattern_silk_01" layout = "aj_plain_fabric_layout_01" }
+		g = { textures = "juban_plain_silk_01" layout = "plain_fabric_layout" }
+		b = { textures = "kimono_pattern_silk_01" layout = "aj_plain_fabric_layout_01" }
+		a = { textures = "western_silk_plain_01"	layout = "plain_fabric_layout" }
+	}
+	pattern = { 
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "kimono_pattern_silk_01" layout = "aj_plain_fabric_layout_02" }
+		g = { textures = "juban_plain_silk_01" layout = "plain_fabric_layout" }
+		b = { textures = "kimono_pattern_silk_01" layout = "aj_plain_fabric_layout_02" }
+		a = { textures = "western_silk_plain_01"	layout = "plain_fabric_layout" }
+	}
+	###############################
+
+	### Branches ###
+	pattern = { 
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "kimono_pattern_silk_02" layout = "aj_plain_fabric_layout_02" }
+		g = { textures = "juban_plain_silk_01" layout = "plain_fabric_layout" }
+		b = { textures = "kimono_pattern_silk_02" layout = "aj_plain_fabric_layout_02" }
+		a = { textures = "western_silk_plain_01"	layout = "plain_fabric_layout" }
+	}
+	###############################
+
+	### Abstract Clouds ### 17th century. anachronistic?
+	pattern = { 
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "kimono_pattern_silk_03" layout = "aj_plain_fabric_layout_03" }
+		g = { textures = "juban_plain_silk_01" layout = "plain_fabric_layout" }
+		b = { textures = "kimono_pattern_silk_03" layout = "aj_plain_fabric_layout_03" }
+		a = { textures = "western_silk_plain_01"	layout = "plain_fabric_layout" }
+	}
+	###############################
+
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/color_palette_crane_kosode_01.dds" }	
+}
+
+
