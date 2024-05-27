@@ -1,15 +1,12 @@
-﻿# shogunate_should_be_no_hair_trigger = {
-
-# 	exists = this
-
-# 	shogunate_has_yamato_culture_trigger = yes
-# 	OR = {
-# 		has_trait = devoted
-# 		has_council_position = councillor_court_chaplain
-# 		culture = { has_cultural_pillar = heritage_buddhist }
-# 	}
-
-# }
+﻿shogunate_should_be_no_hair_trigger = {
+	exists = this
+	# shogunate_has_yamato_culture_trigger = yes
+	# OR = {
+		has_trait = devoted
+	# 	has_council_position = councillor_court_chaplain
+	# 	culture = { has_cultural_pillar = heritage_buddhist }
+	# }
+}
 
 # Armor Era Triggers
 # shogunate_armor_era1_trigger = {	#just o-yoroi for nobility, tachi instead of katana
