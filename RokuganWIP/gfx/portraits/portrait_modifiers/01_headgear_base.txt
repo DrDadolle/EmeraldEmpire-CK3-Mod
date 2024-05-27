@@ -20,10 +20,11 @@ headgear_base = {
 		}
 		weight = {
 			base = 0
-			# No headgear for Japanese characters
+			# No headgear for Rokugani characters
 			modifier = {
 				add = 100
 				portrait_japanese_clothing_trigger = yes
+				portrait_crane_	clothing_trigger = yes
 			}
 		}
 	}
