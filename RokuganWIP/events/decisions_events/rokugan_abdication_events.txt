@@ -1,5 +1,5 @@
 ﻿
-namespace = rokugan_abdication_decision_event
+namespace = rokugan_abdication_decision
 
 rokugan_abdication_decision.0001 = {
 	type = character_event
@@ -57,9 +57,9 @@ rokugan_abdication_decision.0001 = {
 			depose = yes
 		}
 
-		dynasty = {
-			add_dynasty_prestige = minor_dynasty_prestige_gain
-		}
+		# dynasty = {
+		# 	add_dynasty_prestige = minor_dynasty_prestige_gain
+		# }
 	}
 
 	option = {

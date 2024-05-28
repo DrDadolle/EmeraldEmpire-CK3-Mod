@@ -1071,67 +1071,199 @@
 		}
 	}
 
-    japanese_war_helmet_era1_high = {
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = headgear
-                template = shogunate_war_helmet
-                value = 0
-            }
-        }
-        outfit_tags = { military_outfit }
-        weight = {
-            base = 0
-            modifier = {
-                add = 100
-                portrait_war_nobles_helmet_trigger = {
-                    CULTURE_INPUT = japanese
-                }
-                shogunate_armor_era1_trigger = yes
-            }
-        }
-    }
-    japanese_war_helmet_era2_high = {
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = headgear
-                template = shogunate_war_helmet
-                range = { 0 1 } # For the randomness to work correctly
-            }
-        }
-        outfit_tags = { military_outfit }
-        weight = {
-            base = 0
-            modifier = {
-                add = 100
-                portrait_war_nobles_helmet_trigger = {
-                    CULTURE_INPUT = japanese
-                }
-                shogunate_armor_era2_trigger = yes
-            }
-        }
-    }
-    japanese_war_helmet_era3_high = {
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = headgear
-                template = shogunate_war_helmet
-                value = 1
-            }
-        }
-        outfit_tags = { military_outfit }
-        weight = {
-            base = 0
-            modifier = {
-                add = 100
-                portrait_war_nobles_helmet_trigger = {
-                    CULTURE_INPUT = japanese
-                }
-                shogunate_armor_era3_trigger = yes
-            }
-        }
-    }
+    # japanese_war_helmet_era1_high = {
+    #     dna_modifiers = {
+    #         accessory = {
+    #             mode = add
+    #             gene = headgear
+    #             template = shogunate_war_helmet
+    #             value = 0
+    #         }
+    #     }
+    #     outfit_tags = { military_outfit }
+    #     weight = {
+    #         base = 0
+    #         modifier = {
+    #             add = 100
+    #             portrait_war_nobles_helmet_trigger = {
+    #                 CULTURE_INPUT = japanese
+    #             }
+    #             shogunate_armor_era1_trigger = yes
+    #         }
+    #     }
+    # }
+    # japanese_war_helmet_era2_high = {
+    #     dna_modifiers = {
+    #         accessory = {
+    #             mode = add
+    #             gene = headgear
+    #             template = shogunate_war_helmet
+    #             range = { 0 1 } # For the randomness to work correctly
+    #         }
+    #     }
+    #     outfit_tags = { military_outfit }
+    #     weight = {
+    #         base = 0
+    #         modifier = {
+    #             add = 100
+    #             portrait_war_nobles_helmet_trigger = {
+    #                 CULTURE_INPUT = japanese
+    #             }
+    #             shogunate_armor_era2_trigger = yes
+    #         }
+    #     }
+    # }
+    # japanese_war_helmet_era3_high = {
+    #     dna_modifiers = {
+    #         accessory = {
+    #             mode = add
+    #             gene = headgear
+    #             template = shogunate_war_helmet
+    #             value = 1
+    #         }
+    #     }
+    #     outfit_tags = { military_outfit }
+    #     weight = {
+    #         base = 0
+    #         modifier = {
+    #             add = 100
+    #             portrait_war_nobles_helmet_trigger = {
+    #                 CULTURE_INPUT = japanese
+    #             }
+    #             shogunate_armor_era3_trigger = yes
+    #         }
+    #     }
+    # }
+
+    #####################
+    # Crane Clan
+    #TODO
+
+	crane_war_helmet_era1_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crane_war_helmet
+				value = 0
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = crane
+				}
+				shogunate_armor_era1_trigger = yes
+			}
+		}
+	}
+	crane_war_helmet_era2_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crane_war_helmet
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = crane
+				}
+				shogunate_armor_era2_trigger = yes
+			}
+		}
+	}
+	crane_war_helmet_era3_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crane_war_helmet
+				value = 1
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = crane
+				}
+				shogunate_armor_era3_trigger = yes
+			}
+		}
+	}
+
+    # crane_war_helmet_era1_high = {
+    #     dna_modifiers = {
+    #         accessory = {
+    #             mode = add
+    #             gene = headgear
+    #             template = crane_war_helmet
+    #             value = 0
+    #         }
+    #     }
+    #     outfit_tags = { military_outfit }
+    #     weight = {
+    #         base = 0
+    #         modifier = {
+    #             add = 100
+    #             portrait_war_nobles_helmet_trigger = {
+    #                 CULTURE_INPUT = crane
+    #             }
+    #             shogunate_armor_era1_trigger = yes
+    #         }
+    #     }
+    # }
+    # crane_war_helmet_era2_high = {
+    #     dna_modifiers = {
+    #         accessory = {
+    #             mode = add
+    #             gene = headgear
+    #             template = crane_war_helmet
+    #             range = { 0 1 } # For the randomness to work correctly
+    #         }
+    #     }
+    #     outfit_tags = { military_outfit }
+    #     weight = {
+    #         base = 0
+    #         modifier = {
+    #             add = 100
+    #             portrait_war_nobles_helmet_trigger = {
+    #                 CULTURE_INPUT = crane
+    #             }
+    #             shogunate_armor_era2_trigger = yes
+    #         }
+    #     }
+    # }
+    # crane_war_helmet_era3_high = {
+    #     dna_modifiers = {
+    #         accessory = {
+    #             mode = add
+    #             gene = headgear
+    #             template = crane_war_helmet
+    #             value = 1
+    #         }
+    #     }
+    #     outfit_tags = { military_outfit }
+    #     weight = {
+    #         base = 0
+    #         modifier = {
+    #             add = 100
+    #             portrait_war_nobles_helmet_trigger = {
+    #                 CULTURE_INPUT = crane
+    #             }
+    #             shogunate_armor_era3_trigger = yes
+    #         }
+    #     }
+    # }
 }

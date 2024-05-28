@@ -23,34 +23,38 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - innovation (special culture ones) and shared ones. Re-localization of some
 
 ## short term goals 
+- URGENT : FIX INFINITE LOOP OF ABDICATIOn (by AI !)
 - check Asia Expansion, ask for rights W8t 4 response
 - Cat mon : @Bamba
 - Add japanese clothing, add credit (AJ cf how AEP has done)
 	- Understand how it works (https://discord.com/channels/735413460439007241/735413461680652366/1122255742129410068 &  https://discord.com/channels/735413460439007241/735413461680652366/791031025907662868 helps a bit)
 	- Add sub_group for clothings, with a dedicated color palette for each clan/cultures which makes sense cf https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
 		- one row = one variation, 
-	- TODO headgear remove for female ruler (mongolian headgear, why ?)
-	- TODO armor, tabi, katana, (monk ?)
+	- TODO headgear remove for female ruler (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
+	- TODO armor (female too ? Need meodels ?), tabi, katana, (monk ?)
+	- Missing leggear for armor as well
 	- Better variation todo as well
 	- existing subtypes : japanese_high_nobility_clothes / japanese_commoner_clothes / japanese_low_nobility_clothes / japanese_common_monk_clothes
-- Fix the bookmarks, so Doji is not naked, and it looks better
 - Add CoA à la AGOT for all baronnies/counties +++ (ronin done : missing Kingdoms/duchies/monasteries)
 - Add Phoenix (Korean) Castle aestethic (credit to ???)
 - Add Otosan Uchi special building + Kyoto Imperial Palace Model (Kefir). 
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
 - add volcano + texture for dragon lands. How to add new special building ???? 
 - Add river map (more ?)
+- remove "Steer house unity" decision, as it's not used here (comment it)
+
 
 ## Fixes to do
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - Change color of some textured emblmes (very low priority)
+- shiba mon is off-center (too much top left)
 - update holy_order decisions & dynasty decisions (taken from shogunate)
 - fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
 found_empire_decision)
 - check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
-- change "farmlands" to "rice fields" texture (kefir)
+- some lands (like ryoko owari/ castle of the Hare / Shiro Shugen) are considered coastal => you can create port. Why ? Province pixel map issue ?
 
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?

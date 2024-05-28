@@ -2532,7 +2532,7 @@ special_genes = {
 				girl = female
 			}
 
-			crane_war_nobility_clothes = {
+			crane_war_nobility_clothes = { # TODO add color variations
 				index = 208
 
 				male = {

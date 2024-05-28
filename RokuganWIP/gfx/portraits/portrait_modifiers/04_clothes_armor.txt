@@ -1587,15 +1587,6 @@
                     portrait_high_nobles_armor_trigger = {
                         CULTURE_INPUT = japanese
                     }
-                    portrait_commoner_armor_trigger = {
-                        CULTURE_INPUT = crane
-                    }
-                    portrait_low_nobles_armor_trigger = {
-                        CULTURE_INPUT = crane
-                    }
-                    portrait_high_nobles_armor_trigger = {
-                        CULTURE_INPUT = crane
-                    }
                 }
                 shogunate_armor_era1_trigger = yes
             }
@@ -1610,15 +1601,6 @@
                     }
                     portrait_high_nobles_armor_in_army_trigger = {
                         CULTURE_INPUT = japanese
-                    }
-                    portrait_commoner_armor_in_army_trigger = {
-                        CULTURE_INPUT = crane
-                    }
-                    portrait_low_nobles_armor_in_army_trigger = {
-                        CULTURE_INPUT = crane
-                    }
-                    portrait_high_nobles_armor_in_army_trigger = {
-                        CULTURE_INPUT = crane
                     }
                 }
                 shogunate_armor_era1_trigger = yes
@@ -1660,15 +1642,6 @@
                     portrait_high_nobles_armor_trigger = {
                         CULTURE_INPUT = japanese
                     }
-                    portrait_commoner_armor_trigger = {
-                        CULTURE_INPUT = crane
-                    }
-                    portrait_low_nobles_armor_trigger = {
-                        CULTURE_INPUT = crane
-                    }
-                    portrait_high_nobles_armor_trigger = {
-                        CULTURE_INPUT = crane
-                    }
                 }
                 shogunate_armor_era2_trigger = yes
             }
@@ -1683,15 +1656,6 @@
                     }
                     portrait_high_nobles_armor_in_army_trigger = {
                         CULTURE_INPUT = japanese
-                    }
-                    portrait_commoner_armor_in_army_trigger = {
-                        CULTURE_INPUT = crane
-                    }
-                    portrait_low_nobles_armor_in_army_trigger = {
-                        CULTURE_INPUT = crane
-                    }
-                    portrait_high_nobles_armor_in_army_trigger = {
-                        CULTURE_INPUT = crane
                     }
                 }
                 shogunate_armor_era2_trigger = yes
@@ -1733,15 +1697,6 @@
                     portrait_high_nobles_armor_trigger = {
                         CULTURE_INPUT = japanese
                     }
-                    portrait_commoner_armor_trigger = {
-                        CULTURE_INPUT = crane
-                    }
-                    portrait_low_nobles_armor_trigger = {
-                        CULTURE_INPUT = crane
-                    }
-                    portrait_high_nobles_armor_trigger = {
-                        CULTURE_INPUT = crane
-                    }
                 }
                 shogunate_armor_era3_trigger = yes
             }
@@ -1757,6 +1712,166 @@
                     portrait_high_nobles_armor_in_army_trigger = {
                         CULTURE_INPUT = japanese
                     }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+        }
+    }
+    #####################
+     # Crane Clan 
+     # TODO
+
+     crane_war_era1_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = crane_war_nobility_clothes
+                value = 0 # For O-Yoroi
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+        }
+    }
+    crane_war_era2_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = crane_war_nobility_clothes
+                range = { 0.25 1.0 } # Random
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                range = { 1 1 }
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+        }
+    }
+    crane_war_era3_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = crane_war_nobility_clothes
+                value = 1 # For Gusoku
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = crane
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
                     portrait_commoner_armor_in_army_trigger = {
                         CULTURE_INPUT = crane
                     }
