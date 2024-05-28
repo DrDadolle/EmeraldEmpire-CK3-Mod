@@ -1140,13 +1140,14 @@ fp3_turkic_beards_curly = {
                 }
                 OR = {
                     portrait_japanese_clothing_trigger = yes
+                    portrait_crane_clothing_trigger = yes
                 }
             }
-            modifier = { # Muslims should always have a beard
+            modifier = { 
                 add = 200
-                # scope:faith.religion = religion:islam_religion
                 OR = {
                     portrait_japanese_clothing_trigger = yes
+                    portrait_crane_clothing_trigger
                 }
             }
             modifier = {
@@ -1176,13 +1177,14 @@ fp3_turkic_beards_curly = {
                 add = 100
                 OR = {
                     portrait_japanese_clothing_trigger = yes
+                    portrait_crane_clothing_trigger = yes
                 }
             }
-            modifier = { # Muslims should always have a beard
+            modifier = {
                 add = 200
-                scope:faith.religion = religion:islam_religion
                 OR = {
                     portrait_japanese_clothing_trigger = yes
+                    portrait_crane_clothing_trigger = yes
                 }
             }
             modifier = {
@@ -1227,9 +1229,8 @@ fp3_turkic_beards_curly = {
                 }
                 portrait_ainu_clothing_trigger = yes
             }
-            modifier = { # Muslims should always have a beard
+            modifier = { 
                 add = 200
-                scope:faith.religion = religion:islam_religion
                 portrait_ainu_clothing_trigger = yes
             }
             modifier = {

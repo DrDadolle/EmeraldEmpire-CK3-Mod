@@ -22,7 +22,7 @@ headgear_base = {
 			base = 0
 			# No headgear for Rokugani characters
 			modifier = {
-				add = 100
+				add = 200
 				portrait_japanese_clothing_trigger = yes
 				portrait_crane_clothing_trigger = yes
 			}
@@ -2854,141 +2854,141 @@ fp3_turkic_high_nobles = {
 
 ## Sub-Saharan Africans ##
 
-	african_commoners = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = sub_saharan_common
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 50
-                portrait_commoner_headgear_fallback_trigger = {
-                    CULTURE_INPUT = african
-                }
-			}
-			modifier = { # Non-european jesters should not use the jester hat
-				add = 1000
-                portrait_jester_trigger = {  
-                    CULTURE_INPUT = african 
-                }
-			}
-			modifier = {
-				add = 50
-                portrait_commoner_clothing_trigger = {  
-                    CULTURE_INPUT = african 
-                }
-			}
-		}
-	}
+	# african_commoners = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = headgear
+	# 			template = sub_saharan_common
+	# 			range = { 0 1 } # For the randomness to work correctly
+	# 		}
+	# 	}
+	# 	weight = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 50
+    #             portrait_commoner_headgear_fallback_trigger = {
+    #                 CULTURE_INPUT = african
+    #             }
+	# 		}
+	# 		modifier = { # Non-european jesters should not use the jester hat
+	# 			add = 1000
+    #             portrait_jester_trigger = {  
+    #                 CULTURE_INPUT = african 
+    #             }
+	# 		}
+	# 		modifier = {
+	# 			add = 50
+    #             portrait_commoner_clothing_trigger = {  
+    #                 CULTURE_INPUT = african 
+    #             }
+	# 		}
+	# 	}
+	# }
 
-	sub_saharan_high_nobles = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = sub_saharan_high_nobility
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 50
-                portrait_high_nobles_headgear_trigger = {
-                    CULTURE_INPUT = african
-                }   
-			}
-		}
-	}
+	# sub_saharan_high_nobles = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = headgear
+	# 			template = sub_saharan_high_nobility
+	# 			range = { 0 1 } # For the randomness to work correctly
+	# 		}
+	# 	}
+	# 	weight = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 50
+    #             portrait_high_nobles_headgear_trigger = {
+    #                 CULTURE_INPUT = african
+    #             }   
+	# 		}
+	# 	}
+	# }
 
-	sub_saharan_royalty = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = sub_saharan_royalty
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 50
-				portrait_royalty_african_headgear_trigger = yes
-			}
-		}
-	}
+	# sub_saharan_royalty = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = headgear
+	# 			template = sub_saharan_royalty
+	# 			range = { 0 1 } # For the randomness to work correctly
+	# 		}
+	# 	}
+	# 	weight = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 50
+	# 			portrait_royalty_african_headgear_trigger = yes
+	# 		}
+	# 	}
+	# }
 
-	ep1_sub_saharan_royalty = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = ep1_sub_saharan_royalty
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 50
-				portrait_royalty_african_headgear_trigger = yes
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-					has_ep1_dlc_trigger = yes
-				}
-			}
-		}
-	}
+	# ep1_sub_saharan_royalty = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = headgear
+	# 			template = ep1_sub_saharan_royalty
+	# 			range = { 0 1 } # For the randomness to work correctly
+	# 		}
+	# 	}
+	# 	weight = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 50
+	# 			portrait_royalty_african_headgear_trigger = yes
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			NOT = {
+	# 				has_ep1_dlc_trigger = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-	sub_saharan_imperial = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = sub_saharan_imperial
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 50
-				portrait_imperial_nobles_headgear_trigger = {
-					CULTURE_INPUT = african
-				}
-			}
-		}
-	}
+	# sub_saharan_imperial = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = headgear
+	# 			template = sub_saharan_imperial
+	# 			range = { 0 1 } # For the randomness to work correctly
+	# 		}
+	# 	}
+	# 	weight = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 50
+	# 			portrait_imperial_nobles_headgear_trigger = {
+	# 				CULTURE_INPUT = african
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 
-	sub_saharan_war = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = mena_war
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		outfit_tags = { military_outfit }
-		weight = {
-			base = 0
-			modifier = {
-				add = 100
-                portrait_war_nobles_helmet_trigger = {
-                    CULTURE_INPUT = african
-                }
-			}
-		}
-	}
+	# sub_saharan_war = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = headgear
+	# 			template = mena_war
+	# 			range = { 0 1 } # For the randomness to work correctly
+	# 		}
+	# 	}
+	# 	outfit_tags = { military_outfit }
+	# 	weight = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 100
+    #             portrait_war_nobles_helmet_trigger = {
+    #                 CULTURE_INPUT = african
+    #             }
+	# 		}
+	# 	}
+	# }
 
 
 
