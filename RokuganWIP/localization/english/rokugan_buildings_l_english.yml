@@ -14,14 +14,14 @@
 
  building_type_forbidden_city_01:0 "The Forbidden City"
  building_type_forbidden_city_01_desc:0 "The Forbidden City is the Emperor's personal lands. It is situated in the centre of Otosan Uchi, and contained most notably the Imperial Palace. The Enchanted Wall, built by the Crane, Crab, Ki-rin, Phoenix and the Lion Clan surrounds and protects the Forbidden City from invading armies."
- building_forbidden_city_01:0 "$building_type_pale_oak_palace_01$"
- building_forbidden_city_01_desc:0 "$building_type_pale_oak_palace_01_desc$"
+ building_forbidden_city_01:0 "$building_type_forbidden_city_01$"
+ building_forbidden_city_01_desc:0 "$building_type_forbidden_city_01_desc$"
 
  ##################
  ##### Kaiu Wall
  ##################
  building_type_kaiu_wall_01:0 "Kaiu Wall"
- building_type_kaiu_wall_01_desc:0 "The Kaiu Wall, also known as the Carpenter Wall or the Kaiu Miracle, for centuries was the very physical demarcation of the southern border of Rokugan. On its north side lie the lands of the Crab Clan, and on its south the River of the Last Stand separated it to the blighted reaches of the Shadowlands. It was here that the forces of Rokugan entrenched themselves in their eternal battle against the forces of Jigoku.."
+ building_type_kaiu_wall_01_desc:0 "The Kaiu Wall, also known as the Carpenter Wall or the Kaiu Miracle, for centuries was the very physical demarcation of the southern border of Rokugan. On its north side lie the lands of the Crab Clan, and on its south the River of the Last Stand separated it to the blighted reaches of the Shadowlands. It was here that the forces of Rokugan entrenched themselves in their eternal battle against the forces of Jigoku."
  building_kaiu_wall_01:0 "Kaiu Wall"
  building_kaiu_wall_01_desc:0 "building_kaiu_wall_01_desc"
  building_kaiu_wall_02:0 "Kaiu Towers"

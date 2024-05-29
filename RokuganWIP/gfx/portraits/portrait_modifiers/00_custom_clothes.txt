@@ -32,11 +32,11 @@
 	### Shogunate Clothes End ###
 
 	### Rokugan Clothes Start ###
-	# TODO add if crane variation
-	# add_accessory_modifiers = {
-	# 	gene = clothes
-	# 	template = japanese_commoner_clothes
-	# }
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = crane_commoner_clothes
+	}
 
 	add_accessory_modifiers = {
 		gene = clothes

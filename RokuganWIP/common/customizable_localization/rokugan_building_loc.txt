@@ -25,7 +25,7 @@ GetSpecialBuildingNameFromProvince = {
 
 	text = { # Forbidden City
 		trigger = {
-			#has_special_building = yes
+			has_special_building = yes
 			has_building = forbidden_city_01
 		}
 		localization_key = building_forbidden_city_01

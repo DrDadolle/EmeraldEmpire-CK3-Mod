@@ -2481,18 +2481,17 @@ special_genes = {
 			# Rokugani clothes
 			# Crane clan 
 
-			# TODO check for crane variation, like Doji Shizue has commorner clothes ?
 			crane_commoner_clothes = {
 				index = 205
 
 				male = {
-					1 = male_clothes_kimono_samurai_01_common
-					1 = male_clothes_kimono_samurai_01_common
+					1 = male_clothes_kimono_samurai_crane_01_common
+					1 = male_clothes_kimono_samurai_crane_01_common
 				}
 
 				female = {
-					1 = female_clothes_kimono_kosode_01_common
-					1 = female_clothes_kimono_kosode_01_common
+					1 = female_clothes_kimono_kosode_crane_01_common
+					1 = female_clothes_kimono_kosode_crane_01_common
 				}
 
 				boy = male
