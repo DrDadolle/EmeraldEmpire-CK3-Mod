@@ -248,7 +248,7 @@ walls_03 = {
 
 	asset = {
 		type = pdxmesh
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 		names = {
 			"japanese_walls_03_mesh"
 		}
@@ -342,7 +342,7 @@ walls_04 = {
 
 	asset = {
 		type = pdxmesh
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 		names = {
 			"japanese_walls_04_mesh"
 		}

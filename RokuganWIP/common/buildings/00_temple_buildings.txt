@@ -59,7 +59,7 @@ temple_01 = {
 		illustration = @illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/generic_temple" soundparameter = { "Tier" = 0 } }
 		graphical_faiths = { "fortunism_gfx" }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 
 	###PAGODA ARCHITECTURE
@@ -69,7 +69,7 @@ temple_01 = {
 		illustration = @illustration_china
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple" soundparameter = { "Tier" = 0 } }
 		graphical_faiths = { "shinsei_gfx" }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 
 	### DHARMIC ###
@@ -546,7 +546,7 @@ temple_02 = {
 		illustration = @illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/generic_temple" soundparameter = { "Tier" = 0 } }
 		graphical_faiths = { "fortunism_gfx" }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 	###PAGODA ARCHITECTURE
 	asset = {
@@ -555,7 +555,7 @@ temple_02 = {
 		illustration = @illustration_china
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple" soundparameter = { "Tier" = 0 } }
 		graphical_faiths = { "shinsei_gfx" }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 	
 	### DHARMIC ###
@@ -914,7 +914,7 @@ temple_03 = {
 		illustration = @illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/generic_temple" soundparameter = { "Tier" = 0 } }
 		graphical_faiths = { "fortunism_gfx" }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 	###PAGODA ARCHITECTURE
 	asset = {
@@ -923,7 +923,7 @@ temple_03 = {
 		illustration = @illustration_china
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple" soundparameter = { "Tier" = 0 } }
 		graphical_faiths = { "shinsei_gfx" }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 
 	### DHARMIC ###
@@ -1273,7 +1273,7 @@ temple_04 = {
 		illustration = @illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/generic_temple" soundparameter = { "Tier" = 0 } }
 		graphical_faiths = { "fortunism_gfx" }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 	###PAGODA ARCHITECTURE
 	asset = {
@@ -1282,7 +1282,7 @@ temple_04 = {
 		illustration = @illustration_china
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple" soundparameter = { "Tier" = 0 } }
 		graphical_faiths = { "shinsei_gfx" }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 	
 	### DHARMIC ###

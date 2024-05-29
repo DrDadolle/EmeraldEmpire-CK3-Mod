@@ -28,7 +28,7 @@ city_01 = {
 		name = "building_japanese_city_01_mesh"
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 	asset = {
 		type = pdxmesh
@@ -421,7 +421,7 @@ city_02 = {
 		name = "building_japanese_city_01_mesh"
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 		asset = {
 		type = pdxmesh
@@ -792,7 +792,7 @@ city_03 = {
 		name = "building_japanese_city_02_mesh"
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 		asset = {
 		type = pdxmesh
@@ -1151,7 +1151,7 @@ city_04 = {
 		name = "building_japanese_city_02_mesh"
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 		asset = {
 		type = pdxmesh

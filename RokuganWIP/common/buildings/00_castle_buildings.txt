@@ -59,7 +59,7 @@ castle_01 = {
 		name = "building_japanese_castle_01_mesh"
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 	asset = {
 		type = pdxmesh
@@ -409,7 +409,7 @@ castle_02 = {
 		name = "building_japanese_castle_02_mesh"
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 	asset = {
 		type = pdxmesh
@@ -759,7 +759,7 @@ castle_03 = {
 		name = "building_japanese_castle_03_mesh"
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 	asset = {
 		type = pdxmesh
@@ -1100,7 +1100,7 @@ castle_04 = {
 		name = "building_japanese_castle_04_mesh"
 		illustration = @holding_illustration_japan
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { rokugani_building_gfx }
+		graphical_cultures = { japanese_building_gfx }
 	}
 	asset = {
 		type = pdxmesh
