@@ -26,7 +26,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - check that armor (helmet/headgear/leggear) has variation. Check that ALL crane clothes are in the in-game portrait modifier (not the debug portrait editor)
 - Add Otosan Uchi special building (as duchy building à la Constantinople)+ Kyoto Imperial Palace Model (Kefir).  Test it and buff so it has level of duchy palace ! Check it's present as a special building on mapeditor
 - check Asia Expansion, ask for rights W8t 4 response
-- Cat mon : @Bamba
+- Cat mon : @Bamba => add a placeholder with a cat meme so repleacement is easy
 - Add japanese clothing, add credit (AJ cf how AEP has done)
 	- Understand how it works (https://discord.com/channels/735413460439007241/735413461680652366/1122255742129410068 &  https://discord.com/channels/735413460439007241/735413461680652366/791031025907662868 helps a bit)
 	- Add sub_group for clothings, with a dedicated color palette for each clan/cultures which makes sense cf https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
@@ -34,9 +34,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- TODO female armor variation (Need models ?), tabi, katana, monk, commoner clothes
 	- TODO Better variation (with lot of differents colors, based on crane artworks)
 - Add CoA à la AGOT for all baronnies/counties +++ (ronin done : missing Kingdoms/duchies/monasteries) => Add a placeholder with a cat meme so replecement is easy
-- Add Phoenix (Korean) Castle aestethic (credit to ???)
+- Add Phoenix (Korean) Castle aestethic (credit to ???) Ask LongusCattus
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
-- add volcano + texture for dragon lands. How to add new special building ???? 
+- add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)???? 
 - Add river map (more ?)
 - What about japanese sprawl ?
 
@@ -47,13 +47,18 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - update holy_order decisions & dynasty decisions (taken from shogunate)
 - fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
 	- Check the "Family name before surname" used in "Oriental Empires" mod
-- check Kizoku title & Khan title => Rework of how title are displayed and calculated.
+	- check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
-- some lands (like ryoko owari/ castle of the Hare / Shiro Shugen) are considered coastal => you can create port. Why ? Province pixel map issue ?
+- some lands (like ryoko owari/ castle of the Hare / Shiro Shugen (lion south)) are considered coastal => you can create port. Why ? Province pixel map issue ?
 
 ## Workaround to be careful with
-- headgear remove for female ruler (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
+- headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
+
+##  Waiting & placeholders
+- Cat mon : @Bamba => add a placeholder with a cat meme so repleacement is easy
+- Add CoA à la AGOT for all baronnies/counties +++ (ronin done : missing Kingdoms/duchies/monasteries) => Add a placeholder with a cat meme so replecement is easy
+
 
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?
@@ -71,14 +76,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
 - special buildings
 	- Hall of Ancestors Lion
-	- Otosan Uchi
 	- Traitor's Trove
 	- Tsuma Topaz building
 	- Chuda Ruins
 			- revive chuda dynasty decision !
-- characters
+- characters secret religion
 	- 	effect = {make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zun_pagan }} 
-- Special events setting the start of the clan wars
 - Create MaA for each great clan, maybe each minor one
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
@@ -117,14 +120,15 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Volcano for Dragon (cf Discord "CK3 Volcano Map Items" shared ressources)!
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
-- do a starting event : "Welcome to Rokugan" event with explanations of a lot of stuff : This place and about myself. War Changes. Empire of Rokugan. Shadowlands. Magic System. I know everything already
+- do a starting event : "Welcome to Rokugan" (à la Tales of Ireland, then comment the trigger for testing) event with explanations of a lot of stuff : This place and about myself. War Changes. Empire of Rokugan. Shadowlands. Magic System. I know everything already
+- Special events setting the start of the clan wars
 - Duel to end War (check Tales of Ireland mod)
 - add "animal" (clan animal) as motif for CoA (instead of just textured one)
 	- generated dynasties of ronins have random CoA
 - Events for l5R => "yearly_on_actions.txt"/on_yearly_events (for instance). Ideas
 	- Random duels
 	- Paiting stuff
-	- 
+	- others
 - add activites map object data on each county ? capital county ?
 - genes & ethnicities
 - Add modifiers to dynasties to prove their link to great clans ????
@@ -135,7 +139,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
 =====================================================================================================
-
 - economic Opium building for Scorpion heritage ?
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 
