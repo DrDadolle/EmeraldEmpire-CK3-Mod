@@ -24,7 +24,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## short term goals 
 - check that armor (helmet/headgear/leggear) has variation. Check that ALL crane clothes are in the in-game portrait modifier (not the debug portrait editor)
-- Add Otosan Uchi special building (as duchy building à la Constantinople)+ Kyoto Imperial Palace Model (Kefir).  Test it and buff so it has level of duchy palace ! Check it's present as a special building on mapeditor
 - check Asia Expansion, ask for rights W8t 4 response
 - Cat mon : @Bamba => add a placeholder with a cat meme so repleacement is easy
 - Add japanese clothing, add credit (AJ cf how AEP has done)
@@ -50,7 +49,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
-- some lands (like ryoko owari/ castle of the Hare / Shiro Shugen (lion south)) are considered coastal => you can create port. Why ? Province pixel map issue ?
+- some lands (like ryoko owari/ castle of the Hare / Shiro Shugen (lion south)) are NOT considered coastal but have port at startup wtf. Why ? 
 
 ## Workaround to be careful with
 - headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
