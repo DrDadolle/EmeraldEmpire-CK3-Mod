@@ -23,18 +23,15 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - innovation (special culture ones) and shared ones. Re-localization of some
 
 ## short term goals 
-- URGENT : FIX INFINITE LOOP OF ABDICATIOn (by AI !)
+- check that armor (helmet/headgear/leggear) has variation. Check that ALL crane clothes are in the in-game portrait modifier (not the debug portrait editor)
 - check Asia Expansion, ask for rights W8t 4 response
 - Cat mon : @Bamba
 - Add japanese clothing, add credit (AJ cf how AEP has done)
 	- Understand how it works (https://discord.com/channels/735413460439007241/735413461680652366/1122255742129410068 &  https://discord.com/channels/735413460439007241/735413461680652366/791031025907662868 helps a bit)
 	- Add sub_group for clothings, with a dedicated color palette for each clan/cultures which makes sense cf https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
 		- one row = one variation, 
-	- TODO headgear remove for female ruler (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
-	- TODO armor (female too ? Need meodels ?), tabi, katana, (monk ?)
-	- Missing leggear for armor as well
+	- TODO female armor variation (Need models ?), tabi, katana, monk, commoner clothes
 	- Better variation todo as well
-	- existing subtypes : japanese_high_nobility_clothes / japanese_commoner_clothes / japanese_low_nobility_clothes / japanese_common_monk_clothes
 - Add CoA à la AGOT for all baronnies/counties +++ (ronin done : missing Kingdoms/duchies/monasteries)
 - Add Phoenix (Korean) Castle aestethic (credit to ???)
 - Add Otosan Uchi special building + Kyoto Imperial Palace Model (Kefir). 
@@ -55,6 +52,9 @@ found_empire_decision)
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
 - some lands (like ryoko owari/ castle of the Hare / Shiro Shugen) are considered coastal => you can create port. Why ? Province pixel map issue ?
+
+## Workaround to be careful with
+- headgear remove for female ruler (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
 
 ## Futures Features & Nice to have
 - Remove AI Cadet branches => Working ?

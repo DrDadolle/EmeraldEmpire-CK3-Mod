@@ -20,6 +20,14 @@
 
 	### Shogunate Headgear End ###
 
+	### Rokugan Headgear Begin ###
+
+	add_accessory_modifiers = {
+		gene = headgear
+		template = crane_war_helmet
+	}	
+
+	### Rokugan Headgear End ###
 
 	## CE1 ##
 	add_accessory_modifiers = {

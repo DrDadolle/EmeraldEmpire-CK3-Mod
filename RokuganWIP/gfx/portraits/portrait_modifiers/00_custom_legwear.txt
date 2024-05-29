@@ -21,11 +21,11 @@
 	### Shogunate Legware End ###
 
 	### Rokugan Legware Begin ###
-
-	add_accessory_modifiers = {
-		gene = legwear
-		template = crane_tabi
-	}
+	# TODO add if crane variation
+	# add_accessory_modifiers = {
+	# 	gene = legwear
+	# 	template = crane_tabi
+	# }
 	add_accessory_modifiers = {
 		gene = legwear
 		template = crane_war_legwear

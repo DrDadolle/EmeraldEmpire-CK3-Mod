@@ -24,6 +24,23 @@ male_legwear_samurai_02_low = {
 	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_legwear_samurai_02_low_entity }
 }
 
+
+### Crane Clan ###
+
+#TODO add tabi ???
+
+#Armor 
+#- o-yoroi / great armor
+male_legwear_samurai_crane_01_low = {
+	set_tags = "shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_legwear_samurai_crane_01_low_entity }
+}
+#- standard armor
+male_legwear_samurai_crane_02_low = {
+	set_tags = "shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_legwear_samurai_crane_02_low_entity }
+}
+
 #####################################
 #									#
 # 			Female Leg Wear			#
@@ -36,3 +53,6 @@ male_legwear_samurai_02_low = {
 female_legwear_tabi_01_high = {
 	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_legwear_tabi_01_high_entity }
 }
+
+## TODO add crane tabi ?
+

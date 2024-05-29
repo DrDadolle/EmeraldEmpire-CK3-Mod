@@ -2480,9 +2480,8 @@ special_genes = {
 			#####################
 			# Rokugani clothes
 			# Crane clan 
-			# TODO
 
-			# Default color for commoner_clothes, dye is expensive afterall
+			# TODO check for crane variation, like Doji Shizue has commorner clothes ?
 			crane_commoner_clothes = {
 				index = 205
 
@@ -2532,13 +2531,13 @@ special_genes = {
 				girl = female
 			}
 
-			crane_war_nobility_clothes = { # TODO add color variations
+			crane_war_nobility_clothes = {
 				index = 208
 
 				male = {
-					1 = male_armor_samurai_00_low
-					1 = male_armor_samurai_01_low
-					1 = male_armor_samurai_02_low
+					1 = male_armor_samurai_crane_00_low
+					1 = male_armor_samurai_crane_01_low
+					1 = male_armor_samurai_crane_02_low
 				}
 
 				female = {

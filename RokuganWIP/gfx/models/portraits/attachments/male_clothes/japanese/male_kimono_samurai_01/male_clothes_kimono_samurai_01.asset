@@ -100,7 +100,7 @@ entity = {
         portrait_entity_user_data = {
 			portrait_accessory = {
 				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
-				variation = "japanese_kosode_kimono_crane_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
+				variation = "japanese_samurai_kimono_crane_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
 			}
         }
 	}
@@ -121,7 +121,7 @@ entity = {
         portrait_entity_user_data = {
 			portrait_accessory = {
 				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
-				variation = "japanese_kosode_kimono_crane_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
+				variation = "japanese_samurai_kimono_crane_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
 			}
         }
 	}

@@ -47,8 +47,9 @@ male_katana_01 = {
 	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_01_entity }
 }
 
-
-### Crane ###
+##################
+### Crane Clan ###
+##################
 
 male_clothes_kimono_samurai_crane_01_low = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
@@ -58,6 +59,30 @@ male_clothes_kimono_samurai_crane_01_low = {
 male_clothes_kimono_samurai_crane_01_high = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
 	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_crane_01_high_entity }
+}
+
+#Armor 
+#- o-yoroi / great armor
+male_armor_samurai_crane_00_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_crane_00_low_entity }
+}
+male_armor_samurai_crane_01_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_crane_01_low_entity }
+}
+#- standard armor
+male_armor_samurai_crane_02_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_crane_02_low_entity }
+}
+male_katana_crane_01 = {
+	set_tags = "daisho"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_01_entity }
 }
 
 #####################################

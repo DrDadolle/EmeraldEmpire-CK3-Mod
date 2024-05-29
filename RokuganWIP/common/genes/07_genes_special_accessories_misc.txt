@@ -188,7 +188,7 @@ accessory_genes = {
 
 		##########################
 		# Crane Clan
-		# TODO
+		# TODO add variation for tabi ???
 		crane_tabi = {
 			index = 202
 			male = {
@@ -204,8 +204,8 @@ accessory_genes = {
 		crane_war_legwear = {
 			index = 203
 			male = {
-				1 = male_legwear_samurai_01_low
-				1 = male_legwear_samurai_02_low
+				1 = male_legwear_samurai_crane_01_low
+				1 = male_legwear_samurai_crane_02_low
 			}
 			female = {
 				1 = female_legwear_secular_mena_war_nobility_01

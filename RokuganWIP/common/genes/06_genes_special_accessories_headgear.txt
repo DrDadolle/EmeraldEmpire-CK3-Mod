@@ -2435,12 +2435,11 @@ special_genes = {
 			
 			#####################
 			# Crane Clan
-			# TODO
 			crane_war_helmet = {
 				index = 202
 				male = {
-					1 = male_helmet_samurai_01_low
-					1 = male_helmet_samurai_02_low
+					1 = male_helmet_samurai_crane_01_low
+					1 = male_helmet_samurai_crane_02_low
 				}
 				female = {
 					1 = empty
