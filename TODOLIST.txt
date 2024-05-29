@@ -46,7 +46,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - shiba mon is off-center (too much top left)
 - update holy_order decisions & dynasty decisions (taken from shogunate)
 - fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
-found_empire_decision)
+	- Check the "Family name before surname" used in "Oriental Empires" mod
 - check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
@@ -69,7 +69,6 @@ found_empire_decision)
 	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
-- Blood feud (like Matsu vs Kakita)	
 - special buildings
 	- Hall of Ancestors Lion
 	- Otosan Uchi
@@ -119,11 +118,22 @@ found_empire_decision)
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - do a starting event : "Welcome to Rokugan" event with explanations of a lot of stuff : This place and about myself. War Changes. Empire of Rokugan. Shadowlands. Magic System. I know everything already
--Duel to end War (check Tales of Ireland mod)
+- Duel to end War (check Tales of Ireland mod)
+- add "animal" (clan animal) as motif for CoA (instead of just textured one)
+- Events for l5R => "yearly_on_actions.txt"/on_yearly_events (for instance). Ideas
+	- Random duels
+	- Paiting stuff
+	- 
 - genes & ethnicities
 - Add modifiers to dynasties to prove their link to great clans ????
 - Prevent imperial family from doing wars against other clans...? Only for AI ? or not ?
-- ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
+- Blood feud (like Matsu vs Kakita)	: https://steamcommunity.com/sharedfiles/filedetails/?id=2914047110. Need the Friends & Foes DLC sadly...
+	- shogunate_bookmark_events.txt/shogunate_bookmark.8300/shogunate_historical_feud_effect => shogunate_bookmark_effects/shogunate_bookmark.8310
+	- add more events? Duels ?
+=====================================================================================================
+============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
+=====================================================================================================
+
 - economic Opium building for Scorpion heritage ?
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 

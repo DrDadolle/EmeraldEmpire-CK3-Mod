@@ -16,7 +16,7 @@ rokugan_seppuku_decision_event.0001 = {
 		animation = throne_room_ruler
 	}
 	theme = death
-	#override_background = { reference = shogunate_burning_castle }
+	override_background = { reference = throne_room }
 
 	immediate = {
 		play_music_cue = mx_cue_stress
