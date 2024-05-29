@@ -20,6 +20,10 @@
 	religion = cult_ancestors
 	holding = castle_holding
 
+	23.1.1 = {
+		duchy_capital_building = forbidden_city_01
+	}
+
 	1123.1.1={
 		buildings = {
 			castle_04

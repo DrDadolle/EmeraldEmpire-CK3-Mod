@@ -24,6 +24,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## short term goals 
 - check that armor (helmet/headgear/leggear) has variation. Check that ALL crane clothes are in the in-game portrait modifier (not the debug portrait editor)
+- Add Otosan Uchi special building (as duchy building à la Constantinople)+ Kyoto Imperial Palace Model (Kefir).  Test it and buff so it has level of duchy palace ! Check it's present as a special building on mapeditor
 - check Asia Expansion, ask for rights W8t 4 response
 - Cat mon : @Bamba
 - Add japanese clothing, add credit (AJ cf how AEP has done)
@@ -34,16 +35,14 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Better variation todo as well
 - Add CoA à la AGOT for all baronnies/counties +++ (ronin done : missing Kingdoms/duchies/monasteries)
 - Add Phoenix (Korean) Castle aestethic (credit to ???)
-- Add Otosan Uchi special building + Kyoto Imperial Palace Model (Kefir). 
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
 - add volcano + texture for dragon lands. How to add new special building ???? 
 - Add river map (more ?)
-- remove "Steer house unity" decision, as it's not used here (comment it)
-
+- What about japanese sprawl ?
 
 ## Fixes to do
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
-- Change color of some textured emblmes (very low priority)
+- Change color of some textured emblmes (very low priority) : Mantis, Komori
 - shiba mon is off-center (too much top left)
 - update holy_order decisions & dynasty decisions (taken from shogunate)
 - fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
@@ -70,8 +69,6 @@ found_empire_decision)
 	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
-
-- Prevent imperial family from doing wars against other clans...? Only for AI ?
 - Blood feud (like Matsu vs Kakita)	
 - special buildings
 	- Hall of Ancestors Lion
@@ -118,14 +115,16 @@ found_empire_decision)
 - Innovations
 	- Wootz Steel -> Kaiu Steel (reskin)
 	- Gaijin trade (Mantis/Tortoise)
-- Volcano for Dragon (cf Discord "CK3 Volcano Map Items" shared ressources)	 & Shadowlands volcano textures !
+- Volcano for Dragon (cf Discord "CK3 Volcano Map Items" shared ressources)!
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - do a starting event : "Welcome to Rokugan" event with explanations of a lot of stuff : This place and about myself. War Changes. Empire of Rokugan. Shadowlands. Magic System. I know everything already
 -Duel to end War (check Tales of Ireland mod)
 - genes & ethnicities
--Add modifiers to dynasties to prove their link to great clans ????
+- Add modifiers to dynasties to prove their link to great clans ????
+- Prevent imperial family from doing wars against other clans...? Only for AI ? or not ?
 - ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
+- economic Opium building for Scorpion heritage ?
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 
 	- Current issues : only Holder can vote => Special landess title of Ofushikai.

@@ -16,11 +16,19 @@ GetSpecialBuildingNameFromProvince = {
 	}
 
 	text = { # Gisei Toshi
-	trigger = {
-		has_special_building = yes
-		has_building = gisei_toshi_01
+		trigger = {
+			has_special_building = yes
+			has_building = gisei_toshi_01
+		}
+		localization_key = building_gisei_toshi_01
 	}
-	localization_key = building_gisei_toshi_01
+
+	text = { # Forbidden City
+		trigger = {
+			#has_special_building = yes
+			has_building = forbidden_city_01
+		}
+		localization_key = building_forbidden_city_01
 	}
  
 	##########
