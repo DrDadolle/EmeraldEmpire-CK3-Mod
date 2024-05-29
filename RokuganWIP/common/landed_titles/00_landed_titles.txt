@@ -1820,18 +1820,13 @@ e_rokugan = {
 					 province = 344
 				 }
 			}
-		}
-		d_komori = {
-			 color = { 7 41 12 }
-			 capital = c_komori_province
-			 
-			 c_komori_province = {
-				 color = { 7 41 12 }
+            c_komori_province = {
+                color = { 7 41 12 }
 
-				 b_kyuden_komori = {
-					 province = 345
-				 }
-			}
+                b_kyuden_komori = {
+                    province = 345
+                }
+           }
 		}
 
         d_shika = {
@@ -2141,6 +2136,15 @@ d_chuda = {
     capital = c_chuda_province
 }
 
+######## Minor Clans
+# Note : all minor clans does not exists at the start. Should be bookmark event setup to change all the de-jure stuff.
+# TODO : for now, as only the 1123 start date exists, all minor clans are hard-coded in the de-jure map
+# Not existing minor clan @1123
+d_komori = {
+    color = { 7 41 12 }
+    capital = c_komori_province
+   
+}
 
 # d_ofushikai_special= {
 #     definite_form = yes
