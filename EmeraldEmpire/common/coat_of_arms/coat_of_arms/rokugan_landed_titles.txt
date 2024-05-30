@@ -3770,10 +3770,216 @@ d_chuda = { # Snake Clan. Should be extinct... in theory
 ##########################
 ##### Monasteries
 ##########################
+##### East Shinomen
+d_east_shinomen_monasteries = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+c_conflagration_temple = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_conflagration_temple = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+c_shinden_kasai = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_shinden_kasai = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+##### West Shinomen
+d_west_shinomen_monasteries = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+c_west_shinomen_monastery_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_west_shinomen_monastery_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+c_west_shinomen_monastery_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_west_shinomen_monastery_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+c_west_shinomen_monastery_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_west_shinomen_monastery_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+c_west_shinomen_monastery_4 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_west_shinomen_monastery_4 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+##### South Shinomen
+c_south_shinomen_monastery_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_south_shinomen_monastery_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+c_south_shinomen_monastery_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_south_shinomen_monastery_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+##### Kintani Valley
+c_north_kintani_province = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_shinsei_monastery_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+c_kintani_mori_province = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_shinsei_monastery_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_kintani_mori_mura = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_kintani_mori_empty = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+c_east_kintani_province = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_shinsei_monastery_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+c_shinsei_monastery_rambo = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_shinsei_monastery_rambo = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
+b_shinsei_monastery_rambo_empty = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_monk.dds"
+	}
+}
 ##########################
 ##### Ronin 
 ##########################
-#TODO : ronin mons for ronin duchies & Kingdoms ?
 ##### South Shinomen
 d_south_shinomen = { 
 	pattern = "pattern_solid.dds"	
