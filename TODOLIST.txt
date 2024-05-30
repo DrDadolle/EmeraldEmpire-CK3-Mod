@@ -23,22 +23,16 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - innovation (special culture ones) and shared ones. Re-localization of some
 
 ## short term goals 
-- Add CoA à la AGOT for all baronnies/counties +++ (ronin done : missing Kintani stuff) => Add a placeholder with a cat meme so replecement is easy
-- check Asia Expansion, ask for rights W8t 4 response
-- Cat mon : @Bamba => add a placeholder with a cat meme so repleacement is easy
 - Add japanese clothing, add credit (AJ cf how AEP has done)
 	- Understand how it works (https://discord.com/channels/735413460439007241/735413461680652366/1122255742129410068 &  https://discord.com/channels/735413460439007241/735413461680652366/791031025907662868 helps a bit)
 	- Add sub_group for clothings, with a dedicated color palette for each clan/cultures which makes sense cf https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
 	- TODO female armor variation (Need models ?),
 	- Force monks & theocratic count of Shinseism to have monk clothes
-- Add Phoenix (Korean) Castle aestethic (credit to ???) Ask LongusCattus
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
 - add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)???? 
 - Add river map (more ?)
-- What about japanese sprawl ? check AEP
 
 ## Fixes to do
-
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - Change color of some textured emblmes (very low priority) : Mantis, Komori
 - shiba mon is off-center (too much top left)
@@ -51,16 +45,15 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Child can be born with white hair but without the Crane trait !
 - some lands (like ryoko owari/ castle of the Hare / Shiro Shugen (lion south)) are NOT considered coastal but have port at startup wtf. Why ? 
 
-## Workaround to be careful with
+## Workaround to be careful with & unsure behaviours
 - headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
+- Remove AI Cadet branches => Working ?
 
 ##  Waiting & placeholders
-- Cat mon : @Bamba => add a placeholder with a cat meme so repleacement is easy
-- Add CoA à la AGOT for all baronnies/counties +++ (ronin done : missing Kingdoms/duchies/monasteries) => Add a placeholder with a cat meme so replecement is easy
-
+- Cat mon : @Bamba 
+- Add CoA placeholder : missing Frog Duchy, Kingdom of Cherry blossom and that's it ?
 
 ## Futures Features & Nice to have
-- Remove AI Cadet branches => Working ?
 - Becoming Minor or Major Clan IS a special decision which requires the Emperor acknowledgement.
 	- Adaptation of the decision "create custom kingdom" but for duchy ?
 	- Adaptation of the decision "create custom kingdom" (found_kingdom_decision & found_empire_decision from 80_major_decisions.txt)
@@ -141,6 +134,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
 =====================================================================================================
 - economic Opium building for Scorpion heritage ?
+- Patron God à la DLC Viking or AGOAT for Fortunism
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 
 	- Current issues : only Holder can vote => Special landess title of Ofushikai.
@@ -164,7 +158,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 
 # Permissions to asks
-- Asia Expansion Project @ Longus Cattus => Japanese court, clothes
+- Asia Expansion Project @ Longus Cattus => Great Wall, Model for weapons, Korean buildings ?
 - Tachi CK3 Mod dev, for inspiration
 - FUN for background images for council, characters, court, etc...
 
