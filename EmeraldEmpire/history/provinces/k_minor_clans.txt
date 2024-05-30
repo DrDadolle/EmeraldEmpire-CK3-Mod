@@ -164,9 +164,15 @@
 	religion = seven_fortunes
 	holding = castle_holding
 
-	1123.1.1={
+	339.1.1={
 		buildings = {
 			castle_01
+		}
+	}
+
+	402.1.1={
+		buildings = {
+			haunted_ruins_shiro_chuda_01
 		}
 	}
 }

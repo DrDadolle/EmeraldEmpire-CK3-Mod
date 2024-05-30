@@ -23,6 +23,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - innovation (special culture ones) and shared ones. Re-localization of some
 
 ## short term goals 
+- test chuda ruins ! (double check AGOAT to do the same ?)
+- test chuda restoration decision (very experimental) : check how AGOAT does it !
+- check komori is okay
 - Add japanese clothing, add credit (AJ cf how AEP has done)
 	- Understand how it works (https://discord.com/channels/735413460439007241/735413461680652366/1122255742129410068 &  https://discord.com/channels/735413460439007241/735413461680652366/791031025907662868 helps a bit)
 	- Add sub_group for clothings, with a dedicated color palette for each clan/cultures which makes sense cf https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
@@ -43,7 +46,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- "Lowborn" being used as a family name lol
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
-- some lands (like ryoko owari/ castle of the Hare / Shiro Shugen (lion south)) are NOT considered coastal but have port at startup wtf. Why ? 
 
 ## Workaround to be careful with & unsure behaviours
 - headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
@@ -63,15 +65,17 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	-Become Great Clan : Requires X Duchy or Y counties. Emperor positive relation. Emperor MUST be direct liege. Name of Duchy Title => Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
 		- No other ways to create a kingdom title. Basically rework existing mechanics
  	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
-	- reclaim ancestral hiruma lands as Hiruma familly
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
+- Clan decisions
+	- reclaim ancestral hiruma lands as Hiruma familly
 - special buildings
 	- Hall of Ancestors Lion
 	- Traitor's Trove
 	- Tsuma Topaz building
 	- Chuda Ruins
 			- revive chuda dynasty decision !
+	- Kaiu Wall : add models from AEP
 - characters secret religion
 	- 	effect = {make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zun_pagan }} 
 - Create MaA for each great clan, maybe each minor one
@@ -133,6 +137,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
 =====================================================================================================
+- Integrate the mode "House tradition" ????
 - economic Opium building for Scorpion heritage ?
 - Patron God à la DLC Viking or AGOAT for Fortunism
 - Special Phoenix champion succession, test it !

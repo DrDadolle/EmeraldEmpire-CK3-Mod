@@ -163,21 +163,21 @@ common_cb_cost_multiplier_core = {
 	#	}
 	#}
 
-	if = {
-		limit = {
-			scope:attacker = {
-				house ?= { has_house_modifier = fp3_house_modifier_frontier_ambitions }
-			}
-			NOT = {
-				scope:defender = {
-					capital_province ?= {
-						geographical_region = world_persian_empire
-					}
-				}
-			}
-		}
-		multiply = 0.5
-	}
+	#if = {
+	#	limit = {
+	#		scope:attacker = {
+	#			house ?= { has_house_modifier = fp3_house_modifier_frontier_ambitions }
+	#		}
+	#		NOT = {
+	#			scope:defender = {
+	#				capital_province ?= {
+	#					geographical_region = world_persian_empire
+	#				}
+	#			}
+	#		}
+	#	}
+	#	multiply = 0.5
+	#}
 
 	if = {
 		limit = {

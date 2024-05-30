@@ -1,0 +1,157 @@
+﻿##########
+# Shiro Chuda Ruins
+##########
+haunted_ruins_shiro_chuda_01 = {
+	construction_time = slow_construction_time
+
+	### JAPANESE
+	asset = {
+		type = pdxmesh
+		name = "building_japanese_castle_01_mesh"
+		illustration = @holding_illustration_japan
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+	}
+
+	# This is automatically spawned, so AI should ignore this
+	can_construct = {
+		always = no
+	}
+
+	is_enabled = {
+		always = yes
+	}
+	
+	can_construct_potential = {
+		always = no
+	}
+
+	cost_gold = main_building_tier_1_cost
+	next_building = haunted_ruins_shiro_chuda_02
+
+	county_modifier = {
+		development_growth_factor = -0.4
+		supply_limit_mult = -0.6
+		tax_mult = -0.4
+		garrison_size = -0.3
+		levy_size = -0.2
+		travel_danger = 20
+	}
+
+	flag = castle
+
+	type_icon = "icon_building_ramparts.dds"
+
+	
+	# This is automatically spawned, so AI should ignore this
+	ai_value = {
+		base = -100
+	}
+}
+
+haunted_ruins_shiro_chuda_02 = {
+	construction_time = slow_construction_time
+
+	### JAPANESE
+	asset = {
+		type = pdxmesh
+		name = "building_japanese_castle_01_mesh"
+		illustration = @holding_illustration_japan
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+	}
+
+	can_construct = {
+		always = yes
+	}
+
+	is_enabled = {
+		always = yes
+	}
+	
+	can_construct_potential = {
+		always = yes
+	}
+
+	cost_gold = main_building_tier_2_cost
+	next_building = haunted_ruins_shiro_chuda_restored
+
+	county_modifier = {
+		development_growth_factor = -0.2
+		supply_limit_mult = -0.3
+		tax_mult = -0.2
+		garrison_size = -0.15
+		levy_size = -0.1
+		travel_danger = 10
+	}
+
+	flag = castle
+
+	type_icon = "icon_building_ramparts.dds"
+
+	
+	ai_value = {
+		base = 100
+		modifier = {
+			factor = 0
+			scope:holder = {
+				government_has_flag = government_is_theocracy
+			}
+		}
+
+		modifier = {
+			add = 50
+		}
+		modifier = {
+			factor = 5
+			scope:holder.culture = { has_cultural_parameter = ai_more_likely_to_castle }
+		}
+	}
+}
+
+haunted_ruins_shiro_chuda_restored = {
+	construction_time = slow_construction_time	
+	
+	can_construct = {
+		always = yes
+	}
+
+	is_enabled = {
+		always = yes
+	}
+	
+	can_construct_potential = {
+		always = yes
+	}
+	
+	type_icon = "icon_building_ramparts.dds"
+
+	ai_value = {
+		base = 100
+		modifier = {
+			factor = 0
+			scope:holder = {
+				government_has_flag = government_is_theocracy
+			}
+		}
+
+		modifier = {
+			add = 50
+		}
+		modifier = {
+			factor = 5
+			scope:holder.culture = { has_cultural_parameter = ai_more_likely_to_castle }
+		}
+	}
+
+	flag = castle	
+
+	#On complete, change this holding by castle_01
+	on_complete = {
+		#save_scope_as = obstacle_province
+		hidden_effect = {
+			root = {
+				remove_holding = yes
+				add_holding = castle_01
+			}
+		}
+	}
+}

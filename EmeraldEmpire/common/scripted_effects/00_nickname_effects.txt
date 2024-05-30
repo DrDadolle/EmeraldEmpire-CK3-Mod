@@ -3169,17 +3169,17 @@ chance_for_random_nickname_effect = {
 					give_nickname = nick_the_maul
 					trigger_event = lifestyle_nicknames.1000
 				}
-				100 = {
-					trigger = {
-						exists = capital_province
-						capital_province = { geographical_region = world_india }
-						prestige_level >= 3
-						prowess >= 12
-						martial >= 12
-					}
-					give_nickname = nick_the_tiger_of_place
-					trigger_event = lifestyle_nicknames.1000
-				}
+				#100 = {
+				#	trigger = {
+				#		exists = capital_province
+				#		capital_province = { geographical_region = world_india }
+				#		prestige_level >= 3
+				#		prowess >= 12
+				#		martial >= 12
+				#	}
+				#	give_nickname = nick_the_tiger_of_place
+				#	trigger_event = lifestyle_nicknames.1000
+				#}
 				100 = {
 					trigger = {
 						diplomacy >= 16

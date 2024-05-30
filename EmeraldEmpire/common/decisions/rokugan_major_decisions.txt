@@ -287,3 +287,147 @@ decision_avenge_yasuki_war = {
 		base = 100
 	}
 }
+
+################
+### Phoenix Clan 
+##### Restore Snake Clan
+
+decision_restore_snake_clan = {
+    picture = "gfx/interface/illustrations/decisions/decision_phoenix.dds"
+
+    title = decision_restore_snake_clan
+    selection_tooltip = decision_restore_snake_clan_tooltip
+	desc = decision_restore_snake_clan_desc
+	confirm_text = decision_restore_snake_clan_confirm
+
+    major = yes
+
+    is_shown = {
+        is_ruler = yes
+        is_landed = yes
+        culture = { has_cultural_pillar = heritage_phoenix }
+		has_title = title:c_chuda_province
+        #After the end of the Snake Clan
+		current_date >= 402.1.1
+		#TODO later : check that no Snake clan exists anymore ? No landed ruler of Chuda dynasty ?
+
+        # Can be done only once
+        NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:restore_snake_clan
+				}
+			}
+		}
+
+
+    is_valid = {
+		# Is posseded OR mahotsukai
+		OR = {
+			has_trait = posseded
+			has_trait = witch
+			any_secret = { secret_type = secret_witch } #TODO keep it ?
+		}
+		# Castle of Shiro Chuda rebuilt
+		title:c_chuda_province = {
+			has_building_or_higher = castle_01
+		}
+		prestige_level >= 3
+	}
+
+    is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+		is_at_war = no
+		NOT = {
+			has_trait = zealous
+		}
+	}
+
+    effect = {
+		# Get title
+		title:d_chuda = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		title:d_chuda = {
+            # convert culture
+            every_county = {
+                set_county_culture = culture:chuda
+            }
+		}
+
+        #give_nickname = nick_the_unifier #TODO
+
+		# Change Dynasty to Chuda @Check AGOT
+		house = {
+			save_scope_as = old_house
+		}
+		set_house = house:dynn_chuda								
+		house = {
+			set_coa = dynasty:2100115							
+			save_scope_as = new_house
+		}
+		
+        # Change culture of your family to chuda 
+        if = {
+            limit = { 
+				any_spouse = { 
+					is_landed = no 
+				} 
+			}
+			every_spouse = {
+				if = {
+					limit = { is_ai = yes }
+					set_culture = culture:chuda
+				}
+			}
+        }
+        if = {
+			limit = {
+				any_close_family_member = {
+					is_landed = no
+					NOT = { is_spouse_of = root }
+				}
+			}
+			every_close_family_member = {
+				limit = {
+					is_landed = no
+					NOT = { is_spouse_of = root }
+				}
+				custom = all_unlanded_family_members
+				if = {
+					limit = { is_ai = yes }
+					set_culture = culture:chuda
+				}
+			}
+		}
+		every_child = {
+			custom = all_children_custom
+			if = {
+				limit = { is_ai = yes }
+				set_culture = culture:chuda
+			}
+		}
+
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:restore_snake_clan
+		}
+	}
+
+	ai_check_interval = 1
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+################
+### Snake Clan 
+##### Avenge Snake Clan
+#TODO only if flag:restore_snake_clan = yes
