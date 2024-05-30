@@ -17,7 +17,7 @@ e_rokugan = {
 	}
 }
 
-k_imperial_clan = {
+k_imperial_families = {
 	pattern = "pattern_solid.dds"
 	color1 = "black"
 	colored_emblem = {
@@ -4137,5 +4137,67 @@ b_nanashi_mura = {
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_ronin_wolf.dds"
+	}
+}
+##########################
+##### Kintani
+##########################
+k_kintani_valley = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_kintani.dds"
+	}
+}
+d_kintani_valley = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_kintani.dds"
+	}
+}
+c_kintani_province = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_kintani.dds"
+	}
+}
+b_shiro_kyotei = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_kintani.dds"
+	}
+}
+d_kintani_valley_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_kintani.dds"
+	}
+}
+c_toshi_rambo = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_kintani.dds"
+	}
+}
+b_toshi_rambo = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_kintani.dds"
+	}
+}
+##########################
+##### Special
+##########################
+k_west_shinomen_mori = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_owl.dds"
 	}
 }
