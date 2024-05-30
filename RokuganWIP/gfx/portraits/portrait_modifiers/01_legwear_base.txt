@@ -396,6 +396,7 @@
 			modifier = {
 				factor = 0
 				portrait_japanese_clothing_trigger = yes
+				portrait_crane_clothing_trigger = yes
 			}			
 		}
 	}
@@ -481,8 +482,6 @@
 	 #####################
     # Shogunate clothes
 	# Crane clothes
-    #TODO
-
 	crane_legwear = {
 		dna_modifiers = {
 			accessory = {
@@ -525,7 +524,7 @@
 			accessory = {
 				mode = add
 				gene = legwear
-				template = cranee_war_legwear
+				template = crane_war_legwear
 				range = { 0 1 } # For the randomness to work correctly
 			}
 		}

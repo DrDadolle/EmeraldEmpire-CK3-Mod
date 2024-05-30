@@ -161,7 +161,7 @@ accessory_genes = {
 		# Shogunate legwear
 
 		japanese_tabi = {
-			index = 200
+			index = 100
 			male = {
 				1 = male_legwear_tabi_01_high
 			}
@@ -173,7 +173,7 @@ accessory_genes = {
 		}
 
 		japanese_war_legwear = {
-			index = 201
+			index = 101
 			male = {
 				1 = male_legwear_samurai_01_low
 				1 = male_legwear_samurai_02_low
@@ -188,9 +188,8 @@ accessory_genes = {
 
 		##########################
 		# Crane Clan
-		# TODO add variation for tabi ???
 		crane_tabi = {
-			index = 202
+			index = 200
 			male = {
 				1 = male_legwear_tabi_01_high
 			}
@@ -202,7 +201,7 @@ accessory_genes = {
 		}
 
 		crane_war_legwear = {
-			index = 203
+			index = 201
 			male = {
 				1 = male_legwear_samurai_crane_01_low
 				1 = male_legwear_samurai_crane_02_low

@@ -1147,7 +1147,7 @@ fp3_turkic_beards_curly = {
                 add = 200
                 OR = {
                     portrait_japanese_clothing_trigger = yes
-                    portrait_crane_clothing_trigger
+                    portrait_crane_clothing_trigger = yes
                 }
             }
             modifier = {

@@ -9,7 +9,23 @@ special_genes = {
 					1 = empty
 					1 = male_katana_01	#daisho, katana + wakizashi
 				}
-				female = {}
+				female = {
+					1 = empty
+					1 = male_katana_01	#daisho, katana + wakizashi
+				}
+				boy = {}
+				girl = {}
+			}
+			katana_crane_01 = {
+				index = 1
+				male = {
+					#1 = empty
+					1 = male_katana_crane_01	#daisho, katana + wakizashi
+				}
+				female = {
+					#1 = empty
+					1 = male_katana_crane_01	#daisho, katana + wakizashi
+				}
 				boy = {}
 				girl = {}
 			}

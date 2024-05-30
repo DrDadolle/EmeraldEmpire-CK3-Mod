@@ -87,7 +87,7 @@ male_armor_samurai_crane_02_low = {
 }
 male_katana_crane_01 = {
 	set_tags = "daisho"
-	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_01_entity }
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_crane_01_entity }
 }
 
 #####################################
