@@ -333,6 +333,7 @@ decision_restore_snake_clan = {
 			has_building_or_higher = castle_01
 		}
 		prestige_level >= 3
+		#Has shadowlands faith ?
 	}
 
     is_valid_showing_failures_only = {
@@ -360,7 +361,12 @@ decision_restore_snake_clan = {
             }
 		}
 
-        #give_nickname = nick_the_unifier #TODO
+		# Recreate de-jure lands
+		title:c_chuda_province = {
+            set_de_jure_liege_title = title:d_chuda
+		}
+
+        give_nickname = nick_reborn_snake
 
 		# Change Dynasty to Chuda @Check AGOT
 		house = {
