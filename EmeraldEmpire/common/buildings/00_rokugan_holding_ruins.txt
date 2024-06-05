@@ -1,6 +1,7 @@
 ﻿##########
 # Shiro Chuda Ruins
 ##########
+# TODO new holding type
 haunted_ruins_shiro_chuda_01 = {
 	construction_time = slow_construction_time
 
@@ -28,6 +29,9 @@ haunted_ruins_shiro_chuda_01 = {
 	cost_gold = main_building_tier_1_cost
 	next_building = haunted_ruins_shiro_chuda_02
 
+	levy = poor_building_levy_tier_1
+	max_garrison = normal_building_max_garrison_tier_1
+	garrison_reinforcement_factor = building_garrison_reinforcement_factor_tier_1
 	county_modifier = {
 		development_growth_factor = -0.4
 		supply_limit_mult = -0.6
@@ -37,7 +41,7 @@ haunted_ruins_shiro_chuda_01 = {
 		travel_danger = 20
 	}
 
-	flag = castle
+	flag = shiro_chuda_ruins_holding
 
 	type_icon = "icon_building_ramparts.dds"
 
@@ -60,7 +64,9 @@ haunted_ruins_shiro_chuda_02 = {
 	}
 
 	can_construct = {
-		always = yes
+		culture = {
+			has_innovation = innovation_battlements
+		}
 	}
 
 	is_enabled = {
@@ -72,8 +78,11 @@ haunted_ruins_shiro_chuda_02 = {
 	}
 
 	cost_gold = main_building_tier_2_cost
-	next_building = haunted_ruins_shiro_chuda_restored
+	next_building = haunted_ruins_shiro_chuda_03
 
+	levy = poor_building_levy_tier_1
+	max_garrison = normal_building_max_garrison_tier_1
+	garrison_reinforcement_factor = building_garrison_reinforcement_factor_tier_1
 	county_modifier = {
 		development_growth_factor = -0.2
 		supply_limit_mult = -0.3
@@ -83,7 +92,7 @@ haunted_ruins_shiro_chuda_02 = {
 		travel_danger = 10
 	}
 
-	flag = castle
+	flag = shiro_chuda_ruins_holding
 
 	type_icon = "icon_building_ramparts.dds"
 
@@ -107,11 +116,13 @@ haunted_ruins_shiro_chuda_02 = {
 	}
 }
 
-haunted_ruins_shiro_chuda_restored = {
+haunted_ruins_shiro_chuda_03 = {
 	construction_time = slow_construction_time	
 	
 	can_construct = {
-		always = yes
+		culture = {
+			has_innovation = innovation_hoardings
+		}
 	}
 
 	is_enabled = {
@@ -121,6 +132,8 @@ haunted_ruins_shiro_chuda_restored = {
 	can_construct_potential = {
 		always = yes
 	}
+
+	cost_gold = main_building_tier_3_cost
 	
 	type_icon = "icon_building_ramparts.dds"
 
@@ -142,7 +155,7 @@ haunted_ruins_shiro_chuda_restored = {
 		}
 	}
 
-	flag = castle	
+	flag = shiro_chuda_ruins_holding	
 
 	#On complete, change this holding by castle_01
 	on_complete = {
@@ -150,7 +163,7 @@ haunted_ruins_shiro_chuda_restored = {
 		hidden_effect = {
 			root = {
 				remove_holding = yes
-				add_holding = castle_01
+				set_holding_type = castle_holding
 			}
 		}
 	}

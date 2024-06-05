@@ -324,9 +324,9 @@ decision_restore_snake_clan = {
     is_valid = {
 		# Is posseded OR mahotsukai
 		OR = {
-			has_trait = posseded
+			has_trait = possessed_genetic 
 			has_trait = witch
-			any_secret = { secret_type = secret_witch } #TODO keep it ?
+			#any_secret = { secret_type = secret_witch } #TODO keep it ?
 		}
 		# Castle of Shiro Chuda rebuilt
 		title:c_chuda_province = {
@@ -352,18 +352,16 @@ decision_restore_snake_clan = {
 				holder = root
 				change = scope:change
 			}
-		}
-
-		title:d_chuda = {
-            # convert culture
-            every_county = {
-                set_county_culture = culture:chuda
-            }
+			# convert culture
+			every_county = {
+				set_county_culture = culture:chuda
+			}
 		}
 
 		# Recreate de-jure lands
 		title:c_chuda_province = {
             set_de_jure_liege_title = title:d_chuda
+			set_coa = dynasty:2100115
 		}
 
         give_nickname = nick_reborn_snake
@@ -372,11 +370,11 @@ decision_restore_snake_clan = {
 		house = {
 			save_scope_as = old_house
 		}
-		set_house = house:dynn_chuda								
-		house = {
-			set_coa = dynasty:2100115							
-			save_scope_as = new_house
-		}
+		set_house = house:2100115								
+		# house = {
+		# 	set_coa = dynasty:2100115							
+		# 	save_scope_as = new_house
+		# }
 		
         # Change culture of your family to chuda 
         if = {
@@ -409,6 +407,10 @@ decision_restore_snake_clan = {
 					limit = { is_ai = yes }
 					set_culture = culture:chuda
 				}
+				if = {
+					limit = {house =  old_house}
+					set_house = house:2100115	
+				}
 			}
 		}
 		every_child = {
@@ -416,6 +418,10 @@ decision_restore_snake_clan = {
 			if = {
 				limit = { is_ai = yes }
 				set_culture = culture:chuda
+			}
+			if = {
+				limit = {house =  old_house}
+				set_house = house:2100115	
 			}
 		}
 
