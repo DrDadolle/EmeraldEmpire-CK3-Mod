@@ -311,6 +311,14 @@ decision_restore_snake_clan = {
 		current_date >= 402.1.1
 		#TODO later : check that no Snake clan exists anymore ? No landed ruler of Chuda dynasty ?
 
+
+		dynasty:2100115 = {
+			NOT = {
+				any_house_member = {
+					is_alive = yes
+				}
+			}
+		}
         # Can be done only once
         NOT = {
 			is_target_in_global_variable_list = {
@@ -329,6 +337,7 @@ decision_restore_snake_clan = {
 			#any_secret = { secret_type = secret_witch } #TODO keep it ?
 		}
 		# Castle of Shiro Chuda rebuilt
+		has_title = title:c_chuda_province
 		title:c_chuda_province = {
 			has_building_or_higher = castle_01
 		}
@@ -346,84 +355,88 @@ decision_restore_snake_clan = {
 	}
 
     effect = {
+		gain_heroic_legend_seed_tooltip_effect = yes
+		# trigger_event = {
+		# 	id = middle_europe_decisions.0001
+		# }
 		# Get title
-		title:d_chuda = {
-			change_title_holder = {
-				holder = root
-				change = scope:change
-			}
-			# convert culture
-			every_county = {
-				set_county_culture = culture:chuda
-			}
-		}
+		# show_as_tooltip = {
+		# 	reborn_snake_clan_scripted_effect = yes
+		# }
 
-		# Recreate de-jure lands
-		title:c_chuda_province = {
-            set_de_jure_liege_title = title:d_chuda
-			set_coa = dynasty:2100115
-		}
-
-        give_nickname = nick_reborn_snake
-
-		# Change Dynasty to Chuda @Check AGOT
-		house = {
-			save_scope_as = old_house
-		}
-		set_house = house:2100115								
+		# create_title_and_vassal_change = {
+		# 	type = created
+		# 	save_scope_as = change
+		# 	add_claim_on_loss = no
+		# }
+		# title:d_chuda = {
+		# 	change_title_holder = {
+		# 		holder = root
+		# 		change = scope:change
+		# 	}
+		# }
+		# # Recreate de-jure lands
+		# title:c_chuda_province = {
+		# 	set_de_jure_liege_title = title:d_chuda
+		# 	set_coa = dynasty:2100115
+		# }
+	
+		give_nickname = nick_reborn_snake
+	
+		
 		# house = {
 		# 	set_coa = dynasty:2100115							
 		# 	save_scope_as = new_house
 		# }
 		
         # Change culture of your family to chuda 
-        if = {
-            limit = { 
-				any_spouse = { 
-					is_landed = no 
-				} 
-			}
-			every_spouse = {
-				if = {
-					limit = { is_ai = yes }
-					set_culture = culture:chuda
-				}
-			}
-        }
-        if = {
-			limit = {
-				any_close_family_member = {
-					is_landed = no
-					NOT = { is_spouse_of = root }
-				}
-			}
-			every_close_family_member = {
-				limit = {
-					is_landed = no
-					NOT = { is_spouse_of = root }
-				}
-				custom = all_unlanded_family_members
-				if = {
-					limit = { is_ai = yes }
-					set_culture = culture:chuda
-				}
-				if = {
-					limit = {house =  old_house}
-					set_house = house:2100115	
-				}
-			}
-		}
-		every_child = {
-			custom = all_children_custom
-			if = {
-				limit = { is_ai = yes }
-				set_culture = culture:chuda
-			}
-			if = {
-				limit = {house =  old_house}
-				set_house = house:2100115	
-			}
-		}
+        # if = {
+        #     limit = { 
+		# 		any_spouse = { 
+		# 			is_landed = no 
+		# 		} 
+		# 	}
+		# 	every_spouse = {
+		# 		if = {
+		# 			limit = { is_ai = yes }
+		# 			set_culture = culture:chuda
+		# 		}
+		# 	}
+        # }
+        # if = {
+		# 	limit = {
+		# 		any_close_family_member = {
+		# 			is_landed = no
+		# 			NOT = { is_spouse_of = root }
+		# 		}
+		# 	}
+		# 	every_close_family_member = {
+		# 		limit = {
+		# 			is_landed = no
+		# 			NOT = { is_spouse_of = root }
+		# 		}
+		# 		custom = all_unlanded_family_members
+		# 		if = {
+		# 			limit = { is_ai = yes }
+		# 			set_culture = culture:chuda
+		# 		}
+		# 		if = {
+		# 			limit = {house =  old_house}
+		# 			set_house = house:2100115	
+		# 		}
+		# 	}
+		# }
+		# every_child = {
+		# 	custom = all_children_custom
+		# 	if = {
+		# 		limit = { is_ai = yes }
+		# 		set_culture = culture:chuda
+		# 	}
+		# 	if = {
+		# 		limit = {house =  old_house}
+		# 		set_house = house:2100115	
+		# 	}
+		# }
 
 		add_to_global_variable_list = {
 			name = unavailable_unique_decisions

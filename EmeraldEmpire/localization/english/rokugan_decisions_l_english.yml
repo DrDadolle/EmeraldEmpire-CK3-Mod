@@ -8,6 +8,11 @@
  decision_avenge_yasuki_war_tooltip:0 "We can reclaim the Yasuki Lands once and for all."
  decision_avenge_yasuki_war_confirm:0 "Avenge our ancestors"
  decision_convert_yasuki_vassals_custom:1 "Every $yasuki$ [vassal|E]"
+ # decision_restore_snake_clan
+ decision_restore_snake_clan:0 "Restore the Snake Clan"
+ decision_restore_snake_clan_desc:0 "The Snake Clan was destroyed by the Shiba Family. It shall be reborn"
+ decision_restore_snake_clan_tooltip:0 "We can restore the Snake Clan."
+ decision_restore_snake_clan_confirm:0 "Restore the Snake Clan"
  ############################
  ###### MINOR
  ############################

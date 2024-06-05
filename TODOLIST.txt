@@ -24,6 +24,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## short term goals 
 - test chuda ruins ! (double check AGOAT to do the same ?)
+- Unit & siege units a bit too big !
 - test chuda restoration decision (very experimental) : check how AGOAT does it !
 - check komori is okay
 - Add japanese clothing, add credit (AJ cf how AEP has done)
@@ -36,6 +37,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Add river map (more ?)
 
 ## Fixes to do
+- Haishou => Hida ??? ID 300511
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - Change color of some textured emblmes (very low priority) : Mantis, Komori
 - shiba mon is off-center (too much top left)
@@ -46,6 +48,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- "Lowborn" being used as a family name lol
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
+- "an honorable death" event procs for outsite of player stuff
 
 ## Workaround to be careful with & unsure behaviours
 - headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
