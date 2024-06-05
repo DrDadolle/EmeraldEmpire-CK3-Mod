@@ -1,4 +1,14 @@
 ﻿reborn_snake_clan_scripted_effect = {
+
+	give_nickname = nick_reborn_snake
+
+	# Recreate de-jure lands
+	title:c_chuda_province = {
+		set_de_jure_liege_title = title:d_chuda
+	}
+	every_held_title = {
+		set_coa = dynasty:2100115
+	}
 	create_title_and_vassal_change = {
 		type = created
 		save_scope_as = change
@@ -10,28 +20,78 @@
 			change = scope:change
 		}
 	}
-	# Recreate de-jure lands
-	title:c_chuda_province = {
-		set_de_jure_liege_title = title:d_chuda
-		set_coa = dynasty:2100115
-	}
+	resolve_title_and_vassal_change = scope:change
 
-	give_nickname = nick_reborn_snake
+	# hidden_effect = { set_primary_title_to = title:d_chuda }
+	add_prestige = major_prestige_gain
 
-	# every_held_title = {
-	# 	# only county directly own by the character
-	# 	limit = { tier = tier_county }
-	# 	every_county_province = {
-	# 		set_county_culture = culture:chuda
+	#Change of dynasty
+	house = { save_scope_as = old_house }
+	hidden_effect = { set_house = character:chudason.house }
+	# scope:house = {
+	# 	every_house_member = {
+	# 		set_house = character:Darklyn_1.house
 	# 	}
 	# }
 
-
-
-	# Change Dynasty to Chuda @Check AGOT
-	# dynasty = {
-	# 	save_scope_as = old_dynasty
+	
+	# house = {
+	# 	set_coa = dynasty:2100115							
+	# 	save_scope_as = new_house
 	# }
-	# set_dynasty = dynasty:2100115	
+	set_culture = culture:chuda
+	# Change culture of your family to chuda 
+	if = {
+		limit = { 
+			any_spouse = { 
+				is_landed = no 
+			} 
+		}
+		every_spouse = {
+			if = {
+				limit = { is_ai = yes }
+				set_culture = culture:chuda
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_close_family_member = {
+				is_landed = no
+				NOT = { is_spouse_of = root }
+			}
+		}
+		every_close_family_member = {
+			limit = {
+				is_landed = no
+				NOT = { is_spouse_of = root }
+			}
+			custom = all_unlanded_family_members
+			if = {
+				limit = { is_ai = yes }
+				set_culture = culture:chuda
+			}
+			if = {
+				# limit = {house =  old_house}
+				set_house = character:chudason.house
+			}
+		}
+		every_child = {
+			custom = all_children_custom
+			if = {
+				limit = { is_ai = yes }
+				set_culture = culture:chuda
+			}
+			if = {
+				# limit = {house =  old_house}
+				set_house = character:chudason.house
+			}
+		}
+	}
+
+	add_to_global_variable_list = {
+		name = unavailable_unique_decisions
+		target = flag:restore_snake_clan
+	}
 	
 }

@@ -301,6 +301,34 @@
 	}
 }
 
+
+#####################
+#	Chuda
+#####################
+chudason = {
+	name = name_yoharu 	# Chuda yoharu
+	dynasty = 2100115	# Chuda
+	religion = "seven_fortunes"
+	culture = "chuda"
+	
+	### Stats
+	### Traits
+	trait = education_learning_3
+	trait = shindoshi
+	
+	### Family 
+
+	380.1.1 = {
+		birth = yes
+	}
+ 
+	402.1.1 = {
+		death={
+			death_reason=death_battle
+		}
+	}
+}
+
 #####################
 #	Komori
 #####################

@@ -62,6 +62,12 @@ decision_avenge_yasuki_war = {
 		dynasty = { add_dynasty_prestige = 500 }
 
         # Change culture of all yasuki of your family & vassals. 
+		if = {
+			limit = {
+				culture = culture:yasuki
+			}
+			set_culture = culture:yasuki_crane
+		}
         if = {
             limit = { 
 				any_spouse = { 
@@ -337,10 +343,9 @@ decision_restore_snake_clan = {
 			#any_secret = { secret_type = secret_witch } #TODO keep it ?
 		}
 		# Castle of Shiro Chuda rebuilt
-		has_title = title:c_chuda_province
-		title:c_chuda_province = {
-			has_building_or_higher = castle_01
-		}
+		# title:b_shiro_chuda_ruins.title_province= {
+		# 	has_building_or_higher = castle_01
+		# }
 		prestige_level >= 3
 		#Has shadowlands faith ?
 	}
@@ -356,92 +361,15 @@ decision_restore_snake_clan = {
 
     effect = {
 		gain_heroic_legend_seed_tooltip_effect = yes
-		# trigger_event = {
-		# 	id = middle_europe_decisions.0001
-		# }
 		# Get title
-		# show_as_tooltip = {
-		# 	reborn_snake_clan_scripted_effect = yes
-		# }
-
-		# create_title_and_vassal_change = {
-		# 	type = created
-		# 	save_scope_as = change
-		# 	add_claim_on_loss = no
-		# }
-		# title:d_chuda = {
-		# 	change_title_holder = {
-		# 		holder = root
-		# 		change = scope:change
-		# 	}
-		# }
-		# # Recreate de-jure lands
-		# title:c_chuda_province = {
-		# 	set_de_jure_liege_title = title:d_chuda
-		# 	set_coa = dynasty:2100115
-		# }
-	
-		give_nickname = nick_reborn_snake
-	
-		
-		# house = {
-		# 	set_coa = dynasty:2100115							
-		# 	save_scope_as = new_house
-		# }
-		
-        # Change culture of your family to chuda 
-        # if = {
-        #     limit = { 
-		# 		any_spouse = { 
-		# 			is_landed = no 
-		# 		} 
-		# 	}
-		# 	every_spouse = {
-		# 		if = {
-		# 			limit = { is_ai = yes }
-		# 			set_culture = culture:chuda
-		# 		}
-		# 	}
-        # }
-        # if = {
-		# 	limit = {
-		# 		any_close_family_member = {
-		# 			is_landed = no
-		# 			NOT = { is_spouse_of = root }
-		# 		}
-		# 	}
-		# 	every_close_family_member = {
-		# 		limit = {
-		# 			is_landed = no
-		# 			NOT = { is_spouse_of = root }
-		# 		}
-		# 		custom = all_unlanded_family_members
-		# 		if = {
-		# 			limit = { is_ai = yes }
-		# 			set_culture = culture:chuda
-		# 		}
-		# 		if = {
-		# 			limit = {house =  old_house}
-		# 			set_house = house:2100115	
-		# 		}
-		# 	}
-		# }
-		# every_child = {
-		# 	custom = all_children_custom
-		# 	if = {
-		# 		limit = { is_ai = yes }
-		# 		set_culture = culture:chuda
-		# 	}
-		# 	if = {
-		# 		limit = {house =  old_house}
-		# 		set_house = house:2100115	
-		# 	}
-		# }
-
-		add_to_global_variable_list = {
-			name = unavailable_unique_decisions
-			target = flag:restore_snake_clan
+		show_as_tooltip = {
+			reborn_snake_clan_scripted_effect = yes
 		}
+		trigger_event = {
+			id = rokugan_minor_clan_restoration_decision.0001
+		}
+
+	
 	}
 
 	ai_check_interval = 1

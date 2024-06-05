@@ -1,0 +1,24 @@
+﻿
+namespace = rokugan_minor_clan_restoration_decision
+
+rokugan_minor_clan_restoration_decision.0001 = {
+	type = character_event
+	content_source = l5r_dlc
+	type = character_event
+	title = rokugan_minor_clan_restoration_decision.0001.t
+	desc = rokugan_minor_clan_restoration_decision.0001.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		reborn_snake_clan_scripted_effect = yes
+		legend_seed_new_title_effect = yes
+	}
+	option = {
+		name = rokugan_minor_clan_restoration_decision.0001.a
+	}
+}

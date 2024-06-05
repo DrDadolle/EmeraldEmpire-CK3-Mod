@@ -310,9 +310,26 @@ c_shika_province = {
 #####################
 #	Chuda
 #####################
+d_chuda = {
+	401.1.1 = {
+		liege = "e_rokugan"
+		holder = chudason
+	}
+	402.1.1 = {
+		holder = none
+	}
+}
+
 c_chuda_province = {
-	1123.1.1 = {
+
+	401.1.1 = {
+		liege = "d_chuda"
+		holder = chudason
+	}
+	402.1.1 = {
 		liege = "d_isawa" #Held by Isawa family after the 5 Nights of Shame
+	}
+	1123.1.1 = {
 		holder = 3000211 # Shiba Akiko #TODO place Holder name
 		change_development_level = 0
 	}
