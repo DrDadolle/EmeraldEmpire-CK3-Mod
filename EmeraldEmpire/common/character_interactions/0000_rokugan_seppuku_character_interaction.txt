@@ -143,7 +143,9 @@ seppuku_interaction = {
 			VICTIM = scope:recipient
 			EXECUTIONER = scope:actor
 		}
-
+		scope:recipient = {
+			trigger_event = rokugan_char_interaction.0233
+		}
 		scope:actor = {
 			trigger_event = rokugan_char_interaction.0231
 			if = {

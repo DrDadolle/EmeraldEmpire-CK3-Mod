@@ -1,4 +1,6 @@
-﻿#Vassal Seppuku Attempt succeeded.
+﻿namespace = rokugan_char_interaction
+
+#Vassal Seppuku Attempt succeeded.
 rokugan_char_interaction.0231 = {
 	type = character_event
 	content_source = l5r_dlc
@@ -20,7 +22,9 @@ rokugan_char_interaction.0231 = {
 		# If you have no imprisonment reason and they're your rightful vassal you lose some legitimacy
 		if = {
 			limit = {
-				NOT = { has_seppuku_reason = scope:recipient }
+				# NOT = { has_seppuku_reason = scope:recipient }
+				NOT = { has_imprisonment_reason = scope:recipient }
+				
 			}
 			if = {
 				limit = {
@@ -33,5 +37,20 @@ rokugan_char_interaction.0231 = {
 
 	option = {
 		name = rokugan_char_interaction.0231.a
+	}
+}
+
+# Vassal Seppuku automatically
+rokugan_char_interaction.0233 = {
+	type = letter_event
+	opening = {
+		desc = char_interaction.0020.opening
+	}
+	desc = rokugan_char_interaction.0233.desc
+		
+	sender = scope:actor
+
+	option = {
+		name = rokugan_char_interaction.0233.a
 	}
 }
