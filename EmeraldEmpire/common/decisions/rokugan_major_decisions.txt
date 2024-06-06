@@ -315,9 +315,6 @@ decision_restore_snake_clan = {
 		has_title = title:c_chuda_province
         #After the end of the Snake Clan
 		current_date >= 402.1.1
-		#TODO later : check that no Snake clan exists anymore ? No landed ruler of Chuda dynasty ?
-
-
 		dynasty:2100115 = {
 			NOT = {
 				any_house_member = {
@@ -343,9 +340,9 @@ decision_restore_snake_clan = {
 			#any_secret = { secret_type = secret_witch } #TODO keep it ?
 		}
 		# Castle of Shiro Chuda rebuilt
-		# title:b_shiro_chuda_ruins.title_province= {
-		# 	has_building_or_higher = castle_01
-		# }
+		title:b_shiro_chuda_ruins.title_province= {
+			has_building_or_higher = castle_01
+		}
 		prestige_level >= 3
 		#Has shadowlands faith ?
 	}

@@ -692,7 +692,7 @@ martial_strategy.1051 = {
 # }
 
 # #You failed to translate the book... bummer!
-# martial_strategy.2002 = {
+ martial_strategy.2002 = {
 	type = character_event
 	title = martial_strategy.2000.t
 	desc = martial_strategy.2002.desc

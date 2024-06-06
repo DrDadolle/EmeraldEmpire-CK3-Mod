@@ -1,5 +1,6 @@
 ﻿reborn_snake_clan_scripted_effect = {
 
+	
 	give_nickname = nick_reborn_snake
 
 	# Recreate de-jure lands
@@ -28,17 +29,7 @@
 	#Change of dynasty
 	house = { save_scope_as = old_house }
 	hidden_effect = { set_house = character:chudason.house }
-	# scope:house = {
-	# 	every_house_member = {
-	# 		set_house = character:Darklyn_1.house
-	# 	}
-	# }
 
-	
-	# house = {
-	# 	set_coa = dynasty:2100115							
-	# 	save_scope_as = new_house
-	# }
 	set_culture = culture:chuda
 	# Change culture of your family to chuda 
 	if = {
