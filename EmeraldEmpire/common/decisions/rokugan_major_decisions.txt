@@ -45,243 +45,12 @@ decision_avenge_yasuki_war = {
 	}
 
     effect = {
-        # Becomes de_jure
-		title:d_yasuki = {
-            set_de_jure_liege_title = title:k_crane_clan
-            # convert cutulre
-            every_county = {
-                limit = {
-                    culture = culture:yasuki
-                }
-                set_county_culture = culture:yasuki_crane
-            }
+		gain_heroic_legend_seed_tooltip_effect = yes
+		show_as_tooltip = {
+			unite_yasuki_to_crane_scripted_effect = yes
 		}
-
-        #give_nickname = nick_the_unifier
-		add_prestige = 1500
-		dynasty = { add_dynasty_prestige = 500 }
-
-        # Change culture of all yasuki of your family & vassals. 
-		if = {
-			limit = {
-				culture = culture:yasuki
-			}
-			set_culture = culture:yasuki_crane
-		}
-        if = {
-            limit = { 
-				any_spouse = { 
-					is_landed = no 
-                    culture = culture:yasuki
-				} 
-			}
-			every_spouse = {
-				limit = {
-					is_landed = no
-					culture = culture:yasuki
-				}
-				if = {
-					limit = { is_ai = yes }
-					set_culture = culture:yasuki_crane
-				}
-			}
-        }
-        if = {
-			limit = {
-				any_close_family_member = {
-					is_landed = no
-					NOT = { is_spouse_of = root }
-					culture = culture:yasuki
-				}
-			}
-			every_close_family_member = {
-				limit = {
-					is_landed = no
-					NOT = { is_spouse_of = root }
-					culture = culture:yasuki
-				}
-				custom = all_unlanded_family_members
-				if = {
-					limit = { is_ai = yes }
-					set_culture = culture:yasuki_crane
-				}
-			}
-		}
-        if = {
-			limit = {
-				any_child = {
-					culture = culture:yasuki
-				}
-			}
-			every_child = {
-				limit = {
-					NOT = { 
-						culture = culture:yasuki
-					}
-				}
-				custom = all_children_custom
-				if = {
-					limit = { is_ai = yes }
-					set_culture = culture:yasuki_crane
-				}
-			}
-		}
-        #Convert appropriate vassals, and their family
-		if = {
-			limit = {
-				any_vassal_or_below = {
-					culture = culture:yasuki
-				}
-			}
-			every_vassal_or_below = {
-				custom = decision_convert_yasuki_vassals_custom
-				limit = {
-					culture = culture:yasuki
-				}
-				if = {
-					limit = { is_ai = yes }
-					set_culture = culture:yasuki_crane
-				}
-				hidden_effect = {
-					if = {
-						limit = { 
-							any_spouse = { 
-								is_landed = no
-								culture = culture:yasuki
-							} 
-						}
-						every_spouse = {
-							limit = {
-								is_landed = no
-								culture = culture:yasuki
-							}
-							if = {
-								limit = { is_ai = yes }
-								set_culture = culture:yasuki_crane
-							}
-						}
-					}
-					if = {
-						limit = {
-							any_close_family_member = {
-								is_landed = no
-								NOT = { is_spouse_of = prev }
-								culture = culture:yasuki
-							}
-						}
-						every_close_family_member = {
-							limit = {
-								is_landed = no
-								NOT = { is_spouse_of = prev }
-								culture = culture:yasuki
-							}
-							custom = all_unlanded_family_members
-							if = {
-								limit = { is_ai = yes }
-								set_culture = culture:yasuki_crane
-							}
-						}
-					}
-					if = {
-						limit = {
-							any_child = {
-								culture = culture:yasuki
-							}
-						}
-						every_child = {
-							limit = {
-								culture = culture:yasuki
-							}
-							custom = all_children_custom
-							if = {
-								limit = { is_ai = yes }
-								set_culture = culture:yasuki_crane
-							}
-						}
-					}
-					if = {
-						limit = {
-							any_vassal_or_below = {
-								culture = culture:yasuki
-							}
-						}
-						every_vassal_or_below = {
-							custom = decision_convert_yasuki_vassals_custom
-							limit = {
-								culture = culture:yasuki
-							}
-							if = {
-								limit = { is_ai = yes }
-								set_culture = culture:yasuki_crane
-							}
-							hidden_effect = {
-								if = {
-									limit = { 
-										any_spouse = { 
-											is_landed = no 
-											culture = culture:yasuki
-										} 
-									}
-									every_spouse = {
-										limit = {
-											is_landed = no
-											culture = culture:yasuki
-										}
-										if = {
-											limit = { is_ai = yes }
-											set_culture = culture:yasuki_crane
-										}
-									}
-								}
-								if = {
-									limit = {
-										any_close_family_member = {
-											is_landed = no
-											NOT = { is_spouse_of = prev }
-											culture = culture:yasuki
-										}
-									}
-									every_close_family_member = {
-										limit = {
-											is_landed = no
-											NOT = { is_spouse_of = prev }
-											culture = culture:yasuki
-										}
-										custom = all_unlanded_family_members
-										if = {
-											limit = { is_ai = yes }
-											set_culture = culture:yasuki_crane
-										}
-									}
-								}
-								if = {
-									limit = {
-										any_child = {
-											culture = culture:yasuki
-										}
-									}
-									every_child = {
-										limit = {
-											culture = culture:yasuki
-										}
-										custom = all_children_custom
-										if = {
-											limit = { is_ai = yes }
-											set_culture = culture:yasuki_crane
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-
-
-		add_to_global_variable_list = {
-			name = unavailable_unique_decisions
-			target = flag:avenge_yasuki_war
+		trigger_event = {
+			id = rokugan_major_clan_events_decision.0001
 		}
 	}
 
@@ -297,7 +66,6 @@ decision_avenge_yasuki_war = {
 ################
 ### Phoenix Clan 
 ##### Restore Snake Clan
-
 decision_restore_snake_clan = {
     picture = "gfx/interface/illustrations/decisions/decision_phoenix.dds"
 
@@ -358,15 +126,12 @@ decision_restore_snake_clan = {
 
     effect = {
 		gain_heroic_legend_seed_tooltip_effect = yes
-		# Get title
 		show_as_tooltip = {
 			reborn_snake_clan_scripted_effect = yes
 		}
 		trigger_event = {
 			id = rokugan_minor_clan_restoration_decision.0001
 		}
-
-	
 	}
 
 	ai_check_interval = 1

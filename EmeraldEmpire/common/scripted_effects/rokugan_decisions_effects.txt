@@ -86,3 +86,247 @@
 	}
 	
 }
+
+
+unite_yasuki_to_crane_scripted_effect = {
+
+	# Becomes de_jure
+	title:d_yasuki = {
+		set_de_jure_liege_title = title:k_crane_clan
+		# convert cutulre
+		every_county = {
+			limit = {
+				culture = culture:yasuki
+			}
+			set_county_culture = culture:yasuki_crane
+		}
+	}
+
+	#give_nickname = nick_the_unifier
+	add_prestige = 1500
+	dynasty = { add_dynasty_prestige = 500 }
+
+	# Change culture of all yasuki of your family & vassals. 
+	if = {
+		limit = {
+			culture = culture:yasuki
+		}
+		set_culture = culture:yasuki_crane
+	}
+	if = {
+		limit = { 
+			any_spouse = { 
+				is_landed = no 
+				culture = culture:yasuki
+			} 
+		}
+		every_spouse = {
+			limit = {
+				is_landed = no
+				culture = culture:yasuki
+			}
+			if = {
+				limit = { is_ai = yes }
+				set_culture = culture:yasuki_crane
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_close_family_member = {
+				is_landed = no
+				NOT = { is_spouse_of = root }
+				culture = culture:yasuki
+			}
+		}
+		every_close_family_member = {
+			limit = {
+				is_landed = no
+				NOT = { is_spouse_of = root }
+				culture = culture:yasuki
+			}
+			custom = all_unlanded_family_members
+			if = {
+				limit = { is_ai = yes }
+				set_culture = culture:yasuki_crane
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_child = {
+				culture = culture:yasuki
+			}
+		}
+		every_child = {
+			limit = {
+				NOT = { 
+					culture = culture:yasuki
+				}
+			}
+			custom = all_children_custom
+			if = {
+				limit = { is_ai = yes }
+				set_culture = culture:yasuki_crane
+			}
+		}
+	}
+	#Convert appropriate vassals, and their family
+	if = {
+		limit = {
+			any_vassal_or_below = {
+				culture = culture:yasuki
+			}
+		}
+		every_vassal_or_below = {
+			custom = decision_convert_yasuki_vassals_custom
+			limit = {
+				culture = culture:yasuki
+			}
+			if = {
+				limit = { is_ai = yes }
+				set_culture = culture:yasuki_crane
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						any_spouse = { 
+							is_landed = no
+							culture = culture:yasuki
+						} 
+					}
+					every_spouse = {
+						limit = {
+							is_landed = no
+							culture = culture:yasuki
+						}
+						if = {
+							limit = { is_ai = yes }
+							set_culture = culture:yasuki_crane
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_close_family_member = {
+							is_landed = no
+							NOT = { is_spouse_of = prev }
+							culture = culture:yasuki
+						}
+					}
+					every_close_family_member = {
+						limit = {
+							is_landed = no
+							NOT = { is_spouse_of = prev }
+							culture = culture:yasuki
+						}
+						custom = all_unlanded_family_members
+						if = {
+							limit = { is_ai = yes }
+							set_culture = culture:yasuki_crane
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_child = {
+							culture = culture:yasuki
+						}
+					}
+					every_child = {
+						limit = {
+							culture = culture:yasuki
+						}
+						custom = all_children_custom
+						if = {
+							limit = { is_ai = yes }
+							set_culture = culture:yasuki_crane
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_vassal_or_below = {
+							culture = culture:yasuki
+						}
+					}
+					every_vassal_or_below = {
+						custom = decision_convert_yasuki_vassals_custom
+						limit = {
+							culture = culture:yasuki
+						}
+						if = {
+							limit = { is_ai = yes }
+							set_culture = culture:yasuki_crane
+						}
+						hidden_effect = {
+							if = {
+								limit = { 
+									any_spouse = { 
+										is_landed = no 
+										culture = culture:yasuki
+									} 
+								}
+								every_spouse = {
+									limit = {
+										is_landed = no
+										culture = culture:yasuki
+									}
+									if = {
+										limit = { is_ai = yes }
+										set_culture = culture:yasuki_crane
+									}
+								}
+							}
+							if = {
+								limit = {
+									any_close_family_member = {
+										is_landed = no
+										NOT = { is_spouse_of = prev }
+										culture = culture:yasuki
+									}
+								}
+								every_close_family_member = {
+									limit = {
+										is_landed = no
+										NOT = { is_spouse_of = prev }
+										culture = culture:yasuki
+									}
+									custom = all_unlanded_family_members
+									if = {
+										limit = { is_ai = yes }
+										set_culture = culture:yasuki_crane
+									}
+								}
+							}
+							if = {
+								limit = {
+									any_child = {
+										culture = culture:yasuki
+									}
+								}
+								every_child = {
+									limit = {
+										culture = culture:yasuki
+									}
+									custom = all_children_custom
+									if = {
+										limit = { is_ai = yes }
+										set_culture = culture:yasuki_crane
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	add_to_global_variable_list = {
+		name = unavailable_unique_decisions
+		target = flag:avenge_yasuki_war
+	}
+	
+}
