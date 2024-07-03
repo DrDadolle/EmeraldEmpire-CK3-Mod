@@ -28,6 +28,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Add sub_group for clothings, with a dedicated color palette for each clan/cultures which makes sense cf https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
 	- TODO female armor variation (Need models ?),
 	- Force monks & theocratic count of Shinseism to have monk clothes
+	- How to add the rest ? TODO 
+			- Update 01_legwear_base.txt (contains armor legwear too) 01_clothes_base.txt 04_clothes_armor.txt 04_head_gear_armor.txt 
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
 - add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)???? 
 - Add river map (more ?)

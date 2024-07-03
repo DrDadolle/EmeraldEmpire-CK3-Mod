@@ -479,7 +479,15 @@
                 add = 60
                 shogunate_should_be_no_hair_trigger = yes
                 portrait_japanese_clothing_trigger = yes
+                portrait_crab_clothing_trigger = yes
                 portrait_crane_clothing_trigger = yes
+                portrait_dragon_clothing_trigger = yes
+                portrait_lion_clothing_trigger = yes
+                portrait_phoenix_clothing_trigger = yes
+                portrait_scorpion_clothing_trigger = yes
+                portrait_unicorn_clothing_trigger = yes
+                portrait_imperial_clothing_trigger = yes
+                portrait_minor_clothing_trigger = yes
             }
         }
     }

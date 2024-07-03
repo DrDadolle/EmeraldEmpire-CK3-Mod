@@ -87,6 +87,25 @@ portrait_japanese_clothing_contents_trigger = {
 	}
 }
 
+##### Crab Clan
+portrait_crab_clothing_trigger = {
+	scope:culture = {
+		portrait_crab_clothing_contents_trigger = yes
+	}
+}
+
+portrait_crab_clothing_spouse_trigger = {
+	culture = {
+		portrait_crab_clothing_contents_trigger = yes
+	}
+}
+
+portrait_crab_clothing_contents_trigger = {
+	OR = {
+		has_clothing_gfx = rokugani_crab_clothing_gfx
+	}
+}
+
 ##### Crane Clan
 portrait_crane_clothing_trigger = {
 	scope:culture = {
@@ -103,5 +122,138 @@ portrait_crane_clothing_spouse_trigger = {
 portrait_crane_clothing_contents_trigger = {
 	OR = {
 		has_clothing_gfx = rokugani_crane_clothing_gfx
+	}
+}
+
+##### dragon Clan
+portrait_dragon_clothing_trigger = {
+	scope:culture = {
+		portrait_dragon_clothing_contents_trigger = yes
+	}
+}
+
+portrait_dragon_clothing_spouse_trigger = {
+	culture = {
+		portrait_dragon_clothing_contents_trigger = yes
+	}
+}
+
+portrait_dragon_clothing_contents_trigger = {
+	OR = {
+		has_clothing_gfx = rokugani_dragon_clothing_gfx
+	}
+}
+
+##### Lion Clan
+portrait_lion_clothing_trigger = {
+	scope:culture = {
+		portrait_lion_clothing_contents_trigger = yes
+	}
+}
+
+portrait_lion_clothing_spouse_trigger = {
+	culture = {
+		portrait_lion_clothing_contents_trigger = yes
+	}
+}
+
+portrait_lion_clothing_contents_trigger = {
+	OR = {
+		has_clothing_gfx = rokugani_lion_clothing_gfx
+	}
+}
+
+##### phoenix Clan
+portrait_phoenix_clothing_trigger = {
+	scope:culture = {
+		portrait_phoenix_clothing_contents_trigger = yes
+	}
+}
+
+portrait_phoenix_clothing_spouse_trigger = {
+	culture = {
+		portrait_phoenix_clothing_contents_trigger = yes
+	}
+}
+
+portrait_phoenix_clothing_contents_trigger = {
+	OR = {
+		has_clothing_gfx = rokugani_phoenix_clothing_gfx
+	}
+}
+
+##### scorpion Clan
+portrait_scorpion_clothing_trigger = {
+	scope:culture = {
+		portrait_scorpion_clothing_contents_trigger = yes
+	}
+}
+
+portrait_scorpion_clothing_spouse_trigger = {
+	culture = {
+		portrait_scorpion_clothing_contents_trigger = yes
+	}
+}
+
+portrait_scorpion_clothing_contents_trigger = {
+	OR = {
+		has_clothing_gfx = rokugani_scorpion_clothing_gfx
+	}
+}
+
+##### unicorn Clan
+portrait_unicorn_clothing_trigger = {
+	scope:culture = {
+		portrait_unicorn_clothing_contents_trigger = yes
+	}
+}
+
+portrait_unicorn_clothing_spouse_trigger = {
+	culture = {
+		portrait_unicorn_clothing_contents_trigger = yes
+	}
+}
+
+portrait_unicorn_clothing_contents_trigger = {
+	OR = {
+		has_clothing_gfx = rokugani_unicorn_clothing_gfx
+	}
+}
+
+##### imperial Clan
+portrait_imperial_clothing_trigger = {
+	scope:culture = {
+		portrait_imperial_clothing_contents_trigger = yes
+	}
+}
+
+portrait_imperial_clothing_spouse_trigger = {
+	culture = {
+		portrait_imperial_clothing_contents_trigger = yes
+	}
+}
+
+portrait_imperial_clothing_contents_trigger = {
+	OR = {
+		has_clothing_gfx = rokugani_imperial_clothing_gfx
+	}
+}
+
+##### minor Clan
+portrait_minor_clothing_trigger = {
+	scope:culture = {
+		portrait_minor_clothing_contents_trigger = yes
+	}
+}
+
+portrait_minor_clothing_spouse_trigger = {
+	culture = {
+		portrait_minor_clothing_contents_trigger = yes
+	}
+}
+
+portrait_minor_clothing_contents_trigger = {
+	OR = {
+		has_clothing_gfx = rokugani_minor_clothing_gfx
 	}
 }
