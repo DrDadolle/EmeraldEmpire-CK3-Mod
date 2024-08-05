@@ -1,4 +1,8 @@
 ﻿l_english:
+ # Kami 
+ trait_kami:0 "Ancestral Kami"
+ trait_kami_desc:0 "This character is one of the eight Kamis who fell in Ningendo. As such, they are the rightful leader of their vassals."
+ trait_kami_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is one of the eight Kamis who fell in Ningendo. As such, [ROOT.GetCharacter.GetFirstNameNoTooltip] is the rightful leader of [ROOT.GetCharacter.GetHerHis] vassals."
  # Kami descendant
  trait_kami_descendant:0 "Descendant of a founder Kami"
  trait_kami_descendant_desc:0 "This character is a direct descendant of one of the eight Kamis who fell in Ningendo. As such, they are the rightful leader of their vassals."

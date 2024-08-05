@@ -230,6 +230,31 @@
 	}
 }
 
+kami_doji_line_0 = {
+	name = name_akiko 	# TODO : special naming for Kami
+	dynasty = 2100001 	# Doji
+	religion = "seven_fortunes"
+	culture = "doji"
+	female = yes
+
+	trait = bleached_white_hair
+	trait = kami
+	trait = beauty_good_3
+
+	#TODO
+	1.1.1 = {
+		birth = yes
+	}
+	## TODO married to Kakita in 24
+	## TODO 5 childrens
+	## TODO actual Death
+
+	102.1.1 = {
+		death = yes
+	}
+
+}
+
 ##### Random county holder for the Doji
 3000010 = {
 	name = name_aki 	#  Doji Aki  #TODO replace name
