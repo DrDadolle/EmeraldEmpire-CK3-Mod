@@ -10,10 +10,7 @@ found_minor_clan_decision = {
 	desc = found_minor_clan_decision_desc
 
 	is_shown = {
-		OR = {
-			highest_held_title_tier = tier_county
-			highest_held_title_tier = tier_duchy
-		}
+		highest_held_title_tier = tier_county
 		#NOT = { has_game_rule = off_custom_kingdoms }
 		# Direct vassal of the emperor
 		is_under_direct_e_rokugan_rule = yes
@@ -48,21 +45,21 @@ found_minor_clan_decision = {
 		# TODO special event to choose the mon/animal of the new clan ?
 		# Create Own Dynasty based on your first name ?
 		# TODO replace with custom_duchy effect !!
-		#create_custom_kingdom_effect = yes
-		#if = {
-		#	limit = {
-		#		is_ai = no
-		#		NOT = { exists = global_var:found_kingdom_decision  }
-		#	}
-		#	set_global_variable = {
-		#		name = found_kingdom_decision
-		#		value = root
-		#	}
-		#	set_global_variable = {
-		#		name = found_kingdom_decision_kingdom
-		#		value = root.primary_title
-		#	}
-		#}
+		create_custom_minor_clan_effect = yes
+		if = {
+			limit = {
+				is_ai = no
+				NOT = { exists = global_var:found_minor_clan_decision  }
+			}
+			set_global_variable = {
+				name = found_minor_clan_decision
+				value = root
+			}
+			set_global_variable = {
+				name = found_minor_clan_decision_duchy
+				value = root.primary_title
+			}
+		}
 	}
 
 	ai_potential = {
