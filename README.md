@@ -1,6 +1,6 @@
 # What is RokuganModCK3 ?
-CK3 Mod of the Emerald Empire Rokugan from the TTRPG L5R.
-It is a WIP, not even alpha state
+CK3 Mod of the Emerald Empire Rokugan from the Card Game & TTRPG setting Legend of the Five Rings.
+It is a Work in Progress, not even in alpha state.
 
 
 ## How to install
@@ -29,5 +29,5 @@ Wars requires more prestige within the emerald empire if
 ## Special Credits
 Rinbro for the japanese coat of arms, with the authorization of the [Shogunate](https://steamcommunity.com/sharedfiles/filedetails/?id=2253278582) mod's lead dev FUN. \
 Kefir for the Japanese-style & Chinese-style buildings, and Japanese-style unit models \
-AJ, for the 3D assets (clothing & court) used for Japan.[www.artstation.com](https://www.artstation.com/aj_1). Make sure to help support his amazing graphical work by using the link here[ko-fi.com](https://ko-fi.com/ajbaj) \
-Matt "Legoman" for the Hardened Lava texture used for the Shadowlands. This texture comes from the awesome [Lord of the Rings CK3 Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2291024373) \
+AJ, for the 3D assets (clothing & court) used for Japan. [www.artstation.com](https://www.artstation.com/aj_1). Make sure to help support his amazing graphical work by using the link here [ko-fi.com](https://ko-fi.com/ajbaj) \ 
+Matt "Legoman" for the Hardened Lava texture used for the Shadowlands. This texture comes from the awesome [Lord of the Rings CK3 Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2291024373)
