@@ -22,6 +22,22 @@ male_helmet_samurai_02_low = {
 }
 
 ##################
+#   CRAB  MALE   #
+##################
+
+#Armor 
+#- o-yoroi / great armor
+male_helmet_samurai_crab_01_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_crab_01_low_entity }
+}
+#- standard armor
+male_helmet_samurai_crab_02_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_crab_02_low_entity }
+}
+
+##################
 #   CRANE MALE   #
 ##################
 
@@ -35,4 +51,116 @@ male_helmet_samurai_crane_01_low = {
 male_helmet_samurai_crane_02_low = {
 	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
 	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_crane_02_low_entity }
+}
+
+##################
+#  DRAGON MALE   #
+##################
+
+#Armor 
+#- o-yoroi / great armor
+male_helmet_samurai_dragon_01_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_dragon_01_low_entity }
+}
+#- standard armor
+male_helmet_samurai_dragon_02_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_dragon_02_low_entity }
+}
+
+##################
+#   LION  MALE   #
+##################
+
+#Armor 
+#- o-yoroi / great armor
+male_helmet_samurai_lion_01_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_lion_01_low_entity }
+}
+#- standard armor
+male_helmet_samurai_lion_02_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_lion_02_low_entity }
+}
+
+##################
+#  PHOENIX MALE  #
+##################
+
+#Armor 
+#- o-yoroi / great armor
+male_helmet_samurai_phoenix_01_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_phoenix_01_low_entity }
+}
+#- standard armor
+male_helmet_samurai_phoenix_02_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_phoenix_02_low_entity }
+}
+
+##################
+# SCORPION MALE  #
+##################
+
+#Armor 
+#- o-yoroi / great armor
+male_helmet_samurai_scorpion_01_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_scorpion_01_low_entity }
+}
+#- standard armor
+male_helmet_samurai_scorpion_02_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_scorpion_02_low_entity }
+}
+
+##################
+#  UNICORN MALE  #
+##################
+
+#Armor 
+#- o-yoroi / great armor
+male_helmet_samurai_unicorn_01_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_unicorn_01_low_entity }
+}
+#- standard armor
+male_helmet_samurai_unicorn_02_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_unicorn_02_low_entity }
+}
+
+##################
+#  IMPERIAL MALE #
+##################
+
+#Armor 
+#- o-yoroi / great armor
+male_helmet_samurai_imperial_01_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_imperial_01_low_entity }
+}
+#- standard armor
+male_helmet_samurai_imperial_02_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_imperial_02_low_entity }
+}
+
+##################
+#   MINOR MALE   #
+##################
+
+#Armor 
+#- o-yoroi / great armor
+male_helmet_samurai_minor_01_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_minor_01_low_entity }
+}
+#- standard armor
+male_helmet_samurai_minor_02_low = {
+	set_tags = "crown,cap,cap_02,mask_hat,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_helmet_samurai_minor_02_low_entity }
 }

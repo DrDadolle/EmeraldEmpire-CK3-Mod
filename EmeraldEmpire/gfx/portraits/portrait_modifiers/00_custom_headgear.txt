@@ -24,7 +24,47 @@
 
 	add_accessory_modifiers = {
 		gene = headgear
+		template = crab_war_helmet
+	}	
+
+	add_accessory_modifiers = {
+		gene = headgear
 		template = crane_war_helmet
+	}	
+
+	add_accessory_modifiers = {
+		gene = headgear
+		template = dragon_war_helmet
+	}	
+
+	add_accessory_modifiers = {
+		gene = headgear
+		template = lion_war_helmet
+	}	
+
+	add_accessory_modifiers = {
+		gene = headgear
+		template = phoenix_war_helmet
+	}	
+
+	add_accessory_modifiers = {
+		gene = headgear
+		template = scorpion_war_helmet
+	}	
+
+	add_accessory_modifiers = {
+		gene = headgear
+		template = unicorn_war_helmet
+	}	
+
+	add_accessory_modifiers = {
+		gene = headgear
+		template = imperial_war_helmet
+	}	
+
+	add_accessory_modifiers = {
+		gene = headgear
+		template = minor_war_helmet
 	}	
 
 	### Rokugan Headgear End ###

@@ -48,6 +48,49 @@ male_katana_01 = {
 }
 
 ##################
+###  Crab Clan ###
+##################
+
+male_clothes_kimono_samurai_crab_01_common = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_crab_01_common_entity }
+}
+
+male_clothes_kimono_samurai_crab_01_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_crab_01_low_entity }
+}
+
+male_clothes_kimono_samurai_crab_01_high = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_crab_01_high_entity }
+}
+
+#Armor 
+#- o-yoroi / great armor
+male_armor_samurai_crab_00_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_crab_00_low_entity }
+}
+male_armor_samurai_crab_01_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_crab_01_low_entity }
+}
+#- standard armor
+male_armor_samurai_crab_02_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_crab_02_low_entity }
+}
+male_katana_crab_01 = {
+	set_tags = "daisho"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_crab_01_entity }
+}
+
+##################
 ### Crane Clan ###
 ##################
 
@@ -90,6 +133,308 @@ male_katana_crane_01 = {
 	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_crane_01_entity }
 }
 
+##################
+### Dragon Clan###
+##################
+
+male_clothes_kimono_samurai_dragon_01_common = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_dragon_01_common_entity }
+}
+
+male_clothes_kimono_samurai_dragon_01_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_dragon_01_low_entity }
+}
+
+male_clothes_kimono_samurai_dragon_01_high = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_dragon_01_high_entity }
+}
+
+#Armor 
+#- o-yoroi / great armor
+male_armor_samurai_dragon_00_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_dragon_00_low_entity }
+}
+male_armor_samurai_dragon_01_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_dragon_01_low_entity }
+}
+#- standard armor
+male_armor_samurai_dragon_02_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_dragon_02_low_entity }
+}
+male_katana_dragon_01 = {
+	set_tags = "daisho"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_dragon_01_entity }
+}
+
+##################
+### Lion  Clan ###
+##################
+
+male_clothes_kimono_samurai_lion_01_common = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_lion_01_common_entity }
+}
+
+male_clothes_kimono_samurai_lion_01_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_lion_01_low_entity }
+}
+
+male_clothes_kimono_samurai_lion_01_high = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_lion_01_high_entity }
+}
+
+#Armor 
+#- o-yoroi / great armor
+male_armor_samurai_lion_00_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_lion_00_low_entity }
+}
+male_armor_samurai_lion_01_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_lion_01_low_entity }
+}
+#- standard armor
+male_armor_samurai_lion_02_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_lion_02_low_entity }
+}
+male_katana_lion_01 = {
+	set_tags = "daisho"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_lion_01_entity }
+}
+
+##################
+## Phoenix Clan ##
+##################
+
+male_clothes_kimono_samurai_phoenix_01_common = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_phoenix_01_common_entity }
+}
+
+male_clothes_kimono_samurai_phoenix_01_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_phoenix_01_low_entity }
+}
+
+male_clothes_kimono_samurai_phoenix_01_high = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_phoenix_01_high_entity }
+}
+
+#Armor 
+#- o-yoroi / great armor
+male_armor_samurai_phoenix_00_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_phoenix_00_low_entity }
+}
+male_armor_samurai_phoenix_01_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_phoenix_01_low_entity }
+}
+#- standard armor
+male_armor_samurai_phoenix_02_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_phoenix_02_low_entity }
+}
+male_katana_phoenix_01 = {
+	set_tags = "daisho"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_phoenix_01_entity }
+}
+
+##################
+## Scorpion Clan##
+##################
+
+male_clothes_kimono_samurai_scorpion_01_common = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_scorpion_01_common_entity }
+}
+
+male_clothes_kimono_samurai_scorpion_01_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_scorpion_01_low_entity }
+}
+
+male_clothes_kimono_samurai_scorpion_01_high = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_scorpion_01_high_entity }
+}
+
+#Armor 
+#- o-yoroi / great armor
+male_armor_samurai_scorpion_00_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_scorpion_00_low_entity }
+}
+male_armor_samurai_scorpion_01_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_scorpion_01_low_entity }
+}
+#- standard armor
+male_armor_samurai_scorpion_02_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_scorpion_02_low_entity }
+}
+male_katana_scorpion_01 = {
+	set_tags = "daisho"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_scorpion_01_entity }
+}
+
+##################
+## Unicorn Clan ##
+##################
+
+male_clothes_kimono_samurai_unicorn_01_common = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_unicorn_01_common_entity }
+}
+
+male_clothes_kimono_samurai_unicorn_01_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_unicorn_01_low_entity }
+}
+
+male_clothes_kimono_samurai_unicorn_01_high = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_unicorn_01_high_entity }
+}
+
+#Armor 
+#- o-yoroi / great armor
+male_armor_samurai_unicorn_00_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_unicorn_00_low_entity }
+}
+male_armor_samurai_unicorn_01_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_unicorn_01_low_entity }
+}
+#- standard armor
+male_armor_samurai_unicorn_02_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_unicorn_02_low_entity }
+}
+male_katana_unicorn_01 = {
+	set_tags = "daisho"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_unicorn_01_entity }
+}
+
+##################
+## Imperial Clan##
+##################
+
+male_clothes_kimono_samurai_imperial_01_common = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_imperial_01_common_entity }
+}
+
+male_clothes_kimono_samurai_imperial_01_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_imperial_01_low_entity }
+}
+
+male_clothes_kimono_samurai_imperial_01_high = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_imperial_01_high_entity }
+}
+
+#Armor 
+#- o-yoroi / great armor
+male_armor_samurai_imperial_00_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_imperial_00_low_entity }
+}
+male_armor_samurai_imperial_01_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_imperial_01_low_entity }
+}
+#- standard armor
+male_armor_samurai_imperial_02_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_imperial_02_low_entity }
+}
+male_katana_imperial_01 = {
+	set_tags = "daisho"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_imperial_01_entity }
+}
+
+##################
+### Minor Clan ###
+##################
+
+male_clothes_kimono_samurai_minor_01_common = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_minor_01_common_entity }
+}
+
+male_clothes_kimono_samurai_minor_01_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_minor_01_low_entity }
+}
+
+male_clothes_kimono_samurai_minor_01_high = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_clothes_kimono_samurai_minor_01_high_entity }
+}
+
+#Armor 
+#- o-yoroi / great armor
+male_armor_samurai_minor_00_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_minor_00_low_entity }
+}
+male_armor_samurai_minor_01_low = {
+	set_tags = "shrink_arms"
+	set_tags = "shrink_chest"
+	set_tags = "shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_minor_01_low_entity }
+}
+#- standard armor
+male_armor_samurai_minor_02_low = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_armor_samurai_minor_02_low_entity }
+}
+male_katana_minor_01 = {
+	set_tags = "daisho"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_katana_minor_01_entity }
+}
+
+
 #####################################
 #									#
 # 			Female Clothes			#
@@ -118,8 +463,28 @@ female_clothes_kimono_kosode_01_monk_common = {
 	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_01_monk_common_entity }
 }
 
+##################
+### Cran  Clan ###
+##################
 
-### Crane ###
+female_clothes_kimono_kosode_crab_01_common = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_crab_01_common_entity }
+}
+
+female_clothes_kimono_kosode_crab_01_low = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_crab_01_low_entity }
+}
+
+female_clothes_kimono_kosode_crab_01_high = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_crab_01_high_entity }
+}
+
+##################
+### Crane Clan ###
+##################
 
 female_clothes_kimono_kosode_crane_01_common = {
 	set_tags = "shrink_chest,shrink_belly,shrink_legs"
@@ -134,4 +499,137 @@ female_clothes_kimono_kosode_crane_01_low = {
 female_clothes_kimono_kosode_crane_01_high = {
 	set_tags = "shrink_chest,shrink_belly,shrink_legs"
 	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_crane_01_high_entity }
+}
+
+##################
+## Dragon Clan ###
+##################
+
+female_clothes_kimono_kosode_dragon_01_common = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_dragon_01_common_entity }
+}
+
+female_clothes_kimono_kosode_dragon_01_low = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_dragon_01_low_entity }
+}
+
+female_clothes_kimono_kosode_dragon_01_high = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_dragon_01_high_entity }
+}
+
+##################
+### Lion  Clan ###
+##################
+
+female_clothes_kimono_kosode_lion_01_common = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_lion_01_common_entity }
+}
+
+female_clothes_kimono_kosode_lion_01_low = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_lion_01_low_entity }
+}
+
+female_clothes_kimono_kosode_lion_01_high = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_lion_01_high_entity }
+}
+
+##################
+## Phoenix Clan ##
+##################
+
+female_clothes_kimono_kosode_phoenix_01_common = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_phoenix_01_common_entity }
+}
+
+female_clothes_kimono_kosode_phoenix_01_low = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_phoenix_01_low_entity }
+}
+
+female_clothes_kimono_kosode_phoenix_01_high = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_phoenix_01_high_entity }
+}
+
+##################
+## Scorpion Clan #
+##################
+
+female_clothes_kimono_kosode_scorpion_01_common = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_scorpion_01_common_entity }
+}
+
+female_clothes_kimono_kosode_scorpion_01_low = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_scorpion_01_low_entity }
+}
+
+female_clothes_kimono_kosode_scorpion_01_high = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_scorpion_01_high_entity }
+}
+
+##################
+# Unicorn  Clan ##
+##################
+
+female_clothes_kimono_kosode_unicorn_01_common = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_unicorn_01_common_entity }
+}
+
+female_clothes_kimono_kosode_unicorn_01_low = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_unicorn_01_low_entity }
+}
+
+female_clothes_kimono_kosode_unicorn_01_high = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_unicorn_01_high_entity }
+}
+
+##################
+# Imperial Clan ##
+##################
+
+female_clothes_kimono_kosode_imperial_01_common = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_imperial_01_common_entity }
+}
+
+female_clothes_kimono_kosode_imperial_01_low = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_imperial_01_low_entity }
+}
+
+female_clothes_kimono_kosode_imperial_01_high = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_imperial_01_high_entity }
+}
+
+##################
+### Minor Clan ###
+##################
+
+female_clothes_kimono_kosode_minor_01_common = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_minor_01_common_entity }
+}
+
+female_clothes_kimono_kosode_minor_01_low = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_minor_01_low_entity }
+}
+
+female_clothes_kimono_kosode_minor_01_high = {
+	set_tags = "shrink_chest,shrink_belly,shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_clothes_kimono_kosode_minor_01_high_entity }
 }

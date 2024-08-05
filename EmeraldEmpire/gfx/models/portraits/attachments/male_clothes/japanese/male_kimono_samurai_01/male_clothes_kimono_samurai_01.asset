@@ -83,6 +83,71 @@ entity = {
 	}
 }
 
+############ Crab Clan #############
+
+entity = {
+	name = "male_clothes_kimono_samurai_crab_01_common_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_crab_01_common"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_crab_01_low_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_crab_01_low"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_crab_01_high_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_crab_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
 ############ Crane Clan #############
 
 entity = {
@@ -143,6 +208,461 @@ entity = {
 			portrait_accessory = {
 				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
 				variation = "japanese_samurai_kimono_crane_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+############ Dragon Clan #############
+
+entity = {
+	name = "male_clothes_kimono_samurai_dragon_01_common_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_dragon_01_common"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_dragon_01_low_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_dragon_01_low"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_dragon_01_high_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_dragon_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+############ Lion Clan #############
+
+entity = {
+	name = "male_clothes_kimono_samurai_lion_01_common_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_lion_01_common"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_lion_01_low_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_lion_01_low"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_lion_01_high_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_lion_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+############ Phoenix Clan #############
+
+entity = {
+	name = "male_clothes_kimono_samurai_phoenix_01_common_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_phoenix_01_common"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_phoenix_01_low_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_phoenix_01_low"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_phoenix_01_high_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_phoenix_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+############ Scorpion Clan #############
+
+entity = {
+	name = "male_clothes_kimono_samurai_scorpion_01_common_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_scorpion_01_common"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_scorpion_01_low_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_scorpion_01_low"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_scorpion_01_high_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_scorpion_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+############ Unicorn Clan #############
+
+entity = {
+	name = "male_clothes_kimono_samurai_unicorn_01_common_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_unicorn_01_common"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_unicorn_01_low_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_unicorn_01_low"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_unicorn_01_high_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_unicorn_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+############ Imperial Clan #############
+
+entity = {
+	name = "male_clothes_kimono_samurai_imperial_01_common_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_imperial_01_common"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_imperial_01_low_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_imperial_01_low"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_imperial_01_high_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_imperial_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+############ Minor Clan #############
+
+entity = {
+	name = "male_clothes_kimono_samurai_minor_01_common_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_minor_01_common"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_minor_01_low_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_minor_01_low"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+entity = {
+	name = "male_clothes_kimono_samurai_minor_01_high_entity"
+	pdxmesh = "male_clothes_kimono_samurai_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "male_clothes_kimono_samurai_01_bs_dwarf" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_kimono_samurai_01/male_clothes_kimono_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_kimono_minor_01_high"	#A "variation" object in gfx/portraits/accessory_variations/
 			}
         }
 	}

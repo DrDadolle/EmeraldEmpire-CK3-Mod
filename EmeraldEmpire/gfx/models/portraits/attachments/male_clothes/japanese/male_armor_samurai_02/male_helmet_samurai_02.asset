@@ -28,6 +28,20 @@ entity = {
 }
 
 entity = {
+	name = "male_helmet_samurai_crab_02_low_entity"
+	pdxmesh = "male_helmet_samurai_02_mesh"
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_armor_samurai_01/male_helmet_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_armor_crab_00"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}	
+}
+
+entity = {
 	name = "male_helmet_samurai_crane_02_low_entity"
 	pdxmesh = "male_helmet_samurai_02_mesh"
 	
@@ -36,6 +50,104 @@ entity = {
 			portrait_accessory = {
 				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_armor_samurai_01/male_helmet_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
 				variation = "japanese_samurai_armor_crane_00"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}	
+}
+
+entity = {
+	name = "male_helmet_samurai_dragon_02_low_entity"
+	pdxmesh = "male_helmet_samurai_02_mesh"
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_armor_samurai_01/male_helmet_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_armor_dragon_00"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}	
+}
+
+entity = {
+	name = "male_helmet_samurai_lion_02_low_entity"
+	pdxmesh = "male_helmet_samurai_02_mesh"
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_armor_samurai_01/male_helmet_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_armor_lion_00"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}	
+}
+
+entity = {
+	name = "male_helmet_samurai_phoenix_02_low_entity"
+	pdxmesh = "male_helmet_samurai_02_mesh"
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_armor_samurai_01/male_helmet_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_armor_phoenix_00"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}	
+}
+
+entity = {
+	name = "male_helmet_samurai_scorpion_02_low_entity"
+	pdxmesh = "male_helmet_samurai_02_mesh"
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_armor_samurai_01/male_helmet_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_armor_scorpion_00"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}	
+}
+
+entity = {
+	name = "male_helmet_samurai_unicorn_02_low_entity"
+	pdxmesh = "male_helmet_samurai_02_mesh"
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_armor_samurai_01/male_helmet_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_armor_unicorn_00"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}	
+}
+
+entity = {
+	name = "male_helmet_samurai_imperial_02_low_entity"
+	pdxmesh = "male_helmet_samurai_02_mesh"
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_armor_samurai_01/male_helmet_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_armor_imperial_00"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}	
+}
+
+entity = {
+	name = "male_helmet_samurai_minor_02_low_entity"
+	pdxmesh = "male_helmet_samurai_02_mesh"
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_clothes/japanese/male_armor_samurai_01/male_helmet_samurai_01_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "japanese_samurai_armor_minor_00"	#A "variation" object in gfx/portraits/accessory_variations/
 			}
         }
 	}	

@@ -2434,7 +2434,22 @@ special_genes = {
 			}
 			
 			#####################
-			# Crane Clan
+			# Rokugan 
+			# Crab clan
+			crab_war_helmet = {
+				index = 203
+				male = {
+					1 = male_helmet_samurai_crab_01_low
+					1 = male_helmet_samurai_crab_02_low
+				}
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
+
+			# Crane clan
 			crane_war_helmet = {
 				index = 202
 				male = {
@@ -2447,6 +2462,105 @@ special_genes = {
 				boy = male
 				girl = female
 			}
+
+			# Dragon clan
+			dragon_war_helmet = {
+				index = 204
+				male = {
+					1 = male_helmet_samurai_dragon_01_low
+					1 = male_helmet_samurai_dragon_02_low
+				}
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
+
+			# Lion clan
+			lion_war_helmet = {
+				index = 205
+				male = {
+					1 = male_helmet_samurai_lion_01_low
+					1 = male_helmet_samurai_lion_02_low
+				}
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
+
+			# Phoenix clan
+			phoenix_war_helmet = {
+				index = 206
+				male = {
+					1 = male_helmet_samurai_phoenix_01_low
+					1 = male_helmet_samurai_phoenix_02_low
+				}
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
+
+			# Scorpion clan
+			scorpion_war_helmet = {
+				index = 207
+				male = {
+					1 = male_helmet_samurai_scorpion_01_low
+					1 = male_helmet_samurai_scorpion_02_low
+				}
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
+
+			# Unicorn clan
+			unicorn_war_helmet = {
+				index = 208
+				male = {
+					1 = male_helmet_samurai_unicorn_01_low
+					1 = male_helmet_samurai_unicorn_02_low
+				}
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
+
+			# Imperial clan
+			imperial_war_helmet = {
+				index = 209
+				male = {
+					1 = male_helmet_samurai_imperial_01_low
+					1 = male_helmet_samurai_imperial_02_low
+				}
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
+
+			# Minor clan
+			minor_war_helmet = {
+				index = 210
+				male = {
+					1 = male_helmet_samurai_minor_01_low
+					1 = male_helmet_samurai_minor_02_low
+				}
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
+
 		}
 	
 	

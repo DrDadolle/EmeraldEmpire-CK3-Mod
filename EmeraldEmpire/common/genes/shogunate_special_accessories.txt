@@ -29,6 +29,110 @@ special_genes = {
 				boy = {}
 				girl = {}
 			}
+			katana_crab_01 = {
+				index = 2
+				male = {
+					#1 = empty
+					1 = male_katana_crab_01	#daisho, katana + wakizashi
+				}
+				female = {
+					#1 = empty
+					1 = male_katana_crab_01	#daisho, katana + wakizashi
+				}
+				boy = {}
+				girl = {}
+			}
+			katana_dragon_01 = {
+				index = 3
+				male = {
+					#1 = empty
+					1 = male_katana_dragon_01	#daisho, katana + wakizashi
+				}
+				female = {
+					#1 = empty
+					1 = male_katana_dragon_01	#daisho, katana + wakizashi
+				}
+				boy = {}
+				girl = {}
+			}
+			katana_lion_01 = {
+				index = 4
+				male = {
+					#1 = empty
+					1 = male_katana_lion_01	#daisho, katana + wakizashi
+				}
+				female = {
+					#1 = empty
+					1 = male_katana_lion_01	#daisho, katana + wakizashi
+				}
+				boy = {}
+				girl = {}
+			}
+			katana_phoenix_01 = {
+				index = 5
+				male = {
+					#1 = empty
+					1 = male_katana_phoenix_01	#daisho, katana + wakizashi
+				}
+				female = {
+					#1 = empty
+					1 = male_katana_phoenix_01	#daisho, katana + wakizashi
+				}
+				boy = {}
+				girl = {}
+			}
+			katana_scorpion_01 = {
+				index = 6
+				male = {
+					#1 = empty
+					1 = male_katana_scorpion_01	#daisho, katana + wakizashi
+				}
+				female = {
+					#1 = empty
+					1 = male_katana_scorpion_01	#daisho, katana + wakizashi
+				}
+				boy = {}
+				girl = {}
+			}
+			katana_unicorn_01 = {
+				index = 7
+				male = {
+					#1 = empty
+					1 = male_katana_unicorn_01	#daisho, katana + wakizashi
+				}
+				female = {
+					#1 = empty
+					1 = male_katana_unicorn_01	#daisho, katana + wakizashi
+				}
+				boy = {}
+				girl = {}
+			}
+			katana_imperial_01 = {
+				index = 8
+				male = {
+					#1 = empty
+					1 = male_katana_imperial_01	#daisho, katana + wakizashi
+				}
+				female = {
+					#1 = empty
+					1 = male_katana_imperial_01	#daisho, katana + wakizashi
+				}
+				boy = {}
+				girl = {}
+			}
+			katana_minor_01 = {
+				index = 9
+				male = {
+					#1 = empty
+					1 = male_katana_minor_01	#daisho, katana + wakizashi
+				}
+				female = {
+					#1 = empty
+					1 = male_katana_minor_01	#daisho, katana + wakizashi
+				}
+				boy = {}
+				girl = {}
+			}
 		}
 	}
 }

@@ -125,7 +125,7 @@ portrait_crane_clothing_contents_trigger = {
 	}
 }
 
-##### dragon Clan
+##### Dragon Clan
 portrait_dragon_clothing_trigger = {
 	scope:culture = {
 		portrait_dragon_clothing_contents_trigger = yes
@@ -163,7 +163,7 @@ portrait_lion_clothing_contents_trigger = {
 	}
 }
 
-##### phoenix Clan
+##### Phoenix Clan
 portrait_phoenix_clothing_trigger = {
 	scope:culture = {
 		portrait_phoenix_clothing_contents_trigger = yes
@@ -182,7 +182,7 @@ portrait_phoenix_clothing_contents_trigger = {
 	}
 }
 
-##### scorpion Clan
+##### Scorpion Clan
 portrait_scorpion_clothing_trigger = {
 	scope:culture = {
 		portrait_scorpion_clothing_contents_trigger = yes
@@ -201,7 +201,7 @@ portrait_scorpion_clothing_contents_trigger = {
 	}
 }
 
-##### unicorn Clan
+##### Unicorn Clan
 portrait_unicorn_clothing_trigger = {
 	scope:culture = {
 		portrait_unicorn_clothing_contents_trigger = yes
@@ -220,7 +220,7 @@ portrait_unicorn_clothing_contents_trigger = {
 	}
 }
 
-##### imperial Clan
+##### Imperial Clan
 portrait_imperial_clothing_trigger = {
 	scope:culture = {
 		portrait_imperial_clothing_contents_trigger = yes
@@ -239,7 +239,7 @@ portrait_imperial_clothing_contents_trigger = {
 	}
 }
 
-##### minor Clan
+##### Minor Clan
 portrait_minor_clothing_trigger = {
 	scope:culture = {
 		portrait_minor_clothing_contents_trigger = yes

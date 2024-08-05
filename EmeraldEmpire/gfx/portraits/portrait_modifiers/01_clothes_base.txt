@@ -1743,9 +1743,94 @@ fp3_iranian_high_nobles = {
     }
 
     #####################
-    # Shogunate clothes
-	# Crane clothes
-    #TODO
+    # Rokugan clothes
+	# Crab clothes
+
+    crab_commoners = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = crab_commoner_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20
+                portrait_commoner_clothing_trigger = {
+                    CULTURE_INPUT = crab
+                }
+            }
+        }
+    }
+
+    crab_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = crab_low_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_crab_01
+                range = { 0 1 }
+            }       
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_4_trigger = {
+                    CULTURE_INPUT = crab
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_low_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = crab
+                }
+            }
+        }
+    }
+
+    crab_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = crab_high_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_crab_01
+                range = { 0 1 }
+            }   
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_5_trigger = {
+                    CULTURE_INPUT = crab
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_high_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = crab
+                } 
+            }
+        }
+    }
+
+    # Crane clothes
 
     crane_commoners = {
         dna_modifiers = {
@@ -1830,4 +1915,608 @@ fp3_iranian_high_nobles = {
             }
         }
     }
+
+    # Dragon clothes
+    dragon_commoners = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = dragon_commoner_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20
+                portrait_commoner_clothing_trigger = {
+                    CULTURE_INPUT = dragon
+                }
+            }
+        }
+    }
+
+    dragon_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = dragon_low_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_dragon_01
+                range = { 0 1 }
+            }       
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_4_trigger = {
+                    CULTURE_INPUT = dragon
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_low_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = dragon
+                }
+            }
+        }
+    }
+
+    dragon_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = dragon_high_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_dragon_01
+                range = { 0 1 }
+            }   
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_5_trigger = {
+                    CULTURE_INPUT = dragon
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_high_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = dragon
+                } 
+            }
+        }
+    }
+
+    # Lion clothes
+
+    lion_commoners = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = lion_commoner_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20
+                portrait_commoner_clothing_trigger = {
+                    CULTURE_INPUT = lion
+                }
+            }
+        }
+    }
+
+    lion_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = lion_low_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_lion_01
+                range = { 0 1 }
+            }       
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_4_trigger = {
+                    CULTURE_INPUT = lion
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_low_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = lion
+                }
+            }
+        }
+    }
+
+    lion_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = lion_high_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_lion_01
+                range = { 0 1 }
+            }   
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_5_trigger = {
+                    CULTURE_INPUT = lion
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_high_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = lion
+                } 
+            }
+        }
+    }
+
+    # Phoenix clothes
+
+    phoenix_commoners = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = phoenix_commoner_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20
+                portrait_commoner_clothing_trigger = {
+                    CULTURE_INPUT = phoenix
+                }
+            }
+        }
+    }
+
+    phoenix_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = phoenix_low_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_phoenix_01
+                range = { 0 1 }
+            }       
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_4_trigger = {
+                    CULTURE_INPUT = phoenix
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_low_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = phoenix
+                }
+            }
+        }
+    }
+
+    phoenix_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = phoenix_high_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_phoenix_01
+                range = { 0 1 }
+            }   
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_5_trigger = {
+                    CULTURE_INPUT = phoenix
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_high_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = phoenix
+                } 
+            }
+        }
+    }
+
+    # Scorpion clothes
+
+    scorpion_commoners = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = scorpion_commoner_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20
+                portrait_commoner_clothing_trigger = {
+                    CULTURE_INPUT = scorpion
+                }
+            }
+        }
+    }
+
+    scorpion_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = scorpion_low_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_scorpion_01
+                range = { 0 1 }
+            }       
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_4_trigger = {
+                    CULTURE_INPUT = scorpion
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_low_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = scorpion
+                }
+            }
+        }
+    }
+
+    scorpion_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = scorpion_high_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_scorpion_01
+                range = { 0 1 }
+            }   
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_5_trigger = {
+                    CULTURE_INPUT = scorpion
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_high_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = scorpion
+                } 
+            }
+        }
+    }
+
+    # Unicorn clothes
+
+    unicorn_commoners = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = unicorn_commoner_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20
+                portrait_commoner_clothing_trigger = {
+                    CULTURE_INPUT = unicorn
+                }
+            }
+        }
+    }
+
+    unicorn_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = unicorn_low_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_unicorn_01
+                range = { 0 1 }
+            }       
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_4_trigger = {
+                    CULTURE_INPUT = unicorn
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_low_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = unicorn
+                }
+            }
+        }
+    }
+
+    unicorn_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = unicorn_high_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_unicorn_01
+                range = { 0 1 }
+            }   
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_5_trigger = {
+                    CULTURE_INPUT = unicorn
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_high_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = unicorn
+                } 
+            }
+        }
+    }
+
+
+
+    # Imperial clothes
+
+    imperial_commoners = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = imperial_commoner_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20
+                portrait_commoner_clothing_trigger = {
+                    CULTURE_INPUT = imperial
+                }
+            }
+        }
+    }
+
+    imperial_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = imperial_low_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_imperial_01
+                range = { 0 1 }
+            }       
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_4_trigger = {
+                    CULTURE_INPUT = imperial
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_low_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = imperial
+                }
+            }
+        }
+    }
+
+    imperial_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = imperial_high_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_imperial_01
+                range = { 0 1 }
+            }   
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_5_trigger = {
+                    CULTURE_INPUT = imperial
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_high_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = imperial
+                } 
+            }
+        }
+    }
+
+    # Minor Clan clothes
+
+    minor_commoners = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = minor_commoner_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20
+                portrait_commoner_clothing_trigger = {
+                    CULTURE_INPUT = minor
+                }
+            }
+        }
+    }
+
+    minor_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = minor_low_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_minor_01
+                range = { 0 1 }
+            }       
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_4_trigger = {
+                    CULTURE_INPUT = minor
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_low_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = minor
+                }
+            }
+        }
+    }
+
+    minor_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = minor_high_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_minor_01
+                range = { 0 1 }
+            }   
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                court_fashion_level_5_trigger = {
+                    CULTURE_INPUT = minor
+                }
+            }
+            modifier = {
+                add = 50
+                portrait_high_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = minor
+                } 
+            }
+        }
+    }
+
 }

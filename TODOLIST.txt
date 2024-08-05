@@ -23,13 +23,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - innovation (special culture ones) and shared ones. Re-localization of some
 
 ## short term goals 
-- Add japanese clothing, add credit (AJ cf how AEP has done)
-	- Understand how it works (https://discord.com/channels/735413460439007241/735413461680652366/1122255742129410068 &  https://discord.com/channels/735413460439007241/735413461680652366/791031025907662868 helps a bit)
+- Add japanese clothing
 	- Add sub_group for clothings, with a dedicated color palette for each clan/cultures which makes sense cf https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
 	- TODO female armor variation (Need models ?),
 	- Force monks & theocratic count of Shinseism to have monk clothes
-	- How to add the rest ? TODO 
-			- Update 01_legwear_base.txt (contains armor legwear too) 01_clothes_base.txt 04_clothes_armor.txt 04_head_gear_armor.txt 
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
 - add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)???? 
 - Add river map (more ?)
@@ -158,7 +155,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Tomb of Iuchiban special building ?
 - Shadowlands stuff (very low priority)
 
-
+=====================================================================================================
+==================================== RECAPS & TIPS ==================================================
+=====================================================================================================
 # Decisions Done
 - Bleach Hair White (crane) and it's opposite
 - Avenge Yasuki War (crane)
@@ -169,6 +168,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Asia Expansion Project @ Longus Cattus => Great Wall, Model for weapons, Korean buildings ?
 - Tachi CK3 Mod dev, for inspiration
 - FUN for background images for council, characters, court, etc...
+
+
+### How-to Clothes
+ Add japanese clothing, add credit (AJ cf how AEP has done)
+	- Understand how it works (https://discord.com/channels/735413460439007241/735413461680652366/1122255742129410068 &  https://discord.com/channels/735413460439007241/735413461680652366/791031025907662868 helps a bit)
+	- color palette tuto :  https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
 
 # Ideas
 ### How-to Different species (à la Lotr)

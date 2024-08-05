@@ -487,8 +487,84 @@
 		}
 	}
 
-	 #####################
+	#####################
     # Shogunate clothes
+	# Crab clothes
+	crab_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = crab_tabi
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 30
+				portrait_crab_clothing_trigger = yes
+			}
+		}
+	}
+
+	crab_war_legwear_era1_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = crab_war_legwear
+				value = 0  # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_crab_clothing_trigger = yes
+			}
+		}
+	}
+
+	crab_war_legwear_era2_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = crab_war_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_crab_clothing_trigger = yes
+			}
+		}
+	}
+
+	crab_war_legwear_era3_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = crab_war_legwear
+				value = 1 # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_crab_clothing_trigger = yes
+			}
+		}
+	}
+
 	# Crane clothes
 	crane_legwear = {
 		dna_modifiers = {
@@ -565,5 +641,539 @@
 		}
 	}
 
+
+	# Dragon clothes
+	dragon_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = dragon_tabi
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 30
+				portrait_dragon_clothing_trigger = yes
+			}
+		}
+	}
+
+	dragon_war_legwear_era1_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = dragon_war_legwear
+				value = 0  # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_dragon_clothing_trigger = yes
+			}
+		}
+	}
+
+	dragon_war_legwear_era2_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = dragon_war_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_dragon_clothing_trigger = yes
+			}
+		}
+	}
+
+	dragon_war_legwear_era3_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = dragon_war_legwear
+				value = 1 # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_dragon_clothing_trigger = yes
+			}
+		}
+	}
+
+	# Lion clothes
+	lion_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = lion_tabi
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 30
+				portrait_lion_clothing_trigger = yes
+			}
+		}
+	}
+
+	lion_war_legwear_era1_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = lion_war_legwear
+				value = 0  # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_lion_clothing_trigger = yes
+			}
+		}
+	}
+
+	lion_war_legwear_era2_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = lion_war_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_lion_clothing_trigger = yes
+			}
+		}
+	}
+
+	lion_war_legwear_era3_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = lion_war_legwear
+				value = 1 # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_lion_clothing_trigger = yes
+			}
+		}
+	}
+
+	# Phoenix clothes
+	phoenix_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = phoenix_tabi
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 30
+				portrait_phoenix_clothing_trigger = yes
+			}
+		}
+	}
+
+	phoenix_war_legwear_era1_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = phoenix_war_legwear
+				value = 0  # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_phoenix_clothing_trigger = yes
+			}
+		}
+	}
+
+	phoenix_war_legwear_era2_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = phoenix_war_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_phoenix_clothing_trigger = yes
+			}
+		}
+	}
+
+	phoenix_war_legwear_era3_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = phoenix_war_legwear
+				value = 1 # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_phoenix_clothing_trigger = yes
+			}
+		}
+	}
+
+	# Scorpion clothes
+	scorpion_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = scorpion_tabi
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 30
+				portrait_scorpion_clothing_trigger = yes
+			}
+		}
+	}
+
+	scorpion_war_legwear_era1_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = scorpion_war_legwear
+				value = 0  # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_scorpion_clothing_trigger = yes
+			}
+		}
+	}
+
+	scorpion_war_legwear_era2_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = scorpion_war_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_scorpion_clothing_trigger = yes
+			}
+		}
+	}
+
+	scorpion_war_legwear_era3_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = scorpion_war_legwear
+				value = 1 # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_scorpion_clothing_trigger = yes
+			}
+		}
+	}
+
+	# Unicorn clothes
+	unicorn_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = unicorn_tabi
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 30
+				portrait_unicorn_clothing_trigger = yes
+			}
+		}
+	}
+
+	unicorn_war_legwear_era1_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = unicorn_war_legwear
+				value = 0  # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_unicorn_clothing_trigger = yes
+			}
+		}
+	}
+
+	unicorn_war_legwear_era2_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = unicorn_war_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_unicorn_clothing_trigger = yes
+			}
+		}
+	}
+
+	unicorn_war_legwear_era3_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = unicorn_war_legwear
+				value = 1 # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_unicorn_clothing_trigger = yes
+			}
+		}
+	}
+
+
+	# Imperial clothes
+	imperial_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = imperial_tabi
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 30
+				portrait_imperial_clothing_trigger = yes
+			}
+		}
+	}
+
+	imperial_war_legwear_era1_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = imperial_war_legwear
+				value = 0  # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_imperial_clothing_trigger = yes
+			}
+		}
+	}
+
+	imperial_war_legwear_era2_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = imperial_war_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_imperial_clothing_trigger = yes
+			}
+		}
+	}
+
+	imperial_war_legwear_era3_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = imperial_war_legwear
+				value = 1 # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_imperial_clothing_trigger = yes
+			}
+		}
+	}
+
+
+	# Minor Clan clothes
+	minor_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = minor_tabi
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 30
+				portrait_minor_clothing_trigger = yes
+			}
+		}
+	}
+
+	minor_war_legwear_era1_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = minor_war_legwear
+				value = 0  # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_minor_clothing_trigger = yes
+			}
+		}
+	}
+
+	minor_war_legwear_era2_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = minor_war_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_minor_clothing_trigger = yes
+			}
+		}
+	}
+
+	minor_war_legwear_era3_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = minor_war_legwear
+				value = 1 # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_minor_clothing_trigger = yes
+			}
+		}
+	}
 
 }

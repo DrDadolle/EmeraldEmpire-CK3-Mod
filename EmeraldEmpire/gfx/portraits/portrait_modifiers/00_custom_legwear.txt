@@ -26,9 +26,50 @@
 	# 	gene = legwear
 	# 	template = crane_tabi
 	# }
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = crab_war_legwear
+	}
+
 	add_accessory_modifiers = {
 		gene = legwear
 		template = crane_war_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = dragon_war_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = lion_war_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = phoenix_war_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = scorpion_war_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = unicorn_war_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = imperial_war_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = minor_war_legwear
 	}
 
 	### Rokugan Legware End ###

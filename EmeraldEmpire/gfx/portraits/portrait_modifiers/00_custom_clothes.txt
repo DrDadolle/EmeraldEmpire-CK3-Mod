@@ -32,7 +32,28 @@
 	### Shogunate Clothes End ###
 
 	### Rokugan Clothes Start ###
+	# Crab # 
+	add_accessory_modifiers = {
+		gene = clothes
+		template = crab_commoner_clothes
+	}
 
+	add_accessory_modifiers = {
+		gene = clothes
+		template = crab_low_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = crab_high_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = crab_war_nobility_clothes
+	}
+
+	# Crane # 
 	add_accessory_modifiers = {
 		gene = clothes
 		template = crane_commoner_clothes
@@ -47,18 +68,166 @@
 		gene = clothes
 		template = crane_high_nobility_clothes
 	}
-	#TODO add if crane variation 
-	# add_accessory_modifiers = {
-	# 	gene = clothes
-	# 	template = japanese_common_monk_clothes
-	# }
 
 	add_accessory_modifiers = {
 		gene = clothes
 		template = crane_war_nobility_clothes
 	}
 
-	### Shogunate Clothes End ###
+	#TODO add if crane variation 
+	# add_accessory_modifiers = {
+	# 	gene = clothes
+	# 	template = japanese_common_monk_clothes
+	# }
+
+	# Dragon # 
+	add_accessory_modifiers = {
+		gene = clothes
+		template = dragon_commoner_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = dragon_low_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = dragon_high_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = dragon_war_nobility_clothes
+	}
+
+	# Lion # 
+	add_accessory_modifiers = {
+		gene = clothes
+		template = lion_commoner_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = lion_low_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = lion_high_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = lion_war_nobility_clothes
+	}
+
+	# Phoenix # 
+	add_accessory_modifiers = {
+		gene = clothes
+		template = phoenix_commoner_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = phoenix_low_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = phoenix_high_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = phoenix_war_nobility_clothes
+	}
+
+	# Scorpion # 
+	add_accessory_modifiers = {
+		gene = clothes
+		template = scorpion_commoner_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = scorpion_low_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = scorpion_high_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = scorpion_war_nobility_clothes
+	}
+
+	# Unicorn # 
+	add_accessory_modifiers = {
+		gene = clothes
+		template = unicorn_commoner_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = unicorn_low_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = unicorn_high_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = unicorn_war_nobility_clothes
+	}
+
+	# Imperial # 
+	add_accessory_modifiers = {
+		gene = clothes
+		template = imperial_commoner_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = imperial_low_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = imperial_high_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = imperial_war_nobility_clothes
+	}
+
+	# Minor # 
+	add_accessory_modifiers = {
+		gene = clothes
+		template = minor_commoner_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = minor_low_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = minor_high_nobility_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = minor_war_nobility_clothes
+	}
+
+	### Rokugan Clothes End ###
 
 	add_accessory_modifiers = {
 		gene = clothes

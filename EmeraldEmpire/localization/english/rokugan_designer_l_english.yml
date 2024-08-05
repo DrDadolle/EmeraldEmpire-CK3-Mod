@@ -36,6 +36,26 @@
  PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_01_low:0 "Japanese Great Armor Legwear"
  PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_02_low:0 "Japanese Standard Armor Legwear"
 
+##### Crab
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_crab_01_common:0 "Crab Commoner's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_crab_01_low:0 "Crab Samurai's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_crab_01_high:0 "Crab Daimyo's Kosode"
+ # PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_crab_01_monk_common:0 "Nun's Kosode"
+ 
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_crab_01_common:0 "Crab Commoner's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_crab_01_low:0 "Crab Samurai's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_crab_01_high:0 "Crab Daimyo's Kimono"
+
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_crab_00_low:0 "Crab Great Armor A"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_crab_01_low:0 "Crab Great Armor B"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_crab_02_low:0 "Crab Standard Armor"
+
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_crab_01_low:0 "Crab Great Armor Helmet"
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_crab_02_low:0 "Crab Standard Armor Helmet"
+
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_crab_01_low:0 "Crab Great Armor Legwear"
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_crab_02_low:0 "Crab Standard Armor Legwear"
+
 ##### Crane
  PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_crane_01_common:0 "Crane Commoner's Kosode"
  PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_crane_01_low:0 "Crane Samurai's Kosode"
@@ -55,3 +75,143 @@
 
  PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_crane_01_low:0 "Crane Great Armor Legwear"
  PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_crane_02_low:0 "Crane Standard Armor Legwear"
+
+##### Dragon
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_dragon_01_common:0 "Dragon Commoner's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_dragon_01_low:0 "Dragon Samurai's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_dragon_01_high:0 "Dragon Daimyo's Kosode"
+ # PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_dragon_01_monk_common:0 "Nun's Kosode"
+ 
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_dragon_01_common:0 "Dragon Commoner's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_dragon_01_low:0 "Dragon Samurai's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_dragon_01_high:0 "Dragon Daimyo's Kimono"
+
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_dragon_00_low:0 "Dragon Great Armor A"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_dragon_01_low:0 "Dragon Great Armor B"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_dragon_02_low:0 "Dragon Standard Armor"
+
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_dragon_01_low:0 "Dragon Great Armor Helmet"
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_dragon_02_low:0 "Dragon Standard Armor Helmet"
+
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_dragon_01_low:0 "Dragon Great Armor Legwear"
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_dragon_02_low:0 "Dragon Standard Armor Legwear"
+
+##### Lion
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_lion_01_common:0 "Lion Commoner's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_lion_01_low:0 "Lion Samurai's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_lion_01_high:0 "Lion Daimyo's Kosode"
+ # PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_lion_01_monk_common:0 "Nun's Kosode"
+ 
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_lion_01_common:0 "Lion Commoner's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_lion_01_low:0 "Lion Samurai's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_lion_01_high:0 "Lion Daimyo's Kimono"
+
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_lion_00_low:0 "Lion Great Armor A"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_lion_01_low:0 "Lion Great Armor B"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_lion_02_low:0 "Lion Standard Armor"
+
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_lion_01_low:0 "Lion Great Armor Helmet"
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_lion_02_low:0 "Lion Standard Armor Helmet"
+
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_lion_01_low:0 "Lion Great Armor Legwear"
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_lion_02_low:0 "Lion Standard Armor Legwear"
+
+##### Phoenix
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_phoenix_01_common:0 "Phoenix Commoner's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_phoenix_01_low:0 "Phoenix Samurai's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_phoenix_01_high:0 "Phoenix Daimyo's Kosode"
+ # PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_phoenix_01_monk_common:0 "Nun's Kosode"
+ 
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_phoenix_01_common:0 "Phoenix Commoner's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_phoenix_01_low:0 "Phoenix Samurai's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_phoenix_01_high:0 "Phoenix Daimyo's Kimono"
+
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_phoenix_00_low:0 "Phoenix Great Armor A"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_phoenix_01_low:0 "Phoenix Great Armor B"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_phoenix_02_low:0 "Phoenix Standard Armor"
+
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_phoenix_01_low:0 "Phoenix Great Armor Helmet"
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_phoenix_02_low:0 "Phoenix Standard Armor Helmet"
+
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_phoenix_01_low:0 "Phoenix Great Armor Legwear"
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_phoenix_02_low:0 "Phoenix Standard Armor Legwear"
+
+##### Scorpion
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_scorpion_01_common:0 "Scorpion Commoner's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_scorpion_01_low:0 "Scorpion Samurai's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_scorpion_01_high:0 "Scorpion Daimyo's Kosode"
+ # PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_scorpion_01_monk_common:0 "Nun's Kosode"
+ 
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_scorpion_01_common:0 "Scorpion Commoner's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_scorpion_01_low:0 "Scorpion Samurai's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_scorpion_01_high:0 "Scorpion Daimyo's Kimono"
+
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_scorpion_00_low:0 "Scorpion Great Armor A"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_scorpion_01_low:0 "Scorpion Great Armor B"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_scorpion_02_low:0 "Scorpion Standard Armor"
+
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_scorpion_01_low:0 "Scorpion Great Armor Helmet"
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_scorpion_02_low:0 "Scorpion Standard Armor Helmet"
+
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_scorpion_01_low:0 "Scorpion Great Armor Legwear"
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_scorpion_02_low:0 "Scorpion Standard Armor Legwear"
+
+##### Unicorn
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_unicorn_01_common:0 "Unicorn Commoner's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_unicorn_01_low:0 "Unicorn Samurai's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_unicorn_01_high:0 "Unicorn Daimyo's Kosode"
+ # PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_unicorn_01_monk_common:0 "Nun's Kosode"
+ 
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_unicorn_01_common:0 "Unicorn Commoner's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_unicorn_01_low:0 "Unicorn Samurai's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_unicorn_01_high:0 "Unicorn Daimyo's Kimono"
+
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_unicorn_00_low:0 "Unicorn Great Armor A"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_unicorn_01_low:0 "Unicorn Great Armor B"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_unicorn_02_low:0 "Unicorn Standard Armor"
+
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_unicorn_01_low:0 "Unicorn Great Armor Helmet"
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_unicorn_02_low:0 "Unicorn Standard Armor Helmet"
+
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_unicorn_01_low:0 "Unicorn Great Armor Legwear"
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_unicorn_02_low:0 "Unicorn Standard Armor Legwear"
+
+##### Imperial
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_imperial_01_common:0 "Imperial Commoner's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_imperial_01_low:0 "Imperial Samurai's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_imperial_01_high:0 "Imperial Daimyo's Kosode"
+ # PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_imperial_01_monk_common:0 "Nun's Kosode"
+ 
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_imperial_01_common:0 "Imperial Commoner's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_imperial_01_low:0 "Imperial Samurai's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_imperial_01_high:0 "Imperial Daimyo's Kimono"
+
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_imperial_00_low:0 "Imperial Great Armor A"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_imperial_01_low:0 "Imperial Great Armor B"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_imperial_02_low:0 "Imperial Standard Armor"
+
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_imperial_01_low:0 "Imperial Great Armor Helmet"
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_imperial_02_low:0 "Imperial Standard Armor Helmet"
+
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_imperial_01_low:0 "Imperial Great Armor Legwear"
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_imperial_02_low:0 "Imperial Standard Armor Legwear"
+
+##### Minor
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_minor_01_common:0 "Minor Commoner's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_minor_01_low:0 "Minor Samurai's Kosode"
+ PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_minor_01_high:0 "Minor Daimyo's Kosode"
+ # PORTRAIT_MODIFIER_custom_clothes_female_clothes_kimono_kosode_minor_01_monk_common:0 "Nun's Kosode"
+ 
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_minor_01_common:0 "Minor Commoner's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_minor_01_low:0 "Minor Samurai's Kimono"
+ PORTRAIT_MODIFIER_custom_clothes_male_clothes_kimono_samurai_minor_01_high:0 "Minor Daimyo's Kimono"
+
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_minor_00_low:0 "Minor Great Armor A"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_minor_01_low:0 "Minor Great Armor B"
+ PORTRAIT_MODIFIER_custom_clothes_male_armor_samurai_minor_02_low:0 "Minor Standard Armor"
+
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_minor_01_low:0 "Minor Great Armor Helmet"
+ PORTRAIT_MODIFIER_custom_headgear_male_helmet_samurai_minor_02_low:0 "Minor Standard Armor Helmet"
+
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_minor_01_low:0 "Minor Great Armor Legwear"
+ PORTRAIT_MODIFIER_custom_legwear_male_legwear_samurai_minor_02_low:0 "Minor Standard Armor Legwear"

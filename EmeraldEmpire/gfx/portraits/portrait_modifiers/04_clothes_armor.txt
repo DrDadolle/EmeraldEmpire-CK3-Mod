@@ -1718,8 +1718,177 @@
         }
     }
     #####################
-     # Crane Clan 
-     # TODO
+    # Rokugan Armor
+    # Crab Clan
+
+     crab_war_era1_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = crab_war_nobility_clothes
+                value = 0 # For O-Yoroi
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_crab_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+        }
+    }
+    crab_war_era2_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = crab_war_nobility_clothes
+                range = { 0.25 1.0 } # Random
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                range = { 1 1 }
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+        }
+    }
+    crab_war_era3_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = crab_war_nobility_clothes
+                value = 1 # For Gusoku
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_crab_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = crab
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+        }
+    }
+
+
+     # Crane Clan
 
      crane_war_era1_high = {
         dna_modifiers = {
@@ -1886,5 +2055,1189 @@
             }
         }
     }
+
+    # Dragon Clan
+
+     dragon_war_era1_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = dragon_war_nobility_clothes
+                value = 0 # For O-Yoroi
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_dragon_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+        }
+    }
+    dragon_war_era2_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = dragon_war_nobility_clothes
+                range = { 0.25 1.0 } # Random
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                range = { 1 1 }
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+        }
+    }
+    dragon_war_era3_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = dragon_war_nobility_clothes
+                value = 1 # For Gusoku
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_dragon_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = dragon
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+        }
+    }
+
+
+    # Lion Clan
+
+     lion_war_era1_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = lion_war_nobility_clothes
+                value = 0 # For O-Yoroi
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_lion_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+        }
+    }
+    lion_war_era2_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = lion_war_nobility_clothes
+                range = { 0.25 1.0 } # Random
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                range = { 1 1 }
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+        }
+    }
+    lion_war_era3_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = lion_war_nobility_clothes
+                value = 1 # For Gusoku
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_lion_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = lion
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+        }
+    }
+
+
+    # Phoenix Clan
+
+     phoenix_war_era1_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = phoenix_war_nobility_clothes
+                value = 0 # For O-Yoroi
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_phoenix_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+        }
+    }
+    phoenix_war_era2_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = phoenix_war_nobility_clothes
+                range = { 0.25 1.0 } # Random
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                range = { 1 1 }
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+        }
+    }
+    phoenix_war_era3_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = phoenix_war_nobility_clothes
+                value = 1 # For Gusoku
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_phoenix_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = phoenix
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+        }
+    }
+
+    # Scorpion Clan
+
+     scorpion_war_era1_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = scorpion_war_nobility_clothes
+                value = 0 # For O-Yoroi
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_scorpion_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+        }
+    }
+    scorpion_war_era2_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = scorpion_war_nobility_clothes
+                range = { 0.25 1.0 } # Random
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                range = { 1 1 }
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+        }
+    }
+    scorpion_war_era3_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = scorpion_war_nobility_clothes
+                value = 1 # For Gusoku
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_scorpion_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = scorpion
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+        }
+    }
+
+
+    # Unicorn Clan
+
+     unicorn_war_era1_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = unicorn_war_nobility_clothes
+                value = 0 # For O-Yoroi
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_unicorn_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+        }
+    }
+    unicorn_war_era2_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = unicorn_war_nobility_clothes
+                range = { 0.25 1.0 } # Random
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                range = { 1 1 }
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+        }
+    }
+    unicorn_war_era3_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = unicorn_war_nobility_clothes
+                value = 1 # For Gusoku
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_unicorn_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = unicorn
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+        }
+    }
+
+
+    # Imperial Clan
+
+     imperial_war_era1_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = imperial_war_nobility_clothes
+                value = 0 # For O-Yoroi
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_imperial_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+        }
+    }
+    imperial_war_era2_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = imperial_war_nobility_clothes
+                range = { 0.25 1.0 } # Random
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                range = { 1 1 }
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+        }
+    }
+    imperial_war_era3_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = imperial_war_nobility_clothes
+                value = 1 # For Gusoku
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_imperial_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = imperial
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+        }
+    }
+
+
+    # Minor Clans 
+
+     minor_war_era1_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = minor_war_nobility_clothes
+                value = 0 # For O-Yoroi
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_minor_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                }
+                shogunate_armor_era1_trigger = yes
+            }
+        }
+    }
+    minor_war_era2_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = minor_war_nobility_clothes
+                range = { 0.25 1.0 } # Random
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_01
+                range = { 1 1 }
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                }
+                shogunate_armor_era2_trigger = yes
+            }
+        }
+    }
+    minor_war_era3_high = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = minor_war_nobility_clothes
+                value = 1 # For Gusoku
+            }
+            accessory = {
+                mode = add
+                gene = shogunate_special_belt_accessory
+                template = katana_minor_01
+                value = 1
+            }           
+            morph = {
+                mode = replace
+                gene = gene_bs_body_shape
+                template = body_shape_average
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50
+                OR = {
+                    portrait_commoner_armor_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_low_nobles_armor_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+            modifier = {
+                add = 21        # So priests who are actively serving in a raised army as a commander or knight wear armor instead of priest robes
+                OR = {
+                    portrait_commoner_armor_in_army_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_low_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                    portrait_high_nobles_armor_in_army_trigger = {
+                        CULTURE_INPUT = minor
+                    }
+                }
+                shogunate_armor_era3_trigger = yes
+            }
+        }
+    }
+
+
+
 }
 
