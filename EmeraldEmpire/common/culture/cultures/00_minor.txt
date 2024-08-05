@@ -16,7 +16,7 @@
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -42,7 +42,7 @@ moshi = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -65,7 +65,7 @@ kasuga = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -91,7 +91,7 @@ tonbo = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -116,7 +116,7 @@ toritaka = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -142,7 +142,7 @@ usagi = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -168,7 +168,7 @@ yoritomo = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -193,7 +193,7 @@ tsuruchi = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -218,7 +218,7 @@ suzume = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -244,7 +244,7 @@ ichiro = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -268,7 +268,7 @@ nekoma = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -293,7 +293,7 @@ komori = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -318,7 +318,7 @@ shika = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -342,7 +342,7 @@ kaikoga = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -367,7 +367,7 @@ chuda = { # Defunct culture
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { rokugani_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -393,7 +393,7 @@ kuma = { # Defunct culture
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {
@@ -418,7 +418,7 @@ kaeru = {
 	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
-	clothing_gfx = { mongol_clothing_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
 	
 	ethnicities = {

@@ -25,17 +25,18 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ## short term goals 
 - Test clothing for ALL minor/imperial/great clans
 - Test Create Minor Clan decision
-	Add (later) special choices of Dynasty/Name/CoA animal based
+	Add (later) special choices of Dynasty/Name/CoA animal based with an event
 - Add japanese clothing
-	- Add sub_group for clothings, with a dedicated color palette for each clan/cultures which makes sense cf https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
+	- Add sub_group for clothings, with a dedicated color palette for each clan cf https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
 	- Force monks & theocratic count of Shinseism to have monk clothes
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
 - add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)???? 
 - Add river map (more ?)
 
 ## Fixes to do
-- Add legitymacy to all starting daimyo to avoid LOT of starting wars
+- Add legitymacy to all starting daimyo to avoid LOT of starting wars ?
 - Spammed with rokugan_char_interaction.0231 event boxes...
+	- "an honorable death" event procs for outsite of player stuff
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
 - Change color of some textured emblmes (very low priority) : Mantis, Komori
 - shiba mon is off-center (too much top left)
@@ -46,7 +47,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- "Lowborn" being used as a family name lol
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
-- "an honorable death" event procs for outsite of player stuff
+
 
 ## Workaround to be careful with & unsure behaviours
 - headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
@@ -63,7 +64,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- diseable the "create de_jure kingdom" option ?????
 	- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance. Are they all landless à la Hiruma ?
 - Special decisions
-	-Become Great Clan : Requires X Duchy or Y counties. Emperor positive relation. Emperor MUST be direct liege. Name of Duchy Title => Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
+	-Become Great Clan (create custom kingdom alternative name) : Requires X Duchy or Y counties. Emperor positive relation. Emperor MUST be direct liege. Name of Duchy Title => Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
 		- No other ways to create a kingdom title. Basically rework existing mechanics
  	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
 	- if emperor : get a doji bride
@@ -125,9 +126,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Events for l5R => "yearly_on_actions.txt"/on_yearly_events (for instance). Ideas
 	- Random duels
 	- Paiting stuff
+	- TEa
+	-Opium
 	- others
 - add activites map object data on each county ? capital county ?
 - genes & ethnicities
+- Add "minor clothes" probability to Great Clan clothes to have more variety of clothing styles
 - Add modifiers to dynasties to prove their link to great clans ????
 - defines geo regions => For animals/trees/etc...
 - Prevent imperial family from doing wars against other clans...? Only for AI ? or not ?
