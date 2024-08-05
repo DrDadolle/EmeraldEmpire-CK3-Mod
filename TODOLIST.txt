@@ -89,6 +89,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Special events setting the start of the clan wars
 - Duel to end War (check Tales of Ireland mod)
 - artifacts (non nemuranai). Fluff in "Celestial realms"
+	IN scripted_effects : xxx_artifact_effects.txt ?
+	- common/artifacts/visual defines the visual
+	- common/modifiers/xxx_historical_artifact_modifiers defines modifiers
+	- common/scripted_effects creates the objects
+	- events/artifacts/xxx_historical_artifacts_events gets called and generated the artifact
+	
  	- Chikara, ancestral sword of the crab, jade laced, nemuranai. Cannot be damaged. Is a Chokuto
 	- 5 Doji blades by Doji Yasuragi
 		Shukujo, ancestral sword of the crane. If descendant direct of Doji, more bonus. Uchigatana, for duel.
