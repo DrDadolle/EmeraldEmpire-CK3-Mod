@@ -1,6 +1,10 @@
 ﻿@bleach_hair_cooldown_time = 365
 
+##################################################
+# COMMON
+##################################################
 # Seppuku
+##################################################
 commit_seppuku_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	desc = commit_seppuku_decision_desc
@@ -46,7 +50,9 @@ commit_seppuku_decision = {
 	}
 }
 
+##################################################
 # Abdication
+##################################################
 rokugan_abdicate_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	desc = rokugan_abdicate_decision_desc
@@ -87,9 +93,11 @@ rokugan_abdicate_decision = {
 	}
 }
 
-##############################
-###### CRANE
-# Bleach hair white, a minor Crane Clan decision
+##################################################
+# CRANE CLAN
+##################################################
+# Bleach hair white
+##################################################
 bleach_hair_white_crane_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_crane.dds"
 	
@@ -130,8 +138,9 @@ bleach_hair_white_crane_decision = {
 		base = 30
 	}
 }
-
-# Revert the white bleaching hair white, a minor Crane Clan decision
+##################################################
+# Revert the white bleaching hair white decision
+##################################################
 abandon_white_hair_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_crane.dds"
 

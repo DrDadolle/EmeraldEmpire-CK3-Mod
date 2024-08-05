@@ -69,9 +69,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Hall of Ancestors Lion
 	- Traitor's Trove
 	- Tsuma Topaz building
-	- Chuda Ruins
-			- revive chuda dynasty decision !
-	- Kaiu Wall : add models from AEP
+	- Kaiu Wall (done) : add models from AEP
 - characters secret religion
 	- 	effect = {make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zun_pagan }} 
 - Create MaA for each great clan, maybe each minor one
@@ -80,6 +78,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- update culture_has_skirmisher_maa to each culture with such maa
 	- basic Mma and levies localization
 - Add ancestral clan & family founders
+- do a starting event : "Welcome to Rokugan" (à la Tales of Ireland, then comment the trigger for testing) event with explanations of a lot of stuff : This place and about myself. War Changes. Empire of Rokugan. Shadowlands. Magic System. I know everything already
+- Special events setting the start of the clan wars
+- Duel to end War (check Tales of Ireland mod)
 - artifacts (non nemuranai). Fluff in "Celestial realms"
  	- Chikara, ancestral sword of the crab, jade laced, nemuranai. Cannot be damaged. Is a Chokuto
 	- 5 Doji blades by Doji Yasuragi
@@ -113,9 +114,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Have a nice paper map à la Shogunate when zooming out.
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
-- do a starting event : "Welcome to Rokugan" (à la Tales of Ireland, then comment the trigger for testing) event with explanations of a lot of stuff : This place and about myself. War Changes. Empire of Rokugan. Shadowlands. Magic System. I know everything already
-- Special events setting the start of the clan wars
-- Duel to end War (check Tales of Ireland mod)
 - add "animal" (clan animal) as motif for CoA (instead of just textured one)
 	- generated dynasties of ronins have random CoA
 - Events for l5R => "yearly_on_actions.txt"/on_yearly_events (for instance). Ideas

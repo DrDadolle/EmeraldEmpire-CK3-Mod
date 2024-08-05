@@ -5,8 +5,17 @@
 is_under_e_rokugan_rule = {
     AND = {
         is_independent_ruler = no
-        #liege is rokugani emperor
+        #top liege is rokugani emperor
         top_liege = { primary_title = title:e_rokugan }
+    }
+}
+
+# Function to know when someone is the emperor direct vassal
+is_under_direct_e_rokugan_rule = {
+    AND = {
+        is_independent_ruler = no
+        #liege is rokugani emperor
+        liege = { primary_title = title:e_rokugan }
     }
 }
 
