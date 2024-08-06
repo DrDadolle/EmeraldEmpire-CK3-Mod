@@ -33,6 +33,14 @@ rokugan_historical_artifacts.0001 = {
 				create_artifact_sasageru_ancestral_armor_crane_effect = { OWNER = this }
 			}
 		}
+
+		if = {
+			limit = { exists = title:d_daidoji.holder }
+			title:d_daidoji.holder = {
+				create_artifact_kotoku_ancestral_yari_daidoji_effect = { OWNER = this }
+			}
+		}
+
 		
 		##################
 		## Dragon Clan ###
@@ -77,12 +85,85 @@ rokugan_historical_artifacts.0001 = {
 		## Unicorn Clan ##
 		##################
 
+		if = {
+			limit = { exists = title:k_unicorn_clan.holder }
+			title:k_unicorn_clan.holder = {
+				create_artifact_hayai_ancestral_sword_unicorn_effect = { OWNER = this }
+				create_artifact_yuki_ancestral_armor_unicorn_effect = { OWNER = this }
+			}
+		}
+
 		##################
 		## Imperial Clan #
 		##################
 
+		if = {
+			limit = { exists = title:d_hantei.holder }
+			title:d_hantei.holder = {
+				create_artifact_kunshi_ancestral_sword_imperial_effect = { OWNER = this }
+			}
+		}
+
 		##################
 		### Minor Clan ###
 		##################
+
+		if = {
+			limit = { exists = title:d_suzume.holder }
+			title:d_suzume.holder = {
+				create_artifact_ancestral_sword_sparrow_effect = { OWNER = this }
+			}
+		}
+
+		if = {
+			limit = { exists = title:d_moshi.holder }
+			title:d_moshi.holder = {
+				create_artifact_ancestral_sword_centipede_effect = { OWNER = this }
+			}
+		}
+
+		if = {
+			limit = { exists = title:d_yoritomo.holder }
+			title:d_yoritomo.holder = {
+				create_artifact_shoubai_and_sakusen_ancestral_sword_mantis_effect = { OWNER = this }
+				create_artifact_kaminari_ancestral_armor_mantis_effect = { OWNER = this }
+			}
+		}
+
+		if = {
+			limit = { exists = title:d_tonbo.holder }
+			title:d_tonbo.holder = {
+				create_artifact_ancestral_sword_dragonfly_effect = { OWNER = this }
+			}
+		}
+
+		if = {
+			limit = { exists = title:d_kitsune.holder }
+			title:d_kitsune.holder = {
+				create_artifact_ukyo_ancestral_sword_fox_effect = { OWNER = this }
+			}
+		}
+
+		if = {
+			limit = { exists = title:d_kasuga.holder }
+			title:d_kasuga.holder = {
+				create_artifact_bouishi_kasuga_ancestral_sword_tortoise_effect = { OWNER = this }
+			}
+		}
+
+		if = {
+			limit = { exists = title:d_chuda.holder }
+			title:d_chuda.holder = {
+				create_artifact_jadoku_ancestral_sword_snake_effect = { OWNER = this }
+			}
+		}
+
+		if = {
+			limit = { exists = title:d_usagi.holder }
+			title:d_usagi.holder = {
+				create_artifact_kenno_ancestral_sword_hare_effect = { OWNER = this }
+			}
+		}
+
 	}
 }

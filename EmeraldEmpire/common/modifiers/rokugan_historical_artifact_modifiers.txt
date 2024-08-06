@@ -113,6 +113,7 @@ hayai_ancestral_sword_unicorn_modifier = {
 
 kiro_ancestral_sword_kirin_modifier = {
     # Lost to time
+	#  TODO not done yet
 	martial = 2
 	prowess = 10
 	monthly_prestige = 0.25
@@ -135,6 +136,7 @@ kunshi_ancestral_sword_imperial_modifier = {
 	prowess = 10
 	monthly_prestige = 1
 	dynasty_prestige = 1
+	hostile_scheme_resistance_add = 20
 	vassal_opinion = 10
 }
 
