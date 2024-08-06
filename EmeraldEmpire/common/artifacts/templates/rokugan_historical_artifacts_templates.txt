@@ -1,0 +1,246 @@
+﻿
+##################
+###   Common   ###
+##################
+ancestral_blade_template = {
+	can_equip = {
+		always = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		always = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	# can this character repair this artifact (restore its durability)
+	can_repair = {
+		always = yes
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		martial = 1
+		prowess = 10
+		monthly_prestige = 0.1
+	}
+
+	ai_score = {
+		value = 100
+	}
+
+	unique = yes
+}
+
+
+ancestral_armor_template = {
+	can_equip = {
+		always = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		always = yes
+	}
+	can_reforge = {
+		always = no
+	}
+
+	# can this character repair this artifact (restore its durability)
+	can_repair = {
+		always = yes
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		martial = 1
+		prowess = 10
+		monthly_prestige = 0.1
+	}
+
+	ai_score = {
+		value = 100
+	}
+
+	unique = yes
+}
+
+##################
+### Crab Clan ####
+##################
+
+##################
+### Crane Clan ###
+##################
+shukujo_template = {
+	can_equip = {
+		always = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		AND = {
+			dynasty = dynasty:2100001 #Doji
+			has_trait = kami_descendant
+		}
+	}
+	can_reforge = {
+		always = no
+	}
+	# can this character repair this artifact (restore its durability)
+	can_repair = {
+		always = yes
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		martial = 1
+		prowess = 10
+		monthly_prestige = 0.5
+	}
+
+	ai_score = {
+		value = 100
+	}
+
+	unique = yes
+}
+
+##################
+## Dragon Clan ###
+##################
+
+
+##################
+### Lion Clan  ###
+##################
+
+
+##################
+## Phoenix Clan ##
+##################
+
+ofushikai_template = {
+	can_equip = {
+		always = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		AND = {
+			dynasty = dynasty:2100009 #Shiba
+			has_title = title:k_phoenix_clan
+	}
+	}
+	can_reforge = {
+		always = no
+	}
+	# can this character repair this artifact (restore its durability)
+	can_repair = {
+		always = yes
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		monthly_prestige = 1
+	}
+
+	ai_score = {
+		value = 100
+	}
+
+	unique = yes
+}
+
+
+##################
+## Scorpion Clan #
+##################
+itsuwari_template = {
+	can_equip = {
+		always = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		AND = { 
+			NOT = {
+				has_title = title:k_scorpion_clan
+			}
+			OR = {
+				dynasty = dynasty:2100013 #Bayushi
+				dynasty = dynasty:2100014 #Shosuro
+				dynasty = dynasty:2100015 #Soshi
+				dynasty = dynasty:2100016 #Yogo
+			}
+		}
+	}
+	can_reforge = {
+		always = no
+	}
+	# can this character repair this artifact (restore its durability)
+	can_repair = {
+		always = yes
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		monthly_prestige = 0.5
+	}
+
+	ai_score = {
+		value = 100
+	}
+
+	unique = yes
+}
+
+##################
+## Unicorn Clan ##
+##################
+
+
+##################
+## Imperial Clan #
+##################
+
+
+##################
+### Minor Clan ###
+##################
+bouishi_kasuga_template = {
+	can_equip = {
+		always = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		OR = {
+				dynasty = dynasty:2100031 #Hantei
+				dynasty = dynasty:2100103 #Kasuga
+		}
+	}
+	can_reforge = {
+		always = no
+	}
+	# can this character repair this artifact (restore its durability)
+	can_repair = {
+		always = yes
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		monthly_prestige = 0.5
+	}
+
+	ai_score = {
+		value = 100
+	}
+
+	unique = yes
+}
+
+##################
+###   Others   ###
+##################

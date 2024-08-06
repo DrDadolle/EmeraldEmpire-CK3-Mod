@@ -1,0 +1,199 @@
+﻿##################
+### Crab Clan ####
+##################
+create_artifact_chikara_ancestral_sword_crab_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = chikara_ancestral_sword_crab
+		description = chikara_ancestral_sword_crab_description
+		template = ancestral_blade_template
+		type = japanese_sword
+		visuals = japanese_sword
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 5.1.1
+			#recipient = character:7862 #TODO Kaiu
+			#location = province:2575 #Rome
+		}
+		modifier = chikara_ancestral_sword_crab_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no # Unbreakable
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = historical_unique_artifact
+        set_variable = chikara_ancestral_sword_crab
+		set_variable = japanese_sword
+		save_scope_as = epic
+
+		set_variable = {
+			name = artifact_succession_title
+			value = title:k_crab_clan
+		}
+
+		add_artifact_history = {
+			type = inherited
+			date = 1110.1.1
+			recipient = character:3000400 #Hida Kisada
+		}
+        add_artifact_title_history = {
+			date = 1110.1.1
+			target = title:k_crab_clan
+		}
+		#add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_2_modifier
+
+	}
+}
+
+create_artifact_fukutsu_ancestral_armor_crab_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = fukutsu_ancestral_armor_crab
+		description = fukutsu_ancestral_armor_crab_description
+		template = ancestral_armor_template
+		type = japanese_armor
+		visuals = japanese_armor
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 5.1.1
+			#recipient = character:7862 #TODO Kaiu
+			#location = province:2575 #Rome
+		}
+		modifier = fukutsu_ancestral_armor_crab_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no # Unbreakable
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = historical_unique_artifact
+        set_variable = fukutsu_ancestral_armor_crab
+		set_variable = japanese_armor
+		save_scope_as = epic
+
+		set_variable = {
+			name = artifact_succession_title
+			value = title:k_crab_clan
+		}
+
+		add_artifact_history = {
+			type = inherited
+			date = 1110.1.1
+			recipient = character:3000400 #Hida Kisada
+		}
+        add_artifact_title_history = {
+			date = 1110.1.1
+			target = title:k_crab_clan
+		}
+	}
+}
+
+##################
+### Crane Clan ###
+##################
+create_artifact_shukujo_ancestral_sword_crane_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = shukujo_ancestral_sword_crane
+		description = shukujo_ancestral_sword_crane_description
+		template = shukujo_template
+		type = japanese_sword
+		visuals = japanese_sword
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 35.1.1
+			#recipient = character:7862 #TODO Doji Yasurugi
+		}
+		modifier = shukujo_ancestral_sword_crane_modifier
+		save_scope_as = newly_created_artifact
+		#decaying = no # Unbreakable
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = historical_unique_artifact
+        set_variable = shukujo_ancestral_sword_crane
+		set_variable = japanese_sword
+		save_scope_as = epic
+
+		set_variable = {
+			name = artifact_succession_title
+			value = title:k_crane_clan
+		}
+
+		add_artifact_history = {
+			type = inherited
+			date = 1123.1.1
+			recipient = character:3000001 #Doji Hotaru
+		}
+        add_artifact_title_history = {
+			date = 1123.1.1
+			target = title:k_crane_clan
+		}
+		#add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_2_modifier
+
+	}
+}
+
+create_artifact_sasageru_ancestral_armor_crane_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = sasageru_ancestral_armor_crane
+		description = sasageru_ancestral_armor_crane_description
+		template = ancestral_armor_template
+		type = japanese_armor
+		visuals = japanese_armor
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 35.1.1
+			#recipient = character:7862 #TODO Doji Yasurugi
+		}
+		modifier = sasageru_ancestral_armor_crane_modifier
+		save_scope_as = newly_created_artifact
+		#decaying = no # Unbreakable
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = historical_unique_artifact
+        set_variable = sasageru_ancestral_armor_crane
+		set_variable = japanese_armor
+		save_scope_as = epic
+
+		set_variable = {
+			name = artifact_succession_title
+			value = title:k_crane_clan
+		}
+
+		add_artifact_history = {
+			type = inherited
+			date = 1123.1.1
+			recipient = character:3000001 #Doji Hotaru
+		}
+        add_artifact_title_history = {
+			date = 1123.1.1
+			target = title:k_crane_clan
+		}
+	}
+}
