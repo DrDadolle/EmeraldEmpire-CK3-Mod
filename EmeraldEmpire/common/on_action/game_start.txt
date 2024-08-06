@@ -7,6 +7,7 @@ on_game_start = {
 		#Guaranteed historical artifacts fixed spawning
 		debug_portraits.1 					# Debug portraits for animation testing
 		easteregg_event.0001				# Charna and Jakub duel.
+		rokugan_historical_artifacts.0001		# Rokugan Historical Artifacts Generator
 	}
 
 	effect = {
@@ -32,6 +33,7 @@ on_game_start = {
 			}
 		}
 
+		#fire_intro_events = yes #TODO
 				
 		### GRANDEUR ###
 		#Royal Court: Set starting Grandeur to be the same as Expected

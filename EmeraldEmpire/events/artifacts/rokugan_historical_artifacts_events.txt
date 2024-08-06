@@ -1,0 +1,65 @@
+﻿namespace = rokugan_historical_artifacts
+# Generation of historical artifacts #
+
+
+#Historical artifacts generator at game start
+rokugan_historical_artifacts.0001 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		##################
+		### Crab Clan ####
+		##################
+		#TODO FIXME What about time ?
+
+		if = {
+			limit = { exists = title:k_crab_clan.holder }
+			title:k_crab_clan.holder = {
+				create_artifact_chikara_ancestral_sword_crab_effect = { OWNER = this }
+				create_artifact_fukutsu_ancestral_armor_crab_effect = { OWNER = this }
+			}
+		}
+
+		##################
+		### Crane Clan ###
+		##################
+		#TODO FIXME What about time ?
+
+		if = {
+			limit = { exists = title:k_crane_clan.holder }
+			title:k_crane_clan.holder = {
+				create_artifact_shukujo_ancestral_sword_crane_effect = { OWNER = this }
+				create_artifact_sasageru_ancestral_armor_crane_effect = { OWNER = this }
+			}
+		}
+		
+		##################
+		## Dragon Clan ###
+		##################
+
+		##################
+		### Lion Clan  ###
+		##################
+
+		##################
+		## Phoenix Clan ##
+		##################
+
+		##################
+		## Scorpion Clan #
+		##################
+
+		##################
+		## Unicorn Clan ##
+		##################
+
+		##################
+		## Imperial Clan #
+		##################
+
+		##################
+		### Minor Clan ###
+		##################
+	}
+}
