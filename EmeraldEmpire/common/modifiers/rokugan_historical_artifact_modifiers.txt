@@ -5,7 +5,8 @@ chikara_ancestral_sword_crab_modifier = {
     #TODO jade laced, nemuranai. Cannot be damaged. Is a Chokuto
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 1
+	dynasty_prestige = 1
 	vassal_opinion = 5
 }
 
@@ -25,6 +26,7 @@ shukujo_ancestral_sword_crane_modifier = {
 	martial = 1
 	prowess = 15
 	monthly_prestige = 1
+	dynasty_prestige = 1
 	vassal_opinion = 5
 }
 
@@ -39,7 +41,7 @@ kotoku_ancestral_yari_daidoji_modifier = {
     #TODO 
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 1
 	vassal_opinion = 5
 }
 
@@ -55,7 +57,8 @@ shori_ancestral_sword_lion_modifier = {
     #TODO Tachi. need honor !
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 1
+	dynasty_prestige = 1
 	vassal_opinion = 5
 }
 
@@ -73,7 +76,7 @@ ofushikai_ancestral_sword_phoenix_modifier = {
     #TODO Tachi. Contains Shiba & ko. Cannot be damaged nor stolen. Only usable by clan champion phoenix.
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 1
 	vassal_opinion = 5
 }
 
@@ -85,14 +88,15 @@ mezameru_ancestral_armor_phoenix_modifier = {
 }
 
 ##################
-## Scorpion Clan #
+# Scorpion Clan ##
 ##################
 itsuwari_ancestral_sword_scorpion_modifier = {
-    #TODOJian. Itsuwari. A random scorpion must own it. Bonus vs Clan champion scorpion ?
-	martial = 2
-	prowess = 10
-	monthly_prestige = 0.25
-	vassal_opinion = 5
+    #TODOJian. Itsuwari. A random scorpion must own it. Bonus vs Clan champion scorpion 
+	intrigue = 2
+	prowess = 8
+	monthly_prestige = 0.5
+	owned_hostile_scheme_success_chance_add = 10
+	dread_baseline_add = 10
 }
 
 ##################
@@ -102,7 +106,8 @@ hayai_ancestral_sword_unicorn_modifier = {
     #TODO Scimitar
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 1
+	dynasty_prestige = 1
 	vassal_opinion = 5
 }
 
@@ -128,8 +133,9 @@ kunshi_ancestral_sword_imperial_modifier = {
     #TODO (jian). detection if bad things.
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
-	vassal_opinion = 5
+	monthly_prestige = 1
+	dynasty_prestige = 1
+	vassal_opinion = 10
 }
 
 ##################
@@ -139,7 +145,8 @@ ancestral_sword_sparrow_modifier = {
     #TODO  bonus against death
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 0.5
+	dynasty_prestige = 0.5
 	vassal_opinion = 5
 }
 
@@ -147,23 +154,18 @@ ancestral_sword_centipede_modifier = {
     #TODO sword, pious
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 0.5
+	dynasty_prestige = 0.5
 	vassal_opinion = 5
 }
 
-sakusen_ancestral_sword_mantis_modifier = {
-    #TODO Daisho
-	martial = 2
-	prowess = 10
-	monthly_prestige = 0.25
-	vassal_opinion = 5
-}
 
-shoubai_ancestral_sword_mantis_modifier = {
+shoubai_and_sakusen_ancestral_sword_mantis_modifier = {
     #TODO Daisho
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 0.5
+	dynasty_prestige = 0.5
 	vassal_opinion = 5
 }
 
@@ -178,7 +180,8 @@ ancestral_sword_dragonfly_modifier = {
     #TODO 
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 0.5
+	dynasty_prestige = 0.5
 	vassal_opinion = 5
 }
 
@@ -186,7 +189,8 @@ ukyo_ancestral_sword_fox_modifier = {
     #TODO
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 0.5
+	dynasty_prestige = 0.5
 	vassal_opinion = 5
 }
 
@@ -194,7 +198,8 @@ bouishi_kasuga_ancestral_sword_tortoise_modifier = {
     #TODO Only usable by Tortoise or imperial
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 0.5
+	dynasty_prestige = 0.5
 	vassal_opinion = 5
 }
 
@@ -202,7 +207,8 @@ jadoku_ancestral_sword_snake_modifier = {
     #TODO magic
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 0.5
+	dynasty_prestige = 0.5
 	vassal_opinion = 5
 }
 
@@ -210,7 +216,8 @@ kenno_ancestral_sword_hare_modifier = {
     #TODO  Protection & speed
 	martial = 2
 	prowess = 10
-	monthly_prestige = 0.25
+	monthly_prestige = 0.5
+	dynasty_prestige = 0.5
 	vassal_opinion = 5
 }
 

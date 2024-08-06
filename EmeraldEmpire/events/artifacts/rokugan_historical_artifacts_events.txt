@@ -42,13 +42,36 @@ rokugan_historical_artifacts.0001 = {
 		### Lion Clan  ###
 		##################
 
+		if = {
+			limit = { exists = title:k_lion_clan.holder }
+			title:k_lion_clan.holder = {
+				create_artifact_shori_ancestral_sword_lion_effect = { OWNER = this }
+				create_artifact_junsui_ancestral_armor_lion_effect = { OWNER = this }
+			}
+		}
+
 		##################
 		## Phoenix Clan ##
 		##################
 
+		if = {
+			limit = { exists = title:k_phoenix_clan.holder }
+			title:k_phoenix_clan.holder = {
+				create_artifact_ofushikai_ancestral_sword_phoenix_effect = { OWNER = this }
+				create_artifact_mezameru_ancestral_armor_phoenix_effect = { OWNER = this }
+			}
+		}
+
 		##################
 		## Scorpion Clan #
 		##################
+
+		if = {
+			limit = { exists = title:d_shosuro.holder }
+			title:d_shosuro.holder = {
+				create_artifact_itsuwari_ancestral_sword_scorpion_effect = { OWNER = this }
+			}
+		}
 
 		##################
 		## Unicorn Clan ##

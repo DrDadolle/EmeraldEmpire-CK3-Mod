@@ -146,8 +146,6 @@ create_artifact_shukujo_ancestral_sword_crane_effect = {
 			date = 1123.1.1
 			target = title:k_crane_clan
 		}
-		#add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_2_modifier
-
 	}
 }
 
@@ -197,3 +195,295 @@ create_artifact_sasageru_ancestral_armor_crane_effect = {
 		}
 	}
 }
+
+##################
+## Dragon Clan ###
+##################
+
+##################
+### Lion Clan  ###
+##################
+create_artifact_shori_ancestral_sword_lion_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = shori_ancestral_sword_lion
+		description = shori_ancestral_sword_lion_description
+		template = ancestral_blade_template
+		type = japanese_sword
+		visuals = japanese_sword
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 35.1.1
+			#recipient = character:7862 #TODO 
+		}
+		modifier = shori_ancestral_sword_lion_modifier
+		save_scope_as = newly_created_artifact
+		#decaying = no # Unbreakable
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = historical_unique_artifact
+        set_variable = shori_ancestral_sword_lion
+		set_variable = japanese_sword
+		save_scope_as = epic
+
+		set_variable = {
+			name = artifact_succession_title
+			value = title:k_lion_clan
+		}
+
+        add_artifact_history = {
+			type = inherited
+			date = 1123.1.1
+			recipient = character:3000102 # Akodo Arasou
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 1123.3.1
+			recipient = character:3000101 #Akodo Toturi
+		}
+        add_artifact_title_history = {
+			date = 1123.1.1
+			target = title:k_lion_clan
+		}
+	}
+}
+
+create_artifact_junsui_ancestral_armor_lion_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = junsui_ancestral_armor_lion
+		description = junsui_ancestral_armor_lion_description
+		template = ancestral_armor_template
+		type = japanese_armor
+		visuals = japanese_armor
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 35.1.1
+			#recipient = character:7862 #TODO 
+		}
+		modifier = junsui_ancestral_armor_lion_modifier
+		save_scope_as = newly_created_artifact
+		#decaying = no # Unbreakable
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = historical_unique_artifact
+        set_variable = junsui_ancestral_armor_lion
+		set_variable = japanese_armor
+		save_scope_as = epic
+
+		set_variable = {
+			name = artifact_succession_title
+			value = title:k_crane_clan
+		}
+
+		add_artifact_history = {
+			type = inherited
+			date = 1123.1.1
+			recipient = character:3000102 # Akodo Arasou
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 1123.3.1
+			recipient = character:3000101 #Akodo Toturi
+		}
+        add_artifact_title_history = {
+			date = 1123.1.1
+			target = title:k_lion_clan
+		}
+	}
+}
+
+##################
+## Phoenix Clan ##
+##################
+
+create_artifact_ofushikai_ancestral_sword_phoenix_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = ofushikai_ancestral_sword_phoenix
+		description = ofushikai_ancestral_sword_phoenix_description
+		template = ofushikai_template
+		type = japanese_sword
+		visuals = japanese_sword
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 35.1.1
+			#recipient = character:7862 #TODO Shiba
+		}
+		modifier = ofushikai_ancestral_sword_phoenix_modifier
+		save_scope_as = newly_created_artifact
+		#decaying = no # Unbreakable
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = historical_unique_artifact
+        set_variable = ofushikai_ancestral_sword_phoenix
+		set_variable = japanese_sword
+		save_scope_as = epic
+
+		set_variable = {
+			name = artifact_succession_title
+			value = title:k_phoenix_clan
+		}
+
+        add_artifact_history = {
+			type = inherited
+			date = 1110.1.1
+			recipient = character:3000201 # Shiba Ujimitsu
+		}
+        add_artifact_history = {
+			type = inherited
+			date = 1123.4.25
+			recipient = character:3000200 # Shiba Tsukune
+		}
+        add_artifact_title_history = {
+			date = 1110.1.1
+			target = title:k_phoenix_clan
+		}
+	}
+}
+
+create_artifact_mezameru_ancestral_armor_phoenix_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = mezameru_ancestral_armor_phoenix
+		description = mezameru_ancestral_armor_phoenix_description
+		template = ancestral_armor_template
+		type = japanese_armor
+		visuals = japanese_armor
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 35.1.1
+			#recipient = character:7862 #TODO 
+		}
+		modifier = mezameru_ancestral_armor_phoenix_modifier
+		save_scope_as = newly_created_artifact
+		#decaying = no # Unbreakable
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = historical_unique_artifact
+        set_variable = mezameru_ancestral_armor_phoenix
+		set_variable = japanese_armor
+		save_scope_as = epic
+
+		set_variable = {
+			name = artifact_succession_title
+			value = title:k_phoenix_clan
+		}
+
+        add_artifact_history = {
+			type = inherited
+			date = 1110.1.1
+			recipient = character:3000201 # Shiba Ujimitsu
+		}
+        add_artifact_history = {
+			type = inherited
+			date = 1123.4.25
+			recipient = character:3000200 # Shiba Tsukune
+		}
+        add_artifact_title_history = {
+			date = 1110.1.1
+			target = title:k_phoenix_clan
+		}
+	}
+}
+
+##################
+# Scorpion Clan ##
+##################
+
+create_artifact_itsuwari_ancestral_sword_scorpion_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = itsuwari_ancestral_sword_scorpion
+		description = itsuwari_ancestral_sword_scorpion_description
+		template = itsuwari_template
+		type = japanese_sword
+		visuals = japanese_sword
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 35.1.1
+			#recipient = character:7862 #TODO Shiba
+		}
+		modifier = itsuwari_ancestral_sword_scorpion_modifier
+		save_scope_as = newly_created_artifact
+		#decaying = no # Unbreakable
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = historical_unique_artifact
+        set_variable = itsuwari_ancestral_sword_scorpion
+		set_variable = japanese_sword
+		save_scope_as = epic
+
+		set_variable = {
+			name = artifact_succession_title
+			value = title:d_shosuro
+		}
+
+        add_artifact_history = {
+			type = inherited
+			date = 1080.1.1
+			recipient = character:3000341 # Shosuro Koshurin
+		}
+        add_artifact_history = {
+			type = inherited
+			date = 1111.1.1 
+			recipient = character:3000340 # Shosuro Hametsu
+		}
+        add_artifact_title_history = {
+			date = 1110.1.1
+			target = title:d_shosuro
+		}
+	}
+}
+
+
+##################
+## Unicorn Clan ##
+##################
+
+##################
+## Imperial Clan #
+##################
+
+##################
+### Minor Clan ###
+##################
+
+##################
+###   Others   ###
+##################
