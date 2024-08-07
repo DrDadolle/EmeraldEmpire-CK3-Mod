@@ -22,7 +22,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - How Minor/Major clan titles are handled
 - innovation (special culture ones) and shared ones. Re-localization of some
 - Colors of clothes variations
-- Events idea
+- Events ideas
+- more artifacts
 
 ## short term goals 
 - Test Create Minor Clan decision
@@ -86,38 +87,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - do a starting event : "Welcome to Rokugan" (à la Tales of Ireland, then comment the trigger for testing) event with explanations of a lot of stuff : This place and about myself. War Changes. Empire of Rokugan. Shadowlands. Magic System. I know everything already
 - Special events setting the start of the clan wars
 - Duel to end War (check Tales of Ireland mod)
-- artifacts (non nemuranai). Fluff in "Celestial realms"
-	IN scripted_effects : xxx_artifact_effects.txt ?
-	- common/artifacts/visual defines the visual
-	- common/modifiers/xxx_historical_artifact_modifiers defines modifiers
-	- common/scripted_effects creates the objects
-	- events/artifacts/xxx_historical_artifacts_events gets called and generated the artifact
-	
- 	- Chikara, ancestral sword of the crab, jade laced, nemuranai. Cannot be damaged. Is a Chokuto
-	- 5 Doji blades by Doji Yasuragi
-		Shukujo, ancestral sword of the crane. If descendant direct of Doji, more bonus. Uchigatana, for duel.
-	- The blade with no name -> No a sword but a concept. Should be special events.
-	- Shori, ancestra sword of the Lion. Tachi. need honor !
-	- Ofushikai, ancestral sword of the Phoenix. Tachi. Contains Shiba & ko. Cannot be damaged nor stolen. Only usable by clan champion phoenix.
-	- Itsuwari, ancestral sword of the Scorpion. Jian. Itsuwari. A random scorpion must own it. Bonus vs Clan champion scorpion ?
-	- Hayai, ancestral sword of the Unicorn. Scimitar
-	- Kunshi, Ancestral sword of the hantei (jian). detection if bad things.
-	- Ancestral sword sparrow, bonus against death
-	- Moshi ancestral sword, pious
-	- Sakusen & Shoubai, mantis ancestral sword. Daisho
-	- Ancestral sword of Dragonfly
-	- Ukyo, Ancestral sword Fox, lost.
-	- Kiro, lost ancestral sword ot the Kirin
-	- Bouishi Kasuga, ancestral sword Tortoise. Only usable by Tortoise or imperial
-	- Jadoku, ancestral sword Snake clan. magic
-	- Kenno, ancestral sword Hare clan. Protection & speed
-	- Fukutsu, ancestral armor crab
-	- Sasageru, ancestral armor crane 
-	- Kotoku, ancestra yari daidoji 
-	- Junsui, ancestral armor lion 
-	- Kaminari, ancestral armor mantis 
-	- Mezameru, ancestral armor phoenix 
-	- Yuki, ancestral unicorn armor
 - Innovations
 	- Wootz Steel -> Kaiu Steel (reskin)
 	- Gaijin trade (Mantis/Tortoise)
@@ -143,6 +112,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- shogunate_bookmark_events.txt/shogunate_bookmark.8300/shogunate_historical_feud_effect => shogunate_bookmark_effects/shogunate_bookmark.8310
 	- add more events? Duels ?
 - Add court (from Shogunate)
+- Artifacts creation process
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN RELEASE ====================
 =====================================================================================================

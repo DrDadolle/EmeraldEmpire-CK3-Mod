@@ -8,7 +8,7 @@ create_artifact_chikara_ancestral_sword_crab_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = chikara_ancestral_sword_crab
+		name = chikara_ancestral_sword_crab_name
 		description = chikara_ancestral_sword_crab_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -58,7 +58,7 @@ create_artifact_fukutsu_ancestral_armor_crab_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = fukutsu_ancestral_armor_crab
+		name = fukutsu_ancestral_armor_crab_name
 		description = fukutsu_ancestral_armor_crab_description
 		template = ancestral_armor_template
 		type = japanese_armor
@@ -109,7 +109,7 @@ create_artifact_shukujo_ancestral_sword_crane_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = shukujo_ancestral_sword_crane
+		name = shukujo_ancestral_sword_crane_name
 		description = shukujo_ancestral_sword_crane_description
 		template = shukujo_template
 		type = japanese_sword
@@ -156,7 +156,7 @@ create_artifact_sasageru_ancestral_armor_crane_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = sasageru_ancestral_armor_crane
+		name = sasageru_ancestral_armor_crane_name
 		description = sasageru_ancestral_armor_crane_description
 		template = ancestral_armor_template
 		type = japanese_armor
@@ -203,7 +203,7 @@ create_artifact_kotoku_ancestral_yari_daidoji_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = kotoku_ancestral_yari_daidoji
+		name = kotoku_ancestral_yari_daidoji_name
 		description = kotoku_ancestral_yari_daidoji_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -258,7 +258,7 @@ create_artifact_shori_ancestral_sword_lion_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = shori_ancestral_sword_lion
+		name = shori_ancestral_sword_lion_name
 		description = shori_ancestral_sword_lion_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -310,7 +310,7 @@ create_artifact_junsui_ancestral_armor_lion_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = junsui_ancestral_armor_lion
+		name = junsui_ancestral_armor_lion_name
 		description = junsui_ancestral_armor_lion_description
 		template = ancestral_armor_template
 		type = japanese_armor
@@ -366,7 +366,7 @@ create_artifact_ofushikai_ancestral_sword_phoenix_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = ofushikai_ancestral_sword_phoenix
+		name = ofushikai_ancestral_sword_phoenix_name
 		description = ofushikai_ancestral_sword_phoenix_description
 		template = ofushikai_template
 		type = japanese_sword
@@ -418,7 +418,7 @@ create_artifact_mezameru_ancestral_armor_phoenix_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = mezameru_ancestral_armor_phoenix
+		name = mezameru_ancestral_armor_phoenix_name
 		description = mezameru_ancestral_armor_phoenix_description
 		template = ancestral_armor_template
 		type = japanese_armor
@@ -474,7 +474,7 @@ create_artifact_itsuwari_ancestral_sword_scorpion_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = itsuwari_ancestral_sword_scorpion
+		name = itsuwari_ancestral_sword_scorpion_name
 		description = itsuwari_ancestral_sword_scorpion_description
 		template = itsuwari_template
 		type = japanese_sword
@@ -531,7 +531,7 @@ create_artifact_hayai_ancestral_sword_unicorn_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = hayai_ancestral_sword_unicorn
+		name = hayai_ancestral_sword_unicorn_name
 		description = hayai_ancestral_sword_unicorn_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -578,7 +578,7 @@ create_artifact_yuki_ancestral_armor_unicorn_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = yuki_ancestral_armor_unicorn
+		name = yuki_ancestral_armor_unicorn_name
 		description = yuki_ancestral_armor_unicorn_description
 		template = ancestral_armor_template
 		type = japanese_armor
@@ -629,7 +629,7 @@ create_artifact_kunshi_ancestral_sword_imperial_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = kunshi_ancestral_sword_imperial
+		name = kunshi_ancestral_sword_imperial_name
 		description = kunshi_ancestral_sword_imperial_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -678,7 +678,7 @@ create_artifact_ancestral_sword_sparrow_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = ancestral_sword_sparrow
+		name = ancestral_sword_sparrow_name
 		description = ancestral_sword_sparrow_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -725,7 +725,7 @@ create_artifact_ancestral_sword_centipede_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = ancestral_sword_centipede
+		name = ancestral_sword_centipede_name
 		description = ancestral_sword_centipede_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -772,7 +772,7 @@ create_artifact_shoubai_and_sakusen_ancestral_sword_mantis_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = shoubai_and_sakusen_ancestral_sword_mantis
+		name = shoubai_and_sakusen_ancestral_sword_mantis_name
 		description = shoubai_and_sakusen_ancestral_sword_mantis_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -819,7 +819,7 @@ create_artifact_kaminari_ancestral_armor_mantis_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = kaminari_ancestral_armor_mantis
+		name = kaminari_ancestral_armor_mantis_name
 		description = kaminari_ancestral_armor_mantis_description
 		template = ancestral_armor_template
 		type = japanese_armor
@@ -866,7 +866,7 @@ create_artifact_ancestral_sword_dragonfly_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = ancestral_sword_dragonfly
+		name = ancestral_sword_dragonfly_name
 		description = ancestral_sword_dragonfly_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -913,7 +913,7 @@ create_artifact_ukyo_ancestral_sword_fox_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = ukyo_ancestral_sword_fox
+		name = ukyo_ancestral_sword_fox_name
 		description = ukyo_ancestral_sword_fox_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -960,7 +960,7 @@ create_artifact_bouishi_kasuga_ancestral_sword_tortoise_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = bouishi_kasuga_ancestral_sword_tortoise
+		name = bouishi_kasuga_ancestral_sword_tortoise_name
 		description = bouishi_kasuga_ancestral_sword_tortoise_description
 		template = bouishi_kasuga_template
 		type = japanese_sword
@@ -1007,7 +1007,7 @@ create_artifact_jadoku_ancestral_sword_snake_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = jadoku_ancestral_sword_snake
+		name = jadoku_ancestral_sword_snake_name
 		description = jadoku_ancestral_sword_snake_description
 		template = ancestral_blade_template
 		type = japanese_sword
@@ -1054,7 +1054,7 @@ create_artifact_kenno_ancestral_sword_hare_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = kenno_ancestral_sword_hare
+		name = kenno_ancestral_sword_hare_name
 		description = kenno_ancestral_sword_hare_description
 		template = ancestral_blade_template
 		type = japanese_sword
