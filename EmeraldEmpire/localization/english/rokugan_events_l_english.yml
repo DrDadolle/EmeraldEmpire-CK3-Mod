@@ -1,5 +1,44 @@
 ﻿l_english:
  ############################
+ ###### INTRODUCTION 
+ ############################
+ rokugan_introduction.0001.t:0 "Welcome to Rokugan"
+ rokugan_introduction.0001.desc:0 "blabla TODO. What do you want to know about this mod ?"
+ rokugan_introduction.0001.a:0 "This place and about myself"
+ rokugan_introduction.0001.b:0 "Changes compared to vanilla"
+ rokugan_introduction.0001.c:0 "The Empire of Rokugan"
+ rokugan_introduction.0001.d:0 "The Shadowlands"
+ rokugan_introduction.0001.e:0 "Magic System"
+ rokugan_introduction.0001.f:0 "I know everything already"
+ rokugan_introduction.0001.g:0 "Return"
+
+ rokugan_introduction.0002.t:0 "This place and about myself"
+ rokugan_introduction.0002.desc:0 "You are a samurai, a noble member of a prestigious family which swore fealty to a feudal lord. Each samurai is part of a clan, which can be one of the Seven Great Clans, the Imperial Family or one of the numerous Minor Clans.\n
+ In theory, the goal of each samurai is to serve your liege faithfully, but not every samurai is loyal, and not every liege is worth following.\n
+ And don't forget, honor is stronger than steel !\n"
+
+ rokugan_introduction.0003.t:0 "Changes compared to vanilla"
+ rokugan_introduction.0003.desc:0 "The following changes were made as the map is smaller and all samurai shares the same language\n
+- Cultural Acceptance is lower(-15 -> -20 & -30 -> -40 for same realm)\n
+- Maximum 1 held duchy (if you are king or higher) before opinion loss\n
+- Stewardship grants less bonus domains (from /6 to /7)\n\n
+Furthermore Wars requires more prestige within the Emerald Empire if\n
+- You are a Major Clan & target is a Minor Clan OR target primary title has a lower title (Minor Clan Protection by Imperial Edict)\n
+- You are a Major Clan & the target is a Major Clan (No Major Clan Warfare by Imperial Edict)\n
+- You want to declare war against an Imperial Family (Imperial Edict)\n"
+
+ rokugan_introduction.0004.t:0 "The Empire of Rokugan"
+ rokugan_introduction.0004.desc:0 "Rokugan is the setting of the Legend of the Five Rings franchise. It is based on feudal Japan with influences from other East Asian cultures, where samurai, shugenja, and trained courtiers vie for control of the noble courts. \n
+Rokugani society is based on a clan structure, with seven so-called 'Great Clans', as well as several minor clans. Each clan has areas of land bequeathed to them by the Emperor, which they were tasked with maintaining. The Emperor retained ownership of all lands, however, and the clans essentially rented the lands they used by paying taxes annually.\n
+The Great Clans were each formed by one of the Kami after their fall from Tengoku, and their histories dated back to the very beginning of the Empire. The Great Clans were made up of several family lines, and each Family had their own general purpose within the Clan. Each Clan also had a specific purpose within Rokugan -- some area of expertise or mandate that the specific Clan could fulfill better than any others."
+
+ rokugan_introduction.0005.t:0 "The Shadowlands"
+ rokugan_introduction.0005.desc:0 "As the Kami created the Empire of Rokugan, the fallen Kami Fu Leng created the Shadowlands. The Shadowlands is the wasteland that laid to the southwest of Rokugan, a twisted, nightmarish place corrupted by the power of Jigoku, the Realm of Evil. It is home to oni, ogres, trolls, goblins, the Lost and countless other vile creatures.\n\n
+Currently, the Shadowlands are not mapped nor implemented. Their implementation will take a lot of time and require to create several 3D asset for all the oni, goblins and the like.\n Hopefully I'll be able to implement it later."
+
+ rokugan_introduction.0006.t:0 "Magic System"
+ rokugan_introduction.0006.desc:0 "Currently, there is no magic system implemented. The Shindoshi trait that some character have only gives passive bonus.\n In a later update, Shindoshi characters (as well as Mahotsukai ones) will be able to perform feats of magic using prayers to sacred spirits."
+ ############################
  ###### MAJOR DECISION
  ############################
  rokugan_minor_clan_restoration_decision.0001.t:0 "The Snake Clan is restaured."

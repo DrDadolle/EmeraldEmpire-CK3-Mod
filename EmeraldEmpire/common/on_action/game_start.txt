@@ -32,8 +32,6 @@ on_game_start = {
 				}
 			}
 		}
-
-		#fire_intro_events = yes #TODO
 				
 		### GRANDEUR ###
 		#Royal Court: Set starting Grandeur to be the same as Expected
@@ -86,10 +84,10 @@ on_game_start = {
 		}
 		# Sort custom regencies.
 		## Fatimid Caliphate - basically stuck in the back-end of an entrenched regencies from game start.
-		if = {
-			limit = { exists = character:3096 }
-			character:3096 = { trigger_event = diarchy.0012 }
-		}
+		#if = {
+		#	limit = { exists = character:3096 }
+		#	character:3096 = { trigger_event = diarchy.0012 }
+		#}
 
 	}
 }
@@ -214,13 +212,13 @@ on_game_start_after_lobby = {
 		}
 
 		### ACHIEVEMENT (FP2): Holidaying in Iberia
-		every_player = {
-			limit = { fp2_character_involved_in_struggle_trigger = no }
-			add_achievement_global_variable_effect = {
-				VARIABLE = fp2_holiday_in_iberia_achievement_unlocked
-				VALUE = no # Boolean in actual usage
-			}
-		}
+		#every_player = {
+		#	limit = { fp2_character_involved_in_struggle_trigger = no }
+		#	add_achievement_global_variable_effect = {
+		#		VARIABLE = fp2_holiday_in_iberia_achievement_unlocked
+		#		VALUE = no # Boolean in actual usage
+		#	}
+		#}
 
 	
 		### HOLD COURT STARTING GRACE
@@ -246,6 +244,12 @@ on_game_start_after_lobby = {
 			}
 			add_legitimacy = base_legitimacy_value
 		}
+	}
+
+
+	# Rokugan :  Intro event explaining the world of Rokugan for all players
+	every_player = {
+		trigger_event = rokugan_introduction.0001
 	}
 
 	events = {
