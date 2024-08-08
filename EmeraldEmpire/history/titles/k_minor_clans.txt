@@ -330,7 +330,7 @@ c_chuda_province = {
 		liege = "d_isawa" #Held by Isawa family after the 5 Nights of Shame
 	}
 	1123.1.1 = {
-		holder = 3000211 # Shiba Akiko #TODO place Holder name
+		holder = isawa_chuda_line_01 # Isawa Akiko #TODO place Holder name
 		change_development_level = 0
 	}
 }

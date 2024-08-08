@@ -289,6 +289,26 @@ temple_lost_moto = {
 
 
 
+#################
+# Shadowlands placeholder faith
+#################
+
+snake_castle = {
+
+	county = c_chuda_province
+	barony = b_shiro_chuda_ruins
+
+	character_modifier = {
+		name = snake_castle_effect_name
+		learning = 1
+		monthly_piety_gain_mult = 0.1
+	}
+
+}
+
+
+
+
 
 
 

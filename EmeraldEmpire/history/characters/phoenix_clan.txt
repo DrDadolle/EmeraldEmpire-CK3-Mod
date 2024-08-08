@@ -342,6 +342,24 @@
 	}
 	
 }
+##### Isawa custom characters
+isawa_chuda_line_01 = {
+	name = name_aki 	#  Isawa Aki  #TODO replace name
+	dynasty = 2100010 	# Isawa 
+	religion = "seven_fortunes"
+	culture = "isawa"
+
+	1100.1.1 = {
+		birth = yes
+		effect = {
+            make_character_crypto_religionist_effect = {
+				CRYPTO_RELIGION = faith:faith_bloodspeaker
+			}
+        }
+	}
+
+}
+
 
 ##### Random county holder for the Isawa
 3000230 = {

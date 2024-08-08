@@ -67,6 +67,7 @@ is_shadowlands_faith = {
 			hostility_override_tenet_shadowlands_veneration = 1 # Syncretism goes to FAITH_HOSTILITY_ASTRAY
 			# For loc:
 			is_shadowlands_faith_righteous_desc = 1
+			is_shadowlands_faith_astray_desc = 1
 			is_shadowlands_faith_hostile_desc = 1
 			is_shadowlands_faith_evil_desc = 1
 		}

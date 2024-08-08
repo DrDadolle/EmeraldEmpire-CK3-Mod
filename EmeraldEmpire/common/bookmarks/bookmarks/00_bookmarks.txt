@@ -1,35 +1,9 @@
-﻿## TO DELETE ASAP
-#bm_1066_canarias = {
-#	start_date = 1066.10.1
-#	is_playable = yes
-#	group = bm_group_1066
-#
-#	weight = { value = 100 }
-#
-#	# Guanarigato
-#	character = {
-#		name = "bookmark_canarias_guanarigato"
-#		dynasty = 100848
-#		dynasty_splendor_level = 1
-#		type = male
-#		birth = 1039.1.1
-#		title = c_canarias
-#		government = tribal_government
-#		culture = baranis
-#		religion = "west_african_pagan"
-#		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-#		history_id = 20842
-#		position = { 250 750 }
-#
-#		animation = happiness
-#	}
-#}
-
+﻿
 ###############################
 ## Clan War 1123 Bookmark
 ###############################
-bm_clanwar1123 = {
-	start_date = 1123.5.1
+bm_clanwar_1123 = {
+	start_date = 1123.4.1
 	is_playable = yes
 	group = bm_group_1123
 
@@ -39,7 +13,7 @@ bm_clanwar1123 = {
 	character = {
 		name = "bookmark_doji_hotaru"
 		dynasty = 2100001
-		dynasty_splendor_level = 2
+		dynasty_splendor_level = 5
 		type = female
 		birth = 1100.1.1
 		title = c_oyomesan_province
@@ -48,6 +22,36 @@ bm_clanwar1123 = {
 		religion = "seven_fortunes"
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = 3000001
+		position = { 250 750 }
+
+		animation = happiness
+	}
+}
+
+
+###############################
+## Phoenix Clan 1123 Bookmark
+###############################
+bm_phoenix_1123 = {
+	start_date = 1123.4.1
+	is_playable = yes
+	group = bm_group_1123
+
+	weight = { value = 0 }
+
+	# Doji Hotaru
+	character = {
+		name = "bookmark_chuda_isawa_01"
+		dynasty = 2100010 #Isawa
+		dynasty_splendor_level = 5
+		type = male
+		birth = 1100.1.1
+		title = c_chuda_province
+		government = feudal_government
+		culture = isawa
+		religion = "seven_fortunes"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = isawa_chuda_line_01
 		position = { 250 750 }
 
 		animation = happiness

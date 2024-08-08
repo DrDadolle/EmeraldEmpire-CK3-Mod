@@ -262,7 +262,8 @@ on_game_start_after_lobby = {
 		historical_artifacts.0023			# Historical Artifacts Generator
 	}
 
-	on_actions = {
-		on_opening_events
-	}
+	## TODO : remove it after dev
+	# on_actions = {
+	# 	on_opening_events
+	# }
 }
