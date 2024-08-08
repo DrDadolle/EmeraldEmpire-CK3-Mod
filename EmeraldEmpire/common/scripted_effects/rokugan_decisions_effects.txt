@@ -39,22 +39,22 @@ create_custom_minor_clan_effect = {
 		
 		resolve_title_and_vassal_change = scope:change
 
-		#Check if all territory is from a single Empire, and if so, make Kingdom de jure of that Empire
+		#TODO do the same for Kingdom !
+		#Check if all territory is from a single Empire, and if so, make Duchy de jure of that Empire
 		# Rokugan Note : Should be ALWAYS be the case, as the decision needs to be vassal from the Emperor
-		##TODO special events to set the color/name of stuff/CoA/Dynasty
 		every_sub_realm_county = {
 			if = {
 				limit = {
-					exists = empire
+					exists = kingdom
 				}
-				empire = {
+				kingdom = {
 					if = {
 						limit = {
 							NOT = {
-								is_in_list = potential_empires
+								is_in_list = potential_kingdoms
 							}
 						}
-						add_to_list = potential_empires
+						add_to_list = potential_kingdoms
 					}
 				}
 			}
@@ -62,12 +62,12 @@ create_custom_minor_clan_effect = {
 		if = {
 			limit = {
 				any_in_list = {
-					list = potential_empires
+					list = potential_kingdoms
 					count > 0
 				}
 			}
 			ordered_in_list = {
-				list = potential_empires
+				list = potential_kingdoms
 				order_by = {
 					every_in_de_jure_hierarchy = {
 						continue = {
@@ -81,17 +81,25 @@ create_custom_minor_clan_effect = {
 					}
 				}
 				position = 0
-				save_scope_as = old_empire
+				save_scope_as = old_kingdom
 			}
 		}
+
 		if = {
 			limit = {
-				exists = scope:old_empire
+				exists = scope:old_kingdom
 			}
 			scope:new_title = {
-				set_de_jure_liege_title = scope:old_empire
+				set_de_jure_liege_title = scope:old_kingdom
+			}
+			scope:old_kingdom = {
+				set_de_jure_liege_title = title:e_rokugan
 			}
 		}
+
+		#TODO Set the new kingdom created as de jure of Emerald Empire
+		# What if doesn't work ?
+
 		
 		every_held_title = {
 			limit = {
@@ -143,7 +151,9 @@ create_custom_minor_clan_effect = {
 			}
 			set_de_jure_liege_title = scope:new_title
 		}
-		
+
+		##TODO special events to set the color/name of stuff/CoA/Dynasty
+
 		scope:new_title = {
 			set_coa = scope:old_title
 			set_color_from_title = scope:old_title

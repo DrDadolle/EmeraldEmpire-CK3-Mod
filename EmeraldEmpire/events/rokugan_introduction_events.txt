@@ -7,14 +7,15 @@ rokugan_introduction.0001 = {
 	type = character_event
     title = rokugan_introduction.0001.t
 	desc = rokugan_introduction.0001.desc
-    #theme = realm
-	override_background = {
-		reference = throne_room
+    theme = realm
+
+	trigger = {
+		is_ai = no
 	}
 
-    right_portrait = {
+    left_portrait = {
 		character = root
-		animation = thinking
+		animation = personality_rational
 	}
 
     # This place and about myself
@@ -66,15 +67,17 @@ rokugan_introduction.0002 = {
 	type = character_event
     title = rokugan_introduction.0002.t
 	desc = rokugan_introduction.0002.desc
-    #theme = realm
-	override_background = {
-		reference = throne_room
+    theme = realm
+
+	trigger = {
+		is_ai = no
 	}
 
-    right_portrait = {
+    left_portrait = {
 		character = root
-		animation = thinking
+		animation = personality_rational
 	}
+
 
 
     # Return to main event menu
@@ -98,15 +101,17 @@ rokugan_introduction.0003 = {
 	type = character_event
     title = rokugan_introduction.0003.t
 	desc = rokugan_introduction.0003.desc
-    #theme = realm
-	override_background = {
-		reference = throne_room
+    theme = realm
+
+	trigger = {
+		is_ai = no
 	}
 
-    right_portrait = {
+    left_portrait = {
 		character = root
-		animation = thinking
+		animation = personality_rational
 	}
+
 
 
     # Return to main event menu
@@ -130,15 +135,17 @@ rokugan_introduction.0004 = {
 	type = character_event
     title = rokugan_introduction.0004.t
 	desc = rokugan_introduction.0004.desc
-    #theme = realm
-	override_background = {
-		reference = throne_room
+    theme = realm
+
+	trigger = {
+		is_ai = no
 	}
 
-    right_portrait = {
+    left_portrait = {
 		character = root
-		animation = thinking
+		animation = personality_rational
 	}
+
 
 
     # Return to main event menu
@@ -162,15 +169,17 @@ rokugan_introduction.0005 = {
 	type = character_event
     title = rokugan_introduction.0005.t
 	desc = rokugan_introduction.0005.desc
-    #theme = realm
-	override_background = {
-		reference = throne_room
+    theme = realm
+
+	trigger = {
+		is_ai = no
 	}
 
-    right_portrait = {
+    left_portrait = {
 		character = root
-		animation = thinking
+		animation = personality_rational
 	}
+
 
 
     # Return to main event menu
@@ -194,14 +203,15 @@ rokugan_introduction.0006 = {
 	type = character_event
     title = rokugan_introduction.0006.t
 	desc = rokugan_introduction.0006.desc
-    #theme = realm
-	override_background = {
-		reference = throne_room
+    theme = realm
+
+	trigger = {
+		is_ai = no
 	}
 
-    right_portrait = {
+    left_portrait = {
 		character = root
-		animation = thinking
+		animation = personality_rational
 	}
 
 

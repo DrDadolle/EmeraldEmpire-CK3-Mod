@@ -1,4 +1,15 @@
 ﻿# Empty scope
+on_opening_events = {
+    effect = {
+		every_player = {
+			trigger_event = {
+				# Rokugan :  Intro event explaining the world of Rokugan for all players
+				id = rokugan_introduction.0001
+			}
+		}
+	}
+}
+
 on_game_start = {
 	events = {
 		fp1_scandinavian_adventurers.0004	# FP1 - Organise Norse adventurers.
@@ -246,14 +257,12 @@ on_game_start_after_lobby = {
 		}
 	}
 
-
-	# Rokugan :  Intro event explaining the world of Rokugan for all players
-	every_player = {
-		trigger_event = rokugan_introduction.0001
-	}
-
 	events = {
 		game_rule.1000	#Autopopulate families.
 		historical_artifacts.0023			# Historical Artifacts Generator
+	}
+
+	on_actions = {
+		on_opening_events
 	}
 }

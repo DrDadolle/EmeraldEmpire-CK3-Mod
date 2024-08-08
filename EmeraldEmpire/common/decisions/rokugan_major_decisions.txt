@@ -18,12 +18,11 @@ found_minor_clan_decision = {
 
 	is_valid = {
 		prestige_level >= 3
-		#is_independent_ruler = yes
 		# need top liege opinion high 
 		# if 
 		liege = {
 			opinion = { 
-				value >= 70
+				value >= 0 #TODO change it
 				target = root
 			}
 		}

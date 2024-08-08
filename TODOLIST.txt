@@ -26,10 +26,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## short term goals 
-- Check History of artifacts
 - Check & Test Create Minor Clan decision
-	Add (later) special choices of Dynasty/Name/CoA animal based with an event
-- Force monks & theocratic count of Shinseism to have monk clothes
+	- Add special description
+	- Add (later) special choices of Dynasty/Name/CoA animal based with an event
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
 - add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)???? 
 - Add river map (more ?)
@@ -47,6 +46,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- "Lowborn" being used as a family name lol
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
+- Holding ruins GFX
+- b_usagi_mori is ruins ? Why ?
 
 
 ## Workaround to be careful with & unsure behaviours
@@ -74,6 +75,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Traitor's Trove
 	- Tsuma Topaz building
 	- Kaiu Wall (done) : add models from AEP
+-Change Mod Thumbnail image
 - characters secret religion
 	- 	effect = {make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zun_pagan }} 
 - Create MaA for each great clan, maybe each minor one
