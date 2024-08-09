@@ -21,7 +21,13 @@
  doctrine_parameter_is_rokugani_faith_hostile_desc:0 ""
  doctrine_parameter_is_rokugani_faith_evil_desc:0 ""
 
-
+ special_doctrine_is_shadowlands_faith_name:0 "Veneration of Jigoku"
+ special_doctrine_is_shadowlands_faith_desc:0 "Although all creatures in the Shadowlands reveres the power of Jigoku, they have their own way to do so. Internal strife is common among them. However, they all agree that the Rokugani faiths are meant to be destroyed, by all means necessary"
+ doctrine_parameter_hostility_override_tenet_shadowlands_veneration:0 "Gaijin [faiths|E] with the $tenet_shadowlands_veneration$ tenet are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
+ doctrine_parameter_is_shadowlands_faith_righteous_desc:0 ""
+ doctrine_parameter_is_shadowlands_faith_astray_desc:0 ""
+ doctrine_parameter_is_shadowlands_faith_hostile_desc:0 ""
+ doctrine_parameter_is_shadowlands_faith_evil_desc:0 ""
 
  ############################
  # Tenets
@@ -33,3 +39,7 @@
  tenet_rejection_of_the_kami_name:0 "Rejection of the Kami"
  tenet_rejection_of_the_kami_desc:0 "Workshiping the Fortunes or the Ancestors are not the way to salvation. Only workshiping the teachings of the Little Teacher are."
  doctrine_parameter_doctrine_rejection_of_the_kami_desc:0 ""
+
+ tenet_shadowlands_veneration_name:0 "Veneration of Jigoku"
+ tenet_shadowlands_veneration_desc:0 "There is a lot of way to venerate the evil power of Jigoku. Even faiths outside of Rokugan could venerate the twisted spirits of Jigoku."
+ doctrine_parameter_doctrine_shadowlands_veneration_desc:0 ""

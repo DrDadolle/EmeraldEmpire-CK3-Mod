@@ -181,6 +181,7 @@ decision_restore_snake_clan = {
 		OR = {
 			has_trait = possessed_genetic 
 			has_trait = witch
+			has_trait = shindoshi
 			#any_secret = { secret_type = secret_witch } #TODO keep it ?
 		}
 		# Castle of Shiro Chuda rebuilt

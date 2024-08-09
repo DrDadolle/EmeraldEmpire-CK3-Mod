@@ -3209,7 +3209,9 @@
 		}
 
 		is_shown = {
-			NOT = { religion = { is_in_family = rf_rokugan } }
+			NOR = { religion = { is_in_family = rf_rokugan } 
+					religion = { is_in_family = rf_shadowlands } 
+			}
 		}
 
 		can_pick = {

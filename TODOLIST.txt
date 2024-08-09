@@ -26,6 +26,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## short term goals 
+- Check Usagi mori
 - Check & Test Create Minor Clan decision
 	- Add special description
 	- Add (later) special choices of Dynasty/Name/CoA animal based with an event
@@ -60,19 +61,17 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## Futures Features & Nice to have
 - Becoming Minor or Major Clan IS a special decision which requires the Emperor acknowledgement.
-	- Adaptation of the decision "create custom kingdom" but for duchy ?
 	- Adaptation of the decision "create custom kingdom" (found_kingdom_decision & found_empire_decision from 80_major_decisions.txt)
 	- diseable the "create de_jure kingdom" option ?????
 	- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance. Are they all landless à la Hiruma ?
 - Special decisions
 	-Become Great Clan (create custom kingdom alternative name) : Requires X Duchy or Y counties. Emperor positive relation. Emperor MUST be direct liege. Name of Duchy Title => Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
 		- No other ways to create a kingdom title. Basically rework existing mechanics
- 	- Become Great Clan (Kingdom) as (Mantis ?) Minor Clan 
 	- if emperor : get a doji bride
 	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
--Change Mod Thumbnail image
-- characters secret religion
-	- 	effect = {make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zun_pagan }} 
+-Change Mod Thumbnail image (test ?)
+- Add starting dynasty splendor (check Karling)
+- Add DNA for Chuda boi on bookmark
 - Create MaA for each great clan, maybe each minor one
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
