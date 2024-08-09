@@ -275,110 +275,6 @@ convert_to_tribalism_decision = {
 }
 
 ##################################################
-# Convert Realm to Feudalism (West African Pagan)
-# by Ewan Cowhig Croft
-##################################################
-
-# A decision for West African pagans to feudalise without reforming.
-#convert_whole_realm_to_feudalism_west_african_pagan_decision = {
-#	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
-#	major = yes
-#	desc = convert_whole_realm_to_feudalism_west_african_pagan_decision_desc
-#
-#	ai_check_interval = 36
-#
-#	is_shown = {
-#		# Only tribals need formalise.
-#		government_has_flag = government_is_tribal
-#		# Unreformed West African Pagans are our targets.
-#		faith_qualifies_for_west_african_pagan_feudalisation_trigger = yes
-#	}
-#
-#	is_valid = {
-#		# Repeat the faith requirements, so that the player knows what's up.
-#		faith_qualifies_for_west_african_pagan_feudalisation_trigger = yes
-#		# Must have suitable authority.
-#		has_realm_law = tribal_authority_3
-#		# Independents only.
-#		is_independent_ruler = yes
-#		# West Africans feudalise from large empires.
-#		calc_true_if = {
-#			amount >= 4
-#			realm_size >= minor_realm_size
-#			highest_held_title_tier >= tier_kingdom
-#			custom_tooltip = {
-#				text = convert_whole_realm_to_feudalism_west_african_pagan_decision.tt.vassal_count
-#				any_vassal = { count >= convert_whole_realm_to_feudalism_west_african_pagan_decision_vassal_count_value }
-#			}
-#			prestige_level >= high_prestige_level
-#			piety_level >= high_piety_level
-#			custom_tooltip = {
-#				text = convert_whole_realm_to_feudalism_west_african_pagan_decision.tt.wa_capital_development
-#				capital_county = {
-#					development_level >= convert_whole_realm_to_feudalism_west_african_pagan_decision_wa_capital_development_value
-#					title_province = { geographical_region = world_africa_west }
-#				}
-#			}
-#		}
-#		# You need to have 70% of all (non-regional/unique) tribal innovations!
-#		custom_description = {
-#			text = has_all_tribal_innovations
-#			subject = root.culture
-#			culture = {
-#				calc_true_if = {
-#					amount >= 9
-#					has_innovation = innovation_motte
-#					has_innovation = innovation_catapult
-#					has_innovation = innovation_barracks
-#					has_innovation = innovation_mustering_grounds
-#					has_innovation = innovation_bannus
-#					has_innovation = innovation_quilted_armor
-#					has_innovation = innovation_gavelkind
-#					has_innovation = innovation_crop_rotation
-#					has_innovation = innovation_city_planning
-#					has_innovation = innovation_casus_belli
-#					has_innovation = innovation_plenary_assemblies
-#					has_innovation = innovation_ledger
-#					has_innovation = innovation_development_01
-#					has_innovation = innovation_currency_01
-#				}
-#			}
-#		}
-#	}
-#
-#	cost = { prestige = 500 }
-#
-#	effect = {
-##		trigger_event = major_decisions.0001
-#		save_scope_as = actor
-#		convert_whole_realm_to_feudalism_effect = yes
-#		hidden_effect = {
-#			every_vassal = {
-#				trigger_event = {
-#					id = major_decisions.0002
-#					days = 3
-#				}
-#			}
-#		}
-#	}
-#
-#	ai_potential = {
-#		# Cut down on checks for other tribals.
-#		exists = capital_county.title_province
-#		capital_county.title_province = { geographical_region = world_africa_west }
-#	}
-#
-#	ai_will_do = {
-#		base = 100
-#	}
-#}
-
-
-
-
-
-
-##################################################
 # DYNASTY DECISIONS
 
 ##################################################
@@ -648,16 +544,6 @@ strengthen_bloodline_decision = {
 #}
 
 
-
-
-
-
-
-
-
-
-
-
 ##################################################
 # DE JURE DECISIONS
 
@@ -675,6 +561,7 @@ found_kingdom_decision = {
 	is_shown = {
 		highest_held_title_tier = tier_duchy
 		NOT = { has_game_rule = off_custom_kingdoms }
+		NOT = { is_under_direct_e_rokugan_rule = yes } # Rokugan : prevent Custom kingdoms in Emerald's Empire. Must use "become great clan" decision instead
 	}
 
 	is_valid = {

@@ -30,6 +30,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Check & Test Create Minor Clan decision
 	- Add special description
 	- Add (later) special choices of Dynasty/Name/CoA animal based with an event
+- Check Major Clan decision
+	- check description !
+	- check ally becomes vassal, with correct obligations
+	- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance. Are they all landless à la Hiruma ?
+	- Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
 - add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)???? 
 - Add river map (more ?)
@@ -60,15 +65,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Add CoA placeholder : missing Frog Duchy, Kingdom of Cherry blossom and that's it ?
 
 ## Futures Features & Nice to have
-- Becoming Minor or Major Clan IS a special decision which requires the Emperor acknowledgement.
-	- Adaptation of the decision "create custom kingdom" (found_kingdom_decision & found_empire_decision from 80_major_decisions.txt)
-	- diseable the "create de_jure kingdom" option ?????
-	- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance. Are they all landless à la Hiruma ?
-- Special decisions
-	-Become Great Clan (create custom kingdom alternative name) : Requires X Duchy or Y counties. Emperor positive relation. Emperor MUST be direct liege. Name of Duchy Title => Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
-		- No other ways to create a kingdom title. Basically rework existing mechanics
-	- if emperor : get a doji bride
-	- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
 -Change Mod Thumbnail image (test ?)
 - Add starting dynasty splendor (check Karling)
 - Add DNA for Chuda boi on bookmark
@@ -109,11 +105,14 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Add ancestral clan & family founders
 	- Special naming convention for Kamis (no first name)
 	- Kami traits/kami descendent à la Shayoshant/paragon of vertue
+-Removal wall map object in crab clan
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================
 - special buildings
 	- Kaiu Wall (done) : add models from AEP
+- if emperor : get a doji bride
+- if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
 - Integrate the mod "House tradition" ????
 - Emerald Champion stuff ?
 - economic Opium building for Scorpion heritage ?

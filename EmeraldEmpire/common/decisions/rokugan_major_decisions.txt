@@ -1,6 +1,100 @@
 ##################################################
 # DE JURE DECISIONS
 ##################################################
+# Found New Major Clan
+##################################################
+found_major_clan_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+	major = yes
+	ai_check_interval = 60
+	desc = found_major_clan_decision_desc
+
+	is_shown = {
+		highest_held_title_tier = tier_duchy
+		#NOT = { has_game_rule = off_custom_kingdoms }
+		# Direct vassal of the emperor
+		is_under_direct_e_rokugan_rule = yes
+	}
+
+	is_valid = {
+		prestige_level >= 4
+		# need top liege opinion high 
+		liege = {
+			opinion = { 
+				value >= 50
+				target = root
+			}
+		}
+		#TODO how about alliances with others dukes ? instead of owning tier_duchy ?
+		# any_ally with opinion > 20 and dukes will become your vassal
+		OR = {
+			# custom_description = {
+			# 	text = found_kingdom_decision_three_duchies_held
+			# 	any_held_title = {
+			# 		count > 2
+			# 		tier = tier_duchy
+			# 	}
+			# }
+			custom_description = {
+				text = found_major_clan_decision_three_alliance_dukes
+				any_ally = {
+					count > 2
+					tier = tier_duchy
+					is_under_direct_e_rokugan_rule = yes
+					opinion = { 
+						value >= 25
+						target = root
+					}
+				}
+			}
+			sub_realm_size >= 5
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	cost = {
+		gold = 300
+		prestige = 500
+		piety = 200
+	}
+
+	effect = {
+		# TODO special event to choose the mon/animal of the new clan ?
+		# Create Own Dynasty based on your first name ?
+		# TODO replace with custom_kingdom effect !!
+
+		# TODO : all allies with opinion > 0 will join as vassal in your new kingdom !
+		create_custom_major_clan_effect = yes
+		if = {
+			limit = {
+				is_ai = no
+				NOT = { exists = global_var:found_major_clan_decision  }
+			}
+			set_global_variable = {
+				name = found_major_clan_decision
+				value = root
+			}
+			set_global_variable = {
+				name = found_major_clan_decision_kingdom
+				value = root.primary_title
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+##################################################
 # Found New Minor Clan
 ##################################################
 found_minor_clan_decision = {
@@ -19,10 +113,9 @@ found_minor_clan_decision = {
 	is_valid = {
 		prestige_level >= 3
 		# need top liege opinion high 
-		# if 
 		liege = {
 			opinion = { 
-				value >= 0 #TODO change it
+				value >= 50
 				target = root
 			}
 		}
@@ -157,7 +250,8 @@ decision_restore_snake_clan = {
         is_landed = yes
         culture = { has_cultural_pillar = heritage_phoenix }
 		has_title = title:c_chuda_province
-        #After the end of the Snake Clan
+        religion = religion:jigoku_religion	
+		#After the end of the Snake Clan
 		current_date >= 402.1.1
 		dynasty:2100115 = {
 			NOT = {
@@ -171,9 +265,9 @@ decision_restore_snake_clan = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:restore_snake_clan
-				}
 			}
 		}
+	}
 
 
     is_valid = {
