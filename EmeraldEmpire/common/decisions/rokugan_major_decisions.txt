@@ -35,19 +35,24 @@ found_major_clan_decision = {
 			# 		tier = tier_duchy
 			# 	}
 			# }
-			custom_description = {
-				text = found_major_clan_decision_three_alliance_dukes
-				any_ally = {
-					count > 2
-					tier = tier_duchy
-					is_under_direct_e_rokugan_rule = yes
-					opinion = { 
-						value >= 25
-						target = root
+			AND = {
+				custom_tooltip = {
+					text = found_major_clan_decision_three_alliance_dukes
+					any_ally = {
+						count >= 3
+						highest_held_title_tier = tier_duchy
+						primary_title = { is_mercenary_company = no }
+						primary_title = { is_holy_order = no }
+						is_under_direct_e_rokugan_rule = yes
+						opinion = { 
+							value >= 25
+							target = root
+						}
 					}
 				}
+				sub_realm_size >= 5
 			}
-			sub_realm_size >= 5
+			sub_realm_size >= 30
 		}
 	}
 
@@ -68,7 +73,7 @@ found_major_clan_decision = {
 		# Create Own Dynasty based on your first name ?
 		# TODO replace with custom_kingdom effect !!
 
-		# TODO : all allies with opinion > 0 will join as vassal in your new kingdom !
+		# all allies with opinion > 25 will join as vassal in your new kingdom !
 		create_custom_major_clan_effect = yes
 		if = {
 			limit = {
@@ -84,6 +89,10 @@ found_major_clan_decision = {
 				value = root.primary_title
 			}
 		}
+
+		##TODO : Add Dynasty & legitimacy ?
+		add_legitimacy = major_legitimacy_gain
+		dynasty = { add_dynasty_prestige = 1000 }
 	}
 
 	ai_potential = {
@@ -250,7 +259,6 @@ decision_restore_snake_clan = {
         is_landed = yes
         culture = { has_cultural_pillar = heritage_phoenix }
 		has_title = title:c_chuda_province
-        religion = religion:jigoku_religion	
 		#After the end of the Snake Clan
 		current_date >= 402.1.1
 		dynasty:2100115 = {
@@ -276,6 +284,7 @@ decision_restore_snake_clan = {
 			has_trait = possessed_genetic 
 			has_trait = witch
 			has_trait = shindoshi
+			religion = religion:jigoku_religion	
 			#any_secret = { secret_type = secret_witch } #TODO keep it ?
 		}
 		# Castle of Shiro Chuda rebuilt

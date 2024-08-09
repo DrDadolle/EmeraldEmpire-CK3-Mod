@@ -6,14 +6,28 @@
 # TODO replace with custom_duchy effect !!
 # Based on found_kingdom_decision decision effect
 create_custom_major_clan_effect = {
-	custom_tooltip = create_new_major_clan
+	custom_tooltip = create_new_kingdom
 	show_as_tooltip = {
 		every_held_title = {
 			custom = create_title_every_held_duchy
 			limit = {
 				tier = tier_duchy
 			}
-			custom_tooltip = create_custom_major_clan_de_jure_changes
+			custom_tooltip = create_custom_kingdom_de_jure_changes
+		}
+		every_ally = {
+			custom = create_major_clan_every_ally
+			limit = {
+				highest_held_title_tier = tier_duchy
+				primary_title = { is_mercenary_company = no }
+				primary_title = { is_holy_order = no }
+				is_under_direct_e_rokugan_rule = yes
+				opinion = { 
+					value >= 25
+					target = scope:founder
+				}
+			}
+			custom_tooltip = create_custom_major_clan_de_jure_changes_ally
 		}
 	}
 
@@ -32,7 +46,7 @@ create_custom_major_clan_effect = {
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
-		
+
 		scope:new_title = {
 			change_title_holder = {
 				holder = root
@@ -40,56 +54,55 @@ create_custom_major_clan_effect = {
 			}
 		}
 
+		resolve_title_and_vassal_change = scope:change
 		
-		##TODO : all allies with opinion > 25 will become your vassal
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change_ally
+		}
+		
+		##all allies with opinion > 25 will become your vassal
 		every_ally = {
 			limit = {
-				tier = tier_duchy
+				highest_held_title_tier = tier_duchy
+				primary_title = { is_mercenary_company = no }
+				primary_title = { is_holy_order = no }
 				is_under_direct_e_rokugan_rule = yes
 				opinion = { 
 					value >= 25
-					target = root
+					target = scope:founder
 				}
 			}
 
-			create_title_and_vassal_change = {
-				type = swear_fealty
-				save_scope_as = change_2
+			change_liege = {
+				liege = scope:founder
+				change = scope:change_ally
 			}
-			scope:this = {
-				change_liege = {
-					liege = scope:root
-					change = scope:change_2
-				}
-				add_opinion = {
-					modifier = became_vassal
-					target = scope:root
-					opinion = 10
-				}
+			add_opinion = {
+				modifier = became_vassal
+				target = scope:founder
+				opinion = 10 # A lot as the hit of opinion is great
 			}
 
-			resolve_title_and_vassal_change = scope:change_2
-		
 			# Special terms for feudal contracts
-			scope:this = {
-				if = {
-					limit = {
-							government_has_flag = government_is_feudal
-					}
-					hidden_effect = {
-						if = {
-							limit = { is_independent_ruler = no } # To avoid errors during tooltip generation (prior to the contract being generated)
-							vassal_contract_set_obligation_level = { type = feudal_government_taxes level = 1 }
-							vassal_contract_set_obligation_level = { type = feudal_government_levies level = 1 }
-						}			
-					}
-					custom_tooltip = low_obligations_taxes
-					custom_tooltip = low_obligations_levies
+			if = {
+				limit = {
+						government_has_flag = government_is_feudal
 				}
+				hidden_effect = {
+					if = {
+						limit = { is_independent_ruler = no } # To avoid errors during tooltip generation (prior to the contract being generated)
+						vassal_contract_set_obligation_level = { type = feudal_government_taxes level = 1 }
+						vassal_contract_set_obligation_level = { type = feudal_government_levies level = 1 }
+					}			
+				}
+				custom_tooltip = low_obligations_taxes
+				custom_tooltip = low_obligations_levies
 			}
 		}
 
-		resolve_title_and_vassal_change = scope:change
+		resolve_title_and_vassal_change = scope:change_ally
+	
 
 		#Check if all territory is from a single Empire, and if so, make Kingdom de jure of that Empire
 		every_sub_realm_county = {
@@ -187,8 +200,8 @@ create_custom_major_clan_effect = {
 		every_sub_realm_county = {
 			limit = {
 				exists = duchy
-				NOT = { exists = duchy.holder }
-				holder.top_liege = root
+				#NOT = { exists = duchy.holder }
+				#holder.top_liege = root
 				duchy = {
 					save_temporary_scope_as = test_duchy
 				}

@@ -26,13 +26,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## short term goals 
-- Check Usagi mori
 - Check & Test Create Minor Clan decision
 	- Add special description
 	- Add (later) special choices of Dynasty/Name/CoA animal based with an event
 - Check Major Clan decision
-	- check description !
-	- check ally becomes vassal, with correct obligations
 	- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance. Are they all landless à la Hiruma ?
 	- Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
@@ -53,7 +50,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - Child can be born with white hair but without the Crane trait !
 - Holding ruins GFX
-- b_usagi_mori is ruins ? Why ?
+- Doctor have no clothes !
 
 
 ## Workaround to be careful with & unsure behaviours
