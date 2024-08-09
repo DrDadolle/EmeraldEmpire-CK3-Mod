@@ -30,6 +30,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Add special description
 	- Add (later) special choices of Dynasty/Name/CoA animal based with an event
 - Check Major Clan decision
+	- effect => vassalize allyes to be added in effects !
 	- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance. Are they all landless à la Hiruma ?
 	- Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
@@ -48,7 +49,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 	- "Lowborn" being used as a family name lol
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
-- Child can be born with white hair but without the Crane trait !
+- Child can be born with white hair but without the Crane trait => Bug with doji Hotaru cause she has white hair in rule designer ??
 - Holding ruins GFX
 - Doctor have no clothes !
 
@@ -56,6 +57,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ## Workaround to be careful with & unsure behaviours
 - headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
 - Remove AI Cadet branches => Working ?
+- Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
 
 ##  Waiting & placeholders
 - Cat mon : @Bamba 
