@@ -561,7 +561,7 @@ found_kingdom_decision = {
 	is_shown = {
 		highest_held_title_tier = tier_duchy
 		NOT = { has_game_rule = off_custom_kingdoms }
-		NOT = { is_under_direct_e_rokugan_rule = yes } # Rokugan : prevent Custom kingdoms in Emerald's Empire. Must use "become great clan" decision instead
+		NOT = { is_under_e_rokugan_rule = yes } # Rokugan : prevent Custom kingdoms in Emerald's Empire. Must use "become great clan" decision instead
 	}
 
 	is_valid = {

@@ -15,10 +15,11 @@
  decision_restore_snake_clan_confirm:0 "Restore the Snake Clan"
  # found_major_clan_decision
  found_major_clan_decision:0 "Found a Great Clan"
- found_major_clan_decision_desc:0 "We can become a Great Clan, thus getting reconnaissance by all in Rokugan.."
+ found_major_clan_decision_desc:0 "We can become a Great Clan, thus getting reconnaissance by all in Rokugan."
  found_major_clan_decision_tooltip:0 "We can become a Great Clan."
  found_major_clan_decision_confirm:0 "Our status got elevated by the Emperor !"
  found_major_clan_decision_three_alliance_dukes:0 "Has at least 3 alliances with Duke-level characters and they have at least 25 [opinion|E] of you"
+ create_custom_major_clan_de_jure_changes_ally:0 "Every [duke|E] level ally with at least #P 25#! [opinion|E] with you become your [vassal|E] and their lands become [de_jure|E] [duchies|E] of your new [kingdom|E]"
  # found_minor_clan_decision
  found_minor_clan_decision:0 "Found a Minor Clan"
  found_minor_clan_decision_desc:0 "We can become a Minor Clan, thus getting reconnaissance by all of Rokugan, and gain a family name."

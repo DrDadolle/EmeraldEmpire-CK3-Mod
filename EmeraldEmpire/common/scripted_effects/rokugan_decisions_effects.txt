@@ -15,20 +15,6 @@ create_custom_major_clan_effect = {
 			}
 			custom_tooltip = create_custom_kingdom_de_jure_changes
 		}
-		every_ally = {
-			custom = create_major_clan_every_ally
-			limit = {
-				highest_held_title_tier = tier_duchy
-				primary_title = { is_mercenary_company = no }
-				primary_title = { is_holy_order = no }
-				is_under_direct_e_rokugan_rule = yes
-				opinion = { 
-					value >= 25
-					target = scope:founder
-				}
-			}
-			custom_tooltip = create_custom_major_clan_de_jure_changes_ally
-		}
 	}
 
 	hidden_effect = {
@@ -499,22 +485,29 @@ reborn_snake_clan_scripted_effect = {
 
 	# Recreate de-jure lands
 	title:c_chuda_province = {
+		# Save in scope the previous de jure kingdom
+		de_jure_liege.de_jure_liege = {
+				save_scope_as = old_kingdom_liege
+		}
+		# Become de jure of snake clan
 		set_de_jure_liege_title = title:d_chuda
-	}
-	every_held_title = {
-		set_coa = dynasty:2100115
-	}
-	create_title_and_vassal_change = {
-		type = created
-		save_scope_as = change
-		add_claim_on_loss = no
+		set_coa = dynasty:2100115 #Chuda
 	}
 	title:d_chuda = {
 		change_title_holder = {
 			holder = root
 			change = scope:change
 		}
+		set_de_jure_liege_title = scope:old_kingdom_liege
+		set_coa = dynasty:2100115 #Chuda
 	}
+
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+
 	resolve_title_and_vassal_change = scope:change
 
 	# hidden_effect = { set_primary_title_to = title:d_chuda }

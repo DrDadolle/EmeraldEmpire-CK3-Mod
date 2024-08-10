@@ -90,6 +90,10 @@ found_major_clan_decision = {
 			}
 		}
 
+		custom_description = {
+			text = create_custom_major_clan_de_jure_changes_ally
+		}
+
 		##TODO : Add Dynasty & legitimacy ?
 		add_legitimacy = major_legitimacy_gain
 		dynasty = { add_dynasty_prestige = 1000 }

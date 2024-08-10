@@ -27,10 +27,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## short term goals 
 - Check & Test Create Minor Clan decision
-	- Add special description
 	- Add (later) special choices of Dynasty/Name/CoA animal based with an event
 - Check Major Clan decision
-	- effect => vassalize allyes to be added in effects !
 	- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance. Are they all landless à la Hiruma ?
 	- Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
 - edit the dlc_button in gui/frontend_bookmarks.gui (cf "How to add a content source to your events" discord)
@@ -48,16 +46,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Check the "Family name before surname" used in "Oriental Empires" mod
 	- check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 	- "Lowborn" being used as a family name lol
-- How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
-- Child can be born with white hair but without the Crane trait => Bug with doji Hotaru cause she has white hair in rule designer ??
-- Holding ruins GFX
 - Doctor have no clothes !
-
 
 ## Workaround to be careful with & unsure behaviours
 - headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
 - Remove AI Cadet branches => Working ?
 - Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
+- How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 
 ##  Waiting & placeholders
 - Cat mon : @Bamba 
@@ -66,7 +61,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ## Futures Features & Nice to have
 -Change Mod Thumbnail image (test ?)
 - Add starting dynasty splendor (check Karling)
-- Add DNA for Chuda boi on bookmark
 - Create MaA for each great clan, maybe each minor one
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
@@ -92,7 +86,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- others
 - add activites map object data on each county ? capital county ?
 - genes & ethnicities
-- Add "minor clothes" probability to Great Clan clothes to have more variety of clothing styles
 - Add modifiers to dynasties to prove their link to great clans ????
 - defines geo regions => For animals/trees/etc...
 - Prevent imperial family from doing wars against other clans...? Only for AI ? or not ?
@@ -106,6 +99,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Kami traits/kami descendent à la Shayoshant/paragon of vertue
 -Removal wall map object in crab clan
 -Better map for bookmark ?
+- Add "minor clothes" probability to Great Clan clothes to have more variety of clothing styles
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================
