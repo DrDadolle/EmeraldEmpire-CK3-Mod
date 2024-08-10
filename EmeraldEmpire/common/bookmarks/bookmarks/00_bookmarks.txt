@@ -2,7 +2,7 @@
 ###############################
 ## Clan War 1123 Bookmark
 ###############################
-bm_clanwar_1123 = {
+bm_1123_clanwar = {
 	start_date = 1123.4.1
 	is_playable = yes
 	group = bm_group_1123
@@ -16,7 +16,7 @@ bm_clanwar_1123 = {
 		dynasty_splendor_level = 5
 		type = female
 		birth = 1100.1.1
-		title = c_oyomesan_province
+		title = k_crane_clan
 		government = feudal_government
 		culture = doji
 		religion = "seven_fortunes"
@@ -32,7 +32,7 @@ bm_clanwar_1123 = {
 ###############################
 ## Phoenix Clan 1123 Bookmark
 ###############################
-bm_phoenix_1123 = {
+bm_1123_phoenix = {
 	start_date = 1123.4.1
 	is_playable = yes
 	group = bm_group_1123
