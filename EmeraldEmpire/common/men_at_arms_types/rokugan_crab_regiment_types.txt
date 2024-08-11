@@ -34,6 +34,6 @@ crab_hida_defender= {
 	
  	stack = 100
  	ai_quality = { value = @[cultural_maa_extra_ai_score +20] }
- 	icon = heavy_infantry #TODO
+ 	icon = hida_defender
 	allowed_in_hired_troops = no
 }

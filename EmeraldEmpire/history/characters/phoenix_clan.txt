@@ -35,7 +35,15 @@
 	1123.1.1 = {
 		effect = {
 			set_relation_friend = { reason = friend_generic_history target = character:3000260 } #friend with  Kaito Kosori since  the Sanpuku Seido incident
+			#Rokugan Workaround to add dynasty splendor to Shiba Dynasty for the bookmark 1123
+			# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+			dynasty = { add_dynasty_prestige_level = 10 }
 		}
+	}
+
+
+	1123.1.1 = {
+		effect = {  }
 	}
 }
 
@@ -206,6 +214,12 @@
 
 	1056.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Isawa Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
 	}
 }
 
@@ -411,6 +425,12 @@ isawa_chuda_line_01 = {
 	1100.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Shingon Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
+	}
 }
 #####################
 #	Asako
@@ -433,6 +453,12 @@ isawa_chuda_line_01 = {
 
 	1098.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Asako Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
 	}
 }
 
@@ -514,6 +540,12 @@ isawa_chuda_line_01 = {
 	1100.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Nani Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
+	}
 }
 3003241 = {
 	name = name_aki 	# Chukan Aki  #TODO replace name
@@ -523,6 +555,12 @@ isawa_chuda_line_01 = {
 
 	1100.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Chukan Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
 	}
 }
 #####################
@@ -556,6 +594,12 @@ isawa_chuda_line_01 = {
 		effect = {
 			set_relation_friend = { reason = friend_generic_history target = character:3000200 } #friend with Shiba Tsukune since  the Sanpuku Seido incident
 		}
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Kitsuki Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 3 } }
 	}
 }
 

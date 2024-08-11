@@ -43,6 +43,12 @@
 			set_relation_lover = { reason = lover_history target = character:3000321 } # In love with Bayushi Kachiko
 		}
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Doji Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
+	}
 	
 
 }
@@ -303,7 +309,6 @@ kami_doji_line_0 = {
 		death={
 			death_reason=death_murder
 		}
-
 	}
 }
 
@@ -328,6 +333,12 @@ kami_doji_line_0 = {
 		birth = yes
 	}
 	
+	#Rokugan Workaround to add dynasty splendor to Tsume Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
+	}
+
 	##TODO maybe rechange dates ??
 	1123.6.1 = {
 		add_spouse=3000202 #Shiba Itsuyo
@@ -336,7 +347,6 @@ kami_doji_line_0 = {
 		death={
 			death_reason=death_seppuku
 		}
-
 	}
 }
 
@@ -370,6 +380,11 @@ kami_doji_line_0 = {
 	}
 	1097.1.1 = {
 		add_spouse=3000023 #Kakita Teinko
+	}
+	#Rokugan Workaround to add dynasty splendor to Kakita Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
 	}
 	
 }
@@ -521,6 +536,11 @@ kami_doji_line_0 = {
 	1082.1.1 = {
 		birth = yes
 	}
+	#Rokugan Workaround to add dynasty splendor to Asahina Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
+	}
 }
 
 3000041 = {
@@ -601,6 +621,11 @@ kami_doji_line_0 = {
 	}
 	1110.1.1 = {
 		give_nickname = nick_iron_crane
+	}
+	#Rokugan Workaround to add dynasty splendor to Asahina Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
 	}
 }
 

@@ -25,6 +25,12 @@
 	1088.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Togashi Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
+	}
 	
 
 }
@@ -78,6 +84,12 @@
 	1084.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Mirumoto Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
+	}
 }
 
 3000621 = {
@@ -122,6 +134,12 @@
 	1100.1.1 = {
 		birth = yes
 	}
+	#Rokugan Workaround to add dynasty splendor to Zurui Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
+	}
+
 }
 3003621 = { 
 	name = name_aki 	# Kouken Aki  #TODO replace name
@@ -131,6 +149,12 @@
 
 	1100.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Kouken Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
 	}
 }
 #####################
@@ -155,6 +179,12 @@
 
 	1084.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Kitsuki Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 7 } }
 	}
 }
 
@@ -229,8 +259,14 @@
 	
 	### Family
 
-	1096.1.1 = {
+	1076.1.1 = {
 		birth = yes
+	}
+	
+	#Rokugan Workaround to add dynasty splendor to Agasha Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
 	}
 }
 
@@ -250,7 +286,7 @@
 	
 	### Family
 
-	1096.1.1 = {
+	1078.1.1 = {
 		birth = yes
 	}
 }

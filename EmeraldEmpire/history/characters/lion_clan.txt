@@ -31,6 +31,13 @@
 	1116.1.1 = {
 		add_spouse = 3000224 # Isawa Kaede
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Akodo Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
+	}
+
 }
 
 3000102 = {
@@ -153,6 +160,12 @@
 	1100.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Shimizu Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
+	}
 }
 
 3003101 = {
@@ -163,6 +176,12 @@
 
 	1100.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Ichime Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
 	}
 }
 
@@ -175,6 +194,12 @@
 	1100.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Itagawa Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
+	}
 }
 3003103 = {
 	name = name_aki 	#  katai Aki  #TODO replace name
@@ -184,6 +209,12 @@
 
 	1100.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Katai Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
 	}
 }
 
@@ -195,6 +226,12 @@
 
 	1100.1.1 = { # This dinasty doesn't exist in 1100, it exists in 1153 but the castle is already on the map... oops
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Seizaku Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 2 } }
 	}
 }
 #####################
@@ -232,6 +269,13 @@
 			set_relation_lover = { reason = lover_history target = character:3000102 } # In love with Akodo Arasou it seems
 		}
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Matsu Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
+	}
+
 }
 3000122 = {
 	name = name_hiroru 	# Matsu Hiroru, brother to Matsu Tsuko
@@ -329,6 +373,12 @@
 	1100.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Koritome Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
+	}
 }
 
 #####################
@@ -350,6 +400,12 @@
 	1106.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Kitsu Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
+	}
 }
 
 ##### Vassal
@@ -361,6 +417,12 @@
 
 	1100.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Ise Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
 	}
 }
 
@@ -407,6 +469,11 @@
 		effect = {
 			set_relation_lover = { reason = lover_history target = character:3000241 } # In love with his wife Asako Akari
 		}
+	}
+	#Rokugan Workaround to add dynasty splendor to Kitsu Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
 	}
 }
 
@@ -465,5 +532,11 @@
 
 	1100.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Hosokawa Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
 	}
 }

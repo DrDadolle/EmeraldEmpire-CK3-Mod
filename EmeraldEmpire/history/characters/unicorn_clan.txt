@@ -20,6 +20,12 @@
 	1078.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Shinjo Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
+	}
 }
 
 3000501 = {
@@ -128,6 +134,12 @@
 	1100.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Marta Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
+	}
 }
 
 #####################
@@ -148,6 +160,12 @@
 
 	1078.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Iuchi Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
 	}
 }
 3000521 = {
@@ -201,6 +219,12 @@
 	1100.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Battue Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
+	}
 }
 
 3003521 = {
@@ -212,6 +236,13 @@
 	
 	1092.1.1 = {
 		birth = yes
+	}
+
+
+	#Rokugan Workaround to add dynasty splendor to Horiuchi Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
 	}
 }
 
@@ -234,6 +265,13 @@
 	1089.1.1 = {
 		birth = yes
 	}
+
+
+	#Rokugan Workaround to add dynasty splendor to Ide Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
+	}
 }
 
 ##### Vassal
@@ -246,6 +284,12 @@
 	1100.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Hateru Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
+	}
 }
 
 3003541 = {
@@ -256,6 +300,13 @@
 
 	1100.1.1 = {
 		birth = yes
+	}
+
+
+	#Rokugan Workaround to add dynasty splendor to Suio Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
 	}
 }
 
@@ -278,6 +329,12 @@
 
 	1095.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Utaku Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
 	}
 }
 
@@ -313,6 +370,12 @@
 	1100.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Naoko Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
+	}
 }
 #####################
 #	Moto
@@ -332,6 +395,12 @@
 
 	1070.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Moto Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 7 } }
 	}
 }
 
@@ -412,5 +481,11 @@
 
 	1100.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Onshigawa Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
 	}
 }

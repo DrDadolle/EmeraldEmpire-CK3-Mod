@@ -25,6 +25,12 @@
 	1099.1.1 = {
 		add_spouse=3001001 #Doji Hochiahime
 	}
+	
+	#Rokugan Workaround to add dynasty splendor to Hantei Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
+	}
 }
 
 3001001 = {
@@ -129,6 +135,12 @@
 	1094.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Seppun Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
+	}
 }
 
 ##### Random county holder for the Seppun
@@ -160,6 +172,12 @@
 	1074.1.1 = {
 		birth = yes
 	}
+
+	#Rokugan Workaround to add dynasty splendor to Otomo Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
+	}
 }
 
 #####################
@@ -181,6 +199,12 @@
 
 	1094.1.1 = {
 		birth = yes
+	}
+
+	#Rokugan Workaround to add dynasty splendor to Miya Dynasty for the bookmark 1123
+	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
+	1123.1.1 = {
+		effect = { dynasty = { add_dynasty_prestige_level = 7 } }
 	}
 }
 
