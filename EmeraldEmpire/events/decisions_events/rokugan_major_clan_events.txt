@@ -39,7 +39,7 @@ rokugan_major_clan_events_decision.0010 = {
 	theme = realm
 	left_portrait = {
 		character = root
-		animation = zealous
+		animation = personality_zealous
 	}
 
 	right_portrait = {
@@ -48,10 +48,10 @@ rokugan_major_clan_events_decision.0010 = {
 	}
 
 	immediate = {
-		play_music_cue = "mx_cue_crusade_starts" #This music ?
+		play_music_cue = "mx_cue_positive_effect" #This music ?
 	}
 	option = {
-		#add_pressed_claim = title:c_toshi_rambo
+		add_pressed_claim = title:c_toshi_rambo
 		name = rokugan_major_clan_events_decision.0010.a
 	}
 }
