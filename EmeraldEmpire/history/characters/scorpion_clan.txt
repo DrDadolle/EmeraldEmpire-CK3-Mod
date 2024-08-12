@@ -151,7 +151,7 @@
 ##### Random county holder for the Bayushi
 3000330 = {
 	name = name_aki 	#  Bayushi Aki  #TODO replace name
-	dynasty = 2100013 	# Bayushi  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100013 	# Bayushi  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "bayushi"
 	1100.1.1 = {
@@ -160,7 +160,7 @@
 }
 3000331 = {
 	name = name_akiko 	#  Bayushi Aki  #TODO replace name
-	dynasty = 2100013 	# Bayushi  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100013 	# Bayushi  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "bayushi"
 	female = yes
@@ -308,7 +308,7 @@
 ##### Random county holder for the Soshi
 3000370 = {
 	name = name_aki 	#  Soshi Aki  #TODO replace name
-	dynasty = 2100015 	# Soshi  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100015 	# Soshi  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "soshi"
 	1100.1.1 = {

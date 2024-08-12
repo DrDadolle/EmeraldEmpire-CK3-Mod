@@ -136,7 +136,7 @@
 ##### Random county holder for the Hida
 3000410 = {
 	name = name_aki 	#  Hida Aki  #TODO replace name
-	dynasty = 2100021 	# Hida  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100021 	# Hida  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "hida"
 	
@@ -146,7 +146,7 @@
 }
 3000411 = {
 	name = name_akiko 	#  Hida Aki  #TODO replace name
-	dynasty = 2100021 	# Hida  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100021 	# Hida  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "hida"
 	female = yes
@@ -225,7 +225,7 @@
 ##### Random county holder for the Hiruma
 3000430 = {
 	name = name_aki 	#  Hiruma Aki  #TODO replace name
-	dynasty = 2100022 	# Hiruma  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100022 	# Hiruma  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "hiruma"
 	
@@ -235,7 +235,7 @@
 }
 3000431 = {
 	name = name_akiko 	#  Hiruma Aki  #TODO replace name
-	dynasty = 2100022 	# Hiruma  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100022 	# Hiruma  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "hiruma"
 	female = yes
@@ -279,7 +279,7 @@
 ##### Random county holder for the Kaiu
 3000450 = {
 	name = name_aki 	#  Kaiu Aki  #TODO replace name
-	dynasty = 2100023 	# Kaiu  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100023 	# Kaiu  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "kaiu"
 	
@@ -289,7 +289,7 @@
 }
 3000451 = {
 	name = name_akiko 	#  Kaiu Aki  #TODO replace name
-	dynasty = 2100023 	# Kaiu  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100023 	# Kaiu  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "kaiu"
 	female = yes
@@ -350,7 +350,7 @@
 ##### Random county holder for the Kuni
 3000470 = {
 	name = name_aki 	#  Kuni Aki  #TODO replace name
-	dynasty = 2100024 	# Kuni  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100024 	# Kuni  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "kuni"
 	
@@ -360,7 +360,7 @@
 }
 3000471 = {
 	name = name_akiko 	#  Kuni Aki  #TODO replace name
-	dynasty = 2100024 	# Kuni  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100024 	# Kuni  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "kuni"
 	female = yes

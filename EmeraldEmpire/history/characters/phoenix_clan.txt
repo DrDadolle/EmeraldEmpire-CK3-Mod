@@ -124,7 +124,7 @@
 ##### Random county holder for the Shiba
 3000210 = {
 	name = name_aki 	#  Shiba Aki  #TODO replace name
-	dynasty = 2100009 	# Shiba  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100009 	# Shiba  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "shiba"
 
@@ -135,7 +135,7 @@
 
 3000211 = {
 	name = name_akiko 	#  Shiba Aki  #TODO replace name
-	dynasty = 2100009 	# Shiba  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100009 	# Shiba  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "shiba"
 	female = yes
@@ -395,7 +395,7 @@ isawa_chuda_line_01 = {
 ##### Random county holder for the Isawa
 3000230 = {
 	name = name_aki 	#  Isawa Aki  #TODO replace name
-	dynasty = 2100010 	# Isawa  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100010 	# Isawa  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "isawa"
 
@@ -406,7 +406,7 @@ isawa_chuda_line_01 = {
 
 3000231 = {
 	name = name_akiko 	#  Isawa Akiko #TODO replace name
-	dynasty = 2100010 	# Isawa  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100010 	# Isawa  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "isawa"
 	female = yes
@@ -510,7 +510,7 @@ isawa_chuda_line_01 = {
 ##### Random county holder for the Asako
 3000250 = {
 	name = name_aki 	#  Asako Aki  #TODO replace name
-	dynasty = 2100011 	# Asako  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100011 	# Asako  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "asako"
 
@@ -521,7 +521,7 @@ isawa_chuda_line_01 = {
 
 3000251 = {
 	name = name_akiko 	#  Asako Akiko  #TODO replace name
-	dynasty = 2100011 	# Asako  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100011 	# Asako  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "asako"
 	female = yes

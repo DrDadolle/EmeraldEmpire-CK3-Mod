@@ -38,7 +38,7 @@
 ##### Random county holder for the Togashi
 3000610 = {
 	name = name_aki 	#  Togashi Aki  #TODO replace name
-	dynasty = 2100017 	# Togashi  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100017 	# Togashi  #TODO replace by  like the dynn_morehei
 	religion = "shinseism"
 	culture = "togashi"
 
@@ -49,7 +49,7 @@
 
 3000611 = {
 	name = name_akiko	#  Togashi Akiko  #TODO replace name
-	dynasty = 2100017 	# Togashi #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100017 	# Togashi #TODO replace by  like the dynn_morehei
 	female = yes
 	religion = "shinseism"
 	culture = "togashi"
@@ -116,7 +116,7 @@
 ##### Random county holder for the Mirumoto
 3000630 = {
 	name = name_aki 	#  Mirumoto Aki  #TODO replace name
-	dynasty = 2100018 	# Mirumoto  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100018 	# Mirumoto  #TODO replace by  like the dynn_morehei
 	religion = "shinseism"
 	culture = "mirumoto"
 
@@ -214,7 +214,7 @@
 ##### Random county holder for the Kitsuki
 3000650 = {
 	name = name_aki 	#  Kitsuki Aki  #TODO replace name
-	dynasty_house = 2100019 	# Kitsuki  #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100019 	# Kitsuki  #TODO replace by  like the dynn_morehei
 	religion = "shinseism"
 	culture = "kitsuki"
 
@@ -225,7 +225,7 @@
 
 3000651 = {
 	name = name_akiko	#  Kitsuki Akiko  #TODO replace name
-	dynasty_house = 2100019 	# Kitsuki #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100019 	# Kitsuki #TODO replace by  like the dynn_morehei
 	female = yes
 	religion = "perfect_earth_sect"
 	culture = "kitsuki"
@@ -318,7 +318,7 @@
 ##### Random county holder for the Agasha
 3000670 = {
 	name = name_aki 	#  Agasha Aki  #TODO replace name
-	dynasty = 2100020 	# Agasha  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100020 	# Agasha  #TODO replace by  like the dynn_morehei
 	religion = "shinseism"
 	culture = "agasha"
 
@@ -329,7 +329,7 @@
 
 3000671 = {
 	name = name_akiko	#  Agasha Akiko  #TODO replace name
-	dynasty = 2100020 	# Agasha #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100020 	# Agasha #TODO replace by  like the dynn_morehei
 	female = yes
 	religion = "shinseism"
 	culture = "agasha"

@@ -264,7 +264,7 @@ kami_doji_line_0 = {
 ##### Random county holder for the Doji
 3000010 = {
 	name = name_aki 	#  Doji Aki  #TODO replace name
-	dynasty = 2100001 	# Doji  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100001 	# Doji  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "doji"
 
@@ -277,7 +277,7 @@ kami_doji_line_0 = {
 
 3000011 = {
 	name = name_akiko	#  Doji Akiko  #TODO replace name
-	dynasty = 2100001 	# Doji #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100001 	# Doji #TODO replace by  like the dynn_morehei
 	female = yes
 	religion = "seven_fortunes"
 	culture = "doji"
@@ -490,7 +490,7 @@ kami_doji_line_0 = {
 ##### Random county holder for the Kakita
 3000030 = {
 	name = name_aki 	#  Kakita Aki  #TODO replace name
-	dynasty_house = 2100004 	# Kakita  #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100004 	# Kakita  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "kakita"
 
@@ -501,7 +501,7 @@ kami_doji_line_0 = {
 
 3000031 = {
 	name = name_akiko	#  Kakita Akiko  #TODO replace name
-	dynasty_house = 2100004 	# Kakita #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100004 	# Kakita #TODO replace by  like the dynn_morehei
 	female = yes
 	religion = "cult_ancestors"
 	culture = "kakita"
@@ -568,7 +568,7 @@ kami_doji_line_0 = {
 ##### Random county holder for the Asahina
 3000050 = {
 	name = name_aki 	#  Asahina Aki  #TODO replace name
-	dynasty_house = 2100003 	# Asahina  #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100003 	# Asahina  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "asahina"
 
@@ -579,7 +579,7 @@ kami_doji_line_0 = {
 
 3000051 = {
 	name = name_akiko	#  Asahina Akiko  #TODO replace name
-	dynasty_house = 2100003 	# Asahina #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100003 	# Asahina #TODO replace by  like the dynn_morehei
 	female = yes
 	religion = "seven_fortunes"
 	culture = "asahina"
@@ -632,7 +632,7 @@ kami_doji_line_0 = {
 ##### Random county holder for the Daidoji
 3000070 = {
 	name = name_aki 	#  Daidoji Aki  #TODO replace name
-	dynasty_house = 2100002 	# Daidoji  #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100002 	# Daidoji  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "daidoji"
 
@@ -643,7 +643,7 @@ kami_doji_line_0 = {
 
 3000071 = {
 	name = name_akiko	#  Daidoji Akiko  #TODO replace name
-	dynasty_house = 2100002 	# Daidoji #TODO replace by  like the dynn_morehei_doji
+	dynasty_house = 2100002 	# Daidoji #TODO replace by  like the dynn_morehei
 	female = yes
 	religion = "seven_fortunes"
 	culture = "daidoji"

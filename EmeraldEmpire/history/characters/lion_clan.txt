@@ -342,7 +342,7 @@
 ##### Random county holder for the Matsu
 3000130 = {
 	name = name_aki 	#  Matsu Aki  #TODO replace name
-	dynasty = 2100006 	# Matsu  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100006 	# Matsu  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "matsu"
 
@@ -353,7 +353,7 @@
 
 3000131 = {
 	name = name_akiko	#  Matsu Akiko  #TODO replace name
-	dynasty = 2100006 	# Matsu #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100006 	# Matsu #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "matsu"
 	female = yes
@@ -503,7 +503,7 @@
 ##### Random county holder for the Ikoma
 3000170 = {
 	name = name_aki 	#  Ikoma Aki  #TODO replace name
-	dynasty = 2100008 	# Ikoma  #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100008 	# Ikoma  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "ikoma"
 
@@ -514,7 +514,7 @@
 
 3000171 = {
 	name = name_akiko	#  Ikoma Akiko  #TODO replace name
-	dynasty = 2100008 	# Ikoma #TODO replace by  like the dynn_morehei_doji
+	dynasty = 2100008 	# Ikoma #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "ikoma"
 	female = yes
