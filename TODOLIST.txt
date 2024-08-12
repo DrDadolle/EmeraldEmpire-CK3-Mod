@@ -27,8 +27,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## short term goals 
 - Add starting war for toshi ranbo (as template) => test localization
-- rework all characters id à la LoTr
+- all dynasty/char id => test if it works !
 - Copy the core_I_english   and change "LOADSCREEN_INITIALIZING_GAME" 
+- Decision to permaclaim Toshi rambo (Crane/Lion) or the City Rich Frog
 - Create MaA for each great clan, (do the same for minor later)
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
@@ -50,16 +51,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- "Lowborn" being used as a family name lol
 - Doctor have no clothes !
 -Change Mod Thumbnail image (test ?)
-
-## Workaround to be careful with & unsure behaviours
-- headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
-- Remove AI Cadet branches => Working ?
-- Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
-- How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
-
-##  Waiting & placeholders
-- Cat mon : @Bamba 
-- Add CoA placeholder : missing Frog Duchy, Kingdom of Cherry blossom and that's it ?
 
 ## Futures Features & Nice to have
 - Special events setting the start of the clan wars
@@ -86,17 +77,27 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Blood feud (like Matsu vs Kakita)	: https://steamcommunity.com/sharedfiles/filedetails/?id=2914047110. Need the Friends & Foes DLC sadly...
 	- shogunate_bookmark_events.txt/shogunate_bookmark.8300/shogunate_historical_feud_effect => shogunate_bookmark_effects/shogunate_bookmark.8310
 	- add more events? Duels ?
-- Add court (from Shogunate)
 - Artifacts creation process
 - Add ancestral clan & family founders
 	- Special naming convention for Kamis (no first name)
 	- Kami traits/kami descendent à la Shayoshant/paragon of vertue
 -Removal wall map object in crab clan
--Better map for bookmark ?
-- Add "minor clothes" probability to Great Clan clothes to have more variety of clothing styles
+- Personnal fortune for fortunism (steal from Nordic DLC ?)
+
+##  Waiting & placeholders
+- Cat mon : @Bamba 
+- Add CoA placeholder : missing Frog Duchy, Kingdom of Cherry blossom and that's it ?
+
+## Workaround to be careful with & unsure behaviours
+- headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
+- Remove AI Cadet branches => Working ?
+- Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
+- How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================
+- Add "minor clothes" probability to Great Clan clothes to have more variety of clothing styles
+- Add court (from Shogunate) : need DLC
 - Create MaA for each minor clan
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too

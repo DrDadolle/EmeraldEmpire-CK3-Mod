@@ -1,6 +1,9 @@
 ﻿
 namespace = rokugan_major_clan_events_decision
 
+##################################################
+# Avenge Yasuki War
+##################################################
 rokugan_major_clan_events_decision.0001 = {
 	type = character_event
 	content_source = l5r_dlc
@@ -20,5 +23,35 @@ rokugan_major_clan_events_decision.0001 = {
 	}
 	option = {
 		name = rokugan_major_clan_events_decision.0001.a
+	}
+}
+
+
+##################################################
+# Reclaim Toshi Rambo
+##################################################
+rokugan_major_clan_events_decision.0010 = {
+	type = character_event
+	content_source = l5r_dlc
+	type = character_event
+	title = rokugan_major_clan_events_decision.0010.t
+	desc = rokugan_major_clan_events_decision.0010.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = zealous
+	}
+
+	right_portrait = {
+		character = title:c_toshi_rambo.holder
+		animation = anger
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_crusade_starts" #This music ?
+	}
+	option = {
+		#add_pressed_claim = title:c_toshi_rambo
+		name = rokugan_major_clan_events_decision.0010.a
 	}
 }

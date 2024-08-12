@@ -1,3 +1,5 @@
+@get_ancestral_claim_cooldown_time = 3650 #20 years
+
 ##################################################
 # DE JURE DECISIONS
 ##################################################
@@ -175,6 +177,103 @@ found_minor_clan_decision = {
 		base = 100
 	}
 }
+
+##################################################
+# CLAIM DECISIONS
+##################################################
+# Reclaim Toshi Rambo
+##################################################
+decision_claim_toshi_rambo = {
+	picture = "gfx/interface/illustrations/decisions/decision_crane.dds" #TODO replace by "embrace death" art.
+
+	title = decision_claim_toshi_rambo
+	selection_tooltip = decision_claim_toshi_rambo_tooltip
+	desc = decision_claim_toshi_rambo_desc
+	confirm_text = decision_claim_toshi_rambo_confirm
+
+	major = yes
+
+    is_shown = {
+        is_ruler = yes
+        is_landed = yes
+
+		# Is lion culture under lion daimyo, or the same with crane
+		OR = {
+			AND = {
+				is_under_k_crane_clan_rule_or_is_ruler = yes
+				culture = { has_cultural_pillar = heritage_crane }
+			}
+        	AND = {
+				is_under_k_lion_clan_rule_or_is_ruler = yes
+				culture = { has_cultural_pillar = heritage_lion }
+			}
+		}
+
+		#If Toshi Rambo holder not the same heritage as the character
+        OR = {
+			NOR = {
+				c_toshi_rambo.holder = { culture = { has_cultural_pillar = heritage_crane }	}
+				culture = { has_cultural_pillar = heritage_crane }	
+			}
+			NOR = {
+				c_toshi_rambo.holder = { culture = { has_cultural_pillar = heritage_lion }	}
+				culture = { has_cultural_pillar = heritage_lion }	
+			}
+		}
+
+		#Do not get claim against imperial holder
+		NOT = {
+			c_toshi_rambo.holder = { is_imperial_family = yes	}
+		}
+	}
+
+	# Every 20 years ? Once per lifetime ?
+	cooldown = { days = @get_ancestral_claim_cooldown_time }
+
+    is_valid = {
+		prestige_level >= 3
+	}
+
+    is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+	}
+
+	cost = {
+		prestige = 100
+	}
+
+    effect = {
+		show_as_tooltip = {
+			add_pressed_claim = title:c_toshi_rambo
+		}
+
+		trigger_event = {
+			id = rokugan_major_clan_events_decision.0010
+		}
+	}
+
+	ai_check_interval = 1
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			add = 19
+			primary_title.tier = tier_duchy
+		}
+
+		modifier = {
+			add = 99
+			primary_title.tier = tier_kingdom
+		}
+	}
+
+}
+
 
 ##################################################
 # CRANE CLAN
