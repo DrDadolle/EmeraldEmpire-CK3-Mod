@@ -1,21 +1,21 @@
 d_kakita = {
 	1100.1.1 = {
 		liege = "k_crane_clan"
-		holder = 3000022 # Kakita Toshimo
+		holder = lineofkakitatoshimo1 # Kakita Toshimo
 	}
 
 	1123.1.1 = { 
-		holder = 3000020 # Kakita Yoshi
+		holder = lineofkakitatoshimo3 # Kakita Yoshi
 	}
 }
 
 c_takuetsu_province = {
 	1100.1.1 = {
 		liege = "d_kakita"
-		holder = 3000022 # Kakita Toshimo
+		holder = lineofkakitatoshimo1 # Kakita Toshimo
 	}
 	1123.1.1 = { 
-		holder = 3000020 # Kakita Yoshi
+		holder = lineofkakitatoshimo3 # Kakita Yoshi
 		change_development_level = 25
 	}
 }
@@ -23,10 +23,10 @@ c_takuetsu_province = {
 c_nanhan_province = {
 	1100.1.1 = {
 		liege = "d_kakita"
-		holder = 3000022 # Kakita Toshimo
+		holder = lineofkakitatoshimo1 # Kakita Toshimo
 	}
 	1123.1.1 = { 
-		holder = 3000020 # Kakita Yoshi
+		holder = lineofkakitatoshimo3 # Kakita Yoshi
 		change_development_level = 18
 	}
 }
@@ -34,7 +34,7 @@ c_nanhan_province = {
 c_gyousha_province = {
 	1123.1.1 = { 
 		liege = "d_kakita"
-		holder = 3000030 # TODO placeholder name
+		holder = placeholderkakita1 
 		change_development_level = 12
 	}
 }
@@ -42,7 +42,7 @@ c_gyousha_province = {
 c_kishou_province = {
 	1123.1.1 = { 
 		liege = "d_kakita"
-		holder = 3000030 # TODO placeholder name
+		holder = placeholderkakita1 
 		change_development_level = 12
 	}
 }

@@ -1,9 +1,28 @@
-﻿#####################
+﻿#####################################						
+#####################################						
+######       CRANE CLAN        ######						
+#####################################						
+#####################################
+### In order: 				
+#				
+### Doji Family
+# Vassals and placeholders
+#
+### Kakita Family
+# Vassals and placeholders
+#
+### Asahina Family
+# Vassals and placeholders
+#
+### Daidoji Family 
+# Vassals and placeholders
+#
+#####################
 #	DOJI
 #####################
-3000001 = {
+lineofdojisatsume2 = {
 	name = name_hotaru 	# Crane Clan Champion of 1123
-	dynasty = dynasty_doji 	# Doji
+	dynasty = dynasty_doji 
 	female = yes
 	religion = "seven_fortunes"
 	culture = "doji"
@@ -27,8 +46,8 @@
 	dna = doji_hotaru_dna_entry
 	
 	### Family
-	father = 3000003 #Doji Satsume
-	mother = 3000004 #Kakita Teinko
+	father = lineofdojisatsume1 #Doji Satsume
+	mother = lineofkakitatoshimo2 #Kakita Teinko
 
 	1098.1.1 = {
 		birth = yes
@@ -40,7 +59,7 @@
 	
 	1122.1.1 = {
 		effect = {
-			set_relation_lover = { reason = lover_history target = character:3000321 } # In love with Bayushi Kachiko
+			set_relation_lover = { reason = lover_history target = character:lineofshosurokoshurin3 } # In love with Bayushi Kachiko
 		}
 	}
 
@@ -53,9 +72,9 @@
 
 }
 
-3000002 = {
+lineofdojisatsume3 = {
 	name = name_kuwanan 	# Brother of Doji Hotaru
-	dynasty = dynasty_doji 	# Doji
+	dynasty = dynasty_doji 	
 	religion = "seven_fortunes"
 	culture = "doji"
 	
@@ -74,8 +93,8 @@
 	### DNA
 	
 	### Family
-	father = 3000003 #Doji Satsume
-	mother = 3000004 #Kakita Teinko
+	father = lineofdojisatsume1 #Doji Satsume
+	mother = lineofkakitatoshimo2 #Kakita Teinko
 
 	1103.1.1 = {
 		birth = yes
@@ -83,7 +102,7 @@
 	
 	1121.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:3000001 reason = rival_historical }
+			set_relation_rival = { target = character:lineofdojisatsume2 reason = rival_historical }
 			add_pressed_claim = title:k_crane_clan 
 			add_pressed_claim = title:d_doji
 			add_pressed_claim = title:c_oyomesan_province
@@ -93,9 +112,9 @@
 		
 }
 
-3000003 = {
+lineofdojisatsume1 = {
 	name = name_satsume 	# Father of Doji Hotaru, former emerald champion
-	dynasty = dynasty_doji 	# Doji
+	dynasty = dynasty_doji 	
 	religion = "seven_fortunes"
 	culture = "doji"
 	
@@ -116,7 +135,7 @@
 	}
 	
 	1089.1.1 = {
-		add_spouse=3000004 #Kakita Teinko
+		add_spouse=lineofkakitatoshimo2 #Kakita Teinko
 	}
 	
 	1123.4.1 = {
@@ -128,9 +147,9 @@
 	
 }
 
-3000004 = {
+lineofkakitatoshimo2 = {
 	name = name_teinko 	# Spouse of Doji Satsume
-	dynasty = dynasty_kakita 	# Kakita
+	dynasty = dynasty_kakita 
 	religion = "seven_fortunes"
 	female = yes
 	culture = "kakita"
@@ -145,7 +164,7 @@
 	### DNA
 	
 	### Family
-	father = 3000022 #Kakita Toshimo
+	father = lineofkakitatoshimo1 #Kakita Toshimo
 	
 
 	1073.1.1 = {
@@ -160,9 +179,9 @@
 	}
 }
 
-3000005 = {
+lineofdojisatsume4 = {
 	name = name_shizue 	# Adopted (TODO) sister of Doji Hotaru
-	dynasty = dynasty_doji 	# Doji
+	dynasty = dynasty_doji 	
 	religion = "seven_fortunes"
 	female = yes
 	culture = "doji"
@@ -178,8 +197,8 @@
 	### DNA
 	
 	### Family
-	father = 3000003 #Doji Satsume #TODO change to real father
-	mother = 3000004 #Kakita Teinko #TODO change to real mother
+	father = lineofdojisatsume1 #Doji Satsume #TODO change to real father
+	mother = lineofkakitatoshimo2 #Kakita Teinko #TODO change to real mother
 
 	1104.1.1 = {
 		birth = yes
@@ -194,7 +213,7 @@
 
 3000006 = {
 	name = name_kuzunobu 	# Spouse of Doji Hotaru
-	dynasty = dynasty_kitsune 	# Kitsune
+	dynasty = dynasty_kitsune 	
 	religion = "seven_fortunes"
 	culture = "kitsune" 	
 	
@@ -220,7 +239,7 @@
 
 3000007 = {
 	name = name_ninube 	# Doji Ninube, wife of Isawa Ujina
-	dynasty = dynasty_doji 	# Doji
+	dynasty = dynasty_doji 	
 	religion = "seven_fortunes"
 	culture = "doji"
 	female = yes
@@ -236,9 +255,9 @@
 	}
 }
 
-kami_doji_line_0 = {
+lineofkamidoji1 = {
 	name = name_akiko 	# TODO : special naming for Kami
-	dynasty = dynasty_doji 	# Doji
+	dynasty = dynasty_doji 	
 	religion = "seven_fortunes"
 	culture = "doji"
 	female = yes
@@ -262,9 +281,9 @@ kami_doji_line_0 = {
 }
 
 ##### Random county holder for the Doji
-3000010 = {
+placeholderdoji1 = {
 	name = name_aki 	#  Doji Aki  #TODO replace name
-	dynasty = dynasty_doji 	# Doji  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_doji 	
 	religion = "seven_fortunes"
 	culture = "doji"
 
@@ -275,9 +294,9 @@ kami_doji_line_0 = {
 	}
 }
 
-3000011 = {
+placeholderdoji2 = {
 	name = name_akiko	#  Doji Akiko  #TODO replace name
-	dynasty = dynasty_doji 	# Doji #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_doji 
 	female = yes
 	religion = "seven_fortunes"
 	culture = "doji"
@@ -288,9 +307,9 @@ kami_doji_line_0 = {
 }
 #############
 ##### Vassal
-3003000 = {
+lineoftsumeretsu1 = {
 	name = name_retsu 	#  Tsume Retsu, daimyo of shiro Kyotei
-	dynasty_house = house_tsume 	# Tsume  Vassal family 
+	dynasty_house = house_tsume 
 	religion = "seven_fortunes"
 	culture = "doji"
 
@@ -312,9 +331,9 @@ kami_doji_line_0 = {
 	}
 }
 
-3003001 = {
+lineoftsumeretsu2 = {
 	name = name_takashi 	#  Tsume Takashi, daimyo of shiro Kyotei
-	dynasty_house = house_tsume 	# Tsume  Vassal family 
+	dynasty_house = house_tsume 
 	religion = "seven_fortunes"
 	culture = "doji"
 
@@ -326,7 +345,7 @@ kami_doji_line_0 = {
 	
 	
 	#Family
-	father = 3003000 # Tsume Retsu
+	father = lineoftsumeretsu1 # Tsume Retsu
 
 
 	1102.1.1 = {
@@ -341,7 +360,7 @@ kami_doji_line_0 = {
 
 	##TODO maybe rechange dates ??
 	1123.6.1 = {
-		add_spouse=3000202 #Shiba Itsuyo
+		add_spouse=lineofshibakatsuda3 #Shiba Itsuyo
 	}
 	1123.6.2 = {
 		death={
@@ -354,9 +373,9 @@ kami_doji_line_0 = {
 #	KAKITA
 #####################
 
-3000020 = {
+lineofkakitatoshimo3 = {
 	name = name_yoshi 	# Kakita Yoshi
-	dynasty_house = dynasty_kakita 	# Kakita
+	dynasty_house = dynasty_kakita 	
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -373,7 +392,7 @@ kami_doji_line_0 = {
 	trait = cynical
 	trait = gregarious
 	trait = natural_white_hair
-	father = 3000022 #Kakita Toshimo
+	father = lineofkakitatoshimo1 #Kakita Toshimo
 
 	1077.1.1 = {
 		birth = yes
@@ -389,9 +408,9 @@ kami_doji_line_0 = {
 	
 }
 
-3000021 = {
+lineofkakitatoshimo4 = {
 	name = name_toshimoko 	# Kakita Toshimoko
-	dynasty_house = dynasty_kakita 	# Kakita
+	dynasty_house = dynasty_kakita 	
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -410,7 +429,7 @@ kami_doji_line_0 = {
 	### DNA
 	
 	### Family
-	father = 3000022 #Kakita Toshimo
+	father = lineofkakitatoshimo1 #Kakita Toshimo
 
 	1067.1.1 = {
 		birth = yes
@@ -421,9 +440,9 @@ kami_doji_line_0 = {
 	}
 }
 
-3000022 = {
+lineofkakitatoshimo1 = {
 	name = name_toshimo 	# Kakita Toshimo, father of Kakita Yoshi, Toshimoko & Teinko
-	dynasty_house = dynasty_kakita 	# Kakita
+	dynasty_house = dynasty_kakita 	akita
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -447,7 +466,7 @@ kami_doji_line_0 = {
 
 3000023 = {
 	name = name_barahime 	# Kakita Barahime, wife of Kakita Yoshi
-	dynasty_house = dynasty_kakita 	# Kakita
+	dynasty_house = dynasty_kakita 	
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	female = yes
@@ -466,9 +485,9 @@ kami_doji_line_0 = {
 	}
 }
 
-3000024 = {
+lineofkakitatoshimo5 = {
 	name = name_shinta 	# Kakita Shinta, son of Kakita Yoshi
-	dynasty_house = dynasty_kakita 	# Kakita
+	dynasty_house = dynasty_kakita 	
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -479,7 +498,7 @@ kami_doji_line_0 = {
 	### DNA
 	
 	### Family
-	father = 3000020
+	father = lineofkakitatoshimo3
 	mother = 3000023
 
 	1103.1.1 = {
@@ -488,21 +507,9 @@ kami_doji_line_0 = {
 }
 
 ##### Random county holder for the Kakita
-3000030 = {
+placeholderkakita1 = {
 	name = name_aki 	#  Kakita Aki  #TODO replace name
-	dynasty_house = dynasty_kakita 	# Kakita  #TODO replace by  like the dynn_morehei
-	religion = "cult_ancestors"
-	culture = "kakita"
-
-	1100.1.1 = {
-		birth = yes
-	}
-}
-
-3000031 = {
-	name = name_akiko	#  Kakita Akiko  #TODO replace name
-	dynasty_house = dynasty_kakita 	# Kakita #TODO replace by  like the dynn_morehei
-	female = yes
+	dynasty_house = dynasty_kakita 
 	religion = "cult_ancestors"
 	culture = "kakita"
 
@@ -514,9 +521,9 @@ kami_doji_line_0 = {
 #####################
 #	ASAHINA
 #####################
-3000040 = {
+lineofasahinatakamori1 = {
 	name = name_takamori 	# Asahina Takamori, Asahina daimyo
-	dynasty_house = dynasty_asahina 	# Asahina
+	dynasty_house = dynasty_asahina 
 	religion = "seven_fortunes"
 	culture = "asahina" 	
 	
@@ -543,9 +550,9 @@ kami_doji_line_0 = {
 	}
 }
 
-3000041 = {
+lineofasahinatakamori2 = {
 	name = name_takako 	# Asahina Takako
-	dynasty_house = dynasty_asahina 	# Asahina
+	dynasty_house = dynasty_asahina 	
 	religion = "seven_fortunes"
 	culture = "asahina" 	
 	female = yes
@@ -558,7 +565,7 @@ kami_doji_line_0 = {
 	### DNA
 	
 	### Family
-	father = 3000040 # Asahina Takamori
+	father = lineofasahinatakamori1 # Asahina Takamori
 
 	1097.1.1 = {
 		birth = yes
@@ -566,9 +573,9 @@ kami_doji_line_0 = {
 }
 
 ##### Random county holder for the Asahina
-3000050 = {
+placeholderasahina1 = {
 	name = name_aki 	#  Asahina Aki  #TODO replace name
-	dynasty_house = dynasty_asahina 	# Asahina  #TODO replace by  like the dynn_morehei
+	dynasty_house = dynasty_asahina 
 	religion = "seven_fortunes"
 	culture = "asahina"
 
@@ -577,9 +584,9 @@ kami_doji_line_0 = {
 	}
 }
 
-3000051 = {
+placeholderasahina2 = {
 	name = name_akiko	#  Asahina Akiko  #TODO replace name
-	dynasty_house = dynasty_asahina 	# Asahina #TODO replace by  like the dynn_morehei
+	dynasty_house = dynasty_asahina 	
 	female = yes
 	religion = "seven_fortunes"
 	culture = "asahina"
@@ -593,9 +600,9 @@ kami_doji_line_0 = {
 #####################
 #	DAIDOJI
 #####################
-3000060 = {
+lineofdaidojiuji1 = {
 	name = name_uji 	# Daidoji Uji, Daidoji daimyo
-	dynasty_house = dynasty_daidoji 	# Daidoji
+	dynasty_house = dynasty_daidoji 
 	religion = "seven_fortunes"
 	culture = "daidoji" 	
 	
@@ -630,9 +637,9 @@ kami_doji_line_0 = {
 }
 
 ##### Random county holder for the Daidoji
-3000070 = {
+placeholderdaidoji1 = {
 	name = name_aki 	#  Daidoji Aki  #TODO replace name
-	dynasty_house = dynasty_daidoji 	# Daidoji  #TODO replace by  like the dynn_morehei
+	dynasty_house = dynasty_daidoji 	
 	religion = "seven_fortunes"
 	culture = "daidoji"
 
@@ -641,7 +648,7 @@ kami_doji_line_0 = {
 	}
 }
 
-3000071 = {
+placeholderdaidoji2 = {
 	name = name_akiko	#  Daidoji Akiko  #TODO replace name
 	dynasty_house = dynasty_daidoji 	# Daidoji #TODO replace by  like the dynn_morehei
 	female = yes
@@ -652,5 +659,3 @@ kami_doji_line_0 = {
 		birth = yes
 	}
 }
-
-#set_relation_potential_rival = character:106050

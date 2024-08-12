@@ -1,9 +1,28 @@
-﻿#####################
+﻿#####################################						
+#####################################						
+######      DRAGON CLAN        ######						
+#####################################						
+#####################################
+### In order: 				
+#				
+### Togashi Family
+# Vassals and placeholders
+#
+### Mirumoto Family
+# Vassals and placeholders
+#
+### Kitsuki Family
+# Vassals and placeholders
+#
+### Agasha Family 
+# Vassals and placeholders
+#
+#####################
 #	Togashi
 #####################
-3000600 = {
+lineoftogashiyokuni1 = {
 	name = name_yokuni 	# Togashi Yokuni Dragon Clan Champion of 1123
-	dynasty = dynasty_togashi 	# Togashi
+	dynasty = dynasty_togashi 
 	religion = "shinseism"
 	culture = "togashi"
 	
@@ -34,36 +53,12 @@
 	
 
 }
-
-##### Random county holder for the Togashi
-3000610 = {
-	name = name_aki 	#  Togashi Aki  #TODO replace name
-	dynasty = dynasty_togashi 	# Togashi  #TODO replace by  like the dynn_morehei
-	religion = "shinseism"
-	culture = "togashi"
-
-	1100.1.1 = {
-		birth = yes
-	}
-}
-
-3000611 = {
-	name = name_akiko	#  Togashi Akiko  #TODO replace name
-	dynasty = dynasty_togashi 	# Togashi #TODO replace by  like the dynn_morehei
-	female = yes
-	religion = "shinseism"
-	culture = "togashi"
-
-	1100.1.1 = {
-		birth = yes
-	}
-}
 #####################
 #	Mirumoto
 #####################
-3000620 = {
+lineofmirumotomasashige1 = {
 	name = name_masashige 	# Mirumoto Masashige, Mirumoto Daimyo
-	dynasty = dynasty_mirumoto 	# Mirumoto
+	dynasty = dynasty_mirumoto 	
 	religion = "shinseism"
 	culture = "mirumoto"
 	
@@ -92,9 +87,9 @@
 	}
 }
 
-3000621 = {
+lineofmirumotomasashige2 = {
 	name = name_ichiro 	# Mirumoto Ichiro, Mirumoto Daimyo's son #TODO now a ronin
-	dynasty = dynasty_mirumoto 	# Mirumoto
+	dynasty = dynasty_mirumoto 
 	religion = "shinseism"
 	culture = "mirumoto"
 	
@@ -106,7 +101,7 @@
 	#TODO
 	
 	### Family
-	father = 3000620 # Mirumoto Masashige
+	father = lineofmirumotomasashige1 # Mirumoto Masashige
 
 	1102.1.1 = {
 		birth = yes
@@ -114,9 +109,9 @@
 }
 
 ##### Random county holder for the Mirumoto
-3000630 = {
+placeholdermirumoto1 = {
 	name = name_aki 	#  Mirumoto Aki  #TODO replace name
-	dynasty = dynasty_mirumoto 	# Mirumoto  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_mirumoto 	# Mirumoto 
 	religion = "shinseism"
 	culture = "mirumoto"
 
@@ -125,9 +120,9 @@
 	}
 }
 ##### Vassal
-3003620 = { 
+lineofzurui1 = { 
 	name = name_aki 	# Zurui Aki  #TODO replace name
-	dynasty_house = house_zurui 	# Zurui Vassal family 
+	dynasty_house = house_zurui 	 
 	religion = "shinseism"
 	culture = "mirumoto"
 
@@ -141,9 +136,9 @@
 	}
 
 }
-3003621 = { 
+lineofkouken1 = { 
 	name = name_aki 	# Kouken Aki  #TODO replace name
-	dynasty = dynasty_kouken 	# Kouken Vassal family 
+	dynasty = dynasty_kouken 	 
 	religion = "shinseism"
 	culture = "mirumoto"
 
@@ -160,9 +155,9 @@
 #####################
 #	Kitsuki
 #####################
-3000640 = {
+lineofkitsukijusai1 = {
 	name = name_jusai 	# Kitsuki Jusai, Kitsuki Daimyo
-	dynasty_house = dynasty_kitsuki 	# Kitsuki
+	dynasty_house = dynasty_kitsuki 	
 	religion = "shinseism"
 	culture = "kitsuki"
 	
@@ -188,9 +183,9 @@
 	}
 }
 
-3000641 = {
+lineofkitsukijusai2 = {
 	name = name_jusai 	# Kitsuki Tomoyo, Kitsuki Daimyo's youngest daughter
-	dynasty_house = dynasty_kitsuki 	# Kitsuki
+	dynasty_house = dynasty_kitsuki 	
 	religion = "shinseism"
 	culture = "kitsuki"
 	female = yes
@@ -204,7 +199,7 @@
 	#TODO
 	
 	### Family
-	father = 3000640 # Kitsuki Jusai
+	father = lineofkitsukijusai1 # Kitsuki Jusai
 
 	1107.1.1 = {
 		birth = yes
@@ -212,9 +207,9 @@
 }
 
 ##### Random county holder for the Kitsuki
-3000650 = {
+placeholderkitsuki1 = {
 	name = name_aki 	#  Kitsuki Aki  #TODO replace name
-	dynasty_house = dynasty_kitsuki 	# Kitsuki  #TODO replace by  like the dynn_morehei
+	dynasty_house = dynasty_kitsuki 
 	religion = "shinseism"
 	culture = "kitsuki"
 
@@ -223,9 +218,9 @@
 	}
 }
 
-3000651 = {
+placeholderkitsuki2 = {
 	name = name_akiko	#  Kitsuki Akiko  #TODO replace name
-	dynasty_house = dynasty_kitsuki 	# Kitsuki #TODO replace by  like the dynn_morehei
+	dynasty_house = dynasty_kitsuki 	
 	female = yes
 	religion = "perfect_earth_sect"
 	culture = "kitsuki"
@@ -239,9 +234,9 @@
 #####################
 #	Agasha
 #####################
-3000660 = {
+lineofagashatamori1 = {
 	name = name_tamori 	# Agasha Tamori, Agasha's daimyo. #Source is V4, no Agasha daimyo in V5
-	dynasty = dynasty_agasha 	# Agasha
+	dynasty = dynasty_agasha 	
 	religion = "shinseism"
 	culture = "agasha"
 	
@@ -291,7 +286,7 @@
 	}
 }
 
-3000662 = {
+lineofagashatamori2 = {
 	name = name_shaitung 	# Agasha Tamori's daugther #Source is V4
 	dynasty = dynasty_agasha 	# Agasha
 	religion = "shinseism"
@@ -307,7 +302,7 @@
 	#TODO
 	
 	### Family
-	father = 3000660  # Agasha Tamori
+	father = lineofagashatamori1  # Agasha Tamori
 	mother = 3000661  # Agasha Tsutomu
 	
 	1096.1.1 = {
@@ -316,21 +311,9 @@
 }
 
 ##### Random county holder for the Agasha
-3000670 = {
+placeholderagasha1 = {
 	name = name_aki 	#  Agasha Aki  #TODO replace name
 	dynasty = dynasty_agasha 	# Agasha  #TODO replace by  like the dynn_morehei
-	religion = "shinseism"
-	culture = "agasha"
-
-	1100.1.1 = {
-		birth = yes
-	}
-}
-
-3000671 = {
-	name = name_akiko	#  Agasha Akiko  #TODO replace name
-	dynasty = dynasty_agasha 	# Agasha #TODO replace by  like the dynn_morehei
-	female = yes
 	religion = "shinseism"
 	culture = "agasha"
 

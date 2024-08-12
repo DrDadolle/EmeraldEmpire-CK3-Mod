@@ -21,7 +21,7 @@ bm_1123_clanwar = {
 		culture = doji
 		religion = "seven_fortunes"
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-		history_id = 3000001
+		history_id = lineofdojisatsume2
 		position = { 250 750 }
 
 		animation = happiness
@@ -51,7 +51,7 @@ bm_1123_phoenix = {
 		culture = isawa
 		religion = "seven_fortunes"
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
-		history_id = isawa_chuda_line_01
+		history_id = lineofisawachuda1
 		position = { 250 750 }
 
 		animation = happiness

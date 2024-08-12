@@ -1,9 +1,28 @@
-﻿#####################
+﻿#####################################						
+#####################################						
+######     SCORPION CLAN       ######						
+#####################################						
+#####################################
+### In order: 				
+#				
+### Yogo Family
+# Vassals and placeholders
+#
+### Bayushi Family
+# Vassals and placeholders
+#
+### Shosuro Family
+# Vassals and placeholders
+#
+### Soshi Family 
+# Vassals and placeholders
+#
+#####################
 #	Yogo
 #####################
-3000300 = {
+lineofyogojunzo1 = {
 	name = name_junzo 	# Yogo junzo, Yogo Daimyo
-	dynasty = dynasty_yogo 	# Yogo
+	dynasty = dynasty_yogo 	
 	religion = "seven_fortunes"
 	culture = "yogo"
 	
@@ -32,9 +51,9 @@
 }
 
 ##### Vassal
-3003300 = {
+lineoftansaku1 = {
 	name = name_aki 	#  Tansaku Aki  #TODO replace name
-	dynasty_house = house_tansaku 	# Tansaku Vassal family 
+	dynasty_house = house_tansaku 	 
 	religion = "seven_fortunes"
 	culture = "yogo"
 
@@ -51,7 +70,7 @@
 #####################
 #	Bayushi
 #####################
-3000320 = {
+lineofbayushishoku1 = {
 	name = name_shoju 	# Bayushi Shoju, Bayushi Daimyo & Clan champion of 1123
 	dynasty = dynasty_bayushi 	# Bayushi
 	religion = "cult_ancestors"
@@ -73,7 +92,7 @@
 	}
 	
 	1107.1.1 = {
-		add_spouse = 3000321 #Bayushi Kachiko
+		add_spouse = lineofshosurokoshurin3 #Bayushi Kachiko
 	}
 
 	#Rokugan Workaround to add dynasty splendor to Bayushi Dynasty for the bookmark 1123
@@ -83,7 +102,7 @@
 	}
 }
 
-3000321 = {
+lineofshosurokoshurin3 = {
 	name = name_kachiko 	# Bayushi Kachiko, Imperial advisor & Spouse of Bayushi Shoju
 	dynasty = dynasty_shosuro 	# Shosuro
 	religion = "seven_fortunes"
@@ -100,23 +119,23 @@
 	##TODO
 	
 	###Family
-	father = 3000341 # Shosuro Koshurin
+	father = lineofshosurokoshurin1 # Shosuro Koshurin
 
 	1089.1.1 = {
 		birth = yes
 	}
 	
 	1107.1.1 = {
-		add_spouse = 3000320 #Bayushi Shoyu
+		add_spouse = lineofbayushishoku1 #Bayushi Shoyu
 	}
 	
 	1122.1.1 = {
 		effect = {
-			set_relation_lover = { reason = lover_history target = character:3000001 } # In love with Doji Hotaru
+			set_relation_lover = { reason = lover_history target = character:lineofdojisatsume2 } # In love with Doji Hotaru
 		}
 	}
 }
-3000322 = {
+lineofbayushishoku2 = {
 	name = name_dairu 	# Bayushi Dairu, children of Bayushi Shoyu, Scorpion Heir
 	dynasty = dynasty_bayushi 	# Bayushi
 	religion = "cult_ancestors"
@@ -132,8 +151,8 @@
 	##TODO
 	
 	###Family
-	father = 3000320 #Bayushi Shoju
-	mother = 3000321 #Bayushi Kachiko
+	father = lineofbayushishoku1 #Bayushi Shoju
+	mother = lineofshosurokoshurin3 #Bayushi Kachiko
 
 	1108.1.1 = {
 		birth = yes
@@ -141,7 +160,7 @@
 	
 	1123.1.1 = {
 		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:3001003 } #friend with Hantei Daisetsu
+			set_relation_friend = { reason = friend_generic_history target = character:lineofhantei38_2 } #friend with Hantei Daisetsu
 		}
 	}
 	
@@ -149,29 +168,10 @@
 
 
 ##### Random county holder for the Bayushi
-3000330 = {
-	name = name_aki 	#  Bayushi Aki  #TODO replace name
-	dynasty = dynasty_bayushi 	# Bayushi  #TODO replace by  like the dynn_morehei
-	religion = "cult_ancestors"
-	culture = "bayushi"
-	1100.1.1 = {
-		birth = yes
-	}
-}
-3000331 = {
-	name = name_akiko 	#  Bayushi Aki  #TODO replace name
-	dynasty = dynasty_bayushi 	# Bayushi  #TODO replace by  like the dynn_morehei
-	religion = "cult_ancestors"
-	culture = "bayushi"
-	female = yes
-	1100.1.1 = {
-		birth = yes
-	}
-}
 ##### Vassal
-3003320 = {
+lineofugawa1 = {
 	name = name_aki 	#  Ugawa Aki  #TODO replace name
-	dynasty_house = house_ugawa 	# Ugawa Vassal family 
+	dynasty_house = house_ugawa  
 	religion = "cult_ancestors"
 	culture = "bayushi"
 
@@ -189,9 +189,9 @@
 #####################
 #	Shosuro
 #####################
-3000340 = {
+lineofshosurokoshurin2 = {
 	name = name_hametsu 	# Shosuro Hametsu, shosuro daimyo of 1123
-	dynasty = dynasty_shosuro 	# Shosuro  
+	dynasty = dynasty_shosuro 	  
 	religion = "cult_ancestors"
 	culture = "shosuro"
 	
@@ -205,14 +205,14 @@
 	##TODO
 	
 	###Family
-	father = 3000341 # Shosuro Koshurin
+	father = lineofshosurokoshurin1 # Shosuro Koshurin
 
 	1086.1.1 = {
 		birth = yes
 	}
 	1100.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:3000321 reason = rival_historical  #Rival with his sister Bayushi Kachiko
+			set_relation_rival = { target = character:lineofshosurokoshurin3 reason = rival_historical  #Rival with his sister Bayushi Kachiko
 			}
 		}
 	}
@@ -225,9 +225,9 @@
 
 }
 
-3000341 = {
+lineofshosurokoshurin1 = {
 	name = name_koshurin 	# Shosuro Koshurin, previous Shosuro. Taken from L5R 4e lore 'cause I need a father to Kachiko & Hametsu to make them siblings
-	dynasty = dynasty_shosuro 	# Shosuro  
+	dynasty = dynasty_shosuro 	  
 	religion = "cult_ancestors"
 	culture = "shosuro"
 
@@ -243,9 +243,9 @@
 	}
 }
 ##### Vassal
-3003340 = {
+lineofjitsuyoteki1 = {
 	name = name_aki 	#  jitsuyoteki  Aki  #TODO replace name
-	dynasty = dynasty_jitsuyoteki 	# jitsuyoteki  Vassal family 
+	dynasty = dynasty_jitsuyoteki 
 	religion = "cult_ancestors"
 	culture = "shosuro"
 
@@ -260,9 +260,9 @@
 	}
 }
 
-3003341 = {
+lineofkochako1 = {
 	name = name_aki 	#  Kochako  Aki  #TODO replace name
-	dynasty_house = house_kochako 	# Kochako  Vassal family 
+	dynasty_house = house_kochako 
 	religion = "cult_ancestors"
 	culture = "shosuro"
 
@@ -280,7 +280,7 @@
 #####################
 #	Soshi
 #####################
-3000360 = {
+lineofsoshishiori1 = {
 	name = name_shiori 	# Soshi Shiori, soshi daimyo of 1123
 	dynasty = dynasty_soshi 	# Soshi  
 	religion = "seven_fortunes"
@@ -306,17 +306,8 @@
 
 }
 ##### Random county holder for the Soshi
-3000370 = {
-	name = name_aki 	#  Soshi Aki  #TODO replace name
-	dynasty = dynasty_soshi 	# Soshi  #TODO replace by  like the dynn_morehei
-	religion = "seven_fortunes"
-	culture = "soshi"
-	1100.1.1 = {
-		birth = yes
-	}
-}
 ##### Vassal
-3003360 = {
+lineofnanbu1 = {
 	name = name_aki 	#  Nanbu  Aki  #TODO replace name
 	dynasty = dynasty_nanbu 	# Nanbu  Vassal family 
 	religion = "seven_fortunes"

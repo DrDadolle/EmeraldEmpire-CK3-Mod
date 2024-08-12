@@ -2,21 +2,21 @@ d_matsu = {
 	1082.1.1 = { 
 		liege = "k_lion_clan"
 		succession_laws = { female_preference_law }
-		holder = 3000123 # Matsu Uniri
+		holder = lineofmatsuuniri1 # Matsu Uniri
 	}
 	1100.1.1 = { 
-		holder = 3000121 # Matsu Tsuko
+		holder = lineofmatsuuniri2 # Matsu Tsuko
 	}
 }
 
 c_yama_province = {
 	1082.1.1 = { 
 		liege = "d_matsu"
-		holder = 3000123 # Matsu Uniri
+		holder = lineofmatsuuniri1 # Matsu Uniri
 		succession_laws = { female_preference_law }
 	}
 	1100.1.1 = { 
-		holder = 3000121 # Matsu Tsuko
+		holder = lineofmatsuuniri2 # Matsu Tsuko
 		change_development_level = 10
 	}
 }
@@ -24,11 +24,11 @@ c_yama_province = {
 c_azuma_province = {
 	1082.1.1 = { 
 		liege = "d_matsu"
-		holder = 3000123 # Matsu Uniri
+		holder = lineofmatsuuniri1 # Matsu Uniri
 		succession_laws = { female_preference_law }
 	}
 	1100.1.1 = { 
-		holder = 3000121 # Matsu Tsuko
+		holder = lineofmatsuuniri2 # Matsu Tsuko
 		change_development_level = 15
 	}
 }
@@ -36,11 +36,11 @@ c_azuma_province = {
 c_heigen_province = {
 	1082.1.1 = { 
 		liege = "d_matsu"
-		holder = 3003120 # Matsu Uniri
+		holder = lineofkoritome1 # Matsu Uniri
 		succession_laws = { female_preference_law }
 	}
 	1100.1.1 = { 
-		holder = 3003120 # Koritome Aki #TODO change name
+		holder = lineofkoritome1 # Koritome Aki #TODO change name
 		change_development_level = 10
 	}
 }
@@ -48,11 +48,11 @@ c_heigen_province = {
 c_kaeru_province = {
 	1082.1.1 = { 
 		liege = "d_matsu"
-		holder = 3000123 # Matsu Uniri
+		holder = lineofmatsuuniri1 # Matsu Uniri
 		succession_laws = { female_preference_law }
 	}
 	1100.1.1 = { 
-		holder = 3000122 # Matsu Hiroru
+		holder = lineofmatsuuniri3 # Matsu Hiroru
 		change_development_level = 15
 	}
 }
@@ -60,7 +60,7 @@ c_kaeru_province = {
 c_tonfajutsen_province = {
 	1123.1.1 = { 
 		liege = "d_matsu"
-		holder = 3000130 # TODO placeholder name
+		holder = placeholdermatsu1 
 		succession_laws = { female_preference_law }
 		change_development_level = 10
 	}
@@ -69,7 +69,7 @@ c_tonfajutsen_province = {
 c_yojin_province = {
 	1123.1.1 = { 
 		liege = "d_matsu"
-		holder = 3000130 # TODO placeholder name
+		holder = placeholdermatsu1 
 		succession_laws = { female_preference_law }
 		change_development_level = 20
 	}
@@ -78,7 +78,7 @@ c_yojin_province = {
 c_gakka_province = {
 	1123.1.1 = { 
 		liege = "d_matsu"
-		holder = 3000131 # TODO placeholder name
+		holder = placeholdermatsu2 
 		succession_laws = { female_preference_law }
 		change_development_level = 10
 	}
@@ -87,7 +87,7 @@ c_gakka_province = {
 c_chugen_province = {
 	1123.1.1 = { 
 		liege = "d_matsu"
-		holder = 3000131 # TODO placeholder name
+		holder = placeholdermatsu2 
 		succession_laws = { female_preference_law }
 		change_development_level = 10
 	}

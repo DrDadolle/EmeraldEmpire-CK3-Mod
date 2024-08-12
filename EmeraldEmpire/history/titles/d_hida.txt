@@ -1,14 +1,14 @@
 d_hida = {
 	1110.1.1 = {
 		liege = "k_crab_clan"
-		holder = 3000400 # Hida Kisada
+		holder = lineofhidakisada1 # Hida Kisada
 	}
 }
 
 c_ishibei_province = {
 	1110.1.1 = {
 		liege = "d_hida"
-		holder = 3003400 # placeholder count
+		holder = lineofkakeguchi1
 		change_development_level = 8
 	}
 }
@@ -16,14 +16,14 @@ c_ishibei_province = {
 # b_shiro_kakeguchi = {
 # 	1123.1.1 = {
 # 		liege = "c_ishibei_province"
-# 		holder = 3003400 # Kakeguchi Aki  #TODO replace name
+# 		holder = lineofkakeguchi1 # Kakeguchi Aki  #TODO replace name
 # 	}
 # }
 
 c_kyoukan_province = {
 	1110.1.1 = {
 		liege = "d_hida"
-		holder = 3000400 # Hida Kisada
+		holder = lineofhidakisada1 # Hida Kisada
 		change_development_level = 13
 	}
 }
@@ -31,14 +31,14 @@ c_kyoukan_province = {
 b_ugawari_toride = {
 	1110.1.1 = {
 		liege = "c_kyoukan_province"
-		holder = 3003460 # Ugawari Aki  #TODO replace name
+		holder = lineofugawari1 # Ugawari Aki  #TODO replace name
 	}
 }
 
 b_kyuden_moshibaru = {
 	1110.1.1 = {
 		liege = "c_kyoukan_province"
-		holder = 3003401 # Moshibaru Aki  #TODO replace name
+		holder = lineofkakeguchi2 # Moshibaru Aki  #TODO replace name
 	}
 }
 
@@ -46,7 +46,7 @@ b_kyuden_moshibaru = {
 c_juuin_province = {
 	1110.1.1 = {
 		liege = "d_hida"
-		holder = 3000410 # placeholder count
+		holder = placeholderhida1
 		change_development_level = 8
 	}
 }
@@ -54,7 +54,7 @@ c_juuin_province = {
 c_ishigaki_province = {
 	1110.1.1 = {
 		liege = "d_hida"
-		holder = 3000411 # placeholder count
+		holder = placeholderhida2
 		change_development_level = 4
 	}
 }
@@ -62,7 +62,7 @@ c_ishigaki_province = {
 c_garanto_province_crab = {
 	1110.1.1 = {
 		liege = "d_hiruma"
-		holder = 3000420 # Hiruma Yoshino
+		holder = lineofhirumayoshino1 # Hiruma Yoshino
 		change_development_level = 9
 	}
 }
@@ -70,7 +70,7 @@ c_garanto_province_crab = {
 c_shinsei_last_hope = {
 	1110.1.1 = {
 		liege = "d_hida"
-		holder = 3000411 # placeholder count
+		holder = placeholderhida2
 		change_development_level = 4
 	}
 }

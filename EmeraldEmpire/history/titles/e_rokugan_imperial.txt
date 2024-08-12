@@ -5,7 +5,7 @@ e_rokugan = {
 	}
 
 	1103.1.1 = {
-		holder = 3001000 # Hantei 38th
+		holder = lineofhantei38 # Hantei 38th
 	}
 }
 
@@ -16,7 +16,7 @@ d_rokugani_faith = {
 	}
 
 	1103.1.1 = {
-		holder = 3001000 # Hantei 38th
+		holder = lineofhantei38 # Hantei 38th
 	}
 }
 
@@ -28,7 +28,7 @@ k_imperial_families = {
 
 	1103.1.1 = {
 		liege = "e_rokugan"
-		holder = 3001000 # Hantei 38th
+		holder = lineofhantei38 # Hantei 38th
 	}
 }
 
@@ -40,7 +40,7 @@ d_hantei = {
 
 	1103.1.1 = {
 		liege = "k_imperial_families"
-		holder = 3001000 # Hantei 38th
+		holder = lineofhantei38 # Hantei 38th
 	}
 }
 
@@ -52,7 +52,7 @@ c_otosan_uchi_province = {
 
 	1103.1.1 = {
 		liege = "d_hantei"
-		holder = 3001000 # Hantei 38th
+		holder = lineofhantei38 # Hantei 38th
 		change_development_level = 40
 	}
 }
@@ -64,7 +64,7 @@ d_otomo = {
 	}
 
 	1123.1.1 = {
-		holder = 3001040 # Otomo Sorai
+		holder = lineofotomosorai1 # Otomo Sorai
 	}
 }
 
@@ -76,7 +76,7 @@ d_seppun = {
 	}
 
 	1123.1.1 = {
-		holder = 3001020 # Seppun Daiori
+		holder = lineofseppundaiori1 # Seppun Daiori
 	}
 }
 
@@ -88,7 +88,7 @@ c_seppun_province = {
 	}
 
 	1123.1.1 = {
-		holder = 3001020 # Seppun Daiori
+		holder = lineofseppundaiori1 # Seppun Daiori
 		change_development_level = 30
 	}
 }
@@ -101,7 +101,7 @@ c_seppun_province_2 = {
 	}
 
 	1123.1.1 = {
-		holder = 3001020 # Seppun Daiori
+		holder = lineofseppundaiori1 # Seppun Daiori
 		change_development_level = 30
 	}
 }
@@ -114,7 +114,7 @@ c_seppun_province_3 = {
 	}
 
 	1123.1.1 = {
-		holder = 3001030 # TODO placeholder name
+		holder = placeholderseppun1 
 		change_development_level = 30
 	}
 }
@@ -127,7 +127,7 @@ d_miya = {
 	}
 
 	1123.1.1 = {
-		holder = 3001050 # Miya Satoshi
+		holder = lineofmiyasatoshi1 # Miya Satoshi
 	}
 }
 
@@ -139,7 +139,7 @@ c_miya_province = {
 	}
 
 	1123.1.1 = {
-		holder = 3001050 # Miya Satoshi
+		holder = lineofmiyasatoshi1 # Miya Satoshi
 		change_development_level = 15
 	}
 }
@@ -147,7 +147,7 @@ c_miya_province = {
 k_emerald_champ = {
 	1123.1.1 = { #TODO for now, it's not historic, but emerald champion stuff is not vanilla friendly. To code later
 		liege = "e_rokugan"
-		#holder = 3000101 # Toturi
+		#holder = lineofakododaio2 # Toturi
 		change_development_level = 30
 	}
 }

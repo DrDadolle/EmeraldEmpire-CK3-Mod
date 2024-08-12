@@ -8,9 +8,9 @@ k_phoenix_clan = {
 	# 	succession_laws = { phoenix_elective_succession_law }
 	# }
 	1110.1.1 = {
-		holder = 3000201 # Shiba Ujimitsu
+		holder = lineofshiba1 # Shiba Ujimitsu
 	}
 	1123.4.25 = {
-		holder = 3000200 # Shiba Tsukune
+		holder = lineofshiba2 # Shiba Tsukune
 	}
 }

@@ -10,16 +10,16 @@ war = {
 		c_toshi_rambo
 	}
 	casus_belli = claim_cb
-	attackers = { 3000101 } # Akodo Toturi
-	defenders = { 3000001 } # Doji Hotaru
-	claimant = 3000101
+	attackers = { lineofakododaio2 } # Akodo Toturi
+	defenders = { lineofdojisatsume2 } # Doji Hotaru
+	claimant = lineofakododaio2
 
-	3000101 = {
+	lineofakododaio2 = {
 		1123.5.1 = {
 			location = 1596
 		}
 	}
-	3000001 = {
+	lineofdojisatsume2 = {
 		1123.5.1 = {
 			location = 63
 		}

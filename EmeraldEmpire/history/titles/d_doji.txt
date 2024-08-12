@@ -2,11 +2,11 @@ d_doji = {
 
 	1110.1.1 = {
 		liege = "k_crane_clan"
-		holder = 3000003 # Doji Satsume
+		holder = lineofdojisatsume1 # Doji Satsume
 	}
 
 	1123.1.1 = { 
-		holder = 3000001 # Doji Hotaru
+		holder = lineofdojisatsume2 # Doji Hotaru
 	}
 }
 
@@ -14,10 +14,10 @@ c_oyomesan_province = {
 
 	1110.1.1 = {
 		liege = "d_doji"
-		holder = 3000003 # Doji Satsume
+		holder = lineofdojisatsume1 # Doji Satsume
 	}
 	1123.1.1 = { 
-		holder = 3000001 # Doji Hotaru
+		holder = lineofdojisatsume2 # Doji Hotaru
 		change_development_level = 20
 	}
 }
@@ -26,10 +26,10 @@ c_kazenmuketsu_province = {
 
 	1110.1.1 = {
 		liege = "d_doji"
-		holder = 3000003 # Doji Satsume
+		holder = lineofdojisatsume1 # Doji Satsume
 	}
 	1123.1.1 = { 
-		holder = 3000001 # Doji Hotaru
+		holder = lineofdojisatsume2 # Doji Hotaru
 		change_development_level = 20
 	}
 }
@@ -38,10 +38,10 @@ c_itoshii_province = {
 
 	1110.1.1 = {
 		liege = "d_doji"
-		holder = 3000003 # Doji Satsume
+		holder = lineofdojisatsume1 # Doji Satsume
 	}
 	1123.1.1 = { 
-		holder = 3000002 # Doji Kuwanan
+		holder = lineofdojisatsume3 # Doji Kuwanan
 		change_development_level = 15
 	}
 }
@@ -49,7 +49,7 @@ c_itoshii_province = {
 c_kougen_province = {
 	1123.1.1 = { 
 		liege = "d_doji"
-		holder = 3000010 # Doji Aki # Random County Holder
+		holder = placeholderdoji1 # Doji Aki
 		change_development_level = 15
 	}
 }
@@ -57,7 +57,7 @@ c_kougen_province = {
 c_umoeru_province = {
 	1123.1.1 = { 
 		liege = "d_doji"
-		holder = 3000011 # Doji Tsukasa # Random County Holder
+		holder = placeholderdoji2 # Doji Tsukasa
 		change_development_level = 15
 	}
 }

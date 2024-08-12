@@ -40,7 +40,7 @@ create_artifact_chikara_ancestral_sword_crab_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 1110.1.1
-			recipient = character:3000400 #Hida Kisada
+			recipient = character:lineofhidakisada1 #Hida Kisada
 		}
 		# add_artifact_title_history = {
 		# 	date =  401.1.1
@@ -90,7 +90,7 @@ create_artifact_fukutsu_ancestral_armor_crab_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 1110.1.1
-			recipient = character:3000400 #Hida Kisada
+			recipient = character:lineofhidakisada1 #Hida Kisada
 		}
 	}
 }
@@ -136,7 +136,7 @@ create_artifact_shukujo_ancestral_sword_crane_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 1123.1.1
-			recipient = character:3000001 #Doji Hotaru
+			recipient = character:lineofdojisatsume2 #Doji Hotaru
 		}
 	}
 }
@@ -179,7 +179,7 @@ create_artifact_sasageru_ancestral_armor_crane_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 1123.1.1
-			recipient = character:3000001 #Doji Hotaru
+			recipient = character:lineofdojisatsume2 #Doji Hotaru
 		}
 	}
 }
@@ -222,7 +222,7 @@ create_artifact_kotoku_ancestral_yari_daidoji_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 1123.1.1
-			recipient = character:3000060 # Daidoji Uji
+			recipient = character:lineofdaidojiuji1 # Daidoji Uji
 		}
 
 	}
@@ -273,12 +273,12 @@ create_artifact_shori_ancestral_sword_lion_effect = {
         add_artifact_history = {
 			type = inherited
 			date = 1123.1.1
-			recipient = character:3000102 # Akodo Arasou
+			recipient = character:lineofakododaio3 # Akodo Arasou
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 1123.3.1
-			recipient = character:3000101 #Akodo Toturi
+			recipient = character:lineofakododaio2 #Akodo Toturi
 		}
 	}
 }
@@ -321,12 +321,12 @@ create_artifact_junsui_ancestral_armor_lion_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 1123.1.1
-			recipient = character:3000102 # Akodo Arasou
+			recipient = character:lineofakododaio3 # Akodo Arasou
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 1123.3.1
-			recipient = character:3000101 #Akodo Toturi
+			recipient = character:lineofakododaio2 #Akodo Toturi
 		}
 	}
 }
@@ -373,12 +373,12 @@ create_artifact_ofushikai_ancestral_sword_phoenix_effect = {
         add_artifact_history = {
 			type = inherited
 			date = 1110.1.1
-			recipient = character:3000201 # Shiba Ujimitsu
+			recipient = character:lineofshiba1 # Shiba Ujimitsu
 		}
         add_artifact_history = {
 			type = inherited
 			date = 1123.4.25
-			recipient = character:3000200 # Shiba Tsukune
+			recipient = character:lineofshiba2 # Shiba Tsukune
 		}
 	}
 }
@@ -421,12 +421,12 @@ create_artifact_mezameru_ancestral_armor_phoenix_effect = {
         add_artifact_history = {
 			type = inherited
 			date = 1110.1.1
-			recipient = character:3000201 # Shiba Ujimitsu
+			recipient = character:lineofshiba1 # Shiba Ujimitsu
 		}
         add_artifact_history = {
 			type = inherited
 			date = 1123.4.25
-			recipient = character:3000200 # Shiba Tsukune
+			recipient = character:lineofshiba2 # Shiba Tsukune
 		}
 	}
 }
@@ -473,12 +473,12 @@ create_artifact_itsuwari_ancestral_sword_scorpion_effect = {
         add_artifact_history = {
 			type = inherited
 			date = 1080.1.1
-			recipient = character:3000341 # Shosuro Koshurin
+			recipient = character:lineofshosurokoshurin1 # Shosuro Koshurin
 		}
         add_artifact_history = {
 			type = inherited
 			date = 1111.1.1 
-			recipient = character:3000340 # Shosuro Hametsu
+			recipient = character:lineofshosurokoshurin2 # Shosuro Hametsu
 		}
 	}
 }
@@ -526,7 +526,7 @@ create_artifact_hayai_ancestral_sword_unicorn_effect = {
         add_artifact_history = {
 			type = inherited
 			date = 1110.1.1
-			recipient = character:3000500 # Shinjo Altansarnai
+			recipient = character:lineofshinjoaltansarnai1 # Shinjo Altansarnai
 		}
 	}
 }
@@ -569,7 +569,7 @@ create_artifact_yuki_ancestral_armor_unicorn_effect = {
         add_artifact_history = {
 			type = inherited
 			date = 1110.1.1
-			recipient = character:3000500 # Shinjo Altansarnai
+			recipient = character:lineofshinjoaltansarnai1 # Shinjo Altansarnai
 		}
 	}
 }
@@ -616,7 +616,7 @@ create_artifact_kunshi_ancestral_sword_imperial_effect = {
         add_artifact_history = {
 			type = inherited
 			date =  1103.1.1
-			recipient = character:3001000 # Hantei 38th
+			recipient = character:lineofhantei38 # Hantei 38th
 		}
 	}
 }
@@ -661,7 +661,7 @@ create_artifact_ancestral_sword_sparrow_effect = {
         add_artifact_history = {
 			type = inherited
 			date =  1123.1.1
-			recipient = character:3002030 # Suzume Kashira
+			recipient = character:lineofsuzume1 # Suzume Kashira
 		}
 	}
 }
@@ -704,7 +704,7 @@ create_artifact_ancestral_sword_centipede_effect = {
         add_artifact_history = {
 			type = inherited
 			date =  1123.1.1
-			recipient = character:3002000 # Moshi Chiasa
+			recipient = character:lineofmoshi1 # Moshi Chiasa
 		}
 	}
 }
@@ -747,7 +747,7 @@ create_artifact_shoubai_and_sakusen_ancestral_sword_mantis_effect = {
         add_artifact_history = {
 			type = inherited
 			date =  1123.1.1
-			recipient = character:3002060 #  Yoritomo
+			recipient = character:lineofyoritomo1 #  Yoritomo
 		}
 	}
 }
@@ -790,7 +790,7 @@ create_artifact_kaminari_ancestral_armor_mantis_effect = {
         add_artifact_history = {
 			type = inherited
 			date =  1123.1.1
-			recipient = character:3002060 #  Yoritomo
+			recipient = character:lineofyoritomo1 #  Yoritomo
 		}
 	}
 }
@@ -833,7 +833,7 @@ create_artifact_ancestral_sword_dragonfly_effect = {
         add_artifact_history = {
 			type = inherited
 			date =  1123.1.1
-			recipient = character:3002100 # Tonbo Toryu
+			recipient = character:lineoftonbo1 # Tonbo Toryu
 		}
 	}
 }
@@ -876,7 +876,7 @@ create_artifact_ukyo_ancestral_sword_fox_effect = {
         add_artifact_history = {
 			type = inherited
 			date =  1123.1.1
-			recipient = character:3002020 # Kitsune Gohei
+			recipient = character:lineofkitsune1 # Kitsune Gohei
 		}
 	}
 }
@@ -919,7 +919,7 @@ create_artifact_bouishi_kasuga_ancestral_sword_tortoise_effect = {
         add_artifact_history = {
 			type = inherited
 			date =  1123.1.1
-			recipient = character:3002010 # Kasuga Gima
+			recipient = character:lineofkasuga1 # Kasuga Gima
 		}
 	}
 }
@@ -962,7 +962,7 @@ create_artifact_jadoku_ancestral_sword_snake_effect = {
         add_artifact_history = {
 			type = inherited
 			date =  401.1.1
-			recipient = character:chudason 
+			recipient = character:lineofchuda2 
 		}
 	}
 }
@@ -1005,7 +1005,7 @@ create_artifact_kenno_ancestral_sword_hare_effect = {
         add_artifact_history = {
 			type = inherited
 			date =  1123.1.1
-			recipient = character:3002040 #  Usagi Tsukiko
+			recipient = character:lineofusagi1 #  Usagi Tsukiko
 		}
 	}
 }

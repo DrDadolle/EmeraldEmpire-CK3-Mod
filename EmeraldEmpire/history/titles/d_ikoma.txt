@@ -1,14 +1,14 @@
 d_ikoma = {
 	1098.1.1 = { 
 				liege = "k_lion_clan"
-				holder = 3000160 # Ikoma Anakazu
+				holder = lineofikomaanakazu1 # Ikoma Anakazu
 	}
 }
 
 c_gunsho_province = {
 	1098.1.1 = { 
 		liege = "d_ikoma"
-		holder = 3000160 # Ikoma Anakazu
+		holder = lineofikomaanakazu1 # Ikoma Anakazu
 		change_development_level = 15
 	}
 }
@@ -16,7 +16,7 @@ c_gunsho_province = {
 c_eiyu_province = {
 	1098.1.1 = { 
 		liege = "d_ikoma"
-		holder = 3000160 # Ikoma Anakazu
+		holder = lineofikomaanakazu1 # Ikoma Anakazu
 		change_development_level = 15
 	}
 }
@@ -24,7 +24,7 @@ c_eiyu_province = {
 c_gisei_province = {
 	1123.1.1 = { 
 		liege = "d_ikoma"
-		holder = 3000170 # TODO placeholder name
+		holder = placeholderikoma1 
 		change_development_level = 10
 	}
 }
@@ -32,7 +32,7 @@ c_gisei_province = {
 c_ikota_province = {
 	1123.1.1 = { 
 		liege = "d_ikoma"
-		holder = 3003160 # Hosokawa Aki # TODO change name
+		holder = lineofhosokawa1 # Hosokawa Aki # TODO change name
 		change_development_level = 10
 	}
 }
@@ -40,7 +40,7 @@ c_ikota_province = {
 c_shiranai_province = {
 	1123.1.1 = { 
 		liege = "d_ikoma"
-		holder = 3000171 # TODO placeholder name
+		holder = placeholderikoma2 
 		change_development_level = 10
 	}
 }

@@ -1,14 +1,14 @@
 d_yasuki = {
 	1111.1.1 = {
 		liege = "k_crab_clan"
-		holder = 3000480 # Yasuki Taka
+		holder = lineofyasukitaka1 # Yasuki Taka
 	}
 }
 
 c_junkin_province = {
 	1111.1.1 = {
 		liege = "d_yasuki"
-		holder = 3000480 # Yasuki Taka
+		holder = lineofyasukitaka1 # Yasuki Taka
 		change_development_level = 15
 	}
 }
@@ -16,7 +16,7 @@ c_junkin_province = {
 c_sunda_mizu_mura_province = {
 	1111.1.1 = {
 		liege = "d_yasuki"
-		holder = 3000480 # Yasuki Taka
+		holder = lineofyasukitaka1 # Yasuki Taka
 		change_development_level = 30
 	}
 }
@@ -26,14 +26,14 @@ c_sunda_mizu_mura_province = {
 b_shiro_kano = {
 	1123.1.1 = {
 		liege = "c_sunda_mizu_mura_province"
-		holder = 3003480 # Kano Aki #TODO replace name
+		holder = lineofkano1 # Kano Aki #TODO replace name
 	}
 }
 ####Vassal Nobuto family
 b_watch_tower_east = {
 	1123.1.1 = {
 		liege = "c_junkin_province"
-		holder = 3003481 # Nobuto Aki #TODO replace name
+		holder = lineofnobuto1 # Nobuto Aki #TODO replace name
 	}
 }
 

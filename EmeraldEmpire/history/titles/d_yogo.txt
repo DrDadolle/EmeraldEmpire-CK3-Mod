@@ -1,7 +1,7 @@
 d_yogo = {
 	1123.1.1 = {
 		liege = "k_scorpion_clan"
-		holder = 3000300 # Yogo Junzo
+		holder = lineofyogojunzo1 # Yogo Junzo
 	}
 
 }
@@ -9,7 +9,7 @@ d_yogo = {
 c_fukitsu_province = {
 	1123.1.1 = {
 		liege = "d_yogo"
-		holder = 3000300 # Yogo Junzo
+		holder = lineofyogojunzo1 # Yogo Junzo
 		change_development_level = 4
 	}
 }
@@ -17,7 +17,7 @@ c_fukitsu_province = {
 c_beiden_province = {
 	1123.1.1 = {
 		liege = "d_yogo"
-		holder = 3003300 # tansaku Aki # TODO replace name
+		holder = lineoftansaku1 # tansaku Aki # TODO replace name
 		change_development_level = 15
 	}
 }

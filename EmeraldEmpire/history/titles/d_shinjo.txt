@@ -1,14 +1,14 @@
 d_shinjo = {
 	1111.1.1 = {
 		liege = "k_unicorn_clan"
-		holder = 3000500 #Shinjo Altansarnai
+		holder = lineofshinjoaltansarnai1 #Shinjo Altansarnai
 	}
 }
 
 c_kouryo_province = {
 	1111.1.1 = {
 		liege = "d_shinjo"
-		holder = 3000500 # Shinjo Altansarnai
+		holder = lineofshinjoaltansarnai1 # Shinjo Altansarnai
 		change_development_level = 20
 	}
 }
@@ -17,7 +17,7 @@ c_kouryo_province = {
 c_bugaisha_province = {
 	1111.1.1 = {
 		liege = "d_shinjo"
-		holder = 3000510 # TODO placeholder count Change for a character very dishonorable !
+		holder = placeholdershinjo1 Change for a character very dishonorable !
 		change_development_level = 5
 	}
 }
@@ -25,7 +25,7 @@ c_bugaisha_province = {
 c_aishou_province = {
 	1111.1.1 = {
 		liege = "d_shinjo"
-		holder = 3003500 # Marta Aki # TODO replace name
+		holder = lineofmarta1 # Marta Aki # TODO replace name
 		change_development_level = 10
 	}
 }
@@ -33,7 +33,7 @@ c_aishou_province = {
 c_haisho_province = {
 	1111.1.1 = {
 		liege = "d_shinjo"
-		holder = 3000511 # TODO placeholder count
+		holder = placeholdershinjo2
 		change_development_level = 10
 	}
 }

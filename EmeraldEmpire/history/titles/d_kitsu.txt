@@ -1,14 +1,14 @@
 d_kitsu = {
 	1123.1.1 = { 
 		liege = "k_lion_clan"
-		holder = 3000140 # Kitsu Takeko
+		holder = lineofkitsutakeko1 # Kitsu Takeko
 	}
 }
 
 c_hayai_province = {
 	1123.1.1 = { 
 		liege = "d_kitsu"
-		holder = 3000140 # Kitsu Takeko
+		holder = lineofkitsutakeko1 # Kitsu Takeko
 		change_development_level = 10
 	}
 }
@@ -16,7 +16,7 @@ c_hayai_province = {
 c_rugashi_province = {
 	1123.1.1 = { 
 		liege = "d_kitsu"
-		holder = 3000140 # Kitsu Takeko
+		holder = lineofkitsutakeko1 # Kitsu Takeko
 		change_development_level = 10
 	}
 }
@@ -24,7 +24,7 @@ c_rugashi_province = {
 c_foshi_province = {
 	1123.1.1 = { 
 		liege = "d_kitsu"
-		holder = 3003141 # Ise Akiko # TODO change name
+		holder = lineofise2 # Ise Akiko # TODO change name
 		change_development_level = 6
 	}
 }
@@ -32,7 +32,7 @@ c_foshi_province = {
 c_daikiri_province = {
 	1123.1.1 = { 
 		liege = "d_kitsu"
-		holder = 3003140 # Ise Aki # TODO change name
+		holder = lineofise1 # Ise Aki # TODO change name
 		change_development_level = 6
 	}
 }

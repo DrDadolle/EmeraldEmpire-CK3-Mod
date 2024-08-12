@@ -1,14 +1,14 @@
 d_asahina = {
 	1123.1.1 = { 
 		liege = "k_crane_clan"
-		holder = 3000040 # Asahina Takamori
+		holder = lineofasahinatakamori1 # Asahina Takamori
 	}
 }
 
 c_shinkyou_province = {
 	1123.1.1 = { 
 		liege = "d_asahina"
-		holder = 3000040 # Asahina Takamori
+		holder = lineofasahinatakamori1 # Asahina Takamori
 		change_development_level = 10 
 	}
 }
@@ -16,7 +16,7 @@ c_shinkyou_province = {
 c_wakiaiai_province = {
 	1123.1.1 = { 
 		liege = "d_asahina"
-		holder = 3000050 # TODO placeholder name
+		holder = placeholderasahina1 
 		change_development_level = 10 
 	}
 }
@@ -24,7 +24,7 @@ c_wakiaiai_province = {
 c_anshin_province = {
 	1123.1.1 = { 
 		liege = "d_asahina"
-		holder = 3000051 # TODO placeholder name
+		holder = placeholderasahina2 
 		change_development_level = 10 
 	}
 }

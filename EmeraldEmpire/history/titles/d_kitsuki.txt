@@ -1,14 +1,14 @@
 d_kitsuki = {
 	1111.1.1 = {
 		liege = "k_dragon_clan"
-		holder = 3000640 # Kitsuki Jusai
+		holder = lineofkitsukijusai1 # Kitsuki Jusai
 	}
 }
 
 c_shinpi_province = {
 	1111.1.1 = {
 		liege = "d_kitsuki"
-		holder = 3000640 # Kitsuki Jusai
+		holder = lineofkitsukijusai1 # Kitsuki Jusai
 		change_development_level = 12
 	}
 }
@@ -16,7 +16,7 @@ c_shinpi_province = {
 c_kaitou = {
 	1111.1.1 = {
 		liege = "d_kitsuki"
-		holder = 3000650 #TODO placeholder count
+		holder = placeholderkitsuki1 #TODO placeholder count
 		change_development_level = 6
 	}
 }
@@ -24,7 +24,7 @@ c_kaitou = {
 c_sinjutsu_province = {
 	1111.1.1 = {
 		liege = "d_kitsuki"
-		holder = 3000651 #TODO placeholder count
+		holder = placeholderkitsuki2 #TODO placeholder count
 		change_development_level = 6
 	}
 }

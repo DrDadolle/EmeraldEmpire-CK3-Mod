@@ -1,7 +1,7 @@
 d_bayushi = {
 	1123.1.1 = {
 		liege = "k_scorpion_clan"
-		holder = 3000320 # Bayushi Shoju
+		holder = lineofbayushishoku1 # Bayushi Shoju
 	}
 
 }
@@ -9,7 +9,7 @@ d_bayushi = {
 c_kunizakai_province = {
 	1123.1.1 = {
 		liege = "d_bayushi"
-		holder = 3000320 # Bayushi Shoju
+		holder = lineofbayushishoku1 # Bayushi Shoju
 		change_development_level = 20
 	}
 }
@@ -17,7 +17,7 @@ c_kunizakai_province = {
 c_hirozu_province = {
 	1123.1.1 = {
 		liege = "d_bayushi"
-		holder = 3000320 # Bayushi Shoju
+		holder = lineofbayushishoku1 # Bayushi Shoju
 		change_development_level = 20
 	}
 }
@@ -25,7 +25,7 @@ c_hirozu_province = {
 c_nezuban_province = {
 	1123.1.1 = {
 		liege = "d_bayushi"
-		holder = 3003520 # Ugawa Aki # TODO replace name
+		holder = lineofbattue1 # Ugawa Aki # TODO replace name
 		change_development_level = 15
 	}
 }
@@ -33,7 +33,7 @@ c_nezuban_province = {
 c_chuuou_province = {
 	1123.1.1 = {
 		liege = "d_bayushi"
-		holder = 3000331 # TODO random placehorlder name
+		holder = lineofugawa1 # TODO random placehorlder name
 		change_development_level = 15
 	}
 }

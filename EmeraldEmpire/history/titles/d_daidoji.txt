@@ -1,14 +1,14 @@
 d_daidoji = {
 	1123.1.1 = { 
 					liege = "k_crane_clan"
-					holder = 3000060 # Daidoji Uji
+					holder = lineofdaidojiuji1 # Daidoji Uji
 	}
 }
 
 c_kosaten_province = {
 	1123.1.1 = { 
 		liege = "d_daidoji"
-		holder = 3000060 # Daidoji Uji
+		holder = lineofdaidojiuji1 # Daidoji Uji
 		change_development_level = 15
 	}
 }
@@ -16,7 +16,7 @@ c_kosaten_province = {
 c_hayaku_province = {
 	1123.1.1 = { 
 		liege = "d_daidoji"
-		holder = 3000060 # Daidoji Uji
+		holder = lineofdaidojiuji1 # Daidoji Uji
 		change_development_level = 20
 	}
 }
@@ -24,7 +24,7 @@ c_hayaku_province = {
 c_sabishii_province = {
 	1123.1.1 = { 
 		liege = "d_daidoji"
-		holder = 3000070 # TODO placeholder name
+		holder = placeholderdaidoji1 
 		change_development_level = 11
 	}
 }
@@ -32,7 +32,7 @@ c_sabishii_province = {
 c_ichigun_province = {
 	1123.1.1 = { 
 		liege = "d_daidoji"
-		holder = 3000071 # TODO placeholder name
+		holder = placeholderdaidoji2 
 		change_development_level = 11
 	}
 }

@@ -1,7 +1,7 @@
 d_mirumoto = {
 	1111.1.1 = {
 		liege = "k_dragon_clan"
-		holder = 3000620 # Mirumoto Masashige
+		holder = lineofmirumotomasashige1 # Mirumoto Masashige
 	}
 }
 
@@ -9,7 +9,7 @@ d_mirumoto = {
 c_toshibu_province = {
 	1111.1.1 = {
 		liege = "d_mirumoto"
-		holder = 3000620 # Mirumoto Masashige
+		holder = lineofmirumotomasashige1 # Mirumoto Masashige
 		change_development_level = 8
 	}
 }
@@ -17,7 +17,7 @@ c_toshibu_province = {
 c_gaien_province = {
 	1111.1.1 = {
 		liege = "d_mirumoto"
-		holder = 3000630 #TODO placeholder count
+		holder = placeholdermirumoto1 #TODO placeholder count
 		change_development_level = 5
 	}
 }
@@ -25,7 +25,7 @@ c_gaien_province = {
 c_yakeishi_province = {
 	1111.1.1 = {
 		liege = "d_mirumoto"
-		holder = 3003620 # Zurui Aki # TODO change name
+		holder = lineofzurui1 # Zurui Aki # TODO change name
 		change_development_level = 5
 	}
 }
@@ -33,7 +33,7 @@ c_yakeishi_province = {
 c_kousou_province = {
 	1111.1.1 = {
 		liege = "d_mirumoto"
-		holder = 3003621 # Kousou Aki # TODO change name
+		holder = lineofkouken1 # Kousou Aki # TODO change name
 		change_development_level = 5
 	}
 }

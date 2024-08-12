@@ -1,9 +1,27 @@
-﻿#####################
+﻿#####################################						
+#####################################						
+######      PHOENIX CLAN       ######						
+#####################################						
+#####################################
+### In order: 				
+#				
+### Shiba Family
+# Vassals and placeholders
+#
+### Isawa Family
+# Vassals and placeholders
+#
+### Asako Family
+# Vassals and placeholders
+#
+### Kaito Family 
+#
+#####################
 #	Shiba
 #####################
-3000200 = {
+lineofshiba2 = {
 	name = name_tsukune 	# Shiba Tsukune, phoenix clan champion of 1123
-	dynasty = dynasty_shiba 	# Shiba
+	dynasty = dynasty_shiba 	
 	religion = "seven_fortunes"
 	culture = "shiba"
 	female = yes
@@ -28,13 +46,13 @@
 	
 	1122.1.1 = {
 		effect = {
-			set_relation_lover = { reason = lover_history target = character:3000222 } # In love with her former charge Isawa Tadaka
+			set_relation_lover = { reason = lover_history target = character:lineofisawaearth2 } # In love with her former charge Isawa Tadaka
 		}
 	}
 	
 	1123.1.1 = {
 		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:3000260 } #friend with  Kaito Kosori since  the Sanpuku Seido incident
+			set_relation_friend = { reason = friend_generic_history target = character:lineofkaito3 } #friend with  Kaito Kosori since  the Sanpuku Seido incident
 			#Rokugan Workaround to add dynasty splendor to Shiba Dynasty for the bookmark 1123
 			# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 			dynasty = { add_dynasty_prestige_level = 10 }
@@ -47,9 +65,9 @@
 	}
 }
 
-3000201 = {
+lineofshiba1 = {
 	name = name_ujimitsu 	# Shiba Ujimitsu, previous phoenix clan champion 
-	dynasty = dynasty_shiba 	# Shiba
+	dynasty = dynasty_shiba 	
 	religion = "seven_fortunes"
 	culture = "shiba"
 	
@@ -70,9 +88,9 @@
 }
 
 
-3000202 = {
+lineofshibakatsuda3 = {
 	name = name_itsuyo 	#  Shiba Itsuyo, wife of Tsume no Doji Takashi
-	dynasty = dynasty_shiba 	# Shiba
+	dynasty = dynasty_shiba 	
 	religion = "seven_fortunes"
 	culture = "shiba"
 	female = yes
@@ -81,17 +99,17 @@
 	# Martial training in the lore
 	
 	#Family
-	father = 3000203 # Shiba Katsuda Retsu
-	mother = 3000204 # Shiba Chisei
+	father = lineofshibakatsuda1 # Shiba Katsuda Retsu
+	mother = lineofshibakatsuda2 # Shiba Chisei
 
 	1101.1.1 = {
 		birth = yes
 	}
 }
 
-3000203 = {
+lineofshibakatsuda1 = {
 	name = name_katsuda	#  Shiba Katsuda, Lord of Nikesake
-	dynasty = dynasty_shiba 	# Shiba
+	dynasty = dynasty_shiba 	
 	religion = "seven_fortunes"
 	culture = "shiba"
 	
@@ -102,13 +120,13 @@
 	}
 	
 	1086.1.1 = {
-		add_spouse = 3000204 # Shiba Chisei
+		add_spouse = lineofshibakatsuda2 # Shiba Chisei
 	}
 }
 
-3000204 = {
+lineofshibakatsuda2 = {
 	name = name_chisei	#  Shiba Chisei, wife of Shiba Katsuda
-	dynasty = dynasty_shiba 	# Shiba
+	dynasty = dynasty_shiba 	
 	religion = "seven_fortunes"
 	culture = "shiba"
 	female = yes
@@ -122,32 +140,10 @@
 
 
 ##### Random county holder for the Shiba
-3000210 = {
-	name = name_aki 	#  Shiba Aki  #TODO replace name
-	dynasty = dynasty_shiba 	# Shiba  #TODO replace by  like the dynn_morehei
-	religion = "seven_fortunes"
-	culture = "shiba"
-
-	1100.1.1 = {
-		birth = yes
-	}
-}
-
-3000211 = {
-	name = name_akiko 	#  Shiba Aki  #TODO replace name
-	dynasty = dynasty_shiba 	# Shiba  #TODO replace by  like the dynn_morehei
-	religion = "seven_fortunes"
-	culture = "shiba"
-	female = yes
-
-	1100.1.1 = {
-		birth = yes
-	}
-}
 ##### Vassal
-3003200 = {
+lineofnasu1 = {
 	name = name_aki 	# Nasu Aki  #TODO replace name
-	dynasty_shiba = house_nasu 	# Nasu Vassal family 
+	dynasty_shiba = house_nasu 	
 	religion = "shinseism"
 	culture = "shiba"
 
@@ -157,9 +153,9 @@
 }
 
 
-3003201 = {
+lineofsodona1 = {
 	name = name_aki 	# Sodona Aki  #TODO replace name
-	dynasty_house = house_sodona 	# Sodona Vassal family 
+	dynasty_house = house_sodona 	
 	religion = "shinseism"
 	culture = "shiba"
 
@@ -169,9 +165,9 @@
 }
 
 
-3003202 = {
+lineofiga1 = {
 	name = name_akiko 	# Iga Akiko  #TODO replace name
-	dynasty = dynasty_iga 	# Iga Vassal family 
+	dynasty = dynasty_iga 	 
 	religion = "seven_fortunes"
 	culture = "shiba"
 	female = yes
@@ -181,9 +177,9 @@
 	}
 }
 
-3003203 = {
+lineofkoganshi1 = {
 	name = name_aki 	# Koganshi Akiko  #TODO replace name
-	dynasty = dynasty_koganshi 	# Koganshi Vassal family 
+	dynasty = dynasty_koganshi 	 
 	religion = "seven_fortunes"
 	culture = "shiba"
 	female = yes
@@ -197,7 +193,7 @@
 #####################
 3000220 = {
 	name = name_eju 	# Isawa Eju, master of Air of 1123
-	dynasty = dynasty_isawa 	# Isawa
+	dynasty = dynasty_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 	
@@ -223,9 +219,9 @@
 	}
 }
 
-3000221 = {
+lineofisawaearth1 = {
 	name = name_rujo 	# Isawa Rujo, master of Earth of 1123
-	dynasty = dynasty_isawa 	# Isawa
+	dynasty = dynasty_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 	
@@ -239,9 +235,9 @@
 	}
 }
 
-3000222 = {
+lineofisawaearth2 = {
 	name = name_tadaka 	# Isawa Tadaka, future master of earth
-	dynasty = dynasty_isawa 	# Isawa
+	dynasty = dynasty_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 	
@@ -254,7 +250,7 @@
 	#TODO
 	
 	### Family
-	father = 3000223 # Isawa Ujina
+	father = lineofisawavoid1 # Isawa Ujina
 	#TODO lover Shiba Tsukune
 	# Sister Isaka Kaede
 
@@ -263,9 +259,9 @@
 	}
 }
 
-3000223 = {
+lineofisawavoid1 = {
 	name = name_ujina 	# Isawa Ujina, master of Void
-	dynasty = dynasty_isawa 	# Isawa
+	dynasty = dynasty_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 	
@@ -288,9 +284,9 @@
 	}
 }
 
-3000224 = {
+lineofisawavoid2 = {
 	name = name_kaede 	# Isawa Kaede,  daughter of the master of Void and future master of the void, spouse of Akodo Toturi
-	dynasty = dynasty_isawa 	# Isawa
+	dynasty = dynasty_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 	female = yes
@@ -307,7 +303,7 @@
 	#TODO
 	
 	### Family
-	father = 3000223 # Isawa Ujina
+	father = lineofisawavoid1 # Isawa Ujina
 	mother = 3000007 # Doji Ninube
 
 	1099.1.1 = {
@@ -315,13 +311,13 @@
 	}
 	
 	1116.1.1 = {
-		spouse = 3000101 # Akoto Toturi Kaede
+		spouse = lineofakododaio2 # Akoto Toturi Kaede
 	}
 }
 
-3000225 = {
+lineofisawafire1 = {
 	name = name_tsuke 	# Isawa Tsuke,  master of Fire in 1123
-	dynasty = dynasty_isawa 	# Isawa
+	dynasty = dynasty_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 
@@ -339,9 +335,9 @@
 	
 }
 
-3000226 = {
+lineofisawawater1 = {
 	name = name_kaiyoko 	# Isawa Kaiyoko,  former master of Water in 1123
-	dynasty = dynasty_isawa 	# Isawa
+	dynasty = dynasty_isawa 
 	religion = "seven_fortunes"
 	culture = "isawa"
 	female = yes
@@ -357,7 +353,7 @@
 	
 }
 ##### Isawa custom characters
-isawa_chuda_line_01 = {
+lineofisawachuda1 = {
 	name = name_giichi 	#  Isawa Giichi, custom character
 	dynasty = dynasty_isawa 	# Isawa 
 	religion = "seven_fortunes"
@@ -390,35 +386,11 @@ isawa_chuda_line_01 = {
 	}
 
 }
-
-
 ##### Random county holder for the Isawa
-3000230 = {
-	name = name_aki 	#  Isawa Aki  #TODO replace name
-	dynasty = dynasty_isawa 	# Isawa  #TODO replace by  like the dynn_morehei
-	religion = "seven_fortunes"
-	culture = "isawa"
-
-	1100.1.1 = {
-		birth = yes
-	}
-}
-
-3000231 = {
-	name = name_akiko 	#  Isawa Akiko #TODO replace name
-	dynasty = dynasty_isawa 	# Isawa  #TODO replace by  like the dynn_morehei
-	religion = "seven_fortunes"
-	culture = "isawa"
-	female = yes
-
-	1100.1.1 = {
-		birth = yes
-	}
-}
 ##### Vassal
-3003220 = { #This vassal exists
+lineofshingon1 = { #This vassal exists
 	name = name_aki 	# Shingon Aki  #TODO replace name
-	dynasty_house = house_shingon 	# Shingon Vassal family 
+	dynasty_house = house_shingon 
 	religion = "seven_fortunes"
 	culture = "isawa"
 
@@ -435,9 +407,9 @@ isawa_chuda_line_01 = {
 #####################
 #	Asako
 #####################
-3000240 = {
+lineofasakowater1 = {
 	name = name_azunami 	# Asako Azunami, master of water of 1123
-	dynasty = dynasty_asako 	# Asako
+	dynasty = dynasty_asako 	
 	religion = "seven_fortunes"
 	culture = "asako"
 	
@@ -462,7 +434,7 @@ isawa_chuda_line_01 = {
 	}
 }
 
-3000241 = {
+lineofikomaanakazu3 = {
 	name = name_akari 	# Asako Akari, wife of Ikoma daimyo
 	dynasty = dynasty_asako 	# Asako
 	religion = "seven_fortunes"
@@ -480,19 +452,19 @@ isawa_chuda_line_01 = {
 	}
 	
 	1095.1.1 = {
-			#spouse = 3000160 #  Ikoma Anakazu
+			#spouse = lineofikomaanakazu1 #  Ikoma Anakazu
 	}
 	1096.1.1 = {
 		effect = {
-			set_relation_lover = { reason = lover_history target = character:3000160 } # In love with her husband Ikoma Anakazu
+			set_relation_lover = { reason = lover_history target = character:lineofikomaanakazu1 } # In love with her husband Ikoma Anakazu
 		}
 	}
 	
 }
 
-3000242 = {
+lineofasakotogama1 = {
 	name = name_togama 	# Asako Togama, Asako daimyo
-	dynasty = dynasty_asako 	# Asako
+	dynasty = dynasty_asako 	
 	religion = "seven_fortunes"
 	culture = "asako"
 	
@@ -508,20 +480,9 @@ isawa_chuda_line_01 = {
 }
 
 ##### Random county holder for the Asako
-3000250 = {
-	name = name_aki 	#  Asako Aki  #TODO replace name
-	dynasty = dynasty_asako 	# Asako  #TODO replace by  like the dynn_morehei
-	religion = "seven_fortunes"
-	culture = "asako"
-
-	1100.1.1 = {
-		birth = yes
-	}
-}
-
-3000251 = {
+placeholderasako2 = {
 	name = name_akiko 	#  Asako Akiko  #TODO replace name
-	dynasty = dynasty_asako 	# Asako  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_asako 	
 	religion = "seven_fortunes"
 	culture = "asako"
 	female = yes
@@ -531,9 +492,9 @@ isawa_chuda_line_01 = {
 	}
 }
 ##### Vassal
-3003240 = {
+lineofnani1 = {
 	name = name_aki 	# Nani Aki  #TODO replace name
-	dynasty_house = house_nani 	# Nani Vassal family 
+	dynasty_house = house_nani 	
 	religion = "seven_fortunes"
 	culture = "asako"
 
@@ -547,9 +508,9 @@ isawa_chuda_line_01 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
 	}
 }
-3003241 = {
+lineofchukan1 = {
 	name = name_aki 	# Chukan Aki  #TODO replace name
-	dynasty_house = house_chukan 	# Chukan Vassal family 
+	dynasty_house = house_chukan 	 
 	religion = "seven_fortunes"
 	culture = "asako"
 
@@ -566,9 +527,9 @@ isawa_chuda_line_01 = {
 #####################
 #	Kaito
 #####################
-3000260 = {
+lineofkaito3 = {
 	name = name_kosori 	# Kaito Kosori, Kaito daimyo of 1123 & niece of Kaito Nobukai
-	dynasty = dynasty_kaito 	# Kaito
+	dynasty = dynasty_kaito 	
 	religion = "seven_fortunes"
 	culture = "kaito"
 	female = yes
@@ -592,7 +553,7 @@ isawa_chuda_line_01 = {
 	}
 	1123.1.1 = {
 		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:3000200 } #friend with Shiba Tsukune since  the Sanpuku Seido incident
+			set_relation_friend = { reason = friend_generic_history target = character:lineofshiba2 } #friend with Shiba Tsukune since  the Sanpuku Seido incident
 		}
 	}
 
@@ -603,9 +564,9 @@ isawa_chuda_line_01 = {
 	}
 }
 
-3000261 = {
+lineofkaito1 = {
 	name = name_nobukai 	# Kaito Nobukai, previous Kaito daimyo of 1123
-	dynasty = dynasty_kaito 	# Kaito
+	dynasty = dynasty_kaito 	
 	religion = "seven_fortunes"
 	culture = "kaito"
 	
@@ -627,9 +588,9 @@ isawa_chuda_line_01 = {
 	}
 }
 
-3000262 = {
+lineofkaito2 = {
 	name = name_uwazuru 	# Kaito Uwazuru, previous Kaito daimyo's son
-	dynasty = dynasty_kaito 	# Kaito
+	dynasty = dynasty_kaito 	
 	religion = "seven_fortunes"
 	culture = "kaito"
 	
@@ -638,7 +599,7 @@ isawa_chuda_line_01 = {
 	### Traits
 	
 	### Family
-	father = 3000261 # Kaito Nobukai
+	father = lineofkaito1 # Kaito Nobukai
 
 	1101.1.1 = {
 		birth = yes

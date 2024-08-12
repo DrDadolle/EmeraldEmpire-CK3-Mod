@@ -1,14 +1,14 @@
 d_ide = {
 	1111.1.1 = {
 		liege = "k_unicorn_clan"
-		holder = 3000540 # Ide Tadaji
+		holder = lineofidetadaji1 # Ide Tadaji
 	}
 }
 
 c_garanto_province_unicorn = {
 	1111.1.1 = {
 		liege = "d_ide"
-		holder = 3000540 # Ide Tadaji
+		holder = lineofidetadaji1 # Ide Tadaji
 		change_development_level = 16
 	}
 }
@@ -17,7 +17,7 @@ c_garanto_province_unicorn = {
 c_eijitsu_province = {
 	1111.1.1 = {
 		liege = "d_ide"
-		holder = 3003540 # Hateru Aki # TODO replace name
+		holder = lineofhateru1 # Hateru Aki # TODO replace name
 		change_development_level = 22
 	}
 }
@@ -25,6 +25,6 @@ c_eijitsu_province = {
 b_shinomen_tower = {
 	1111.1.1 = {
 		liege = "c_eijitsu_province"
-		holder = 3003541 # Suio Aki # TODO replace name
+		holder = lineofsuio1 # Suio Aki # TODO replace name
 	}
 }

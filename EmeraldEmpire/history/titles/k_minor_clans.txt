@@ -4,14 +4,14 @@
 d_kasuga = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002010 # Kasuga Gima
+		holder = lineofkasuga1 # Kasuga Gima
 	}
 }
 
 c_kasuga_province = {
 	1123.1.1 = {
 		liege = "d_kasuga"
-		holder = 3002010 # Kasuga Gima
+		holder = lineofkasuga1 # Kasuga Gima
 		change_development_level = 25
 	}
 }
@@ -21,14 +21,14 @@ c_kasuga_province = {
 d_moshi = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002000 # Moshi Chiasa
+		holder = lineofmoshi1 # Moshi Chiasa
 	}
 }
 
 c_mukade_no_tani_province = {
 	1123.1.1 = {
 		liege = "d_moshi"
-		holder = 3002000 # Moshi Chiasa
+		holder = lineofmoshi1 # Moshi Chiasa
 		change_development_level = 10 
 	}
 }
@@ -38,14 +38,14 @@ c_mukade_no_tani_province = {
 d_kitsune = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002020 # Kitsune Gohei
+		holder = lineofkitsune1 # Kitsune Gohei
 	}
 }
 
 c_kakusu_province = {
 	1123.1.1 = {
 		liege = "d_kitsune"
-		holder = 3002020 # Kitsune Gohei
+		holder = lineofkitsune1 # Kitsune Gohei
 		change_development_level = 15
 	}
 }
@@ -55,14 +55,14 @@ c_kakusu_province = {
 d_suzume = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002030 # Suzume Kashira
+		holder = lineofsuzume1 # Suzume Kashira
 	}
 }
 
 c_suzume_province = {
 	1123.1.1 = {
 		liege = "d_suzume"
-		holder = 3002030 # Suzume Kashira
+		holder = lineofsuzume1 # Suzume Kashira
 	}
 }
 #####################
@@ -71,14 +71,14 @@ c_suzume_province = {
 d_usagi = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002040 #  Usagi Tsukiko
+		holder = lineofusagi1 #  Usagi Tsukiko
 	}
 }
 
 c_usagi_province = {
 	1123.1.1 = {
 		liege = "d_usagi"
-		holder = 3002040 #  Usagi Tsukiko
+		holder = lineofusagi1 #  Usagi Tsukiko
 		change_development_level = 15
 	}
 }
@@ -88,14 +88,14 @@ c_usagi_province = {
 d_tsuruchi = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002050 #  Tsuruchi
+		holder = lineoftsuruchi1 #  Tsuruchi
 	}
 }
 
 c_ashinagabachi_province = {
 	1123.1.1 = {
 		liege = "d_tsuruchi"
-		holder = 3002050 #  Tsuruchi
+		holder = lineoftsuruchi1 #  Tsuruchi
 		change_development_level = 15
 	}
 }
@@ -103,7 +103,7 @@ c_ashinagabachi_province = {
 c_enzan_province = {
 	1123.1.1 = {
 		liege = "d_tsuruchi"
-		holder = 3002050 #  Tsuruchi
+		holder = lineoftsuruchi1 #  Tsuruchi
 		change_development_level = 10
 	}
 }
@@ -111,7 +111,7 @@ c_enzan_province = {
 c_chuuhan_province = {
 	1123.1.1 = {
 		liege = "d_tsuruchi"
-		holder = 3002050 #  Tsuruchi
+		holder = lineoftsuruchi1 #  Tsuruchi
 		change_development_level = 10 
 	}
 }
@@ -119,7 +119,7 @@ c_chuuhan_province = {
 c_shaiga_province = {
 	1123.1.1 = {
 		liege = "d_tsuruchi"
-		holder = 3002050 #  Tsuruchi
+		holder = lineoftsuruchi1 #  Tsuruchi
 		change_development_level = 10 
 	}
 }
@@ -130,14 +130,14 @@ d_yoritomo = {
 
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002060 #  Yoritomo
+		holder = lineofyoritomo1 #  Yoritomo
 	}
 }
 
 c_gotei_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
-		holder = 3002060 #  Yoritomo
+		holder = lineofyoritomo1 #  Yoritomo
 		change_development_level = 22
 	}
 }
@@ -145,7 +145,7 @@ c_gotei_province = {
 c_koutetsukan_province_mantis = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
-		holder = 3002060 #  Yoritomo
+		holder = lineofyoritomo1 #  Yoritomo
 		change_development_level = 18
 	}
 }
@@ -153,7 +153,7 @@ c_koutetsukan_province_mantis = {
 c_inazuma_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
-		holder = 3002060 #  Yoritomo
+		holder = lineofyoritomo1 #  Yoritomo
 		change_development_level = 18
 	}
 }
@@ -161,7 +161,7 @@ c_inazuma_province = {
 c_kaze_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
-		holder = 3002065 #  TODO placeholder
+		holder = placeholderyoritomo1 #  TODO placeholder
 		change_development_level = 5
 	}
 }
@@ -169,7 +169,7 @@ c_kaze_province = {
 c_irie_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
-		holder = 3002065 #  TODO placeholder
+		holder = placeholderyoritomo1 #  TODO placeholder
 		change_development_level = 2
 	}
 }
@@ -177,7 +177,7 @@ c_irie_province = {
 c_tokigogachu_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
-		holder = 3002065 #  TODO placeholder
+		holder = placeholderyoritomo1 #  TODO placeholder
 		change_development_level = 5
 	}
 }
@@ -185,7 +185,7 @@ c_tokigogachu_province = {
 c_maigosera_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
-		holder = 3002065 #  TODO placeholder
+		holder = placeholderyoritomo1 #  TODO placeholder
 		change_development_level = 5
 	}
 }
@@ -193,7 +193,7 @@ c_maigosera_province = {
 c_komori_province = {
 	1123.1.1 = {
 		liege = "d_yoritomo"
-		holder = 3002065 #  TODO placeholder
+		holder = placeholderyoritomo1 #  TODO placeholder
 		change_development_level = 5
 	}
 }
@@ -203,14 +203,14 @@ c_komori_province = {
 d_nekoma = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002070 #  TODO placeholder
+		holder = lineofnekoma1 #  TODO placeholder
 	}
 }
 
 c_nekoma_province = {
 	1123.1.1 = {
 		liege = "d_nekoma"
-		holder = 3002070 #  TODO placeholder
+		holder = lineofnekoma1 #  TODO placeholder
 		change_development_level = 10 
 	}
 }
@@ -220,14 +220,14 @@ c_nekoma_province = {
 d_tonbo = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002100 # Tonbo Toryu
+		holder = lineoftonbo1 # Tonbo Toryu
 	}
 }
 
 c_tonbo_province = {
 	1123.1.1 = {
 		liege = "d_tonbo"
-		holder = 3002100 # Tonbo Toryu
+		holder = lineoftonbo1 # Tonbo Toryu
 		change_development_level = 10 
 	}
 }
@@ -239,14 +239,14 @@ c_tonbo_province = {
 d_ichiro = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002090 # Ichiro Chuga
+		holder = lineofichiro1 # Ichiro Chuga
 	}
 }
 
 c_ichiro_province = {
 	1123.1.1 = {
 		liege = "d_ichiro"
-		holder = 3002090 # Ichiro Chuga
+		holder = lineofichiro1 # Ichiro Chuga
 		change_development_level = 5
 	}
 }
@@ -257,14 +257,14 @@ c_ichiro_province = {
 d_toritaka = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002080 # TODO placeholder
+		holder = lineoftoritaka1 # TODO placeholder
 	}
 }
 
 c_toritaka_province = {
 	1123.1.1 = {
 		liege = "d_toritaka"
-		holder = 3002080 # TODO placeholder
+		holder = lineoftoritaka1 # TODO placeholder
 		change_development_level = 5
 	}
 }
@@ -275,14 +275,14 @@ c_toritaka_province = {
 d_kaikoga = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002110 # Kaikoga Tsukasa
+		holder = lineofkaikoga1 # Kaikoga Tsukasa
 	}
 }
 
 c_kaikoga_province = {
 	1123.1.1 = {
 		liege = "d_kaikoga"
-		holder = 3002110 # Kaikoga Tsukasa
+		holder = lineofkaikoga1 # Kaikoga Tsukasa
 		change_development_level = 5
 	}
 }
@@ -293,14 +293,14 @@ c_kaikoga_province = {
 d_shika = {
 	1123.1.1 = {
 		liege = "e_rokugan"
-		holder = 3002120 # Shika Renji
+		holder = lineofshika1 # Shika Renji
 	}
 }
 
 c_shika_province = {
 	1123.1.1 = {
 		liege = "d_shika"
-		holder = 3002120 # Shika Renji
+		holder = lineofshika1 # Shika Renji
 		change_development_level = 10
 	}
 }
@@ -313,7 +313,7 @@ c_shika_province = {
 d_chuda = {
 	401.1.1 = {
 		liege = "e_rokugan"
-		holder = chudason
+		holder = lineofchuda2
 	}
 	402.1.1 = {
 		holder = none
@@ -324,13 +324,13 @@ c_chuda_province = {
 
 	401.1.1 = {
 		liege = "d_chuda"
-		holder = chudason
+		holder = lineofchuda2
 	}
 	402.1.1 = {
 		liege = "d_isawa" #Held by Isawa family after the 5 Nights of Shame
 	}
 	1123.1.1 = {
-		holder = isawa_chuda_line_01 # Isawa Akiko #TODO place Holder name
+		holder = lineofisawachuda1 # Isawa Akiko #TODO place Holder name
 		change_development_level = 0
 	}
 }

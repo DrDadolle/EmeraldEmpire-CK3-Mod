@@ -1,10 +1,10 @@
 d_shosuro = {
 	1080.1.1 = {
 		liege = "k_scorpion_clan"
-		holder = 3000341 # Shosuro Koshurin
+		holder = lineofshosurokoshurin1 # Shosuro Koshurin
 	}
 	1111.1.1 = {
-		holder = 3000340 # Shosuro Hametsu
+		holder = lineofshosurokoshurin2 # Shosuro Hametsu
 	}
 
 }
@@ -12,10 +12,10 @@ d_shosuro = {
 c_kawa_province = {
 	1080.1.1 = {
 		liege = "d_shosuro"
-		holder = 3000341 # Shosuro Koshurin
+		holder = lineofshosurokoshurin1 # Shosuro Koshurin
 	}
 	1111.1.1 = {
-		holder = 3000340 # Shosuro Hametsu
+		holder = lineofshosurokoshurin2 # Shosuro Hametsu
 		change_development_level = 20
 	}
 }
@@ -23,7 +23,7 @@ c_kawa_province = {
 c_ryoko_province = {
 	1123.1.1 = {
 		liege = "d_shosuro"
-		holder = 3003340 # jitsuyoteki  Aki # TODO replace name
+		holder = lineofjitsuyoteki1 # jitsuyoteki  Aki # TODO replace name
 		change_development_level = 30
 	}
 }
@@ -31,7 +31,7 @@ c_ryoko_province = {
 c_kakushikoto_province = {
 	1123.1.1 = {
 		liege = "d_shosuro"
-		holder = 3003341 # Kochako Aki # TODO replace name
+		holder = lineofkochako1 # Kochako Aki # TODO replace name
 		change_development_level = 15
 	}
 }

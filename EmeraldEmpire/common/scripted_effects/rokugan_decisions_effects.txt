@@ -515,7 +515,7 @@ reborn_snake_clan_scripted_effect = {
 
 	#Change of dynasty
 	house = { save_scope_as = old_house }
-	hidden_effect = { set_house = character:chudason.house }
+	hidden_effect = { set_house = character:lineofchuda2.house }
 
 	set_culture = culture:chuda
 	# Change culture of your family to chuda 
@@ -551,7 +551,7 @@ reborn_snake_clan_scripted_effect = {
 			}
 			if = {
 				# limit = {house =  old_house}
-				set_house = character:chudason.house
+				set_house = character:lineofchuda2.house
 			}
 		}
 		every_child = {
@@ -562,7 +562,7 @@ reborn_snake_clan_scripted_effect = {
 			}
 			if = {
 				# limit = {house =  old_house}
-				set_house = character:chudason.house
+				set_house = character:lineofchuda2.house
 			}
 		}
 	}

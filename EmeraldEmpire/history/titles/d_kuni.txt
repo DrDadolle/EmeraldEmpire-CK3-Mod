@@ -1,14 +1,14 @@
 d_kuni = {
 	1111.1.1 = {
 		liege = "k_crab_clan"
-		holder = 3000460 # Kuni Yori
+		holder = lineofkuniyori1 # Kuni Yori
 	}
 }
 
 c_adauchi_province = {
 	1111.1.1 = {
 		liege = "d_kuni"
-		holder = 3000460 # Kuni Yori
+		holder = lineofkuniyori1 # Kuni Yori
 		change_development_level = 5
 	}
 }
@@ -16,7 +16,7 @@ c_adauchi_province = {
 c_midakai_province = {
 	1111.1.1 = {
 		liege = "d_kuni"
-		holder = 3000470 # TODO placeholder count
+		holder = placeholderkuni1
 		change_development_level = 5
 	}
 }

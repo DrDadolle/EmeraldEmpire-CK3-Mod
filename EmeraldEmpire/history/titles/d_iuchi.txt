@@ -1,14 +1,14 @@
 d_iuchi = {
 	1111.1.1 = {
 		liege = "k_unicorn_clan"
-		holder = 3000520 # Iuchi Daiyu
+		holder = lineofiuchidaiyu1 # Iuchi Daiyu
 	}
 }
 
 c_kaihi_province = {
 	1111.1.1 = {
 		liege = "d_iuchi"
-		holder = 3000520 # Iuchi Daiyu
+		holder = lineofiuchidaiyu1 # Iuchi Daiyu
 		change_development_level = 15
 	}
 }
@@ -16,7 +16,7 @@ c_kaihi_province = {
 b_tower_kelet = {
 	1123.1.1 = {
 		liege = "c_kaihi_province"
-		holder = 3003520 # Battue Aki #TODO replace name Aki
+		holder = lineofbattue1 # Battue Aki #TODO replace name Aki
 	}
 }
 
@@ -24,7 +24,7 @@ b_tower_kelet = {
 c_shiten_province = {
 	1111.1.1 = {
 		liege = "d_iuchi"
-		holder = 3000530 # TODO placeholder count
+		holder = placeholderiuchi1
 		change_development_level = 8
 	}
 }
@@ -33,7 +33,7 @@ c_shiten_province = {
 c_ujidera_province = {
 	1115.1.1 = {
 		liege = "d_iuchi"
-		holder = 3003521 #  Horiuchi Shoan, Horiuchi founder
+		holder = lineofhoriuchi1 #  Horiuchi Shoan, Horiuchi founder
 		change_development_level = 8
 	}
 }

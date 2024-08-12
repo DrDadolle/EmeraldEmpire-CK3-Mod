@@ -1,9 +1,31 @@
-﻿#####################
+﻿#####################################						
+#####################################						
+######      UNICORN CLAN       ######						
+#####################################						
+#####################################
+### In order: 				
+#				
+### Shinjo Family
+# Vassals and placeholders
+#
+### Iuchi Family
+# Vassals and placeholders
+#
+### Ide Family
+# Vassals and placeholders
+#
+### Utaku Family 
+# Vassals and placeholders
+#
+### Moto Family 
+# Vassals and placeholders
+#
+#####################
 #	Shinjo
 #####################
-3000500 = {
+lineofshinjoaltansarnai1 = {
 	name = name_altansarnai 	# Shinjo Altansarnai, Shinjo Daimyo & Clan champion of 1123
-	dynasty = dynasty_shinjo 	# Shinjo
+	dynasty = dynasty_shinjo 	
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	female = yes
@@ -28,9 +50,9 @@
 	}
 }
 
-3000501 = {
+lineofshinjoaltansarnai2 = {
 	name = name_yasamura 	# Shinjo Yasamura, Shinjo Daimyo's Heir
-	dynasty = dynasty_shinjo 	# Shinjo
+	dynasty = dynasty_shinjo 	
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	
@@ -44,16 +66,16 @@
 	##TODO
 	
 	### Family
-	mother = 3000500 # Shinjo Altansarnai
-	father = 3000520 #Iuchi Shahai
+	mother = lineofshinjoaltansarnai1 # Shinjo Altansarnai
+	father = lineofiuchidaiyu1 #Iuchi Shahai
 
 	1098.1.1 = {
 		birth = yes
 	}
 }
-3000502 = {
+lineofshinjoaltansarnai3 = {
 	name = name_haruko 	# Shinjo Haruko, Shinjo Daimyo daughter
-	dynasty = dynasty_shinjo 	# Shinjo
+	dynasty = dynasty_shinjo 	
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	female = yes
@@ -69,17 +91,17 @@
 	##TODO
 	
 	### Family
-	mother = 3000500 # Shinjo Altansarnai
-	father = 3000520 #Iuchi Shahai
+	mother = lineofshinjoaltansarnai1 # Shinjo Altansarnai
+	father = lineofiuchidaiyu1 #Iuchi Shahai
 
 	1100.1.1 = {
 		birth = yes
 	}
 }
 
-3000503 = {
+lineofshinjoaltansarnai4 = {
 	name = name_shono 	# Shinjo Shono, Shinjo Daimyo son
-	dynasty = dynasty_shinjo 	# Shinjo
+	dynasty = dynasty_shinjo 	
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	
@@ -94,8 +116,8 @@
 	##TODO
 	
 	### Family
-	mother = 3000500 # Shinjo Altansarnai
-	father = 3000520 #Iuchi Shahai
+	mother = lineofshinjoaltansarnai1 # Shinjo Altansarnai
+	father = lineofiuchidaiyu1 #Iuchi Shahai
 
 	1103.1.1 = {
 		birth = yes
@@ -103,9 +125,9 @@
 }
 
 ##### Random county holder for the Shinjo
-3000510 = {
+placeholdershinjo1 = {
 	name = name_aki 	#  Shinjo Aki  #TODO replace name
-	dynasty = dynasty_shinjo 	# Shinjo  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_shinjo 
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	
@@ -113,9 +135,9 @@
 		birth = yes
 	}
 }
-3000511 = {
+placeholdershinjo2 = {
 	name = name_akiko 	#  Shinjo Aki  #TODO replace name
-	dynasty = dynasty_shinjo 	# Shinjo  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_shinjo 	
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	female = yes
@@ -125,9 +147,9 @@
 }
 
 ##### Vassal
-3003500 = {
+lineofmarta1 = {
 	name = name_aki 	#  Marta Aki  #TODO replace name
-	dynasty = dynasty_marta 	# Marta Vassal family 
+	dynasty = dynasty_marta 	 
 	religion = "seven_fortunes"
 	culture = "shinjo"
 
@@ -145,9 +167,9 @@
 #####################
 #	Iuchi
 #####################
-3000520 = {
+lineofiuchidaiyu1 = {
 	name = name_daiyu 	# Iuchi Daiyu, Iuchi Daimyo
-	dynasty = dynasty_iuchi 	# Iuchi
+	dynasty = dynasty_iuchi 	
 	religion = "seven_fortunes"
 	culture = "iuchi"
 	
@@ -168,9 +190,9 @@
 		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
 	}
 }
-3000521 = {
+lineofiuchidaiyu2 = {
 	name = name_shahai 	# Iuchi Shahai, Iuchi Daimyo's heir
-	dynasty = dynasty_iuchi 	# Iuchi
+	dynasty = dynasty_iuchi 	
 	religion = "seven_fortunes"
 	culture = "iuchi"
 	female = yes
@@ -185,7 +207,7 @@
 	##TODO
 	
 	### Family
-	father = 3000520 #Iuchi Daiyu
+	father = lineofiuchidaiyu1 #Iuchi Daiyu
 	##TODO how to be solo Iuchi heir ???
 
 	1105.1.1 = {
@@ -193,13 +215,22 @@
 	}
 	1122.1.1 = {
 		effect = {
-			set_relation_lover = { reason = lover_history target = character:3001003 } # In love with Hantei Daisetsu
+			set_relation_lover = { reason = lover_history target = character:lineofhantei38_2 } # In love with Hantei Daisetsu
 		}
 	}
+	1123.1.1 = {
+		effect = {
+            make_character_crypto_religionist_effect = {
+				CRYPTO_RELIGION = faith:faith_cult_of_fu_leng
+			}
+        }
+	}
+
+
 }
 
 ##### Random county holder for the Iuchi
-3000530 = {
+placeholderiuchi1 = {
 	name = name_aki 	#  Iuchi Aki  #TODO replace name
 	dynasty = dynasty_iuchi 	# Iuchi  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
@@ -210,9 +241,9 @@
 	}
 }
 ##### Vassal
-3003520 = {
+lineofbattue1 = {
 	name = name_aki 	#  Battue Aki  #TODO replace name
-	dynasty_house = house_battue 	# Battue Vassal family 
+	dynasty_house = house_battue 	
 	religion = "seven_fortunes"
 	culture = "iuchi"
 
@@ -227,7 +258,7 @@
 	}
 }
 
-3003521 = {
+lineofhoriuchi1 = {
 	name = name_shoan 	#  Horiuchi Shoan, Horiuchi founder
 	dynasty_house = house_horiuchi 	# Horiuchi Vassal family 
 	religion = "seven_fortunes"
@@ -249,9 +280,9 @@
 #####################
 #	Ide
 #####################
-3000540 = {
+lineofidetadaji1 = {
 	name = name_tadaji 	# Ide Tadaji, Ide Daimyo
-	dynasty = dynasty_ide 	# Ide
+	dynasty = dynasty_ide 	
 	religion = "seven_fortunes"
 	culture = "ide"
 	
@@ -275,9 +306,9 @@
 }
 
 ##### Vassal
-3003540 = {
+lineofhateru1 = {
 	name = name_aki 	#  Hateru Aki  #TODO replace name
-	dynasty = dynasty_hateru 	# Hateru Vassal family 
+	dynasty = dynasty_hateru 	
 	religion = "seven_fortunes"
 	culture = "ide"
 
@@ -292,9 +323,9 @@
 	}
 }
 
-3003541 = {
+lineofsuio1 = {
 	name = name_aki 	#  Suio Aki  #TODO replace name
-	dynasty = dynasty_suio 	# Suio Vassal family 
+	dynasty = dynasty_suio 	
 	religion = "seven_fortunes"
 	culture = "ide"
 
@@ -314,9 +345,9 @@
 #####################
 #	Utaku
 #####################
-3000560 = {
+lineofutakurumaru1 = {
 	name = name_rumaru 	# Utaku Rumaru, Utaku Daimyo
-	dynasty = dynasty_utaku 	# Utaku
+	dynasty = dynasty_utaku 	
 	religion = "seven_fortunes"
 	culture = "utaku"
 	
@@ -339,9 +370,9 @@
 }
 
 ##### Random county holder for the Utaku
-3000570 = {
+placeholderutaku1 = {
 	name = name_aki 	#  Utaku Aki  #TODO replace name
-	dynasty = dynasty_utaku 	# Utaku  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_utaku 	
 	religion = "seven_fortunes"
 	culture = "utaku"
 	
@@ -349,9 +380,9 @@
 		birth = yes
 	}
 }
-3000571 = {
+placeholderutaku2 = {
 	name = name_akiko 	#  Utaku Aki  #TODO replace name
-	dynasty = dynasty_utaku 	# Utaku  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_utaku 	
 	religion = "seven_fortunes"
 	culture = "utaku"
 	female = yes
@@ -360,9 +391,9 @@
 	}
 }
 ##### Vassal
-3003560 = {
+lineofnaoko1 = {
 	name = name_akiko 	#  Naoko Aki  #TODO replace name
-	dynasty_house = house_naoko 	# Naoko Vassal family 
+	dynasty_house = house_naoko 	
 	religion = "seven_fortunes"
 	culture = "utaku"
 	female = yes
@@ -380,9 +411,9 @@
 #####################
 #	Moto
 #####################
-3000580 = {
+lineofmotoogodei1 = {
 	name = name_ogodei 	# Moto Ogodei, Moto Daimyo
-	dynasty = dynasty_moto 	# Moto
+	dynasty = dynasty_moto 	
 	religion = "lords_of_the_death"
 	culture = "moto"
 	
@@ -404,9 +435,9 @@
 	}
 }
 
-3000581 = {
+lineofmotoogodei2 = {
 	name = name_khojin 	# Moto Khojin , Moto Daimyo elder daughter but NO heir
-	dynasty = dynasty_moto 	# Moto
+	dynasty = dynasty_moto 	
 	religion = "lords_of_the_death"
 	culture = "moto"
 	female = yes 
@@ -420,7 +451,7 @@
 	##TODO
 	
 	###Family
-	father = 3000580 # Moto Ogodei
+	father = lineofmotoogodei1 # Moto Ogodei
 	#mother = ID # Ujin Hogelun
 	#TODO 2 husband, one wife lol
 	#TODO 8 children, including moto "Altani" little eagle
@@ -430,9 +461,9 @@
 	}
 }
 
-3000582 = {
+lineofmotoogodei3 = {
 	name = name_chagatai 	# Moto Chagatai , Moto Daimyo's heir
-	dynasty = dynasty_moto 	# Moto
+	dynasty = dynasty_moto 	
 	religion = "lords_of_the_death"
 	culture = "moto"
 	
@@ -444,7 +475,7 @@
 	##TODO
 	
 	###Family
-	father = 3000580 # Moto Ogodei
+	father = lineofmotoogodei1 # Moto Ogodei
 
 	1102.1.1 = {
 		birth = yes
@@ -452,9 +483,9 @@
 }
 
 ##### Random county holder for the Moto
-3000590 = {
+placeholdermoto1 = {
 	name = name_aki 	#  Moto Aki  #TODO replace name
-	dynasty = dynasty_moto 	# Moto  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_moto 
 	religion = "lords_of_the_death"
 	culture = "moto"
 	
@@ -462,9 +493,9 @@
 		birth = yes
 	}
 }
-3000591 = {
+placeholdermoto2 = {
 	name = name_akiko 	#  Moto Akiko  #TODO replace name
-	dynasty = dynasty_moto 	# Moto  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_moto 
 	religion = "lords_of_the_death"
 	culture = "moto"
 	female = yes
@@ -473,9 +504,9 @@
 	}
 }
 ##### Vassal
-3003580 = {
+lineofonshigawa1 = {
 	name = name_aki 	#  Onshigawa Aki  #TODO replace name
-	dynasty_house = house_onshigawa 	# Onshigawa Vassal family 
+	dynasty_house = house_onshigawa 
 	religion = "lords_of_the_death"
 	culture = "moto"
 

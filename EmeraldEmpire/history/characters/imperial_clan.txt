@@ -1,9 +1,26 @@
-﻿#####################
+﻿#####################################						
+#####################################						
+######        IMPERIALS        ######						
+#####################################						
+#####################################
+### In order: 				
+#				
+### Hantei Family
+#
+### Seppun Family
+# Vassals and placeholders
+#
+### Otomo Family
+#
+### Miya Family 
+# Vassals and placeholders
+#
+#####################
 #	HANTEI
 #####################
-3001000 = {
+lineofhantei38 = {
 	name = name_jodan 	# Hantei 38th
-	dynasty = dynasty_hantei 	# Hantei
+	dynasty = dynasty_hantei 	
 	religion = "cult_ancestors"
 	culture = "hantei"
 	sexuality = heterosexual
@@ -35,7 +52,7 @@
 
 3001001 = {
 	name = name_hochiahime 	# Hantei Hochiahime, spouse of Hantei 38th
-	dynasty = dynasty_doji 	# Doji
+	dynasty = dynasty_doji 	
 	religion = "seven_fortunes"
 	culture = "doji"
 	sexuality = heterosexual
@@ -53,9 +70,9 @@
 	}
 }
 
-3001002 = {
+lineofhantei38_1 = {
 	name = name_sotorii 	# Hantei Sotorii, elder son of Hantei 38th
-	dynasty = dynasty_hantei 	# Hantei
+	dynasty = dynasty_hantei 	
 	religion = "cult_ancestors"
 	culture = "hantei"
 	
@@ -71,7 +88,7 @@
 	#TODO
 
 	### Family
-	father = 3001000 #Hantei 38th
+	father = lineofhantei38 #Hantei 38th
 	mother = 3001001 #Hantei Hochiahime
 
 	1101.1.1 = {
@@ -79,9 +96,9 @@
 	}
 }
 
-3001003 = {
+lineofhantei38_2 = {
 	name = name_daisetsu 	# Hantei Daisetsu, son of Hantei 38th
-	dynasty = dynasty_hantei 	# Hantei
+	dynasty = dynasty_hantei 	
 	religion = "cult_ancestors"
 	culture = "hantei"
 	
@@ -95,7 +112,7 @@
 	#TODO
 
 	### Family
-	father = 3001000 #Hantei 38th
+	father = lineofhantei38 #Hantei 38th
 	mother = 3001001 #Hantei Hochiahime
 	#Friend with Bayushi Dairu
 
@@ -104,12 +121,12 @@
 	}
 	1122.1.1 = {
 		effect = {
-			set_relation_lover = { reason = lover_history target = character:3000521 } # In love with Iuchi Shahai
+			set_relation_lover = { reason = lover_history target = character:lineofiuchidaiyu2 } # In love with Iuchi Shahai
 		}
 	}
 	1123.1.1 = {
 		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:3000322 } #friend with Bayushi Dairu
+			set_relation_friend = { reason = friend_generic_history target = character:lineofbayushishoku2 } #friend with Bayushi Dairu
 		}
 	}
 	
@@ -117,9 +134,9 @@
 #####################
 #	Seppun
 #####################
-3001020 = {
+lineofseppundaiori1 = {
 	name = name_daiori 	# Seppun Daiori, seppun daimyo
-	dynasty = dynasty_seppun 	# Seppun
+	dynasty = dynasty_seppun 	
 	religion = "shinseism"
 	culture = "seppun"
 	
@@ -144,9 +161,9 @@
 }
 
 ##### Random county holder for the Seppun
-3001030 = {
+placeholderseppun1 = {
 	name = name_aki 	#  Doji Aki  #TODO replace name
-	dynasty = dynasty_seppun 	# Seppun #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_seppun 
 	religion = "shinseism"
 	culture = "seppun"
 
@@ -158,9 +175,9 @@
 #####################
 #	Otomo
 #####################
-3001040 = {
+lineofotomosorai1 = {
 	name = name_sorai 	# Otomo Sorai, Otomo daimyo
-	dynasty = dynasty_hiruma 	# Otomo
+	dynasty = dynasty_otomo
 	religion = "cult_ancestors"
 	culture = "otomo"
 	
@@ -183,9 +200,9 @@
 #####################
 #	Miya
 #####################
-3001050 = {
+lineofmiyasatoshi1 = {
 	name = name_satoshi 	# Miya Satoshi, Imperial herald & master Christanteum
-	dynasty = dynasty_miya 	# Miya
+	dynasty = dynasty_miya 	
 	religion = "shinseism"
 	culture = "miya"
 	
@@ -209,8 +226,8 @@
 }
 
 3001051 = {
-	name = name_tetsua	# Miya Tetsua, imperiial governor of Kaeru Toshi
-	dynasty = dynasty_miya 	# Miya
+	name = name_tetsua	# Miya Tetsua, imperial governor of Kaeru Toshi
+	dynasty = dynasty_miya 	
 	religion = "shinseism"
 	culture = "miya"
 	

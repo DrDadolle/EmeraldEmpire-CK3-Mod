@@ -1,9 +1,31 @@
-﻿#####################
+﻿#####################################						
+#####################################						
+######        CRAB CLAN        ######						
+#####################################						
+#####################################
+### In order: 				
+#				
+### Hida Family
+# Vassals and placeholders
+#
+### Hiruma Family
+# Vassals and placeholders
+#
+### Kaiu Family
+# Vassals and placeholders
+#
+### Kuni Family 
+# Vassals and placeholders
+#
+### Yasuki Family
+# Vassals and placeholders
+#	
+#####################
 #	Hida
 #####################
-3000400 = {
+lineofhidakisada1 = {
 	name = name_kisada 	# Hida Kisada, Hida Daimyo & Clan champion of 1123
-	dynasty = dynasty_hida 	# Hida
+	dynasty = dynasty_hida 
 	religion = "cult_ancestors"
 	culture = "hida"
 	
@@ -39,9 +61,9 @@
 	}
 }
 
-3000401 = {
+lineofhidakisada2 = {
 	name = name_yakamo 	# Hida Yakamo, Hida Daimyo's Heir
-	dynasty = dynasty_hida 	# Hida
+	dynasty = dynasty_hida 	
 	religion = "cult_ancestors"
 	culture = "hida"
 	
@@ -63,16 +85,16 @@
 	##TODO
 	
 	### Family
-	father = 3000400 #Hida Kisada
+	father = lineofhidakisada1 #Hida Kisada
 
 	1094.1.1 = {
 		birth = yes
 	}
 }
 
-3000402 = {
+lineofhidakisada3 = {
 	name = name_o_ushi 	# Hida O-UShi, Hida Daimyo's daughter
-	dynasty = dynasty_hida 	# Hida
+	dynasty = dynasty_hida 	
 	religion = "cult_ancestors"
 	culture = "hida"
 	female = yes
@@ -95,16 +117,16 @@
 	##TODO
 	
 	### Family
-	father = 3000400 #Hida Kisada
+	father = lineofhidakisada1 #Hida Kisada
 
 	1097.1.1 = {
 		birth = yes
 	}
 }
 
-3000403 = {
+lineofhidakisada4 = {
 	name = name_sukune 	# Hida sukune, Hida Daimyo's 3rd child
-	dynasty = dynasty_hida 	# Hida
+	dynasty = dynasty_hida 	
 	religion = "cult_ancestors"
 	culture = "hida"
 	
@@ -126,7 +148,7 @@
 	##TODO
 	
 	### Family
-	father = 3000400 #Hida Kisada
+	father = lineofhidakisada1 #Hida Kisada
 
 	1099.1.1 = {
 		birth = yes
@@ -134,9 +156,9 @@
 }
 
 ##### Random county holder for the Hida
-3000410 = {
+placeholderhida1 = {
 	name = name_aki 	#  Hida Aki  #TODO replace name
-	dynasty = dynasty_hida 	# Hida  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_hida 	
 	religion = "cult_ancestors"
 	culture = "hida"
 	
@@ -144,9 +166,9 @@
 		birth = yes
 	}
 }
-3000411 = {
+placeholderhida2 = {
 	name = name_akiko 	#  Hida Aki  #TODO replace name
-	dynasty = dynasty_hida 	# Hida  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_hida 	#
 	religion = "cult_ancestors"
 	culture = "hida"
 	female = yes
@@ -155,9 +177,9 @@
 	}
 }
 ##### Vassal
-3003400 = {
+lineofkakeguchi1 = {
 	name = name_aki 	#  Kakeguchi Aki  #TODO replace name
-	dynasty = dynasty_kakeguchi 	# Kakeguchi Vassal family 
+	dynasty = dynasty_kakeguchi 
 	religion = "cult_ancestors"
 	culture = "hida"
 
@@ -172,9 +194,9 @@
 	}
 }
 
-3003401 = {
+lineofkakeguchi2 = {
 	name = name_aki 	#  Moshibaru Aki  #TODO replace name
-	dynasty_house = house_moshibaru 	# Moshibaru Vassal family 
+	dynasty_house = house_moshibaru 	
 	religion = "cult_ancestors"
 	culture = "hida"
 
@@ -192,7 +214,7 @@
 #####################
 #	Hiruma
 #####################
-3000420 = {
+lineofhirumayoshino1 = {
 	name = name_yoshino 	# Hiruma Yoshino, Hiruma Daimyo
 	dynasty = dynasty_hiruma 	# Hiruma
 	religion = "cult_ancestors"
@@ -223,9 +245,9 @@
 }
 
 ##### Random county holder for the Hiruma
-3000430 = {
+placeholderhiruma1 = {
 	name = name_aki 	#  Hiruma Aki  #TODO replace name
-	dynasty = dynasty_hiruma 	# Hiruma  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_hiruma 	
 	religion = "cult_ancestors"
 	culture = "hiruma"
 	
@@ -233,9 +255,9 @@
 		birth = yes
 	}
 }
-3000431 = {
+placeholderhiruma2 = {
 	name = name_akiko 	#  Hiruma Aki  #TODO replace name
-	dynasty = dynasty_hiruma 	# Hiruma  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_hiruma 	
 	religion = "cult_ancestors"
 	culture = "hiruma"
 	female = yes
@@ -246,9 +268,9 @@
 #####################
 #	Kaiu
 #####################
-3000440 = {
+lineofkaiushihobu1 = {
 	name = name_shihobu 	# Kaiu Shihobu, Kaiu Daimyo
-	dynasty = dynasty_kaiu 	# Kaiu
+	dynasty = dynasty_kaiu 
 	religion = "cult_ancestors"
 	culture = "kaiu"
 	female = yes
@@ -277,9 +299,9 @@
 }
 
 ##### Random county holder for the Kaiu
-3000450 = {
+placeholderkaiu1 = {
 	name = name_aki 	#  Kaiu Aki  #TODO replace name
-	dynasty = dynasty_kaiu 	# Kaiu  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_kaiu 	
 	religion = "cult_ancestors"
 	culture = "kaiu"
 	
@@ -287,9 +309,9 @@
 		birth = yes
 	}
 }
-3000451 = {
+placeholderkaiu2 = {
 	name = name_akiko 	#  Kaiu Aki  #TODO replace name
-	dynasty = dynasty_kaiu 	# Kaiu  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_kaiu 	
 	religion = "cult_ancestors"
 	culture = "kaiu"
 	female = yes
@@ -298,9 +320,9 @@
 	}
 }
 ##### Vassal
-3003440 = {
+lineofmaisuna1 = {
 	name = name_aki 	#  Maisuna Aki  #TODO replace name
-	dynasty_house = house_maisuna 	# Maisuna Vassal family 
+	dynasty_house = house_maisuna 
 	religion = "cult_ancestors"
 	culture = "kaiu"
 
@@ -317,9 +339,9 @@
 #####################
 #	Kuni
 #####################
-3000460 = {
+lineofkuniyori1 = {
 	name = name_yori 	# Kuni Yori, Kuni Daimyo
-	dynasty = dynasty_kuni 	# Kuni
+	dynasty = dynasty_kuni 
 	religion = "seven_fortunes"
 	culture = "kuni"
 	
@@ -348,9 +370,9 @@
 }
 
 ##### Random county holder for the Kuni
-3000470 = {
+placeholderkuni1 = {
 	name = name_aki 	#  Kuni Aki  #TODO replace name
-	dynasty = dynasty_kuni 	# Kuni  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_kuni 
 	religion = "seven_fortunes"
 	culture = "kuni"
 	
@@ -358,20 +380,10 @@
 		birth = yes
 	}
 }
-3000471 = {
-	name = name_akiko 	#  Kuni Aki  #TODO replace name
-	dynasty = dynasty_kuni 	# Kuni  #TODO replace by  like the dynn_morehei
-	religion = "seven_fortunes"
-	culture = "kuni"
-	female = yes
-	1100.1.1 = {
-		birth = yes
-	}
-}
 ##### Vassal
-3003460 = {
+lineofugawari1 = {
 	name = name_aki 	#  Ugawari Aki  #TODO replace name
-	dynasty_house = house_ugawari 	# Ugawari Vassal family 
+	dynasty_house = house_ugawari 
 	religion = "seven_fortunes"
 	culture = "kuni"
 
@@ -388,9 +400,9 @@
 #####################
 #	Yasuki
 #####################
-3000480 = {
+lineofyasukitaka1 = {
 	name = name_taka 	# Yasuki Taka, Yasuki Daimyo
-	dynasty = dynasty_yasuki 	# Yasuki
+	dynasty = dynasty_yasuki 
 	religion = "seven_fortunes"
 	culture = "yasuki"
 	
@@ -418,9 +430,9 @@
 	}
 }
 
-3000481 = {
+lineofyasukitaka2 = {
 	name = name_oguri 	# Yasuki Oguri, Yasuki Daimyo's heir
-	dynasty = dynasty_yasuki 	# Yasuki
+	dynasty = dynasty_yasuki 	
 	religion = "seven_fortunes"
 	culture = "yasuki"
 	
@@ -433,16 +445,16 @@
 	##TODO
 	
 	### Family 
-	father = 3000480 # Yasuki Taka
+	father = lineofyasukitaka1 # Yasuki Taka
 
 	1105.1.1 = {
 		birth = yes
 	}
 }
 ##### Vassal
-3003480 = {
+lineofkano1 = {
 	name = name_aki 	#  Kano Aki  #TODO replace name
-	dynasty = dynasty_kano 	# Kano Vassal family 
+	dynasty = dynasty_kano 
 	religion = "seven_fortunes"
 	culture = "yasuki"
 
@@ -457,9 +469,9 @@
 	}
 
 }
-3003481 = {
+lineofnobuto1 = {
 	name = name_aki 	#  Nobuto Aki  #TODO replace name
-	dynasty_house = house_nobuto 	# Nobuto Vassal family 
+	dynasty_house = house_nobuto 
 	religion = "seven_fortunes"
 	culture = "yasuki"
 

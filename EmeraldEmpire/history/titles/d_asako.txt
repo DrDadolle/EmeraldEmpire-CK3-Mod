@@ -3,14 +3,14 @@ d_asako = {
 		liege = "k_phoenix_clan"
 	}
 	1123.1.1 = {
-		holder = 3000242 # Asako Togama
+		holder = lineofasakotogama1 # Asako Togama
 	}
 }
 
 c_enjaku_province = {
 	1123.1.1 = {
 		liege = "d_asako"
-		holder = 3000203 #  Shiba Katsuda
+		holder = lineofshibakatsuda1 #  Shiba Katsuda
 		change_development_level = 15
 	}
 }
@@ -18,7 +18,7 @@ c_enjaku_province = {
 c_anshin_phoenix_province = {
 	1123.1.1 = {
 		liege = "d_asako"
-		holder = 3003200 # Nasu Aki #TODO placeholder name
+		holder = lineofnasu1 # Nasu Aki #TODO placeholder name
 		change_development_level = 10 
 	}
 }
@@ -26,7 +26,7 @@ c_anshin_phoenix_province = {
 c_mihari_province = {
 	1123.1.1 = {
 		liege = "d_asako"
-		holder = 3000251 # TODO placeholder name
+		holder = placeholderasako2 
 		change_development_level = 10 
 	}
 }
@@ -34,7 +34,7 @@ c_mihari_province = {
 c_yogen_province = {
 	1123.1.1 = {
 		liege = "d_asako"
-		holder = 3000242 # Asako Togama
+		holder = lineofasakotogama1 # Asako Togama
 		change_development_level = 20
 	}
 }
@@ -42,7 +42,7 @@ c_yogen_province = {
 c_kyuukai_province = {
 	1123.1.1 = {
 		liege = "d_asako"
-		holder = 3000250 # TODO placeholder name
+		holder = lineofnani1 
 		change_development_level = 2
 	}
 }
@@ -50,7 +50,7 @@ c_kyuukai_province = {
 c_enju_province = {
 	1123.1.1 = {
 		liege = "d_asako"
-		holder = 3000250 # TODO placeholder name
+		holder = lineofnani1 
 		change_development_level = 2
 	}
 }
@@ -58,7 +58,7 @@ c_enju_province = {
 c_kirin_province = {
 	1123.1.1 = {
 		liege = "d_asako"
-		holder = 3000251 # TODO placeholder name
+		holder = placeholderasako2 
 		change_development_level = 2
 	}
 }

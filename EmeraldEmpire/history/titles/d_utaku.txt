@@ -2,14 +2,14 @@ d_utaku = {
 	1111.1.1 = {
 		liege = "k_unicorn_clan"
 		succession_laws = { female_preference_law }
-		holder = 3000560 # Utaku Rumaru
+		holder = lineofutakurumaru1 # Utaku Rumaru
 	}
 }
 
 c_manaka_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
-		holder = 3000560 # Utaku Rumaru
+		holder = lineofutakurumaru1 # Utaku Rumaru
 		succession_laws = { female_preference_law }
 		change_development_level = 15
 	}
@@ -18,7 +18,7 @@ c_manaka_province = {
 b_shiro_naoko = {
 	1123.1.1 = {
 		liege = "c_manaka_province"
-		holder = 3003560 # Naoko Aki #TODO change name
+		holder = lineofnaoko1 # Naoko Aki #TODO change name
 		change_development_level = 10
 	}
 }
@@ -26,7 +26,7 @@ b_shiro_naoko = {
 c_isei_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
-		holder = 3000570 # TODO placeholder count
+		holder = placeholderutaku1
 		succession_laws = { female_preference_law }
 		change_development_level = 5
 	}
@@ -35,7 +35,7 @@ c_isei_province = {
 c_tsuriai_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
-		holder = 3000570 # TODO placeholder count
+		holder = placeholderutaku1
 		succession_laws = { female_preference_law }
 		change_development_level = 8
 	}
@@ -44,7 +44,7 @@ c_tsuriai_province = {
 c_koubaku_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
-		holder = 3000571 # TODO placeholder count
+		holder = placeholderutaku2
 		succession_laws = { female_preference_law }
 		change_development_level = 5
 	}
@@ -53,7 +53,7 @@ c_koubaku_province = {
 c_senseki_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
-		holder = 3000571 # TODO placeholder count
+		holder = placeholderutaku2
 		succession_laws = { female_preference_law }
 		change_development_level = 0
 	}

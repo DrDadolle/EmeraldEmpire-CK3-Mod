@@ -1,14 +1,14 @@
 d_kaiu = {
 	1111.1.1 = {
 		liege = "k_crab_clan"
-		holder = 3000440 # Kaiu Shihobu
+		holder = lineofkaiushihobu1 # Kaiu Shihobu
 	}
 }
 
 c_yoake_province = {
 	1111.1.1 = {
 		liege = "d_kaiu"
-		holder = 3000440 # Kaiu Shihobu
+		holder = lineofkaiushihobu1 # Kaiu Shihobu
 		change_development_level = 17
 	}
 }
@@ -16,7 +16,7 @@ c_yoake_province = {
 c_kuda_province = {
 	1111.1.1 = {
 		liege = "d_kaiu"
-		holder = 3000450 # TODO placeholder count
+		holder = placeholderkaiu1
 		change_development_level = 9
 	}
 }
@@ -24,7 +24,7 @@ c_kuda_province = {
 c_hokufuu_province = {
 	1111.1.1 = {
 		liege = "d_kaiu"
-		holder = 3000451 # TODO placeholder count
+		holder = placeholderkaiu2
 		change_development_level = 9
 	}
 }
@@ -32,6 +32,6 @@ c_hokufuu_province = {
 b_maisuna_shiro = {
 	1111.1.1 = {
 		liege = "c_hokufuu_province"
-		holder = 3003440 # Maisuna Aki TODO replace name
+		holder = lineofmaisuna1 # Maisuna Aki TODO replace name
 	}
 }
