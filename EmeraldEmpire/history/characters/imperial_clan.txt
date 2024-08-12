@@ -3,7 +3,7 @@
 #####################
 3001000 = {
 	name = name_jodan 	# Hantei 38th
-	dynasty = 2100031 	# Hantei
+	dynasty = dynasty_hantei 	# Hantei
 	religion = "cult_ancestors"
 	culture = "hantei"
 	sexuality = heterosexual
@@ -35,7 +35,7 @@
 
 3001001 = {
 	name = name_hochiahime 	# Hantei Hochiahime, spouse of Hantei 38th
-	dynasty = 2100001 	# Doji
+	dynasty = dynasty_doji 	# Doji
 	religion = "seven_fortunes"
 	culture = "doji"
 	sexuality = heterosexual
@@ -55,7 +55,7 @@
 
 3001002 = {
 	name = name_sotorii 	# Hantei Sotorii, elder son of Hantei 38th
-	dynasty = 2100031 	# Hantei
+	dynasty = dynasty_hantei 	# Hantei
 	religion = "cult_ancestors"
 	culture = "hantei"
 	
@@ -81,7 +81,7 @@
 
 3001003 = {
 	name = name_daisetsu 	# Hantei Daisetsu, son of Hantei 38th
-	dynasty = 2100031 	# Hantei
+	dynasty = dynasty_hantei 	# Hantei
 	religion = "cult_ancestors"
 	culture = "hantei"
 	
@@ -119,7 +119,7 @@
 #####################
 3001020 = {
 	name = name_daiori 	# Seppun Daiori, seppun daimyo
-	dynasty = 2100033 	# Seppun
+	dynasty = dynasty_seppun 	# Seppun
 	religion = "shinseism"
 	culture = "seppun"
 	
@@ -146,7 +146,7 @@
 ##### Random county holder for the Seppun
 3001030 = {
 	name = name_aki 	#  Doji Aki  #TODO replace name
-	dynasty = 2100033 	# Seppun #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_seppun 	# Seppun #TODO replace by  like the dynn_morehei
 	religion = "shinseism"
 	culture = "seppun"
 
@@ -160,7 +160,7 @@
 #####################
 3001040 = {
 	name = name_sorai 	# Otomo Sorai, Otomo daimyo
-	dynasty = 2100022 	# Otomo
+	dynasty = dynasty_hiruma 	# Otomo
 	religion = "cult_ancestors"
 	culture = "otomo"
 	
@@ -185,7 +185,7 @@
 #####################
 3001050 = {
 	name = name_satoshi 	# Miya Satoshi, Imperial herald & master Christanteum
-	dynasty = 2100034 	# Miya
+	dynasty = dynasty_miya 	# Miya
 	religion = "shinseism"
 	culture = "miya"
 	
@@ -210,7 +210,7 @@
 
 3001051 = {
 	name = name_tetsua	# Miya Tetsua, imperiial governor of Kaeru Toshi
-	dynasty = 2100034 	# Miya
+	dynasty = dynasty_miya 	# Miya
 	religion = "shinseism"
 	culture = "miya"
 	

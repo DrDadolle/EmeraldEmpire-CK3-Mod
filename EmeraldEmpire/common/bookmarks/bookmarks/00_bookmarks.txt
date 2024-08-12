@@ -12,7 +12,7 @@ bm_1123_clanwar = {
 	# Doji Hotaru
 	character = {
 		name = "bookmark_doji_hotaru"
-		dynasty = 2100001
+		dynasty = dynasty_doji
 		dynasty_splendor_level = 10
 		type = female
 		birth = 1098.1.1
@@ -42,7 +42,7 @@ bm_1123_phoenix = {
 	# Doji Hotaru
 	character = {
 		name = "bookmark_isawa_giichi"
-		dynasty = 2100010 #Isawa
+		dynasty = dynasty_isawa #Isawa
 		dynasty_splendor_level = 5
 		type = male
 		birth = 1090.1.1

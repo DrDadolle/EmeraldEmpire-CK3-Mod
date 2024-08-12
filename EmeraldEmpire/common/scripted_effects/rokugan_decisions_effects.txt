@@ -491,7 +491,7 @@ reborn_snake_clan_scripted_effect = {
 		}
 		# Become de jure of snake clan
 		set_de_jure_liege_title = title:d_chuda
-		set_coa = dynasty:2100115 #Chuda
+		set_coa = dynasty:dynasty_chuda #Chuda
 	}
 	title:d_chuda = {
 		change_title_holder = {
@@ -499,7 +499,7 @@ reborn_snake_clan_scripted_effect = {
 			change = scope:change
 		}
 		set_de_jure_liege_title = scope:old_kingdom_liege
-		set_coa = dynasty:2100115 #Chuda
+		set_coa = dynasty:dynasty_chuda #Chuda
 	}
 
 	create_title_and_vassal_change = {

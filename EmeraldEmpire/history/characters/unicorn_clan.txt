@@ -3,7 +3,7 @@
 #####################
 3000500 = {
 	name = name_altansarnai 	# Shinjo Altansarnai, Shinjo Daimyo & Clan champion of 1123
-	dynasty = 2100026 	# Shinjo
+	dynasty = dynasty_shinjo 	# Shinjo
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	female = yes
@@ -30,7 +30,7 @@
 
 3000501 = {
 	name = name_yasamura 	# Shinjo Yasamura, Shinjo Daimyo's Heir
-	dynasty = 2100026 	# Shinjo
+	dynasty = dynasty_shinjo 	# Shinjo
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	
@@ -53,7 +53,7 @@
 }
 3000502 = {
 	name = name_haruko 	# Shinjo Haruko, Shinjo Daimyo daughter
-	dynasty = 2100026 	# Shinjo
+	dynasty = dynasty_shinjo 	# Shinjo
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	female = yes
@@ -79,7 +79,7 @@
 
 3000503 = {
 	name = name_shono 	# Shinjo Shono, Shinjo Daimyo son
-	dynasty = 2100026 	# Shinjo
+	dynasty = dynasty_shinjo 	# Shinjo
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	
@@ -105,7 +105,7 @@
 ##### Random county holder for the Shinjo
 3000510 = {
 	name = name_aki 	#  Shinjo Aki  #TODO replace name
-	dynasty = 2100026 	# Shinjo  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_shinjo 	# Shinjo  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	
@@ -115,7 +115,7 @@
 }
 3000511 = {
 	name = name_akiko 	#  Shinjo Aki  #TODO replace name
-	dynasty = 2100026 	# Shinjo  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_shinjo 	# Shinjo  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "shinjo"
 	female = yes
@@ -127,7 +127,7 @@
 ##### Vassal
 3003500 = {
 	name = name_aki 	#  Marta Aki  #TODO replace name
-	dynasty = 2107034 	# Marta Vassal family 
+	dynasty = dynasty_marta 	# Marta Vassal family 
 	religion = "seven_fortunes"
 	culture = "shinjo"
 
@@ -147,7 +147,7 @@
 #####################
 3000520 = {
 	name = name_daiyu 	# Iuchi Daiyu, Iuchi Daimyo
-	dynasty = 2100030 	# Iuchi
+	dynasty = dynasty_iuchi 	# Iuchi
 	religion = "seven_fortunes"
 	culture = "iuchi"
 	
@@ -170,7 +170,7 @@
 }
 3000521 = {
 	name = name_shahai 	# Iuchi Shahai, Iuchi Daimyo's heir
-	dynasty = 2100030 	# Iuchi
+	dynasty = dynasty_iuchi 	# Iuchi
 	religion = "seven_fortunes"
 	culture = "iuchi"
 	female = yes
@@ -201,7 +201,7 @@
 ##### Random county holder for the Iuchi
 3000530 = {
 	name = name_aki 	#  Iuchi Aki  #TODO replace name
-	dynasty = 2100030 	# Iuchi  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_iuchi 	# Iuchi  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "iuchi"
 	
@@ -212,7 +212,7 @@
 ##### Vassal
 3003520 = {
 	name = name_aki 	#  Battue Aki  #TODO replace name
-	dynasty_house = 2107030 	# Battue Vassal family 
+	dynasty_house = house_battue 	# Battue Vassal family 
 	religion = "seven_fortunes"
 	culture = "iuchi"
 
@@ -229,7 +229,7 @@
 
 3003521 = {
 	name = name_shoan 	#  Horiuchi Shoan, Horiuchi founder
-	dynasty_house = 2107031 	# Horiuchi Vassal family 
+	dynasty_house = house_horiuchi 	# Horiuchi Vassal family 
 	religion = "seven_fortunes"
 	culture = "iuchi"
 	female = yes
@@ -251,7 +251,7 @@
 #####################
 3000540 = {
 	name = name_tadaji 	# Ide Tadaji, Ide Daimyo
-	dynasty = 2100027 	# Ide
+	dynasty = dynasty_ide 	# Ide
 	religion = "seven_fortunes"
 	culture = "ide"
 	
@@ -277,7 +277,7 @@
 ##### Vassal
 3003540 = {
 	name = name_aki 	#  Hateru Aki  #TODO replace name
-	dynasty = 2107033 	# Hateru Vassal family 
+	dynasty = dynasty_hateru 	# Hateru Vassal family 
 	religion = "seven_fortunes"
 	culture = "ide"
 
@@ -294,7 +294,7 @@
 
 3003541 = {
 	name = name_aki 	#  Suio Aki  #TODO replace name
-	dynasty = 2107032 	# Suio Vassal family 
+	dynasty = dynasty_suio 	# Suio Vassal family 
 	religion = "seven_fortunes"
 	culture = "ide"
 
@@ -316,7 +316,7 @@
 #####################
 3000560 = {
 	name = name_rumaru 	# Utaku Rumaru, Utaku Daimyo
-	dynasty = 2100028 	# Utaku
+	dynasty = dynasty_utaku 	# Utaku
 	religion = "seven_fortunes"
 	culture = "utaku"
 	
@@ -341,7 +341,7 @@
 ##### Random county holder for the Utaku
 3000570 = {
 	name = name_aki 	#  Utaku Aki  #TODO replace name
-	dynasty = 2100028 	# Utaku  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_utaku 	# Utaku  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "utaku"
 	
@@ -351,7 +351,7 @@
 }
 3000571 = {
 	name = name_akiko 	#  Utaku Aki  #TODO replace name
-	dynasty = 2100028 	# Utaku  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_utaku 	# Utaku  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "utaku"
 	female = yes
@@ -362,7 +362,7 @@
 ##### Vassal
 3003560 = {
 	name = name_akiko 	#  Naoko Aki  #TODO replace name
-	dynasty_house = 2107028 	# Naoko Vassal family 
+	dynasty_house = house_naoko 	# Naoko Vassal family 
 	religion = "seven_fortunes"
 	culture = "utaku"
 	female = yes
@@ -382,7 +382,7 @@
 #####################
 3000580 = {
 	name = name_ogodei 	# Moto Ogodei, Moto Daimyo
-	dynasty = 2100029 	# Moto
+	dynasty = dynasty_moto 	# Moto
 	religion = "lords_of_the_death"
 	culture = "moto"
 	
@@ -406,7 +406,7 @@
 
 3000581 = {
 	name = name_khojin 	# Moto Khojin , Moto Daimyo elder daughter but NO heir
-	dynasty = 2100029 	# Moto
+	dynasty = dynasty_moto 	# Moto
 	religion = "lords_of_the_death"
 	culture = "moto"
 	female = yes 
@@ -432,7 +432,7 @@
 
 3000582 = {
 	name = name_chagatai 	# Moto Chagatai , Moto Daimyo's heir
-	dynasty = 2100029 	# Moto
+	dynasty = dynasty_moto 	# Moto
 	religion = "lords_of_the_death"
 	culture = "moto"
 	
@@ -454,7 +454,7 @@
 ##### Random county holder for the Moto
 3000590 = {
 	name = name_aki 	#  Moto Aki  #TODO replace name
-	dynasty = 2100029 	# Moto  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_moto 	# Moto  #TODO replace by  like the dynn_morehei
 	religion = "lords_of_the_death"
 	culture = "moto"
 	
@@ -464,7 +464,7 @@
 }
 3000591 = {
 	name = name_akiko 	#  Moto Akiko  #TODO replace name
-	dynasty = 2100029 	# Moto  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_moto 	# Moto  #TODO replace by  like the dynn_morehei
 	religion = "lords_of_the_death"
 	culture = "moto"
 	female = yes
@@ -475,7 +475,7 @@
 ##### Vassal
 3003580 = {
 	name = name_aki 	#  Onshigawa Aki  #TODO replace name
-	dynasty_house = 2107035 	# Onshigawa Vassal family 
+	dynasty_house = house_onshigawa 	# Onshigawa Vassal family 
 	religion = "lords_of_the_death"
 	culture = "moto"
 

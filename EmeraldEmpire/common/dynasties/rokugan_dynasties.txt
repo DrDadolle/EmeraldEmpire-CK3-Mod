@@ -1,325 +1,321 @@
 ﻿##########################
 ##### Crane Clan
 ##########################
-2100001 = {
+dynasty_doji = {
 	name = dynn_doji
 	culture = doji
 	motto = dynn_doji_motto
 }
-# Dynasty house from Doji now
-# 2100002 = {
-# 	name = dynn_daidoji
-# 	culture = daidoji
-# 	motto = dynn_daidoji_motto
-# }
-# Dynasty house from Isawa now
-# 2100003 = {
-# 	name = dynn_asahina
-# 	culture = asahina
-# 	motto = dynn_asahina_motto
-# }
-# Dynasty house from Doji now
-# 2100004 = {
-# 	name = dynn_kakita
-# 	culture = kakita
-# 	motto = dynn_kakita_motto
-# }
+dynasty_daidoji = {
+	name = dynn_daidoji
+	culture = daidoji
+	motto = dynn_daidoji_motto
+}
+dynasty_asahina = {
+ 	name = dynn_asahina
+ 	culture = asahina
+ 	motto = dynn_asahina_motto
+}
+dynasty_kakita = {
+	name = dynn_kakita
+ 	culture = kakita
+ 	motto = dynn_kakita_motto
+ }
 ##### Vassals
-# Dynasty house from Kakita, aka from Doji
-# 2101001 = { # Kakita vassal
+# Dynasty house from Kakita
+# house_ashidaka = { # Kakita vassal
 # 	name = dynn_ashidaka
 # 	culture = kakita
 # }
-2101002 = { # Daidoji vassal
+dynasty_fujihiro = { # Daidoji vassal
 	name = dynn_fujihiro
 	culture = daidoji
 }
-2101003 = { # Daidoji vassal
+dynasty_hiramori = { # Daidoji vassal
 	name = dynn_hiramori
 	culture = daidoji
 }
-# Dynasty house from Daidoji, aka from Doji
-# 2101004 = { # Daidoji vassal
+# Dynasty house from Daidoji
+# house_hiramichi = { # Daidoji vassal
 # 	name = dynn_hiramichi
 # 	culture = daidoji
 # }
-# Dynasty house from Kakita, aka from Doji
-# 2101005 = { # Kakita vassal
+# Dynasty house from Kakita
+# house_iwasaki = { # Kakita vassal
 # 	name = dynn_iwasaki
 # 	culture = kakita
 # }
 # Dynasty house from Doji
-# 2101006 = { # Doji vassal
+# house_katogama = { # Doji vassal
 # 	name = dynn_katogama
 # 	culture = doji
 # }
-2101007 = { # Doji vassal
+dynasty_morehei = { # Doji vassal
 	name = dynn_morehei
 	culture = doji
 }
 # Dynasty house from Doji
-# 2101008 = { # Doji vassal
+# house_tsume = { # Doji vassal
 # 	name = dynn_tsume
 # 	culture = doji
 # }
 ##########################
 ##### Lion Clan
 ##########################
-2100005 = {
+dynasty_akodo = {
 	name = dynn_akodo
 	culture = akodo
 	motto = dynn_akodo_motto
 }
-2100006 = {
+dynasty_matsu = {
 	name = dynn_matsu
 	culture = matsu
 	motto = dynn_matsu_motto
 }
-2100007 = {
+dynasty_kitsu = {
 	name = dynn_kitsu
 	culture = kitsu
 	motto = dynn_kitsu_motto
 }
-2100008 = {
+dynasty_ikoma = {
 	name = dynn_ikoma
 	culture = ikoma
 	motto = dynn_ikoma_motto
 }
 ##### Vassals
-2102001 = { # Akodo vassal
+dynasty_ichime = { # Akodo vassal
 	name = dynn_ichime
 	culture = akodo
 }
-2102002 = { # Akodo vassal
+dynasty_itagawa = { # Akodo vassal
 	name = dynn_itagawa
 	culture = akodo
 }
 # Dynasty house from Akodo
-# 2102003 = { # Akodo vassal
+# house_akodo = { # Akodo vassal
 # 	name = dynn_katai
 # 	culture = akodo
 # }
 # Post 1123 family, from Akodo
-# 2102004 = { # Akodo vassal
+# house_seizaku = { # Akodo vassal
 # 	name = dynn_seizuka
 # 	culture = akodo
 # }
 # Dynasty house from Akodo
-# 2102005 = { # Akodo vassal
+# house_shimizu = { # Akodo vassal
 # 	name = dynn_shimizu
 # 	culture = akodo
 # }
 # Dynasty house from Matsu
-# 2102006 = { # Matsu vassal
+# house_koritome = { # Matsu vassal
 # 	name = dynn_koritome
 # 	culture = matsu
 # }
 # Dynasty house from Kitsu
-# 2102007 = { # Kitsu vassal
+# house_ise = { # Kitsu vassal
 # 	name = dynn_ise
 # 	culture = kitsu
 # }
 # Dynasty house from Ikoma
-# 2102008 = { # Ikoma vassal
+# house_hosokawa = { # Ikoma vassal
 # 	name = dynn_hosokawa
 # 	culture = ikoma
 # }
 ##########################
 ##### Phoenix Clan
 ##########################
-2100009 = {
+dynasty_shiba = {
 	name = dynn_shiba
 	culture = shiba
 	motto = dynn_shiba_motto
 }
-2100010 = {
+dynasty_isawa = {
 	name = dynn_isawa
 	culture = isawa
 	motto = dynn_isawa_motto
 }
-2100011 = {
+dynasty_asako = {
 	name = dynn_asako
 	culture = asako
 	motto = dynn_asako_motto
 }
-2100012 = {
+dynasty_kaito = {
 	name = dynn_kaito
 	culture = kaito
 	motto = dynn_kaito_motto
 }
 ##### Vassals
 # Dynasty house from Asako
-# 2103011 = { # Asako vassal
+# house_nani = { # Asako vassal
 # 	name = dynn_nani
 # 	culture = asako
 # }
 # Dynasty house from Asako
-# 2103012 = { # Asako vassal
+# house_chukan = { # Asako vassal
 # 	name = dynn_chukan
 # 	culture = asako
 # }
 # Dynasty house from Shiba
-# 2103013 = { # Nasu vassal
+# house_nasu = { # Nasu vassal
 # 	name = dynn_nasu
 # 	culture = shiba
 # }
 # Dynasty house from Shiba
-# 2103014 = { # Sodona vassal
+# house_sodona = { # Sodona vassal
 # 	name = dynn_sodona
 # 	culture = shiba
 # }
-2103015 = { # Iga vassal
+dynasty_iga = { # Iga vassal
 	name = dynn_iga
 	culture = shiba
 }
-2103016 = { # Koganshi vassal
+dynasty_koganshi = { # Koganshi vassal
 	name = dynn_koganshi
 	culture = shiba
 }
 # Dynasty house from Asako
-# 2103017 = { # Shingon vassal
+# house_shingon = { # Shingon vassal
 # 	name = dynn_shingon
 # 	culture = isawa
 # }
 ##########################
 ##### Scorpion Clan
 ##########################
-2100013 = {
+dynasty_bayushi = {
 	name = dynn_bayushi
 	culture = bayushi
 	motto = dynn_bayushi_motto
 }
-2100014 = {
+dynasty_shosuro = {
 	name = dynn_shosuro
 	culture = shosuro
 	motto = dynn_shosuro_motto
 }
-2100015 = {
+dynasty_soshi = {
 	name = dynn_soshi
 	culture = soshi
 	motto = dynn_soshi_motto
 }
-2100016 = {
+dynasty_yogo = {
 	name = dynn_yogo
 	culture = yogo
 	motto = dynn_yogo_motto
 }
 ##### Vassals
 # Dynasty house from bayushi
-# 2104013 = { # bayushi vassal
+# house_ugawa = { # bayushi vassal
 # 	name = dynn_ugawa
 # 	culture = bayushi
 # }
 # Dynasty house from Yogo
-# 2104014 = { # yogo vassal
+# house_tansaku = { # yogo vassal
 # 	name = dynn_tansaku
 # 	culture = yogo
 # }
-2104015 = { # shosuro vassal
+dynasty_jitsuyoteki = { # shosuro vassal
 	name = dynn_jitsuyoteki 
 	culture = shosuro
 }
 # Dynasty house from Shosuro
-# 2104016 = { # shosuro vassal
+# house_kochako = { # shosuro vassal
 # 	name = dynn_kochako
 # 	culture = shosuro
 # }
-# 2104017 = { # shosuro vassal
+# house_tokagure = { # shosuro vassal
 # 	name = dynn_tokagure 
 # 	culture = shosuro
 # }
-2104018 = { # soshi vassal
+dynasty_nanbu = { # soshi vassal
 	name = dynn_nanbu 
 	culture = soshi
 }
 ##########################
 ##### Dragon Clan
 ##########################
-2100017 = {
+dynasty_togashi = {
 	name = dynn_togashi
 	culture = togashi
 	motto = dynn_togashi_motto
 }
-2100018 = {
+dynasty_mirumoto = {
 	name = dynn_mirumoto
 	culture = mirumoto
 	motto = dynn_mirumoto_motto
 }
-# Dynasty house of the Agasha now
-# 2100019 = {
-# 	name = dynn_kitsuki
-# 	culture = kitsuki
-# 	motto = dynn_kitsuki_motto
-# }
-2100020 = {
+dynasty_kitsuki = {
+ 	name = dynn_kitsuki
+ 	culture = kitsuki
+ 	motto = dynn_kitsuki_motto
+ }
+dynasty_agasha = {
 	name = dynn_agasha
 	culture = agasha
 	motto = dynn_agasha_motto
 }
 ##### Vassals
 # Dynasty house from Mirumoto
-# 2105018 = { # mirumoto vassal
+# house_zurui = { # mirumoto vassal
 # 	name = dynn_zurui
 # 	culture = mirumoto
 # }
-2105019 = { # mirumoto vassal
+dynasty_kouken = { # mirumoto vassal
 	name = dynn_kouken
 	culture = mirumoto
 }
 ##########################
 ##### Crab Clan
 ##########################
-2100021 = {
+dynasty_hida = {
 	name = dynn_hida
 	culture = hida
 	motto = dynn_hida_motto
 }
-2100022 = {
+dynasty_hiruma = {
 	name = dynn_hiruma
 	culture = hiruma
 	motto = dynn_hiruma_motto
 }
-2100023 = {
+dynasty_kaiu = {
 	name = dynn_kaiu
 	culture = kaiu
 	motto = dynn_kaiu_motto
 }
-2100024 = {
+dynasty_kuni = {
 	name = dynn_kuni
 	culture = kuni
 	motto = dynn_kuni_motto
 }
-2100025 = {
+dynasty_yasuki = {
 	name = dynn_yasuki
 	culture = yasuki
 	motto = dynn_yasuki_motto
 }
 ##### Vassals
-2106021 = { # Hida vassal
+dynasty_kakeguchi = { # Hida vassal
 	name = dynn_kakeguchi
 	culture = hida
 }
 # Dynasty house from Hida
-# 2106022 = { # Hida vassal
+# house_moshibaru = { # Hida vassal
 # 	name = dynn_moshibaru
 # 	culture = hida
 # }
 # Dynasty house from Kaiu
-# 2106023 = { # Kaiu vassal
+# house_maisuna = { # Kaiu vassal
 # 	name = dynn_maisuna
 # 	culture = kaiu
 # }
 # Dynasty house from Kuni
-# 2106024 = { # Kuni vassal
+# house_ugawari = { # Kuni vassal
 # 	name = dynn_ugawari
 # 	culture = kuni
 # }
-2106025 = { # Yasuki Vassal
+dynasty_kano = { # Yasuki Vassal
 	name = dynn_kano
 	culture = yasuki
 }
 # Dynasty house from Yasuki
-# 2106026 = { # Yasuki Vassal
+# house_nobuto = { # Yasuki Vassal
 # 	name = dynn_nobuto
 # 	culture = yasuki
 # }
@@ -327,61 +323,61 @@
 ##########################
 ##### Unicorn Clan
 ##########################
-2100026 = {
+dynasty_shinjo = {
 	name = dynn_shinjo
 	culture = shinjo
 	motto = dynn_shinjo_motto
 }
-2100027 = {
+dynasty_ide = {
 	name = dynn_ide
 	culture = ide
 	motto = dynn_ide_motto
 }
-2100028 = {
+dynasty_utaku = {
 	name = dynn_utaku
 	culture = utaku
 	motto = dynn_utaku_motto
 }
-2100029 = {
+dynasty_moto = {
 	name = dynn_moto
 	culture = moto
 	motto = dynn_moto_motto
 }
-2100030 = {
+dynasty_iuchi = {
 	name = dynn_iuchi
 	culture = iuchi
 	motto = dynn_iuchi_motto
 }
 ##### Vassals
 # Dynasty house from Utaku
-# 2107028 = { # Utaku vassal
+# house_naoko = { # Utaku vassal
 # 	name = dynn_naoko
 # 	culture = utaku
 # }
 # Dynasty house from Iuchi
-# 2107030 = { # Iuchi vassal
+# house_battue = { # Iuchi vassal
 # 	name = dynn_battue
 # 	culture = iuchi
 # }
 # Dynasty house from Iuchi
-# 2107031 = { # Iuchi vassal
+# house_horiuchi = { # Iuchi vassal
 # 	name = dynn_horiuchi
 # 	culture = iuchi
 # }
-2107032 = { # Ide vassal
+dynasty_suio = { # Ide vassal
 	name = dynn_suio
 	culture = ide
 }
-2107033 = { # Ide vassal
+dynasty_hateru = { # Ide vassal
 	name = dynn_hateru
 	culture = ide
 }
-2107034 = { # Shinjo vassal
+dynasty_marta = { # Shinjo vassal
 	name = dynn_marta
 	culture = shinjo
 }
 # Dynasty house from Moto
-# 2107035 = { # Moto vassal
+# house_onshigawa = { # Moto vassal
 # 	name = dynn_onshigawa
 # 	culture = moto
 # }
@@ -389,22 +385,22 @@
 ##########################
 ##### Imperial families
 ##########################
-2100031 = {
+dynasty_hantei = {
 	name = dynn_hantei
 	culture = hantei
 	motto = dynn_hantei_motto
 }
-2100032 = {
+dynasty_otomo = {
 	name = dynn_otomo
 	culture = otomo
 	motto = dynn_otomo_motto
 }
-2100033 = {
+dynasty_seppun = {
 	name = dynn_seppun
 	culture = seppun
 	motto = dynn_seppun_motto
 }
-2100034 = {
+dynasty_miya = {
 	name = dynn_miya
 	culture = miya
 	motto = dynn_miya_motto
@@ -413,68 +409,68 @@
 ##########################
 ##### Minor Clans
 ##########################
-2100101 = { # Fox Clan
+dynasty_kitsune = { # Fox Clan
 	name = dynn_kitsune
 	culture = kitsune
 }
-2100102 = {# Centipede Clan
+dynasty_moshi = {# Centipede Clan
 	name = dynn_moshi
 	culture = moshi
 }
-2100103 = { # Tortoise Clan
+dynasty_kasuga = { # Tortoise Clan
 	name = dynn_kasuga
 	culture = kasuga
 }
-2100104 = { # Dragonfly Clan
+dynasty_tonbo = { # Dragonfly Clan
 	name = dynn_tonbo
 	culture = tonbo
 }
-2100105 = { # Falcon Clan
+dynasty_toritaka = { # Falcon Clan
 	name = dynn_toritaka
 	culture = toritaka
 }
-2100106 = { # Hare Clan
+dynasty_usagi = { # Hare Clan
 	name = dynn_usagi
 	culture = usagi
 }
-2100107 = { # Mantis Clan
+dynasty_yoritomo = { # Mantis Clan
 	name = dynn_yoritomo
 	culture = yoritomo
 	motto = dynn_yoritomo_motto
 }
-2100108 = { # Wasp Clan
+dynasty_tsuruchi = { # Wasp Clan
 	name = dynn_tsuruchi
 	culture = tsuruchi
 }
-2100109 = { # Sparrow Clan
+dynasty_suzume = { # Sparrow Clan
 	name = dynn_suzume
 	culture = suzume
 }
-2100110 = { # Badger Clan
+dynasty_ichiro = { # Badger Clan
 	name = dynn_ichiro
 	culture = ichiro
 }
-2100111 = { # Cat Clan
+dynasty_nekoma = { # Cat Clan
 	name = dynn_nekoma
 	culture = nekoma
 }
-2100112 = { # Bat Clan
+dynasty_komori = { # Bat Clan
 	name = dynn_komori
 	culture = komori
 }
-2100113 = { # Deer Clan
+dynasty_shika = { # Deer Clan
 	name = dynn_shika
 	culture = shika
 }
-2100114 = { # Moth Clan
+dynasty_kaikoga = { # Moth Clan
 	name = dynn_kaikoga
 	culture = kaikoga
 }
-2100115 = { # Snake Clan. Should be extinct... in theory
+dynasty_chuda = { # Snake Clan. Should be extinct... in theory
 	name = dynn_chuda
 	culture = chuda
 }
-2100116 = { # Bear Clan.  Should be extinct... in theory
+dynasty_kuma = { # Bear Clan.  Should be extinct... in theory
 	name = dynn_kuma
 	culture = kuma
 }
@@ -486,16 +482,3 @@
 #	name = dynn_xxx
 #	culture = xxx
 #}
-
-
-
-100848 = {
-	name = "dynn_Tikanariyen"
-	culture = "maghrebi"
-}
-
-# Keeping Prydain to dodge a stubborn error.
-1029001 = {
-	name = "dynn_Prydain"
-	culture = "welsh"
-}

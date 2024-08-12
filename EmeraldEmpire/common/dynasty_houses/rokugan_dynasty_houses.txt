@@ -1,176 +1,155 @@
 ﻿##########################
 ##### Crane Clan
 ##########################
-2100002 = {
-	name = dynn_daidoji
-    dynasty= 2100001 # Doji
-	motto = dynn_daidoji_motto
-}
-2100003 = {
-	name = dynn_asahina
-    dynasty = 2100010 # isawa
-	motto = dynn_asahina_motto
-}
-2100004 = {
-	name = dynn_kakita
-    dynasty = 2100001 # Doji
-	motto = dynn_kakita_motto
-}
-##### Vassals
-2101001 = { # Kakita vassal
+house_ashidaka = { # Kakita vassal
 	name = dynn_ashidaka
-    dynasty = 2100001 # Doji
+    dynasty = dynasty_kakita
 }
-2101004 = { # Daidoji vassal
+house_hiramichi = { # Daidoji vassal
 	name = dynn_hiramichi
-    dynasty = 2100001 # Doji
+    dynasty = dynasty_daidoji
 }
-2101005 = { # Kakita vassal
+house_iwasaki = { # Kakita vassal
 	name = dynn_iwasaki
-    dynasty = 2100001 # Doji
+    dynasty = dynasty_kakita 
 }
-2101006 = { # Doji vassal
+house_katogama = { # Doji vassal
 	name = dynn_katogama
-    dynasty = 2100001 # Doji
+    dynasty = dynasty_doji 
 }
-2101008 = { # Doji vassal
+house_tsume = { # Doji vassal
 	name = dynn_tsume
-    dynasty = 2100001 # Doji
+    dynasty = dynasty_doji
 }
 ##########################
-##### Dragon Clan
+##### Lion Clan
 ##########################
-2102003 = { # Akodo vassal
+house_akodo = { # Akodo vassal
 	name = dynn_katai
-    dynasty = 2100005 #Akodo
+    dynasty = dynasty_akodo #Akodo
 }
-2102004 = { # Akodo vassal, post 1123
+house_seizaku = { # Akodo vassal, post 1123
 	name = dynn_seizuka
-    dynasty = 2100005 #Akodo
+    dynasty = dynasty_akodo #Akodo
 }
 # Dynasty house from Akodo
-2102005 = { # Akodo vassal
+house_shimizu = { # Akodo vassal
 	name = dynn_shimizu
-    dynasty = 2100005 #Akodo
+    dynasty = dynasty_akodo #Akodo
 }
 # Dynasty house from Matsu
-2102006 = { # Matsu vassal
+house_koritome = { # Matsu vassal
 	name = dynn_koritome
-    dynasty = 2100006 #Matsu
+    dynasty = dynasty_matsu #Matsu
 }
 # Dynasty house from Kitsu
-2102007 = { # Kitsu vassal
+house_ise = { # Kitsu vassal
 	name = dynn_ise
-    dynasty = 2100007 #Kitsu
+    dynasty = dynasty_kitsu #Kitsu
 }
 # Dynasty house from Ikoma
-2102008 = { # Ikoma vassal
+house_hosokawa = { # Ikoma vassal
 	name = dynn_hosokawa
-    dynasty = 2100008 #Kitsu
+    dynasty = dynasty_ikoma #Kitsu
 }
 ##########################
 ##### Phoenix Clan
 ##########################
 # Dynasty house from Asako
-2103011 = { # Asako vassal
+house_nani = { # Asako vassal
 	name = dynn_nani
-    dynasty = 2100011 # Asako
+    dynasty = dynasty_asako # Asako
 }
-2103012 = { # Asako vassal
+house_chukan = { # Asako vassal
 	name = dynn_chukan
-    dynasty = 2100011 # Asako
+    dynasty = dynasty_asako # Asako
 }
 # Dynasty house from Shiba
-2103013 = { # Nasu vassal
+house_nasu = { # Nasu vassal
 	name = dynn_nasu
-    dynasty = 2100009 # Shiba
+    dynasty = dynasty_shiba # Shiba
 }
-2103014 = { # Sodona vassal
+house_sodona = { # Sodona vassal
 	name = dynn_sodona
-    dynasty = 2100009 # Shiba
+    dynasty = dynasty_shiba # Shiba
 }
 # Dynasty house from Asako
-2103017 = { # Shingon vassal
+house_shingon = { # Shingon vassal
 	name = dynn_shingon
-    dynasty = 2100011 # Asako
+    dynasty = dynasty_asako # Asako
 }
 ##########################
 ##### Scorpion Clan
 ##########################
 # Dynasty house from Bayushi
-2104013 = { # bayushi vassal
+house_ugawa = { # bayushi vassal
 	name = dynn_ugawa
-    dynasty = 2100013 # Bayushi
+    dynasty = dynasty_bayushi # Bayushi
 }
 # Dynasty house from Yogo
-2104014 = { # yogo vassal
+house_tansaku = { # yogo vassal
 	name = dynn_tansaku
-    dynasty = 2100016 # Yogo
+    dynasty = dynasty_yogo # Yogo
 }
 # Dynasty house from Shosuro
-2104016 = { # shosuro vassal
+house_kochako = { # shosuro vassal
 	name = dynn_kochako
-    dynasty = 2100014 # shosuro
+    dynasty = dynasty_shosuro # shosuro
 }
-2104017 = { # shosuro vassal
+house_tokagure = { # shosuro vassal
 	name = dynn_tokagure 
-    dynasty = 2100014 # shosuro
+    dynasty = dynasty_shosuro # shosuro
 }
 ##########################
 ##### Dragon Clan
 ##########################
-2100019 = {
-	name = dynn_kitsuki
-    dynasty = 2100020 # Agasha
-	motto = dynn_kitsuki_motto
-}
 # Dynasty house from Mirumoto
-2105018 = { # mirumoto vassal
+house_zurui = { # mirumoto vassal
 	name = dynn_zurui
-    dynasty = 2100018 # Mirumoto
+    dynasty = dynasty_mirumoto # Mirumoto
 }
 ##########################
 ##### Crab Clan
 ##########################
 # Dynasty house from Hida
-2106022 = { # Hida vassal
+house_moshibaru = { # Hida vassal
 	name = dynn_moshibaru
-    dynasty = 2100021 # Hida
+    dynasty = dynasty_hida # Hida
 }
 # Dynasty house from Kaiu
-2106023 = { # Kaiu vassal
+house_maisuna = { # Kaiu vassal
 	name = dynn_maisuna
-    dynasty = 2100023 # Kaiu
+    dynasty = dynasty_kaiu # Kaiu
 }
 # Dynasty house from Kuni
-2106024 = { # Kuni vassal
+house_ugawari = { # Kuni vassal
 	name = dynn_ugawari
-    dynasty = 2100024 # Kuni
+    dynasty = dynasty_kuni # Kuni
 }
 # Dynasty house from Yasuki
-2106026 = { # Yasuki Vassal
+house_nobuto = { # Yasuki Vassal
 	name = dynn_nobuto
-    dynasty = 2100025 # Yasuki
+    dynasty = dynasty_yasuki # Yasuki
 }
 ##########################
 ##### Unicorn Clan
 ##########################
 # Dynasty house from Utaku
-2107028 = { # Utaku vassal
+house_naoko = { # Utaku vassal
 	name = dynn_naoko
-    dynasty = 2100028 # Utaku
+    dynasty = dynasty_utaku # Utaku
 }
 # Dynasty house from Iuchi
-2107030 = { # Iuchi vassal
+house_battue = { # Iuchi vassal
 	name = dynn_battue
-    dynasty = 2100030 # Iuchi
+    dynasty = dynasty_iuchi # Iuchi
 }
-2107031 = { # Iuchi vassal
+house_horiuchi = { # Iuchi vassal
 	name = dynn_horiuchi
-    dynasty = 2100030 # Iuchi
+    dynasty = dynasty_iuchi # Iuchi
 }
 # Dynasty house from Moto
-2107035 = { # Moto vassal
+house_onshigawa = { # Moto vassal
 	name = dynn_onshigawa
-    dynasty = 2100029 # Moto
+    dynasty = dynasty_moto # Moto
 }

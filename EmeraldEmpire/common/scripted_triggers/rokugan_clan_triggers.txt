@@ -27,10 +27,10 @@ is_from_samurai_culture = {
 # Hard-coded for now. Maybe it'll be a special flag on a title later ?
 is_imperial_family = {
     OR = {
-        dynasty = dynasty:2100031 #Hantei
-        dynasty = dynasty:2100032 #Otomo
-        dynasty = dynasty:2100033 #Seppun
-        dynasty = dynasty:2100034 # Miya
+        dynasty = dynasty:dynasty_hantei #Hantei
+        dynasty = dynasty:dynasty_otomo #Otomo
+        dynasty = dynasty:dynasty_seppun #Seppun
+        dynasty = dynasty:dynasty_miya # Miya
     }
 }
 

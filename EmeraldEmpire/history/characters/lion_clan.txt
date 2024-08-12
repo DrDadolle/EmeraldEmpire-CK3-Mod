@@ -3,7 +3,7 @@
 #####################
 3000101 = {
 	name = name_toturi 	# Akodo Toturi, Lion Clan Champion of 1123
-	dynasty = 2100005 	# Akodo
+	dynasty = dynasty_akodo 
 	religion = "cult_ancestors"
 	culture = "akodo"
 	
@@ -42,7 +42,7 @@
 
 3000102 = {
 	name = name_arasou 	# Akodo Arasou, Lion Clan Champion of early 1123
-	dynasty = 2100005 	# Akodo
+	dynasty = dynasty_akodo 	
 	religion = "cult_ancestors"
 	culture = "akodo"
 	
@@ -81,7 +81,7 @@
 
 3000103 = {
 	name = name_daio 	# Akodo Daio, Former Lion Clan Champion, father to Akodo Toturi & Akodo Arasou
-	dynasty = 2100005 	# Akodo
+	dynasty = dynasty_akodo 
 	religion = "cult_ancestors"
 	culture = "akodo"
 	
@@ -107,7 +107,7 @@
 
 3000104 = {
 	name = name_kozue 	# Akodo Kozue,  Mother of Akodo Daio
-	dynasty = 2100005 	# Akodo
+	dynasty = dynasty_akodo 
 	religion = "cult_ancestors"
 	culture = "akodo"
 	female = yes
@@ -130,7 +130,7 @@
 
 3000105 = {
 	name = name_yokotsune 	# Akodo Yokotsune,  Mother of Akodo Kozue
-	dynasty = 2100005 	# Akodo
+	dynasty = dynasty_akodo 
 	religion = "cult_ancestors"
 	culture = "akodo"
 	female = yes
@@ -153,7 +153,7 @@
 ##### Vassal
 3003100 = {
 	name = name_aki 	#  Shimizu Aki  #TODO replace name
-	dynasty_house = 2102005 	# Shimizu Vassal family 
+	dynasty_house = house_shimizu 	# Shimizu Vassal family 
 	religion = "cult_ancestors"
 	culture = "akodo"
 
@@ -170,7 +170,7 @@
 
 3003101 = {
 	name = name_aki 	#  Ichime Aki  #TODO replace name
-	dynasty = 2102001 	# Ichime Vassal family 
+	dynasty = dynasty_ichime 	# Ichime Vassal family 
 	religion = "cult_ancestors"
 	culture = "akodo"
 
@@ -187,7 +187,7 @@
 
 3003102 = {
 	name = name_aki 	#  Itagawa Aki  #TODO replace name
-	dynasty = 2102002 	# Itagawa Vassal family 
+	dynasty = dynasty_itagawa 	# Itagawa Vassal family 
 	religion = "cult_ancestors"
 	culture = "akodo"
 
@@ -203,7 +203,7 @@
 }
 3003103 = {
 	name = name_aki 	#  katai Aki  #TODO replace name
-	dynasty_house = 2102003 	# katai Vassal family 
+	dynasty_house = house_akodo 	# katai Vassal family 
 	religion = "cult_ancestors"
 	culture = "akodo"
 
@@ -220,7 +220,7 @@
 
 3003104 = {
 	name = name_aki 	#  Seizaku Aki  #TODO replace name
-	dynasty_house = 2102004 	# Seizaku Vassal family 
+	dynasty_house = house_seizaku 	# Seizaku Vassal family 
 	religion = "cult_ancestors"
 	culture = "akodo"
 
@@ -239,7 +239,7 @@
 #####################
 3000121 = {
 	name = name_tsuko 	# Matsu Tsuko, Matsu Daimyo
-	dynasty = 2100006 	# Matsu
+	dynasty = dynasty_matsu 	# Matsu
 	religion = "cult_ancestors"
 	culture = "matsu"
 	female = yes
@@ -279,7 +279,7 @@
 }
 3000122 = {
 	name = name_hiroru 	# Matsu Hiroru, brother to Matsu Tsuko
-	dynasty = 2100006 	# Matsu
+	dynasty = dynasty_matsu 	# Matsu
 	religion = "cult_ancestors"
 	culture = "matsu"
 	
@@ -299,7 +299,7 @@
 }
 3000123 = {
 	name = name_uniri 	# Matsu Uniri, previous Matsu Daimyo
-	dynasty = 2100006 	# Matsu
+	dynasty = dynasty_matsu 	# Matsu
 	religion = "cult_ancestors"
 	culture = "matsu"
 	
@@ -320,7 +320,7 @@
 }
 3000124 = {
 	name = name_yunaki 	# Matsu Yunaki
-	dynasty = 2100006 	# Matsu
+	dynasty = dynasty_matsu 	# Matsu
 	religion = "cult_ancestors"
 	culture = "matsu"
 	female = yes
@@ -342,7 +342,7 @@
 ##### Random county holder for the Matsu
 3000130 = {
 	name = name_aki 	#  Matsu Aki  #TODO replace name
-	dynasty = 2100006 	# Matsu  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_matsu 	# Matsu  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "matsu"
 
@@ -353,7 +353,7 @@
 
 3000131 = {
 	name = name_akiko	#  Matsu Akiko  #TODO replace name
-	dynasty = 2100006 	# Matsu #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_matsu 	# Matsu #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "matsu"
 	female = yes
@@ -366,7 +366,7 @@
 ##### Vassal
 3003120 = {
 	name = name_aki 	#  Koritome Aki  #TODO replace name
-	dynasty_house = 2102006 	# Koritome Vassal family 
+	dynasty_house = house_koritome 	# Koritome Vassal family 
 	religion = "cult_ancestors"
 	culture = "matsu"
 
@@ -386,7 +386,7 @@
 #####################
 3000140 = {
 	name = name_takeko 	# Kitsu Takeko, Kitsu Daimyo
-	dynasty = 2100007 	# Kitsu
+	dynasty = dynasty_kitsu 	# Kitsu
 	religion = "cult_ancestors"
 	culture = "kitsu"
 	
@@ -411,7 +411,7 @@
 ##### Vassal
 3003140 = {
 	name = name_aki 	#  Ise Aki  #TODO replace name
-	dynasty_house = 2102007 	# Ise Vassal family 
+	dynasty_house = house_ise 	# Ise Vassal family 
 	religion = "cult_ancestors"
 	culture = "kitsu"
 
@@ -428,7 +428,7 @@
 
 3003141 = {
 	name = name_akiko 	#  Ise Aki  #TODO replace name
-	dynasty_house = 2102007 	# Ise Vassal family 
+	dynasty_house = house_ise 	# Ise Vassal family 
 	religion = "cult_ancestors"
 	culture = "kitsu"
 	female = yes
@@ -442,7 +442,7 @@
 #####################
 3000160 = {
 	name = name_anakazu 	# Ikoma Anakazu, ikoma Daimyo
-	dynasty = 2100008 	# Ikoma
+	dynasty = dynasty_ikoma 	# Ikoma
 	religion = "cult_ancestors"
 	culture = "ikoma"
 	
@@ -479,7 +479,7 @@
 
 3000161 = {
 	name = name_tsanuri 	# Ikoma Tsanuri, daughter of ikoma Daimyo
-	dynasty = 2100008 	# Ikoma
+	dynasty = dynasty_ikoma 	# Ikoma
 	religion = "cult_ancestors"
 	culture = "ikoma"
 	female = yes
@@ -503,7 +503,7 @@
 ##### Random county holder for the Ikoma
 3000170 = {
 	name = name_aki 	#  Ikoma Aki  #TODO replace name
-	dynasty = 2100008 	# Ikoma  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_ikoma 	# Ikoma  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "ikoma"
 
@@ -514,7 +514,7 @@
 
 3000171 = {
 	name = name_akiko	#  Ikoma Akiko  #TODO replace name
-	dynasty = 2100008 	# Ikoma #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_ikoma 	# Ikoma #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "ikoma"
 	female = yes
@@ -526,7 +526,7 @@
 ##### Vassal
 3003160 = {
 	name = name_aki 	# Hosokawa Aki  #TODO replace name
-	dynasty_house = 2102008 	# Hosokawa Vassal family 
+	dynasty_house = house_hosokawa 	# Hosokawa Vassal family 
 	religion = "cult_ancestors"
 	culture = "ikoma"
 

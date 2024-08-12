@@ -3,7 +3,7 @@
 #####################
 3002000 = {
 	name = name_chiasa 	# 
-	dynasty = 2100102 	# Moshi
+	dynasty = dynasty_moshi 	# Moshi
 	religion = "cult_amaterasu"
 	culture = "moshi"
 	female = yes
@@ -35,7 +35,7 @@
 #####################
 3002010 = {
 	name = name_gima 	# No actual daimyo for 1123, non-canon daimyo
-	dynasty = 2100103 	# Kasuga
+	dynasty = dynasty_kasuga 	# Kasuga
 	religion = "seven_fortunes"
 	culture = "kasuga"
 	
@@ -58,7 +58,7 @@
 #####################
 3002020 = {
 	name = name_gohei 	# Kitsune Gohei, Daimyo of Kitsune Clan
-	dynasty = 2100101 	# Kitsune
+	dynasty = dynasty_kitsune 	# Kitsune
 	religion = "seven_fortunes"
 	culture = "kitsune"
 	
@@ -84,7 +84,7 @@
 #####################
 3002030 = {
 	name = name_kashira 	# Suzume Kashira, Daimyo of Sparrow Clan
-	dynasty = 2100109 	# Suzume
+	dynasty = dynasty_suzume 	# Suzume
 	religion = "seven_fortunes"
 	culture = "suzume"
 	
@@ -109,7 +109,7 @@
 #####################
 3002040 = {
 	name = name_tsukiko 	# Usagi Tsukiko, Daimyo of Hare Clan
-	dynasty = 2100106 	# Usagi
+	dynasty = dynasty_usagi 	# Usagi
 	religion = "seven_fortunes"
 	culture = "usagi"
 	female = yes
@@ -135,7 +135,7 @@
 #####################
 3002050 = {
 	name = "" 	# Tsuruchi herself, Daimyo of Wasp Clan
-	dynasty = 2100108 	# Tsuruchi
+	dynasty = dynasty_tsuruchi 	# Tsuruchi
 	religion = "seven_fortunes"
 	culture = "tsuruchi"
 	female = yes
@@ -161,7 +161,7 @@
 #####################
 3002060 = {
 	name = "" 	# Yoritomo himself, Daimyo of Mantis Clan
-	dynasty = 2100107 	# Yoritomo
+	dynasty = dynasty_yoritomo 	# Yoritomo
 	religion = "seven_fortunes"
 	culture = "yoritomo"
 	
@@ -195,7 +195,7 @@
 
 3002061 = {
 	name = name_linmei 	# Yoritomo's wife
-	dynasty = 2100112 	# Komori
+	dynasty = dynasty_komori 	# Komori
 	religion = "seven_fortunes"
 	culture = "komori"
 	female = yes
@@ -215,7 +215,7 @@
 ##### Random county holder for the yoritomo
 3002065 = {
 	name = name_aki 	#  yoritomo Aki  #TODO replace name
-	dynasty = 2100107 	# Yoritomo #TODO rerplace per vassal dynasty
+	dynasty = dynasty_yoritomo 	# Yoritomo #TODO rerplace per vassal dynasty
 	religion = "seven_fortunes"
 	culture = "yoritomo"
 
@@ -228,7 +228,7 @@
 #####################
 3002070 = {
 	name = name_aki 	# TODO Nekoma Aki, placeholder for Cat Clan
-	dynasty = 2100111 	# Nekoma
+	dynasty = dynasty_nekoma 	# Nekoma
 	religion = "seven_fortunes"
 	culture = "nekoma"
 	
@@ -252,7 +252,7 @@
 #####################
 3002080 = {
 	name = name_aki 	# TODO Toritaka Aki, placeholder for Falcon Clan
-	dynasty = 2100105 	# Toritaka
+	dynasty = dynasty_toritaka 	# Toritaka
 	religion = "seven_fortunes"
 	culture = "toritaka"
 	
@@ -279,7 +279,7 @@
 #####################
 3002090 = {
 	name = name_chuga 	# Ichiro Chuga, daimyo of Badger Clan (source V4)
-	dynasty = 2100110 	# Ichiro
+	dynasty = dynasty_ichiro 	# Ichiro
 	religion = "seven_fortunes"
 	culture = "ichiro"
 	
@@ -304,7 +304,7 @@
 #####################
 3002100 = {
 	name = name_toryu 	# Tonbo Toryu daimyo of dragonfly clan (source v4)
-	dynasty = 2100104 	# tonbo
+	dynasty = dynasty_tonbo 	# tonbo
 	religion = "shinseism"
 	culture = "tonbo"
 	
@@ -330,7 +330,7 @@
 #####################
 3002110 = {
 	name = name_tsukasa 	# Kaikoga Tsukasa, fanon daimyo of 1123
-	dynasty = 2100114 	# kaikoga
+	dynasty = dynasty_kaikoga 	# kaikoga
 	religion = "seven_fortunes"
 	culture = "kaikoga"
 	female = yes
@@ -358,7 +358,7 @@
 #####################
 3002120 = {
 	name = name_renji 	# Shika Renji, daimyo of 1123
-	dynasty = 2100113 	# Shika
+	dynasty = dynasty_shika 	# Shika
 	religion = "seven_fortunes"
 	culture = "kaikoga"
 	
@@ -387,7 +387,7 @@
 #####################
 chudason = {
 	name = name_yoharu 	# Chuda yoharu
-	dynasty = 2100115	# Chuda
+	dynasty = dynasty_chuda	# Chuda
 	religion = "seven_fortunes"
 	culture = "chuda"
 	

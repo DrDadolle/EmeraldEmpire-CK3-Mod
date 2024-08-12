@@ -3,7 +3,7 @@
 #####################
 3000600 = {
 	name = name_yokuni 	# Togashi Yokuni Dragon Clan Champion of 1123
-	dynasty = 2100017 	# Togashi
+	dynasty = dynasty_togashi 	# Togashi
 	religion = "shinseism"
 	culture = "togashi"
 	
@@ -38,7 +38,7 @@
 ##### Random county holder for the Togashi
 3000610 = {
 	name = name_aki 	#  Togashi Aki  #TODO replace name
-	dynasty = 2100017 	# Togashi  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_togashi 	# Togashi  #TODO replace by  like the dynn_morehei
 	religion = "shinseism"
 	culture = "togashi"
 
@@ -49,7 +49,7 @@
 
 3000611 = {
 	name = name_akiko	#  Togashi Akiko  #TODO replace name
-	dynasty = 2100017 	# Togashi #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_togashi 	# Togashi #TODO replace by  like the dynn_morehei
 	female = yes
 	religion = "shinseism"
 	culture = "togashi"
@@ -63,7 +63,7 @@
 #####################
 3000620 = {
 	name = name_masashige 	# Mirumoto Masashige, Mirumoto Daimyo
-	dynasty = 2100018 	# Mirumoto
+	dynasty = dynasty_mirumoto 	# Mirumoto
 	religion = "shinseism"
 	culture = "mirumoto"
 	
@@ -94,7 +94,7 @@
 
 3000621 = {
 	name = name_ichiro 	# Mirumoto Ichiro, Mirumoto Daimyo's son #TODO now a ronin
-	dynasty = 2100018 	# Mirumoto
+	dynasty = dynasty_mirumoto 	# Mirumoto
 	religion = "shinseism"
 	culture = "mirumoto"
 	
@@ -116,7 +116,7 @@
 ##### Random county holder for the Mirumoto
 3000630 = {
 	name = name_aki 	#  Mirumoto Aki  #TODO replace name
-	dynasty = 2100018 	# Mirumoto  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_mirumoto 	# Mirumoto  #TODO replace by  like the dynn_morehei
 	religion = "shinseism"
 	culture = "mirumoto"
 
@@ -127,7 +127,7 @@
 ##### Vassal
 3003620 = { 
 	name = name_aki 	# Zurui Aki  #TODO replace name
-	dynasty_house = 2105018 	# Zurui Vassal family 
+	dynasty_house = house_zurui 	# Zurui Vassal family 
 	religion = "shinseism"
 	culture = "mirumoto"
 
@@ -143,7 +143,7 @@
 }
 3003621 = { 
 	name = name_aki 	# Kouken Aki  #TODO replace name
-	dynasty = 2105019 	# Kouken Vassal family 
+	dynasty = dynasty_kouken 	# Kouken Vassal family 
 	religion = "shinseism"
 	culture = "mirumoto"
 
@@ -162,7 +162,7 @@
 #####################
 3000640 = {
 	name = name_jusai 	# Kitsuki Jusai, Kitsuki Daimyo
-	dynasty_house = 2100019 	# Kitsuki
+	dynasty_house = dynasty_kitsuki 	# Kitsuki
 	religion = "shinseism"
 	culture = "kitsuki"
 	
@@ -190,7 +190,7 @@
 
 3000641 = {
 	name = name_jusai 	# Kitsuki Tomoyo, Kitsuki Daimyo's youngest daughter
-	dynasty_house = 2100019 	# Kitsuki
+	dynasty_house = dynasty_kitsuki 	# Kitsuki
 	religion = "shinseism"
 	culture = "kitsuki"
 	female = yes
@@ -214,7 +214,7 @@
 ##### Random county holder for the Kitsuki
 3000650 = {
 	name = name_aki 	#  Kitsuki Aki  #TODO replace name
-	dynasty_house = 2100019 	# Kitsuki  #TODO replace by  like the dynn_morehei
+	dynasty_house = dynasty_kitsuki 	# Kitsuki  #TODO replace by  like the dynn_morehei
 	religion = "shinseism"
 	culture = "kitsuki"
 
@@ -225,7 +225,7 @@
 
 3000651 = {
 	name = name_akiko	#  Kitsuki Akiko  #TODO replace name
-	dynasty_house = 2100019 	# Kitsuki #TODO replace by  like the dynn_morehei
+	dynasty_house = dynasty_kitsuki 	# Kitsuki #TODO replace by  like the dynn_morehei
 	female = yes
 	religion = "perfect_earth_sect"
 	culture = "kitsuki"
@@ -241,7 +241,7 @@
 #####################
 3000660 = {
 	name = name_tamori 	# Agasha Tamori, Agasha's daimyo. #Source is V4, no Agasha daimyo in V5
-	dynasty = 2100020 	# Agasha
+	dynasty = dynasty_agasha 	# Agasha
 	religion = "shinseism"
 	culture = "agasha"
 	
@@ -272,7 +272,7 @@
 
 3000661 = {
 	name = name_tsutomu 	# Agasha Tsutomu, Agasha's daimyo wife. #Source is V4
-	dynasty = 2100017 	# Togashi
+	dynasty = dynasty_togashi 	# Togashi
 	religion = "shinseism"
 	culture = "togashi"
 	female = yes
@@ -293,7 +293,7 @@
 
 3000662 = {
 	name = name_shaitung 	# Agasha Tamori's daugther #Source is V4
-	dynasty = 2100020 	# Agasha
+	dynasty = dynasty_agasha 	# Agasha
 	religion = "shinseism"
 	culture = "agasha"
 	female = yes
@@ -318,7 +318,7 @@
 ##### Random county holder for the Agasha
 3000670 = {
 	name = name_aki 	#  Agasha Aki  #TODO replace name
-	dynasty = 2100020 	# Agasha  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_agasha 	# Agasha  #TODO replace by  like the dynn_morehei
 	religion = "shinseism"
 	culture = "agasha"
 
@@ -329,7 +329,7 @@
 
 3000671 = {
 	name = name_akiko	#  Agasha Akiko  #TODO replace name
-	dynasty = 2100020 	# Agasha #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_agasha 	# Agasha #TODO replace by  like the dynn_morehei
 	female = yes
 	religion = "shinseism"
 	culture = "agasha"

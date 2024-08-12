@@ -265,7 +265,7 @@ decision_restore_snake_clan = {
 		has_title = title:c_chuda_province
 		#After the end of the Snake Clan
 		current_date >= 402.1.1
-		dynasty:2100115 = {
+		dynasty:dynasty_chuda = {
 			NOT = {
 				any_house_member = {
 					is_alive = yes

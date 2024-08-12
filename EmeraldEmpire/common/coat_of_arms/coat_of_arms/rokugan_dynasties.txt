@@ -1,28 +1,28 @@
 ##########################
 ##### Crane Clan
 ##########################
-2100001 = { #Doji
+dynasty_doji = { #Doji
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_crane_doji.dds"
 	}
 }
-2100002 = { #Daidoji
+dynasty_daidoji = { #Daidoji
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_crane_daidoji.dds"
 	}
 }
-2100003 = { #Asahina
+dynasty_asahina = { #Asahina
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_crane_asahina.dds"
 	}
 }
-2100004 = { #Kakita
+dynasty_kakita = { #Kakita
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -32,28 +32,28 @@
 ##########################
 ##### Lion Clan
 ##########################
-2100005 = { #akodo
+dynasty_akodo = { #akodo
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
 		texture = "te_lion_akodo.dds"
 	}
 }
-2100006 = { #matsu
+dynasty_matsu = { #matsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
 		texture = "te_lion_matsu.dds"
 	}
 }
-2100007 = { #kitsu
+dynasty_kitsu = { #kitsu
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
 		texture = "te_lion_kitsu.dds"
 	}
 }
-2100008 = { #ikoma
+dynasty_ikoma = { #ikoma
 	pattern = "pattern_solid.dds"	
 	color1 = "brown"
 	textured_emblem = {
@@ -63,28 +63,28 @@
 ##########################
 ##### Phoenix Clan
 ##########################
-2100009 = { #Shiba
+dynasty_shiba = { #Shiba
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_phoenix_shiba.dds"
 	}
 }
-2100010 = { #Isawa
+dynasty_isawa = { #Isawa
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_phoenix_isawa_1.dds"
 	}
 }
-2100011 = { #Asako
+dynasty_asako = { #Asako
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_phoenix_asako.dds"
 	}
 }
-2100012 = { #Kaito
+dynasty_kaito = { #Kaito
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -95,28 +95,28 @@
 ##########################
 ##### Scorpion Clan
 ##########################
-2100013 = { #Bayushi
+dynasty_bayushi = { #Bayushi
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
 		texture = "te_scorpion_bayushi.dds"
 	}
 }
-2100014 = { #Shosuro
+dynasty_shosuro = { #Shosuro
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
 		texture = "te_scorpion_shosuro.dds"
 	}
 }
-2100015 = { #Soshi
+dynasty_soshi = { #Soshi
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
 		texture = "te_scorpion_soshi.dds"
 	}
 }
-2100016 = { #Yogo
+dynasty_yogo = { #Yogo
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -128,28 +128,28 @@
 ##########################
 ##### Dragon Clan
 ##########################
-2100017 = { # Togashi
+dynasty_togashi = { # Togashi
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
 		texture = "te_dragon_togashi.dds"
 	}
 }
-2100018 = { # Mirumoto
+dynasty_mirumoto = { # Mirumoto
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
 		texture = "te_dragon_mirumoto.dds"
 	}
 }
-2100019 = { # Kitsuki
+dynasty_kitsuki = { # Kitsuki
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
 		texture = "te_dragon_kitsuki.dds"
 	}
 }
-2100020 = { #Agasha
+dynasty_agasha = { #Agasha
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -159,14 +159,14 @@
 ##########################
 ##### Crab Clan
 ##########################
-2100021 = { #Hida
+dynasty_hida = { #Hida
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
 		texture = "te_crab_hida.dds"
 	}
 }
-2100022 = { #Hiruma
+dynasty_hiruma = { #Hiruma
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -174,7 +174,7 @@
 	}
 }
 
-2100023 = { #kaiu
+dynasty_kaiu = { #kaiu
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -182,7 +182,7 @@
 	}
 }
 
-2100024 = { #kuni
+dynasty_kuni = { #kuni
 	pattern = "pattern_solid.dds"	
 	color1 = "black"
 	textured_emblem = {
@@ -190,7 +190,7 @@
 	}
 }
 
-2100025 = { #yasuki
+dynasty_yasuki = { #yasuki
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -200,35 +200,35 @@
 ##########################
 ##### Unicorn Clan
 ##########################
-2100026 = { #shinjo
+dynasty_shinjo = { #shinjo
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_unicorn_shinjo.dds"
 	}
 }
-2100027 = { #ide
+dynasty_ide = { #ide
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_unicorn_ide.dds"
 	}
 }
-2100028 = { #utaku
+dynasty_utaku = { #utaku
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_unicorn_utaku.dds"
 	}
 }
-2100029 = { #moto
+dynasty_moto = { #moto
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_unicorn_moto.dds"
 	}
 }
-2100030 = { #iuchi
+dynasty_iuchi = { #iuchi
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -238,28 +238,28 @@
 ##########################
 ##### Imperial families
 ##########################
-2100031 = { # hantei
+dynasty_hantei = { # hantei
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_imperial_hantei.dds"
 	}
 }
-2100032 = {  # otomo
+dynasty_otomo = {  # otomo
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_imperial_otomo.dds"
 	}
 }
-2100033 = { # seppun
+dynasty_seppun = { # seppun
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_imperial_seppun.dds"
 	}
 }
-2100034 = { # miya
+dynasty_miya = { # miya
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
@@ -269,112 +269,112 @@
 ##########################
 ##### Minor Clans
 ##########################
-2100101 = { # Fox Clan
+dynasty_kitsune = { # Fox Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_fox.dds"
 	}
 }
-2100102 = {# Centipede Clan
+dynasty_moshi = {# Centipede Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_centipede.dds"
 	}
 }
-2100103 = { # Tortoise Clan
+dynasty_kasuga = { # Tortoise Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_tortoise.dds"
 	}
 }
-2100104 = { # Dragonfly Clan
+dynasty_tonbo = { # Dragonfly Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_dragonfly.dds"
 	}
 }
-2100105 = { # Falcon Clan
+dynasty_toritaka = { # Falcon Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_falcon.dds"
 	}
 }
-2100106 = { # Hare Clan
+dynasty_usagi = { # Hare Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_hare.dds"
 	}
 }
-2100107 = { # Mantis Clan
+dynasty_yoritomo = { # Mantis Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_mantis.dds"
 	}
 }
-2100108 = { # Wasp Clan
+dynasty_tsuruchi = { # Wasp Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_wasp.dds"
 	}
 }
-2100109 = { # Sparrow Clan
+dynasty_suzume = { # Sparrow Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_sparrow.dds"
 	}
 }
-2100110 = { # Badger Clan
+dynasty_ichiro = { # Badger Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_badger.dds"
 	}
 }
-2100111 = { # Cat Clan
+dynasty_nekoma = { # Cat Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_cat.dds"
 	}
 }
-2100112 = { # Bat Clan
+dynasty_komori = { # Bat Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_bat.dds"
 	}
 }
-2100113 = { # Deer Clan
+dynasty_shika = { # Deer Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_deer.dds"
 	}
 }
-2100114 = { # Moth Clan
+dynasty_kaikoga = { # Moth Clan
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_moth.dds"
 	}
 }
-2100115 = { # Snake Clan. Should be extinct... in theory
+dynasty_chuda = { # Snake Clan. Should be extinct... in theory
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {
 		texture = "te_minor_snake.dds"
 	}
 }
-2100116 = { # Bear Clan.  Should be extinct... in theory
+dynasty_kuma = { # Bear Clan.  Should be extinct... in theory
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
 	textured_emblem = {

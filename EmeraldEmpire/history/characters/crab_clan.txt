@@ -3,7 +3,7 @@
 #####################
 3000400 = {
 	name = name_kisada 	# Hida Kisada, Hida Daimyo & Clan champion of 1123
-	dynasty = 2100021 	# Hida
+	dynasty = dynasty_hida 	# Hida
 	religion = "cult_ancestors"
 	culture = "hida"
 	
@@ -41,7 +41,7 @@
 
 3000401 = {
 	name = name_yakamo 	# Hida Yakamo, Hida Daimyo's Heir
-	dynasty = 2100021 	# Hida
+	dynasty = dynasty_hida 	# Hida
 	religion = "cult_ancestors"
 	culture = "hida"
 	
@@ -72,7 +72,7 @@
 
 3000402 = {
 	name = name_o_ushi 	# Hida O-UShi, Hida Daimyo's daughter
-	dynasty = 2100021 	# Hida
+	dynasty = dynasty_hida 	# Hida
 	religion = "cult_ancestors"
 	culture = "hida"
 	female = yes
@@ -104,7 +104,7 @@
 
 3000403 = {
 	name = name_sukune 	# Hida sukune, Hida Daimyo's 3rd child
-	dynasty = 2100021 	# Hida
+	dynasty = dynasty_hida 	# Hida
 	religion = "cult_ancestors"
 	culture = "hida"
 	
@@ -136,7 +136,7 @@
 ##### Random county holder for the Hida
 3000410 = {
 	name = name_aki 	#  Hida Aki  #TODO replace name
-	dynasty = 2100021 	# Hida  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_hida 	# Hida  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "hida"
 	
@@ -146,7 +146,7 @@
 }
 3000411 = {
 	name = name_akiko 	#  Hida Aki  #TODO replace name
-	dynasty = 2100021 	# Hida  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_hida 	# Hida  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "hida"
 	female = yes
@@ -157,7 +157,7 @@
 ##### Vassal
 3003400 = {
 	name = name_aki 	#  Kakeguchi Aki  #TODO replace name
-	dynasty = 2106021 	# Kakeguchi Vassal family 
+	dynasty = dynasty_kakeguchi 	# Kakeguchi Vassal family 
 	religion = "cult_ancestors"
 	culture = "hida"
 
@@ -174,7 +174,7 @@
 
 3003401 = {
 	name = name_aki 	#  Moshibaru Aki  #TODO replace name
-	dynasty_house = 2106022 	# Moshibaru Vassal family 
+	dynasty_house = house_moshibaru 	# Moshibaru Vassal family 
 	religion = "cult_ancestors"
 	culture = "hida"
 
@@ -194,7 +194,7 @@
 #####################
 3000420 = {
 	name = name_yoshino 	# Hiruma Yoshino, Hiruma Daimyo
-	dynasty = 2100022 	# Hiruma
+	dynasty = dynasty_hiruma 	# Hiruma
 	religion = "cult_ancestors"
 	culture = "hiruma"
 	female = yes
@@ -225,7 +225,7 @@
 ##### Random county holder for the Hiruma
 3000430 = {
 	name = name_aki 	#  Hiruma Aki  #TODO replace name
-	dynasty = 2100022 	# Hiruma  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_hiruma 	# Hiruma  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "hiruma"
 	
@@ -235,7 +235,7 @@
 }
 3000431 = {
 	name = name_akiko 	#  Hiruma Aki  #TODO replace name
-	dynasty = 2100022 	# Hiruma  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_hiruma 	# Hiruma  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "hiruma"
 	female = yes
@@ -248,7 +248,7 @@
 #####################
 3000440 = {
 	name = name_shihobu 	# Kaiu Shihobu, Kaiu Daimyo
-	dynasty = 2100023 	# Kaiu
+	dynasty = dynasty_kaiu 	# Kaiu
 	religion = "cult_ancestors"
 	culture = "kaiu"
 	female = yes
@@ -279,7 +279,7 @@
 ##### Random county holder for the Kaiu
 3000450 = {
 	name = name_aki 	#  Kaiu Aki  #TODO replace name
-	dynasty = 2100023 	# Kaiu  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_kaiu 	# Kaiu  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "kaiu"
 	
@@ -289,7 +289,7 @@
 }
 3000451 = {
 	name = name_akiko 	#  Kaiu Aki  #TODO replace name
-	dynasty = 2100023 	# Kaiu  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_kaiu 	# Kaiu  #TODO replace by  like the dynn_morehei
 	religion = "cult_ancestors"
 	culture = "kaiu"
 	female = yes
@@ -300,7 +300,7 @@
 ##### Vassal
 3003440 = {
 	name = name_aki 	#  Maisuna Aki  #TODO replace name
-	dynasty_house = 2106023 	# Maisuna Vassal family 
+	dynasty_house = house_maisuna 	# Maisuna Vassal family 
 	religion = "cult_ancestors"
 	culture = "kaiu"
 
@@ -319,7 +319,7 @@
 #####################
 3000460 = {
 	name = name_yori 	# Kuni Yori, Kuni Daimyo
-	dynasty = 2100024 	# Kuni
+	dynasty = dynasty_kuni 	# Kuni
 	religion = "seven_fortunes"
 	culture = "kuni"
 	
@@ -350,7 +350,7 @@
 ##### Random county holder for the Kuni
 3000470 = {
 	name = name_aki 	#  Kuni Aki  #TODO replace name
-	dynasty = 2100024 	# Kuni  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_kuni 	# Kuni  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "kuni"
 	
@@ -360,7 +360,7 @@
 }
 3000471 = {
 	name = name_akiko 	#  Kuni Aki  #TODO replace name
-	dynasty = 2100024 	# Kuni  #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_kuni 	# Kuni  #TODO replace by  like the dynn_morehei
 	religion = "seven_fortunes"
 	culture = "kuni"
 	female = yes
@@ -371,7 +371,7 @@
 ##### Vassal
 3003460 = {
 	name = name_aki 	#  Ugawari Aki  #TODO replace name
-	dynasty_house = 2106024 	# Ugawari Vassal family 
+	dynasty_house = house_ugawari 	# Ugawari Vassal family 
 	religion = "seven_fortunes"
 	culture = "kuni"
 
@@ -390,7 +390,7 @@
 #####################
 3000480 = {
 	name = name_taka 	# Yasuki Taka, Yasuki Daimyo
-	dynasty = 2100025 	# Yasuki
+	dynasty = dynasty_yasuki 	# Yasuki
 	religion = "seven_fortunes"
 	culture = "yasuki"
 	
@@ -420,7 +420,7 @@
 
 3000481 = {
 	name = name_oguri 	# Yasuki Oguri, Yasuki Daimyo's heir
-	dynasty = 2100025 	# Yasuki
+	dynasty = dynasty_yasuki 	# Yasuki
 	religion = "seven_fortunes"
 	culture = "yasuki"
 	
@@ -442,7 +442,7 @@
 ##### Vassal
 3003480 = {
 	name = name_aki 	#  Kano Aki  #TODO replace name
-	dynasty = 2106025 	# Kano Vassal family 
+	dynasty = dynasty_kano 	# Kano Vassal family 
 	religion = "seven_fortunes"
 	culture = "yasuki"
 
@@ -459,7 +459,7 @@
 }
 3003481 = {
 	name = name_aki 	#  Nobuto Aki  #TODO replace name
-	dynasty_house = 2106026 	# Nobuto Vassal family 
+	dynasty_house = house_nobuto 	# Nobuto Vassal family 
 	religion = "seven_fortunes"
 	culture = "yasuki"
 

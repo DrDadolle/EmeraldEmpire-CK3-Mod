@@ -81,7 +81,7 @@ shukujo_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		AND = {
-			dynasty = dynasty:2100001 #Doji
+			dynasty = dynasty:dynasty_doji #Doji
 			has_trait = kami_descendant
 		}
 	}
@@ -129,7 +129,7 @@ ofushikai_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		AND = {
-			dynasty = dynasty:2100009 #Shiba
+			dynasty = dynasty:dynasty_shiba #Shiba
 			has_title = title:k_phoenix_clan
 	}
 	}
@@ -169,10 +169,10 @@ itsuwari_template = {
 				has_title = title:k_scorpion_clan
 			}
 			OR = {
-				dynasty = dynasty:2100013 #Bayushi
-				dynasty = dynasty:2100014 #Shosuro
-				dynasty = dynasty:2100015 #Soshi
-				dynasty = dynasty:2100016 #Yogo
+				dynasty = dynasty:dynasty_bayushi #Bayushi
+				dynasty = dynasty:dynasty_shosuro #Shosuro
+				dynasty = dynasty:dynasty_soshi #Soshi
+				dynasty = dynasty:dynasty_yogo #Yogo
 			}
 		}
 	}
@@ -217,8 +217,8 @@ bouishi_kasuga_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		OR = {
-				dynasty = dynasty:2100031 #Hantei
-				dynasty = dynasty:2100103 #Kasuga
+				dynasty = dynasty:dynasty_hantei #Hantei
+				dynasty = dynasty:dynasty_kasuga #Kasuga
 		}
 	}
 	can_reforge = {
