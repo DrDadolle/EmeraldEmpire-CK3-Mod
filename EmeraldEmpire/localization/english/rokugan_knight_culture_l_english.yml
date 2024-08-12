@@ -1,0 +1,17 @@
+﻿l_english:
+  # No tooltip versions
+ knight_bushi_no_tooltip:0 "Bushi"
+ knight_bushi_no_tooltip_plural:0 "Bushi"
+
+  # Lowercase versions
+ knight_bushi_no_tooltip_lowercase:0 "bushi"
+ knight_bushi_no_tooltip_lowercase_plural:0 "bushi"
+ knight_bushi_no_tooltip_lowercase_plural_possessive:0 "bushi's"
+ knight_bushi_no_tooltip_lowercase_adjective:0 "bushi"
+
+  #Game Concept versions
+ knight_bushi:0 "[Concept( 'knight', '$knight_bushi_no_tooltip$' )|E]"
+ knight_bushi_plural:0 "[Concept( 'knight', '$knight_bushi_no_tooltip_plural$' )|E]"
+
+
+
