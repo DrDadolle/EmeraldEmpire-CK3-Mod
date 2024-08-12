@@ -5,7 +5,7 @@
 @cultural_maa_extra_ai_score = 60 # Equivalent to having 6 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
 
 
-scorpion_shosuro_shinobi= {
+scorpion_shadow_assassin= {
 	type = skirmishers
 	
 	damage = 10
