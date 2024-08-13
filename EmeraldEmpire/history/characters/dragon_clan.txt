@@ -157,7 +157,7 @@ lineofkouken1 = {
 #####################
 lineofkitsukijusai1 = {
 	name = name_jusai 	# Kitsuki Jusai, Kitsuki Daimyo
-	dynasty_house = dynasty_kitsuki 	
+	dynasty = dynasty_kitsuki 	
 	religion = "shinseism"
 	culture = "kitsuki"
 	
@@ -185,7 +185,7 @@ lineofkitsukijusai1 = {
 
 lineofkitsukijusai2 = {
 	name = name_jusai 	# Kitsuki Tomoyo, Kitsuki Daimyo's youngest daughter
-	dynasty_house = dynasty_kitsuki 	
+	dynasty = dynasty_kitsuki 	
 	religion = "shinseism"
 	culture = "kitsuki"
 	female = yes
@@ -209,7 +209,7 @@ lineofkitsukijusai2 = {
 ##### Random county holder for the Kitsuki
 placeholderkitsuki1 = {
 	name = name_aki 	#  Kitsuki Aki  #TODO replace name
-	dynasty_house = dynasty_kitsuki 
+	dynasty = dynasty_kitsuki 
 	religion = "shinseism"
 	culture = "kitsuki"
 
@@ -220,7 +220,7 @@ placeholderkitsuki1 = {
 
 placeholderkitsuki2 = {
 	name = name_akiko	#  Kitsuki Akiko  #TODO replace name
-	dynasty_house = dynasty_kitsuki 	
+	dynasty = dynasty_kitsuki 	
 	female = yes
 	religion = "perfect_earth_sect"
 	culture = "kitsuki"

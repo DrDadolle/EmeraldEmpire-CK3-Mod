@@ -1,4 +1,4 @@
-##################################################
+﻿##################################################
 # DE JURE DECISIONS
 ##################################################
 # Found New Major Clan
@@ -193,8 +193,8 @@ decision_claim_toshi_rambo_crane = {
 
 
     is_shown = {
-		save_scope_as = claimant
-		c_toshi_rambo.holder = { save_scope_as = toshi_rambo_holder}
+		save_temporary_scope_as = claimant
+		title:c_toshi_rambo.holder = { save_temporary_scope_as = toshi_rambo_holder}
 
         is_ruler = yes
         is_landed = yes
@@ -207,8 +207,8 @@ decision_claim_toshi_rambo_crane = {
 
 		#If Toshi Rambo holder not the same heritage as the character 
 		#TODO CA MARCHE PAS ? NOR ? Pq NAND ne marche pas????
-		NOR = {
-				scope:toshi_rambo_holder = { culture = { has_cultural_pillar = heritage_crane }	}
+		NOT = {
+				# scope:toshi_rambo_holder = { culture = { has_cultural_pillar = heritage_crane }	}
 				scope:toshi_rambo_holder = { is_under_k_crane_clan_rule_or_is_ruler = yes }
 		}
 

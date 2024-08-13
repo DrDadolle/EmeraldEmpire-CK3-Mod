@@ -375,7 +375,7 @@ lineoftsumeretsu2 = {
 
 lineofkakitatoshimo3 = {
 	name = name_yoshi 	# Kakita Yoshi
-	dynasty_house = dynasty_kakita 	
+	dynasty = dynasty_kakita 	
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -410,7 +410,7 @@ lineofkakitatoshimo3 = {
 
 lineofkakitatoshimo4 = {
 	name = name_toshimoko 	# Kakita Toshimoko
-	dynasty_house = dynasty_kakita 	
+	dynasty = dynasty_kakita 	
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -442,7 +442,7 @@ lineofkakitatoshimo4 = {
 
 lineofkakitatoshimo1 = {
 	name = name_toshimo 	# Kakita Toshimo, father of Kakita Yoshi, Toshimoko & Teinko
-	dynasty_house = dynasty_kakita 	akita
+	dynasty = dynasty_kakita 	
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -466,7 +466,7 @@ lineofkakitatoshimo1 = {
 
 3000023 = {
 	name = name_barahime 	# Kakita Barahime, wife of Kakita Yoshi
-	dynasty_house = dynasty_kakita 	
+	dynasty = dynasty_kakita 	
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	female = yes
@@ -487,7 +487,7 @@ lineofkakitatoshimo1 = {
 
 lineofkakitatoshimo5 = {
 	name = name_shinta 	# Kakita Shinta, son of Kakita Yoshi
-	dynasty_house = dynasty_kakita 	
+	dynasty = dynasty_kakita 	
 	religion = "cult_ancestors"
 	culture = "kakita" 	
 	
@@ -509,7 +509,7 @@ lineofkakitatoshimo5 = {
 ##### Random county holder for the Kakita
 placeholderkakita1 = {
 	name = name_aki 	#  Kakita Aki  #TODO replace name
-	dynasty_house = dynasty_kakita 
+	dynasty = dynasty_kakita 
 	religion = "cult_ancestors"
 	culture = "kakita"
 
@@ -523,7 +523,7 @@ placeholderkakita1 = {
 #####################
 lineofasahinatakamori1 = {
 	name = name_takamori 	# Asahina Takamori, Asahina daimyo
-	dynasty_house = dynasty_asahina 
+	dynasty = dynasty_asahina 
 	religion = "seven_fortunes"
 	culture = "asahina" 	
 	
@@ -552,7 +552,7 @@ lineofasahinatakamori1 = {
 
 lineofasahinatakamori2 = {
 	name = name_takako 	# Asahina Takako
-	dynasty_house = dynasty_asahina 	
+	dynasty = dynasty_asahina 	
 	religion = "seven_fortunes"
 	culture = "asahina" 	
 	female = yes
@@ -575,7 +575,7 @@ lineofasahinatakamori2 = {
 ##### Random county holder for the Asahina
 placeholderasahina1 = {
 	name = name_aki 	#  Asahina Aki  #TODO replace name
-	dynasty_house = dynasty_asahina 
+	dynasty = dynasty_asahina 
 	religion = "seven_fortunes"
 	culture = "asahina"
 
@@ -586,7 +586,7 @@ placeholderasahina1 = {
 
 placeholderasahina2 = {
 	name = name_akiko	#  Asahina Akiko  #TODO replace name
-	dynasty_house = dynasty_asahina 	
+	dynasty = dynasty_asahina 	
 	female = yes
 	religion = "seven_fortunes"
 	culture = "asahina"
@@ -602,7 +602,7 @@ placeholderasahina2 = {
 #####################
 lineofdaidojiuji1 = {
 	name = name_uji 	# Daidoji Uji, Daidoji daimyo
-	dynasty_house = dynasty_daidoji 
+	dynasty = dynasty_daidoji 
 	religion = "seven_fortunes"
 	culture = "daidoji" 	
 	
@@ -638,8 +638,8 @@ lineofdaidojiuji1 = {
 
 ##### Random county holder for the Daidoji
 placeholderdaidoji1 = {
-	name = name_aki 	#  Daidoji Aki  #TODO replace name
-	dynasty_house = dynasty_daidoji 	
+	name = name_aki 	
+	dynasty = dynasty_daidoji 	
 	religion = "seven_fortunes"
 	culture = "daidoji"
 
@@ -650,7 +650,7 @@ placeholderdaidoji1 = {
 
 placeholderdaidoji2 = {
 	name = name_akiko	#  Daidoji Akiko  #TODO replace name
-	dynasty_house = dynasty_daidoji 	# Daidoji #TODO replace by  like the dynn_morehei
+	dynasty = dynasty_daidoji 	
 	female = yes
 	religion = "seven_fortunes"
 	culture = "daidoji"
