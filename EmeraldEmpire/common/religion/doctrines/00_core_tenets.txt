@@ -1668,7 +1668,8 @@
 		name = {
 			first_valid = {
 				triggered_desc = {
-					trigger = { religion_tag = hinduism_religion }
+					# trigger = { religion_tag = hinduism_religion }
+					trigger = { religion_tag = fortunism_religion } # Rokugan
 					desc = tenet_bhakti_name
 				}
 				desc = tenet_bhakti_patron_god_name
@@ -1680,12 +1681,13 @@
 
 		is_shown = {
 			OR = {
-				religion_tag = hinduism_religion
+				# religion_tag = hinduism_religion
+				religion_tag = fortunism_religion # Rokugan
 				# With FP1, Germanics also get personal deities.
-				AND = {
-					religion_tag = germanic_religion
-					has_fp1_dlc_trigger = yes
-				}
+				# AND = {
+				# 	religion_tag = germanic_religion
+				# 	has_fp1_dlc_trigger = yes
+				# }
 			}
 		}
 

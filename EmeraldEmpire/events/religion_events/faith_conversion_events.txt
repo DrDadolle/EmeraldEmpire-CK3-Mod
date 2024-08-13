@@ -75,25 +75,32 @@ faith_conversion.0002 = {
 					}
 				}
 			}
-			remove_character_modifier = bhakti_hinduism_ganga
-			remove_character_modifier = bhakti_hinduism_saraswati
-			remove_character_modifier = bhakti_hinduism_kali
-			remove_character_modifier = bhakti_hinduism_kubera
-			remove_character_modifier = bhakti_vaishnavism_lakishmi
-			remove_character_modifier = bhakti_vaishnavism_jagganath
-			remove_character_modifier = bhakti_vaishnavism_hayagriva
-			remove_character_modifier = bhakti_shaivism_parvati
-			remove_character_modifier = bhakti_shaivism_virabhadra
-			remove_character_modifier = bhakti_shaivism_munishwarar
-			remove_character_modifier = bhakti_shaivism_dakshinamoorthy
-			remove_character_modifier = bhakti_smartism_ganesha
-			remove_character_modifier = bhakti_smartism_vishnu
-			remove_character_modifier = bhakti_smartism_shiva
-			remove_character_modifier = bhakti_germanic_generic_odin
-			remove_character_modifier = bhakti_germanic_not_danish_ullr
-			remove_character_modifier = bhakti_germanic_danish_tyr
-			remove_character_modifier = bhakti_germanic_generic_thor
-			remove_character_modifier = bhakti_germanic_generic_freyr
+			# remove_character_modifier = bhakti_hinduism_ganga
+			# remove_character_modifier = bhakti_hinduism_saraswati
+			# remove_character_modifier = bhakti_hinduism_kali
+			# remove_character_modifier = bhakti_hinduism_kubera
+			# remove_character_modifier = bhakti_vaishnavism_lakishmi
+			# remove_character_modifier = bhakti_vaishnavism_jagganath
+			# remove_character_modifier = bhakti_vaishnavism_hayagriva
+			# remove_character_modifier = bhakti_shaivism_parvati
+			# remove_character_modifier = bhakti_shaivism_virabhadra
+			# remove_character_modifier = bhakti_shaivism_munishwarar
+			# remove_character_modifier = bhakti_shaivism_dakshinamoorthy
+			# remove_character_modifier = bhakti_smartism_ganesha
+			# remove_character_modifier = bhakti_smartism_vishnu
+			# remove_character_modifier = bhakti_smartism_shiva
+			# remove_character_modifier = bhakti_germanic_generic_odin
+			# remove_character_modifier = bhakti_germanic_not_danish_ullr
+			# remove_character_modifier = bhakti_germanic_danish_tyr
+			# remove_character_modifier = bhakti_germanic_generic_thor
+			# remove_character_modifier = bhakti_germanic_generic_freyr
+			remove_character_modifier = patron_benten_modifier
+			remove_character_modifier = patron_bishamon_modifier
+			remove_character_modifier = patron_jurojin_modifier
+			remove_character_modifier = patron_hotei_modifier
+			remove_character_modifier = patron_daikoku_modifier
+			remove_character_modifier = patron_ebisu_modifier
+			remove_character_modifier = patron_fukurokujin_modifier
 		}
 		# No Friday prayer shenanigans unless you're involved in the Sunni caliphal drama.
 		## Friday prayers would absolutely happen for others but these modifiers are currently tied heavily to the struggle.

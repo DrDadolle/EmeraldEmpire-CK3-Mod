@@ -246,7 +246,7 @@
 
 			doctrine = tenet_astrology
 			doctrine = tenet_reincarnation
-			doctrine = tenet_ritual_celebrations
+			doctrine = tenet_bhakti
 
 
 			# Is an official cult of Rokugan
@@ -264,14 +264,13 @@
 			holy_site=field_of_the_morning_sun
 			holy_site=sunset_monastery
 
-			# Is an official cult of Rokugan
-			religious_head = d_rokugani_faith
-			doctrine = special_doctrine_imperial_cult
-
 			doctrine = tenet_astrology
 			doctrine = tenet_sun_worship #TODO adapt this tenet to make it less zunnist
 			doctrine = tenet_ritual_celebrations
 
+			# Is an official cult of Rokugan
+			religious_head = d_rokugani_faith
+			doctrine = special_doctrine_imperial_cult
 
 			doctrine = doctrine_clerical_succession_temporal_appointment
 		}

@@ -1,0 +1,95 @@
+﻿namespace = rokugan_religious_decision
+
+
+holy_site = benten_seido
+holy_site = jurojin_seido
+holy_site = bishamon_seido
+holy_site = hotei_seido
+holy_site = daikoku_seido
+#holy_site = ebisu_seido TODO
+holy_site = fukurokujin_seido
+
+#Based on religious_decision.0102
+rokugan_religious_decision.0101 = {
+	type = character_event
+	title = rokugan_religious_decision.0101.t
+	desc = rokugan_religious_decision.0101.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Benten
+	option = {
+		name = rokugan_religious_decision.0101.benten
+		trigger = {
+			NOT = { has_character_modifier = patron_benten_modifier }
+		}
+		set_bhakti_effect = { BHAKTI = patron_benten_modifier }
+	}
+
+	# Bishamon
+	option = {
+		name = rokugan_religious_decision.0101.bishamon
+		trigger = {
+			NOT = { has_character_modifier = patron_bishamon_modifier }
+		}
+		set_bhakti_effect = { BHAKTI = patron_bishamon_modifier }
+	}
+
+	# Jurojin
+	option = {
+		name = rokugan_religious_decision.0101.jurojin
+		trigger = {
+			NOT = { has_character_modifier = patron_jurojin_modifier }
+		}
+		set_bhakti_effect = { BHAKTI = patron_jurojin_modifier }
+	}
+
+	# Hotei
+	option = {
+		name = rokugan_religious_decision.0101.hotei
+		trigger = {
+			NOT = { has_character_modifier = patron_hotei_modifier }
+		}
+		set_bhakti_effect = { BHAKTI = patron_hotei_modifier }
+	}
+
+	# Daikoku
+	option = {
+		name = rokugan_religious_decision.0101.daikoku
+		trigger = {
+			NOT = { has_character_modifier = patron_daikoku_modifier }
+		}
+		set_bhakti_effect = { BHAKTI = patron_daikoku_modifier }
+	}
+
+	# Ebisu
+	option = {
+		name = rokugan_religious_decision.0101.ebisu
+		trigger = {
+			NOT = { has_character_modifier = patron_ebisu_modifier }
+		}
+		set_bhakti_effect = { BHAKTI = patron_ebisu_modifier }
+	}
+
+	# Fukurokujin
+	option = {
+		name = rokugan_religious_decision.0101.fukurokujin
+		trigger = {
+			NOT = { has_character_modifier = patron_fukurokujin_modifier }
+		}
+		set_bhakti_effect = { BHAKTI = patron_fukurokujin_modifier }
+	}
+
+	# Opt-Out
+	option = {
+		name = rokugan_religious_decision.0101.optout
+		flavor = rokugan_religious_decision.0101.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

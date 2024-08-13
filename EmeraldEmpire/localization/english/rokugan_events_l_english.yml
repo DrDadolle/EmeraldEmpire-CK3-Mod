@@ -48,6 +48,18 @@
  ############################
  ###### MINOR DECISION
  ############################
+ rokugan_religious_decision.0101.t:0 "see religious_decision.0101/0102"
+ rokugan_religious_decision.0101.desc:0 "see religious_decision.0101/0102"
+ rokugan_religious_decision.0101.benten:0 "see religious_decision.0101/0102"
+ rokugan_religious_decision.0101.bishamon:0 "see religious_decision.0101/0102"
+ rokugan_religious_decision.0101.jurojin:0 "see religious_decision.0101/0102"
+ rokugan_religious_decision.0101.hotei:0 "see religious_decision.0101/0102"
+ rokugan_religious_decision.0101.daikoku:0 "see religious_decision.0101/0102"
+ rokugan_religious_decision.0101.ebisu:0 "see religious_decision.0101/0102"
+ rokugan_religious_decision.0101.fukurokujin:0 "see religious_decision.0101/0102"
+ rokugan_religious_decision.0101.optout:0 "see religious_decision.0101/0102"
+ rokugan_religious_decision.0101.flavor:0 "see religious_decision.0101/0102"
+
  rokugan_seppuku_decision.0001.t:0 "Today Is My Day"
  rokugan_seppuku_decision.0001.desc:0 "By commiting seppuku, I can repay my dishonourable behaviour and return my name untainted to my blessed ancestors."
  rokugan_seppuku_decision.0001.a:0 "Commit Seppuku"

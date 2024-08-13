@@ -1,0 +1,42 @@
+﻿# Choosing a fortune as patron
+patron_benten_modifier = {
+	icon = social_positive
+	attraction_opinion = 10
+	diplomacy = medium_skill_bonus
+}
+
+patron_bishamon_modifier = {
+	icon = prowess_positive
+	prowess = 4
+	tolerance_advantage_mod = 4
+}
+
+patron_jurojin_modifier = {
+	icon = health_positive
+	health = 0.1
+	life_expectancy = 5
+}
+
+patron_hotei_modifier = {
+	icon = social_positive
+	diplomacy = medium_skill_bonus
+	stress_gain_mult = -0.1
+}
+
+patron_daikoku_modifier = {
+	icon = stewardship_positive
+	stewardship = 2
+	domain_tax_mult = 0.05
+}
+
+patron_ebisu_modifier = {
+	icon = letter_positive
+	stewardship = 2
+	general_opinion = 5
+}
+
+patron_fukurokujin_modifier = {
+	icon = learning_positive
+	learning = 2
+	monthly_piety_gain_mult = 0.1
+}
