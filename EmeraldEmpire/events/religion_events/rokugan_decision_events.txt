@@ -1,14 +1,5 @@
 ﻿namespace = rokugan_religious_decision
 
-
-holy_site = benten_seido
-holy_site = jurojin_seido
-holy_site = bishamon_seido
-holy_site = hotei_seido
-holy_site = daikoku_seido
-#holy_site = ebisu_seido TODO
-holy_site = fukurokujin_seido
-
 #Based on religious_decision.0102
 rokugan_religious_decision.0101 = {
 	type = character_event
