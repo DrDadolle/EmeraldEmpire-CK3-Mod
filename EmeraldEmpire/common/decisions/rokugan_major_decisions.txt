@@ -182,7 +182,7 @@ found_minor_clan_decision = {
 # Reclaim Toshi Rambo
 ##################################################
 decision_claim_toshi_rambo_crane = {
-	picture = "gfx/interface/illustrations/decisions/decision_crane.dds" #TODO replace by "embrace death" art.
+	picture = "gfx/interface/illustrations/decisions/decision_crane.dds"
 
 	title = decision_claim_toshi_rambo_crane
 	selection_tooltip = decision_claim_toshi_rambo_crane_tooltip
@@ -191,39 +191,31 @@ decision_claim_toshi_rambo_crane = {
 
 	major = yes
 
+
     is_shown = {
+		save_scope_as = claimant
+		c_toshi_rambo.holder = { save_scope_as = toshi_rambo_holder}
+
         is_ruler = yes
         is_landed = yes
 
-		# Is lion culture under lion daimyo, or the same with crane
-		# OR = {
-			AND = {
-				is_under_k_crane_clan_rule_or_is_ruler = yes
-				culture = { has_cultural_pillar = heritage_crane }
-			}
-        # 	AND = {
-		# 		is_under_k_lion_clan_rule_or_is_ruler = yes
-		# 		culture = { has_cultural_pillar = heritage_lion }
-		# 	}
-		# }
+		# Is crane culture under crane liege
+		AND = {
+			is_under_k_crane_clan_rule_or_is_ruler = yes
+			culture = { has_cultural_pillar = heritage_crane }
+		}
 
-		#If Toshi Rambo holder not the same heritage as the character
-        # NOR = {
-			#TODO CA MARCHE PAS
-			NAND = {
-				c_toshi_rambo.holder = { culture = { has_cultural_pillar = heritage_crane }	}
-				c_toshi_rambo.holder = { is_under_k_crane_clan_rule_or_is_ruler = yes }
-			}
+		#If Toshi Rambo holder not the same heritage as the character 
+		#TODO CA MARCHE PAS ? NOR ? Pq NAND ne marche pas????
+		NOR = {
+				scope:toshi_rambo_holder = { culture = { has_cultural_pillar = heritage_crane }	}
+				scope:toshi_rambo_holder = { is_under_k_crane_clan_rule_or_is_ruler = yes }
+		}
 
-		#  	AND = {
-		#  		c_toshi_rambo.holder = { culture = { has_cultural_pillar = heritage_lion }	}
-		#  		culture = { has_cultural_pillar = heritage_lion }	
-		#  	}
-		# }
 
 		#Do not get claim against imperial holder
 		NOT = {
-			c_toshi_rambo.holder = { is_imperial_family = yes	}
+			scope:toshi_rambo_holder = { is_imperial_family = yes	}
 		}
 
 		#Once per lifetime
@@ -232,9 +224,6 @@ decision_claim_toshi_rambo_crane = {
 		}
 	}
 
-	# Every 20 years ? Once per lifetime ?
-	cooldown = { days = @get_ancestral_claim_cooldown_time }
-
     is_valid = {
 		prestige_level >= 3
 	}
@@ -242,6 +231,7 @@ decision_claim_toshi_rambo_crane = {
     is_valid_showing_failures_only = {
 		is_imprisoned = no
 		is_available_adult = yes
+		is_at_war = no
 	}
 
 	cost = {
@@ -249,6 +239,7 @@ decision_claim_toshi_rambo_crane = {
 	}
 
     effect = {
+
 		show_as_tooltip = {
 			add_pressed_claim = title:c_toshi_rambo
 		}
@@ -258,6 +249,13 @@ decision_claim_toshi_rambo_crane = {
 		trigger_event = {
 			id = rokugan_major_clan_events_decision.0010
 		}
+
+		# Send a message to holder of Toshi rambo that someone claimed it
+		scope:toshi_rambo_holder = {
+			trigger_event = rokugan_major_clan_events_decision.0012
+		}
+
+
 	}
 
 	ai_check_interval = 1
@@ -281,6 +279,8 @@ decision_claim_toshi_rambo_crane = {
 
 }
 
+
+# TODO same for lion clan
 
 ##################################################
 # CRANE CLAN
