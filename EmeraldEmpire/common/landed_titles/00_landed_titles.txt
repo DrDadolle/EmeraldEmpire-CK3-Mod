@@ -2115,6 +2115,8 @@ e_rokugan = {
  }
  
  #TODO title of master of elements Isawa as landless duchy titles ???
+
+
  # Emperor Head of faith title
 d_rokugani_faith = {
 	color = { 40 160 40 }
@@ -2129,8 +2131,7 @@ d_rokugani_faith = {
 
 }
 
-#Special Chuda Title for restauration of Snake Clan ? 
-#TODO
+#Special Chuda Title for restauration of Snake Clan
 d_chuda = {
     color = { 17 20 15 }
     capital = c_chuda_province
