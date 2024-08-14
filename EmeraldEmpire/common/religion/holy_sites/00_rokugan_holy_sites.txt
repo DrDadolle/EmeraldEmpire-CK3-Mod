@@ -111,8 +111,20 @@ fukurokujin_seido = {
 	}
 }
 
-# TODO Ebisu Seido
-# https://l5r.fandom.com/wiki/Zakyo_Toshi
+# Adapted from https://l5r.fandom.com/wiki/Zakyo_Toshi
+# put in Usagi lands for now
+ebisu_seido = {
+
+	county = c_usagi_province
+	barony = b_usagi_mori
+
+	character_modifier = {
+		name = ebisu_seido_effect_name
+		stewardship = 1
+		general_opinion = 2
+	}
+}
+
 
 #################
 # cult_amaterasu

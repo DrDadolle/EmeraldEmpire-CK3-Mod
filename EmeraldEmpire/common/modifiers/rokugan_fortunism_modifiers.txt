@@ -31,7 +31,8 @@ patron_daikoku_modifier = {
 
 patron_ebisu_modifier = {
 	icon = letter_positive
-	stewardship = 2
+	stewardship = 1
+	diplomacy = 1
 	general_opinion = 5
 }
 
