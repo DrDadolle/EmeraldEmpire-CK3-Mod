@@ -29,44 +29,44 @@ rokugan_major_clan_events_decision.0001 = {
 ##################################################
 # Reclaim Toshi Rambo
 ##################################################
-rokugan_major_clan_events_decision.0010 = {
-	content_source = l5r_dlc
-	type = character_event
-	title = rokugan_major_clan_events_decision.0010.t
-	desc = rokugan_major_clan_events_decision.0010.desc
-	theme = realm
-	left_portrait = {
-		character = root
-		animation = personality_zealous
-	}
+# rokugan_major_clan_events_decision.0010 = {
+# 	content_source = l5r_dlc
+# 	type = character_event
+# 	title = rokugan_major_clan_events_decision.0010.t
+# 	desc = rokugan_major_clan_events_decision.0010.desc
+# 	theme = realm
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_zealous
+# 	}
 
-	right_portrait = {
-		character = scope:toshi_rambo_holder
-		animation = anger
-	}
+# 	right_portrait = {
+# 		character = scope:toshi_rambo_holder
+# 		animation = anger
+# 	}
 
-	immediate = {
-		play_music_cue = "mx_cue_positive_effect" #This music ?
-	}
-	option = {
-		add_pressed_claim = title:c_toshi_rambo
-		name = rokugan_major_clan_events_decision.0010.a
-	}
-}
+# 	immediate = {
+# 		play_music_cue = "mx_cue_positive_effect" #This music ?
+# 	}
+# 	option = {
+# 		add_pressed_claim = title:c_toshi_rambo
+# 		name = rokugan_major_clan_events_decision.0010.a
+# 	}
+# }
 
-# Another ruler claimed toshi rambo !
-rokugan_major_clan_events_decision.0012 = {
-	content_source = l5r_dlc
-	type = character_event
-	title = rokugan_major_clan_events_decision.0012.t
-	desc = rokugan_major_clan_events_decision.0012.desc
-	theme = realm
-	left_portrait = {
-		character = scope:claimant
-		animation = personality_greedy
-	}
+# # Another ruler claimed toshi rambo !
+# rokugan_major_clan_events_decision.0012 = {
+# 	content_source = l5r_dlc
+# 	type = character_event
+# 	title = rokugan_major_clan_events_decision.0012.t
+# 	desc = rokugan_major_clan_events_decision.0012.desc
+# 	theme = realm
+# 	left_portrait = {
+# 		character = scope:claimant
+# 		animation = personality_greedy
+# 	}
 
-	option = {
-		name = rokugan_major_clan_events_decision.0012.a
-	}
-}
+# 	option = {
+# 		name = rokugan_major_clan_events_decision.0012.a
+# 	}
+# }

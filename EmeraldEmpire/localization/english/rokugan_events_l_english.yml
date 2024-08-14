@@ -37,13 +37,13 @@
  rokugan_major_clan_events_decision.0001.desc:0 "In the late fourth century, the traitous Yasuki Kiringu, daimyo of the Yasuki Family defected our honorable Clan to join the Crab Clan. Now, the Yasuki Lands are once again part of our lands, and will be forever."
  rokugan_major_clan_events_decision.0001.a:0 "Glory to the Crane Clan !"
 
- rokugan_major_clan_events_decision.0010.t:0 "Reclaiming Toshi Rambo"
- rokugan_major_clan_events_decision.0010.desc:0 "Toshi Rambo has been in the hands of the [toshi_rambo_holder.GetHouse.GetBaseName] for too long ! "
- rokugan_major_clan_events_decision.0010.a:0 "I shall claim Toshi Rambo for myself."
+#  rokugan_major_clan_events_decision.0010.t:0 "Reclaiming Toshi Rambo"
+#  rokugan_major_clan_events_decision.0010.desc:0 "Toshi Rambo has been in the hands of the [toshi_rambo_holder.GetHouse.GetBaseName] for too long ! "
+#  rokugan_major_clan_events_decision.0010.a:0 "I shall claim Toshi Rambo for myself."
 
- rokugan_major_clan_events_decision.0012.t:0 "Toshi Rambo claimed"
- rokugan_major_clan_events_decision.0012.desc:0 "The infamous [claimant.GetFirstName] has claimed Toshi Rambo. [claimant.GetSheHe|U] will go to war soon."
- rokugan_major_clan_events_decision.0012.a:0 "We shall prepare to defend our land."
+#  rokugan_major_clan_events_decision.0012.t:0 "Toshi Rambo claimed"
+#  rokugan_major_clan_events_decision.0012.desc:0 "The infamous [claimant.GetFirstName] has claimed Toshi Rambo. [claimant.GetSheHe|U] will go to war soon."
+#  rokugan_major_clan_events_decision.0012.a:0 "We shall prepare to defend our land."
 
  ############################
  ###### MINOR DECISION

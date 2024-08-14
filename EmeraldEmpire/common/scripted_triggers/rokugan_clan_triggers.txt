@@ -34,31 +34,6 @@ is_imperial_family = {
     }
 }
 
-# Crane clan detector
-is_under_k_crane_clan_rule_or_is_ruler = {
-    AND = {
-        is_independent_ruler = no
-        #any_liege is crane clan
-        OR = {
-            any_liege_or_above = { primary_title = title:k_crane_clan }
-            primary_title = title:k_crane_clan
-        }
-    }
-}
-
-# Lion clan detector
-is_under_k_lion_clan_rule_or_is_ruler = {
-    AND = {
-        is_independent_ruler = no
-        #any_liege is lion clan
-        OR = {
-            any_liege_or_above = { primary_title = title:k_lion_clan }
-            primary_title = title:k_lion_clan
-        }
-    }
-}
-
-
 # One of the lieges should be a pure king. And is Feudal
 is_major_clan = {
     is_independent_ruler = no
@@ -108,5 +83,27 @@ is_minor_clan = {
 # Clan Definition
 ######################
 
+# Crane clan detector
+is_under_k_crane_clan_rule_or_is_ruler = {
+    AND = {
+        is_under_e_rokugan_rule = yes
+        #any_liege is crane clan
+        OR = {
+            any_liege_or_above = { primary_title = title:k_crane_clan }
+            primary_title = title:k_crane_clan
+        }
+    }
+}
 
+# Lion clan detector
+is_under_k_lion_clan_rule_or_is_ruler = {
+    AND = {
+        is_under_e_rokugan_rule = yes
+        #any_liege is lion clan
+        OR = {
+            any_liege_or_above = { primary_title = title:k_lion_clan }
+            primary_title = title:k_lion_clan
+        }
+    }
+}
 

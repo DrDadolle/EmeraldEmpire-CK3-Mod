@@ -17,7 +17,7 @@
  found_major_clan_decision:0 "Found a Great Clan"
  found_major_clan_decision_desc:0 "We can become a Great Clan, thus getting reconnaissance by all in Rokugan."
  found_major_clan_decision_tooltip:0 "We can become a Great Clan."
- found_major_clan_decision_confirm:0 "Our status got elevated by the Emperor !"
+ found_major_clan_decision_confirm:0 ""
  found_major_clan_decision_three_alliance_dukes:0 "Has at least 3 alliances with Duke-level characters and they have at least 25 [opinion|E] of you"
  create_custom_major_clan_de_jure_changes_ally:0 "Every [duke|E] level ally with at least #P 25#! [opinion|E] with you become your [vassal|E] and their lands become [de_jure|E] [duchies|E] of your new [kingdom|E]"
  # found_minor_clan_decision
@@ -28,6 +28,22 @@
  create_new_minor_clan:0 "You found a new Duchy"
  create_title_every_held_county:0 "Every County title you [hold|E]"
  create_custom_minor_clan_de_jure_changes:0 "Becomes [de_jure|E] [counties|E] of your new Duchy"
+
+ # Reclaim Toshi Rambo
+ decision_claim_toshi_rambo_crane:0 "Reclaim Toshi Rambo"
+ decision_claim_toshi_rambo_crane_desc:0 "Too long has Toshi Rambo been taken from us, their rightful owner. It is time to take it back by force !"
+ decision_claim_toshi_rambo_crane_tooltip:0 "We can launch a war to retake Toshi Rambo"
+ decision_claim_toshi_rambo_crane_confirm:0 "Launch a war to reclaim Toshi Rambo"
+ decision_claim_toshi_rambo_crane_effect_1:0 "If victorious, [toshi_rambo_holder.GetHouse.GetBaseName] will no longer hold Toshi Rambo as we take it back."
+ decision_reclaim_toshi_rambo_crane_troops:0 "Crane Forces"
+
+
+ decision_claim_toshi_rambo_lion:0 "Reclaim Toshi Rambo"
+ decision_claim_toshi_rambo_lion_desc:0 "Too long has Toshi Rambo been taken from us, their rightful owner. It is time to take it back by force !"
+ decision_claim_toshi_rambo_lion_tooltip:0 "We can launch a war to retake Toshi Rambo"
+ decision_claim_toshi_rambo_lion_confirm:0 "Launch a war to reclaim Toshi Rambo"
+ decision_claim_toshi_rambo_lion_effect_1:0 "If victorious, [toshi_rambo_holder.GetHouse.GetBaseName] will no longer hold Toshi Rambo as we take it back."
+ decision_reclaim_toshi_rambo_lion_troops:0 "Lion Forces"
 
  ############################
  ###### MINOR

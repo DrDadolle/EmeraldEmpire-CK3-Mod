@@ -26,9 +26,17 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## short term goals 
--Fix Dynasty break on name & CoA of house which became dynasty again => Test it
-- claim on toshi brambo => always shown wtf + no localization. FIX IT ! ERROR LOGIC
-	- check if localization of SCOPE:name of character works. It does not 
+-c_conflagration_temple & c_shinden_kasai are still county of Hantei...
+	- Removed the c_daidoji_monatery incorrect county => Should work now
+-Fix Dynasty break on name & CoA of house which became dynasty again 
+	- => Test it, should be fixed now
+- claim on toshi brambo => always shown wtf + no localization. 
+	- check if localization of SCOPE:name of character works. It does not work
+	- Should work because the save_scope_as as been fixed
+	- Check that we declare war on the liege, not the vassal directly
+	- test localization
+	- test lion version too (do decision_lion.dds)
+	- add temporary troups for this ??
 - Personnal fortune for fortunism (steal from Nordic DLC ?). Maybe later base on AgoT mod ? Reworked tenet_bhakti.
 	- test localization
 - Create MaA for each great clan, (do the same for minor later)
@@ -48,8 +56,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- same for crab
 
 ## Fixes to do
--c_conflagration_temple & c_shinden_kasai are still county of Hantei...
-- "Title does not exist: c_shinsei_monastery_yukan_see, near line: 224
+- "Title does not exist: " in error log to fix
 - Spammed with rokugan_char_interaction.0231 event boxes...
 	- "an honorable death" event procs for outsite of player stuff
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
