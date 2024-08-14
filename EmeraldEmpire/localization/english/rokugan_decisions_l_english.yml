@@ -32,11 +32,12 @@
  ############################
  ###### MINOR
  ############################
- select_personal_deity_fortunism_decision:0 "Selection Favorite Fortune"
- select_personal_deity_fortunism_decision_desc:0 "see religious_decision.0101/0102"
- select_personal_deity_fortunism_decision_tooltip:0 "see religious_decision.0101/0102"
- select_personal_deity_fortunism_decision_tt:0 "see  religious_decision.0101/0102"
- select_personal_deity_fortunism_decision_confirm:0 "see  religious_decision.0101/0102"
+ #select_personal_deity_fortunism_decision
+ select_personal_deity_fortunism_decision:0 "Determine Favorite Fortune"
+ select_personal_deity_fortunism_decision_desc:0 "#F It is not uncommon for [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] to single out one amongst the Fortunes who suits their particular tastes and aims in life for special attention.\n\nI should contemplate the Fortunes and decide which one calls to me the most.#!"
+ select_personal_deity_fortunism_decision_tooltip:0 "Determine which Fortune to you workship"
+ select_personal_deity_fortunism_decision_tt:0 "You begin to live your life according to the values of a Fortune."
+ select_personal_deity_fortunism_decision_confirm:0 "But whom to choose?"
  # bleach_hair_white_crane_decision
  bleach_hair_white_crane_decision:0 "Bleach Hair White"
  bleach_hair_white_crane_decision_desc:0 "To honor Doji Hayaku, many among the Crane Clan bleached their hair white. In this way, they showed their respect for his courage and sacrifice, and it also allowed them to show their dedication to the Crane Clan. The traditions continues among many Crane to this day."
