@@ -31,19 +31,31 @@
 
  # Reclaim Toshi Rambo
  decision_claim_toshi_rambo_crane:0 "Reclaim Toshi Rambo"
- decision_claim_toshi_rambo_crane_desc:0 "Too long has Toshi Rambo been taken from us, their rightful owner. It is time to take it back by force !"
+ decision_claim_toshi_rambo_crane_desc:0 "Too long has Toshi Rambo been taken from us, the Crane Clan, their rightful owner. It is time to take it back by force !"
  decision_claim_toshi_rambo_crane_tooltip:0 "We can launch a war to retake Toshi Rambo"
  decision_claim_toshi_rambo_crane_confirm:0 "Launch a war to reclaim Toshi Rambo"
- decision_claim_toshi_rambo_crane_effect_1:0 "If victorious, [toshi_rambo_holder.GetHouse.GetBaseName] will no longer hold Toshi Rambo as we take it back."
  decision_reclaim_toshi_rambo_crane_troops:0 "Crane Forces"
 
 
  decision_claim_toshi_rambo_lion:0 "Reclaim Toshi Rambo"
- decision_claim_toshi_rambo_lion_desc:0 "Too long has Toshi Rambo been taken from us, their rightful owner. It is time to take it back by force !"
+ decision_claim_toshi_rambo_lion_desc:0 "Too long has Toshi Rambo been taken from us, the Lion Clan, their rightful owner. It is time to take it back by force !"
  decision_claim_toshi_rambo_lion_tooltip:0 "We can launch a war to retake Toshi Rambo"
  decision_claim_toshi_rambo_lion_confirm:0 "Launch a war to reclaim Toshi Rambo"
- decision_claim_toshi_rambo_lion_effect_1:0 "If victorious, [toshi_rambo_holder.GetHouse.GetBaseName] will no longer hold Toshi Rambo as we take it back."
  decision_reclaim_toshi_rambo_lion_troops:0 "Lion Forces"
+
+ # Reclaim City Rich Frog
+ decision_claim_city_rich_frog_unicorn:0 "Reclaim the City of the Rich Frog"
+ decision_claim_city_rich_frog_unicorn_desc:0 "Too long has the City of the Rich Frog been taken from us, the Unicorn Clan, their rightful owner. It is time to take it back by force !"
+ decision_claim_city_rich_frog_unicorn_tooltip:0 "We can launch a war to retake the City of the Rich Frog"
+ decision_claim_city_rich_frog_unicorn_confirm:0 "Launch a war to reclaim the City of the Rich Frog"
+ decision_reclaim_city_rich_frog_unicorn_troops:0 "Unicorn Forces"
+
+
+ decision_claim_city_rich_frog_lion:0 "Reclaim the City of the Rich Frog"
+ decision_claim_city_rich_frog_lion_desc:0 "Too long has the City of the Rich Frog been taken from us, the Lion Clan, their rightful owner. It is time to take it back by force !"
+ decision_claim_city_rich_frog_lion_tooltip:0 "We can launch a war to retake the City of the Rich Frog"
+ decision_claim_city_rich_frog_lion_confirm:0 "Launch a war to reclaim the City of the Rich Frog"
+ decision_reclaim_city_rich_frog_lion_troops:0 "Lion Forces"
 
  ############################
  ###### MINOR

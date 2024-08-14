@@ -26,21 +26,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## short term goals 
--c_conflagration_temple & c_shinden_kasai are still county of Hantei...
-	- Removed the c_daidoji_monatery incorrect county => Should work now
--Fix Dynasty break on name & CoA of house which became dynasty again 
-	- => Test it, should be fixed now
-- claim on toshi Rambo => always shown wtf + no localization. 
-	- check if localization of SCOPE:name of character works. It does not work
-	- Should work because the save_scope_as as been fixed
-	- Check that we declare war on the liege, not the vassal directly
-	- test localization
-	- test lion version too (do decision_lion.dds)
-	- add temporary troups for this ??
-- Personnal fortune for fortunism (steal from Nordic DLC ?). Maybe later base on AgoT mod ? Reworked tenet_bhakti.
-	- test localization & if it works
-- Once Toshi Rambo works, do the same for City Rich Frog
-- Have a nice paper map à la Shogunate when zooming out. gfx/map/terrain/flatmap.dds ?
+- fix mma localization
 - Create MaA for each great clan, (do the same for minor later)
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
@@ -54,9 +40,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- same for Unicorn => duchy put but they are spread out in reality...
 	- same for crane
 	- same for crab
+- CoA for d_rokugani_faith & c_emerald_castle/d/k (+ localization county)
 
 ## Fixes to do
-- "Title does not exist: " in error log to fix
 - Spammed with rokugan_char_interaction.0231 event boxes...
 	- "an honorable death" event procs for outsite of player stuff
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
@@ -96,6 +82,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Remove AI Cadet branches => Working ?
 - Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
+- claim on toshi Rambo / city rich frog
+	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================

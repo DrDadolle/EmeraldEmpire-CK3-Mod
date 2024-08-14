@@ -107,3 +107,15 @@ is_under_k_lion_clan_rule_or_is_ruler = {
     }
 }
 
+# Unicorn clan detector
+is_under_k_unicorn_clan_rule_or_is_ruler = {
+    AND = {
+        is_under_e_rokugan_rule = yes
+        #any_liege is unicorn clan
+        OR = {
+            any_liege_or_above = { primary_title = title:k_unicorn_clan }
+            primary_title = title:k_unicorn_clan
+        }
+    }
+}
+
