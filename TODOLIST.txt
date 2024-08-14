@@ -30,7 +30,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Removed the c_daidoji_monatery incorrect county => Should work now
 -Fix Dynasty break on name & CoA of house which became dynasty again 
 	- => Test it, should be fixed now
-- claim on toshi brambo => always shown wtf + no localization. 
+- claim on toshi Rambo => always shown wtf + no localization. 
 	- check if localization of SCOPE:name of character works. It does not work
 	- Should work because the save_scope_as as been fixed
 	- Check that we declare war on the liege, not the vassal directly
@@ -38,15 +38,15 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- test lion version too (do decision_lion.dds)
 	- add temporary troups for this ??
 - Personnal fortune for fortunism (steal from Nordic DLC ?). Maybe later base on AgoT mod ? Reworked tenet_bhakti.
-	- test localization
+	- test localization & if it works
+- Once Toshi Rambo works, do the same for City Rich Frog
+- Have a nice paper map à la Shogunate when zooming out. gfx/map/terrain/flatmap.dds ?
 - Create MaA for each great clan, (do the same for minor later)
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
 	- update select_personal_deity_fortunism_decision to each culture with such maa
 	- add special icons/images for MaA !!!!!!!!!!!!!!!!!!!!! (crab done, rest to do)
-
 - add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)?  (cf Discord "CK3 Volcano Map Items" shared ressources) 
-- Have a nice paper map à la Shogunate when zooming out. gfx/map/terrain/flatmap.dds ?
 - defines geo regions => For animals/trees/etc... (map_data/geographical_regions/aaa.txt)
 	- Modify definition of Lion & Scorpion to have Beiden pass properly defined
 	- Modify definition of phoenix/neutral for isawamori/shinomenmori
@@ -79,25 +79,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - add "animal" (clan animal) as motif for CoA (instead of just textured one)
 	- generated dynasties of ronins have random CoA
-- Events for l5R => "yearly_on_actions.txt"/on_yearly_events (for instance). Ideas
-	- Random duels
-	- Paiting stuff
-	- TEa
-	-Opium
-	- others
 - add activites map object data on each county ? capital county ?
-- genes & ethnicities
-- Add modifiers to dynasties to prove their link to great clans ????
-- Prevent imperial family from doing wars against other clans...? Only for AI ? or not ?
-- Blood feud (like Matsu vs Kakita)	: https://steamcommunity.com/sharedfiles/filedetails/?id=2914047110. Need the Friends & Foes DLC sadly...
-	- shogunate_bookmark_events.txt/shogunate_bookmark.8300/shogunate_historical_feud_effect => shogunate_bookmark_effects/shogunate_bookmark.8310
-	- add more events? Duels ?
-- Artifacts creation process
 - Add ancestral clan & family founders
 	- Special naming convention for Kamis (no first name)
-	- Kami traits/kami descendent à la Shayoshant/paragon of vertue
--Removal wall map object in crab clan
+	- Kami traits/kami descendent à la Shayoshant (saoshyant_descendant) upon birth
+- Removal wall map object in crab clan
 - Special events setting the start of the clan wars
+- Artifacts creation process
 
 ##  Waiting & placeholders
 - Cat mon : @Bamba 
@@ -111,7 +99,19 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================
+- Events for l5R => "yearly_on_actions.txt"/on_yearly_events (for instance). Ideas
+	- Random duels
+	- Paiting stuff
+	- TEa
+	-Opium
+	- others
 - Add "minor clothes" probability to Great Clan clothes to have more variety of clothing styles
+- Blood feud (like Matsu vs Kakita)	: https://steamcommunity.com/sharedfiles/filedetails/?id=2914047110. Need the Friends & Foes DLC sadly...
+	- shogunate_bookmark_events.txt/shogunate_bookmark.8300/shogunate_historical_feud_effect => shogunate_bookmark_effects/shogunate_bookmark.8310
+	- add more events? Duels ?
+- Prevent imperial family from doing wars against other clans...? Only for AI ? or not ?
+- Add modifiers to dynasties to prove their link to great clans ????
+- genes & ethnicities
 - Add court (from Shogunate) : need DLC
 - Create MaA for each minor clan
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
@@ -160,6 +160,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Restore Snake Clan (phoenix)
 - Found minor clan (count)
 - Found great clan (duke)
+- Reclaim Roshi Rambo (Lion/Crane)
 
 
 # Permissions to asks
