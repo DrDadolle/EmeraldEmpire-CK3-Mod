@@ -13,9 +13,10 @@ unicorn_utaku_maiden = {
 	pursuit = 20
 	screen = 0
 	
-	can_recruit = {
-		culture = { has_cultural_pillar = heritage_unicorn }
-	}
+	# can_recruit = {
+	# 	culture = { has_cultural_pillar = heritage_unicorn }
+	# }
+	# Locked by an innovation
 
 	terrain_bonus = {
 		plains = { damage = 30 }
