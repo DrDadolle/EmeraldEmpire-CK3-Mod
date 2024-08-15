@@ -1,9 +1,116 @@
 e_rokugan = { 
 
 	5.1.1 = {
-		# holder = kami Hantei
+		holder = lineofhantei1
 	}
-
+	45.1.1 = {
+		holder = lineofhantei2
+	}
+	247.1.1 = {
+		holder = lineofhantei3
+	}
+	280.1.1 = {
+		holder = lineofhantei4
+	}
+	371.1.1 = {
+		holder = lineofhantei5
+	}
+	391.1.1 = {
+		holder = lineofhantei6
+	}
+	435.1.1 = {
+		holder = lineofhantei7
+	}
+	442.1.1 = {
+		holder = lineofhantei8
+	}
+	452.1.1 = {
+		holder = lineofhantei9
+	}
+	487.1.1 = {
+		holder = lineofhantei10
+	}
+	497.1.1 = {
+		holder = lineofhantei11
+	}
+	514.1.1 = {
+		holder = lineofhantei12
+	}
+	532.1.1 = {
+		holder = lineofhantei13
+	}
+	550.1.1 = {
+		holder = lineofhantei14
+	}
+	570.1.1 = {
+		holder = lineofhantei15
+	}
+	597.1.1 = {
+		holder = lineofhantei16
+	}
+	610.1.1 = {
+		holder = lineofhantei17
+	}
+	620.1.1 = {
+		holder = lineofhantei18
+	}
+	640.1.1 = {
+		holder = lineofhantei19
+	}
+	650.1.1 = {
+		holder = lineofhantei20
+	}
+	728.1.1 = {
+		holder = lineofhantei21
+	}
+	740.1.1 = {
+		holder = lineofhantei22
+	}
+	821.1.1 = {
+		holder = lineofhantei23
+	}
+	831.1.1 = {
+		holder = lineofhantei24
+	}
+	841.1.1 = {
+		holder = lineofhantei25
+	}
+	861.1.1 = {
+		holder = lineofhantei26
+	}
+	865.1.1 = {
+		holder = lineofhantei27
+	}
+	885.1.1 = {
+		holder = lineofhantei28
+	}
+	890.1.1 = {
+		holder = lineofhantei29
+	}
+	900.1.1 = {
+		holder = lineofhantei30
+	}
+	910.1.1 = {
+		holder = lineofhantei31
+	}
+	930.1.1 = {
+		holder = lineofhantei32
+	}
+	950.1.1 = {
+		holder = lineofhantei33
+	}
+	970.1.1 = {
+		holder = lineofhantei34
+	}
+	1000.1.1 = {
+		holder = lineofhantei35
+	}
+	1030.1.1 = {
+		holder = lineofhantei36
+	}
+	1060.1.1 = {
+		holder = lineofhantei37
+	}
 	1103.1.1 = {
 		holder = lineofhantei38 # Hantei 38th
 	}
@@ -12,9 +119,116 @@ e_rokugan = {
 d_rokugani_faith = {
 
 	5.1.1 = {
-		# holder = kami Hantei
+		holder = lineofhantei1
 	}
-
+	45.1.1 = {
+		holder = lineofhantei2
+	}
+	247.1.1 = {
+		holder = lineofhantei3
+	}
+	280.1.1 = {
+		holder = lineofhantei4
+	}
+	371.1.1 = {
+		holder = lineofhantei5
+	}
+	391.1.1 = {
+		holder = lineofhantei6
+	}
+	435.1.1 = {
+		holder = lineofhantei7
+	}
+	442.1.1 = {
+		holder = lineofhantei8
+	}
+	452.1.1 = {
+		holder = lineofhantei9
+	}
+	487.1.1 = {
+		holder = lineofhantei10
+	}
+	497.1.1 = {
+		holder = lineofhantei11
+	}
+	514.1.1 = {
+		holder = lineofhantei12
+	}
+	532.1.1 = {
+		holder = lineofhantei13
+	}
+	550.1.1 = {
+		holder = lineofhantei14
+	}
+	570.1.1 = {
+		holder = lineofhantei15
+	}
+	597.1.1 = {
+		holder = lineofhantei16
+	}
+	610.1.1 = {
+		holder = lineofhantei17
+	}
+	620.1.1 = {
+		holder = lineofhantei18
+	}
+	640.1.1 = {
+		holder = lineofhantei19
+	}
+	650.1.1 = {
+		holder = lineofhantei20
+	}
+	728.1.1 = {
+		holder = lineofhantei21
+	}
+	740.1.1 = {
+		holder = lineofhantei22
+	}
+	821.1.1 = {
+		holder = lineofhantei23
+	}
+	831.1.1 = {
+		holder = lineofhantei24
+	}
+	841.1.1 = {
+		holder = lineofhantei25
+	}
+	861.1.1 = {
+		holder = lineofhantei26
+	}
+	865.1.1 = {
+		holder = lineofhantei27
+	}
+	885.1.1 = {
+		holder = lineofhantei28
+	}
+	890.1.1 = {
+		holder = lineofhantei29
+	}
+	900.1.1 = {
+		holder = lineofhantei30
+	}
+	910.1.1 = {
+		holder = lineofhantei31
+	}
+	930.1.1 = {
+		holder = lineofhantei32
+	}
+	950.1.1 = {
+		holder = lineofhantei33
+	}
+	970.1.1 = {
+		holder = lineofhantei34
+	}
+	1000.1.1 = {
+		holder = lineofhantei35
+	}
+	1030.1.1 = {
+		holder = lineofhantei36
+	}
+	1060.1.1 = {
+		holder = lineofhantei37
+	}
 	1103.1.1 = {
 		holder = lineofhantei38 # Hantei 38th
 	}
@@ -23,11 +237,119 @@ d_rokugani_faith = {
 k_imperial_families = {
 
 	5.1.1 = {
-		# holder = kami Hantei
+		liege = "e_rokugan"
+		holder = lineofhantei1
+	}
+	45.1.1 = {
+		holder = lineofhantei2
+	}
+	247.1.1 = {
+		holder = lineofhantei3
+	}
+	280.1.1 = {
+		holder = lineofhantei4
+	}
+	371.1.1 = {
+		holder = lineofhantei5
+	}
+	391.1.1 = {
+		holder = lineofhantei6
+	}
+	435.1.1 = {
+		holder = lineofhantei7
+	}
+	442.1.1 = {
+		holder = lineofhantei8
+	}
+	452.1.1 = {
+		holder = lineofhantei9
+	}
+	487.1.1 = {
+		holder = lineofhantei10
+	}
+	497.1.1 = {
+		holder = lineofhantei11
+	}
+	514.1.1 = {
+		holder = lineofhantei12
+	}
+	532.1.1 = {
+		holder = lineofhantei13
+	}
+	550.1.1 = {
+		holder = lineofhantei14
+	}
+	570.1.1 = {
+		holder = lineofhantei15
+	}
+	597.1.1 = {
+		holder = lineofhantei16
+	}
+	610.1.1 = {
+		holder = lineofhantei17
+	}
+	620.1.1 = {
+		holder = lineofhantei18
+	}
+	640.1.1 = {
+		holder = lineofhantei19
+	}
+	650.1.1 = {
+		holder = lineofhantei20
+	}
+	728.1.1 = {
+		holder = lineofhantei21
+	}
+	740.1.1 = {
+		holder = lineofhantei22
+	}
+	821.1.1 = {
+		holder = lineofhantei23
+	}
+	831.1.1 = {
+		holder = lineofhantei24
+	}
+	841.1.1 = {
+		holder = lineofhantei25
+	}
+	861.1.1 = {
+		holder = lineofhantei26
+	}
+	865.1.1 = {
+		holder = lineofhantei27
+	}
+	885.1.1 = {
+		holder = lineofhantei28
+	}
+	890.1.1 = {
+		holder = lineofhantei29
+	}
+	900.1.1 = {
+		holder = lineofhantei30
+	}
+	910.1.1 = {
+		holder = lineofhantei31
+	}
+	930.1.1 = {
+		holder = lineofhantei32
+	}
+	950.1.1 = {
+		holder = lineofhantei33
+	}
+	970.1.1 = {
+		holder = lineofhantei34
+	}
+	1000.1.1 = {
+		holder = lineofhantei35
+	}
+	1030.1.1 = {
+		holder = lineofhantei36
+	}
+	1060.1.1 = {
+		holder = lineofhantei37
 	}
 
 	1103.1.1 = {
-		liege = "e_rokugan"
 		holder = lineofhantei38 # Hantei 38th
 	}
 }
@@ -35,11 +357,120 @@ k_imperial_families = {
 d_hantei = {
 
 	5.1.1 = {
-		# holder = kami Hantei
+		liege = "k_imperial_families"
+		holder = lineofhantei1
+	}
+	45.1.1 = {
+		holder = lineofhantei2
+	}
+	247.1.1 = {
+		holder = lineofhantei3
+	}
+	280.1.1 = {
+		holder = lineofhantei4
+	}
+	371.1.1 = {
+		holder = lineofhantei5
+	}
+	391.1.1 = {
+		holder = lineofhantei6
+	}
+	435.1.1 = {
+		holder = lineofhantei7
+	}
+	442.1.1 = {
+		holder = lineofhantei8
+	}
+	452.1.1 = {
+		holder = lineofhantei9
+	}
+	487.1.1 = {
+		holder = lineofhantei10
+	}
+	497.1.1 = {
+		holder = lineofhantei11
+	}
+	514.1.1 = {
+		holder = lineofhantei12
+	}
+	532.1.1 = {
+		holder = lineofhantei13
+	}
+	550.1.1 = {
+		holder = lineofhantei14
+	}
+	570.1.1 = {
+		holder = lineofhantei15
+	}
+	597.1.1 = {
+		holder = lineofhantei16
+	}
+	610.1.1 = {
+		holder = lineofhantei17
+	}
+	620.1.1 = {
+		holder = lineofhantei18
+	}
+	640.1.1 = {
+		holder = lineofhantei19
+	}
+	650.1.1 = {
+		holder = lineofhantei20
+	}
+	728.1.1 = {
+		holder = lineofhantei21
+	}
+	740.1.1 = {
+		holder = lineofhantei22
+	}
+	821.1.1 = {
+		holder = lineofhantei23
+	}
+	831.1.1 = {
+		holder = lineofhantei24
+	}
+	841.1.1 = {
+		holder = lineofhantei25
+	}
+	861.1.1 = {
+		holder = lineofhantei26
+	}
+	865.1.1 = {
+		holder = lineofhantei27
+	}
+	885.1.1 = {
+		holder = lineofhantei28
+	}
+	890.1.1 = {
+		holder = lineofhantei29
+	}
+	900.1.1 = {
+		holder = lineofhantei30
+	}
+	910.1.1 = {
+		holder = lineofhantei31
+	}
+	930.1.1 = {
+		holder = lineofhantei32
+	}
+	950.1.1 = {
+		holder = lineofhantei33
+	}
+	970.1.1 = {
+		holder = lineofhantei34
+	}
+	1000.1.1 = {
+		holder = lineofhantei35
+	}
+	1030.1.1 = {
+		holder = lineofhantei36
+	}
+	1060.1.1 = {
+		holder = lineofhantei37
 	}
 
 	1103.1.1 = {
-		liege = "k_imperial_families"
+		
 		holder = lineofhantei38 # Hantei 38th
 	}
 }
@@ -47,11 +478,120 @@ d_hantei = {
 c_otosan_uchi_province = {
 
 	5.1.1 = {
-		# holder = kami Hantei
+		liege = "d_hantei"
+		holder = lineofhantei1
+	}
+	45.1.1 = {
+		holder = lineofhantei2
+	}
+	247.1.1 = {
+		holder = lineofhantei3
+	}
+	280.1.1 = {
+		holder = lineofhantei4
+	}
+	371.1.1 = {
+		holder = lineofhantei5
+	}
+	391.1.1 = {
+		holder = lineofhantei6
+	}
+	435.1.1 = {
+		holder = lineofhantei7
+	}
+	442.1.1 = {
+		holder = lineofhantei8
+	}
+	452.1.1 = {
+		holder = lineofhantei9
+	}
+	487.1.1 = {
+		holder = lineofhantei10
+	}
+	497.1.1 = {
+		holder = lineofhantei11
+	}
+	514.1.1 = {
+		holder = lineofhantei12
+	}
+	532.1.1 = {
+		holder = lineofhantei13
+	}
+	550.1.1 = {
+		holder = lineofhantei14
+	}
+	570.1.1 = {
+		holder = lineofhantei15
+	}
+	597.1.1 = {
+		holder = lineofhantei16
+	}
+	610.1.1 = {
+		holder = lineofhantei17
+	}
+	620.1.1 = {
+		holder = lineofhantei18
+	}
+	640.1.1 = {
+		holder = lineofhantei19
+	}
+	650.1.1 = {
+		holder = lineofhantei20
+	}
+	728.1.1 = {
+		holder = lineofhantei21
+	}
+	740.1.1 = {
+		holder = lineofhantei22
+	}
+	821.1.1 = {
+		holder = lineofhantei23
+	}
+	831.1.1 = {
+		holder = lineofhantei24
+	}
+	841.1.1 = {
+		holder = lineofhantei25
+	}
+	861.1.1 = {
+		holder = lineofhantei26
+	}
+	865.1.1 = {
+		holder = lineofhantei27
+	}
+	885.1.1 = {
+		holder = lineofhantei28
+	}
+	890.1.1 = {
+		holder = lineofhantei29
+	}
+	900.1.1 = {
+		holder = lineofhantei30
+	}
+	910.1.1 = {
+		holder = lineofhantei31
+	}
+	930.1.1 = {
+		holder = lineofhantei32
+	}
+	950.1.1 = {
+		holder = lineofhantei33
+	}
+	970.1.1 = {
+		holder = lineofhantei34
+	}
+	1000.1.1 = {
+		holder = lineofhantei35
+	}
+	1030.1.1 = {
+		holder = lineofhantei36
+	}
+	1060.1.1 = {
+		holder = lineofhantei37
 	}
 
 	1103.1.1 = {
-		liege = "d_hantei"
+		
 		holder = lineofhantei38 # Hantei 38th
 		change_development_level = 40
 	}

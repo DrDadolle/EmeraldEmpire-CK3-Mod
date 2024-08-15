@@ -18,6 +18,789 @@
 #####################
 #	HANTEI
 #####################
+lineofhantei1 = {
+	name = "" 	# TODO : special naming for Kami
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami
+	trait = beauty_good_3
+	trait = education_diplomacy_4
+	trait = gregarious
+	trait = just
+	trait = diligent
+
+	#TODO
+	1.1.1 = {
+		birth = yes
+	}
+
+	# 24.1.1 = {
+	# 	add_spouse=#TODO
+	# }
+
+	45.1.1 = {
+		death={
+			death_reason=death_battle
+		}
+	}
+}
+
+lineofhantei2 = {
+	name = name_genji
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami
+
+	father = lineofhantei1
+
+
+	20.1.1 = {
+		birth = yes
+	}
+
+	# 46.1.1 = {
+	# 	add_spouse=#TODO
+	# }
+
+	100.1.1 = {
+		give_nickname = nick_shining_prince
+	}
+
+	247.1.1 = {
+		death = yes
+	}
+}
+
+lineofhantei3 = {
+	name = name_ningi
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei2
+
+
+	200.1.1 = {
+		birth = yes
+	}
+
+	280.1.1 = {
+		death = yes
+	}
+}
+
+lineofhantei4 = {
+	name = name_bosai
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei3
+
+
+	278.1.1 = {
+		birth = yes
+	}
+
+	371.1.1 = {
+		death = yes
+	}
+}
+
+
+lineofhantei5 = {
+	name = name_fujiwa
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei4
+
+
+	314.1.1 = {
+		birth = yes
+	}
+
+	391.1.1 = {
+		death = yes
+	}
+}
+
+lineofhantei6 = {
+	name = name_kusada
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei5
+
+
+	360.1.1 = {
+		birth = yes
+	}
+
+	435.1.1 = {
+		death = yes
+	}
+}
+
+lineofhantei7 = {
+	name = name_yuguzohime
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+	female = yes
+
+	trait = kami_descendant
+
+	mother = lineofhantei6
+
+
+	424.1.1 = {
+		birth = yes
+	}
+
+	442.1.1 = {
+		death={
+			death_reason=death_battle
+		}
+	}
+}
+
+lineofhantei8 = {
+	name = name_muhaki
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei5
+
+
+	362.1.1 = {
+		birth = yes
+	}
+
+	452.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei9 = {
+	name = name_retsuhime
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+	female = yes
+
+	trait = kami_descendant
+
+	father = lineofhantei7
+
+
+	434.1.1 = {
+		birth = yes
+	}
+
+	487.1.1 = {
+		death=yes
+	}
+}
+
+
+lineofhantei10 = {
+	name = name_hantei_10
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	# father = is lineofhantei7's cousin
+
+
+	438.1.1 = {
+		birth = yes
+	}
+
+	497.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei11 = {
+	name = name_hohiro
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei10
+
+
+	478.1.1 = {
+		birth = yes
+	}
+
+	514.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei12 = {
+	name = name_hikawa
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei11
+
+
+	497.1.1 = {
+		birth = yes
+	}
+
+	532.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei13 = {
+	name = name_satoru
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei12
+
+
+	515.1.1 = {
+		birth = yes
+	}
+	#TODO
+	550.1.1 = {
+		death=yes
+	}
+}
+lineofhantei14 = {
+	name = name_hantei_14
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei13
+
+	#TODO
+	528.1.1 = {
+		birth = yes
+	}
+	#TODO
+	570.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei15 = {
+	name = name_hantei_15
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei14
+
+	548.1.1 = {
+		birth = yes
+	}
+	
+	597.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei16 = {
+	name = name_okucheo
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+	trait = sadistic
+	trait = callous
+	trait = wrathful
+
+	father = lineofhantei15
+
+
+	569.1.1 = {
+		birth = yes
+	}
+
+	590.1.1 = {
+		give_nickname = nick_steel_chrysanthemum
+	}
+	
+	610.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei17 = {
+	name = name_hantei_17
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei16
+
+
+	600.1.1 = {
+		birth = yes
+	}
+
+	620.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei18 = {
+	name = name_hantei_18
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	#No info on father.
+
+	584.1.1 = {
+		birth = yes
+	}
+	640.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei19 = {
+	name = name_hantei_19
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	#No info on father.
+
+	610.1.1 = {
+		birth = yes
+	}
+
+	# Technically retired, but I don't care, so he dies at this date
+	650.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei20 = {
+	name = name_hantei_20
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei19
+
+	631.1.1 = {
+		birth = yes
+	}
+
+	728.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei21 = {
+	name = name_hantei_21
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei20
+
+	661.1.1 = {
+		birth = yes
+	}
+
+	740.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei21_1 = {
+	name = name_hantei_21_1
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei21
+
+	701.1.1 = {
+		birth = yes
+	}
+
+	730.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei22 = {
+	name = name_hantei_22
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei21_1
+
+	721.1.1 = {
+		birth = yes
+	}
+
+	821.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei23 = {
+	name = name_hantei_23
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei22
+
+
+	737.1.1 = {
+		birth = yes
+	}
+
+
+	831.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei24 = {
+	name = name_hantei_24
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei23
+
+
+	755.1.1 = {
+		birth = yes
+	}
+
+
+	841.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei25 = {
+	name = name_hantei_25
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei24
+
+
+	772.1.1 = {
+		birth = yes
+	}
+
+
+	861.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei26 = {
+	name = name_hantei_26
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei25
+
+
+	789.1.1 = {
+		birth = yes
+	}
+
+
+	865.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei27 = {
+	name = name_hantei_27
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei26
+
+	806.1.1 = {
+		birth = yes
+	}
+
+
+	885.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei28 = {
+	name = name_hantei_28
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei27
+
+
+	823.1.1 = {
+		birth = yes
+	}
+
+	890.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei29 = {
+	name = name_hantei_29
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei28
+
+
+	840.1.1 = {
+		birth = yes
+	}
+
+
+	900.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei30 = {
+	name = name_hantei_30
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei29
+
+	860.1.1 = {
+		birth = yes
+	}
+
+	910.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei31 = {
+	name = name_hantei_31
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei30
+
+	880.1.1 = {
+		birth = yes
+	}
+
+	930.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei32 = {
+	name = name_hantei_32
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei31
+
+	900.1.1 = {
+		birth = yes
+	}
+
+	950.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei33 = {
+	name = name_hantei_33
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei32
+
+	920.1.1 = {
+		birth = yes
+	}
+
+	970.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei34 = {
+	name = name_hantei_34
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei33
+
+	940.1.1 = {
+		birth = yes
+	}
+
+	980.1.1 = {
+		give_nickname = nick_monastic_emperor
+	}
+
+	1000.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei35 = {
+	name = name_hantei_35
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei34
+
+	970.1.1 = {
+		birth = yes
+	}
+
+	1030.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei36 = {
+	name = name_hantei_36
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei35
+
+	1000.1.1 = {
+		birth = yes
+	}
+
+	1060.1.1 = {
+		death=yes
+	}
+}
+
+lineofhantei37 = {
+	name = name_hantei_37
+	dynasty = dynasty_hantei 	
+	religion = "cult_ancestors"
+	culture = "hantei"
+
+	trait = kami_descendant
+
+	father = lineofhantei36
+
+	1030.1.1 = {
+		birth = yes
+	}
+
+	1103.1.1 = {
+		death=yes
+	}
+}
+
 lineofhantei38 = {
 	name = name_jodan 	# Hantei 38th
 	dynasty = dynasty_hantei 	
@@ -35,7 +818,7 @@ lineofhantei38 = {
 	
 	### Family
 
-	1083.1.1 = {
+	1078.1.1 = {
 		birth = yes
 	}
 	

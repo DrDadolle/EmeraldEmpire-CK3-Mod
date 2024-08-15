@@ -255,29 +255,38 @@ lineofdojisatsume4 = {
 	}
 }
 
+
+##### Historic characters
 lineofkamidoji1 = {
-	name = name_akiko 	# TODO : special naming for Kami
+	name = "" 	# TODO : special naming for Kami
 	dynasty = dynasty_doji 	
 	religion = "seven_fortunes"
 	culture = "doji"
 	female = yes
 
-	trait = bleached_white_hair
+	trait = natural_white_hair
 	trait = kami
 	trait = beauty_good_3
+	trait = education_diplomacy_4
+	trait = gregarious
+	trait = just
+	trait = diligent
 
 	#TODO
 	1.1.1 = {
 		birth = yes
 	}
-	## TODO married to Kakita in 24
 	## TODO 5 childrens
-	## TODO actual Death
 
-	102.1.1 = {
-		death = yes
+	24.1.1 = {
+		add_matrilineal_spouse=lineofkakita1
 	}
 
+	102.1.1 = {
+		death={
+			death_reason=death_suicide
+		}
+	}
 }
 
 ##### Random county holder for the Doji
@@ -505,7 +514,30 @@ lineofkakitatoshimo5 = {
 		birth = yes
 	}
 }
+##### Historical characters 
+lineofkakita1 = {
+	name = "" 	# TODO : special naming for Kakita
+	dynasty = dynasty_kakita
+	religion = "seven_fortunes"
+	culture = "kakita"
 
+	trait = beauty_good_2
+	trait = education_martial_4
+	trait = arrogant
+	trait = stubborn
+	trait = brave
+
+	4.1.1 = {
+		birth = yes
+	}
+
+	42.1.1 = {
+		death = {
+			# killer = scope:lunatic_soldier #TODO Mirumoto's son
+			death_reason = death_duel
+		}
+	}
+}
 ##### Random county holder for the Kakita
 placeholderkakita1 = {
 	name = name_aki 	#  Kakita Aki  #TODO replace name

@@ -140,11 +140,12 @@ kami = {
 	health = 10
 	physical = yes
 
+
 	birth = 0
 	random_creation = 0
-	can_have_children = no
+	life_expectancy = 10000
 	immortal = yes
-	fertility = -1
+	fertility = -0.5
 	flag = lower_chance_of_dying_in_combat
 
 	icon = {
