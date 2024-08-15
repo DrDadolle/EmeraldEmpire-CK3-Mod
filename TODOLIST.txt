@@ -26,21 +26,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## short term goals 
-- fix mma localization
+- add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)?  (cf Discord "CK3 Volcano Map Items" shared ressources) 
 - Create MaA for each great clan, (do the same for minor later)
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
-	- update select_personal_deity_fortunism_decision to each culture with such maa
 	- add special icons/images for MaA !!!!!!!!!!!!!!!!!!!!! (crab done, rest to do)
-- add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)?  (cf Discord "CK3 Volcano Map Items" shared ressources) 
-- defines geo regions => For animals/trees/etc... (map_data/geographical_regions/aaa.txt)
-	- Modify definition of Lion & Scorpion to have Beiden pass properly defined
-	- Modify definition of phoenix/neutral for isawamori/shinomenmori
-	- Modify definition of mountains (close to Dragon) of phoenix & phoenix coasts
-	- same for Unicorn => duchy put but they are spread out in reality...
-	- same for crane
-	- same for crab
-- CoA for d_rokugani_faith & c_emerald_castle/d/k (+ localization county)
 
 ## Fixes to do
 - Spammed with rokugan_char_interaction.0231 event boxes...
@@ -52,26 +42,38 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
 	- Check the "Family name before surname" used in "Oriental Empires" mod
 	- check Kizoku title & Khan title => Rework of how title are displayed and calculated.
-	- "Lowborn" being used as a family name lol
-- Doctor have no clothes !
+	- "Lowborn" being used as a family name when granting court titles to lowborn characters
+-Doctor have no clothes !
 -Change Mod Thumbnail image (test ?)
+- Added demand seppuku character interaction ? (and made by liege too)
+	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 
 ## Futures Features & Nice to have
-- Duel to end War (check Tales of Ireland mod)
 - Innovations
 	- Wootz Steel -> Kaiu Steel (reskin)
 	- Gaijin trade (Mantis/Tortoise)
-- Added demand seppuku character interaction ? (and made by liege too)
-	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - add "animal" (clan animal) as motif for CoA (instead of just textured one)
 	- generated dynasties of ronins have random CoA
-- add activites map object data on each county ? capital county ?
 - Add ancestral clan & family founders
 	- Special naming convention for Kamis (no first name)
-	- Kami traits/kami descendent à la Shayoshant (saoshyant_descendant) upon birth
-- Removal wall map object in crab clan
 - Special events setting the start of the clan wars
 - Artifacts creation process
+- defines geo regions => For animals/trees/etc... (map_data/geographical_regions/aaa.txt)
+	- Modify definition of Lion & Scorpion to have Beiden pass properly defined
+	- Modify definition of phoenix/neutral for isawamori/shinomenmori
+	- Modify definition of mountains (close to Dragon) of phoenix & phoenix coasts
+	- same for Unicorn => duchy put but they are spread out in reality...
+	- same for crane
+	- same for crab
+- Create discord servor with section : 
+	- announcement
+	- rules
+	- general
+	- question
+	- suggestion
+	- testing
+	- bug-report
+- create Trello to use for feature and bugs to do, insteado of this ugly txt file
 
 ##  Waiting & placeholders
 - Cat mon : @Bamba 
@@ -90,9 +92,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Events for l5R => "yearly_on_actions.txt"/on_yearly_events (for instance). Ideas
 	- Random duels
 	- Paiting stuff
-	- TEa
-	-Opium
+	- Tea
+	- Opium
 	- others
+- Duel to end War (check Tales of Ireland mod)
 - Add "minor clothes" probability to Great Clan clothes to have more variety of clothing styles
 - Blood feud (like Matsu vs Kakita)	: https://steamcommunity.com/sharedfiles/filedetails/?id=2914047110. Need the Friends & Foes DLC sadly...
 	- shogunate_bookmark_events.txt/shogunate_bookmark.8300/shogunate_historical_feud_effect => shogunate_bookmark_effects/shogunate_bookmark.8310
@@ -100,8 +103,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Prevent imperial family from doing wars against other clans...? Only for AI ? or not ?
 - Add modifiers to dynasties to prove their link to great clans ????
 - genes & ethnicities
+- Kami traits/kami descendent à la Shayoshant (saoshyant_descendant) upon birth
+	- To be tested later
 - Add court (from Shogunate) : need DLC
-- Add new terrain type : waste (for kuni lands)
+- Removal wall map object in crab clan
 - Create MaA for each minor clan
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too

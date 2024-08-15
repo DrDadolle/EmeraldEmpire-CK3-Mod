@@ -167,6 +167,7 @@
  b_jurojin_seido_phoenix:0 "Jurojin seido"
  c_kirin_province:0 "Kirin"
  b_shiro_gisu:0 "Shiro Gisu"
+ b_gisu_empty:0 "Lonely Mountain"
  b_shrine_of_the_kirin:0 "Shrine of the Kirin"
  d_shiba:0 "Shiba lands"
  c_haimaato_province:0 "Haimaato"
@@ -460,6 +461,7 @@
  c_usagi_province:0 "Usagi"
  b_shiro_usagi:0 "Castle of the Hare"
  b_kudo_mura:0 "Kudo Mura"
+ b_usagi_mori:0 "Hare's forest"
  b_meidochi:0 "Meidochi"
  d_tsuruchi:0 "Wasp Clan"
  c_ashinagabachi_province:0 "Ashinagabachi"
@@ -581,8 +583,9 @@
  b_west_shinomen_monastery_4:0 "Sunset Monastery"
  ##### Special Stuff
  d_rokugani_faith:0 "Mandate of Heaven"
- k_emerald_champ:0 "Emerald Champion"
+ k_emerald_champ:0 "Emerald Champion Mandate"
  d_emerald:0 "Lands of the Emerald Champion"
+ c_emerald_castle_province:0 "Land of the Emerald Champion"
  b_emerald_castle:0 "Castle of the Emerald Champion"
  ##### Rivers
  south_asahina_river_right:0 "Oyabashi River"

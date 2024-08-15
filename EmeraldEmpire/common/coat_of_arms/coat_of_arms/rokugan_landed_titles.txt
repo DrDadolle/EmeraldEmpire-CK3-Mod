@@ -17,12 +17,19 @@ e_rokugan = {
 	}
 }
 
+d_rokugani_faith = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
+
 k_imperial_families = {
 	pattern = "pattern_solid.dds"
 	color1 = "black"
-	colored_emblem = {
-		texture = "ce_imperial_1.dds"
-		color1 = "green_light"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
 	}
 }
 
@@ -203,6 +210,36 @@ b_shiro_seppun_3 = {
 	}
 }
 
+k_emerald_champ = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
+
+d_emerald = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
+
+c_emerald_castle_province = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
+b_emerald_castle = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_hantei.dds"
+	}
+}
 
 ##########################
 ##### Crane Clan
