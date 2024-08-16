@@ -32,7 +32,7 @@ lineofhantei1 = {
 	trait = diligent
 
 	#TODO
-	1.1.1 = {
+	1.1.2 = {
 		birth = yes
 	}
 
@@ -165,7 +165,7 @@ lineofhantei7 = {
 
 	trait = kami_descendant
 
-	mother = lineofhantei6
+	father = lineofhantei6
 
 
 	424.1.1 = {
@@ -208,10 +208,10 @@ lineofhantei9 = {
 
 	trait = kami_descendant
 
-	father = lineofhantei7
+	mother = lineofhantei7
 
 
-	434.1.1 = {
+	441.1.1 = {
 		birth = yes
 	}
 
@@ -347,7 +347,7 @@ lineofhantei16 = {
 
 	trait = kami_descendant
 	trait = sadistic
-	trait = callous
+	trait = paranoid
 	trait = wrathful
 
 	father = lineofhantei15

@@ -26,12 +26,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## short term goals 
-- Innovations
-	- Wootz Steel -> Kaiu Steel (reskin) : to test
-	- Lock Heavy cavalry behind special innovation (for unicorn culture) : to test 
-	- Gaijin trade (Mantis/Tortoise) : to test
-- Check whole line hanteis is present, and no error in error.log for lineofhanteiXX
-- add volcano + texture for dragon lands. How to add new special building in the map (like a bridge for instance)?  (cf Discord "CK3 Volcano Map Items" shared ressources) 
 - Create MaA for each great clan, (do the same for minor later)
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
@@ -52,12 +46,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 -Change Mod Thumbnail image (test ?)
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
+- Issues with missing accolades in innovations description ? Why ?
 
 ## Futures Features & Nice to have
 - add "animal" (clan animal) as motif for CoA (instead of just textured one)
 	- generated dynasties of ronins have random CoA
-- Add ancestral clan & family founders
-	- Special naming convention for Kamis (no first name)
 - Special events setting the start of the clan wars
 - Artifacts creation process
 - defines geo regions => For animals/trees/etc... (map_data/geographical_regions/aaa.txt)
@@ -90,6 +83,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - claim on toshi Rambo / city rich frog
 	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
+- weird log issue : [19:35:39][characterhistory.cpp:801]: Parent ( Hantei of  (Internal ID: 3 - Historical ID lineofhantei1)) of name_genji Lowborn of  (Internal ID: 18 - Historical ID lineofhantei2) is hasn't been born
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================
@@ -100,6 +94,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Opium
 	- others
 - Duel to end War (check Tales of Ireland mod)
+- Add ancestral clan & family founders
+	- Special naming convention for Kamis (no first name)
 - Integrate "Border Disputes" mod ?
 - Add "minor clothes" probability to Great Clan clothes to have more variety of clothing styles
 - Blood feud (like Matsu vs Kakita)	: https://steamcommunity.com/sharedfiles/filedetails/?id=2914047110. Need the Friends & Foes DLC sadly...
@@ -169,6 +165,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Understand how it works (https://discord.com/channels/735413460439007241/735413461680652366/1122255742129410068 &  https://discord.com/channels/735413460439007241/735413461680652366/791031025907662868 helps a bit)
 - color palette tuto :  https://discord.com/channels/735413460439007241/735413461403566119/1143509272567746663
 
+### How-to 3D models in mapeditor
+- How to add 3D models in CK3 : https://discord.com/channels/735413460439007241/735413461680652366/1048324172834668704
+ 
 # Ideas
 ### How-to Different species (à la Lotr)
 - stat, life expectancies :  based on the heritage of the culture

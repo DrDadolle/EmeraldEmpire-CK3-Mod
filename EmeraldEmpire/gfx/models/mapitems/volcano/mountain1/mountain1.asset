@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "mountain1_mesh"
+	file = "mountain1.mesh"
+	scale = 1.0
+
+	meshsettings = {
+		name = "mountain"
+		index = 0
+		texture_diffuse = "mountain1_diffuse.dds"
+		texture_normal = "mountain1_normal.dds"
+		texture_specular = "mountain1_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "mountain1_entity"
+	pdxmesh = "mountain1_mesh"
+}

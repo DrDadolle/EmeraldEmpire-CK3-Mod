@@ -1,0 +1,26 @@
+pdxmesh = {
+	name = "volcano3_mesh"
+	file = "volcano3.mesh"
+	scale = 1.0
+
+	meshsettings = {
+		name = "volcano3"
+		index = 0
+		texture_diffuse = "Volcano3_diffuse.dds"
+		texture_normal = "Volcano3_normal.dds"
+		texture_specular = "Volcano3_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "volcano3_entity"
+	pdxmesh = "volcano3_mesh"
+	default_state = "idle"
+	state = {
+		name = "idle"
+		state_time = 10	
+		start_event = { node = spot1 particle = "city/city_siege_smoke" trigger_once = yes life = 6 }
+	}
+}

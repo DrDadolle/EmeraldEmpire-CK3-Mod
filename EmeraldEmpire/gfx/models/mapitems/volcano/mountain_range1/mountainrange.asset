@@ -1,0 +1,58 @@
+pdxmesh = {
+	name = "mountainrange3_mesh"
+	file = "mountainrange3.mesh"
+	scale = 1.0
+
+	meshsettings = {
+		name = "mountainrange_03"
+		index = 0
+		texture_diffuse = "mountainrange_diffuse.dds"
+		texture_normal = "mountainrange_normal.dds"
+		texture_specular = "mountainrange_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+pdxmesh = {
+	name = "mountainrange1_mesh"
+	file = "mountainrange1.mesh"
+	scale = 1.0
+
+	meshsettings = {
+		name = "mountainrange_01"
+		index = 0
+		texture_diffuse = "mountainrange_diffuse.dds"
+		texture_normal = "mountainrange_normal.dds"
+		texture_specular = "mountainrange_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+pdxmesh = {
+	name = "mountainrange2_mesh"
+	file = "mountainrange2.mesh"
+	scale = 1.0
+
+	meshsettings = {
+		name = "mountainrange_02"
+		index = 0
+		texture_diffuse = "mountainrange_diffuse.dds"
+		texture_normal = "mountainrange_normal.dds"
+		texture_specular = "mountainrange_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "mountainrage1_entity"
+	pdxmesh = "mountainrange1_mesh"
+}
+entity = {
+	name = "mountainrage2_entity"
+	pdxmesh = "mountainrange2_mesh"
+}
+entity = {
+	name = "mountainrage3_entity"
+	pdxmesh = "mountainrange3_mesh"
+}
