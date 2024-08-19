@@ -116,6 +116,9 @@
 22 = { # b_umoeru_mura 
 	winter_severity_bias = @cold_winter
 }
+467 = { # b_umoeru_empty
+	winter_severity_bias = @cold_winter
+}
 ## c_kougen_province
 23 = { # b_ookami_toshi 
 	winter_severity_bias = @normal_winter

@@ -69,21 +69,21 @@ shogunate_armor_era3_trigger = {	#only gusoku and nanban do whenever that gets m
 # 	has_clothing_gfx = ainu_clothing_gfx
 # }
 
-portrait_japanese_clothing_trigger = {
-	scope:culture = {
-		portrait_japanese_clothing_contents_trigger = yes
-	}
-}
+# portrait_japanese_clothing_trigger = {
+# 	scope:culture = {
+# 		portrait_japanese_clothing_contents_trigger = yes
+# 	}
+# }
 
-portrait_japanese_clothing_spouse_trigger = {
-	culture = {
-		portrait_japanese_clothing_contents_trigger = yes
-	}
-}
+# portrait_japanese_clothing_spouse_trigger = {
+# 	culture = {
+# 		portrait_japanese_clothing_contents_trigger = yes
+# 	}
+# }
 
-portrait_japanese_clothing_contents_trigger = {
-	has_clothing_gfx = rokugani_clothing_gfx
-}
+# portrait_japanese_clothing_contents_trigger = {
+# 	has_clothing_gfx = rokugani_clothing_gfx
+# }
 
 ##### Crab Clan
 portrait_crab_clothing_trigger = {
