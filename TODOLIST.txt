@@ -26,6 +26,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## short term goals 
+- Nude during travels ? Linked to [01:37:08][jomini_script_system.cpp:278]: Script system error!
+		  Error: has_clothing_gfx trigger [ Unknown gfx culture flag rokugani_clothing_gfx ]
+		  Script location: file: common/scripted_triggers; portrait_japanese_clothing_contents_trigger line: 3 ?
+	- To retest but seems to work !
 - Create MaA for each great clan, (do the same for minor later)
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
@@ -42,7 +46,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Check the "Family name before surname" used in "Oriental Empires" mod
 	- check Kizoku title & Khan title => Rework of how title are displayed and calculated.
 	- "Lowborn" being used as a family name when granting court titles to lowborn characters
--Doctor have no clothes !
+	- ancestor_religious_head_title
+- d_rokugani_faith got split from e_rokugan. Should follow it (but follow primary heir instead) ? Or not, the title should become "Shogun" I guess ?
+-Doctor have no clothes ?
 -Change Mod Thumbnail image (test ?)
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
