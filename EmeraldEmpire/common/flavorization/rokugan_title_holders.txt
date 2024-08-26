@@ -48,16 +48,40 @@ rokugan_duke_unicorn {
 # Tortoise Title naming
 rokugan_king_tortoise {
 	type = character
+	gender = male
 	special = holder
 	tier = duchy
-	priority = 300
+	priority = 101
+	top_liege = no
 	heritages = { heritage_kasuga }
 }
-rokugan_duke_tortoise {
+rokugan_king_tortoise_female {
 	type = character
+	gender = female
 	special = holder
 	tier = duchy
-	priority = 300
+	priority = 101
+	top_liege = no
+	heritages = { heritage_kasuga }
+}
+
+rokugan_duke_tortoise {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 100
+	top_liege = no
+	heritages = { heritage_kasuga }
+}
+
+rokugan_duke_tortoise_female {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 100
+	top_liege = no
 	heritages = { heritage_kasuga }
 }
 

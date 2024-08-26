@@ -35,16 +35,14 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Spammed with rokugan_char_interaction.0231 event boxes...
 	- "an honorable death" event procs for outsite of player stuff
 - Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
+	- Use dynastic names à la Arabic ?
 - Change color of some textured emblmes (very low priority) : Mantis, Komori
 - shiba mon is off-center (too much top left)
 - update holy_order decisions & dynasty decisions (taken from shogunate)
 - fix title for tribal leader & Theocracy leader of countries/+++ => Ask help to FUN ? Rework ?
-	- Check the "Family name before surname" used in "Oriental Empires" mod
 	- check Kizoku title & Khan title => Rework of how title are displayed and calculated.
-	- "Lowborn" being used as a family name when granting court titles to lowborn characters
 	- ancestor_religious_head_title
 - d_rokugani_faith got split from e_rokugan. Should follow it (but follow primary heir instead) ? Or not, the title should become "Shogun" I guess ?
--Doctor have no clothes ?
 -Change Mod Thumbnail image (test ?)
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
