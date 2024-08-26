@@ -5699,62 +5699,6 @@ duchy_feudal = {
 	governments = { feudal_government }
 	priority = 27
 }
-# Independent dukes of certain culture groups are known as Petty Kings instead of Dukes
-# duke_feudal_independent = {
-# 	type = character
-# 	gender = male
-# 	special = holder
-# 	tier = duchy
-# 	priority = 27
-# 	only_independent = yes
-# 	governments = { feudal_government }
-# 	heritages = { heritage_north_germanic heritage_west_germanic heritage_goidelic heritage_brythonic heritage_east_african heritage_tibetan }
-# }
-# duke_feudal_independent_female = {
-# 	type = character
-# 	gender = female
-# 	special = holder
-# 	tier = duchy
-# 	priority = 27
-# 	only_independent = yes
-# 	governments = { feudal_government }
-# 	heritages = { heritage_north_germanic heritage_west_germanic heritage_goidelic heritage_brythonic heritage_east_african heritage_tibetan }
-# }
-# duchy_feudal_independent = {
-# 	type = title
-# 	tier = duchy
-# 	governments = { feudal_government }
-# 	heritages = { heritage_north_germanic heritage_west_germanic heritage_goidelic heritage_brythonic heritage_east_african heritage_tibetan }
-# 	only_independent = yes
-# 	priority = 28
-# }
-# # The Dukes of Brittany are an exception to this, they're only known as Dukes even if independent.
-# duke_feudal_brittany = { 
-# 	type = character
-# 	gender = male
-# 	special = holder
-# 	tier = duchy
-# 	priority = 28
-# 	governments = { feudal_government }
-# 	titles = { d_brittany }
-# }
-# duke_feudal_brittany_female = {
-# 	type = character
-# 	gender = female
-# 	special = holder
-# 	tier = duchy
-# 	priority = 28
-# 	governments = { feudal_government }
-# 	titles = { d_brittany }
-# }
-# duchy_feudal_brittany = {
-# 	type = title
-# 	tier = duchy
-# 	governments = { feudal_government }
-# 	titles = { d_brittany }
-# 	priority = 29
-# }
-
 king_feudal_male = {
 	type = character
 	gender = male
@@ -5931,7 +5875,7 @@ baron_theocracy_male = {
 	gender = male
 	special = holder
 	tier = barony
-	priority = 6
+	priority = 7
 	top_liege = no
 	governments = { theocracy_government }
 }
@@ -5940,7 +5884,7 @@ baron_theocracy_female = {
 	gender = female
 	special = holder
 	tier = barony
-	priority = 6
+	priority = 7
 	top_liege = no
 	governments = { theocracy_government }
 }
@@ -5948,7 +5892,7 @@ barony_theocracy = {
 	type = title
 	tier = barony
 	top_liege = no
-	priority = 6
+	priority = 7
 	holding = church_holding
 }
 count_theocracy_male = {
@@ -5956,7 +5900,7 @@ count_theocracy_male = {
 	gender = male
 	special = holder
 	tier = county
-	priority = 16
+	priority = 17
 	top_liege = no
 	governments = { theocracy_government }
 }
@@ -5965,7 +5909,7 @@ count_theocracy_female = {
 	gender = female
 	special = holder
 	tier = county
-	priority = 16
+	priority = 17
 	top_liege = no
 	governments = { theocracy_government }
 }
@@ -5973,7 +5917,7 @@ county_theocracy = {
 	type = title
 	tier = county
 	top_liege = no
-	priority = 16
+	priority = 17
 	governments = { theocracy_government }
 }
 duke_theocracy_male = {
@@ -5981,7 +5925,7 @@ duke_theocracy_male = {
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 26
+	priority = 27
 	top_liege = no
 	governments = { theocracy_government }
 }
@@ -5990,7 +5934,7 @@ duke_theocracy_female = {
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 26
+	priority = 27
 	top_liege = no
 	governments = { theocracy_government }
 }
@@ -5998,7 +5942,7 @@ duchy_theocracy = {
 	type = title
 	tier = duchy
 	top_liege = no
-	priority = 26
+	priority = 27
 	governments = { theocracy_government }
 }
 king_theocracy_male = {
@@ -6006,7 +5950,7 @@ king_theocracy_male = {
 	gender = male
 	special = holder
 	tier = kingdom
-	priority = 46
+	priority = 47
 	top_liege = no
 	governments = { theocracy_government }
 }
@@ -6015,7 +5959,7 @@ king_theocracy_female = {
 	gender = female
 	special = holder
 	tier = kingdom
-	priority = 46
+	priority = 47
 	top_liege = no
 	governments = { theocracy_government }
 }
@@ -6023,7 +5967,7 @@ kingdom_theocracy = {
 	type = title
 	tier = kingdom
 	top_liege = no
-	priority = 46
+	priority = 47
 	governments = { theocracy_government }
 }
 emperor_theocracy_male = {
@@ -6170,7 +6114,7 @@ baron_tribal_male = {
 	gender = male
 	special = holder
 	tier = barony
-	priority = 6
+	priority = 7
 	top_liege = no
 	governments = { tribal_government }
 }
@@ -6179,7 +6123,7 @@ baron_tribal_female = {
 	gender = female
 	special = holder
 	tier = barony
-	priority = 6
+	priority = 7
 	top_liege = no
 	governments = { tribal_government }
 }
@@ -6187,7 +6131,7 @@ barony_tribal = {
 	type = title
 	tier = barony
 	top_liege = no
-	priority = 6
+	priority = 7
 	governments = { tribal_government }
 }
 count_tribal_male = {
@@ -6195,7 +6139,7 @@ count_tribal_male = {
 	gender = male
 	special = holder
 	tier = county
-	priority = 16
+	priority = 17
 	top_liege = no
 	governments = { tribal_government }
 }
@@ -6204,7 +6148,7 @@ count_tribal_female = {
 	gender = female
 	special = holder
 	tier = county
-	priority = 16
+	priority = 17
 	top_liege = no
 	governments = { tribal_government }
 }
@@ -6212,7 +6156,7 @@ county_tribal = {
 	type = title
 	tier = county
 	top_liege = no
-	priority = 16
+	priority = 17
 	governments = { tribal_government }
 }
 duke_tribal_male = {
@@ -6220,7 +6164,7 @@ duke_tribal_male = {
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 26
+	priority = 27
 	top_liege = no
 	governments = { tribal_government }
 }
@@ -6229,7 +6173,7 @@ duke_tribal_female = {
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 26
+	priority = 27
 	top_liege = no
 	governments = { tribal_government }
 }
@@ -6237,7 +6181,7 @@ duchy_tribal = {
 	type = title
 	tier = duchy
 	top_liege = no
-	priority = 26
+	priority = 27
 	governments = { tribal_government }
 }
 king_tribal_male = {
@@ -6245,7 +6189,7 @@ king_tribal_male = {
 	gender = male
 	special = holder
 	tier = kingdom
-	priority = 46
+	priority = 47
 	top_liege = no
 	governments = { tribal_government }
 }
@@ -6254,7 +6198,7 @@ king_tribal_female = {
 	gender = female
 	special = holder
 	tier = kingdom
-	priority = 46
+	priority = 47
 	top_liege = no
 	governments = { tribal_government }
 }
@@ -6262,7 +6206,7 @@ kingdom_tribal = {
 	type = title
 	tier = kingdom
 	top_liege = no
-	priority = 46
+	priority = 47
 	governments = { tribal_government }
 }
 emperor_tribal_male = {

@@ -31,17 +31,41 @@
 # Unicorn Title naming
 rokugan_king_unicorn {
 	type = character
+	gender = male
 	special = holder
 	tier = kingdom
-	priority = 300
+	priority = 48
+	top_liege = no
+	heritages = { heritage_unicorn }
+}
+
+rokugan_king_unicorn_female {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 48
+	top_liege = no
 	heritages = { heritage_unicorn }
 }
 
 rokugan_duke_unicorn {
 	type = character
+	gender = male
 	special = holder
 	tier = duchy
-	priority = 300
+	priority = 28
+	top_liege = no
+	heritages = { heritage_unicorn }
+}
+
+rokugan_duke_unicorn_female {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	top_liege = no
 	heritages = { heritage_unicorn }
 }
 
@@ -51,7 +75,7 @@ rokugan_king_tortoise {
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 101
+	priority = 48
 	top_liege = no
 	heritages = { heritage_kasuga }
 }
@@ -60,7 +84,7 @@ rokugan_king_tortoise_female {
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 101
+	priority = 48
 	top_liege = no
 	heritages = { heritage_kasuga }
 }
@@ -70,7 +94,7 @@ rokugan_duke_tortoise {
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 100
+	priority = 28
 	top_liege = no
 	heritages = { heritage_kasuga }
 }
@@ -80,7 +104,7 @@ rokugan_duke_tortoise_female {
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 100
+	priority = 28
 	top_liege = no
 	heritages = { heritage_kasuga }
 }
@@ -113,4 +137,26 @@ imperial_barony = {
 	tier = barony
 	priority = 10
 	titles = { b_otosan_uchi } #TODO ??
+}
+
+##########################################
+################  FAITHS  ################
+##########################################
+
+rokugan_head_of_faith_male = {
+	type = character
+	gender = male
+	special = holder
+	priority = 99
+	titles = { d_rokugani_faith }
+	top_liege = no
+}
+
+rokugan_head_of_faith_female = {
+	type = character
+	gender = female
+	special = holder
+	priority = 99
+	titles = { d_rokugani_faith }
+	top_liege = no
 }
