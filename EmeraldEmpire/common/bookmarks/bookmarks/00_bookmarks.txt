@@ -26,6 +26,24 @@ bm_1123_clanwar = {
 
 		animation = happiness
 	}
+
+	# Doji Kuwanan
+	character = {
+		name = "bookmark_doji_kuwanan"
+		dynasty = dynasty_doji
+		dynasty_splendor_level = 10
+		type = male
+		birth = 1103.1.1
+		title = c_itoshii_province
+		government = feudal_government
+		culture = doji
+		religion = "seven_fortunes"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = lineofdojisatsume3
+		position = { 450 750 }
+
+		animation = anger
+	}
 }
 
 
@@ -39,7 +57,7 @@ bm_1123_phoenix = {
 
 	weight = { value = 0 }
 
-	# Doji Hotaru
+	# Isawa Giichi
 	character = {
 		name = "bookmark_isawa_giichi"
 		dynasty = dynasty_isawa #Isawa
@@ -55,5 +73,34 @@ bm_1123_phoenix = {
 		position = { 250 750 }
 
 		animation = happiness
+	}
+}
+
+###############################
+## Lion Clan 1123 Bookmark
+###############################
+bm_1123_lion = {
+	start_date = 1123.4.1
+	is_playable = yes
+	group = bm_group_1123
+
+	weight = { value = 0 }
+
+	# Akodo Toturi
+	character = {
+		name = "bookmark_akodo_toturi"
+		dynasty = dynasty_akodo #Akodo
+		dynasty_splendor_level = 10
+		type = male
+		birth = 1098.1.1
+		title = k_lion_clan
+		government = feudal_government
+		culture = akodo
+		religion = "cult_ancestors"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = lineofakododaio2
+		position = { 450 750 }
+
+		animation = sadness
 	}
 }

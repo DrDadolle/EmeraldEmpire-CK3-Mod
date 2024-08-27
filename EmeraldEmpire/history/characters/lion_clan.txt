@@ -31,7 +31,7 @@ lineofakododaio2 = {
 	### Traits
 	trait = education_martial_4
 	trait = patient
-	trait = content
+	trait = forgiving
 	trait = diligent
 	trait = logistician
 	trait = intellect_good_1
@@ -286,6 +286,15 @@ lineofmatsuuniri2 = {
 	1121.1.1 = {
 		effect = {
 			set_relation_lover = { reason = lover_history target = character:lineofakododaio3 } # In love with Akodo Arasou it seems
+		}
+	}
+
+	# Hates Toturi since the death of her fiancee
+	1123.3.1 = {
+		effect = {
+			set_relation_rival = { target = character:lineofakododaio2 reason = rival_historical }
+			#To set up coup d'etat against toturi
+			add_unpressed_claim = title:k_lion_clan 
 		}
 	}
 

@@ -31,6 +31,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- check Khan of Khan (unicorn names) & Khizoku tortoise name
 	- fix title for tribal leader & Theocracy leader of countries/+++ 
 		- ancestor_religious_head_title
+- Add lion clan bookmark map
+	- Akodo Toturi : TODO DNA
+	- Add Lion map  https://pbs.twimg.com/media/E6V8Q4zUUAI6oum?format=jpg&name=medium
+	- Add lion map zoom Toturi stuff
+- update crane clan bookmark map
+	- Doji Kuwanan : TODO DNA
+	- Add clan map zoom kuwanan stuff
 - Create MaA for each great clan, (do the same for minor later)
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
@@ -51,11 +58,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - Issues with missing accolades in innovations description ? Why ?
 - [ Invalid building 'haunted_ruins_shiro_chuda_04' ]
+- start war on toshi Rambo / city rich frog decision
+	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 
 ## Futures Features & Nice to have
 - add "animal" (clan animal) as motif for CoA (instead of just textured one)
 	- generated dynasties of ronins have random CoA
-- Special events setting the start of the clan wars
 - Artifacts creation process
 - defines geo regions => For animals/trees/etc... (map_data/geographical_regions/aaa.txt)
 	- Modify definition of Lion & Scorpion to have Beiden pass properly defined
@@ -74,6 +82,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- testing
 	- bug-report
 - create Trello to use for feature and bugs to do, insteado of this ugly txt file
+	- set-up
+	- need to fill
 - Set up github branches (dev/release/beta) and pratices/rights
 
 ##  Waiting & placeholders
@@ -85,7 +95,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Remove AI Cadet branches => Working ?
 - Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
-- claim on toshi Rambo / city rich frog
+- start war on toshi Rambo / city rich frog decision
 	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 - weird log issue : [19:35:39][characterhistory.cpp:801]: Parent ( Hantei of  (Internal ID: 3 - Historical ID lineofhantei1)) of name_genji Lowborn of  (Internal ID: 18 - Historical ID lineofhantei2) is hasn't been born
 =====================================================================================================
@@ -97,6 +107,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Tea
 	- Opium
 	- others
+- Special events setting the start of the clan wars
+	- Doji Hotaru
+	- Doji Kuwanan
+	- Akodo Toturi
 - Duel to end War (check Tales of Ireland mod)
 - Add ancestral clan & family founders
 	- Special naming convention for Kamis (no first name)
