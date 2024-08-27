@@ -401,6 +401,30 @@ kuma = { # Defunct culture
 	}
 }
 
+heichi = { # Defunct boar culture ? Dispapered mysteriously
+	color = { 0.16 0.32 0.75 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bellicose
+	heritage = heritage_crab 
+	language = language_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+			tradition_bushido
+			tradition_only_the_strong # Boars are big and strong and scary
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { japanese_building_gfx }
+	clothing_gfx = { rokugani_minor_clothing_gfx }
+	unit_gfx = { japanese_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
 kaeru = { 
 	color = { 0.3 0.3 0.3 } # The color of the culture, used e.g. on the map
 	
