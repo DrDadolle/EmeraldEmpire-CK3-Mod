@@ -3149,6 +3149,40 @@
 	# Rokugani Faith Tenets		#
 	#############################
 
+	# Workship Amaterause
+	tenet_amaterasu_worship = {
+		icon = core_tenet_sun_worship
+
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_amaterasu_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		is_shown = {
+			religion = { is_in_family = rf_rokugan }
+		}
+
+		parameters = {
+			summer_festivals_active = yes 
+			fervor_per_holy_site = 0.1
+			#trial_by_sun_active = yes
+		}
+
+		character_modifier = {
+			#desert_attrition_mult = -0.25
+			#desert_mountains_attrition_mult = -0.25
+			monthly_piety_gain_mult = 0.1
+			learning = 1
+		}
+
+		piety_cost = faith_tenet_cost_mid
+	}
+
 	#Rokugan Syncretism for gaijin religions
 	tenet_rokugani_syncretism = {
 		icon = core_tenet_rokugani_syncretism
