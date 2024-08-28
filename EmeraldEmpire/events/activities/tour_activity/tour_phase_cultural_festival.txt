@@ -844,7 +844,7 @@ cultural_festival.2002 = {
 	}
 }
 
-###################### TODO MOVE TO BILATERAL EVENTS AND ADD A FIRST VASSAL EVENT WHEN YOU DECIDE TO HUMILIATE THEM TODO_CD_EP2_VERONICA
+###################### TODO MOVE TO BILATERAL EVENTS AND ADD A FIRST VASSAL EVENT WHEN YOU DECIDE TO HUMILIATE THEM  _VERONICA
 ## Liege: You're being crowned the Ugliest/Prettiest person
 ## 2010
 ## by Veronica Pazos
@@ -1009,7 +1009,7 @@ cultural_festival.2010 = {
 					else = {
 						give_nickname = nick_monarch_of_beauty_and_noblesse
 					}
-					#TODO_CD_EP2 add flower crown (western wedding)
+					#  add flower crown (western wedding)
 					scope:cultural_festival_scope = {
 						add_county_modifier = {
 							modifier = king_of_beauty_modifier
@@ -3945,7 +3945,7 @@ cultural_festival.3001 = {
 	
 	after = {
 		clear_available_compliments_effect = yes
-		scope:visiting_liege = { trigger_event = { id = cultural_festival.3002 days = 3 } } #TODO_CD_EP2_VERONICA remove the delay after QA testing
+		scope:visiting_liege = { trigger_event = { id = cultural_festival.3002 days = 3 } } # _VERONICA remove the delay after QA testing
 	}
 }
 
@@ -4405,7 +4405,7 @@ cultural_festival.3010 = {
 				years = 5
 			}
 			set_variable = alcohol_fountain_var
-			trigger_event = { id = cultural_festival.3011 days = 3 } #TODO_CD_EP2_VERONICA remove the delay after QA testing
+			trigger_event = { id = cultural_festival.3011 days = 3 } # _VERONICA remove the delay after QA testing
 		}
 		if = {
 			limit = {
@@ -4479,7 +4479,7 @@ cultural_festival.3010 = {
 				years = 5
 			}
 			set_variable = juice_fountain_var
-			trigger_event = { id = cultural_festival.3011 days = 3 } #TODO_CD_EP2_VERONICA remove the delay after QA testing
+			trigger_event = { id = cultural_festival.3011 days = 3 } # _VERONICA remove the delay after QA testing
 		}
 		stress_impact = {
 			greedy = minor_stress_impact_gain
@@ -4680,7 +4680,7 @@ cultural_festival.3020 = {
 	option = { # I sure do!
 		name = cultural_festival.3020.a
 		custom_tooltip = cultural_festival.3020.a.tt
-		trigger_event = { id = cultural_festival.3021 days = 3 } #TODO_CD_EP2_VERONICA remove the delay after QA testing
+		trigger_event = { id = cultural_festival.3021 days = 3 } # _VERONICA remove the delay after QA testing
 		stress_impact = {
 			humble = minor_stress_impact_gain
 		}
@@ -4892,7 +4892,7 @@ cultural_festival.3021 = {
 	
 	after = {
 		scope:stop_host_scope = {
-			trigger_event = { id = cultural_festival.3022 days = 3 } #TODO_CD_EP2_VERONICA remove the delay after QA testing
+			trigger_event = { id = cultural_festival.3022 days = 3 } # _VERONICA remove the delay after QA testing
 		}
 	}
 }
@@ -5874,7 +5874,7 @@ cultural_festival.3050 = {
 							has_trait = deceitful #they know you're lying
 						}
 					}
-					scope:stop_host_scope = { trigger_event = { id = cultural_festival.3051 days = 3 } } #TODO_CD_EP2_VERONICA remove days after testing
+					scope:stop_host_scope = { trigger_event = { id = cultural_festival.3051 days = 3 } } # _VERONICA remove days after testing
 				}
 				40 = { #they don't notice
 					modifier = {
@@ -6209,7 +6209,7 @@ cultural_festival.3060 = {
 			increase_tour_success_effect = { POINTS = 1 }
 		}
 		hidden_effect = {
-			scope:stop_host_scope = { trigger_event = { id = cultural_festival.3061 days = 3 } }#TODO_CD_EP2_VERONICA remove after QA has tested them
+			scope:stop_host_scope = { trigger_event = { id = cultural_festival.3061 days = 3 } }# _VERONICA remove after QA has tested them
 		}
 		stress_impact = {
 			lustful = minor_stress_impact_loss
@@ -6695,7 +6695,7 @@ scripted_effect cultural_festival.3070.bishop_angry_effect = {
 # 		}
 # 		add_piety = minor_piety_loss
 # 		cultural_festival.3070.bishop_angry_effect = yes
-# 		scope:visiting_liege = { trigger_event = { id = cultural_festival.3071 days = 3 } } #TODO_CD_EP2_VERONICA remove days after QA testing
+# 		scope:visiting_liege = { trigger_event = { id = cultural_festival.3071 days = 3 } } # _VERONICA remove days after QA testing
 # 		stress_impact = {
 # 			forgiving = minor_stress_impact_gain
 # 			compassionate = minor_stress_impact_gain
@@ -6815,7 +6815,7 @@ scripted_effect cultural_festival.3070.bishop_angry_effect = {
 # 		scope:visiting_liege = {
 # 			save_scope_as = final_jester
 # 			set_variable = im_the_jester_var
-# 			trigger_event = { id = cultural_festival.3071 days = 3 } #TODO_CD_EP2_VERONICA remove days after QA testing
+# 			trigger_event = { id = cultural_festival.3071 days = 3 } # _VERONICA remove days after QA testing
 # 		}
 # 		stress_impact = {
 # 			compassionate = minor_stress_impact_gain

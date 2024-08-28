@@ -112,7 +112,7 @@ tour_travel.1001 = {
 		base = 1
 		modifier = {
 			factor = 2
-			always = no # TODO_CD_EP2, tie to intents
+			always = no #  , tie to intents
 		}
 		modifier = {
 			factor = 2
@@ -220,12 +220,12 @@ tour_travel.1001 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
 
-	# TODO_CD_EP2, an option for your guard beating them up instead
+	#  , an option for your guard beating them up instead
 
 	option = { # Bribe them with lower taxes
 		name = tour_travel.1001.b
@@ -248,7 +248,7 @@ tour_travel.1001 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -306,7 +306,7 @@ tour_travel.1001 = {
 			}
 			modifier = {
 				add = -50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -339,7 +339,7 @@ tour_travel.1002 = {
 		location = { is_sea_province = no }
 		sexually_liberal_trigger = yes
 		might_cheat_on_every_partner_trigger = yes
-		#TODO_CD_EP2_POLISH; reenable this for asexual characters after we give it some appropriate variant loc.
+		# _POLISH; reenable this for asexual characters after we give it some appropriate variant loc.
 		NOT = { has_sexuality = asexual }
 	}
 	weight_multiplier = {
@@ -467,7 +467,7 @@ tour_travel.1002 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -490,7 +490,7 @@ tour_travel.1002 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -530,7 +530,7 @@ tour_travel.1003 = {
 		base = 1
 		modifier = {
 			factor = 2
-			always = no # TODO_CD_EP2, tie to dread tour type
+			always = no #  , tie to dread tour type
 		}
 		modifier = {
 			factor = 2
@@ -592,7 +592,7 @@ tour_travel.1003 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -638,7 +638,7 @@ tour_travel.1003 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -667,7 +667,7 @@ tour_travel.1003 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -814,7 +814,7 @@ tour_travel.1004 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -867,7 +867,7 @@ tour_travel.1004 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -907,7 +907,7 @@ tour_travel.1004 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -943,7 +943,7 @@ tour_travel.1004 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -988,7 +988,7 @@ tour_travel.1005 = {
 		base = 1
 		modifier = {
 			factor = 2
-			always = no # TODO_CD_EP2, tie to dread tour type
+			always = no #  , tie to dread tour type
 		}
 		modifier = {
 			factor = 2
@@ -1040,7 +1040,7 @@ tour_travel.1005 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -1072,7 +1072,7 @@ tour_travel.1005 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -1099,7 +1099,7 @@ tour_travel.1005 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -1155,7 +1155,7 @@ tour_travel.1006 = {
 		base = 1
 		modifier = {
 			factor = 2
-			always = no # TODO_CD_EP2, tie to dread tour type
+			always = no #  , tie to dread tour type
 		}
 		modifier = {
 			factor = 2
@@ -1209,7 +1209,7 @@ tour_travel.1006 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -1236,7 +1236,7 @@ tour_travel.1006 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -1271,7 +1271,7 @@ tour_travel.1006 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -1384,7 +1384,7 @@ tour_travel.1007 = {
 		base = 1
 		modifier = {
 			factor = 2
-			always = no # TODO_CD_EP2, tie to tour intent
+			always = no #  , tie to tour intent
 		}
 		modifier = {
 			factor = 2
@@ -1468,7 +1468,7 @@ tour_travel.1007 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -1495,7 +1495,7 @@ tour_travel.1007 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -1652,7 +1652,7 @@ tour_travel.1008 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 			modifier = {
 				add = 50
@@ -1769,7 +1769,7 @@ tour_travel.1009 = {
 			}
 			modifier = {
 				add = 50
-				always = no # TODO_CD_EP2, tour intent check
+				always = no #  , tour intent check
 			}
 		}
 	}
@@ -1790,7 +1790,7 @@ scripted_trigger tour_travel_3120_valid_vassal = {
 
 tour_travel.3120 = {
 	type = character_event
-	title = tour_travel.3120.t #TODO_CD_EP2 change the title to Nick's dynamic pub generator when that's in
+	title = tour_travel.3120.t #  change the title to Nick's dynamic pub generator when that's in
 	desc = {
 		desc = tour_travel.3120.desc.intro
 		first_valid = {

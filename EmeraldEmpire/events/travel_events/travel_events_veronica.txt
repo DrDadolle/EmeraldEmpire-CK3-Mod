@@ -4792,7 +4792,7 @@ travel_events.3120 = {
 	
 	immediate = {
 		location = { save_scope_as = wooded_location }
-		#TODO_CD_EP2 this event needs to account for a situation where we don't have a travel_leader
+		#  this event needs to account for a situation where we don't have a travel_leader
 		mp_delay_travel_plan = { DAYS = 90 }
 		current_travel_plan = {
 			travel_leader ?= { save_scope_as = travel_leader }

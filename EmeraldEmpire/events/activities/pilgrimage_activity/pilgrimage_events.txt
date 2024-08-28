@@ -1155,7 +1155,7 @@ pilgrimage.1110 = {
 					multiplier = 3.5
 					min = 5
 				}
-				#TODO_CD_EP2 add entourage size triggers
+				#  add entourage size triggers
 				show_as_tooltip = { add_prestige = miniscule_prestige_gain }
 				if = {
 					limit = { exists = scope:victim_pilgrim_2 }
@@ -3139,7 +3139,7 @@ pilgrimage.2006 = {
 						has_trait = pilgrim
 						has_trait_xp = {
 							trait = pilgrim
-							value >= 50 #TODO_CD_EP2 standardize, we're more than second tier pilgrim
+							value >= 50 #  standardize, we're more than second tier pilgrim
 						}
 					}
 					#Or an experienced traveler?
@@ -3149,12 +3149,12 @@ pilgrimage.2006 = {
 							has_trait_xp = {
 								trait = lifestyle_traveler
 								track = travel
-								value >= 50 #TODO_CD_EP2 standardize, we're more than second tier traveler
+								value >= 50 #  standardize, we're more than second tier traveler
 							}
 							has_trait_xp = {
 								trait = lifestyle_traveler
 								track = danger
-								value >= 50 #TODO_CD_EP2 standardize, we're more than second tier traveler
+								value >= 50 #  standardize, we're more than second tier traveler
 							}
 						}
 					}
@@ -3548,12 +3548,12 @@ scripted_effect pilgrimage_2013_outcome_effect = {
 			has_trait = lifestyle_mystic
 			has_trait_xp = {
 				trait = lifestyle_mystic
-				value < 100 #TODO_CD_EP2 standardize
+				value < 100 #  standardize
 			}
 		}
 		add_trait_xp = {
 			trait = lifestyle_mystic
-			value = 10 #TODO_CD_EP2 standardize
+			value = 10 #  standardize
 		}
 	}
 	else_if = {
@@ -3565,12 +3565,12 @@ scripted_effect pilgrimage_2013_outcome_effect = {
 			has_trait = pilgrim
 			has_trait_xp = {
 				trait = pilgrim
-				value < 100 #TODO_CD_EP2 standardize
+				value < 100 #  standardize
 			}
 		}
 		add_trait_xp = {
 			trait = pilgrim
-			value = 10 #TODO_CD_EP2 standardize
+			value = 10 #  standardize
 		}
 	}
 	else = {
@@ -3913,7 +3913,7 @@ pilgrimage.2013 = {
 		# Mystic gets out with the Pilgrim trait for flavor
 		hidden_effect = {
 			scope:2010_mystic = {
-				#TODO_CD_EP2_FGK Update to pilgrimage tier trait
+				# _FGK Update to pilgrimage tier trait
 				if = {
 					limit = {
 						NOT = { has_trait = pilgrim }
@@ -4618,13 +4618,13 @@ pilgrimage.2030 = {
 				has_trait_xp = {
 					trait = lifestyle_traveler
 					track = travel
-					value < 100 #TODO_CD_EP2 standardize MAX
+					value < 100 #  standardize MAX
 				}
 			}
 			add_trait_xp = {
 				trait = lifestyle_traveler
 				track = travel
-				value = 10 #TODO_CD_EP2 standardize MEDIUM
+				value = 10 #  standardize MEDIUM
 			}
 		}
 		#Besserwisser gonna besserwiss
@@ -4665,12 +4665,12 @@ pilgrimage.2030 = {
 				has_trait = pilgrim
 				has_trait_xp = {
 					trait = pilgrim
-					value < 100 #TODO_CD_EP2 standardize MAX
+					value < 100 #  standardize MAX
 				}
 			}
 			add_trait_xp = {
 				trait = pilgrim
-				value = 5 #TODO_CD_EP2 standardize TINY
+				value = 5 #  standardize TINY
 			}
 		}
 		stress_impact = {
@@ -5898,7 +5898,7 @@ pilgrimage.2503 = {
 		#		}
 		#	}
 		#}
-		#TODO_CD_EP2 Remove?
+		#  Remove?
 		#set_up_next_pilgrimage_event_effect = { DAYS = 30 }
 	}
 
@@ -6720,12 +6720,12 @@ pilgrimage.2511 = {
 # 				has_trait = pilgrim
 # 				has_trait_xp = {
 # 					trait = pilgrim
-# 					value < 100 #TODO_CD_EP2 standardize MAX
+# 					value < 100 #  standardize MAX
 # 				}
 # 			}
 # 			add_trait_xp = {
 # 				trait = pilgrim
-# 				value = 10 #TODO_CD_EP2 standardize MEDIUM
+# 				value = 10 #  standardize MEDIUM
 # 			}
 # 		}
 # 		if = {
@@ -6798,13 +6798,13 @@ pilgrimage.2511 = {
 # 				has_trait_xp = {
 # 					trait = lifestyle_traveler
 # 					track = travel
-# 					value < 100 #TODO_CD_EP2 standardize MAX
+# 					value < 100 #  standardize MAX
 # 				}
 # 			}
 # 			add_trait_xp = {
 # 				trait = lifestyle_traveler
 # 				track = travel
-# 				value = 5 #TODO_CD_EP2 standardize TINY
+# 				value = 5 #  standardize TINY
 # 			}
 # 		}
 # 		add_stress = minor_stress_loss
@@ -6845,12 +6845,12 @@ pilgrimage.2511 = {
 # 				has_trait = pilgrim
 # 				has_trait_xp = {
 # 					trait = pilgrim
-# 					value < 100 #TODO_CD_EP2 standardize MAX
+# 					value < 100 #  standardize MAX
 # 				}
 # 			}
 # 			add_trait_xp = {
 # 				trait = pilgrim
-# 				value = 5 #TODO_CD_EP2 standardize TINY
+# 				value = 5 #  standardize TINY
 # 			}
 # 		}
 # 		add_piety = minor_piety_gain
@@ -6918,12 +6918,12 @@ pilgrimage.2511 = {
 # 				has_trait = pilgrim
 # 				has_trait_xp = {
 # 					trait = pilgrim
-# 					value < 100 #TODO_CD_EP2 standardize MAX
+# 					value < 100 #  standardize MAX
 # 				}
 # 			}
 # 			add_trait_xp = {
 # 				trait = pilgrim
-# 				value = 5 #TODO_CD_EP2 standardize TINY
+# 				value = 5 #  standardize TINY
 # 			}
 # 		}
 # 		add_prestige = minor_prestige_loss
@@ -7018,12 +7018,12 @@ pilgrimage.3202 = {
 				has_trait = pilgrim
 				has_trait_xp = {
 					trait = pilgrim
-					value < 100 #TODO_CD_EP2 standardize MAX
+					value < 100 #  standardize MAX
 				}
 			}
 			add_trait_xp = {
 				trait = pilgrim
-				value = 20 #TODO_CD_EP2 standardize MASSIVE
+				value = 20 #  standardize MASSIVE
 			}
 		}
 		stress_impact = {
@@ -7107,12 +7107,12 @@ pilgrimage.3301 = {
 				has_trait = pilgrim
 				has_trait_xp = {
 					trait = pilgrim
-					value < 100 #TODO_CD_EP2 standardize MAX
+					value < 100 #  standardize MAX
 				}
 			}
 			add_trait_xp = {
 				trait = pilgrim
-				value = 10 #TODO_CD_EP2 standardize MEDIUM
+				value = 10 #  standardize MEDIUM
 			}
 		}
 	}
@@ -7349,12 +7349,12 @@ pilgrimage.6001 = {
 				has_trait = pilgrim
 				has_trait_xp = {
 					trait = pilgrim
-					value < 100 #TODO_CD_EP2 standardize MAX
+					value < 100 #  standardize MAX
 				}
 			}
 			add_trait_xp = {
 				trait = pilgrim
-				value = 5 #TODO_CD_EP2 standardize TINY
+				value = 5 #  standardize TINY
 			}
 		}
 		reverse_add_opinion = {
@@ -9648,12 +9648,12 @@ pilgrimage.6520 = {
 							has_trait = pilgrim
 							has_trait_xp = {
 								trait = pilgrim
-								value < 100 #TODO_CD_EP2 standardize MAX
+								value < 100 #  standardize MAX
 							}
 						}
 						add_trait_xp = {
 							trait = pilgrim
-							value = 10 #TODO_CD_EP2 standardize MEDIUM
+							value = 10 #  standardize MEDIUM
 						}
 					}
 					else = {
@@ -9746,13 +9746,13 @@ scripted_effect 6531_positive_outcome = {
 						has_trait_xp = {
 							trait = lifestyle_traveler
 							track = travel
-							value < 100 #TODO_CD_EP2 standardize, MAX
+							value < 100 #  standardize, MAX
 						}
 					}
 					add_trait_xp = {
 						trait = lifestyle_traveler
 						track = travel
-						value = 5 #TODO_CD_EP2 standardize, medium xp value
+						value = 5 #  standardize, medium xp value
 					}
 				}
 			}
@@ -11504,7 +11504,7 @@ pilgrimage.6770 = {
 			# 	create_artifact_pedestal_reliquary_judaism_effect = { OWNER = scope:relic_merchant }
 			# }
 			# else = {
-			# 	create_artifact_sculpture_religious_effect = { OWNER = scope:relic_merchant } #TODO_CD_EP2 This causes an asset error
+			# 	create_artifact_sculpture_religious_effect = { OWNER = scope:relic_merchant } #  This causes an asset error
 			# }
 			scope:newly_created_artifact = {
 				save_scope_as = merchant_relic
@@ -12014,7 +12014,7 @@ pilgrimage.6790 = {
 				has_trait = pilgrim
 				has_trait_xp = {
 					trait = pilgrim
-					value >= 50 #TODO_CD_EP2 standardize LEVEL 2
+					value >= 50 #  standardize LEVEL 2
 				}
 			}					
 			has_trait = hajjaj
@@ -12411,12 +12411,12 @@ pilgrimage.6800 = {
 				has_trait = pilgrim
 				has_trait_xp = {
 					trait = pilgrim
-					value < 100 #TODO_CD_EP2 standardize MAX level
+					value < 100 #  standardize MAX level
 				}
 			}
 			add_trait_xp = {
 				trait = pilgrim
-				value = 20 #TODO_CD_EP2 standardize MAJOR
+				value = 20 #  standardize MAJOR
 			}
 			add_piety = medium_piety_gain
 		}
@@ -13095,7 +13095,7 @@ pilgrimage.6830 = {
 			has_trait = pilgrim #Only pilgrim since you can't level up the hajj trait
 			has_trait_xp = {
 				trait = pilgrim
-				value < 100 #TODO_CD_EP2 Standardize less than MAX
+				value < 100 #  Standardize less than MAX
 			}
 		}
 		custom_tooltip = pilgrimage.6830.c.tt
@@ -13103,7 +13103,7 @@ pilgrimage.6830 = {
 		add_piety = miniscule_piety_gain
 		add_trait_xp = {
 			trait = pilgrim
-			value = 20 #TODO_CD_EP2 Standardize MAJOR
+			value = 20 #  Standardize MAJOR
 		}
 		hidden_effect = { destroy_artifact = scope:votive_artifact }
 		stress_impact = {

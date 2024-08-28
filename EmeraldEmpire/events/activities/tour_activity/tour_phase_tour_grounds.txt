@@ -1282,7 +1282,7 @@ scripted_effect 1008_liege_likes_effect = {
 			OPINION = default_friend_opinion
 			REASON = friend_told_me_scary_stories
 		}
-		# TODO_CD_EP2 add memories
+		#   add memories
 	}
 }
 scripted_effect 1008_liege_scared_effect = {
@@ -1292,7 +1292,7 @@ scripted_effect 1008_liege_scared_effect = {
 			modifier = scared_opinion
 			opinion = -15
 		}
-		# TODO_CD_EP2 add memories
+		#   add memories
 	}
 }
 scripted_effect 1008_liege_annoyed_effect = {
@@ -1440,7 +1440,7 @@ tour_grounds_events.1008 = {
 
 	option = { # Join in on the spooky story
 		name = tour_grounds_events.1008.a
-		# TODO_CD_EP2 add reason and uncomment
+		#   add reason and uncomment
 		progress_towards_friend_effect = {
 			CHARACTER = scope:storyteller_scope
 			OPINION = default_friend_opinion
@@ -4486,7 +4486,7 @@ tour_grounds_events.3012 = {
 				target = scope:stop_host_scope
 				root = {
 					duel = {
-						skill = prowess # TODO_CD_EP2, use caravan security rather than personal prowess
+						skill = prowess #  , use caravan security rather than personal prowess
 						target = scope:poacher_scope
 						50 = { #You round them up and kill them
 							compare_modifier = {
@@ -4837,7 +4837,7 @@ tour_grounds_events.3014 = {
 				development_level <= 5 
 			}
 		}
-		# TODO_CD_EP2, weight up for tax tour
+		#  , weight up for tax tour
 	}
 
 	immediate = {
@@ -5501,7 +5501,7 @@ tour_grounds_events.3019 = {
 		base = 1
 		modifier = {
 			factor = 1
-			always = yes # TODO_CD_EP2, weigh up for taxation tour
+			always = yes #  , weigh up for taxation tour
 		}
 	}
 
@@ -5510,7 +5510,7 @@ tour_grounds_events.3019 = {
 			name = had_3019
 			value = yes
 		}
-		random_courtier = { # TODO_CD_EP2, grab an entourage member. Weigh up for greed/stewardship
+		random_courtier = { #  , grab an entourage member. Weigh up for greed/stewardship
 			save_scope_as = greedy_entourage_member
 		}
 	}
@@ -6251,7 +6251,7 @@ tour_grounds_events.3050 = {
 tour_grounds_events.3060 = {
 	type = activity_event
 	title = tour_grounds_events.3060.title
-	# TODO_CD_EP2, update this to use the actual type of MaA types as soon as they're a scope
+	#  , update this to use the actual type of MaA types as soon as they're a scope
 	desc = {
 		desc = tour_grounds_events.3060.desc.intro
 		first_valid = {
@@ -6531,7 +6531,7 @@ tour_grounds_events.3060 = {
 			base = 10
 			modifier = {
 				factor = 0
-				number_of_maa_regiments >= 4 # TODO_CD_EP2, there doesn't seem to be a way to check the MaA limit
+				number_of_maa_regiments >= 4 #  , there doesn't seem to be a way to check the MaA limit
 			}
 			ai_value_modifier = {
 				ai_rationality = 1

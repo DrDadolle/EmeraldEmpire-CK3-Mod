@@ -1061,7 +1061,7 @@
 # 		is_landed = yes
 # 		exists = house
 # 		exists = capital_province # Sanity check
-# 		# TODO_CD_EREN: Allow this for people w/o the tradition but nerf it (and rename it)
+# 		# Allow this for people w/o the tradition but nerf it (and rename it)
 # 		# Otherwise, put it in the valid as well so the tooltip is surfaced to the player
 # 		culture = { has_cultural_tradition = tradition_futuwaa }
 # 	}
@@ -1239,7 +1239,7 @@
 # 		is_landed = yes
 # 		exists = house
 # 		exists = capital_province # Sanity check
-# 		culture = { has_cultural_tradition = tradition_fp3_beacon_of_learning } # TODO_CD_EREN: Allow this for people w/o the tradition, but nerf it. See the futuwaa decision
+# 		culture = { has_cultural_tradition = tradition_fp3_beacon_of_learning } # Allow this for people w/o the tradition, but nerf it. See the futuwaa decision
 # 	}
 
 # 	is_valid = {

@@ -1559,8 +1559,8 @@ hunt.0500 = {
 			scope:activity = {
 				activity_location = {
 					NOT = {
-						county = { has_county_modifier = hunt_sighting_standard_modifier } # TODO_CD_EP2 check known for player
-						county = { has_county_modifier = hunt_sighting_dangerous_modifier } # TODO_CD_EP2 check known for player
+						county = { has_county_modifier = hunt_sighting_standard_modifier } 
+						county = { has_county_modifier = hunt_sighting_dangerous_modifier } 
 					}
 					hunt_animal_deer_antelope_trigger = yes
 				}

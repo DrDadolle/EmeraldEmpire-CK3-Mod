@@ -259,7 +259,7 @@ ep2_tournament_events.0002 = {
 	# Demand they face you
 	option = {
 		name = ep2_tournament_events.0002.b
-		#TODO_CD_EP2 spectators lose opinion of you?
+		#  spectators lose opinion of you?
 
 		stress_impact = {
 			arrogant = minor_stress_impact_loss
@@ -283,7 +283,7 @@ ep2_tournament_events.0002 = {
 	 		opinion = -30
 	 	}
 
-		#TODO_CD_EP2 spectators with Deceitful gain opinion of you
+		#  spectators with Deceitful gain opinion of you
 
 		stress_impact = {
 			craven = medium_stress_impact_loss
@@ -12275,7 +12275,7 @@ ep2_tournament_events.5501 = {
 		
 		activity_tournament_change_contestant_score_effect = { SCORE = increase_medium }
 
-		#TODO_CD_EP2 impress spectators
+		#  impress spectators
 
 		if = {
 			limit = {
@@ -13926,7 +13926,7 @@ ep2_tournament_events.6501 = {
 						}
 					}
 
-					#TODO_CD_EP2 add opinion bonuses
+					#  add opinion bonuses
 				}
 				# if = {
 				# 	limit = {
@@ -14030,7 +14030,7 @@ ep2_tournament_events.6501 = {
 							value = tournament_hastiludes_xp_gain_medium_value
 						}
 					}
-					#TODO_CD_EP2 add opinion bonuses
+					#  add opinion bonuses
 				}
 
 				desc = ep2_tournament_events.6501.b.tt.win

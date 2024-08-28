@@ -56,7 +56,7 @@ travel_events.4000 = {
 			triggered_desc = {
 				trigger = {
 					root.current_travel_plan = {
-						#travel_plan_progress < 0.5 TODO_CD_EP2, this doesn't work yet
+						#travel_plan_progress < 0.5  , this doesn't work yet
 					}
 				}
 				desc = travel_events.4000.desc.mid.long_to_go
@@ -64,7 +64,7 @@ travel_events.4000 = {
 			triggered_desc = {
 				trigger = {
 					root.current_travel_plan = {
-						#travel_plan_progress >= 0.5 TODO_CD_EP2, this doesn't work yet
+						#travel_plan_progress >= 0.5  , this doesn't work yet
 					}
 				}
 				desc = travel_events.4000.desc.mid.travelled_far
@@ -2758,7 +2758,7 @@ travel_events.4015 = {
 				send_interface_toast = {
 					title = travel.got_lost
 					left_icon = root
-					#TODO_CD_EP2 this looks empty in the send_interface_toast - missing DELAY_TRAVEL_PLAN effect?
+					#  this looks empty in the send_interface_toast - missing DELAY_TRAVEL_PLAN effect?
 					current_travel_plan = {
 						delay_travel_plan = {
 							weeks = 1
