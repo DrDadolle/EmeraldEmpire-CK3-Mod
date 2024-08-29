@@ -45,6 +45,12 @@
 #  rokugan_major_clan_events_decision.0012.desc:0 "The infamous [claimant.GetFirstName] has claimed Toshi Rambo. [claimant.GetSheHe|U] will go to war soon."
 #  rokugan_major_clan_events_decision.0012.a:0 "We shall prepare to defend our land."
 
+ rokugan_minor_clan_restoration_decision.0101.t:0 "Founding a Minor Clan"
+ rokugan_minor_clan_restoration_decision.0101.desc:0 "After years of tractation within the imperial court, [ROOT.Char.GetLiege.GetTitledFirstNameNoTooltip] has finally accepted our requests to become a minor clan !\n At least, the noble [ROOT.Char.GetHouse.GetBaseNameNoTooltip] dynasty is recognized as its just value.\n\n Now, we need to choose an animal to be our new family mon. What should it be ?"
+ rokugan_minor_clan_restoration_decision.0101.a:0 "The Monkey Clan"
+ rokugan_minor_clan_restoration_decision.0101.a.t:0 "You will create a new duchy called the Monkey Clan. Your house mon will be changed to the same mon."
+ rokugan_minor_clan_restoration_decision.0101.fallback:0 "No more minor clan creation permitted. DEBUG."
+
  ############################
  ###### MINOR DECISION
  ############################

@@ -474,6 +474,15 @@ dynasty_kuma = { # Bear Clan.  Should be extinct... in theory
 	name = dynn_kuma
 	culture = kuma
 }
+##########################
+##### Non-created Minor Clan
+##### For Found Minor Clan Decision
+##########################
+dynasty_monkey = { #Monkey Minor CLan
+	name = dynn_monkey
+	culture = akodo
+}
+
 #2100117 = { #TODO Otter Clan
 #	name = dynn_xxx
 #	culture = xxx

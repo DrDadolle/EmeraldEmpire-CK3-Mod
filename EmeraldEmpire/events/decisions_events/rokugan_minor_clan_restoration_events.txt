@@ -53,6 +53,7 @@ rokugan_minor_clan_restoration_decision.0101 = {
 	# Monkey Clan Option
 	option = {
 		name = rokugan_minor_clan_restoration_decision.0101.a
+		custom_tooltip = rokugan_minor_clan_restoration_decision.0101.a.t
 		# TODO trigger based on global variable
 		trigger = {
 				NOT = { # Only happens once.
@@ -67,13 +68,25 @@ rokugan_minor_clan_restoration_decision.0101 = {
 				name = create_minor_clans_variable_list
 				target = flag:flag_monkey_clan
 		}
-		# TODO change coa & name of title
-		scope:new_title = {
-			set_coa = dynasty:dynasty_doji #FIXME : create dummy title to copy from ?
-			set_title_name = "TEST CLAN" #FIXME
-			set_color_from_title = k_lion_clan #FIXME : create dummy title to copy from ?
+		hidden_effect = {
+			create_custom_minor_clan_effect = {
+				COA = dynasty:dynasty_monkey
+				NAME = d_monkey
+				COLOR = title:d_monkey
+				# COLOR = title:k_lion_clan
+			}
 		}
 
+
+
+		# TODO change coa & name of title
+		# scope:new_title = {
+		# 	set_coa = dynasty:dynasty_doji #FIXME : create dummy title to copy from ?
+		# 	set_title_name = k_monkey_clan #FIXME
+		# 	set_color_from_title = title:k_unicorn_clan #FIXME : create dummy title to copy from ?
+		# }
+
+		# TODO add custom tooltip
 
 	}
 

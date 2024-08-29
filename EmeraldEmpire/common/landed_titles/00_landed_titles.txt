@@ -9,6 +9,7 @@ e_rokugan = {
      k_crane_clan = {
          color = { 168 221 254 }
          capital = c_kazenmuketsu_province
+         set_definitive_form = yes # To display "XXX Clan" instead of "Clan of XXX Clan"
  
          d_asahina = {
              color = { 108 199 254 }
@@ -250,6 +251,7 @@ e_rokugan = {
 	 k_lion_clan = {
          color = { 255 213 35 }
          capital = c_kenryu_province
+         set_definitive_form = yes # To display "XXX Clan" instead of "Clan of XXX Clan"
  
          d_matsu = {
              color = { 219 165 47 }
@@ -517,6 +519,7 @@ e_rokugan = {
 	 k_phoenix_clan = {
          color = { 228 88 0 }
          capital = c_nejiro_province
+         set_definitive_form = yes # To display "XXX Clan" instead of "Clan of XXX Clan"
  
          d_asako = {
              color = { 255 118 33 }
@@ -733,6 +736,7 @@ e_rokugan = {
 	k_dragon_clan = {
 		color = { 46 114 55 } 
 		capital = c_mucha_province
+        set_definitive_form = yes # To display "XXX Clan" instead of "Clan of XXX Clan"
 		
 		d_kitsuki = {
              color = { 80 166 32 }
@@ -866,6 +870,7 @@ e_rokugan = {
 	k_scorpion_clan = {
 		color = { 145 1 11 }
 		capital = c_kunizakai_province
+        set_definitive_form = yes # To display "XXX Clan" instead of "Clan of XXX Clan"
 		
 		d_yogo = {
              color = { 104 26 20 }
@@ -1014,6 +1019,7 @@ e_rokugan = {
 	k_crab_clan = {
 		color = { 41 31 91 }
         capital = c_kyoukan_province
+        set_definitive_form = yes # To display "XXX Clan" instead of "Clan of XXX Clan"
         
 		d_yasuki = {
 			color = { 72 19 202 } 
@@ -1199,6 +1205,7 @@ e_rokugan = {
 	k_unicorn_clan = {
 		color = { 108 52 179 }
 		capital = c_kouryo_province 
+        set_definitive_form = yes # To display "XXX Clan" instead of "Clan of XXX Clan"
 		
 		d_iuchi = {
 			color = { 46 25 123 } 
@@ -1603,6 +1610,7 @@ e_rokugan = {
 		d_moshi = {
 			 color = { 230 243 10 }
 			 capital = c_mukade_no_tani_province
+             set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
 			 
 			 c_mukade_no_tani_province = {
 				 color = { 230 243 10 }
@@ -1618,6 +1626,7 @@ e_rokugan = {
 		d_kasuga = {
 			 color = { 230 243 10 }
 			 capital = c_kasuga_province
+             set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
 			 
 			 c_kasuga_province = {
 				 color = { 230 243 10 }
@@ -1636,6 +1645,7 @@ e_rokugan = {
 		d_suzume = {
 			 color = { 240 230 140 }
 			 capital = c_suzume_province
+             set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
 			 
 			 c_suzume_province = {
 				 color = { 240 230 140 }
@@ -1648,6 +1658,7 @@ e_rokugan = {
 		d_kitsune = {
 			 color = { 121 37 11 }
 			 capital = c_kakusu_province
+             set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
 			 
 			 c_kakusu_province = {
 				 color = { 121 37 11}
@@ -1663,6 +1674,7 @@ e_rokugan = {
 		d_usagi = {
 			 color = { 235 102 79 }
 			 capital = c_usagi_province
+             set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
 			 
 			 c_usagi_province = {
 				 color = { 235 102 79 }
@@ -1684,6 +1696,7 @@ e_rokugan = {
 		d_tsuruchi = {
 			 color = { 242 237 18 }
 			 capital = c_ashinagabachi_province
+             set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
 			 
 			 c_ashinagabachi_province = {
 				 color = { 242 237 18 }
@@ -1722,6 +1735,7 @@ e_rokugan = {
 		d_nekoma = {
 			 color = { 224 39 242 }
 			 capital = c_nekoma_province
+             set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
 			 
 			 c_nekoma_province = {
 				 color = { 224 39 242 }
@@ -1734,6 +1748,7 @@ e_rokugan = {
 		d_tonbo = {
 			 color = { 81 155 90 }
 			 capital = c_tonbo_province
+             set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
 			 
 			 c_tonbo_province = {
 				 color = { 81 155 90 }
@@ -1749,6 +1764,7 @@ e_rokugan = {
 		d_ichiro = {
 			 color = { 131 141 137 }
 			 capital = c_ichiro_province
+             set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
 			 
 			 c_ichiro_province = {
 				 color = { 131 141 137 }
@@ -1767,6 +1783,7 @@ e_rokugan = {
 		d_yoritomo = {
 			 color = { 29 231 59 }
 			 capital = c_gotei_province
+             set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
 			 
 			 c_gotei_province = {
 				 color = { 29 231 59 }
@@ -1832,6 +1849,7 @@ e_rokugan = {
         d_shika = {
             color = { 131 105 83 }
             capital = c_shika_province
+            set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
             
             c_shika_province = {
                 color = { 131 105 83 }
@@ -1852,6 +1870,7 @@ e_rokugan = {
         d_kaikoga= {
             color = { 163 223 135 }
             capital = c_kaikoga_province
+            set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
             
             c_kaikoga_province = {
                 color = { 50 120 153 }
@@ -1864,6 +1883,7 @@ e_rokugan = {
        d_toritaka = {
             color = { 50 120 153 }
             capital = c_toritaka_province
+            set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
             
             c_toritaka_province = {
                 color = { 50 120 153 }
@@ -2144,8 +2164,37 @@ d_chuda = {
 d_komori = {
     color = { 7 41 12 }
     capital = c_komori_province
-   
 }
+
+d_monkey = {
+    color = { 0.72 0.53 0.04 }
+    landless = yes
+}
+
+d_oriole = {
+    color = { 0.4 0.19 0.28 }
+}
+
+d_ox = {
+    color = { 0.8 0.2 0.2}
+}
+
+d_bat = {
+    color = { 0.07 0.21 0.14 }
+}
+
+d_boar = {
+     color = { 0.24 0.2 0.12}
+}
+
+d_firefly = {
+    color = { 0.93 0.11 0.14 }
+}
+
+d_otter = {
+    color = { 0.03 0.57 0.82 }
+}
+
 
 # d_ofushikai_special= {
 #     definite_form = yes

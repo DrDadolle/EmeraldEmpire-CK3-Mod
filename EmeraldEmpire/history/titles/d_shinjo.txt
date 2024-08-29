@@ -17,7 +17,7 @@ c_kouryo_province = {
 c_bugaisha_province = {
 	1111.1.1 = {
 		liege = "d_shinjo"
-		holder = placeholdershinjo1 Change for a character very dishonorable !
+		holder = placeholdershinjo1 #Change for a character very dishonorable !
 		change_development_level = 5
 	}
 }
@@ -33,7 +33,16 @@ c_aishou_province = {
 c_haisho_province = {
 	1111.1.1 = {
 		liege = "d_shinjo"
-		holder = placeholdershinjo2
+		holder = placeholdershinjo1
 		change_development_level = 10
+	}
+}
+
+
+b_mountain_watch_tower = {
+	1111.1.1 = {
+		liege = "d_shinjo"
+		holder = placeholdershinjo2 
+		change_development_level = 5
 	}
 }

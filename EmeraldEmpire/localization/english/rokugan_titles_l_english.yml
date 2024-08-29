@@ -35,8 +35,6 @@
  rokugan_emperor_female:0 "Empress"
  rokugan_emperor_plural:0 "Emperors"
  
-
-
  rokugan_baron_republic:0 "Toshiyori"
  rokugan_count_republic:0 "Toshiyori"
  rokugan_duke_republic:0 "Odoshiyori"
@@ -49,11 +47,14 @@
  rokugan_king_theocracy:0 "Hossu_rokugan_king_theocracy"
  rokugan_emperor_theocracy:0 "Daihossu_rokugan_emperor_theocracy"
 
- rokugan_baron_tribal:0 "rokugan_baron_tribal"
- rokugan_count_tribal:0 "rokugan_count_tribal"
- rokugan_duke_tribal:0 "rokugan_duke_tribal"
- rokugan_king_tribal:0 "rokugan_king_tribal"
- rokugan_emperor_tribal:0 "rokugan_emperor_tribal"
+ rokugan_baron_tribal_male:0 "Headman"
+ rokugan_baron_tribal_female:0 "Headwoman"
+ rokugan_count_tribal_male:0 "Chieftain"
+ rokugan_count_tribal_female:0 "Chieftess"
+ rokugan_duke_tribal_male:0 "High Chieftain"
+ rokugan_duke_tribal_female:0 "High Chieftess"
+ rokugan_king_tribal_male:0 "King"
+ rokugan_king_tribal_female:0 "Queen"
 
  rokugan_baron_mercenary:0 "Toryo"
  rokugan_count_mercenary:0 "Toryo"
@@ -63,6 +64,20 @@
 
  prince_empire:0 "Prince"
  princess_empire:0 "Princess"
+
+ # Shinseim titles
+ baron_theocracy_male_shinseism_religion:0 "Chief Monk"
+ baron_theocracy_female_shinseism_religion:0 "Chief Nun"
+ barony_theocracy_shinseism_religion:0 "Monastery"
+ count_theocracy_male_shinseism_religion:0 "High Monk"
+ count_theocracy_female_shinseism_religion:0 "High Nun"
+ county_theocracy_shinseism_religion:0 "High Monastery"
+ duke_theocracy_male_shinseism_religion:0 "Grand Monk"
+ duke_theocracy_female_shinseism_religion:0 "Grand Nun"
+ duchy_theocracy_shinseism_religion:0 "Grand Monastery"
+ king_theocracy_male_shinseism_religion:0 "Prince-Monk"
+ king_theocracy_female_shinseism_religion:0 "Princess-Nun"
+ kingdom_theocracy_shinseism_religion:0 "Prince-Monastery"
 
  # Unicorn special cultural name
  rokugan_king_unicorn:0 "Khan of Khans"
@@ -194,14 +209,14 @@
  kingdom_tribal:0 "$kingdom$"
  empire_tribal:0 "$empire$"
  
- baron_tribal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron_tribal$', '$rokugan_spouse_male$' ), '$rokugan_baron_tribal$' )]"
- baron_tribal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron_tribal$', '$rokugan_spouse_female$' ), '$rokugan_baron_tribal$' )]"
- count_tribal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count_tribal$', '$rokugan_spouse_male$' ), '$rokugan_count_tribal$' )]"
- count_tribal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count_tribal$', '$rokugan_spouse_female$' ), '$rokugan_count_tribal$' )]"
- duke_tribal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke_tribal$', '$rokugan_spouse_male$' ), '$rokugan_duke_tribal$' )]"
- duke_tribal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke_tribal$', '$rokugan_spouse_female$' ), '$rokugan_duke_tribal$' )]"
- king_tribal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king_tribal$', '$rokugan_spouse_male$' ), '$rokugan_king_tribal$' )]"
- king_tribal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king_tribal$', '$rokugan_spouse_female$' ), '$rokugan_king_tribal$' )]"
+ baron_tribal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron_tribal_male$', '$rokugan_spouse_male$' ), '$rokugan_baron_tribal_male$' )]"
+ baron_tribal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_baron_tribal_female$', '$rokugan_spouse_female$' ), '$rokugan_baron_tribal_female$' )]"
+ count_tribal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count_tribal_male$', '$rokugan_spouse_male$' ), '$rokugan_count_tribal_male$' )]"
+ count_tribal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_count_tribal_female$', '$rokugan_spouse_female$' ), '$rokugan_count_tribal_female$' )]"
+ duke_tribal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke_tribal_male$', '$rokugan_spouse_male$' ), '$rokugan_duke_tribal_female$' )]"
+ duke_tribal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_duke_tribal_male$', '$rokugan_spouse_female$' ), '$rokugan_duke_tribal_male$' )]"
+ king_tribal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king_tribal_male$', '$rokugan_spouse_male$' ), '$rokugan_king_tribal_male$' )]"
+ king_tribal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_king_tribal_female$', '$rokugan_spouse_female$' ), '$rokugan_king_tribal_female$' )]"
  emperor_tribal_male:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_emperor$', '$rokugan_spouse_male$' ), '$rokugan_emperor$' )]"
  emperor_tribal_female:0 "[Select_CString( Character.IsValid, Select_CString( GreaterThan_int32( Character.GetPrimaryTitle.GetTierFrame, '(int32)1' ), '$rokugan_emperor_female$', '$rokugan_spouse_female$' ), '$rokugan_emperor_female$' )]"
 

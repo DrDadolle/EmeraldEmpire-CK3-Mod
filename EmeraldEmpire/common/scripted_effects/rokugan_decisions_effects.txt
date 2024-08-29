@@ -296,7 +296,7 @@ create_custom_minor_clan_effect = {
 		
 		create_dynamic_title = {
 			tier = duchy
-			name = NEW_CREATED_TITLE_NAME
+			name = $NAME$
 		}
 		create_title_and_vassal_change = {
 			type = created
@@ -309,8 +309,17 @@ create_custom_minor_clan_effect = {
 				holder = root
 				change = scope:change
 			}
+			set_coa = $COA$
+			set_color_from_title = $COLOR$
+			set_definitive_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
+			set_capital_county = scope:old_title.title_capital_county
 		}
-		
+
+		#Change house mon to the same of the clan
+		house = { 
+			set_coa = $COA$
+		}
+
 		resolve_title_and_vassal_change = scope:change
 
 		#TODO do the same for Kingdom !
@@ -424,15 +433,7 @@ create_custom_minor_clan_effect = {
 			set_de_jure_liege_title = scope:new_title
 		}
 
-		scope:new_title = {
-			set_coa = scope:old_title
-			set_color_from_title = scope:old_title
-			set_capital_county = scope:old_title.title_capital_county
-		}
 		set_primary_title_to = scope:new_title
-		
-		## special events to set the color/name of stuff/CoA/Dynasty
-		trigger_event = rokugan_minor_clan_restoration_decision.0101 
 		
 		every_player = {
 			if = {

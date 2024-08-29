@@ -147,10 +147,6 @@ found_minor_clan_decision = {
 	}
 
 	effect = {
-		# TODO special event to choose the mon/animal of the new clan ?
-		# Create Own Dynasty based on your first name ?
-		# TODO replace with custom_duchy effect !!
-		create_custom_minor_clan_effect = yes
 		if = {
 			limit = {
 				is_ai = no
@@ -166,7 +162,9 @@ found_minor_clan_decision = {
 			}
 		}
 
-		##TODO : Add Dynasty & legitimacy ?
+		trigger_event = {
+			id = rokugan_minor_clan_restoration_decision.0101
+		}
 		add_legitimacy = major_legitimacy_gain
 		dynasty = { add_dynasty_prestige = 500 }
 	}
