@@ -162,6 +162,10 @@ found_minor_clan_decision = {
 			}
 		}
 
+		custom_description = {
+			text = create_custom_minor_clan_description_decision
+		}
+
 		trigger_event = {
 			id = rokugan_minor_clan_restoration_decision.0101
 		}

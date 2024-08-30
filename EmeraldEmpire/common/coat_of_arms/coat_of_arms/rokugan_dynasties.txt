@@ -367,6 +367,20 @@ dynasty_kaikoga = { # Moth Clan
 		texture = "te_minor_moth.dds"
 	}
 }
+##########################
+##### Non-created Minor Clan
+##### For Found Minor Clan Decision
+##########################
+dynasty_monkey = { #Monkey Minor CLan
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_minor_monkey.dds"
+	}
+}
+##########################
+##### Extinct Minor Clans
+##########################
 dynasty_chuda = { # Snake Clan. Should be extinct... in theory
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
@@ -381,17 +395,7 @@ dynasty_kuma = { # Bear Clan.  Should be extinct... in theory
 		texture = "te_minor_bear.dds"
 	}
 }
-##########################
-##### Non-created Minor Clan
-##### For Found Minor Clan Decision
-##########################
-dynasty_monkey = { #Monkey Minor CLan
-	pattern = "pattern_solid.dds"	
-	color1 = "black"
-	textured_emblem = {
-		texture = "te_minor_monkey.dds"
-	}
-}
+
 #2100117 = { #TODO Otter Clan
 #	name = dynn_xxx
 #	culture = xxx
