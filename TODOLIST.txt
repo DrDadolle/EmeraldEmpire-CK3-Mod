@@ -27,24 +27,22 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## short term goals 
 - Check tribal / theocracy names are displayed correctly
-	- Add localization for tribal / theocracy names ?
-	- ancestor_religious_head_title
+	- ancestor_religious_head_title : To test this, steal emperor title but not "son of heaven"
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA
 - update crane clan bookmark map
 	- Doji Kuwanan : TODO DNA
 - add choice of new mon and names for new minor clans !
 	- missing description descision, issue with custom description
-	- boar clan (disappear mysteriously) https://l5r.fandom.com/wiki/Boar_Clan?file=Boar.png
-	- firefly 
-	- Otter (?)
-	- tanuki (ask permission)
-	- tiger clan (ask permission)
 - Add clergy church holder ?
 - Create MaA for each great clan, (do the same for minor later)
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
 	- add special icons/images for MaA !!!!!!!!!!!!!!!!!!!!! (crab done, rest to do)
+- Fix mercenary companies names / culture ?
+	- How to ?
+- Random mon for generated characters ?
+	- Based on shogunate mod
 
 ## Fixes to do
 - Spammed with rokugan_char_interaction.0231 event boxes...
@@ -111,6 +109,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Doji Hotaru
 	- Doji Kuwanan
 	- Akodo Toturi
+- add choice of new mon and names for new minor clans !
+	- boar clan (disappear mysteriously) https://l5r.fandom.com/wiki/Boar_Clan?file=Boar.png
+	- firefly 
+	- Otter (?)
+	- tanuki (ask permission)
+	- tiger clan (ask permission)
 - Duel to end War (check Tales of Ireland mod)
 - add "animal" (clan animal) as motif for CoA (instead of just textured one)
 	- generated dynasties of ronins have random CoA
