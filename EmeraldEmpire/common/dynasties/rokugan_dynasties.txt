@@ -470,15 +470,15 @@ dynasty_chuda = { # Snake Clan. Should be extinct... in theory
 	name = dynn_chuda
 	culture = chuda
 }
-dynasty_kuma = { # Bear Clan.  Should be extinct... in theory
-	name = dynn_kuma
-	culture = kuma
-}
+# dynasty_kuma = { # Bear Clan.  Should be extinct... in theory
+# 	name = dynn_kuma
+# 	culture = kuma
+# }
 ##########################
 ##### Non-created Minor Clan
 ##### For Found Minor Clan Decision
 ##########################
-dynasty_monkey = { #Monkey Minor CLan
+dynasty_monkey = { #Monkey Minor Clan
 	name = dynn_monkey
 	culture = akodo
 }

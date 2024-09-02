@@ -73,21 +73,8 @@ rokugan_minor_clan_restoration_decision.0101 = {
 				COA = dynasty:dynasty_monkey
 				NAME = d_monkey
 				COLOR = title:d_monkey
-				# COLOR = title:k_lion_clan
 			}
 		}
-
-
-
-		# TODO change coa & name of title
-		# scope:new_title = {
-		# 	set_coa = dynasty:dynasty_doji #FIXME : create dummy title to copy from ?
-		# 	set_title_name = k_monkey_clan #FIXME
-		# 	set_color_from_title = title:k_unicorn_clan #FIXME : create dummy title to copy from ?
-		# }
-
-		# TODO add custom tooltip
-
 	}
 
 	option = {

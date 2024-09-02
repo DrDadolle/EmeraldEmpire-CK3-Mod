@@ -320,6 +320,7 @@ create_custom_minor_clan_effect = {
 			set_coa = $COA$
 		}
 
+
 		resolve_title_and_vassal_change = scope:change
 
 		#TODO do the same for Kingdom !
@@ -431,6 +432,8 @@ create_custom_minor_clan_effect = {
 				}
 			}
 			set_de_jure_liege_title = scope:new_title
+			# Change Coat of Arms for all counties
+			set_coa = $COA$
 		}
 
 		set_primary_title_to = scope:new_title
