@@ -54,7 +54,6 @@ rokugan_minor_clan_restoration_decision.0101 = {
 	option = {
 		name = rokugan_minor_clan_restoration_decision.0101.a
 		custom_tooltip = rokugan_minor_clan_restoration_decision.0101.a.t
-		# TODO trigger based on global variable
 		trigger = {
 				NOT = { # Only happens once.
 					is_target_in_global_variable_list = {
@@ -77,8 +76,108 @@ rokugan_minor_clan_restoration_decision.0101 = {
 		}
 	}
 
+	# Ox Clan Option
+	option = {
+		name = rokugan_minor_clan_restoration_decision.0101.b
+		custom_tooltip = rokugan_minor_clan_restoration_decision.0101.b.t
+		trigger = {
+				NOT = { # Only happens once.
+					is_target_in_global_variable_list = {
+						name = create_minor_clans_variable_list
+						target = flag:flag_ox_clan
+					}
+				}
+		}
+
+		add_to_global_variable_list = {
+				name = create_minor_clans_variable_list
+				target = flag:flag_ox_clan
+		}
+		hidden_effect = {
+			create_custom_minor_clan_effect = {
+				COA = dynasty:dynasty_ox
+				NAME = d_ox
+				COLOR = title:d_ox
+			}
+		}
+	}
+
+	# Oriole Clan Option
+	option = {
+		name = rokugan_minor_clan_restoration_decision.0101.c
+		custom_tooltip = rokugan_minor_clan_restoration_decision.0101.c.t
+		trigger = {
+				NOT = { # Only happens once.
+					is_target_in_global_variable_list = {
+						name = create_minor_clans_variable_list
+						target = flag:flag_oriole_clan
+					}
+				}
+		}
+
+		add_to_global_variable_list = {
+				name = create_minor_clans_variable_list
+				target = flag:flag_oriole_clan
+		}
+		hidden_effect = {
+			create_custom_minor_clan_effect = {
+				COA = dynasty:dynasty_oriole
+				NAME = d_oriole
+				COLOR = title:d_oriole
+			}
+		}
+	}
+
+	# Bat Clan Option
+	option = {
+		name = rokugan_minor_clan_restoration_decision.0101.d
+		custom_tooltip = rokugan_minor_clan_restoration_decision.0101.d.t
+		trigger = {
+				NOT = { # Only happens once.
+					is_target_in_global_variable_list = {
+						name = create_minor_clans_variable_list
+						target = flag:flag_bat_clan
+					}
+				}
+		}
+
+		add_to_global_variable_list = {
+				name = create_minor_clans_variable_list
+				target = flag:flag_bat_clan
+		}
+		hidden_effect = {
+			create_custom_minor_clan_effect = {
+				COA = dynasty:dynasty_komori
+				NAME = d_bat
+				COLOR = title:d_bat
+			}
+		}
+	}
+
+	# No fallback normally, there should be enough minor clan (as only players can create them)
 	option = {
 		name = rokugan_minor_clan_restoration_decision.0101.fallback
 		fallback = yes
+		trigger = {
+			# All minor clan available already exists
+			AND = {
+				is_target_in_global_variable_list = {
+					name = create_minor_clans_variable_list
+					target = flag:flag_monkey_clan
+				}
+				is_target_in_global_variable_list = {
+					name = create_minor_clans_variable_list
+					target = flag:flag_ox_clan
+				}
+				is_target_in_global_variable_list = {
+					name = create_minor_clans_variable_list
+					target = flag:flag_oriole_clan
+				}
+				is_target_in_global_variable_list = {
+					name = create_minor_clans_variable_list
+					target = flag:flag_bat_clan
+				}
+			}
+		}
 	}
 }

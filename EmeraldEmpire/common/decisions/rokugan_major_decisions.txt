@@ -147,6 +147,16 @@ found_minor_clan_decision = {
 	}
 
 	effect = {
+		custom_description = {
+			text = "create_custom_minor_clan_description_decision" #FIXME TODO only apply to effects ????????
+		}
+
+		trigger_event = {
+			id = rokugan_minor_clan_restoration_decision.0101
+		}
+		add_legitimacy = major_legitimacy_gain
+		dynasty = { add_dynasty_prestige = 500 }
+
 		if = {
 			limit = {
 				is_ai = no
@@ -161,16 +171,6 @@ found_minor_clan_decision = {
 				value = root.primary_title
 			}
 		}
-
-		custom_description = {
-			text = create_custom_minor_clan_description_decision
-		}
-
-		trigger_event = {
-			id = rokugan_minor_clan_restoration_decision.0101
-		}
-		add_legitimacy = major_legitimacy_gain
-		dynasty = { add_dynasty_prestige = 500 }
 	}
 
 	ai_potential = {

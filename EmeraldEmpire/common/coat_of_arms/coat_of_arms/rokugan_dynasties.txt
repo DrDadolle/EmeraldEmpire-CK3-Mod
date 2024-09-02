@@ -397,6 +397,22 @@ dynasty_monkey = { #Monkey Minor CLan
 	}
 }
 
+dynasty_oriole = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_oriole.dds"
+	}
+}
+
+dynasty_ox = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_minor_ox.dds"
+	}
+}
+
 #2100117 = { #TODO Otter Clan
 #	name = dynn_xxx
 #	culture = xxx

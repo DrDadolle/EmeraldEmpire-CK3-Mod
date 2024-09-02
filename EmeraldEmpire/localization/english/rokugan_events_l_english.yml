@@ -49,7 +49,13 @@
  rokugan_minor_clan_restoration_decision.0101.desc:0 "After years of tractation within the imperial court, [ROOT.Char.GetLiege.GetTitledFirstNameNoTooltip] has finally accepted our requests to become a minor clan !\n At least, the noble [ROOT.Char.GetHouse.GetBaseNameNoTooltip] dynasty is recognized as its just value.\n\n Now, we need to choose an animal to be our new family mon. What should it be ?"
  rokugan_minor_clan_restoration_decision.0101.a:0 "The Monkey Clan"
  rokugan_minor_clan_restoration_decision.0101.a.t:0 "You will create a new duchy called the Monkey Clan. Your house mon will be changed to the same mon."
- rokugan_minor_clan_restoration_decision.0101.fallback:0 "No more minor clan creation permitted. DEBUG."
+ rokugan_minor_clan_restoration_decision.0101.b:0 "The Ox Clan"
+ rokugan_minor_clan_restoration_decision.0101.b.t:0 "You will create a new duchy called the Ox Clan. Your house mon will be changed to the same mon."
+ rokugan_minor_clan_restoration_decision.0101.c:0 "The Oriole Clan"
+ rokugan_minor_clan_restoration_decision.0101.c.t:0 "You will create a new duchy called the Oriole Clan. Your house mon will be changed to the same mon."
+ rokugan_minor_clan_restoration_decision.0101.d:0 "The Bat Clan"
+ rokugan_minor_clan_restoration_decision.0101.d.t:0 "You will create a new duchy called the Bat Clan. Your house mon will be changed to the same mon."
+ rokugan_minor_clan_restoration_decision.0101.fallback:0 "[DEBUG] No more minor clan available."
 
  ############################
  ###### MINOR DECISION

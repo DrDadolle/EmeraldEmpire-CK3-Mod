@@ -454,10 +454,7 @@ dynasty_nekoma = { # Cat Clan
 	name = dynn_nekoma
 	culture = nekoma
 }
-dynasty_komori = { # Bat Clan
-	name = dynn_komori
-	culture = komori
-}
+
 dynasty_shika = { # Deer Clan
 	name = dynn_shika
 	culture = shika
@@ -478,9 +475,24 @@ dynasty_chuda = { # Snake Clan. Should be extinct... in theory
 ##### Non-created Minor Clan
 ##### For Found Minor Clan Decision
 ##########################
-dynasty_monkey = { #Monkey Minor Clan
+dynasty_monkey = { #Custom Monkey Minor Clan decision
 	name = dynn_monkey
 	culture = akodo
+}
+
+dynasty_ox = { # Custom Ox Minor Clan decision
+	name = dynn_ox
+	culture = shinjo
+}
+
+dynasty_oriole = { #Custom Oriole Minor Clan decision
+	name = dynn_oriole
+	culture = agasha
+}
+
+dynasty_komori = { # Bat Clan
+	name = dynn_komori
+	culture = komori
 }
 
 #2100117 = { #TODO Otter Clan
