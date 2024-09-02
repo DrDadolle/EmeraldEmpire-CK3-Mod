@@ -147,9 +147,8 @@ found_minor_clan_decision = {
 	}
 
 	effect = {
-		custom_description = {
-			text = "create_custom_minor_clan_description_decision" #FIXME TODO only apply to effects ????????
-		}
+
+		custom_tooltip = create_custom_minor_clan_decision_message #FIXME TODO only apply to effects ????????
 
 		trigger_event = {
 			id = rokugan_minor_clan_restoration_decision.0101
