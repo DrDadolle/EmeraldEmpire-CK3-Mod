@@ -520,6 +520,12 @@ reborn_snake_clan_scripted_effect = {
 	house = { save_scope_as = old_house }
 	hidden_effect = { set_house = character:lineofchuda2.house }
 
+
+	# Copy all innovations from previous culture culture
+	culture:chuda = {
+		hidden_effect = { reset_culture_creation_date = yes }
+		get_all_innovations_from = root.culture
+	}
 	set_culture = culture:chuda
 	# Change culture of your family to chuda 
 	if = {
@@ -570,6 +576,12 @@ reborn_snake_clan_scripted_effect = {
 		}
 	}
 
+		#Innovations
+		culture:chuda = {
+			add_random_innovation = culture_group_military
+			add_random_innovation = culture_group_civic
+		}
+
 	add_to_global_variable_list = {
 		name = unavailable_unique_decisions
 		target = flag:restore_snake_clan
@@ -602,6 +614,11 @@ unite_yasuki_to_crane_scripted_effect = {
 			culture = culture:yasuki
 		}
 		set_culture = culture:yasuki_crane
+	}
+	# Copy all innovations from crab yasuki culture
+	culture:yasuki_crane = {
+		hidden_effect = { reset_culture_creation_date = yes }
+		get_all_innovations_from = culture:yasuki
 	}
 	if = {
 		limit = { 

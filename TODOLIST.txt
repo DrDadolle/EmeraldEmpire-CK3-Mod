@@ -26,14 +26,17 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## short term goals 
-- add choice of new mon and names for new minor clans !
+- found Great Clan description decision
 	- missing description descision, issue with custom description
-- Check tribal / theocracy names are displayed correctly
-	- ancestor_religious_head_title : To test this, steal emperor title but not "son of heaven"
+- Update "Reclaim Yasuki Family lands" & "Reborn Snake" decision
+	- check description Yasuki decision
+	- check yasuki crane culture (tribal)
+	- check chuda culture (tribal)
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA
 - update crane clan bookmark map
 	- Doji Kuwanan : TODO DNA
+- Why so much empty space in portrait debug mod ?
 - Create MaA for each great clan, (do the same for minor later)
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
@@ -43,8 +46,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Random mon for generated characters ?
 	- Based on shogunate mod
 	- check ronins & church_holders
-- Update "Reclaim Yasuki Family lands" decision
-	- Use "Form Portugal" decision for copy-paste crab_yasuki innovations
 
 ## Fixes to do
 - Spammed with rokugan_char_interaction.0231 event boxes...

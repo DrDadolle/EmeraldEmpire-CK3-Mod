@@ -74,7 +74,10 @@ found_major_clan_decision = {
 		# TODO replace with custom_kingdom effect !!
 
 		# all allies with opinion > 25 will join as vassal in your new kingdom !
-		create_custom_major_clan_effect = yes
+		custom_description = {
+			text = create_custom_major_clan_de_jure_changes_ally
+			create_custom_major_clan_effect = yes
+		}
 		if = {
 			limit = {
 				is_ai = no
@@ -90,9 +93,9 @@ found_major_clan_decision = {
 			}
 		}
 
-		custom_description = {
-			text = create_custom_major_clan_de_jure_changes_ally
-		}
+		# custom_description = {
+		# 	text = create_custom_major_clan_de_jure_changes_ally
+		# }
 
 		##TODO : Add Dynasty & legitimacy ?
 		add_legitimacy = major_legitimacy_gain
@@ -148,7 +151,7 @@ found_minor_clan_decision = {
 
 	effect = {
 
-		custom_tooltip = create_custom_minor_clan_decision_message #FIXME TODO only apply to effects ????????
+		custom_tooltip = create_custom_minor_clan_decision_message
 
 		trigger_event = {
 			id = rokugan_minor_clan_restoration_decision.0101
