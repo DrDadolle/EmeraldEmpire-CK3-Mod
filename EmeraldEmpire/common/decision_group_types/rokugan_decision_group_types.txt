@@ -1,0 +1,24 @@
+﻿# rokugan_major = {
+# 	sort_order = 300
+# 	gui_tags = { big_button }
+# }
+
+rokugan_bushido = {
+	sort_order = 280
+	gui_tags = {}
+}
+
+rokugan_religion = {
+	sort_order = 270
+	gui_tags = {}
+}
+
+rokugan_clan = {
+	sort_order = 260
+	gui_tags = {}
+}
+
+# rokugan_minor = {
+# 	sort_order = 250
+# 	gui_tags = {}
+# }

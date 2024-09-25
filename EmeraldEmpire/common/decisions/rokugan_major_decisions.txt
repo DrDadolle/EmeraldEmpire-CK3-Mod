@@ -4,8 +4,10 @@
 # Found New Major Clan
 ##################################################
 found_major_clan_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+		}
+	decision_group_type = major
 	ai_check_interval = 60
 	desc = found_major_clan_decision_desc
 
@@ -114,8 +116,10 @@ found_major_clan_decision = {
 # Found New Minor Clan
 ##################################################
 found_minor_clan_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 60
 	desc = found_minor_clan_decision_desc
 
@@ -192,14 +196,17 @@ found_minor_clan_decision = {
 # FIXME BUG : we fail to select correctly the target of the war (holder instead of kingdom_level liege)
 # Work around on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 decision_claim_toshi_rambo_crane = { 
-	picture = "gfx/interface/illustrations/decisions/decision_crane.dds"
+	picture = {
+		 "gfx/interface/illustrations/decisions/decision_crane.dds"
+	}
+	decision_group_type = rokugan_bushido
 
 	title = decision_claim_toshi_rambo_crane
 	selection_tooltip = decision_claim_toshi_rambo_crane_tooltip
 	desc = decision_claim_toshi_rambo_crane_desc
 	confirm_text = decision_claim_toshi_rambo_crane_confirm
 
-	major = yes
+	
 
     is_shown = {
         is_ruler = yes
@@ -300,14 +307,15 @@ decision_claim_toshi_rambo_crane = {
 # FIXME BUG : we fail to select correctly the target of the war (holder instead of kingdom_level liege)
 # Work around on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 decision_claim_toshi_rambo_lion = {
-	picture = "gfx/interface/illustrations/decisions/decision_lion.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_lion.dds"
+	}
+	decision_group_type = rokugan_bushido
 
 	title = decision_claim_toshi_rambo_lion
 	selection_tooltip = decision_claim_toshi_rambo_lion_tooltip
 	desc = decision_claim_toshi_rambo_lion_desc
 	confirm_text = decision_claim_toshi_rambo_lion_confirm
-
-	major = yes
 
 	is_shown = {
         is_ruler = yes
@@ -407,14 +415,15 @@ decision_claim_toshi_rambo_lion = {
 # FIXME BUG : we fail to select correctly the target of the war (holder instead of kingdom_level liege)
 # Work around on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 decision_claim_city_rich_frog_lion = {
-	picture = "gfx/interface/illustrations/decisions/decision_lion.dds"
+	picture = { 
+		"gfx/interface/illustrations/decisions/decision_lion.dds"
+	}
+	decision_group_type = rokugan_bushido
 
 	title = decision_claim_city_rich_frog_lion
 	selection_tooltip = decision_claim_city_rich_frog_lion_tooltip
 	desc = decision_claim_city_rich_frog_lion_desc
 	confirm_text = decision_claim_city_rich_frog_lion_confirm
-
-	major = yes
 
 	is_shown = {
         is_ruler = yes
@@ -514,14 +523,16 @@ decision_claim_city_rich_frog_lion = {
 # FIXME BUG : we fail to select correctly the target of the war (holder instead of kingdom_level liege)
 # Work around on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 decision_claim_city_rich_frog_unicorn = {
-	picture = "gfx/interface/illustrations/decisions/decision_unicorn.dds"
+	picture = {
+		 "gfx/interface/illustrations/decisions/decision_unicorn.dds"
+	}
+
+	decision_group_type = rokugan_bushido
 
 	title = decision_claim_city_rich_frog_unicorn
 	selection_tooltip = decision_claim_city_rich_frog_unicorn_tooltip
 	desc = decision_claim_city_rich_frog_unicorn_desc
 	confirm_text = decision_claim_city_rich_frog_unicorn_confirm
-
-	major = yes
 
 	is_shown = {
         is_ruler = yes
@@ -622,14 +633,16 @@ decision_claim_city_rich_frog_unicorn = {
 # Avenge Yasuki War
 ##################################################
 decision_avenge_yasuki_war = {
-    picture = "gfx/interface/illustrations/decisions/decision_crane.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_crane.dds"
+	}
+
+	decision_group_type = major
 
     title = decision_avenge_yasuki_war
     selection_tooltip = decision_avenge_yasuki_war_tooltip
 	desc = decision_avenge_yasuki_war_desc
 	confirm_text = decision_avenge_yasuki_war_confirm
-
-    major = yes
 
     is_shown = {
         is_ruler = yes
@@ -689,14 +702,16 @@ decision_avenge_yasuki_war = {
 # Restore Snake Clan
 ##################################################
 decision_restore_snake_clan = {
-    picture = "gfx/interface/illustrations/decisions/decision_phoenix.dds"
+	picture = {
+		 "gfx/interface/illustrations/decisions/decision_phoenix.dds"
+	}
+
+	decision_group_type = major
 
     title = decision_restore_snake_clan
     selection_tooltip = decision_restore_snake_clan_tooltip
 	desc = decision_restore_snake_clan_desc
 	confirm_text = decision_restore_snake_clan_confirm
-
-    major = yes
 
     is_shown = {
         is_ruler = yes

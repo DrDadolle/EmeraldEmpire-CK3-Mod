@@ -11,8 +11,10 @@
 
 # Deprecated decision of yore.
 convert_to_feudalism_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
 	desc = convert_to_feudalism_decision_desc
 		
 	ai_check_interval = 36
@@ -61,8 +63,10 @@ convert_to_feudalism_decision = {
 
 # A more lenient decision to convert if your liege is feudal
 convert_to_feudalism_liege_converted_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
 	desc = convert_to_feudalism_liege_converted_decision_desc
 
 	ai_check_interval = 36
@@ -128,8 +132,10 @@ convert_to_feudalism_liege_converted_decision = {
 
 # A decision to feudalize the entire realm (wow!)
 convert_whole_realm_to_feudalism_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
 	desc = convert_whole_realm_to_feudalism_decision_desc
 
 	ai_check_interval = 36
@@ -222,8 +228,10 @@ convert_whole_realm_to_feudalism_decision = {
 
 # A decision to deformalise the entire realm back into tribes.
 convert_to_tribalism_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
 	desc = convert_to_tribalism_decision_desc
 
 	ai_check_interval = 36
@@ -283,8 +291,10 @@ convert_to_tribalism_decision = {
 ##################################################
 
 declare_bloodline_holy_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_family_tree.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_family_tree.dds"
+	}
+	decision_group_type = major
 	desc = declare_bloodline_holy_decision_desc
 
 	ai_check_interval = 120
@@ -394,8 +404,10 @@ declare_bloodline_holy_decision = {
 ##################################################
 
 strengthen_bloodline_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
 	desc = strengthen_bloodline_decision_desc
 
 	ai_check_interval = 120
@@ -553,8 +565,10 @@ strengthen_bloodline_decision = {
 ##################################################
 
 found_kingdom_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 60
 	desc = found_kingdom_decision_desc
 
@@ -860,8 +874,10 @@ found_kingdom_decision = {
 ##################################################
 
 tribal_challenge_ruler_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
 	desc = tribal_challenge_ruler_decision_desc
 	selection_tooltip = tribal_challenge_ruler_decision_tooltip
 
@@ -989,8 +1005,10 @@ tribal_challenge_ruler_decision = {
 ##################################################
 
 accept_cannibalism_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 0
 
 	desc = accept_cannibalism_decision_desc
@@ -1073,8 +1091,10 @@ accept_cannibalism_decision = {
 ##################################################
 
 found_university_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 0
 
 	desc = found_university_decision_desc
@@ -1481,8 +1501,10 @@ found_university_decision = {
 ##################################################
 
 lunatic_building_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 0
 
 	desc = lunatic_building_decision_desc
@@ -1552,8 +1574,10 @@ lunatic_building_decision = {
 ##################################################
 # TODO : Rokugan : replace later with mahotsukai stuff ?
 found_witch_coven_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+	decision_group_type = rokugan_religious
 	ai_check_interval = 0
 	desc = found_witch_coven_decision_desc
 
@@ -1635,9 +1659,10 @@ found_witch_coven_decision = {
 ##################################################
 
 repay_loan_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
-
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_spend_money.dds"
+	}
+	decision_group_type = major
 
 	desc = repay_loan_decision_decision_desc
 	selection_tooltip = repay_loan_decision_decision_tooltip
@@ -1754,8 +1779,10 @@ repay_loan_decision = {
 ##################################################
 
 escape_from_prison_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_prison.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_prison.dds"
+	}
+	decision_group_type = major
 	desc = escape_from_prison_decision_desc
 	selection_tooltip = escape_from_prison_decision_tooltip
 

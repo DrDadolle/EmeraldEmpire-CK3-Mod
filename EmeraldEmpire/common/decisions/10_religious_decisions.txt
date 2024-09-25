@@ -336,7 +336,11 @@
 # General Religious Decisions
 
 take_vow_of_poverty_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+	decision_group_type = rokugan_religious
 
 	desc = take_vow_of_poverty_decision_desc
 	selection_tooltip = take_vow_of_poverty_decision_tooltip
@@ -510,7 +514,11 @@ renounce_vow_of_poverty_decision = {
 # }
 
 seek_aid_of_the_spirits_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+	decision_group_type = rokugan_religious
 
 	desc = seek_aid_of_the_spirits_decision_desc
 	selection_tooltip = seek_aid_of_the_spirits_decision_tooltip
@@ -700,7 +708,10 @@ seek_aid_of_the_spirits_decision = {
 # }
 
 meditate_in_seclusion_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+	decision_group_type = rokugan_religious
 
 	desc = meditate_in_seclusion_decision_desc
 	selection_tooltip = meditate_in_seclusion_decision_tooltip
@@ -828,7 +839,10 @@ give_sky_burial_decision = {
 }
 
 raise_runestone_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+	decision_group_type = rokugan_religious
 
 	desc = raise_runestone_decision_desc
 	selection_tooltip = raise_runestone_decision_tooltip
@@ -929,7 +943,11 @@ raise_runestone_decision = {
 }
 
 divine_the_stars_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+	decision_group_type = rokugan_religious
 
 	desc = divine_the_stars_decision_desc
 	selection_tooltip = divine_the_stars_decision_tooltip
@@ -975,11 +993,16 @@ divine_the_stars_decision = {
 }
 
 revoke_false_conversion_decision = {	#Reveal yourself as a crypto-religionist.
-	ai_check_interval = 60
-	picture = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
+	}
+
+	decision_group_type = rokugan_religious
 
 	desc = revoke_false_conversion_decision.desc
 	selection_tooltip = revoke_false_conversion_decision.tt
+
+	ai_check_interval = 60
 
 	is_shown = {
 		any_secret = {
@@ -1055,8 +1078,13 @@ revoke_false_conversion_decision = {	#Reveal yourself as a crypto-religionist.
 }
 
 encourage_confession_of_false_conversions_decision = {	# Ask that crypto-religionists in your realm start practicing in the open.
+	picture = {
+		"gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
+	}
+
+	decision_group_type = rokugan_religious
+
 	ai_check_interval = 120
-	picture = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
 
 	desc = encourage_confession_of_false_conversions_decision.desc
 	selection_tooltip = encourage_confession_of_false_conversions_decision.tt
@@ -1166,8 +1194,13 @@ encourage_confession_of_false_conversions_decision = {	# Ask that crypto-religio
 }
 
 abandon_crypto_faith_decision = {	#Abandon your secret faith.
+	picture = {
+		"gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
+	}
+
+	decision_group_type = rokugan_religious
+
 	ai_check_interval = 60
-	picture = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
 
 	desc = abandon_crypto_faith_decision.desc
 	selection_tooltip = abandon_crypto_faith_decision.tt
@@ -1327,8 +1360,10 @@ abandon_crypto_faith_decision = {	#Abandon your secret faith.
 # }
 
 ai_create_head_of_faith_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	major = yes
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+	decision_group_type = major
 
 	# Never shown, so it doesn't matter what we write here
 	title = placeholder

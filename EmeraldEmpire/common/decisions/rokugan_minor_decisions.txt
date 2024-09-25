@@ -7,7 +7,11 @@
 # Select Fortunes to pray
 ##################################################
 select_personal_deity_fortunism_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+	decision_group_type = rokugan_religion
 
 	desc = select_personal_deity_fortunism_decision_desc
 	selection_tooltip = select_personal_deity_fortunism_decision_tooltip
@@ -56,7 +60,12 @@ select_personal_deity_fortunism_decision = {
 # Seppuku
 ##################################################
 commit_seppuku_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+	decision_group_type = rokugan_bushido
+
 	desc = commit_seppuku_decision_desc
 	selection_tooltip =  commit_seppuku_decision_tooltip
 
@@ -104,8 +113,12 @@ commit_seppuku_decision = {
 # Abdication
 ##################################################
 rokugan_abdicate_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
 	desc = rokugan_abdicate_decision_desc
+
+	decision_group_type = rokugan_bushido
 
 	ai_check_interval = 0
 
@@ -149,8 +162,12 @@ rokugan_abdicate_decision = {
 # Bleach hair white
 ##################################################
 bleach_hair_white_crane_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_crane.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_crane.dds"
+	}
 	
+	decision_group_type = rokugan_clan
+
 	sort_order = 81
 
 	desc = bleach_hair_white_crane_decision_desc
@@ -192,7 +209,11 @@ bleach_hair_white_crane_decision = {
 # Revert the white bleaching hair white decision
 ##################################################
 abandon_white_hair_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_crane.dds"
+	picture = {
+		"gfx/interface/illustrations/decisions/decision_crane.dds"
+	}
+
+	decision_group_type = rokugan_clan
 
 	sort_order = 81
 
