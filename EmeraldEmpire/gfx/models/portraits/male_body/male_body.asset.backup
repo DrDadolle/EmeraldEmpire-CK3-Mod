@@ -57,7 +57,7 @@ skeletal_animation_set = {
 	animation = { id = "body_throneRoom_chancellor_2"									type = "male_body_throneRoom_chancellor_2.anim" }
 	animation = { id = "body_throneRoom_chancellor_3"									type = "male_body_throneRoom_chancellor_3.anim" }
 
-	animation = { id = "body_throneRoom_kneel1_1"										type = "male_body_throneRoom_kneel1_1.anim" }
+	animation = { id = "body_throneRoom_kneel1_1"										type = "male_body_throneRoom_seiza_1.anim" }
 	animation = { id = "body_throneRoom_kneel2_1"										type = "male_body_throneRoom_kneel2_1.anim" }
 	animation = { id = "body_throneRoom_curtsey1_1"										type = "male_body_throneRoom_kneel1_1.anim" }
 
@@ -72,16 +72,16 @@ skeletal_animation_set = {
 	animation = { id = "body_throneRoom_rulerFatDwarf1_2"								type = "male_body_throneRoom_rulerFatDwarf1_2.anim" }
 	animation = { id = "body_throneRoom_rulerFatDwarf1_3"								type = "male_body_throneRoom_rulerFatDwarf1_3.anim" }
 
-	animation = { id = "body_throneRoom_ruler2_1"										type = "male_body_throneRoom_ruler3_1.anim" }
-	animation = { id = "body_throneRoom_ruler2_2"										type = "male_body_throneRoom_ruler3_2.anim" }
-	animation = { id = "body_throneRoom_ruler2_3"										type = "male_body_throneRoom_ruler3_3.anim" }
+	animation = { id = "body_throneRoom_ruler2_1"										type = "male_body_throneRoom_seiza_1.anim" }
+	animation = { id = "body_throneRoom_ruler2_2"										type = "male_body_throneRoom_seiza_1.anim" }
+	animation = { id = "body_throneRoom_ruler2_3"										type = "male_body_throneRoom_seiza_1.anim" }
 	animation = { id = "body_throneRoom_rulerFatDwarf2_1"								type = "male_body_throneRoom_rulerFatDwarf2_1.anim" }
 	animation = { id = "body_throneRoom_rulerFatDwarf2_2"								type = "male_body_throneRoom_rulerFatDwarf2_2.anim" }
 	animation = { id = "body_throneRoom_rulerFatDwarf2_3"								type = "male_body_throneRoom_rulerFatDwarf2_3.anim" }
 
-	animation = { id = "body_throneRoom_ruler3_1"										type = "male_body_throneRoom_ruler3_1.anim" }
-	animation = { id = "body_throneRoom_ruler3_2"										type = "male_body_throneRoom_ruler3_2.anim" }
-	animation = { id = "body_throneRoom_ruler3_3"										type = "male_body_throneRoom_ruler3_3.anim" }
+	animation = { id = "body_throneRoom_ruler3_1"										type = "male_body_throneRoom_seiza_1.anim" }
+	animation = { id = "body_throneRoom_ruler3_2"										type = "male_body_throneRoom_seiza_1.anim" }
+	animation = { id = "body_throneRoom_ruler3_3"										type = "male_body_throneRoom_seiza_1.anim" }
 
 	animation = { id = "body_throneRoom_rulerChild1_1"									type = "male_body_throneRoom_rulerChild1_1.anim" }
 	animation = { id = "body_throneRoom_rulerChild1_2"									type = "male_body_throneRoom_rulerChild1_2.anim" }
