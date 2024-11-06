@@ -35,7 +35,9 @@ rokugan_king_unicorn {
 	special = holder
 	tier = kingdom
 	priority = 48
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	heritages = { heritage_unicorn }
 }
 
@@ -45,7 +47,9 @@ rokugan_king_unicorn_female {
 	special = holder
 	tier = kingdom
 	priority = 48
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	heritages = { heritage_unicorn }
 }
 
@@ -55,7 +59,9 @@ rokugan_duke_unicorn {
 	special = holder
 	tier = duchy
 	priority = 28
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	heritages = { heritage_unicorn }
 }
 
@@ -65,7 +71,9 @@ rokugan_duke_unicorn_female {
 	special = holder
 	tier = duchy
 	priority = 28
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	heritages = { heritage_unicorn }
 }
 
@@ -76,7 +84,9 @@ rokugan_king_tortoise {
 	special = holder
 	tier = duchy
 	priority = 48
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	heritages = { heritage_kasuga }
 }
 rokugan_king_tortoise_female {
@@ -85,7 +95,9 @@ rokugan_king_tortoise_female {
 	special = holder
 	tier = duchy
 	priority = 48
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	heritages = { heritage_kasuga }
 }
 
@@ -95,7 +107,9 @@ rokugan_duke_tortoise {
 	special = holder
 	tier = duchy
 	priority = 28
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	heritages = { heritage_kasuga }
 }
 
@@ -105,7 +119,9 @@ rokugan_duke_tortoise_female {
 	special = holder
 	tier = duchy
 	priority = 28
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	heritages = { heritage_kasuga }
 }
 
@@ -149,7 +165,9 @@ rokugan_head_of_faith_male = {
 	special = holder
 	priority = 99
 	titles = { d_rokugani_faith }
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 }
 
 rokugan_head_of_faith_female = {
@@ -158,7 +176,9 @@ rokugan_head_of_faith_female = {
 	special = holder
 	priority = 99
 	titles = { d_rokugani_faith }
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 }
 
 ### Shinsei Monks
@@ -168,7 +188,9 @@ baron_theocracy_male_shinseism_religion = {
 	special = holder
 	tier = barony
 	priority = 8
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
 }
@@ -178,14 +200,18 @@ baron_theocracy_female_shinseism_religion = {
 	special = holder
 	tier = barony
 	priority = 8
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
 }
 barony_theocracy_shinseism_religion = {
 	type = title
 	tier = barony
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	priority = 8
 	holding = church_holding
 	religions = { shinseism_religion  }
@@ -196,7 +222,9 @@ count_theocracy_male_shinseism_religion = {
 	special = holder
 	tier = county
 	priority = 18
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
 }
@@ -206,14 +234,18 @@ count_theocracy_female_shinseism_religion = {
 	special = holder
 	tier = county
 	priority = 18
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
 }
 county_theocracy_shinseism_religion = {
 	type = title
 	tier = county
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	priority = 18
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
@@ -224,7 +256,9 @@ duke_theocracy_male_shinseism_religion = {
 	special = holder
 	tier = duchy
 	priority = 28
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
 }
@@ -234,14 +268,18 @@ duke_theocracy_female_shinseism_religion = {
 	special = holder
 	tier = duchy
 	priority = 28
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
 }
 duchy_theocracy_shinseism_religion = {
 	type = title
 	tier = duchy
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	priority = 28
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
@@ -252,7 +290,9 @@ king_theocracy_male_shinseism_religion = {
 	special = holder
 	tier = kingdom
 	priority = 48
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
 }
@@ -262,14 +302,18 @@ king_theocracy_female_shinseism_religion = {
 	special = holder
 	tier = kingdom
 	priority = 48
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
 }
 kingdom_theocracy_shinseism_religion = {
 	type = title
 	tier = kingdom
-	top_liege = no
+	flavourization_rules = { 
+		top_liege = no
+	}
 	priority = 48
 	governments = { theocracy_government }
 	religions = { shinseism_religion  }
