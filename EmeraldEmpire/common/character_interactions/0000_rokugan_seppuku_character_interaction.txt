@@ -23,8 +23,22 @@ seppuku_interaction = {
 	pre_answer_yes_key = ANSWER_WILL_SUCCEED
 	pre_answer_maybe_breakdown_key = ANSWER_SUM_CHANCE
 
-	# on_decline_summary = imprison_decline_summary
-	on_decline_summary = seppuku_decline_summary
+	on_decline_summary = {
+		triggered_desc = {
+			trigger = {
+				scope:recipient = {
+					NAND = {
+						is_landless_adventurer = yes
+						reverse_has_opinion_modifier = {
+							target = scope:actor
+							modifier = eviction_ignored_opinion
+						}
+					}
+				}
+			}
+			desc = seppuku_decline_summary
+		}
+	}
 	
 	ai_potential = {
 		NOT = { has_realm_law_flag = cannot_imprison }
@@ -72,6 +86,18 @@ seppuku_interaction = {
 			custom_description = {
 				text = "character_interactions_hostile_actions_disabled_delay"
 				NOT = { has_character_flag = flag_hostile_actions_disabled_delay }
+			}
+		}
+		scope:recipient = {
+			trigger_if = {
+				limit = {
+					is_landless_adventurer = yes
+					reverse_has_opinion_modifier = {
+						target = scope:actor
+						modifier = eviction_ignored_opinion
+					}
+				}
+				is_travelling = no
 			}
 		}
 	}
@@ -249,7 +275,7 @@ seppuku_interaction = {
 		if = { # If you don't have an imprisonment reason, and the target is landed, you lose more unity
 			limit = {
 				NOT = { scope:actor = { has_imprisonment_reason = scope:recipient } }
-				scope:recipient = { is_landed = yes }
+				scope:recipient = { is_landed_or_landless_administrative = yes }
 			}
 			add_clan_unity_interaction_effect = {
 				CHARACTER = scope:actor
@@ -263,7 +289,7 @@ seppuku_interaction = {
 			limit = {
 				NOT = {
 					scope:actor = { has_imprisonment_reason = scope:recipient }
-					scope:recipient = { is_landed = yes }
+					scope:recipient = { is_landed_or_landless_administrative = yes }
 				}
 			}
 			add_clan_unity_interaction_effect = {
@@ -286,104 +312,133 @@ seppuku_interaction = {
 	}
 	
 	on_decline = {
-		scope:actor = {
-			# imprison_HoF_consequences_effect = yes 
-			asking_seppuku_HoF_consequences_effect = yes
-			# imprison_tyranny_effect = yes
-			seppuku_tyranny_effect = yes 
-		}
-		scope:recipient = {
-			#If target is count or higher, start war.
-			if = {
-				limit = {
-					is_landed = yes
-					primary_title.tier > tier_barony
+		if = {
+			limit = {
+				scope:recipient = {
+					is_landless_adventurer = yes
+					reverse_has_opinion_modifier = {
+						target = scope:actor
+						modifier = eviction_ignored_opinion
+					}
 				}
+			}
+			scope:recipient = {
 				if = {
-					limit = {
-						is_a_faction_member = yes
-						liege = scope:actor
-						joined_faction = {
-							faction_target = scope:actor
-							NOT = { faction_is_type = populist_faction }
-						}
-					}
-					joined_faction = {
-						save_scope_as = retaliating_faction # For loc
-						# imprisonment_retribution_start_faction_war_if_valid = yes
-						seppuku_retribution_start_faction_war_if_valid = yes
-					}
-					hidden_effect = {
-						if = {
-							limit = { NOT = { exists = joined_faction.faction_war } }
-							war_for_seppuku_effect = yes
-							# war_for_imprison_effect = yes
-						}
+					limit = { current_military_strength >= ep3_interactions_events_0500_troops_count_value }
+					start_war = {
+						cb = ep3_laamp_apprehend_adventurer_cb
+						target = scope:actor
 					}
 				}
 				else = {
-					# war_for_imprison_effect = yes
-					war_for_seppuku_effect = yes
+					# Remove them immediately.
+					remove_laamp_from_exiled_county_automatically_effect = {
+						PROVINCE = scope:recipient.location
+						LAAMP = scope:recipient
+					}
 				}
 			}
-			#If target is a baron or unlanded, have them escape.
-			else = {
-				if = { #To block them from being instantly rehired
-					limit = {
-						is_councillor_of = scope:actor
-						can_be_fired_from_council_trigger = { COURT_OWNER = scope:actor }
-					}
-					set_variable = {
-						name = escaped_imprisonment_from
-						value = scope:actor
-						years = 20
-					}
-				}
-				asking_seppuku_court_chaplain_consequences_effect = yes
+		}
+		else = {
+			scope:actor = {
+				# imprison_HoF_consequences_effect = yes 
+				asking_seppuku_HoF_consequences_effect = yes
+				# imprison_tyranny_effect = yes
+				seppuku_tyranny_effect = yes 
+			}
+			scope:recipient = {
+				#If target is count or higher, start war.
 				if = {
 					limit = {
 						is_landed = yes
+						primary_title.tier > tier_barony
 					}
-					custom_tooltip = deposed_and_become_wanderer
-					hidden_effect = {
-						depose = yes
-						move_to_pool = yes
-					}
-				}
-				else_if  = {
-					limit = {
-						is_hostage = yes
-						warden = scope:actor
-					}
-					save_scope_as = imprison_failure
-					save_scope_as = hostage
-					warden = { save_scope_as = warden }
-					home_court = { save_scope_as = home_court }
-					scope:warden = { trigger_event = bp2_hostage_system.0400 }
-					scope:home_court = { trigger_event = bp2_hostage_system.0401 }
-					return_hostage = yes
-				}
-				else_if = {
-					limit = {
-						is_landed = no
-						trigger_if = {
-							limit = {
-								is_councillor = yes
+					if = {
+						limit = {
+							is_a_faction_member = yes
+							liege = scope:actor
+							joined_faction = {
+								faction_target = scope:actor
+								NOT = { faction_is_type = populist_faction }
 							}
-							can_be_fired_from_council_trigger = { COURT_OWNER = scope:recipient.liege }
 						}
-						trigger_if = {
-							limit = {
-								exists = scope:actor.faith.religious_head
+						joined_faction = {
+							save_scope_as = retaliating_faction # For loc
+							# imprisonment_retribution_start_faction_war_if_valid = yes
+							seppuku_retribution_start_faction_war_if_valid = yes
+						}
+						hidden_effect = {
+							if = {
+								limit = { NOT = { exists = joined_faction.faction_war } }
+								war_for_seppuku_effect = yes
+								# war_for_imprison_effect = yes
 							}
-							NOT = { scope:actor.faith.religious_head = scope:recipient }
 						}
 					}
-					select_and_move_to_pool_effect = yes
+					else = {
+						# war_for_imprison_effect = yes
+						war_for_seppuku_effect = yes
+					}
 				}
-				add_opinion = {
-					target = scope:actor
-					modifier = seppuku_demand_opinion
+				#If target is a baron or unlanded, have them escape.
+				else = {
+					if = { #To block them from being instantly rehired
+						limit = {
+							is_councillor_of = scope:actor
+							can_be_fired_from_council_trigger = { COURT_OWNER = scope:actor }
+						}
+						set_variable = {
+							name = escaped_imprisonment_from
+							value = scope:actor
+							years = 20
+						}
+					}
+					asking_seppuku_court_chaplain_consequences_effect = yes
+					if = {
+						limit = {
+							is_landed = yes
+						}
+						custom_tooltip = deposed_and_become_wanderer
+						hidden_effect = {
+							depose = yes
+							move_to_pool = yes
+						}
+					}
+					else_if  = {
+						limit = {
+							is_hostage = yes
+							warden = scope:actor
+						}
+						save_scope_as = imprison_failure
+						save_scope_as = hostage
+						warden = { save_scope_as = warden }
+						home_court = { save_scope_as = home_court }
+						scope:warden = { trigger_event = bp2_hostage_system.0400 }
+						scope:home_court = { trigger_event = bp2_hostage_system.0401 }
+						return_hostage = yes
+					}
+					else_if = {
+						limit = {
+							is_landed = no
+							trigger_if = {
+								limit = {
+									is_councillor = yes
+								}
+								can_be_fired_from_council_trigger = { COURT_OWNER = scope:recipient.liege }
+							}
+							trigger_if = {
+								limit = {
+									exists = scope:actor.faith.religious_head
+								}
+								NOT = { scope:actor.faith.religious_head = scope:recipient }
+							}
+						}
+						select_and_move_to_pool_effect = yes
+					}
+					add_opinion = {
+						target = scope:actor
+						modifier = seppuku_demand_opinion
+					}
 				}
 			}
 		}
@@ -659,6 +714,7 @@ seppuku_interaction = {
 			desc = AI_REFUSAL_RANK_DIFFERENCE
 			scope:recipient = {
 				is_ruler = yes
+				is_landed = yes
 				highest_held_title_tier < tier_kingdom
 			}
 			add = {
@@ -784,6 +840,7 @@ seppuku_interaction = {
 			add = 10
 			scope:actor = {
 				has_royal_court = yes
+				has_dlc_feature = royal_court
 				is_liege_or_above_of = scope:recipient
 				court_grandeur_current_level >= 7
 				court_grandeur_current_level < 9
@@ -794,6 +851,7 @@ seppuku_interaction = {
 			add = 20
 			scope:actor = {
 				has_royal_court = yes
+				has_dlc_feature = royal_court
 				is_liege_or_above_of = scope:recipient
 				court_grandeur_current_level >= 9
 			}
@@ -829,6 +887,14 @@ seppuku_interaction = {
 		evaluate_action_decreasing_house_unity = {
 			VALUE = 100
 		}
+		modifier = {
+			add = -25
+			scope:recipient = {
+				culture = { has_cultural_parameter = vassals_more_likely_to_refuse_demands }
+			}
+			desc = VASSALS_REFUSAL_indomitable_azatani
+		}
+
 	}
 
 	# AI
@@ -864,7 +930,7 @@ seppuku_interaction = {
 				is_at_war = yes
 			}
 			scope:recipient = {
-				is_landed = yes
+				is_playable_character  = yes
 			}
 		}
 
@@ -890,7 +956,7 @@ seppuku_interaction = {
 				}
 			}
 			scope:recipient = {
-				is_landed = yes
+				is_playable_character  = yes
 			}
 		}
 
@@ -911,7 +977,7 @@ seppuku_interaction = {
 			add = -190
 			scope:actor.ai_rationality > -100 # Lunatics can do whatever, let the world burn...
 			scope:recipient = {
-				is_landed = yes
+				is_playable_character  = yes
 			}
 			NOT = {
 				scope:recipient = {
@@ -973,7 +1039,7 @@ seppuku_interaction = {
 						has_trait = sadistic
 					}
 					AND = { # Imprisoning vassals you have revoke reasons on is relevant
-						is_landed = yes
+					is_playable_character  = yes
 						scope:actor = { has_revoke_title_reason = scope:recipient }
 					}
 					is_a_faction_member = yes
@@ -990,77 +1056,113 @@ seppuku_interaction = {
 						scope:actor.ai_zeal >= medium_positive_ai_value
 						NOT = { scope:actor.faith = scope:recipient.faith }
 					}
-					has_opinion_modifier = {
-						modifier = murdered_close_family_crime
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = murdered_close_family_crime
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = attempted_murder_close_family_crime
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = attempted_murder_close_family_crime
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = executed_close_family
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = executed_close_family
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = slept_with_spouse_discovered_opinion
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = slept_with_spouse_discovered_opinion
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = slept_with_spouse_exposed_opinion
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = slept_with_spouse_exposed_opinion
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = unfaithful_spouse_discovered_opinion
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = unfaithful_spouse_discovered_opinion
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = unfaithful_spouse_exposed_opinion
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = unfaithful_spouse_exposed_opinion
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = refused_to_renounce_lover_opinion
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = refused_to_renounce_lover_opinion
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = betrayed_our_promise
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = betrayed_our_promise
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = botched_my_treatment_crime_opinion
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = botched_my_treatment_crime_opinion
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = botched_treatment_of_kin_crime_opinion
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = botched_treatment_of_kin_crime_opinion
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = smeared_opinion
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = smeared_opinion
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = insulted_opinion
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = insulted_opinion
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = mocked_me_in_time_of_need
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = mocked_me_in_time_of_need
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = loved_one_dungeon_death
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = loved_one_dungeon_death
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = abandoned_me_opinion
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = abandoned_me_opinion
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = reason_child_died
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = reason_child_died
+							target = scope:recipient
+						}
 					}
-					has_opinion_modifier = {
-						modifier = falsely_accused
-						target = scope:recipient
+					scope:actor = {
+						has_opinion_modifier = {
+							modifier = falsely_accused
+							target = scope:recipient
+						}
 					}
 				}
 			}
