@@ -188,6 +188,18 @@ common_cb_cost_multiplier_core = {
 			desc = CB_GAME_RULE_NO_COST
 		}
 	}
+
+	if = {
+		limit = {
+			scope:attacker = {
+				ai_should_get_conqueror_bonuses = yes
+			}
+		}
+		multiply = {
+			value = 0
+			desc = ai_conqueror_modifier
+		}
+	}
 }
 
 common_cb_cost_multiplier = {
@@ -626,6 +638,17 @@ claim_cb_prestige_cost = {
 						add = -200
 					}
 				}
+			}
+
+			# Player adventurers pay much more.
+			if = {
+				limit = {
+					scope:attacker = {
+						is_landless_adventurer = yes
+						is_ai = no
+					}
+				}
+				multiply = 10
 			}
 
 			desc = "CB_CLAIM_COST_TARGET_TITLES"
@@ -1166,6 +1189,48 @@ struggle_cb_phase_modifier_cost = {
 					max = 2
 				}
 				desc = CB_BASE_COST
+			}
+		}
+	}
+}
+
+
+common_claim_reduction_cost_multiplier_core = {
+	value = 1
+	# Claim discounts
+	scope:attacker = {
+		if = {
+			limit = {
+				any_claim = {
+					is_in_list = target_titles
+				}
+			}
+			multiply = {
+				value = 1
+				every_claim = {
+					limit = { is_in_list = target_titles }
+					multiply = 0.75
+				}
+				min = 0.2
+				desc = CLAIMED_TITLES_DESC
+			}
+		}
+		if = {
+			limit = {
+				any_claim = {
+					de_jure_liege = { is_in_list = target_titles }
+				}
+			}
+			multiply = {
+				value = 1
+				every_claim = {
+					limit = { 
+						de_jure_liege = { is_in_list = target_titles }
+					}
+					multiply = 0.9
+				}
+				min = 0.2
+				desc = CLAIMED_DE_JURE_TITLES_DESC
 			}
 		}
 	}
