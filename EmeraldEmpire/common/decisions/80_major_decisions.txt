@@ -301,6 +301,7 @@ declare_bloodline_holy_decision = {
 
 	is_shown = {
 		is_lowborn = no
+		is_landless_adventurer = no
 		highest_held_title_tier >= 3 #Dukes and higher.
 		NOT = { #Just once per Faith.
 			faith = {
@@ -414,6 +415,7 @@ strengthen_bloodline_decision = {
 
 	is_shown = {
 		is_lowborn = no
+		is_landless_adventurer = no
 		NOT = {
 			dynasty = {
 			 	has_dynasty_modifier = strong_blood
@@ -496,13 +498,16 @@ strengthen_bloodline_decision = {
 ##################################################
 # Rokugan : Not enough kingdows for that
 #dynasty_of_many_crowns_decision = {
-#	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+#	picture = {
+#	 	reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+#	 }
 #	desc = dynasty_of_many_crowns_decision_desc
 #	major = yes
 #	ai_check_interval = 120
 #
 #	is_shown = {
 #		is_lowborn = no
+# 		is_landless_adventurer = no
 #		NOT = {
 #			dynasty = {
 #			 	has_dynasty_modifier = dynasty_of_many_crowns
@@ -574,6 +579,7 @@ found_kingdom_decision = {
 
 	is_shown = {
 		highest_held_title_tier = tier_duchy
+		is_landed_or_landless_administrative = yes
 		NOT = { has_game_rule = off_custom_kingdoms }
 		NOT = { is_under_e_rokugan_rule = yes } # Rokugan : prevent Custom kingdoms in Emerald's Empire. Must use "become great clan" decision instead
 	}
@@ -643,6 +649,7 @@ found_kingdom_decision = {
 #	desc = found_empire_decision_desc
 #
 #	is_shown = {
+# 	is_landed_or_landless_administrative = yes
 #		highest_held_title_tier = tier_kingdom
 #		OR = {
 #			is_independent_ruler = yes
@@ -766,7 +773,9 @@ found_kingdom_decision = {
 # Rokugan : no special succession (for now ?)
 # Take on one of your cultural succession types.
 #adopt_special_succession_decision = {
-#	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+#	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+# 	}	
 #	desc = adopt_special_succession_decision_desc
 #
 #	ai_check_interval = 36
@@ -779,6 +788,7 @@ found_kingdom_decision = {
 #			special_succession_jirga_trigger = yes 
 #		}
 #		AND = {
+# 			is_landed_or_landless_administrative = yes
 #			highest_held_title_tier >= tier_kingdom
 #			has_realm_law_flag = partition_succession_law
 #			any_held_title = {
@@ -1513,7 +1523,7 @@ lunatic_building_decision = {
 	is_shown = {
 		has_trait = lunatic
 		has_character_flag = glass_dream
-		is_landed = yes
+		is_landed_or_landless_administrative = yes
 		exists = capital_province
 		NOT = {
 			is_target_in_global_variable_list = {

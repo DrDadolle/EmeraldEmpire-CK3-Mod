@@ -16,6 +16,7 @@ found_major_clan_decision = {
 		#NOT = { has_game_rule = off_custom_kingdoms }
 		# Direct vassal of the emperor
 		is_under_direct_e_rokugan_rule = yes
+		is_landed_or_landless_administrative = yes
 	}
 
 	is_valid = {
@@ -128,6 +129,7 @@ found_minor_clan_decision = {
 		#NOT = { has_game_rule = off_custom_kingdoms }
 		# Direct vassal of the emperor
 		is_under_direct_e_rokugan_rule = yes
+		is_landed_or_landless_administrative = yes
 	}
 
 	is_valid = {
@@ -210,7 +212,7 @@ decision_claim_toshi_rambo_crane = {
 
     is_shown = {
         is_ruler = yes
-        is_landed = yes
+        is_landed_or_landless_administrative = yes
 
 		# Is crane culture under crane liege
 		AND = {
@@ -319,7 +321,7 @@ decision_claim_toshi_rambo_lion = {
 
 	is_shown = {
         is_ruler = yes
-        is_landed = yes
+        is_landed_or_landless_administrative = yes
 
 		# Is lion culture under lion liege
 		AND = {
@@ -427,7 +429,7 @@ decision_claim_city_rich_frog_lion = {
 
 	is_shown = {
         is_ruler = yes
-        is_landed = yes
+        is_landed_or_landless_administrative = yes
 
 		# Is lion culture under lion liege
 		AND = {
@@ -536,7 +538,7 @@ decision_claim_city_rich_frog_unicorn = {
 
 	is_shown = {
         is_ruler = yes
-        is_landed = yes
+		is_landed_or_landless_administrative = yes
 
 		# Is unicorn culture under unicorn liege
 		AND = {
@@ -646,7 +648,7 @@ decision_avenge_yasuki_war = {
 
     is_shown = {
         is_ruler = yes
-        is_landed = yes
+        is_landed_or_landless_administrative = yes
         culture = { has_cultural_pillar = heritage_crane }
         
         # Yasuki duchy not already de jure in Crane lands
@@ -715,7 +717,7 @@ decision_restore_snake_clan = {
 
     is_shown = {
         is_ruler = yes
-        is_landed = yes
+        is_landed_or_landless_administrative = yes
         culture = { has_cultural_pillar = heritage_phoenix }
 		has_title = title:c_chuda_province
 		#After the end of the Snake Clan
