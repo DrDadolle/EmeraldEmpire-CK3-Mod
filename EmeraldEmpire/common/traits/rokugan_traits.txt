@@ -135,7 +135,7 @@ kami = {
 	monthly_prestige = 1.0
 	flag = initial_legitimacy_boost
 	same_culture_opinion = 25 
-	hostile_scheme_resistance_mult = 0.5
+	# hostile_scheme_resistance_mult = 0.5
 	health = 10
 	physical = yes
 
