@@ -1107,7 +1107,7 @@ fp3_turkic_beards_curly = {
     }
 
 
-    # Shogunate
+    # Rokugan
 
     japanese_generic = {
         dna_modifiers = {
@@ -1138,21 +1138,6 @@ fp3_turkic_beards_curly = {
                         template = hair_curly
                     }            
                 }
-                OR = {
-                    portrait_japanese_clothing_trigger = yes
-                    portrait_crab_clothing_trigger = yes
-                    portrait_crane_clothing_trigger = yes
-                    portrait_dragon_clothing_trigger = yes
-                    portrait_lion_clothing_trigger = yes
-                    portrait_phoenix_clothing_trigger = yes
-                    portrait_scorpion_clothing_trigger = yes
-                    portrait_unicorn_clothing_trigger = yes
-                    portrait_imperial_clothing_trigger = yes
-                    portrait_minor_clothing_trigger = yes
-                }
-            }
-            modifier = { 
-                add = 200
                 OR = {
                     portrait_japanese_clothing_trigger = yes
                     portrait_crab_clothing_trigger = yes
@@ -1203,9 +1188,48 @@ fp3_turkic_beards_curly = {
                     portrait_imperial_clothing_trigger = yes
                     portrait_minor_clothing_trigger = yes
                 }
+                exists = dynasty
             }
             modifier = {
-                add = 200
+                add = -100
+                exists = this
+                OR = {
+                    is_from_ruler_designer = yes
+                    has_character_flag = has_scripted_appearance
+                }
+            }
+        }
+    }
+
+    japanese_common = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = japanese_beards_common
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        # outfit_tags = { no_clothes }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                OR = {
+                    NOT = { exists = this }
+                    has_gene = {
+                        category = gene_hair_type
+                        template = hair_straight
+                    }       
+                    has_gene = {
+                        category = gene_hair_type
+                        template = hair_wavy
+                    }            
+                    has_gene = {
+                        category = gene_hair_type
+                        template = hair_curly
+                    }            
+                }
                 OR = {
                     portrait_japanese_clothing_trigger = yes
                     portrait_crab_clothing_trigger = yes
@@ -1218,6 +1242,7 @@ fp3_turkic_beards_curly = {
                     portrait_imperial_clothing_trigger = yes
                     portrait_minor_clothing_trigger = yes
                 }
+                NOT = { exists = dynasty }
             }
             modifier = {
                 add = -100
@@ -1229,3 +1254,4 @@ fp3_turkic_beards_curly = {
             }
         }
     }
+}

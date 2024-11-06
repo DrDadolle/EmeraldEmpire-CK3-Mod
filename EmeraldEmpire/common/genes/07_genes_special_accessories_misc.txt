@@ -157,8 +157,48 @@ accessory_genes = {
 			girl = female
 		}
 
+		ep3_byzantine_imperial_legwear = {
+			index = 11
+			male = {
+				1 = m_legwear_sec_ep3_byzantine_imp_01
+			}
+			female = {
+				1 = f_legwear_sec_ep3_byzantine_nob_01_hi
+			}
+			boy = male
+			girl = female
+		}
 
-		# Shogunate legwear
+		ep3_byzantine_war_nobility_legwear = {
+			index = 12
+			male = {
+				1 = m_legwear_sec_ep3_byzantine_war_nobility_01_lo
+				1 = m_legwear_sec_ep3_byzantine_war_nobility_01_hi
+			}
+			female = {
+				1 = f_legwear_sec_ep3_byzantine_war_nobility_01_lo
+				1 = f_legwear_sec_ep3_byzantine_war_nobility_01_hi
+			}
+			boy = male
+			girl = female
+		}
+
+		ep3_byzantine_nobility_legwear = {
+			index = 13
+			male = {
+				1 = m_legwear_sec_ep3_byzantine_nob_01_lo
+				1 = m_legwear_sec_ep3_byzantine_nob_01_hi
+			}
+			female = {
+				1 = f_legwear_sec_ep3_byzantine_nob_01_lo
+				1 = f_legwear_sec_ep3_byzantine_nob_01_hi
+			}
+			boy = male
+			girl = female
+		}
+
+
+		# Rokugan legwear
 
 		japanese_tabi = {
 			index = 100
@@ -1056,6 +1096,166 @@ props_left = {
 		boy = male
 		girl = female
 	}
+	# Left handed swords
+	marshal_swords_left = {
+		index = 38
+		male = {
+			1 = western_sword_02_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	ep1_artisan_sword_mena_left = {
+		index = 39
+		male = {
+			1 = ep1_sword_mena_01_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	ep1_artifact_sword_equipped_left = {
+		index = 40
+		male = {
+			1 = western_sword_02_left # ep1_artifact_sword_equipped_01_left		# Shogunate
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	fp3_artifact_sword_equipped_left = {
+		index = 41
+		male = {
+			1 = fp3_artifact_sword_equipped_01_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	afr_marshal_sword_left = {
+		index = 42
+		male = {
+			1 = afr_marshal_sword_01_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	fp1_marshal_sword_left = {
+		index = 43
+		male = {
+			1 = fp1_marshal_sword_01_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	fp2_iberian_muslim_sword_left = {
+		index = 44
+		male = {
+			1 = fp2_iberian_muslim_sword_01_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	fp2_iberian_christian_sword_left = {
+		index = 45
+		male = {
+			1 = fp2_iberian_christian_sword_01_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	ep1_artisan_sword_steppe_left = {
+		index = 46
+		male = {
+			1 = ep1_sword_steppe_01_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	ep1_artisan_sword_byzantine_left = {
+		index = 47
+		male = {
+			1 = ep1_sword_byzantine_01_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	ep1_artisan_sword_indian_left = {
+		index = 48
+		male = {
+			1 = ep1_sword_indian_01_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	ep1_indian_shield_01 = {
+		index = 49
+		male = {
+			1 = ep1_indian_shield_01_a_portrait
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	ep1_mediterranean_shield_01 = {
+		index = 50
+		male = {
+			1 = ep1_mediterranean_shield_01_a_portrait
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	ep1_mena_shield_01 = {
+		index = 51
+		male = {
+			1 = ep1_mena_shield_01_a_portrait
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	ep1_western_shield_01 = {
+		index = 52
+		male = {
+			1 = ep1_western_shield_01_a_portrait
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	bow_random_idle = {
+		index = 54
+		male = {
+			1 = ep2_steppe_bow_01_a_left_hand
+			1 = ep2_mediterranean_bow_01_a_left_hand
+			1 = ep2_indian_bow_01_a_left_hand
+			1 = ep2_long_bow_01_a_left_hand
+			1 = ep2_short_bow_01_a_left_hand
+			1 = ep2_short_bow_01_b_left_hand
+		}
+		female = male
+		boy = male
+		girl = female
+	}
+	bp3_walking_stick_01 = {
+		index = 53
+		male = {
+			1 = bp3_walking_stick_01_a
+			1 = bp3_walking_stick_01_b
+		}
+		female = male
+		boy = male
+		girl = female
+	}
 }
 
 	#####################################
@@ -1896,3 +2096,4 @@ props_left = {
 			girl = female
 		}
 	}
+}
