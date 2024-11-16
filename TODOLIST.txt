@@ -26,23 +26,28 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## CK3 1.13.* patch
+- no white hair Doji 
 - add human to trait portrait modifiers. eg dna_modifiers = { human = { morph = {... ???
 - Vanilla often replaces is_landed with is_playable_character  or is_landed_or_landless_administrative. If you want landless characters to have access to your content, you would need to do the same.
 - Scheme modifiers have been completely reworked, so all the old ones for things like personal_scheme_power_mult, hostile_scheme_resistance_add, etc. no longer work. You will need to replace them with new scheme modifier
 	- check scheme.info of vanilla game
-- Test it !
+- remove bunch of errors 
+- Test char interaction
+- Test seppuku
+- test decisions
+- fix starting capitals (republic/theocraty)
 
 ## short term goals 
+- Add lion clan bookmark map
+	- Akodo Toturi : TODO DNA
+- update crane clan bookmark map
+	- Doji Kuwanan : TODO DNA
 - found Great Clan description decision
 	- missing description descision, issue with custom description
 - Update "Reclaim Yasuki Family lands" & "Reborn Snake" decision
 	- check description Yasuki decision
 	- check yasuki crane culture (tribal)
 	- check chuda culture (tribal)
-- Add lion clan bookmark map
-	- Akodo Toturi : TODO DNA
-- update crane clan bookmark map
-	- Doji Kuwanan : TODO DNA
 - Why so much empty space in portrait debug mod ?
 - Create MaA for each great clan, (do the same for minor later)
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
