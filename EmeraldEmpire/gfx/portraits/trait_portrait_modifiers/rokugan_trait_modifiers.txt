@@ -5,32 +5,15 @@
 			natural_white_hair
 		}
 		dna_modifiers = {
-			color = {
-				gene = hair_color
-				mode = modify
+			human = {
+				color = {
+					gene = hair_color
+					mode = modify
 
-				x = -1.0
-				y = -1.0
+					x = -1.0
+					y = -1.0
+				}
 			}
 		}
 	}
-}
-
-
-#Albino
-color = {
-	gene = skin_color
-	mode = modify
-
-	x = -1.0
-	y = -1.0
-}
-
-
-#ill
-color = {
-	gene = skin_color
-	mode = modify
-	x = 0.0
-	y = -0.1
 }

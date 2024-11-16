@@ -5,7 +5,6 @@
 @holding_illustration_norse = "gfx/interface/illustrations/holding_types/fp1_city_norse.dds"
 @holding_illustration_iberian = "gfx/interface/illustrations/holding_types/fp2_city_iberian.dds"
 @holding_illustration_iranian = "gfx/interface/illustrations/holding_types/fp3_city_iranian.dds"
-@holding_illustration_byzantine = "gfx/interface/illustrations/holding_types/ep3_city_byzantine.dds"
 #Rokugan
 @holding_illustration_japan = "gfx/interface/illustrations/holding_types/city_japan.dds"
 @holding_illustration_china = "gfx/interface/illustrations/holding_types/city_china.dds"
@@ -271,38 +270,6 @@ city_01 = {
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { iranian_building_gfx }
 		graphical_regions = { graphical_india }
-	}
-
-	### EP3 Byzantine ###
-	asset = {
-		type = pdxmesh
-		name = "ep3_byzantine_city_01_mesh"
-		### TODO Add DLC Check
-		illustration = @holding_illustration_byzantine
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mediterranean_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { byzantine_building_gfx }
-		graphical_regions = { graphical_mediterranean }
-	}
-
-	#Steppe fallbacks
-	#Iranian
-	asset = {
-		type = pdxmesh
-		name = "fp3_building_persian_city_01_a_01_mesh"
-		requires_dlc_flag = legacy_of_persia
-		illustration = @holding_illustration_iranian
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { steppe_building_gfx }
-	}
-	#mena
-	asset = {
-		type = pdxmesh
-		names = {
-			"building_mena_city_01_mesh"
-		}
-		illustration = @holding_illustration_mena
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { steppe_building_gfx }
 	}
 	
 	can_construct_potential = {
@@ -696,63 +663,15 @@ city_02 = {
 		graphical_cultures = { iranian_building_gfx }
 		graphical_regions = { graphical_india }
 	}
-
-	### EP3 Byzantine ###
-	asset = {
-		type = pdxmesh
-		name = "ep3_byzantine_city_01_mesh"
-		### TODO Add DLC Check
-		illustration = @holding_illustration_byzantine
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mediterranean_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { byzantine_building_gfx }
-		graphical_regions = { graphical_mediterranean }
-	}
-
-	#Steppe fallbacks
-	#Iranian
-	asset = {
-		type = pdxmesh
-		name = "fp3_building_persian_city_01_a_01_mesh"
-		requires_dlc_flag = legacy_of_persia
-		illustration = @holding_illustration_iranian
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { steppe_building_gfx }
-	}
-	#mena
-	asset = {
-		type = pdxmesh
-		names = {
-			"building_mena_city_01_mesh"
-		}
-		illustration = @holding_illustration_mena
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { steppe_building_gfx }
-	}
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
 	can_construct = {
-		trigger_if = {
-			limit = {
-				NOT = {
-					culture = {
-						has_cultural_parameter = next_level_cities
-					}
-				}
-			}
-			culture = {
-				has_innovation = innovation_manorialism
-			}
+		culture = {
+			has_innovation = innovation_manorialism
 		}
-		trigger_else = {
-			culture = {
-				has_cultural_parameter = next_level_cities
-			}
-		}
-		
 	}
-
 	cost_gold = main_building_tier_2_cost
 	
 	levy = poor_building_levy_tier_4
@@ -1110,65 +1029,15 @@ city_03 = {
 		graphical_cultures = { iranian_building_gfx }
 		graphical_regions = { graphical_india }
 	}
-
-	### EP3 Byzantine ###
-	asset = {
-		type = pdxmesh
-		name = "ep3_byzantine_city_01_mesh"
-		### TODO Add DLC Check
-		illustration = @holding_illustration_byzantine
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mediterranean_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { byzantine_building_gfx }
-		graphical_regions = { graphical_mediterranean }
-	}
-
-	#Steppe fallbacks
-	#Iranian
-	asset = {
-		type = pdxmesh
-		name = "fp3_building_persian_city_01_a_01_mesh"
-		requires_dlc_flag = legacy_of_persia
-		illustration = @holding_illustration_iranian
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { steppe_building_gfx }
-	}
-	#mena
-	asset = {
-		type = pdxmesh
-		names = {
-			"building_mena_city_01_mesh"
-		}
-		illustration = @holding_illustration_mena
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { steppe_building_gfx }
-	}
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
 	can_construct = {
-		trigger_if = {
-			limit = {
-				NOT = {
-					culture = {
-						has_cultural_parameter = next_level_cities
-					}
-				}
-			}
-			culture = {
-				has_innovation = innovation_windmills
-			}
-		}
-		trigger_else = {
-			culture = {
-				has_cultural_parameter = next_level_cities
-			}
-			culture = {
-				has_innovation = innovation_manorialism
-			}
+		culture = {
+			has_innovation = innovation_windmills
 		}
 	}
-
 	cost_gold = main_building_tier_3_cost
 	next_building = city_04
 	
@@ -1519,65 +1388,14 @@ city_04 = {
 		graphical_regions = { graphical_india }
 	}
 
-	### EP3 Byzantine ###
-	asset = {
-		type = pdxmesh
-		name = "ep3_byzantine_city_01_mesh"
-		### TODO Add DLC Check
-		illustration = @holding_illustration_byzantine
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mediterranean_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { byzantine_building_gfx }
-		graphical_regions = { graphical_mediterranean }
-	}
-
-	#Steppe fallbacks
-	#Iranian
-	asset = {
-		type = pdxmesh
-		name = "fp3_building_persian_city_01_a_01_mesh"
-		requires_dlc_flag = legacy_of_persia
-		illustration = @holding_illustration_iranian
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { steppe_building_gfx }
-	}
-	#mena
-	asset = {
-		type = pdxmesh
-		names = {
-			"building_mena_city_01_mesh"
-		}
-		illustration = @holding_illustration_mena
-		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
-		graphical_cultures = { steppe_building_gfx }
-	}
-
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
-
 	can_construct = {
-		trigger_if = {
-			limit = {
-				NOT = {
-					culture = {
-						has_cultural_parameter = next_level_cities
-					}
-				}
-			}
-			culture = {
-				has_innovation = innovation_cranes
-			}
-		}
-		trigger_else = {
-			culture = {
-				has_cultural_parameter = next_level_cities
-			}
-			culture = {
-				has_innovation = innovation_windmills
-			}
+		culture = {
+			has_innovation = innovation_cranes
 		}
 	}
-
 	cost_gold = main_building_tier_4_cost
 	
 	levy = poor_building_levy_tier_8
@@ -1687,6 +1505,9 @@ guild_halls_01 = {
 		has_building_or_higher = city_01
 	}
 
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
 
 	cost_gold = normal_building_tier_1_cost
 	

@@ -78,16 +78,6 @@
             base = 0
             modifier = {
                 add = 500
-                has_character_flag = peasant_outfit
-                NOR = {
-                    portrait_mena_clothing_trigger = yes
-                    portrait_indian_clothing_trigger = yes
-                    portrait_steppe_clothing_trigger = yes
-                    portrait_african_clothing_trigger = yes
-                }
-            }
-            modifier = {
-                add = 500
                 portrait_beggar_trigger = yes      
                 NOR = {
                     portrait_mena_clothing_trigger = yes
@@ -142,16 +132,6 @@
         }   
         weight = {
             base = 0
-            modifier = {
-                add = 500
-                has_character_flag = peasant_outfit
-                NOR = {
-                    portrait_mena_clothing_trigger = yes
-                    portrait_indian_clothing_trigger = yes
-                    portrait_steppe_clothing_trigger = yes
-                    portrait_african_clothing_trigger = yes
-                }
-            }
             modifier = {
                 add = 500
                 portrait_beggar_trigger = yes
@@ -213,11 +193,7 @@
             base = -100
             modifier = {
                 add = 1000
-                OR = {
-                    has_court_position = court_jester_court_position
-                    has_character_flag = jester_outfit
-                }
-
+                has_court_position = court_jester_court_position
             }
             modifier = {
                 factor = 0
@@ -228,7 +204,6 @@
             }           
             modifier = {
                 factor = 0
-                portrait_japanese_clothing_trigger = yes
                 portrait_crab_clothing_trigger = yes
                 portrait_crane_clothing_trigger = yes
                 portrait_dragon_clothing_trigger = yes

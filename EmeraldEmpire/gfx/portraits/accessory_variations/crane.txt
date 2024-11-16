@@ -1,4 +1,186 @@
-﻿#######################################
+﻿###################
+#	Texture sets	#
+##################
+
+
+
+#### Armor ####
+pattern_textures = {
+	name = "armor_ropes_01"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/japanese/armor_ropes_01_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_plain_01_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_plain_01_properties.dds"
+}
+pattern_textures = {
+	name = "o_yoroi_01"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/byzantine/byzantine_silk_brocade_01_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/western/western_silk_plain_01_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/japanese/smooth_silk_properties.dds"
+}
+
+#### HIGH ####
+pattern_textures = {
+	name = "kimono_pattern_silk_steppe"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/steppe/steppe_pattern_silk_03_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/steppe/steppe_pattern_silk_03_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/japanese/smooth_silk_properties.dds"
+}
+
+pattern_textures = {
+	name = "kimono_pattern_silk_01"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_01_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_01_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/japanese/smooth_silk_properties.dds"
+}
+pattern_textures = {
+	name = "kimono_pattern_silk_02"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_02_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_02_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/japanese/smooth_silk_properties.dds"
+}
+pattern_textures = {
+	name = "kimono_pattern_silk_03"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_03_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_03_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/japanese/smooth_silk_properties.dds"
+}
+pattern_textures = {
+	name = "kimono_pattern_silk_04"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_04_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_04_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/japanese/smooth_silk_properties.dds"
+}
+
+#### LOW ####
+pattern_textures = {
+	name = "kimono_pattern_steppe"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/steppe/steppe_pattern_silk_03_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/steppe/steppe_pattern_silk_03_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_fine_plain_01_properties.dds"
+}
+
+pattern_textures = {
+	name = "kimono_pattern_01"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_01_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_01_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_fine_plain_01_properties.dds"
+}
+pattern_textures = {
+	name = "kimono_pattern_02"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_02_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_02_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_fine_plain_01_properties.dds"
+}
+pattern_textures = {
+	name = "kimono_pattern_03"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_03_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_03_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_fine_plain_01_properties.dds"
+}
+pattern_textures = {
+	name = "kimono_pattern_04"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_04_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/japanese/japanese_pattern_04_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_fine_plain_01_properties.dds"
+}
+
+#### COMMON ####
+pattern_textures = {
+	name = "western_linen_plain_01"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_plain_01_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_plain_01_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_plain_01_properties.dds"
+}
+pattern_textures = {
+	name = "western_linen_fine_plain_01"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_plain_01_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_plain_01_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/western/western_linen_fine_plain_01_properties.dds"
+}
+
+
+pattern_textures = {
+	name = "juban_plain_silk_01"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/western/western_silk_plain_01_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/western/western_silk_plain_01_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/japanese/smooth_silk_properties.dds"
+}
+pattern_textures = {
+	name = "western_silk_plain_01"
+	colormask	= "gfx/portraits/accessory_variations/textures/patterns/western/western_silk_plain_01_masks.dds"
+	normal		= "gfx/portraits/accessory_variations/textures/patterns/western/western_silk_plain_01_normal.dds"
+	properties	= "gfx/portraits/accessory_variations/textures/patterns/western/western_silk_plain_01_properties.dds"
+}
+
+
+
+##################
+#	Layouts		#
+##################
+
+
+pattern_layout = {
+	name = "pattern_full"	
+	scale 		= { min = 1	max = 1 }
+	rotation 	= { min = 0.0	max = 0.0 }	
+	offset 		= { x = { min = 0	max = 0 }    y = { min = 0	max = 0 } } 
+}
+
+pattern_layout = {
+	name = "aj_fabric_war_layout_01"	
+	scale 		= { min = 0.05	max = 0.15 }
+	rotation 	= { min = 0.0	max = 0.0 }	
+	offset 		= { x = { min = 0	max = 1 }    y = { min = 0	max = 1 } } 
+}
+
+pattern_layout = {
+	name = "aj_background_fabric_large_01"	
+	scale 		= { min = 0.15	max = 0.2 }
+	rotation 	= { min = 0.0	max = 0.0 }	
+	offset 		= { x = { min = 0	max = 1 }    y = { min = 0	max = 1 } } 
+}
+
+pattern_layout = {
+	name = "aj_plain_fabric_layout_01"	
+	scale 		= { min = 0.2	max = 0.25 }
+	rotation 	= { min = 0	max = 0 }	
+	offset 		= { x = { min = 0	max = 1 }    y = { min = 0	max = 1 } } 
+}
+
+pattern_layout = {
+	name = "aj_plain_fabric_layout_02"	
+	scale 		= { min = 0.3	max = 0.35 }
+	rotation 	= { min = 0	max = 0 }	
+	offset 		= { x = { min = 0	max = 1 }    y = { min = 0	max = 1 } } 
+}
+
+pattern_layout = {
+	name = "aj_plain_fabric_layout_03"	
+	scale 		= { min = 0.4	max = 0.45 }
+	rotation 	= { min = 0	max = 0 }	
+	offset 		= { x = { min = 0	max = 1 }    y = { min = 0	max = 1 } } 
+}
+
+pattern_layout = {
+	name = "aj_plain_fabric_layout_04"	
+	scale 		= { min = 0.5	max = 0.55 }
+	rotation 	= { min = 0	max = 0 }	
+	offset 		= { x = { min = 0	max = 1 }    y = { min = 0	max = 1 } } 
+}
+
+pattern_layout = {
+	name = "aj_plain_fabric_layout_varied"	
+	scale 		= { min = 0.15	max = 0.55 }
+	rotation 	= { min = 0	max = 90 }	
+	offset 		= { x = { min = 0	max = 1 }    y = { min = 0	max = 1 } } 
+}
+
+
+###################
+#	Variations		#
+##################
+
+#######################################
 ########### COMMON ####################
 #######################################
 

@@ -213,11 +213,13 @@ lineofiuchidaiyu2 = {
 	1105.1.1 = {
 		birth = yes
 	}
-	1122.1.1 = {
-		effect = {
-			set_relation_lover = { reason = lover_history target = character:lineofhantei38_2 } # In love with Hantei Daisetsu
-		}
-	}
+
+	# 	# Link already exists
+	# 1122.1.1 = {
+	# 	effect = {
+	# 		set_relation_lover = { reason = lover_history target = character:lineofhantei38_2 } # In love with Hantei Daisetsu
+	# 	}
+	# }
 	1123.1.1 = {
 		effect = {
             make_character_crypto_religionist_effect = {

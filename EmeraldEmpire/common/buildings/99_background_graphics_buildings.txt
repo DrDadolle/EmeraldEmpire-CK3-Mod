@@ -60,7 +60,6 @@ walls_01 = {
 	is_graphical_background = yes
 	asset = {
 		type = pdxmesh
-		graphical_regions = { graphical_western graphical_mediterranean graphical_india }
 		names = {
 			"western_walls_01_a_mesh"
 			"western_walls_01_b_mesh"
@@ -68,12 +67,12 @@ walls_01 = {
 	}
 	asset = {
 		type = pdxmesh
-		graphical_regions = { graphical_mena graphical_steppe }
 		names = {
 			"mena_walls_01_a_mesh"
 			"mena_walls_01_b_mesh"
 
 		}
+		graphical_regions = { graphical_mena }
 	}
 
 	asset = {
@@ -146,7 +145,6 @@ walls_02 = {
 
 	asset = {
 		type = pdxmesh
-		graphical_regions = { graphical_western graphical_mediterranean graphical_india }
 		names = {
 			"western_walls_02_a_mesh"
 			"western_walls_02_a_mesh"
@@ -155,7 +153,7 @@ walls_02 = {
 
 	asset = {
 		type = pdxmesh
-		graphical_regions = { graphical_mena graphical_steppe }
+		graphical_regions = { graphical_mena }
 		names = {
 			"mena_walls_02_a_mesh"
 			"mena_walls_02_a_mesh"
@@ -202,17 +200,6 @@ walls_02 = {
 		}
 	}
 
-	asset = {
-		type = pdxmesh
-		requires_dlc_flag = roads_to_power
-		graphical_cultures = { byzantine_building_gfx }
-		graphical_regions = { graphical_mediterranean }
-		names = {
-			"ep3_byzantine_walls_02_mesh" 
-		}
-	}
-
-
 	is_enabled = {
 		OR = {
 			# These buildings will trigger the visual "upgrade" to this wall asset
@@ -243,7 +230,7 @@ walls_03 = {
 
 	asset = {
 		type = pdxmesh
-		graphical_regions = { graphical_western }
+		graphical_regions = { graphical_western graphical_steppe }
 		names = {
 			"western_walls_03_a_mesh"
 			"western_walls_03_a_mesh"
@@ -261,7 +248,15 @@ walls_03 = {
 
 	asset = {
 		type = pdxmesh
-		graphical_regions = { graphical_mena graphical_steppe }
+		graphical_cultures = { japanese_building_gfx }
+		names = {
+			"japanese_walls_03_mesh"
+		}
+	}
+
+	asset = {
+		type = pdxmesh
+		graphical_regions = { graphical_mena }
 		names = {
 			"mena_walls_03_a_mesh"
 			"mena_walls_03_a_mesh"
@@ -290,29 +285,10 @@ walls_03 = {
 	asset = {
 		type = pdxmesh
 		requires_dlc_flag = legacy_of_persia
-		graphical_cultures = { iranian_building_gfx steppe_building_gfx }
-		graphical_regions = { graphical_mena graphical_india graphical_steppe }
+		graphical_cultures = { iranian_building_gfx }
+		graphical_regions = { graphical_mena graphical_india }
 		names = {
 			"fp3_building_persian_walls_03_a_01_mesh"  
-		}
-	}
-
-	asset = {
-		type = pdxmesh
-		requires_dlc_flag = roads_to_power
-		graphical_cultures = { byzantine_building_gfx }
-		graphical_regions = { graphical_mediterranean }
-		names = {
-			"ep3_byzantine_walls_03_mesh" 
-		}
-	}
-
-	### Rokugan
-	asset = {
-		type = pdxmesh
-		graphical_cultures = { japanese_building_gfx }
-		names = {
-			"japanese_walls_03_mesh"
 		}
 	}
 	
@@ -348,7 +324,7 @@ walls_04 = {
 
 	asset = {
 		type = pdxmesh
-		graphical_regions = { graphical_western }
+		graphical_regions = { graphical_western graphical_steppe }
 		names = {
 			"western_walls_04_a_mesh"
 			"western_walls_04_a_mesh"
@@ -366,7 +342,15 @@ walls_04 = {
 
 	asset = {
 		type = pdxmesh
-		graphical_regions = { graphical_mena graphical_steppe}
+		graphical_cultures = { japanese_building_gfx }
+		names = {
+			"japanese_walls_04_mesh"
+		}
+	}
+
+	asset = {
+		type = pdxmesh
+		graphical_regions = { graphical_mena }
 		names = {
 			"mena_walls_04_a_mesh"
 			"mena_walls_04_a_mesh"
@@ -395,32 +379,13 @@ walls_04 = {
 	asset = {
 		type = pdxmesh
 		requires_dlc_flag = legacy_of_persia
-		graphical_cultures = { iranian_building_gfx steppe_building_gfx }
-		graphical_regions = { graphical_mena graphical_india  graphical_steppe }
+		graphical_cultures = { iranian_building_gfx }
+		graphical_regions = { graphical_mena graphical_india }
 		names = {
 			"fp3_building_persian_walls_04_a_01_mesh" 
 		}
 	}
 	
-	asset = {
-		type = pdxmesh
-		requires_dlc_flag = roads_to_power
-		graphical_cultures = { byzantine_building_gfx }
-		graphical_regions = { graphical_mediterranean }
-		names = {
-			"ep3_byzantine_walls_04_mesh" 
-		}
-	}
-
-	### Rokugan
-	asset = {
-		type = pdxmesh
-		graphical_cultures = { japanese_building_gfx }
-		names = {
-			"japanese_walls_04_mesh"
-		}
-	}
-
 	is_enabled = {
 		scope:holder = {
 			NOT = { government_has_flag = government_is_tribal }

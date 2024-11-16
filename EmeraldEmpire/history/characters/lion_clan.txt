@@ -283,11 +283,12 @@ lineofmatsuuniri2 = {
 		birth = yes
 	}
 	
-	1121.1.1 = {
-		effect = {
-			set_relation_lover = { reason = lover_history target = character:lineofakododaio3 } # In love with Akodo Arasou it seems
-		}
-	}
+	# Link already exists
+	# 1121.1.1 = {
+	# 	effect = {
+	# 		set_relation_lover = { reason = lover_history target = character:lineofakododaio3 } # In love with Akodo Arasou it seems
+	# 	}
+	# }
 
 	# Hates Toturi since the death of her fiancee
 	1123.3.1 = {

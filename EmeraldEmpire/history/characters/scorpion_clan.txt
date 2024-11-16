@@ -129,11 +129,12 @@ lineofshosurokoshurin3 = {
 		add_spouse = lineofbayushishoku1 #Bayushi Shoyu
 	}
 	
-	1122.1.1 = {
-		effect = {
-			set_relation_lover = { reason = lover_history target = character:lineofdojisatsume2 } # In love with Doji Hotaru
-		}
-	}
+	# # Link already exists
+	# 1122.1.1 = {
+	# 	effect = {
+	# 		set_relation_lover = { reason = lover_history target = character:lineofdojisatsume2 } # In love with Doji Hotaru
+	# 	}
+	# }
 }
 lineofbayushishoku2 = {
 	name = name_dairu 	# Bayushi Dairu, children of Bayushi Shoyu, Scorpion Heir
@@ -158,11 +159,12 @@ lineofbayushishoku2 = {
 		birth = yes
 	}
 	
-	1123.1.1 = {
-		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:lineofhantei38_2 } #friend with Hantei Daisetsu
-		}
-	}
+	# # Link already exists
+	# 1123.1.1 = {
+	# 	effect = {
+	# 		set_relation_friend = { reason = friend_generic_history target = character:lineofhantei38_2 } #friend with Hantei Daisetsu
+	# 	}
+	# }
 	
 }
 

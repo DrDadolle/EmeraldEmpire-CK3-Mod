@@ -395,7 +395,6 @@
 			}			
 			modifier = {
 				factor = 0
-				portrait_japanese_clothing_trigger = yes
 				portrait_crab_clothing_trigger = yes
 				portrait_crane_clothing_trigger = yes
 				portrait_dragon_clothing_trigger = yes
@@ -409,83 +408,6 @@
 		}
 	}
 
-
-	# Shogunate
-
-	japanese_legwear = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = legwear
-				template = japanese_tabi
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 30
-				portrait_japanese_clothing_trigger = yes
-			}
-		}
-	}
-
-	japanese_war_legwear_era1_high = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = legwear
-				template = japanese_war_legwear
-				value = 0  # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 101
-				portrait_wear_armor_trigger = yes
-				portrait_japanese_clothing_trigger = yes
-			}
-		}
-	}
-
-	japanese_war_legwear_era2_high = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = legwear
-				template = japanese_war_legwear
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 101
-				portrait_wear_armor_trigger = yes
-				portrait_japanese_clothing_trigger = yes
-			}
-		}
-	}
-
-	japanese_war_legwear_era3_high = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = legwear
-				template = japanese_war_legwear
-				value = 1 # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 101
-				portrait_wear_armor_trigger = yes
-				portrait_japanese_clothing_trigger = yes
-			}
-		}
-	}
 
 	#####################
     # Shogunate clothes

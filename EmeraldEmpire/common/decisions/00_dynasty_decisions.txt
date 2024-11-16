@@ -21,7 +21,7 @@
 			}
 		}
 
-		# Shogunate: prevent nonsense cadet branches
+		# Rokugan: prevent nonsense cadet branches
 
 		house.house_head.current_military_strength > root.current_military_strength
 	}
@@ -149,13 +149,13 @@
 
 	effect = {
 
-		# Shogunate: Kamon CoA begin
+		# # Shogunate: Kamon CoA begin
 
 		# house = {
 		# 	save_scope_as = former_house
 		# }
 
-		# Shogunate: Kamon CoA end
+		# # Shogunate: Kamon CoA end
 
 		found_cadet_house_decision_effect = {
 			CHARACTER = root
@@ -170,7 +170,7 @@
 			change_influence = major_influence_gain
 		}
 
-		# Shogunate: Kamon CoA begin
+		# # Shogunate: Kamon CoA begin
 
 		# house = {
 		# 	hidden_effect = {
@@ -191,7 +191,7 @@
 		# 	days = 1
 		# }
 
-		# Shogunate: Kamon CoA end
+		# # Shogunate: Kamon CoA end
 	}
 	
 	ai_potential = {

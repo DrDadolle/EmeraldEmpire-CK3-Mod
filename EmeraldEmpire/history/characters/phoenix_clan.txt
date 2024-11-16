@@ -551,11 +551,13 @@ lineofkaito3 = {
 	1105.1.1 = {
 		birth = yes
 	}
-	1123.1.1 = {
-		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:lineofshiba2 } #friend with Shiba Tsukune since  the Sanpuku Seido incident
-		}
-	}
+
+	# # Link already exists
+	# 1123.1.1 = {
+	# 	effect = {
+	# 		set_relation_friend = { reason = friend_generic_history target = character:lineofshiba2 } #friend with Shiba Tsukune since  the Sanpuku Seido incident
+	# 	}
+	# }
 
 	#Rokugan Workaround to add dynasty splendor to Kitsuki Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
