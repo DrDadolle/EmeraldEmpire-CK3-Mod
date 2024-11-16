@@ -6,7 +6,6 @@ feudal_government = {
 	government_rules = {
 		create_cadet_branches = yes
 		rulers_should_have_dynasty = yes
-#		dynasty_named_realms = yes
 		royal_court = yes
 		legitimacy = yes
 	}
@@ -120,7 +119,7 @@ clan_government = {
 	preferred_religions = { islam_religion }
 
 	valid_holdings = { castle_holding }
-	required_county_holdings = { castle_holding city_holding church_holding shiro_chuda_ruins_holding}
+	required_county_holdings = { castle_holding city_holding church_holding }
 	always_use_patronym = yes
 
 	house_unity = clan_house_unity
@@ -334,8 +333,11 @@ administrative_government = {
 		men_at_arms_limit = -2
 		knight_limit = -5
 		vassal_limit = 100
+<<<<<<< HEAD
 		active_accolades = -1
 		title_creation_cost_mult = -0.5
+=======
+>>>>>>> d50995c (Patch 1.13.0 : LOADING SCREEN LETS GO)
 	}
 
 	# Use flags instead of has_government for moddability if possible (i.e., wherever not visible to the player).
@@ -372,11 +374,19 @@ landless_adventurer_government = {
 		}
 	}
 
+<<<<<<< HEAD
 	valid_holdings = { tribal_holding church_holding castle_holding city_holding shiro_chuda_ruins_holding}
 
 	character_modifier = {
 		active_accolades = -100
 		knight_limit = 2
+=======
+	valid_holdings = { tribal_holding church_holding castle_holding city_holding }
+
+	character_modifier = {
+		active_accolades = -100
+		knight_limit = 10
+>>>>>>> d50995c (Patch 1.13.0 : LOADING SCREEN LETS GO)
 		men_at_arms_cap = -3
 		men_at_arms_limit = -2
 		character_travel_speed = 20
@@ -385,7 +395,10 @@ landless_adventurer_government = {
 		short_reign_duration_mult = -5
 		long_reign_bonus_mult = -1
 		domicile_travel_speed = -0.75
+<<<<<<< HEAD
 		monthly_wanderer_lifestyle_xp_gain_mult = 0.15
+=======
+>>>>>>> d50995c (Patch 1.13.0 : LOADING SCREEN LETS GO)
 	}
 
 	ai = {

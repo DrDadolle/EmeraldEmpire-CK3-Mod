@@ -12,7 +12,7 @@
 # Deprecated decision of yore.
 convert_to_feudalism_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_realm.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
 	}
 	decision_group_type = major
 	desc = convert_to_feudalism_decision_desc
@@ -64,7 +64,7 @@ convert_to_feudalism_decision = {
 # A more lenient decision to convert if your liege is feudal
 convert_to_feudalism_liege_converted_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_realm.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
 	}
 	decision_group_type = major
 	desc = convert_to_feudalism_liege_converted_decision_desc
@@ -133,7 +133,7 @@ convert_to_feudalism_liege_converted_decision = {
 # A decision to feudalize the entire realm (wow!)
 convert_whole_realm_to_feudalism_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_realm.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
 	}
 	decision_group_type = major
 	desc = convert_whole_realm_to_feudalism_decision_desc
@@ -229,7 +229,7 @@ convert_whole_realm_to_feudalism_decision = {
 # A decision to deformalise the entire realm back into tribes.
 convert_to_tribalism_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_realm.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
 	}
 	decision_group_type = major
 	desc = convert_to_tribalism_decision_desc
@@ -292,7 +292,7 @@ convert_to_tribalism_decision = {
 
 declare_bloodline_holy_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_family_tree.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_family_tree.dds"
 	}
 	decision_group_type = major
 	desc = declare_bloodline_holy_decision_desc
@@ -309,16 +309,10 @@ declare_bloodline_holy_decision = {
 			}
 		}
 		NOR = {
-#			has_trait = saoshyant
-#			has_trait = saoshyant_descendant
-#			has_trait = sayyid
-#			has_trait = blood_of_prophet
 			has_trait = savior
 			has_trait = divine_blood
 			has_trait = paragon
 			has_trait = consecrated_blood
-#			faith.religion = faith:ashari.religion #Uses Sayyid mechanics already.
-#			faith.religion = faith:mazdayasna.religion #Must aim to become Saoshyant instead.
 			dynasty = {
 				exists = var:variable_made_bloodline_holy
 			}
@@ -406,7 +400,7 @@ declare_bloodline_holy_decision = {
 
 strengthen_bloodline_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
 	}
 	decision_group_type = major
 	desc = strengthen_bloodline_decision_desc
@@ -571,7 +565,7 @@ strengthen_bloodline_decision = {
 
 found_kingdom_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
 	}
 	decision_group_type = major
 	ai_check_interval = 60
@@ -885,7 +879,7 @@ found_kingdom_decision = {
 
 tribal_challenge_ruler_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
 	}
 	decision_group_type = major
 	desc = tribal_challenge_ruler_decision_desc
@@ -1016,7 +1010,7 @@ tribal_challenge_ruler_decision = {
 
 accept_cannibalism_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_misc.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
 	}
 	decision_group_type = major
 	ai_check_interval = 0
@@ -1102,7 +1096,7 @@ accept_cannibalism_decision = {
 
 found_university_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_misc.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
 	}
 	decision_group_type = major
 	ai_check_interval = 0
@@ -1512,7 +1506,7 @@ found_university_decision = {
 
 lunatic_building_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 	decision_group_type = major
 	ai_check_interval = 0
@@ -1585,7 +1579,7 @@ lunatic_building_decision = {
 # TODO : Rokugan : replace later with mahotsukai stuff ?
 found_witch_coven_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 	decision_group_type = rokugan_religious
 	ai_check_interval = 0
@@ -1670,7 +1664,7 @@ found_witch_coven_decision = {
 
 repay_loan_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_spend_money.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
 	}
 	decision_group_type = major
 
@@ -1790,7 +1784,7 @@ repay_loan_decision = {
 
 escape_from_prison_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_prison.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_prison.dds"
 	}
 	decision_group_type = major
 	desc = escape_from_prison_decision_desc

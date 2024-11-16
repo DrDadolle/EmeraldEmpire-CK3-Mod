@@ -5,7 +5,7 @@
 ##################################################
 found_major_clan_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
 		}
 	decision_group_type = major
 	ai_check_interval = 60
@@ -118,7 +118,7 @@ found_major_clan_decision = {
 ##################################################
 found_minor_clan_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
 	}
 	decision_group_type = major
 	ai_check_interval = 60
@@ -199,7 +199,7 @@ found_minor_clan_decision = {
 # Work around on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 decision_claim_toshi_rambo_crane = { 
 	picture = {
-		 "gfx/interface/illustrations/decisions/decision_crane.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
 	}
 	decision_group_type = rokugan_bushido
 
@@ -310,7 +310,7 @@ decision_claim_toshi_rambo_crane = {
 # Work around on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 decision_claim_toshi_rambo_lion = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_lion.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_lion.dds"
 	}
 	decision_group_type = rokugan_bushido
 
@@ -418,7 +418,7 @@ decision_claim_toshi_rambo_lion = {
 # Work around on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 decision_claim_city_rich_frog_lion = {
 	picture = { 
-		"gfx/interface/illustrations/decisions/decision_lion.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_lion.dds"
 	}
 	decision_group_type = rokugan_bushido
 
@@ -526,7 +526,7 @@ decision_claim_city_rich_frog_lion = {
 # Work around on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 decision_claim_city_rich_frog_unicorn = {
 	picture = {
-		 "gfx/interface/illustrations/decisions/decision_unicorn.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_unicorn.dds"
 	}
 
 	decision_group_type = rokugan_bushido
@@ -636,7 +636,7 @@ decision_claim_city_rich_frog_unicorn = {
 ##################################################
 decision_avenge_yasuki_war = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_crane.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
 	}
 
 	decision_group_type = major
@@ -705,7 +705,7 @@ decision_avenge_yasuki_war = {
 ##################################################
 decision_restore_snake_clan = {
 	picture = {
-		 "gfx/interface/illustrations/decisions/decision_phoenix.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_phoenix.dds"
 	}
 
 	decision_group_type = major

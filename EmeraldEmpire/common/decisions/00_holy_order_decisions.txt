@@ -206,7 +206,7 @@
 
 borrow_from_holy_order_decision = { #by Linnéa Thimrén
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
+		reference =  "gfx/interface/illustrations/decisions/decision_spend_money.dds"
 	}
 	desc = borrow_from_holy_order_decision_desc
 	selection_tooltip = borrow_from_holy_order_decision_tooltip
@@ -292,7 +292,7 @@ borrow_from_holy_order_decision = { #by Linnéa Thimrén
 
 cancel_holy_order_lease_decision = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+		reference =  "gfx/interface/illustrations/decisions/decision_major_religion.dds"
 	}
 	desc = {
 		first_valid = {

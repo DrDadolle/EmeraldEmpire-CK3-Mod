@@ -8,7 +8,7 @@
 ##################################################
 select_personal_deity_fortunism_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 
 	decision_group_type = rokugan_religion
@@ -61,7 +61,7 @@ select_personal_deity_fortunism_decision = {
 ##################################################
 commit_seppuku_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 
 	decision_group_type = rokugan_bushido
@@ -114,7 +114,7 @@ commit_seppuku_decision = {
 ##################################################
 rokugan_abdicate_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 	desc = rokugan_abdicate_decision_desc
 
@@ -164,7 +164,7 @@ rokugan_abdicate_decision = {
 ##################################################
 bleach_hair_white_crane_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_crane.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
 	}
 	
 	decision_group_type = rokugan_clan
@@ -211,7 +211,7 @@ bleach_hair_white_crane_decision = {
 ##################################################
 abandon_white_hair_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_crane.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
 	}
 
 	decision_group_type = rokugan_clan

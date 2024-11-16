@@ -337,7 +337,7 @@
 
 take_vow_of_poverty_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 
 	decision_group_type = rokugan_religious
@@ -387,7 +387,9 @@ take_vow_of_poverty_decision = {
 }
 
 renounce_vow_of_poverty_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
+	}
 
 	desc = renounce_vow_of_poverty_decision_desc
 	selection_tooltip = renounce_vow_of_poverty_decision_tooltip
@@ -515,7 +517,7 @@ renounce_vow_of_poverty_decision = {
 
 seek_aid_of_the_spirits_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference =  "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 
 	decision_group_type = rokugan_religious
@@ -709,7 +711,7 @@ seek_aid_of_the_spirits_decision = {
 
 meditate_in_seclusion_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference =  "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 	decision_group_type = rokugan_religious
 
@@ -755,7 +757,9 @@ meditate_in_seclusion_decision = {
 }
 
 give_sky_burial_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = {
+		reference =  "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
 	
 	sort_order = 75
 
@@ -840,7 +844,7 @@ give_sky_burial_decision = {
 
 raise_runestone_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 	decision_group_type = rokugan_religious
 
@@ -944,7 +948,7 @@ raise_runestone_decision = {
 
 divine_the_stars_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference =  "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 
 	decision_group_type = rokugan_religious
@@ -994,7 +998,7 @@ divine_the_stars_decision = {
 
 revoke_false_conversion_decision = {	#Reveal yourself as a crypto-religionist.
 	picture = {
-		"gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
+		reference =  "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
 	}
 
 	decision_group_type = rokugan_religious
@@ -1079,7 +1083,7 @@ revoke_false_conversion_decision = {	#Reveal yourself as a crypto-religionist.
 
 encourage_confession_of_false_conversions_decision = {	# Ask that crypto-religionists in your realm start practicing in the open.
 	picture = {
-		"gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
+		reference =  "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
 	}
 
 	decision_group_type = rokugan_religious
@@ -1195,7 +1199,7 @@ encourage_confession_of_false_conversions_decision = {	# Ask that crypto-religio
 
 abandon_crypto_faith_decision = {	#Abandon your secret faith.
 	picture = {
-		"gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
+		reference =  "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
 	}
 
 	decision_group_type = rokugan_religious
@@ -1361,7 +1365,7 @@ abandon_crypto_faith_decision = {	#Abandon your secret faith.
 
 ai_create_head_of_faith_decision = {
 	picture = {
-		"gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+		reference =  "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 	decision_group_type = major
 
