@@ -13,13 +13,9 @@
 	}
 }
 4 = {		#b_garden_under_shadow_city
-	culture = asahina
-	religion = seven_fortunes
 	holding = city_holding
 }
 5 = {		#b_shiro_hanamidoki
-	culture = asahina
-	religion = seven_fortunes
 	holding = castle_holding
 
 	1123.1.1={
@@ -29,8 +25,6 @@
 	}
 }
 6 = {		#b_bunya_sano_asahina
-	culture = asahina
-	religion = seven_fortunes
 	holding = church_holding
 }
 ###c_wakiaiai_province
@@ -40,8 +34,6 @@
 	holding = castle_holding
 }
 419 = { #b_north_shinkyou
-	culture = asahina
-	religion = seven_fortunes
 	holding = none
 }
 ###c_anshin_province
@@ -57,8 +49,6 @@
 	}
 }
 9 = {		#b_zenshou_tetsu
-	culture = asahina
-	religion = seven_fortunes
 	holding = castle_holding
 
 	1123.1.1={
@@ -68,13 +58,9 @@
 	}
 }
 10 = {		#b_oni_mura
-	culture = asahina
-	religion = seven_fortunes
 	holding = city_holding
 }
 11 = {		#b_heaven_wisdom_temple
-	culture = asahina
-	religion = seven_fortunes
 	holding = church_holding
 }
 ##d_doji ###################################
@@ -91,13 +77,9 @@
 	}
 }
 13 = {		#b_benten_seido
-	culture = doji
-	religion = seven_fortunes
 	holding = church_holding
 }
 14 = {		#b_seven_fold_palace
-	culture = doji
-	religion = seven_fortunes
 	holding = castle_holding
 
 	1123.1.1={
@@ -107,8 +89,6 @@
 	}
 }
 15 = {		#b_musume_mura
-	culture = doji
-	religion = seven_fortunes
 	holding = city_holding
 }
 ###c_kazenmuketsu_province
@@ -125,23 +105,15 @@
 
 }
 17 = {		#b_kyuden_garden
-	culture = doji
-	religion = cult_ancestors
 	holding = city_holding
 }
 18 = {		#b_blind_monk_temple
-	culture = doji
-	religion = cult_ancestors
 	holding = church_holding
 }
 19 = {		#b_shizuka_toshi
-	culture = doji
-	religion = cult_ancestors
 	holding = city_holding
 }
 20 = {		#b_kyuden_no_kin
-	culture = doji
-	religion = cult_ancestors
 	holding = castle_holding
 
 	1123.1.1={
@@ -163,13 +135,9 @@
 	}
 }
 464 = {		#b_itoshii_empty_1
-	culture = doji
-	religion = seven_fortunes
 	holding = none
 }
 465 = {		#b_itoshii_empty_2
-	culture = doji
-	religion = seven_fortunes
 	holding = none
 }
 ###c_umoeru_province
@@ -186,8 +154,6 @@
 	}
 }
 467 = {		#b_umoeru_empty
-	culture = doji
-	religion = seven_fortunes
 	holding = none
 }
 ###c_kougen_province
@@ -204,8 +170,6 @@
 
 }
 24 = {		#b_kougen_mura
-	culture = doji
-	religion = seven_fortunes
 	holding = city_holding
 }
 ##d_daidoji ###################################
@@ -235,18 +199,12 @@
 	}
 }
 27 = {		#b_prosperous__plains_city
-	culture = daidoji
-	religion = seven_fortunes
 	holding = city_holding
 }
 28 = {		#b_giji_seido
-	culture = daidoji
-	religion = seven_fortunes
 	holding = church_holding
 }
 29 = {		#b_tsangusuri
-	culture = daidoji
-	religion = seven_fortunes
 	holding = castle_holding
 
 	1123.1.1={
@@ -256,30 +214,25 @@
 	}
 }
 ###c_sabishii_province
-30 = {		#b_water_music_village
-	culture = daidoji
-	religion = seven_fortunes
-	holding = city_holding
-}
-31 = {		#b_mura_sabishii
-	culture = daidoji
-	religion = seven_fortunes
-	holding = city_holding
-}
 32 = {		#b_song_bird_cage
+	holding = castle_holding
 	culture = daidoji
 	religion = seven_fortunes
-	holding = castle_holding
-
 	1123.1.1={
 		buildings = {
 			castle_01
 		}
 	}
 }
+30 = {		#b_water_music_village
+
+	holding = city_holding
+}
+31 = {		#b_mura_sabishii
+	holding = city_holding
+}
+
 395 = {		#uebi_marshes
-	culture = daidoji
-	religion = seven_fortunes
 	holding = none
 }
 ###c_ichigun_province
@@ -295,8 +248,6 @@
 	}
 }
 34 = {		#b_daidoji_training_grounds
-	culture = daidoji
-	religion = cult_ancestors
 	holding = none
 }
 ##d_kakita ###################################
@@ -313,13 +264,9 @@
 	}
 }
 36 = {		#b_tsuma
-	culture = kakita
-	religion = cult_ancestors
 	holding = city_holding
 }
 37 = {		#b_shiro_iwasaki
-	culture = kakita
-	religion = cult_ancestors
 	holding = castle_holding
 
 	1123.1.1={
@@ -330,8 +277,6 @@
 
 }
 38 = {		#b_kakita_seido
-	culture = kakita
-	religion = cult_ancestors
 	holding = church_holding
 }
 ###c_nanhan_province
@@ -361,8 +306,6 @@
 
 }
 41 = {		#b_jurojin_seido
-	culture = kakita
-	religion = seven_fortunes
 	holding = church_holding
 }
 ###c_kishou_province
@@ -378,13 +321,9 @@
 	}
 }
 43 = {		#b_aketsu
-	culture = kakita
-	religion = seven_fortunes
 	holding = city_holding
 }
 44 = {		#b_ice_fish_village
-	culture = kakita
-	religion = seven_fortunes
 	holding = city_holding
 }
 ###c_kintani_province
