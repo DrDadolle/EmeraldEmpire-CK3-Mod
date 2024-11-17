@@ -50,31 +50,31 @@ bm_1123_clanwar = {
 ###############################
 ## Phoenix Clan 1123 Bookmark
 ###############################
-# bm_1123_phoenix = {
-# 	start_date = 1123.4.1
-# 	is_playable = yes
-# 	group = bm_group_1123
+bm_1123_phoenix = {
+	start_date = 1123.4.1
+	is_playable = yes
+	group = bm_group_1123
 
-# 	weight = { value = 0 }
+	weight = { value = 0 }
 
-# 	# Isawa Giichi
-# 	character = {
-# 		name = "bookmark_isawa_giichi"
-# 		dynasty = dynasty_isawa #Isawa
-# 		dynasty_splendor_level = 5
-# 		type = male
-# 		birth = 1090.1.1
-# 		title = c_chuda_province
-# 		government = feudal_government
-# 		culture = isawa
-# 		religion = "seven_fortunes"
-# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
-# 		history_id = lineofisawachuda1
-# 		position = { 250 750 }
+	# Isawa Giichi
+	character = {
+		name = "bookmark_isawa_giichi"
+		dynasty = dynasty_isawa #Isawa
+		dynasty_splendor_level = 5
+		type = male
+		birth = 1090.1.1
+		title = c_chuda_province
+		government = feudal_government
+		culture = isawa
+		religion = "seven_fortunes"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = lineofisawachuda1
+		position = { 250 750 }
 
-# 		animation = happiness
-# 	}
-# }
+		animation = happiness
+	}
+}
 
 ###############################
 ## Lion Clan 1123 Bookmark

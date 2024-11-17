@@ -29,7 +29,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Vanilla often replaces is_landed with is_playable_character  or is_landed_or_landless_administrative. If you want landless characters to have access to your content, you would need to do the same.
 - Scheme modifiers have been completely reworked, so all the old ones for things like personal_scheme_power_mult, hostile_scheme_resistance_add, etc. no longer work. You will need to replace them with new scheme modifier
 	- check scheme.info of vanilla game
-- remove bunch of errors 
+- remove bunch of errors
+- No clothes when travelling 
 - Test char interaction
 - Test seppuku
 - test decisions
@@ -40,6 +41,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Akodo Toturi : TODO DNA
 - update crane clan bookmark map
 	- Doji Kuwanan : TODO DNA
+-Cisterns/qanats and other regional buildings are available
 - found Great Clan description decision
 	- missing description descision, issue with custom description
 - Update "Reclaim Yasuki Family lands" & "Reborn Snake" decision
