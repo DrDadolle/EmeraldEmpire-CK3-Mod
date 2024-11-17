@@ -3,8 +3,7 @@ tags={
 	"Total Conversion"
 }
 name="Emerald Empire"
-<!-- replace_path="common/bookmark_portraits"
-replace_path="common/dna_data" -->
+picture="thumbnail.png"
 replace_path="common/culture/cultures"
 replace_path="common/culture/name_lists"
 replace_path="common/dynasties"
@@ -18,4 +17,3 @@ replace_path="history/provinces"
 replace_path="history/titles"
 replace_path="history/cultures"
 supported_version="1.12.5"
-remote_file_id="2524797018"
