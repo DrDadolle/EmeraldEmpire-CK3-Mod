@@ -74,12 +74,6 @@
 		template = crane_war_nobility_clothes
 	}
 
-	#TODO add if crane variation 
-	# add_accessory_modifiers = {
-	# 	gene = clothes
-	# 	template = japanese_common_monk_clothes
-	# }
-
 	# Dragon # 
 	add_accessory_modifiers = {
 		gene = clothes
