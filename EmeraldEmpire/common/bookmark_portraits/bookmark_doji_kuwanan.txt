@@ -1,7 +1,8 @@
 ﻿# Auto generated file, do not edit manually. Created using console command dump_bookmark_portraits
+# History database id:lineofdojisatsume3
 bookmark_doji_kuwanan = {
-	type=male
 	id=1277286919
+	type=male
 	age=0.255000
 	genes={ 		
 		hair_color={ 0 0 28 246 }
@@ -112,7 +113,8 @@ bookmark_doji_kuwanan = {
  		beards={ "no_beard" 0 "no_beard" 0 }
  		clothes={ "crane_high_nobility_clothes" 0 "most_clothes" 0 }
  		legwear={ "crane_tabi" 0 "all_legwear" 0 }
- 		cloaks={ "no_cloak" 0 "no_cloak" 0 }
+ 		#cloaks={ "no_cloak" 0 "no_cloak" 0 }
  		shogunate_special_belt_accessory={ "katana_crane_01" 0 "katana_01" 0 }
  	}
-}
+	 entity={ 807438772 807438772 }
+	}

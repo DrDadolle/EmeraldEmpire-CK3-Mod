@@ -112,7 +112,8 @@ bookmark_akodo_toturi = {
  		beards={ "no_beard" 0 "no_beard" 0 }
  		clothes={ "lion_high_nobility_clothes" 0 "most_clothes" 0 }
  		legwear={ "lion_war_legwear" 0 "all_legwear" 0 }
- 		cloaks={ "no_cloak" 0 "no_cloak" 0 }
+ 		#cloaks={ "no_cloak" 0 "no_cloak" 0 }
  		shogunate_special_belt_accessory={ "katana_lion_01" 0 "katana_01" 0 }
  	}
+	 entity={ 807438772 807438772 }
 }
