@@ -29,8 +29,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Vanilla often replaces is_landed with is_playable_character  or is_landed_or_landless_administrative. If you want landless characters to have access to your content, you would need to do the same.
 - Scheme modifiers have been completely reworked, so all the old ones for things like personal_scheme_power_mult, hostile_scheme_resistance_add, etc. no longer work. You will need to replace them with new scheme modifier
 	- check scheme.info of vanilla game
+- update loading page !
 - remove bunch of errors
 - No clothes when travelling 
+- Test background of characters : main, councils, prison, dead, travelling pilgrimage, other activites
 - Test char interaction
 - Test seppuku
 - test decisions
@@ -44,6 +46,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - replace all vanilla challenge characters and update descriptor.mod to replace all bookmarks !
 
 ## short term goals 
+- Add Japanese Court
 -Cisterns/qanats and other regional buildings are available
 - found Great Clan description decision
 	- missing description descision, issue with custom description
@@ -82,19 +85,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 
 ## Futures Features & Nice to have
-- Create discord servor with section : 
-	- announcement
-	- rules
-	- how-to 
-	- general
-	- question
-	- suggestion
-	- testing
-	- bug-report
-- create Trello to use for feature and bugs to do, insteado of this ugly txt file
-	- set-up
-	- need to fill
 - Set up github branches (dev/release/beta) and pratices/rights
+- Pilgrimage images (update scripted_illustration/ingame.txt)
+- new building type for Mantis : https://discord.com/channels/735413460439007241/1139782281142222969
+- new building type for Dragon : https://github.com/Ivan-2/KefirsHoldings
+
 
 ##  Waiting & placeholders
 - Cat mon : @Bamba 

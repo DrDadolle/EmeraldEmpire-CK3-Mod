@@ -75,7 +75,6 @@
 	# TODO later
 
 
-
 #####################################						
 #####################################						
 ######        LION LANDS       ######						
@@ -83,7 +82,7 @@
 #####################################
 rokugan_lion_plains = {
 	duchies = {
-		d_matsu d_ikoma d_akodo
+		d_matsu d_ikoma d_akodo 
 	}
 }
 
@@ -440,53 +439,18 @@ rokugan_spice_and_silk_isles = {
 #####################################						
 #####################################
 
+###########################################################################
+# Graphical Regions
+###########################################################################
 
-world_europe_west_britannia = {}
-world_europe_west_germania = {}
-world_europe_west_francia = {}
-world_europe_west_iberia = {}
-world_europe_west = {}
-world_europe_north = {}
-world_europe_south_east = {}
-world_europe_south_italy = {}
-world_europe_south = {}
-world_europe_east = {}
-world_asia_minor = {}
-world_middle_east_jerusalem = {}
-world_middle_east_arabia = {}
-world_middle_east_persia = {}
-world_india_deccan = {}
-world_india_bengal = {}
-world_india_rajastan = {}
-world_africa_north_west = {
-	duchies = {
-		d_canarias
-	}
-}
-world_africa_north_east = {}
-world_africa_sahara = {}
-world_africa_north = {
+graphical_world_rokugan = {
+	graphical = yes
+	color = { 232 57 41 }
 	regions = {
-		world_africa_north_west
+		rokugan_lion rokugan_phoenix rokugan_dragon rokugan_unicorn rokugan_imperial rokugan_crab rokugan_crane
+		rokugan_scorpion rokugan_shinomen_mori rokugan_spine_world_mountains rokugan_spice_and_silk_isles
 	}
 }
-world_africa_west = {}
-world_africa_east = {}
-world_africa = {
-	regions = {
-		world_africa_north
-	}
-}
-world_steppe_tarim = {}
-world_steppe_west = {}
-world_steppe_east = {}
-world_tibet = {}
-world_himalaya = {}
-world_burma = {}
-world_steppe = {}
-world_europe = {}
-world_middle_east = {}
-world_india = {}
 
 ###########################################################################
 # Material Regions
@@ -690,11 +654,7 @@ custom_iceland = {}
 graphical_western = {}
 
 graphical_mena = {
-	graphical = yes
-	color = { 255 255 0 }
-	regions = {
-		world_africa
-	}
+	# Unset but not commented out to avoid error log spam.
 }
 
 graphical_india = {}
@@ -833,20 +793,7 @@ ghw_region_north_eastern_india = {}
 ### END GHW Regions
 islamic_heartlands = {}
 
-dlc_fp1_region_core_north_sea = {
-	duchies = {
-		#k_norway
-		d_viken d_agder d_vestlandi d_trandalog
-		#k_england
-		d_york d_norfolk d_bedford d_canterbury
-		#k_denmark
-		d_sjaelland d_slesvig d_jylland
-	}
-	counties = {
-		#k_england
-		c_huntingdonshire c_northamptonshire c_leicestershire c_nottinghamshire
-	}
-}
+dlc_fp1_region_core_north_sea = {}
 
 #####################
 # FP1 Regions
@@ -914,11 +861,7 @@ dlc_ep1_levant_trade_region = {}
 dlc_ep1_arab_trade_region = {}
 dlc_ep1_persian_trade_region = {}
 
-dlc_ep1_north_africa_trade_region = {
-	regions = {
-		world_africa_north_west
-	}
-}
+dlc_ep1_north_africa_trade_region = {}
 
 dlc_ep1_east_africa_trade_region = {}
 dlc_ep1_west_africa_trade_region = {}
