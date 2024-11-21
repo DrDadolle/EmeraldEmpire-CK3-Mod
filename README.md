@@ -36,5 +36,5 @@ This mod is not endorsed by Paradox Interactive or Steam or the copyright owners
 ## Special Credits
 Rinbro for the japanese coat of arms, with the authorization of the [Shogunate](https://steamcommunity.com/sharedfiles/filedetails/?id=2253278582) mod's lead dev FUN. \
 Kefir for the Japanese-style & Chinese-style 3D buildings, and Japanese-style unit 3D models \
-AJ, for the 3D assets (clothing & court) used for Japan. [www.artstation.com](https://www.artstation.com/aj_1). Make sure to help support his amazing graphical work by using the link here [ko-fi.com](https://ko-fi.com/ajbaj) \
+AJ, for the 3D assets (clothing & court) [www.artstation.com](https://www.artstation.com/aj_1). Make sure to help support his amazing graphical work by using the link here [ko-fi.com](https://ko-fi.com/ajbaj) \
 Matt "Legoman" for the Hardened Lava texture. This texture comes from the awesome [Lord of the Rings CK3 Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2291024373), please check it out !
