@@ -5105,7 +5105,7 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_frontend_rokugan_main"
+		reference = "environment_frontend_yamato_main"
 
 		trigger = {
 			trigger_if = {
@@ -5128,7 +5128,7 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_frontend_rokugan_main"
+		reference = "environment_frontend_yamato_main"
 		trigger = {
 			OR = {
 				primary_spouse ?= {
@@ -7379,7 +7379,7 @@ character_private = {
 		reference = "interior/temple.dds"
 	}
 	environment = {
-		reference = "environment_frontend_rokugan_main"
+		reference = "environment_frontend_yamato_main"
 	}
 
 }

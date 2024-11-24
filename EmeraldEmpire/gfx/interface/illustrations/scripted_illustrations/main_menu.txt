@@ -15,7 +15,7 @@ main_menu_background = {
 		}
 	}
 	environment = {
-		reference = "environment_frontend_rokugan_main"
+		reference = "environment_frontend_yamato_main"
 
 		trigger = {
 			has_graphical_rokugan_region_trigger = yes
