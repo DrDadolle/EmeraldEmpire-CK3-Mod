@@ -64,13 +64,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- How to ?
 - Random mon for generated characters ?
 	- Based on shogunate mod
+		- common/coat_of_arms/template_lists coa_templates
 	- check ronins & church_holders
 
 ## Fixes to do
 - Spammed with rokugan_char_interaction.0231 event boxes...
 	- "an honorable death" event procs for outsite of player stuff
-- Fix the "Family Lands of Daidoji lands"; "Clan of Crane Clan", etc...
-	- set_definite_form = yes for them !
 - Change color of some textured emblmes (very low priority) : Mantis, Komori
 - shiba mon is off-center (too much top left)
 - update holy_order decisions & dynasty decisions (taken from shogunate)
