@@ -13,7 +13,7 @@ e_rokugan = {
 	color1 = "black"
 	colored_emblem = {
 		texture = "ce_imperial_1.dds"
-		color1 = "green_light"
+		color1 = "imperial_light"
 	}
 }
 
@@ -249,7 +249,7 @@ k_crane_clan = {
 	color1 = "white"
 	colored_emblem = {
 		texture = "ce_crane_1.dds"
-		color1 = "blue_light"
+		color1 = "crane_light"
 	}
 }
 ##### Doji
@@ -749,7 +749,7 @@ k_lion_clan = {
 	color1 = "brown"
 	colored_emblem = {
 		texture = "ce_lion_1.dds"
-		color1 = "yellow_light"
+		color1 = "lion_light"
 	}
 }
 ##### Akodo
@@ -1309,7 +1309,7 @@ k_phoenix_clan = {
 	color1 = "black"
 	colored_emblem = {
 		texture = "ce_phoenix_1.dds"
-		color1 = "orange"
+		color1 = "phoenix_light"
 	}
 }
 ##### Shiba
@@ -1752,7 +1752,7 @@ k_dragon_clan = {
 	color1 = "black"
 	colored_emblem = {
 		texture = "ce_dragon_1.dds"
-		color1 = "green"
+		color1 = "dragon_light"
 	}
 }
 ##### Togashi
@@ -2018,7 +2018,7 @@ k_scorpion_clan = {
 	color1 = "black"
 	colored_emblem = {
 		texture = "ce_scorpion_1.dds"
-		color1 = "red"
+		color1 = "scorpion_light"
 	}
 }
 ##### Bayushi
@@ -2328,7 +2328,7 @@ k_crab_clan = {
 	color1 = "black"
 	colored_emblem = {
 		texture = "ce_crab_1.dds"
-		color1 = "blue"
+		color1 = "crab_light"
 	}
 }
 ##### Hida
@@ -2698,7 +2698,7 @@ k_unicorn_clan = {
 	color1 = "white"
 	colored_emblem = {
 		texture = "ce_unicorn_1.dds"
-		color1 = "purple"
+		color1 = "unicorn_dark"
 	}
 }
 ##### Shinjo
