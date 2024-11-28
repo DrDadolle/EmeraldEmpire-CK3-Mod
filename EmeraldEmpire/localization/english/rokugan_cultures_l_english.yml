@@ -8,6 +8,7 @@
  #Crab
  heritage_crab_name:0 "Crab"
  heritage_crab_collective_noun:0 "Crabs"
+ crab_group_coa_gfx:0 "Crab"
  yasuki:0 "Yasuki"
  yasuki_collective_noun:0 "Yasuki"
  yasuki_prefix:0 "Yasuki"
@@ -37,6 +38,7 @@
  culture_parameter_white_hair_valued:0 "[traits|E] such as [GetTrait('natural_white_hair').GetName( GetNullCharacter )] or [GetTrait('bleached_white_hair').GetName( GetNullCharacter )] are seen as [prestige_i][prestigious|E]"
  heritage_crane_name:0 "Crane"
  heritage_crane_collective_noun:0 "Cranes"
+ crane_group_coa_gfx:0 "Crane"
  doji:0 "Doji"
  doji_collective_noun:0 "Doji"
  doji_prefix:0 "Doji"
@@ -65,6 +67,7 @@
  #Lion
  heritage_lion_name:0 "Lion"
  heritage_lion_collective_noun:0 "Lions"
+ lion_group_coa_gfx:0 "Lion"
  akodo:0 "Akodo"
  akodo_collective_noun:0 "Akodo"
  akodo_prefix:0 "Akodo"
@@ -88,6 +91,7 @@
  #Phoenix
  heritage_phoenix_name:0 "Phoenix"
  heritage_phoenix_collective_noun:0 "Phoenixes"
+ phoenix_group_coa_gfx:0 "Phoenix"
  shiba:0 "Shiba"
  shiba_collective_noun:0 "Shiba"
  shiba_prefix:0 "Shiba"
@@ -111,6 +115,7 @@
  #Scorpion
  heritage_scorpion_name:0 "Scorpion"
  heritage_scorpion_collective_noun:0 "Scorpions"
+ scorpion_group_coa_gfx:0 "Scorpion"
  bayushi:0 "Bayushi"
  bayushi_collective_noun:0 "Bayushi"
  bayushi_prefix:0 "Bayushi"
@@ -134,6 +139,7 @@
  #Dragon
  heritage_dragon_name:0 "Dragon"
  heritage_dragon_collective_noun:0 "Dragons"
+ dragon_group_coa_gfx:0 "Dragon"
  togashi:0 "Togashi"
  togashi_collective_noun:0 "Togashi"
  togashi_prefix:0 "Togashi"
@@ -157,6 +163,7 @@
  #Unicorn
  heritage_unicorn_name:0 "Unicorn"
  heritage_unicorn_collective_noun:0 "Unicorns"
+ unicorn_group_coa_gfx:0 "Unicorn"
  shinjo:0 "Shinjo"
  shinjo_collective_noun:0 "Shinjo"
  shinjo_prefix:0 "Shinjo"
@@ -185,6 +192,7 @@
  #Imperial
  heritage_imperial_name:0 "Imperial"
  heritage_imperial_collective_noun:0 "Imperials"
+ imperial_group_coa_gfx:0 "Imperial"
  hantei:0 "Hantei"
  hantei_collective_noun:0 "Hantei"
  hantei_prefix:0 "Hantei"
@@ -208,6 +216,7 @@
  #Minor
  heritage_kitsune_name:0 "Fox"
  heritage_kitsune_collective_noun:0 "Foxes"
+ minor_group_coa_gfx:0 "Minor"
  kitsune:0 "Kitsune"
  kitsune_collective_noun:0 "Kitsune"
  kitsune_prefix:0 "Kitsune"
@@ -250,6 +259,7 @@
 
  heritage_yoritomo_name:0 "Mantis"
  heritage_yoritomo_collective_noun:0 "Mantises"
+ mantis_group_coa_gfx:0 "Mantis"
  yoritomo:0 "Yoritomo"
  yoritomo_collective_noun:0 "Yoritomo"
  yoritomo_prefix:0 "Yoritomo"

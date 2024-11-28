@@ -6812,17 +6812,17 @@ character_location_exterior = {
 		}
 	}
 
-	# texture = {
-	# 	reference = "event_scenes/market_east.dds"
+	texture = { #Fallback
+		reference = "event_scenes/market_east.dds"
 
-	# 	trigger = {
-	# 		OR = {
-	# 			has_graphical_india_region_trigger = yes
-	# 			has_graphical_mena_region_trigger = yes
-	# 			has_graphical_mediterranean_region_trigger = yes
-	# 		}
-	# 	}
-	# }
+		# trigger = {
+		# 	OR = {
+		# 		has_graphical_india_region_trigger = yes
+		# 		has_graphical_mena_region_trigger = yes
+		# 		has_graphical_mediterranean_region_trigger = yes
+		# 	}
+		# }
+	}
 }
 
 ### Religious interior - Character Scope

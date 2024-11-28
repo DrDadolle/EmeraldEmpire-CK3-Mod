@@ -9,7 +9,7 @@
 		tradition_bushido
 		tradition_forest_folk
 		tradition_welcoming
-		tradition_vegetarian
+		tradition_vegetarianism
 	}
    
 	name_list = name_list_crane_family
@@ -51,7 +51,7 @@ moshi = {
 }
 
 kasuga = {
-	color = { .68 1.0 0.18 } # The color of the culture, used e.g. on the map
+	color = { 0.68 1.0 0.18 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_kasuga
