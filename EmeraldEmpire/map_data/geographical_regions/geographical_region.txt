@@ -601,11 +601,22 @@ world_innovation_camels = {
 	# }
 }
 
-world_horse_buildings_in_hills_and_mountains = {}
 
 divergence_island_regions = {
 	duchies = {
 		d_yoritomo
+	}
+}
+
+# Enable horse pastures buildings
+world_steppe_east = {
+	regions = {
+		rokugan_unicorn
+	}
+}
+world_horse_buildings_in_hills_and_mountains = {
+	regions = {
+		rokugan_unicorn
 	}
 }
 
@@ -709,6 +720,8 @@ world_makran = {}
 world_kabulistan = {}
 world_mesopotamia = {}
 world_jazira = {}
+
+special_region_murex = {}
 
 #####################
 # Achievements - Error log squashing, leave empty

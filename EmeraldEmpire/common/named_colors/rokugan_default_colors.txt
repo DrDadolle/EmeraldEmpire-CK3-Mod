@@ -1,0 +1,33 @@
+colors = {
+	# In addition to default colors Rokugan Color
+	# Major Clans
+	crab_dark = rgb { 41 31 91 }
+	crab_light = rgb { 61 46 136 }
+
+	crane_dark = rgb { 108 199 254 }
+	crane_light = rgb { 168 221 254 }
+
+	dragon_dark = rgb { 46 114 55 }
+	dragon_light = rgb { 63 157 76 }
+
+	lion_dark = rgb { 229 188 0 }
+	lion_light = rgb { 255 213 35 }
+
+	phoenix_dark = rgb { 228 88 0 }
+	phoenix_light = rgb { 255 118 33 }
+
+	scorpion_dark = rgb { 145 1 11 }
+	scorpion_light = rgb { 205 1 16 }
+
+	unicorn_dark = rgb { 108 52 179 }
+	unicorn_light = rgb { 140 86 206 }
+
+	imperial_dark = rgb { 53 100 98 }
+	imperial_light = rgb { 74 140 137 }
+
+	# Minor Clans
+	mantis_dark = rgb { 14 179 1 }
+	mantis_light = rgb { 18 239 1 }
+
+	# Others
+}
