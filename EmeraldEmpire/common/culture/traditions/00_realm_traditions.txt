@@ -201,22 +201,26 @@ tradition_republican_legacy = {
 	}
 
 	is_shown = {
-		OR ={
-			this = culture:roman
-			any_parent_culture_or_above = {
-				this = culture:roman
-			}
-		}
-		NOT = { has_cultural_tradition = tradition_parochialism }
+		always = no 
+		#L5R Disabled
+		# OR ={
+		# 	this = culture:roman
+		# 	any_parent_culture_or_above = {
+		# 		this = culture:roman
+		# 	}
+		# }
+		# NOT = { has_cultural_tradition = tradition_parochialism }
 	}
 	can_pick = {
-		OR ={
-			this = culture:roman
-			any_parent_culture_or_above = {
-				this = culture:roman
-			}
-		}
-		NOT = { has_cultural_tradition = tradition_parochialism }
+		always = no 
+		#L5R Disabled
+		# OR ={
+		# 	this = culture:roman
+		# 	any_parent_culture_or_above = {
+		# 		this = culture:roman
+		# 	}
+		# }
+		# NOT = { has_cultural_tradition = tradition_parochialism }
 	}
 	
 	parameters = {
@@ -1927,22 +1931,26 @@ tradition_parochialism = {
 	}
 
 	is_shown = { #Replaced by tradition_republican_legacy
-		NOT = { has_cultural_tradition = tradition_republican_legacy }
-		NOR ={
-			this = culture:roman
-			any_parent_culture_or_above = {
-				this = culture:roman
-			}
-		}
+		always = yes
+		#L5R Modified
+		# NOT = { has_cultural_tradition = tradition_republican_legacy }
+		# NOR ={
+		# 	this = culture:roman
+		# 	any_parent_culture_or_above = {
+		# 		this = culture:roman
+		# 	}
+		# }
 	}
 	can_pick = {
-		NOR ={
-			this = culture:roman
-			any_parent_culture_or_above = {
-				this = culture:roman
-			}
-		}
-		NOT = { has_cultural_tradition = tradition_republican_legacy }
+		always = yes
+		#L5R Modified
+		# NOR ={
+		# 	this = culture:roman
+		# 	any_parent_culture_or_above = {
+		# 		this = culture:roman
+		# 	}
+		# }
+		# NOT = { has_cultural_tradition = tradition_republican_legacy }
 	}
 	
 	parameters = {
