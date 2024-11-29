@@ -31,12 +31,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- check scheme.info of vanilla game
 - remove bunch of errors
 -remove Qanats/murex fishery as available building
-- No clothes when travelling 
-- Test background of characters : prison, dead, travelling pilgrimage, other activites
-- Test char interaction
-- Test seppuku
-- test decisions
-- test japanese court
+- test decisions (Yasuki, Snake, rest is OK)
 - Add thumbnail image for the mod !
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA
@@ -49,6 +44,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## short term goals 
 - update event/heresy_events.txt
+- update 01_events_backgrounds.txt
 -Cisterns/qanats and other regional buildings are available
 - found Great Clan description decision
 	- missing description descision, issue with custom description
@@ -112,6 +108,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Tea
 	- Opium
 	- others
+	- introduce_a_new_fashion_at_court_decision for Crane ? @Imperial court ?
 - defines geo regions => For animals/trees/etc... (map_data/geographical_regions/aaa.txt)
 	- Modify definition of Lion & Scorpion to have Beiden pass properly defined
 	- Modify definition of phoenix/neutral for isawamori/shinomenmori
