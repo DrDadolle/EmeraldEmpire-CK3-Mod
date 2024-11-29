@@ -226,126 +226,147 @@ artifact_needs_material_wood_trigger = {
 # Artifact Visual Triggers #
 ############################
 
+# L5R Disabled
 # UnitGFX-based triggers
 artifact_use_african_unit_visuals_trigger = {
-	exists = culture
-	culture = { has_unit_gfx = sub_sahran_unit_gfx }
+	always = no 
+	# exists = culture
+	# culture = { has_unit_gfx = sub_sahran_unit_gfx }
 }
 
 artifact_use_eastern_unit_visuals_trigger = {
-	culture = { has_unit_gfx = eastern_unit_gfx }
+	always = no
+# 	culture = { has_unit_gfx = eastern_unit_gfx } # L5R Disabled
 }
 
 artifact_use_indian_unit_visuals_trigger = {
-	culture = { has_unit_gfx = indian_unit_gfx }
+	always = no
+# 	culture = { has_unit_gfx = indian_unit_gfx } # L5R Disabled
 }
 
 artifact_use_mena_unit_visuals_trigger = {
-	culture = {
-		OR = {
-			has_unit_gfx = mena_unit_gfx
-			has_unit_gfx = iberian_muslim_unit_gfx
-		}
-	}
+	always = no
+	# 	culture = { # L5R Disabled
+# 		OR = {
+# 			has_unit_gfx = mena_unit_gfx
+# 			has_unit_gfx = iberian_muslim_unit_gfx
+# 		}
+# 	}
 }
 
 artifact_use_northern_unit_visuals_trigger = {
-	exists = culture
-	culture = {
-		OR = {
-			has_unit_gfx = norse_unit_gfx
-			has_unit_gfx = northern_unit_gfx
-		}
-	}
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = {
+# 		OR = {
+# 			has_unit_gfx = norse_unit_gfx
+# 			has_unit_gfx = northern_unit_gfx
+# 		}
+# 	}
 }
 
 artifact_use_mongol_unit_visuals_trigger = {
-	exists = culture
-	culture = { has_unit_gfx = mongol_unit_gfx }
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = { has_unit_gfx = mongol_unit_gfx }
 }
 
 artifact_use_western_unit_visuals_trigger = {
-	exists = culture
-	culture = {
-		OR = {
-			has_unit_gfx = western_unit_gfx
-			has_unit_gfx = eastern_unit_gfx
-			has_unit_gfx = iberian_christian_unit_gfx
-		}
-	}
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = {
+# 		OR = {
+# 			has_unit_gfx = western_unit_gfx
+# 			has_unit_gfx = eastern_unit_gfx
+# 			has_unit_gfx = iberian_christian_unit_gfx
+# 		}
+# 	}
 }
 
 artifact_use_iberian_muslim_unit_visuals_trigger = {
-	exists = culture
-	culture = {	has_unit_gfx = iberian_muslim_unit_gfx }
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = {	has_unit_gfx = iberian_muslim_unit_gfx }
 }
 
 artifact_use_iberian_christian_unit_visuals_trigger = {
-	exists = culture
-	culture = {	has_unit_gfx = iberian_christian_unit_gfx }
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = {	has_unit_gfx = iberian_christian_unit_gfx }
 }
 
 artifact_use_iranian_unit_visuals_trigger = {
-	exists = culture
-	culture = { has_unit_gfx = iranian_unit_gfx }
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = { has_unit_gfx = iranian_unit_gfx }
 }
 
-# BuildingGFX-based triggers
+# # BuildingGFX-based triggers
 artifact_use_indian_building_visuals_trigger = {
-	exists = culture
-	culture = { has_building_gfx = indian_building_gfx }
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = { has_building_gfx = indian_building_gfx }
 }
 
 artifact_use_mena_building_visuals_trigger = {
-	exists = culture
-	culture = { has_building_gfx = mena_building_gfx }
+	always = no
+	# 	exists = culture # L5R Disabled
+# 	culture = { has_building_gfx = mena_building_gfx }
 }
 
 artifact_use_mediterranean_building_visuals_trigger = {
-	exists = culture
-	culture = { OR = {
-		has_building_gfx = mediterranean_building_gfx
-		has_building_gfx = byzantine_building_gfx }
-	}
+	always = no
+	# 	exists = culture # L5R Disabled
+# 	culture = { OR = {
+# 		has_building_gfx = mediterranean_building_gfx
+# 		has_building_gfx = byzantine_building_gfx }
+# 	}
 }
 
 artifact_use_byzantine_building_visuals_trigger = {
-	exists = culture
-	culture = { has_building_gfx = byzantine_building_gfx }
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = { has_building_gfx = byzantine_building_gfx }
 }
 
 artifact_use_iberian_building_visuals_trigger = {
-	exists = culture
-	culture = { has_building_gfx = iberian_building_gfx }
+	always = no
+	# 	exists = culture # L5R Disabled
+	# 	culture = { has_building_gfx = iberian_building_gfx }
 }
 
 artifact_use_western_building_visuals_trigger = {
-	exists = culture
-	culture = { has_building_gfx = western_building_gfx }
+	always = no
+	# 	exists = culture # L5R Disabled
+# 	culture = { has_building_gfx = western_building_gfx }
 }
 
 artifact_use_norse_building_visuals_trigger = {
-	exists = culture
-	culture = { has_building_gfx = norse_building_gfx }
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = { has_building_gfx = norse_building_gfx }
 }
 
 artifact_use_steppe_building_visuals_trigger = {
 	exists = culture
-	OR = {
-		culture = { has_building_gfx = steppe_building_gfx }
+	OR = { 
+		# L5R Modified
+		# culture = { has_building_gfx = steppe_building_gfx }
 		culture = { has_building_gfx = japanese_building_gfx }
 		culture = { has_building_gfx = chinese_building_gfx }
 	}
 }
 
 artifact_use_iranian_building_visuals_trigger = {
-	exists = culture
-	culture = { has_building_gfx = iranian_building_gfx }
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = { has_building_gfx = iranian_building_gfx }
 }
 
 artifact_use_berber_building_visuals_trigger = {
-	exists = culture
-	culture = { has_building_gfx = berber_group_building_gfx }
+	always = no
+# 	exists = culture # L5R Disabled
+# 	culture = { has_building_gfx = berber_group_building_gfx }
 }
 
 # GFX Trigger-picker
@@ -769,7 +790,7 @@ artifact_feature_cloth_fustian_trigger = {
 	exists = scope:wealth
 	artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 70 }
 	artifact_region_trigger = { CHARACTER = scope:owner REGION = material_cloth_linen }
-	NOT = { scope:owner.religion = religion:judaism_religion }
+	# NOT = { scope:owner.religion = religion:judaism_religion }# L5R Disabled
 }		
 
 
@@ -983,11 +1004,12 @@ artifact_feature_pattern_wolf_trigger = {
 			}
 		}
 	}
+	L5R Disabled
 	scope:owner = {
 		faith = {
 			NOR = {
 				has_doctrine = tenet_aniconism
-				religion = religion:islam_religion
+				# religion = religion:islam_religion # L5R Disabled
 			}
 		}
 	}
@@ -999,7 +1021,7 @@ artifact_feature_pattern_animals_trigger = {
 		faith = {
 			NOR = {
 				has_doctrine = tenet_aniconism
-				religion = religion:islam_religion
+				# religion = religion:islam_religion # L5R Disabled
 			}
 		}
 	}
@@ -1011,7 +1033,7 @@ artifact_feature_pattern_local_animal_trigger = {
 		faith = {
 			NOR = {
 				has_doctrine = tenet_aniconism
-				religion = religion:islam_religion
+				# religion = religion:islam_religion # L5R Disabled
 			}
 		}
 	}
@@ -1023,7 +1045,7 @@ artifact_feature_pattern_beasts_trigger = {
 		faith = {
 			NOR = {
 				has_doctrine = tenet_aniconism
-				religion = religion:islam_religion
+				# religion = religion:islam_religion  # L5R Disabled
 			}
 		}
 	}
@@ -1035,7 +1057,7 @@ artifact_feature_pattern_bird_trigger = {
 		faith = {
 			NOR = {
 				has_doctrine = tenet_aniconism
-				religion = religion:islam_religion
+				# religion = religion:islam_religion # L5R Disabled
 			}
 		}
 	}
@@ -1080,7 +1102,7 @@ artifact_feature_pattern_religion_trigger = {
 		faith = {
 			NOR = {
 				has_doctrine = tenet_aniconism
-				religion = religion:islam_religion
+				# religion = religion:islam_religion # L5R Disabled
 			}
 		}
 	}
@@ -1103,7 +1125,7 @@ artifact_feature_pattern_eschatology_trigger = {
 		faith = {
 			NOR = {
 				has_doctrine = tenet_aniconism
-				religion = religion:islam_religion
+				# religion = religion:islam_religion # L5R Disabled
 			}
 		}
 	}
@@ -1126,7 +1148,7 @@ artifact_feature_pattern_religious_symbol_trigger = {
 		faith = {
 			NOR = {
 				has_doctrine = tenet_aniconism
-				religion = religion:islam_religion
+				# religion = religion:islam_religion # L5R Disabled
 			}
 		}
 	}
@@ -1902,48 +1924,50 @@ book_topic_witch_curse_sorcery_trigger = {
 
 # Saintly Bones
 saintly_bones_faith_trigger = { # christianity is of the right kind
-	trigger_if = {
-		limit = {
-			OR = {
-				scope:artifact.var:saint_bone_faith = faith:catholic
-				scope:artifact.var:saint_bone_faith = faith:orthodox
-			}
-		}
-		OR = {
-			faith = faith:catholic
-			faith = faith:orthodox
-			faith = { has_doctrine = tenet_christian_syncretism }
-		}
-	}
-	trigger_else_if = {
-		limit = {
-			OR = {
-				scope:artifact.var:saint_bone_faith = faith:nestorian
-				scope:artifact.var:saint_bone_faith = faith:coptic
-				scope:artifact.var:saint_bone_faith = faith:armenian_apostolic
-			}
-		}
-		OR = {
-			faith = faith:nestorian
-			faith = faith:coptic
-			faith = faith:armenian_apostolic
-		}
-	}
-	trigger_else_if = {
-		limit = { scope:artifact.var:saint_bone_faith = faith:insular_celtic }
-		faith = faith:insular_celtic
-	}
-	trigger_else = {
-		OR = {
-			faith = faith:catholic
-			faith = faith:orthodox
-			faith = faith:nestorian
-			faith = faith:coptic
-			faith = faith:armenian_apostolic
-			faith = faith:insular_celtic
-			faith = { has_doctrine = tenet_christian_syncretism }
-		}
-	}
+	always = no
+	# L5R Disabled
+	# trigger_if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:artifact.var:saint_bone_faith = faith:catholic
+	# 			scope:artifact.var:saint_bone_faith = faith:orthodox
+	# 		}
+	# 	}
+	# 	OR = {
+	# 		faith = faith:catholic
+	# 		faith = faith:orthodox
+	# 		faith = { has_doctrine = tenet_christian_syncretism }
+	# 	}
+	# }
+	# trigger_else_if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:artifact.var:saint_bone_faith = faith:nestorian
+	# 			scope:artifact.var:saint_bone_faith = faith:coptic
+	# 			scope:artifact.var:saint_bone_faith = faith:armenian_apostolic
+	# 		}
+	# 	}
+	# 	OR = {
+	# 		faith = faith:nestorian
+	# 		faith = faith:coptic
+	# 		faith = faith:armenian_apostolic
+	# 	}
+	# }
+	# trigger_else_if = {
+	# 	limit = { scope:artifact.var:saint_bone_faith = faith:insular_celtic }
+	# 	faith = faith:insular_celtic
+	# }
+	# trigger_else = {
+	# 	OR = {
+	# 		faith = faith:catholic
+	# 		faith = faith:orthodox
+	# 		faith = faith:nestorian
+	# 		faith = faith:coptic
+	# 		faith = faith:armenian_apostolic
+	# 		faith = faith:insular_celtic
+	# 		faith = { has_doctrine = tenet_christian_syncretism }
+	# 	}
+	# }
 }
 
 #Used after setting local animal to determine if a skull artifact/trophy can be made from that animal.
@@ -1962,15 +1986,18 @@ can_animal_produce_skull_trigger = {
 axe_unique_gfx_trigger = {
 	culture = {
 		OR = {
-			has_clothing_gfx = northern_clothing_gfx
-			has_clothing_gfx = mongol_clothing_gfx
-			has_clothing_gfx = byzantine_clothing_gfx
-			has_clothing_gfx = indian_clothing_gfx
-			has_clothing_gfx = african_clothing_gfx
-			has_clothing_gfx = mena_clothing_gfx
-			has_clothing_gfx = iranian_clothing_gfx
-			has_clothing_gfx = iberian_christian_clothing_gfx
-			has_clothing_gfx = iberian_muslim_clothing_gfx
+			# L5R Modified
+			# has_clothing_gfx = northern_clothing_gfx
+			# has_clothing_gfx = mongol_clothing_gfx
+			# has_clothing_gfx = byzantine_clothing_gfx
+			# has_clothing_gfx = indian_clothing_gfx
+			# has_clothing_gfx = african_clothing_gfx
+			# has_clothing_gfx = mena_clothing_gfx
+			# has_clothing_gfx = iranian_clothing_gfx
+			# has_clothing_gfx = iberian_christian_clothing_gfx
+			# has_clothing_gfx = iberian_muslim_clothing_gfx
+			has_cultural_pillar = heritage_crab
+			has_cultural_pillar = heritage_ichiro
 		}
 	}
 }
@@ -1978,15 +2005,16 @@ axe_unique_gfx_trigger = {
 sword_unique_gfx_trigger = {
 	culture = {
 		OR = {
-			has_clothing_gfx = northern_clothing_gfx
-			has_clothing_gfx = mongol_clothing_gfx
-			has_clothing_gfx = byzantine_clothing_gfx
-			has_clothing_gfx = indian_clothing_gfx
-			has_clothing_gfx = african_clothing_gfx
-			has_clothing_gfx = mena_clothing_gfx
-			has_clothing_gfx = iberian_christian_clothing_gfx
-			has_clothing_gfx = iberian_muslim_clothing_gfx
-			has_clothing_gfx = iranian_clothing_gfx
+			# L5R Modified
+			has_building_gfx = japanese_building_gfx
+			has_clothing_gfx = chinese_building_gfx
+			# has_clothing_gfx = byzantine_clothing_gfx
+			# has_clothing_gfx = indian_clothing_gfx
+			# has_clothing_gfx = african_clothing_gfx
+			# has_clothing_gfx = mena_clothing_gfx
+			# has_clothing_gfx = iberian_christian_clothing_gfx
+			# has_clothing_gfx = iberian_muslim_clothing_gfx
+			# has_clothing_gfx = iranian_clothing_gfx
 		}
 	}
 }
@@ -1994,12 +2022,15 @@ sword_unique_gfx_trigger = {
 hammer_unique_gfx_trigger = {
 	culture = {
 		OR = {
-			has_clothing_gfx = african_clothing_gfx
-			has_clothing_gfx = mongol_clothing_gfx
-			has_clothing_gfx = indian_clothing_gfx
-			has_clothing_gfx = mena_clothing_gfx
-			has_clothing_gfx = iberian_christian_clothing_gfx
-			has_clothing_gfx = iberian_muslim_clothing_gfx
+			# L5R Modified
+			# has_clothing_gfx = african_clothing_gfx
+			# has_clothing_gfx = mongol_clothing_gfx
+			# has_clothing_gfx = indian_clothing_gfx
+			# has_clothing_gfx = mena_clothing_gfx
+			# has_clothing_gfx = iberian_christian_clothing_gfx
+			# has_clothing_gfx = iberian_muslim_clothing_gfx
+			has_cultural_pillar = heritage_crab
+			has_cultural_pillar = heritage_ichiro
 		}
 	}
 }
@@ -2007,9 +2038,13 @@ hammer_unique_gfx_trigger = {
 dagger_unique_gfx_trigger = {
 	culture = {
 		OR = {
-			has_clothing_gfx = iberian_christian_clothing_gfx
-			has_clothing_gfx = iberian_muslim_clothing_gfx
-			has_clothing_gfx = indian_clothing_gfx
+			#L5R Modified
+			# has_clothing_gfx = iberian_christian_clothing_gfx
+			# has_clothing_gfx = iberian_muslim_clothing_gfx
+			# has_clothing_gfx = indian_clothing_gfx
+			has_cultural_pillar = heritage_lion
+			has_cultural_pillar = heritage_scorpion
+			has_cultural_pillar = heritage_crane
 		}
 	}
 }
@@ -2017,13 +2052,16 @@ dagger_unique_gfx_trigger = {
 mace_unique_gfx_trigger = {
 	culture = {
 		OR = {
-			has_clothing_gfx = mongol_clothing_gfx
-			has_clothing_gfx = byzantine_clothing_gfx
-			has_clothing_gfx = indian_clothing_gfx
-			has_clothing_gfx = african_clothing_gfx
-			has_clothing_gfx = mena_clothing_gfx
-			has_clothing_gfx = iberian_christian_clothing_gfx
-			has_clothing_gfx = iberian_muslim_clothing_gfx
+			#L5R Modified
+			# has_clothing_gfx = mongol_clothing_gfx
+			# has_clothing_gfx = byzantine_clothing_gfx
+			# has_clothing_gfx = indian_clothing_gfx
+			# has_clothing_gfx = african_clothing_gfx
+			# has_clothing_gfx = mena_clothing_gfx
+			# has_clothing_gfx = iberian_christian_clothing_gfx
+			# has_clothing_gfx = iberian_muslim_clothing_gfx
+			has_cultural_pillar = heritage_crab
+			has_cultural_pillar = heritage_ichiro
 		}
 	}
 }
@@ -2031,13 +2069,16 @@ mace_unique_gfx_trigger = {
 spear_unique_gfx_trigger = {
 	culture = {
 		OR = {
-			has_clothing_gfx = indian_clothing_gfx
-			has_clothing_gfx = mongol_clothing_gfx
-			has_clothing_gfx = african_clothing_gfx
-			has_clothing_gfx = mena_clothing_gfx
-			has_clothing_gfx = iberian_christian_clothing_gfx
-			has_clothing_gfx = iberian_muslim_clothing_gfx
-			has_clothing_gfx = iranian_clothing_gfx
+			# L5R Modified
+			has_building_gfx = japanese_building_gfx
+			has_clothing_gfx = chinese_building_gfx
+			# has_clothing_gfx = indian_clothing_gfx
+			# has_clothing_gfx = mongol_clothing_gfx
+			# has_clothing_gfx = african_clothing_gfx
+			# has_clothing_gfx = mena_clothing_gfx
+			# has_clothing_gfx = iberian_christian_clothing_gfx
+			# has_clothing_gfx = iberian_muslim_clothing_gfx
+			# has_clothing_gfx = iranian_clothing_gfx
 		}
 	}
 }
@@ -2049,22 +2090,24 @@ eligible_for_scientific_apparatus_armillary_sphere_trigger = {
 	$CHARACTER$ = {
 		culture = { has_innovation = innovation_armilary_sphere }
 		OR = {
-			# Wide spread in the Arabic world fairly early.
+			#L5R Disabled
+			# # Wide spread in the Arabic world fairly early.
 
-			has_court_language = language_arabic
-			has_court_language = language_iranian #FP3 addition 
+			# has_court_language = language_arabic
+			# has_court_language = language_iranian #FP3 addition 
 
 
-			knows_language = language_arabic
+			# knows_language = language_arabic
 			# Becomes commonplace towards the end of the period.
 			culture = { has_cultural_era_or_later = culture_era_late_medieval }
 			trigger_if = {
 				limit = { has_royal_court = yes }
-				OR = {
-					has_court_language = language_arabic
+				#L5R Disabled
+				# OR = {
+				# 	has_court_language = language_arabic
 					# Nerds can import the knowledge.
 					has_court_type = court_scholarly
-				}
+				# }
 			}
 		}
 	}
@@ -2085,17 +2128,19 @@ relic_war_valid_religious_artefact_trigger = {
 }
 
 relic_war_valid_struggle_artefact_trigger = {
-	exists = var:relic
-	var:relic = flag:iberian_struggle
-	scope:attacker = {
-		any_character_struggle = { is_struggle_type = iberian_struggle }
-		# Plus one of the valid using faiths.
-		OR = {
-			islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:attacker }
-			christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:attacker }
-		}
-	}
-	NOT = { scope:attacker.faith = scope:defender.faith }
+	always = no
+	#L5R Disabled
+	# exists = var:relic
+	# var:relic = flag:iberian_struggle
+	# scope:attacker = {
+	# 	any_character_struggle = { is_struggle_type = iberian_struggle }
+	# 	# Plus one of the valid using faiths.
+	# 	OR = {
+	# 		islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:attacker }
+	# 		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:attacker }
+	# 	}
+	# }
+	# NOT = { scope:attacker.faith = scope:defender.faith }
 
 }
 
@@ -2114,20 +2159,21 @@ relic_war_valid_against_defender_trigger = {
 					}
 				}
 			}
+			#L5R Disabled
 			# Struggle relics.
 			## The Bells of Santiago de Compostela.
-			AND = {
-				var:relic = flag:iberian_struggle
-				scope:attacker = {
-					any_character_struggle = { is_struggle_type = iberian_struggle }
-					# Plus one of the valid using faiths.
-					OR = {
-						islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:attacker }
-						christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:attacker }
-					}
-				}
-				NOT = { scope:attacker.faith = scope:defender.faith }
-			}
+			# AND = {
+			# 	var:relic = flag:iberian_struggle
+			# 	scope:attacker = {
+			# 		any_character_struggle = { is_struggle_type = iberian_struggle }
+			# 		# Plus one of the valid using faiths.
+			# 		OR = {
+			# 			islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:attacker }
+			# 			christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:attacker }
+			# 		}
+			# 	}
+			# 	NOT = { scope:attacker.faith = scope:defender.faith }
+			# }
 		}
 	}
 }
@@ -2151,20 +2197,21 @@ relic_war_valid_against_defender_vassal_trigger = {
 						}
 					}
 				}
+				#L5R Disabled
 				# Struggle relics.
 				## The Bells of Santiago de Compostela.
-				AND = {
-					var:relic = flag:iberian_struggle
-					scope:attacker = {
-						any_character_struggle = { is_struggle_type = iberian_struggle }
-						# Plus one of the valid using faiths.
-						OR = {
-							islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:attacker }
-							christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:attacker }
-						}
-					}
-					NOT = { scope:attacker.faith = scope:defender.faith }
-				}
+				# AND = {
+				# 	var:relic = flag:iberian_struggle
+				# 	scope:attacker = {
+				# 		any_character_struggle = { is_struggle_type = iberian_struggle }
+				# 		# Plus one of the valid using faiths.
+				# 		OR = {
+				# 			islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:attacker }
+				# 			christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:attacker }
+				# 		}
+				# 	}
+				# 	NOT = { scope:attacker.faith = scope:defender.faith }
+				# }
 			}
 		}
 	}
@@ -2190,10 +2237,10 @@ portrait_should_wield_longbow_trigger = {
 	}
 	trigger_else = {
 		culture = {
-			OR = {
-				has_cultural_tradition = tradition_longbow_competitions
-				has_clothing_gfx = indian_clothing_gfx
-			}
+			# OR = {
+				has_cultural_tradition = tradition_longbow_competitions 
+				# has_clothing_gfx = indian_clothing_gfx #L5R Disabled
+			# }
 		}
 	}
 }
@@ -2219,23 +2266,24 @@ artifact_war_claimable_artifact_trigger = {
 }
 
 sword_could_be_longsword_trigger = {
-	trigger_if = {
-		limit = { exists = scope:artifact.creator.culture }
-		scope:artifact.creator.culture = {
-			has_unit_gfx = western_unit_gfx
-			has_cultural_era_or_later = culture_era_late_medieval
-		}
-	}
-	trigger_else_if = { #If the creator is not found we use the owner. Often this would be if the creator is a dummy, which has no culture
-		limit = { exists = culture }
-		culture = {
-			has_unit_gfx = western_unit_gfx
-			has_cultural_era_or_later = culture_era_late_medieval
-		}
-	}
-	trigger_else = {
+	#L5R Disabled
+	# trigger_if = {
+	# 	limit = { exists = scope:artifact.creator.culture }
+	# 	scope:artifact.creator.culture = {
+	# 		has_unit_gfx = western_unit_gfx
+	# 		has_cultural_era_or_later = culture_era_late_medieval
+	# 	}
+	# }
+	# trigger_else_if = { #If the creator is not found we use the owner. Often this would be if the creator is a dummy, which has no culture
+	# 	limit = { exists = culture }
+	# 	culture = {
+	# 		has_unit_gfx = western_unit_gfx
+	# 		has_cultural_era_or_later = culture_era_late_medieval
+	# 	}
+	# }
+	# trigger_else = {
 		always = no #We should never get here as all created artifacts should have an owner.
-	}
+	# }
 }
 
 any_recent_previous_owner = {
