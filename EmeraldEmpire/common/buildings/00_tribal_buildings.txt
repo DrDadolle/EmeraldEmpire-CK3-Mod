@@ -36,7 +36,7 @@ tribe_01 = {
 		names = {
 			"building_india_tribal_01_a_mesh"
 		}
-		graphical_cultures = { yamato_building_gfx, indian_building_gfx }
+		graphical_cultures = { japanese_building_gfx, chinese_building_gfx, indian_building_gfx }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -143,7 +143,7 @@ tribe_02 = {
 		names = {
 			"building_india_tribal_01_a_mesh"
 		}
-		graphical_cultures = { yamato_building_gfx, indian_building_gfx }
+		graphical_cultures = { japanese_building_gfx, chinese_building_gfx, indian_building_gfx }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}

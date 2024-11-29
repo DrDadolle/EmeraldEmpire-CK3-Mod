@@ -18,10 +18,11 @@ heresy.0001 = {
 	scope = faith
 
 	trigger = {
-		OR = {
-			NOT = { has_doctrine = eastern_hostility_doctrine }
-			has_doctrine = heresy_hostility_doctrine #Zoroastrians also get heresies, despite being Eastern.
-		}
+		#L5R Disabled
+		# OR = {
+		# 	NOT = { has_doctrine = eastern_hostility_doctrine }
+		# 	has_doctrine = heresy_hostility_doctrine #Zoroastrians also get heresies, despite being Eastern.
+		# }
 	}
 
 	immediate = {
@@ -133,25 +134,21 @@ heresy.0001 = {
 					}
 					add_to_list = potential_heresies
 				}
-				# if = {
-				# 	# Abrahamics also get bonus dualistic heresies
-				# 	limit = {
-				# 		is_in_family = rf_abrahamic
-				# 	}
-				# 	if = {
-				# 		limit = {
-				# 			this = religion:christianity_religion
-				# 		}
-				# 		faith:mandeaism = {
-				# 			add_to_list = potential_heresies
-				# 		}
-				# 		faith:priscillianism = {
-				# 			add_to_list = potential_heresies
-				# 		}
-				# 		faith:cainitism = {
-				# 			add_to_list = potential_heresies
-				# 		}
-
+				if = {
+					# L5R Added
+					# Specify heresies for rokugani faiths
+					limit = {
+						is_in_family = rf_rokugan
+					}
+					if = {
+						limit = {
+							this = religion:shinseism_religion
+						}
+						faith:perfect_earth_sect = {
+							add_to_list = potential_heresies
+						}
+					}
+				}
 				# 	}
 				# 	else_if = {
 				# 		limit = {

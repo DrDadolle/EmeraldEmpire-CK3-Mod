@@ -1,9 +1,8 @@
 ﻿shogunate_should_be_no_hair_trigger = {
 	exists = this
-	# shogunate_has_yamato_culture_trigger = yes
 	OR = {
 		has_trait = devoted
-	# 	has_council_position = councillor_court_chaplain
+		has_council_position = councillor_court_chaplain
 	# 	culture = { has_cultural_pillar = heritage_buddhist }
 		religion = religion:shinseism_religion
 	}
@@ -21,70 +20,6 @@ shogunate_armor_era2_trigger = {	#newer style of o-yoroi (if they get differenti
 shogunate_armor_era3_trigger = {	#only gusoku and nanban do whenever that gets made
 	current_year >= 1000
 }
-
-# portrait_yamato_clothing_trigger = {
-# 	scope:culture = {
-# 		portrait_yamato_clothing_contents_trigger = yes
-# 	}
-# }
-
-# portrait_yamato_clothing_spouse_trigger = {
-# 	culture = {
-# 		portrait_yamato_clothing_contents_trigger = yes
-# 	}
-# }
-
-# portrait_yamato_clothing_contents_trigger = {
-# 	has_clothing_gfx = yamato_clothing_gfx
-# }
-
-# portrait_ryukyu_clothing_trigger = {
-# 	scope:culture = {
-# 		portrait_ryukyu_clothing_contents_trigger = yes
-# 	}
-# }
-
-# portrait_ryukyu_clothing_spouse_trigger = {
-# 	culture = {
-# 		portrait_ryukyu_clothing_contents_trigger = yes
-# 	}
-# }
-
-# portrait_ryukyu_clothing_contents_trigger = {
-# 	has_clothing_gfx = ryukyu_clothing_gfx
-# }
-
-# portrait_ainu_clothing_trigger = {
-# 	scope:culture = {
-# 		portrait_ainu_clothing_contents_trigger = yes
-# 	}
-# }
-
-# portrait_ainu_clothing_spouse_trigger = {
-# 	culture = {
-# 		portrait_ainu_clothing_contents_trigger = yes
-# 	}
-# }
-
-# portrait_ainu_clothing_contents_trigger = {
-# 	has_clothing_gfx = ainu_clothing_gfx
-# }
-
-# portrait_japanese_clothing_trigger = {
-# 	scope:culture = {
-# 		portrait_japanese_clothing_contents_trigger = yes
-# 	}
-# }
-
-# portrait_japanese_clothing_spouse_trigger = {
-# 	culture = {
-# 		portrait_japanese_clothing_contents_trigger = yes
-# 	}
-# }
-
-# portrait_japanese_clothing_contents_trigger = {
-# 	has_clothing_gfx = rokugani_clothing_gfx
-# }
 
 ##### Crab Clan
 portrait_crab_clothing_trigger = {

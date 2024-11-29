@@ -333,7 +333,8 @@ artifact_use_steppe_building_visuals_trigger = {
 	exists = culture
 	OR = {
 		culture = { has_building_gfx = steppe_building_gfx }
-		culture = { has_building_gfx = yamato_building_gfx }
+		culture = { has_building_gfx = japanese_building_gfx }
+		culture = { has_building_gfx = chinese_building_gfx }
 	}
 }
 
