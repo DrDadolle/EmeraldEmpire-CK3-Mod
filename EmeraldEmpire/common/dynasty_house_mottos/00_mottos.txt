@@ -252,7 +252,7 @@ single_noun = {
 x_as_y = { # Cunning as the Fox, Strong as the Bear
 	insert = adjective_immaterial
 	insert = the_creature
-	# trigger = { #L5R Diseabled
+	# trigger = { #L5R Disabled
 	# 	NOT = {
 	# 		faith = {
 	# 			religion_tag = islam_religion
@@ -373,7 +373,7 @@ until_our_x_engulfs_the_world = {
 	}
 }
 
-# we_swear_by_x = { #L5R Diseabled
+# we_swear_by_x = { #L5R Disabled
 # 	insert = norse_gods_aspects_list
 # 	weight = {
 # 		value = 2000
@@ -386,7 +386,7 @@ until_our_x_engulfs_the_world = {
 # 	}
 # }
 
-# we_carve_runes_of_x = { #L5R Diseabled
+# we_carve_runes_of_x = { #L5R Disabled
 # 	insert = norse_gods_aspects_list
 # 	weight = {
 # 		value = 2000
@@ -399,7 +399,7 @@ until_our_x_engulfs_the_world = {
 # 	}
 # }
 
-# with_x_and_y = { #L5R Diseabled
+# with_x_and_y = { #L5R Disabled
 # 	insert = noun_immaterial
 # 	insert = norse_gods_aspects_list
 # 	weight = {
@@ -413,7 +413,7 @@ until_our_x_engulfs_the_world = {
 # 	}
 # }
 
-# we_tell_tales_of_x = { #L5R Diseabled
+# we_tell_tales_of_x = { #L5R Disabled
 # 	insert = norse_gods_aspects_list
 # 	weight = {
 # 		value = 2000
@@ -426,7 +426,7 @@ until_our_x_engulfs_the_world = {
 # 	}
 # }
 
-# x_is_our_y = { #L5R Diseabled
+# x_is_our_y = { #L5R Disabled
 # 	insert = norse_gods_aspects_list
 # 	insert = weapon
 # 	weight = {
@@ -440,7 +440,7 @@ until_our_x_engulfs_the_world = {
 # 	}
 # }
 
-# x_guides_us = { #L5R Diseabled
+# x_guides_us = { #L5R Disabled
 # 	insert = norse_gods_aspects_list
 # 	weight = {
 # 		value = 2000
@@ -453,7 +453,7 @@ until_our_x_engulfs_the_world = {
 # 	}
 # }
 
-# house_was_forged_by_x = { #L5R Diseabled
+# house_was_forged_by_x = { #L5R Disabled
 # 	insert = norse_gods_aspects_list
 # 	weight = {
 # 		value = 2000
@@ -466,7 +466,7 @@ until_our_x_engulfs_the_world = {
 # 	}
 # }
 
-# founder_shares_x = { #L5R Diseabled
+# founder_shares_x = { #L5R Disabled
 # 	insert = norse_gods_aspects_list
 # 	weight = {
 # 		value = 2000
@@ -479,7 +479,7 @@ until_our_x_engulfs_the_world = {
 # 	}
 # }
 
-# various_godly_things = { #L5R Diseabled
+# various_godly_things = { #L5R Disabled
 # 	insert = various_godly_things_list
 # 	trigger = {
 # 		faith = {

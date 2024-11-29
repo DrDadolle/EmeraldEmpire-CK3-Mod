@@ -817,10 +817,10 @@ pool_repopulate_local_flavor = {
 		if = { # Guaranteed warriors
 			limit = {
 				OR = {
-					culture = culture:matsu #Rokugan
-					culture = culture:akodo #Rokugan
-					culture = culture:moto #Rokugan
-					culture = culture:daidoji #Rokugan
+					culture = culture:matsu #L5R
+					culture = culture:akodo #L5R
+					culture = culture:moto #L5R
+					culture = culture:daidoji #L5R
 				}
 			}
 			remove_trait = education_learning_3

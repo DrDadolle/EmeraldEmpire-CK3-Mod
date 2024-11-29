@@ -1,7 +1,7 @@
 ﻿###################################
 # Defend Caliphate Ending
 ###################################
-#L5R Diseabled
+#L5R Disabled
 # Make it a Pious playthrough that encourage the Caliph to get support from the Muslim world
 # struggle_persia_ending_assertion_decision = {
 # 	decision_group_type = major
@@ -135,7 +135,7 @@
 ###################################
 # Humiliate Caliphate Ending
 ###################################
-#L5R Diseabled
+#L5R Disabled
 # struggle_persia_ending_foundation_decision = {
 # 	decision_group_type = major
 # 	title = struggle_persia_ending_foundation
@@ -491,7 +491,7 @@
 ###################################
 # Resurgent Persia Ending
 ###################################
-#L5R Diseabled
+#L5R Disabled
 # struggle_persia_ending_rekindle_iran_decision = {
 # 	decision_group_type = major
 # 	title = struggle_persia_ending_rekindle_iran
@@ -930,7 +930,7 @@ favour_skilled_outsiders_decision = {
 ###################################
 # Sunder Caliphate Ending
 ###################################
-#L5R Diseabled
+#L5R Disabled
 # fp3_sunder_the_caliphate_decision = {
 # 	decision_group_type = major
 # 	title = fp3_sunder_the_caliphate_decision
@@ -1026,7 +1026,7 @@ favour_skilled_outsiders_decision = {
 ###################################
 # Become a Clan Government
 ###################################
-#L5R Diseabled
+#L5R Disabled
 # fp3_become_clan_government_decision = {
 # 	picture = {
 # 		reference = "gfx/interface/illustrations/decisions/fp3/friendly.dds"

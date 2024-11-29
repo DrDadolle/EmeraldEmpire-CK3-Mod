@@ -366,11 +366,11 @@ on_birth_real_father = {
 # scope:is_bastard, true if a known bastard
 on_birth_child = {
 	events = {
-		# middle_east_decisions.0012 #Saoshyant Descendants. #Rokugan
-		rokugan_birth.0010 # Rokugan add kami_descendand trait
+		# middle_east_decisions.0012 #Saoshyant Descendants. #L5R
+		rokugan_birth.0010 # L5R add kami_descendand trait
 		major_decisions.0101 #Divine/Consecrated Blood Descendants.
 		birth.8001 #Reincarnation
-		# birth.8011 #Born in the Purple #Rokugan
+		# birth.8011 #Born in the Purple #L5R
 		trait_specific.0500 #To handle genetic traits not expressed until later in life
 		debug.0010 # Disease data tracking
 	}

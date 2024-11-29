@@ -312,7 +312,7 @@ on_game_start_after_lobby = {
 
 
 		# In 867, the Slavic cultures are still very similar to each other, so we start them off at a very high tolerance.
-		# if = { #Rokugan
+		# if = { #L5R
 		# 	limit = { current_date = 867.1.1 }
 		# 	# West Slavic.
 		# 	culture:pommeranian = {

@@ -61,7 +61,7 @@ lineofmoshi1 = {
 		birth = yes
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Moshi Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Moshi Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
@@ -84,7 +84,7 @@ lineofkasuga1 = {
 		birth = yes
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Kasuga Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Kasuga Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
@@ -110,7 +110,7 @@ lineofkitsune1 = {
 		birth = yes
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Kitsune Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Kitsune Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
@@ -135,7 +135,7 @@ lineofsuzume1 = {
 		birth = yes
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Suzume Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Suzume Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 3 } }
@@ -161,7 +161,7 @@ lineofusagi1 = {
 		birth = yes
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Usagi Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Usagi Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
@@ -187,7 +187,7 @@ lineoftsuruchi1 = {
 		birth = yes
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Tsuruchi Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Tsuruchi Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 1 } }
@@ -223,7 +223,7 @@ lineofyoritomo1 = {
 		add_spouse = lineofyoritomo2 # Komori Linmei
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Yoritomo Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Yoritomo Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 7 } }
@@ -278,7 +278,7 @@ lineofnekoma1 = {
 		birth = yes
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Nekoma Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Nekoma Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 3 } }
@@ -304,7 +304,7 @@ lineoftoritaka1 = {
 	}
 
 
-	#Rokugan Workaround to add dynasty splendor to Toritaka Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Toritaka Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 3 } }
@@ -329,7 +329,7 @@ lineofichiro1 = {
 		birth = yes
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Ichiro Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Ichiro Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 2 } }
@@ -356,7 +356,7 @@ lineoftonbo1 = {
 		birth = yes
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Tonbo Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Tonbo Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
@@ -383,7 +383,7 @@ lineofkaikoga1 = {
 		birth = yes
 	}
 
-	#Rokugan Workaround to add dynasty splendor to Kaikoga Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Kaikoga Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 2 } }
@@ -411,7 +411,7 @@ lineofshika1 = {
 	}
 
 
-	#Rokugan Workaround to add dynasty splendor to Shika Dynasty for the bookmark 1123
+	#L5R Workaround to add dynasty splendor to Shika Dynasty for the bookmark 1123
 	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
 	1123.1.1 = {
 		effect = { dynasty = { add_dynasty_prestige_level = 5 } }

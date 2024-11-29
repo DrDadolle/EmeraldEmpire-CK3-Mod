@@ -1000,7 +1000,7 @@ independence_faction_modifiers = {
 
 		add = {
 			value = -150
-			# L5R Diseabled
+			# L5R Disabled
 			# if = {
 			# 	limit = {
 			# 		exists = title:e_hre
@@ -1163,7 +1163,7 @@ independence_faction_modifiers = {
 		}
 	}
 
-	# L5R Diseabled
+	# L5R Disabled
 	# If in struggle, rather go for Dissolution faction
 	# modifier = {
 	# 	desc = "FACTION_REASON_PREFER_DISSOLUTION_FACTION"
@@ -2339,7 +2339,7 @@ claimant_faction_modifiers = {
 		}
 	}
 
-	# L5R Diseabled
+	# L5R Disabled
 	# Decreases Claimant faction likelihood if Pacification is high
 	# This has lower thresholds but also lower rewards
 	# modifier = {
@@ -2402,7 +2402,7 @@ claimant_faction_modifiers = {
 	# 	}
 	# }
 
-	# L5R Diseabled
+	# L5R Disabled
 	# Finally, multiplicative modifier for if they're Anglo-Saxon and you're Norman
 	# modifier = {
 	# 	desc = "FACTION_REASON_HARRYING_ANGLO_SAXON"
@@ -2491,7 +2491,7 @@ claimant_faction_modifiers = {
 	}
 }
 
-# L5R Diseabled
+# L5R Disabled
 struggle_faction_modifiers = {
 	# # Struggle Modifiers.
 	# ## Weight up in general sometimes.

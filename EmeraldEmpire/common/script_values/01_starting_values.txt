@@ -187,7 +187,7 @@ starting_culture_acceptance = {
 	
 	# Historical one-time increases to Cultural Acceptance (added on top of the baseline)
 	# Note: List the cultures in the same order as they appear in script in common\culture\cultures.
-	#L5R Diseabled
+	#L5R Disabled
 	# if = {
 	# 	limit = { current_date >= 1060.1.1 } # Changes for the 1066 bookmark
 	# 	if = {

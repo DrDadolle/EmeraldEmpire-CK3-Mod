@@ -1452,7 +1452,7 @@ change_state_faith = {
 				top_liege ?= { government_has_flag = government_is_tribal }
 				top_liege ?= { government_has_flag = government_is_theocracy }
 			}
-			#L5R Diseabled
+			#L5R Disabled
 			# OR = {
 			# 	culture = { has_cultural_pillar = heritage_byzantine }
 			# 	top_liege ?= {
@@ -1701,7 +1701,7 @@ adopt_state_faith = {
 				top_liege ?= { government_has_flag = government_is_tribal }
 				top_liege ?= { government_has_flag = government_is_theocracy }
 			}
-			#L5R Diseabled
+			#L5R Disabled
 			# OR = {
 			# 	culture = { has_cultural_pillar = heritage_byzantine }
 			# 	top_liege ?= {
