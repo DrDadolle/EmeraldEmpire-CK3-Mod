@@ -2853,6 +2853,7 @@ bp1_yearly.3300 = {
 	cooldown = { years = 15 }
 
 	override_background = {
+		#L5R Disabled
 		# trigger = {
 		# 	NOR = {
 		# 		faith = { religion = religion:hinduism_religion }
@@ -2862,6 +2863,7 @@ bp1_yearly.3300 = {
 		# }
 		reference = temple
 	}
+	#L5R Disabled
 	# override_background = {
 	# 	trigger = {
 	# 		OR = {
@@ -2924,6 +2926,7 @@ bp1_yearly.3301 = {
 	cooldown = { years = 15 }
 
 	override_background = {
+		#L5R Disabled
 		# trigger = {
 		# 	NOR = {
 		# 		faith = { religion = religion:hinduism_religion }
@@ -2933,6 +2936,7 @@ bp1_yearly.3301 = {
 		# }
 		reference = temple
 	}
+	#L5R Disabled
 	# override_background = {
 	# 	trigger = {
 	# 		OR = {

@@ -199,7 +199,7 @@ adoptionist_school = {
 		always = no
 	}
 
-	# special_doctrine_adoptionist_school_elipandic_doctrine = { # LoTR
+	# special_doctrine_adoptionist_school_elipandic_doctrine = { #L5R Disabled
 	# 	parameters = {
 	# 		# Elipandics only think other ecumenicals are astray rather than hostile.
 	# 		## We can't localise the actual parameter due to structural shenanigans, so we make a dummy one.
@@ -218,7 +218,7 @@ adoptionist_school = {
 	# 	}
 	# }
 
-	# special_doctrine_adoptionist_school_felicitous_doctrine = { # LoTR
+	# special_doctrine_adoptionist_school_felicitous_doctrine = { #L5R Disabled
 	# 	parameters = {
 	# 		# Felicians only think other ecumenicals are astray rather than hostile.
 	# 		## We can't localise the actual parameter due to structural shenanigans, so we make a dummy one.
@@ -237,7 +237,7 @@ adoptionist_school = {
 	# 	}
 	# }
 
-	# special_doctrine_adoptionist_school_radical_doctrine = { # LoTR
+	# special_doctrine_adoptionist_school_radical_doctrine = { #L5R Disabled
 	# 	parameters = {
 	# 		# Radicals hate & are hated by everyone.
 	# 		hostility_override_special_doctrine_is_christian_faith = 3
@@ -266,7 +266,7 @@ not_allowed_to_hof = {
 		always = no
 	}
 	
-	# special_doctrine_not_allowed_to_hof = { # LoTR
+	# special_doctrine_not_allowed_to_hof = { #L5R Disabled
 	# 	name = {
 	# 		first_valid = {
 	# 			triggered_desc = {
@@ -318,7 +318,7 @@ has_jizya_doctrine = {
 	is_available_on_create = {
 		OR = {
 			has_doctrine = special_doctrine_jizya
-			#has_doctrine = special_doctrine_is_islamic_faith #LotR
+			#has_doctrine = special_doctrine_is_islamic_faith #L5R Disabled
 		}
 	}
 

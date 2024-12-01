@@ -835,18 +835,19 @@ task_promote_culture = {
 				desc = bp2_devoted_to_tradition_modifier_conversion_task_desc
 			}
 		}
-		if = {
-			limit = {
-				scope:councillor_liege = {
-					has_title = title:c_byzantion
-					title:c_byzantion = { has_county_modifier = pandidakterion_university_modifier }
-				}
-			}
-			multiply = {
-				value = 1.25
-				desc = pandidakterion_university_modifier
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		scope:councillor_liege = {
+		# 			has_title = title:c_byzantion
+		# 			title:c_byzantion = { has_county_modifier = pandidakterion_university_modifier }
+		# 		}
+		# 	}
+		# 	multiply = {
+		# 		value = 1.25
+		# 		desc = pandidakterion_university_modifier
+		# 	}
+		# }
 		if = {
 			limit = {
 				scope:county = { has_county_modifier = improve_promote_culture_modifier }

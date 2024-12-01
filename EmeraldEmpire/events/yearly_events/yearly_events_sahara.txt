@@ -65,626 +65,631 @@ scripted_trigger neighbouring_proselytising_trader_province_scripted_trigger = {
 
 #	Traders turn up initially.
 #		by Ewan Cowhig Croft
-yearly_saharan.0001 = {
-	type = character_event
-	title = yearly_saharan.0001.t
-	desc = yearly_saharan.0001.desc
-	theme = stewardship
-	left_portrait = {
-		character = root
-		animation = personality_honorable
-	}
-  	override_background = { reference = market }
+#L5R Disabled
+# yearly_saharan.0001 = {
+# 	type = character_event
+# 	title = yearly_saharan.0001.t
+# 	desc = yearly_saharan.0001.desc
+# 	theme = stewardship
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_honorable
+# 	}
+#   	override_background = { reference = market }
 
-	trigger = {
-		is_available_at_peace_adult = yes
+# 	trigger = {
+# 		is_available_at_peace_adult = yes
 
-		#Mustn't have recently had this event, or else have other enclaves currently maturing in their territory.
-		NOR = {
-			has_character_flag = yearly_saharan_0001
-			any_held_title = {
-				tier = tier_county
-				county = { has_county_modifier = foreign_trader_enclaves_saharan_modifier }
-			}
-		}
+# 		#Mustn't have recently had this event, or else have other enclaves currently maturing in their territory.
+# 		NOR = {
+# 			has_character_flag = yearly_saharan_0001
+# 			any_held_title = {
+# 				tier = tier_county
+# 				county = { has_county_modifier = foreign_trader_enclaves_saharan_modifier }
+# 			}
+# 		}
 
-		#Must be a native faith who has not yet reformed.
-		valid_faiths_scripted_trigger = yes
+# 		#Must be a native faith who has not yet reformed.
+# 		valid_faiths_scripted_trigger = yes
 
-		#Must exists in the proper region, and have a valid affectable county.
-		capital_province = {
-			OR = {
-				geographical_region = custom_sahel_proper
-				geographical_region = custom_sub_saharan_africa_immediate
-			}
-		}
-		any_held_title = { suitable_for_faith_traders_scripted_trigger = yes }
-	}
+# 		#Must exists in the proper region, and have a valid affectable county.
+# 		capital_province = {
+# 			OR = {
+# 				geographical_region = custom_sahel_proper
+# 				geographical_region = custom_sub_saharan_africa_immediate
+# 			}
+# 		}
+# 		any_held_title = { suitable_for_faith_traders_scripted_trigger = yes }
+# 	}
 
-	weight_multiplier = {
-		base = 1
-	}
+# 	weight_multiplier = {
+# 		base = 1
+# 	}
 
-	immediate = {
-		add_character_flag = {
-			flag = yearly_saharan_0001
-			days = 7300
-		}
-		save_scope_as = initial_holder
-		random_held_title = {
-			limit = { suitable_for_faith_traders_scripted_trigger = yes }
-			save_scope_as = target_county
-			random_neighboring_county = {
-				limit = { neighbouring_proselytising_trader_province_scripted_trigger = yes }
-				save_scope_as = source_county
-			}
-		}
-	}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = yearly_saharan_0001
+# 			days = 7300
+# 		}
+# 		save_scope_as = initial_holder
+# 		random_held_title = {
+# 			limit = { suitable_for_faith_traders_scripted_trigger = yes }
+# 			save_scope_as = target_county
+# 			random_neighboring_county = {
+# 				limit = { neighbouring_proselytising_trader_province_scripted_trigger = yes }
+# 				save_scope_as = source_county
+# 			}
+# 		}
+# 	}
 
-	#Allow them to pay you to stay.
-	option = {
-		name = yearly_saharan.0001.a
+# 	#Allow them to pay you to stay.
+# 	option = {
+# 		name = yearly_saharan.0001.a
 		
-		#Take a noice bribe.
-		add_gold = major_gold_value
+# 		#Take a noice bribe.
+# 		add_gold = major_gold_value
 		
-		#Added a beneficial enclave modifier.
-		scope:target_county = {
-			add_county_modifier = {
-				modifier = foreign_trader_enclaves_saharan_modifier
-				years = 20
-			}
-		}
+# 		#Added a beneficial enclave modifier.
+# 		scope:target_county = {
+# 			add_county_modifier = {
+# 				modifier = foreign_trader_enclaves_saharan_modifier
+# 				years = 20
+# 			}
+# 		}
 
-		#Warn the user that this may have repercussions, or at least imply such.
-		custom_tooltip = yearly_saharan.0001.a.tt
-		hidden_effect = {
-			trigger_event = {
-				id = yearly_saharan.0002
-				years = { 10 20 }
-			}
-		}
+# 		#Warn the user that this may have repercussions, or at least imply such.
+# 		custom_tooltip = yearly_saharan.0001.a.tt
+# 		hidden_effect = {
+# 			trigger_event = {
+# 				id = yearly_saharan.0002
+# 				years = { 10 20 }
+# 			}
+# 		}
 
-		stress_impact = {
-			just = minor_stress_impact_gain
-			greedy = minor_stress_impact_loss
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 0.25
-				ai_zeal = -0.25
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = just
-			}
-			modifier = {	#Weight down for stress.
-				add = 10
-				has_trait = greedy
-			}
-		}
-	}
+# 		stress_impact = {
+# 			just = minor_stress_impact_gain
+# 			greedy = minor_stress_impact_loss
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 0.25
+# 				ai_zeal = -0.25
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = just
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = 10
+# 				has_trait = greedy
+# 			}
+# 		}
+# 	}
 	
-	#Dismiss them, but they can keep moving through.
-	option = {
-		name = yearly_saharan.0001.b
+# 	#Dismiss them, but they can keep moving through.
+# 	option = {
+# 		name = yearly_saharan.0001.b
 		
-		#Well, aren't you mighty Mr. Kicks-Downwards?
-		add_prestige = minor_prestige_gain
+# 		#Well, aren't you mighty Mr. Kicks-Downwards?
+# 		add_prestige = minor_prestige_gain
 
-		#If you and the province have the same culture, people approve of you sticking up for your limited protectionism.
-		if = {
-			limit = { root.culture = scope:target_county.culture }
-			add_character_modifier = {
-				modifier = respects_local_traditions_saharan_modifier
-				years = 15
-			}
-		}
+# 		#If you and the province have the same culture, people approve of you sticking up for your limited protectionism.
+# 		if = {
+# 			limit = { root.culture = scope:target_county.culture }
+# 			add_character_modifier = {
+# 				modifier = respects_local_traditions_saharan_modifier
+# 				years = 15
+# 			}
+# 		}
 
-		#The county suffers a little for the clarified restrictions on foreign merchants.
-		scope:target_county = {
-			add_county_modifier = {
-				modifier = foreign_traders_unable_to_root_saharan_modifier
-				years = 20
-			}
-		}
+# 		#The county suffers a little for the clarified restrictions on foreign merchants.
+# 		scope:target_county = {
+# 			add_county_modifier = {
+# 				modifier = foreign_traders_unable_to_root_saharan_modifier
+# 				years = 20
+# 			}
+# 		}
 
-		stress_impact = {
-			greedy = minor_stress_impact_gain
-			zealous = minor_stress_impact_loss
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_zeal = 0.25
-				ai_greed = -0.25
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = greedy
-			}
-			modifier = {	#Weight down for stress.
-				add = 10
-				has_trait = zealous
-			}
-		}
-	}
+# 		stress_impact = {
+# 			greedy = minor_stress_impact_gain
+# 			zealous = minor_stress_impact_loss
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_zeal = 0.25
+# 				ai_greed = -0.25
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = 10
+# 				has_trait = zealous
+# 			}
+# 		}
+# 	}
 	
-	#Dismiss them and forbid their future trade!
-	option = {
-		name = yearly_saharan.0001.c
+# 	#Dismiss them and forbid their future trade!
+# 	option = {
+# 		name = yearly_saharan.0001.c
 
-		#Confiscate goods, property, livestock, the lot!
-		add_gold = massive_gold_value
+# 		#Confiscate goods, property, livestock, the lot!
+# 		add_gold = massive_gold_value
 
-		#If you share the same faith as the province, this act is a pious protection of the spirituality of your people. Unless you're pluralist.
-		if = {
-			limit = {
-				root.faith = scope:target_county.faith
-				NOR = {
-					root.faith = { has_doctrine = doctrine_pluralism_pluralistic }
-					#Not syncretised with Eastern Family.
-					AND = {
-						root.faith = { has_doctrine = tenet_eastern_syncretism }
-						scope:source_county.faith.religion = { is_in_family = rf_eastern }
-					}
-					#Not syncretised with Christianity.
-					AND = {
-						root.faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
-						scope:source_county.faith = { religion_tag = christianity_religion }
-					}
-					#Not syncretised with Islam.
-					AND = {
-						root.faith = { has_doctrine_parameter = islamic_syncretic_actor_opinion_active }
-						scope:source_county.faith = { religion_tag = islam_religion }
-					}
-					#Not syncretised with Judaism.
-					AND = {
-						root.faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
-						scope:source_county.faith = { religion_tag = judaism_religion }
-					}
-				}
-			}
-			#Piety scales depending on how monistic you are.
-			if = {
-				limit = {
-					root.faith = { has_doctrine = doctrine_pluralism_righteous }
-				}
-				add_piety = minor_piety_value
-			}
-			if = {
-				limit = {
-					root.faith = { has_doctrine = doctrine_pluralism_fundamentalist }
-				}
-				add_piety = medium_piety_value
-			}
-		}
+# 		#If you share the same faith as the province, this act is a pious protection of the spirituality of your people. Unless you're pluralist.
+# 		if = {
+# 			limit = {
+# 				root.faith = scope:target_county.faith
+# 				NOR = {
+# 					root.faith = { has_doctrine = doctrine_pluralism_pluralistic }
+# 					#Not syncretised with Eastern Family.
+# 					AND = {
+# 						root.faith = { has_doctrine = tenet_eastern_syncretism }
+# 						scope:source_county.faith.religion = { is_in_family = rf_eastern }
+# 					}
+# 					#Not syncretised with Christianity.
+# 					AND = {
+# 						root.faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
+# 						scope:source_county.faith = { religion_tag = christianity_religion }
+# 					}
+# 					#Not syncretised with Islam.
+# 					AND = {
+# 						root.faith = { has_doctrine_parameter = islamic_syncretic_actor_opinion_active }
+# 						scope:source_county.faith = { religion_tag = islam_religion }
+# 					}
+# 					#Not syncretised with Judaism.
+# 					AND = {
+# 						root.faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
+# 						scope:source_county.faith = { religion_tag = judaism_religion }
+# 					}
+# 				}
+# 			}
+# 			#Piety scales depending on how monistic you are.
+# 			if = {
+# 				limit = {
+# 					root.faith = { has_doctrine = doctrine_pluralism_righteous }
+# 				}
+# 				add_piety = minor_piety_value
+# 			}
+# 			if = {
+# 				limit = {
+# 					root.faith = { has_doctrine = doctrine_pluralism_fundamentalist }
+# 				}
+# 				add_piety = medium_piety_value
+# 			}
+# 		}
 
-		#The county, and any others in the duchy not held by a different player, get a significant malus.
-		scope:target_county = {
-			add_county_modifier = {
-				modifier = local_recession_epicentre_saharan_modifier
-				years = 20
-			}
-			every_neighboring_county = {
-				limit = {
-					holder.top_liege = root.top_liege
-					OR = {
-						#If done by a player, let them screw everyone. Funnier that way.
-						root = { is_ai = no }
-						#Otherwise, exempt players for agency-raisins.
-						AND = {
-							root = { is_ai = yes }
-							holder = root
-						}
-					}
-				}
-				add_to_list = localised_recession_list
-			}
-			every_in_list = {
-				list = localised_recession_list
-				custom = yearly_saharan.0001.c.list
-				add_county_modifier = {
-					modifier = local_recession_ripple_saharan_modifier
-					years = 20
-				}
-			}
-		}
+# 		#The county, and any others in the duchy not held by a different player, get a significant malus.
+# 		scope:target_county = {
+# 			add_county_modifier = {
+# 				modifier = local_recession_epicentre_saharan_modifier
+# 				years = 20
+# 			}
+# 			every_neighboring_county = {
+# 				limit = {
+# 					holder.top_liege = root.top_liege
+# 					OR = {
+# 						#If done by a player, let them screw everyone. Funnier that way.
+# 						root = { is_ai = no }
+# 						#Otherwise, exempt players for agency-raisins.
+# 						AND = {
+# 							root = { is_ai = yes }
+# 							holder = root
+# 						}
+# 					}
+# 				}
+# 				add_to_list = localised_recession_list
+# 			}
+# 			every_in_list = {
+# 				list = localised_recession_list
+# 				custom = yearly_saharan.0001.c.list
+# 				add_county_modifier = {
+# 					modifier = local_recession_ripple_saharan_modifier
+# 					years = 20
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			greedy = medium_stress_impact_gain
-			zealous = medium_stress_impact_loss
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_zeal = 0.2
-				ai_vengefulness = 0.1
-				ai_greed = -0.2
-				ai_compassion = -0.1
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = greedy
-			}
-			modifier = {	#Weight down for stress.
-				add = 20
-				has_trait = zealous
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			greedy = medium_stress_impact_gain
+# 			zealous = medium_stress_impact_loss
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_zeal = 0.2
+# 				ai_vengefulness = 0.1
+# 				ai_greed = -0.2
+# 				ai_compassion = -0.1
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = 20
+# 				has_trait = zealous
+# 			}
+# 		}
+# 	}
+# }
 
-#	Check to see which event to fire next, if any.
-yearly_saharan.0002 = {
-	hidden = yes
+# #	Check to see which event to fire next, if any.
+#L5R Disabled
+# yearly_saharan.0002 = {
+# 	hidden = yes
 
-	trigger = {
-		scope:source_county = {
-			faith = {
-				NOR = {
-					religion = { is_in_family = rf_pagan }
-					has_doctrine_parameter = unreformed
-				}
-			}
-		}
-		scope:target_county = { valid_faiths_scripted_trigger = yes }
-	}
+# 	trigger = {
+# 		scope:source_county = {
+# 			faith = {
+# 				NOR = {
+# 					religion = { is_in_family = rf_pagan }
+# 					has_doctrine_parameter = unreformed
+# 				}
+# 			}
+# 		}
+# 		scope:target_county = { valid_faiths_scripted_trigger = yes }
+# 	}
 
-	immediate = {
-		#Check to see if we're still using the original permit granter, or some new lad.
-		if = {
-			limit = { scope:target_county.holder = scope:initial_holder }
-			scope:initial_holder = { save_scope_as = current_holder }
-		}
-		else = {
-			scope:target_county.holder = { save_scope_as = current_holder }
-		}
+# 	immediate = {
+# 		#Check to see if we're still using the original permit granter, or some new lad.
+# 		if = {
+# 			limit = { scope:target_county.holder = scope:initial_holder }
+# 			scope:initial_holder = { save_scope_as = current_holder }
+# 		}
+# 		else = {
+# 			scope:target_county.holder = { save_scope_as = current_holder }
+# 		}
 
-		#Pop an event, weighted by fervour.
-		scope:current_holder = {
-			random_list = {
-				#The community integrates totally.
-				20 = {
-					trigger_event = yearly_saharan.0003
-					modifier = {
-						add = 10
-						scope:target_county.faith = { fervor >= 50 }
-					}
-					modifier = {
-						add = 10
-						scope:target_county.faith = { fervor >= 70 }
-					}
-					modifier = {
-						add = 10
-						scope:target_county.faith = { fervor >= 90}
-					}
-				}
-				#The community has become extremely successful.
-				30 = { trigger_event = yearly_saharan.0004 }
-				#The county converts to the faith of the merchants.
-				50 = {
-					trigger_event = yearly_saharan.0005
-					modifier = {
-						add = 10
-						scope:source_county.faith = { fervor >= 50 }
-					}
-					modifier = {
-						add = 10
-						scope:source_county.faith = { fervor >= 70 }
-					}
-					modifier = {
-						add = 10
-						scope:source_county.faith = { fervor >= 90 }
-					}
-				}
-			}
-		}
-	}
-}
+# 		#Pop an event, weighted by fervour.
+# 		scope:current_holder = {
+# 			random_list = {
+# 				#The community integrates totally.
+# 				20 = {
+# 					trigger_event = yearly_saharan.0003
+# 					modifier = {
+# 						add = 10
+# 						scope:target_county.faith = { fervor >= 50 }
+# 					}
+# 					modifier = {
+# 						add = 10
+# 						scope:target_county.faith = { fervor >= 70 }
+# 					}
+# 					modifier = {
+# 						add = 10
+# 						scope:target_county.faith = { fervor >= 90}
+# 					}
+# 				}
+# 				#The community has become extremely successful.
+# 				30 = { trigger_event = yearly_saharan.0004 }
+# 				#The county converts to the faith of the merchants.
+# 				50 = {
+# 					trigger_event = yearly_saharan.0005
+# 					modifier = {
+# 						add = 10
+# 						scope:source_county.faith = { fervor >= 50 }
+# 					}
+# 					modifier = {
+# 						add = 10
+# 						scope:source_county.faith = { fervor >= 70 }
+# 					}
+# 					modifier = {
+# 						add = 10
+# 						scope:source_county.faith = { fervor >= 90 }
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
-#	The merchant community has integrated seamlessly.
-#		by Ewan Cowhig Croft
-yearly_saharan.0003 = {
-	type = character_event
-	title = yearly_saharan.0003.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { scope:initial_holder = scope:current_holder }
-				desc = yearly_saharan.0003.desc_initial
-			}
-			desc = yearly_saharan.0003.desc_current
-		}
-		desc = yearly_saharan.0003.desc
-	}
-	theme = stewardship
-	left_portrait = {
-		character = scope:current_holder
-		animation = personality_rational
-	}
-  	override_background = { reference = market }
+# #	The merchant community has integrated seamlessly.
+# #		by Ewan Cowhig Croft
+#L5R Disabled
+# yearly_saharan.0003 = {
+# 	type = character_event
+# 	title = yearly_saharan.0003.t
+# 	desc = {
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { scope:initial_holder = scope:current_holder }
+# 				desc = yearly_saharan.0003.desc_initial
+# 			}
+# 			desc = yearly_saharan.0003.desc_current
+# 		}
+# 		desc = yearly_saharan.0003.desc
+# 	}
+# 	theme = stewardship
+# 	left_portrait = {
+# 		character = scope:current_holder
+# 		animation = personality_rational
+# 	}
+#   	override_background = { reference = market }
 
-	trigger = {
-		is_available = yes
-	}
+# 	trigger = {
+# 		is_available = yes
+# 	}
 
-	immediate = {
-		scope:target_county = { remove_county_modifier = foreign_trader_enclaves_saharan_modifier }
-	}
+# 	immediate = {
+# 		scope:target_county = { remove_county_modifier = foreign_trader_enclaves_saharan_modifier }
+# 	}
 
-	#What a lovely windfall.
-	option = {
-		name = yearly_saharan.0003.a
+# 	#What a lovely windfall.
+# 	option = {
+# 		name = yearly_saharan.0003.a
 
-		#Reap some minor additional benefits.
-		scope:target_county = {
-			add_county_modifier = {
-				modifier = integrated_foreign_trader_enclaves_saharan_modifier
-				years = 10
-			}
-		}
+# 		#Reap some minor additional benefits.
+# 		scope:target_county = {
+# 			add_county_modifier = {
+# 				modifier = integrated_foreign_trader_enclaves_saharan_modifier
+# 				years = 10
+# 			}
+# 		}
 
-		ai_chance = {
-			base = 100
-			ai_value_modifier = { ai_compassion = 0.25 }
-		}
-	}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = { ai_compassion = 0.25 }
+# 		}
+# 	}
 	
-	#Tax the smeggers into oblivion.
-	option = {
-		name = yearly_saharan.0003.b
+# 	#Tax the smeggers into oblivion.
+# 	option = {
+# 		name = yearly_saharan.0003.b
 
-		#Gain gold.
-		add_gold = minor_gold_value
+# 		#Gain gold.
+# 		add_gold = minor_gold_value
 
-		#This annoys locals.
-		scope:target_county = {
-			add_county_modifier = {
-				modifier = overtaxed_merchant_enclaves_saharan_modifier
-				years = 10
-			}
-		}
+# 		#This annoys locals.
+# 		scope:target_county = {
+# 			add_county_modifier = {
+# 				modifier = overtaxed_merchant_enclaves_saharan_modifier
+# 				years = 10
+# 			}
+# 		}
 
-		stress_impact = { generous = medium_stress_impact_gain }
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 0.25
-				ai_compassion = -0.25
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = generous
-			}
-		}
-	}
-}
+# 		stress_impact = { generous = medium_stress_impact_gain }
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 0.25
+# 				ai_compassion = -0.25
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = generous
+# 			}
+# 		}
+# 	}
+# }
 
-#	The merchant community is separate, but lucrative and successful.
-#		by Ewan Cowhig Croft
-yearly_saharan.0004 = {
-	type = character_event
-	title = yearly_saharan.0004.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { scope:initial_holder = scope:current_holder }
-				desc = yearly_saharan.0004.desc_initial
-			}
-			desc = yearly_saharan.0004.desc_current
-		}
-		desc = yearly_saharan.0004.desc
-	}
-	theme = stewardship
-	left_portrait = {
-		character = scope:current_holder
-		animation = personality_rational
-	}
-  	override_background = { reference = market }
+# #	The merchant community is separate, but lucrative and successful.
+# #		by Ewan Cowhig Croft
+#L5R Disabled
+# yearly_saharan.0004 = {
+# 	type = character_event
+# 	title = yearly_saharan.0004.t
+# 	desc = {
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { scope:initial_holder = scope:current_holder }
+# 				desc = yearly_saharan.0004.desc_initial
+# 			}
+# 			desc = yearly_saharan.0004.desc_current
+# 		}
+# 		desc = yearly_saharan.0004.desc
+# 	}
+# 	theme = stewardship
+# 	left_portrait = {
+# 		character = scope:current_holder
+# 		animation = personality_rational
+# 	}
+#   	override_background = { reference = market }
 
-	trigger = {
-		is_available = yes
-	}
+# 	trigger = {
+# 		is_available = yes
+# 	}
 
-	immediate = {
-		scope:target_county = { remove_county_modifier = foreign_trader_enclaves_saharan_modifier }
-	}
+# 	immediate = {
+# 		scope:target_county = { remove_county_modifier = foreign_trader_enclaves_saharan_modifier }
+# 	}
 
-	#Study their ways to gain stewardship.
-	option = {
-		name = yearly_saharan.0004.a
+# 	#Study their ways to gain stewardship.
+# 	option = {
+# 		name = yearly_saharan.0004.a
 
-		#Flat chance to gain additional stewardship.
-		custom_tooltip = yearly_saharan.0004.a.tt
-		hidden_effect = {
-			random_list = {
-				33 = {
-					send_interface_toast = {
-						title = yearly_saharan.0004.a.tt.outcome_1
-						left_icon = scope:current_holder
-						add_stewardship_skill = 1
-					}
-				}
-				33 = {
-					send_interface_toast = {
-						title = yearly_saharan.0004.a.tt.outcome_2
-						left_icon = scope:current_holder
-						add_stewardship_skill = 2
-					}
-				}
-				34 = {
-					send_interface_toast = {
-						title = yearly_saharan.0004.a.tt.outcome_3
-						left_icon = scope:current_holder
-						add_stewardship_skill = 3
-					}
-				}
-			}
-		}
+# 		#Flat chance to gain additional stewardship.
+# 		custom_tooltip = yearly_saharan.0004.a.tt
+# 		hidden_effect = {
+# 			random_list = {
+# 				33 = {
+# 					send_interface_toast = {
+# 						title = yearly_saharan.0004.a.tt.outcome_1
+# 						left_icon = scope:current_holder
+# 						add_stewardship_skill = 1
+# 					}
+# 				}
+# 				33 = {
+# 					send_interface_toast = {
+# 						title = yearly_saharan.0004.a.tt.outcome_2
+# 						left_icon = scope:current_holder
+# 						add_stewardship_skill = 2
+# 					}
+# 				}
+# 				34 = {
+# 					send_interface_toast = {
+# 						title = yearly_saharan.0004.a.tt.outcome_3
+# 						left_icon = scope:current_holder
+# 						add_stewardship_skill = 3
+# 					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = { lazy = minor_stress_impact_gain }
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.25
-				ai_energy = -0.25
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = lazy
-			}
-		}
-	}
+# 		stress_impact = { lazy = minor_stress_impact_gain }
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.25
+# 				ai_energy = -0.25
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = lazy
+# 			}
+# 		}
+# 	}
 	
-	#Collect well-earnt dues.
-	option = {
-		name = yearly_saharan.0004.b
-		trigger = { stewardship < high_skill_rating }
+# 	#Collect well-earnt dues.
+# 	option = {
+# 		name = yearly_saharan.0004.b
+# 		trigger = { stewardship < high_skill_rating }
 
-		#Gold please!
-		add_gold = medium_gold_value
+# 		#Gold please!
+# 		add_gold = medium_gold_value
 
-		stress_impact = { generous = miniscule_stress_impact_gain }
-		ai_chance = {
-			base = 100
-			ai_value_modifier = { ai_greed = 0.50 }
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = lustful
-			}
-		}
-	}
+# 		stress_impact = { generous = miniscule_stress_impact_gain }
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = { ai_greed = 0.50 }
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = lustful
+# 			}
+# 		}
+# 	}
 	
-	#High stewardship: collect _higher_ well-earnt dues.
-	option = {
-		name = yearly_saharan.0004.c
-		trigger = { stewardship >= high_skill_rating }
-		skill = stewardship
+# 	#High stewardship: collect _higher_ well-earnt dues.
+# 	option = {
+# 		name = yearly_saharan.0004.c
+# 		trigger = { stewardship >= high_skill_rating }
+# 		skill = stewardship
 
-		#Stonks of gold please!
-		add_gold = major_gold_value
+# 		#Stonks of gold please!
+# 		add_gold = major_gold_value
 
-		stress_impact = { generous = miniscule_stress_impact_gain }
-		ai_chance = {
-			base = 100
-			ai_value_modifier = { ai_greed = 0.75	}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = lustful
-			}
-		}
-	}
-}
+# 		stress_impact = { generous = miniscule_stress_impact_gain }
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = { ai_greed = 0.75	}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = lustful
+# 			}
+# 		}
+# 	}
+# }
 
-#	The merchant community has converted your populace.
-#		by Ewan Cowhig Croft
-yearly_saharan.0005 = {
-	type = character_event
-	title = yearly_saharan.0005.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { scope:initial_holder = scope:current_holder }
-				desc = yearly_saharan.0005.desc_initial
-			}
-			desc = yearly_saharan.0005.desc_current
-		}
-		desc = yearly_saharan.0005.desc
-	}
-	theme = stewardship
-	left_portrait = {
-		character = scope:current_holder
-		animation = personality_rational
-	}
-  	override_background = { reference = market }
+# #	The merchant community has converted your populace.
+# #		by Ewan Cowhig Croft
+#L5R Disabled
+# yearly_saharan.0005 = {
+# 	type = character_event
+# 	title = yearly_saharan.0005.t
+# 	desc = {
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { scope:initial_holder = scope:current_holder }
+# 				desc = yearly_saharan.0005.desc_initial
+# 			}
+# 			desc = yearly_saharan.0005.desc_current
+# 		}
+# 		desc = yearly_saharan.0005.desc
+# 	}
+# 	theme = stewardship
+# 	left_portrait = {
+# 		character = scope:current_holder
+# 		animation = personality_rational
+# 	}
+#   	override_background = { reference = market }
 
-	trigger = {
-		is_available = yes
-	}
+# 	trigger = {
+# 		is_available = yes
+# 	}
 
-	immediate = {
-		scope:target_county = {
-			remove_county_modifier = foreign_trader_enclaves_saharan_modifier
-			faith = { save_scope_as = target_county_old_faith }
-			set_county_faith = scope:source_county.faith
-		}
-	}
+# 	immediate = {
+# 		scope:target_county = {
+# 			remove_county_modifier = foreign_trader_enclaves_saharan_modifier
+# 			faith = { save_scope_as = target_county_old_faith }
+# 			set_county_faith = scope:source_county.faith
+# 		}
+# 	}
 
-	#Wait, this is my faith, isn't it?
-	option = {
-		name = yearly_saharan.0005.a
-		trigger = { scope:current_holder.faith = scope:target_county.faith }
+# 	#Wait, this is my faith, isn't it?
+# 	option = {
+# 		name = yearly_saharan.0005.a
+# 		trigger = { scope:current_holder.faith = scope:target_county.faith }
 
-		#An objectively good thing! Piety, yay!
-		add_piety = medium_piety_value
+# 		#An objectively good thing! Piety, yay!
+# 		add_piety = medium_piety_value
 
-		#And the people are still pretty damned happy!
-		scope:target_county = {
-			add_county_modifier = {
-				modifier = ecstatic_converts_saharan_modifier
-				years = 30
-			}
-		}
+# 		#And the people are still pretty damned happy!
+# 		scope:target_county = {
+# 			add_county_modifier = {
+# 				modifier = ecstatic_converts_saharan_modifier
+# 				years = 30
+# 			}
+# 		}
 
-		stress_impact = { cynical = miniscule_stress_impact_gain }
-		ai_chance = {
-			#The AI should always take this option, if it's available.
-			base = 100
-		}
-	}
+# 		stress_impact = { cynical = miniscule_stress_impact_gain }
+# 		ai_chance = {
+# 			#The AI should always take this option, if it's available.
+# 			base = 100
+# 		}
+# 	}
 	
-	#At least they're happy about their new faith.
-	option = {
-		name = yearly_saharan.0005.b
-		trigger = {
-			NOT = { scope:current_holder.faith = scope:target_county.faith }
-		}
+# 	#At least they're happy about their new faith.
+# 	option = {
+# 		name = yearly_saharan.0005.b
+# 		trigger = {
+# 			NOT = { scope:current_holder.faith = scope:target_county.faith }
+# 		}
 
-		#Better than a kick in the teeth, right?
-		scope:target_county = {
-			add_county_modifier = {
-				modifier = ecstatic_converts_saharan_modifier
-				years = 30
-			}
-		}
+# 		#Better than a kick in the teeth, right?
+# 		scope:target_county = {
+# 			add_county_modifier = {
+# 				modifier = ecstatic_converts_saharan_modifier
+# 				years = 30
+# 			}
+# 		}
 
-		ai_chance = {
-			#The AI should always take this option, if it's available.
-			base = 100
-		}
-	}
+# 		ai_chance = {
+# 			#The AI should always take this option, if it's available.
+# 			base = 100
+# 		}
+# 	}
 	
-	#Not on my watch you don't!
-	option = {
-		name = yearly_saharan.0005.c
-		trigger = {
-			NOT = { scope:current_holder.faith = scope:target_county.faith }
-		}
+# 	#Not on my watch you don't!
+# 	option = {
+# 		name = yearly_saharan.0005.c
+# 		trigger = {
+# 			NOT = { scope:current_holder.faith = scope:target_county.faith }
+# 		}
 
-		#Torch half the county to flip them back.
-		scope:target_county = {
-			change_county_control = massive_county_control_loss
-			change_development_progress = major_development_progress_loss
-			add_county_modifier = {
-				modifier = persecuted_converts_saharan_modifier
-				years = 25
-			}
-			set_county_faith = scope:target_county_old_faith
-		}
+# 		#Torch half the county to flip them back.
+# 		scope:target_county = {
+# 			change_county_control = massive_county_control_loss
+# 			change_development_progress = major_development_progress_loss
+# 			add_county_modifier = {
+# 				modifier = persecuted_converts_saharan_modifier
+# 				years = 25
+# 			}
+# 			set_county_faith = scope:target_county_old_faith
+# 		}
 
-		stress_impact = {
-			forgiving = minor_stress_impact_gain
-			cynical = minor_stress_impact_gain
-			compassionate = medium_stress_impact_gain
-		}
-		ai_chance = {
-			#The AI should never take this option.
-			base = 0
-		}
-	}
-}
+# 		stress_impact = {
+# 			forgiving = minor_stress_impact_gain
+# 			cynical = minor_stress_impact_gain
+# 			compassionate = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			#The AI should never take this option.
+# 			base = 0
+# 		}
+# 	}
+# }
 
 
 

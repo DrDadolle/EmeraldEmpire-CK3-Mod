@@ -15,229 +15,231 @@ namespace = yearly_persian
 #########################################
 
 # Ping event to ensure the actual Nowruz festival fires just before the vernal equinox.
-yearly_persian.1001 = {
-	hidden = yes
+#L5R Disabled
+# yearly_persian.1001 = {
+# 	hidden = yes
 
-	trigger = {
-		is_available_adult = yes
-		culture = { has_cultural_pillar = heritage_iranian }
-		NOT = { has_character_flag = had_event_yearly_persian_1002 }
-	}
+# 	trigger = {
+# 		is_available_adult = yes
+# 		culture = { has_cultural_pillar = heritage_iranian }
+# 		NOT = { has_character_flag = had_event_yearly_persian_1002 }
+# 	}
 
-	immediate = {
-		random_list = {
-			50 = {
-				trigger_event = {
-					id = yearly_persian.1002
-					trigger_on_next_date = 3.20
-				}
-			}
-			50 = {
-				trigger_event = {
-					id = fp3_yearly.8032
-					trigger_on_next_date = 3.18
-				}
-			}
-		}
-	}
-}
+# 	immediate = {
+# 		random_list = {
+# 			50 = {
+# 				trigger_event = {
+# 					id = yearly_persian.1002
+# 					trigger_on_next_date = 3.20
+# 				}
+# 			}
+# 			50 = {
+# 				trigger_event = {
+# 					id = fp3_yearly.8032
+# 					trigger_on_next_date = 3.18
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
-# Actual Nowruz festival event.
-yearly_persian.1002 = {
-	type = character_event
-	title = yearly_persian.1002.t
-	desc = yearly_persian.1002.desc
-	left_portrait = root
-	theme = realm
+# # Actual Nowruz festival event.
+#L5R Disabled
+# yearly_persian.1002 = {
+# 	type = character_event
+# 	title = yearly_persian.1002.t
+# 	desc = yearly_persian.1002.desc
+# 	left_portrait = root
+# 	theme = realm
 
-	trigger = {
-		is_available_adult = yes
-		culture = { has_cultural_pillar = heritage_iranian }
-	}
+# 	trigger = {
+# 		is_available_adult = yes
+# 		culture = { has_cultural_pillar = heritage_iranian }
+# 	}
 
-	weight_multiplier = {
-		base = 1
+# 	weight_multiplier = {
+# 		base = 1
 
-		modifier = {
-			add = 1
-			has_trait = diligent
-		}
-		modifier = {
-			add = -0.5
-			has_trait = lazy
-		}
-	}
+# 		modifier = {
+# 			add = 1
+# 			has_trait = diligent
+# 		}
+# 		modifier = {
+# 			add = -0.5
+# 			has_trait = lazy
+# 		}
+# 	}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_yearly_persian_1002
-			years = 5
-		}
-		culture = {
-			save_scope_as = iranian # For loc
-		}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_yearly_persian_1002
+# 			years = 5
+# 		}
+# 		culture = {
+# 			save_scope_as = iranian # For loc
+# 		}
 
-		# Compile list of affected characters for Option A.
-		every_vassal = {
-			limit = {
-				culture = { has_cultural_pillar = heritage_iranian }
-			}
-			add_to_list = iranian_characters
-		}
-		every_courtier = {
-			limit = {
-				culture = { has_cultural_pillar = heritage_iranian }
-			}
-			add_to_list = iranian_characters
-		}
+# 		# Compile list of affected characters for Option A.
+# 		every_vassal = {
+# 			limit = {
+# 				culture = { has_cultural_pillar = heritage_iranian }
+# 			}
+# 			add_to_list = iranian_characters
+# 		}
+# 		every_courtier = {
+# 			limit = {
+# 				culture = { has_cultural_pillar = heritage_iranian }
+# 			}
+# 			add_to_list = iranian_characters
+# 		}
 
-		# Compile list of affected characters for Option B.
-		every_relation = {
-			type = friend
-			add_to_list = friends_and_neighbors
-		}
-		every_held_title = {
-			limit = {
-				tier = tier_county
-			}
-			every_neighboring_county = {
-				limit = {
-					holder = {
-						NOR = {
-							this = root
-							is_in_list = friends_and_neighbors
-						}
-					}
-				}
-				holder = {
-					add_to_list = friends_and_neighbors
-				}
-			}
-		}
+# 		# Compile list of affected characters for Option B.
+# 		every_relation = {
+# 			type = friend
+# 			add_to_list = friends_and_neighbors
+# 		}
+# 		every_held_title = {
+# 			limit = {
+# 				tier = tier_county
+# 			}
+# 			every_neighboring_county = {
+# 				limit = {
+# 					holder = {
+# 						NOR = {
+# 							this = root
+# 							is_in_list = friends_and_neighbors
+# 						}
+# 					}
+# 				}
+# 				holder = {
+# 					add_to_list = friends_and_neighbors
+# 				}
+# 			}
+# 		}
 
-		# Compile list of affected characters for Option C.
-		every_close_family_member = {
-			add_to_list = spouses_and_family
-		}
-		every_spouse = {
-			limit = {
-				NOT = { is_in_list = spouses_and_family }
-			}
-			add_to_list = spouses_and_family
-		}
-	}
+# 		# Compile list of affected characters for Option C.
+# 		every_close_family_member = {
+# 			add_to_list = spouses_and_family
+# 		}
+# 		every_spouse = {
+# 			limit = {
+# 				NOT = { is_in_list = spouses_and_family }
+# 			}
+# 			add_to_list = spouses_and_family
+# 		}
+# 	}
 
-	# Option A: Spend a lot of Gold to gain a lot of Prestige, and a small opinion boost with all Persian vassals/courtiers.
-	option = {
-		name = yearly_persian.1002.a
-		trigger = {
-			OR = {
-				is_ai = no
-				short_term_gold >= major_gold_value
-			}
-		}
-		remove_short_term_gold = major_gold_value
+# 	# Option A: Spend a lot of Gold to gain a lot of Prestige, and a small opinion boost with all Persian vassals/courtiers.
+# 	option = {
+# 		name = yearly_persian.1002.a
+# 		trigger = {
+# 			OR = {
+# 				is_ai = no
+# 				short_term_gold >= major_gold_value
+# 			}
+# 		}
+# 		remove_short_term_gold = major_gold_value
 
-		add_prestige = major_prestige_value
-		every_in_list = {
-			list = iranian_characters
-			custom = yearly_persian.1002.every_iranian_character
+# 		add_prestige = major_prestige_value
+# 		every_in_list = {
+# 			list = iranian_characters
+# 			custom = yearly_persian.1002.every_iranian_character
 
-			add_opinion = {
-				modifier = respect_opinion
-				target = root
-				opinion = 10
-			}
-		}
+# 			add_opinion = {
+# 				modifier = respect_opinion
+# 				target = root
+# 				opinion = 10
+# 			}
+# 		}
 
-		stress_impact = {
-			greedy = major_stress_impact_gain
-		}
+# 		stress_impact = {
+# 			greedy = major_stress_impact_gain
+# 		}
 
-		ai_chance = {
-			base = 20
-			ai_value_modifier = {
-				ai_compassion = 0.20
-				ai_greed = -0.20
-			}
-		}
-	}
+# 		ai_chance = {
+# 			base = 20
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.20
+# 				ai_greed = -0.20
+# 			}
+# 		}
+# 	}
 
-	# Option B: Gain a subsantial opinion boost with all friends and neighboring rulers.
-	option = {
-		name = yearly_persian.1002.b
-		every_in_list = {
-			list = friends_and_neighbors
-			custom = yearly_persian.1002.every_friend_and_neighboring_ruler
+# 	# Option B: Gain a subsantial opinion boost with all friends and neighboring rulers.
+# 	option = {
+# 		name = yearly_persian.1002.b
+# 		every_in_list = {
+# 			list = friends_and_neighbors
+# 			custom = yearly_persian.1002.every_friend_and_neighboring_ruler
 
-			add_opinion = {
-				modifier = friendliness_opinion
-				target = root
-				opinion = 25
-			}
-		}
+# 			add_opinion = {
+# 				modifier = friendliness_opinion
+# 				target = root
+# 				opinion = 25
+# 			}
+# 		}
 
-		stress_impact = {
-			shy = medium_stress_impact_gain
-		}
+# 		stress_impact = {
+# 			shy = medium_stress_impact_gain
+# 		}
 
-		ai_chance = {
-			base = 40
-			ai_value_modifier = {
-				ai_sociability = 0.40
-			}
-		}
-	}
+# 		ai_chance = {
+# 			base = 40
+# 			ai_value_modifier = {
+# 				ai_sociability = 0.40
+# 			}
+# 		}
+# 	}
 	
-	# Option C: Gain a small amount of piety and a substantial opinion boost with spouses and close family.
-	option = {
-		name = yearly_persian.1002.c
+# 	# Option C: Gain a small amount of piety and a substantial opinion boost with spouses and close family.
+# 	option = {
+# 		name = yearly_persian.1002.c
 
-		add_piety = minor_piety_value
-		every_close_family_member = {
-			custom = yearly_persian.1002.every_spouse_and_close_family_member
+# 		add_piety = minor_piety_value
+# 		every_close_family_member = {
+# 			custom = yearly_persian.1002.every_spouse_and_close_family_member
 
-			add_opinion = {
-				modifier = pleased_opinion
-				target = root
-				opinion = 25
-			}
-		}
+# 			add_opinion = {
+# 				modifier = pleased_opinion
+# 				target = root
+# 				opinion = 25
+# 			}
+# 		}
 
-		ai_chance = {
-			base = 40
-			ai_value_modifier = {
-				ai_zeal = 0.20
-				ai_compassion = 0.20
-			}
-		}
-	}
+# 		ai_chance = {
+# 			base = 40
+# 			ai_value_modifier = {
+# 				ai_zeal = 0.20
+# 				ai_compassion = 0.20
+# 			}
+# 		}
+# 	}
 
-	# Option D: Eschew the festival to focus on work.
-	option = {
-		name = yearly_persian.1002.d
+# 	# Option D: Eschew the festival to focus on work.
+# 	option = {
+# 		name = yearly_persian.1002.d
 
-		add_character_modifier = {
-			modifier = all_work_no_play_persian_modifier
-			years = 5
-		}
+# 		add_character_modifier = {
+# 			modifier = all_work_no_play_persian_modifier
+# 			years = 5
+# 		}
 
-		stress_impact = {
-			base = medium_stress_impact_gain
-			lazy = minor_stress_impact_gain
-			diligent = minor_stress_impact_loss
-		}
+# 		stress_impact = {
+# 			base = medium_stress_impact_gain
+# 			lazy = minor_stress_impact_gain
+# 			diligent = minor_stress_impact_loss
+# 		}
 
-		ai_chance = {
-			base = 20
-			ai_value_modifier = {
-				ai_energy = 0.20
-				ai_sociability = -0.20
-				ai_greed = 0.40
-			}
-		}
-	}
-}
+# 		ai_chance = {
+# 			base = 20
+# 			ai_value_modifier = {
+# 				ai_energy = 0.20
+# 				ai_sociability = -0.20
+# 				ai_greed = 0.40
+# 			}
+# 		}
+# 	}
+# }
 
 #########################################
 # Persian Nationalism/Cultural Tolerance#

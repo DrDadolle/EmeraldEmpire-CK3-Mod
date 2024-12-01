@@ -12,10 +12,10 @@ tradition_court_eunuchs = {
 	}
 
 	can_pick = {
-		custom_tooltip = {
-			text = cannot_have_tradition_byzantine_succession
-			NOT = { culture_tradition:tradition_byzantine_succession = { is_in_list = traits } }
-		}
+		# custom_tooltip = {
+		# 	text = cannot_have_tradition_byzantine_succession
+		# 	NOT = { culture_tradition:tradition_byzantine_succession = { is_in_list = traits } }
+		# }
 		custom_tooltip = {
 			scope:character = {
 				OR = {
@@ -1106,22 +1106,23 @@ tradition_roman_legacy = {
 					desc = not_bellicose_egalitarian_or_courtly_desc
 				}
 			}
-			if = {
-				limit = {
-					NOT = {
-						any_culture_county = {
-							count >= 50
-							any_county_province = {
-								geographical_region = custom_eastern_roman_empire
-							}
-						}
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = culture_in_roman_empire_desc
-				}
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		NOT = {
+			# 			any_culture_county = {
+			# 				count >= 50
+			# 				any_county_province = {
+			# 					geographical_region = custom_eastern_roman_empire
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# 	add = {
+			# 		value = tradition_unfulfilled_criteria_penalty
+			# 		desc = culture_in_roman_empire_desc
+			# 	}
+			# }
 			
 			multiply = tradition_replacement_cost_if_relevant
 		}
