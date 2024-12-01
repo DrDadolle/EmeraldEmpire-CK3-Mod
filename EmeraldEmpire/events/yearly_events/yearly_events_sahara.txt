@@ -1031,715 +1031,717 @@ scripted_effect pick_nomad-appropriate_county_effect = {
 # by Ewan Cowhig Croft
 # 0031-0032
 ##################################################
+#L5R Disabled
+# scripted_trigger able_to_raid_sahel_for_slaves_trigger = {
+# 	#Located in an appropriate region.
+# 	title_province = { geographical_region = custom_sahel_proper }
+# }
 
-scripted_trigger able_to_raid_sahel_for_slaves_trigger = {
-	#Located in an appropriate region.
-	title_province = { geographical_region = custom_sahel_proper }
-}
+# scripted_trigger able_to_be_raided_from_sahel_for_slaves_trigger = {
+# 	#Target is located in an appropriate region & has suitable terrain.
+# 	title_province = {
+# 		OR = {
+# 			geographical_region = custom_sahel_proper
+# 			geographical_region = custom_sub_saharan_africa_immediate
+# 		}
+# 		NOR = {
+# 			terrain = desert
+# 			terrain = desert_mountains
+# 			terrain = mountains
+# 		}
+# 	}
+# }
 
-scripted_trigger able_to_be_raided_from_sahel_for_slaves_trigger = {
-	#Target is located in an appropriate region & has suitable terrain.
-	title_province = {
-		OR = {
-			geographical_region = custom_sahel_proper
-			geographical_region = custom_sub_saharan_africa_immediate
-		}
-		NOR = {
-			terrain = desert
-			terrain = desert_mountains
-			terrain = mountains
-		}
-	}
-}
+# scripted_trigger npc_component_criteria_trigger = {
+# 	#Partner county isn't held by you (or a liege/vassal of yours), isn't at war, isn't a player, and has a marshal to duel.
+# 	holder = {
+# 		NOR = {
+# 			this = root
+# 			target_is_liege_or_above = root
+# 			target_is_vassal_or_below = root
+# 			is_at_war = yes
+# 			is_ai = no
+# 			any_martial_councillor = { count = 0 }
+# 			#^Technically, a martial is not required for yearly_saharan.0032, but it shouldn't filter out many candidates and it's more of a pain on everything to script around it than it is to just leave it in.
+# 			}
+# 	}
+# }
 
-scripted_trigger npc_component_criteria_trigger = {
-	#Partner county isn't held by you (or a liege/vassal of yours), isn't at war, isn't a player, and has a marshal to duel.
-	holder = {
-		NOR = {
-			this = root
-			target_is_liege_or_above = root
-			target_is_vassal_or_below = root
-			is_at_war = yes
-			is_ai = no
-			any_martial_councillor = { count = 0 }
-			#^Technically, a martial is not required for yearly_saharan.0032, but it shouldn't filter out many candidates and it's more of a pain on everything to script around it than it is to just leave it in.
-			}
-	}
-}
+# scripted_trigger suitable_for_sahelian_slave_raids_trigger = {
+# 	#Target is located in an appropriate region & has suitable terrain.
+# 	able_to_be_raided_from_sahel_for_slaves_trigger = yes
 
-scripted_trigger suitable_for_sahelian_slave_raids_trigger = {
-	#Target is located in an appropriate region & has suitable terrain.
-	able_to_be_raided_from_sahel_for_slaves_trigger = yes
+# 	#Target isn't held by you (or a liege of yours), isn't at war, isn't a player, and has a marshal to duel.
+# 	npc_component_criteria_trigger = yes
 
-	#Target isn't held by you (or a liege of yours), isn't at war, isn't a player, and has a marshal to duel.
-	npc_component_criteria_trigger = yes
+# 	#And just make sure that they're not your vassal either.
+# 	holder = {
+# 		save_temporary_scope_as = potential_partner
+# 		root = {
+# 			any_vassal_or_below = {
+# 				NOT = { this = scope:potential_partner }
+# 			}
+# 		}
+# 	}
 
-	#And just make sure that they're not your vassal either.
-	holder = {
-		save_temporary_scope_as = potential_partner
-		root = {
-			any_vassal_or_below = {
-				NOT = { this = scope:potential_partner }
-			}
-		}
-	}
-
-	#Target can take the hit.
-	county_control >= massive_county_control_loss
-}
+# 	#Target can take the hit.
+# 	county_control >= massive_county_control_loss
+# }
 
 #	#Local slave raids against a neighbour (aggressor).
 #		by Ewan Cowhig Croft
-yearly_saharan.0031 = {
-	type = character_event
-	title = yearly_saharan.0031.t
-	desc = yearly_saharan.0031.desc
-	theme = martial
-	left_portrait = {
-		character = scope:raided_character_marshal
-		animation = anger
-	}
-	right_portrait = {
-		character = scope:raided_county.holder
-		animation = shock
-	}
-	override_background = { reference = burning_building }
+#L5R Disabled
+# yearly_saharan.0031 = {
+# 	type = character_event
+# 	title = yearly_saharan.0031.t
+# 	desc = yearly_saharan.0031.desc
+# 	theme = martial
+# 	left_portrait = {
+# 		character = scope:raided_character_marshal
+# 		animation = anger
+# 	}
+# 	right_portrait = {
+# 		character = scope:raided_county.holder
+# 		animation = shock
+# 	}
+# 	override_background = { reference = burning_building }
 
-	trigger = {
-		is_available_at_peace_adult = yes
-		NOT = { has_character_flag = had_event_yearly_saharan_0031 }
+# 	trigger = {
+# 		is_available_at_peace_adult = yes
+# 		NOT = { has_character_flag = had_event_yearly_saharan_0031 }
 
-		#Has a state faith that allows for this.
-		faith = {
-			NOT = { has_doctrine_parameter = pacifist_opinion_active }
-		}
+# 		#Has a state faith that allows for this.
+# 		faith = {
+# 			NOT = { has_doctrine_parameter = pacifist_opinion_active }
+# 		}
 
-		#Has at least one domain county in the Sahel.
-		any_held_title = {
-			tier = tier_county
-			able_to_raid_sahel_for_slaves_trigger = yes
-			#And has an eligible target (both county and holder).
-			any_neighboring_county = { suitable_for_sahelian_slave_raids_trigger = yes }
-		}
-	}
+# 		#Has at least one domain county in the Sahel.
+# 		any_held_title = {
+# 			tier = tier_county
+# 			able_to_raid_sahel_for_slaves_trigger = yes
+# 			#And has an eligible target (both county and holder).
+# 			any_neighboring_county = { suitable_for_sahelian_slave_raids_trigger = yes }
+# 		}
+# 	}
 
-	weight_multiplier = {
-		base = 1
+# 	weight_multiplier = {
+# 		base = 1
 		
-		#Utter bastards are more likely to get this event.
-		modifier = {
-			add = 0.5
-			has_trait = callous
-		}
-		modifier = {
-			add = 1
-			has_trait = sadistic
-		}
-		#As are people who might clamp down on it.
-		modifier = {
-			add = 1
-			has_trait = compassionate
-		}
-		modifier = {
-			add = 1
-			has_trait = just
-		}
-	}
+# 		#Utter bastards are more likely to get this event.
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = callous
+# 		}
+# 		modifier = {
+# 			add = 1
+# 			has_trait = sadistic
+# 		}
+# 		#As are people who might clamp down on it.
+# 		modifier = {
+# 			add = 1
+# 			has_trait = compassionate
+# 		}
+# 		modifier = {
+# 			add = 1
+# 			has_trait = just
+# 		}
+# 	}
 
-	immediate = {
-		play_music_cue = "mx_cue_combat_2"
-		add_character_flag = {
-			flag = had_event_yearly_saharan_0031
-			days = 1825
-		}
-		#Grab a suitable Sahel domain.
-		random_held_title = {
-			limit = {
-				tier = tier_county
-				able_to_raid_sahel_for_slaves_trigger = yes
-				#Ensure it has a suitable target that can be raided.
-				any_neighboring_county = { suitable_for_sahelian_slave_raids_trigger = yes }
-			}
-			#Save the raiding county for ease of reference.
-			save_scope_as = slave_raider_county
-			#Find the neighbouring county that qualifies them.
-			random_neighboring_county = {
-				limit = { suitable_for_sahelian_slave_raids_trigger = yes }
-				#And the raided county.
-				save_scope_as = raided_county
-				holder = {
-					#And nab the appropriate martial for dueling & loc.
-					random_martial_councillor = { save_scope_as = raided_character_marshal }
-				}
-			}
-		}
+# 	immediate = {
+# 		play_music_cue = "mx_cue_combat_2"
+# 		add_character_flag = {
+# 			flag = had_event_yearly_saharan_0031
+# 			days = 1825
+# 		}
+# 		#Grab a suitable Sahel domain.
+# 		random_held_title = {
+# 			limit = {
+# 				tier = tier_county
+# 				able_to_raid_sahel_for_slaves_trigger = yes
+# 				#Ensure it has a suitable target that can be raided.
+# 				any_neighboring_county = { suitable_for_sahelian_slave_raids_trigger = yes }
+# 			}
+# 			#Save the raiding county for ease of reference.
+# 			save_scope_as = slave_raider_county
+# 			#Find the neighbouring county that qualifies them.
+# 			random_neighboring_county = {
+# 				limit = { suitable_for_sahelian_slave_raids_trigger = yes }
+# 				#And the raided county.
+# 				save_scope_as = raided_county
+# 				holder = {
+# 					#And nab the appropriate martial for dueling & loc.
+# 					random_martial_councillor = { save_scope_as = raided_character_marshal }
+# 				}
+# 			}
+# 		}
 
-		#Grab the sub-realm name of the raided county, for loc.
-		scope:raided_county.holder.primary_title = { save_scope_as = affected_sub_realm }
-	}
+# 		#Grab the sub-realm name of the raided county, for loc.
+# 		scope:raided_county.holder.primary_title = { save_scope_as = affected_sub_realm }
+# 	}
 
-	#Mmm, delicious money.
-	option = {
-		name = yearly_saharan.0031.a
+# 	#Mmm, delicious money.
+# 	option = {
+# 		name = yearly_saharan.0031.a
 
-		duel = {
-			skill = martial
-			target = scope:raided_character_marshal
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = yearly_saharan.0031.a.tt_success
-				send_interface_toast = {
-					title = yearly_saharan.0031.a.tt_success
-					left_icon = scope:raided_character_marshal
-					scope:raided_county.holder = {
-						#You take some severe assets from them.
-						pay_short_term_gold = {
-							target = root
-							gold = scope:raided_county.title_province.local_slave_gold_value
-						}
-						#You're a monster!
-						add_opinion = {
-							modifier = slaver_opinion
-							target = root
-							opinion = -50
-						}
-					}
-					#Local society is disrupted.
-					scope:raided_county = { change_county_control = massive_county_control_loss }
-				}
-			}
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = yearly_saharan.0031.a.tt_fail
-				send_interface_toast = {	
-					title = yearly_saharan.0031.a.tt_fail
-					left_icon = scope:raided_character_marshal
-					#You lose assets in the raid.
-					pay_short_term_gold = {
-						target = scope:raided_county.holder
-						gold = root.slaver_reparations_value
-					}
-					#You're a wannabe-monster!
-					scope:raided_county.holder = {
-						add_opinion = {
-							modifier = attempted_slaver_opinion
-							target = root
-							opinion = -30
-						}
-					}
-				}
-			}
-		}
+# 		duel = {
+# 			skill = martial
+# 			target = scope:raided_character_marshal
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = yearly_saharan.0031.a.tt_success
+# 				send_interface_toast = {
+# 					title = yearly_saharan.0031.a.tt_success
+# 					left_icon = scope:raided_character_marshal
+# 					scope:raided_county.holder = {
+# 						#You take some severe assets from them.
+# 						pay_short_term_gold = {
+# 							target = root
+# 							gold = scope:raided_county.title_province.local_slave_gold_value
+# 						}
+# 						#You're a monster!
+# 						add_opinion = {
+# 							modifier = slaver_opinion
+# 							target = root
+# 							opinion = -50
+# 						}
+# 					}
+# 					#Local society is disrupted.
+# 					scope:raided_county = { change_county_control = massive_county_control_loss }
+# 				}
+# 			}
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = yearly_saharan.0031.a.tt_fail
+# 				send_interface_toast = {	
+# 					title = yearly_saharan.0031.a.tt_fail
+# 					left_icon = scope:raided_character_marshal
+# 					#You lose assets in the raid.
+# 					pay_short_term_gold = {
+# 						target = scope:raided_county.holder
+# 						gold = root.slaver_reparations_value
+# 					}
+# 					#You're a wannabe-monster!
+# 					scope:raided_county.holder = {
+# 						add_opinion = {
+# 							modifier = attempted_slaver_opinion
+# 							target = root
+# 							opinion = -30
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			sadistic = medium_stress_impact_loss
-			generous = medium_stress_impact_gain
-			compassionate = major_stress_impact_gain
-			just = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 0.25
-				ai_compassion = -0.75
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = sadistic
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = generous
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = compassionate
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = just
-			}
-		}
-	}
+# 		stress_impact = {
+# 			sadistic = medium_stress_impact_loss
+# 			generous = medium_stress_impact_gain
+# 			compassionate = major_stress_impact_gain
+# 			just = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 0.25
+# 				ai_compassion = -0.75
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = generous
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = just
+# 			}
+# 		}
+# 	}
 	
-	#Halt this barbarism!
-	option = {
-		name = yearly_saharan.0031.b
+# 	#Halt this barbarism!
+# 	option = {
+# 		name = yearly_saharan.0031.b
 
-		#Definitely the better thing to do.
-		scope:raided_county.holder = {
-			add_opinion = {
-				modifier = clamped_down_on_slavers_opinion
-				target = root
-				opinion = 30
-			}
-		}
-		#The clamp down negatively affects your realm.
-		scope:slave_raider_county = { change_county_control = medium_county_control_loss }
+# 		#Definitely the better thing to do.
+# 		scope:raided_county.holder = {
+# 			add_opinion = {
+# 				modifier = clamped_down_on_slavers_opinion
+# 				target = root
+# 				opinion = 30
+# 			}
+# 		}
+# 		#The clamp down negatively affects your realm.
+# 		scope:slave_raider_county = { change_county_control = medium_county_control_loss }
 
-		stress_impact = {
-			generous = minor_stress_impact_loss
-			compassionate = major_stress_impact_loss
-			just = major_stress_impact_loss
-			callous = minor_stress_impact_gain
-			greedy = medium_stress_impact_gain
-			sadistic = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.75
-				ai_greed = -0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = generous
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = compassionate
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = just
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = callous
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = greedy
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = sadistic
-			}
-		}
-	}
+# 		stress_impact = {
+# 			generous = minor_stress_impact_loss
+# 			compassionate = major_stress_impact_loss
+# 			just = major_stress_impact_loss
+# 			callous = minor_stress_impact_gain
+# 			greedy = medium_stress_impact_gain
+# 			sadistic = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.75
+# 				ai_greed = -0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = generous
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = just
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = callous
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = sadistic
+# 			}
+# 		}
+# 	}
 	
-	#This doesn't concern me.
-	option = {
-		name = yearly_saharan.0031.c
+# 	#This doesn't concern me.
+# 	option = {
+# 		name = yearly_saharan.0031.c
 
-		#It very obviously does concern you, and they judge you for that.
-		scope:raided_county.holder = {
-			add_opinion = {
-				modifier = respect_opinion
-				target = root
-				opinion = -20
-			}
-		}
-		#At least it's less dramatic without interference from you.
-		random_list = {
-			60 = {
-				desc = yearly_saharan.0031.c.raided_hurt
-				scope:raided_county = { change_county_control = minor_county_control_loss }
-				#Reduce chance neatly with rival marshal skill.
-				modifier = {
-					add = -10
-					scope:raided_character_marshal.martial >= average_skill_level
-				}
-				modifier = {
-					add = -10
-					scope:raided_character_marshal.martial >= good_skill_level
-				}
-				modifier = {
-					add = -10
-					scope:raided_character_marshal.martial >= excellent_skill_level
-				}
-			}
-			40 = {
-				desc = yearly_saharan.0031.c.raiders_hurt
-				scope:slave_raider_county = { change_county_control = minor_county_control_loss }
-				#Increase chance neatly with rival marshal skill.
-				modifier = {
-					add = 10
-					scope:raided_character_marshal.martial >= average_skill_level
-				}
-				modifier = {
-					add = 10
-					scope:raided_character_marshal.martial >= good_skill_level
-				}
-				modifier = {
-					add = 10
-					scope:raided_character_marshal.martial >= excellent_skill_level
-				}
-			}
-		}
+# 		#It very obviously does concern you, and they judge you for that.
+# 		scope:raided_county.holder = {
+# 			add_opinion = {
+# 				modifier = respect_opinion
+# 				target = root
+# 				opinion = -20
+# 			}
+# 		}
+# 		#At least it's less dramatic without interference from you.
+# 		random_list = {
+# 			60 = {
+# 				desc = yearly_saharan.0031.c.raided_hurt
+# 				scope:raided_county = { change_county_control = minor_county_control_loss }
+# 				#Reduce chance neatly with rival marshal skill.
+# 				modifier = {
+# 					add = -10
+# 					scope:raided_character_marshal.martial >= average_skill_level
+# 				}
+# 				modifier = {
+# 					add = -10
+# 					scope:raided_character_marshal.martial >= good_skill_level
+# 				}
+# 				modifier = {
+# 					add = -10
+# 					scope:raided_character_marshal.martial >= excellent_skill_level
+# 				}
+# 			}
+# 			40 = {
+# 				desc = yearly_saharan.0031.c.raiders_hurt
+# 				scope:slave_raider_county = { change_county_control = minor_county_control_loss }
+# 				#Increase chance neatly with rival marshal skill.
+# 				modifier = {
+# 					add = 10
+# 					scope:raided_character_marshal.martial >= average_skill_level
+# 				}
+# 				modifier = {
+# 					add = 10
+# 					scope:raided_character_marshal.martial >= good_skill_level
+# 				}
+# 				modifier = {
+# 					add = 10
+# 					scope:raided_character_marshal.martial >= excellent_skill_level
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			lazy = minor_stress_impact_loss
-			sadistic = minor_stress_impact_gain
-			generous = minor_stress_impact_gain
-			compassionate = minor_stress_impact_gain
-			just = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = -0.25
-				ai_energy = -0.5
-				ai_greed = -0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = lazy
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = sadistic
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = generous
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = compassionate
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = just
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			lazy = minor_stress_impact_loss
+# 			sadistic = minor_stress_impact_gain
+# 			generous = minor_stress_impact_gain
+# 			compassionate = minor_stress_impact_gain
+# 			just = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = -0.25
+# 				ai_energy = -0.5
+# 				ai_greed = -0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = generous
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = just
+# 			}
+# 		}
+# 	}
+# }
 
 #	#Local slave raids from a neighbour (defender).
 #		by Ewan Cowhig Croft
-yearly_saharan.0032 = {
-	type = character_event
-	title = yearly_saharan.0032.t
-	desc = yearly_saharan.0032.desc
-	theme = martial
-	left_portrait = {
-		character = root
-		animation = rage
-	}
-	override_background = { reference = burning_building }
+#L5R Disabled
+# yearly_saharan.0032 = {
+# 	type = character_event
+# 	title = yearly_saharan.0032.t
+# 	desc = yearly_saharan.0032.desc
+# 	theme = martial
+# 	left_portrait = {
+# 		character = root
+# 		animation = rage
+# 	}
+# 	override_background = { reference = burning_building }
 
-	trigger = {
-		is_available_at_peace_adult = yes
-		NOT = { has_character_flag = had_event_yearly_saharan_0032 }
+# 	trigger = {
+# 		is_available_at_peace_adult = yes
+# 		NOT = { has_character_flag = had_event_yearly_saharan_0032 }
 		
-		#Has at least one domain county in either the Sahel or the immediate sub-Sahara.
-		any_held_title = {
-			tier = tier_county
-			able_to_be_raided_from_sahel_for_slaves_trigger = yes
+# 		#Has at least one domain county in either the Sahel or the immediate sub-Sahara.
+# 		any_held_title = {
+# 			tier = tier_county
+# 			able_to_be_raided_from_sahel_for_slaves_trigger = yes
 
-			#Has a neighbour who might raid for slaves.
-			any_neighboring_county = {
-				tier = tier_county
-				#Geographical requirements.
-				able_to_raid_sahel_for_slaves_trigger = yes
-				#Targeting requirements.
-				npc_component_criteria_trigger = yes
-				#Personality requirements.
-				holder = {
-					NOR = {
-						has_trait = just
-						has_trait = compassionate
-						has_trait = forgiving
-						has_trait = generous
-					}
-				}
-			}
-		}
-	}
+# 			#Has a neighbour who might raid for slaves.
+# 			any_neighboring_county = {
+# 				tier = tier_county
+# 				#Geographical requirements.
+# 				able_to_raid_sahel_for_slaves_trigger = yes
+# 				#Targeting requirements.
+# 				npc_component_criteria_trigger = yes
+# 				#Personality requirements.
+# 				holder = {
+# 					NOR = {
+# 						has_trait = just
+# 						has_trait = compassionate
+# 						has_trait = forgiving
+# 						has_trait = generous
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	weight_multiplier = {
-		base = 1
+# 	weight_multiplier = {
+# 		base = 1
 		
-		#Utter bastards are more likely to get this event.
-		modifier = {
-			add = 0.5
-			has_trait = callous
-		}
-		modifier = {
-			add = 1
-			has_trait = sadistic
-		}
-		#As are people who might clamp down on it.
-		modifier = {
-			add = 1
-			has_trait = compassionate
-		}
-		modifier = {
-			add = 1
-			has_trait = just
-		}
-	}
+# 		#Utter bastards are more likely to get this event.
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = callous
+# 		}
+# 		modifier = {
+# 			add = 1
+# 			has_trait = sadistic
+# 		}
+# 		#As are people who might clamp down on it.
+# 		modifier = {
+# 			add = 1
+# 			has_trait = compassionate
+# 		}
+# 		modifier = {
+# 			add = 1
+# 			has_trait = just
+# 		}
+# 	}
 
-	immediate = {
-		play_music_cue = "mx_cue_combat_2"
-		add_character_flag = {
-			flag = had_event_yearly_saharan_0032
-			days = 1825
-		}
+# 	immediate = {
+# 		play_music_cue = "mx_cue_combat_2"
+# 		add_character_flag = {
+# 			flag = had_event_yearly_saharan_0032
+# 			days = 1825
+# 		}
 		
-		#Grab a suitable domain county in either the Sahel or the immediate sub-Sahara.
-		random_held_title = {
-			limit = {
-				tier = tier_county
-				able_to_be_raided_from_sahel_for_slaves_trigger = yes
+# 		#Grab a suitable domain county in either the Sahel or the immediate sub-Sahara.
+# 		random_held_title = {
+# 			limit = {
+# 				tier = tier_county
+# 				able_to_be_raided_from_sahel_for_slaves_trigger = yes
 
-				#Ensuring that they have a neighbour who might raid for slaves.
-				any_neighboring_county = {
-					tier = tier_county
-					#Geographical requirements.
-					able_to_raid_sahel_for_slaves_trigger = yes
-					#Targeting requirements.
-					npc_component_criteria_trigger = yes
-					#Personality requirements.
-					holder = {
-						NOR = {
-							has_trait = just
-							has_trait = compassionate
-							has_trait = forgiving
-							has_trait = generous
-						}
-					}
-				}
-			}
-			#Save the raided county for ease of reference.
-			save_scope_as = raided_county
-			#Find the neighbouring county that qualifies them.
-			random_neighboring_county = {
-				limit = {
-					tier = tier_county
-					#Geographical requirements.
-					able_to_raid_sahel_for_slaves_trigger = yes
-					#Targeting requirements.
-					npc_component_criteria_trigger = yes
-					#Personality requirements.
-					holder = {
-						NOR = {
-							has_trait = just
-							has_trait = compassionate
-							has_trait = forgiving
-							has_trait = generous
-						}
-					}
-				}
-				#And save the raiders for ease of reference too.
-				save_scope_as = slave_raider_county
-			}
-		}
+# 				#Ensuring that they have a neighbour who might raid for slaves.
+# 				any_neighboring_county = {
+# 					tier = tier_county
+# 					#Geographical requirements.
+# 					able_to_raid_sahel_for_slaves_trigger = yes
+# 					#Targeting requirements.
+# 					npc_component_criteria_trigger = yes
+# 					#Personality requirements.
+# 					holder = {
+# 						NOR = {
+# 							has_trait = just
+# 							has_trait = compassionate
+# 							has_trait = forgiving
+# 							has_trait = generous
+# 						}
+# 					}
+# 				}
+# 			}
+# 			#Save the raided county for ease of reference.
+# 			save_scope_as = raided_county
+# 			#Find the neighbouring county that qualifies them.
+# 			random_neighboring_county = {
+# 				limit = {
+# 					tier = tier_county
+# 					#Geographical requirements.
+# 					able_to_raid_sahel_for_slaves_trigger = yes
+# 					#Targeting requirements.
+# 					npc_component_criteria_trigger = yes
+# 					#Personality requirements.
+# 					holder = {
+# 						NOR = {
+# 							has_trait = just
+# 							has_trait = compassionate
+# 							has_trait = forgiving
+# 							has_trait = generous
+# 						}
+# 					}
+# 				}
+# 				#And save the raiders for ease of reference too.
+# 				save_scope_as = slave_raider_county
+# 			}
+# 		}
 
-		#Grab the sub-realm name of the raiding county, for loc.
-		scope:slave_raider_county.holder.primary_title = { save_scope_as = hostile_sub_realm }
-	}
+# 		#Grab the sub-realm name of the raiding county, for loc.
+# 		scope:slave_raider_county.holder.primary_title = { save_scope_as = hostile_sub_realm }
+# 	}
 
-	#Not on my watch!
-	option = {
-		name = yearly_saharan.0032.a
+# 	#Not on my watch!
+# 	option = {
+# 		name = yearly_saharan.0032.a
 		
-		#You attempt to force back the slavers.
-		duel = {
-			skill = martial
-			target = scope:slave_raider_county.holder
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = yearly_saharan.0032.a.tt_success
-				send_interface_toast = {
-					title = yearly_saharan.0032.a.tt_success
-					left_icon = scope:slave_raider_county.holder
-					scope:slave_raider_county.holder = {
-						#You take reparations.
-						pay_short_term_gold = {
-							target = scope:raided_county.holder
-							gold = root.slaver_reparations_value
-						}
-						#They're a sore loser.
-						add_opinion = {
-							modifier = savaged_my_slavers_opinion
-							target = root
-							opinion = -20
-						}
-					}
+# 		#You attempt to force back the slavers.
+# 		duel = {
+# 			skill = martial
+# 			target = scope:slave_raider_county.holder
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = yearly_saharan.0032.a.tt_success
+# 				send_interface_toast = {
+# 					title = yearly_saharan.0032.a.tt_success
+# 					left_icon = scope:slave_raider_county.holder
+# 					scope:slave_raider_county.holder = {
+# 						#You take reparations.
+# 						pay_short_term_gold = {
+# 							target = scope:raided_county.holder
+# 							gold = root.slaver_reparations_value
+# 						}
+# 						#They're a sore loser.
+# 						add_opinion = {
+# 							modifier = savaged_my_slavers_opinion
+# 							target = root
+# 							opinion = -20
+# 						}
+# 					}
 
-					#Obviously, this makes you a bit of a local hero.
-					add_prestige = minor_prestige_gain
-					scope:raided_county = {
-						add_county_modifier = {
-							modifier = lord_defeated_slavers_modifier
-							years = 10
-						}
-					}
-				}
-			}
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = yearly_saharan.0032.a.tt_fail
-				send_interface_toast = {	
-					title = yearly_saharan.0032.a.tt_fail
-					left_icon = scope:slave_raider_county.holder
-					#The opposing lord profits by the acquired slaves.
-					scope:slave_raider_county.holder = { add_gold = scope:raided_county.title_province.local_slave_gold_value }
-					#And it's rather ignominious.
-					add_prestige = minor_prestige_loss
-					#Plus the county suffers damage.
-					scope:raided_county = { change_county_control = massive_county_control_loss }
-				}
-			}
-		}
+# 					#Obviously, this makes you a bit of a local hero.
+# 					add_prestige = minor_prestige_gain
+# 					scope:raided_county = {
+# 						add_county_modifier = {
+# 							modifier = lord_defeated_slavers_modifier
+# 							years = 10
+# 						}
+# 					}
+# 				}
+# 			}
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = yearly_saharan.0032.a.tt_fail
+# 				send_interface_toast = {	
+# 					title = yearly_saharan.0032.a.tt_fail
+# 					left_icon = scope:slave_raider_county.holder
+# 					#The opposing lord profits by the acquired slaves.
+# 					scope:slave_raider_county.holder = { add_gold = scope:raided_county.title_province.local_slave_gold_value }
+# 					#And it's rather ignominious.
+# 					add_prestige = minor_prestige_loss
+# 					#Plus the county suffers damage.
+# 					scope:raided_county = { change_county_control = massive_county_control_loss }
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			vengeful = medium_stress_impact_loss
-			compassionate = major_stress_impact_loss
-			just = major_stress_impact_loss
-			lazy = minor_stress_impact_gain
-			callous = minor_stress_impact_gain
-			sadistic = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.75
-				ai_energy = -0.1
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = vengeful
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = compassionate
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = just
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = lazy
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = callous
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = sadistic
-			}
-		}
-	}
+# 		stress_impact = {
+# 			vengeful = medium_stress_impact_loss
+# 			compassionate = major_stress_impact_loss
+# 			just = major_stress_impact_loss
+# 			lazy = minor_stress_impact_gain
+# 			callous = minor_stress_impact_gain
+# 			sadistic = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.75
+# 				ai_energy = -0.1
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = just
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = callous
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = sadistic
+# 			}
+# 		}
+# 	}
 	
-	#Demand a cut of the proceeds.
-	option = {
-		name = yearly_saharan.0032.b
+# 	#Demand a cut of the proceeds.
+# 	option = {
+# 		name = yearly_saharan.0032.b
 
-		#You get a bit of cash out of your complicitude.
-		add_gold = scope:raided_county.title_province.selfish_liege_slave_gold_value
+# 		#You get a bit of cash out of your complicitude.
+# 		add_gold = scope:raided_county.title_province.selfish_liege_slave_gold_value
 
-		#Local society is disrupted, and you are not popular in the affected area.
-		scope:raided_county = {
-			change_county_control = massive_county_control_loss
-			add_county_modifier = {
-				modifier = lord_complicit_with_slavers_modifier
-				years = 10
-			}
-		}
+# 		#Local society is disrupted, and you are not popular in the affected area.
+# 		scope:raided_county = {
+# 			change_county_control = massive_county_control_loss
+# 			add_county_modifier = {
+# 				modifier = lord_complicit_with_slavers_modifier
+# 				years = 10
+# 			}
+# 		}
 
-		stress_impact = {
-			callous = minor_stress_impact_loss
-			greedy = minor_stress_impact_loss
-			sadistic = major_stress_impact_loss
-			vengeful = minor_stress_impact_gain
-			compassionate = major_stress_impact_gain
-			just = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = -0.5
-				ai_vengefulness = -0.1
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = callous
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = greedy
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = sadistic
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = vengeful
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = compassionate
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = just
-			}
-		}
-	}
+# 		stress_impact = {
+# 			callous = minor_stress_impact_loss
+# 			greedy = minor_stress_impact_loss
+# 			sadistic = major_stress_impact_loss
+# 			vengeful = minor_stress_impact_gain
+# 			compassionate = major_stress_impact_gain
+# 			just = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = -0.5
+# 				ai_vengefulness = -0.1
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = callous
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = just
+# 			}
+# 		}
+# 	}
 	
-	#Leave them to it.
-	option = {
-		name = yearly_saharan.0032.c
+# 	#Leave them to it.
+# 	option = {
+# 		name = yearly_saharan.0032.c
 
-		#You take the most monstrous of things in stride.
-		add_character_modifier = {
-			modifier = utterly_unphased_modifier
-			years = 10
-		}
+# 		#You take the most monstrous of things in stride.
+# 		add_character_modifier = {
+# 			modifier = utterly_unphased_modifier
+# 			years = 10
+# 		}
 
-		#And the county suffers damage.
-		scope:raided_county = { change_county_control = massive_county_control_loss }
+# 		#And the county suffers damage.
+# 		scope:raided_county = { change_county_control = massive_county_control_loss }
 
-		stress_impact = {
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = lazy
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = fickle
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = vengeful
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = compassionate
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = just
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = fickle
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = just
+# 			}
+# 		}
+# 	}
+# }

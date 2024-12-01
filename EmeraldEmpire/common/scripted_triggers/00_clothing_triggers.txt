@@ -86,12 +86,13 @@ portrait_wear_no_headgear_trigger = {
 				activity_tournament_shirtless_trigger = yes
 			}
 
-			NOR = { # Exceptions for dukes, kings, popes
+			#L5R Disabled
+			NOT = { # Exceptions for dukes, kings, popes
 				highest_held_title_tier >= tier_duchy # Should wear ducal or royal crown instead.
-				AND = {
-					religion = religion:christianity_religion
-					faith.religious_head = this
-				}
+				# AND = {
+				# 	religion = religion:christianity_religion
+				# 	faith.religious_head = this
+				# }
 			}
 		}
 
@@ -372,19 +373,21 @@ portrait_wear_helmet_trigger = { # Different from Armor, as Kings and Emperors s
 }
 
 portrait_wear_christian_holy_order_trigger = { # Christian holy order members/vassals should wear different armor
-	OR = {
-		AND = { # Is a Christian holy order member
-			religion = religion:christianity_religion
-			government_has_flag = government_is_holy_order
-		}
-		AND = { # Is a Christian holy order vassal
-			religion = religion:christianity_religion
-			is_playable_character = no
-			portrait_wear_armor_trigger = yes
-			exists = liege
-			liege = {  government_has_flag = government_is_holy_order }
-		}
-	}
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	AND = { # Is a Christian holy order member
+	# 		religion = religion:christianity_religion
+	# 		government_has_flag = government_is_holy_order
+	# 	}
+	# 	AND = { # Is a Christian holy order vassal
+	# 		religion = religion:christianity_religion
+	# 		is_playable_character = no
+	# 		portrait_wear_armor_trigger = yes
+	# 		exists = liege
+	# 		liege = {  government_has_flag = government_is_holy_order }
+	# 	}
+	# }
 }
 
 portrait_has_trait_trigger = {
@@ -423,324 +426,392 @@ portrait_shared_clothing_contents_trigger = {
 }
 
 portrait_byzantine_clothing_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = byzantine
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = byzantine
+	# }
 }
 
 portrait_byzantine_clothing_spouse_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = byzantine
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = byzantine
+	# }
 }
 
 portrait_indian_clothing_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = indian
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = indian
+	# }
 }
 
 portrait_indian_clothing_spouse_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = indian
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = indian
+	# }
 }
 
 portrait_mena_clothing_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = mena
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = mena
+	# }
 }
 
 portrait_mena_clothing_spouse_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = mena
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = mena
+	# }
 }
 
 portrait_african_clothing_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = african
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = african
+	# }
 }
 
 portrait_african_clothing_spouse_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = african
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = african
+	# }
 }
 
 portrait_northern_clothing_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = northern
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = northern
+	# }
 }
 
 portrait_northern_clothing_spouse_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = northern
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = northern
+	# }
 }
 
 
 ### FP2 - Fate of Iberia ###
 
 portrait_fp2_iberian_muslim_clothing_trigger = {
-	has_fp2_dlc_trigger = yes
-	OR = {
-		portrait_shared_clothing_contents_trigger = {
-			CULTURE_SCOPE = scope:culture
-			CULTURE_FLAG = iberian_muslim
-		}
-		trigger_if = {
-			limit = { exists = this	}
-			AND = {
-				is_playable_character = yes
-				religion = religion:islam_religion
-				capital_province = {
-					geographical_region = world_europe_west_iberia
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	always = no
+	# has_fp2_dlc_trigger = yes
+	# OR = {
+	# 	portrait_shared_clothing_contents_trigger = {
+	# 		CULTURE_SCOPE = scope:culture
+	# 		CULTURE_FLAG = iberian_muslim
+	# 	}
+	# 	trigger_if = {
+	# 		limit = { exists = this	}
+	# 		AND = {
+	# 			is_playable_character = yes
+	# 			religion = religion:islam_religion
+	# 			capital_province = {
+	# 				geographical_region = world_europe_west_iberia
+	# 			}
+	# 		}
+	# 	}
+	# }
 }
 
 portrait_fp2_iberian_muslim_clothing_spouse_trigger = {
-	has_fp2_dlc_trigger = yes
-	OR = {
-		portrait_shared_clothing_contents_trigger = {
-			CULTURE_SCOPE = culture
-			CULTURE_FLAG = iberian_muslim
-		}
-		AND = {
-			is_playable_character = yes
-			religion = religion:islam_religion
-			capital_province = {
-				geographical_region = world_europe_west_iberia
-			}
-		}
-	}
+	#L5R Disabled
+	always = no
+	# has_fp2_dlc_trigger = yes
+	# OR = {
+	# 	portrait_shared_clothing_contents_trigger = {
+	# 		CULTURE_SCOPE = culture
+	# 		CULTURE_FLAG = iberian_muslim
+	# 	}
+	# 	AND = {
+	# 		is_playable_character = yes
+	# 		religion = religion:islam_religion
+	# 		capital_province = {
+	# 			geographical_region = world_europe_west_iberia
+	# 		}
+	# 	}
+	# }
 }
 
 portrait_fp2_iberian_christian_clothing_trigger = {
-	has_fp2_dlc_trigger = yes
-	OR = {
-		portrait_shared_clothing_contents_trigger = {
-			CULTURE_SCOPE = scope:culture
-			CULTURE_FLAG = iberian_christian
-		}
-		trigger_if = {
-			limit = { exists = this }
-			AND = {
-				is_playable_character = yes
-				religion = religion:christianity_religion
-				capital_province = {
-					geographical_region = world_europe_west_iberia
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	always = no
+	# has_fp2_dlc_trigger = yes
+	# OR = {
+	# 	portrait_shared_clothing_contents_trigger = {
+	# 		CULTURE_SCOPE = scope:culture
+	# 		CULTURE_FLAG = iberian_christian
+	# 	}
+	# 	trigger_if = {
+	# 		limit = { exists = this }
+	# 		AND = {
+	# 			is_playable_character = yes
+	# 			religion = religion:christianity_religion
+	# 			capital_province = {
+	# 				geographical_region = world_europe_west_iberia
+	# 			}
+	# 		}
+	# 	}
+	# }
 }
 
 portrait_fp2_iberian_christian_clothing_spouse_trigger = {
-	has_fp2_dlc_trigger = yes
-	OR = {
-		portrait_shared_clothing_contents_trigger = {
-			CULTURE_SCOPE = culture
-			CULTURE_FLAG = iberian_christian
-		}
-		AND = {
-			is_playable_character = yes
-			religion = religion:christianity_religion
-			capital_province = {
-				geographical_region = world_europe_west_iberia
-			}
-		}
-	}
+	#L5R Disabled
+	always = no
+	# has_fp2_dlc_trigger = yes
+	# OR = {
+	# 	portrait_shared_clothing_contents_trigger = {
+	# 		CULTURE_SCOPE = culture
+	# 		CULTURE_FLAG = iberian_christian
+	# 	}
+	# 	AND = {
+	# 		is_playable_character = yes
+	# 		religion = religion:christianity_religion
+	# 		capital_province = {
+	# 			geographical_region = world_europe_west_iberia
+	# 		}
+	# 	}
+	# }
 }
 
 ### FP3 - Sands of Time  ###
 #iranian
 portrait_fp3_iranian_clothing_trigger = {
-	has_fp3_dlc_trigger = yes
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = iranian
-	}
+	#L5R Disabled
+	always = no
+	# has_fp3_dlc_trigger = yes
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = iranian
+	# }
 }
 
 portrait_fp3_iranian_clothing_spouse_trigger = {
-	has_fp3_dlc_trigger = yes
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = iranian
-	}
+	#L5R Disabled
+	always = no
+	# has_fp3_dlc_trigger = yes
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = iranian
+	# }
 }
 
 #turkic
 portrait_fp3_turkic_clothing_trigger = {
-	has_fp3_dlc_trigger = yes
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = turkic
-	}
+	#L5R Disabled
+	always = no
+	# has_fp3_dlc_trigger = yes
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = turkic
+	# }
 }
 
 portrait_fp3_turkic_clothing_spouse_trigger = {
-	has_fp3_dlc_trigger = yes
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = turkic
-	}
+	#L5R Disabled
+	always = no
+	# has_fp3_dlc_trigger = yes
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = turkic
+	# }
 }
 
 ### AFR ###
 
 portrait_afr_berber_clothing_trigger = {
-	has_afr_dlc_trigger = yes
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = afr_berber
-	}
-	trigger_if = {
-		limit = { exists = this	}
-		NAND = {
-			is_landed = yes
-			capital_province = { geographical_region = world_europe_west_iberia	}
-		}
-	}
+	#L5R Disabled
+	always = no
+	# has_afr_dlc_trigger = yes
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = afr_berber
+	# }
+	# trigger_if = {
+	# 	limit = { exists = this	}
+	# 	NAND = {
+	# 		is_landed = yes
+	# 		capital_province = { geographical_region = world_europe_west_iberia	}
+	# 	}
+	# }
 }
 
 portrait_afr_berber_clothing_spouse_trigger = {
-	has_afr_dlc_trigger = yes
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = afr_berber
-	}
-	NAND = {
-		is_landed = yes
-		capital_province = { geographical_region = world_europe_west_iberia }
-	}
+	#L5R Disabled
+	always = no
+	# has_afr_dlc_trigger = yes
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = afr_berber
+	# }
+	# NAND = {
+	# 	is_landed = yes
+	# 	capital_province = { geographical_region = world_europe_west_iberia }
+	# }
 }
 
 ### FP1 ###
 
 portrait_fp1_norse_clothing_trigger = {
-	has_fp1_dlc_trigger = yes
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = fp1_norse
-	}
+	#L5R Disabled
+	always = no
+	# has_fp1_dlc_trigger = yes
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = fp1_norse
+	# }
 }
 
 portrait_fp1_norse_clothing_spouse_trigger = {
-	has_fp1_dlc_trigger = yes
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = fp1_norse
-	}
+	#L5R Disabled
+	always = no
+	# has_fp1_dlc_trigger = yes
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = fp1_norse
+	# }
 }
 
 portrait_steppe_clothing_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = mongol
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = mongol
+	# }
 }
 
 portrait_steppe_clothing_spouse_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = mongol
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = mongol
+	# }
 }
 
 portrait_western_clothing_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = western
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = western
+	# }
 }
 
 portrait_western_clothing_spouse_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = western
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = western
+	# }
 }
 
 portrait_french_clothing_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = french
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = french
+	# }
 }
 
 portrait_french_clothing_spouse_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = french
-	}
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = french
+	# }
 }
 
 portrait_dde_hre_clothing_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = dde_hre
-	}
-	has_dlc = "Garments of the Holy Roman Empire"
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = dde_hre
+	# }
+	# has_dlc = "Garments of the Holy Roman Empire"
 }
 
 portrait_dde_hre_clothing_spouse_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = dde_hre
-	}
-	has_dlc = "Garments of the Holy Roman Empire"
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = dde_hre
+	# }
+	# has_dlc = "Garments of the Holy Roman Empire"
 }
 
 portrait_dde_abbasid_clothing_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = dde_abbasid
-	}
-	has_dlc = "Fashion of the Abbasid Court"
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = dde_abbasid
+	# }
+	# has_dlc = "Fashion of the Abbasid Court"
 }
 
 portrait_dde_abbasid_clothing_spouse_trigger = {
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = dde_abbasid
-	}
-	has_dlc = "Fashion of the Abbasid Court"
+	#L5R Disabled
+	always = no
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = dde_abbasid
+	# }
+	# has_dlc = "Fashion of the Abbasid Court"
 }
 
 ### SP2 - Elegance of the Empire ###
 
 portrait_sp2_western_clothing_trigger = {
-	has_dlc_feature = elegance_of_the_empire
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = scope:culture
-		CULTURE_FLAG = western
-	}
+	#L5R Disabled
+	always = no
+	# has_dlc_feature = elegance_of_the_empire
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = scope:culture
+	# 	CULTURE_FLAG = western
+	# }
 }
 
 portrait_sp2_western_clothing_spouse_trigger = {
-	has_dlc_feature = elegance_of_the_empire
-	portrait_shared_clothing_contents_trigger = {
-		CULTURE_SCOPE = culture
-		CULTURE_FLAG = western
-	}
+	#L5R Disabled
+	always = no
+	# has_dlc_feature = elegance_of_the_empire
+	# portrait_shared_clothing_contents_trigger = {
+	# 	CULTURE_SCOPE = culture
+	# 	CULTURE_FLAG = western
+	# }
 }
 
 portrait_can_use_noble_headgear_trigger = {
@@ -762,7 +833,7 @@ portrait_can_use_noble_headgear_trigger = {
 
 
 ### General clothing triggers ###
-# Rokugan : TODO update that
+# L5R : TODO update that
 portrait_era1_trigger = { # Intended to primarily cover the years 850 to 1000
 	scope:year_of_birth < 1000
 	NAND = { # People from 16 to 25 will be the first to adopt new fashion
@@ -1494,83 +1565,85 @@ portrait_royalty_clothing_trigger = {
 }
 
 portrait_royalty_african_headgear_trigger = {
-	trigger_if = {
-		limit = { exists = this }
-		portrait_can_use_noble_headgear_trigger = yes
-		OR = {
-			AND = {
-				OR = {
-					highest_held_title_tier = tier_kingdom
-					AND = { is_ruler = yes government_has_flag = government_is_theocracy }
-				}
-				NAND = { # Blocked for mercenaries and adventurers
-					is_ruler = yes
-					OR = {
-						government_has_flag = government_is_mercenary
-						AND = {
-							government_has_flag = government_is_landless_adventurer
-							NOR = {
-								has_realm_law = camp_purpose_legitimists
-								liege ?= {  has_realm_law = camp_purpose_legitimists }
-							}
-						}
-					}
-				}
-				NOT = { government_has_flag = government_is_republic }
-				OR = {
-					portrait_african_clothing_trigger = yes
-					AND = {
-						culture = {
-							has_cultural_pillar = heritage_east_african
-						}
-						NOT = {
-							religion = religion:islam_religion
-						}
-					}
-				}
-			}
-			AND = {
-				exists = primary_spouse
-				OR = {
-					is_ruler = no
-					highest_held_title_tier = tier_barony
-				}
-				primary_spouse = {
-					OR = {
-						highest_held_title_tier = tier_kingdom
-						AND = { is_ruler = yes government_has_flag = government_is_theocracy }
-					}
-					NAND = { # Blocked for mercenaries
-						is_ruler = yes
-						government_has_flag = government_is_mercenary
-					}
-					NAND = { # Blocked for adventurers
-						is_ruler = yes
-						AND = {
-							government_has_flag = government_is_landless_adventurer
-							has_realm_law = camp_purpose_legitimists
-						}
-					}
-					NOT = { government_has_flag = government_is_republic }
-					OR = {
-						portrait_african_clothing_spouse_trigger = yes
-						AND = {
-							culture = {
-								has_cultural_pillar = heritage_east_african
-							}
-							NOT = {
-								religion = religion:islam_religion
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	trigger_else = {
-		scope:highest_held_title_tier = tier_kingdom
-		portrait_african_clothing_trigger = yes
-	}
+	#L5R Disabled
+	always = no
+	# trigger_if = {
+	# 	limit = { exists = this }
+	# 	portrait_can_use_noble_headgear_trigger = yes
+	# 	OR = {
+	# 		AND = {
+	# 			OR = {
+	# 				highest_held_title_tier = tier_kingdom
+	# 				AND = { is_ruler = yes government_has_flag = government_is_theocracy }
+	# 			}
+	# 			NAND = { # Blocked for mercenaries and adventurers
+	# 				is_ruler = yes
+	# 				OR = {
+	# 					government_has_flag = government_is_mercenary
+	# 					AND = {
+	# 						government_has_flag = government_is_landless_adventurer
+	# 						NOR = {
+	# 							has_realm_law = camp_purpose_legitimists
+	# 							liege ?= {  has_realm_law = camp_purpose_legitimists }
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 			NOT = { government_has_flag = government_is_republic }
+	# 			OR = {
+	# 				portrait_african_clothing_trigger = yes
+	# 				AND = {
+	# 					culture = {
+	# 						has_cultural_pillar = heritage_east_african
+	# 					}
+	# 					NOT = {
+	# 						religion = religion:islam_religion
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		AND = {
+	# 			exists = primary_spouse
+	# 			OR = {
+	# 				is_ruler = no
+	# 				highest_held_title_tier = tier_barony
+	# 			}
+	# 			primary_spouse = {
+	# 				OR = {
+	# 					highest_held_title_tier = tier_kingdom
+	# 					AND = { is_ruler = yes government_has_flag = government_is_theocracy }
+	# 				}
+	# 				NAND = { # Blocked for mercenaries
+	# 					is_ruler = yes
+	# 					government_has_flag = government_is_mercenary
+	# 				}
+	# 				NAND = { # Blocked for adventurers
+	# 					is_ruler = yes
+	# 					AND = {
+	# 						government_has_flag = government_is_landless_adventurer
+	# 						has_realm_law = camp_purpose_legitimists
+	# 					}
+	# 				}
+	# 				NOT = { government_has_flag = government_is_republic }
+	# 				OR = {
+	# 					portrait_african_clothing_spouse_trigger = yes
+	# 					AND = {
+	# 						culture = {
+	# 							has_cultural_pillar = heritage_east_african
+	# 						}
+	# 						NOT = {
+	# 							religion = religion:islam_religion
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# trigger_else = {
+	# 	scope:highest_held_title_tier = tier_kingdom
+	# 	portrait_african_clothing_trigger = yes
+	# }
 }
 
 portrait_imperial_trigger = {
@@ -1764,44 +1837,45 @@ portrait_war_nobles_helmet_trigger = {
 		portrait_wear_helmet_trigger = yes
 	}
 	portrait_$CULTURE_INPUT$_clothing_trigger = yes
-	NOR = {
-		AND = {
-			religion = religion:christianity_religion
-			government_has_flag = government_is_holy_order
-		}
-		AND = {
-			religion = religion:christianity_religion
-			is_playable_character = no
-			portrait_wear_armor_trigger = yes
-			exists = liege
-			liege = {
-				government_has_flag = government_is_holy_order
-			}
-		}
-		AND = {
-			religion = religion:christianity_religion
-			portrait_wear_armor_trigger = yes
-			OR = {
-				any_character_war = {
-					OR = {
-						using_cb = undirected_great_holy_war
-						using_cb = directed_great_holy_war
-					}
-					is_attacker = prev
-				}
-				any_liege_or_above = {
-					faith = prev.faith
-					any_character_war = {
-						OR = {
-							using_cb = undirected_great_holy_war
-							using_cb = directed_great_holy_war
-						}
-						is_attacker = prev
-					}
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	# NOR = {
+	# 	AND = {
+	# 		religion = religion:christianity_religion
+	# 		government_has_flag = government_is_holy_order
+	# 	}
+	# 	AND = {
+	# 		religion = religion:christianity_religion
+	# 		is_playable_character = no
+	# 		portrait_wear_armor_trigger = yes
+	# 		exists = liege
+	# 		liege = {
+	# 			government_has_flag = government_is_holy_order
+	# 		}
+	# 	}
+	# 	AND = {
+	# 		religion = religion:christianity_religion
+	# 		portrait_wear_armor_trigger = yes
+	# 		OR = {
+	# 			any_character_war = {
+	# 				OR = {
+	# 					using_cb = undirected_great_holy_war
+	# 					using_cb = directed_great_holy_war
+	# 				}
+	# 				is_attacker = prev
+	# 			}
+	# 			any_liege_or_above = {
+	# 				faith = prev.faith
+	# 				any_character_war = {
+	# 					OR = {
+	# 						using_cb = undirected_great_holy_war
+	# 						using_cb = directed_great_holy_war
+	# 					}
+	# 					is_attacker = prev
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 }
 
 portrait_war_nobles_fancy_helmet_trigger = {
@@ -1825,45 +1899,47 @@ portrait_war_nobles_fancy_helmet_trigger = {
 }
 
 portrait_western_crusades_trigger = {
-	exists = this
-	OR = {
-		AND = {
-			religion = religion:christianity_religion
-			government_has_flag = government_is_holy_order
-		}
-		AND = {
-			religion = religion:christianity_religion
-			is_playable_character = no
-			portrait_wear_armor_trigger = yes
-			exists = liege
-			liege = {
-				government_has_flag = government_is_holy_order
-			}
-		}
-		AND = {
-			religion = religion:christianity_religion
-			portrait_wear_armor_trigger = yes
-			OR = {
-				any_character_war = {
-					OR = {
-						using_cb = undirected_great_holy_war
-						using_cb = directed_great_holy_war
-					}
-					is_attacker = prev
-				}
-				any_liege_or_above = {
-					faith = prev.faith
-					any_character_war = {
-						OR = {
-							using_cb = undirected_great_holy_war
-							using_cb = directed_great_holy_war
-						}
-						is_attacker = prev
-					}
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	always = no
+	# exists = this
+	# OR = {
+	# 	AND = {
+	# 		religion = religion:christianity_religion
+	# 		government_has_flag = government_is_holy_order
+	# 	}
+	# 	AND = {
+	# 		religion = religion:christianity_religion
+	# 		is_playable_character = no
+	# 		portrait_wear_armor_trigger = yes
+	# 		exists = liege
+	# 		liege = {
+	# 			government_has_flag = government_is_holy_order
+	# 		}
+	# 	}
+	# 	AND = {
+	# 		religion = religion:christianity_religion
+	# 		portrait_wear_armor_trigger = yes
+	# 		OR = {
+	# 			any_character_war = {
+	# 				OR = {
+	# 					using_cb = undirected_great_holy_war
+	# 					using_cb = directed_great_holy_war
+	# 				}
+	# 				is_attacker = prev
+	# 			}
+	# 			any_liege_or_above = {
+	# 				faith = prev.faith
+	# 				any_character_war = {
+	# 					OR = {
+	# 						using_cb = undirected_great_holy_war
+	# 						using_cb = directed_great_holy_war
+	# 					}
+	# 					is_attacker = prev
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 }
 
 
@@ -2037,24 +2113,26 @@ portrait_religious_head_no_poverty_trigger = {
 }
 
 portrait_religious_head_popes_trigger = {
-	exists = this
-	OR = {
-		AND = {
-			faith = faith:catholic
-			is_adult = yes
-			religion = religion:christianity_religion
-			exists = primary_title
-			primary_title = {
-				is_head_of_faith = yes
-			}
-		}
-		AND = {
-			exists = this
-			any_equipped_character_artifact = {
-				has_variable = pope_hat
-			}
-		}
-	}
+	#L5R Disabled
+	always = no
+	# exists = this
+	# OR = {
+	# 	AND = {
+	# 		faith = faith:catholic
+	# 		is_adult = yes
+	# 		religion = religion:christianity_religion
+	# 		exists = primary_title
+	# 		primary_title = {
+	# 			is_head_of_faith = yes
+	# 		}
+	# 	}
+	# 	AND = {
+	# 		exists = this
+	# 		any_equipped_character_artifact = {
+	# 			has_variable = pope_hat
+	# 		}
+	# 	}
+	# }
 }
 
 portrait_religious_head_ruler_trigger = {
@@ -2091,119 +2169,147 @@ portrait_religious_faith_or_foundational_trigger = {
 }
 
 portrait_religious_christian_trigger = {
-	religion = religion:christianity_religion
+	#L5R Disabled
+	always = no
+	# religion = religion:christianity_religion
 }
 
 portrait_religious_catholic_trigger = {
-	faith = {
-		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:catholic }
-	}
+	#L5R Disabled
+	always = no
+	# faith = {
+	# 	portrait_religious_faith_or_foundational_trigger = { FAITH = faith:catholic }
+	# }
 }
 
 portrait_religious_orthodox_trigger = {
-	faith = {
-		OR = {
-			portrait_religious_faith_or_foundational_trigger = { FAITH = faith:orthodox }
-			portrait_religious_faith_or_foundational_trigger = { FAITH = faith:armenian_apostolic }
-			portrait_religious_faith_or_foundational_trigger = { FAITH = faith:coptic }
-			portrait_religious_faith_or_foundational_trigger = { FAITH = faith:messalian }
-			portrait_religious_faith_or_foundational_trigger = { FAITH = faith:bogomilist }
-			portrait_religious_faith_or_foundational_trigger = { FAITH = faith:paulician }
-			portrait_religious_faith_or_foundational_trigger = { FAITH = faith:nestorian }
-		}
-	}
+	#L5R Disabled
+	always = no
+	# faith = {
+	# 	OR = {
+	# 		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:orthodox }
+	# 		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:armenian_apostolic }
+	# 		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:coptic }
+	# 		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:messalian }
+	# 		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:bogomilist }
+	# 		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:paulician }
+	# 		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:nestorian }
+	# 	}
+	# }
 }
 
 portrait_religious_jewish_trigger = {
-	religion = religion:judaism_religion
+	#L5R Disabled
+	always = no
+	# religion = religion:judaism_religion
 }
 
 portrait_religious_hellenism_trigger = {
-	religion = religion:hellenism_religion
+	#L5R Disabled
+	always = no
+	# religion = religion:hellenism_religion
 }
 
 portrait_religious_muslim_trigger = {
-	religion = religion:islam_religion
+	#L5R Disabled
+	always = no
+	# religion = religion:islam_religion
 }
 
 portrait_religious_norse_trigger = {
-	OR = {
-		religion = religion:germanic_religion
-		religion = religion:baltic_religion
-		religion = religion:finno_ugric_religion
-		religion = religion:paganism_religion
-		religion = religion:slavic_religion
-	}
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	religion = religion:germanic_religion
+	# 	religion = religion:baltic_religion
+	# 	religion = religion:finno_ugric_religion
+	# 	religion = religion:paganism_religion
+	# 	religion = religion:slavic_religion
+	# }
 }
 
 portrait_religious_steppe_trigger = {
-	OR = {
-		religion = religion:tengrism_religion
-		religion = religion:qiangic_religion
-		religion = religion:siberian_religion
-		religion = religion:mundhum_religion
-		religion = religion:tani_religion
-		religion = religion:magyar_religion
-		faith = {
-			portrait_religious_faith_or_foundational_trigger = { FAITH = faith:old_bon }
-		}
-	}
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	religion = religion:tengrism_religion
+	# 	religion = religion:qiangic_religion
+	# 	religion = religion:siberian_religion
+	# 	religion = religion:mundhum_religion
+	# 	religion = religion:tani_religion
+	# 	religion = religion:magyar_religion
+	# 	faith = {
+	# 		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:old_bon }
+	# 	}
+	# }
 }
 
 portrait_religious_buddhist_trigger = {
-	OR = {
-		religion = religion:buddhism_religion
-		faith = {
-			portrait_religious_faith_or_foundational_trigger = { FAITH = faith:bon }
-		}
-		religion = religion:taoism_religion
-	}
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	religion = religion:buddhism_religion
+	# 	faith = {
+	# 		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:bon }
+	# 	}
+	# 	religion = religion:taoism_religion
+	# }
 }
 
 portrait_religious_hindu_trigger = {
-	religion = religion:hinduism_religion
+	#L5R Disabled
+	always = no
+	# religion = religion:hinduism_religion
 }
 
 portrait_religious_jain_trigger = {
-	religion = religion:jainism_religion
+	#L5R Disabled
+	always = no
+	# religion = religion:jainism_religion
 }
 
 portrait_religious_zoroastrian_trigger = {
-	OR = {
-		religion = religion:zoroastrianism_religion
-		religion = religion:yazidi_religion
-		religion = religion:zunism_religion
-		faith = {
-			portrait_religious_faith_or_foundational_trigger = { FAITH = faith:mandeaism }
-		}
-		religion = religion:dualism_religion
-		religion = religion:basque_religion
-	}
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	religion = religion:zoroastrianism_religion
+	# 	religion = religion:yazidi_religion
+	# 	religion = religion:zunism_religion
+	# 	faith = {
+	# 		portrait_religious_faith_or_foundational_trigger = { FAITH = faith:mandeaism }
+	# 	}
+	# 	religion = religion:dualism_religion
+	# 	religion = religion:basque_religion
+	# }
 }
 
 portrait_religious_african_trigger = {
-	OR = {
-		religion = religion:akom_religion
-		religion = religion:waaqism_religion
-		religion = religion:west_african_religion
-		religion = religion:west_african_bori_religion
-		religion = religion:west_african_roog_religion
-		religion = religion:kushitism_religion
-		religion = religion:west_african_orisha_religion
-	}
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	religion = religion:akom_religion
+	# 	religion = religion:waaqism_religion
+	# 	religion = religion:west_african_religion
+	# 	religion = religion:west_african_bori_religion
+	# 	religion = religion:west_african_roog_religion
+	# 	religion = religion:kushitism_religion
+	# 	religion = religion:west_african_orisha_religion
+	# }
 }
 
 
 ### DDE HRE ###
 
 portrait_reichskrone_trigger = {
-	exists = this
-	OR = {
-		has_primary_title = title:e_hre
-		any_equipped_character_artifact = {
-			has_variable = reichskrone
-		}
-	}
+	#L5R Disabled
+	always = no
+	# exists = this
+	# OR = {
+	# 	has_primary_title = title:e_hre
+	# 	any_equipped_character_artifact = {
+	# 		has_variable = reichskrone
+	# 	}
+	# }
 }
 
 
@@ -2302,29 +2408,33 @@ portrait_ep2_mena_travel_cloak_trigger = {
 }
 
 portrait_ep2_hajj_clothes_trigger = {
-	age > 4
-	# Must be traveling on a pilgrimage
-	exists = current_travel_plan.travel_plan_activity
-	current_travel_plan = {
-		travel_plan_activity = {
-			has_activity_type = activity_pilgrimage
-		}
-	}
-	religion = religion:islam_religion
-	# Used for the following cultures
-	OR = {
-		portrait_mena_clothing_trigger = yes
-		portrait_african_clothing_trigger = yes
-		portrait_indian_clothing_trigger = yes
-		portrait_steppe_clothing_trigger = yes
-	}
+	#L5R Disabled
+	always = no
+	# age > 4
+	# # Must be traveling on a pilgrimage
+	# exists = current_travel_plan.travel_plan_activity
+	# current_travel_plan = {
+	# 	travel_plan_activity = {
+	# 		has_activity_type = activity_pilgrimage
+	# 	}
+	# }
+	# religion = religion:islam_religion
+	# # Used for the following cultures
+	# OR = {
+	# 	portrait_mena_clothing_trigger = yes
+	# 	portrait_african_clothing_trigger = yes
+	# 	portrait_indian_clothing_trigger = yes
+	# 	portrait_steppe_clothing_trigger = yes
+	# }
 }
 
 portrait_ep2_ihram_clothes_trigger = {
-	portrait_ep2_hajj_clothes_trigger = yes
-	is_male = yes
-	has_character_modifier = hajj_halq_modifier
-	primary_title.tier >= tier_duchy
+	#L5R Disabled
+	always = no
+	# portrait_ep2_hajj_clothes_trigger = yes
+	# is_male = yes
+	# has_character_modifier = hajj_halq_modifier
+	# primary_title.tier >= tier_duchy
 }
 
 portrait_ep2_western_cloak_duel_trigger = {

@@ -2789,13 +2789,13 @@ birth.3022 = {
 
 	option = {
 		name = {
-			trigger = { NOT = { faith = { religion_tag = buddhism_religion } } }
+			# trigger = { NOT = { faith = { religion_tag = buddhism_religion } } } #L5R Disabled
 			text = birth.3022.a
 		}
-		name = {
-			trigger = { faith = { religion_tag = buddhism_religion } }
-			text = birth.3022.a.buddhism
-		}
+		# name = {
+		# 	trigger = { faith = { religion_tag = buddhism_religion } }
+		# 	text = birth.3022.a.buddhism
+		# }
 		add_stress = medium_stress_gain
 	}
 }
@@ -3824,117 +3824,118 @@ birth.9002 = {
 						}
 					}
 				}
-				1 = { #Religious names
-					trigger = {
-						scope:suggester = { ai_zeal > 0 }
-						scope:child = {
-							OR = {
-								faith = { religion_tag = germanic_religion }
-								faith = { religion_tag = christianity_religion }
-							}
-						}
-					}
-					modifier = {
-						scope:suggester = { ai_zeal >= medium_positive_ai_value }
-						factor = 5
-					}
-					random_list = {
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Thor }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Balder }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Odin }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Freja }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Idun }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Frigg }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = christianity_religion }
-								}	
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Peter } #Apostle
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = christianity_religion }
-								}	
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Paul } #Apostle
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = christianity_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:John } #Apostle
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									faith = { religion_tag = christianity_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Maria } #Holy virgin
-						}
-					}
-					save_scope_value_as = {
-						name = name_type
-						value = flag:religious
-					}
-				}
+				#L5R Disabled
+				# 1 = { #Religious names
+				# 	trigger = {
+				# 		scope:suggester = { ai_zeal > 0 }
+				# 		scope:child = {
+				# 			OR = {
+				# 				faith = { religion_tag = germanic_religion }
+				# 				faith = { religion_tag = christianity_religion }
+				# 			}
+				# 		}
+				# 	}
+				# 	modifier = {
+				# 		scope:suggester = { ai_zeal >= medium_positive_ai_value }
+				# 		factor = 5
+				# 	}
+				# 	random_list = {
+				# 		1 = {
+				# 			trigger = {
+				# 				scope:child = {
+				# 					is_male = yes
+				# 					faith = { religion_tag = germanic_religion }
+				# 				}
+				# 			}
+				# 			save_scope_value_as = { name = name_suggestion value = flag:Thor }
+				# 		}
+				# 		1 = {
+				# 			trigger = {
+				# 				scope:child = {
+				# 					is_male = yes
+				# 					faith = { religion_tag = germanic_religion }
+				# 				}
+				# 			}
+				# 			save_scope_value_as = { name = name_suggestion value = flag:Balder }
+				# 		}
+				# 		1 = {
+				# 			trigger = {
+				# 				scope:child = {
+				# 					is_male = yes
+				# 					faith = { religion_tag = germanic_religion }
+				# 				}
+				# 			}
+				# 			save_scope_value_as = { name = name_suggestion value = flag:Odin }
+				# 		}
+				# 		1 = {
+				# 			trigger = {
+				# 				scope:child = {
+				# 					is_female = yes
+				# 					faith = { religion_tag = germanic_religion }
+				# 				}
+				# 			}
+				# 			save_scope_value_as = { name = name_suggestion value = flag:Freja }
+				# 		}
+				# 		1 = {
+				# 			trigger = {
+				# 				scope:child = {
+				# 					is_female = yes
+				# 					faith = { religion_tag = germanic_religion }
+				# 				}
+				# 			}
+				# 			save_scope_value_as = { name = name_suggestion value = flag:Idun }
+				# 		}
+				# 		1 = {
+				# 			trigger = {
+				# 				scope:child = {
+				# 					is_female = yes
+				# 					faith = { religion_tag = germanic_religion }
+				# 				}
+				# 			}
+				# 			save_scope_value_as = { name = name_suggestion value = flag:Frigg }
+				# 		}
+				# 		1 = {
+				# 			trigger = {
+				# 				scope:child = {
+				# 					is_male = yes
+				# 					faith = { religion_tag = christianity_religion }
+				# 				}	
+				# 			}
+				# 			save_scope_value_as = { name = name_suggestion value = flag:Peter } #Apostle
+				# 		}
+				# 		1 = {
+				# 			trigger = {
+				# 				scope:child = {
+				# 					is_male = yes
+				# 					faith = { religion_tag = christianity_religion }
+				# 				}	
+				# 			}
+				# 			save_scope_value_as = { name = name_suggestion value = flag:Paul } #Apostle
+				# 		}
+				# 		1 = {
+				# 			trigger = {
+				# 				scope:child = {
+				# 					is_male = yes
+				# 					faith = { religion_tag = christianity_religion }
+				# 				}
+				# 			}
+				# 			save_scope_value_as = { name = name_suggestion value = flag:John } #Apostle
+				# 		}
+				# 		1 = {
+				# 			trigger = {
+				# 				scope:child = {
+				# 					is_female = yes
+				# 					faith = { religion_tag = christianity_religion }
+				# 				}
+				# 			}
+				# 			save_scope_value_as = { name = name_suggestion value = flag:Maria } #Holy virgin
+				# 		}
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = name_type
+				# 		value = flag:religious
+				# 	}
+				# }
 				20 = { #Lunatic names
 					trigger = { scope:suggester = { has_trait = lunatic } }
 					random_list = {
@@ -4086,60 +4087,61 @@ birth.9002 = {
 				20 = {
 					trigger = { scope:suggester = { has_trait = possessed } }
 					random_list = {
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									OR = {
-										faith = { religion_tag = christianity_religion }
-										faith = { religion_tag = judaism_religion }
-									}
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Satan }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									OR = {
-										faith = { religion_tag = christianity_religion }
-										faith = { religion_tag = judaism_religion }
-									}
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Beelzebub }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									OR = {
-										faith = { religion_tag = christianity_religion }
-										faith = { religion_tag = judaism_religion }
-									}
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Lilith }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = islam_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Iblis }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Hel }
-						}
+						#L5R Disabled
+						# 1 = {
+						# 	trigger = {
+						# 		scope:child = {
+						# 			is_male = yes
+						# 			OR = {
+						# 				faith = { religion_tag = christianity_religion }
+						# 				faith = { religion_tag = judaism_religion }
+						# 			}
+						# 		}
+						# 	}
+						# 	save_scope_value_as = { name = name_suggestion value = flag:Satan }
+						# }
+						# 1 = {
+						# 	trigger = {
+						# 		scope:child = {
+						# 			is_male = yes
+						# 			OR = {
+						# 				faith = { religion_tag = christianity_religion }
+						# 				faith = { religion_tag = judaism_religion }
+						# 			}
+						# 		}
+						# 	}
+						# 	save_scope_value_as = { name = name_suggestion value = flag:Beelzebub }
+						# }
+						# 1 = {
+						# 	trigger = {
+						# 		scope:child = {
+						# 			is_female = yes
+						# 			OR = {
+						# 				faith = { religion_tag = christianity_religion }
+						# 				faith = { religion_tag = judaism_religion }
+						# 			}
+						# 		}
+						# 	}
+						# 	save_scope_value_as = { name = name_suggestion value = flag:Lilith }
+						# }
+						# 1 = {
+						# 	trigger = {
+						# 		scope:child = {
+						# 			is_male = yes
+						# 			faith = { religion_tag = islam_religion }
+						# 		}
+						# 	}
+						# 	save_scope_value_as = { name = name_suggestion value = flag:Iblis }
+						# }
+						# 1 = {
+						# 	trigger = {
+						# 		scope:child = {
+						# 			is_female = yes
+						# 			faith = { religion_tag = germanic_religion }
+						# 		}
+						# 	}
+						# 	save_scope_value_as = { name = name_suggestion value = flag:Hel }
+						# }
 						1 = { save_scope_value_as = { name = name_suggestion value = flag:Deceiver } }
 						1 = { save_scope_value_as = { name = name_suggestion value = flag:Whisperer } }
 						1 = { save_scope_value_as = { name = name_suggestion value = flag:Reaper } }
