@@ -30,8 +30,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Scheme modifiers have been completely reworked, so all the old ones for things like personal_scheme_power_mult, hostile_scheme_resistance_add, etc. no longer work. You will need to replace them with new scheme modifier
 	- check scheme.info of vanilla game
 - remove bunch of errors
--remove Qanats/murex fishery as available building
-- test decisions (Yasuki, Snake, rest is OK)
+- Once error removed, investigate why first lauch of mod crashes, then not anymore
 - Add thumbnail image for the mod !
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA
@@ -40,7 +39,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## CK3 1.14.2 patch
 - update common/travel/point_of_interest_types/travel_point_of_interest_types.txt 
-- replace all vanilla challenge characters and update descriptor.mod to replace all bookmarks !
+- update descriptor.mod to replace all bookmarks !
 
 ## short term goals 
 - update event/heresy_events.txt
@@ -134,6 +133,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Add ancestral clan & family founders
 	- Special naming convention for Kamis (no first name)
 - Integrate "Border Disputes" mod ?
+- More mythical creatures for artifact_custom_loc.txt ?
 - Add "minor clothes" probability to Great Clan clothes to have more variety of clothing styles
 - Blood feud (like Matsu vs Kakita)	: https://steamcommunity.com/sharedfiles/filedetails/?id=2914047110. Need the Friends & Foes DLC sadly...
 	- shogunate_bookmark_events.txt/shogunate_bookmark.8300/shogunate_historical_feud_effect => shogunate_bookmark_effects/shogunate_bookmark.8310

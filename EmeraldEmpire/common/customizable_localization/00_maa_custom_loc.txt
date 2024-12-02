@@ -1,0 +1,316 @@
+﻿
+GetRegionalArcherMAA = {
+	type = character
+	
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_archers_of_the_nile } }
+		localization_key = archers_of_the_nile
+	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_bush_hunter } }
+	# 	localization_key = bush_hunter
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_metsanvartija } }
+	# 	localization_key = metsanvartija
+	# }
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_longbowmen } }
+		localization_key = longbowmen
+	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_repeating_crossbow } } #Chu-ko-nu Archers
+	# 	localization_key = chu_ko_nu
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_bamboo_bows } } #Paiks
+	# 	localization_key = paiks
+	# }
+	text = {
+		trigger = { always = no }
+		fallback = yes
+		localization_key = bowmen
+	}
+}
+
+GetRegionalInfantryMAA = {
+	type = character
+	random_valid = yes
+	
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_ayyar } }
+	# 	localization_key = ayyar
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_mubarizun } }
+	# 	localization_key = mubarizun
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_druzhina } }
+	# 	localization_key = druzhina
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_khandayat } }
+	# 	localization_key = khandayat
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_garudas } }
+	# 	localization_key = garudas
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_palace_guards } }
+	# 	localization_key = palace_guards
+	# }
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_huscarls } }
+		localization_key = huscarl
+	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_mountaineer } }
+	# 	localization_key = mountaineer
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_zbrojnosh } }
+	# 	localization_key = zbrojnosh
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_sarawit } } #Sarawit - Later Era MAA
+	# 	localization_key = sarawit
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_legionnaires } } #Praetorian
+	# 	localization_key = praetorian
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_rectilinear_schiltron } } #Schiltron - Later Era MAA
+	# 	localization_key = schiltron
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_pike_columns } } #Picchieri - Later Era MAA
+	# 	localization_key = picchieri
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_zweihanders } } #Later Era MAA
+	# 	localization_key = landsknecht
+	# }
+	text = {
+		trigger = { always = no }
+		fallback = yes
+		localization_key = infantry
+	}
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_skoutatoi } }
+		localization_key = skoutatoi
+	}
+}
+
+GetRegionalCavalryMAA = {
+	type = character
+	random_valid = yes
+	
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_mulaththamun } }
+	# 	localization_key = mulaththamun
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_hussar } } #Konni
+	# 	localization_key = hussar
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_desert_tactics } } #Chasseur
+	# 	localization_key = chasseur
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_caballeros } } #Caballero
+	# 	localization_key = caballero
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_hobbies } } #Hobelar
+	# 	localization_key = hobelar
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_sahel_horsemen } } #Sahel Horsemen
+	# 	localization_key = sahel_horsemen
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_cataphract } }
+	# 	localization_key = cataphract
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_monaspa } }
+	# 	localization_key = monaspa
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_valets } } #Gendarme - Later Era MAA
+	# 	localization_key = gendarme
+	# }
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_ayrudzi } }
+		localization_key = ayrudzi
+	}
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_conrois } }
+		localization_key = conrois
+	}
+	text = {
+		trigger = { always = no }
+		fallback = yes
+		localization_key = cavalry
+	}
+}
+
+GetRegionalSkirmisherMAA = {
+	type = character
+	random_valid = yes
+	
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_horn_warrior } }
+	# 	localization_key = horn_warrior
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_shomer } }
+	# 	localization_key = shomer
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_abudrar } }
+	# 	localization_key = abudrar
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_guinea_warrior } }
+	# 	localization_key = guinea_warrior
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_innovation = innovation_adaptive_militia } } #Goedendag - Later Era MAA
+	# 	localization_key = goedendag
+	# }
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_akritai } }
+		localization_key = akritai
+	}
+	text = {
+		trigger = { always = no }
+		fallback = yes
+		localization_key = light_footmen
+	}
+}
+
+GetRandomEmployedMAA = {
+	type = character
+
+	text = {
+		trigger = {
+			number_maa_regiments_of_base_type = {
+				type = elephant_cavalry
+				value > 0
+			}
+		}
+		localization_key = elephant_cavalry_lowercase
+	}
+	text = {
+		trigger = {
+			number_maa_regiments_of_base_type = {
+				type = camel_cavalry
+				value > 0
+			}
+		}
+		localization_key = camel_cavalry_lowercase
+	}
+	text = {
+		trigger = {
+			number_maa_regiments_of_base_type = {
+				type = heavy_cavalry
+				value > 0
+			}
+		}
+		localization_key = light_cavalry_lowercase
+	}
+	text = {
+		trigger = {
+			number_maa_regiments_of_base_type = {
+				type = archer_cavalry
+				value > 0
+			}
+		}
+		localization_key = horse_archers_lowercase
+	}
+	
+	text = {
+		trigger = {
+			number_maa_regiments_of_base_type = {
+				type = pikemen
+				value > 0
+			}
+		}
+		localization_key = pikemen_lowercase
+	}
+	text = {
+		trigger = {
+			number_maa_regiments_of_base_type = {
+				type = heavy_infantry
+				value > 0
+			}
+		}
+		localization_key = heavy_infantry_lowercase
+	}
+	text = {
+		trigger = {
+			number_maa_regiments_of_base_type = {
+				type = light_cavalry
+				value > 0
+			}
+		}
+		localization_key = heavy_cavalry_lowercase
+	}
+	text = {
+		trigger = {
+			number_maa_regiments_of_base_type = {
+				type = archers
+				value > 0
+			}
+		}
+		localization_key = archers_lowercase
+	}
+	text = {
+		trigger = {
+			number_maa_regiments_of_base_type = {
+				type = skirmishers
+				value > 0
+			}
+		}
+		localization_key = skirmishers_lowercase
+	}
+	text = {
+		localization_key = levies_lowercase
+	}
+}
