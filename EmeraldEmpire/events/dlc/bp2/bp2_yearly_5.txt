@@ -1423,7 +1423,7 @@ bp2_yearly.5050 = {
 
 		start_scheme = {
 			type = learn_language
-			target = scope:polyglot
+			target_character = scope:polyglot
 		}
 		custom_tooltip = diplomacy_family.2250.b.tt
 		hidden_effect = {
@@ -1473,7 +1473,7 @@ bp2_yearly.5050 = {
 
 		start_scheme = {
 			type = learn_language
-			target = scope:polyglot
+			target_character = scope:polyglot
 		}
 
 		reverse_add_opinion = {

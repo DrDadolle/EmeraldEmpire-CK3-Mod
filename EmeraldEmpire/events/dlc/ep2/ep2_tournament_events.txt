@@ -3364,12 +3364,12 @@ ep2_tournament_events.1004 = {
 			limit = {
 				can_start_scheme = {
 					type = seduce
-					target = scope:comely_stray
+					target_character = scope:comely_stray
 				}
 			}
 			start_scheme = {
 				type = seduce
-				target = scope:comely_stray
+				target_character = scope:comely_stray
 			}
 		}
 

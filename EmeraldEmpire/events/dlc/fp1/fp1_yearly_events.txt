@@ -4615,10 +4615,11 @@ fp1_yearly.0091 = {
 		base = 1
 
 		# Weight up for having sea-faring traits.
-		modifier = {
-			add = 0.5
-			has_trait = viking
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	add = 0.5
+		# 	has_trait = viking
+		# }
 		modifier = {
 			add = 0.5
 			has_trait = adventurer
@@ -6431,10 +6432,11 @@ fp1_yearly.0501 = {
 		base = 1
 
 		# Weight up for having sea-faring traits.
-		modifier = {
-			add = 0.5
-			has_trait = viking
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	add = 0.5
+		# 	has_trait = viking
+		# }
 		modifier = {
 			add = 0.5
 			has_trait = adventurer
@@ -9490,10 +9492,11 @@ fp1_yearly.0581 = {
 				has_trait = humble
 			}
 			# Raiders & adventurers want their prodigy to follow in their footsteps.
-			modifier = {
-				add = 20
-				has_trait = viking
-			}
+			#L5R Disabled
+			# modifier = {
+			# 	add = 20
+			# 	has_trait = viking
+			# }
 			modifier = {
 				add = 20
 				has_trait = adventurer
@@ -9551,10 +9554,11 @@ fp1_yearly.0581 = {
 				has_trait = gregarious
 			}
 			# Raiders & adventurers want their prodigy to follow in their footsteps.
-			modifier = {
-				add = 20
-				has_trait = viking
-			}
+			#L5R Disabled
+			# modifier = {
+			# 	add = 20
+			# 	has_trait = viking
+			# }
 			modifier = {
 				add = 20
 				has_trait = adventurer
@@ -10402,8 +10406,9 @@ fp1_yearly.0611 = {
 		fp1_is_norse_tribal = yes
 		# You must qualify for imitation in some way.
 		OR = {
-			has_trait = viking
-			has_trait = berserker
+			#L5R Disabled
+			# has_trait = viking
+			# has_trait = berserker
 			has_trait = adventurer
 			has_character_flag = has_recently_performed_raid
 		}
@@ -10417,14 +10422,15 @@ fp1_yearly.0611 = {
 		base = 1
 
 		# Weight up a little for each qualifying trait.
-		modifier = {
-			add = 0.25
-			has_trait = viking
-		}
-		modifier = {
-			add = 0.25
-			has_trait = berserker
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	add = 0.25
+		# 	has_trait = viking
+		# }
+		# modifier = {
+		# 	add = 0.25
+		# 	has_trait = berserker
+		# }
 		modifier = {
 			add = 0.25
 			has_trait = adventurer
@@ -10867,10 +10873,11 @@ fp1_yearly.0622 = {
 		base = 1
 
 		# Weight up a little for dedicated raiders.
-		modifier = {
-			add = 1
-			scope:raider = { has_trait = viking }
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	add = 1
+		# 	scope:raider = { has_trait = viking }
+		# }
 		# Or if you've brought home a truly excessive amount of loot.
 		modifier = {
 			add = 1
@@ -11205,11 +11212,12 @@ fp1_yearly.0641 = {
 	weight_multiplier = {
 		base = 1
 
+		#L5R Disabled
 		# Weight down a little if you're a raider or diligent, used to keeping your longships in tip-top condition.
-		modifier = {
-			add = -0.5
-			has_trait = viking
-		}
+		# modifier = {
+		# 	add = -0.5
+		# 	has_trait = viking
+		# }
 		modifier = {
 			add = -0.5
 			has_trait = diligent
@@ -11528,11 +11536,12 @@ fp1_yearly.0651 = {
 			add = 1
 			fp1_is_norse = yes
 		}
+		#L5R Disabled
 		# Raiders spend more time at sea. Probably. Vikings do at least.
-		modifier = {
-			add = 1
-			has_trait = viking
-		}
+		# modifier = {
+		# 	add = 1
+		# 	has_trait = viking
+		# }
 		# Adventurers spend more time at sea. Also probably.
 		modifier = {
 			add = 1
@@ -12390,7 +12399,7 @@ fp1_yearly.0681 = {
 		fp1_is_coastal_norse_tribal = yes
 		# Raiding must be recent or ever-present.
 		OR = {
-			has_trait = viking
+			# has_trait = viking #L5R Disabled
 			has_character_flag = has_recently_performed_raid
 		}
 		# At least some of your knights should be snobbish.
@@ -12407,10 +12416,11 @@ fp1_yearly.0681 = {
 			add = 0.5
 			has_trait = adventurer
 		}
-		modifier = {
-			add = 0.5
-			has_trait = viking
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	add = 0.5
+		# 	has_trait = viking
+		# }
 	}
 
 	immediate = {

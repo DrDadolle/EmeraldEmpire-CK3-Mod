@@ -3021,7 +3021,7 @@ fund_inspiration.0032 = {
 						is_witch_trigger = yes
 						can_start_scheme = {
 							type = convert_to_witchcraft
-							target = root
+							target_character = root
 						}
 					}
 					is_witch_trigger = no
@@ -3037,7 +3037,7 @@ fund_inspiration.0032 = {
 					scope:inspiration_owner = {
 						start_scheme = {
 							type = convert_to_witchcraft
-							target = root
+							target_character = root
 						}
 					}
 				}
@@ -11027,9 +11027,11 @@ fund_inspiration.2060 = {
 				trigger = {
 					OR = {
 						piety_level >= high_piety_level
-						has_trait = saoshyant
+						# has_trait = saoshyant #L5R Disabled
 						has_trait = savior
 						has_trait = saint
+						#L5R Added
+						has_trait = kami_descendant
 					}
 				}
 				desc =  fund_inspiration.2060.desc.religious
@@ -11049,9 +11051,11 @@ fund_inspiration.2060 = {
 				trigger = {
 					OR = {
 						piety_level >= high_piety_level
-				   		has_trait = saoshyant
+				   		# has_trait = saoshyant #L5R Disabled
 						has_trait = savior
 						has_trait = saint
+						#L5R Added
+						has_trait = kami_descendant
 					}
 				}
 				desc =  fund_inspiration.2060.desc.brotherhood
@@ -11060,9 +11064,11 @@ fund_inspiration.2060 = {
 				trigger = {
 					OR = {
 						piety_level >= high_piety_level
-				   		has_trait = saoshyant
+				   		# has_trait = saoshyant #L5R Disabled
 						has_trait = savior
 						has_trait = saint
+						#L5R Added
+						has_trait = kami_descendant
 					}
 				}
 				desc =  fund_inspiration.2060.desc.abbey
@@ -11091,10 +11097,11 @@ fund_inspiration.2060 = {
 				trigger = { piety_level >= high_piety_level }
 				desc =  fund_inspiration.2060.piety
 			}
-			triggered_desc = {
-				trigger = { has_trait = saoshyant }
-				desc =  fund_inspiration.2060.saoshyant
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = { has_trait = saoshyant }
+			# 	desc =  fund_inspiration.2060.saoshyant
+			# }
 			triggered_desc = {
 				trigger = { has_trait = savior }
 				desc =  fund_inspiration.2060.savior
@@ -11102,6 +11109,11 @@ fund_inspiration.2060 = {
 			triggered_desc = {
 				trigger = { has_trait = saint }
 				desc =  fund_inspiration.2060.saint
+			}
+			#L5R Added
+			triggered_desc = {
+				trigger = { has_trait = kami_descendant }
+				desc =  fund_inspiration.2060.kami_descendant
 			}
 			triggered_desc = {
 				trigger = { prestige_level >= high_prestige_level }
@@ -11135,9 +11147,11 @@ fund_inspiration.2060 = {
 		}
 		OR = {
 			piety_level = max_piety_level
-			has_trait = saoshyant
+			# has_trait = saoshyant #L5R Disabled
 			has_trait = savior
 			has_trait = saint
+			#L5R Added
+			has_trait = kami_descendant
 			prestige_level = max_prestige_level
 			court_grandeur_current_level >= 8
 		}
@@ -11161,9 +11175,11 @@ fund_inspiration.2060 = {
 				trigger = {
 					OR = {
 						piety_level = max_piety_level
-						has_trait = saoshyant
+						# has_trait = saoshyant #L5R Disabled
 						has_trait = savior
 						has_trait = saint
+						#L5R Added
+						has_trait = kami_descendant
 					}
 				}
 				create_character = {
@@ -11246,9 +11262,11 @@ fund_inspiration.2060 = {
 			trigger = {
 				OR = {
 					piety_level = max_piety_level
-					has_trait = saoshyant
+					# has_trait = saoshyant #L5R Disabled
 					has_trait = savior
 					has_trait = saint
+					#L5R Added
+					has_trait = kami_descendant
 				}
 			}
 			text = fund_inspiration.2060.b.religious
@@ -19713,14 +19731,14 @@ fund_inspiration.6507 = {
 					scope:grumpy_liege = {
 						can_start_scheme = {
 							type = murder
-							target = scope:inspiration_owner
+							target_character = scope:inspiration_owner
 						}
 					}
 				}
 				scope:grumpy_liege = {
 					start_scheme = {
 						type = murder
-						target = scope:inspiration_owner
+						target_character = scope:inspiration_owner
 					}
 				}
 			}
@@ -19752,14 +19770,14 @@ fund_inspiration.6507 = {
 				scope:inspiration_owner = {
 					can_start_scheme = {
 						type = murder
-						target = scope:grumpy_liege
+						target_character = scope:grumpy_liege
 					}
 				}
 			}
 			scope:inspiration_owner = {
 				start_scheme = {
 					type = murder
-					target = scope:grumpy_liege
+					target_character = scope:grumpy_liege
 				}
 			}
 		}
@@ -19780,12 +19798,12 @@ fund_inspiration.6507 = {
 			}
 			can_start_scheme = {
 				type = murder
-				target = scope:grumpy_liege
+				target_character = scope:grumpy_liege
 			}
 		}
 		start_scheme = {
 			type = murder
-			target = scope:grumpy_liege
+			target_character = scope:grumpy_liege
 		}
 		random_scheme = {
 			limit = {
