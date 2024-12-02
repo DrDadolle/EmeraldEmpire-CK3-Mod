@@ -946,18 +946,19 @@ common_faction_modifiers = {
 		any_home_court_hostage = { warden = $FACTION_TARGET$ }
 	}
 
-	modifier = {
-		desc = "FACTION_REASON_DETRACTORS_STICK_TOGETHER"
-		add = -50
-		has_trait = fp3_struggle_detractor
-		OR = {
-			culture = { has_same_culture_heritage = $FACTION_TARGET$.culture }
-			faith = $FACTION_TARGET$.faith
-		}
-		$FACTION_TARGET$ = {
-			has_trait = fp3_struggle_detractor
-		}
-	}
+	# L5R Disabled
+	# modifier = {
+	# 	desc = "FACTION_REASON_DETRACTORS_STICK_TOGETHER"
+	# 	add = -50
+	# 	has_trait = fp3_struggle_detractor
+	# 	OR = {
+	# 		culture = { has_same_culture_heritage = $FACTION_TARGET$.culture }
+	# 		faith = $FACTION_TARGET$.faith
+	# 	}
+	# 	$FACTION_TARGET$ = {
+	# 		has_trait = fp3_struggle_detractor
+	# 	}
+	# }
 
 	# L5R Disabled
 	#FP3 Strengthern Caliphate
@@ -3150,17 +3151,18 @@ admin_claimant_faction_modifiers = {
 		add = -20
 		desc = FACTION_REASON_ADMIN_CLAIMANT_FORNICATOR_AND_CRIMINAL
 	}
+	# L5R Disabled
 	# Born in Purple
-	modifier = { # Prefer a claimant who is born in the purple when the liege is not
-		ep3_admin_faction_trigger = { FACTION_TARGET = $FACTION_TARGET$ } # Required for dlc context
-		$FACTION_TARGET$.primary_title = title:e_byzantium
-		$FACTION_CLAIMANT$ = { has_trait = born_in_the_purple }
-		NOT = {
-			$FACTION_TARGET$ = { has_trait = born_in_the_purple }
-		}
-		add = 25
-		desc = FACTION_REASON_ADMIN_BORN_IN_PURPLE
-	}
+	# modifier = { # Prefer a claimant who is born in the purple when the liege is not
+	# 	ep3_admin_faction_trigger = { FACTION_TARGET = $FACTION_TARGET$ } # Required for dlc context
+	# 	$FACTION_TARGET$.primary_title = title:e_byzantium
+	# 	$FACTION_CLAIMANT$ = { has_trait = born_in_the_purple }
+	# 	NOT = {
+	# 		$FACTION_TARGET$ = { has_trait = born_in_the_purple }
+	# 	}
+	# 	add = 25
+	# 	desc = FACTION_REASON_ADMIN_BORN_IN_PURPLE
+	# }
 	## Unpreferred heir
 	#modifier = { # Admin realms have extra trouble with Unpreferred Heirs
 	# 	ep3_admin_faction_trigger = { FACTION_TARGET = $FACTION_TARGET$ } # Required for dlc context
