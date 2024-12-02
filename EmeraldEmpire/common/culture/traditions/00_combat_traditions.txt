@@ -227,12 +227,12 @@ tradition_mountaineers = {
 	
 	is_shown = { #Replaced by Horn Mountain Skirmishing & Caucasian Wolves
 		NOR = {
-			has_cultural_pillar = heritage_somalian
-			has_cultural_pillar = heritage_east_african
-			this = culture:georgian
-			any_parent_culture_or_above = {
-				this = culture:georgian
-			}
+			# has_cultural_pillar = heritage_somalian
+			# has_cultural_pillar = heritage_east_african
+			# this = culture:georgian
+			# any_parent_culture_or_above = {
+			# 	this = culture:georgian
+			# }
 			has_cultural_tradition = tradition_caucasian_wolves
 			has_cultural_tradition = tradition_horn_mountain_skirmishing
 		}
@@ -377,7 +377,7 @@ tradition_warriors_of_the_dry = {
 	}
 
 	is_shown = { #Replaced by Mubarizuns
-		NOT = { has_cultural_pillar = heritage_arabic }
+		# NOT = { has_cultural_pillar = heritage_arabic }
 	}
 	
 	can_pick = {
@@ -521,7 +521,7 @@ tradition_highland_warriors = {
 
 	is_shown = { #Replaced by Upland Skirmishing
 		NOR = {
-			has_cultural_pillar = heritage_west_african
+			# has_cultural_pillar = heritage_west_african
 			has_cultural_tradition = tradition_upland_skirmishing
 		}
 	}
@@ -649,8 +649,8 @@ tradition_jungle_warriors = {
 
 	is_shown = { #Replaced by Bush Hunting
 		NOR = {
-			has_cultural_pillar = heritage_akan
-			has_cultural_pillar = heritage_yoruba
+			# has_cultural_pillar = heritage_akan
+			# has_cultural_pillar = heritage_yoruba
 			has_cultural_tradition = tradition_bush_hunting
 		}
 	}
@@ -1387,18 +1387,19 @@ tradition_malleable_invaders = {
 					desc = not_bellicose_egalitarian_or_bureaucratic_desc
 				}
 			}
-			if = {
-				limit = {
-					NOR = {
-						culture_pillar:heritage_turkic = { is_in_list = traits }
-						culture_pillar:heritage_mongolic = { is_in_list = traits }
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = turkic_or_mongolic_desc
-				}
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		NOR = {
+			# 			culture_pillar:heritage_turkic = { is_in_list = traits }
+			# 			culture_pillar:heritage_mongolic = { is_in_list = traits }
+			# 		}
+			# 	}
+			# 	add = {
+			# 		value = tradition_unfulfilled_criteria_penalty
+			# 		desc = turkic_or_mongolic_desc
+			# 	}
+			# }
 			
 			multiply = tradition_replacement_cost_if_relevant
 		}
@@ -1599,12 +1600,13 @@ tradition_swords_for_hire = {
 	
 	ai_will_do = {
 		value = 50
-		if = {
-			limit = {
-				has_cultural_pillar = heritage_central_germanic
-			}
-			multiply = 2
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		has_cultural_pillar = heritage_central_germanic
+		# 	}
+		# 	multiply = 2
+		# }
 	}
 }
 
@@ -1883,6 +1885,7 @@ tradition_hit_and_run = {
 	}
 	
 	is_shown = {
+		#L5R Disabled
 		# NOR = { #Replaced by Konni Raids (tradition_hussar)
 		# 	has_cultural_pillar = heritage_south_slavic
 		# 	has_cultural_pillar = heritage_magyar
@@ -1890,15 +1893,16 @@ tradition_hit_and_run = {
 		# }
 	}
 	can_pick = {
-		trigger_if = {
-			limit = {
-				OR = {
-					NOT = { exists = scope:replacing }
-					NOT = { scope:replacing = culture_tradition:tradition_hussar }
-				}	
-			}
-			NOT = { has_cultural_tradition = tradition_hussar } #To prevent stacking after hybridization
-		}
+		#L5R Disabled
+		# trigger_if = {
+		# 	limit = {
+		# 		OR = {
+		# 			NOT = { exists = scope:replacing }
+		# 			NOT = { scope:replacing = culture_tradition:tradition_hussar }
+		# 		}	
+		# 	}
+		# 	NOT = { has_cultural_tradition = tradition_hussar } #To prevent stacking after hybridization
+		# }
 	}
 
 	# Iberian: Concurso Tactics

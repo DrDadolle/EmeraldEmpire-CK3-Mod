@@ -600,8 +600,8 @@ tradition_fp3_jirga = {
 		if = {
 			limit = {
 				OR = {
-					culture_tradition:tradition_things = { is_in_list = traits }
-					culture_tradition:tradition_the_witenagemot = { is_in_list = traits }
+					# culture_tradition:tradition_things = { is_in_list = traits }
+					# culture_tradition:tradition_the_witenagemot = { is_in_list = traits } #L5R 
 				}
 			}
 			multiply = 0
