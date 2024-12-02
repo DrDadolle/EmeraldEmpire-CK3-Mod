@@ -3473,7 +3473,7 @@ ep1_flavor.2010 = {
 				}
 				random_scheme = {
 					limit = {
-						scheme_target = root
+						scheme_target_character = root
 						scheme_type = murder
 					}
 					save_scope_as = real_plot

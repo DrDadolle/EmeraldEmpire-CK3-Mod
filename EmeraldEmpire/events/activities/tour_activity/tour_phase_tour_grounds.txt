@@ -546,13 +546,13 @@ scripted_effect tour_grounds_1004_shag_effect = {
 			limit = {
 				any_scheme = {
 					scheme_type = seduce
-					scheme_target = scope:visiting_liege
+					scheme_target_character = scope:visiting_liege
 				}
 			}
 			random_scheme = {
 				limit = {
 					scheme_type = seduce
-					scheme_target = scope:visiting_liege
+					scheme_target_character = scope:visiting_liege
 				}
 				add_scheme_modifier = {
 					type = moment_in_the_woods_modifier
@@ -572,13 +572,13 @@ scripted_effect tour_grounds_1004_rebuffed_effect = {
 			limit = {
 				any_scheme = {
 					scheme_type = seduce
-					scheme_target = scope:visiting_liege
+					scheme_target_character = scope:visiting_liege
 				}
 			}
 			random_scheme = {
 				limit = {
 					scheme_type = seduce
-					scheme_target = scope:visiting_liege
+					scheme_target_character = scope:visiting_liege
 				}
 				add_scheme_modifier = {
 					type = rebuffed_in_the_woods_modifier
@@ -627,7 +627,7 @@ tour_grounds_events.1004 = {
 			has_relation_soulmate = scope:visiting_liege
 			any_scheme = {
 				scheme_type = seduce
-				scheme_target = scope:visiting_liege
+				scheme_target_character = scope:visiting_liege
 			}
 		}
 		scope:visiting_liege = {

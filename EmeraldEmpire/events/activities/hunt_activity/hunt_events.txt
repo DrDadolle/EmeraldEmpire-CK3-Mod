@@ -14771,7 +14771,7 @@ scripted_trigger hunt_4009_scheme_trigger = {
 		scheme_type = murder
 		scheme_type = abduct
 	}
-	scheme_target = root
+	scheme_target_character = root
 	scheme_progress > 3
 	OR = {
 		scheme_owner = { is_participant_in_activity = scope:activity }
@@ -15642,7 +15642,7 @@ scripted_trigger hunt_4010_scheme_trigger = {
 	}
 	scheme_progress > 3
 	# Scheme target is a close relative/spouse.
-	scheme_target = {
+	scheme_target_character = {
 		NOT = { this = root }
 		is_ai = yes
 		is_participant_in_activity = scope:activity # Scheme target must also be on the hunt with us.
@@ -20714,7 +20714,7 @@ hunt.5003 = {
 							else = {
 								random_scheme = {
 									limit = {
-										scheme_target = root
+										scheme_target_character = root
 										OR = {
 											scheme_type = seduce
 											scheme_type = courting
@@ -20811,7 +20811,7 @@ hunt.5003 = {
 									}
 									random_scheme = {
 										limit = {
-											scheme_target = root
+											scheme_target_character = root
 											scheme_type = seduce
 										}
 										end_scheme = yes
@@ -20821,7 +20821,7 @@ hunt.5003 = {
 								else = {
 									random_scheme = {
 										limit = {
-											scheme_target = root
+											scheme_target_character = root
 											scheme_type = courting
 										}
 										add_scheme_progress = scheme_progress_gain
@@ -22046,7 +22046,7 @@ hunt.7011 = {
 				has_relation_rival = scope:hunt_participant
 				any_scheme = {
 					scheme_type = murder
-					scheme_target = scope:hunt_participant
+					scheme_target_character = scope:hunt_participant
 				}
 				AND = {
 					has_activity_intent = murder_attendee_intent
@@ -23112,7 +23112,7 @@ hunt.7100 = {
 					scheme_type = seduce
 					scheme_type = courting
 				}
-				scheme_target = {
+				scheme_target_character = {
 					is_alive = yes
 					is_participant_in_activity = scope:activity
 				}
@@ -23153,12 +23153,12 @@ hunt.7100 = {
 			random_scheme = {
 				limit = {
 					scheme_type = seduce
-					scheme_target = {
+					scheme_target_character = {
 						is_alive = yes
 						is_participant_in_activity = scope:activity
 					}
 				}
-				scheme_target = {
+				scheme_target_character = {
 					save_scope_as = woo_target
 					save_scope_as = target
 				}
@@ -24373,7 +24373,7 @@ hunt.7300 = {
 			}
 			any_scheme = {
 				scheme_type = befriend
-				scheme_target = {
+				scheme_target_character = {
 					is_alive = yes
 					is_participant_in_activity = scope:activity
 				}
@@ -24411,12 +24411,12 @@ hunt.7300 = {
 			random_scheme = {
 				limit = {
 					scheme_type = befriend
-					scheme_target = {
+					scheme_target_character = {
 						is_alive = yes
 						is_participant_in_activity = scope:activity
 					}
 				}
-				scheme_target = { save_scope_as = befriend_target }
+				scheme_target_character = { save_scope_as = befriend_target }
 			}
 		}
 		scope:befriend_target = {

@@ -13001,262 +13001,261 @@ lifestyle_traveler = {
 ############### EP3 TRAITS ##############
 
 # TRAITS TO TRACK HIPPODROME FACTION MEMBERS
-#L5R Disabled
-# charioteer_blue = {
-# 	category = lifestyle
-# 	icon = "charioteer_blue.dds"
-# 	opposites = {
-# 		charioteer_green
-# 		charioteer_white
-# 		charioteer_red
-# 	}
+charioteer_blue = {
+	category = lifestyle
+	icon = "charioteer_blue.dds"
+	opposites = {
+		charioteer_green
+		charioteer_white
+		charioteer_red
+	}
 	
-# 	shown_in_ruler_designer = no
-# 	opposite_opinion = -10
+	shown_in_ruler_designer = no
+	opposite_opinion = -10
 
-# 	# AI Values
-# 	ai_energy = 10
+	# AI Values
+	ai_energy = 10
 	
-# 	name = trait_charioteer_blue
+	name = trait_charioteer_blue
 
-# 	desc = {
-# 		first_valid = {
-# 			triggered_desc = {
-# 				trigger = {
-# 					NOT = { exists = this }
-# 				}
-# 				desc = trait_charioteer_blue_desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					trigger_if = {
-# 						limit = { has_trait = charioteer_blue }
-# 						has_trait_xp = {
-# 							trait = charioteer_blue
-# 							value < 40
-# 						}
-# 					}
-# 				}
-# 				desc = trait_charioteer_blue_1_character_desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					has_trait_xp = {
-# 						trait = charioteer_blue
-# 						value >= 90
-# 					}
-# 				}
-# 				desc = trait_charioteer_blue_3_character_desc
-# 			}
-# 			desc = trait_charioteer_blue_2_character_desc
-# 		}
-# 	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_charioteer_blue_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = charioteer_blue }
+						has_trait_xp = {
+							trait = charioteer_blue
+							value < 40
+						}
+					}
+				}
+				desc = trait_charioteer_blue_1_character_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait_xp = {
+						trait = charioteer_blue
+						value >= 90
+					}
+				}
+				desc = trait_charioteer_blue_3_character_desc
+			}
+			desc = trait_charioteer_blue_2_character_desc
+		}
+	}
 
-# 	track = {
-# 		50 = {
-# 			character_travel_speed_mult = 0.05
-# 			prowess = 1
-# 			health = 0.05
-# 		}
-# 		100 = {
-# 			character_travel_speed_mult = 0.1
-# 			prowess = 1
-# 			health = 0.05
-# 		}		
-# 	}
-# }
-#L5R Disabled
-# charioteer_green = {
-# 	category = lifestyle
-# 	icon = "charioteer_green.dds"
-# 	opposites = {
-# 		charioteer_blue
-# 		charioteer_white
-# 		charioteer_red
-# 	}
+	track = {
+		50 = {
+			character_travel_speed_mult = 0.05
+			prowess = 1
+			health = 0.05
+		}
+		100 = {
+			character_travel_speed_mult = 0.1
+			prowess = 1
+			health = 0.05
+		}		
+	}
+}
+
+charioteer_green = {
+	category = lifestyle
+	icon = "charioteer_green.dds"
+	opposites = {
+		charioteer_blue
+		charioteer_white
+		charioteer_red
+	}
 	
-# 	shown_in_ruler_designer = no
-# 	opposite_opinion = -10
+	shown_in_ruler_designer = no
+	opposite_opinion = -10
 
-# 	# AI Values
-# 	ai_energy = 10
+	# AI Values
+	ai_energy = 10
 	
-# 	name = trait_charioteer_green
+	name = trait_charioteer_green
 
-# 	desc = {
-# 		first_valid = {
-# 			triggered_desc = {
-# 				trigger = {
-# 					NOT = { exists = this }
-# 				}
-# 				desc = trait_charioteer_green_desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					trigger_if = {
-# 						limit = { has_trait = charioteer_green }
-# 						has_trait_xp = {
-# 							trait = charioteer_green
-# 							value < 40
-# 						}
-# 					}
-# 				}
-# 				desc = trait_charioteer_green_1_character_desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					has_trait_xp = {
-# 						trait = charioteer_green
-# 						value >= 90
-# 					}
-# 				}
-# 				desc = trait_charioteer_green_3_character_desc
-# 			}
-# 			desc = trait_charioteer_green_2_character_desc
-# 		}
-# 	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_charioteer_green_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = charioteer_green }
+						has_trait_xp = {
+							trait = charioteer_green
+							value < 40
+						}
+					}
+				}
+				desc = trait_charioteer_green_1_character_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait_xp = {
+						trait = charioteer_green
+						value >= 90
+					}
+				}
+				desc = trait_charioteer_green_3_character_desc
+			}
+			desc = trait_charioteer_green_2_character_desc
+		}
+	}
 
-# 	track = {
-# 		50 = {
-# 			character_travel_speed_mult = 0.05
-# 			prowess = 1
-# 			health = 0.05
-# 		}
-# 		100 = {
-# 			character_travel_speed_mult = 0.1
-# 			prowess = 1
-# 			health = 0.05
-# 		}		
-# 	}
-# }
-#L5R Disabled
-# charioteer_white = {
-# 	category = lifestyle
-# 	icon = "charioteer_white.dds"
-# 	opposites = {
-# 		charioteer_blue
-# 		charioteer_green
-# 		charioteer_red
-# 	}
+	track = {
+		50 = {
+			character_travel_speed_mult = 0.05
+			prowess = 1
+			health = 0.05
+		}
+		100 = {
+			character_travel_speed_mult = 0.1
+			prowess = 1
+			health = 0.05
+		}		
+	}
+}
+
+charioteer_white = {
+	category = lifestyle
+	icon = "charioteer_white.dds"
+	opposites = {
+		charioteer_blue
+		charioteer_green
+		charioteer_red
+	}
 	
-# 	shown_in_ruler_designer = no
-# 	opposite_opinion = -10
+	shown_in_ruler_designer = no
+	opposite_opinion = -10
 
-# 	# AI Values
-# 	ai_energy = 10
+	# AI Values
+	ai_energy = 10
 	
-# 	name = trait_charioteer_white
+	name = trait_charioteer_white
 
-# 	desc = {
-# 		first_valid = {
-# 			triggered_desc = {
-# 				trigger = {
-# 					NOT = { exists = this }
-# 				}
-# 				desc = trait_charioteer_white_desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					trigger_if = {
-# 						limit = { has_trait = charioteer_white }
-# 						has_trait_xp = {
-# 							trait = charioteer_white
-# 							value < 40
-# 						}
-# 					}
-# 				}
-# 				desc = trait_charioteer_white_1_character_desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					has_trait_xp = {
-# 						trait = charioteer_white
-# 						value >= 90
-# 					}
-# 				}
-# 				desc = trait_charioteer_white_3_character_desc
-# 			}
-# 			desc = trait_charioteer_white_2_character_desc
-# 		}
-# 	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_charioteer_white_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = charioteer_white }
+						has_trait_xp = {
+							trait = charioteer_white
+							value < 40
+						}
+					}
+				}
+				desc = trait_charioteer_white_1_character_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait_xp = {
+						trait = charioteer_white
+						value >= 90
+					}
+				}
+				desc = trait_charioteer_white_3_character_desc
+			}
+			desc = trait_charioteer_white_2_character_desc
+		}
+	}
 
-# 	track = {
-# 		50 = {
-# 			character_travel_speed_mult = 0.05
-# 			prowess = 1
-# 			health = 0.05
-# 		}
-# 		100 = {
-# 			character_travel_speed_mult = 0.1
-# 			prowess = 1
-# 			health = 0.05
-# 		}		
-# 	}
-# }
-#L5R Disabled
-# charioteer_red = {
-# 	category = lifestyle
-# 	icon = "charioteer_red.dds"
-# 	opposites = {
-# 		charioteer_blue
-# 		charioteer_white
-# 		charioteer_green
-# 	}
+	track = {
+		50 = {
+			character_travel_speed_mult = 0.05
+			prowess = 1
+			health = 0.05
+		}
+		100 = {
+			character_travel_speed_mult = 0.1
+			prowess = 1
+			health = 0.05
+		}		
+	}
+}
+
+charioteer_red = {
+	category = lifestyle
+	icon = "charioteer_red.dds"
+	opposites = {
+		charioteer_blue
+		charioteer_white
+		charioteer_green
+	}
 	
-# 	shown_in_ruler_designer = no
-# 	opposite_opinion = -10
+	shown_in_ruler_designer = no
+	opposite_opinion = -10
 
-# 	# AI Values
-# 	ai_energy = 10
+	# AI Values
+	ai_energy = 10
 
-# 	name = trait_charioteer_red
+	name = trait_charioteer_red
 
-# 	desc = {
-# 		first_valid = {
-# 			triggered_desc = {
-# 				trigger = {
-# 					NOT = { exists = this }
-# 				}
-# 				desc = trait_charioteer_red_desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					trigger_if = {
-# 						limit = { has_trait = charioteer_red }
-# 						has_trait_xp = {
-# 							trait = charioteer_red
-# 							value < 40
-# 						}
-# 					}
-# 				}
-# 				desc = trait_charioteer_red_1_character_desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					has_trait_xp = {
-# 						trait = charioteer_red
-# 						value >= 90
-# 					}
-# 				}
-# 				desc = trait_charioteer_red_3_character_desc
-# 			}
-# 			desc = trait_charioteer_red_2_character_desc
-# 		}
-# 	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_charioteer_red_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = charioteer_red }
+						has_trait_xp = {
+							trait = charioteer_red
+							value < 40
+						}
+					}
+				}
+				desc = trait_charioteer_red_1_character_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait_xp = {
+						trait = charioteer_red
+						value >= 90
+					}
+				}
+				desc = trait_charioteer_red_3_character_desc
+			}
+			desc = trait_charioteer_red_2_character_desc
+		}
+	}
 
-# 	track = {
-# 		50 = {
-# 			character_travel_speed_mult = 0.05
-# 			prowess = 1
-# 			health = 0.05
-# 		}
-# 		100 = {
-# 			character_travel_speed_mult = 0.1
-# 			prowess = 1
-# 			health = 0.05
-# 		}		
-# 	}
-# }
+	track = {
+		50 = {
+			character_travel_speed_mult = 0.05
+			prowess = 1
+			health = 0.05
+		}
+		100 = {
+			character_travel_speed_mult = 0.1
+			prowess = 1
+			health = 0.05
+		}		
+	}
+}
 
 # GOVERNOR TRAIT
 governor = {

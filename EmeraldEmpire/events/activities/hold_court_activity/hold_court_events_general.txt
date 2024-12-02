@@ -33699,7 +33699,7 @@ scripted_trigger hold_court_8160_valid_court_scheme_trigger = {
 	}
 	NOR = {
 		scheme_owner = root
-		scheme_target = root
+		scheme_target_character = root
 	}
 }
 
@@ -33729,7 +33729,7 @@ scripted_trigger hold_court_8160_valid_hostile_scheme_trigger = {
 			scheme_type = abduct
 		}
 	}
-	scheme_target = {
+	scheme_target_character = {
 		save_temporary_scope_as = scheme_target_scope
 		liege = {
 			OR = {
@@ -33796,7 +33796,7 @@ scripted_effect hold_court_8160_save_create_scheme_effect = {
 		random_targeting_scheme = {
 			limit = { hold_court_8160_valid_hostile_scheme_trigger = yes }
 			save_scope_as = victim_scheme
-			scheme_target = { save_scope_as = victim }
+			scheme_target_character = { save_scope_as = victim }
 			scheme_owner = { save_scope_as = debug_scheme_owner }
 		}
 	}
@@ -35063,7 +35063,7 @@ scripted_effect hold_court_8161_save_create_scheme_effect = {
 		random_targeting_scheme = {
 			limit = { hold_court_8161_valid_seduce_scheme_trigger = yes }
 			save_scope_as = victim_scheme
-			scheme_target = { save_scope_as = victim }
+			scheme_target_character = { save_scope_as = victim }
 			scheme_owner = { save_scope_as = debug_scheme_owner }
 		}
 	}

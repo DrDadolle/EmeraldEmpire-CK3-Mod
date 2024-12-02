@@ -196,7 +196,7 @@ learning_medicine.2001 = { #by Mathilda Bjarnehed
 						scheme_type = courting
 					}
 				}
-				scheme_target = { save_scope_as = flower_receiver }
+				scheme_target_character = { save_scope_as = flower_receiver }
 			}
 		}
 		else_if = {
@@ -316,7 +316,7 @@ learning_medicine.2001 = { #by Mathilda Bjarnehed
 						scheme_type = seduce
 						scheme_type = courting
 					}
-					scheme_target = scope:flower_receiver
+					scheme_target_character = scope:flower_receiver
 				}
 			}
 			random_scheme = {
@@ -325,7 +325,7 @@ learning_medicine.2001 = { #by Mathilda Bjarnehed
 						scheme_type = seduce
 						scheme_type = courting
 					}
-					scheme_target = scope:flower_receiver
+					scheme_target_character = scope:flower_receiver
 				}
 				add_scheme_modifier = {
 					type = seduce_and_courting_fragrant_flowers_modifier

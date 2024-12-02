@@ -27629,13 +27629,13 @@ court.9001 = {
 					limit = {
 						any_scheme = {
 							scheme_type = courting
-							scheme_target = scope:flirty_spouse
+							scheme_target_character = scope:flirty_spouse
 						}
 					}
 					random_scheme = {
 						limit = {
 							scheme_type = courting
-							scheme_target = scope:flirty_spouse
+							scheme_target_character = scope:flirty_spouse
 						}
 						end_scheme = yes
 					}
@@ -27778,13 +27778,13 @@ court.9004 = {
 				limit = {
 					any_scheme = {
 						scheme_type = courting
-						scheme_target = scope:flirty_spouse
+						scheme_target_character = scope:flirty_spouse
 					}
 				}
 				random_scheme = {
 					limit = {
 						scheme_type = courting
-						scheme_target = scope:flirty_spouse
+						scheme_target_character = scope:flirty_spouse
 					}
 					end_scheme = yes
 				}

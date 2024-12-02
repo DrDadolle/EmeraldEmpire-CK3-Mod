@@ -6492,7 +6492,7 @@ scripted_trigger is_far_gone_murder_scheme_trigger = {
 	scheme_type = murder
 	scheme_progress > 5 
 	is_scheme_exposed = no
-	scheme_target = root
+	scheme_target_character = root
 }
 
 #Visit a 'haunted' mansion (farm estates) - Enter at your own peril

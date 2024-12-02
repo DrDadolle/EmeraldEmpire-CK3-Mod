@@ -652,7 +652,7 @@ namespace = bookmark
 # 				NOT = {
 # 					any_scheme = {
 # 						scheme_type = murder
-# 						scheme_target = scope:hunchback
+# 						scheme_target_character = scope:hunchback
 # 					}
 # 				}
 # 			}
@@ -666,7 +666,7 @@ namespace = bookmark
 # 			random_scheme = {
 # 				limit = {
 # 					scheme_type = murder
-# 					scheme_target = scope:hunchback
+# 					scheme_target_character = scope:hunchback
 # 				}
 # 				add_scheme_modifier = {
 # 					type = massive_extra_success_chance_modifier

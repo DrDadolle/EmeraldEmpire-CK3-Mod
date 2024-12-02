@@ -445,7 +445,7 @@ befriend_outcome.2001 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -507,7 +507,7 @@ befriend_outcome.2002 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -576,7 +576,7 @@ befriend_outcome.2003 = {
 		triggered_desc = {
 			# Do not trigger if scheme owner is deceitful and the two characters have nothing of note in common.
 			trigger = {
-				scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+				scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 				NOT = {
 					has_trait = deceitful
 					AND = {
@@ -591,21 +591,21 @@ befriend_outcome.2003 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_fame_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.2003.same_fame
 			}
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_lifestyle_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.2003.same_lifestyle
 			}
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_education_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.2003.same_education
@@ -629,7 +629,7 @@ befriend_outcome.2003 = {
 
 	trigger = {
 		scope:scheme = {
-			scheme_target = {
+			scheme_target_character = {
 				is_travelling = no
 				save_temporary_scope_as = compare_character
 			}
@@ -743,7 +743,7 @@ befriend_outcome.2004 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 		}
 	}
@@ -1003,7 +1003,7 @@ befriend_outcome.2201 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -1109,7 +1109,7 @@ befriend_outcome.4001 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -1166,7 +1166,7 @@ befriend_outcome.4002 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -1232,21 +1232,21 @@ befriend_outcome.4003 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_fame_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.4003.same_fame
 			}
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_lifestyle_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.4003.same_lifestyle
 			}
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_education_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.4003.same_education
@@ -1270,7 +1270,7 @@ befriend_outcome.4003 = {
 
 	trigger = {
 		scope:scheme = {
-			scheme_target = {
+			scheme_target_character = {
 				is_travelling = no
 				save_temporary_scope_as = compare_character
 			}
@@ -1418,7 +1418,7 @@ befriend_outcome.4201 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -1524,7 +1524,7 @@ befriend_outcome.6001 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -1607,7 +1607,7 @@ befriend_outcome.6002 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -1678,7 +1678,7 @@ befriend_outcome.6003 = {
 		triggered_desc = {
 			# Do not trigger if scheme owner is deceitful and the two characters have nothing of note in common.
 			trigger = {
-				scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+				scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 				NOT = {
 					has_trait = deceitful
 					AND = {
@@ -1693,21 +1693,21 @@ befriend_outcome.6003 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_fame_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.2003.same_fame
 			}
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_lifestyle_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.2003.same_lifestyle
 			}
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_education_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.2003.same_education
@@ -1752,7 +1752,7 @@ befriend_outcome.6003 = {
 	}
 	
 	immediate = {
-		scope:scheme.scheme_target = { save_scope_as = compare_character }
+		scope:scheme.scheme_target_character = { save_scope_as = compare_character }
 		if = {
 			limit = {
 				has_same_fame_as_compare_character_trigger = yes
@@ -2081,7 +2081,7 @@ befriend_outcome.8001 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -2164,7 +2164,7 @@ befriend_outcome.8002 = {
 	}
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -2236,21 +2236,21 @@ befriend_outcome.8003 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_fame_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.4003.same_fame
 			}
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_lifestyle_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.4003.same_lifestyle
 			}
 			triggered_desc = {
 				trigger = {
-					scope:scheme.scheme_target = { save_temporary_scope_as = compare_character }
+					scope:scheme.scheme_target_character = { save_temporary_scope_as = compare_character }
 					has_same_education_as_compare_character_trigger = yes
 				}
 				desc = befriend_outcome.4003.same_education
@@ -2274,7 +2274,7 @@ befriend_outcome.8003 = {
 
 	trigger = {
 		scope:scheme = {
-			scheme_target = {
+			scheme_target_character = {
 				is_travelling = no
 				save_temporary_scope_as = compare_character
 			}
@@ -2815,7 +2815,7 @@ befriend_outcome.8201 = {
 
 	trigger = {
 		is_travelling = no
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			opinion = {
 				target = scope:scheme.scheme_owner
@@ -3124,7 +3124,7 @@ befriend_outcome.9900 = {
 				father = { is_alive = no }
 			}
 		}
-		scope:scheme.scheme_target = {
+		scope:scheme.scheme_target_character = {
 			is_travelling = no
 			OR = {
 				AND = {

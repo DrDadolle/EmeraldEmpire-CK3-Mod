@@ -4227,7 +4227,7 @@ playdate.4001 = {
 				random_scheme = {
 					limit = {
 						scheme_type = learn_language
-						scheme_target = root
+						scheme_target_character = root
 					}
 					add_scheme_modifier = {
 						type = extra_success_chance_modifier
@@ -4294,7 +4294,7 @@ playdate.4001 = {
 				random_scheme = {
 					limit = {
 						scheme_type = learn_language
-						scheme_target = scope:participant
+						scheme_target_character = scope:participant
 					}
 					add_scheme_modifier = {
 						type = extra_success_chance_modifier

@@ -2956,7 +2956,7 @@ bp1_yearly.5704 = {
 		random_scheme = {
 			limit = {
 				scheme_type = seduce
-				scheme_target = scope:seduced_rival
+				scheme_target_character = scope:seduced_rival
 			}
 			add_scheme_modifier = {
 				type = seduce_rival_modifier
@@ -3317,7 +3317,7 @@ bp1_yearly.5706 = {
 			random_scheme = {
 				limit = {
 					scheme_type = seduce
-					scheme_target = scope:rival_child
+					scheme_target_character = scope:rival_child
 				}
 				add_scheme_modifier = {
 					type = seduce_rival_offspring_modifier
@@ -11870,7 +11870,7 @@ scripted_effect bp1_yearly_sycophant_start_seduce_effect = {
 		random_scheme = {
 			limit = {
 				scheme_type = seduce
-				scheme_target = scope:sycophant_scope
+				scheme_target_character = scope:sycophant_scope
 			}
 			add_scheme_modifier = { type = sycophant_story_encouraged_seduction_scheme_modifier }
 		}
@@ -13357,7 +13357,7 @@ bp1_yearly.8140 = {
 			random_scheme = {
 				limit = {
 					scheme_type = murder
-					scheme_target = scope:jealous_scope
+					scheme_target_character = scope:jealous_scope
 				}
 				save_scope_as = sycophant_scheme
 			}

@@ -71,7 +71,7 @@
 # 				NOT = {
 # 					any_scheme = {
 # 						scheme_type = befriend
-# 						scheme_target = scope:bad_guy
+# 						scheme_target_character = scope:bad_guy
 # 					}
 # 				}
 # 			}
@@ -85,7 +85,7 @@
 # 			random_scheme = {
 # 				limit = {
 # 					scheme_type = befriend
-# 					scheme_target = scope:bad_guy
+# 					scheme_target_character = scope:bad_guy
 # 				}
 # 				add_scheme_modifier = {
 # 					type = tutorial_extra_success_chance_modifier

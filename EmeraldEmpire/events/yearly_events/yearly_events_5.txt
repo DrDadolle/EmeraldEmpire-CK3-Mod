@@ -3557,8 +3557,8 @@ scripted_trigger suitable_scheme_yearly_5040_trigger = {
 	hostile_scheme_trigger = yes
 	is_scheme_exposed = no
 	OR = {
-		scheme_target = root
-		scheme_target = { is_close_or_extended_family_of = root }
+		scheme_target_character = root
+		scheme_target_character = { is_close_or_extended_family_of = root }
 	}
 }
 scripted_trigger suitable_secret_yearly_5040_trigger = {
@@ -4009,14 +4009,14 @@ yearly.5041 = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = scope:scoped_secret }
-					scope:scoped_scheme = { scheme_target = root }
+					scope:scoped_scheme = { scheme_target_character = root }
 				}
 				desc = yearly.5041.desc.a
 			}
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = scope:scoped_secret }
-					NOT = { scope:scoped_scheme = { scheme_target = root } }
+					NOT = { scope:scoped_scheme = { scheme_target_character = root } }
 				}
 				desc = yearly.5041.desc.b
 			}
@@ -4078,14 +4078,14 @@ yearly.5042 = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = scope:scoped_secret }
-					scope:scoped_scheme = { scheme_target = root }
+					scope:scoped_scheme = { scheme_target_character = root }
 				}
 	  			desc = yearly.5042.desc.a
 			}
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = scope:scoped_secret }
-					NOT = { scope:scoped_scheme = { scheme_target = root } }
+					NOT = { scope:scoped_scheme = { scheme_target_character = root } }
 				}
 	  			desc = yearly.5042.desc.b
 			}

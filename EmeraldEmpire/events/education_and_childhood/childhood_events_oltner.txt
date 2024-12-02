@@ -1409,7 +1409,7 @@ childhood.7200 = {
 				NOT = {
 					any_scheme = {
 						scheme_type = learn_language
-						scheme_target = scope:language_friend
+						scheme_target_character = scope:language_friend
 					}
 				}
 			}
@@ -1423,7 +1423,7 @@ childhood.7200 = {
 			random_scheme = {
 				limit = {
 					scheme_type = learn_language
-					scheme_target = scope:language_friend
+					scheme_target_character = scope:language_friend
 				}
 				add_scheme_modifier = {
 					type = extra_success_chance_modifier

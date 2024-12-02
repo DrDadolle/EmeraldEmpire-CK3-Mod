@@ -495,76 +495,77 @@ corridor_night = {
 		environment = "environment_event_fp3_courtyard_night" 
 		ambience = "event:/SFX/Events/Backgrounds/castle_corridor_night"
 	}
-	background = {	#FP2
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:bg_override_char }
-				scope:bg_override_char = {
-					OR = {
-						location.culture ?= { has_building_gfx = iberian_building_gfx }
-						location ?= { geographical_region = world_europe_west_iberia }
-						location.culture ?= { has_building_gfx = mena_building_gfx }
-					}
-				}
-			}
-			trigger_else = {
-				OR = {
-					location.culture ?= { has_building_gfx = iberian_building_gfx }
-					location ?= { geographical_region = world_europe_west_iberia }
-					location.culture ?= { has_building_gfx = mena_building_gfx }
-				}
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp2_corridor_night.dds"
-		environment = "environment_event_fp2_corridor_night" 
-		ambience = "event:/DLC/FP2/SFX/Events/corridor_night" 
-	}
-	background = {	#FP1
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:bg_override_char }
-				scope:bg_override_char = {
-					OR = {
-						location.culture ?= { has_building_gfx = norse_building_gfx }
-						should_use_tribal_realm_palace_graphics_trigger = yes
-						AND = {
-							government_has_flag = government_is_tribal
-							location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-						}
-					}
-				}
-			}
-			trigger_else = {
-				OR = {
-					location.culture ?= { has_building_gfx = norse_building_gfx }
-					should_use_tribal_realm_palace_graphics_trigger = yes
-					AND = {
-						government_has_flag = government_is_tribal
-						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-					}
-				}
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_corridor.dds"
-		environment = "environment_event_fp1_tribal_corridor"
-		ambience = "event:/DLC/FP1/SFX/Events/event_tribal_corridor"
-	}
-	background = {	#Indian Corridor
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:bg_override_char }
-				scope:bg_override_char = {
-					location.culture ?= { has_graphical_india_culture_group_trigger = yes }
-				}
-			}
-			trigger_else = {
-				location.culture ?= { has_graphical_india_culture_group_trigger = yes }
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/bp1_corridor_indian_night.dds"
-		environment = "environment_event_bp1_corridor_indian_night"
-		ambience = "event:/SFX/Events/Backgrounds/castle_corridor_night"
-	}
+	#L5R Disabled
+	# background = {	#FP2
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:bg_override_char }
+	# 			scope:bg_override_char = {
+	# 				OR = {
+	# 					location.culture ?= { has_building_gfx = iberian_building_gfx }
+	# 					location ?= { geographical_region = world_europe_west_iberia }
+	# 					location.culture ?= { has_building_gfx = mena_building_gfx }
+	# 				}
+	# 			}
+	# 		}
+	# 		trigger_else = {
+	# 			OR = {
+	# 				location.culture ?= { has_building_gfx = iberian_building_gfx }
+	# 				location ?= { geographical_region = world_europe_west_iberia }
+	# 				location.culture ?= { has_building_gfx = mena_building_gfx }
+	# 			}
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp2_corridor_night.dds"
+	# 	environment = "environment_event_fp2_corridor_night" 
+	# 	ambience = "event:/DLC/FP2/SFX/Events/corridor_night" 
+	# }
+	# background = {	#FP1
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:bg_override_char }
+	# 			scope:bg_override_char = {
+	# 				OR = {
+	# 					location.culture ?= { has_building_gfx = norse_building_gfx }
+	# 					should_use_tribal_realm_palace_graphics_trigger = yes
+	# 					AND = {
+	# 						government_has_flag = government_is_tribal
+	# 						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		trigger_else = {
+	# 			OR = {
+	# 				location.culture ?= { has_building_gfx = norse_building_gfx }
+	# 				should_use_tribal_realm_palace_graphics_trigger = yes
+	# 				AND = {
+	# 					government_has_flag = government_is_tribal
+	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_corridor.dds"
+	# 	environment = "environment_event_fp1_tribal_corridor"
+	# 	ambience = "event:/DLC/FP1/SFX/Events/event_tribal_corridor"
+	# }
+	# background = {	#Indian Corridor
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:bg_override_char }
+	# 			scope:bg_override_char = {
+	# 				location.culture ?= { has_graphical_india_culture_group_trigger = yes }
+	# 			}
+	# 		}
+	# 		trigger_else = {
+	# 			location.culture ?= { has_graphical_india_culture_group_trigger = yes }
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_corridor_indian_night.dds"
+	# 	environment = "environment_event_bp1_corridor_indian_night"
+	# 	ambience = "event:/SFX/Events/Backgrounds/castle_corridor_night"
+	# }
 	background = {
 		reference = "gfx/interface/illustrations/event_scenes/corridor.dds"
 		environment = "environment_event_corridor"
@@ -585,78 +586,79 @@ corridor_day = {
 		environment = "environment_ep3_arid_camp"
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
 	}
-	background = {	#FP2
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:bg_override_char }
-				scope:bg_override_char = {
-					OR = {
-						location.culture ?= { has_building_gfx = iberian_building_gfx }
-						location = { geographical_region = world_europe_west_iberia }
-						location.culture ?= { has_building_gfx = mena_building_gfx }
-						location.culture ?= { has_building_gfx = iranian_building_gfx }
-					}
-				}
-			}
-			trigger_else = {
-				OR = {
-					location.culture ?= { has_building_gfx = iberian_building_gfx }
-					location = { geographical_region = world_europe_west_iberia }
-					location.culture ?= { has_building_gfx = mena_building_gfx }
-					location.culture ?= { has_building_gfx = iranian_building_gfx }
-				}
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp2_corridor_day.dds"
-		environment = "environment_event_fp2_corridor_day" 
-		ambience = "event:/DLC/FP2/SFX/Events/corridor_day"
-	}
-	background = {	#FP1
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:bg_override_char }
-				scope:bg_override_char = {
-					OR = {
-						location.culture ?= { has_building_gfx = norse_building_gfx }
-						should_use_tribal_realm_palace_graphics_trigger = yes
-						AND = {
-							government_has_flag = government_is_tribal
-							location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-						}
-					}
-				}
-			}
-			trigger_else = {
-				OR = {
-					location.culture ?= { has_building_gfx = norse_building_gfx }
-					should_use_tribal_realm_palace_graphics_trigger = yes
-					AND = {
-						government_has_flag = government_is_tribal
-						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-					}
-				}
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_corridor.dds"
-		environment = "environment_event_fp1_tribal_corridor"
-		ambience = "event:/DLC/FP1/SFX/Events/event_tribal_corridor"
-	}
-	background = {	#Indian Corridor
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:bg_override_char }
-				scope:bg_override_char = {
-					location.culture ?= { has_graphical_india_culture_group_trigger = yes }
-				}
-			}
-			trigger_else = {
-				location.culture ?= { has_graphical_india_culture_group_trigger = yes }
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/bp1_corridor_indian_day.dds"
-		environment = "environment_event_bp1_corridor_indian_day" 
-		ambience = "event:/SFX/Events/Backgrounds/castle_corridor_day"
-	}
+	#L5R Disabled
+	# background = {	#FP2
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:bg_override_char }
+	# 			scope:bg_override_char = {
+	# 				OR = {
+	# 					location.culture ?= { has_building_gfx = iberian_building_gfx }
+	# 					location = { geographical_region = world_europe_west_iberia }
+	# 					location.culture ?= { has_building_gfx = mena_building_gfx }
+	# 					location.culture ?= { has_building_gfx = iranian_building_gfx }
+	# 				}
+	# 			}
+	# 		}
+	# 		trigger_else = {
+	# 			OR = {
+	# 				location.culture ?= { has_building_gfx = iberian_building_gfx }
+	# 				location = { geographical_region = world_europe_west_iberia }
+	# 				location.culture ?= { has_building_gfx = mena_building_gfx }
+	# 				location.culture ?= { has_building_gfx = iranian_building_gfx }
+	# 			}
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp2_corridor_day.dds"
+	# 	environment = "environment_event_fp2_corridor_day" 
+	# 	ambience = "event:/DLC/FP2/SFX/Events/corridor_day"
+	# }
+	# background = {	#FP1
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:bg_override_char }
+	# 			scope:bg_override_char = {
+	# 				OR = {
+	# 					location.culture ?= { has_building_gfx = norse_building_gfx }
+	# 					should_use_tribal_realm_palace_graphics_trigger = yes
+	# 					AND = {
+	# 						government_has_flag = government_is_tribal
+	# 						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		trigger_else = {
+	# 			OR = {
+	# 				location.culture ?= { has_building_gfx = norse_building_gfx }
+	# 				should_use_tribal_realm_palace_graphics_trigger = yes
+	# 				AND = {
+	# 					government_has_flag = government_is_tribal
+	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_corridor.dds"
+	# 	environment = "environment_event_fp1_tribal_corridor"
+	# 	ambience = "event:/DLC/FP1/SFX/Events/event_tribal_corridor"
+	# }
+	# background = {	#Indian Corridor
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:bg_override_char }
+	# 			scope:bg_override_char = {
+	# 				location.culture ?= { has_graphical_india_culture_group_trigger = yes }
+	# 			}
+	# 		}
+	# 		trigger_else = {
+	# 			location.culture ?= { has_graphical_india_culture_group_trigger = yes }
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_corridor_indian_day.dds"
+	# 	environment = "environment_event_bp1_corridor_indian_day" 
+	# 	ambience = "event:/SFX/Events/Backgrounds/castle_corridor_day"
+	# }
 	background = {
 		reference = "gfx/interface/illustrations/event_scenes/corridor_day.dds"
 		environment = "environment_event_corridor_day"

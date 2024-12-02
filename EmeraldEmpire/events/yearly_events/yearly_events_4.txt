@@ -621,7 +621,7 @@ scripted_trigger yearly_4011_vassal_trigger = {
 		has_relation_friend = root
 		any_scheme = {
 			scheme_type = murder
-			scheme_target = root
+			scheme_target_character = root
 		}
 	}
 	opinion = {
@@ -693,7 +693,7 @@ yearly.4011 = {
 			NOT = {
 				any_scheme = {
 					scheme_type = murder
-					scheme_target = root
+					scheme_target_character = root
 				}
 			}
 		}
@@ -1146,7 +1146,7 @@ yearly.4014 = {
 				random_scheme = {
 					limit = {
 						scheme_type = murder
-						scheme_target = root
+						scheme_target_character = root
 					}
 					save_scope_as = murder_friends_scheme
 				}
@@ -1183,7 +1183,7 @@ yearly.4014 = {
 				random_scheme = {
 					limit = {
 						scheme_type = murder
-						scheme_target = root
+						scheme_target_character = root
 					}
 					save_scope_as = murder_friends_scheme
 				}

@@ -19790,7 +19790,7 @@ fund_inspiration.6507 = {
 		random_scheme = {
 			limit = {
 				scheme_type = murder
-				scheme_target = scope:grumpy_liege
+				scheme_target_character = scope:grumpy_liege
 			}
 			save_scope_as = grumpy_liege_murder
 		}

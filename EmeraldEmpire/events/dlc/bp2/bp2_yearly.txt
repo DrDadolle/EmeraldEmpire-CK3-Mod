@@ -347,7 +347,7 @@ bp2_yearly.8000 = {
 				random_scheme = {
 					limit = {
 						scheme_type = learn_language
-						scheme_target = scope:language_target
+						scheme_target_character = scope:language_target
 					}
 					add_scheme_modifier = {
 						type = close_tutelage_scheme
@@ -579,7 +579,7 @@ bp2_yearly.8010 = {
 							random_scheme = {
 								limit = {
 									scheme_type = learn_language
-									scheme_target = root
+									scheme_target_character = root
 								}
 								add_scheme_modifier = {
 									type = close_tutelage_scheme
@@ -1744,7 +1744,7 @@ bp2_yearly.8043 = {
 				random_scheme = {
 					limit = {
 						scheme_type = courting
-						scheme_target = scope:crush
+						scheme_target_character = scope:crush
 					}
 					add_scheme_modifier = { type = crush_bonus }
 				}
@@ -1760,7 +1760,7 @@ bp2_yearly.8043 = {
 				random_scheme = {
 					limit = {
 						scheme_type = seduce
-						scheme_target = scope:crush
+						scheme_target_character = scope:crush
 					}
 					add_scheme_modifier = { type = crush_bonus }
 				}

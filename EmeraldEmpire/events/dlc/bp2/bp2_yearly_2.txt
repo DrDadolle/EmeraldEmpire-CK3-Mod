@@ -2602,13 +2602,13 @@ bp2_yearly.2020 = {
 				has_variable = imaginary_friend_murder_target
 				any_scheme = {
 					scheme_type = murder 
-					scheme_target = root.var:imaginary_friend_murder_target
+					scheme_target_character = root.var:imaginary_friend_murder_target
 				}
 			}
 			random_scheme = {
 				limit = {
 					scheme_type = murder 
-					scheme_target = root.var:imaginary_friend_murder_target
+					scheme_target_character = root.var:imaginary_friend_murder_target
 				}
 				add_scheme_modifier = { type = imaginary_friend_murder_scheme_modifier }
 			}
@@ -2642,7 +2642,7 @@ bp2_yearly.2021 = {
 		NOT = {
 			any_scheme = {
 				scheme_type = murder 
-				scheme_target = root.var:imaginary_friend_murder_target
+				scheme_target_character = root.var:imaginary_friend_murder_target
 			}
 		}
 	}
@@ -2843,13 +2843,13 @@ bp2_yearly.2022 = {
 				has_variable = imaginary_friend_murder_target
 				any_scheme = {
 					scheme_type = murder 
-					scheme_target = root.var:imaginary_friend_murder_target
+					scheme_target_character = root.var:imaginary_friend_murder_target
 				}
 			}
 			random_scheme = {
 				limit = {
 					scheme_type = murder 
-					scheme_target = root.var:imaginary_friend_murder_target
+					scheme_target_character = root.var:imaginary_friend_murder_target
 				}
 				add_scheme_modifier = { type = imaginary_friend_murder_scheme_modifier }
 			}
@@ -2937,13 +2937,13 @@ bp2_yearly.2023 = {
 				has_variable = imaginary_friend_murder_target
 				any_scheme = {
 					scheme_type = murder 
-					scheme_target = root.var:imaginary_friend_murder_target
+					scheme_target_character = root.var:imaginary_friend_murder_target
 				}
 			}
 			random_scheme = {
 				limit = {
 					scheme_type = murder 
-					scheme_target = root.var:imaginary_friend_murder_target
+					scheme_target_character = root.var:imaginary_friend_murder_target
 				}
 				add_scheme_modifier = { type = imaginary_friend_murder_scheme_modifier }
 			}
@@ -3031,13 +3031,13 @@ bp2_yearly.2024 = {
 				has_variable = imaginary_friend_murder_target
 				any_scheme = {
 					scheme_type = murder 
-					scheme_target = root.var:imaginary_friend_murder_target
+					scheme_target_character = root.var:imaginary_friend_murder_target
 				}
 			}
 			random_scheme = {
 				limit = {
 					scheme_type = murder 
-					scheme_target = root.var:imaginary_friend_murder_target
+					scheme_target_character = root.var:imaginary_friend_murder_target
 				}
 				add_scheme_modifier = { type = imaginary_friend_murder_scheme_modifier }
 			}

@@ -2158,7 +2158,7 @@ tournament_events.1100 = { # Start - Alone
 		random_scheme ={
 			limit = {
 				scheme_type = seduce
-				scheme_target = scope:pas_darmes_instigator
+				scheme_target_character = scope:pas_darmes_instigator
 			}
 			add_scheme_modifier = { type = tournament_pas_darmes_seduce_modifier }
 		}
@@ -5141,7 +5141,7 @@ scripted_effect tournament_favor_gift_effect = {
 			is_scheming_against = { target = scope:favor_recipient }
 		}
 		random_scheme = {
-			limit = { scheme_target = scope:favor_recipient }
+			limit = { scheme_target_character = scope:favor_recipient }
 			save_scope_as = favor_scheme
 		}
 	}
@@ -5217,11 +5217,11 @@ tournament_events.1250 = {
 			}
 			any_scheme = {
 				scheme_type = seduce
-				scheme_target = { save_temporary_scope_as = favor_recipient_temp }
+				scheme_target_character = { save_temporary_scope_as = favor_recipient_temp }
 			}
 			any_scheme = {
 				scheme_type = courting
-				scheme_target = { save_temporary_scope_as = favor_recipient_temp }
+				scheme_target_character = { save_temporary_scope_as = favor_recipient_temp }
 			}
 		}
 		scope:favor_recipient_temp = { tournament_events_1250_favor_trigger = yes }
@@ -5243,11 +5243,11 @@ tournament_events.1250 = {
 						}
 						any_scheme = {
 							scheme_type = seduce
-							scheme_target = { tournament_events_1250_favor_trigger = yes }
+							scheme_target_character = { tournament_events_1250_favor_trigger = yes }
 						}
 						any_scheme = {
 							scheme_type = courting
-							scheme_target = { tournament_events_1250_favor_trigger = yes }
+							scheme_target_character = { tournament_events_1250_favor_trigger = yes }
 						}
 					}
 					NAND = {
@@ -5281,30 +5281,30 @@ tournament_events.1250 = {
 						trigger = {
 							any_scheme = {
 								scheme_type = seduce
-								scheme_target = { tournament_events_1250_favor_trigger = yes }
+								scheme_target_character = { tournament_events_1250_favor_trigger = yes }
 							}
 						}
 						random_scheme = {
 							limit = {
 								scheme_type = seduce
-								scheme_target = { tournament_events_1250_favor_trigger = yes }
+								scheme_target_character = { tournament_events_1250_favor_trigger = yes }
 							}
-							scheme_target = { tournament_events_1250_scope_effect = yes }
+							scheme_target_character = { tournament_events_1250_scope_effect = yes }
 						}
 					}
 					10 = {
 						trigger = {
 							any_scheme = {
 								scheme_type = courting
-								scheme_target = { tournament_events_1250_favor_trigger = yes }
+								scheme_target_character = { tournament_events_1250_favor_trigger = yes }
 							}
 						}
 						random_scheme = {
 							limit = {
 								scheme_type = courting
-								scheme_target = { tournament_events_1250_favor_trigger = yes }
+								scheme_target_character = { tournament_events_1250_favor_trigger = yes }
 							}
-							scheme_target = { tournament_events_1250_scope_effect = yes }
+							scheme_target_character = { tournament_events_1250_scope_effect = yes }
 						}
 					}
 				}
@@ -11191,7 +11191,7 @@ tournament_events.1405 = {
 			random_scheme = {
 				limit = {
 					scheme_type = seduce
-					scheme_target = scope:flirty_onlooker
+					scheme_target_character = scope:flirty_onlooker
 				}
 				add_scheme_modifier = {
 					type = extra_success_chance_modifier
