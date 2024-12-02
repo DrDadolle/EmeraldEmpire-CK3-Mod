@@ -1,0 +1,467 @@
+﻿
+### Cultural trigger list
+
+# drinks_alcohol_trigger - Would this person drink alcohol?
+# holder_or_above_is_player_of_culture - Is this county's holder or anyone above them in the de facto hierarchy a player with the same culture?
+
+
+######################
+# Cultural triggers  #
+######################
+
+drinks_alcohol_trigger = {
+	is_adult = yes
+	has_trait = drunkard
+}
+
+faith_forbids_alcohol_trigger = {
+	#L5R Disabled
+	always = no 
+}
+
+holder_or_above_is_player_of_culture = {
+	culture = {
+		save_temporary_scope_as = this_culture
+	}
+	OR = {
+		holder = {
+			AND = {
+				is_ai = no
+				culture = scope:this_culture
+			}
+			any_liege_or_above = {
+				is_ai = no
+				culture = scope:this_culture
+			}
+		}
+	}
+}
+
+culture_in_winter_geographical_region_trigger = {
+	custom_description = {
+		text = culture_in_winter_geographical_region_trigger_desc
+		any_culture_county = {
+			any_county_province = {
+				OR = {
+					#L5R Modified
+					geographical_region = rokugan_phoenix
+					geographical_region = rokugan_dragon
+					geographical_region = rokugan_spine_world_mountains
+				}
+			}
+		}
+	}
+}
+
+culture_in_non_sedentary_geographical_region_trigger = {
+	#L5R Disabled
+	always = no
+	# custom_description = {
+	# 	text = culture_in_non_sedentary_geographical_region_trigger_desc
+	# 	any_culture_county = {
+	# 		any_county_province = {
+	# 			OR = {
+	# 				geographical_region = middleearth_rhun
+	# 			}
+	# 		}
+	# 	}
+	# }
+}
+
+culture_not_pacifistic_trigger = {
+	custom_description = {
+		text = culture_not_pacifist_trigger_desc
+		NOT = {
+			culture_tradition:tradition_pacifism = { is_in_list = traits }
+		}
+	}
+}
+
+culture_not_warlike_trigger = {
+	custom_description = {
+		text = culture_not_warlike_trigger_desc
+		NOR = {
+			culture_tradition:tradition_winter_warriors = { is_in_list = traits }
+			culture_tradition:tradition_forest_fighters = { is_in_list = traits }
+			culture_tradition:tradition_mountaineers = { is_in_list = traits }
+			culture_tradition:tradition_warriors_of_the_dry = { is_in_list = traits }
+			culture_tradition:tradition_highland_warriors = { is_in_list = traits }
+			culture_tradition:tradition_jungle_warriors = { is_in_list = traits }
+			culture_tradition:tradition_quarrelsome = { is_in_list = traits }
+			culture_tradition:tradition_malleable_invaders = { is_in_list = traits }
+			culture_tradition:tradition_hunters = { is_in_list = traits }
+			culture_tradition:tradition_warrior_culture = { is_in_list = traits }
+			culture_tradition:tradition_martial_admiration = { is_in_list = traits }
+			#L5R Added
+			culture_tradition:tradition_bushido = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_winter_warriors_desc
+		NOT = {
+			culture_tradition:tradition_winter_warriors = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_forest_fighter_desc
+		NOT = {
+			culture_tradition:tradition_forest_fighters = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_mountaineers_desc
+		NOT = {
+			culture_tradition:tradition_mountaineers = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_warriors_of_the_dry_desc
+		NOT = {
+			culture_tradition:tradition_warriors_of_the_dry = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_highland_warriors_desc
+		NOT = {
+			culture_tradition:tradition_highland_warriors = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_jungle_warriors_desc
+		NOT = {
+			culture_tradition:tradition_jungle_warriors = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_quarrelsome_desc
+		NOT = {
+			culture_tradition:tradition_quarrelsome = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_malleable_invaders_desc
+		NOT = {
+			culture_tradition:tradition_malleable_invaders = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_hunters_desc
+		NOT = {
+			culture_tradition:tradition_hunters = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_warrior_culture_desc
+		NOT = {
+			culture_tradition:tradition_warrior_culture = { is_in_list = traits }
+		}
+	}
+	custom_description = {
+		text = culture_has_martial_admiration_desc
+		NOT = {
+			culture_tradition:tradition_martial_admiration = { is_in_list = traits }
+		}
+	}
+	#L5R Added
+	custom_description = {
+		text = culture_has_bushido_desc
+		NOT = {
+			culture_tradition:tradition_bushido= { is_in_list = traits }
+		}
+	}
+}
+
+should_have_same_faith_succession_trigger = {
+	culture = {
+		has_cultural_parameter = same_faith_inheritance_only
+	}
+	NOR = {
+		government_has_flag = government_is_theocracy # Handled separately
+		government_has_flag = government_is_holy_order # Handled separately
+		government_has_flag = government_is_mercenary # Irrelevant
+	}
+}
+
+not_tribal_raid_trigger = {
+	culture = {
+		has_cultural_parameter = not_tribal_raiding_malus
+	}
+	NOT = { government_has_flag = government_is_tribal }
+}
+
+culture_is_not_historical_hybrid_trigger = {
+	#Used to tell if a hybrid culture is one of the historical hybrids or not, mainly in checks for AI hybridization checks related to game rules.
+	#Expects to be used in culture scope
+	#L5R Disabled
+	always = no
+	## TODO - add appropriate cultures
+	#NOR = {
+	#	this = culture:norman
+	#	this = culture:maghrebi
+	#	this = culture:gaelic
+	#	this = culture:anglo_saxon
+	#	this = culture:scottish
+	#	this = culture:andalusian
+	#	this = culture:catalan
+	#	this = culture:english
+	#	this = culture:sicilian
+	#	this = culture:cisalpine
+	#}
+}
+
+# Cultural MAA triggers - Used in various places for triggers, AI weights, etc.
+culture_has_skirmisher_maa = {
+	OR = {
+		#L5R Modified
+		has_cultural_pillar = heritage_scorpion
+	}
+}
+
+culture_has_archer_maa = {
+	OR = {
+		#L5R Modified
+		has_cultural_pillar = heritage_tsuruchi
+	}
+}
+
+culture_has_heavy_infantry_maa = {
+	OR = {
+		#L5R Modified
+		has_cultural_pillar = heritage_crab
+		has_cultural_pillar = heritage_dragon
+		has_cultural_pillar = heritage_lion
+	 }
+}
+
+culture_has_pikemen_maa = { #I.e. Spearmen
+	OR = {
+		#L5R Modified
+		has_cultural_pillar = heritage_crane
+		has_cultural_pillar = heritage_imperial
+		has_cultural_pillar = heritage_phoenix
+	}
+}
+
+culture_has_light_cavalry_maa = {
+	OR = {
+		#L5R Modified
+		always = no
+	}
+}
+
+culture_has_heavy_cavalry_maa = {
+	OR = {
+		#L5R Modified
+		has_cultural_pillar = heritahe_unicorn
+	}
+}
+
+culture_has_archer_cavalry_maa = {
+	OR = {
+		#L5R Modified
+		always = no
+	}
+}
+
+culture_has_monster_maa = {
+	OR = {
+		#L5R Modified
+		always = no
+	}
+}
+
+# Language trigger - Makes languages available when you diverge your culture
+language_is_shown_trigger = {
+	scope:character = {
+		OR = {
+			AND = {
+				exists = var:legendary_culture
+				var:legendary_culture = { has_cultural_pillar = $LANGUAGE$ }
+			}
+			AND = {
+		# The target language needs to fulfill ALL of the following:
+		any_sub_realm_county = { # Language needs to be well-represented within your realm
+			percent >= 0.1
+			culture = { has_cultural_pillar = $LANGUAGE$ }
+		}
+		any_sub_realm_county = { # Language needs to border your own culture
+			culture = { has_cultural_pillar = $LANGUAGE$ }
+			any_neighboring_county = {
+				culture = { this = scope:character.culture }
+			}
+		}
+		any_sub_realm_county = { # You need a minimum acceptance with any culture speaking the language
+			culture = {
+				has_cultural_pillar = $LANGUAGE$
+				cultural_acceptance = {
+					target = scope:character.culture
+					value >= 25
+				}
+			}
+				}
+			}
+		}
+	}
+}
+
+# Language trigger - Makes heritages available when you diverge your culture
+heritage_is_shown_trigger = {
+	scope:character = {
+		OR = {
+			AND = {
+				exists = var:legendary_culture
+				var:legendary_culture = { has_cultural_pillar = $HERITAGE$ }
+			}
+			culture = { has_cultural_pillar = $HERITAGE$ }
+		}
+	}
+}
+
+# Checks if you could Hybridise with the culture without checking for acceptance
+is_valid_for_hybridising_trigger = {
+	$CHARACTER$ = {
+		culture = {
+			NOT = { has_same_culture_heritage = $CULTURE$ }
+			culture_age >= culture_hybrid_cooldown
+			#L5R TODO here to update for future shadowlands races
+		}
+		custom_description = {
+			text = same_race
+			culture = { same_race_culture = { TARGET = $CULTURE$ } }
+		}
+		trigger_if = {
+			limit = {
+				NAND = {
+					exists = var:special_culture
+					var:special_culture = $CULTURE$
+				}
+			}
+			custom_description = {
+				text = culture_present_in_realm_for_hybridization
+				any_sub_realm_county = {
+					culture = $CULTURE$
+				}
+			}
+		}
+		custom_description = {
+			text = culture_is_not_parent_culture
+			culture = {
+				NOT = {
+					any_parent_culture = {
+						this = $CULTURE$
+					}
+				}
+			}
+		}
+		custom_description = {
+			text = culture_is_not_child_culture
+			$CULTURE$ = {
+				NOT = {
+					any_parent_culture = {
+						this = $CHARACTER$.culture
+					}
+				}
+			}
+		}
+	}
+}
+
+# Checks if you can currently hybridise with the culture
+can_hybridize_culture_trigger = {
+	is_valid_for_hybridising_trigger = {
+		CHARACTER = $CHARACTER$
+		CULTURE = $CULTURE$
+	}
+	$CHARACTER$ = {
+		culture = {
+			cultural_acceptance = { target = $CULTURE$ value >= hybridization_threshold_value }
+		}
+	}
+}
+
+
+# Uses current scope and scope:culture
+cultures_share_relevant_region_trigger = {
+	always = yes 
+	##L5R TODO - add geographic regions here
+	# L5R Modified
+	OR = {
+		AND = {
+			culture_overlaps_geographical_region = adventure_west
+			scope:culture = {
+				culture_overlaps_geographical_region = adventure_west
+			}
+		}
+		AND = {
+			culture_overlaps_geographical_region = rokugan_crab
+			scope:culture = {
+				culture_overlaps_geographical_region = rokugan_crab
+			}
+		}
+		AND = {
+			culture_overlaps_geographical_region = rokugan_crane
+			scope:culture = {
+				culture_overlaps_geographical_region = rokugan_crane
+			}
+		}
+		AND = {
+			culture_overlaps_geographical_region = rokugan_dragon
+			scope:culture = {
+				culture_overlaps_geographical_region = rokugan_dragon
+			}
+		}
+		AND = {
+			culture_overlaps_geographical_region = rokugan_lion
+			scope:culture = {
+				culture_overlaps_geographical_region = rokugan_lion
+			}
+		}
+		AND = {
+			culture_overlaps_geographical_region = rokugan_phoenix
+			scope:culture = {
+				culture_overlaps_geographical_region = rokugan_phoenix
+			}
+		}
+		AND = {
+			culture_overlaps_geographical_region = rokugan_scorpion
+			scope:culture = {
+				culture_overlaps_geographical_region = rokugan_scorpion
+			}
+		}
+		AND = {
+			culture_overlaps_geographical_region = rokugan_unicorn
+			scope:culture = {
+				culture_overlaps_geographical_region = rokugan_unicorn
+			}
+		}
+		AND = {
+			culture_overlaps_geographical_region = rokugan_imperial
+			scope:culture = {
+				culture_overlaps_geographical_region = rokugan_imperial
+			}
+		}
+	}
+}
+
+is_vegetarian_trigger = {
+	OR = {
+		culture = {
+			has_cultural_parameter = cannot_hunt
+		}
+		faith_is_vegetarian_trigger = yes
+	}
+}
+
+faith_is_vegetarian_trigger = {
+	#L5R Modified
+	faith = {
+		OR = {
+			# religion = religion:buddhism_religion
+			# religion = religion:jainism_religion
+			# religion = religion:bon_religion
+			# this = faith:mazdakism
+			# this = faith:manichean
+			religion = religion:shinseism_religion
+		}
+	}
+}

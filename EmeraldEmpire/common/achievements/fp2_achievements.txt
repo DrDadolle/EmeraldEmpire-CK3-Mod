@@ -69,18 +69,21 @@ fp2_iberia_or_iberia = {
 
 fp2_andalusian_inquisition = {
 	possible = {
-		
+		#L5R Disabled
+		always = no
 	}
 	happened = {
-		custom_description = {
-			text = fp2_andalusian_inquisition_trigger
-			is_ai = no
-			any_county_in_region = {
-				region = world_europe_west_iberia
-				count = all
-				faith = faith:mozarabic_church
-			}
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = fp2_andalusian_inquisition_trigger
+		# 	is_ai = no
+		# 	any_county_in_region = {
+		# 		region = world_europe_west_iberia
+		# 		count = all
+		# 		faith = faith:mozarabic_church
+		# 	}
+		# }
 	}
 }
 
@@ -135,20 +138,24 @@ fp2_holiday_in_iberia = {
 
 fp2_el_cid_achievement = {
 	possible = {
+		#L5R Disabled
+		always = no
 		
-		game_start_date > 1045
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_achievements
-				target = flag:rd_character_blocked_el_cid_achievement
-			}
-		}
+		# game_start_date > 1045
+		# NOT = {
+		# 	is_target_in_global_variable_list = {
+		# 		name = unavailable_achievements
+		# 		target = flag:rd_character_blocked_el_cid_achievement
+		# 	}
+		# }
 	}
 	happened = {
-		custom_description = {
-			text = fp2_el_cid_achievement_trigger
-			exists = global_var:fp2_el_cid_achievement_unlocked
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = fp2_el_cid_achievement_trigger
+		# 	exists = global_var:fp2_el_cid_achievement_unlocked
+		# }
 	}
 }
 
