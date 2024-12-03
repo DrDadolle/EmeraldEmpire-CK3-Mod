@@ -1,0 +1,65 @@
+﻿namespace = autoerrorfixer_modifier
+# L5R Used to hide game engine modifiers, or to avoid updating vanilla modifiers
+autoerrorfixer_modifier.1 = {
+	hidden = yes
+	orphan = yes
+	immediate = {
+		add_character_modifier = hajj_prophet_like_modifier
+		add_character_modifier = hajj_camel_knowledge_modifier
+		add_character_modifier = hajj_hygienic_modifier
+		add_character_modifier = hajj_pushed_the_marwah_modifier
+		add_character_modifier = hajj_skimp_on_safa_modifier
+		add_character_modifier = hajj_caught_on_safa_modifier
+		add_character_modifier = hajj_prayer_wealth_modifier
+		add_character_modifier = hajj_prayer_prestige_modifier
+		add_character_modifier = hajj_prayer_opinion_modifier
+		add_character_modifier = discounted_church_holding_build_cost_modifier
+		add_character_modifier = played_it_cool_modifier
+		add_character_modifier = festival_king_of_fools_modifier
+		add_character_modifier = festival_feast_of_fools_county_modifier
+		add_character_modifier = artifact_monthly_piety_negative_1_modifier
+		add_character_modifier = artifact_clergy_opinion_penalty_5_modifier
+		add_character_modifier = artifact_fake_papal_tiara_modifier
+		add_character_modifier = artifact_monthly_piety_gain_per_legitimacy_level_mult_3_modifier
+		add_character_modifier = artifact_legitimacy_gain_mult_3_modifier
+		add_character_modifier = tutorial_extra_success_chance_modifier
+		add_character_modifier = county_forced_assimilation_modifier
+		add_character_modifier = irrigated_oasis_modifier
+		add_character_modifier = guarded_irrigated_oasis_modifier
+		add_character_modifier = oasis_modifier
+		add_character_modifier = divide_and_conquer_modifier
+		add_character_modifier = 6230_rebuilding
+		add_character_modifier = bought_horses_modifier
+		add_character_modifier = pushed_horses_good_modifier
+		add_character_modifier = pushed_horses_bad_modifier
+		add_character_modifier = avenger_of_the_martyrs
+		add_character_modifier = ruler_of_the_ganges_modifier
+		add_character_modifier = bactria_royal_tolls_modifier
+		add_character_modifier = focused_modifier
+		add_character_modifier = useful_insights_modifier
+		add_character_modifier = confused_modifier
+		add_character_modifier = rebuilding_marrakesh_modifier
+		add_character_modifier = refused_to_rebuild_marrakesh_modifier
+		add_character_modifier = leading_looting_modifier
+		add_character_modifier = wounds_quickly_tended_to_modifier
+		add_character_modifier = drank_water_modifier
+		add_character_modifier = hallucinogenic_visions_terrifying_modifier
+		add_character_modifier = associates_with_strange_peasants_modifier
+		add_character_modifier = aloof_from_the_commoners_modifier
+		add_character_modifier = massive_extra_success_chance_modifier
+		add_character_modifier = temporary_fort_province_modifier
+		add_character_modifier = parliamentary_bureaucracy_modifier
+		add_character_modifier = flourishing_culture_modifier
+		add_character_modifier = hungarian_resettlement_modifier
+		add_character_modifier = magyar_appreciation_modifier
+		add_character_modifier = spurned_by_traders
+		add_character_modifier = elevate_mann_and_the_isles_modifier
+		add_character_modifier = dodekapolis_modifier
+		add_character_modifier = house_beneficiary_won_ghw_crusade
+		add_character_modifier = house_beneficiary_won_ghw_jihad
+		add_character_modifier = resurging_saoshyant
+		add_character_modifier = feud_with_the_church_modifier
+
+
+	}
+}

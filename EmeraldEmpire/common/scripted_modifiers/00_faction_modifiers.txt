@@ -2279,66 +2279,67 @@ claimant_faction_modifiers = {
 	}
 
 	### HARRYING OF THE NORTH
+	# L5R Disabled
 	# Increases Claimant faction likelihood if Resistance is high
-	modifier = {
-		desc = "FACTION_REASON_HARRYING_RESISTANCE"
-		$FACTION_TARGET$ = {
-			AND = {
-				any_owned_story = {
-					story_type = story_cycle_harrying_of_the_north
-					var:resistance > 7
-					var:resistance > var:pacification
-				}
-			}
-		}
-		add = {
-			value = 0
-			if = {
-				limit = { 
-					$FACTION_TARGET$ = { 
-						any_owned_story = {
-							story_type = story_cycle_harrying_of_the_north
-							var:resistance > 7
-						}
-					} 
-				}
-				add = 15
-			}
-			else_if = {
-				limit = { 
-					$FACTION_TARGET$ = { 
-						any_owned_story = {
-							story_type = story_cycle_harrying_of_the_north
-							var:resistance > 10
-						}
-					} 
-				}
-				add = 30
-			}
-			else_if = {
-				limit = { 
-					$FACTION_TARGET$ = { 
-						any_owned_story = {
-							story_type = story_cycle_harrying_of_the_north
-							var:resistance > 13
-						}
-					} 
-				}
-				add = 50
-			}
-			else_if = {
-				limit = { 
-					$FACTION_TARGET$ = { 
-						any_owned_story = {
-							story_type = story_cycle_harrying_of_the_north
-							var:resistance > 16
-						}
-					} 
-				}
-				add = 80
-			}
-		}
-	}
+	# modifier = {
+	# 	desc = "FACTION_REASON_HARRYING_RESISTANCE"
+	# 	$FACTION_TARGET$ = {
+	# 		AND = {
+	# 			any_owned_story = {
+	# 				story_type = story_cycle_harrying_of_the_north
+	# 				var:resistance > 7
+	# 				var:resistance > var:pacification
+	# 			}
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = 0
+	# 		if = {
+	# 			limit = { 
+	# 				$FACTION_TARGET$ = { 
+	# 					any_owned_story = {
+	# 						story_type = story_cycle_harrying_of_the_north
+	# 						var:resistance > 7
+	# 					}
+	# 				} 
+	# 			}
+	# 			add = 15
+	# 		}
+	# 		else_if = {
+	# 			limit = { 
+	# 				$FACTION_TARGET$ = { 
+	# 					any_owned_story = {
+	# 						story_type = story_cycle_harrying_of_the_north
+	# 						var:resistance > 10
+	# 					}
+	# 				} 
+	# 			}
+	# 			add = 30
+	# 		}
+	# 		else_if = {
+	# 			limit = { 
+	# 				$FACTION_TARGET$ = { 
+	# 					any_owned_story = {
+	# 						story_type = story_cycle_harrying_of_the_north
+	# 						var:resistance > 13
+	# 					}
+	# 				} 
+	# 			}
+	# 			add = 50
+	# 		}
+	# 		else_if = {
+	# 			limit = { 
+	# 				$FACTION_TARGET$ = { 
+	# 					any_owned_story = {
+	# 						story_type = story_cycle_harrying_of_the_north
+	# 						var:resistance > 16
+	# 					}
+	# 				} 
+	# 			}
+	# 			add = 80
+	# 		}
+	# 	}
+	# }
 
 	# L5R Disabled
 	# Decreases Claimant faction likelihood if Pacification is high
