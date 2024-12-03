@@ -3130,7 +3130,7 @@ martial_chivalry.5000 = {
 			end_scheme = yes
 		}
 		start_scheme = {
-			target = scope:spouse
+			target_character = scope:spouse
 			type = seduce
 		}
 		stress_impact = {

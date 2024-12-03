@@ -14796,7 +14796,7 @@ scripted_trigger hunt_4009_heir_trigger = {
 		has_any_good_relationship_with_root_trigger = no
 		can_start_scheme = {
 			type = murder
-			target = root
+			target_character = root
 		}
 	}
 }
@@ -15695,7 +15695,7 @@ scripted_trigger hunt_4010_heir_trigger = {
 			}
 			can_start_scheme = {
 				type = murder
-				target = root.player_heir
+				target_character = root.player_heir
 			}
 		}
 	}
@@ -15831,7 +15831,7 @@ hunt.4010 = {
 								}
 								can_start_scheme = {
 									type = murder
-									target = root.player_heir
+									target_character = root.player_heir
 								}
 								save_temporary_scope_as = murderer_temp
 							}

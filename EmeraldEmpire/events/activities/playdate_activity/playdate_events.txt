@@ -4214,12 +4214,12 @@ playdate.4001 = {
 				limit = {
 					can_start_scheme = {
 						type = learn_language
-						target = root
+						target_character = root
 					}
 				}
 				start_scheme = {
 					type = learn_language
-					target = root
+					target_character = root
 				}
 			}
 			custom_tooltip = diplomacy_family.2250.b.tt
@@ -4282,12 +4282,12 @@ playdate.4001 = {
 			limit = {
 				can_start_scheme = {
 					type = learn_language
-					target = scope:participant
+					target_character = scope:participant
 				}
 			}
 			start_scheme = {
 				type = learn_language
-				target = scope:participant
+				target_character = scope:participant
 			}
 			custom_tooltip = diplomacy_family.2250.b.tt
 			hidden_effect = {

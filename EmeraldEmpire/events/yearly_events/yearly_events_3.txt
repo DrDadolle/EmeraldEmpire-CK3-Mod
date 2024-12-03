@@ -2833,12 +2833,12 @@ yearly.3031 = {
 				if = {
 					limit = {
 						can_start_scheme = {
-							target = root
+							target_character = root
 							type = seduce
 						}
 					}
 					start_scheme = {
-						target = root
+						target_character = root
 						type = seduce
 					}
 				}

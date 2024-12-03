@@ -342,7 +342,7 @@ bp2_yearly.8000 = {
 				}
 				start_scheme = {
 					type = learn_language
-					target = scope:language_target
+					target_character = scope:language_target
 				}
 				random_scheme = {
 					limit = {
@@ -409,7 +409,7 @@ bp2_yearly.8000 = {
 			scope:hostage = {
 				start_scheme = {
 					type = learn_language
-					target = scope:language_target
+					target_character = scope:language_target
 				}
 			}
 		}
@@ -446,7 +446,7 @@ scripted_trigger bp2_yearly_8010_valid_child = {
 	NOT = { knows_language_of_culture = root.culture }
 	can_start_scheme = {
 		type = learn_language
-		target = root
+		target_character = root
 	}
 	# DOES speak liege's language
 	knows_court_language_of = scope:my_liege
@@ -574,7 +574,7 @@ bp2_yearly.8010 = {
 							}
 							start_scheme = {
 								type = learn_language
-								target = root
+								target_character = root
 							}
 							random_scheme = {
 								limit = {
@@ -1737,7 +1737,7 @@ bp2_yearly.8043 = {
 			}
 			start_scheme = {
 				type = courting
-				target = scope:crush
+				target_character = scope:crush
 			}
 			custom_tooltip = learn_language_with_bonus_tt
 			hidden_effect = {
@@ -1753,7 +1753,7 @@ bp2_yearly.8043 = {
 		else = {
 			start_scheme = {
 				type = seduce
-				target = scope:crush
+				target_character = scope:crush
 			}
 			custom_tooltip = learn_language_with_bonus_tt
 			hidden_effect = {

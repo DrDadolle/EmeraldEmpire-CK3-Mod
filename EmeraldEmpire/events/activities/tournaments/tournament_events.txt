@@ -2148,12 +2148,12 @@ tournament_events.1100 = { # Start - Alone
 			is_attracted_to_gender_of = scope:pas_darmes_instigator
 			can_start_scheme = {
 				type = seduce
-				target = scope:pas_darmes_instigator
+				target_character = scope:pas_darmes_instigator
 			}
 		}
 		start_scheme = {
 			type = seduce
-			target = scope:pas_darmes_instigator
+			target_character = scope:pas_darmes_instigator
 		}
 		random_scheme ={
 			limit = {

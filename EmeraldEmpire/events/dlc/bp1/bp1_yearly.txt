@@ -2950,7 +2950,7 @@ bp1_yearly.5704 = {
 
 		start_scheme = {
 			type = seduce
-			target = scope:seduced_rival
+			target_character = scope:seduced_rival
 		}
 
 		random_scheme = {
@@ -3308,7 +3308,7 @@ bp1_yearly.5706 = {
 
 		start_scheme = {
 			type = seduce
-			target = scope:rival_child
+			target_character = scope:rival_child
 		}
 
 		custom_tooltip = bp1_yearly.5706.a.tt
@@ -11864,7 +11864,7 @@ bp1_yearly.8110 = {
 scripted_effect bp1_yearly_sycophant_start_seduce_effect = {
 	start_scheme = {
 		type = seduce
-		target = scope:sycophant_scope
+		target_character = scope:sycophant_scope
 	}
 	hidden_effect = {
 		random_scheme = {
@@ -11967,7 +11967,7 @@ bp1_yearly.8120 = {
 				can_set_relation_lover_trigger = { CHARACTER = scope:story.var:sycophant_character }
 				can_start_scheme = {
 					type = seduce
-					target = scope:story.var:sycophant_character
+					target_character = scope:story.var:sycophant_character
 				}
 			}
 			AND = {
@@ -12366,7 +12366,7 @@ bp1_yearly.8121 = {
 		can_set_relation_lover_trigger = { CHARACTER = scope:sycophant_scope }
 		can_start_scheme = {
 			type = seduce
-			target = scope:sycophant_scope
+			target_character = scope:sycophant_scope
 		}
 	}
 
@@ -12465,7 +12465,7 @@ bp1_yearly.8130 = {
 					type = murder
 				}
 				can_start_scheme = {
-					target = scope:story.var:sycophant_character
+					target_character = scope:story.var:sycophant_character
 					type = murder
 				}
 			}
@@ -12525,7 +12525,7 @@ bp1_yearly.8130 = {
 						type = murder
 					}
 					can_start_scheme = {
-						target = scope:sycophant_scope
+						target_character = scope:sycophant_scope
 						type = murder
 					}
 				}
@@ -12551,7 +12551,7 @@ bp1_yearly.8130 = {
 				hidden_effect = {
 					start_scheme = {
 						type = murder
-						target = scope:sycophant_scope
+						target_character = scope:sycophant_scope
 					}
 				}
 			}
@@ -13328,7 +13328,7 @@ bp1_yearly.8140 = {
 					type = murder
 				}
 				can_start_scheme = {
-					target = scope:story.var:jealous_character
+					target_character = scope:story.var:jealous_character
 					type = murder
 				}
 			}
@@ -13350,7 +13350,7 @@ bp1_yearly.8140 = {
 				hidden_effect = {
 					start_scheme = {
 						type = murder
-						target = scope:jealous_scope
+						target_character = scope:jealous_scope
 					}
 				}
 			}

@@ -428,12 +428,12 @@ diplomacy_majesty.0016 = {
 		if = {
 			limit = {
 				can_start_scheme = {
-					target = scope:potential_friend
+					target_character = scope:potential_friend
 					type = befriend
 				}
 			}
 			start_scheme = {
-				target = scope:potential_friend
+				target_character = scope:potential_friend
 				type = befriend
 			}
 			custom_tooltip = diplomacy_majesty.0016.a.tt

@@ -2579,7 +2579,7 @@ travel_events.3030 = {
 		}
 		start_scheme = {
 			type = courting
-			target = scope:foreign_lady_scope
+			target_character = scope:foreign_lady_scope
 		}
 		stress_impact = {
 			compassionate = medium_stress_impact_gain

@@ -33,7 +33,7 @@ murder_scheme_maintenance.1 = {
 			list = murder_targets
 			root = {
 				can_start_scheme = {
-					target = prev
+					target_character = prev
 					type = murder
 				}
 			}
@@ -67,7 +67,7 @@ murder_scheme_maintenance.1 = {
 			limit = {
 				root = {
 					can_start_scheme = {
-						target = prev
+						target_character = prev
 						type = murder
 					}
 				}
@@ -422,7 +422,7 @@ murder_scheme_maintenance.1 = {
 				root = {
 					start_scheme = {
 						type = murder
-						target = prev
+						target_character = prev
 					}
 				}
 			}

@@ -635,12 +635,12 @@ scripted_trigger yearly_4011_vassal_trigger = {
 	OR = {
 		can_start_scheme = {
 			type = murder
-			target = root
+			target_character = root
 		}
 		root.player_heir = {
 			can_start_scheme = {
 				type = murder
-				target = root
+				target_character = root
 			}
 		}
 	}
@@ -665,13 +665,13 @@ scripted_trigger yearly_4011_potential_plot_conditions_trigger = {
 		scope:heir = {
 			can_start_scheme = {
 				type = murder
-				target = root
+				target_character = root
 			}
 		}
 		scope:vassal = {
 			can_start_scheme = {
 				type = murder
-				target = root
+				target_character = root
 			}
 		}
 	}
@@ -1134,14 +1134,14 @@ yearly.4014 = {
 				scope:vassal = {
 					can_start_scheme = {
 						type = murder
-						target = root
+						target_character = root
 					}
 				}
 			}
 			scope:vassal = {
 				start_scheme = {
 					type = murder
-					target = root
+					target_character = root
 				}
 				random_scheme = {
 					limit = {
@@ -1171,14 +1171,14 @@ yearly.4014 = {
 				scope:heir = {
 					can_start_scheme = {
 						type = murder
-						target = root
+						target_character = root
 					}
 				}
 			}
 			scope:heir = {
 				start_scheme = {
 					type = murder
-					target = root
+					target_character = root
 				}
 				random_scheme = {
 					limit = {

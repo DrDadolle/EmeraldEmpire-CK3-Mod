@@ -3936,7 +3936,7 @@ bp1_yearly.9023 = {
 		name = bp1_yearly.9023.b
 		start_scheme = {
 			type = learn_language
-			target = scope:bp1_yearly_9023_friend
+			target_character = scope:bp1_yearly_9023_friend
 		}
 		stress_impact = {
 			lazy = major_stress_impact_gain
@@ -3970,7 +3970,7 @@ bp1_yearly.9023 = {
 				scope:bp1_yearly_9023_friend = {
 					start_scheme = {
 						type = learn_language
-						target = root
+						target_character = root
 					}
 				}
 			}

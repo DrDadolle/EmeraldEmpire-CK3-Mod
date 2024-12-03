@@ -7101,12 +7101,12 @@ ep2_wedding.1180 = {
 			limit = {
 				can_start_scheme = {
 					type = seduce
-					target = scope:other_spouse
+					target_character = scope:other_spouse
 				}
 			}
 			start_scheme = {
 				type = seduce
-				target = scope:other_spouse
+				target_character = scope:other_spouse
 			}
 		}
 		else_if = {		
@@ -20685,11 +20685,11 @@ ep2_wedding.3410 = {
 			}
 			can_start_scheme = {
 				type = murder
-				target = scope:jealousy_usurper
+				target_character = scope:jealousy_usurper
 			}
 		}
 		start_scheme = {
-			target = scope:jealousy_usurper
+			target_character = scope:jealousy_usurper
 			type = murder
 		}
 		random_scheme = {
