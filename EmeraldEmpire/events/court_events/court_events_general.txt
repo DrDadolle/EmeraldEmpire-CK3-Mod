@@ -22101,14 +22101,15 @@ court.8040 = {
 				add = 15
 				has_trait = lifestyle_blademaster
 			}
-			modifier = {	#Weight up for stress.
-				add = 15
-				has_trait = viking
-			}
-			modifier = {	#Weight up for stress.
-				add = 15
-				has_trait = varangian
-			}
+			#L5R Disabled
+			# modifier = {	#Weight up for stress.
+			# 	add = 15
+			# 	has_trait = viking
+			# }
+			# modifier = {	#Weight up for stress.
+			# 	add = 15
+			# 	has_trait = varangian
+			# }
 			modifier = {	#Weight up for stress.
 				add = 15
 				has_trait = berserker

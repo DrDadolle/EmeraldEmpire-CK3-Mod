@@ -6008,7 +6008,7 @@ scripted_trigger diarchy_2211_valid_pool_character_trigger = {
 			OR = {
 				has_trait = berserker
 				has_trait = shieldmaiden
-				has_trait = varangian
+				# has_trait = varangian  #L5R Disabled
 				has_trait = lifestyle_blademaster
 				number_of_commander_traits >= 1
 			}

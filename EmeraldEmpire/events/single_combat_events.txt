@@ -618,64 +618,66 @@ scripted_effect select_special_tier_move_effect = {
 			}
 		}
 		## Butchery
-		2000 = {
-			trigger = {
-				NOT = { exists = local_var:combat_move_butchery_flag }
-				has_trait = viking
-				# Block special moves twice in a row.
-				NOR = {
-					AND = {
-						exists = scope:sc_defender_last_move
-						this = scope:sc_defender
-						scope:sc_defender_last_move = flag:butchery
-					}
-					AND = {
-						exists = scope:sc_attacker_last_move
-						this = scope:sc_attacker
-						scope:sc_attacker_last_move = flag:butchery
-					}
-				}
-			}
-			set_local_variable = {
-				name = combat_move_butchery_flag
-				value = yes
-			}
-		}
+		#L5R Disabled
+		# 2000 = {
+		# 	trigger = {
+		# 		NOT = { exists = local_var:combat_move_butchery_flag }
+		# 		has_trait = viking
+		# 		# Block special moves twice in a row.
+		# 		NOR = {
+		# 			AND = {
+		# 				exists = scope:sc_defender_last_move
+		# 				this = scope:sc_defender
+		# 				scope:sc_defender_last_move = flag:butchery
+		# 			}
+		# 			AND = {
+		# 				exists = scope:sc_attacker_last_move
+		# 				this = scope:sc_attacker
+		# 				scope:sc_attacker_last_move = flag:butchery
+		# 			}
+		# 		}
+		# 	}
+		# 	set_local_variable = {
+		# 		name = combat_move_butchery_flag
+		# 		value = yes
+		# 	}
+		# }
+		#L5R Disabled
 		## Stoic Veteran
-		2000 = {
-			trigger = {
-				NOT = { exists = local_var:combat_move_stoic_veteran_flag }
-				has_trait = varangian
-				# Can't use the Varangian trait against the Eastern Roman Emperor, as that's just not cricket.
-				# NOR = {
-				# 	AND = {
-				# 		this = scope:sc_defender
-				# 		scope:sc_attacker = { has_title = title:e_byzantium }
-				# 	}
-				# 	AND = {
-				# 		this = scope:sc_attacker
-				# 		scope:sc_defender = { has_title = title:e_byzantium }
-				# 	}
-				# }
-				# Block special moves twice in a row.
-				NOR = {
-					AND = {
-						exists = scope:sc_defender_last_move
-						this = scope:sc_defender
-						scope:sc_defender_last_move = flag:stoic_veteran
-					}
-					AND = {
-						exists = scope:sc_attacker_last_move
-						this = scope:sc_attacker
-						scope:sc_attacker_last_move = flag:stoic_veteran
-					}
-				}
-			}
-			set_local_variable = {
-				name = combat_move_stoic_veteran_flag
-				value = yes
-			}
-		}
+		# 2000 = {
+		# 	trigger = {
+		# 		NOT = { exists = local_var:combat_move_stoic_veteran_flag }
+		# 		has_trait = varangian
+		# 		# Can't use the Varangian trait against the Eastern Roman Emperor, as that's just not cricket.
+		# 		# NOR = {
+		# 		# 	AND = {
+		# 		# 		this = scope:sc_defender
+		# 		# 		scope:sc_attacker = { has_title = title:e_byzantium }
+		# 		# 	}
+		# 		# 	AND = {
+		# 		# 		this = scope:sc_attacker
+		# 		# 		scope:sc_defender = { has_title = title:e_byzantium }
+		# 		# 	}
+		# 		# }
+		# 		# Block special moves twice in a row.
+		# 		NOR = {
+		# 			AND = {
+		# 				exists = scope:sc_defender_last_move
+		# 				this = scope:sc_defender
+		# 				scope:sc_defender_last_move = flag:stoic_veteran
+		# 			}
+		# 			AND = {
+		# 				exists = scope:sc_attacker_last_move
+		# 				this = scope:sc_attacker
+		# 				scope:sc_attacker_last_move = flag:stoic_veteran
+		# 			}
+		# 		}
+		# 	}
+		# 	set_local_variable = {
+		# 		name = combat_move_stoic_veteran_flag
+		# 		value = yes
+		# 	}
+		# }
 		## Blade Dance
 		2000 = {
 			trigger = {
@@ -7740,46 +7742,48 @@ single_combat.0001 = {
 	}
 
 	#Stoic Veteran
-	option = {
-		name = {
-			trigger = {
-				NOT = {
-					scope:my_foe = { has_trait = varangian }
-				}
-			}
-			text = single_combat.0001.stoic_veteran.general
-		}
-		name = {
-			trigger = {
-				scope:my_foe = { has_trait = varangian }
-			}
-			text = single_combat.0001.stoic_veteran.other_varangian
-		}
-		trigger = { exists = local_var:combat_move_stoic_veteran_flag }
+	#L5R Disabled
+	# option = {
+	# 	name = {
+	# 		trigger = {
+	# 			always = yes
+	# 			NOT = {
+	# 				scope:my_foe = { has_trait = varangian }
+	# 			}
+	# 		}
+	# 		text = single_combat.0001.stoic_veteran.general
+	# 	}
+	# 	name = {
+	# 		trigger = {
+	# 			scope:my_foe = { has_trait = varangian }
+	# 		}
+	# 		text = single_combat.0001.stoic_veteran.other_varangian
+	# 	}
+	# 	trigger = { exists = local_var:combat_move_stoic_veteran_flag }
 
-		#Move clarification
-		custom_tooltip = single_combat.0001.tt.stoic_veteran
+	# 	#Move clarification
+	# 	custom_tooltip = single_combat.0001.tt.stoic_veteran
 
-		#Spawn Info
-		trait = varangian
+	# 	#Spawn Info
+	# 	trait = varangian
 
-		#Move effects
-		## First, we show the move's effects with no guff.
-		show_as_tooltip = { combat_move_stoic_veteran_effect = yes }
-		## Then, we check to make sure if scope:my_foe is still around to suffer the effects. This prevents errors if they die mid-combat.
-		if = {
-			limit = {
-				scope:my_foe = { is_alive = yes }
-			}
-			hidden_effect = { combat_move_stoic_veteran_effect = yes }
-		}
+	# 	#Move effects
+	# 	## First, we show the move's effects with no guff.
+	# 	show_as_tooltip = { combat_move_stoic_veteran_effect = yes }
+	# 	## Then, we check to make sure if scope:my_foe is still around to suffer the effects. This prevents errors if they die mid-combat.
+	# 	if = {
+	# 		limit = {
+	# 			scope:my_foe = { is_alive = yes }
+	# 		}
+	# 		hidden_effect = { combat_move_stoic_veteran_effect = yes }
+	# 	}
 
-		# Loc here implies stoic professionalism, so doesn't seem fair to apply stress over that.
-		ai_chance = {
-			base = 100
-			sce_preferred_shrewd_fighter_scripted_modifier = yes
-		}
-	}
+	# 	# Loc here implies stoic professionalism, so doesn't seem fair to apply stress over that.
+	# 	ai_chance = {
+	# 		base = 100
+	# 		sce_preferred_shrewd_fighter_scripted_modifier = yes
+	# 	}
+	# }
 
 	#Blade Dance
 	option = {

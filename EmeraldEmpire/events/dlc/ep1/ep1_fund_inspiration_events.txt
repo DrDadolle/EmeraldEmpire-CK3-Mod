@@ -13811,9 +13811,10 @@ fund_inspiration.2131 = {
 						has_lifestyle = martial_lifestyle
 						martial >= decent_skill_rating
 						prowess >= decent_skill_rating
-						has_trait = viking
+						#L5R Disabled
+						# has_trait = viking
 						has_trait = faith_warrior
-						has_trait = crusader_king
+						# has_trait = crusader_king
 						has_trait = lifestyle_blademaster
 				 		has_trait = lifestyle_hunter
 						has_trait = berserker

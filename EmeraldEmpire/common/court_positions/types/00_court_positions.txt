@@ -8061,20 +8061,21 @@ bodyguard_court_position = {
 			}
 		}
 		add = court_position_aptitude_traveling_friends_value
-		if = {
-			limit = {
-				has_trait = varangian
-				employer ?= {
-					has_title = title:e_byzantium
-					employs_court_position = akolouthos_court_position
-				}
-			}
-			add = {
-				value = 5
-				multiply = employer.court_position:akolouthos_court_position.aptitude:akolouthos_court_position
-				desc = court_position_akolouthos_bonus
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		has_trait = varangian
+		# 		employer ?= {
+		# 			has_title = title:e_byzantium
+		# 			employs_court_position = akolouthos_court_position
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 5
+		# 		multiply = employer.court_position:akolouthos_court_position.aptitude:akolouthos_court_position
+		# 		desc = court_position_akolouthos_bonus
+		# 	}
+		# }
 		if = {
 			limit = {
 				employer ?= {

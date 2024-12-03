@@ -13392,81 +13392,83 @@ governor = {
 # 	ai_honor = -10
 # }
 
+#L5R Disabled
 #EL CID TRAIT
-campeador = {
-	category = fame
-	shown_in_ruler_designer = no
+# campeador = {
+# 	category = fame
+# 	shown_in_ruler_designer = no
 
-	martial = 2
-	prowess = 4
+# 	martial = 2
+# 	prowess = 4
 
-	monthly_prestige = 0.2
+# 	monthly_prestige = 0.2
 
-	culture_modifier = {
-		parameter = prowess_traits_more_valued
-		same_culture_opinion = 4
-		monthly_prestige = 0.2
-	}
+# 	culture_modifier = {
+# 		parameter = prowess_traits_more_valued
+# 		same_culture_opinion = 4
+# 		monthly_prestige = 0.2
+# 	}
 
-	icon = campeador.dds
+# 	icon = campeador.dds
 
-	name =  trait_campeador
+# 	name =  trait_campeador
 
-	desc = trait_campeador_desc
+# 	desc = trait_campeador_desc
 	
-	ai_honor = 20
-}
+# 	ai_honor = 20
+# }
 
+#L5R Disabled
 # Wallada's unique trait: Violet Poet
-violet_poet = {
-	category = fame
-	icon = violet_poet.dds
-	shown_in_ruler_designer = no 
+# violet_poet = {
+# 	category = fame
+# 	icon = violet_poet.dds
+# 	shown_in_ruler_designer = no 
 
-	attraction_opinion = 10
-	seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+# 	attraction_opinion = 10
+# 	seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
 
-	culture_modifier = {
-		parameter = poet_trait_gives_bonuses
-		monthly_prestige_gain_mult = 0.05
-		owned_personal_scheme_success_chance_add = 10
-	}
+# 	culture_modifier = {
+# 		parameter = poet_trait_gives_bonuses
+# 		monthly_prestige_gain_mult = 0.05
+# 		owned_personal_scheme_success_chance_add = 10
+# 	}
 
-	culture_modifier = {
-		parameter = poet_trait_romance_bonuses
-		attraction_opinion = 15
-		courting_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-	}
+# 	culture_modifier = {
+# 		parameter = poet_trait_romance_bonuses
+# 		attraction_opinion = 15
+# 		courting_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+# 	}
 	
-	track = {
-		33 = { #Celebrated
-			attraction_opinion = 10
-			diplomacy_per_prestige_level = 1
-			seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-			courting_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-		}
-		66 = { #Distinguished
-			attraction_opinion = 10
-			intrigue_per_prestige_level = 1
-			seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-			courting_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-		}
-		100 = { #Laureate
-			attraction_opinion = 20
-			learning_per_prestige_level = 1
-			seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-			courting_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-		}
-	}
+# 	track = {
+# 		33 = { #Celebrated
+# 			attraction_opinion = 10
+# 			diplomacy_per_prestige_level = 1
+# 			seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+# 			courting_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+# 		}
+# 		66 = { #Distinguished
+# 			attraction_opinion = 10
+# 			intrigue_per_prestige_level = 1
+# 			seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+# 			courting_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+# 		}
+# 		100 = { #Laureate
+# 			attraction_opinion = 20
+# 			learning_per_prestige_level = 1
+# 			seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+# 			courting_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+# 		}
+# 	}
 
-	# AI Values
-	ai_energy = 10
-	ai_sociability = 10
+# 	# AI Values
+# 	ai_energy = 10
+# 	ai_sociability = 10
 
-	# Loc
-	name = trait_violet_poet
-	desc = trait_violet_poet_desc
-}
+# 	# Loc
+# 	name = trait_violet_poet
+# 	desc = trait_violet_poet_desc
+# }
 
 # The Knight of the Swan
 knight_errant = {

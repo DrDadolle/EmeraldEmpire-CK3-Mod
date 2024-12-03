@@ -1055,13 +1055,14 @@ HeirMessageInterface = {
 			NOT = { government_has_flag = government_is_theocracy }
 		}
 	}
-	text = {
-		localization_key = SUCCESSION_EVENT_WINDOW_HEIR_TRAIT_VARANGIAN
-		trigger = {
-			is_adult = yes
-			has_trait = varangian
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = SUCCESSION_EVENT_WINDOW_HEIR_TRAIT_VARANGIAN
+	# 	trigger = {
+	# 		is_adult = yes
+	# 		has_trait = varangian
+	# 	}
+	# }
 	text = {
 		localization_key = SUCCESSION_EVENT_WINDOW_HEIR_TRAIT_LUNATIC
 		trigger = {
@@ -1729,13 +1730,14 @@ HeirMessageInterface = {
 			}
 		}
 	}
-	text = {
-		localization_key = SUCCESSION_EVENT_WINDOW_HEIR_VIKING
-		trigger = {
-			is_adult = yes
-			has_trait = viking
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = SUCCESSION_EVENT_WINDOW_HEIR_VIKING
+	# 	trigger = {
+	# 		is_adult = yes
+	# 		has_trait = viking
+	# 	}
+	# }
 	text = {
 		localization_key = SUCCESSION_EVENT_WINDOW_HEIR_CRUSADER
 		trigger = {

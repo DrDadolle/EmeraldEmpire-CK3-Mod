@@ -2710,18 +2710,19 @@ assign_random_nickname_effect = {
 				flag_random_nickname_as_taken_in_batch_effect = { NICK = nick_the_joyless }
 				trigger_event = lifestyle_nicknames.1000
 			}
-			100 = {
-				trigger = {
-					has_trait = viking
-					martial >= 10
-					prowess >= 10
-					NOT = { exists = scope:had_nick_the_viking }
-				}
-				give_nickname = nick_the_viking
-				# Flag this as having been spat out already, in case we're applying several nicknames in quick succession.
-				flag_random_nickname_as_taken_in_batch_effect = { NICK = nick_the_viking }
-				trigger_event = lifestyle_nicknames.1000
-			}
+			#L5R Disabled
+			# 100 = {
+			# 	trigger = {
+			# 		has_trait = viking
+			# 		martial >= 10
+			# 		prowess >= 10
+			# 		NOT = { exists = scope:had_nick_the_viking }
+			# 	}
+			# 	give_nickname = nick_the_viking
+			# 	# Flag this as having been spat out already, in case we're applying several nicknames in quick succession.
+			# 	flag_random_nickname_as_taken_in_batch_effect = { NICK = nick_the_viking }
+			# 	trigger_event = lifestyle_nicknames.1000
+			# }
 			100 = {
 				trigger = {
 					culture = { has_cultural_tradition = tradition_horse_lords }

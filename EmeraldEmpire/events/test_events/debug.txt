@@ -2886,66 +2886,66 @@ debug.605 = {
 }
 
 #steam rich presence test - update this event with your new rich presence text to see it in the desc
-debug.700 = {
-	type = character_event
-	title = steam_rich_presence_debug_t
-	desc = steam_rich_presence_debug_desc
-	theme = realm
-	orphan = yes
+# debug.700 = {
+# 	type = character_event
+# 	title = steam_rich_presence_debug_t
+# 	desc = steam_rich_presence_debug_desc
+# 	theme = realm
+# 	orphan = yes
 
-	immediate = {
-		random_ruler = {
-			limit = {
-				has_trait = sayyid
-				NOR = {
-					has_trait = fp3_struggle_detractor
-					has_trait = fp3_struggle_supporter
-				}
-			}
-			save_scope_as = sayyid
-		}
-		random_ruler = {
-			limit = {
-				has_trait = fp3_struggle_detractor
-				NOT = { has_trait = fp3_struggle_supporter }
-			}
-			save_scope_as = fp3_struggle_detractor
-		}
-				random_ruler = {
-			limit = {
-				has_trait = fp3_struggle_supporter
-				NOT = { has_trait = fp3_struggle_detractor }
-			}
-			save_scope_as = fp3_struggle_supporter
-		}
-		random_ruler = {
-			limit = {
-				has_character_modifier = fp3_struggle_caliph_super_suspicious_modifier
-			}
-			save_scope_as = sus_caliph
-		}
-		random_ruler = {
-			limit = {
-				any_character_struggle = {
-					#involvement = involved
-			 		is_struggle_type = persian_struggle
-				}
-			}
-			save_scope_as = persian_struggle
-		}
-		random_ruler = {
-			limit = {
-				any_character_struggle = {
-					#involvement = involved
-			 		is_struggle_type = iberian_struggle
-				}
-			}
-			save_scope_as = iberian_struggle
-		}
-	}
+# 	immediate = {
+# 		random_ruler = {
+# 			limit = {
+# 				has_trait = sayyid
+# 				NOR = {
+# 					has_trait = fp3_struggle_detractor
+# 					has_trait = fp3_struggle_supporter
+# 				}
+# 			}
+# 			save_scope_as = sayyid
+# 		}
+# 		random_ruler = {
+# 			limit = {
+# 				has_trait = fp3_struggle_detractor
+# 				NOT = { has_trait = fp3_struggle_supporter }
+# 			}
+# 			save_scope_as = fp3_struggle_detractor
+# 		}
+# 		random_ruler = {
+# 			limit = {
+# 				has_trait = fp3_struggle_supporter
+# 				NOT = { has_trait = fp3_struggle_detractor }
+# 			}
+# 			save_scope_as = fp3_struggle_supporter
+# 		}
+# 		random_ruler = {
+# 			limit = {
+# 				has_character_modifier = fp3_struggle_caliph_super_suspicious_modifier
+# 			}
+# 			save_scope_as = sus_caliph
+# 		}
+# 		random_ruler = {
+# 			limit = {
+# 				any_character_struggle = {
+# 					#involvement = involved
+# 			 		is_struggle_type = persian_struggle
+# 				}
+# 			}
+# 			save_scope_as = persian_struggle
+# 		}
+# 		random_ruler = {
+# 			limit = {
+# 				any_character_struggle = {
+# 					#involvement = involved
+# 			 		is_struggle_type = iberian_struggle
+# 				}
+# 			}
+# 			save_scope_as = iberian_struggle
+# 		}
+# 	}
 
-	option = {}
-}
+# 	option = {}
+# }
 
 debug.9595 = {
 	type = character_event

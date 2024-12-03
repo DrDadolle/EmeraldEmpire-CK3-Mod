@@ -3719,7 +3719,7 @@ norse_gods_aspects_list = {
 			if = {
 				limit = {
 					OR = {
-						has_trait = viking
+						# has_trait = viking #L5R Disabled
 						has_trait = greedy
 						has_trait = adventurer
 					}
@@ -3739,7 +3739,7 @@ norse_gods_aspects_list = {
 			if = {
 				limit = {
 					OR = {
-						has_trait = viking
+						# has_trait = viking #L5R Disabled
 						has_trait = greedy
 						has_trait = adventurer
 					}

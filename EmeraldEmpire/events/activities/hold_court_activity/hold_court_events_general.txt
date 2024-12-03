@@ -26592,14 +26592,16 @@ hold_court.8030 = {
 				add = 15
 				has_trait = lifestyle_blademaster
 			}
-			modifier = {	#Weight up for stress.
-				add = 15
-				has_trait = viking
-			}
-			modifier = {	#Weight up for stress.
-				add = 15
-				has_trait = varangian
-			}
+			#L5R Disabled
+			# modifier = {	#Weight up for stress.
+			# 	add = 15
+			# 	has_trait = viking
+			# }
+			#L5R Disabled
+			# modifier = {	#Weight up for stress.
+			# 	add = 15
+			# 	has_trait = varangian
+			# }
 			modifier = {	#Weight up for stress.
 				add = 15
 				has_trait = berserker
@@ -36268,14 +36270,16 @@ hold_court.8170 = {
 				add = 15
 				has_trait = lifestyle_blademaster
 			}
-			modifier = {	#Weight up for stress.
-				add = 15
-				has_trait = viking
-			}
-			modifier = {	#Weight up for stress.
-				add = 15
-				has_trait = varangian
-			}
+			#L5R Disabled
+			# modifier = {	#Weight up for stress.
+			# 	add = 15
+			# 	has_trait = viking
+			# }
+			#L5R Disabled
+			# modifier = {	#Weight up for stress.
+			# 	add = 15
+			# 	has_trait = varangian
+			# }
 			modifier = {	#Weight up for stress.
 				add = 15
 				has_trait = berserker
@@ -40122,8 +40126,9 @@ hold_court.8220 = {
 				modifier = {
 					factor = 2
 					OR = {
-						has_trait = viking
-						has_trait = varangian
+						#L5R Disabled
+						# has_trait = viking
+						# has_trait = varangian
 						has_trait = berserker
 						has_trait = shieldmaiden
 						has_trait = lifestyle_blademaster
@@ -40152,8 +40157,9 @@ hold_court.8220 = {
 					factor = 2
 					scope:assassin = {
 						OR = {
-							has_trait = viking
-							has_trait = varangian
+							#L5R Disabled
+							# has_trait = viking
+							# has_trait = varangian
 							has_trait = berserker
 							has_trait = shieldmaiden
 							has_trait = lifestyle_blademaster
@@ -40182,8 +40188,9 @@ hold_court.8220 = {
 					factor = 2
 					scope:assassin = {
 						OR = {
-							has_trait = viking
-							has_trait = varangian
+							#L5R Disabled
+							# has_trait = viking
+							# has_trait = varangian
 							has_trait = berserker
 							has_trait = shieldmaiden
 							has_trait = lifestyle_blademaster

@@ -482,198 +482,199 @@ fp3_struggle_apply_independent_vassalage_catalyst_effect = {
 }
 
 fp3_struggle_apply_supporter_detractor_war_won_catalysts_effect = {
+		#L5R Disabled
 	# During the Persian Struggle, a supporter wins any war in the region.
 	## Unfair wars.
-	if = {
-		limit = {
-			has_trait = fp3_struggle_supporter
-			# Scope:attacker won?
-			trigger_if = {
-				limit = {
-					scope:winner = scope:attacker
-					exists = scope:war.var:struggle_defender_tier
-				}
-				highest_held_title_tier > scope:war.var:struggle_defender_tier
-			}
-			# Else, scope:defender won.
-			trigger_if = {
-				limit = {
-					scope:winner = scope:defender
-					exists = scope:war.var:struggle_attacker_tier
-				}
-				highest_held_title_tier > scope:war.var:struggle_attacker_tier
-			}
-			any_character_struggle = {
-				involvement = involved
-				activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
-					CATALYST = catalyst_supporter_win_unfair_war_within_the_region
-					VAR_SCOPE = scope:war
-					INVOLVEMENT = involved
-				}
-			}
-		}
-		every_character_struggle = {
-			involvement = involved
-			limit = {
-				activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
-					CATALYST = catalyst_supporter_win_unfair_war_within_the_region
-					VAR_SCOPE = scope:war
-					INVOLVEMENT = involved
-				}
-			}
-			activate_struggle_catalyst = {
-				catalyst = catalyst_supporter_win_unfair_war_within_the_region
-				character = scope:winner
-			}
-			scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
-			log_debug_variable_for_persian_struggle_effect = { VAR = stabil_catalyst_supporter_win_unfair_war_within_the_region }
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		has_trait = fp3_struggle_supporter
+	# 		# Scope:attacker won?
+	# 		trigger_if = {
+	# 			limit = {
+	# 				scope:winner = scope:attacker
+	# 				exists = scope:war.var:struggle_defender_tier
+	# 			}
+	# 			highest_held_title_tier > scope:war.var:struggle_defender_tier
+	# 		}
+	# 		# Else, scope:defender won.
+	# 		trigger_if = {
+	# 			limit = {
+	# 				scope:winner = scope:defender
+	# 				exists = scope:war.var:struggle_attacker_tier
+	# 			}
+	# 			highest_held_title_tier > scope:war.var:struggle_attacker_tier
+	# 		}
+	# 		any_character_struggle = {
+	# 			involvement = involved
+	# 			activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
+	# 				CATALYST = catalyst_supporter_win_unfair_war_within_the_region
+	# 				VAR_SCOPE = scope:war
+	# 				INVOLVEMENT = involved
+	# 			}
+	# 		}
+	# 	}
+	# 	every_character_struggle = {
+	# 		involvement = involved
+	# 		limit = {
+	# 			activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
+	# 				CATALYST = catalyst_supporter_win_unfair_war_within_the_region
+	# 				VAR_SCOPE = scope:war
+	# 				INVOLVEMENT = involved
+	# 			}
+	# 		}
+	# 		activate_struggle_catalyst = {
+	# 			catalyst = catalyst_supporter_win_unfair_war_within_the_region
+	# 			character = scope:winner
+	# 		}
+	# 		scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
+	# 		log_debug_variable_for_persian_struggle_effect = { VAR = stabil_catalyst_supporter_win_unfair_war_within_the_region }
+	# 	}
+	# }
 	## Fair wars.
-	else_if = {
-		limit = {
-			has_trait = fp3_struggle_supporter
-			# Scope:attacker won?
-			trigger_if = {
-				limit = {
-					scope:winner = scope:attacker
-					exists = scope:war.var:struggle_defender_tier
-				}
-				highest_held_title_tier > scope:war.var:struggle_defender_tier
-			}
-			# Else, scope:defender won.
-			trigger_if = {
-				limit = {
-					scope:winner = scope:defender
-					exists = scope:war.var:struggle_attacker_tier
-				}
-				highest_held_title_tier > scope:war.var:struggle_attacker_tier
-			}
-			scope:war = {
-				NOT = { has_variable = used_for_struggle_catalyst_on_war_ended }
-			}
-			any_character_struggle = {
-				involvement = involved
-				activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
-					CATALYST = catalyst_supporter_win_fair_war_within_the_region
-					VAR_SCOPE = scope:war
-					INVOLVEMENT = involved
-				}
-			}
-		}
-		every_character_struggle = {
-			involvement = involved
-			limit = {
-				activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
-					CATALYST = catalyst_supporter_win_fair_war_within_the_region
-					VAR_SCOPE = scope:war
-					INVOLVEMENT = involved
-				}
-			}
-			activate_struggle_catalyst = {
-				catalyst = catalyst_supporter_win_fair_war_within_the_region
-				character = scope:winner
-			}
-			scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
-			log_debug_variable_for_persian_struggle_effect = { VAR = stabil_catalyst_supporter_win_fair_war_within_the_region }
-		}
-	}
+	# else_if = {
+	# 	limit = {
+	# 		has_trait = fp3_struggle_supporter
+	# 		# Scope:attacker won?
+	# 		trigger_if = {
+	# 			limit = {
+	# 				scope:winner = scope:attacker
+	# 				exists = scope:war.var:struggle_defender_tier
+	# 			}
+	# 			highest_held_title_tier > scope:war.var:struggle_defender_tier
+	# 		}
+	# 		# Else, scope:defender won.
+	# 		trigger_if = {
+	# 			limit = {
+	# 				scope:winner = scope:defender
+	# 				exists = scope:war.var:struggle_attacker_tier
+	# 			}
+	# 			highest_held_title_tier > scope:war.var:struggle_attacker_tier
+	# 		}
+	# 		scope:war = {
+	# 			NOT = { has_variable = used_for_struggle_catalyst_on_war_ended }
+	# 		}
+	# 		any_character_struggle = {
+	# 			involvement = involved
+	# 			activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
+	# 				CATALYST = catalyst_supporter_win_fair_war_within_the_region
+	# 				VAR_SCOPE = scope:war
+	# 				INVOLVEMENT = involved
+	# 			}
+	# 		}
+	# 	}
+	# 	every_character_struggle = {
+	# 		involvement = involved
+	# 		limit = {
+	# 			activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
+	# 				CATALYST = catalyst_supporter_win_fair_war_within_the_region
+	# 				VAR_SCOPE = scope:war
+	# 				INVOLVEMENT = involved
+	# 			}
+	# 		}
+	# 		activate_struggle_catalyst = {
+	# 			catalyst = catalyst_supporter_win_fair_war_within_the_region
+	# 			character = scope:winner
+	# 		}
+	# 		scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
+	# 		log_debug_variable_for_persian_struggle_effect = { VAR = stabil_catalyst_supporter_win_fair_war_within_the_region }
+	# 	}
+	# }
 	# During the Persian Struggle, a detractor wins any war in the region.
 	## Unfair wars.
-	else_if = {
-		limit = {
-			has_trait = fp3_struggle_detractor
-			# Scope:attacker won?
-			trigger_if = {
-				limit = {
-					scope:winner = scope:attacker
-					exists = scope:war.var:struggle_defender_tier
-				}
-				highest_held_title_tier > scope:war.var:struggle_defender_tier
-			}
-			# Else, scope:defender won.
-			trigger_if = {
-				limit = {
-					scope:winner = scope:defender
-					exists = scope:war.var:struggle_attacker_tier
-				}
-				highest_held_title_tier > scope:war.var:struggle_attacker_tier
-			}
-			scope:war = {
-				NOT = { has_variable = used_for_struggle_catalyst_on_war_ended }
-			}
-			any_character_struggle = {
-				involvement = involved
-				activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
-					CATALYST = catalyst_detractor_win_unfair_war_within_the_region
-					VAR_SCOPE = scope:war
-					INVOLVEMENT = involved
-				}
-			}
-		}
-		every_character_struggle = {
-			involvement = involved
-			limit = {
-				activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
-					CATALYST = catalyst_detractor_win_unfair_war_within_the_region
-					VAR_SCOPE = scope:war
-					INVOLVEMENT = involved
-				}
-			}
-			activate_struggle_catalyst = {
-				catalyst = catalyst_detractor_win_unfair_war_within_the_region
-				character = scope:winner
-			}
-			scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
-			log_debug_variable_for_persian_struggle_effect = { VAR = unrest_catalyst_detractor_win_unfair_war_within_the_region }
-		}
-	}
-	## Fair wars.
-	else_if = {
-		limit = {
-			has_trait = fp3_struggle_detractor
-			# Scope:attacker won?
-			trigger_if = {
-				limit = {
-					scope:winner = scope:attacker
-					exists = scope:war.var:struggle_defender_tier
-				}
-				highest_held_title_tier > scope:war.var:struggle_defender_tier
-			}
-			# Else, scope:defender won.
-			trigger_if = {
-				limit = {
-					scope:winner = scope:defender
-					exists = scope:war.var:struggle_attacker_tier
-				}
-				highest_held_title_tier > scope:war.var:struggle_attacker_tier
-			}
-			any_character_struggle = {
-				involvement = involved
-				activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
-					CATALYST = catalyst_detractor_win_fair_war_within_the_region
-					VAR_SCOPE = scope:war
-					INVOLVEMENT = involved
-				}
-			}
-		}
-		every_character_struggle = {
-			involvement = involved
-			limit = {
-				activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
-					CATALYST = catalyst_detractor_win_fair_war_within_the_region
-					VAR_SCOPE = scope:war
-					INVOLVEMENT = involved
-				}
-			}
-			activate_struggle_catalyst = {
-				catalyst = catalyst_detractor_win_fair_war_within_the_region
-				character = scope:winner
-			}
-			scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
-			log_debug_variable_for_persian_struggle_effect = { VAR = unrest_catalyst_detractor_win_fair_war_within_the_region }
-		}
-	}
+	# else_if = {
+	# 	limit = {
+	# 		has_trait = fp3_struggle_detractor
+	# 		# Scope:attacker won?
+	# 		trigger_if = {
+	# 			limit = {
+	# 				scope:winner = scope:attacker
+	# 				exists = scope:war.var:struggle_defender_tier
+	# 			}
+	# 			highest_held_title_tier > scope:war.var:struggle_defender_tier
+	# 		}
+	# 		# Else, scope:defender won.
+	# 		trigger_if = {
+	# 			limit = {
+	# 				scope:winner = scope:defender
+	# 				exists = scope:war.var:struggle_attacker_tier
+	# 			}
+	# 			highest_held_title_tier > scope:war.var:struggle_attacker_tier
+	# 		}
+	# 		scope:war = {
+	# 			NOT = { has_variable = used_for_struggle_catalyst_on_war_ended }
+	# 		}
+	# 		any_character_struggle = {
+	# 			involvement = involved
+	# 			activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
+	# 				CATALYST = catalyst_detractor_win_unfair_war_within_the_region
+	# 				VAR_SCOPE = scope:war
+	# 				INVOLVEMENT = involved
+	# 			}
+	# 		}
+	# 	}
+	# 	every_character_struggle = {
+	# 		involvement = involved
+	# 		limit = {
+	# 			activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
+	# 				CATALYST = catalyst_detractor_win_unfair_war_within_the_region
+	# 				VAR_SCOPE = scope:war
+	# 				INVOLVEMENT = involved
+	# 			}
+	# 		}
+	# 		activate_struggle_catalyst = {
+	# 			catalyst = catalyst_detractor_win_unfair_war_within_the_region
+	# 			character = scope:winner
+	# 		}
+	# 		scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
+	# 		log_debug_variable_for_persian_struggle_effect = { VAR = unrest_catalyst_detractor_win_unfair_war_within_the_region }
+	# 	}
+	# }
+	# ## Fair wars.
+	# else_if = {
+	# 	limit = {
+	# 		has_trait = fp3_struggle_detractor
+	# 		# Scope:attacker won?
+	# 		trigger_if = {
+	# 			limit = {
+	# 				scope:winner = scope:attacker
+	# 				exists = scope:war.var:struggle_defender_tier
+	# 			}
+	# 			highest_held_title_tier > scope:war.var:struggle_defender_tier
+	# 		}
+	# 		# Else, scope:defender won.
+	# 		trigger_if = {
+	# 			limit = {
+	# 				scope:winner = scope:defender
+	# 				exists = scope:war.var:struggle_attacker_tier
+	# 			}
+	# 			highest_held_title_tier > scope:war.var:struggle_attacker_tier
+	# 		}
+	# 		any_character_struggle = {
+	# 			involvement = involved
+	# 			activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
+	# 				CATALYST = catalyst_detractor_win_fair_war_within_the_region
+	# 				VAR_SCOPE = scope:war
+	# 				INVOLVEMENT = involved
+	# 			}
+	# 		}
+	# 	}
+	# 	every_character_struggle = {
+	# 		involvement = involved
+	# 		limit = {
+	# 			activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
+	# 				CATALYST = catalyst_detractor_win_fair_war_within_the_region
+	# 				VAR_SCOPE = scope:war
+	# 				INVOLVEMENT = involved
+	# 			}
+	# 		}
+	# 		activate_struggle_catalyst = {
+	# 			catalyst = catalyst_detractor_win_fair_war_within_the_region
+	# 			character = scope:winner
+	# 		}
+	# 		scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
+	# 		log_debug_variable_for_persian_struggle_effect = { VAR = unrest_catalyst_detractor_win_fair_war_within_the_region }
+	# 	}
+	# }
 }
 fp3_struggle_apply_catalyst_interloper_uninvolved_gain_struggle_titles = {
 	if = {

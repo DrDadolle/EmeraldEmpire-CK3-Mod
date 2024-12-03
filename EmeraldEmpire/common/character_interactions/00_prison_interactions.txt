@@ -772,19 +772,20 @@
 			}
 			add = legalistic_vassal_punishment_acceptance
 		}
-		modifier = { # AI Mongols, tyranny wars just delay the inevitable fun!
-			scope:actor = {
-				is_ai = yes
-				OR = {
-					has_trait = greatest_of_khans
-					has_character_modifier = the_great_khan_modifier
-				}
-			}
-			scope:recipient = {
-				is_ai = yes
-			}
-			add = 500
-		}
+		#L5R Disabled
+		# modifier = { # AI Mongols, tyranny wars just delay the inevitable fun!
+		# 	scope:actor = {
+		# 		is_ai = yes
+		# 		OR = {
+		# 			has_trait = greatest_of_khans
+		# 			has_character_modifier = the_great_khan_modifier
+		# 		}
+		# 	}
+		# 	scope:recipient = {
+		# 		is_ai = yes
+		# 	}
+		# 	add = 500
+		# }
 		# Thug accolade increases imprison chance because they scary
 		modifier = {
 			scope:actor = {
@@ -1083,70 +1084,71 @@
 				}
 			}
 		}
-		modifier = {
-			scope:recipient = {
-				has_trait = fp3_struggle_supporter
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_imprison_supporter
-							}
-							has_trait = fp3_struggle_detractor
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_imprison_supporter
-							}
-						}
-					}
-					add = -100
-				}
-			}
-		}
-		modifier = {
-			scope:recipient = {
-				has_trait = fp3_struggle_detractor
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_imprison_detractor
-							}
-							has_trait = fp3_struggle_supporter
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_imprison_detractor
-							}
-						}
-					}
-					add = -100
-				}
-			}
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	scope:recipient = {
+		# 		has_trait = fp3_struggle_supporter
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_imprison_supporter
+		# 					}
+		# 					has_trait = fp3_struggle_detractor
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_imprison_supporter
+		# 					}
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 	}
+		# }
+		# modifier = {
+		# 	scope:recipient = {
+		# 		has_trait = fp3_struggle_detractor
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_imprison_detractor
+		# 					}
+		# 					has_trait = fp3_struggle_supporter
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_imprison_detractor
+		# 					}
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 	}
+		# }
 
 		modifier = { # Avoid triggering Tyranny wars mid-grand activity
 			factor = 0
@@ -5064,71 +5066,72 @@ execute_prisoner_interaction = {
 			}
 		}
 
-		modifier = {
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-				has_trait = fp3_struggle_supporter
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_execute_supporter
-							}
-							has_trait = fp3_struggle_detractor
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_execute_supporter
-							}
-						}
-					}
-					add = -100
-				}
-			}
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 		has_trait = fp3_struggle_supporter
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_execute_supporter
+		# 					}
+		# 					has_trait = fp3_struggle_detractor
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_execute_supporter
+		# 					}
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 	}
+		# }
 
-		modifier = {
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-				has_trait = fp3_struggle_detractor
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_execute_detractor
-							}
-							has_trait = fp3_struggle_supporter
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_execute_detractor
-							}
-						}
-					}
-					add = -100
-				}
-			}
-		}
+		# modifier = {
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 		has_trait = fp3_struggle_detractor
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_execute_detractor
+		# 					}
+		# 					has_trait = fp3_struggle_supporter
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_execute_detractor
+		# 					}
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 	}
+		# }
 	}
 	
 	is_shown = {
