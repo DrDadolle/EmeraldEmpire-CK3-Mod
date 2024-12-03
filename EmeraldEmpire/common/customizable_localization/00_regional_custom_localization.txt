@@ -1386,13 +1386,14 @@ RandomReligiousTextName = {
 				limit = { exists = scope:religious_book_title }
 				scope:religious_book_title = flag:golden_legend
 			}
+			#L5R Disabled
 			#We're a LAAMP visiting somewhere
-			trigger_else_if = {
-				limit = { exists = scope:visiting_location }
-				location.faith.religion = religion:christianity_religion
-			}
-			#The book is of my religion
-			trigger_else = { faith.religion = religion:christianity_religion }
+			# trigger_else_if = {
+			# 	limit = { exists = scope:visiting_location }
+			# 	location.faith.religion = religion:christianity_religion
+			# }
+			# #The book is of my religion
+			# trigger_else = { faith.religion = religion:christianity_religion }
 		}
 		localization_key = random_religious_text_golden_legend
 	}
@@ -1404,13 +1405,14 @@ RandomReligiousTextName = {
 				limit = { exists = scope:religious_book_title }
 				scope:religious_book_title = flag:city_of_god
 			}
+			#L5R Disabled
 			#We're a LAAMP visiting somewhere
-			trigger_else_if = {
-				limit = { exists = scope:visiting_location }
-				location.faith.religion = religion:christianity_religion
-			}
-			#The book is of my religion
-			trigger_else = { faith.religion = religion:christianity_religion }
+			# trigger_else_if = {
+			# 	limit = { exists = scope:visiting_location }
+			# 	location.faith.religion = religion:christianity_religion
+			# }
+			# #The book is of my religion
+			# trigger_else = { faith.religion = religion:christianity_religion }
 		}
 		localization_key = random_religious_text_city_of_god
 	}
@@ -1422,17 +1424,18 @@ RandomReligiousTextName = {
 				limit = { exists = scope:religious_book_title }
 				scope:religious_book_title = flag:summa_theologica
 			}
+			#L5R Disableds
 			#We're a LAAMP visiting somewhere
-			trigger_else_if = {
-				limit = { exists = scope:visiting_location }
-				location.faith.religion = religion:christianity_religion
-				NOT = { location.faith = faith:orthodox }
-			}
-			#The book is of my religion
-			trigger_else = {
-				faith.religion = religion:christianity_religion
-				NOT = { faith = faith:orthodox }
-			}
+			# trigger_else_if = {
+			# 	limit = { exists = scope:visiting_location }
+			# 	location.faith.religion = religion:christianity_religion
+			# 	NOT = { location.faith = faith:orthodox }
+			# }
+			# #The book is of my religion
+			# trigger_else = {
+			# 	faith.religion = religion:christianity_religion
+			# 	NOT = { faith = faith:orthodox }
+			# }
 		}
 		localization_key = random_religious_text_summa_theologica
 	}
@@ -1444,17 +1447,18 @@ RandomReligiousTextName = {
 				limit = { exists = scope:religious_book_title }
 				scope:religious_book_title = flag:sic_et_non
 			}
+			#L5R Disabled
 			#We're a LAAMP visiting somewhere
-			trigger_else_if = {
-				limit = { exists = scope:visiting_location }
-				location.faith.religion = religion:christianity_religion
-				NOT = { location.faith = faith:orthodox }
-			}
-			#The book is of my religion
-			trigger_else = {
-				faith.religion = religion:christianity_religion
-				NOT = { faith = faith:orthodox }
-			}
+			# trigger_else_if = {
+			# 	limit = { exists = scope:visiting_location }
+			# 	location.faith.religion = religion:christianity_religion
+			# 	NOT = { location.faith = faith:orthodox }
+			# }
+			# #The book is of my religion
+			# trigger_else = {
+			# 	faith.religion = religion:christianity_religion
+			# 	NOT = { faith = faith:orthodox }
+			# }
 		}
 		localization_key = random_religious_text_sic_et_non
 	}
@@ -1466,14 +1470,15 @@ RandomReligiousTextName = {
 				limit = { exists = scope:religious_book_title }
 				scope:religious_book_title = flag:chrysostomos
 			}
+			#L5R Disabled
 			#We're a LAAMP visiting somewhere
-			trigger_else_if = {
-				limit = { exists = scope:visiting_location }
-				location.faith = faith:orthodox
-			}
-			#The book is of my religion
-			trigger_else = { faith = faith:orthodox }
-		}
+		# 	trigger_else_if = {
+		# 		limit = { exists = scope:visiting_location }
+		# 		location.faith = faith:orthodox
+		# 	}
+		# 	#The book is of my religion
+		# 	trigger_else = { faith = faith:orthodox }
+		# }
 		localization_key = random_religious_text_chrysostomos
 	}
 
@@ -1484,13 +1489,14 @@ RandomReligiousTextName = {
 				limit = { exists = scope:religious_book_title }
 				scope:religious_book_title = flag:symeon_menologion
 			}
+			#L5R Disabled
 			#We're a LAAMP visiting somewhere
-			trigger_else_if = {
-				limit = { exists = scope:visiting_location }
-				location.faith = faith:orthodox
-			}
-			#The book is of my religion
-			trigger_else = { faith = faith:orthodox }
+			# trigger_else_if = {
+			# 	limit = { exists = scope:visiting_location }
+			# 	location.faith = faith:orthodox
+			# }
+			# #The book is of my religion
+			# trigger_else = { faith = faith:orthodox }
 		}
 		localization_key = random_religious_text_symeon_menologion
 	}
@@ -1502,13 +1508,14 @@ RandomReligiousTextName = {
 				limit = { exists = scope:religious_book_title }
 				scope:religious_book_title = flag:god_and_christ
 			}
+			#L5R Disabled
 			#We're a LAAMP visiting somewhere
-			trigger_else_if = {
-				limit = { exists = scope:visiting_location }
-				location.faith = faith:orthodox
-			}
-			#The book is of my religion
-			trigger_else = { faith = faith:orthodox }
+			# trigger_else_if = {
+			# 	limit = { exists = scope:visiting_location }
+			# 	location.faith = faith:orthodox
+			# }
+			# #The book is of my religion
+			# trigger_else = { faith = faith:orthodox }
 		}
 		localization_key = random_religious_text_god_and_christ
 	}
@@ -1520,13 +1527,14 @@ RandomReligiousTextName = {
 				limit = { exists = scope:religious_book_title }
 				scope:religious_book_title = flag:the_small_book_on_theism
 			}
+			#L5R Disabled
 			#We're a LAAMP visiting somewhere
-			trigger_else_if = {
-				limit = { exists = scope:visiting_location }
-				location.faith.religion = religion:islam_religion
-			}
-			#The book is of my religion
-			trigger_else = { faith.religion = religion:islam_religion }
+			# trigger_else_if = {
+			# 	limit = { exists = scope:visiting_location }
+			# 	location.faith.religion = religion:islam_religion
+			# }
+			# #The book is of my religion
+			# trigger_else = { faith.religion = religion:islam_religion }
 		}
 		localization_key = random_religious_text_the_small_book_on_theism
 	}
@@ -1539,12 +1547,13 @@ RandomReligiousTextName = {
 				scope:religious_book_title = flag:modern_philosophy
 			}
 			#We're a LAAMP visiting somewhere
-			trigger_else_if = {
-				limit = { exists = scope:visiting_location }
-				location.faith.religion = religion:islam_religion
-			}
-			#The book is of my religion
-			trigger_else = { faith.religion = religion:islam_religion }
+			#L5R Disabled
+			# trigger_else_if = {
+			# 	limit = { exists = scope:visiting_location }
+			# 	location.faith.religion = religion:islam_religion
+			# }
+			# #The book is of my religion
+			# trigger_else = { faith.religion = religion:islam_religion }
 		}
 		localization_key = random_religious_text_modern_philosophy
 	}

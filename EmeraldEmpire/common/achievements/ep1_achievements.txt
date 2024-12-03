@@ -273,17 +273,21 @@ ep1_15_achievement = {
 
 ep1_16_achievement = {
 	possible = {
-		exists = global_var:started_beta_israel_achievement
-		NOT = { exists = global_var:any_ruler_designed_character_achievement }
+		#L5R Disabled
+		always = no
+		# exists = global_var:started_beta_israel_achievement
+		# NOT = { exists = global_var:any_ruler_designed_character_achievement }
 	}
 	happened = {
-		custom_description = {
-			text = beta_israel_achievement_trigger
-			exists = global_var:diverged_culture_beta_israel_achievement
-			root.faith.religion = religion:judaism_religion
-			highest_held_title_tier >= tier_kingdom
-			root.culture = { is_divergent_culture = yes }
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = beta_israel_achievement_trigger
+		# 	exists = global_var:diverged_culture_beta_israel_achievement
+		# 	root.faith.religion = religion:judaism_religion
+		# 	highest_held_title_tier >= tier_kingdom
+		# 	root.culture = { is_divergent_culture = yes }
+		# }
 	}
 }
 

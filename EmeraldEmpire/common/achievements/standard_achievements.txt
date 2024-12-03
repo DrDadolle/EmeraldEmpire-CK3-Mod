@@ -298,23 +298,27 @@ turning_to_diamonds_achievement = {
 
 reconquista_achievement = {
 	possible = {
-		exists = global_var:started_reconquista_achievement
+		#L5R Disabled
+		always = no
+		# exists = global_var:started_reconquista_achievement
 	}
 	happened = {
-		custom_description = {
-			text = reconquista_achievement_trigger
-			completely_controls_region = world_europe_west_iberia
-			any_county_in_region = {
-				region = world_europe_west_iberia
-				count = all
-				faith = { religion_tag = christianity_religion }
-			}
-			OR = {
-				culture = { has_cultural_pillar = heritage_iberian }
-				culture = culture:andalusian
-			}
-			has_religion = religion:christianity_religion
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = reconquista_achievement_trigger
+		# 	completely_controls_region = world_europe_west_iberia
+		# 	any_county_in_region = {
+		# 		region = world_europe_west_iberia
+		# 		count = all
+		# 		faith = { religion_tag = christianity_religion }
+		# 	}
+		# 	OR = {
+		# 		culture = { has_cultural_pillar = heritage_iberian }
+		# 		culture = culture:andalusian
+		# 	}
+		# 	has_religion = religion:christianity_religion
+		# }
 	}
 }
 

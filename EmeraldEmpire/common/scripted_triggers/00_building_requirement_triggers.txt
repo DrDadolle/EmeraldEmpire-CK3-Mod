@@ -52,18 +52,20 @@ building_requirement_castle_city_church = {
 ######################################################################
 
 building_hall_of_heroes_requirement = {
-	custom_description = {
-		text = building_requirement_hall_of_heroes_failed
-		has_variable = hall_of_heroes
-		scope:holder = {
-			OR = {
-				has_religion = religion:baltic_religion
-				has_religion = religion:slavic_religion
-				has_religion = religion:finno_ugric_religion
-				has_religion = religion:siberian_religion
-			}
-		}
-	}
+	#L5R Disabled
+	always = no
+	# custom_description = {
+	# 	text = building_requirement_hall_of_heroes_failed
+	# 	has_variable = hall_of_heroes
+	# 	scope:holder = {
+	# 		OR = {
+	# 			has_religion = religion:baltic_religion
+	# 			has_religion = religion:slavic_religion
+	# 			has_religion = religion:finno_ugric_religion
+	# 			has_religion = religion:siberian_religion
+	# 		}
+	# 	}
+	# }
 }
 
 building_university_requirement = {
@@ -117,7 +119,8 @@ building_orchards_requirement_terrain = {
 	OR = {
 		terrain = floodplains
 		terrain = oasis
-		has_building_or_higher = qanats_05
+		#L5R Disabled
+		# has_building_or_higher = qanats_05
 	}
 }
 
@@ -186,7 +189,8 @@ building_cereal_fields_requirement_terrain = {
 		county = {
 			has_county_modifier = fertile_desert_mountains_modifier
 		}
-		has_building_or_higher = qanats_05
+		#L5R Disabled
+		# has_building_or_higher = qanats_05
 	}
 }
 
