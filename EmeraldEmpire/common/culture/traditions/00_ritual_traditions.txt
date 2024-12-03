@@ -864,11 +864,12 @@ tradition_religion_blending = {
 		4 = temple.dds
 	}
 	
-	# is_shown = { #L5R Disabled
+	is_shown = { 
+		#L5R Disabled
 	# 	NOT = {
 	# 		culture_tradition:tradition_steppe_tolerance = { is_in_list = traits }
 	# 	}
-	# }
+	}
 	can_pick = {
 		custom_tooltip = {
 			text = rulers_following_different_faiths_trigger_desc
