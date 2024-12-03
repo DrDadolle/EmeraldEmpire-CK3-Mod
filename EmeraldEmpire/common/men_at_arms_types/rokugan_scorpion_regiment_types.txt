@@ -31,8 +31,6 @@ scorpion_shadow_assassin= {
 	low_maintenance_cost = { gold = skirmisher_low_maint_cost }
 	high_maintenance_cost = { gold = skirmisher_high_maint_cost }
 
-	holy_order_fallback = yes
-
 	stack = 100
 	ai_quality = { value = culture_ai_weight_skirmishers }
 

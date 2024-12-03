@@ -454,11 +454,12 @@ lineofikomaanakazu3 = {
 	1095.1.1 = {
 			#add_spouse = lineofikomaanakazu1 #  Ikoma Anakazu
 	}
-	1096.1.1 = {
-		effect = {
-			set_relation_lover = { reason = lover_history target = character:lineofikomaanakazu1 } # In love with her husband Ikoma Anakazu
-		}
-	}
+	# Already present in lion_clan.txt
+	# 1096.1.1 = {
+	# 	effect = {
+	# 		set_relation_lover = { reason = lover_history target = character:lineofikomaanakazu1 } # In love with her husband Ikoma Anakazu
+	# 	}
+	# }
 	
 }
 

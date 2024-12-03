@@ -1642,67 +1642,68 @@ fp1_yearly.2300 = {
 		save_scope_as = recruiting_character
 	}
 
-	option = {
-		name = fp1_yearly.2300.a
+	#L5R Disabled
+	# option = {
+	# 	name = fp1_yearly.2300.a
 		
-		flavor = huscarls_tt
+	# 	flavor = huscarls_tt
 		
-		remove_short_term_gold = huscarls_gold_value
+	# 	remove_short_term_gold = huscarls_gold_value
 		
-		spawn_army = {
-			levies = 25
-			men_at_arms = {
-				type = huscarl
-				men = number_of_huscarls
-			}
-			location = scope:recruiting_character.capital_province
-			inheritable = no
-			name = grizzled_veterans
-		}
+	# 	spawn_army = {
+	# 		levies = 25
+	# 		men_at_arms = {
+	# 			type = huscarl
+	# 			men = number_of_huscarls
+	# 		}
+	# 		location = scope:recruiting_character.capital_province
+	# 		inheritable = no
+	# 		name = grizzled_veterans
+	# 	}
 		
-		custom_tooltip = MILITARY_VIEW_EVENT_TROOPS_NOT_INHERITABLE
+	# 	custom_tooltip = MILITARY_VIEW_EVENT_TROOPS_NOT_INHERITABLE
 
-		stress_impact = {
-			humble = minor_stress_impact_gain
-			shy = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.5
-			}
-		}
-	}
+	# 	stress_impact = {
+	# 		humble = minor_stress_impact_gain
+	# 		shy = minor_stress_impact_gain
+	# 	}
+	# 	ai_chance = {
+	# 		base = 100
+	# 		ai_value_modifier = {
+	# 			ai_rationality = 0.5
+	# 		}
+	# 	}
+	# }
 
-	option = {
-		name = fp1_yearly.2300.b
+	# option = {
+	# 	name = fp1_yearly.2300.b
 		
-		flavor = bondi_tt
+	# 	flavor = bondi_tt
 		
-		remove_short_term_gold = bondi_gold_value
+	# 	remove_short_term_gold = bondi_gold_value
 		
-		spawn_army = {
-			levies = 50
-			men_at_arms = {
-				type = bondi
-				men = number_of_bondi
-			}
-			location = scope:recruiting_character.capital_province
-			inheritable = no
-			name = glory_seekers
-		}
+	# 	spawn_army = {
+	# 		levies = 50
+	# 		men_at_arms = {
+	# 			type = bondi
+	# 			men = number_of_bondi
+	# 		}
+	# 		location = scope:recruiting_character.capital_province
+	# 		inheritable = no
+	# 		name = glory_seekers
+	# 	}
 		
-		custom_tooltip = MILITARY_VIEW_EVENT_TROOPS_NOT_INHERITABLE
+	# 	custom_tooltip = MILITARY_VIEW_EVENT_TROOPS_NOT_INHERITABLE
 
-		stress_impact = {
-			humble = minor_stress_impact_gain
-			shy = minor_stress_impact_gain
-		}
+	# 	stress_impact = {
+	# 		humble = minor_stress_impact_gain
+	# 		shy = minor_stress_impact_gain
+	# 	}
 		
-		ai_chance = {
-			base = 100
-		}
-	}
+	# 	ai_chance = {
+	# 		base = 100
+	# 	}
+	# }
 
 	option = {
 		name = fp1_yearly.2300.c

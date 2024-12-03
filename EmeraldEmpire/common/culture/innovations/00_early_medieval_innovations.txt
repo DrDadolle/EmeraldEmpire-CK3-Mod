@@ -104,19 +104,19 @@ innovation_horseshoes = {
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
+#L5R TODO : change and remove it
+innovation_arched_saddle = { 
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @knight
 
-# innovation_arched_saddle = { # NO more Armored horsemen. Only Unicorn
-# 	group = culture_group_military
-# 	culture_era = culture_era_early_medieval
-# 	icon = @knight
+	unlock_maa = armored_horsemen
 
-# 	unlock_maa = armored_horsemen
+	custom = eligible_accolade_lancer_attribute
 
-# 	custom = eligible_accolade_lancer_attribute
-
-# 	flag = global_regular
-# 	flag = early_medieval_era_regular
-# }
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
 
 #culture_group_civic
 innovation_hereditary_rule = {

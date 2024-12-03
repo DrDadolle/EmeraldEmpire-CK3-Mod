@@ -8,8 +8,6 @@
 phoenix_elemental_legion = {
 	type = pikemen
 	
-	can_recruit = { always = no }
-	
 	damage = 22
 	toughness = 24
 	pursuit = 0
@@ -33,8 +31,6 @@ phoenix_elemental_legion = {
 	buy_cost = { gold = pikemen_recruitment_cost }
 	low_maintenance_cost = { gold = pikemen_low_maint_cost }
 	high_maintenance_cost = { gold = pikemen_high_maint_cost }
-
-#	holy_order_fallback = yes
 
 	stack = 100
 	ai_quality = {

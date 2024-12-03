@@ -25,7 +25,6 @@ dragon_mirumoto_elite_guard= {
 	low_maintenance_cost = { gold = heavy_infantry_low_maint_cost }
 	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
 
-#	holy_order_fallback = yes
 
 	stack = 100
 	ai_quality = {
