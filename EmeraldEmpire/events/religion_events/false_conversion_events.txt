@@ -133,7 +133,7 @@ false_conversion.0020 = {
 				remove_variable = false_convert	#Cleanup the variable when we're done.
 			}
 			send_interface_message = {	#Alert the user if any counties have switched.
-				type = revealed_crypto_faith
+				type = event_religious_neutral_text
 				title = event_false_converts.t
 				desc = event_false_converts_counties_only.desc
 			}
@@ -151,7 +151,7 @@ false_conversion.0020 = {
 			limit = { is_independent_ruler = no }
 			liege = {
 				send_interface_message = {
-					type = revealed_crypto_faith
+					type = event_religious_neutral_text
 					title = event_false_convert_my_vassal.t
 					desc = event_false_convert_interface.desc
 					right_icon = root
@@ -160,7 +160,7 @@ false_conversion.0020 = {
 		}
 		every_vassal = {
 			send_interface_message = {
-				type = revealed_crypto_faith
+				type = event_religious_neutral_text
 				title = event_false_convert_my_liege.t
 				desc = event_false_convert_interface.desc
 				right_icon = root
@@ -483,7 +483,7 @@ false_conversion.0030 = {
 				save_temporary_scope_as = reconverter
 				every_vassal = {	#Notify your vassals' vassals of the change.
 					send_interface_message = {
-						type = revealed_crypto_faith
+						type = event_religious_neutral_text
 						title = event_false_convert_my_vassal.t
 						desc = event_false_convert_interface.desc
 						right_icon = scope:reconverter
@@ -518,7 +518,7 @@ false_conversion.0030 = {
 			if = {	#Include counties in the message if there are any.
 				limit = { var:num_false_converts_counties >= 1 }
 				send_interface_message = {
-					type = revealed_crypto_faith
+					type = event_religious_neutral_text
 					title = event_false_converts.t
 					desc = event_false_converts_plus_counties.desc
 				}
@@ -526,7 +526,7 @@ false_conversion.0030 = {
 			if = {	#Else, just talk about vassals and landless characters.
 				limit = { var:num_false_converts_counties <= 0 }
 				send_interface_message = {
-					type = revealed_crypto_faith
+					type = event_religious_neutral_text
 					title = event_false_converts.t
 					desc = event_false_converts_without_counties.desc
 				}
@@ -636,7 +636,7 @@ false_conversion.0031 = {
 		set_character_faith_with_conversion = scope:old_faith
 		liege = {
 			send_interface_message = {
-				type = revealed_crypto_faith
+				type = event_religious_neutral_text
 				title = event_false_convert_my_vassal.t
 				desc = event_false_convert_interface.desc
 				right_icon = root
@@ -644,7 +644,7 @@ false_conversion.0031 = {
 		}
 		every_vassal = {
 			send_interface_message = {
-				type = revealed_crypto_faith
+				type = event_religious_neutral_text
 				title = event_false_convert_my_vassal.t
 				desc = event_false_convert_interface.desc
 				right_icon = root
