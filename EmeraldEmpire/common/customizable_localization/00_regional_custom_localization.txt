@@ -930,21 +930,22 @@ Abortifacient = {
 	#	#lesser chance in Europe, rest of Asia
 	#}
 
-	text = {
-		localization_key = abortifacient_herb_of_grace
-		#Christian only
-		#Balkans, Anatolia, Mediterranean
-		trigger = {
-			faith.religion = religion:christianity_religion
-			location = {
-				OR = {
-					geographical_region = world_europe_south
-					geographical_region = world_africa_north
-					geographical_region = world_asia_minor
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = abortifacient_herb_of_grace
+	# 	#Christian only
+	# 	#Balkans, Anatolia, Mediterranean
+	# 	trigger = {
+	# 		faith.religion = religion:christianity_religion
+	# 		location = {
+	# 			OR = {
+	# 				geographical_region = world_europe_south
+	# 				geographical_region = world_africa_north
+	# 				geographical_region = world_asia_minor
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	text = {
 		localization_key = abortifacient_rue
@@ -1759,296 +1760,297 @@ CulturalCurse = {
 	type = character
 	random_valid = yes
 
+	#L5R Disabled
 	#Christian
-	text = {
-		trigger = { faith.religion = religion:christianity_religion }
-		localization_key = curse_by_the_blood
-	}
-	text = {
-		trigger = { faith.religion = religion:christianity_religion }
-		localization_key = curse_gods_wounds
-	}
-	text = {
-		trigger = { faith.religion = religion:christianity_religion }
-		localization_key = curse_by_gods_nails
-	}
+	# text = {
+	# 	trigger = { faith.religion = religion:christianity_religion }
+	# 	localization_key = curse_by_the_blood
+	# }
+	# text = {
+	# 	trigger = { faith.religion = religion:christianity_religion }
+	# 	localization_key = curse_gods_wounds
+	# }
+	# text = {
+	# 	trigger = { faith.religion = religion:christianity_religion }
+	# 	localization_key = curse_by_gods_nails
+	# }
 
-	#Swedish
-	text = {
-		trigger = {
-			OR = {
-				culture = { has_name_list = name_list_norwegian }
-				culture = { has_name_list = name_list_swedish }
-			}
-		}
-		localization_key = curse_helvete
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_swedish } }
-		localization_key = curse_helvetes_javla_skit
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_swedish } }
-		localization_key = curse_skit
-	}
-	text = {
-		trigger = {
-			OR = {
-				culture = { has_name_list = name_list_swedish }
-				culture = { has_name_list = name_list_norse }
-			}
-			faith = faith:norse_pagan
-		}
-		localization_key = curse_balders_balle
-	}
+	# #Swedish
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			culture = { has_name_list = name_list_norwegian }
+	# 			culture = { has_name_list = name_list_swedish }
+	# 		}
+	# 	}
+	# 	localization_key = curse_helvete
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_swedish } }
+	# 	localization_key = curse_helvetes_javla_skit
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_swedish } }
+	# 	localization_key = curse_skit
+	# }
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			culture = { has_name_list = name_list_swedish }
+	# 			culture = { has_name_list = name_list_norse }
+	# 		}
+	# 		faith = faith:norse_pagan
+	# 	}
+	# 	localization_key = curse_balders_balle
+	# }
 
-	#Norse
-	text = {
-		trigger = { culture = { has_name_list = name_list_norse } }
-		localization_key = curse_skitr
-	}
+	# #Norse
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_norse } }
+	# 	localization_key = curse_skitr
+	# }
 
-	#Scanian
-	text = {
-		trigger = {
-			OR = {
-				culture = { has_name_list = name_list_danish }
-				culture = { has_name_list = name_list_swedish }
-			}
-			capital_province.duchy = title:d_skane
-		}
-		localization_key = curse_jevla_mog
-	}
-	text = {
-		trigger = {
-			OR = {
-				culture = { has_name_list = name_list_danish }
-				culture = { has_name_list = name_list_swedish }
-			}
-			capital_province.duchy = title:d_skane
-		}
-		localization_key = curse_alahue
-	}
+	# #Scanian
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			culture = { has_name_list = name_list_danish }
+	# 			culture = { has_name_list = name_list_swedish }
+	# 		}
+	# 		capital_province.duchy = title:d_skane
+	# 	}
+	# 	localization_key = curse_jevla_mog
+	# }
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			culture = { has_name_list = name_list_danish }
+	# 			culture = { has_name_list = name_list_swedish }
+	# 		}
+	# 		capital_province.duchy = title:d_skane
+	# 	}
+	# 	localization_key = curse_alahue
+	# }
 
-	#Norwegian
-	text = {
-		trigger = { culture = { has_name_list = name_list_norwegian } }
-		localization_key = curse_fy_fanden
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_norwegian } }
-		localization_key = curse_pokker
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_norwegian } }
-		localization_key = curse_haestkuk
-	}
-
-
-	#German
-	text = {
-		trigger = { culture = { has_cultural_pillar = language_central_germanic } }
-		localization_key = curse_scheisse
-	}
-	text = {
-		trigger = { culture = { has_cultural_pillar = language_central_germanic } }
-		localization_key = curse_dreck
-	}
-	text = {
-		trigger = { culture = { has_cultural_pillar = language_central_germanic } }
-		localization_key = curse_verdammt
-	}
-	text = {
-		trigger = { culture = { has_cultural_pillar = language_central_germanic } }
-		localization_key = curse_gottverdammt
-	}
-	text = {
-		trigger = { culture = { has_cultural_pillar = language_central_germanic } }
-		localization_key = curse_zum_teufel
-	}
-	text = {
-		trigger = { culture = { has_cultural_pillar = language_central_germanic } }
-		localization_key = curse_himmel_arsch_und_zwirn
-	}
-	text = {
-		trigger = { culture = { has_cultural_pillar = language_central_germanic } }
-		localization_key = curse_kreuzdonnerwetter
-	}
-	text = {
-		trigger = { culture = { has_cultural_pillar = language_central_germanic } }
-		localization_key = curse_zur_holle
-	}
-	text = {
-		trigger = { culture = { has_cultural_pillar = language_central_germanic } }
-		localization_key = curse_was_fur_ein_mist
-	}
-	text = {
-		trigger = { culture = { has_cultural_pillar = language_central_germanic } }
-		localization_key = curse_was_fur_ein_dreck
-	}
+	# #Norwegian
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_norwegian } }
+	# 	localization_key = curse_fy_fanden
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_norwegian } }
+	# 	localization_key = curse_pokker
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_norwegian } }
+	# 	localization_key = curse_haestkuk
+	# }
 
 
-	#Dutch
-	text = {
-		trigger = { culture = { has_name_list = name_list_dutch } }
-		localization_key = curse_godver
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_dutch } }
-		localization_key = curse_godverdomme
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_dutch } }
-		localization_key = curse_tering
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_dutch } }
-		localization_key = curse_godgloeiende
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_dutch } }
-		localization_key = curse_kanker
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_dutch } }
-		localization_key = curse_vervloekt
-	}
+	# #German
+	# text = {
+	# 	trigger = { culture = { has_cultural_pillar = language_central_germanic } }
+	# 	localization_key = curse_scheisse
+	# }
+	# text = {
+	# 	trigger = { culture = { has_cultural_pillar = language_central_germanic } }
+	# 	localization_key = curse_dreck
+	# }
+	# text = {
+	# 	trigger = { culture = { has_cultural_pillar = language_central_germanic } }
+	# 	localization_key = curse_verdammt
+	# }
+	# text = {
+	# 	trigger = { culture = { has_cultural_pillar = language_central_germanic } }
+	# 	localization_key = curse_gottverdammt
+	# }
+	# text = {
+	# 	trigger = { culture = { has_cultural_pillar = language_central_germanic } }
+	# 	localization_key = curse_zum_teufel
+	# }
+	# text = {
+	# 	trigger = { culture = { has_cultural_pillar = language_central_germanic } }
+	# 	localization_key = curse_himmel_arsch_und_zwirn
+	# }
+	# text = {
+	# 	trigger = { culture = { has_cultural_pillar = language_central_germanic } }
+	# 	localization_key = curse_kreuzdonnerwetter
+	# }
+	# text = {
+	# 	trigger = { culture = { has_cultural_pillar = language_central_germanic } }
+	# 	localization_key = curse_zur_holle
+	# }
+	# text = {
+	# 	trigger = { culture = { has_cultural_pillar = language_central_germanic } }
+	# 	localization_key = curse_was_fur_ein_mist
+	# }
+	# text = {
+	# 	trigger = { culture = { has_cultural_pillar = language_central_germanic } }
+	# 	localization_key = curse_was_fur_ein_dreck
+	# }
 
-	#Polish
-	text = {
-		trigger = { culture = { has_name_list = name_list_polish } }
-		localization_key = curse_niech_mnie_diabli
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_polish } }
-		localization_key = curse_zaraza
-	}
 
-	#French
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_merde
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_putain
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_fils_de_pute
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_sacrebleu
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_nom_dune_pipe
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_calisse
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_ostie_de_criss_de_tabarnak
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_morbleu
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_diantre
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_peste
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_mortecouille
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_ventre_dieu
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_french } }
-		localization_key = curse_puterelle
-	}
+	# #Dutch
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_dutch } }
+	# 	localization_key = curse_godver
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_dutch } }
+	# 	localization_key = curse_godverdomme
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_dutch } }
+	# 	localization_key = curse_tering
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_dutch } }
+	# 	localization_key = curse_godgloeiende
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_dutch } }
+	# 	localization_key = curse_kanker
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_dutch } }
+	# 	localization_key = curse_vervloekt
+	# }
 
-	#Spanish
-	text = {
-		trigger = { culture = { has_name_list = name_list_castilian } }
-		localization_key = curse_maldicion
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_castilian } }
-		localization_key = curse_maldita_sea
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_castilian } }
-		localization_key = curse_mierda
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_castilian } }
-		localization_key = curse_habrase_visto
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_castilian } }
-		localization_key = curse_madre_mia
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_castilian } }
-		localization_key = curse_ay_de_mi
-	}
+	# #Polish
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_polish } }
+	# 	localization_key = curse_niech_mnie_diabli
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_polish } }
+	# 	localization_key = curse_zaraza
+	# }
 
-	#Italian
-	text = {
-		trigger = { culture = { has_name_list = name_list_italian } }
-		localization_key = curse_cazzo
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_italian } }
-		localization_key = curse_minchia
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_italian } }
-		localization_key = curse_merda
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_italian } }
-		localization_key = curse_vaffanculo
-	}
+	# #French
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_merde
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_putain
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_fils_de_pute
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_sacrebleu
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_nom_dune_pipe
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_calisse
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_ostie_de_criss_de_tabarnak
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_morbleu
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_diantre
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_peste
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_mortecouille
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_ventre_dieu
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_french } }
+	# 	localization_key = curse_puterelle
+	# }
 
-	#Russian
-	text = {
-		trigger = { culture = { has_name_list = name_list_russian } }
-		localization_key = curse_proklyatie
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_russian } }
-		localization_key = curse_dyavol
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_russian } }
-		localization_key = curse_vot_dermo
-	}
+	# #Spanish
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_castilian } }
+	# 	localization_key = curse_maldicion
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_castilian } }
+	# 	localization_key = curse_maldita_sea
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_castilian } }
+	# 	localization_key = curse_mierda
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_castilian } }
+	# 	localization_key = curse_habrase_visto
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_castilian } }
+	# 	localization_key = curse_madre_mia
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_castilian } }
+	# 	localization_key = curse_ay_de_mi
+	# }
 
-	#Lithuanian
-	text = {
-		trigger = { culture = { has_name_list = name_list_lithuanian } }
-		localization_key = curse_rupus_miltai
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_lithuanian } }
-		localization_key = curse_velniai_rautu
-	}
-	text = {
-		trigger = { culture = { has_name_list = name_list_lithuanian } }
-		localization_key = curse_rupuze
-	}
+	# #Italian
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_italian } }
+	# 	localization_key = curse_cazzo
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_italian } }
+	# 	localization_key = curse_minchia
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_italian } }
+	# 	localization_key = curse_merda
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_italian } }
+	# 	localization_key = curse_vaffanculo
+	# }
+
+	# #Russian
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_russian } }
+	# 	localization_key = curse_proklyatie
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_russian } }
+	# 	localization_key = curse_dyavol
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_russian } }
+	# 	localization_key = curse_vot_dermo
+	# }
+
+	# #Lithuanian
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_lithuanian } }
+	# 	localization_key = curse_rupus_miltai
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_lithuanian } }
+	# 	localization_key = curse_velniai_rautu
+	# }
+	# text = {
+	# 	trigger = { culture = { has_name_list = name_list_lithuanian } }
+	# 	localization_key = curse_rupuze
+	# }
 
 	#Fallback (english)
 	text = {
@@ -2066,33 +2068,34 @@ CulturalCurse = {
 
 GetOldBook = {
 	type = character
-	text = {
-		trigger = {
-			culture = { has_cultural_pillar = language_greek }
-		}
-		localization_key = old_book_greek
-	}
-	text = {
-		trigger = {
-			faith.religion = { is_in_family = rf_abrahamic }
-			NOT = {
-				culture = { has_cultural_pillar = language_greek }
-			}
-		}
-		localization_key = old_book_abrahamic
-	}
-	text = {
-		trigger = {
-			faith.religion = { is_in_family = rf_pagan }
-		}
-		localization_key = old_book_pagan
-	}
-	text = {
-		trigger = {
-			faith.religion = { is_in_family = rf_eastern }
-		}
-		localization_key = old_book_eastern
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		culture = { has_cultural_pillar = language_greek }
+	# 	}
+	# 	localization_key = old_book_greek
+	# }
+	# text = {
+	# 	trigger = {
+	# 		faith.religion = { is_in_family = rf_abrahamic }
+	# 		NOT = {
+	# 			culture = { has_cultural_pillar = language_greek }
+	# 		}
+	# 	}
+	# 	localization_key = old_book_abrahamic
+	# }
+	# text = {
+	# 	trigger = {
+	# 		faith.religion = { is_in_family = rf_pagan }
+	# 	}
+	# 	localization_key = old_book_pagan
+	# }
+	# text = {
+	# 	trigger = {
+	# 		faith.religion = { is_in_family = rf_eastern }
+	# 	}
+	# 	localization_key = old_book_eastern
+	# }
 	text = {
 		trigger = { always = no }
 		fallback = yes

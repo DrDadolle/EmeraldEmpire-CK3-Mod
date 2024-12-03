@@ -512,7 +512,12 @@ tradition_pacifism = {
 		value = 0
 		if = {
 			limit = {
-				scope:character = { religion = { is_in_family = rf_eastern } }
+				# scope:character = { religion = { is_in_family = rf_eastern } } #L5R Disabled
+				#L5R Added
+				OR = { 
+					scope:character = { religion = religion:fortunism_religion } 
+					scope:character = { religion = religion:shinseism_religion }
+				}
 				is_divergent_culture = yes
 			}
 			add = 100

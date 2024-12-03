@@ -948,25 +948,26 @@ fp1_other_decisions.0003 = {
 							give_nickname = nick_the_heretic
 						}
 						# Converting outside of your religious family, you're a heathen.
+						#L5R Modified
 						else_if = {
 							limit = {
 								OR = {
 									AND = {
-										scope:old_faith.religion = { is_in_family = rf_eastern }
+										scope:old_faith.religion = { is_in_family = rf_rokugan }
 										NOT = {
-											scope:gf_faith.religion = { is_in_family = rf_eastern }
+											scope:gf_faith.religion = { is_in_family = rf_rokugan }
 										}
 									}
 									AND = {
-										scope:old_faith.religion = { is_in_family = rf_pagan }
+										scope:old_faith.religion = { is_in_family = rf_shadowlands}
 										NOT = {
-											scope:gf_faith.religion = { is_in_family = rf_pagan }
+											scope:gf_faith.religion = { is_in_family = rf_shadowlands }
 										}
 									}
 									AND = {
-										scope:old_faith.religion = { is_in_family = rf_abrahamic }
+										scope:old_faith.religion = { is_in_family = rf_gaijin }
 										NOT = {
-											scope:gf_faith.religion = { is_in_family = rf_abrahamic }
+											scope:gf_faith.religion = { is_in_family = rf_gaijin }
 										}
 									}
 								}

@@ -654,7 +654,7 @@ c_seppun_province_3 = {
 	}
 
 	1123.1.1 = {
-		holder = placeholderseppun1 
+		holder = lineofotomosorai1 #L5R TODO workaround to have the the daimyo exists
 		change_development_level = 30
 	}
 }

@@ -773,6 +773,7 @@ great_holy_war.0011 = {
 	type = character_event
 	title = {
 		first_valid = {
+			#L5R Disabled
 			# triggered_desc = {
 			# 	trigger = {
 			# 		scope:awakening_faith.religion = religion:christianity_religion
@@ -785,14 +786,14 @@ great_holy_war.0011 = {
 			# 	}
 			# 	desc = great_holy_war.0011.muslim.t
 			# }
-			triggered_desc = { #Pagan Polytheists
-				trigger = {
-					scope:awakening_faith.religion = {
-						is_in_family = rf_pagan
-					}
-				}
-				desc = great_holy_war.0011.pagans.t
-			}
+			# triggered_desc = { #Pagan Polytheists
+			# 	trigger = {
+			# 		scope:awakening_faith.religion = {
+			# 			is_in_family = rf_pagan
+			# 		}
+			# 	}
+			# 	desc = great_holy_war.0011.pagans.t
+			# }
 			desc = great_holy_war.0011.fallback.t
 		}
 	}

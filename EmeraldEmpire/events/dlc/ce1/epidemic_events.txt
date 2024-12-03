@@ -473,15 +473,16 @@ epidemic_events.1000 = {
 					any_faith = { NOT = { has_doctrine_parameter = unreformed } }
 				}
 			}
-			AND = {
-				faith.religion = {
-					is_in_family = rf_pagan
-				}
-				faith = { NOT = { has_doctrine_parameter = unreformed } }
-				faith.religion = {
-					any_faith = { has_doctrine_parameter = unreformed }
-				}
-			}
+			#L5R Disabled
+			# AND = {
+			# 	faith.religion = {
+			# 		is_in_family = rf_pagan
+			# 	}
+			# 	faith = { NOT = { has_doctrine_parameter = unreformed } }
+			# 	faith.religion = {
+			# 		any_faith = { has_doctrine_parameter = unreformed }
+			# 	}
+			# }
 			AND = {
 				faith = { has_doctrine_parameter = unreformed }
 				top_liege = {
@@ -642,7 +643,7 @@ epidemic_events.1000 = {
 		else_if = {
 			limit = {
 				# Don't get Kuzarism for Jewish realms
-				faith.religion = { is_in_family = rf_pagan }
+				# faith.religion = { is_in_family = rf_pagan } #L5R Disabled
 				faith = { NOT = { has_doctrine_parameter = unreformed } }
 				faith.religion = {
 					any_faith = { has_doctrine_parameter = unreformed }

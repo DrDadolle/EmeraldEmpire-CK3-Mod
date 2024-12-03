@@ -23,44 +23,50 @@ namespace = yearly_saharan
 ##################################################
 
 scripted_trigger valid_faiths_scripted_trigger = {
-	faith = {
-		has_doctrine_parameter = unreformed
-		OR = {
-			religion_tag = west_african_religion
-			religion_tag = west_african_bori_religion
-			religion_tag = west_african_roog_religion
-			religion_tag = akom_religion
-			religion_tag = kushitism_religion
-			religion_tag = waaqism_religion
-		}
-	}
+	#L5R Disabled
+	always = no
+	# faith = {
+	# 	has_doctrine_parameter = unreformed
+	# 	OR = {
+	# 		religion_tag = west_african_religion
+	# 		religion_tag = west_african_bori_religion
+	# 		religion_tag = west_african_roog_religion
+	# 		religion_tag = akom_religion
+	# 		religion_tag = kushitism_religion
+	# 		religion_tag = waaqism_religion
+	# 	}
+	# }
 }
 
 scripted_trigger suitable_for_faith_traders_scripted_trigger = {
-	tier = tier_county
-	title_province = {
-		OR = {
-			geographical_region = custom_sahel_proper
-			geographical_region = custom_sub_saharan_africa_immediate
-		}
-	}
-	valid_faiths_scripted_trigger = yes
-	any_neighboring_county = { neighbouring_proselytising_trader_province_scripted_trigger = yes }
+	#L5R Disabled
+	always = no
+	# tier = tier_county
+	# title_province = {
+	# 	OR = {
+	# 		geographical_region = custom_sahel_proper
+	# 		geographical_region = custom_sub_saharan_africa_immediate
+	# 	}
+	# }
+	# valid_faiths_scripted_trigger = yes
+	# any_neighboring_county = { neighbouring_proselytising_trader_province_scripted_trigger = yes }
 }
 
 scripted_trigger neighbouring_proselytising_trader_province_scripted_trigger = {
-	title_province = {
-		OR = {
-			geographical_region = custom_sahara_proper
-			geographical_region = custom_sahel_proper
-		}
-	}
-	faith = {
-		NOR = {
-			religion = { is_in_family = rf_pagan }
-			has_doctrine_parameter = unreformed
-		}
-	}
+	#L5R Disabled
+	always = no
+	# title_province = {
+	# 	OR = {
+	# 		geographical_region = custom_sahara_proper
+	# 		geographical_region = custom_sahel_proper
+	# 	}
+	# }
+	# faith = {
+	# 	NOR = {
+	# 		religion = { is_in_family = rf_pagan }
+	# 		has_doctrine_parameter = unreformed
+	# 	}
+	# }
 }
 
 #	Traders turn up initially.

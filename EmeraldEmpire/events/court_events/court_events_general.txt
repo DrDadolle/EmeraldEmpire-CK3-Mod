@@ -15361,7 +15361,7 @@ court.6020 = {
 			}
 		}
 	}
-
+	#L5R Disabled
 	# Option A: Court chaplain exorcizes them - limited to christians
 	# option = {
 	# 	name = court.6020.a
@@ -24387,18 +24387,19 @@ court.8110 = {
     	        }
     	        desc = court.8110.desc.heretic
     	    }
-    	    triggered_desc = {
-    	        trigger = {
-    	        	NOT = {
-    	        		religion = { is_in_family = rf_pagan }
-    	        	}
-    	        	scope:prisoner_1 = {
-    	        		NOT = { religion = ROOT.religion }
-    	        		religion = { is_in_family = rf_pagan }
-    	        	}
-    	        }
-    	        desc = court.8110.desc.heathen
-    	    }
+			#L5R Disabled
+    	    # triggered_desc = {
+    	    #     trigger = {
+    	    #     	NOT = {
+    	    #     		religion = { is_in_family = rf_pagan }
+    	    #     	}
+    	    #     	scope:prisoner_1 = {
+    	    #     		NOT = { religion = ROOT.religion }
+    	    #     		religion = { is_in_family = rf_pagan }
+    	    #     	}
+    	    #     }
+    	    #     desc = court.8110.desc.heathen
+    	    # }
     	    triggered_desc = {
     	        trigger = {
     	        	NOT = { scope:prisoner_1.religion = ROOT.religion }
@@ -24427,13 +24428,14 @@ court.8110 = {
     	        				NOT = { faith = ROOT.faith }
     	        				religion = ROOT.religion
     	        			}
-    	        			AND = { # Heathen
-    	        				NOT = {
-			    	        		ROOT.religion = { is_in_family = rf_pagan }
-			    	        	}
-			    	        	NOT = { religion = ROOT.religion }
-			    	        	religion = { is_in_family = rf_pagan }
-			    	        }
+							#L5R Disabled
+    	        			# AND = { # Heathen
+    	        			# 	NOT = {
+			    	        # 		ROOT.religion = { is_in_family = rf_pagan }
+			    	        # 	}
+			    	        # 	NOT = { religion = ROOT.religion }
+			    	        # 	religion = { is_in_family = rf_pagan }
+			    	        # }
 			    	        NOT = { religion = ROOT.religion } # Infidel
     	        		}
     	        	}

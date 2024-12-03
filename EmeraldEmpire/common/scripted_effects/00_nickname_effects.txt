@@ -3350,7 +3350,7 @@ assign_random_nickname_effect = {
 			25 = {
 				trigger = {
 					piety_level >= 2
-					# faith.religion = { is_in_family = rf_abrahamic } # Rokugan
+					# faith.religion = { is_in_family = rf_abrahamic } # L5R Disabled
 					days_of_continuous_peace >= 700
 					ai_has_economical_boom_personality = yes
 					any_held_title = {

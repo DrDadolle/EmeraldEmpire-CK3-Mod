@@ -175,54 +175,55 @@ legend_events.0001 = {
 					value = flag:ancestral_saint
 				}
 			}
-			10 = { # I am descended from an old God
-				trigger = {
-					NOT = { religion = { is_in_family = rf_pagan } }
-					any_ancestor = {
-						even_if_dead = yes
-						is_alive = no
-						religion = { is_in_family = rf_pagan }
-					}
-				}
-				random_ancestor = {
-					even_if_dead = yes
-					limit = {
-						religion = { is_in_family = rf_pagan }
-						is_alive = no
-					}
-					weight = {
-						base = 1
-						modifier = {
-							add = learning
-						}
-						modifier = {
-							factor = 3
-							OR = {
-								num_virtuous_traits = {
-									faith = root.faith
-									value >= 1
-								}
-								has_trait = saint
-							}
-						}
-						modifier = {
-							factor = 0.1
-							OR = {
-								num_sinful_traits = {
-									faith = root.faith
-									value >= 1
-								}
-								has_trait = excommunicated
-							}
-						}
-					}
-					save_scope_as = legend_character
-				}
-				set_variable = {
-					name = legend_seed_to_give
-					value = flag:old_godly_descent
-				}
-			}
+			#L5R Disabled
+			# 10 = { # I am descended from an old God
+			# 	trigger = {
+			# 		NOT = { religion = { is_in_family = rf_pagan } }
+			# 		any_ancestor = {
+			# 			even_if_dead = yes
+			# 			is_alive = no
+			# 			religion = { is_in_family = rf_pagan }
+			# 		}
+			# 	}
+			# 	random_ancestor = {
+			# 		even_if_dead = yes
+			# 		limit = {
+			# 			religion = { is_in_family = rf_pagan }
+			# 			is_alive = no
+			# 		}
+			# 		weight = {
+			# 			base = 1
+			# 			modifier = {
+			# 				add = learning
+			# 			}
+			# 			modifier = {
+			# 				factor = 3
+			# 				OR = {
+			# 					num_virtuous_traits = {
+			# 						faith = root.faith
+			# 						value >= 1
+			# 					}
+			# 					has_trait = saint
+			# 				}
+			# 			}
+			# 			modifier = {
+			# 				factor = 0.1
+			# 				OR = {
+			# 					num_sinful_traits = {
+			# 						faith = root.faith
+			# 						value >= 1
+			# 					}
+			# 					has_trait = excommunicated
+			# 				}
+			# 			}
+			# 		}
+			# 		save_scope_as = legend_character
+			# 	}
+			# 	set_variable = {
+			# 		name = legend_seed_to_give
+			# 		value = flag:old_godly_descent
+			# 	}
+			# }
 			10 = { # I was raised by dangerous animals
 				select_local_animal_effect = { TYPE = dangerous }
 				set_variable = {
