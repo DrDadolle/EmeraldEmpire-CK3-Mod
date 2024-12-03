@@ -648,17 +648,18 @@ tradition_ep3_cultivated_sophistication = {
 	
 	ai_will_do = {
 		value = 200
-		if = {
-			limit = { # Admin should be more into this
-				OR = {
-					this = culture:greek
-					any_parent_culture_or_above = {
-						this = culture:greek
-					}
-					has_cultural_pillar = heritage_byzantine
-				}
-			}
-			multiply = 2
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = { # Admin should be more into this
+		# 		OR = {
+		# 			this = culture:greek
+		# 			any_parent_culture_or_above = {
+		# 				this = culture:greek
+		# 			}
+		# 			has_cultural_pillar = heritage_byzantine
+		# 		}
+		# 	}
+		# 	multiply = 2
+		# }
 	}
 }

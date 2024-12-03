@@ -708,16 +708,17 @@ tradition_fp3_pragmatic_creed = {
 			}
 			multiply = 0
 		}
-		if = {
-			limit = {
-				NOT = { # Less likely for cultures who doesn't descend from Daylamite
-					any_parent_culture_or_above = {
-						this = culture:daylamite
-					}
-				}
-			}
-			multiply = 0.75
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		NOT = { # Less likely for cultures who doesn't descend from Daylamite
+		# 			any_parent_culture_or_above = {
+		# 				this = culture:daylamite
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0.75
+		# }
 	}
 }
 
