@@ -2128,230 +2128,231 @@
 ############Minor events triggered by the duel in fp3_yearly.8004.a#############
 
 #Hidden event, to set up the result of the duel
-fp3_yearly.8005 = {
-	hidden = yes
+#Disabled
+# fp3_yearly.8005 = {
+# 	hidden = yes
 
-	immediate = {
-		if = {
-			limit = {
-				scope:parent = scope:sc_victor
-			}
-			trigger_event = { id = fp3_yearly.8007 days = 1 }
-		}
-		else = {
-			trigger_event = { id = fp3_yearly.8008 days = 1 }
-		}
-	}
-}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				scope:parent = scope:sc_victor
+# 			}
+# 			trigger_event = { id = fp3_yearly.8007 days = 1 }
+# 		}
+# 		else = {
+# 			trigger_event = { id = fp3_yearly.8008 days = 1 }
+# 		}
+# 	}
+# }
+#Disabled
+# #Hidden event; the bout became invalidated, inform affected parties.
+# fp3_yearly.8006 = {
+# 	hidden = yes
 
-#Hidden event; the bout became invalidated, inform affected parties.
-fp3_yearly.8006 = {
-	hidden = yes
+# 	immediate = {
+# 		# Inform both parties that the duel has invalidated.
+# 		scope:parent = {
+# 			send_interface_toast = {	
+# 				title = fp1_yearly.2000.trigger_failure #reused from an fp1 event, so we can save some translation resources
+# 				left_icon = scope:fp3_child_to_leave
+# 			}
+# 		}
+# 	}
+# }
+#Disabled
+# # Beat child in combat
+# fp3_yearly.8007 = {
+# 	type = character_event
+# 	title = fp3_yearly.8007.t
+# 	desc = fp3_yearly.8007.desc
+# 	theme = family
+# 	left_portrait = {
+# 		character = scope:fp3_child_to_leave
+# 		animation = pain
+# 	}
+# 	right_portrait = {
+# 		character = root
+# 		animation = aggressive_sword
+# 	}
+# 	override_background = { reference = courtyard }
 
-	immediate = {
-		# Inform both parties that the duel has invalidated.
-		scope:parent = {
-			send_interface_toast = {	
-				title = fp1_yearly.2000.trigger_failure #reused from an fp1 event, so we can save some translation resources
-				left_icon = scope:fp3_child_to_leave
-			}
-		}
-	}
-}
+# 	trigger = {
 
-# Beat child in combat
-fp3_yearly.8007 = {
-	type = character_event
-	title = fp3_yearly.8007.t
-	desc = fp3_yearly.8007.desc
-	theme = family
-	left_portrait = {
-		character = scope:fp3_child_to_leave
-		animation = pain
-	}
-	right_portrait = {
-		character = root
-		animation = aggressive_sword
-	}
-	override_background = { reference = courtyard }
+# 	}
 
-	trigger = {
+# 	immediate = {
+		
+# 	}
 
-	}
+# 	option = { # I will not be found wanting
+# 		name = fp3_yearly.8007.a
+		
+# 		add_piety = medium_piety_gain
+		
+# 		scope:fp3_child_to_leave = {
+# 			add_character_modifier = {
+# 				modifier = fp3_dutiful_scion_modifier 
+# 				years = 25
+# 			}
+# 		}
+		
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
 
-	immediate = {
+# 	option = { # # Good. I have real responsibilities for you.
+# 		name = fp3_yearly.8007.b
 		
-	}
+# 		add_prestige = medium_prestige_gain
+		
+# 		scope:fp3_child_to_leave = {
+# 			add_character_modifier = {
+# 				modifier = fp3_dutiful_scion_modifier 
+# 				years = 25
+# 			}
+# 		}
+		
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
 
-	option = { # I will not be found wanting
-		name = fp3_yearly.8007.a
-		
-		add_piety = medium_piety_gain
-		
-		scope:fp3_child_to_leave = {
-			add_character_modifier = {
-				modifier = fp3_dutiful_scion_modifier 
-				years = 25
-			}
-		}
-		
-		ai_chance = {
-			base = 100
-		}
-	}
+# 	option = { #And now you must marry!
+# 		name = fp3_yearly.8007.c
 
-	option = { # # Good. I have real responsibilities for you.
-		name = fp3_yearly.8007.b
+# 		trigger = {
+# 			scope:fp3_child_to_leave = {
+# 				AND = {
+# 					is_married = no
+# 					is_betrothed = no
+# 				}
+# 			}
+# 		}
 		
-		add_prestige = medium_prestige_gain
+# 		root.dynasty = { add_dynasty_prestige = minor_dynasty_prestige_value }
 		
-		scope:fp3_child_to_leave = {
-			add_character_modifier = {
-				modifier = fp3_dutiful_scion_modifier 
-				years = 25
-			}
-		}
+# 		scope:fp3_child_to_leave = {
+# 			add_character_modifier = {
+# 				modifier = fp3_marriage_material_modifier
+# 				years = 10
+# 			}
+# 		}
 		
-		ai_chance = {
-			base = 100
-		}
-	}
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
+# }
+#Disabled
+# # Beaten by child in combat
+# fp3_yearly.8008 = {
+# 	type = character_event
+# 	title = fp3_yearly.8008.t
+# 	desc = fp3_yearly.8008.desc
+# 	theme = family
+# 	left_portrait = {
+# 		character = root
+# 		animation = fear
+# 	}
+# 	right_portrait = {
+# 		character = scope:fp3_child_to_leave
+# 		animation = aggressive_sword
+# 	}
+# 	override_background = { reference = courtyard }
 
-	option = { #And now you must marry!
-		name = fp3_yearly.8007.c
+# 	trigger = {
 
-		trigger = {
-			scope:fp3_child_to_leave = {
-				AND = {
-					is_married = no
-					is_betrothed = no
-				}
-			}
-		}
-		
-		root.dynasty = { add_dynasty_prestige = minor_dynasty_prestige_value }
-		
-		scope:fp3_child_to_leave = {
-			add_character_modifier = {
-				modifier = fp3_marriage_material_modifier
-				years = 10
-			}
-		}
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-}
+# 	}
 
-# Beaten by child in combat
-fp3_yearly.8008 = {
-	type = character_event
-	title = fp3_yearly.8008.t
-	desc = fp3_yearly.8008.desc
-	theme = family
-	left_portrait = {
-		character = root
-		animation = fear
-	}
-	right_portrait = {
-		character = scope:fp3_child_to_leave
-		animation = aggressive_sword
-	}
-	override_background = { reference = courtyard }
+# 	immediate = {
+		
+# 	}
 
-	trigger = {
+# 	option = { # My child I can lose, but my gold... 
+# 		name = fp3_yearly.8008.a
 
-	}
+# 		trigger = {
+# 			has_trait = greedy 
+# 		}
+		
+# 		pay_short_term_gold = {
+# 			target = scope:fp3_child_to_leave
+# 			gold = minor_gold_value
+# 		}
+		
+# 		add_stress = medium_stress_impact_gain 
+		
+# 		scope:fp3_child_to_leave = {
+# 			fp3_child_leaves_effect = yes 
+# 			if = {
+# 				limit = { 
+# 					NOT = { has_trait = lifestyle_blademaster }
+# 				}
+# 				add_trait = lifestyle_blademaster
+# 			}
+# 		}
+		
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
 
-	immediate = {
-		
-	}
+# 	option = { # It would have been better to be a eunuch...
+# 		name = fp3_yearly.8008.b
 
-	option = { # My child I can lose, but my gold... 
-		name = fp3_yearly.8008.a
+# 		trigger = {
+# 			is_female = no
+# 			NOT = { has_trait = eunuch }
+# 		}
+		
+# 		pay_short_term_gold = {
+# 			target = scope:fp3_child_to_leave
+# 			gold = minor_gold_value
+# 		}
+		
+# 		add_prestige = medium_prestige_loss
+		
+# 		scope:fp3_child_to_leave = {
+# 			fp3_child_leaves_effect = yes 
+# 			if = {
+# 				limit = { 
+# 					NOT = { has_trait = lifestyle_blademaster }
+# 				}
+# 				add_trait = lifestyle_blademaster
+# 			}
+# 		}
+		
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
 
-		trigger = {
-			has_trait = greedy 
-		}
+# 	option = { # Fate will bring us together again, you will see. 
+# 		name = fp3_yearly.8008.c
 		
-		pay_short_term_gold = {
-			target = scope:fp3_child_to_leave
-			gold = minor_gold_value
-		}
+# 		pay_short_term_gold = {
+# 			target = scope:fp3_child_to_leave
+# 			gold = minor_gold_value
+# 		}
 		
-		add_stress = medium_stress_impact_gain 
+# 		add_prestige = medium_prestige_loss
 		
-		scope:fp3_child_to_leave = {
-			fp3_child_leaves_effect = yes 
-			if = {
-				limit = { 
-					NOT = { has_trait = lifestyle_blademaster }
-				}
-				add_trait = lifestyle_blademaster
-			}
-		}
+# 		scope:fp3_child_to_leave = {
+# 			fp3_child_leaves_effect = yes 
+# 			if = {
+# 				limit = { 
+# 					NOT = { has_trait = lifestyle_blademaster }
+# 				}
+# 				add_trait = lifestyle_blademaster
+# 			}
+# 		}
 		
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = { # It would have been better to be a eunuch...
-		name = fp3_yearly.8008.b
-
-		trigger = {
-			is_female = no
-			NOT = { has_trait = eunuch }
-		}
-		
-		pay_short_term_gold = {
-			target = scope:fp3_child_to_leave
-			gold = minor_gold_value
-		}
-		
-		add_prestige = medium_prestige_loss
-		
-		scope:fp3_child_to_leave = {
-			fp3_child_leaves_effect = yes 
-			if = {
-				limit = { 
-					NOT = { has_trait = lifestyle_blademaster }
-				}
-				add_trait = lifestyle_blademaster
-			}
-		}
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = { # Fate will bring us together again, you will see. 
-		name = fp3_yearly.8008.c
-		
-		pay_short_term_gold = {
-			target = scope:fp3_child_to_leave
-			gold = minor_gold_value
-		}
-		
-		add_prestige = medium_prestige_loss
-		
-		scope:fp3_child_to_leave = {
-			fp3_child_leaves_effect = yes 
-			if = {
-				limit = { 
-					NOT = { has_trait = lifestyle_blademaster }
-				}
-				add_trait = lifestyle_blademaster
-			}
-		}
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-}
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
+# }
 
 #############################Duel events end############################
 #########################################################################

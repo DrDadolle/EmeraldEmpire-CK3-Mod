@@ -242,36 +242,36 @@ ignores_gender_army_rules = {
 	icon = martial_positive
 	martial = 1
 }
-
-offended_eastern_modifier = {
-	icon = diplomacy_negative
-	#L5R Disabled
-	# rf_eastern_opinion = -10
-}
-
-offended_pagan_modifier = {
-	icon = diplomacy_negative
-	#L5R Disabled
-	# rf_pagan_opinion = -10
-}
-
-offended_christian_modifier = {
-	icon = diplomacy_negative
-	#L5R Disabled
-	# christianity_religion_opinion = -10
-}
-
-offended_muslim_modifier = {
-	icon = diplomacy_negative
-	#L5R Disabled
-	# islam_religion_opinion = -10
-}
-
-offended_jewish_modifier = {
-	icon = diplomacy_negative
-	#L5R Disabled
-	# judaism_religion_opinion = -10
-}
+#L5R Disabled
+# offended_eastern_modifier = {
+# 	icon = diplomacy_negative
+# 	#L5R Disabled
+# 	# rf_eastern_opinion = -10
+# }
+#L5R Disabled
+# offended_pagan_modifier = {
+# 	icon = diplomacy_negative
+# 	#L5R Disabled
+# 	# rf_pagan_opinion = -10
+# }
+#L5R Disabled
+# offended_christian_modifier = {
+# 	icon = diplomacy_negative
+# 	#L5R Disabled
+# 	# christianity_religion_opinion = -10
+# }
+#L5R Disabled
+# offended_muslim_modifier = {
+# 	icon = diplomacy_negative
+# 	#L5R Disabled
+# 	# islam_religion_opinion = -10
+# }
+#L5R Disabled
+# offended_jewish_modifier = {
+# 	icon = diplomacy_negative
+# 	#L5R Disabled
+# 	# judaism_religion_opinion = -10
+# }
 
 pampered_by_locals_modifier = {
 	icon = health_positive

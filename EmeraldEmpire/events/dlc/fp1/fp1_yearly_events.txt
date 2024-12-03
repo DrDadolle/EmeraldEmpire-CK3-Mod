@@ -3292,7 +3292,8 @@ fp1_yearly.0065 = {
 # by Ewan Cowhig Croft
 # 0071 - 0090
 ##################################################
-
+#L5R Modified
+#L5R TODO Modify to replace with real Rokugani monster
 scripted_trigger fp1_0071_loveli_lakes_trigger = {
 	has_trait = shieldmaiden
 	is_courtier_of = root
@@ -3377,13 +3378,21 @@ fp1_yearly.0071 = {
 		NOT = { has_character_flag = had_event_fp1_yearly_0071 }
 		is_landed = yes
 		# Must be a tribal in Scandinavia.
-		government_has_flag = government_is_tribal
-		fp1_is_in_scandinavia = yes
+		#L5R Disabled
+		# government_has_flag = government_is_tribal
+		# fp1_is_in_scandinavia = yes
 		# With a rural, North Germanic capital.
 		capital_county = {
 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			development_level <= terrible_development_level
+			
+			#L5R Modified
+			OR = {
+				title_province = { geographical_region = rokugan_dragon }
+				title_province = { geographical_region = rokugan_shinomen_mori }
+			}
+			#L5R Disabled
+			# culture = { has_cultural_pillar = heritage_north_germanic }
+			# development_level <= terrible_development_level
 			# And ensure it doesn't already have a troll problem.
 			NOT = { has_county_modifier = fp1_yearly_0071_troll_attacks_modifier }
 		}
@@ -3779,7 +3788,7 @@ scripted_effect fp1_0081_flee_option_effect = {
 	fp1_0071_apply_hungry_troll_modifier_effect = yes
 }
 
-#	Troll: towering bear.
+	Troll: towering bear.
 fp1_yearly.0081 = {
 	type = character_event
 	title = fp1_yearly.0081.t

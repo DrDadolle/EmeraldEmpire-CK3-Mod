@@ -47,8 +47,9 @@ faith_conversion.0002 = {
 		remove_character_modifier = vow_of_poverty_modifier
 		remove_character_modifier = temporal_condemnation_modifier
 		remove_character_modifier = ultimate_blasphemer_modifier
-		remove_character_modifier = defiant_high_king_conversion_boost_modifier
-		remove_character_modifier = defiant_high_queen_conversion_boost_modifier
+		#L5R Disabled
+		# remove_character_modifier = defiant_high_king_conversion_boost_modifier
+		# remove_character_modifier = defiant_high_queen_conversion_boost_modifier
 		remove_character_modifier = fp1_jomsvikings_caused_faith_crisis_modifier
 		remove_character_modifier = fp2_opportunistic_schismatic_modifier
 		remove_character_modifier = fp2_friend_of_the_old_ways_modifier
