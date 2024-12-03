@@ -366,330 +366,348 @@ martial_strategy.1051 = {
 }
 
 
-# #Texts on old battles
-# 	#by Mathilda Bjarnehed
-# #Read an old scroll or a newer tome?
-# martial_strategy.2000 = {
-# 	type = character_event
-# 	title = martial_strategy.2000.t
-# 	desc = {
-# 		desc = martial_strategy.2000.start.desc
-# 		random_valid = {
-# 			triggered_desc = {
-# 				trigger = {
-# 					game_start_date >= 1066.10.15
-# 					location = { geographical_region = world_europe }
-# 				}
-# 				desc = martial_strategy.2000.hastings.desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					location = {
-# 						NOR = {
-# 							geographical_region = world_india
-# 							geographical_region = world_steppe
-# 						}
-# 					}
-# 					NOT = { faith = { religion_tag = islam_religion } }
-# 				}
-# 				desc = martial_strategy.2000.tours.desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					location = {
-# 						NOR = {
-# 							geographical_region = world_india
-# 							geographical_region = world_steppe
-# 						}
-# 					}
-# 					faith = { religion_tag = islam_religion }
-# 				}
-# 				desc = martial_strategy.2000.palaceofthemartyrs.desc #(tours but arabic name!)
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					location = {
-# 						NOR = {
-# 							geographical_region = world_india
-# 							geographical_region = world_steppe
-# 						}
-# 					}
-# 				}
-# 				desc = martial_strategy.2000.catalaunianplains.desc #Not India/plains
-# 			}
-# 			desc = martial_strategy.2000.constantinople.desc
-# 			triggered_desc = {
-# 				trigger = {
-# 					location = {
-# 						NOR = {
-# 							geographical_region = world_europe
-# 							geographical_region = world_africa
-# 						}
-# 					}
-# 				}
-# 				desc = martial_strategy.2000.vapati.desc
-# 			}
-# 		}
-# 		desc = martial_strategy.2000.end.desc
-# 	}
-# 	theme = martial_strategy_focus
-# 	override_background = {
-# 		reference = study
-# 	}
+#Texts on old battles
+	#by Mathilda Bjarnehed
+#Read an old scroll or a newer tome?
+#L5R TODO modified
+martial_strategy.2000 = {
+	type = character_event
+	title = martial_strategy.2000.t
+	desc = {
+		desc = martial_strategy.2000.start.desc
+		random_valid = {
+			#L5R Modified
+			# Phoenix Dragon War
+			triggered_desc = {
+				trigger = {
+					# game_start_date >= 1066.10.15
+					location = { 
+						OR = { 
+							 geographical_region = rokugan_dragon 
+							 geographical_region = rokugan_phoenix 
+							}
+						}
+				}
+				desc = martial_strategy.2000.hastings.desc
+			}
+			#L5R Modified
+			#Siege of Shiro Kuni
+			triggered_desc = {
+				trigger = {
+					location = {
+						OR = {
+							geographical_region = rokugan_crab
+						}
+					}
+					# NOT = { faith = { religion_tag = islam_religion } }
+				}
+				desc = martial_strategy.2000.tours.desc
+			}
+			#L5R Modified
+			#Dragon Lion War
+			triggered_desc = {
+				trigger = {
+					location = {
+						OR = {
+							geographical_region = rokugan_dragon
+							geographical_region = rokugan_lion
+						}
+					}
+					# faith = { religion_tag = islam_religion }
+				}
+				desc = martial_strategy.2000.palaceofthemartyrs.desc #(tours but arabic name!)
+			}
+			#L5R Modified
+			# Phoenix Lion War
+			triggered_desc = {
+				trigger = {
+					location = {
+						OR = {
+							geographical_region = rokugan_lion
+							geographical_region = rokugan_phoenix
+						}
+					}
+				}
+				desc = martial_strategy.2000.catalaunianplains.desc #Not India/plains
+			}
+			#L5R Modified
+			# Lion Scorpion War
+			triggered_desc = {
+				trigger = {
+					location = {
+						OR = {
+							geographical_region = rokugan_lion
+							geographical_region = rokugan_scorpion
+						}
+					}
+				}
+				desc = martial_strategy.2000.vapati.desc
+			}
+			# Default L5R Four Wind Battle
+			desc = martial_strategy.2000.constantinople.desc
+		}
+		desc = martial_strategy.2000.end.desc
+	}
+	theme = martial_strategy_focus
+	override_background = {
+		reference = study
+	}
 
-# 	left_portrait = root
+	left_portrait = root
 
-# 	trigger = {
-# 		NOR = {
-# 			has_character_flag = had_event_martial_strategy_2000
-# 			has_character_modifier = studied_the_battle_of_gaixia
-# 			has_character_modifier = studied_the_battle_of_red_cliffs
-# 			has_character_modifier = studied_the_battle_of_thermopylae
-# 			has_character_modifier = studied_the_battle_of_teutoburg_forest
-# 			has_character_modifier = studied_an_old_battle
-# 			has_character_modifier = studying_ancient_texts
-# 		}
-# 		NOT = { has_character_modifier = studied_an_old_battle }
-# 	}
-
-
-# 	weight_multiplier = {
-# 		base = 1
-# 		modifier = {
-# 			add = { #-1 at 5 learning, 0 at 10 learning, 1 at 15 learning etc.
-# 				value = learning
-# 				subtract = medium_skill_rating
-# 				multiply = 0.2
-# 			}
-# 		}
-# 		modifier = { #Because the modifiers are awesome when you're commanding
-# 			is_at_war = yes
-# 			add = 1
-# 		}
-# 		upweight_for_focus_modifier = { FOCUS = martial_strategy_focus }
-# 	}
-
-# 	immediate = {
-# 		add_character_flag = {
-# 			flag = had_event_martial_strategy_2000
-# 			days = 1825
-# 		}
-# 	}
-
-# 	#Just read the new one
-# 	option = {
-# 		name = martial_strategy.2000.a
-
-# 		add_character_modifier = {
-# 			modifier = studied_an_old_battle
-# 			years = 10
-# 		}
-
-# 			stress_impact = {
-# 				diligent = minor_stress_impact_gain
-# 		}
-
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				has_trait = diligent
-# 				add = -90
-# 			}
-# 			modifier = {
-# 				add = {
-# 					value = learning
-# 					subtract = 10
-# 					multiply = -10
-# 				}
-# 			}
-# 		}
-# 	}
-
-# 	#Try to translate the old book
-# 	option = {
-# 		name = martial_strategy.2000.b
-# 		duel = {
-# 			skill = learning
-# 			value = medium_skill_rating
-# 			desc = outcome_in_a_few_days
-# 			60 = {
-# 				desc = martial_strategy.2000.b.success
-# 				compare_modifier = {
-# 					value = scope:duel_value
-# 					multiplier = 5
-# 				}
-# 				show_as_tooltip = {
-# 					add_martial_lifestyle_xp = medium_lifestyle_experience #Must match in 2000, 2001 and 2002
-# 				}
-# 				custom_tooltip = martial_strategy.2000.b.success.tt
-# 				trigger_event = { id = martial_strategy.2001 days = 5 } #You uncover old knowledge!
-
-# 			}
-# 			40 = {
-# 				desc = martial_strategy.2000.b.failure
-# 				compare_modifier = {
-# 					value = scope:duel_value
-# 					multiplier = -5
-# 				}
-# 				custom_tooltip = martial_strategy.2000.b.failure.tt
-# 				trigger_event = { id = martial_strategy.2002 days = 5 } #You fail to read the text
-# 			}
-# 		}
-
-# 		stress_impact = {
-# 			lazy = minor_stress_impact_gain
-# 			impatient = minor_stress_impact_gain
-# 		}
-
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				OR = {
-# 					has_trait = lazy
-# 					has_trait = impatient
-# 				}
-# 				add = -90
-# 			}
-# 			modifier = {
-# 				add = {
-# 					value = learning
-# 					subtract = 10
-# 					multiply = 10
-# 				}
-# 			}
-# 		}
-# 	}
-# }
-
-# #You translated the book and gained ancient knowledge!
-# martial_strategy.2001 = {
-# 	type = character_event
-# 	title = martial_strategy.2000.t
-# 	desc = {
-# 		desc = martial_strategy.2001.start.desc
-# 		random_valid = {
-# 			triggered_desc = {
-# 				trigger = { var:ancient_battle = flag:gaixia }
-# 				desc = martial_strategy.2001.gaixia.desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = { var:ancient_battle = flag:red_cliffs }
-# 				desc = martial_strategy.2001.red_cliffs.desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = { var:ancient_battle = flag:thermopylae }
-# 				desc = martial_strategy.2001.thermopylae.desc
-# 			}
-# 			triggered_desc = {
-# 				trigger = { var:ancient_battle = flag:teutoburg_forest }
-# 				desc = martial_strategy.2001.teutoburg_forest.desc
-# 			}
-# 			#triggered_desc = {
-# 			#	trigger = { var:ancient_battle = flag:cannae }
-# 			#	desc = martial_strategy.2001.cannae.desc
-# 			#}
-# 			#triggered_desc = {
-# 			#	trigger = { var:ancient_battle = flag:gaugamela }
-# 			#	desc = martial_strategy.2001.gaugamela.desc
-# 			#}
-# 		}
-# 	}
-# 	theme = martial_strategy_focus
-# 	override_background = {
-# 		reference = study
-# 	}
-
-# 	left_portrait = root
-
-# 	immediate = {
-# 		hidden_effect = {
-# 			#Which battle did you read about?
-# 			random_list = {
-# 				1 = {
-# 					modifier = {
-# 						factor = 0
-# 						has_character_modifier = studied_the_battle_of_gaixia
-# 					}
-# 					set_variable = { name = ancient_battle value = flag:gaixia }
-# 				}
-# 				1 = {
-# 					modifier = {
-# 						factor = 0
-# 						has_character_modifier = studied_the_battle_of_red_cliffs
-# 					}
-# 					set_variable = { name = ancient_battle value = flag:red_cliffs }
-# 				}
-# 				1 = {
-# 					modifier = {
-# 						factor = 0
-# 						has_character_modifier = studied_the_battle_of_thermopylae
-# 					}
-# 					set_variable = { name = ancient_battle value = flag:thermopylae }
-# 				}
-# 				1 = {
-# 					modifier = {
-# 						factor = 0
-# 						has_character_modifier = studied_the_battle_of_teutoburg_forest
-# 					}
-# 					set_variable = { name = ancient_battle value = flag:teutoburg_forest }
-# 				}
-# 				#1 = { set_variable = { name = ancient_battle value = flag:cannae } }
-# 				#1 = { set_variable = { name = ancient_battle value = flag:gaugamela } }
-# 			}
-# 		}
-# 	}
-
-# 	option = { #I must try this out!
-# 		name = martial_strategy.2001.a
+	trigger = {
+		NOR = {
+			has_character_flag = had_event_martial_strategy_2000
+			has_character_modifier = studied_the_battle_of_gaixia
+			has_character_modifier = studied_the_battle_of_red_cliffs
+			has_character_modifier = studied_the_battle_of_thermopylae
+			has_character_modifier = studied_the_battle_of_teutoburg_forest
+			has_character_modifier = studied_an_old_battle
+			has_character_modifier = studying_ancient_texts
+		}
+		NOT = { has_character_modifier = studied_an_old_battle }
+	}
 
 
-# 			if = {
-# 				limit = { var:ancient_battle = flag:gaixia }
-# 				add_character_modifier = {
-# 				modifier = studied_the_battle_of_gaixia
-# 				years = 20
-# 			}
-# 			}
-# 			if = {
-# 				limit = { var:ancient_battle = flag:red_cliffs }
-# 				add_character_modifier = {
-# 				modifier = studied_the_battle_of_red_cliffs
-# 				years = 20
-# 			}
-# 			}
-# 			if = {
-# 				limit = { var:ancient_battle = flag:thermopylae }
-# 				add_character_modifier = {
-# 				modifier = studied_the_battle_of_thermopylae
-# 				years = 20
-# 			}
-# 			}
-# 			if = {
-# 				limit = { var:ancient_battle = flag:teutoburg_forest }
-# 				add_character_modifier = {
-# 				modifier = studied_the_battle_of_teutoburg_forest
-# 				years = 20
-# 			}
-# 			}
-# 			add_martial_lifestyle_xp = medium_lifestyle_experience #Must match in 2000, 2001 and 2002
-# 	}
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = { #-1 at 5 learning, 0 at 10 learning, 1 at 15 learning etc.
+				value = learning
+				subtract = medium_skill_rating
+				multiply = 0.2
+			}
+		}
+		modifier = { #Because the modifiers are awesome when you're commanding
+			is_at_war = yes
+			add = 1
+		}
+		upweight_for_focus_modifier = { FOCUS = martial_strategy_focus }
+	}
 
-# 	option = { #So interesting, books are great!
-# 		name = martial_strategy.2001.b
+	immediate = {
+		add_character_flag = {
+			flag = had_event_martial_strategy_2000
+			days = 1825
+		}
+	}
 
-# 		add_character_modifier = {
-# 			modifier = studying_ancient_texts
-# 			years = 20
-# 		}
-# 		add_martial_lifestyle_xp = medium_lifestyle_experience #Must match in 2000, 2001 and 2002
-# 	}
+	#Just read the new one
+	option = {
+		name = martial_strategy.2000.a
 
-# 	after = {
-# 		hidden_effect = {
-# 			remove_variable = ancient_battle
-# 		}
-# 	}
-# }
+		add_character_modifier = {
+			modifier = studied_an_old_battle
+			years = 10
+		}
+
+			stress_impact = {
+				diligent = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			modifier = {
+				has_trait = diligent
+				add = -90
+			}
+			modifier = {
+				add = {
+					value = learning
+					subtract = 10
+					multiply = -10
+				}
+			}
+		}
+	}
+
+	#Try to translate the old book
+	option = {
+		name = martial_strategy.2000.b
+		duel = {
+			skill = learning
+			value = medium_skill_rating
+			desc = outcome_in_a_few_days
+			60 = {
+				desc = martial_strategy.2000.b.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 5
+				}
+				show_as_tooltip = {
+					add_martial_lifestyle_xp = medium_lifestyle_experience #Must match in 2000, 2001 and 2002
+				}
+				custom_tooltip = martial_strategy.2000.b.success.tt
+				trigger_event = { id = martial_strategy.2001 days = 5 } #You uncover old knowledge!
+
+			}
+			40 = {
+				desc = martial_strategy.2000.b.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -5
+				}
+				custom_tooltip = martial_strategy.2000.b.failure.tt
+				trigger_event = { id = martial_strategy.2002 days = 5 } #You fail to read the text
+			}
+		}
+
+		stress_impact = {
+			lazy = minor_stress_impact_gain
+			impatient = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			modifier = {
+				OR = {
+					has_trait = lazy
+					has_trait = impatient
+				}
+				add = -90
+			}
+			modifier = {
+				add = {
+					value = learning
+					subtract = 10
+					multiply = 10
+				}
+			}
+		}
+	}
+}
+
+#You translated the book and gained ancient knowledge!
+martial_strategy.2001 = {
+	type = character_event
+	title = martial_strategy.2000.t
+	desc = {
+		desc = martial_strategy.2001.start.desc
+		random_valid = {
+			triggered_desc = {
+				trigger = { var:ancient_battle = flag:gaixia }
+				desc = martial_strategy.2001.gaixia.desc
+			}
+			triggered_desc = {
+				trigger = { var:ancient_battle = flag:red_cliffs }
+				desc = martial_strategy.2001.red_cliffs.desc
+			}
+			triggered_desc = {
+				trigger = { var:ancient_battle = flag:thermopylae }
+				desc = martial_strategy.2001.thermopylae.desc
+			}
+			triggered_desc = {
+				trigger = { var:ancient_battle = flag:teutoburg_forest }
+				desc = martial_strategy.2001.teutoburg_forest.desc
+			}
+			#L5R Disabled
+			#triggered_desc = {
+			#	trigger = { var:ancient_battle = flag:cannae }
+			#	desc = martial_strategy.2001.cannae.desc
+			#}
+			#triggered_desc = {
+			#	trigger = { var:ancient_battle = flag:gaugamela }
+			#	desc = martial_strategy.2001.gaugamela.desc
+			#}
+		}
+	}
+	theme = martial_strategy_focus
+	override_background = {
+		reference = study
+	}
+
+	left_portrait = root
+
+	immediate = {
+		hidden_effect = {
+			#Which battle did you read about?
+			random_list = {
+				1 = {
+					modifier = {
+						factor = 0
+						has_character_modifier = studied_the_battle_of_gaixia
+					}
+					set_variable = { name = ancient_battle value = flag:gaixia }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_character_modifier = studied_the_battle_of_red_cliffs
+					}
+					set_variable = { name = ancient_battle value = flag:red_cliffs }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_character_modifier = studied_the_battle_of_thermopylae
+					}
+					set_variable = { name = ancient_battle value = flag:thermopylae }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_character_modifier = studied_the_battle_of_teutoburg_forest
+					}
+					set_variable = { name = ancient_battle value = flag:teutoburg_forest }
+				}
+				#L5R Disabled
+				#1 = { set_variable = { name = ancient_battle value = flag:cannae } }
+				#1 = { set_variable = { name = ancient_battle value = flag:gaugamela } }
+			}
+		}
+	}
+
+	option = { #I must try this out!
+		name = martial_strategy.2001.a
+
+
+			if = {
+				limit = { var:ancient_battle = flag:gaixia }
+				add_character_modifier = {
+				modifier = studied_the_battle_of_gaixia
+				years = 20
+			}
+			}
+			if = {
+				limit = { var:ancient_battle = flag:red_cliffs }
+				add_character_modifier = {
+				modifier = studied_the_battle_of_red_cliffs
+				years = 20
+			}
+			}
+			if = {
+				limit = { var:ancient_battle = flag:thermopylae }
+				add_character_modifier = {
+				modifier = studied_the_battle_of_thermopylae
+				years = 20
+			}
+			}
+			if = {
+				limit = { var:ancient_battle = flag:teutoburg_forest }
+				add_character_modifier = {
+				modifier = studied_the_battle_of_teutoburg_forest
+				years = 20
+			}
+			}
+			add_martial_lifestyle_xp = medium_lifestyle_experience #Must match in 2000, 2001 and 2002
+	}
+
+	option = { #So interesting, books are great!
+		name = martial_strategy.2001.b
+
+		add_character_modifier = {
+			modifier = studying_ancient_texts
+			years = 20
+		}
+		add_martial_lifestyle_xp = medium_lifestyle_experience #Must match in 2000, 2001 and 2002
+	}
+
+	after = {
+		hidden_effect = {
+			remove_variable = ancient_battle
+		}
+	}
+}
 
 # #You failed to translate the book... bummer!
  martial_strategy.2002 = {
