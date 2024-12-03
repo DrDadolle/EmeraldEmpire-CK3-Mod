@@ -347,7 +347,7 @@ pilgrimage.0500 = {
 		#This really should take care of most Hajj/Pilgrim-related trigger checks - if you don't have this trait, you haven't been pilgrimming before
 		NOR = { 
 			has_trait = pilgrim
-			has_trait = hajjaj
+			# has_trait = hajjaj #L5R Disabled
 		}
 		#Only one modifier for _you_
 		NOR = {
@@ -12017,7 +12017,7 @@ pilgrimage.6790 = {
 					value >= 50 #  standardize LEVEL 2
 				}
 			}					
-			has_trait = hajjaj
+			# has_trait = hajjaj # L5R Disabled
 			has_trait = lifestyle_mystic
 			has_trait = theologian
 		}

@@ -574,21 +574,22 @@ set_landless_government_effect = {
 }
 
 disburse_knight_errant_decision_rewards_effect = {
-	add_trait = knight_errant
-	house = {
-		add_house_modifier = {
-			modifier = ep3_knight_of_the_swan_house_modifier
-		}
-	}
-	custom_tooltip = knight_errant_decision_armor_tt
-	if = {
-		limit = { has_dlc_feature = legends }
-		create_swan_knight_legend_seed_effect = yes
-	}
-	if = {
-		limit = { has_character_modifier = bandit_king_modifier }
-		remove_character_modifier = bandit_king_modifier
-	}
+	#L5R Disabled
+	# add_trait = knight_errant
+	# house = {
+	# 	add_house_modifier = {
+	# 		modifier = ep3_knight_of_the_swan_house_modifier
+	# 	}
+	# }
+	# custom_tooltip = knight_errant_decision_armor_tt
+	# if = {
+	# 	limit = { has_dlc_feature = legends }
+	# 	create_swan_knight_legend_seed_effect = yes
+	# }
+	# if = {
+	# 	limit = { has_character_modifier = bandit_king_modifier }
+	# 	remove_character_modifier = bandit_king_modifier
+	# }
 }
 
 laamp_game_over_option_effect = {
@@ -7275,22 +7276,23 @@ ep3_send_akolouthos_message_loyal = {
 }
 
 ep3_send_akolouthos_message_varangian = {
-	send_interface_message = {
-		type = msg_akolouthos_steels_varangians
-		title = ep3_akolouthos_events.1000
-		desc =  ep3_akolouthos_events.1000_varangian_notification_tooltip
+	#L5R Disabled
+	# send_interface_message = {
+	# 	type = msg_akolouthos_steels_varangians
+	# 	title = ep3_akolouthos_events.1000
+	# 	desc =  ep3_akolouthos_events.1000_varangian_notification_tooltip
 		
-		left_icon = scope:trait_getter
-		scope:trait_getter = {
-			add_trait = varangian
-			add_opinion = {
-				target = root
-				modifier = loyalty_opinion
-				opinion = 40
-			}
-		}
-		custom_tooltip = akolouthos_effect_tooltip
-	}
+	# 	left_icon = scope:trait_getter
+	# 	scope:trait_getter = {
+	# 		add_trait = varangian
+	# 		add_opinion = {
+	# 			target = root
+	# 			modifier = loyalty_opinion
+	# 			opinion = 40
+	# 		}
+	# 	}
+	# 	custom_tooltip = akolouthos_effect_tooltip
+	# }
 }
 
 ep3_palace_looting_random_malus_effect = {

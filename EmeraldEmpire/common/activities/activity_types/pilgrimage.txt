@@ -1074,12 +1074,13 @@
 			pilgrimage_type_pious = {
 				#Crashes [sometimes] if you start the game with a ruler where this is default then tag over to another ruler where this isn't default
 				default = {
-					OR = {
-						NOT = { 
-							faith = { has_doctrine_parameter = mandatory_hajj } 
-						}
-						has_trait = hajjaj
-					}
+					#L5R Disabled ?
+					# OR = {
+					# 	NOT = { 
+					# 		faith = { has_doctrine_parameter = mandatory_hajj } 
+					# 	}
+					# 	has_trait = hajjaj
+					# }
 				}
 				is_valid = {
 					# L5R Disabled

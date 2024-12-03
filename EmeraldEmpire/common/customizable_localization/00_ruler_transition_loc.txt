@@ -585,15 +585,16 @@ DeathMessageOutro = {
 		}
 	}
 	# ACCOMPLISHMENTS
-	text = {
-		localization_key = SUCCESSION_EVENT_WINDOW_DEAD_OUTRO_ACCOMPLISHMENT_SAOSHYANT
-		trigger = {
-			has_trait = saoshyant
-		}
-		weight_multiplier = {
-			base = 100
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = SUCCESSION_EVENT_WINDOW_DEAD_OUTRO_ACCOMPLISHMENT_SAOSHYANT
+	# 	trigger = {
+	# 		has_trait = saoshyant
+	# 	}
+	# 	weight_multiplier = {
+	# 		base = 100
+	# 	}
+	# }
 	#L5R Disabled
 #	text = {
 #		localization_key = SUCCESSION_EVENT_WINDOW_DEAD_OUTRO_ACCOMPLISHMENT_RESTORER_ROME
