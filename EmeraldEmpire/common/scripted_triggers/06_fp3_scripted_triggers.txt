@@ -261,11 +261,12 @@ fp3_struggle_involves_one_supporter_and_one_detractor = {
 }
 
 fp3_struggle_scoped_is_the_arabian_caliph_trigger = {
+		#L5R Disabled 
+		always = no
 	# OR = {
 	# 	has_title = title:e_arabia
 	# 	has_title = title:d_sunni
 	# }
-	always = no
 }
 
 fp3_fortress_of_faith_county_trigger = {

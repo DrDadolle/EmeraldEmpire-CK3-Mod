@@ -1703,53 +1703,54 @@ activity_pilgrimage = {
 		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_jerusalem"
 	}
 	#Generic holy sites
-	background = {
-		trigger = { scope:host.religion = religion:zoroastrianism_religion }
-		reference = "gfx/interface/illustrations/event_scenes/fp3_temple.dds"
-		environment = "environment_event_fp3_temple"
-		ambience = "event:/DLC/FP1/SFX/Events/event_temple"
-	}
-	background = {
-		trigger = { activity_location.faith = faith:orthodox }
-		reference = "gfx/interface/illustrations/event_scenes/ep3_holysite_orthodox.dds"
-		environment = "environment_ep3_holysite_orthodox"
-		ambience = "event:/DLC/EP3/SFX/Events/Event_Images/ep3_evn_eventimage_orthodox_holy_site"
-	}
-	background = {
-		trigger = {
-			OR = {
-				activity_location.culture = { has_graphical_mena_culture_group_trigger = yes }
-				activity_location.culture = { has_building_gfx = iranian_building_gfx }
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_mena.dds"
-		environment = "environment_generic_holy_site_mena"
-		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_holysite_mena"
-	}
-	background = {
-		trigger = {
-			activity_location.culture = { has_graphical_india_culture_group_trigger = yes }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_indian.dds"
-		environment = "environment_indian_holy_site"
-		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_jungle"
-	}
-	background = {
-		trigger = {
-			activity_location.culture = { has_graphical_iberian_culture_group_trigger = yes }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp2_temple.dds"
-		environment = "environment_event_fp2_temple"
-		ambience = "event:/DLC/FP2/SFX/Events/temple"
-	}
-	background = {
-		trigger = {
-			activity_location.culture = { has_graphical_western_culture_group_trigger = yes }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_western.dds"
-		environment = "environment_western_holy_site"
-		ambience = "event:/SFX/Events/Backgrounds/temple_christian"
-	}
+	#L5R Disabled
+	# background = {
+	# 	trigger = { scope:host.religion = religion:zoroastrianism_religion }
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp3_temple.dds"
+	# 	environment = "environment_event_fp3_temple"
+	# 	ambience = "event:/DLC/FP1/SFX/Events/event_temple"
+	# }
+	# background = {
+	# 	trigger = { activity_location.faith = faith:orthodox }
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep3_holysite_orthodox.dds"
+	# 	environment = "environment_ep3_holysite_orthodox"
+	# 	ambience = "event:/DLC/EP3/SFX/Events/Event_Images/ep3_evn_eventimage_orthodox_holy_site"
+	# }
+	# background = {
+	# 	trigger = {
+	# 		OR = {
+	# 			activity_location.culture = { has_graphical_mena_culture_group_trigger = yes }
+	# 			activity_location.culture = { has_building_gfx = iranian_building_gfx }
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_mena.dds"
+	# 	environment = "environment_generic_holy_site_mena"
+	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_holysite_mena"
+	# }
+	# background = {
+	# 	trigger = {
+	# 		activity_location.culture = { has_graphical_india_culture_group_trigger = yes }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_indian.dds"
+	# 	environment = "environment_indian_holy_site"
+	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_jungle"
+	# }
+	# background = {
+	# 	trigger = {
+	# 		activity_location.culture = { has_graphical_iberian_culture_group_trigger = yes }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp2_temple.dds"
+	# 	environment = "environment_event_fp2_temple"
+	# 	ambience = "event:/DLC/FP2/SFX/Events/temple"
+	# }
+	# background = {
+	# 	trigger = {
+	# 		activity_location.culture = { has_graphical_western_culture_group_trigger = yes }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_western.dds"
+	# 	environment = "environment_western_holy_site"
+	# 	ambience = "event:/SFX/Events/Backgrounds/temple_christian"
+	# }
 	background = {
 		trigger = {
 			OR = {
@@ -1759,21 +1760,22 @@ activity_pilgrimage = {
 						government_has_flag = government_is_tribal
 					} 
 				}
-				activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
+				# activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes } #L5R Disabled
 			}
 		}
 		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
 		environment = "environment_event_garden"
 		ambience = "event:/DLC/FP1/SFX/Events/event_temple"
 	}
-	background = {
-		trigger = {
-			activity_location.culture = { has_graphical_norse_culture_group_trigger = yes }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_temple.dds"
-		environment = "environment_event_fp1_tribal_temple"
-		ambience = "event:/DLC/FP1/SFX/Events/event_temple"
-	}
+	 #L5R Disabled
+	# background = {
+	# 	trigger = {
+	# 		activity_location.culture = { has_graphical_norse_culture_group_trigger = yes }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_temple.dds"
+	# 	environment = "environment_event_fp1_tribal_temple"
+	# 	ambience = "event:/DLC/FP1/SFX/Events/event_temple"
+	# }
 	background = {
 		trigger = { 
 			scope:host.faith = { has_doctrine = tenet_sanctity_of_nature }
@@ -1782,12 +1784,13 @@ activity_pilgrimage = {
 		environment = "environment_event_forest"
 		ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
 	}
-	background = {
-		trigger = { scope:host.religion = religion:tengrism_religion }
-		reference = "gfx/interface/illustrations/event_scenes/forest.dds"
-		environment = "environment_event_forest"
-		ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
-	}
+	 #L5R Disabled
+	# background = {
+	# 	trigger = { scope:host.religion = religion:tengrism_religion }
+	# 	reference = "gfx/interface/illustrations/event_scenes/forest.dds"
+	# 	environment = "environment_event_forest"
+	# 	ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
+	# }
 
 	#Fallback
 	background = {

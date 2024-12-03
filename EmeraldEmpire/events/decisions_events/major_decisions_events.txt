@@ -873,22 +873,23 @@ major_decisions.2001 = {
 	desc = {
 		desc = major_decisions.2001.desc_first
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					any_sub_realm_barony = {
-						count >= 2
-						title_province = {
-							OR = {
-								has_building = generic_university
-								has_building = al_azhar_university
-								has_building = sankore_university
-								has_building = nalanda_university
-							}
-						}
-					}
-				}
-				desc = major_decisions.2001.desc_more
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		any_sub_realm_barony = {
+			# 			count >= 2
+			# 			title_province = {
+			# 				OR = {
+			# 					has_building = generic_university
+			# 					has_building = al_azhar_university
+			# 					has_building = sankore_university
+			# 					has_building = nalanda_university
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# 	desc = major_decisions.2001.desc_more
+			# }
 			desc = major_decisions.2001.desc
 		}
 	}
@@ -1302,9 +1303,10 @@ major_decisions.2011 = {
 			title_province = {
 				OR = {
 					has_building = generic_university
-					has_building = al_azhar_university
-					has_building = sankore_university
-					has_building = nalanda_university
+					#L5R Disabled
+					# has_building = al_azhar_university
+					# has_building = sankore_university
+					# has_building = nalanda_university
 				}
 			}
 		}

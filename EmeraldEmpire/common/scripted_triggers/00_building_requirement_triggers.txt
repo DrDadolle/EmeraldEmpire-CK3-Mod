@@ -307,29 +307,31 @@ building_hillside_grazing_requirement_terrain = {
 }
 
 building_wind_furnace_requirement_terrain = {
-	geographical_region = world_india
-	OR = {
-		is_coastal = yes
-		AND = {
-			scope:holder.top_liege = {
-				any_realm_county = {
-					any_county_province = {
-						has_building_or_higher = konasamudram_mines_01
-					}
-				}
-			}
-			duchy = {
-				any_de_jure_county = {
-					any_county_province = {
-						has_building_or_higher = konasamudram_mines_01
-					}
-				}
-			}
-		}
+	#L5R Disabled
+	always = no
+	# geographical_region = world_india
+	# OR = {
+	# 	is_coastal = yes
+	# 	AND = {
+	# 		scope:holder.top_liege = {
+	# 			any_realm_county = {
+	# 				any_county_province = {
+	# 					has_building_or_higher = konasamudram_mines_01
+	# 				}
+	# 			}
+	# 		}
+	# 		duchy = {
+	# 			any_de_jure_county = {
+	# 				any_county_province = {
+	# 					has_building_or_higher = konasamudram_mines_01
+	# 				}
+	# 			}
+	# 		}
+	# 	}
 		
-	}
+	# }
 	
-	scope:holder.culture = { has_innovation = innovation_wootz_steel }
+	# scope:holder.culture = { has_innovation = innovation_wootz_steel }
 }
 
 building_hill_forts_requirement_terrain = {
@@ -378,27 +380,30 @@ building_caravanserai_requirement_terrain = {
 				terrain = floodplains
 				terrain = steppe
 				terrain = desert_mountains
-				AND = {
-					geographical_region = world_europe_west_iberia
-					has_global_variable = fp2_struggle_conciliation_ending
-				}
+				#L5R Disabled
+				# AND = {
+				# 	geographical_region = world_europe_west_iberia
+				# 	has_global_variable = fp2_struggle_conciliation_ending
+				# }
 			}
 		}
 	}
 }
 
 building_qanat_requirement_terrain = {
-	county ?= {
-		any_county_province = {
-			OR = {
-				terrain = hills
-				terrain = mountains
-				terrain = desert_mountains
-				terrain = desert
-				terrain = drylands
-			}
-		}
-	}
+	#L5R Disabled
+	always = no
+	# county ?= {
+	# 	any_county_province = {
+	# 		OR = {
+	# 			terrain = hills
+	# 			terrain = mountains
+	# 			terrain = desert_mountains
+	# 			terrain = desert
+	# 			terrain = drylands
+	# 		}
+	# 	}
+	# }
 }
 
 has_any_special_mine_trigger = {
@@ -427,12 +432,14 @@ has_any_special_mine_trigger = {
 ######################################################################
 
 barony_cannot_construct_holding = {
-	OR = {
-		barony = title:b_hamadat_tinghert
-		barony = title:b_tidikelt
-		barony = title:b_wadi_irawan
-		barony = title:b_erg_ghati
-	}
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	barony = title:b_hamadat_tinghert
+	# 	barony = title:b_tidikelt
+	# 	barony = title:b_wadi_irawan
+	# 	barony = title:b_erg_ghati
+	# }
 }
 
 ######################################################################
@@ -606,37 +613,43 @@ generic_recruitment_building_innovations_trigger = {
 }
 
 islamic_special_building_trigger = {
-	OR = {
-		has_building = holy_site_great_mosque_of_djenne_01
-		has_building = holy_site_great_mosque_of_samarra_01
-		has_building = holy_site_prophetic_mosque_01
-		has_building = hagia_sophia_02
-		has_building = the_friday_mosque_01 # shared zoroastrian
-		has_building = holy_site_great_mosque_of_cordoba_01 # shared christian
-	}
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	has_building = holy_site_great_mosque_of_djenne_01
+	# 	has_building = holy_site_great_mosque_of_samarra_01
+	# 	has_building = holy_site_prophetic_mosque_01
+	# 	has_building = hagia_sophia_02
+	# 	has_building = the_friday_mosque_01 # shared zoroastrian
+	# 	has_building = holy_site_great_mosque_of_cordoba_01 # shared christian
+	# }
 }
 
 christian_special_building_trigger = {
-	OR = {
-		has_building = holy_site_cologne_cathedral_01
-		has_building = holy_site_canterbury_cathedral_01
-		has_building = holy_site_canterbury_cathedral_02
-		has_building = holy_site_canterbury_cathedral_03
-		has_building = temple_of_uppsala_01
-		has_building = temple_of_uppsala_02
-		has_building = lund_cathedral_01
-		has_building = holy_site_great_mosque_of_cordoba_01 # shared muslim
-	}
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	has_building = holy_site_cologne_cathedral_01
+	# 	has_building = holy_site_canterbury_cathedral_01
+	# 	has_building = holy_site_canterbury_cathedral_02
+	# 	has_building = holy_site_canterbury_cathedral_03
+	# 	has_building = temple_of_uppsala_01
+	# 	has_building = temple_of_uppsala_02
+	# 	has_building = lund_cathedral_01
+	# 	has_building = holy_site_great_mosque_of_cordoba_01 # shared muslim
+	# }
 }
 
 eastern_special_building_trigger = {
-	OR = {
-		has_building = buddhas_of_bamian_01
-		has_building = brihadeeswarar_temple_01
-		has_building = shwedagon_pagoda_01
-		has_building = ananda_temple_01
-		has_building = khajuraho_01
-	}
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	has_building = buddhas_of_bamian_01
+	# 	has_building = brihadeeswarar_temple_01
+	# 	has_building = shwedagon_pagoda_01
+	# 	has_building = ananda_temple_01
+	# 	has_building = khajuraho_01
+	# }
 }
 
 # Religious special building triggers
@@ -647,49 +660,52 @@ religious_special_building_exclusion_trigger = { # checks if any special buildin
 				barony = { is_holy_site_of = holder.faith }
 			}
 			OR = {
-				has_building = holy_site_cathedral_01
-				has_building = holy_site_mosque_01
-				has_building = holy_site_pagan_grand_temple_01
-				has_building = holy_site_indian_grand_temple_01
+				#L5R Disabled
+				# has_building = holy_site_cathedral_01
+				# has_building = holy_site_mosque_01
+				# has_building = holy_site_pagan_grand_temple_01
+				# has_building = holy_site_indian_grand_temple_01
 				has_building = holy_site_other_grand_temple_01
-				has_building = hagia_sophia_01
-				has_building = holy_site_mahabodhi_temple_01
-				has_building = holy_site_imam_ali_mosque_01
-				has_building = holy_site_great_mosque_of_mecca_01
-				islamic_special_building_trigger = yes
-				christian_special_building_trigger = yes
+				#L5R Disabled
+				# has_building = hagia_sophia_01
+				# has_building = holy_site_mahabodhi_temple_01
+				# has_building = holy_site_imam_ali_mosque_01
+				# has_building = holy_site_great_mosque_of_mecca_01
+				# islamic_special_building_trigger = yes
+				# christian_special_building_trigger = yes
 			}
 		}
-		AND = { # Islamic
-			NOT = { barony.holder.religion = religion:islam_religion }
-			islamic_special_building_trigger = yes
-		}
-		AND = { # Christian
-			NOT = { barony.holder.religion = religion:christianity_religion }
-			christian_special_building_trigger = yes
-		}
-		AND = { # Islamic/Zoroastrian
-			NOT = { barony.holder.religion = religion:zoroastrianism_religion }
-			has_building = the_friday_mosque_01 # shared muslim
-		}
-		AND = { # Eastern family
-			NOR = {
-				ROOT.religion = religion:hinduism_religion
-				ROOT.religion = religion:buddhism_religion
-				ROOT.religion = religion:jainism_religion
-				ROOT.religion = religion:taoism_religion
-				ROOT.religion = religion:zoroastrianism_religion
-			}
-			eastern_special_building_trigger = yes
-		}
-		# Judaism
-		AND = {
-			barony.holder.religion = religion:judaism_religion
-			has_building = dome_of_the_rock_01
-		}
-		AND = {
-			NOT = { barony.holder.religion = religion:judaism_religion }
-			has_building = temple_in_jerusalem_01
-		}
+		#L5R Disabled
+		# AND = { # Islamic
+		# 	NOT = { barony.holder.religion = religion:islam_religion }
+		# 	islamic_special_building_trigger = yes
+		# }
+		# AND = { # Christian
+		# 	NOT = { barony.holder.religion = religion:christianity_religion }
+		# 	christian_special_building_trigger = yes
+		# }
+		# AND = { # Islamic/Zoroastrian
+		# 	NOT = { barony.holder.religion = religion:zoroastrianism_religion }
+		# 	has_building = the_friday_mosque_01 # shared muslim
+		# }
+		# AND = { # Eastern family
+		# 	NOR = {
+		# 		ROOT.religion = religion:hinduism_religion
+		# 		ROOT.religion = religion:buddhism_religion
+		# 		ROOT.religion = religion:jainism_religion
+		# 		ROOT.religion = religion:taoism_religion
+		# 		ROOT.religion = religion:zoroastrianism_religion
+		# 	}
+		# 	eastern_special_building_trigger = yes
+		# }
+		# # Judaism
+		# AND = {
+		# 	barony.holder.religion = religion:judaism_religion
+		# 	has_building = dome_of_the_rock_01
+		# }
+		# AND = {
+		# 	NOT = { barony.holder.religion = religion:judaism_religion }
+		# 	has_building = temple_in_jerusalem_01
+		# }
 	}
 }
