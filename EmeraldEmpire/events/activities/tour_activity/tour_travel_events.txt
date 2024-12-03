@@ -728,12 +728,13 @@ tour_travel.1004 = {
 			factor = 2
 			has_trait = zealous
 		}
-		modifier = { # This is heavily based on Christian things so other faiths should not necessarily be excluded, but should be less likely to see it.
-			factor = 0.1
-			NOT = {
-				religion = { is_in_family = rf_abrahamic }
-			}
-		}
+		#L5R Disabled
+		# modifier = { # This is heavily based on Christian things so other faiths should not necessarily be excluded, but should be less likely to see it.
+		# 	factor = 0.1
+		# 	NOT = {
+		# 		religion = { is_in_family = rf_abrahamic }
+		# 	}
+		# }
 		modifier = { # The faith should not be selfish
 			factor = 0
 			faith = {
