@@ -1821,15 +1821,16 @@ decide_court_position_to_give_effect = {
 						}
 						$CANDIDATE$ = { add_character_flag = antiquarian_flag }
 					}
-					10 = {
-						trigger = {
-							can_appoint_char_to_court_position = {
-								CHAR = $CANDIDATE$
-								COURT_POS = chief_qadi_court_position
-							}
-						}
-						$CANDIDATE$ = { add_character_flag = qadi_flag }
-					}
+					chief_qadi_court_position
+					# 10 = {
+					# 	trigger = {
+					# 		can_appoint_char_to_court_position = {
+					# 			CHAR = $CANDIDATE$
+					# 			COURT_POS = chief_qadi_court_position
+					# 		}
+					# 	}
+					# 	$CANDIDATE$ = { add_character_flag = qadi_flag }
+					# }
 				}
 			}
 			else_if = {
@@ -2013,15 +2014,16 @@ decide_court_position_to_give_effect = {
 						}
 						$CANDIDATE$ = { add_character_flag = horse_flag }
 					}
-					10 = {
-						trigger = {
-							can_appoint_char_to_court_position = {
-								CHAR = $CANDIDATE$
-								COURT_POS = garuda_court_position
-							}
-						}
-						$CANDIDATE$ = { add_character_flag = garuda_flag }
-					}
+					#L5R Disabled
+					# 10 = {
+					# 	trigger = {
+					# 		can_appoint_char_to_court_position = {
+					# 			CHAR = $CANDIDATE$
+					# 			COURT_POS = garuda_court_position
+					# 		}
+					# 	}
+					# 	$CANDIDATE$ = { add_character_flag = garuda_flag }
+					# }
 					10 = {
 						trigger = {
 							can_appoint_char_to_court_position = {
@@ -2058,15 +2060,16 @@ decide_court_position_to_give_effect = {
 						}
 						$CANDIDATE$ = { add_character_flag = champion_flag }
 					}
-					10 = {
-						trigger = {
-							can_appoint_char_to_court_position = {
-								CHAR = $CANDIDATE$
-								COURT_POS = akolouthos_court_position
-							}
-						}
-						$CANDIDATE$ = { add_character_flag = akolouthos_flag }
-					}
+					#L5R Disabled
+					# 10 = {
+					# 	trigger = {
+					# 		can_appoint_char_to_court_position = {
+					# 			CHAR = $CANDIDATE$
+					# 			COURT_POS = akolouthos_court_position
+					# 		}
+					# 	}
+					# 	$CANDIDATE$ = { add_character_flag = akolouthos_flag }
+					# }
 				}
 			}
 		}
@@ -2102,13 +2105,14 @@ distribute_determined_court_position_effect = {
 				court_position = antiquarian_court_position
 			}
 		}
-		else_if = {
-			limit = { $CANDIDATE$ = { has_character_flag = qadi_flag } }
-			appoint_court_position = {
-				recipient = $CANDIDATE$
-				court_position = chief_qadi_court_position
-			}
-		}
+		#L5R Disabled
+		# else_if = {
+		# 	limit = { $CANDIDATE$ = { has_character_flag = qadi_flag } }
+		# 	appoint_court_position = {
+		# 		recipient = $CANDIDATE$
+		# 		court_position = chief_qadi_court_position
+		# 	}
+		# }
 		else_if = {
 			limit = { $CANDIDATE$ = { has_character_flag = taster_flag } }
 			appoint_court_position = {
@@ -2193,13 +2197,14 @@ distribute_determined_court_position_effect = {
 				court_position = master_of_horse_court_position
 			}
 		}
-		else_if = {
-			limit = { $CANDIDATE$ = { has_character_flag = garuda_flag } }
-			appoint_court_position = {
-				recipient = $CANDIDATE$
-				court_position = garuda_court_position
-			}
-		}
+		#L5R Disabled
+		# else_if = {
+		# 	limit = { $CANDIDATE$ = { has_character_flag = garuda_flag } }
+		# 	appoint_court_position = {
+		# 		recipient = $CANDIDATE$
+		# 		court_position = garuda_court_position
+		# 	}
+		# }
 		else_if = {
 			limit = { $CANDIDATE$ = { has_character_flag = hunt_flag } }
 			appoint_court_position = {
@@ -2235,13 +2240,14 @@ distribute_determined_court_position_effect = {
 				court_position = wet_nurse_court_position
 			}
 		}
-		else_if = {
-			limit = { $CANDIDATE$ = { has_character_flag = akolouthos_flag } }
-			appoint_court_position = {
-				recipient = $CANDIDATE$
-				court_position = akolouthos_court_position
-			}
-		}
+		#L5R Disabled
+		# else_if = {
+		# 	limit = { $CANDIDATE$ = { has_character_flag = akolouthos_flag } }
+		# 	appoint_court_position = {
+		# 		recipient = $CANDIDATE$
+		# 		court_position = akolouthos_court_position
+		# 	}
+		# }
 	}
 }
 

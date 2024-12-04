@@ -2895,76 +2895,77 @@ bp3_journey.1500 = {
 				}
 			}
 		}
-		else_if = {
-			limit = {
-				is_valid_to_hire_court_position_type = chief_qadi_court_position
-				# scope:location.religion = religion:islam_religion #L5R Disabled
-				any_pool_character = {
-					province = scope:location
-					culture = scope:location.culture
-					aptitude = {
-						court_position = chief_qadi_court_position
-						value >= 4
-					}
-					is_available_healthy_ai_adult = yes
-					chief_qadi_validity_trigger = { EMPLOYER = root }
-				}
-			}
-			random_pool_character = {
-				province = scope:location
-				limit = {
-					culture = scope:location.culture
-					aptitude = {
-						court_position = chief_qadi_court_position
-						value >= 4
-					}
-					is_available_healthy_ai_adult = yes
-					chief_qadi_validity_trigger = { EMPLOYER = root }
-				}
-				save_scope_as = local_character
-			}
-			if = {
-				limit = {
-					any_court_position_holder = {
-						type = chief_qadi_court_position
-					}
-				}
-				random_court_position_holder = {
-					type = chief_qadi_court_position
-					save_scope_as = current_holder
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				is_valid_to_hire_court_position_type = chief_qadi_court_position
-				# scope:location.religion = religion:islam_religion #L5R Disabled
-			}
-			create_character = {
-				template = chief_qadi_court_position_template
-				location = scope:location
-				culture = scope:location.culture
-				faith = scope:location.faith
-				save_scope_as = local_character
-			}
-			scope:local_character = {
-				add_character_flag = {
-					flag = silently_disappear_me
-					years = 1
-				}
-			}
-			if = {
-				limit = {
-					any_court_position_holder = {
-						type = chief_qadi_court_position
-					}
-				}
-				random_court_position_holder = {
-					type = chief_qadi_court_position
-					save_scope_as = current_holder
-				}
-			}
-		}
+		#L5R Disabled
+		# else_if = {
+		# 	limit = {
+		# 		is_valid_to_hire_court_position_type = chief_qadi_court_position
+		# 		# scope:location.religion = religion:islam_religion #L5R Disabled
+		# 		any_pool_character = {
+		# 			province = scope:location
+		# 			culture = scope:location.culture
+		# 			aptitude = {
+		# 				court_position = chief_qadi_court_position
+		# 				value >= 4
+		# 			}
+		# 			is_available_healthy_ai_adult = yes
+		# 			chief_qadi_validity_trigger = { EMPLOYER = root }
+		# 		}
+		# 	}
+		# 	random_pool_character = {
+		# 		province = scope:location
+		# 		limit = {
+		# 			culture = scope:location.culture
+		# 			aptitude = {
+		# 				court_position = chief_qadi_court_position
+		# 				value >= 4
+		# 			}
+		# 			is_available_healthy_ai_adult = yes
+		# 			chief_qadi_validity_trigger = { EMPLOYER = root }
+		# 		}
+		# 		save_scope_as = local_character
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			any_court_position_holder = {
+		# 				type = chief_qadi_court_position
+		# 			}
+		# 		}
+		# 		random_court_position_holder = {
+		# 			type = chief_qadi_court_position
+		# 			save_scope_as = current_holder
+		# 		}
+		# 	}
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		is_valid_to_hire_court_position_type = chief_qadi_court_position
+		# 		# scope:location.religion = religion:islam_religion #L5R Disabled
+		# 	}
+		# 	create_character = {
+		# 		template = chief_qadi_court_position_template
+		# 		location = scope:location
+		# 		culture = scope:location.culture
+		# 		faith = scope:location.faith
+		# 		save_scope_as = local_character
+		# 	}
+		# 	scope:local_character = {
+		# 		add_character_flag = {
+		# 			flag = silently_disappear_me
+		# 			years = 1
+		# 		}
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			any_court_position_holder = {
+		# 				type = chief_qadi_court_position
+		# 			}
+		# 		}
+		# 		random_court_position_holder = {
+		# 			type = chief_qadi_court_position
+		# 			save_scope_as = current_holder
+		# 		}
+		# 	}
+		# }
 		else_if = {
 			limit = {
 				any_pool_character = {
@@ -2991,17 +2992,18 @@ bp3_journey.1500 = {
 				}
 				save_scope_as = local_character
 			}
-			if = {
-				limit = {
-					any_court_position_holder = {
-						type = chief_qadi_court_position
-					}
-				}
-				random_court_position_holder = {
-					type = chief_qadi_court_position
-					save_scope_as = current_holder
-				}
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		any_court_position_holder = {
+			# 			type = chief_qadi_court_position
+			# 		}
+			# 	}
+			# 	random_court_position_holder = {
+			# 		type = chief_qadi_court_position
+			# 		save_scope_as = current_holder
+			# 	}
+			# }
 		}
 		else = {
 			create_character = {
@@ -3175,10 +3177,11 @@ bp3_journey.1500 = {
 					is_valid_to_hire_court_position_type = quartermaster_camp_officer
 					NOT = { employs_court_position = quartermaster_camp_officer }
 				}
-				AND = {
-					is_valid_to_hire_court_position_type = chief_qadi_court_position
-					NOT = { employs_court_position = chief_qadi_court_position }
-				}
+				#L5R Disabled
+				# AND = {
+				# 	is_valid_to_hire_court_position_type = chief_qadi_court_position
+				# 	NOT = { employs_court_position = chief_qadi_court_position }
+				# }
 				AND = {
 					is_valid_to_hire_court_position_type = high_almoner_court_position
 					NOT = { employs_court_position = high_almoner_court_position }
@@ -3368,7 +3371,8 @@ bp3_journey.1500 = {
 		trigger = {
 			OR = {
 				is_valid_to_hire_court_position_type = chief_forager_camp_officer
-				is_valid_to_hire_court_position_type = chief_qadi_court_position
+				#L5R Disabled
+				# is_valid_to_hire_court_position_type = chief_qadi_court_position
 				is_valid_to_hire_court_position_type = high_almoner_court_position
 			}
 			NOT = { has_activity_intent = journey_curiosity_intent }
