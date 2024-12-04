@@ -316,57 +316,57 @@ adopt_cultural_fashion_effect = {
 	#L5R Modified
 	if = {
 		limit = {
-			NOT = { culture = { has_clothing_gfx = rokugani_crane_clothing_gfx } }
-			scope:advanced_culture = { has_clothing_gfx = rokugani_crane_clothing_gfx }
+			NOT = { culture = { has_clothing_gfx = crane_clothing_gfx } }
+			scope:advanced_culture = { has_clothing_gfx = crane_clothing_gfx }
 		}
 		adopt_cultural_fashion_culture_effect = { CULTURE = crane }
 	}
 	else_if = {
 		limit = {
-			NOT = { culture = { has_clothing_gfx = rokugani_crab_clothing_gfx } }
-			scope:advanced_culture = { has_clothing_gfx = rokugani_crab_clothing_gfx }
+			NOT = { culture = { has_clothing_gfx = crab_clothing_gfx } }
+			scope:advanced_culture = { has_clothing_gfx = crab_clothing_gfx }
 		}
 		adopt_cultural_fashion_culture_effect = { CULTURE = crab }
 	}
 	else_if = {
 		limit = {
-			NOT = { culture = { has_clothing_gfx = rokugani_dragon_clothing_gfx } }
-			scope:advanced_culture = { has_clothing_gfx = rokugani_dragon_clothing_gfx }
+			NOT = { culture = { has_clothing_gfx = dragon_clothing_gfx } }
+			scope:advanced_culture = { has_clothing_gfx = dragon_clothing_gfx }
 		}
 		adopt_cultural_fashion_culture_effect = { CULTURE = dragon }
 	}
 	else_if = {
 		limit = {
-			NOT = { culture = { has_clothing_gfx = rokugani_phoenix_clothing_gfx } }
-			scope:advanced_culture = { has_clothing_gfx = rokugani_phoenix_clothing_gfx }
+			NOT = { culture = { has_clothing_gfx = phoenix_clothing_gfx } }
+			scope:advanced_culture = { has_clothing_gfx = phoenix_clothing_gfx }
 		}
 		adopt_cultural_fashion_culture_effect = { CULTURE = phoenix }
 	}
 	else_if = {
 		limit = {
-			NOT = { culture = { has_clothing_gfx = rokugani_lion_clothing_gfx } }
-			scope:advanced_culture = { has_clothing_gfx = rokugani_lion_clothing_gfx }
+			NOT = { culture = { has_clothing_gfx = lion_clothing_gfx } }
+			scope:advanced_culture = { has_clothing_gfx = lion_clothing_gfx }
 		}
 		adopt_cultural_fashion_culture_effect = { CULTURE = lion }
 	}
 	else_if = {
 		limit = {
-			NOT = { culture = { has_clothing_gfx = rokugani_scorpion_clothing_gfx } }
-			scope:advanced_culture = { has_clothing_gfx = rokugani_scorpion_clothing_gfx }
+			NOT = { culture = { has_clothing_gfx = scorpion_clothing_gfx } }
+			scope:advanced_culture = { has_clothing_gfx = scorpion_clothing_gfx }
 		}
 		adopt_cultural_fashion_culture_effect = { CULTURE = scorpion }
 	}
 	else_if = {
 		limit = {
-			NOT = { culture = { has_clothing_gfx = rokugani_unicorn_clothing_gfx } }
-			scope:advanced_culture = { has_clothing_gfx = rokugani_unicorn_clothing_gfx }
+			NOT = { culture = { has_clothing_gfx = unicorn_clothing_gfx } }
+			scope:advanced_culture = { has_clothing_gfx = unicorn_clothing_gfx }
 		}
 		adopt_cultural_fashion_culture_effect = { CULTURE = unicorn }
 	}
 	else_if = {
 		limit = {
-			NOT = { culture = { has_clothing_gfx = rokugani_imperial_clothing_gfx } }
-			scope:advanced_culture = { has_clothing_gfx = rokugani_imperial_clothing_gfx }
+			NOT = { culture = { has_clothing_gfx = imperial_clothing_gfx } }
+			scope:advanced_culture = { has_clothing_gfx = imperial_clothing_gfx }
 		}
 		adopt_cultural_fashion_culture_effect = { CULTURE = imperial }
 	}

@@ -35,7 +35,7 @@ portrait_crab_clothing_spouse_trigger = {
 }
 
 portrait_crab_clothing_contents_trigger = {
-	has_clothing_gfx = rokugani_crab_clothing_gfx
+	has_clothing_gfx = crab_clothing_gfx
 }
 
 ##### Crane Clan
@@ -52,7 +52,7 @@ portrait_crane_clothing_spouse_trigger = {
 }
 
 portrait_crane_clothing_contents_trigger = {
-	has_clothing_gfx = rokugani_crane_clothing_gfx
+	has_clothing_gfx = crane_clothing_gfx
 }
 
 ##### Dragon Clan
@@ -69,7 +69,7 @@ portrait_dragon_clothing_spouse_trigger = {
 }
 
 portrait_dragon_clothing_contents_trigger = {
-	has_clothing_gfx = rokugani_dragon_clothing_gfx
+	has_clothing_gfx = dragon_clothing_gfx
 }
 
 ##### Lion Clan
@@ -86,7 +86,7 @@ portrait_lion_clothing_spouse_trigger = {
 }
 
 portrait_lion_clothing_contents_trigger = {
-	has_clothing_gfx = rokugani_lion_clothing_gfx
+	has_clothing_gfx = lion_clothing_gfx
 }
 
 ##### Phoenix Clan
@@ -103,7 +103,7 @@ portrait_phoenix_clothing_spouse_trigger = {
 }
 
 portrait_phoenix_clothing_contents_trigger = {
-	has_clothing_gfx = rokugani_phoenix_clothing_gfx
+	has_clothing_gfx = phoenix_clothing_gfx
 }
 
 ##### Scorpion Clan
@@ -120,7 +120,7 @@ portrait_scorpion_clothing_spouse_trigger = {
 }
 
 portrait_scorpion_clothing_contents_trigger = {
-	has_clothing_gfx = rokugani_scorpion_clothing_gfx
+	has_clothing_gfx = scorpion_clothing_gfx
 }
 
 ##### Unicorn Clan
@@ -137,7 +137,7 @@ portrait_unicorn_clothing_spouse_trigger = {
 }
 
 portrait_unicorn_clothing_contents_trigger = {
-	has_clothing_gfx = rokugani_unicorn_clothing_gfx
+	has_clothing_gfx = unicorn_clothing_gfx
 }
 
 ##### Imperial Clan
@@ -154,7 +154,7 @@ portrait_imperial_clothing_spouse_trigger = {
 }
 
 portrait_imperial_clothing_contents_trigger = {
-	has_clothing_gfx = rokugani_imperial_clothing_gfx
+	has_clothing_gfx = imperial_clothing_gfx
 }
 
 ##### Minor Clan
@@ -171,7 +171,7 @@ portrait_minor_clothing_spouse_trigger = {
 }
 
 portrait_minor_clothing_contents_trigger = {
-	has_clothing_gfx = rokugani_minor_clothing_gfx
+	has_clothing_gfx = minor_clothing_gfx
 }
 
 
