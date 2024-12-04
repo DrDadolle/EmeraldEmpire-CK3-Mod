@@ -1670,69 +1670,69 @@ debug.342 = {
 	}
 }
 
-debug.343 = {
-	type = character_event
-	title = artifact_pedestal_reliquary_christian_name
-	desc = artifact_pedestal_reliquary_christian_description
-	theme = stewardship_wealth_focus
-	orphan = yes
+# debug.343 = {
+# 	type = character_event
+# 	title = artifact_pedestal_reliquary_christian_name
+# 	desc = artifact_pedestal_reliquary_christian_description
+# 	theme = stewardship_wealth_focus
+# 	orphan = yes
 
-	immediate = {
-		create_artifact_pedestal_reliquary_christian_effect = { OWNER = root }
-	}
+# 	immediate = {
+# 		create_artifact_pedestal_reliquary_christian_effect = { OWNER = root }
+# 	}
 
-	option = { 
-		name = debug_test_artifact_cloth_option
-	}
-}
+# 	option = { 
+# 		name = debug_test_artifact_cloth_option
+# 	}
+# }
 
-debug.344 = {
-	type = character_event
-	title = artifact_pedestal_reliquary_islam_name
-	desc = artifact_pedestal_reliquary_islam_description
-	theme = stewardship_wealth_focus
-	orphan = yes
+# debug.344 = {
+# 	type = character_event
+# 	title = artifact_pedestal_reliquary_islam_name
+# 	desc = artifact_pedestal_reliquary_islam_description
+# 	theme = stewardship_wealth_focus
+# 	orphan = yes
 
-	immediate = {
-		create_artifact_pedestal_reliquary_islam_effect = { OWNER = root }
-	}
+# 	immediate = {
+# 		create_artifact_pedestal_reliquary_islam_effect = { OWNER = root }
+# 	}
 
-	option = { 
-		name = debug_test_artifact_cloth_option
-	}
-}
+# 	option = { 
+# 		name = debug_test_artifact_cloth_option
+# 	}
+# }
 
-debug.345 = {
-	type = character_event
-	title = artifact_pedestal_reliquary_buddhism_name
-	desc = artifact_pedestal_reliquary_buddhism_description
-	theme = stewardship_wealth_focus
-	orphan = yes
+# debug.345 = {
+# 	type = character_event
+# 	title = artifact_pedestal_reliquary_buddhism_name
+# 	desc = artifact_pedestal_reliquary_buddhism_description
+# 	theme = stewardship_wealth_focus
+# 	orphan = yes
 
-	immediate = {
-		create_artifact_pedestal_reliquary_buddhism_effect = { OWNER = root }
-	}
+# 	immediate = {
+# 		create_artifact_pedestal_reliquary_buddhism_effect = { OWNER = root }
+# 	}
 
-	option = { 
-		name = debug_test_artifact_cloth_option
-	}
-}
+# 	option = { 
+# 		name = debug_test_artifact_cloth_option
+# 	}
+# }
 
-debug.346 = {
-	type = character_event
-	title = artifact_pedestal_reliquary_judaism_name
-	desc = artifact_pedestal_reliquary_judaism_description
-	theme = stewardship_wealth_focus
-	orphan = yes
+# debug.346 = {
+# 	type = character_event
+# 	title = artifact_pedestal_reliquary_judaism_name
+# 	desc = artifact_pedestal_reliquary_judaism_description
+# 	theme = stewardship_wealth_focus
+# 	orphan = yes
 
-	immediate = {
-		create_artifact_pedestal_reliquary_judaism_effect = { OWNER = root }
-	}
+# 	immediate = {
+# 		create_artifact_pedestal_reliquary_judaism_effect = { OWNER = root }
+# 	}
 
-	option = { 
-		name = debug_test_artifact_cloth_option
-	}
-}
+# 	option = { 
+# 		name = debug_test_artifact_cloth_option
+# 	}
+# }
 
 debug.347 = {
 	type = character_event

@@ -439,6 +439,17 @@ rokugan_spice_and_silk_isles = {
 #####################################						
 #####################################
 
+#####################################						
+#####################################						
+######          ALL            ######						
+#####################################						
+#####################################
+world_rokugan = {
+	regions = {
+		rokugan_lion rokugan_phoenix rokugan_dragon rokugan_unicorn rokugan_imperial rokugan_crab rokugan_crane
+		rokugan_scorpion rokugan_shinomen_mori rokugan_spine_world_mountains rokugan_spice_and_silk_isles
+	}
+}
 ###########################################################################
 # Graphical Regions
 ###########################################################################

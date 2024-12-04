@@ -1,0 +1,68 @@
+﻿# Override 01_ep1_custom_loc.txt
+
+InspirationAdventureDestination = {
+	type = character
+
+	text = {
+		trigger = {
+			var:adventure_destination = flag:crab
+		}
+		localization_key = rokugan_crab
+	}
+
+	text = {
+		trigger = {
+			var:adventure_destination = flag:crane
+		}
+		localization_key = rokugan_crane
+	}
+
+	text = {
+		trigger = {
+			var:adventure_destination = flag:dragon
+		}
+		localization_key = rokugan_dragon
+	}
+
+	text = {
+		trigger = {
+			var:adventure_destination = flag:lion
+		}
+		localization_key = rokugan_lion
+	}
+
+	text = {
+		trigger = {
+			var:adventure_destination = flag:phoenix
+		}
+		localization_key = rokugan_phoenix
+	}
+
+	text = {
+		trigger = {
+			var:adventure_destination = flag:scorpion
+		}
+		localization_key = rokugan_scorpion
+	}
+
+	text = {
+		trigger = {
+			var:adventure_destination = flag:unicorn
+		}
+		localization_key = rokugan_unicorn
+	}
+
+	text = {
+		trigger = {
+			var:adventure_destination = flag:imperial
+		}
+		localization_key = rokugan_imperial
+	}
+
+	text = {
+		trigger = {
+			var:adventure_destination = flag:spice_and_silk_isles
+		}
+		localization_key = rokugan_spice_and_silk_isles
+	}
+}
