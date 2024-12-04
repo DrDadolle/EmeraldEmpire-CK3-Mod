@@ -54,7 +54,7 @@ evaluate_action_decreasing_house_unity = {
 			}
 
 			### Struggle
-			#AGOT Disabled
+			#L5R Disabled Disabled
 			# if = {
 			# 	limit = { has_trait = fp3_struggle_detractor }
 			# 	multiply = 1.5
@@ -156,7 +156,7 @@ evaluate_action_increasing_house_unity = {
 			}
 
 			### Struggle
-			#AGOT Disabled
+			#L5R Disabled Disabled
 			# if = {
 			# 	limit = { has_trait = fp3_struggle_supporter }
 			# 	multiply = 1.5
@@ -279,7 +279,7 @@ fp3_struggle_0001_change_sides_weight_modifier = {
 	}
 }
 
-#AGOT Disabled
+#L5R Disabled Disabled
 # fp3_struggle_resist_allied_wars_modifier = {
 # 	modifier = {  # Opposing struggle sides don't want to join.
 # 		add = -100

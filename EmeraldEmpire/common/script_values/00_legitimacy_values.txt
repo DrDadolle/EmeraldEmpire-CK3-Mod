@@ -756,27 +756,36 @@ base_legitimacy_years_as_ruler_value = {
 # SPECIAL TRAITS
 base_legitimacy_special_traits_value = {
 	value = 0
+	#L5R Added
 	if = {
-		limit = { has_trait = sayyid }
+		limit = { has_trait = kami_descendant }
 		add = {
 			value = base_legitimacy_per_special_traits_value
 			multiply = 2
 		}
 	}
-	if = {
-		limit = { has_trait = born_in_the_purple }
-		add = {
-			value = base_legitimacy_per_special_traits_value
-			multiply = 2
-		}
-	}
-	if = {
-		limit = { has_trait = august }
-		add = {
-			value = base_legitimacy_per_special_traits_value
-			multiply = 2
-		}
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = { has_trait = sayyid }
+	# 	add = {
+	# 		value = base_legitimacy_per_special_traits_value
+	# 		multiply = 2
+	# 	}
+	# }
+	# if = {
+	# 	limit = { has_trait = born_in_the_purple }
+	# 	add = {
+	# 		value = base_legitimacy_per_special_traits_value
+	# 		multiply = 2
+	# 	}
+	# }
+	# if = {
+	# 	limit = { has_trait = august }
+	# 	add = {
+	# 		value = base_legitimacy_per_special_traits_value
+	# 		multiply = 2
+	# 	}
+	# }
 	if = {
 		limit = { has_trait = just }
 		add = {
