@@ -660,7 +660,8 @@ pool_repopulate_local_flavor = {
 	random_traits = yes
 	faith = root.faith
 	
-	# random_culture = {
+	random_culture = {
+		#L5R Disabled
 	# 	culture:ashkenazi = {
 	# 		trigger = {
 	# 			NOT = {
@@ -677,7 +678,7 @@ pool_repopulate_local_flavor = {
 	# 			}
 	# 		}
 	# 	}
-	# }
+	}
 	
 	learning = {
 		min_guest_template_skill max_guest_template_skill
