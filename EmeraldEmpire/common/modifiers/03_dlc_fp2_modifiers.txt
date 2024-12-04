@@ -769,17 +769,17 @@ fp2_champion_of_the_old_ways_modifier = {
 # 	icon = social_positive
 # 	diplomacy = 2
 # }
-
-memorable_public_execution_modifier = {
-	icon = dread_positive
-	dread_gain_mult = 0.4
-	tyranny_gain_mult = 0.2
-}
-
-restitution_to_minorities_modifier = {
-	icon = social_positive
-	different_faith_opinion = 10
-}
+#L5R Disabled
+# memorable_public_execution_modifier = {
+# 	icon = dread_positive
+# 	dread_gain_mult = 0.4
+# 	tyranny_gain_mult = 0.2
+# }
+#L5R Disabled
+# restitution_to_minorities_modifier = {
+# 	icon = social_positive
+# 	different_faith_opinion = 10
+# }
 
 mysterious_prophetess_illness_modifier = {
 	icon = health_negative
@@ -1011,15 +1011,15 @@ fp2_controls_the_mediterranean_house_modifier = {
 
 # 	health = 0.25
 # }
+#L5R Disabled
+# fp2_pilgrim_roads_modifier = {
+# 	icon = piety_positive # Strange that it uses the christian icon
 
-fp2_pilgrim_roads_modifier = {
-	icon = piety_positive # Strange that it uses the christian icon
-
-	build_piety_cost = -0.2
-	church_holding_build_speed = -0.5
-	tax_mult = 0.15
-	development_growth_factor = 0.1
-}
+# 	build_piety_cost = -0.2
+# 	church_holding_build_speed = -0.5
+# 	tax_mult = 0.15
+# 	development_growth_factor = 0.1
+# }
 #L5R Disabled
 # fp2_trusted_by_pilgrim_warriors_modifier = {
 # 	icon = piety_positive

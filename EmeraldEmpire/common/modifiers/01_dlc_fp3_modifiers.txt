@@ -51,20 +51,20 @@
 # 	fertility = -0.25
 # 	stress_gain_mult = 0.25
 # }
-
+#L5R Disabled
 # fp3_call_of_the_wild_modifier = {
 # 	icon = outdoors_positive 
 # 	learning = 1
 # 	prowess = 1
 # 	negate_health_penalty_add = 0.25
 # }
-
-fp3_marriage_material_modifier = {
-	icon = family_positive
-	spouse_opinion = 10 
-	fertility = 0.25
-	stress_gain_mult = 0.25
-}
+#L5R Disabled
+# fp3_marriage_material_modifier = {
+# 	icon = family_positive
+# 	spouse_opinion = 10 
+# 	fertility = 0.25
+# 	stress_gain_mult = 0.25
+# }
 #L5R Disabled
 # fp3_dutiful_scion_modifier = {
 # 	icon = family_positive 
@@ -446,11 +446,11 @@ fp3_sufi_initiate_modifier = {
 # 	owned_scheme_secrecy_add = -10
 # 	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
 # }
-
-fp3_looking_for_bodyguards_modifier = {
-	icon = martial_positive
-	guest_opinion = 5
-}
+#L5R Disabled
+# fp3_looking_for_bodyguards_modifier = {
+# 	icon = martial_positive
+# 	guest_opinion = 5
+# }
 #L5R Disabled
 # fp3_relentless_skeptic_modifier = {
 # 	icon = compass_positive
@@ -598,12 +598,12 @@ fp3_generous_bakers_modifier = {
 	county_opinion_add = 15
 	development_growth_factor = small_development_growth_gain
 }
-
-fp3_impious_tax_collector_modifier = {
-	icon = piety_negative
-	monthly_piety = -1
-	learning = -5
-}
+#L5R Disabled
+# fp3_impious_tax_collector_modifier = {
+# 	icon = piety_negative
+# 	monthly_piety = -1
+# 	learning = -5
+# }
 
 fp3_incapable_tax_collector_modifier = {
 	icon = stewardship_negative
@@ -701,41 +701,41 @@ fp3_zoroastrian_brazier_modifier = {
 # 	icon = drink_positive
 # 	negate_health_penalty_add = 0.25
 # }
-
-rebuffed_nomad_war_band = {
-	icon = prestige_positive
-	monthly_prestige = 0.2
-	glory_hound_opinion = 5
-}
-
-nomad_war_band = {
-	icon = martial_positive
-	character_travel_safety = 5
-	light_cavalry_recruitment_cost_mult = -0.15
-	light_cavalry_screen_add = 2
-	glory_hound_opinion = 5
-	barons_and_minor_landholders_opinion = -5
-	parochial_opinion = -5
-}
-
-fp3_forgave_the_desperate = {
-	icon = county_modifier_opinion_positive
-	county_opinion_add = 10
-}
-
-fp3_punished_the_destitute = {
-	icon = county_modifier_opinion_negative
-	county_opinion_add = -10
-	monthly_county_control_growth_factor = 0.05
-	courtly_opinion = 5
-	zealot_opinion = 5
-}
-
-ancient_persian_relics = {
-	icon = prestige_positive
-	monthly_prestige = 0.5
-	courtly_opinion = 5
-}
+#L5R Disabled
+# rebuffed_nomad_war_band = {
+# 	icon = prestige_positive
+# 	monthly_prestige = 0.2
+# 	glory_hound_opinion = 5
+# }
+#L5R Disabled
+# nomad_war_band = {
+# 	icon = martial_positive
+# 	character_travel_safety = 5
+# 	light_cavalry_recruitment_cost_mult = -0.15
+# 	light_cavalry_screen_add = 2
+# 	glory_hound_opinion = 5
+# 	barons_and_minor_landholders_opinion = -5
+# 	parochial_opinion = -5
+# }
+#L5R Disabled
+# fp3_forgave_the_desperate = {
+# 	icon = county_modifier_opinion_positive
+# 	county_opinion_add = 10
+# }
+#L5R Disabled
+# fp3_punished_the_destitute = {
+# 	icon = county_modifier_opinion_negative
+# 	county_opinion_add = -10
+# 	monthly_county_control_growth_factor = 0.05
+# 	courtly_opinion = 5
+# 	zealot_opinion = 5
+# }
+#L5R Disabled
+# ancient_persian_relics = {
+# 	icon = prestige_positive
+# 	monthly_prestige = 0.5
+# 	courtly_opinion = 5
+# }
 #L5R Disabled
 # fp3_established_futuwaa_lodges_modifier = {
 # 	icon = martial_positive
@@ -916,14 +916,14 @@ fp3_efficient_tax_collector = {
 # 	icon = stewardship_negative
 # 	tax_mult = -0.5
 # }
-
-religious_settler_influx = {
-	icon = flame_positive
-	development_growth = 0.2
-	county_opinion_add = 15
-	tax_mult = 0.1
-	levy_size = 0.1
-}
+#L5R Disabled
+# religious_settler_influx = {
+# 	icon = flame_positive
+# 	development_growth = 0.2
+# 	county_opinion_add = 15
+# 	tax_mult = 0.1
+# 	levy_size = 0.1
+# }
 
 ### Sponsor Research Modifiers ###
 # Military

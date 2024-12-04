@@ -12,31 +12,31 @@ has_mythical_founder_trigger = {
 			culture = { has_cultural_pillar = heritage_imperial }
 		}
 		AND = { # Kami Hida
-			this = title:k_crab
+			this = title:k_crab_clan
 			culture = { has_cultural_pillar = heritage_crab }
 		}
 		AND = { # Kami Doji
-			this = title:k_crane
+			this = title:k_crane_clan
 			culture = { has_cultural_pillar = heritage_crane }
 		}
 		AND = { # Kami Togashi
-			this = title:k_dragon
+			this = title:k_dragon_clan
 			culture = { has_cultural_pillar = heritage_dragon }
 		}
 		AND = { # Kami Akodo
-			this = title:k_lion
+			this = title:k_lion_clan
 			culture = { has_cultural_pillar = heritage_lion }
 		}
 		AND = { # Kami Shiba
-			this = title:k_phoenix
+			this = title:k_phoenix_clan
 			culture = { has_cultural_pillar = heritage_phoenix }
 		}
 		AND = { # Kami Bayushi
-			this = title:k_scorpion
+			this = title:k_scorpion_clan
 			culture = { has_cultural_pillar = heritage_scorpion }
 		}
 		AND = { # Kami Shinjo
-			this = title:k_unicorn
+			this = title:k_unicorn_clan
 			culture = { has_cultural_pillar = heritage_unicorn }
 		}
 		#L5R Disabled
