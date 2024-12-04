@@ -661,6 +661,22 @@ pool_repopulate_local_flavor = {
 	faith = root.faith
 	
 	random_culture = {
+		#L5R Added
+		culture:togashi = {
+			trigger = { always = yes }
+		}
+		culture:shiba = {
+			trigger = { always = yes }
+		}
+		culture:doji = {
+			trigger = { always = yes }
+		}
+		culture:matsu = {
+			trigger = { always = yes }
+		}
+		culture:ide = {
+			trigger = { always = yes }
+		}
 		#L5R Disabled
 	# 	culture:ashkenazi = {
 	# 		trigger = {
