@@ -3284,7 +3284,7 @@ special_genes = {
 			# Minor clans 
 
 			minor_commoner_clothes = {
-				index = 236
+				index = 237
 
 				male = {
 					1 = male_clothes_kimono_samurai_minor_01_common
@@ -3301,7 +3301,7 @@ special_genes = {
 			}
 			
 			minor_low_nobility_clothes = {
-				index = 237
+				index = 238
 
 				male = {
 					1 = male_clothes_kimono_samurai_minor_01_low
@@ -3317,7 +3317,7 @@ special_genes = {
 			}
 
 			minor_high_nobility_clothes = {
-				index = 238
+				index = 239
 
 				male = {
 					1 = male_clothes_kimono_samurai_minor_01_high
@@ -3333,7 +3333,7 @@ special_genes = {
 			}
 
 			minor_war_nobility_clothes = {
-				index = 239
+				index = 240
 
 				male = {
 					1 = male_armor_samurai_minor_00_low
