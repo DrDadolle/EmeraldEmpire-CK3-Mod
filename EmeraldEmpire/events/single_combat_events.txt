@@ -7708,38 +7708,39 @@ single_combat.0001 = {
 		}
 	}
 
+	#L5R Disabled
 	#Butchery
-	option = {
-		name = single_combat.0001.butchery
-		trigger = { exists = local_var:combat_move_butchery_flag }
+	# option = {
+	# 	name = single_combat.0001.butchery
+	# 	trigger = { exists = local_var:combat_move_butchery_flag }
 
-		#Move clarification
-		custom_tooltip = single_combat.0001.tt.butchery
+	# 	#Move clarification
+	# 	custom_tooltip = single_combat.0001.tt.butchery
 
-		#Spawn Info
-		trait = viking
+	# 	#Spawn Info
+	# 	# trait = viking
 
-		#Move effects
-		## First, we show the move's effects with no guff.
-		show_as_tooltip = { combat_move_butchery_effect = yes }
-		## Then, we check to make sure if scope:my_foe is still around to suffer the effects. This prevents errors if they die mid-combat.
-		if = {
-			limit = {
-				scope:my_foe = { is_alive = yes }
-			}
-			hidden_effect = { combat_move_butchery_effect = yes }
-		}
+	# 	#Move effects
+	# 	## First, we show the move's effects with no guff.
+	# 	show_as_tooltip = { combat_move_butchery_effect = yes }
+	# 	## Then, we check to make sure if scope:my_foe is still around to suffer the effects. This prevents errors if they die mid-combat.
+	# 	if = {
+	# 		limit = {
+	# 			scope:my_foe = { is_alive = yes }
+	# 		}
+	# 		hidden_effect = { combat_move_butchery_effect = yes }
+	# 	}
 
-		stress_impact = {
-			callous = minor_stress_impact_loss
-			sadistic = minor_stress_impact_loss
-			compassionate = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			sce_preferred_shrewd_fighter_scripted_modifier = yes
-		}
-	}
+	# 	stress_impact = {
+	# 		callous = minor_stress_impact_loss
+	# 		sadistic = minor_stress_impact_loss
+	# 		compassionate = minor_stress_impact_gain
+	# 	}
+	# 	ai_chance = {
+	# 		base = 100
+	# 		sce_preferred_shrewd_fighter_scripted_modifier = yes
+	# 	}
+	# }
 
 	#Stoic Veteran
 	#L5R Disabled

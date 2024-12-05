@@ -336,10 +336,11 @@ city_01 = {
 		defender_holding_advantage = 2
 	}
 	
-	county_dynasty_modifier = {
-		county_holder_dynasty_perk = fp2_urbanism_legacy_1 # check if the dynasty of the county holder has a specific perk
-    	development_growth_factor = fp2_urbanism_legacy_1_bonus_value
-	}
+	#L5R Disabled
+	# county_dynasty_modifier = {
+	# 	county_holder_dynasty_perk = fp2_urbanism_legacy_1 # check if the dynasty of the county holder has a specific perk
+    # 	development_growth_factor = fp2_urbanism_legacy_1_bonus_value
+	# }
 
 	flag = city
 	next_building = city_02
@@ -723,10 +724,11 @@ city_02 = {
 		defender_holding_advantage = 3
 	}
 
-	county_dynasty_modifier = {
-		county_holder_dynasty_perk = fp2_urbanism_legacy_1 # check if the dynasty of the county holder has a specific perk
-    	development_growth_factor = fp2_urbanism_legacy_1_bonus_value
-	}
+	#L5R Disabled
+	# county_dynasty_modifier = {
+	# 	county_holder_dynasty_perk = fp2_urbanism_legacy_1 # check if the dynasty of the county holder has a specific perk
+    # 	development_growth_factor = fp2_urbanism_legacy_1_bonus_value
+	# }
 	
 	flag = city
 	next_building = city_03
@@ -1092,10 +1094,11 @@ city_03 = {
 		defender_holding_advantage = 4
 	}
 
-	county_dynasty_modifier = {
-		county_holder_dynasty_perk = fp2_urbanism_legacy_1 # check if the dynasty of the county holder has a specific perk
-    	development_growth_factor = fp2_urbanism_legacy_1_bonus_value
-	}
+	#L5R Disabled
+	# county_dynasty_modifier = {
+	# 	county_holder_dynasty_perk = fp2_urbanism_legacy_1 # check if the dynasty of the county holder has a specific perk
+    # 	development_growth_factor = fp2_urbanism_legacy_1_bonus_value
+	# }
 	
 	flag = city
 	
@@ -1449,10 +1452,11 @@ city_04 = {
 		defender_holding_advantage = 5
 	}
 
-	county_dynasty_modifier = {
-		county_holder_dynasty_perk = fp2_urbanism_legacy_1 # check if the dynasty of the county holder has a specific perk
-    	development_growth_factor = fp2_urbanism_legacy_1_bonus_value
-	}
+	#L5R Disabled
+	# county_dynasty_modifier = {
+	# 	county_holder_dynasty_perk = fp2_urbanism_legacy_1 # check if the dynasty of the county holder has a specific perk
+    # 	development_growth_factor = fp2_urbanism_legacy_1_bonus_value
+	# }
 	
 	flag = city
 	
