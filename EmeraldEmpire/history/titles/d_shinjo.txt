@@ -43,7 +43,7 @@ c_haisho_province = {
 
 b_mountain_watch_tower = {
 	1111.1.1 = {
-		liege = "d_shinjo"
+		# liege = "d_shinjo"
 		holder = placeholdershinjo2 
 		change_development_level = 5
 	}

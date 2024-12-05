@@ -33,7 +33,7 @@ c_hokufuu_province = {
 
 b_maisuna_shiro = {
 	1111.1.1 = {
-		liege = "c_hokufuu_province"
+		# liege = "c_hokufuu_province"
 		holder = lineofmaisuna1 # Maisuna Aki TODO replace name
 	}
 }

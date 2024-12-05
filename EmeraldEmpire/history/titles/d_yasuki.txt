@@ -27,14 +27,14 @@ c_sunda_mizu_mura_province = {
 ####Vassal Kano family
 b_shiro_kano = {
 	1123.1.1 = {
-		liege = "c_sunda_mizu_mura_province"
+		# liege = "c_sunda_mizu_mura_province"
 		holder = lineofkano1 # Kano Aki #TODO replace name
 	}
 }
 ####Vassal Nobuto family
 b_watch_tower_east = {
 	1123.1.1 = {
-		liege = "c_junkin_province"
+		# liege = "c_junkin_province"
 		holder = lineofnobuto1 # Nobuto Aki #TODO replace name
 	}
 }

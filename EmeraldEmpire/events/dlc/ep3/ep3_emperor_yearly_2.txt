@@ -4112,7 +4112,7 @@ scripted_trigger ep3_2160_valid_neighbor_trigger = {
 			OR = {
 				has_cultural_tradition = tradition_horse_lords
 				# has_cultural_tradition = tradition_saharan_nomads #L5R Disabled
-				has_cultural_tradition = tradition_desert_nomads
+				# has_cultural_tradition = tradition_desert_nomads
 			}
 		}
 	}

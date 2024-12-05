@@ -41,7 +41,7 @@ c_maryoku_province = {
 
 b_shiro_shingon = {
 	1123.1.1 = {
-		liege = "d_isawa"
+		# liege = "d_isawa"
 		holder = lineofshingon1 # Shingon Aki # TODO change plaecholder name
 		change_development_level = 15
 	}

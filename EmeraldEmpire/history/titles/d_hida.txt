@@ -32,14 +32,14 @@ c_kyoukan_province = {
 
 b_ugawari_toride = {
 	1110.1.1 = {
-		liege = "c_kyoukan_province"
+		# liege = "c_kyoukan_province"
 		holder = lineofugawari1 # Ugawari Aki  #TODO replace name
 	}
 }
 
 b_kyuden_moshibaru = {
 	1110.1.1 = {
-		liege = "c_kyoukan_province"
+		# liege = "c_kyoukan_province"
 		holder = lineofkakeguchi2 # Moshibaru Aki  #TODO replace name
 	}
 }
