@@ -2038,7 +2038,7 @@ great_holy_war_target_kingdom_weight = {
 				limit = {
 					title_capital_county = {
 						squared_distance = {
-							target = title:c_otosan_uchi
+							target = title:c_otosan_uchi_province
 							value >= ghw_target_distance_01_threshold
 						}
 					}
@@ -2495,7 +2495,7 @@ great_holy_war_target_kingdom_weight = {
 				limit = {
 					title_capital_county = {
 						squared_distance = {
-							target = title:c_otosan_uchi
+							target = title:c_otosan_uchi_province
 							value >= ghw_target_distance_02_threshold
 						}
 					}
@@ -2954,7 +2954,7 @@ great_holy_war_target_kingdom_weight = {
 				limit = {
 					title_capital_county = {
 						squared_distance = {
-							target = title:c_otosan_uchi
+							target = title:c_otosan_uchi_province
 							value >= ghw_target_distance_03_threshold
 						}
 					}
