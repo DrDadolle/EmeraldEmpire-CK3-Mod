@@ -62,7 +62,7 @@ heresy.0001 = {
 					add = 50
 					is_a_faction_member = yes
 				}
-
+				#L5R Disabled
 				# modifier = {
 				# 	factor = 10
 				# 	has_game_rule = strict_regional_heresy
@@ -149,6 +149,7 @@ heresy.0001 = {
 						}
 					}
 				}
+				#L5R Disabled
 				# 	}
 				# 	else_if = {
 				# 		limit = {
@@ -247,7 +248,7 @@ heresy.0001 = {
 						}
 						factor = 0
 					}
-
+					#L5R Disabled
 					# Certain Faiths should be much more rare in general.
 					# Uncommon Faiths
 					# modifier = {
@@ -515,7 +516,7 @@ heresy.0001 = {
 # by Sean Hughes				 #
 # 0005							 #
 ##################################
-
+#L5R Disabled
 # heresy.0005 = {
 # 	hidden = yes
 # 	scope = faith
