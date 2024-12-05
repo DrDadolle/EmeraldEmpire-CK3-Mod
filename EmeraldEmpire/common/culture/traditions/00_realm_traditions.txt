@@ -2247,14 +2247,17 @@ tradition_hill_dwellers = {
 		4 = desert_mountains.dds
 	}
 
-	is_shown = { #Cannot be picked if you have access to Highland Farming
-		NOT = { has_cultural_tradition = tradition_amharic_highlanders }
-		NOR = {
-			this = culture:ethiopian
-			any_parent_culture_or_above = {
-				this = culture:ethiopian
-			}
-		}
+	is_shown = { 
+		#L5R Disabled
+		always = yes
+		#Cannot be picked if you have access to Highland Farming
+		# NOT = { has_cultural_tradition = tradition_amharic_highlanders }
+		# NOR = {
+		# 	this = culture:ethiopian
+		# 	any_parent_culture_or_above = {
+		# 		this = culture:ethiopian
+		# 	}
+		# }
 	}
 	can_pick = {
 		custom_description = {
@@ -2363,13 +2366,14 @@ tradition_forest_folk = {
 
 	is_shown = {
 		# L5R Disabled
-		NOT = { #These cultures instead get Forest Wardens Tradition
+		always = yes
+		# NOT = { #These cultures instead get Forest Wardens Tradition
 			# has_cultural_pillar = heritage_balto_finnic 
 			# has_cultural_pillar = heritage_volga_finnic
 			# has_cultural_pillar = heritage_ugro_permian
 			# has_cultural_pillar = heritage_baltic
-			has_cultural_tradition = tradition_forest_wardens
-		}
+		# 	has_cultural_tradition = tradition_forest_wardens
+		# }
 	}
 	can_pick = {
 		custom_description = {
@@ -2493,9 +2497,11 @@ tradition_mountain_homes = {
 	}
 	
 	is_shown = {
-		NOR = { #This is replaced by Himalayan Settlers, Mountaineer Ruralism and Mountain Herding. 
-			has_cultural_tradition = tradition_himalayan_settlers
-			has_cultural_tradition = tradition_mountaineer_ruralism
+		#L5R Disabled
+		always = yes
+		# NOR = { #This is replaced by Himalayan Settlers, Mountaineer Ruralism and Mountain Herding. 
+			# has_cultural_tradition = tradition_himalayan_settlers
+			# has_cultural_tradition = tradition_mountaineer_ruralism
 			# L5R Disabled
 			# has_cultural_pillar = heritage_arabic
 			# has_cultural_pillar = heritage_berber
@@ -2507,7 +2513,7 @@ tradition_mountain_homes = {
 			# 		geographical_region = world_himalaya
 			# 	}
 			# }
-		}
+		# }
 	}
 	can_pick = {
 		custom_description = {

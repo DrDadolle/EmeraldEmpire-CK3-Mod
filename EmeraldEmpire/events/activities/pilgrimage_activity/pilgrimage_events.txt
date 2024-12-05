@@ -352,7 +352,7 @@ pilgrimage.0500 = {
 		#Only one modifier for _you_
 		NOR = {
 			has_character_modifier = ghost_pilgrimage_promised_modifier
-			has_character_modifier = hajj_promised_modifier
+			# has_character_modifier = hajj_promised_modifier
 			has_character_modifier = pilgrimage_promised_modifier
 		}
 	}
@@ -3175,10 +3175,11 @@ pilgrimage.2006 = {
 							category = special_type
 							option = pilgrimage_type_pious
 						}
-						has_activity_option = {
-							category = special_type
-							option = pilgrimage_type_hajj
-						}
+						#L5R Disabled
+						# has_activity_option = {
+						# 	category = special_type
+						# 	option = pilgrimage_type_hajj
+						# }
 					}
 				}
 			}
@@ -7968,109 +7969,110 @@ pilgrimage.6007 = {
 ################################
 # pilgrimage.3101 - Entering state of Ihram
 
-pilgrimage.3101 = {
-	type = activity_event
-	title = pilgrimage.3101.t
-	desc = pilgrimage.3101.desc
-	theme = travel_pilgrimage
-	left_portrait = {
-		character = root
-		animation = personality_content
-	}
+#L5R Disabled
+# pilgrimage.3101 = {
+# 	type = activity_event
+# 	title = pilgrimage.3101.t
+# 	desc = pilgrimage.3101.desc
+# 	theme = travel_pilgrimage
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_content
+# 	}
 
-	trigger = { exists = scope:activity }
+# 	trigger = { exists = scope:activity }
 	
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-		scope:activity = {
-			add_activity_log_entry = {
-				key = hajj_arrived_log
-				tags = { arrived }
-				score = 50
-				character = root
-				show_in_conclusion = yes
-			}
-		}
-	}
-	# Commit to the Irham
-	option = {
-		name = pilgrimage.3101.a
-		pious_type_option_effect = yes
-		add_piety = minor_piety_gain
-		stress_impact = {
-			base = medium_stress_gain
-			# Stress Loss (minimal)
-			zealous = medium_stress_loss
-			temperate = minor_stress_loss
-			humble = minor_stress_loss
-			chaste = minor_stress_loss
-			calm = minor_stress_loss
-			# Stress Gain (can be substantial)
-			lustful = medium_stress_gain
-			arrogant = medium_stress_gain
-			wrathful = medium_stress_gain
-			sadistic = medium_stress_gain
-			vengeful = medium_stress_gain
-			arbitrary = medium_stress_gain
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 		scope:activity = {
+# 			add_activity_log_entry = {
+# 				key = hajj_arrived_log
+# 				tags = { arrived }
+# 				score = 50
+# 				character = root
+# 				show_in_conclusion = yes
+# 			}
+# 		}
+# 	}
+# 	# Commit to the Irham
+# 	option = {
+# 		name = pilgrimage.3101.a
+# 		pious_type_option_effect = yes
+# 		add_piety = minor_piety_gain
+# 		stress_impact = {
+# 			base = medium_stress_gain
+# 			# Stress Loss (minimal)
+# 			zealous = medium_stress_loss
+# 			temperate = minor_stress_loss
+# 			humble = minor_stress_loss
+# 			chaste = minor_stress_loss
+# 			calm = minor_stress_loss
+# 			# Stress Gain (can be substantial)
+# 			lustful = medium_stress_gain
+# 			arrogant = medium_stress_gain
+# 			wrathful = medium_stress_gain
+# 			sadistic = medium_stress_gain
+# 			vengeful = medium_stress_gain
+# 			arbitrary = medium_stress_gain
 
-			hashishiyah = minor_stress_gain
-			drunkard = minor_stress_gain
-			rakish = minor_stress_gain
+# 			hashishiyah = minor_stress_gain
+# 			drunkard = minor_stress_gain
+# 			rakish = minor_stress_gain
 
-			gluttonous = minor_stress_gain
-			impatient = minor_stress_gain
-			deceitful = minor_stress_gain
-			cynical = minor_stress_gain
-		}
-		ai_chance = {
-			base = 200
-			ai_value_modifier = {
-				ai_zeal = 1
-			}
-		}	
-	}
-	# I don't have to be that strict
-	option = { 
-		name = pilgrimage.3101.b
-		worldly_type_option_effect = yes
-		add_piety = medium_piety_loss
-		stress_impact = {
-			# Stress Gain (major for some traits)
-			zealous = major_stress_gain
-			honest = medium_stress_gain
-			just = medium_stress_gain
-			# Stress Loss (can be minor to substantial)
-			lustful = medium_stress_loss
-			arrogant = medium_stress_loss
+# 			gluttonous = minor_stress_gain
+# 			impatient = minor_stress_gain
+# 			deceitful = minor_stress_gain
+# 			cynical = minor_stress_gain
+# 		}
+# 		ai_chance = {
+# 			base = 200
+# 			ai_value_modifier = {
+# 				ai_zeal = 1
+# 			}
+# 		}	
+# 	}
+# 	# I don't have to be that strict
+# 	option = { 
+# 		name = pilgrimage.3101.b
+# 		worldly_type_option_effect = yes
+# 		add_piety = medium_piety_loss
+# 		stress_impact = {
+# 			# Stress Gain (major for some traits)
+# 			zealous = major_stress_gain
+# 			honest = medium_stress_gain
+# 			just = medium_stress_gain
+# 			# Stress Loss (can be minor to substantial)
+# 			lustful = medium_stress_loss
+# 			arrogant = medium_stress_loss
 
-			sadistic = minor_stress_loss
-			vengeful = minor_stress_loss
-			wrathful = minor_stress_loss
-			gluttonous = minor_stress_loss
-			impatient = minor_stress_loss
-			deceitful = minor_stress_loss
-			cynical = minor_stress_loss
+# 			sadistic = minor_stress_loss
+# 			vengeful = minor_stress_loss
+# 			wrathful = minor_stress_loss
+# 			gluttonous = minor_stress_loss
+# 			impatient = minor_stress_loss
+# 			deceitful = minor_stress_loss
+# 			cynical = minor_stress_loss
 
-		}
-		ai_chance = {
-			base = 0
-			ai_value_modifier = {
-				ai_zeal = -1
-				ai_vengefulness = 1
-				ai_honor = -1
-			}
-		}
-	}
-	after = {
-		#The Hajj rituals usually play out in 3 days, but we'll utilize the full 3 months for remaining at the Pilgrimage destination
-		#They also happen in a decided order
-		trigger_event = {
-			#Pray at the Place of Abraham
-			id = hajj.3010
-			days = 20
-		}
-	}
-}
+# 		}
+# 		ai_chance = {
+# 			base = 0
+# 			ai_value_modifier = {
+# 				ai_zeal = -1
+# 				ai_vengefulness = 1
+# 				ai_honor = -1
+# 			}
+# 		}
+# 	}
+# 	after = {
+# 		#The Hajj rituals usually play out in 3 days, but we'll utilize the full 3 months for remaining at the Pilgrimage destination
+# 		#They also happen in a decided order
+# 		trigger_event = {
+# 			#Pray at the Place of Abraham
+# 			id = hajj.3010
+# 			days = 20
+# 		}
+# 	}
+# }
 
 ################################
 # Generic Arrival Events
@@ -13388,12 +13390,13 @@ pilgrimage.7000 = {
 				desc = pilgrimage.7000.t_obligatory
 			}
 			#Hajj conclusion
-			triggered_desc = {
-				trigger = { 
-					scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
-				}
-				desc = pilgrimage.7000.t_hajj
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = { 
+			# 		scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
+			# 	}
+			# 	desc = pilgrimage.7000.t_hajj
+			# }
 			#Pilgrimage conclusion
 			desc = pilgrimage.7000.t
 		}
@@ -13418,13 +13421,14 @@ pilgrimage.7000 = {
 				desc = {
 					#Hajj or Pilgrimage?
 					first_valid = {
+						#L5R Disabled
 						#Hajj conclusion
-						triggered_desc = {
-							trigger = {
-								scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
-							}
-							desc = pilgrimage.7000.intro_hajj
-						}
+						# triggered_desc = {
+						# 	trigger = {
+						# 		scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
+						# 	}
+						# 	desc = pilgrimage.7000.intro_hajj
+						# }
 						#Pilgrimage conclusion
 						desc = pilgrimage.7000.intro
 					}
@@ -13436,7 +13440,8 @@ pilgrimage.7000 = {
 								scope:activity = {
 									OR = {
 										activity_has_pious_pilgrimage_type_trigger = yes
-										activity_has_hajj_pilgrimage_type_trigger = yes
+										#L5R Disabled
+										# activity_has_hajj_pilgrimage_type_trigger = yes
 									}
 								}
 								has_character_flag = perfect_pious_reward
@@ -13449,7 +13454,8 @@ pilgrimage.7000 = {
 								scope:activity = {
 									OR = {
 										activity_has_pious_pilgrimage_type_trigger = yes
-										activity_has_hajj_pilgrimage_type_trigger = yes
+										#L5R Disabled
+										# activity_has_hajj_pilgrimage_type_trigger = yes
 									}
 								}
 								has_character_flag = high_pious_reward
@@ -13462,7 +13468,8 @@ pilgrimage.7000 = {
 								scope:activity = {
 									OR = {
 										activity_has_pious_pilgrimage_type_trigger = yes
-										activity_has_hajj_pilgrimage_type_trigger = yes
+										#L5R Disabled
+										# activity_has_hajj_pilgrimage_type_trigger = yes
 									}
 								}
 								has_character_flag = mid_pious_reward
@@ -13475,7 +13482,8 @@ pilgrimage.7000 = {
 								scope:activity = {
 									OR = {
 										activity_has_pious_pilgrimage_type_trigger = yes
-										activity_has_hajj_pilgrimage_type_trigger = yes
+										#L5R Disabled
+										# activity_has_hajj_pilgrimage_type_trigger = yes
 									}
 								}
 								has_character_flag = low_pious_reward
@@ -13527,39 +13535,40 @@ pilgrimage.7000 = {
 							trigger = { has_variable = pilgrimage_death_bury_home }
 							desc = pilgrimage.7000.outro_bury_predecessor_home
 						}
+						#L5R Disabled
 						#First Hajj
-						triggered_desc = {
-							trigger = {
-								scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
-								any_memory = {
-									has_memory_type = completed_hajj_memory
-									count = 1
-								}
-							}
-							desc = pilgrimage.7000.outro_first_hajj
-						}
-						#Second Hajj
-						triggered_desc = {
-							trigger = {
-								scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
-								any_memory = {
-									has_memory_type = completed_hajj_memory
-									count = 2
-								}
-							}
-							desc = pilgrimage.7000.outro_second_hajj
-						}
-						#... the rest
-						triggered_desc = {
-							trigger = {
-								scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
-								any_memory = {
-									has_memory_type = completed_hajj_memory
-									count > 2
-								}
-							}
-							desc = pilgrimage.7000.outro_multi_hajj
-						}
+						# triggered_desc = {
+						# 	trigger = {
+						# 		scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
+						# 		any_memory = {
+						# 			has_memory_type = completed_hajj_memory
+						# 			count = 1
+						# 		}
+						# 	}
+						# 	desc = pilgrimage.7000.outro_first_hajj
+						# }
+						# #Second Hajj
+						# triggered_desc = {
+						# 	trigger = {
+						# 		scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
+						# 		any_memory = {
+						# 			has_memory_type = completed_hajj_memory
+						# 			count = 2
+						# 		}
+						# 	}
+						# 	desc = pilgrimage.7000.outro_second_hajj
+						# }
+						# #... the rest
+						# triggered_desc = {
+						# 	trigger = {
+						# 		scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
+						# 		any_memory = {
+						# 			has_memory_type = completed_hajj_memory
+						# 			count > 2
+						# 		}
+						# 	}
+						# 	desc = pilgrimage.7000.outro_multi_hajj
+						# }
 						#First pilgrimage
 						triggered_desc = {
 							trigger = { var:num_pilgrimages_undertaken ?= 1 }
@@ -13674,21 +13683,22 @@ pilgrimage.7000 = {
 	}
 	#Alright
 	option = {
+		#L5R Disabled
 		#Hajj alright
-		name = {
-			trigger = { 
-				scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
-				has_trait = cynical 
-			}
-			text = pilgrimage.7000.a_hajj_cynical
-		}
-		#Hajj cynical
-		name = {
-			trigger = { 
-				scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes } 
-			}
-			text = pilgrimage.7000.a_hajj
-		}
+		# name = {
+		# 	trigger = { 
+		# 		scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes }
+		# 		has_trait = cynical 
+		# 	}
+		# 	text = pilgrimage.7000.a_hajj_cynical
+		# }
+		# #Hajj cynical
+		# name = {
+		# 	trigger = { 
+		# 		scope:activity = { activity_has_hajj_pilgrimage_type_trigger = yes } 
+		# 	}
+		# 	text = pilgrimage.7000.a_hajj
+		# }
 		#Cynical
 		name = {
 			trigger = { 

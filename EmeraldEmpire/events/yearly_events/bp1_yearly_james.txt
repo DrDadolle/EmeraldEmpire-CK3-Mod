@@ -5239,7 +5239,7 @@ bp1_yearly.9030 = {
 				#Only one modifier for _you_
 				NOR = {
 					has_character_modifier = ghost_pilgrimage_promised_modifier
-					has_character_modifier = hajj_promised_modifier
+					# has_character_modifier = hajj_promised_modifier#L5R Disabled
 					has_character_modifier = pilgrimage_promised_modifier
 				}
 				#Check Pilgrimage triggers

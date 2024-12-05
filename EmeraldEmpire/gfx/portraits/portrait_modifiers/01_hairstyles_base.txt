@@ -766,11 +766,12 @@ hairstyles = {
                 exists = this
                 has_nickname = nick_the_actually_bald
             }
-            modifier = {
-                add = 2000
-                exists = this
-                has_character_modifier = hajj_halq_modifier
-            }
+            #L5R Disabled
+            # modifier = {
+            #     add = 2000
+            #     exists = this
+            #     has_character_modifier = hajj_halq_modifier
+            # }
             modifier = {
                 add = 2000
                 exists = this

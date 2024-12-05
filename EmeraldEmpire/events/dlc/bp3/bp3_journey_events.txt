@@ -3284,10 +3284,11 @@ bp3_journey.1500 = {
 			has_activity_intent = journey_curiosity_intent
 		}
 
-		hire_for_two_court_position_journey_laamp_replacement_effect = {
+		#L5R Modified
+		hire_for_court_position_journey_laamp_replacement_effect = {
 			CHARACTER = scope:local_character
-			COURT_POSITION = chief_qadi
-			COURT_POSITION_2 = high_almoner
+			# COURT_POSITION = chief_qadi
+			COURT_POSITION = high_almoner
 			LAAMP_POSITION = chief_forager
 		}
 
@@ -3377,11 +3378,11 @@ bp3_journey.1500 = {
 			}
 			NOT = { has_activity_intent = journey_curiosity_intent }
 		}
-
-		hire_for_two_court_position_journey_laamp_replacement_effect = {
+		#L5R Modified
+		hire_for_court_position_journey_laamp_replacement_effect = {
 			CHARACTER = scope:local_character
-			COURT_POSITION = chief_qadi
-			COURT_POSITION_2 = high_almoner
+			# COURT_POSITION = chief_qadi
+			COURT_POSITION = high_almoner
 			LAAMP_POSITION = chief_forager
 		}
 

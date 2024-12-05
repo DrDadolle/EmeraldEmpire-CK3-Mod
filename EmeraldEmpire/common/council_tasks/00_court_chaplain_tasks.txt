@@ -703,35 +703,36 @@ task_conversion = {
 					}
 				}
 			}
+			#L5R Disabled
 			# Ash'ari in Spain tend to not convert Muwhalladi often
-			trigger_if = {
-				limit = {
-					scope:councillor_liege = {
-						is_ai = yes
-						faith = faith:ashari
-						capital_province ?= { geographical_region = world_europe_west_iberia }
-						scope:county.faith = faith:muwalladi
-					}
-					scope:county = {
-						title_province = { geographical_region = world_europe_west_iberia }
-					}
-				}
-				OR = {
-					scope:councillor_liege = {
-						has_character_flag = vassal_directive_convert_faith
-						vassal_is_valid_and_follows_directive_trigger = { VASSAL = this LIEGE = liege }
-					}
-					scope:councillor_liege = { ai_zeal >= 50 }
-					scope:county = { county_opinion <= -20 }
-					scope:county = { # Always convert holy sites
-						any_county_province = {
-							barony = {
-								is_holy_site_of = scope:councillor_liege.faith
-							}
-						}
-					}
-				}
-			}
+			# trigger_if = {
+			# 	limit = {
+			# 		scope:councillor_liege = {
+			# 			is_ai = yes
+			# 			faith = faith:ashari
+			# 			capital_province ?= { geographical_region = world_europe_west_iberia }
+			# 			scope:county.faith = faith:muwalladi
+			# 		}
+			# 		scope:county = {
+			# 			title_province = { geographical_region = world_europe_west_iberia }
+			# 		}
+			# 	}
+			# 	OR = {
+			# 		scope:councillor_liege = {
+			# 			has_character_flag = vassal_directive_convert_faith
+			# 			vassal_is_valid_and_follows_directive_trigger = { VASSAL = this LIEGE = liege }
+			# 		}
+			# 		scope:councillor_liege = { ai_zeal >= 50 }
+			# 		scope:county = { county_opinion <= -20 }
+			# 		scope:county = { # Always convert holy sites
+			# 			any_county_province = {
+			# 				barony = {
+			# 					is_holy_site_of = scope:councillor_liege.faith
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# }
 			#L5R Disabled
 			# If a ruler has Jizya tax, they'll only convert the same *religious family* when ai_zeal is really high, they're converting unreformed pagans, counties in a kingdom with a Holy Site, or others of the same religion
 			# trigger_if = {

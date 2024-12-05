@@ -30,7 +30,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Scheme modifiers have been completely reworked, so all the old ones for things like personal_scheme_power_mult, hostile_scheme_resistance_add, etc. no longer work. You will need to replace them with new scheme modifier
 	- check scheme.info of vanilla game
 - remove bunch of errors
-- Once error removed, investigate why first lauch of mod crashes, then not anymore
 - Add thumbnail image for the mod !
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA
@@ -45,6 +44,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - restore court_events_general.txt from vanilla
 - update event/heresy_events.txt
 - update 01_events_backgrounds.txt
+- add at least 1 adventures in game to avoid some errors on start
 - found Great Clan description decision
 	- missing description descision, issue with custom description
 - Update "Reclaim Yasuki Family lands" & "Reborn Snake" decision

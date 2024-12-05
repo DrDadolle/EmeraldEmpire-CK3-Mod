@@ -91,27 +91,28 @@
 		}
 	}
 	
-	hajj_headgear = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = mena_common
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}	
-		weight = {
-			base = 0
-			modifier = {
-				add = 500
-				exists = this
-				OR = {
-					portrait_ep2_hajj_clothes_trigger = yes
-					portrait_ep2_ihram_clothes_trigger = yes
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	# hajj_headgear = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = headgear
+	# 			template = mena_common
+	# 			range = { 0 1 } # For the randomness to work correctly
+	# 		}
+	# 	}	
+	# 	weight = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 500
+	# 			exists = this
+	# 			OR = {
+	# 				portrait_ep2_hajj_clothes_trigger = yes
+	# 				portrait_ep2_ihram_clothes_trigger = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	# EP2 - WEDDINGS
 
