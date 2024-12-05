@@ -259,3 +259,32 @@
 		birth = yes
 	}
 }
+#####################
+#	Adventurers
+#####################
+lineofkatsuo = {
+	name = name_katsuo
+	religion = "seven_fortunes"
+	culture = "hida"
+	sexuality = heterosexual
+	# Add a dynasty to be playable
+	dynasty = dynasty_laamp_katsuo 
+	
+	1104.1.1 = {
+		birth = yes
+	}
+
+	### Stats
+	martial = 15
+	prowess = 10
+
+	### Traits
+	trait = education_martial_1
+	trait = brave
+	trait = honest
+	trait = content
+	trait = peasant_leader
+	
+	### DNA
+	# TODO
+}

@@ -1,0 +1,10 @@
+##########################
+##### Peasants
+##########################
+dynasty_laamp_katsuo = { # Katsuo cannot be lowborn to be playable
+	pattern="pattern_solid.dds"
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
