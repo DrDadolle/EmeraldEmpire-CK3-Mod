@@ -3553,16 +3553,17 @@ martial_chivalry.6002 = {
 		add_martial_lifestyle_xp = medium_lifestyle_experience
 	}
 
-	option = { #burn it!
-		name = martial_chivalry.6002.c
-		trigger = {
-			faith = {
-				has_doctrine = tenet_aniconism
-			}
-		}
-		add_martial_lifestyle_xp = medium_lifestyle_experience
-		add_piety = medium_piety_gain
-	}
+	#L5R Disabled
+	# option = { #burn it!
+	# 	name = martial_chivalry.6002.c
+	# 	trigger = {
+	# 		faith = {
+	# 			has_doctrine = tenet_aniconism
+	# 		}
+	# 	}
+	# 	add_martial_lifestyle_xp = medium_lifestyle_experience
+	# 	add_piety = medium_piety_gain
+	# }
 
 	after = {
 		remove_variable = church_artifact_book_var

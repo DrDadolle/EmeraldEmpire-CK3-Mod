@@ -1004,63 +1004,71 @@ artifact_feature_pattern_wolf_trigger = {
 			}
 		}
 	}
-	L5R Disabled
-	scope:owner = {
-		faith = {
-			NOR = {
-				has_doctrine = tenet_aniconism
-				# religion = religion:islam_religion # L5R Disabled
-			}
-		}
-	}
+	#L5R Disabled
+	# scope:owner = {
+	# 	faith = {
+	# 		NOR = {
+	# 			has_doctrine = tenet_aniconism
+	# 			religion = religion:islam_religion
+	# 		}
+	# 	}
+	# }
 }	
 
 # animals
 artifact_feature_pattern_animals_trigger = {
-	scope:owner = {
-		faith = {
-			NOR = {
-				has_doctrine = tenet_aniconism
-				# religion = religion:islam_religion # L5R Disabled
-			}
-		}
-	}
+	#L5R Disabled
+	always = yes
+	# scope:owner = {
+	# 	faith = {
+	# 		NOR = {
+	# 			has_doctrine = tenet_aniconism
+	# 			religion = religion:islam_religion
+	# 		}
+	# 	}
+	# }
 }	
 
 # local_animal
 artifact_feature_pattern_local_animal_trigger = {
-	scope:owner = {
-		faith = {
-			NOR = {
-				has_doctrine = tenet_aniconism
-				# religion = religion:islam_religion # L5R Disabled
-			}
-		}
-	}
+	#L5R Disabled
+	always = yes
+	# scope:owner = {
+	# 	faith = {
+	# 		NOR = {
+	# 			has_doctrine = tenet_aniconism
+	# 			religion = religion:islam_religion
+	# 		}
+	# 	}
+	# }
 }	
 
 # beasts
 artifact_feature_pattern_beasts_trigger = {
-	scope:owner = {
-		faith = {
-			NOR = {
-				has_doctrine = tenet_aniconism
-				# religion = religion:islam_religion  # L5R Disabled
-			}
-		}
-	}
+	#L5R Disabled
+	always = yes
+	# scope:owner = {
+	# 	faith = {
+	# 		NOR = {
+	# 			has_doctrine = tenet_aniconism
+	# 			religion = religion:islam_religion
+	# 		}
+	# 	}
+	# }
 }	
 
 # bird
 artifact_feature_pattern_bird_trigger = {
-	scope:owner = {
-		faith = {
-			NOR = {
-				has_doctrine = tenet_aniconism
-				# religion = religion:islam_religion # L5R Disabled
-			}
-		}
-	}
+	#L5R Disabled
+	always = yes
+	# scope:owner = {
+	# 	faith = {
+	# 		NOR = {
+	# 			has_doctrine = tenet_aniconism
+	# 			religion = religion:islam_religion
+	# 		}
+	# 	}
+	# }
 }	
 
 # war_god
@@ -1079,14 +1087,15 @@ artifact_feature_pattern_war_god_trigger = {
 			}
 		}
 	}
-	scope:owner = {
-		faith = {
-			NOR = {
-				has_doctrine = tenet_aniconism
-				has_doctrine = tenet_pacifism
-			}
-		}
-	}
+	#L5R Disabled
+	# scope:owner = {
+	# 	faith = {
+	# 		NOR = {
+	# 			has_doctrine = tenet_aniconism
+	# 			religion = religion:islam_religion
+	# 		}
+	# 	}
+	# }
 }
 
 # religion
@@ -1098,14 +1107,15 @@ artifact_feature_pattern_religion_trigger = {
 		}
 		scope:newly_created_artifact = { has_artifact_feature = book_subject_learning }
 	}
-	scope:owner = {
-		faith = {
-			NOR = {
-				has_doctrine = tenet_aniconism
-				# religion = religion:islam_religion # L5R Disabled
-			}
-		}
-	}
+	#L5R Disabled
+	# scope:owner = {
+	# 	faith = {
+	# 		NOR = {
+	# 			has_doctrine = tenet_aniconism
+	# 			religion = religion:islam_religion
+	# 		}
+	# 	}
+	# }
 }
 # eschatology
 artifact_feature_pattern_eschatology_trigger = {
@@ -1121,14 +1131,15 @@ artifact_feature_pattern_eschatology_trigger = {
 			}
 		}
 	}
-	scope:owner = {
-		faith = {
-			NOR = {
-				has_doctrine = tenet_aniconism
-				# religion = religion:islam_religion # L5R Disabled
-			}
-		}
-	}
+	#L5R Disabled
+	# scope:owner = {
+	# 	faith = {
+	# 		NOR = {
+	# 			has_doctrine = tenet_aniconism
+	# 			religion = religion:islam_religion
+	# 		}
+	# 	}
+	# }
 }
 # pattern_religious_symbol
 artifact_feature_pattern_religious_symbol_trigger = {
@@ -1144,14 +1155,15 @@ artifact_feature_pattern_religious_symbol_trigger = {
 			}
 		}
 	}
-	scope:owner = {
-		faith = {
-			NOR = {
-				has_doctrine = tenet_aniconism
-				# religion = religion:islam_religion # L5R Disabled
-			}
-		}
-	}
+	#L5R Disabled
+	# scope:owner = {
+	# 	faith = {
+	# 		NOR = {
+	# 			has_doctrine = tenet_aniconism
+	# 			religion = religion:islam_religion
+	# 		}
+	# 	}
+	# }
 }
 # gibberish
 artifact_feature_pattern_gibberish_trigger = {

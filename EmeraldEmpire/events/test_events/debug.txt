@@ -1742,14 +1742,15 @@ debug.347 = {
 	orphan = yes
 
 	trigger = {
-		faith = {
-			NOR = {
-				has_doctrine = tenet_aniconism
-				# religion = religion:judaism_religion
-				# religion = religion:christianity_religion
-				# religion = religion:islam_religion
-			}
-		}
+		always = yes
+		# faith = {
+		# 	NOR = {
+		# 		# has_doctrine = tenet_aniconism
+		# 		# religion = religion:judaism_religion
+		# 		# religion = religion:christianity_religion
+		# 		# religion = religion:islam_religion
+		# 	}
+		# }
 	}
 
 	immediate = {

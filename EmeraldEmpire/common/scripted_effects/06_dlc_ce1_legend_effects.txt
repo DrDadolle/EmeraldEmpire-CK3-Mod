@@ -747,6 +747,304 @@ grab_mythical_founder_effect = {
 				# 	}
 				# 	set_variable = { name = mythical_ancestor_var value = flag:melusine }
 				# }
+				
+				10 = { #Hida
+					trigger = {
+						OR = {
+							root.primary_title = title:c_kyoukan_province
+							root.primary_title = title:d_hida
+							root.primary_title = title:k_crab_clan
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:hida }
+				}
+				10 = { #Kaiu
+					trigger = {
+						OR = {
+							root.primary_title = title:c_yoake_province
+							root.primary_title = title:d_kaiu
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:kaiu }
+				}
+				10 = { #hiruma
+					trigger = {
+						OR = {
+							#L5R TODO add future old Hiruma castle
+							# root.primary_title = title:c_byzantion
+							root.primary_title = title:d_hiruma
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:hiruma }
+				}
+				10 = { #kuni
+					trigger = {
+						OR = {
+							root.primary_title = title:c_adauchi_province
+							root.primary_title = title:d_kuni
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:kuni }
+				}
+				10 = { #yasuki
+					trigger = {
+						OR = {
+							root.primary_title = title:c_junkin_province
+							root.primary_title = title:d_yasuki
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:yasuki }
+				}
+				10 = { #Doji
+					trigger = {
+						OR = {
+							root.primary_title = title:c_kazenmuketsu_province
+							root.primary_title = title:d_doji
+							root.primary_title = title:k_crane_clan
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:doji }
+				}
+				10 = { #daidoji
+					trigger = {
+						OR = {
+							root.primary_title = title:c_hayaku_province
+							root.primary_title = title:d_daidoji
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:daidoji }
+				}
+				10 = { #kakita
+					trigger = {
+						OR = {
+							root.primary_title = title:c_takuetsu_province
+							root.primary_title = title:d_kakita
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:kakita }
+				}
+				10 = { #Togashi
+					trigger = {
+						OR = {
+							root.primary_title = title:c_mucha_province
+							root.primary_title = title:d_togashi
+							root.primary_title = title:k_dragon_clan
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:togashi }
+				}
+				10 = { #mirumoto
+					trigger = {
+						OR = {
+							root.primary_title = title:c_toshibu_province
+							root.primary_title = title:d_mirumoto
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:mirumoto }
+				}
+				10 = { #agasha
+					trigger = {
+						OR = {
+							root.primary_title = title:c_kinenkan_province
+							root.primary_title = title:d_agasha
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:agasha }
+				}
+				10 = { #akodo
+					trigger = {
+						OR = {
+							root.primary_title = title:c_kenryu_province
+							root.primary_title = title:d_akodo
+							root.primary_title = title:k_lion_clan
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:akodo }
+				}
+				10 = { #matsu
+					trigger = {
+						OR = {
+							root.primary_title = title:c_yama_province
+							root.primary_title = title:d_matsu
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:matsu }
+				}
+				10 = { #kitsu
+					trigger = {
+						OR = {
+							root.primary_title = title:c_hayai_province
+							root.primary_title = title:d_kitsu
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:kitsu }
+				}
+				10 = { #ikoma
+					trigger = {
+						OR = {
+							root.primary_title = title:c_gunsho_province
+							root.primary_title = title:d_ikoma
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:ikoma }
+				}
+				10 = { #shiba
+					trigger = {
+						OR = {
+							root.primary_title = title:c_nejiro_province
+							root.primary_title = title:d_shiba
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:shiba }
+				}
+				10 = { #isawa
+					trigger = {
+						OR = {
+							root.primary_title = title:c_maryoku_province
+							root.primary_title = title:d_isawa
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:isawa }
+				}
+				10 = { #asako
+					trigger = {
+						OR = {
+							root.primary_title = title:c_yogen_province
+							root.primary_title = title:d_asako
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:asako }
+				}
+				10 = { #bayushi
+					trigger = {
+						OR = {
+							root.primary_title = title:c_kunizakai_province
+							root.primary_title = title:d_bayushi
+							root.primary_title = title:k_scorpion_clan
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:bayushi }
+				}
+				10 = { #shosuro
+					trigger = {
+						OR = {
+							root.primary_title = title:c_kawa_province
+							root.primary_title = title:d_shosuro
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:shosuro }
+				}
+				10 = { #soshi
+					trigger = {
+						OR = {
+							root.primary_title = title:c_an_ei_province
+							root.primary_title = title:d_soshi
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:soshi }
+				}
+				10 = { #yogo
+					trigger = {
+						OR = {
+							root.primary_title = title:c_fukitsu_province
+							root.primary_title = title:d_yogo
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:yogo }
+				}
+				10 = { #shinjo
+					trigger = {
+						OR = {
+							root.primary_title = title:c_kouryo_province
+							root.primary_title = title:d_shinjo
+							root.primary_title = title:k_unicorn_clan
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:shinjo }
+				}
+				10 = { #iuchi
+					trigger = {
+						OR = {
+							root.primary_title = title:c_kaihi_province
+							root.primary_title = title:d_iuchi
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:iuchi }
+				}
+				10 = { #moto
+					trigger = {
+						OR = {
+							root.primary_title = title:c_ikoku_province
+							root.primary_title = title:d_moto
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:moto }
+				}
+				10 = { #ide
+					trigger = {
+						OR = {
+							root.primary_title = title:c_garanto_province_unicorn
+							root.primary_title = title:d_ide
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:ide }
+				}
+				10 = { #utaku
+					trigger = {
+						OR = {
+							root.primary_title = title:c_manaka_province
+							root.primary_title = title:d_utaku
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:utaku }
+				}
+				10 = { #hantei
+					trigger = {
+						OR = {
+							root.primary_title = title:c_otosan_uchi_province
+							root.primary_title = title:d_hantei
+							root.primary_title = title:e_rokugan
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:hantei }
+				}
+				10 = { #seppun
+					trigger = {
+						OR = {
+							root.primary_title = title:c_seppun_province
+							root.primary_title = title:d_seppun
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:seppun }
+				}
+				10 = { #otomo
+					trigger = {
+						OR = {
+							#L5R TODO : no dejure county for otomo ?
+							# root.primary_title = title:c_byzantion
+							root.primary_title = title:d_otomo
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:otomo }
+				}
+				10 = { #miya
+					trigger = {
+						OR = {
+							root.primary_title = title:c_miya_province
+							root.primary_title = title:d_miya
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:miya }
+				}
+				10 = { #osano_wo
+					trigger = {
+						OR = {
+							root.primary_title = title:c_gotei_province
+							root.primary_title = title:d_yoritomo
+						}
+					}
+					set_variable = { name = mythical_ancestor_var value = flag:osano_wo }
+				}
 				1 = { # Fallback, only triggered when necessary
 					set_variable = { name = mythical_ancestor_var value = flag:fallback }
 				}

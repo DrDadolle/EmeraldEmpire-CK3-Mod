@@ -2,6 +2,7 @@
 	type = character
 	text = {
 		trigger = {
+			#L5R Added
 			OR = {
 				culture = { has_cultural_pillar = language_rokugani }
 				culture = { has_cultural_pillar = language_imperial_rokugani }

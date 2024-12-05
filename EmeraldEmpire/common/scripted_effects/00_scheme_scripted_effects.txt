@@ -14669,12 +14669,322 @@ claim_throne_set_mythical_founder_variable_effect = {
 	# 		value = flag:zenobia
 	# 	}
 	# }
-	# else = {
+		#L5R Added
+	if = { # Hida
+		limit = {
+			OR = {
+				scope:target_title = title:d_hida
+				scope:target_title = title:k_crab_clan
+			}
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:hida
+		}
+	}
+	else_if = { # Kaiu
+		limit = {
+				scope:target_title = title:d_kaiu
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:kaiu
+		}
+	}
+	else_if = { # hiruma
+		limit = {
+				scope:target_title = title:d_hiruma
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:hiruma
+		}
+	}
+	else_if = { # kuni
+		limit = {
+				scope:target_title = title:d_kuni
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:kuni
+		}
+	}
+	else_if = { # yasuki
+		limit = {
+				scope:target_title = title:d_yasuki
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:yasuki
+		}
+	}
+	else_if = { # doji
+		limit = {
+			OR = {
+				scope:target_title = title:d_doji
+				scope:target_title = title:k_crane_clan
+			}
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:doji
+		}
+	}
+	else_if = { # daidoji
+		limit = {
+				scope:target_title = title:d_daidoji
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:daidoji
+		}
+	}
+	else_if = { # kakita
+		limit = {
+				scope:target_title = title:d_kakita
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:kakita
+		}
+	}
+	else_if = { # togashi
+		limit = {
+			OR = {
+				scope:target_title = title:d_togashi
+				scope:target_title = title:k_dragon_clan
+			}
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:togashi
+		}
+	}
+	else_if = { # mirumoto
+		limit = {
+				scope:target_title = title:d_mirumoto
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:mirumoto
+		}
+	}
+	else_if = { # agasha
+		limit = {
+				scope:target_title = title:d_agasha
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:agasha
+		}
+	}
+	else_if = { # akodo
+		limit = {
+			OR = {
+				scope:target_title = title:d_akodo
+				scope:target_title = title:k_lion_clan
+			}
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:akodo
+		}
+	}
+	else_if = { # matsu
+		limit = {
+				scope:target_title = title:d_matsu
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:matsu
+		}
+	}
+	else_if = { # kitsu
+		limit = {
+				scope:target_title = title:d_kitsu
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:kitsu
+		}
+	}
+	else_if = { # ikoma
+		limit = {
+				scope:target_title = title:d_ikoma
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:ikoma
+		}
+	}
+	else_if = { # shiba
+		limit = {
+				scope:target_title = title:d_shiba
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:shiba
+		}
+	}
+	else_if = { # isawa
+		limit = {
+				scope:target_title = title:d_isawa
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:isawa
+		}
+	}
+	else_if = { # asako
+		limit = {
+				scope:target_title = title:d_asako
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:asako
+		}
+	}
+	else_if = { # bayushi
+		limit = {
+			OR = {
+				scope:target_title = title:d_bayushi
+				scope:target_title = title:k_scorpion_clan
+			}
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:bayushi
+		}
+	}
+	else_if = { # shosuro
+		limit = {
+				scope:target_title = title:d_shosuro
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:shosuro
+		}
+	}
+	else_if = { # soshi
+		limit = {
+				scope:target_title = title:d_soshi
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:soshi
+		}
+	}
+	else_if = { # yogo
+		limit = {
+				scope:target_title = title:d_yogo
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:yogo
+		}
+	}
+	else_if = { # shinjo
+		limit = {
+			OR = {
+				scope:target_title = title:d_shinjo
+				scope:target_title = title:k_unicorn_clan
+			}
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:shinjo
+		}
+	}
+	else_if = { # iuchi
+		limit = {
+				scope:target_title = title:d_iuchi
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:iuchi
+		}
+	}
+	else_if = { # moto
+		limit = {
+				scope:target_title = title:d_moto
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:moto
+		}
+	}
+	else_if = { # ide
+		limit = {
+				scope:target_title = title:d_ide
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:ide
+		}
+	}
+	else_if = { # utaku
+		limit = {
+				scope:target_title = title:d_utaku
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:utaku
+		}
+	}
+	else_if = { # hantei
+		limit = {
+			OR = {
+				scope:target_title = title:d_hantei
+				scope:target_title = title:e_rokugan
+			}
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:hantei
+		}
+	}
+	else_if = { # seppun
+		limit = {
+				scope:target_title = title:d_seppun
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:seppun
+		}
+	}
+	else_if = { # otomo
+		limit = {
+				scope:target_title = title:d_otomo
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:otomo
+		}
+	}
+	else_if = { # miya
+		limit = {
+				scope:target_title = title:d_miya
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:miya
+		}
+	}
+	else_if = { # osano_wo
+		limit = {
+				scope:target_title = title:d_yoritomo
+		}
+		set_variable = {
+			name = mythical_founder
+			value = flag:osano_wo
+		}
+	}
+	else = {
 		set_variable = {
 			name = mythical_founder
 			value = flag:fallback
 		}
-	# }
+	}
 }
 
 ##################################################

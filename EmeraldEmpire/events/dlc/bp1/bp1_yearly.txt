@@ -4047,14 +4047,15 @@ bp1_yearly.5708 = {
 	desc = {
 		desc = bp1_yearly.5708.start
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:heathen_friend.faith = {
-						has_doctrine = tenet_aniconism
-					}
-				}
-				desc = bp1_yearly.5708.aniconist
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:heathen_friend.faith = {
+			# 			has_doctrine = tenet_aniconism
+			# 		}
+			# 	}
+			# 	desc = bp1_yearly.5708.aniconist
+			# }
 			desc = bp1_yearly.5708.normal
 		}
 		desc = bp1_yearly.5708.end
