@@ -2,6 +2,8 @@ d_mirumoto = {
 	1111.1.1 = {
 		liege = "k_dragon_clan"
 		holder = lineofmirumotomasashige1 # Mirumoto Masashige
+		government = feudal_government
+		succession_laws = { high_partition_succession_law }
 	}
 }
 

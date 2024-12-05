@@ -1,7 +1,9 @@
 d_ikoma = {
 	1098.1.1 = { 
-				liege = "k_lion_clan"
-				holder = lineofikomaanakazu1 # Ikoma Anakazu
+		liege = "k_lion_clan"
+		holder = lineofikomaanakazu1 # Ikoma Anakazu
+		government = feudal_government
+		succession_laws = { high_partition_succession_law }
 	}
 }
 

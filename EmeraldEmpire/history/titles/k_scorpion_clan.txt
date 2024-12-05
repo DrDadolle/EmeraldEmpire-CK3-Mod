@@ -3,6 +3,8 @@ k_scorpion_clan = {
 	5.1.1 = {
 		liege = "e_rokugan"
 		# holder = kami Bayushi
+		government = feudal_government
+		succession_laws = { high_partition_succession_law }
 	}
 
 	1110.1.1 = {

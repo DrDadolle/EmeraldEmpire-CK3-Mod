@@ -2,6 +2,8 @@ d_kaito = {
 	1123.1.1 = {
 		liege = "k_phoenix_clan"
 		holder = lineofkaito1 # Kaito Nobukai
+		government = feudal_government
+		succession_laws = { high_partition_succession_law }
 	}
 	1123.4.1 = {
 		holder = lineofkaito3 # Kaito Kosori

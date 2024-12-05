@@ -97,10 +97,10 @@ assign_random_nickname_effect = {
 			100 = {
 				trigger = {
 					#L5R Disabled
-					# NOR = {
-					# 	has_trait = crusader_king
+					NOR = {
+						has_trait = crusader_king
 					# 	has_title = title:e_mongol_empire
-					# }
+					}
 					has_personality_extroverted_trigger = yes
 					NOT = {
 						any_realm_county = {
@@ -4314,10 +4314,10 @@ set_random_negative_nickname_effect = {
 			100 = {
 				trigger = {
 					#L5R Disabled
-					# NOR = {
-					# 	has_trait = crusader_king
+					NOR = {
+						has_trait = crusader_king
 					# 	has_title = title:e_mongol_empire
-					# }
+					}
 					NOT = {
 						any_realm_county = {
 							culture = scope:nick_recipient.culture

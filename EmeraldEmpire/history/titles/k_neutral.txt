@@ -5,6 +5,8 @@ c_kintani_province = { # Shiro Kyotei
 	1090.1.1 = { 
 		liege = "d_doji"
 		holder = lineoftsumeretsu1 #  Tsume Retsu
+		government = feudal_government
+		succession_laws = { high_partition_succession_law }
 	}
 	1120.4.4 = {
 		holder = lineoftsumeretsu2 #  Tsume Takashi
@@ -17,6 +19,7 @@ c_north_kintani_province = {
 		liege = "e_rokugan"
 		holder = 3004000 #  PlaceHolder monk
 		change_development_level = 5
+		government = theocracy_government
 	}
 }
 
@@ -25,6 +28,7 @@ c_kintani_mori_province = {
 		liege = "e_rokugan"
 		holder = 3004002 #  PlaceHolder monk
 		change_development_level = 5
+		government = theocracy_government
 	}
 }
 
@@ -33,6 +37,7 @@ c_east_kintani_province = {
 		liege = "e_rokugan"
 		holder = 3004003 #  PlaceHolder monk
 		change_development_level = 5
+		government = theocracy_government
 	}
 }
 
@@ -55,6 +60,7 @@ c_shinsei_monastery_rambo = {
 		liege = "e_rokugan"
 		holder = 3004001 #  PlaceHolder monk
 		change_development_level = 5
+		government = theocracy_government
 	}
 }
 
@@ -94,6 +100,7 @@ c_west_shinomen_monastery_1 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004004 #  PlaceHolder monk
+		government = theocracy_government
 	}
 }
 
@@ -102,6 +109,7 @@ c_west_shinomen_monastery_2 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004005 #  PlaceHolder monk
+		government = theocracy_government
 	}
 }
 
@@ -110,6 +118,7 @@ c_west_shinomen_monastery_3 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004006 #  PlaceHolder monk
+		government = theocracy_government
 	}
 }
 
@@ -119,6 +128,7 @@ c_west_shinomen_monastery_4 = {
 		liege = "e_rokugan"
 		holder = 3004007 #  PlaceHolder monk
 		change_development_level = 5
+		government = theocracy_government
 	}
 }
 
@@ -131,6 +141,7 @@ c_south_shinomen_monastery_1 = {
 	1123.1.1 = {
 		liege = "e_rokugan"
 		holder = 3004008 #  PlaceHolder monk
+		government = theocracy_government
 	}
 }
 
@@ -140,6 +151,7 @@ c_south_shinomen_monastery_2 = {
 		liege = "e_rokugan"
 		holder = 3004009 #  PlaceHolder monk
 		change_development_level = 5
+		government = theocracy_government
 	}
 }
 
@@ -225,6 +237,7 @@ c_conflagration_temple = {
 		liege = "e_rokugan"
 		holder = 3004011 #  PlaceHolder monk
 		change_development_level = 5
+		government = theocracy_government
 	}
 }
 
@@ -233,5 +246,6 @@ c_shinden_kasai = {
 		liege = "e_rokugan"
 		holder = 3004012 #  PlaceHolder monk
 		change_development_level = 3
+		government = theocracy_government
 	}
 }

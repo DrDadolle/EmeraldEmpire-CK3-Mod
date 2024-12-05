@@ -2,6 +2,8 @@ d_yasuki = {
 	1111.1.1 = {
 		liege = "k_crab_clan"
 		holder = lineofyasukitaka1 # Yasuki Taka
+		government = feudal_government
+		succession_laws = { high_partition_succession_law }
 	}
 }
 

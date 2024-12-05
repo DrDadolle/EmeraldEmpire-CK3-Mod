@@ -2,6 +2,8 @@ d_togashi = {
 	1110.1.1 = {
 		liege = "k_dragon_clan"
 		holder = lineoftogashiyokuni1 # Togashi Yokuni
+		government = feudal_government
+		succession_laws = { high_partition_succession_law }
 	}
 }
 

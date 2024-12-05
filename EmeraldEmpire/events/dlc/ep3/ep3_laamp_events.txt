@@ -2456,16 +2456,16 @@ scripted_effect grant_land_to_beneficiary_effect = {
 }
 
 #L5R Disabled
-#scripted_effect transfer_crusader_king_trait_effect = {
-#	if = {
-#		limit = {
-#			has_character_flag = laamp_is_crusader_king
-#			has_trait = crusader_king
-#		}
-#		remove_trait = crusader_king
-#		$BENEFICIARY$ = { add_trait = crusader_king }
-#	}
-#}
+scripted_effect transfer_crusader_king_trait_effect = {
+	if = {
+		limit = {
+			has_character_flag = laamp_is_crusader_king
+			has_trait = crusader_king
+		}
+		remove_trait = crusader_king
+		$BENEFICIARY$ = { add_trait = crusader_king }
+	}
+}
 
 ep3_laamps.0800 = { # Player adventurer has gained a landed title
 	type = character_event
