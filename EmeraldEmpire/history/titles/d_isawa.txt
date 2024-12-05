@@ -16,7 +16,7 @@ c_aoijiroi_province = {
 c_yosomono_province = {
 	1123.1.1 = {
 		liege = "d_isawa"
-		holder = lineofshingon1 # Isawa Ujina
+		holder = lineofisawavoid1 # Isawa Ujina
 		change_development_level = 2
 	}
 }

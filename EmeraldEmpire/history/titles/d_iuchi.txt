@@ -13,13 +13,6 @@ c_kaihi_province = {
 	}
 }
 
-b_tower_kelet = {
-	1123.1.1 = {
-		liege = "c_kaihi_province"
-		holder = lineofbattue1 # Battue Aki #TODO replace name Aki
-	}
-}
-
 
 c_shiten_province = {
 	1111.1.1 = {
