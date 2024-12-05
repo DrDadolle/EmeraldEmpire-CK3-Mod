@@ -1237,10 +1237,11 @@ court_position_generator_assignment_effect = {
 		flag:cultural_emissary = {
 			court_position_grant_effect = { POS = cultural_emissary CANDIDATE = $CANDIDATE$ EMPLOYER = $EMPLOYER$ }
 		}
+		
 		# Chief Qadi
-		flag:chief_qadi = {
-			court_position_grant_effect = { POS = chief_qadi CANDIDATE = $CANDIDATE$ EMPLOYER = $EMPLOYER$ }
-		}
+		# flag:chief_qadi = {
+		# 	court_position_grant_effect = { POS = chief_qadi CANDIDATE = $CANDIDATE$ EMPLOYER = $EMPLOYER$ }
+		# }
 		#L5R Disabled
 		# # Garuda
 		# flag:garuda = {

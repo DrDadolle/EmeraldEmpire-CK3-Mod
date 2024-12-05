@@ -1473,31 +1473,33 @@ legend_ending_rewards_legitimizing_effect = {
 			}
 		}
 	}
-	if = { #Roman Heritage legend without a Roman Empire
-		limit = {
-			scope:title_claim = title:e_roman_empire
-			NOT = {
-				exists = global_var:flag_restored_roman_empire
-			}
-		}
-		title:d_latium.empire = { #Italy
-			add_to_list = roman_heritage_claims
-		}
-		title:d_tunis.kingdom = { #North Africa
-			add_to_list = roman_heritage_claims
-		}
-		title:d_thrace.empire = { #Byz
-			add_to_list = roman_heritage_claims 
-		}
-		title:d_alexandria.kingdom = { #Egypt
-			add_to_list = roman_heritage_claims 
-		}
-		title:d_antioch.kingdom = { #Syria
-			add_to_list = roman_heritage_claims 
-		}
-		title:d_palestine.kingdom = { #Palestine
-			add_to_list = roman_heritage_claims 
-		}
+	if = { 
+		#L5R Disabled
+		#Roman Heritage legend without a Roman Empire
+		# limit = {
+		# 	scope:title_claim = title:e_roman_empire
+		# 	NOT = {
+		# 		exists = global_var:flag_restored_roman_empire
+		# 	}
+		# }
+		# title:d_latium.empire = { #Italy
+		# 	add_to_list = roman_heritage_claims
+		# }
+		# title:d_tunis.kingdom = { #North Africa
+		# 	add_to_list = roman_heritage_claims
+		# }
+		# title:d_thrace.empire = { #Byz
+		# 	add_to_list = roman_heritage_claims 
+		# }
+		# title:d_alexandria.kingdom = { #Egypt
+		# 	add_to_list = roman_heritage_claims 
+		# }
+		# title:d_antioch.kingdom = { #Syria
+		# 	add_to_list = roman_heritage_claims 
+		# }
+		# title:d_palestine.kingdom = { #Palestine
+		# 	add_to_list = roman_heritage_claims 
+		# }
 		custom_tooltip = {
 			text = legend_title_does_not_exist_sub_realm_claims_given_tt
 		}
@@ -1651,21 +1653,22 @@ legend_ending_achievements_effect = {
 		limit = {
 			exists = promoted_legend
 		}
-		if = { # If you have the legend of Scota
-			limit = {
-				is_ai = no
-				promoted_legend ?= {
-					has_legend_chronicle = ancient_people
-					legend_property:culture ?= culture:ancient_egyptian
-					legend_property:title ?= title:k_scotland
-					legend_property:original_region ?= geographical_region:ghw_region_egypt_et_al
-				}
-			}
-			add_achievement_global_variable_effect = {
-				VARIABLE = ce1_the_pharaoh_islands_achievement_unlocked
-				VALUE = yes
-			}
-		}
+		#L5R Disabled
+		# if = { # If you have the legend of Scota
+		# 	limit = {
+		# 		is_ai = no
+		# 		promoted_legend ?= {
+		# 			has_legend_chronicle = ancient_people
+		# 			legend_property:culture ?= culture:ancient_egyptian
+		# 			legend_property:title ?= title:k_scotland
+		# 			legend_property:original_region ?= geographical_region:ghw_region_egypt_et_al
+		# 		}
+		# 	}
+		# 	add_achievement_global_variable_effect = {
+		# 		VARIABLE = ce1_the_pharaoh_islands_achievement_unlocked
+		# 		VALUE = yes
+		# 	}
+		# }
 		if = {
 			limit = { is_ai = no }
 			add_achievement_global_variable_effect = {
