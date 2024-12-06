@@ -1,10 +1,10 @@
-﻿namespace = rokugan_religious_decision
+﻿namespace = l5r_religious_decision
 
 #Based on religious_decision.0102
-rokugan_religious_decision.0101 = {
+l5r_religious_decision.0101 = {
 	type = character_event
-	title = rokugan_religious_decision.0101.t
-	desc = rokugan_religious_decision.0101.desc
+	title = l5r_religious_decision.0101.t
+	desc = l5r_religious_decision.0101.desc
 	theme = faith
 	left_portrait = {
 		character = root
@@ -13,7 +13,7 @@ rokugan_religious_decision.0101 = {
 
 	# Benten
 	option = {
-		name = rokugan_religious_decision.0101.benten
+		name = l5r_religious_decision.0101.benten
 		trigger = {
 			NOT = { has_character_modifier = patron_benten_modifier }
 		}
@@ -22,7 +22,7 @@ rokugan_religious_decision.0101 = {
 
 	# Bishamon
 	option = {
-		name = rokugan_religious_decision.0101.bishamon
+		name = l5r_religious_decision.0101.bishamon
 		trigger = {
 			NOT = { has_character_modifier = patron_bishamon_modifier }
 		}
@@ -31,7 +31,7 @@ rokugan_religious_decision.0101 = {
 
 	# Jurojin
 	option = {
-		name = rokugan_religious_decision.0101.jurojin
+		name = l5r_religious_decision.0101.jurojin
 		trigger = {
 			NOT = { has_character_modifier = patron_jurojin_modifier }
 		}
@@ -40,7 +40,7 @@ rokugan_religious_decision.0101 = {
 
 	# Hotei
 	option = {
-		name = rokugan_religious_decision.0101.hotei
+		name = l5r_religious_decision.0101.hotei
 		trigger = {
 			NOT = { has_character_modifier = patron_hotei_modifier }
 		}
@@ -49,7 +49,7 @@ rokugan_religious_decision.0101 = {
 
 	# Daikoku
 	option = {
-		name = rokugan_religious_decision.0101.daikoku
+		name = l5r_religious_decision.0101.daikoku
 		trigger = {
 			NOT = { has_character_modifier = patron_daikoku_modifier }
 		}
@@ -58,7 +58,7 @@ rokugan_religious_decision.0101 = {
 
 	# Ebisu
 	option = {
-		name = rokugan_religious_decision.0101.ebisu
+		name = l5r_religious_decision.0101.ebisu
 		trigger = {
 			NOT = { has_character_modifier = patron_ebisu_modifier }
 		}
@@ -67,7 +67,7 @@ rokugan_religious_decision.0101 = {
 
 	# Fukurokujin
 	option = {
-		name = rokugan_religious_decision.0101.fukurokujin
+		name = l5r_religious_decision.0101.fukurokujin
 		trigger = {
 			NOT = { has_character_modifier = patron_fukurokujin_modifier }
 		}
@@ -76,8 +76,8 @@ rokugan_religious_decision.0101 = {
 
 	# Opt-Out
 	option = {
-		name = rokugan_religious_decision.0101.optout
-		flavor = rokugan_religious_decision.0101.flavor
+		name = l5r_religious_decision.0101.optout
+		flavor = l5r_religious_decision.0101.flavor
 
 		ai_chance = {
 			base = 0

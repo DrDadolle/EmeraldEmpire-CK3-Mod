@@ -1,0 +1,14 @@
+﻿is_shindoshi = {
+	OR = {
+		has_trait = shindoshi
+        has_trait = ishiken
+	}
+}
+
+is_mahotsukai = {
+	OR = {
+		has_trait = mahotsukai_1
+		has_trait = mahotsukai_2
+		has_trait = mahotsukai_3
+	}
+}

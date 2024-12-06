@@ -3,9 +3,10 @@
 
  # Decision Groups
  #decision_group_type_rokugan_major:0 "Unique Major Decisions"
- decision_group_type_rokugan_bushido:0 "Unique Samurai Decisions"
- decision_group_type_rokugan_religious:0 "Unique Spiritual Decisions"
- decision_group_type_rokugan_clan:0 "Special Clan Decisions"
+ decision_group_type_l5r_bushido:0 "L5R - Samurai Decisions"
+ decision_group_type_l5r_magic:0 "L5R - Spiritual Decisions"
+ decision_group_type_l5r_religious:0 "L5R - Religious Decisions"
+ decision_group_type_l5r_clan:0 "L5R - Clan Decisions"
  #decision_group_type_rokugan_minor:0 "Unique Decisions"
 
  ############################

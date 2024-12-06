@@ -1,0 +1,60 @@
+﻿##################################################
+# SHINDOSHI Decisions
+##################################################
+# Appease the spirits
+##################################################
+appease_the_spirits_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+
+	decision_group_type = l5r_magic
+
+	ai_check_interval = 60
+	desc = appease_the_spirits_decision_desc
+
+	is_shown = {
+		is_shindoshi = yes
+	}
+
+	is_valid = {
+		NOT = { has_character_modifier = cast_spell_recently_modifier }
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_imprisoned = no
+		NOT = { has_trait = incapable }
+	}
+
+	cost = {
+		piety = {
+			value = massive_piety_value
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				multiply = 0.5
+			}
+			multiply = 1
+		}
+	}
+
+	effect = {
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+##################################################
+# MAHOTSUKAI Decisions
+##################################################
+# aaa
+##################################################

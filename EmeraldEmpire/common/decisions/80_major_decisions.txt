@@ -1581,7 +1581,7 @@ found_witch_coven_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
-	decision_group_type = rokugan_religious
+	decision_group_type = l5r_religious
 	ai_check_interval = 0
 	desc = found_witch_coven_decision_desc
 

@@ -201,7 +201,7 @@ decision_claim_toshi_rambo_crane = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
 	}
-	decision_group_type = rokugan_bushido
+	decision_group_type = l5r_bushido
 
 	title = decision_claim_toshi_rambo_crane
 	selection_tooltip = decision_claim_toshi_rambo_crane_tooltip
@@ -312,7 +312,7 @@ decision_claim_toshi_rambo_lion = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_lion.dds"
 	}
-	decision_group_type = rokugan_bushido
+	decision_group_type = l5r_bushido
 
 	title = decision_claim_toshi_rambo_lion
 	selection_tooltip = decision_claim_toshi_rambo_lion_tooltip
@@ -420,7 +420,7 @@ decision_claim_city_rich_frog_lion = {
 	picture = { 
 		reference = "gfx/interface/illustrations/decisions/decision_lion.dds"
 	}
-	decision_group_type = rokugan_bushido
+	decision_group_type = l5r_bushido
 
 	title = decision_claim_city_rich_frog_lion
 	selection_tooltip = decision_claim_city_rich_frog_lion_tooltip
@@ -529,7 +529,7 @@ decision_claim_city_rich_frog_unicorn = {
 		reference = "gfx/interface/illustrations/decisions/decision_unicorn.dds"
 	}
 
-	decision_group_type = rokugan_bushido
+	decision_group_type = l5r_bushido
 
 	title = decision_claim_city_rich_frog_unicorn
 	selection_tooltip = decision_claim_city_rich_frog_unicorn_tooltip

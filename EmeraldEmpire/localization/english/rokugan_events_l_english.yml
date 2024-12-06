@@ -60,17 +60,17 @@
  ############################
  ###### MINOR DECISION
  ############################
- rokugan_religious_decision.0101.t:0 "Determine Favorite Fortune"
- rokugan_religious_decision.0101.desc:0 "Our faith worships a number of great Fortunes, as well as a number of minor ones. Yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side. Whatever the blessings my patron Fortune provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
- rokugan_religious_decision.0101.benten:0 "Benten, the Fortune of Romantic Love and Arts!"
- rokugan_religious_decision.0101.bishamon:0 "Bishamon, the Fortune of Strength!"
- rokugan_religious_decision.0101.jurojin:0 " Jurojin, the Fortune of Longevity!"
- rokugan_religious_decision.0101.hotei:0 "Hotei, the Fortune of Serenity and Peacefulness!"
- rokugan_religious_decision.0101.daikoku:0 "Daikoku, the Fortune of Wealth!"
- rokugan_religious_decision.0101.ebisu:0 "Ebisu, the Fortune of Honest Work!"
- rokugan_religious_decision.0101.fukurokujin:0 "Fukurokujin, the Fortune of Wisdom!"
- rokugan_religious_decision.0101.optout:0 "So many Fortunes..."
- rokugan_religious_decision.0101.flavor:0 "You decide not to dedicate yourself to any Fortune yet."
+ l5r_religious_decision.0101.t:0 "Determine Favorite Fortune"
+ l5r_religious_decision.0101.desc:0 "Our faith worships a number of great Fortunes, as well as a number of minor ones. Yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side. Whatever the blessings my patron Fortune provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+ l5r_religious_decision.0101.benten:0 "Benten, the Fortune of Romantic Love and Arts!"
+ l5r_religious_decision.0101.bishamon:0 "Bishamon, the Fortune of Strength!"
+ l5r_religious_decision.0101.jurojin:0 " Jurojin, the Fortune of Longevity!"
+ l5r_religious_decision.0101.hotei:0 "Hotei, the Fortune of Serenity and Peacefulness!"
+ l5r_religious_decision.0101.daikoku:0 "Daikoku, the Fortune of Wealth!"
+ l5r_religious_decision.0101.ebisu:0 "Ebisu, the Fortune of Honest Work!"
+ l5r_religious_decision.0101.fukurokujin:0 "Fukurokujin, the Fortune of Wisdom!"
+ l5r_religious_decision.0101.optout:0 "So many Fortunes..."
+ l5r_religious_decision.0101.flavor:0 "You decide not to dedicate yourself to any Fortune yet."
 
  rokugan_seppuku_decision.0001.t:0 "Today Is My Day"
  rokugan_seppuku_decision.0001.desc:0 "By commiting seppuku, I can repay my dishonourable behaviour and return my name untainted to my blessed ancestors."

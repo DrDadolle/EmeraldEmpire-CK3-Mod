@@ -88,6 +88,10 @@ shindoshi = {
 	disables_combat_leadership = yes # Can't be on the battlefield ?
 	# prevent martial lifestyle ?
 
+	opposites = {
+		ishiken
+		mahotsukai
+	}
 	#group = sorcerer ? Magic ? Shindoshi ? TODO
 
 	birth=0.015 # 0.015% chance de be born with this trait 
@@ -115,11 +119,206 @@ shindoshi = {
 			desc = trait_shindoshi_desc
 		}
 	}
-
 }
 
-## Mahotsukai
-#TODO
+ishiken = {
+	monthly_piety = 1
+	same_opinion = 10
+	learning = 5
+	#flag = lower_chance_of_dying_in_combat # Ishiken are not killed often in battle ? Or Can't be on the battlefield ?
+	disables_combat_leadership = yes # Can't be on the battlefield ?
+	# prevent martial lifestyle ?
+
+
+	opposites = {
+		shindoshi
+		mahotsukai
+	}
+	#group = sorcerer ? Magic ? Shindoshi ? TODO
+
+	birth=0.005 # 0.005% chance de be born with this trait 
+	random_creation=0.005 # 0% of new character have this ??
+	inherit_chance = 5 # 10% of chance to pass to the child
+	both_parent_has_trait_inherit_chance = 25 # 25% of chance to pass to the child if both parents have it
+
+	#TODO event when child with shindoshi is born ? Generate an elemental affinity ??
+
+	#TODO change icon
+	icon = {
+		desc = ishiken.dds
+	}
+
+	ruler_designer_cost = 120
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_ishiken_desc
+			}
+			desc = trait_ishiken_desc
+		}
+	}
+}
+
+
+## Mahotsukai 
+mahotsukai_3 = {
+	icon = mahotsukai_03.dds
+	category = fame
+
+	ruler_designer_cost = 150
+
+	group = mahotsukai
+	level = 3
+
+	health = 4
+	fertility = -0.5
+	negate_health_penalty_add = 4
+	
+	prowess = 10
+	learning = 6
+	martial = 4
+
+	dread_baseline_add = 20
+	dread_gain_mult = 0.25
+
+	same_opinion = -10
+
+	flag = lower_chance_of_dying_in_combat
+
+	shown_in_encyclopedia = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc =trait_mahotsukai_3_desc
+			}
+			desc =trait_mahotsukai_3_character_desc
+		}
+	}
+
+	ai_compassion = very_low_negative_ai_value
+	ai_rationality = very_low_positive_ai_value
+	
+	triggered_opinion = {
+		parameter = witchcraft_illegal
+		opinion_modifier = witchcraft_crime
+		ignore_opinion_value_if_same_trait = yes
+	}
+	triggered_opinion = {
+		parameter = witchcraft_shunned
+		opinion_modifier = witchcraft_intolerant
+		ignore_opinion_value_if_same_trait = yes
+	}
+}
+
+mahotsukai_2 = {
+	icon = mahotsukai_02.dds
+	category = fame
+
+	ruler_designer_cost = 100
+
+	group = mahotsukai
+	level = 2
+
+	health = 2
+	fertility = -0.3
+	negate_health_penalty_add = 2
+	
+	prowess = 5
+	learning = 4
+	martial = 2
+
+	dread_baseline_add = 15
+
+	same_opinion = -5
+
+	flag = lower_chance_of_dying_in_combat
+
+	shown_in_encyclopedia = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc =trait_mahotsukai_2_desc
+			}
+			desc =trait_mahotsukai_2_character_desc
+		}
+	}
+
+	ai_compassion = very_low_negative_ai_value
+	ai_rationality = very_low_positive_ai_value
+	
+	triggered_opinion = {
+		parameter = witchcraft_illegal
+		opinion_modifier = witchcraft_crime
+		ignore_opinion_value_if_same_trait = yes
+	}
+	triggered_opinion = {
+		parameter = witchcraft_shunned
+		opinion_modifier = witchcraft_intolerant
+		ignore_opinion_value_if_same_trait = yes
+	}
+}
+
+mahotsukai_1 = {
+	icon = mahotsukai_01.dds
+	category = fame
+
+	ruler_designer_cost = 50
+
+	group = mahotsukai
+	level = 1
+
+	health = 1
+	fertility = -0.2
+	negate_health_penalty_add = 1
+	
+	prowess = 2
+	learning = 2
+
+	dread_baseline_add = 5
+
+	same_opinion = 5
+
+	shown_in_encyclopedia = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc =trait_mahotsukai_1_desc
+			}
+			desc =trait_mahotsukai_1_character_desc
+		}
+	}
+
+	ai_compassion = very_low_negative_ai_value
+	ai_rationality = very_low_positive_ai_value
+	
+	triggered_opinion = {
+		parameter = witchcraft_illegal
+		opinion_modifier = witchcraft_crime
+		ignore_opinion_value_if_same_trait = yes
+	}
+	triggered_opinion = {
+		parameter = witchcraft_shunned
+		opinion_modifier = witchcraft_intolerant
+		ignore_opinion_value_if_same_trait = yes
+	}
+}
+
 
 ## Yogo Curse
 #TODO

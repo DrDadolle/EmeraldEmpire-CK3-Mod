@@ -11,7 +11,7 @@ select_personal_deity_fortunism_decision = {
 		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 
-	decision_group_type = rokugan_religious
+	decision_group_type = l5r_religious
 
 	desc = select_personal_deity_fortunism_decision_desc
 	selection_tooltip = select_personal_deity_fortunism_decision_tooltip
@@ -34,7 +34,7 @@ select_personal_deity_fortunism_decision = {
 
 	effect = {
 		custom_tooltip = select_personal_deity_fortunism_decision_tt
-		trigger_event = rokugan_religious_decision.0101
+		trigger_event = l5r_religious_decision.0101
 	}
 
 	ai_check_interval = 96
@@ -64,7 +64,7 @@ commit_seppuku_decision = {
 		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 
-	decision_group_type = rokugan_bushido
+	decision_group_type = l5r_bushido
 
 	desc = commit_seppuku_decision_desc
 	selection_tooltip =  commit_seppuku_decision_tooltip
@@ -118,7 +118,7 @@ rokugan_abdicate_decision = {
 	}
 	desc = rokugan_abdicate_decision_desc
 
-	decision_group_type = rokugan_bushido
+	decision_group_type = l5r_bushido
 
 	ai_check_interval = 0
 
@@ -167,7 +167,7 @@ bleach_hair_white_crane_decision = {
 		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
 	}
 	
-	decision_group_type = rokugan_clan
+	decision_group_type = l5r_clan
 
 	sort_order = 81
 
@@ -214,7 +214,7 @@ abandon_white_hair_decision = {
 		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
 	}
 
-	decision_group_type = rokugan_clan
+	decision_group_type = l5r_clan
 
 	sort_order = 81
 
