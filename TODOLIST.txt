@@ -30,6 +30,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Scheme modifiers have been completely reworked, so all the old ones for things like personal_scheme_power_mult, hostile_scheme_resistance_add, etc. no longer work. You will need to replace them with new scheme modifier
 	- check scheme.info of vanilla game
 - remove bunch of errors
+- TODO Bannir quelqu'un pour tester si aventurier marche
 - Add thumbnail image for the mod !
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA
@@ -40,6 +41,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - update common/travel/point_of_interest_types/travel_point_of_interest_types.txt 
 
 ## short term goals 
+- Shindoshi decisions !
 - update common/scripted_effects/04_dlc_ep2_tournament_effects and remove ref from vanilla
 - restore court_events_general.txt from vanilla
 - add at least 1 adventures in game to avoid some errors on start
