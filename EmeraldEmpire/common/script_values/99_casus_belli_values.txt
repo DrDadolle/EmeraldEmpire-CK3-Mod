@@ -331,17 +331,18 @@ common_cb_piety_cost_multiplier = {
 holy_war_cb_piety_cost_multiplier = {
 	value = 1
 
-	if = {
-		limit = {
-			scope:attacker = {
-				faith = { has_doctrine_parameter = cheaper_holy_wars_active }
-			}
-		}
-		multiply = {
-			value = 0.8
-			desc = CB_REDUCED_HOLY_WAR_COST
-		}
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		scope:attacker = {
+	# 			faith = { has_doctrine_parameter = cheaper_holy_wars_active }
+	# 		}
+	# 	}
+	# 	multiply = {
+	# 		value = 0.8
+	# 		desc = CB_REDUCED_HOLY_WAR_COST
+	# 	}
+	# }
 
 	# Ghazi reduction
 	if = {
@@ -1021,176 +1022,177 @@ struggle_cb_phase_modifier_cost = {
 	## Note that these aren't hooked up to the actual _parameters_ for tooltip reasons: we'd have to check what the phase is anyway, so we just check off of the phase to begin with and save ourselves a worthless parameter check.
 	add = {
 		value = 0
+		#L5R Disabled
 		# Cheap.
-		if = {
-			limit = {
-				scope:attacker = {
-					any_character_struggle = {
-						involvement = involved
-						is_struggle_type = iberian_struggle
-						is_struggle_phase = struggle_iberia_phase_hostility
-						is_secondary_character_involvement_either_trigger = { CHAR = scope:defender }
-					}
-				}
-			}
-			add = {
-				every_in_list = {
-					list = target_titles
-					limit = { tier = tier_county }
-					add = {
-						value = minor_prestige_value
-					}
-				}
-				multiply = {
-					value = 0.9
-					every_in_list = {
-						list = target_titles
-						limit = { tier = tier_county }
-						add = {
-							value = 0.1
-						}
-					}
-					max = 2
-				}
-				desc = CB_COST_STRUGGLE_PHASE_HOSTILITY
-			}
-		}
-		# Standard.
-		if = {
-			limit = {
-				scope:attacker = {
-					any_character_struggle = {
-						involvement = involved
-						is_struggle_type = iberian_struggle
-						is_struggle_phase = struggle_iberia_phase_opportunity
-						is_secondary_character_involvement_either_trigger = { CHAR = scope:defender }
-					}
-				}
-			}
-			add = {
-				every_in_list = {
-					list = target_titles
-					limit = { tier = tier_county }
-					add = {
-						value = medium_prestige_value
-					}
-				}
-				multiply = {
-					value = 0.9
-					every_in_list = {
-						list = target_titles
-						limit = { tier = tier_county }
-						add = {
-							value = 0.1
-						}
-					}
-					max = 2
-				}
-				desc = CB_COST_STRUGGLE_PHASE_OPPORTUNITY
-			}
-		}
-		# Expensive.
-		if = {
-			limit = {
-				scope:attacker = {
-					any_character_struggle = {
-						involvement = involved
-						is_struggle_type = iberian_struggle
-						is_struggle_phase = struggle_iberia_phase_compromise
-						is_secondary_character_involvement_either_trigger = { CHAR = scope:defender }
-					}
-				}
-			}
-			add = {
-				every_in_list = {
-					list = target_titles
-					limit = { tier = tier_county }
-					add = {
-						value = major_prestige_value
-					}
-				}
-				multiply = {
-					value = 0.9
-					every_in_list = {
-						list = target_titles
-						limit = { tier = tier_county }
-						add = {
-							value = 0.1
-						}
-					}
-					max = 2
-				}
-				desc = CB_COST_STRUGGLE_PHASE_COMPROMISE
-			}
-		}
-		if = {
-			limit = {
-				scope:attacker = {
-					any_character_struggle = {
-						involvement = involved
-						is_struggle_type = iberian_struggle
-						is_struggle_phase = struggle_iberia_phase_conciliation
-						is_secondary_character_involvement_either_trigger = { CHAR = scope:defender }
-					}
-				}
-			}
-			add = {
-				every_in_list = {
-					list = target_titles
-					limit = { tier = tier_county }
-					add = {
-						value = major_prestige_value
-					}
-				}
-				multiply = {
-					value = 0.9
-					every_in_list = {
-						list = target_titles
-						limit = { tier = tier_county }
-						add = {
-							value = 0.1
-						}
-					}
-					max = 2
-				}
-				desc = CB_COST_STRUGGLE_PHASE_CONCILIATION
-			}
-		}
-		if = { # Post Struggle cost
-			limit = {
-				scope:attacker = {
-					exists = scope:attacker.house
-					scope:attacker.house = {
-						OR ={
-							has_house_modifier = fp2_struggle_hostility_house_combined_modifier
-							has_house_modifier = fp2_struggle_hostility_house_faith_modifier
-							has_house_modifier = fp2_struggle_hostility_house_culture_modifier
-						}
-					}
-				}
-			}
-			add = {
-				every_in_list = {
-					list = target_titles
-					limit = { tier = tier_county }
-					add = {
-						value = major_prestige_value
-					}
-				}
-				multiply = {
-					value = 0.9
-					every_in_list = {
-						list = target_titles
-						limit = { tier = tier_county }
-						add = {
-							value = 0.1
-						}
-					}
-					max = 2
-				}
-				desc = CB_BASE_COST
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:attacker = {
+		# 			any_character_struggle = {
+		# 				involvement = involved
+		# 				is_struggle_type = iberian_struggle
+		# 				is_struggle_phase = struggle_iberia_phase_hostility
+		# 				is_secondary_character_involvement_either_trigger = { CHAR = scope:defender }
+		# 			}
+		# 		}
+		# 	}
+		# 	add = {
+		# 		every_in_list = {
+		# 			list = target_titles
+		# 			limit = { tier = tier_county }
+		# 			add = {
+		# 				value = minor_prestige_value
+		# 			}
+		# 		}
+		# 		multiply = {
+		# 			value = 0.9
+		# 			every_in_list = {
+		# 				list = target_titles
+		# 				limit = { tier = tier_county }
+		# 				add = {
+		# 					value = 0.1
+		# 				}
+		# 			}
+		# 			max = 2
+		# 		}
+		# 		desc = CB_COST_STRUGGLE_PHASE_HOSTILITY
+		# 	}
+		# }
+		# # Standard.
+		# if = {
+		# 	limit = {
+		# 		scope:attacker = {
+		# 			any_character_struggle = {
+		# 				involvement = involved
+		# 				is_struggle_type = iberian_struggle
+		# 				is_struggle_phase = struggle_iberia_phase_opportunity
+		# 				is_secondary_character_involvement_either_trigger = { CHAR = scope:defender }
+		# 			}
+		# 		}
+		# 	}
+		# 	add = {
+		# 		every_in_list = {
+		# 			list = target_titles
+		# 			limit = { tier = tier_county }
+		# 			add = {
+		# 				value = medium_prestige_value
+		# 			}
+		# 		}
+		# 		multiply = {
+		# 			value = 0.9
+		# 			every_in_list = {
+		# 				list = target_titles
+		# 				limit = { tier = tier_county }
+		# 				add = {
+		# 					value = 0.1
+		# 				}
+		# 			}
+		# 			max = 2
+		# 		}
+		# 		desc = CB_COST_STRUGGLE_PHASE_OPPORTUNITY
+		# 	}
+		# }
+		# # Expensive.
+		# if = {
+		# 	limit = {
+		# 		scope:attacker = {
+		# 			any_character_struggle = {
+		# 				involvement = involved
+		# 				is_struggle_type = iberian_struggle
+		# 				is_struggle_phase = struggle_iberia_phase_compromise
+		# 				is_secondary_character_involvement_either_trigger = { CHAR = scope:defender }
+		# 			}
+		# 		}
+		# 	}
+		# 	add = {
+		# 		every_in_list = {
+		# 			list = target_titles
+		# 			limit = { tier = tier_county }
+		# 			add = {
+		# 				value = major_prestige_value
+		# 			}
+		# 		}
+		# 		multiply = {
+		# 			value = 0.9
+		# 			every_in_list = {
+		# 				list = target_titles
+		# 				limit = { tier = tier_county }
+		# 				add = {
+		# 					value = 0.1
+		# 				}
+		# 			}
+		# 			max = 2
+		# 		}
+		# 		desc = CB_COST_STRUGGLE_PHASE_COMPROMISE
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		scope:attacker = {
+		# 			any_character_struggle = {
+		# 				involvement = involved
+		# 				is_struggle_type = iberian_struggle
+		# 				is_struggle_phase = struggle_iberia_phase_conciliation
+		# 				is_secondary_character_involvement_either_trigger = { CHAR = scope:defender }
+		# 			}
+		# 		}
+		# 	}
+		# 	add = {
+		# 		every_in_list = {
+		# 			list = target_titles
+		# 			limit = { tier = tier_county }
+		# 			add = {
+		# 				value = major_prestige_value
+		# 			}
+		# 		}
+		# 		multiply = {
+		# 			value = 0.9
+		# 			every_in_list = {
+		# 				list = target_titles
+		# 				limit = { tier = tier_county }
+		# 				add = {
+		# 					value = 0.1
+		# 				}
+		# 			}
+		# 			max = 2
+		# 		}
+		# 		desc = CB_COST_STRUGGLE_PHASE_CONCILIATION
+		# 	}
+		# }
+		# if = { # Post Struggle cost
+		# 	limit = {
+		# 		scope:attacker = {
+		# 			exists = scope:attacker.house
+		# 			scope:attacker.house = {
+		# 				OR ={
+		# 					has_house_modifier = fp2_struggle_hostility_house_combined_modifier
+		# 					has_house_modifier = fp2_struggle_hostility_house_faith_modifier
+		# 					has_house_modifier = fp2_struggle_hostility_house_culture_modifier
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# 	add = {
+		# 		every_in_list = {
+		# 			list = target_titles
+		# 			limit = { tier = tier_county }
+		# 			add = {
+		# 				value = major_prestige_value
+		# 			}
+		# 		}
+		# 		multiply = {
+		# 			value = 0.9
+		# 			every_in_list = {
+		# 				list = target_titles
+		# 				limit = { tier = tier_county }
+		# 				add = {
+		# 					value = 0.1
+		# 				}
+		# 			}
+		# 			max = 2
+		# 		}
+		# 		desc = CB_BASE_COST
+		# 	}
+		# }
 	}
 }
 

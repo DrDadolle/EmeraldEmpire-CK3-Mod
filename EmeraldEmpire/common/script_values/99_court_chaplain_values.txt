@@ -991,32 +991,33 @@ court_chaplain_conversion_contextual_bonuses = {
 	}
 
 	# FP3 ending
-	if = {
-		limit = {
-			exists = global_var:fp3_struggle_ending
-			global_var:fp3_struggle_ending = flag:fp3_struggle_shia_caliphate_ending
-			# scope:councillor.faith = { # L5R Disabled
-			# 	has_doctrine = muhammad_succession_shia_doctrine
-			# }
-		}
-		add = {
-			value = scope:councillor.court_chaplain_shia_promotion
-			desc = CONVERSION_FP3_STRUGGLE_ENDING_BONUS
-		}
-	}
-	else_if = {
-		limit = {
-			exists = global_var:fp3_struggle_ending
-			global_var:fp3_struggle_ending = flag:fp3_struggle_strengthen_caliphate_ending
-			# scope:councillor.faith = { # L5R Disabled
-			# 	has_doctrine = muhammad_succession_sunni_doctrine
-			# }
-		}
-		add = {
-			value = scope:councillor.court_chaplain_sunni_promotion
-			desc = CONVERSION_FP3_STRUGGLE_ENDING_BONUS
-		}
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		exists = global_var:fp3_struggle_ending
+	# 		global_var:fp3_struggle_ending = flag:fp3_struggle_shia_caliphate_ending
+	# 		# scope:councillor.faith = { # L5R Disabled
+	# 		# 	has_doctrine = muhammad_succession_shia_doctrine
+	# 		# }
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.court_chaplain_shia_promotion
+	# 		desc = CONVERSION_FP3_STRUGGLE_ENDING_BONUS
+	# 	}
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		exists = global_var:fp3_struggle_ending
+	# 		global_var:fp3_struggle_ending = flag:fp3_struggle_strengthen_caliphate_ending
+	# 		# scope:councillor.faith = { # L5R Disabled
+	# 		# 	has_doctrine = muhammad_succession_sunni_doctrine
+	# 		# }
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.court_chaplain_sunni_promotion
+	# 		desc = CONVERSION_FP3_STRUGGLE_ENDING_BONUS
+	# 	}
+	# }
 
 	#Other
 	if = {
@@ -1651,52 +1652,54 @@ court_chaplain_learn_on_the_job_scale = {
 ### Reliable House modifier
 court_chaplain_reliable_house_scale = {
 	value = 0
-	if = {
-		limit = {
-			exists = liege.dynasty
-			liege.dynasty = { has_dynasty_perk = fp2_coterie_legacy_2 }
-			house = liege.house
-		}
-		add = learning
-		multiply = {
-			add = council_reliable_house_percentage
-			divide = 100
-		}
-		floor = yes
-		min = 1
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		exists = liege.dynasty
+	# 		liege.dynasty = { has_dynasty_perk = fp2_coterie_legacy_2 }
+	# 		house = liege.house
+	# 	}
+	# 	add = learning
+	# 	multiply = {
+	# 		add = council_reliable_house_percentage
+	# 		divide = 100
+	# 	}
+	# 	floor = yes
+	# 	min = 1
+	# }
 }
 
 
 ### FP3 Struggle Ending
-court_chaplain_sunni_promotion = {
-	if = {
-		limit = {
-			exists = global_var:fp3_struggle_ending
-			global_var:fp3_struggle_ending = flag:fp3_struggle_strengthen_caliphate_ending
-			# faith = { # L5R Disabled
-			# 	has_doctrine = muhammad_succession_sunni_doctrine
-			# }
-		}
-		value = court_chaplain_conversion_base_total
-		multiply = 0.5
-		floor = yes
-		min = 1
-	}
-}
-
-court_chaplain_shia_promotion = {
-	if = {
-		limit = {
-			exists = global_var:fp3_struggle_ending
-			global_var:fp3_struggle_ending = flag:fp3_struggle_shia_caliphate_ending
-			# faith = { # L5R Disabled
-			# 	has_doctrine = muhammad_succession_shia_doctrine
-			# }
-		}
-		value = court_chaplain_conversion_base_total
-		multiply = 0.5
-		floor = yes
-		min = 1
-	}
-}
+#L5R Disabled
+# court_chaplain_sunni_promotion = {
+# 	if = {
+# 		limit = {
+# 			exists = global_var:fp3_struggle_ending
+# 			global_var:fp3_struggle_ending = flag:fp3_struggle_strengthen_caliphate_ending
+# 			# faith = { # L5R Disabled
+# 			# 	has_doctrine = muhammad_succession_sunni_doctrine
+# 			# }
+# 		}
+# 		value = court_chaplain_conversion_base_total
+# 		multiply = 0.5
+# 		floor = yes
+# 		min = 1
+# 	}
+# }
+#L5R Disabled
+# court_chaplain_shia_promotion = {
+# 	if = {
+# 		limit = {
+# 			exists = global_var:fp3_struggle_ending
+# 			global_var:fp3_struggle_ending = flag:fp3_struggle_shia_caliphate_ending
+# 			# faith = { # L5R Disabled
+# 			# 	has_doctrine = muhammad_succession_shia_doctrine
+# 			# }
+# 		}
+# 		value = court_chaplain_conversion_base_total
+# 		multiply = 0.5
+# 		floor = yes
+# 		min = 1
+# 	}
+# }
