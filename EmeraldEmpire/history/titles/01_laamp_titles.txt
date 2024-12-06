@@ -5,14 +5,9 @@
 		government = landless_adventurer_government
 		succession_laws = { landless_adventurer_succession_law }
 		effect = {
-			if = {
-				limit = {
-					NOT = { has_dlc_feature = roads_to_power }
-				}
-				holder = { destroy_title = prev }
-			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1123.1.1 }
 		}
 	}
 }

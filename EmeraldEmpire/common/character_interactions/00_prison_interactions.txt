@@ -2195,35 +2195,36 @@ pay_ransom_interaction = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						fp3_struggle_involves_one_supporter_and_one_detractor = {
-							FIRST = scope:imprisoner
-							SECOND = scope:prisoner
-						}
-						any_character_struggle = {
-							involvement = involved
-							activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
-								CATALYST = catalyst_ransom_supporter_detractor
-								CHAR = scope:prisoner
-							}
-						}
-					}
-					every_character_struggle = {
-						involvement = involved
-						limit = {
-							activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
-								CATALYST = catalyst_ransom_supporter_detractor
-								CHAR = scope:prisoner
-							}
-						}
-						activate_struggle_catalyst = {
-							catalyst = catalyst_ransom_supporter_detractor
-							character = scope:imprisoner
-						}
-						log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_ransom_supporter_detractor }
-					}
-				}
+				#L5R Disabled
+				# if = {
+				# 	limit = {
+				# 		fp3_struggle_involves_one_supporter_and_one_detractor = {
+				# 			FIRST = scope:imprisoner
+				# 			SECOND = scope:prisoner
+				# 		}
+				# 		any_character_struggle = {
+				# 			involvement = involved
+				# 			activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+				# 				CATALYST = catalyst_ransom_supporter_detractor
+				# 				CHAR = scope:prisoner
+				# 			}
+				# 		}
+				# 	}
+				# 	every_character_struggle = {
+				# 		involvement = involved
+				# 		limit = {
+				# 			activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+				# 				CATALYST = catalyst_ransom_supporter_detractor
+				# 				CHAR = scope:prisoner
+				# 			}
+				# 		}
+				# 		activate_struggle_catalyst = {
+				# 			catalyst = catalyst_ransom_supporter_detractor
+				# 			character = scope:imprisoner
+				# 		}
+				# 		log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_ransom_supporter_detractor }
+				# 	}
+				# }
 			}
 			if = {
 				limit = { scope:hook = yes }
@@ -3898,35 +3899,36 @@ release_from_prison_interaction = {
 								}
 							}
 						}
-						if = {
-							limit = {
-								fp3_struggle_involves_one_supporter_and_one_detractor = {
-									FIRST = scope:actor
-									SECOND = scope:recipient
-								}
-								any_character_struggle = {
-									involvement = involved
-									activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
-										CATALYST = catalyst_release_supporter_detractor
-										CHAR = scope:recipient
-									}
-								}
-							}
-							every_character_struggle = {
-								involvement = involved
-								limit = {
-									activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
-										CATALYST = catalyst_release_supporter_detractor
-										CHAR = scope:recipient
-									}
-								}
-								activate_struggle_catalyst = {
-									catalyst = catalyst_release_supporter_detractor
-									character = scope:actor
-								}
-								log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_release_supporter_detractor }
-							}
-						}
+						#L5R Disabled
+						# if = {
+						# 	limit = {
+						# 		fp3_struggle_involves_one_supporter_and_one_detractor = {
+						# 			FIRST = scope:actor
+						# 			SECOND = scope:recipient
+						# 		}
+						# 		any_character_struggle = {
+						# 			involvement = involved
+						# 			activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+						# 				CATALYST = catalyst_release_supporter_detractor
+						# 				CHAR = scope:recipient
+						# 			}
+						# 		}
+						# 	}
+						# 	every_character_struggle = {
+						# 		involvement = involved
+						# 		limit = {
+						# 			activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+						# 				CATALYST = catalyst_release_supporter_detractor
+						# 				CHAR = scope:recipient
+						# 			}
+						# 		}
+						# 		activate_struggle_catalyst = {
+						# 			catalyst = catalyst_release_supporter_detractor
+						# 			character = scope:actor
+						# 		}
+						# 		log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_release_supporter_detractor }
+						# 	}
+						# }
 					}
 					
 					# If we're a clan (and not making any demands) this interaction affects unity
@@ -5316,66 +5318,67 @@ execute_prisoner_interaction = {
 						}
 					}
 				}
-				if = { # Execute Supporter/Detractor
-					limit = {
-						fp3_struggle_involves_one_supporter_and_one_detractor = {
-							FIRST = scope:actor
-							SECOND = scope:recipient
-						}
-					}
-					if = {
-						limit = {
-							scope:recipient = { has_trait = fp3_struggle_detractor }
-							any_character_struggle = {
-								involvement = involved
-								activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
-									CATALYST = catalyst_execute_detractor
-									CHAR = scope:recipient
-								}
-							}
-						}
-						every_character_struggle = {
-							involvement = involved
-							limit = {
-								activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
-									CATALYST = catalyst_execute_detractor
-									CHAR = scope:recipient
-								}
-							}
-							activate_struggle_catalyst = {
-								catalyst = catalyst_execute_detractor
-								character = scope:actor
-							}
-							log_debug_variable_for_persian_struggle_effect = { VAR = stabil_catalyst_execute_detractor }
-						}
-					}
-					else_if = {
-						limit = {
-							scope:recipient = { has_trait = fp3_struggle_supporter }
-							any_character_struggle = {
-								involvement = involved
-								activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
-									CATALYST = catalyst_execute_supporter
-									CHAR = scope:recipient
-								}
-							}
-						}
-						every_character_struggle = {
-							involvement = involved
-							limit = {
-								activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
-									CATALYST = catalyst_execute_supporter
-									CHAR = scope:recipient
-								}
-							}
-							activate_struggle_catalyst = {
-								catalyst = catalyst_execute_supporter
-								character = scope:actor
-							}
-							log_debug_variable_for_persian_struggle_effect = { VAR = unrest_catalyst_execute_supporter }
-						}
-					}
-				}
+				#L5R Disabled
+				# if = { # Execute Supporter/Detractor
+				# 	limit = {
+				# 		fp3_struggle_involves_one_supporter_and_one_detractor = {
+				# 			FIRST = scope:actor
+				# 			SECOND = scope:recipient
+				# 		}
+				# 	}
+				# 	if = {
+				# 		limit = {
+				# 			scope:recipient = { has_trait = fp3_struggle_detractor }
+				# 			any_character_struggle = {
+				# 				involvement = involved
+				# 				activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+				# 					CATALYST = catalyst_execute_detractor
+				# 					CHAR = scope:recipient
+				# 				}
+				# 			}
+				# 		}
+				# 		every_character_struggle = {
+				# 			involvement = involved
+				# 			limit = {
+				# 				activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+				# 					CATALYST = catalyst_execute_detractor
+				# 					CHAR = scope:recipient
+				# 				}
+				# 			}
+				# 			activate_struggle_catalyst = {
+				# 				catalyst = catalyst_execute_detractor
+				# 				character = scope:actor
+				# 			}
+				# 			log_debug_variable_for_persian_struggle_effect = { VAR = stabil_catalyst_execute_detractor }
+				# 		}
+				# 	}
+				# 	else_if = {
+				# 		limit = {
+				# 			scope:recipient = { has_trait = fp3_struggle_supporter }
+				# 			any_character_struggle = {
+				# 				involvement = involved
+				# 				activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+				# 					CATALYST = catalyst_execute_supporter
+				# 					CHAR = scope:recipient
+				# 				}
+				# 			}
+				# 		}
+				# 		every_character_struggle = {
+				# 			involvement = involved
+				# 			limit = {
+				# 				activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+				# 					CATALYST = catalyst_execute_supporter
+				# 					CHAR = scope:recipient
+				# 				}
+				# 			}
+				# 			activate_struggle_catalyst = {
+				# 				catalyst = catalyst_execute_supporter
+				# 				character = scope:actor
+				# 			}
+				# 			log_debug_variable_for_persian_struggle_effect = { VAR = unrest_catalyst_execute_supporter }
+				# 		}
+				# 	}
+				# }
 				# Free House Member CB target executed during war
 				if = {
 					limit = {
