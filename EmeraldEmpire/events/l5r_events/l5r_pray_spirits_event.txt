@@ -1,0 +1,446 @@
+﻿namespace = l5r_pray_spirit
+
+
+### L5R Pray to the Spirits Events ###
+#			l5r_pray_spirit.0001 		Prayer to the Air Kami by myself
+#			l5r_pray_spirit.0011 		Prayer to the Air Kami by Shindoshi Realm Priest
+
+#########################
+# Prayer to the Air Kami#
+# by  Leskinen          #
+# 0001-0010				#
+#########################
+
+l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
+	content_source = l5r_dlc
+    type = character_event
+	title = l5r_pray_spirit.0001.t
+	desc = l5r_pray_spirit.0001.desc
+	
+	theme = faith
+    override_background = { reference = fp3_cave }
+
+    left_portrait = {
+		character = root
+		# triggered_animation = {
+		# 	trigger = {
+		# 		NOT = { has_trait = cynical }
+		# 	}
+		# 	animation = disbelief
+		# }
+		animation = personality_zealous
+	}
+	# right_portrait = {
+	# 	character = scope:shindoshi_realm_priest
+	# 	animation = personality_zealous
+	# }
+
+    trigger = {
+		NOT = { has_character_flag = flag_prayed_spirits }
+	}
+
+    weight_multiplier = {
+		base = 1
+	}
+
+    
+    # Find a lost object
+    option = {
+		name = l5r_pray_spirit.0001.a
+		remove_short_term_gold = minor_gold_value
+		custom_tooltip = l5r_pray_spirit.0001.a.tt
+        stress_impact = {
+			greedy = miniscule_stress_impact_loss
+		}
+		trigger_event = {
+			id = l5r_pray_spirit.0002
+			days = { 2 3 }
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+
+    #L5R TODO
+    # # Pray to hear rumours
+    # option = {
+	# 	name = l5r_pray_spirit.0001.b
+	# 	remove_short_term_gold = minor_gold_value
+	# 	custom_tooltip = l5r_pray_spirit.0001.b.tt
+    #     stress_impact = {
+	# 		shy = medium_stress_gain
+	# 	}
+	# 	trigger_event = {
+	# 		id = l5r_pray_spirit.0004
+	# 		days = { 2 3 }
+	# 	}
+	# 	ai_chance = {
+	# 		base = 50
+    #     ai_value_modifier = {
+    #         ai_greed = 25
+    #     }
+	# 	}
+	# }
+
+    #L5R TODO
+    # # Make someone afraid 
+	# option = {
+	# 	name = l5r_pray_spirit.0001.c
+	# 	custom_tooltip = l5r_pray_spirit.0001.c.tt
+	# 	stress_impact = {
+	# 		compassionate = medium_stress_gain
+    #         deceitful = miniscule_stress_impact_loss
+	# 	}
+	# 	trigger_event = {
+	# 		id = l5r_pray_spirit.0006
+	# 		days = { 2 3 }
+	# 	}
+
+	# 	ai_chance = {
+	# 		base = 50
+    #         ai_value_modifier = {
+	# 			ai_vengefulness = 50
+	# 			ai_compassion = -25
+	# 		}
+	# 	}
+	# }
+
+    # Back up
+    option = {
+		name = l5r_pray_spirit.0001.d
+		flavor = l5r_pray_spirit.0001.d.flavor
+		remove_character_flag = flag_prayed_spirits
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+######
+# Find Lost Object
+scripted_effect create_spirit_small_artifact_effect = { #create a random artifact "found" during the event"
+	random_list = {
+		20 = {
+			create_artifact_brooch_effect = {
+				OWNER = root
+				SMITH = root
+			}
+		}
+		20 = {
+			create_artifact_book_effect = {
+				OWNER = root 
+				CREATOR = root
+				SET_SUBJECT = flag:no
+				SET_TOPIC = flag:no
+			}
+		}
+	}
+	scope:newly_created_artifact = {
+		set_artifact_description = create_spirit_small_artifact_desc
+	}
+}
+
+scripted_effect create_spirit_big_artifact_effect = { #create a random artifact "found" during the event"
+	random_list = {
+		10 = {
+			create_artifact_weapon_effect = {
+				OWNER = root
+				CREATOR = root
+				SET_WEAPON_TYPE = flag:no
+			}
+		}
+		10 = {
+			create_artifact_armor_effect = {
+				OWNER = root
+				CREATOR = root
+				SET_ARMOR_TYPE = flag:no
+			}
+		}
+		5 = {
+			create_artifact_brooch_effect = {
+				OWNER = root
+				SMITH = root
+			}
+		}
+		5 = {
+			create_artifact_book_effect = {
+				OWNER = root 
+				CREATOR = root
+				SET_SUBJECT = flag:no
+				SET_TOPIC = flag:no
+			}
+		}
+	}
+	scope:newly_created_artifact = {
+		set_artifact_description = create_spirit_small_big_desc
+	}
+}
+
+l5r_pray_spirit.0002 = {
+	type = character_event
+	title = l5r_pray_spirit.0002.t
+	desc = l5r_pray_spirit.0002.desc
+	theme = faith
+	override_background = { reference = fp3_cave }
+	left_portrait = {
+		character = root
+        triggered_animation = {
+			trigger = { 
+                OR = {
+                    scope:outcome = flag:small_object
+                    scope:outcome = flag:documents 
+                    scope:outcome = flag:small_money
+                }
+			animation = personality_rational
+		}
+		triggered_animation = {
+			trigger = { 
+				OR = {
+                    scope:outcome = flag:big_object
+                    scope:outcome = flag:big_money
+				}
+			}
+			animation = ecstasy
+		}
+        triggered_animation = {
+			trigger = { 
+				OR = {
+                    scope:outcome = flag:lost_money
+				}
+			}
+			animation = disbelief
+		}
+        triggered_animation = {
+			trigger = { scope:outcome = flag:ill }
+			animation = sick
+		}
+		animation = disbelief
+	}
+
+	immediate = {
+		# Character cannot take this decision again for 5 years.
+		add_character_flag = {
+			flag = flag_prayed_spirits
+			years = 5
+		}
+		# Determine what the impact of the ritual will be.
+        # If there is any tasty rumors, or stuff like that
+        random_list = {
+            # Positive Effect
+            40 = { 
+                compare_modifier = {
+                    value = {
+                        value = learning
+                        subtract = 10
+                    }
+                }
+                modifier = {
+                    add = 10
+                    has_trait = lifestyle_mystic
+                }
+                random_list = {
+                    # Big Object Or Documents
+                    10 = {
+                        # 
+                        compare_modifier = {
+                            value = {
+                                value = learning
+                                subtract = 10
+                            }
+                        }
+                        modifier = {
+                            add = 10
+                            has_trait = lifestyle_mystic
+                        }
+                        modifier = {
+                            add = 10
+                            has_trait = lifestyle_mystic
+                            has_trait_xp = {
+                                trait = lifestyle_mystic
+                                value >= 50
+                            }
+                        }
+                        modifier = {
+                            add = 10
+                            has_trait = lifestyle_mystic
+                            has_trait_xp = {
+                                trait = lifestyle_mystic
+                                value >= 100
+                            }
+                        }
+                        random_list = {
+                            30 = {
+                                save_scope_value_as = {
+                                    name = outcome
+                                    value = flag:big_object
+                                }
+                            }
+                            40 = {
+                                save_scope_value_as = {
+                                    name = outcome
+                                    value = flag:documents
+                                }
+                            }
+                            30 = {
+                                save_scope_value_as = {
+                                    name = outcome
+                                    value = flag:big_money
+                                }
+                            }
+                        }
+                    }
+                    # small object or money
+                    90 = {
+                        random_list = {
+                            50 = {
+                                save_scope_value_as = {
+                                    name = outcome
+                                    value = flag:small_money
+                                }
+                            }
+                            50 = {
+                                save_scope_value_as = {
+                                    name = outcome
+                                    value = flag:small_object
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            # No Effect
+            40 = {
+                modifier = { # Cynical characters have less chances to receive benediction from spirits.
+                    add = 40
+                    has_trait = cynical
+                }
+                modifier = { # Zealous characters have more chances to receive benediction from spirits.
+                    add = -20
+                    has_trait = zealous
+                }
+                save_scope_value_as = {
+                    name = outcome
+                    value = flag:no_effect
+                }
+            }
+            # Negative Effect
+            20 = {
+                modifier = {
+                    add = 20
+                    has_trait = cynical
+                }
+                compare_modifier = {
+                    value = {
+                        value = 10
+                        subtract = learning
+                        min = -10
+                    }
+                }
+                random_list = {
+                    50 = {
+                        trigger = { can_contract_disease_trigger = { DISEASE = ill } }
+                        save_scope_value_as = {
+                            name = outcome
+                            value = flag:ill
+                        }
+                    }
+                    50 = {
+                        save_scope_value_as = {
+                            name = outcome
+                            value = flag:lost_money
+                        }
+                    }
+                }
+            }
+        }
+    
+
+        # If we failed to set the outcome flag, set it now.
+        if = {
+            limit = {
+                NOT = { exists = scope:outcome }
+            }
+            save_scope_value_as = {
+                name = outcome
+                value = flag:no_effect
+            }
+        }
+    }
+
+
+	option = {
+		# Custom name text based on ritual outcome.
+		name = {
+			trigger = { scope:outcome = flag:documents }
+			text = religious_decision.0002.documents
+		}
+		name = {
+			trigger = {
+				OR = {
+					scope:outcome = flag:big_object
+					scope:outcome = flag:small_object
+                    scope:outcome = flag:big_money
+                    scope:outcome = flag:small_money
+				}
+			}
+			text = religious_decision.0002.object
+		}    
+		name = {
+			trigger = {	scope:outcome = flag:lost_money	}
+			text = religious_decision.0002.lost_money
+		}
+		name = {
+			trigger = {
+				scope:outcome = flag:no_effect
+				has_trait = zealous
+			}
+			text = religious_decision.0002.no_change.zealous
+		}
+		name = {
+			trigger = {
+				scope:outcome = flag:no_effect
+				NOT = { has_trait = zealous }
+			}
+			text = religious_decision.0002.no_change
+		}
+        name = {
+			trigger = {	scope:outcome = flag:ill}
+			}
+			text = religious_decision.0002.bad
+		}
+
+		# Apply the actual outcome effects:
+		# Good Outcomes
+		if = {
+			limit = { scope:outcome = flag:documents }
+			# Gain prestige and a random claim ?
+            add_prestige = medium_prestige_gain
+		}
+		else_if = {
+			limit = { scope:outcome = flag:big_money }
+            # Gain big money
+            add_gold = medium_gold_value
+			
+		}
+        else_if = {
+			limit = { scope:outcome = flag:small_money }
+            # Gain small money
+            add_gold = minor_gold_value 
+			
+		}
+		else_if = {
+			limit = { scope:outcome = flag:big_object }
+			create_spirit_big_artifact_effect = yes
+		}
+		else_if = {
+			limit = { scope:outcome = flag:small_object }
+            create_spirit_small_artifact_effect = yes
+			
+		}
+		# Bad Outcomes
+		else_if = {
+			limit = { scope:outcome = flag:ill }
+			contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
+		}
+	}
+}

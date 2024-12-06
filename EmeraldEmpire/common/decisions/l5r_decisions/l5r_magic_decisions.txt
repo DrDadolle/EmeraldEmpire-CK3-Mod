@@ -1,9 +1,9 @@
 ﻿##################################################
 # SHINDOSHI Decisions
 ##################################################
-# Appease the spirits
+# Pray the spirits
 ##################################################
-appease_the_spirits_decision = {
+pray_the_spirits_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
@@ -15,11 +15,26 @@ appease_the_spirits_decision = {
 	desc = appease_the_spirits_decision_desc
 
 	is_shown = {
-		is_shindoshi = yes
+		is_landed_or_landless_administrative = yes
+		OR = {
+			is_shindoshi = yes
+			#L5R TODO
+			# AND = {
+			# 	exists = scope:realm_priest 
+			# 	scope:realm_priest = {
+			# 		is_shindoshi = yes
+			# 	}
+			# 	save_scope_as = shindoshi_realm_priest
+			# }
+		}
 	}
+	
 
 	is_valid = {
-		NOT = { has_character_modifier = cast_spell_recently_modifier }
+		custom_description = {
+			text = decision_prayed_spirits
+			NOT = { has_character_flag = flag_prayed_spirits }
+		}
 	}
 
 	is_valid_showing_failures_only = {
@@ -28,20 +43,118 @@ appease_the_spirits_decision = {
 		NOT = { has_trait = incapable }
 	}
 
-	cost = {
-		piety = {
-			value = massive_piety_value
-			if = {
-				limit = {
-					is_ai = yes
+	cooldown = { years = 2 }
+
+	widget = {
+		gui = "decision_view_widget_option_list_generic"
+		controller = decision_option_list_controller
+		decision_to_second_step_button = "decision_rally_army_righteous_confirm"
+
+		item = { # Prayer to the Air Kami
+			# value = maglor_aggresive_route
+			# current_description = decision_rally_army_righteous_aggresive_desc
+			# localization = decision_rally_army_righteous_aggresive
+			value = pray_spirits_air
+			current_description = decision_pray_spirits_air_desc
+			localization = decision_pray_spirits_air
+			icon = "gfx/interface/icons/message_feed/mercenary.dds"
+		}
+		item = { # Prayer to the Earth Kami
+			value = pray_spirits_earth
+			current_description = decision_pray_spirits_earth_desc
+			localization = decision_pray_spirits_earth
+			icon = "gfx/interface/icons/message_feed/a_catch_all_councillor_icon.dds"
+		}
+		item = { # Prayer to the Fire Kami
+			value = pray_spirits_fire
+			current_description = decision_pray_spirits_fire_desc
+			localization = decision_pray_spirits_fire
+			icon = "gfx/interface/icons/message_feed/a_catch_all_councillor_icon.dds"
+		}
+		item = { # Prayer to the Water Kami
+			value = pray_spirits_water
+			current_description = decision_pray_spirits_water_desc
+			localization = decision_pray_spirits_water
+			icon = "gfx/interface/icons/message_feed/mercenary.dds"
+		}
+		item = { # Prayer to the Void
+			value = pray_spirits_void
+			current_description = decision_pray_spirits_void_desc
+			localization = decision_pray_spirits_void
+			icon = "gfx/interface/icons/message_feed/mercenary.dds"
+			is_shown = { 
+				OR = {
+					has_trait = ishiken
+					#L5R TODO
+					# scope:shindoshi_realm_priest = {
+					# 	has_trait = ishiken
+					# }
 				}
-				multiply = 0.5
 			}
-			multiply = 1
 		}
 	}
 
+	cost = {
+		#No cost for now
+	}
+
 	effect = {
+		add_character_flag = {
+			flag = flag_prayed_spirits
+			days = 1825
+		}
+
+		if = {
+			limit = { scope:pray_spirits_air = yes }
+			# if = {#L5R TODO
+			# 	limit = {  exists = scope:shindoshi_realm_priest }
+			# 	trigger_event = l5r_pray_spirit.0001
+			# } 
+			# else = {
+				trigger_event = l5r_pray_spirit.0001
+			# }
+			
+		}
+		else_if = {
+			limit = { scope:pray_spirits_earth = yes }
+			# if = {#L5R TODO
+			# 	limit = {  exists = scope:shindoshi_realm_priest }
+			# 	trigger_event = l5r_pray_spirit.0021
+			# } 
+			# else = {
+				trigger_event = l5r_pray_spirit.0001 #L5R TODO
+			# }
+		}
+		else_if = {
+			limit = { scope:pray_spirits_fire = yes }
+			# if = { #L5R TODO
+			# 	limit = {  exists = scope:shindoshi_realm_priest }
+			# 	trigger_event = l5r_pray_spirit.0041
+			# } 
+			# else = {
+				trigger_event = l5r_pray_spirit.0001 #L5R TODO
+			# }
+		}
+		else_if = {
+			limit = { scope:pray_spirits_water = yes }
+			# if = {#L5R TODO
+			# 	limit = {  exists = scope:shindoshi_realm_priest }
+			# 	trigger_event = l5r_pray_spirit.0061
+			# } 
+			# else = {
+				trigger_event = l5r_pray_spirit.0001 #L5R TODO
+			# }
+		}
+		else_if = {
+			limit = { scope:pray_spirits_void = yes }
+			# if = {#L5R TODO
+			# 	limit = {  exists = scope:shindoshi_realm_priest }
+			# 	trigger_event = l5r_pray_spirit.0081
+			# } 
+			# else = {
+				trigger_event = l5r_pray_spirit.0001 #L5R TODO
+			# }
+		}
 	}
 
 	ai_potential = {
@@ -49,7 +162,7 @@ appease_the_spirits_decision = {
 	}
 
 	ai_will_do = {
-		base = 100
+		base = 75
 	}
 }
 
