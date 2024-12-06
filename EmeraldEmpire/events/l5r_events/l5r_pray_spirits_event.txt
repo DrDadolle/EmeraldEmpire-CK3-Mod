@@ -118,85 +118,116 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 
 ######
 # Find Lost Object
-scripted_effect create_spirit_small_artifact_effect = { #create a random artifact "found" during the event"
-	random_list = {
-		20 = {
-			create_artifact_brooch_effect = {
-				OWNER = root
-				SMITH = root
-			}
-		}
-		20 = {
-			create_artifact_book_effect = {
-				OWNER = root 
-				CREATOR = root
-				SET_SUBJECT = flag:no
-				SET_TOPIC = flag:no
-			}
-		}
-	}
-	scope:newly_created_artifact = {
-		set_artifact_description = create_spirit_small_artifact_desc
-	}
-}
-
-scripted_effect create_spirit_big_artifact_effect = { #create a random artifact "found" during the event"
-	random_list = {
-		10 = {
-			create_artifact_weapon_effect = {
-				OWNER = root
-				CREATOR = root
-				SET_WEAPON_TYPE = flag:no
-			}
-		}
-		10 = {
-			create_artifact_armor_effect = {
-				OWNER = root
-				CREATOR = root
-				SET_ARMOR_TYPE = flag:no
-			}
-		}
-		5 = {
-			create_artifact_brooch_effect = {
-				OWNER = root
-				SMITH = root
-			}
-		}
-		5 = {
-			create_artifact_book_effect = {
-				OWNER = root 
-				CREATOR = root
-				SET_SUBJECT = flag:no
-				SET_TOPIC = flag:no
-			}
-		}
-	}
-	scope:newly_created_artifact = {
-		set_artifact_description = create_spirit_small_big_desc
-	}
-}
-
 l5r_pray_spirit.0002 = {
 	type = character_event
 	title = l5r_pray_spirit.0002.t
 	desc = l5r_pray_spirit.0002.desc
-	theme = faith
 	override_background = { reference = fp3_cave }
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+
+	option = {
+		name = l5r_pray_spirit.0002.a
+		custom_tooltip = l5r_pray_spirit.0002.a.tt
+		trigger_event = {
+			id = l5r_pray_spirit.0003
+			days = { 7 15 }
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+l5r_pray_spirit.0003 = {
+	type = character_event
+	title = l5r_pray_spirit.0003.t
+	desc = { 
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:documents
+				}
+				desc = l5r_pray_spirit.0003.documents.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:weapon
+				}
+				desc = l5r_pray_spirit.0003.weapon.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:armor
+				}
+				desc = l5r_pray_spirit.0003.armor.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:book
+				}
+				desc = l5r_pray_spirit.0003.book.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:brooch
+				}
+				desc = l5r_pray_spirit.0003.brooch.desc
+			}
+			triggered_desc = {
+				trigger = {
+					OR = {
+						scope:outcome = flag:small_money
+						scope:outcome = flag:big_money
+					}
+				}
+				desc = l5r_pray_spirit.0003.money.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:lost_money
+				}
+				desc = l5r_pray_spirit.0003.lost_money.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:no_change
+					has_trait = zealous
+				}
+				desc = l5r_pray_spirit.0003.no_change.zealous.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:ill
+				}
+				desc = l5r_pray_spirit.0003.bad.desc
+			}
+			desc = religious_decision.0003.no_change.desc
+		}
+	}
+	theme = faith
+	
 	left_portrait = {
 		character = root
         triggered_animation = {
 			trigger = { 
                 OR = {
-                    scope:outcome = flag:small_object
+                    scope:outcome = flag:book
+					scope:outcome = flag:brooch
                     scope:outcome = flag:documents 
                     scope:outcome = flag:small_money
                 }
+			}
 			animation = personality_rational
 		}
 		triggered_animation = {
 			trigger = { 
 				OR = {
-                    scope:outcome = flag:big_object
+                    scope:outcome = flag:weapon
+					scope:outcome = flag:armor
                     scope:outcome = flag:big_money
 				}
 			}
@@ -221,7 +252,7 @@ l5r_pray_spirit.0002 = {
 		# Character cannot take this decision again for 5 years.
 		add_character_flag = {
 			flag = flag_prayed_spirits
-			years = 5
+			years = 2
 		}
 		# Determine what the impact of the ritual will be.
         # If there is any tasty rumors, or stuff like that
@@ -272,7 +303,13 @@ l5r_pray_spirit.0002 = {
                             30 = {
                                 save_scope_value_as = {
                                     name = outcome
-                                    value = flag:big_object
+                                    value = flag:armor
+                                }
+                            }
+							30 = {
+                                save_scope_value_as = {
+                                    name = outcome
+                                    value = flag:weapon
                                 }
                             }
                             40 = {
@@ -292,7 +329,7 @@ l5r_pray_spirit.0002 = {
                     # small object or money
                     90 = {
                         random_list = {
-                            50 = {
+                            20 = {
                                 save_scope_value_as = {
                                     name = outcome
                                     value = flag:small_money
@@ -301,7 +338,13 @@ l5r_pray_spirit.0002 = {
                             50 = {
                                 save_scope_value_as = {
                                     name = outcome
-                                    value = flag:small_object
+                                    value = flag:book
+                                }
+                            }
+							50 = {
+                                save_scope_value_as = {
+                                    name = outcome
+                                    value = flag:brooch
                                 }
                             }
                         }
@@ -372,41 +415,54 @@ l5r_pray_spirit.0002 = {
 		# Custom name text based on ritual outcome.
 		name = {
 			trigger = { scope:outcome = flag:documents }
-			text = religious_decision.0002.documents
+			text = l5r_pray_spirit.0003.documents
 		}
+		name = {
+			trigger = { scope:outcome = flag:weapon }
+			text = l5r_pray_spirit.0003.weapon
+		}
+		name = {
+			trigger = { scope:outcome = flag:armor }
+			text = l5r_pray_spirit.0003.armor
+		} 
+		name = {
+			trigger = { scope:outcome = flag:book }
+			text = l5r_pray_spirit.0003.book
+		}
+		name = {
+			trigger = { scope:outcome = flag:brooch }
+			text = l5r_pray_spirit.0003.brooch
+		}  
 		name = {
 			trigger = {
 				OR = {
-					scope:outcome = flag:big_object
-					scope:outcome = flag:small_object
                     scope:outcome = flag:big_money
                     scope:outcome = flag:small_money
 				}
 			}
-			text = religious_decision.0002.object
-		}    
+			text = l5r_pray_spirit.0003.money
+		}     
 		name = {
 			trigger = {	scope:outcome = flag:lost_money	}
-			text = religious_decision.0002.lost_money
+			text = l5r_pray_spirit.0003.lost_money
 		}
 		name = {
 			trigger = {
 				scope:outcome = flag:no_effect
 				has_trait = zealous
 			}
-			text = religious_decision.0002.no_change.zealous
+			text = l5r_pray_spirit.0003.no_change.zealous
 		}
 		name = {
 			trigger = {
 				scope:outcome = flag:no_effect
 				NOT = { has_trait = zealous }
 			}
-			text = religious_decision.0002.no_change
+			text = l5r_pray_spirit.0003.no_change
 		}
         name = {
 			trigger = {	scope:outcome = flag:ill}
-			}
-			text = religious_decision.0002.bad
+			text = l5r_pray_spirit.0003.bad
 		}
 
 		# Apply the actual outcome effects:
@@ -429,13 +485,84 @@ l5r_pray_spirit.0002 = {
 			
 		}
 		else_if = {
-			limit = { scope:outcome = flag:big_object }
-			create_spirit_big_artifact_effect = yes
+			limit = { scope:outcome = flag:weapon }
+			create_artifact_weapon_effect = {
+				OWNER = root
+				CREATOR = root
+				SET_WEAPON_TYPE = flag:no
+			}
+			if = {
+					limit = { exists = scope:newly_created_artifact }
+					scope:newly_created_artifact = { save_scope_as = weapon }
+					send_interface_toast = {
+						title = l5r_pray_spirit.0003.weapon.artifact_toast
+						left_icon = scope:weapon
+						show_as_tooltip = {
+							scope:weapon = { set_owner = root }
+						}
+					}
+				}
+			custom_tooltip = l5r_pray_spirit.0003.weapon_tt
 		}
 		else_if = {
-			limit = { scope:outcome = flag:small_object }
-            create_spirit_small_artifact_effect = yes
-			
+			limit = { scope:outcome = flag:armor }
+			create_artifact_armor_effect = {
+				OWNER = root
+				CREATOR = root
+				SET_ARMOR_TYPE = flag:no
+			}
+			if = {
+				limit = { exists = scope:newly_created_artifact }
+				scope:newly_created_artifact = { save_scope_as = armor }
+				send_interface_toast = {
+					title = l5r_pray_spirit.0003.armor.artifact_toast
+					left_icon = scope:armor
+					show_as_tooltip = {
+						scope:armor = { set_owner = root }
+					}
+				}
+			}
+			custom_tooltip = l5r_pray_spirit.0003.armor_tt
+		}
+		else_if = {
+			limit = { scope:outcome = flag:brooch }
+			create_artifact_brooch_effect = {
+				OWNER = root
+				SMITH = root
+			}
+			if = {
+				limit = { exists = scope:newly_created_artifact }
+				scope:newly_created_artifact = { save_scope_as = brooch }
+				send_interface_toast = {
+					title = l5r_pray_spirit.0003.brooch.artifact_toast
+					left_icon = scope:brooch
+					show_as_tooltip = {
+						scope:brooch = { set_owner = root }
+					}
+				}
+			}
+			custom_tooltip = l5r_pray_spirit.0003.brooch_tt
+		}
+		else_if = {
+			limit = { scope:outcome = flag:book }
+			create_artifact_book_effect = {
+				OWNER = root 
+				CREATOR = root
+				SET_SUBJECT = flag:no
+				SET_TOPIC = flag:no
+			}
+			if = {
+				limit = { exists = scope:newly_created_artifact }
+				scope:newly_created_artifact = { save_scope_as = book }
+				send_interface_toast = {
+					title = l5r_pray_spirit.0003.book.artifact_toast
+					left_icon = scope:book
+					show_as_tooltip = {
+						scope:book = { set_owner = root }
+					}
+				}
+			}
+			custom_tooltip = l5r_pray_spirit.0003.book_tt
 		}
 		# Bad Outcomes
 		else_if = {

@@ -1,0 +1,254 @@
+﻿@bleach_hair_cooldown_time = 365
+
+##################################################
+# COMMON
+##################################################
+##################################################
+# Select Fortunes to pray
+##################################################
+select_personal_deity_fortunism_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+	decision_group_type = rokugan_religious
+
+	desc = select_personal_deity_fortunism_decision_desc
+	selection_tooltip = select_personal_deity_fortunism_decision_tooltip
+
+	is_shown = {
+		# Following a valid religion & faith.
+		religion = religion:fortunism_religion
+		faith = { has_doctrine_parameter = select_personal_god_active }
+	}
+
+	is_valid = {
+	}
+
+	is_valid_showing_failures_only = {
+		# Have to at _least_ not be in piety debt.
+		piety >= 0
+	}
+
+	cooldown = { years = 2 }
+
+	effect = {
+		custom_tooltip = select_personal_deity_fortunism_decision_tt
+		trigger_event = rokugan_religious_decision.0101
+	}
+
+	ai_check_interval = 96
+	
+	ai_potential = {
+		piety >= minor_piety_value
+		NOR = {
+			has_character_modifier = patron_benten_modifier
+			has_character_modifier = patron_bishamon_modifier
+			has_character_modifier = patron_jurojin_modifier
+			has_character_modifier = patron_hotei_modifier
+			has_character_modifier = patron_daikoku_modifier
+			has_character_modifier = patron_ebisu_modifier
+			has_character_modifier = patron_fukurokujin_modifier
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+##################################################
+# Seppuku
+##################################################
+commit_seppuku_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+	decision_group_type = rokugan_bushido
+
+	desc = commit_seppuku_decision_desc
+	selection_tooltip =  commit_seppuku_decision_tooltip
+
+	cooldown = { days = 0 }
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		is_adult = yes
+		#Dishonored
+		prestige_level = 0
+		#Can seppuku
+		culture = { has_cultural_parameter = can_seppuku }
+	}
+
+	effect = {
+		root = { 
+			trigger_event = rokugan_seppuku_decision_event.0001 
+		}
+		custom_tooltip = commit_seppuku_decision_effect_tooltip
+	}
+
+	ai_check_interval = 6
+	
+	ai_will_do = {
+		base = 5
+
+		modifier = {
+			add = 20
+			has_trait = brave
+		}
+
+		modifier = {
+			add = 50
+			ai_honor >= 25
+		}
+
+		modifier = {
+			add = 50
+			culture = { has_cultural_pillar = heritage_lion}
+		}
+	}
+}
+
+##################################################
+# Abdication
+##################################################
+rokugan_abdicate_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+	desc = rokugan_abdicate_decision_desc
+
+	decision_group_type = rokugan_bushido
+
+	ai_check_interval = 0
+
+	is_shown = {
+		# always = yes
+		is_landed_or_landless_administrative = yes
+	}
+
+	is_valid = {
+		# Must be at least 60 years old or have reigned for 20 years, or infirm
+		OR = {
+			age >= 60
+			has_trait = incapable
+			has_trait = infirm
+
+			# Not sure how to check for length of reign
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+
+	effect = {
+		custom_tooltip = rokugan_abdicate_decision_effect_text
+		trigger_event = rokugan_abdication_decision.0001
+		# If faith has a monastic tradition, may retire as a monk
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+##################################################
+# CRANE CLAN
+##################################################
+# Bleach hair white
+##################################################
+bleach_hair_white_crane_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
+	}
+	
+	decision_group_type = rokugan_clan
+
+	sort_order = 81
+
+	desc = bleach_hair_white_crane_decision_desc
+	selection_tooltip = bleach_hair_white_crane_decision_tooltip
+
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_crane } # Only Crane clan Samurai can bleach their hair white
+		NOT = { has_trait = bleached_white_hair }
+		NOT = { has_trait = natural_white_hair }
+	}
+
+	cooldown = { days = @bleach_hair_cooldown_time }
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+	}
+
+	effect = {
+		send_interface_toast = {
+			title = msg_bleached_hair_white
+			left_icon = root # TODO crane icon ???
+			add_trait = bleached_white_hair
+		}
+	}
+	
+	ai_check_interval = 30
+
+	# Always available for crane IA
+	ai_potential = {
+		always = yes
+	}
+
+	# TODO AI
+	ai_will_do = {
+		base = 30
+	}
+}
+##################################################
+# Revert the white bleaching hair white decision
+##################################################
+abandon_white_hair_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
+	}
+
+	decision_group_type = rokugan_clan
+
+	sort_order = 81
+
+	desc = abandon_white_hair_decision_desc
+
+	selection_tooltip = abandon_white_hair_decision_tooltip
+
+	cooldown = { days = @bleach_hair_cooldown_time }
+
+	is_shown = {
+		has_trait = bleached_white_hair
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	effect = {
+
+		send_interface_toast = {
+			title = msg_removed_white_bleach
+			left_icon = root
+
+			remove_trait = bleached_white_hair
+		}
+	}
+
+	ai_check_interval = 30
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 5
+	}
+}

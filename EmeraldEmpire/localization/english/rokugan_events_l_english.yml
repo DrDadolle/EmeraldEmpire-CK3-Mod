@@ -86,6 +86,52 @@
  rokugan_abdication_decision.0001.a.monk:0 "I will take the vows and live the rest of my days as a [Select_CString(ROOT.Char.IsFemale,ROOT.Char.GetFaith.DevoteeFemale,ROOT.Char.GetFaith.DevoteeMale)]."
  rokugan_abdication_decision.0001.b:0 "No, it is not yet my time."
  abdicate_decision_effect_tt:0 "You will abdicate and continue as your heir."
+
+ ############################
+ ###### Pray to the Kami Decision
+ ############################
+ l5r_pray_spirit.0001.t:0 "Air Kami"
+ l5r_pray_spirit.0001.desc:0 "Air Kami desc"
+ l5r_pray_spirit.0001.a:0 "aaa "
+ l5r_pray_spirit.0001.a.tt:0 "aaa ttt "
+ l5r_pray_spirit.0001.d:0 "ddd "
+ l5r_pray_spirit.0001.d.flavor:0 "d flavour"
+
+ l5r_pray_spirit.0002.t:0 "Air Kami"
+ l5r_pray_spirit.0002.desc:0 "Air Kami desc"
+ l5r_pray_spirit.0002.a:0 "aaa2"
+ l5r_pray_spirit.0002.a.tt:0 "aaa2 tt"
+
+ l5r_pray_spirit.0003.t:0 "Air Kami"
+ l5r_pray_spirit.0003.desc:0 "Air Kami desc"
+ l5r_pray_spirit.0003.documents:0 "documents"
+ l5r_pray_spirit.0003.documents.desc:0 "documents"
+ l5r_pray_spirit.0003.weapon:0 "weapon"
+ l5r_pray_spirit.0003.weapon.desc:0 "weapon desc"
+ l5r_pray_spirit.0003.weapon_tt:0 "weapon tooltip"
+ l5r_pray_spirit.0003.weapon.artifact_toast:0 "weapon toast"
+ l5r_pray_spirit.0003.armor:0 "armor"
+ l5r_pray_spirit.0003.armor.desc:0 "armor desc"
+ l5r_pray_spirit.0003.armor_tt:0 "amor tooltip"
+ l5r_pray_spirit.0003.armor.artifact_toast:0 "armor toast"
+ l5r_pray_spirit.0003.book:0 "book"
+ l5r_pray_spirit.0003.book.desc:0 "book desc"
+ l5r_pray_spirit.0003.book_tt:0 "book tooltip"
+ l5r_pray_spirit.0003.book.artifact_toast:0 "book toast"
+ l5r_pray_spirit.0003.brooch:0 "brooch"
+ l5r_pray_spirit.0003.brooch.desc:0 "brooch desc"
+ l5r_pray_spirit.0003.brooch_tt:0 "brooch tooltip"
+ l5r_pray_spirit.0003.brooch.artifact_toast:0 "brooch toast"
+ l5r_pray_spirit.0003.money:0 "money"
+ l5r_pray_spirit.0003.money.desc:0 "money desc"
+ l5r_pray_spirit.0003.lost_money:0 "lost_money"
+ l5r_pray_spirit.0003.lost_money.desc:0 "lost_money desc"
+ l5r_pray_spirit.0003.no_change.zealous:0 "no_change.zealous"
+ l5r_pray_spirit.0003.no_change.zealous.desc:0 "no_change.zealous desc"
+ l5r_pray_spirit.0003.no_change:0 "no_change"
+ l5r_pray_spirit.0003.no_change.desc:0 "no_change desc"
+ l5r_pray_spirit.0003.bad:0 "bad"
+ l5r_pray_spirit.0003.bad.desc:0 "bad desc"
  ############################
  ###### Seppuku Character interaction
  ############################

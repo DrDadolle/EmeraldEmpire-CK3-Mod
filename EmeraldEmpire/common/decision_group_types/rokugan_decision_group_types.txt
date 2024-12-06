@@ -1,31 +1,19 @@
-﻿# rokugan_major = {
-# 	sort_order = 300
-# 	gui_tags = { big_button }
-# }
-
-l5r_clan = {
-	sort_order = 90
+﻿l5r_clan = {
+	sort_order = 190
 	gui_tags = {}
 }
 
 l5r_magic = {
-	sort_order = 85
+	sort_order = 185
 	gui_tags = {}
 }
 
 l5r_bushido = {
-	sort_order = 80
+	sort_order = 180
 	gui_tags = {}
 }
 
 l5r_religious = {
-	sort_order = 70
+	sort_order = 170
 	gui_tags = {}
 }
-
-
-
-# rokugan_minor = {
-# 	sort_order = 250
-# 	gui_tags = {}
-# }
