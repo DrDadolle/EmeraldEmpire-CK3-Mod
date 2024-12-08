@@ -615,7 +615,7 @@ scripted_trigger yearly_4011_vassal_trigger = {
 	is_powerful_vassal = yes
 	is_adult = yes
 	NOR = {
-		is_player_heir_of_trigger = { CHARACTER = root }
+		is_player_heir_of = root
 		is_close_or_extended_family_of = root.player_heir
 		has_relation_lover = root
 		has_relation_friend = root
@@ -1286,7 +1286,7 @@ yearly.4021 = {
 				base = 1
 				modifier = {
 					add = 4
-					is_player_heir_of_trigger = { CHARACTER = root }
+					is_player_heir_of = root
 				}
 			}
 			save_scope_as = child

@@ -54,7 +54,6 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 		}
 		trigger_event = {
 			id = l5r_pray_spirit.0002
-			days = { 2 3 }
 		}
 		ai_chance = {
 			base = 50
@@ -482,6 +481,12 @@ l5r_pray_spirit.0003 = {
 			limit = { scope:outcome = flag:small_money }
             # Gain small money
             add_gold = minor_gold_value 
+			
+		}
+		else_if = {
+			limit = { scope:outcome = flag:lost_money }
+            # Gain small money
+            remove_short_term_gold = minor_gold_value 
 			
 		}
 		else_if = {

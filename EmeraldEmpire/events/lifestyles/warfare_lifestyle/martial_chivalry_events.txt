@@ -1840,7 +1840,7 @@ martial_chivalry.3000 = {
 				#Because the event can only fire on bad commanders, we need to make sure the event prefers firing on characters the player actually cares about.
 				base = 10
 				modifier = {
-					is_player_heir_of_trigger = { CHARACTER = root }
+					is_player_heir_of = root
 					factor = 10
 				}
 				modifier = {
