@@ -194,17 +194,18 @@ on_siege_completion = {
 				}
 			}
 		}
-		scope:barony = {
-			if = {
-				limit = { title_province = holder.capital_province }
-				holder = {
-					random = {
-						chance = 50
-						trigger_event = fp3_decision.0002 #FP3 Event to possibly lose your royal fire
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# scope:barony = {
+		# 	if = {
+		# 		limit = { title_province = holder.capital_province }
+		# 		holder = {
+		# 			random = {
+		# 				chance = 50
+		# 				trigger_event = fp3_decision.0002 #FP3 Event to possibly lose your royal fire
+		# 			}
+		# 		}
+		# 	}
+		# }
 		# We change your legend to reflect this siege
 		if = {
 			limit = {
@@ -270,7 +271,8 @@ on_siege_looting = {
 on_army_enter_province = {
 	events = {
 		great_holy_war.0060		# Give Crusaders their trait upon reaching the holy land.
-		ep3_emperor_yearly.3010	# Byzantine emperor sends fireships to defend the strait of Marmara
+		#L5R Disabled
+		# ep3_emperor_yearly.3010	# Byzantine emperor sends fireships to defend the strait of Marmara
 		game_rule.1021			# Figure out whether we should fire a conclusion event during the Conquest.
 	}
 	random_events = {
