@@ -1822,7 +1822,7 @@ decide_court_position_to_give_effect = {
 						}
 						$CANDIDATE$ = { add_character_flag = antiquarian_flag }
 					}
-					chief_qadi_court_position
+					# chief_qadi_court_position
 					# 10 = {
 					# 	trigger = {
 					# 		can_appoint_char_to_court_position = {

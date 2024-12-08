@@ -3071,246 +3071,246 @@ fp3_yearly.8023 = {
 ###############################################################
 # The Heart and the Creator - by Ola Jentzsch
 ###############################################################
+#L5R Disabled
+# fp3_yearly.8035 = {
+# 	type = character_event  
+# 	title = fp3_yearly.8035.t
+# 	desc = fp3_yearly.8035.desc	
+# 	theme = learning_theology_focus
 
-fp3_yearly.8035 = {
-	type = character_event  
-	title = fp3_yearly.8035.t
-	desc = fp3_yearly.8035.desc	
-	theme = learning_theology_focus
+# 	left_portrait = {
+# 		character = scope:sufi_mystic
+# 		animation = personality_zealous
+# 	}
 
-	left_portrait = {
-		character = scope:sufi_mystic
-		animation = personality_zealous
-	}
+# 	right_portrait = {
+# 		character = root
+# 		animation = personality_rational
+# 	}
 
-	right_portrait = {
-		character = root
-		animation = personality_rational
-	}
+# 	override_background = {
+# 		reference = corridor_night
+# 	}
 
-	override_background = {
-		reference = corridor_night
-	}
+# 	trigger = {
 
-	trigger = {
+# 		#standard sanity checks
+# 		has_fp3_dlc_trigger = yes
+# 		is_available_healthy_adult = yes 
+# 		learning >= average_skill_level
 
-		#standard sanity checks
-		has_fp3_dlc_trigger = yes
-		is_available_healthy_adult = yes 
-		learning >= average_skill_level
+# 		NOT = {	has_character_modifier = fp3_sufi_initiate_modifier }
 
-		NOT = {	has_character_modifier = fp3_sufi_initiate_modifier }
+# 		#checking that we have a suitable sufism mentor
+# 		OR = { 
+# 			any_relation = { 
+# 				type = friend
+# 				fp3_sufism_enthusiast_trigger = yes
+# 			}
+# 			any_relation = { 
+# 				type = lover 
+# 				fp3_sufism_enthusiast_trigger = yes
+# 			}
+# 			any_courtier_or_guest = {
+# 				fp3_sufism_enthusiast_trigger = yes
+# 				reverse_opinion = {
+# 					target = root
+# 					value >= 50
+# 				}
+# 			}
+# 		}
+# 	}
 
-		#checking that we have a suitable sufism mentor
-		OR = { 
-			any_relation = { 
-				type = friend
-				fp3_sufism_enthusiast_trigger = yes
-			}
-			any_relation = { 
-				type = lover 
-				fp3_sufism_enthusiast_trigger = yes
-			}
-			any_courtier_or_guest = {
-				fp3_sufism_enthusiast_trigger = yes
-				reverse_opinion = {
-					target = root
-					value >= 50
-				}
-			}
-		}
-	}
+# 	weight_multiplier = {
+# 		base = 0.4
+# 	 	modifier = {
+# 		 	OR = {
+# 			 	fp3_sufism_enthusiast_trigger = yes
+# 			 	has_trait = lifestyle_mystic
+# 		 	}
+# 		 	add = 1.6
+# 	 	}
+# 	 	modifier = { #Sufis don't get along with legalists, so legalist faiths are less likely to have sufi events 
+# 	 		faith = { has_doctrine = tenet_legalism }
+# 	 		add = -0.2
+# 	 	}
+#  	}
 
-	weight_multiplier = {
-		base = 0.4
-	 	modifier = {
-		 	OR = {
-			 	fp3_sufism_enthusiast_trigger = yes
-			 	has_trait = lifestyle_mystic
-		 	}
-		 	add = 1.6
-	 	}
-	 	modifier = { #Sufis don't get along with legalists, so legalist faiths are less likely to have sufi events 
-	 		faith = { has_doctrine = tenet_legalism }
-	 		add = -0.2
-	 	}
- 	}
+#  	cooldown = { years = 100 }
 
- 	cooldown = { years = 100 }
+#  	immediate = {
 
- 	immediate = {
+#  		if = {
+# 			limit = { 
+# 				any_relation = { 
+# 					type = friend
+# 					fp3_sufism_enthusiast_trigger = yes 
+# 				}
+# 			}
+# 			random_relation = {
+# 				type = friend
+# 				limit = { fp3_sufism_enthusiast_trigger = yes	}
+# 				save_scope_as = sufi_mystic
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = { 
+# 				any_relation = { 
+# 					type = lover
+# 					fp3_sufism_enthusiast_trigger = yes 
+# 				}
+# 			}
+# 			random_relation = {
+# 				type = lover
+# 				limit = { fp3_sufism_enthusiast_trigger = yes	}
+# 				save_scope_as = sufi_mystic
+# 			}
+# 		}
+# 		else = {
+# 			limit = { 
+# 				any_courtier_or_guest = { fp3_sufism_enthusiast_trigger = yes }
+# 			}
+# 			random_courtier_or_guest = {
+# 				limit = { 
+# 					fp3_sufism_enthusiast_trigger = yes
+# 				}
+# 				save_scope_as = sufi_mystic
+# 			}
+# 		}
 
- 		if = {
-			limit = { 
-				any_relation = { 
-					type = friend
-					fp3_sufism_enthusiast_trigger = yes 
-				}
-			}
-			random_relation = {
-				type = friend
-				limit = { fp3_sufism_enthusiast_trigger = yes	}
-				save_scope_as = sufi_mystic
-			}
-		}
-		else_if = {
-			limit = { 
-				any_relation = { 
-					type = lover
-					fp3_sufism_enthusiast_trigger = yes 
-				}
-			}
-			random_relation = {
-				type = lover
-				limit = { fp3_sufism_enthusiast_trigger = yes	}
-				save_scope_as = sufi_mystic
-			}
-		}
-		else = {
-			limit = { 
-				any_courtier_or_guest = { fp3_sufism_enthusiast_trigger = yes }
-			}
-			random_courtier_or_guest = {
-				limit = { 
-					fp3_sufism_enthusiast_trigger = yes
-				}
-				save_scope_as = sufi_mystic
-			}
-		}
+# 		scope:sufi_mystic = {
+# 			add_character_modifier = {
+#  				modifier = fp3_sufi_initiate_modifier #Unlocks the "Meditate in Seclusion" decision if you are a ruler
+#  			}
+#  		}
+#  	}
 
-		scope:sufi_mystic = {
-			add_character_modifier = {
- 				modifier = fp3_sufi_initiate_modifier #Unlocks the "Meditate in Seclusion" decision if you are a ruler
- 			}
- 		}
- 	}
+#  	option = {
+#  		name = fp3_yearly.8035.a
 
- 	option = {
- 		name = fp3_yearly.8035.a
+#  		duel = {
+# 			skill = learning
+# 			value = medium_skill_rating
 
- 		duel = {
-			skill = learning
-			value = medium_skill_rating
-
-			20 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 2
-				}
-				root = {
-					send_interface_toast = {
-						title = learning_muraqaba_toast.success
-						left_icon = root
+# 			20 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 2
+# 				}
+# 				root = {
+# 					send_interface_toast = {
+# 						title = learning_muraqaba_toast.success
+# 						left_icon = root
 				
-						custom_tooltip = fp3_unlock_meditation.tt
-						add_character_modifier = {
- 							modifier = fp3_sufi_initiate_modifier #Unlocks the "Meditate in Seclusion" decision if you are a ruler
- 						}
-					}
-				}	
-			}
-			20 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -1
-				}
-				root = {
-					send_interface_toast = {
-						title = learning_muraqaba_toast.failure
-						left_icon = root
-						add_learning_lifestyle_xp = minor_lifestyle_experience
-					}
-				}
-			}
-		}
+# 						custom_tooltip = fp3_unlock_meditation.tt
+# 						add_character_modifier = {
+#  							modifier = fp3_sufi_initiate_modifier #Unlocks the "Meditate in Seclusion" decision if you are a ruler
+#  						}
+# 					}
+# 				}	
+# 			}
+# 			20 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -1
+# 				}
+# 				root = {
+# 					send_interface_toast = {
+# 						title = learning_muraqaba_toast.failure
+# 						left_icon = root
+# 						add_learning_lifestyle_xp = minor_lifestyle_experience
+# 					}
+# 				}
+# 			}
+# 		}
 
-		scope:sufi_mystic = {
-			add_opinion = {
-				target = root
-				modifier = trusted_friend_opinion 
-			}	
-		}
+# 		scope:sufi_mystic = {
+# 			add_opinion = {
+# 				target = root
+# 				modifier = trusted_friend_opinion 
+# 			}	
+# 		}
 
- 		stress_impact = { #while the stress mods here are low, note that they stack with the base modifier
-   			base = medium_stress_impact_gain
-   			zealous = minor_stress_impact_loss
-   			patient = minor_stress_impact_loss
-   			arrogant = medium_stress_impact_gain
-   			paranoid = minor_stress_impact_gain
-   			callous = medium_stress_impact_gain	
-   			lazy = minor_stress_impact_gain
-   			content = minor_stress_impact_gain
-   			cynical = minor_stress_impact_gain
-		}
+#  		stress_impact = { #while the stress mods here are low, note that they stack with the base modifier
+#    			base = medium_stress_impact_gain
+#    			zealous = minor_stress_impact_loss
+#    			patient = minor_stress_impact_loss
+#    			arrogant = medium_stress_impact_gain
+#    			paranoid = minor_stress_impact_gain
+#    			callous = medium_stress_impact_gain	
+#    			lazy = minor_stress_impact_gain
+#    			content = minor_stress_impact_gain
+#    			cynical = minor_stress_impact_gain
+# 		}
 
-		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_compassion = 0.5
-            	ai_boldness = 0.5
-            	ai_energy = 0.5
-            	ai_zeal = 1
-        	}
-   		}
- 	}
+# 		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_compassion = 0.5
+#             	ai_boldness = 0.5
+#             	ai_energy = 0.5
+#             	ai_zeal = 1
+#         	}
+#    		}
+#  	}
 
- 	option = {
- 		name = fp3_yearly.8035.b
+#  	option = {
+#  		name = fp3_yearly.8035.b
 
- 		add_piety = medium_piety_value 
+#  		add_piety = medium_piety_value 
 
- 		scope:sufi_mystic = {
-			add_opinion = {
-				target = root
-				modifier = angry_opinion 
-				opinion = -30 
-			}	
-		}
+#  		scope:sufi_mystic = {
+# 			add_opinion = {
+# 				target = root
+# 				modifier = angry_opinion 
+# 				opinion = -30 
+# 			}	
+# 		}
 
- 		stress_impact = {
-   			stubborn = minor_stress_impact_loss
-   			zealous = minor_stress_impact_loss
-   			ambitious = medium_stress_impact_gain
-   			trusting = major_stress_impact_gain	
-		}
+#  		stress_impact = {
+#    			stubborn = minor_stress_impact_loss
+#    			zealous = minor_stress_impact_loss
+#    			ambitious = medium_stress_impact_gain
+#    			trusting = major_stress_impact_gain	
+# 		}
 
-		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_rationality = 0.5
-            	ai_vengefulness = 0.5
-            	ai_zeal = 1
-        	}
-   		}
- 	}
+# 		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_rationality = 0.5
+#             	ai_vengefulness = 0.5
+#             	ai_zeal = 1
+#         	}
+#    		}
+#  	}
 
- 	option = {
- 		name = fp3_yearly.8035.c
+#  	option = {
+#  		name = fp3_yearly.8035.c
 
- 		scope:sufi_mystic = {
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion 
-				opinion = -15 
-			}	
-		}
+#  		scope:sufi_mystic = {
+# 			add_opinion = {
+# 				target = root
+# 				modifier = disappointed_opinion 
+# 				opinion = -15 
+# 			}	
+# 		}
 
- 		stress_impact = {
-   			base = minor_stress_impact_loss 
-   			zealous = medium_stress_impact_gain
-   			ambitious = medium_stress_impact_gain	
-		}
+#  		stress_impact = {
+#    			base = minor_stress_impact_loss 
+#    			zealous = medium_stress_impact_gain
+#    			ambitious = medium_stress_impact_gain	
+# 		}
 
-		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_energy = -0.5
-            	ai_boldness = -0.5
-            	ai_zeal = -0.5
-        	}
-   		}
- 	}
-}
+# 		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_energy = -0.5
+#             	ai_boldness = -0.5
+#             	ai_zeal = -0.5
+#         	}
+#    		}
+#  	}
+# }
 
 ###############################################################
 # The City of the Mouthless - by Ola Jentzsch
