@@ -1,5 +1,4 @@
-﻿## Rokugan TODO : remove vanilla reference
-succession_order_laws = {
+﻿succession_order_laws = {
 	flag = succession_order_laws
 
 	confederate_partition_succession_law = {
@@ -25,7 +24,6 @@ succession_order_laws = {
 						NOR = {
 							has_innovation = innovation_hereditary_rule
 							has_innovation = innovation_heraldry
-							has_innovation = innovation_primogeniture
 						}
 					}
 				}
@@ -75,9 +73,8 @@ succession_order_laws = {
 			government_has_flag = government_is_feudal
 			culture = {
 				has_innovation = innovation_hereditary_rule
-				NOR = {
+				NOT = {
 					has_innovation = innovation_heraldry
-					has_innovation = innovation_primogeniture
 				}
 			}
 			NOT = { government_allows = administrative }
@@ -132,7 +129,7 @@ succession_order_laws = {
 			culture = {
 				has_innovation = innovation_heraldry
 				NOT = {
-					has_innovation = innovation_primogeniture
+					has_innovation = innovation_hereditary_rule
 				}
 			}
 			NOT = { government_allows = administrative }
@@ -196,15 +193,7 @@ succession_order_laws = {
 			}
 		}
 		should_start_with = {
-			OR = {
-				historical_succession_access_single_heir_succession_law_trigger = yes
-				AND = {
-					government_has_flag = government_is_feudal
-					culture = {
-						has_innovation = innovation_primogeniture
-					}
-				}
-			}
+			historical_succession_access_single_heir_succession_law_trigger = yes
 			NOT = { government_allows = administrative }
 		}
 		succession = {
@@ -532,9 +521,9 @@ succession_order_laws = {
 			always = yes
 		}
 		succession = {
-#			order_of_succession = theocratic
-#			faith = same_faith
-#			pool_character_config = pool_theocratic_succession
+			order_of_succession = theocratic
+			faith = same_faith
+			pool_character_config = pool_theocratic_succession
 		}
 
 		potential = {
@@ -923,14 +912,13 @@ succession_gender_laws = {
 				}
 				top_liege = { has_realm_law = male_only_law }
 			}
-			trigger_else = {
-				OR = {
-					faith = {
-						has_doctrine = doctrine_gender_male_dominated
-					}
-					government_has_flag = government_is_tribal
-				}
-			}
+			#L5R Disabled
+			# trigger_else = {
+			# 	faith = {
+			# 		has_doctrine = doctrine_gender_male_dominated
+			# 		religion_tag = islam_religion
+			# 	}
+			# }
 		}
 		succession = {
 			gender_law = male_only
@@ -996,12 +984,12 @@ succession_gender_laws = {
 					culture = { has_cultural_parameter = female_preference_inheritance }
 				}
 				OR = {
-					AND = {
-						faith = {
-							has_doctrine = doctrine_gender_male_dominated
-						}
-						government_has_flag = government_is_tribal
-
+					faith = {
+						#L5R Disabled
+						# NOT = {
+						# 	religion_tag = islam_religion
+						# }
+						has_doctrine = doctrine_gender_male_dominated
 					}
 					has_realm_law = male_only_law # For when male_only_law ceases to be a legal option
 				}
@@ -1042,6 +1030,7 @@ succession_gender_laws = {
 					text = equal_law_culture_faith_or_innovation_trigger
 					OR = {
 						culture = { has_cultural_parameter = gender_equal_inheritance }
+						#culture = { has_innovation = innovation_visigothic_codes }
 						faith = { has_doctrine = doctrine_gender_equal }
 						AND = { #Culture is female dominated but religion is male dominated
 							faith = { has_doctrine = doctrine_gender_male_dominated }
@@ -1071,7 +1060,8 @@ succession_gender_laws = {
 			trigger_else = {
 				NOR = {
 					culture = { has_cultural_parameter = female_preference_inheritance }
-					#culture = { has_cultural_tradition = tradition_nubian_warrior_queens }
+					#L5R Disabled
+					# culture = { has_cultural_tradition = tradition_nubian_warrior_queens }
 				}
 				faith = {
 					has_doctrine = doctrine_gender_equal

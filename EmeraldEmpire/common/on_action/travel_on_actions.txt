@@ -680,7 +680,8 @@ travel_events_on_action = {
 		100 = travel_events.4032 # You come across a noble being assaulted by a random animal
 		100 = travel_events.4033 # A witch who strangely isn't being burned
 		100 = travel_events.4035 # You are a witch and you're being harassed by locals
-		100 = travel_events.4036 # Caravaneers want to sell you some cool stuff
+		#L5R Disabled
+		# 100 = travel_events.4036 # Caravaneers want to sell you some cool stuff
 		100 = travel_events.4037 # You enter a place that is syncretic with your faith
 		100 = travel_events.4038 # You enter a province which your faith is syncretic with
 		100 = travel_events.4039 # You enter a ritual hospitality province and are offered a rest

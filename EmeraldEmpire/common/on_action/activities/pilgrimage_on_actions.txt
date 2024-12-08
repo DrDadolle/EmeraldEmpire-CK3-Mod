@@ -466,7 +466,7 @@ pilgrimage_destination_events = {
 		120 = pilgrimage.6790 #Spiritual mentor changes your ways
 		100 = pilgrimage.6800 #An entourage member feels a religious calling
 		#L5R Disabled
-		100 = pilgrimage.6810 #Do you wanna buy an indulgence?
+		# 100 = pilgrimage.6810 #Do you wanna buy an indulgence?
 		120 = pilgrimage.6820 #Buy a pilgrims' guide
 		150 = pilgrimage.6830 #Reflect on an empty temple
 		100 = pilgrimage.6840 #Ask local priest to bless your artifact

@@ -12910,16 +12910,17 @@ murder_interception_handle_extra_deaths_effect = {
 
 # Adds either "Plush and Unremarkable Carpet" modifier if character is Iranian, otherwise adds "Plush and Exotic Carpet"
 add_carpet_modifier_effect = {
-	if = {
-		limit = {
-			has_fp3_dlc_trigger = yes
-			culture = { has_cultural_pillar = heritage_iranian }
-		}
-		add_character_modifier = {
-			modifier = persian_has_plush_carpet_modifier
-			days = 3650
-		}
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		has_fp3_dlc_trigger = yes
+	# 		culture = { has_cultural_pillar = heritage_iranian }
+	# 	}
+	# 	add_character_modifier = {
+	# 		modifier = persian_has_plush_carpet_modifier
+	# 		days = 3650
+	# 	}
+	# }
 	else = {
 		add_character_modifier = {
 			modifier = has_plush_carpet_modifier
@@ -13114,15 +13115,16 @@ owner_seduce_outcome_become_lovers_option_effects = {
 		}
 	}
 
-	if = {
-		limit = {
-			exists = dynasty
-			dynasty = {
-				has_dynasty_perk = fp1_adventure_legacy_2
-			}	
-		}
-		add_prestige = fp1_adventure_legacy_2_prestige_value
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		exists = dynasty
+	# 		dynasty = {
+	# 			has_dynasty_perk = fp1_adventure_legacy_2
+	# 		}	
+	# 	}
+	# 	add_prestige = fp1_adventure_legacy_2_prestige_value
+	# }
 
 	if = {
 		limit = {
@@ -13156,15 +13158,16 @@ owner_seduce_outcome_just_sex_effects = {
 		add_piety = minor_piety_gain
 	}
 
-	if = {
-		limit = {
-			exists = dynasty
-			dynasty = {
-				has_dynasty_perk = fp1_adventure_legacy_2
-			}	
-		}
-		add_prestige = fp1_adventure_legacy_2_prestige_value
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		exists = dynasty
+	# 		dynasty = {
+	# 			has_dynasty_perk = fp1_adventure_legacy_2
+	# 		}	
+	# 	}
+	# 	add_prestige = fp1_adventure_legacy_2_prestige_value
+	# }
 
 	owner_seduce_outcome_success_send_discovery_event_effect = yes
 }
@@ -13670,134 +13673,135 @@ set_random_religious_text_effect = {
 
 set_random_entertainment_text_effect = {
 	random_list = {
-		1 = {
-			#Germanic language
-			trigger = {
-				root.culture = {
-					OR = {
-						has_cultural_pillar = language_central_germanic
-						has_cultural_pillar = language_norse
-						has_cultural_pillar = language_anglic
-					}
-				}
-			}
-			save_scope_value_as = {
-				name = entertainment_book_title
-				value = flag:beowulf
-			}
-		}
-		1 = {
-			#Germanic language
-			trigger = { 
-				root.culture = {
-					OR = {
-						has_cultural_pillar = language_central_germanic
-						has_cultural_pillar = language_norse
-						has_cultural_pillar = language_anglic
-					}
-				}
-			}
-			save_scope_value_as = {
-				name = entertainment_book_title
-				value = flag:niebelungenlied
-			}
-		}
-		1 = {
-			#Latin
-			trigger = { root.culture = { has_cultural_pillar = language_italian } }
-			save_scope_value_as = {
-				name = entertainment_book_title
-				value = flag:song_of_roland
-			}
-		}
-		1 = {
-			#Welsh saga
-			trigger = {
-				OR = {
-					root.culture = { has_cultural_pillar = language_brythonic }
-					root.culture = { has_cultural_pillar = language_goidelic }
-				}
-			}
-			save_scope_value_as = {
-				name = entertainment_book_title
-				value = flag:mabinogi
-			}
-		}
-		1 = {
-			#Not in Jerusalem
-			trigger = {
-				NOR = { 
-					AND = {
-						exists = root.capital_province
-						root.capital_province = { geographical_region = world_middle_east } 
-					}
-					root.culture = { has_cultural_pillar = language_israelite }
-				}
-			}
-			save_scope_value_as = {
-				name = entertainment_book_title
-				value = flag:travels_to_jerusalem
-			}
-		}
-		1 = {
-			# Not in India
-			trigger = {
-				trigger_if = {
-					limit = {
-						exists = root.capital_province
-					}
-					NOT = {
-						root.capital_province = { geographical_region = world_india }
-					}
-				}
-			}
-			save_scope_value_as = {
-				name = entertainment_book_title
-				value = flag:east_of_indus
-			}
-		}
-		1 = {
-			#Not in Byzantium
-			trigger = { 
-				NOR = {
-					root.culture = {
-						OR = {
-							has_cultural_pillar = heritage_byzantine
-							has_cultural_pillar = heritage_caucasian
-						} 
-					}
-					has_title = title:e_byzantium 
-				}
-			}
-			save_scope_value_as = {
-				name = entertainment_book_title
-				value = flag:travels_to_byzantium
-			}
-		}
-		1 = {
-			#Greek
-			trigger = { root.culture = { has_cultural_pillar = language_greek } }
-			save_scope_value_as = {
-				name = entertainment_book_title
-				value = flag:digenes_akrites
-			}
-		}
-		1 = {
-			#Greek
-			trigger = { root.culture = { has_cultural_pillar = language_greek } }
-			save_scope_value_as = {
-				name = entertainment_book_title
-				value = flag:epigrams
-			}
-		}
-		1 = {
-			#Greek
-			trigger = { root.culture = { has_cultural_pillar = language_greek } }
-			save_scope_value_as = {
-				name = entertainment_book_title
-				value = flag:philogelos
-			}
-		}
+		#L5R Disabled
+		# 1 = {
+		# 	#Germanic language
+		# 	trigger = {
+		# 		root.culture = {
+		# 			OR = {
+		# 				has_cultural_pillar = language_central_germanic
+		# 				has_cultural_pillar = language_norse
+		# 				has_cultural_pillar = language_anglic
+		# 			}
+		# 		}
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = entertainment_book_title
+		# 		value = flag:beowulf
+		# 	}
+		# }
+		# 1 = {
+		# 	#Germanic language
+		# 	trigger = { 
+		# 		root.culture = {
+		# 			OR = {
+		# 				has_cultural_pillar = language_central_germanic
+		# 				has_cultural_pillar = language_norse
+		# 				has_cultural_pillar = language_anglic
+		# 			}
+		# 		}
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = entertainment_book_title
+		# 		value = flag:niebelungenlied
+		# 	}
+		# }
+		# 1 = {
+		# 	#Latin
+		# 	trigger = { root.culture = { has_cultural_pillar = language_italian } }
+		# 	save_scope_value_as = {
+		# 		name = entertainment_book_title
+		# 		value = flag:song_of_roland
+		# 	}
+		# }
+		# 1 = {
+		# 	#Welsh saga
+		# 	trigger = {
+		# 		OR = {
+		# 			root.culture = { has_cultural_pillar = language_brythonic }
+		# 			root.culture = { has_cultural_pillar = language_goidelic }
+		# 		}
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = entertainment_book_title
+		# 		value = flag:mabinogi
+		# 	}
+		# }
+		# 1 = {
+		# 	#Not in Jerusalem
+		# 	trigger = {
+		# 		NOR = { 
+		# 			AND = {
+		# 				exists = root.capital_province
+		# 				root.capital_province = { geographical_region = world_middle_east } 
+		# 			}
+		# 			root.culture = { has_cultural_pillar = language_israelite }
+		# 		}
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = entertainment_book_title
+		# 		value = flag:travels_to_jerusalem
+		# 	}
+		# }
+		# 1 = {
+		# 	# Not in India
+		# 	trigger = {
+		# 		trigger_if = {
+		# 			limit = {
+		# 				exists = root.capital_province
+		# 			}
+		# 			NOT = {
+		# 				root.capital_province = { geographical_region = world_india }
+		# 			}
+		# 		}
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = entertainment_book_title
+		# 		value = flag:east_of_indus
+		# 	}
+		# }
+		# 1 = {
+		# 	#Not in Byzantium
+		# 	trigger = { 
+		# 		NOR = {
+		# 			root.culture = {
+		# 				OR = {
+		# 					has_cultural_pillar = heritage_byzantine
+		# 					has_cultural_pillar = heritage_caucasian
+		# 				} 
+		# 			}
+		# 			has_title = title:e_byzantium 
+		# 		}
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = entertainment_book_title
+		# 		value = flag:travels_to_byzantium
+		# 	}
+		# }
+		# 1 = {
+		# 	#Greek
+		# 	trigger = { root.culture = { has_cultural_pillar = language_greek } }
+		# 	save_scope_value_as = {
+		# 		name = entertainment_book_title
+		# 		value = flag:digenes_akrites
+		# 	}
+		# }
+		# 1 = {
+		# 	#Greek
+		# 	trigger = { root.culture = { has_cultural_pillar = language_greek } }
+		# 	save_scope_value_as = {
+		# 		name = entertainment_book_title
+		# 		value = flag:epigrams
+		# 	}
+		# }
+		# 1 = {
+		# 	#Greek
+		# 	trigger = { root.culture = { has_cultural_pillar = language_greek } }
+		# 	save_scope_value_as = {
+		# 		name = entertainment_book_title
+		# 		value = flag:philogelos
+		# 	}
+		# }
 		1 = {
 			#Any
 			save_scope_value_as = {
@@ -13810,32 +13814,33 @@ set_random_entertainment_text_effect = {
 
 set_random_informative_text_effect = {
 	random_list = {
-		1 = {
-			#Arabic
-			trigger = {
-				OR = {
-					root.culture = { has_cultural_pillar = heritage_arabic }
-					root.culture = { has_cultural_pillar = language_arabic }
-				}
-			}
-			save_scope_value_as = {
-				name = informative_book_title
-				value = flag:on_the_judgement_of_the_stars
-			}
-		}
-		1 = {
-			#Arabic
-			trigger = {
-				OR = {
-					scope:culture ?= { has_cultural_pillar = heritage_arabic }
-					scope:culture ?= { has_cultural_pillar = language_arabic }
-				}
-			}
-			save_scope_value_as = {
-				name = informative_book_title
-				value = flag:the_perfect_state
-			}
-		}
+		#L5R Disabled
+		# 1 = {
+		# 	#Arabic
+		# 	trigger = {
+		# 		OR = {
+		# 			root.culture = { has_cultural_pillar = heritage_arabic }
+		# 			root.culture = { has_cultural_pillar = language_arabic }
+		# 		}
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = informative_book_title
+		# 		value = flag:on_the_judgement_of_the_stars
+		# 	}
+		# }
+		# 1 = {
+		# 	#Arabic
+		# 	trigger = {
+		# 		OR = {
+		# 			scope:culture ?= { has_cultural_pillar = heritage_arabic }
+		# 			scope:culture ?= { has_cultural_pillar = language_arabic }
+		# 		}
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = informative_book_title
+		# 		value = flag:the_perfect_state
+		# 	}
+		# }
 		1 = {
 			#"Any"
 			save_scope_value_as = {
@@ -13843,16 +13848,17 @@ set_random_informative_text_effect = {
 				value = flag:spiritual_medicine
 			}
 		}
-		1 = {
-			#Latin
-			trigger = {
-				root.capital_province ?= { geographical_region = world_europe }
-			}
-			save_scope_value_as = {
-				name = informative_book_title
-				value = flag:trotula
-			}
-		}
+		#L5R Disabled
+		# 1 = {
+		# 	#Latin
+		# 	trigger = {
+		# 		root.capital_province ?= { geographical_region = world_europe }
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = informative_book_title
+		# 		value = flag:trotula
+		# 	}
+		# }
 		1 = {
 			#Jewish/Any
 			save_scope_value_as = {
@@ -13860,48 +13866,49 @@ set_random_informative_text_effect = {
 				value = flag:the_improvement_of_the_moral_qualities
 			}
 		}
-		1 = {
-			#Welsh (Anyone in the British Isles)
-			trigger = {
-				root.capital_province ?= { geographical_region = world_europe_west_britannia }
-			}
-			save_scope_value_as = {
-				name = informative_book_title
-				value = flag:armes_prydein
-			}
-		}
-		1 = {
-			#Anywhere around the Mediterrenean
-			trigger = {
-				root.capital_province ?= {
-					OR = {
-						geographical_region = world_europe
-						geographical_region = world_africa_north_east
-						geographical_region = world_africa_north_west
-					}
-				}
-			}
-			save_scope_value_as = {
-				name = informative_book_title
-				value = flag:almagest
-			}
-		}
-		1 = {
-			#Greek
-			trigger = { root.culture = { has_cultural_pillar = language_greek } }
-			save_scope_value_as = {
-				name = informative_book_title
-				value = flag:anekdota
-			}
-		}
-		1 = {
-			#Greek
-			trigger = { root.culture = { has_cultural_pillar = language_greek } }
-			save_scope_value_as = {
-				name = informative_book_title
-				value = flag:chronographia
-			}
-		}
+		#L5R Disabled
+		# 1 = {
+		# 	#Welsh (Anyone in the British Isles)
+		# 	trigger = {
+		# 		root.capital_province ?= { geographical_region = world_europe_west_britannia }
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = informative_book_title
+		# 		value = flag:armes_prydein
+		# 	}
+		# }
+		# 1 = {
+		# 	#Anywhere around the Mediterrenean
+		# 	trigger = {
+		# 		root.capital_province ?= {
+		# 			OR = {
+		# 				geographical_region = world_europe
+		# 				geographical_region = world_africa_north_east
+		# 				geographical_region = world_africa_north_west
+		# 			}
+		# 		}
+		# 	}
+		# 	save_scope_value_as = {
+		# 		name = informative_book_title
+		# 		value = flag:almagest
+		# 	}
+		# }
+		# 1 = {
+		# 	#Greek
+		# 	trigger = { root.culture = { has_cultural_pillar = language_greek } }
+		# 	save_scope_value_as = {
+		# 		name = informative_book_title
+		# 		value = flag:anekdota
+		# 	}
+		# }
+		# 1 = {
+		# 	#Greek
+		# 	trigger = { root.culture = { has_cultural_pillar = language_greek } }
+		# 	save_scope_value_as = {
+		# 		name = informative_book_title
+		# 		value = flag:chronographia
+		# 	}
+		# }
 	}
 }
 

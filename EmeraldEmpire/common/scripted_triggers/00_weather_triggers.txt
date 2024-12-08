@@ -72,11 +72,11 @@ temperate_seasons_trigger = {
 	$LOCATION$ = {
 		OR = {
 			#L5R Modified
-			geographical_region = world_rokugan_scorpion
-			geographical_region = world_asia_crane
-			geographical_region = world_rokugan_lion
-			geographical_region = world_rokugan_imperial
-			geographical_region = world_shinomen_mori
+			geographical_region = rokugan_scorpion
+			geographical_region = rokugan_crane
+			geographical_region = rokugan_lion
+			geographical_region = rokugan_imperial
+			geographical_region = rokugan_shinomen_mori
 			# geographical_region = world_africa_north
 			# geographical_region = world_steppe
 			# geographical_region = world_tibet

@@ -4108,13 +4108,14 @@ scripted_trigger ep3_2160_valid_neighbor_trigger = {
 	}
 	OR = {
 		government_has_flag = government_is_tribal
-		culture = {
-			OR = {
-				has_cultural_tradition = tradition_horse_lords
-				# has_cultural_tradition = tradition_saharan_nomads #L5R Disabled
-				# has_cultural_tradition = tradition_desert_nomads
-			}
-		}
+		#L5R Disabled
+		# culture = {
+		# 	OR = {
+		# 		has_cultural_tradition = tradition_horse_lords
+		# 		# has_cultural_tradition = tradition_saharan_nomads 
+		# 		# has_cultural_tradition = tradition_desert_nomads
+		# 	}
+		# }
 	}
 	is_ai = yes
 }

@@ -342,12 +342,14 @@ on_raid_action_start = {
 on_raid_action_completion = {
 	events = {
 		raiding.0001 # An independent liege personally raids a county capital.
-		raiding.0021 # Adjust raider completion tally.
-		raiding.0022 # Chance to fire viking/raider acquisition event
+		#L5R Disabled
+		# raiding.0021 # Adjust raider completion tally.
+		# raiding.0022 # Chance to fire viking/raider acquisition event
 		raiding.0013 # Chance to kidnap prisoners
 		raiding.0014 # Chance to steal an artifact
 		bp2_yearly.8031 # Steal a doll
-		raiding.0031 # Hereward adds XP
+		#L5R Disabled
+		# raiding.0031 # Hereward adds XP
 	}
 	effect = {
 		scope:raider = {

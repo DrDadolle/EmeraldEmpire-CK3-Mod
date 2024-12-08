@@ -240,27 +240,28 @@ on_building_completed = {
 				}
 			}
 
-			if = {
-				limit = {
-					has_holding_type = church_holding
-					county.faith.religion = religion:islam_religion
-					scope:character = {
-						any_character_struggle = {
-							involvement = involved
-							phase_has_catalyst = catalyst_new_islamic_temple_construction
-						}
-					}
-				}
-				scope:character = {
-					every_character_struggle = {
-						involvement = involved
-						activate_struggle_catalyst = {
-							catalyst = catalyst_new_islamic_temple_construction
-							character = scope:character
-						}
-					}
-				}
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		has_holding_type = church_holding
+			# 		county.faith.religion = religion:islam_religion
+			# 		scope:character = {
+			# 			any_character_struggle = {
+			# 				involvement = involved
+			# 				phase_has_catalyst = catalyst_new_islamic_temple_construction
+			# 			}
+			# 		}
+			# 	}
+			# 	scope:character = {
+			# 		every_character_struggle = {
+			# 			involvement = involved
+			# 			activate_struggle_catalyst = {
+			# 				catalyst = catalyst_new_islamic_temple_construction
+			# 				character = scope:character
+			# 			}
+			# 		}
+			# 	}
+			# }
 
 			if = {
 				limit = {
