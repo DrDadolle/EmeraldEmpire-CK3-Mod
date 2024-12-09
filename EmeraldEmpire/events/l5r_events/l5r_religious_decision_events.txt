@@ -1,5 +1,98 @@
 ﻿namespace = l5r_religious_decision
 
+### L5R Religious ###
+#			l5r_religious_decision.0001 	Recruit an isawa shindoshi
+#			l5r_religious_decision.0101		Choose a patron fortune
+
+#########################
+# Recruit Isawa Shindoshi #
+# by  Leskinen          #
+# 0101-0101				#
+#########################
+l5r_religious_decision.0001 = {
+
+	content_source = l5r_dlc
+    type = character_event
+	title = l5r_religious_decision.0001.t
+	desc = l5r_religious_decision.0001.desc
+	
+	theme = faith
+
+    left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				has_trait = cynical
+			}
+			animation = disbelief
+		}
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = scope:isawa_shindoshi
+		animation = personality_zealous
+	}
+
+	lower_left_portrait = scope:isawa_shindoshi_patron
+
+
+	immediate = {
+		create_character = {
+			template = default_isawa_shindoshi_character
+			save_scope_as = isawa_shindoshi
+			location = root.location
+		}
+	}
+
+	#Accept the shindoshi
+	option = { 
+		trigger = {
+			scope:isawa_shindoshi = {
+				has_trait = shindoshi
+			}
+		}
+		name = l5r_religious_decision.0001.a
+		pay_short_term_gold = {
+			target = scope:isawa_shindoshi_patron
+			gold = medium_gold_value
+		}
+		add_courtier = scope:isawa_shindoshi
+	}
+
+	#Accept the ishiken
+	option = { 
+		trigger = {
+			scope:isawa_shindoshi = {
+				has_trait = ishiken
+			}
+		}
+		name = l5r_religious_decision.0001.b
+		pay_short_term_gold = {
+			target = scope:isawa_shindoshi_patron
+			gold = major_gold_value
+		}
+		add_courtier = scope:isawa_shindoshi
+	}
+
+	#Refuse the shindoshi
+	option = {
+		name = l5r_religious_decision.0001.c
+		add_prestige = medium_prestige_loss
+		isawa_shindoshi_patron.opinion = {
+			add_opinion = {				
+				modifier = wasted_my_time_opinion
+				opinion = -25
+				target = root
+			}
+		}
+	}
+}
+#########################
+# Choose a patron fortune#
+# by  Leskinen          #
+# 0101-0101				#
+#########################
 #Based on religious_decision.0102
 l5r_religious_decision.0101 = {
 	type = character_event

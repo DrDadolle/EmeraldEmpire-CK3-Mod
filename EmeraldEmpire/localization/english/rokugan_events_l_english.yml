@@ -60,6 +60,9 @@
  ############################
  ###### MINOR DECISION
  ############################
+ ############################
+ ###### Choose favorite fortune
+ ############################
  l5r_religious_decision.0101.t:0 "Determine Favorite Fortune"
  l5r_religious_decision.0101.desc:0 "Our faith worships a number of great Fortunes, as well as a number of minor ones. Yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side. Whatever the blessings my patron Fortune provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
  l5r_religious_decision.0101.benten:0 "Benten, the Fortune of Romantic Love and Arts!"
@@ -72,6 +75,9 @@
  l5r_religious_decision.0101.optout:0 "So many Fortunes..."
  l5r_religious_decision.0101.flavor:0 "You decide not to dedicate yourself to any Fortune yet."
 
+ ############################
+ ###### Seppuku
+ ############################
  rokugan_seppuku_decision.0001.t:0 "Today Is My Day"
  rokugan_seppuku_decision.0001.desc:0 "By commiting seppuku, I can repay my dishonourable behaviour and return my name untainted to my blessed ancestors."
  rokugan_seppuku_decision.0001.a:0 "Commit Seppuku"
@@ -87,6 +93,14 @@
  rokugan_abdication_decision.0001.b:0 "No, it is not yet my time."
  abdicate_decision_effect_tt:0 "You will abdicate and continue as your heir."
 
+ ############################
+ ###### Recruit Isawa Shindoshi
+ ############################
+ l5r_religious_decision.0001.t:0 "Isawa Shindoshi"
+ l5r_religious_decision.0001.desc:0 "After weeks of waiting, a knock on my paper door pull me out of my thoughts. My servant tells me that a shindoshi from the Isawa familly has arrived. I jauge the [isawa_shindoshi.GetWomenMen] in front of me. Will [isawa_shindoshi.GetSheHe] be capable of serving me ?"
+ l5r_religious_decision.0001.a "I'm happy with [isawa_shindoshi.GetName]."
+ l5r_religious_decision.0001.b "An ishiken ? How lucky !"
+ l5r_religious_decision.0001.c "Are you calling yourself a shindoshi ? Get out !"
  ############################
  ###### Pray to the Kami Decision
  ############################

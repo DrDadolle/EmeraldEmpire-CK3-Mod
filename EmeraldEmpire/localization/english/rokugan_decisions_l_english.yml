@@ -101,6 +101,11 @@
  rokugan_abdicate_decision_desc:0 "My time as [ROOT.Char.GetTitleAsNameNoTooltip] of [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip] has come to an end. I am sure the Realm will be in good hands with my heir."
  rokugan_abdicate_decision_effect_text:0 "You will have the choice to abdicate and continue as your rightful heir."
  rokugan_abdicate_decision_confirm:0 "It is time..."
+ #recruit_isawa_shindoshi
+ recruit_isawa_shindoshi:0 "Recruit Isawa Shindoshi"
+ recruit_isawa_shindoshi_tooltip:0 "The Isawa Family are renowned for their shindoshi"
+ recruit_isawa_shindoshi_desc:0 "Shindoshi are powerful individuals, capable of many miracles. The absence of such individuals at my court will reflects poorly my station. Plus, who knows when I'll need to ask the kami to spy on my ennemies ? "
+ recruit_isawa_shindoshi_confirm:0 "We need a shindoshi"
  #pray_the_spirits_decision
  pray_the_spirits_decision:0 "Pray an elemental Kami"
  pray_the_spirits_decision_tooltip:0 "Offer prayers to an elemental Kami and hope to have it answer them."

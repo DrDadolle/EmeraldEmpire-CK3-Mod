@@ -1,6 +1,107 @@
 ﻿##################################################
 # SHINDOSHI Decisions
 ##################################################
+# Recrut Phoenix Shindoshi
+##################################################
+recruit_isawa_shindoshi = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_phoenix.dds"
+	}
+
+	ai_check_interval = 60
+	cooldown = { years = 5 }
+	decision_group_type = l5r_religious
+
+    title = recruit_isawa_shindoshi
+    selection_tooltip = recruit_isawa_shindoshi_tooltip
+	desc = recruit_isawa_shindoshi_desc
+	confirm_text = recruit_isawa_shindoshi_confirm
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		OR = {
+			title:k_phoenix_clan = { exists = holder }
+			title:d_isawa = { exists = holder }
+		}
+	}
+
+	is_valid = {
+		# need good opinion of phoenix clan
+		OR = {
+			AND = {
+				title:k_phoenix_clan = { exists = holder }
+				title:k_phoenix_clan.holder.opinion = {
+					value >= 25
+					target = root
+				}
+			}
+			AND = {
+				title:d_isawa = { exists = holder }
+				title:d_isawa.holder.opinion = {
+					value >= 25
+					target = root
+				}
+			}
+		}
+	}
+	
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		NAND = {
+			is_shindoshi = yes
+			any_courtier_or_guest = {
+				is_shindoshi = yes
+			}
+			any_vassal = {
+				is_shindoshi = yes
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			random_list = {
+				80 = {
+					trigger = {
+						AND = {
+							title:k_phoenix_clan = { exists = holder }
+							title:k_phoenix_clan.holder.opinion = {
+								value >= 25
+								target = root
+							}
+						}
+					}
+					title:k_phoenix_clan.holder = { save_scope_as = isawa_shindoshi_patron }
+					
+				}
+				20 = {
+					trigger = {
+						AND = {
+							title:d_isawa = { exists = holder }
+							title:d_isawa.holder.opinion = {
+								value >= 25
+								target = root
+							}
+						}
+					}
+					title:d_isawa.holder = { save_scope_as = isawa_shindoshi_patron }
+				}
+			}
+
+			trigger_event = {
+				id = l5r_religious_decision.0001
+				days = { 7 21 }
+			}	
+		}
+	}
+
+	ai_potential = {
+			always = no 
+	}
+
+}
+
+##################################################
 # Pray the spirits
 ##################################################
 pray_the_spirits_decision = {
