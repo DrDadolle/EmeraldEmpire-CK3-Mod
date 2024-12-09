@@ -573,10 +573,16 @@ bubonic_plague = {
 				# 	multiply = 0.02
 				# }				
 			}
-			max_provinces = { 6500 7250 }
+			#L5R Modified
+			# less provinces ???
+			max_provinces = { 2800 3200 }
+			# max_provinces = { 6500 7250 }
 
 			infection_duration = {
-				months = { 24 48 }
+				#L5R Modified
+				# less durations
+				months = { 12 24 }
+				# months = { 24 48 }
 			}
 			
 			infection_progress_duration = {

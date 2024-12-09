@@ -44,8 +44,11 @@ natural_white_hair = {
 	physical = yes
 	genetic = yes
 
-	birth = 0.15
-	random_creation = 0.15
+	birth = 0.15 # 0.15% chance de be born with this trait 
+	random_creation = 0.15 # 0.15% of new character have this ??
+
+	birth=0.1 
+	random_creation=0.1 
 
 	opposites = {
 		bleached_white_hair
@@ -94,8 +97,8 @@ shindoshi = {
 	}
 	#group = sorcerer ? Magic ? Shindoshi ? TODO
 
-	birth=0.015 # 0.015% chance de be born with this trait 
-	random_creation=0.015 # 0% of new character have this ??
+	birth=0.1 # 0.1% chance de be born with this trait 
+	random_creation=0.1 # 0.1% of new character have this ??
 	inherit_chance = 10 # 10% of chance to pass to the child
 	both_parent_has_trait_inherit_chance = 50 # 50% of chance to pass to the child if both parents have it
 
@@ -136,8 +139,8 @@ ishiken = {
 	}
 	#group = sorcerer ? Magic ? Shindoshi ? TODO
 
-	birth=0.005 # 0.005% chance de be born with this trait 
-	random_creation=0.005 # 0% of new character have this ??
+	birth=0.05 # 0.05% chance de be born with this trait 
+	random_creation=0.05 # 0.05% of new character have this ??
 	inherit_chance = 5 # 10% of chance to pass to the child
 	both_parent_has_trait_inherit_chance = 25 # 25% of chance to pass to the child if both parents have it
 

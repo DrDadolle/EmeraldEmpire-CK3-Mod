@@ -3,7 +3,7 @@
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_unicorn
-	language = language_rokugani
+	language = language_unicorn_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
@@ -29,7 +29,7 @@ ide = {
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_unicorn
-	language = language_rokugani
+	language = language_unicorn_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
@@ -55,7 +55,7 @@ utaku = {
 	
 	ethos = ethos_bellicose
 	heritage = heritage_unicorn
-	language = language_rokugani
+	language = language_unicorn_rokugani
 	martial_custom = martial_custom_female_only
 	traditions = {
 		tradition_bushido
@@ -81,7 +81,7 @@ iuchi = {
 	
 	ethos = ethos_spiritual
 	heritage = heritage_unicorn
-	language = language_rokugani
+	language = language_unicorn_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
@@ -107,7 +107,7 @@ moto = {
 	
 	ethos = ethos_bellicose
 	heritage = heritage_unicorn
-	language = language_rokugani
+	language = language_unicorn_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido

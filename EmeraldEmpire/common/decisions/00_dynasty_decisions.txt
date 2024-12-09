@@ -43,6 +43,7 @@
 			}
 			trigger_if = {
 				limit = {
+					#L5R Modified
 					is_ai = yes # We don't want the AI to create cadet branches willy nilly, so they have additional restrictions.
 					top_liege = house.house_head.top_liege # But we do want the AI to create a cadet branch ASAP if the house head is in a different realm
 				}
@@ -194,8 +195,10 @@
 		# # Shogunate: Kamon CoA end
 	}
 	
+	#L5R Modified
+	# AI WILL NOT created cadet branches ever (for now)
 	ai_potential = {
-		always = yes
+		always = no
 	}
 
 	ai_will_do = {

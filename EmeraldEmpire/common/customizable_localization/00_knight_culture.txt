@@ -4,7 +4,12 @@
 		trigger = {
 			#L5R Added
 			OR = {
-				culture = { has_cultural_pillar = language_rokugani }
+				culture = { has_cultural_pillar = language_northern_rokugani }
+				culture = { has_cultural_pillar = language_central_rokugani }
+				culture = { has_cultural_pillar = language_southern_rokugani }
+				culture = { has_cultural_pillar = language_shinomen_rokugani }
+				culture = { has_cultural_pillar = language_island_rokugani }		
+				culture = { has_cultural_pillar = language_unicorn_rokugani }
 				culture = { has_cultural_pillar = language_imperial_rokugani }
 			}
 		}

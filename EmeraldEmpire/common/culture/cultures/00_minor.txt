@@ -3,7 +3,7 @@
 	
 	ethos = ethos_spiritual
 	heritage = heritage_kitsune
-	language = language_rokugani
+	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
@@ -29,7 +29,7 @@ moshi = {
 	
 	ethos = ethos_spiritual
 	heritage = heritage_moshi
-	language = language_rokugani
+	language = language_northern_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
@@ -55,7 +55,7 @@ kasuga = {
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_kasuga
-	language = language_rokugani
+	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -78,7 +78,7 @@ tonbo = {
 	
 	ethos = ethos_communal
 	heritage = heritage_tonbo
-	language = language_rokugani
+	language = language_northern_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
@@ -104,7 +104,7 @@ toritaka = {
 	
 	ethos = ethos_spiritual
 	heritage = heritage_toritaka
-	language = language_rokugani
+	language = language_shinomen_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -129,7 +129,7 @@ usagi = {
 	
 	ethos = ethos_bellicose
 	heritage = heritage_usagi
-	language = language_rokugani
+	language = language_shinomen_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -155,7 +155,7 @@ yoritomo = {
 	
 	ethos = ethos_bellicose
 	heritage = heritage_yoritomo
-	language = language_rokugani
+	language = language_island_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido 
@@ -181,7 +181,7 @@ tsuruchi = {
 	
 	ethos = ethos_bellicose
 	heritage = heritage_tsuruchi
-	language = language_rokugani
+	language = language_central_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -206,7 +206,7 @@ suzume = {
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_suzume
-	language = language_rokugani
+	language = language_southern_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -231,7 +231,7 @@ ichiro = {
 	
 	ethos = ethos_stoic
 	heritage = heritage_ichiro
-	language = language_rokugani
+	language = language_northern_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -257,7 +257,7 @@ nekoma = {
 	
 	ethos = ethos_courtly
 	heritage = heritage_nekoma
-	language = language_rokugani
+	language = language_northern_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -281,7 +281,7 @@ komori = {
 	
 	ethos = ethos_spiritual
 	heritage = heritage_komori
-	language = language_rokugani
+	language = language_island_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -306,7 +306,7 @@ shika = {
 	
 	ethos = ethos_spiritual
 	heritage = heritage_shika
-	language = language_rokugani
+	language = language_central_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -331,7 +331,7 @@ kaikoga = {
 	
 	ethos = ethos_spiritual
 	heritage = heritage_kaikoga
-	language = language_rokugani
+	language = language_shinomen_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -355,7 +355,7 @@ chuda = { # Defunct culture
 	
 	ethos = ethos_spiritual
 	heritage = heritage_chuda
-	language = language_rokugani
+	language = language_northern_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -380,7 +380,7 @@ kuma = { # Defunct culture
 	
 	ethos = ethos_bellicose
 	heritage = heritage_kuma 
-	language = language_rokugani
+	language = language_shinomen_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -406,7 +406,7 @@ heichi = { # Defunct boar culture ? Dispapered mysteriously
 	
 	ethos = ethos_bellicose
 	heritage = heritage_crab 
-	language = language_rokugani
+	language = language_shinomen_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
@@ -430,7 +430,7 @@ kaeru = {
 	
 	ethos = ethos_bellicose
 	heritage = heritage_kaeru
-	language = language_rokugani
+	language = language_northern_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido

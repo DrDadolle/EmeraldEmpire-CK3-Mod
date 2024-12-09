@@ -3,7 +3,7 @@
 	
 	ethos = ethos_courtly
 	heritage = heritage_imperial
-	language = language_rokugani
+	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
@@ -29,7 +29,7 @@ otomo = {
 	
 	ethos = ethos_courtly
 	heritage = heritage_imperial
-	language = language_rokugani
+	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
@@ -55,7 +55,7 @@ miya = {
 	
 	ethos = ethos_bureaucratic
 	heritage = heritage_imperial
-	language = language_rokugani
+	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido
@@ -81,7 +81,7 @@ seppun = {
 	
 	ethos = ethos_stoic
 	heritage = heritage_imperial
-	language = language_rokugani
+	language = language_imperial_rokugani
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_bushido

@@ -1,14 +1,104 @@
-﻿language_rokugani = {
+﻿language_northern_rokugani = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_rokugani
+			LANGUAGE = language_northern_rokugani
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_rokugani }
+			limit = { has_cultural_pillar = language_northern_rokugani }
+			multiply = 10
+		}
+	}
+	
+	color = han
+}
+
+language_central_rokugani = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_central_rokugani
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_central_rokugani }
+			multiply = 10
+		}
+	}
+	
+	color = han
+}
+
+language_southern_rokugani = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_southern_rokugani
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_southern_rokugani }
+			multiply = 10
+		}
+	}
+	
+	color = han
+}
+
+language_shinomen_rokugani = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_shinomen_rokugani
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_shinomen_rokugani }
+			multiply = 10
+		}
+	}
+	
+	color = han
+}
+
+language_unicorn_rokugani = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_unicorn_rokugani
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_unicorn_rokugani }
+			multiply = 10
+		}
+	}
+	
+	color = han
+}
+
+language_island_rokugani = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_island_rokugani
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_island_rokugani }
 			multiply = 10
 		}
 	}

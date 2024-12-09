@@ -486,7 +486,8 @@ common_cb_prestige_cost_multiplier_core = {
 	}
 
 
-	# Rokugan : Not respecting imperial edict about war & peace ups the cost of declaring wars.
+	# L5R Added
+	# Not respecting imperial edict about war & peace ups the cost of declaring wars.
 	# Preventing wars vs imperial family
 	if = {
 		limit = {
@@ -497,26 +498,28 @@ common_cb_prestige_cost_multiplier_core = {
 			desc = "CB_ATTACK_IMPERIAL_EDICT_VS_IMPERIAL_FAMILY"
 		}
 	}
-	# Rokugan : Not respecting imperial edict about war & peace ups the cost of declaring wars.
+	# L5R Added
+	# Not respecting imperial edict about war & peace ups the cost of declaring wars.
 	# Protection of weaker & minor clans
 	else_if = {
 		limit = {
 			war_declarer_not_respecting_imperial_peace = yes
 		}
 		multiply = {
-			value = 5 
+			value = 3 
 			desc = "CB_ATTACK_IMPERIAL_EDICT_WEAKER_CLAN"
 		}
 	}
 
-	# Rokugan : Not respecting imperial edict about war & peace ups the cost of declaring wars.
+	# L5R Added
+	# Not respecting imperial edict about war & peace ups the cost of declaring wars.
 	# Preventing Great Clan Wars
 	else_if = {
 		limit = {
 			war_declarer_declaring_great_clan_war = yes
 		}
 		multiply = {
-			value = 5 
+			value = 2
 			desc = "CB_ATTACK_IMPERIAL_EDICT_GREAT_CLAN_WAR"
 		}
 	}
