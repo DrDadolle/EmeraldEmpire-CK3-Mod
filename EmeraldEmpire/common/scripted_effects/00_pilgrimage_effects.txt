@@ -133,18 +133,19 @@ pilgrimage_additional_reward_effect = {
 		}
 	}
 	# Struggle and Submission
-	if = {
-		limit = { 
-			faith = { has_doctrine = tenet_struggle_submission } 
-		}
-		custom_description_no_bullet = {
-			text = pilgrimage_because_i_have_tenet_struggle_submission
-		}
-		add_character_modifier = {
-			modifier = pilgrimage_struggle_submission_modifier
-			years = 10
-		}
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = { 
+	# 		faith = { has_doctrine = tenet_struggle_submission } 
+	# 	}
+	# 	custom_description_no_bullet = {
+	# 		text = pilgrimage_because_i_have_tenet_struggle_submission
+	# 	}
+	# 	add_character_modifier = {
+	# 		modifier = pilgrimage_struggle_submission_modifier
+	# 		years = 10
+	# 	}
+	# }
 	# Ancestor Worship
 	if = {
 		limit = { 

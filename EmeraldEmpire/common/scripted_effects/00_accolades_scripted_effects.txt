@@ -2202,92 +2202,93 @@ save_general_accolade_successor_culture_effect = {
 }
 
 #this one's just for the varangians
-save_varangian_successor_culture_effect = {
-	if = {
-		limit = {
-			current_date < 1400
-			root = {
-				has_title = title:e_byzantium
-			}
-		}
-		random_culture_global = {
-			limit = {
-				OR = {
-					has_cultural_parameter = unlock_maa_huscarls
-					has_cultural_parameter = unlock_maa_varangian_veterans
-				}
-				culture_number_of_counties > 0
-				any_culture_duchy = {
-					NOT = {
-						this = title:d_iceland
-					}
-				}
-				NOT = {
-					this = culture:estonian
-				}
-				NAND = {
-					this = culture:anglo_saxon
-					current_date < 1067
-				}
-			}
-			save_scope_as = varangian_culture
-		}
-	}
-}
+#L5R Disabled
+# save_varangian_successor_culture_effect = {
+# 	if = {
+# 		limit = {
+# 			current_date < 1400
+# 			root = {
+# 				has_title = title:e_byzantium
+# 			}
+# 		}
+# 		random_culture_global = {
+# 			limit = {
+# 				OR = {
+# 					has_cultural_parameter = unlock_maa_huscarls
+# 					has_cultural_parameter = unlock_maa_varangian_veterans
+# 				}
+# 				culture_number_of_counties > 0
+# 				any_culture_duchy = {
+# 					NOT = {
+# 						this = title:d_iceland
+# 					}
+# 				}
+# 				NOT = {
+# 					this = culture:estonian
+# 				}
+# 				NAND = {
+# 					this = culture:anglo_saxon
+# 					current_date < 1067
+# 				}
+# 			}
+# 			save_scope_as = varangian_culture
+# 		}
+# 	}
+# }
 
 #this one's just for the varangians
-save_turkic_successor_culture_effect = {
-	if = {
-		limit = {
-			root = {
-				faith.religion = religion:islam_religion
-				capital_county.title_province ?= {
-   					OR = {
-						geographical_region = world_middle_east
-						geographical_region = world_africa_north_east
-						geographical_region = world_asia_minor
-						geographical_region = world_europe_south_east
-						geographical_region = world_steppe
-					}
-				}
-				culture = {
-					NOT = {
-						has_cultural_parameter = unlock_maa_horse_archers
-					}
-				}
-				highest_held_title_tier >= tier_kingdom
-			}
-		}
-		random_culture_global = {
-			limit = {
-				has_cultural_parameter = unlock_maa_horse_archers
-				#L5R Disabled
-				# has_cultural_pillar = heritage_turkic
-				culture_number_of_counties > 0
-				any_culture_county = {
-					holder = {
-						in_diplomatic_range = root
-					}
-				}
-			}
-			weight = {
-				modifier = {
-					add = 100
-					any_culture_county = {
-						empire = root.capital_county.empire 
-					}
-				}
-				modifier = {
-					add = 50
-					any_culture_county = {
-						kingdom = root.capital_county.kingdom
-					}
-				}
-			}
-			save_scope_as = turkic_culture
-		}
-	}
-}
+#L5R Disabled
+# save_turkic_successor_culture_effect = {
+# 	if = {
+# 		limit = {
+# 			root = {
+# 				faith.religion = religion:islam_religion
+# 				capital_county.title_province ?= {
+#    					OR = {
+# 						geographical_region = world_middle_east
+# 						geographical_region = world_africa_north_east
+# 						geographical_region = world_asia_minor
+# 						geographical_region = world_europe_south_east
+# 						geographical_region = world_steppe
+# 					}
+# 				}
+# 				culture = {
+# 					NOT = {
+# 						has_cultural_parameter = unlock_maa_horse_archers
+# 					}
+# 				}
+# 				highest_held_title_tier >= tier_kingdom
+# 			}
+# 		}
+# 		random_culture_global = {
+# 			limit = {
+# 				has_cultural_parameter = unlock_maa_horse_archers
+# 				has_cultural_pillar = heritage_turkic
+# 				culture_number_of_counties > 0
+# 				any_culture_county = {
+# 					holder = {
+# 						in_diplomatic_range = root
+# 					}
+# 				}
+# 			}
+# 			weight = {
+# 				modifier = {
+# 					add = 100
+# 					any_culture_county = {
+# 						empire = root.capital_county.empire 
+# 					}
+# 				}
+# 				modifier = {
+# 					add = 50
+# 					any_culture_county = {
+# 						kingdom = root.capital_county.kingdom
+# 					}
+# 				}
+# 			}
+# 			save_scope_as = turkic_culture
+# 		}
+# 	}
+# }
 
 #this saves appropriate cultures for specific accolade types, just need to check for the type along with its relevant cultural triggers
 save_type_specific_successor_culture_effect = {
@@ -2701,7 +2702,8 @@ save_type_specific_successor_culture_effect = {
 					}
 					OR = {
 						has_innovation = innovation_advanced_bowmaking
-						has_innovation = innovation_repeating_crossbow
+						#L5R Disabled
+						# has_innovation = innovation_repeating_crossbow
 					}
 					#L5R Disabled
 					# OR = {
@@ -3609,17 +3611,18 @@ accolade_character_creation_effect = {
 							OR = {
 								has_innovation = innovation_quilted_armor
 								has_cultural_tradition = tradition_fp1_coastal_warriors
-								has_cultural_tradition = tradition_hird
-								has_cultural_tradition = tradition_futuwaa
-								has_cultural_tradition = tradition_druzhina
-								has_cultural_tradition = tradition_khadga_puja
-								has_cultural_tradition = tradition_garuda_warriors
-								has_cultural_tradition = tradition_himalayan_settlers
-								has_cultural_tradition = tradition_mubarizuns
-								has_cultural_tradition = tradition_burman_royal_army
-								has_cultural_tradition = tradition_mountaineer_ruralism
-								has_innovation = innovation_sarawit
-								has_innovation = innovation_legionnaires
+								#L5R Disabled
+								# has_cultural_tradition = tradition_hird
+								# has_cultural_tradition = tradition_futuwaa
+								# has_cultural_tradition = tradition_druzhina
+								# has_cultural_tradition = tradition_khadga_puja
+								# has_cultural_tradition = tradition_garuda_warriors
+								# has_cultural_tradition = tradition_himalayan_settlers
+								# has_cultural_tradition = tradition_mubarizuns
+								# has_cultural_tradition = tradition_burman_royal_army
+								# has_cultural_tradition = tradition_mountaineer_ruralism
+								# has_innovation = innovation_sarawit
+								# has_innovation = innovation_legionnaires
 							}
 						}
 					}
@@ -3631,17 +3634,18 @@ accolade_character_creation_effect = {
 							OR = {
 								has_innovation = innovation_quilted_armor
 								has_cultural_tradition = tradition_fp1_coastal_warriors
-								has_cultural_tradition = tradition_hird
-								has_cultural_tradition = tradition_futuwaa
-								has_cultural_tradition = tradition_druzhina
-								has_cultural_tradition = tradition_khadga_puja
-								has_cultural_tradition = tradition_garuda_warriors
-								has_cultural_tradition = tradition_himalayan_settlers
-								has_cultural_tradition = tradition_mubarizuns
-								has_cultural_tradition = tradition_burman_royal_army
-								has_cultural_tradition = tradition_mountaineer_ruralism
-								has_innovation = innovation_sarawit
-								has_innovation = innovation_legionnaires
+								#L5R Disabled
+								# has_cultural_tradition = tradition_hird
+								# has_cultural_tradition = tradition_futuwaa
+								# has_cultural_tradition = tradition_druzhina
+								# has_cultural_tradition = tradition_khadga_puja
+								# has_cultural_tradition = tradition_garuda_warriors
+								# has_cultural_tradition = tradition_himalayan_settlers
+								# has_cultural_tradition = tradition_mubarizuns
+								# has_cultural_tradition = tradition_burman_royal_army
+								# has_cultural_tradition = tradition_mountaineer_ruralism
+								# has_innovation = innovation_sarawit
+								# has_innovation = innovation_legionnaires
 							}
 						}
 					}
@@ -3653,17 +3657,18 @@ accolade_character_creation_effect = {
 							OR = {
 								has_innovation = innovation_quilted_armor
 								has_cultural_tradition = tradition_fp1_coastal_warriors
-								has_cultural_tradition = tradition_hird
-								has_cultural_tradition = tradition_futuwaa
-								has_cultural_tradition = tradition_druzhina
-								has_cultural_tradition = tradition_khadga_puja
-								has_cultural_tradition = tradition_garuda_warriors
-								has_cultural_tradition = tradition_himalayan_settlers
-								has_cultural_tradition = tradition_mubarizuns
-								has_cultural_tradition = tradition_burman_royal_army
-								has_cultural_tradition = tradition_mountaineer_ruralism
-								has_innovation = innovation_sarawit
-								has_innovation = innovation_legionnaires
+								#L5R Disabled
+								# has_cultural_tradition = tradition_hird
+								# has_cultural_tradition = tradition_futuwaa
+								# has_cultural_tradition = tradition_druzhina
+								# has_cultural_tradition = tradition_khadga_puja
+								# has_cultural_tradition = tradition_garuda_warriors
+								# has_cultural_tradition = tradition_himalayan_settlers
+								# has_cultural_tradition = tradition_mubarizuns
+								# has_cultural_tradition = tradition_burman_royal_army
+								# has_cultural_tradition = tradition_mountaineer_ruralism
+								# has_innovation = innovation_sarawit
+								# has_innovation = innovation_legionnaires
 							}
 						}
 					}
@@ -3675,18 +3680,19 @@ accolade_character_creation_effect = {
 							OR = {
 								has_innovation = innovation_quilted_armor
 								has_cultural_tradition = tradition_fp1_coastal_warriors
-								has_cultural_tradition = tradition_hird
-								has_cultural_tradition = tradition_futuwaa
-								has_cultural_tradition = tradition_druzhina
-								has_cultural_tradition = tradition_khadga_puja
-								has_cultural_tradition = tradition_garuda_warriors
-								has_cultural_tradition = tradition_himalayan_settlers
-								has_cultural_tradition = tradition_mubarizuns
-								has_cultural_tradition = tradition_burman_royal_army
-								has_cultural_tradition = tradition_mountaineer_ruralism
-								has_innovation = innovation_sarawit
-								has_innovation = innovation_legionnaires
-							}
+								#L5R Disabled
+								# has_cultural_tradition = tradition_hird
+							# 	has_cultural_tradition = tradition_futuwaa
+							# 	has_cultural_tradition = tradition_druzhina
+							# 	has_cultural_tradition = tradition_khadga_puja
+							# 	has_cultural_tradition = tradition_garuda_warriors
+							# 	has_cultural_tradition = tradition_himalayan_settlers
+							# 	has_cultural_tradition = tradition_mubarizuns
+							# 	has_cultural_tradition = tradition_burman_royal_army
+							# 	has_cultural_tradition = tradition_mountaineer_ruralism
+							# 	has_innovation = innovation_sarawit
+							# 	has_innovation = innovation_legionnaires
+							# }
 						}
 					}
 				}
@@ -3721,7 +3727,8 @@ accolade_character_creation_effect = {
 								has_cultural_tradition = tradition_ep3_audacious_cadets
 								has_cultural_tradition = tradition_roman_legacy
 								has_cultural_tradition = tradition_ep3_imperial_tagmata
-								has_innovation = innovation_valets
+								#L5R Disabled
+								# has_innovation = innovation_valets
 							}
 						}
 					}
@@ -3736,7 +3743,8 @@ accolade_character_creation_effect = {
 								has_cultural_tradition = tradition_ep3_audacious_cadets
 								has_cultural_tradition = tradition_roman_legacy
 								has_cultural_tradition = tradition_ep3_imperial_tagmata
-								has_innovation = innovation_valets
+								#L5R Disabled
+								# has_innovation = innovation_valets
 							}
 						}
 					}

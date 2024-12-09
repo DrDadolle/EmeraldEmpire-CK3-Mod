@@ -76,35 +76,37 @@ vizier_default_task_martial_scale = {
 		}
 		multiply = 1.25
 	}
-	if = {
-		limit = {
-			scope:councillor = {
-				AND = {
-					exists = dynasty
-					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-				}
-			}
-		}
-		multiply = 1.25
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		scope:councillor = {
+	# 			AND = {
+	# 				exists = dynasty
+	# 				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 			}
+	# 		}
+	# 	}
+	# 	multiply = 1.25
+	# }
 	divide = 5
-	if = {
-		limit = {
-			OR = {
-				scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
-				scope:councillor = {
-					AND = {
-						exists = dynasty
-						dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-					}
-				}
-			}
-		}
-		ceiling = yes
-	}
-	else = {
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
+	# 			scope:councillor = {
+	# 				AND = {
+	# 					exists = dynasty
+	# 					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	ceiling = yes
+	# }
+	# else = {
 		floor = yes
-	}
+	# }
 	min = 1
 }
 
@@ -117,35 +119,37 @@ vizier_default_task_intrigue_scale = {
 		multiply = 1.25
 	}
 
-	if = {
-		limit = {
-			scope:councillor = {
-				AND = {
-					exists = dynasty
-					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-				}
-			}
-		}
-		multiply = 1.25
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		scope:councillor = {
+	# 			AND = {
+	# 				exists = dynasty
+	# 				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 			}
+	# 		}
+	# 	}
+	# 	multiply = 1.25
+	# }
 	divide = 5
-	if = {
-		limit = {
-			OR = {
-				scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
-				scope:councillor = {
-					AND = {
-						exists = dynasty
-						dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-					}
-				}
-			}
-		}
-		ceiling = yes
-	}
-	else = {
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
+	# 			scope:councillor = {
+	# 				AND = {
+	# 					exists = dynasty
+	# 					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	ceiling = yes
+	# }
+	# else = {
 		floor = yes
-	}
+	# }
 	min = 1
 }
 
@@ -157,35 +161,37 @@ vizier_default_task_learning_scale = {
 		}
 		multiply = 1.25
 	}
-	if = {
-		limit = {
-			scope:councillor = {
-				AND = {
-					exists = dynasty
-					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-				}
-			}
-		}
-		multiply = 1.25
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		scope:councillor = {
+	# 			AND = {
+	# 				exists = dynasty
+	# 				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 			}
+	# 		}
+	# 	}
+	# 	multiply = 1.25
+	# }
 	divide = 5
-	if = {
-		limit = {
-			OR = {
-				scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
-				scope:councillor = {
-					AND = {
-						exists = dynasty
-						dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-					}
-				}
-			}
-		}
-		ceiling = yes
-	}
-	else = {
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
+	# 			scope:councillor = {
+	# 				AND = {
+	# 					exists = dynasty
+	# 					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	ceiling = yes
+	# }
+	# else = {
 		floor = yes
-	}
+	# }
 	min = 1
 }
 
@@ -197,35 +203,36 @@ vizier_default_task_stewardship_scale = {
 		}
 		multiply = 1.25
 	}
-	if = {
-		limit = {
-			scope:councillor = {
-				AND = {
-					exists = dynasty
-					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-				}
-			}
-		}
-		multiply = 1.25
-	}
+	# if = {
+	# 	limit = {
+	# 		scope:councillor = {
+	# 			AND = {
+	# 				exists = dynasty
+	# 				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 			}
+	# 		}
+	# 	}
+	# 	multiply = 1.25
+	# }
 	divide = 5
-	if = {
-		limit = {
-			OR = {
-				scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
-				scope:councillor = {
-					AND = {
-						exists = dynasty
-						dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-					}
-				}
-			}
-		}
-		ceiling = yes
-	}
-	else = {
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
+	# 			scope:councillor = {
+	# 				AND = {
+	# 					exists = dynasty
+	# 					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	ceiling = yes
+	# }
+	# else = {
 		floor = yes
-	}
+	# }
 	min = 1
 }
 
@@ -237,35 +244,37 @@ vizier_task_court_politics_scale = {
 		}
 		multiply = 1.25
 	}
-	if = {
-		limit = {
-			scope:councillor = {
-				AND = {
-					exists = dynasty
-					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-				}
-			}
-		}
-		multiply = 1.25
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		scope:councillor = {
+	# 			AND = {
+	# 				exists = dynasty
+	# 				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 			}
+	# 		}
+	# 	}
+	# 	multiply = 1.25
+	# }
 	divide = 2
-	if = {
-		limit = {
-			OR = {
-				scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
-				scope:councillor = {
-					AND = {
-						exists = dynasty
-						dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-					}
-				}
-			}
-		}
-		ceiling = yes
-	}
-	else = {
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
+	# 			scope:councillor = {
+	# 				AND = {
+	# 					exists = dynasty
+	# 					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	ceiling = yes
+	# }
+	# else = {
 		floor = yes
-	}
+	# }
 	min = 1
 }
 
@@ -277,35 +286,37 @@ vizier_task_chivalry_scale = {
 		}
 		multiply = 1.25
 	}
-	if = {
-		limit = {
-			scope:councillor = {
-				AND = {
-					exists = dynasty
-					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-				}
-			}
-		}
-		multiply = 1.25
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		scope:councillor = {
+	# 			AND = {
+	# 				exists = dynasty
+	# 				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 			}
+	# 		}
+	# 	}
+	# 	multiply = 1.25
+	# }
 	divide = 2
-	if = {
-		limit = {
-			OR = {
-				scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
-				scope:councillor = {
-					AND = {
-						exists = dynasty
-						dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-					}
-				}
-			}
-		}
-		ceiling = yes
-	}
-	else = {
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
+	# 			scope:councillor = {
+	# 				AND = {
+	# 					exists = dynasty
+	# 					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	ceiling = yes
+	# }
+	# else = {
 		floor = yes
-	}
+	# }
 	min = 1
 }
 
@@ -317,35 +328,36 @@ vizier_task_court_intrigue_scale = {
 		}
 		multiply = 1.25
 	}
-	if = {
-		limit = {
-			scope:councillor = {
-				AND = {
-					exists = dynasty
-					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-				}
-			}
-		}
-		multiply = 1.25
-	}
-	divide = 2
-	if = {
-		limit = {
-			OR = {
-				scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
-				scope:councillor = {
-					AND = {
-						exists = dynasty
-						dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-					}
-				}
-			}
-		}
-		ceiling = yes
-	}
-	else = {
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		scope:councillor = {
+	# 			AND = {
+	# 				exists = dynasty
+	# 				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 			}
+	# 		}
+	# 	}
+	# 	multiply = 1.25
+	# }
+	# divide = 2
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
+	# 			scope:councillor = {
+	# 				AND = {
+	# 					exists = dynasty
+	# 					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	ceiling = yes
+	# }
+	# else = {
 		floor = yes
-	}
+	# }
 	min = 1
 }
 
@@ -358,35 +370,37 @@ vizier_task_manage_domain_scale = {
 		multiply = 1.25
 	}
 
-	if = {
-		limit = {
-			scope:councillor = {
-				AND = {
-					exists = dynasty
-					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-				}
-			}
-		}
-		multiply = 1.25
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		scope:councillor = {
+	# 			AND = {
+	# 				exists = dynasty
+	# 				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 			}
+	# 		}
+	# 	}
+	# 	multiply = 1.25
+	# }
 	divide = 2
-	if = {
-		limit = {
-			OR = {
-				scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
-				scope:councillor = {
-					AND = {
-						exists = dynasty
-						dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-					}
-				}
-			}
-		}
-		ceiling = yes
-	}
-	else = {
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
+	# 			scope:councillor = {
+	# 				AND = {
+	# 					exists = dynasty
+	# 					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	ceiling = yes
+	# }
+	# else = {
 		floor = yes
-	}
+	# }
 	min = 1
 }
 
@@ -398,36 +412,38 @@ vizier_task_patronage_scale = {
 		}
 		multiply = 1.25
 	}
-	if = {
-		limit = {
-			scope:councillor = {
-				AND = {
-					exists = dynasty
-					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-				}
-			}
-		}
-		multiply = 1.25
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		scope:councillor = {
+	# 			AND = {
+	# 				exists = dynasty
+	# 				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 			}
+	# 		}
+	# 	}
+	# 	multiply = 1.25
+	# }
 	divide = 2
-	if = {
-		limit = {
-			OR = {
-				scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:councillor_liege = { has_perk = loyalty_and_respect_perk }
 
-				scope:councillor = {
-					AND = {
-						exists = dynasty
-						dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
-					}
-				}
-			}
-		}
-		ceiling = yes
-	}
-	else = {
+	# 			scope:councillor = {
+	# 				AND = {
+	# 					exists = dynasty
+	# 					dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_3 }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	ceiling = yes
+	# }
+	# else = {
 		floor = yes
-	}
+	# }
 	min = 1
 }
 
