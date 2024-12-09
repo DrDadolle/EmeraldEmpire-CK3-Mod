@@ -1455,12 +1455,13 @@ destroy_random_building_effect = {
 			21 = { # hospices : Normal
 				destroy_or_downgrade_building_effect = { BUILDING = hospices }
 			}
-			22 = { # qanats : Normal
-				destroy_or_downgrade_building_effect = { BUILDING = qanats }
-			}
-			23 = { # murex_farm : Normal
-				destroy_or_downgrade_building_effect = { BUILDING = murex_farm }
-			}
+			#L5R Disabled
+			# 22 = { # qanats : Normal
+			# 	destroy_or_downgrade_building_effect = { BUILDING = qanats }
+			# }
+			# 23 = { # murex_farm : Normal
+			# 	destroy_or_downgrade_building_effect = { BUILDING = murex_farm }
+			# }
 			24 = { # wind_furnace : Normal
 				destroy_or_downgrade_building_effect = { BUILDING = wind_furnace }
 			}
@@ -2177,25 +2178,26 @@ add_random_economic_building_effect = {
 				}
 				add_building = quarries_01
 			}
-			10 = { # Qanats
-				trigger = {
-					NOT = { has_building_or_higher = qanats_01 }
-					building_qanats_requirement_terrain = yes
-					building_requirement_castle_city_church = { LEVEL = 01 }
-					culture = {
-						has_cultural_parameter = unlocks_qanat_building
-					}
-				}
-				add_building = qanats_01
-			}
-			10 = { # Murex Farms
-				trigger = {
-					NOT = { has_building_or_higher = murex_farm_01 }
-					building_murex_farm_requirement_terrain = yes
-					building_requirement_castle_city_church = { LEVEL = 01 }
-				}
-				add_building = murex_farm_01
-			}
+			#L5R Disabled
+			# 10 = { # Qanats
+			# 	trigger = {
+			# 		NOT = { has_building_or_higher = qanats_01 }
+			# 		building_qanats_requirement_terrain = yes
+			# 		building_requirement_castle_city_church = { LEVEL = 01 }
+			# 		culture = {
+			# 			has_cultural_parameter = unlocks_qanat_building
+			# 		}
+			# 	}
+			# 	add_building = qanats_01
+			# }
+			# 10 = { # Murex Farms
+			# 	trigger = {
+			# 		NOT = { has_building_or_higher = murex_farm_01 }
+			# 		building_murex_farm_requirement_terrain = yes
+			# 		building_requirement_castle_city_church = { LEVEL = 01 }
+			# 	}
+			# 	add_building = murex_farm_01
+			# }
 			10 = { # Guild Halls - City Specific
 				trigger = {
 					NOT = { has_building_or_higher = guild_halls_01 }

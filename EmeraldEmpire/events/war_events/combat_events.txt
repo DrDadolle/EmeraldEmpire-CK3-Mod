@@ -2246,7 +2246,8 @@ combat_event.3000 = {
 							prowess >= 20
 							has_trait = brave
 							has_trait = lifestyle_blademaster
-							has_trait = varangian
+							#L5R Disabled
+							# has_trait = varangian
 							has_trait = berserker
 						}
 					}
