@@ -132,6 +132,18 @@
  l5r_pray_spirit.0003.no_change.desc:0 "no_change desc"
  l5r_pray_spirit.0003.bad:0 "Have I offended the spirits in some way?"
  l5r_pray_spirit.0003.bad.desc:0 "bad desc"
+
+
+ ############################
+ ###### Redistribute non imperial lands
+ ############################
+ l5r_title_events.0001.t:0 "Redistribute lands"
+ l5r_title_events.0100.desc.emperor:0 "As the [ROOT.Char.GetTitleAsNameNoTooltip|U], I cannot keep titles for myself. I must continue the tradition set by the Kamis and give them away."
+ l5r_title_events.0100.desc.imperial_samurai:0 "As a member of the honorable [ROOT.Char.GetHouse.GetBaseNameNoTooltip] imperial house, I cannot keep lands that belongs rightfully to major or minor clan samurais. As much as It pains me, I must give it away."
+ l5r_title_events.0001.desc.end:0 "\n\nTo whom should I give the [gained_title.GetName] ?"
+ l5r_title_events.0001.a:0 "[valid_dynasty_option.GetFirstNameNoTooltip] is a traditional choice."
+ l5r_title_events.0001.b:0 "[valid_heritage_option.GetFirstNameNoTooltip] seems adequate for this title."
+ l5r_title_events.0001.c:0 "Choosing [valid_language_option.GetFirstNameNoTooltip] seems fun."
  ############################
  ###### Seppuku Character interaction
  ############################

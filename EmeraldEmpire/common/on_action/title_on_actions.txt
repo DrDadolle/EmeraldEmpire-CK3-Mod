@@ -1087,6 +1087,79 @@ on_title_gain = {
 		# BP3 - Inspector perks cleanup effect
 		landless_inspector_cleanup_modifier = yes
 		
+		#L5R Added
+		# As an emperor, I should not hoard non-imperial titles !
+		# root = the new holder
+		# scope:title = the title that changes hands
+		# scope:previous_holder = previous holder. Might be dead
+		if = {
+			limit = {
+				AND = {
+					OR = {
+						has_title = title:e_rokugan
+						AND = {
+							is_imperial_family = yes
+							is_landed = yes
+						}
+					}
+					NAND = {
+						scope:title = title:k_imperial_families
+						scope:title = title:d_hantei
+						scope:title = title:c_otosan_uchi_province
+						scope:title = title:d_miya
+						scope:title = title:c_miya_province
+						scope:title = title:d_otomo
+						scope:title = title:d_seppun
+						scope:title = title:c_seppun_province
+						scope:title = title:c_seppun_province_2
+						scope:title = title:c_seppun_province_3
+						scope:title = title:k_emerald_champ
+						scope:title = title:d_emerald
+						scope:title = title:c_emerald_castle_province
+						scope:title = title:c_rich_frog
+					}
+				}
+			}
+			scope:previous_holder = {
+				save_scope_as = previous_holder
+			}
+			scope:title = {
+				save_scope_as = gained_title
+			}
+			# Big title first
+			if = {
+				limit = {
+					scope:title = { tier = tier_kingdom }
+				}
+				#We should give the title to appropriate dynasty, else same heritage, else same language
+				trigger_event = {
+					id = l5r_title_events.0001
+				}
+			}
+			else_if ={
+				limit = {
+					scope:title = { tier = tier_duchy }
+				}
+				#We should give the title to appropriate dynasty, else same heritage, else same language
+				trigger_event = {
+					id = l5r_title_events.0001
+					days = 1
+				}
+			}
+			else_if ={
+				limit = {
+					scope:title = { tier = tier_county }
+				}
+				#We should give the title to appropriate dynasty, else same heritage, else same language
+				trigger_event = {
+					id = l5r_title_events.0001
+					days = 2
+				}
+			}
+
+
+		}
+
 		### MEMORIES - SHOULD STAY AT BOTTOM ###
 		# Ascended to the throne
 		if = {

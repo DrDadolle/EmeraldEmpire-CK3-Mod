@@ -1,0 +1,230 @@
+﻿namespace = l5r_title_events
+
+### L5R Title Events ###
+#			l5r_title_events.0001 		Imperial Samourai shall redistribuate non imperial titiles
+
+#########################
+# Title redistribution  #
+# by  Leskinen          #
+# 0001-0010				#
+#########################
+scripted_effect redistribute_from_the_top_title_owned_valid_dynasty_option = {
+	create_title_and_vassal_change = {
+		type = granted
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+
+	every_in_de_jure_hierarchy = {
+			continue = {
+				tier >= tier_county
+			}
+			limit = {
+				AND = {
+					exists = holder
+					holder = root
+				}
+			}
+			change_title_holder = {
+				holder = scope:valid_dynasty_option
+				change = scope:change
+			}
+		}
+	resolve_title_and_vassal_change = scope:change
+}
+
+scripted_effect redistribute_from_the_top_title_owned_valid_heritage_option = {
+
+	create_title_and_vassal_change = {
+		type = granted
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	every_in_de_jure_hierarchy = {
+			continue = {
+				tier >= tier_county
+			}
+			limit = {
+				AND = {
+					exists = holder
+					holder = root
+				}
+			}
+			change_title_holder = {
+				holder = scope:valid_heritage_option
+				change = scope:change
+			}
+		}
+	resolve_title_and_vassal_change = scope:change
+}
+
+scripted_effect redistribute_from_the_top_title_owned_valid_language_option = {
+
+	create_title_and_vassal_change = {
+		type = granted
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+
+	every_in_de_jure_hierarchy = {
+			continue = {
+				tier >= tier_county
+			}
+			limit = {
+				AND = {
+					exists = holder
+					holder = root
+				}
+			}
+			change_title_holder = {
+				holder = scope:valid_language_option
+				change = scope:change
+			}		
+		}
+	resolve_title_and_vassal_change = scope:change
+}
+
+l5r_title_events.0001 = { #redistribute non-imperial titles to other families
+	content_source = l5r_dlc
+    type = character_event
+	title = l5r_title_events.0001.t
+	desc = {	
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_title = title:e_rokugan
+				}
+				desc = l5r_title_events.0100.desc.emperor
+			}
+			desc = l5r_title_events.0100.desc.imperial_samurai
+		}
+		desc = l5r_title_events.0001.desc.end
+	}
+	
+	theme = court
+
+    left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	lower_left_portrait = scope:valid_heritage_option
+	right_portrait = {
+		character = scope:valid_dynasty_option
+		animation = personality_rational
+	}
+	lower_right_portrait = scope:valid_language_option
+
+    trigger = {
+		# Check we still have the title
+		any_held_title = {
+			this = scope:gained_title
+		}
+	}
+
+
+	# Get proposition of perso
+	immediate = {
+		hidden_effect = {
+			# ruler of the same Dynasty
+			random_ruler = {
+				limit = {
+					is_ai = yes
+					exists = dynasty
+					dynasty = scope:previous_holder.dynasty
+					NAND = {
+						this = scope:previous_holder
+						this = scope:valid_language_option
+						this = scope:valid_heritage_option
+					}
+				}
+				save_scope_as = valid_dynasty_option
+			}
+
+			# ruler of the same heritage
+			random_ruler = {
+				limit = {
+					is_ai = yes
+					exists = dynasty
+					culture = {
+						has_same_culture_heritage  = scope:previous_holder.culture
+					}
+					NAND = {
+						this = scope:previous_holder
+						this = scope:valid_dynasty_option
+						this = scope:valid_language_option
+					}
+				}
+				save_scope_as = valid_heritage_option
+			}
+			# Random same language
+			random_ruler = {
+				limit = {
+					is_ai = yes
+					exists = dynasty
+					culture = {
+						has_same_culture_language  = scope:previous_holder.culture
+					}
+					NAND = {
+						this = scope:previous_holder
+						this = scope:valid_dynasty_option
+						this = scope:valid_heritage_option
+					}
+				}
+					
+				save_scope_as = valid_language_option
+			}
+		}
+	}
+    
+    # Same Dynastic Character
+    option = {
+		trigger = {
+			exists = scope:valid_dynasty_option
+		}
+		name = l5r_title_events.0001.a
+
+		#Grant Title
+		scope:gained_title = {
+			redistribute_from_the_top_title_owned_valid_dynasty_option = yes
+		}
+
+		ai_chance = {
+			base = 90
+		}
+	}
+
+	# Same Heritage Character
+	option = {
+		trigger = {
+			exists = scope:valid_heritage_option
+		}
+		name = l5r_title_events.0001.b
+
+		#Grant Title
+		scope:gained_title = {
+			redistribute_from_the_top_title_owned_valid_heritage_option = yes
+		}
+
+		ai_chance = {
+			base = 9
+		}
+	}
+
+	# Same Language Character
+	option = {
+		trigger = {
+			exists = scope:valid_language_option
+		}
+		name = l5r_title_events.0001.c
+
+		#Grant Title
+		scope:gained_title = {
+			redistribute_from_the_top_title_owned_valid_language_option = yes
+		}
+
+
+		ai_chance = {
+			base = 1
+		}
+	}
+}

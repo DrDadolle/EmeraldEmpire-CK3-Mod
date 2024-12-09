@@ -31,7 +31,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- check scheme.info of vanilla game
 - remove bunch of errors
 - in 00_traits.txt is education_martial_prowess_1 vanilla ??? 
-- TODO Bannir quelqu'un pour tester si aventurier marche
+- TODO Bannir quelqu'un pour tester si aventurier marche. MARCHE PAS
 - Add thumbnail image for the mod !
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA
@@ -44,7 +44,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ## short term goals 
 - % de chance shindoshi/ishiken TROP BAS ! TO TEST
 - Rokugan too peaceful , reduce penality for war ! TO TEST
-- Emperor MUST redistribute Kingdom/duchy/county titles belongings to clan 
 - add decision de recruter un shugenja  (si pas de shug)
 - Hantei with duchy is called "Empress"
 - Shindoshi recrutment decisions !
@@ -80,6 +79,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - update loc book_topic_learning_mufaddaliyat
 
 ## Fixes to do
+- The l5r_title_events.0001 events breaks vassalage (but AI fixes it quickly anyway, so that's ok). Maybe enhance the script to give vassals as well ?
 - Spammed with rokugan_char_interaction.0231 event boxes...
 	- "an honorable death" event procs for outsite of player stuff
 - Change color of some textured emblmes (very low priority) : Mantis, Komori
