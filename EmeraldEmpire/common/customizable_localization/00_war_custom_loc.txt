@@ -325,7 +325,8 @@ WarCasusBelliShort = {
 			OR = {
 				using_cb = claim_cb
 				using_cb = claimant_faction_war
-				# using_cb = norman_conquest_cb #L5R Disabled
+				#L5R Disabled
+				# using_cb = norman_conquest_cb
 				# using_cb = norwegian_invasion_cb
 			}
 		}
@@ -337,8 +338,9 @@ WarCasusBelliShort = {
 			OR = {
 				using_cb = county_conquest_cb
 				using_cb = duchy_conquest_cb
-				using_cb = county_struggle_cb
-				# using_cb = fp2_mediterranean_conquest_cb #L5R Disabled
+				#L5R Disabled
+				# using_cb = county_struggle_cb
+				# using_cb = fp2_mediterranean_conquest_cb
 				# using_cb = hungarian_migration_cb
 				# using_cb = sons_of_lothbrok_invasion_cb
 			}
@@ -499,15 +501,16 @@ WarCasusBelliShort = {
 		localization_key = war_memory_cb_vassalization
 	}
 
-	text = {
-		trigger = {
-			OR = {
-				using_cb = fp1_varangian_adventurer_conquest
-				using_cb = fp1_scandi_adventurer_conquest
-			}
-		}
-		localization_key = war_memory_cb_varangian
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			using_cb = fp1_varangian_adventurer_conquest
+	# 			using_cb = fp1_scandi_adventurer_conquest
+	# 		}
+	# 	}
+	# 	localization_key = war_memory_cb_varangian
+	# }
 
 	text = {
 		trigger = { 

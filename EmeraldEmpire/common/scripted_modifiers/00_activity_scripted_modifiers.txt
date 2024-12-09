@@ -2664,11 +2664,12 @@ activity_guest_chariot_race_ai_accept_modifier = {
 		add = 5
 		desc = ACTIVITY_GUEST_EUNUCH_REASON
 	}
-	modifier = {
-		has_trait = born_in_the_purple
-		add = 10
-		desc = ACTIVITY_GUEST_BORN_IN_THE_PURPLE_REASON
-	}
+	#L5R Disabled
+	# modifier = {
+	# 	has_trait = born_in_the_purple
+	# 	add = 10
+	# 	desc = ACTIVITY_GUEST_BORN_IN_THE_PURPLE_REASON
+	# }
 	#################
 	# SPECIAL GUEST #
 	#################
