@@ -797,41 +797,42 @@ on_war_won_attacker = { # As in, won BY attacker. Only one of the two on_actions
 		scope:attacker = { save_scope_as = winner }
 		scope:defender = { save_scope_as = loser }
 
+		#L5R Disabled
 		# Give out a legend seed for beating ya boi G Khan
-		if = {
-			limit = {
-				scope:loser = {
-					OR = {
-						has_nickname = nick_genghis_khan
-						has_trait = greatest_of_khans
-					}
-				}
-				scope:winner = {
-					NOT = {
-						has_character_flag = khan_beater
-					}
-				}
-			}
-			scope:winner = {
-				if = {
-					limit = { has_dlc_feature = legends }
-					add_character_flag = khan_beater
-					send_interface_toast = {
-						title = heroic_legend_seed_drop.t
-						create_legend_seed = {
-							type = heroic
-							quality = famed
-							chronicle = legendary_battle
-							properties = {
-								winner = scope:winner
-								loser = scope:loser
-								location = scope:winner.location
-							}
-						}
-					}
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:loser = {
+		# 			OR = {
+		# 				has_nickname = nick_genghis_khan
+		# 				has_trait = greatest_of_khans
+		# 			}
+		# 		}
+		# 		scope:winner = {
+		# 			NOT = {
+		# 				has_character_flag = khan_beater
+		# 			}
+		# 		}
+		# 	}
+		# 	scope:winner = {
+		# 		if = {
+		# 			limit = { has_dlc_feature = legends }
+		# 			add_character_flag = khan_beater
+		# 			send_interface_toast = {
+		# 				title = heroic_legend_seed_drop.t
+		# 				create_legend_seed = {
+		# 					type = heroic
+		# 					quality = famed
+		# 					chronicle = legendary_battle
+		# 					properties = {
+		# 						winner = scope:winner
+		# 						loser = scope:loser
+		# 						location = scope:winner.location
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		
 		# Give out Legend Seed if GHW
 		if = {
