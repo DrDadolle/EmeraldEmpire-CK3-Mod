@@ -3151,7 +3151,7 @@
 	}
 
 	#Special Shadowlands tolerance
-	tenet_shadowlands_veneration = {
+	tenet_shadowlands_syncretism = {
 		icon = core_tenet_christian_syncretism
 
 		piety_cost = {
@@ -3159,7 +3159,7 @@
 
 			# Multiplier for keeping same tenet
 			if = {
-				limit = { has_doctrine = tenet_shadowlands_veneration }
+				limit = { has_doctrine = tenet_shadowlands_syncretism }
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
@@ -3180,7 +3180,8 @@
 		}
 
 		parameters = {
-			hostility_override_tenet_shadowlands_veneration = 1
+			hostility_override_special_doctrine_is_shadowlands_faith = 1
+			hostility_override_tenet_shadowlands_syncretism = 1
 		}
 
 		traits = {
