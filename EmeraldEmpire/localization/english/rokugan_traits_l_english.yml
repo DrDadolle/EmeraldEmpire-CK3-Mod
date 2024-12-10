@@ -1,21 +1,35 @@
 ﻿l_english:
  # Kami 
  trait_kami:0 "Ancestral Kami"
- trait_kami_desc:0 "This character is one of the eight Kamis who fell in Ningendo. As such, they are the rightful leader of their vassals."
- trait_kami_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is one of the eight Kamis who fell in Ningendo. As such, [ROOT.GetCharacter.GetFirstNameNoTooltip] is the rightful leader of [ROOT.GetCharacter.GetHerHis] vassals."
+ trait_kami_desc:0 "This character is one of the eight Kamis who fell in [ningendo|E]. As such, they are the rightful leader of their vassals."
+ trait_kami_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is one of the eight Kamis who fell in [ningendo|E]. As such, [ROOT.GetCharacter.GetFirstNameNoTooltip] is the rightful leader of [ROOT.GetCharacter.GetHerHis] vassals."
  # Kami descendant
  trait_kami_descendant:0 "Descendant of a founder Kami"
- trait_kami_descendant_desc:0 "This character is a direct descendant of one of the eight Kamis who fell in Ningendo. As such, they are the rightful leader of their vassals."
- trait_kami_descendant_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a direct descendant of one of the eight Kamis who fell in Ningendo. As such, [ROOT.GetCharacter.GetFirstNameNoTooltip] is the rightful leader of [ROOT.GetCharacter.GetHerHis] vassals."
+ trait_kami_descendant_desc:0 "This character is a direct descendant of one of the eight Kamis who fell in [ningendo|E]. As such, they are the rightful leader of their vassals."
+ trait_kami_descendant_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a direct descendant of one of the eight Kamis who fell in [ningendo|E]. As such, [ROOT.GetCharacter.GetFirstNameNoTooltip] is the rightful leader of [ROOT.GetCharacter.GetHerHis] vassals."
 
+ ### SHINDOSHI TRAITS ###
  # shindoshi
- trait_shindoshi:0 "Shindoshi"
- trait_shindoshi_desc:0 "This character is a shindoshi, a priest and scribe, as well as the envoy of the fortunes and kami. They are able to create powerful spells by offering prayers."
- trait_shindoshi_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a shindoshi, a priest and scribe, as well as the envoy of the fortunes and kami. [ROOT.GetCharacter.GetFirstNameNoTooltip] is able to create powerful spells by offering prayers."
+ trait_shindoshi:0 "Shindōshi"
+ trait_shindoshi_desc:0 "This character is a [shindoshi|E], a priest and scribe, as well as the envoy of the fortunes and kami. They are able to create powerful spells by offering prayers."
+ trait_shindoshi_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a [shindoshi|E], a priest and scribe, as well as the envoy of the fortunes and kami. [ROOT.GetCharacter.GetFirstNameNoTooltip] is able to create powerful spells by offering prayers."
  #ishiken
  trait_ishiken:0 "Ishiken"
- trait_ishiken_desc:0 "This character is an Ishiken, a student of the imperceptible Realm of Void. It is by far the most powerful of the elements, as well as the most difficult to master."
- trait_ishiken_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is an Ishiken, a student of the imperceptible Realm of Void. It is by far the most powerful of the elements, as well as the most difficult to master."
+ trait_ishiken_desc:0 "This character is an [ishiken|E], a student of the imperceptible Realm of Void. It is by far the most powerful of the elements, as well as the most difficult to master."
+ trait_ishiken_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is an [ishiken|E], a student of the imperceptible Realm of Void. It is by far the most powerful of the elements, as well as the most difficult to master."
+ ### MAHO-TSUKAI TRAITS ###
+ trait_mahotsukai:0 "Mahō-tsukai"
+ trait_mahotsukai_1:0 "Novice Mahō-tsukai"
+ trait_mahotsukai_1_desc:0 "Though but a student in the [maho|e], the Novice [mahotsukai|E] is still a foe to be dreaded, bearing unnatural power."
+ trait_mahotsukai_1_character_desc:0 "Though but a student in the [maho|e], [ROOT.GetCharacter.GetFirstNameNoTooltip] is still a foe to be dreaded, bearing unnatural power."
+ trait_mahotsukai_2:0 "Experienced Mahō-tsukai"
+ trait_mahotsukai_2_desc:0 "With spells of ruin, the Renowned [mahotsukai|E] wields the [maho|e] -arts as a potent weapon for their own goals."
+ trait_mahotsukai_2_character_desc:0 "With spells of ruin, [ROOT.GetCharacter.GetFirstNameNoTooltip] wields the [maho|e] -arts as a potent weapon for their own goals"
+ trait_mahotsukai_3:0 "Master Mahō-tsukai"
+ trait_mahotsukai_3_desc:0 "Profane ritual and dark rite - the Master [mahotsukai|E] stands unparalleled in the [maho|e], renouncing their humanity in the pursuit of power"
+ trait_mahotsukai_3_character_desc:0 "Profane ritual and dark rite - [ROOT.GetCharacter.GetFirstNameNoTooltip] stands unparalleled in the [maho|e], renouncing their humanity in the pursuit of power"
+
+
  # bleached_white_hair
  trait_bleached_white_hair:0 "Bleached White Hair"
  trait_bleached_white_hair_desc:0 "This character decided to bleach their hair white to honor the courage of the Doji Hayaku, who returned from the Shadowlands with the sword of her brother and white hair."

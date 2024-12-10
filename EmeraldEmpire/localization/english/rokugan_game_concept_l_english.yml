@@ -1,10 +1,61 @@
 ﻿l_english:
+ ### ROKUGAN ### 
+ game_concept_rokugan:0 "Rokugan"
+ game_concept_emeraldempire:0 "Emerald Empire"
+ game_concept_rokugan_desc:0 "game_concept_rokugan_desc"
+
+ game_concept_shadowlands:0 "Shadowlands"
+ game_concept_shadowlands_desc:0 "game_concept_shadowlands_desc"
+
+ game_concept_phoenixclan:0 "Phoenix Clan"
+ game_concept_phoenixclan_desc:0 "game_concept_phoenixclan_desc"
+
+ ### SPIRITUAL REALMS ###
+ game_concept_ningendo:0 "Ningen-dō"
+ game_concept_ningendo_desc:0 "game_concept_ningendo_desc"
+ game_concept_jigoku:0 "Jigoku"
+ game_concept_jigoku_desc:0 "game_concept_jigoku_desc"
+
+ ### FOUNDER KAMIS ### 
+ game_concept_fuleng:0 "Fu Leng"
+ game_concept_darkkami:0 "Dark Kami"
+ game_concept_ninthkami:0 "Ninth Kami"
+ game_concept_fuleng_desc:0 "game_concept_fuleng_desc"
+
+ ### SAMURAI CONCEPTS ###
  game_concept_seppuku:0 "Seppuku"
  game_concept_seppuku_desc:0 "[rulers|E] can demand their vassals to do Seppuku. This is viewed as [tyrannical|E] unless the Character is guilty of a [crime|E]. Demanding Seppuku increase your [dread|E] and are never well received by the [close_family|E] of the unfortunate target.\n\n Furthermore, [rulers|E] can also do seppuku themselves when they are [prestige_i][GetModifier( 'prestige_level_0' ).GetNameWithTooltip|L] "
- game_concept_seppuku_reason:0 "Seppuku reason"
- game_concept_seppuku_reasons:0 "Seppuku reasons"
- game_concept_seppuku_reason_desc:0 "Seppuku reason desc"
- game_concept_seppuku_reasons_desc:0 "Seppuku reasons desc"
+ game_concept_seppuku_reason:0 "game_concept_seppuku_reason"
+ game_concept_seppuku_reasons:0 "game_concept_seppuku_reasons"
+ game_concept_seppuku_reason_desc:0 "game_concept_seppuku_reason_desc"
+ game_concept_seppuku_reasons_desc:0 "game_concept_seppuku_reasons_desc"
+ ### BUILDINGS CONCEPTS ###
+ game_concept_shiro_chuda_ruins_holding:0 "game_concept_shiro_chuda_ruins_holding"
+ game_concept_shiro_chuda_ruins_holding_desc:0 "game_concept_shiro_chuda_ruins_holding_desc"
 
-game_concept_shiro_chuda_ruins_holding:0 "Ruins"
-game_concept_shiro_chuda_ruins_holding_desc:0 "Ruins of Shiro Chuda"
+ ### MAGIC ###
+ # Kami
+ game_concept_kami:0 "Kami"
+ game_concept_kami_desc:0 "Kami are spirits that inhabited the natural world of [ningendo|E], which sometimes interacted with Rokugani people"
+
+ game_concept_kansen:0 "Kansen"
+ game_concept_kansen_desc:0 "Kansen are corrupted [kami|E] that spilled forth from [jigoku|E] or are once kami dwelling within [rokugan|E] before becoming corrupted. They bloom in the wake of devastation, choking out all life or twisting it with their touch. Their thirst for true desolation makes them single-minded and terrible. Kansen are found in the [shadowlands|E] and summoned by practitioners of [maho|E] to perform magical, but evil, displays of power. "
+
+ #Shindoshi & co
+ game_concept_shindoshi:0 "Shindōshi"
+ game_concept_shindoshi_desc:0 "Shindōshi, also known as Elementalists, or Shugenja, are mystical practitioners and the envoys of the kami, samurai who served as priests and conduits between the mortal and sacred realms. They practiced [shugendo|E], the prayers also known as invocations, powerful appeals to the kami, to wield astonishing elemental powers."
+ game_concept_shugendo:0 "Shugendō"
+ game_concept_shugendo_desc:0 "Shugendō is learned by [shindoshi|E], who performed prayers that could invoke the manifestation of spirits, asking favors in exchange for offerings. It is a rare gift, and in the Isawa family is most common than in any other family of [rokugan|E]"
+
+ game_concept_ishiken:0 "Ishiken"
+ game_concept_ishiken_desc:0 "Ishiken is the Rokugani term for those shugenja attuned to the Void element who are trained in the Starry Heaven Sanctuary.These individuals are capable of delving into the Void and pulling at the seams of reality at the cost of the self."
+ game_concept_ishikendo:0 "Ishiken-dō"
+ game_concept_ishikendo_desc:0 "Ishiken-dō is the art of Void inversion, and its gatekeepers are the [phoenixclan|E]. Only a handful per generation are sensitive enough to call upon the Void. Those who are identified are quickly adopted by the Phoenix and trained to control their reality-changing abilities as [ishiken|E]"
+
+ # Mahotsukai
+ game_concept_mahotsukai:0 "Mahō-tsukai"
+ game_concept_mahotsukai_desc:0 "Mahō-tsukai also known as Madōshi, are evil sorcerers practitioners of [maho|E], who made offerings of blood and death with wicked spirits in exchange for diabolical powers. [shindoshi|E] who had believed they would merely study [maho|E] to better counter its effects ended up becoming corrupted by what they had learned and slowly turned toward evil ends without even realizing."
+ game_concept_maho:0 "Mahō"
+ game_concept_maho_desc:0 "Mahō is an evil sorcery practiced only by sorcerers called [mahotsukai|E]. It is poared by blood, that of the user or their victims, whether willing or unwilling. The purer the blood, the greater the power it imparted, and the more powerful the [kansen|E] that would answer the summoner's call. [kansen|E] ceaselessly corrupted those who wielded their power, turning [mahotsukai|E] to [fuleng|E]'s wicked ends whether they knew it or not."
+
+ 

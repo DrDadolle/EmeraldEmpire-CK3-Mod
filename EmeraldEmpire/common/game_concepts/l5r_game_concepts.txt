@@ -1,0 +1,108 @@
+﻿#########################
+#### World Concepts #####
+#########################
+conceptworld = {
+}	
+
+ningendo = {
+	parent = conceptworld
+}	
+
+### Rokugan
+
+rokugan = {
+	alias = { emeraldempire}
+	parent = ningendo
+}	
+
+phoenixclan = {
+	parent = rokugan
+}	
+
+### Shadowlands
+
+shadowlands = {
+	parent = ningendo
+}	
+
+jigoku = {
+	parent = conceptworld
+}
+
+
+
+#########################
+## Character Concepts ###
+#########################
+conceptmajorcharacter = {
+}	
+
+fuleng = {
+	alias = { darkkami ninthkami}
+	parent = conceptmajorcharacter
+}	
+
+
+
+#########################
+##### Lore Concepts #####
+#########################
+conceptmajorloreidea = {
+}	
+
+
+
+
+#########################
+##### "Normal" Magic ####
+#########################
+shindoshi = {
+	parent = conceptmajorloreidea
+}
+shugendo = {
+	parent = conceptmajorloreidea
+}
+ishiken = {
+	parent = conceptmajorloreidea
+}
+ishikendo = {
+	parent = conceptmajorloreidea
+}
+kami = {
+	parent = conceptmajorloreidea
+}
+
+#########################
+##### Blood  Magic  #####
+#########################
+mahotsukai = {
+	parent = conceptmajorloreidea
+}
+maho = {
+	parent = conceptmajorloreidea
+}
+kansen = {
+	parent = conceptmajorloreidea
+}
+
+
+
+
+
+
+#########################
+#####   Mechanics   #####
+#########################
+seppuku = {
+	texture = "gfx/interface/icons/icon_dead.dds"
+}
+
+seppuku_reason = {
+	alias = { seppuku_reasons }
+}
+
+shiro_chuda_ruins_holding = {
+	#alias = { castle castles castle_holdings }
+	parent = holding_type
+	texture = "gfx/interface/icons/icon_holding_castle.dds"
+}
