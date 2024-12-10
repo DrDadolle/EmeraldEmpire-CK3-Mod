@@ -17,22 +17,27 @@
 # }
 
 fp3_rich_in_diversity_achievement = {
-	possible = {  }
+	possible = {  
+		#L5R Disabled
+		always = no
+	}
 	happened = {
-		custom_description = {
-			text = fp3_rich_in_diversity_achievement_trigger
-			is_ai = no
-			faith = {
-				OR = {
-					has_doctrine = tenet_tax_nonbelievers
-					has_doctrine = special_doctrine_jizya
-				}
-			}
-			any_vassal = {
-				NOT = { faith = root.faith }
-				count >= 10
-			}
-		}
+		#L5R Disabled
+		always = no 
+		# custom_description = {
+		# 	text = fp3_rich_in_diversity_achievement_trigger
+		# 	is_ai = no
+		# 	faith = {
+		# 		OR = {
+		# 			has_doctrine = tenet_tax_nonbelievers
+		# 			has_doctrine = special_doctrine_jizya
+		# 		}
+		# 	}
+		# 	any_vassal = {
+		# 		NOT = { faith = root.faith }
+		# 		count >= 10
+		# 	}
+		# }
 	}
 }
 

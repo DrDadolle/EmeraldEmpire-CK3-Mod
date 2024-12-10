@@ -6256,319 +6256,319 @@ hold_court.6040 = {
 ##################################################
 
 # The tomb of a local saint has been growing in popularity. The devotees of the saint are now asking for a land grant to support the growing religious establishment there. #
+#L5R Disabled
+# scripted_trigger hold_court_6050_religion_trigger = {
+# 	OR = {
+# 		religion = religion:christianity_religion
+# 		religion = religion:islam_religion
+# 		religion = religion:buddhism_religion
+# 		religion = religion:hinduism_religion
+# 	}
+# }
 
-scripted_trigger hold_court_6050_religion_trigger = {
-	OR = {
-		religion = religion:christianity_religion
-		religion = religion:islam_religion
-		religion = religion:buddhism_religion
-		religion = religion:hinduism_religion
-	}
-}
+# hold_court.6050 = {
+# 	type = court_event
+# 	title = hold_court.6050.t
+# 	desc = {
+# 		desc = hold_court.6050.desc
+# 		triggered_desc = {
+# 			trigger = {
+# 				exists = scope:6050_pop.faith.religious_head
+# 				scope:6050_pop.faith.religious_head = root
+# 			}
+# 			desc = hold_court.6050.desc_hof
+# 		}
+# 	}
+# 	theme = court
+# 	lower_left_portrait = scope:6050_holy
+# 	court_scene = {
+# 		button_position_character = scope:6050_pop
+# 		court_event_force_open = yes
+# 		show_timeout_info = no
+# 		should_pause_time = yes
+# 		roles = {
+# 			scope:6050_pop = {
+# 				group = petitioners_group
+# 				animation = ecstasy
+# 			}
+# 			scope:chaplain = {
+# 				group = petitioners_group
+# 				animation = ecstasy
+# 			}
+# 		}
+# 	}
 
-hold_court.6050 = {
-	type = court_event
-	title = hold_court.6050.t
-	desc = {
-		desc = hold_court.6050.desc
-		triggered_desc = {
-			trigger = {
-				exists = scope:6050_pop.faith.religious_head
-				scope:6050_pop.faith.religious_head = root
-			}
-			desc = hold_court.6050.desc_hof
-		}
-	}
-	theme = court
-	lower_left_portrait = scope:6050_holy
-	court_scene = {
-		button_position_character = scope:6050_pop
-		court_event_force_open = yes
-		show_timeout_info = no
-		should_pause_time = yes
-		roles = {
-			scope:6050_pop = {
-				group = petitioners_group
-				animation = ecstasy
-			}
-			scope:chaplain = {
-				group = petitioners_group
-				animation = ecstasy
-			}
-		}
-	}
+# 	widget = {
+# 		gui = "event_window_widget_event_chain_progress"
+# 		container = "custom_widgets_container"
+# 		controller = event_chain_progress
+# 	}
 
-	widget = {
-		gui = "event_window_widget_event_chain_progress"
-		container = "custom_widgets_container"
-		controller = event_chain_progress
-	}
+# 	#Note: This event is triggered by hold_court.6051 and cannot have any triggers of its own. All triggers must be in hold_court.6051 or the queue can get stuck here forever.
 
-	#Note: This event is triggered by hold_court.6051 and cannot have any triggers of its own. All triggers must be in hold_court.6051 or the queue can get stuck here forever.
+# 	weight_multiplier = {
+# 		base = 1
 
-	weight_multiplier = {
-		base = 1
+# 		# Court weightings.
+# 		ep1_weight_up_for_court_type_modifier = { COURT_TYPE = court_administrative }
+# 		ep1_weight_up_for_court_type_modifier = { COURT_TYPE = court_scholarly }
+# 	}
 
-		# Court weightings.
-		ep1_weight_up_for_court_type_modifier = { COURT_TYPE = court_administrative }
-		ep1_weight_up_for_court_type_modifier = { COURT_TYPE = court_scholarly }
-	}
+# 	immediate = {
+# 		create_character = {
+# 			location = root.capital_province
+# 			template = servant_character
+# 			faith = scope:6050_tomb.faith
+# 			culture = scope:6050_tomb.culture
+# 			save_scope_as = 6050_pop
+# 		}
+# 		scope:6050_pop = {
+# 			court_event_character_flag_effect = yes
+# 		}
+# 		cp:councillor_court_chaplain = {
+# 			save_scope_as = chaplain
+# 			court_event_character_flag_effect = yes
+# 		}
+# 		if = {
+# 			limit = {
+# 				exists = scope:6050_pop.faith.religious_head
+# 				NOT = {
+# 					scope:6050_pop.faith.religious_head = root
+# 				}
+# 			}
+# 			random = {
+# 				chance = 20
+# 				add_character_flag = {
+# 					flag = 6050_church_approves
+# 					days = 10
+# 				}
+# 			}
+# 		}
+# 		# Trigger next event in chain.
+# 		hold_court_queue_next_event_effect = yes
+# 	}
 
-	immediate = {
-		create_character = {
-			location = root.capital_province
-			template = servant_character
-			faith = scope:6050_tomb.faith
-			culture = scope:6050_tomb.culture
-			save_scope_as = 6050_pop
-		}
-		scope:6050_pop = {
-			court_event_character_flag_effect = yes
-		}
-		cp:councillor_court_chaplain = {
-			save_scope_as = chaplain
-			court_event_character_flag_effect = yes
-		}
-		if = {
-			limit = {
-				exists = scope:6050_pop.faith.religious_head
-				NOT = {
-					scope:6050_pop.faith.religious_head = root
-				}
-			}
-			random = {
-				chance = 20
-				add_character_flag = {
-					flag = 6050_church_approves
-					days = 10
-				}
-			}
-		}
-		# Trigger next event in chain.
-		hold_court_queue_next_event_effect = yes
-	}
+# 	#Option A: create a temple on the tomb
+# 	option = {
+# 		name = hold_court.6050.a
+# 		trigger = {
+# 			NOT = { has_trait = lifestyle_mystic }
+# 		}
+# 		scope:6050_tomb = {
+# 			set_holding_type = church_holding
+# 		}
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_character_flag = 6050_church_approves
+# 					AND = {
+# 						exists = scope:6050_pop.faith.religious_head
+# 						scope:6050_pop.faith.religious_head = root
+# 					}
+# 				}
+# 			}
+# 			add_piety = major_piety_gain
+# 		}
+# 		else = {
+# 			add_piety = major_piety_loss
+# 		}
+# 		scope:6050_tomb.county = {
+# 			add_county_modifier = {
+# 				modifier = tougher_to_convert
+# 				years = 10
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_zeal = 1
+# 			}
+# 		}
+# 	}
 
-	#Option A: create a temple on the tomb
-	option = {
-		name = hold_court.6050.a
-		trigger = {
-			NOT = { has_trait = lifestyle_mystic }
-		}
-		scope:6050_tomb = {
-			set_holding_type = church_holding
-		}
-		if = {
-			limit = {
-				OR = {
-					has_character_flag = 6050_church_approves
-					AND = {
-						exists = scope:6050_pop.faith.religious_head
-						scope:6050_pop.faith.religious_head = root
-					}
-				}
-			}
-			add_piety = major_piety_gain
-		}
-		else = {
-			add_piety = major_piety_loss
-		}
-		scope:6050_tomb.county = {
-			add_county_modifier = {
-				modifier = tougher_to_convert
-				years = 10
-			}
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_zeal = 1
-			}
-		}
-	}
+# 	#Option B: limited to mystic: relic
+# 	option = {
+# 		name = hold_court.6050.b
+# 		trigger = { has_trait = lifestyle_mystic }
+# 		religion = { save_scope_as = statue_religion }
+# 		create_artifact = {	
+# 			name = artifact_pedestal_reliquary_6050_saint_name
+# 			description = artifact_pedestal_reliquary_6050_saint_desc
+# 			type = pedestal
+# 			template = 6050_relic_template
+# 			visuals = reliquary
+# 			modifier = artifact_monthly_piety_3_modifier
+# 			save_scope_as = 6050_relic
+# 		}
+# 		scope:6050_relic = {
+# 			set_variable = { # required to track equipability in template
+# 				name = statue_religion
+# 				value = root.religion
+# 			}
+# 		}
+# 		scope:6050_tomb = {
+# 			set_holding_type = church_holding
+# 		}
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_character_flag = 6050_church_approves
+# 					AND = {
+# 						exists = scope:6050_pop.faith.religious_head
+# 						scope:6050_pop.faith.religious_head = root
+# 					}
+# 				}
+# 			}
+# 			add_piety = major_piety_gain
+# 		}
+# 		else = {
+# 			add_piety = major_piety_loss
+# 		}
+# 		scope:6050_tomb.county = {
+# 			add_county_modifier = {
+# 				modifier = tougher_to_convert
+# 				years = 10
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 200
+# 		}
+# 	}
 
-	#Option B: limited to mystic: relic
-	option = {
-		name = hold_court.6050.b
-		trigger = { has_trait = lifestyle_mystic }
-		religion = { save_scope_as = statue_religion }
-		create_artifact = {	
-			name = artifact_pedestal_reliquary_6050_saint_name
-			description = artifact_pedestal_reliquary_6050_saint_desc
-			type = pedestal
-			template = 6050_relic_template
-			visuals = reliquary
-			modifier = artifact_monthly_piety_3_modifier
-			save_scope_as = 6050_relic
-		}
-		scope:6050_relic = {
-			set_variable = { # required to track equipability in template
-				name = statue_religion
-				value = root.religion
-			}
-		}
-		scope:6050_tomb = {
-			set_holding_type = church_holding
-		}
-		if = {
-			limit = {
-				OR = {
-					has_character_flag = 6050_church_approves
-					AND = {
-						exists = scope:6050_pop.faith.religious_head
-						scope:6050_pop.faith.religious_head = root
-					}
-				}
-			}
-			add_piety = major_piety_gain
-		}
-		else = {
-			add_piety = major_piety_loss
-		}
-		scope:6050_tomb.county = {
-			add_county_modifier = {
-				modifier = tougher_to_convert
-				years = 10
-			}
-		}
-		ai_chance = {
-			base = 200
-		}
-	}
+# 	#Option C: persecute the local cult
+# 	option = {
+# 		name = hold_court.6050.c
+# 		add_dread = medium_dread_gain
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					NOT = {
+# 						has_character_flag = 6050_church_approves
+# 					}
+# 					AND = {
+# 						exists = scope:6050_pop.faith.religious_head
+# 						scope:6050_pop.faith.religious_head = root
+# 					}
+# 				}
+# 			}
+# 			add_piety = major_piety_gain
+# 		}
+# 		if = {
+# 			limit = {
+# 				NOT = { scope:6050_tomb.county.faith = root.faith }
+# 			}
+# 			scope:6050_tomb.county = {
+# 				set_county_faith = root.faith
+# 			}
+# 		}
+# 		scope:6050_tomb.county = {
+# 			change_county_control = 50
+# 		}
+# 		stress_impact = {
+# 			lifestyle_mystic = medium_stress_impact_gain
+# 			trusting = minor_stress_impact_gain
+# 			compassionate = major_stress_impact_gain
+# 			forgiving = major_stress_impact_gain
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_character_flag = 6050_church_approves
+# 			}
+# 			stress_impact = {
+# 				zealous = major_stress_impact_gain
+# 			}
+# 		}
+# 		else = {
+# 			stress_impact = {
+# 				zealous = major_stress_impact_loss
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			modifier = {
+# 				has_trait = trusting
+# 				add = -25
+# 			}
+# 			modifier = {
+# 				has_trait = lifestyle_mystic
+# 				add = -50
+# 			}
+# 			modifier = {
+# 				has_trait = compassionate
+# 				add = -75
+# 			}
+# 			modifier = {
+# 				has_trait = forgiving
+# 				add = -75
+# 			}
+# 		}
+# 	}
+# 	#Option D: ignore them
+# 	option = {
+# 		name = hold_court.6050.d
+# 		ai_chance = {
+# 			base = 100
+# 			modifier = {
+# 				has_trait = lazy
+# 				add = 50
+# 			}
+# 		}
+# 	}
 
-	#Option C: persecute the local cult
-	option = {
-		name = hold_court.6050.c
-		add_dread = medium_dread_gain
-		if = {
-			limit = {
-				OR = {
-					NOT = {
-						has_character_flag = 6050_church_approves
-					}
-					AND = {
-						exists = scope:6050_pop.faith.religious_head
-						scope:6050_pop.faith.religious_head = root
-					}
-				}
-			}
-			add_piety = major_piety_gain
-		}
-		if = {
-			limit = {
-				NOT = { scope:6050_tomb.county.faith = root.faith }
-			}
-			scope:6050_tomb.county = {
-				set_county_faith = root.faith
-			}
-		}
-		scope:6050_tomb.county = {
-			change_county_control = 50
-		}
-		stress_impact = {
-			lifestyle_mystic = medium_stress_impact_gain
-			trusting = minor_stress_impact_gain
-			compassionate = major_stress_impact_gain
-			forgiving = major_stress_impact_gain
-		}
-		if = {
-			limit = {
-				has_character_flag = 6050_church_approves
-			}
-			stress_impact = {
-				zealous = major_stress_impact_gain
-			}
-		}
-		else = {
-			stress_impact = {
-				zealous = major_stress_impact_loss
-			}
-		}
-		ai_chance = {
-			base = 100
-			modifier = {
-				has_trait = trusting
-				add = -25
-			}
-			modifier = {
-				has_trait = lifestyle_mystic
-				add = -50
-			}
-			modifier = {
-				has_trait = compassionate
-				add = -75
-			}
-			modifier = {
-				has_trait = forgiving
-				add = -75
-			}
-		}
-	}
-	#Option D: ignore them
-	option = {
-		name = hold_court.6050.d
-		ai_chance = {
-			base = 100
-			modifier = {
-				has_trait = lazy
-				add = 50
-			}
-		}
-	}
+# 	after = {
+# 		scope:6050_pop = {
+# 			clear_court_event_participation = yes
+# 			silent_disappearance_effect = yes
+# 		}
+# 		scope:chaplain = {
+# 			clear_court_event_participation = yes
+# 		}
+# 		# Finish up the chain if relevant.
+# 		hold_court_queue_post_event_effect = yes
+# 	}
+# }
 
-	after = {
-		scope:6050_pop = {
-			clear_court_event_participation = yes
-			silent_disappearance_effect = yes
-		}
-		scope:chaplain = {
-			clear_court_event_participation = yes
-		}
-		# Finish up the chain if relevant.
-		hold_court_queue_post_event_effect = yes
-	}
-}
+# hold_court.6051 = {		#Hidden event to create the saint
+# 	type = character_event
+# 	hidden = yes
+# 	cooldown = { years = 30 }
 
-hold_court.6051 = {		#Hidden event to create the saint
-	type = character_event
-	hidden = yes
-	cooldown = { years = 30 }
+# 	trigger = {
+# 		any_realm_province = {
+# 			has_holding = no
+# 			hold_court_6050_religion_trigger = yes
+# 			NOT = { county.faith = root.faith }
+# 		}
+# 		exists = cp:councillor_court_chaplain
+# 		cp:councillor_court_chaplain = {
+# 			has_court_event_flag = no
+# 			is_available_ai_adult = yes
+# 		}
+# 	}
 
-	trigger = {
-		any_realm_province = {
-			has_holding = no
-			hold_court_6050_religion_trigger = yes
-			NOT = { county.faith = root.faith }
-		}
-		exists = cp:councillor_court_chaplain
-		cp:councillor_court_chaplain = {
-			has_court_event_flag = no
-			is_available_ai_adult = yes
-		}
-	}
-
-	immediate = {
-		random_realm_province = {
-			limit = {
-				has_holding = no
-				hold_court_6050_religion_trigger = yes
-			}
-			save_scope_as = 6050_tomb
-		}
-		create_character = {
-			location = scope:6050_tomb
-			template = local_saint_template
-			faith = scope:6050_tomb.faith
-			culture = scope:6050_tomb.culture 
-			save_scope_as = 6050_holy
-		}
-		scope:6050_holy = {
-			death = {
-				death_reason = death_mysterious
-			}
-		}
-		trigger_event = hold_court.6050
-	}
-}
+# 	immediate = {
+# 		random_realm_province = {
+# 			limit = {
+# 				has_holding = no
+# 				hold_court_6050_religion_trigger = yes
+# 			}
+# 			save_scope_as = 6050_tomb
+# 		}
+# 		create_character = {
+# 			location = scope:6050_tomb
+# 			template = local_saint_template
+# 			faith = scope:6050_tomb.faith
+# 			culture = scope:6050_tomb.culture 
+# 			save_scope_as = 6050_holy
+# 		}
+# 		scope:6050_holy = {
+# 			death = {
+# 				death_reason = death_mysterious
+# 			}
+# 		}
+# 		trigger_event = hold_court.6050
+# 	}
+# }
 
 ##################################################
 # A Convenient Offer
@@ -18749,28 +18749,29 @@ hold_court.8110 = {
 
 scripted_trigger hold_court_8120_syncretic_faith_trigger = {
 	NOT = { scope:peasant.religion = root.religion }
-	OR = {
-		AND = { # Eastern
-			scope:peasant.faith.religion = { is_in_family = rf_eastern }
-			faith = { has_doctrine = tenet_eastern_syncretism }
-		}
-		AND = { # Pagan
-			scope:peasant.faith = { has_doctrine_parameter = unreformed }
-			faith = { has_doctrine = tenet_unreformed_syncretism }
-		}
-		AND = { # Christian
-			scope:peasant.religion = religion:christianity_religion
-			faith = { has_doctrine = tenet_christian_syncretism }
-		}
-		AND = { # Islam
-			scope:peasant.religion = religion:islam_religion
-			faith = { has_doctrine = tenet_islamic_syncretism }
-		}
-		AND = { # Judaism
-			scope:peasant.religion = religion:judaism_religion
-			faith = { has_doctrine = tenet_jewish_syncretism }
-		}
-	}
+	#L5R Disabled
+	# OR = {
+	# 	AND = { # Eastern
+	# 		scope:peasant.faith.religion = { is_in_family = rf_eastern }
+	# 		faith = { has_doctrine = tenet_eastern_syncretism }
+	# 	}
+	# 	AND = { # Pagan
+	# 		scope:peasant.faith = { has_doctrine_parameter = unreformed }
+	# 		faith = { has_doctrine = tenet_unreformed_syncretism }
+	# 	}
+	# 	AND = { # Christian
+	# 		scope:peasant.religion = religion:christianity_religion
+	# 		faith = { has_doctrine = tenet_christian_syncretism }
+	# 	}
+	# 	AND = { # Islam
+	# 		scope:peasant.religion = religion:islam_religion
+	# 		faith = { has_doctrine = tenet_islamic_syncretism }
+	# 	}
+	# 	AND = { # Judaism
+	# 		scope:peasant.religion = religion:judaism_religion
+	# 		faith = { has_doctrine = tenet_jewish_syncretism }
+	# 	}
+	# }
 }
 
 scripted_effect hold_court_8120_stop_effect = {
@@ -18950,43 +18951,44 @@ hold_court.8120 = {
 	option = { # Stop the priests - syncretic
 		name = hold_court.8120.b
 		trigger = { hold_court_8120_syncretic_faith_trigger = yes }
-		if = {
-			limit = {
-				AND = { 
-					scope:peasant.faith.religion = { is_in_family = rf_eastern }
-					faith = { has_doctrine = tenet_eastern_syncretism }
-				}
-			}
-			custom_tooltip = hold_court.8120.b.tt_eastern # Eastern
-		}
-		else_if = {
-			limit = {
-				AND = { 
-					scope:peasant.faith = { has_doctrine_parameter = unreformed }
-					faith = { has_doctrine = tenet_unreformed_syncretism }
-				}
-			}
-			custom_tooltip = hold_court.8120.b.tt_pagan # Pagan
-		}
-		else_if = {
-			limit = {
-				AND = { 
-					scope:peasant.religion = religion:christianity_religion
-					faith = { has_doctrine = tenet_christian_syncretism }
-				}
-			}
-			custom_tooltip = hold_court.8120.b.tt_christianity # Christian
-		}
-		else_if = {
-			limit = {
-				AND = { 
-					scope:peasant.religion = religion:islam_religion
-					faith = { has_doctrine = tenet_islamic_syncretism }
-				}
-			}
-			custom_tooltip = hold_court.8120.b.tt_islam # Islam
-		}
-		else = { custom_tooltip = hold_court.8120.b.tt_judaism } # Judaism
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		AND = { 
+		# 			scope:peasant.faith.religion = { is_in_family = rf_eastern }
+		# 			faith = { has_doctrine = tenet_eastern_syncretism }
+		# 		}
+		# 	}
+		# 	custom_tooltip = hold_court.8120.b.tt_eastern # Eastern
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		AND = { 
+		# 			scope:peasant.faith = { has_doctrine_parameter = unreformed }
+		# 			faith = { has_doctrine = tenet_unreformed_syncretism }
+		# 		}
+		# 	}
+		# 	custom_tooltip = hold_court.8120.b.tt_pagan # Pagan
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		AND = { 
+		# 			scope:peasant.religion = religion:christianity_religion
+		# 			faith = { has_doctrine = tenet_christian_syncretism }
+		# 		}
+		# 	}
+		# 	custom_tooltip = hold_court.8120.b.tt_christianity # Christian
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		AND = { 
+		# 			scope:peasant.religion = religion:islam_religion
+		# 			faith = { has_doctrine = tenet_islamic_syncretism }
+		# 		}
+		# 	}
+		# 	custom_tooltip = hold_court.8120.b.tt_islam # Islam
+		# }
+		# else = { custom_tooltip = hold_court.8120.b.tt_judaism } # Judaism
 		add_piety = medium_piety_gain
 		hold_court_8120_stop_effect = yes
 		ai_chance = {
@@ -19006,124 +19008,125 @@ hold_court.8120 = {
 		}
 	}
 
-	option = { # Demand religious taxes
-		name = hold_court.8120.c
-		add_gold = minor_gold_value
-		if = {
-			limit = {
-				NOT = {
-					faith = {
-						OR = {
-							has_doctrine = tenet_tax_nonbelievers
-							has_doctrine = special_doctrine_jizya
-						}
-					}
-				}
-			}
-			custom_tooltip = hold_court.8120.c.tt_tenet
-			stress_impact = {
-				honest = medium_stress_impact_gain
-				zealous = medium_stress_impact_gain
-			}
-		}
-		else = {
-			add_piety = minor_piety_gain
-			stress_impact = {
-				cynical = medium_stress_impact_gain
-			}
-		}
-		stress_impact = {
-			generous = medium_stress_impact_gain
-		}
-		set_variable = {
-			name = hold_court_8120_religion_block
-			value = scope:conversion_target.faith
-			years = 15
-		}
-		scope:bishop = {
-			if = {
-				limit = {
-					faith = {
-						OR = {
-							has_doctrine = tenet_tax_nonbelievers
-							has_doctrine = special_doctrine_jizya
-						}
-					}
-				}
-				add_opinion = {
-					modifier = pious_opinion
-					target = root
-					opinion = 5
-				}
-			}
-			else = {
-				add_opinion = {
-					modifier = impious_opinion
-					target = root
-					opinion = -10
-				}
-			}
-			set_council_task = { task_type = task_religious_relations }
-		}
-		scope:conversion_target = {
-			add_county_modifier = {
-				modifier = hold_court_8120_tax_modifier
-				years = 15
-			}
-			custom_tooltip = hold_court.8120.a.tt_conversion
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 2
-				ai_zeal = 1
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				NOT = {
-					faith = {
-						OR = {
-							has_doctrine = tenet_tax_nonbelievers
-							has_doctrine = special_doctrine_jizya
-						}
-					}
-				}
-				OR = {
-					has_trait = cynical
-					has_trait = deceitful
-				}
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				NOT = {
-					faith = {
-						OR = {
-							has_doctrine = tenet_tax_nonbelievers
-							has_doctrine = special_doctrine_jizya
-						}
-					}
-				}
-				OR = {
-					has_trait = honest
-					has_trait = zealous
-				}
-			}
-			modifier = {	#Weight down for stress.
-				add = -15
-				faith = {
-					OR = {
-						has_doctrine = tenet_tax_nonbelievers
-						has_doctrine = special_doctrine_jizya
-					}
-				}
-				has_trait = cynical
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = generous
-			}
-		}
-	}
+	#L5R Disabled
+	# option = { # Demand religious taxes
+	# 	name = hold_court.8120.c
+	# 	add_gold = minor_gold_value
+	# 	if = {
+	# 		limit = {
+	# 			NOT = {
+	# 				faith = {
+	# 					OR = {
+	# 						has_doctrine = tenet_tax_nonbelievers
+	# 						has_doctrine = special_doctrine_jizya
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		custom_tooltip = hold_court.8120.c.tt_tenet
+	# 		stress_impact = {
+	# 			honest = medium_stress_impact_gain
+	# 			zealous = medium_stress_impact_gain
+	# 		}
+	# 	}
+	# 	else = {
+	# 		add_piety = minor_piety_gain
+	# 		stress_impact = {
+	# 			cynical = medium_stress_impact_gain
+	# 		}
+	# 	}
+	# 	stress_impact = {
+	# 		generous = medium_stress_impact_gain
+	# 	}
+	# 	set_variable = {
+	# 		name = hold_court_8120_religion_block
+	# 		value = scope:conversion_target.faith
+	# 		years = 15
+	# 	}
+	# 	scope:bishop = {
+	# 		if = {
+	# 			limit = {
+	# 				faith = {
+	# 					OR = {
+	# 						has_doctrine = tenet_tax_nonbelievers
+	# 						has_doctrine = special_doctrine_jizya
+	# 					}
+	# 				}
+	# 			}
+	# 			add_opinion = {
+	# 				modifier = pious_opinion
+	# 				target = root
+	# 				opinion = 5
+	# 			}
+	# 		}
+	# 		else = {
+	# 			add_opinion = {
+	# 				modifier = impious_opinion
+	# 				target = root
+	# 				opinion = -10
+	# 			}
+	# 		}
+	# 		set_council_task = { task_type = task_religious_relations }
+	# 	}
+	# 	scope:conversion_target = {
+	# 		add_county_modifier = {
+	# 			modifier = hold_court_8120_tax_modifier
+	# 			years = 15
+	# 		}
+	# 		custom_tooltip = hold_court.8120.a.tt_conversion
+	# 	}
+	# 	ai_chance = {
+	# 		base = 100
+	# 		ai_value_modifier = {
+	# 			ai_greed = 2
+	# 			ai_zeal = 1
+	# 		}
+	# 		modifier = {	#Weight up for stress.
+	# 			add = 30
+	# 			NOT = {
+	# 				faith = {
+	# 					OR = {
+	# 						has_doctrine = tenet_tax_nonbelievers
+	# 						has_doctrine = special_doctrine_jizya
+	# 					}
+	# 				}
+	# 			}
+	# 			OR = {
+	# 				has_trait = cynical
+	# 				has_trait = deceitful
+	# 			}
+	# 		}
+	# 		modifier = {	#Weight down for stress.
+	# 			add = -30
+	# 			NOT = {
+	# 				faith = {
+	# 					OR = {
+	# 						has_doctrine = tenet_tax_nonbelievers
+	# 						has_doctrine = special_doctrine_jizya
+	# 					}
+	# 				}
+	# 			}
+	# 			OR = {
+	# 				has_trait = honest
+	# 				has_trait = zealous
+	# 			}
+	# 		}
+	# 		modifier = {	#Weight down for stress.
+	# 			add = -15
+	# 			faith = {
+	# 				OR = {
+	# 					has_doctrine = tenet_tax_nonbelievers
+	# 					has_doctrine = special_doctrine_jizya
+	# 				}
+	# 			}
+	# 			has_trait = cynical
+	# 		}
+	# 		modifier = {	#Weight down for stress.
+	# 			add = -30
+	# 			has_trait = generous
+	# 		}
+	# 	}
+	# }
 
 	option = { # Execute
 		name = hold_court.8120.d
