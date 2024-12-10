@@ -1,0 +1,385 @@
+﻿namespace = l5r_clan_decision
+
+
+### L5R Clan Decision Events ###
+#			l5r_clan_decision.0001 		get mystical tattoo
+
+#########################
+# Get Tattooed          #
+# by  Leskinen          #
+# 0001-0010				#
+#########################
+scripted_effect resolve_tattoo_effect = {
+	if = {
+		limit = { scope:tattoo = flag:avalanche}
+		send_interface_toast = {
+			title = msg_added_tattoo
+			left_icon = root
+			add_trait = avalanche_tattoo
+		}
+	}
+	else_if = {
+		limit = { scope:tattoo = flag:cherry_blossom}
+		send_interface_toast = {
+			title = msg_added_tattoo
+			left_icon = root
+			add_trait = cherry_blossom_tattoo
+		}
+	}
+	else_if = {
+		limit = { scope:tattoo = flag:volcano}
+		send_interface_toast = {
+			title = msg_added_tattoo
+			left_icon = root
+			add_trait = volcano_tattoo
+		}
+	}
+	else_if = {
+		limit = { scope:tattoo = flag:cloud}
+		send_interface_toast = {
+			title = msg_added_tattoo
+			left_icon = root
+			add_trait = cloud_tattoo
+		}
+	}
+	else_if = {
+		limit = { scope:tattoo = flag:vine}
+		send_interface_toast = {
+			title = msg_added_tattoo
+			left_icon = root
+			add_trait = vine_tattoo
+		}
+	}
+	else_if = {
+		limit = { scope:tattoo = flag:void_dragon}
+		send_interface_toast = {
+			title = msg_added_tattoo
+			left_icon = root
+			add_trait = void_dragon_tattoo
+		}
+		random_list = {
+			50 = {
+				show_as_tooltip = { add_trait = ill }
+				#TODO fix it
+				custom_tooltip = pilgrimage.2009.a.tt
+				hidden_effect = {
+					#Adds the trait, sends event "health.2201" to those who care if health is brought too low
+					contract_disease_effect = {
+						DISEASE = ill
+						TREATMENT_EVENT = no
+					}
+				}	
+			}
+			30 = {
+				trigger = {
+					has_trait = lunatic
+				}
+				death = {
+					death_reason = death_accident
+				}
+			}
+			25 = {
+				trigger = {
+					NOT = {
+						has_trait = lunatic
+					}
+				}
+				add_trait = lunatic
+			}
+			20 = {
+				#Nothing happens
+			}
+			5 = {
+				trigger = {
+					NOT = {
+						has_trait = lunatic
+					}
+				}
+				death = { 
+					death_reason = death_accident
+				}
+			}
+		}
+	}
+	## Always 50% chance of being wounded on accident
+	random = {
+		chance = 50
+		increase_wounds_effect = { REASON = accident }
+	}
+}
+
+l5r_clan_decision.0001 = { 
+	content_source = l5r_dlc
+    type = character_event
+	title = l5r_clan_decision.0001.t
+	desc = l5r_clan_decision.0001.desc
+	
+	theme = faith
+
+    left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				OR = { 
+					has_trait = craven
+					has_trait = paranoid
+				}
+			}
+			animation = paranoia
+		}
+		animation = thinking
+	}
+
+
+    trigger = {
+		
+	}
+
+    weight_multiplier = {
+		base = 1
+	}
+
+    
+    # avalanche
+	# calm / patient
+    option = {
+		trigger = {
+			OR = {
+				has_trait = calm
+				has_trait = patient
+			}
+		}
+		trait = calm
+		trait = patient
+
+		name = l5r_clan_decision.0001.a
+		show_as_tooltip = { resolve_tattoo_effect = yes }
+		custom_tooltip = l5r_clan_decision.0001.a.tt
+        stress_impact = {
+			craven = medium_stress_gain
+		}
+		save_scope_value_as = {
+			name = tattoo
+			value = flag:avalanche
+		}
+		trigger_event = {
+			id = l5r_clan_decision.0002
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	# volcano_tattoo
+	option = {
+		trigger = {
+			OR = {
+				has_trait = brave
+				has_trait = wrathful
+				has_trait = impatient
+				has_trait = zealous
+			}
+		}
+		trait = brave
+		trait = wrathful
+		trait = impatient
+		trait = zealous
+		
+		name = l5r_clan_decision.0001.b
+		show_as_tooltip = { resolve_tattoo_effect = yes }
+		custom_tooltip = l5r_clan_decision.0001.b.tt
+        stress_impact = {
+			craven = medium_stress_gain
+		}
+		save_scope_value_as = {
+			name = tattoo
+			value = flag:volcano
+		}
+		trigger_event = {
+			id = l5r_clan_decision.0002
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	# void_dragon_tattoo
+	option = {
+		trigger = {
+			OR = {
+				has_trait = arrogant
+				has_trait = lunatic
+			}
+		}
+		trait = arrogant
+		trait = lunatic
+
+		name = l5r_clan_decision.0001.c
+		show_as_tooltip = { resolve_tattoo_effect = yes }
+		custom_tooltip = l5r_clan_decision.0001.c.tt
+        stress_impact = {
+			craven = medium_stress_gain
+		}
+		save_scope_value_as = {
+			name = tattoo
+			value = flag:void_dragon
+		}
+		trigger_event = {
+			id = l5r_clan_decision.0002
+		}
+		ai_chance = {
+			base = 2000
+		}
+	}
+
+	# cloud_tattoo
+	option = {
+		trigger = {
+			OR = {
+				has_trait = trusting
+				has_trait = compassionate
+				has_trait = just
+				has_trait = honest
+			}
+		}
+		trait = trusting
+		trait = compassionate
+		trait = just
+		trait = honest
+
+		name = l5r_clan_decision.0001.d
+		show_as_tooltip = { resolve_tattoo_effect = yes }
+		custom_tooltip = l5r_clan_decision.0001.d.tt
+        stress_impact = {
+			craven = medium_stress_gain
+		}
+		save_scope_value_as = {
+			name = tattoo
+			value = flag:cloud
+		}
+		trigger_event = {
+			id = l5r_clan_decision.0002
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	# vine_tattoo
+	option = {
+		trigger = {
+			OR = {
+				has_trait = paranoid
+				has_trait = deceitful
+				has_trait = sadistic
+				has_trait = callous
+				has_trait = ambitious
+			}
+		}
+		trait = paranoid
+		trait = deceitful
+		trait = sadistic
+		trait = callous
+		trait = ambitious
+
+		name = l5r_clan_decision.0001.e
+		show_as_tooltip = { resolve_tattoo_effect = yes }
+		custom_tooltip = l5r_clan_decision.0001.e.tt
+
+		
+        stress_impact = {
+			craven = medium_stress_gain
+		}
+		save_scope_value_as = {
+			name = tattoo
+			value = flag:vine
+		}
+		trigger_event = {
+			id = l5r_clan_decision.0002
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+
+
+	# cherry_blossom_tattoo
+	# Default choice
+	option = {
+		name = l5r_clan_decision.0001.f
+		custom_tooltip = l5r_clan_decision.0001.f.tt
+        stress_impact = {
+			craven = medium_stress_gain
+		}
+		save_scope_value_as = {
+			name = tattoo
+			value = flag:cherry_blossom
+		}
+		trigger_event = {
+			id = l5r_clan_decision.0002
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+
+
+    # Back up
+    option = {
+		name = l5r_clan_decision.0001.g
+		# flavor = l5r_clan_decision.0001.g.flavor
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+
+l5r_clan_decision.0002 = {
+	content_source = l5r_dlc
+    type = character_event
+	title = l5r_clan_decision.0002.t	
+	theme = faith
+
+	desc = {
+		desc = l5r_clan_decision.0002.desc.start
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:tattoo = flag:avalanche }
+				desc = l5r_clan_decision.0002.desc.avalanche
+			}
+			triggered_desc = {
+				trigger = { scope:tattoo = flag:cherry_blossom }
+				desc = l5r_clan_decision.0002.desc.cherry_blossom
+			}
+			triggered_desc = {
+				trigger = { scope:tattoo = flag:volcano }
+				desc = l5r_clan_decision.0002.desc.volcano
+			}
+			triggered_desc = {
+				trigger = { scope:tattoo = flag:void_dragon }
+				desc = l5r_clan_decision.0002.desc.void_dragon
+			}
+			triggered_desc = {
+				trigger = { scope:tattoo = flag:cloud }
+				desc = l5r_clan_decision.0002.desc.cloud
+			}
+			triggered_desc = {
+				trigger = { scope:tattoo = flag:vine }
+				desc = l5r_clan_decision.0002.desc.vine
+			}
+		}
+	}
+	
+	#L5R TODO : no portrait CHECK
+
+	immediate = {
+		# get tatooed
+		resolve_tattoo_effect = yes
+	}
+
+	#Exit
+	option = {
+		name = l5r_clan_decision.0002.a
+	}
+}

@@ -1,6 +1,10 @@
 ﻿### samurai lifestyle
 # TODO Shogunate 'Child of Adoption"'
 
+
+######################
+# Clan
+######################
 bleached_white_hair = {
 	category = fame
 
@@ -78,9 +82,290 @@ natural_white_hair = {
 			desc = trait_natural_white_hair_desc
 		}
 	}
-
 }
 
+### Dragon Clan Mystical tattooes
+# Avalanche tattoo
+avalanche_tattoo = {
+	category = fame
+
+	physical = yes
+
+	opposites = {
+		cherry_blossom_tattoo
+		volcano_tattoo
+		void_dragon_tattoo
+		cloud_tattoo
+		vine_tattoo
+	}
+
+	# The bonuses
+	martial = 1
+	stewardship = 1
+
+	same_opinion = 5
+
+	culture_modifier = {
+		parameter = tattoo_valued
+		monthly_prestige = 0.01
+		monthly_piety = 0.01
+		same_culture_opinion = 2 
+	}
+
+	shown_in_ruler_designer = no
+
+	icon = {
+		desc = tattoo.dds 
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_avalanche_tattoo_desc
+			}
+			desc = trait_avalanche_tattoo_desc
+		}
+	}
+}
+
+# Cherry blossom 
+cherry_blossom_tattoo = {
+	category = fame
+
+	physical = yes
+
+	opposites = {
+		avalanche_tattoo
+		volcano_tattoo
+		void_dragon_tattoo
+		cloud_tattoo
+		vine_tattoo
+	}
+
+	# The bonuses
+	diplomacy = 1
+	stress_gain_mult = -0.05
+
+	same_opinion = 5
+
+	culture_modifier = {
+		parameter = tattoo_valued
+		monthly_prestige = 0.01
+		monthly_piety = 0.01
+		same_culture_opinion = 2 
+	}
+
+	shown_in_ruler_designer = no
+
+	icon = {
+		desc = tattoo.dds 
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_cherry_blossom_tattoo_desc
+			}
+			desc = trait_cherry_blossom_tattoo_desc
+		}
+	}
+}
+
+# volcano
+volcano_tattoo = {
+	category = fame
+
+	physical = yes
+
+	opposites = {
+		avalanche_tattoo
+		cherry_blossom_tattoo
+		void_dragon_tattoo
+		cloud_tattoo
+		vine_tattoo
+	}
+
+	# The bonuses
+	martial = 1
+	prowess = 1
+
+	same_opinion = 5
+
+	culture_modifier = {
+		parameter = tattoo_valued
+		monthly_prestige = 0.01
+		monthly_piety = 0.01
+		same_culture_opinion = 2 
+	}
+
+	shown_in_ruler_designer = no
+
+	icon = {
+		desc = tattoo.dds 
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_volcano_tattoo_desc
+			}
+			desc = trait_volcano_tattoo_desc
+		}
+	}
+}
+
+# Void Dragon
+void_dragon_tattoo = {
+	category = fame
+
+	physical = yes
+
+	opposites = {
+		avalanche_tattoo
+		cherry_blossom_tattoo
+		volcano_tattoo
+		cloud_tattoo
+		vine_tattoo
+	}
+
+	# The bonuses
+	martial = 2
+	diplomacy = 2
+	stewardship = 2
+	intrigue = 2
+	learning = 2
+	monthly_learning_lifestyle_xp_gain_mult = 0.1
+
+	same_opinion = -20
+
+	culture_modifier = {
+		parameter = tattoo_valued
+		monthly_prestige = 0.1
+		monthly_piety = 0.1
+		same_culture_opinion = 5 
+	}
+
+	shown_in_ruler_designer = no
+
+	icon = {
+		desc = tattoo.dds 
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_void_dragon_tattoo_desc
+			}
+			desc = trait_void_dragon_tattoo_desc
+		}
+	}
+}
+
+# Cloud
+cloud_tattoo = {
+	category = fame
+
+	physical = yes
+
+	opposites = {
+		avalanche_tattoo
+		cherry_blossom_tattoo
+		volcano_tattoo
+		void_dragon_tattoo
+		vine_tattoo
+	}
+
+	# The bonuses
+	intrigue = 1
+	general_opinion = 2
+
+	same_opinion = 5
+
+	culture_modifier = {
+		parameter = tattoo_valued
+		monthly_prestige = 0.01
+		monthly_piety = 0.01
+		same_culture_opinion = 52
+	}
+
+	shown_in_ruler_designer = no
+
+	icon = {
+		desc = tattoo.dds 
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_cloud_tattoo_desc
+			}
+			desc = trait_cloud_tattoo_desc
+		}
+	}
+}
+
+# vine
+vine_tattoo = {
+	category = fame
+
+	physical = yes
+
+	opposites = {
+		avalanche_tattoo
+		cherry_blossom_tattoo
+		volcano_tattoo
+		void_dragon_tattoo
+		cloud_tattoo
+	}
+
+	# The bonuses
+	intrigue = 1
+	owned_hostile_scheme_success_chance_max_add = 2
+
+	culture_modifier = {
+		parameter = tattoo_valued
+		monthly_prestige = 0.01
+		monthly_piety = 0.01
+		same_culture_opinion = 52
+	}
+
+	shown_in_ruler_designer = no
+
+	icon = {
+		desc = tattoo.dds 
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_vine_tattooo_desc
+			}
+			desc = trait_vine_tattoo_desc
+		}
+	}
+}
+
+######################
+# Magic
+######################
 ### Shugenja Traits
 # Character can talk to the spirits and the kamis
 shindoshi = {
@@ -95,7 +380,6 @@ shindoshi = {
 		ishiken
 		mahotsukai
 	}
-	#group = sorcerer ? Magic ? Shindoshi ? TODO
 
 	birth=0.1 # 0.1% chance de be born with this trait 
 	random_creation=0.1 # 0.1% of new character have this ??
@@ -137,7 +421,6 @@ ishiken = {
 		shindoshi
 		mahotsukai
 	}
-	#group = sorcerer ? Magic ? Shindoshi ? TODO
 
 	birth=0.05 # 0.05% chance de be born with this trait 
 	random_creation=0.05 # 0.05% of new character have this ??

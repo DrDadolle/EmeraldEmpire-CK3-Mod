@@ -1,0 +1,13 @@
+﻿######################
+# Dragon Clan
+######################
+is_tattooed = {
+    OR = {
+        has_trait = avalanche_tattoo
+        has_trait = cherry_blossom_tattoo
+        has_trait = volcano_tattoo
+        has_trait = void_dragon_tattoo
+        has_trait = cloud_tattoo
+        has_trait = vine_tattoo
+    }
+}

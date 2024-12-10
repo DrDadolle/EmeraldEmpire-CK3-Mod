@@ -35,6 +35,11 @@ heritage_phoenix = {
 
 heritage_dragon = {
 	type = heritage
+
+	parameters = {
+		tattoo_valued = yes
+	}
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_dragon

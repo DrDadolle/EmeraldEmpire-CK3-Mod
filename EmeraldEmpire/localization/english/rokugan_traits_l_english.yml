@@ -24,8 +24,36 @@
  trait_natural_white_hair:0 "Natural White Hair"
  trait_natural_white_hair_desc:0 "This character has natural white hair, as some descendant of Kami Doji have. This is a sign of good fortune in the Crane Clan."
  trait_natural_white_hair_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] character has natural white hair, as some descendant of Kami Doji have. This is a sign of good fortune in the Crane Clan."
+#### TATTOOES
+ # avalanche
+ trait_avalanche_tattoo:0 "Tattoo of the Avalanche"
+ trait_avalanche_tattoo_desc:0 "This character has received the mystical tattoo of the Avalanche, granting him focus of mind and patience."
+ trait_avalanche_tattoo_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has received the mystical tattoo of the Avalanche, granting him focus of mind and patience."
+ # cherry_blossoom
+ trait_cherry_blossom_tattoo:0 "Tattoo of the Cherry Blossom"
+ trait_cherry_blossom_tattoo_desc:0 "This character has received the mystical tattoo of the Cherry Blossom, granting him serenity and charisma."
+ trait_cherry_blossom_tattoo_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has received the mystical tattoo of the Cherry Blossom, granting him serenity and charisma."
+ # volcano_tattoo
+ trait_volcano_tattoo:0 "Tattoo of the Volcano"
+ trait_volcano_tattoo_desc:0 "This character has received the mystical tattoo of the Volcano, granting him prowess and strength."
+ trait_volcano_tattoo_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has received the mystical tattoo of the Volcano, granting him prowess and strength."
+ # void_dragon_tattoo
+ trait_void_dragon_tattoo:0 "Tattoo of the Void Dragon"
+ trait_void_dragon_tattoo_desc:0 "This character has received the mystical tattoo of the Void Dragon, granting him knowledge of all things in the universe."
+ trait_void_dragon_tattoo_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has received the mystical tattoo of the Void Dragon, granting him knowledge of all things in the universe."
+ # cloud_tattoo
+ trait_cloud_tattoo:0 "Tattoo of the Cloud"
+ trait_cloud_tattoo_desc:0 "This character has received the mystical tattoo of the Cloud, granting him vigilance and an air of gentleness."
+ trait_cloud_tattoo_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has received the mystical tattoo of the Cloud, granting him vigilance and ruse."
+ # vine_tattoo
+ trait_vine_tattoo:0 "Tattoo of the Vine"
+ trait_vine_tattoo_desc:0 "This character has received the mystical tattoo of the Vine, granting him shrewdness and ruse."
+ trait_vine_tattoo_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has received the mystical tattoo of the Vine, granting him shrewdness and ruse."
+
+
+
 
  # ofushikai
- trait_ofushikai:0 "Ofushikai"
- trait_ofushikai_desc:0 "When Shiba passed, his spirit returned to the blade, where he dwells still, not in Tengoku with his siblings, but in the sword that guided his clan. Ofushikai was haunted by the spirits of all past Phoenix Clan Champions. "
- trait_ofushikai_character_desc:0 "When Shiba passed, his spirit returned to the blade, where he dwells still, not in Tengoku with his siblings, but in the sword that guided his clan. Ofushikai was haunted by the spirits of all past Phoenix Clan Champions."
+#  trait_ofushikai:0 "Ofushikai"
+#  trait_ofushikai_desc:0 "When Shiba passed, his spirit returned to the blade, where he dwells still, not in Tengoku with his siblings, but in the sword that guided his clan. Ofushikai was haunted by the spirits of all past Phoenix Clan Champions. "
+#  trait_ofushikai_character_desc:0 "When Shiba passed, his spirit returned to the blade, where he dwells still, not in Tengoku with his siblings, but in the sword that guided his clan. Ofushikai was haunted by the spirits of all past Phoenix Clan Champions."

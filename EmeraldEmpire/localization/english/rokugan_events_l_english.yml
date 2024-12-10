@@ -102,6 +102,37 @@
  l5r_religious_decision.0001.b "An ishiken ? How lucky !"
  l5r_religious_decision.0001.c "Are you calling yourself a shindoshi ? Get out !"
  ############################
+ ###### Get Mystical Tattoo
+ ############################
+ msg_added_tattoo:0 "You got a Mystical Tattoo inked."
+ l5r_clan_decision.0001.t:0 "Mystical Tattoo"
+ l5r_clan_decision.0001.desc:0 "After washing my back carefully, I lay flat on the table, trying to avoid looking at all the instruments and needle laying next to me. The tattooer will come soon. I must decide on a motif to choose for my tattoo."
+ l5r_clan_decision.0001.a:0 "An avalanche."
+ l5r_clan_decision.0001.a.tt:0 "This Tattoo will grant you focus of mind and patience."
+ l5r_clan_decision.0001.b:0 "A volcano."
+ l5r_clan_decision.0001.b.tt:0 "This Tattoo will grant you prowess and strength."
+ l5r_clan_decision.0001.c:0 "The Void Dragon."
+ l5r_clan_decision.0001.c.tt:0 "This Tattoo will grant you knowledge of all things in the universe."
+ l5r_clan_decision.0001.d:0 "Clouds."
+ l5r_clan_decision.0001.d.tt:0 "This Tattoo will grant you vigilance and an air of gentleness."
+ l5r_clan_decision.0001.e:0 "Vines."
+ l5r_clan_decision.0001.e.tt:0 "This Tattoo will grant you shrewdness and ruse."
+ l5r_clan_decision.0001.f:0 "Cherry Blossom."
+ l5r_clan_decision.0001.f.tt:0 "This Tattoo will grant you erenity and charisma."
+ l5r_clan_decision.0001.g:0 "Actually, I don't like this idea anymore..."
+#  l5r_clan_decision.0001.g.tt:0 ""
+ l5r_clan_decision.0002.t:0 "Mystical Tattoo"
+ l5r_clan_decision.0002.desc.start:0 "After enduring hours of needlework and pain, the tattooer tells me that his work is finished. I stand up and immediately start to feel that something has changed, the sacred ink is working.\n\n"
+ l5r_clan_decision.0002.desc.avalanche:0 "I hear something far away, a rumble. No, I'm mistaken, the rumble seems to be closer, a lot closer. From my back maybe ? No one seems to notice it. My mind is a lot clearer as well, the dilemma I had last week seems to be laughingly easy to resolve now !"
+ l5r_clan_decision.0002.desc.cherry_blossom:0 "Strangely, I fell light and relaxed. I have come in peace with the fact of my own mortality."
+ l5r_clan_decision.0002.desc.volcano:0 "I feel a warmth on my back... No, I feel my whole body feels warm. And powerful. As I leave the room, I start to think that nothing can resist my wrath anymore."
+ l5r_clan_decision.0002.desc.void_dragon:0 "I see it. I see everything. All the possibilities. My mind has been opened to the limitless possibilites of my mortal coil, like Kami Togashi taught others mortals before."
+ l5r_clan_decision.0002.desc.cloud:0 "I feel light, light and sharp. I think I understand how they work. I can see behind their fake smiles, as well as I can fake it myself. "
+ l5r_clan_decision.0002.desc.vine:0 "It seems almost like real vines are wrapped around my legs and arms, it is so painful. But from this pain, I start to see the ramification between the people aroung me. How they work. Let's use it to my advantage"
+ l5r_clan_decision.0002.a:0 "I feel like being reborn."
+ 
+
+ ############################
  ###### Pray to the Kami Decision
  ############################
  l5r_pray_spirit.0001.t:0 "Air Kami"

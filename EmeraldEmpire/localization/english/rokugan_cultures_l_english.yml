@@ -143,6 +143,7 @@
  yogo_desc:0 "#size:15    todo some blabla about the yogo culture.#"
 
  #Dragon
+ culture_parameter_tattoo_valued:0 "[traits|E] such as [GetTrait('avalanche_tattoo').GetName( GetNullCharacter )] or [GetTrait('cherry_blossom_tattoo').GetName( GetNullCharacter )] are seen as [prestige_i][prestigious|E] and [piety_i][pious|E]"
  heritage_dragon_name:0 "Dragon"
  heritage_dragon_collective_noun:0 "Dragons"
  dragon_group_coa_gfx:0 "Dragon"

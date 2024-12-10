@@ -980,7 +980,11 @@ tradition_warrior_monks = {
 	}
 	
 	can_pick = {
-		
+		#L5R Added
+		NOR = { #Replaced by tattooed monks
+			has_cultural_pillar = heritage_dragon
+			has_cultural_tradition = tradition_tattooed_monks
+		}
 	}
 	
 	parameters = {
