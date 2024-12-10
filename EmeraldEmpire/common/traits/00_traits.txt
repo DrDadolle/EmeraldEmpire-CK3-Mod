@@ -8213,43 +8213,45 @@ devoted = {
 	}
 }
 
+
+#L5R Disabled
 # Muslim version of the Blood of the Prophet-trait. Muslim agnatically descended from Muhammed. Female version is localized 'Sayyida'
-sayyid = {
-	category = fame
+# sayyid = {
+# 	category = fame
 	
-	islam_religion_opinion = 5
-	flag = initial_legitimacy_boost
+# 	islam_religion_opinion = 5
+# 	flag = initial_legitimacy_boost
 	
-	ruler_designer_cost = 25
+# 	ruler_designer_cost = 25
 	
-	name = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { NOT = { exists = this } }
-				desc = trait_sayyid
-			}
-			triggered_desc = {
-				trigger = { is_female = yes }
-				desc = trait_sayyida
-			}
-			desc = trait_sayyid
-		}
-	}
+# 	name = {
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { NOT = { exists = this } }
+# 				desc = trait_sayyid
+# 			}
+# 			triggered_desc = {
+# 				trigger = { is_female = yes }
+# 				desc = trait_sayyida
+# 			}
+# 			desc = trait_sayyid
+# 		}
+# 	}
 
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { NOT = { exists = this } }
-				desc = trait_sayyid_desc
-			}
-			desc = trait_sayyid_character_desc
-		}
-	}
+# 	desc = {
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { NOT = { exists = this } }
+# 				desc = trait_sayyid_desc
+# 			}
+# 			desc = trait_sayyid_character_desc
+# 		}
+# 	}
 
-	inherit_chance = 100
-	parent_inheritance_sex = male
-	inherit_from_real_father = no
-}
+# 	inherit_chance = 100
+# 	parent_inheritance_sex = male
+# 	inherit_from_real_father = no
+# }
 
 # Zoroastrian version of the Savior-trait.
  #L5R Disabled
