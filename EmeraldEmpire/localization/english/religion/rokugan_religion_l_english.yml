@@ -13,7 +13,7 @@
  doctrine_parameter_hostility_override_special_doctrine_imperial_cult:0 "Other Rokugani [faiths|E] that have the Official Imperial Cult doctrine are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_astray_tooltippable$"
  
  special_doctrine_is_rokugani_faith_name:0 "The Three Imperial Faiths"
- special_doctrine_is_rokugani_faith_desc:0 "Rokugan's religious beliefs actually encompass three different forms of worship - Shintao, Fortunism, and ancestral worship - all of which are united by the will of the Emperor into a single religious system. Gaijin religions or the veneration of the Dark Kami Fu Leng are heresy."
+ special_doctrine_is_rokugani_faith_desc:0 "Rokugan's religious beliefs actually encompass three different forms of worship - Shintao, Fortunism, and ancestral worship - all of which are united by the will of the Emperor into a single religious system. Gaijin religions or the veneration of the Dark Kami [fuleng|E] are heresy."
  doctrine_parameter_hostility_override_tenet_rejection_of_the_kami:0 "Rokugani [faiths|E] with the $tenet_rejection_of_the_kami_name$ tenet are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_astray_tooltippable$"
  doctrine_parameter_hostility_override_tenet_rokugani_syncretism:0 "Gaijin [faiths|E] with the $tenet_rokugani_syncretism_name$ tenet are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
  doctrine_parameter_is_rokugani_faith_righteous_desc:0 ""
@@ -22,7 +22,7 @@
  doctrine_parameter_is_rokugani_faith_evil_desc:0 ""
 
  special_doctrine_is_shadowlands_faith_name:0 "Veneration of Jigoku"
- special_doctrine_is_shadowlands_faith_desc:0 "Although all creatures in the Shadowlands reveres the power of Jigoku, they have their own way to do so. Internal strife is common among them. However, they all agree that the Rokugani faiths are meant to be destroyed, by all means necessary"
+ special_doctrine_is_shadowlands_faith_desc:0 "Although all creatures in the [shadowlands|E]] reveres the power of [jigoku|E], they have their own way to do so. Internal strife is common among them. However, they all agree that the Rokugani faiths are meant to be destroyed, by all means necessary"
  doctrine_parameter_hostility_override_tenet_shadowlands_syncretism:0 "Gaijin [faiths|E] with the $tenet_shadowlands_syncretism$ tenet are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
  doctrine_parameter_is_shadowlands_faith_righteous_desc:0 ""
  doctrine_parameter_is_shadowlands_faith_astray_desc:0 ""
@@ -41,7 +41,7 @@
  doctrine_parameter_doctrine_rejection_of_the_kami_desc:0 ""
 
  tenet_shadowlands_syncretism_name:0 "Veneration of Jigoku"
- tenet_shadowlands_syncretism_desc:0 "There is a lot of way to venerate the evil power of Jigoku. Even faiths outside of Rokugan could venerate the twisted spirits of Jigoku."
+ tenet_shadowlands_syncretism_desc:0 "There is a lot of way to venerate the evil power of [jigoku|E]. Even faiths outside of [rokugan|E] could venerate the twisted spirits of Jigoku."
  doctrine_parameter_doctrine_shadowlands_veneration_desc:0 ""
 
  tenet_amaterasu_worship_name:0 "Sun Workship"

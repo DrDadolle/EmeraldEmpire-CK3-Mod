@@ -5,7 +5,7 @@
  fortunism_religion_adj:0 "Fortunist"
  fortunism_religion_adherent:0 "Fortunist"
  fortunism_religion_adherent_plural:0 "Fortunists"
- fortunism_religion_desc:0 "The people of Rokugan revered and appeased the elemental spirits of nature, agriculture, and other domains. This worship of the spirits and gods who dwelled in Tengoku and the myriad lesser spirits dwelling in Ningen-dō was known as Fortunism."
+ fortunism_religion_desc:0 "The people of [rokugan|E] revered and appeased the elemental spirits of nature, agriculture, and other domains. This worship of the spirits and gods who dwelled in [tengoku|E] and the myriad lesser [kami|E] dwelling in [ningendo|E] was known as Fortunism."
 
  #####
  # Seven Fortunes Faith
@@ -13,7 +13,7 @@
  seven_fortunes_adj:0 "Fortunist"
  seven_fortunes_adherent:0 "Fortunist"
  seven_fortunes_adherent_plural:0 "Fortunists"
- seven_fortunes_desc:0 "The Seven Great Fortunes received a disproportionate amount of worship and obeisance, but their purviews were treasured above all others in Rokugan."
+ seven_fortunes_desc:0 "The Seven Great Fortunes received a disproportionate amount of worship and obeisance, but their purviews were treasured above all others in [rokugan|E]."
  # High God
  fortunism_high_god_name:0 "Amaterasu"
  fortunism_high_god_name_possessive:0 "Amaterasu's"
@@ -51,8 +51,8 @@
  fortunism_house_of_worship_plural:0 "Shrines"
  fortunism_religious_symbol:0 "fortunism_religious_symbol"
  fortunism_religious_text:0 "fortunism_religious_text"
- fortunism_religious_head_title:0 "fortunism_religious_head_title"
- fortunism_religious_head_title_name:0 "fortunism_religious_head_title_name"
+ fortunism_religious_head_title:0 "Son of Heaven"
+ fortunism_religious_head_title_name:0 "Kingdom of Heaven"
  fortunism_devotee_male:0 "fortunism_devotee_male"
  fortunism_devotee_male_plural:0 "fortunism_devotee_male_plural"
  fortunism_devotee_female:0 "fortunism_devotee_female"
@@ -77,7 +77,7 @@
  cult_amaterasu_adj:0 "Amaterasu"
  cult_amaterasu_adherent:0 "Amaterasu adept"
  cult_amaterasu_adherent_plural:0 "Amaterasu adepts"
- cult_amaterasu_desc:0 "Amaterasu, as the mother of the Kami, the mother of all of humanity, and chief of the Fortunes, is the central deity of the cosmology of Rokugan and as such receives the devotion she deserves."
+ cult_amaterasu_desc:0 "Amaterasu, as the mother of the Kami, the mother of all of humanity, and chief of the Fortunes, is the central deity of the cosmology of [rokugan|E] and as such receives the devotion she deserves."
 
  #####
  # cult_onotangu

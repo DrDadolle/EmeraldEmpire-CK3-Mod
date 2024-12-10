@@ -5,7 +5,7 @@
  jigoku_religion_adj:0 "Jigokuist"
  jigoku_religion_adherent:0 "Jigokuist"
  jigoku_religion_adherent_plural:0 "Jigokuists"
- jigoku_religion_desc:0 "The creature of the Shadowlands and user of blood magic revered and fear the power of the spiritual realm of Jigoku, the realm of Evil."
+ jigoku_religion_desc:0 "The creature of the [shadowlands|E] and user of [maho|E] revered and fear the power of the spiritual realm of the [realmofevil|E]."
 
  #####
  # Cult of Fu Leng Faith
@@ -13,7 +13,7 @@
  faith_cult_of_fu_leng_adj:0 "Cult of Dark Kami"
  faith_cult_of_fu_leng_adherent:0 "Child of the Dark Kami"
  faith_cult_of_fu_leng_adherent_plural:0 "Children of the Dark Kami"
- faith_cult_of_fu_leng_desc:0 "The Dark Kami fell from Ningen-do to Jigoku. He was sealed by the Seven Thunders during the First War and bind by the Dark Scrolls, but many people to release the Dark Kami from them."
+ faith_cult_of_fu_leng_desc:0 "The Dark Kami fell from [ningendo|E] to [jigoku|E]. He was sealed by the Seven Thunders during the First War and bind by the Dark Scrolls, but many people seeks to release the Dark Kami from them."
  # High God
  shadowlands_high_god_name:0 "The Dark Kami"
  shadowlands_high_god_name_possessive:0 "The Dark Kami's"
@@ -28,8 +28,8 @@
  shadowlands_house_of_worship_plural:0 "Dark Shrines"
  shadowlands_religious_symbol:0 "shadowlands_religious_symbol"
  shadowlands_religious_text:0 "shadowlands_religious_text"
- shadowlands_religious_head_title:0 "shadowlands_religious_head_title"
- shadowlands_religious_head_title_name:0 "shadowlands_religious_head_title_name"
+ shadowlands_religious_head_title:0 "Son of Jigoku"
+ shadowlands_religious_head_title_name:0 "Dark Dominion"
  shadowlands_devotee_male:0 "shadowlands_devotee_male"
  shadowlands_devotee_male_plural:0 "shadowlands_devotee_male_plural"
  shadowlands_devotee_female:0 "shadowlands_devotee_female"
@@ -54,7 +54,7 @@
  faith_bloodspeaker_adj:0 "The Bloodspeakers"
  faith_bloodspeaker_adherent:0 "Bloodspeaker"
  faith_bloodspeaker_adherent_plural:0 "Bloodspeakers"
- faith_bloodspeaker_desc:0 "The Bloodspeakers are were an order of maho-tsukai created by Iuchiban in the 5th century. In the following centuries, the Bloodspeakers formed a secret society that infected all social layers of the Empire."
+ faith_bloodspeaker_desc:0 "The Bloodspeakers are were an order of [mahotsukai|E] created by Iuchiban in the 5th century. In the following centuries, the Bloodspeakers formed a secret society that infected all social layers of the Empire."
  # Other High God / Creator
  bloodspeaker_high_god_name:0 "Iuchiban"
  bloodspeaker_high_god_name_possessive:0 "Iuchiban's"
