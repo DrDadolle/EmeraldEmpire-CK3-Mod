@@ -1961,7 +1961,9 @@ scripted_effect ep3_emperor_yearly_8060_defect_effect = {
 			# 	}
 			# 	change_government = clan_government
 			# }
-			else = { change_government = feudal_government }
+			# else = {
+				 change_government = feudal_government
+			#  }
 		}
 		hidden_effect = {
 			every_vassal = {
@@ -1979,7 +1981,9 @@ scripted_effect ep3_emperor_yearly_8060_defect_effect = {
 					# 	}
 					# 	change_government = clan_government
 					# }
-					else = { change_government = feudal_government }
+					# else = { 
+						change_government = feudal_government 
+					# }
 				}
 			}
 		}
