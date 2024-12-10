@@ -11,7 +11,10 @@
 #########################
 scripted_effect resolve_tattoo_effect = {
 	if = {
-		limit = { scope:tattoo = flag:avalanche}
+		limit = { 
+			exists = scope:tattoo
+			scope:tattoo = flag:avalanche
+		}
 		send_interface_toast = {
 			title = msg_added_tattoo
 			left_icon = root
@@ -19,7 +22,10 @@ scripted_effect resolve_tattoo_effect = {
 		}
 	}
 	else_if = {
-		limit = { scope:tattoo = flag:cherry_blossom}
+		limit = { 
+			exists = scope:tattoo
+			scope:tattoo = flag:cherry_blossom
+		}
 		send_interface_toast = {
 			title = msg_added_tattoo
 			left_icon = root
@@ -27,7 +33,10 @@ scripted_effect resolve_tattoo_effect = {
 		}
 	}
 	else_if = {
-		limit = { scope:tattoo = flag:volcano}
+		limit = {
+			exists = scope:tattoo
+			scope:tattoo = flag:volcano
+		}
 		send_interface_toast = {
 			title = msg_added_tattoo
 			left_icon = root
@@ -35,7 +44,10 @@ scripted_effect resolve_tattoo_effect = {
 		}
 	}
 	else_if = {
-		limit = { scope:tattoo = flag:cloud}
+		limit = { 
+			exists = scope:tattoo
+			scope:tattoo = flag:cloud
+		}
 		send_interface_toast = {
 			title = msg_added_tattoo
 			left_icon = root
@@ -43,7 +55,10 @@ scripted_effect resolve_tattoo_effect = {
 		}
 	}
 	else_if = {
-		limit = { scope:tattoo = flag:vine}
+		limit = { 
+			exists = scope:tattoo
+			scope:tattoo = flag:vine
+		}
 		send_interface_toast = {
 			title = msg_added_tattoo
 			left_icon = root
@@ -51,7 +66,10 @@ scripted_effect resolve_tattoo_effect = {
 		}
 	}
 	else_if = {
-		limit = { scope:tattoo = flag:void_dragon}
+		limit = {
+			exists = scope:tattoo 
+			scope:tattoo = flag:void_dragon
+		}
 		send_interface_toast = {
 			title = msg_added_tattoo
 			left_icon = root
@@ -72,7 +90,10 @@ scripted_effect resolve_tattoo_effect = {
 			}
 			30 = {
 				trigger = {
-					has_trait = lunatic
+					OR = {
+						has_trait = lunatic_1
+						has_trait = lunatic_genetic
+					}
 				}
 				death = {
 					death_reason = death_accident
@@ -81,10 +102,11 @@ scripted_effect resolve_tattoo_effect = {
 			25 = {
 				trigger = {
 					NOT = {
-						has_trait = lunatic
+						has_trait = lunatic_1
+						has_trait = lunatic_genetic
 					}
 				}
-				add_trait = lunatic
+				add_trait = lunatic_1
 			}
 			20 = {
 				#Nothing happens
@@ -92,7 +114,8 @@ scripted_effect resolve_tattoo_effect = {
 			5 = {
 				trigger = {
 					NOT = {
-						has_trait = lunatic
+						has_trait = lunatic_1
+						has_trait = lunatic_genetic
 					}
 				}
 				death = { 
@@ -153,8 +176,10 @@ l5r_clan_decision.0001 = {
 		trait = patient
 
 		name = l5r_clan_decision.0001.a
-		show_as_tooltip = { resolve_tattoo_effect = yes }
-		custom_tooltip = l5r_clan_decision.0001.a.tt
+		show_as_tooltip = { 
+			resolve_tattoo_effect = yes 
+			add_trait = avalanche_tattoo
+		}
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -186,8 +211,10 @@ l5r_clan_decision.0001 = {
 		trait = zealous
 		
 		name = l5r_clan_decision.0001.b
-		show_as_tooltip = { resolve_tattoo_effect = yes }
-		custom_tooltip = l5r_clan_decision.0001.b.tt
+		show_as_tooltip = { 
+			resolve_tattoo_effect = yes 
+			add_trait = volcano_tattoo
+		}
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -215,8 +242,10 @@ l5r_clan_decision.0001 = {
 		trait = lunatic
 
 		name = l5r_clan_decision.0001.c
-		show_as_tooltip = { resolve_tattoo_effect = yes }
-		custom_tooltip = l5r_clan_decision.0001.c.tt
+		show_as_tooltip = { 
+			resolve_tattoo_effect = yes 
+			add_trait = void_dragon_tattoo
+		}
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -248,8 +277,10 @@ l5r_clan_decision.0001 = {
 		trait = honest
 
 		name = l5r_clan_decision.0001.d
-		show_as_tooltip = { resolve_tattoo_effect = yes }
-		custom_tooltip = l5r_clan_decision.0001.d.tt
+		show_as_tooltip = { 
+			resolve_tattoo_effect = yes 
+			add_trait = cloud_tattoo
+		}
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -283,9 +314,10 @@ l5r_clan_decision.0001 = {
 		trait = ambitious
 
 		name = l5r_clan_decision.0001.e
-		show_as_tooltip = { resolve_tattoo_effect = yes }
-		custom_tooltip = l5r_clan_decision.0001.e.tt
-
+		show_as_tooltip = { 
+			resolve_tattoo_effect = yes 
+			add_trait = vine_tattoo
+		}
 		
         stress_impact = {
 			craven = medium_stress_gain
@@ -307,7 +339,10 @@ l5r_clan_decision.0001 = {
 	# Default choice
 	option = {
 		name = l5r_clan_decision.0001.f
-		custom_tooltip = l5r_clan_decision.0001.f.tt
+		show_as_tooltip = { 
+			resolve_tattoo_effect = yes 
+			add_trait = cherry_blossom_tattoo
+		}
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -371,7 +406,16 @@ l5r_clan_decision.0002 = {
 		}
 	}
 	
-	#L5R TODO : no portrait CHECK
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				has_trait = cynical
+			}
+			animation = disbelief
+		}
+		animation = personality_rational
+	}
 
 	immediate = {
 		# get tatooed

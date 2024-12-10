@@ -356,7 +356,7 @@ vine_tattoo = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_vine_tattooo_desc
+				desc = trait_vine_tattoo_desc
 			}
 			desc = trait_vine_tattoo_desc
 		}
@@ -457,8 +457,7 @@ mahotsukai_3 = {
 
 	ruler_designer_cost = 150
 
-	group = mahotsukai
-	level = 3
+
 
 	health = 4
 	fertility = -0.5
@@ -502,6 +501,9 @@ mahotsukai_3 = {
 		opinion_modifier = witchcraft_intolerant
 		ignore_opinion_value_if_same_trait = yes
 	}
+
+	group = mahotsukai
+	level = 3
 }
 
 mahotsukai_2 = {
@@ -510,8 +512,6 @@ mahotsukai_2 = {
 
 	ruler_designer_cost = 100
 
-	group = mahotsukai
-	level = 2
 
 	health = 2
 	fertility = -0.3
@@ -554,6 +554,9 @@ mahotsukai_2 = {
 		opinion_modifier = witchcraft_intolerant
 		ignore_opinion_value_if_same_trait = yes
 	}
+	
+	group = mahotsukai
+	level = 2
 }
 
 mahotsukai_1 = {
@@ -562,8 +565,7 @@ mahotsukai_1 = {
 
 	ruler_designer_cost = 50
 
-	group = mahotsukai
-	level = 1
+
 
 	health = 1
 	fertility = -0.2
@@ -603,6 +605,8 @@ mahotsukai_1 = {
 		opinion_modifier = witchcraft_intolerant
 		ignore_opinion_value_if_same_trait = yes
 	}
+	group = mahotsukai
+	level = 1
 }
 
 

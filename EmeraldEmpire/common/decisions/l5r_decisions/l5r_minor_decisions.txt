@@ -270,7 +270,9 @@ mystical_tattoes_decision = {
 	selection_tooltip = mystical_tattoes_decision_tooltip
 
 	is_shown = {
-		can_mystical_tattooes = yes
+		culture = {
+			has_cultural_parameter = can_mystical_tattooes
+		}
 		is_tattooed = no
 	}
 
@@ -284,7 +286,7 @@ mystical_tattoes_decision = {
 
 	effect = {
 		trigger_event = {
-			id = l5r_religious_decision.0001
+			id = l5r_clan_decision.0001
 		}
 	}
 	

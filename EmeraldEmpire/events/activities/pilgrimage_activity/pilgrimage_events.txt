@@ -11391,317 +11391,317 @@ pilgrimage.6750 = {
 # 	}
 # }
 
-scripted_effect pilgrimage_6770_relic_effect = {
-	if = {
-		limit = { has_trait = trusting }
-		add_piety = medium_piety_gain
-		add_prestige = medium_prestige_gain
-	}
-	else = {
-		add_piety = minor_piety_gain
-	}
-}
+# scripted_effect pilgrimage_6770_relic_effect = {
+# 	if = {
+# 		limit = { has_trait = trusting }
+# 		add_piety = medium_piety_gain
+# 		add_prestige = medium_prestige_gain
+# 	}
+# 	else = {
+# 		add_piety = minor_piety_gain
+# 	}
+# }
 
-scripted_trigger pilgrimage_6770_trigger = {
-	age = { 20 60 }
-	is_lowborn = yes
-	has_faith = root.faith #We are looking for a relic merchant who sells relics we have an interest in and can use.
-	stewardship = {
-		min_template_decent_skill
-		max_template_decent_skill
-	}
-}
+# scripted_trigger pilgrimage_6770_trigger = {
+# 	age = { 20 60 }
+# 	is_lowborn = yes
+# 	has_faith = root.faith #We are looking for a relic merchant who sells relics we have an interest in and can use.
+# 	stewardship = {
+# 		min_template_decent_skill
+# 		max_template_decent_skill
+# 	}
+# }
 
 #Do you wanna buy a cool relic?
 #by Veronica Pazos
-pilgrimage.6770 = {
-	type = activity_event
-	title = pilgrimage.6770.t
-	desc = {
-		desc = pilgrimage.6770.desc.intro
-		first_valid = {
-			# triggered_desc = {
-			# 	trigger = {
-			# 		religion = religion:christianity_religion
-			# 	}
-			# 	desc = pilgrimage.6770.desc.christian
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		religion = religion:islam_religion
-			# 	}
-			# 	desc = pilgrimage.6770.desc.islam
-			# }
-			triggered_desc = {
-				# trigger = {
-				# 	religion = religion:buddhism_religion
-				# }
-				desc = pilgrimage.6770.desc.buddhist
-			}
-			# triggered_desc = {
-			# 	trigger = {
-			# 		religion = religion:judaism_religion
-			# 	}
-			# 	desc = pilgrimage.6770.desc.judaism
-			# }
-			desc = pilgrimage.6770.desc.fallback
-		}
-		desc = pilgrimage.6770.desc.outro
-	}
-	theme = pilgrimage_destination
-	override_background = { reference = market }
-	left_portrait = {
-		character = root
-		animation = thinking
-	}
-	right_portrait = {
-		character = scope:relic_merchant
-		animation = ecstasy
-	}
-	artifact = {
-		target = scope:merchant_relic
-		position = lower_center_portrait
-	}
-	cooldown = { years = 1 }
-	immediate = {
-		location = { save_scope_as = relic_location }
-		if = {
-			limit = {
-				any_pool_character = {
-					province = root.location
-					pilgrimage_6770_trigger = yes
-				}
-			}
-			random_pool_character = {
-				province = root.location
-				limit = { pilgrimage_6770_trigger = yes }
-				save_scope_as = relic_merchant
-			}
-		}
-		else = {
-			create_character = {
-				template = merchant_template
-				dynasty = none
-				location = root.location
-				culture = root.location.culture
-				faith = root.faith #We are interested in relics we can use
-				save_scope_as = relic_merchant
-			}
-			set_variable = created_random_merchant_var
-		}
-		hidden_effect_new_object = {
-			# if = {
-			# 	limit = { religion = religion:christianity_religion }
-			# 	create_artifact_pedestal_reliquary_christian_effect = { OWNER = scope:relic_merchant }
-			# }
-			# else_if = {
-			# 	limit = { religion = religion:islam_religion }
-			# 	create_artifact_pedestal_reliquary_islam_effect = { OWNER = scope:relic_merchant }
-			# }
-			# else_if = {
-			# 	limit = { religion = religion:buddhism_religion }
-				create_artifact_pedestal_reliquary_buddhism_effect = { OWNER = scope:relic_merchant }
-			# }
-			# else_if = {
-			# 	limit = { religion = religion:judaism_religion }
-			# 	create_artifact_pedestal_reliquary_judaism_effect = { OWNER = scope:relic_merchant }
-			# }
-			# else = {
-			# 	create_artifact_sculpture_religious_effect = { OWNER = scope:relic_merchant } #  This causes an asset error
-			# }
-			scope:newly_created_artifact = {
-				save_scope_as = merchant_relic
-				if = {
-					limit = {
-						NOT = {
-							root = { has_royal_court = yes }
-						}
-					}
-					reforge_artifact = { type = miscellaneous }
-				}
-			}
-		}
-	}
-	weight_multiplier = {
-		base = 1
-	}
-	#Buy
-	option = {
-		name = pilgrimage.6770.a
-		bonus_to_all_types_effect = yes
-		involved_activity ?= {
-			add_activity_log_entry = {
-				key = pilgrimage_acquired_relic_log
-				tags = { relic }
-				score = 50
-				character = root
-				artifact = scope:newly_created_artifact
-				location = scope:relic_location
-				show_in_conclusion = yes
-				# Effects
-				root = { pilgrimage_6770_relic_effect = yes }
-				scope:merchant_relic = { set_owner = root }
-			}
-		}
-		pay_short_term_gold = {
-			target = scope:relic_merchant
-			gold = {
-				value = minor_gold_value
-				max = 10
-			}
-		}
-		stress_impact = {
-			greedy = minor_stress_impact_gain
-			avaricious = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			modifier = {
-				factor = 0
-				short_term_gold <= minor_gold_value
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = greedy
-					has_trait = avaricious
-				}
-			}
-		}
-	}
-	#Barter
-	option = {
-		name = pilgrimage.6770.b
-		worldly_type_option_effect = yes
-		duel = {
-			skills = { diplomacy stewardship }
-			target = scope:relic_merchant
-			50 = {
-				desc = pilgrimage.6770.b.success
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-				}
-				send_interface_toast = {
-					title = pilgrimage.6770.b.success
-					left_icon = root
-					involved_activity ?= {
-						add_activity_log_entry = {
-							key = pilgrimage_acquired_relic_log
-							tags = { relic }
-							score = 50
-							character = root
-							artifact = scope:newly_created_artifact
-							location = scope:relic_location
-							show_in_conclusion = yes
-							# Effects
-							root = { pilgrimage_6770_relic_effect = yes }
-							scope:merchant_relic = { set_owner = root }
-						}
-					}
-					pay_short_term_gold = {
-						target = scope:relic_merchant
-						gold = {
-							value = minor_gold_value
-							max = 5
-						}
-					}
-				}
-			}
-			50 = {
-				desc = pilgrimage.6770.b.failure
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-				}
-				send_interface_toast = {
-					title = pilgrimage.6770.b.failure
-					left_icon = root
-					scope:relic_merchant = {
-						add_opinion = {
-							target = root
-							modifier = insulted_opinion
-							opinion = -10
-						}
-					}
-				}
-			}
-		}
-		stress_impact = {
-			lazy = minor_stress_impact_gain
-			gregarious = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			modifier = {
-				factor = 0
-				short_term_gold <= minor_gold_value
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = lazy
-					has_trait = gregarious
-				}
-			}
-		}
-	}
-	#Nah
-	option = {
-		name = pilgrimage.6770.c
-		stress_impact = {
-			zealous = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			modifier = {
-				factor = 0
-				has_trait = zealous
-			}
-		}
-	}
-	#Is this... a real piece?
-	option = {
-		name = pilgrimage.6770.d
-		trigger = { learning >= high_skill_rating }
-		bonus_to_all_types_effect = yes
-		if = {
-			limit = { has_lifestyle = learning_lifestyle }
-			add_learning_lifestyle_xp = major_lifestyle_experience
-		}
-		else = {
-			add_character_modifier = keen_eye_modifier
-		}
-		stress_impact = {
-			base = major_stress_impact_loss
-			zealous = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			modifier = {
-				factor = 0
-				has_trait = zealous
-			}
-		}
-	}
-	after = {
-		if = {
-			limit = {
-				is_ai = yes
-				has_variable = created_random_merchant_var #we only kill them if we created them, not if they came from the pool
-			}
-			scope:relic_merchant = {
-				if = {
-					limit = {
-						root = { is_ai = yes }
-					}
-					silent_disappearance_effect = yes
-				}
-			}
-			remove_variable = created_random_merchant_var
-		}
-	}
-}
+# pilgrimage.6770 = {
+# 	type = activity_event
+# 	title = pilgrimage.6770.t
+# 	desc = {
+# 		desc = pilgrimage.6770.desc.intro
+# 		first_valid = {
+# 			# triggered_desc = {
+# 			# 	trigger = {
+# 			# 		religion = religion:christianity_religion
+# 			# 	}
+# 			# 	desc = pilgrimage.6770.desc.christian
+# 			# }
+# 			# triggered_desc = {
+# 			# 	trigger = {
+# 			# 		religion = religion:islam_religion
+# 			# 	}
+# 			# 	desc = pilgrimage.6770.desc.islam
+# 			# }
+# 			triggered_desc = {
+# 				# trigger = {
+# 				# 	religion = religion:buddhism_religion
+# 				# }
+# 				desc = pilgrimage.6770.desc.buddhist
+# 			}
+# 			# triggered_desc = {
+# 			# 	trigger = {
+# 			# 		religion = religion:judaism_religion
+# 			# 	}
+# 			# 	desc = pilgrimage.6770.desc.judaism
+# 			# }
+# 			desc = pilgrimage.6770.desc.fallback
+# 		}
+# 		desc = pilgrimage.6770.desc.outro
+# 	}
+# 	theme = pilgrimage_destination
+# 	override_background = { reference = market }
+# 	left_portrait = {
+# 		character = root
+# 		animation = thinking
+# 	}
+# 	right_portrait = {
+# 		character = scope:relic_merchant
+# 		animation = ecstasy
+# 	}
+# 	artifact = {
+# 		target = scope:merchant_relic
+# 		position = lower_center_portrait
+# 	}
+# 	cooldown = { years = 1 }
+# 	immediate = {
+# 		location = { save_scope_as = relic_location }
+# 		if = {
+# 			limit = {
+# 				any_pool_character = {
+# 					province = root.location
+# 					pilgrimage_6770_trigger = yes
+# 				}
+# 			}
+# 			random_pool_character = {
+# 				province = root.location
+# 				limit = { pilgrimage_6770_trigger = yes }
+# 				save_scope_as = relic_merchant
+# 			}
+# 		}
+# 		else = {
+# 			create_character = {
+# 				template = merchant_template
+# 				dynasty = none
+# 				location = root.location
+# 				culture = root.location.culture
+# 				faith = root.faith #We are interested in relics we can use
+# 				save_scope_as = relic_merchant
+# 			}
+# 			set_variable = created_random_merchant_var
+# 		}
+# 		hidden_effect_new_object = {
+# 			# if = {
+# 			# 	limit = { religion = religion:christianity_religion }
+# 			# 	create_artifact_pedestal_reliquary_christian_effect = { OWNER = scope:relic_merchant }
+# 			# }
+# 			# else_if = {
+# 			# 	limit = { religion = religion:islam_religion }
+# 			# 	create_artifact_pedestal_reliquary_islam_effect = { OWNER = scope:relic_merchant }
+# 			# }
+# 			# else_if = {
+# 			# 	limit = { religion = religion:buddhism_religion }
+# 				create_artifact_pedestal_reliquary_buddhism_effect = { OWNER = scope:relic_merchant }
+# 			# }
+# 			# else_if = {
+# 			# 	limit = { religion = religion:judaism_religion }
+# 			# 	create_artifact_pedestal_reliquary_judaism_effect = { OWNER = scope:relic_merchant }
+# 			# }
+# 			# else = {
+# 			# 	create_artifact_sculpture_religious_effect = { OWNER = scope:relic_merchant } #  This causes an asset error
+# 			# }
+# 			scope:newly_created_artifact = {
+# 				save_scope_as = merchant_relic
+# 				if = {
+# 					limit = {
+# 						NOT = {
+# 							root = { has_royal_court = yes }
+# 						}
+# 					}
+# 					reforge_artifact = { type = miscellaneous }
+# 				}
+# 			}
+# 		}
+# 	}
+# 	weight_multiplier = {
+# 		base = 1
+# 	}
+# 	#Buy
+# 	option = {
+# 		name = pilgrimage.6770.a
+# 		bonus_to_all_types_effect = yes
+# 		involved_activity ?= {
+# 			add_activity_log_entry = {
+# 				key = pilgrimage_acquired_relic_log
+# 				tags = { relic }
+# 				score = 50
+# 				character = root
+# 				artifact = scope:newly_created_artifact
+# 				location = scope:relic_location
+# 				show_in_conclusion = yes
+# 				# Effects
+# 				root = { pilgrimage_6770_relic_effect = yes }
+# 				scope:merchant_relic = { set_owner = root }
+# 			}
+# 		}
+# 		pay_short_term_gold = {
+# 			target = scope:relic_merchant
+# 			gold = {
+# 				value = minor_gold_value
+# 				max = 10
+# 			}
+# 		}
+# 		stress_impact = {
+# 			greedy = minor_stress_impact_gain
+# 			avaricious = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			modifier = {
+# 				factor = 0
+# 				short_term_gold <= minor_gold_value
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					has_trait = greedy
+# 					has_trait = avaricious
+# 				}
+# 			}
+# 		}
+# 	}
+# 	#Barter
+# 	option = {
+# 		name = pilgrimage.6770.b
+# 		worldly_type_option_effect = yes
+# 		duel = {
+# 			skills = { diplomacy stewardship }
+# 			target = scope:relic_merchant
+# 			50 = {
+# 				desc = pilgrimage.6770.b.success
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 				}
+# 				send_interface_toast = {
+# 					title = pilgrimage.6770.b.success
+# 					left_icon = root
+# 					involved_activity ?= {
+# 						add_activity_log_entry = {
+# 							key = pilgrimage_acquired_relic_log
+# 							tags = { relic }
+# 							score = 50
+# 							character = root
+# 							artifact = scope:newly_created_artifact
+# 							location = scope:relic_location
+# 							show_in_conclusion = yes
+# 							# Effects
+# 							root = { pilgrimage_6770_relic_effect = yes }
+# 							scope:merchant_relic = { set_owner = root }
+# 						}
+# 					}
+# 					pay_short_term_gold = {
+# 						target = scope:relic_merchant
+# 						gold = {
+# 							value = minor_gold_value
+# 							max = 5
+# 						}
+# 					}
+# 				}
+# 			}
+# 			50 = {
+# 				desc = pilgrimage.6770.b.failure
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 				}
+# 				send_interface_toast = {
+# 					title = pilgrimage.6770.b.failure
+# 					left_icon = root
+# 					scope:relic_merchant = {
+# 						add_opinion = {
+# 							target = root
+# 							modifier = insulted_opinion
+# 							opinion = -10
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		stress_impact = {
+# 			lazy = minor_stress_impact_gain
+# 			gregarious = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			modifier = {
+# 				factor = 0
+# 				short_term_gold <= minor_gold_value
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					has_trait = lazy
+# 					has_trait = gregarious
+# 				}
+# 			}
+# 		}
+# 	}
+# 	#Nah
+# 	option = {
+# 		name = pilgrimage.6770.c
+# 		stress_impact = {
+# 			zealous = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			modifier = {
+# 				factor = 0
+# 				has_trait = zealous
+# 			}
+# 		}
+# 	}
+# 	#Is this... a real piece?
+# 	option = {
+# 		name = pilgrimage.6770.d
+# 		trigger = { learning >= high_skill_rating }
+# 		bonus_to_all_types_effect = yes
+# 		if = {
+# 			limit = { has_lifestyle = learning_lifestyle }
+# 			add_learning_lifestyle_xp = major_lifestyle_experience
+# 		}
+# 		else = {
+# 			add_character_modifier = keen_eye_modifier
+# 		}
+# 		stress_impact = {
+# 			base = major_stress_impact_loss
+# 			zealous = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			modifier = {
+# 				factor = 0
+# 				has_trait = zealous
+# 			}
+# 		}
+# 	}
+# 	after = {
+# 		if = {
+# 			limit = {
+# 				is_ai = yes
+# 				has_variable = created_random_merchant_var #we only kill them if we created them, not if they came from the pool
+# 			}
+# 			scope:relic_merchant = {
+# 				if = {
+# 					limit = {
+# 						root = { is_ai = yes }
+# 					}
+# 					silent_disappearance_effect = yes
+# 				}
+# 			}
+# 			remove_variable = created_random_merchant_var
+# 		}
+# 	}
+# }
 
 #Recruit skillful local
 #by Veronica Pazos

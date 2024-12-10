@@ -263,13 +263,6 @@ culture_has_archer_cavalry_maa = {
 	}
 }
 
-culture_has_monster_maa = {
-	OR = {
-		#L5R Modified
-		always = no
-	}
-}
-
 # Language trigger - Makes languages available when you diverge your culture
 language_is_shown_trigger = {
 	scope:character = {
@@ -325,10 +318,11 @@ is_valid_for_hybridising_trigger = {
 			culture_age >= culture_hybrid_cooldown
 			#L5R TODO here to update for future shadowlands races
 		}
-		custom_description = {
-			text = same_race
-			culture = { same_race_culture = { TARGET = $CULTURE$ } }
-		}
+		#L5R Take from Lotr mod
+		# custom_description = {
+		# 	text = same_race
+		# 	culture = { same_race_culture = { TARGET = $CULTURE$ } }
+		# }
 		trigger_if = {
 			limit = {
 				NAND = {
@@ -386,12 +380,6 @@ cultures_share_relevant_region_trigger = {
 	##L5R TODO - add geographic regions here
 	# L5R Modified
 	OR = {
-		AND = {
-			culture_overlaps_geographical_region = adventure_west
-			scope:culture = {
-				culture_overlaps_geographical_region = adventure_west
-			}
-		}
 		AND = {
 			culture_overlaps_geographical_region = rokugan_crab
 			scope:culture = {

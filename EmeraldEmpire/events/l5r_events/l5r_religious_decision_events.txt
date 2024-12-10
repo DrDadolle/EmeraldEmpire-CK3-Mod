@@ -47,12 +47,13 @@ l5r_religious_decision.0001 = {
 
 	#Accept the shindoshi
 	option = { 
+		name = l5r_religious_decision.0001.a
 		trigger = {
 			scope:isawa_shindoshi = {
 				has_trait = shindoshi
 			}
 		}
-		name = l5r_religious_decision.0001.a
+
 		pay_short_term_gold = {
 			target = scope:isawa_shindoshi_patron
 			gold = 25
@@ -62,12 +63,13 @@ l5r_religious_decision.0001 = {
 
 	#Accept the ishiken
 	option = { 
+		name = l5r_religious_decision.0001.b
 		trigger = {
 			scope:isawa_shindoshi = {
 				has_trait = ishiken
 			}
 		}
-		name = l5r_religious_decision.0001.b
+
 		pay_short_term_gold = {
 			target = scope:isawa_shindoshi_patron
 			gold = 100

@@ -26,28 +26,7 @@ recruit_isawa_shindoshi = {
 	}
 
 	is_valid = {
-		# need good opinion of phoenix clan
-		OR = {
-			AND = {
-				title:k_phoenix_clan = { exists = holder }
-				title:k_phoenix_clan.holder.opinion = {
-					value >= 25
-					target = root
-				}
-			}
-			AND = {
-				title:d_isawa = { exists = holder }
-				title:d_isawa.holder.opinion = {
-					value >= 25
-					target = root
-				}
-			}
-		}
-	}
-	
-	is_valid_showing_failures_only = {
-		is_imprisoned = no
-		NAND = {
+		NOR = {
 			is_shindoshi = yes
 			any_courtier_or_guest = {
 				is_shindoshi = yes
@@ -56,6 +35,32 @@ recruit_isawa_shindoshi = {
 				is_shindoshi = yes
 			}
 		}
+
+		# need good opinion of phoenix clan
+		OR = {
+			AND = {
+				title:k_phoenix_clan = { exists = holder }
+				title:k_phoenix_clan.holder = {
+					opinion = {
+						value >= 25
+						target = root
+					}
+				}
+			}
+			AND = {
+				title:d_isawa = { exists = holder }
+				title:d_isawa.holder = {
+					opinion = {
+						value >= 25
+						target = root
+					}
+				}
+			}
+		}
+	}
+	
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
 	}
 
 	effect = {
@@ -65,9 +70,11 @@ recruit_isawa_shindoshi = {
 					trigger = {
 						AND = {
 							title:k_phoenix_clan = { exists = holder }
-							title:k_phoenix_clan.holder.opinion = {
-								value >= 25
-								target = root
+							title:k_phoenix_clan.holder = {
+								opinion = {
+									value >= 25
+									target = root
+								}
 							}
 						}
 					}
@@ -78,9 +85,11 @@ recruit_isawa_shindoshi = {
 					trigger = {
 						AND = {
 							title:d_isawa = { exists = holder }
-							title:d_isawa.holder.opinion = {
-								value >= 25
-								target = root
+							title:d_isawa.holder = {
+								opinion = {
+									value >= 25
+									target = root
+								}
 							}
 						}
 					}

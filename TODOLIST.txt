@@ -30,13 +30,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Scheme modifiers have been completely reworked, so all the old ones for things like personal_scheme_power_mult, hostile_scheme_resistance_add, etc. no longer work. You will need to replace them with new scheme modifier
 	- check scheme.info of vanilla game
 - remove bunch of errors
-- in 00_traits.txt is education_martial_prowess_1 vanilla ??? 
 - TODO Bannir quelqu'un pour tester si aventurier marche. MARCHE PAS
-
 - % de chance shindoshi/ishiken TROP BAS ! TO TEST
 - Rokugan too peaceful , reduce penality for war ! TO TEST 
-- add decision de recruter un shugenja  (si pas de shug) TO TEST
-- add tatooed_trait (decision  ?) based on the culture TO TEST
+- Decision to tatoo => Works BUT no wounding EVER, why ? Wrong effect ?
+- add decision de recruter un shugenja  (si pas de shug) (issue with localisation of option ???) + dynasty not isawa of the character generated. Otherwise it works 
 - Add thumbnail image for the mod !
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA

@@ -579,7 +579,8 @@ travel_danger_events_on_action = {
 		#Bilateral Ruler events
 		100 = travel_events.2106 # Danger! You get attacked while passing through a capital province; will the Province Owner help you?
 		100 = travel_events.4020 # Danger! Strong believers harass your caravan and demand payment
-		100 = travel_events.4003 # You encounter vikings at sea
+		#L5R Disabled
+		# 100 = travel_events.4003 # You encounter vikings at sea
 		250 = bp1_yearly.0100 # You are caught in a storm and a rival's property is the only shelter
 		
 		# Laamp Travel Danger Events
