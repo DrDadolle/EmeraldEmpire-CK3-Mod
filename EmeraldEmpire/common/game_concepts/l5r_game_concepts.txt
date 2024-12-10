@@ -15,9 +15,47 @@ rokugan = {
 	parent = ningendo
 }	
 
-phoenixclan = {
+imperialfamilies = {
 	parent = rokugan
 }	
+
+greatclans = {
+	parent = rokugan
+}	
+
+crabclan = {
+	parent = greatclans
+}	
+
+craneclan = {
+	alias = { emperorlefthand }
+	parent = greatclans
+}	
+
+dragonclan = {
+	parent = greatclans
+}	
+
+lionclan = {
+	alias = { emperorrighthand }
+	parent = greatclans
+}	
+
+phoenixclan = {
+	parent = greatclans
+}	
+
+scorpionclan = {
+	alias = { emperorunderhand }
+	parent = greatclans
+}	
+
+unicornclan = {
+	alias = { windclan kirinclan }
+	parent = greatclans
+}	
+
+
 
 ### Shadowlands
 

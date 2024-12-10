@@ -32,12 +32,12 @@
 
  # bleached_white_hair
  trait_bleached_white_hair:0 "Bleached White Hair"
- trait_bleached_white_hair_desc:0 "This character decided to bleach their hair white to honor the courage of the Doji Hayaku, who returned from the Shadowlands with the sword of her brother and white hair."
- trait_bleached_white_hair_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] decided to bleach [ROOT.GetCharacter.GetHerHis] hair white to honor the courage of the Doji Hayaku, who returned from the Shadowlands with the sword of his sister and white hair."
+ trait_bleached_white_hair_desc:0 "This character decided to bleach their hair white to honor the courage of the Doji Hayaku, who returned from the [shadowlands|E] with the sword of her brother and white hair."
+ trait_bleached_white_hair_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] decided to bleach [ROOT.GetCharacter.GetHerHis] hair white to honor the courage of the Doji Hayaku, who returned from the [shadowlands|E] with the sword of his sister and white hair."
  # natural_white_hair
  trait_natural_white_hair:0 "Natural White Hair"
- trait_natural_white_hair_desc:0 "This character has natural white hair, as some descendant of Kami Doji have. This is a sign of good fortune in the Crane Clan."
- trait_natural_white_hair_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] character has natural white hair, as some descendant of Kami Doji have. This is a sign of good fortune in the Crane Clan."
+ trait_natural_white_hair_desc:0 "This character has natural white hair, as some descendant of Kami Doji have. This is a sign of good fortune in the [craneclan|E]."
+ trait_natural_white_hair_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] character has natural white hair, as some descendant of Kami Doji have. This is a sign of good fortune in the [craneclan|E]."
 #### TATTOOES
  # avalanche
  trait_avalanche_tattoo:0 "Tattoo of the Avalanche"
