@@ -32,6 +32,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - remove bunch of errors
 - in 00_traits.txt is education_martial_prowess_1 vanilla ??? 
 - TODO Bannir quelqu'un pour tester si aventurier marche. MARCHE PAS
+
+- % de chance shindoshi/ishiken TROP BAS ! TO TEST
+- Rokugan too peaceful , reduce penality for war ! TO TEST 
+- add decision de recruter un shugenja  (si pas de shug) TO TEST
+- add tatooed_trait (decision  ?) based on the culture
 - Add thumbnail image for the mod !
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA
@@ -42,16 +47,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - update common/travel/point_of_interest_types/travel_point_of_interest_types.txt 
 
 ## short term goals 
-- % de chance shindoshi/ishiken TROP BAS ! TO TEST
-- Rokugan too peaceful , reduce penality for war ! TO TEST
-- add decision de recruter un shugenja  (si pas de shug)
 - Hantei with duchy is called "Empress"
 - Shindoshi recrutment decisions !
 - finish shindoshi decision for MAGIC (at least for air kami)
 - BUG "Custom kingdom" of Hantei as "of Rokugan" instead of "of CUSTOM"
 - use "event invasion of vikings" for yobanjin
 - add elective stuff for Dragon ?
-- add tatooed_trait (decision  ?)
 - update common/scripted_effects/04_dlc_ep2_tournament_effects and remove ref from vanilla
 - restore court_events_general.txt from vanilla
 - add at least 1 adventures in game to avoid some errors on start
@@ -142,6 +143,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- tanuki (ask permission)
 	- tiger clan (ask permission)
 - Duel to end War (check Tales of Ireland mod)
+- Event for redistribution of non-imperial title update => try to give vassalage as well ?
 - Remove black plague (kept for now) J
 - Universities ?
 - add "animal" (clan animal) as motif for CoA (instead of just textured one)

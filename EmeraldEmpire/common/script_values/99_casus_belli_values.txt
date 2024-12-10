@@ -519,7 +519,7 @@ common_cb_prestige_cost_multiplier_core = {
 			war_declarer_declaring_great_clan_war = yes
 		}
 		multiply = {
-			value = 2
+			value = 1.5
 			desc = "CB_ATTACK_IMPERIAL_EDICT_GREAT_CLAN_WAR"
 		}
 	}

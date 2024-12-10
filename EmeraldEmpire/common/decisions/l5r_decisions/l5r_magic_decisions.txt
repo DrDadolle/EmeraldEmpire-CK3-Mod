@@ -95,6 +95,7 @@ recruit_isawa_shindoshi = {
 		}
 	}
 
+	# No AI to avoid enriching too much the phoenix, and adding too much courtiers
 	ai_potential = {
 			always = no 
 	}
