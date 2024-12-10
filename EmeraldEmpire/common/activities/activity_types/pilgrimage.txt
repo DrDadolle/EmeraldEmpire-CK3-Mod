@@ -2204,7 +2204,7 @@
 		# 	}
 		# }
 		#Otherwise set up Pilgrimage memories
-		else = {
+		# else = {
 			#For the follow-up reflective event when back home, triggered through travel_plan_completion on_action
 			set_variable = {
 				name = has_completed_pilgrimage
@@ -2317,7 +2317,7 @@
 					}
 				}	
 			}
-		}
+		# }
 		# Dynasty Legacies
 		scope:host = {
 			if = {

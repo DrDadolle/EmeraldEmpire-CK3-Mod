@@ -71,7 +71,8 @@ pilgrimage_completed_log_entry_effect = {
 	# 		}
 	# 	}
 	# }
-	else_if = {
+	# else_
+	if = {
 		limit = { exists = involved_activity }
 		involved_activity = {
 			add_activity_log_entry = {

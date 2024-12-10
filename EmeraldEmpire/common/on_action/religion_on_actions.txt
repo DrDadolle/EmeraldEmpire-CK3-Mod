@@ -164,7 +164,8 @@ on_faith_created = {
 			# 	}
 			# }
 			## Faiths with the Rite tenet get to keep their old HoF.
-			else_if = {
+			# else_
+			if = {
 				limit = {
 					# Assuming they exist.
 					exists = scope:old_faith.religious_head

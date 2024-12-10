@@ -12921,12 +12921,12 @@ add_carpet_modifier_effect = {
 	# 		days = 3650
 	# 	}
 	# }
-	else = {
+	# else = {
 		add_character_modifier = {
 			modifier = has_plush_carpet_modifier
 			days = 3650
 		}
-	}
+	# }
 }
 
 # If trying to lure a child to push off a roof, try to pick something tangible to tempt them with.
