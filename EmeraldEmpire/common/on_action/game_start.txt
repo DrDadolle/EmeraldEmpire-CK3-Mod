@@ -402,201 +402,199 @@ on_game_start_after_lobby = {
 			}
 			add_legitimacy = base_legitimacy_value
 		}
-	}
 
-
-	### EP3 SETUP ###
-	if = {
-		limit = { has_ep3_dlc_trigger = yes }
-		### EP3 LAAMP SETUP ###
-		# Resources.
-		every_independent_ruler = {
-			limit = { is_landless_adventurer = yes }
-			# Cash.
-			add_gold = {
-				value = {
-					value = 0
-					add = prestige
-					add = piety
-					divide = 10
+		### EP3 SETUP ###
+		if = {
+			limit = { has_ep3_dlc_trigger = yes }
+			### EP3 LAAMP SETUP ###
+			# Resources.
+			every_independent_ruler = {
+				limit = { is_landless_adventurer = yes }
+				# Cash.
+				add_gold = {
+					value = {
+						value = 0
+						add = prestige
+						add = piety
+						divide = 10
+					}
 				}
-			}
-			save_temporary_scope_as = adventurer_scope
-			# Set CoA
-			primary_title = { set_coa = scope:adventurer_scope.house }
-			# Cleanup characters
-			every_councillor = {
-				if = {
-					limit = {
-						NOR = {
-							has_council_position = councillor_court_chaplain
-							has_council_position = councillor_spouse
+				save_temporary_scope_as = adventurer_scope
+				# Set CoA
+				primary_title = { set_coa = scope:adventurer_scope.house }
+				# Cleanup characters
+				every_councillor = {
+					if = {
+						limit = {
+							NOR = {
+								has_council_position = councillor_court_chaplain
+								has_council_position = councillor_spouse
+							}
+						}
+						scope:adventurer_scope = {
+							fire_councillor = prev
+						}
+						remove_opinion = {
+							modifier = fired_from_council_opinion
+							target = scope:adventurer_scope
 						}
 					}
-					scope:adventurer_scope = {
-						fire_councillor = prev
+					else_if = {
+						limit = {
+							NOR = {
+								is_close_or_extended_family_of = prev
+								has_relation_lover = prev
+								has_relation_friend = prev
+								is_consort_of = prev
+								has_council_position = councillor_spouse
+							}
+						}
+						death = {
+							death_reason = death_vanished
+						}
 					}
-					remove_opinion = {
-						modifier = fired_from_council_opinion
-						target = scope:adventurer_scope
+				}
+				# Evict everyone who isn't your family from your camp.
+				every_courtier = {
+					limit = {
+						prev = { save_temporary_scope_as = char_temp }
+						NOR = {
+							dynasty ?= scope:char_temp.dynasty
+							is_imprisoned_by = scope:char_temp
+							# Plus any relations, who are presumably meant to be here.
+							has_important_relationship_with_character_trigger = { CHARACTER = scope:char_temp }
+							# Catch bastards and such that may be left over.
+							is_close_or_extended_family_of = scope:char_temp
+						}
 					}
+					move_to_pool = yes
+				}
+				# Courtiers.
+				trigger_event = ep3_laamps.1001
+			}
+			# Starting camp purposes.
+			# Rokugan : Keep example of character laamp, for future ronin stuff
+			# ## Suleyman Qutalmishog
+			# character:3046 ?= {
+			# 	if = {
+			# 		limit = {
+			# 			is_alive = yes
+			# 			is_landless_adventurer = yes
+			# 		}
+			# 		add_realm_law_skip_effects = camp_purpose_mercenaries
+			# 		trigger_event = bookmark.1073 # Suleyman's beef with Alp Arslan
+			# 	}
+			# }
+			every_independent_ruler = {
+				limit = { is_landless_adventurer = yes }
+				# C... food.
+				domicile = { change_provisions = starting_provisions_value }
+				# Contracts
+				if = {
+					limit = { is_ai = no }
+					# Set up additional firing contracts.
+					player_adventurer_contract_generation_on_wait_in_place_effect = yes
+					#generate contracts if you are far away from your previous location
+					player_adventurer_contract_generation_on_domicile_moved_effect = yes
+				}
+				else = {
+					create_story = { type = story_adventurer_ai }
+					trigger_event = {
+						on_action = on_adventurer_ai_new_employer_arrival
+						days = { 10 30 }
+					}
+				}
+				# Sort our starting flavourisation.
+				if = {
+					limit = { has_realm_law = camp_purpose_mercenaries }
+					set_variable = flavourise_camp_purpose_mercenaries
 				}
 				else_if = {
-					limit = {
-						NOR = {
-							is_close_or_extended_family_of = prev
-							has_relation_lover = prev
-							has_relation_friend = prev
-							is_consort_of = prev
-							has_council_position = councillor_spouse
+					limit = { has_realm_law = camp_purpose_wanderers }
+					set_variable = flavourise_camp_purpose_wanderers
+				}
+				else_if = {
+					limit = { has_realm_law = camp_purpose_scholars }
+					set_variable = flavourise_camp_purpose_scholars
+				}
+				else_if = {
+					limit = { has_realm_law = camp_purpose_explorers }
+					set_variable = flavourise_camp_purpose_explorers
+				}
+				else_if = {
+					limit = { has_realm_law = camp_purpose_brigands }
+					set_variable = flavourise_camp_purpose_brigands
+				}
+				else_if = {
+					limit = { has_realm_law = camp_purpose_legitimists }
+					set_variable = flavourise_camp_purpose_legitimists
+				}
+				# And tally our numbers for performance purposes.
+				add_to_global_variable_list = {
+					name = laamps_tally
+					target = this.primary_title
+				}
+			}
+			### EP3 ADMIN SETUP ###
+			every_independent_ruler = {
+				limit = { government_allows = administrative }
+				save_scope_as = top_liege
+				### EP3 NOBLE FAMILIES & DOMICILE SETUP ###
+				random_held_title = { # May be removed once every_noble_family includes liege (TIT-51212)
+					limit = { is_noble_family_title = yes }
+					set_coa = scope:top_liege.house
+				}
+				every_noble_family = {
+					# Ensure Noble Family CoA match House
+					set_coa = holder.house
+					# Ensure holders of historical noble family titles are the default house heads
+					holder ?= {
+						save_scope_as = nf_holder
+						if = {
+							limit = { is_landed = yes }
+							capital_province = { save_scope_as = domicile_location }
+						}
+						# TODO_CD_EP3: remove once TIT-51212 is resolved and confirmed
+						house ?= {
+							if = {
+								limit = { house_head != scope:nf_holder }
+								set_house_head = scope:nf_holder
+							}
 						}
 					}
-					death = {
-						death_reason = death_vanished
-					}
+					set_color_from_title = scope:nf_holder.capital_county
 				}
 			}
-			# Evict everyone who isn't your family from your camp.
-			every_courtier = {
-				limit = {
-					prev = { save_temporary_scope_as = char_temp }
-					NOR = {
-						dynasty ?= scope:char_temp.dynasty
-						is_imprisoned_by = scope:char_temp
-						# Plus any relations, who are presumably meant to be here.
-						has_important_relationship_with_character_trigger = { CHARACTER = scope:char_temp }
-						# Catch bastards and such that may be left over.
-						is_close_or_extended_family_of = scope:char_temp
-					}
-				}
-				move_to_pool = yes
-			}
-			# Courtiers.
-			trigger_event = ep3_laamps.1001
 		}
-		# Starting camp purposes.
-		# Rokugan : Keep example of character laamp, for future ronin stuff
-		# ## Suleyman Qutalmishog
-		# character:3046 ?= {
+		# Purge family titles if Admin isn't enabled
+		if = {
+			limit = {
+				NOT = { has_dlc_feature = roads_to_power }
+			}
+			every_ruler = {
+				save_temporary_scope_as = this_ruler
+				every_held_title = {
+					limit = {
+						has_title_law = noble_family_succession_law
+					}
+					scope:this_ruler = {
+						destroy_title = prev
+					}
+				}
+			}
+		}
+		# Conquerors
+		# Rokugan : keep it as example
+		# character:144133 ?= {
 		# 	if = {
 		# 		limit = {
 		# 			is_alive = yes
-		# 			is_landless_adventurer = yes
+		# 			NOT = { has_game_rule = no_conquerors_frequency }
 		# 		}
-		# 		add_realm_law_skip_effects = camp_purpose_mercenaries
-		# 		trigger_event = bookmark.1073 # Suleyman's beef with Alp Arslan
+		# 		create_story = story_conqueror
 		# 	}
 		# }
-		every_independent_ruler = {
-			limit = { is_landless_adventurer = yes }
-			# C... food.
-			domicile = { change_provisions = starting_provisions_value }
-			# Contracts
-			if = {
-				limit = { is_ai = no }
-				# Set up additional firing contracts.
-				player_adventurer_contract_generation_on_wait_in_place_effect = yes
-				#generate contracts if you are far away from your previous location
-				player_adventurer_contract_generation_on_domicile_moved_effect = yes
-			}
-			else = {
-				create_story = { type = story_adventurer_ai }
-				trigger_event = {
-					on_action = on_adventurer_ai_new_employer_arrival
-					days = { 10 30 }
-				}
-			}
-			# Sort our starting flavourisation.
-			if = {
-				limit = { has_realm_law = camp_purpose_mercenaries }
-				set_variable = flavourise_camp_purpose_mercenaries
-			}
-			else_if = {
-				limit = { has_realm_law = camp_purpose_wanderers }
-				set_variable = flavourise_camp_purpose_wanderers
-			}
-			else_if = {
-				limit = { has_realm_law = camp_purpose_scholars }
-				set_variable = flavourise_camp_purpose_scholars
-			}
-			else_if = {
-				limit = { has_realm_law = camp_purpose_explorers }
-				set_variable = flavourise_camp_purpose_explorers
-			}
-			else_if = {
-				limit = { has_realm_law = camp_purpose_brigands }
-				set_variable = flavourise_camp_purpose_brigands
-			}
-			else_if = {
-				limit = { has_realm_law = camp_purpose_legitimists }
-				set_variable = flavourise_camp_purpose_legitimists
-			}
-			# And tally our numbers for performance purposes.
-			add_to_global_variable_list = {
-				name = laamps_tally
-				target = this.primary_title
-			}
-		}
-		### EP3 ADMIN SETUP ###
-		every_independent_ruler = {
-			limit = { government_allows = administrative }
-			save_scope_as = top_liege
-			### EP3 NOBLE FAMILIES & DOMICILE SETUP ###
-			random_held_title = { # May be removed once every_noble_family includes liege (TIT-51212)
-				limit = { is_noble_family_title = yes }
-				set_coa = scope:top_liege.house
-			}
-			every_noble_family = {
-				# Ensure Noble Family CoA match House
-				set_coa = holder.house
-				# Ensure holders of historical noble family titles are the default house heads
-				holder ?= {
-					save_scope_as = nf_holder
-					if = {
-						limit = { is_landed = yes }
-						capital_province = { save_scope_as = domicile_location }
-					}
-					# TODO_CD_EP3: remove once TIT-51212 is resolved and confirmed
-					house ?= {
-						if = {
-							limit = { house_head != scope:nf_holder }
-							set_house_head = scope:nf_holder
-						}
-					}
-				}
-				set_color_from_title = scope:nf_holder.capital_county
-			}
-		}
 	}
-	# Purge family titles if Admin isn't enabled
-	if = {
-		limit = {
-			NOT = { has_dlc_feature = roads_to_power }
-		}
-		every_ruler = {
-			save_temporary_scope_as = this_ruler
-			every_held_title = {
-				limit = {
-					has_title_law = noble_family_succession_law
-				}
-				scope:this_ruler = {
-					destroy_title = prev
-				}
-			}
-		}
-	}
-	# Conquerors
-	# Rokugan : keep it as example
-	# character:144133 ?= {
-	# 	if = {
-	# 		limit = {
-	# 			is_alive = yes
-	# 			NOT = { has_game_rule = no_conquerors_frequency }
-	# 		}
-	# 		create_story = story_conqueror
-	# 	}
-	# }
-
 	events = {
 		game_rule.1000	#Autopopulate families.
 		historical_artifacts.0023			# Historical Artifacts Generator

@@ -1,0 +1,241 @@
+﻿##########
+# Pale Oak Palace
+##########
+
+pale_oak_palace_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_palace_of_achen.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+		diplomacy_per_piety_level = 1
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth = 0.15
+		development_growth_factor = 0.25
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_diplomatic
+}
+
+##########
+# Gisei Toshi
+##########
+
+gisei_toshi_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_grand_library_of_baghdad.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		learning_per_prestige_level = 2
+		monthly_lifestyle_xp_gain_mult = 0.10
+		cultural_head_fascination_mult = 0.10
+		faith_creation_piety_cost_mult = -0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_learning
+}
+
+##########
+# Forbidden City
+##########
+#TODO as duchy building ! à la Constantinople
+forbidden_city_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_palace_of_achen.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_kyoto_palace_mesh"
+	}
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+		diplomacy_per_prestige_level = 1
+		intrigue_per_prestige_level = 1
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth = 0.15
+		development_growth_factor = 0.25
+	}
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_1
+		fort_level = good_building_fort_level_tier_1
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_diplomatic
+}
+
+##########
+# Kaiu Wall
+##########
+
+kaiu_wall_01 = {
+
+	construction_time = very_slow_construction_time
+	
+	type_icon = "icon_structure_great_wall_of_gorgan.dds" 
+
+
+	asset = {
+		type = pdxmesh
+		name = "hadrians_wall_01_a_mesh"
+	}
+
+	can_construct_potential = {
+		OR = {
+			barony = title:b_shiro_kakeguchi
+			barony = title:b_castle_of_the_forgotten
+			barony = title:b_shiro_ishigaki_2
+			barony = title:b_shiro_ishigaki
+			barony = title:b_shiro_kaiu
+			barony = title:b_razor_dawn_castle
+		}
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_hoardings 
+		}
+	}
+	
+	cost_gold = 1000
+	
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_1
+		fort_level = good_building_fort_level_tier_1
+		stationed_maa_toughness_mult = normal_maa_toughness_tier_1
+		# garrison_size = 0.25
+		hostile_raid_time = 0.25
+	}
+
+	max_garrison = good_building_max_garrison_tier_1
+
+	next_building = kaiu_wall_02
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_martial_minor # wall
+}
+
+kaiu_wall_02 = {
+
+	construction_time = very_slow_construction_time
+	
+	type_icon = "icon_structure_great_wall_of_gorgan.dds" 
+
+	asset = {
+		type = pdxmesh
+		name = "hadrians_wall_01_a_mesh"
+	}
+
+	can_construct_potential = {
+		OR = {
+			barony = title:b_shiro_kakeguchi
+			barony = title:b_castle_of_the_forgotten
+			barony = title:b_shiro_ishigaki_2
+			barony = title:b_shiro_ishigaki
+			barony = title:b_shiro_kaiu
+			barony = title:b_razor_dawn_castle
+		}
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_machicolations 
+		}
+	}
+	
+	cost_gold = 2000
+	
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_2
+		fort_level = good_building_fort_level_tier_2
+		stationed_maa_toughness_mult = normal_maa_toughness_tier_2
+		garrison_size = 0.1
+		hostile_raid_time = 0.5
+	}
+
+	max_garrison = good_building_max_garrison_tier_2
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_martial_minor # wall
+}
