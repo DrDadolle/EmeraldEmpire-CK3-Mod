@@ -2,14 +2,14 @@
  ### ROKUGAN ### 
  game_concept_rokugan:0 "Rokugan"
  game_concept_emeraldempire:0 "Emerald Empire"
- game_concept_rokugan_desc:0 "game_concept_rokugan_desc"
+ game_concept_rokugan_desc:0 "Rokugan is the central location of the Legend of the Five Rings universe and is sometimes referred to as the [emeraldempire|E]. The five elements of Air, Earth, Fire, Water, and Void are in a precarious balance during the times of conflict. "
 
  game_concept_shadowlands:0 "Shadowlands"
- game_concept_shadowlands_desc:0 "game_concept_shadowlands_desc"
+ game_concept_shadowlands_desc:0 "Shadowlands is the name given to the area to the south of the Empire of [rokugan|E]. The minions living there - such as goblins, ogres, undead and the legendary demons known as oni - always threatening to extend their reach into [rokugan|E]. It is a dark realm under the sway of [fuleng|E] and the corrupted armies from the realm of [jigoku|E]. The only safeguard between the Shadowlands and [rokugan|E] is the mighty Kaiu Wall and its constructers and defenders, the [crabclan|E]. "
 
  ### Great Clans ###
  game_concept_greatclans:0 "Great Clans"
- game_concept_greatclans_desc:0 "Seven families descended from the Kami ruling over other families descended from those who swore fealty, and each of these seven Great Clans served the Emperor. As guardians and politicians, each clan fulfilled their role in society and were as varied as they were powerful. But all were bound by the same code of honor, the way of the warrior, the Code of Bushidō. Honor was valued above all else. \n\nFor over 1,000 years, the Great Clans have served the Chrysanthemum Throne according to their unique strengths and weaknesses. The Great Clans each supported the Emperor, but inter-clan conflict was inevitable — both in the Emperor's courts and on the battlefield. "
+ game_concept_greatclans_desc:0 "Seven families descended from the Kami ruling over other families descended from those who swore fealty, and each of these seven Great Clans served the Emperor. As guardians and politicians, each clan fulfilled their role in society and are as varied as they are powerful. But all are bound by the same code of honor, the way of the warrior, the Code of Bushidō. Honor is valued above all else. \n\nFor over 1,000 years, the Great Clans have served the Chrysanthemum Throne according to their unique strengths and weaknesses. The Great Clans each supported the Emperor, but inter-clan conflict is inevitable — both in the Emperor's courts and on the battlefield. "
 
  game_concept_crabclan:0 "Crab Clan"
  game_concept_crabclan_desc:0 "The Crab Clan is one of the seven [greatclans|E], founded by the Kami Hida, serving as the Defenders of Rokugan. They spent their lives upon the Kaiu Wall, standing vigilant along the southern border of [rokugan|E] to defend against the next attack from the [shadowlands|E]."
@@ -38,20 +38,26 @@
  game_concept_unicornclan_desc:0 "The Unicorn Clan, the Clan of the Wind which is formerly known as the Ki-Rin Clan, is one of the seven [greatclans|E], founded by the Kami Shinjo. They are an aggressive, practical, and nomadic clan that had mastered the arts of mobility and warfare."
 
  game_concept_imperialfamilies:0 "Imperial Families"
- game_concept_imperialfamilies_desc:0 "The Imperial Families were the families of the Emperor and his closest followers. Within only a few such generations, the number of princes and princesses born to the Imperial family were so many, that rather than challenge the claim of the Emperor's eldest child, at adulthood these other heirs joined the families of Hantei-no-Kami's original followers, Miya and Otomo and Seppun."
+ game_concept_imperialfamilies_desc:0 "The Imperial Families are the families of the Emperor and his closest followers. Within only a few such generations, the number of princes and princesses born to the Imperial family are so many, that rather than challenge the claim of the Emperor's eldest child, at adulthood these other heirs joined the families of Hantei-no-Kami's original followers, Miya and Otomo and Seppun."
 
  ### SPIRITUAL REALMS ###
  game_concept_ningendo:0 "Ningen-dō"
  game_concept_ningendo_desc:0 "game_concept_ningendo_desc"
 
+ game_concept_tengoku:0 "Tengoku"
+ game_concept_celestialheavens:0 "Celestial Heavens"
+ game_concept_tengoku_desc:0 "game_concept_tengoku_desc"
+
  game_concept_jigoku:0 "Jigoku"
- game_concept_jigoku_desc:0 "game_concept_jigoku_desc"
+ game_concept_realmoftorment:0 "Realm of Torment"
+ game_concept_realmofevil:0 "Realm of Evil"
+ game_concept_jigoku_desc:0 "Jigoku, the Realm of Torment, also known as the Realm of Evil, is the twisted counterpart of the true underworld, a realm of punishment for evil souls. Jigoku is a corrupted realm whose hordes roam the [shadowlands|E] under the sway of [fuleng|E]. Its minions unrelentlessly attacked the Kaiu Wall, the only safeguard between the [shadowlands|E] and [rokugan|E]. It is known that oni are denizens of this realm.  "
 
  ### FOUNDER KAMIS ### 
  game_concept_fuleng:0 "Fu Leng"
  game_concept_darkkami:0 "Dark Kami"
  game_concept_ninthkami:0 "Ninth Kami"
- game_concept_fuleng_desc:0 "game_concept_fuleng_desc"
+ game_concept_fuleng_desc:0 "Fu Leng is son of Lord Moon and Lady Sun, and one of the Kami who fell to the mortal realm from the [celestialheavens|E], alongside his siblings. When the Kami fell from [tengoku|E], Fu Leng landed in the [shadowlands|E], in a place which would be known as the Festering Pit of Fu Leng, but he smashed through its substance, tearing open a hole between the [mortalrealm|E] and [jigoku|E]. He kept falling, finally coming to rest deep in the [realmofevil|E]. It might be that the malign powers in [jigoku|E] sought to enslave Fu Leng, but he is a divine being. This allowed him power over [jigoku|E] in turn, resulting in a malevolent and supremely dangerous symbiosis. Fu Leng's followers are goblins, ogres, undead, and legendary demons known as oni. "
 
  ### SAMURAI CONCEPTS ###
  game_concept_seppuku:0 "Seppuku"

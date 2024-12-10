@@ -4,9 +4,21 @@
 conceptworld = {
 }	
 
+tengoku = {
+	alias = { celestialheavens }
+	parent = conceptworld
+}
+
 ningendo = {
+	alias = { mortalrealm }
 	parent = conceptworld
 }	
+
+jigoku = {
+	alias = {realmofevil realmoftorment }
+	parent = conceptworld
+}
+
 
 ### Rokugan
 
@@ -62,11 +74,6 @@ unicornclan = {
 shadowlands = {
 	parent = ningendo
 }	
-
-jigoku = {
-	parent = conceptworld
-}
-
 
 
 #########################
