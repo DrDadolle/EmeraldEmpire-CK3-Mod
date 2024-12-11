@@ -880,17 +880,18 @@ activity_guest_hunt_ai_accept_modifier = {
 	#########
 	# OTHER #
 	#########
-	modifier = {
-		faith = { has_doctrine = tenet_dharmic_pacifism }
-		NOT = { has_trait = cynical }
-		add = {
-			value = -25
-			if = {
-				limit = { has_trait = zealous }
-				add = -25
-			}
-		}
-		desc = ACTIVITY_GUEST_DHARMIC_PACIFISM_REASON
+	#L5R Disabled
+	# modifier = {
+	# 	faith = { has_doctrine = tenet_dharmic_pacifism }
+	# 	NOT = { has_trait = cynical }
+	# 	add = {
+	# 		value = -25
+	# 		if = {
+	# 			limit = { has_trait = zealous }
+	# 			add = -25
+	# 		}
+	# 	}
+	# 	desc = ACTIVITY_GUEST_DHARMIC_PACIFISM_REASON
 	}
 	modifier = {
 		culture = { has_cultural_parameter = cannot_hunt }
@@ -1040,11 +1041,12 @@ activity_guest_pilgrimage_ai_accept_modifier = {
 		add = 5
 		desc = ACTIVITY_GUEST_PRIESTESS_REASON
 	}
-	modifier = {
-		faith = { has_doctrine = tenet_armed_pilgrimages }
-		add = 5
-		desc = ACTIVITY_GUEST_ARMED_PILGRIMAGES_REASON
-	}
+	#L5R Disabled
+	# modifier = {
+	# 	faith = { has_doctrine = tenet_armed_pilgrimages }
+	# 	add = 5
+	# 	desc = ACTIVITY_GUEST_ARMED_PILGRIMAGES_REASON
+	# }
 	modifier = {
 		culture = { has_cultural_tradition = tradition_zealous_people }
 		add = 5
