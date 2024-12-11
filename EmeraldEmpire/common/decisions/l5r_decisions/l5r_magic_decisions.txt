@@ -156,7 +156,7 @@ pray_the_spirits_decision = {
 		NOT = { has_trait = incapable }
 	}
 
-	cooldown = { years = 2 }
+	cooldown = { years = 1 }
 
 	widget = {
 		gui = "decision_view_widget_option_list_generic"
@@ -166,33 +166,62 @@ pray_the_spirits_decision = {
 
 		item = { # Prayer to the Air Kami
 			value = pray_spirits_air
+			is_valid = {
+				NOT = {
+					custom_tooltip = {
+						text = pray_spirit_air_kami_cooldown_tt
+						has_character_flag = pray_spirit_air_kami_cooldown
+					}
+				}
+			}
 			current_description = decision_pray_spirits_air_desc
 			localization = decision_pray_spirits_air
 			icon = "gfx/interface/icons/message_feed/air_symbol.dds"
 		}
 		item = { # Prayer to the Earth Kami
 			value = pray_spirits_earth
+			is_valid = {
+				NOT = {
+					custom_tooltip = {
+						text = pray_spirit_earth_kami_cooldown_tt
+						has_character_flag = pray_spirit_earth_kami_cooldown
+					}
+				}
+			}
 			current_description = decision_pray_spirits_earth_desc
 			localization = decision_pray_spirits_earth
 			icon = "gfx/interface/icons/message_feed/earth_symbol.dds"
 		}
 		item = { # Prayer to the Fire Kami
 			value = pray_spirits_fire
+			is_valid = {
+				NOT = {
+					custom_tooltip = {
+						text = pray_spirit_fire_kami_cooldown_tt
+						has_character_flag = pray_spirit_fire_kami_cooldown
+					}
+				}
+			}
 			current_description = decision_pray_spirits_fire_desc
 			localization = decision_pray_spirits_fire
 			icon = "gfx/interface/icons/message_feed/fire_symbol.dds"
 		}
 		item = { # Prayer to the Water Kami
 			value = pray_spirits_water
+			is_valid = {
+				NOT = {
+					custom_tooltip = {
+						text = pray_spirit_water_kami_cooldown_tt
+						has_character_flag = pray_spirit_water_kami_cooldown
+					}
+				}
+			}
 			current_description = decision_pray_spirits_water_desc
 			localization = decision_pray_spirits_water
 			icon = "gfx/interface/icons/message_feed/water_symbol.dds"
 		}
 		item = { # Prayer to the Void
 			value = pray_spirits_void
-			current_description = decision_pray_spirits_void_desc
-			localization = decision_pray_spirits_void
-			icon = "gfx/interface/icons/message_feed/void_symbol.dds"
 			is_shown = { 
 				OR = {
 					has_trait = ishiken
@@ -202,11 +231,22 @@ pray_the_spirits_decision = {
 					# }
 				}
 			}
+			is_valid = {
+				NOT = {
+					custom_tooltip = {
+						text = pray_spirit_void_kami_cooldown_tt
+						has_character_flag = pray_spirit_void_kami_cooldown
+					}
+				}
+			}
+			current_description = decision_pray_spirits_void_desc
+			localization = decision_pray_spirits_void
+			icon = "gfx/interface/icons/message_feed/void_symbol.dds"
 		}
 	}
 
 	cost = {
-		#No cost for now
+		piety = medium_piety_value
 	}
 
 	effect = {

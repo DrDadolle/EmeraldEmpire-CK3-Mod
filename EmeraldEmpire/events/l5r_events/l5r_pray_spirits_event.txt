@@ -52,6 +52,13 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
         stress_impact = {
 			greedy = miniscule_stress_impact_loss
 		}
+		hidden_effect = {
+			set_variable = {
+				name = pray_spirit_air_kami_cooldown
+				years = 2
+			}
+		}
+
 		trigger_event = {
 			id = l5r_pray_spirit.0002
 		}
