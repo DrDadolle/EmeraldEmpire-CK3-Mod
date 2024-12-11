@@ -63,19 +63,20 @@
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					location = {
-						NOT = {
-							geographical_region = world_steppe_west
-							geographical_region = world_steppe_east
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			location = {
+		# 				NOT = {
+		# 					geographical_region = world_steppe_west
+		# 					geographical_region = world_steppe_east
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = lions
 	}
 	text = {
@@ -161,9 +162,11 @@
 				scope:new_landless_adventurer ?= {
 					location = {
 						NOR = {
-							geographical_region = world_africa
-							geographical_region = world_india
-							geographical_region = world_burma
+							#L5R Modified
+							geographical_region = world_rokugan
+							# geographical_region = world_africa
+							# geographical_region = world_india
+							# geographical_region = world_burma
 						}
 					}
 				}
@@ -191,13 +194,15 @@
 				scope:new_landless_adventurer ?= {
 					location = {
 						OR = {
-							geographical_region = world_africa
-							geographical_region = world_middle_east
-							geographical_region = world_europe_south
-							geographical_region = world_europe_west
-							geographical_region = world_india
-							geographical_region = world_burma
-							geographical_region = world_asia_minor
+							#L5R Modified
+							geographical_region = rokugan_spice_and_silk_isles
+							# geographical_region = world_africa
+							# geographical_region = world_middle_east
+							# geographical_region = world_europe_south
+							# geographical_region = world_europe_west
+							# geographical_region = world_india
+							# geographical_region = world_burma
+							# geographical_region = world_asia_minor
 							
 						}
 					}
@@ -319,9 +324,11 @@
 				scope:new_landless_adventurer ?= {
 					location = {
 						OR = {
-							geographical_region = world_africa
-							geographical_region = world_india
-							geographical_region = world_burma
+							#L5R Modified
+							geographical_region = rokugan_spice_and_silk_isles
+							# geographical_region = world_africa
+							# geographical_region = world_india
+							# geographical_region = world_burma
 						}
 					}
 				}
@@ -688,47 +695,49 @@
 		}
 		localization_key = wildcats
 	}
-	text = {
-		setup_scope = {
-			save_scope_as = new_landless_adventurer
-			house ?= { save_scope_as = new_landless_adventurer_house }
-			location ?= { save_scope_as = new_landless_adventurer_location }
-		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					location = {
-						OR = {
-							geographical_region = world_europe_north
-							geographical_region = world_steppe_east
-							geographical_region = world_steppe_west
-						}
-					}
-				}
-			}
-		}
-		localization_key = elks
-	}
-	text = {
-		setup_scope = {
-			save_scope_as = new_landless_adventurer
-			house ?= { save_scope_as = new_landless_adventurer_house }
-			location ?= { save_scope_as = new_landless_adventurer_location }
-		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer_location ?= {
-					geographical_region = world_africa_north
-				}
-				scope:new_landless_adventurer_location ?= {
-					geographical_region = world_middle_east
-				}
-			}
-		}
-		localization_key = camels
-	}
+	#L5R Disabled
+	# text = {
+	# 	setup_scope = {
+	# 		save_scope_as = new_landless_adventurer
+	# 		house ?= { save_scope_as = new_landless_adventurer_house }
+	# 		location ?= { save_scope_as = new_landless_adventurer_location }
+	# 	}
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { exists = scope:new_landless_adventurer }
+	# 			scope:new_landless_adventurer ?= {
+	# 				location = {
+	# 					OR = {
+	# 						geographical_region = world_europe_north
+	# 						geographical_region = world_steppe_east
+	# 						geographical_region = world_steppe_west
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = elks
+	# }
+	#L5R Disabled
+	# text = {
+	# 	setup_scope = {
+	# 		save_scope_as = new_landless_adventurer
+	# 		house ?= { save_scope_as = new_landless_adventurer_house }
+	# 		location ?= { save_scope_as = new_landless_adventurer_location }
+	# 	}
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { exists = scope:new_landless_adventurer }
+	# 			scope:new_landless_adventurer_location ?= {
+	# 				geographical_region = world_africa_north
+	# 			}
+	# 			scope:new_landless_adventurer_location ?= {
+	# 				geographical_region = world_middle_east
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = camels
+	# }
 	text = {
 		setup_scope = {
 			save_scope_as = new_landless_adventurer
@@ -822,12 +831,16 @@
 				NOT = { exists = scope:new_landless_adventurer }
 				scope:new_landless_adventurer ?= {
 					location = {
-						NOR = {
-							geographical_region = world_africa
-							geographical_region = world_india
-							geographical_region = world_burma
-							geographical_region = world_steppe
+						OR = {
+							geographical_region = rokugan_unicorn
 						}
+						#L5R Modified
+						# NOR = {
+						# 	geographical_region = world_africa
+						# 	geographical_region = world_india
+						# 	geographical_region = world_burma
+						# 	geographical_region = world_steppe
+						# }
 					}
 				}
 			}
@@ -840,37 +853,20 @@
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		localization_key = phoenixes
-	}
-	text = {
-		setup_scope = {
-			save_scope_as = new_landless_adventurer
-			house ?= { save_scope_as = new_landless_adventurer_house }
-			location ?= { save_scope_as = new_landless_adventurer_location }
-		}
+		#L5R Added
 		trigger = {
 			OR = {
 				NOT = { exists = scope:new_landless_adventurer }
 				scope:new_landless_adventurer ?= {
 					location = {
-						NOR = {
-							geographical_region = world_africa
-							geographical_region = world_india
-							geographical_region = world_burma
+						OR = {
+							geographical_region = rokugan_phoenix
 						}
 					}
 				}
 			}
 		}
-		localization_key = wyverns
-	}
-	text = {
-		setup_scope = {
-			save_scope_as = new_landless_adventurer
-			house ?= { save_scope_as = new_landless_adventurer_house }
-			location ?= { save_scope_as = new_landless_adventurer_location }
-		}
-		localization_key = giants
+		localization_key = phoenixes
 	}
 	#L5R Disabled
 	# text = {
@@ -883,11 +879,17 @@
 	# 		OR = {
 	# 			NOT = { exists = scope:new_landless_adventurer }
 	# 			scope:new_landless_adventurer ?= {
-	# 				faith = faith:norse_pagan
+	# 				location = {
+	# 					NOR = {
+	# 						geographical_region = world_africa
+	# 						geographical_region = world_india
+	# 						geographical_region = world_burma
+	# 					}
+	# 				}
 	# 			}
 	# 		}
 	# 	}
-	# 	localization_key = trolls
+	# 	localization_key = wyverns
 	# }
 	text = {
 		setup_scope = {
@@ -895,22 +897,7 @@
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					location = {
-						NOR = {
-							geographical_region = world_africa
-							geographical_region = world_india
-							geographical_region = world_burma
-						}
-					}
-					ai_compassion < 0
-				}
-			}
-		}
-		localization_key = ogres
+		localization_key = giants
 	}
 	text = {
 		setup_scope = {
@@ -918,18 +905,61 @@
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						has_cultural_pillar = heritage_arabic
-					}
-				}
-			}
-		}
-		localization_key = djinns
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			faith = faith:norse_pagan
+		# 		}
+		# 	}
+		# }
+		localization_key = trolls
 	}
+	text = {
+		setup_scope = {
+			save_scope_as = new_landless_adventurer
+			house ?= { save_scope_as = new_landless_adventurer_house }
+			location ?= { save_scope_as = new_landless_adventurer_location }
+		}
+		#L5R Disabled
+		#L5R TODO : for shadowlands adventurers
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			location = {
+		# 				NOR = {
+		# 					geographical_region = world_africa
+		# 					geographical_region = world_india
+		# 					geographical_region = world_burma
+		# 				}
+		# 			}
+		# 			ai_compassion < 0
+		# 		}
+		# 	}
+		# }
+		localization_key = ogres
+	}
+	#L5R Disabled
+	# text = {
+	# 	setup_scope = {
+	# 		save_scope_as = new_landless_adventurer
+	# 		house ?= { save_scope_as = new_landless_adventurer_house }
+	# 		location ?= { save_scope_as = new_landless_adventurer_location }
+	# 	}
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { exists = scope:new_landless_adventurer }
+	# 			scope:new_landless_adventurer ?= {
+	# 				culture = {
+	# 					has_cultural_pillar = heritage_arabic
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = djinns
+	# }
 	text = {
 		setup_scope = {
 			save_scope_as = new_landless_adventurer
@@ -2064,27 +2094,29 @@ GetAdventureNamePrefixes = {
 				scope:new_landless_adventurer ?= {
 					OR = {
 						has_trait = rough_terrain_expert
-						culture = {
-							has_cultural_parameter = unlock_maa_mountaineer
-						}
-						culture = {
-							has_cultural_tradition = tradition_horn_mountain_skirmishing
-						}
+						#L5R Disabled
+						# culture = {
+						# 	has_cultural_parameter = unlock_maa_mountaineer
+						# }
+						# culture = {
+						# 	has_cultural_tradition = tradition_horn_mountain_skirmishing
+						# }
 						culture = {
 							has_cultural_tradition = tradition_mountain_homes
 						}
 						culture = {
 							has_cultural_tradition = tradition_sacred_mountains
 						}
-						culture = {
-							has_cultural_parameter = unlock_maa_zbrojnosh
-						}
-						culture = {
-							has_cultural_tradition = tradition_caucasian_wolves
-						}
-						culture = {
-							has_cultural_tradition = tradition_amharic_highlanders
-						}
+						#L5R Disabled
+						# culture = {
+						# 	has_cultural_parameter = unlock_maa_zbrojnosh
+						# }
+						# culture = {
+						# 	has_cultural_tradition = tradition_caucasian_wolves
+						# }
+						# culture = {
+						# 	has_cultural_tradition = tradition_amharic_highlanders
+						# }
 						location = {
 							terrain = mountains
 						}
@@ -3269,24 +3301,25 @@ GetAdventureNameBand = {
 		}
 		localization_key = exiles
 	}
-	text = {
-		setup_scope = {
-			save_scope_as = new_landless_adventurer
-			house ?= { save_scope_as = new_landless_adventurer_house }
-			location ?= { save_scope_as = new_landless_adventurer_location }
-		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						has_cultural_tradition = tradition_horse_lords
-					}
-				}
-			}
-		}
-		localization_key = nomads
-	}
+	#L5R Disabled
+	# text = {
+	# 	setup_scope = {
+	# 		save_scope_as = new_landless_adventurer
+	# 		house ?= { save_scope_as = new_landless_adventurer_house }
+	# 		location ?= { save_scope_as = new_landless_adventurer_location }
+	# 	}
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { exists = scope:new_landless_adventurer }
+	# 			scope:new_landless_adventurer ?= {
+	# 				culture = {
+	# 					has_cultural_tradition = tradition_horse_lords
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = nomads
+	# }
 
 	text = {
 		setup_scope = {
@@ -4277,18 +4310,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = rampart
 	}
 	text = {
@@ -4297,18 +4331,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = bastion
 	}
 	text = {
@@ -4317,18 +4352,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = citadel
 	}
 	text = {
@@ -4337,18 +4373,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = fortress
 	}
 	text = {
@@ -4357,18 +4394,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = palisade
 	}
 	text = {
@@ -4385,18 +4423,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = keep
 	}
 	text = {
@@ -4405,18 +4444,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = tower
 	}
 	text = {
@@ -4859,18 +4899,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = bulwark
 	}
 	text = {
@@ -5604,24 +5645,25 @@ GetAdventureNameSuffix = {
 		}
 		localization_key = holdfast
 	}
-	text = {
-		setup_scope = {
-			save_scope_as = new_landless_adventurer
-			house ?= { save_scope_as = new_landless_adventurer_house }
-			location ?= { save_scope_as = new_landless_adventurer_location }
-		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						has_cultural_tradition = tradition_horse_lords
-					}
-				}
-			}
-		}
-		localization_key = horde
-	}
+	#L5R Disabled
+	# text = {
+	# 	setup_scope = {
+	# 		save_scope_as = new_landless_adventurer
+	# 		house ?= { save_scope_as = new_landless_adventurer_house }
+	# 		location ?= { save_scope_as = new_landless_adventurer_location }
+	# 	}
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { exists = scope:new_landless_adventurer }
+	# 			scope:new_landless_adventurer ?= {
+	# 				culture = {
+	# 					has_cultural_tradition = tradition_horse_lords
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = horde
+	# }
 	text = {
 		setup_scope = {
 			save_scope_as = new_landless_adventurer
@@ -5801,18 +5843,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = larder
 	}
 	text = {
@@ -6068,19 +6111,20 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						has_cultural_era_or_later = culture_era_early_medieval
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				has_cultural_era_or_later = culture_era_early_medieval
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = merlon
 	}
 	text = {
@@ -6188,18 +6232,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = motte
 	}
 	#L5R Disabled
@@ -7152,18 +7197,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = scullery
 	}
 	text = {
@@ -7324,18 +7370,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = spire
 	}
 	text = {
@@ -7679,18 +7726,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = watchtower
 	}
 	text = {
@@ -7786,18 +7834,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = wheelhouse
 	}
 	text = {
@@ -7806,18 +7855,19 @@ GetAdventureNameSuffix = {
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer ?= {
-					culture = {
-						NOT = {
-							has_cultural_tradition = tradition_horse_lords
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		NOT = { exists = scope:new_landless_adventurer }
+		# 		scope:new_landless_adventurer ?= {
+		# 			culture = {
+		# 				NOT = {
+		# 					has_cultural_tradition = tradition_horse_lords
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		localization_key = wicket
 	}
 	text = {
@@ -8034,7 +8084,9 @@ GetAdventureNameSuffix = {
 			NOT = { exists = scope:new_landless_adventurer }
 			scope:new_landless_adventurer ?= {
 				culture = {
-					has_cultural_tradition = tradition_horse_lords
+					#L5R Modified
+					has_cultural_pillar = heritage_unicorn
+					# has_cultural_tradition = tradition_horse_lords
 				}
 			}
 		}
