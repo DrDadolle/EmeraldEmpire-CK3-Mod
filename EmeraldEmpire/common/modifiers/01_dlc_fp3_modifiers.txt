@@ -175,20 +175,20 @@ fp3_praying_too_much_modifier = {
 	stewardship = -1
 	monthly_piety_gain_mult = 0.1
 }
-
-fp3_name_read_in_friday_prayer_modifier = {
-	icon = prestige_positive
-	monthly_piety_gain_per_happy_powerful_vassal_mult = 0.05
-	diplomacy = 2
-	title_creation_cost_mult = -0.2
-}
-
-fp3_displayed_pious_submission_to_caliph_modifier = {
-	icon = piety_positive
-	religious_head_opinion = 20
-	learning = 2
-	diplomacy_per_piety_level = 1
-}
+#L5R Disabled
+# fp3_name_read_in_friday_prayer_modifier = {
+# 	icon = prestige_positive
+# 	monthly_piety_gain_per_happy_powerful_vassal_mult = 0.05
+# 	diplomacy = 2
+# 	title_creation_cost_mult = -0.2
+# }
+#L5R Disabled
+# fp3_displayed_pious_submission_to_caliph_modifier = {
+# 	icon = piety_positive
+# 	religious_head_opinion = 20
+# 	learning = 2
+# 	diplomacy_per_piety_level = 1
+# }
 #L5R Disabled
 # fp3_honored_by_the_faithful_modifier = {
 # 	icon = piety_positive
@@ -214,32 +214,32 @@ fp3_better_company_modifier = {
 }
 
 ####FP3 Dynasty Modifiers#####
-
-fp3_light_of_the_walayah_modifier = {
-	icon = magic_positive
-	same_faith_opinion = 5
-	diplomacy_per_piety_level = 1
-}
-
-fp3_azariqa_ascendancy_modifier = {
-	icon = prowess_positive
-	same_faith_opinion = 10
-	martial_per_piety_level = 1
-}
-
-fp3_promoted_persian_scripture_modifier = {
-	icon = learning_positive
-	learn_language_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-	max_learn_language_schemes_add = 1
-	learning_per_piety_level = 1
-}
-
-fp3_persian_resurgence_county_modifier = {
-	icon = learning_positive
-	monthly_county_control_growth_add = 0.3
-	church_holding_holding_build_speed = -0.25
-	church_holding_holding_build_gold_cost = -0.25
-}
+#L5R Disabled
+# fp3_light_of_the_walayah_modifier = {
+# 	icon = magic_positive
+# 	same_faith_opinion = 5
+# 	diplomacy_per_piety_level = 1
+# }
+#L5R Disabled
+# fp3_azariqa_ascendancy_modifier = {
+# 	icon = prowess_positive
+# 	same_faith_opinion = 10
+# 	martial_per_piety_level = 1
+# }
+#L5R Disabled
+# fp3_promoted_persian_scripture_modifier = {
+# 	icon = learning_positive
+# 	learn_language_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+# 	max_learn_language_schemes_add = 1
+# 	learning_per_piety_level = 1
+# }
+#L5R Disabled
+# fp3_persian_resurgence_county_modifier = {
+# 	icon = learning_positive
+# 	monthly_county_control_growth_add = 0.3
+# 	church_holding_holding_build_speed = -0.25
+# 	church_holding_holding_build_gold_cost = -0.25
+# }
 
 fp3_forgotten_runestones_county_modifier = {
 	icon = rock_positive
@@ -630,12 +630,12 @@ fp3_religious_desertion_modifier = {
 	icon = martial_negative
 	levy_size = -0.8
 }
-
-persian_has_plush_carpet_modifier = { # Same effect as has_plush_carpet_modifier
-	icon = prestige_positive
-	monthly_prestige_gain_mult = 0.2
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-}
+#L5R Disabled
+# persian_has_plush_carpet_modifier = { # Same effect as has_plush_carpet_modifier
+# 	icon = prestige_positive
+# 	monthly_prestige_gain_mult = 0.2
+# 	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+# }
 
 fp3_struggle_caliph_super_suspicious_modifier = {
 	icon = intrigue_positive

@@ -1364,20 +1364,20 @@ brutal_castration_modifier = {
 	health = -0.75
 	stress_gain_mult = 0.2
 }
-
-ravaged_by_greek_fire_modifier = {
-	icon = flame_negative
-	advantage = -2
-	coastal_advantage = -3
-	embarkation_cost_mult = 3
-}
-
-defenders_immolated_modifier = {
-	icon = flame_negative
-	fort_level = -3
-	garrison_size = -0.5
-	county_opinion_add = -20
-}
+#L5R Disabled
+# ravaged_by_greek_fire_modifier = {
+# 	icon = flame_negative
+# 	advantage = -2
+# 	coastal_advantage = -3
+# 	embarkation_cost_mult = 3
+# }
+#L5R Disabled
+# defenders_immolated_modifier = {
+# 	icon = flame_negative
+# 	fort_level = -3
+# 	garrison_size = -0.5
+# 	county_opinion_add = -20
+# }
 
 defensive_fire_dromons_modifier = {
 	icon = flame_positive
@@ -1385,13 +1385,13 @@ defensive_fire_dromons_modifier = {
 	county_opinion_add = 5
 	tax_mult = -0.05
 }
-
-assaulted_by_greek_fire_modifier = {
-	icon = flame_negative
-	advantage = -1
-	coastal_advantage = -2
-	embarkation_cost_mult = 1.5
-}
+#L5R Disabled
+# assaulted_by_greek_fire_modifier = {
+# 	icon = flame_negative
+# 	advantage = -1
+# 	coastal_advantage = -2
+# 	embarkation_cost_mult = 1.5
+# }
 
 noble_administrators_modifier = {
 	icon = byzantine_eagle_positive
