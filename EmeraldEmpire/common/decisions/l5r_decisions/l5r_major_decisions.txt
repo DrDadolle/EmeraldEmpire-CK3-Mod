@@ -732,7 +732,7 @@ decision_restore_snake_clan = {
 		current_date >= 402.1.1
 		dynasty:dynasty_chuda = {
 			NOT = {
-				any_house_member = {
+				any_dynasty_member = {
 					is_alive = yes
 				}
 			}

@@ -1130,301 +1130,302 @@
 	}
 
 # armor_helmet - the accompanying helmet for a set of armor
-	armor_helmet_spangenhelm = {
-		group = armor_helmet
-		weight = {
-			value = 10
-			if = {
-				limit = { #Mostly in Middle East and Europe
-					culture = { has_cultural_pillar = heritage_arabic }
-					culture_has_european_heritage_pillar_trigger = yes
-				}
-				add = 10
-			}
-		}
-	}
-	armor_helmet_crested = {
-		group = armor_helmet
-		weight = {
-			value = 10
-			if = {
-				limit = { #Mostly England and Scandinavia
-					culture_has_north_european_heritage_pillar_trigger = yes
-					culture_has_west_european_heritage_pillar_trigger = yes
-				}
-				add = 10
-			}
-			if = {
-				limit = {
-					# Only common until 11th century
-					current_date > 1000.1.1
-				}
-				multiply = 0
-			}
-		}
-	}
-	armor_helmet_nasal = {
-		group = armor_helmet
-		weight = {
-			value = 10
-			if = {
-				limit = { # Western European origin
-					culture_has_west_european_heritage_pillar_trigger = yes
-				}
-				add = 10
-			}
-			if = {
-				limit = {
-					# Lost popularity at the end of 13th century
-					current_date > 1250.1.1
-				}
-				multiply = 0
-			}
-		}
-	}
-	armor_helmet_enclosed = {
-		group = armor_helmet
-		trigger = {
-			# More fancy than the nasal helmet, cheaper than the great helmet
-			trigger_if = {
-				limit = { exists = scope:wealth }
-				scope:wealth >= 40
-			}
-		}
-		weight = {
-			value = 10
-			if = {
-				limit = { # Mostly in Europe
-					culture_has_european_heritage_pillar_trigger = yes
-				}
-				add = 10
-			}
-			if = {
-				limit = { # Likely to match the armor
-					exists = scope:armor_type
-					scope:armor_type = flag:armor_type_plate
-				}
-				add = 40
-			}
-			if = {
-				limit = {
-					# Began to show up late 12th century
-					current_date < 1150.1.1
-				}
-				multiply = 0
-			}
-		}
-	}
-	armor_helmet_great_helmet = {
-		group = armor_helmet
-		trigger = {
-			# More fancy than the nasal helmet and the enclosed helmet
-			trigger_if = {
-				limit = { exists = scope:wealth }
-				scope:wealth >= 60
-			}
-			# Began to show up late 12th century (Crusades)
-			current_date > 1150.1.1
-		}
-		weight = {
-			value = 10
-			if = {
-				limit = { # Mostly in Europe
-					culture_has_west_european_heritage_pillar_trigger = yes
-				}
-				add = 10
-			}
-			if = {
-				limit = { # Likely to match the armor
-					exists = scope:armor_type
-					scope:armor_type = flag:armor_type_plate
-				}
-				add = 40
-			}
-			if = {
-				limit = {
-					# Mostly used after 1220
-					current_date > 1220.1.1
-				}
-				add = 10
-			}
-		}
-	}
-	armor_helmet_great_helmet_bascinet = {
-		group = armor_helmet
-		trigger = {
-			# More fancy than the nasal helmet and the enclosed helmet
-			trigger_if = {
-				limit = { exists = scope:wealth }
-				scope:wealth >= 60
-			}
-			# Bascinet began to show up late 12th century (first recorded reference: 1281)
-			current_date > 1281.1.1
-		}
-		weight = {
-			value = 10
-			if = {
-				limit = { # Mostly in Europe
-					culture_has_west_european_heritage_pillar_trigger = yes
-				}
-				add = 10
-			}
-			if = {
-				limit = { # Likely to match the armor
-					exists = scope:armor_type
-					scope:armor_type = flag:armor_type_plate
-				}
-				add = 40
-			}
-		}
-	}
-	armor_helmet_great_helmet_cervelliere = {
-		group = armor_helmet
-		trigger = {
-			# More fancy than the nasal helmet and the enclosed helmet
-			trigger_if = {
-				limit = { exists = scope:wealth }
-				scope:wealth >= 60
-			}
-			# Began to show up late 12th century (Crusades)
-			current_date > 1150.1.1
-		}
-		weight = {
-			value = 10
-			if = {
-				limit = { # Mostly in Europe
-					culture_has_west_european_heritage_pillar_trigger = yes
-				}
-				add = 10
-			}
-			if = {
-				limit = { # Likely to match the armor
-					exists = scope:armor_type
-					scope:armor_type = flag:armor_type_plate
-				}
-				add = 40
-			}
-			if = {
-				limit = {
-					# Mostly used after 1250
-					current_date > 1250.1.1
-				}
-				add = 10
-			}
-		}
-	}
-	armor_helmet_turban_helmet = {
-		group = armor_helmet
-		trigger = {
-			#Began to show up late 13th century (Ottoman Empire)
-			current_date > 1250.1.1
-		}
-		weight = {
-			value = 10
-			if = {
-				limit = { # Mostly in North Africa/West Asia/Southeast Europe
-					OR = {
-						culture_has_north_african_heritage_pillar_trigger = yes
-						culture_has_west_asian_heritage_pillar_trigger = yes
-						culture = { has_cultural_pillar = heritage_turkic }
-						culture = { has_cultural_pillar = heritage_latin }
-						culture = { has_cultural_pillar = heritage_byzantine }
-						culture = { has_cultural_pillar = heritage_caucasian }
-						culture = { has_cultural_pillar = heritage_syriac }
-					}
-				}
-				add = 10
-			}
-		}
-	}
-	armor_helmet_lamellar = {
-		group = armor_helmet
-		trigger = {
-			#Began to show up late 13th century (Ottoman Empire)
-			current_date > 1250.1.1
-		}
-		weight = {
-			value = 10
-			if = {
-				limit = { # Popularized in central Asia by the steppe nomads
-					culture_has_central_asian_heritage_pillar_trigger = yes
-				}
-				add = 10
-			}
-			if = {
-				limit = { # Likely to match the armor
-					exists = scope:armor_type
-					scope:armor_type = flag:armor_type_lamellar
-				}
-				add = 40
-			}
-		}
-	}
-	armor_helmet_cervelliere = {
-		group = armor_helmet
-		trigger = {
-			#First introduced during the late 12th century
-			current_date > 1150.1.1
-		}
-		weight = {
-			value = 10
-			if = {
-				limit = { # Mostly in Europe
-					culture_has_european_heritage_pillar_trigger = yes
-				}
-				add = 10
-			}
-			if = {
-				limit = { # Not very fancy
-					scope:wealth < 40
-				}
-				multiply = 0.1
-			}
-		}
-	}
-	armor_helmet_kettle = {
-		group = armor_helmet
-		trigger = {
-			#First introduced during the late 12th century
-			current_date > 1150.1.1
-		}
-		weight = {
-			value = 10
-			if = {
-				limit = { # Mostly in Europe
-					culture_has_european_heritage_pillar_trigger = yes
-				}
-				add = 10
-			}
-			if = {
-				limit = { # Not very fancy
-					scope:wealth < 40
-				}
-				multiply = 0.1
-			}
-		}
-	}
-	armor_helmet_kulah_khud = {
-		group = armor_helmet
-		weight = {
-			value = 10
-			if = {
-				limit = { # Originated in Central Asia, but also used in all of west Asia
-					OR = {
-						culture_has_central_asian_heritage_pillar_trigger = yes
-						culture_has_west_asian_heritage_pillar_trigger = yes
-					}
-				}
-				add = 10
-			}
-			if = {
-				limit = { # Mostly used in the later middle ages
-					current_date < 1400.1.1
-				}
-				multiply = 0.25
-			}
-		}
-	}
+	#L5R Disabled
+	# armor_helmet_spangenhelm = {
+	# 	group = armor_helmet
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { #Mostly in Middle East and Europe
+	# 				culture = { has_cultural_pillar = heritage_arabic }
+	# 				culture_has_european_heritage_pillar_trigger = yes
+	# 			}
+	# 			add = 10
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_crested = {
+	# 	group = armor_helmet
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { #Mostly England and Scandinavia
+	# 				culture_has_north_european_heritage_pillar_trigger = yes
+	# 				culture_has_west_european_heritage_pillar_trigger = yes
+	# 			}
+	# 			add = 10
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				# Only common until 11th century
+	# 				current_date > 1000.1.1
+	# 			}
+	# 			multiply = 0
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_nasal = {
+	# 	group = armor_helmet
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { # Western European origin
+	# 				culture_has_west_european_heritage_pillar_trigger = yes
+	# 			}
+	# 			add = 10
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				# Lost popularity at the end of 13th century
+	# 				current_date > 1250.1.1
+	# 			}
+	# 			multiply = 0
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_enclosed = {
+	# 	group = armor_helmet
+	# 	trigger = {
+	# 		# More fancy than the nasal helmet, cheaper than the great helmet
+	# 		trigger_if = {
+	# 			limit = { exists = scope:wealth }
+	# 			scope:wealth >= 40
+	# 		}
+	# 	}
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { # Mostly in Europe
+	# 				culture_has_european_heritage_pillar_trigger = yes
+	# 			}
+	# 			add = 10
+	# 		}
+	# 		if = {
+	# 			limit = { # Likely to match the armor
+	# 				exists = scope:armor_type
+	# 				scope:armor_type = flag:armor_type_plate
+	# 			}
+	# 			add = 40
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				# Began to show up late 12th century
+	# 				current_date < 1150.1.1
+	# 			}
+	# 			multiply = 0
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_great_helmet = {
+	# 	group = armor_helmet
+	# 	trigger = {
+	# 		# More fancy than the nasal helmet and the enclosed helmet
+	# 		trigger_if = {
+	# 			limit = { exists = scope:wealth }
+	# 			scope:wealth >= 60
+	# 		}
+	# 		# Began to show up late 12th century (Crusades)
+	# 		current_date > 1150.1.1
+	# 	}
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { # Mostly in Europe
+	# 				culture_has_west_european_heritage_pillar_trigger = yes
+	# 			}
+	# 			add = 10
+	# 		}
+	# 		if = {
+	# 			limit = { # Likely to match the armor
+	# 				exists = scope:armor_type
+	# 				scope:armor_type = flag:armor_type_plate
+	# 			}
+	# 			add = 40
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				# Mostly used after 1220
+	# 				current_date > 1220.1.1
+	# 			}
+	# 			add = 10
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_great_helmet_bascinet = {
+	# 	group = armor_helmet
+	# 	trigger = {
+	# 		# More fancy than the nasal helmet and the enclosed helmet
+	# 		trigger_if = {
+	# 			limit = { exists = scope:wealth }
+	# 			scope:wealth >= 60
+	# 		}
+	# 		# Bascinet began to show up late 12th century (first recorded reference: 1281)
+	# 		current_date > 1281.1.1
+	# 	}
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { # Mostly in Europe
+	# 				culture_has_west_european_heritage_pillar_trigger = yes
+	# 			}
+	# 			add = 10
+	# 		}
+	# 		if = {
+	# 			limit = { # Likely to match the armor
+	# 				exists = scope:armor_type
+	# 				scope:armor_type = flag:armor_type_plate
+	# 			}
+	# 			add = 40
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_great_helmet_cervelliere = {
+	# 	group = armor_helmet
+	# 	trigger = {
+	# 		# More fancy than the nasal helmet and the enclosed helmet
+	# 		trigger_if = {
+	# 			limit = { exists = scope:wealth }
+	# 			scope:wealth >= 60
+	# 		}
+	# 		# Began to show up late 12th century (Crusades)
+	# 		current_date > 1150.1.1
+	# 	}
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { # Mostly in Europe
+	# 				culture_has_west_european_heritage_pillar_trigger = yes
+	# 			}
+	# 			add = 10
+	# 		}
+	# 		if = {
+	# 			limit = { # Likely to match the armor
+	# 				exists = scope:armor_type
+	# 				scope:armor_type = flag:armor_type_plate
+	# 			}
+	# 			add = 40
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				# Mostly used after 1250
+	# 				current_date > 1250.1.1
+	# 			}
+	# 			add = 10
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_turban_helmet = {
+	# 	group = armor_helmet
+	# 	trigger = {
+	# 		#Began to show up late 13th century (Ottoman Empire)
+	# 		current_date > 1250.1.1
+	# 	}
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { # Mostly in North Africa/West Asia/Southeast Europe
+	# 				OR = {
+	# 					culture_has_north_african_heritage_pillar_trigger = yes
+	# 					culture_has_west_asian_heritage_pillar_trigger = yes
+	# 					culture = { has_cultural_pillar = heritage_turkic }
+	# 					culture = { has_cultural_pillar = heritage_latin }
+	# 					culture = { has_cultural_pillar = heritage_byzantine }
+	# 					culture = { has_cultural_pillar = heritage_caucasian }
+	# 					culture = { has_cultural_pillar = heritage_syriac }
+	# 				}
+	# 			}
+	# 			add = 10
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_lamellar = {
+	# 	group = armor_helmet
+	# 	trigger = {
+	# 		#Began to show up late 13th century (Ottoman Empire)
+	# 		current_date > 1250.1.1
+	# 	}
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { # Popularized in central Asia by the steppe nomads
+	# 				culture_has_central_asian_heritage_pillar_trigger = yes
+	# 			}
+	# 			add = 10
+	# 		}
+	# 		if = {
+	# 			limit = { # Likely to match the armor
+	# 				exists = scope:armor_type
+	# 				scope:armor_type = flag:armor_type_lamellar
+	# 			}
+	# 			add = 40
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_cervelliere = {
+	# 	group = armor_helmet
+	# 	trigger = {
+	# 		#First introduced during the late 12th century
+	# 		current_date > 1150.1.1
+	# 	}
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { # Mostly in Europe
+	# 				culture_has_european_heritage_pillar_trigger = yes
+	# 			}
+	# 			add = 10
+	# 		}
+	# 		if = {
+	# 			limit = { # Not very fancy
+	# 				scope:wealth < 40
+	# 			}
+	# 			multiply = 0.1
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_kettle = {
+	# 	group = armor_helmet
+	# 	trigger = {
+	# 		#First introduced during the late 12th century
+	# 		current_date > 1150.1.1
+	# 	}
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { # Mostly in Europe
+	# 				culture_has_european_heritage_pillar_trigger = yes
+	# 			}
+	# 			add = 10
+	# 		}
+	# 		if = {
+	# 			limit = { # Not very fancy
+	# 				scope:wealth < 40
+	# 			}
+	# 			multiply = 0.1
+	# 		}
+	# 	}
+	# }
+	# armor_helmet_kulah_khud = {
+	# 	group = armor_helmet
+	# 	weight = {
+	# 		value = 10
+	# 		if = {
+	# 			limit = { # Originated in Central Asia, but also used in all of west Asia
+	# 				OR = {
+	# 					culture_has_central_asian_heritage_pillar_trigger = yes
+	# 					culture_has_west_asian_heritage_pillar_trigger = yes
+	# 				}
+	# 			}
+	# 			add = 10
+	# 		}
+	# 		if = {
+	# 			limit = { # Mostly used in the later middle ages
+	# 				current_date < 1400.1.1
+	# 			}
+	# 			multiply = 0.25
+	# 		}
+	# 	}
+	# }
 
 # armor_decoraton - any additional embellishments added to a set of armor
 	armor_decoration_etched_pattern = {
