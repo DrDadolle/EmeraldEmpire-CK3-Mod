@@ -3040,13 +3040,15 @@ learning_medicine_special.2110 = {
 				target = root
 			}
 		}
-		if = {	#Muslims receive additional piety due to their religion's prohibitions on intoxicants.
-			limit = {
-				faith = { religion_tag = islam_religion }
-			}
-			add_piety = medium_piety_gain
-		}
-		else_if = {	#If your faith hates such things, you get a little piety.
+		#L5R Disabled
+		# if = {	#Muslims receive additional piety due to their religion's prohibitions on intoxicants.
+		# 	limit = {
+		# 		faith = { religion_tag = islam_religion }
+		# 	}
+		# 	add_piety = medium_piety_gain
+		# }
+		# else_
+		if = {	#If your faith hates such things, you get a little piety.
 			limit = {
 				faith = { trait_is_sin = gluttonous }
 			}

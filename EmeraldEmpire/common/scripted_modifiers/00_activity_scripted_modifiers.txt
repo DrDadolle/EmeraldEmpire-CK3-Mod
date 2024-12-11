@@ -892,7 +892,7 @@ activity_guest_hunt_ai_accept_modifier = {
 	# 		}
 	# 	}
 	# 	desc = ACTIVITY_GUEST_DHARMIC_PACIFISM_REASON
-	}
+	#}
 	modifier = {
 		culture = { has_cultural_parameter = cannot_hunt }
 		add = -100

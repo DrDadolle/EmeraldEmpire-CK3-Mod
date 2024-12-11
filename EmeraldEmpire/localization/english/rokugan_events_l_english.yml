@@ -22,7 +22,7 @@
  rokugan_introduction.0004.desc:0 "Rokugan is the setting of the Legend of the Five Rings franchise. It is based on feudal Japan with influences from other East Asian cultures, where samurai, shugenja, and trained courtiers vie for control of the noble courts. \n\n Rokugani society is based on a clan structure, with seven so-called 'Great Clans', as well as several minor clans. Each clan has areas of land bequeathed to them by the Emperor, which they were tasked with maintaining. The Emperor retained ownership of all lands, however, and the clans essentially rented the lands they used by paying taxes annually.\n\n The Great Clans were each formed by one of the Kami after their fall from Tengoku, and their histories dated back to the very beginning of the Empire. The Great Clans were made up of several family lines, and each Family had their own general purpose within the Clan. Each Clan also had a specific purpose within Rokugan -- some area of expertise or mandate that the specific Clan could fulfill better than any others."
 
  rokugan_introduction.0005.t:0 "The Shadowlands"
- rokugan_introduction.0005.desc:0 "As the Kami created the Empire of Rokugan, the fallen Kami Fu Leng created the Shadowlands. The Shadowlands is the wasteland that laid to the southwest of Rokugan, a twisted, nightmarish place corrupted by the power of Jigoku, the Realm of Evil. It is home to oni, ogres, trolls, goblins, the Lost and countless other vile creatures.\n\nCurrently, the Shadowlands are not mapped nor implemented. Their implementation will take a lot of time and require to create several 3D asset for all the oni, goblins and the like.\n Hopefully I'll be able to implement it later."
+ rokugan_introduction.0005.desc:0 "As the Kami created the Empire of Rokugan, the fallen Kami Fu Leng created the Shadowlands. The Shadowlands is the wasteland that laid to the southwest of Rokugan, a twisted, nightmarish place corrupted by the power of Jigoku, the Realm of Evil. It is home to oni, ogres, trolls, goblins, the Lost and countless other vile creatures.\n\nCurrently, the Shadowlands are not mapped nor implemented. Their implementation will take a lot of time and require to create several 3D asset for all the oni, goblins and the like.\n Hopefully I will be able to implement it later."
 
  rokugan_introduction.0006.t:0 "Magic System"
  rokugan_introduction.0006.desc:0 "Currently, there is no magic system implemented. The Shindoshi trait that some character have only gives passive bonus.\n In a later update, Shindoshi characters (as well as Mahotsukai ones) will be able to perform feats of magic using prayers to sacred spirits."
@@ -98,9 +98,9 @@
  ############################
  l5r_religious_decision.0001.t:0 "Isawa Shindoshi"
  l5r_religious_decision.0001.desc:0 "After weeks of waiting, a knock on my paper door pull me out of my thoughts. My servant tells me that a shindoshi from the Isawa familly has arrived. I jauge the [isawa_shindoshi.GetWomenMen] in front of me. Will [isawa_shindoshi.GetSheHe] be capable of serving me ?"
- l5r_religious_decision.0001.a "I'm happy with [isawa_shindoshi.GetName]."
- l5r_religious_decision.0001.b "An ishiken ? How lucky !"
- l5r_religious_decision.0001.c "Are you calling yourself a shindoshi ? Get out !"
+ l5r_religious_decision.0001.a:0 "I am happy with [isawa_shindoshi.GetName]."
+ l5r_religious_decision.0001.b:0 "An ishiken ? How lucky !"
+ l5r_religious_decision.0001.c:0 "Are you calling yourself a shindoshi ? Get out !"
  ############################
  ###### Get Mystical Tattoo
  ############################
@@ -123,13 +123,14 @@
 #  l5r_clan_decision.0001.g.tt:0 ""
  l5r_clan_decision.0002.t:0 "Mystical Tattoo"
  l5r_clan_decision.0002.desc.start:0 "After enduring hours of needlework and pain, the tattooer tells me that his work is finished. I stand up and immediately start to feel that something has changed, the sacred ink is working.\n\n"
- l5r_clan_decision.0002.desc.avalanche:0 "I hear something far away, a rumble. No, I'm mistaken, the rumble seems to be closer, a lot closer. From my back maybe ? No one seems to notice it. My mind is a lot clearer as well, the dilemma I had last week seems to be laughingly easy to resolve now !"
+ l5r_clan_decision.0002.desc.avalanche:0 "I hear something far away, a rumble. No, I am mistaken, the rumble seems to be closer, a lot closer. From my back maybe ? No one seems to notice it. My mind is a lot clearer as well, the dilemma I had last week seems to be laughingly easy to resolve now !"
  l5r_clan_decision.0002.desc.cherry_blossom:0 "Strangely, I fell light and relaxed. I have come in peace with the fact of my own mortality."
  l5r_clan_decision.0002.desc.volcano:0 "I feel a warmth on my back... No, I feel my whole body feels warm. And powerful. As I leave the room, I start to think that nothing can resist my wrath anymore."
  l5r_clan_decision.0002.desc.void_dragon:0 "I see it. I see everything. All the possibilities. My mind has been opened to the limitless possibilites of my mortal coil, like Kami Togashi taught others mortals before."
  l5r_clan_decision.0002.desc.cloud:0 "I feel light, light and sharp. I think I understand how they work. I can see behind their fake smiles, as well as I can fake it myself. "
  l5r_clan_decision.0002.desc.vine:0 "It seems almost like real vines are wrapped around my legs and arms, it is so painful. But from this pain, I start to see the ramification between the people aroung me. How they work. Let's use it to my advantage"
  l5r_clan_decision.0002.a:0 "I feel like being reborn."
+ l5r_clan_decision.0002.wound:0 "The tattooer messed up."
  
 
  ############################
@@ -138,8 +139,8 @@
  ###### Air Kami
  ############################
  l5r_pray_spirit.0001.t:0 "Air Kami"
- l5r_pray_spirit.0001.desc:0 "I've wandered in my lands until I've found a serene cave, where I quickly identify the presence of an air Kami. I dispose on the ground offering of flowers, expensive encense and perfumes. \n\nThe spirit seems to have noticed me. What should I ask of them ?"
- l5r_pray_spirit.0001.desc.shindoshi:0 "I followed [shindoshi_realm_priest.GetFirstNameNoTooltip] until where arrive in a serene cave. A lot of wind seems to be coming in and out of there.[shindoshi_realm_priest.GetSheHe] disposes on the ground various offerings and performs various prayers. \n\nAfter a while, [shindoshi_realm_priest.GetSheHe] opens [shindoshi_realm_priest.GetHerHis] eyes and looks at me. "The air Kami is ready to hear your request. What would it be ?""
+ l5r_pray_spirit.0001.desc:0 "I have wandered in my lands until I have found a serene cave, where I quickly identify the presence of an air Kami. I dispose on the ground offering of flowers, expensive encense and perfumes. \n\nThe spirit seems to have noticed me. What should I ask of them ?"
+ l5r_pray_spirit.0001.desc.shindoshi:0 "I followed [shindoshi_realm_priest.GetFirstNameNoTooltip] until where arrive in a serene cave. A lot of wind seems to be coming in and out of there.[shindoshi_realm_priest.GetSheHe|U] disposes on the ground various offerings and performs various prayers. \n\nAfter a while, [shindoshi_realm_priest.GetSheHe] opens [shindoshi_realm_priest.GetHerHis] eyes and looks at me. "The air Kami is ready to hear your request. What would it be ?""
  l5r_pray_spirit.0001.a:0 "Please help me find long lost items."
  l5r_pray_spirit.0001.a.tt:0 "The air Kami might help you find forgotten artifacts"
  l5r_pray_spirit.0001.d:0 "On second thought, let us avoid disturbing them... "
@@ -155,7 +156,7 @@
  l5r_pray_spirit.0003.t:0 "Air Kami - Find Item"
  l5r_pray_spirit.0003.documents:0 "I am proud of my ancestors !"
  l5r_pray_spirit.0003.documents.desc:0 "As I am walking in the archives of my castle, a sudden gust of wind throws loose papers in air. I try to catch them while they are floating, but to no avail. I immediately call my servants as I don't want to spend hours collecting and ordering them again.\n\n While they are busy arched on the floor to grab the papers, I see a small parchment hanging from an high furniture. I climb on the table next to me, and grab it. It is a centuries-old document relating a service that my ancestors did to the emperor at the time, and how they were rewarded for it."
- l5r_pray_spirit.0003.weapon:0 "I'll make this weapon mine."
+ l5r_pray_spirit.0003.weapon:0 "I will make this weapon mine."
  l5r_pray_spirit.0003.weapon.desc:0 "As I walked around, my neck fells a small draugth coming from somewhere. Upon inspection, it seems that there is a small crack in the walls, and my eyes seems to have catch a metallic glimpse. I immediately order my servant to widen the crack to see what's in there. To my surprise, there was a secret weapon stash in there. Most of them have corroded and are unusable, but one of them seems to have stand the test of time."
  l5r_pray_spirit.0003.weapon_tt:0 "weapon_tooltip"
  l5r_pray_spirit.0003.weapon.artifact_toast:0 "You have found a forgotten weapon in the walls"
@@ -176,9 +177,9 @@
  l5r_pray_spirit.0003.lost_money:0 "I shouldn't have ask a kami for help."
  l5r_pray_spirit.0003.lost_money.desc:0 "My servants comes to me, they are looking very afraid. "We are very sorry, but the past few days, Numerous unexplicable draughts have appeared and stolen important documents ! We swear that we did everything in our power to find them or prevent such an occurence but it is almost like an angry spirits is doing pranks on us !""
  l5r_pray_spirit.0003.no_change.zealous:0 "I am not pious enougth !"
- l5r_pray_spirit.0003.no_change.zealous.desc:0 "I have waited eargerly to see how the air kami responded to my prayers. I've jumped any time there was a gust of wind or a draugth, but nothing seems to have changed... The spirit did not grant me their blessing."
+ l5r_pray_spirit.0003.no_change.zealous.desc:0 "I have waited eargerly to see how the air kami responded to my prayers. I have jumped any time there was a gust of wind or a draugth, but nothing seems to have changed... The spirit did not grant me their blessing."
  l5r_pray_spirit.0003.no_change:0 "Air spirits are fickle..."
- l5r_pray_spirit.0003.no_change.desc:0 "I've grown tired of waiting for the blessing of the spirit. No surnatural gust of wind have occured whatsoever. I guess nothing will happen."
+ l5r_pray_spirit.0003.no_change.desc:0 "I have grown tired of waiting for the blessing of the spirit. No surnatural gust of wind have occured whatsoever. I guess nothing will happen."
  l5r_pray_spirit.0003.bad:0 "Have I offended the spirits in some way?!"
  l5r_pray_spirit.0003.bad.desc:0 "For the last few days, as soon as I step outside of my bed, unprevisible gust of wind seems to follow me everywhere. I don't know how to dress anymore, it will get me a cold, I swear !"
 

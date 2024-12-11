@@ -26,20 +26,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ## CK3 1.13.* patch
-- Vanilla often replaces is_landed with is_playable_character  or is_landed_or_landless_administrative. If you want landless characters to have access to your content, you would need to do the same.
-- Scheme modifiers have been completely reworked, so all the old ones for things like personal_scheme_power_mult, hostile_scheme_resistance_add, etc. no longer work. You will need to replace them with new scheme modifier
-	- check scheme.info of vanilla game
 - remove bunch of errors
-- TODO Bannir quelqu'un pour tester si aventurier marche. MARCHE PAS
 - % de chance shindoshi/ishiken TROP BAS ! TO TEST
 - Rokugan too peaceful , reduce penality for war ! TO TEST 
-- Decision to tatoo => Works BUT no wounding EVER, why ? Wrong effect ? Try with 100% chance of wounds (otherwise, it is the message of the option which is incorrect ?)
-- add decision de recruter un shugenja  (si pas de shug) (issue with localisation of option ???) + dynasty not isawa of the character generated. Otherwise it works 
-- TEST pray air kami => With & without shugenja. Check loc. Check that there is both a 2 years "general" CD & 5 for Air.
-- Kami traits/kami descendent à la Shayoshant (saoshyant_descendant) upon birth
-	- TO BE TESTED
-- fixing loc on Shindoshi recruit page : any_courtier_or_guest missing localization !
-- Move the 195/197/198 provinces special building in the map_editor
+- Decision to tatoo => Wounded message in option incorrect for some reasons
+- ERROR : add decision de recruter un shugenja = dynasty not isawa of the character generated.
+- fixing loc on Shindoshi recruit page : any_courtier_or_guest_all missing localization ?? Wut ?
+- When banning someone (unlanded), location is incorrect "at 's in [PROVINCE NAME]"
 - Add thumbnail image for the mod !
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA
@@ -110,12 +103,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## Workaround to be careful with & unsure behaviours
 - headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
-- Remove AI Cadet branches => Working ?
 - Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
 - How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - start war on toshi Rambo / city rich frog decision
 	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 - weird log issue : [19:35:39][characterhistory.cpp:801]: Parent ( Hantei of  (Internal ID: 3 - Historical ID lineofhantei1)) of name_genji Lowborn of  (Internal ID: 18 - Historical ID lineofhantei2) is hasn't been born
+- event l5r_clan_decision.0001 display chances of being wounded, send a toast, but it doesn't appear in the final "option" of the event chain.
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================

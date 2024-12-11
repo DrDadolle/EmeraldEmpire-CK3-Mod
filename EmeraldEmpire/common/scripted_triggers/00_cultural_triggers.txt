@@ -252,7 +252,7 @@ culture_has_light_cavalry_maa = {
 culture_has_heavy_cavalry_maa = {
 	OR = {
 		#L5R Modified
-		has_cultural_pillar = heritahe_unicorn
+		has_cultural_pillar = heritage_unicorn
 	}
 }
 

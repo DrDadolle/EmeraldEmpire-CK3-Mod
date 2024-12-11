@@ -15,66 +15,66 @@ scripted_effect resolve_tattoo_effect = {
 			exists = scope:tattoo
 			scope:tattoo = flag:avalanche
 		}
-		send_interface_toast = {
-			title = msg_added_tattoo
-			left_icon = root
+		# send_interface_toast = {
+		# 	title = msg_added_tattoo
+		# 	left_icon = root
 			add_trait = avalanche_tattoo
-		}
+		# }
 	}
 	else_if = {
 		limit = { 
 			exists = scope:tattoo
 			scope:tattoo = flag:cherry_blossom
 		}
-		send_interface_toast = {
-			title = msg_added_tattoo
-			left_icon = root
+		# send_interface_toast = {
+		# 	title = msg_added_tattoo
+		# 	left_icon = root
 			add_trait = cherry_blossom_tattoo
-		}
+		# }
 	}
 	else_if = {
 		limit = {
 			exists = scope:tattoo
 			scope:tattoo = flag:volcano
 		}
-		send_interface_toast = {
-			title = msg_added_tattoo
-			left_icon = root
+		# send_interface_toast = {
+		# 	title = msg_added_tattoo
+		# 	left_icon = root
 			add_trait = volcano_tattoo
-		}
+		# }
 	}
 	else_if = {
 		limit = { 
 			exists = scope:tattoo
 			scope:tattoo = flag:cloud
 		}
-		send_interface_toast = {
-			title = msg_added_tattoo
-			left_icon = root
+		# send_interface_toast = {
+		# 	title = msg_added_tattoo
+		# 	left_icon = root
 			add_trait = cloud_tattoo
-		}
+		# }
 	}
 	else_if = {
 		limit = { 
 			exists = scope:tattoo
 			scope:tattoo = flag:vine
 		}
-		send_interface_toast = {
-			title = msg_added_tattoo
-			left_icon = root
+		# send_interface_toast = {
+		# 	title = msg_added_tattoo
+		# 	left_icon = root
 			add_trait = vine_tattoo
-		}
+		# }
 	}
 	else_if = {
 		limit = {
 			exists = scope:tattoo 
 			scope:tattoo = flag:void_dragon
 		}
-		send_interface_toast = {
-			title = msg_added_tattoo
-			left_icon = root
+		# send_interface_toast = {
+		# 	title = msg_added_tattoo
+		# 	left_icon = root
 			add_trait = void_dragon_tattoo
-		}
+		# }
 		random_list = {
 			50 = {
 				show_as_tooltip = { add_trait = ill }
@@ -127,7 +127,10 @@ scripted_effect resolve_tattoo_effect = {
 	## Always 50% chance of being wounded on accident
 	random = {
 		chance = 50
-		increase_wounds_effect = { REASON = accident }
+		send_interface_toast = {
+			title = l5r_clan_decision.0002.wound
+			increase_wounds_no_death_effect = { REASON = accident }
+		}
 	}
 }
 

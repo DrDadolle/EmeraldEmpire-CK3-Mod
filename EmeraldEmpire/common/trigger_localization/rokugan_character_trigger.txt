@@ -6,3 +6,12 @@
 	first_not = YOU_DO_NOT_HAVE_AN_SEPPUKU_REASON_ON_CHARACTER
 	third_not = THEY_DOES_NOT_HAVE_AN_SEPPUKU_REASON_ON_CHARACTER
 }
+
+
+any_courtier_or_guest = {
+	global = ANY_OF_CHARACTERS_COURTIER_OR_GUEST
+}
+
+any_courtier_or_guest_all = {
+	global = ALL_OF_CHARACTERS_COURTIER_OR_GUEST
+}

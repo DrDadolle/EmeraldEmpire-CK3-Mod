@@ -273,6 +273,9 @@ mystical_tattoes_decision = {
 		culture = {
 			has_cultural_parameter = can_mystical_tattooes
 		}
+	}
+
+	is_valid = {
 		is_tattooed = no
 	}
 

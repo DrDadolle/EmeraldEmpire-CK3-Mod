@@ -1790,7 +1790,8 @@ tournament_events.1000 = { # Select wager
 			}
 		}
 		tournament_place_wager_effect = { CONTENDER = root }
-		tournament_contest_maysir_effect = yes
+		#L5R Disabled
+		# tournament_contest_maysir_effect = yes
 		stress_impact = {
 			humble = medium_stress_impact_gain
 			greedy = minor_stress_impact_gain
@@ -1830,7 +1831,8 @@ tournament_events.1000 = { # Select wager
 		highlight_portrait = scope:wager_top_contestant
 		tournament_place_wager_effect = { CONTENDER = scope:wager_top_contestant }
 		tournament_bet_on_other_stress_effect = yes
-		tournament_contest_maysir_effect = yes
+		#L5R Disabled
+		# tournament_contest_maysir_effect = yes
 		ai_chance = {
 			base = 20
 			activity_tournament_wager_ai_option_modifier = { TARGET = scope:wager_top_contestant }
@@ -1858,7 +1860,8 @@ tournament_events.1000 = { # Select wager
 		}
 		highlight_portrait = scope:wager_second_contestant
 		tournament_place_wager_effect = { CONTENDER = scope:wager_second_contestant }
-		tournament_contest_maysir_effect = yes
+		#L5R Disabled
+		# tournament_contest_maysir_effect = yes
 		tournament_bet_on_other_stress_effect = yes
 		ai_chance = {
 			base = 10
@@ -1874,7 +1877,8 @@ tournament_events.1000 = { # Select wager
 		}
 		highlight_portrait = scope:wager_champion_contestant
 		tournament_place_wager_effect = { CONTENDER = scope:wager_champion_contestant }
-		tournament_contest_maysir_effect = yes
+		#L5R Disabled
+		# tournament_contest_maysir_effect = yes
 		tournament_bet_on_other_stress_effect = yes
 		ai_chance = {
 			base = 10
@@ -1903,7 +1907,8 @@ tournament_events.1000 = { # Select wager
 		}
 		highlight_portrait = scope:wager_underdog_contestant
 		tournament_place_wager_effect = { CONTENDER = scope:wager_underdog_contestant }
-		tournament_contest_maysir_effect = yes
+		#L5R Disabled
+		# tournament_contest_maysir_effect = yes
 		tournament_bet_on_other_stress_effect = yes
 		ai_chance = {
 			base = 10
@@ -1932,7 +1937,8 @@ tournament_events.1000 = { # Select wager
 		}
 		highlight_portrait = scope:wager_flavor_contestant
 		tournament_place_wager_effect = { CONTENDER = scope:wager_flavor_contestant }
-		tournament_contest_maysir_effect = yes
+		#L5R Disabled
+		# tournament_contest_maysir_effect = yes
 		tournament_bet_on_other_stress_effect = yes
 		ai_chance = {
 			base = 10
@@ -1972,7 +1978,8 @@ tournament_events.1000 = { # Select wager
 		}
 		highlight_portrait = scope:mysterious_stranger
 		tournament_place_wager_effect = { CONTENDER = scope:mysterious_stranger }
-		tournament_contest_maysir_effect = yes
+		#L5R Disabled
+		# tournament_contest_maysir_effect = yes
 		tournament_bet_on_other_stress_effect = yes
 		ai_chance = {
 			base = 10
@@ -11178,13 +11185,13 @@ tournament_events.1405 = {
 			is_attracted_to_gender_of = scope:flirty_onlooker
 			can_start_scheme = {
 				type = seduce
-				target = scope:flirty_onlooker
+				target_character = scope:flirty_onlooker
 			}
 		}
 
 		start_scheme = { 
 			type = seduce
-			target = scope:flirty_onlooker 
+			target_character = scope:flirty_onlooker 
 		}
 
 		hidden_effect = {

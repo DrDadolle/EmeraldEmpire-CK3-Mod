@@ -136,11 +136,10 @@ pray_the_spirits_decision = {
 		OR = {
 			is_shindoshi = yes
 			AND = {
-				exists = scope:realm_priest 
-				scope:realm_priest = {
+				exists = cp:councillor_court_chaplain
+				cp:councillor_court_chaplain = {
 					is_shindoshi = yes
 				}
-				save_scope_as = shindoshi_realm_priest
 			}
 		}
 		custom_description = {
@@ -255,6 +254,17 @@ pray_the_spirits_decision = {
 	}
 
 	effect = {
+
+		if = {
+			limit = {
+				exists = cp:councillor_court_chaplain
+				cp:councillor_court_chaplain = {
+					is_shindoshi = yes
+				}
+			}
+			cp:councillor_court_chaplain = { save_scope_as = shindoshi_realm_priest }
+		}
+
 		if = {
 			limit = { scope:pray_spirits_air = yes }
 				trigger_event = l5r_pray_spirit.0001
