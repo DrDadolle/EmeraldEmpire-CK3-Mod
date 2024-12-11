@@ -429,52 +429,53 @@ tribal.1001 = {
 		}
 	}
 
-	option = { #Flyting!
-		name = tribal.1001.b
-		trigger = {
-			culture = {
-				OR = {
-					has_cultural_pillar = heritage_north_germanic
-					has_cultural_pillar = heritage_west_germanic
-					has_cultural_pillar = heritage_brythonic
-					has_cultural_pillar = heritage_goidelic
-				}
-			}
-		}
-		show_as_tooltip = {
-			duel = {
-				skill = learning
-				target = scope:challenger
-				10 = {
-					desc = tribal.1001.b_success
-					compare_modifier = {
-						value = scope:duel_value
-						multiplier = 2
-					}
-					scope:challenger = {
-						tribal_challenger_lost_effect = yes
-					}
-				}
-				10 = {
-					desc = tribal.1001.b_failure
-					scope:challenger = {
-						tribal_transfer_liege_title_effect = yes
-					}
-				}
-			}
-		}
-		scope:challenger = {
-			trigger_event = tribal.1006
-		}
+	#L5R Disabled
+	# option = { #Flyting!
+	# 	name = tribal.1001.b
+	# 	trigger = {
+	# 		culture = {
+	# 			OR = {
+	# 				has_cultural_pillar = heritage_north_germanic
+	# 				has_cultural_pillar = heritage_west_germanic
+	# 				has_cultural_pillar = heritage_brythonic
+	# 				has_cultural_pillar = heritage_goidelic
+	# 			}
+	# 		}
+	# 	}
+	# 	show_as_tooltip = {
+	# 		duel = {
+	# 			skill = learning
+	# 			target = scope:challenger
+	# 			10 = {
+	# 				desc = tribal.1001.b_success
+	# 				compare_modifier = {
+	# 					value = scope:duel_value
+	# 					multiplier = 2
+	# 				}
+	# 				scope:challenger = {
+	# 					tribal_challenger_lost_effect = yes
+	# 				}
+	# 			}
+	# 			10 = {
+	# 				desc = tribal.1001.b_failure
+	# 				scope:challenger = {
+	# 					tribal_transfer_liege_title_effect = yes
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	scope:challenger = {
+	# 		trigger_event = tribal.1006
+	# 	}
 
-		ai_chance = {
-			base = 50
-			modifier = {
-				add = 30
-				learning > scope:challenger.learning
-			}
-		}
-	}
+	# 	ai_chance = {
+	# 		base = 50
+	# 		modifier = {
+	# 			add = 30
+	# 			learning > scope:challenger.learning
+	# 		}
+	# 	}
+	# }
 
 	option = { #Ok, take it...
 		name = tribal.1001.c

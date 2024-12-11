@@ -692,7 +692,8 @@ travel_events_on_action = {
 		
 		#Cultural Tradition events
 		100 = travel_events.1200 #Friendly People
-		100 = travel_events.1201 #Chivalry
+		#L5R Disabled
+		# 100 = travel_events.1201 #Chivalry
 		100 = travel_events.1202 #Hard workers
 		100 = travel_events.1203 #Loyal subjects
 		100 = travel_events.1204 #Pacifism

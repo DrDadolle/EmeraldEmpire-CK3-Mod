@@ -2827,506 +2827,506 @@ ep2_wedding.1080 = {
 ##################################################
 
 # Northern wedding: the bride goes to a bathhouse with the married women of her family: removal of clothes and kransen (golden circlet)
+#L5R Disabled
+# ep2_wedding.1100 = {
+# 	type = activity_event
+# 	title = ep2_wedding.1100.t
+# 	desc = {
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = {
+# 					OR = {
+# 						root = scope:activity.special_guest:spouse_1
+# 						root = scope:activity.special_guest:spouse_2
+# 					}
+# 				}
+# 				desc = ep2_wedding.1100.desc_bride
+# 			}
+# 			desc = ep2_wedding.1100.desc_relative
+# 		}
+# 		triggered_desc = {
+# 			trigger = {
+# 				exists = scope:guest_3
+# 			}
+# 			desc = ep2_wedding.1100.desc_extra_guest
+# 		}
+# 	}
+# 	theme = wedding_ceremony_activity
+# 	left_portrait = {
+# 		character = scope:bride
+# 		animation = personality_content
+# 	}
+# 	center_portrait = {
+# 		character = scope:guest_2
+# 		animation = admiration
+# 	}
+# 	right_portrait = {
+# 		character = scope:guest_1
+# 		animation = wedding_happy_cry
+# 	}
+# 	lower_center_portrait = scope:guest_3
 
-ep2_wedding.1100 = {
-	type = activity_event
-	title = ep2_wedding.1100.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					OR = {
-						root = scope:activity.special_guest:spouse_1
-						root = scope:activity.special_guest:spouse_2
-					}
-				}
-				desc = ep2_wedding.1100.desc_bride
-			}
-			desc = ep2_wedding.1100.desc_relative
-		}
-		triggered_desc = {
-			trigger = {
-				exists = scope:guest_3
-			}
-			desc = ep2_wedding.1100.desc_extra_guest
-		}
-	}
-	theme = wedding_ceremony_activity
-	left_portrait = {
-		character = scope:bride
-		animation = personality_content
-	}
-	center_portrait = {
-		character = scope:guest_2
-		animation = admiration
-	}
-	right_portrait = {
-		character = scope:guest_1
-		animation = wedding_happy_cry
-	}
-	lower_center_portrait = scope:guest_3
+# 	cooldown = { years = 5 }
 
-	cooldown = { years = 5 }
+# 	trigger = {
+# 		#DLC check.
+# 		has_ep2_dlc_trigger = yes
 
-	trigger = {
-		#DLC check.
-		has_ep2_dlc_trigger = yes
+# 		scope:activity = {
+# 			NOT = { has_variable = has_had_event_1100 }
+# 		}
 
-		scope:activity = {
-			NOT = { has_variable = has_had_event_1100 }
-		}
+# 		culture = { has_cultural_pillar = heritage_north_germanic }
+# 		is_female = yes
+# 		is_ai = no
+# 		OR = {
+# 			AND = {
+# 				this = scope:activity.special_guest:spouse_1
+# 				any_spouse = {
+# 					even_if_dead = yes
+# 					NOT = { exists = this }
+# 				}
+# 				any_former_spouse = {
+# 					even_if_dead = yes
+# 					NOT = { exists = this }
+# 				}
+# 			}
+# 			AND = {
+# 				this = scope:activity.special_guest:spouse_2
+# 				any_spouse = {
+# 					even_if_dead = yes
+# 					NOT = { exists = this }
+# 				}
+# 				any_former_spouse = {
+# 					even_if_dead = yes
+# 					NOT = { exists = this }
+# 				}
+# 			}
+# 			AND = {
+# 				is_close_or_extended_family_of = scope:activity.special_guest:spouse_1
+# 				scope:activity.special_guest:spouse_1 = { is_female = yes }
+# 				is_married = yes
+# 			}
+# 			AND = {
+# 				is_close_or_extended_family_of = scope:activity.special_guest:spouse_2
+# 				scope:activity.special_guest:spouse_2 = { is_female = yes }
+# 				is_married = yes
+# 			}
+# 		}
+# 		trigger_if = {
+# 			limit = {
+# 				scope:activity.special_guest:spouse_1 = {
+# 					is_female = yes
+# 				}
+# 			}
+# 			scope:activity = {
+# 				any_attending_character = {
+# 					culture = { has_cultural_pillar = heritage_north_germanic }
+# 					is_female = yes
+# 					is_close_or_extended_family_of = scope:activity.special_guest:spouse_1
+# 					is_married = yes
+# 					save_temporary_scope_as = guest_1
+# 				}
+# 			}
+# 			scope:activity = {
+# 				any_attending_character = {
+# 					culture = { has_cultural_pillar = heritage_north_germanic }
+# 					is_female = yes
+# 					is_close_or_extended_family_of = scope:activity.special_guest:spouse_1
+# 					is_married = yes
+# 					NOT = { this = scope:guest_1 }
+# 				}
+# 			}
+# 		}
+# 		trigger_else = {
+# 			scope:activity = {
+# 				any_attending_character = {
+# 					culture = { has_cultural_pillar = heritage_north_germanic }
+# 					is_female = yes
+# 					is_close_or_extended_family_of = scope:activity.special_guest:spouse_2
+# 					is_married = yes
+# 					is_ai = yes
+# 					save_temporary_scope_as = guest_1
+# 				}
+# 			}
+# 			scope:activity = {
+# 				any_attending_character = {
+# 					culture = { has_cultural_pillar = heritage_north_germanic }
+# 					is_female = yes
+# 					is_close_or_extended_family_of = scope:activity.special_guest:spouse_2
+# 					is_married = yes
+# 					is_ai = yes
+# 					NOT = { this = scope:guest_1 }
+# 				}
+# 			}
+# 		}
+# 	}
 
-		culture = { has_cultural_pillar = heritage_north_germanic }
-		is_female = yes
-		is_ai = no
-		OR = {
-			AND = {
-				this = scope:activity.special_guest:spouse_1
-				any_spouse = {
-					even_if_dead = yes
-					NOT = { exists = this }
-				}
-				any_former_spouse = {
-					even_if_dead = yes
-					NOT = { exists = this }
-				}
-			}
-			AND = {
-				this = scope:activity.special_guest:spouse_2
-				any_spouse = {
-					even_if_dead = yes
-					NOT = { exists = this }
-				}
-				any_former_spouse = {
-					even_if_dead = yes
-					NOT = { exists = this }
-				}
-			}
-			AND = {
-				is_close_or_extended_family_of = scope:activity.special_guest:spouse_1
-				scope:activity.special_guest:spouse_1 = { is_female = yes }
-				is_married = yes
-			}
-			AND = {
-				is_close_or_extended_family_of = scope:activity.special_guest:spouse_2
-				scope:activity.special_guest:spouse_2 = { is_female = yes }
-				is_married = yes
-			}
-		}
-		trigger_if = {
-			limit = {
-				scope:activity.special_guest:spouse_1 = {
-					is_female = yes
-				}
-			}
-			scope:activity = {
-				any_attending_character = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					is_female = yes
-					is_close_or_extended_family_of = scope:activity.special_guest:spouse_1
-					is_married = yes
-					save_temporary_scope_as = guest_1
-				}
-			}
-			scope:activity = {
-				any_attending_character = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					is_female = yes
-					is_close_or_extended_family_of = scope:activity.special_guest:spouse_1
-					is_married = yes
-					NOT = { this = scope:guest_1 }
-				}
-			}
-		}
-		trigger_else = {
-			scope:activity = {
-				any_attending_character = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					is_female = yes
-					is_close_or_extended_family_of = scope:activity.special_guest:spouse_2
-					is_married = yes
-					is_ai = yes
-					save_temporary_scope_as = guest_1
-				}
-			}
-			scope:activity = {
-				any_attending_character = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					is_female = yes
-					is_close_or_extended_family_of = scope:activity.special_guest:spouse_2
-					is_married = yes
-					is_ai = yes
-					NOT = { this = scope:guest_1 }
-				}
-			}
-		}
-	}
+# 	weight_multiplier = {
+# 		base = 1
+# 		modifier = {
+# 			has_activity_intent = reduce_stress_intent
+# 			add = 2
+# 		}
+# 		modifier = {
+# 			is_ai = no
+# 			factor = 2
+# 		}
+# 	}
 
-	weight_multiplier = {
-		base = 1
-		modifier = {
-			has_activity_intent = reduce_stress_intent
-			add = 2
-		}
-		modifier = {
-			is_ai = no
-			factor = 2
-		}
-	}
+# 	immediate = {
+# 		scope:activity = {
+# 			set_variable = has_had_event_1100
+# 		}
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					root = scope:activity.special_guest:spouse_1
+# 					root = scope:activity.special_guest:spouse_2
+# 				}
+# 			}
+# 			save_scope_as = bride
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				scope:activity.special_guest:spouse_1 = { is_female = yes }
+# 			}
+# 			scope:activity.special_guest:spouse_1 = { save_scope_as = bride }
+# 			root = { save_scope_as = guest_1 }
+# 		}
+# 		else = {
+# 			scope:activity.special_guest:spouse_2 = { save_scope_as = bride }
+# 			root = { save_scope_as = guest_1 }
+# 		}
+# 		scope:bride = {
+# 			add_character_flag = busy_in_wgathering_event
+# 		}
+# 		scope:activity = {
+# 			random_attending_character = {
+# 				limit = {
+# 					culture = { has_cultural_pillar = heritage_north_germanic }
+# 					is_female = yes
+# 					is_close_or_extended_family_of = scope:bride
+# 					is_married = yes
+# 					is_ai = yes
+# 					NOR = {
+# 						has_character_flag = busy_in_wgathering_event
+# 						this = scope:guest_1
+# 					}
+# 				}
+# 				if = {
+# 					limit = {
+# 						exists = scope:guest_1
+# 					}
+# 					save_scope_as = guest_2
+# 				}
+# 				else = {
+# 					save_scope_as = guest_1
+# 				}
+# 			}
+# 			random_attending_character = {
+# 				limit = {
+# 					culture = { has_cultural_pillar = heritage_north_germanic }
+# 					is_female = yes
+# 					is_close_or_extended_family_of = scope:bride
+# 					is_married = yes
+# 					is_ai = yes
+# 					NOR = {
+# 						has_character_flag = busy_in_wgathering_event
+# 						this = scope:guest_1
+# 						this = scope:guest_2
+# 					}
+# 				}
+# 				if = {
+# 					limit = {
+# 						exists = scope:guest_2
+# 					}
+# 					save_scope_as = guest_3
+# 				}
+# 				else = {
+# 					save_scope_as = guest_2
+# 				}
+# 			}
+# 		}
+# 		scope:guest_1 = { add_character_flag = busy_in_wgathering_event }
+# 		scope:guest_2 = { add_character_flag = busy_in_wgathering_event }
+# 		if = {
+# 			limit = {
+# 				exists = scope:guest_3
+# 			}
+# 			scope:guest_3 = { add_character_flag = busy_in_wgathering_event }
+# 		}
+# 	}
 
-	immediate = {
-		scope:activity = {
-			set_variable = has_had_event_1100
-		}
-		if = {
-			limit = {
-				OR = {
-					root = scope:activity.special_guest:spouse_1
-					root = scope:activity.special_guest:spouse_2
-				}
-			}
-			save_scope_as = bride
-		}
-		else_if = {
-			limit = {
-				scope:activity.special_guest:spouse_1 = { is_female = yes }
-			}
-			scope:activity.special_guest:spouse_1 = { save_scope_as = bride }
-			root = { save_scope_as = guest_1 }
-		}
-		else = {
-			scope:activity.special_guest:spouse_2 = { save_scope_as = bride }
-			root = { save_scope_as = guest_1 }
-		}
-		scope:bride = {
-			add_character_flag = busy_in_wgathering_event
-		}
-		scope:activity = {
-			random_attending_character = {
-				limit = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					is_female = yes
-					is_close_or_extended_family_of = scope:bride
-					is_married = yes
-					is_ai = yes
-					NOR = {
-						has_character_flag = busy_in_wgathering_event
-						this = scope:guest_1
-					}
-				}
-				if = {
-					limit = {
-						exists = scope:guest_1
-					}
-					save_scope_as = guest_2
-				}
-				else = {
-					save_scope_as = guest_1
-				}
-			}
-			random_attending_character = {
-				limit = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					is_female = yes
-					is_close_or_extended_family_of = scope:bride
-					is_married = yes
-					is_ai = yes
-					NOR = {
-						has_character_flag = busy_in_wgathering_event
-						this = scope:guest_1
-						this = scope:guest_2
-					}
-				}
-				if = {
-					limit = {
-						exists = scope:guest_2
-					}
-					save_scope_as = guest_3
-				}
-				else = {
-					save_scope_as = guest_2
-				}
-			}
-		}
-		scope:guest_1 = { add_character_flag = busy_in_wgathering_event }
-		scope:guest_2 = { add_character_flag = busy_in_wgathering_event }
-		if = {
-			limit = {
-				exists = scope:guest_3
-			}
-			scope:guest_3 = { add_character_flag = busy_in_wgathering_event }
-		}
-	}
+# 	#Option A: follow tradition
+# 	option = {
+# 		name = ep2_wedding.1100.a
+# 		scope:activity = {
+# 			add_activity_log_entry = {
+# 				key = wedding_cleansing_log
+# 				tags = { good }
+# 				score = 50
+# 				character = scope:bride
 
-	#Option A: follow tradition
-	option = {
-		name = ep2_wedding.1100.a
-		scope:activity = {
-			add_activity_log_entry = {
-				key = wedding_cleansing_log
-				tags = { good }
-				score = 50
-				character = scope:bride
+# 				# Effect
+# 				scope:bride = {
+# 					add_character_modifier = {
+# 						modifier = wedding_purified_modifier
+# 						years = 5
+# 					}
+# 				}
+# 			}
+# 		}
+# 		scope:guest_1 = {
+# 			add_character_modifier = {
+# 				modifier = wedding_purified_modifier
+# 				years = 5
+# 			}
+# 		}
+# 		scope:guest_2 = {
+# 			add_character_modifier = {
+# 				modifier = wedding_purified_modifier
+# 				years = 5
+# 			}
+# 		}
+# 		if = {
+# 			limit = { exists = scope:guest_3 }
+# 			scope:guest_3 = {
+# 				add_character_modifier = {
+# 					modifier = wedding_purified_modifier
+# 					years = 5
+# 				}
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				scope:bride = {
+# 					any_vassal = { has_vassal_stance = courtly }
+# 				}
+# 			}
+# 			scope:bride = {
+# 				every_vassal = {
+# 					limit = { has_vassal_stance = courtly }
+# 					add_opinion = {
+# 						target = scope:bride
+# 						modifier = wedding_traditional_ritual_opinion
+# 					}
+# 				}
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				scope:bride.betrothed = {
+# 					any_vassal = { has_vassal_stance = courtly }
+# 				}
+# 			}
+# 			scope:bride.betrothed = {
+# 				every_vassal = {
+# 					limit = { has_vassal_stance = courtly }
+# 					add_opinion = {
+# 						target = scope:bride
+# 						modifier = wedding_traditional_ritual_opinion
+# 					}
+# 				}
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
 
-				# Effect
-				scope:bride = {
-					add_character_modifier = {
-						modifier = wedding_purified_modifier
-						years = 5
-					}
-				}
-			}
-		}
-		scope:guest_1 = {
-			add_character_modifier = {
-				modifier = wedding_purified_modifier
-				years = 5
-			}
-		}
-		scope:guest_2 = {
-			add_character_modifier = {
-				modifier = wedding_purified_modifier
-				years = 5
-			}
-		}
-		if = {
-			limit = { exists = scope:guest_3 }
-			scope:guest_3 = {
-				add_character_modifier = {
-					modifier = wedding_purified_modifier
-					years = 5
-				}
-			}
-		}
-		if = {
-			limit = {
-				scope:bride = {
-					any_vassal = { has_vassal_stance = courtly }
-				}
-			}
-			scope:bride = {
-				every_vassal = {
-					limit = { has_vassal_stance = courtly }
-					add_opinion = {
-						target = scope:bride
-						modifier = wedding_traditional_ritual_opinion
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				scope:bride.betrothed = {
-					any_vassal = { has_vassal_stance = courtly }
-				}
-			}
-			scope:bride.betrothed = {
-				every_vassal = {
-					limit = { has_vassal_stance = courtly }
-					add_opinion = {
-						target = scope:bride
-						modifier = wedding_traditional_ritual_opinion
-					}
-				}
-			}
-		}
-		ai_chance = {
-			base = 100
-		}
-	}
+# 	#Option B: try something new
+# 	option = {
+# 		name = ep2_wedding.1100.b
+# 		trigger = {
+# 			this = scope:bride
+# 		}
+# 		random_list = {
+# 			25 = {}	#nothing happens
+# 			25 = {
+# 				show_chance = no
+# 				trigger = {
+# 					can_set_relation_friend_trigger = { CHARACTER = scope:guest_1 }
+# 				}
+# 				set_relation_friend = {
+# 					target = scope:guest_1
+# 					reason = friend_wedding_ritual
+# 				}
+# 			}
+# 			25 = {
+# 				show_chance = no
+# 				trigger = {
+# 					can_set_relation_friend_trigger = { CHARACTER = scope:guest_2 }
+# 				}
+# 				set_relation_friend = {
+# 					target = scope:guest_2
+# 					reason = friend_wedding_ritual
+# 				}
+# 			}
+# 			25 = {
+# 				show_chance = no
+# 				trigger = {
+# 					exists = scope:guest_3
+# 					can_set_relation_friend_trigger = { CHARACTER = scope:guest_3 }
+# 				}
+# 				set_relation_friend = {
+# 					target = scope:guest_3
+# 					reason = friend_wedding_ritual
+# 				}
+# 			}
+# 		}
+# 		scope:activity = {
+# 			add_activity_log_entry = {
+# 				key = wedding_cleansing_new_log
+# 				tags = { good }
+# 				score = 50		
+# 				character = scope:bride
 
-	#Option B: try something new
-	option = {
-		name = ep2_wedding.1100.b
-		trigger = {
-			this = scope:bride
-		}
-		random_list = {
-			25 = {}	#nothing happens
-			25 = {
-				show_chance = no
-				trigger = {
-					can_set_relation_friend_trigger = { CHARACTER = scope:guest_1 }
-				}
-				set_relation_friend = {
-					target = scope:guest_1
-					reason = friend_wedding_ritual
-				}
-			}
-			25 = {
-				show_chance = no
-				trigger = {
-					can_set_relation_friend_trigger = { CHARACTER = scope:guest_2 }
-				}
-				set_relation_friend = {
-					target = scope:guest_2
-					reason = friend_wedding_ritual
-				}
-			}
-			25 = {
-				show_chance = no
-				trigger = {
-					exists = scope:guest_3
-					can_set_relation_friend_trigger = { CHARACTER = scope:guest_3 }
-				}
-				set_relation_friend = {
-					target = scope:guest_3
-					reason = friend_wedding_ritual
-				}
-			}
-		}
-		scope:activity = {
-			add_activity_log_entry = {
-				key = wedding_cleansing_new_log
-				tags = { good }
-				score = 50		
-				character = scope:bride
+# 				# Effect
+# 			}
+# 		}
+# 		stress_impact = {
+# 			shy = medium_stress_impact_gain
+# 		}
 
-				# Effect
-			}
-		}
-		stress_impact = {
-			shy = medium_stress_impact_gain
-		}
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
 
-		ai_chance = {
-			base = 100
-		}
-	}
+# 	#Option D: just enjoy the bath
+# 	option = {
+# 		name = ep2_wedding.1100.d
+# 		trigger = {
+# 			has_activity_intent = reduce_stress_intent
+# 			this = scope:bride
+# 		}
+# 		custom_tooltip = available_because_intent_tt
+# 		stress_impact = {
+# 			base = minor_stress_impact_loss
+# 		}
+# 		ai_chance = {
+# 			base = 150
+# 			modifier = {
+# 				has_trait = lazy
+# 				add = 100
+# 			}
+# 		}
+# 	}
 
-	#Option D: just enjoy the bath
-	option = {
-		name = ep2_wedding.1100.d
-		trigger = {
-			has_activity_intent = reduce_stress_intent
-			this = scope:bride
-		}
-		custom_tooltip = available_because_intent_tt
-		stress_impact = {
-			base = minor_stress_impact_loss
-		}
-		ai_chance = {
-			base = 150
-			modifier = {
-				has_trait = lazy
-				add = 100
-			}
-		}
-	}
+# 	#Option C: this is dumb
+# 	option = {
+# 		name = ep2_wedding.1100.c
+# 		if = {
+# 			limit = {
+# 				this = scope:bride
+# 				any_vassal = { has_vassal_stance = courtly }
+# 			}
+# 			every_vassal = {
+# 				limit = { has_vassal_stance = courtly }
+# 				add_opinion = {
+# 					target = root
+# 					modifier = wedding_no_ritual_opinion
+# 				}
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				this = scope:bride
+# 				betrothed = {
+# 					any_vassal = {
+# 						has_vassal_stance = courtly
+# 					}
+# 				}
+# 			}
+# 			betrothed = {
+# 				every_vassal = {
+# 					limit = {
+# 						has_vassal_stance = courtly
+# 					}
+# 					add_opinion = {
+# 						target = scope:bride
+# 						modifier = wedding_no_ritual_opinion
+# 					}
+# 				}
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				NOT = { this = scope:bride }
+# 			}
+# 			scope:bride = {
+# 				add_opinion = {
+# 					target = root
+# 					modifier = annoyed_opinion
+# 					opinion = -20
+# 				}
+# 				if = {
+# 					limit = {
+# 						NOT = { has_relation_rival = root }
+# 					}
+# 					progress_towards_rival_effect = {
+# 						REASON = rival_despised_ritual
+# 						CHARACTER = root
+# 						OPINION = 0
+# 					}
+# 				}
+# 			}
+# 		}
+# 		add_character_modifier = {
+# 			modifier = wedding_thinking_outside_box_modifier
+# 			years = 10
+# 		}
+# 		stress_impact = {
+# 			zealous = medium_stress_impact_gain
+# 			cynical = medium_stress_impact_loss
+# 		}
+# 		if = {
+# 			limit = { root = scope:bride }
+# 			scope:activity = {
+# 				add_activity_log_entry = {
+# 					key = wedding_cleansing_dismiss_log
+# 					tags = { good }
+# 					score = 50
+# 					character = scope:bride
+# 				}
+# 			}
+# 		}
+# 		else = {
+# 			scope:activity = {
+# 				add_activity_log_entry = {
+# 					key = wedding_cleansing_log
+# 					tags = { good }
+# 					score = 50
+# 					character = scope:bride
+# 				}
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 75
+# 			modifier = {
+# 				has_trait = cynical
+# 				add = 25
+# 			}
+# 			modifier = {
+# 				has_trait = zealous
+# 				add = -25
+# 			}
+# 		}
+# 	}
 
-	#Option C: this is dumb
-	option = {
-		name = ep2_wedding.1100.c
-		if = {
-			limit = {
-				this = scope:bride
-				any_vassal = { has_vassal_stance = courtly }
-			}
-			every_vassal = {
-				limit = { has_vassal_stance = courtly }
-				add_opinion = {
-					target = root
-					modifier = wedding_no_ritual_opinion
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				this = scope:bride
-				betrothed = {
-					any_vassal = {
-						has_vassal_stance = courtly
-					}
-				}
-			}
-			betrothed = {
-				every_vassal = {
-					limit = {
-						has_vassal_stance = courtly
-					}
-					add_opinion = {
-						target = scope:bride
-						modifier = wedding_no_ritual_opinion
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { this = scope:bride }
-			}
-			scope:bride = {
-				add_opinion = {
-					target = root
-					modifier = annoyed_opinion
-					opinion = -20
-				}
-				if = {
-					limit = {
-						NOT = { has_relation_rival = root }
-					}
-					progress_towards_rival_effect = {
-						REASON = rival_despised_ritual
-						CHARACTER = root
-						OPINION = 0
-					}
-				}
-			}
-		}
-		add_character_modifier = {
-			modifier = wedding_thinking_outside_box_modifier
-			years = 10
-		}
-		stress_impact = {
-			zealous = medium_stress_impact_gain
-			cynical = medium_stress_impact_loss
-		}
-		if = {
-			limit = { root = scope:bride }
-			scope:activity = {
-				add_activity_log_entry = {
-					key = wedding_cleansing_dismiss_log
-					tags = { good }
-					score = 50
-					character = scope:bride
-				}
-			}
-		}
-		else = {
-			scope:activity = {
-				add_activity_log_entry = {
-					key = wedding_cleansing_log
-					tags = { good }
-					score = 50
-					character = scope:bride
-				}
-			}
-		}
-		ai_chance = {
-			base = 75
-			modifier = {
-				has_trait = cynical
-				add = 25
-			}
-			modifier = {
-				has_trait = zealous
-				add = -25
-			}
-		}
-	}
-
-	after = {
-		scope:bride = { remove_character_flag = busy_in_wgathering_event }
-		scope:guest_1 = { remove_character_flag = busy_in_wgathering_event }
-		scope:guest_2 = { remove_character_flag = busy_in_wgathering_event }
-		if = {
-			limit = {
-				exists = scope:guest_3
-			}
-			scope:guest_3 = { remove_character_flag = busy_in_wgathering_event }
-		}
-	}
-}
+# 	after = {
+# 		scope:bride = { remove_character_flag = busy_in_wgathering_event }
+# 		scope:guest_1 = { remove_character_flag = busy_in_wgathering_event }
+# 		scope:guest_2 = { remove_character_flag = busy_in_wgathering_event }
+# 		if = {
+# 			limit = {
+# 				exists = scope:guest_3
+# 			}
+# 			scope:guest_3 = { remove_character_flag = busy_in_wgathering_event }
+# 		}
+# 	}
+# }
 
 # CEREMONY EVENTS
 

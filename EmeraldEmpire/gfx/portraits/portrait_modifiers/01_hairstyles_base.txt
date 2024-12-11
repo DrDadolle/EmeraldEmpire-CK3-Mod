@@ -1545,15 +1545,16 @@ fp2_hairstyles_iberian_muslim_curly_commoners = {
 
 		weight = {
 			base = 0
-			modifier = {
-                add = 25
-                exists = this
-                has_gene = {
-                    category = gene_hair_type
-                    template = hair_curly
-                }
-				culture = { has_cultural_pillar = heritage_frankish }
-            }
+            #L5R Disabled
+			# modifier = {
+            #     add = 25
+            #     exists = this
+            #     has_gene = {
+            #         category = gene_hair_type
+            #         template = hair_curly
+            #     }
+			# 	culture = { has_cultural_pillar = heritage_frankish }
+            # }
 		}
 	}
 
