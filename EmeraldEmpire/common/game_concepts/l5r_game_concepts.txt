@@ -80,6 +80,7 @@ shadowlands = {
 ## Character Concepts ###
 #########################
 conceptmajorcharacter = {
+	alias = {conceptmajorcharacters}
 }	
 
 fuleng = {
@@ -96,7 +97,12 @@ conceptmajorloreidea = {
 }	
 
 
-
+#########################
+### Historical Events ###
+#########################
+concepthistoricevent = {
+	alias = { concepthistoricevents }
+}	
 
 #########################
 ##### "Normal" Magic ####
