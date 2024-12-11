@@ -33,8 +33,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - TODO Bannir quelqu'un pour tester si aventurier marche. MARCHE PAS
 - % de chance shindoshi/ishiken TROP BAS ! TO TEST
 - Rokugan too peaceful , reduce penality for war ! TO TEST 
-- Decision to tatoo => Works BUT no wounding EVER, why ? Wrong effect ?
+- Decision to tatoo => Works BUT no wounding EVER, why ? Wrong effect ? Try with 100% chance of wounds (otherwise, it is the message of the option which is incorrect ?)
 - add decision de recruter un shugenja  (si pas de shug) (issue with localisation of option ???) + dynasty not isawa of the character generated. Otherwise it works 
+- Kami traits/kami descendent à la Shayoshant (saoshyant_descendant) upon birth
+	- TO BE TESTED
+- fixing loc on Shindoshi recruit page : any_courtier_or_guest missing localization !
 - Add thumbnail image for the mod !
 - Add lion clan bookmark map
 	- Akodo Toturi : TODO DNA
@@ -48,7 +51,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Hantei with duchy is called "Empress"
 - finish shindoshi decision for MAGIC (at least for air kami)
 - use "event invasion of vikings" for yobanjin
-- add elective stuff for Dragon ?
 - update common/scripted_effects/04_dlc_ep2_tournament_effects and remove ref from vanilla
 - restore court_events_general.txt from vanilla
 - add at least 1 adventures in game to avoid some errors on start
@@ -156,9 +158,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Prevent imperial family from doing wars against other clans...? Only for AI ? or not ?
 - Add modifiers to dynasties to prove their link to great clans ????
 - genes & ethnicities
-- Kami traits/kami descendent à la Shayoshant (saoshyant_descendant) upon birth
-	- To be tested later
-- Add court (from Shogunate) : need DLC
 - Removal wall map object in crab clan
 - Create MaA for each minor clan
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update

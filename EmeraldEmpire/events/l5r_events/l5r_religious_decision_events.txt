@@ -40,6 +40,7 @@ l5r_religious_decision.0001 = {
 	immediate = {
 		create_character = {
 			template = default_isawa_shindoshi_character
+			dynasty = dynasty_isawa
 			save_scope_as = isawa_shindoshi
 			location = root.location
 		}

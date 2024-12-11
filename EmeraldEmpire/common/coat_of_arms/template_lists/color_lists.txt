@@ -39,13 +39,13 @@ color_lists = {
 	crane_normal_colors = {
 		10 = "crane_light"
 		10 = "crane_dark"
-		5 = "white"
+		# 5 = "white"
 	}
 
 	dragon_normal_colors = {
 		10 = "dragon_light"
 		10 = "dragon_dark"
-		5 = "dark"
+		# 5 = "dark"
 	}
 
 	lion_normal_colors = {
@@ -61,7 +61,7 @@ color_lists = {
 	scorpion_normal_colors = {
 		10 = "scorpion_light"
 		10 = "scorpion_dark"
-		5 = "dark"
+		# 5 = "dark"
 	}
 
 	unicorn_normal_colors = {

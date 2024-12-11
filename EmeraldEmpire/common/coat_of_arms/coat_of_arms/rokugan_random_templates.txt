@@ -17,8 +17,8 @@ template = {
 
 	basic_crab_template_01 = {
 		pattern = "pattern_solid.dds"	
-		color1 = list "crab_normal_colors"
-		color2 = list "crab_normal_colors"
+		color1 = list "all_color_list"
+		color2 = list "all_color_list"
 		color3 = list "crab_normal_colors"
 		color4 = list "crab_normal_colors"
 
@@ -32,8 +32,8 @@ template = {
 
 	basic_crane_template_01 = {
 		pattern = "pattern_solid.dds"	
-		color1 = list "crane_normal_colors"
-		color2 = list "crane_normal_colors"
+		color1 = list "all_color_list"
+		color2 = list "all_color_list"
 		color3 = list "crane_normal_colors"
 		color4 = list "crane_normal_colors"
 
@@ -47,8 +47,8 @@ template = {
 
 	basic_dragon_template_01 = {
 		pattern = "pattern_solid.dds"	
-		color1 = list "dragon_normal_colors"
-		color2 = list "dragon_normal_colors"
+		color1 = list "all_color_list"
+		color2 = list "all_color_list"
 		color3 = list "dragon_normal_colors"
 		color4 = list "dragon_normal_colors"
 
@@ -62,8 +62,8 @@ template = {
 
 	basic_lion_template_01 = {
 		pattern = "pattern_solid.dds"	
-		color1 = list "lion_normal_colors"
-		color2 = list "lion_normal_colors"
+		color1 = list "all_color_list"
+		color2 = list "all_color_list"
 		color3 = list "lion_normal_colors"
 		color4 = list "lion_normal_colors"
 
@@ -77,8 +77,8 @@ template = {
 
 	basic_phoenix_template_01 = {
 		pattern = "pattern_solid.dds"	
-		color1 = list "phoenix_normal_colors"
-		color2 = list "phoenix_normal_colors"
+		color1 = list "all_color_list"
+		color2 = list "all_color_list"
 		color3 = list "phoenix_normal_colors"
 		color4 = list "phoenix_normal_colors"
 
@@ -92,8 +92,8 @@ template = {
 
 	basic_scorpion_template_01 = {
 		pattern = "pattern_solid.dds"	
-		color1 = list "scorpion_normal_colors"
-		color2 = list "scorpion_normal_colors"
+		color1 = list "all_color_list"
+		color2 = list "all_color_list"
 		color3 = list "scorpion_normal_colors"
 		color4 = list "scorpion_normal_colors"
 
@@ -107,8 +107,8 @@ template = {
 
 	basic_unicorn_template_01 = {
 		pattern = "pattern_solid.dds"	
-		color1 = list "unicorn_normal_colors"
-		color2 = list "unicorn_normal_colors"
+		color1 = list "all_color_list"
+		color2 = list "all_color_list"
 		color3 = list "unicorn_normal_colors"
 		color4 = list "unicorn_normal_colors"
 
@@ -122,8 +122,8 @@ template = {
 
 	basic_imperial_template_01 = {
 		pattern = "pattern_solid.dds"	
-		color1 = list "imperial_normal_colors"
-		color2 = list "imperial_normal_colors"
+		color1 = list "all_color_list"
+		color2 = list "all_color_list"
 		color3 = list "imperial_normal_colors"
 		color4 = list "imperial_normal_colors"
 
@@ -139,8 +139,8 @@ template = {
 
 	basic_mantis_template_01 = {
 		pattern = "pattern_solid.dds"	
-		color1 = list "mantis_normal_colors"
-		color2 = list "mantis_normal_colors"
+		color1 = list "all_color_list"
+		color2 = list "all_color_list"
 		color3 = list "mantis_normal_colors"
 		color4 = list "mantis_normal_colors"
 

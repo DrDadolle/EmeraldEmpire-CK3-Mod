@@ -4,7 +4,6 @@
 	random_traits = yes
 	faith = faith:seven_fortunes
 	culture = culture:isawa
-	dynasty = dynasty:dynasty_isawa
 
 	#Education
 	random_traits_list = {
@@ -34,7 +33,7 @@
 			1 = {
 				add_trait = ishiken
 			}
-			100 = {
+			99 = {
 				add_trait = shindoshi
 			}
 		}

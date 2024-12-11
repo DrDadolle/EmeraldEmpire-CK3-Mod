@@ -3692,12 +3692,12 @@ accolade_character_creation_effect = {
 							# 	has_cultural_tradition = tradition_mountaineer_ruralism
 							# 	has_innovation = innovation_sarawit
 							# 	has_innovation = innovation_legionnaires
-							# }
+							}
 						}
 					}
 				}
+				save_scope_as = chosen_knight
 			}
-			save_scope_as = chosen_knight
 		}
 	}
 	#Lancer
