@@ -276,13 +276,13 @@
 		}
 		localization_key = rich_presence_very_old
 	}
-
-	text = { # Suspicious Caliph
-		trigger = {
-			has_character_modifier = fp3_struggle_caliph_super_suspicious_modifier
-		}
-		localization_key = rich_presence_caliph_super_suspicious
-	}
+	#L5R Disabled
+	# text = { # Suspicious Caliph
+	# 	trigger = {
+	# 		has_character_modifier = fp3_struggle_caliph_super_suspicious_modifier
+	# 	}
+	# 	localization_key = rich_presence_caliph_super_suspicious
+	# }
 
 	text = { # Post-Iranian Struggle - Rebuilding
 		trigger = {

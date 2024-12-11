@@ -1863,27 +1863,27 @@ fp3_yearly.2030 = {
 		}
 	}
 }
-
+#L5R Disabled
 # Checks whether any of the character's provinces recognize the caliph as their HOF
-scripted_trigger fp3_yearly_2040_attackers_provinces_respect_caliph = {
-	any_held_title = {
-		tier = tier_county
-		faith.religious_head = root
-	}
-}
-
+# scripted_trigger fp3_yearly_2040_attackers_provinces_respect_caliph = {
+# 	any_held_title = {
+# 		tier = tier_county
+# 		faith.religious_head = root
+# 	}
+# }
+#L5R Disabled
 # All counties that respect the caliph as their HOF get a massive levy size penalty
 # NB: Scope:caliph needs to be set before this effect is called
-scripted_effect fp3_yearly_2040_religious_desertion_effect = {
-	every_held_county = {
-		limit = { faith.religious_head = scope:caliph }
-		add_county_modifier = {
-			modifier = fp3_religious_desertion_modifier
-			years = 5
-		}
-	}
-}
-
+# scripted_effect fp3_yearly_2040_religious_desertion_effect = {
+# 	every_held_county = {
+# 		limit = { faith.religious_head = scope:caliph }
+# 		add_county_modifier = {
+# 			modifier = fp3_religious_desertion_modifier
+# 			years = 5
+# 		}
+# 	}
+# }
+#L5R Disabled
 # Commander of the Faithful (The Army of Ya'qub ibn Laith)
 # As the Caliph, if someone is warring you and has counties that obey you as their HOF, then you have the option of pleading with their army to stand down
 # fp3_yearly.2040 = {

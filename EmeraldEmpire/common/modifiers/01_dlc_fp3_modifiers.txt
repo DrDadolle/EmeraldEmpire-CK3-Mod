@@ -625,22 +625,22 @@ generous_beauty = {
 	vassal_opinion = 5
 	short_reign_duration_mult = -0.15
 }
-
-fp3_religious_desertion_modifier = {
-	icon = martial_negative
-	levy_size = -0.8
-}
+#L5R Disabled
+# fp3_religious_desertion_modifier = {
+# 	icon = martial_negative
+# 	levy_size = -0.8
+# }
 #L5R Disabled
 # persian_has_plush_carpet_modifier = { # Same effect as has_plush_carpet_modifier
 # 	icon = prestige_positive
 # 	monthly_prestige_gain_mult = 0.2
 # 	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
 # }
-
-fp3_struggle_caliph_super_suspicious_modifier = {
-	icon = intrigue_positive
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-}
+#L5R Disabled
+# fp3_struggle_caliph_super_suspicious_modifier = {
+# 	icon = intrigue_positive
+# 	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+# }
 
 
 fp3_house_modifier_rebuilding_efforts = {
