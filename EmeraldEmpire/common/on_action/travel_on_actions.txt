@@ -768,13 +768,14 @@ travel_events_on_action = {
 		150 = travel_events_bp3.115 # Night by the Campfire
 		75 = travel_events_bp3.120 # The Wrecked Boat
 
-		#L5R Disabled
 		#FP3 Travelling through foreign faith land:
+		#L5R Disabled
 		# 300 = travel_events_fp3.0010 #Dying Embers
 		# 300 = travel_events_fp3.0030 #A Feast for Falcons
 		200 = fp3_scholarship.1010 # The Last Magi
 
 		#FP3 Travel Events
+		#L5R Disabled
 		# 150 = travel_events_fp3.0020 #Qanat Diving
 		# 200 = travel_events_fp3.0040 #Mare's Milk
 		# 150 = travel_events_fp3.0050 #Tomb Raiders
@@ -784,8 +785,9 @@ travel_events_on_action = {
 		100 = travel_events.5001 #You come across a local legend
 
 		#EP3 Travel Events
+		#L5R Disabled
 		# 1000 = ep3_travel_events.3000 #Waters of the Jordan
-		300 = ep3_travel_events.3002 #Where Armenians Govern
+		# 300 = ep3_travel_events.3002 #Where Armenians Govern
 		# 200 = ep3_travel_events.3010 #Anatolian Silences
 		400 = ep3_emperor_yearly.2180 #Pilgrims come across an estate
 		200 = court_events.3071 #Hidden - trigger court event for local ruler
