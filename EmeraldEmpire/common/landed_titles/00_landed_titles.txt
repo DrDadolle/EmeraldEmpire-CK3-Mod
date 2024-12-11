@@ -1863,6 +1863,41 @@ e_rokugan = {
                 }
            }
        }
+        ######## Generated Minor Clans
+        # Note : all minor clans does not exists at the start. Should be bookmark event setup to change all the de-jure stuff.
+        # TODO : for now, as only the 1123 start date exists, all minor clans are hard-coded in the de-jure map
+        # Not existing minor clan @1123
+        d_monkey = {
+            color = { 0.72 0.53 0.04 }
+            landless = yes
+        }
+
+        d_oriole = {
+            color = { 0.4 0.19 0.28 }
+            landless = yes
+        }
+
+        d_ox = {
+            color = { 0.8 0.2 0.2}
+            landless = yes
+        }
+
+        d_bat = {
+            color = { 0.07 0.21 0.14 }
+            landless = yes
+        }
+
+        d_boar = {
+            color = { 0.24 0.2 0.12}
+        }
+
+        d_firefly = {
+            color = { 0.93 0.11 0.14 }
+        }
+
+        d_otter = {
+            color = { 0.03 0.57 0.82 }
+        }
 	}
 
     #######################
@@ -2154,52 +2189,16 @@ d_rokugani_faith = {
 	capital = c_otosan_uchi_province
 
 }
-
+###### Canon Minor Clans
 #Special Chuda Title for restauration of Snake Clan
 d_chuda = {
     color = { 17 20 15 }
     capital = c_chuda_province
 }
 
-######## Minor Clans
-# Note : all minor clans does not exists at the start. Should be bookmark event setup to change all the de-jure stuff.
-# TODO : for now, as only the 1123 start date exists, all minor clans are hard-coded in the de-jure map
-# Not existing minor clan @1123
 d_komori = {
     color = { 7 41 12 }
     capital = c_komori_province
-}
-
-d_monkey = {
-    color = { 0.72 0.53 0.04 }
-    landless = yes
-}
-
-d_oriole = {
-    color = { 0.4 0.19 0.28 }
-    landless = yes
-}
-
-d_ox = {
-    color = { 0.8 0.2 0.2}
-    landless = yes
-}
-
-d_bat = {
-    color = { 0.07 0.21 0.14 }
-    landless = yes
-}
-
-d_boar = {
-     color = { 0.24 0.2 0.12}
-}
-
-d_firefly = {
-    color = { 0.93 0.11 0.14 }
-}
-
-d_otter = {
-    color = { 0.03 0.57 0.82 }
 }
 
 
@@ -2223,6 +2222,6 @@ k_fashion = { # Kingdom of Fashion from Establish a New Fashion at Court decisio
 }
 
 # These titles cut hundreds of errors from logs. 
-e_hre = { landless = yes }
-e_byzantium = { landless = yes }
-e_roman_empire = { landless = yes }
+e_hre = { capital = c_otosan_uchi_province }
+e_byzantium = { capital = c_otosan_uchi_province }
+e_roman_empire = { capital = c_otosan_uchi_province }
