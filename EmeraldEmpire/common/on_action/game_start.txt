@@ -566,6 +566,16 @@ on_game_start_after_lobby = {
 				}
 			}
 		}
+		#L5R Added
+		# When player doesn't have the DLC ep3 
+		# Instanciate the laamps_tally to avoid spamming it error logs
+		# Using the one and only Katsuo to save the day again !
+		else = {
+			add_to_global_variable_list = {
+				name = laamps_tally
+				target = title:d_laamp_katsuo
+			}
+		}
 		# Purge family titles if Admin isn't enabled
 		if = {
 			limit = {
