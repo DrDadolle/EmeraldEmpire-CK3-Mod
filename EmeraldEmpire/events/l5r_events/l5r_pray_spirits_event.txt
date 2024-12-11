@@ -204,7 +204,7 @@ l5r_pray_spirit.0003 = {
 				}
 				desc = l5r_pray_spirit.0003.bad.desc
 			}
-			desc = religious_decision.0003.no_change.desc
+			desc = l5r_pray_spirit.0003.no_change.desc
 		}
 	}
 	theme = faith

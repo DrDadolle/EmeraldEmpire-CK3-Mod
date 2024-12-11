@@ -7,6 +7,16 @@
  rf_shadowlands:0 "Dark Kami Religion"
 
  ############################
+ # Hostility Doctrines
+ rokugani_hostility_doctrine_name: "Rokugani hostility"
+ rokugani_hostility_doctrine_desc: ""
+ gaijin_hostility_doctrine_name: "Foreign hostility"
+ gaijin_hostility_doctrine_desc: ""
+ shadowlands_hostility_doctrine_name: "Dark Kami hostility"
+ shadowlands_hostility_doctrine_desc: ""
+ 
+
+ ############################
  # Special Doctrines
  special_doctrine_imperial_cult_name:0 "Official Imperial Cult"
  special_doctrine_imperial_cult_desc:0 "Rokugan's religious beliefs actually encompass three different forms of worship - Shintao, Fortunism, and ancestral worship - all of which are united by the will of the Emperor into a single religious system."

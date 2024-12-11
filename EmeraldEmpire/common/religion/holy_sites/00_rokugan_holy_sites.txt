@@ -251,7 +251,7 @@ shinjo_temple = {
 	barony = b_utaku_seido
 
 	character_modifier = {
-		name = shinjo_temple _effect_name
+		name = shinjo_temple_effect_name
 		diplomacy = 1
 		light_cavalry_damage_mult = 0.1
 	}

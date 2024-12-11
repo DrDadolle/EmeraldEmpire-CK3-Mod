@@ -1,6 +1,12 @@
 ﻿l_english:
- # Tradition
+ ### Tradition ###
  tradition_bushido_name:0 "Code of Akodo"
  tradition_bushido_desc:0 "This culture follows the Code of Akodo, which values honor above steel, and encourages duels as well as personal sacrifices."
+ 
+ tradition_tattooed_monks_name:0 "Tattooed Monks"
+ tradition_tattooed_monks_desc:0 "This culture inks tatooes on their monks, which grant mysticals power. They are enigmatic and generally pacifistic, though they could be fierce warriors when necessary.""
+
+ tradition_yokai_hunter_name:0 "Yokai Hunters"
+ tradition_yokai_hunter_desc:0 "This culture specializes in tracking, hunting and killing dangerous spirits known as yokais."
  # Cultural Parameter
  culture_parameter_can_seppuku:1 "Gain a [decision|E] to do seppuku when the character is [prestige_i][GetModifier( 'prestige_level_0' ).GetNameWithTooltip|L]"
