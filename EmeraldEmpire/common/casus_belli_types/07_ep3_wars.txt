@@ -3753,7 +3753,6 @@ imperial_expedition_cb = {
 	}
 	ai_score_mult = {
 		#L5R Disabled
-		always = no
 		#Declaring war on the frankokratia leader can really ruin the whole thing
 	# 	if = {
 	# 		limit = {
