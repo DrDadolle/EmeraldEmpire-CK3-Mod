@@ -38,17 +38,18 @@
 	ai_score_mult = {
 		value = ep3_laamp_invasion_ai_targeting_value
 		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			any_owned_story = {
+		# 				story_type = frankokratia_story
+		# 				NOT = { has_variable = franko_war_complete }
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 
 	valid_to_start = {
@@ -564,17 +565,18 @@ ep3_laamp_adventurer_duchy_invasion = {
 	ai_score_mult = {
 		value = ep3_laamp_invasion_ai_targeting_value
 		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			any_owned_story = {
+		# 				story_type = frankokratia_story
+		# 				NOT = { has_variable = franko_war_complete }
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 
 	valid_to_start = {
@@ -1146,18 +1148,19 @@ ep3_laamp_adventurer_kingdom_invasion = {
 	ai_can_target_all_titles = { always = yes }
 	ai_score_mult = {
 		value = ep3_laamp_invasion_ai_targeting_value
+		#L5R Disabled
 		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			any_owned_story = {
+		# 				story_type = frankokratia_story
+		# 				NOT = { has_variable = franko_war_complete }
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 
 	valid_to_start = {
@@ -1727,18 +1730,19 @@ ep3_laamp_adventurer_empire_invasion = {
 	ai_can_target_all_titles = { always = yes }
 	ai_score_mult = {
 		value = ep3_laamp_invasion_ai_targeting_value
+		#L5R Disabled
 		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			any_owned_story = {
+		# 				story_type = frankokratia_story
+		# 				NOT = { has_variable = franko_war_complete }
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 
 	valid_to_start = {

@@ -211,18 +211,19 @@
 		multiply = struggle_wars_prioritise_struggle_targets_value
 		# Tell the Romans to stop going adventuring into the steppe for no gods-damned reason.
 		multiply = byzantium_conquests_ai_score_value
+		#L5R Disabled
 		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			any_owned_story = {
+		# 				story_type = frankokratia_story
+		# 				NOT = { has_variable = franko_war_complete }
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 
 	cost = {
@@ -1102,18 +1103,19 @@ religious_war = {
 		multiply = byzantium_conquests_ai_score_value
 		multiply = muslim_invasions_prefer_nonmuslims_ai_score_value
 
+		#L5R Disabled
 		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			any_owned_story = {
+		# 				story_type = frankokratia_story
+		# 				NOT = { has_variable = franko_war_complete }
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 }
 
@@ -1692,18 +1694,19 @@ major_religious_war = {
 		multiply = byzantium_conquests_ai_score_value
 		multiply = muslim_invasions_prefer_nonmuslims_ai_score_value
 
+		#L5R Disabled
 		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			any_owned_story = {
+		# 				story_type = frankokratia_story
+		# 				NOT = { has_variable = franko_war_complete }
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 }
 
@@ -1991,18 +1994,19 @@ excommunication_war = {
 			}
 		}
 
+		#L5R Disabled
 		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			any_owned_story = {
+		# 				story_type = frankokratia_story
+		# 				NOT = { has_variable = franko_war_complete }
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 }
 
@@ -3075,18 +3079,19 @@ flowery_war_cb = {
 				add = -1000
 			}
 		}
+		#L5R Disabled
 		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			any_owned_story = {
+		# 				story_type = frankokratia_story
+		# 				NOT = { has_variable = franko_war_complete }
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 }
 
