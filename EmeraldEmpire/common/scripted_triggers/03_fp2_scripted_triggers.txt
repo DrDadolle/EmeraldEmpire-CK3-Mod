@@ -355,7 +355,7 @@ fp2_struggle_ending_compromise_split_duchy_trigger = {
 	always = no
 	# tier = tier_duchy
 	# # Has not been tampered with already
-	# # NOT = { is_in_list = duchy_kingdom } #LotR
+	# # NOT = { is_in_list = duchy_kingdom } 
 	# # Is not created
 	# NOT = { exists = holder } 
 	# # Is not heartland of an existing kingdom
@@ -377,7 +377,7 @@ fp2_struggle_ending_compromise_titular_trigger = {
 	#L5R Disabled
 	always = no
 	# # Has not been tampered with already
-	# # NOT = { is_in_list = duchy_kingdom } #LotR
+	# # NOT = { is_in_list = duchy_kingdom } 
 	# # Is created
 	# exists = holder
 	# # Is ruled by an independent duke
@@ -407,7 +407,7 @@ fp2_struggle_ending_compromise_create_title_trigger = {
 	# NOR = {
 	# 	tier = tier_empire
 	# 	exists = holder
-	# 	# is_in_list = assigned_title #LotR
+	# 	# is_in_list = assigned_title 
 	# 	# Only if no other same rank rulers in title (e.g. multiple kings under empire)
 	# 	any_direct_de_jure_vassal_title = {
 	# 		exists = holder
@@ -545,7 +545,7 @@ fp2_struggle_council_toledo_decision_trigger = {
 fp2_struggle_secure_iberian_foothold_iberian_kingdom_trigger = {
 	#L5R Disabled
 	always = no
-	# tier = tier_kingdom #LotR
+	# tier = tier_kingdom 
 	# de_jure_liege = title:e_spain
 	# root = { completely_controls = prev }
 	# save_temporary_scope_as = iberian_kingdom_temp
@@ -554,7 +554,7 @@ fp2_struggle_secure_iberian_foothold_iberian_kingdom_trigger = {
 fp2_struggle_secure_iberian_foothold_faith_trigger = {
 	#L5R Disabled
 	always = no
-	# fp2_struggle_secure_iberian_foothold_faith_percent_value >= fp2_struggle_secure_iberian_foothold_faith_target_percent_value #LotR
+	# fp2_struggle_secure_iberian_foothold_faith_percent_value >= fp2_struggle_secure_iberian_foothold_faith_target_percent_value 
 }
 
 fp2_struggle_secure_iberian_foothold_outsider_kingdom_trigger = {
@@ -581,7 +581,7 @@ fp2_struggle_iberian_reclamation_should_vassalize_trigger = {
 }
 
 fp2_struggle_any_realm_county_in_hispania_trigger = {
-	# any_realm_county = { target_is_de_jure_liege_or_above = title:e_spain } #LotR
+	# any_realm_county = { target_is_de_jure_liege_or_above = title:e_spain } 
 	always = no
 }
 
@@ -769,9 +769,9 @@ fp2_does_this_player_care_about_the_fate_of_iberia = {
 	# OR = {
 	# 	location = {
 	# 		OR = { # Is in region
-	# 			# geographical_region = world_europe_west #LotR
+	# 			# geographical_region = world_europe_west 
 	# 			geographical_region = world_africa_north
-	# 			# geographical_region = world_europe_south_italy #LotR
+	# 			# geographical_region = world_europe_south_italy 
 	# 		}
 	# 	}
 	# 	struggle:iberian_struggle = { is_culture_involved_in_struggle = prev.culture }
@@ -786,7 +786,7 @@ fp2_eligible_for_yearly_events_trigger = {
 	# 	any_character_struggle = {
 	# 		involvement = involved
 	# 	}
-		# culture = { #LotR
+		# culture = { 
 		# 	has_cultural_pillar = heritage_iberian
 		# }
 		# AND = {

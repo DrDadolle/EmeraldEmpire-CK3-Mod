@@ -1478,9 +1478,8 @@ RandomReligiousTextName = {
 		# 	}
 		# 	#The book is of my religion
 		# 	trigger_else = { faith = faith:orthodox }
-		# }
-		localization_key = random_religious_text_chrysostomos
 		}
+		localization_key = random_religious_text_chrysostomos
 	}
 
 	text = {
