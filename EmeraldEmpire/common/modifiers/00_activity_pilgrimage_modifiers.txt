@@ -367,10 +367,10 @@ pilgrimage_buried_at_capital_modifier = {
 ghost_pilgrimage_promised_modifier = {
 	icon = compass_positive
 }
-
-hajj_promised_modifier = {
-	icon = compass_positive
-}
+#L5R Disabled
+# hajj_promised_modifier = {
+# 	icon = compass_positive
+# }
 
 pilgrimage_promised_modifier = {
 	icon = compass_positive
