@@ -7,8 +7,8 @@ recruit_isawa_shindoshi = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_phoenix.dds"
 	}
-	decision_group_type = l5r_religious
-	sort_order = 50
+	decision_group_type = l5r_magic
+	sort_order = 49
 	
 	ai_check_interval = 60
 	cooldown = { years = 5 }
@@ -129,6 +129,10 @@ pray_the_spirits_decision = {
 
 	is_shown = {
 		is_landed_or_landless_administrative = yes
+	}
+	
+
+	is_valid = {
 		OR = {
 			is_shindoshi = yes
 			AND = {
@@ -139,10 +143,6 @@ pray_the_spirits_decision = {
 				save_scope_as = shindoshi_realm_priest
 			}
 		}
-	}
-	
-
-	is_valid = {
 		custom_description = {
 			text = decision_prayed_spirits
 			NOT = { has_character_flag = flag_prayed_spirits }
@@ -227,10 +227,12 @@ pray_the_spirits_decision = {
 			is_shown = { 
 				OR = {
 					has_trait = ishiken
-					#L5R TODO
-					# scope:shindoshi_realm_priest = {
-					# 	has_trait = ishiken
-					# }
+					AND = {
+						exists = scope:shindoshi_realm_priest
+						scope:shindoshi_realm_priest = {
+							has_trait = ishiken
+						}
+					}
 				}
 			}
 			is_valid = {
@@ -255,54 +257,24 @@ pray_the_spirits_decision = {
 	effect = {
 		if = {
 			limit = { scope:pray_spirits_air = yes }
-			# if = {#L5R TODO
-			# 	limit = {  exists = scope:shindoshi_realm_priest }
-			# 	trigger_event = l5r_pray_spirit.0001
-			# } 
-			# else = {
 				trigger_event = l5r_pray_spirit.0001
-			# }
 			
 		}
 		else_if = {
 			limit = { scope:pray_spirits_earth = yes }
-			# if = {#L5R TODO
-			# 	limit = {  exists = scope:shindoshi_realm_priest }
-			# 	trigger_event = l5r_pray_spirit.0021
-			# } 
-			# else = {
 				trigger_event = l5r_pray_spirit.0001 #L5R TODO
-			# }
 		}
 		else_if = {
 			limit = { scope:pray_spirits_fire = yes }
-			# if = { #L5R TODO
-			# 	limit = {  exists = scope:shindoshi_realm_priest }
-			# 	trigger_event = l5r_pray_spirit.0041
-			# } 
-			# else = {
 				trigger_event = l5r_pray_spirit.0001 #L5R TODO
-			# }
 		}
 		else_if = {
 			limit = { scope:pray_spirits_water = yes }
-			# if = {#L5R TODO
-			# 	limit = {  exists = scope:shindoshi_realm_priest }
-			# 	trigger_event = l5r_pray_spirit.0061
-			# } 
-			# else = {
 				trigger_event = l5r_pray_spirit.0001 #L5R TODO
-			# }
 		}
 		else_if = {
 			limit = { scope:pray_spirits_void = yes }
-			# if = {#L5R TODO
-			# 	limit = {  exists = scope:shindoshi_realm_priest }
-			# 	trigger_event = l5r_pray_spirit.0081
-			# } 
-			# else = {
 				trigger_event = l5r_pray_spirit.0001 #L5R TODO
-			# }
 		}
 		add_character_flag = {
 			flag = flag_prayed_spirits
@@ -315,7 +287,7 @@ pray_the_spirits_decision = {
 	}
 
 	ai_will_do = {
-		base = 75
+		base = 50
 	}
 }
 

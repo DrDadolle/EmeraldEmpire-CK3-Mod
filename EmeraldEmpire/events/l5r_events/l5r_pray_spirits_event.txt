@@ -39,7 +39,7 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 			trigger = {	 has_trait = cynical }
 			animation = disbelief
 		}
-		animation = personality_rationnal
+		animation = personality_rational
 	}
 
 	right_portrait = {
@@ -162,7 +162,7 @@ l5r_pray_spirit.0002 = {
 			trigger = {	 has_trait = cynical }
 			animation = disbelief
 		}
-		animation = personality_rationnal
+		animation = personality_rational
 	}
 
 	right_portrait = {
