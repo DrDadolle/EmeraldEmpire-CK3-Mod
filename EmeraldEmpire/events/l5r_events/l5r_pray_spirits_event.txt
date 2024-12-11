@@ -15,30 +15,45 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 	content_source = l5r_dlc
     type = character_event
 	title = l5r_pray_spirit.0001.t
-	desc = l5r_pray_spirit.0001.desc
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:shindoshi_realm_priest
+				}
+				desc = l5r_pray_spirit.0001.desc.shindoshi
+			}
+			desc = l5r_pray_spirit.0001.desc
+		}	
+	}
+
+
 	
 	theme = faith
     override_background = { reference = fp3_cave }
 
     left_portrait = {
 		character = root
-		# triggered_animation = {
-		# 	trigger = {
-		# 		NOT = { has_trait = cynical }
-		# 	}
-		# 	animation = disbelief
-		# }
+		triggered_animation = {
+			trigger = {	 has_trait = cynical }
+			animation = disbelief
+		}
+		animation = personality_rationnal
+	}
+
+	right_portrait = {
+		trigger = { exists = scope:shindoshi_realm_priest }
+		character = scope:shindoshi_realm_priest
 		animation = personality_zealous
 	}
-	# right_portrait = {
-	# 	character = scope:shindoshi_realm_priest
-	# 	animation = personality_zealous
-	# }
 
     trigger = {
 		NOT = { has_character_flag = flag_prayed_spirits }
 	}
 
+
+	#L5R TODO : what's this for ?
     weight_multiplier = {
 		base = 1
 	}
@@ -55,7 +70,7 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 		hidden_effect = {
 			set_variable = {
 				name = pray_spirit_air_kami_cooldown
-				years = 2
+				years = 4
 			}
 		}
 
@@ -127,11 +142,32 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 l5r_pray_spirit.0002 = {
 	type = character_event
 	title = l5r_pray_spirit.0002.t
-	desc = l5r_pray_spirit.0002.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:shindoshi_realm_priest
+				}
+				desc = l5r_pray_spirit.0002.desc.shindoshi
+			}
+			desc = l5r_pray_spirit.0002.desc
+		}	
+	}
 	override_background = { reference = fp3_cave }
 	theme = faith
-	left_portrait = {
+
+    left_portrait = {
 		character = root
+		triggered_animation = {
+			trigger = {	 has_trait = cynical }
+			animation = disbelief
+		}
+		animation = personality_rationnal
+	}
+
+	right_portrait = {
+		trigger = { exists = scope:shindoshi_realm_priest }
+		character = scope:shindoshi_realm_priest
 		animation = personality_zealous
 	}
 
@@ -254,154 +290,309 @@ l5r_pray_spirit.0003 = {
 		animation = disbelief
 	}
 
+
+	# scope:shindoshi_realm_priest
 	immediate = {
-		# Character cannot take this decision again for 5 years.
+		# Character cannot take this decision again for 2 years.
 		add_character_flag = {
 			flag = flag_prayed_spirits
 			years = 2
 		}
-		# Determine what the impact of the ritual will be.
-        # If there is any tasty rumors, or stuff like that
-        random_list = {
-            # Positive Effect
-            40 = { 
-                compare_modifier = {
-                    value = {
-                        value = learning
-                        subtract = 10
-                    }
-                }
-                modifier = {
-                    add = 10
-                    has_trait = lifestyle_mystic
-                }
-                random_list = {
-                    # Big Object Or Documents
-                    10 = {
-                        # 
-                        compare_modifier = {
-                            value = {
-                                value = learning
-                                subtract = 10
-                            }
-                        }
-                        modifier = {
-                            add = 10
-                            has_trait = lifestyle_mystic
-                        }
-                        modifier = {
-                            add = 10
-                            has_trait = lifestyle_mystic
-                            has_trait_xp = {
-                                trait = lifestyle_mystic
-                                value >= 50
-                            }
-                        }
-                        modifier = {
-                            add = 10
-                            has_trait = lifestyle_mystic
-                            has_trait_xp = {
-                                trait = lifestyle_mystic
-                                value >= 100
-                            }
-                        }
-                        random_list = {
-                            30 = {
-                                save_scope_value_as = {
-                                    name = outcome
-                                    value = flag:armor
-                                }
-                            }
-							30 = {
-                                save_scope_value_as = {
-                                    name = outcome
-                                    value = flag:weapon
-                                }
-                            }
-                            40 = {
-                                save_scope_value_as = {
-                                    name = outcome
-                                    value = flag:documents
-                                }
-                            }
-                            30 = {
-                                save_scope_value_as = {
-                                    name = outcome
-                                    value = flag:big_money
-                                }
-                            }
-                        }
-                    }
-                    # small object or money
-                    90 = {
-                        random_list = {
-                            20 = {
-                                save_scope_value_as = {
-                                    name = outcome
-                                    value = flag:small_money
-                                }
-                            }
-                            50 = {
-                                save_scope_value_as = {
-                                    name = outcome
-                                    value = flag:book
-                                }
-                            }
-							50 = {
-                                save_scope_value_as = {
-                                    name = outcome
-                                    value = flag:brooch
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            # No Effect
-            40 = {
-                modifier = { # Cynical characters have less chances to receive benediction from spirits.
-                    add = 40
-                    has_trait = cynical
-                }
-                modifier = { # Zealous characters have more chances to receive benediction from spirits.
-                    add = -20
-                    has_trait = zealous
-                }
-                save_scope_value_as = {
-                    name = outcome
-                    value = flag:no_effect
-                }
-            }
-            # Negative Effect
-            20 = {
-                modifier = {
-                    add = 20
-                    has_trait = cynical
-                }
-                compare_modifier = {
-                    value = {
-                        value = 10
-                        subtract = learning
-                        min = -10
-                    }
-                }
-                random_list = {
-                    50 = {
-                        trigger = { can_contract_disease_trigger = { DISEASE = ill } }
-                        save_scope_value_as = {
-                            name = outcome
-                            value = flag:ill
-                        }
-                    }
-                    50 = {
-                        save_scope_value_as = {
-                            name = outcome
-                            value = flag:lost_money
-                        }
-                    }
-                }
-            }
-        }
+
+		# Use Shindoshi realm priest for this
+		if = {
+			limit = { exists = scope:shindoshi_realm_priest }
+			random_list = {
+				# Positive Effect
+				40 = { 
+					compare_modifier = {
+						value = {
+							value = scope:shindoshi_realm_priest.learning
+							subtract = 10
+						}
+					}
+					modifier = {
+						add = 10
+						scope:shindoshi_realm_priest = {has_trait = lifestyle_mystic}
+					}
+					random_list = {
+						# Big Object Or Documents
+						10 = {
+							# 
+							compare_modifier = {
+								value = {
+									value = scope:shindoshi_realm_priest.learning
+									subtract = 10
+								}
+							}
+							modifier = {
+								add = 10
+								scope:shindoshi_realm_priest = {has_trait = lifestyle_mystic}
+							}
+							modifier = {
+								add = 10
+								scope:shindoshi_realm_priest = {
+									has_trait = lifestyle_mystic
+									has_trait_xp = {
+										trait = lifestyle_mystic
+										value >= 50
+									}
+								}
+							}
+							modifier = {
+								add = 10
+								scope:shindoshi_realm_priest = {
+									has_trait = lifestyle_mystic
+									has_trait_xp = {
+										trait = lifestyle_mystic
+										value >= 100
+									}
+								}
+							}
+							random_list = {
+								30 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:armor
+									}
+								}
+								30 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:weapon
+									}
+								}
+								40 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:documents
+									}
+								}
+								30 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:big_money
+									}
+								}
+							}
+						}
+						# small object or money
+						90 = {
+							random_list = {
+								20 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:small_money
+									}
+								}
+								50 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:book
+									}
+								}
+								50 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:brooch
+									}
+								}
+							}
+						}
+					}
+				}
+				# No Effect
+				40 = {
+					modifier = { # Cynical characters have less chances to receive benediction from spirits.
+						add = 40
+						has_trait = cynical
+					}
+					modifier = { # Zealous characters have more chances to receive benediction from spirits.
+						add = -20
+						has_trait = zealous
+					}
+					save_scope_value_as = {
+						name = outcome
+						value = flag:no_effect
+					}
+				}
+				# Negative Effect
+				20 = {
+					modifier = {
+						add = 20
+						has_trait = cynical
+					}
+					compare_modifier = {
+						value = {
+							value = 10
+							subtract = scope:shindoshi_realm_priest.learning
+							min = -10
+						}
+					}
+					random_list = {
+						50 = {
+							trigger = { can_contract_disease_trigger = { DISEASE = ill } }
+							save_scope_value_as = {
+								name = outcome
+								value = flag:ill
+							}
+						}
+						50 = {
+							save_scope_value_as = {
+								name = outcome
+								value = flag:lost_money
+							}
+						}
+					}
+				}
+			}
+		} 
+		else = { # Use own stats for this
+			# Determine what the impact of the ritual will be.
+			# If there is any tasty rumors, or stuff like that
+			random_list = {
+				# Positive Effect
+				40 = { 
+					compare_modifier = {
+						value = {
+							value = learning
+							subtract = 10
+						}
+					}
+					modifier = {
+						add = 10
+						has_trait = lifestyle_mystic
+					}
+					random_list = {
+						# Big Object Or Documents
+						10 = {
+							# 
+							compare_modifier = {
+								value = {
+									value = learning
+									subtract = 10
+								}
+							}
+							modifier = {
+								add = 10
+								has_trait = lifestyle_mystic
+							}
+							modifier = {
+								add = 10
+								has_trait = lifestyle_mystic
+								has_trait_xp = {
+									trait = lifestyle_mystic
+									value >= 50
+								}
+							}
+							modifier = {
+								add = 10
+								has_trait = lifestyle_mystic
+								has_trait_xp = {
+									trait = lifestyle_mystic
+									value >= 100
+								}
+							}
+							random_list = {
+								30 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:armor
+									}
+								}
+								30 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:weapon
+									}
+								}
+								40 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:documents
+									}
+								}
+								30 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:big_money
+									}
+								}
+							}
+						}
+						# small object or money
+						90 = {
+							random_list = {
+								20 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:small_money
+									}
+								}
+								50 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:book
+									}
+								}
+								50 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:brooch
+									}
+								}
+							}
+						}
+					}
+				}
+				# No Effect
+				40 = {
+					modifier = { # Cynical characters have less chances to receive benediction from spirits.
+						add = 40
+						has_trait = cynical
+					}
+					modifier = { # Zealous characters have more chances to receive benediction from spirits.
+						add = -20
+						has_trait = zealous
+					}
+					save_scope_value_as = {
+						name = outcome
+						value = flag:no_effect
+					}
+				}
+				# Negative Effect
+				20 = {
+					modifier = {
+						add = 20
+						has_trait = cynical
+					}
+					compare_modifier = {
+						value = {
+							value = 10
+							subtract = learning
+							min = -10
+						}
+					}
+					random_list = {
+						50 = {
+							trigger = { can_contract_disease_trigger = { DISEASE = ill } }
+							save_scope_value_as = {
+								name = outcome
+								value = flag:ill
+							}
+						}
+						50 = {
+							save_scope_value_as = {
+								name = outcome
+								value = flag:lost_money
+							}
+						}
+					}
+				}
+			}
+		}
+
+
     
 
         # If we failed to set the outcome flag, set it now.

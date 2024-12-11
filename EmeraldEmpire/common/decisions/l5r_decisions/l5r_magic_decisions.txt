@@ -131,14 +131,13 @@ pray_the_spirits_decision = {
 		is_landed_or_landless_administrative = yes
 		OR = {
 			is_shindoshi = yes
-			#L5R TODO
-			# AND = {
-			# 	exists = scope:realm_priest 
-			# 	scope:realm_priest = {
-			# 		is_shindoshi = yes
-			# 	}
-			# 	save_scope_as = shindoshi_realm_priest
-			# }
+			AND = {
+				exists = scope:realm_priest 
+				scope:realm_priest = {
+					is_shindoshi = yes
+				}
+				save_scope_as = shindoshi_realm_priest
+			}
 		}
 	}
 	
@@ -156,7 +155,7 @@ pray_the_spirits_decision = {
 		NOT = { has_trait = incapable }
 	}
 
-	cooldown = { years = 1 }
+	cooldown = { days = 180 }
 
 	widget = {
 		gui = "decision_view_widget_option_list_generic"
@@ -307,7 +306,7 @@ pray_the_spirits_decision = {
 		}
 		add_character_flag = {
 			flag = flag_prayed_spirits
-			days = 1825
+			years = 2
 		}
 	}
 

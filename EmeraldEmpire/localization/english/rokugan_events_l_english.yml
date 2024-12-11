@@ -139,6 +139,7 @@
  ############################
  l5r_pray_spirit.0001.t:0 "Air Kami"
  l5r_pray_spirit.0001.desc:0 "I've wandered in my lands until I've found a serene cave, where I quickly identify the presence of an air Kami. I dispose on the ground offering of flowers, expensive encense and perfumes. \n\nThe spirit seems to have noticed me. What should I ask of them ?"
+ l5r_pray_spirit.0001.desc.shindoshi:0 "I followed [shindoshi_realm_priest.GetFirstNameNoTooltip] until where arrive in a serene cave. A lot of wind seems to be coming in and out of there.[shindoshi_realm_priest.GetSheHe] disposes on the ground various offerings and performs various prayers. \n\nAfter a while, [shindoshi_realm_priest.GetSheHe] opens [shindoshi_realm_priest.GetHerHis] eyes and looks at me. "The air Kami is ready to hear your request. What would it be ?""
  l5r_pray_spirit.0001.a:0 "Please help me find long lost items."
  l5r_pray_spirit.0001.a.tt:0 "The air Kami might help you find forgotten artifacts"
  l5r_pray_spirit.0001.d:0 "On second thought, let us avoid disturbing them... "
@@ -146,7 +147,8 @@
  
 ### Find Item
  l5r_pray_spirit.0002.t:0 "Air Kami - Find Item"
- l5r_pray_spirit.0002.desc:0 "In a gust of wind, the air Kami accept my offerings. I exit the cave and go back to my castle, hoping that I shall reap the benefit of the kami in the following days."
+ l5r_pray_spirit.0002.desc:0 "In a gust of wind, the air Kami accept my offerings.  I exit the cave and go back home, hoping that I shall reap the benefit of the kami in the following days."
+ l5r_pray_spirit.0002.desc.shindoshi:0 "In a gust of wind, the air Kami accept my offerings. [shindoshi_realm_priest.GetFirstNameNoTooltip] tells me that we should now exit the cave and leave the spirit alone. According to [shindoshi_realm_priest.GetHerHim], I should receive the benefit of the kami in the following days."
  l5r_pray_spirit.0002.a:0 "Let's wait and see..."
  l5r_pray_spirit.0002.a.tt:0 "The spirit will responds to your prayer in the following weeks, for good or ill."
 
