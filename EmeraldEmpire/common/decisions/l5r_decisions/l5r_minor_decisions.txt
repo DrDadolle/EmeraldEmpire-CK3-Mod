@@ -169,7 +169,7 @@ bleach_hair_white_crane_decision = {
 	
 	decision_group_type = l5r_clan
 
-	sort_order = 81
+	sort_order = 10
 
 	desc = bleach_hair_white_crane_decision_desc
 	selection_tooltip = bleach_hair_white_crane_decision_tooltip
@@ -216,7 +216,7 @@ abandon_white_hair_decision = {
 
 	decision_group_type = l5r_clan
 
-	sort_order = 81
+	sort_order = 10
 
 	desc = abandon_white_hair_decision_desc
 
@@ -264,7 +264,7 @@ mystical_tattoes_decision = {
 	
 	decision_group_type = l5r_clan
 
-	sort_order = 83
+	sort_order = 15
 
 	desc = mystical_tattoes_decision_desc
 	selection_tooltip = mystical_tattoes_decision_tooltip

@@ -7,7 +7,8 @@ found_major_clan_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
 		}
-	decision_group_type = major
+	decision_group_type = l5r_clan
+	sort_order = 200
 	ai_check_interval = 60
 	desc = found_major_clan_decision_desc
 
@@ -120,7 +121,8 @@ found_minor_clan_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
 	}
-	decision_group_type = major
+	decision_group_type = l5r_clan
+	sort_order = 80
 	ai_check_interval = 60
 	desc = found_minor_clan_decision_desc
 
@@ -201,7 +203,8 @@ decision_claim_toshi_rambo_crane = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
 	}
-	decision_group_type = l5r_bushido
+	decision_group_type = l5r_clan
+	sort_order = 50
 
 	title = decision_claim_toshi_rambo_crane
 	selection_tooltip = decision_claim_toshi_rambo_crane_tooltip
@@ -312,7 +315,8 @@ decision_claim_toshi_rambo_lion = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_lion.dds"
 	}
-	decision_group_type = l5r_bushido
+	decision_group_type = l5r_clan
+	sort_order = 50
 
 	title = decision_claim_toshi_rambo_lion
 	selection_tooltip = decision_claim_toshi_rambo_lion_tooltip
@@ -420,7 +424,8 @@ decision_claim_city_rich_frog_lion = {
 	picture = { 
 		reference = "gfx/interface/illustrations/decisions/decision_lion.dds"
 	}
-	decision_group_type = l5r_bushido
+	decision_group_type = l5r_clan
+	sort_order = 50
 
 	title = decision_claim_city_rich_frog_lion
 	selection_tooltip = decision_claim_city_rich_frog_lion_tooltip
@@ -529,7 +534,8 @@ decision_claim_city_rich_frog_unicorn = {
 		reference = "gfx/interface/illustrations/decisions/decision_unicorn.dds"
 	}
 
-	decision_group_type = l5r_bushido
+	decision_group_type = l5r_clan
+	sort_order = 50
 
 	title = decision_claim_city_rich_frog_unicorn
 	selection_tooltip = decision_claim_city_rich_frog_unicorn_tooltip
@@ -639,7 +645,8 @@ decision_avenge_yasuki_war = {
 		reference = "gfx/interface/illustrations/decisions/decision_crane.dds"
 	}
 
-	decision_group_type = major
+	decision_group_type = l5r_clan
+	sort_order = 100
 
     title = decision_avenge_yasuki_war
     selection_tooltip = decision_avenge_yasuki_war_tooltip
@@ -708,7 +715,8 @@ decision_restore_snake_clan = {
 		reference = "gfx/interface/illustrations/decisions/decision_phoenix.dds"
 	}
 
-	decision_group_type = major
+	decision_group_type = l5r_clan
+	sort_order = 100
 
     title = decision_restore_snake_clan
     selection_tooltip = decision_restore_snake_clan_tooltip

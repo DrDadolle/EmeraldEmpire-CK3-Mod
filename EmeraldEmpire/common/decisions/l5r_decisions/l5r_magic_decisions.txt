@@ -7,10 +7,12 @@ recruit_isawa_shindoshi = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_phoenix.dds"
 	}
-
+	decision_group_type = l5r_religious
+	sort_order = 50
+	
 	ai_check_interval = 60
 	cooldown = { years = 5 }
-	decision_group_type = l5r_religious
+
 
     title = recruit_isawa_shindoshi
     selection_tooltip = recruit_isawa_shindoshi_tooltip
@@ -120,6 +122,7 @@ pray_the_spirits_decision = {
 	}
 
 	decision_group_type = l5r_magic
+	sort_order = 50
 
 	ai_check_interval = 60
 	desc = pray_the_spirits_decision_desc
