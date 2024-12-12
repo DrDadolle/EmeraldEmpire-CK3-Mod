@@ -594,18 +594,19 @@ court_chaplain_conversion_contextual_bonuses = {
 			desc = COURT_CHAPLAIN_CONVERSION_ADAPTIVE_MODIFIER
 		}
 	}
-	if = {
-		limit = {
-			exists = scope:county
-			scope:county.faith = {
-				has_doctrine = tenet_pastoral_isolation
-			}
-		}
-		add = {
-			value = scope:councillor.conversion_pastoral_isolation_resistance
-			desc = COURT_CHAPLAIN_CONVERSION_PASTORAL_ISOLATION_MODIFIER
-		}
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		exists = scope:county
+	# 		scope:county.faith = {
+	# 			has_doctrine = tenet_pastoral_isolation
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.conversion_pastoral_isolation_resistance
+	# 		desc = COURT_CHAPLAIN_CONVERSION_PASTORAL_ISOLATION_MODIFIER
+	# 	}
+	# }
 	if = {
 		limit = {
 			scope:councillor.liege.faith = { has_doctrine = tenet_communal_identity }

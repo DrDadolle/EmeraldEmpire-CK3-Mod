@@ -2156,7 +2156,10 @@ d_rokugani_faith = {
 	can_be_named_after_dynasty = no
 	
 	capital = c_otosan_uchi_province
-
+    # Can't be destroyed by AI
+    can_destroy = {
+		always = no
+	}
 }
 ###### Canon Minor Clans
 #Special Chuda Title for restauration of Snake Clan
