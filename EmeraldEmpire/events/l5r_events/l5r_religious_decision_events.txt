@@ -40,7 +40,6 @@ l5r_religious_decision.0001 = {
 	immediate = {
 		create_character = {
 			template = default_isawa_shindoshi_character
-			dynasty = dynasty:dynasty_isawa
 			save_scope_as = isawa_shindoshi
 			location = root.location
 		}
@@ -83,13 +82,11 @@ l5r_religious_decision.0001 = {
 		name = l5r_religious_decision.0001.c
 		add_prestige = medium_prestige_loss
 		scope:isawa_shindoshi_patron = {
-			opinion = {
 				add_opinion = {				
 					modifier = wasted_my_time_opinion
 					opinion = -30
 					target = root
 				}
-			}
 			#Join the court of the patron
 			add_courtier = scope:isawa_shindoshi
 		}

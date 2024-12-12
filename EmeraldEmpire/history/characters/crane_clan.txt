@@ -62,14 +62,6 @@ lineofdojisatsume2 = {
 			set_relation_lover = { reason = lover_history target = character:lineofshosurokoshurin3 } # In love with Bayushi Kachiko
 		}
 	}
-
-	#L5R Workaround to add dynasty splendor to Doji Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
-	}
-	
-
 }
 
 lineofdojisatsume3 = {
@@ -361,12 +353,6 @@ lineoftsumeretsu2 = {
 	1102.1.1 = {
 		birth = yes
 	}
-	
-	#L5R Workaround to add dynasty splendor to Tsume Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
-	}
 
 	##TODO maybe rechange dates ??
 	1123.6.1 = {
@@ -409,11 +395,6 @@ lineofkakitatoshimo3 = {
 	}
 	1097.1.1 = {
 		add_spouse=3000023 #Kakita Teinko
-	}
-	#L5R Workaround to add dynasty splendor to Kakita Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
 	}
 	
 }
@@ -576,11 +557,6 @@ lineofasahinatakamori1 = {
 	1082.1.1 = {
 		birth = yes
 	}
-	#L5R Workaround to add dynasty splendor to Asahina Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
-	}
 }
 
 lineofasahinatakamori2 = {
@@ -661,11 +637,6 @@ lineofdaidojiuji1 = {
 	}
 	1110.1.1 = {
 		give_nickname = nick_iron_crane
-	}
-	#L5R Workaround to add dynasty splendor to Asahina Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
 	}
 }
 

@@ -51,12 +51,6 @@ lineofakododaio2 = {
 		add_spouse = lineofisawavoid2 # Isawa Kaede
 	}
 
-	#L5R Workaround to add dynasty splendor to Akodo Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
-	}
-
 }
 
 lineofakododaio3 = {
@@ -179,12 +173,6 @@ lineofshimizu1 = {
 	1100.1.1 = {
 		birth = yes
 	}
-
-	#L5R Workaround to add dynasty splendor to Shimizu Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
-	}
 }
 
 lineofichime1 = {
@@ -195,12 +183,6 @@ lineofichime1 = {
 
 	1100.1.1 = {
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Ichime Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
 	}
 }
 
@@ -213,12 +195,6 @@ lineofitagawa = {
 	1100.1.1 = {
 		birth = yes
 	}
-
-	#L5R Workaround to add dynasty splendor to Itagawa Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
-	}
 }
 lineofkatai1 = {
 	name = name_aki 	#  katai Aki  #TODO replace name
@@ -228,12 +204,6 @@ lineofkatai1 = {
 
 	1100.1.1 = {
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Katai Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
 	}
 }
 
@@ -245,12 +215,6 @@ lineofseizaku1 = {
 
 	1100.1.1 = { # This dinasty doesn't exist in 1100, it exists in 1153 but the castle is already on the map... oops
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Seizaku Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 2 } }
 	}
 }
 #####################
@@ -298,13 +262,6 @@ lineofmatsuuniri2 = {
 			add_unpressed_claim = title:k_lion_clan 
 		}
 	}
-
-	#L5R Workaround to add dynasty splendor to Matsu Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
-	}
-
 }
 lineofmatsuuniri3 = {
 	name = name_hiroru 	# Matsu Hiroru, brother to Matsu Tsuko
@@ -402,12 +359,6 @@ lineofkoritome1 = {
 	1100.1.1 = {
 		birth = yes
 	}
-
-	#L5R Workaround to add dynasty splendor to Koritome Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
-	}
 }
 
 #####################
@@ -429,12 +380,6 @@ lineofkitsutakeko1 = {
 	1106.1.1 = {
 		birth = yes
 	}
-
-	#L5R Workaround to add dynasty splendor to Kitsu Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
-	}
 }
 
 ##### Vassal
@@ -446,12 +391,6 @@ lineofise1 = {
 
 	1100.1.1 = {
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Ise Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
 	}
 }
 
@@ -498,11 +437,6 @@ lineofikomaanakazu1 = {
 		effect = {
 			set_relation_lover = { reason = lover_history target = character:lineofikomaanakazu3 } # In love with his wife Asako Akari
 		}
-	}
-	#L5R Workaround to add dynasty splendor to Kitsu Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
 	}
 }
 
@@ -561,11 +495,5 @@ lineofhosokawa1 = {
 
 	1100.1.1 = {
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Hosokawa Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
 	}
 }

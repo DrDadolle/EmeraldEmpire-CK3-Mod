@@ -54,11 +54,6 @@ lineofhidakisada1 = {
 	1097.1.1 = {
 		give_nickname = nick_great_bear
 	}
-	#L5R Workaround to add dynasty splendor to Hida Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
-	}
 }
 
 lineofhidakisada2 = {
@@ -187,11 +182,6 @@ lineofkakeguchi1 = {
 		birth = yes
 	}
 
-	#L5R Workaround to add dynasty splendor to Kakeguchi Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
-	}
 }
 
 lineofkakeguchi2 = {
@@ -202,12 +192,6 @@ lineofkakeguchi2 = {
 
 	1100.1.1 = {
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Moshibaru Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
 	}
 
 }
@@ -235,11 +219,6 @@ lineofhirumayoshino1 = {
 
 	1073.1.1 = {
 		birth = yes
-	}
-	#L5R Workaround to add dynasty splendor to Asahina Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 7 } }
 	}
 
 }
@@ -290,12 +269,6 @@ lineofkaiushihobu1 = {
 	
 	##TODO add asako Betrothed
 
-	#L5R Workaround to add dynasty splendor to Kaiu Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 9 } }
-	}
-
 }
 
 ##### Random county holder for the Kaiu
@@ -330,11 +303,6 @@ lineofmaisuna1 = {
 		birth = yes
 	}
 
-	#L5R Workaround to add dynasty splendor to Maisuna Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
-	}
 }
 #####################
 #	Kuni
@@ -360,12 +328,6 @@ lineofkuniyori1 = {
 	1083.1.1 = {
 		birth = yes
 	}
-	
-	#L5R Workaround to add dynasty splendor to Kuni Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
-	}
 
 }
 
@@ -389,12 +351,6 @@ lineofugawari1 = {
 
 	1100.1.1 = {
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Ugawari Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
 	}
 }
 #####################
@@ -421,12 +377,6 @@ lineofyasukitaka1 = {
 
 	1075.1.1 = {
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Yasuki Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
 	}
 }
 
@@ -461,13 +411,6 @@ lineofkano1 = {
 	1100.1.1 = {
 		birth = yes
 	}
-	
-	#L5R Workaround to add dynasty splendor to Kano Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
-	}
-
 }
 lineofnobuto1 = {
 	name = name_aki 	#  Nobuto Aki  #TODO replace name
@@ -477,11 +420,5 @@ lineofnobuto1 = {
 
 	1100.1.1 = {
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Nobuto Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
 	}
 }

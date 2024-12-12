@@ -1,0 +1,610 @@
+﻿namespace = l5r_dynasty_prestige
+
+#prestige dynasty at game start
+l5r_dynasty_prestige.0001 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		##################
+		### Crab Clan ####
+		##################
+		#L5R TODO  change value based on start date
+		if = {
+			limit = {
+				current_date >= 1000.1.1
+			}
+			### Hida
+			dynasty:dynasty_hida = {
+				add_dynasty_prestige_level = 10
+				add_dynasty_prestige = 10000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = warfare_legacy_4
+				add_dynasty_perk = warfare_legacy_5
+			}
+			# Kakeguchi
+			dynasty:dynasty_kakeguchi= {
+				add_dynasty_prestige_level = 5
+				add_dynasty_prestige = 5000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+			}
+
+			### Hiruma
+			dynasty:dynasty_hiruma = {
+				add_dynasty_prestige_level = 7
+				add_dynasty_prestige = 7000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = warfare_legacy_4
+				add_dynasty_perk = warfare_legacy_5
+			}
+
+			### Kaiu
+			dynasty:dynasty_kaiu = {
+				add_dynasty_prestige_level = 9
+				add_dynasty_prestige = 9000
+				add_dynasty_perk = law_legacy_1
+				add_dynasty_perk = law_legacy_2
+				add_dynasty_perk = law_legacy_3
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+			}
+			### Kui
+			dynasty:dynasty_kuni = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+			}
+			### Yasuki
+			dynasty:dynasty_yasuki = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = law_legacy_1
+				add_dynasty_perk = law_legacy_2
+				add_dynasty_perk = law_legacy_3
+				add_dynasty_perk = law_legacy_4
+				add_dynasty_perk = law_legacy_5
+			}
+			### Kano
+			dynasty:dynasty_kano = {
+				add_dynasty_prestige_level = 5
+				add_dynasty_prestige = 5000
+				add_dynasty_perk = law_legacy_1
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+			}
+		}
+
+
+
+		##################
+		### Crane Clan ###
+		##################
+		#L5R TODO  change value based on start date
+		if = {
+			limit = {
+				current_date >= 1000.1.1
+			}
+			### Doji
+			dynasty:dynasty_doji = {
+				add_dynasty_prestige_level = 10
+				add_dynasty_prestige = 10000
+				add_dynasty_perk = glory_legacy_1
+				add_dynasty_perk = glory_legacy_2
+				add_dynasty_perk = glory_legacy_3
+				add_dynasty_perk = glory_legacy_4
+				add_dynasty_perk = glory_legacy_5
+			}
+			### Kakita
+			dynasty:dynasty_kakita = {
+				add_dynasty_prestige_level = 9
+				add_dynasty_prestige = 9000
+				add_dynasty_perk = glory_legacy_1
+				add_dynasty_perk = glory_legacy_2
+				add_dynasty_perk = glory_legacy_3
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+			}
+			### Asahina
+			dynasty:dynasty_asahina = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+				add_dynasty_perk = erudition_legacy_4
+				add_dynasty_perk = erudition_legacy_5
+			}
+			### Daidoji
+			dynasty:dynasty_daidoji = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = warfare_legacy_4
+				add_dynasty_perk = warfare_legacy_5
+			}
+		}
+
+
+		
+		##################
+		## Dragon Clan ###
+		##################
+		#L5R TODO  change value based on start date
+		if = {
+			limit = {
+				current_date >= 1000.1.1
+			}
+			### Togashi
+			dynasty:dynasty_togashi = {
+				add_dynasty_prestige_level = 10
+				add_dynasty_prestige = 10000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+				add_dynasty_perk = erudition_legacy_4
+				add_dynasty_perk = erudition_legacy_5
+			}
+			### Mirumoto
+			dynasty:dynasty_mirumoto = {
+				add_dynasty_prestige_level = 9
+				add_dynasty_prestige = 9000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = warfare_legacy_4
+				add_dynasty_perk = warfare_legacy_5
+			}
+			### Kouken
+			dynasty:dynasty_kouken = {
+				add_dynasty_prestige_level = 5
+				add_dynasty_prestige = 5000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = kin_legacy_1
+			}
+			### Kitsuki
+			dynasty:dynasty_kitsuki = {
+				add_dynasty_prestige_level = 7
+				add_dynasty_prestige = 7000
+				add_dynasty_perk = law_legacy_1
+				add_dynasty_perk = law_legacy_2
+				add_dynasty_perk = law_legacy_3
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+			}
+			### Agasha
+			dynasty:dynasty_agasha = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+				add_dynasty_perk = erudition_legacy_4
+				add_dynasty_perk = erudition_legacy_5
+			}
+		}
+
+		##################
+		### Lion Clan  ###
+		##################
+		#L5R TODO  change value based on start date
+		if = {
+			limit = {
+				current_date >= 1000.1.1
+			}
+			### Akodo
+			dynasty:dynasty_akodo = {
+				add_dynasty_prestige_level = 10
+				add_dynasty_prestige = 10000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = warfare_legacy_4
+				add_dynasty_perk = warfare_legacy_5
+			}
+			### Matsu
+			dynasty:dynasty_matsu = {
+				add_dynasty_prestige_level = 9
+				add_dynasty_prestige = 9000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = warfare_legacy_4
+				add_dynasty_perk = warfare_legacy_5
+			}
+			### Ichime
+			dynasty:dynasty_ichime = {
+				add_dynasty_prestige_level = 5
+				add_dynasty_prestige = 5000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+			}
+			### Itagawa
+			dynasty:dynasty_itagawa = {
+				add_dynasty_prestige_level = 5
+				add_dynasty_prestige = 5000
+				add_dynasty_perk = law_legacy_1
+				add_dynasty_perk = law_legacy_2
+				add_dynasty_perk = law_legacy_3
+			}
+			### Kitsu
+			dynasty:dynasty_kitsu = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+				add_dynasty_perk = blood_legacy_1
+				add_dynasty_perk = blood_legacy_2
+			}
+			### Ikoma
+			dynasty:dynasty_ikoma = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = glory_legacy_1
+				add_dynasty_perk = glory_legacy_2
+				add_dynasty_perk = glory_legacy_3
+				add_dynasty_perk = glory_legacy_4
+				add_dynasty_perk = glory_legacy_5
+			}
+		}
+
+
+		##################
+		## Phoenix Clan ##
+		##################
+		#L5R TODO  change value based on start date
+		if = {
+			limit = {
+				current_date >= 1000.1.1
+			}
+			### Shiba
+			dynasty:dynasty_shiba = {
+				add_dynasty_prestige_level = 10
+				add_dynasty_prestige = 10000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+			}
+			### Isawa
+			dynasty:dynasty_isawa = {
+				add_dynasty_prestige_level = 10
+				add_dynasty_prestige = 10000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+				add_dynasty_perk = erudition_legacy_4
+				add_dynasty_perk = erudition_legacy_5
+			}
+			### Asako
+			dynasty:dynasty_asako = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+				add_dynasty_perk = erudition_legacy_4
+				add_dynasty_perk = erudition_legacy_5
+			}
+			### Kaito
+			dynasty:dynasty_kaito = {
+				add_dynasty_prestige_level = 3
+				add_dynasty_prestige = 3000
+			}
+		}
+
+
+		##################
+		## Scorpion Clan #
+		##################
+		#L5R TODO  change value based on start date
+		if = {
+			limit = {
+				current_date >= 1000.1.1
+			}
+			### Yogo
+			dynasty:dynasty_yogo = {
+				add_dynasty_prestige_level = 7
+				add_dynasty_prestige = 7000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+				add_dynasty_perk = erudition_legacy_4
+				add_dynasty_perk = erudition_legacy_5
+			}
+			### Bayushi
+			dynasty:dynasty_bayushi = {
+				add_dynasty_prestige_level = 10
+				add_dynasty_prestige = 10000
+				add_dynasty_perk = guile_legacy_1
+				add_dynasty_perk = guile_legacy_2
+				add_dynasty_perk = guile_legacy_3
+				add_dynasty_perk = guile_legacy_4
+				add_dynasty_perk = guile_legacy_5
+			}
+			### Shosuro
+			dynasty:dynasty_shosuro = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = guile_legacy_1
+				add_dynasty_perk = guile_legacy_2
+				add_dynasty_perk = guile_legacy_3
+				add_dynasty_perk = guile_legacy_4
+				add_dynasty_perk = guile_legacy_5
+			}
+			### Jitsuyoteki
+			dynasty:dynasty_jitsuyoteki = {
+				add_dynasty_prestige_level = 4
+				add_dynasty_prestige = 4000
+			}
+			### Soshi
+			dynasty:dynasty_soshi = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = guile_legacy_1
+				add_dynasty_perk = guile_legacy_2
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+			}
+			### Nanbu
+			dynasty:dynasty_nanbu = {
+				add_dynasty_prestige_level = 4
+				add_dynasty_prestige = 4000
+			}
+		}
+
+
+		##################
+		## Unicorn Clan ##
+		##################
+		#L5R TODO  change value based on start date
+		if = {
+			limit = {
+				current_date >= 1000.1.1
+			}
+			### Shinjo
+			dynasty:dynasty_shinjo = {
+				add_dynasty_prestige_level = 10
+				add_dynasty_prestige = 10000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = warfare_legacy_4
+				add_dynasty_perk = warfare_legacy_5
+			}
+			### Marta
+			dynasty:dynasty_marta = {
+				add_dynasty_prestige_level = 5
+				add_dynasty_prestige = 5000
+			}
+			### Iuchi
+			dynasty:dynasty_iuchi = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+				add_dynasty_perk = erudition_legacy_4
+				add_dynasty_perk = erudition_legacy_5
+			}
+			### Ide
+			dynasty:dynasty_ide = {
+				add_dynasty_prestige_level = 8
+				add_dynasty_prestige = 8000
+				add_dynasty_perk = law_legacy_1
+				add_dynasty_perk = law_legacy_2
+				add_dynasty_perk = law_legacy_3
+				add_dynasty_perk = law_legacy_4
+				add_dynasty_perk = law_legacy_5
+			}
+			### Hateru
+			dynasty:dynasty_hateru = {
+				add_dynasty_prestige_level = 4
+				add_dynasty_prestige = 4000
+			}
+			### Suio
+			dynasty:dynasty_suio = {
+				add_dynasty_prestige_level = 4
+				add_dynasty_prestige = 4000
+			}
+			### Utaku
+			dynasty:dynasty_utaku = {
+				add_dynasty_prestige_level = 9
+				add_dynasty_prestige = 9000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = warfare_legacy_4
+				add_dynasty_perk = warfare_legacy_5
+			}
+			### Moto
+			dynasty:dynasty_moto = {
+				add_dynasty_prestige_level = 7
+				add_dynasty_prestige = 7000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = warfare_legacy_4
+				add_dynasty_perk = warfare_legacy_5
+			}
+		}
+
+
+		##################
+		## Imperial Clan #
+		##################
+		#L5R TODO  change value based on start date
+		if = {
+			limit = {
+				current_date >= 1000.1.1
+			}
+			### Hantei
+			dynasty:dynasty_hantei = {
+				add_dynasty_prestige_level = 10
+				add_dynasty_prestige = 10000
+				add_dynasty_perk = glory_legacy_1
+				add_dynasty_perk = glory_legacy_2
+				add_dynasty_perk = glory_legacy_3
+				add_dynasty_perk = glory_legacy_4
+				add_dynasty_perk = glory_legacy_5
+			}
+			### Seppun
+			dynasty:dynasty_seppun = {
+				add_dynasty_prestige_level = 9
+				add_dynasty_prestige = 9000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+				add_dynasty_perk = warfare_legacy_4
+				add_dynasty_perk = warfare_legacy_5
+			}
+			### Otomo
+			dynasty:dynasty_otomo = {
+				add_dynasty_prestige_level = 9
+				add_dynasty_prestige = 9000
+				add_dynasty_perk = law_legacy_1
+				add_dynasty_perk = law_legacy_2
+				add_dynasty_perk = guile_legacy_1
+				add_dynasty_perk = guile_legacy_2
+				add_dynasty_perk = guile_legacy_3
+			}
+			### Miya
+			dynasty:dynasty_miya = {
+				add_dynasty_prestige_level = 7
+				add_dynasty_prestige = 7000
+				add_dynasty_perk = glory_legacy_1
+				add_dynasty_perk = glory_legacy_2
+				add_dynasty_perk = glory_legacy_3
+				add_dynasty_perk = glory_legacy_4
+				add_dynasty_perk = glory_legacy_5
+			}
+		}
+	
+
+		##################
+		### Minor Clan ###
+		##################
+		#L5R TODO  change value based on start date
+		if = {
+			limit = {
+				current_date >= 1000.1.1
+			}
+			### Moshi
+			dynasty:dynasty_moshi = {
+				add_dynasty_prestige_level = 5
+				add_dynasty_prestige = 5000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+			}
+			### Kasuga
+			dynasty:dynasty_kasuga = {
+				add_dynasty_prestige_level = 5
+				add_dynasty_prestige = 5000
+				add_dynasty_perk = guile_legacy_1
+				add_dynasty_perk = law_legacy_1
+				add_dynasty_perk = law_legacy_2
+			}
+			### Kitsune
+			dynasty:dynasty_moshi = {
+				add_dynasty_prestige_level = 5
+				add_dynasty_prestige = 5000
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
+			}
+			### Suzume
+			dynasty:dynasty_suzume = {
+				add_dynasty_prestige_level = 3
+				add_dynasty_prestige = 3000
+				add_dynasty_perk = glory_legacy_1
+				add_dynasty_perk = kin_legacy_1
+				add_dynasty_perk = kin_legacy_2
+			}
+			### Usagi
+			dynasty:dynasty_usagi = {
+				add_dynasty_prestige_level = 3
+				add_dynasty_prestige = 3000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = warfare_legacy_3
+			}
+			### Tsuruchi
+			dynasty:dynasty_tsuruchi = {
+				add_dynasty_prestige_level = 1
+				add_dynasty_prestige = 1000
+				add_dynasty_perk = warfare_legacy_1
+			}
+			### Yoritomo
+			dynasty:dynasty_yoritomo = {
+				add_dynasty_prestige_level = 7
+				add_dynasty_prestige = 7000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = law_legacy_1
+				add_dynasty_perk = blood_legacy_1
+			}
+			### Nekoma
+			dynasty:dynasty_nekoma = {
+				add_dynasty_prestige_level = 3
+				add_dynasty_prestige = 3000
+				add_dynasty_perk = kin_legacy_1
+				add_dynasty_perk = glory_legacy_1
+				add_dynasty_perk = guile_legacy_1
+			}
+			### Toritaka
+			dynasty:dynasty_toritaka = {
+				add_dynasty_prestige_level = 3
+				add_dynasty_prestige = 3000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+				add_dynasty_perk = erudition_legacy_1
+			}
+			### Ichiro
+			dynasty:dynasty_ichiro = {
+				add_dynasty_prestige_level = 2
+				add_dynasty_prestige = 2000
+				add_dynasty_perk = warfare_legacy_1
+				add_dynasty_perk = warfare_legacy_2
+			}
+			### Tombo
+			dynasty:dynasty_ichiro = {
+				add_dynasty_prestige_level = 4
+				add_dynasty_prestige = 4000
+				add_dynasty_perk = law_legacy_1
+				add_dynasty_perk = law_legacy_2
+				add_dynasty_perk = law_legacy_3
+			}
+			### Kaikoga
+			dynasty:dynasty_kaikoga = {
+				add_dynasty_prestige_level = 2
+				add_dynasty_prestige = 2000
+				add_dynasty_perk = erudition_legacy_1
+			}
+			### Shika
+			dynasty:dynasty_shika = {
+				add_dynasty_prestige_level = 5
+				add_dynasty_prestige = 5000
+				add_dynasty_perk = kin_legacy_1
+				add_dynasty_perk = kin_legacy_2
+				add_dynasty_perk = kin_legacy_3
+			}
+		}
+
+	}
+}

@@ -53,9 +53,6 @@ lineofshiba2 = {
 	1123.1.1 = {
 		effect = {
 			set_relation_friend = { reason = friend_generic_history target = character:lineofkaito3 } #friend with  Kaito Kosori since  the Sanpuku Seido incident
-			#L5R Workaround to add dynasty splendor to Shiba Dynasty for the bookmark 1123
-			# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-			dynasty = { add_dynasty_prestige_level = 10 }
 		}
 	}
 
@@ -193,7 +190,7 @@ lineofkoganshi1 = {
 #####################
 3000220 = {
 	name = name_eju 	# Isawa Eju, master of Air of 1123
-	dynasty = dynasty_isawa 	
+	dynasty_house = house_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 	
@@ -211,17 +208,11 @@ lineofkoganshi1 = {
 	1056.1.1 = {
 		birth = yes
 	}
-
-	#L5R Workaround to add dynasty splendor to Isawa Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 10 } }
-	}
 }
 
 lineofisawaearth1 = {
 	name = name_rujo 	# Isawa Rujo, master of Earth of 1123
-	dynasty = dynasty_isawa 	
+	dynasty_house = house_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 	
@@ -237,7 +228,7 @@ lineofisawaearth1 = {
 
 lineofisawaearth2 = {
 	name = name_tadaka 	# Isawa Tadaka, future master of earth
-	dynasty = dynasty_isawa 	
+	dynasty_house = house_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 	
@@ -261,7 +252,7 @@ lineofisawaearth2 = {
 
 lineofisawavoid1 = {
 	name = name_ujina 	# Isawa Ujina, master of Void
-	dynasty = dynasty_isawa 	
+	dynasty_house = house_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 	
@@ -286,7 +277,7 @@ lineofisawavoid1 = {
 
 lineofisawavoid2 = {
 	name = name_kaede 	# Isawa Kaede,  daughter of the master of Void and future master of the void, spouse of Akodo Toturi
-	dynasty = dynasty_isawa 	
+	dynasty_house = house_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 	female = yes
@@ -317,7 +308,7 @@ lineofisawavoid2 = {
 
 lineofisawafire1 = {
 	name = name_tsuke 	# Isawa Tsuke,  master of Fire in 1123
-	dynasty = dynasty_isawa 	
+	dynasty_house = house_isawa 	
 	religion = "seven_fortunes"
 	culture = "isawa"
 
@@ -337,7 +328,7 @@ lineofisawafire1 = {
 
 lineofisawawater1 = {
 	name = name_kaiyoko 	# Isawa Kaiyoko,  former master of Water in 1123
-	dynasty = dynasty_isawa 
+	dynasty_house = house_isawa 
 	religion = "seven_fortunes"
 	culture = "isawa"
 	female = yes
@@ -355,7 +346,7 @@ lineofisawawater1 = {
 ##### Isawa custom characters
 lineofisawachuda1 = {
 	name = name_giichi 	#  Isawa Giichi, custom character
-	dynasty = dynasty_isawa 	# Isawa 
+	dynasty_house = house_isawa 	# Isawa 
 	religion = "seven_fortunes"
 	culture = "isawa"
 
@@ -397,12 +388,6 @@ lineofshingon1 = { #This vassal exists
 	1100.1.1 = {
 		birth = yes
 	}
-
-	#L5R Workaround to add dynasty splendor to Shingon Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 5 } }
-	}
 }
 #####################
 #	Asako
@@ -425,12 +410,6 @@ lineofasakowater1 = {
 
 	1098.1.1 = {
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Asako Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 8 } }
 	}
 }
 
@@ -502,12 +481,6 @@ lineofnani1 = {
 	1100.1.1 = {
 		birth = yes
 	}
-
-	#L5R Workaround to add dynasty splendor to Nani Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
-	}
 }
 lineofchukan1 = {
 	name = name_aki 	# Chukan Aki  #TODO replace name
@@ -517,12 +490,6 @@ lineofchukan1 = {
 
 	1100.1.1 = {
 		birth = yes
-	}
-
-	#L5R Workaround to add dynasty splendor to Chukan Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 4 } }
 	}
 }
 #####################
@@ -560,11 +527,6 @@ lineofkaito3 = {
 	# 	}
 	# }
 
-	#L5R Workaround to add dynasty splendor to Kitsuki Dynasty for the bookmark 1123
-	# Starting Renown of dynasties is calculated though the title history held by all members of the dynasty in history.
-	1123.1.1 = {
-		effect = { dynasty = { add_dynasty_prestige_level = 3 } }
-	}
 }
 
 lineofkaito1 = {

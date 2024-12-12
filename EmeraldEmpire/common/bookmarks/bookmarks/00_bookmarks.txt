@@ -60,7 +60,7 @@ bm_1123_clanwar = {
 # 	# Isawa Giichi
 # 	character = {
 # 		name = "challenge_character_isawa_giichi"
-# 		dynasty = dynasty_isawa #Isawa
+# 		dynasty_house = house:house_isawa #Isawa
 # 		dynasty_splendor_level = 5
 # 		type = male
 # 		birth = 1090.1.1

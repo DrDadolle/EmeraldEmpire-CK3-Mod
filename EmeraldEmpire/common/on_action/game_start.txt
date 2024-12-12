@@ -18,7 +18,9 @@ on_game_start = {
 		#Guaranteed historical artifacts fixed spawning
 		debug_portraits.1 					# Debug portraits for animation testing
 		# easteregg_event.0001				# Charna and Jakub duel.
-		rokugan_historical_artifacts.0001		# Rokugan Historical Artifacts Generator
+		rokugan_historical_artifacts.0001	# Rokugan Historical Artifacts Generator
+		l5r_dynasty_prestige.0001 			# Assign dynasty prestige
+
 	}
 
 	effect = {

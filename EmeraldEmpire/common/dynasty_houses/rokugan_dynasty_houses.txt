@@ -55,6 +55,14 @@ house_hosokawa = { # Ikoma vassal
 ##########################
 ##### Phoenix Clan
 ##########################
+# Used for create_character stuff
+# Isawa
+house_isawa = {
+	name = "dynn_isawa"
+	dynasty = dynasty_isawa
+	motto = dynn_isawa_motto
+}
+
 # Dynasty house from Asako
 house_nani = { # Asako vassal
 	name = dynn_nani

@@ -77,6 +77,13 @@ dynasty_isawa = { #Isawa
 		texture = "te_phoenix_isawa_1.dds"
 	}
 }
+house_isawa = { #Isawa
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_phoenix_isawa_1.dds"
+	}
+}
 dynasty_asako = { #Asako
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
