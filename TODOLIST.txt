@@ -28,12 +28,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ## CK3 1.13.* patch
 - remove bunch of errors
 - % de chance shindoshi/ishiken TROP BAS ! TO TEST
-- Rokugan too peaceful , reduce penality for war ! TO TEST 
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - fixing loc on Shindoshi recruit page : any_courtier_or_guest_all missing localization ?? Wut ?
-- Add barracks building at start for lions to make them more powerful
 - WHy the fuck the emperor grants the d_mandateofheaven head of faith title ?!
 - When a major clan grab the title of emperor, the redistribution breaks
+- Add proper cost to heavy infantries mma
+- better Heresies
 - When banning someone (unlanded), location is incorrect "at 's in [PROVINCE NAME]"
 - Add thumbnail image for the mod !
 - Add lion clan bookmark map
@@ -51,6 +51,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - use "event invasion of vikings" for yobanjin
 - update common/scripted_effects/04_dlc_ep2_tournament_effects and remove ref from vanilla
 - restore court_events_general.txt from vanilla
+- same for faction_effects ! Removing ref from vanilla
 - add at least 1 adventures in game to avoid some errors on start
 - found Great Clan description decision
 	- missing description descision, issue with custom description

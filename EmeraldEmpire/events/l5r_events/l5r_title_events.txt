@@ -23,6 +23,7 @@ scripted_effect redistribute_from_the_top_title_owned_valid_dynasty_option = {
 					tier >= tier_county
 				}
 				limit = {
+					tier = tier_county
 					AND = {
 						exists = holder
 						holder = root
@@ -51,6 +52,7 @@ scripted_effect redistribute_from_the_top_title_owned_valid_heritage_option = {
 					tier >= tier_county
 				}
 				limit = {
+					tier = tier_county
 					AND = {
 						exists = holder
 						holder = root
@@ -81,6 +83,7 @@ scripted_effect redistribute_from_the_top_title_owned_valid_language_option = {
 					tier >= tier_county
 				}
 				limit = {
+					tier = tier_county
 					AND = {
 						exists = holder
 						holder = root
@@ -140,7 +143,9 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 			random_ruler = {
 				limit = {
 					is_ai = yes
+					is_under_e_rokugan_rule = yes
 					exists = dynasty
+					exists = scope:previous_holder
 					dynasty = scope:previous_holder.dynasty
 					NAND = {
 						this = scope:previous_holder
@@ -153,7 +158,9 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 			random_ruler = {
 				limit = {
 					is_ai = yes
+					is_under_e_rokugan_rule = yes
 					exists = dynasty
+					exists = scope:previous_holder
 					culture = {
 						has_same_culture_heritage  = scope:previous_holder.culture
 					}
@@ -168,7 +175,9 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 			random_ruler = {
 				limit = {
 					is_ai = yes
+					is_under_e_rokugan_rule = yes
 					exists = dynasty
+					exists = scope:previous_holder
 					culture = {
 						has_same_culture_language  = scope:previous_holder.culture
 					}
@@ -180,6 +189,19 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 				}
 					
 				save_scope_as = valid_language_option
+			}
+			## Fallback, random character
+			if = {
+				limit = { 
+					NOT = { exists = scope:valid_dynasty_option}
+				}
+				random_ruler = {
+					limit = {
+						is_ai = yes
+						is_under_e_rokugan_rule = yes
+					}
+				}
+				save_scope_as = valid_dynasty_option
 			}
 		}
 	}

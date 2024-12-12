@@ -2154,6 +2154,10 @@ d_rokugani_faith = {
 	always_follows_primary_heir = yes
 	destroy_if_invalid_heir = yes
 	can_be_named_after_dynasty = no
+
+    ai_primary_priority = {
+		add = @always_primary_score
+	}
 	
 	capital = c_otosan_uchi_province
     # Can't be destroyed by AI

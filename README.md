@@ -17,7 +17,6 @@ https://discord.gg/ZN5MCkUj
 #### This mod has special rules described below. We may change them in the future.
 
 Those changes are made as the map is smaller
-- Cultural Acceptance is lower(-15 -> -20 & -30 -> -40 for same realm)
 - Maximum 1 held duchy (if you are King or higher) before opinion loss
 - Stewardship grants less bonus domains (from /6 to /7)
 - Faith Size cap for the Fervor is reduced, as the map is smaller
@@ -25,6 +24,9 @@ Those changes are made as the map is smaller
 Wars requires more prestige within the emerald empire if
 - You are a Major Clan & target is minor Clan OR target primary title has a lower title (Minor Clan Protection by Imperial Edict)
 - You are a Major Clan & the target is a Major Clan (No Major Clan Warfare by Imperial Edict)
+
+Casus Belli
+- You can conquer neighbour of different heritage at a premium cost (even if you are both have the same liege)
 
 New Special Decisions
 - It is possible to create Custom Duchies (called Minor Clans) via a decision
