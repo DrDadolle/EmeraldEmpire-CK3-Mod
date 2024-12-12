@@ -1350,36 +1350,37 @@ on_war_won_defender = {
 		scope:attacker = { save_scope_as = loser }
 		scope:defender = { save_scope_as = winner }
 
+		#L5R Disabled
 		# Give out a legend seed for beating ya boi G Khan
-		if = {
-			limit = {
-				scope:loser = {
-					OR = {
-						has_nickname = nick_genghis_khan
-						has_trait = greatest_of_khans
-					}
-				}
-				scope:winner = {
-					NOT = {
-						has_character_flag = khan_beater
-						has_dlc_feature = legends
-					}
-				}
-			}
-			scope:winner = {
-				add_character_flag = khan_beater
-				create_legend_seed = {
-					type = heroic
-					quality = famed
-					chronicle = legendary_battle
-					properties = {
-						winner = scope:winner
-						loser = scope:loser
-						location = scope:winner.location
-					}
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:loser = {
+		# 			OR = {
+		# 				has_nickname = nick_genghis_khan
+		# 				has_trait = greatest_of_khans
+		# 			}
+		# 		}
+		# 		scope:winner = {
+		# 			NOT = {
+		# 				has_character_flag = khan_beater
+		# 				has_dlc_feature = legends
+		# 			}
+		# 		}
+		# 	}
+		# 	scope:winner = {
+		# 		add_character_flag = khan_beater
+		# 		create_legend_seed = {
+		# 			type = heroic
+		# 			quality = famed
+		# 			chronicle = legendary_battle
+		# 			properties = {
+		# 				winner = scope:winner
+		# 				loser = scope:loser
+		# 				location = scope:winner.location
+		# 			}
+		# 		}
+		# 	}
+		# }
 		
 		# Give out Legend Seed if GHW
 		if = {
@@ -1494,33 +1495,34 @@ on_war_won_defender = {
 			}
 		}
 
+		#L5R Disabled
 		# Struggle Catalysts
 		## Special war checks for the caliph.
-		scope:attacker = {
-			if = {
-				limit = {
-					fp3_struggle_scoped_is_the_arabian_caliph_trigger = yes
-					scope:war = {
-						NOT = { has_variable = used_for_struggle_catalyst_on_war_ended }
-						using_civil_war_cb_trigger = yes
-					}
-				}
-				# Direct scope because this is caliph-specific.
-				struggle:persian_struggle = {
-					if = {
-						limit = { phase_has_catalyst = catalyst_caliph_or_emperor_loses_revolt_war }
-						activate_struggle_catalyst = {
-							catalyst = catalyst_caliph_or_emperor_loses_revolt_war
-							character = scope:attacker
-						}
-						scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
-						log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_caliph_or_emperor_loses_revolt_war }
-					}
-				}
-			}
-		}
-		## During the Persian Struggle, a supporter wins any war in the region.
-		scope:attacker = { fp3_struggle_apply_supporter_detractor_war_won_catalysts_effect = yes }
+		# scope:attacker = {
+		# 	if = {
+		# 		limit = {
+		# 			fp3_struggle_scoped_is_the_arabian_caliph_trigger = yes
+		# 			scope:war = {
+		# 				NOT = { has_variable = used_for_struggle_catalyst_on_war_ended }
+		# 				using_civil_war_cb_trigger = yes
+		# 			}
+		# 		}
+		# 		# Direct scope because this is caliph-specific.
+		# 		struggle:persian_struggle = {
+		# 			if = {
+		# 				limit = { phase_has_catalyst = catalyst_caliph_or_emperor_loses_revolt_war }
+		# 				activate_struggle_catalyst = {
+		# 					catalyst = catalyst_caliph_or_emperor_loses_revolt_war
+		# 					character = scope:attacker
+		# 				}
+		# 				scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
+		# 				log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_caliph_or_emperor_loses_revolt_war }
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# ## During the Persian Struggle, a supporter wins any war in the region.
+		# scope:attacker = { fp3_struggle_apply_supporter_detractor_war_won_catalysts_effect = yes }
 		
 		scope:attacker = {
 			create_character_memory = {

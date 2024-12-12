@@ -500,13 +500,13 @@ travel_danger_events.9020 = { # Sea, Desert, War: Emaciated
 	trigger = {
 		is_available_travelling_adult = yes
 		
-		culture = {
-			NOR = {
-				#L5R Disabled
-				# has_cultural_tradition = tradition_saharan_nomads
-				has_cultural_tradition = tradition_desert_nomads
-			}
-		}
+		#L5R Disabled
+		# culture = {
+		# 	NOR = {
+		# 		has_cultural_tradition = tradition_saharan_nomads
+		# 		has_cultural_tradition = tradition_desert_nomads
+		# 	}
+		# }
 
 		location = {
 			OR = {

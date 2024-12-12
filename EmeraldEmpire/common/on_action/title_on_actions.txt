@@ -1103,6 +1103,7 @@ on_title_gain = {
 						}
 					}
 					NAND = {
+						scope:title = title:e_rokugan
 						scope:title = title:k_imperial_families
 						scope:title = title:d_hantei
 						scope:title = title:c_otosan_uchi_province

@@ -502,12 +502,13 @@
 		}
 
 		can_pick = {
-			custom_description = {
-				text = incompatible_tenet_eastern_syncretism_trigger
-				NOT = {
-					doctrine:tenet_eastern_syncretism = { is_in_list = selected_doctrines }
-				}
-			}
+			#L5R Disabled
+			# custom_description = {
+			# 	text = incompatible_tenet_eastern_syncretism_trigger
+			# 	NOT = {
+			# 		doctrine:tenet_eastern_syncretism = { is_in_list = selected_doctrines }
+			# 	}
+			# }
 		}
 
 		parameters = {

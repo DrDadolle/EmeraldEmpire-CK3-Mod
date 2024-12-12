@@ -1198,8 +1198,8 @@ e_rokugan = {
 		# Hiruma title is Landless title.
 		d_hiruma = {
 			color = { 18 151 207 }
-			# No lands
-			landless = yes
+			# L5R TODO : adding workaround to avoid pool_guest errors
+            capital = c_kyoukan_province
 			# To not lost it
 			always_follows_primary_heir = yes
 			# Nothing can de-jure drift into it
@@ -1505,14 +1505,25 @@ e_rokugan = {
             }
 		}
 		d_otomo = {
-             color = { 4 65 69 }
-			 #Special Title. Lore wise, Kyuden Otomo is in Otosan Uchi so... No land attached to it
-				definite_form = yes
-				ruler_uses_title_name = no
-				no_automatic_claims = yes
-				always_follows_primary_heir = yes
-				destroy_if_invalid_heir = yes
-				can_be_named_after_dynasty = no
+             #Special Title. Lore wise, Kyuden Otomo is in Otosan Uchi so... No land attached to it
+            definite_form = yes
+            ruler_uses_title_name = no
+            no_automatic_claims = yes
+            always_follows_primary_heir = yes
+            destroy_if_invalid_heir = yes
+            can_be_named_after_dynasty = no
+            # L5R TODO : adding workaround to avoid pool_guest errors
+            capital = c_seppun_province_3
+            color = { 4 65 69 }
+
+
+            c_seppun_province_3 = {
+                color = {  73 247 240 }
+
+                b_shiro_seppun_3 = {
+                    province = 149
+                }
+            }
 		}
 		d_seppun = {
              color = { 57 139 135 }
@@ -1542,13 +1553,6 @@ e_rokugan = {
                  }
 				 b_seppun_tower = {
                     province = 148
-                 }
-            }
-			c_seppun_province_3 = {
-                 color = {  73 247 240 }
- 
-                 b_shiro_seppun_3 = {
-                    province = 149
                  }
             }
 		}

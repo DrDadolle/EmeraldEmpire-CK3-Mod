@@ -9,79 +9,90 @@
 # 0001-0010				#
 #########################
 scripted_effect redistribute_from_the_top_title_owned_valid_dynasty_option = {
-	create_title_and_vassal_change = {
-		type = granted
-		save_scope_as = change
-		add_claim_on_loss = no
-	}
+	#To Avoid Baronny stuff
+	if = {
+		limit = {tier >= tier_county }
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
 
-	every_in_de_jure_hierarchy = {
-			continue = {
-				tier >= tier_county
-			}
-			limit = {
-				AND = {
-					exists = holder
-					holder = root
+		every_in_de_jure_hierarchy = {
+				continue = {
+					tier >= tier_county
+				}
+				limit = {
+					AND = {
+						exists = holder
+						holder = root
+					}
+				}
+				change_title_holder = {
+					holder = scope:valid_dynasty_option
+					change = scope:change
 				}
 			}
-			change_title_holder = {
-				holder = scope:valid_dynasty_option
-				change = scope:change
-			}
-		}
-	resolve_title_and_vassal_change = scope:change
+		resolve_title_and_vassal_change = scope:change
+	}
 }
 
 scripted_effect redistribute_from_the_top_title_owned_valid_heritage_option = {
-
-	create_title_and_vassal_change = {
-		type = granted
-		save_scope_as = change
-		add_claim_on_loss = no
-	}
-	every_in_de_jure_hierarchy = {
-			continue = {
-				tier >= tier_county
-			}
-			limit = {
-				AND = {
-					exists = holder
-					holder = root
+	#To Avoid Baronny stuff
+	if = {
+		limit = {tier >= tier_county }
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		every_in_de_jure_hierarchy = {
+				continue = {
+					tier >= tier_county
+				}
+				limit = {
+					AND = {
+						exists = holder
+						holder = root
+					}
+				}
+				change_title_holder = {
+					holder = scope:valid_heritage_option
+					change = scope:change
 				}
 			}
-			change_title_holder = {
-				holder = scope:valid_heritage_option
-				change = scope:change
-			}
-		}
-	resolve_title_and_vassal_change = scope:change
+		resolve_title_and_vassal_change = scope:change
+	}
 }
 
 scripted_effect redistribute_from_the_top_title_owned_valid_language_option = {
 
-	create_title_and_vassal_change = {
-		type = granted
-		save_scope_as = change
-		add_claim_on_loss = no
-	}
-
-	every_in_de_jure_hierarchy = {
-			continue = {
-				tier >= tier_county
-			}
-			limit = {
-				AND = {
-					exists = holder
-					holder = root
-				}
-			}
-			change_title_holder = {
-				holder = scope:valid_language_option
-				change = scope:change
-			}		
+	#To Avoid Baronny stuff
+	if = {
+		limit = {tier >= tier_county }
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = change
+			add_claim_on_loss = no
 		}
-	resolve_title_and_vassal_change = scope:change
+
+		every_in_de_jure_hierarchy = {
+				continue = {
+					tier >= tier_county
+				}
+				limit = {
+					AND = {
+						exists = holder
+						holder = root
+					}
+				}
+				change_title_holder = {
+					holder = scope:valid_language_option
+					change = scope:change
+				}		
+			}
+		resolve_title_and_vassal_change = scope:change
+	}
 }
 
 l5r_title_events.0001 = { #redistribute non-imperial titles to other families
@@ -133,8 +144,6 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 					dynasty = scope:previous_holder.dynasty
 					NAND = {
 						this = scope:previous_holder
-						this = scope:valid_language_option
-						this = scope:valid_heritage_option
 					}
 				}
 				save_scope_as = valid_dynasty_option
@@ -151,7 +160,6 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 					NAND = {
 						this = scope:previous_holder
 						this = scope:valid_dynasty_option
-						this = scope:valid_language_option
 					}
 				}
 				save_scope_as = valid_heritage_option

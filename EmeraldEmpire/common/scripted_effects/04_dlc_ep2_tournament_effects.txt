@@ -8256,8 +8256,8 @@ add_random_tourney_participant_level_effect = {
 							# has_cultural_tradition = tradition_garuda_warriors
 							# has_cultural_tradition = tradition_himalayan_settlers
 							# has_cultural_tradition = tradition_khadga_puja
-							has_cultural_tradition = tradition_mountaineer_ruralism
-							has_cultural_tradition = tradition_hird
+							# has_cultural_tradition = tradition_mountaineer_ruralism
+							# has_cultural_tradition = tradition_hird
 						}
 					}
 				}
@@ -8321,7 +8321,7 @@ add_random_tourney_participant_level_effect = {
 							# has_cultural_tradition = tradition_himalayan_settlers
 							# has_cultural_tradition = tradition_khadga_puja
 							# has_cultural_tradition = tradition_mountaineer_ruralism
-							has_cultural_tradition = tradition_hird
+							# has_cultural_tradition = tradition_hird
 						}
 					}
 				}
@@ -8385,7 +8385,7 @@ add_random_tourney_participant_level_effect = {
 							# has_cultural_tradition = tradition_himalayan_settlers
 							# has_cultural_tradition = tradition_khadga_puja
 							# has_cultural_tradition = tradition_mountaineer_ruralism
-							has_cultural_tradition = tradition_hird
+							# has_cultural_tradition = tradition_hird
 						}
 					}
 				}
@@ -8448,8 +8448,7 @@ add_random_tourney_participant_level_effect = {
 							#L5R Disabled
 							# has_cultural_tradition = tradition_desert_ribat
 							# has_cultural_tradition = tradition_desert_nomads
-							has_cultural_tradition = tradition_horse_lords
-							#L5R Disabled
+							# has_cultural_tradition = tradition_horse_lords
 							# has_cultural_tradition = tradition_hussar
 							# has_cultural_tradition = tradition_saharan_nomads
 							has_cultural_tradition = tradition_ep3_indomitable_azatani
@@ -8472,7 +8471,8 @@ add_random_tourney_participant_level_effect = {
 							# has_cultural_tradition = tradition_chanson_de_geste
 							# has_cultural_tradition = tradition_burman_royal_army
 							has_cultural_tradition = tradition_sacred_hunts
-							has_cultural_tradition = tradition_lords_of_the_elephant
+							#L5R Disabled
+							# has_cultural_tradition = tradition_lords_of_the_elephant
 						}
 					}
 				}
@@ -8498,11 +8498,11 @@ add_random_tourney_participant_level_effect = {
 							#L5R Disabled
 							# has_cultural_tradition = tradition_desert_ribat
 							# has_cultural_tradition = tradition_desert_nomads
-							has_cultural_tradition = tradition_horse_lords
-							#L5R Disabled
+							# has_cultural_tradition = tradition_horse_lords
+
 							# has_cultural_tradition = tradition_hussar
-							has_cultural_tradition = tradition_lords_of_the_elephant
-							#L5R Disabled
+							# has_cultural_tradition = tradition_lords_of_the_elephant
+							
 							# has_cultural_tradition = tradition_saharan_nomads
 							has_cultural_tradition = tradition_ep3_indomitable_azatani
 							has_cultural_tradition = tradition_ep3_imperial_tagmata
@@ -8548,11 +8548,11 @@ add_random_tourney_participant_level_effect = {
 							#L5R Disabled
 							# has_cultural_tradition = tradition_desert_ribat
 							# has_cultural_tradition = tradition_desert_nomads
-							has_cultural_tradition = tradition_horse_lords
-							#L5R Disabled
+							# has_cultural_tradition = tradition_horse_lords
+							
 							# has_cultural_tradition = tradition_hussar
-							has_cultural_tradition = tradition_lords_of_the_elephant
-							#L5R Disabled
+							# has_cultural_tradition = tradition_lords_of_the_elephant
+							
 							# has_cultural_tradition = tradition_saharan_nomads
 							has_cultural_tradition = tradition_ep3_indomitable_azatani
 							has_cultural_tradition = tradition_ep3_imperial_tagmata
@@ -8746,7 +8746,7 @@ add_random_tourney_participant_level_effect = {
 							# has_cultural_tradition = tradition_bush_hunting
 							# has_cultural_tradition = tradition_forest_wardens
 							# has_cultural_tradition = tradition_horse_lords
-							has_cultural_tradition = tradition_land_of_the_bow
+							# has_cultural_tradition = tradition_land_of_the_bow
 							has_cultural_tradition = tradition_longbow_competitions
 						}
 					}
@@ -8798,8 +8798,8 @@ add_random_tourney_participant_level_effect = {
 							#L5R Disabled
 							# has_cultural_tradition = tradition_bush_hunting
 							# has_cultural_tradition = tradition_forest_wardens
-							has_cultural_tradition = tradition_horse_lords
-							has_cultural_tradition = tradition_land_of_the_bow
+							# has_cultural_tradition = tradition_horse_lords
+							# has_cultural_tradition = tradition_land_of_the_bow
 						}
 					}
 				}
@@ -8851,8 +8851,8 @@ add_random_tourney_participant_level_effect = {
 							#L5R Disabled
 							# has_cultural_tradition = tradition_bush_hunting
 							# has_cultural_tradition = tradition_forest_wardens
-							has_cultural_tradition = tradition_horse_lords
-							has_cultural_tradition = tradition_land_of_the_bow
+							# has_cultural_tradition = tradition_horse_lords
+							# has_cultural_tradition = tradition_land_of_the_bow
 						}
 					}
 				}
