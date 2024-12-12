@@ -522,7 +522,7 @@ l5r_dynasty_prestige.0001 = {
 				add_dynasty_perk = law_legacy_2
 			}
 			### Kitsune
-			dynasty:dynasty_moshi = {
+			dynasty:dynasty_kitsune = {
 				add_dynasty_prestige_level = 5
 				add_dynasty_prestige = 5000
 				add_dynasty_perk = erudition_legacy_1

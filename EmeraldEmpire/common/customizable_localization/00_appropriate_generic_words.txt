@@ -740,8 +740,9 @@ GetRandomRegionalWildDaytimeBirdProvince = {
 		trigger = {
 			OR = {
 				geographical_region = world_europe
-				geographical_region = world_asia_minor
-				geographical_region = world_africa_north_west
+				#L5R Disabled
+				# geographical_region = world_asia_minor
+				# geographical_region = world_africa_north_west
 				geographical_region = world_steppe
 				geographical_region = world_tibet
 			}
@@ -754,9 +755,10 @@ GetRandomRegionalWildDaytimeBirdProvince = {
 			OR = {
 				geographical_region = world_india
 				geographical_region = world_burma
-				geographical_region = world_europe_west_iberia
-				geographical_region = world_europe_south_east
-				geographical_region = world_asia_minor
+				#L5R Disabled
+				# geographical_region = world_europe_west_iberia
+				# geographical_region = world_europe_south_east
+				# geographical_region = world_asia_minor
 				geographical_region = world_africa
 				geographical_region = world_steppe
 				geographical_region = world_tibet
@@ -770,8 +772,9 @@ GetRandomRegionalWildDaytimeBirdProvince = {
 				geographical_region = world_europe
 				geographical_region = world_steppe
 				geographical_region = world_tibet
-				geographical_region = world_africa_north
-				geographical_region = world_middle_east
+				#L5R Disabled
+				# geographical_region = world_africa_north
+				# geographical_region = world_middle_east
 			}
 		}
 		localization_key = robin
@@ -783,9 +786,10 @@ GetRandomRegionalWildDaytimeBirdProvince = {
 				geographical_region = world_steppe
 				geographical_region = world_india
 				geographical_region = world_burma
-				geographical_region = world_africa_north
-				geographical_region = world_middle_east
-				geographical_region = world_asia_minor
+				#L5R Disabled
+				# geographical_region = world_africa_north
+				# geographical_region = world_middle_east
+				# geographical_region = world_asia_minor
 			}
 		}
 		localization_key = sparrow
@@ -794,7 +798,8 @@ GetRandomRegionalWildDaytimeBirdProvince = {
 		trigger = {
 			OR = {
 				geographical_region = world_europe
-				geographical_region = world_middle_east_persia
+				#L5R Disabled
+				# geographical_region = world_middle_east_persia
 				geographical_region = world_tibet
 				geographical_region = world_burma
 				geographical_region = world_india
@@ -805,15 +810,17 @@ GetRandomRegionalWildDaytimeBirdProvince = {
 	text = {
 		trigger = {
 			OR = {
+				#L5R Disabled
 				# Summer
-				geographical_region = world_asia_minor
-				geographical_region = world_europe_east
-				geographical_region = world_africa_north_west
+				# geographical_region = world_asia_minor
+				# geographical_region = world_europe_east
+				# geographical_region = world_africa_north_west
 				#Winter
 				geographical_region = world_burma
 				geographical_region = world_india
-				geographical_region = world_africa_west
-				geographical_region = world_africa_east
+				#L5R Disabled
+				# geographical_region = world_africa_west
+				# geographical_region = world_africa_east
 			}
 		}
 		localization_key = stork
@@ -825,13 +832,14 @@ GetRandomRegionalWildDaytimeBirdProvince = {
 		localization_key = seagull
 	}
 	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe_west_britannia
-				geographical_region = world_europe_north
-				geographical_region = sea_north_atlantic
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	OR = {
+		# 		geographical_region = world_europe_west_britannia
+		# 		geographical_region = world_europe_north
+		# 		geographical_region = sea_north_atlantic
+		# 	}
+		# }
 		localization_key = tarrock
 	}
 }
@@ -848,8 +856,9 @@ GetRandomRegionalWood = {
 		trigger = {
 			OR = {
 				geographical_region = world_europe
-				geographical_region = world_asia_minor
-				geographical_region = world_africa_north_west
+				#L5R Disabled
+				# geographical_region = world_asia_minor
+				# geographical_region = world_africa_north_west
 				geographical_region = world_steppe
 			}
 			NOT = { geographical_region = world_europe_south }
@@ -859,9 +868,12 @@ GetRandomRegionalWood = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe_north
-				geographical_region = world_europe_east
-				geographical_region = world_asia_minor
+				#L5R Modified
+				geographical_region = rokugan_phoenix
+				geographical_region = rokugan_dragon
+				# geographical_region = world_europe_north
+				# geographical_region = world_europe_east
+				# geographical_region = world_asia_minor
 			}
 		}
 		localization_key = pine
@@ -871,7 +883,8 @@ GetRandomRegionalWood = {
 			OR = {
 				geographical_region = world_europe
 				geographical_region = world_steppe
-				geographical_region = world_asia_minor
+				#L5R Disabled
+				# geographical_region = world_asia_minor
 			}
 		}
 		localization_key = poplar
@@ -930,8 +943,9 @@ GetRandomAppropriateTree = {
 		trigger = {
 			OR = {
 				geographical_region = world_europe
-				geographical_region = world_asia_minor
-				geographical_region = world_africa_north_west
+				#L5R Disabled
+				# geographical_region = world_asia_minor
+				# geographical_region = world_africa_north_west
 				geographical_region = world_india
 			}
 			NOT = { terrain = jungle }
@@ -955,9 +969,12 @@ GetRandomAppropriateTree = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe_north
-				geographical_region = world_europe_east
-				geographical_region = world_asia_minor
+				#L5R Modified
+				geographical_region = rokugan_phoenix
+				geographical_region = rokugan_dragon
+				# geographical_region = world_europe_north
+				# geographical_region = world_europe_east
+				# geographical_region = world_asia_minor
 			}
 		}
 		localization_key = pine
@@ -1124,10 +1141,11 @@ GetRandomMigratoryBird = {
 							geographical_region = world_asia_minor
 							geographical_region = world_europe_east
 							geographical_region = world_africa_north_west
-							geographical_region = sea_ionian_sea
-							geographical_region = sea_aegean_sea
-							geographical_region = sea_black_sea
-							geographical_region = sea_caspian_sea
+							#L5R Disabled
+							# geographical_region = sea_ionian_sea
+							# geographical_region = sea_aegean_sea
+							# geographical_region = sea_black_sea
+							# geographical_region = sea_caspian_sea
 						}
 					}
 					#Winter
@@ -1138,8 +1156,9 @@ GetRandomMigratoryBird = {
 							geographical_region = world_india
 							geographical_region = world_africa_west
 							geographical_region = world_africa_east
-							geographical_region = sea_south_atlantic
-							geographical_region = sea_indian_ocean
+							#L5R Disabled
+							# geographical_region = sea_south_atlantic
+							# geographical_region = sea_indian_ocean
 						}
 					}
 				}
@@ -1153,7 +1172,8 @@ GetRandomMigratoryBird = {
 				OR = {
 					geographical_region = world_europe_west_britannia
 					geographical_region = world_europe_north
-					geographical_region = sea_north_atlantic
+					#L5R Disabled
+					# geographical_region = sea_north_atlantic
 				}
 			}
 		}

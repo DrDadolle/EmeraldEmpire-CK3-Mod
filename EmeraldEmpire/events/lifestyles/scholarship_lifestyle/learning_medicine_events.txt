@@ -3146,7 +3146,8 @@ learning_medicine_special.2110 = {
 			limit = {
 				faith = {
 					OR = {
-						religion_tag = islam_religion
+						#L5R Disabled
+						# religion_tag = islam_religion
 						trait_is_sin = gluttonous
 					}
 				}
@@ -3273,7 +3274,8 @@ learning_medicine_special.2110 = {
 			limit = {
 				faith = {
 					OR = {
-						religion_tag = islam_religion
+						#L5R Disabled
+						# religion_tag = islam_religion
 						trait_is_sin = gluttonous
 					}
 				}

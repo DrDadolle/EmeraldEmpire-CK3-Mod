@@ -847,16 +847,17 @@ tradition_vegetarianism = {
 	
 	ai_will_do = {
 		value = 800
-		if = {
-			limit = {
-				NOT = {
-					scope:character.faith = {
-						has_doctrine = tenet_dharmic_pacifism
-					}
-				}
-			}
-			multiply = 0
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		NOT = {
+		# 			scope:character.faith = {
+		# 				has_doctrine = tenet_dharmic_pacifism
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 }
 
@@ -1543,7 +1544,9 @@ tradition_warrior_culture = {
 	}
 	
 	is_shown = {
-		NOT = { has_cultural_tradition = tradition_hird }
+		#L5R Disabled
+		always = yes
+		# NOT = { has_cultural_tradition = tradition_hird }
 	}
 	can_pick = {
 		culture_not_pacifistic_trigger = yes

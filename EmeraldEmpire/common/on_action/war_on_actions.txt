@@ -951,31 +951,32 @@ on_war_won_attacker = { # As in, won BY attacker. Only one of the two on_actions
 			}
 		}
 
+		#L5R Disabled
 		# Struggle Catalysts
 		## Special war checks for the caliph.		
-		scope:defender = {
-			if = {
-				limit = {
-					fp3_struggle_scoped_is_the_arabian_caliph_trigger = yes
-					scope:war = {
-						NOT = { has_variable = used_for_struggle_catalyst_on_war_ended }
-						using_civil_war_cb_trigger = yes
-					}
-				}
-				# Direct scope because this is caliph-specific.
-				struggle:persian_struggle = {
-					if = {
-						limit = { phase_has_catalyst = catalyst_caliph_or_emperor_loses_revolt_war }
-						activate_struggle_catalyst = {
-							catalyst = catalyst_caliph_or_emperor_loses_revolt_war
-							character = scope:defender
-						}
-						scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
-						log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_caliph_or_emperor_loses_revolt_war }
-					}
-				}
-			}
-		}
+		# scope:defender = {
+		# 	if = {
+		# 		limit = {
+		# 			fp3_struggle_scoped_is_the_arabian_caliph_trigger = yes
+		# 			scope:war = {
+		# 				NOT = { has_variable = used_for_struggle_catalyst_on_war_ended }
+		# 				using_civil_war_cb_trigger = yes
+		# 			}
+		# 		}
+		# 		# Direct scope because this is caliph-specific.
+		# 		struggle:persian_struggle = {
+		# 			if = {
+		# 				limit = { phase_has_catalyst = catalyst_caliph_or_emperor_loses_revolt_war }
+		# 				activate_struggle_catalyst = {
+		# 					catalyst = catalyst_caliph_or_emperor_loses_revolt_war
+		# 					character = scope:defender
+		# 				}
+		# 				scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
+		# 				log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_caliph_or_emperor_loses_revolt_war }
+		# 			}
+		# 		}
+		# 	}
+		# }
 		## (Mostly) general checks.
 		scope:attacker = {
 			# Win any war in the struggle region.

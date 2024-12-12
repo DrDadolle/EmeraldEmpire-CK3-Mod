@@ -41,7 +41,7 @@ l5r_religious_decision.0001 = {
 		create_character = {
 			template = default_isawa_shindoshi_character
 			save_scope_as = isawa_shindoshi
-			location = root.location
+			location = root.capital_province
 		}
 	}
 

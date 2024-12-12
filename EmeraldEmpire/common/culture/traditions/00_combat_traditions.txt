@@ -396,7 +396,8 @@ tradition_warriors_of_the_dry = {
 				}
 			}
 		}
-		NOT = { has_cultural_tradition = tradition_mubarizuns } #To prevent stacking after hybridization
+		#L5R Disabled
+		# NOT = { has_cultural_tradition = tradition_mubarizuns } #To prevent stacking after hybridization
 	}
 	parameters = {
 		desert_warrior_trait_more_common = yes
@@ -654,11 +655,13 @@ tradition_jungle_warriors = {
 	}
 
 	is_shown = { #Replaced by Bush Hunting
-		NOR = {
+		#L5R Disabled
+		always = yes
+		# NOR = {
 			# has_cultural_pillar = heritage_akan
 			# has_cultural_pillar = heritage_yoruba
-			has_cultural_tradition = tradition_bush_hunting
-		}
+			# has_cultural_tradition = tradition_bush_hunting
+		# }
 	}
 	
 	can_pick = {
@@ -2405,16 +2408,18 @@ tradition_horse_breeder = {
 	
 	ai_will_do = {
 		value = 200
+		#L5R Disabled
+		# if = {
+		# 	limit = { # Reduce chance  if the culture has access to other "cavalry" types
+		# 		OR = {
+		# 			has_innovation = innovation_war_camels
+		# 			has_innovation = innovation_elephantry
+		# 		}
+		# 	}
+		# 	multiply = 0.2
+		# }
+		# else_
 		if = {
-			limit = { # Reduce chance  if the culture has access to other "cavalry" types
-				OR = {
-					has_innovation = innovation_war_camels
-					has_innovation = innovation_elephantry
-				}
-			}
-			multiply = 0.2
-		}
-		else_if = {
 			limit = {
 				scope:character ?= {
 					ai_has_warlike_personality = yes
