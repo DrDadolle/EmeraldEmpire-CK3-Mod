@@ -6114,14 +6114,15 @@ elephant_pens_01 = {
 	character_modifier = {
 		knight_effectiveness_mult = high_knight_effectiveness_mult_tier_1
 	}
-	character_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		elephant_cavalry_maintenance_mult = -0.01
-	}
-	county_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		development_growth_factor = 0.05
-	}
+	#L5R Disabled
+	# character_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	elephant_cavalry_maintenance_mult = -0.01
+	# }
+	# county_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	development_growth_factor = 0.05
+	# }
 	
 	next_building = elephant_pens_02
 
@@ -6162,14 +6163,15 @@ elephant_pens_02 = {
 	character_modifier = {
 		knight_effectiveness_mult = high_knight_effectiveness_mult_tier_2
 	}
-	character_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		elephant_cavalry_maintenance_mult = -0.02
-	}
-	county_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		development_growth_factor = 0.1
-	}
+	#L5R Disabled
+	# character_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	elephant_cavalry_maintenance_mult = -0.02
+	# }
+	# county_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	development_growth_factor = 0.1
+	# }
 	
 	next_building = elephant_pens_03
 	
@@ -6217,14 +6219,15 @@ elephant_pens_03 = {
 	county_modifier = {
 		build_gold_cost = -0.02
 	}
-	character_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		elephant_cavalry_maintenance_mult = -0.03
-	}
-	county_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		development_growth_factor = 0.15
-	}
+	#L5R Disabled
+	# character_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	elephant_cavalry_maintenance_mult = -0.03
+	# }
+	# county_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	development_growth_factor = 0.15
+	# }
 	
 	next_building = elephant_pens_04
 	
@@ -6268,14 +6271,15 @@ elephant_pens_04 = {
 	county_modifier = {
 		build_gold_cost = -0.02
 	}
-	character_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		elephant_cavalry_maintenance_mult = -0.04
-	}
-	county_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		development_growth_factor = 0.20
-	}
+	#L5R Disabled
+	# character_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	elephant_cavalry_maintenance_mult = -0.04
+	# }
+	# county_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	development_growth_factor = 0.20
+	# }
 	
 	next_building = elephant_pens_05
 	
@@ -6319,14 +6323,15 @@ elephant_pens_05 = {
 	county_modifier = {
 		build_gold_cost = -0.02
 	}
-	character_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		elephant_cavalry_maintenance_mult = -0.05
-	}
-	county_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		development_growth_factor = 0.25
-	}
+	#L5R Disabled
+	# character_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	elephant_cavalry_maintenance_mult = -0.05
+	# }
+	# county_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	development_growth_factor = 0.25
+	# }
 	
 	next_building = elephant_pens_06
 	
@@ -6370,14 +6375,15 @@ elephant_pens_06 = {
 	county_modifier = {
 		build_gold_cost = -0.02
 	}
-	character_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		elephant_cavalry_maintenance_mult = -0.06
-	}
-	county_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		development_growth_factor = 0.30
-	}
+	#L5R Disabled
+	# character_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	elephant_cavalry_maintenance_mult = -0.06
+	# }
+	# county_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	development_growth_factor = 0.30
+	# }
 	
 	next_building = elephant_pens_07
 	
@@ -6422,14 +6428,15 @@ elephant_pens_07 = {
 		build_gold_cost = -0.02
 		development_growth_factor = 0.05
 	}
-	character_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		elephant_cavalry_maintenance_mult = -0.07
-	}
-	county_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		development_growth_factor = 0.35
-	}
+	#L5R Disabled
+	# character_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	elephant_cavalry_maintenance_mult = -0.07
+	# }
+	# county_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	development_growth_factor = 0.35
+	# }
 	
 	next_building = elephant_pens_08
 	
@@ -6474,14 +6481,15 @@ elephant_pens_08 = {
 		build_gold_cost = -0.02
 		development_growth_factor = 0.05
 	}
-	character_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		elephant_cavalry_maintenance_mult = -0.08
-	}
-	county_culture_modifier = {
-		parameter = elephant_pens_building_bonuses
-		development_growth_factor = 0.40
-	}
+	#L5R Disabled
+	# character_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	elephant_cavalry_maintenance_mult = -0.08
+	# }
+	# county_culture_modifier = {
+	# 	parameter = elephant_pens_building_bonuses
+	# 	development_growth_factor = 0.40
+	# }
 	
 	ai_value = {
 		base = 3

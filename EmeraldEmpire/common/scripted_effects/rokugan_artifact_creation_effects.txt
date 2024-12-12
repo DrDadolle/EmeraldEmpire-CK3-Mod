@@ -15,12 +15,17 @@ create_artifact_chikara_ancestral_sword_crab_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 5.1.1
+		# 	#recipient = character:7862 #TODO Kaiu
+		# 	#location = province:2575 #Rome
+		# }
 		history = {
-			type = created
-			date = 5.1.1
-			#recipient = character:7862 #TODO Kaiu
-			#location = province:2575 #Rome
+			type = created_before_history
 		}
+
 		modifier = chikara_ancestral_sword_crab_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no # Unbreakable
@@ -65,11 +70,15 @@ create_artifact_fukutsu_ancestral_armor_crab_effect = {
 		visuals = japanese_armor
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 5.1.1
+		# 	#recipient = character:7862 #TODO Kaiu
+		# 	#location = province:2575 #Rome
+		# }
 		history = {
-			type = created
-			date = 5.1.1
-			#recipient = character:7862 #TODO Kaiu
-			#location = province:2575 #Rome
+			type = created_before_history
 		}
 		modifier = fukutsu_ancestral_armor_crab_modifier
 		save_scope_as = newly_created_artifact
@@ -112,10 +121,14 @@ create_artifact_shukujo_ancestral_sword_crane_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO Doji Yasurugi
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO Doji Yasurugi
+			type = created_before_history
 		}
 		modifier = shukujo_ancestral_sword_crane_modifier
 		save_scope_as = newly_created_artifact
@@ -155,10 +168,14 @@ create_artifact_sasageru_ancestral_armor_crane_effect = {
 		visuals = japanese_armor
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO Doji Yasurugi
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO Doji Yasurugi
+			type = created_before_history
 		}
 		modifier = sasageru_ancestral_armor_crane_modifier
 		save_scope_as = newly_created_artifact
@@ -198,10 +215,14 @@ create_artifact_kotoku_ancestral_yari_daidoji_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 200.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 200.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = kotoku_ancestral_yari_daidoji_modifier
 		save_scope_as = newly_created_artifact
@@ -249,10 +270,14 @@ create_artifact_shori_ancestral_sword_lion_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = shori_ancestral_sword_lion_modifier
 		save_scope_as = newly_created_artifact
@@ -297,10 +322,14 @@ create_artifact_junsui_ancestral_armor_lion_effect = {
 		visuals = japanese_armor
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = junsui_ancestral_armor_lion_modifier
 		save_scope_as = newly_created_artifact
@@ -349,10 +378,14 @@ create_artifact_ofushikai_ancestral_sword_phoenix_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO Shiba
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO Shiba
+			type = created_before_history
 		}
 		modifier = ofushikai_ancestral_sword_phoenix_modifier
 		save_scope_as = newly_created_artifact
@@ -397,10 +430,14 @@ create_artifact_mezameru_ancestral_armor_phoenix_effect = {
 		visuals = japanese_armor
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = mezameru_ancestral_armor_phoenix_modifier
 		save_scope_as = newly_created_artifact
@@ -449,10 +486,14 @@ create_artifact_itsuwari_ancestral_sword_scorpion_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO Shiba
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO Shiba
+			type = created_before_history
 		}
 		modifier = itsuwari_ancestral_sword_scorpion_modifier
 		save_scope_as = newly_created_artifact
@@ -502,10 +543,14 @@ create_artifact_hayai_ancestral_sword_unicorn_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO Shiba
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO Shiba
+			type = created_before_history
 		}
 		modifier = hayai_ancestral_sword_unicorn_modifier
 		save_scope_as = newly_created_artifact
@@ -545,10 +590,14 @@ create_artifact_yuki_ancestral_armor_unicorn_effect = {
 		visuals = japanese_armor
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = yuki_ancestral_armor_unicorn_modifier
 		save_scope_as = newly_created_artifact
@@ -592,10 +641,14 @@ create_artifact_kunshi_ancestral_sword_imperial_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = kunshi_ancestral_sword_imperial_modifier
 		save_scope_as = newly_created_artifact
@@ -637,10 +690,14 @@ create_artifact_ancestral_sword_sparrow_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = ancestral_sword_sparrow_modifier
 		save_scope_as = newly_created_artifact
@@ -680,10 +737,14 @@ create_artifact_ancestral_sword_centipede_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = ancestral_sword_centipede_modifier
 		save_scope_as = newly_created_artifact
@@ -723,10 +784,14 @@ create_artifact_shoubai_and_sakusen_ancestral_sword_mantis_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = shoubai_and_sakusen_ancestral_sword_mantis_modifier
 		save_scope_as = newly_created_artifact
@@ -766,10 +831,14 @@ create_artifact_kaminari_ancestral_armor_mantis_effect = {
 		visuals = japanese_armor
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = kaminari_ancestral_armor_mantis_modifier
 		save_scope_as = newly_created_artifact
@@ -809,10 +878,14 @@ create_artifact_ancestral_sword_dragonfly_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = ancestral_sword_dragonfly_modifier
 		save_scope_as = newly_created_artifact
@@ -852,10 +925,14 @@ create_artifact_ukyo_ancestral_sword_fox_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = ukyo_ancestral_sword_fox_modifier
 		save_scope_as = newly_created_artifact
@@ -895,10 +972,14 @@ create_artifact_bouishi_kasuga_ancestral_sword_tortoise_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = bouishi_kasuga_ancestral_sword_tortoise_modifier
 		save_scope_as = newly_created_artifact
@@ -938,10 +1019,14 @@ create_artifact_jadoku_ancestral_sword_snake_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = jadoku_ancestral_sword_snake_modifier
 		save_scope_as = newly_created_artifact
@@ -981,10 +1066,14 @@ create_artifact_kenno_ancestral_sword_hare_effect = {
 		visuals = japanese_sword
 		wealth = scope:wealth
 		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO 
+		# }
 		history = {
-			type = created
-			date = 35.1.1
-			#recipient = character:7862 #TODO 
+			type = created_before_history
 		}
 		modifier = kenno_ancestral_sword_hare_modifier
 		save_scope_as = newly_created_artifact

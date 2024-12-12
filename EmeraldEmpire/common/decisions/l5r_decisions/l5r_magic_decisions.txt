@@ -20,7 +20,8 @@ recruit_isawa_shindoshi = {
 	confirm_text = recruit_isawa_shindoshi_confirm
 
 	is_shown = {
-		is_landed_or_landless_administrative = yes
+		is_lowborn = no
+		is_landless_adventurer = no
 		OR = {
 			title:k_phoenix_clan = { exists = holder }
 			title:d_isawa = { exists = holder }

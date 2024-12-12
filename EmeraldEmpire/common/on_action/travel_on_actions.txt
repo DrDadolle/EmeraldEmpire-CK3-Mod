@@ -806,7 +806,8 @@ travel_event_tombola = {
 		1 = travel_events_on_action
 		2 = on_tour_travel
 		2 = pilgrimage_journey_events
-		2 = hajj_journey_events
+		#L5R Disabled
+		# 2 = hajj_journey_events
 	}
 }
 
