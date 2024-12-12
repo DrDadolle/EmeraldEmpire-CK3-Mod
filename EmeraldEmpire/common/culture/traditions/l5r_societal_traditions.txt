@@ -19,6 +19,9 @@ tradition_bushido = {
 	}
 
 	parameters = {
+		## Adding conquest to have more internal strifes
+		## They are more expensive that the usual conquests thou
+		can_use_conquest_cbs = yes
 		can_duel_rivals = yes
 		can_use_sparring_duel = yes
 		has_access_to_trials_by_combat = yes

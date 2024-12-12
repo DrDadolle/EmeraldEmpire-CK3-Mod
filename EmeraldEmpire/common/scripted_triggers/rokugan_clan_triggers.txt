@@ -82,7 +82,6 @@ is_minor_clan = {
 ######################
 # Clan Definition
 ######################
-
 # Crane clan detector
 is_under_k_crane_clan_rule_or_is_ruler = {
     AND = {

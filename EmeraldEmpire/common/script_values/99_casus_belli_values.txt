@@ -247,6 +247,7 @@ common_cb_piety_cost_multiplier_core = {
 			desc = CB_DIVINE_DESTINY_COST
 		}
 	}
+	#L5R Disabled
 	# Innovation Piety Discounts
 	#if = {
 	#	limit = {
@@ -291,6 +292,7 @@ common_cb_piety_cost_multiplier_core = {
 			desc = "CB_ATTACKER_HOF_HUMSACD"
 		}
 	}
+	
 }
 
 common_cb_piety_cost_multiplier_sans_struggles = {
