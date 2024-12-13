@@ -32,11 +32,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - When banning someone (unlanded), location is incorrect "at 's in [PROVINCE NAME]"
 - Fix era time line. Late mediaval is too rapid
 - Add thumbnail image for the mod !
-- Add lion clan bookmark map
-	- Akodo Toturi : TODO DNA
-- update crane clan bookmark map
-	- Doji Kuwanan : TODO DNA
--Add Kaito start date ?
 
 ## CK3 1.14.2 patch
 - update common/travel/point_of_interest_types/travel_point_of_interest_types.txt 
@@ -47,7 +42,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - use "event invasion of vikings" for yobanjin
 - update common/scripted_effects/04_dlc_ep2_tournament_effects and remove ref from vanilla
 - restore court_events_general.txt from vanilla
-- same for faction_effects ! Removing ref from vanilla
 - add at least 1 adventures in game to avoid some errors on start
 - found Great Clan description decision
 	- missing description descision, issue with custom description
@@ -65,7 +59,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Random mon for generated characters ?
 	- Based on shogunate mod
 		- common/coat_of_arms/template_lists coa_templates
-	- Fix illisibles colors !
 	- check ronins & church_holders
 - update regional_custom_loc with L5R References
 - update loc artifact_book_topic_travels_china with Burning Sands

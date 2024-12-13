@@ -28,22 +28,22 @@ bm_1123_clanwar = {
 	}
 
 	# # Doji Kuwanan
-	# character = {
-	# 	name = "bookmark_doji_kuwanan"
-	# 	dynasty = dynasty_doji
-	# 	dynasty_splendor_level = 10
-	# 	type = male
-	# 	birth = 1103.1.1
-	# 	title = c_itoshii_province
-	# 	government = feudal_government
-	# 	culture = doji
-	# 	religion = "seven_fortunes"
-	# 	difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-	# 	history_id = lineofdojisatsume3
-	# 	position = { 750 750 }
+	character = {
+		name = "bookmark_doji_kuwanan"
+		dynasty = dynasty_doji
+		dynasty_splendor_level = 10
+		type = male
+		birth = 1103.1.1
+		title = c_itoshii_province
+		government = feudal_government
+		culture = doji
+		religion = "seven_fortunes"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = lineofdojisatsume3
+		position = { 250 500 }
 
-	# 	animation = anger
-	# }
+		animation = anger
+	}
 }
 
 
@@ -79,28 +79,28 @@ bm_1123_clanwar = {
 ###############################
 ## Lion Clan 1123 Bookmark
 ###############################
-# bm_1123_lion = {
-# 	start_date = 1123.4.1
-# 	is_playable = yes
-# 	group = bm_group_1123
+bm_1123_lion = {
+	start_date = 1123.4.1
+	is_playable = yes
+	group = bm_group_1123
 
-# 	weight = { value = 0 }
+	weight = { value = 0 }
 
-# 	# Akodo Toturi
-# 	character = {
-# 		name = "bookmark_akodo_toturi"
-# 		dynasty = dynasty_akodo #Akodo
-# 		dynasty_splendor_level = 10
-# 		type = male
-# 		birth = 1098.1.1
-# 		title = k_lion_clan
-# 		government = feudal_government
-# 		culture = akodo
-# 		religion = "cult_ancestors"
-# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-# 		history_id = lineofakododaio2
-# 		position = { 450 750 }
+	# Akodo Toturi
+	character = {
+		name = "bookmark_akodo_toturi"
+		dynasty = dynasty_akodo #Akodo
+		dynasty_splendor_level = 10
+		type = male
+		birth = 1098.1.1
+		title = k_lion_clan
+		government = feudal_government
+		culture = akodo
+		religion = "cult_ancestors"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = lineofakododaio2
+		position = { 1500 750 }
 
-# 		animation = sadness
-# 	}
-# }
+		animation = sadness
+	}
+}
