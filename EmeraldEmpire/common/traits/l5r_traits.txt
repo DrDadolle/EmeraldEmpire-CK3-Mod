@@ -115,7 +115,7 @@ avalanche_tattoo = {
 	shown_in_ruler_designer = no
 
 	icon = {
-		desc = tattoo.dds 
+		desc = mystical_tattoo.dds 
 	}
 
 	desc = {
@@ -161,7 +161,7 @@ cherry_blossom_tattoo = {
 	shown_in_ruler_designer = no
 
 	icon = {
-		desc = tattoo.dds 
+		desc = mystical_tattoo.dds 
 	}
 
 	desc = {
@@ -207,7 +207,7 @@ volcano_tattoo = {
 	shown_in_ruler_designer = no
 
 	icon = {
-		desc = tattoo.dds 
+		desc = mystical_tattoo.dds 
 	}
 
 	desc = {
@@ -257,7 +257,7 @@ void_dragon_tattoo = {
 	shown_in_ruler_designer = no
 
 	icon = {
-		desc = tattoo.dds 
+		desc = mystical_tattoo.dds 
 	}
 
 	desc = {
@@ -303,7 +303,7 @@ cloud_tattoo = {
 	shown_in_ruler_designer = no
 
 	icon = {
-		desc = tattoo.dds 
+		desc = mystical_tattoo.dds 
 	}
 
 	desc = {
@@ -347,7 +347,7 @@ vine_tattoo = {
 	shown_in_ruler_designer = no
 
 	icon = {
-		desc = tattoo.dds 
+		desc = mystical_tattoo.dds 
 	}
 
 	desc = {
@@ -378,7 +378,6 @@ shindoshi = {
 
 	opposites = {
 		ishiken
-		mahotsukai
 	}
 
 	birth=0.1 # 0.1% chance de be born with this trait 
@@ -419,7 +418,6 @@ ishiken = {
 
 	opposites = {
 		shindoshi
-		mahotsukai
 	}
 
 	birth=0.05 # 0.05% chance de be born with this trait 
@@ -429,7 +427,6 @@ ishiken = {
 
 	#TODO event when child with shindoshi is born ? Generate an elemental affinity ??
 
-	#TODO change icon
 	icon = {
 		desc = ishiken.dds
 	}
@@ -452,7 +449,7 @@ ishiken = {
 
 ## Mahotsukai 
 mahotsukai_3 = {
-	icon = mahotsukai_03.dds
+	icon = mahotsukai_3.dds
 	category = fame
 
 	ruler_designer_cost = 150
@@ -507,7 +504,7 @@ mahotsukai_3 = {
 }
 
 mahotsukai_2 = {
-	icon = mahotsukai_02.dds
+	icon = mahotsukai_2.dds
 	category = fame
 
 	ruler_designer_cost = 100
@@ -560,7 +557,7 @@ mahotsukai_2 = {
 }
 
 mahotsukai_1 = {
-	icon = mahotsukai_01.dds
+	icon = mahotsukai_1.dds
 	category = fame
 
 	ruler_designer_cost = 50
