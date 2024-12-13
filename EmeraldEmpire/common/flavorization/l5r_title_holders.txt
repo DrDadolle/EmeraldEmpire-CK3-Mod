@@ -127,33 +127,33 @@ rokugan_duke_tortoise_female {
 
 ##### Imperial Family ######
 
-imperial_kingdom = {
-	type = title
-	tier = kingdom
-	priority = 95
-	titles = { k_imperial_families }
-}
+# imperial_kingdom = {
+# 	type = title
+# 	tier = kingdom
+# 	priority = 95
+# 	titles = { k_imperial_families }
+# }
 
-imperial_duchy = {
-	type = title
-	tier = duchy
-	priority = 50
-	titles = { d_hantei d_otomo d_seppun d_miya }
-}
+# imperial_duchy = {
+# 	type = title
+# 	tier = duchy
+# 	priority = 50
+# 	titles = { d_hantei d_otomo d_seppun d_miya }
+# }
 
-imperial_county = {
-	type = title
-	tier = county
-	priority = 20
-	titles = { c_otosan_uchi_province } #TODO ???
-}
+# imperial_county = {
+# 	type = title
+# 	tier = county
+# 	priority = 20
+# 	titles = { c_otosan_uchi_province } #TODO ???
+# }
 
-imperial_barony = {
-	type = title
-	tier = barony
-	priority = 10
-	titles = { b_otosan_uchi } #TODO ??
-}
+# imperial_barony = {
+# 	type = title
+# 	tier = barony
+# 	priority = 10
+# 	titles = { b_otosan_uchi } #TODO ??
+# }
 
 ##########################################
 ################  FAITHS  ################

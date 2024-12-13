@@ -380,9 +380,9 @@ shindoshi = {
 		ishiken
 	}
 
-	birth=0.1 # 0.1% chance de be born with this trait 
-	random_creation=0.1 # 0.1% of new character have this ??
-	inherit_chance = 10 # 10% of chance to pass to the child
+	birth=1.0 # 1.0% chance de be born with this trait 
+	random_creation= 1.0 # 0.2% of new character have this ??
+	inherit_chance = 25 # 25% of chance to pass to the child
 	both_parent_has_trait_inherit_chance = 50 # 50% of chance to pass to the child if both parents have it
 
 	#TODO event when child with shindoshi is born ? Generate an elemental affinity ??
@@ -420,9 +420,9 @@ ishiken = {
 		shindoshi
 	}
 
-	birth=0.05 # 0.05% chance de be born with this trait 
-	random_creation=0.05 # 0.05% of new character have this ??
-	inherit_chance = 5 # 10% of chance to pass to the child
+	birth=0.1 # 0.1% chance de be born with this trait 
+	random_creation=0.1 # 0.1% of new character have this ??
+	inherit_chance = 10 # 10% of chance to pass to the child
 	both_parent_has_trait_inherit_chance = 25 # 25% of chance to pass to the child if both parents have it
 
 	#TODO event when child with shindoshi is born ? Generate an elemental affinity ??

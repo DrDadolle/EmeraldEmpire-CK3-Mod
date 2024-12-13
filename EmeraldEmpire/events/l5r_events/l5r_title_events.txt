@@ -17,23 +17,23 @@ scripted_effect redistribute_from_the_top_title_owned_valid_dynasty_option = {
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
-
+		# The hierarchy
 		every_in_de_jure_hierarchy = {
-				continue = {
-					tier >= tier_county
-				}
-				limit = {
-					tier = tier_county
-					AND = {
-						exists = holder
-						holder = root
-					}
-				}
-				change_title_holder = {
-					holder = scope:valid_dynasty_option
-					change = scope:change
+			continue = {
+				tier >= tier_county
+			}
+			limit = {
+				tier >= tier_county
+				AND = {
+					exists = holder
+					holder = root
 				}
 			}
+			change_title_holder = {
+				holder = scope:valid_dynasty_option
+				change = scope:change
+			}
+		}
 		resolve_title_and_vassal_change = scope:change
 	}
 }
@@ -52,7 +52,7 @@ scripted_effect redistribute_from_the_top_title_owned_valid_heritage_option = {
 					tier >= tier_county
 				}
 				limit = {
-					tier = tier_county
+					tier >= tier_county
 					AND = {
 						exists = holder
 						holder = root
@@ -83,7 +83,7 @@ scripted_effect redistribute_from_the_top_title_owned_valid_language_option = {
 					tier >= tier_county
 				}
 				limit = {
-					tier = tier_county
+					tier >= tier_county
 					AND = {
 						exists = holder
 						holder = root
@@ -147,8 +147,12 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 					exists = dynasty
 					exists = scope:previous_holder
 					dynasty = scope:previous_holder.dynasty
-					NAND = {
+					NOR  = {
 						this = scope:previous_holder
+						this = scope:new_holder
+						scope:new_holder.house ?= this.house
+						is_imperial_family = yes
+
 					}
 				}
 				save_scope_as = valid_dynasty_option
@@ -164,9 +168,12 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 					culture = {
 						has_same_culture_heritage  = scope:previous_holder.culture
 					}
-					NAND = {
+					NOR  = {
 						this = scope:previous_holder
-						this = scope:valid_dynasty_option
+						# this = scope:valid_dynasty_option
+						this = scope:new_holder
+						scope:new_holder.house ?= this.house
+						is_imperial_family = yes
 					}
 				}
 				save_scope_as = valid_heritage_option
@@ -181,10 +188,13 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 					culture = {
 						has_same_culture_language  = scope:previous_holder.culture
 					}
-					NAND = {
+					NOR  = {
 						this = scope:previous_holder
-						this = scope:valid_dynasty_option
-						this = scope:valid_heritage_option
+						# this = scope:valid_dynasty_option
+						# this = scope:valid_heritage_option
+						this = scope:new_holder
+						scope:new_holder.house ?= this.house
+						is_imperial_family = yes
 					}
 				}
 					
@@ -193,20 +203,30 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 			## Fallback, random character
 			if = {
 				limit = { 
-					NOT = { exists = scope:valid_dynasty_option}
+					NOR = { 
+						exists = scope:valid_dynasty_option
+						exists = scope:valid_heritage_option
+						exists = scope:valid_language_option
+					}
 				}
 				random_ruler = {
 					limit = {
 						is_ai = yes
 						is_under_e_rokugan_rule = yes
+						NOR  = {
+							this = scope:previous_holder
+							this = scope:new_holder
+							scope:new_holder.house ?= this.house
+							is_imperial_family = yes
+						}
 					}
+					save_scope_as = valid_dynasty_option
 				}
-				save_scope_as = valid_dynasty_option
 			}
 		}
 	}
     
-    # Same Dynastic Character
+    # Same Dynastic Character or Fallback
     option = {
 		trigger = {
 			exists = scope:valid_dynasty_option

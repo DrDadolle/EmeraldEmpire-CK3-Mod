@@ -27,10 +27,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## CK3 1.13.* patch
 - remove bunch of errors
-- % de chance shindoshi/ishiken TROP BAS ! TO TEST
+- % de chance shindoshi/ishiken TROP BAS ! STILL TOO FEW
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
-- When banning someone (unlanded), location is incorrect "at 's in [PROVINCE NAME]"
-- Fix era time line. Late mediaval is too rapid
+- Fix era time line. 
 - Add thumbnail image for the mod !
 
 ## CK3 1.14.2 patch
@@ -62,6 +61,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - update loc artifact_book_topic_travels_china with Burning Sands
 - update loc book_topic_learning_mahabharata
 - update loc book_topic_learning_mufaddaliyat
+- Jester clothes still appearing
 
 ## Fixes to do
 - The l5r_title_events.0001 events breaks vassalage (but AI fixes it quickly anyway, so that's ok). Maybe enhance the script to give vassals as well ?
@@ -103,6 +103,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================
+- ask for other team about hot springs activity ?
 - Events for l5R => "yearly_on_actions.txt"/on_yearly_events (for instance). Ideas
 	- Random duels
 	- Paiting stuff
