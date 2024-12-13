@@ -1120,6 +1120,8 @@ on_title_gain = {
 						scope:title = { this =  title:c_emerald_castle_province }
 						scope:title = { this =  title:d_rich_frog }
 						scope:title = { this =  title:c_rich_frog }
+						# AND the title of faith OBVIOUSLY
+						scope:title = { this = title:d_rokugani_faith }
 						
 					}
 				}
