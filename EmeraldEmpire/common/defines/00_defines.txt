@@ -406,8 +406,8 @@ NCharacterOpinion = {
 	CONCUBINIST = 0
 
 	# What penalty to give when at zero culture acceptance. Scales down to 0 at 100% acceptance. So -10 would be -10 at 0%, -5 at 50%, 0 at 100%
-	ZERO_CULTURE_ACCEPTANCE_SAME_REALM = -40
-	ZERO_CULTURE_ACCEPTANCE = -20
+	ZERO_CULTURE_ACCEPTANCE_SAME_REALM = -30
+	ZERO_CULTURE_ACCEPTANCE = -15
 	CULTURE_ACCEPTANCE_MULT_KNOWS_LANGUAGE = 0.5 # The penalty is multiplied by this amount if the target knows the lanauge of the opinion haver's culture
 
 	SAME_TRAIT = 5

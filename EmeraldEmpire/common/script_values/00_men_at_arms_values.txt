@@ -87,6 +87,40 @@ bombard_high_maint_cost = @[siege_weapons_high_maint_cost * 1.6]
 
 
 ### Cultural MAA
+#L5R Added
+hida_defender_recruitment_cost = @[heavy_infantry_recruitment_cost * 1.28]
+hida_defender_low_maint_cost = @[heavy_infantry_low_maint_cost * 1.28]
+hida_defender_high_maint_cost = @[heavy_infantry_high_maint_cost * 1.28]
+
+mirumoto_elite_guard_recruitment_cost = @[heavy_infantry_recruitment_cost * 1.2]
+mirumoto_elite_guard_low_maint_cost = @[heavy_infantry_low_maint_cost * 1.2]
+mirumoto_elite_guard_high_maint_cost = @[heavy_infantry_high_maint_cost * 1.2]
+
+matsu_berserker_recruitment_cost = @[heavy_infantry_recruitment_cost * 2]
+matsu_berserker_low_maint_cost = @[heavy_infantry_low_maint_cost * 2]
+matsu_berserker_high_maint_cost = @[heavy_infantry_high_maint_cost * 2]
+
+iron_cran_recruitment_cost = @[pikemen_recruitment_cost * 1.2]
+iron_cran_low_maint_cost = @[pikemen_low_maint_cost * 1.2]
+iron_cran_high_maint_cost = @[pikemen_high_maint_cost * 1.2]
+
+imperial_legion_recruitment_cost = @[pikemen_recruitment_cost * 0.67]
+imperial_legion_low_maint_cost = @[pikemen_low_maint_cost * 0.67]
+imperial_legion_high_maint_cost = @[pikemen_high_maint_cost * 0.67]
+
+elemental_guard_recruitment_cost = @[pikemen_recruitment_cost * 1.5]
+elemental_guard_low_maint_cost = @[pikemen_low_maint_cost * 1.5]
+elemental_guard_high_maint_cost = @[pikemen_high_maint_cost * 1.5]
+
+shadow_assassin_recruitment_cost = @[skirmisher_recruitment_cost * 1.2]
+shadow_assassin_low_maint_cost = @[skirmisher_low_maint_cost * 1.2]
+shadow_assassin_high_maint_cost = @[skirmisher_high_maint_cost * 1.2]
+
+utaku_maiden_recruitment_cost = @[heavy_cavalry_recruitment_cost * 1.2]
+utaku_maiden_low_maint_cost = @[heavy_cavalry_low_maint_cost * 1.2]
+utaku_maiden_high_maint_cost = @[heavy_cavalry_high_maint_cost * 1.2]
+
+#L5R TODO to remove
 huscarls_recruitment_cost = @[heavy_infantry_recruitment_cost * 1.28]
 huscarls_low_maint_cost = @[heavy_infantry_low_maint_cost * 1.28]
 huscarls_high_maint_cost = @[heavy_infantry_high_maint_cost * 1.28]
@@ -297,6 +331,7 @@ accolade_camel_rider_recruitment_cost = @[light_cavalry_recruitment_cost * 2]
 accolade_siege_weapons_recruitment_cost = @[siege_weapons_recruitment_cost * 2]
 accolade_war_elephant_recruitment_cost = @[heavy_cavalry_recruitment_cost * 4]
 accolade_horse_archers_recruitment_cost = @[skirmisher_recruitment_cost * 3 * 2]
+
 
 varangian_guards_recruitment_cost = @[heavy_infantry_recruitment_cost * 0.8]
 varangian_guards_low_maint_cost = @[heavy_infantry_low_maint_cost * 0.8]
