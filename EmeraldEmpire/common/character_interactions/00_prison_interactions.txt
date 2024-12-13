@@ -1710,40 +1710,41 @@ ransom_interaction = {
 		}
 	}
 
+	#L5R Disabled
 	# Pay me an extortionate amount!
-	send_option = {
-		is_shown = {
-			scope:actor = {
-				exists = dynasty
-				dynasty = {
-					has_dynasty_perk = fp1_pillage_legacy_3
-				}
-			}
-			scope:recipient ?= {
-				gold >= scope:secondary_recipient.increased_ransom_cost_value
-			}
-		}
-		flag = extortionate_gold
-		localization = "RANSOM_EXTORTIONATE_GOLD_OPTION"
-	}
+	# send_option = {
+	# 	is_shown = {
+	# 		scope:actor = {
+	# 			exists = dynasty
+	# 			dynasty = {
+	# 				has_dynasty_perk = fp1_pillage_legacy_3
+	# 			}
+	# 		}
+	# 		scope:recipient ?= {
+	# 			gold >= scope:secondary_recipient.increased_ransom_cost_value
+	# 		}
+	# 	}
+	# 	flag = extortionate_gold
+	# 	localization = "RANSOM_EXTORTIONATE_GOLD_OPTION"
+	# }
 
 	# If you don't have what they're worth, pay me what you have (extort version)!
-	send_option = {
-		is_shown = {
-			scope:actor = {
-				exists = dynasty
-				dynasty = {
-					has_dynasty_perk = fp1_pillage_legacy_3
-				}
-			}
-			scope:recipient ?= {
-				gold < scope:secondary_recipient.increased_ransom_cost_value
-				gold >= 1
-			}
-		}
-		flag = extortionate_current_gold
-		localization = "RANSOM_EXTORTIONATE_CURRENT_GOLD_OPTION"
-	}
+	# send_option = {
+	# 	is_shown = {
+	# 		scope:actor = {
+	# 			exists = dynasty
+	# 			dynasty = {
+	# 				has_dynasty_perk = fp1_pillage_legacy_3
+	# 			}
+	# 		}
+	# 		scope:recipient ?= {
+	# 			gold < scope:secondary_recipient.increased_ransom_cost_value
+	# 			gold >= 1
+	# 		}
+	# 	}
+	# 	flag = extortionate_current_gold
+	# 	localization = "RANSOM_EXTORTIONATE_CURRENT_GOLD_OPTION"
+	# }
 
 	# Pay me what they're worth!
 	send_option = {
@@ -1751,11 +1752,12 @@ ransom_interaction = {
 			scope:actor = {
 				OR = {
 					is_lowborn = yes
-					NOT = {
-						dynasty = {
-							has_dynasty_perk = fp1_pillage_legacy_3
-						}
-					}
+					#L5R Disabled
+					# NOT = {
+					# 	dynasty = {
+					# 		has_dynasty_perk = fp1_pillage_legacy_3
+					# 	}
+					# }
 				}
 			}
 			scope:recipient ?= {
@@ -1772,11 +1774,12 @@ ransom_interaction = {
 			scope:actor = {
 				OR = {
 					is_lowborn = yes
-					NOT = {
-						dynasty = {
-							has_dynasty_perk = fp1_pillage_legacy_3
-						}
-					}
+					#L5R Disabled
+					# NOT = {
+					# 	dynasty = {
+					# 		has_dynasty_perk = fp1_pillage_legacy_3
+					# 	}
+					# }
 				}
 			}
 			scope:recipient ?= {
@@ -2508,70 +2511,70 @@ pay_ransom_interaction = {
 			trigger_event = char_interaction.0141
 		}
 	}
+	#L5R Disabled
+	# send_option = {
+	# 	is_shown = {
+	# 		exists = scope:recipient
+	# 		scope:recipient = {
+	# 			exists = dynasty
+	# 			dynasty = {
+	# 				has_dynasty_perk = fp1_pillage_legacy_3
+	# 			}
+	# 		}
+	# 	}
+	# 	is_valid = {
+	# 		exists = scope:recipient
+	# 		scope:actor = {
+	# 			gold >= scope:secondary_recipient.increased_ransom_cost_value
+	# 		}
+	# 	}
+	# 	starts_enabled = {
+	# 		exists = scope:recipient
+	# 		scope:recipient = {
+	# 			exists = dynasty
+	# 			dynasty = {
+	# 				has_dynasty_perk = fp1_pillage_legacy_3
+	# 			}
+	# 		}
+	# 		scope:actor = {
+	# 			gold >= scope:secondary_recipient.increased_ransom_cost_value
+	# 		}
+	# 	}
+	# 	flag = extortionate_gold
+	# 	localization = "RANSOM_EXTORTIONATE_GOLD_IMPRISONED_PERSPECTIVE_OPTION"
+	# }
 
-	send_option = {
-		is_shown = {
-			exists = scope:recipient
-			scope:recipient = {
-				exists = dynasty
-				dynasty = {
-					has_dynasty_perk = fp1_pillage_legacy_3
-				}
-			}
-		}
-		is_valid = {
-			exists = scope:recipient
-			scope:actor = {
-				gold >= scope:secondary_recipient.increased_ransom_cost_value
-			}
-		}
-		starts_enabled = {
-			exists = scope:recipient
-			scope:recipient = {
-				exists = dynasty
-				dynasty = {
-					has_dynasty_perk = fp1_pillage_legacy_3
-				}
-			}
-			scope:actor = {
-				gold >= scope:secondary_recipient.increased_ransom_cost_value
-			}
-		}
-		flag = extortionate_gold
-		localization = "RANSOM_EXTORTIONATE_GOLD_IMPRISONED_PERSPECTIVE_OPTION"
-	}
-
-	# If you don't have what they're worth, pay me what you have (extort version)!
-	send_option = {
-		is_shown = {
-			exists = scope:recipient
-			scope:recipient = {
-				exists = dynasty
-				dynasty = {
-					has_dynasty_perk = fp1_pillage_legacy_3
-				}
-			}
-			scope:actor = {
-				gold < scope:secondary_recipient.increased_ransom_cost_value
-				gold > 0
-			}
-		}
-		starts_enabled = {
-			exists = scope:recipient
-			scope:recipient = {
-				exists = dynasty
-				dynasty = {
-					has_dynasty_perk = fp1_pillage_legacy_3
-				}
-			}
-			scope:actor = {
-				gold < scope:secondary_recipient.increased_ransom_cost_value
-				gold > 0
-			}
-		}
-		flag = extortionate_current_gold
-		localization = "RANSOM_EXTORTIONATE_CURRENT_GOLD_IMPRISONED_PERSPECTIVE_OPTION"
-	}
+	# # If you don't have what they're worth, pay me what you have (extort version)!
+	# send_option = {
+	# 	is_shown = {
+	# 		exists = scope:recipient
+	# 		scope:recipient = {
+	# 			exists = dynasty
+	# 			dynasty = {
+	# 				has_dynasty_perk = fp1_pillage_legacy_3
+	# 			}
+	# 		}
+	# 		scope:actor = {
+	# 			gold < scope:secondary_recipient.increased_ransom_cost_value
+	# 			gold > 0
+	# 		}
+	# 	}
+	# 	starts_enabled = {
+	# 		exists = scope:recipient
+	# 		scope:recipient = {
+	# 			exists = dynasty
+	# 			dynasty = {
+	# 				has_dynasty_perk = fp1_pillage_legacy_3
+	# 			}
+	# 		}
+	# 		scope:actor = {
+	# 			gold < scope:secondary_recipient.increased_ransom_cost_value
+	# 			gold > 0
+	# 		}
+	# 	}
+	# 	flag = extortionate_current_gold
+	# 	localization = "RANSOM_EXTORTIONATE_CURRENT_GOLD_IMPRISONED_PERSPECTIVE_OPTION"
+	# }
 
 	send_option = {
 		is_shown = {
@@ -2579,11 +2582,12 @@ pay_ransom_interaction = {
 			scope:recipient = {
 				OR = {
 					is_lowborn = yes
-					NOT = {
-						dynasty = {
-							has_dynasty_perk = fp1_pillage_legacy_3
-						}
-					}
+					#L5R Disabled
+					# NOT = {
+					# 	dynasty = {
+					# 		has_dynasty_perk = fp1_pillage_legacy_3
+					# 	}
+					# }
 				}
 			}
 		}
@@ -2598,11 +2602,12 @@ pay_ransom_interaction = {
 			scope:recipient = {
 				OR = {
 					is_lowborn = yes
-					NOT = {
-						dynasty = {
-							has_dynasty_perk = fp1_pillage_legacy_3
-						}
-					}
+					#L5R Disabled
+					# NOT = {
+					# 	dynasty = {
+					# 		has_dynasty_perk = fp1_pillage_legacy_3
+					# 	}
+					# }
 				}
 			}
 			scope:actor = {
@@ -2620,11 +2625,12 @@ pay_ransom_interaction = {
 			scope:recipient = {
 				OR = {
 					is_lowborn = yes
-					NOT = {
-						dynasty = {
-							has_dynasty_perk = fp1_pillage_legacy_3
-						}
-					}
+					#L5R Disabled
+					# NOT = {
+					# 	dynasty = {
+					# 		has_dynasty_perk = fp1_pillage_legacy_3
+					# 	}
+					# }
 				}
 			}
 			scope:actor = {
@@ -2637,11 +2643,12 @@ pay_ransom_interaction = {
 			scope:recipient = {
 				OR = {
 					is_lowborn = yes
-					NOT = {
-						dynasty = {
-							has_dynasty_perk = fp1_pillage_legacy_3
-						}
-					}
+					#L5R Disabled
+					# NOT = {
+					# 	dynasty = {
+					# 		has_dynasty_perk = fp1_pillage_legacy_3
+					# 	}
+					# }
 				}
 			}
 			scope:actor = {
@@ -3406,43 +3413,44 @@ ransom_me_interaction = {
 		}
 	}
 
-	send_option = {
-		is_shown = {
-			exists = scope:recipient
-			scope:recipient = {
-				exists = dynasty
-				dynasty = {
-					has_dynasty_perk = fp1_pillage_legacy_3
-				}
-			}
-		}
-		is_valid = {
-			scope:actor = {
-				gold >= increased_ransom_cost
-			}
-		}
-		flag = extortionate_gold
-		localization = "RANSOM_EXTORTIONATE_GOLD_IMPRISONED_PERSPECTIVE_OPTION"
-	}
+	#L5R Disabled
+	# send_option = {
+	# 	is_shown = {
+	# 		exists = scope:recipient
+	# 		scope:recipient = {
+	# 			exists = dynasty
+	# 			dynasty = {
+	# 				has_dynasty_perk = fp1_pillage_legacy_3
+	# 			}
+	# 		}
+	# 	}
+	# 	is_valid = {
+	# 		scope:actor = {
+	# 			gold >= increased_ransom_cost
+	# 		}
+	# 	}
+	# 	flag = extortionate_gold
+	# 	localization = "RANSOM_EXTORTIONATE_GOLD_IMPRISONED_PERSPECTIVE_OPTION"
+	# }
 
-	# If you don't have what they're worth, pay me what you have (extort version)!
-	send_option = {
-		is_shown = {
-			exists = scope:recipient
-			scope:recipient = {
-				exists = dynasty
-				dynasty = {
-					has_dynasty_perk = fp1_pillage_legacy_3
-				}
-			}
-			scope:actor = {
-				gold < increased_ransom_cost
-				gold > 0
-			}
-		}
-		flag = extortionate_current_gold
-		localization = "RANSOM_EXTORTIONATE_CURRENT_GOLD_IMPRISONED_PERSPECTIVE_OPTION"
-	}
+	# # If you don't have what they're worth, pay me what you have (extort version)!
+	# send_option = {
+	# 	is_shown = {
+	# 		exists = scope:recipient
+	# 		scope:recipient = {
+	# 			exists = dynasty
+	# 			dynasty = {
+	# 				has_dynasty_perk = fp1_pillage_legacy_3
+	# 			}
+	# 		}
+	# 		scope:actor = {
+	# 			gold < increased_ransom_cost
+	# 			gold > 0
+	# 		}
+	# 	}
+	# 	flag = extortionate_current_gold
+	# 	localization = "RANSOM_EXTORTIONATE_CURRENT_GOLD_IMPRISONED_PERSPECTIVE_OPTION"
+	# }
 
 	send_option = {
 		is_shown = {
@@ -3450,11 +3458,12 @@ ransom_me_interaction = {
 			scope:recipient = {
 				OR = {
 					is_lowborn = yes
-					NOT = {
-						dynasty = {
-							has_dynasty_perk = fp1_pillage_legacy_3
-						}
-					}
+					#L5R Disabled
+					# NOT = {
+					# 	dynasty = {
+					# 		has_dynasty_perk = fp1_pillage_legacy_3
+					# 	}
+					# }
 				}
 			}
 		}
@@ -3474,11 +3483,12 @@ ransom_me_interaction = {
 			scope:recipient = {
 				OR = {
 					is_lowborn = yes
-					NOT = {
-						dynasty = {
-							has_dynasty_perk = fp1_pillage_legacy_3
-						}
-					}
+					#L5R Disabled
+					# NOT = {
+					# 	dynasty = {
+					# 		has_dynasty_perk = fp1_pillage_legacy_3
+					# 	}
+					# }
 				}
 			}
 			scope:actor = {

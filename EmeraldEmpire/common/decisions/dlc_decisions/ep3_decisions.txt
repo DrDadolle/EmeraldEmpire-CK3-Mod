@@ -1873,10 +1873,11 @@ adopt_state_faith = {
 			culture ?= top_liege.culture
 			add = 10
 		}
-		modifier = { # Some faith are more likely to be abandoned
-			faith ?= { has_doctrine_parameter = unattractive_for_character_conversions }
-			add = 10
-		}
+		#L5R Disabled
+		# modifier = { # Some faith are more likely to be abandoned
+		# 	faith ?= { has_doctrine_parameter = unattractive_for_character_conversions }
+		# 	add = 10
+		# }
 		modifier = { # Don't adopt the state faith if you have the same faith as the top liege (if the emperor can have this faith, so can we!)
 			faith = top_liege.faith
 			is_independent_ruler = no

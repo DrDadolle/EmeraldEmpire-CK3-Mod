@@ -3799,13 +3799,14 @@ artifact.6000 = {
 			}
 			add = 1
 		}
-		modifier = {
-			side_primary_participant = {
-				exists = side_primary_participant.dynasty
-				dynasty = { has_dynasty_perk = fp1_pillage_legacy_4 }
-			}
-			add = 1
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	side_primary_participant = {
+		# 		exists = side_primary_participant.dynasty
+		# 		dynasty = { has_dynasty_perk = fp1_pillage_legacy_4 }
+		# 	}
+		# 	add = 1
+		# }
 	}
 
 	immediate = {

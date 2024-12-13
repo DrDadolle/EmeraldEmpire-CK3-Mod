@@ -357,32 +357,32 @@ fp1_apply_generic_stele_bonuses_effect = {
 # 	}
 # }
 
-fp1_remove_stele_effect = {
-	if = {
-		limit = { has_county_modifier = fp1_stele_ancestors_strong }
-		remove_county_modifier = fp1_stele_ancestors_strong
-	}
-	if = {
-		limit = { has_county_modifier = fp1_stele_ancestors_weak }
-		remove_county_modifier = fp1_stele_ancestors_weak
-	}
-	if = {
-		limit = { has_county_modifier = fp1_stele_conquest_strong }
-		remove_county_modifier = fp1_stele_conquest_strong
-	}
-	if = {
-		limit = { has_county_modifier = fp1_stele_conquest_weak }
-		remove_county_modifier = fp1_stele_conquest_weak
-	}
-	if = {
-		limit = { has_county_modifier = fp1_stele_promotion_strong }
-		remove_county_modifier = fp1_stele_promotion_strong
-	}
-	if = {
-		limit = { has_county_modifier = fp1_stele_promotion_weak }
-		remove_county_modifier = fp1_stele_promotion_weak
-	}
-}
+# fp1_remove_stele_effect = {
+# 	if = {
+# 		limit = { has_county_modifier = fp1_stele_ancestors_strong }
+# 		remove_county_modifier = fp1_stele_ancestors_strong
+# 	}
+# 	if = {
+# 		limit = { has_county_modifier = fp1_stele_ancestors_weak }
+# 		remove_county_modifier = fp1_stele_ancestors_weak
+# 	}
+# 	if = {
+# 		limit = { has_county_modifier = fp1_stele_conquest_strong }
+# 		remove_county_modifier = fp1_stele_conquest_strong
+# 	}
+# 	if = {
+# 		limit = { has_county_modifier = fp1_stele_conquest_weak }
+# 		remove_county_modifier = fp1_stele_conquest_weak
+# 	}
+# 	if = {
+# 		limit = { has_county_modifier = fp1_stele_promotion_strong }
+# 		remove_county_modifier = fp1_stele_promotion_strong
+# 	}
+# 	if = {
+# 		limit = { has_county_modifier = fp1_stele_promotion_weak }
+# 		remove_county_modifier = fp1_stele_promotion_weak
+# 	}
+# }
 # L5R Disabled
 # forge_the_jomsvikings_scripted_effect = {
 # 	# Display simplified results.

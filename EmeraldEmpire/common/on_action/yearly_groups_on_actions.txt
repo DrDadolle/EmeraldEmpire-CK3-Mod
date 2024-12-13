@@ -68,7 +68,8 @@
 		200 = fp1_yearly.0591	# Raised Voices at the Thing - two of your counties are fighting at a regional thing.
 		200 = fp1_yearly.0601	# The Hardest Part of Ruling - you're incredibly bored in a protracted thing session.
 		200 = fp1_yearly.0611	# Leading by Example - one of your children hurts another whilst imitating you.
-		200 = fp1_yearly.0641	# Worthy of the Ocean - your longships are in disrepair.
+		#L5R Disabled
+		# 200 = fp1_yearly.0641	# Worthy of the Ocean - your longships are in disrepair.
 		200 = fp1_yearly.0651	# Leviathan - you spot a whale whilst sailing.
 		200 = fp1_yearly.0661	# A Novel Challenge - a knight challenges you to skiing.
 		200 = fp1_yearly.0671	# A Slippery Slope - your child wants to go sledding.
@@ -80,8 +81,7 @@
 		50 = fp1_yearly.1071 # Sparklingly Clean
 		#L5R Disabled
 		# 50 = fp1_yearly.1081 # An explorer of the Atlantic wishes to share their tales with you.
-		5 = fp1_yearly.2500 # What's that deviant up to this time!?
-		#L5R Disabled
+		# 5 = fp1_yearly.2500 # What's that deviant up to this time!?
 		# 1000 = fp1_major_decisions.1001 # Canute & the Tide
 		#L5R Disabled
 		## Jomsvikings

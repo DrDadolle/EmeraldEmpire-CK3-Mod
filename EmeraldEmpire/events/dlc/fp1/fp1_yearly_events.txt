@@ -9074,8 +9074,9 @@ fp1_yearly.0571 = {
 			modifier = impressed_opinion
 			opinion = 30
 		}
+		#L5R Disabled
 		# The runestone is destroyed.
-		scope:vandal_site = { fp1_remove_stele_effect = yes }
+		# scope:vandal_site = { fp1_remove_stele_effect = yes }
 
 		stress_impact = {
 			trusting = medium_stress_impact_loss
@@ -9266,8 +9267,9 @@ fp1_yearly.0571 = {
 			modifier = respect_opinion
 			opinion = -30
 		}
+		#L5R Disabled
 		# Lose the runestone.
-		scope:vandal_site = { fp1_remove_stele_effect = yes }
+		# scope:vandal_site = { fp1_remove_stele_effect = yes }
 
 		stress_impact = {
 			forgiving = minor_stress_impact_loss
@@ -11178,335 +11180,335 @@ fp1_yearly.0632 = {
 # 0641 - 0650
 ##################################################
 
-scripted_trigger fp1_0641_raider_with_longships_trigger = {
-	can_raid_trigger = yes
-	culture = { has_innovation = innovation_longboats }
-	any_sub_realm_county = { is_coastal_county = yes }
-}
+# scripted_trigger fp1_0641_raider_with_longships_trigger = {
+# 	can_raid_trigger = yes
+# 	culture = { has_innovation = innovation_longboats }
+# 	any_sub_realm_county = { is_coastal_county = yes }
+# }
 
-scripted_trigger fp1_0641_neighbouring_ruler_with_stealable_ships_trigger = {
-	# Doesn't have a friendly relationship with root.
-	has_friendly_relationship_with_root_trigger = no
-	# Has stealable longboats.
-	fp1_0641_raider_with_longships_trigger = yes
-}
+# scripted_trigger fp1_0641_neighbouring_ruler_with_stealable_ships_trigger = {
+# 	# Doesn't have a friendly relationship with root.
+# 	has_friendly_relationship_with_root_trigger = no
+# 	# Has stealable longboats.
+# 	fp1_0641_raider_with_longships_trigger = yes
+# }
 
-#	Your longships seem to be in poor nick.
-fp1_yearly.0641 = {
-	type = character_event
-	title = fp1_yearly.0641.t
-	desc = fp1_yearly.0641.desc
-	theme = intrigue
-	left_portrait = {
-		character = root
-		animation = personality_rational
-	}
-	right_portrait = {
-		character = scope:neighbour
-		animation = dismissal
-	}
-	override_background = { reference = fp1_beached_longships }
+# #	Your longships seem to be in poor nick.
+# fp1_yearly.0641 = {
+# 	type = character_event
+# 	title = fp1_yearly.0641.t
+# 	desc = fp1_yearly.0641.desc
+# 	theme = intrigue
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_rational
+# 	}
+# 	right_portrait = {
+# 		character = scope:neighbour
+# 		animation = dismissal
+# 	}
+# 	override_background = { reference = fp1_beached_longships }
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0641 }
-		is_landed = yes
-		# Filter to flavour-appropriate characters.
-		fp1_0641_raider_with_longships_trigger = yes
-	}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0641 }
+# 		is_landed = yes
+# 		# Filter to flavour-appropriate characters.
+# 		fp1_0641_raider_with_longships_trigger = yes
+# 	}
 
-	weight_multiplier = {
-		base = 1
+# 	weight_multiplier = {
+# 		base = 1
 
-		#L5R Disabled
-		# Weight down a little if you're a raider or diligent, used to keeping your longships in tip-top condition.
-		# modifier = {
-		# 	add = -0.5
-		# 	has_trait = viking
-		# }
-		modifier = {
-			add = -0.5
-			has_trait = diligent
-		}
-		# And up a little for adventurers and the lazy, who wear their ships hard & can't be arsed respectively.
-		modifier = {
-			add = 0.5
-			has_trait = adventurer
-		}
-		modifier = {
-			add = 0.5
-			has_trait = lazy
-		}
-	}
+# 		#L5R Disabled
+# 		# Weight down a little if you're a raider or diligent, used to keeping your longships in tip-top condition.
+# 		# modifier = {
+# 		# 	add = -0.5
+# 		# 	has_trait = viking
+# 		# }
+# 		modifier = {
+# 			add = -0.5
+# 			has_trait = diligent
+# 		}
+# 		# And up a little for adventurers and the lazy, who wear their ships hard & can't be arsed respectively.
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = adventurer
+# 		}
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = lazy
+# 		}
+# 	}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0641
-			days = 1825
-		}
-		# Try to grab a suitable neighbour.
-		if = {
-			limit = {
-				any_neighboring_and_across_water_realm_same_rank_owner = { fp1_0641_neighbouring_ruler_with_stealable_ships_trigger = yes }
-			}
-			random_neighboring_and_across_water_realm_same_rank_owner = {
-				# Prefer rivals first.
-				limit = {
-					any_neighboring_and_across_water_realm_same_rank_owner = {
-						any_relation = {
-							type = rival
-							this = root
-						}
-						fp1_0641_neighbouring_ruler_with_stealable_ships_trigger = yes
-					}
-				}
-				# Otherwise, just whoever.
-				alternative_limit = {
-					any_neighboring_and_across_water_realm_same_rank_owner = { fp1_0641_neighbouring_ruler_with_stealable_ships_trigger = yes }
-				}
-				save_scope_as = neighbour
-			}
-		}
-	}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0641
+# 			days = 1825
+# 		}
+# 		# Try to grab a suitable neighbour.
+# 		if = {
+# 			limit = {
+# 				any_neighboring_and_across_water_realm_same_rank_owner = { fp1_0641_neighbouring_ruler_with_stealable_ships_trigger = yes }
+# 			}
+# 			random_neighboring_and_across_water_realm_same_rank_owner = {
+# 				# Prefer rivals first.
+# 				limit = {
+# 					any_neighboring_and_across_water_realm_same_rank_owner = {
+# 						any_relation = {
+# 							type = rival
+# 							this = root
+# 						}
+# 						fp1_0641_neighbouring_ruler_with_stealable_ships_trigger = yes
+# 					}
+# 				}
+# 				# Otherwise, just whoever.
+# 				alternative_limit = {
+# 					any_neighboring_and_across_water_realm_same_rank_owner = { fp1_0641_neighbouring_ruler_with_stealable_ships_trigger = yes }
+# 				}
+# 				save_scope_as = neighbour
+# 			}
+# 		}
+# 	}
 
-	# Pay to fix them.
-	option = {
-		name = fp1_yearly.0641.a
-		trigger = {
-			can_make_expensive_purchase_trigger = { PRICE = minor_gold_value }
-		}
+# 	# Pay to fix them.
+# 	option = {
+# 		name = fp1_yearly.0641.a
+# 		trigger = {
+# 			can_make_expensive_purchase_trigger = { PRICE = minor_gold_value }
+# 		}
 
-		# The boat are repaired without issue.
-		custom_tooltip = fp1_yearly.0641.a.tt
-		# Lose a little gold.
-		remove_short_term_gold = minor_gold_value
+# 		# The boat are repaired without issue.
+# 		custom_tooltip = fp1_yearly.0641.a.tt
+# 		# Lose a little gold.
+# 		remove_short_term_gold = minor_gold_value
 
-		stress_impact = {
-			generous = minor_stress_impact_loss
-			honest = minor_stress_impact_loss
-			greedy = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.5
-				ai_greed = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = generous
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = honest
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = greedy
-			}
-		}
-	}
+# 		stress_impact = {
+# 			generous = minor_stress_impact_loss
+# 			honest = minor_stress_impact_loss
+# 			greedy = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.5
+# 				ai_greed = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = generous
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = honest
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = greedy
+# 			}
+# 		}
+# 	}
 
-	# Steal some from a neighbouring ruler.
-	option = {
-		name = fp1_yearly.0641.b
-		trigger = { exists = scope:neighbour }
+# 	# Steal some from a neighbouring ruler.
+# 	option = {
+# 		name = fp1_yearly.0641.b
+# 		trigger = { exists = scope:neighbour }
 
-		# Intrigue duel to nab the boats in the night.
-		duel = {
-			skill = intrigue
-			target = scope:neighbour
-			# You heist the longships gleefully.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0641.b.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0641.b.tt_success
-					left_icon = scope:neighbour
-					add_character_modifier = {
-						modifier = fp1_excellent_longships_modifier
-						years = 10
-					}
-					reverse_add_opinion = {
-						target = scope:neighbour
-						modifier = angry_opinion
-						opinion = -50
-					}
-				}
-			}
-			# You're caught and have to leg it.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0641.b.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0641.b.tt_failure
-					left_icon = scope:neighbour
-					add_character_modifier = {
-						modifier = fp1_rotting_longships_modifier
-						years = 10
-					}
-					reverse_add_opinion = {
-						target = scope:neighbour
-						modifier = annoyed_opinion
-						opinion = -20
-					}
-				}
-			}
-		}
-		# Try to earmark scope:neighbour as a potential rival.
-		hidden_effect = {
-			if = {
-				limit = {
-					can_set_relation_potential_rival_trigger = { CHARACTER = scope:neighbour }
-				}
-				set_relation_potential_rival = scope:neighbour
-			}
-		}
+# 		# Intrigue duel to nab the boats in the night.
+# 		duel = {
+# 			skill = intrigue
+# 			target = scope:neighbour
+# 			# You heist the longships gleefully.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0641.b.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0641.b.tt_success
+# 					left_icon = scope:neighbour
+# 					add_character_modifier = {
+# 						modifier = fp1_excellent_longships_modifier
+# 						years = 10
+# 					}
+# 					reverse_add_opinion = {
+# 						target = scope:neighbour
+# 						modifier = angry_opinion
+# 						opinion = -50
+# 					}
+# 				}
+# 			}
+# 			# You're caught and have to leg it.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0641.b.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0641.b.tt_failure
+# 					left_icon = scope:neighbour
+# 					add_character_modifier = {
+# 						modifier = fp1_rotting_longships_modifier
+# 						years = 10
+# 					}
+# 					reverse_add_opinion = {
+# 						target = scope:neighbour
+# 						modifier = annoyed_opinion
+# 						opinion = -20
+# 					}
+# 				}
+# 			}
+# 		}
+# 		# Try to earmark scope:neighbour as a potential rival.
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					can_set_relation_potential_rival_trigger = { CHARACTER = scope:neighbour }
+# 				}
+# 				set_relation_potential_rival = scope:neighbour
+# 			}
+# 		}
 
-		stress_impact = {
-			arbitrary = minor_stress_impact_loss
-			greedy = medium_stress_impact_loss
-			deceitful = medium_stress_impact_loss
-			just = minor_stress_impact_gain
-			generous = medium_stress_impact_gain
-			honest = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 0.5
-				ai_rationality = 0.25
-				ai_honor = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arbitrary
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = greedy
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = deceitful
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = just
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = generous
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = honest
-			}
-		}
-	}
+# 		stress_impact = {
+# 			arbitrary = minor_stress_impact_loss
+# 			greedy = medium_stress_impact_loss
+# 			deceitful = medium_stress_impact_loss
+# 			just = minor_stress_impact_gain
+# 			generous = medium_stress_impact_gain
+# 			honest = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 0.5
+# 				ai_rationality = 0.25
+# 				ai_honor = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = deceitful
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = just
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = generous
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = honest
+# 			}
+# 		}
+# 	}
 
-	# Commission new vessels from a fancy shipwright.
-	option = {
-		name = fp1_yearly.0641.c
-		trigger = {
-			can_make_expensive_purchase_trigger = { PRICE = medium_gold_value }
-		}
+# 	# Commission new vessels from a fancy shipwright.
+# 	option = {
+# 		name = fp1_yearly.0641.c
+# 		trigger = {
+# 			can_make_expensive_purchase_trigger = { PRICE = medium_gold_value }
+# 		}
 
-		# Gain a modifier boosting naval speed & reducing embark cost.
-		add_character_modifier = {
-			modifier = fp1_excellent_longships_modifier
-			years = 10
-		}
-		# Lose a bit more gold.
-		remove_short_term_gold = medium_gold_value
+# 		# Gain a modifier boosting naval speed & reducing embark cost.
+# 		add_character_modifier = {
+# 			modifier = fp1_excellent_longships_modifier
+# 			years = 10
+# 		}
+# 		# Lose a bit more gold.
+# 		remove_short_term_gold = medium_gold_value
 
-		stress_impact = {
-			diligent = minor_stress_impact_loss
-			generous = medium_stress_impact_loss
-			lazy = minor_stress_impact_gain
-			greedy = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.5
-				ai_greed = -1
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = diligent
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = generous
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = lazy
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = greedy
-			}
-		}
-	}
+# 		stress_impact = {
+# 			diligent = minor_stress_impact_loss
+# 			generous = medium_stress_impact_loss
+# 			lazy = minor_stress_impact_gain
+# 			greedy = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.5
+# 				ai_greed = -1
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = diligent
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = generous
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = greedy
+# 			}
+# 		}
+# 	}
 
-	# Bah, let them rot. What's the harm?
-	option = {
-		name = fp1_yearly.0641.d
+# 	# Bah, let them rot. What's the harm?
+# 	option = {
+# 		name = fp1_yearly.0641.d
 
-		# Gain a modifier reducing naval speed & increasing embark cost.
-		add_character_modifier = {
-			modifier = fp1_rotting_longships_modifier
-			years = 10
-		}
-		# Someone else's problem, right?
-		## Stress loss handled in stress impact.
+# 		# Gain a modifier reducing naval speed & increasing embark cost.
+# 		add_character_modifier = {
+# 			modifier = fp1_rotting_longships_modifier
+# 			years = 10
+# 		}
+# 		# Someone else's problem, right?
+# 		## Stress loss handled in stress impact.
 
-		stress_impact = {
-			base = major_stress_loss
-			lazy = medium_stress_impact_loss
-			greedy = medium_stress_impact_loss
-			diligent = medium_stress_impact_gain
-			generous = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.25
-				ai_greed = -0.5
-				ai_energy = -0.75
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = lazy
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = greedy
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = diligent
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = generous
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			base = major_stress_loss
+# 			lazy = medium_stress_impact_loss
+# 			greedy = medium_stress_impact_loss
+# 			diligent = medium_stress_impact_gain
+# 			generous = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.25
+# 				ai_greed = -0.5
+# 				ai_energy = -0.75
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = diligent
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = generous
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # Leviathan

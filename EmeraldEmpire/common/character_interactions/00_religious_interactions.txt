@@ -1699,7 +1699,8 @@ convert_at_war_interaction = {
 			OR = {
 				has_doctrine_parameter = unreformed
 				fervor <= 25
-				has_doctrine_parameter = unattractive_for_character_conversions
+				#L5R Disabled
+				# has_doctrine_parameter = unattractive_for_character_conversions
 			}
 		}
 	}

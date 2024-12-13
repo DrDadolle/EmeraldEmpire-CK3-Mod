@@ -1873,311 +1873,311 @@ fp1_yearly.2400 = {
 	after = { remove_variable = animal_type }
 }
 
-scripted_trigger fp1_yearly_2500_guest_trigger = {
-	is_available_ai_adult = yes
-	is_pool_guest = yes
-	NOR = {
-		has_trait = deviant
-		any_secret = {
-			secret_type = secret_deviant
-			is_known_by = root
-		}
-	}
-	save_temporary_scope_as = deviant_guest
-	trait_is_criminal_in_faith_trigger = { TRAIT = deviant FAITH = scope:deviant_guest.faith GENDER_CHARACTER = scope:deviant_guest }
-}
+# scripted_trigger fp1_yearly_2500_guest_trigger = {
+# 	is_available_ai_adult = yes
+# 	is_pool_guest = yes
+# 	NOR = {
+# 		has_trait = deviant
+# 		any_secret = {
+# 			secret_type = secret_deviant
+# 			is_known_by = root
+# 		}
+# 	}
+# 	save_temporary_scope_as = deviant_guest
+# 	trait_is_criminal_in_faith_trigger = { TRAIT = deviant FAITH = scope:deviant_guest.faith GENDER_CHARACTER = scope:deviant_guest }
+# }
 
-scripted_trigger fp1_yearly_2500_court_target_trigger = {
-	exists = capital_province
-	OR = {
-		any_targeting_scheme = {
-			OR = {
-				scheme_type = murder
-				scheme_type = abduct
-			}
-			scheme_owner = root
-		}
-		has_relation_rival = root
-	}
-}
+# scripted_trigger fp1_yearly_2500_court_target_trigger = {
+# 	exists = capital_province
+# 	OR = {
+# 		any_targeting_scheme = {
+# 			OR = {
+# 				scheme_type = murder
+# 				scheme_type = abduct
+# 			}
+# 			scheme_owner = root
+# 		}
+# 		has_relation_rival = root
+# 	}
+# }
 
-# What's that deviant up to this time!?
-fp1_yearly.2500 = {
-	type = character_event
-	title = fp1_yearly.2500.t
-	desc = fp1_yearly.2500.desc
-	theme = seduction
-	left_portrait = {
-		character = scope:deviant_guest
-		animation = shock
-	}
-	override_background = { reference = fp1_runestone }
+# # What's that deviant up to this time!?
+# fp1_yearly.2500 = {
+# 	type = character_event
+# 	title = fp1_yearly.2500.t
+# 	desc = fp1_yearly.2500.desc
+# 	theme = seduction
+# 	left_portrait = {
+# 		character = scope:deviant_guest
+# 		animation = shock
+# 	}
+# 	override_background = { reference = fp1_runestone }
 
-	trigger = {
-		#DLC check.
-		has_fp1_dlc_trigger = yes
+# 	trigger = {
+# 		#DLC check.
+# 		has_fp1_dlc_trigger = yes
 		
-		#Standard checks.
-		is_available_at_peace_adult = yes
+# 		#Standard checks.
+# 		is_available_at_peace_adult = yes
 		
-		NOT = { has_character_flag = had_event_fp1_yearly_2500 }
-		is_capable_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_2500 }
+# 		is_capable_adult = yes
 		
-		any_courtier_or_guest = {
-			fp1_yearly_2500_guest_trigger = yes
-		}
+# 		any_courtier_or_guest = {
+# 			fp1_yearly_2500_guest_trigger = yes
+# 		}
 		
-		trait_is_criminal_in_faith_trigger = { TRAIT = deviant FAITH = root.faith GENDER_CHARACTER = scope:deviant_guest }
+# 		trait_is_criminal_in_faith_trigger = { TRAIT = deviant FAITH = root.faith GENDER_CHARACTER = scope:deviant_guest }
 		
-		any_held_title = {
-			tier = tier_county
-			OR = {
-				has_county_modifier = fp1_stele_ancestors_strong
-				has_county_modifier = fp1_stele_ancestors_weak
-				has_county_modifier = fp1_stele_conquest_strong
-				has_county_modifier = fp1_stele_conquest_weak
-				has_county_modifier = fp1_stele_promotion_strong
-				has_county_modifier = fp1_stele_promotion_weak
-			}
-		}
-	}
+# 		any_held_title = {
+# 			tier = tier_county
+# 			OR = {
+# 				has_county_modifier = fp1_stele_ancestors_strong
+# 				has_county_modifier = fp1_stele_ancestors_weak
+# 				has_county_modifier = fp1_stele_conquest_strong
+# 				has_county_modifier = fp1_stele_conquest_weak
+# 				has_county_modifier = fp1_stele_promotion_strong
+# 				has_county_modifier = fp1_stele_promotion_weak
+# 			}
+# 		}
+# 	}
 
-	weight_multiplier = {
-		base = 1
-	}
+# 	weight_multiplier = {
+# 		base = 1
+# 	}
 	
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_2500
-		}
-		random_held_title = {
-			limit = {
-				tier = tier_county
-				OR = {
-					has_county_modifier = fp1_stele_ancestors_strong
-					has_county_modifier = fp1_stele_ancestors_weak
-					has_county_modifier = fp1_stele_conquest_strong
-					has_county_modifier = fp1_stele_conquest_weak
-					has_county_modifier = fp1_stele_promotion_strong
-					has_county_modifier = fp1_stele_promotion_weak
-				}
-			}
-			save_scope_as = runestone_location
-		}
-		hidden_effect = {
-			random_courtier_or_guest = {
-				limit = {
-					fp1_yearly_2500_guest_trigger = yes
-				}
-				if = {
-					limit = {
-						NOT = {
-							any_secret = {
-								secret_type = secret_deviant
-							}
-						}
-					}
-					give_deviant_secret_or_trait_effect = yes
-				}
-				save_scope_as = deviant_guest
-				random_secret = {
-					limit = {
-						NOT = { is_known_by = root }
-						secret_type = secret_deviant
-					}
-					save_scope_as = deviant_guest_secret
-				}
-				if = {
-					limit = {
-						root = { is_ai = no }
-					}
-					add_character_flag = is_naked
-				}
-			}
-		}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_2500
+# 		}
+# 		random_held_title = {
+# 			limit = {
+# 				tier = tier_county
+# 				OR = {
+# 					has_county_modifier = fp1_stele_ancestors_strong
+# 					has_county_modifier = fp1_stele_ancestors_weak
+# 					has_county_modifier = fp1_stele_conquest_strong
+# 					has_county_modifier = fp1_stele_conquest_weak
+# 					has_county_modifier = fp1_stele_promotion_strong
+# 					has_county_modifier = fp1_stele_promotion_weak
+# 				}
+# 			}
+# 			save_scope_as = runestone_location
+# 		}
+# 		hidden_effect = {
+# 			random_courtier_or_guest = {
+# 				limit = {
+# 					fp1_yearly_2500_guest_trigger = yes
+# 				}
+# 				if = {
+# 					limit = {
+# 						NOT = {
+# 							any_secret = {
+# 								secret_type = secret_deviant
+# 							}
+# 						}
+# 					}
+# 					give_deviant_secret_or_trait_effect = yes
+# 				}
+# 				save_scope_as = deviant_guest
+# 				random_secret = {
+# 					limit = {
+# 						NOT = { is_known_by = root }
+# 						secret_type = secret_deviant
+# 					}
+# 					save_scope_as = deviant_guest_secret
+# 				}
+# 				if = {
+# 					limit = {
+# 						root = { is_ai = no }
+# 					}
+# 					add_character_flag = is_naked
+# 				}
+# 			}
+# 		}
 		
-		if = {
-			limit = {
-				is_ai = no
-			}
-			if = {
-				limit = {
-					any_ruler = {
-						fp1_yearly_2500_court_target_trigger = yes
-					}
-				}
-				random_ruler = {
-					limit = {
-						fp1_yearly_2500_court_target_trigger = yes
-					}
-					save_scope_as = appropriate_court_target_owner
-				}
-			}
-		}
-		create_character_memory = {
-			type = deviant_defiled_my_object
-			participants = { deviant = scope:deviant_guest }
-		}
-	}
+# 		if = {
+# 			limit = {
+# 				is_ai = no
+# 			}
+# 			if = {
+# 				limit = {
+# 					any_ruler = {
+# 						fp1_yearly_2500_court_target_trigger = yes
+# 					}
+# 				}
+# 				random_ruler = {
+# 					limit = {
+# 						fp1_yearly_2500_court_target_trigger = yes
+# 					}
+# 					save_scope_as = appropriate_court_target_owner
+# 				}
+# 			}
+# 		}
+# 		create_character_memory = {
+# 			type = deviant_defiled_my_object
+# 			participants = { deviant = scope:deviant_guest }
+# 		}
+# 	}
 
-	option = { # Learn of the secret and force them to leave
-		name = {
-			trigger = { NOT = { exists = scope:appropriate_court_target_owner } }
-			text = yearly.8400.a
-		}
-		name = {
-			trigger = { exists = scope:appropriate_court_target_owner }
-			text = yearly.8400.special
-		}
+# 	option = { # Learn of the secret and force them to leave
+# 		name = {
+# 			trigger = { NOT = { exists = scope:appropriate_court_target_owner } }
+# 			text = yearly.8400.a
+# 		}
+# 		name = {
+# 			trigger = { exists = scope:appropriate_court_target_owner }
+# 			text = yearly.8400.special
+# 		}
 		
-		scope:deviant_guest_secret = {
-			reveal_to = root
-		}
+# 		scope:deviant_guest_secret = {
+# 			reveal_to = root
+# 		}
 
-		scope:deviant_guest = {
-			if = {
-				limit = {
-					exists = scope:appropriate_court_target_owner
-				}
-				hidden_effect = {
-					visit_court_of = scope:appropriate_court_target_owner
-				}
-				custom_tooltip = yearly.8400.a.tt
-			}
-			else = {
-				select_and_move_to_pool_effect = yes
-			}
-		}
+# 		scope:deviant_guest = {
+# 			if = {
+# 				limit = {
+# 					exists = scope:appropriate_court_target_owner
+# 				}
+# 				hidden_effect = {
+# 					visit_court_of = scope:appropriate_court_target_owner
+# 				}
+# 				custom_tooltip = yearly.8400.a.tt
+# 			}
+# 			else = {
+# 				select_and_move_to_pool_effect = yes
+# 			}
+# 		}
 		
-		ai_chance = {
-			base = 100
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = generous
-					has_trait = compassionate
-					has_trait = just
-				}
-			}
-		}
+# 		ai_chance = {
+# 			base = 100
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					has_trait = generous
+# 					has_trait = compassionate
+# 					has_trait = just
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			forgiving = medium_stress_impact_gain
-			compassionate = minor_stress_impact_gain
-			just = medium_stress_impact_gain
-		}
-	}
+# 		stress_impact = {
+# 			forgiving = medium_stress_impact_gain
+# 			compassionate = minor_stress_impact_gain
+# 			just = medium_stress_impact_gain
+# 		}
+# 	}
 	
-	option = { # Expose and throw them in jail
-		name = yearly.8400.b
+# 	option = { # Expose and throw them in jail
+# 		name = yearly.8400.b
 		
-		add_piety = major_piety_gain
+# 		add_piety = major_piety_gain
 		
-		scope:deviant_guest_secret = {
-			expose_secret = root
-		}
+# 		scope:deviant_guest_secret = {
+# 			expose_secret = root
+# 		}
 
-		rightfully_imprison_character_effect = {
-			TARGET = scope:deviant_guest
-			IMPRISONER = root
-		}
+# 		rightfully_imprison_character_effect = {
+# 			TARGET = scope:deviant_guest
+# 			IMPRISONER = root
+# 		}
 
-		ai_chance = {
-			base = 25
+# 		ai_chance = {
+# 			base = 25
 			
-			modifier = {
-				factor = 0
-				ai_zeal < 0
-			}
+# 			modifier = {
+# 				factor = 0
+# 				ai_zeal < 0
+# 			}
 			
-			modifier = {
-				factor = 0
-				has_trait = forgiving
-			}
+# 			modifier = {
+# 				factor = 0
+# 				has_trait = forgiving
+# 			}
 			
-			modifier = {
-				factor = 5
-				ai_zeal >= medium_positive_ai_value
-			}
-		}
+# 			modifier = {
+# 				factor = 5
+# 				ai_zeal >= medium_positive_ai_value
+# 			}
+# 		}
 
-		stress_impact = {
-			forgiving = major_stress_impact_gain
-			deviant = massive_stress_impact_gain
-		}
-	}
+# 		stress_impact = {
+# 			forgiving = major_stress_impact_gain
+# 			deviant = massive_stress_impact_gain
+# 		}
+# 	}
 	
-	option = { # Learn of the secret and let them stay
-		name = yearly.8400.c
+# 	option = { # Learn of the secret and let them stay
+# 		name = yearly.8400.c
 		
-		scope:deviant_guest_secret = {
-			reveal_to = root
-		}
+# 		scope:deviant_guest_secret = {
+# 			reveal_to = root
+# 		}
 		
-		scope:deviant_guest = {
-			add_opinion = {
-				modifier = kindness_opinion
-				target = root
-				opinion = 25
-			}
-		}
+# 		scope:deviant_guest = {
+# 			add_opinion = {
+# 				modifier = kindness_opinion
+# 				target = root
+# 				opinion = 25
+# 			}
+# 		}
 			
-		ai_chance = {
-			base = 100
-		}
+# 		ai_chance = {
+# 			base = 100
+# 		}
 
-		stress_impact = {
-			zealous = major_stress_impact_gain
-			just = medium_stress_impact_gain
-		}
-	}
+# 		stress_impact = {
+# 			zealous = major_stress_impact_gain
+# 			just = medium_stress_impact_gain
+# 		}
+# 	}
 	
-	option = { # Learn of the secret, and... join in on the fun
-		name = yearly.8400.d
+# 	option = { # Learn of the secret, and... join in on the fun
+# 		name = yearly.8400.d
 		
-		scope:deviant_guest_secret = {
-			reveal_to = root
-		}
+# 		scope:deviant_guest_secret = {
+# 			reveal_to = root
+# 		}
 		
-		give_deviant_secret_or_trait_effect = yes
+# 		give_deviant_secret_or_trait_effect = yes
 		
-		if = {
-			limit = {
-				stress > 0
-			}
-			add_stress = monumental_stress_loss
-		}
+# 		if = {
+# 			limit = {
+# 				stress > 0
+# 			}
+# 			add_stress = monumental_stress_loss
+# 		}
 		
-		if = {
-			limit = {
-				can_set_relation_friend_trigger = { CHARACTER = scope:deviant_guest }
-			}
-			set_relation_friend = { reason = friend_deviant_fun target = scope:deviant_guest }
-		}
+# 		if = {
+# 			limit = {
+# 				can_set_relation_friend_trigger = { CHARACTER = scope:deviant_guest }
+# 			}
+# 			set_relation_friend = { reason = friend_deviant_fun target = scope:deviant_guest }
+# 		}
 		
-		ai_chance = {
-			base = 5
-			modifier = {
-				add = 995
-				has_trait = lustful
-			}
-		}
+# 		ai_chance = {
+# 			base = 5
+# 			modifier = {
+# 				add = 995
+# 				has_trait = lustful
+# 			}
+# 		}
 
-		stress_impact = {
-			chaste = major_stress_impact_gain
-			temperate = major_stress_impact_gain
-		}
-	}
+# 		stress_impact = {
+# 			chaste = major_stress_impact_gain
+# 			temperate = major_stress_impact_gain
+# 		}
+# 	}
 	
-	after = {
-		scope:deviant_guest = {
-			if = {
-				limit = { has_character_flag = is_naked }
-				remove_character_flag = is_naked
-			}
-		}
-	}
-}
+# 	after = {
+# 		scope:deviant_guest = {
+# 			if = {
+# 				limit = { has_character_flag = is_naked }
+# 				remove_character_flag = is_naked
+# 			}
+# 		}
+# 	}
+# }
 
 # Become a Berserker
 # fp1_yearly.2600 = {
