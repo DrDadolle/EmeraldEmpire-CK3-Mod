@@ -42,7 +42,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - use "event invasion of vikings" for yobanjin
 - update common/scripted_effects/04_dlc_ep2_tournament_effects and remove ref from vanilla
 - restore court_events_general.txt from vanilla
-- add at least 1 adventures in game to avoid some errors on start
 - found Great Clan description decision
 	- missing description descision, issue with custom description
 - Update "Reclaim Yasuki Family lands" & "Reborn Snake" decision
@@ -50,9 +49,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- check yasuki crane culture (tribal)
 	- check chuda culture (tribal)
 - Why so much empty space in portrait debug mod ?
-- Create MaA for each great clan, (do the same for minor later)
-	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
-	- 00_men_at_arms_values to update too
+- Create MaA for each great clan
+	- MaA preferences by heritage => 04_ep2_maa_attributes to update
 	- add special icons/images for MaA !!!!!!!!!!!!!!!!!!!!! (crab done, rest to do)
 - Fix mercenary companies names / culture ?
 	- How to ?

@@ -173,7 +173,7 @@ emperor_feudal_male = {
 	gender = male
 	special = holder
 	tier = empire
-	priority = 101
+	priority = 301
 	governments = { feudal_government }
 }
 emperor_feudal_female = {
@@ -181,7 +181,7 @@ emperor_feudal_female = {
 	gender = female
 	special = holder
 	tier = empire
-	priority = 101
+	priority = 301
 	governments = { feudal_government }
 }
 empire_feudal = {

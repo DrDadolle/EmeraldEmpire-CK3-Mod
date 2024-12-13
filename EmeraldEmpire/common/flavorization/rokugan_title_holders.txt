@@ -130,7 +130,7 @@ rokugan_duke_tortoise_female {
 imperial_kingdom = {
 	type = title
 	tier = kingdom
-	priority = 100
+	priority = 95
 	titles = { k_imperial_families }
 }
 
