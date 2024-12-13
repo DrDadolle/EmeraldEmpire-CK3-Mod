@@ -428,10 +428,11 @@ has_same_fame_as_root_trigger = {
 			has_trait = deviant
 			root = { has_trait = deviant }
 		}
-		AND = {
-			has_trait = viking
-			root = { has_trait = viking }
-		}
+		#L5R Disabled
+		# AND = {
+		# 	has_trait = viking
+		# 	root = { has_trait = viking }
+		# }
 		AND = {
 			has_trait = adventurer
 			root = { has_trait = adventurer }

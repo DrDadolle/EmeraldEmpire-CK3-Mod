@@ -2384,10 +2384,11 @@ GetCourtPositionSubject = {
 		trigger = { has_court_position = lady_in_waiting_court_position }
 		localization_key = court_position_subject_etiquette
 	}
-	text = {
-		trigger = { has_court_position = chief_qadi_court_position }
-		localization_key = court_position_subject_statutes
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { has_court_position = chief_qadi_court_position }
+	# 	localization_key = court_position_subject_statutes
+	# }
 	text = {
 		trigger = { has_court_position = charioteer_court_position }
 		localization_key = court_position_subject_race_horses

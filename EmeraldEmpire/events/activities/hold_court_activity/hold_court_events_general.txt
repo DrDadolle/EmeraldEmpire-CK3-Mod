@@ -1299,10 +1299,10 @@ hold_court.3010 = {
 				CHAR = scope:unconventional_preacher_temp
 				COURT_POS = court_physician_court_position
 			}
-			can_appoint_char_to_court_position = {
-				CHAR = scope:unconventional_preacher_temp
-				COURT_POS = chief_qadi_court_position
-			} 
+			# can_appoint_char_to_court_position = {
+			# 	CHAR = scope:unconventional_preacher_temp
+			# 	COURT_POS = chief_qadi_court_position
+			# } 
 			can_appoint_char_to_court_position = {
 				CHAR = scope:unconventional_preacher_temp
 				COURT_POS = court_tutor_court_position
@@ -1449,10 +1449,11 @@ hold_court.3010 = {
 					CHAR = scope:unconventional_preacher
 					COURT_POS = court_physician_court_position
 				}
-				can_appoint_char_to_court_position = {
-					CHAR = scope:unconventional_preacher
-					COURT_POS = chief_qadi_court_position
-				}
+				#L5R Disabled
+				# can_appoint_char_to_court_position = {
+				# 	CHAR = scope:unconventional_preacher
+				# 	COURT_POS = chief_qadi_court_position
+				# }
 			}
 		}
 		name = hold_court.3010.a
@@ -1461,19 +1462,21 @@ hold_court.3010 = {
 			modifier = impious_opinion
 			opinion = -10
 		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		can_appoint_char_to_court_position = {
+		# 			CHAR = scope:unconventional_preacher
+		# 			COURT_POS = chief_qadi_court_position
+		# 		}
+		# 	}
+		# 	employ_character_as_position_in_current_scope_court_effect = {
+		# 		CHARACTER = scope:unconventional_preacher
+		# 		POSITION = chief_qadi
+		# 	}
+		# }
+		# else_
 		if = {
-			limit = {
-				can_appoint_char_to_court_position = {
-					CHAR = scope:unconventional_preacher
-					COURT_POS = chief_qadi_court_position
-				}
-			}
-			employ_character_as_position_in_current_scope_court_effect = {
-				CHARACTER = scope:unconventional_preacher
-				POSITION = chief_qadi
-			}
-		}
-		else_if = {
 			limit = {
 				can_appoint_char_to_court_position = {
 					CHAR = scope:unconventional_preacher

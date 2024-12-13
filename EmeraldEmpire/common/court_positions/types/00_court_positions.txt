@@ -813,27 +813,29 @@ charioteer_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary
-			if = {
-				limit = {
-					scope:liege = {
-						exists = dynasty
-						dynasty = { has_dynasty_perk = fp2_coterie_legacy_1 }
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		scope:liege = {
+			# 			exists = dynasty
+			# 			dynasty = { has_dynasty_perk = fp2_coterie_legacy_1 }
 
-						employs_court_position = charioteer_court_position
-						any_court_position_holder = {
-					        type = charioteer_court_position
-							exists = dynasty
-							house = prev.house
-						}
-					}
-				}
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
-			else_if = { # Halved via obligation hook
+			# 			employs_court_position = charioteer_court_position
+			# 			any_court_position_holder = {
+			# 		        type = charioteer_court_position
+			# 				exists = dynasty
+			# 				house = prev.house
+			# 			}
+			# 		}
+			# 	}
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
+			# else_
+			if = { # Halved via obligation hook
 				limit = {
 					court_position_obligation_hook_salary_trigger = {
 						POS = charioteer

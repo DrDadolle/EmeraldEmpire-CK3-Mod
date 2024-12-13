@@ -4368,24 +4368,26 @@ court.5060 = {
 					CHAR = scope:knight
 					COURT_POS = champion_court_position
 				}
-				can_appoint_char_to_court_position = {
-					CHAR = scope:knight
-					COURT_POS = akolouthos_court_position
-				}
+				#L5R Disabled
+				# can_appoint_char_to_court_position = {
+				# 	CHAR = scope:knight
+				# 	COURT_POS = akolouthos_court_position
+				# }
 			}
 		}
+		#L5R Disabled
 		# employ them as champion or bodyguard
-		name = {
-			trigger = { 
-				NOT = { 
-					can_appoint_char_to_court_position = {
-						CHAR = scope:knight
-						COURT_POS = akolouthos_court_position
-					}
-				}
-			}
-			text = court.5060.d.akolouthos
-		}
+		# name = {
+		# 	trigger = { 
+		# 		NOT = { 
+		# 			can_appoint_char_to_court_position = {
+		# 				CHAR = scope:knight
+		# 				COURT_POS = akolouthos_court_position
+		# 			}
+		# 		}
+		# 	}
+		# 	text = court.5060.d.akolouthos
+		# }
 		name = {
 			trigger = { 
 				can_appoint_char_to_court_position = {
@@ -4406,19 +4408,19 @@ court.5060 = {
 			}
 			text = court.5060.d.bodyguard
 		}
-		
-		if = {
-			limit = {
-				can_appoint_char_to_court_position = {
-					CHAR = scope:knight 
-					COURT_POS = akolouthos_court_position
-				}
-			}
-			employ_character_as_position_in_current_scope_court_effect = { 
-				CHARACTER = scope:knight 
-				POSITION = akolouthos
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		can_appoint_char_to_court_position = {
+		# 			CHAR = scope:knight 
+		# 			COURT_POS = akolouthos_court_position
+		# 		}
+		# 	}
+		# 	employ_character_as_position_in_current_scope_court_effect = { 
+		# 		CHARACTER = scope:knight 
+		# 		POSITION = akolouthos
+		# 	}
+		# }
 		else_if = {
 			limit = {
 				can_appoint_char_to_court_position = {
@@ -8618,7 +8620,8 @@ court.8010 = {
     				scope:underequipped = {
     					OR = {
     						has_court_position = bodyguard_court_position
-    						has_court_position = akolouthos_court_position
+							#L5R Disabled
+    						# has_court_position = akolouthos_court_position
     					}
     				}
     	        }
@@ -8656,7 +8659,8 @@ court.8010 = {
     				scope:underequipped = {
     					OR = {
     						has_court_position = bodyguard_court_position
-    						has_court_position = akolouthos_court_position
+							#L5R Disabled
+    						# has_court_position = akolouthos_court_position
     						is_knight_of = root
     					}
     				}
@@ -8702,12 +8706,13 @@ court.8010 = {
 				has_court_event_flag = no
 				location = root.location
 			}
-			any_court_position_holder = {
-				type = akolouthos_court_position
-				court_8010_underequipped_trigger = yes
-				has_court_event_flag = no
-				location = root.location
-			}
+			#L5R Disabled
+			# any_court_position_holder = {
+			# 	type = akolouthos_court_position
+			# 	court_8010_underequipped_trigger = yes
+			# 	has_court_event_flag = no
+			# 	location = root.location
+			# }
 			any_knight = {
 				court_8010_underequipped_trigger = yes
 				has_court_event_flag = no
@@ -8763,24 +8768,25 @@ court.8010 = {
 						court_event_character_flag_effect = yes
 					}
 		        }
-		        8 = {
-					trigger = {
-        				any_court_position_holder = {
-							type = akolouthos_court_position
-							court_8010_underequipped_trigger = yes
-							location = root.location
-						}
-        			}
-					random_court_position_holder = {
-						type = akolouthos_court_position
-						limit = { 
-							court_8010_underequipped_trigger = yes
-							location = root.location
-						}
-						save_scope_as = underequipped
-						court_event_character_flag_effect = yes
-					}
-		        }
+				#L5R Disabled
+		        # 8 = {
+				# 	trigger = {
+        		# 		any_court_position_holder = {
+				# 			type = akolouthos_court_position
+				# 			court_8010_underequipped_trigger = yes
+				# 			location = root.location
+				# 		}
+        		# 	}
+				# 	random_court_position_holder = {
+				# 		type = akolouthos_court_position
+				# 		limit = { 
+				# 			court_8010_underequipped_trigger = yes
+				# 			location = root.location
+				# 		}
+				# 		save_scope_as = underequipped
+				# 		court_event_character_flag_effect = yes
+				# 	}
+		        # }
 		        1 = {
 					trigger = {
         				any_knight = {
@@ -11645,14 +11651,15 @@ court.8160 = {
         			}
         			NOT = { employs_court_position = champion_court_position }
         		}
-        		AND = {
-        			any_court_position_holder = {
-        				type = bodyguard_court_position
-        				count < 2
-        			}
-        			NOT = { employs_court_position = akolouthos_court_position }
-        			can_employ_court_position_type = akolouthos_court_position
-        		}
+				#L5R Disabled
+        		# AND = {
+        		# 	any_court_position_holder = {
+        		# 		type = bodyguard_court_position
+        		# 		count < 2
+        		# 	}
+        		# 	NOT = { employs_court_position = akolouthos_court_position }
+        		# 	can_employ_court_position_type = akolouthos_court_position
+        		# }
         	}
         }
         court_position_grant_effect = { POS = bodyguard CANDIDATE = scope:knight_1 EMPLOYER = root }
@@ -11671,9 +11678,10 @@ court.8160 = {
         	}
         	court_position_grant_effect = { POS = champion CANDIDATE = scope:knight_2 EMPLOYER = root }
         }
-        else = {
-       	 	court_position_grant_effect = { POS = akolouthos CANDIDATE = scope:knight_2 EMPLOYER = root }
-        }
+		#L5R Disabled
+        # else = {
+       	#  	court_position_grant_effect = { POS = akolouthos CANDIDATE = scope:knight_2 EMPLOYER = root }
+        # }
         custom_tooltip = court.8160.a.tt
         scope:knight_1 = { add_character_flag = competing_knight_position }
         scope:knight_2 = { add_character_flag = competing_knight_position }

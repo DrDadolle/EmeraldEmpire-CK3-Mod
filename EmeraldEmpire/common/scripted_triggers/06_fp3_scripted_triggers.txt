@@ -1,7 +1,7 @@
 ﻿fp3_should_use_iranian_graphics_trigger = {
 	#L5R Disabled
 	always = no
-	culture = { has_building_gfx = iranian_building_gfx }
+	# culture = { has_building_gfx = iranian_building_gfx }
 }
 
 eligible_for_fp3_khvarenah_legacy_trigger = {

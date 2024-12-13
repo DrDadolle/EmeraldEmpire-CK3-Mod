@@ -990,32 +990,33 @@ on_travel_plan_start = {
 					add_companion = scope:bodyguard
 				}
 			}
-			if = {
-				limit = {
-					employs_court_position = akolouthos_court_position
-					current_travel_plan = {
-						any_entourage_character = {
-							NOT = { has_court_position = akolouthos_court_position }
-						}
-					}
-					any_court_position_holder = {
-						type = akolouthos_court_position
-						is_available = yes
-						is_travel_entourage_character = no
-					}
-				}
-				random_court_position_holder = {
-					type = akolouthos_court_position
-					limit = {
-						is_available = yes
-						is_travel_entourage_character = no
-					}
-					save_scope_as = akolouthos
-				}
-				current_travel_plan = {
-					add_companion = scope:akolouthos
-				}
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		employs_court_position = akolouthos_court_position
+			# 		current_travel_plan = {
+			# 			any_entourage_character = {
+			# 				NOT = { has_court_position = akolouthos_court_position }
+			# 			}
+			# 		}
+			# 		any_court_position_holder = {
+			# 			type = akolouthos_court_position
+			# 			is_available = yes
+			# 			is_travel_entourage_character = no
+			# 		}
+			# 	}
+			# 	random_court_position_holder = {
+			# 		type = akolouthos_court_position
+			# 		limit = {
+			# 			is_available = yes
+			# 			is_travel_entourage_character = no
+			# 		}
+			# 		save_scope_as = akolouthos
+			# 	}
+			# 	current_travel_plan = {
+			# 		add_companion = scope:akolouthos
+			# 	}
+			# }
 			# Achievements.
 			## I'm in my Element(s)
 			if = {

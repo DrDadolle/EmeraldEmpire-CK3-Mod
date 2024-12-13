@@ -980,20 +980,21 @@ court_position_generator_effect = {
 				EMPLOYER = $EMPLOYER$
 			}
 		}
-		2 = { # CHIEF QADI
-			trigger = {
-				court_position_generator_pickable_trigger = { POS = chief_qadi EMPLOYER = $EMPLOYER$ }
-			}
-			court_position_generator_shared_modifier = {
-				POS = chief_qadi
-				EMPLOYER = $EMPLOYER$
-			}
-			court_position_generator_variable_effect = {
-				VAR = $VAR$
-				POS = chief_qadi
-				EMPLOYER = $EMPLOYER$
-			}
-		}
+		#L5R Disabled
+		# 2 = { # CHIEF QADI
+		# 	trigger = {
+		# 		court_position_generator_pickable_trigger = { POS = chief_qadi EMPLOYER = $EMPLOYER$ }
+		# 	}
+		# 	court_position_generator_shared_modifier = {
+		# 		POS = chief_qadi
+		# 		EMPLOYER = $EMPLOYER$
+		# 	}
+		# 	court_position_generator_variable_effect = {
+		# 		VAR = $VAR$
+		# 		POS = chief_qadi
+		# 		EMPLOYER = $EMPLOYER$
+		# 	}
+		# }
 		#L5R Disabled
 		# 2 = { # GARUDA
 		# 	trigger = {

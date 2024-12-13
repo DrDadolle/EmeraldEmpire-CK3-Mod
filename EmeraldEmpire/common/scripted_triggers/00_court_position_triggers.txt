@@ -580,7 +580,8 @@ master_assassin_validity_trigger = {
 		has_doctrine = tenet_fp3_fedayeen
 		NOR = {
 			has_doctrine = tenet_pacifism
-			has_doctrine = tenet_dharmic_pacifism 
+			#L5R Disabled
+			# has_doctrine = tenet_dharmic_pacifism 
 		}
 	}
 	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $EMPLOYER$ }
@@ -748,18 +749,21 @@ camp_officer_generator_pickable_trigger = {
 
 # Set to 0 with Dynasty Perk Inner Circle
 court_position_inner_circle_salary_trigger = {
-	trigger_if = {
-		limit = { exists = scope:liege }
-		scope:liege ?= {
-			dynasty ?= { has_dynasty_perk = fp2_coterie_legacy_1 }
-			employs_court_position = $POS$_court_position
-			any_court_position_holder = {
-		        type = $POS$_court_position
-				house ?= scope:liege.house
-			}
-		}
-	}
-	trigger_else = { always = no }
+	#L5R Disabled
+	# trigger_if = {
+	# 	limit = { exists = scope:liege }
+	# 	scope:liege ?= {
+	# 		dynasty ?= { has_dynasty_perk = fp2_coterie_legacy_1 }
+	# 		employs_court_position = $POS$_court_position
+	# 		any_court_position_holder = {
+	# 	        type = $POS$_court_position
+	# 			house ?= scope:liege.house
+	# 		}
+	# 	}
+	# }
+	# trigger_else = { 
+		always = no 
+	# }
 }
 
 # Halved via obligation hook
