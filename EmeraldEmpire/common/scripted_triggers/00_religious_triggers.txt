@@ -819,7 +819,6 @@ is_preferred_heresy = {
 		ORIGIN_FAITH = $ORIGIN_FAITH$
 		HERETICAL_FAITH = $HERETICAL_FAITH$
 	}
-
 	#L5R Disabled
 	# OR = {
 	# 	#If we're Chistian, pick a heretical faiths which is in the same regional group as our origin faith (i.e., Lollards for Catholics, Iconoclasts for Orthodox, etc.)
@@ -875,6 +874,23 @@ is_valid_heresy = {
 	}
 	#Depending on the origin faith's religion/religion group, there may have additional requirements for a heresy to be considered valid.
 	OR = {
+		#L5R Added
+		#For Rokugani Faiths, the origin and heretical faiths must not both be from the Imperial Cult.
+		AND = {
+			OR = {
+				religion_tag = fortunism_religion
+				religion_tag = shinseism_religion
+				religion_tag = ancestors_religion
+			}
+			NAND = {
+				$ORIGIN_FAITH$ = {
+					has_doctrine = special_doctrine_imperial_cult
+				}
+				$HERETICAL_FAITH$ = {
+					has_doctrine = special_doctrine_imperial_cult
+				}
+			}
+		}
 		#L5R Disabled
 		#For Christian Faiths, the origin and heretical faiths must not both be Ecumenical (excepting the faiths which aren't technically ecumenical).
 		# AND = {

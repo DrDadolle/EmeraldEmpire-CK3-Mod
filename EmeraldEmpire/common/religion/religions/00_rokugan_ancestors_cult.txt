@@ -253,6 +253,21 @@
 			doctrine = tenet_reincarnation
 
 		}
+		tenth_kami = {
+			color = { 0.45 0.66 0.86 } 
+			icon = custom_faith_1
+
+			#No religious head
+
+			holy_site=tomb_of_ryoshun # TODO to change
+
+			doctrine = tenet_ancestor_worship
+			doctrine = tenet_reincarnation
+			doctrine = tenet_communal_identity
+
+
+			doctrine = doctrine_clerical_succession_temporal_appointment
+		}
 
 	}
 }

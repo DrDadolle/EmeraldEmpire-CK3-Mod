@@ -29,15 +29,16 @@ recruit_isawa_shindoshi = {
 	}
 
 	is_valid = {
-		NOR = {
+		NOT = {
 			is_shindoshi = yes
 			#Remove it as it is ugly on UI and buggy for the emperor
+			# Maybe later I can rework this
 			# any_courtier_or_guest = {
 			# 	is_shindoshi = yes
 			# }
-			any_vassal = {
-				is_shindoshi = yes
-			}
+			# any_vassal = {
+			# 	is_shindoshi = yes
+			# }
 		}
 
 		# need good opinion of phoenix clan

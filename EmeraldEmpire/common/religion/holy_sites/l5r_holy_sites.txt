@@ -271,6 +271,22 @@ togashis_seat = {
 
 
 #################
+# Tenth Kami
+#################
+tomb_of_ryoshun = {
+
+	county = c_ichiro_province
+	barony = b_ryoshun_seido
+
+	character_modifier = {
+		name = tomb_of_ryoshun_effect_name
+		martial = 1
+		monthly_piety_gain_mult = 0.1
+	}
+}
+
+
+#################
 # Lords of Death
 #################
 

@@ -636,7 +636,8 @@ faith_heresy_events_pulse = {
 			}
 		}
 		100 = heresy.0001
-		100 = heresy.0005
+		#L5R Disabled
+		# 100 = heresy.0005
 	}
 }
 

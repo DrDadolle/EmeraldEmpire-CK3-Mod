@@ -134,21 +134,6 @@ heresy.0001 = {
 					}
 					add_to_list = potential_heresies
 				}
-				if = {
-					# L5R Added
-					# Specify heresies for rokugani faiths
-					limit = {
-						is_in_family = rf_rokugan
-					}
-					if = {
-						limit = {
-							this = religion:shinseism_religion
-						}
-						faith:perfect_earth_sect = {
-							add_to_list = potential_heresies
-						}
-					}
-				}
 				#L5R Disabled
 				# 	}
 				# 	else_if = {

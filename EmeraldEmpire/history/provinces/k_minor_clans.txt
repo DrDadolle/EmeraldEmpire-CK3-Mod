@@ -217,7 +217,7 @@
 ###c_ichiro_province
 334 = {		#b_shiro_ichiro
 	culture = ichiro
-	religion = cult_ancestors
+	religion = tenth_kami
 	holding = castle_holding
 
 	1123.1.1={
@@ -228,13 +228,13 @@
 }
 335 = {		#b_ryoshun_seido
 	culture = ichiro
-	religion = cult_ancestors
+	religion = tenth_kami
 	holding = church_holding
 
 }
 336 = {		#b_teeth_keep
 	culture = ichiro
-	religion = cult_ancestors
+	religion = tenth_kami
 	holding = castle_holding
 
 	1123.1.1={
