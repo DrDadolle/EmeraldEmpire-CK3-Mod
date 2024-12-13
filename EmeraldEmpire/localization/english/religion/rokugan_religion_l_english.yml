@@ -43,12 +43,12 @@
  # Tenets
  tenet_rokugani_syncretism_name:0 "Rokugani Syncretism"
  tenet_rokugani_syncretism_desc:0 "There is something to be learned from the way the different rokugani religions tolerate each other. They may not follow the true faith, but that does not make them evil."
- doctrine_parameter_hostility_override_doctrine_rejection_of_the_kami:1 "Rokugani [faiths|E] with the tenet $tenet_rejection_of_the_kami_name$ are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_tenet_rejection_of_the_kami:1 "Rokugani [faiths|E] with the tenet $tenet_rejection_of_the_kami_name$ are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_special_doctrine_is_rokugani_faith:1 "Rokugani [faiths|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  
  tenet_rejection_of_the_kami_name:0 "Rejection of the Kami"
  tenet_rejection_of_the_kami_desc:0 "Workshiping the Fortunes or the Ancestors are not the way to salvation. Only workshiping the teachings of the Little Teacher are."
- doctrine_parameter_doctrine_rejection_of_the_kami_desc:0 ""
+ doctrine_parameter_tenet_rejection_of_the_kami_desc:0 ""
 
  tenet_shadowlands_syncretism_name:0 "Veneration of Jigoku"
  tenet_shadowlands_syncretism_desc:0 "There is a lot of way to venerate the evil power of [jigoku|E]. Even faiths outside of [rokugan|E] could venerate the twisted spirits of Jigoku."

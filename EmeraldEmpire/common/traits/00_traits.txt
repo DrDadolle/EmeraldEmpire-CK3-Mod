@@ -13479,112 +13479,112 @@ governor = {
 # 	name = trait_violet_poet
 # 	desc = trait_violet_poet_desc
 # }
-#L5R Disabled
+
 # The Knight of the Swan
-# knight_errant = {
-# 	category = fame
-# 	icon = {
-# 		first_valid = {
-# 			triggered_desc = { # If no character exists
-# 				trigger = {
-# 					NOT = { exists = this }
-# 				}
-# 				desc = knight_of_the_swan.dds
-# 			}
-# 			#L5R Disabled
-# 			# triggered_desc = {
-# 			# 	trigger = {
-# 			# 		location = {
-# 			# 			geographical_region = world_europe
-# 			# 		}
-# 			# 	}
-# 			# 	desc = knight_of_the_swan.dds
-# 			# }
-# 			# triggered_desc = {
-# 			# 	trigger = {
-# 			# 		location = {
-# 			# 			OR = {
-# 			# 				geographical_region = world_india
-# 			# 				geographical_region = world_burma
-# 			# 				geographical_region = ghw_region_caucasus
-# 			# 			}
-# 			# 		}
-# 			# 	}
-# 			# 	desc = knight_of_the_tiger.dds
-# 			# }
-# 			# triggered_desc = {
-# 			# 	trigger = {
-# 			# 		location = {
-# 			# 			geographical_region = world_africa
-# 			# 		}
-# 			# 	}
-# 			# 	desc = knight_of_the_lion.dds
-# 			# }
-# 			desc = knight_of_the_swan.dds
-# 		}
-# 	}
-# 	shown_in_ruler_designer = yes
+knight_errant = {
+	category = fame
+	icon = {
+		first_valid = {
+			triggered_desc = { # If no character exists
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = knight_of_the_swan.dds
+			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		location = {
+			# 			geographical_region = world_europe
+			# 		}
+			# 	}
+			# 	desc = knight_of_the_swan.dds
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		location = {
+			# 			OR = {
+			# 				geographical_region = world_india
+			# 				geographical_region = world_burma
+			# 				geographical_region = ghw_region_caucasus
+			# 			}
+			# 		}
+			# 	}
+			# 	desc = knight_of_the_tiger.dds
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		location = {
+			# 			geographical_region = world_africa
+			# 		}
+			# 	}
+			# 	desc = knight_of_the_lion.dds
+			# }
+			desc = knight_of_the_swan.dds
+		}
+	}
+	shown_in_ruler_designer = yes
 
-# 	ruler_designer_cost = 75
+	ruler_designer_cost = 75
 
-# 	knight_limit = 2
-# 	knight_effectiveness_per_prowess = 0.01
-# 	glory_hound_opinion = 15
+	knight_limit = 2
+	knight_effectiveness_per_prowess = 0.01
+	glory_hound_opinion = 15
 
-# 	culture_modifier = {
-# 		parameter = knight_errant_trait_bonuses
-# 		monthly_prestige_gain_mult = 0.02
-# 	}
+	culture_modifier = {
+		parameter = knight_errant_trait_bonuses
+		monthly_prestige_gain_mult = 0.02
+	}
 	
-# 	track = {
-# 		50 = { # Defender
-# 			prowess_per_prestige_level = 1
-# 			knight_limit = 1
-# 			men_at_arms_limit = 1
-# 			culture_modifier = {
-# 				parameter = knight_errant_trait_bonuses
-# 				tourney_participant_xp_gain_mult = 0.15
-# 			}
-# 		}
-# 		100 = { # Rightdoer
-# 			prowess_per_prestige_level = 2
-# 			knight_limit = 2
-# 			men_at_arms_limit = 2
-# 			culture_modifier = {
-# 				parameter = knight_errant_trait_bonuses
-# 				tourney_participant_xp_gain_mult = 0.25
-# 			}
-# 		}
-# 	}
+	track = {
+		50 = { # Defender
+			prowess_per_prestige_level = 1
+			knight_limit = 1
+			men_at_arms_limit = 1
+			culture_modifier = {
+				parameter = knight_errant_trait_bonuses
+				tourney_participant_xp_gain_mult = 0.15
+			}
+		}
+		100 = { # Rightdoer
+			prowess_per_prestige_level = 2
+			knight_limit = 2
+			men_at_arms_limit = 2
+			culture_modifier = {
+				parameter = knight_errant_trait_bonuses
+				tourney_participant_xp_gain_mult = 0.25
+			}
+		}
+	}
 
-# 	# AI Values
-# 	ai_energy = 10
-# 	ai_sociability = 10
+	# AI Values
+	ai_energy = 10
+	ai_sociability = 10
 
-# 	# Loc
-# 	name = {
-# 		first_valid = {
-# 			triggered_desc = {
-# 				trigger = {
-# 					NOT = { exists = this }
-# 				}
-# 				desc = trait_knight_errant
-# 			}
-# 			desc = trait_knight_errant_character
-# 		}
-# 	}
-# 	desc = {
-# 		first_valid = {
-# 			triggered_desc = {
-# 				trigger = {
-# 					NOT = { exists = this }
-# 				}
-# 				desc = trait_knight_errant_desc
-# 			}
-# 			desc = trait_knight_errant_character_desc
-# 		}
-# 	}
-# }
+	# Loc
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_knight_errant
+			}
+			desc = trait_knight_errant_character
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_knight_errant_desc
+			}
+			desc = trait_knight_errant_character_desc
+		}
+	}
+}
 
 #L5R Disabled
 # the_wake = {
