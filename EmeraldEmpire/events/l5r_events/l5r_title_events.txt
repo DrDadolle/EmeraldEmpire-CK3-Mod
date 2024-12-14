@@ -8,6 +8,8 @@
 # by  Leskinen          #
 # 0001-0010				#
 #########################
+#L5R TODO later : 
+# Add change of vassal using change_liege & maybe any_dejure_vassal_title_holder ?
 scripted_effect redistribute_from_the_top_title_owned_valid_dynasty_option = {
 	#To Avoid Baronny stuff
 	if = {
