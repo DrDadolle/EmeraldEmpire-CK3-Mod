@@ -567,6 +567,7 @@
 		parameters = {
 			mendicant_preachers_conversion_active = yes
 			pilgrimage_decision_active = yes
+			unlock_voluntary_laampdom_faith = yes
 		}
 		traits = {
 			virtues = { temperate }
@@ -855,6 +856,7 @@
 
 		parameters = {
 			vows_of_poverty_active = yes
+			unlock_voluntary_laampdom_faith = yes
 		}
 
 		traits = {
@@ -1605,6 +1607,7 @@
 
 		parameters = {
 			meditation_mechanics_active = yes
+			unlock_voluntary_laampdom_faith = yes
 		}
 
 		#name = { #FP3 - Removed and saved for posterity. Zurvanism would fit a future hypotetical "Fatalism" tenet, but Asceticism isn't a good fit, per beta input. Ola's note. 
@@ -3006,6 +3009,7 @@
 			master_assassin_court_position_unlocked = yes 
 			death_is_glory = yes
 			sanctioned_assassinations = yes 
+			unlock_voluntary_laampdom_faith = yes
 		}
 
 		character_modifier = {
