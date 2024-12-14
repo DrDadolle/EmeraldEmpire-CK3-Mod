@@ -209,10 +209,11 @@ idle = {
 			}
 			weight = {
 				base = 0
-				modifier = {
-					add = 5000
-					this = character:83355
-				}
+				#L5R Disabled
+				# modifier = {
+				# 	add = 5000
+				# 	this = character:83355
+				# }
 			}
 		}
 		
@@ -220,10 +221,11 @@ idle = {
 			animation = { head = "council_marshal" torso = "council_marshal" }
 			weight = {
 				base = 0
-				modifier = {
-					add = 5000
-					this = character:1128
-				}
+				#L5R Disabled
+				# modifier = {
+				# 	add = 5000
+				# 	this = character:1128
+				# }
 			}
 			portrait_modifier_pack = one_handed_sword
 		}
@@ -239,10 +241,11 @@ idle = {
 			}
 			weight = {
 				base = 0
-				modifier = {
-					add = 5000
-					this = character:3924
-				}
+				#L5R Disabled
+				# modifier = {
+				# 	add = 5000
+				# 	this = character:3924
+				# }
 			}
 		}
 		
@@ -284,7 +287,8 @@ idle = {
 					add = 5000
 					is_ruler = yes
 					age >= 10
-					NOT = { this = character:41702 }
+					#L5R Disabled
+					# NOT = { this = character:41702 }
 					NOR = {
 						has_trait = blind
 						has_trait = maimed
@@ -1400,10 +1404,11 @@ idle = {
 					NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
 					NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
 				}
-				modifier = {
-					add = -100
-					this = character:7757
-				}
+				#L5R Disabled
+				# modifier = {
+				# 	add = -100
+				# 	this = character:7757
+				# }
 			}
 			portrait_modifier = {
 				animations = AI_rational_decal
@@ -1947,13 +1952,14 @@ idle = {
 					NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
 					NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }		 
 				}
-				modifier = {
-					add = 5000
-					OR = {
-						this = character:7757
-						this = character:41702
-					}
-				}
+				#L5R Disabled
+				# modifier = {
+				# 	add = 5000
+				# 	OR = {
+				# 		this = character:7757
+				# 		this = character:41702
+				# 	}
+				# }
 			}
 			portrait_modifier = {
 				animations = AI_zealous_decal				# One or multiple portrait modifier overrides

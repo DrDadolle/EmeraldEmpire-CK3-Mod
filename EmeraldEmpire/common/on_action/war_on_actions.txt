@@ -1007,9 +1007,10 @@ on_war_won_attacker = { # As in, won BY attacker. Only one of the two on_actions
 					scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
 				}
 			}
+			#L5R Disabled
 			# During the Persian Struggle, a supporter wins any war in the region.
-			fp3_struggle_apply_supporter_detractor_war_won_catalysts_effect = yes
-			fp3_struggle_apply_catalyst_interloper_uninvolved_gain_struggle_titles = yes
+			# fp3_struggle_apply_supporter_detractor_war_won_catalysts_effect = yes
+			# fp3_struggle_apply_catalyst_interloper_uninvolved_gain_struggle_titles = yes
 		}	
 		
 		# Memories
@@ -1322,23 +1323,24 @@ on_war_won_attacker = { # As in, won BY attacker. Only one of the two on_actions
 			}
 		}
 		
-		if = {
-			limit = {
-				scope:attacker = {
-					is_ai = no 
-					this = character:223523
-				}
-				scope:defender = {
-					this = character:226000
-				}
-			}
-			scope:attacker = {
-				add_achievement_global_variable_effect = {
-					VARIABLE = finished_kingdom_of_heaven_achievement
-					VALUE = yes
-				}
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		scope:attacker = {
+		# 			is_ai = no 
+		# 			this = character:223523
+		# 		}
+		# 		scope:defender = {
+		# 			this = character:226000
+		# 		}
+		# 	}
+		# 	scope:attacker = {
+		# 		add_achievement_global_variable_effect = {
+		# 			VARIABLE = finished_kingdom_of_heaven_achievement
+		# 			VALUE = yes
+		# 		}
+		# 	}
+		# }
 		#allies befriending the war leader if they contributed, moved from join_war_interaction on_accept
 		allies_progress_towards_friendship_effect = yes
 	}
@@ -1655,23 +1657,24 @@ on_war_won_defender = {
 			}
 		}
 		
-		if = {
-			limit = {
-				scope:defender = {
-					is_ai = no 
-					this = character:223523
-				}
-				scope:attacker = {
-					this = character:226000
-				}
-			}
-			scope:defender = {
-				add_achievement_global_variable_effect = {
-					VARIABLE = finished_kingdom_of_heaven_achievement
-					VALUE = yes
-				}
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			is_ai = no 
+		# 			this = character:223523
+		# 		}
+		# 		scope:attacker = {
+		# 			this = character:226000
+		# 		}
+		# 	}
+		# 	scope:defender = {
+		# 		add_achievement_global_variable_effect = {
+		# 			VARIABLE = finished_kingdom_of_heaven_achievement
+		# 			VALUE = yes
+		# 		}
+		# 	}
+		# }
 		#allies befriending the war leader if they contributed, moved from join_war_interaction on_accept
 		allies_progress_towards_friendship_effect = yes
 	}
@@ -1691,44 +1694,45 @@ on_war_white_peace = {
 			}
 			fp2_contract_assistance_war_pay_effect = yes # Pay out Contract Assistance money
 
+			#L5R Disabled
 			# FP3 Struggle
-			if = {
-				limit = {
-					scope:war = {
-						NOT = { has_variable = used_for_struggle_catalyst_on_war_ended }
-					}
-					fp3_struggle_involves_one_supporter_and_one_detractor = {
-						FIRST = scope:attacker
-						SECOND = scope:defender
-					}
-					scope:attacker = {
-						any_character_struggle = {
-							involvement = involved
-							activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
-								CATALYST = catalyst_war_ends_in_white_peace_between_supporter_detractor
-								CHAR = scope:defender
-							}
-						}
-					}
-				}
-				scope:attacker = {
-					every_character_struggle = {
-						involvement = involved
-						limit = {
-							activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
-								CATALYST = catalyst_war_ends_in_white_peace_between_supporter_detractor
-								CHAR = scope:defender
-							}
-						}
-						activate_struggle_catalyst = {
-							catalyst = catalyst_war_ends_in_white_peace_between_supporter_detractor
-							character = scope:attacker
-						}
-						scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
-						log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_war_ends_in_white_peace_between_supporter_detractor }
-					}
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		scope:war = {
+			# 			NOT = { has_variable = used_for_struggle_catalyst_on_war_ended }
+			# 		}
+			# 		fp3_struggle_involves_one_supporter_and_one_detractor = {
+			# 			FIRST = scope:attacker
+			# 			SECOND = scope:defender
+			# 		}
+			# 		scope:attacker = {
+			# 			any_character_struggle = {
+			# 				involvement = involved
+			# 				activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+			# 					CATALYST = catalyst_war_ends_in_white_peace_between_supporter_detractor
+			# 					CHAR = scope:defender
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# 	scope:attacker = {
+			# 		every_character_struggle = {
+			# 			involvement = involved
+			# 			limit = {
+			# 				activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+			# 					CATALYST = catalyst_war_ends_in_white_peace_between_supporter_detractor
+			# 					CHAR = scope:defender
+			# 				}
+			# 			}
+			# 			activate_struggle_catalyst = {
+			# 				catalyst = catalyst_war_ends_in_white_peace_between_supporter_detractor
+			# 				character = scope:attacker
+			# 			}
+			# 			scope:war = { set_variable = used_for_struggle_catalyst_on_war_ended }
+			# 			log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_war_ends_in_white_peace_between_supporter_detractor }
+			# 		}
+			# 	}
+			# }
 		}
 		scope:attacker = {
 			create_character_memory = {
