@@ -189,12 +189,13 @@ fp2_yearly_events = {
 	}
 	
 	effect = {
-		root = {
-			add_character_flag = {
-				flag = recently_got_fp2_event
-				days = 1095 # 3 years
-			}
-		}
+		#L5R Disabled
+		# root = {
+		# 	add_character_flag = {
+		# 		flag = recently_got_fp2_event
+		# 		days = 1095 # 3 years
+		# 	}
+		# }
 	}
 }
 
@@ -456,11 +457,12 @@ fp3_yearly_events = {
 	}
 
 	effect = {
-		root = {
-			add_character_flag = {
-				flag = recently_got_fp3_event
-				days = 1095
-			}
-		}
+		#L5R Disabled
+		# root = {
+		# 	add_character_flag = {
+		# 		flag = recently_got_fp3_event
+		# 		days = 1095
+		# 	}
+		# }
 	}
 }

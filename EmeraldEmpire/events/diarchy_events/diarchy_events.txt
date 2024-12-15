@@ -130,12 +130,13 @@ diarchy.0012 = {
 
 	immediate = {
 		start_diarchy = regency
+		#L5R Disabled
 		# Historic setup stuff.
 		## Fatimids start basically completely screwed.
-		if = {
-			limit = { this = character:3096 }
-			set_diarchy_swing = 100
-		}
+		# if = {
+		# 	limit = { this = character:3096 }
+		# 	set_diarchy_swing = 100
+		# }
 	}
 }
 

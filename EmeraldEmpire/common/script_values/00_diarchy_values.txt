@@ -993,10 +993,11 @@ regent_loyal_after_death_hook_duration_years_value = {
 	subtract = root.primary_heir.age
 }
 
-historic_regent_loyal_after_death_hook_duration_years_char_214_value = {
-	value = 21
-	subtract = character:214.age
-}
+#L5R Disabled
+# historic_regent_loyal_after_death_hook_duration_years_char_214_value = {
+# 	value = 21
+# 	subtract = character:214.age
+# }
 
 ##################################################
 # Diarchy Succession Candidate Values

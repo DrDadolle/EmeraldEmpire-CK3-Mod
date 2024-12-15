@@ -1297,8 +1297,9 @@ random_yearly_playable_pulse = {
 		}
 		6 = on_yearly_events
 		5 = fp1_yearly_events
-		4 = fp2_yearly_events
-		4 = fp3_yearly_events
+		#L5R Disabled
+		# 4 = fp2_yearly_events
+		# 4 = fp3_yearly_events
 		2 = bp1_yearly_events
 		6 = ep3_yearly_events_byzantium
 		6 = ep3_yearly_events_admin
