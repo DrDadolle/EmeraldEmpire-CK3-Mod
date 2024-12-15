@@ -9733,244 +9733,244 @@ fp1_yearly.0581 = {
 # by Ewan Cowhig Croft
 # 0591 - 0600
 ##################################################
+#L5R Disabled
+# scripted_trigger fp1_0591_secondary_county_trigger = {
+# 	holder = root
+# 	culture = { has_innovation = innovation_all_things }
+# }
+#L5R Disabled
+# scripted_trigger fp1_0591_fighting_counties_at_thing_trigger = {
+# 	tier = tier_county
+# 	culture = { has_innovation = innovation_all_things }
+# 	any_neighboring_county = { fp1_0591_secondary_county_trigger = yes }
+# }
+#L5R Disabled
+# #	One of your counties is engaged in an argument with another.
+# fp1_yearly.0591 = {
+# 	type = character_event
+# 	title = fp1_yearly.0591.t
+# 	desc = {
+# 		desc = fp1_yearly.0591.desc
+# 		random_valid = {
+# 			desc = fp1_yearly.0591.desc.border_dispute		#
+# 			desc = fp1_yearly.0591.desc.stolen_flocks		#
+# 			desc = fp1_yearly.0591.desc.kidnapped_child		#
+# 			desc = fp1_yearly.0591.desc.drunken_arson		#
+# 			desc = fp1_yearly.0591.desc.lost_dog			#
+# 			desc = fp1_yearly.0591.desc.disrupted_wedding
+# 			desc = fp1_yearly.0591.desc.suspicious_will		#
+# 			desc = fp1_yearly.0591.desc.sheltered_criminal	#
+# 			desc = fp1_yearly.0591.desc.bad_luck			#
+# 			desc = fp1_yearly.0591.desc.fly_tipping			#
+# 		}
+# 	}
+# 	theme = realm
+# 	left_portrait = {
+# 		character = root
+# 		animation = disgust
+# 	}
+# 	override_background = { reference = fp1_runestone_circle }
 
-scripted_trigger fp1_0591_secondary_county_trigger = {
-	holder = root
-	culture = { has_innovation = innovation_all_things }
-}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0591 }
+# 		is_landed = yes
+# 		# Filter to flavour-appropriate characters.
+# 		culture = { has_innovation = innovation_all_things }
+# 		# Ensure you have at least two counties that can fight with each other.
+# 		any_held_title = { fp1_0591_fighting_counties_at_thing_trigger = yes }
+# 	}
 
-scripted_trigger fp1_0591_fighting_counties_at_thing_trigger = {
-	tier = tier_county
-	culture = { has_innovation = innovation_all_things }
-	any_neighboring_county = { fp1_0591_secondary_county_trigger = yes }
-}
+# 	weight_multiplier = {
+# 		base = 1
 
-#	One of your counties is engaged in an argument with another.
-fp1_yearly.0591 = {
-	type = character_event
-	title = fp1_yearly.0591.t
-	desc = {
-		desc = fp1_yearly.0591.desc
-		random_valid = {
-			desc = fp1_yearly.0591.desc.border_dispute		#
-			desc = fp1_yearly.0591.desc.stolen_flocks		#
-			desc = fp1_yearly.0591.desc.kidnapped_child		#
-			desc = fp1_yearly.0591.desc.drunken_arson		#
-			desc = fp1_yearly.0591.desc.lost_dog			#
-			desc = fp1_yearly.0591.desc.disrupted_wedding
-			desc = fp1_yearly.0591.desc.suspicious_will		#
-			desc = fp1_yearly.0591.desc.sheltered_criminal	#
-			desc = fp1_yearly.0591.desc.bad_luck			#
-			desc = fp1_yearly.0591.desc.fly_tipping			#
-		}
-	}
-	theme = realm
-	left_portrait = {
-		character = root
-		animation = disgust
-	}
-	override_background = { reference = fp1_runestone_circle }
+# 		# Weight up a little for mainland Scandinavia.
+# 		modifier = {
+# 			add = 0.5
+# 			fp1_is_in_scandinavia = yes
+# 		}
+# 	}
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0591 }
-		is_landed = yes
-		# Filter to flavour-appropriate characters.
-		culture = { has_innovation = innovation_all_things }
-		# Ensure you have at least two counties that can fight with each other.
-		any_held_title = { fp1_0591_fighting_counties_at_thing_trigger = yes }
-	}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0591
+# 			days = 1825
+# 		}
+# 		# Grab the counties.
+# 		random_held_title = {
+# 			limit = { fp1_0591_fighting_counties_at_thing_trigger = yes }
+# 			save_scope_as = county_a
+# 			random_neighboring_county = {
+# 				limit = { fp1_0591_secondary_county_trigger = yes }
+# 				save_scope_as = county_b
+# 			}
+# 		}
+# 		# Set a dummy gender for loc.
+# 		random_dummy_gender_soldier_effect = { SCOPE_NAME = dummy_gender }
+# 	}
 
-	weight_multiplier = {
-		base = 1
+# 	# Side with scope:county_a.
+# 	option = {
+# 		name = fp1_yearly.0591.a
 
-		# Weight up a little for mainland Scandinavia.
-		modifier = {
-			add = 0.5
-			fp1_is_in_scandinavia = yes
-		}
-	}
+# 		# Levy bonus county modifier.
+# 		scope:county_a = {
+# 			add_county_modifier = {
+# 				modifier = fp1_yearly_0591_levy_modifier
+# 				years = 10
+# 			}
+# 		}
+# 		# And spurn the other county.
+# 		scope:county_b = {
+# 			add_county_modifier = {
+# 				modifier = fp1_yearly_0591_spurned_modifier
+# 				years = 10
+# 			}
+# 		}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0591
-			days = 1825
-		}
-		# Grab the counties.
-		random_held_title = {
-			limit = { fp1_0591_fighting_counties_at_thing_trigger = yes }
-			save_scope_as = county_a
-			random_neighboring_county = {
-				limit = { fp1_0591_secondary_county_trigger = yes }
-				save_scope_as = county_b
-			}
-		}
-		# Set a dummy gender for loc.
-		random_dummy_gender_soldier_effect = { SCOPE_NAME = dummy_gender }
-	}
+# 		stress_impact = {
+# 			lazy = minor_stress_impact_loss
+# 			diligent = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_energy = 0.5
+# 				ai_honor = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
 
-	# Side with scope:county_a.
-	option = {
-		name = fp1_yearly.0591.a
+# 	# Side with scope:county_b.
+# 	option = {
+# 		name = fp1_yearly.0591.b
 
-		# Levy bonus county modifier.
-		scope:county_a = {
-			add_county_modifier = {
-				modifier = fp1_yearly_0591_levy_modifier
-				years = 10
-			}
-		}
-		# And spurn the other county.
-		scope:county_b = {
-			add_county_modifier = {
-				modifier = fp1_yearly_0591_spurned_modifier
-				years = 10
-			}
-		}
+# 		# Building cost county modifier.
+# 		scope:county_b = {
+# 			add_county_modifier = {
+# 				modifier = fp1_yearly_0591_building_modifier
+# 				years = 10
+# 			}
+# 		}
+# 		# And spurn the other county.
+# 		scope:county_a = {
+# 			add_county_modifier = {
+# 				modifier = fp1_yearly_0591_spurned_modifier
+# 				years = 10
+# 			}
+# 		}
 
-		stress_impact = {
-			lazy = minor_stress_impact_loss
-			diligent = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_energy = 0.5
-				ai_honor = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = lazy
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = diligent
-			}
-		}
-	}
+# 		stress_impact = {
+# 			lazy = minor_stress_impact_loss
+# 			diligent = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_energy = 0.5
+# 				ai_honor = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
 
-	# Side with scope:county_b.
-	option = {
-		name = fp1_yearly.0591.b
+# 	# Deliberately wind them both up.
+# 	option = {
+# 		name = fp1_yearly.0591.c
 
-		# Building cost county modifier.
-		scope:county_b = {
-			add_county_modifier = {
-				modifier = fp1_yearly_0591_building_modifier
-				years = 10
-			}
-		}
-		# And spurn the other county.
-		scope:county_a = {
-			add_county_modifier = {
-				modifier = fp1_yearly_0591_spurned_modifier
-				years = 10
-			}
-		}
+# 		# Popular opinion bonus modifiers in both (as they're too busy fighting each other).
+# 		scope:county_a = {
+# 			add_county_modifier = {
+# 				modifier = fp1_yearly_0591_otherwise_occupied_modifier
+# 				years = 10
+# 			}
+# 		}
+# 		scope:county_b = {
+# 			add_county_modifier = {
+# 				modifier = fp1_yearly_0591_otherwise_occupied_modifier
+# 				years = 10
+# 			}
+# 		}
 
-		stress_impact = {
-			lazy = minor_stress_impact_loss
-			diligent = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_energy = 0.5
-				ai_honor = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = lazy
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = diligent
-			}
-		}
-	}
+# 		stress_impact = {
+# 			deceitful = minor_stress_impact_loss
+# 			arbitrary = medium_stress_impact_loss
+# 			honest = minor_stress_impact_gain
+# 			just = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_energy = 0.5
+# 				ai_vengefulness = 0.25
+# 				ai_honor = -0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = deceitful
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = honest
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = just
+# 			}
+# 		}
+# 	}
 
-	# Deliberately wind them both up.
-	option = {
-		name = fp1_yearly.0591.c
+# 	# Let them fight it out.
+# 	option = {
+# 		name = fp1_yearly.0591.d
 
-		# Popular opinion bonus modifiers in both (as they're too busy fighting each other).
-		scope:county_a = {
-			add_county_modifier = {
-				modifier = fp1_yearly_0591_otherwise_occupied_modifier
-				years = 10
-			}
-		}
-		scope:county_b = {
-			add_county_modifier = {
-				modifier = fp1_yearly_0591_otherwise_occupied_modifier
-				years = 10
-			}
-		}
+# 		# Stress loss: not your problem, honestly.
+# 		## Covered in stress impact.
 
-		stress_impact = {
-			deceitful = minor_stress_impact_loss
-			arbitrary = medium_stress_impact_loss
-			honest = minor_stress_impact_gain
-			just = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_energy = 0.5
-				ai_vengefulness = 0.25
-				ai_honor = -0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = deceitful
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = arbitrary
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = honest
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = just
-			}
-		}
-	}
-
-	# Let them fight it out.
-	option = {
-		name = fp1_yearly.0591.d
-
-		# Stress loss: not your problem, honestly.
-		## Covered in stress impact.
-
-		stress_impact = {
-			base = major_stress_loss
-			lazy = medium_stress_impact_loss
-			diligent = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = -0.25
-				ai_energy = -0.75
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = lazy
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = diligent
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			base = major_stress_loss
+# 			lazy = medium_stress_impact_loss
+# 			diligent = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = -0.25
+# 				ai_energy = -0.75
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # The Hardest Part of Ruling
@@ -9978,391 +9978,391 @@ fp1_yearly.0591 = {
 # 0601 - 0610
 ##################################################
 
-scripted_trigger fp1_0601_valid_county_for_things_trigger = {
-	tier = tier_county
-	culture = { has_innovation = innovation_all_things }
-}
+# scripted_trigger fp1_0601_valid_county_for_things_trigger = {
+# 	tier = tier_county
+# 	culture = { has_innovation = innovation_all_things }
+# }
 
-#	An incredibly boring local assembly tries your patience.
-fp1_yearly.0601 = {
-	type = character_event
-	title = fp1_yearly.0601.t
-	desc = fp1_yearly.0601.desc
-	theme = realm
-	left_portrait = {
-		character = root
-		animation = boredom
-	}
-	override_background = { reference = fp1_runestone_circle }
+# #	An incredibly boring local assembly tries your patience.
+# fp1_yearly.0601 = {
+# 	type = character_event
+# 	title = fp1_yearly.0601.t
+# 	desc = fp1_yearly.0601.desc
+# 	theme = realm
+# 	left_portrait = {
+# 		character = root
+# 		animation = boredom
+# 	}
+# 	override_background = { reference = fp1_runestone_circle }
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0601 }
-		is_landed = yes
-		# Filter to flavour-appropriate characters.
-		culture = { has_innovation = innovation_all_things }
-		any_held_title = { fp1_0601_valid_county_for_things_trigger = yes }
-	}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0601 }
+# 		is_landed = yes
+# 		# Filter to flavour-appropriate characters.
+# 		culture = { has_innovation = innovation_all_things }
+# 		any_held_title = { fp1_0601_valid_county_for_things_trigger = yes }
+# 	}
 
-	weight_multiplier = {
-		base = 1
+# 	weight_multiplier = {
+# 		base = 1
 
-		# Weight up a little for mainland Scandinavia.
-		modifier = {
-			add = 0.5
-			fp1_is_in_scandinavia = yes
-		}
-	}
+# 		# Weight up a little for mainland Scandinavia.
+# 		modifier = {
+# 			add = 0.5
+# 			fp1_is_in_scandinavia = yes
+# 		}
+# 	}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0601
-			days = 1825
-		}
-		# Designate a suitable random county.
-		random_held_title = {
-			limit = { fp1_0601_valid_county_for_things_trigger = yes }
-			save_scope_as = county
-		}
-		# Set a dummy gender for loc.
-		random_dummy_gender_soldier_effect = { SCOPE_NAME = dummy_gender }
-	}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0601
+# 			days = 1825
+# 		}
+# 		# Designate a suitable random county.
+# 		random_held_title = {
+# 			limit = { fp1_0601_valid_county_for_things_trigger = yes }
+# 			save_scope_as = county
+# 		}
+# 		# Set a dummy gender for loc.
+# 		random_dummy_gender_soldier_effect = { SCOPE_NAME = dummy_gender }
+# 	}
 
-	# Fight to stay awake.
-	option = {
-		name = fp1_yearly.0601.a
+# 	# Fight to stay awake.
+# 	option = {
+# 		name = fp1_yearly.0601.a
 
-		# Diplomacy duel to see how well you disguise it.
-		duel = {
-			skill = diplomacy
-			value = decent_skill_rating
-			# You power through and remain composed.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0601.a.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0601.a.tt_success
-					left_icon = root
-					add_prestige = medium_prestige_gain
-				}
-			}
-			# You slump right out of your seat.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0601.a.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0601.a.tt_failure
-					left_icon = root
-					add_prestige = medium_prestige_loss
-				}
-			}
-		}
+# 		# Diplomacy duel to see how well you disguise it.
+# 		duel = {
+# 			skill = diplomacy
+# 			value = decent_skill_rating
+# 			# You power through and remain composed.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0601.a.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0601.a.tt_success
+# 					left_icon = root
+# 					add_prestige = medium_prestige_gain
+# 				}
+# 			}
+# 			# You slump right out of your seat.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0601.a.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0601.a.tt_failure
+# 					left_icon = root
+# 					add_prestige = medium_prestige_loss
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			just = minor_stress_impact_loss
-			diligent = medium_stress_impact_loss
-			arbitrary = minor_stress_impact_gain
-			lazy = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_energy = 1
-				ai_sociability = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = just
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = diligent
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = arbitrary
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = lazy
-			}
-		}
-	}
+# 		stress_impact = {
+# 			just = minor_stress_impact_loss
+# 			diligent = medium_stress_impact_loss
+# 			arbitrary = minor_stress_impact_gain
+# 			lazy = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_energy = 1
+# 				ai_sociability = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = just
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = diligent
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = lazy
+# 			}
+# 		}
+# 	}
 
-	# (Diplomacy) Daydream of more interesting diplomatic problems.
-	option = {
-		name = fp1_yearly.0601.b
-		trigger = { has_trait = education_diplomacy }
-		trait = education_diplomacy_1
-		trait = education_diplomacy_2
-		trait = education_diplomacy_3
-		trait = education_diplomacy_4
-		trait = education_diplomacy_5
+# 	# (Diplomacy) Daydream of more interesting diplomatic problems.
+# 	option = {
+# 		name = fp1_yearly.0601.b
+# 		trigger = { has_trait = education_diplomacy }
+# 		trait = education_diplomacy_1
+# 		trait = education_diplomacy_2
+# 		trait = education_diplomacy_3
+# 		trait = education_diplomacy_4
+# 		trait = education_diplomacy_5
 
-		# Gain a minor modifier boosting diplomacy.
-		add_character_modifier = {
-			modifier = fp1_daydreaming_about_diplomacy_modifier
-			years = 5
-		}
+# 		# Gain a minor modifier boosting diplomacy.
+# 		add_character_modifier = {
+# 			modifier = fp1_daydreaming_about_diplomacy_modifier
+# 			years = 5
+# 		}
 
-		stress_impact = {
-			lazy = minor_stress_impact_loss
-			arrogant = minor_stress_impact_loss
-			diligent = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_sociability = -0.25
-				ai_energy = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = lazy
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arrogant
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = diligent
-			}
-		}
-	}
+# 		stress_impact = {
+# 			lazy = minor_stress_impact_loss
+# 			arrogant = minor_stress_impact_loss
+# 			diligent = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_sociability = -0.25
+# 				ai_energy = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
 
-	# (Martial) Daydream up new strategies.
-	option = {
-		name = fp1_yearly.0601.c
-		trigger = { has_trait = education_martial }
-		trait = education_martial_1
-		trait = education_martial_2
-		trait = education_martial_3
-		trait = education_martial_4
-		trait = education_martial_5
+# 	# (Martial) Daydream up new strategies.
+# 	option = {
+# 		name = fp1_yearly.0601.c
+# 		trigger = { has_trait = education_martial }
+# 		trait = education_martial_1
+# 		trait = education_martial_2
+# 		trait = education_martial_3
+# 		trait = education_martial_4
+# 		trait = education_martial_5
 
-		# Gain a minor modifier boosting martial.
-		add_character_modifier = {
-			modifier = fp1_daydreaming_about_martial_modifier
-			years = 5
-		}
+# 		# Gain a minor modifier boosting martial.
+# 		add_character_modifier = {
+# 			modifier = fp1_daydreaming_about_martial_modifier
+# 			years = 5
+# 		}
 
-		stress_impact = {
-			lazy = minor_stress_impact_loss
-			arrogant = minor_stress_impact_loss
-			diligent = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_sociability = -0.25
-				ai_energy = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = lazy
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arrogant
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = diligent
-			}
-		}
-	}
+# 		stress_impact = {
+# 			lazy = minor_stress_impact_loss
+# 			arrogant = minor_stress_impact_loss
+# 			diligent = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_sociability = -0.25
+# 				ai_energy = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
 
-	# (Stewardship) Daydream up new taxes to charge them.
-	option = {
-		name = fp1_yearly.0601.d
-		trigger = { has_trait = education_stewardship }
-		trait = education_stewardship_1
-		trait = education_stewardship_2
-		trait = education_stewardship_3
-		trait = education_stewardship_4
-		trait = education_stewardship_5
+# 	# (Stewardship) Daydream up new taxes to charge them.
+# 	option = {
+# 		name = fp1_yearly.0601.d
+# 		trigger = { has_trait = education_stewardship }
+# 		trait = education_stewardship_1
+# 		trait = education_stewardship_2
+# 		trait = education_stewardship_3
+# 		trait = education_stewardship_4
+# 		trait = education_stewardship_5
 
-		# Gain a minor modifier boosting stewardship.
-		add_character_modifier = {
-			modifier = fp1_daydreaming_about_stewardship_modifier
-			years = 5
-		}
+# 		# Gain a minor modifier boosting stewardship.
+# 		add_character_modifier = {
+# 			modifier = fp1_daydreaming_about_stewardship_modifier
+# 			years = 5
+# 		}
 
-		stress_impact = {
-			lazy = minor_stress_impact_loss
-			arrogant = minor_stress_impact_loss
-			diligent = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_sociability = -0.25
-				ai_energy = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = lazy
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arrogant
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = diligent
-			}
-		}
-	}
+# 		stress_impact = {
+# 			lazy = minor_stress_impact_loss
+# 			arrogant = minor_stress_impact_loss
+# 			diligent = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_sociability = -0.25
+# 				ai_energy = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
 
-	# (Intrigue) Daydream up new ways to keep them under control.
-	option = {
-		name = fp1_yearly.0601.e
-		trigger = { has_trait = education_intrigue }
-		trait = education_intrigue_1
-		trait = education_intrigue_2
-		trait = education_intrigue_3
-		trait = education_intrigue_4
+# 	# (Intrigue) Daydream up new ways to keep them under control.
+# 	option = {
+# 		name = fp1_yearly.0601.e
+# 		trigger = { has_trait = education_intrigue }
+# 		trait = education_intrigue_1
+# 		trait = education_intrigue_2
+# 		trait = education_intrigue_3
+# 		trait = education_intrigue_4
 
-		# Gain a minor modifier boosting intrigue.
-		add_character_modifier = {
-			modifier = fp1_daydreaming_about_intrigue_modifier
-			years = 5
-		}
+# 		# Gain a minor modifier boosting intrigue.
+# 		add_character_modifier = {
+# 			modifier = fp1_daydreaming_about_intrigue_modifier
+# 			years = 5
+# 		}
 
-		stress_impact = {
-			lazy = minor_stress_impact_loss
-			arrogant = minor_stress_impact_loss
-			diligent = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_sociability = -0.25
-				ai_energy = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = lazy
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arrogant
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = diligent
-			}
-		}
-	}
+# 		stress_impact = {
+# 			lazy = minor_stress_impact_loss
+# 			arrogant = minor_stress_impact_loss
+# 			diligent = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_sociability = -0.25
+# 				ai_energy = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
 
-	# (Learning) Daydream of your favourite book.
-	option = {
-		name = fp1_yearly.0601.f
-		trigger = { has_trait = education_learning }
-		trait = education_learning_1
-		trait = education_learning_2
-		trait = education_learning_3
-		trait = education_learning_4
-		trait = education_learning_5
+# 	# (Learning) Daydream of your favourite book.
+# 	option = {
+# 		name = fp1_yearly.0601.f
+# 		trigger = { has_trait = education_learning }
+# 		trait = education_learning_1
+# 		trait = education_learning_2
+# 		trait = education_learning_3
+# 		trait = education_learning_4
+# 		trait = education_learning_5
 
-		# Gain a minor modifier boosting learning.
-		add_character_modifier = {
-			modifier = fp1_daydreaming_about_learning_modifier
-			years = 5
-		}
+# 		# Gain a minor modifier boosting learning.
+# 		add_character_modifier = {
+# 			modifier = fp1_daydreaming_about_learning_modifier
+# 			years = 5
+# 		}
 
-		stress_impact = {
-			lazy = minor_stress_impact_loss
-			arrogant = minor_stress_impact_loss
-			diligent = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_sociability = -0.25
-				ai_energy = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = lazy
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arrogant
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = diligent
-			}
-		}
-	}
+# 		stress_impact = {
+# 			lazy = minor_stress_impact_loss
+# 			arrogant = minor_stress_impact_loss
+# 			diligent = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_sociability = -0.25
+# 				ai_energy = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
 
-	# Give in and doze off.
-	option = {
-		name = fp1_yearly.0601.g
+# 	# Give in and doze off.
+# 	option = {
+# 		name = fp1_yearly.0601.g
 
-		# Lose stress since... I mean, who cares?
-		## Stress loss handled in stress_impact.
-		# Buuuuut also lose prestige.
-		add_prestige = minor_prestige_loss
-		# Low-random chance for players to occasionally become known as "the Snorer" here.
-		hidden_effect = {
-			if = {
-				limit = {
-					is_ai = no
-					has_any_nickname = no
-				}
-				random = {
-					chance = 1
-					send_interface_toast = {
-						title = fp1_yearly.0601.g.nickname
-						left_icon = root
-						give_nickname = nick_the_snorer
-					}
-				}
-			}
-		}
+# 		# Lose stress since... I mean, who cares?
+# 		## Stress loss handled in stress_impact.
+# 		# Buuuuut also lose prestige.
+# 		add_prestige = minor_prestige_loss
+# 		# Low-random chance for players to occasionally become known as "the Snorer" here.
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					is_ai = no
+# 					has_any_nickname = no
+# 				}
+# 				random = {
+# 					chance = 1
+# 					send_interface_toast = {
+# 						title = fp1_yearly.0601.g.nickname
+# 						left_icon = root
+# 						give_nickname = nick_the_snorer
+# 					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			base = major_stress_loss
-			lazy = medium_stress_impact_loss
-			diligent = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.25
-				ai_sociability = -0.5
-				ai_energy = -1
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = lazy
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = diligent
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			base = major_stress_loss
+# 			lazy = medium_stress_impact_loss
+# 			diligent = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.25
+# 				ai_sociability = -0.5
+# 				ai_energy = -1
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # Leading by Example

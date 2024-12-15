@@ -9,14 +9,14 @@
 		# 	NOT = {
 		# 		culture = { has_cultural_pillar = heritage_north_germanic }
 		# 	}
-		}
+		# }
 		# modifier = { # Reduces frequency for having both sets of FP events valid
 		# 	factor = 0.5
 		# 	OR = {
 		# 		fp2_eligible_for_yearly_events_trigger = yes
 		# 		fp3_eligible_for_yearly_events_trigger = yes
 		# 	}
-		# }
+		}
 	}
 
 	random_events = {
@@ -65,8 +65,9 @@
 		#L5R Disabled
 		# 200 = fp1_yearly.0571	# Petty Vandalism - your child has vandalised a runestone.
 		200 = fp1_yearly.0581	# When I Grow Up - your child wishes to be a shieldperson.
-		200 = fp1_yearly.0591	# Raised Voices at the Thing - two of your counties are fighting at a regional thing.
-		200 = fp1_yearly.0601	# The Hardest Part of Ruling - you're incredibly bored in a protracted thing session.
+		#L5R Disabled
+		# 200 = fp1_yearly.0591	# Raised Voices at the Thing - two of your counties are fighting at a regional thing.
+		# 200 = fp1_yearly.0601	# The Hardest Part of Ruling - you're incredibly bored in a protracted thing session.
 		200 = fp1_yearly.0611	# Leading by Example - one of your children hurts another whilst imitating you.
 		#L5R Disabled
 		# 200 = fp1_yearly.0641	# Worthy of the Ocean - your longships are in disrepair.

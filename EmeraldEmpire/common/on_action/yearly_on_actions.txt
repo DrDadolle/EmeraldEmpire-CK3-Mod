@@ -1895,8 +1895,9 @@ on_yearly_events = {
 		200 = fp1_yearly.2100 # Two lovers duel for your love
 		200 = fp1_yearly.0521 # Blood on the Snow - your child wishes to snowball fight.
 		200 = fp1_yearly.0531 # [Dynasty] on Ice - your child wants to learn how to ice skate.
-		200 = fp1_yearly.0591 # Raised Voices at the Thing - two of your counties are fighting at a regional thing.
-		200 = fp1_yearly.0601 # The Hardest Part of Ruling - you're incredibly bored in a protracted thing session.
+		#L5R Disabled
+		# 200 = fp1_yearly.0591 # Raised Voices at the Thing - two of your counties are fighting at a regional thing.
+		# 200 = fp1_yearly.0601 # The Hardest Part of Ruling - you're incredibly bored in a protracted thing session.
 		200 = fp1_yearly.0651 # Leviathan - you spot a whale whilst sailing.
 		200 = fp1_yearly.0661 # A Novel Challenge - a knight challenges you to skiing.
 		200 = fp1_yearly.0671 # A Slippery Slope - your child wants to go sledding.

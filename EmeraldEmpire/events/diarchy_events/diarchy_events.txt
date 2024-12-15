@@ -4870,20 +4870,22 @@ diarchy.1731 = {
 		animation = aggressive_sword
 		hide_info = yes
 	}
+	#L5R Disabled
 	# All-Thing cultures meet at the stones.
-	override_background = {
-		trigger = {
-			culture = { has_innovation = innovation_all_things }
-		}
-		reference = council_chamber
-	}
+	# override_background = {
+	# 	trigger = {
+	# 		culture = { has_innovation = innovation_all_things }
+	# 	}
+	# 	reference = council_chamber
+	# }
 	# Everyone else in the town square.
 	override_background = {
-		trigger = {
-			NOT = {
-				culture = { has_innovation = innovation_all_things }
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	NOT = {
+		# 		culture = { has_innovation = innovation_all_things }
+		# 	}
+		# }
 		reference = market_scope
 	}
 
