@@ -169,7 +169,7 @@ war_for_seppuku_effect = {
 		add_opinion = {
 			target = scope:actor
 			# modifier = attempted_arrest_opinion
-			modifier = attempted_demand_seppuku_opinion
+			modifier = attempted_seppuku_demand_opinion
 		}
 	}
 }
