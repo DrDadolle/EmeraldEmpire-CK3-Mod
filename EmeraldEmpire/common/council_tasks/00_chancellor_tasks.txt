@@ -912,16 +912,17 @@ task_bestow_royal_favor = {
 					desc = COUNCILLOR_IS_YOUR_NEMESIS
 				}
 			}
+			#L5R Disabled
 			#other bonuses/penalties, from FP3 
-			if = {
-				limit = { 
-					councillor_liege_has_khvarenah_legacy_perk = yes
-				}
-				multiply = {
-					value = 1.2
-					desc = KHVARENAH_DYNASTY_PERK_BONUS_VALUE
-				}
-			}
+			# if = {
+			# 	limit = { 
+			# 		councillor_liege_has_khvarenah_legacy_perk = yes
+			# 	}
+			# 	multiply = {
+			# 		value = 1.2
+			# 		desc = KHVARENAH_DYNASTY_PERK_BONUS_VALUE
+			# 	}
+			# }
 		}
 	}
 

@@ -2296,245 +2296,246 @@ legend_spread_events.8100 = {
 ## 8110
 ## by James Beaumont
 ############################
-legend_spread_events.8110 = {
-	type = character_event
-	title = legend_spread_events.8110.t
-	desc = legend_spread_events.8110.desc
-	theme = legend
-	left_portrait = {
-		character = root
-		animation = personality_bold
-	}
-	right_portrait = {
-		character = scope:courtier_1
-		animation = personality_rational
-	}
-	lower_right_portrait = {
-		character = scope:courtier_2
-	}
+#L5R Disabled
+# legend_spread_events.8110 = {
+# 	type = character_event
+# 	title = legend_spread_events.8110.t
+# 	desc = legend_spread_events.8110.desc
+# 	theme = legend
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_bold
+# 	}
+# 	right_portrait = {
+# 		character = scope:courtier_1
+# 		animation = personality_rational
+# 	}
+# 	lower_right_portrait = {
+# 		character = scope:courtier_2
+# 	}
 
-	cooldown = { years = 15 }
+# 	cooldown = { years = 15 }
 
-	trigger = {
-		is_available_adult = yes
-		faith = {
-			has_doctrine_parameter = great_holy_wars_active
-		}
-		exists = promoted_legend
-		promoted_legend = {
-			legend_owner = root
-			legend_type = legend_type:holy
-		}
-		# You have an artifact that does not already have this modifier
-		any_character_artifact = {
-			artifact_slot_type = primary_armament
-			NOT = { has_variable = blood_of_infidels }
-		}
-		any_courtier_or_guest = {
-			count >= 2
-			is_adult = yes
-		}
-		# You have a memory where you beat up an infidel
-		any_memory = {
-			has_memory_type = battle_won_memory
-			exists = memory_participant:loser
-			save_temporary_scope_as = temp_memory
-			root.faith = {
-				faith_hostility_level = {
-					target = scope:temp_memory.memory_participant:loser.faith
-					value >= faith_hostile_level
-				}
-			}
-		}
-	}
-	immediate = {
-		promoted_legend = {
-			save_scope_as = legend
-		}
-		# Get an artifact to attach the memory to
-		random_character_artifact = {
-			limit = {
-				artifact_slot_type = primary_armament
-				NOT = { has_variable = blood_of_infidels }
-			}
-			weight = { # Try to make it an artifact they care about
-				base = 1
-				modifier = {
-					add = 10
-					rarity = illustrious
-				}
-				modifier = {
-					add = 5
-					rarity = famed
-				}
-				modifier = {
-					add = 1
-					rarity = masterwork
-				}
-				modifier = {
-					factor = 2
-					is_equipped = yes
-				}
-			}
-			save_scope_as = infidel_weapon
-		}
-		# Get the memory
-		random_memory = {
-			limit = {
-				has_memory_type = battle_won_memory
-				exists = memory_participant:loser
-				save_temporary_scope_as = temp_memory
-				root.faith = {
-					faith_hostility_level = {
-						target = scope:temp_memory.memory_participant:loser.faith
-						value >= faith_hostile_level
-					}
-				}
-			}
-			memory_participant:loser = { save_scope_as = loser }
-			save_scope_as = memory
-		}
-		random_courtier_or_guest = {
-			limit = {
-				is_adult = yes
-			}
-			weight = {
-				base = 1
-				modifier = {
-					add = {
-						subtract = ai_zeal
-					}
-				}
-			}
-			save_scope_as = courtier_1
-		}
-		random_courtier_or_guest = {
-			limit = {
-				is_adult = yes
-			}
-			weight = {
-				base = 1
-				modifier = {
-					add = ai_zeal
-				}
-			}
-			save_scope_as = courtier_2
-		}
-	}
-	option = { # Yeah, that totally happened! Fr fr no cap
-		name = legend_spread_events.8110.a
-		duel = {
-			skills = { learning martial }
-			value = high_skill_rating
-			# Success.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				send_interface_toast = {
-					title = legend_spread_events.8110.a.win
-					left_icon = root
-					scope:infidel_weapon = {
-						add_artifact_modifier = artifact_legend_spread_mult_2_modifier
-						add_artifact_modifier = artifact_monthly_piety_gain_mult_2_modifier
-						set_artifact_description = infidel_artifact_desc
-						set_variable = {
-							name = blood_of_infidels
-							value = yes
-						}
-					}
-					promoted_legend = {
-						change_legend_quality_effect = {
-							VALUE = minor_legend_quality_increase
-						}
-					}
-				}
-			}
-			# Failure.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				send_interface_toast = {
-					title = legend_spread_events.8110.a.lose
-					left_icon = root
-					add_stress = minor_stress_gain
-					promoted_legend = {
-						change_legend_quality_effect = {
-							VALUE = medium_legend_quality_decrease
-						}
-					}
-				}
-			}
-		}
-		stress_impact = {
-			honest = medium_stress_impact_gain
-			callous = minor_stress_impact_loss
-			sadistic = minor_stress_impact_loss
-			zealous = minor_stress_impact_loss
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_zeal = 1
-				ai_boldness = 1
-				ai_honor = -1
-				ai_compassion = -1
-			}
-		}
-	}
+# 	trigger = {
+# 		is_available_adult = yes
+# 		faith = {
+# 			has_doctrine_parameter = great_holy_wars_active
+# 		}
+# 		exists = promoted_legend
+# 		promoted_legend = {
+# 			legend_owner = root
+# 			legend_type = legend_type:holy
+# 		}
+# 		# You have an artifact that does not already have this modifier
+# 		any_character_artifact = {
+# 			artifact_slot_type = primary_armament
+# 			NOT = { has_variable = blood_of_infidels }
+# 		}
+# 		any_courtier_or_guest = {
+# 			count >= 2
+# 			is_adult = yes
+# 		}
+# 		# You have a memory where you beat up an infidel
+# 		any_memory = {
+# 			has_memory_type = battle_won_memory
+# 			exists = memory_participant:loser
+# 			save_temporary_scope_as = temp_memory
+# 			root.faith = {
+# 				faith_hostility_level = {
+# 					target = scope:temp_memory.memory_participant:loser.faith
+# 					value >= faith_hostile_level
+# 				}
+# 			}
+# 		}
+# 	}
+# 	immediate = {
+# 		promoted_legend = {
+# 			save_scope_as = legend
+# 		}
+# 		# Get an artifact to attach the memory to
+# 		random_character_artifact = {
+# 			limit = {
+# 				artifact_slot_type = primary_armament
+# 				NOT = { has_variable = blood_of_infidels }
+# 			}
+# 			weight = { # Try to make it an artifact they care about
+# 				base = 1
+# 				modifier = {
+# 					add = 10
+# 					rarity = illustrious
+# 				}
+# 				modifier = {
+# 					add = 5
+# 					rarity = famed
+# 				}
+# 				modifier = {
+# 					add = 1
+# 					rarity = masterwork
+# 				}
+# 				modifier = {
+# 					factor = 2
+# 					is_equipped = yes
+# 				}
+# 			}
+# 			save_scope_as = infidel_weapon
+# 		}
+# 		# Get the memory
+# 		random_memory = {
+# 			limit = {
+# 				has_memory_type = battle_won_memory
+# 				exists = memory_participant:loser
+# 				save_temporary_scope_as = temp_memory
+# 				root.faith = {
+# 					faith_hostility_level = {
+# 						target = scope:temp_memory.memory_participant:loser.faith
+# 						value >= faith_hostile_level
+# 					}
+# 				}
+# 			}
+# 			memory_participant:loser = { save_scope_as = loser }
+# 			save_scope_as = memory
+# 		}
+# 		random_courtier_or_guest = {
+# 			limit = {
+# 				is_adult = yes
+# 			}
+# 			weight = {
+# 				base = 1
+# 				modifier = {
+# 					add = {
+# 						subtract = ai_zeal
+# 					}
+# 				}
+# 			}
+# 			save_scope_as = courtier_1
+# 		}
+# 		random_courtier_or_guest = {
+# 			limit = {
+# 				is_adult = yes
+# 			}
+# 			weight = {
+# 				base = 1
+# 				modifier = {
+# 					add = ai_zeal
+# 				}
+# 			}
+# 			save_scope_as = courtier_2
+# 		}
+# 	}
+# 	option = { # Yeah, that totally happened! Fr fr no cap
+# 		name = legend_spread_events.8110.a
+# 		duel = {
+# 			skills = { learning martial }
+# 			value = high_skill_rating
+# 			# Success.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				send_interface_toast = {
+# 					title = legend_spread_events.8110.a.win
+# 					left_icon = root
+# 					scope:infidel_weapon = {
+# 						add_artifact_modifier = artifact_legend_spread_mult_2_modifier
+# 						add_artifact_modifier = artifact_monthly_piety_gain_mult_2_modifier
+# 						set_artifact_description = infidel_artifact_desc
+# 						set_variable = {
+# 							name = blood_of_infidels
+# 							value = yes
+# 						}
+# 					}
+# 					promoted_legend = {
+# 						change_legend_quality_effect = {
+# 							VALUE = minor_legend_quality_increase
+# 						}
+# 					}
+# 				}
+# 			}
+# 			# Failure.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				send_interface_toast = {
+# 					title = legend_spread_events.8110.a.lose
+# 					left_icon = root
+# 					add_stress = minor_stress_gain
+# 					promoted_legend = {
+# 						change_legend_quality_effect = {
+# 							VALUE = medium_legend_quality_decrease
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		stress_impact = {
+# 			honest = medium_stress_impact_gain
+# 			callous = minor_stress_impact_loss
+# 			sadistic = minor_stress_impact_loss
+# 			zealous = minor_stress_impact_loss
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_zeal = 1
+# 				ai_boldness = 1
+# 				ai_honor = -1
+# 				ai_compassion = -1
+# 			}
+# 		}
+# 	}
 
-	option = { # Nah, this did not happen
-		name = legend_spread_events.8110.b
-		stress_impact = {
-			arrogant = medium_stress_impact_gain
-			deceitful = medium_stress_impact_gain
-			zealous = minor_stress_impact_gain
-			honest = minor_stress_impact_loss
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = -1
-			}
-		}
-	}
+# 	option = { # Nah, this did not happen
+# 		name = legend_spread_events.8110.b
+# 		stress_impact = {
+# 			arrogant = medium_stress_impact_gain
+# 			deceitful = medium_stress_impact_gain
+# 			zealous = minor_stress_impact_gain
+# 			honest = minor_stress_impact_loss
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = -1
+# 			}
+# 		}
+# 	}
 
-	option = { # How about I have it engraved with the real story of the battle?
-		name = legend_spread_events.8110.c
-		reason = prestige_level
-		trigger = {
-			prestige_level >= very_high_prestige_level
-		}
-		scope:infidel_weapon = {
-			add_artifact_modifier = artifact_legend_spread_mult_1_modifier
-			set_artifact_description = ce1_battle_artifact_desc
-			set_variable = {
-				name = blood_of_infidels
-				value = yes
-			}
-		}
-		promoted_legend = {
-			change_legend_quality_effect = {
-				VALUE = minor_legend_quality_increase
-			}
-		}
-		ai_chance = {
-			base = 200
-			ai_value_modifier = {
-				ai_zeal = 1
-				ai_boldness = 1
-				ai_honor = 1
-				ai_rationality = 1
-				ai_compassion = -1
-			}
-		}
-	}
-}
+# 	option = { # How about I have it engraved with the real story of the battle?
+# 		name = legend_spread_events.8110.c
+# 		reason = prestige_level
+# 		trigger = {
+# 			prestige_level >= very_high_prestige_level
+# 		}
+# 		scope:infidel_weapon = {
+# 			add_artifact_modifier = artifact_legend_spread_mult_1_modifier
+# 			set_artifact_description = ce1_battle_artifact_desc
+# 			set_variable = {
+# 				name = blood_of_infidels
+# 				value = yes
+# 			}
+# 		}
+# 		promoted_legend = {
+# 			change_legend_quality_effect = {
+# 				VALUE = minor_legend_quality_increase
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 200
+# 			ai_value_modifier = {
+# 				ai_zeal = 1
+# 				ai_boldness = 1
+# 				ai_honor = 1
+# 				ai_rationality = 1
+# 				ai_compassion = -1
+# 			}
+# 		}
+# 	}
+# }
 
 ############################
 ## Go visit someone outside of your diplo range

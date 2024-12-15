@@ -5689,12 +5689,13 @@ tournament_horse_race_fetch_horse_effect = {
 								set_variable = { name = contest_horse_race_name value = flag:faith_bishop_male }
 								set_variable = { name = contest_horse_race_gender value = flag:male }
 							}
-							25 = {
-								trigger = {
-									faith = { has_doctrine_parameter = great_holy_wars_active }
-								}
-								set_variable = { name = contest_horse_race_name value = flag:faith_crusade }
-							}
+							#L5R Disabled
+							# 25 = {
+							# 	trigger = {
+							# 		faith = { has_doctrine_parameter = great_holy_wars_active }
+							# 	}
+							# 	set_variable = { name = contest_horse_race_name value = flag:faith_crusade }
+							# }
 							25 = {
 								set_variable = { name = contest_horse_race_name value = flag:faith_devotee_female }
 								set_variable = { name = contest_horse_race_gender value = flag:female }

@@ -327,7 +327,8 @@ holy_warrior = { # Generico Crusader legend
 		has_dlc_feature = legends
 		faith = {
 			OR = {
-				has_doctrine_parameter = great_holy_wars_active
+				#L5R Disabled
+				# has_doctrine_parameter = great_holy_wars_active
 				has_doctrine_parameter = great_holy_wars_active_if_reformed
 			}
 		}

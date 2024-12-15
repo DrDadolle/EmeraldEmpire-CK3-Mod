@@ -3522,20 +3522,21 @@ ep3_decisions_event.4010 = {
 	}
 }
 
-scripted_trigger ask_help_valid_for_crusades_trigger = {
-# There is in the world a christian faith with crusades and a HoF to call them (mainly Catholic)
-	religion:christianity_religion = {
-		exists = var:variable_ghw_unlocked
-		NOT = { exists = var:variable_first_ghw_cooldown }
-	}
-	scope:pope = { 
-		is_imprisoned = no
-		faith = {
-			has_doctrine_parameter = great_holy_wars_active
-			fervor >= 60
-		}
-	}
-}
+#L5R Disabled
+# scripted_trigger ask_help_valid_for_crusades_trigger = {
+# # There is in the world a christian faith with crusades and a HoF to call them (mainly Catholic)
+# 	religion:christianity_religion = {
+# 		exists = var:variable_ghw_unlocked
+# 		NOT = { exists = var:variable_first_ghw_cooldown }
+# 	}
+# 	scope:pope = { 
+# 		is_imprisoned = no
+# 		faith = {
+# 			has_doctrine_parameter = great_holy_wars_active
+# 			fervor >= 60
+# 		}
+# 	}
+# }
 
 #Ask the pope
 ep3_decisions_event.4011 = {
@@ -3569,47 +3570,48 @@ ep3_decisions_event.4011 = {
 			}
 		}
 	}
-	#Option B: call crusade
-	option = {
-		name = ep3_decisions_event.4011.b
-		trigger = {
-			faith = {
-				NOT = { exists = great_holy_war }
-			}
-			ask_help_valid_for_crusades_trigger = yes
-		}
-		if = {
-			limit = {
-				faith = {
-					fervor >= 60
-					fervor < 75
-				}
-			}
-			faith = {
-				change_fervor = {
-					value = minor_fervor_value
-					desc = called_for_help_fervor
-				}
-			}
-		}
-		scope:caller = {
-			trigger_event = {
-				id = ep3_decisions_event.4013
-				days = 3
-			}
-		}
-		ai_chance = {
-			base = 100
-			opinion_modifier = {
-				who = root
-				opinion_target = scope:caller
-				multiplier = 2
-			}
-			ai_value_modifier = {
-				ai_zeal = 2
-			}
-		}
-	}
+	#L5R Disabled
+	# #Option B: call crusade
+	# option = {
+	# 	name = ep3_decisions_event.4011.b
+	# 	trigger = {
+	# 		faith = {
+	# 			NOT = { exists = great_holy_war }
+	# 		}
+	# 		ask_help_valid_for_crusades_trigger = yes
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			faith = {
+	# 				fervor >= 60
+	# 				fervor < 75
+	# 			}
+	# 		}
+	# 		faith = {
+	# 			change_fervor = {
+	# 				value = minor_fervor_value
+	# 				desc = called_for_help_fervor
+	# 			}
+	# 		}
+	# 	}
+	# 	scope:caller = {
+	# 		trigger_event = {
+	# 			id = ep3_decisions_event.4013
+	# 			days = 3
+	# 		}
+	# 	}
+	# 	ai_chance = {
+	# 		base = 100
+	# 		opinion_modifier = {
+	# 			who = root
+	# 			opinion_target = scope:caller
+	# 			multiplier = 2
+	# 		}
+	# 		ai_value_modifier = {
+	# 			ai_zeal = 2
+	# 		}
+	# 	}
+	# }
 	#Option C: no
 	option = {
 		name = ep3_decisions_event.4011.c
@@ -3680,59 +3682,60 @@ ep3_decisions_event.4012 = {
 			}
 		}
 	}
+	#L5R Disabled
 	#Option B: call crusade
-	option = {
-		name = ep3_decisions_event.4012.b
-		trigger = {
-			faith = {
-				NOT = { exists = great_holy_war }
-			}
-			ask_help_valid_for_crusades_trigger = yes
-		}
-		if = {
-			limit = {
-				faith = {
-					fervor >= 60
-					fervor < 75
-				}
-			}
-			faith = {
-				change_fervor = {
-					value = minor_fervor_value
-					desc = called_for_help_fervor
-				}
-			}
-		}
-		scope:caller = {
-			trigger_event = {
-				id = ep3_decisions_event.4013
-				days = 3
-			}
-		}
-		scope:sponsor = {
-			send_interface_toast = {
-				title = ep3_decisions_event.4012.b.tt
-				left_icon = scope:pope
-				right_icon = scope:caller
-			}
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_zeal = 2
-			}
-			opinion_modifier = {
-				who = root
-				opinion_target = scope:caller
-				multiplier = 1
-			}
-			opinion_modifier = {
-				who = root
-				opinion_target = scope:sponsor
-				multiplier = 2
-			}
-		}
-	}
+	# option = {
+	# 	name = ep3_decisions_event.4012.b
+	# 	trigger = {
+	# 		faith = {
+	# 			NOT = { exists = great_holy_war }
+	# 		}
+	# 		ask_help_valid_for_crusades_trigger = yes
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			faith = {
+	# 				fervor >= 60
+	# 				fervor < 75
+	# 			}
+	# 		}
+	# 		faith = {
+	# 			change_fervor = {
+	# 				value = minor_fervor_value
+	# 				desc = called_for_help_fervor
+	# 			}
+	# 		}
+	# 	}
+	# 	scope:caller = {
+	# 		trigger_event = {
+	# 			id = ep3_decisions_event.4013
+	# 			days = 3
+	# 		}
+	# 	}
+	# 	scope:sponsor = {
+	# 		send_interface_toast = {
+	# 			title = ep3_decisions_event.4012.b.tt
+	# 			left_icon = scope:pope
+	# 			right_icon = scope:caller
+	# 		}
+	# 	}
+	# 	ai_chance = {
+	# 		base = 100
+	# 		ai_value_modifier = {
+	# 			ai_zeal = 2
+	# 		}
+	# 		opinion_modifier = {
+	# 			who = root
+	# 			opinion_target = scope:caller
+	# 			multiplier = 1
+	# 		}
+	# 		opinion_modifier = {
+	# 			who = root
+	# 			opinion_target = scope:sponsor
+	# 			multiplier = 2
+	# 		}
+	# 	}
+	# }
 	#Option C: no
 	option = {
 		name = ep3_decisions_event.4011.c

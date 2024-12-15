@@ -1165,7 +1165,8 @@ scripted_trigger harm_0511_rides_horses_trigger = {
 		# Either you're not a tribe.
 		NOT = { government_has_flag = uses_tribal_authority }
 		# Or you have Horse Lords.
-		culture = { has_cultural_parameter = unlock_maa_horse_archers }
+		#L5R Disabled
+		# culture = { has_cultural_parameter = unlock_maa_horse_archers }
 	}
 }
 
