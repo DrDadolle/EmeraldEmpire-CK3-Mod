@@ -1565,27 +1565,31 @@ ep3_laamp_flavour_ewan.0031 = {
 
 scripted_trigger ep3_laamp_flavour_ewan_0041_access_high_provision_options_trigger = {
 	domicile.provisions >= domicile.max_provisions
-	ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = no
+	#L5R Disabled
+	# ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = no
 }
 
 scripted_trigger ep3_laamp_flavour_ewan_0041_access_medium_provision_options_trigger = {
 	domicile.provisions < domicile.max_provisions
 	domicile.provisions > provisions_privation_threshold_start
-	ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = no
+	#L5R Disabled
+	# ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = no
 }
 
 scripted_trigger ep3_laamp_flavour_ewan_0041_access_low_provision_options_trigger = {
 	domicile.provisions <= provisions_privation_threshold_start
-	ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = no
+	#L5R Disabled
+	# ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = no
 }
 
-scripted_trigger ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = {
-	location = {
-		geographical_region = custom_sahara_proper
-		# If we're in an oasis, we should act like it.
-		NOT = { terrain = oasis }
-	}
-}
+#L5R Disabled
+# scripted_trigger ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = {
+# 	location = {
+# 		geographical_region = custom_sahara_proper
+# 		# If we're in an oasis, we should act like it.
+# 		NOT = { terrain = oasis }
+# 	}
+# }
 
 #	Recipes on the road.
 ep3_laamp_flavour_ewan.0041 = {
@@ -1671,10 +1675,11 @@ ep3_laamp_flavour_ewan.0041 = {
 				trigger = { ep3_laamp_flavour_ewan_0041_access_low_provision_options_trigger = yes }
 				desc = ep3_laamp_flavour_ewan.0041.desc.provisions.low
 			}
-			triggered_desc = {
-				trigger = { ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = yes }
-				desc = ep3_laamp_flavour_ewan.0041.desc.provisions.sahara
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = { ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = yes }
+			# 	desc = ep3_laamp_flavour_ewan.0041.desc.provisions.sahara
+			# }
 		}
 	}
 	theme = laamp
@@ -1704,10 +1709,11 @@ ep3_laamp_flavour_ewan.0041 = {
 
 	weight_multiplier = {
 		base = 1
-		modifier = {
-			add = 1
-			ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = yes
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	add = 1
+		# 	ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = yes
+		# }
 	}
 
 	immediate = {
@@ -2221,58 +2227,58 @@ ep3_laamp_flavour_ewan.0041 = {
 			ai_value_modifier = { ai_greed = -1 }
 		}
 	}
-	
+	#L5R Disabled
 	# Sahara: do you _see_ anywhere to buy provisions you idiot?
-	option = {
-		name = ep3_laamp_flavour_ewan.0041.m
-		trigger = { ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = yes }
+	# option = {
+	# 	name = ep3_laamp_flavour_ewan.0041.m
+	# 	trigger = { ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = yes }
 
-		if = {
-			limit = { exists = scope:camp_cook }
-			reverse_add_opinion = {
-				target = scope:camp_cook
-				modifier = frustrated_opinion
-				opinion = -40
-			}
-		}
-		else = { add_prestige = minor_prestige_loss }
+	# 	if = {
+	# 		limit = { exists = scope:camp_cook }
+	# 		reverse_add_opinion = {
+	# 			target = scope:camp_cook
+	# 			modifier = frustrated_opinion
+	# 			opinion = -40
+	# 		}
+	# 	}
+	# 	else = { add_prestige = minor_prestige_loss }
 
-		stress_impact = {
-			base = medium_stress_gain
-			temperate = minor_stress_impact_loss
-			gluttonous = medium_stress_impact_gain
-		}
-		ai_chance = {
-			# This'll generally be your only option, so we don't care about modifiers.
-			base = 1
-		}
-	}
-	
-	# Sahara + supply_tent_reserve_water: I don't care if we're eating gruel till we're through this.
-	option = {
-		name = ep3_laamp_flavour_ewan.0041.n
-		trigger = {
-			ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = yes
-			domicile = { has_domicile_building = supply_tent_reserve_water }
-		}
-		reason = has_building_supply_tent_reserve_water
+	# 	stress_impact = {
+	# 		base = medium_stress_gain
+	# 		temperate = minor_stress_impact_loss
+	# 		gluttonous = medium_stress_impact_gain
+	# 	}
+	# 	ai_chance = {
+	# 		# This'll generally be your only option, so we don't care about modifiers.
+	# 		base = 1
+	# 	}
+	# }
+	#L5R Disabled
+	# # Sahara + supply_tent_reserve_water: I don't care if we're eating gruel till we're through this.
+	# option = {
+	# 	name = ep3_laamp_flavour_ewan.0041.n
+	# 	trigger = {
+	# 		ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = yes
+	# 		domicile = { has_domicile_building = supply_tent_reserve_water }
+	# 	}
+	# 	reason = has_building_supply_tent_reserve_water
 
-		if = {
-			limit = { exists = scope:camp_cook }
-			reverse_add_opinion = {
-				target = scope:camp_cook
-				modifier = frustrated_opinion
-				opinion = -20
-			}
-		}
-		add_prestige = medium_prestige_gain
+	# 	if = {
+	# 		limit = { exists = scope:camp_cook }
+	# 		reverse_add_opinion = {
+	# 			target = scope:camp_cook
+	# 			modifier = frustrated_opinion
+	# 			opinion = -20
+	# 		}
+	# 	}
+	# 	add_prestige = medium_prestige_gain
 
-		# No stress gain here — narratively appropriate but we don't want you to feel like you're punished for planning ahead.
-		ai_chance = {
-			# If you've got this, take it.
-			base = 1000
-		}
-	}
+	# 	# No stress gain here — narratively appropriate but we don't want you to feel like you're punished for planning ahead.
+	# 	ai_chance = {
+	# 		# If you've got this, take it.
+	# 		base = 1000
+	# 	}
+	# }
 }
 
 ##################################################
@@ -3531,11 +3537,12 @@ ep3_laamp_flavour_ewan.0051 = {
 # 0061 - 0070
 ##################################################
 
-scripted_trigger ep3_laamp_flavour_ewan_0061_sahara_trigger = {
-	geographical_region = custom_sahara_proper
-	# If we're in an oasis, we should act like it.
-	NOT = { terrain = oasis }
-}
+#L5R Disabled
+# scripted_trigger ep3_laamp_flavour_ewan_0061_sahara_trigger = {
+# 	geographical_region = custom_sahara_proper
+# 	# If we're in an oasis, we should act like it.
+# 	NOT = { terrain = oasis }
+# }
 
 scripted_trigger ep3_laamp_flavour_ewan_0061_steppe_trigger = {
 	geographical_region = world_steppe
@@ -3587,7 +3594,8 @@ ep3_laamp_flavour_ewan.0061 = {
 			# Plus no plagues.
 			any_province_epidemic = { count <= 0 }
 			# Finally, no major regional blockers.
-			ep3_laamp_flavour_ewan_0061_sahara_trigger = no
+			#L5R Disabled
+			# ep3_laamp_flavour_ewan_0061_sahara_trigger = no
 			ep3_laamp_flavour_ewan_0061_steppe_trigger = no
 		}
 	}
@@ -16320,10 +16328,11 @@ ep3_laamp_flavour_ewan.4021 = {
 	}
 
 	weight_multiplier = {
-		modifier = {
-			add = 1
-			ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = yes
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	add = 1
+		# 	ep3_laamp_flavour_ewan_0041_access_sahara_provision_options_trigger = yes
+		# }
 	}
 
 	# Learning duel: there must be _something_ around here...

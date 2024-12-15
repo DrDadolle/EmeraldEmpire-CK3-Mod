@@ -578,9 +578,10 @@ master_assassin_validity_trigger = {
 	}
 	faith = {
 		has_doctrine = tenet_fp3_fedayeen
-		NOR = {
+		#L5R Disabled
+		NOT = {
 			has_doctrine = tenet_pacifism
-			has_doctrine = tenet_dharmic_pacifism 
+			# has_doctrine = tenet_dharmic_pacifism 
 		}
 	}
 	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $EMPLOYER$ }
@@ -759,7 +760,9 @@ court_position_inner_circle_salary_trigger = {
 			}
 		}
 	}
-	trigger_else = { always = no }
+	trigger_else = { 
+		always = no 
+	}
 }
 
 # Halved via obligation hook
