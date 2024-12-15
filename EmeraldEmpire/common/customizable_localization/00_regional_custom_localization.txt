@@ -1012,47 +1012,53 @@ VenomousCreature = {
 				scope:venomous_creature = flag:red_scorpion #India, Nepal
 			}
 			trigger_else = { 
-				location = { geographical_region = world_india }
-			}
-		}
-	}
-
-	text = {
-		localization_key = venomous_creature_deathstalker
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:venomous_creature }
-				scope:venomous_creature = flag:deathstalker #North Africa or Middle East
-			}
-			trigger_else = { 
 				location = { 
-					OR = {
-						geographical_region = world_africa_north
-						geographical_region = world_middle_east_jerusalem
-						geographical_region = world_middle_east_persia
-					}
+					#L5R Modified
+					geographical_region = rokugan_scorpion
+					# geographical_region = world_india 
 				}
 			}
 		}
 	}
 
-	text = {
-		localization_key = venomous_creature_fat_tail
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:venomous_creature }
-				scope:venomous_creature = flag:fat_tail #Arabia, Middle East, Egypt
-			}
-			trigger_else = { 
-				location = { 
-					OR = {
-						geographical_region = world_middle_east
-						geographical_region = world_africa_north_east
-					}
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = venomous_creature_deathstalker
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:venomous_creature }
+	# 			scope:venomous_creature = flag:deathstalker #North Africa or Middle East
+	# 		}
+	# 		trigger_else = { 
+	# 			location = { 
+	# 				OR = {
+	# 					geographical_region = world_africa_north
+	# 					geographical_region = world_middle_east_jerusalem
+	# 					geographical_region = world_middle_east_persia
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	#L5R Disabled
+	# text = {
+	# 	localization_key = venomous_creature_fat_tail
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:venomous_creature }
+	# 			scope:venomous_creature = flag:fat_tail #Arabia, Middle East, Egypt
+	# 		}
+	# 		trigger_else = { 
+	# 			location = { 
+	# 				OR = {
+	# 					geographical_region = world_middle_east
+	# 					geographical_region = world_africa_north_east
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	text = {
 		localization_key = venomous_creature_viper
@@ -1065,62 +1071,65 @@ VenomousCreature = {
 		}
 	}
 
-	text = {
-		localization_key = venomous_creature_mamba
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:venomous_creature }
-				scope:venomous_creature = flag:mamba #Sub-saharan Africa
-			}
-			trigger_else = { 
-				location = { geographical_region = world_africa_west }
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = venomous_creature_mamba
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:venomous_creature }
+	# 			scope:venomous_creature = flag:mamba #Sub-saharan Africa
+	# 		}
+	# 		trigger_else = { 
+	# 			location = { geographical_region = world_africa_west }
+	# 		}
+	# 	}
+	# }
 
-	text = {
-		localization_key = venomous_creature_boomslang
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:venomous_creature }
-				scope:venomous_creature = flag:boomslang #Sub-saharan Africa
-			}
-			trigger_else = { 
-				location = { geographical_region = world_africa_west }
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = venomous_creature_boomslang
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:venomous_creature }
+	# 			scope:venomous_creature = flag:boomslang #Sub-saharan Africa
+	# 		}
+	# 		trigger_else = { 
+	# 			location = { geographical_region = world_africa_west }
+	# 		}
+	# 	}
+	# }
 
-	text = {
-		localization_key = venomous_creature_king_cobra
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:venomous_creature }
-				scope:venomous_creature = flag:king_cobra #South-east Asia + India
-			}
-			trigger_else = { 
-				location = { 
-					OR = {
-						geographical_region = world_india
-						geographical_region = world_burma
-					}
-				}
-			}
-		}
-	}
-
-	text = {
-		localization_key = venomous_creature_daboia
-		trigger = {
-			trigger_if = {
-				limit = { exists = scope:venomous_creature }
-				scope:venomous_creature = flag:daboia #India
-			}
-			trigger_else = { 
-				location = { geographical_region = world_india }
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = venomous_creature_king_cobra
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:venomous_creature }
+	# 			scope:venomous_creature = flag:king_cobra #South-east Asia + India
+	# 		}
+	# 		trigger_else = { 
+	# 			location = { 
+	# 				OR = {
+	# 					geographical_region = world_india
+	# 					geographical_region = world_burma
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	#L5R Disabled
+	# text = {
+	# 	localization_key = venomous_creature_daboia
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = scope:venomous_creature }
+	# 			scope:venomous_creature = flag:daboia #India
+	# 		}
+	# 		trigger_else = { 
+	# 			location = { geographical_region = world_india }
+	# 		}
+	# 	}
+	# }
 
 	text = {
 		localization_key = venomous_creature_saw_scale
@@ -1132,9 +1141,11 @@ VenomousCreature = {
 			trigger_else = { 
 				location = { 
 					OR = {
-						geographical_region = world_africa_north
-						geographical_region = world_middle_east
-						geographical_region = world_india
+						#L5R Modified
+						geographical_region = rokugan_spice_and_silk_isles
+						# geographical_region = world_africa_north
+						# geographical_region = world_middle_east
+						# geographical_region = world_india
 					}
 				}
 			}
@@ -1151,8 +1162,10 @@ VenomousCreature = {
 			trigger_else = { 
 				location = { 
 					OR = {
-						geographical_region = world_india
-							geographical_region = world_burma
+						#L5R Modified
+						geographical_region = rokugan_spice_and_silk_isles
+						# geographical_region = world_india
+						# geographical_region = world_burma
 					}
 				}
 			}
@@ -1188,8 +1201,9 @@ VenomousCreatureType = {
 		trigger = {
 			OR = {
 				scope:venomous_creature = flag:red_scorpion
-				scope:venomous_creature = flag:deathstalker
-				scope:venomous_creature = flag:fat_tail
+				#L5R Disabled
+				# scope:venomous_creature = flag:deathstalker
+				# scope:venomous_creature = flag:fat_tail
 			}
 		}
 	}
@@ -1214,10 +1228,11 @@ VenomousCreatureType = {
 		trigger = {
 			OR = {
 				scope:venomous_creature = flag:viper
-				scope:venomous_creature = flag:mamba
-				scope:venomous_creature = flag:boomslang
-				scope:venomous_creature = flag:king_cobra
-				scope:venomous_creature = flag:daboia
+				#L5R Disabled
+				# scope:venomous_creature = flag:mamba
+				# scope:venomous_creature = flag:boomslang
+				# scope:venomous_creature = flag:king_cobra
+				# scope:venomous_creature = flag:daboia
 				scope:venomous_creature = flag:saw_scale
 				scope:venomous_creature = flag:krait
 			}
@@ -1235,8 +1250,9 @@ VenomousCreatureTypePlural = {
 		trigger = {
 			OR = {
 				scope:venomous_creature = flag:red_scorpion
-				scope:venomous_creature = flag:deathstalker
-				scope:venomous_creature = flag:fat_tail
+				#L5R Disabled
+				# scope:venomous_creature = flag:deathstalker
+				# scope:venomous_creature = flag:fat_tail
 			}
 		}
 	}
@@ -1261,10 +1277,11 @@ VenomousCreatureTypePlural = {
 		trigger = {
 			OR = {
 				scope:venomous_creature = flag:viper
-				scope:venomous_creature = flag:mamba
-				scope:venomous_creature = flag:boomslang
-				scope:venomous_creature = flag:king_cobra
-				scope:venomous_creature = flag:daboia
+				#L5R Disabled
+				# scope:venomous_creature = flag:mamba
+				# scope:venomous_creature = flag:boomslang
+				# scope:venomous_creature = flag:king_cobra
+				# scope:venomous_creature = flag:daboia
 				scope:venomous_creature = flag:saw_scale
 				scope:venomous_creature = flag:krait
 			}
@@ -1282,8 +1299,9 @@ VenomousCreatureAttack = {
 		trigger = {
 			OR = {
 				scope:venomous_creature = flag:red_scorpion
-				scope:venomous_creature = flag:deathstalker
-				scope:venomous_creature = flag:fat_tail
+				#L5R Disabled
+				# scope:venomous_creature = flag:deathstalker
+				# scope:venomous_creature = flag:fat_tail
 				scope:venomous_creature = flag:beaked_mammal
 			}
 		}
@@ -1294,10 +1312,11 @@ VenomousCreatureAttack = {
 			OR = {
 				scope:venomous_creature = flag:rare_spider
 				scope:venomous_creature = flag:viper
-				scope:venomous_creature = flag:mamba
-				scope:venomous_creature = flag:boomslang
-				scope:venomous_creature = flag:king_cobra
-				scope:venomous_creature = flag:daboia
+				#L5R Disabled
+				# scope:venomous_creature = flag:mamba
+				# scope:venomous_creature = flag:boomslang
+				# scope:venomous_creature = flag:king_cobra
+				# scope:venomous_creature = flag:daboia
 				scope:venomous_creature = flag:saw_scale
 				scope:venomous_creature = flag:krait
 			}
@@ -1314,8 +1333,9 @@ VenomousCreatureAttackPlural = {
 		trigger = {
 			OR = {
 				scope:venomous_creature = flag:red_scorpion
-				scope:venomous_creature = flag:deathstalker
-				scope:venomous_creature = flag:fat_tail
+				#L5R Disabled
+				# scope:venomous_creature = flag:deathstalker
+				# scope:venomous_creature = flag:fat_tail
 				scope:venomous_creature = flag:beaked_mammal
 			}
 		}
@@ -1326,10 +1346,11 @@ VenomousCreatureAttackPlural = {
 			OR = {
 				scope:venomous_creature = flag:rare_spider
 				scope:venomous_creature = flag:viper
-				scope:venomous_creature = flag:mamba
-				scope:venomous_creature = flag:boomslang
-				scope:venomous_creature = flag:king_cobra
-				scope:venomous_creature = flag:daboia
+				#L5R Disabled
+				# scope:venomous_creature = flag:mamba
+				# scope:venomous_creature = flag:boomslang
+				# scope:venomous_creature = flag:king_cobra
+				# scope:venomous_creature = flag:daboia
 				scope:venomous_creature = flag:saw_scale
 				scope:venomous_creature = flag:krait
 			}
@@ -1345,8 +1366,9 @@ VenomousCreatureMovement = {
 		trigger = {
 			OR = {
 				scope:venomous_creature = flag:red_scorpion
-				scope:venomous_creature = flag:deathstalker
-				scope:venomous_creature = flag:fat_tail
+				#L5R Disabled
+				# scope:venomous_creature = flag:deathstalker
+				# scope:venomous_creature = flag:fat_tail
 				scope:venomous_creature = flag:rare_spider
 			}
 		}
@@ -1356,10 +1378,11 @@ VenomousCreatureMovement = {
 		trigger = {
 			OR = {
 				scope:venomous_creature = flag:viper
-				scope:venomous_creature = flag:mamba
-				scope:venomous_creature = flag:boomslang
-				scope:venomous_creature = flag:king_cobra
-				scope:venomous_creature = flag:daboia
+				#L5R Disabled
+				# scope:venomous_creature = flag:mamba
+				# scope:venomous_creature = flag:boomslang
+				# scope:venomous_creature = flag:king_cobra
+				# scope:venomous_creature = flag:daboia
 				scope:venomous_creature = flag:saw_scale
 				scope:venomous_creature = flag:krait
 			}
@@ -2117,141 +2140,144 @@ get_region_dog_type = {
 	type = character 
 	random_valid = yes
 
+	#L5R Disabled
 	# Britain
-	text = {
-		trigger = {
-			current_date >= 1300.1.1
-			capital_province = { geographical_region = world_europe_west_britannia }
-		}
-		localization_key = dog_type_talbot # Talbot
-	}
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_europe_west_britannia }
-		}
-		localization_key = dog_type_corgi # Corgi
-	}
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_europe_west_britannia }
-		}
-		localization_key = dog_type_rache # Rache
-	}
-	# Germany
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_europe_west_germania }
-		}
-		localization_key = dog_type_bullenbeisser # Bullenbeisser
-	}
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_europe_west_germania }
-		}
-		localization_key = dog_type_spitz # Spitz
-	}
-	# France
-	text = {
-		trigger = {
-			current_date >= 1100.1.1
-			capital_province = { geographical_region = world_europe_west_francia }
-		}
-		localization_key = dog_type_chiengris # Chien-gris
-	}
-	# Europe
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_europe_south }
-		}
-		localization_key = dog_type_molossian # Molossus
-	}
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_europe }
-		}
-		localization_key = dog_type_mastiff # Mastiff
-	}
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_europe_north }
-		}
-		localization_key = dog_type_vallhund # Vallhund
-	}
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_europe }
-		}
-		localization_key = dog_type_limer # Limer
-	}
-	# Steppe
-	text = {
-		trigger = {
-			capital_province = {
-				OR = {
-					geographical_region = world_europe
-					geographical_region = world_steppe_west
-				}
-			}
-		}
-		localization_key = dog_type_alaunt # Alaunt
-	}
-	text = {
-		trigger = {
-			capital_province = {
-				OR = {
-					geographical_region = world_europe_north
-					geographical_region = world_steppe_west
-				}
-			}
-		}
-		localization_key = dog_type_laika # Laika (Samoyed)
-	}
-	# Africa
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_africa }
-		}
-		localization_key = dog_type_basenji # Basenji
-	}
-	# Asia
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_middle_east }
-		}
-		localization_key = dog_type_canaan # Canaan
-	}
-	text = {
-		trigger = {
-			capital_province = {
-				OR = {
-					geographical_region = world_middle_east
-					geographical_region = world_africa_north
-				}
-			}
-		}
-		localization_key = dog_type_saluki # Saluki
-	}
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_persian_empire }
-		}
-		localization_key = dog_type_tazi # Tazi (Afghan)
-	}
-	# India
-	text = {
-		trigger = {
-			capital_province = { geographical_region = world_india }
-		}
-		localization_key = dog_type_desi # Desi
-	}
+	# text = {
+	# 	trigger = {
+	# 		current_date >= 1300.1.1
+	# 		capital_province = { geographical_region = world_europe_west_britannia }
+	# 	}
+	# 	localization_key = dog_type_talbot # Talbot
+	# }
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_europe_west_britannia }
+	# 	}
+	# 	localization_key = dog_type_corgi # Corgi
+	# }
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_europe_west_britannia }
+	# 	}
+	# 	localization_key = dog_type_rache # Rache
+	# }
+	# # Germany
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_europe_west_germania }
+	# 	}
+	# 	localization_key = dog_type_bullenbeisser # Bullenbeisser
+	# }
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_europe_west_germania }
+	# 	}
+	# 	localization_key = dog_type_spitz # Spitz
+	# }
+	# # France
+	# text = {
+	# 	trigger = {
+	# 		current_date >= 1100.1.1
+	# 		capital_province = { geographical_region = world_europe_west_francia }
+	# 	}
+	# 	localization_key = dog_type_chiengris # Chien-gris
+	# }
+	# # Europe
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_europe_south }
+	# 	}
+	# 	localization_key = dog_type_molossian # Molossus
+	# }
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_europe }
+	# 	}
+	# 	localization_key = dog_type_mastiff # Mastiff
+	# }
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_europe_north }
+	# 	}
+	# 	localization_key = dog_type_vallhund # Vallhund
+	# }
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_europe }
+	# 	}
+	# 	localization_key = dog_type_limer # Limer
+	# }
+	# # Steppe
+	# text = {
+	# 	trigger = {
+	# 		capital_province = {
+	# 			OR = {
+	# 				geographical_region = world_europe
+	# 				geographical_region = world_steppe_west
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = dog_type_alaunt # Alaunt
+	# }
+	# text = {
+	# 	trigger = {
+	# 		capital_province = {
+	# 			OR = {
+	# 				geographical_region = world_europe_north
+	# 				geographical_region = world_steppe_west
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = dog_type_laika # Laika (Samoyed)
+	# }
+	# # Africa
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_africa }
+	# 	}
+	# 	localization_key = dog_type_basenji # Basenji
+	# }
+	# # Asia
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_middle_east }
+	# 	}
+	# 	localization_key = dog_type_canaan # Canaan
+	# }
+	# text = {
+	# 	trigger = {
+	# 		capital_province = {
+	# 			OR = {
+	# 				geographical_region = world_middle_east
+	# 				geographical_region = world_africa_north
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = dog_type_saluki # Saluki
+	# }
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_persian_empire }
+	# 	}
+	# 	localization_key = dog_type_tazi # Tazi (Afghan)
+	# }
+	# # India
+	# text = {
+	# 	trigger = {
+	# 		capital_province = { geographical_region = world_india }
+	# 	}
+	# 	localization_key = dog_type_desi # Desi
+	# }
 	# East
 	text = {
 		trigger = {
 			capital_province = {
 				OR = {
-					geographical_region = world_himalaya
-					geographical_region = world_steppe_tarim
-					geographical_region = world_steppe_east
+					#L5R Modified
+					geographical_region = rokugan_dragon
+					# geographical_region = world_himalaya
+					# geographical_region = world_steppe_tarim
+					# geographical_region = world_steppe_east
 				}
 			}
 		}
@@ -2271,32 +2297,38 @@ get_region_flower_type = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_india
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_africa_west
-				geographical_region = world_africa_east
+				#L5R Modified
+				geographical_region = rokugan_scorpion
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_india
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_africa_west
+				# geographical_region = world_africa_east
 			}
 		}
 		localization_key = flower_type_hibiscus # Hibiscus
 	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_india
+	# 			geographical_region = world_africa_west
+	# 			geographical_region = world_africa_east
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_gardenia # Gardenia
+	# }
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_india
-				geographical_region = world_africa_west
-				geographical_region = world_africa_east
-			}
-		}
-		localization_key = flower_type_gardenia # Gardenia
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_steppe_east
-				geographical_region = world_steppe_tarim
-				geographical_region = world_himalaya
-				geographical_region = world_india
+				#L5R Modified
+				geographical_region = world_rokugan
+				# geographical_region = world_steppe_east
+				# geographical_region = world_steppe_tarim
+				# geographical_region = world_himalaya
+				# geographical_region = world_india
 			}
 		}
 		localization_key = flower_type_lotus # Lotus
@@ -2304,10 +2336,12 @@ get_region_flower_type = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_steppe_east
-				geographical_region = world_steppe_tarim
-				geographical_region = world_himalaya
-				geographical_region = world_india
+				#L5R Modified
+				geographical_region = world_rokugan
+				# geographical_region = world_steppe_east
+				# geographical_region = world_steppe_tarim
+				# geographical_region = world_himalaya
+				# geographical_region = world_india
 			}
 		}
 		localization_key = flower_type_chrysanthemum # Chrysanthemum
@@ -2315,11 +2349,13 @@ get_region_flower_type = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_india
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe_west
+				#L5R Modified
+				geographical_region = world_rokugan
+				# geographical_region = world_india
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe_west
 			}
 		}
 		localization_key = flower_type_jasmine # Jasmine
@@ -2327,48 +2363,54 @@ get_region_flower_type = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe
-				geographical_region = world_africa
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe
+				# geographical_region = world_africa
 			}
 		}
 		localization_key = flower_type_delphinium # Delphinium
 	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_europe
+	# 			geographical_region = world_middle_east
+	# 			geographical_region = world_middle_east_persia
+	# 			geographical_region = world_asia_minor
+	# 			geographical_region = world_steppe_west
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_violet # Violet/Pansy
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_europe
+	# 			geographical_region = world_middle_east
+	# 			geographical_region = world_middle_east_persia
+	# 			geographical_region = world_asia_minor
+	# 			geographical_region = world_steppe_west
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_peony # Peony
+	# }
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe_west
-			}
-		}
-		localization_key = flower_type_violet # Violet/Pansy
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe_west
-			}
-		}
-		localization_key = flower_type_peony # Peony
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_lavender # Lavender
@@ -2376,12 +2418,14 @@ get_region_flower_type = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe
-				geographical_region = world_india
+				#L5R Modified
+				geographical_region = world_rokugan
+				# geographical_region = world_europe
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe
+				# geographical_region = world_india
 			}
 		}
 		localization_key = flower_type_lily # Lily
@@ -2389,11 +2433,13 @@ get_region_flower_type = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_geranium # Geranium
@@ -2401,55 +2447,60 @@ get_region_flower_type = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_iris # Iris
 	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_europe
+	# 			geographical_region = world_middle_east
+	# 			geographical_region = world_middle_east_persia
+	# 			geographical_region = world_asia_minor
+	# 			geographical_region = world_steppe_west
+	# 			geographical_region = world_africa_north
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_foxglove # Foxglove/Digitalis
+	# }
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_europe_south
+	# 			geographical_region = world_africa_north
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_carnation # Carnation/Dianthus
+	# }
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_europe_south
+	# 			geographical_region = world_africa_north
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_snapdragon # Snapdragon/Antirrhinum
+	# }
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe_west
-				geographical_region = world_africa_north
-			}
-		}
-		localization_key = flower_type_foxglove # Foxglove/Digitalis
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe_south
-				geographical_region = world_africa_north
-			}
-		}
-		localization_key = flower_type_carnation # Carnation/Dianthus
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe_south
-				geographical_region = world_africa_north
-			}
-		}
-		localization_key = flower_type_snapdragon # Snapdragon/Antirrhinum
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe
-				geographical_region = world_africa_north
-				geographical_region = world_asia_minor
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe
+				# geographical_region = world_africa_north
+				# geographical_region = world_asia_minor
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_narcissus # Narcissus/Daffodil
@@ -2457,36 +2508,41 @@ get_region_flower_type = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe_south
-				geographical_region = world_africa_north
-				geographical_region = world_asia_minor
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe_south
+				# geographical_region = world_africa_north
+				# geographical_region = world_asia_minor
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_crocus # Crocus
 	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_asia_minor
+	# 			geographical_region = world_middle_east
+	# 			geographical_region = world_middle_east_persia
+	# 			geographical_region = world_steppe_west
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_tulip # Tulip
+	# }
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_asia_minor
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_steppe_west
-			}
-		}
-		localization_key = flower_type_tulip # Tulip
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe_south
-				geographical_region = world_africa_north
-				geographical_region = world_asia_minor
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe_south
+				# geographical_region = world_africa_north
+				# geographical_region = world_asia_minor
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_poppy # Poppy
@@ -2512,32 +2568,37 @@ get_region_flower_type_plural = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_india
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_africa_west
-				geographical_region = world_africa_east
+				#L5R Modified
+				geographical_region = rokugan_scorpion
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_india
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_africa_west
+				# geographical_region = world_africa_east
 			}
 		}
 		localization_key = flower_type_hibiscus_plural # Hibiscuses
 	}
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_india
+	# 			geographical_region = world_africa_west
+	# 			geographical_region = world_africa_east
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_gardenia_plural # Gardenias
+	# }
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_india
-				geographical_region = world_africa_west
-				geographical_region = world_africa_east
-			}
-		}
-		localization_key = flower_type_gardenia_plural # Gardenias
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_steppe_east
-				geographical_region = world_steppe_tarim
-				geographical_region = world_himalaya
-				geographical_region = world_india
+				#L5R Modified
+				geographical_region = world_rokugan
+				# geographical_region = world_steppe_east
+				# geographical_region = world_steppe_tarim
+				# geographical_region = world_himalaya
+				# geographical_region = world_india
 			}
 		}
 		localization_key = flower_type_lotus_plural # Lotuses
@@ -2545,10 +2606,12 @@ get_region_flower_type_plural = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_steppe_east
-				geographical_region = world_steppe_tarim
-				geographical_region = world_himalaya
-				geographical_region = world_india
+				#L5R Modified
+				geographical_region = world_rokugan
+				# geographical_region = world_steppe_east
+				# geographical_region = world_steppe_tarim
+				# geographical_region = world_himalaya
+				# geographical_region = world_india
 			}
 		}
 		localization_key = flower_type_chrysanthemum_plural # Chrysanthemums
@@ -2556,11 +2619,13 @@ get_region_flower_type_plural = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_india
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe_west
+				#L5R Modified
+				geographical_region = world_rokugan
+				# geographical_region = world_india
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe_west
 			}
 		}
 		localization_key = flower_type_jasmine # Jasmine
@@ -2568,48 +2633,54 @@ get_region_flower_type_plural = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe
-				geographical_region = world_africa
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe
+				# geographical_region = world_africa
 			}
 		}
 		localization_key = flower_type_delphinium_plural # Delphiniums
 	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_europe
+	# 			geographical_region = world_middle_east
+	# 			geographical_region = world_middle_east_persia
+	# 			geographical_region = world_asia_minor
+	# 			geographical_region = world_steppe_west
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_violet_plural # Violets/Pansies
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_europe
+	# 			geographical_region = world_middle_east
+	# 			geographical_region = world_middle_east_persia
+	# 			geographical_region = world_asia_minor
+	# 			geographical_region = world_steppe_west
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_peony_plural # Peonies
+	# }
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe_west
-			}
-		}
-		localization_key = flower_type_violet_plural # Violets/Pansies
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe_west
-			}
-		}
-		localization_key = flower_type_peony_plural # Peonies
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_lavender # Lavender
@@ -2617,12 +2688,14 @@ get_region_flower_type_plural = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe
-				geographical_region = world_india
+				#L5R Modified
+				geographical_region = world_rokugan
+				# geographical_region = world_europe
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe
+				# geographical_region = world_india
 			}
 		}
 		localization_key = flower_type_lily_plural # Lilies
@@ -2630,11 +2703,13 @@ get_region_flower_type_plural = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_geranium_plural # Geraniums
@@ -2642,55 +2717,62 @@ get_region_flower_type_plural = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_asia_minor
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_iris_plural # Irises
 	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_europe
+	# 			geographical_region = world_middle_east
+	# 			geographical_region = world_middle_east_persia
+	# 			geographical_region = world_asia_minor
+	# 			geographical_region = world_steppe_west
+	# 			geographical_region = world_africa_north
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_foxglove_plural # Foxgloves/Digitalises
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_europe_south
+	# 			geographical_region = world_africa_north
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_carnation_plural # Carnations/Dianthuses
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_europe_south
+	# 			geographical_region = world_africa_north
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_snapdragon_plural # Snapdragons/Antirrhinums
+	# }
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_asia_minor
-				geographical_region = world_steppe_west
-				geographical_region = world_africa_north
-			}
-		}
-		localization_key = flower_type_foxglove_plural # Foxgloves/Digitalises
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe_south
-				geographical_region = world_africa_north
-			}
-		}
-		localization_key = flower_type_carnation_plural # Carnations/Dianthuses
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe_south
-				geographical_region = world_africa_north
-			}
-		}
-		localization_key = flower_type_snapdragon_plural # Snapdragons/Antirrhinums
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe
-				geographical_region = world_africa_north
-				geographical_region = world_asia_minor
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe
+				# geographical_region = world_africa_north
+				# geographical_region = world_asia_minor
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_narcissus_plural # Narcissuses/Daffodils
@@ -2698,36 +2780,41 @@ get_region_flower_type_plural = {
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_europe_south
-				geographical_region = world_africa_north
-				geographical_region = world_asia_minor
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe_south
+				# geographical_region = world_africa_north
+				# geographical_region = world_asia_minor
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_crocus_plural # Crocuses
 	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			geographical_region = world_asia_minor
+	# 			geographical_region = world_middle_east
+	# 			geographical_region = world_middle_east_persia
+	# 			geographical_region = world_steppe_west
+	# 		}
+	# 	}
+	# 	localization_key = flower_type_tulip_plural # Tulips
+	# }
 	text = {
 		trigger = {
 			OR = {
-				geographical_region = world_asia_minor
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_steppe_west
-			}
-		}
-		localization_key = flower_type_tulip_plural # Tulips
-	}
-	text = {
-		trigger = {
-			OR = {
-				geographical_region = world_europe_south
-				geographical_region = world_africa_north
-				geographical_region = world_asia_minor
-				geographical_region = world_middle_east
-				geographical_region = world_middle_east_persia
-				geographical_region = world_steppe
+				#L5R Modified
+				geographical_region = rokugan_unicorn
+				# geographical_region = world_europe_south
+				# geographical_region = world_africa_north
+				# geographical_region = world_asia_minor
+				# geographical_region = world_middle_east
+				# geographical_region = world_middle_east_persia
+				# geographical_region = world_steppe
 			}
 		}
 		localization_key = flower_type_poppy_plural # Poppies
@@ -2789,32 +2876,35 @@ RegionalFerociousAnimal = {
 				var:animal_type = flag:wolf
 			}
 			trigger_else = {
-				NOT = {
-					location = { geographical_region = world_africa_west }
-				}
+				#L5R Disabled
+				always = yes
+				# NOT = {
+				# 	location = { geographical_region = world_africa_west }
+				# }
 			}
 		}
 		localization_key = animal_type_wolf
 	}
+	#L5R Disabled
 	# Hyena
-	text = {
-		trigger = {
-			trigger_if = {
-				limit = { exists = var:animal_type }
-				var:animal_type = flag:hyena
-			}
-			trigger_else = {
-				location = {
-					OR = {
-						geographical_region = world_africa
-						geographical_region = world_middle_east
-						geographical_region = world_india
-					}
-				}
-			}
-		}
-		localization_key = animal_type_hyena
-	}
+	# text = {
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { exists = var:animal_type }
+	# 			var:animal_type = flag:hyena
+	# 		}
+	# 		trigger_else = {
+	# 			location = {
+	# 				OR = {
+	# 					geographical_region = world_africa
+	# 					geographical_region = world_middle_east
+	# 					geographical_region = world_india
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = animal_type_hyena
+	# }
 	#Boar
 	text = {
 		trigger = {
@@ -2867,13 +2957,14 @@ RegionalFerociousAnimal = {
 		}
 		localization_key = animal_type_lion
 	}
+	#L5R Disabled
 	#Gorilla
-	text = {
-		trigger = {
-			location = { geographical_region = world_africa_east }
-		}
-		localization_key = animal_type_gorilla
-	}
+	# text = {
+	# 	trigger = {
+	# 		location = { geographical_region = world_africa_east }
+	# 	}
+	# 	localization_key = animal_type_gorilla
+	# }
 	#Fallback - Shape
 	text = {
 		trigger = { always = no }
@@ -2895,27 +2986,29 @@ RegionalOnlyFerociousAnimal = {
 	}
 	#Wolf
 	text = {
-		trigger = {
-			NOT = {
-				location = { geographical_region = world_africa_west }
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	NOT = {
+		# 		location = { geographical_region = world_africa_west }
+		# 	}
+		# }
 		localization_key = animal_type_wolf
 		fallback = yes
 	}
+	#L5R Disabled
 	# Hyena
-	text = {
-		trigger = {
-			location = {
-				OR = {
-					geographical_region = world_africa
-					geographical_region = world_middle_east
-					geographical_region = world_india
-				}
-			}
-		}
-		localization_key = animal_type_hyena
-	}
+	# text = {
+	# 	trigger = {
+	# 		location = {
+	# 			OR = {
+	# 				geographical_region = world_africa
+	# 				geographical_region = world_middle_east
+	# 				geographical_region = world_india
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = animal_type_hyena
+	# }
 	#Boar
 	text = {
 		trigger = {
@@ -2944,13 +3037,14 @@ RegionalOnlyFerociousAnimal = {
 		}
 		localization_key = animal_type_lion
 	}
+	#L5R Disabled
 	#Gorilla
-	text = {
-		trigger = {
-			location = { geographical_region = world_africa_east }
-		}
-		localization_key = animal_type_gorilla
-	}
+	# text = {
+	# 	trigger = {
+	# 		location = { geographical_region = world_africa_east }
+	# 	}
+	# 	localization_key = animal_type_gorilla
+	# }
 }
 
 #this is used with the select_local_farm_animal_effect effect
@@ -3015,12 +3109,14 @@ RegionalFarmAnimal = {
 				var:local_farm_animal = flag:pig
 			}
 			trigger_else = { 
-				location.faith = {
-					NOR = {
-						religion_tag = islam_religion
-						religion_tag = judaism_religion
-					}
-				}
+				#L5R Disabled
+				always = yes 
+				# location.faith = {
+				# 	NOR = {
+				# 		religion_tag = islam_religion
+				# 		religion_tag = judaism_religion
+				# 	}
+				# }
 			}
 		}
 		localization_key = regional_farm_animal_pig
@@ -3036,8 +3132,10 @@ RegionalFarmAnimal = {
 			trigger_else = {
 				location = {
 					OR = {
-						geographical_region = world_tibet
-						geographical_region = ghw_region_mongolia
+						#L5R Modified
+						geographical_region = rokugan_dragon
+						# geographical_region = world_tibet
+						# geographical_region = ghw_region_mongolia
 					}
 				}
 			}
@@ -3046,26 +3144,27 @@ RegionalFarmAnimal = {
 		localization_key = regional_farm_animal_yak
 	}
 
+	#L5R Disabled
 	#Camel
-	text = {
-		trigger = {
-			#No need to disturb the original implementation
-			trigger_if = {
-				limit = { 
-					NOT = { exists = var:local_farm_animal }
-				}
-				location = {
-					OR = {
-						geographical_region = world_middle_east
-						geographical_region = world_africa_north
-					}
-				}
-			}
-			trigger_else = { always = no }
+	# text = {
+	# 	trigger = {
+	# 		#No need to disturb the original implementation
+	# 		trigger_if = {
+	# 			limit = { 
+	# 				NOT = { exists = var:local_farm_animal }
+	# 			}
+	# 			location = {
+	# 				OR = {
+	# 					geographical_region = world_middle_east
+	# 					geographical_region = world_africa_north
+	# 				}
+	# 			}
+	# 		}
+	# 		trigger_else = { always = no }
 			
-		}
-		localization_key = regional_farm_animal_camel
-	}
+	# 	}
+	# 	localization_key = regional_farm_animal_camel
+	# }
 
 	#Horse
 	text = {
@@ -3146,13 +3245,15 @@ RegionalFarmAnimalPlural = {
 				limit = { exists = var:local_farm_animal }
 				var:local_farm_animal = flag:pig
 			}
-			trigger_else = { 
-				location.faith = {
-					NOR = {
-						religion_tag = islam_religion
-						religion_tag = judaism_religion
-					}
-				}
+			trigger_else = {  
+				#L5R Disabled
+				always = yes
+				# location.faith = {
+				# 	NOR = {
+				# 		religion_tag = islam_religion
+				# 		religion_tag = judaism_religion
+				# 	}
+				# }
 			}
 		}
 		localization_key = regional_farm_animal_pig_plural
@@ -3168,8 +3269,10 @@ RegionalFarmAnimalPlural = {
 			trigger_else = {
 				location = {
 					OR = {
-						geographical_region = world_tibet
-						geographical_region = ghw_region_mongolia
+						#L5R Modified
+						geographical_region = rokugan_dragon
+						# geographical_region = world_tibet
+						# geographical_region = ghw_region_mongolia
 					}
 				}
 			}
@@ -3240,12 +3343,14 @@ SoundingRegionalFarmAnimal = {
 				var:local_farm_animal = flag:pig
 			}
 			trigger_else = { 
-				location.faith = {
-					NOR = {
-						religion_tag = islam_religion
-						religion_tag = judaism_religion
-					}
-				}
+				#L5R Disabled
+				always = yes
+				# location.faith = {
+				# 	NOR = {
+				# 		religion_tag = islam_religion
+				# 		religion_tag = judaism_religion
+				# 	}
+				# }
 			}
 		}
 		localization_key = regional_farm_animal_snorting_pig
@@ -3261,8 +3366,10 @@ SoundingRegionalFarmAnimal = {
 			trigger_else = {
 				location = {
 					OR = {
-						geographical_region = world_tibet
-						geographical_region = ghw_region_mongolia
+						#L5R Modified
+						geographical_region = rokugan_dragon
+						# geographical_region = world_tibet
+						# geographical_region = ghw_region_mongolia
 					}
 				}
 			}
@@ -3271,26 +3378,27 @@ SoundingRegionalFarmAnimal = {
 		localization_key = regional_farm_animal_grunting_yak
 	}
 
+	#L5R Disabled
 	#Camel
-	text = {
-		trigger = {
-			#No need to disturb the original implementation
-			trigger_if = {
-				limit = { 
-					NOT = { exists = var:local_farm_animal }
-				}
-				location = {
-					OR = {
-						geographical_region = world_middle_east
-						geographical_region = world_africa_north
-					}
-				}
-			}
-			trigger_else = { always = no }
+	# text = {
+	# 	trigger = {
+	# 		#No need to disturb the original implementation
+	# 		trigger_if = {
+	# 			limit = { 
+	# 				NOT = { exists = var:local_farm_animal }
+	# 			}
+	# 			location = {
+	# 				OR = {
+	# 					geographical_region = world_middle_east
+	# 					geographical_region = world_africa_north
+	# 				}
+	# 			}
+	# 		}
+	# 		trigger_else = { always = no }
 			
-		}
-		localization_key = regional_farm_animal_grunting_camel
-	}
+	# 	}
+	# 	localization_key = regional_farm_animal_grunting_camel
+	# }
 
 	#Horse
 	text = {
@@ -3410,14 +3518,15 @@ RegionalPoxAnimal = {
 
 	#Pig
 	text = {
-		trigger = {
-			faith = {
-				NOR = {
-					religion_tag = islam_religion
-					religion_tag = judaism_religion
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	faith = {
+		# 		NOR = {
+		# 			religion_tag = islam_religion
+		# 			religion_tag = judaism_religion
+		# 		}
+		# 	}
+		# }
 		localization_key = regional_farm_animal_pig
 	}
 
@@ -3426,8 +3535,10 @@ RegionalPoxAnimal = {
 		trigger = {
 			capital_province = {
 				OR = {
-					geographical_region = world_tibet
-					geographical_region = ghw_region_mongolia
+					#L5R Modified
+					geographical_region = rokugan_dragon
+					# geographical_region = world_tibet
+					# geographical_region = ghw_region_mongolia
 				}
 			}
 		}
@@ -3439,10 +3550,14 @@ RegionalPoxAnimal = {
 		trigger = {
 			capital_province = {
 				OR = {
-					geographical_region = world_middle_east
-					geographical_region = world_india
-					geographical_region = world_africa
-					geographical_region = world_burma
+					#L5R Modified
+					geographical_region = rokugan_lion
+					geographical_region = rokugan_scorpion
+					geographical_region = rokugan_shinomen_mori
+					# geographical_region = world_middle_east
+					# geographical_region = world_india
+					# geographical_region = world_africa
+					# geographical_region = world_burma
 				}
 			}
 		}
@@ -3492,34 +3607,38 @@ WritingInstrument = {
 GetKnightErrantAnimal = {
 	type = character
 	
-	text = {
-		trigger = {
-			location = {
-				geographical_region = world_europe
-			}
-		}
-		localization_key = GetKnightErrantAnimal_swan
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		location = {
+	# 			geographical_region = world_europe
+	# 		}
+	# 	}
+	# 	localization_key = GetKnightErrantAnimal_swan
+	# }
 	text = {
 		trigger = {
 			location = {
 				OR = {
-					geographical_region = world_india
-					geographical_region = world_burma
-					geographical_region = ghw_region_caucasus
+					#L5R Modified
+					geographical_region = world_rokugan
+					# geographical_region = world_india
+					# geographical_region = world_burma
+					# geographical_region = ghw_region_caucasus
 				}
 			}
 		}
 		localization_key = GetKnightErrantAnimal_tiger
 	}
-	text = {
-		trigger = {
-			location = {
-				geographical_region = world_africa
-			}
-		}
-		localization_key = GetKnightErrantAnimal_lion
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		location = {
+	# 			geographical_region = world_africa
+	# 		}
+	# 	}
+	# 	localization_key = GetKnightErrantAnimal_lion
+	# }
 	text = { # Basically everywhere
 		localization_key = GetKnightErrantAnimal_hart
 		fallback = yes

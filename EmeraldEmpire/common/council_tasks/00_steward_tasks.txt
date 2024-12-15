@@ -554,24 +554,25 @@ task_develop_county = {
 							}
 						}
 					}
+					#L5R Disabled
 					# Struggle Parameter
-					if = {
-						limit = {
-							NOT = { scope:county.culture  = scope:councillor_liege.culture }
-							any_character_struggle = {
-								involvement = involved
-								has_struggle_phase_parameter = gain_acceptance_when_developing_other_culture_county
-							}
-						}
-						scope:county.culture = {
-							save_scope_as = current_culture
-							change_cultural_acceptance = {
-								target = scope:councillor_liege.culture
-								value =	miniscule_cultural_acceptance_value
-								desc = cultural_acceptance_gain_from_phase_effects
-							}
-						}
-					}
+					# if = {
+					# 	limit = {
+					# 		NOT = { scope:county.culture  = scope:councillor_liege.culture }
+					# 		any_character_struggle = {
+					# 			involvement = involved
+					# 			has_struggle_phase_parameter = gain_acceptance_when_developing_other_culture_county
+					# 		}
+					# 	}
+					# 	scope:county.culture = {
+					# 		save_scope_as = current_culture
+					# 		change_cultural_acceptance = {
+					# 			target = scope:councillor_liege.culture
+					# 			value =	miniscule_cultural_acceptance_value
+					# 			desc = cultural_acceptance_gain_from_phase_effects
+					# 		}
+					# 	}
+					# }
 
 				}
 			}
@@ -1169,17 +1170,18 @@ task_promote_culture = {
 			}
 			add = 10000 # Always keep going if this is already chosen
 		}
-		else_if = {
-			limit = {
-				scope:councillor_liege.culture = {
-					has_innovation = innovation_desert_tactics #Best way to check if the culture is Outremer
-				}
-				scope:councillor_liege = {
-					gold >= steward_convert_culture_value
-				}
-			}
-			add = 500
-		}
+		#L5R Disabled
+		# else_if = {
+		# 	limit = {
+		# 		scope:councillor_liege.culture = {
+		# 			has_innovation = innovation_desert_tactics #Best way to check if the culture is Outremer
+		# 		}
+		# 		scope:councillor_liege = {
+		# 			gold >= steward_convert_culture_value
+		# 		}
+		# 	}
+		# 	add = 500
+		# }
 		else_if = {
 			limit = {
 				scope:councillor_liege = {

@@ -360,16 +360,17 @@
 		}
 
 		ai_will_do = {
-			if = {
-				limit = {
-					primary_title.tier > tier_county
-					OR = {
-						#West Slavic
-						culture = { has_cultural_pillar = heritage_west_slavic }
-					}
-				}
-				value = 2
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		primary_title.tier > tier_county
+			# 		OR = {
+			# 			#West Slavic
+			# 			culture = { has_cultural_pillar = heritage_west_slavic }
+			# 		}
+			# 	}
+			# 	value = 2
+			# }
 		}
 
 		potential = {

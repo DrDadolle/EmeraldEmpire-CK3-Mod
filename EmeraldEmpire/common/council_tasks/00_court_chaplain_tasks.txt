@@ -495,22 +495,33 @@ task_conversion = {
 			limit = {
 				exists = scope:county
 				OR = {
+					#L5R Modified
 					AND = {
-						scope:councillor.faith = { has_doctrine_parameter = unreformed_syncretic_actor_opinion_active }
-						scope:county.faith = { has_doctrine_parameter = unreformed }
+						scope:councillor.faith = { has_doctrine_parameter = rokugan_syncretic_actor_opinion_active }
+						scope:county.faith = { 
+							OR = { 
+								religion_tag = shinseism_religion 
+								religion_tag = fortunism_religion 
+								religion_tag = ancestors_religion
+							}
+						}
 					}
-					AND = {
-						scope:councillor.faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
-						scope:county.faith = { religion_tag = christianity_religion }
-					}
-					AND = {
-						scope:councillor.faith = { has_doctrine_parameter = islamic_syncretic_actor_opinion_active }
-						scope:county.faith = { religion_tag = islam_religion }
-					}
-					AND = {
-						scope:councillor.faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
-						scope:county.faith = { religion_tag = judaism_religion }
-					}
+					# AND = {
+					# 	scope:councillor.faith = { has_doctrine_parameter = unreformed_syncretic_actor_opinion_active }
+					# 	scope:county.faith = { has_doctrine_parameter = unreformed }
+					# }
+					# AND = {
+					# 	scope:councillor.faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
+					# 	scope:county.faith = { religion_tag = christianity_religion }
+					# }
+					# AND = {
+					# 	scope:councillor.faith = { has_doctrine_parameter = islamic_syncretic_actor_opinion_active }
+					# 	scope:county.faith = { religion_tag = islam_religion }
+					# }
+					# AND = {
+					# 	scope:councillor.faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
+					# 	scope:county.faith = { religion_tag = judaism_religion }
+					# }
 				}
 			}
 		}
@@ -902,18 +913,19 @@ task_conversion = {
 			}
 		}
 
+		#L5R Disabled
 		# Struggle parameters
-		scope:councillor_liege = {
-			if = {
-				limit = {
-					any_character_struggle = {
-						involvement = involved
-						has_struggle_phase_parameter = piety_from_converting_county
-					}
-				}
-				add_piety = medium_piety_gain
-			}
-		}
+		# scope:councillor_liege = {
+		# 	if = {
+		# 		limit = {
+		# 			any_character_struggle = {
+		# 				involvement = involved
+		# 				has_struggle_phase_parameter = piety_from_converting_county
+		# 			}
+		# 		}
+		# 		add_piety = medium_piety_gain
+		# 	}
+		# }
 		# Message for vassals
 		trigger_event = court_chaplain_task.8002
 	}
