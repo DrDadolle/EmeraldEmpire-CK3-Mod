@@ -877,11 +877,29 @@ is_valid_heresy = {
 		#L5R Added
 		#For Rokugani Faiths, the origin and heretical faiths must not both be from the Imperial Cult.
 		AND = {
-			OR = {
-				religion_tag = fortunism_religion
-				religion_tag = shinseism_religion
-				religion_tag = ancestors_religion
+			religion_tag = shinseism_religion
+			NAND = {
+				$ORIGIN_FAITH$ = {
+					has_doctrine = special_doctrine_imperial_cult
+				}
+				$HERETICAL_FAITH$ = {
+					has_doctrine = special_doctrine_imperial_cult
+				}
 			}
+		}
+		AND = {
+			religion_tag = ancestors_religion
+			NAND = {
+				$ORIGIN_FAITH$ = {
+					has_doctrine = special_doctrine_imperial_cult
+				}
+				$HERETICAL_FAITH$ = {
+					has_doctrine = special_doctrine_imperial_cult
+				}
+			}
+		}
+		AND = {
+			religion_tag = fortunism_religion
 			NAND = {
 				$ORIGIN_FAITH$ = {
 					has_doctrine = special_doctrine_imperial_cult
@@ -944,14 +962,6 @@ is_valid_heresy = {
 		#No special requirements for Pagan religions.
 		# has_doctrine = pagan_hostility_doctrine
 		#L5R Added
-		#Rokugani Faiths can shift and spread amongst each other.
-		AND = {
-			OR = {
-				religion_tag = fortunism_religion
-				religion_tag = ancestors_religion
-				religion_tag = shinseism_religion
-			}
-		}
 		#No special requirements for the rest
 		religion_tag = jigoku_religion
 		religion_tag = unicorn_religion
