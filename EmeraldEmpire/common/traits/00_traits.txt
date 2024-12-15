@@ -1116,10 +1116,11 @@ lifestyle_blademaster = {
 	# Modifiers
 	negate_health_penalty_add = 0.25
 	prowess = 3
-	culture_modifier = {
-		parameter = trait_county_opinion_modifiers
-		county_opinion_add = 2
-	}
+	#L5R Disabled
+	# culture_modifier = {
+	# 	parameter = trait_county_opinion_modifiers
+	# 	county_opinion_add = 2
+	# }
 	culture_modifier = {
 		parameter = blademaster_trait_bonuses
 		attraction_opinion = 5
@@ -1134,10 +1135,11 @@ lifestyle_blademaster = {
 		50 = {
 			negate_health_penalty_add = 0.25
 			prowess = 3
-			culture_modifier = {
-				parameter = trait_county_opinion_modifiers
-				county_opinion_add = 3
-			}			
+			#L5R Disabled
+			# culture_modifier = {
+			# 	parameter = trait_county_opinion_modifiers
+			# 	county_opinion_add = 3
+			# }			
 			culture_modifier = {
 				parameter = blademaster_trait_bonuses
 				attraction_opinion = 5
@@ -1152,10 +1154,11 @@ lifestyle_blademaster = {
 			negate_health_penalty_add = 0.5
 			prowess = 6
 			
-			culture_modifier = {
-				parameter = trait_county_opinion_modifiers
-				county_opinion_add = 5
-			}
+			#L5R Disabled
+			# culture_modifier = {
+			# 	parameter = trait_county_opinion_modifiers
+			# 	county_opinion_add = 5
+			# }
 			
 			culture_modifier = {
 				parameter = blademaster_trait_bonuses
@@ -2361,10 +2364,11 @@ generous = {
 	
 	ruler_designer_cost = 20
 
-	culture_modifier = {
-		parameter = trait_county_opinion_modifiers
-		county_opinion_add = 5
-	}
+	#L5R Disabled
+	# culture_modifier = {
+	# 	parameter = trait_county_opinion_modifiers
+	# 	county_opinion_add = 5
+	# }
 
 	desc = {
 		first_valid = {
@@ -2460,20 +2464,22 @@ diligent = {
 		floodplains_tax_mult = 0.2
 	}
 
-	culture_modifier = {
-		parameter = pragmatic_traits_county_opinion_modifiers
-		county_opinion_add = 10
-	}
+	#L5R Disabled
+	# culture_modifier = {
+	# 	parameter = pragmatic_traits_county_opinion_modifiers
+	# 	county_opinion_add = 10
+	# }
 	
 	same_opinion = 10
 	opposite_opinion = -10
 
 	flag = can_improve_capital_decision
 	
-	culture_modifier = {
-		parameter = trait_county_opinion_modifiers
-		county_opinion_add = 5
-	}
+	#L5R Disabled
+	# culture_modifier = {
+	# 	parameter = trait_county_opinion_modifiers
+	# 	county_opinion_add = 5
+	# }
 	
 	culture_modifier = {
 		parameter = winter_trait_bonuses
@@ -3025,10 +3031,11 @@ honest = {
 		desert_attrition_mult = -0.15
 	}
 	
-	culture_modifier = {
-		parameter = trait_county_opinion_modifiers
-		county_opinion_add = 5
-	}
+	#L5R Disabled
+	# culture_modifier = {
+	# 	parameter = trait_county_opinion_modifiers
+	# 	county_opinion_add = 5
+	# }
 	
 	ruler_designer_cost = 20
 
@@ -3137,10 +3144,11 @@ brave = {
 	opposite_opinion = -10
 	same_opinion = 10
 	
-	culture_modifier = {
-		parameter = trait_county_opinion_modifiers
-		county_opinion_add = 10
-	}
+	#L5R Disabled
+	# culture_modifier = {
+	# 	parameter = trait_county_opinion_modifiers
+	# 	county_opinion_add = 10
+	# }
 	
 	culture_modifier = {
 		parameter = mountain_trait_bonuses
@@ -3277,10 +3285,11 @@ gregarious = {
 
 	monthly_influence = 0.1
 	
-	culture_modifier = {
-		parameter = trait_county_opinion_modifiers
-		county_opinion_add = 5
-	}
+	#L5R Disabled
+	# culture_modifier = {
+	# 	parameter = trait_county_opinion_modifiers
+	# 	county_opinion_add = 5
+	# }
 	
 	culture_modifier = {
 		parameter = gregarious_trait_gives_bonuses
@@ -3883,10 +3892,11 @@ compassionate = {
 	opposite_opinion = -15
 	attraction_opinion = 5
 	
-	culture_modifier = {
-		parameter = trait_county_opinion_modifiers
-		county_opinion_add = 5
-	}
+	#L5R Disabled
+	# culture_modifier = {
+	# 	parameter = trait_county_opinion_modifiers
+	# 	county_opinion_add = 5
+	# }
 	
 	ruler_designer_cost = 10
 	
@@ -4278,10 +4288,11 @@ forgiving = {
 	
 	ruler_designer_cost = 25
 
-	culture_modifier = {
-		parameter = trait_county_opinion_modifiers
-		county_opinion_add = 5
-	}
+	#L5R Disabled
+	# culture_modifier = {
+	# 	parameter = trait_county_opinion_modifiers
+	# 	county_opinion_add = 5
+	# }
 	
 	culture_modifier = {
 		parameter = vengeful_positive_forgiving_negative
@@ -7286,10 +7297,11 @@ shrewd = {
 	
 	ruler_designer_cost = 50
 
-	culture_modifier = {
-		parameter = pragmatic_traits_county_opinion_modifiers
-		county_opinion_add = 10
-	}
+	#L5R Disabled
+	# culture_modifier = {
+	# 	parameter = pragmatic_traits_county_opinion_modifiers
+	# 	county_opinion_add = 10
+	# }
 	
 	desc = {
 		first_valid = {

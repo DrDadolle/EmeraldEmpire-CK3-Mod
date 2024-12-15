@@ -282,11 +282,12 @@ castle_01 = {
 		travel_danger = -10
 	}
 
-	province_terrain_modifier = {
-		parameter = coastal_holding_bonuses
-		is_coastal = yes
-		build_speed = -0.1
-	}
+	#L5R Disabled
+	# province_terrain_modifier = {
+	# 	parameter = coastal_holding_bonuses
+	# 	is_coastal = yes
+	# 	build_speed = -0.1
+	# }
 
 	province_culture_modifier = {
 		parameter = castle_fortifications_increase
@@ -629,11 +630,12 @@ castle_02 = {
 		travel_danger = -12
 	}
 
-	province_terrain_modifier = {
-		parameter = coastal_holding_bonuses
-		is_coastal = yes
-		build_speed = -0.1
-	}
+	#L5R Disabled
+	# province_terrain_modifier = {
+	# 	parameter = coastal_holding_bonuses
+	# 	is_coastal = yes
+	# 	build_speed = -0.1
+	# }
 
 	province_culture_modifier = {
 		parameter = castle_fortifications_increase
@@ -980,11 +982,12 @@ castle_03 = {
 		travel_danger = -14
 	}
 
-	province_terrain_modifier = {
-		parameter = coastal_holding_bonuses
-		is_coastal = yes
-		build_speed = -0.1
-	}
+	#L5R Disabled
+	# province_terrain_modifier = {
+	# 	parameter = coastal_holding_bonuses
+	# 	is_coastal = yes
+	# 	build_speed = -0.1
+	# }
 
 	province_culture_modifier = {
 		parameter = castle_fortifications_increase
@@ -1321,11 +1324,12 @@ castle_04 = {
 		travel_danger = -16
 	}
 
-	province_terrain_modifier = {
-		parameter = coastal_holding_bonuses
-		is_coastal = yes
-		build_speed = -0.1
-	}
+	#L5R Disabled
+	# province_terrain_modifier = {
+	# 	parameter = coastal_holding_bonuses
+	# 	is_coastal = yes
+	# 	build_speed = -0.1
+	# }
 
 	province_culture_modifier = {
 		parameter = castle_fortifications_increase

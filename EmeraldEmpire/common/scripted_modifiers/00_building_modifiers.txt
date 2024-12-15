@@ -916,13 +916,14 @@ ai_pasture_improvement_from_culture_modifier = {
 				}
 				add = 2
 			}
-			if = {
-				limit = {
-					is_coastal = yes
-					scope:holder.culture = { has_cultural_parameter = coastal_agriculture_building_bonuses }
-				}
-				add = 2
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		is_coastal = yes
+			# 		scope:holder.culture = { has_cultural_parameter = coastal_agriculture_building_bonuses }
+			# 	}
+			# 	add = 2
+			# }
 		}
 	}
 }
@@ -931,12 +932,13 @@ ai_hunting_grounds_improvement_from_culture_modifier = {
 	modifier = {
 		add = {
 			value = 0
-			if = {
-				limit = {
-					scope:holder.culture = { has_cultural_parameter = hunting_archery_building_bonuses }
-				}
-				add = 2
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		scope:holder.culture = { has_cultural_parameter = hunting_archery_building_bonuses }
+			# 	}
+			# 	add = 2
+			# }
 		}
 	}
 }
@@ -945,12 +947,13 @@ ai_orchard_improvement_from_culture_modifier = {
 	modifier = {
 		add = {
 			value = 0
-			if = {
-				limit = {
-					scope:holder.culture = { has_cultural_parameter = coastal_agriculture_building_bonuses }
-				}
-				add = 2
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		scope:holder.culture = { has_cultural_parameter = coastal_agriculture_building_bonuses }
+			# 	}
+			# 	add = 2
+			# }
 		}
 	}
 }
@@ -959,12 +962,13 @@ ai_farm_estate_improvement_from_culture_modifier = {
 	modifier = {
 		add = {
 			value = 0
-			if = {
-				limit = {
-					scope:holder.culture = { has_cultural_parameter = coastal_agriculture_building_bonuses }
-				}
-				add = 2
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		scope:holder.culture = { has_cultural_parameter = coastal_agriculture_building_bonuses }
+			# 	}
+			# 	add = 2
+			# }
 		}
 	}
 }
@@ -974,12 +978,13 @@ ai_cereal_fields_improvement_from_culture_modifier = {
 	modifier = {
 		add = {
 			value = 0
-			if = {
-				limit = {
-					scope:holder.culture = { has_cultural_parameter = coastal_agriculture_building_bonuses }
-				}
-				add = 2
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		scope:holder.culture = { has_cultural_parameter = coastal_agriculture_building_bonuses }
+			# 	}
+			# 	add = 2
+			# }
 		}
 	}
 }

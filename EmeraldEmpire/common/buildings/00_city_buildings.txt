@@ -324,11 +324,12 @@ city_01 = {
 		monthly_county_control_growth_factor = -0.25
 	}
 	
-	province_terrain_modifier = {
-		parameter = coastal_holding_bonuses
-		is_coastal = yes
-		build_speed = -0.1
-	}
+	#L5R Disabled
+	# province_terrain_modifier = {
+	# 	parameter = coastal_holding_bonuses
+	# 	is_coastal = yes
+	# 	build_speed = -0.1
+	# }
 
 	province_terrain_modifier = {
 		parameter = coastal_holdings_give_defensive_bonus
@@ -712,11 +713,12 @@ city_02 = {
 		monthly_county_control_growth_factor = -0.25
 	}
 	
-	province_terrain_modifier = {
-		parameter = coastal_holding_bonuses
-		is_coastal = yes
-		build_speed = -0.1
-	}
+	#L5R Disabled
+	# province_terrain_modifier = {
+	# 	parameter = coastal_holding_bonuses
+	# 	is_coastal = yes
+	# 	build_speed = -0.1
+	# }
 
 	province_terrain_modifier = {
 		parameter = coastal_holdings_give_defensive_bonus
@@ -1082,11 +1084,12 @@ city_03 = {
 		monthly_county_control_growth_factor = -0.25
 	}
 	
-	province_terrain_modifier = {
-		parameter = coastal_holding_bonuses
-		is_coastal = yes
-		build_speed = -0.1
-	}
+	#L5R Disabled
+	# province_terrain_modifier = {
+	# 	parameter = coastal_holding_bonuses
+	# 	is_coastal = yes
+	# 	build_speed = -0.1
+	# }
 
 	province_terrain_modifier = {
 		parameter = coastal_holdings_give_defensive_bonus
@@ -1440,11 +1443,12 @@ city_04 = {
 		monthly_county_control_growth_factor = -0.25
 	}
 	
-	province_terrain_modifier = {
-		parameter = coastal_holding_bonuses
-		is_coastal = yes
-		build_speed = -0.1
-	}
+	#L5R Disabled
+	# province_terrain_modifier = {
+	# 	parameter = coastal_holding_bonuses
+	# 	is_coastal = yes
+	# 	build_speed = -0.1
+	# }
 
 	province_terrain_modifier = {
 		parameter = coastal_holdings_give_defensive_bonus
