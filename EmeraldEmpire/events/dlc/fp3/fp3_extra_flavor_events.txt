@@ -228,423 +228,423 @@
 #  	}
 # }
 
-fp3_yearly.8038 = { #Black Bile
-	type = character_event
-	title = fp3_yearly.8038.t
-	desc = fp3_yearly.8038.desc
-	theme = mental_health
-	left_portrait = {
-		character = root
-		animation = sadness
-	}
-	right_portrait = {
-		character = scope:persian_polymath
-		animation = personality_rational
-	}
+# fp3_yearly.8038 = { #Black Bile
+# 	type = character_event
+# 	title = fp3_yearly.8038.t
+# 	desc = fp3_yearly.8038.desc
+# 	theme = mental_health
+# 	left_portrait = {
+# 		character = root
+# 		animation = sadness
+# 	}
+# 	right_portrait = {
+# 		character = scope:persian_polymath
+# 		animation = personality_rational
+# 	}
 
-	trigger = {
+# 	trigger = {
 
-		is_available = yes
-		is_incapable = no
-		has_contagious_deadly_disease_trigger = no
+# 		is_available = yes
+# 		is_incapable = no
+# 		has_contagious_deadly_disease_trigger = no
 
-		OR = {
-			has_trait = depressed_1 #non-genetic melancholia
-			has_trait = depressed_genetic #or the genetic kind, but they won't be able to cure this one...
-		}
+# 		OR = {
+# 			has_trait = depressed_1 #non-genetic melancholia
+# 			has_trait = depressed_genetic #or the genetic kind, but they won't be able to cure this one...
+# 		}
 
-		exists = scope:persian_polymath
-		scope:persian_polymath = { is_alive = yes }
-	}
+# 		exists = scope:persian_polymath
+# 		scope:persian_polymath = { is_alive = yes }
+# 	}
 
-	immediate = {
+# 	immediate = {
 
-		add_courtier = scope:persian_polymath
+# 		add_courtier = scope:persian_polymath
 
-		hidden_effect = {
-   			scope:persian_polymath = {
-   				set_knight_status = forbid #this is to prevent him being auto-turned into a knight during his stay. The player can still make him a knight manually if they insist on it. 
-   			}
-   		}
-	}
+# 		hidden_effect = {
+#    			scope:persian_polymath = {
+#    				set_knight_status = forbid #this is to prevent him being auto-turned into a knight during his stay. The player can still make him a knight manually if they insist on it. 
+#    			}
+#    		}
+# 	}
 
-	option = {
- 		name = fp3_yearly.8038.a
+# 	option = {
+#  		name = fp3_yearly.8038.a
 
- 		add_character_modifier = {
- 			modifier = fp3_lackluster_diet_modifier 
- 			years = 10
- 		}
+#  		add_character_modifier = {
+#  			modifier = fp3_lackluster_diet_modifier 
+#  			years = 10
+#  		}
 
- 		if = { 
- 			limit = {
- 				has_trait = comfort_eater
- 			}
- 			custom_tooltip = lackluster_diet.tt
- 		}
+#  		if = { 
+#  			limit = {
+#  				has_trait = comfort_eater
+#  			}
+#  			custom_tooltip = lackluster_diet.tt
+#  		}
 
- 		trigger_event = { 
- 			id = fp3_yearly.8039 
- 			days = { 200 400 }
- 		}
+#  		trigger_event = { 
+#  			id = fp3_yearly.8039 
+#  			days = { 200 400 }
+#  		}
 
- 		stress_impact = { 
-   			temperate = minor_stress_impact_loss 
-   			gluttonous = major_stress_impact_gain 
-   			comfort_eater = massive_stress_impact_gain
-   			gregarious = medium_stress_impact_gain
-   		}
+#  		stress_impact = { 
+#    			temperate = minor_stress_impact_loss 
+#    			gluttonous = major_stress_impact_gain 
+#    			comfort_eater = massive_stress_impact_gain
+#    			gregarious = medium_stress_impact_gain
+#    		}
  		
 
- 		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_energy = 0.5
-            	ai_sociability = 0.5
-        	}
-   		}	
- 	}
+#  		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_energy = 0.5
+#             	ai_sociability = 0.5
+#         	}
+#    		}	
+#  	}
 
- 	option = {
- 		name = fp3_yearly.8038.b
+#  	option = {
+#  		name = fp3_yearly.8038.b
 
- 		if = {
-			limit = {
-				OR = {
-					exists = global_var:avicenna_created
-					exists = global_var:rhazes_created
-					exists = global_var:al_akhwayni_created 
-				}
-			}
-			scope:persian_polymath = { #Let's keep the historical characters around, if they were created
-				move_to_pool = yes 
-			}
-		}
-		else = {
-			scope:persian_polymath = { #otherwise, let's just have him disappear 
-				move_to_pool = yes
-				silent_disappearance_effect = yes
-			}
-		}
+#  		if = {
+# 			limit = {
+# 				OR = {
+# 					exists = global_var:avicenna_created
+# 					exists = global_var:rhazes_created
+# 					exists = global_var:al_akhwayni_created 
+# 				}
+# 			}
+# 			scope:persian_polymath = { #Let's keep the historical characters around, if they were created
+# 				move_to_pool = yes 
+# 			}
+# 		}
+# 		else = {
+# 			scope:persian_polymath = { #otherwise, let's just have him disappear 
+# 				move_to_pool = yes
+# 				silent_disappearance_effect = yes
+# 			}
+# 		}
 
-		stress_impact = { 
-   			lazy = minor_stress_impact_loss 
-   			ambitious = minor_stress_impact_gain
-   			diligent = minor_stress_impact_gain
-   			stubborn = minor_stress_impact_loss
-   		}
-
-
- 		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_energy = 0.5
-            	ai_sociability = 0.5
-        	}
-   		}	
- 	}
-}
+# 		stress_impact = { 
+#    			lazy = minor_stress_impact_loss 
+#    			ambitious = minor_stress_impact_gain
+#    			diligent = minor_stress_impact_gain
+#    			stubborn = minor_stress_impact_loss
+#    		}
 
 
-fp3_yearly.8039 = { #Herbs & Humors
-	type = character_event
-	title = fp3_yearly.8039.t
-	desc = fp3_yearly.8039.desc
-	theme = mental_health
-	left_portrait = {
-		character = root
-		animation = sadness
-	}
-	right_portrait = {
-		character = scope:persian_polymath
-		animation = personality_cynical
-	}
+#  		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_energy = 0.5
+#             	ai_sociability = 0.5
+#         	}
+#    		}	
+#  	}
+# }
 
-	trigger = {
 
-		is_available = yes
-		is_incapable = no
-		has_contagious_deadly_disease_trigger = no
+# fp3_yearly.8039 = { #Herbs & Humors
+# 	type = character_event
+# 	title = fp3_yearly.8039.t
+# 	desc = fp3_yearly.8039.desc
+# 	theme = mental_health
+# 	left_portrait = {
+# 		character = root
+# 		animation = sadness
+# 	}
+# 	right_portrait = {
+# 		character = scope:persian_polymath
+# 		animation = personality_cynical
+# 	}
 
-		OR = {
-			has_trait = depressed_1 #non-genetic melancholia
-			has_trait = depressed_genetic #or the genetic kind, but they won't be able to cure this one...
-		}
+# 	trigger = {
 
-		has_character_modifier = fp3_lackluster_diet_modifier
+# 		is_available = yes
+# 		is_incapable = no
+# 		has_contagious_deadly_disease_trigger = no
 
-		exists = scope:persian_polymath
+# 		OR = {
+# 			has_trait = depressed_1 #non-genetic melancholia
+# 			has_trait = depressed_genetic #or the genetic kind, but they won't be able to cure this one...
+# 		}
 
-		scope:persian_polymath = {
-			is_courtier_of = root
-		}
-	}
+# 		has_character_modifier = fp3_lackluster_diet_modifier
 
-	option = {
- 		name = fp3_yearly.8039.a
+# 		exists = scope:persian_polymath
 
- 		remove_character_modifier = fp3_lackluster_diet_modifier 
+# 		scope:persian_polymath = {
+# 			is_courtier_of = root
+# 		}
+# 	}
+
+# 	option = {
+#  		name = fp3_yearly.8039.a
+
+#  		remove_character_modifier = fp3_lackluster_diet_modifier 
  		
- 		add_character_modifier = {
- 			modifier = fp3_herbal_remedies_modifier
- 		}
+#  		add_character_modifier = {
+#  			modifier = fp3_herbal_remedies_modifier
+#  		}
 
- 		trigger_event = { 
- 			id = fp3_yearly.8040
- 			days = { 200 400 }
- 		}
+#  		trigger_event = { 
+#  			id = fp3_yearly.8040
+#  			days = { 200 400 }
+#  		}
 
- 		stress_impact = { 
-   			temperate = minor_stress_impact_gain
-   			content = minor_stress_impact_gain
-   		}
- 		
-
- 		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_boldness = 0.5
-            	ai_rationality = 1
-        	}
-   		}	
- 	}
-
- 	option = {
- 		name = fp3_yearly.8039.b
-
- 		trigger_event = { 
- 			id = fp3_yearly.8040
- 			days = { 200 400 }
- 		}
-
- 		stress_impact = { 
-   			content = minor_stress_impact_loss 
-   			temperate = minor_stress_impact_loss 
-   			gluttonous = major_stress_impact_gain
-   			comfort_eater = massive_stress_impact_gain
-   			gregarious = medium_stress_impact_gain
-   		}
+#  		stress_impact = { 
+#    			temperate = minor_stress_impact_gain
+#    			content = minor_stress_impact_gain
+#    		}
  		
 
- 		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_energy = 0.5
-            	ai_sociability = -0.1
-        	}
-   		}	
- 	}
+#  		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_boldness = 0.5
+#             	ai_rationality = 1
+#         	}
+#    		}	
+#  	}
 
- 	option = {
- 		name = fp3_yearly.8039.c
+#  	option = {
+#  		name = fp3_yearly.8039.b
 
- 		if = {
-			limit = {
-				OR = {
-					exists = global_var:avicenna_created
-					exists = global_var:rhazes_created
-					exists = global_var:al_akhwayni_created 
-				}
-			}
-			scope:persian_polymath = { #Let's keep the historical characters around, if they were created
-				move_to_pool = yes 
-			}
-		}
-		else = {
-			scope:persian_polymath = { #otherwise, let's just have him disappear 
-				move_to_pool = yes
-				silent_disappearance_effect = yes
-			}
-		}
+#  		trigger_event = { 
+#  			id = fp3_yearly.8040
+#  			days = { 200 400 }
+#  		}
 
-		stress_impact = { 
-   			impatient = minor_stress_impact_loss
-   			wrathful = minor_stress_impact_loss
-   			ambitious = minor_stress_impact_gain
-   			patient = minor_stress_impact_gain
-   		}
+#  		stress_impact = { 
+#    			content = minor_stress_impact_loss 
+#    			temperate = minor_stress_impact_loss 
+#    			gluttonous = major_stress_impact_gain
+#    			comfort_eater = massive_stress_impact_gain
+#    			gregarious = medium_stress_impact_gain
+#    		}
+ 		
 
+#  		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_energy = 0.5
+#             	ai_sociability = -0.1
+#         	}
+#    		}	
+#  	}
 
- 		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_energy = -0.5
-            	ai_vengefulness = 0.5
-        	}
-   		}	
- 	}
-}
+#  	option = {
+#  		name = fp3_yearly.8039.c
 
-fp3_yearly.8040 = { #Psychic Potency 
-	type = character_event
-	title = fp3_yearly.8040.t
-	desc = fp3_yearly.8040.desc
-	theme = mental_health
-	left_portrait = {
-		character = root
-		animation = stress
-	}
-	right_portrait = {
-		character = scope:persian_polymath
-		animation = personality_compassionate
-	}
+#  		if = {
+# 			limit = {
+# 				OR = {
+# 					exists = global_var:avicenna_created
+# 					exists = global_var:rhazes_created
+# 					exists = global_var:al_akhwayni_created 
+# 				}
+# 			}
+# 			scope:persian_polymath = { #Let's keep the historical characters around, if they were created
+# 				move_to_pool = yes 
+# 			}
+# 		}
+# 		else = {
+# 			scope:persian_polymath = { #otherwise, let's just have him disappear 
+# 				move_to_pool = yes
+# 				silent_disappearance_effect = yes
+# 			}
+# 		}
 
-	lower_left_portrait = {
-		character = scope:court_chaplain
-	}
-
-	trigger = {
-
-		is_available = yes
-		is_incapable = no
-		has_contagious_deadly_disease_trigger = no
-
-		OR = {
-			has_trait = depressed_1 #non-genetic melancholia
-			has_trait = depressed_genetic #or the genetic kind, but they won't be able to cure this one...
-		}
-
-		exists = scope:persian_polymath
-
-		scope:persian_polymath = {
-			is_courtier_of = root
-		}
-	}
-
-	immediate = {
-
-		if = {	
-			limit = { 
-				exists = cp:councillor_court_chaplain 
-				cp:councillor_court_chaplain = { 
-					AND = {
-						is_available_healthy_ai_adult = yes 
-						NOT = { this = scope:persian_polymath }
-					}
-				}
-			}
-			cp:councillor_court_chaplain = { save_scope_as = court_chaplain }
-		}
-	}
-
-	# option = {
- 	# 	name = fp3_yearly.8040.a
-
- 	# 	trigger = {
- 	# 		AND = {
- 	# 			has_religion = religion:islam_religion 
- 	# 			NOT = {	has_character_modifier = fp3_sufi_initiate_modifier }
- 	# 		}
- 	# 	}
-
- 	# 	trigger_event = { 
- 	# 		id = fp3_yearly.8041
- 	# 		days = { 5 15 }
- 	# 	}
-
- 	# 	stress_impact = { 
-   	# 		#none for this option
-   	# 	}
+# 		stress_impact = { 
+#    			impatient = minor_stress_impact_loss
+#    			wrathful = minor_stress_impact_loss
+#    			ambitious = minor_stress_impact_gain
+#    			patient = minor_stress_impact_gain
+#    		}
 
 
- 	# 	ai_chance = { 
-    #     	base = 100
-    #     	ai_value_modifier = {
-    #         	ai_zeal = 0.9
-    #         	ai_boldness = 0.9
-    #     	}
-   	# 	}	
- 	# }
+#  		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_energy = -0.5
+#             	ai_vengefulness = 0.5
+#         	}
+#    		}	
+#  	}
+# }
+
+# fp3_yearly.8040 = { #Psychic Potency 
+# 	type = character_event
+# 	title = fp3_yearly.8040.t
+# 	desc = fp3_yearly.8040.desc
+# 	theme = mental_health
+# 	left_portrait = {
+# 		character = root
+# 		animation = stress
+# 	}
+# 	right_portrait = {
+# 		character = scope:persian_polymath
+# 		animation = personality_compassionate
+# 	}
+
+# 	lower_left_portrait = {
+# 		character = scope:court_chaplain
+# 	}
+
+# 	trigger = {
+
+# 		is_available = yes
+# 		is_incapable = no
+# 		has_contagious_deadly_disease_trigger = no
+
+# 		OR = {
+# 			has_trait = depressed_1 #non-genetic melancholia
+# 			has_trait = depressed_genetic #or the genetic kind, but they won't be able to cure this one...
+# 		}
+
+# 		exists = scope:persian_polymath
+
+# 		scope:persian_polymath = {
+# 			is_courtier_of = root
+# 		}
+# 	}
+
+# 	immediate = {
+
+# 		if = {	
+# 			limit = { 
+# 				exists = cp:councillor_court_chaplain 
+# 				cp:councillor_court_chaplain = { 
+# 					AND = {
+# 						is_available_healthy_ai_adult = yes 
+# 						NOT = { this = scope:persian_polymath }
+# 					}
+# 				}
+# 			}
+# 			cp:councillor_court_chaplain = { save_scope_as = court_chaplain }
+# 		}
+# 	}
+
+# 	# option = {
+#  	# 	name = fp3_yearly.8040.a
+
+#  	# 	trigger = {
+#  	# 		AND = {
+#  	# 			has_religion = religion:islam_religion 
+#  	# 			NOT = {	has_character_modifier = fp3_sufi_initiate_modifier }
+#  	# 		}
+#  	# 	}
+
+#  	# 	trigger_event = { 
+#  	# 		id = fp3_yearly.8041
+#  	# 		days = { 5 15 }
+#  	# 	}
+
+#  	# 	stress_impact = { 
+#    	# 		#none for this option
+#    	# 	}
 
 
- 	option = {
- 		name = fp3_yearly.8040.b
-
- 		trigger = { exists = scope:court_chaplain }
-
- 		trigger_event = fp3_yearly.8042
-
- 		stress_impact = { 
-   			#none for this option
-   		}
+#  	# 	ai_chance = { 
+#     #     	base = 100
+#     #     	ai_value_modifier = {
+#     #         	ai_zeal = 0.9
+#     #         	ai_boldness = 0.9
+#     #     	}
+#    	# 	}	
+#  	# }
 
 
- 		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_zeal = 0.5
-            	ai_sociability = 0.8
-            	ai_compassion = 0.5
-            	ai_vengefulness = -0.5
-        	}
-   		}	
- 	}
+#  	option = {
+#  		name = fp3_yearly.8040.b
 
- 	option = {
- 		name = fp3_yearly.8040.c
- 		flavor = fp3_refusing_faith_treatment_flavor
+#  		trigger = { exists = scope:court_chaplain }
 
- 		trigger_event = { 
- 			id = fp3_yearly.8043
- 			days = { 150 250 }
- 		}
+#  		trigger_event = fp3_yearly.8042
 
- 		stress_impact = { 
-   			zealous = medium_stress_impact_loss
-   			cynical = medium_stress_impact_gain 
-   			humble = medium_stress_impact_gain
-   		}
+#  		stress_impact = { 
+#    			#none for this option
+#    		}
 
 
- 		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_zeal = 1
-            	ai_vengefulness = 0.5
-        	}
-   		}	
- 	}
+#  		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_zeal = 0.5
+#             	ai_sociability = 0.8
+#             	ai_compassion = 0.5
+#             	ai_vengefulness = -0.5
+#         	}
+#    		}	
+#  	}
 
- 	option = {
- 		name = fp3_yearly.8040.d
+#  	option = {
+#  		name = fp3_yearly.8040.c
+#  		flavor = fp3_refusing_faith_treatment_flavor
 
- 		if = {
-			limit = {
-				OR = {
-					exists = global_var:avicenna_created
-					exists = global_var:rhazes_created
-					exists = global_var:al_akhwayni_created 
-				}
-			}
-			scope:persian_polymath = { #Let's keep the historical characters around, if they were created
-				move_to_pool = yes 
-			}
-		}
-		else = {
-			scope:persian_polymath = { #otherwise, let's just have him disappear 
-				move_to_pool = yes
-				silent_disappearance_effect = yes
-			}
-		}
+#  		trigger_event = { 
+#  			id = fp3_yearly.8043
+#  			days = { 150 250 }
+#  		}
 
-		stress_impact = { 
-   			cynical = minor_stress_impact_loss
-   			impatient = minor_stress_impact_loss
-   			forgiving = medium_stress_impact_gain
-   			patient = medium_stress_impact_gain
-   			zealous = medium_stress_impact_gain 
-   		}
+#  		stress_impact = { 
+#    			zealous = medium_stress_impact_loss
+#    			cynical = medium_stress_impact_gain 
+#    			humble = medium_stress_impact_gain
+#    		}
 
 
- 		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_energy = -0.5
-            	ai_vengefulness = 1
-        	}
-   		}	
- 	}
-}
+#  		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_zeal = 1
+#             	ai_vengefulness = 0.5
+#         	}
+#    		}	
+#  	}
+
+#  	option = {
+#  		name = fp3_yearly.8040.d
+
+#  		if = {
+# 			limit = {
+# 				OR = {
+# 					exists = global_var:avicenna_created
+# 					exists = global_var:rhazes_created
+# 					exists = global_var:al_akhwayni_created 
+# 				}
+# 			}
+# 			scope:persian_polymath = { #Let's keep the historical characters around, if they were created
+# 				move_to_pool = yes 
+# 			}
+# 		}
+# 		else = {
+# 			scope:persian_polymath = { #otherwise, let's just have him disappear 
+# 				move_to_pool = yes
+# 				silent_disappearance_effect = yes
+# 			}
+# 		}
+
+# 		stress_impact = { 
+#    			cynical = minor_stress_impact_loss
+#    			impatient = minor_stress_impact_loss
+#    			forgiving = medium_stress_impact_gain
+#    			patient = medium_stress_impact_gain
+#    			zealous = medium_stress_impact_gain 
+#    		}
+
+
+#  		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_energy = -0.5
+#             	ai_vengefulness = 1
+#         	}
+#    		}	
+#  	}
+# }
 
 
 ###############################################################
@@ -883,291 +883,291 @@ fp3_yearly.8040 = { #Psychic Potency
 
 ##### The Undying Spirit #####
 
-fp3_yearly.8042 = { #The Undying Spirit
-	type = character_event
-	title = fp3_yearly.8042.t
-	desc = fp3_yearly.8042.desc
-	theme = faith
-	left_portrait = {
-		character = root
-		animation = worry
-	}
-	right_portrait = {
-		character = scope:court_chaplain
-		animation = chancellor
-	}
+# fp3_yearly.8042 = { #The Undying Spirit
+# 	type = character_event
+# 	title = fp3_yearly.8042.t
+# 	desc = fp3_yearly.8042.desc
+# 	theme = faith
+# 	left_portrait = {
+# 		character = root
+# 		animation = worry
+# 	}
+# 	right_portrait = {
+# 		character = scope:court_chaplain
+# 		animation = chancellor
+# 	}
 
-	trigger = {
+# 	trigger = {
 
-		is_available = yes
-		is_incapable = no
-		has_contagious_deadly_disease_trigger = no
+# 		is_available = yes
+# 		is_incapable = no
+# 		has_contagious_deadly_disease_trigger = no
 
-		OR = {
-			has_trait = depressed_1 #non-genetic melancholia
-			has_trait = depressed_genetic #or the genetic kind, but they won't be able to cure this one...
-		}
+# 		OR = {
+# 			has_trait = depressed_1 #non-genetic melancholia
+# 			has_trait = depressed_genetic #or the genetic kind, but they won't be able to cure this one...
+# 		}
 
-		exists = scope:court_chaplain
-	}
+# 		exists = scope:court_chaplain
+# 	}
 
-	option = {
- 		name = fp3_yearly.8042.a
+# 	option = {
+#  		name = fp3_yearly.8042.a
 
- 		scope:court_chaplain = {
-			add_opinion = {
-				target = root
-				modifier = trusted_me_opinion 
-				opinion = 15
-			}	
-		}
+#  		scope:court_chaplain = {
+# 			add_opinion = {
+# 				target = root
+# 				modifier = trusted_me_opinion 
+# 				opinion = 15
+# 			}	
+# 		}
 
-		add_character_modifier = {
-			modifier = focused_reading_modifier
-			years = 10 
-		}
+# 		add_character_modifier = {
+# 			modifier = focused_reading_modifier
+# 			years = 10 
+# 		}
 
-		trigger_event = { 
- 			id = fp3_yearly.8043
- 			days = { 150 250 }
- 		}
+# 		trigger_event = { 
+#  			id = fp3_yearly.8043
+#  			days = { 150 250 }
+#  		}
 
- 		stress_impact = {
-   			base = minor_stress_impact_gain
-   			arrogant = medium_stress_impact_gain
-   			impatient = medium_stress_impact_gain
-   			dull = medium_stress_impact_gain	
-		}
+#  		stress_impact = {
+#    			base = minor_stress_impact_gain
+#    			arrogant = medium_stress_impact_gain
+#    			impatient = medium_stress_impact_gain
+#    			dull = medium_stress_impact_gain	
+# 		}
 
-		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_energy = 0.5
-            	ai_rationality = 0.5
-            	ai_zeal = 0.5
-        	}
-   		}
- 	}
+# 		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_energy = 0.5
+#             	ai_rationality = 0.5
+#             	ai_zeal = 0.5
+#         	}
+#    		}
+#  	}
 
- 	option = {
- 		name = fp3_yearly.8042.b
+#  	option = {
+#  		name = fp3_yearly.8042.b
 
- 		scope:court_chaplain = {
-			add_opinion = {
-				target = root
-				modifier = trusted_me_opinion 
-				opinion = 15
-			}	
-		}
+#  		scope:court_chaplain = {
+# 			add_opinion = {
+# 				target = root
+# 				modifier = trusted_me_opinion 
+# 				opinion = 15
+# 			}	
+# 		}
 
-		add_character_modifier = {
-			modifier = fp3_worshipping_in_solitude_modifier
-			years = 10 
-		}
+# 		add_character_modifier = {
+# 			modifier = fp3_worshipping_in_solitude_modifier
+# 			years = 10 
+# 		}
 
-		trigger_event = { 
- 			id = fp3_yearly.8043
- 			days = { 150 250 }
- 		}
+# 		trigger_event = { 
+#  			id = fp3_yearly.8043
+#  			days = { 150 250 }
+#  		}
 
- 		stress_impact = {
-   			gregarious = medium_stress_impact_gain
-   			cynical = medium_stress_impact_gain
-   			impatient = medium_stress_impact_gain	
-		}
+#  		stress_impact = {
+#    			gregarious = medium_stress_impact_gain
+#    			cynical = medium_stress_impact_gain
+#    			impatient = medium_stress_impact_gain	
+# 		}
 
-		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_energy = 0.5
-            	ai_rationality = 0.5
-            	ai_zeal = 0.5
-        	}
-   		}
- 	}
+# 		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_energy = 0.5
+#             	ai_rationality = 0.5
+#             	ai_zeal = 0.5
+#         	}
+#    		}
+#  	}
 
- 	option = {
- 		name = fp3_yearly.8042.c
+#  	option = {
+#  		name = fp3_yearly.8042.c
 
- 		scope:court_chaplain = {
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion 
-				opinion = -15
-			}	
-		}
+#  		scope:court_chaplain = {
+# 			add_opinion = {
+# 				target = root
+# 				modifier = disappointed_opinion 
+# 				opinion = -15
+# 			}	
+# 		}
 
-		trigger_event = { 
- 			id = fp3_yearly.8043
- 			days = { 150 250 }
- 		}
+# 		trigger_event = { 
+#  			id = fp3_yearly.8043
+#  			days = { 150 250 }
+#  		}
 
- 		stress_impact = {
-   			base = minor_stress_impact_loss
-   			humble = minor_stress_impact_gain
-   			patient = medium_stress_impact_gain
-   			trusting = medium_stress_impact_gain	
-   			zealous = minor_stress_impact_gain
-		}
+#  		stress_impact = {
+#    			base = minor_stress_impact_loss
+#    			humble = minor_stress_impact_gain
+#    			patient = medium_stress_impact_gain
+#    			trusting = medium_stress_impact_gain	
+#    			zealous = minor_stress_impact_gain
+# 		}
 
-		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_energy = -0.5
-            	ai_vengefulness = 0.5
-        	}
-   		}
- 	}
-}
+# 		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_energy = -0.5
+#             	ai_vengefulness = 0.5
+#         	}
+#    		}
+#  	}
+# }
 
 ##### Remedies' End #####
 
-fp3_yearly.8043 = { 
-	type = character_event
-	title = fp3_yearly.8043.t
-	desc = fp3_yearly.8043.desc
-	theme = mental_health
-	left_portrait = {
-		character = root
-		animation = sadness 
-	}
-	right_portrait = {
-		character = scope:persian_polymath
-		animation = personality_coward
-	}
+# fp3_yearly.8043 = { 
+# 	type = character_event
+# 	title = fp3_yearly.8043.t
+# 	desc = fp3_yearly.8043.desc
+# 	theme = mental_health
+# 	left_portrait = {
+# 		character = root
+# 		animation = sadness 
+# 	}
+# 	right_portrait = {
+# 		character = scope:persian_polymath
+# 		animation = personality_coward
+# 	}
 
-	override_background = { reference = study }
+# 	override_background = { reference = study }
 
-	trigger = {
+# 	trigger = {
 
-		is_available = yes
-		is_incapable = no
-		has_contagious_deadly_disease_trigger = no
+# 		is_available = yes
+# 		is_incapable = no
+# 		has_contagious_deadly_disease_trigger = no
 
-		OR = {
-			has_trait = depressed_1 #non-genetic melancholia
-			has_trait = depressed_genetic #or the genetic kind, but they won't be able to cure this one...
-		}
+# 		OR = {
+# 			has_trait = depressed_1 #non-genetic melancholia
+# 			has_trait = depressed_genetic #or the genetic kind, but they won't be able to cure this one...
+# 		}
 
-		exists = scope:persian_polymath
+# 		exists = scope:persian_polymath
 
-		scope:persian_polymath = {
-			is_courtier_of = root
-		}
-	}
+# 		scope:persian_polymath = {
+# 			is_courtier_of = root
+# 		}
+# 	}
 
-	option = {
-		name = fp3_yearly.8043.a
-		flavor = fp3_polymath_stays_flavor
+# 	option = {
+# 		name = fp3_yearly.8043.a
+# 		flavor = fp3_polymath_stays_flavor
 
-		remove_short_term_gold = medium_gold_value 
+# 		remove_short_term_gold = medium_gold_value 
 
-		hidden_effect = {
-			if = {
-				limit = { has_trait = depressed_1 }
-				random = {
-					chance = 50
-					trigger_event = { 
- 						id = fp3_yearly.8044
- 						days = { 300 500 }
- 					}
-				}
-			}
-		}
+# 		hidden_effect = {
+# 			if = {
+# 				limit = { has_trait = depressed_1 }
+# 				random = {
+# 					chance = 50
+# 					trigger_event = { 
+#  						id = fp3_yearly.8044
+#  						days = { 300 500 }
+#  					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = { 
-   			greedy = minor_stress_impact_gain
-   			arrogant = minor_stress_impact_gain
-   		}
-
-
- 		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_compassion = 0.5
-            	ai_sociability = 1
-            	ai_boldness = -0.7
-        	}
-   		}	
-	}
-
-	option = {
-		name = fp3_yearly.8043.b
-
-		hidden_effect = {
-			if = {
-				limit = { has_trait = depressed_1 }
-				random = {
-					chance = 50
-					trigger_event = { 
- 						id = fp3_yearly.8044
- 						days = { 300 500 }
- 					}
-				}
-			}
-		}
-
-		scope:persian_polymath = { #at this juncture, we want to keep the polymath around, and not disappeared, so the next event can trigger
-			move_to_pool = yes
-		}
-
-		stress_impact = { 
-   			vengeful = minor_stress_impact_loss
-   			generous = minor_stress_impact_gain
-   			patient = minor_stress_impact_gain 
-   		}
+# 		stress_impact = { 
+#    			greedy = minor_stress_impact_gain
+#    			arrogant = minor_stress_impact_gain
+#    		}
 
 
- 		ai_chance = { 
-        	base = 100
-        	ai_value_modifier = {
-            	ai_greed = 0.5
-            	ai_vengefulness = 1
-        	}
-   		}	
-	}
-}
+#  		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_compassion = 0.5
+#             	ai_sociability = 1
+#             	ai_boldness = -0.7
+#         	}
+#    		}	
+# 	}
+
+# 	option = {
+# 		name = fp3_yearly.8043.b
+
+# 		hidden_effect = {
+# 			if = {
+# 				limit = { has_trait = depressed_1 }
+# 				random = {
+# 					chance = 50
+# 					trigger_event = { 
+#  						id = fp3_yearly.8044
+#  						days = { 300 500 }
+#  					}
+# 				}
+# 			}
+# 		}
+
+# 		scope:persian_polymath = { #at this juncture, we want to keep the polymath around, and not disappeared, so the next event can trigger
+# 			move_to_pool = yes
+# 		}
+
+# 		stress_impact = { 
+#    			vengeful = minor_stress_impact_loss
+#    			generous = minor_stress_impact_gain
+#    			patient = minor_stress_impact_gain 
+#    		}
+
+
+#  		ai_chance = { 
+#         	base = 100
+#         	ai_value_modifier = {
+#             	ai_greed = 0.5
+#             	ai_vengefulness = 1
+#         	}
+#    		}	
+# 	}
+# }
 
 
 ##### The Light of the World #####
 
-fp3_yearly.8044 = { 
-	type = character_event
-	title = fp3_yearly.8044.t
-	desc = fp3_yearly.8044.desc
-	theme = mental_health
-	left_portrait = {
-		character = root
-		animation = happiness
-	}
+# fp3_yearly.8044 = { 
+# 	type = character_event
+# 	title = fp3_yearly.8044.t
+# 	desc = fp3_yearly.8044.desc
+# 	theme = mental_health
+# 	left_portrait = {
+# 		character = root
+# 		animation = happiness
+# 	}
 
-	override_background = { reference = wilderness }
+# 	override_background = { reference = wilderness }
 
-	trigger = {
+# 	trigger = {
 
-		is_available = yes
-		is_incapable = no
-		has_contagious_deadly_disease_trigger = no
+# 		is_available = yes
+# 		is_incapable = no
+# 		has_contagious_deadly_disease_trigger = no
 
-		has_trait = depressed_1 #non-genetic melancholia
+# 		has_trait = depressed_1 #non-genetic melancholia
 		
-		exists = scope:persian_polymath
+# 		exists = scope:persian_polymath
 
-	}
+# 	}
 
-	immediate = {
+# 	immediate = {
 
-		remove_trait = depressed_1 
-	}
+# 		remove_trait = depressed_1 
+# 	}
 
-	option = {
-		name = fp3_yearly.8044.a 
+# 	option = {
+# 		name = fp3_yearly.8044.a 
 
-		stress_impact = { 
-   			base = medium_stress_impact_loss
-   		}
-	}
-}
+# 		stress_impact = { 
+#    			base = medium_stress_impact_loss
+#    		}
+# 	}
+# }
 
 ##################################
 # The Mysterious Bundle 

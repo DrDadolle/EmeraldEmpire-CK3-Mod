@@ -2914,12 +2914,13 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:varangian_culture = {
-					trigger = { exists = scope:varangian_culture }
-				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = { exists = scope:varangian_culture }
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3010,12 +3011,13 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:varangian_culture = {
-					trigger = { exists = scope:varangian_culture }
-				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = { exists = scope:varangian_culture }
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3046,12 +3048,13 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:varangian_culture = {
-					trigger = { exists = scope:varangian_culture }
-				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = { exists = scope:varangian_culture }
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3106,12 +3109,13 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:varangian_culture = {
-					trigger = { exists = scope:varangian_culture }
-				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = { exists = scope:varangian_culture }
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3142,12 +3146,13 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:varangian_culture = {
-					trigger = { exists = scope:varangian_culture }
-				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = { exists = scope:varangian_culture }
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3178,12 +3183,13 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:varangian_culture = {
-					trigger = { exists = scope:varangian_culture }
-				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = { exists = scope:varangian_culture }
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3255,12 +3261,13 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:varangian_culture = {
-					trigger = { exists = scope:varangian_culture }
-				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = { exists = scope:varangian_culture }
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3346,12 +3353,13 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:varangian_culture = {
-					trigger = { exists = scope:varangian_culture }
-				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = { exists = scope:varangian_culture }
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3434,12 +3442,13 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:varangian_culture = {
-					trigger = { exists = scope:varangian_culture }
-				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = { exists = scope:varangian_culture }
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3544,9 +3553,10 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:varangian_culture = {
-					trigger = { exists = scope:varangian_culture }
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = { exists = scope:varangian_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3650,29 +3660,29 @@ accolade_character_creation_effect = {
 						}
 					}
 				}
-				scope:varangian_culture = {
-					trigger = {
-						exists = scope:varangian_culture
-						scope:varangian_culture = {
-							OR = {
-								has_innovation = innovation_quilted_armor
-								has_cultural_tradition = tradition_fp1_coastal_warriors
-								#L5R Disabled
-								# has_cultural_tradition = tradition_hird
-								# has_cultural_tradition = tradition_futuwaa
-								# has_cultural_tradition = tradition_druzhina
-								# has_cultural_tradition = tradition_khadga_puja
-								# has_cultural_tradition = tradition_garuda_warriors
-								# has_cultural_tradition = tradition_himalayan_settlers
-								# has_cultural_tradition = tradition_mubarizuns
-								# has_cultural_tradition = tradition_burman_royal_army
-								# has_cultural_tradition = tradition_mountaineer_ruralism
-								# has_innovation = innovation_sarawit
-								# has_innovation = innovation_legionnaires
-							}
-						}
-					}
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = {
+				# 		exists = scope:varangian_culture
+				# 		scope:varangian_culture = {
+				# 			OR = {
+				# 				has_innovation = innovation_quilted_armor
+				# 				has_cultural_tradition = tradition_fp1_coastal_warriors
+				# 				# has_cultural_tradition = tradition_hird
+				# 				# has_cultural_tradition = tradition_futuwaa
+				# 				# has_cultural_tradition = tradition_druzhina
+				# 				# has_cultural_tradition = tradition_khadga_puja
+				# 				# has_cultural_tradition = tradition_garuda_warriors
+				# 				# has_cultural_tradition = tradition_himalayan_settlers
+				# 				# has_cultural_tradition = tradition_mubarizuns
+				# 				# has_cultural_tradition = tradition_burman_royal_army
+				# 				# has_cultural_tradition = tradition_mountaineer_ruralism
+				# 				# has_innovation = innovation_sarawit
+				# 				# has_innovation = innovation_legionnaires
+				# 			}
+				# 		}
+				# 	}
+				# }
 				scope:type_specific_culture = {
 					trigger = {
 						exists = scope:type_specific_culture
@@ -3812,18 +3822,19 @@ accolade_character_creation_effect = {
 						scope:knight_culture = { has_innovation = innovation_mangonel }
 					}
 				}
-				scope:varangian_culture = {
-					trigger = {
-						exists = scope:varangian_culture
-						scope:varangian_culture = { has_innovation = innovation_mangonel }
-					}
-				}
-				scope:turkic_culture = {
-					trigger = {
-						exists = scope:turkic_culture
-						scope:turkic_culture = { has_innovation = innovation_mangonel }
-					}
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = {
+				# 		exists = scope:varangian_culture
+				# 		scope:varangian_culture = { has_innovation = innovation_mangonel }
+				# 	}
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = {
+				# 		exists = scope:turkic_culture
+				# 		scope:turkic_culture = { has_innovation = innovation_mangonel }
+				# 	}
+				# }
 				scope:type_specific_culture = {
 					trigger = {
 						exists = scope:type_specific_culture
@@ -4100,16 +4111,17 @@ accolade_character_creation_effect = {
 						exists = scope:knight_culture
 					}
 				}
-				scope:varangian_culture = {
-					trigger = {
-						exists = scope:varangian_culture
-					}
-				}
-				scope:turkic_culture = {
-					trigger = {
-						exists = scope:turkic_culture
-					}
-				}
+				#L5R Disabled
+				# scope:varangian_culture = {
+				# 	trigger = {
+				# 		exists = scope:varangian_culture
+				# 	}
+				# }
+				# scope:turkic_culture = {
+				# 	trigger = {
+				# 		exists = scope:turkic_culture
+				# 	}
+				# }
 				scope:type_specific_culture = {
 					trigger = {
 						exists = scope:type_specific_culture
