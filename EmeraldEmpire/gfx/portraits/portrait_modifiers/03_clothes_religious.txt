@@ -440,36 +440,13 @@
 
 # ## African Pagan ##
 
-    religious_african_high_clothes = { # African Pagan Shamans
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = clothes
-                template = religious_african_high_clothes
-                range = { 0 1 }
-            }
-        }
-        outfit_tags = { priest_outfit }
-        weight = {
-            base = 0
-            modifier = {
-                add = 100
-                portrait_religious_high_trigger = yes
-                portrait_religious_african_trigger = yes
-            }
-        }
-    }
-
-## Catch All rokugani ##
-## L5R Added ##
-
-    # japanese_common_monk = {
+    # religious_african_high_clothes = { # African Pagan Shamans
     #     dna_modifiers = {
     #         accessory = {
     #             mode = add
     #             gene = clothes
-    #             template = japanese_common_monk_clothes
-    #             range = { 0 1 } # For the randomness to work correctly
+    #             template = religious_african_high_clothes
+    #             range = { 0 1 }
     #         }
     #     }
     #     outfit_tags = { priest_outfit }
@@ -477,31 +454,61 @@
     #         base = 0
     #         modifier = {
     #             add = 100
-    #             portrait_religious_shinseist_trigger = yes
+    #             portrait_religious_high_trigger = yes
+    #             portrait_religious_african_trigger = yes
     #         }
-    #     }		
+    #     }
     # }
+
+## Catch All rokugani ##
+## L5R Added ##
+    # Fallback for priest_outfit events
+    rokugan_common_monk = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = japanese_common_monk_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        outfit_tags = { priest_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                OR = {
+                    portrait_religious_devoted_trigger = yes
+                    portrait_religious_high_trigger = yes
+                }
+                OR = {
+                    religion = religion:fortunism_religion
+                    religion = religion:ancestors_religion
+                }
+            }
+        }		
+    }
 
 
     religious_shinsei_high_clothes = { # Shinsei Monks
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = clothes
-            template = religious_buddhist_high_clothes
-            range = { 0 1 }
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = religious_buddhist_high_clothes
+                range = { 0 1 }
+            }
+        }
+        outfit_tags = { priest_outfit bishop_outfit}
+        weight = {
+            base = 0
+            modifier = {
+                add = 120
+                portrait_religious_high_trigger = yes
+                portrait_religious_shinseist_trigger = yes
+            }
         }
     }
-    outfit_tags = { priest_outfit bishop_outfit}
-    weight = {
-        base = 0
-        modifier = {
-            add = 120
-            portrait_religious_high_trigger = yes
-            portrait_religious_shinseist_trigger = yes
-        }
-    }
-}
 
     religious_shinsei_devoted_clothes = { # Shinsei Monks
         dna_modifiers = {

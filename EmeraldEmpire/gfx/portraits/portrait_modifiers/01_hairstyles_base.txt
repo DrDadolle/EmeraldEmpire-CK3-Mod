@@ -1809,17 +1809,7 @@ fp2_hairstyles_iberian_muslim_curly_commoners = {
                         template = hair_afro
                     }
                 }
-                OR = {
-                    portrait_crab_clothing_trigger = yes
-                    portrait_crane_clothing_trigger = yes
-                    portrait_dragon_clothing_trigger = yes
-                    portrait_lion_clothing_trigger = yes
-                    portrait_phoenix_clothing_trigger = yes
-                    portrait_scorpion_clothing_trigger = yes
-                    portrait_unicorn_clothing_trigger = yes
-                    portrait_imperial_clothing_trigger = yes
-                    portrait_minor_clothing_trigger = yes
-                }
+                portrait_rokugani_clothing_trigger = yes
                 shogunate_should_be_no_hair_trigger = no
                 has_fp2_dlc_trigger = no
             }
@@ -1862,17 +1852,7 @@ fp2_hairstyles_iberian_muslim_curly_commoners = {
                         template = hair_afro
                     }
                 }
-                OR = {
-                    portrait_crab_clothing_trigger = yes
-                    portrait_crane_clothing_trigger = yes
-                    portrait_dragon_clothing_trigger = yes
-                    portrait_lion_clothing_trigger = yes
-                    portrait_phoenix_clothing_trigger = yes
-                    portrait_scorpion_clothing_trigger = yes
-                    portrait_unicorn_clothing_trigger = yes
-                    portrait_imperial_clothing_trigger = yes
-                    portrait_minor_clothing_trigger = yes
-                }
+                portrait_rokugani_clothing_trigger = yes
                 shogunate_should_be_no_hair_trigger = no
                 has_fp2_dlc_trigger = yes
             }

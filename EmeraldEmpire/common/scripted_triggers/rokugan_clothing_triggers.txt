@@ -1,10 +1,11 @@
 ﻿shogunate_should_be_no_hair_trigger = {
 	exists = this
-	OR = {
-		has_trait = devoted
-		has_council_position = councillor_court_chaplain
-	# 	culture = { has_cultural_pillar = heritage_buddhist }
+	AND = {
 		religion = religion:shinseism_religion
+		OR = {
+			has_trait = devoted
+			has_council_position = councillor_court_chaplain
+		}
 	}
 }
 
@@ -174,9 +175,36 @@ portrait_minor_clothing_contents_trigger = {
 	has_clothing_gfx = minor_clothing_gfx
 }
 
+###### Catch all
+portrait_rokugani_clothing_trigger = {
+	scope:culture = {
+		portrait_rokugani_clothing_contents_trigger = yes
+	}
+}
+
+portrait_rokugani_clothing_spouse_trigger = {
+	culture = {
+		portrait_rokugani_clothing_contents_trigger = yes
+	}
+}
+
+portrait_rokugani_clothing_contents_trigger = {
+	OR = {
+		has_clothing_gfx = crab_clothing_gfx
+		has_clothing_gfx = crane_clothing_gfx
+		has_clothing_gfx = dragon_clothing_gfx
+		has_clothing_gfx = lion_clothing_gfx
+		has_clothing_gfx = phoenix_clothing_gfx
+		has_clothing_gfx = scorpion_clothing_gfx
+		has_clothing_gfx = unicorn_clothing_gfx
+		has_clothing_gfx = imperial_clothing_gfx
+		has_clothing_gfx = minor_clothing_gfx
+	}
+}
 
 ###### Religion
 
 portrait_religious_shinseist_trigger = {
 	religion = religion:shinseism_religion
 }
+

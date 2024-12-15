@@ -452,24 +452,24 @@
 	# 	}
 	# }
 
-	religious_african_high_headgear = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = religious_african_high
-				range = { 0 1 }
-			}
-		}
-		outfit_tags = { priest_outfit }
-		weight = {
-			base = 0
-			modifier = {
-				add = 110
-				portrait_religious_high_no_poverty_trigger = yes
-				portrait_religious_african_trigger = yes
-			}
-		}
-	}
+	# religious_african_high_headgear = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = headgear
+	# 			template = religious_african_high
+	# 			range = { 0 1 }
+	# 		}
+	# 	}
+	# 	outfit_tags = { priest_outfit }
+	# 	weight = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 110
+	# 			portrait_religious_high_no_poverty_trigger = yes
+	# 			portrait_religious_african_trigger = yes
+	# 		}
+	# 	}
+	# }
 
 }
