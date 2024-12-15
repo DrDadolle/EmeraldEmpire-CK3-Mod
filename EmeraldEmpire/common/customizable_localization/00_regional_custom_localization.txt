@@ -1576,75 +1576,76 @@ RandomReligiousTextName = {
 RandomEntertainmentTextName = {
 	type = character
 
-	text = {
-		trigger = {
-			scope:entertainment_book_title = flag:beowulf
-		}
-		localization_key = random_entertainment_text_beowulf
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		scope:entertainment_book_title = flag:beowulf
+	# 	}
+	# 	localization_key = random_entertainment_text_beowulf
+	# }
 
-	text = {
-		trigger = {
-			scope:entertainment_book_title = flag:niebelungenlied
-		}
-		localization_key = random_entertainment_text_niebelungenlied
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:entertainment_book_title = flag:niebelungenlied
+	# 	}
+	# 	localization_key = random_entertainment_text_niebelungenlied
+	# }
 
-	text = {
-		trigger = {
-			scope:entertainment_book_title = flag:song_of_roland
-		}
-		localization_key = random_entertainment_text_song_of_roland
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:entertainment_book_title = flag:song_of_roland
+	# 	}
+	# 	localization_key = random_entertainment_text_song_of_roland
+	# }
 
-	text = {
-		trigger = {
-			scope:entertainment_book_title = flag:mabinogi
-		}
-		localization_key = random_entertainment_text_mabinogi
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:entertainment_book_title = flag:mabinogi
+	# 	}
+	# 	localization_key = random_entertainment_text_mabinogi
+	# }
 
-	text = {
-		trigger = {
-			scope:entertainment_book_title = flag:travels_to_jerusalem
-		}
-		localization_key = random_entertainment_text_travels_to_jerusalem
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:entertainment_book_title = flag:travels_to_jerusalem
+	# 	}
+	# 	localization_key = random_entertainment_text_travels_to_jerusalem
+	# }
 
-	text = {
-		trigger = {
-			scope:entertainment_book_title = flag:east_of_indus
-		}
-		localization_key = random_entertainment_text_east_of_indus
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:entertainment_book_title = flag:east_of_indus
+	# 	}
+	# 	localization_key = random_entertainment_text_east_of_indus
+	# }
 
-	text = {
-		trigger = {
-			scope:entertainment_book_title = flag:travels_to_byzantium
-		}
-		localization_key = random_entertainment_text_travels_to_byzantium
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:entertainment_book_title = flag:travels_to_byzantium
+	# 	}
+	# 	localization_key = random_entertainment_text_travels_to_byzantium
+	# }
 
-	text = {
-		trigger = {
-			scope:entertainment_book_title = flag:digenes_akrites
-		}
-		localization_key = random_entertainment_text_digenes_akrites
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:entertainment_book_title = flag:digenes_akrites
+	# 	}
+	# 	localization_key = random_entertainment_text_digenes_akrites
+	# }
 
-	text = {
-		trigger = {
-			scope:entertainment_book_title = flag:epigrams
-		}
-		localization_key = random_entertainment_text_epigrams
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:entertainment_book_title = flag:epigrams
+	# 	}
+	# 	localization_key = random_entertainment_text_epigrams
+	# }
 
-	text = {
-		trigger = {
-			scope:entertainment_book_title = flag:philogelos
-		}
-		localization_key = random_entertainment_text_philogelos
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:entertainment_book_title = flag:philogelos
+	# 	}
+	# 	localization_key = random_entertainment_text_philogelos
+	# }
 
 	text = {
 		trigger = {
