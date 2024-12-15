@@ -7560,120 +7560,121 @@ ep2_locale_events.4506 = {
 						has_character_flag = sword_name_dicer
 					}
 				}
-				default = {
-					localization_key = sword_name_almace
-					trigger = {
-						has_character_flag = sword_name_almace
-					}
-				}
-				default = {
-					localization_key = sword_name_hauteclere
-					trigger = {
-						has_character_flag = sword_name_hauteclere
-					}
-				}
-				default = {
-					localization_key = sword_name_murgleis
-					trigger = {
-						has_character_flag = sword_name_murgleis
-					}
-				}
-				default = {
-					localization_key = sword_name_flamberge
-					trigger = {
-						has_character_flag = sword_name_flamberge
-					}
-				}
-				default = {
-					localization_key = sword_name_arondight
-					trigger = {
-						has_character_flag = sword_name_arondight
-					}
-				}
-				default = {
-					localization_key = sword_name_clarent
-					trigger = {
-						has_character_flag = sword_name_clarent
-					}
-				}
-				default = {
-					localization_key = sword_name_coreiseuse
-					trigger = {
-						has_character_flag = sword_name_coreiseuse
-					}
-				}
-				default = {
-					localization_key = sword_name_galatine
-					trigger = {
-						has_character_flag = sword_name_galatine
-					}
-				}
-				default = {
-					localization_key = sword_name_gramr
-					trigger = {
-						has_character_flag = sword_name_gramr
-					}
-				}
-				default = {
-					localization_key = sword_name_tyrfing
-					trigger = {
-						has_character_flag = sword_name_tyrfing
-					}
-				}
-				default = {
-					localization_key = sword_name_zulfiqar
-					trigger = {
-						has_character_flag = sword_name_zulfiqar
-					}
-				}
-				default = {
-					localization_key = sword_name_harpe
-					trigger = {
-						has_character_flag = sword_name_harpe
-					}
-				}
-				default = {
-					localization_key = sword_name_ascalon
-					trigger = {
-						has_character_flag = sword_name_ascalon
-					}
-				}
-				default = {
-					localization_key = sword_name_asi
-					trigger = {
-						has_character_flag = sword_name_asi
-					}
-				}
-				default = {
-					localization_key = sword_name_caladgolg
-					trigger = {
-						has_character_flag = sword_name_caladgolg
-					}
-				}
-				default = {
-					localization_key = sword_name_blutgang
-					trigger = {
-						has_character_flag = sword_name_blutgang
-					}
-				}
-				default = {
-					localization_key = sword_name_fragarach
-					trigger = {
-						has_character_flag = sword_name_fragarach
-					}
-				}
-				default = {
-					localization_key = sword_name_chandrahas
-					trigger = {
-						has_character_flag = sword_name_chandrahas
-					}
-				}
-				default = {
-					localization_key = sword_name_nandaka
-					trigger = {
-						has_character_flag = sword_name_nandaka
-					}
-				}
+				#L5R Disabled
+				# default = {
+				# 	localization_key = sword_name_almace
+				# 	trigger = {
+				# 		has_character_flag = sword_name_almace
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_hauteclere
+				# 	trigger = {
+				# 		has_character_flag = sword_name_hauteclere
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_murgleis
+				# 	trigger = {
+				# 		has_character_flag = sword_name_murgleis
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_flamberge
+				# 	trigger = {
+				# 		has_character_flag = sword_name_flamberge
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_arondight
+				# 	trigger = {
+				# 		has_character_flag = sword_name_arondight
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_clarent
+				# 	trigger = {
+				# 		has_character_flag = sword_name_clarent
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_coreiseuse
+				# 	trigger = {
+				# 		has_character_flag = sword_name_coreiseuse
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_galatine
+				# 	trigger = {
+				# 		has_character_flag = sword_name_galatine
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_gramr
+				# 	trigger = {
+				# 		has_character_flag = sword_name_gramr
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_tyrfing
+				# 	trigger = {
+				# 		has_character_flag = sword_name_tyrfing
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_zulfiqar
+				# 	trigger = {
+				# 		has_character_flag = sword_name_zulfiqar
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_harpe
+				# 	trigger = {
+				# 		has_character_flag = sword_name_harpe
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_ascalon
+				# 	trigger = {
+				# 		has_character_flag = sword_name_ascalon
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_asi
+				# 	trigger = {
+				# 		has_character_flag = sword_name_asi
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_caladgolg
+				# 	trigger = {
+				# 		has_character_flag = sword_name_caladgolg
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_blutgang
+				# 	trigger = {
+				# 		has_character_flag = sword_name_blutgang
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_fragarach
+				# 	trigger = {
+				# 		has_character_flag = sword_name_fragarach
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_chandrahas
+				# 	trigger = {
+				# 		has_character_flag = sword_name_chandrahas
+				# 	}
+				# }
+				# default = {
+				# 	localization_key = sword_name_nandaka
+				# 	trigger = {
+				# 		has_character_flag = sword_name_nandaka
+				# 	}
+				# }
 				default = {
 					localization_key = sword_name_old_pokey
 					trigger = {

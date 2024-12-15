@@ -216,7 +216,8 @@ gift_interaction = {
 										catalyst = catalyst_gift_supporter_detractor_ruler
 										character = scope:actor
 									}
-									log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_gift_supporter_detractor_ruler }
+									#L5R Disabled
+									# log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_gift_supporter_detractor_ruler }
 								}
 							}
 						}

@@ -2150,9 +2150,10 @@ tradition_staunch_traditionalists = {
 		has_dlc_feature = hybridize_culture
 	}
 	can_pick = {
-		NOT = {
-		has_cultural_tradition = tradition_fp3_fierce_independence
-		}
+		#L5R Disabled
+		# NOT = {
+		# 	has_cultural_tradition = tradition_fp3_fierce_independence
+		# }
 	}
 	
 	parameters = {

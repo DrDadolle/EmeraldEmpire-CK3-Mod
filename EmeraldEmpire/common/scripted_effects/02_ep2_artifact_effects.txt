@@ -983,114 +983,115 @@ remove_sword_flags_effect = {
 		}
 		remove_character_flag = sword_name_queensbane
 	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_almace
-		}
-		remove_character_flag = sword_name_almace
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_hauteclere
-		}
-		remove_character_flag = sword_name_hauteclere
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_murgleis
-		}
-		remove_character_flag = sword_name_murgleis
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_flamberge
-		}
-		remove_character_flag = sword_name_flamberge
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_arondight
-		}
-		remove_character_flag = sword_name_arondight
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_clarent
-		}
-		remove_character_flag = sword_name_clarent
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_coreiseuse
-		}
-		remove_character_flag = sword_name_coreiseuse
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_galatine
-		}
-		remove_character_flag = sword_name_galatine
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_gramr
-		}
-		remove_character_flag = sword_name_gramr
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_tyrfing
-		}
-		remove_character_flag = sword_name_tyrfing
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_zulfiqar
-		}
-		remove_character_flag = sword_name_zulfiqar
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_harpe
-		}
-		remove_character_flag = sword_name_harpe
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_ascalon
-		}
-		remove_character_flag = sword_name_ascalon
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_asi
-		}
-		remove_character_flag = sword_name_asi
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_caladgolg
-		}
-		remove_character_flag = sword_name_caladgolg
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_fragarach
-		}
-		remove_character_flag = sword_name_fragarach
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_chandrahas
-		}
-		remove_character_flag = sword_name_chandrahas
-	}
-	if = {
-		limit = {
-			has_character_flag = sword_name_nandaka
-		}
-		remove_character_flag = sword_name_nandaka
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_almace
+	# 	}
+	# 	remove_character_flag = sword_name_almace
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_hauteclere
+	# 	}
+	# 	remove_character_flag = sword_name_hauteclere
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_murgleis
+	# 	}
+	# 	remove_character_flag = sword_name_murgleis
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_flamberge
+	# 	}
+	# 	remove_character_flag = sword_name_flamberge
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_arondight
+	# 	}
+	# 	remove_character_flag = sword_name_arondight
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_clarent
+	# 	}
+	# 	remove_character_flag = sword_name_clarent
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_coreiseuse
+	# 	}
+	# 	remove_character_flag = sword_name_coreiseuse
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_galatine
+	# 	}
+	# 	remove_character_flag = sword_name_galatine
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_gramr
+	# 	}
+	# 	remove_character_flag = sword_name_gramr
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_tyrfing
+	# 	}
+	# 	remove_character_flag = sword_name_tyrfing
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_zulfiqar
+	# 	}
+	# 	remove_character_flag = sword_name_zulfiqar
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_harpe
+	# 	}
+	# 	remove_character_flag = sword_name_harpe
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_ascalon
+	# 	}
+	# 	remove_character_flag = sword_name_ascalon
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_asi
+	# 	}
+	# 	remove_character_flag = sword_name_asi
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_caladgolg
+	# 	}
+	# 	remove_character_flag = sword_name_caladgolg
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_fragarach
+	# 	}
+	# 	remove_character_flag = sword_name_fragarach
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_chandrahas
+	# 	}
+	# 	remove_character_flag = sword_name_chandrahas
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_character_flag = sword_name_nandaka
+	# 	}
+	# 	remove_character_flag = sword_name_nandaka
+	# }
 	if = {
 		limit = {
 			has_character_flag = sword_name_old_pokey

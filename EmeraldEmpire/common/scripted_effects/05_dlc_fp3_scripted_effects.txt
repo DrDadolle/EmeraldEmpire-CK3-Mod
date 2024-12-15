@@ -480,7 +480,8 @@ fp3_struggle_apply_independent_vassalage_catalyst_effect = {
 					catalyst = catalyst_vassalize_independent_ruler
 					character = $NEW_LIEGE$
 				}
-				log_debug_variable_for_persian_struggle_effect = { VAR = stabil_catalyst_vassalize_independent_ruler }
+				#L5R Disabled
+				# log_debug_variable_for_persian_struggle_effect = { VAR = stabil_catalyst_vassalize_independent_ruler }
 			}
 		}
 	}
