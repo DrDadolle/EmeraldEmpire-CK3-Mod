@@ -560,7 +560,8 @@
 			artifact_region_trigger = { CHARACTER = scope:owner REGION = material_cloth_linen }
 			trigger_if = {
 				limit = { exists = scope:owner }
-				NOT = { scope:owner.religion = religion:judaism_religion }
+				#L5R Disabled
+				# NOT = { scope:owner.religion = religion:judaism_religion }
 			}
 		}	
 		weight = 30
@@ -4460,26 +4461,27 @@
 		weight = 1
 	}
 
-	book_topic_diplomacy_cicero = {
-		group = book_topic
-		trigger = {
-			has_artifact_feature = book_subject_diplomacy
-			scope:owner.culture = { has_cultural_pillar = heritage_latin }
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_artifact_author }
-				scope:owner.var:book_artifact_author.culture = { has_cultural_pillar = heritage_latin }
-			}
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_topic_category }
-				scope:owner.var:book_topic_category = flag:diplomacy_court
-			}
-			trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
-				limit = { exists = scope:owner.var:book_artifact_topic }
-				scope:owner.var:book_artifact_topic = flag:cicero
-			}
-		}
-		weight = 1
-	}
+	#L5R Disabled
+	# book_topic_diplomacy_cicero = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		has_artifact_feature = book_subject_diplomacy
+	# 		scope:owner.culture = { has_cultural_pillar = heritage_latin }
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_artifact_author }
+	# 			scope:owner.var:book_artifact_author.culture = { has_cultural_pillar = heritage_latin }
+	# 		}
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_topic_category }
+	# 			scope:owner.var:book_topic_category = flag:diplomacy_court
+	# 		}
+	# 		trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
+	# 			limit = { exists = scope:owner.var:book_artifact_topic }
+	# 			scope:owner.var:book_artifact_topic = flag:cicero
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 
 	book_topic_diplomacy_art_of_feasting = {
 		group = book_topic
@@ -4525,60 +4527,62 @@
 		}
 	}
 
-	book_topic_diplomacy_hitopadesa = {
-		group = book_topic
-		trigger = {
-			has_artifact_feature = book_subject_diplomacy
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_topic_category }
-				scope:owner.var:book_topic_category = flag:diplomacy_entertainment
-			}
-			OR = {
-				trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
-					limit = { exists = scope:owner.var:book_artifact_topic }
-					scope:owner.var:book_artifact_topic = flag:hitopadesa
-				}
-				AND = {
-					scope:owner.faith.religion = religion:hinduism_religion
-					trigger_if = {
-						limit = { exists = scope:owner.var:book_artifact_author }
-						scope:owner.var:book_artifact_author.faith.religion = religion:hinduism_religion
-					}
-				}
-				AND = {
-					exists = scope:owner.capital_province
-					scope:owner.capital_province = {
-						OR = {
-							geographical_region = world_india
-							geographical_region = ghw_region_afghanistan
-						}
-					}
-				}
-			}
-		}
-		weight = 1
-	}
+	#L5R Disabled
+	# book_topic_diplomacy_hitopadesa = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		has_artifact_feature = book_subject_diplomacy
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_topic_category }
+	# 			scope:owner.var:book_topic_category = flag:diplomacy_entertainment
+	# 		}
+	# 		OR = {
+	# 			trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
+	# 				limit = { exists = scope:owner.var:book_artifact_topic }
+	# 				scope:owner.var:book_artifact_topic = flag:hitopadesa
+	# 			}
+	# 			AND = {
+	# 				scope:owner.faith.religion = religion:hinduism_religion
+	# 				trigger_if = {
+	# 					limit = { exists = scope:owner.var:book_artifact_author }
+	# 					scope:owner.var:book_artifact_author.faith.religion = religion:hinduism_religion
+	# 				}
+	# 			}
+	# 			AND = {
+	# 				exists = scope:owner.capital_province
+	# 				scope:owner.capital_province = {
+	# 					OR = {
+	# 						geographical_region = world_india
+	# 						geographical_region = ghw_region_afghanistan
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 
-	book_topic_diplomacy_kalila = {
-		group = book_topic
-		trigger = {
-			has_artifact_feature = book_subject_diplomacy
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_topic_category }
-				scope:owner.var:book_topic_category = flag:diplomacy_entertainment
-			}
-			trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
-				limit = { exists = scope:owner.var:book_artifact_topic }
-				scope:owner.var:book_artifact_topic = flag:kalila
-			}
-			scope:owner.faith.religion = religion:islam_religion
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_artifact_author }
-				scope:owner.var:book_artifact_author.faith.religion = religion:islam_religion
-			}
-		}
-		weight = 1
-	}
+	#L5R Disabled
+	# book_topic_diplomacy_kalila = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		has_artifact_feature = book_subject_diplomacy
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_topic_category }
+	# 			scope:owner.var:book_topic_category = flag:diplomacy_entertainment
+	# 		}
+	# 		trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
+	# 			limit = { exists = scope:owner.var:book_artifact_topic }
+	# 			scope:owner.var:book_artifact_topic = flag:kalila
+	# 		}
+	# 		scope:owner.faith.religion = religion:islam_religion
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_artifact_author }
+	# 			scope:owner.var:book_artifact_author.faith.religion = religion:islam_religion
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 
 	book_topic_diplomacy_edda = {
 		group = book_topic
@@ -4962,83 +4966,82 @@
 		weight = 1
 	}
 
-	book_topic_learning_iliad = {
-		group = book_topic
-		trigger = {
-			has_artifact_feature = book_subject_learning
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_topic_category }
-				scope:owner.var:book_topic_category = flag:learning_learning
-			}
-			trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
-				limit = { exists = scope:owner.var:book_artifact_topic }
-				scope:owner.var:book_artifact_topic = flag:iliad
-			}
-			scope:owner.culture = { has_cultural_pillar = heritage_byzantine }
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_artifact_author }
-				scope:owner.var:book_artifact_author.culture = { has_cultural_pillar = heritage_byzantine }
-			}
-		}
-		weight = 1
-	}
+	#L5R Disabled
+	# book_topic_learning_iliad = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		has_artifact_feature = book_subject_learning
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_topic_category }
+	# 			scope:owner.var:book_topic_category = flag:learning_learning
+	# 		}
+	# 		trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
+	# 			limit = { exists = scope:owner.var:book_artifact_topic }
+	# 			scope:owner.var:book_artifact_topic = flag:iliad
+	# 		}
+	# 		scope:owner.culture = { has_cultural_pillar = heritage_byzantine }
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_artifact_author }
+	# 			scope:owner.var:book_artifact_author.culture = { has_cultural_pillar = heritage_byzantine }
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 
-	book_topic_learning_mahabharata = {
-		group = book_topic
-		trigger = {
-			has_artifact_feature = book_subject_learning
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_topic_category }
-				scope:owner.var:book_topic_category = flag:learning_learning
-			}
-			OR = {
-				trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
-					limit = { exists = scope:owner.var:book_artifact_topic }
-					scope:owner.var:book_artifact_topic = flag:mahabharata
-				}
-				#L5R Disabled
-				# AND = {
-				# 	scope:owner.faith.religion = religion:hinduism_religion
-				# 	exists = scope:owner.var:book_artifact_author
-				# 	scope:owner.var:book_artifact_author.faith.religion = religion:hinduism_religion
-				# }
-				AND = {
-					exists = scope:owner.capital_province
-					scope:owner.capital_province = {
-						OR = {
-							#L5R Modified
-							geographical_region = world_spice_and_silk_isles
-							# geographical_region = world_india
-							# geographical_region = ghw_region_afghanistan
-						}
-					}
-				}
-			}
-		}
-		weight = 1
-	}
+	#L5R Disabled
+	# book_topic_learning_mahabharata = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		has_artifact_feature = book_subject_learning
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_topic_category }
+	# 			scope:owner.var:book_topic_category = flag:learning_learning
+	# 		}
+	# 		OR = {
+	# 			trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
+	# 				limit = { exists = scope:owner.var:book_artifact_topic }
+	# 				scope:owner.var:book_artifact_topic = flag:mahabharata
+	# 			}
+	# 			AND = {
+	# 				scope:owner.faith.religion = religion:hinduism_religion
+	# 				exists = scope:owner.var:book_artifact_author
+	# 				scope:owner.var:book_artifact_author.faith.religion = religion:hinduism_religion
+	# 			}
+	# 			AND = {
+	# 				exists = scope:owner.capital_province
+	# 				scope:owner.capital_province = {
+	# 					OR = {
+	# 						geographical_region = world_india
+	# 						geographical_region = ghw_region_afghanistan
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 
-	book_topic_learning_mufaddaliyat = {
-		group = book_topic
-		trigger = {
-			has_artifact_feature = book_subject_learning
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_topic_category }
-				scope:owner.var:book_topic_category = flag:learning_learning
-			}
-			trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
-				limit = { exists = scope:owner.var:book_artifact_topic }
-				scope:owner.var:book_artifact_topic = flag:mufaddaliyat
-			}
-			#L5R Disabled
-			# scope:owner.faith.religion = religion:islam_religion
-			exists = scope:owner.var:book_artifact_author
-			#L5R Disabled
-			# scope:owner.var:book_artifact_author.faith.religion = religion:islam_religion
-			scope:owner.var:book_artifact_author = { has_trait = scholar }
-		}
-		weight = 1
-	}
+	#L5R Disabled
+	# book_topic_learning_mufaddaliyat = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		has_artifact_feature = book_subject_learning
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_topic_category }
+	# 			scope:owner.var:book_topic_category = flag:learning_learning
+	# 		}
+	# 		trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
+	# 			limit = { exists = scope:owner.var:book_artifact_topic }
+	# 			scope:owner.var:book_artifact_topic = flag:mufaddaliyat
+	# 		}
+
+	# 		scope:owner.faith.religion = religion:islam_religion
+	# 		exists = scope:owner.var:book_artifact_author	
+	# 		scope:owner.var:book_artifact_author.faith.religion = religion:islam_religion
+	# 		scope:owner.var:book_artifact_author = { has_trait = scholar }
+	# 	}
+	# 	weight = 1
+	# }
 
 	# stewardship topics
 	book_topic_stewardship_trade_routes = {
@@ -5176,69 +5179,66 @@
 		}
 	}
 
-	book_topic_stewardship_digest = {
-		group = book_topic
-		trigger = {
-			has_artifact_feature = book_subject_stewardship
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_topic_category }
-				scope:owner.var:book_topic_category = flag:stewardship_rule
-			}
-			trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
-				limit = { exists = scope:owner.var:book_artifact_topic }
-				scope:owner.var:book_artifact_topic = flag:digest
-			}
-			#L5R Disabled
-			# OR = {
-			# 	AND = {
-			# 		scope:owner.culture = {
-			# 			OR = {
-			# 				has_cultural_pillar = heritage_byzantine
-			# 				has_cultural_pillar = heritage_caucasian
-			# 				has_cultural_pillar = heritage_syriac
-			# 			}
-			# 		}
-			# 		trigger_if = {
-			# 			limit = { exists = scope:owner.var:book_artifact_author }
-			# 			scope:owner.var:book_artifact_author.culture = { has_cultural_pillar = heritage_byzantine }
-			# 		}
-			# 	}
-			# 	AND = {
-			# 		scope:owner.culture = { has_cultural_pillar = heritage_latin }
-			# 		trigger_if = {
-			# 			limit = { exists = scope:owner.var:book_artifact_author }
-			# 			scope:owner.var:book_artifact_author.culture = { has_cultural_pillar = heritage_latin }
-			# 		}
-			# 	}
-			# }
-			#L5R Added
-			scope:owner.capital_province ?= {
-				geographical_region = world_rokugan
-			}
-		}
-		weight = 1
-	}
+	#L5R Disabled
+	# book_topic_stewardship_digest = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		has_artifact_feature = book_subject_stewardship
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_topic_category }
+	# 			scope:owner.var:book_topic_category = flag:stewardship_rule
+	# 		}
+	# 		trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
+	# 			limit = { exists = scope:owner.var:book_artifact_topic }
+	# 			scope:owner.var:book_artifact_topic = flag:digest
+	# 		}
+	# 		OR = {
+	# 			AND = {
+	# 				scope:owner.culture = {
+	# 					OR = {
+	# 						has_cultural_pillar = heritage_byzantine
+	# 						has_cultural_pillar = heritage_caucasian
+	# 						has_cultural_pillar = heritage_syriac
+	# 					}
+	# 				}
+	# 				trigger_if = {
+	# 					limit = { exists = scope:owner.var:book_artifact_author }
+	# 					scope:owner.var:book_artifact_author.culture = { has_cultural_pillar = heritage_byzantine }
+	# 				}
+	# 			}
+	# 			AND = {
+	# 				scope:owner.culture = { has_cultural_pillar = heritage_latin }
+	# 				trigger_if = {
+	# 					limit = { exists = scope:owner.var:book_artifact_author }
+	# 					scope:owner.var:book_artifact_author.culture = { has_cultural_pillar = heritage_latin }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 
-	book_topic_stewardship_speculum = {
-		group = book_topic
-		trigger = {
-			has_artifact_feature = book_subject_stewardship
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_topic_category }
-				scope:owner.var:book_topic_category = flag:stewardship_rule
-			}
-			trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
-				limit = { exists = scope:owner.var:book_artifact_topic }
-				scope:owner.var:book_artifact_topic = flag:speculum
-			}
-			scope:owner.culture = { has_cultural_pillar = heritage_latin }
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_artifact_author }
-				scope:owner.var:book_artifact_author.culture = { has_cultural_pillar = heritage_latin }
-			}
-		}
-		weight = 1
-	}
+	#L5R Disabled
+	# book_topic_stewardship_speculum = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		has_artifact_feature = book_subject_stewardship
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_topic_category }
+	# 			scope:owner.var:book_topic_category = flag:stewardship_rule
+	# 		}
+	# 		trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
+	# 			limit = { exists = scope:owner.var:book_artifact_topic }
+	# 			scope:owner.var:book_artifact_topic = flag:speculum
+	# 		}
+	# 		scope:owner.culture = { has_cultural_pillar = heritage_latin }
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_artifact_author }
+	# 			scope:owner.var:book_artifact_author.culture = { has_cultural_pillar = heritage_latin }
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 
 	book_topic_stewardship_admin = {
 		group = book_topic

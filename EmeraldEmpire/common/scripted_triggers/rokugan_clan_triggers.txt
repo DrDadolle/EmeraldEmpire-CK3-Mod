@@ -24,6 +24,36 @@ is_from_samurai_culture = {
         culture = { has_cultural_tradition = tradition_bushido }
 }
 
+# Hardcoded culture list
+is_from_rokugani_culture = {
+    OR = {
+        culture = { has_cultural_pillar = heritage_crane }
+        culture = { has_cultural_pillar = heritage_lion }
+        culture = { has_cultural_pillar = heritage_phoenix }
+        culture = { has_cultural_pillar = heritage_dragon }
+        culture = { has_cultural_pillar = heritage_scorpion }
+        culture = { has_cultural_pillar = heritage_crab }
+        culture = { has_cultural_pillar = heritage_unicorn }
+        culture = { has_cultural_pillar = heritage_imperial }
+        culture = { has_cultural_pillar = heritage_kitsune }
+        culture = { has_cultural_pillar = heritage_kasuga }
+        culture = { has_cultural_pillar = heritage_tonbo }
+        culture = { has_cultural_pillar = heritage_toritaka }
+        culture = { has_cultural_pillar = heritage_usagi }
+        culture = { has_cultural_pillar = heritage_yoritomo }
+        culture = { has_cultural_pillar = heritage_tsuruchi }
+        culture = { has_cultural_pillar = heritage_suzume }
+        culture = { has_cultural_pillar = heritage_ichiro }
+        culture = { has_cultural_pillar = heritage_nekoma }
+        culture = { has_cultural_pillar = heritage_komori }
+        culture = { has_cultural_pillar = heritage_shika }
+        culture = { has_cultural_pillar = heritage_kaikoga }
+        culture = { has_cultural_pillar = heritage_chuda }
+        culture = { has_cultural_pillar = heritage_kuma }
+        culture = { has_cultural_pillar = heritage_kaeru }
+    }
+}
+
 # Hard-coded for now. Maybe it'll be a special flag on a title later ?
 is_imperial_family = {
     OR = {
