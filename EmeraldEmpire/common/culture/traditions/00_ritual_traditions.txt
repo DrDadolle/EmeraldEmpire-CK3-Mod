@@ -261,7 +261,6 @@ tradition_sacred_mountains = {
 					OR = {
 						terrain = mountains
 						terrain = desert_mountains
-						terrain = halls
 					}
 				}
 			}
@@ -303,7 +302,6 @@ tradition_sacred_mountains = {
 								OR = {
 									terrain = mountains
 									terrain = desert_mountains
-									terrain = halls
 								}
 							}
 						}
@@ -392,8 +390,6 @@ tradition_sacred_groves = {
 						terrain = forest
 						terrain = taiga
 						terrain = jungle
-						terrain = deep_forest
-						terrain = mallorn_forest
 					}
 				}
 			}
@@ -437,8 +433,6 @@ tradition_sacred_groves = {
 									terrain = forest
 									terrain = taiga
 									terrain = jungle
-									terrain = deep_forest
-									terrain = mallorn_forest
 								}
 							}
 						}

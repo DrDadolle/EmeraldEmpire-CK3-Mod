@@ -29,6 +29,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - remove bunch of errors
 - % de chance shindoshi/ishiken TROP BAS ! STILL TOO FEW
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
+- TEST : shiro chuda if correct value at start. Check if side building created, kept upon reaching level 4
 - Fix era time line. 
 - Add thumbnail image for the mod !
 
@@ -76,7 +77,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - Issues with missing accolades in innovations description ? Why ?
-- [ Invalid building 'haunted_ruins_shiro_chuda_04' ]
 - start war on toshi Rambo / city rich frog decision
 	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
 - - When a major clan grab the title of emperor, the redistribution breaks

@@ -1861,16 +1861,14 @@ christianity_or_syncretic_with_christianity_trigger = {
 }
 
 unreformed_or_syncretic_with_unreformed_trigger = {
-	#L5R Disabled
-	always = no
-	# $CHARACTER$ = {
-	# 	faith = {
-	# 		OR = {
-	# 			religion = religion:unreformed_religion
-	# 			has_doctrine = tenet_unreformed_syncretism
-	# 		}
-	# 	}
-	# }
+	$CHARACTER$ = {
+		faith = {
+			OR = {
+				religion = religion:unreformed_religion
+				has_doctrine = tenet_unreformed_syncretism
+			}
+		}
+	}
 }
 
 zoroastrian_or_syncretic_with_eastern_trigger = {

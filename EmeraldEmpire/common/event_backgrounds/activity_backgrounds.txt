@@ -2376,41 +2376,42 @@ activity_tour = {
 	}
 	# End Travel
 	
+	#L5R Disabled
 	# Tour the Grounds
-	background = {	#FP2
-		trigger = {
-			has_current_phase = tour_phase_tour_grounds
-			OR = {
-				activity_location.culture ?= { has_building_gfx = iberian_building_gfx }
-				activity_location = { geographical_region = world_europe_west_iberia }
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp2_courtyard.dds"
-		environment = "environment_event_fp2_courtyard" 
-		ambience = "event:/DLC/FP2/SFX/Events/courtyard" 
-	}
+	# background = {	#FP2
+	# 	trigger = {
+	# 		has_current_phase = tour_phase_tour_grounds
+	# 		OR = {
+	# 			activity_location.culture ?= { has_building_gfx = iberian_building_gfx }
+	# 			activity_location = { geographical_region = world_europe_west_iberia }
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp2_courtyard.dds"
+	# 	environment = "environment_event_fp2_courtyard" 
+	# 	ambience = "event:/DLC/FP2/SFX/Events/courtyard" 
+	# }
 	
-	background = {	#Indian Courtyard
-		trigger = {
-			has_current_phase = tour_phase_tour_grounds
-			activity_location.culture ?= { has_graphical_india_culture_group_trigger = yes }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_indian.dds"
-		environment = "environment_event_bp1_courtyard_indian" 
-		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
-	}
-	background = {	#MENA Courtyard
-		trigger = {
-			has_current_phase = tour_phase_tour_grounds
-			OR = {
-				activity_location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-				activity_location.culture ?= { has_building_gfx = iranian_building_gfx } 
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
-		environment = "environment_event_bp1_courtyard_mena"
-		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
-	}
+	# background = {	#Indian Courtyard
+	# 	trigger = {
+	# 		has_current_phase = tour_phase_tour_grounds
+	# 		activity_location.culture ?= { has_graphical_india_culture_group_trigger = yes }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_indian.dds"
+	# 	environment = "environment_event_bp1_courtyard_indian" 
+	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	# }
+	# background = {	#MENA Courtyard
+	# 	trigger = {
+	# 		has_current_phase = tour_phase_tour_grounds
+	# 		OR = {
+	# 			activity_location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+	# 			activity_location.culture ?= { has_building_gfx = iranian_building_gfx } 
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
+	# 	environment = "environment_event_bp1_courtyard_mena"
+	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	# }
 
 	background = { #Fallback
 		trigger = {
@@ -2508,25 +2509,26 @@ activity_tour = {
 		environment = "environment_event_docks"
 		ambience = "event:/SFX/Events/Backgrounds/docks_day"
 	} 
-	background = { #Eastern
-		trigger = {
-			has_current_phase = tour_phase_cultural_festival
-			activity_location = {
-				OR = {
-					geographical_region = graphical_mena
-					geographical_region = graphical_india
-					culture ?= { has_building_gfx = iranian_building_gfx }
-					AND = {
-			 			geographical_region = world_europe_west_iberia
-			 			faith ?= { religion = religion:islam_religion }
-			 		}
-				}
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/market_east.dds"
-		environment = "environment_event_market_east"
-		ambience = "event:/SFX/Events/Backgrounds/town_market_middleeastern_day"
-	}
+	#L5R Disabled
+	# background = { #Eastern
+	# 	trigger = {
+	# 		has_current_phase = tour_phase_cultural_festival
+	# 		activity_location = {
+	# 			OR = {
+	# 				geographical_region = graphical_mena
+	# 				geographical_region = graphical_india
+	# 				culture ?= { has_building_gfx = iranian_building_gfx }
+	# 				AND = {
+	# 		 			geographical_region = world_europe_west_iberia
+	# 		 			faith ?= { religion = religion:islam_religion }
+	# 		 		}
+	# 			}
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/market_east.dds"
+	# 	environment = "environment_event_market_east"
+	# 	ambience = "event:/SFX/Events/Backgrounds/town_market_middleeastern_day"
+	# }
 	background = { #Western (standard/fallback)
 		trigger = {
 			has_current_phase = tour_phase_cultural_festival
@@ -3187,27 +3189,28 @@ activity_wedding = {
 		ambience = "event:/DLC/FP1/SFX/Events/event_ocean_longship"
 	}
 	# End Travel
-	background = {	 #Indian
-		trigger = {
-			activity_location.culture = { has_graphical_india_culture_group_trigger = yes }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_indian.dds"
-		environment = "environment_indian_wedding" 
-		ambience = "event:/DLC/EP2/MX/Cuetracks/mx_cuetrack_11_wedding_india"
-	}
-	background = {	 #MENA (also steppes and African )
-		trigger = {
-			OR = {
-				activity_location.culture = { has_graphical_mena_culture_group_trigger = yes }
-				activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
-				activity_location.culture = { has_graphical_african_culture_group_trigger = yes }
-				activity_location.culture = { has_building_gfx = iranian_building_gfx }
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_mena.dds"
-		environment = "environment_mena_wedding" 
-		ambience = "event:/DLC/EP2/MX/Cuetracks/mx_cuetrack_10_wedding_mena"
-	}
+	#L5R Disabled
+	# background = {	 #Indian
+	# 	trigger = {
+	# 		activity_location.culture = { has_graphical_india_culture_group_trigger = yes }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_indian.dds"
+	# 	environment = "environment_indian_wedding" 
+	# 	ambience = "event:/DLC/EP2/MX/Cuetracks/mx_cuetrack_11_wedding_india"
+	# }
+	# background = {	 #MENA (also steppes and African )
+	# 	trigger = {
+	# 		OR = {
+	# 			activity_location.culture = { has_graphical_mena_culture_group_trigger = yes }
+	# 			activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
+	# 			activity_location.culture = { has_graphical_african_culture_group_trigger = yes }
+	# 			activity_location.culture = { has_building_gfx = iranian_building_gfx }
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_mena.dds"
+	# 	environment = "environment_mena_wedding" 
+	# 	ambience = "event:/DLC/EP2/MX/Cuetracks/mx_cuetrack_10_wedding_mena"
+	# }
 	background = {	 # Western - Fallback
 		reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_western.dds"
 		environment = "environment_western_wedding" 

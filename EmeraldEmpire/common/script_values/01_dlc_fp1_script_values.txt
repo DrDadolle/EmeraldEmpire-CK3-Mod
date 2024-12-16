@@ -63,11 +63,11 @@ gruesome_festival_key_sacrifice_piety_value = {
 						# 	has_doctrine = tenet_eastern_syncretism
 						# 	scope:sacrifice.religion = { is_in_family = rf_eastern }
 						# }
-						# # Unreformed pagans syncretism.
-						# AND = {
-						# 	has_doctrine = tenet_unreformed_syncretism
-						# 	scope:sacrifice.faith = { has_doctrine_parameter = unreformed }
-						# }
+						# Unreformed pagans syncretism.
+						AND = {
+							has_doctrine = tenet_unreformed_syncretism
+							scope:sacrifice.faith = { has_doctrine_parameter = unreformed }
+						}
 						# # Christian syncretism.
 						# AND = {
 						# 	has_doctrine = tenet_christian_syncretism

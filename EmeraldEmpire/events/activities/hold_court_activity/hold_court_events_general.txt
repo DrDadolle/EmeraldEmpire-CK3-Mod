@@ -18758,10 +18758,10 @@ scripted_trigger hold_court_8120_syncretic_faith_trigger = {
 	# 		scope:peasant.faith.religion = { is_in_family = rf_eastern }
 	# 		faith = { has_doctrine = tenet_eastern_syncretism }
 	# 	}
-	# 	AND = { # Pagan
-	# 		scope:peasant.faith = { has_doctrine_parameter = unreformed }
-	# 		faith = { has_doctrine = tenet_unreformed_syncretism }
-	# 	}
+		AND = { # Pagan
+			scope:peasant.faith = { has_doctrine_parameter = unreformed }
+			faith = { has_doctrine = tenet_unreformed_syncretism }
+		}
 	# 	AND = { # Christian
 	# 		scope:peasant.religion = religion:christianity_religion
 	# 		faith = { has_doctrine = tenet_christian_syncretism }
@@ -18964,15 +18964,16 @@ hold_court.8120 = {
 		# 	}
 		# 	custom_tooltip = hold_court.8120.b.tt_eastern # Eastern
 		# }
-		# else_if = {
-		# 	limit = {
-		# 		AND = { 
-		# 			scope:peasant.faith = { has_doctrine_parameter = unreformed }
-		# 			faith = { has_doctrine = tenet_unreformed_syncretism }
-		# 		}
-		# 	}
-		# 	custom_tooltip = hold_court.8120.b.tt_pagan # Pagan
-		# }
+		# else_
+		if = {
+			limit = {
+				AND = { 
+					scope:peasant.faith = { has_doctrine_parameter = unreformed }
+					faith = { has_doctrine = tenet_unreformed_syncretism }
+				}
+			}
+			custom_tooltip = hold_court.8120.b.tt_pagan # Pagan
+		}
 		# else_if = {
 		# 	limit = {
 		# 		AND = { 

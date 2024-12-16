@@ -2106,80 +2106,81 @@ expose_secret_interaction = {
 				}
 			}
 		}
-		modifier = {
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-				has_trait = fp3_struggle_supporter
-			}
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_reveal_secret_supporter
-							}
-							has_trait = fp3_struggle_detractor
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_reveal_secret_supporter
-							}
-						}
-					}
-					add = -100
-				}
-			}
-		}
-		modifier = {
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-				has_trait = fp3_struggle_detractor
-			}
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_reveal_secret_detractor
-							}
-							has_trait = fp3_struggle_supporter
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_reveal_secret_detractor
-							}
-						}
-					}
-					add = -100
-				}
-			}
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 		has_trait = fp3_struggle_supporter
+		# 	}
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_reveal_secret_supporter
+		# 					}
+		# 					has_trait = fp3_struggle_detractor
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_reveal_secret_supporter
+		# 					}
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 	}
+		# }
+		# modifier = {
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 		has_trait = fp3_struggle_detractor
+		# 	}
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_reveal_secret_detractor
+		# 					}
+		# 					has_trait = fp3_struggle_supporter
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_reveal_secret_detractor
+		# 					}
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 	}
+		# }
 
 		# Unity modifiers
 		evaluate_action_decreasing_house_unity = {
