@@ -690,15 +690,16 @@ FavoriteTreat = {
 			}
 		}
 	}
-	text = {
-		localization_key = treat_nougat
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:nougat
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_nougat
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:nougat
+	# 		}
+	# 	}
+	# }
 	#L5R Disabled
 	# text = {
 	# 	localization_key = treat_marzipan
@@ -861,15 +862,16 @@ FavoriteTreatDemand = {
 			}
 		}
 	}
-	text = {
-		localization_key = treat_nougat
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:nougat
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_nougat
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:nougat
+	# 		}
+	# 	}
+	# }
 	#L5R Disabled
 	# text = {
 	# 	localization_key = treat_marzipan
@@ -1032,15 +1034,16 @@ FavoriteTreatUppercase = {
 			}
 		}
 	}
-	text = {
-		localization_key = treat_nougat_uppercase
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:nougat
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_nougat_uppercase
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:nougat
+	# 		}
+	# 	}
+	# }
 	#L5R Disabled
 	# text = {
 	# 	localization_key = treat_marzipan_uppercase

@@ -3211,9 +3211,9 @@ scripted_effect birth_9002_name_setting_effect = {
 				# scope:name_suggestion = flag:Freja
 				# scope:name_suggestion = flag:Idun
 				# scope:name_suggestion = flag:Frigg
-				scope:name_suggestion = flag:Peter
-				scope:name_suggestion = flag:Paul
-				scope:name_suggestion = flag:John
+				# scope:name_suggestion = flag:Peter
+				# scope:name_suggestion = flag:Paul
+				# scope:name_suggestion = flag:John
 				scope:name_suggestion = flag:Maria
 				scope:name_suggestion = flag:Babby
 				scope:name_suggestion = flag:Oats
@@ -3461,11 +3461,12 @@ birth.9002 = {
 			triggered_desc = {
 				trigger = {
 					scope:name_type = flag:religious
-					OR = {
-						scope:name_suggestion = flag:Peter
-						scope:name_suggestion = flag:Paul
-						scope:name_suggestion = flag:John
-					}
+					#L5R Disabled
+					# OR = {
+						# scope:name_suggestion = flag:Peter
+					# 	scope:name_suggestion = flag:Paul
+					# 	scope:name_suggestion = flag:John
+					# }
 				}
 				desc = birth.9002.religious_apostle.desc
 			}

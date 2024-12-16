@@ -1525,25 +1525,24 @@ RandomReligiousTextName = {
 	# 	}
 	# 	localization_key = random_religious_text_symeon_menologion
 	# }
-
-	text = {
-		trigger = {
-			#Original implementation
-			trigger_if = {
-				limit = { exists = scope:religious_book_title }
-				scope:religious_book_title = flag:god_and_christ
-			}
-			#L5R Disabled
-			#We're a LAAMP visiting somewhere
-			# trigger_else_if = {
-			# 	limit = { exists = scope:visiting_location }
-			# 	location.faith = faith:orthodox
-			# }
-			# #The book is of my religion
-			# trigger_else = { faith = faith:orthodox }
-		}
-		localization_key = random_religious_text_god_and_christ
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		#Original implementation
+	# 		trigger_if = {
+	# 			limit = { exists = scope:religious_book_title }
+	# 			scope:religious_book_title = flag:god_and_christ
+	# 		}
+	# 		#We're a LAAMP visiting somewhere
+	# 		trigger_else_if = {
+	# 			limit = { exists = scope:visiting_location }
+	# 			location.faith = faith:orthodox
+	# 		}
+	# 		#The book is of my religion
+	# 		trigger_else = { faith = faith:orthodox }
+	# 	}
+	# 	localization_key = random_religious_text_god_and_christ
+	# }
 
 	#L5R Disabled
 	# text = {

@@ -29,12 +29,13 @@ legend_events.0001 = {
 				}
 				desc = legend_events.0001.desc.mid.ancestral_saint
 			}
-			triggered_desc = {
-				trigger = {
-					var:legend_seed_to_give = flag:old_godly_descent
-				}
-				desc = legend_events.0001.desc.mid.old_godly_descent
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		var:legend_seed_to_give = flag:old_godly_descent
+			# 	}
+			# 	desc = legend_events.0001.desc.mid.old_godly_descent
+			# }
 			triggered_desc = {
 				trigger = {
 					var:legend_seed_to_give = flag:raised_by_animals
@@ -320,16 +321,17 @@ legend_events.0001 = {
 				}
 			}
 		}
-		else_if = {
-			limit = {
-				exists = var:legend_seed_to_give
-				var:legend_seed_to_give = flag:old_godly_descent
-			}
-			generate_religion_descent_effect = {
-				RELIGION = scope:legend_character.religion
-				GOD = high_god
-			}
-		}
+		#L5R Disabled
+		# else_if = {
+		# 	limit = {
+		# 		exists = var:legend_seed_to_give
+		# 		var:legend_seed_to_give = flag:old_godly_descent
+		# 	}
+		# 	generate_religion_descent_effect = {
+		# 		RELIGION = scope:legend_character.religion
+		# 		GOD = high_god
+		# 	}
+		# }
 		else_if = {
 			limit = {
 				exists = var:legend_seed_to_give

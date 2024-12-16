@@ -128,52 +128,64 @@ fp3_fiscal_res_achievement = {
 
 fp3_abassid_strong_achievement = {
 	possible = {
-		
-		exists = struggle:persian_struggle
+		#L5R Disabled
+		always = no
+		# exists = struggle:persian_struggle
 	}
 	happened = {
-		custom_description = {
-			text = fp3_abassid_strong_achievement_trigger
-			has_character_flag = fp3_abassid_strong_achievement_unlocked
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = fp3_abassid_strong_achievement_trigger
+		# 	has_character_flag = fp3_abassid_strong_achievement_unlocked
+		# }
 	}
 }
 
 fp3_challenger_caliphate_achievement = {
 	possible = {
-		
-		exists = struggle:persian_struggle
+		#L5R Disabled
+		always = no
+		# exists = struggle:persian_struggle
 	}
 	happened = {
-		custom_description = {
-			text = fp3_challenger_caliphate_achievement_trigger
-			has_character_flag = fp3_challenger_caliphate_achievement_unlocked
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = fp3_challenger_caliphate_achievement_trigger
+		# 	has_character_flag = fp3_challenger_caliphate_achievement_unlocked
+		# }
 	}
 }
 
 fp3_vassalize_the_caliph_achievement = {
 	possible = {
-		
-		exists = struggle:persian_struggle
+		#L5R Disabled
+		always = no
+		# exists = struggle:persian_struggle
 	}
 	happened = {
-		custom_description = {
-			text = fp3_vassalize_the_caliph_achievement_trigger
-			has_character_flag = fp3_vassalize_the_caliph_achievement_unlocked
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = fp3_vassalize_the_caliph_achievement_trigger
+		# 	has_character_flag = fp3_vassalize_the_caliph_achievement_unlocked
+		# }
 	}
 }
 
 fp3_rekindle_iran_achievement = {
 	possible = {
-		
-		exists = struggle:persian_struggle
+		#L5R Disabled
+		always = no
+		# exists = struggle:persian_struggle
 	}
 	happened = {
-		custom_description = {
-			text = fp3_rekindle_iran_achievement_trigger
-			has_character_flag = fp3_rekindle_iran_achievement_unlocked
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = fp3_rekindle_iran_achievement_trigger
+		# 	has_character_flag = fp3_rekindle_iran_achievement_unlocked
+		# }
 	}
 }

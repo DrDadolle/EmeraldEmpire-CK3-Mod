@@ -2027,13 +2027,14 @@ diplomacy_majesty_special.1010 = {
 				}
 				desc = diplomacy_majesty_special.1010.chivalry.desc
 			}
-			triggered_desc = {
-				trigger = {
-					exists = scope:topic
-					scope:topic = flag:seven_virtues
-				}
-				desc = diplomacy_majesty_special.1010.seven_virtues.desc
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		exists = scope:topic
+			# 		scope:topic = flag:seven_virtues
+			# 	}
+			# 	desc = diplomacy_majesty_special.1010.seven_virtues.desc
+			# }
 			triggered_desc = {
 				trigger = {
 					exists = scope:topic
@@ -2616,13 +2617,14 @@ diplomacy_majesty_special.1011 = {
 				}
 				desc = diplomacy_majesty_special.1010.chivalry.desc
 			}
-			triggered_desc = {
-				trigger = {
-					exists = scope:topic
-					scope:topic = flag:seven_virtues
-				}
-				desc = diplomacy_majesty_special.1010.seven_virtues.desc
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		exists = scope:topic
+			# 		scope:topic = flag:seven_virtues
+			# 	}
+			# 	desc = diplomacy_majesty_special.1010.seven_virtues.desc
+			# }
 			triggered_desc = {
 				trigger = {
 					exists = scope:topic

@@ -148,14 +148,18 @@ ep2_07_like_no_one_ever_was_achievement = {
 # 08. A Thousand and One Night
 ep2_08_a_thousand_and_one_nights_achievement = {
 	possible = {
-		exists = global_var:started_a_thousand_and_one_nights_achievement
+		#L5R Disabled
+		always = no
+		# exists = global_var:started_a_thousand_and_one_nights_achievement
 		
 	}
 	happened = {
-		custom_description = {
-			text = a_thousand_and_one_nights_achievement_trigger
-			exists = global_var:finished_a_thousand_and_one_nights_achievement
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = a_thousand_and_one_nights_achievement_trigger
+		# 	exists = global_var:finished_a_thousand_and_one_nights_achievement
+		# }
 	}
 }
 

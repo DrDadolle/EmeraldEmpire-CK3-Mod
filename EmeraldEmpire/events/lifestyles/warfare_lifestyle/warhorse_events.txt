@@ -42,10 +42,11 @@ warhorse.0001 = {
 		animation = personality_cynical
 	}
 
-	option = { #Historical name
-		name = warhorse.0001.a
-		trigger_event = warhorse.0002
-	}
+	#L5R TODO add flavour !
+	# option = { #Historical name
+	# 	name = warhorse.0001.a
+	# 	trigger_event = warhorse.0002
+	# }
 
 	option = { #Mythological name
 		name = warhorse.0001.b
@@ -68,6 +69,7 @@ warhorse.0001 = {
 }
 
 #Historical name
+#L5R TODO Modified add flavour here !
 warhorse.0002 = {
 	type = character_event
 	title = warhorse.0001.t
@@ -81,89 +83,89 @@ warhorse.0002 = {
 		animation = personality_cynical
 	}
 
-	option = {
-		name = warhorse.0002.a
-		hidden_effect = {
-			scope:story= {
-				set_variable = { #King Charlemagne's warhorse in The Song of Roland
-					name = story_cycle_horse_name
-					value = flag:tencendur
-				}
-			}
-		}
-	}
+	# option = {
+	# 	name = warhorse.0002.a
+	# 	hidden_effect = {
+	# 		scope:story= {
+	# 			set_variable = { #King Charlemagne's warhorse in The Song of Roland
+	# 				name = story_cycle_horse_name
+	# 				value = flag:tencendur
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-	option = {
-		name = warhorse.0002.b
-		hidden_effect = {
-			scope:story= {
-				set_variable = { #Alexander the Great's horse
-					name = story_cycle_horse_name
-					value = flag:bucephalus
-				}
-			}
-		}
-	}
+	# option = {
+	# 	name = warhorse.0002.b
+	# 	hidden_effect = {
+	# 		scope:story= {
+	# 			set_variable = { #Alexander the Great's horse
+	# 				name = story_cycle_horse_name
+	# 				value = flag:bucephalus
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-	option = {
-		name = warhorse.0002.c
-		hidden_effect = {
-			scope:story= {
-				set_variable = { #The cursed horse of Gnaeus Seius
-					name = story_cycle_horse_name
-					value = flag:seianian
-				}
-			}
-		}
-	}
+	# option = {
+	# 	name = warhorse.0002.c
+	# 	hidden_effect = {
+	# 		scope:story= {
+	# 			set_variable = { #The cursed horse of Gnaeus Seius
+	# 				name = story_cycle_horse_name
+	# 				value = flag:seianian
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-	option = {
-		name = warhorse.0002.d
-		hidden_effect = {
-			scope:story= {
-				set_variable = { #The horse of Husayn ibn Ali
-					name = story_cycle_horse_name
-					value = flag:zuljanah
-				}
-			}
-		}
-	}
+	# option = {
+	# 	name = warhorse.0002.d
+	# 	hidden_effect = {
+	# 		scope:story= {
+	# 			set_variable = { #The horse of Husayn ibn Ali
+	# 				name = story_cycle_horse_name
+	# 				value = flag:zuljanah
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-	option = {
-		name = warhorse.0002.e
-		hidden_effect = {
-			scope:story= {
-				set_variable = { #The warlord Lü Bu's horse
-					name = story_cycle_horse_name
-					value = flag:red_hare
-				}
-			}
-		}
-	}
+	# option = {
+	# 	name = warhorse.0002.e
+	# 	hidden_effect = {
+	# 		scope:story= {
+	# 			set_variable = { #The warlord Lü Bu's horse
+	# 				name = story_cycle_horse_name
+	# 				value = flag:red_hare
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-	option = {
-		name = warhorse.0002.f
-		hidden_effect = {
-			scope:story= {
-				set_variable = { # The horse of Roland, general under Charlemagne
-					name = story_cycle_horse_name
-					value = flag:veillantif
-				}
-			}
-		}
-	}
+	# option = {
+	# 	name = warhorse.0002.f
+	# 	hidden_effect = {
+	# 		scope:story= {
+	# 			set_variable = { # The horse of Roland, general under Charlemagne
+	# 				name = story_cycle_horse_name
+	# 				value = flag:veillantif
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-	option = {
-		name = warhorse.0002.g
-		hidden_effect = {
-			scope:story= {
-				set_variable = { # The favorite horse of Emperor Caligula
-					name = story_cycle_horse_name
-					value = flag:incitatus
-				}
-			}
-		}
-	}
+	# option = {
+	# 	name = warhorse.0002.g
+	# 	hidden_effect = {
+	# 		scope:story= {
+	# 			set_variable = { # The favorite horse of Emperor Caligula
+	# 				name = story_cycle_horse_name
+	# 				value = flag:incitatus
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	option = {
 		name = warhorse.0002.go_back

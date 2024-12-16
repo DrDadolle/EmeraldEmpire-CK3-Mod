@@ -781,15 +781,15 @@ fp2_champion_of_the_old_ways_modifier = {
 # 	different_faith_opinion = 10
 # }
 
-mysterious_prophetess_illness_modifier = {
-	icon = health_negative
-	health = -0.5
-}
+# mysterious_prophetess_illness_modifier = {
+# 	icon = health_negative
+# 	health = -0.5
+# }
 
-foreboding_visions_modifier = {
-	icon = magic_negative 
-	stress_gain_mult = 0.25
-}
+# foreboding_visions_modifier = {
+# 	icon = magic_negative 
+# 	stress_gain_mult = 0.25
+# }
 #L5R Disabled
 # frightened_by_portent_modifier = {
 # 	icon = magic_negative
@@ -969,14 +969,14 @@ foreboding_visions_modifier = {
 # 	stress_gain_mult = -0.05
 # }
 
-fp2_controls_the_mediterranean_house_modifier = {
-	icon = compass_positive
+# fp2_controls_the_mediterranean_house_modifier = {
+# 	icon = compass_positive
 
-	development_growth_factor = 0.15
-	monthly_prestige_gain_mult = 0.05
-	naval_movement_speed_mult = 0.1
-	coastal_advantage = 5
-}
+# 	development_growth_factor = 0.15
+# 	monthly_prestige_gain_mult = 0.05
+# 	naval_movement_speed_mult = 0.1
+# 	coastal_advantage = 5
+# }
 #L5R Disabled
 # fp2_aragon_title_reward_house_modifier = { # Free update content
 # 	icon = bird_positive
@@ -1028,11 +1028,11 @@ fp2_controls_the_mediterranean_house_modifier = {
 # 	holy_order_government_levy_contribution_add = 0.25
 # }
 
-fp2_form_kingdom_toledo_modifier = {
-	icon = county_modifier_development_positive
-	development_growth_factor = 0.1
-	same_faith_opinion = 10
-}
+# fp2_form_kingdom_toledo_modifier = {
+# 	icon = county_modifier_development_positive
+# 	development_growth_factor = 0.1
+# 	same_faith_opinion = 10
+# }
 
 # Decision mods, translated aincient books
 #L5R Disabled

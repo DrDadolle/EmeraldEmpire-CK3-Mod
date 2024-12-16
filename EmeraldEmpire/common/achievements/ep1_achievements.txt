@@ -253,21 +253,25 @@ ep1_14_achievement = {
 
 ep1_15_achievement = {
 	possible = {
-		exists = global_var:started_lingua_franca_achievement
-		NOT = { exists = global_var:any_ruler_designed_character_achievement }
+		#L5R Disabled
+		always = no 
+		# exists = global_var:started_lingua_franca_achievement
+		# NOT = { exists = global_var:any_ruler_designed_character_achievement }
 	}
 	happened = {
-		custom_description = {
-			text = lingua_franca_achievement_trigger
-			has_royal_court = yes
-			NOT = {
-				any_character_with_royal_court = {
-					NOT = {
-						has_same_court_language = root
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		always = no 
+		# custom_description = {
+		# 	text = lingua_franca_achievement_trigger
+		# 	has_royal_court = yes
+		# 	NOT = {
+		# 		any_character_with_royal_court = {
+		# 			NOT = {
+		# 				has_same_court_language = root
+		# 			}
+		# 		}
+		# 	}
+		# }
 	}
 }
 

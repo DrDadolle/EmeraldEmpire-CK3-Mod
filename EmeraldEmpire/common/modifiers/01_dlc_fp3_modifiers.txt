@@ -342,19 +342,19 @@ fp3_lackluster_diet_modifier = {
 	health = 0.02
 }
 
-fp3_herbal_remedies_modifier = {
-	icon = treatment_positive
-	negate_diplomacy_penalty_add = 1
-	negate_intrigue_penalty_add = 1
-	negate_stewardship_penalty_add = 1
-}
+# fp3_herbal_remedies_modifier = {
+# 	icon = treatment_positive
+# 	negate_diplomacy_penalty_add = 1
+# 	negate_intrigue_penalty_add = 1
+# 	negate_stewardship_penalty_add = 1
+# }
 
-fp3_worshipping_in_solitude_modifier = {
-	icon = piety_positive
-	courtier_and_guest_opinion = -10
-	clergy_opinion = 10
-	stress_gain_mult = -0.2
-}
+# fp3_worshipping_in_solitude_modifier = {
+# 	icon = piety_positive
+# 	courtier_and_guest_opinion = -10
+# 	clergy_opinion = 10
+# 	stress_gain_mult = -0.2
+# }
 #L5R Disabled
 # fp3_gnostic_fervor_county_modifier = {
 # 	icon = magic_positive
@@ -458,17 +458,17 @@ fp3_sufi_initiate_modifier = {
 # 	monthly_piety_gain_mult = -0.2
 # }
 
-fp3_promoted_persian_mathematics_modifier = {
-	icon = learning_positive
-	courtly_opinion = 5
-	zealot_opinion = 5
-}
+# fp3_promoted_persian_mathematics_modifier = {
+# 	icon = learning_positive
+# 	courtly_opinion = 5
+# 	zealot_opinion = 5
+# }
 
-fp3_denied_religious_protection_modifier = {
-	icon = piety_negative
-	zealot_opinion = 5
-	minority_opinion = -10
-}
+# fp3_denied_religious_protection_modifier = {
+# 	icon = piety_negative
+# 	zealot_opinion = 5
+# 	minority_opinion = -10
+# }
 #L5R Disabled
 # fp3_fearsome_example_modifier = {
 # 	icon = dread_positive

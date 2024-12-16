@@ -124,44 +124,44 @@ fp1_avoiding_the_snow_modifier = {
 	icon = treatment_positive
 	health = minor_health_bonus
 }
+#L5R Disabled
+# fp1_daydreaming_about_diplomacy_modifier = {
+# 	icon = diplomacy_positive
+# 	diplomacy = major_skill_bonus
+# }
 
-fp1_daydreaming_about_diplomacy_modifier = {
-	icon = diplomacy_positive
-	diplomacy = major_skill_bonus
-}
+# fp1_daydreaming_about_martial_modifier = {
+# 	icon = martial_positive
+# 	martial = major_skill_bonus
+# }
 
-fp1_daydreaming_about_martial_modifier = {
-	icon = martial_positive
-	martial = major_skill_bonus
-}
+# fp1_daydreaming_about_stewardship_modifier = {
+# 	icon = stewardship_positive
+# 	stewardship = major_skill_bonus
+# }
 
-fp1_daydreaming_about_stewardship_modifier = {
-	icon = stewardship_positive
-	stewardship = major_skill_bonus
-}
+# fp1_daydreaming_about_intrigue_modifier = {
+# 	icon = intrigue_positive
+# 	intrigue = major_skill_bonus
+# }
 
-fp1_daydreaming_about_intrigue_modifier = {
-	icon = intrigue_positive
-	intrigue = major_skill_bonus
-}
+# fp1_daydreaming_about_learning_modifier = {
+# 	icon = learning_positive
+# 	learning = major_skill_bonus
+# }
 
-fp1_daydreaming_about_learning_modifier = {
-	icon = learning_positive
-	learning = major_skill_bonus
-}
+# fp1_excellent_longships_modifier = {
+# 	icon = asatru_raven_positive
+# 	embarkation_cost_mult = -0.5
+# 	naval_movement_speed_mult = 0.25
+# }
 
-fp1_excellent_longships_modifier = {
-	icon = asatru_raven_positive
-	embarkation_cost_mult = -0.5
-	naval_movement_speed_mult = 0.25
-}
-
-fp1_rotting_longships_modifier = {
-	icon = asatru_raven_negative
-	raid_speed = -0.2
-	embarkation_cost_mult = 0.25
-	naval_movement_speed_mult = -0.5
-}
+# fp1_rotting_longships_modifier = {
+# 	icon = asatru_raven_negative
+# 	raid_speed = -0.2
+# 	embarkation_cost_mult = 0.25
+# 	naval_movement_speed_mult = -0.5
+# }
 
 fp1_flagship_leviathan_modifier = {
 	icon = bear_positive
@@ -357,13 +357,13 @@ draugr_monstrous_bear_fp1_modifier = {
 	travel_danger = 10
 }
 
-draugr_monstrous_draugr_fp1_modifier = {
-	icon = dread_negative
-	county_opinion_add = -30
-	tax_mult = -0.1
-	levy_size = -0.1
-	travel_danger = 15
-}
+# draugr_monstrous_draugr_fp1_modifier = {
+# 	icon = dread_negative
+# 	county_opinion_add = -30
+# 	tax_mult = -0.1
+# 	levy_size = -0.1
+# 	travel_danger = 15
+# }
 
 draugr_nithing_fp1_modifier = {
 	icon = rat_negative
@@ -407,59 +407,59 @@ trade_instead_of_raid_fp1_modifier = {
 	icon = stewardship_positive
 	county_opinion_add = 20
 }
+#L5R Disabled
+# fp1_stele_ancestors_strong = {
+# 	icon = rock_positive
+# 	county_opinion_add = 20
+# }
 
-fp1_stele_ancestors_strong = {
-	icon = rock_positive
-	county_opinion_add = 20
-}
+# fp1_stele_ancestors_weak = {
+# 	icon = rock_positive
+# 	county_opinion_add = 10
+# }
 
-fp1_stele_ancestors_weak = {
-	icon = rock_positive
-	county_opinion_add = 10
-}
+# fp1_stele_conquest_strong = {
+# 	icon = bear_positive
+# 	monthly_county_control_growth_add = 0.5
+# }
 
-fp1_stele_conquest_strong = {
-	icon = bear_positive
-	monthly_county_control_growth_add = 0.5
-}
+# fp1_stele_conquest_weak = {
+# 	icon = bear_positive
+# 	monthly_county_control_growth_add = 0.25
+# }
 
-fp1_stele_conquest_weak = {
-	icon = bear_positive
-	monthly_county_control_growth_add = 0.25
-}
+# fp1_stele_promotion_strong = {
+# 	icon = prestige_positive
+# 	levy_size = 0.5
+# }
 
-fp1_stele_promotion_strong = {
-	icon = prestige_positive
-	levy_size = 0.5
-}
+# fp1_stele_promotion_weak = {
+# 	icon = prestige_positive
+# 	levy_size = 0.25
+# }
 
-fp1_stele_promotion_weak = {
-	icon = prestige_positive
-	levy_size = 0.25
-}
+# fp1_yearly_0591_levy_modifier = {
+# 	icon = martial_positive
+# 	levy_size = 0.1
+# }
 
-fp1_yearly_0591_levy_modifier = {
-	icon = martial_positive
-	levy_size = 0.1
-}
+# fp1_yearly_0591_building_modifier = {
+# 	icon = county_modifier_development_positive
+# 	build_gold_cost = -0.2
+# 	build_piety_cost = -0.2
+# 	build_prestige_cost = -0.2
+# }
 
-fp1_yearly_0591_building_modifier = {
-	icon = county_modifier_development_positive
-	build_gold_cost = -0.2
-	build_piety_cost = -0.2
-	build_prestige_cost = -0.2
-}
+# fp1_yearly_0591_spurned_modifier = {
+# 	icon = family_negative
+# 	county_opinion_add = -20
+# }
 
-fp1_yearly_0591_spurned_modifier = {
-	icon = family_negative
-	county_opinion_add = -20
-}
-
-fp1_yearly_0591_otherwise_occupied_modifier = {
-	icon = family_positive
-	county_opinion_add = 20
-	levy_reinforcement_rate = -0.25
-}
+# fp1_yearly_0591_otherwise_occupied_modifier = {
+# 	icon = family_positive
+# 	county_opinion_add = 20
+# 	levy_reinforcement_rate = -0.25
+# }
 
 fp1_yearly_0071_troll_attacks_modifier = {
 	icon = bear_negative

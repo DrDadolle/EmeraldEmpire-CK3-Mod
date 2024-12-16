@@ -316,8 +316,8 @@ ClaimThroneMythicalFounderHerselfHimself = {
 	text = {
 		localization_key = MythicalFounder_himself
 		trigger = {
-			OR = {
-				#L5R Modified
+			# OR = {
+				#L5R Disabled
 				# var:mythical_founder = flag:charles_martell
 				# var:mythical_founder = flag:alexander
 				# var:mythical_founder = flag:lech
@@ -328,37 +328,24 @@ ClaimThroneMythicalFounderHerselfHimself = {
 				# var:mythical_founder = flag:belisarius
 				# var:mythical_founder = flag:ardashir
 				# var:mythical_founder = flag:abd_al_rahman
-				var:mythical_founder = flag:aegon
-				var:mythical_founder = flag:branthebuilder
-				var:mythical_founder = flag:benedictjustman
-				var:mythical_founder = flag:wingedknight
-				var:mythical_founder = flag:lann
-				var:mythical_founder = flag:godsgrief
-				#L5R Disabled
-				# var:mythical_founder = flag:garthgreenhand
-				var:mythical_founder = flag:nightsking
-				var:mythical_founder = flag:bael
-				#L5R Disabled
-				# var:mythical_founder = flag:firstmagnar
-				#Moonclans yeet
-				#var:mythical_founder = flag:griffinking
-			}
+			# }
+			always = no
 		}
 	}
 
 	text = {
 		localization_key = MythicalFounder_herself
 		trigger = {
-			#L5R Modified
+			#L5R Disabled
 			#var:mythical_founder = flag:zenobia
-			var:mythical_founder = flag:nymeria
+			always = no
 		}
 	}
 
 	text = {
 		localization_key = MythicalFounder_themselves
 		trigger = {			
-			#L5R Modified
+			#L5R Disabled
 			# var:mythical_founder = flag:pharaohs
 			# var:mythical_founder = flag:visigothic_kings
 			always = no

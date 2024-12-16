@@ -1897,107 +1897,107 @@ ep3_neglecting_house_head_duties_modifier = {
 # }
 
 ### END RESTORE ROME
+#L5R Disabled
+# ep3_foraged_plants = {
+# 	icon = health_positive
+# 	health = 0.25
+# 	negate_health_penalty_add = 0.25
+# }
 
-ep3_foraged_plants = {
-	icon = health_positive
-	health = 0.25
-	negate_health_penalty_add = 0.25
-}
+# ep3_tuition_paid = {
+# 	icon = prestige_positive
+# 	monthly_prestige_gain_mult = 0.15
+# 	monthly_lifestyle_xp_gain_mult = 0.05
+# }
 
-ep3_tuition_paid = {
-	icon = prestige_positive
-	monthly_prestige_gain_mult = 0.15
-	monthly_lifestyle_xp_gain_mult = 0.05
-}
+# ep3_from_far_and_wide = {
+# 	icon = prestige_positive
+# 	monthly_prestige_gain_mult = 0.15
+# 	different_culture_opinion = 15
+# 	travel_danger = -4
+# }
 
-ep3_from_far_and_wide = {
-	icon = prestige_positive
-	monthly_prestige_gain_mult = 0.15
-	different_culture_opinion = 15
-	travel_danger = -4
-}
+# ep3_refreshed_and_relaxed = {
+# 	icon = learning_positive
+# 	stress_gain_mult = -0.2
+# 	learning = 1
+# }
 
-ep3_refreshed_and_relaxed = {
-	icon = learning_positive
-	stress_gain_mult = -0.2
-	learning = 1
-}
+# ep3_pushed_too_hard = {
+# 	icon = health_negative
+# 	health = -0.15
+# 	stress_gain_mult = 0.1
+# }
 
-ep3_pushed_too_hard = {
-	icon = health_negative
-	health = -0.15
-	stress_gain_mult = 0.1
-}
+# ep3_star_crossed_modifier = {
+# 	icon = magic_negative
+# 	courting_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+# 	stress_gain_mult = 0.05
+# }
 
-ep3_star_crossed_modifier = {
-	icon = magic_negative
-	courting_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-	stress_gain_mult = 0.05
-}
+# ep3_reunited_modifier = {
+# 	icon = love_positive
+# 	stress_gain_mult = -0.05
+# 	health = 0.1
+# 	diplomacy = 1
+# }
 
-ep3_reunited_modifier = {
-	icon = love_positive
-	stress_gain_mult = -0.05
-	health = 0.1
-	diplomacy = 1
-}
+# ep3_famous_connections_modifier = {
+# 	icon = love_mixed
+# 	stress_gain_mult = 0.15
+# 	intrigue = 1
+# 	courtier_and_guest_opinion = 15
+# }
 
-ep3_famous_connections_modifier = {
-	icon = love_mixed
-	stress_gain_mult = 0.15
-	intrigue = 1
-	courtier_and_guest_opinion = 15
-}
+# ep3_quality_control_modifier = {
+# 	icon = diplomacy_positive
+# 	monthly_prestige_gain_mult = 0.05
+# }
 
-ep3_quality_control_modifier = {
-	icon = diplomacy_positive
-	monthly_prestige_gain_mult = 0.05
-}
+# ep3_power_couple_modifier = {
+# 	icon = love_positive
+# 	health = 0.05
+# 	stress_loss_per_prestige_level = 0.25
+# }
 
-ep3_power_couple_modifier = {
-	icon = love_positive
-	health = 0.05
-	stress_loss_per_prestige_level = 0.25
-}
+# ep3_poets_salon_modifier = {
+# 	icon = camp_positive
+# 	tax_mult = 0.25
+# 	development_growth_factor = 0.5
+# 	county_opinion_add = 35
+# }
 
-ep3_poets_salon_modifier = {
-	icon = camp_positive
-	tax_mult = 0.25
-	development_growth_factor = 0.5
-	county_opinion_add = 35
-}
+# ep3_founded_salon_modifier = {
+# 	icon = letter_positive
+# 	monthly_prestige = 1
+# 	monthly_lifestyle_xp_gain_mult = 0.25
+# 	max_personal_schemes_add = 1
+# 	monthly_income_mult = 0.02
+# }
 
-ep3_founded_salon_modifier = {
-	icon = letter_positive
-	monthly_prestige = 1
-	monthly_lifestyle_xp_gain_mult = 0.25
-	max_personal_schemes_add = 1
-	monthly_income_mult = 0.02
-}
+# ep3_friend_to_orphans = {
+# 	icon = family_positive
+# 	child_opinion = 45
+# 	general_opinion = 5
+# }
 
-ep3_friend_to_orphans = {
-	icon = family_positive
-	child_opinion = 45
-	general_opinion = 5
-}
+# ep3_healthy_orphanages_modifier = {
+# 	icon = county_modifier_opinion_positive
+# 	development_growth_factor = 0.1
+# 	county_opinion_add = 25
+# }
 
-ep3_healthy_orphanages_modifier = {
-	icon = county_modifier_opinion_positive
-	development_growth_factor = 0.1
-	county_opinion_add = 25
-}
+# ep3_tutoring_noblewoman_modifier = {
+# 	icon = learning_mixed
+# 	learning = -1
+# 	diplomacy = -1
+# 	independent_ruler_opinion = 15
+# }
 
-ep3_tutoring_noblewoman_modifier = {
-	icon = learning_mixed
-	learning = -1
-	diplomacy = -1
-	independent_ruler_opinion = 15
-}
-
-ep3_focused_on_studies_modifier = {
-	icon = learning_positive
-	learning = 1
-}
+# ep3_focused_on_studies_modifier = {
+# 	icon = learning_positive
+# 	learning = 1
+# }
 
 ep3_renounced_governorship = {
 	icon = intrigue_positive
