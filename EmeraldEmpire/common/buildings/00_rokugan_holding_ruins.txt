@@ -32,12 +32,12 @@ haunted_ruins_shiro_chuda_01 = {
 	max_garrison = normal_building_max_garrison_tier_1
 	garrison_reinforcement_factor = building_garrison_reinforcement_factor_tier_1
 	county_modifier = {
-		development_growth_factor = -0.4
+		development_growth_factor = -0.3
 		supply_limit_mult = -0.6
-		tax_mult = -0.4
+		tax_mult = -0.3
 		garrison_size = -0.3
-		levy_size = -0.2
-		travel_danger = 20
+		levy_size = -0.3
+		travel_danger = 30
 	}
 
 	flag = shiro_chuda_ruins_holding
@@ -84,9 +84,73 @@ haunted_ruins_shiro_chuda_02 = {
 	garrison_reinforcement_factor = building_garrison_reinforcement_factor_tier_1
 	county_modifier = {
 		development_growth_factor = -0.2
-		supply_limit_mult = -0.3
+		supply_limit_mult = -0.2
 		tax_mult = -0.2
-		garrison_size = -0.15
+		garrison_size = -0.2
+		levy_size = -0.2
+		travel_danger = 20
+	}
+
+	flag = shiro_chuda_ruins_holding
+
+	type_icon = "icon_building_ramparts.dds"
+
+	
+	ai_value = {
+		base = 100
+		modifier = {
+			factor = 0
+			scope:holder = {
+				government_has_flag = government_is_theocracy
+			}
+		}
+
+		modifier = {
+			add = 50
+		}
+		modifier = {
+			factor = 5
+			scope:holder.culture = { has_cultural_parameter = ai_more_likely_to_castle }
+		}
+	}
+}
+
+haunted_ruins_shiro_chuda_03 = {
+	construction_time = slow_construction_time
+
+	### JAPANESE
+	asset = {
+		type = pdxmesh
+		name = "building_japanese_castle_01_mesh"
+		illustration = @holding_illustration_japan
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+	}
+
+	can_construct = {
+		culture = {
+			has_innovation = innovation_hoardings
+		}
+	}
+
+	is_enabled = {
+		always = yes
+	}
+	
+	can_construct_potential = {
+		always = yes
+	}
+
+	cost_gold = main_building_tier_2_cost
+	next_building = haunted_ruins_shiro_chuda_04
+
+	levy = poor_building_levy_tier_1
+	max_garrison = normal_building_max_garrison_tier_1
+	garrison_reinforcement_factor = building_garrison_reinforcement_factor_tier_1
+	county_modifier = {
+		development_growth_factor = -0.1
+		supply_limit_mult = -0.1
+		tax_mult = -0.1
+		garrison_size = -0.1
 		levy_size = -0.1
 		travel_danger = 10
 	}
@@ -115,7 +179,7 @@ haunted_ruins_shiro_chuda_02 = {
 	}
 }
 
-haunted_ruins_shiro_chuda_03 = {
+haunted_ruins_shiro_chuda_04 = {
 	construction_time = slow_construction_time	
 	
 	can_construct = {
