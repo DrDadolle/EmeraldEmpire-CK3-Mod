@@ -70,13 +70,13 @@ house_beneficiary_won_ghw = {
 	religious_head_opinion = 5
 	monthly_piety_gain_mult = 0.1
 }
-
-resurging_saoshyant = {
-	icon = piety_positive
-	monthly_piety_gain_mult = 0.15
-	monthly_prestige_gain_mult = 0.15
-	same_faith_opinion = 25
-}
+#L5R Disabled
+# resurging_saoshyant = {
+# 	icon = piety_positive
+# 	monthly_piety_gain_mult = 0.15
+# 	monthly_prestige_gain_mult = 0.15
+# 	same_faith_opinion = 25
+# }
 
 wind_spirit_blessing = {
 	icon = dread_positive

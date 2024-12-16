@@ -2382,27 +2382,28 @@ ArtifactFlowerSpecies = {
 		}
 		localization_key = flower_type_narcissus
 	}
-	text = {
-		trigger = {
-			exists = scope:flower_species
-			scope:flower_species = flag:flower_type_snapdragon
-		}
-		localization_key = flower_type_snapdragon
-	}
-	text = {
-		trigger = {
-			exists = scope:flower_species
-			scope:flower_species = flag:flower_type_carnation
-		}
-		localization_key = flower_type_carnation
-	}
-	text = {
-		trigger = {
-			exists = scope:flower_species
-			scope:flower_species = flag:flower_type_foxglove
-		}
-		localization_key = flower_type_foxglove
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		exists = scope:flower_species
+	# 		scope:flower_species = flag:flower_type_snapdragon
+	# 	}
+	# 	localization_key = flower_type_snapdragon
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = scope:flower_species
+	# 		scope:flower_species = flag:flower_type_carnation
+	# 	}
+	# 	localization_key = flower_type_carnation
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = scope:flower_species
+	# 		scope:flower_species = flag:flower_type_foxglove
+	# 	}
+	# 	localization_key = flower_type_foxglove
+	# }
 	text = {
 		trigger = {
 			exists = scope:flower_species
@@ -2431,20 +2432,22 @@ ArtifactFlowerSpecies = {
 		}
 		localization_key = flower_type_lavender
 	}
-	text = {
-		trigger = {
-			exists = scope:flower_species
-			scope:flower_species = flag:flower_type_peony
-		}
-		localization_key = flower_type_peony
-	}
-	text = {
-		trigger = {
-			exists = scope:flower_species
-			scope:flower_species = flag:flower_type_violet
-		}
-		localization_key = flower_type_violet
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		exists = scope:flower_species
+	# 		scope:flower_species = flag:flower_type_peony
+	# 	}
+	# 	localization_key = flower_type_peony
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		exists = scope:flower_species
+	# 		scope:flower_species = flag:flower_type_violet
+	# 	}
+	# 	localization_key = flower_type_violet
+	# }
 	text = {
 		trigger = {
 			exists = scope:flower_species
@@ -2480,13 +2483,14 @@ ArtifactFlowerSpecies = {
 		}
 		localization_key = flower_type_lotus
 	}
-	text = {
-		trigger = {
-			exists = scope:flower_species
-			scope:flower_species = flag:flower_type_gardenia
-		}
-		localization_key = flower_type_gardenia
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		exists = scope:flower_species
+	# 		scope:flower_species = flag:flower_type_gardenia
+	# 	}
+	# 	localization_key = flower_type_gardenia
+	# }
 	text = {
 		trigger = {
 			exists = scope:flower_species
@@ -2548,27 +2552,28 @@ ArtifactVariableFlowerSpecies = {
 		}
 		localization_key = flower_type_narcissus
 	}
-	text = {
-		trigger = {
-			exists = var:flower_species
-			var:flower_species = flag:flower_type_snapdragon
-		}
-		localization_key = flower_type_snapdragon
-	}
-	text = {
-		trigger = {
-			exists = var:flower_species
-			var:flower_species = flag:flower_type_carnation
-		}
-		localization_key = flower_type_carnation
-	}
-	text = {
-		trigger = {
-			exists = var:flower_species
-			var:flower_species = flag:flower_type_foxglove
-		}
-		localization_key = flower_type_foxglove
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		exists = var:flower_species
+	# 		var:flower_species = flag:flower_type_snapdragon
+	# 	}
+	# 	localization_key = flower_type_snapdragon
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:flower_species
+	# 		var:flower_species = flag:flower_type_carnation
+	# 	}
+	# 	localization_key = flower_type_carnation
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:flower_species
+	# 		var:flower_species = flag:flower_type_foxglove
+	# 	}
+	# 	localization_key = flower_type_foxglove
+	# }
 	text = {
 		trigger = {
 			exists = var:flower_species
@@ -2597,20 +2602,20 @@ ArtifactVariableFlowerSpecies = {
 		}
 		localization_key = flower_type_lavender
 	}
-	text = {
-		trigger = {
-			exists = var:flower_species
-			var:flower_species = flag:flower_type_peony
-		}
-		localization_key = flower_type_peony
-	}
-	text = {
-		trigger = {
-			exists = var:flower_species
-			var:flower_species = flag:flower_type_violet
-		}
-		localization_key = flower_type_violet
-	}
+	# text = {
+	# 	trigger = {
+	# 		exists = var:flower_species
+	# 		var:flower_species = flag:flower_type_peony
+	# 	}
+	# 	localization_key = flower_type_peony
+	# }
+	# text = {
+	# 	trigger = {
+	# 		exists = var:flower_species
+	# 		var:flower_species = flag:flower_type_violet
+	# 	}
+	# 	localization_key = flower_type_violet
+	# }
 	text = {
 		trigger = {
 			exists = var:flower_species
@@ -2646,13 +2651,14 @@ ArtifactVariableFlowerSpecies = {
 		}
 		localization_key = flower_type_lotus
 	}
-	text = {
-		trigger = {
-			exists = var:flower_species
-			var:flower_species = flag:flower_type_gardenia
-		}
-		localization_key = flower_type_gardenia
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		exists = var:flower_species
+	# 		var:flower_species = flag:flower_type_gardenia
+	# 	}
+	# 	localization_key = flower_type_gardenia
+	# }
 	text = {
 		trigger = {
 			exists = var:flower_species

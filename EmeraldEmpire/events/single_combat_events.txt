@@ -9661,11 +9661,12 @@ single_combat.0031 = {
 			trigger = { scope:death_rattle = flag:legend }
 			text = single_combat.0031.a.legend
 		}
+		#L5R Disabled
 		# Valhalla death.
-		name = {
-			trigger = { scope:death_rattle = flag:valhalla }
-			text = single_combat.0031.a.valhalla
-		}
+		# name = {
+		# 	trigger = { scope:death_rattle = flag:valhalla }
+		# 	text = single_combat.0031.a.valhalla
+		# }
 		# Best Friend death.
 		name = {
 			trigger = { scope:death_rattle = flag:best_friend }

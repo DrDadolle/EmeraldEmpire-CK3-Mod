@@ -2842,42 +2842,43 @@ armor_court = {
 	icon = "artifact_armor.dds"
 	pedestal = "armorstand"
 	# Western and Medi
-	asset = {
-		trigger = {
-			artifact_should_use_gfx_type_trigger = { TYPE = western_unit }
-			scope:owner = {
-				religion = religion:christianity_religion
-			}
-		}
-		reference = m_clothes_sec_crusades_western_war_nob_01_artifact_entity
-	}
-	asset = {
-		trigger = {
-			artifact_should_use_gfx_type_trigger = { TYPE = western_unit }
-			scope:owner = {
-				religion = religion:christianity_religion
-			}
-		}
-		reference = m_clothes_sec_crusades_western_war_nob_02_artifact_entity
-	}
-	asset = {
-		trigger = {
-			artifact_should_use_gfx_type_trigger = { TYPE = western_unit }
-			scope:owner = {
-				religion = religion:christianity_religion
-			}
-		}
-		reference = m_clothes_sec_crusades_western_war_nob_03_artifact_entity
-	}
-	asset = {
-		trigger = {
-			artifact_should_use_gfx_type_trigger = { TYPE = western_unit }
-			scope:owner = {
-				religion = religion:christianity_religion
-			}
-		}
-		reference = m_clothes_sec_crusades_western_war_nob_04_artifact_entity
-	}
+	#L5R Disabled
+	# asset = {
+	# 	trigger = {
+	# 		artifact_should_use_gfx_type_trigger = { TYPE = western_unit }
+	# 		scope:owner = {
+	# 			religion = religion:christianity_religion
+	# 		}
+	# 	}
+	# 	reference = m_clothes_sec_crusades_western_war_nob_01_artifact_entity
+	# }
+	# asset = {
+	# 	trigger = {
+	# 		artifact_should_use_gfx_type_trigger = { TYPE = western_unit }
+	# 		scope:owner = {
+	# 			religion = religion:christianity_religion
+	# 		}
+	# 	}
+	# 	reference = m_clothes_sec_crusades_western_war_nob_02_artifact_entity
+	# }
+	# asset = {
+	# 	trigger = {
+	# 		artifact_should_use_gfx_type_trigger = { TYPE = western_unit }
+	# 		scope:owner = {
+	# 			religion = religion:christianity_religion
+	# 		}
+	# 	}
+	# 	reference = m_clothes_sec_crusades_western_war_nob_03_artifact_entity
+	# }
+	# asset = {
+	# 	trigger = {
+	# 		artifact_should_use_gfx_type_trigger = { TYPE = western_unit }
+	# 		scope:owner = {
+	# 			religion = religion:christianity_religion
+	# 		}
+	# 	}
+	# 	reference = m_clothes_sec_crusades_western_war_nob_04_artifact_entity
+	# }
 	asset = {
 		trigger = {
 			artifact_should_use_gfx_type_trigger = { TYPE = western_unit }

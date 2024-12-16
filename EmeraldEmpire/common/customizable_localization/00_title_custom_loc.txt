@@ -334,10 +334,12 @@ ClaimThroneMythicalFounderHerselfHimself = {
 				var:mythical_founder = flag:wingedknight
 				var:mythical_founder = flag:lann
 				var:mythical_founder = flag:godsgrief
-				var:mythical_founder = flag:garthgreenhand
+				#L5R Disabled
+				# var:mythical_founder = flag:garthgreenhand
 				var:mythical_founder = flag:nightsking
 				var:mythical_founder = flag:bael
-				var:mythical_founder = flag:firstmagnar
+				#L5R Disabled
+				# var:mythical_founder = flag:firstmagnar
 				#Moonclans yeet
 				#var:mythical_founder = flag:griffinking
 			}

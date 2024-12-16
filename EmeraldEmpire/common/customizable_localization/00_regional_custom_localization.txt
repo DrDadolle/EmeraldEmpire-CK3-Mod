@@ -1402,127 +1402,129 @@ VenomousCreatureMovement = {
 RandomReligiousTextName = {
 	type = character
 
-	text = {
-		trigger = {
-			#Original implementation
-			trigger_if = {
-				limit = { exists = scope:religious_book_title }
-				scope:religious_book_title = flag:golden_legend
-			}
-			#L5R Disabled
-			#We're a LAAMP visiting somewhere
-			# trigger_else_if = {
-			# 	limit = { exists = scope:visiting_location }
-			# 	location.faith.religion = religion:christianity_religion
-			# }
-			# #The book is of my religion
-			# trigger_else = { faith.religion = religion:christianity_religion }
-		}
-		localization_key = random_religious_text_golden_legend
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		#Original implementation
+	# 		trigger_if = {
+	# 			limit = { exists = scope:religious_book_title }
+	# 			scope:religious_book_title = flag:golden_legend
+	# 		}
+	# 		#We're a LAAMP visiting somewhere
+	# 		trigger_else_if = {
+	# 			limit = { exists = scope:visiting_location }
+	# 			location.faith.religion = religion:christianity_religion
+	# 		}
+	# 		#The book is of my religion
+	# 		trigger_else = { faith.religion = religion:christianity_religion }
+	# 	}
+	# 	localization_key = random_religious_text_golden_legend
+	# }
 
-	text = {
-		trigger = {
-			#Original implementation
-			trigger_if = {
-				limit = { exists = scope:religious_book_title }
-				scope:religious_book_title = flag:city_of_god
-			}
-			#L5R Disabled
-			#We're a LAAMP visiting somewhere
-			# trigger_else_if = {
-			# 	limit = { exists = scope:visiting_location }
-			# 	location.faith.religion = religion:christianity_religion
-			# }
-			# #The book is of my religion
-			# trigger_else = { faith.religion = religion:christianity_religion }
-		}
-		localization_key = random_religious_text_city_of_god
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		#Original implementation
+	# 		trigger_if = {
+	# 			limit = { exists = scope:religious_book_title }
+	# 			scope:religious_book_title = flag:city_of_god
+	# 		}
+			
+	# 		#We're a LAAMP visiting somewhere
+	# 		trigger_else_if = {
+	# 			limit = { exists = scope:visiting_location }
+	# 			location.faith.religion = religion:christianity_religion
+	# 		}
+	# 		#The book is of my religion
+	# 		trigger_else = { faith.religion = religion:christianity_religion }
+	# 	}
+	# 	localization_key = random_religious_text_city_of_god
+	# }
 
-	text = {
-		trigger = {
-			#Original implementation
-			trigger_if = {
-				limit = { exists = scope:religious_book_title }
-				scope:religious_book_title = flag:summa_theologica
-			}
-			#L5R Disableds
-			#We're a LAAMP visiting somewhere
-			# trigger_else_if = {
-			# 	limit = { exists = scope:visiting_location }
-			# 	location.faith.religion = religion:christianity_religion
-			# 	NOT = { location.faith = faith:orthodox }
-			# }
-			# #The book is of my religion
-			# trigger_else = {
-			# 	faith.religion = religion:christianity_religion
-			# 	NOT = { faith = faith:orthodox }
-			# }
-		}
-		localization_key = random_religious_text_summa_theologica
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		#Original implementation
+	# 		trigger_if = {
+	# 			limit = { exists = scope:religious_book_title }
+	# 			scope:religious_book_title = flag:summa_theologica
+	# 		}
+	# 		#We're a LAAMP visiting somewhere
+	# 		trigger_else_if = {
+	# 			limit = { exists = scope:visiting_location }
+	# 			location.faith.religion = religion:christianity_religion
+	# 			NOT = { location.faith = faith:orthodox }
+	# 		}
+	# 		#The book is of my religion
+	# 		trigger_else = {
+	# 			faith.religion = religion:christianity_religion
+	# 			NOT = { faith = faith:orthodox }
+	# 		}
+	# 	}
+	# 	localization_key = random_religious_text_summa_theologica
+	# }
 
-	text = {
-		trigger = {
-			#Original implementation
-			trigger_if = {
-				limit = { exists = scope:religious_book_title }
-				scope:religious_book_title = flag:sic_et_non
-			}
-			#L5R Disabled
-			#We're a LAAMP visiting somewhere
-			# trigger_else_if = {
-			# 	limit = { exists = scope:visiting_location }
-			# 	location.faith.religion = religion:christianity_religion
-			# 	NOT = { location.faith = faith:orthodox }
-			# }
-			# #The book is of my religion
-			# trigger_else = {
-			# 	faith.religion = religion:christianity_religion
-			# 	NOT = { faith = faith:orthodox }
-			# }
-		}
-		localization_key = random_religious_text_sic_et_non
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		#Original implementation
+	# 		trigger_if = {
+	# 			limit = { exists = scope:religious_book_title }
+	# 			scope:religious_book_title = flag:sic_et_non
+	# 		}
+			
+	# 		#We're a LAAMP visiting somewhere
+	# 		trigger_else_if = {
+	# 			limit = { exists = scope:visiting_location }
+	# 			location.faith.religion = religion:christianity_religion
+	# 			NOT = { location.faith = faith:orthodox }
+	# 		}
+	# 		#The book is of my religion
+	# 		trigger_else = {
+	# 			faith.religion = religion:christianity_religion
+	# 			NOT = { faith = faith:orthodox }
+	# 		}
+	# 	}
+	# 	localization_key = random_religious_text_sic_et_non
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		#Original implementation
+	# 		trigger_if = {
+	# 			limit = { exists = scope:religious_book_title }
+	# 			scope:religious_book_title = flag:chrysostomos
+	# 		}
 
-	text = {
-		trigger = {
-			#Original implementation
-			trigger_if = {
-				limit = { exists = scope:religious_book_title }
-				scope:religious_book_title = flag:chrysostomos
-			}
-			#L5R Disabled
-			#We're a LAAMP visiting somewhere
-		# 	trigger_else_if = {
-		# 		limit = { exists = scope:visiting_location }
-		# 		location.faith = faith:orthodox
-		# 	}
-		# 	#The book is of my religion
-		# 	trigger_else = { faith = faith:orthodox }
-		}
-		localization_key = random_religious_text_chrysostomos
-	}
+	# 		#We're a LAAMP visiting somewhere
+	# 		trigger_else_if = {
+	# 			limit = { exists = scope:visiting_location }
+	# 			location.faith = faith:orthodox
+	# 		}
+	# 		#The book is of my religion
+	# 		trigger_else = { faith = faith:orthodox }
+	# 	}
+	# 	localization_key = random_religious_text_chrysostomos
+	# }
 
-	text = {
-		trigger = {
-			#Original implementation
-			trigger_if = {
-				limit = { exists = scope:religious_book_title }
-				scope:religious_book_title = flag:symeon_menologion
-			}
-			#L5R Disabled
-			#We're a LAAMP visiting somewhere
-			# trigger_else_if = {
-			# 	limit = { exists = scope:visiting_location }
-			# 	location.faith = faith:orthodox
-			# }
-			# #The book is of my religion
-			# trigger_else = { faith = faith:orthodox }
-		}
-		localization_key = random_religious_text_symeon_menologion
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		#Original implementation
+	# 		trigger_if = {
+	# 			limit = { exists = scope:religious_book_title }
+	# 			scope:religious_book_title = flag:symeon_menologion
+	# 		}
+	# 		#We're a LAAMP visiting somewhere
+	# 		trigger_else_if = {
+	# 			limit = { exists = scope:visiting_location }
+	# 			location.faith = faith:orthodox
+	# 		}
+	# 		#The book is of my religion
+	# 		trigger_else = { faith = faith:orthodox }
+	# 	}
+	# 	localization_key = random_religious_text_symeon_menologion
+	# }
 
 	text = {
 		trigger = {
@@ -1543,43 +1545,43 @@ RandomReligiousTextName = {
 		localization_key = random_religious_text_god_and_christ
 	}
 
-	text = {
-		trigger = {
-			#Original implementation
-			trigger_if = {
-				limit = { exists = scope:religious_book_title }
-				scope:religious_book_title = flag:the_small_book_on_theism
-			}
-			#L5R Disabled
-			#We're a LAAMP visiting somewhere
-			# trigger_else_if = {
-			# 	limit = { exists = scope:visiting_location }
-			# 	location.faith.religion = religion:islam_religion
-			# }
-			# #The book is of my religion
-			# trigger_else = { faith.religion = religion:islam_religion }
-		}
-		localization_key = random_religious_text_the_small_book_on_theism
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		#Original implementation
+	# 		trigger_if = {
+	# 			limit = { exists = scope:religious_book_title }
+	# 			scope:religious_book_title = flag:the_small_book_on_theism
+	# 		}
+	# 		#We're a LAAMP visiting somewhere
+	# 		trigger_else_if = {
+	# 			limit = { exists = scope:visiting_location }
+	# 			location.faith.religion = religion:islam_religion
+	# 		}
+	# 		#The book is of my religion
+	# 		trigger_else = { faith.religion = religion:islam_religion }
+	# 	}
+	# 	localization_key = random_religious_text_the_small_book_on_theism
+	# }
 
-	text = {
-		trigger = {
-			#Original implementation
-			trigger_if = {
-				limit = { exists = scope:religious_book_title }
-				scope:religious_book_title = flag:modern_philosophy
-			}
-			#We're a LAAMP visiting somewhere
-			#L5R Disabled
-			# trigger_else_if = {
-			# 	limit = { exists = scope:visiting_location }
-			# 	location.faith.religion = religion:islam_religion
-			# }
-			# #The book is of my religion
-			# trigger_else = { faith.religion = religion:islam_religion }
-		}
-		localization_key = random_religious_text_modern_philosophy
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		#Original implementation
+	# 		trigger_if = {
+	# 			limit = { exists = scope:religious_book_title }
+	# 			scope:religious_book_title = flag:modern_philosophy
+	# 		}
+	# 		#We're a LAAMP visiting somewhere
+	# 		trigger_else_if = {
+	# 			limit = { exists = scope:visiting_location }
+	# 			location.faith.religion = religion:islam_religion
+	# 		}
+	# 		#The book is of my religion
+	# 		trigger_else = { faith.religion = religion:islam_religion }
+	# 	}
+	# 	localization_key = random_religious_text_modern_philosophy
+	# }
 
 	text = {
 		trigger = {
@@ -1682,19 +1684,20 @@ RandomEntertainmentTextName = {
 RandomInformativeTextName = {
 	type = character
 
-	text = {
-		trigger = {
-			scope:informative_book_title = flag:on_the_judgement_of_the_stars
-		}
-		localization_key = random_informative_text_on_the_judgement_of_the_stars
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		scope:informative_book_title = flag:on_the_judgement_of_the_stars
+	# 	}
+	# 	localization_key = random_informative_text_on_the_judgement_of_the_stars
+	# }
 
-	text = {
-		trigger = {
-			scope:informative_book_title = flag:the_perfect_state
-		}
-		localization_key = random_informative_text_the_perfect_state
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:informative_book_title = flag:the_perfect_state
+	# 	}
+	# 	localization_key = random_informative_text_the_perfect_state
+	# }
 
 	text = {
 		trigger = {
@@ -1703,12 +1706,13 @@ RandomInformativeTextName = {
 		localization_key = random_informative_text_spiritual_medicine
 	}
 
-	text = {
-		trigger = {
-			scope:informative_book_title = flag:trotula
-		}
-		localization_key = random_informative_text_trotula
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		scope:informative_book_title = flag:trotula
+	# 	}
+	# 	localization_key = random_informative_text_trotula
+	# }
 
 	text = {
 		trigger = {
@@ -1717,31 +1721,32 @@ RandomInformativeTextName = {
 		localization_key = random_informative_text_the_improvement_of_the_moral_qualities
 	}
 
-	text = {
-		trigger = {
-			scope:informative_book_title = flag:armes_prydein
-		}
-		localization_key = random_informative_text_armes_prydein
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		scope:informative_book_title = flag:armes_prydein
+	# 	}
+	# 	localization_key = random_informative_text_armes_prydein
+	# }
 
-	text = {
-		trigger = {
-			scope:informative_book_title = flag:almagest
-		}
-		localization_key = random_informative_text_almagest
-	}
-	text = {
-		trigger = {
-			scope:informative_book_title = flag:anekdota
-		}
-		localization_key = random_informative_text_anekdota
-	}
-	text = {
-		trigger = {
-			scope:informative_book_title = flag:chronographia
-		}
-		localization_key = random_informative_text_chronographia
-	}
+	# text = {
+	# 	trigger = {
+	# 		scope:informative_book_title = flag:almagest
+	# 	}
+	# 	localization_key = random_informative_text_almagest
+	# }
+	# text = {
+	# 	trigger = {
+	# 		scope:informative_book_title = flag:anekdota
+	# 	}
+	# 	localization_key = random_informative_text_anekdota
+	# }
+	# text = {
+	# 	trigger = {
+	# 		scope:informative_book_title = flag:chronographia
+	# 	}
+	# 	localization_key = random_informative_text_chronographia
+	# }
 }
 
 

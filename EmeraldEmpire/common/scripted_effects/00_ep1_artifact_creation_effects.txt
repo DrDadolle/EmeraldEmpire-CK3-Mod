@@ -11021,62 +11021,69 @@ get_pressed_flower_species_effect = {
 					value = flag:flower_type_tulip
 				}
 			}
-			# 10 = {
-			# 	# Mediterranean sea + arid Asia
-			# 	modifier = {
-			# 		factor = 0
-			# 		$LOCATION$ = {
-			# 			NOR = {
-			# 				geographical_region = world_europe_south
-			# 				geographical_region = world_africa_north
-			# 				geographical_region = world_asia_minor
-			# 				geographical_region = world_middle_east
-			# 				geographical_region = world_steppe
-			# 			}
-			# 		}
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = flower_species
-			# 		value = flag:flower_type_crocus
-			# 	}
-			# }
-			# 10 = {
-			# 	# Europe, North Africa + parts of Asia
-			# 	modifier = {
-			# 		factor = 0
-			# 		$LOCATION$ = {
-			# 			NOR = {
-			# 				geographical_region = world_europe
-			# 				geographical_region = world_africa_north
-			# 				geographical_region = world_asia_minor
-			# 				geographical_region = world_middle_east
-			# 				geographical_region = world_steppe
-			# 			}
-			# 		}
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = flower_species
-			# 		value = flag:flower_type_narcissus
-			# 	}
-			# }
-			# 10 = {
-			# 	# Africa + parts of Asia
-			# 	modifier = {
-			# 		factor = 0
-			# 		$LOCATION$ = {
-			# 			NOR = {
-			# 				geographical_region = world_india
-			# 				geographical_region = world_middle_east
-			# 				geographical_region = world_africa_west
-			# 				geographical_region = world_africa_east
-			# 			}
-			# 		}
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = flower_species
-			# 		value = flag:flower_type_hibiscus
-			# 	}
-			# }
+			10 = {
+				# Mediterranean sea + arid Asia
+				modifier = {
+					factor = 0
+					$LOCATION$ = {
+						NOR = {
+							#L5R Modified
+							geographical_region = rokugan_unicorn
+							# geographical_region = world_europe_south
+							# geographical_region = world_africa_north
+							# geographical_region = world_asia_minor
+							# geographical_region = world_middle_east
+							# geographical_region = world_steppe
+						}
+					}
+				}
+				save_scope_value_as = {
+					name = flower_species
+					value = flag:flower_type_crocus
+				}
+			}
+			10 = {
+				# Europe, North Africa + parts of Asia
+				modifier = {
+					factor = 0
+					$LOCATION$ = {
+						NOR = {
+							#L5R Modified
+							geographical_region = rokugan_unicorn
+							# geographical_region = world_europe
+							# geographical_region = world_africa_north
+							# geographical_region = world_asia_minor
+							# geographical_region = world_middle_east
+							# geographical_region = world_steppe
+						}
+					}
+				}
+				save_scope_value_as = {
+					name = flower_species
+					value = flag:flower_type_narcissus
+				}
+			}
+			10 = {
+				# Africa + parts of Asia
+				modifier = {
+					factor = 0
+					$LOCATION$ = {
+						NOR = {
+							#L5R Modified
+							geographical_region = rokugan_scorpion
+							geographical_region = rokugan_unicorn
+							# geographical_region = world_india
+							# geographical_region = world_middle_east
+							# geographical_region = world_africa_west
+							# geographical_region = world_africa_east
+						}
+					}
+				}
+				save_scope_value_as = {
+					name = flower_species
+					value = flag:flower_type_hibiscus
+				}
+			}
 			# 10 = {
 			# 	# parts of Africa + India
 			# 	modifier = {
@@ -11151,26 +11158,28 @@ get_pressed_flower_species_effect = {
 					value = flag:flower_type_jasmine
 				}
 			}
+			10 = {
+				# Europe, Africa, and parts of Asia
+				modifier = {
+					factor = 0
+					$LOCATION$ = {
+						NOR = {
+							#L5R Modified
+							geographical_region = rokugan_unicorn
+							# geographical_region = world_europe
+							# geographical_region = world_middle_east
+							# geographical_region = world_asia_minor
+							# geographical_region = world_steppe
+							# geographical_region = world_africa
+						}
+					}
+				}
+				save_scope_value_as = {
+					name = flower_species
+					value = flag:flower_type_delphinium
+				}
+			}
 			#L5R Disabled
-			# 10 = {
-			# 	# Europe, Africa, and parts of Asia
-			# 	modifier = {
-			# 		factor = 0
-			# 		$LOCATION$ = {
-			# 			NOR = {
-			# 				geographical_region = world_europe
-			# 				geographical_region = world_middle_east
-			# 				geographical_region = world_asia_minor
-			# 				geographical_region = world_steppe
-			# 				geographical_region = world_africa
-			# 			}
-			# 		}
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = flower_species
-			# 		value = flag:flower_type_delphinium
-			# 	}
-			# }
 			# 10 = {
 			# 	# Europe and Asia
 			# 	modifier = {
@@ -11207,79 +11216,88 @@ get_pressed_flower_species_effect = {
 			# 		value = flag:flower_type_peony
 			# 	}
 			# }
-			# 10 = {
-			# 	# Europe and Asia
-			# 	modifier = {
-			# 		factor = 0
-			# 		$LOCATION$ = {
-			# 			NOR = {
-			# 				geographical_region = world_europe
-			# 				geographical_region = world_middle_east
-			# 				geographical_region = world_asia_minor
-			# 				geographical_region = world_steppe
-			# 			}
-			# 		}
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = flower_species
-			# 		value = flag:flower_type_lavender
-			# 	}
-			# }
-			# 10 = {
-			# 	# Europe and Asia
-			# 	modifier = {
-			# 		factor = 0
-			# 		$LOCATION$ = {
-			# 			NOR = {
-			# 				geographical_region = world_europe
-			# 				geographical_region = world_middle_east
-			# 				geographical_region = world_asia_minor
-			# 				geographical_region = world_steppe
-			# 				geographical_region = world_india
-			# 			}
-			# 		}
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = flower_species
-			# 		value = flag:flower_type_lily
-			# 	}
-			# }
-			# 10 = {
-			# 	# Europe and parts of Asia
-			# 	modifier = {
-			# 		factor = 0
-			# 		$LOCATION$ = {
-			# 			NOR = {
-			# 				geographical_region = world_europe
-			# 				geographical_region = world_middle_east
-			# 				geographical_region = world_asia_minor
-			# 				geographical_region = world_steppe
-			# 			}
-			# 		}
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = flower_species
-			# 		value = flag:flower_type_geranium
-			# 	}
-			# }
-			# 10 = {
-			# 	# Europe and parts of Asia
-			# 	modifier = {
-			# 		factor = 0
-			# 		$LOCATION$ = {
-			# 			NOR = {
-			# 				geographical_region = world_europe
-			# 				geographical_region = world_middle_east
-			# 				geographical_region = world_asia_minor
-			# 				geographical_region = world_steppe
-			# 			}
-			# 		}
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = flower_species
-			# 		value = flag:flower_type_iris
-			# 	}
-			# }
+			10 = {
+				# Europe and Asia
+				modifier = {
+					factor = 0
+					$LOCATION$ = {
+						NOR = {
+							#L5R Modified
+							geographical_region = rokugan_unicorn
+							# geographical_region = world_europe
+							# geographical_region = world_middle_east
+							# geographical_region = world_asia_minor
+							# geographical_region = world_steppe
+						}
+					}
+				}
+				save_scope_value_as = {
+					name = flower_species
+					value = flag:flower_type_lavender
+				}
+			}
+			10 = {
+				# Europe and Asia
+				modifier = {
+					factor = 0
+					$LOCATION$ = {
+						NOR = {
+							#L5R Modified
+							geographical_region = world_rokugan
+							# geographical_region = world_europe
+							# geographical_region = world_middle_east
+							# geographical_region = world_asia_minor
+							# geographical_region = world_steppe
+							# geographical_region = world_india
+						}
+					}
+				}
+				save_scope_value_as = {
+					name = flower_species
+					value = flag:flower_type_lily
+				}
+			}
+			10 = {
+				# Europe and parts of Asia
+				modifier = {
+					factor = 0
+					$LOCATION$ = {
+						NOR = {
+							#L5R Modified
+							geographical_region = rokugan_unicorn
+							# geographical_region = world_europe
+							# geographical_region = world_middle_east
+							# geographical_region = world_asia_minor
+							# geographical_region = world_steppe
+						}
+					}
+				}
+				save_scope_value_as = {
+					name = flower_species
+					value = flag:flower_type_geranium
+				}
+			}
+			10 = {
+				# Europe and parts of Asia
+				modifier = {
+					factor = 0
+					$LOCATION$ = {
+						NOR = {
+							#L5R Modified
+							geographical_region = rokugan_unicorn
+							# geographical_region = world_europe
+							# geographical_region = world_middle_east
+							# geographical_region = world_asia_minor
+							# geographical_region = world_steppe
+						}
+					}
+				}
+				save_scope_value_as = {
+					name = flower_species
+					value = flag:flower_type_iris
+				}
+			}
+			#L5R Disabled
 			# 10 = {
 			# 	# Europe and parts of Asia
 			# 	modifier = {

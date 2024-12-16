@@ -1541,10 +1541,11 @@ fp1_yearly.0031 = {
 				}
 				desc = fp1_yearly.0031.desc.charged_city
 			}
-			triggered_desc = {
-				trigger = { scope:lie_nature = flag:kept_iceland_afloat }
-				desc = fp1_yearly.0031.desc.kept_iceland_afloat
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = { scope:lie_nature = flag:kept_iceland_afloat }
+			# 	desc = fp1_yearly.0031.desc.kept_iceland_afloat
+			# }
 			triggered_desc = {
 				trigger = { scope:lie_nature = flag:wooed_heir }
 				desc = fp1_yearly.0031.desc.wooed_heir

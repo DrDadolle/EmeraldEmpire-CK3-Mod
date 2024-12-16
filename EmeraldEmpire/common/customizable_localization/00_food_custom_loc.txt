@@ -699,15 +699,16 @@ FavoriteTreat = {
 			}
 		}
 	}
-	text = {
-		localization_key = treat_marzipan
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:marzipan
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_marzipan
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:marzipan
+	# 		}
+	# 	}
+	# }
 	text = {
 		localization_key = treat_sweetroll
 		trigger = {
@@ -753,70 +754,70 @@ FavoriteTreat = {
 			}
 		}
 	}
-	text = {
-		localization_key = treat_gingerbread
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:gingerbread
-			}
-		}
-	}
-	text = {
-		localization_key = treat_frytour_blaunched
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:frytour_blaunched
-			}
-		}
-	}
-	text = {
-		localization_key = treat_fig_pie
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:fig_pie
-			}
-		}
-	}
-	text = {
-		localization_key = treat_pokerounce
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:pokerounce
-			}
-		}
-	}
-	text = {
-		localization_key = treat_sambocade
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:sambocade
-			}
-		}
-	}
-	text = {
-		localization_key = treat_sesame_cake
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:sesame_cake
-			}
-		}
-	}
-	text = {
-		localization_key = treat_baked_banana
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:baked_banana
-			}
-		}
-	}
 	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_gingerbread
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:gingerbread
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_frytour_blaunched
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:frytour_blaunched
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_fig_pie
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:fig_pie
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_pokerounce
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:pokerounce
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_sambocade
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:sambocade
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_sesame_cake
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:sesame_cake
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_baked_banana
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:baked_banana
+	# 		}
+	# 	}
+	# }
 	#text = {
 	#	localization_key = treat_koptoplakous
 	#	trigger = {
@@ -869,15 +870,16 @@ FavoriteTreatDemand = {
 			}
 		}
 	}
-	text = {
-		localization_key = treat_marzipan
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:marzipan
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_marzipan
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:marzipan
+	# 		}
+	# 	}
+	# }
 	text = {
 		localization_key = treat_sweetrolls
 		trigger = {
@@ -923,70 +925,70 @@ FavoriteTreatDemand = {
 			}
 		}
 	}
-	text = {
-		localization_key = treat_gingerbread
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:gingerbread
-			}
-		}
-	}
-	text = {
-		localization_key = treat_frytour_blaunched
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:frytour_blaunched
-			}
-		}
-	}
-	text = {
-		localization_key = treat_fig_pie
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:fig_pie
-			}
-		}
-	}
-	text = {
-		localization_key = treat_pokerounce
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:pokerounce
-			}
-		}
-	}
-	text = {
-		localization_key = treat_sambocade
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:sambocade
-			}
-		}
-	}
-	text = {
-		localization_key = treat_sesame_cake
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:sesame_cake
-			}
-		}
-	}
-	text = {
-		localization_key = treat_baked_banana
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:baked_banana
-			}
-		}
-	}
 	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_gingerbread
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:gingerbread
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_frytour_blaunched
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:frytour_blaunched
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_fig_pie
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:fig_pie
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_pokerounce
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:pokerounce
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_sambocade
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:sambocade
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_sesame_cake
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:sesame_cake
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_baked_banana
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:baked_banana
+	# 		}
+	# 	}
+	# }
 	#text = {
 	#	localization_key = treat_koptoplakous
 	#	trigger = {
@@ -1039,15 +1041,16 @@ FavoriteTreatUppercase = {
 			}
 		}
 	}
-	text = {
-		localization_key = treat_marzipan_uppercase
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:marzipan
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_marzipan_uppercase
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:marzipan
+	# 		}
+	# 	}
+	# }
 	text = {
 		localization_key = treat_sweetroll_uppercase
 		trigger = {
@@ -1093,70 +1096,70 @@ FavoriteTreatUppercase = {
 			}
 		}
 	}
-	text = {
-		localization_key = treat_gingerbread_uppercase
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:gingerbread
-			}
-		}
-	}
-	text = {
-		localization_key = treat_frytour_blaunched_uppercase
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:frytour_blaunched
-			}
-		}
-	}
-	text = {
-		localization_key = treat_fig_pie_uppercase
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:fig_pie
-			}
-		}
-	}
-	text = {
-		localization_key = treat_pokerounce_uppercase
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:pokerounce
-			}
-		}
-	}
-	text = {
-		localization_key = treat_sambocade_uppercase
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:sambocade
-			}
-		}
-	}
-	text = {
-		localization_key = treat_sesame_cake_uppercase
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:sesame_cake
-			}
-		}
-	}
-	text = {
-		localization_key = treat_baked_banana_uppercase
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:baked_banana
-			}
-		}
-	}
 	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_gingerbread_uppercase
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:gingerbread
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_frytour_blaunched_uppercase
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:frytour_blaunched
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_fig_pie_uppercase
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:fig_pie
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_pokerounce_uppercase
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:pokerounce
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_sambocade_uppercase
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:sambocade
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_sesame_cake_uppercase
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:sesame_cake
+	# 		}
+	# 	}
+	# }
+	# text = {
+	# 	localization_key = treat_baked_banana_uppercase
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:baked_banana
+	# 		}
+	# 	}
+	# }
 	#text = {
 	#	localization_key = treat_koptoplakous_uppercase
 	#	trigger = {
