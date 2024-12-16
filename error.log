@@ -7479,3 +7479,50 @@ Copy that file (or its contents) to game/gfx/map/map_object_data to fix the erro
     file: events/l5r_events/l5r_pray_spirits_event.txt line: 712 (l5r_pray_spirit.0003:option)
 
 [22:24:11][E][artifact_feature.cpp:103]: Artifact 'Shiny Laminar Armor' (%d) has no feature in group 27
+[22:24:20][E][jomini_script_system.cpp:284]: Script system error!
+  Error: Failed to fetch variable for 'animal_type' due to not being set
+  Script location: file: common/scripted_effects/00_hunt_effects.txt line: 3930 (hunt_create_sighting_effect)
+    file: events/activities/hunt_activity/hunt_events.txt line: 10708 (hunt.2500:immediate)
+
+[22:24:20][E][jomini_script_system.cpp:284]: Script system error!
+  Error: Event target link 'var' returned an unset scope
+  Script location: file: common/scripted_effects/00_hunt_effects.txt line: 3930 (hunt_create_sighting_effect)
+    file: events/activities/hunt_activity/hunt_events.txt line: 10708 (hunt.2500:immediate)
+
+[22:24:21][E][jomini_script_system.cpp:284]: Script system error!
+  Error: add_opinion effect [ name_aki Kouken of c_kousou_province (Internal ID: 155 - Historical ID lineofkouken1) is trying to add an opinion of themself ]
+  Script location: file: common/scripted_effects/00_prison_effects.txt line: 624 (execute_prisoner_effect)
+    file: common/character_interactions/00_prison_interactions.txt line: 6410 (execute_prisoner_interaction:on_accept)
+
+[22:24:24][E][jomini_script_system.cpp:284]: Script system error!
+  Error: Failed to fetch variable for 'animal_type' due to not being set
+  Script location: file: common/scripted_effects/00_hunt_effects.txt line: 3930 (hunt_create_sighting_effect)
+    file: events/activities/hunt_activity/hunt_events.txt line: 10708 (hunt.2500:immediate)
+
+[22:24:24][E][jomini_script_system.cpp:284]: Script system error!
+  Error: Event target link 'var' returned an unset scope
+  Script location: file: common/scripted_effects/00_hunt_effects.txt line: 3930 (hunt_create_sighting_effect)
+    file: events/activities/hunt_activity/hunt_events.txt line: 10708 (hunt.2500:immediate)
+
+[22:24:26][E][jomini_script_system.cpp:284]: Script system error!
+  Error: Failed to fetch variable for 'animal_type' due to not being set
+  Script location: file: common/scripted_effects/00_hunt_effects.txt line: 3930 (hunt_create_sighting_effect)
+    file: events/activities/hunt_activity/hunt_events.txt line: 10708 (hunt.2500:immediate)
+
+[22:24:26][E][jomini_script_system.cpp:284]: Script system error!
+  Error: Event target link 'var' returned an unset scope
+  Script location: file: common/scripted_effects/00_hunt_effects.txt line: 3930 (hunt_create_sighting_effect)
+    file: events/activities/hunt_activity/hunt_events.txt line: 10708 (hunt.2500:immediate)
+
+[22:24:27][E][jomini_script_system.cpp:284]: Script system error!
+  Error: create_legend_seed effect [ name_tamori Miya of  (Internal ID 3161) is not a ruler ]
+  Script location: file: events/single_combat_events.txt line: 2310 (finalise_combat_results_effect)
+    file: events/single_combat_events.txt line: 8165 (single_combat.0021:immediate)
+    file: events/single_combat_events.txt line: 8002 (single_combat.0001:after)
+    file: events/single_combat_events.txt line: 7999 (single_combat.0001:after)
+    file: events/single_combat_events.txt line: 8240 (single_combat.0021:immediate)
+    file: events/single_combat_events.txt line: 8002 (single_combat.0001:after)
+    file: events/single_combat_events.txt line: 7999 (single_combat.0001:after)
+    file: common/scripted_effects/00_single_combat_effects.txt line: 176 (configure_start_single_combat_effect)
+    file: common/character_interactions/00_tradition_interactions.txt line: 83 (spar_with_knight_interaction:on_accept)
+
