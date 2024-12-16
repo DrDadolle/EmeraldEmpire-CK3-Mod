@@ -312,6 +312,34 @@ on_game_start_after_lobby = {
 		#	}
 		#}
 
+		### ACHIEVEMENT TRACKING FOR STARTING CHARACTERS
+		if = {
+			limit = { has_multiple_players = no }
+			every_player = {
+				# EP1
+				##5 creme de la creme
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_creme_de_la_creme_achievement
+					VALUE = yes
+				}
+				##6 Give it back!
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_polyglot_achievement
+					VALUE = yes
+				}
+				##7 Inspirational
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_inspirational_achievement
+					VALUE = yes
+				}
+				##8 One of a Kind
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_one_of_a_kind_achievement
+						VALUE = yes
+				}
+			}
+		}
+
 
 		# In 867, the Slavic cultures are still very similar to each other, so we start them off at a very high tolerance.
 		# if = { #L5R

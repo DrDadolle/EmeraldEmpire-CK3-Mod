@@ -33,7 +33,7 @@ create_artifact_chikara_ancestral_sword_crab_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = chikara_ancestral_sword_crab
+        # set_variable = chikara_ancestral_sword_crab
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -87,7 +87,7 @@ create_artifact_fukutsu_ancestral_armor_crab_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = fukutsu_ancestral_armor_crab
+       #  set_variable = fukutsu_ancestral_armor_crab
 		set_variable = japanese_armor
 		save_scope_as = epic
 
@@ -137,7 +137,7 @@ create_artifact_shukujo_ancestral_sword_crane_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = shukujo_ancestral_sword_crane
+        # set_variable = shukujo_ancestral_sword_crane
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -184,7 +184,7 @@ create_artifact_sasageru_ancestral_armor_crane_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = sasageru_ancestral_armor_crane
+        # set_variable = sasageru_ancestral_armor_crane
 		set_variable = japanese_armor
 		save_scope_as = epic
 
@@ -231,7 +231,7 @@ create_artifact_kotoku_ancestral_yari_daidoji_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = kotoku_ancestral_yari_daidoji
+        # set_variable = kotoku_ancestral_yari_daidoji
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -286,7 +286,7 @@ create_artifact_shori_ancestral_sword_lion_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = shori_ancestral_sword_lion
+       #  set_variable = shori_ancestral_sword_lion
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -338,7 +338,7 @@ create_artifact_junsui_ancestral_armor_lion_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = junsui_ancestral_armor_lion
+        # set_variable = junsui_ancestral_armor_lion
 		set_variable = japanese_armor
 		save_scope_as = epic
 
@@ -394,7 +394,7 @@ create_artifact_ofushikai_ancestral_sword_phoenix_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = ofushikai_ancestral_sword_phoenix
+        # set_variable = ofushikai_ancestral_sword_phoenix
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -446,7 +446,7 @@ create_artifact_mezameru_ancestral_armor_phoenix_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = mezameru_ancestral_armor_phoenix
+       #  set_variable = mezameru_ancestral_armor_phoenix
 		set_variable = japanese_armor
 		save_scope_as = epic
 
@@ -502,7 +502,7 @@ create_artifact_itsuwari_ancestral_sword_scorpion_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = itsuwari_ancestral_sword_scorpion
+       #  set_variable = itsuwari_ancestral_sword_scorpion
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -559,7 +559,7 @@ create_artifact_hayai_ancestral_sword_unicorn_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = hayai_ancestral_sword_unicorn
+        # set_variable = hayai_ancestral_sword_unicorn
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -606,7 +606,7 @@ create_artifact_yuki_ancestral_armor_unicorn_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = yuki_ancestral_armor_unicorn
+        # set_variable = yuki_ancestral_armor_unicorn
 		set_variable = japanese_armor
 		save_scope_as = epic
 
@@ -657,7 +657,7 @@ create_artifact_kunshi_ancestral_sword_imperial_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = kunshi_ancestral_sword_imperial
+       #  set_variable = kunshi_ancestral_sword_imperial
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -706,7 +706,7 @@ create_artifact_ancestral_sword_sparrow_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = ancestral_sword_sparrow
+        # set_variable = ancestral_sword_sparrow
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -753,7 +753,7 @@ create_artifact_ancestral_sword_centipede_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = ancestral_sword_centipede
+        # set_variable = ancestral_sword_centipede
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -800,7 +800,7 @@ create_artifact_shoubai_and_sakusen_ancestral_sword_mantis_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = shoubai_and_sakusen_ancestral_sword_mantis
+       #  set_variable = shoubai_and_sakusen_ancestral_sword_mantis
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -847,7 +847,7 @@ create_artifact_kaminari_ancestral_armor_mantis_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = kaminari_ancestral_armor_mantis
+        # set_variable = kaminari_ancestral_armor_mantis
 		set_variable = japanese_armor
 		save_scope_as = epic
 
@@ -894,7 +894,7 @@ create_artifact_ancestral_sword_dragonfly_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = ancestral_sword_dragonfly
+        # set_variable = ancestral_sword_dragonfly
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -941,7 +941,7 @@ create_artifact_ukyo_ancestral_sword_fox_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = ukyo_ancestral_sword_fox
+       #  set_variable = ukyo_ancestral_sword_fox
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -988,7 +988,7 @@ create_artifact_bouishi_kasuga_ancestral_sword_tortoise_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = bouishi_kasuga_ancestral_sword_tortoise
+        # set_variable = bouishi_kasuga_ancestral_sword_tortoise
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -1035,7 +1035,7 @@ create_artifact_jadoku_ancestral_sword_snake_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = jadoku_ancestral_sword_snake
+        # set_variable = jadoku_ancestral_sword_snake
 		set_variable = japanese_sword
 		save_scope_as = epic
 
@@ -1082,7 +1082,7 @@ create_artifact_kenno_ancestral_sword_hare_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = historical_unique_artifact
-        set_variable = kenno_ancestral_sword_hare
+        # set_variable = kenno_ancestral_sword_hare
 		set_variable = japanese_sword
 		save_scope_as = epic
 
