@@ -289,14 +289,17 @@ archer_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_brythonic
-								has_cultural_pillar = heritage_east_african
-								has_cultural_pillar = heritage_indo_aryan
-								has_cultural_pillar = heritage_dravidian
-								has_cultural_pillar = heritage_burman
-								has_cultural_pillar = heritage_yoruba
-								has_cultural_pillar = heritage_baltic
-								has_cultural_pillar = heritage_balto_finnic
+								#L5R Modified
+								has_cultural_pillar = heritage_tsuruchi
+								has_cultural_pillar = heritage_crane
+								# has_cultural_pillar = heritage_brythonic
+								# has_cultural_pillar = heritage_east_african
+								# has_cultural_pillar = heritage_indo_aryan
+								# has_cultural_pillar = heritage_dravidian
+								# has_cultural_pillar = heritage_burman
+								# has_cultural_pillar = heritage_yoruba
+								# has_cultural_pillar = heritage_baltic
+								# has_cultural_pillar = heritage_balto_finnic
 							}
 						}
 					}
@@ -306,8 +309,11 @@ archer_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_central_germanic
-								has_cultural_pillar = heritage_frankish
+								#L5R Modified
+								has_cultural_pillar = heritage_unicorn
+								has_cultural_pillar = heritage_lion
+								# has_cultural_pillar = heritage_central_germanic
+								# has_cultural_pillar = heritage_frankish
 							}
 						}
 					}
@@ -476,13 +482,16 @@ skirmisher_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_baltic
-								has_cultural_pillar = heritage_ugro_permian
-								has_cultural_pillar = heritage_balto_finnic
-								has_cultural_pillar = heritage_somalian
-								has_cultural_pillar = heritage_west_african
-								has_cultural_pillar = heritage_goidelic
-								has_cultural_pillar = heritage_brythonic
+								#L5R Modified
+								has_cultural_pillar = heritage_crane
+								has_cultural_pillar = heritage_scorpion
+								# has_cultural_pillar = heritage_baltic
+								# has_cultural_pillar = heritage_ugro_permian
+								# has_cultural_pillar = heritage_balto_finnic
+								# has_cultural_pillar = heritage_somalian
+								# has_cultural_pillar = heritage_west_african
+								# has_cultural_pillar = heritage_goidelic
+								# has_cultural_pillar = heritage_brythonic
 							}
 						}
 					}
@@ -492,10 +501,12 @@ skirmisher_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_central_germanic
-								has_cultural_pillar = heritage_frankish
-								has_cultural_pillar = heritage_latin
-								has_cultural_pillar = heritage_byzantine
+								#L5R Modified
+								has_cultural_pillar = heritage_lion
+								# has_cultural_pillar = heritage_central_germanic
+								# has_cultural_pillar = heritage_frankish
+								# has_cultural_pillar = heritage_latin
+								# has_cultural_pillar = heritage_byzantine
 							}
 						}
 					}
@@ -673,8 +684,11 @@ pike_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_central_germanic
-								has_cultural_pillar = heritage_latin
+								#L5R Modified
+								has_cultural_pillar = heritage_phoenix
+								has_cultural_pillar = heritage_crane
+								# has_cultural_pillar = heritage_central_germanic
+								# has_cultural_pillar = heritage_latin
 							}
 						}
 					}
@@ -684,10 +698,12 @@ pike_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_iranian
-								has_cultural_pillar = heritage_mongolic
-								has_cultural_pillar = heritage_turkic
-								has_cultural_pillar = heritage_berber
+								#L5R Modified
+								has_cultural_pillar = heritage_unicorn
+								# has_cultural_pillar = heritage_iranian
+								# has_cultural_pillar = heritage_mongolic
+								# has_cultural_pillar = heritage_turkic
+								# has_cultural_pillar = heritage_berber
 							}
 						}
 					}
@@ -849,15 +865,17 @@ outrider_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_iranian
-								has_cultural_pillar = heritage_turkic
-								has_cultural_pillar = heritage_mongolic
-								has_cultural_pillar = heritage_arabic
-								has_cultural_pillar = heritage_berber
-								has_cultural_pillar = heritage_iberian
-								has_cultural_pillar = heritage_indo_aryan
-								has_cultural_pillar = heritage_magyar
-								has_cultural_pillar = heritage_caucasian
+								#L5R Modified
+								has_cultural_pillar = heritage_unicorn
+								# has_cultural_pillar = heritage_iranian
+								# has_cultural_pillar = heritage_turkic
+								# has_cultural_pillar = heritage_mongolic
+								# has_cultural_pillar = heritage_arabic
+								# has_cultural_pillar = heritage_berber
+								# has_cultural_pillar = heritage_iberian
+								# has_cultural_pillar = heritage_indo_aryan
+								# has_cultural_pillar = heritage_magyar
+								# has_cultural_pillar = heritage_caucasian
 							}
 						}
 					}
@@ -867,11 +885,14 @@ outrider_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_central_germanic
-								has_cultural_pillar = heritage_tibetan
-								has_cultural_pillar = heritage_baltic
-								has_cultural_pillar = heritage_burman
-								has_cultural_pillar = heritage_somalian
+								#L5R Modified
+								has_cultural_pillar = heritage_dragon
+								has_cultural_pillar = heritage_ichiro
+								# has_cultural_pillar = heritage_central_germanic
+								# has_cultural_pillar = heritage_tibetan
+								# has_cultural_pillar = heritage_baltic
+								# has_cultural_pillar = heritage_burman
+								# has_cultural_pillar = heritage_somalian
 							}
 						}
 					}
@@ -1072,13 +1093,17 @@ vanguard_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_central_germanic
-								has_cultural_pillar = heritage_north_germanic
-								has_cultural_pillar = heritage_west_germanic
-								has_cultural_pillar = heritage_east_slavic
-								has_cultural_pillar = heritage_burman
-								has_cultural_pillar = heritage_qiangic
-								has_cultural_pillar = heritage_tibetan
+								#L5R Modified
+								has_cultural_pillar = heritage_dragon
+								has_cultural_pillar = heritage_lion
+								has_cultural_pillar = heritage_crab
+								# has_cultural_pillar = heritage_central_germanic
+								# has_cultural_pillar = heritage_north_germanic
+								# has_cultural_pillar = heritage_west_germanic
+								# has_cultural_pillar = heritage_east_slavic
+								# has_cultural_pillar = heritage_burman
+								# has_cultural_pillar = heritage_qiangic
+								# has_cultural_pillar = heritage_tibetan
 							}
 						}
 					}
@@ -1088,9 +1113,11 @@ vanguard_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_mongolic
-								has_cultural_pillar = heritage_turkic
-								has_cultural_pillar = heritage_berber
+								#L5R Modified
+								has_cultural_pillar = heritage_unicorn
+								# has_cultural_pillar = heritage_mongolic
+								# has_cultural_pillar = heritage_turkic
+								# has_cultural_pillar = heritage_berber
 							}
 						}
 					}
@@ -1278,14 +1305,16 @@ lancer_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_iranian
-								has_cultural_pillar = heritage_turkic
-								has_cultural_pillar = heritage_mongolic
-								has_cultural_pillar = heritage_central_germanic
-								has_cultural_pillar = heritage_frankish
-								has_cultural_pillar = heritage_indo_aryan
-								has_cultural_pillar = heritage_byzantine
-								has_cultural_pillar = heritage_caucasian
+								#L5R Modified
+								has_cultural_pillar = heritage_unicorn
+								# has_cultural_pillar = heritage_iranian
+								# has_cultural_pillar = heritage_turkic
+								# has_cultural_pillar = heritage_mongolic
+								# has_cultural_pillar = heritage_central_germanic
+								# has_cultural_pillar = heritage_frankish
+								# has_cultural_pillar = heritage_indo_aryan
+								# has_cultural_pillar = heritage_byzantine
+								# has_cultural_pillar = heritage_caucasian
 							}
 						}
 					}
@@ -1295,16 +1324,19 @@ lancer_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_tibetan
-								has_cultural_pillar = heritage_baltic
-								has_cultural_pillar = heritage_south_slavic
-								has_cultural_pillar = heritage_sahelian
-								has_cultural_pillar = heritage_senegambian
-								has_cultural_pillar = heritage_west_african
-								has_cultural_pillar = heritage_yoruba
-								has_cultural_pillar = heritage_somalian
-								has_cultural_pillar = heritage_east_african
-								has_cultural_pillar = heritage_burman
+								#L5R Modified
+								has_cultural_pillar = heritage_dragon
+								has_cultural_pillar = heritage_ichiro
+								# has_cultural_pillar = heritage_tibetan
+								# has_cultural_pillar = heritage_baltic
+								# has_cultural_pillar = heritage_south_slavic
+								# has_cultural_pillar = heritage_sahelian
+								# has_cultural_pillar = heritage_senegambian
+								# has_cultural_pillar = heritage_west_african
+								# has_cultural_pillar = heritage_yoruba
+								# has_cultural_pillar = heritage_somalian
+								# has_cultural_pillar = heritage_east_african
+								# has_cultural_pillar = heritage_burman
 							}
 						}
 					}
@@ -1401,7 +1433,8 @@ crossbowmen_attribute = {
 		culture ?= {
 			OR = {
 				has_innovation = innovation_advanced_bowmaking
-				has_innovation = innovation_repeating_crossbow
+				#L5R Disabled
+				# has_innovation = innovation_repeating_crossbow
 			}
 		}
 	}
@@ -1512,26 +1545,27 @@ crossbowmen_attribute = {
 					}
 					add = @has_relevant_maa_weight_up_value
 				}
+				#L5R Siabled
 				#Culture
-				if = {
-					limit = {
-						root.culture ?= {
-							OR = {
-								has_cultural_pillar = heritage_chinese
-								has_cultural_pillar = heritage_latin
-							}
-						}
-					}
-					add = @respected_culture_for_maa_type_value
-				}
-				if = {
-					limit = {
-						root.culture ?= {
-							has_cultural_pillar = heritage_west_germanic
-						}
-					}
-					add = @disinterested_culture_for_maa_type_value
-				}
+				# if = {
+				# 	limit = {
+				# 		root.culture ?= {
+				# 			OR = {
+				# 				has_cultural_pillar = heritage_chinese
+				# 				has_cultural_pillar = heritage_latin
+				# 			}
+				# 		}
+				# 	}
+				# 	add = @respected_culture_for_maa_type_value
+				# }
+				# if = {
+				# 	limit = {
+				# 		root.culture ?= {
+				# 			has_cultural_pillar = heritage_west_germanic
+				# 		}
+				# 	}
+				# 	add = @disinterested_culture_for_maa_type_value
+				# }
 				## Era.
 				add = accolade_weighted_up_in_later_eras_value
 				# AI values.
@@ -1758,359 +1792,362 @@ besieger_attribute = {
 		}
 	}
 }
-
+#L5R Disabled
 # Camel Rider
-camelry_attribute = {
-	adjective = accolade_camel_riding
-	noun = accolade_camelier
-	accolade_categories = { men_at_arms army_bonus militant aggressive defensive cavalry light_fighter }
+# camelry_attribute = {
+# 	adjective = accolade_camel_riding
+# 	noun = accolade_camelier
+# 	accolade_categories = { men_at_arms army_bonus militant aggressive defensive cavalry light_fighter }
 
-	potential = {
-		prowess >= accolade_prowess_requirement_value
-		OR = {
-			has_trait_xp = {
-				trait = tourney_participant
-				track = horse
-				value >= 20
-			}
-			has_trait = desert_warrior
-		}
-		culture ?= { has_innovation = innovation_war_camels }
-	}
+# 	potential = {
+# 		prowess >= accolade_prowess_requirement_value
+# 		OR = {
+# 			has_trait_xp = {
+# 				trait = tourney_participant
+# 				track = horse
+# 				value >= 20
+# 			}
+# 			has_trait = desert_warrior
+# 		}
+# 		culture ?= { has_innovation = innovation_war_camels }
+# 	}
 
-	weight = {
-		value = accolade_uninteresting_base_value
-		scope:owner ?= {
-			# Should only be interested at all if they have a unit of the type OR if the maa type is exciting and foreign
-			if = {
-				limit = {
-					OR = {
-						number_maa_regiments_of_base_type = {
-							type = camel_cavalry
-							value >= 1
-						}
-						culture ?= {
-							NOT = {
-								has_innovation = innovation_war_camels
-							}
-						}
-					}
-				}
-				add = @has_relevant_maa_weight_up_value
-				# Weight up a bit further for more MaA of the same type.
-				## A few.
-				if = {
-					limit = {
-						number_maa_regiments_of_base_type = {
-							type = camel_cavalry
-							value >= @number_maa_regiments_increment_1
-						}
-					}
-					add = @has_relevant_maa_weight_up_value
-				}
-				## Lots.
-				if = {
-					limit = {
-						number_maa_regiments_of_base_type = {
-							type = camel_cavalry
-							value >= @number_maa_regiments_increment_2
-						}
-					}
-					add = @has_relevant_maa_weight_up_value
-				}
-				## Many.
-				if = {
-					limit = {
-						number_maa_regiments_of_base_type = {
-							type = camel_cavalry
-							value >= @number_maa_regiments_increment_3
-						}
-					}
-					add = @has_relevant_maa_weight_up_value
-				}
-				## Many-lots.
-				if = {
-					limit = {
-						number_maa_regiments_of_base_type = {
-							type = camel_cavalry
-							value >= @number_maa_regiments_increment_4
-						}
-					}
-					add = @has_relevant_maa_weight_up_value
-				}
-				## Era.
-				### No specific era preference.
-				# AI values.
-				add = {
-					value = ai_energy
-					multiply = 1
-				}
-				add = {
-					value = ai_honor
-					multiply = 1
-				}
-				#Culture
-				if = {
-					limit = {
-						root.culture ?= {
-							OR = {
-								has_cultural_pillar = heritage_arabic
-								has_cultural_pillar = heritage_berber
-							}
-						}
-					}
-					add = @respected_culture_for_maa_type_value
-				}
-				# Finally, weight for opinion.
-				multiply = accolade_opinion_multiplier_value
-			}
-		}
-	}
+# 	weight = {
+# 		value = accolade_uninteresting_base_value
+# 		scope:owner ?= {
+# 			# Should only be interested at all if they have a unit of the type OR if the maa type is exciting and foreign
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						number_maa_regiments_of_base_type = {
+# 							type = camel_cavalry
+# 							value >= 1
+# 						}
+# 						culture ?= {
+# 							NOT = {
+# 								has_innovation = innovation_war_camels
+# 							}
+# 						}
+# 					}
+# 				}
+# 				add = @has_relevant_maa_weight_up_value
+# 				# Weight up a bit further for more MaA of the same type.
+# 				## A few.
+# 				if = {
+# 					limit = {
+# 						number_maa_regiments_of_base_type = {
+# 							type = camel_cavalry
+# 							value >= @number_maa_regiments_increment_1
+# 						}
+# 					}
+# 					add = @has_relevant_maa_weight_up_value
+# 				}
+# 				## Lots.
+# 				if = {
+# 					limit = {
+# 						number_maa_regiments_of_base_type = {
+# 							type = camel_cavalry
+# 							value >= @number_maa_regiments_increment_2
+# 						}
+# 					}
+# 					add = @has_relevant_maa_weight_up_value
+# 				}
+# 				## Many.
+# 				if = {
+# 					limit = {
+# 						number_maa_regiments_of_base_type = {
+# 							type = camel_cavalry
+# 							value >= @number_maa_regiments_increment_3
+# 						}
+# 					}
+# 					add = @has_relevant_maa_weight_up_value
+# 				}
+# 				## Many-lots.
+# 				if = {
+# 					limit = {
+# 						number_maa_regiments_of_base_type = {
+# 							type = camel_cavalry
+# 							value >= @number_maa_regiments_increment_4
+# 						}
+# 					}
+# 					add = @has_relevant_maa_weight_up_value
+# 				}
+# 				## Era.
+# 				### No specific era preference.
+# 				# AI values.
+# 				add = {
+# 					value = ai_energy
+# 					multiply = 1
+# 				}
+# 				add = {
+# 					value = ai_honor
+# 					multiply = 1
+# 				}
+# 				#Culture
+# 				if = {
+# 					limit = {
+# 						root.culture ?= {
+# 							OR = {
+# 								has_cultural_pillar = heritage_arabic
+# 								has_cultural_pillar = heritage_berber
+# 							}
+# 						}
+# 					}
+# 					add = @respected_culture_for_maa_type_value
+# 				}
+# 				# Finally, weight for opinion.
+# 				multiply = accolade_opinion_multiplier_value
+# 			}
+# 		}
+# 	}
 
-	ranks = {
-		100 = {
-			liege_modifier = { 
-				camel_cavalry_max_size_add = @number_maa_regiments_increment_1
-			}
-			knight_army_modifier = { 
-				camel_cavalry_damage_mult = @accolade_maa_damage_1
-				camel_cavalry_toughness_mult = @accolade_maa_toughness_1 
-				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_1
-				camel_cavalry_screen_mult = @accolade_maa_screen_1
-				movement_speed = @outrider_attr_movement_speed_1
-			}
-		}
-		300 = {
-			liege_modifier = { 
-				camel_cavalry_max_size_add = @number_maa_regiments_increment_1
-			}
-			knight_army_modifier = { 
-				camel_cavalry_damage_mult = @accolade_maa_damage_1 
-				camel_cavalry_toughness_mult = @accolade_maa_toughness_1
-				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_1
-				camel_cavalry_screen_mult = @accolade_maa_screen_1
-				movement_speed = @outrider_attr_movement_speed_1
-			}
-		}
-		600 = {
-			liege_modifier = { 
-				camel_cavalry_maintenance_mult = @accolade_maa_maint_1
-				camel_cavalry_max_size_add = @number_maa_regiments_increment_2
-			}
-			knight_army_modifier = { 
-				camel_cavalry_damage_mult = @accolade_maa_damage_4
-				camel_cavalry_toughness_mult = @accolade_maa_toughness_2
-				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_2
-				camel_cavalry_screen_mult = @accolade_maa_screen_2
-				movement_speed = @outrider_attr_movement_speed_2 
-			}
-			men_at_arms = { accolade_maa_cameliers }
-		}
-		1000 = {
-			liege_modifier = { 
-				camel_cavalry_maintenance_mult = @accolade_maa_maint_1
-				camel_cavalry_max_size_add = @number_maa_regiments_increment_2
-			}
-			knight_army_modifier = { 
-				camel_cavalry_damage_mult = @accolade_maa_damage_4
-				camel_cavalry_toughness_mult = @accolade_maa_toughness_2
-				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_2
-				camel_cavalry_screen_mult = @accolade_maa_screen_2
-				movement_speed = @outrider_attr_movement_speed_2 
-			}
-		}
-		1500 = {
-			liege_modifier = {
-				camel_cavalry_maintenance_mult = @accolade_maa_maint_3
-				camel_cavalry_max_size_add = @number_maa_regiments_increment_3
-			}
-			knight_army_modifier = { 
-				camel_cavalry_damage_mult = @accolade_maa_damage_6
-				camel_cavalry_toughness_mult = @accolade_maa_toughness_3
-				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_3
-				camel_cavalry_screen_mult = @accolade_maa_screen_3
-				movement_speed = @outrider_attr_movement_speed_3 
-			}
-			men_at_arms = { accolade_maa_cameliers }
-		}
-		2100 = {
-			liege_modifier = { 
-				camel_cavalry_maintenance_mult = @accolade_maa_maint_3
-				camel_cavalry_max_size_add = @number_maa_regiments_increment_3
-			}
-			knight_army_modifier = { 
-				camel_cavalry_damage_mult = @accolade_maa_damage_6
-				camel_cavalry_toughness_mult = @accolade_maa_toughness_3
-				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_3
-				camel_cavalry_screen_mult = @accolade_maa_screen_3
-				movement_speed = @outrider_attr_movement_speed_3
-			}
-		}
-	}
-}
+# 	ranks = {
+# 		100 = {
+# 			liege_modifier = { 
+# 				camel_cavalry_max_size_add = @number_maa_regiments_increment_1
+# 			}
+# 			knight_army_modifier = { 
+# 				camel_cavalry_damage_mult = @accolade_maa_damage_1
+# 				camel_cavalry_toughness_mult = @accolade_maa_toughness_1 
+# 				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_1
+# 				camel_cavalry_screen_mult = @accolade_maa_screen_1
+# 				movement_speed = @outrider_attr_movement_speed_1
+# 			}
+# 		}
+# 		300 = {
+# 			liege_modifier = { 
+# 				camel_cavalry_max_size_add = @number_maa_regiments_increment_1
+# 			}
+# 			knight_army_modifier = { 
+# 				camel_cavalry_damage_mult = @accolade_maa_damage_1 
+# 				camel_cavalry_toughness_mult = @accolade_maa_toughness_1
+# 				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_1
+# 				camel_cavalry_screen_mult = @accolade_maa_screen_1
+# 				movement_speed = @outrider_attr_movement_speed_1
+# 			}
+# 		}
+# 		600 = {
+# 			liege_modifier = { 
+# 				camel_cavalry_maintenance_mult = @accolade_maa_maint_1
+# 				camel_cavalry_max_size_add = @number_maa_regiments_increment_2
+# 			}
+# 			knight_army_modifier = { 
+# 				camel_cavalry_damage_mult = @accolade_maa_damage_4
+# 				camel_cavalry_toughness_mult = @accolade_maa_toughness_2
+# 				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_2
+# 				camel_cavalry_screen_mult = @accolade_maa_screen_2
+# 				movement_speed = @outrider_attr_movement_speed_2 
+# 			}
+# 			men_at_arms = { accolade_maa_cameliers }
+# 		}
+# 		1000 = {
+# 			liege_modifier = { 
+# 				camel_cavalry_maintenance_mult = @accolade_maa_maint_1
+# 				camel_cavalry_max_size_add = @number_maa_regiments_increment_2
+# 			}
+# 			knight_army_modifier = { 
+# 				camel_cavalry_damage_mult = @accolade_maa_damage_4
+# 				camel_cavalry_toughness_mult = @accolade_maa_toughness_2
+# 				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_2
+# 				camel_cavalry_screen_mult = @accolade_maa_screen_2
+# 				movement_speed = @outrider_attr_movement_speed_2 
+# 			}
+# 		}
+# 		1500 = {
+# 			liege_modifier = {
+# 				camel_cavalry_maintenance_mult = @accolade_maa_maint_3
+# 				camel_cavalry_max_size_add = @number_maa_regiments_increment_3
+# 			}
+# 			knight_army_modifier = { 
+# 				camel_cavalry_damage_mult = @accolade_maa_damage_6
+# 				camel_cavalry_toughness_mult = @accolade_maa_toughness_3
+# 				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_3
+# 				camel_cavalry_screen_mult = @accolade_maa_screen_3
+# 				movement_speed = @outrider_attr_movement_speed_3 
+# 			}
+# 			men_at_arms = { accolade_maa_cameliers }
+# 		}
+# 		2100 = {
+# 			liege_modifier = { 
+# 				camel_cavalry_maintenance_mult = @accolade_maa_maint_3
+# 				camel_cavalry_max_size_add = @number_maa_regiments_increment_3
+# 			}
+# 			knight_army_modifier = { 
+# 				camel_cavalry_damage_mult = @accolade_maa_damage_6
+# 				camel_cavalry_toughness_mult = @accolade_maa_toughness_3
+# 				camel_cavalry_pursuit_mult = @accolade_maa_pursuit_3
+# 				camel_cavalry_screen_mult = @accolade_maa_screen_3
+# 				movement_speed = @outrider_attr_movement_speed_3
+# 			}
+# 		}
+# 	}
+# }
 
+#L5R Disabled
 # Elephant Rider
-elephantry_attribute = {
-	adjective = accolade_elephant_riding
-	noun = accolade_elephanteer
-	accolade_categories = { men_at_arms army_bonus militant forceful leader aggressive defensive cavalry heavy_fighter }
+# elephantry_attribute = {
+# 	adjective = accolade_elephant_riding
+# 	noun = accolade_elephanteer
+# 	accolade_categories = { men_at_arms army_bonus militant forceful leader aggressive defensive cavalry heavy_fighter }
 
-	potential = {
-		prowess >= accolade_prowess_requirement_value
-		OR = {
-			has_trait_xp = {
-				trait = tourney_participant
-				track = horse
-				value >= 20
-			}
-			has_trait = jungle_stalker
-		}
-		culture ?= { has_innovation = innovation_elephantry }
-	}
+# 	potential = {
+# 		prowess >= accolade_prowess_requirement_value
+# 		OR = {
+# 			has_trait_xp = {
+# 				trait = tourney_participant
+# 				track = horse
+# 				value >= 20
+# 			}
+# 			has_trait = jungle_stalker
+# 		}
+# 		culture ?= { has_innovation = innovation_elephantry }
+# 	}
 
-	weight = {
-		value = accolade_uninteresting_base_value
-		scope:owner ?= {
-			# Should only be interested at all if they have a unit of the type OR if the maa type is exciting and foreign
-			if = {
-				limit = {
-					OR = {
-						number_maa_regiments_of_base_type = {
-							type = elephant_cavalry
-							value >= 1
-						}
-						culture ?= {
-							NOR = {
-								has_innovation = innovation_elephantry
-								has_cultural_tradition = tradition_lords_of_the_elephant
-							}
-						}
-					}
-				}
-				add = @has_relevant_maa_weight_up_value
-				# Weight up a bit further for more MaA of the same type.
-				## A few.
-				if = {
-					limit = {
-						number_maa_regiments_of_base_type = {
-							type = elephant_cavalry
-							value >= @number_maa_regiments_increment_1
-						}
-					}
-					add = @has_relevant_maa_weight_up_value
-				}
-				## Lots.
-				if = {
-					limit = {
-						number_maa_regiments_of_base_type = {
-							type = elephant_cavalry
-							value >= @number_maa_regiments_increment_2
-						}
-					}
-					add = @has_relevant_maa_weight_up_value
-				}
-				## Many.
-				if = {
-					limit = {
-						number_maa_regiments_of_base_type = {
-							type = elephant_cavalry
-							value >= @number_maa_regiments_increment_3
-						}
-					}
-					add = @has_relevant_maa_weight_up_value
-				}
-				## Many-lots.
-				if = {
-					limit = {
-						number_maa_regiments_of_base_type = {
-							type = elephant_cavalry
-							value >= @number_maa_regiments_increment_4
-						}
-					}
-					add = @has_relevant_maa_weight_up_value
-				}
-				# AI values.
-				add = {
-					value = ai_boldness
-					multiply = 1
-				}
-				add = {
-					value = ai_honor
-					multiply = 1
-				}
-				#Culture
-				if = {
-					limit = {
-						root.culture ?= {
-							OR = {
-								has_cultural_pillar = heritage_dravidian
-								has_cultural_pillar = heritage_indo_aryan
-								has_cultural_pillar = heritage_burman
-							}
-						}
-					}
-					add = @respected_culture_for_maa_type_value
-				}
-				# elephants are cool
-				add = 100
-				# Finally, weight for opinion.
-				multiply = accolade_opinion_multiplier_value
-			}
-		}
-	}
+# 	weight = {
+# 		value = accolade_uninteresting_base_value
+# 		scope:owner ?= {
+# 			# Should only be interested at all if they have a unit of the type OR if the maa type is exciting and foreign
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						number_maa_regiments_of_base_type = {
+# 							type = elephant_cavalry
+# 							value >= 1
+# 						}
+# 						culture ?= {
+# 							NOR = {
+# 								has_innovation = innovation_elephantry
+# 								has_cultural_tradition = tradition_lords_of_the_elephant
+# 							}
+# 						}
+# 					}
+# 				}
+# 				add = @has_relevant_maa_weight_up_value
+# 				# Weight up a bit further for more MaA of the same type.
+# 				## A few.
+# 				if = {
+# 					limit = {
+# 						number_maa_regiments_of_base_type = {
+# 							type = elephant_cavalry
+# 							value >= @number_maa_regiments_increment_1
+# 						}
+# 					}
+# 					add = @has_relevant_maa_weight_up_value
+# 				}
+# 				## Lots.
+# 				if = {
+# 					limit = {
+# 						number_maa_regiments_of_base_type = {
+# 							type = elephant_cavalry
+# 							value >= @number_maa_regiments_increment_2
+# 						}
+# 					}
+# 					add = @has_relevant_maa_weight_up_value
+# 				}
+# 				## Many.
+# 				if = {
+# 					limit = {
+# 						number_maa_regiments_of_base_type = {
+# 							type = elephant_cavalry
+# 							value >= @number_maa_regiments_increment_3
+# 						}
+# 					}
+# 					add = @has_relevant_maa_weight_up_value
+# 				}
+# 				## Many-lots.
+# 				if = {
+# 					limit = {
+# 						number_maa_regiments_of_base_type = {
+# 							type = elephant_cavalry
+# 							value >= @number_maa_regiments_increment_4
+# 						}
+# 					}
+# 					add = @has_relevant_maa_weight_up_value
+# 				}
+# 				# AI values.
+# 				add = {
+# 					value = ai_boldness
+# 					multiply = 1
+# 				}
+# 				add = {
+# 					value = ai_honor
+# 					multiply = 1
+# 				}
+# 				#Culture
+# 				if = {
+# 					limit = {
+# 						#L5R Disabled
+# 						always = no
+# 						# root.culture ?= {
+# 						# 	OR = {
+# 						# 		has_cultural_pillar = heritage_dravidian
+# 						# 		has_cultural_pillar = heritage_indo_aryan
+# 						# 		has_cultural_pillar = heritage_burman
+# 						# 	}
+# 						# }
+# 					}
+# 					add = @respected_culture_for_maa_type_value
+# 				}
+# 				# elephants are cool
+# 				add = 100
+# 				# Finally, weight for opinion.
+# 				multiply = accolade_opinion_multiplier_value
+# 			}
+# 		}
+# 	}
 
-	ranks = {
-		# Elephants are incredibly deadly but also really expensive. So what if. *What if*. We reduced the cost to run them as we started to buff them? Scream, cry, seethe, cope, etc.
-		100 = {
-			liege_modifier = {
-				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_1
-				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_1
-			}
-		}
-		300 = {
-			liege_modifier = {
-				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_1
-				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_1
-			}
-		}
-		600 = {
-			liege_modifier = {
-				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_2
-				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_2
-			}
-			knight_army_modifier = { elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_2 }
-			men_at_arms = { accolade_maa_elephantiers }
-		}
-		1000 = {
-			liege_modifier = {
-				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_2
-				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_2
-			}
-			knight_army_modifier = { elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_2 }
-		}
-		1500 = {
-			liege_modifier = {
-				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_3
-				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_3
-			}
-			knight_army_modifier = {
-				elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_3
-				elephant_cavalry_toughness_mult = @elephantry_attr_eleph_tough_3
-			}
-			men_at_arms = { accolade_maa_elephantiers }
-		}
-		2100 = {
-			liege_modifier = {
-				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_3
-				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_3
-			}
-			knight_army_modifier = {
-				elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_3
-				elephant_cavalry_toughness_mult = @elephantry_attr_eleph_tough_3
-			}
-		}
-	}
-}
+# 	ranks = {
+# 		# Elephants are incredibly deadly but also really expensive. So what if. *What if*. We reduced the cost to run them as we started to buff them? Scream, cry, seethe, cope, etc.
+# 		100 = {
+# 			liege_modifier = {
+# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_1
+# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_1
+# 			}
+# 		}
+# 		300 = {
+# 			liege_modifier = {
+# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_1
+# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_1
+# 			}
+# 		}
+# 		600 = {
+# 			liege_modifier = {
+# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_2
+# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_2
+# 			}
+# 			knight_army_modifier = { elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_2 }
+# 			men_at_arms = { accolade_maa_elephantiers }
+# 		}
+# 		1000 = {
+# 			liege_modifier = {
+# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_2
+# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_2
+# 			}
+# 			knight_army_modifier = { elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_2 }
+# 		}
+# 		1500 = {
+# 			liege_modifier = {
+# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_3
+# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_3
+# 			}
+# 			knight_army_modifier = {
+# 				elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_3
+# 				elephant_cavalry_toughness_mult = @elephantry_attr_eleph_tough_3
+# 			}
+# 			men_at_arms = { accolade_maa_elephantiers }
+# 		}
+# 		2100 = {
+# 			liege_modifier = {
+# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_3
+# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_3
+# 			}
+# 			knight_army_modifier = {
+# 				elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_3
+# 				elephant_cavalry_toughness_mult = @elephantry_attr_eleph_tough_3
+# 			}
+# 		}
+# 	}
+# }
 
 # Horse Archers/Archer
 horse_archer_attribute = {
@@ -2201,8 +2238,10 @@ horse_archer_attribute = {
 					limit = {
 						root.culture ?= {
 							OR = {
-								has_cultural_pillar = heritage_mongolic
-								has_cultural_pillar = heritage_turkic
+								#L5R Modified
+								has_cultural_pillar = heritage_unicorn
+								# has_cultural_pillar = heritage_mongolic
+								# has_cultural_pillar = heritage_turkic
 							}
 						}
 					}

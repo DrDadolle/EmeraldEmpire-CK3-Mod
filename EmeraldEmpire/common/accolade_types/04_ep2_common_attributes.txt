@@ -43,17 +43,18 @@ marauder_attribute = {
 			}
 			add = 100
 		}
-		if = {
-			limit = {
-				scope:owner ?= {
-					exists = dynasty
-					dynasty = {
-						has_dynasty_perk = fp1_pillage_legacy_3
-					}
-				}
-			}
-			add = 100
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		scope:owner ?= {
+		# 			exists = dynasty
+		# 			dynasty = {
+		# 				has_dynasty_perk = fp1_pillage_legacy_3
+		# 			}
+		# 		}
+		# 	}
+		# 	add = 100
+		# }
 		if = {
 			limit = {
 				scope:owner ?= {
@@ -283,17 +284,18 @@ idealist_attribute = {
 			}
 			add = -100
 		}
-		if = {
-			limit = {
-				scope:owner ?= {
-					exists = dynasty
-					dynasty = {
-						has_dynasty_perk = fp1_pillage_legacy_3
-					}
-				}
-			}
-			add = -100
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		scope:owner ?= {
+		# 			exists = dynasty
+		# 			dynasty = {
+		# 				has_dynasty_perk = fp1_pillage_legacy_3
+		# 			}
+		# 		}
+		# 	}
+		# 	add = -100
+		# }
 		if = {
 			limit = {
 				scope:owner ?= {
@@ -310,7 +312,8 @@ idealist_attribute = {
 					faith = {
 						OR = {
 							has_doctrine = tenet_pacifism
-							has_doctrine = tenet_dharmic_pacifism
+							#L5R Disabled
+							# has_doctrine = tenet_dharmic_pacifism
 							has_doctrine = tenet_natural_primitivism
 						}
 					}
@@ -323,7 +326,8 @@ idealist_attribute = {
 				faith = {
 					OR = {
 						has_doctrine = tenet_pacifism
-						has_doctrine = tenet_dharmic_pacifism
+						#L5R Disabled
+						# has_doctrine = tenet_dharmic_pacifism
 						has_doctrine = tenet_natural_primitivism
 					}
 				}
@@ -1173,7 +1177,8 @@ fanatic_attribute = {
 						OR = {
 							has_cultural_tradition = tradition_xenophilic
 							has_cultural_tradition = tradition_religion_blending
-							has_cultural_tradition = tradition_steppe_tolerance
+							#L5R Disabled
+							# has_cultural_tradition = tradition_steppe_tolerance
 						}
 					}
 				}
@@ -1211,7 +1216,8 @@ fanatic_attribute = {
 						OR = {
 							has_doctrine = tenet_pursuit_of_power
 							has_doctrine = tenet_unrelenting_faith
-							has_doctrine = tenet_struggle_submission
+							#L5R Disabled
+							# has_doctrine = tenet_struggle_submission
 							has_doctrine = tenet_warmonger
 						}
 					}
@@ -1225,7 +1231,8 @@ fanatic_attribute = {
 					faith = {
 						OR = {
 							has_doctrine = tenet_pacifism
-							has_doctrine = tenet_dharmic_pacifism	
+							#L5R Disabled
+							# has_doctrine = tenet_dharmic_pacifism	
 						}
 					}
 				}
@@ -1238,7 +1245,8 @@ fanatic_attribute = {
 					OR = {
 						has_cultural_tradition = tradition_xenophilic
 						has_cultural_tradition = tradition_religion_blending
-						has_cultural_tradition = tradition_steppe_tolerance
+						#L5R Disabled
+						# has_cultural_tradition = tradition_steppe_tolerance
 					}
 				}
 			}
@@ -1408,7 +1416,8 @@ valiant_attribute = {
 					dynasty = {
 						OR = {
 							has_dynasty_perk = warfare_legacy_3
-							has_dynasty_perk = fp1_adventure_legacy_3
+							#L5R Disabled
+							# has_dynasty_perk = fp1_adventure_legacy_3
 						}
 					}
 				}
