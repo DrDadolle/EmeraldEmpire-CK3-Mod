@@ -1,0 +1,119 @@
+﻿#######################
+### Ujik
+#######################
+
+# Standard basic Ujik
+#L5R TODO later add more custom ujik cultures
+ujik = { 
+	color = { 0.64 0.36 0.59 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bellicose
+	heritage = heritage_ujik
+	language = language_ujik
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_breeder
+		tradition_quarrelsome
+		tradition_polygamous
+		tradition_horse_lords
+	}
+   
+	#L5R TODO Update list name
+	name_list = name_list_crane_family
+	
+	#L5R TODO Update coa GFX
+	coa_gfx = { unicorn_group_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+#######################
+### Yobanjin
+#######################
+#Woolen Hooves (Standard Yobanjin) /  horse archery traditions, clash with badger / Unicorn clan
+woolen_hooves = {
+	color = { 0.5 0.5 0.2 } # The color of the culture, used e.g. on the map
+
+	ethos = ethos_stoic
+	heritage = heritage_yobanjin
+	language = language_yobanjin
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_mountaineers
+		tradition_pastoralists
+		tradition_horse_lords
+		tradition_polygamous
+	}
+   
+	#L5R TODO Update list name
+	name_list = name_list_crane_family
+	
+	#L5R TODO Update coa GFX
+	coa_gfx = { unicorn_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+laughing_mountains = { #They live in Spine of the World mountains technically...
+	color = { 0.9 0.4 0.2 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_yobanjin
+	language = language_yobanjin
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_mountain_homes
+		tradition_isolationist
+		tradition_hard_working
+	}
+   
+	#L5R TODO Update list name
+	name_list = name_list_crane_family
+	
+	#L5R TODO Update coa GFX
+	coa_gfx = { unicorn_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+#Hyōketsu (Old Kaito)
+hyoketsu = {
+	color = { 0.82 0.41 0.12 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_spiritual
+	heritage = heritage_yobanjin
+	language = language_yobanjin
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_mountain_homes
+		tradition_mountaineers
+		tradition_longbow_competitions
+	}
+   
+	#L5R TODO Update list name
+	name_list = name_list_crane_family
+	
+	#L5R TODO Update coa GFX
+	coa_gfx = { phoenix_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { phoenix_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+

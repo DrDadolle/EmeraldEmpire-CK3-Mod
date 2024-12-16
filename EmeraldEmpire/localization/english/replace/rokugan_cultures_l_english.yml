@@ -11,7 +11,9 @@
  mongol_unit_gfx:0 "Unicorn"
  chinese_building_gfx:0 "Old Rokugani"
  japanese_building_gfx:0 "Rokugani"
- #Crab
+ ##########
+ # Crab
+ ##########
  heritage_crab_name:0 "Crab"
  heritage_crab_collective_noun:0 "Crabs"
  crab_group_coa_gfx:0 "Crab"
@@ -40,7 +42,9 @@
  kaiu_prefix:0 "Kaiu"
  kaiu_desc:0 "#size:15    todo some blabla about the kaiu culture.#"
 
- #Crane
+ ##########
+ # Crane
+ ##########
  culture_parameter_white_hair_valued:0 "[traits|E] such as [GetTrait('natural_white_hair').GetName( GetNullCharacter )] or [GetTrait('bleached_white_hair').GetName( GetNullCharacter )] are seen as [prestige_i][prestigious|E]"
  heritage_crane_name:0 "Crane"
  heritage_crane_collective_noun:0 "Cranes"
@@ -70,7 +74,9 @@
  yasuki_crane_prefix:0 "Yasuki"
  yasuki_crane_desc:0 "#size:15    todo some blabla about the Yasuki culture.#"
 
- #Lion
+ ##########
+ # Lion
+ ##########
  heritage_lion_name:0 "Lion"
  heritage_lion_collective_noun:0 "Lions"
  lion_group_coa_gfx:0 "Lion"
@@ -94,7 +100,9 @@
  ikoma_prefix:0 "Ikoma"
  ikoma_desc:0 "#size:15    todo some blabla about the ikoma culture.#"
 
- #Phoenix
+ ##########
+ # Phoenix
+ ##########
  heritage_phoenix_name:0 "Phoenix"
  heritage_phoenix_collective_noun:0 "Phoenixes"
  phoenix_group_coa_gfx:0 "Phoenix"
@@ -118,7 +126,9 @@
  kaito_prefix:0 "Kaito"
  kaito_desc:0 "#size:15    todo some blabla about the kaito culture.#"
 
- #Scorpion
+ ##########
+ # Scorpion
+ ##########
  heritage_scorpion_name:0 "Scorpion"
  heritage_scorpion_collective_noun:0 "Scorpions"
  scorpion_group_coa_gfx:0 "Scorpion"
@@ -142,7 +152,9 @@
  yogo_prefix:0 "Yogo"
  yogo_desc:0 "#size:15    todo some blabla about the yogo culture.#"
 
- #Dragon
+ ##########
+ # Dragon
+ ##########
  culture_parameter_tattoo_valued:0 "[traits|E] such as [GetTrait('avalanche_tattoo').GetName( GetNullCharacter )] or [GetTrait('cherry_blossom_tattoo').GetName( GetNullCharacter )] are seen as [prestige_i][prestigious|E] and [piety_i][pious|E]"
  heritage_dragon_name:0 "Dragon"
  heritage_dragon_collective_noun:0 "Dragons"
@@ -167,7 +179,9 @@
  agasha_prefix:0 "Agasha"
  agasha_desc:0 "#size:15    todo some blabla about the agasha culture.#"
 
- #Unicorn
+ ##########
+ # Unicorn
+ ##########
  heritage_unicorn_name:0 "Unicorn"
  heritage_unicorn_collective_noun:0 "Unicorns"
  unicorn_group_coa_gfx:0 "Unicorn"
@@ -196,7 +210,9 @@
  moto_prefix:0 "Moto"
  moto_desc:0 "#size:15    todo some blabla about the moto culture.#"
 
- #Imperial
+ ##########
+ # Imperial
+ ##########
  heritage_imperial_name:0 "Imperial"
  heritage_imperial_collective_noun:0 "Imperials"
  imperial_group_coa_gfx:0 "Imperial"
@@ -219,8 +235,9 @@
  seppun_collective_noun:0 "Seppun"
  seppun_prefix:0 "Seppun"
  seppun_desc:0 "#size:15    todo some blabla about the seppun culture.#"
-
- #Minor
+ ##########
+ # Minor
+ ##########
  heritage_kitsune_name:0 "Fox"
  heritage_kitsune_collective_noun:0 "Foxes"
  minor_group_coa_gfx:0 "Minor"
@@ -362,3 +379,41 @@
  unicorn_clothing_gfx:0 "Unicorn"
  imperial_clothing_gfx:0 "Imperial"
  minor_clothing_gfx:0 "Minor Clan"
+
+
+ ####################
+ # 
+ #      FOREIGN
+ #
+ ####################
+ # Language
+ language_yobanjin_name:0 "Yobanjin"
+ language_ujik_name:0 "Ujik"
+ 
+ # Heritages
+
+ heritage_yobanjin_name:0 "Yobanjin"
+ heritage_yobanjin_collective_noun:0 "Yobanjins"
+
+ woolen_hooves:0 "Woolen Hooves"
+ woolen_hooves_collective_noun:0 "Woolen Hooves"
+ woolen_hooves_prefix:0 "Woolen Hooves"
+ woolen_hooves_desc:0 "#size:15    todo some blabla about the Woolen Hooves culture.#"
+
+ laughing_mountains:0 "Laughing Mountains"
+ laughing_mountains_collective_noun:0 "Laughing Mountains"
+ laughing_mountains_prefix:0 "Laughing Mountains"
+ laughing_mountains_desc:0 "#size:15    todo some blabla about the Laughing Mountains culture.#"
+
+ hyoketsu:0 "Hyōketsu"
+ hyoketsu_collective_noun:0 "Hyōketsu"
+ hyoketsu_prefix:0 "Hyōketsu"
+ hyoketsu_desc:0 "#size:15    todo some blabla about the Hyōketsu culture.#"
+
+
+ heritage_ujik_name:0 "Ujik"
+ heritage_ujik_collective_noun:0 "Ujiks"
+ ujik:0 "Ujik"
+ ujik_collective_noun:0 "Ujiks"
+ ujik_prefix:0 "Uji-kai"
+ ujik_desc:0 "#size:15    todo some blabla about the Ujik culture.#"

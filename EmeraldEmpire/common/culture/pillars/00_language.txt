@@ -1,4 +1,7 @@
-﻿language_northern_rokugani = {
+﻿#######################
+### Rokugani
+#######################
+language_northern_rokugani = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
@@ -13,7 +16,7 @@
 		}
 	}
 	
-	color = han
+	color = rgb { 139 0 0 }
 }
 
 language_central_rokugani = {
@@ -31,7 +34,7 @@ language_central_rokugani = {
 		}
 	}
 	
-	color = han
+	color = rgb { 128 128 0 }
 }
 
 language_southern_rokugani = {
@@ -49,7 +52,7 @@ language_southern_rokugani = {
 		}
 	}
 	
-	color = han
+	color = rgb { 0 139 139 }
 }
 
 language_shinomen_rokugani = {
@@ -67,7 +70,7 @@ language_shinomen_rokugani = {
 		}
 	}
 	
-	color = han
+	color = rgb { 0 100 0 }
 }
 
 language_unicorn_rokugani = {
@@ -85,7 +88,7 @@ language_unicorn_rokugani = {
 		}
 	}
 	
-	color = han
+	color = rgb { 128 0 128 }
 }
 
 language_island_rokugani = {
@@ -103,7 +106,7 @@ language_island_rokugani = {
 		}
 	}
 	
-	color = han
+	color = rbg { 255 250 205 }
 }
 
 language_imperial_rokugani = {
@@ -120,6 +123,46 @@ language_imperial_rokugani = {
 			multiply = 10
 		}
 	}
-	
-	color = han
+	color = rgb { 0 250 154 }
 }
+#######################
+### Foreign
+#######################
+language_yobanjin = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_yobanjin
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_yobanjin }
+			multiply = 10
+		}
+	}
+	color = rgb { 210 105 30 }
+}
+
+language_ujik = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_ujik
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_ujik }
+			multiply = 10
+		}
+	}
+	color = rgb { 75 0 130 }
+}
+
+
+#######################
+### Non-Human
+#######################

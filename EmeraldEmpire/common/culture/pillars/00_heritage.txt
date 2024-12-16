@@ -1,4 +1,7 @@
-﻿heritage_crane = {
+﻿#######################
+### Major Clans
+#######################
+heritage_crane = {
 	type = heritage
 
 	parameters = {
@@ -90,7 +93,7 @@ heritage_imperial = {
 
 #######################
 ### Minor Clans
-#############
+#######################
 heritage_kitsune = {
 	type = heritage
 	is_shown = {
@@ -265,9 +268,29 @@ heritage_kaeru = {
 
 
 #######################
-### Gaijin
-#############
+### Foreign
+#######################
+heritage_yobanjin = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_yobanjin
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_ujik = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_ujik
+		}
+	}
+	audio_parameter = european
+}
+
 
 #######################
 ### Non-Human Heritages
-#############
+#######################
