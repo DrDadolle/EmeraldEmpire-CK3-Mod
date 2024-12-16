@@ -32,7 +32,7 @@
  doctrine_parameter_is_rokugani_faith_evil_desc:0 ""
 
  special_doctrine_is_shadowlands_faith_name:0 "Veneration of Jigoku"
- special_doctrine_is_shadowlands_faith_desc:0 "Although all creatures in the [shadowlands|E]] reveres the power of [jigoku|E], they have their own way to do so. Internal strife is common among them. However, they all agree that the Rokugani faiths are meant to be destroyed, by all means necessary"
+ special_doctrine_is_shadowlands_faith_desc:0 "Although all creatures in the [shadowlands|E] reveres the power of [jigoku|E], they have their own way to do so. Internal strife is common among them. However, they all agree that the Rokugani faiths are meant to be destroyed, by all means necessary"
  doctrine_parameter_hostility_override_tenet_shadowlands_syncretism:0 "Gaijin [faiths|E] with the $tenet_shadowlands_syncretism$ tenet are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
  doctrine_parameter_is_shadowlands_faith_righteous_desc:0 ""
  doctrine_parameter_is_shadowlands_faith_astray_desc:0 ""

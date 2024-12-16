@@ -348,7 +348,8 @@ on_set_relation_friend = {
 		}
 
 		friendly_counsel_skill_gain_effect = yes
-		decentralized_rule_friends_modifier_effect = yes
+		#L5R Disabled
+		# decentralized_rule_friends_modifier_effect = yes
 		update_confidants_effect = yes
 
 		create_character_memory = {
@@ -587,7 +588,8 @@ on_remove_relation_friend = {
 				limit = { has_perk = confidants_perk }
 				remove_character_modifier = confidants_perk_modifier
 			}
-			decentralized_rule_removal_effect = yes
+			#L5R Disabled
+			# decentralized_rule_removal_effect = yes
 		}
 		create_character_memory = {
 			type = stopped_being_friends
@@ -660,7 +662,8 @@ on_death_relation_friend = {
 				limit = { has_perk = confidants_perk }
 				remove_character_modifier = confidants_perk_modifier
 			}
-			decentralized_rule_removal_effect = yes
+			#L5R Disabled
+			# decentralized_rule_removal_effect = yes
 		}
 	}
 }

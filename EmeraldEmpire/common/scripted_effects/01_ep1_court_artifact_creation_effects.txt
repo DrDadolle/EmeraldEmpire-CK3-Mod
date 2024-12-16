@@ -4639,13 +4639,15 @@ create_artifact_book_effect = {
 							exists = scope:topic
 						}
 						OR = {
-							scope:topic = flag:digest
+							#L5R Disabled
+							# scope:topic = flag:digest
 							scope:topic = flag:admin
 						}
 					}
 					trigger_else = {
 						OR = {
-							has_artifact_feature = book_topic_stewardship_digest
+							#L5R Disabled
+							# has_artifact_feature = book_topic_stewardship_digest
 							has_artifact_feature = book_topic_stewardship_admin
 						}
 					}
@@ -4881,67 +4883,69 @@ create_artifact_book_effect = {
 				}
 				add_artifact_modifier = artifact_monthly_tyranny_2_modifier
 			}
-			else_if = {
-				limit = {
-					trigger_if = {
-						limit = {
-							exists = scope:topic
-						}
-						OR = {
-							scope:topic = flag:kalila
-							scope:topic = flag:hitopadesa
-							scope:topic = flag:speculum
-						}
-					}
-					trigger_else = {
-						OR = {
-							has_artifact_feature = book_topic_diplomacy_kalila
-							has_artifact_feature = book_topic_diplomacy_hitopadesa
-							has_artifact_feature = book_topic_stewardship_speculum
-						}
-					}
-				}
-				add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_1_modifier
-				add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_1_modifier 
-			}
-			else_if = {
-				limit = {
-					trigger_if = {
-						limit = {
-							exists = scope:topic
-						}
-						scope:topic = flag:cicero
-					}
-					trigger_else = {
-						has_artifact_feature = book_topic_diplomacy_cicero
-					}
-				}
-				if = {
-					limit = {
-						rarity = illustrious
-					}
-					add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_4_modifier
-				}
-				else_if = {
-					limit = {
-						rarity = famed
-					}
-					add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_3_modifier
-				}
-				else_if = {
-					limit = {
-						rarity = masterwork
-					}
-					add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_2_modifier
-				} 
-				else_if = {
-					limit = {
-						rarity = common
-					}
-					add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_1_modifier
-				}
-				add_artifact_modifier = artifact_diplomacy_1_modifier
-			}
+			#L5R Disabled
+			# else_if = {
+			# 	limit = {
+			# 		trigger_if = {
+			# 			limit = {
+			# 				exists = scope:topic
+			# 			}
+			# 			OR = {
+			# 				scope:topic = flag:kalila
+			# 				scope:topic = flag:hitopadesa
+			# 				scope:topic = flag:speculum
+			# 			}
+			# 		}
+			# 		trigger_else = {
+			# 			OR = {
+			# 				has_artifact_feature = book_topic_diplomacy_kalila
+			# 				has_artifact_feature = book_topic_diplomacy_hitopadesa
+			# 				has_artifact_feature = book_topic_stewardship_speculum
+			# 			}
+			# 		}
+			# 	}
+			# 	add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_1_modifier
+			# 	add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_1_modifier 
+			# }
+			#L5R Disabled
+			# else_if = {
+			# 	limit = {
+			# 		trigger_if = {
+			# 			limit = {
+			# 				exists = scope:topic
+			# 			}
+			# 			scope:topic = flag:cicero
+			# 		}
+			# 		trigger_else = {
+			# 			has_artifact_feature = book_topic_diplomacy_cicero
+			# 		}
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			rarity = illustrious
+			# 		}
+			# 		add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_4_modifier
+			# 	}
+			# 	else_if = {
+			# 		limit = {
+			# 			rarity = famed
+			# 		}
+			# 		add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_3_modifier
+			# 	}
+			# 	else_if = {
+			# 		limit = {
+			# 			rarity = masterwork
+			# 		}
+			# 		add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_2_modifier
+			# 	} 
+			# 	else_if = {
+			# 		limit = {
+			# 			rarity = common
+			# 		}
+			# 		add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_1_modifier
+			# 	}
+			# 	add_artifact_modifier = artifact_diplomacy_1_modifier
+			# }
 			else_if = {
 				limit = {
 					trigger_if = {
@@ -5288,52 +5292,53 @@ create_artifact_book_effect = {
 					add_artifact_modifier = artifact_monthly_piety_gain_mult_2_modifier
 				}
 			}
-			else_if = {
-				limit = {
-					trigger_if = {
-						limit = {
-							exists = scope:topic
-						}
-						OR = {
-							scope:topic = flag:iliad
-							scope:topic = flag:mahabharata
-							scope:topic = flag:mufaddaliyat
-						}
-					}
-					trigger_else = {
-						OR = {
-							has_artifact_feature = book_topic_learning_iliad
-							has_artifact_feature = book_topic_learning_mahabharata
-							has_artifact_feature = book_topic_learning_mufaddaliyat
-						}
-					}
-				}
-				add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_1_modifier
-				if = {
-					limit = {
-						rarity = illustrious
-					}
-					add_artifact_modifier = artifact_monthly_tyranny_7_modifier
-				}
-				else_if = {
-					limit = {
-						rarity = famed
-					}
-					add_artifact_modifier = artifact_monthly_tyranny_5_modifier
-				}
-				else_if = {
-					limit = {
-						rarity = masterwork
-					}
-					add_artifact_modifier = artifact_monthly_tyranny_3_modifier
-				} 
-				else_if = {
-					limit = {
-						rarity = common
-					}
-					add_artifact_modifier = artifact_monthly_tyranny_1_modifier
-				}
-			}
+			#L5R Disabled
+			# else_if = {
+			# 	limit = {
+			# 		trigger_if = {
+			# 			limit = {
+			# 				exists = scope:topic
+			# 			}
+			# 			OR = {
+			# 				scope:topic = flag:iliad
+			# 				scope:topic = flag:mahabharata
+			# 				scope:topic = flag:mufaddaliyat
+			# 			}
+			# 		}
+			# 		trigger_else = {
+			# 			OR = {
+			# 				has_artifact_feature = book_topic_learning_iliad
+			# 				has_artifact_feature = book_topic_learning_mahabharata
+			# 				has_artifact_feature = book_topic_learning_mufaddaliyat
+			# 			}
+			# 		}
+			# 	}
+			# 	add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_1_modifier
+			# 	if = {
+			# 		limit = {
+			# 			rarity = illustrious
+			# 		}
+			# 		add_artifact_modifier = artifact_monthly_tyranny_7_modifier
+			# 	}
+			# 	else_if = {
+			# 		limit = {
+			# 			rarity = famed
+			# 		}
+			# 		add_artifact_modifier = artifact_monthly_tyranny_5_modifier
+			# 	}
+			# 	else_if = {
+			# 		limit = {
+			# 			rarity = masterwork
+			# 		}
+			# 		add_artifact_modifier = artifact_monthly_tyranny_3_modifier
+			# 	} 
+			# 	else_if = {
+			# 		limit = {
+			# 			rarity = common
+			# 		}
+			# 		add_artifact_modifier = artifact_monthly_tyranny_1_modifier
+			# 	}
+			# }
 			else_if = {
 				limit = {
 					trigger_if = {
