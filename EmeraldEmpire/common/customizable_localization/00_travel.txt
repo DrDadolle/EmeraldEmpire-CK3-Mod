@@ -2600,12 +2600,13 @@ GetSpecialBuildingSong = {
 		}
 		trigger = {
 			has_building_with_flag = travel_point_of_interest_economic
-			NOR = {
-				has_building = doges_palace_01
-				has_building = iron_pillar_of_dhar_01
-				has_building = petra_01
-				has_building = fairy_chimneys
-			}
+			#L5R Disabled
+			# NOR = {
+			# 	has_building = doges_palace_01
+			# 	has_building = iron_pillar_of_dhar_01
+			# 	has_building = petra_01
+			# 	has_building = fairy_chimneys
+			# }
 		}
 		localization_key = event_song_mines_01
 	}
@@ -2648,7 +2649,8 @@ GetSpecialBuildingSong = {
 				has_building_with_flag = travel_point_of_interest_martial
 				has_building_with_flag = travel_point_of_interest_martial_minor
 			}
-			NOT = { has_building = the_colosseum_01 }
+			#L5R Disabled
+			# NOT = { has_building = the_colosseum_01 }
 		}
 		localization_key = event_song_martial_01
 	}
@@ -2661,7 +2663,8 @@ GetSpecialBuildingSong = {
 				has_building_with_flag = travel_point_of_interest_martial
 				has_building_with_flag = travel_point_of_interest_martial_minor
 			}
-			NOT = { has_building = the_colosseum_01 }
+			#L5R Disabled
+			# NOT = { has_building = the_colosseum_01 }
 		}
 		localization_key = event_song_martial_02
 	}
@@ -2674,7 +2677,8 @@ GetSpecialBuildingSong = {
 				has_building_with_flag = travel_point_of_interest_martial
 				has_building_with_flag = travel_point_of_interest_martial_minor
 			}
-			NOT = { has_building = the_colosseum_01 }
+			#L5R Disabled
+			# NOT = { has_building = the_colosseum_01 }
 		}
 		localization_key = event_song_martial_03
 	}

@@ -1450,10 +1450,11 @@ crossbowmen_attribute = {
 							type = crossbowmen
 							value >= 1
 						}
-						number_maa_regiments_of_type = {
-							type = chu_ko_nu
-							value >= 1
-						}
+						#L5R Disabled
+						# number_maa_regiments_of_type = {
+						# 	type = chu_ko_nu
+						# 	value >= 1
+						# }
 						number_maa_regiments_of_type = {
 							type = accolade_maa_crossbowers
 							value >= 1
@@ -1473,10 +1474,11 @@ crossbowmen_attribute = {
 								type = crossbowmen
 								value >= @number_maa_regiments_increment_1
 							}
-							number_maa_regiments_of_type = {
-								type = chu_ko_nu
-								value >= @number_maa_regiments_increment_1
-							}
+							#L5R Disabled
+							# number_maa_regiments_of_type = {
+							# 	type = chu_ko_nu
+							# 	value >= @number_maa_regiments_increment_1
+							# }
 							number_maa_regiments_of_type = {
 								type = accolade_maa_crossbowers
 								value >= @number_maa_regiments_increment_1
@@ -1493,10 +1495,11 @@ crossbowmen_attribute = {
 								type = crossbowmen
 								value >= @number_maa_regiments_increment_2
 							}
-							number_maa_regiments_of_type = {
-								type = chu_ko_nu
-								value >= @number_maa_regiments_increment_2
-							}
+							#L5R Disabled
+							# number_maa_regiments_of_type = {
+							# 	type = chu_ko_nu
+							# 	value >= @number_maa_regiments_increment_2
+							# }
 							number_maa_regiments_of_type = {
 								type = accolade_maa_crossbowers
 								value >= @number_maa_regiments_increment_2
@@ -1513,10 +1516,11 @@ crossbowmen_attribute = {
 								type = crossbowmen
 								value >= @number_maa_regiments_increment_3
 							}
-							number_maa_regiments_of_type = {
-								type = chu_ko_nu
-								value >= @number_maa_regiments_increment_3
-							}
+							#L5R Disabled
+							# number_maa_regiments_of_type = {
+							# 	type = chu_ko_nu
+							# 	value >= @number_maa_regiments_increment_3
+							# }
 							number_maa_regiments_of_type = {
 								type = accolade_maa_crossbowers
 								value >= @number_maa_regiments_increment_3
@@ -1533,10 +1537,11 @@ crossbowmen_attribute = {
 								type = crossbowmen
 								value >= @number_maa_regiments_increment_4
 							}
-							number_maa_regiments_of_type = {
-								type = chu_ko_nu
-								value >= @number_maa_regiments_increment_4
-							}
+							#L5R Disabled
+							# number_maa_regiments_of_type = {
+							# 	type = chu_ko_nu
+							# 	value >= @number_maa_regiments_increment_4
+							# }
 							number_maa_regiments_of_type = {
 								type = accolade_maa_crossbowers
 								value >= @number_maa_regiments_increment_4

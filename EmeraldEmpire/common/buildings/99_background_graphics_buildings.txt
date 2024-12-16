@@ -15,9 +15,10 @@ walls_00 = {
 				is_county_capital = no
 				fort_level < 1
 			}
+			#L5R Disabled
 			# Using the no_wall holding graphics for cities with special walls so that they don't have double walls
-			has_building_or_higher = "city_wall_of_toledo_01"
-			has_building_or_higher = "roman_wall_of_lugo_01"
+			# has_building_or_higher = "city_wall_of_toledo_01"
+			# has_building_or_higher = "roman_wall_of_lugo_01"
 		}
 	}
 }
@@ -45,12 +46,13 @@ walls_01_tribal = {
 			has_building_or_higher = "hill_forts_01"
 			has_building_or_higher = "ramparts_01"
 			has_building_or_higher = "watchtowers_01"
-			has_building_or_higher = "theodosian_walls_01"
-			has_building_or_higher = "walls_of_benin_01"
-			has_building_or_higher = "walls_of_genoa_01"
-			has_building_or_higher = "aurelian_walls_01"
-			has_building_or_higher = "city_wall_of_toledo_01"
-			has_building_or_higher = "roman_wall_of_lugo_01"
+			#L5R Disabled
+			# has_building_or_higher = "theodosian_walls_01"
+			# has_building_or_higher = "walls_of_benin_01"
+			# has_building_or_higher = "walls_of_genoa_01"
+			# has_building_or_higher = "aurelian_walls_01"
+			# has_building_or_higher = "city_wall_of_toledo_01"
+			# has_building_or_higher = "roman_wall_of_lugo_01"
 		}
 	}
 }
