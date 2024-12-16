@@ -1184,12 +1184,12 @@ debug.322 = {
 		set_variable = { name = book_artifact_topic value = flag:duels days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:diplomacy_court_politics days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:diplomacy_court_alliances days = 1 }
-		set_variable = { name = book_artifact_topic value = flag:cicero days = 1 }
+		# set_variable = { name = book_artifact_topic value = flag:cicero days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:diplomacy_art_of_feasting days = 1 }
-		set_variable = { name = book_artifact_topic value = flag:hitopadesa days = 1 }
-		set_variable = { name = book_artifact_topic value = flag:kalila days = 1 }
-		set_variable = { name = book_artifact_topic value = flag:edda days = 1 }
-		set_variable = { name = book_artifact_topic value = flag:orkneyinga days = 1 }
+		# set_variable = { name = book_artifact_topic value = flag:hitopadesa days = 1 }
+		# set_variable = { name = book_artifact_topic value = flag:kalila days = 1 }
+		# set_variable = { name = book_artifact_topic value = flag:edda days = 1 }
+		# set_variable = { name = book_artifact_topic value = flag:orkneyinga days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:jokes days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:learning_theological_treaties days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:learning_metaphysical_conundrums days = 1 }
@@ -1198,9 +1198,9 @@ debug.322 = {
 		set_variable = { name = book_artifact_topic value = flag:learning_tome_collections days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:prayers days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:hours days = 1 }
-		set_variable = { name = book_artifact_topic value = flag:iliad days = 1 }
-		set_variable = { name = book_artifact_topic value = flag:mahabharata days = 1 }
-		set_variable = { name = book_artifact_topic value = flag:mufaddaliyat days = 1 }
+		# set_variable = { name = book_artifact_topic value = flag:iliad days = 1 }
+		# set_variable = { name = book_artifact_topic value = flag:mahabharata days = 1 }
+		# set_variable = { name = book_artifact_topic value = flag:mufaddaliyat days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:stewardship_trade_routes days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:stewardship_lawmaking days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:stewardship_best_practices_tax_collectors days = 1 }

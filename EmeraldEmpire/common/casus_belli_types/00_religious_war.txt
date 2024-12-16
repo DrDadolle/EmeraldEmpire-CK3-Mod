@@ -340,14 +340,15 @@
 			scope:attacker = {
 				add_piety_experience = {
 					add = religious_cb_piety_gain_county
-					if = {
-						limit = {
-							scope:attacker.faith = {
-								has_doctrine_parameter = bonus_holy_war_piety_active
-							}
-						}
-						multiply = 1.5
-					}
+					#L5R Disabled
+					# if = {
+					# 	limit = {
+					# 		scope:attacker.faith = {
+					# 			has_doctrine_parameter = bonus_holy_war_piety_active
+					# 		}
+					# 	}
+					# 	multiply = 1.5
+					# }
 				}
 			}
 		}
@@ -460,14 +461,15 @@
 			scope:defender = {
 				add_piety = {
 					add = religious_cb_piety_gain_county
-					if = {
-						limit = {
-							scope:defender.faith = {
-								has_doctrine_parameter = bonus_holy_war_piety_active
-							}
-						}
-						multiply = 1.5
-					}
+					#L5R Disabled
+					# if = {
+					# 	limit = {
+					# 		scope:defender.faith = {
+					# 			has_doctrine_parameter = bonus_holy_war_piety_active
+					# 		}
+					# 	}
+					# 	multiply = 1.5
+					# }
 				}
 			}
 
@@ -887,14 +889,15 @@ religious_war = {
 				scope:attacker = {
 				add_piety_experience = {
 					add = religious_cb_piety_gain_duchy
-					if = {
-						limit = {
-							scope:attacker.faith = {
-								has_doctrine_parameter = bonus_holy_war_piety_active
-							}
-						}
-						multiply = 1.5
-					}
+					#L5R Disabled
+					# if = {
+					# 	limit = {
+					# 		scope:attacker.faith = {
+					# 			has_doctrine_parameter = bonus_holy_war_piety_active
+					# 		}
+					# 	}
+					# 	multiply = 1.5
+					# }
 				}
 			}
 		}
@@ -999,14 +1002,15 @@ religious_war = {
 			scope:defender = {
 				add_piety = {
 					add = religious_cb_piety_gain_duchy
-					if = {
-						limit = {
-							scope:defender.faith = {
-								has_doctrine_parameter = bonus_holy_war_piety_active
-							}
-						}
-						multiply = 1.5
-					}
+					#L5R Disabled
+					# if = {
+					# 	limit = {
+					# 		scope:defender.faith = {
+					# 			has_doctrine_parameter = bonus_holy_war_piety_active
+					# 		}
+					# 	}
+					# 	multiply = 1.5
+					# }
 				}
 			}
 
@@ -1477,14 +1481,15 @@ major_religious_war = {
 				scope:attacker = {
 				add_piety_experience = {
 					add = religious_cb_piety_gain_kingdom
-					if = {
-						limit = {
-							scope:attacker.faith = {
-								has_doctrine_parameter = bonus_holy_war_piety_active
-							}
-						}
-						multiply = 1.5
-					}
+					#L5R Disabled
+					# if = {
+					# 	limit = {
+					# 		scope:attacker.faith = {
+					# 			has_doctrine_parameter = bonus_holy_war_piety_active
+					# 		}
+					# 	}
+					# 	multiply = 1.5
+					# }
 				}
 			}
 		}
@@ -1590,14 +1595,15 @@ major_religious_war = {
 			scope:defender = {
 				add_piety = {
 					add = religious_cb_piety_gain_kingdom
-					if = {
-						limit = {
-							scope:defender.faith = {
-								has_doctrine_parameter = bonus_holy_war_piety_active
-							}
-						}
-						multiply = 1.5
-					}
+					#L5R Disabled
+					# if = {
+					# 	limit = {
+					# 		scope:defender.faith = {
+					# 			has_doctrine_parameter = bonus_holy_war_piety_active
+					# 		}
+					# 	}
+					# 	multiply = 1.5
+					# }
 				}
 			}
 

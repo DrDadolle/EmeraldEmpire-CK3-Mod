@@ -4714,50 +4714,51 @@ create_artifact_book_effect = {
 					add_artifact_modifier = artifact_build_time_1_modifier
 				}
 			}
-			else_if = {
-				limit = {
-					trigger_if = {
-						limit = {
-							exists = scope:topic
-						}
-						OR = {
-							scope:topic = flag:edda
-							scope:topic = flag:orkneyinga
-						}
-					}
-					trigger_else = {
-						OR = {
-							has_artifact_feature = book_topic_diplomacy_edda
-							has_artifact_feature = book_topic_diplomacy_orkneyinga
-						}
-					}
-				}
-				add_artifact_modifier = artifact_monthly_martial_lifestyle_xp_1_modifier
-				if = {
-					limit = {
-						rarity = illustrious
-					}
-					add_artifact_modifier = artifact_raid_speed_8_modifier
-				}
-				else_if = {
-					limit = {
-						rarity = famed
-					}
-					add_artifact_modifier = artifact_raid_speed_6_modifier
-				}
-				else_if = {
-					limit = {
-						rarity = masterwork
-					}
-					add_artifact_modifier = artifact_raid_speed_4_modifier
-				} 
-				else_if = {
-					limit = {
-						rarity = common
-					}
-					add_artifact_modifier = artifact_raid_speed_2_modifier
-				}
-			}
+			#L5R Disabled
+			# else_if = {
+			# 	limit = {
+			# 		trigger_if = {
+			# 			limit = {
+			# 				exists = scope:topic
+			# 			}
+			# 			OR = {
+			# 				scope:topic = flag:edda
+			# 				scope:topic = flag:orkneyinga
+			# 			}
+			# 		}
+			# 		trigger_else = {
+			# 			OR = {
+			# 				has_artifact_feature = book_topic_diplomacy_edda
+			# 				has_artifact_feature = book_topic_diplomacy_orkneyinga
+			# 			}
+			# 		}
+			# 	}
+			# 	add_artifact_modifier = artifact_monthly_martial_lifestyle_xp_1_modifier
+			# 	if = {
+			# 		limit = {
+			# 			rarity = illustrious
+			# 		}
+			# 		add_artifact_modifier = artifact_raid_speed_8_modifier
+			# 	}
+			# 	else_if = {
+			# 		limit = {
+			# 			rarity = famed
+			# 		}
+			# 		add_artifact_modifier = artifact_raid_speed_6_modifier
+			# 	}
+			# 	else_if = {
+			# 		limit = {
+			# 			rarity = masterwork
+			# 		}
+			# 		add_artifact_modifier = artifact_raid_speed_4_modifier
+			# 	} 
+			# 	else_if = {
+			# 		limit = {
+			# 			rarity = common
+			# 		}
+			# 		add_artifact_modifier = artifact_raid_speed_2_modifier
+			# 	}
+			# }
 			else_if = {
 				limit = {
 					trigger_if = {
