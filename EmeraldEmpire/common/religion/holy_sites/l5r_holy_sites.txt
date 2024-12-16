@@ -155,7 +155,6 @@ field_of_the_morning_sun = {
 }
 
 sunset_monastery = {
-
 	county = c_west_shinomen_monastery_4
 	barony = b_west_shinomen_monastery_4
 
@@ -164,7 +163,18 @@ sunset_monastery = {
 		learning = 1
 		monthly_piety = 0.3
 	}
+}
 
+#################
+# hyoketsu_seven_fortunes
+sanpuku_seido = {
+	county = c_garanto_province
+	barony = b_sanpuku_seido
+
+	character_modifier = {
+		name = sanpuku_seido_effect_name
+		different_faith_liege_opinion = 10
+	}
 }
 
 #################

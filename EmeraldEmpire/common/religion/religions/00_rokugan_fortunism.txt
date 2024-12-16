@@ -232,6 +232,7 @@
 	##TODO icon are placeholders
 	##TODO doctrines are placeholders too
 	faiths = {
+		# Pray the seven fortunes !
 		seven_fortunes = {
 			color = { 0.2 0.9 0.2 }
 			icon = seven_fortunes
@@ -257,6 +258,7 @@
 
 			doctrine = doctrine_clerical_succession_temporal_appointment
 		}
+		# Amaterasu centric cult
 		cult_amaterasu = {
 			color = { 0.9 1.0 0.0 }
 			icon = zunist
@@ -275,6 +277,7 @@
 
 			doctrine = doctrine_clerical_succession_temporal_appointment
 		}
+		# Onotangu centric, a bit evil though
 		cult_onotangu = {
 			color = { 0.45 0.66 0.76 } #Moonstone blue
 			icon = sedism
@@ -290,6 +293,30 @@
 
 
 			doctrine = doctrine_clerical_succession_temporal_appointment
+		}
+		# Yobajin faith, adjacent to fortunism
+		# for hyoketsu people
+		hyoketsu_seven_fortunes = {
+			color = { 0.75 0.56 0.66 }
+			icon = siberian
+			reformed_icon = siberian_reformed
+
+			#No religious head
+
+			holy_site=amaterasu_temple 
+			holy_site=sanpuku_seido
+			holy_site=shinsei_and_sumai_mura
+
+			# Tenets 
+			doctrine = tenet_bhakti
+			doctrine = tenet_astrology
+			doctrine = tenet_sanctity_of_nature
+
+			#Doctrines
+			doctrine = unreformed_faith_doctrine
+			doctrine = doctrine_clerical_succession_temporal_appointment
+
+
 		}
 	}
 }
