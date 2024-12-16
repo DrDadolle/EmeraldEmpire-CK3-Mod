@@ -180,35 +180,36 @@
         }
     }
 
-    ep1_jester = {
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = clothes
-                template = ep1_jester_clothes
-                range = { 0 1 } # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = -100
-            modifier = {
-                add = 1000
-                has_court_position = court_jester_court_position
-            }
-            modifier = {
-                factor = 0
-                OR = {
-                    is_adult = no
-                    should_be_naked_trigger = yes
-                }
-            }           
-            modifier = {
-                factor = 0
-                portrait_rokugani_clothing_trigger = yes
+    #L5R Disabled
+    # ep1_jester = {
+    #     dna_modifiers = {
+    #         accessory = {
+    #             mode = add
+    #             gene = clothes
+    #             template = ep1_jester_clothes
+    #             range = { 0 1 } # For the randomness to work correctly
+    #         }
+    #     }   
+    #     weight = {
+    #         base = -100
+    #         modifier = {
+    #             add = 1000
+    #             has_court_position = court_jester_court_position
+    #         }
+    #         modifier = {
+    #             factor = 0
+    #             OR = {
+    #                 is_adult = no
+    #                 should_be_naked_trigger = yes
+    #             }
+    #         }           
+    #         modifier = {
+    #             factor = 0
+    #             portrait_rokugani_clothing_trigger = yes
 
-            }           
-        }
-    }
+    #         }           
+    #     }
+    # }
 
     # Hajj / Ihram
     ep2_religious_muslim_hajj_clothes = {

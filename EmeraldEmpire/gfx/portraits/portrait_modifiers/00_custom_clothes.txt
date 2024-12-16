@@ -879,10 +879,11 @@ add_accessory_modifiers = {
 		template = religious_steppe_high_clothes
 	}
 	
-	add_accessory_modifiers = {
-		gene = clothes
-		template = ep1_jester_clothes
-	}
+	#L5R Disabled
+	# add_accessory_modifiers = {
+	# 	gene = clothes
+	# 	template = ep1_jester_clothes
+	# }
 
 	#add_accessory_modifiers = {
 	#	gene = hairstyles

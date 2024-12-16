@@ -368,37 +368,37 @@
 		}
 	}
 
+	#L5R Disabled
+	# ep1_jester_legwear = {
 
-	ep1_jester_legwear = {
-
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = legwear
-				template = ep1_jester_legwear
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}	
-		weight = {
-			base = -100
-			modifier = {
-				add = 1000
-				is_male = yes
-				has_court_position = court_jester_court_position
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					is_adult = no
-					should_be_naked_trigger = yes
-				}
-			}			
-			modifier = {
-				factor = 0
-				portrait_rokugani_clothing_trigger = yes
-			}			
-		}
-	}
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = legwear
+	# 			template = ep1_jester_legwear
+	# 			range = { 0 1 } # For the randomness to work correctly
+	# 		}
+	# 	}	
+	# 	weight = {
+	# 		base = -100
+	# 		modifier = {
+	# 			add = 1000
+	# 			is_male = yes
+	# 			has_court_position = court_jester_court_position
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				is_adult = no
+	# 				should_be_naked_trigger = yes
+	# 			}
+	# 		}			
+	# 		modifier = {
+	# 			factor = 0
+	# 			portrait_rokugani_clothing_trigger = yes
+	# 		}			
+	# 	}
+	# }
 
 
 	#####################

@@ -60,36 +60,37 @@
 		}
 	}
 
-	jester_headgear = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
+	#L5R Disabled
+	# jester_headgear = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
 
-				gene = headgear
-				template = ep1_jester
-				range = { 0 1 }
-			}
-		}
-		outfit_tags = { jester_outfit }
-		weight = {
-			base = -100
-			modifier = {
-				add = 1000
-				OR = {
-					portrait_jester_trigger = { CULTURE_INPUT = western }
-					portrait_jester_trigger = { CULTURE_INPUT = byzantine }
-					portrait_jester_trigger = { CULTURE_INPUT = northern }
-				}				
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					is_adult = no
-					should_be_naked_trigger = yes
-				}
-			}
-		}
-	}
+	# 			gene = headgear
+	# 			template = ep1_jester
+	# 			range = { 0 1 }
+	# 		}
+	# 	}
+	# 	outfit_tags = { jester_outfit }
+	# 	weight = {
+	# 		base = -100
+	# 		modifier = {
+	# 			add = 1000
+	# 			OR = {
+	# 				portrait_jester_trigger = { CULTURE_INPUT = western }
+	# 				portrait_jester_trigger = { CULTURE_INPUT = byzantine }
+	# 				portrait_jester_trigger = { CULTURE_INPUT = northern }
+	# 			}				
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				is_adult = no
+	# 				should_be_naked_trigger = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
 	
 	#L5R Disabled
 	# hajj_headgear = {
