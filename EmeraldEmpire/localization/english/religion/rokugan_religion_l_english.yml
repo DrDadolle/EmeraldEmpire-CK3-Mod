@@ -45,6 +45,8 @@
  tenet_rokugani_syncretism_desc:0 "There is something to be learned from the way the different rokugani religions tolerate each other. They may not follow the true faith, but that does not make them evil."
  doctrine_parameter_hostility_override_tenet_rejection_of_the_kami:1 "Rokugani [faiths|E] with the tenet $tenet_rejection_of_the_kami_name$ are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_special_doctrine_is_rokugani_faith:1 "Rokugani [faiths|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_rokugan_syncretic_actor_opinion_active:0 ""
+ doctrine_parameter_opinion_of_rokugan_syncretic_recipient_opinion_active:0 ""
  
  tenet_rejection_of_the_kami_name:0 "Rejection of the Kami"
  tenet_rejection_of_the_kami_desc:0 "Workshiping the Fortunes or the Ancestors are not the way to salvation. Only workshiping the teachings of the Little Teacher are."
