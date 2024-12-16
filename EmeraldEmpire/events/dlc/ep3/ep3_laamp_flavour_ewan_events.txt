@@ -7382,14 +7382,13 @@ ep3_laamp_flavour_ewan.1081 = {
 scripted_trigger ep3_laamp_flavour_ewan_1091_valid_child_trigger = {
 	ep3_laamp_flavour_ewan_available_child_trigger = yes
 	NOT = { has_character_flag = taught_to_ride }
-	#L5R Disabled
 	# If you have Horse Lords, this _has_ to be taught much earlier.
-	# trigger_if = {
-	# 	limit = {
-	# 		root.culture = { has_cultural_parameter = unlock_maa_horse_archers }
-	# 	}
-	# 	age <= 8
-	# }
+	trigger_if = {
+		limit = {
+			root.culture = { has_cultural_parameter = unlock_maa_horse_archers }
+		}
+		age <= 8
+	}
 }
 
 scripted_effect ep3_laamp_flavour_ewan_1091_roll_duel_effect = {

@@ -267,8 +267,7 @@ building_horse_pastures_requirement_terrain = {
 	OR = {
 		terrain = steppe
 		geographical_region = world_steppe_east
-		#L5R Disabled
-		# culture = { has_cultural_parameter = unlock_horse_pastures_building }
+		culture = { has_cultural_parameter = unlock_horse_pastures_building }
 	}
 }
 

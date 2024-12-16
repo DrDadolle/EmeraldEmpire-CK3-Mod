@@ -3309,9 +3309,10 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3490,9 +3491,10 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3587,9 +3589,10 @@ accolade_character_creation_effect = {
 				scope:knight_culture = {
 					trigger = { exists = scope:knight_culture }
 				}
-				scope:turkic_culture = {
-					trigger = { exists = scope:turkic_culture }
-				}
+				#L5R Disabled
+				# scope:turkic_culture = {
+				# 	trigger = { exists = scope:turkic_culture }
+				# }
 				scope:type_specific_culture = {
 					trigger = { exists = scope:type_specific_culture }
 				}
@@ -3759,21 +3762,22 @@ accolade_character_creation_effect = {
 						}
 					}
 				}
-				scope:turkic_culture = {
-					trigger = {
-						exists = scope:turkic_culture
-						scope:turkic_culture = {
-							OR = {
-								has_innovation = innovation_arched_saddle
-								has_cultural_tradition = tradition_caucasian_wolves
-								has_cultural_tradition = tradition_ep3_audacious_cadets
-								has_cultural_tradition = tradition_roman_legacy
-								has_cultural_tradition = tradition_ep3_imperial_tagmata
-								has_innovation = innovation_valets
-							}
-						}
-					}
-				}
+				#L5R Disabled
+				# scope:turkic_culture = {
+				# 	trigger = {
+				# 		exists = scope:turkic_culture
+				# 		scope:turkic_culture = {
+				# 			OR = {
+				# 				has_innovation = innovation_arched_saddle
+				# 				has_cultural_tradition = tradition_caucasian_wolves
+				# 				has_cultural_tradition = tradition_ep3_audacious_cadets
+				# 				has_cultural_tradition = tradition_roman_legacy
+				# 				has_cultural_tradition = tradition_ep3_imperial_tagmata
+				# 				has_innovation = innovation_valets
+				# 			}
+				# 		}
+				# 	}
+				# }
 				scope:type_specific_culture = {
 					trigger = {
 						exists = scope:type_specific_culture
@@ -3884,17 +3888,18 @@ accolade_character_creation_effect = {
 						}
 					}
 				}
-				scope:turkic_culture = {
-					trigger = {
-						exists = scope:turkic_culture
-						scope:turkic_culture = {
-							OR = {
-								has_innovation = innovation_advanced_bowmaking
-								has_innovation = innovation_repeating_crossbow
-							}
-						}
-					}
-				}
+				#L5R Disabled
+				# scope:turkic_culture = {
+				# 	trigger = {
+				# 		exists = scope:turkic_culture
+				# 		scope:turkic_culture = {
+				# 			OR = {
+				# 				has_innovation = innovation_advanced_bowmaking
+				# 				has_innovation = innovation_repeating_crossbow
+				# 			}
+				# 		}
+				# 	}
+				# }
 				scope:type_specific_culture = {
 					trigger = {
 						exists = scope:type_specific_culture
@@ -3939,12 +3944,13 @@ accolade_character_creation_effect = {
 						scope:knight_culture = { has_innovation = innovation_war_camels }
 					}
 				}
-				scope:turkic_culture = {
-					trigger = {
-						exists = scope:turkic_culture
-						scope:turkic_culture = { has_innovation = innovation_war_camels }
-					}
-				}
+				#L5R Disabled
+				# scope:turkic_culture = {
+				# 	trigger = {
+				# 		exists = scope:turkic_culture
+				# 		scope:turkic_culture = { has_innovation = innovation_war_camels }
+				# 	}
+				# }
 				scope:type_specific_culture = {
 					trigger = {
 						exists = scope:type_specific_culture
@@ -4023,12 +4029,13 @@ accolade_character_creation_effect = {
 						scope:knight_culture = { has_cultural_parameter = unlock_maa_horse_archers }
 					}
 				}
-				scope:turkic_culture = {
-					trigger = {
-						exists = scope:turkic_culture
-						scope:turkic_culture = { has_cultural_parameter = unlock_maa_horse_archers }
-					}
-				}
+				#L5R Disabled
+				# scope:turkic_culture = {
+				# 	trigger = {
+				# 		exists = scope:turkic_culture
+				# 		scope:turkic_culture = { has_cultural_parameter = unlock_maa_horse_archers }
+				# 	}
+				# }
 				scope:type_specific_culture = {
 					trigger = {
 						exists = scope:type_specific_culture
@@ -4068,12 +4075,13 @@ accolade_character_creation_effect = {
 						scope:knight_culture = { NOT = { has_cultural_tradition = tradition_vegetarianism } }
 					}
 				}
-				scope:turkic_culture = {
-					trigger = {
-						exists = scope:turkic_culture
-						scope:turkic_culture = { NOT = { has_cultural_tradition = tradition_vegetarianism } }
-					}
-				}
+				#L5R Disabled
+				# scope:turkic_culture = {
+				# 	trigger = {
+				# 		exists = scope:turkic_culture
+				# 		scope:turkic_culture = { NOT = { has_cultural_tradition = tradition_vegetarianism } }
+				# 	}
+				# }
 				scope:type_specific_culture = {
 					trigger = {
 						exists = scope:type_specific_culture

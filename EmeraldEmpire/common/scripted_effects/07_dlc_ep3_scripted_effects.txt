@@ -8257,15 +8257,15 @@ ep3_pick_random_maa_regiment_effect = {
 			# 		value = flag:metsanvartija
 			# 	}
 			# }
-			# 1 = {
-			# 	trigger = {
-			# 		culture = { has_cultural_parameter = unlock_maa_horse_archers }
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = maa_to_create
-			# 		value = flag:horse_archers
-			# 	}
-			# }
+			1 = {
+				trigger = {
+					culture = { has_cultural_parameter = unlock_maa_horse_archers }
+				}
+				save_scope_value_as = {
+					name = maa_to_create
+					value = flag:horse_archers
+				}
+			}
 			# 1 = {
 			# 	trigger = {
 			# 		culture = { has_cultural_parameter = unlock_maa_ayyar }
