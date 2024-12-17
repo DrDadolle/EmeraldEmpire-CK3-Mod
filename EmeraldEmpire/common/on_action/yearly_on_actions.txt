@@ -1054,7 +1054,8 @@ five_year_playable_pulse = {
 				has_dlc_feature = legends
 				OR = {
 					has_trait = theologian
-					has_trait = sayyid
+					#L5R Disabled
+					# has_trait = sayyid
 				}
 				piety_level >=  very_high_piety_level
 				NOT = { has_variable = saintly_deed_var }
@@ -1303,6 +1304,8 @@ random_yearly_playable_pulse = {
 		2 = bp1_yearly_events
 		6 = ep3_yearly_events_byzantium
 		6 = ep3_yearly_events_admin
+		#L5R Added
+		5 = l5r_yearly_events
 	}
 	effect = {
 		# Special Holy Seeds drops
