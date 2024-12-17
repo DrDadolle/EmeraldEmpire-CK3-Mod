@@ -107,18 +107,18 @@ warhorse.0002 = {
 	# 	}
 	# }
 
-	# option = {
-	# 	name = warhorse.0002.c
-	# 	hidden_effect = {
-	# 		scope:story= {
-	# 			set_variable = { #The cursed horse of Gnaeus Seius
-	# 				name = story_cycle_horse_name
-	# 				value = flag:seianian
-	# 			}
-	# 		}
-	# 	}
-	# }
-
+	option = {
+		name = warhorse.0002.c
+		hidden_effect = {
+			scope:story= {
+				set_variable = { #The cursed horse of Gnaeus Seius
+					name = story_cycle_horse_name
+					value = flag:seianian
+				}
+			}
+		}
+	}
+	#L5R Disabled
 	# option = {
 	# 	name = warhorse.0002.d
 	# 	hidden_effect = {
@@ -196,28 +196,29 @@ warhorse.0003 = {
 		animation = personality_cynical
 	}
 
-	option = {
-		name = warhorse.0003.llamrei
-		trigger = {
-			trigger_if = {
-				limit = { is_landed = yes }
-				capital_province = { geographical_region = world_europe }
-			}
-			trigger_else_if = {
-				limit = { exists = location }
-				location = { geographical_region = world_europe }
-			}
-			trigger_else = { always = yes }
-		}
-		hidden_effect = {
-			scope:story= {
-				set_variable = { #Horse of King Arthur
-					name = story_cycle_horse_name
-					value = flag:llamrei
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	# option = {
+	# 	name = warhorse.0003.llamrei
+	# 	trigger = {
+	# 		trigger_if = {
+	# 			limit = { is_landed = yes }
+	# 			capital_province = { geographical_region = world_europe }
+	# 		}
+	# 		trigger_else_if = {
+	# 			limit = { exists = location }
+	# 			location = { geographical_region = world_europe }
+	# 		}
+	# 		trigger_else = { always = yes }
+	# 	}
+	# 	hidden_effect = {
+	# 		scope:story= {
+	# 			set_variable = { #Horse of King Arthur
+	# 				name = story_cycle_horse_name
+	# 				value = flag:llamrei
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	#L5R Disabled
 	# option = {

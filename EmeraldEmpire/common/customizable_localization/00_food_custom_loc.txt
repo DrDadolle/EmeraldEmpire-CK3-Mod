@@ -672,15 +672,16 @@ FavoriteTreat = {
 
 	random_valid = yes
 
-	text = {
-		localization_key = treat_comfit
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:comfit
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_comfit
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:comfit
+	# 		}
+	# 	}
+	# }
 	text = {
 		localization_key = treat_roasted_almonds
 		trigger = {
@@ -844,15 +845,16 @@ FavoriteTreatDemand = {
 
 	random_valid = yes
 
-	text = {
-		localization_key = treat_comfit
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:comfit
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_comfit
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:comfit
+	# 		}
+	# 	}
+	# }
 	text = {
 		localization_key = treat_roasted_almonds
 		trigger = {
@@ -1016,15 +1018,16 @@ FavoriteTreatUppercase = {
 
 	random_valid = yes
 
-	text = {
-		localization_key = treat_comfit_uppercase
-		trigger = {
-			OR = {
-				NOT = { has_variable = favorite_treat }
-				var:favorite_treat = flag:comfit
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = treat_comfit_uppercase
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { has_variable = favorite_treat }
+	# 			var:favorite_treat = flag:comfit
+	# 		}
+	# 	}
+	# }
 	text = {
 		localization_key = treat_roasted_almonds_uppercase
 		trigger = {

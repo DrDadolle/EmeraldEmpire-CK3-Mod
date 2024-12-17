@@ -317,15 +317,16 @@ WarhorseStoryName = {
 	# 	}
 	# 	localization_key = warhorse_name_bucephalus
 	# }
-	# text = {
-	# 	trigger = {
-	# 		any_owned_story = {
-	# 			story_type = story_cycle_martial_lifestyle_warhorse
-	# 			var:story_cycle_horse_name = flag:seianian
-	# 		}
-	# 	}
-	# 	localization_key = warhorse_name_seianian
-	# }
+	text = {
+		trigger = {
+			any_owned_story = {
+				story_type = story_cycle_martial_lifestyle_warhorse
+				var:story_cycle_horse_name = flag:seianian
+			}
+		}
+		localization_key = warhorse_name_seianian
+	}
+	#L5R Disabled
 	# text = {
 	# 	trigger = {
 	# 		any_owned_story = {

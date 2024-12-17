@@ -1003,10 +1003,11 @@ ContestHorseRaceName = {
 	# 	trigger = { var:contest_horse_race_name = flag:rhaebus }
 	# 	localization_key = racehorse_name_rhaebus
 	# }
-	# text = {
-	# 	trigger = { var:contest_horse_race_name = flag:seianian }
-	# 	localization_key = warhorse_name_seianian
-	# }
+	text = {
+		trigger = { var:contest_horse_race_name = flag:seianian }
+		localization_key = warhorse_name_seianian
+	}
+	#L5R Disabled
 	# text = {
 	# 	trigger = { var:contest_horse_race_name = flag:sterope }
 	# 	localization_key = racehorse_name_sterope
@@ -1473,10 +1474,11 @@ ContestHorseRaceName = {
 		trigger = { var:contest_horse_race_name = flag:thunderclap }
 		localization_key = racehorse_name_thunderclap
 	}
-    text = {
-		trigger = { var:contest_horse_race_name = flag:tornado }
-		localization_key = racehorse_name_tornado
-	}
+	#L5R Disabled
+    # text = {
+	# 	trigger = { var:contest_horse_race_name = flag:tornado }
+	# 	localization_key = racehorse_name_tornado
+	# }
     # text = {
 	# 	trigger = { var:contest_horse_race_name = flag:typhoon }
 	# 	localization_key = racehorse_name_typhoon

@@ -296,41 +296,47 @@ gruesome_sacrifices_grand_blot_can_continue_trigger = {
 }
 
 fp1_valid_norse_faith_for_jomsvikings_trigger = {
-	religion = religion:germanic_religion
-	has_doctrine_parameter = unreformed
+	#L5R Disabled
+	always = no
+	# religion = religion:germanic_religion
+	# has_doctrine_parameter = unreformed
 }
 
 fp1_jomsvikings_have_not_existed_trigger = {
+	#L5R Disabled
+	always = no
 	# They've already been destroyed in 1066.
-	game_start_date < 1000.1.1
-	NOR = {
-		# And otherwise can't currently be created.
-		exists = global_var:jomsvikings_title
-		# Nor should they have been made via decision or event.
-		is_target_in_global_variable_list = {
-			name = unavailable_unique_decisions
-			target = flag:flag_forged_jomvikings
-		}
-	}
+	# game_start_date < 1000.1.1
+	# NOR = {
+	# 	# And otherwise can't currently be created.
+	# 	exists = global_var:jomsvikings_title
+	# 	# Nor should they have been made via decision or event.
+	# 	is_target_in_global_variable_list = {
+	# 		name = unavailable_unique_decisions
+	# 		target = flag:flag_forged_jomvikings
+	# 	}
+	# }
 }
 
 fp1_valid_county_for_jomsvikings_trigger = {
-	tier = tier_county
-	is_coastal_county = yes
-	custom_description = {
-		text = forge_the_jomsvikings_decision.tt.is_in_correct_region
-		title_province = { geographical_region = dlc_fp1_region_non_scandinavian_southern_baltic }
-	}
-	any_county_province = {
-		custom_description = {
-			text = forge_the_jomsvikings_decision.tt.empty_castle_or_city
-			OR = {
-				has_holding = no
-				has_holding_type = castle_holding
-				has_holding_type = city_holding
-			}
-		}
-	}
+	#L5R Disabled
+	always = no
+	# tier = tier_county
+	# is_coastal_county = yes
+	# custom_description = {
+	# 	text = forge_the_jomsvikings_decision.tt.is_in_correct_region
+	# 	title_province = { geographical_region = dlc_fp1_region_non_scandinavian_southern_baltic }
+	# }
+	# any_county_province = {
+	# 	custom_description = {
+	# 		text = forge_the_jomsvikings_decision.tt.empty_castle_or_city
+	# 		OR = {
+	# 			has_holding = no
+	# 			has_holding_type = castle_holding
+	# 			has_holding_type = city_holding
+	# 		}
+	# 	}
+	# }
 }
 
 ##################################################
@@ -368,19 +374,21 @@ fp1_achievement_culture_plus_religion_norse_trigger = {
 ###################################################
 # Jomsviking Triggers
 fp1_ruler_eligible_for_jomsviking_coup = {
-	# We never want to coup realms with players who might be affected, so just flat-out ban them.
-	NOR = {
-		is_ai = no
-		any_vassal_or_below = { is_ai = no }
-		any_liege_or_above = { is_ai = no }
-	}
-	# And anyone that's close family to/married to a player.
-	NOR = {
-		any_spouse = { is_ai = no }
-		any_close_or_extended_family_member = { is_ai = no }
-	}
-	# Veto anyone following the unreformed Norse pagan faith.
-	NOT = { faith = faith:norse_pagan }
-	# For simplicity, exclude wars.
-	is_at_war = no
+	#L5R Disabled
+	always = no
+	# # We never want to coup realms with players who might be affected, so just flat-out ban them.
+	# NOR = {
+	# 	is_ai = no
+	# 	any_vassal_or_below = { is_ai = no }
+	# 	any_liege_or_above = { is_ai = no }
+	# }
+	# # And anyone that's close family to/married to a player.
+	# NOR = {
+	# 	any_spouse = { is_ai = no }
+	# 	any_close_or_extended_family_member = { is_ai = no }
+	# }
+	# # Veto anyone following the unreformed Norse pagan faith.
+	# NOT = { faith = faith:norse_pagan }
+	# # For simplicity, exclude wars.
+	# is_at_war = no
 }

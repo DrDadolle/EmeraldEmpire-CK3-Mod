@@ -1886,7 +1886,7 @@ contest_horse_race_aptitude_value = {
         limit = { has_trait = administrator }
         add = 3
     }
-    # Flavor
+	# Flavor
     if = {
     	limit = {
     		exists = var:contest_horse_race_name
