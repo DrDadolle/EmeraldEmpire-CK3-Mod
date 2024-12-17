@@ -1745,7 +1745,7 @@ HeirMessageInterface = {
 			is_adult = yes
 			OR = {
 				has_trait = faith_warrior
-				# has_trait = crusader_king #L5R Disabled
+				has_trait = crusader_king
 			}
 		}
 	}
@@ -1783,9 +1783,9 @@ HeirMessageInterface = {
 			gold < 5000
 			prowess < high_skill_rating
 			NOR = {
-				has_trait = faith_warrior
+				has_trait = faith_warrior			
+				has_trait = crusader_king
 				#L5R Disabled
-				# has_trait = crusader_king
 				# has_trait = viking
 				has_trait = lifestyle_blademaster
 			}

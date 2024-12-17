@@ -595,22 +595,23 @@ select_local_farm_animal_effect = {
 				value = flag:pig
 			}
 		}
-		#L5R Disabled
-		# 50 = {
-		# 	modifier = {
-		# 		factor = 0
-		# 		location = {
-		# 			NOR = {
-		# 				geographical_region = world_tibet
-		# 				geographical_region = ghw_region_mongolia
-		# 			}
-		# 		}
-		# 	}
-		# 	set_variable = {
-		# 		name = local_farm_animal
-		# 		value = flag:yak
-		# 	}
-		# }
+		50 = {
+			modifier = {
+				factor = 0
+				location = {
+					NOR = {
+						#L5R Modified
+						geographical_region = rokugan_dragon
+						# geographical_region = world_tibet
+						# geographical_region = ghw_region_mongolia
+					}
+				}
+			}
+			set_variable = {
+				name = local_farm_animal
+				value = flag:yak
+			}
+		}
 	}
 }
 

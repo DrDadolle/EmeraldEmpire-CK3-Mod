@@ -1477,10 +1477,10 @@ ContestHorseRaceName = {
 		trigger = { var:contest_horse_race_name = flag:tornado }
 		localization_key = racehorse_name_tornado
 	}
-    text = {
-		trigger = { var:contest_horse_race_name = flag:typhoon }
-		localization_key = racehorse_name_typhoon
-	}
+    # text = {
+	# 	trigger = { var:contest_horse_race_name = flag:typhoon }
+	# 	localization_key = racehorse_name_typhoon
+	# }
     text = {
 		trigger = { var:contest_horse_race_name = flag:unwavering }
 		localization_key = racehorse_name_unwavering
@@ -1948,10 +1948,11 @@ ContestHorseRaceSheHe = {
 ContestHorseRaceTrack = {
 	type = activity
 
-	text = {
-		trigger = { exists = var:contest_horse_race_variant var:contest_horse_race_variant = flag:maydan }
-		localization_key = race_track_maydan
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { exists = var:contest_horse_race_variant var:contest_horse_race_variant = flag:maydan }
+	# 	localization_key = race_track_maydan
+	# }
 	text = {
 		trigger = { always = no }
 		fallback = yes

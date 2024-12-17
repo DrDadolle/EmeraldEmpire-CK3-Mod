@@ -2303,7 +2303,8 @@ scripted_effect finalise_combat_results_effect = {
 					OR = {
 						highest_held_title_tier >= tier_empire
 						any_held_title = { is_head_of_faith = yes }
-						has_nickname = nick_genghis_khan
+						#L5R Disabled
+						# has_nickname = nick_genghis_khan
 					}
 				}
 			}

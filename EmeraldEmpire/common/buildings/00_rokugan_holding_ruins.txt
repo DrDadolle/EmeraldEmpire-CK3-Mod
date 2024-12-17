@@ -64,7 +64,7 @@ haunted_ruins_shiro_chuda_02 = {
 
 	can_construct = {
 		culture = {
-			has_innovation = innovation_battlements
+			has_innovation = innovation_motte
 		}
 	}
 
@@ -128,7 +128,7 @@ haunted_ruins_shiro_chuda_03 = {
 
 	can_construct = {
 		culture = {
-			has_innovation = innovation_hoardings
+			has_innovation = innovation_battlements
 		}
 	}
 
@@ -184,7 +184,7 @@ haunted_ruins_shiro_chuda_04 = {
 	
 	can_construct = {
 		culture = {
-			has_innovation = innovation_hoardings
+			has_innovation = innovation_battlements
 		}
 	}
 

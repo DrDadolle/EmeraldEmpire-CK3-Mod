@@ -8758,18 +8758,20 @@ ep3_create_random_maa_regiment_effect = {
 					SIZE = $SIZE$
 				}
 			}
-			flag:war_elephant = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = war_elephant
-					SIZE = $SIZE$
-				}
-			}
-			flag:camel_rider = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = camel_rider
-					SIZE = $SIZE$
-				}
-			}
+			#L5R Disabled
+			# flag:war_elephant = {	
+			# 	create_maa_or_upgrade_regiment_effect = {
+			# 		TYPE = war_elephant
+			# 		SIZE = $SIZE$
+			# 	}
+			# }
+			#L5R Disabled
+			# flag:camel_rider = {	
+			# 	create_maa_or_upgrade_regiment_effect = {
+			# 		TYPE = camel_rider
+			# 		SIZE = $SIZE$
+			# 	}
+			# }
 			flag:armored_horsemen = {	
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = armored_horsemen

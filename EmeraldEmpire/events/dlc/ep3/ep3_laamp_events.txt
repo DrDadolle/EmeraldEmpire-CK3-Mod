@@ -2746,8 +2746,7 @@ ep3_laamps.0800 = { # Player adventurer has gained a landed title
 		}
 		trigger = { exists = scope:alt_1 }
 		scope:alt_1 = { grant_land_to_beneficiary_effect = yes }
-		#L5R Disabled
-		#transfer_crusader_king_trait_effect = { BENEFICIARY = scope:alt_1 }
+		transfer_crusader_king_trait_effect = { BENEFICIARY = scope:alt_1 }
 	}
 	option = { # Give to 2
 		name = {
@@ -2760,8 +2759,7 @@ ep3_laamps.0800 = { # Player adventurer has gained a landed title
 		}
 		trigger = { exists = scope:alt_2 }
 		scope:alt_2 = { grant_land_to_beneficiary_effect = yes }
-		#L5R Disabled
-		#transfer_crusader_king_trait_effect = { BENEFICIARY = scope:alt_2 }
+		transfer_crusader_king_trait_effect = { BENEFICIARY = scope:alt_2 }
 	}
 	option = { # Give to 3
 		name = {
@@ -2774,8 +2772,7 @@ ep3_laamps.0800 = { # Player adventurer has gained a landed title
 		}
 		trigger = { exists = scope:alt_3 }
 		scope:alt_3 = { grant_land_to_beneficiary_effect = yes }
-		#L5R Disabled
-		#transfer_crusader_king_trait_effect = { BENEFICIARY = scope:alt_3 }
+		transfer_crusader_king_trait_effect = { BENEFICIARY = scope:alt_3 }
 	}
 	option = { # Give to liege/random dude
 		name = {
@@ -2795,8 +2792,7 @@ ep3_laamps.0800 = { # Player adventurer has gained a landed title
 		if = {
 			limit = { exists = scope:new_liege }
 			scope:new_liege = { grant_land_to_beneficiary_effect = yes }
-			#L5R Disabled
-			#transfer_crusader_king_trait_effect = { BENEFICIARY = scope:new_liege }
+			transfer_crusader_king_trait_effect = { BENEFICIARY = scope:new_liege }
 		}
 		else = {
 			hidden_effect_new_object = {
@@ -2812,12 +2808,10 @@ ep3_laamps.0800 = { # Player adventurer has gained a landed title
 			}
 			custom_tooltip = become_landless_adventurer_decision_title_created_tt
 		}
-		#L5R Disabled
-		#transfer_crusader_king_trait_effect = { BENEFICIARY = scope:land_grantee }
+		transfer_crusader_king_trait_effect = { BENEFICIARY = scope:land_grantee }
 	}
 
-	#L5R Disabled
-	#after = { remove_character_flag = laamp_is_crusader_king }
+	after = { remove_character_flag = laamp_is_crusader_king }
 }
 
 ##################################################
