@@ -174,11 +174,14 @@
 		holding = shiro_chuda_ruins_holding
 		buildings = {
 			haunted_ruins_shiro_chuda_01
+			hill_farms_01
+
 		}
 	}
 	1123.1.1={
 		buildings = {
 			haunted_ruins_shiro_chuda_02
+			hill_farms_02
 		}
 	}
 }

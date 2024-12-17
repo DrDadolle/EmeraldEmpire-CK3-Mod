@@ -92,7 +92,7 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 
 		stress_impact = {
 			compassionate = medium_stress_gain
-			honest = small_stress_gain
+			honest = minor_stress_gain
           	deceitful = miniscule_stress_impact_loss
 		}
 
@@ -1408,7 +1408,7 @@ l5r_pray_spirit.0005 = {
 			limit = { scope:outcome = flag:afraid }
 			show_as_tooltip = {
 				scope:enemy = {
-					add_stress = small_stress_gain
+					add_stress = minor_stress_gain
 					add_character_modifier = {
 						modifier = tormented_by_air_spirit
 						years = 5

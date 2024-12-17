@@ -29,11 +29,14 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - remove bunch of errors
 - % de chance shindoshi/ishiken TROP BAS ! STILL TOO FEW
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
-- TEST : shiro chuda if correct value at start. Check if side building created, kept upon reaching level 4
-	- Change Chuda ruins requirements to NOT necessite castle innovations
 - Fix era time line. 
 - Add thumbnail image for the mod !
-big error : Could not find texture due to 'VFSOpen Error: @holding_illustration_japan not found'
+- how to BIG PICTURE decisions ?
+- Religious decisions got mixed with L5R ones
+- the weird 's issue. Une piste : yearly.8400.a or yearly.8400.special or yearly.8400.a.tt ?
+	I guess it is the "select_and_move_to_pool_effect" localization which fails ?
+	- Object of type 'character' is not valid for 'GetCourtConcept' ???
+-loc issue for new kami prayer (Could not find data system function 'getHerHim' in 'enemy.getHerHim'.) Data error in loc string 'l5r_pray_spirit.0005.afraid.desc'
 
 
 ## short term goals 
@@ -63,6 +66,7 @@ big error : Could not find texture due to 'VFSOpen Error: @holding_illustration_
 - Why always fortunism faith goes heretic ? Up the base fervor of seven fortunes ?
 - Why always there is rebellion early game ? (especially in unicorn)
 - transform "mahotsukai" trait into the secret / trait combo of witch
+- finish localisation of religious stuff (like sacred text etc...)
 
 ## Fixes to do
 - The l5r_title_events.0001 events breaks vassalage (but AI fixes it quickly anyway, so that's ok). Maybe enhance the script to give vassals as well ?
@@ -73,13 +77,11 @@ big error : Could not find texture due to 'VFSOpen Error: @holding_illustration_
 - update holy_order decisions & dynasty decisions (taken from shogunate)
 - d_rokugani_faith got split from e_rokugan. Should follow it (but follow primary heir instead) ? Or not, the title should become "Shogun" I guess ?
 	- See k_orthodox as head of faith title ? e_rokugan becomes the head of faith title ??
--Change Mod Thumbnail image (test ?)
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - Issues with missing accolades in innovations description ? Why ?
 - start war on toshi Rambo / city rich frog decision
 	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
-- - When a major clan grab the title of emperor, the redistribution breaks
 
 ## Futures Features & Nice to have
 - Set up github branches (dev/release/beta) and pratices/rights

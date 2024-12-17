@@ -14,7 +14,8 @@ feudal_government = {
 	fallback = 1
 
 	primary_holding = castle_holding
-	required_county_holdings = { castle_holding city_holding church_holding shiro_chuda_ruins_holding}
+	valid_holdings = { shiro_chuda_ruins_holding }	
+	required_county_holdings = { castle_holding city_holding church_holding }
 
 	vassal_contract = {
 		feudal_government_taxes
@@ -41,7 +42,7 @@ feudal_government = {
 
 republic_government = {
 	primary_holding = city_holding
-	valid_holdings = { castle_holding }
+	valid_holdings = { castle_holding shiro_chuda_ruins_holding }
 	required_county_holdings = { city_holding castle_holding church_holding }
 
 	government_rules = {
@@ -75,7 +76,7 @@ theocracy_government = {
 	}
 
 	primary_holding = church_holding
-	valid_holdings = { castle_holding }
+	valid_holdings = { castle_holding shiro_chuda_ruins_holding}
 	required_county_holdings = { church_holding castle_holding city_holding }
 
 	ai = {
@@ -118,7 +119,7 @@ clan_government = {
 	#L5R Disabled
 	# preferred_religions = { islam_religion }
 
-	valid_holdings = { castle_holding }
+	valid_holdings = { castle_holding shiro_chuda_ruins_holding}
 	required_county_holdings = { castle_holding city_holding church_holding }
 	always_use_patronym = yes
 
@@ -204,7 +205,7 @@ tribal_government = {
 	primary_holding = tribal_holding
 	required_county_holdings = { tribal_holding }
 
-	valid_holdings = { castle_holding }
+	valid_holdings = { castle_holding shiro_chuda_ruins_holding}
 
 	prestige_opinion_override = { -10 0 3 5 10 20 }
 	always_use_patronym = yes
@@ -315,7 +316,7 @@ administrative_government = {
 	fallback = 3
 
 	primary_holding = castle_holding
-	valid_holdings = { city_holding }
+	valid_holdings = { city_holding shiro_chuda_ruins_holding }
 	required_county_holdings = { castle_holding city_holding church_holding }
 
 	vassal_contract = {
@@ -369,7 +370,7 @@ landless_adventurer_government = {
 		}
 	}
 
-	valid_holdings = { tribal_holding church_holding castle_holding city_holding }
+	valid_holdings = { tribal_holding church_holding castle_holding city_holding shiro_chuda_ruins_holding}
 
 	character_modifier = {
 		active_accolades = -100

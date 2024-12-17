@@ -238,11 +238,11 @@ l5r_clan_decision.0001 = {
 		trigger = {
 			OR = {
 				has_trait = arrogant
-				has_trait = lunatic
+				has_trait = lunatic_1
 			}
 		}
 		trait = arrogant
-		trait = lunatic
+		trait = lunatic_1
 
 		name = l5r_clan_decision.0001.c
 		show_as_tooltip = { 
