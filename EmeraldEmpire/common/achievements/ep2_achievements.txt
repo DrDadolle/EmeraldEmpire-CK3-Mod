@@ -194,14 +194,18 @@ ep2_10_hunting_accident_achievement = {
 # 11. Lions and Tigers and Bears, Oh My!
 ep2_11_lions_and_tigers_and_bears_oh_my_achievement = {
 	possible = {
-		exists = global_var:started_lions_and_tigers_and_bears_oh_my_achievement
+		#L5R Disabled
+		always = no
+		# exists = global_var:started_lions_and_tigers_and_bears_oh_my_achievement
 		
 	}
 	happened = {
-		custom_description = {
-			text = lions_and_tigers_and_bears_oh_my_achievement_trigger
-			has_character_modifier = hunt_captive_beast_modifier
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = lions_and_tigers_and_bears_oh_my_achievement_trigger
+		# 	has_character_modifier = hunt_captive_beast_modifier
+		# }
 	}
 }
 

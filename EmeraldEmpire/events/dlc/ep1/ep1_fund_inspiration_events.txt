@@ -8648,14 +8648,15 @@ fund_inspiration.9004 = {
 			desc = fund_inspiration.9004.desc_adventurer_stuck_in_swamp
 		}
 		desc = fund_inspiration.9004.desc
-		triggered_desc = {
-			trigger = {
-				scope:inspiration_owner = { # Add more descs if there is another reason for the adventurer to prematurely return
-					has_character_flag = adventurer_tired_of_europe
-				}
-			}
-			desc = fund_inspiration.9004.desc_adventurer_tired_of_europe
-		}
+		#L5R Disabled
+		# triggered_desc = {
+		# 	trigger = {
+		# 		scope:inspiration_owner = { # Add more descs if there is another reason for the adventurer to prematurely return
+		# 			has_character_flag = adventurer_tired_of_europe
+		# 		}
+		# 	}
+		# 	desc = fund_inspiration.9004.desc_adventurer_tired_of_europe
+		# }
 	}
 	theme = realm
 	left_portrait = scope:inspiration_owner
@@ -8663,7 +8664,8 @@ fund_inspiration.9004 = {
 	trigger = {
 		scope:inspiration_owner = {
 			OR = {
-				has_character_flag = adventurer_tired_of_europe
+				#L5R Disabled
+				# has_character_flag = adventurer_tired_of_europe
 				has_character_flag = adventurer_stuck_in_swamp
 			}
 		}
@@ -8689,7 +8691,8 @@ fund_inspiration.9004 = {
 	}
 	after = {
 		scope:inspiration_owner = {
-			remove_character_flag = adventurer_tired_of_europe
+			#L5R Disabled
+			# remove_character_flag = adventurer_tired_of_europe
 			remove_character_flag = adventurer_stuck_in_swamp
 		}
 	}

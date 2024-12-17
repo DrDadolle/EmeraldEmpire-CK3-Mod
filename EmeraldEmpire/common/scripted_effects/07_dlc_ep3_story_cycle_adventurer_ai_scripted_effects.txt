@@ -1177,15 +1177,17 @@ ep3_adventurer_ai_contract_find_next_kingdom_effect = {
 	# Find de jure kingdom neighboring active kingdom
 	var:active_kingdom ?= {
 		save_scope_as = current_kingdom
+		#L5R Disabled
 		# If we've pre-scripted story content, stay in our current kingdom.
+		# if = {
+		# 	limit = {
+		# 		scope:story.story_owner = { has_character_flag = laamp_stay_same_kingdom }
+		# 	}
+		# 	save_scope_as = new_kingdom
+		# }
+		# # If we're an explorer, go further afield.
+		# else_
 		if = {
-			limit = {
-				scope:story.story_owner = { has_character_flag = laamp_stay_same_kingdom }
-			}
-			save_scope_as = new_kingdom
-		}
-		# If we're an explorer, go further afield.
-		else_if = {
 			limit = {
 				scope:story.story_owner = {
 					# OR = {
