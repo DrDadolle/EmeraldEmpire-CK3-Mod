@@ -1,0 +1,131 @@
+﻿namespace = l5r_yearly
+
+
+### L5R Yearly  Events ###
+#			l5r_yearly.0001 		become tea master
+
+#########################
+#  TEA MASTER           #
+# by  Leskinen          #
+# 0001-0010				#
+#########################
+
+l5r_yearly.0001 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = l5r_yearly.0001.t
+	desc = l5r_yearly.0001.desc
+	theme = diplomacy
+	left_portrait = {
+		character = root
+		animation = chancellor
+	}
+	override_background = { reference = study }
+
+	trigger = {
+		# Standard checks.
+		is_available_at_peace_adult = yes
+		NOT = { has_character_flag = had_event_trait_specific_l5r_yearly_0001 }
+		# Can't already be a tea_master.
+		NOT = { has_trait = tea_master }
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = 0.25
+			diplomacy >= very_high_skill_rating
+		}
+		# Weight up for people with either diplomatic or learning educations.
+		modifier = {
+			add = 0.1
+			has_trait = education_diplomacy
+		}
+		modifier = {
+			add = 0.1
+			has_trait = education_learning
+		}
+		# Weight up for people who follow Jurojin
+		modifier = {
+			add = 1
+			has_character_modifier = patron_jurojin_modifier
+		}
+		#L5R TODO add special domicile parameter later
+		# modifier = {
+		# 	factor = 6
+		# 	domicile ?= { has_domicile_parameter = camp_more_likely_to_become_poet }
+		# }
+	}
+
+	immediate = {
+		add_character_flag = { flag = had_event_trait_specific_l5r_yearly_0001 }
+		# L5R TODO
+		# Roll for theme.
+		# select_poem_theme_random_effect = yes
+	}
+
+	# A fine painting !
+	option = {
+		name = l5r_yearly.0001.a
+
+		# Gain tea_master.
+		add_trait = tea_master
+
+		stress_impact = {
+			lazy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_boldness = 0.5
+				ai_compassion = 0.25
+				ai_sociability = 0.25
+			}
+			modifier = {
+				add = 100
+				culture = {
+					has_cultural_pillar = heritage_crane
+				}
+			}
+			modifier = {	# Weight down for stress.
+				add = -50
+				has_trait = lazy
+			}
+		}
+	}
+	
+	# Nah, I'll have a bath instead.
+	option = {
+		name = l5r_yearly.0001.b
+
+		# Opt-out stress.
+		add_stress = minor_stress_loss
+
+		stress_impact = {
+			lazy = medium_stress_impact_loss
+			fickle = minor_stress_impact_loss
+			diligent = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_boldness = -0.25
+				ai_energy = -0.5
+			}
+			modifier = {	# Weight up for stress.
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {	# Weight up for stress.
+				add = 30
+				has_trait = fickle
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = diligent
+			}
+		}
+	}
+}
+
+

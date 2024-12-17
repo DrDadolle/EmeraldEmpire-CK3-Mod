@@ -1,4 +1,12 @@
 ﻿l_english:
+ ######################
+ ### SAMURAI TRAITS ###
+ trait_tea_master:0 "Tea Master"
+ trait_tea_master_desc:0 "This character mastered the way of tea ceremony and knows the value of tea sets. This skill enables this person better diplomatic negotiations by organizing tea ceremony or giving precious tea cups."
+ trait_tea_master_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] mastered the way of tea ceremony and knows the value of tea sets. This skill enables this person better diplomatic negotiations by organizing tea ceremony or giving precious tea cups."
+ 
+ ###################
+ ### KAMI TRAITS ###
  # Kami 
  trait_kami:0 "Ancestral Kami"
  trait_kami_desc:0 "This character is one of the eight Kamis who fell in [ningendo|E]. As such, they are the rightful leader of their vassals."
@@ -7,7 +15,7 @@
  trait_kami_descendant:0 "Descendant of a founder Kami"
  trait_kami_descendant_desc:0 "This character is a direct descendant of one of the eight Kamis who fell in [ningendo|E]. As such, they are the rightful leader of their vassals."
  trait_kami_descendant_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a direct descendant of one of the eight Kamis who fell in [ningendo|E]. As such, [ROOT.GetCharacter.GetFirstNameNoTooltip] is the rightful leader of [ROOT.GetCharacter.GetHerHis] vassals."
-
+ ########################
  ### SHINDOSHI TRAITS ###
  # shindoshi
  trait_shindoshi:0 "Shindōshi"
@@ -28,8 +36,8 @@
  trait_mahotsukai_3:0 "Master Mahō-tsukai"
  trait_mahotsukai_3_desc:0 "Profane ritual and dark rite - the Master [mahotsukai|E] stands unparalleled in the [maho|e], renouncing their humanity in the pursuit of power"
  trait_mahotsukai_3_character_desc:0 "Profane ritual and dark rite - [ROOT.GetCharacter.GetFirstNameNoTooltip] stands unparalleled in the [maho|e], renouncing their humanity in the pursuit of power"
-
-
+ ###################
+ ### CLAN TRAITS ###
  # bleached_white_hair
  trait_bleached_white_hair:0 "Bleached White Hair"
  trait_bleached_white_hair_desc:0 "This character decided to bleach their hair white to honor the courage of the Doji Hayaku, who returned from the [shadowlands|E] with the sword of her brother and white hair."

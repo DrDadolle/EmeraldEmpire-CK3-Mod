@@ -4,9 +4,11 @@ l5r_yearly_events = {
 		200 = 0
 		
         #L5R TODO
-		# Other Events
-		# 100 = varangian.0001
+        ####################
+        #   Common Events  #
+        ####################
 		# 200 = trait_specific.9001 # Become Poet
+        200 = l5r_yearly.9001 # Become Tea Master
 
 	}
 }

@@ -1,6 +1,32 @@
 ﻿### samurai lifestyle
 # TODO Shogunate 'Child of Adoption"'
+tea_master = {
+	category = lifestyle
 
+	diplomacy = 2
+	learning = 1
+	stress_loss_mult = 0.1
+	
+	same_opinion = 20
+
+	icon = {
+		desc = tea_master.dds
+	}
+
+	ruler_designer_cost = 40
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_tea_master_desc
+			}
+			desc = trait_tea_master_character_desc
+		}
+	}
+}
 
 ######################
 # Clan
