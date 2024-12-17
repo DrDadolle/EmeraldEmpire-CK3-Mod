@@ -29,12 +29,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - remove bunch of errors
 - % de chance shindoshi/ishiken TROP BAS ! STILL TOO FEW
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
-- update common/travel/point_of_interest_types/travel_point_of_interest_types.txt 
-	- test it. Should be in b_shimomura & b_watch_tower_east
 - TEST : shiro chuda if correct value at start. Check if side building created, kept upon reaching level 4
 	- Change Chuda ruins requirements to NOT necessite castle innovations
 - Fix era time line. 
 - Add thumbnail image for the mod !
+big error : Could not find texture due to 'VFSOpen Error: @holding_illustration_japan not found'
 
 
 ## short term goals 
