@@ -823,670 +823,670 @@ scripted_effect agree_to_courtier_becoming_nithing_effect = {
 # by Ewan Cowhig Croft
 # 0021 - 0030
 ##################################################
+#L5R Disabled
+# scripted_trigger suitable_knight_for_dispute_trigger = {
+# 	is_available_ai_adult = yes
+# 	#Nab them for checking various things later in the event.
+# 	save_temporary_scope_as = current_knight
+# 	#Filter out rulers, as the loc mismatches such tonally.
+# 	is_ruler = no
+# 	#They have to be at least not non-argumentative.
+# 	NOR = {
+# 		has_trait = forgiving
+# 		has_trait = craven
+# 	}
+# 	#For the sake of ease, they shouldn't have a positive special relationship with any other knight.
+# 	NOT = {
+# 		root = {
+# 			any_knight = {
+# 				has_friendly_relationship_trigger = { CHARACTER = scope:current_knight }
+# 			}
+# 		}
+# 	}
+# 	#Is the character hookable for the event results?
+# 	root = {
+# 		can_add_hook = {
+# 			type = favor_hook
+# 			target = scope:current_knight
+# 		}
+# 	}
+# }
+#L5R Disabled
+# scripted_trigger deviant_knight_trigger = {
+# 	OR = {
+# 		has_trait = deviant
+# 		any_secret = { secret_type = secret_deviant }
+# 	}
+# }
+#L5R Disabled
+# scripted_effect holmgang_results_effect = {
+# 	if = {
+# 		limit = { government_has_flag = government_is_tribal }
+# 		$LOSER$ = {
+# 			death = {
+# 				killer = $WINNER$
+# 				death_reason = death_duel
+# 			}
+# 		}
+# 	}
+# 	else = {
+# 		$LOSER$ = {
+# 			increase_wounds_effect = { REASON = duel }
+# 		}
+# 	}
+# }
+#L5R Disabled
+# #	Two knights fight to the death over nothing.
+# fp1_yearly.0021 = {
+# 	type = character_event
+# 	title = fp1_yearly.0021.t
+# 	desc = {
+# 		desc = fp1_yearly.0021.desc.intro
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { scope:dispute_nature = flag:doggo }
+# 				desc = fp1_yearly.0021.desc.doggo
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:dispute_nature = flag:spit_of_land }
+# 				desc = fp1_yearly.0021.desc.spit_of_land
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:dispute_nature = flag:unrepeatable_insult }
+# 				desc = fp1_yearly.0021.desc.unrepeatable_insult
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:dispute_nature = flag:escalating_prank_war }
+# 				desc = fp1_yearly.0021.desc.escalating_prank_war
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:dispute_nature = flag:religious_differences }
+# 				desc = fp1_yearly.0021.desc.religious_differences
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:dispute_nature = flag:stolen_pig }
+# 				desc = fp1_yearly.0021.desc.stolen_pig
+# 			}
+# 			# Female Variant.
+# 			triggered_desc = {
+# 				trigger = {
+# 					scope:dispute_nature = flag:defiled_longboat
+# 					scope:defiling_knight = { is_female = yes }
+# 				}
+# 				desc = fp1_yearly.0021.desc.defiled_longboat.woman
+# 			}
+# 			# Male Variant.
+# 			triggered_desc = {
+# 				trigger = {
+# 					scope:dispute_nature = flag:defiled_longboat
+# 					scope:defiling_knight = { is_male = yes }
+# 				}
+# 				desc = fp1_yearly.0021.desc.defiled_longboat
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:dispute_nature = flag:board_game }
+# 				desc = fp1_yearly.0021.desc.board_game
+# 			}
+# 		}
+# 		desc = fp1_yearly.0021.desc.outro
+# 	}
+# 	theme = unfriendly
+# 	left_portrait = {
+# 		character = scope:first_knight
+# 		animation = anger
+# 	}
+# 	right_portrait = {
+# 		character = scope:second_knight
+# 		animation = disgust
+# 	}
+# 	override_background = { reference = wilderness }
 
-scripted_trigger suitable_knight_for_dispute_trigger = {
-	is_available_ai_adult = yes
-	#Nab them for checking various things later in the event.
-	save_temporary_scope_as = current_knight
-	#Filter out rulers, as the loc mismatches such tonally.
-	is_ruler = no
-	#They have to be at least not non-argumentative.
-	NOR = {
-		has_trait = forgiving
-		has_trait = craven
-	}
-	#For the sake of ease, they shouldn't have a positive special relationship with any other knight.
-	NOT = {
-		root = {
-			any_knight = {
-				has_friendly_relationship_trigger = { CHARACTER = scope:current_knight }
-			}
-		}
-	}
-	#Is the character hookable for the event results?
-	root = {
-		can_add_hook = {
-			type = favor_hook
-			target = scope:current_knight
-		}
-	}
-}
+# 	trigger = {
+# 		#DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		#Standard checks.
+# 		is_available_at_peace_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0021 }
+# 		is_landed = yes
+# 		#Must be North Germanic.
+# 		culture = { has_cultural_pillar = heritage_north_germanic }
+# 		#Holmgangs must still be in fashion.
+# 		NOT = {
+# 			culture = { has_cultural_era_or_later = culture_era_high_medieval }
+# 		}
+# 		#Must have at least two knights available who can get into a dispute.
+# 		any_knight = {
+# 			count >= 2
+# 			suitable_knight_for_dispute_trigger = yes
+# 		}
+# 	}
 
-scripted_trigger deviant_knight_trigger = {
-	OR = {
-		has_trait = deviant
-		any_secret = { secret_type = secret_deviant }
-	}
-}
+# 	weight_multiplier = {
+# 		base = 1
+# 	}
 
-scripted_effect holmgang_results_effect = {
-	if = {
-		limit = { government_has_flag = government_is_tribal }
-		$LOSER$ = {
-			death = {
-				killer = $WINNER$
-				death_reason = death_duel
-			}
-		}
-	}
-	else = {
-		$LOSER$ = {
-			increase_wounds_effect = { REASON = duel }
-		}
-	}
-}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0021
+# 			days = 1825
+# 		}
+# 		#Sort Actors.
+# 		##Grab capital barony for loc.
+# 		capital_barony = { save_scope_as = capital_barony }
+# 		##Grab the first knight.
+# 		random_knight = {
+# 			limit = { suitable_knight_for_dispute_trigger = yes }
+# 			save_scope_as = first_knight
+# 		}
+# 		##Grab the second knight.
+# 		random_knight = {
+# 			limit = {
+# 				suitable_knight_for_dispute_trigger = yes
+# 				NOT = { this = scope:first_knight }
+# 			}
+# 			save_scope_as = second_knight
+# 		}
+# 		##Just make them hate each other a little.
+# 		scope:first_knight = {
+# 			add_opinion = {
+# 				target = scope:second_knight
+# 				modifier = respect_opinion
+# 				opinion = -40
+# 			}
+# 			reverse_add_opinion = {
+# 				target = scope:second_knight
+# 				modifier = respect_opinion
+# 				opinion = -40
+# 			}
+# 			progress_towards_rival_effect = {
+# 				REASON = rival_knights_slapfight
+# 				CHARACTER = scope:second_knight
+# 				OPINION = 0
+# 			}
+# 		}
+# 		#Pick which dispute type they'll have.
+# 		##Eight options of 12.5% chance each.
+# 		random_list = {
+# 			#Dispute over a pet killed in an accident.
+# 			125 = {
+# 				#No trigger, fallback.
+# 				save_scope_value_as = {
+# 					name = dispute_nature
+# 					value = flag:doggo
+# 				}
+# 				select_local_animal_effect = { TYPE = any } # Save scope to limit possible animals: any/big/small/dangerous/harmless/prowling
+# 				# And, if scope:second_knight actually has a doggo, kill it.
+# 				scope:second_knight = {
+# 					if = {
+# 						limit = {
+# 							any_owned_story = {
+# 								story_type = story_cycle_pet_dog
+# 								exists = story_owner.var:story_cycle_dog_name
+# 							}
+# 						}
+# 						random_owned_story = {
+# 							limit = {
+# 								story_type = story_cycle_pet_dog
+# 								exists = story_owner.var:story_cycle_dog_name
+# 							}
+# 							story_owner = {
+# 								add_character_flag = {
+# 									flag = dog_is_dying
+# 								}
+# 								trigger_event = pet_animal.1199
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 			#Dispute over a spit of land that grows the best cabbages.
+# 			125 = {
+# 				#Both knights must care at least a little about money, and at least one a little too much.
+# 				trigger = {
+# 					NOR = {
+# 						scope:first_knight = {
+# 							OR = {
+# 								has_trait = generous
+# 								has_trait = profligate
+# 								has_trait = improvident
+# 							}
+# 						}
+# 						scope:second_knight = {
+# 							OR = {
+# 								has_trait = generous
+# 								has_trait = profligate
+# 								has_trait = improvident
+# 							}
+# 						}
+# 					}
+# 					OR = {
+# 						scope:first_knight = { has_trait = greedy }
+# 						scope:second_knight = { has_trait = greedy }
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = dispute_nature
+# 					value = flag:spit_of_land
+# 				}
+# 			}
+# 			#Dispute over an unrepeatable insult involving a goat & a good drinking horn.
+# 			125 = {
+# 				#Both knights must be the type to let the insult escalate, and at least one to take it too far.
+# 				trigger = {
+# 					NOR = {
+# 						scope:first_knight = { has_trait = calm }
+# 						scope:second_knight = { has_trait = calm }
+# 					}
+# 					OR = {
+# 						scope:first_knight = { has_trait = wrathful }
+# 						scope:first_knight = { has_trait = wrathful}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = dispute_nature
+# 					value = flag:unrepeatable_insult
+# 				}
+# 			}
+# 			#Dispute resulting from an escalating prank war.
+# 			125 = {
+# 				#Both knights must be people who might get involved in such a thing, and one should be the type to take it too far.
+# 				trigger = {
+# 					NOR = {
+# 						scope:first_knight = {
+# 							OR = {
+# 								has_trait = shy
+# 								has_trait = reclusive
+# 							}
+# 						}
+# 						scope:second_knight = {
+# 							OR = {
+# 								has_trait = shy
+# 								has_trait = reclusive
+# 							}
+# 						}
+# 					}
+# 					OR = {
+# 						scope:first_knight = { has_trait = vengeful }
+# 						scope:second_knight = { has_trait = vengeful }
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = dispute_nature
+# 					value = flag:escalating_prank_war
+# 				}
+# 			}
+# 			#Dispute over religious differences.
+# 			125 = {
+# 				#Both knights must find each other's faiths disagreeable.
+# 				trigger = {
+# 					scope:first_knight.faith = {
+# 						faith_hostility_level = {
+# 							target = scope:second_knight.faith
+# 							value >= faith_hostile_level
+# 						}
+# 					}
+# 					scope:second_knight.faith = {
+# 						faith_hostility_level = {
+# 							target = scope:first_knight.faith
+# 							value >= faith_hostile_level
+# 						}
+# 					}
+# 					#Quietly exclude sceptics also.
+# 					NOR = {
+# 						scope:first_knight = { has_trait = cynical }
+# 						scope:second_knight = { has_trait = cynical }
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = dispute_nature
+# 					value = flag:religious_differences
+# 				}
+# 			}
+# 			#Dispute over a stolen pig.
+# 			125 = {
+# 				trigger = {
+# 					#Exempt faiths that don't eat pork: technically the pig could be as a pet or for non-edible purposes, but it scans best if we just don't bring this up.
+# 					# NOR = {
+# 					# 	scope:first_knight = {
+# 					# 		OR = {
+# 					# 			religion = religion:judaism_religion
+# 					# 			religion = religion:islam_religion
+# 					# 		}
+# 					# 	}
+# 					# 	scope:second_knight = {
+# 					# 		OR = {
+# 					# 			religion = religion:judaism_religion
+# 					# 			religion = religion:islam_religion
+# 					# 		}
+# 					# 	}
+# 					# }
+# 				}
+# 				save_scope_value_as = {
+# 					name = dispute_nature
+# 					value = flag:stolen_pig
+# 				}
+# 			}
+# 			#Dispute resulting from someone making a sea-going vessel a bit saltier.
+# 			125 = {
+# 				#Requires at least one knight to be a deviant.
+# 				trigger = {
+# 					OR = {
+# 						scope:first_knight = { deviant_knight_trigger = yes }
+# 						scope:second_knight = { deviant_knight_trigger = yes }
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = dispute_nature
+# 					value = flag:defiled_longboat
+# 				}
+# 				#Specify who defiled who's longboat.
+# 				if = {
+# 					limit = {
+# 						scope:first_knight = { deviant_knight_trigger = yes }
+# 					}
+# 					scope:first_knight = { save_scope_as = defiling_knight }
+# 					scope:second_knight = { save_scope_as = unfortunate_knight }
+# 				}
+# 				else = {
+# 					scope:second_knight = { save_scope_as = defiling_knight }
+# 					scope:first_knight = { save_scope_as = unfortunate_knight }
+# 				}
+# 			}
+# 			#Dispute resulting from the mysterious Viking board game.
+# 			125 = {
+# 				#No trigger, fallback.
+# 				save_scope_value_as = {
+# 					name = dispute_nature
+# 					value = flag:board_game
+# 				}
+# 			}
+# 		}
+# 	}
 
-#	Two knights fight to the death over nothing.
-fp1_yearly.0021 = {
-	type = character_event
-	title = fp1_yearly.0021.t
-	desc = {
-		desc = fp1_yearly.0021.desc.intro
-		first_valid = {
-			triggered_desc = {
-				trigger = { scope:dispute_nature = flag:doggo }
-				desc = fp1_yearly.0021.desc.doggo
-			}
-			triggered_desc = {
-				trigger = { scope:dispute_nature = flag:spit_of_land }
-				desc = fp1_yearly.0021.desc.spit_of_land
-			}
-			triggered_desc = {
-				trigger = { scope:dispute_nature = flag:unrepeatable_insult }
-				desc = fp1_yearly.0021.desc.unrepeatable_insult
-			}
-			triggered_desc = {
-				trigger = { scope:dispute_nature = flag:escalating_prank_war }
-				desc = fp1_yearly.0021.desc.escalating_prank_war
-			}
-			triggered_desc = {
-				trigger = { scope:dispute_nature = flag:religious_differences }
-				desc = fp1_yearly.0021.desc.religious_differences
-			}
-			triggered_desc = {
-				trigger = { scope:dispute_nature = flag:stolen_pig }
-				desc = fp1_yearly.0021.desc.stolen_pig
-			}
-			# Female Variant.
-			triggered_desc = {
-				trigger = {
-					scope:dispute_nature = flag:defiled_longboat
-					scope:defiling_knight = { is_female = yes }
-				}
-				desc = fp1_yearly.0021.desc.defiled_longboat.woman
-			}
-			# Male Variant.
-			triggered_desc = {
-				trigger = {
-					scope:dispute_nature = flag:defiled_longboat
-					scope:defiling_knight = { is_male = yes }
-				}
-				desc = fp1_yearly.0021.desc.defiled_longboat
-			}
-			triggered_desc = {
-				trigger = { scope:dispute_nature = flag:board_game }
-				desc = fp1_yearly.0021.desc.board_game
-			}
-		}
-		desc = fp1_yearly.0021.desc.outro
-	}
-	theme = unfriendly
-	left_portrait = {
-		character = scope:first_knight
-		animation = anger
-	}
-	right_portrait = {
-		character = scope:second_knight
-		animation = disgust
-	}
-	override_background = { reference = wilderness }
+# 	#Strictly forbid them.
+# 	option = {
+# 		name = fp1_yearly.0021.b
 
-	trigger = {
-		#DLC check.
-		has_fp1_dlc_trigger = yes
-		#Standard checks.
-		is_available_at_peace_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0021 }
-		is_landed = yes
-		#Must be North Germanic.
-		culture = { has_cultural_pillar = heritage_north_germanic }
-		#Holmgangs must still be in fashion.
-		NOT = {
-			culture = { has_cultural_era_or_later = culture_era_high_medieval }
-		}
-		#Must have at least two knights available who can get into a dispute.
-		any_knight = {
-			count >= 2
-			suitable_knight_for_dispute_trigger = yes
-		}
-	}
+# 		#Then, we see if your rule is feared or jeered.
+# 		duel = {
+# 			skill = intrigue
+# 			value = 12
+# 			#You successfully terrify them into not fighting.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0021.b.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0021.b.tt_success
+# 					left_icon = scope:first_knight
+# 					add_dread = medium_dread_gain
+# 					add_prestige = minor_prestige_gain
+# 				}
+# 			}
+# 			#They begrudgingly agree not to fight, but shit-talk you for it.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0021.b.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0021.b.tt_failure
+# 					left_icon = scope:first_knight
+# 					add_dread = medium_dread_loss
+# 					add_prestige = minor_prestige_loss
+# 				}
+# 			}
+# 		}
 
-	weight_multiplier = {
-		base = 1
-	}
+# 		#Regardless of outcome, they dislike you for this.
+# 		reverse_add_opinion = {
+# 			target = scope:first_knight
+# 			modifier = respect_opinion
+# 			opinion = -30
+# 		}
+# 		reverse_add_opinion = {
+# 			target = scope:second_knight
+# 			modifier = respect_opinion
+# 			opinion = -30
+# 		}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0021
-			days = 1825
-		}
-		#Sort Actors.
-		##Grab capital barony for loc.
-		capital_barony = { save_scope_as = capital_barony }
-		##Grab the first knight.
-		random_knight = {
-			limit = { suitable_knight_for_dispute_trigger = yes }
-			save_scope_as = first_knight
-		}
-		##Grab the second knight.
-		random_knight = {
-			limit = {
-				suitable_knight_for_dispute_trigger = yes
-				NOT = { this = scope:first_knight }
-			}
-			save_scope_as = second_knight
-		}
-		##Just make them hate each other a little.
-		scope:first_knight = {
-			add_opinion = {
-				target = scope:second_knight
-				modifier = respect_opinion
-				opinion = -40
-			}
-			reverse_add_opinion = {
-				target = scope:second_knight
-				modifier = respect_opinion
-				opinion = -40
-			}
-			progress_towards_rival_effect = {
-				REASON = rival_knights_slapfight
-				CHARACTER = scope:second_knight
-				OPINION = 0
-			}
-		}
-		#Pick which dispute type they'll have.
-		##Eight options of 12.5% chance each.
-		random_list = {
-			#Dispute over a pet killed in an accident.
-			125 = {
-				#No trigger, fallback.
-				save_scope_value_as = {
-					name = dispute_nature
-					value = flag:doggo
-				}
-				select_local_animal_effect = { TYPE = any } # Save scope to limit possible animals: any/big/small/dangerous/harmless/prowling
-				# And, if scope:second_knight actually has a doggo, kill it.
-				scope:second_knight = {
-					if = {
-						limit = {
-							any_owned_story = {
-								story_type = story_cycle_pet_dog
-								exists = story_owner.var:story_cycle_dog_name
-							}
-						}
-						random_owned_story = {
-							limit = {
-								story_type = story_cycle_pet_dog
-								exists = story_owner.var:story_cycle_dog_name
-							}
-							story_owner = {
-								add_character_flag = {
-									flag = dog_is_dying
-								}
-								trigger_event = pet_animal.1199
-							}
-						}
-					}
-				}
-			}
-			#Dispute over a spit of land that grows the best cabbages.
-			125 = {
-				#Both knights must care at least a little about money, and at least one a little too much.
-				trigger = {
-					NOR = {
-						scope:first_knight = {
-							OR = {
-								has_trait = generous
-								has_trait = profligate
-								has_trait = improvident
-							}
-						}
-						scope:second_knight = {
-							OR = {
-								has_trait = generous
-								has_trait = profligate
-								has_trait = improvident
-							}
-						}
-					}
-					OR = {
-						scope:first_knight = { has_trait = greedy }
-						scope:second_knight = { has_trait = greedy }
-					}
-				}
-				save_scope_value_as = {
-					name = dispute_nature
-					value = flag:spit_of_land
-				}
-			}
-			#Dispute over an unrepeatable insult involving a goat & a good drinking horn.
-			125 = {
-				#Both knights must be the type to let the insult escalate, and at least one to take it too far.
-				trigger = {
-					NOR = {
-						scope:first_knight = { has_trait = calm }
-						scope:second_knight = { has_trait = calm }
-					}
-					OR = {
-						scope:first_knight = { has_trait = wrathful }
-						scope:first_knight = { has_trait = wrathful}
-					}
-				}
-				save_scope_value_as = {
-					name = dispute_nature
-					value = flag:unrepeatable_insult
-				}
-			}
-			#Dispute resulting from an escalating prank war.
-			125 = {
-				#Both knights must be people who might get involved in such a thing, and one should be the type to take it too far.
-				trigger = {
-					NOR = {
-						scope:first_knight = {
-							OR = {
-								has_trait = shy
-								has_trait = reclusive
-							}
-						}
-						scope:second_knight = {
-							OR = {
-								has_trait = shy
-								has_trait = reclusive
-							}
-						}
-					}
-					OR = {
-						scope:first_knight = { has_trait = vengeful }
-						scope:second_knight = { has_trait = vengeful }
-					}
-				}
-				save_scope_value_as = {
-					name = dispute_nature
-					value = flag:escalating_prank_war
-				}
-			}
-			#Dispute over religious differences.
-			125 = {
-				#Both knights must find each other's faiths disagreeable.
-				trigger = {
-					scope:first_knight.faith = {
-						faith_hostility_level = {
-							target = scope:second_knight.faith
-							value >= faith_hostile_level
-						}
-					}
-					scope:second_knight.faith = {
-						faith_hostility_level = {
-							target = scope:first_knight.faith
-							value >= faith_hostile_level
-						}
-					}
-					#Quietly exclude sceptics also.
-					NOR = {
-						scope:first_knight = { has_trait = cynical }
-						scope:second_knight = { has_trait = cynical }
-					}
-				}
-				save_scope_value_as = {
-					name = dispute_nature
-					value = flag:religious_differences
-				}
-			}
-			#Dispute over a stolen pig.
-			125 = {
-				trigger = {
-					#Exempt faiths that don't eat pork: technically the pig could be as a pet or for non-edible purposes, but it scans best if we just don't bring this up.
-					# NOR = {
-					# 	scope:first_knight = {
-					# 		OR = {
-					# 			religion = religion:judaism_religion
-					# 			religion = religion:islam_religion
-					# 		}
-					# 	}
-					# 	scope:second_knight = {
-					# 		OR = {
-					# 			religion = religion:judaism_religion
-					# 			religion = religion:islam_religion
-					# 		}
-					# 	}
-					# }
-				}
-				save_scope_value_as = {
-					name = dispute_nature
-					value = flag:stolen_pig
-				}
-			}
-			#Dispute resulting from someone making a sea-going vessel a bit saltier.
-			125 = {
-				#Requires at least one knight to be a deviant.
-				trigger = {
-					OR = {
-						scope:first_knight = { deviant_knight_trigger = yes }
-						scope:second_knight = { deviant_knight_trigger = yes }
-					}
-				}
-				save_scope_value_as = {
-					name = dispute_nature
-					value = flag:defiled_longboat
-				}
-				#Specify who defiled who's longboat.
-				if = {
-					limit = {
-						scope:first_knight = { deviant_knight_trigger = yes }
-					}
-					scope:first_knight = { save_scope_as = defiling_knight }
-					scope:second_knight = { save_scope_as = unfortunate_knight }
-				}
-				else = {
-					scope:second_knight = { save_scope_as = defiling_knight }
-					scope:first_knight = { save_scope_as = unfortunate_knight }
-				}
-			}
-			#Dispute resulting from the mysterious Viking board game.
-			125 = {
-				#No trigger, fallback.
-				save_scope_value_as = {
-					name = dispute_nature
-					value = flag:board_game
-				}
-			}
-		}
-	}
+# 		stress_impact = {
+# 			arbitrary = minor_stress_impact_loss
+# 			just = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.25
+# 				ai_vengefulness = -0.25
+# 				ai_rationality = -0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = just
+# 			}
+# 		}
+# 	}
 
-	#Strictly forbid them.
-	option = {
-		name = fp1_yearly.0021.b
+# 	#Bet on scope:first_knight.
+# 	option = {
+# 		name = fp1_yearly.0021.c
 
-		#Then, we see if your rule is feared or jeered.
-		duel = {
-			skill = intrigue
-			value = 12
-			#You successfully terrify them into not fighting.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0021.b.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0021.b.tt_success
-					left_icon = scope:first_knight
-					add_dread = medium_dread_gain
-					add_prestige = minor_prestige_gain
-				}
-			}
-			#They begrudgingly agree not to fight, but shit-talk you for it.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0021.b.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0021.b.tt_failure
-					left_icon = scope:first_knight
-					add_dread = medium_dread_loss
-					add_prestige = minor_prestige_loss
-				}
-			}
-		}
+# 		#Sort the duel.
+# 		scope:first_knight = {
+# 			duel = {
+# 				skill = prowess
+# 				target = scope:second_knight
+# 				#scope:first_knight wins!
+# 				50 = {
+# 					compare_modifier = {
+# 						value = scope:duel_value
+# 						multiplier = 3.5
+# 						min = -49
+# 					}
+# 					desc = fp1_yearly.0021.c.tt_success
+# 					root = {
+# 						send_interface_toast = {
+# 							title = fp1_yearly.0021.c.tt_success
+# 							left_icon = scope:first_knight
+# 							add_gold = minor_gold_value
+# 							holmgang_results_effect = {
+# 								WINNER = scope:first_knight
+# 								LOSER = scope:second_knight
+# 							}
+# 						}
+# 					}
+# 				}
+# 				#scope:second_knight wins!
+# 				50 = {
+# 					compare_modifier = {
+# 						value = scope:duel_value
+# 						multiplier = -3.5
+# 						min = -49
+# 					}
+# 					desc = fp1_yearly.0021.c.tt_failure
+# 					root = {
+# 						send_interface_toast = {
+# 							title = fp1_yearly.0021.c.tt_failure
+# 							left_icon = scope:second_knight
+# 							remove_short_term_gold = minor_gold_value
+# 							holmgang_results_effect = {
+# 								WINNER = scope:second_knight
+# 								LOSER = scope:first_knight
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
 
-		#Regardless of outcome, they dislike you for this.
-		reverse_add_opinion = {
-			target = scope:first_knight
-			modifier = respect_opinion
-			opinion = -30
-		}
-		reverse_add_opinion = {
-			target = scope:second_knight
-			modifier = respect_opinion
-			opinion = -30
-		}
+# 		stress_impact = {
+# 			greedy = minor_stress_impact_loss
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 0.5
+# 				ai_compassion = -0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = greedy
+# 			}
+# 		}
+# 	}
 
-		stress_impact = {
-			arbitrary = minor_stress_impact_loss
-			just = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.25
-				ai_vengefulness = -0.25
-				ai_rationality = -0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = arbitrary
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = just
-			}
-		}
-	}
+# 	#Bet on scope:second_knight.
+# 	option = {
+# 		name = fp1_yearly.0021.d
 
-	#Bet on scope:first_knight.
-	option = {
-		name = fp1_yearly.0021.c
+# 		#Sort the duel.
+# 		scope:first_knight = {
+# 			duel = {
+# 				skill = prowess
+# 				target = scope:second_knight
+# 				#scope:first_knight wins!
+# 				50 = {
+# 					compare_modifier = {
+# 						value = scope:duel_value
+# 						multiplier = 3.5
+# 						min = -49
+# 					}
+# 					desc = fp1_yearly.0021.d.tt_failure
+# 					root = {
+# 						send_interface_toast = {
+# 							title = fp1_yearly.0021.d.tt_failure
+# 							left_icon = scope:first_knight
+# 							remove_short_term_gold = minor_gold_value
+# 							holmgang_results_effect = {
+# 								WINNER = scope:first_knight
+# 								LOSER = scope:second_knight
+# 							}
+# 						}
+# 					}
+# 				}
+# 				#scope:second_knight wins!
+# 				50 = {
+# 					compare_modifier = {
+# 						value = scope:duel_value
+# 						multiplier = -3.5
+# 						min = -49
+# 					}
+# 					desc = fp1_yearly.0021.d.tt_success
+# 					root = {
+# 						send_interface_toast = {
+# 							title = fp1_yearly.0021.d.tt_success
+# 							left_icon = scope:second_knight
+# 							add_gold = minor_gold_value
+# 							holmgang_results_effect = {
+# 								WINNER = scope:second_knight
+# 								LOSER = scope:first_knight
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
 
-		#Sort the duel.
-		scope:first_knight = {
-			duel = {
-				skill = prowess
-				target = scope:second_knight
-				#scope:first_knight wins!
-				50 = {
-					compare_modifier = {
-						value = scope:duel_value
-						multiplier = 3.5
-						min = -49
-					}
-					desc = fp1_yearly.0021.c.tt_success
-					root = {
-						send_interface_toast = {
-							title = fp1_yearly.0021.c.tt_success
-							left_icon = scope:first_knight
-							add_gold = minor_gold_value
-							holmgang_results_effect = {
-								WINNER = scope:first_knight
-								LOSER = scope:second_knight
-							}
-						}
-					}
-				}
-				#scope:second_knight wins!
-				50 = {
-					compare_modifier = {
-						value = scope:duel_value
-						multiplier = -3.5
-						min = -49
-					}
-					desc = fp1_yearly.0021.c.tt_failure
-					root = {
-						send_interface_toast = {
-							title = fp1_yearly.0021.c.tt_failure
-							left_icon = scope:second_knight
-							remove_short_term_gold = minor_gold_value
-							holmgang_results_effect = {
-								WINNER = scope:second_knight
-								LOSER = scope:first_knight
-							}
-						}
-					}
-				}
-			}
-		}
+# 		stress_impact = {
+# 			greedy = minor_stress_impact_loss
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 0.5
+# 				ai_compassion = -0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = greedy
+# 			}
+# 		}
+# 	}
 
-		stress_impact = {
-			greedy = minor_stress_impact_loss
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 0.5
-				ai_compassion = -0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = greedy
-			}
-		}
-	}
+# 	#Grant them permission.
+# 	option = {
+# 		name = fp1_yearly.0021.a
 
-	#Bet on scope:second_knight.
-	option = {
-		name = fp1_yearly.0021.d
+# 		#Sort the duel.
+# 		scope:first_knight = {
+# 			duel = {
+# 				skill = prowess
+# 				target = scope:second_knight
+# 				#scope:first_knight wins!
+# 				50 = {
+# 					compare_modifier = {
+# 						value = scope:duel_value
+# 						multiplier = 3.5
+# 						min = -49
+# 					}
+# 					desc = fp1_yearly.0021.a.tt_success
+# 					root = {
+# 						send_interface_toast = {
+# 							title = fp1_yearly.0021.a.tt_success
+# 							left_icon = scope:first_knight
+# 							add_hook = {
+# 								type = favor_hook
+# 								target = scope:first_knight
+# 							}
+# 							holmgang_results_effect = {
+# 								WINNER = scope:first_knight
+# 								LOSER = scope:second_knight
+# 							}
+# 						}
+# 					}
+# 				}
+# 				#scope:second_knight wins!
+# 				50 = {
+# 					compare_modifier = {
+# 						value = scope:duel_value
+# 						multiplier = -3.5
+# 						min = -49
+# 					}
+# 					desc = fp1_yearly.0021.a.tt_failure
+# 					root = {
+# 						send_interface_toast = {
+# 							title = fp1_yearly.0021.a.tt_failure
+# 							left_icon = scope:second_knight
+# 							add_hook = {
+# 								type = favor_hook
+# 								target = scope:second_knight
+# 							}
+# 							holmgang_results_effect = {
+# 								WINNER = scope:second_knight
+# 								LOSER = scope:first_knight
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
 
-		#Sort the duel.
-		scope:first_knight = {
-			duel = {
-				skill = prowess
-				target = scope:second_knight
-				#scope:first_knight wins!
-				50 = {
-					compare_modifier = {
-						value = scope:duel_value
-						multiplier = 3.5
-						min = -49
-					}
-					desc = fp1_yearly.0021.d.tt_failure
-					root = {
-						send_interface_toast = {
-							title = fp1_yearly.0021.d.tt_failure
-							left_icon = scope:first_knight
-							remove_short_term_gold = minor_gold_value
-							holmgang_results_effect = {
-								WINNER = scope:first_knight
-								LOSER = scope:second_knight
-							}
-						}
-					}
-				}
-				#scope:second_knight wins!
-				50 = {
-					compare_modifier = {
-						value = scope:duel_value
-						multiplier = -3.5
-						min = -49
-					}
-					desc = fp1_yearly.0021.d.tt_success
-					root = {
-						send_interface_toast = {
-							title = fp1_yearly.0021.d.tt_success
-							left_icon = scope:second_knight
-							add_gold = minor_gold_value
-							holmgang_results_effect = {
-								WINNER = scope:second_knight
-								LOSER = scope:first_knight
-							}
-						}
-					}
-				}
-			}
-		}
-
-		stress_impact = {
-			greedy = minor_stress_impact_loss
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 0.5
-				ai_compassion = -0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = greedy
-			}
-		}
-	}
-
-	#Grant them permission.
-	option = {
-		name = fp1_yearly.0021.a
-
-		#Sort the duel.
-		scope:first_knight = {
-			duel = {
-				skill = prowess
-				target = scope:second_knight
-				#scope:first_knight wins!
-				50 = {
-					compare_modifier = {
-						value = scope:duel_value
-						multiplier = 3.5
-						min = -49
-					}
-					desc = fp1_yearly.0021.a.tt_success
-					root = {
-						send_interface_toast = {
-							title = fp1_yearly.0021.a.tt_success
-							left_icon = scope:first_knight
-							add_hook = {
-								type = favor_hook
-								target = scope:first_knight
-							}
-							holmgang_results_effect = {
-								WINNER = scope:first_knight
-								LOSER = scope:second_knight
-							}
-						}
-					}
-				}
-				#scope:second_knight wins!
-				50 = {
-					compare_modifier = {
-						value = scope:duel_value
-						multiplier = -3.5
-						min = -49
-					}
-					desc = fp1_yearly.0021.a.tt_failure
-					root = {
-						send_interface_toast = {
-							title = fp1_yearly.0021.a.tt_failure
-							left_icon = scope:second_knight
-							add_hook = {
-								type = favor_hook
-								target = scope:second_knight
-							}
-							holmgang_results_effect = {
-								WINNER = scope:second_knight
-								LOSER = scope:first_knight
-							}
-						}
-					}
-				}
-			}
-		}
-
-		stress_impact = {
-			just = minor_stress_impact_loss
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = 0.5
-				ai_vengefulness = 0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = just
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			just = minor_stress_impact_loss
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = 0.5
+# 				ai_vengefulness = 0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = just
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # A Mighty Warrior with a Big Personality Arrives
