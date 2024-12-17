@@ -129,3 +129,159 @@ l5r_yearly.0001 = {
 }
 
 
+
+
+#########################
+#  Learning Mahotsukai ways
+# by  Leskinen          #
+# 1000-1010				#
+#########################
+l5r_yearly.1000 = { 
+	content_source = l5r_dlc
+	type = character_event
+
+	title = l5r_yearly.1000.t
+	desc = l5r_yearly.1000.desc
+	theme = witchcraft
+	left_portrait = {
+		character = root
+		animation = page_flipping
+	}
+	override_background = { reference = study }
+
+	trigger = {
+		# Standard checks.
+		is_available_at_peace_adult = yes
+		NOT = { has_character_flag = had_event_trait_specific_l5r_yearly_1000 }
+		# Is a witch
+		is_witch_trigger = yes
+		# Can't already be a mahotsukai.
+		is_mahotsukai = no
+
+
+	}
+
+	weight_multiplier = {
+		base = 0.70
+		modifier = { #Less likely if you already have an "extreme" trait
+			add = -0.5
+			has_special_content_trait = yes
+		}
+		modifier = {
+			add = 0.5
+			any_courtier_or_guest = { is_witch_trigger = yes }
+		}
+		modifier = {
+			add = {
+				value = root.learning
+				multiply = 0.2
+			}
+		}
+		modifier = {
+			add = -0.5
+			has_trait = zealous
+		}
+		base = 1
+		modifier = {
+			add = 0.25
+			learning >= very_high_skill_rating
+		}
+		modifier = {
+			add = 0.25
+			learning <= low_skill_rating
+		}
+		# Weight up for people with learning education.
+		modifier = {
+			add = 0.1
+			has_trait = education_learning
+		}
+		# More common for shindoshi ?
+		modifier = {
+			add = 0.1
+			has_trait = shindoshi
+		}
+	}
+
+	immediate = {
+		add_character_flag = { flag = had_event_trait_specific_l5r_yearly_1000 }
+
+		random_faith = {
+			limit = {
+				is_in_family = rf_shadowlands
+			}
+			save_scope_as = evil_faith
+		}
+	}
+
+
+	# I want to convert to this evil religion
+	option = {
+		name = l5r_yearly.1000.a
+
+		trigger = {
+			NOT = { root.faith = scope:evil_faith }
+		}
+
+		#Convert to the new evil religion.
+		set_character_faith_with_conversion = faith:evil_faith
+		add_piety = major_piety_loss
+		
+		add_internal_flag = dangerous
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 20
+				culture = {
+					OR = {
+						has_cultural_pillar = heritage_phoenix
+						has_cultural_pillar = heritage_chuda
+					}
+				}
+			}
+		}
+	}
+
+	# I want to convert to this evil religion AND become mahotsukai
+	option = {
+		name = l5r_yearly.1000.b
+
+		# Gain mahotsukai_1
+		add_trait = mahotsukai_1
+		increase_wounds_no_death_effect = { REASON = wounds }
+		# And convert
+		if = {
+			limit = {
+				NOT = { this.faith = scope:evil_faith }
+			}
+			#Convert to the new evil religion.
+			set_character_faith_with_conversion = scope:evil_faith
+		}
+
+		stress_impact = {
+			callous = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = 5
+				culture = {
+					OR = {
+						has_cultural_pillar = heritage_phoenix
+						has_cultural_pillar = heritage_chuda
+					}
+				}
+			}
+		}
+	}
+	
+	
+	option = { #heresy!
+		name = l5r_yearly.1000.c
+		add_piety = medium_piety_gain
+		ai_chance = {
+			base = 100
+		}
+	}
+
+}

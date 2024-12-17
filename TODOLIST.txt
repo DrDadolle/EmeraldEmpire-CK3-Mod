@@ -63,6 +63,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - update loc book_topic_learning_mufaddaliyat
 - Why always fortunism faith goes heretic ? Up the base fervor of seven fortunes ?
 - Why always there is rebellion early game ? (especially in unicorn)
+- transform "mahotsukai" trait into the secret / trait combo of witch
 
 ## Fixes to do
 - The l5r_title_events.0001 events breaks vassalage (but AI fixes it quickly anyway, so that's ok). Maybe enhance the script to give vassals as well ?
@@ -215,5 +216,4 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - in lotr_race_triggers : culture_conversion_to_allowed_culture & same_race & has_same_species_as. it is used everywhere to prevent weird culture stuff
 	- prevent bethrohal in lotr_betrothal_to_allowed
 	- prevent cultural hybridization for instance : lotr_is_spirit_culture_trigger usage in "scripted_triggers" dir, used in 00_culture_interactions & culture_events/culture_emergence_events
-	- present in scripted_rules\00_rules
 	- present in scripted_rules\00_rules
