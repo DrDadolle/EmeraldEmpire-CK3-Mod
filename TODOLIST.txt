@@ -29,23 +29,21 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - remove bunch of errors
 - % de chance shindoshi/ishiken TROP BAS ! STILL TOO FEW
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
+- update common/travel/point_of_interest_types/travel_point_of_interest_types.txt 
+	- test it. Should be in b_shimomura & b_watch_tower_east
 - TEST : shiro chuda if correct value at start. Check if side building created, kept upon reaching level 4
+	- Change Chuda ruins requirements to NOT necessite castle innovations
 - Fix era time line. 
 - Add thumbnail image for the mod !
 
-## CK3 1.14.2 patch
-- update common/travel/point_of_interest_types/travel_point_of_interest_types.txt 
 
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)
 - restore court_events_general.txt from vanilla
 - add moto culture AS hybrid culture ujik/unicorn
-- Can you raid as Mantis ? If yes, why AI does not do it ?
-	- Cannot raid inside same realm : change this
 - found Great Clan description decision
 	- missing description descision, issue with custom description
 - Tortoise clan always destroy their title, why ????
-- Change Chuda ruins requirements to NOT necessite castle innovations
 - Update "Reclaim Yasuki Family lands" & "Reborn Snake" decision
 	- check description Yasuki decision
 	- check yasuki crane culture (tribal)
@@ -95,13 +93,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Add CoA placeholder : missing Frog Duchy, Kingdom of Cherry blossom and that's it ?
 
 ## Workaround to be careful with & unsure behaviours
-- headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
-- Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
-- How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
-- start war on toshi Rambo / city rich frog decision
+- WORKAROUND : headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
+- WORKAROUND : Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
+- BUG : How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
+- BUG : start war on toshi Rambo / city rich frog decision
 	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
-- weird log issue : [19:35:39][characterhistory.cpp:801]: Parent ( Hantei of  (Internal ID: 3 - Historical ID lineofhantei1)) of name_genji Lowborn of  (Internal ID: 18 - Historical ID lineofhantei2) is hasn't been born
-- event l5r_clan_decision.0001 display chances of being wounded, send a toast, but it doesn't appear in the final "option" of the event chain.
+- BUG : weird log issue : [19:35:39][characterhistory.cpp:801]: Parent ( Hantei of  (Internal ID: 3 - Historical ID lineofhantei1)) of name_genji Lowborn of  (Internal ID: 18 - Historical ID lineofhantei2) is hasn't been born
+- BUG : We cannot raid inside the same realm. Thus Mantis won't raid Cranes :(
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================
