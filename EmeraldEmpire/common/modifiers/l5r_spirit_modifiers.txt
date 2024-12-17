@@ -1,0 +1,14 @@
+﻿# Link to pray_spirits shindoshi events
+tormented_by_air_spirit = {
+	icon = stress_negative
+	stress_gain_mult = 0.1
+	diplomacy = -1
+	learning = -1
+	general_opinion = -5
+}
+
+amused_by_air_spirit = {
+	icon = stress_positive
+	stress_gain_mult = -0.1
+	learning = 1
+}

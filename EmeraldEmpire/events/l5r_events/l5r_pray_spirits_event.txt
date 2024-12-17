@@ -64,9 +64,11 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 		name = l5r_pray_spirit.0001.a
 		remove_short_term_gold = minor_gold_value
 		custom_tooltip = l5r_pray_spirit.0001.a.tt
+
         stress_impact = {
 			greedy = miniscule_stress_impact_loss
 		}
+
 		hidden_effect = {
 			set_variable = {
 				name = pray_spirit_air_kami_cooldown
@@ -82,6 +84,37 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 		}
 	}
 
+	 #L5R TODO
+    # # Make someone afraid 
+	option = {
+		name = l5r_pray_spirit.0001.c
+		custom_tooltip = l5r_pray_spirit.0001.c.tt
+
+		stress_impact = {
+			compassionate = medium_stress_gain
+			honest = small_stress_gain
+          	deceitful = miniscule_stress_impact_loss
+		}
+
+		hidden_effect = {
+			set_variable = {
+				name = pray_spirit_air_kami_cooldown
+				years = 4
+			}
+		}
+		trigger_event = {
+			id = l5r_pray_spirit.0004
+		}
+
+		ai_chance = {
+			base = 50
+            ai_value_modifier = {
+				ai_vengefulness = 50
+				ai_compassion = -25
+			}
+		}
+	}
+
     #L5R TODO
     # # Pray to hear rumours
     # option = {
@@ -92,7 +125,7 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 	# 		shy = medium_stress_gain
 	# 	}
 	# 	trigger_event = {
-	# 		id = l5r_pray_spirit.0004
+	# 		id = l5r_pray_spirit.0006
 	# 		days = { 2 3 }
 	# 	}
 	# 	ai_chance = {
@@ -103,28 +136,7 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 	# 	}
 	# }
 
-    #L5R TODO
-    # # Make someone afraid 
-	# option = {
-	# 	name = l5r_pray_spirit.0001.c
-	# 	custom_tooltip = l5r_pray_spirit.0001.c.tt
-	# 	stress_impact = {
-	# 		compassionate = medium_stress_gain
-    #         deceitful = miniscule_stress_impact_loss
-	# 	}
-	# 	trigger_event = {
-	# 		id = l5r_pray_spirit.0006
-	# 		days = { 2 3 }
-	# 	}
 
-	# 	ai_chance = {
-	# 		base = 50
-    #         ai_value_modifier = {
-	# 			ai_vengefulness = 50
-	# 			ai_compassion = -25
-	# 		}
-	# 	}
-	# }
 
     # Back up
     option = {
@@ -137,9 +149,10 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 	}
 }
 
-######
+###########
 # Find Lost Object
 l5r_pray_spirit.0002 = {
+	content_source = l5r_dlc
 	type = character_event
 	title = l5r_pray_spirit.0002.t
 	desc = {
@@ -185,6 +198,7 @@ l5r_pray_spirit.0002 = {
 }
 
 l5r_pray_spirit.0003 = {
+	content_source = l5r_dlc
 	type = character_event
 	title = l5r_pray_spirit.0003.t
 	desc = { 
@@ -771,6 +785,680 @@ l5r_pray_spirit.0003 = {
 		else_if = {
 			limit = { scope:outcome = flag:ill }
 			contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
+		}
+	}
+}
+
+###########
+# Make someone afraid 
+l5r_pray_spirit.0004 = {
+	content_source = l5r_dlc
+	type = character_event
+	title = l5r_pray_spirit.0004.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:shindoshi_realm_priest
+				}
+				desc = l5r_pray_spirit.0002.desc.shindoshi
+			}
+			desc = l5r_pray_spirit.0002.desc
+		}	
+	}
+	override_background = { reference = fp3_cave }
+	theme = faith
+
+    left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {	 has_trait = cynical }
+			animation = disbelief
+		}
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		trigger = { exists = scope:shindoshi_realm_priest }
+		character = scope:shindoshi_realm_priest
+		animation = personality_zealous
+	}
+
+	option = {
+		name = l5r_pray_spirit.0002.a
+		custom_tooltip = l5r_pray_spirit.0002.a.tt
+		trigger_event = {
+			id = l5r_pray_spirit.0005
+			days = { 7 15 }
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+
+scripted_effect l5r_pray_spirit_0005_get_courtier_who_dont_like = {
+	# Checks for a valid rival or nemesis
+	if = {
+		limit = {
+			any_relation = {
+				type = nemesis
+				is_available_ai_adult = yes
+			}
+		}
+		random_relation = {
+			type = nemesis
+			limit = {
+				is_available_ai_adult = yes
+			}
+			save_scope_as = enemy
+		}
+	}
+	else_if = {
+		limit = {
+			any_relation = {
+				type = rival
+				is_available_ai_adult = yes
+			}
+		}
+		random_relation = {
+			type = rival
+			limit = {
+				is_available_ai_adult = yes
+			}
+			save_scope_as = enemy
+		}
+	}
+	else = { # grab a random courtier with a bad opinion of you
+		random_courtier = {
+			limit = {
+				opinion = {
+					target = root
+					value <= -50
+				}
+			}
+			save_scope_as = enemy
+		}		
+	}
+	if = { #grab a random courtier or guest if no enemy
+		limit = {
+			NOT = { exists = scope:enemy }
+		}
+		random_courtier = {
+			save_scope_as = enemy
+		}
+	}
+}
+
+l5r_pray_spirit.0005 = {
+	content_source = l5r_dlc
+	type = character_event
+	title = l5r_pray_spirit.0004.t
+	desc = { 
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = {
+						scope:outcome = flag:afraid
+						scope:outcome = flag:medium
+						scope:outcome = flag:very_afraid
+					}
+				}
+				desc = l5r_pray_spirit.0005.afraid.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:scared_to_death
+				}
+				desc = l5r_pray_spirit.0005.scared_to_death.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:laugh
+				}
+				desc = l5r_pray_spirit.0005.laugh.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:you_afraid
+				}
+				desc = l5r_pray_spirit.0005.you_afraid.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:no_change
+					has_trait = zealous
+				}
+				desc = l5r_pray_spirit.0003.no_change.zealous.desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:ill
+				}
+				desc = l5r_pray_spirit.0003.bad.desc
+			}
+			desc = l5r_pray_spirit.0003.no_change.desc
+		}
+	}
+	theme = faith
+	
+	left_portrait = {
+		character = root
+        triggered_animation = {
+			trigger = { 
+                OR = {
+					scope:outcome = flag:afraid
+					scope:outcome = flag:medium_afraid
+					scope:outcome = flag:very_afraid
+				}
+			}
+			animation = personality_rational
+		}
+		triggered_animation = {
+			trigger = { 
+                scope:outcome = flag:scared_to_death
+			}
+			animation = ecstasy
+		}
+        triggered_animation = {
+			trigger = { 
+                scope:outcome = flag:laugh
+			}
+			animation = disbelief
+		}
+        triggered_animation = {
+			trigger = { 
+				scope:outcome = flag:ill 
+			}
+			animation = sick
+		}
+		triggered_animation = {
+			trigger = { 
+				scope:outcome = flag:you_afraid 
+			}
+			animation = fear
+		}
+		animation = disbelief
+	}
+
+	right_portrait = {
+		trigger = { 
+			OR = {
+				scope:outcome = flag:laugh
+				scope:outcome = flag:scared_to_death
+				scope:outcome = flag:afraid
+				scope:outcome = flag:medium_afraid
+				scope:outcome = flag:very_afraid
+			}
+			exists = scope:enemy 
+		}
+
+		character = scope:enemy
+
+		triggered_animation = {
+			trigger = { 
+				OR = {
+					scope:outcome = flag:afraid
+					scope:outcome = flag:medium_afraid
+					scope:outcome = flag:very_afraid
+					scope:outcome = flag:scared_to_death 
+				}
+			}
+			animation = fear
+		}
+		triggered_animation = {
+			trigger = { 
+				scope:outcome = flag:laugh 
+			}
+			animation = laugh
+		}
+		animation = personality_rational
+	}
+
+
+	# scope:shindoshi_realm_priest
+	immediate = {
+		# Character cannot take this decision again for 2 years.
+		add_character_flag = {
+			flag = flag_prayed_spirits
+			years = 2
+		}
+
+
+		# Grab a random target who has negative opinion of you
+		l5r_pray_spirit_0005_get_courtier_who_dont_like = yes
+
+
+		# Use Shindoshi realm priest for this
+		if = {
+			limit = { exists = scope:shindoshi_realm_priest }
+			random_list = {
+				# Positive Effect
+				40 = { 
+					compare_modifier = {
+						value = {
+							value = scope:shindoshi_realm_priest.learning
+							subtract = 10
+						}
+					}
+					modifier = {
+						add = 10
+						scope:shindoshi_realm_priest = {has_trait = lifestyle_mystic}
+					}
+					random_list = {
+						# Big Scare
+						10 = {
+							# 
+							compare_modifier = {
+								value = {
+									value = scope:shindoshi_realm_priest.learning
+									subtract = 10
+								}
+							}
+							modifier = {
+								add = 10
+								scope:shindoshi_realm_priest = {has_trait = lifestyle_mystic}
+							}
+							modifier = {
+								add = 10
+								scope:shindoshi_realm_priest = {
+									has_trait = lifestyle_mystic
+									has_trait_xp = {
+										trait = lifestyle_mystic
+										value >= 50
+									}
+								}
+							}
+							modifier = {
+								add = 10
+								scope:shindoshi_realm_priest = {
+									has_trait = lifestyle_mystic
+									has_trait_xp = {
+										trait = lifestyle_mystic
+										value >= 100
+									}
+								}
+							}
+							random_list = {
+								90 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:very_afraid
+									}
+								}
+								10 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:scared_to_death
+									}
+								}
+							}
+						}
+						# small scare
+						90 = {
+							random_list = {
+								30 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:medium_afraid
+									}
+								}
+								70 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:afraid
+									}
+								}
+							}
+						}
+					}
+				}
+				# No Effect
+				40 = {
+					modifier = { # Cynical characters have less chances to receive benediction from spirits.
+						add = 40
+						has_trait = cynical
+					}
+					modifier = { # Zealous characters have more chances to receive benediction from spirits.
+						add = -20
+						has_trait = zealous
+					}
+					save_scope_value_as = {
+						name = outcome
+						value = flag:no_effect
+					}
+				}
+				# Negative Effect
+				20 = {
+					modifier = {
+						add = 20
+						has_trait = cynical
+					}
+					compare_modifier = {
+						value = {
+							value = 10
+							subtract = scope:shindoshi_realm_priest.learning
+							min = -10
+						}
+					}
+					random_list = {
+						30 = {
+							trigger = { can_contract_disease_trigger = { DISEASE = ill } }
+							save_scope_value_as = {
+								name = outcome
+								value = flag:ill
+							}
+						}
+						50 = {
+							save_scope_value_as = {
+								name = outcome
+								value = flag:laugh
+							}
+						}
+						20 = {
+							save_scope_value_as = {
+								name = outcome
+								value = flag:you_afraid
+							}
+						}
+					}
+				}
+			}
+		} 
+		else = { # Use own stats for this
+			# Determine what the impact of the ritual will be.
+			# If there is any tasty rumors, or stuff like that
+			random_list = {
+				# Positive Effect
+				40 = { 
+					compare_modifier = {
+						value = {
+							value = learning
+							subtract = 10
+						}
+					}
+					modifier = {
+						add = 10
+						has_trait = lifestyle_mystic
+					}
+					random_list = {
+						# Big Scare
+						10 = {
+							# 
+							compare_modifier = {
+								value = {
+									value = learning
+									subtract = 10
+								}
+							}
+							modifier = {
+								add = 10
+								has_trait = lifestyle_mystic
+							}
+							modifier = {
+								add = 10
+								has_trait = lifestyle_mystic
+								has_trait_xp = {
+									trait = lifestyle_mystic
+									value >= 50
+								}
+							}
+							modifier = {
+								add = 10
+								has_trait = lifestyle_mystic
+								has_trait_xp = {
+									trait = lifestyle_mystic
+									value >= 100
+								}
+							}
+							random_list = {
+								90 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:very_afraid
+									}
+								}
+								10 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:scared_to_death
+									}
+								}
+							}
+						}
+						# small scare
+						90 = {
+							random_list = {
+								30 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:medium_afraid
+									}
+								}
+								70 = {
+									save_scope_value_as = {
+										name = outcome
+										value = flag:afraid
+									}
+								}
+							}
+						}
+					}
+				}
+				# No Effect
+				40 = {
+					modifier = { # Cynical characters have less chances to receive benediction from spirits.
+						add = 40
+						has_trait = cynical
+					}
+					modifier = { # Zealous characters have more chances to receive benediction from spirits.
+						add = -20
+						has_trait = zealous
+					}
+					save_scope_value_as = {
+						name = outcome
+						value = flag:no_effect
+					}
+				}
+				# Negative Effect
+				20 = {
+					modifier = {
+						add = 20
+						has_trait = cynical
+					}
+					compare_modifier = {
+						value = {
+							value = 10
+							subtract = learning
+							min = -10
+						}
+					}
+					random_list = {
+						30 = {
+							trigger = { can_contract_disease_trigger = { DISEASE = ill } }
+							save_scope_value_as = {
+								name = outcome
+								value = flag:ill
+							}
+						}
+						50 = {
+							save_scope_value_as = {
+								name = outcome
+								value = flag:laugh
+							}
+						}
+						20 = {
+							save_scope_value_as = {
+								name = outcome
+								value = flag:you_afraid
+							}
+						}
+					}
+				}
+			}
+		}    
+
+        # If we failed to set the outcome flag, set it now.
+        if = {
+            limit = {
+                NOT = { exists = scope:outcome }
+            }
+            save_scope_value_as = {
+                name = outcome
+                value = flag:no_effect
+            }
+        }
+    }
+
+
+	option = {
+		# Custom name text based on ritual outcome.
+		name = {
+			trigger = { scope:outcome = flag:scared_to_death }
+			text = l5r_pray_spirit.0005.scared_to_death
+		}
+		name = {
+			trigger = {
+				OR = {
+                    scope:outcome = flag:afraid
+                    scope:outcome = flag:medium_afraid
+					scope:outcome = flag:very_afraid
+				}
+			}
+			text = l5r_pray_spirit.0005.afraid
+		}     
+		name = {
+			trigger = {	scope:outcome = flag:laugh	}
+			text = l5r_pray_spirit.0005.laugh
+		}
+		name = {
+			trigger = {	scope:outcome = flag:you_afraid	}
+			text = l5r_pray_spirit.0005.you_afraid
+		}
+		name = {
+			trigger = {
+				scope:outcome = flag:no_effect
+				has_trait = zealous
+			}
+			text = l5r_pray_spirit.0003.no_change.zealous
+		}
+		name = {
+			trigger = {
+				scope:outcome = flag:no_effect
+				NOT = { has_trait = zealous }
+			}
+			text = l5r_pray_spirit.0003.no_change
+		}
+        name = {
+			trigger = {	scope:outcome = flag:ill}
+			text = l5r_pray_spirit.0003.bad
+		}
+
+		# Apply the actual outcome effects:
+		# Good Outcomes
+		if = {
+			limit = { scope:outcome = flag:scared_to_death }
+			show_as_tooltip = {
+				# Their heart stops
+				scope:enemy = {
+					death = { death_reason = death_heatstroke }
+				}
+			}
+			# Their heart stops
+			scope:enemy = {
+				trigger_event = l5r_notification.0001
+			}
+		}
+		else_if = {
+			limit = { scope:outcome = flag:very_afraid }
+			show_as_tooltip = {
+				scope:enemy = {
+					add_stress = major_stress_gain
+					add_character_modifier = {
+						modifier = tormented_by_air_spirit
+						years = 5
+					}
+				}
+			}			
+			#enemy gain stress
+            scope:enemy = {
+				trigger_event = l5r_notification.0002
+			}
+			
+		}
+        else_if = {
+			limit = { scope:outcome = flag:medium_afraid }
+			show_as_tooltip = {
+				scope:enemy = {
+					add_stress = medium_stress_gain
+					add_character_modifier = {
+						modifier = tormented_by_air_spirit
+						years = 5
+					}
+				}
+			}			
+			#enemy gain stress
+            scope:enemy = {
+				trigger_event = l5r_notification.0003
+			}
+			
+		}
+		else_if = {
+			limit = { scope:outcome = flag:afraid }
+			show_as_tooltip = {
+				scope:enemy = {
+					add_stress = small_stress_gain
+					add_character_modifier = {
+						modifier = tormented_by_air_spirit
+						years = 5
+					}
+				}
+			}			
+			#enemy gain stress
+            scope:enemy = {
+				trigger_event = l5r_notification.0004
+			}
+			
+		}
+		# Bad Outcomes
+		else_if = {
+			limit = { scope:outcome = flag:ill }
+			contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
+		}
+		else_if = {
+			limit = { scope:outcome = flag:laugh }
+			show_as_tooltip = {
+				scope:enemy = {
+					add_stress = medium_stress_loss
+					add_character_modifier = {
+						modifier = amused_by_air_spirit
+						years = 5
+					}
+				}
+			}			
+			#enemy gain stress
+            scope:enemy = {
+				trigger_event = l5r_notification.0005
+			}
+
+		}
+		else_if = {
+			limit = { scope:outcome = flag:you_afraid }
+			# You get stress
+			root = {
+				add_stress = medium_stress_gain
+				if = {
+					limit = {
+						has_character_modifier = amused_by_air_spirit
+					}
+					remove_character_modifier = amused_by_air_spirit
+				}
+				add_character_modifier = {
+					modifier = tormented_by_air_spirit
+					years = 5
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,175 @@
+﻿namespace = l5r_notification
+
+
+### L5R Notification Events ###
+#			l5r_notification.0001 	death because of an air spirit prank 			(l5r_pray_spirit.0005)
+# 			l5r_notification.0002 	major stress because of an air spirit prank		(l5r_pray_spirit.0005)
+# 			l5r_notification.0003 	medium stress because of an air spirit prank	(l5r_pray_spirit.0005)
+# 			l5r_notification.0004 	small stress because of an air spirit prank		(l5r_pray_spirit.0005)
+# 			l5r_notification.0005 	stress loss because of a funny air spirit prank (l5r_pray_spirit.0005)
+
+#########################
+# Air Kami 	Prank 		#
+# by  Leskinen          #
+# 0001-0010				#
+#########################
+# Death following l5r_pray_spirit.0005
+l5r_notification.0001 = {
+	content_source = l5r_dlc
+
+	title = l5r_notification.0001.t
+	type = character_event
+	theme = death
+
+	desc = l5r_notification.0001.desc
+		
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = l5r_notification.0001.a
+		death = { death_reason = death_heatstroke }
+	}
+}
+
+# Major stress gain following l5r_pray_spirit.0005
+l5r_notification.0002 = {
+	content_source = l5r_dlc
+
+	title = l5r_notification.0002.t
+	type = character_event
+	theme = mental_health
+
+	desc = l5r_notification.0002.desc
+		
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = l5r_notification.0002.a
+		add_stress = major_stress_gain
+		if = {
+			limit = {
+				has_character_modifier = amused_by_air_spirit
+			}
+			remove_character_modifier = amused_by_air_spirit
+		}
+		add_character_modifier = {
+			modifier = tormented_by_air_spirit
+			years = 5
+		}
+	}
+}
+
+# Medium stress gain following l5r_pray_spirit.0005
+l5r_notification.0003 = {
+	content_source = l5r_dlc
+
+	title = l5r_notification.0003.t
+	type = character_event
+	theme = mental_health
+
+	desc = l5r_notification.0003.desc
+		
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = l5r_notification.0003.a
+		add_stress = medium_stress_gain
+		if = {
+			limit = {
+				has_character_modifier = amused_by_air_spirit
+			}
+			remove_character_modifier = amused_by_air_spirit
+		}
+		add_character_modifier = {
+			modifier = tormented_by_air_spirit
+			years = 5
+		}
+	}
+}
+
+# Small stress gain following l5r_pray_spirit.0005
+l5r_notification.0004 = {
+	content_source = l5r_dlc
+
+	title = l5r_notification.0004.t
+	type = character_event
+	theme = mental_health
+
+	desc = l5r_notification.0004.desc
+		
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = l5r_notification.0004.a
+		add_stress = small_stress_gain
+		if = {
+			limit = {
+				has_character_modifier = amused_by_air_spirit
+			}
+			remove_character_modifier = amused_by_air_spirit
+		}
+		add_character_modifier = {
+			modifier = tormented_by_air_spirit
+			years = 5
+		}
+		
+	}
+}
+
+# Small stress gain following l5r_pray_spirit.0005
+l5r_notification.0005 = {
+	content_source = l5r_dlc
+
+	title = l5r_notification.0005.t
+	type = character_event
+	theme = mental_health
+
+	desc = l5r_notification.0005.desc
+		
+	left_portrait = {
+		character = root
+		animation = laugh
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = l5r_notification.0005.a
+		add_stress = medium_stress_loss
+		if = {
+			limit = {
+				has_character_modifier = tormented_by_air_spirit
+			}
+			remove_character_modifier = tormented_by_air_spirit
+		}
+		add_character_modifier = {
+			modifier = amused_by_air_spirit
+			years = 5
+		}
+	}
+}
