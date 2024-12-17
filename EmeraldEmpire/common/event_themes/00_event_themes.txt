@@ -2811,10 +2811,11 @@ byzantine = {
 	sound = {
 		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_domain" #TODO_EP3: is there a sound effect coming?
 	}
-	background = {
-		trigger = { location = title:b_constantinople }
-		reference = ep3_constantinople
-	}
+	#L5R Disabled
+	# background = {
+	# 	trigger = { location = title:b_constantinople }
+	# 	reference = ep3_constantinople
+	# }
 	background = {
 		reference = ep3_byzantine_feast
 	}
