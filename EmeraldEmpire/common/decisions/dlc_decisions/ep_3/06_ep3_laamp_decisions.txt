@@ -2474,14 +2474,15 @@ zealous_missionary_prep_decision = {
 		custom_tooltip = {
 			text = zealous_missionary_prep_decision_reward_desc
 		}
-		if = {
-			limit = {
-				any_owned_story = {
-					story_type = story_hasan
-				}
-			}
-			custom_tooltip = chance_to_advance_to_the_assassins_tt
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		any_owned_story = {
+		# 			story_type = story_hasan
+		# 		}
+		# 	}
+		# 	custom_tooltip = chance_to_advance_to_the_assassins_tt
+		# }
 	}
 	
 	ai_check_interval = 32

@@ -934,7 +934,8 @@ can_recruit_archer_cavalry_trigger = {
 		text = can_recruit_archer_cavalry_trigger_desc
 		OR = {
 			can_create_maa = horse_archers
-			can_create_maa = asawira
+			#L5R Disabled
+			# can_create_maa = asawira
 			can_create_maa = accolade_maa_horse_archers
 		}
 	}
