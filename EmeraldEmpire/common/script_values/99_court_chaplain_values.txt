@@ -648,23 +648,24 @@ court_chaplain_conversion_contextual_bonuses = {
 	}
 
 	### GHW sans HoF buffs
-	if = {
-		limit = {
-			exists = scope:county
-			scope:councillor.faith = {
-				has_doctrine_parameter = ghw_no_hof_conversion_buffs_active
-				OR = {
-					has_doctrine_parameter = no_head_of_faith
-					NOT = { exists = religious_head }
-				}
-				holy_sites_controlled >= 1
-			}
-		}
-		add = {
-			value = scope:councillor.conversion_ghw_tenet_no_hof_bonus
-			desc = COURT_CHAPLAIN_CONVERSION_GHW_TENET_NO_HOF_MODIFIER
-		}
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		exists = scope:county
+	# 		scope:councillor.faith = {
+	# 			has_doctrine_parameter = ghw_no_hof_conversion_buffs_active
+	# 			OR = {
+	# 				has_doctrine_parameter = no_head_of_faith
+	# 				NOT = { exists = religious_head }
+	# 			}
+	# 			holy_sites_controlled >= 1
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.conversion_ghw_tenet_no_hof_bonus
+	# 		desc = COURT_CHAPLAIN_CONVERSION_GHW_TENET_NO_HOF_MODIFIER
+	# 	}
+	# }
 	### Chthonic Redoubts
 	if = {
 		limit = {
@@ -963,33 +964,35 @@ court_chaplain_conversion_contextual_bonuses = {
 
 	# Struggle Bonuses/Penalties
 	## Boost conversion in some phases.
-	if = {
-		limit = {
-			exists = scope:county
-			scope:county = {
-				any_county_struggle = { has_struggle_phase_parameter = county_faith_conversion_in_region_proceeds_faster }
-			}
-		}
-		add = {
-			value = scope:councillor.boost_county_conversion_phase_bonus_value
-			desc = CHAPLAIN_CONVERT_COUNTY_STRUGGLE_BONUS
-		}
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		exists = scope:county
+	# 		scope:county = {
+	# 			any_county_struggle = { has_struggle_phase_parameter = county_faith_conversion_in_region_proceeds_faster }
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.boost_county_conversion_phase_bonus_value
+	# 		desc = CHAPLAIN_CONVERT_COUNTY_STRUGGLE_BONUS
+	# 	}
+	# }
+	#L5R Disabled
 	## Reduce it in others.
-	if = {
-		limit = {
-			exists = scope:county
-			scope:county = {
-				any_county_struggle = {
-					has_struggle_phase_parameter = county_faith_conversion_in_region_proceeds_slower
-				}
-			}
-		}
-		add = {
-			value = scope:councillor.boost_county_conversion_phase_malus_value
-			desc = CHAPLAIN_CONVERT_COUNTY_STRUGGLE_PENALTY
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		exists = scope:county
+	# 		scope:county = {
+	# 			any_county_struggle = {
+	# 				has_struggle_phase_parameter = county_faith_conversion_in_region_proceeds_slower
+	# 			}
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.boost_county_conversion_phase_malus_value
+	# 		desc = CHAPLAIN_CONVERT_COUNTY_STRUGGLE_PENALTY
+	# 	}
+	# }
 
 	# FP3 ending
 	#L5R Disabled
@@ -1303,16 +1306,17 @@ conversion_culture_more_easily_converted = {
 
 conversion_pastoral_isolation_resistance = {
 	value = 0
-	if = {
-		limit = {
-			exists = scope:county
-			scope:county.faith = {
-				has_doctrine = tenet_pastoral_isolation
-			}
-		}
-		subtract = court_chaplain_conversion_base_total
-		multiply = 0.3
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		exists = scope:county
+	# 		scope:county.faith = {
+	# 			has_doctrine = tenet_pastoral_isolation
+	# 		}
+	# 	}
+	# 	subtract = court_chaplain_conversion_base_total
+	# 	multiply = 0.3
+	# }
 }
 
 conversion_communal_identity_resistance = {

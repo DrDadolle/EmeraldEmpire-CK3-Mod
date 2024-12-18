@@ -489,18 +489,18 @@ master_terrain_oasis_modifier = {
 	oasis_cancel_negative_supply = yes
 	oasis_attrition_mult = @master_terrain_attrition
 }
+#L5R Disabled
+# bp3_bosporan_kingdom_modifier = {
+# 	icon = stewardship_positive
+# 	# black_sea_coast_region_development_growth = 0.025
+# 	monthly_income = 0.03
 
-bp3_bosporan_kingdom_modifier = {
-	icon = stewardship_positive
-	# black_sea_coast_region_development_growth = 0.025
-	monthly_income = 0.03
-
-	scale = {
-		value = bosporan_kingdom_modifier_scale_value
-		desc = modifier_bosporan_kingdom_desc
-		display_mode = scaled
-	}
-}
+# 	scale = {
+# 		value = bosporan_kingdom_modifier_scale_value
+# 		desc = modifier_bosporan_kingdom_desc
+# 		display_mode = scaled
+# 	}
+# }
 # L5R Disabled
 # bp3_conqueror_black_sea_modifier = {
 # 	icon = martial_positive
