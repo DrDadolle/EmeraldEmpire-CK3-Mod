@@ -7207,51 +7207,71 @@ travel_events.4038 = {
 					title = travel.bad_cermon
 					left_icon = root
 					add_piety = minor_piety_loss
+					#L5R Added
 					if = {
 						limit = {
-							faith = { has_doctrine_parameter = eastern_syncretic_actor_opinion_active }
+							faith = { has_doctrine_parameter = rokugan_syncretic_actor_opinion_active }
 						}
 						add_character_modifier = {
-							modifier = offended_eastern_modifier
+							modifier = offended_rokugan_modifier
 							years = 5
 						}
 					}
 					else_if = {
 						limit = {
-							faith = { has_doctrine_parameter = unreformed_syncretic_actor_opinion_active }
+							faith = { has_doctrine_parameter = shadowlands_syncretic_actor_opinion_active }
 						}
 						add_character_modifier = {
-							modifier = offended_pagan_modifier
+							modifier = offended_shadowlands_modifier
 							years = 5
 						}
 					}
-					else_if = {
-						limit = {
-							faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
-						}
-						add_character_modifier = {
-							modifier = offended_christian_modifier
-							years = 5
-						}
-					}
-					else_if = {
-						limit = {
-							faith = { has_doctrine_parameter = islamic_syncretic_actor_opinion_active }
-						}
-						add_character_modifier = {
-							modifier = offended_muslim_modifier
-							years = 5
-						}
-					}
-					else_if = {
-						limit = {
-							faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
-						}
-						add_character_modifier = {
-							modifier = offended_jewish_modifier
-							years = 5
-						}
-					}
+					#L5R Disabled
+					# if = {
+					# 	limit = {
+					# 		faith = { has_doctrine_parameter = eastern_syncretic_actor_opinion_active }
+					# 	}
+					# 	add_character_modifier = {
+					# 		modifier = offended_eastern_modifier
+					# 		years = 5
+					# 	}
+					# }
+					# else_if = {
+					# 	limit = {
+					# 		faith = { has_doctrine_parameter = unreformed_syncretic_actor_opinion_active }
+					# 	}
+					# 	add_character_modifier = {
+					# 		modifier = offended_pagan_modifier
+					# 		years = 5
+					# 	}
+					# }
+					# else_if = {
+					# 	limit = {
+					# 		faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
+					# 	}
+					# 	add_character_modifier = {
+					# 		modifier = offended_christian_modifier
+					# 		years = 5
+					# 	}
+					# }
+					# else_if = {
+					# 	limit = {
+					# 		faith = { has_doctrine_parameter = islamic_syncretic_actor_opinion_active }
+					# 	}
+					# 	add_character_modifier = {
+					# 		modifier = offended_muslim_modifier
+					# 		years = 5
+					# 	}
+					# }
+					# else_if = {
+					# 	limit = {
+					# 		faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
+					# 	}
+					# 	add_character_modifier = {
+					# 		modifier = offended_jewish_modifier
+					# 		years = 5
+					# 	}
+					# }
 				}
 			}
 		}

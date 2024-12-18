@@ -116,7 +116,7 @@ graphical_wilderness_steppe_trigger = {
 			terrain = hills
 			OR = {
 				#L5R Modified
-				geographical_region = world_unicorn
+				geographical_region = rokugan_unicorn
 				# geographical_region = world_steppe
 				# geographical_region = world_middle_east_persia
 				# geographical_region = world_middle_east_jerusalem

@@ -416,83 +416,83 @@ major_decisions.0500 = { #by Mathilda Bjarnehed
 	}
 }
 
-
+#L5R Disabled
 #Dynasty of Many Crowns
-major_decisions.0501 = { #by Mathilda Bjarnehed
-	type = character_event
-	title = dynasty_of_many_crowns
-	desc = major_decisions.0501.desc
-	theme = dynasty
-	left_portrait = {
-		character = root
-		animation = personality_bold
-	}
+# major_decisions.0501 = { #by Mathilda Bjarnehed
+# 	type = character_event
+# 	title = dynasty_of_many_crowns
+# 	desc = major_decisions.0501.desc
+# 	theme = dynasty
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_bold
+# 	}
 	
-	immediate = {
-		play_music_cue = "mx_cue_positive_effect"
-		dynasty_of_many_crowns_effects = yes
+# 	immediate = {
+# 		play_music_cue = "mx_cue_positive_effect"
+# 		dynasty_of_many_crowns_effects = yes
 
-		#For desc
-		hidden_effect = {
-			primary_title = { save_scope_as = realm_1 }
+# 		#For desc
+# 		hidden_effect = {
+# 			primary_title = { save_scope_as = realm_1 }
 
-			dynasty = {
-				every_dynasty_member = {
-					limit = {
-						NOT = { this = root }
-						is_independent_ruler = yes
-						highest_held_title_tier >= tier_kingdom
-					}
-					primary_title = { add_to_list = dynasty_realms }
-				}
-			}
+# 			dynasty = {
+# 				every_dynasty_member = {
+# 					limit = {
+# 						NOT = { this = root }
+# 						is_independent_ruler = yes
+# 						highest_held_title_tier >= tier_kingdom
+# 					}
+# 					primary_title = { add_to_list = dynasty_realms }
+# 				}
+# 			}
 
-			random_in_list = {
-				list = dynasty_realms
-				limit = { tier = tier_empire }
-				alternative_limit = { always = yes }
-				save_scope_as = realm_2
-			}
+# 			random_in_list = {
+# 				list = dynasty_realms
+# 				limit = { tier = tier_empire }
+# 				alternative_limit = { always = yes }
+# 				save_scope_as = realm_2
+# 			}
 
-			random_in_list = {
-				list = dynasty_realms
-				limit = {
-					tier = tier_empire
-					NOT = { this = scope:realm_2 }
-				}
-				alternative_limit = {
-					NOT = { this = scope:realm_2 }
-				}
-				save_scope_as = realm_3
-			}
+# 			random_in_list = {
+# 				list = dynasty_realms
+# 				limit = {
+# 					tier = tier_empire
+# 					NOT = { this = scope:realm_2 }
+# 				}
+# 				alternative_limit = {
+# 					NOT = { this = scope:realm_2 }
+# 				}
+# 				save_scope_as = realm_3
+# 			}
 
-			random_in_list = {
-				list = dynasty_realms
-				limit = {
-					tier = tier_empire
-					NOR = {
-						this = scope:realm_2
-						this = scope:realm_3
-					}
-				}
-				alternative_limit = {
-					NOR = {
-						this = scope:realm_2
-						this = scope:realm_3
-					}
-				}
-				save_scope_as = realm_4
-			}
-		}
+# 			random_in_list = {
+# 				list = dynasty_realms
+# 				limit = {
+# 					tier = tier_empire
+# 					NOR = {
+# 						this = scope:realm_2
+# 						this = scope:realm_3
+# 					}
+# 				}
+# 				alternative_limit = {
+# 					NOR = {
+# 						this = scope:realm_2
+# 						this = scope:realm_3
+# 					}
+# 				}
+# 				save_scope_as = realm_4
+# 			}
+# 		}
 
-		legend_seed_great_deed_dynasty_effect = yes
+# 		legend_seed_great_deed_dynasty_effect = yes
 
-	}
+# 	}
 
-	option = {
-		name = major_decisions.0501.a
-	}
-}
+# 	option = {
+# 		name = major_decisions.0501.a
+# 	}
+# }
 
 
 ################
@@ -1388,65 +1388,65 @@ major_decisions.3002 = {
 # Special Succession Acquisition
 # by Ewan Cowhig Croft
 ##################################################
+#L5R Disabled
+# major_decisions.3100 = {
+# 	type = character_event
+# 	title = major_decisions.3100.t
+# 	desc = major_decisions.3100.desc
+# 	theme = realm
+# 	left_portrait =	{
+# 		character = root
+# 		animation = personality_rational
+# 	}
 
-major_decisions.3100 = {
-	type = character_event
-	title = major_decisions.3100.t
-	desc = major_decisions.3100.desc
-	theme = realm
-	left_portrait =	{
-		character = root
-		animation = personality_rational
-	}
-
-	#Change based on my culture. Or, occasionally, dynasty.
-	option = {
-		name = major_decisions.3100.a
-		trigger = {
-			OR = {
-				special_succession_witengamot_trigger = yes
-				special_succession_thing_trigger = yes
-				special_succession_tanistry_trigger = yes
-				special_succession_jirga_trigger = yes
-			}
-		}
-		if = {
-			limit = { special_succession_witengamot_trigger = yes }
-			special_succession_witengamot_effect = yes
-		}
-		else_if = {
-			limit = { special_succession_thing_trigger = yes }
-			special_succession_thing_effect = yes
-		}
-		else_if = {
-			limit = { special_succession_tanistry_trigger = yes }
-			special_succession_tanistry_effect = yes
-		}
-		else_if = {
-			limit = { special_succession_jirga_trigger = yes }
-			special_succession_jirga_effect = yes
-		}
-		ai_chance = {	#The AI should always do this.
-			base = 100
-		}
-	}
+# 	#Change based on my culture. Or, occasionally, dynasty.
+# 	option = {
+# 		name = major_decisions.3100.a
+# 		trigger = {
+# 			OR = {
+# 				special_succession_witengamot_trigger = yes
+# 				special_succession_thing_trigger = yes
+# 				special_succession_tanistry_trigger = yes
+# 				special_succession_jirga_trigger = yes
+# 			}
+# 		}
+# 		if = {
+# 			limit = { special_succession_witengamot_trigger = yes }
+# 			special_succession_witengamot_effect = yes
+# 		}
+# 		else_if = {
+# 			limit = { special_succession_thing_trigger = yes }
+# 			special_succession_thing_effect = yes
+# 		}
+# 		else_if = {
+# 			limit = { special_succession_tanistry_trigger = yes }
+# 			special_succession_tanistry_effect = yes
+# 		}
+# 		else_if = {
+# 			limit = { special_succession_jirga_trigger = yes }
+# 			special_succession_jirga_effect = yes
+# 		}
+# 		ai_chance = {	#The AI should always do this.
+# 			base = 100
+# 		}
+# 	}
 	
-	#Change based on my faith; not currently used, but can be set up in future if needed.
-	#option = {
-		#name = major_decisions.3100.b
-		#ai_chance = {	#Stay away, robots.
-			#base = 0
-		#}
-	#}
+# 	#Change based on my faith; not currently used, but can be set up in future if needed.
+# 	#option = {
+# 		#name = major_decisions.3100.b
+# 		#ai_chance = {	#Stay away, robots.
+# 			#base = 0
+# 		#}
+# 	#}
 
-	#Actually, no thanks.
-	option = {
-		name = major_decisions.3100.d
-		ai_chance = {	#Seriously, stay away.
-			base = 0
-		}
-		hidden_effect = { # Reimburse cost.
-			add_prestige_no_experience = 300
-		}
-	}
-}
+# 	#Actually, no thanks.
+# 	option = {
+# 		name = major_decisions.3100.d
+# 		ai_chance = {	#Seriously, stay away.
+# 			base = 0
+# 		}
+# 		hidden_effect = { # Reimburse cost.
+# 			add_prestige_no_experience = 300
+# 		}
+# 	}
+# }
