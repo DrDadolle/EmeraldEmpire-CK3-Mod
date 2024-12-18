@@ -539,155 +539,51 @@ set_adventure_location_effect = {
 					# }
 					#L5R Added
 					10 = {
-						# Crab Lands
+						# rokugan_north
 						trigger = {
 							trigger_if = {
 								limit = { exists = location }
 								adventurer_potential_destination_distance_check = {
-									REGION = rokugan_crab
+									REGION = world_rokugan_north
 								}
 							}
 						}
 						set_variable = {
 							name = adventure_destination
-							value = flag:crab
+							value = flag:rokugan_north
 						}
 					}
 					10 = {
-						# Crane Lands
+						# rokugan_south
 						trigger = {
 							trigger_if = {
 								limit = { exists = location }
 								adventurer_potential_destination_distance_check = {
-									REGION = rokugan_crane
+									REGION = world_rokugan_south
 								}
 							}
 						}
 						set_variable = {
 							name = adventure_destination
-							value = flag:crane
+							value = flag:rokugan_south
 						}
 					}
 					10 = {
-						# Dragon Lands
+						# rokugan_east
 						trigger = {
 							trigger_if = {
 								limit = { exists = location }
 								adventurer_potential_destination_distance_check = {
-									REGION = rokugan_dragon
+									REGION = world_rokugan_east
 								}
 							}
 						}
 						set_variable = {
 							name = adventure_destination
-							value = flag:dragon
+							value = flag:rokugan_east
 						}
 					}
-					10 = {
-						# Lion Lands
-						trigger = {
-							trigger_if = {
-								limit = { exists = location }
-								adventurer_potential_destination_distance_check = {
-									REGION = rokugan_lion
-								}
-							}
-						}
-						set_variable = {
-							name = adventure_destination
-							value = flag:lion
-						}
-					}
-					10 = {
-						# Phoenix Lands
-						trigger = {
-							trigger_if = {
-								limit = { exists = location }
-								adventurer_potential_destination_distance_check = {
-									REGION = rokugan_phoenix
-								}
-							}
-						}
-						set_variable = {
-							name = adventure_destination
-							value = flag:phoenix
-						}
-					}
-					10 = {
-						# Scorpion Lands
-						trigger = {
-							trigger_if = {
-								limit = { exists = location }
-								adventurer_potential_destination_distance_check = {
-									REGION = rokugan_scorpion
-								}
-							}
-						}
-						set_variable = {
-							name = adventure_destination
-							value = flag:scorpion
-						}
-					}
-					10 = {
-						# Unicorn Lands
-						trigger = {
-							trigger_if = {
-								limit = { exists = location }
-								adventurer_potential_destination_distance_check = {
-									REGION = rokugan_unicorn
-								}
-							}
-						}
-						set_variable = {
-							name = adventure_destination
-							value = flag:unicorn
-						}
-					}
-					10 = {
-						# Imperial Lands
-						trigger = {
-							trigger_if = {
-								limit = { exists = location }
-								adventurer_potential_destination_distance_check = {
-									REGION = rokugan_imperial
-								}
-							}
-						}
-						set_variable = {
-							name = adventure_destination
-							value = flag:imperial
-						}
-					}
-					10 = {
-						# Mantis Lands
-						trigger = {
-							trigger_if = {
-								limit = { exists = location }
-								adventurer_potential_destination_distance_check = {
-									REGION = rokugan_spice_and_silk_isles
-								}
-							}
-						}
-						set_variable = {
-							name = adventure_destination
-							value = flag:spice_and_silk_isles
-						}
-					}
-					10 = {
-						# Shinomen Mori Lands
-						trigger = {
-							trigger_if = {
-								limit = { exists = location }
-								adventurer_potential_destination_distance_check = {
-									REGION = rokugan_shinomen_mori
-								}
-							}
-						}
-						set_variable = {
-							name = adventure_destination
-							value = flag:shinomen_mori
-						}
-					}
+
 					85 = { #Very skillde adventurers are often going to let you decide!
 						trigger = {
 							scope:allow_no_destination_option = yes
@@ -860,63 +756,21 @@ get_adventure_inspiration_start_location = {
 				# 	}
 				# }
 				#L5R Added
-				flag:crab = { # Crab
+				flag:rokugan_north = { # rokugan_north
 					random_county_in_region = {
-						region = rokugan_crab
+						region = world_rokugan_north
 						title_province = { save_scope_as = location }
 					}
 				}
-				flag:crane = { # Crane
+				flag:rokugan_south = { # rokugan_south
 					random_county_in_region = {
-						region = rokugan_crane
+						region = world_rokugan_south
 						title_province = { save_scope_as = location }
 					}
 				}
-				flag:dragon = { # Dragon
+				flag:rokugan_east = { # rokugan_east
 					random_county_in_region = {
-						region = rokugan_dragon
-						title_province = { save_scope_as = location }
-					}
-				}
-				flag:lion = { # Lion
-					random_county_in_region = {
-						region = rokugan_lion
-						title_province = { save_scope_as = location }
-					}
-				}
-				flag:phoenix = { # Phoenix
-					random_county_in_region = {
-						region = rokugan_phoenix
-						title_province = { save_scope_as = location }
-					}
-				}
-				flag:scorpion = { # Scorpion
-					random_county_in_region = {
-						region = rokugan_scorpion
-						title_province = { save_scope_as = location }
-					}
-				}
-				flag:unicorn = { # Unicorn
-					random_county_in_region = {
-						region = rokugan_unicorn
-						title_province = { save_scope_as = location }
-					}
-				}
-				flag:imperial = { # Imperial
-					random_county_in_region = {
-						region = rokugan_imperial
-						title_province = { save_scope_as = location }
-					}
-				}
-				flag:spice_and_silk_isles = { # Mantis
-					random_county_in_region = {
-						region = rokugan_spice_and_silk_isles
-						title_province = { save_scope_as = location }
-					}
-				}
-				flag:shinomen_mori = { # Shinomen
-					random_county_in_region = {
-						region = rokugan_shinomen_mori
+						region = world_rokugan_east
 						title_province = { save_scope_as = location }
 					}
 				}

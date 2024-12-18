@@ -369,7 +369,7 @@ hunt_animal_big_available_trigger = {
 }
 
 hunt_animal_small_available_trigger = {
-	OR = {
+	# OR = {
 		OR = {
 			has_building_or_higher = hunting_grounds_01
 			has_building_or_higher = royal_forest_01
@@ -388,7 +388,7 @@ hunt_animal_small_available_trigger = {
 		# 		NOT = { duchy = title:d_canarias } # Not native 
 		# 	}
 		# }
-	}
+	# }
 }
 
 hunt_activity_attendee_trigger = {

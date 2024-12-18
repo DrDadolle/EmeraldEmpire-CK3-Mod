@@ -770,65 +770,23 @@ InspirationAdventureDestination = {
 	# 	localization_key = world_burma
 	# }
 	#L5R Added
-	text = { #Crab
+	text = { #North
 		trigger = {
-			var:adventure_destination = flag:crab
+			var:adventure_destination = flag:rokugan_north
 		}
-		localization_key = rokugan_crab
+		localization_key = rokugan_north
 	}
-	text = { #Crane
+	text = { #South
 		trigger = {
-			var:adventure_destination = flag:crane
+			var:adventure_destination = flag:rokugan_south
 		}
-		localization_key = rokugan_crane
+		localization_key = rokugan_south
 	}
-	text = { #Dragon
+	text = { #East
 		trigger = {
-			var:adventure_destination = flag:dragon
+			var:adventure_destination = flag:rokugan_east
 		}
-		localization_key = rokugan_dragon
-	}
-	text = { #Lion
-		trigger = {
-			var:adventure_destination = flag:lion
-		}
-		localization_key = rokugan_lion
-	}
-	text = { #Phoenix
-		trigger = {
-			var:adventure_destination = flag:phoenix
-		}
-		localization_key = rokugan_phoenix
-	}
-	text = { #Scorpion
-		trigger = {
-			var:adventure_destination = flag:scorpion
-		}
-		localization_key = rokugan_scorpion
-	}
-	text = { #Unicorn
-		trigger = {
-			var:adventure_destination = flag:unicorn
-		}
-		localization_key = rokugan_unicorn
-	}
-	text = { #Imperial
-		trigger = {
-			var:adventure_destination = flag:imperial
-		}
-		localization_key = rokugan_imperial
-	}
-	text = { #Mantis
-		trigger = {
-			var:adventure_destination = flag:spice_and_silk_isles
-		}
-		localization_key = rokugan_spice_and_silk_isles
-	}
-	text = { #Shinomen
-		trigger = {
-			var:adventure_destination = flag:shinomen_mori
-		}
-		localization_key = rokugan_shinomen_mori
+		localization_key = rokugan_east
 	}
 
 }

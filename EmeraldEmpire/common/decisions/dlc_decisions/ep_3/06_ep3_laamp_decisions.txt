@@ -585,181 +585,56 @@ treasure_hunting_contract_decision = {
 		decision_to_second_step_button = "TREASURE_HUNTING_CONTRACT_DECISION_NEXT_STEP_BUTTON"
 		#cover world regions, have to be the same as in get_adventure_inspiration_start_location 
 		#L5R Modified
-
 		item = {
-			value = search_crab_lands
+			value = search_rokugan_south
 			is_valid = {
 				custom_description = {
 					text = treasure_hunting_contract_decision_limit
 					capital_province = {
 						OR = {
-							geographical_region = rokugan_crab
+							geographical_region = world_rokugan_south
 						}
 					}
 				}
 			}
-			localization = treasure_hunting_contract_decision_option_search_crab_lands
-			icon = "gfx/interface/icons/terrain_types/hills.dds"
-			ai_chance = {
-				value = 50
-			}
-		}
-		item = {
-			value = search_crane_lands
-			is_valid = {
-				custom_description = {
-					text = treasure_hunting_contract_decision_limit
-					capital_province = {
-						OR = {
-							geographical_region = rokugan_crane
-						}
-					}
-				}
-			}
-			localization = treasure_hunting_contract_decision_option_search_crane_lands
-			icon = "gfx/interface/icons/terrain_types/coastal_sea.dds"
-			ai_chance = {
-				value = 50
-			}
-		}
-		item = {
-			value = search_dragon_lands
-			is_valid = {
-				custom_description = {
-					text = treasure_hunting_contract_decision_limit
-					capital_province = {
-						OR = {
-							geographical_region = rokugan_dragon
-						}
-					}
-				}
-			}
-			localization = treasure_hunting_contract_decision_option_search_dragon_lands
-			icon = "gfx/interface/icons/terrain_types/mountains.dds"
-			ai_chance = {
-				value = 50
-			}
-		}
-		item = {
-			value = search_lion_lands
-			is_valid = {
-				custom_description = {
-					text = treasure_hunting_contract_decision_limit
-					capital_province = {
-						OR = {
-							geographical_region = rokugan_lion
-						}
-					}
-				}
-			}
-			localization = treasure_hunting_contract_decision_option_search_lion_lands
-			icon = "gfx/interface/icons/terrain_types/plains.dds"
-			ai_chance = {
-				value = 50
-			}
-		}
-		item = {
-			value = search_phoenix_lands
-			is_valid = {
-				custom_description = {
-					text = treasure_hunting_contract_decision_limit
-					capital_province = {
-						OR = {
-							geographical_region = rokugan_phoenix
-						}
-					}
-				}
-			}
-			localization = treasure_hunting_contract_decision_option_search_phoenix_lands
-			icon = "gfx/interface/icons/terrain_types/hills.dds"
-			ai_chance = {
-				value = 50
-			}
-		}
-		item = {
-			value = search_scorpion_lands
-			is_valid = {
-				custom_description = {
-					text = treasure_hunting_contract_decision_limit
-					capital_province = {
-						OR = {
-							geographical_region = rokugan_scorpion
-						}
-					}
-				}
-			}
-			localization = treasure_hunting_contract_decision_option_search_scorpion_lands
-			icon = "gfx/interface/icons/terrain_types/plains.dds"
-			ai_chance = {
-				value = 50
-			}
-		}
-		item = {
-			value = search_unicorn_lands
-			is_valid = {
-				custom_description = {
-					text = treasure_hunting_contract_decision_limit
-					capital_province = {
-						geographical_region = rokugan_unicorn
-					}
-				}
-			}
-			localization = treasure_hunting_contract_decision_option_search_unicorn_lands
-			icon = "gfx/interface/icons/terrain_types/drylands.dds"
-			ai_chance = {
-				value = 50
-			}
-		}
-		item = {
-			value = search_imperial_lands
-			is_valid = {
-				custom_description = {
-					text = treasure_hunting_contract_decision_limit
-					capital_province = {
-						OR = {
-							geographical_region = rokugan_imperial
-						}
-					}
-				}
-			}
-			localization = treasure_hunting_contract_decision_option_search_imperial_lands
-			icon = "gfx/interface/icons/terrain_types/coastal_sea.dds"
-			ai_chance = {
-				value = 50
-			}
-		}
-		item = {
-			value = search_spice_and_silk_isles
-			is_valid = {
-				custom_description = {
-					text = treasure_hunting_contract_decision_limit
-					capital_province = {
-						OR = {
-							geographical_region = rokugan_spice_and_silk_isles
-						}
-					}
-				}
-			}
-			localization = treasure_hunting_contract_decision_option_search_spice_and_silk_isles
-			icon = "gfx/interface/icons/terrain_types/coastal_sea.dds"
-			ai_chance = {
-				value = 50
-			}
-		}
-		item = {
-			value = search_shinomen_mori_lands
-			is_valid = {
-				custom_description = {
-					text = treasure_hunting_contract_decision_limit
-					capital_province = {
-						OR = {
-							geographical_region = rokugan_shinomen_mori
-						}
-					}
-				}
-			}
-			localization = treasure_hunting_contract_decision_option_search_shinomen_mori_lands
+			localization = treasure_hunting_contract_decision_option_search_rokugan_south
 			icon = "gfx/interface/icons/terrain_types/forest.dds"
+			ai_chance = {
+				value = 50
+			}
+		}
+		item = {
+			value = search_rokugan_north
+			is_valid = {
+				custom_description = {
+					text = treasure_hunting_contract_decision_limit
+					capital_province = {
+						OR = {
+							geographical_region = world_rokugan_north
+						}
+					}
+				}
+			}
+			localization = treasure_hunting_contract_decision_option_search_rokugan_north
+			icon = "gfx/interface/icons/terrain_types/hills.dds"
+			ai_chance = {
+				value = 50
+			}
+		}
+		item = {
+			value = search_rokugan_east
+			is_valid = {
+				custom_description = {
+					text = treasure_hunting_contract_decision_limit
+					capital_province = {
+						OR = {
+							geographical_region = world_rokugan_east
+						}
+					}
+				}
+			}
+			localization = treasure_hunting_contract_decision_option_search_rokugan_east
+			icon = "gfx/interface/icons/terrain_types/coastal_sea.dds"
 			ai_chance = {
 				value = 50
 			}
@@ -1163,91 +1038,28 @@ treasure_hunting_contract_decision = {
 		switch = {
 			trigger = yes
 			#L5R Modified
-			scope:search_crab_lands = {
+			scope:search_rokugan_north = {
 				set_variable = {
 					name = adventure_destination
-					value = flag:crab
+					value = flag:rokugan_north
 				}
 				get_adventure_inspiration_start_location = {
 					ADVENTURER = root
 				}
 			}
-			scope:search_crane_lands = {
+			scope:search_rokugan_south = {
 				set_variable = {
 					name = adventure_destination
-					value = flag:crane
+					value = flag:rokugan_south
 				}
 				get_adventure_inspiration_start_location = {
 					ADVENTURER = root
 				}
 			}
-			scope:search_dragon_lands = {
+			scope:search_rokugan_east = {
 				set_variable = {
 					name = adventure_destination
-					value = flag:dragon
-				}
-				get_adventure_inspiration_start_location = {
-					ADVENTURER = root
-				}
-			}
-			scope:search_lion_lands = {
-				set_variable = {
-					name = adventure_destination
-					value = flag:lion
-				}
-				get_adventure_inspiration_start_location = {
-					ADVENTURER = root
-				}
-			}
-			scope:search_phoenix_lands = {
-				set_variable = {
-					name = adventure_destination
-					value = flag:phoenix
-				}
-				get_adventure_inspiration_start_location = {
-					ADVENTURER = root
-				}
-			}
-			scope:search_scorpion_lands = {
-				set_variable = {
-					name = adventure_destination
-					value = flag:scorpion
-				}
-				get_adventure_inspiration_start_location = {
-					ADVENTURER = root
-				}
-			}
-			scope:search_unicorn_lands = {
-				set_variable = {
-					name = adventure_destination
-					value = flag:unicorn
-				}
-				get_adventure_inspiration_start_location = {
-					ADVENTURER = root
-				}
-			}
-			scope:search_imperial_lands = {
-				set_variable = {
-					name = adventure_destination
-					value = flag:imperial
-				}
-				get_adventure_inspiration_start_location = {
-					ADVENTURER = root
-				}
-			}
-			scope:search_spice_and_silk_isles = {
-				set_variable = {
-					name = adventure_destination
-					value = flag:spice_and_silk_isles
-				}
-				get_adventure_inspiration_start_location = {
-					ADVENTURER = root
-				}
-			}
-			scope:search_shinomen_mori_lands = {
-				set_variable = {
-					name = adventure_destination
-					value = flag:shinomen_mori
+					value = flag:rokugan_east
 				}
 				get_adventure_inspiration_start_location = {
 					ADVENTURER = root
