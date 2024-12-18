@@ -394,17 +394,18 @@
 				desc = "ai_energy"
 			}
 		}
+		#L5R Disabled
         # Dharmic Pacificism
-        if = {
-        	limit = {
-				hunt_dharmic_pacificist_trigger = yes
-				NOT = { has_trait = sadistic }
-			}
-        	add = {
-        		value = -40
-        		desc = tenet_dharmic_pacifism_name
-        	}
-        }
+        # if = {
+        # 	limit = {
+		# 		hunt_dharmic_pacificist_trigger = yes
+		# 		NOT = { has_trait = sadistic }
+		# 	}
+        # 	add = {
+        # 		value = -40
+        # 		desc = tenet_dharmic_pacifism_name
+        # 	}
+        # }
         # Personality
 		if = { # Avoids responsibilities
 			limit = { has_trait = lazy }

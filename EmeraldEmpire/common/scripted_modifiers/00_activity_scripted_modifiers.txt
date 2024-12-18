@@ -1296,11 +1296,12 @@ activity_guest_tournament_ai_accept_modifier = {
 		add = 5
 		desc = ACTIVITY_GUEST_WARRIOR_CULTURE_REASON
 	}
-	modifier = {
-		culture = { has_cultural_tradition = tradition_chanson_de_geste }
-		add = 5
-		desc = ACTIVITY_GUEST_CHANSON_REASON
-	}
+	#L5R Disabled
+	# modifier = {
+	# 	culture = { has_cultural_tradition = tradition_chanson_de_geste }
+	# 	add = 5
+	# 	desc = ACTIVITY_GUEST_CHANSON_REASON
+	# }
 	########
 	# RANK #
 	########
@@ -1612,10 +1613,11 @@ activity_tournament_pas_darmes_modifier = {
 		factor = 2
 	}
 	# Culture
-	modifier = {
-		culture = { has_cultural_tradition = tradition_chanson_de_geste }
-		factor = 2
-	}
+	#L5R Disabled
+	# modifier = {
+	# 	culture = { has_cultural_tradition = tradition_chanson_de_geste }
+	# 	factor = 2
+	# }
 	modifier = {
 		culture = { has_cultural_tradition = tradition_chivalry }
 		factor = 2

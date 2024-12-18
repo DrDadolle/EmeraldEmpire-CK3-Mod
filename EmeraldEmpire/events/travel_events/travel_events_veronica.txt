@@ -926,7 +926,8 @@ travel_events.3010 = {
 				faith = {	
 					OR = {
 						has_doctrine = tenet_reincarnation
-						has_doctrine = tenet_dharmic_pacifism
+						#L5R Disabled
+						# has_doctrine = tenet_dharmic_pacifism
 					}
 				}
 				has_trait = callous

@@ -27,6 +27,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## CK3 1.13.* patch
 - remove bunch of errors
+- BIG ERROR : "location must have some hunting game"
+	- Failed to pick default activity option for category 'special_type' for scope:
+- SPAMMED ERROR : unit_japanese_infantry_02_shield_entity has no attachment node named shield_effect_2
 - % de chance shindoshi/ishiken TROP BAS ! STILL TOO FEW
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 

@@ -176,7 +176,8 @@ marauder_attribute = {
 						faith = {
 							OR = {
 								has_doctrine = tenet_pacifism
-								has_doctrine = tenet_dharmic_pacifism
+								#L5R Disabled
+								# has_doctrine = tenet_dharmic_pacifism
 							}
 						}
 					}
@@ -709,7 +710,8 @@ thug_attribute = {
 					dynasty = {
 						OR = {
 							has_dynasty_perk = warfare_legacy_3
-							has_dynasty_perk = fp1_pillage_legacy_3
+							#L5R Disabled
+							# has_dynasty_perk = fp1_pillage_legacy_3
 						}
 					}
 				}

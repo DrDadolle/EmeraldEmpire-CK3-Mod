@@ -989,10 +989,11 @@ pilgrimage.1110 = {
 
 	weight_multiplier = {
 		base = 1
-		modifier = {
-			factor = 0.5
-			location.county.faith = { has_doctrine = tenet_dharmic_pacifism }
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	factor = 0.5
+		# 	location.county.faith = { has_doctrine = tenet_dharmic_pacifism }
+		# }
 	}
 
 	immediate = {

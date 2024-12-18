@@ -39,29 +39,31 @@ caravanserai_01 = {
 	}
 	
 	is_enabled = {
+		#L5R Disabled
+		# trigger_if = {
+		# 	limit = {
+		# 		NOR = {
+		# 			scope:holder.culture = {
+		# 				has_cultural_parameter = watermills_windmills_cities
+		# 			}
+		# 			culture = {
+		# 				has_cultural_parameter = second_caravanserai
+		# 			}
+		# 		}
+		# 	}
+		# 	is_county_capital = yes
+		# }
 		trigger_if = {
-			limit = {
-				NOR = {
-					scope:holder.culture = {
-						has_cultural_parameter = watermills_windmills_cities
-					}
-					culture = {
-						has_cultural_parameter = second_caravanserai
-					}
-				}
-			}
-			is_county_capital = yes
-		}
-		trigger_else_if = {
 			limit = {
 				scope:holder.culture = {
 					has_cultural_parameter = watermills_windmills_cities
 				}
-				NOT = {
-					culture = {
-						has_cultural_parameter = second_caravanserai
-					}
-				}
+				#L5R Disabled
+				# NOT = {
+				# 	culture = {
+				# 		has_cultural_parameter = second_caravanserai
+				# 	}
+				# }
 			}
 			OR = {
 				is_county_capital = yes
@@ -74,56 +76,57 @@ caravanserai_01 = {
 				}
 			}
 		}
-		trigger_else_if = {
-			limit = {
-				culture = {
-					has_cultural_parameter = second_caravanserai
-				}
-				NOT = {
-					scope:holder.culture = {
-						has_cultural_parameter = watermills_windmills_cities
-					}
-				}
-			}
-			OR = {
-				is_county_capital = yes
-				AND = {
-					county = {
-						any_county_province = {
-							count < 2
-							has_building_or_higher = caravanserai_01
-						}
-					}
-				}
-			}
-		}
-		trigger_else = {
-			scope:holder.culture = {
-				has_cultural_parameter = watermills_windmills_cities
-			}
-			culture = {
-				has_cultural_parameter = second_caravanserai
-			}
-			OR = {
-				is_county_capital = yes
-				AND = {
-					NOR = {
-						has_building_or_higher = watermills_01
-						has_building_or_higher = caravanserai_01
-					}
-					has_building_or_higher = city_01
-				}
-				AND = {
-					county = {
-						any_county_province = {
-							count < 2
-							has_building_or_higher = caravanserai_01
-						}
-					}
-				}
-			}
+		#L5R Disabled
+		# trigger_else_if = {
+		# 	limit = {
+		# 		culture = {
+		# 			has_cultural_parameter = second_caravanserai
+		# 		}
+		# 		NOT = {
+		# 			scope:holder.culture = {
+		# 				has_cultural_parameter = watermills_windmills_cities
+		# 			}
+		# 		}
+		# 	}
+		# 	OR = {
+		# 		is_county_capital = yes
+		# 		AND = {
+		# 			county = {
+		# 				any_county_province = {
+		# 					count < 2
+		# 					has_building_or_higher = caravanserai_01
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# trigger_else = {
+		# 	scope:holder.culture = {
+		# 		has_cultural_parameter = watermills_windmills_cities
+		# 	}
+		# 	culture = {
+		# 		has_cultural_parameter = second_caravanserai
+		# 	}
+		# 	OR = {
+		# 		is_county_capital = yes
+		# 		AND = {
+		# 			NOR = {
+		# 				has_building_or_higher = watermills_01
+		# 				has_building_or_higher = caravanserai_01
+		# 			}
+		# 			has_building_or_higher = city_01
+		# 		}
+		# 		AND = {
+		# 			county = {
+		# 				any_county_province = {
+		# 					count < 2
+		# 					has_building_or_higher = caravanserai_01
+		# 				}
+		# 			}
+		# 		}
+		# 	}
 
-		}
+		# }
 	}
 	show_disabled = yes
 	

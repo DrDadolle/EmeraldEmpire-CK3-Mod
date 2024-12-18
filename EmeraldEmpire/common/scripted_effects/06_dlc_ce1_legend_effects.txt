@@ -26,7 +26,8 @@ grab_appropriate_chronicler_effect = {
 				# culture = { has_cultural_tradition = tradition_fp1_northern_stories }
 				culture = { has_cultural_tradition = tradition_poetry }
 				culture = { has_cultural_tradition = tradition_storytellers }
-				culture = { has_cultural_tradition = tradition_chanson_de_geste }
+				#L5R Disabled
+				# culture = { has_cultural_tradition = tradition_chanson_de_geste }
 				faith = {
 					trait_is_virtue = poet
 				}

@@ -2765,15 +2765,16 @@ save_type_specific_successor_culture_effect = {
 						}
 					}
 					OR = {
-						has_cultural_tradition = tradition_bush_hunting
+						# has_cultural_tradition = tradition_bush_hunting
 						has_cultural_tradition = tradition_hunters
 						has_cultural_tradition = tradition_sacred_hunts
 						has_cultural_tradition = tradition_forest_fighters
 						has_cultural_tradition = tradition_jungle_warriors
-						has_cultural_tradition = tradition_land_of_the_bow
-						has_cultural_tradition = tradition_bush_hunting
-						has_cultural_tradition = tradition_hunters
-						has_cultural_tradition = tradition_sacred_hunts
+						#L5R Disabled
+						# has_cultural_tradition = tradition_land_of_the_bow
+						# has_cultural_tradition = tradition_bush_hunting
+						# has_cultural_tradition = tradition_hunters
+						# has_cultural_tradition = tradition_sacred_hunts
 					}
 					NOT = {
 						has_cultural_tradition = tradition_vegetarianism
@@ -2787,21 +2788,23 @@ save_type_specific_successor_culture_effect = {
 						}
 					}
 					OR = {
-						has_cultural_tradition = tradition_druzhina
-						has_cultural_tradition = tradition_futuwaa
-						has_cultural_tradition = tradition_khadga_puja
+						#L5R Disabled
+						# has_cultural_tradition = tradition_druzhina
+						# has_cultural_tradition = tradition_futuwaa
+						# has_cultural_tradition = tradition_khadga_puja
 						has_cultural_tradition = tradition_talent_acquisition
 						has_cultural_tradition = tradition_swords_for_hire
 						has_cultural_tradition = tradition_warriors_by_merit
 						has_cultural_tradition = tradition_only_the_strong
 						has_cultural_tradition = tradition_martial_admiration
 						has_cultural_tradition = tradition_fp1_trials_by_combat
-						has_cultural_tradition = tradition_chanson_de_geste
+						# has_cultural_tradition = tradition_chanson_de_geste
 						has_cultural_tradition = tradition_fp1_performative_honour
 						has_cultural_tradition = tradition_chivalry
 						has_cultural_tradition = tradition_warrior_culture
 						has_cultural_tradition = tradition_fp1_the_right_to_prove
-						has_cultural_tradition = tradition_garuda_warriors
+						#L5R Disabled
+						# has_cultural_tradition = tradition_garuda_warriors
 					}
 				}
 				# Master of Revels

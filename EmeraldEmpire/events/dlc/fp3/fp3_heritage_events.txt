@@ -1224,7 +1224,8 @@ fp3_yearly.8022 = {
 			limit = {
 				faith = {
 					OR = {
-						has_doctrine = tenet_dharmic_pacifism
+						#L5R Disabled
+						# has_doctrine = tenet_dharmic_pacifism
 						has_doctrine = tenet_pacifism
 					}
 				}

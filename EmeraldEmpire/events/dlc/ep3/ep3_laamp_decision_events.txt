@@ -20051,8 +20051,9 @@ ep3_laamp_decision_event.1103 = {
 	option = {
 		trigger = {
 			root.faith = {
-				NOR = {
-					has_doctrine = tenet_dharmic_pacifism
+				NOT = {
+					#L5R Disabled
+					# has_doctrine = tenet_dharmic_pacifism
 					has_doctrine = tenet_pacifism
 				}
 			}
