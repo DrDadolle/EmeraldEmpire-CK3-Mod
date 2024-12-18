@@ -336,111 +336,114 @@
 	}
 
 	# Semi-Precious Gems, Regional
-	decoration_material_gem_flourite = {
-		group = decoration_material_gem
-		trigger = {
-			artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_britannia }	
-		}		
-		weight = 30
-	}
-	decoration_material_gem_adventurine = {
-		group = decoration_material_gem
-		trigger = {
-			artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_iberia }	
-		}		
-		weight = 30
-	}
-	decoration_material_gem_amethyst = {
-		group = decoration_material_gem
-		trigger = {
-			artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_francia }
-		}	
-		weight = 30
-	}
-	decoration_material_gem_amber = {
-		group = decoration_material_gem
-		trigger = {
-			artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = custom_eastern_baltic}
-		}	
-		weight = 30
-	}
-	decoration_material_gem_moonstone = {
-		group = decoration_material_gem
-		trigger = {
-			artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india }
-		}
-		weight = 30
-	}
-	decoration_material_gem_turquoise = {
-		group = decoration_material_gem
-		trigger = {
-			AND = { 
-				artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
-				OR = {
-					artifact_region_trigger = { CHARACTER = scope:owner REGION = world_asia_minor }
-					artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
-				}
-			}
-		}
-		weight = 30
-	}
-	decoration_material_gem_carnelian = {
-		group = decoration_material_gem
-		trigger = {
-			AND = { 
-				artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
-				OR = {
-					artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_germania }
-					artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_north }
-				}
-			}
-		}	
-		weight = 30
-	}
+	#L5R Disabled
+	# decoration_material_gem_flourite = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
+	# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_britannia }	
+	# 	}		
+	# 	weight = 30
+	# }
+	# decoration_material_gem_adventurine = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
+	# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_iberia }	
+	# 	}		
+	# 	weight = 30
+	# }
+	# decoration_material_gem_amethyst = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
+	# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_francia }
+	# 	}	
+	# 	weight = 30
+	# }
+	# decoration_material_gem_amber = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
+	# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = custom_eastern_baltic}
+	# 	}	
+	# 	weight = 30
+	# }
+	# decoration_material_gem_moonstone = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
+	# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india }
+	# 	}
+	# 	weight = 30
+	# }
+	# decoration_material_gem_turquoise = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		AND = { 
+	# 			artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
+	# 			OR = {
+	# 				artifact_region_trigger = { CHARACTER = scope:owner REGION = world_asia_minor }
+	# 				artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
+	# 			}
+	# 		}
+	# 	}
+	# 	weight = 30
+	# }
+	# decoration_material_gem_carnelian = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		AND = { 
+	# 			artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
+	# 			OR = {
+	# 				artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_germania }
+	# 				artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_north }
+	# 			}
+	# 		}
+	# 	}	
+	# 	weight = 30
+	# }
 
-	# Rare/Precious Gems, Regional
-	decoration_material_gem_peridot = {
-		group = decoration_material_gem
-		trigger = {
-			artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 80 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_deccan }
-		}	
-		weight = 40
-	}
-	decoration_material_gem_lapis_lazuli = {
-		group = decoration_material_gem
-		trigger = {
-			artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
-		}
-		weight = 40
-	}
-	decoration_material_gem_opal = {
-		group = decoration_material_gem
-		trigger = {
-			artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_africa_east }
-		}		
-		weight = 40
-	}
-	decoration_material_gem_spinel = {
-		group = decoration_material_gem
-		trigger = {
-			artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_deccan }
-		}
-		weight = 40
-	}
+	# # Rare/Precious Gems, Regional
+	# decoration_material_gem_peridot = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 80 }
+	# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_deccan }
+	# 	}	
+	# 	weight = 40
+	# }
+	# decoration_material_gem_lapis_lazuli = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
+	# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
+	# 	}
+	# 	weight = 40
+	# }
+	# decoration_material_gem_opal = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
+	# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_africa_east }
+	# 	}		
+	# 	weight = 40
+	# }
+	# decoration_material_gem_spinel = {
+	# 	group = decoration_material_gem
+	# 	trigger = {
+	# 		artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
+	# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_deccan }
+	# 	}
+	# 	weight = 40
+	# }
 	decoration_material_gem_jade = {
 		group = decoration_material_gem
 		trigger = {
 			artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_bengal }
+			#L5R Modified
+			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_rokugan }
+			# artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_bengal }
 		}	
 		weight = 40
 	}
@@ -576,17 +579,18 @@
 		}	
 		weight = 50
 	}
+	#L5R Disabled
 	# regional specialties
-	generic_material_cloth_worsted_wool = {
-		# Worsting was a special process for manufactuing high-quality wool that developed in England
-		group = generic_material_cloth
-		trigger = {
-			artifact_value_trigger = { VALUE = scope:wealth MIN = 60 MAX = 999 }
-			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_britannia }
-			current_date >= 1200.1.1
-		}	
-		weight = 40
-	}
+	# generic_material_cloth_worsted_wool = {
+	# 	# Worsting was a special process for manufactuing high-quality wool that developed in England
+	# 	group = generic_material_cloth
+	# 	trigger = {
+	# 		artifact_value_trigger = { VALUE = scope:wealth MIN = 60 MAX = 999 }
+	# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_britannia }
+	# 		current_date >= 1200.1.1
+	# 	}	
+	# 	weight = 40
+	# }
 
 # generic_material_cordage
 	generic_material_cordage_wool = {
@@ -7082,16 +7086,17 @@
 	}
 
 # glass_decoration
-	glass_decoration_etched_pattern = {
-		group = glass_decoration
-		trigger = {
-			AND = { 
-				artifact_value_trigger = { VALUE = scope:wealth MIN = 0 MAX = 70 }
-				artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
-			}
-		}
-		weight = 1
-	}
+#L5R Disabled
+	# glass_decoration_etched_pattern = {
+	# 	group = glass_decoration
+	# 	trigger = {
+	# 		AND = { 
+	# 			artifact_value_trigger = { VALUE = scope:wealth MIN = 0 MAX = 70 }
+	# 			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 	glass_decoration_inlay_pattern = {
 		group = glass_decoration
 		trigger = {
@@ -7106,29 +7111,29 @@
 		}
 		weight = 1
 	}
-	glass_decoration_mold_blowing_pattern = {
-		group = glass_decoration
-		trigger = {
-			AND = { 
-				artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 100 }
-				artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe }
-			}
-		}
-		weight = 1
-	}
-	glass_decoration_enamel_pattern = {
-		group = glass_decoration
-		trigger = {
-			AND = {
-				artifact_value_trigger = { VALUE = scope:wealth MIN = 50 MAX = 100 }
-				OR = {
-					artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
-					artifact_region_trigger = { CHARACTER = scope:owner REGION = world_africa_north }
-				}
-			}
-		}
-		weight = 1
-	}
+	# glass_decoration_mold_blowing_pattern = {
+	# 	group = glass_decoration
+	# 	trigger = {
+	# 		AND = { 
+	# 			artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 100 }
+	# 			artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe }
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
+	# glass_decoration_enamel_pattern = {
+	# 	group = glass_decoration
+	# 	trigger = {
+	# 		AND = {
+	# 			artifact_value_trigger = { VALUE = scope:wealth MIN = 50 MAX = 100 }
+	# 			OR = {
+	# 				artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
+	# 				artifact_region_trigger = { CHARACTER = scope:owner REGION = world_africa_north }
+	# 			}
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 
 #################################################################
 # Tournament Features											#

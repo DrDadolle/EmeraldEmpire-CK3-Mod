@@ -31,7 +31,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
 - Add thumbnail image for the mod !
-- Prevent Seppun to use conquest cb ??
+- DNA is changed (hair/mustache) between bookmark
 
 
 ## short term goals 
@@ -64,14 +64,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - finish localisation of religious stuff (like sacred text etc...)
 
 ## Fixes to do
-- The l5r_title_events.0001 events breaks vassalage (but AI fixes it quickly anyway, so that's ok). Maybe enhance the script to give vassals as well ?
 - Spammed with rokugan_char_interaction.0231 event boxes...
 	- "an honorable death" event procs for outsite of player stuff
 - Change color of some textured emblmes (very low priority) : Mantis, Komori
 - shiba mon is off-center (too much top left)
 - update holy_order decisions & dynasty decisions (taken from shogunate)
-- d_rokugani_faith got split from e_rokugan. Should follow it (but follow primary heir instead) ? Or not, the title should become "Shogun" I guess ?
-	- See k_orthodox as head of faith title ? e_rokugan becomes the head of faith title ??
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - Issues with missing accolades in innovations description ? Why ?
@@ -90,8 +87,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Add CoA placeholder : missing Frog Duchy, Kingdom of Cherry blossom and that's it ?
 
 ## Workaround to be careful with & unsure behaviours
-- WORKAROUND : headgear remove for all (sub_saharian headgear, why ? Workaround = delete reference to this headgear)
 - WORKAROUND : Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
+- WORKAROUND : The l5r_title_events.0001 events breaks vassalage (but AI fixes it quickly anyway, so that's ok). Maybe enhance the script to give vassals as well ?
 - BUG : How to prevent random mariage & children in existing character ? => change game_rule.1001 ??? gamerule_1001 force generate descendance. Add more family (aka heirs)
 - BUG : start war on toshi Rambo / city rich frog decision
 	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 

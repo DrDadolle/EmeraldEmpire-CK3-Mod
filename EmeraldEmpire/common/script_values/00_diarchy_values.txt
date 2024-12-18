@@ -492,14 +492,15 @@ diarch_loyalty_score_standard_values_general_court_positions_value = {
 			value = diarch_loyalty_score_add_medium_gain
 		}
 	}
+	#L5R Disabled
 	## ++ Chief Qadi.
-	if = {
-		limit = { has_court_position = chief_qadi_court_position }
-		add = {
-			desc = diarch_loyalty_score.regency.chief_qadi
-			value = diarch_loyalty_score_add_medium_gain
-		}
-	}
+	# if = {
+	# 	limit = { has_court_position = chief_qadi_court_position }
+	# 	add = {
+	# 		desc = diarch_loyalty_score.regency.chief_qadi
+	# 		value = diarch_loyalty_score_add_medium_gain
+	# 	}
+	# }
 }
 
 diarch_loyalty_score_standard_values_general_traits_value = {

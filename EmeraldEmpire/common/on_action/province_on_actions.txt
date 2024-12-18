@@ -70,113 +70,115 @@ on_building_completed = {
 					add_piety = minor_piety_value
 				}
 			}
-
+			#L5R Disabled
 			# FP2 Dynasty perk
-			if = {
-				limit = {
-					has_holding_type = city_holding
-					exists = scope:character.dynasty
-					scope:character.dynasty = {
-						has_dynasty_perk = fp2_urbanism_legacy_4
-					}
-				}
-				county = {
-					holder = {
-						send_interface_toast = {
-							type = event_toast_effect_good
-							title = prestige_gained_from_building_completion
-							left_icon = root.barony
-							add_prestige = medium_prestige_gain
-						}
-					}
-					#### Chance to add super guest!
-					# Set variables
-					random = {
-						chance = 10
-						modifier = {
-							add = county.development_level
-						}
-						set_variable = {
-							name = number_prestigious_new_guests
-							value = 1
-						}
-						if = {
-							limit = { county.development_level >= max_development_level  }
+			# if = {
+			# 	limit = {
+			# 		has_holding_type = city_holding
+			# 		exists = scope:character.dynasty
+			# 		scope:character.dynasty = {
+			# 			has_dynasty_perk = fp2_urbanism_legacy_4
+			# 		}
+			# 	}
+			# 	county = {
+			# 		holder = {
+			# 			send_interface_toast = {
+			# 				type = event_toast_effect_good
+			# 				title = prestige_gained_from_building_completion
+			# 				left_icon = root.barony
+			# 				add_prestige = medium_prestige_gain
+			# 			}
+			# 		}
+			# 		#### Chance to add super guest!
+			# 		# Set variables
+			# 		random = {
+			# 			chance = 10
+			# 			modifier = {
+			# 				add = county.development_level
+			# 			}
+			# 			set_variable = {
+			# 				name = number_prestigious_new_guests
+			# 				value = 1
+			# 			}
+			# 			if = {
+			# 				limit = { county.development_level >= max_development_level  }
 
-							set_variable = {
-								name = holding_quality
-								value = 3
-							}
-						}
-						else_if = {
-							limit = { county.development_level >= great_development_level  }
-							set_variable = {
-								name = holding_quality
-								value = 3
-							}
-						}
-						else_if = {
-							limit = { county.development_level >= good_development_level  }
-							set_variable = {
-								name = holding_quality
-								value = 2
-							}
-						}
-						else_if = {
-							limit = { county.development_level >= medium_development_level  }
-							set_variable = {
-								name = holding_quality
-								value = 2
-							}
-						}
-						else_if = {
-							limit = { county.development_level >= bad_development_level  }
-							set_variable = {
-								name = holding_quality
-								value = 1
-							}
-						}
-						else = {
-							set_variable = {
-								name = holding_quality
-								value = 1
-							}
-						}
-					}
+			# 				set_variable = {
+			# 					name = holding_quality
+			# 					value = 3
+			# 				}
+			# 			}
+			# 			else_if = {
+			# 				limit = { county.development_level >= great_development_level  }
+			# 				set_variable = {
+			# 					name = holding_quality
+			# 					value = 3
+			# 				}
+			# 			}
+			# 			else_if = {
+			# 				limit = { county.development_level >= good_development_level  }
+			# 				set_variable = {
+			# 					name = holding_quality
+			# 					value = 2
+			# 				}
+			# 			}
+			# 			else_if = {
+			# 				limit = { county.development_level >= medium_development_level  }
+			# 				set_variable = {
+			# 					name = holding_quality
+			# 					value = 2
+			# 				}
+			# 			}
+			# 			else_if = {
+			# 				limit = { county.development_level >= bad_development_level  }
+			# 				set_variable = {
+			# 					name = holding_quality
+			# 					value = 1
+			# 				}
+			# 			}
+			# 			else = {
+			# 				set_variable = {
+			# 					name = holding_quality
+			# 					value = 1
+			# 				}
+			# 			}
+			# 		}
 
-					holder = {
-						# Trigger the hidden event
-						trigger_event = fp2_other_decisions.0001
-					}
-				}
-			}
+			# 		holder = {
+			# 			# Trigger the hidden event
+			# 			trigger_event = fp2_other_decisions.0001
+			# 		}
+			# 	}
+			# }
 
+			#L5R Disabled
 			# Struggle parameters
-			if = {
-				limit = {
-					has_holding_type = castle_holding
-					scope:character = {
-						any_character_struggle = {
-							involvement = involved
-							has_struggle_phase_parameter = completing_building_in_castle_gives_development
-						}
-					}
-				}
-				county = { change_development_progress_with_overflow = 10 }
-			}
+			# if = {
+			# 	limit = {
+			# 		has_holding_type = castle_holding
+			# 		scope:character = {
+			# 			any_character_struggle = {
+			# 				involvement = involved
+			# 				has_struggle_phase_parameter = completing_building_in_castle_gives_development
+			# 			}
+			# 		}
+			# 	}
+			# 	county = { change_development_progress_with_overflow = 10 }
+			# }
 
-			if = {
-				limit = {
-					has_holding_type = church_holding
-					scope:character = {
-						any_character_struggle = {
-							involvement = involved
-							has_struggle_phase_parameter = completing_building_in_temple_gives_piety
-						}
-					}
-				}
-				scope:character = { add_piety = medium_piety_gain }
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		has_holding_type = church_holding
+			# 		scope:character = {
+			# 			any_character_struggle = {
+			# 				involvement = involved
+			# 				has_struggle_phase_parameter = completing_building_in_temple_gives_piety
+			# 			}
+			# 		}
+			# 	}
+			# 	scope:character = { add_piety = medium_piety_gain }
+			# }
 
 			# Struggle catalysts
 			if = {

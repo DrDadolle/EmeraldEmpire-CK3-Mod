@@ -185,13 +185,15 @@ artifact_needs_material_wire_trigger = {
 
 artifact_needs_material_cloth_trigger = {
 	# Check if one of our artifact features needs a material reference for cloth lining
-	OR = {
-		# Armor
-		has_artifact_feature = armor_helmet_nasal
-		has_artifact_feature = armor_helmet_enclosed
-		has_artifact_feature = armor_helmet_great_helmet
-		has_artifact_feature = armor_helmet_cervelliere
-	}	
+	#L5R Disabled
+	always = no
+	# OR = {
+	# 	# Armor
+	# 	has_artifact_feature = armor_helmet_nasal
+	# 	has_artifact_feature = armor_helmet_enclosed
+	# 	has_artifact_feature = armor_helmet_great_helmet
+	# 	has_artifact_feature = armor_helmet_cervelliere
+	# }	
 }
 
 artifact_needs_material_gem_trigger = {
@@ -1568,94 +1570,97 @@ artifact_feature_gem_ruby_trigger = {
 
 # Semi-Precious Gems, Regional
 # flourite
-artifact_feature_gem_flourite_trigger = {
-	exists = scope:wealth
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
-	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_britannia }	
-}		
+#L5R Disabled
+# artifact_feature_gem_flourite_trigger = {
+# 	exists = scope:wealth
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
+# 	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_britannia }	
+# }		
 
-# adventurine
-artifact_feature_gem_adventurine_trigger = {
-	exists = scope:wealth
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
-	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_iberia }	
-}		
+# # adventurine
+# artifact_feature_gem_adventurine_trigger = {
+# 	exists = scope:wealth
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
+# 	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_iberia }	
+# }		
 
-# amethyst
-artifact_feature_gem_amethyst_trigger = {
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
-	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_francia }
-}	
+# # amethyst
+# artifact_feature_gem_amethyst_trigger = {
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 60 }
+# 	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_francia }
+# }	
 
-# amber
-artifact_feature_gem_amber_trigger = {
-	exists = scope:wealth
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
-	artifact_region_trigger = { CHARACTER = scope:owner REGION = custom_eastern_baltic}
-}	
+# # amber
+# artifact_feature_gem_amber_trigger = {
+# 	exists = scope:wealth
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
+# 	artifact_region_trigger = { CHARACTER = scope:owner REGION = custom_eastern_baltic}
+# }	
 
-# moonstone
-artifact_feature_gem_moonstone_trigger = {
-	exists = scope:wealth
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
-	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india }
-}
+# # moonstone
+# artifact_feature_gem_moonstone_trigger = {
+# 	exists = scope:wealth
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
+# 	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india }
+# }
 
-# turquoise
-artifact_feature_gem_turquoise_trigger = {
-	exists = scope:wealth
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
-	OR = {
-		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_asia_minor }
-		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
-	}
-}
+# # turquoise
+# artifact_feature_gem_turquoise_trigger = {
+# 	exists = scope:wealth
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
+# 	OR = {
+# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_asia_minor }
+# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
+# 	}
+# }
 
-# carnelian
-artifact_feature_gem_carnelian_trigger = {
-	exists = scope:wealth
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
-	OR = {
-		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_germania }
-		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_north }
-	}
-}	
+# # carnelian
+# artifact_feature_gem_carnelian_trigger = {
+# 	exists = scope:wealth
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 20 MAX = 70 }
+# 	OR = {
+# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_west_germania }
+# 		artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe_north }
+# 	}
+# }	
 
 
-# Rare/Precious Gems, Regional
-# peridot
-artifact_feature_gem_peridot_trigger = {
-	exists = scope:wealth
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 80 }
-	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_deccan }
-}	
+# # Rare/Precious Gems, Regional
+# # peridot
+# artifact_feature_gem_peridot_trigger = {
+# 	exists = scope:wealth
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 80 }
+# 	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_deccan }
+# }	
 
-# lapis_lazuli
-artifact_feature_gem_lapis_lazuli_trigger = {
-	exists = scope:wealth
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
-	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
-}
+# # lapis_lazuli
+# artifact_feature_gem_lapis_lazuli_trigger = {
+# 	exists = scope:wealth
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
+# 	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_persia }
+# }
 
-# opal
-artifact_feature_gem_opal_trigger = {
-	exists = scope:wealth
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
-	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_africa_east }
-}		
+# # opal
+# artifact_feature_gem_opal_trigger = {
+# 	exists = scope:wealth
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
+# 	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_africa_east }
+# }		
 
-# spinel
-artifact_feature_gem_spinel_trigger = {
-	exists = scope:wealth
-	artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
-	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_deccan }
-}
+# # spinel
+# artifact_feature_gem_spinel_trigger = {
+# 	exists = scope:wealth
+# 	artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
+# 	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_deccan }
+# }
 
 # jade
 artifact_feature_gem_jade_trigger = {
 	exists = scope:wealth
 	artifact_value_trigger = { VALUE = scope:wealth MIN = 40 MAX = 90 }
-	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_bengal }
+	#L5R Modified
+	artifact_region_trigger = { CHARACTER = scope:owner REGION = world_rokugan }
+	# artifact_region_trigger = { CHARACTER = scope:owner REGION = world_india_bengal }
 }
 
 ##########################################

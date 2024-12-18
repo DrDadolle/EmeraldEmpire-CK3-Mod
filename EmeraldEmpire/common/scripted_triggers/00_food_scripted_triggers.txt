@@ -1,0 +1,70 @@
+﻿
+# James _insisted_ I make this file. So here we are.
+
+##################################################
+# VEGETABLE TRIGGERS
+
+province_has_vegetable_carrot_trigger = {
+	OR = {
+		#L5R Modified
+		geographical_region = world_rokugan
+		# geographical_region = world_india
+		# geographical_region = world_middle_east
+		# geographical_region = world_europe
+		# geographical_region = world_steppe_west
+		# geographical_region = world_asia_minor
+	}
+}
+
+province_has_vegetable_parsnip_trigger = {
+	#L5R Modified
+	geographical_region = world_rokugan
+	# NOT = { geographical_region = world_africa }
+}
+
+province_has_vegetable_turnip_trigger = {
+	#L5R Modified
+	geographical_region = world_rokugan
+	# NOT = { geographical_region = world_africa }
+}
+
+province_has_vegetable_yams_trigger = {
+	OR = {
+		#L5R Modified
+		geographical_region = world_rokugan
+		# African yams
+		# geographical_region = world_africa
+		# # Chinese yams
+		# geographical_region = world_tibet
+		# geographical_region = world_burma
+		# geographical_region = world_steppe_east
+		# geographical_region = world_steppe_tarim
+	}
+}
+
+province_has_vegetable_kokoro_trigger = {
+	#L5R Disabled
+	always = no
+	# geographical_region = world_africa
+}
+
+province_has_vegetable_ginger_trigger = {
+	#L5R Modified
+	geographical_region = world_rokugan
+	# OR = {
+	# 	geographical_region = world_india
+	# 	geographical_region = world_burma
+	# }
+}
+
+province_has_vegetable_taro_trigger = {
+	#L5R Modified
+	geographical_region = world_rokugan
+	# OR = {
+	# 	geographical_region = world_india
+	# 	geographical_region = world_burma
+	# 	geographical_region = world_tibet
+	# 	geographical_region = world_steppe_east
+	# 	geographical_region = world_steppe_tarim
+	# }
+}
