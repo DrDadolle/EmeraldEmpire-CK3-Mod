@@ -31,7 +31,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
 - Add thumbnail image for the mod !
-- DNA is changed (hair/mustache) between bookmark
+- Add more natural white hair spawn ON birth event for crane heritage 
+- create culture with special parameter to favorise more shindoshi
+	- and special one, even better for isawa !
+- Change map (wall of the north) to divide it in 2/3 (to avoid phoenix clan with duchy mirumoto to border ALL the north)
 
 
 ## short term goals 
@@ -74,6 +77,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Issues with missing accolades in innovations description ? Why ?
 - start war on toshi Rambo / city rich frog decision
 	- Bug : on_war_transferred => war_event.2001 gets called because we target the small owner instead of the big liege. 
+- DNA is changed (hair/mustache) between bookmark
 
 ## Futures Features & Nice to have
 - Set up github branches (dev/release/beta) and pratices/rights
