@@ -624,14 +624,15 @@ fp3_yearly.2010 = {
 			text = {
 				desc = fp3_yearly.2010.a
 				first_valid = {
-					triggered_desc = {
-						trigger = { culture = { has_innovation = innovation_elephantry } }
-						desc = fp3_yearly.2010.a_elephants
-					}
-					triggered_desc = {
-						trigger = { culture = { has_innovation = innovation_elephantry } }
-						desc = fp3_yearly.2010.a_camels
-					}
+					#L5R Disabled
+					# triggered_desc = {
+					# 	trigger = { culture = { has_innovation = innovation_elephantry } }
+					# 	desc = fp3_yearly.2010.a_elephants
+					# }
+					# triggered_desc = {
+					# 	trigger = { culture = { has_innovation = innovation_elephantry } }
+					# 	desc = fp3_yearly.2010.a_camels
+					# }
 					desc = fp3_yearly.2010.a_horses
 				}
 			}
@@ -774,14 +775,15 @@ fp3_yearly.2011 = {
 			text = {
 				desc = fp3_yearly.2010.a
 				first_valid = {
-					triggered_desc = {
-						trigger = { culture = { has_innovation = innovation_elephantry } }
-						desc = fp3_yearly.2010.a_elephants
-					}
-					triggered_desc = {
-						trigger = { culture = { has_innovation = innovation_elephantry } }
-						desc = fp3_yearly.2010.a_camels
-					}
+					#L5R Disabled
+					# triggered_desc = {
+					# 	trigger = { culture = { has_innovation = innovation_elephantry } }
+					# 	desc = fp3_yearly.2010.a_elephants
+					# }
+					# triggered_desc = {
+					# 	trigger = { culture = { has_innovation = innovation_elephantry } }
+					# 	desc = fp3_yearly.2010.a_camels
+					# }
 					desc = fp3_yearly.2010.a_horses
 				}
 			}

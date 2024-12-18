@@ -1513,391 +1513,391 @@ scripted_trigger fp1_0031_any_valid_king_trigger = {
 }
 
 #	A deceitful warrior is telling tall-tales at court.
-fp1_yearly.0031 = {
-	type = character_event
-	title = fp1_yearly.0031.t
-	desc = {
-		desc = fp1_yearly.0031.desc.intro
-		first_valid = {
-			triggered_desc = {
-				trigger = { scope:lie_nature = flag:sunk_longboat }
-				desc = fp1_yearly.0031.desc.sunk_longboat
-			}
-			triggered_desc = {
-				trigger = { scope:lie_nature = flag:wrestled_whale }
-				desc = fp1_yearly.0031.desc.wrestled_whale
-			}
-			triggered_desc = {
-				trigger = {
-					scope:lie_nature = flag:charged_city
-					exists = scope:fruit_knife
-				}
-				desc = fp1_yearly.0031.desc.charged_city_fruit_knife
-			}
-			triggered_desc = {
-				trigger = {
-					scope:lie_nature = flag:charged_city
-					NOT = { exists = scope:fruit_knife }
-				}
-				desc = fp1_yearly.0031.desc.charged_city
-			}
-			#L5R Disabled
-			# triggered_desc = {
-			# 	trigger = { scope:lie_nature = flag:kept_iceland_afloat }
-			# 	desc = fp1_yearly.0031.desc.kept_iceland_afloat
-			# }
-			triggered_desc = {
-				trigger = { scope:lie_nature = flag:wooed_heir }
-				desc = fp1_yearly.0031.desc.wooed_heir
-			}
-			triggered_desc = {
-				trigger = { scope:lie_nature = flag:hunted_troll }
-				desc = fp1_yearly.0031.desc.hunted_troll
-			}
-		}
-		desc = fp1_yearly.0031.desc.outro
-	}
-	theme = intrigue
-	left_portrait = {
-		character = scope:lying_warrior
-		animation = personality_greedy
-	}
-	override_background = { reference = feast }
+# fp1_yearly.0031 = {
+# 	type = character_event
+# 	title = fp1_yearly.0031.t
+# 	desc = {
+# 		desc = fp1_yearly.0031.desc.intro
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { scope:lie_nature = flag:sunk_longboat }
+# 				desc = fp1_yearly.0031.desc.sunk_longboat
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:lie_nature = flag:wrestled_whale }
+# 				desc = fp1_yearly.0031.desc.wrestled_whale
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					scope:lie_nature = flag:charged_city
+# 					exists = scope:fruit_knife
+# 				}
+# 				desc = fp1_yearly.0031.desc.charged_city_fruit_knife
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					scope:lie_nature = flag:charged_city
+# 					NOT = { exists = scope:fruit_knife }
+# 				}
+# 				desc = fp1_yearly.0031.desc.charged_city
+# 			}
+# 			#L5R Disabled
+# 			# triggered_desc = {
+# 			# 	trigger = { scope:lie_nature = flag:kept_iceland_afloat }
+# 			# 	desc = fp1_yearly.0031.desc.kept_iceland_afloat
+# 			# }
+# 			triggered_desc = {
+# 				trigger = { scope:lie_nature = flag:wooed_heir }
+# 				desc = fp1_yearly.0031.desc.wooed_heir
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:lie_nature = flag:hunted_troll }
+# 				desc = fp1_yearly.0031.desc.hunted_troll
+# 			}
+# 		}
+# 		desc = fp1_yearly.0031.desc.outro
+# 	}
+# 	theme = intrigue
+# 	left_portrait = {
+# 		character = scope:lying_warrior
+# 		animation = personality_greedy
+# 	}
+# 	override_background = { reference = feast }
 
-	trigger = {
-		#DLC check.
-		has_fp1_dlc_trigger = yes
-		#Standard checks.
-		is_available_even_at_war_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0031 }
-		is_landed = yes
-		#Must be some form of North Germanic culture.
-		culture = { has_cultural_pillar = heritage_north_germanic }
-		#And that culture must not be too advanced.
-		culture = {
-			NOT = { has_cultural_era_or_later = culture_era_high_medieval }
-		}
-	}
+# 	trigger = {
+# 		#DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		#Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0031 }
+# 		is_landed = yes
+# 		#Must be some form of North Germanic culture.
+# 		culture = { has_cultural_pillar = heritage_north_germanic }
+# 		#And that culture must not be too advanced.
+# 		culture = {
+# 			NOT = { has_cultural_era_or_later = culture_era_high_medieval }
+# 		}
+# 	}
 
-	weight_multiplier = {
-		base = 1
-	}
+# 	weight_multiplier = {
+# 		base = 1
+# 	}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0031
-			days = 1825
-		}
-		#Save the capital for loc.
-		capital_barony = { save_scope_as = capital_barony }
-		#Create our lying warrior.
-		create_character = {
-			location = root.capital_province
-			template = fp1_deceitful_warrior_character
-			save_scope_as = lying_warrior
-		}
-		#Create our actual lie.
-		##Six options for roughly 16.6% chance apiece.
-		random_list = {
-			#Swam home after their longboat sank from too much plunder.
-			166 = {
-				#Fallback: always available.
-				save_scope_value_as = {
-					name = lie_nature
-					value = flag:sunk_longboat
-				}
-			}
-			#Wrestled a wounded whale ashore single-handed.
-			166 = {
-				#Fallback: always available.
-				save_scope_value_as = {
-					name = lie_nature
-					value = flag:wrestled_whale
-				}
-			}
-			#Lead the charge on the walls of a great city.
-			166 = {
-				#Fallback: always available.
-				save_scope_value_as = {
-					name = lie_nature
-					value = flag:charged_city
-				}
-				#And an Easter egg for Nick.
-				random = {
-					chance = 1
-					save_scope_value_as = {
-						name = fruit_knife
-						value = yes
-					}
-					scope:lying_warrior = { give_nickname = nick_the_blessed }
-				}
-			}
-			#Averted giant holmgang that would have sunk Iceland.
-			# 166 = {
-			# 	trigger = {
-			# 		#Must not have any counties in Iceland, as the news'd travel otherwise.
-			# 		NOT = {
-			# 			any_realm_de_jure_duchy = { this = title:d_iceland }
-			# 		}
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = lie_nature
-			# 		value = flag:kept_iceland_afloat
-			# 	}
-			# }
-			#Wooed the child of a foreign king.
-			166 = {
-				trigger = {
-					any_kingdom = {
-						is_title_created = yes
-						holder = { fp1_0031_any_valid_king_trigger = yes }
-					}
-				}
-				save_scope_value_as = {
-					name = lie_nature
-					value = flag:wooed_heir
-				}
-				#Designate a suitable kingdom.
-				random_kingdom = {
-					limit = {
-						is_title_created = yes
-						holder = { fp1_0031_any_valid_king_trigger = yes }
-					}
-					holder = { save_scope_as = disparaged_king }
-				}
-				#Set dummy appropriate gender.
-				## If the faith is generally intolerant, then we invent a heterosexual target.
-				if = {
-					limit = {
-						faith = {
-							OR = {
-								has_doctrine_parameter = homosexuality_illegal
-								has_doctrine_parameter = homosexuality_shunned
-							}
-						}
-					}
-					# Then females get a male invention.
-					if = {
-						limit = {
-							scope:lying_warrior = { is_female = yes }
-						}
-						dummy_male = { save_scope_as = invented_heir }
-					}
-					# And males get a female invention.
-					if = {
-						limit = {
-							scope:lying_warrior = { is_male = yes }
-						}
-						dummy_female = { save_scope_as = invented_heir }
-					}
-				}
-				## Otherwise, we randomise.
-				else = {
-					random_list = {
-						100 = {
-							dummy_female = { save_scope_as = invented_heir }
-						}
-						100 = {
-							dummy_male = { save_scope_as = invented_heir }
-						}
-					}
-				}
-				## Ensure that scope:lying_warrior's preferences line up with their invented target.
-				### Note: asexuals not specifically accounted for, since we can't reliably say which way(s) their preferences go, as we don't store that information.
-				scope:lying_warrior = {
-					if = {
-						limit = {
-							# Orthodox couplings.
-							OR = {
-								AND = {
-									is_female = yes
-									scope:invented_heir = { is_female = yes }
-								}
-								AND = {
-									is_male = yes
-									scope:invented_heir = { is_male = yes }
-								}
-							}
-							# But a heterodox preference.
-							has_sexuality = heterosexual
-						}
-						# Randomise scope:lying_warrior's sexuality to match their stories.
-						random_list = {
-							100 = { set_sexuality = bisexual }
-							100 = { set_sexuality = homosexual }
-						}
-					}
-				}
-			}
-			#Hunted troll.
-			166 = {
-				#Fallback: always available.
-				save_scope_value_as = {
-					name = lie_nature
-					value = flag:hunted_troll
-				}
-				#Gotta make it believable.
-				scope:lying_warrior = {
-					hidden_effect = {
-						increase_wounds_effect = { REASON = fight }
-					}
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0031
+# 			days = 1825
+# 		}
+# 		#Save the capital for loc.
+# 		capital_barony = { save_scope_as = capital_barony }
+# 		#Create our lying warrior.
+# 		create_character = {
+# 			location = root.capital_province
+# 			template = fp1_deceitful_warrior_character
+# 			save_scope_as = lying_warrior
+# 		}
+# 		#Create our actual lie.
+# 		##Six options for roughly 16.6% chance apiece.
+# 		random_list = {
+# 			#Swam home after their longboat sank from too much plunder.
+# 			166 = {
+# 				#Fallback: always available.
+# 				save_scope_value_as = {
+# 					name = lie_nature
+# 					value = flag:sunk_longboat
+# 				}
+# 			}
+# 			#Wrestled a wounded whale ashore single-handed.
+# 			166 = {
+# 				#Fallback: always available.
+# 				save_scope_value_as = {
+# 					name = lie_nature
+# 					value = flag:wrestled_whale
+# 				}
+# 			}
+# 			#Lead the charge on the walls of a great city.
+# 			166 = {
+# 				#Fallback: always available.
+# 				save_scope_value_as = {
+# 					name = lie_nature
+# 					value = flag:charged_city
+# 				}
+# 				#And an Easter egg for Nick.
+# 				random = {
+# 					chance = 1
+# 					save_scope_value_as = {
+# 						name = fruit_knife
+# 						value = yes
+# 					}
+# 					scope:lying_warrior = { give_nickname = nick_the_blessed }
+# 				}
+# 			}
+# 			#Averted giant holmgang that would have sunk Iceland.
+# 			# 166 = {
+# 			# 	trigger = {
+# 			# 		#Must not have any counties in Iceland, as the news'd travel otherwise.
+# 			# 		NOT = {
+# 			# 			any_realm_de_jure_duchy = { this = title:d_iceland }
+# 			# 		}
+# 			# 	}
+# 			# 	save_scope_value_as = {
+# 			# 		name = lie_nature
+# 			# 		value = flag:kept_iceland_afloat
+# 			# 	}
+# 			# }
+# 			#Wooed the child of a foreign king.
+# 			166 = {
+# 				trigger = {
+# 					any_kingdom = {
+# 						is_title_created = yes
+# 						holder = { fp1_0031_any_valid_king_trigger = yes }
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = lie_nature
+# 					value = flag:wooed_heir
+# 				}
+# 				#Designate a suitable kingdom.
+# 				random_kingdom = {
+# 					limit = {
+# 						is_title_created = yes
+# 						holder = { fp1_0031_any_valid_king_trigger = yes }
+# 					}
+# 					holder = { save_scope_as = disparaged_king }
+# 				}
+# 				#Set dummy appropriate gender.
+# 				## If the faith is generally intolerant, then we invent a heterosexual target.
+# 				if = {
+# 					limit = {
+# 						faith = {
+# 							OR = {
+# 								has_doctrine_parameter = homosexuality_illegal
+# 								has_doctrine_parameter = homosexuality_shunned
+# 							}
+# 						}
+# 					}
+# 					# Then females get a male invention.
+# 					if = {
+# 						limit = {
+# 							scope:lying_warrior = { is_female = yes }
+# 						}
+# 						dummy_male = { save_scope_as = invented_heir }
+# 					}
+# 					# And males get a female invention.
+# 					if = {
+# 						limit = {
+# 							scope:lying_warrior = { is_male = yes }
+# 						}
+# 						dummy_female = { save_scope_as = invented_heir }
+# 					}
+# 				}
+# 				## Otherwise, we randomise.
+# 				else = {
+# 					random_list = {
+# 						100 = {
+# 							dummy_female = { save_scope_as = invented_heir }
+# 						}
+# 						100 = {
+# 							dummy_male = { save_scope_as = invented_heir }
+# 						}
+# 					}
+# 				}
+# 				## Ensure that scope:lying_warrior's preferences line up with their invented target.
+# 				### Note: asexuals not specifically accounted for, since we can't reliably say which way(s) their preferences go, as we don't store that information.
+# 				scope:lying_warrior = {
+# 					if = {
+# 						limit = {
+# 							# Orthodox couplings.
+# 							OR = {
+# 								AND = {
+# 									is_female = yes
+# 									scope:invented_heir = { is_female = yes }
+# 								}
+# 								AND = {
+# 									is_male = yes
+# 									scope:invented_heir = { is_male = yes }
+# 								}
+# 							}
+# 							# But a heterodox preference.
+# 							has_sexuality = heterosexual
+# 						}
+# 						# Randomise scope:lying_warrior's sexuality to match their stories.
+# 						random_list = {
+# 							100 = { set_sexuality = bisexual }
+# 							100 = { set_sexuality = homosexual }
+# 						}
+# 					}
+# 				}
+# 			}
+# 			#Hunted troll.
+# 			166 = {
+# 				#Fallback: always available.
+# 				save_scope_value_as = {
+# 					name = lie_nature
+# 					value = flag:hunted_troll
+# 				}
+# 				#Gotta make it believable.
+# 				scope:lying_warrior = {
+# 					hidden_effect = {
+# 						increase_wounds_effect = { REASON = fight }
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	#Invite them to stay permanently.
-	option = {
-		name = fp1_yearly.0031.a
+# 	#Invite them to stay permanently.
+# 	option = {
+# 		name = fp1_yearly.0031.a
 
-		add_courtier = scope:lying_warrior
+# 		add_courtier = scope:lying_warrior
 
-		stress_impact = {
-			trusting = minor_stress_impact_loss
-			paranoid = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.25
-				ai_sociability = 0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = trusting
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = paranoid
-			}
-		}
-	}
+# 		stress_impact = {
+# 			trusting = minor_stress_impact_loss
+# 			paranoid = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.25
+# 				ai_sociability = 0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = trusting
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = paranoid
+# 			}
+# 		}
+# 	}
 
-	#Question their veracity.
-	option = {
-		name = fp1_yearly.0031.b
+# 	#Question their veracity.
+# 	option = {
+# 		name = fp1_yearly.0031.b
 
-		#Standard intrigue duel; we make it a little easier, since you do have the choice of just gaining a courtier.
-		duel = {
-			skill = intrigue
-			target = scope:lying_warrior
-			#You expose their lies.
-			60 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0031.b.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0031.b.tt_success
-					left_icon = scope:lying_warrior
-					add_prestige = minor_prestige_gain
-					scope:lying_warrior = {
-						#Dispose of scope:lying_warrior.
-						hidden_effect = {
-							death = { death_reason = death_vanished }
-						}
-					}
-				}
-			}
-			#They run circles around your questions.
-			40 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0031.b.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0031.b.tt_failure
-					left_icon = scope:lying_warrior
-					add_prestige = minor_prestige_loss
-					scope:lying_warrior = {
-						#Dispose of scope:lying_warrior.
-						hidden_effect = {
-							death = { death_reason = death_vanished }
-						}
-					}
-				}
-			}
-		}
+# 		#Standard intrigue duel; we make it a little easier, since you do have the choice of just gaining a courtier.
+# 		duel = {
+# 			skill = intrigue
+# 			target = scope:lying_warrior
+# 			#You expose their lies.
+# 			60 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0031.b.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0031.b.tt_success
+# 					left_icon = scope:lying_warrior
+# 					add_prestige = minor_prestige_gain
+# 					scope:lying_warrior = {
+# 						#Dispose of scope:lying_warrior.
+# 						hidden_effect = {
+# 							death = { death_reason = death_vanished }
+# 						}
+# 					}
+# 				}
+# 			}
+# 			#They run circles around your questions.
+# 			40 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0031.b.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0031.b.tt_failure
+# 					left_icon = scope:lying_warrior
+# 					add_prestige = minor_prestige_loss
+# 					scope:lying_warrior = {
+# 						#Dispose of scope:lying_warrior.
+# 						hidden_effect = {
+# 							death = { death_reason = death_vanished }
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			paranoid = medium_stress_impact_loss
-			trusting = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.25
-				ai_sociability = -0.5
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = paranoid
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = trusting
-			}
-		}
-	}
+# 		stress_impact = {
+# 			paranoid = medium_stress_impact_loss
+# 			trusting = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.25
+# 				ai_sociability = -0.5
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = paranoid
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = trusting
+# 			}
+# 		}
+# 	}
 
-	#Tell them to tell people of your generous halls.
-	option = {
-		name = fp1_yearly.0031.c
+# 	#Tell them to tell people of your generous halls.
+# 	option = {
+# 		name = fp1_yearly.0031.c
 
-		#Get a nice little bonus/negate a negative for being talked up.
-		if = {
-			limit = { has_character_modifier = stingy_host_fp1_modifier }
-			remove_character_modifier = stingy_host_fp1_modifier
-		}
-		else = {
-			add_character_modifier = {
-				modifier = generous_host_fp1_modifier
-				years = 10
-			}
-		}
+# 		#Get a nice little bonus/negate a negative for being talked up.
+# 		if = {
+# 			limit = { has_character_modifier = stingy_host_fp1_modifier }
+# 			remove_character_modifier = stingy_host_fp1_modifier
+# 		}
+# 		else = {
+# 			add_character_modifier = {
+# 				modifier = generous_host_fp1_modifier
+# 				years = 10
+# 			}
+# 		}
 
-		#Dispose of scope:lying_warrior.
-		hidden_effect = {
-			scope:lying_warrior = {
-				death = { death_reason = death_vanished }
-			}
-		}
+# 		#Dispose of scope:lying_warrior.
+# 		hidden_effect = {
+# 			scope:lying_warrior = {
+# 				death = { death_reason = death_vanished }
+# 			}
+# 		}
 
-		stress_impact = {
-			gregarious = minor_stress_impact_loss
-			arrogant = minor_stress_impact_loss
-			shy = minor_stress_impact_gain
-			humble = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.25
-				ai_sociability = -0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = gregarious
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = arrogant
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = shy
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = humble
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			gregarious = minor_stress_impact_loss
+# 			arrogant = minor_stress_impact_loss
+# 			shy = minor_stress_impact_gain
+# 			humble = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.25
+# 				ai_sociability = -0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = gregarious
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = shy
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = humble
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # [Russia/Steppe] Islamic Explorer Visits Court
@@ -2229,1064 +2229,1064 @@ scripted_trigger suitable_islamic_realm_trigger = {
 ##################################################
 
 #	You are informed of the reputed-draugr.
-fp1_yearly.0051 = {
-	type = character_event
-	title = fp1_yearly.0051.t
-	desc = fp1_yearly.0051.desc
-	theme = unfriendly
-	left_portrait = {
-		character = scope:draugr
-		animation = personality_vengeful
-	}
-	override_background = { reference = throne_room }
+# fp1_yearly.0051 = {
+# 	type = character_event
+# 	title = fp1_yearly.0051.t
+# 	desc = fp1_yearly.0051.desc
+# 	theme = unfriendly
+# 	left_portrait = {
+# 		character = scope:draugr
+# 		animation = personality_vengeful
+# 	}
+# 	override_background = { reference = throne_room }
 
-	trigger = {
-		#DLC check.
-		has_fp1_dlc_trigger = yes
-		#Standard checks.
-		is_available_even_at_war_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0051 }
-		is_landed = yes
-		#Must have a draugr candidate ready; this is set on the on_death on_action.
-		has_variable = potential_draugr
-		#Must be a tribal...
-		government_has_flag = government_is_tribal
-		#With a rural, North Germanic capital.
-		capital_county = {
-			#Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			development_level <= terrible_development_level
-		}
-	}
+# 	trigger = {
+# 		#DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		#Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0051 }
+# 		is_landed = yes
+# 		#Must have a draugr candidate ready; this is set on the on_death on_action.
+# 		has_variable = potential_draugr
+# 		#Must be a tribal...
+# 		government_has_flag = government_is_tribal
+# 		#With a rural, North Germanic capital.
+# 		capital_county = {
+# 			#Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
+# 			culture = { has_cultural_pillar = heritage_north_germanic }
+# 			development_level <= terrible_development_level
+# 		}
+# 	}
 
-	weight_multiplier = {
-		base = 1
-	}
+# 	weight_multiplier = {
+# 		base = 1
+# 	}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0051
-			days = 7300
-		}
-		#Grab our capital for loc.
-		capital_county = { save_scope_as = capital_county }
-		#Then grab our draugr.
-		var:potential_draugr = { save_scope_as = draugr }
-	}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0051
+# 			days = 7300
+# 		}
+# 		#Grab our capital for loc.
+# 		capital_county = { save_scope_as = capital_county }
+# 		#Then grab our draugr.
+# 		var:potential_draugr = { save_scope_as = draugr }
+# 	}
 
-	#Investigate in person.
-	option = {
-		name = fp1_yearly.0051.a
+# 	#Investigate in person.
+# 	option = {
+# 		name = fp1_yearly.0051.a
 
-		#You go off to investigate in person.
-		custom_tooltip = fp1_yearly.0051.a.tt
-		##5 possible outcomes, weighing down the chance of nothing happening slightly due to low value, gives us x4 options of 22.5% & one of 10%.
-		hidden_effect = {
-			random_list = {
-				#A pack of wolves!
-				225 = {
-					trigger_event = {
-						id = fp1_yearly.0061
-						months = 1
-					}
-				}
-				#A fearsome bear!
-				225 = {
-					trigger_event = {
-						id = fp1_yearly.0062
-						months = 1
-					}
-				}
-				#A nithing living in the mound!
-				225 = {
-					trigger_event = {
-						id = fp1_yearly.0063
-						months = 1
-					}
-				}
-				#An orphan living in the mound!
-				225 = {
-					trigger_event = {
-						id = fp1_yearly.0064
-						months = 1
-					}
-				}
-				#Absolutely bugger-all!
-				100 = {
-					trigger_event = {
-						id = fp1_yearly.0065
-						months = 1
-					}
-				}
-			}
-		}
+# 		#You go off to investigate in person.
+# 		custom_tooltip = fp1_yearly.0051.a.tt
+# 		##5 possible outcomes, weighing down the chance of nothing happening slightly due to low value, gives us x4 options of 22.5% & one of 10%.
+# 		hidden_effect = {
+# 			random_list = {
+# 				#A pack of wolves!
+# 				225 = {
+# 					trigger_event = {
+# 						id = fp1_yearly.0061
+# 						months = 1
+# 					}
+# 				}
+# 				#A fearsome bear!
+# 				225 = {
+# 					trigger_event = {
+# 						id = fp1_yearly.0062
+# 						months = 1
+# 					}
+# 				}
+# 				#A nithing living in the mound!
+# 				225 = {
+# 					trigger_event = {
+# 						id = fp1_yearly.0063
+# 						months = 1
+# 					}
+# 				}
+# 				#An orphan living in the mound!
+# 				225 = {
+# 					trigger_event = {
+# 						id = fp1_yearly.0064
+# 						months = 1
+# 					}
+# 				}
+# 				#Absolutely bugger-all!
+# 				100 = {
+# 					trigger_event = {
+# 						id = fp1_yearly.0065
+# 						months = 1
+# 					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			diligent = medium_stress_impact_loss
-			brave = medium_stress_impact_loss
-			lazy = medium_stress_impact_gain
-			craven = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_energy = 0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = diligent
-			}
-			modifier = {	#Weight down for stress.
-				add = 20
-				has_trait = brave
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = lazy
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = craven
-			}
-		}
-	}
+# 		stress_impact = {
+# 			diligent = medium_stress_impact_loss
+# 			brave = medium_stress_impact_loss
+# 			lazy = medium_stress_impact_gain
+# 			craven = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_energy = 0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = diligent
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = 20
+# 				has_trait = brave
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
 
-	#Try various folk solutions.
-	option = {
-		name = fp1_yearly.0051.c
+# 	#Try various folk solutions.
+# 	option = {
+# 		name = fp1_yearly.0051.c
 
-		#Let's see how your hearth wisdom is, chummer.
-		duel = {
-			skill = learning
-			value = decent_skill_rating
-			#Your potions and spells reassure the locals.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0051.c.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0051.c.tt_success
-					left_icon = scope:draugr
-					capital_county = {
-						add_county_modifier = {
-							modifier = draugr_remedies_succeeded_fp1_modifier
-							years = 10
-						}
-					}
-					add_stress = medium_stress_loss
-				}
-			}
-			#Your rituals are insufficient.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0051.c.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0051.c.tt_failure
-					left_icon = scope:draugr
-					capital_county = {
-						add_county_modifier = {
-							modifier = draugr_remedies_failed_fp1_modifier
-							years = 10
-						}
-					}
-					add_stress = medium_stress_gain
-				}
-			}
-		}
+# 		#Let's see how your hearth wisdom is, chummer.
+# 		duel = {
+# 			skill = learning
+# 			value = decent_skill_rating
+# 			#Your potions and spells reassure the locals.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0051.c.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0051.c.tt_success
+# 					left_icon = scope:draugr
+# 					capital_county = {
+# 						add_county_modifier = {
+# 							modifier = draugr_remedies_succeeded_fp1_modifier
+# 							years = 10
+# 						}
+# 					}
+# 					add_stress = medium_stress_loss
+# 				}
+# 			}
+# 			#Your rituals are insufficient.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0051.c.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0051.c.tt_failure
+# 					left_icon = scope:draugr
+# 					capital_county = {
+# 						add_county_modifier = {
+# 							modifier = draugr_remedies_failed_fp1_modifier
+# 							years = 10
+# 						}
+# 					}
+# 					add_stress = medium_stress_gain
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			lazy = minor_stress_impact_loss
-			diligent = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.5
-				ai_energy = 0.5
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = lazy
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = diligent
-			}
-		}
-	}
+# 		stress_impact = {
+# 			lazy = minor_stress_impact_loss
+# 			diligent = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.5
+# 				ai_energy = 0.5
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
 
-	#Have them exhumed and the corpse destroyed.
-	option = {
-		name = fp1_yearly.0051.b
+# 	#Have them exhumed and the corpse destroyed.
+# 	option = {
+# 		name = fp1_yearly.0051.b
 
-		#Peasants are happy.
-		send_interface_toast = {
-			title = fp1_yearly.0051.b.body_destroyed
-			left_icon = root
-			capital_county = {
-				add_county_modifier = {
-					modifier = draugr_remedies_succeeded_fp1_modifier
-					years = 10
-				}
-			}
-		}
+# 		#Peasants are happy.
+# 		send_interface_toast = {
+# 			title = fp1_yearly.0051.b.body_destroyed
+# 			left_icon = root
+# 			capital_county = {
+# 				add_county_modifier = {
+# 					modifier = draugr_remedies_succeeded_fp1_modifier
+# 					years = 10
+# 				}
+# 			}
+# 		}
 
-		#But either the family of the deceased are not...
-		if = {
-			limit = {
-				scope:draugr = {
-					OR = {
-						#Nab their entire house.
-						AND = {
-							exists = house
-							house = {
-								any_house_member = {
-									count >= 1
-									is_alive = yes
-								}
-							}
-						}
-						#Any close family outside of that house (bastards, house-founder siblings, etc).
-						any_close_or_extended_family_member = {
-							count >= 1
-							is_alive = yes
-						}
-						#And any spouses still kicking around.
-						any_former_spouse = {
-							count >= 1
-							is_alive = yes
-						}
-					}
-				}
-			}
-			#Nab scope:draugr's nearest'n'dearest.
-			scope:draugr = {
-				if = {
-					limit = { exists = house }
-					house = {
-						every_house_member = {
-							limit = { is_alive = yes }
-							add_to_list = close_to_draugr_list
-						}
-					}
-				}
-				every_close_or_extended_family_member = {
-					limit = { is_alive = yes }
-					add_to_list = close_to_draugr_list
-				}
-				every_former_spouse = {
-					limit = { is_alive = yes }
-					add_to_list = close_to_draugr_list
-				}
-			}
-			#And make them unhappy at the thing wot u dun.
-			every_in_list = {
-				list = close_to_draugr_list
-				custom = fp1_yearly.0051.b.list
-				add_opinion = {
-					target = root
-					modifier = fp1_desecrated_corpse_of_loved_one
-				}
-			}
-		}
-		#... Or you have to spend a little prestige for defiling the dead.
-		else = { add_prestige = medium_prestige_loss }
+# 		#But either the family of the deceased are not...
+# 		if = {
+# 			limit = {
+# 				scope:draugr = {
+# 					OR = {
+# 						#Nab their entire house.
+# 						AND = {
+# 							exists = house
+# 							house = {
+# 								any_house_member = {
+# 									count >= 1
+# 									is_alive = yes
+# 								}
+# 							}
+# 						}
+# 						#Any close family outside of that house (bastards, house-founder siblings, etc).
+# 						any_close_or_extended_family_member = {
+# 							count >= 1
+# 							is_alive = yes
+# 						}
+# 						#And any spouses still kicking around.
+# 						any_former_spouse = {
+# 							count >= 1
+# 							is_alive = yes
+# 						}
+# 					}
+# 				}
+# 			}
+# 			#Nab scope:draugr's nearest'n'dearest.
+# 			scope:draugr = {
+# 				if = {
+# 					limit = { exists = house }
+# 					house = {
+# 						every_house_member = {
+# 							limit = { is_alive = yes }
+# 							add_to_list = close_to_draugr_list
+# 						}
+# 					}
+# 				}
+# 				every_close_or_extended_family_member = {
+# 					limit = { is_alive = yes }
+# 					add_to_list = close_to_draugr_list
+# 				}
+# 				every_former_spouse = {
+# 					limit = { is_alive = yes }
+# 					add_to_list = close_to_draugr_list
+# 				}
+# 			}
+# 			#And make them unhappy at the thing wot u dun.
+# 			every_in_list = {
+# 				list = close_to_draugr_list
+# 				custom = fp1_yearly.0051.b.list
+# 				add_opinion = {
+# 					target = root
+# 					modifier = fp1_desecrated_corpse_of_loved_one
+# 				}
+# 			}
+# 		}
+# 		#... Or you have to spend a little prestige for defiling the dead.
+# 		else = { add_prestige = medium_prestige_loss }
 
-		stress_impact = {
-			vengeful = minor_stress_impact_loss
-			callous = medium_stress_impact_loss
-			arbitrary = medium_stress_impact_loss
-			forgiving = minor_stress_impact_gain
-			compassionate = medium_stress_impact_gain
-			just = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_vengefulness = 0.25
-				ai_compassion = -0.25
-				ai_honor = -0.5
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = vengeful
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = callous
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = arbitrary
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = forgiving
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = compassionate
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = just
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			vengeful = minor_stress_impact_loss
+# 			callous = medium_stress_impact_loss
+# 			arbitrary = medium_stress_impact_loss
+# 			forgiving = minor_stress_impact_gain
+# 			compassionate = medium_stress_impact_gain
+# 			just = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_vengefulness = 0.25
+# 				ai_compassion = -0.25
+# 				ai_honor = -0.5
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = callous
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = forgiving
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = just
+# 			}
+# 		}
+# 	}
+# }
 
-#	The draugr is earmarked.
-fp1_yearly.0052 = {
-	hidden = yes
+# #	The draugr is earmarked.
+# fp1_yearly.0052 = {
+# 	hidden = yes
 
-	trigger = {
-		#DLC check.
-		has_fp1_dlc_trigger = yes
-		#Must be within the player's court.
-		is_knight = yes
-		court_owner = { is_ai = no }
-		#Must be an intimidating fighter.
-		prowess >= extremely_high_skill_rating
-		#Aaaaand must have a personality that makes people think they'd come back to harass the living.
-		calc_true_if = {
-			amount >= 2
-			has_trait = wrathful
-			has_trait = arrogant
-			has_trait = deceitful
-			has_trait = craven
-			has_trait = ambitious
-			has_trait = arbitrary
-			has_trait = cynical
-			has_trait = vengeful
-			has_trait = sadistic
-		}
-	}
+# 	trigger = {
+# 		#DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		#Must be within the player's court.
+# 		is_knight = yes
+# 		court_owner = { is_ai = no }
+# 		#Must be an intimidating fighter.
+# 		prowess >= extremely_high_skill_rating
+# 		#Aaaaand must have a personality that makes people think they'd come back to harass the living.
+# 		calc_true_if = {
+# 			amount >= 2
+# 			has_trait = wrathful
+# 			has_trait = arrogant
+# 			has_trait = deceitful
+# 			has_trait = craven
+# 			has_trait = ambitious
+# 			has_trait = arbitrary
+# 			has_trait = cynical
+# 			has_trait = vengeful
+# 			has_trait = sadistic
+# 		}
+# 	}
 
-	immediate = {
-		save_scope_as = potential_draugr
-		court_owner = {
-			set_variable = {
-				name = potential_draugr
-				value = scope:potential_draugr
-				years = 5
-			}
-		}
-	}
-}
+# 	immediate = {
+# 		save_scope_as = potential_draugr
+# 		court_owner = {
+# 			set_variable = {
+# 				name = potential_draugr
+# 				value = scope:potential_draugr
+# 				years = 5
+# 			}
+# 		}
+# 	}
+# }
 
-#	The draugr was a pack of wolves!
-fp1_yearly.0061 = {
-	type = character_event
-	title = fp1_yearly.0061.t
-	desc = fp1_yearly.0061.desc
-	theme = martial
-	left_portrait = {
-		character = root
-		animation = shock
-	}
-	override_background = { reference = wilderness }
+# #	The draugr was a pack of wolves!
+# fp1_yearly.0061 = {
+# 	type = character_event
+# 	title = fp1_yearly.0061.t
+# 	desc = fp1_yearly.0061.desc
+# 	theme = martial
+# 	left_portrait = {
+# 		character = root
+# 		animation = shock
+# 	}
+# 	override_background = { reference = wilderness }
 
-	trigger = {
-		is_available_even_at_war_adult = yes
-	}
+# 	trigger = {
+# 		is_available_even_at_war_adult = yes
+# 	}
 
-	#Fight the wolves.
-	option = {
-		name = fp1_yearly.0061.a
+# 	#Fight the wolves.
+# 	option = {
+# 		name = fp1_yearly.0061.a
 
-		#You rally your soldiers to fight off the pack!
-		duel = {
-			skill = martial
-			value = high_skill_rating
-			#You slaughter the pack!
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0061.a.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0061.a.tt_success
-					left_icon = root
-					capital_county = {
-						add_county_modifier = {
-							modifier = draugr_remedies_succeeded_fp1_modifier
-							years = 10
-						}
-					}
-					add_prestige = medium_prestige_gain
-				}
-			}
-			#You barely escape with your life!
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0061.a.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0061.a.tt_failure
-					left_icon = root
-					capital_county = {
-						add_county_modifier = {
-							modifier = draugr_monstrous_wolfpack_fp1_modifier
-							years = 10
-						}
-					}
-					increase_wounds_effect = { REASON = wolves }
-				}
-			}
-		}
+# 		#You rally your soldiers to fight off the pack!
+# 		duel = {
+# 			skill = martial
+# 			value = high_skill_rating
+# 			#You slaughter the pack!
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0061.a.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0061.a.tt_success
+# 					left_icon = root
+# 					capital_county = {
+# 						add_county_modifier = {
+# 							modifier = draugr_remedies_succeeded_fp1_modifier
+# 							years = 10
+# 						}
+# 					}
+# 					add_prestige = medium_prestige_gain
+# 				}
+# 			}
+# 			#You barely escape with your life!
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0061.a.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0061.a.tt_failure
+# 					left_icon = root
+# 					capital_county = {
+# 						add_county_modifier = {
+# 							modifier = draugr_monstrous_wolfpack_fp1_modifier
+# 							years = 10
+# 						}
+# 					}
+# 					increase_wounds_effect = { REASON = wolves }
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			brave = major_stress_impact_loss
-			craven = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_honor = 0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
+# 		stress_impact = {
+# 			brave = major_stress_impact_loss
+# 			craven = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_honor = 0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
 
-	#Retreat!
-	option = {
-		name = fp1_yearly.0061.b
+# 	#Retreat!
+# 	option = {
+# 		name = fp1_yearly.0061.b
 
-		#The wolves will be eating people for some time to come.
-		capital_county = {
-			add_county_modifier = {
-				modifier = draugr_monstrous_wolfpack_fp1_modifier
-				years = 10
-			}
-		}
-		#And e'eryone knows why.
-		add_prestige = medium_prestige_loss
+# 		#The wolves will be eating people for some time to come.
+# 		capital_county = {
+# 			add_county_modifier = {
+# 				modifier = draugr_monstrous_wolfpack_fp1_modifier
+# 				years = 10
+# 			}
+# 		}
+# 		#And e'eryone knows why.
+# 		add_prestige = medium_prestige_loss
 
-		stress_impact = {
-			craven = major_stress_impact_loss
-			brave = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.25
-				ai_boldness = -0.5
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = craven
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = brave
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			craven = major_stress_impact_loss
+# 			brave = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.25
+# 				ai_boldness = -0.5
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = craven
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = brave
+# 			}
+# 		}
+# 	}
+# }
 
-#	The draugr was a bear!
-fp1_yearly.0062 = {
-	type = character_event
-	title = fp1_yearly.0062.t
-	desc = fp1_yearly.0062.desc
-	theme = martial
-	left_portrait = {
-		character = root
-		animation = shock
-	}
-	override_background = { reference = wilderness }
+# #	The draugr was a bear!
+# fp1_yearly.0062 = {
+# 	type = character_event
+# 	title = fp1_yearly.0062.t
+# 	desc = fp1_yearly.0062.desc
+# 	theme = martial
+# 	left_portrait = {
+# 		character = root
+# 		animation = shock
+# 	}
+# 	override_background = { reference = wilderness }
 
-	trigger = {
-		is_available_even_at_war_adult = yes
-	}
+# 	trigger = {
+# 		is_available_even_at_war_adult = yes
+# 	}
 
-	#Fight the bear.
-	option = {
-		name = fp1_yearly.0062.a
+# 	#Fight the bear.
+# 	option = {
+# 		name = fp1_yearly.0062.a
 
-		#You meet the bear's challenge!
-		duel = {
-			skill = prowess
-			value = high_skill_rating
-			#You kill the bear!
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0062.a.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0062.a.tt_success
-					left_icon = root
-					capital_county = {
-						add_county_modifier = {
-							modifier = draugr_remedies_succeeded_fp1_modifier
-							years = 10
-						}
-					}
-					add_prestige = medium_prestige_gain
-				}
-			}
-			#You only just escape with your life!
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0062.a.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0062.a.tt_failure
-					left_icon = root
-					capital_county = {
-						add_county_modifier = {
-							modifier = draugr_monstrous_bear_fp1_modifier
-							years = 10
-						}
-					}
-					increase_wounds_effect = { REASON = bear }
-				}
-			}
-		}
+# 		#You meet the bear's challenge!
+# 		duel = {
+# 			skill = prowess
+# 			value = high_skill_rating
+# 			#You kill the bear!
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0062.a.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0062.a.tt_success
+# 					left_icon = root
+# 					capital_county = {
+# 						add_county_modifier = {
+# 							modifier = draugr_remedies_succeeded_fp1_modifier
+# 							years = 10
+# 						}
+# 					}
+# 					add_prestige = medium_prestige_gain
+# 				}
+# 			}
+# 			#You only just escape with your life!
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0062.a.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0062.a.tt_failure
+# 					left_icon = root
+# 					capital_county = {
+# 						add_county_modifier = {
+# 							modifier = draugr_monstrous_bear_fp1_modifier
+# 							years = 10
+# 						}
+# 					}
+# 					increase_wounds_effect = { REASON = bear }
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			brave = major_stress_impact_loss
-			craven = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_honor = 0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
+# 		stress_impact = {
+# 			brave = major_stress_impact_loss
+# 			craven = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_honor = 0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
 
-	#Retreat!
-	option = {
-		name = fp1_yearly.0062.b
+# 	#Retreat!
+# 	option = {
+# 		name = fp1_yearly.0062.b
 
-		#The bear will be eating people for some time to come.
-		capital_county = {
-			add_county_modifier = {
-				modifier = draugr_monstrous_bear_fp1_modifier
-				years = 10
-			}
-		}
-		#And e'eryone knows why.
-		add_prestige = medium_prestige_loss
+# 		#The bear will be eating people for some time to come.
+# 		capital_county = {
+# 			add_county_modifier = {
+# 				modifier = draugr_monstrous_bear_fp1_modifier
+# 				years = 10
+# 			}
+# 		}
+# 		#And e'eryone knows why.
+# 		add_prestige = medium_prestige_loss
 
-		stress_impact = {
-			craven = major_stress_impact_loss
-			brave = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.25
-				ai_boldness = -0.5
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = craven
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = brave
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			craven = major_stress_impact_loss
+# 			brave = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.25
+# 				ai_boldness = -0.5
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = craven
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = brave
+# 			}
+# 		}
+# 	}
+# }
 
-#	The draugr was a nithing!
-fp1_yearly.0063 = {
-	type = character_event
-	title = fp1_yearly.0063.t
-	desc = fp1_yearly.0063.desc
-	theme = intrigue
-	left_portrait = {
-		character = root
-		animation = disgust
-	}
-	right_portrait = {
-		character = scope:draugr_nithing
-		animation = shock
-	}
-	override_background = { reference = wilderness }
+# #	The draugr was a nithing!
+# fp1_yearly.0063 = {
+# 	type = character_event
+# 	title = fp1_yearly.0063.t
+# 	desc = fp1_yearly.0063.desc
+# 	theme = intrigue
+# 	left_portrait = {
+# 		character = root
+# 		animation = disgust
+# 	}
+# 	right_portrait = {
+# 		character = scope:draugr_nithing
+# 		animation = shock
+# 	}
+# 	override_background = { reference = wilderness }
 
-	trigger = {
-		is_available_even_at_war_adult = yes
-	}
+# 	trigger = {
+# 		is_available_even_at_war_adult = yes
+# 	}
 
-	immediate = {
-		#Create us a nithing!
-		create_character = {
-			location = root.capital_province
-			template = fp1_capital_county_nithing_character
-			save_scope_as = draugr_nithing
-		}
-		hidden_effect = {
-			scope:draugr_nithing = { nithing_character_creation_scripted_effect = yes }
-		}
-	}
+# 	immediate = {
+# 		#Create us a nithing!
+# 		create_character = {
+# 			location = root.capital_province
+# 			template = fp1_capital_county_nithing_character
+# 			save_scope_as = draugr_nithing
+# 		}
+# 		hidden_effect = {
+# 			scope:draugr_nithing = { nithing_character_creation_scripted_effect = yes }
+# 		}
+# 	}
 
-	#Try to catch the nithing before they slip away.
-	option = {
-		name = fp1_yearly.0063.a
+# 	#Try to catch the nithing before they slip away.
+# 	option = {
+# 		name = fp1_yearly.0063.a
 
-		#You attempt to catch the criminal.
-		duel = {
-			skill = intrigue
-			value = high_skill_rating
-			#Your trap works!
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0063.a.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0063.a.tt_success
-					left_icon = root
-					capital_county = {
-						add_county_modifier = {
-							modifier = draugr_remedies_succeeded_fp1_modifier
-							years = 10
-						}
-					}
-					add_prestige = medium_prestige_gain
-					#To the dungeon with you, m'nithing.
-					imprison = {
-						target = scope:draugr_nithing
-						type = dungeon
-					}
-				}
-			}
-			#The nithing slips the net!
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0063.a.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0063.a.tt_failure
-					left_icon = root
-					capital_county = {
-						add_county_modifier = {
-							modifier = draugr_nithing_fp1_modifier
-							years = 10
-						}
-					}
-					custom_tooltip = fp1_yearly.0063.a.tt_failure.draugr_nithing_escapes
-					hidden_effect = {
-						scope:draugr_nithing = {
-							death = { death_reason = death_vanished }
-						}
-					}
-				}
-			}
-		}
+# 		#You attempt to catch the criminal.
+# 		duel = {
+# 			skill = intrigue
+# 			value = high_skill_rating
+# 			#Your trap works!
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0063.a.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0063.a.tt_success
+# 					left_icon = root
+# 					capital_county = {
+# 						add_county_modifier = {
+# 							modifier = draugr_remedies_succeeded_fp1_modifier
+# 							years = 10
+# 						}
+# 					}
+# 					add_prestige = medium_prestige_gain
+# 					#To the dungeon with you, m'nithing.
+# 					imprison = {
+# 						target = scope:draugr_nithing
+# 						type = dungeon
+# 					}
+# 				}
+# 			}
+# 			#The nithing slips the net!
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0063.a.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0063.a.tt_failure
+# 					left_icon = root
+# 					capital_county = {
+# 						add_county_modifier = {
+# 							modifier = draugr_nithing_fp1_modifier
+# 							years = 10
+# 						}
+# 					}
+# 					custom_tooltip = fp1_yearly.0063.a.tt_failure.draugr_nithing_escapes
+# 					hidden_effect = {
+# 						scope:draugr_nithing = {
+# 							death = { death_reason = death_vanished }
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			paranoid = minor_stress_impact_loss
-			vengeful = medium_stress_impact_loss
-			just = medium_stress_impact_loss
-			forgiving = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_honor = 0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = paranoid
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = vengeful
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = just
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = forgiving
-			}
-		}
-	}
+# 		stress_impact = {
+# 			paranoid = minor_stress_impact_loss
+# 			vengeful = medium_stress_impact_loss
+# 			just = medium_stress_impact_loss
+# 			forgiving = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_honor = 0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = paranoid
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = just
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = forgiving
+# 			}
+# 		}
+# 	}
 
-	#Leave them to it.
-	option = {
-		name = fp1_yearly.0063.b
+# 	#Leave them to it.
+# 	option = {
+# 		name = fp1_yearly.0063.b
 
-		#The nithing will continue to do your capital a mischief for quite a while.
-		capital_county = {
-			add_county_modifier = {
-				modifier = draugr_nithing_fp1_modifier
-				years = 10
-			}
-		}
-		#But at least it's less ignoble than running from wild animals.
-		add_prestige = minor_prestige_loss
+# 		#The nithing will continue to do your capital a mischief for quite a while.
+# 		capital_county = {
+# 			add_county_modifier = {
+# 				modifier = draugr_nithing_fp1_modifier
+# 				years = 10
+# 			}
+# 		}
+# 		#But at least it's less ignoble than running from wild animals.
+# 		add_prestige = minor_prestige_loss
 
-		stress_impact = {
-			just = medium_stress_impact_loss
-			vengeful = medium_stress_impact_loss
-			arbitrary = minor_stress_impact_gain
-			forgiving = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.25
-				ai_honor = -0.25
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = just
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = vengeful
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = arbitrary
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = forgiving
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			just = medium_stress_impact_loss
+# 			vengeful = medium_stress_impact_loss
+# 			arbitrary = minor_stress_impact_gain
+# 			forgiving = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.25
+# 				ai_honor = -0.25
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = just
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = forgiving
+# 			}
+# 		}
+# 	}
+# }
 
-#	The draugr was an orphan!
-fp1_yearly.0064 = {
-	type = character_event
-	title = fp1_yearly.0064.t
-	desc = fp1_yearly.0064.desc
-	theme = friendly
-	left_portrait = {
-		character = root
-		animation = shock
-	}
-	right_portrait = {
-		character = scope:draugr_orphan
-		animation = fear
-	}
-	override_background = { reference = wilderness }
+# #	The draugr was an orphan!
+# fp1_yearly.0064 = {
+# 	type = character_event
+# 	title = fp1_yearly.0064.t
+# 	desc = fp1_yearly.0064.desc
+# 	theme = friendly
+# 	left_portrait = {
+# 		character = root
+# 		animation = shock
+# 	}
+# 	right_portrait = {
+# 		character = scope:draugr_orphan
+# 		animation = fear
+# 	}
+# 	override_background = { reference = wilderness }
 
-	trigger = {
-		is_available_even_at_war_adult = yes
-	}
+# 	trigger = {
+# 		is_available_even_at_war_adult = yes
+# 	}
 
-	immediate = {
-		#Create us an orphan!
-		create_character = {
-			location = root.capital_province
-			template = fp1_capital_county_orphan_character
-			save_scope_as = draugr_orphan
-		}
-		#And every possible result sorts the issue for you.
-		capital_county = {
-			add_county_modifier = {
-				modifier = draugr_remedies_succeeded_fp1_modifier
-				years = 10
-			}
-		}
-	}
+# 	immediate = {
+# 		#Create us an orphan!
+# 		create_character = {
+# 			location = root.capital_province
+# 			template = fp1_capital_county_orphan_character
+# 			save_scope_as = draugr_orphan
+# 		}
+# 		#And every possible result sorts the issue for you.
+# 		capital_county = {
+# 			add_county_modifier = {
+# 				modifier = draugr_remedies_succeeded_fp1_modifier
+# 				years = 10
+# 			}
+# 		}
+# 	}
 
-	#Move them on.
-	option = {
-		name = fp1_yearly.0064.a
+# 	#Move them on.
+# 	option = {
+# 		name = fp1_yearly.0064.a
 
-		#The orphan disappears.
-		custom_tooltip = fp1_yearly.0064.a.tt
-		hidden_effect = {
-			scope:draugr_orphan = {
-				death = { death_reason = death_vanished }
-			}
-		}
+# 		#The orphan disappears.
+# 		custom_tooltip = fp1_yearly.0064.a.tt
+# 		hidden_effect = {
+# 			scope:draugr_orphan = {
+# 				death = { death_reason = death_vanished }
+# 			}
+# 		}
 
-		stress_impact = {
-			sadistic = minor_stress_impact_loss
-			callous = major_stress_impact_loss
-			compassionate = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = 0.25
-				ai_compassion = -0.5
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = sadistic
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = callous
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = compassionate
-			}
-		}
-	}
+# 		stress_impact = {
+# 			sadistic = minor_stress_impact_loss
+# 			callous = major_stress_impact_loss
+# 			compassionate = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = 0.25
+# 				ai_compassion = -0.5
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = callous
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = compassionate
+# 			}
+# 		}
+# 	}
 
-	#Fling them into prison.
-	option = {
-		name = fp1_yearly.0064.b
+# 	#Fling them into prison.
+# 	option = {
+# 		name = fp1_yearly.0064.b
 
-		#You uhh, you get a prisoner.
-		imprison = {
-			target = scope:draugr_orphan
-			type = dungeon
-		}
-		reverse_add_opinion = {
-			target = scope:draugr_orphan
-			modifier = imprisoned_me
-		}
-		#... Just for good measure, let's make sure they won't forget this.
-		hidden_effect = { set_relation_potential_rival = scope:draugr_orphan }
+# 		#You uhh, you get a prisoner.
+# 		imprison = {
+# 			target = scope:draugr_orphan
+# 			type = dungeon
+# 		}
+# 		reverse_add_opinion = {
+# 			target = scope:draugr_orphan
+# 			modifier = imprisoned_me
+# 		}
+# 		#... Just for good measure, let's make sure they won't forget this.
+# 		hidden_effect = { set_relation_potential_rival = scope:draugr_orphan }
 
-		stress_impact = {
-			callous = minor_stress_impact_loss
-			sadistic = major_stress_impact_loss
-			compassionate = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_vengefulness = 0.25
-				ai_compassion = -0.75
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = callous
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = sadistic
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = compassionate
-			}
-		}
-	}
+# 		stress_impact = {
+# 			callous = minor_stress_impact_loss
+# 			sadistic = major_stress_impact_loss
+# 			compassionate = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_vengefulness = 0.25
+# 				ai_compassion = -0.75
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = callous
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = compassionate
+# 			}
+# 		}
+# 	}
 
-	#Take them to court.
-	option = {
-		name = fp1_yearly.0064.c
+# 	#Take them to court.
+# 	option = {
+# 		name = fp1_yearly.0064.c
 
-		#One shiny new child for you.
-		add_courtier = scope:draugr_orphan
-		#And they're pretty happy about being whisked out of the grave they were living in.
-		reverse_add_opinion = {
-			target = scope:draugr_orphan
-			modifier = loyal_servant
-		}
-		add_hook = {
-			target = scope:draugr_orphan
-			type = loyalty_hook
-		}
+# 		#One shiny new child for you.
+# 		add_courtier = scope:draugr_orphan
+# 		#And they're pretty happy about being whisked out of the grave they were living in.
+# 		reverse_add_opinion = {
+# 			target = scope:draugr_orphan
+# 			modifier = loyal_servant
+# 		}
+# 		add_hook = {
+# 			target = scope:draugr_orphan
+# 			type = loyalty_hook
+# 		}
 
-		stress_impact = {
-			trusting = minor_stress_impact_loss
-			compassionate = major_stress_impact_loss
-			paranoid = minor_stress_impact_gain
-			callous = medium_stress_impact_gain
-			sadistic = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_vengefulness = 0.25
-				ai_compassion = -0.75
-			}
-			modifier = {	#Weight up for stress.
-				add = 10
-				has_trait = trusting
-			}
-			modifier = {	#Weight up for stress.
-				add = 30
-				has_trait = compassionate
-			}
-			modifier = {	#Weight down for stress.
-				add = -10
-				has_trait = paranoid
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = callous
-			}
-			modifier = {	#Weight down for stress.
-				add = -20
-				has_trait = sadistic
-			}
-		}
-	}
+# 		stress_impact = {
+# 			trusting = minor_stress_impact_loss
+# 			compassionate = major_stress_impact_loss
+# 			paranoid = minor_stress_impact_gain
+# 			callous = medium_stress_impact_gain
+# 			sadistic = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_vengefulness = 0.25
+# 				ai_compassion = -0.75
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 10
+# 				has_trait = trusting
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 30
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -10
+# 				has_trait = paranoid
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = callous
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -20
+# 				has_trait = sadistic
+# 			}
+# 		}
+# 	}
 
-	#Adopt them.
-	option = {
-		name = fp1_yearly.0064.d
-		#And, if you've no kids of your own right now...
-		trigger = {
-			any_child = {
-				count = 0
-				is_alive = yes
-			}
-		}
+# 	#Adopt them.
+# 	option = {
+# 		name = fp1_yearly.0064.d
+# 		#And, if you've no kids of your own right now...
+# 		trigger = {
+# 			any_child = {
+# 				count = 0
+# 				is_alive = yes
+# 			}
+# 		}
 
-		#One shiny new child for you.
-		if = {
-			limit = { is_female = yes }
-			scope:draugr_orphan = { set_mother = root }
-		}
-		else = {
-			scope:draugr_orphan = { set_father = root }
-		}
-		hidden_effect = {
-			#We take care of the sundries in a hidden effect so as not to put too much into the tooltip.
-			scope:draugr_orphan = { set_house = root.house }
-			add_courtier = scope:draugr_orphan
-		}
-		#And they're pretty happy about being the child of a lord all of a sudden.
-		reverse_add_opinion = {
-			target = scope:draugr_orphan
-			modifier = love_opinion
-			opinion = 100
-		}
-		add_hook = {
-			target = scope:draugr_orphan
-			type = loyalty_hook
-		}
+# 		#One shiny new child for you.
+# 		if = {
+# 			limit = { is_female = yes }
+# 			scope:draugr_orphan = { set_mother = root }
+# 		}
+# 		else = {
+# 			scope:draugr_orphan = { set_father = root }
+# 		}
+# 		hidden_effect = {
+# 			#We take care of the sundries in a hidden effect so as not to put too much into the tooltip.
+# 			scope:draugr_orphan = { set_house = root.house }
+# 			add_courtier = scope:draugr_orphan
+# 		}
+# 		#And they're pretty happy about being the child of a lord all of a sudden.
+# 		reverse_add_opinion = {
+# 			target = scope:draugr_orphan
+# 			modifier = love_opinion
+# 			opinion = 100
+# 		}
+# 		add_hook = {
+# 			target = scope:draugr_orphan
+# 			type = loyalty_hook
+# 		}
 
-		stress_impact = {
-			trusting = medium_stress_impact_loss
-			compassionate = massive_stress_impact_loss
-			paranoid = medium_stress_impact_gain
-			callous = major_stress_impact_gain
-			sadistic = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_vengefulness = 0.25
-				ai_compassion = -0.75
-			}
-			modifier = {	#Weight up for stress.
-				add = 20
-				has_trait = trusting
-			}
-			modifier = {	#Weight up for stress.
-				add = 50
-				has_trait = compassionate
-			}
-			modifier = {	#Weight down for stress.
-				add = 20
-				has_trait = paranoid
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = callous
-			}
-			modifier = {	#Weight down for stress.
-				add = -30
-				has_trait = sadistic
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			trusting = medium_stress_impact_loss
+# 			compassionate = massive_stress_impact_loss
+# 			paranoid = medium_stress_impact_gain
+# 			callous = major_stress_impact_gain
+# 			sadistic = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_vengefulness = 0.25
+# 				ai_compassion = -0.75
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 20
+# 				has_trait = trusting
+# 			}
+# 			modifier = {	#Weight up for stress.
+# 				add = 50
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = 20
+# 				has_trait = paranoid
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = callous
+# 			}
+# 			modifier = {	#Weight down for stress.
+# 				add = -30
+# 				has_trait = sadistic
+# 			}
+# 		}
+# 	}
+# }
 
-#	The draugr was... didn't exist!
-fp1_yearly.0065 = {
-	type = character_event
-	title = fp1_yearly.0065.t
-	desc = fp1_yearly.0065.desc
-	theme = physical_health
-	left_portrait = {
-		character = root
-		animation = boredom
-	}
-	override_background = { reference = wilderness }
+# #	The draugr was... didn't exist!
+# fp1_yearly.0065 = {
+# 	type = character_event
+# 	title = fp1_yearly.0065.t
+# 	desc = fp1_yearly.0065.desc
+# 	theme = physical_health
+# 	left_portrait = {
+# 		character = root
+# 		animation = boredom
+# 	}
+# 	override_background = { reference = wilderness }
 
-	trigger = {
-		is_available_even_at_war_adult = yes
-	}
+# 	trigger = {
+# 		is_available_even_at_war_adult = yes
+# 	}
 
-	#Must have been the wind?
-	option = {
-		name = fp1_yearly.0065.a
+# 	#Must have been the wind?
+# 	option = {
+# 		name = fp1_yearly.0065.a
 
-		#Welp, at least the fresh air does you good!
-		add_character_modifier = {
-			modifier = draugr_healthy_hiking_fp1_modifier
-			years = 10
-		}
+# 		#Welp, at least the fresh air does you good!
+# 		add_character_modifier = {
+# 			modifier = draugr_healthy_hiking_fp1_modifier
+# 			years = 10
+# 		}
 
 
-		#The locals grumble a little regardless.
-		send_interface_toast = {
-			title = fp1_yearly.0065.a.locals_grumble
-			left_icon = root
-			capital_county = {
-				add_county_modifier = {
-					modifier = draugr_nothing_found_fp1_modifier
-					years = 10
-				}
-			}
-		}
+# 		#The locals grumble a little regardless.
+# 		send_interface_toast = {
+# 			title = fp1_yearly.0065.a.locals_grumble
+# 			left_icon = root
+# 			capital_county = {
+# 				add_county_modifier = {
+# 					modifier = draugr_nothing_found_fp1_modifier
+# 					years = 10
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			#Usually bad form to give stress in one-event options, but it's a little funny to see your character's reaction to there being literally nothing to see.
-			trusting = miniscule_stress_impact_loss
-			paranoid = miniscule_stress_impact_gain
-		}
-		ai_chance = {
-			#Only option.
-			base = 100
-		}
-	}
-}
+# 		stress_impact = {
+# 			#Usually bad form to give stress in one-event options, but it's a little funny to see your character's reaction to there being literally nothing to see.
+# 			trusting = miniscule_stress_impact_loss
+# 			paranoid = miniscule_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			#Only option.
+# 			base = 100
+# 		}
+# 	}
+# }
 
 ##################################################
 # The Deep Places of the World
@@ -4599,225 +4599,225 @@ fp1_yearly.0085 = {
 ##################################################
 
 #	Commissioning a Longship for Yourself
-fp1_yearly.0091 = {
-	type = character_event
-	title = fp1_yearly.0091.t
-	desc = fp1_yearly.0091.desc
-	theme = martial
-	left_portrait = {
-		character = root
-		animation = personality_rational
-	}
-	override_background = { reference = fp1_beached_longships }
+# fp1_yearly.0091 = {
+# 	type = character_event
+# 	title = fp1_yearly.0091.t
+# 	desc = fp1_yearly.0091.desc
+# 	theme = martial
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_rational
+# 	}
+# 	override_background = { reference = fp1_beached_longships }
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0091 }
-		is_landed = yes
-		# Filter to flavour-appropriate characters.
-		fp1_is_coastal_norse_tribal = yes
-	}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0091 }
+# 		is_landed = yes
+# 		# Filter to flavour-appropriate characters.
+# 		fp1_is_coastal_norse_tribal = yes
+# 	}
 
-	weight_multiplier = {
-		base = 1
+# 	weight_multiplier = {
+# 		base = 1
 
-		# Weight up for having sea-faring traits.
-		#L5R Disabled
-		# modifier = {
-		# 	add = 0.5
-		# 	has_trait = viking
-		# }
-		modifier = {
-			add = 0.5
-			has_trait = adventurer
-		}
-	}
+# 		# Weight up for having sea-faring traits.
+# 		#L5R Disabled
+# 		# modifier = {
+# 		# 	add = 0.5
+# 		# 	has_trait = viking
+# 		# }
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = adventurer
+# 		}
+# 	}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0091
-			days = 10950
-		}
-	}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0091
+# 			days = 10950
+# 		}
+# 	}
 
-	# A leviathan, to carry my spoils!
-	option = {
-		name = fp1_yearly.0091.a
-		trigger = {
-			can_make_expensive_purchase_trigger = { PRICE = fp1_0091_standard_ship_gold_cost }
-		}
+# 	# A leviathan, to carry my spoils!
+# 	option = {
+# 		name = fp1_yearly.0091.a
+# 		trigger = {
+# 			can_make_expensive_purchase_trigger = { PRICE = fp1_0091_standard_ship_gold_cost }
+# 		}
 
-		# Get a modifier enhancing loot capacity.
-		add_character_modifier = {
-			modifier = fp1_flagship_leviathan_modifier
-			years = 10
-		}
-		# And charge the gold cost.
-		remove_short_term_gold = major_gold_value
+# 		# Get a modifier enhancing loot capacity.
+# 		add_character_modifier = {
+# 			modifier = fp1_flagship_leviathan_modifier
+# 			years = 10
+# 		}
+# 		# And charge the gold cost.
+# 		remove_short_term_gold = major_gold_value
 
-		stress_impact = {
-			profligate = massive_stress_impact_loss
-			ambitious = major_stress_impact_loss
-			content = major_stress_impact_gain
-			greedy = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_energy = 0.5
-				ai_greed = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 50
-				has_trait = profligate
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = ambitious
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = content
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = greedy
-			}
-		}
-	}
+# 		stress_impact = {
+# 			profligate = massive_stress_impact_loss
+# 			ambitious = major_stress_impact_loss
+# 			content = major_stress_impact_gain
+# 			greedy = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_energy = 0.5
+# 				ai_greed = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 50
+# 				has_trait = profligate
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = ambitious
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = content
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = greedy
+# 			}
+# 		}
+# 	}
 
-	# A monster, to intimidate my vassals!
-	option = {
-		name = fp1_yearly.0091.b
-		trigger = {
-			can_make_expensive_purchase_trigger = { PRICE = fp1_0091_standard_ship_gold_cost }
-		}
+# 	# A monster, to intimidate my vassals!
+# 	option = {
+# 		name = fp1_yearly.0091.b
+# 		trigger = {
+# 			can_make_expensive_purchase_trigger = { PRICE = fp1_0091_standard_ship_gold_cost }
+# 		}
 
-		# Get a modifier giving more tax from cowed vassals.
-		add_character_modifier = {
-			modifier = fp1_flagship_monster_modifier
-			years = 10
-		}
-		# And charge the gold cost.
-		remove_short_term_gold = major_gold_value
+# 		# Get a modifier giving more tax from cowed vassals.
+# 		add_character_modifier = {
+# 			modifier = fp1_flagship_monster_modifier
+# 			years = 10
+# 		}
+# 		# And charge the gold cost.
+# 		remove_short_term_gold = major_gold_value
 
-		stress_impact = {
-			profligate = massive_stress_impact_loss
-			callous = major_stress_impact_loss
-			sadistic = major_stress_impact_loss
-			compassionate = major_stress_impact_gain
-			greedy = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_vengefulness = 0.5
-				ai_greed = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 50
-				has_trait = profligate
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = callous
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = sadistic
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = compassionate
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = greedy
-			}
-		}
-	}
+# 		stress_impact = {
+# 			profligate = massive_stress_impact_loss
+# 			callous = major_stress_impact_loss
+# 			sadistic = major_stress_impact_loss
+# 			compassionate = major_stress_impact_gain
+# 			greedy = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_vengefulness = 0.5
+# 				ai_greed = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 50
+# 				has_trait = profligate
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = callous
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = greedy
+# 			}
+# 		}
+# 	}
 
-	# A dragon, to roar my name!
-	option = {
-		name = fp1_yearly.0091.c
-		trigger = {
-			can_make_expensive_purchase_trigger = { PRICE = fp1_0091_standard_ship_gold_cost }
-		}
+# 	# A dragon, to roar my name!
+# 	option = {
+# 		name = fp1_yearly.0091.c
+# 		trigger = {
+# 			can_make_expensive_purchase_trigger = { PRICE = fp1_0091_standard_ship_gold_cost }
+# 		}
 
-		# Get a modifier granting diplomacy per prestige level
-		add_character_modifier = {
-			modifier = fp1_flagship_dragon_modifier
-			years = 10
-		}
-		# And charge the gold cost.
-		remove_short_term_gold = major_gold_value
+# 		# Get a modifier granting diplomacy per prestige level
+# 		add_character_modifier = {
+# 			modifier = fp1_flagship_dragon_modifier
+# 			years = 10
+# 		}
+# 		# And charge the gold cost.
+# 		remove_short_term_gold = major_gold_value
 
-		stress_impact = {
-			profligate = massive_stress_impact_loss
-			arrogant = major_stress_impact_loss
-			humble = major_stress_impact_gain
-			greedy = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = 0.5
-				ai_sociability = 0.5
-				ai_greed = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 50
-				has_trait = profligate
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = arrogant
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = humble
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = greedy
-			}
-		}
-	}
+# 		stress_impact = {
+# 			profligate = massive_stress_impact_loss
+# 			arrogant = major_stress_impact_loss
+# 			humble = major_stress_impact_gain
+# 			greedy = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = 0.5
+# 				ai_sociability = 0.5
+# 				ai_greed = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 50
+# 				has_trait = profligate
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = humble
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = greedy
+# 			}
+# 		}
+# 	}
 
-	# These are all ludicrously costly...
-	option = {
-		name = fp1_yearly.0091.d
+# 	# These are all ludicrously costly...
+# 	option = {
+# 		name = fp1_yearly.0091.d
 
-		# Consiliatory stress loss for hanging on to your cash.
-		## Stress loss handled in stress impact.
+# 		# Consiliatory stress loss for hanging on to your cash.
+# 		## Stress loss handled in stress impact.
 
-		stress_impact = {
-			base = minor_stress_loss
-			greedy = medium_stress_impact_loss
-			arrogant = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 0.5
-				ai_boldness = -0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = greedy
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = arrogant
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			base = minor_stress_loss
+# 			greedy = medium_stress_impact_loss
+# 			arrogant = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 0.5
+# 				ai_boldness = -0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = arrogant
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # A Guest/Courtier Challenges you to Riddles
@@ -4825,426 +4825,426 @@ fp1_yearly.0091 = {
 # 0101 - 0110
 ##################################################
 
-scripted_trigger fp1_valid_riddler_at_court_trigger = {
-	# We want characters of minor or major interest, ideally.
-	is_of_major_or_minor_interest_trigger = { CHARACTER = root }
-	# And we want to make sure they're available and can speak.
-	is_available_ai_adult = yes
-}
+# scripted_trigger fp1_valid_riddler_at_court_trigger = {
+# 	# We want characters of minor or major interest, ideally.
+# 	is_of_major_or_minor_interest_trigger = { CHARACTER = root }
+# 	# And we want to make sure they're available and can speak.
+# 	is_available_ai_adult = yes
+# }
 
-#	Someone in your court challenges you to an idle game of riddles.
-fp1_yearly.0101 = {
-	type = character_event
-	title = fp1_yearly.0101.t
-	desc = fp1_yearly.0101.desc
-	theme = diplomacy
-	left_portrait = {
-		character = root
-		animation = personality_rational
-	}
-	right_portrait = {
-		character = scope:riddler
-		animation = schadenfreude
-	}
+# #	Someone in your court challenges you to an idle game of riddles.
+# fp1_yearly.0101 = {
+# 	type = character_event
+# 	title = fp1_yearly.0101.t
+# 	desc = fp1_yearly.0101.desc
+# 	theme = diplomacy
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_rational
+# 	}
+# 	right_portrait = {
+# 		character = scope:riddler
+# 		animation = schadenfreude
+# 	}
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0101 }
-		is_landed = yes
-		# Valid for North Germanics only.
-		culture = { has_cultural_pillar = heritage_north_germanic }
-		# Has a valid courtier/guest who can quiz you.
-		any_courtier_or_guest = { fp1_valid_riddler_at_court_trigger = yes }
-		# Doesn't have an established extreme hatred of riddles.
-		NOT = { has_character_flag = fp1_yearly_0101_really_hates_riddles }
-	}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0101 }
+# 		is_landed = yes
+# 		# Valid for North Germanics only.
+# 		culture = { has_cultural_pillar = heritage_north_germanic }
+# 		# Has a valid courtier/guest who can quiz you.
+# 		any_courtier_or_guest = { fp1_valid_riddler_at_court_trigger = yes }
+# 		# Doesn't have an established extreme hatred of riddles.
+# 		NOT = { has_character_flag = fp1_yearly_0101_really_hates_riddles }
+# 	}
 
-	weight_multiplier = {
-		base = 1
+# 	weight_multiplier = {
+# 		base = 1
 
-		# Weight up for traits that make you a known woman/man of letters.
-		modifier = {
-			add = 0.5
-			has_trait = journaller
-		}
-		modifier = {
-			add = 0.5
-			has_trait = scholar
-		}
-		modifier = {
-			add = 0.5
-			has_trait = theologian
-		}
-		modifier = {
-			add = 0.5
-			has_trait = administrator
-		}
-		modifier = {
-			add = 0.5
-			has_trait = architect
-		}
-	}
+# 		# Weight up for traits that make you a known woman/man of letters.
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = journaller
+# 		}
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = scholar
+# 		}
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = theologian
+# 		}
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = administrator
+# 		}
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = architect
+# 		}
+# 	}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0101
-			days = 1825
-		}
-		# Designate a suitable riddler.
-		## First, we grab all possibles & sort them into a list.
-		every_courtier_or_guest = {
-			limit = { fp1_valid_riddler_at_court_trigger = yes }
-			add_to_list = potential_valid_riddlers_list
-		}
-		## Then, we order that list appropriately.
-		ordered_in_list = {
-			list = potential_valid_riddlers_list
-			order_by = { value = fp1_best_available_riddler_value }
-			save_scope_as = riddler
-		}
-	}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0101
+# 			days = 1825
+# 		}
+# 		# Designate a suitable riddler.
+# 		## First, we grab all possibles & sort them into a list.
+# 		every_courtier_or_guest = {
+# 			limit = { fp1_valid_riddler_at_court_trigger = yes }
+# 			add_to_list = potential_valid_riddlers_list
+# 		}
+# 		## Then, we order that list appropriately.
+# 		ordered_in_list = {
+# 			list = potential_valid_riddlers_list
+# 			order_by = { value = fp1_best_available_riddler_value }
+# 			save_scope_as = riddler
+# 		}
+# 	}
 
-	# Entertaining, I'll play! [diplo]
-	option = {
-		name = fp1_yearly.0101.a
+# 	# Entertaining, I'll play! [diplo]
+# 	option = {
+# 		name = fp1_yearly.0101.a
 
-		# Duel the courtier for it.
-		duel = {
-			skill = diplomacy
-			target = scope:riddler
-			# You win the game!
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0101.a.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0101.a.tt_success
-					left_icon = scope:riddler
-					# Gain opinion with your court for participating.
-					every_courtier_or_guest = {
-						limit = { is_available_adult = yes }
-						custom = fp1_yearly.0101.a.every_courtier_and_guest
-						add_opinion = {
-							target = root
-							modifier = amused_opinion
-							opinion = 20
-						}
-					}
-					# And a little prestige as a side-prize.
-					add_prestige = miniscule_prestige_gain
-				}
-			}
-			# You lose the game!
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0101.a.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0101.a.tt_failure
-					left_icon = scope:riddler
-					# Gain opinion with your court for participating.
-					every_courtier_or_guest = {
-						limit = { is_available_adult = yes }
-						custom = fp1_yearly.0101.a.every_courtier_and_guest
-						add_opinion = {
-							target = root
-							modifier = amused_opinion
-							opinion = 20
-						}
-					}
-					# And lose a little prestige.
-					add_prestige = minor_prestige_loss
-				}
-			}
-		}
+# 		# Duel the courtier for it.
+# 		duel = {
+# 			skill = diplomacy
+# 			target = scope:riddler
+# 			# You win the game!
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0101.a.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0101.a.tt_success
+# 					left_icon = scope:riddler
+# 					# Gain opinion with your court for participating.
+# 					every_courtier_or_guest = {
+# 						limit = { is_available_adult = yes }
+# 						custom = fp1_yearly.0101.a.every_courtier_and_guest
+# 						add_opinion = {
+# 							target = root
+# 							modifier = amused_opinion
+# 							opinion = 20
+# 						}
+# 					}
+# 					# And a little prestige as a side-prize.
+# 					add_prestige = miniscule_prestige_gain
+# 				}
+# 			}
+# 			# You lose the game!
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0101.a.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0101.a.tt_failure
+# 					left_icon = scope:riddler
+# 					# Gain opinion with your court for participating.
+# 					every_courtier_or_guest = {
+# 						limit = { is_available_adult = yes }
+# 						custom = fp1_yearly.0101.a.every_courtier_and_guest
+# 						add_opinion = {
+# 							target = root
+# 							modifier = amused_opinion
+# 							opinion = 20
+# 						}
+# 					}
+# 					# And lose a little prestige.
+# 					add_prestige = minor_prestige_loss
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			arrogant = minor_stress_impact_loss
-			gregarious = medium_stress_impact_loss
-			shy = minor_stress_impact_gain
-			impatient = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_sociability = 0.75
-				ai_boldness = 0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arrogant
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = gregarious
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = shy
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = impatient
-			}
-		}
-	}
+# 		stress_impact = {
+# 			arrogant = minor_stress_impact_loss
+# 			gregarious = medium_stress_impact_loss
+# 			shy = minor_stress_impact_gain
+# 			impatient = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_sociability = 0.75
+# 				ai_boldness = 0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = gregarious
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = shy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = impatient
+# 			}
+# 		}
+# 	}
 
-	# Entertaining, I'll play! [learning]
-	option = {
-		name = fp1_yearly.0101.b
+# 	# Entertaining, I'll play! [learning]
+# 	option = {
+# 		name = fp1_yearly.0101.b
 
-		duel = {
-			skill = learning
-			target = scope:riddler
-			# You win the game!
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0101.a.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0101.a.tt_success
-					left_icon = scope:riddler
-					# Gain opinion with your court for participating.
-					every_courtier_or_guest = {
-						limit = { is_available_adult = yes }
-						custom = fp1_yearly.0101.a.every_courtier_and_guest
-						add_opinion = {
-							target = root
-							modifier = amused_opinion
-							opinion = 20
-						}
-					}
-					# And a little prestige as a side-prize.
-					add_prestige = miniscule_prestige_gain
-				}
-			}
-			# You lose the game!
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0101.a.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0101.a.tt_failure
-					left_icon = scope:riddler
-					# Gain opinion with your court for participating.
-					every_courtier_or_guest = {
-						limit = { is_available_adult = yes }
-						custom = fp1_yearly.0101.a.every_courtier_and_guest
-						add_opinion = {
-							target = root
-							modifier = amused_opinion
-							opinion = 20
-						}
-					}
-					# And lose a little prestige.
-					add_prestige = minor_prestige_loss
-				}
-			}
-		}
+# 		duel = {
+# 			skill = learning
+# 			target = scope:riddler
+# 			# You win the game!
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0101.a.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0101.a.tt_success
+# 					left_icon = scope:riddler
+# 					# Gain opinion with your court for participating.
+# 					every_courtier_or_guest = {
+# 						limit = { is_available_adult = yes }
+# 						custom = fp1_yearly.0101.a.every_courtier_and_guest
+# 						add_opinion = {
+# 							target = root
+# 							modifier = amused_opinion
+# 							opinion = 20
+# 						}
+# 					}
+# 					# And a little prestige as a side-prize.
+# 					add_prestige = miniscule_prestige_gain
+# 				}
+# 			}
+# 			# You lose the game!
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0101.a.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0101.a.tt_failure
+# 					left_icon = scope:riddler
+# 					# Gain opinion with your court for participating.
+# 					every_courtier_or_guest = {
+# 						limit = { is_available_adult = yes }
+# 						custom = fp1_yearly.0101.a.every_courtier_and_guest
+# 						add_opinion = {
+# 							target = root
+# 							modifier = amused_opinion
+# 							opinion = 20
+# 						}
+# 					}
+# 					# And lose a little prestige.
+# 					add_prestige = minor_prestige_loss
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			arrogant = minor_stress_impact_loss
-			gregarious = medium_stress_impact_loss
-			shy = minor_stress_impact_gain
-			impatient = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_sociability = 0.75
-				ai_boldness = 0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arrogant
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = gregarious
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = shy
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = impatient
-			}
-		}
-	}
+# 		stress_impact = {
+# 			arrogant = minor_stress_impact_loss
+# 			gregarious = medium_stress_impact_loss
+# 			shy = minor_stress_impact_gain
+# 			impatient = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_sociability = 0.75
+# 				ai_boldness = 0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = gregarious
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = shy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = impatient
+# 			}
+# 		}
+# 	}
 
-	# Here's one: who has no brain and belongs in the dungeon?
-	option = {
-		name = fp1_yearly.0101.c
+# 	# Here's one: who has no brain and belongs in the dungeon?
+# 	option = {
+# 		name = fp1_yearly.0101.c
 
-		# Toss them in the dungeon.
-		imprison_character_effect = {
-			IMPRISONER = root
-			TARGET = scope:riddler
-		}
-		hidden_effect = {
-			# Make sure that it's _definitely_ the dungeon.
-			scope:riddler = { change_prison_type = dungeon }
-			# And that no one will ever try to get you involved in a game ever again.
-			add_character_flag = fp1_yearly_0101_really_hates_riddles
-		}
-		# Gain some dread to balance out that tyranny.
-		add_dread = medium_dread_gain
-		# People may remember your over-reaction...
-		if = {
-			limit = { has_any_nickname = no }
-			custom_tooltip = fp1_yearly.0101.c.tt
-			hidden_effect = {
-				random_list = {
-					60 = {
-						# The court dares not mock you.
-					}
-					40 = {
-						# You hear a whispered nickname behind your back...
-						random_list = {
-							20 = {
-								send_interface_toast = {
-									title = fp1_yearly.0101.c.tt_nickname
-									left_icon = root
-									give_nickname = nick_the_stonefaced
-								}
-							}
-							20 = {
-								send_interface_toast = {
-									title = fp1_yearly.0101.c.tt_nickname
-									left_icon = root
-									give_nickname = nick_the_dry
-								}
-							}
-							20 = {
-								send_interface_toast = {
-									title = fp1_yearly.0101.c.tt_nickname
-									left_icon = root
-									give_nickname = nick_the_joyless
-								}
-							}
-							20 = {
-								send_interface_toast = {
-									title = fp1_yearly.0101.c.tt_nickname
-									left_icon = root
-									give_nickname = nick_lacks_laughs
-								}
-							}
-							20 = {
-								send_interface_toast = {
-									title = fp1_yearly.0101.c.tt_nickname
-									left_icon = root
-									give_nickname = nick_the_dull
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+# 		# Toss them in the dungeon.
+# 		imprison_character_effect = {
+# 			IMPRISONER = root
+# 			TARGET = scope:riddler
+# 		}
+# 		hidden_effect = {
+# 			# Make sure that it's _definitely_ the dungeon.
+# 			scope:riddler = { change_prison_type = dungeon }
+# 			# And that no one will ever try to get you involved in a game ever again.
+# 			add_character_flag = fp1_yearly_0101_really_hates_riddles
+# 		}
+# 		# Gain some dread to balance out that tyranny.
+# 		add_dread = medium_dread_gain
+# 		# People may remember your over-reaction...
+# 		if = {
+# 			limit = { has_any_nickname = no }
+# 			custom_tooltip = fp1_yearly.0101.c.tt
+# 			hidden_effect = {
+# 				random_list = {
+# 					60 = {
+# 						# The court dares not mock you.
+# 					}
+# 					40 = {
+# 						# You hear a whispered nickname behind your back...
+# 						random_list = {
+# 							20 = {
+# 								send_interface_toast = {
+# 									title = fp1_yearly.0101.c.tt_nickname
+# 									left_icon = root
+# 									give_nickname = nick_the_stonefaced
+# 								}
+# 							}
+# 							20 = {
+# 								send_interface_toast = {
+# 									title = fp1_yearly.0101.c.tt_nickname
+# 									left_icon = root
+# 									give_nickname = nick_the_dry
+# 								}
+# 							}
+# 							20 = {
+# 								send_interface_toast = {
+# 									title = fp1_yearly.0101.c.tt_nickname
+# 									left_icon = root
+# 									give_nickname = nick_the_joyless
+# 								}
+# 							}
+# 							20 = {
+# 								send_interface_toast = {
+# 									title = fp1_yearly.0101.c.tt_nickname
+# 									left_icon = root
+# 									give_nickname = nick_lacks_laughs
+# 								}
+# 							}
+# 							20 = {
+# 								send_interface_toast = {
+# 									title = fp1_yearly.0101.c.tt_nickname
+# 									left_icon = root
+# 									give_nickname = nick_the_dull
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			sadistic = minor_stress_impact_loss
-			impatient = medium_stress_impact_loss
-			vengeful = medium_stress_impact_loss
-			gregarious = minor_stress_impact_gain
-			compassionate = medium_stress_impact_gain
-			patient = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_vengefulness = 0.5
-				ai_compassion = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = sadistic
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = impatient
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = vengeful
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = gregarious
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = compassionate
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = patient
-			}
-		}
-	}
+# 		stress_impact = {
+# 			sadistic = minor_stress_impact_loss
+# 			impatient = medium_stress_impact_loss
+# 			vengeful = medium_stress_impact_loss
+# 			gregarious = minor_stress_impact_gain
+# 			compassionate = medium_stress_impact_gain
+# 			patient = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_vengefulness = 0.5
+# 				ai_compassion = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = impatient
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = gregarious
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = patient
+# 			}
+# 		}
+# 	}
 
-	# Thanks, but I'm a [title], and have things to do.
-	option = {
-		name = fp1_yearly.0101.d
+# 	# Thanks, but I'm a [title], and have things to do.
+# 	option = {
+# 		name = fp1_yearly.0101.d
 
-		# Lose a little prestige, but less than if you were beaten.
-		add_prestige = miniscule_prestige_loss
-		# Scope:riddler is disappointed in you.
-		scope:riddler = {
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion
-				opinion = -20
-			}
-		}
+# 		# Lose a little prestige, but less than if you were beaten.
+# 		add_prestige = miniscule_prestige_loss
+# 		# Scope:riddler is disappointed in you.
+# 		scope:riddler = {
+# 			add_opinion = {
+# 				target = root
+# 				modifier = disappointed_opinion
+# 				opinion = -20
+# 			}
+# 		}
 
-		stress_impact = {
-			shy = minor_stress_impact_loss
-			impatient = medium_stress_impact_loss
-			arrogant = minor_stress_impact_gain
-			gregarious = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_boldness = -0.5
-				ai_sociability = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = shy
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = impatient
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = arrogant
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = gregarious
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			shy = minor_stress_impact_loss
+# 			impatient = medium_stress_impact_loss
+# 			arrogant = minor_stress_impact_gain
+# 			gregarious = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_boldness = -0.5
+# 				ai_sociability = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = shy
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = impatient
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = gregarious
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # Accursed
@@ -5252,1127 +5252,1127 @@ fp1_yearly.0101 = {
 # 0111 - 0120
 ##################################################
 
-scripted_trigger fp1_0111_superstitious_courtier_trigger = {
-	# Basic checks.
-	is_available_ai_adult = yes
-	OR = {
-		fp1_is_norse = yes
-		# religion = religion:germanic_religion
-	}
-	# Rule out a few key traits.
-	NOR = {
-		# Cynical characters don't believe.
-		has_trait = cynical
-		# Brave characters don't succumb to threats.
-		has_trait = brave
-		# Trusting characters believe the gods or their friends will help them.
-		has_trait = trusting
-	}
-	# Witches aren't fussed: they're confident in their counterspells.
-	NOR = {
-		has_trait = witch
-		any_secret = { secret_type = secret_witch }
-	}
-	# Anyone who's already been cursed is about as screwed as they can be.
-	NOT = { has_character_modifier = fp1_cursed_by_nithing_pole_modifier }
-	# And we ideally want to be able to add a strong hook, at least.
-	save_temporary_scope_as = current_courtier
-	root = {
-		can_add_hook = {
-			target = scope:current_courtier
-			type = loyalty_hook
-		}
-	}
-}
+# scripted_trigger fp1_0111_superstitious_courtier_trigger = {
+# 	# Basic checks.
+# 	is_available_ai_adult = yes
+# 	OR = {
+# 		fp1_is_norse = yes
+# 		# religion = religion:germanic_religion
+# 	}
+# 	# Rule out a few key traits.
+# 	NOR = {
+# 		# Cynical characters don't believe.
+# 		has_trait = cynical
+# 		# Brave characters don't succumb to threats.
+# 		has_trait = brave
+# 		# Trusting characters believe the gods or their friends will help them.
+# 		has_trait = trusting
+# 	}
+# 	# Witches aren't fussed: they're confident in their counterspells.
+# 	NOR = {
+# 		has_trait = witch
+# 		any_secret = { secret_type = secret_witch }
+# 	}
+# 	# Anyone who's already been cursed is about as screwed as they can be.
+# 	NOT = { has_character_modifier = fp1_cursed_by_nithing_pole_modifier }
+# 	# And we ideally want to be able to add a strong hook, at least.
+# 	save_temporary_scope_as = current_courtier
+# 	root = {
+# 		can_add_hook = {
+# 			target = scope:current_courtier
+# 			type = loyalty_hook
+# 		}
+# 	}
+# }
 
-scripted_trigger fp1_0111_suspicious_courtier_trigger = {
-	# Basic checks.
-	is_available_ai_adult = yes
-	NOT = { this = scope:accursed }
-	OR = {
-		fp1_is_norse = yes
-		# religion = religion:germanic_religion
-	}
-	# Would-be sorcerers need to either know what they're doing, or else have absolutely no clue.
-	OR = {
-		intrigue >= fp1_0111_sorcerer_intrigue_high
-		learning >= fp1_0111_sorcerer_learning_high
-		intrigue <= fp1_0111_sorcerer_intrigue_low
-		learning <= fp1_0111_sorcerer_learning_low
-	}
-	# ... and to have at least two of various pairs of matched traits.
-	calc_true_if = {
-		amount >= 2
-		OR = {
-			has_trait = lazy
-			has_trait = arbitrary
-		}
-		OR = {
-			has_trait = wrathful
-			has_trait = impatient
-		}
-		OR = {
-			has_trait = calm
-			has_trait = patient
-		}
-		OR = {
-			has_trait = sadistic
-			has_trait = arrogant
-		}
-		OR = {
-			has_trait = callous
-			has_trait = ambitious
-		}
-		OR = {
-			has_trait = deceitful
-			has_trait = craven
-		}
-		OR = {
-			has_trait = brave
-			has_trait = trusting
-		}
-		OR = {
-			has_trait = paranoid
-			has_trait = vengeful
-		}
-	}
-	# Filter out known witches: *way* too obvious.
-	NOT = { has_trait = witch }
-}
+# scripted_trigger fp1_0111_suspicious_courtier_trigger = {
+# 	# Basic checks.
+# 	is_available_ai_adult = yes
+# 	NOT = { this = scope:accursed }
+# 	OR = {
+# 		fp1_is_norse = yes
+# 		# religion = religion:germanic_religion
+# 	}
+# 	# Would-be sorcerers need to either know what they're doing, or else have absolutely no clue.
+# 	OR = {
+# 		intrigue >= fp1_0111_sorcerer_intrigue_high
+# 		learning >= fp1_0111_sorcerer_learning_high
+# 		intrigue <= fp1_0111_sorcerer_intrigue_low
+# 		learning <= fp1_0111_sorcerer_learning_low
+# 	}
+# 	# ... and to have at least two of various pairs of matched traits.
+# 	calc_true_if = {
+# 		amount >= 2
+# 		OR = {
+# 			has_trait = lazy
+# 			has_trait = arbitrary
+# 		}
+# 		OR = {
+# 			has_trait = wrathful
+# 			has_trait = impatient
+# 		}
+# 		OR = {
+# 			has_trait = calm
+# 			has_trait = patient
+# 		}
+# 		OR = {
+# 			has_trait = sadistic
+# 			has_trait = arrogant
+# 		}
+# 		OR = {
+# 			has_trait = callous
+# 			has_trait = ambitious
+# 		}
+# 		OR = {
+# 			has_trait = deceitful
+# 			has_trait = craven
+# 		}
+# 		OR = {
+# 			has_trait = brave
+# 			has_trait = trusting
+# 		}
+# 		OR = {
+# 			has_trait = paranoid
+# 			has_trait = vengeful
+# 		}
+# 	}
+# 	# Filter out known witches: *way* too obvious.
+# 	NOT = { has_trait = witch }
+# }
 
-scripted_trigger fp1_0111_discountable_courtier_trigger = {
-	# Basic checks.
-	is_available_ai_adult = yes
-	NOT = { this = scope:accursed }
-	OR = {
-		fp1_is_norse = yes
-		# religion = religion:germanic_religion
-	}
-	# Discountables must not meet minimum requirements to be suspicious.
-	fp1_0111_suspicious_courtier_trigger = no
-	# On top of that, as long as they have at least one disqualifying statistic, they're gucci.
-	OR = {
-		has_trait = gallant
-		has_trait = honest
-		has_trait = just
-		has_trait = compassionate
-		has_trait = forgiving
-		# Zealous characters require witchcraft to be at least somewhat shameful.
-		AND = {
-			has_trait = zealous
-			faith = {
-				NOT = { has_doctrine_parameter = witchcraft_accepted }
-			}
-		}
-	}
-	# Ensure that no witches are thrown into the discountables pile, as that's just cruel.
-	NOR = {
-		has_trait = witch
-		any_secret = { secret_type = secret_witch }
-	}
-}
+# scripted_trigger fp1_0111_discountable_courtier_trigger = {
+# 	# Basic checks.
+# 	is_available_ai_adult = yes
+# 	NOT = { this = scope:accursed }
+# 	OR = {
+# 		fp1_is_norse = yes
+# 		# religion = religion:germanic_religion
+# 	}
+# 	# Discountables must not meet minimum requirements to be suspicious.
+# 	fp1_0111_suspicious_courtier_trigger = no
+# 	# On top of that, as long as they have at least one disqualifying statistic, they're gucci.
+# 	OR = {
+# 		has_trait = gallant
+# 		has_trait = honest
+# 		has_trait = just
+# 		has_trait = compassionate
+# 		has_trait = forgiving
+# 		# Zealous characters require witchcraft to be at least somewhat shameful.
+# 		AND = {
+# 			has_trait = zealous
+# 			faith = {
+# 				NOT = { has_doctrine_parameter = witchcraft_accepted }
+# 			}
+# 		}
+# 	}
+# 	# Ensure that no witches are thrown into the discountables pile, as that's just cruel.
+# 	NOR = {
+# 		has_trait = witch
+# 		any_secret = { secret_type = secret_witch }
+# 	}
+# }
 
-scripted_effect fp1_0111_randomise_sorcerer_identity_effect = {
-	random_list = {
-		100 = {
-			trigger = {
-				NOT = { exists = scope:suspect_a }
-			}
-			save_scope_as = suspect_a
-		}
-		100 = {
-			trigger = {
-				NOT = { exists = scope:suspect_b }
-			}
-			save_scope_as = suspect_b
-		}
-		100 = {
-			trigger = {
-				NOT = { exists = scope:suspect_c }
-			}
-			save_scope_as = suspect_c
-		}
-	}
-}
+# scripted_effect fp1_0111_randomise_sorcerer_identity_effect = {
+# 	random_list = {
+# 		100 = {
+# 			trigger = {
+# 				NOT = { exists = scope:suspect_a }
+# 			}
+# 			save_scope_as = suspect_a
+# 		}
+# 		100 = {
+# 			trigger = {
+# 				NOT = { exists = scope:suspect_b }
+# 			}
+# 			save_scope_as = suspect_b
+# 		}
+# 		100 = {
+# 			trigger = {
+# 				NOT = { exists = scope:suspect_c }
+# 			}
+# 			save_scope_as = suspect_c
+# 		}
+# 	}
+# }
 
-scripted_effect fp1_0111_accursed_receives_curse_effect = {
-	# Firstly, they gain a *colossal* amount of stress.
-	add_stress = monumental_stress_gain
-	# Then they take a negative modifier.
-	add_character_modifier = {
-		modifier = fp1_cursed_by_nithing_pole_modifier
-		years = 20
-	}
-	# And become paranoid if possible.
-	if = {
-		limit = {
-			number_of_personality_traits < personality_trait_limit
-			NOR = {
-				has_trait = trusting
-				has_trait = paranoid
-			}
-		}
-		add_trait = paranoid
-	}
-}
+# scripted_effect fp1_0111_accursed_receives_curse_effect = {
+# 	# Firstly, they gain a *colossal* amount of stress.
+# 	add_stress = monumental_stress_gain
+# 	# Then they take a negative modifier.
+# 	add_character_modifier = {
+# 		modifier = fp1_cursed_by_nithing_pole_modifier
+# 		years = 20
+# 	}
+# 	# And become paranoid if possible.
+# 	if = {
+# 		limit = {
+# 			number_of_personality_traits < personality_trait_limit
+# 			NOR = {
+# 				has_trait = trusting
+# 				has_trait = paranoid
+# 			}
+# 		}
+# 		add_trait = paranoid
+# 	}
+# }
 
-scripted_effect fp1_0111_correct_accusation_effect = {
-	# Give $CHARACTER$ a witch secret & expose it.
-	$CHARACTER$ = {
-		# Hide the witch effect, so that you can't just *see* who the witch is by who'll be exposed.
-		hidden_effect = {
-			random_secret = {
-				limit = { secret_type = secret_witch }
-				expose_secret = root
-			}
-		}
-		# Simply show a nice, easy tooltip.
-		show_as_tooltip = { add_trait = witch }
-	}
-	# Rightfully imprison them.
-	rightfully_imprison_character_effect = {
-		TARGET = $CHARACTER$
-		IMPRISONER = root
-	}
-	# Gain a nicely chonky chunk of prestige.
-	add_prestige = medium_prestige_gain
-	# Receive a strong hook on, and oodles of opinion with, scope:accursed.
-	add_hook = {
-		type = loyalty_hook
-		target = scope:accursed
-	}
-	reverse_add_opinion = {
-		target = scope:accursed
-		modifier = relieved_opinion
-		opinion = 75
-	}
-}
+# scripted_effect fp1_0111_correct_accusation_effect = {
+# 	# Give $CHARACTER$ a witch secret & expose it.
+# 	$CHARACTER$ = {
+# 		# Hide the witch effect, so that you can't just *see* who the witch is by who'll be exposed.
+# 		hidden_effect = {
+# 			random_secret = {
+# 				limit = { secret_type = secret_witch }
+# 				expose_secret = root
+# 			}
+# 		}
+# 		# Simply show a nice, easy tooltip.
+# 		show_as_tooltip = { add_trait = witch }
+# 	}
+# 	# Rightfully imprison them.
+# 	rightfully_imprison_character_effect = {
+# 		TARGET = $CHARACTER$
+# 		IMPRISONER = root
+# 	}
+# 	# Gain a nicely chonky chunk of prestige.
+# 	add_prestige = medium_prestige_gain
+# 	# Receive a strong hook on, and oodles of opinion with, scope:accursed.
+# 	add_hook = {
+# 		type = loyalty_hook
+# 		target = scope:accursed
+# 	}
+# 	reverse_add_opinion = {
+# 		target = scope:accursed
+# 		modifier = relieved_opinion
+# 		opinion = 75
+# 	}
+# }
 
-scripted_effect fp1_0111_false_accusation_effect = {
-	# $CHARACTER$ is, understandably, upset.
-	reverse_add_opinion = {
-		target = $CHARACTER$
-		modifier = falsely_accused
-	}
-	# And you lose some prestige for your failure.
-	add_prestige = medium_prestige_loss
-	# Scope:accursed has a melt-down.
-	scope:accursed = { fp1_0111_accursed_receives_curse_effect = yes }
-}
+# scripted_effect fp1_0111_false_accusation_effect = {
+# 	# $CHARACTER$ is, understandably, upset.
+# 	reverse_add_opinion = {
+# 		target = $CHARACTER$
+# 		modifier = falsely_accused
+# 	}
+# 	# And you lose some prestige for your failure.
+# 	add_prestige = medium_prestige_loss
+# 	# Scope:accursed has a melt-down.
+# 	scope:accursed = { fp1_0111_accursed_receives_curse_effect = yes }
+# }
 
-scripted_effect fp1_0111_select_accusation_effect = {
-	# Inform root about the potential consequences of their guess.
-	show_as_tooltip = {
-		random_list = {
-			# Guessed correctly.
-			100 = {
-				show_chance = no
-				desc = fp1_yearly.0111.tt.correct_guess
-				fp1_0111_correct_accusation_effect = { CHARACTER = $CHARACTER$ }
-			}
-			# Guessed incorrectly.
-			100 = {
-				show_chance = no
-				desc = fp1_yearly.0111.tt.wrong_guess
-				fp1_0111_false_accusation_effect = { CHARACTER = $CHARACTER$ }
-			}
-		}
-	}
-	# And handle the actual results.
-	## Guessed correctly!
-	if = {
-		limit = { $CHARACTER$ = scope:culprit }
-		send_interface_toast = {
-			title = fp1_yearly.0111.tt.correct_accusation
-			left_icon = $CHARACTER$
-			right_icon = scope:accursed
-			# Calculate actual effects: we have to keep these hidden so as not to spoil the mystery.
-			hidden_effect = {
-				fp1_0111_correct_accusation_effect = { CHARACTER = $CHARACTER$ }
-			}
-			# And throw in a tooltip to make the toast seem less empty.
-			custom_tooltip = fp1_yearly.0111.tt.correct_accusation.tt
-		}
-	}
-	## Otherwise, you dun goofed.
-	else = {
-		send_interface_toast = {
-			title = fp1_yearly.0111.tt.false_accusation
-			left_icon = $CHARACTER$
-			right_icon = scope:accursed
-			# Calculate actual effects: we have to keep these hidden so as not to spoil the mystery.
-			hidden_effect = {
-				fp1_0111_false_accusation_effect = { CHARACTER = $CHARACTER$ }
-			}
-			# And throw in a tooltip to make the toast seem less empty.
-			custom_tooltip = fp1_yearly.0111.tt.false_accusation.tt
-		}
-	}
-}
+# scripted_effect fp1_0111_select_accusation_effect = {
+# 	# Inform root about the potential consequences of their guess.
+# 	show_as_tooltip = {
+# 		random_list = {
+# 			# Guessed correctly.
+# 			100 = {
+# 				show_chance = no
+# 				desc = fp1_yearly.0111.tt.correct_guess
+# 				fp1_0111_correct_accusation_effect = { CHARACTER = $CHARACTER$ }
+# 			}
+# 			# Guessed incorrectly.
+# 			100 = {
+# 				show_chance = no
+# 				desc = fp1_yearly.0111.tt.wrong_guess
+# 				fp1_0111_false_accusation_effect = { CHARACTER = $CHARACTER$ }
+# 			}
+# 		}
+# 	}
+# 	# And handle the actual results.
+# 	## Guessed correctly!
+# 	if = {
+# 		limit = { $CHARACTER$ = scope:culprit }
+# 		send_interface_toast = {
+# 			title = fp1_yearly.0111.tt.correct_accusation
+# 			left_icon = $CHARACTER$
+# 			right_icon = scope:accursed
+# 			# Calculate actual effects: we have to keep these hidden so as not to spoil the mystery.
+# 			hidden_effect = {
+# 				fp1_0111_correct_accusation_effect = { CHARACTER = $CHARACTER$ }
+# 			}
+# 			# And throw in a tooltip to make the toast seem less empty.
+# 			custom_tooltip = fp1_yearly.0111.tt.correct_accusation.tt
+# 		}
+# 	}
+# 	## Otherwise, you dun goofed.
+# 	else = {
+# 		send_interface_toast = {
+# 			title = fp1_yearly.0111.tt.false_accusation
+# 			left_icon = $CHARACTER$
+# 			right_icon = scope:accursed
+# 			# Calculate actual effects: we have to keep these hidden so as not to spoil the mystery.
+# 			hidden_effect = {
+# 				fp1_0111_false_accusation_effect = { CHARACTER = $CHARACTER$ }
+# 			}
+# 			# And throw in a tooltip to make the toast seem less empty.
+# 			custom_tooltip = fp1_yearly.0111.tt.false_accusation.tt
+# 		}
+# 	}
+# }
 
-#	Nithing Pole Raised Against Courtier
-fp1_yearly.0111 = {
-	type = character_event
-	title = fp1_yearly.0111.t
-	desc = {
-		desc = fp1_yearly.0111.desc.intro
-		# Skill clue.
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:clue_skill = flag:intrigue
-					intrigue >= fp1_0111_sorcerer_intrigue_high
-				}
-				desc = fp1_yearly.0111.desc.skill.intrigue_high
-			}
-			triggered_desc = {
-				trigger = {
-					scope:clue_skill = flag:learning
-					learning >= fp1_0111_sorcerer_learning_high
-				}
-				desc = fp1_yearly.0111.desc.skill.learning_high
-			}
-			triggered_desc = {
-				trigger = {
-					scope:clue_skill = flag:intrigue
-					intrigue <= fp1_0111_sorcerer_intrigue_low
-				}
-				desc = fp1_yearly.0111.desc.skill.intrigue_low
-			}
-			triggered_desc = {
-				trigger = {
-					scope:clue_skill = flag:learning
-					learning <= fp1_0111_sorcerer_learning_low
-				}
-				desc = fp1_yearly.0111.desc.skill.learning_low
-			}
-			desc = fp1_yearly.0111.desc.skill.fallback
-		}
-		# Grammatical stop.
-		desc = fp1_yearly.0111.desc.first_connector
-		# Trait clue #1.
-		first_valid = {
-			triggered_desc = {
-				trigger = { scope:clue_trait_1 = flag:lazy_or_arbitrary }
-				desc = fp1_yearly.0111.desc.trait_1.lazy_or_arbitrary
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_1 = flag:wrathful_or_impatient }
-				desc = fp1_yearly.0111.desc.trait_1.wrathful_or_impatient
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_1 = flag:calm_or_patient }
-				desc = fp1_yearly.0111.desc.trait_1.calm_or_patient
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_1 = flag:sadistic_or_arrogant }
-				desc = fp1_yearly.0111.desc.trait_1.sadistic_or_arrogant
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_1 = flag:callous_or_ambitious }
-				desc = fp1_yearly.0111.desc.trait_1.callous_or_ambitious
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_1 = flag:deceitful_or_craven }
-				desc = fp1_yearly.0111.desc.trait_1.deceitful_or_craven
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_1 = flag:brave_or_trusting }
-				desc = fp1_yearly.0111.desc.trait_1.brave_or_trusting
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_1 = flag:paranoid_or_vengeful }
-				desc = fp1_yearly.0111.desc.trait_1.paranoid_or_vengeful
-			}
-			desc = fp1_yearly.0111.desc.trait_1.fallback
-		}
-		# Grammatical stop.
-		desc = fp1_yearly.0111.desc.second_connector
-		# Trait clue #2.
-		first_valid = {
-			triggered_desc = {
-				trigger = { scope:clue_trait_2 = flag:lazy_or_arbitrary }
-				desc = fp1_yearly.0111.desc.trait_2.lazy_or_arbitrary
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_2 = flag:wrathful_or_impatient }
-				desc = fp1_yearly.0111.desc.trait_2.wrathful_or_impatient
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_2 = flag:calm_or_patient }
-				desc = fp1_yearly.0111.desc.trait_2.calm_or_patient
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_2 = flag:sadistic_or_arrogant }
-				desc = fp1_yearly.0111.desc.trait_2.sadistic_or_arrogant
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_2 = flag:callous_or_ambitious }
-				desc = fp1_yearly.0111.desc.trait_2.callous_or_ambitious
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_2 = flag:deceitful_or_craven }
-				desc = fp1_yearly.0111.desc.trait_2.deceitful_or_craven
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_2 = flag:brave_or_trusting }
-				desc = fp1_yearly.0111.desc.trait_2.brave_or_trusting
-			}
-			triggered_desc = {
-				trigger = { scope:clue_trait_2 = flag:paranoid_or_vengeful }
-				desc = fp1_yearly.0111.desc.trait_2.paranoid_or_vengeful
-			}
-			desc = fp1_yearly.0111.desc.trait_2.fallback
-		}
-		desc = fp1_yearly.0111.desc.outro
-	}
-	theme = intrigue
-	left_portrait = {
-		character = root
-		animation = personality_rational
-	}
-	right_portrait = {
-		character = scope:accursed
-		animation = fear
-	}
-	lower_left_portrait = scope:suspect_a
-	lower_center_portrait = scope:suspect_b
-	lower_right_portrait = scope:suspect_c
-	override_background = { reference = corridor_night }
+# #	Nithing Pole Raised Against Courtier
+# fp1_yearly.0111 = {
+# 	type = character_event
+# 	title = fp1_yearly.0111.t
+# 	desc = {
+# 		desc = fp1_yearly.0111.desc.intro
+# 		# Skill clue.
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = {
+# 					scope:clue_skill = flag:intrigue
+# 					intrigue >= fp1_0111_sorcerer_intrigue_high
+# 				}
+# 				desc = fp1_yearly.0111.desc.skill.intrigue_high
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					scope:clue_skill = flag:learning
+# 					learning >= fp1_0111_sorcerer_learning_high
+# 				}
+# 				desc = fp1_yearly.0111.desc.skill.learning_high
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					scope:clue_skill = flag:intrigue
+# 					intrigue <= fp1_0111_sorcerer_intrigue_low
+# 				}
+# 				desc = fp1_yearly.0111.desc.skill.intrigue_low
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					scope:clue_skill = flag:learning
+# 					learning <= fp1_0111_sorcerer_learning_low
+# 				}
+# 				desc = fp1_yearly.0111.desc.skill.learning_low
+# 			}
+# 			desc = fp1_yearly.0111.desc.skill.fallback
+# 		}
+# 		# Grammatical stop.
+# 		desc = fp1_yearly.0111.desc.first_connector
+# 		# Trait clue #1.
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_1 = flag:lazy_or_arbitrary }
+# 				desc = fp1_yearly.0111.desc.trait_1.lazy_or_arbitrary
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_1 = flag:wrathful_or_impatient }
+# 				desc = fp1_yearly.0111.desc.trait_1.wrathful_or_impatient
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_1 = flag:calm_or_patient }
+# 				desc = fp1_yearly.0111.desc.trait_1.calm_or_patient
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_1 = flag:sadistic_or_arrogant }
+# 				desc = fp1_yearly.0111.desc.trait_1.sadistic_or_arrogant
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_1 = flag:callous_or_ambitious }
+# 				desc = fp1_yearly.0111.desc.trait_1.callous_or_ambitious
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_1 = flag:deceitful_or_craven }
+# 				desc = fp1_yearly.0111.desc.trait_1.deceitful_or_craven
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_1 = flag:brave_or_trusting }
+# 				desc = fp1_yearly.0111.desc.trait_1.brave_or_trusting
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_1 = flag:paranoid_or_vengeful }
+# 				desc = fp1_yearly.0111.desc.trait_1.paranoid_or_vengeful
+# 			}
+# 			desc = fp1_yearly.0111.desc.trait_1.fallback
+# 		}
+# 		# Grammatical stop.
+# 		desc = fp1_yearly.0111.desc.second_connector
+# 		# Trait clue #2.
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_2 = flag:lazy_or_arbitrary }
+# 				desc = fp1_yearly.0111.desc.trait_2.lazy_or_arbitrary
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_2 = flag:wrathful_or_impatient }
+# 				desc = fp1_yearly.0111.desc.trait_2.wrathful_or_impatient
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_2 = flag:calm_or_patient }
+# 				desc = fp1_yearly.0111.desc.trait_2.calm_or_patient
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_2 = flag:sadistic_or_arrogant }
+# 				desc = fp1_yearly.0111.desc.trait_2.sadistic_or_arrogant
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_2 = flag:callous_or_ambitious }
+# 				desc = fp1_yearly.0111.desc.trait_2.callous_or_ambitious
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_2 = flag:deceitful_or_craven }
+# 				desc = fp1_yearly.0111.desc.trait_2.deceitful_or_craven
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_2 = flag:brave_or_trusting }
+# 				desc = fp1_yearly.0111.desc.trait_2.brave_or_trusting
+# 			}
+# 			triggered_desc = {
+# 				trigger = { scope:clue_trait_2 = flag:paranoid_or_vengeful }
+# 				desc = fp1_yearly.0111.desc.trait_2.paranoid_or_vengeful
+# 			}
+# 			desc = fp1_yearly.0111.desc.trait_2.fallback
+# 		}
+# 		desc = fp1_yearly.0111.desc.outro
+# 	}
+# 	theme = intrigue
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_rational
+# 	}
+# 	right_portrait = {
+# 		character = scope:accursed
+# 		animation = fear
+# 	}
+# 	lower_left_portrait = scope:suspect_a
+# 	lower_center_portrait = scope:suspect_b
+# 	lower_right_portrait = scope:suspect_c
+# 	override_background = { reference = corridor_night }
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0111 }
-		is_landed = yes
-		# Filter to flavour-appropriate characters.
-		faith = {
-			NOT = { has_doctrine_parameter = witchcraft_accepted }
-		}
-		OR = {
-			fp1_is_norse_tribal = yes
-			# Allow this after feudalisation, but not for kings and emperors with more important things going on.
-			AND = {
-				fp1_is_norse = yes
-				highest_held_title_tier <= tier_duchy
-			}
-		}
-		# Make sure we have a suitably superstitious character for scope:courtier.
-		any_courtier = {
-			fp1_0111_superstitious_courtier_trigger = yes
-			save_temporary_scope_as = accursed
-		}
-		# And that they've got enemies available.
-		any_courtier_or_guest = {
-			# Count one more than we need so that we've still got a valid scope:accursed even if they accidentally take up a suspect slot.
-			count >= 4
-			fp1_0111_suspicious_courtier_trigger = yes
-		}
-	}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0111 }
+# 		is_landed = yes
+# 		# Filter to flavour-appropriate characters.
+# 		faith = {
+# 			NOT = { has_doctrine_parameter = witchcraft_accepted }
+# 		}
+# 		OR = {
+# 			fp1_is_norse_tribal = yes
+# 			# Allow this after feudalisation, but not for kings and emperors with more important things going on.
+# 			AND = {
+# 				fp1_is_norse = yes
+# 				highest_held_title_tier <= tier_duchy
+# 			}
+# 		}
+# 		# Make sure we have a suitably superstitious character for scope:courtier.
+# 		any_courtier = {
+# 			fp1_0111_superstitious_courtier_trigger = yes
+# 			save_temporary_scope_as = accursed
+# 		}
+# 		# And that they've got enemies available.
+# 		any_courtier_or_guest = {
+# 			# Count one more than we need so that we've still got a valid scope:accursed even if they accidentally take up a suspect slot.
+# 			count >= 4
+# 			fp1_0111_suspicious_courtier_trigger = yes
+# 		}
+# 	}
 
-	weight_multiplier = {
-		base = 1
+# 	weight_multiplier = {
+# 		base = 1
 
-		# Witches see more of this type of thing in their court.
-		modifier = {
-			add = 1
-			has_trait = witch
-		}
-		# And zealots are more likely to be appealed to by terrified courtiers.
-		modifier = {
-			add = 0.5
-			has_trait = zealous
-		}
-	}
+# 		# Witches see more of this type of thing in their court.
+# 		modifier = {
+# 			add = 1
+# 			has_trait = witch
+# 		}
+# 		# And zealots are more likely to be appealed to by terrified courtiers.
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = zealous
+# 		}
+# 	}
 
-	immediate = {
-		play_music_cue = "mx_cue_murder"
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0111
-			days = 7300
-		}
-		# Designate a suitable superstitious courtier.
-		random_courtier = {
-			limit = { fp1_0111_superstitious_courtier_trigger = yes }
-			weight = {
-				base = 0
-				# Weigh up the paranoid.
-				modifier = {
-					add = 100
-					has_trait = paranoid
-				}
-				# Weigh up zealots.
-				modifier = {
-					add = 50
-					has_trait = zealous
-				}
-				# And the vengeful, just a little, for assuming everyone thinks like them.
-				modifier = {
-					add = 25
-					has_trait = vengeful
-				}
-			}
-			save_scope_as = accursed
-		}
-		# Next, grab all valid suspicious courtiers
-		every_courtier_or_guest = {
-			limit = {
-				fp1_0111_suspicious_courtier_trigger = yes
-			}
-			add_to_list = suspicious_courtiers_list
-		}
-		# And all valid discountables.
-		every_courtier_or_guest = {
-			limit = { fp1_0111_discountable_courtier_trigger = yes }
-			add_to_list = discountable_courtiers_list
-		}
-		# Process candidates.
-		## First, scope:culprit.
-		random_in_list = {
-			list = suspicious_courtiers_list
-			weight = {
-				base = 1
-				# Weight up anyone with the witch secret for the main suspect.
-				modifier = {
-					add = 1000
-					any_secret = { secret_type = secret_witch }
-				}
-			}
-			save_scope_as = culprit
-		}
-		## Then, scope:red_herring.
-		random_in_list = {
-			list = suspicious_courtiers_list
-			limit = {
-				NOR = {
-					this = scope:culprit
-					# Forbid secret witches: that's *too* much of a red herring.
-					any_secret = { secret_type = secret_witch }
-				}
-			}
-			save_scope_as = red_herring
-		}
-		## Try for a scope:discountable.
-		if = {
-			limit = {
-				any_in_list = {
-					list = discountable_courtiers_list
-					count >= 1
-				}
-			}
-			random_in_list = {
-				list = discountable_courtiers_list
-				save_scope_as = discountable
-			}
-		}
-		## If no scope:discountable is available, pick a scope:scarlet_herring.
-		else = {
-			random_in_list = {
-				list = suspicious_courtiers_list
-				limit = {
-					NOR = {
-						this = scope:culprit
-						this = scope:red_herring
-						# Forbid secret witches: that's *too* much of a red herring.
-						any_secret = { secret_type = secret_witch }
-					}
-				}
-				save_scope_as = scarlet_herring
-			}
-		}
-		# Then hand out suspect tags at random, so that it's not just always scope:suspect_a.
-		## First, sort scope:culprit.
-		scope:culprit = { fp1_0111_randomise_sorcerer_identity_effect = yes }
-		## Next, scope:red_herring.
-		scope:red_herring = { fp1_0111_randomise_sorcerer_identity_effect = yes }
-		## If we have a scope:discountable, finish with them.
-		if = {
-			limit = { exists = scope:discountable }
-			scope:discountable = { fp1_0111_randomise_sorcerer_identity_effect = yes }
-		}
-		## Otherwise, it's scope:scarlet_herring's turn.
-		else = {
-			scope:scarlet_herring = { fp1_0111_randomise_sorcerer_identity_effect = yes }
-		}
-		# Process clues.
-		scope:culprit = {
-			# First, we pick one of scope:culprit's skills to examine.
-			## The base is just a straight 50:50 shot between intrigue & learning, but we weight it a list by education.
-			random_list = {
-				# Intrigue.
-				1000 = {
-					save_scope_value_as = {
-						name = clue_skill
-						value = flag:intrigue
-					}
-					# Weight up for education.
-					modifier = {
-						add = 250
-						has_trait_rank = {
-							trait = education_intrigue
-							rank = 1
-						}
-					}
-					modifier = {
-						add = 500
-						has_trait_rank = {
-							trait = education_intrigue
-							rank = 2
-						}
-					}
-					modifier = {
-						add = 750
-						has_trait_rank = {
-							trait = education_intrigue
-							rank = 3
-						}
-					}
-					modifier = {
-						add = 1000
-						has_trait_rank = {
-							trait = education_intrigue
-							rank >= 4
-						}
-					}
-				}
-				# Learning.
-				1000 = {
-					save_scope_value_as = {
-						name = clue_skill
-						value = flag:learning
-					}
-					# Weight up for education.
-					modifier = {
-						add = 250
-						has_trait_rank = {
-							trait = education_learning
-							rank = 1
-						}
-					}
-					modifier = {
-						add = 500
-						has_trait_rank = {
-							trait = education_learning
-							rank = 2
-						}
-					}
-					modifier = {
-						add = 750
-						has_trait_rank = {
-							trait = education_learning
-							rank = 3
-						}
-					}
-					modifier = {
-						add = 1000
-						has_trait_rank = {
-							trait = education_learning
-							rank >= 4
-						}
-					}
-				}
-			}
-			# Then, we want to look through their traits and pick a first pair to comment on.
-			## Eight options of 12.5% each.
-			random_list = {
-				# Lazy or arbitrary
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = lazy
-							has_trait = arbitrary
-						}
-					}
-					save_scope_value_as = {
-						name = clue_trait_1
-						value = flag:lazy_or_arbitrary
-					}
-				}
-				# Wrathful or impatient.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = wrathful
-							has_trait = impatient
-						}
-					}
-					save_scope_value_as = {
-						name = clue_trait_1
-						value = flag:wrathful_or_impatient
-					}
-				}
-				# Calm or patient.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = calm
-							has_trait = patient
-						}
-					}
-					save_scope_value_as = {
-						name = clue_trait_1
-						value = flag:calm_or_patient
-					}
-				}
-				# Sadistic or arrogant.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = sadistic
-							has_trait = arrogant
-						}
-					}
-					save_scope_value_as = {
-						name = clue_trait_1
-						value = flag:sadistic_or_arrogant
-					}
-				}
-				# Callous or ambitious.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = callous
-							has_trait = ambitious
-						}
-					}
-					save_scope_value_as = {
-						name = clue_trait_1
-						value = flag:callous_or_ambitious
-					}
-				}
-				# Deceitful or craven.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = deceitful
-							has_trait = craven
-						}
-					}
-					save_scope_value_as = {
-						name = clue_trait_1
-						value = flag:deceitful_or_craven
-					}
-				}
-				# Brave or trusting.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = brave
-							has_trait = trusting
-						}
-					}
-					save_scope_value_as = {
-						name = clue_trait_1
-						value = flag:brave_or_trusting
-					}
-				}
-				# Paranoid or vengeful.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = paranoid
-							has_trait = vengeful
-						}
-					}
-					save_scope_value_as = {
-						name = clue_trait_1
-						value = flag:paranoid_or_vengeful
-					}
-				}
-			}
-			# Finally, pick a secondary trait pairing.
-			## Technically eight options of 12.5% each, but one of these is discounted for the first pairing, so it's actually seven pairings of 14.3% each.
-			random_list = {
-				# Lazy or arbitrary
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = lazy
-							has_trait = arbitrary
-						}
-						NOT = { scope:clue_trait_1 = flag:lazy_or_arbitrary }
-					}
-					save_scope_value_as = {
-						name = clue_trait_2
-						value = flag:lazy_or_arbitrary
-					}
-				}
-				# Wrathful or impatient.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = wrathful
-							has_trait = impatient
-						}
-						NOT = { scope:clue_trait_1 = flag:wrathful_or_impatient }
-					}
-					save_scope_value_as = {
-						name = clue_trait_2
-						value = flag:wrathful_or_impatient
-					}
-				}
-				# Calm or patient.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = calm
-							has_trait = patient
-						}
-						NOT = { scope:clue_trait_1 = flag:calm_or_patient }
-					}
-					save_scope_value_as = {
-						name = clue_trait_2
-						value = flag:calm_or_patient
-					}
-				}
-				# Sadistic or arrogant.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = sadistic
-							has_trait = arrogant
-						}
-						NOT = { scope:clue_trait_1 = flag:sadistic_or_arrogant }
-					}
-					save_scope_value_as = {
-						name = clue_trait_2
-						value = flag:sadistic_or_arrogant
-					}
-				}
-				# Callous or ambitious.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = callous
-							has_trait = ambitious
-						}
-						NOT = { scope:clue_trait_1 = flag:callous_or_ambitious }
-					}
-					save_scope_value_as = {
-						name = clue_trait_2
-						value = flag:callous_or_ambitious
-					}
-				}
-				# Deceitful or craven.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = deceitful
-							has_trait = craven
-						}
-						NOT = { scope:clue_trait_1 = flag:deceitful_or_craven }
-					}
-					save_scope_value_as = {
-						name = clue_trait_2
-						value = flag:deceitful_or_craven
-					}
-				}
-				# Brave or trusting.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = brave
-							has_trait = trusting
-						}
-						NOT = { scope:clue_trait_1 = flag:brave_or_trusting }
-					}
-					save_scope_value_as = {
-						name = clue_trait_2
-						value = flag:brave_or_trusting
-					}
-				}
-				# Paranoid or vengeful.
-				125 = {
-					trigger = {
-						OR = {
-							has_trait = paranoid
-							has_trait = vengeful
-						}
-						NOT = { scope:clue_trait_1 = flag:paranoid_or_vengeful }
-					}
-					save_scope_value_as = {
-						name = clue_trait_2
-						value = flag:paranoid_or_vengeful
-					}
-				}
-			}
-		}
-		# Aaaaaaand make scope:culprit an actual witch.
-		hidden_effect = {
-			scope:culprit = { give_witch_secret_or_trait_effect = yes }
-		}
-	}
+# 	immediate = {
+# 		play_music_cue = "mx_cue_murder"
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0111
+# 			days = 7300
+# 		}
+# 		# Designate a suitable superstitious courtier.
+# 		random_courtier = {
+# 			limit = { fp1_0111_superstitious_courtier_trigger = yes }
+# 			weight = {
+# 				base = 0
+# 				# Weigh up the paranoid.
+# 				modifier = {
+# 					add = 100
+# 					has_trait = paranoid
+# 				}
+# 				# Weigh up zealots.
+# 				modifier = {
+# 					add = 50
+# 					has_trait = zealous
+# 				}
+# 				# And the vengeful, just a little, for assuming everyone thinks like them.
+# 				modifier = {
+# 					add = 25
+# 					has_trait = vengeful
+# 				}
+# 			}
+# 			save_scope_as = accursed
+# 		}
+# 		# Next, grab all valid suspicious courtiers
+# 		every_courtier_or_guest = {
+# 			limit = {
+# 				fp1_0111_suspicious_courtier_trigger = yes
+# 			}
+# 			add_to_list = suspicious_courtiers_list
+# 		}
+# 		# And all valid discountables.
+# 		every_courtier_or_guest = {
+# 			limit = { fp1_0111_discountable_courtier_trigger = yes }
+# 			add_to_list = discountable_courtiers_list
+# 		}
+# 		# Process candidates.
+# 		## First, scope:culprit.
+# 		random_in_list = {
+# 			list = suspicious_courtiers_list
+# 			weight = {
+# 				base = 1
+# 				# Weight up anyone with the witch secret for the main suspect.
+# 				modifier = {
+# 					add = 1000
+# 					any_secret = { secret_type = secret_witch }
+# 				}
+# 			}
+# 			save_scope_as = culprit
+# 		}
+# 		## Then, scope:red_herring.
+# 		random_in_list = {
+# 			list = suspicious_courtiers_list
+# 			limit = {
+# 				NOR = {
+# 					this = scope:culprit
+# 					# Forbid secret witches: that's *too* much of a red herring.
+# 					any_secret = { secret_type = secret_witch }
+# 				}
+# 			}
+# 			save_scope_as = red_herring
+# 		}
+# 		## Try for a scope:discountable.
+# 		if = {
+# 			limit = {
+# 				any_in_list = {
+# 					list = discountable_courtiers_list
+# 					count >= 1
+# 				}
+# 			}
+# 			random_in_list = {
+# 				list = discountable_courtiers_list
+# 				save_scope_as = discountable
+# 			}
+# 		}
+# 		## If no scope:discountable is available, pick a scope:scarlet_herring.
+# 		else = {
+# 			random_in_list = {
+# 				list = suspicious_courtiers_list
+# 				limit = {
+# 					NOR = {
+# 						this = scope:culprit
+# 						this = scope:red_herring
+# 						# Forbid secret witches: that's *too* much of a red herring.
+# 						any_secret = { secret_type = secret_witch }
+# 					}
+# 				}
+# 				save_scope_as = scarlet_herring
+# 			}
+# 		}
+# 		# Then hand out suspect tags at random, so that it's not just always scope:suspect_a.
+# 		## First, sort scope:culprit.
+# 		scope:culprit = { fp1_0111_randomise_sorcerer_identity_effect = yes }
+# 		## Next, scope:red_herring.
+# 		scope:red_herring = { fp1_0111_randomise_sorcerer_identity_effect = yes }
+# 		## If we have a scope:discountable, finish with them.
+# 		if = {
+# 			limit = { exists = scope:discountable }
+# 			scope:discountable = { fp1_0111_randomise_sorcerer_identity_effect = yes }
+# 		}
+# 		## Otherwise, it's scope:scarlet_herring's turn.
+# 		else = {
+# 			scope:scarlet_herring = { fp1_0111_randomise_sorcerer_identity_effect = yes }
+# 		}
+# 		# Process clues.
+# 		scope:culprit = {
+# 			# First, we pick one of scope:culprit's skills to examine.
+# 			## The base is just a straight 50:50 shot between intrigue & learning, but we weight it a list by education.
+# 			random_list = {
+# 				# Intrigue.
+# 				1000 = {
+# 					save_scope_value_as = {
+# 						name = clue_skill
+# 						value = flag:intrigue
+# 					}
+# 					# Weight up for education.
+# 					modifier = {
+# 						add = 250
+# 						has_trait_rank = {
+# 							trait = education_intrigue
+# 							rank = 1
+# 						}
+# 					}
+# 					modifier = {
+# 						add = 500
+# 						has_trait_rank = {
+# 							trait = education_intrigue
+# 							rank = 2
+# 						}
+# 					}
+# 					modifier = {
+# 						add = 750
+# 						has_trait_rank = {
+# 							trait = education_intrigue
+# 							rank = 3
+# 						}
+# 					}
+# 					modifier = {
+# 						add = 1000
+# 						has_trait_rank = {
+# 							trait = education_intrigue
+# 							rank >= 4
+# 						}
+# 					}
+# 				}
+# 				# Learning.
+# 				1000 = {
+# 					save_scope_value_as = {
+# 						name = clue_skill
+# 						value = flag:learning
+# 					}
+# 					# Weight up for education.
+# 					modifier = {
+# 						add = 250
+# 						has_trait_rank = {
+# 							trait = education_learning
+# 							rank = 1
+# 						}
+# 					}
+# 					modifier = {
+# 						add = 500
+# 						has_trait_rank = {
+# 							trait = education_learning
+# 							rank = 2
+# 						}
+# 					}
+# 					modifier = {
+# 						add = 750
+# 						has_trait_rank = {
+# 							trait = education_learning
+# 							rank = 3
+# 						}
+# 					}
+# 					modifier = {
+# 						add = 1000
+# 						has_trait_rank = {
+# 							trait = education_learning
+# 							rank >= 4
+# 						}
+# 					}
+# 				}
+# 			}
+# 			# Then, we want to look through their traits and pick a first pair to comment on.
+# 			## Eight options of 12.5% each.
+# 			random_list = {
+# 				# Lazy or arbitrary
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = lazy
+# 							has_trait = arbitrary
+# 						}
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_1
+# 						value = flag:lazy_or_arbitrary
+# 					}
+# 				}
+# 				# Wrathful or impatient.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = wrathful
+# 							has_trait = impatient
+# 						}
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_1
+# 						value = flag:wrathful_or_impatient
+# 					}
+# 				}
+# 				# Calm or patient.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = calm
+# 							has_trait = patient
+# 						}
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_1
+# 						value = flag:calm_or_patient
+# 					}
+# 				}
+# 				# Sadistic or arrogant.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = sadistic
+# 							has_trait = arrogant
+# 						}
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_1
+# 						value = flag:sadistic_or_arrogant
+# 					}
+# 				}
+# 				# Callous or ambitious.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = callous
+# 							has_trait = ambitious
+# 						}
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_1
+# 						value = flag:callous_or_ambitious
+# 					}
+# 				}
+# 				# Deceitful or craven.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = deceitful
+# 							has_trait = craven
+# 						}
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_1
+# 						value = flag:deceitful_or_craven
+# 					}
+# 				}
+# 				# Brave or trusting.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = brave
+# 							has_trait = trusting
+# 						}
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_1
+# 						value = flag:brave_or_trusting
+# 					}
+# 				}
+# 				# Paranoid or vengeful.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = paranoid
+# 							has_trait = vengeful
+# 						}
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_1
+# 						value = flag:paranoid_or_vengeful
+# 					}
+# 				}
+# 			}
+# 			# Finally, pick a secondary trait pairing.
+# 			## Technically eight options of 12.5% each, but one of these is discounted for the first pairing, so it's actually seven pairings of 14.3% each.
+# 			random_list = {
+# 				# Lazy or arbitrary
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = lazy
+# 							has_trait = arbitrary
+# 						}
+# 						NOT = { scope:clue_trait_1 = flag:lazy_or_arbitrary }
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_2
+# 						value = flag:lazy_or_arbitrary
+# 					}
+# 				}
+# 				# Wrathful or impatient.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = wrathful
+# 							has_trait = impatient
+# 						}
+# 						NOT = { scope:clue_trait_1 = flag:wrathful_or_impatient }
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_2
+# 						value = flag:wrathful_or_impatient
+# 					}
+# 				}
+# 				# Calm or patient.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = calm
+# 							has_trait = patient
+# 						}
+# 						NOT = { scope:clue_trait_1 = flag:calm_or_patient }
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_2
+# 						value = flag:calm_or_patient
+# 					}
+# 				}
+# 				# Sadistic or arrogant.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = sadistic
+# 							has_trait = arrogant
+# 						}
+# 						NOT = { scope:clue_trait_1 = flag:sadistic_or_arrogant }
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_2
+# 						value = flag:sadistic_or_arrogant
+# 					}
+# 				}
+# 				# Callous or ambitious.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = callous
+# 							has_trait = ambitious
+# 						}
+# 						NOT = { scope:clue_trait_1 = flag:callous_or_ambitious }
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_2
+# 						value = flag:callous_or_ambitious
+# 					}
+# 				}
+# 				# Deceitful or craven.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = deceitful
+# 							has_trait = craven
+# 						}
+# 						NOT = { scope:clue_trait_1 = flag:deceitful_or_craven }
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_2
+# 						value = flag:deceitful_or_craven
+# 					}
+# 				}
+# 				# Brave or trusting.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = brave
+# 							has_trait = trusting
+# 						}
+# 						NOT = { scope:clue_trait_1 = flag:brave_or_trusting }
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_2
+# 						value = flag:brave_or_trusting
+# 					}
+# 				}
+# 				# Paranoid or vengeful.
+# 				125 = {
+# 					trigger = {
+# 						OR = {
+# 							has_trait = paranoid
+# 							has_trait = vengeful
+# 						}
+# 						NOT = { scope:clue_trait_1 = flag:paranoid_or_vengeful }
+# 					}
+# 					save_scope_value_as = {
+# 						name = clue_trait_2
+# 						value = flag:paranoid_or_vengeful
+# 					}
+# 				}
+# 			}
+# 		}
+# 		# Aaaaaaand make scope:culprit an actual witch.
+# 		hidden_effect = {
+# 			scope:culprit = { give_witch_secret_or_trait_effect = yes }
+# 		}
+# 	}
 
-	# Scope:suspect_a, clearly.
-	option = {
-		name = fp1_yearly.0111.a
+# 	# Scope:suspect_a, clearly.
+# 	option = {
+# 		name = fp1_yearly.0111.a
 
-		# Display tooltip & apply effects.
-		fp1_0111_select_accusation_effect = { CHARACTER = scope:suspect_a }
+# 		# Display tooltip & apply effects.
+# 		fp1_0111_select_accusation_effect = { CHARACTER = scope:suspect_a }
 
-		stress_impact = {
-			paranoid = major_stress_impact_loss
-			zealous = major_stress_impact_loss
-			trusting = major_stress_impact_gain
-			cynical = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_zeal = 0.5
-				ai_vengefulness = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = paranoid
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = zealous
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = trusting
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = cynical
-			}
-		}
-	}
+# 		stress_impact = {
+# 			paranoid = major_stress_impact_loss
+# 			zealous = major_stress_impact_loss
+# 			trusting = major_stress_impact_gain
+# 			cynical = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_zeal = 0.5
+# 				ai_vengefulness = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = paranoid
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = zealous
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = trusting
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = cynical
+# 			}
+# 		}
+# 	}
 
-	# Scope:suspect_b, I think...
-	option = {
-		name = fp1_yearly.0111.b
+# 	# Scope:suspect_b, I think...
+# 	option = {
+# 		name = fp1_yearly.0111.b
 
-		# Display tooltip & apply effects.
-		fp1_0111_select_accusation_effect = { CHARACTER = scope:suspect_b }
+# 		# Display tooltip & apply effects.
+# 		fp1_0111_select_accusation_effect = { CHARACTER = scope:suspect_b }
 
-		stress_impact = {
-			paranoid = major_stress_impact_loss
-			zealous = major_stress_impact_loss
-			trusting = major_stress_impact_gain
-			cynical = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_zeal = 0.5
-				ai_vengefulness = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = paranoid
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = zealous
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = trusting
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = cynical
-			}
-		}
-	}
+# 		stress_impact = {
+# 			paranoid = major_stress_impact_loss
+# 			zealous = major_stress_impact_loss
+# 			trusting = major_stress_impact_gain
+# 			cynical = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_zeal = 0.5
+# 				ai_vengefulness = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = paranoid
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = zealous
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = trusting
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = cynical
+# 			}
+# 		}
+# 	}
 
-	# Sounds like scope:suspect_c!
-	option = {
-		name = fp1_yearly.0111.c
+# 	# Sounds like scope:suspect_c!
+# 	option = {
+# 		name = fp1_yearly.0111.c
 
-		# Display tooltip & apply effects.
-		fp1_0111_select_accusation_effect = { CHARACTER = scope:suspect_c }
+# 		# Display tooltip & apply effects.
+# 		fp1_0111_select_accusation_effect = { CHARACTER = scope:suspect_c }
 
-		stress_impact = {
-			paranoid = major_stress_impact_loss
-			zealous = major_stress_impact_loss
-			trusting = major_stress_impact_gain
-			cynical = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_zeal = 0.5
-				ai_vengefulness = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = paranoid
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = zealous
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = trusting
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = cynical
-			}
-		}
-	}
+# 		stress_impact = {
+# 			paranoid = major_stress_impact_loss
+# 			zealous = major_stress_impact_loss
+# 			trusting = major_stress_impact_gain
+# 			cynical = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_zeal = 0.5
+# 				ai_vengefulness = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = paranoid
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = zealous
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = trusting
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = cynical
+# 			}
+# 		}
+# 	}
 
-	# Scope:accursed, it's all in your mind, alright?
-	option = {
-		name = fp1_yearly.0111.d
-		trigger = {
-			NOT = { has_trait = witch }
-		}
+# 	# Scope:accursed, it's all in your mind, alright?
+# 	option = {
+# 		name = fp1_yearly.0111.d
+# 		trigger = {
+# 			NOT = { has_trait = witch }
+# 		}
 
-		# Diplomacy challenge to convince scope:accursed that the nithing pole means nothing.
-		duel = {
-			skill = diplomacy
-			target = scope:accursed
-			# You talk them down.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0111.d.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0111.d.tt_success
-					left_icon = scope:accursed
-					# Gain a favour if possible.
-					if = {
-						limit = {
-							can_add_hook = {
-								type = favor_hook
-								target = scope:accursed
-							}
-						}
-						add_hook = {
-							type = favor_hook
-							target = scope:accursed
-							years = 20
-						}
-					}
-					# And always a lot of opinion.
-					reverse_add_opinion = {
-						target = scope:accursed
-						modifier = trust_opinion
-						opinion = 50
-					}
-					# Plus a decent chunk of prestige.
-					add_prestige = medium_prestige_gain
-				}
-			}
-			# They freak the hell out.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0111.d.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0111.d.tt_failure
-					left_icon = scope:accursed
-					# Scope:accursed has a melt-down.
-					scope:accursed = { fp1_0111_accursed_receives_curse_effect = yes }
-				}
-			}
-		}
+# 		# Diplomacy challenge to convince scope:accursed that the nithing pole means nothing.
+# 		duel = {
+# 			skill = diplomacy
+# 			target = scope:accursed
+# 			# You talk them down.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0111.d.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0111.d.tt_success
+# 					left_icon = scope:accursed
+# 					# Gain a favour if possible.
+# 					if = {
+# 						limit = {
+# 							can_add_hook = {
+# 								type = favor_hook
+# 								target = scope:accursed
+# 							}
+# 						}
+# 						add_hook = {
+# 							type = favor_hook
+# 							target = scope:accursed
+# 							years = 20
+# 						}
+# 					}
+# 					# And always a lot of opinion.
+# 					reverse_add_opinion = {
+# 						target = scope:accursed
+# 						modifier = trust_opinion
+# 						opinion = 50
+# 					}
+# 					# Plus a decent chunk of prestige.
+# 					add_prestige = medium_prestige_gain
+# 				}
+# 			}
+# 			# They freak the hell out.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0111.d.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0111.d.tt_failure
+# 					left_icon = scope:accursed
+# 					# Scope:accursed has a melt-down.
+# 					scope:accursed = { fp1_0111_accursed_receives_curse_effect = yes }
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			trusting = major_stress_impact_loss
-			cynical = major_stress_impact_loss
-			paranoid = major_stress_impact_gain
-			zealous = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_vengefulness = -0.25
-				ai_zeal = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = trusting
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = cynical
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = paranoid
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = zealous
-			}
-		}
-	}
+# 		stress_impact = {
+# 			trusting = major_stress_impact_loss
+# 			cynical = major_stress_impact_loss
+# 			paranoid = major_stress_impact_gain
+# 			zealous = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_vengefulness = -0.25
+# 				ai_zeal = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = trusting
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = cynical
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = paranoid
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = zealous
+# 			}
+# 		}
+# 	}
 
-	# (Witch) Worry not, I have a counter-spell.
-	option = {
-		name = fp1_yearly.0111.e
-		trigger = { has_trait = witch }
-		trait = witch
+# 	# (Witch) Worry not, I have a counter-spell.
+# 	option = {
+# 		name = fp1_yearly.0111.e
+# 		trigger = { has_trait = witch }
+# 		trait = witch
 
-		# Gain a favour if possible.
-		if = {
-			limit = {
-				can_add_hook = {
-					type = favor_hook
-					target = scope:accursed
-				}
-			}
-			add_hook = {
-				type = favor_hook
-				target = scope:accursed
-				years = 20
-			}
-		}
-		# And always a lot of opinion.
-		reverse_add_opinion = {
-			target = scope:accursed
-			modifier = trust_opinion
-			opinion = 50
-		}
-		# Plus a decent chunk of prestige.
-		add_prestige = medium_prestige_gain
+# 		# Gain a favour if possible.
+# 		if = {
+# 			limit = {
+# 				can_add_hook = {
+# 					type = favor_hook
+# 					target = scope:accursed
+# 				}
+# 			}
+# 			add_hook = {
+# 				type = favor_hook
+# 				target = scope:accursed
+# 				years = 20
+# 			}
+# 		}
+# 		# And always a lot of opinion.
+# 		reverse_add_opinion = {
+# 			target = scope:accursed
+# 			modifier = trust_opinion
+# 			opinion = 50
+# 		}
+# 		# Plus a decent chunk of prestige.
+# 		add_prestige = medium_prestige_gain
 
-		stress_impact = {
-			trusting = major_stress_impact_loss
-			cynical = major_stress_impact_loss
-			paranoid = major_stress_impact_gain
-			zealous = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_vengefulness = -0.25
-				ai_zeal = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = trusting
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = cynical
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = paranoid
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = zealous
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			trusting = major_stress_impact_loss
+# 			cynical = major_stress_impact_loss
+# 			paranoid = major_stress_impact_gain
+# 			zealous = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_vengefulness = -0.25
+# 				ai_zeal = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = trusting
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = cynical
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = paranoid
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = zealous
+# 			}
+# 		}
+# 	}
+# }
 
 
 
