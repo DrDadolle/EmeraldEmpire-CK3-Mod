@@ -8,6 +8,8 @@
 
 	allowed_for_character = {
 		can_use_conquest_cbs_trigger = yes
+		#Prevent imperial families to do conquests
+		is_imperial_family = no
 		NOT = {
 			government_has_flag = government_is_landless_adventurer
 		}
@@ -27,8 +29,6 @@
 			## Attacking In Rokugan different heritages
 			# Because noone like other heritages !
 			AND = {
-				#Prevent imperial families to do conquests
-				is_imperial_family = no
 				NOT = {
 					scope:attacker = {
 						culture = { has_same_culture_heritage = scope:defender.culture}
