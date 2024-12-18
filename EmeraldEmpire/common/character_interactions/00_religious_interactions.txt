@@ -6410,81 +6410,82 @@ select_ghw_beneficiary_interaction = {
 	}
 }
 
-sun_trial_interaction = {
-	interface_priority = 30
-	icon = religious
+#L5R Disabled
+# sun_trial_interaction = {
+# 	interface_priority = 30
+# 	icon = religious
 
-	category = interaction_category_prison
+# 	category = interaction_category_prison
 
-	is_shown = {
-		scope:actor = { faith = { has_doctrine_parameter = trial_by_sun_active } }
-		scope:recipient = {
-			is_imprisoned_by = scope:actor
-			is_adult = yes
-		}
-	}
+# 	is_shown = {
+# 		scope:actor = { faith = { has_doctrine_parameter = trial_by_sun_active } }
+# 		scope:recipient = {
+# 			is_imprisoned_by = scope:actor
+# 			is_adult = yes
+# 		}
+# 	}
 
-	is_valid_showing_failures_only = {
-		scope:actor = {
-			has_imprisonment_reason = scope:recipient
-		}
-	}
+# 	is_valid_showing_failures_only = {
+# 		scope:actor = {
+# 			has_imprisonment_reason = scope:recipient
+# 		}
+# 	}
 
 
-	on_accept = {
-		scope:actor = {
-			save_scope_as = imprisoner
+# 	on_accept = {
+# 		scope:actor = {
+# 			save_scope_as = imprisoner
 			
-			sun_trial_interaction_piety_effect = yes
-		}
+# 			sun_trial_interaction_piety_effect = yes
+# 		}
 
-		scope:recipient = {
-			save_scope_as = prisoner
-			show_as_tooltip = {
-				#Prisoner has a random outcome (toast sent through prisoner's events)
-				random_list = {
-					desc = outcome_in_a_few_days
-					50 = { #they die without consequences! (must match event religious_interaction.2100)
-						sun_trial_death_modifier = yes
-						desc = sun_trial_interaction.success.tt
-						sun_trial_death_effect = yes
-					}
-					50 = { #they are freed and super cool! (must match event religious_interaction.2100)
-						sun_trial_survival_modifier = yes
-						desc = sun_trial_interaction.failure.tt
-						sun_trial_survival_effect = yes
-					}
-				}
-			}
-			hidden_effect = { #Nudge towards rivalry
-				if = {
-					limit = {
-						NOR = {
-							has_relation_rival = scope:actor
-							has_relation_potential_rival = scope:actor
-						}
-					}
-					set_relation_potential_rival = scope:actor
-				}
-			}
-			#Event for outcome
-			trigger_event = {
-				id = religious_interaction.2100
-			}
-		}
+# 		scope:recipient = {
+# 			save_scope_as = prisoner
+# 			show_as_tooltip = {
+# 				#Prisoner has a random outcome (toast sent through prisoner's events)
+# 				random_list = {
+# 					desc = outcome_in_a_few_days
+# 					50 = { #they die without consequences! (must match event religious_interaction.2100)
+# 						sun_trial_death_modifier = yes
+# 						desc = sun_trial_interaction.success.tt
+# 						sun_trial_death_effect = yes
+# 					}
+# 					50 = { #they are freed and super cool! (must match event religious_interaction.2100)
+# 						sun_trial_survival_modifier = yes
+# 						desc = sun_trial_interaction.failure.tt
+# 						sun_trial_survival_effect = yes
+# 					}
+# 				}
+# 			}
+# 			hidden_effect = { #Nudge towards rivalry
+# 				if = {
+# 					limit = {
+# 						NOR = {
+# 							has_relation_rival = scope:actor
+# 							has_relation_potential_rival = scope:actor
+# 						}
+# 					}
+# 					set_relation_potential_rival = scope:actor
+# 				}
+# 			}
+# 			#Event for outcome
+# 			trigger_event = {
+# 				id = religious_interaction.2100
+# 			}
+# 		}
 
-		# If we're a clan this interaction affects unity
-		add_clan_unity_interaction_effect = {
-			CHARACTER = scope:actor
-			TARGET = scope:recipient
-			VALUE = major_unity_loss
-			DESC = clan_unity_sun_trial.desc
-			REVERSE_NON_HOUSE_TARGET = no
-		}
-	}
+# 		# If we're a clan this interaction affects unity
+# 		add_clan_unity_interaction_effect = {
+# 			CHARACTER = scope:actor
+# 			TARGET = scope:recipient
+# 			VALUE = major_unity_loss
+# 			DESC = clan_unity_sun_trial.desc
+# 			REVERSE_NON_HOUSE_TARGET = no
+# 		}
+# 	}
 
-	auto_accept = yes
-}
+# 	auto_accept = yes
+# }
 
 #########################
 # Literalism tenets

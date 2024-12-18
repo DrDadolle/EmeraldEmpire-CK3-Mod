@@ -3096,12 +3096,9 @@
 		parameters = {
 			summer_festivals_active = yes 
 			fervor_per_holy_site = 0.1
-			#trial_by_sun_active = yes
 		}
 
 		character_modifier = {
-			#desert_attrition_mult = -0.25
-			#desert_mountains_attrition_mult = -0.25
 			monthly_piety_gain_mult = 0.1
 			learning = 1
 		}

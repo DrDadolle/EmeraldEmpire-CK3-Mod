@@ -8116,7 +8116,8 @@ pilgrimage.4001 = {
 	}
 	immediate = {
 		play_music_cue = mx_cue_pilgrimage_arrival
-		christian_saint_bone_creation_effect = yes
+		#L5R Disabled
+		# christian_saint_bone_creation_effect = yes
 	}
 	#Alright
 	option = {
@@ -13654,7 +13655,8 @@ pilgrimage.7000 = {
 		position = lower_center_portrait
 	}
 	immediate = {
-		christian_saint_bone_creation_effect = yes
+		#L5R Disabled
+		# christian_saint_bone_creation_effect = yes
 		#Save memory location for loc if this is our second pilgrimage
 		if = {
 			limit = {

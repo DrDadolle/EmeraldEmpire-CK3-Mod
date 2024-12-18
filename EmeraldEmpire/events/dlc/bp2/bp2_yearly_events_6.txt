@@ -7877,7 +7877,8 @@ bp2_yearly.6090 = {
 	immediate = {
 		play_music_cue = "mx_cue_epic_sacral_moment"
 		add_character_flag = had_event_bp2_yearly_6090
-		remove_cultural_fashion_effect = yes
+		#L5R Disabled
+		# remove_cultural_fashion_effect = yes
 		save_scope_as = root_scope
 		if = {
 			limit = {
