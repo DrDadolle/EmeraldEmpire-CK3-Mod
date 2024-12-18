@@ -32,534 +32,534 @@
 ##################################################
 
 #	Hidden setup: could this raid become a trade mission instead?
-fp1_trade_events.0001 = {
-	hidden = yes
-	scope = army
+# fp1_trade_events.0001 = {
+# 	hidden = yes
+# 	scope = army
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Make sure that the army hasn't landed straight into combat or w/e.
-		is_army_in_combat = no
-		# Various checks related to scope:raider, including most of the stuff for fp1_trade_events.0002's trigger block.
-		scope:raider = {
-			#You must be leading your own forces.
-			this = root.army_commander
-			# Standard checks.
-			is_available_adult_or_is_commanding = yes
-			NOT = { has_character_flag = had_event_fp1_trade_events_0002 }
-			# Must be either river-capable raiders, or have invested in a suitable dynasty legacy.
-			OR = {
-				culture = { has_innovation = innovation_longboats }
-				AND = {
-					exists = dynasty
-					dynasty = { has_dynasty_perk = fp1_adventure_legacy_2 }
-				}
-			}
-			# Must be at peace; not strictly, but this is the easiest way to reduce edge cases.
-			is_at_war = no
-			# Shouldn't hypothetically need to check whether or not scope:raider can actually raid the target, since that should be handled code-side before the on_action even fires.
-		}
-		# Is the target intimidating to this raid army?
-		army_size < fp1_trade_events_eligible_settlement_value
-	}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Make sure that the army hasn't landed straight into combat or w/e.
+# 		is_army_in_combat = no
+# 		# Various checks related to scope:raider, including most of the stuff for fp1_trade_events.0002's trigger block.
+# 		scope:raider = {
+# 			#You must be leading your own forces.
+# 			this = root.army_commander
+# 			# Standard checks.
+# 			is_available_adult_or_is_commanding = yes
+# 			NOT = { has_character_flag = had_event_fp1_trade_events_0002 }
+# 			# Must be either river-capable raiders, or have invested in a suitable dynasty legacy.
+# 			OR = {
+# 				culture = { has_innovation = innovation_longboats }
+# 				AND = {
+# 					exists = dynasty
+# 					dynasty = { has_dynasty_perk = fp1_adventure_legacy_2 }
+# 				}
+# 			}
+# 			# Must be at peace; not strictly, but this is the easiest way to reduce edge cases.
+# 			is_at_war = no
+# 			# Shouldn't hypothetically need to check whether or not scope:raider can actually raid the target, since that should be handled code-side before the on_action even fires.
+# 		}
+# 		# Is the target intimidating to this raid army?
+# 		army_size < fp1_trade_events_eligible_settlement_value
+# 	}
 
-	immediate = {
-		random = {
-			chance = 20
-			modifier = {
-				add = 20
-				scope:raider = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					dynasty = { has_dynasty_perk = fp1_adventure_legacy_2 }
-				}
-			}
-			save_scope_as = raid_army
-			scope:raider = { trigger_event = fp1_trade_events.0002 }
-		}
-	}
-}
+# 	immediate = {
+# 		random = {
+# 			chance = 20
+# 			modifier = {
+# 				add = 20
+# 				scope:raider = {
+# 					culture = { has_cultural_pillar = heritage_north_germanic }
+# 					dynasty = { has_dynasty_perk = fp1_adventure_legacy_2 }
+# 				}
+# 			}
+# 			save_scope_as = raid_army
+# 			scope:raider = { trigger_event = fp1_trade_events.0002 }
+# 		}
+# 	}
+# }
 
-scripted_effect fp1_trade_events_offer_trade_deal_raider_perspective_effect = {
-	# Add the truce.
-	add_truce_both_ways = {
-		character = scope:raider
-		days = fp1_trade_events_truce_length_value
-		name = TRUCE_TRADE_DEAL
-	}
-	# Add some mutual opinion gain.
-	add_opinion = {
-		target = scope:raider
-		modifier = pleased_opinion
-		opinion = 20
-	}
-	# Raid loot for the army.
-	scope:raid_army = { add_loot = fp1_trade_events_cash_settlement_value }
-}
+# scripted_effect fp1_trade_events_offer_trade_deal_raider_perspective_effect = {
+# 	# Add the truce.
+# 	add_truce_both_ways = {
+# 		character = scope:raider
+# 		days = fp1_trade_events_truce_length_value
+# 		name = TRUCE_TRADE_DEAL
+# 	}
+# 	# Add some mutual opinion gain.
+# 	add_opinion = {
+# 		target = scope:raider
+# 		modifier = pleased_opinion
+# 		opinion = 20
+# 	}
+# 	# Raid loot for the army.
+# 	scope:raid_army = { add_loot = fp1_trade_events_cash_settlement_value }
+# }
 
-scripted_effect fp1_trade_events_offer_trade_deal_defender_perspective_effect = {
-	# Add the truce.
-	show_as_tooltip = {
-		add_truce_both_ways = {
-			character = scope:raider
-			days = fp1_trade_events_truce_length_value
-			name = TRUCE_TRADE_DEAL
-		}
-	}
-	# Add some mutual opinion gain.
-	reverse_add_opinion = {
-		target = scope:raider
-		modifier = pleased_opinion
-		opinion = 20
-	}
-	# Minor beneficial modifier gain for the county.
-	scope:county = {
-		add_county_modifier = {
-			modifier = trade_instead_of_raid_fp1_modifier
-			days = fp1_trade_events_truce_length_value
-		}
-	}
-}
+# scripted_effect fp1_trade_events_offer_trade_deal_defender_perspective_effect = {
+# 	# Add the truce.
+# 	show_as_tooltip = {
+# 		add_truce_both_ways = {
+# 			character = scope:raider
+# 			days = fp1_trade_events_truce_length_value
+# 			name = TRUCE_TRADE_DEAL
+# 		}
+# 	}
+# 	# Add some mutual opinion gain.
+# 	reverse_add_opinion = {
+# 		target = scope:raider
+# 		modifier = pleased_opinion
+# 		opinion = 20
+# 	}
+# 	# Minor beneficial modifier gain for the county.
+# 	scope:county = {
+# 		add_county_modifier = {
+# 			modifier = trade_instead_of_raid_fp1_modifier
+# 			days = fp1_trade_events_truce_length_value
+# 		}
+# 	}
+# }
 
-#	You have the chance to trade peacefully instead of raiding.
-fp1_trade_events.0002 = {
-	type = character_event
-	title = fp1_trade_events.0002.t
-	desc = fp1_trade_events.0002.desc
-	theme = realm
-	left_portrait = {
-		character = scope:raider
-		animation = personality_honorable
-	}
-	right_portrait = {
-		character = scope:county.holder
-		animation = disapproval
-	}
-	lower_right_portrait = scope:top_liege
-	override_background = { reference = burning_building }
+# #	You have the chance to trade peacefully instead of raiding.
+# fp1_trade_events.0002 = {
+# 	type = character_event
+# 	title = fp1_trade_events.0002.t
+# 	desc = fp1_trade_events.0002.desc
+# 	theme = realm
+# 	left_portrait = {
+# 		character = scope:raider
+# 		animation = personality_honorable
+# 	}
+# 	right_portrait = {
+# 		character = scope:county.holder
+# 		animation = disapproval
+# 	}
+# 	lower_right_portrait = scope:top_liege
+# 	override_background = { reference = burning_building }
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-	}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 	}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_trade_events_0002
-			days = 365
-		}
-		# Grab top_liege, if they're a separate character.
-		if = {
-			limit = {
-				NOT = { scope:county.holder = scope:county.holder.top_liege }
-			}
-			scope:county.holder.top_liege = { save_scope_as = top_liege }
-		}
-	}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_trade_events_0002
+# 			days = 365
+# 		}
+# 		# Grab top_liege, if they're a separate character.
+# 		if = {
+# 			limit = {
+# 				NOT = { scope:county.holder = scope:county.holder.top_liege }
+# 			}
+# 			scope:county.holder.top_liege = { save_scope_as = top_liege }
+# 		}
+# 	}
 
-	# Offer trade: local holder.
-	option = {
-		name = fp1_trade_events.0002.a
+# 	# Offer trade: local holder.
+# 	option = {
+# 		name = fp1_trade_events.0002.a
 
-		# Show offer results.
-		show_as_tooltip = {
-			random_list = {
-				# We only want to show the two possibilities, actual percentages don't matter, since the results are decided in the recipient's event.
-				100 = {
-					show_chance = no
-					desc = fp1_trade_events.0002.a.accepted
-					scope:county.holder = { fp1_trade_events_offer_trade_deal_raider_perspective_effect = yes }
-				}
-				100 = {
-					show_chance = no
-					desc = fp1_trade_events.0002.a.rejected
-					custom_tooltip = fp1_trade_events.0002.a.tt
-				}
-			}
-		}
-		# Send the actual offer.
-		scope:county.holder = { trigger_event = fp1_trade_events.0003 }
-		# Charge a little prestige to make it a trade-off.
-		add_prestige = minor_prestige_loss
+# 		# Show offer results.
+# 		show_as_tooltip = {
+# 			random_list = {
+# 				# We only want to show the two possibilities, actual percentages don't matter, since the results are decided in the recipient's event.
+# 				100 = {
+# 					show_chance = no
+# 					desc = fp1_trade_events.0002.a.accepted
+# 					scope:county.holder = { fp1_trade_events_offer_trade_deal_raider_perspective_effect = yes }
+# 				}
+# 				100 = {
+# 					show_chance = no
+# 					desc = fp1_trade_events.0002.a.rejected
+# 					custom_tooltip = fp1_trade_events.0002.a.tt
+# 				}
+# 			}
+# 		}
+# 		# Send the actual offer.
+# 		scope:county.holder = { trigger_event = fp1_trade_events.0003 }
+# 		# Charge a little prestige to make it a trade-off.
+# 		add_prestige = minor_prestige_loss
 
-		stress_impact = {
-			calm = medium_stress_impact_loss
-			compassionate = major_stress_impact_loss
-			wrathful = medium_stress_impact_gain
-			callous = major_stress_impact_gain
-			sadistic = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.5
-				ai_greed = -0.5
-			}
-			opinion_modifier = { opinion_target = scope:county.holder.top_liege }
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = calm
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = compassionate
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = wrathful
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = callous
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = sadistic
-			}
-		}
-	}
+# 		stress_impact = {
+# 			calm = medium_stress_impact_loss
+# 			compassionate = major_stress_impact_loss
+# 			wrathful = medium_stress_impact_gain
+# 			callous = major_stress_impact_gain
+# 			sadistic = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.5
+# 				ai_greed = -0.5
+# 			}
+# 			opinion_modifier = { opinion_target = scope:county.holder.top_liege }
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = calm
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = wrathful
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = callous
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = sadistic
+# 			}
+# 		}
+# 	}
 	
-	# Offer trade: top liege.
-	option = {
-		name = fp1_trade_events.0002.b
-		trigger = {
-			NOT = { scope:county.holder = scope:county.holder.top_liege }
-		}
+# 	# Offer trade: top liege.
+# 	option = {
+# 		name = fp1_trade_events.0002.b
+# 		trigger = {
+# 			NOT = { scope:county.holder = scope:county.holder.top_liege }
+# 		}
 
-		# Show offer results.
-		show_as_tooltip = {
-			random_list = {
-				# We only want to show the two possibilities, actual percentages don't matter, since the results are decided in the recipient's event.
-				100 = {
-					show_chance = no
-					desc = fp1_trade_events.0002.a.accepted
-					scope:county.holder.top_liege = { fp1_trade_events_offer_trade_deal_raider_perspective_effect = yes }
-				}
-				100 = {
-					show_chance = no
-					desc = fp1_trade_events.0002.a.rejected
-					custom_tooltip = fp1_trade_events.0002.a.tt
-				}
-			}
-		}
-		# Send the actual offer.
-		scope:county.holder.top_liege = { trigger_event = fp1_trade_events.0003 }
-		# Charge a little prestige to make it a trade-off.
-		add_prestige = minor_prestige_loss
+# 		# Show offer results.
+# 		show_as_tooltip = {
+# 			random_list = {
+# 				# We only want to show the two possibilities, actual percentages don't matter, since the results are decided in the recipient's event.
+# 				100 = {
+# 					show_chance = no
+# 					desc = fp1_trade_events.0002.a.accepted
+# 					scope:county.holder.top_liege = { fp1_trade_events_offer_trade_deal_raider_perspective_effect = yes }
+# 				}
+# 				100 = {
+# 					show_chance = no
+# 					desc = fp1_trade_events.0002.a.rejected
+# 					custom_tooltip = fp1_trade_events.0002.a.tt
+# 				}
+# 			}
+# 		}
+# 		# Send the actual offer.
+# 		scope:county.holder.top_liege = { trigger_event = fp1_trade_events.0003 }
+# 		# Charge a little prestige to make it a trade-off.
+# 		add_prestige = minor_prestige_loss
 
-		stress_impact = {
-			calm = medium_stress_impact_loss
-			compassionate = major_stress_impact_loss
-			wrathful = medium_stress_impact_gain
-			callous = major_stress_impact_gain
-			sadistic = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.5
-				ai_greed = -0.5
-			}
-			opinion_modifier = { opinion_target = scope:county.holder.top_liege }
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = calm
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = compassionate
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = wrathful
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = callous
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = sadistic
-			}
-		}
-	}
+# 		stress_impact = {
+# 			calm = medium_stress_impact_loss
+# 			compassionate = major_stress_impact_loss
+# 			wrathful = medium_stress_impact_gain
+# 			callous = major_stress_impact_gain
+# 			sadistic = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.5
+# 				ai_greed = -0.5
+# 			}
+# 			opinion_modifier = { opinion_target = scope:county.holder.top_liege }
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = calm
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = wrathful
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = callous
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = sadistic
+# 			}
+# 		}
+# 	}
 	
-	# Pillage it anyway.
-	option = {
-		name = fp1_trade_events.0002.c
+# 	# Pillage it anyway.
+# 	option = {
+# 		name = fp1_trade_events.0002.c
 
-		# Nahhhhh, screw it.
-		custom_tooltip = fp1_trade_events.0002.c.tt
+# 		# Nahhhhh, screw it.
+# 		custom_tooltip = fp1_trade_events.0002.c.tt
 
-		stress_impact = {
-			wrathful = medium_stress_impact_loss
-			callous = major_stress_impact_loss
-			sadistic = major_stress_impact_loss
-			calm = medium_stress_impact_gain
-			compassionate = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 0.5
-				ai_compassion = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = wrathful
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = callous
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = sadistic
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = calm
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = compassionate
-			}
-		}
-	}
+# 		stress_impact = {
+# 			wrathful = medium_stress_impact_loss
+# 			callous = major_stress_impact_loss
+# 			sadistic = major_stress_impact_loss
+# 			calm = medium_stress_impact_gain
+# 			compassionate = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 0.5
+# 				ai_compassion = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = wrathful
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = callous
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = calm
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = compassionate
+# 			}
+# 		}
+# 	}
 	
-	# Pillage & don't poke me about this again.
-	option = {
-		name = fp1_trade_events.0002.d
-		# AI don't need an opt-out.
-		trigger = { is_ai = no }
+# 	# Pillage & don't poke me about this again.
+# 	option = {
+# 		name = fp1_trade_events.0002.d
+# 		# AI don't need an opt-out.
+# 		trigger = { is_ai = no }
 
-		# Furthermore, screw it for a very long time.
-		custom_tooltip = fp1_trade_events.0002.d.tt
-		add_character_flag = { flag = had_event_fp1_trade_events_0002 }
+# 		# Furthermore, screw it for a very long time.
+# 		custom_tooltip = fp1_trade_events.0002.d.tt
+# 		add_character_flag = { flag = had_event_fp1_trade_events_0002 }
 
-		stress_impact = {
-			wrathful = medium_stress_impact_loss
-			callous = major_stress_impact_loss
-			sadistic = major_stress_impact_loss
-			calm = medium_stress_impact_gain
-			compassionate = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 0.5
-				ai_compassion = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = wrathful
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = callous
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = sadistic
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = calm
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = compassionate
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			wrathful = medium_stress_impact_loss
+# 			callous = major_stress_impact_loss
+# 			sadistic = major_stress_impact_loss
+# 			calm = medium_stress_impact_gain
+# 			compassionate = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 0.5
+# 				ai_compassion = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = wrathful
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = callous
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = calm
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = compassionate
+# 			}
+# 		}
+# 	}
+# }
 
-scripted_effect fp1_set_prime_trade_partner_effect = {
-	# Store the variable for general tracking.
-	set_variable = {
-		name = fp1_prime_trade_deal
-		value = scope:recipient
-		days = fp1_trade_events_truce_length_value
-	}
-	# Fire off the renewal event from the date of expiry.
-	trigger_event = {
-		id = fp1_trade_events.0011
-		days = fp1_trade_events_truce_renewal_date_value
-	}
-	# Trigger the on_action.
-	if = {
-		limit = {
-			NOT = { has_character_flag = fp1_trade_events_cycle_start }
-		}
-		add_character_flag = fp1_trade_events_cycle_start
-		trigger_event = { on_action = fp1_trade_events_cycle }
-	}
-}
+# scripted_effect fp1_set_prime_trade_partner_effect = {
+# 	# Store the variable for general tracking.
+# 	set_variable = {
+# 		name = fp1_prime_trade_deal
+# 		value = scope:recipient
+# 		days = fp1_trade_events_truce_length_value
+# 	}
+# 	# Fire off the renewal event from the date of expiry.
+# 	trigger_event = {
+# 		id = fp1_trade_events.0011
+# 		days = fp1_trade_events_truce_renewal_date_value
+# 	}
+# 	# Trigger the on_action.
+# 	if = {
+# 		limit = {
+# 			NOT = { has_character_flag = fp1_trade_events_cycle_start }
+# 		}
+# 		add_character_flag = fp1_trade_events_cycle_start
+# 		trigger_event = { on_action = fp1_trade_events_cycle }
+# 	}
+# }
 
-#	A raider in your lands would prefer commerce to pillage.
-fp1_trade_events.0003 = {
-	type = character_event
-	title = fp1_trade_events.0003.t
-	desc = fp1_trade_events.0003.desc
-	theme = realm
-	left_portrait = {
-		character = scope:raider
-		animation = personality_bold
-	}
-	right_portrait = {
-		character = scope:recipient
-		animation = disapproval
-	}
-	override_background = { reference = burning_building }
+# #	A raider in your lands would prefer commerce to pillage.
+# fp1_trade_events.0003 = {
+# 	type = character_event
+# 	title = fp1_trade_events.0003.t
+# 	desc = fp1_trade_events.0003.desc
+# 	theme = realm
+# 	left_portrait = {
+# 		character = scope:raider
+# 		animation = personality_bold
+# 	}
+# 	right_portrait = {
+# 		character = scope:recipient
+# 		animation = disapproval
+# 	}
+# 	override_background = { reference = burning_building }
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-	}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 	}
 
-	immediate = {
-		# Grab a scope:recipient for the portraits, since this may have gone to two different characters.
-		save_scope_as = recipient
-	}
+# 	immediate = {
+# 		# Grab a scope:recipient for the portraits, since this may have gone to two different characters.
+# 		save_scope_as = recipient
+# 	}
 
-	# Unexpected, but highly welcome.
-	option = {
-		name = fp1_trade_events.0003.a
+# 	# Unexpected, but highly welcome.
+# 	option = {
+# 		name = fp1_trade_events.0003.a
 
-		# Apply effects & inform scope:raider.
-		hidden_effect = {
-			scope:raider = {
-				send_interface_toast = {	
-					title = fp1_trade_events.0003.a.tt_success
-					left_icon = scope:recipient
-					scope:recipient = { fp1_trade_events_offer_trade_deal_raider_perspective_effect = yes }
-				}
-				# Quietly work out if this would become their pre-eminent trade deal.
-				## Due to no existing prime trade deal.
-				if = {
-					limit = {
-						NOT = { has_variable = fp1_prime_trade_deal }
-					}
-					fp1_set_prime_trade_partner_effect = yes
-				}
-				## Due to a dead/landless prime trade deal or cancelled truces.
-				else_if = {
-					limit = {
-						has_variable = fp1_prime_trade_deal
-						var:fp1_prime_trade_deal = {
-							OR = {
-								is_alive = no
-								is_landed = no
-								NOR = {
-									has_truce = scope:raider
-									scope:raider = { has_truce = var:fp1_prime_trade_deal }
-								}
-							}
-						}
-					}
-					fp1_set_prime_trade_partner_effect = yes
-				}
-				## Due to scope:recipient being of a higher tier than their current one.
-				else_if = {
-					limit = {
-						has_variable = fp1_prime_trade_deal
-						scope:recipient.primary_title.tier > var:fp1_prime_trade_deal.primary_title.tier 
-					}
-					fp1_set_prime_trade_partner_effect = yes
-				}
-			}
-		}
-		fp1_trade_events_offer_trade_deal_defender_perspective_effect = yes
+# 		# Apply effects & inform scope:raider.
+# 		hidden_effect = {
+# 			scope:raider = {
+# 				send_interface_toast = {	
+# 					title = fp1_trade_events.0003.a.tt_success
+# 					left_icon = scope:recipient
+# 					scope:recipient = { fp1_trade_events_offer_trade_deal_raider_perspective_effect = yes }
+# 				}
+# 				# Quietly work out if this would become their pre-eminent trade deal.
+# 				## Due to no existing prime trade deal.
+# 				if = {
+# 					limit = {
+# 						NOT = { has_variable = fp1_prime_trade_deal }
+# 					}
+# 					fp1_set_prime_trade_partner_effect = yes
+# 				}
+# 				## Due to a dead/landless prime trade deal or cancelled truces.
+# 				else_if = {
+# 					limit = {
+# 						has_variable = fp1_prime_trade_deal
+# 						var:fp1_prime_trade_deal = {
+# 							OR = {
+# 								is_alive = no
+# 								is_landed = no
+# 								NOR = {
+# 									has_truce = scope:raider
+# 									scope:raider = { has_truce = var:fp1_prime_trade_deal }
+# 								}
+# 							}
+# 						}
+# 					}
+# 					fp1_set_prime_trade_partner_effect = yes
+# 				}
+# 				## Due to scope:recipient being of a higher tier than their current one.
+# 				else_if = {
+# 					limit = {
+# 						has_variable = fp1_prime_trade_deal
+# 						scope:recipient.primary_title.tier > var:fp1_prime_trade_deal.primary_title.tier 
+# 					}
+# 					fp1_set_prime_trade_partner_effect = yes
+# 				}
+# 			}
+# 		}
+# 		fp1_trade_events_offer_trade_deal_defender_perspective_effect = yes
 
-		stress_impact = {
-			compassionate = medium_stress_impact_loss
-			forgiving = major_stress_impact_loss
-			callous = medium_stress_impact_gain
-			sadistic = major_stress_impact_gain
-			vengeful = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = compassionate
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = forgiving
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = callous
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = sadistic
-			}
-			modifier = {	# Weight down for stress.
-				add = -40
-				has_trait = vengeful
-			}
-		}
-	}
+# 		stress_impact = {
+# 			compassionate = medium_stress_impact_loss
+# 			forgiving = major_stress_impact_loss
+# 			callous = medium_stress_impact_gain
+# 			sadistic = major_stress_impact_gain
+# 			vengeful = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = forgiving
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = callous
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -40
+# 				has_trait = vengeful
+# 			}
+# 		}
+# 	}
 	
-	# *Trade*? With these murderers?!
-	option = {
-		name = fp1_trade_events.0003.b
+# 	# *Trade*? With these murderers?!
+# 	option = {
+# 		name = fp1_trade_events.0003.b
 
-		# Gain some prestige for turning down these marauders.
-		add_prestige = minor_prestige_gain
-		# Inform scope:raider that negotiations have failed.
-		hidden_effect = {
-			scope:raider = {
-				send_interface_toast = {	
-					title = fp1_trade_events.0003.b.tt_failure
-					left_icon = scope:recipient
-					custom_tooltip = fp1_trade_events.0003.b.tt_failure
-				}
-			}
-		}
+# 		# Gain some prestige for turning down these marauders.
+# 		add_prestige = minor_prestige_gain
+# 		# Inform scope:raider that negotiations have failed.
+# 		hidden_effect = {
+# 			scope:raider = {
+# 				send_interface_toast = {	
+# 					title = fp1_trade_events.0003.b.tt_failure
+# 					left_icon = scope:recipient
+# 					custom_tooltip = fp1_trade_events.0003.b.tt_failure
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			compassionate = medium_stress_impact_gain
-			forgiving = major_stress_impact_gain
-			callous = medium_stress_impact_loss
-			sadistic = major_stress_impact_loss
-			vengeful = major_stress_impact_loss
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = callous
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = sadistic
-			}
-			modifier = {	# Weight up for stress.
-				add = 40
-				has_trait = vengeful
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = compassionate
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = forgiving
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			compassionate = medium_stress_impact_gain
+# 			forgiving = major_stress_impact_gain
+# 			callous = medium_stress_impact_loss
+# 			sadistic = major_stress_impact_loss
+# 			vengeful = major_stress_impact_loss
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = callous
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = sadistic
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 40
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = compassionate
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = forgiving
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 #  Comfortable Accomodation

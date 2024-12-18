@@ -18752,16 +18752,24 @@ hold_court.8110 = {
 
 scripted_trigger hold_court_8120_syncretic_faith_trigger = {
 	NOT = { scope:peasant.religion = root.religion }
-	#L5R Disabled
-	# OR = {
+	#L5R Modified
+	OR = {
+		AND = { # Rokugan
+			scope:peasant.faith.religion = { is_in_family = rf_rokugan }
+			faith = { has_doctrine = tenet_rokugani_syncretism }
+		}
+		AND = { #  Shadowlands
+			scope:peasant.faith.religion = { is_in_family = rf_shadowlands }
+			faith = { has_doctrine = tenet_shadowlands_syncretism }
+		}
 	# 	AND = { # Eastern
 	# 		scope:peasant.faith.religion = { is_in_family = rf_eastern }
 	# 		faith = { has_doctrine = tenet_eastern_syncretism }
 	# 	}
-		AND = { # Pagan
-			scope:peasant.faith = { has_doctrine_parameter = unreformed }
-			faith = { has_doctrine = tenet_unreformed_syncretism }
-		}
+		# AND = { # Pagan
+		# 	scope:peasant.faith = { has_doctrine_parameter = unreformed }
+		# 	faith = { has_doctrine = tenet_unreformed_syncretism }
+		# }
 	# 	AND = { # Christian
 	# 		scope:peasant.religion = religion:christianity_religion
 	# 		faith = { has_doctrine = tenet_christian_syncretism }
@@ -18774,7 +18782,7 @@ scripted_trigger hold_court_8120_syncretic_faith_trigger = {
 	# 		scope:peasant.religion = religion:judaism_religion
 	# 		faith = { has_doctrine = tenet_jewish_syncretism }
 	# 	}
-	# }
+	}
 }
 
 scripted_effect hold_court_8120_stop_effect = {
