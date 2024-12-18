@@ -2441,21 +2441,22 @@ trait_specific_ongoing.3005 = {
 			modifier = exhausted_modifier
 			years = 5
 		}
-		if = { #In Christianity it was a widespread belief that depression was caused by evil spirits, demons, or other evils, and they therefor (among many harsher remedies) thought that prayer helped
-			limit = {
-				faith = { religion_tag = christianity_religion }
-			}
-			trigger_event = {
-				id = trait_specific_ongoing.3006
-				days = { 7 14 }
-			}
-		}
-		else = {
+		#L5R Disabled
+		# if = { #In Christianity it was a widespread belief that depression was caused by evil spirits, demons, or other evils, and they therefor (among many harsher remedies) thought that prayer helped
+		# 	limit = {
+		# 		faith = { religion_tag = christianity_religion }
+		# 	}
+		# 	trigger_event = {
+		# 		id = trait_specific_ongoing.3006
+		# 		days = { 7 14 }
+		# 	}
+		# }
+		# else = {
 			trigger_event = {
 				id = trait_specific_ongoing.3007
 				days = { 7 14 }
 			}
-		}
+		# }
 	}
 
 	option = { #Nah, I'll go back to bed
