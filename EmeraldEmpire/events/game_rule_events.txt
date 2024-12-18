@@ -1020,34 +1020,34 @@ game_rule.4 = { # Empire Obscurity Game Rule
 # 		}
 # 	}
 # }
-
+#L5R Disabled
 #	Launder our battle registration so that we don't call the first battle of X "the Second Battle of X".
-game_rule.1022 = {
-	hidden = yes
+# game_rule.1022 = {
+# 	hidden = yes
 
-	immediate = {
-		set_global_variable = {
-			name = conquest_first_battle
-			value = scope:new_location
-		}
-	}
-}
+# 	immediate = {
+# 		set_global_variable = {
+# 			name = conquest_first_battle
+# 			value = scope:new_location
+# 		}
+# 	}
+# }
 
-scripted_trigger game_rule_1031_valid_participants_trigger = {
-	scope:char_1 = {
-		any_character_war = {
-			using_cb = $CB$
-			OR = {
-				primary_defender = scope:char_1
-				primary_defender = scope:char_2
-			}
-			OR = {
-				primary_attacker = scope:char_1
-				primary_attacker = scope:char_2
-			}
-		}
-	}
-}
+# scripted_trigger game_rule_1031_valid_participants_trigger = {
+# 	scope:char_1 = {
+# 		any_character_war = {
+# 			using_cb = $CB$
+# 			OR = {
+# 				primary_defender = scope:char_1
+# 				primary_defender = scope:char_2
+# 			}
+# 			OR = {
+# 				primary_attacker = scope:char_1
+# 				primary_attacker = scope:char_2
+# 			}
+# 		}
+# 	}
+# }
 
 #L5R Disabled
 # Harold beats Harald.

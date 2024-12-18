@@ -2392,8 +2392,9 @@ save_type_specific_successor_culture_effect = {
 						has_cultural_pillar = ethos_communal
 						has_cultural_tradition = tradition_stalwart_defenders
                         has_cultural_tradition = tradition_stand_and_fight
-                        has_cultural_tradition = tradition_druzhina
-                        has_cultural_tradition = tradition_hird
+						#L5R Disabled
+                        # has_cultural_tradition = tradition_druzhina
+                        # has_cultural_tradition = tradition_hird
                         has_cultural_tradition = tradition_fp1_coastal_warriors
 					}
 					NOT = {
@@ -2620,8 +2621,8 @@ save_type_specific_successor_culture_effect = {
 					OR = {
 						has_innovation = innovation_quilted_armor
 						has_cultural_tradition = tradition_fp1_coastal_warriors
-						has_cultural_tradition = tradition_hird
 						#L5R Disabled
+						# has_cultural_tradition = tradition_hird
 						# has_cultural_tradition = tradition_futuwaa
 						# has_cultural_tradition = tradition_druzhina
 						#L5R Disabled
@@ -2659,7 +2660,8 @@ save_type_specific_successor_culture_effect = {
 						has_innovation = innovation_arched_saddle
 						has_cultural_tradition = tradition_caucasian_wolves
 						has_cultural_tradition = tradition_roman_legacy
-						has_innovation = innovation_valets
+						#L5R Disabled
+						# has_innovation = innovation_valets
 						has_cultural_tradition = tradition_ep3_audacious_cadets
 						has_cultural_tradition = tradition_ep3_imperial_tagmata
 					}
@@ -2712,37 +2714,36 @@ save_type_specific_successor_culture_effect = {
 					# 	has_cultural_tradition = tradition_swords_for_hire
 					# }
 				}
+				#L5R Disabled
 				# Camel Rider
-				AND = {
-					scope:accolade_in_need = {
-						primary_type = {
-							this = accolade_type:camelry_attribute
-						}
-					}
-					has_innovation = innovation_war_camels
-					#L5R Disabled
-					# OR = {
-					# 	has_cultural_pillar = heritage_arabic
-					# 	has_cultural_pillar = heritage_berber
-					# 	has_cultural_tradition = tradition_desert_nomads
-					# 	has_cultural_tradition = tradition_warriors_of_the_dry
-					# }
-				}
-				# Elephant Rider
-				AND = {
-					scope:accolade_in_need = {
-						primary_type = {
-							this = accolade_type:elephantry_attribute
-						}
-					}
-					has_innovation = innovation_elephantry
-					#L5R Disabled
-					# OR = {
-					# 	has_cultural_pillar = heritage_dravidian
-					# 	has_cultural_pillar = heritage_indo_aryan
-					# 	has_cultural_pillar = heritage_burman
-					# }
-				}
+				# AND = {
+				# 	scope:accolade_in_need = {
+				# 		primary_type = {
+				# 			this = accolade_type:camelry_attribute
+				# 		}
+				# 	}
+				# 	has_innovation = innovation_war_camels
+				# 	# OR = {
+				# 	# 	has_cultural_pillar = heritage_arabic
+				# 	# 	has_cultural_pillar = heritage_berber
+				# 	# 	has_cultural_tradition = tradition_desert_nomads
+				# 	# 	has_cultural_tradition = tradition_warriors_of_the_dry
+				# 	# }
+				# }
+				# # Elephant Rider
+				# AND = {
+				# 	scope:accolade_in_need = {
+				# 		primary_type = {
+				# 			this = accolade_type:elephantry_attribute
+				# 		}
+				# 	}
+				# 	has_innovation = innovation_elephantry
+				# 	# OR = {
+				# 	# 	has_cultural_pillar = heritage_dravidian
+				# 	# 	has_cultural_pillar = heritage_indo_aryan
+				# 	# 	has_cultural_pillar = heritage_burman
+				# 	# }
+				# }
 				# Horse Archer
 				AND = {
 					scope:accolade_in_need = {
@@ -3791,7 +3792,8 @@ accolade_character_creation_effect = {
 								has_cultural_tradition = tradition_ep3_audacious_cadets
 								has_cultural_tradition = tradition_roman_legacy
 								has_cultural_tradition = tradition_ep3_imperial_tagmata
-								has_innovation = innovation_valets
+								#L5R Disabled
+								# has_innovation = innovation_valets
 							}
 						}
 					}
@@ -3875,7 +3877,8 @@ accolade_character_creation_effect = {
 						OR = {
 							root.location.culture = {
 								has_innovation = innovation_advanced_bowmaking
-								has_innovation = innovation_repeating_crossbow
+								#L5R Disabled
+								# has_innovation = innovation_repeating_crossbow
 							}
 						}
 					}
@@ -3886,7 +3889,8 @@ accolade_character_creation_effect = {
 						scope:knight_culture = {
 							OR = {
 								has_innovation = innovation_advanced_bowmaking
-								has_innovation = innovation_repeating_crossbow
+								#L5R Disabled
+								# has_innovation = innovation_repeating_crossbow
 							}
 						}
 					}
@@ -3918,91 +3922,91 @@ accolade_character_creation_effect = {
 			save_scope_as = chosen_knight
 		}
 	}
+	#L5R Disabled
 	#Camel Rider
-	else_if = {
-		limit = {
-			scope:accolade_in_need = {
-				primary_type = {
-					this = accolade_type:camelry_attribute
-				}
-			}
-		}
-		create_character = {
-			location = root.capital_province
-			template = accolade_camelry_character
-			faith = root.faith
-			random_culture = {
-				root.culture = {
-					trigger = { always = yes }
-				}
-				root.location.culture = {
-					trigger = {
-						exists = root.location.culture
-						root.location.culture = { has_innovation = innovation_war_camels }
-					}
-				}
-				scope:knight_culture = {
-					trigger = {
-						exists = scope:knight_culture
-						scope:knight_culture = { has_innovation = innovation_war_camels }
-					}
-				}
-				#L5R Disabled
-				# scope:turkic_culture = {
-				# 	trigger = {
-				# 		exists = scope:turkic_culture
-				# 		scope:turkic_culture = { has_innovation = innovation_war_camels }
-				# 	}
-				# }
-				scope:type_specific_culture = {
-					trigger = {
-						exists = scope:type_specific_culture
-						scope:type_specific_culture = { has_innovation = innovation_war_camels }
-					}
-				}
-			}
-			save_scope_as = chosen_knight
-		}
-	}
-	#Elephant Rider
-	else_if = {
-		limit = {
-			scope:accolade_in_need = {
-				primary_type = {
-					this = accolade_type:elephantry_attribute
-				}
-			}
-		}
-		create_character = {
-			location = root.capital_province
-			template = accolade_elephantry_character
-			faith = root.faith
-			random_culture = {
-				root.culture = {
-					trigger = { always = yes }
-				}
-				root.location.culture = {
-					trigger = {
-						exists = root.location.culture
-						root.location.culture = { has_innovation = innovation_elephantry }
-					}
-				}
-				scope:knight_culture = {
-					trigger = {
-						exists = scope:knight_culture
-						scope:knight_culture = { has_innovation = innovation_elephantry }
-					}
-				}
-				scope:type_specific_culture = {
-					trigger = {
-						exists = scope:type_specific_culture
-						scope:type_specific_culture = { has_innovation = innovation_elephantry }
-					}
-				}
-			}
-			save_scope_as = chosen_knight
-		}
-	}
+	# else_if = {
+	# 	limit = {
+	# 		scope:accolade_in_need = {
+	# 			primary_type = {
+	# 				this = accolade_type:camelry_attribute
+	# 			}
+	# 		}
+	# 	}
+	# 	create_character = {
+	# 		location = root.capital_province
+	# 		template = accolade_camelry_character
+	# 		faith = root.faith
+	# 		random_culture = {
+	# 			root.culture = {
+	# 				trigger = { always = yes }
+	# 			}
+	# 			root.location.culture = {
+	# 				trigger = {
+	# 					exists = root.location.culture
+	# 					root.location.culture = { has_innovation = innovation_war_camels }
+	# 				}
+	# 			}
+	# 			scope:knight_culture = {
+	# 				trigger = {
+	# 					exists = scope:knight_culture
+	# 					scope:knight_culture = { has_innovation = innovation_war_camels }
+	# 				}
+	# 			}
+	# 			scope:turkic_culture = {
+	# 				trigger = {
+	# 					exists = scope:turkic_culture
+	# 					scope:turkic_culture = { has_innovation = innovation_war_camels }
+	# 				}
+	# 			}
+	# 			scope:type_specific_culture = {
+	# 				trigger = {
+	# 					exists = scope:type_specific_culture
+	# 					scope:type_specific_culture = { has_innovation = innovation_war_camels }
+	# 				}
+	# 			}
+	# 		}
+	# 		save_scope_as = chosen_knight
+	# 	}
+	# }
+	# #Elephant Rider
+	# else_if = {
+	# 	limit = {
+	# 		scope:accolade_in_need = {
+	# 			primary_type = {
+	# 				this = accolade_type:elephantry_attribute
+	# 			}
+	# 		}
+	# 	}
+	# 	create_character = {
+	# 		location = root.capital_province
+	# 		template = accolade_elephantry_character
+	# 		faith = root.faith
+	# 		random_culture = {
+	# 			root.culture = {
+	# 				trigger = { always = yes }
+	# 			}
+	# 			root.location.culture = {
+	# 				trigger = {
+	# 					exists = root.location.culture
+	# 					root.location.culture = { has_innovation = innovation_elephantry }
+	# 				}
+	# 			}
+	# 			scope:knight_culture = {
+	# 				trigger = {
+	# 					exists = scope:knight_culture
+	# 					scope:knight_culture = { has_innovation = innovation_elephantry }
+	# 				}
+	# 			}
+	# 			scope:type_specific_culture = {
+	# 				trigger = {
+	# 					exists = scope:type_specific_culture
+	# 					scope:type_specific_culture = { has_innovation = innovation_elephantry }
+	# 				}
+	# 			}
+	# 		}
+	# 		save_scope_as = chosen_knight
+	# 	}
+	# }
 	#Horse Archer
 	else_if = {
 		limit = {

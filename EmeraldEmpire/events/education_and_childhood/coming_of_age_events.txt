@@ -534,7 +534,8 @@ coming_of_age.0001 = {
 				}
 			}
 		}
-		dynasty_perk_secondary_education_trait_effect = yes
+		#L5R Disabled
+		# dynasty_perk_secondary_education_trait_effect = yes
 		post_education_bonuses_effect = yes
 		save_childhood_trait_as_variable_effect = yes
 		education_complete_notification_effect = yes
@@ -983,7 +984,8 @@ coming_of_age.0002 = {
 				}
 			}
 		}
-		dynasty_perk_secondary_education_trait_effect = yes
+		#L5R Disabled
+		# dynasty_perk_secondary_education_trait_effect = yes
 		post_education_bonuses_effect = yes
 		save_childhood_trait_as_variable_effect = yes
 		education_complete_notification_effect = yes
@@ -1649,7 +1651,8 @@ coming_of_age.0003 = {
 				}
 			}
 		}
-		dynasty_perk_secondary_education_trait_effect = yes
+		#L5R Disabled
+		# dynasty_perk_secondary_education_trait_effect = yes
 		post_education_bonuses_effect = yes
 		save_childhood_trait_as_variable_effect = yes
 		education_complete_notification_effect = yes
@@ -2097,7 +2100,8 @@ coming_of_age.0004 = {
 				}
 			}
 		}
-		dynasty_perk_secondary_education_trait_effect = yes
+		#L5R Disabled
+		# dynasty_perk_secondary_education_trait_effect = yes
 		post_education_bonuses_effect = yes
 		save_childhood_trait_as_variable_effect = yes
 		education_complete_notification_effect = yes
@@ -2544,7 +2548,8 @@ coming_of_age.0005 = {
 				}
 			}
 		}
-		dynasty_perk_secondary_education_trait_effect = yes
+		#L5R Disabled
+		# dynasty_perk_secondary_education_trait_effect = yes
 		post_education_bonuses_effect = yes
 		save_childhood_trait_as_variable_effect = yes
 		education_complete_notification_effect = yes
