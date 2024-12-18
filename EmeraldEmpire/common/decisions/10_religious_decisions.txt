@@ -340,7 +340,6 @@ take_vow_of_poverty_decision = {
 		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 
-	decision_group_type = l5r_religious
 
 	desc = take_vow_of_poverty_decision_desc
 	selection_tooltip = take_vow_of_poverty_decision_tooltip
@@ -519,8 +518,6 @@ seek_aid_of_the_spirits_decision = {
 	picture = {
 		reference =  "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
-
-	decision_group_type = l5r_religious
 
 	desc = seek_aid_of_the_spirits_decision_desc
 	selection_tooltip = seek_aid_of_the_spirits_decision_tooltip
@@ -713,7 +710,6 @@ meditate_in_seclusion_decision = {
 	picture = {
 		reference =  "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
-	decision_group_type = l5r_religious
 
 	desc = meditate_in_seclusion_decision_desc
 	selection_tooltip = meditate_in_seclusion_decision_tooltip
@@ -846,7 +842,6 @@ raise_runestone_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
-	decision_group_type = l5r_religious
 
 	desc = raise_runestone_decision_desc
 	selection_tooltip = raise_runestone_decision_tooltip
@@ -951,7 +946,6 @@ divine_the_stars_decision = {
 		reference =  "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
 
-	decision_group_type = l5r_religious
 
 	desc = divine_the_stars_decision_desc
 	selection_tooltip = divine_the_stars_decision_tooltip
@@ -1001,7 +995,6 @@ revoke_false_conversion_decision = {	#Reveal yourself as a crypto-religionist.
 		reference =  "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
 	}
 
-	decision_group_type = l5r_religious
 
 	desc = revoke_false_conversion_decision.desc
 	selection_tooltip = revoke_false_conversion_decision.tt
@@ -1087,7 +1080,6 @@ encourage_confession_of_false_conversions_decision = {	# Ask that crypto-religio
 		reference =  "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
 	}
 
-	decision_group_type = l5r_religious
 
 	ai_check_interval = 120
 
@@ -1203,7 +1195,6 @@ abandon_crypto_faith_decision = {	#Abandon your secret faith.
 		reference =  "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
 	}
 
-	decision_group_type = l5r_religious
 
 	ai_check_interval = 60
 

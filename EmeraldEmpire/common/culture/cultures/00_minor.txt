@@ -1,5 +1,8 @@
 ﻿kitsune = {
 	color = { 0.97 0.51 0.47 } # The color of the culture, used e.g. on the map
+
+	created = 90.1.1
+	parents = { shinjo }
 	
 	ethos = ethos_spiritual
 	heritage = heritage_kitsune
@@ -26,6 +29,9 @@
 
 moshi = {
 	color = { 1.0 0.87 0.0 } # The color of the culture, used e.g. on the map
+
+	created = 347.1.1
+	parents = { isawa }
 	
 	ethos = ethos_spiritual
 	heritage = heritage_moshi
@@ -52,6 +58,9 @@ moshi = {
 
 kasuga = {
 	color = { 0.68 1.0 0.18 } # The color of the culture, used e.g. on the map
+
+	created = 420.1.1
+	parents = { agasha }
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_kasuga
@@ -75,6 +84,9 @@ kasuga = {
 
 tonbo = {
 	color = { 0.5 1.0 0.0 } # The color of the culture, used e.g. on the map
+
+	created = 704.1.1
+	parents = { mirumoto isawa }
 	
 	ethos = ethos_communal
 	heritage = heritage_tonbo
@@ -101,6 +113,8 @@ tonbo = {
 
 toritaka = {
 	color = { 0.55 0.57 0.67 } # The color of the culture, used e.g. on the map
+
+	# Founded in 834, by ronin
 	
 	ethos = ethos_spiritual
 	heritage = heritage_toritaka
@@ -126,6 +140,8 @@ toritaka = {
 
 usagi = {
 	color = { 0.72 0.45 0.2 } # The color of the culture, used e.g. on the map
+
+	#Founded in 750 by ronin
 	
 	ethos = ethos_bellicose
 	heritage = heritage_usagi
@@ -153,6 +169,10 @@ usagi = {
 yoritomo = {
 	color = { 0.01 0.75 0.24 } # The color of the culture, used e.g. on the map
 	
+
+	created = 80.1.1
+	parents = { hida }
+
 	ethos = ethos_bellicose
 	heritage = heritage_yoritomo
 	language = language_island_rokugani
@@ -178,6 +198,9 @@ yoritomo = {
 
 tsuruchi = {
 	color = { 1.00 1.0 0.0 } # The color of the culture, used e.g. on the map
+
+	created = 1109.1.1
+	parents = { bayushi akodo }
 	
 	ethos = ethos_bellicose
 	heritage = heritage_tsuruchi
@@ -203,6 +226,9 @@ tsuruchi = {
 
 suzume = {
 	color = { 0.38 0.51 0.71 } # The color of the culture, used e.g. on the map
+
+	created = 400.1.1
+	parents = { doji }
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_suzume
@@ -229,6 +255,9 @@ suzume = {
 ichiro = {
 	color = { 0.47 0.53 0.55 } # The color of the culture, used e.g. on the map
 	
+	created = 110.1.1
+	parents = { hida }
+
 	ethos = ethos_stoic
 	heritage = heritage_ichiro
 	language = language_northern_rokugani
@@ -278,6 +307,9 @@ nekoma = {
 
 komori = {
 	color = { 0.4 1.0 0.0 } # The color of the culture, used e.g. on the map
+
+	created = 1132.1.1
+	parents = { yoritomo }
 	
 	ethos = ethos_spiritual
 	heritage = heritage_komori
@@ -303,6 +335,8 @@ komori = {
 
 shika = {
 	color = { 0.71 0.65 0.26 } # The color of the culture, used e.g. on the map
+
+	#Mysteriously founded in 618
 	
 	ethos = ethos_spiritual
 	heritage = heritage_shika
@@ -352,6 +386,9 @@ kaikoga = {
 
 chuda = { # Defunct culture
 	color = { 0.33 0.42 0.18 } # The color of the culture, used e.g. on the map
+
+	created = 339.1.1
+	parents = { isawa }
 	
 	ethos = ethos_spiritual
 	heritage = heritage_chuda

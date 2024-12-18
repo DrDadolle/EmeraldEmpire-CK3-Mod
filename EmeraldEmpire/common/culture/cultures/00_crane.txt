@@ -26,6 +26,8 @@
 
 kakita = {
 	color = { 0.0 0.8 1.0 } # The color of the culture, used e.g. on the map
+
+	created = 10.1.1
 	parents = { doji }
 
 	ethos = ethos_courtly
@@ -54,6 +56,7 @@ kakita = {
 
 daidoji = {
 	color = { 0.0 1.0 0.8 } # The color of the culture, used e.g. on the map
+
 	created = 45.1.1
 	parents = { doji }
 
@@ -82,6 +85,8 @@ daidoji = {
 
 asahina = {
 	color = { 0.0 0.8 0.8 } # The color of the culture, used e.g. on the map
+
+	created = 400.1.1
 	parents = { doji }
 
 	ethos = ethos_spiritual

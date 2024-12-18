@@ -104,6 +104,9 @@ iuchi = {
 
 moto = {
 	color = { 0.44 0.16 0.39 } # The color of the culture, used e.g. on the map
+
+	created = 200.1.1
+	parents = { ujik shinjo }
 	
 	ethos = ethos_bellicose
 	heritage = heritage_unicorn

@@ -187,12 +187,12 @@
  # Scare someone
  l5r_pray_spirit.0004.t:0 "Air Kami - Scare Someone"
  l5r_pray_spirit.0005.afraid:0 "Enjoy years of torment [enemy.GetFirstNameNoTooltip] !"
- l5r_pray_spirit.0005.afraid.desc:0 "I have heard that [enemy.GetFirstNameNoTooltip] is constantly followed by scary gusts of wind, surprising [enemy.getHerHim] everytime. [enemy.getHerHim|U] servants tries to seal every doors and windows of [enemy.getHerHim] domain, in vain. Everyone around think that [enemy.GetSheHe] cursed."
+ l5r_pray_spirit.0005.afraid.desc:0 "I have heard that [enemy.GetFirstNameNoTooltip] is constantly followed by scary gusts of wind, surprising [enemy.GetHerHim] everytime. [enemy.GetHerHim|U] servants tries to seal every doors and windows of [enemy.GetHerHim] domain, in vain. Everyone around think that [enemy.GetSheHe] cursed."
  l5r_pray_spirit.0005.scared_to_death:0 "What a funny prank !"
  l5r_pray_spirit.0005.scared_to_death.desc:0 "I was drinking tea at my garden this morning when a servant came running to deliver me a message. [enemy.GetFirstNameNoTooltip] died after a very scary tempest broke all [enemy.getHerHis] precious vases all at once. It was enough to provoke an heart attack."
  l5r_pray_spirit.0005.laugh:0 "That is the opposite of what was supposed to happen."
- l5r_pray_spirit.0005.laugh.desc:0 "After a few days, I have heard nothing but praises about [enemy.GetFirstNameNoTooltip]. People are saying that a benevolant air spirit has taken a liking into [enemy.getHerHim]. Kind gusts of wind playing gentle pranks to [enemy.getHerHis] servants."
- l5r_pray_spirit.0005.you_afraid:0 "You should have cursed [enemy.GetFirstNameNoTooltip] instead."
+ l5r_pray_spirit.0005.laugh.desc:0 "After a few days, I have heard nothing but praises about [enemy.GetFirstNameNoTooltip]. People are saying that a benevolant air spirit has taken a liking into [enemy.GetHerHim]. Kind gusts of wind playing gentle pranks to [enemy.getHerHis] servants."
+ l5r_pray_spirit.0005.you_afraid:0 "You should have cursed [enemy.GetFirstNameNoTooltip|U] instead."
  l5r_pray_spirit.0005.you_afraid.desc:0 "Ever since the night of the ritual, I could barely sleep. Incessant gust of wind hits my windows. Every time I lighten a lantern, it gets snuffed out."
 
  l5r_notification.0001.t:0 "Vase and Heart break"
