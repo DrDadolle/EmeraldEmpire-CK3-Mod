@@ -5252,7 +5252,8 @@ create_artifact_book_effect = {
 						OR = {
 							scope:topic = flag:religious
 							scope:topic = flag:prayers
-							scope:topic = flag:golden_legend
+							#L5R Disabled
+							# scope:topic = flag:golden_legend
 							scope:topic = flag:hours
 						}
 					}
@@ -5262,7 +5263,8 @@ create_artifact_book_effect = {
 							has_artifact_feature = book_topic_learning_religious_big
 							has_artifact_feature = book_topic_learning_prayers
 							has_artifact_feature = book_topic_learning_hours
-							has_artifact_feature = book_topic_learning_golden_legend
+							#L5R Disabled
+							# has_artifact_feature = book_topic_learning_golden_legend
 							has_artifact_feature = book_topic_learning_theological_treaties
 						}
 					}

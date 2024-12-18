@@ -470,7 +470,7 @@ set_up_regional_mythical_creature_effect = {
 			50 = {
 				set_variable = {
 					name = regional_mythical_creature_trinket
-					value = flag:ningyo
+					value = flag:mermaid
 				}
 			}
 		}
@@ -512,7 +512,7 @@ set_up_regional_mythical_creature_effect = {
 			50 = {
 				set_variable = {
 					name = regional_mythical_creature_trinket
-					value = flag:ningyo
+					value = flag:mermaid
 				}
 			}
 			50 = {

@@ -26,9 +26,13 @@
 			}
 			## Attacking In Rokugan different heritages
 			# Because noone like other heritages !
-			NOT = {
-				scope:attacker = {
-					culture = { has_same_culture_heritage = scope:defender.culture}
+			AND = {
+				#Prevent imperial families to do conquests
+				is_imperial_family = no
+				NOT = {
+					scope:attacker = {
+						culture = { has_same_culture_heritage = scope:defender.culture}
+					}
 				}
 			}
 		}

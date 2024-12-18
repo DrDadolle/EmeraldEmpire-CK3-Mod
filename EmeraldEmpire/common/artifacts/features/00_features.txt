@@ -4944,27 +4944,27 @@
 		weight = 1
 	}
 
-	book_topic_learning_golden_legend = {
-		group = book_topic
-		trigger = {
-			has_artifact_feature = book_subject_learning
-			trigger_if = {
-				limit = { exists = scope:owner.var:book_topic_category }
-				scope:owner.var:book_topic_category = flag:learning_faith
-			}
-			trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
-				limit = { exists = scope:owner.var:book_artifact_topic }
-				scope:owner.var:book_artifact_topic = flag:golden_legend
-			}
+	# book_topic_learning_golden_legend = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		has_artifact_feature = book_subject_learning
+	# 		trigger_if = {
+	# 			limit = { exists = scope:owner.var:book_topic_category }
+	# 			scope:owner.var:book_topic_category = flag:learning_faith
+	# 		}
+	# 		trigger_if = { # If the topic has been pre-saved from events etc. we make sure it's picked
+	# 			limit = { exists = scope:owner.var:book_artifact_topic }
+	# 			scope:owner.var:book_artifact_topic = flag:golden_legend
+	# 		}
 			
-			# scope:owner.faith.religion = religion:christianity_religion
-			# trigger_if = {
-			# 	limit = { exists = scope:owner.var:book_artifact_author }
-			# 	scope:owner.var:book_artifact_author.faith.religion = religion:christianity_religion
-			# }
-		}
-		weight = 1
-	}
+	# 		# scope:owner.faith.religion = religion:christianity_religion
+	# 		# trigger_if = {
+	# 		# 	limit = { exists = scope:owner.var:book_artifact_author }
+	# 		# 	scope:owner.var:book_artifact_author.faith.religion = religion:christianity_religion
+	# 		# }
+	# 	}
+	# 	weight = 1
+	# }
 
 	#L5R Disabled
 	# book_topic_learning_iliad = {
@@ -6452,12 +6452,12 @@
 		trigger = { has_artifact_feature = book_topic_learning_hours }
 		weight = 1
 	}
-
-	book_title_learning_golden_legend = {
-		group = book_title
-		trigger = { has_artifact_feature = book_topic_learning_golden_legend }
-		weight = 1
-	}
+	#L5R Disabled
+	# book_title_learning_golden_legend = {
+	# 	group = book_title
+	# 	trigger = { has_artifact_feature = book_topic_learning_golden_legend }
+	# 	weight = 1
+	# }
 
 	book_title_learning_aristotle = {
 		group = book_title
