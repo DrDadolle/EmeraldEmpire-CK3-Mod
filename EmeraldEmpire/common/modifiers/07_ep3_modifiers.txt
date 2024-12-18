@@ -472,61 +472,61 @@ some_smallholds_modifier = {
 # 	character_travel_speed_mult = 0.1
 # }
 
-ep3_triumph_of_god_modifier = {
-	icon = piety_positive
-	zealot_opinion = 15
-	same_faith_opinion = 5
-	zealot_tax_contribution_mult = 0.25
-	monthly_piety = 0.3
-}
+# ep3_triumph_of_god_modifier = {
+# 	icon = piety_positive
+# 	zealot_opinion = 15
+# 	same_faith_opinion = 5
+# 	zealot_tax_contribution_mult = 0.25
+# 	monthly_piety = 0.3
+# }
 
-ep3_blessed_in_triumph_modifier = {
-	icon = piety_positive
-	zealot_opinion = 5
-	same_faith_opinion = 5
-	diplomacy_per_piety_level = 1
-	monthly_prestige = 0.2
-}
+# ep3_blessed_in_triumph_modifier = {
+# 	icon = piety_positive
+# 	zealot_opinion = 5
+# 	same_faith_opinion = 5
+# 	diplomacy_per_piety_level = 1
+# 	monthly_prestige = 0.2
+# }
 
-ep3_triumph_traditional_punishments_modifier = {
-	icon = medical_scissors_positive
-	councillor_opinion = 10
-	monthly_legitimacy_add = 1
-	monthly_prestige_gain_per_legitimacy_level_add = 0.2
-	diplomacy_per_prestige_level = 1
-}
+# ep3_triumph_traditional_punishments_modifier = {
+# 	icon = medical_scissors_positive
+# 	councillor_opinion = 10
+# 	monthly_legitimacy_add = 1
+# 	monthly_prestige_gain_per_legitimacy_level_add = 0.2
+# 	diplomacy_per_prestige_level = 1
+# }
 
-ep3_triumph_public_executioner_modifier = {
-	icon = dread_positive
-	monthly_dread = 0.25
-	monthly_county_control_growth_add = 0.3
-	intimidated_vassal_tax_contribution_mult = 0.1
-	cowed_vassal_tax_contribution_mult = 0.2
-}
+# ep3_triumph_public_executioner_modifier = {
+# 	icon = dread_positive
+# 	monthly_dread = 0.25
+# 	monthly_county_control_growth_add = 0.3
+# 	intimidated_vassal_tax_contribution_mult = 0.1
+# 	cowed_vassal_tax_contribution_mult = 0.2
+# }
 
-ep3_triumph_promised_victories_modifier = {
-	icon = martial_positive
-	martial = 1
-	glory_hound_opinion = 10
-	men_at_arms_maintenance = -0.2
-	happy_powerful_vassal_levy_contribution_mult = 0.2
-}
+# ep3_triumph_promised_victories_modifier = {
+# 	icon = martial_positive
+# 	martial = 1
+# 	glory_hound_opinion = 10
+# 	men_at_arms_maintenance = -0.2
+# 	happy_powerful_vassal_levy_contribution_mult = 0.2
+# }
 
-ep3_triumph_promised_stability_modifier = {
-	icon = diplomacy_positive
-	diplomacy = 1
-	courtly_opinion = 10
-	monthly_prestige_gain_per_happy_powerful_vassal_add = 0.2
-	monthly_county_control_growth_add = 0.2
-}
+# ep3_triumph_promised_stability_modifier = {
+# 	icon = diplomacy_positive
+# 	diplomacy = 1
+# 	courtly_opinion = 10
+# 	monthly_prestige_gain_per_happy_powerful_vassal_add = 0.2
+# 	monthly_county_control_growth_add = 0.2
+# }
 
-ep3_triumph_promised_prosperity_modifier = {
-	icon = stewardship_positive
-	stewardship = 1
-	parochial_opinion = 10
-	development_growth_factor = 0.2
-	monthly_income_mult = 0.1
-}
+# ep3_triumph_promised_prosperity_modifier = {
+# 	icon = stewardship_positive
+# 	stewardship = 1
+# 	parochial_opinion = 10
+# 	development_growth_factor = 0.2
+# 	monthly_income_mult = 0.1
+# }
 
 ep3_voluntary_laamp_character_modifier = {
 	icon = prestige_positive
@@ -839,11 +839,11 @@ ep3_governor_yearly_8130_raised_almonage_modifier = {
 	vassal_opinion = -15
 }
 
-ep3_sent_help_to_east_modifier = {
-	icon = martial_negative
-	vassal_levy_contribution_mult = -0.2
-	levy_size = -0.2
-}
+# ep3_sent_help_to_east_modifier = {
+# 	icon = martial_negative
+# 	vassal_levy_contribution_mult = -0.2
+# 	levy_size = -0.2
+# }
 
 ep3_efforts_recognized_modifier = {
 	icon = signet_ring_positive
@@ -1556,10 +1556,10 @@ admin_eunuch_puppet_modifier = {
 	monthly_influence = 1.0
 }
 
-ep3_consolidated_rule_modifier = {
-	icon = legitimacy_positive
-	legitimacy_gain_mult = 0.25
-}
+# ep3_consolidated_rule_modifier = {
+# 	icon = legitimacy_positive
+# 	legitimacy_gain_mult = 0.25
+# }
  
 ### GRAND AMBITIONS STORY CYCLE MODIFIERS
 
@@ -2258,14 +2258,14 @@ laamp_decision_exotic_story_learning_gain_modifier = {
 	}
 }
 
-ep3_head_of_opposition_modifier = {
-	icon = intrigue_positive
-	glory_hound_opinion = 25
-	monthly_prestige_gain_mult = 0.2
-	hostile_scheme_phase_duration_add = -3
-	maa_damage_mult = 0.2
-	same_culture_mercenary_hire_cost_mult = -0.2
-}
+# ep3_head_of_opposition_modifier = {
+# 	icon = intrigue_positive
+# 	glory_hound_opinion = 25
+# 	monthly_prestige_gain_mult = 0.2
+# 	hostile_scheme_phase_duration_add = -3
+# 	maa_damage_mult = 0.2
+# 	same_culture_mercenary_hire_cost_mult = -0.2
+# }
 
 contented_governing_countrymen_modifier = {
 	icon = social_positive

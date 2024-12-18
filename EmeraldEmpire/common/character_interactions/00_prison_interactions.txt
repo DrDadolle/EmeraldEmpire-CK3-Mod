@@ -6826,9 +6826,10 @@ castrate_interaction = {
 			is_adult = yes
 			OR = {
 				culture = { has_cultural_parameter = can_castrate_prisoners }
-				top_liege.primary_title = {
-					has_variable = emulating_byz_punishment_var
-				}
+				#L5R Disabled
+				# top_liege.primary_title = {
+				# 	has_variable = emulating_byz_punishment_var
+				# }
 			}
 			
 			# If they're our partner emperor, we should use the maiming interaction instead.
@@ -6959,13 +6960,14 @@ castrate_interaction = {
 			}
 			add = 25
 		}
+		#L5R Disabled
 		#Cruel Latins are really into this
-		modifier = {
-			top_liege.primary_title = {
-				has_variable = emulating_byz_punishment_var
-			}
-			add = 30
-		}
+		# modifier = {
+		# 	top_liege.primary_title = {
+		# 		has_variable = emulating_byz_punishment_var
+		# 	}
+		# 	add = 30
+		# }
 	}
 
 	ai_frequency = 36
@@ -6987,9 +6989,10 @@ blind_interaction = {
 			is_adult = yes
 			OR = {
 				culture = { has_cultural_parameter = can_blind_prisoners }
-				top_liege.primary_title = {
-					has_variable = emulating_byz_punishment_var
-				}
+				#L5R Disabled
+				# top_liege.primary_title = {
+				# 	has_variable = emulating_byz_punishment_var
+				# }
 			}
 			# If they're our partner emperor, we should use the maiming interaction instead.
 			liege_should_systematically_maim_co_ruler_trigger = no
@@ -7144,13 +7147,14 @@ blind_interaction = {
 			}
 			add = 25
 		}
+		#L5R Disabled
 		#Cruel Latins are really into this
-		modifier = {
-			top_liege.primary_title = {
-				has_variable = emulating_byz_punishment_var
-			}
-			add = 30
-		}
+		# modifier = {
+		# 	top_liege.primary_title = {
+		# 		has_variable = emulating_byz_punishment_var
+		# 	}
+		# 	add = 30
+		# }
 	}
 
 	ai_frequency = 36

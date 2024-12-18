@@ -814,7 +814,8 @@ fp1_remember_recent_conquest_victory_effect = {
 
 nithing_character_creation_scripted_effect = {
 	add_trait = disinherited
-	add_character_modifier = { modifier = nithing_fp1_modifier }
+	#L5R Disabled
+	# add_character_modifier = { modifier = nithing_fp1_modifier }
 }
 
 ##################################################

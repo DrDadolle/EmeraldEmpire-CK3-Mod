@@ -3737,135 +3737,135 @@
 # }
 
 ###Hyrcanian Havoc by Ola Jentzsch (easter egg event, will only trigger rarely)
-fp3_yearly.8017 = {
-	type = character_event  
-	title = fp3_yearly.8017.t
-	desc = fp3_yearly.8017.desc
-	theme = battle
-	override_background = {
-		reference = burning_building
-	}
-	left_portrait = {
-		character = scope:raider
-		animation = aggressive_axe
-	}
-	right_portrait = {
-		character = scope:hyrcanian_vassal
-		animation = fear
-		triggered_animation = {
-			trigger = {
-				ai_vengefulness >= medium_positive_ai_value
-				ai_boldness > high_negative_ai_value
-			}
-			animation = rage
-		}
-	}	
+# fp3_yearly.8017 = {
+# 	type = character_event  
+# 	title = fp3_yearly.8017.t
+# 	desc = fp3_yearly.8017.desc
+# 	theme = battle
+# 	override_background = {
+# 		reference = burning_building
+# 	}
+# 	left_portrait = {
+# 		character = scope:raider
+# 		animation = aggressive_axe
+# 	}
+# 	right_portrait = {
+# 		character = scope:hyrcanian_vassal
+# 		animation = fear
+# 		triggered_animation = {
+# 			trigger = {
+# 				ai_vengefulness >= medium_positive_ai_value
+# 				ai_boldness > high_negative_ai_value
+# 			}
+# 			animation = rage
+# 		}
+# 	}	
 
-	trigger = {
+# 	trigger = {
 
-		exists = global_var:has_had_runestone_event
+# 		exists = global_var:has_had_runestone_event
 
-		exists = scope:hyrcanian_vassal 
+# 		exists = scope:hyrcanian_vassal 
 
-		scope:hyrcanian_vassal = {
-			any_held_county = { this = scope:runestone_county }
-		}
-	}
+# 		scope:hyrcanian_vassal = {
+# 			any_held_county = { this = scope:runestone_county }
+# 		}
+# 	}
 
-	immediate = {
+# 	immediate = {
 
-		create_character = { 
-			template = fp1_jomsviking_bigwig
-			location = scope:hyrcanian_vassal.capital_province
-			save_scope_as = raider	
-		}
+# 		create_character = { 
+# 			template = fp1_jomsviking_bigwig
+# 			location = scope:hyrcanian_vassal.capital_province
+# 			save_scope_as = raider	
+# 		}
 
 
-		scope:raider = {
-			add_character_flag = single_combat_duel_armor
-		}
+# 		scope:raider = {
+# 			add_character_flag = single_combat_duel_armor
+# 		}
 
-		scope:hyrcanian_vassal = {
-			maimed_in_battle_effect = yes
-		}
+# 		scope:hyrcanian_vassal = {
+# 			maimed_in_battle_effect = yes
+# 		}
 
-		scope:runestone_county = {
-			random_county_province = {
-				limit = { is_county_capital = yes }
-				save_scope_as = runestone_province
-			}
-		}
+# 		scope:runestone_county = {
+# 			random_county_province = {
+# 				limit = { is_county_capital = yes }
+# 				save_scope_as = runestone_province
+# 			}
+# 		}
 
-		scope:runestone_province = {
-			add_province_modifier = { 
-				modifier = recently_looted_modifier
-				years = 10
-			}
-		}
-	} 
+# 		scope:runestone_province = {
+# 			add_province_modifier = { 
+# 				modifier = recently_looted_modifier
+# 				years = 10
+# 			}
+# 		}
+# 	} 
 
-	#Oh no!
-	option = {	
-		name = fp3_yearly.8017.a
-		add_prestige = miniscule_prestige_loss
-	}
+# 	#Oh no!
+# 	option = {	
+# 		name = fp3_yearly.8017.a
+# 		add_prestige = miniscule_prestige_loss
+# 	}
 
-	#Send some restitution
-	option = {	
-		name = fp3_yearly.8017.b
+# 	#Send some restitution
+# 	option = {	
+# 		name = fp3_yearly.8017.b
 		
-		pay_short_term_gold = {
-			target = scope:runestone_county.holder
-			gold = medium_gold_value 
-		}
-		scope:runestone_county.holder = {
-			add_opinion = {
-				target = liege
-				modifier = grateful_opinion
-				opinion = 20
-			}
-		}
-		stress_impact = { greedy = medium_stress_impact_gain }
-	}
+# 		pay_short_term_gold = {
+# 			target = scope:runestone_county.holder
+# 			gold = medium_gold_value 
+# 		}
+# 		scope:runestone_county.holder = {
+# 			add_opinion = {
+# 				target = liege
+# 				modifier = grateful_opinion
+# 				opinion = 20
+# 			}
+# 		}
+# 		stress_impact = { greedy = medium_stress_impact_gain }
+# 	}
 
-	#This is a bad open...maybe I'd better return those stones... 
-	option = {
-		name = fp3_yearly.8017.c
+# 	#This is a bad open...maybe I'd better return those stones... 
+# 	option = {
+# 		name = fp3_yearly.8017.c
 		
-		trigger = {
-			scope:new_runestone_county = {
-				has_county_modifier = fp3_forgotten_runestones_county_modifier		
-			}
-		}
+# 		trigger = {
+# 			scope:new_runestone_county = {
+# 				has_county_modifier = fp3_forgotten_runestones_county_modifier		
+# 			}
+# 		}
 
-		scope:new_runestone_county = {
-			remove_county_modifier = fp3_forgotten_runestones_county_modifier 
-		}
+# 		scope:new_runestone_county = {
+# 			remove_county_modifier = fp3_forgotten_runestones_county_modifier 
+# 		}
 
-		scope:runestone_county = {
-			add_county_modifier = {
-				modifier = fp3_forgotten_runestones_county_modifier
-				years = 200 
-			}
-		}
+# 		scope:runestone_county = {
+# 			add_county_modifier = {
+# 				modifier = fp3_forgotten_runestones_county_modifier
+# 				years = 200 
+# 			}
+# 		}
 
-		stress_impact = { 
-   			craven = medium_stress_impact_loss
-   			paranoid = medium_stress_impact_loss
-   			zealous = minor_stress_impact_loss 
-   			arrogant = medium_stress_impact_gain
-   			cynical = medium_stress_impact_gain
-   			brave = medium_stress_impact_gain 
-   			stubborn = medium_stress_impact_gain
-   		}				
-	}
+# 		stress_impact = { 
+#    			craven = medium_stress_impact_loss
+#    			paranoid = medium_stress_impact_loss
+#    			zealous = minor_stress_impact_loss 
+#    			arrogant = medium_stress_impact_gain
+#    			cynical = medium_stress_impact_gain
+#    			brave = medium_stress_impact_gain 
+#    			stubborn = medium_stress_impact_gain
+#    		}				
+# 	}
 
-	after = {
-		scope:raider = {
-			remove_character_flag = single_combat_duel_armor
-		}
-	}
-}
+# 	after = {
+# 		scope:raider = {
+# 			remove_character_flag = single_combat_duel_armor
+# 		}
+# 	}
+# }
 
 ###Heavenly Horses by Ola Jentzsch############
 # fp3_yearly.8018 = {

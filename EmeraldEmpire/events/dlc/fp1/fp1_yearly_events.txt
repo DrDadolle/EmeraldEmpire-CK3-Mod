@@ -413,98 +413,98 @@
 # 0011 - 0020
 ##################################################
 
-scripted_trigger offensive_courtier_candidate_trigger = {
-	#Filter out the basic miscs.
-	is_available_ai_adult = yes
-	#Have some commited some genuine malfeasance, or just be irritating to at least some people.
-	OR = {
-		#Having committed murder by poison is a solid way to become a nithing; this might be a secret, but we assume local rumours about a shady buyer of poisons abound...
-		has_character_flag = murdered_by_poison
-		#Legitimately being a witch, and a Germanic Pagan one at that, is a good reason, though all parties have to agree on that being a bad thing first.
-		AND = {
-			faith = { has_doctrine_parameter = witchcraft_illegal }
-			root.faith = { has_doctrine_parameter = witchcraft_illegal }
-			root.capital_county.faith = { has_doctrine_parameter = witchcraft_illegal }
-			OR = {
-				has_trait = witch
-				any_secret = { secret_type = secret_witch }
-			}
-		}
-		#Irritating personality traits can be cause for suspicion.
-		has_trait = wrathful
-		has_trait = deceitful
-		has_trait = craven
-		has_trait = ambitious
-		has_trait = arbitrary
-		has_trait = paranoid
-		has_trait = sadistic
-		has_trait = stubborn
-		has_trait = vengeful
-		#And really anyone dealing with herbs, potions, poisons, or alchemy.
-		has_trait = lifestyle_mystic
-		has_trait = lifestyle_physician
-		has_trait = lifestyle_herbalist
-	}
-	#If they're heir to a player, then they should only be the heir of the player making the decision.
-	OR = {
-		#Plus we need to filter out anyone who isn't an heir at all.
-		any_heir_title = { count = 0 }
-		any_heir_title = {
-			is_title_created = yes
-			holder = {
-				is_ai = no
-				NOT = { this = root }
-			}
-		}
-	}
-}
+# scripted_trigger offensive_courtier_candidate_trigger = {
+# 	#Filter out the basic miscs.
+# 	is_available_ai_adult = yes
+# 	#Have some commited some genuine malfeasance, or just be irritating to at least some people.
+# 	OR = {
+# 		#Having committed murder by poison is a solid way to become a nithing; this might be a secret, but we assume local rumours about a shady buyer of poisons abound...
+# 		has_character_flag = murdered_by_poison
+# 		#Legitimately being a witch, and a Germanic Pagan one at that, is a good reason, though all parties have to agree on that being a bad thing first.
+# 		AND = {
+# 			faith = { has_doctrine_parameter = witchcraft_illegal }
+# 			root.faith = { has_doctrine_parameter = witchcraft_illegal }
+# 			root.capital_county.faith = { has_doctrine_parameter = witchcraft_illegal }
+# 			OR = {
+# 				has_trait = witch
+# 				any_secret = { secret_type = secret_witch }
+# 			}
+# 		}
+# 		#Irritating personality traits can be cause for suspicion.
+# 		has_trait = wrathful
+# 		has_trait = deceitful
+# 		has_trait = craven
+# 		has_trait = ambitious
+# 		has_trait = arbitrary
+# 		has_trait = paranoid
+# 		has_trait = sadistic
+# 		has_trait = stubborn
+# 		has_trait = vengeful
+# 		#And really anyone dealing with herbs, potions, poisons, or alchemy.
+# 		has_trait = lifestyle_mystic
+# 		has_trait = lifestyle_physician
+# 		has_trait = lifestyle_herbalist
+# 	}
+# 	#If they're heir to a player, then they should only be the heir of the player making the decision.
+# 	OR = {
+# 		#Plus we need to filter out anyone who isn't an heir at all.
+# 		any_heir_title = { count = 0 }
+# 		any_heir_title = {
+# 			is_title_created = yes
+# 			holder = {
+# 				is_ai = no
+# 				NOT = { this = root }
+# 			}
+# 		}
+# 	}
+# }
 
-scripted_effect agree_to_courtier_becoming_nithing_effect = {
-	# First, we remove any legal relations.
-	## Specifically marriage.
-	if = {
-		limit = {
-			any_spouse = { this = root }
-			root.faith = {
-				# _Technically_ they're 'dead' and this isn't a divorce, but if divorce was as easy as declaring your spouse legally dead, Henry VIII would've remained a good Catholic boi till the end of his days.
-				NOT = { has_doctrine = doctrine_divorce_disallowed }
-			}
-		}
-		divorce_effect = {
-			DIVORCER = root
-			DIVORCEE = scope:offensive_courtier
-		}
-	}
-	## And concubinage.
-	if = {
-		limit = {
-			scope:offensive_courtier = { is_concubine_of = root }
-		}
-		root = { remove_concubine = scope:offensive_courtier }
-	}
-	# Then we evict them.
-	banish = yes
-	# Which naturally causes some friction.
-	add_opinion = {
-		target = root
-		modifier = hate_opinion
-		opinion = -75
-	}
-	## Including some ramifications later, potentially.
-	hidden_effect = {
-		if = {
-			limit = {
-				can_set_relation_potential_rival_trigger = { CHARACTER = scope:offensive_courtier }
-			}
-			set_relation_potential_rival = scope:offensive_courtier
-		}
-	}
-	# And, finally, let the whole world know.
-	add_character_modifier = {
-		modifier = nithing_fp1_modifier
-		years = 20
-	}
-}
+# scripted_effect agree_to_courtier_becoming_nithing_effect = {
+# 	# First, we remove any legal relations.
+# 	## Specifically marriage.
+# 	if = {
+# 		limit = {
+# 			any_spouse = { this = root }
+# 			root.faith = {
+# 				# _Technically_ they're 'dead' and this isn't a divorce, but if divorce was as easy as declaring your spouse legally dead, Henry VIII would've remained a good Catholic boi till the end of his days.
+# 				NOT = { has_doctrine = doctrine_divorce_disallowed }
+# 			}
+# 		}
+# 		divorce_effect = {
+# 			DIVORCER = root
+# 			DIVORCEE = scope:offensive_courtier
+# 		}
+# 	}
+# 	## And concubinage.
+# 	if = {
+# 		limit = {
+# 			scope:offensive_courtier = { is_concubine_of = root }
+# 		}
+# 		root = { remove_concubine = scope:offensive_courtier }
+# 	}
+# 	# Then we evict them.
+# 	banish = yes
+# 	# Which naturally causes some friction.
+# 	add_opinion = {
+# 		target = root
+# 		modifier = hate_opinion
+# 		opinion = -75
+# 	}
+# 	## Including some ramifications later, potentially.
+# 	hidden_effect = {
+# 		if = {
+# 			limit = {
+# 				can_set_relation_potential_rival_trigger = { CHARACTER = scope:offensive_courtier }
+# 			}
+# 			set_relation_potential_rival = scope:offensive_courtier
+# 		}
+# 	}
+# 	# And, finally, let the whole world know.
+# 	add_character_modifier = {
+# 		modifier = nithing_fp1_modifier
+# 		years = 20
+# 	}
+# }
 
 #	Locals call for one of your courtiers to be exiled as a nithing.
 # fp1_yearly.0011 = {
