@@ -6476,525 +6476,525 @@ ep3_decisions_event.5002 = {
 # }
 
 # ### Hire Chief Eunuch
-# scripted_trigger mediocre_eunuch_trigger = {
-# 	has_trait = eunuch
-# 	can_be_employed_as = chief_eunuch_court_position
-# 	is_available_healthy_ai_adult = yes
-# 	diplomacy > average_skill_rating
-# 	intrigue > average_skill_rating
-# }
+scripted_trigger mediocre_eunuch_trigger = {
+	has_trait = eunuch
+	can_be_employed_as = chief_eunuch_court_position
+	is_available_healthy_ai_adult = yes
+	diplomacy > average_skill_rating
+	intrigue > average_skill_rating
+}
 
-# scripted_trigger good_eunuch_trigger = {
-# 	has_trait = eunuch
-# 	can_be_employed_as = chief_eunuch_court_position
-# 	is_available_healthy_ai_adult = yes
-# 	NOR = {
-# 		is_landed = yes
-# 		has_trait = blind
-# 	}
-# 	OR = {
-# 		has_trait = education_diplomacy
-# 		has_trait = education_intrigue
-# 	}
-# 	diplomacy >= good_skill_level
-# 	intrigue >= good_skill_level
-# }
+scripted_trigger good_eunuch_trigger = {
+	has_trait = eunuch
+	can_be_employed_as = chief_eunuch_court_position
+	is_available_healthy_ai_adult = yes
+	NOR = {
+		is_landed = yes
+		has_trait = blind
+	}
+	OR = {
+		has_trait = education_diplomacy
+		has_trait = education_intrigue
+	}
+	diplomacy >= good_skill_level
+	intrigue >= good_skill_level
+}
 
-# ep3_decisions_event.5010 = {
-# 	type = character_event
-# 	title = ep3_decisions_event.5010.t
-# 	desc = ep3_decisions_event.5010.desc
-# 	theme = administrative
+ep3_decisions_event.5010 = {
+	type = character_event
+	title = ep3_decisions_event.5010.t
+	desc = ep3_decisions_event.5010.desc
+	theme = administrative
 	
-# 	left_portrait = {
-# 		character = scope:mediocre_eunuch
-# 		animation = happiness
-# 	}
-# 	right_portrait = {
-# 		character = scope:good_eunuch
-# 		animation = personality_honorable
-# 	}
+	left_portrait = {
+		character = scope:mediocre_eunuch
+		animation = happiness
+	}
+	right_portrait = {
+		character = scope:good_eunuch
+		animation = personality_honorable
+	}
 
-# 	immediate = {
-# 		# Find a mediocre one
-# 		if = { # check for a mediocre character in the pool
-# 			limit = {
-# 				any_pool_character = {
-# 					province = root.capital_province
-# 					mediocre_eunuch_trigger = yes
-# 				}
-# 			}
-# 			random_pool_character = {
-# 				province = root.capital_province
-# 				limit = { mediocre_eunuch_trigger = yes }
-# 				save_scope_as = mediocre_eunuch
-# 			}
-# 		}
-# 		else = { # otherwise create one
-# 			create_character = {
-# 				location = root.capital_province
-# 				gender_female_chance = 0
-# 				age = { 16 65 }
-# 				culture = root.location.culture
-# 				faith = root.location.faith
-# 				random_traits_list = {
-# 					count = 1
-# 					education_diplomacy_1 = {}
-# 					education_diplomacy_2 = {}
-# 					education_intrigue_1 = {}
-# 					education_intrigue_2 = {}
-# 				}
-# 				random_traits_list = {
-# 					count = 1
-# 					eunuch_1 = {}
-# 					beardless_eunuch = {}
-# 				}
-# 				random_traits = yes
-# 				diplomacy = {
-# 					min_template_low_skill
-# 					max_template_average_skill
-# 				}
-# 				intrigue = {
-# 					min_template_low_skill
-# 					max_template_average_skill
-# 				}
-# 				save_scope_as = mediocre_eunuch
-# 			}
-# 		}
+	immediate = {
+		# Find a mediocre one
+		if = { # check for a mediocre character in the pool
+			limit = {
+				any_pool_character = {
+					province = root.capital_province
+					mediocre_eunuch_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.capital_province
+				limit = { mediocre_eunuch_trigger = yes }
+				save_scope_as = mediocre_eunuch
+			}
+		}
+		else = { # otherwise create one
+			create_character = {
+				location = root.capital_province
+				gender_female_chance = 0
+				age = { 16 65 }
+				culture = root.location.culture
+				faith = root.location.faith
+				random_traits_list = {
+					count = 1
+					education_diplomacy_1 = {}
+					education_diplomacy_2 = {}
+					education_intrigue_1 = {}
+					education_intrigue_2 = {}
+				}
+				random_traits_list = {
+					count = 1
+					eunuch_1 = {}
+					beardless_eunuch = {}
+				}
+				random_traits = yes
+				diplomacy = {
+					min_template_low_skill
+					max_template_average_skill
+				}
+				intrigue = {
+					min_template_low_skill
+					max_template_average_skill
+				}
+				save_scope_as = mediocre_eunuch
+			}
+		}
 
-# 		# Find a good one
-# 		if = { # check for a GOOD character in the pool
-# 			limit = {
-# 				any_pool_character = {
-# 					province = root.capital_province
-# 					good_eunuch_trigger = yes
-# 				}
-# 			}
-# 			random_pool_character = {
-# 				province = root.capital_province
-# 				limit = { good_eunuch_trigger = yes }
-# 				save_scope_as = good_eunuch
-# 			}
-# 		}
-# 		else = { # otherwise create one
-# 			create_character = {
-# 				location = root.capital_province
-# 				gender_female_chance = 0
-# 				age = { 16 65 }
-# 				culture = root.culture
-# 				faith = root.faith
-# 				random_traits_list = {
-# 					count = 1
-# 					education_diplomacy_3 = {}
-# 					education_diplomacy_4 = {}
-# 					education_intrigue_3 = {}
-# 					education_intrigue_4 = {}
-# 				}
-# 				random_traits_list = {
-# 					count = 1
-# 					eunuch_1 = {}
-# 					beardless_eunuch = {}
-# 				}
-# 				random_traits = yes
-# 				diplomacy = {
-# 					min_template_average_skill
-# 					max_template_medium_skill
-# 				}
-# 				intrigue = {
-# 					min_template_average_skill
-# 					max_template_medium_skill
-# 				}
-# 				save_scope_as = good_eunuch
-# 			}
-# 		}
-# 	}
+		# Find a good one
+		if = { # check for a GOOD character in the pool
+			limit = {
+				any_pool_character = {
+					province = root.capital_province
+					good_eunuch_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.capital_province
+				limit = { good_eunuch_trigger = yes }
+				save_scope_as = good_eunuch
+			}
+		}
+		else = { # otherwise create one
+			create_character = {
+				location = root.capital_province
+				gender_female_chance = 0
+				age = { 16 65 }
+				culture = root.culture
+				faith = root.faith
+				random_traits_list = {
+					count = 1
+					education_diplomacy_3 = {}
+					education_diplomacy_4 = {}
+					education_intrigue_3 = {}
+					education_intrigue_4 = {}
+				}
+				random_traits_list = {
+					count = 1
+					eunuch_1 = {}
+					beardless_eunuch = {}
+				}
+				random_traits = yes
+				diplomacy = {
+					min_template_average_skill
+					max_template_medium_skill
+				}
+				intrigue = {
+					min_template_average_skill
+					max_template_medium_skill
+				}
+				save_scope_as = good_eunuch
+			}
+		}
+	}
 
-# 	option = { 
-# 		name = ep3_decisions_event.5010.a
-# 		pay_short_term_gold = {
-# 			target = scope:mediocre_eunuch
-# 			gold = low_skill_court_physician_cost
-# 		}
-# 		hidden_effect = { add_courtier = scope:mediocre_eunuch }
-# 		court_position_grant_effect = { POS = chief_eunuch CANDIDATE = scope:mediocre_eunuch EMPLOYER = root }
-# 	}
+	option = { 
+		name = ep3_decisions_event.5010.a
+		pay_short_term_gold = {
+			target = scope:mediocre_eunuch
+			gold = low_skill_court_physician_cost
+		}
+		hidden_effect = { add_courtier = scope:mediocre_eunuch }
+		court_position_grant_effect = { POS = chief_eunuch CANDIDATE = scope:mediocre_eunuch EMPLOYER = root }
+	}
 
-# 	option = {
-# 		name = ep3_decisions_event.5010.b
-# 		pay_short_term_gold = {
-# 			target = scope:good_eunuch
-# 			gold = high_skill_court_physician_cost
-# 		}
-# 		hidden_effect = { add_courtier = scope:good_eunuch }
-# 		court_position_grant_effect = { POS = chief_eunuch CANDIDATE = scope:good_eunuch EMPLOYER = root }
-# 	}
+	option = {
+		name = ep3_decisions_event.5010.b
+		pay_short_term_gold = {
+			target = scope:good_eunuch
+			gold = high_skill_court_physician_cost
+		}
+		hidden_effect = { add_courtier = scope:good_eunuch }
+		court_position_grant_effect = { POS = chief_eunuch CANDIDATE = scope:good_eunuch EMPLOYER = root }
+	}
 
-# 	option = {
-# 		name = ep3_decisions_event.1000.d
-# 	}
-# }
+	option = {
+		name = ep3_decisions_event.1000.d
+	}
+}
 
 # ### Embrace Heresy
-# ep3_decisions_event.5020 = {
-# 	type = character_event
-# 	title = ep3_decisions_event.5020.t
-# 	desc = {
-# 		desc = ep3_decisions_event.5020.desc
-# 		triggered_desc = {
-# 			trigger = {
-# 				exists = scope:heresy_2
-# 			}
-# 			desc = ep3_decisions_event.5020.desc_more
-# 		}
-# 	}
-# 	theme = faith
+ep3_decisions_event.5020 = {
+	type = character_event
+	title = ep3_decisions_event.5020.t
+	desc = {
+		desc = ep3_decisions_event.5020.desc
+		triggered_desc = {
+			trigger = {
+				exists = scope:heresy_2
+			}
+			desc = ep3_decisions_event.5020.desc_more
+		}
+	}
+	theme = faith
 	
-# 	left_portrait = {
-# 		character = root
-# 		animation = scheme
-# 	}
+	left_portrait = {
+		character = root
+		animation = scheme
+	}
 
-# 	immediate = {
-# 		top_liege ?= {
-# 			every_realm_county = {
-# 				limit = {
-# 					OR = {
-# 						faith = {
-# 							faith_is_interesting_heresy_to_state_faith_trigger = yes
-# 						}
-# 						any_neighboring_county = {
-# 							holder.top_liege ?= {
-# 								NOT = {
-# 									this = root.top_liege
-# 								}
-# 							}
-# 							faith = {
-# 								faith_is_interesting_heresy_to_state_faith_trigger = yes
-# 							}
-# 						}
-# 					}
-# 				}
-# 				every_neighboring_county = {
-# 					limit = {
-# 						holder.top_liege ?= {
-# 							NOT = {
-# 								this = root.top_liege
-# 							}
-# 						}
-# 						faith = {
-# 							faith_is_interesting_heresy_to_state_faith_trigger = yes
-# 						}
-# 					}
-# 					faith = {
-# 						add_to_list = available_heresies
-# 					}
-# 				}
-# 				if = {
-# 					limit = {
-# 						faith = {
-# 							faith_is_interesting_heresy_to_state_faith_trigger = yes
-# 						}
-# 					}
-# 					faith = {
-# 						add_to_list = available_heresies
-# 					}
-# 				}
-# 			}
-# 		}
-# 		ordered_in_list = {
-# 			list = available_heresies
-# 			order_by = num_county_followers
-# 			position = 1
-# 			save_scope_as = heresy_1
-# 		}
-# 		ordered_in_list = {
-# 			list = available_heresies
-# 			limit = { this != scope:heresy_1 }
-# 			order_by = num_county_followers
-# 			position = 1
-# 			save_scope_as = heresy_2
-# 		}
-# 		ordered_in_list = {
-# 			list = available_heresies
-# 			limit = {
-# 				this != scope:heresy_1
-# 				this != scope:heresy_2
-# 			}
-# 			order_by = num_county_followers
-# 			position = 1
-# 			save_scope_as = heresy_3
-# 		}
-# 	}
+	immediate = {
+		top_liege ?= {
+			every_realm_county = {
+				limit = {
+					OR = {
+						faith = {
+							faith_is_interesting_heresy_to_state_faith_trigger = yes
+						}
+						any_neighboring_county = {
+							holder.top_liege ?= {
+								NOT = {
+									this = root.top_liege
+								}
+							}
+							faith = {
+								faith_is_interesting_heresy_to_state_faith_trigger = yes
+							}
+						}
+					}
+				}
+				every_neighboring_county = {
+					limit = {
+						holder.top_liege ?= {
+							NOT = {
+								this = root.top_liege
+							}
+						}
+						faith = {
+							faith_is_interesting_heresy_to_state_faith_trigger = yes
+						}
+					}
+					faith = {
+						add_to_list = available_heresies
+					}
+				}
+				if = {
+					limit = {
+						faith = {
+							faith_is_interesting_heresy_to_state_faith_trigger = yes
+						}
+					}
+					faith = {
+						add_to_list = available_heresies
+					}
+				}
+			}
+		}
+		ordered_in_list = {
+			list = available_heresies
+			order_by = num_county_followers
+			position = 1
+			save_scope_as = heresy_1
+		}
+		ordered_in_list = {
+			list = available_heresies
+			limit = { this != scope:heresy_1 }
+			order_by = num_county_followers
+			position = 1
+			save_scope_as = heresy_2
+		}
+		ordered_in_list = {
+			list = available_heresies
+			limit = {
+				this != scope:heresy_1
+				this != scope:heresy_2
+			}
+			order_by = num_county_followers
+			position = 1
+			save_scope_as = heresy_3
+		}
+	}
 
-# 	option = { 
-# 		name = ep3_decisions_event.5020.a
-# 		set_character_faith_with_conversion = scope:heresy_1
-# 		add_heresiarch_trait_effect = yes
-# 		# Otherwise the conversion event will remove the trait
-# 		add_character_flag = converted_by_heresy_decision
-# 		scope:heresy_1 = { save_scope_as = heresy }
-# 		custom_tooltip = unlocks_demand_state_faith_decision
-# 		top_liege ?= {
-# 			every_vassal = {
-# 				limit = {
-# 					faith = scope:heresy_1
-# 				}
-# 				root = {
-# 					if = {
-# 						limit = {
-# 							can_add_hook = {
-# 								target = prev
-# 								type = influence_hook
-# 							}
-# 						}
-# 						add_hook = {
-# 							target = prev
-# 							type = influence_hook
-# 						}
-# 					}
-# 				}
-# 			}
-# 		}
-# 		change_influence = {
-# 			value = minor_influence_gain
-# 			multiply = number_of_counties_with_heresy_1
-# 			min = 150
-# 		}
-# 	}
+	option = { 
+		name = ep3_decisions_event.5020.a
+		set_character_faith_with_conversion = scope:heresy_1
+		add_heresiarch_trait_effect = yes
+		# Otherwise the conversion event will remove the trait
+		add_character_flag = converted_by_heresy_decision
+		scope:heresy_1 = { save_scope_as = heresy }
+		custom_tooltip = unlocks_demand_state_faith_decision
+		top_liege ?= {
+			every_vassal = {
+				limit = {
+					faith = scope:heresy_1
+				}
+				root = {
+					if = {
+						limit = {
+							can_add_hook = {
+								target = prev
+								type = influence_hook
+							}
+						}
+						add_hook = {
+							target = prev
+							type = influence_hook
+						}
+					}
+				}
+			}
+		}
+		change_influence = {
+			value = minor_influence_gain
+			multiply = number_of_counties_with_heresy_1
+			min = 150
+		}
+	}
 
-# 	option = {
-# 		name = ep3_decisions_event.5020.b
-# 		trigger = {
-# 			exists = scope:heresy_2
-# 		}
-# 		set_character_faith_with_conversion = scope:heresy_2
-# 		add_heresiarch_trait_effect = yes
-# 		# Otherwise the conversion event will remove the trait
-# 		add_character_flag = converted_by_heresy_decision
-# 		scope:heresy_2 = { save_scope_as = heresy }
-# 		custom_tooltip = unlocks_demand_state_faith_decision
-# 		top_liege ?= {
-# 			every_vassal = {
-# 				limit = {
-# 					faith = scope:heresy_2
-# 				}
-# 				root = {
-# 					if = {
-# 						limit = {
-# 							can_add_hook = {
-# 								target = prev
-# 								type = influence_hook
-# 							}
-# 						}
-# 						add_hook = {
-# 							target = prev
-# 							type = influence_hook
-# 						}
-# 					}
-# 				}
-# 			}
-# 		}
-# 		change_influence = {
-# 			value = minor_influence_gain
-# 			multiply = number_of_counties_with_heresy_2
-# 			min = 150
-# 		}
-# 	}
+	option = {
+		name = ep3_decisions_event.5020.b
+		trigger = {
+			exists = scope:heresy_2
+		}
+		set_character_faith_with_conversion = scope:heresy_2
+		add_heresiarch_trait_effect = yes
+		# Otherwise the conversion event will remove the trait
+		add_character_flag = converted_by_heresy_decision
+		scope:heresy_2 = { save_scope_as = heresy }
+		custom_tooltip = unlocks_demand_state_faith_decision
+		top_liege ?= {
+			every_vassal = {
+				limit = {
+					faith = scope:heresy_2
+				}
+				root = {
+					if = {
+						limit = {
+							can_add_hook = {
+								target = prev
+								type = influence_hook
+							}
+						}
+						add_hook = {
+							target = prev
+							type = influence_hook
+						}
+					}
+				}
+			}
+		}
+		change_influence = {
+			value = minor_influence_gain
+			multiply = number_of_counties_with_heresy_2
+			min = 150
+		}
+	}
 
-# 	option = {
-# 		name = ep3_decisions_event.5020.c
-# 		trigger = {
-# 			exists = scope:heresy_3
-# 		}
-# 		set_character_faith_with_conversion = scope:heresy_3
-# 		add_heresiarch_trait_effect = yes
-# 		# Otherwise the conversion event will remove the trait
-# 		add_character_flag = converted_by_heresy_decision
-# 		scope:heresy_3 = { save_scope_as = heresy }
-# 		custom_tooltip = unlocks_demand_state_faith_decision
-# 		top_liege ?= {
-# 			every_vassal = {
-# 				limit = {
-# 					faith = scope:heresy_3
-# 				}
-# 				root = {
-# 					if = {
-# 						limit = {
-# 							can_add_hook = {
-# 								target = prev
-# 								type = influence_hook
-# 							}
-# 						}
-# 						add_hook = {
-# 							target = prev
-# 							type = influence_hook
-# 						}
-# 					}
-# 				}
-# 			}
-# 		}
-# 		change_influence = {
-# 			value = minor_influence_gain
-# 			multiply = number_of_counties_with_heresy_3
-# 			min = 150
-# 		}
-# 	}
+	option = {
+		name = ep3_decisions_event.5020.c
+		trigger = {
+			exists = scope:heresy_3
+		}
+		set_character_faith_with_conversion = scope:heresy_3
+		add_heresiarch_trait_effect = yes
+		# Otherwise the conversion event will remove the trait
+		add_character_flag = converted_by_heresy_decision
+		scope:heresy_3 = { save_scope_as = heresy }
+		custom_tooltip = unlocks_demand_state_faith_decision
+		top_liege ?= {
+			every_vassal = {
+				limit = {
+					faith = scope:heresy_3
+				}
+				root = {
+					if = {
+						limit = {
+							can_add_hook = {
+								target = prev
+								type = influence_hook
+							}
+						}
+						add_hook = {
+							target = prev
+							type = influence_hook
+						}
+					}
+				}
+			}
+		}
+		change_influence = {
+			value = minor_influence_gain
+			multiply = number_of_counties_with_heresy_3
+			min = 150
+		}
+	}
 
-# 	option = {
-# 		name = ep3_decisions_event.5020.d
-# 	}
+	option = {
+		name = ep3_decisions_event.5020.d
+	}
 
-# 	after = {
-# 		if = {
-# 			limit = {
-# 				exists = scope:heresy
-# 			}
-# 			set_variable = {
-# 				name = heresy_embraced
-# 				value = scope:heresy
-# 				years = 50
-# 			}
-# 		}
-# 	}
-# }
+	after = {
+		if = {
+			limit = {
+				exists = scope:heresy
+			}
+			set_variable = {
+				name = heresy_embraced
+				value = scope:heresy
+				years = 50
+			}
+		}
+	}
+}
 
-# ep3_decisions_event.5021 = {
-# 	type = character_event
-# 	title = ep3_decisions_event.5021.t
-# 	desc = ep3_decisions_event.5021.desc
-# 	theme = faith
+ep3_decisions_event.5021 = {
+	type = character_event
+	title = ep3_decisions_event.5021.t
+	desc = ep3_decisions_event.5021.desc
+	theme = faith
 	
-# 	left_portrait = {
-# 		character = root
-# 		animation = shock
-# 	}
-# 	right_portrait = {
-# 		character = scope:heretic
-# 		animation = scheme
-# 	}
+	left_portrait = {
+		character = root
+		animation = shock
+	}
+	right_portrait = {
+		character = scope:heretic
+		animation = scheme
+	}
 
-# 	# Option A: change state faith
-# 	option = {
-# 		name = ep3_decisions_event.5021.a
-# 		scope:heretic = {
-# 			send_interface_message = {
-# 				type = event_generic_good
-# 				title = ep3_decisions_event.5021.a.tt
-# 				left_icon = root
-# 				root = {
-# 					primary_title = { set_state_faith = scope:heresy }
-# 					add_opinion = {
-# 						target = scope:heretic
-# 						modifier = forced_state_heresy_opinion
-# 						opinion = -50
-# 					}
-# 				}
-# 			}
-# 		}
-# 		ai_chance = {
-# 			base = 50
-# 			modifier = {
-# 				add = number_of_counties_with_heresy_acceptance
-# 			}
-# 			modifier = {
-# 				add = number_of_vassals_with_heresy_acceptance
-# 			}
-# 			modifier = {
-# 				add = influence_difference_value
-# 			}
-# 			modifier = {
-# 				scope:heretic.house = { is_powerful_family = yes }
-# 				add = 25
-# 			}
-# 			modifier = {
-# 				scope:heretic.house = { is_dominant_family = yes }
-# 				add = 25
-# 			}
-# 			modifier = {
-# 				scope:heretic = {
-# 					domicile ?= {
-# 						has_domicile_parameter = more_successful_heresies
-# 						location.county.faith = scope:heretic.faith
-# 					}
-# 				}
-# 				add = 25
-# 			}
-# 		}
-# 	}
+	# Option A: change state faith
+	option = {
+		name = ep3_decisions_event.5021.a
+		scope:heretic = {
+			send_interface_message = {
+				type = event_generic_good
+				title = ep3_decisions_event.5021.a.tt
+				left_icon = root
+				root = {
+					primary_title = { set_state_faith = scope:heresy }
+					add_opinion = {
+						target = scope:heretic
+						modifier = forced_state_heresy_opinion
+						opinion = -50
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = number_of_counties_with_heresy_acceptance
+			}
+			modifier = {
+				add = number_of_vassals_with_heresy_acceptance
+			}
+			modifier = {
+				add = influence_difference_value
+			}
+			modifier = {
+				scope:heretic.house = { is_powerful_family = yes }
+				add = 25
+			}
+			modifier = {
+				scope:heretic.house = { is_dominant_family = yes }
+				add = 25
+			}
+			modifier = {
+				scope:heretic = {
+					domicile ?= {
+						has_domicile_parameter = more_successful_heresies
+						location.county.faith = scope:heretic.faith
+					}
+				}
+				add = 25
+			}
+		}
+	}
 
-# 	# Option B: change state faith and convert
-# 	option = {
-# 		name = ep3_decisions_event.5021.b
-# 		scope:heretic = {
-# 			send_interface_message = {
-# 				type = event_generic_good
-# 				title = ep3_decisions_event.5021.a.tt
-# 				left_icon = root
-# 				root = {
-# 					primary_title = { set_state_faith = scope:heresy }
-# 					set_character_faith_with_conversion = scope:heresy
-# 					add_opinion = {
-# 						target = scope:heretic
-# 						modifier = forced_state_heresy_opinion
-# 						opinion = -50
-# 					}
-# 				}
-# 			}
-# 		}
-# 		ai_chance = {
-# 			base = 0
-# 			modifier = {
-# 				add = number_of_counties_with_heresy_acceptance
-# 			}
-# 			modifier = {
-# 				add = number_of_vassals_with_heresy_acceptance
-# 			}
-# 			modifier = {
-# 				add = influence_difference_value
-# 			}
-# 			modifier = {
-# 				scope:heretic.house = { is_powerful_family = yes }
-# 				add = 25
-# 			}
-# 			modifier = {
-# 				scope:heretic.house = { is_dominant_family = yes }
-# 				add = 25
-# 			}
-# 			modifier = {
-# 				has_trait = cynical
-# 				add = 20
-# 			}
-# 			modifier = {
-# 				scope:heretic = {
-# 					domicile ?= {
-# 						has_domicile_parameter = more_successful_heresies
-# 						location.county.faith = scope:heretic.faith
-# 					}
-# 				}
-# 				add = 15
-# 			}
-# 			modifier = {
-# 				has_trait = zealous
-# 				factor = 0
-# 			}
-# 		}
-# 	}
+	# Option B: change state faith and convert
+	option = {
+		name = ep3_decisions_event.5021.b
+		scope:heretic = {
+			send_interface_message = {
+				type = event_generic_good
+				title = ep3_decisions_event.5021.a.tt
+				left_icon = root
+				root = {
+					primary_title = { set_state_faith = scope:heresy }
+					set_character_faith_with_conversion = scope:heresy
+					add_opinion = {
+						target = scope:heretic
+						modifier = forced_state_heresy_opinion
+						opinion = -50
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = number_of_counties_with_heresy_acceptance
+			}
+			modifier = {
+				add = number_of_vassals_with_heresy_acceptance
+			}
+			modifier = {
+				add = influence_difference_value
+			}
+			modifier = {
+				scope:heretic.house = { is_powerful_family = yes }
+				add = 25
+			}
+			modifier = {
+				scope:heretic.house = { is_dominant_family = yes }
+				add = 25
+			}
+			modifier = {
+				has_trait = cynical
+				add = 20
+			}
+			modifier = {
+				scope:heretic = {
+					domicile ?= {
+						has_domicile_parameter = more_successful_heresies
+						location.county.faith = scope:heretic.faith
+					}
+				}
+				add = 15
+			}
+			modifier = {
+				has_trait = zealous
+				factor = 0
+			}
+		}
+	}
 
-# 	# Option C: just no
-# 	option = {
-# 		name = ep3_decisions_event.5021.c
-# 		scope:heretic = {
-# 			send_interface_message = {
-# 				type = event_generic_bad
-# 				title = ep3_decisions_event.5021.c.tt
-# 				left_icon = root
-# 			}
-# 		}
-# 		ai_chance = {
-# 			base = 250
-# 		}
-# 	}
-# }
+	# Option C: just no
+	option = {
+		name = ep3_decisions_event.5021.c
+		scope:heretic = {
+			send_interface_message = {
+				type = event_generic_bad
+				title = ep3_decisions_event.5021.c.tt
+				left_icon = root
+			}
+		}
+		ai_chance = {
+			base = 250
+		}
+	}
+}
 
 # ### Commission Silk Regalia
 # ep3_decisions_event.5030 = {
