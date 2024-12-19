@@ -31,14 +31,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
 - Add thumbnail image for the mod !
-- Add event where ronin samurai wants to seppuku (ref to Harakiri)
-	- Refuse him (lose prestige & legimity)
-	- refuse him & give alms (lose money)
-	- authorize
-		- might kill one of your bushi at random 
-		- wants to duel to death you 
-		- he kill himself, you gain prestige and legitimity
-	
+		
+  Error: Invalid left side during comparison 'var'
+  Script location: file: common/customizable_localization/00_signature_weapon_custom_localization.txt line: 380 (SignatureWeaponAttemptedHeavyPlural)
+  
+    Error: Failed to fetch a valid faith 'catholic'
+  Script location: file: common/script_values/destiny_score_interest_value.txt line: 1415 (destiny_score_interesting_circumstances)
 
 
 ## short term goals 

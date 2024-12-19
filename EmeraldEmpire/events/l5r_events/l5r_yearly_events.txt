@@ -3,6 +3,8 @@
 
 ### L5R Yearly  Events ###
 #			l5r_yearly.0001 		become tea master
+#			l5r_yearly.0010 		Ronin begs for harakiri
+#			l5r_yearly.1000 		become mahotsukai
 
 #########################
 #  TEA MASTER           #
@@ -127,6 +129,468 @@ l5r_yearly.0001 = {
 		}
 	}
 }
+
+#########################
+#  A Ronin come to harakiri #
+# by  Leskinen          #
+# 0001-0010				#
+#########################
+
+l5r_yearly.0010 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = l5r_yearly.0010.t
+	desc = l5r_yearly.0010.desc
+	theme = diplomacy
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:beggar_ronin
+		animation = beg
+	}
+
+	trigger = {
+		# Standard checks.
+		is_available_at_peace_adult = yes
+		is_landless_adventurer = no
+		NOT = { has_character_flag = had_event_trait_specific_l5r_yearly_0010 }
+	}
+
+	weight_multiplier = {
+		base = 1
+
+		# Weight up for people with martial education
+		modifier = {
+			add = 0.1
+			has_trait = education_martial
+		}
+	}
+
+	immediate = {
+		add_character_flag = { flag = had_event_trait_specific_l5r_yearly_0010 }
+		create_character = {
+			template = knight
+			save_scope_as = beggar_ronin
+			location = root.capital_province
+		}
+	}
+
+	option = {
+		name = l5r_yearly.0010.a
+
+		stress_impact = {
+			just = medium_stress_impact_gain
+			compassionate = medium_stress_impact_gain
+		}
+
+		add_prestige = medium_prestige_loss
+		add_legitimacy = miniscule_legitimacy_loss
+
+		# Bye bye ronin-kun
+		hidden_effect = {
+			scope:beggar_ronin = {
+				death = {
+					death_reason = death_vanished 
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_compassion = -0.25
+				ai_sociability = -0.25
+			}
+			modifier = {	# Weight down for stress.
+				add = -50
+				has_trait = just
+			}
+			modifier = {	# Weight down for stress.
+				add = -50
+				has_trait = compassionate
+			}
+		}
+	}
+
+	option = {
+		name = l5r_yearly.0010.b
+
+		stress_impact = {
+			generous = minor_stress_impact_loss
+			greedy = medium_stress_impact_gain
+		}
+
+		remove_short_term_gold = minor_gold_value
+
+		# Bye bye ronin-kun
+		hidden_effect = {
+			scope:beggar_ronin = {
+				death = {
+					death_reason = death_vanished 
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_sociability = -0.25
+				ai_greed = -0.25
+			}
+			modifier = {	# Weight down for stress.
+				add = -50
+				has_trait = greedy
+			}
+			modifier = {	# Weight up for stress.
+				add = 25
+				has_trait = generous
+			}
+		}
+	}
+
+	#Please come seppuku
+	option = {
+		name = l5r_yearly.0010.c
+
+		stress_impact = {
+			just = minor_stress_impact_loss
+			paranoid = medium_stress_impact_gain
+			shy = minor_stress_impact_gain
+		}
+
+		custom_tooltip = l5r_yearly.0010.c.tt
+
+		# Authorize the seppuku
+		trigger_event = {
+			id = l5r_yearly.0011
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_sociability = 0.25
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = just
+			}
+			modifier = {	# Weight up for stress.
+				add = -10
+				has_trait = shy
+			}
+			modifier = {	# Weight up for stress.
+				add = -25
+				has_trait = paranoid
+			}
+		}
+	}
+}
+
+
+l5r_yearly.0011 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = l5r_yearly.0011.t
+	
+	theme = diplomacy
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:hurt_knight
+				}
+				desc = l5r_yearly.0011.hurt_knight
+			}
+			triggered_desc = {
+				trigger = {
+					scope:outcome = flag:duel
+				}
+				desc = l5r_yearly.0011.duel
+			}
+			desc = l5r_yearly.0011.seppuku
+		}
+	}
+
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { 
+                OR = {
+                    scope:outcome = flag:hurt_knight
+					scope:outcome = flag:duel
+                }
+			}
+			animation = shock
+		}
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:beggar_ronin
+		triggered_animation = {
+			trigger = { 
+                OR = {
+                    scope:outcome = flag:hurt_knight
+					scope:outcome = flag:duel
+                }
+			}
+			animation = anger
+		}
+		animation = dead
+	}
+
+
+	lower_left_portrait = {
+		trigger = {
+			OR = {
+				scope:outcome = flag:seppuku
+				scope:outcome = flag:hurt_knight
+			}
+		}
+		character = scope:my_knight
+	}
+
+
+	immediate = {
+		random_list = {
+			# Does the seppuku
+			70 = {
+				save_scope_value_as = {
+					name = outcome
+					value = flag:seppuku
+				}
+			}
+			#  Attack your knights !
+			25 = {
+				compare_modifier = {
+					value = {
+						value = scope:beggar_ronin.prowess
+						subtract = 10
+					}
+				}
+				save_scope_value_as = {
+					name = outcome
+					value = flag:hurt_knight
+				}
+			}
+			# Ask to duel you !
+			5 = {
+				compare_modifier = {
+					value = {
+						value = scope:beggar_ronin.prowess
+						subtract = 10
+					}
+				}
+				save_scope_value_as = {
+					name = outcome
+					value = flag:duel
+				}
+			}
+		}
+
+		# Get random knight
+		random_knight = {
+			save_scope_as = my_knight
+		}
+	}
+
+	# Seppuku done
+	option = {
+		name = l5r_yearly.0011.a
+
+		trigger = {
+			scope:outcome = flag:seppuku
+		}
+
+		scope:beggar_ronin = {
+			death = {
+				death_reason = death_seppuku
+				killer = scope:my_knight
+			}
+		}
+
+		add_prestige = medium_prestige_gain
+		add_legitimacy = minor_legitimacy_gain
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	# Knight killed
+	option = {
+		name = l5r_yearly.0011.b
+
+		trigger = {
+			scope:outcome = flag:hurt_knight
+		}
+
+		scope:my_knight = {
+			increase_wounds_effect = { REASON = fight }
+		}
+
+		scope:beggar_ronin = {
+			death = {
+				death_reason = death_execution
+			}
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	# I refuse the duel ! The ronin is executed
+	option = {
+		name = l5r_yearly.0011.c
+
+		trigger = {
+			scope:outcome = flag:duel
+		}
+
+		add_prestige = medium_prestige_loss
+		add_legitimacy = minor_legitimacy_loss
+
+		stress_impact = {
+			brave = medium_stress_impact_gain
+			wrathful = medium_stress_impact_gain
+			craven = mininuscule_stress_impact_loss
+		}
+
+		scope:beggar_ronin = {
+			death = {
+				death_reason = death_execution
+			}
+		}
+
+		ai_chance = {
+			base = 100
+			modifier = {	# Weight down for stress.
+				add = -50
+				has_trait = brave
+			}
+			modifier = {	# Weight down for stress.
+				add = -50
+				has_trait = wrathful
+			}
+			modifier = {	# Weight up for stress.
+				add = 25
+				has_trait = craven
+			}
+		}
+	}
+
+	#Let's duel to death !
+	option = {
+		name = l5r_yearly.0011.d
+		custom_tooltip = l5r_yearly.0011.d.tt
+		add_internal_flag = dangerous
+
+		trigger = {
+			scope:outcome = flag:duel
+			root = {
+				can_start_single_combat_trigger = yes
+			}
+			scope:beggar_ronin = {
+				can_start_single_combat_trigger = yes
+			}
+		}
+
+		stress_impact = {
+			wrathful = minor_stress_impact_loss
+			craven = major_stress_impact_gain
+		}
+
+		configure_start_single_combat_effect = {
+			SC_INITIATOR = scope:beggar_ronin
+			SC_ATTACKER = scope:beggar_ronin
+			SC_DEFENDER = root
+			FATALITY = always
+			FIXED = no
+			LOCALE = throne_room
+			OUTPUT_EVENT = l5r_yearly.0012
+			INVALIDATION_EVENT = single_combat.1006
+		}
+
+		ai_chance = {
+			base = 100
+			modifier = {	# Weight down for stress.
+				add = -100
+				has_trait = craven
+			}
+			modifier = {	# Weight up for stress.
+				add = 25
+				has_trait = wrathful
+			}
+		}
+	}
+
+}
+
+#	Post-SCE processing.
+l5r_yearly.0012 = {
+	hidden = yes
+	immediate = {
+		# Did the beggar_ronin won ?
+		if = {
+			limit = { scope:sc_victor = scope:beggar_ronin }
+			#Kill Root
+			death = {
+				death_reason = death_duel
+				killer = scope:beggar_ronin
+			}
+		}
+		# Otherwise, root won.
+		else = {
+			root = { trigger_event = l5r_yearly.0013 }
+		}
+	}
+}
+
+#	Bout ended, sort after effects.
+#TODO loc : fp1_yearly.2201 !!!!
+l5r_yearly.0013 = {
+	type = character_event
+	title = l5r_yearly.0013.t
+	desc = l5r_yearly.0013.desc
+
+	theme = death
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:beggar_ronin
+		animation = fear
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_combat_stinger"
+
+		scope:beggar_ronin = {
+			death = {
+				killer = root
+				death_reason = death_duel
+			}
+		}
+	}
+
+	# You won wouhou !
+	option = {
+		name = l5r_yearly.0013.a
+
+		# Hand out root's prestige.
+		add_prestige = major_prestige_gain
+		add_legitimacy = medium_legitimacy_gain
+	}	
+}
+
 
 
 

@@ -2,10 +2,31 @@
  ############################
  ###### General Yearly Events 
  ############################
- l5r_yearly.0001.t:0 "A new hobby ?"
+ # Becoming tea master
+ l5r_yearly.0001.t:0 "Evening Reflections"
  l5r_yearly.0001.desc:0 "Lately, I am developping a keen interest on the method of brewing teas, the tea ceremony as well as tea sets. Should I delve deeper into this new passion ? "
  l5r_yearly.0001.a:0 "I am now a tea master."
  l5r_yearly.0001.b:0 "I'll go to the onsen instead."
+
+ # Ronin begging for seppuku
+ l5r_yearly.0010.t:0 "A desperate request"
+ l5r_yearly.0010.desc:0 "A poorly dressed ronin comes to the door of my domain begging with a request. Having lost [beggar_ronin.GetHerHis] lord and thus [beggar_ronin.GetHerHis] honor, [beggar_ronin.GetFirstNameNoTooltip] asks me if [beggar_ronin.GetSheHe] can perform the ritual suicide, the seppuku, here. It is not the first time I've heard about such begging ronins, nor I've heard about such individual using this request as a bluff for to be given alms..." 
+ l5r_yearly.0010.a:0 "Go ask somewhere else."
+ l5r_yearly.0010.b:0 "I will give [beggar_ronin.GetHerHim] alms anyway."
+ l5r_yearly.0010.c:0 "Very well, you can enter."
+ l5r_yearly.0010.c.tt:0 "The ronin will enter your domain and will be pressed for seppuku. Unless that wasn't their objective..."
+ l5r_yearly.0011.t:0 "A desperate request"
+  l5r_yearly.0011.seppuku:0 "[beggar_ronin.GetFirstNameNoTooltip|U] sits down in the courtyard, surrounded by myself and my entourage. [my_knight.GetFirstNameNoTooltip|U] volunteers to be the second. After a few minutes of tense hesitation, [beggar_ronin.GetFirstNameNoTooltip|U] draws [beggar_ronin.GetHerHis] tanto and cut open [beggar_ronin.GetHerHis] stomach. [my_knight.GetFirstNameNoTooltip|U] accomplish the ritual by cutting [beggar_ronin.GetHerHis] head."
+ l5r_yearly.0011.hurt_knight:0 "[beggar_ronin.GetFirstNameNoTooltip|U] sits down in the courtyard, surrounded by myself and my entourage. [my_knight.GetFirstNameNoTooltip|U] volunteers to be the second. [beggar_ronin.GetFirstNameNoTooltip|U]'s hands begin to shake, and when pressed to actually perform the ritual, [beggar_ronin.GetSheHe] draws [beggar_ronin.GetHerHis] sword and starts attacking [my_knight.GetFirstNameNoTooltip], desesperate to escape the ritual. After a few sword exchange, [beggar_ronin.GetFirstNameNoTooltip] is killed by the rest of my entourage."
+ l5r_yearly.0011.duel:0 "[beggar_ronin.GetFirstNameNoTooltip|U] sits down in the courtyard, surrounded by myself and my entourage. [beggar_ronin.GetSheHe] then address directly me, demanding a duel to the death because of some old wrongs [beggar_ronin.GetSheHe] says I did to [beggar_ronin.GetHerHim]. My whole entourage looks at me, waiting for my decision. Refusing such a request might not be seen as an appropriate answer"
+ l5r_yearly.0011.a:0 "At least, [beggar_ronin.GetSheHe] died with honor."
+ l5r_yearly.0011.b:0 "I'll never trust ronins again."
+ l5r_yearly.0011.c:0 "I refuse. Guards, kill [beggar_ronin.GetHerHim]."
+ l5r_yearly.0011.d:0 "Very well, I'll kill you myself."
+ l5r_yearly.0011.d.tt:0 "You will enter a duel to the death with the ronin."
+ l5r_yearly.0013.t:0 "A desperate request"
+ l5r_yearly.0013.desc:0 "[beggar_ronin.GetFirstNameNoTooltip|U] bleeds on the white sand of my courtyard, dead. My entourage looks at me with a look of approval. I took the matter with my own hand and I did the right thing. Further more, I am now seen as both a just ruler and a deadly duellist."
+ l5r_yearly.0013.a:0 "I sheathe my weapon and walks away."
 
 
  # Mahotuksai stuff
