@@ -1133,8 +1133,20 @@
 316 = { # Shinomen Mori
 	winter_severity_bias = @severe_winter
 }
-317 = { # North Wall Mountains
+317 = { # North Wall Mountains 1 
 	winter_severity_bias = @extreme_winter
+}
+472 = { # North Wall Mountains 3
+	winter_severity_bias = @extreme_winter
+}
+473 = { # North Wall Mountains 2
+	winter_severity_bias = @extreme_winter
+}
+474 = { # wall_of_west_1 
+	winter_severity_bias = @cold_winter
+}
+475 = { # wall_of_west_2 
+	winter_severity_bias = @normal_winter
 }
 ### d_nekoma 
 ## c_nekoma_province 

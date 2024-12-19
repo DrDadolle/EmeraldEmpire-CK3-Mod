@@ -1679,28 +1679,6 @@ e_rokugan = {
 				 }
 			}
 		}
-		d_usagi = {
-			 color = { 235 102 79 }
-			 capital = c_usagi_province
-             definite_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
-			 
-			 c_usagi_province = {
-				 color = { 235 102 79 }
-
-				 b_shiro_usagi = {
-					 province = 258
-				 }
-				 b_kudo_mura = {
-					 province = 259
-				 }
-				 b_meidochi = {
-					 province = 260
-				 }
-                 b_usagi_mori = {
-                    province = 462
-                }
-			}
-		}
 		d_tsuruchi = {
 			 color = { 242 237 18 }
 			 capital = c_ashinagabachi_province
@@ -1867,148 +1845,10 @@ e_rokugan = {
                 }
            }
        }
-	}
-
-    #######################
-	###### West Shinomen lands
-	######### adding non-canon kingdom to proper display counties as vassal of the emperor
-    k_west_shinomen_mori = {
-        color = { 163 223 135 }
-
-        d_kaikoga= {
-            color = { 163 223 135 }
-            capital = c_kaikoga_province
-            definite_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
-            
-            c_kaikoga_province = {
-                color = { 50 120 153 }
-
-                b_shiro_kaikoga = {
-                    province = 406
-                }
-           }
-       }
-       d_toritaka = {
-            color = { 50 120 153 }
-            capital = c_toritaka_province
-            definite_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
-            
-            c_toritaka_province = {
-                color = { 50 120 153 }
-
-                b_shiro_toritaka = {
-                    province = 346
-                }
-                b_kyuden_toketsu = {
-                    province = 347
-                }
-             }
-         }
-
-         d_east_shinomen_monasteries= {
-            color = { 83 55 35 }
-
-            c_conflagration_temple = {
-                color = { 70 57 43 }
-
-                b_conflagration_temple = {
-                    province = 330
-                }
-            }
-            c_shinden_kasai = {
-                    color = { 52 35 17 }
-
-                    b_shinden_kasai = {
-                        province = 331
-                    }
-            }
-        }
-         d_west_shinomen_monasteries= {
-            color = { 83 55 35 }
-            
-            c_west_shinomen_monastery_1 = {
-                color = { 83 55 35 }
-
-                b_west_shinomen_monastery_1 = {
-                    province = 404
-                }
-             }
-             c_west_shinomen_monastery_2 = {
-                color = { 123 63 22 }
-
-                b_west_shinomen_monastery_2 = {
-                    province = 405
-                }
-             }
-             c_west_shinomen_monastery_3 = {
-                color = { 160 133 115 }
-
-                b_west_shinomen_monastery_3 = {
-                    province = 407
-                }
-             }
-             c_west_shinomen_monastery_4 = {
-                color = { 91 61 41}
-
-                b_west_shinomen_monastery_4 = {
-                    province = 408
-                }
-             }
-         }
-    }
-
-    #######################
-	###### South/East Shinomen lands
-	######### adding non-canon kingdom to proper display counties as vassal of the emperor
-    k_south_east_shinomen_mori = {
-        color = { 100 72 77 }
-        capital = c_south_shinomen_ronin_2
-
-        d_south_shinomen= {
-            color = { 100 72 77 }
-            capital = c_south_shinomen_ronin_2
-
-            c_south_shinomen_ronin_2 = {
-                color = { 100 72 77 }
-                b_south_shinomen_ronin_2 = {
-                    province = 414
-                }
-                b_cherry_blossom_village = {
-                    province = 415
-                }
-             }
-
-            c_south_shinomen_monastery_1 = {
-                color = { 133 119 108 }
-                b_south_shinomen_monastery_1 = {
-                    province = 412
-                }
-             }
-
-             c_south_shinomen_ronin_1 = {
-                color = { 103 49 12 }
-                b_south_shinomen_ronin_1 = {
-                    province = 413
-                }
-             }
-
-             c_south_shinomen_monastery_2 = {
-                color = { 153 118 94 }
-                b_south_shinomen_monastery_2 = {
-                    province = 416
-                }
-             }
-
-             c_south_shinomen_ronin_3 = {
-                color = { 73 41 20 }
-                b_south_shinomen_ronin_3 = {
-                    province = 417
-                }
-             }
-        }
-        d_ronin_central = {
-            color = { 139 80 18 }
-            capital = c_central_lands_ronin_4
+              
+       d_ronin_central = {
+        color = { 139 80 18 }
+        capital = c_central_lands_ronin_4
 
             c_central_lands_ronin_4 = {
                 color = { 139 80 18 }
@@ -2053,93 +1893,233 @@ e_rokugan = {
                     province = 402
                 }
             }
+        }
+        d_kintani_valley = {
+            color = { 218 165 32 }
+            capital = c_kintani_province
 
+            c_kintani_province = {
+               color = { 18 151 207 }
 
+               b_shiro_kyotei = {
+                   province = 45
+               }
+          }
+            
+            c_north_kintani_province = {
+                color = { 171 159 144 }
+
+                b_shinsei_monastery_1 = {
+                    province = 129
+                }
+           }
+            
+            c_kintani_mori_province = {
+                color = { 141 129 124 }
+
+                b_shinsei_monastery_2 = {
+                    province = 130
+                }
+                 b_kintani_mori_mura = {
+                    province = 131
+                }
+                 b_kintani_mori_empty = {
+                    province = 132
+                }
+           }
+           c_east_kintani_province = {
+                color = { 75 26 7 }
+
+                b_shinsei_monastery_3 = {
+                    province = 133
+                }
+           }
+                       
+       }
+       d_kintani_valley_2 = {
+           color = { 212 175 55 }
+            capital = c_toshi_rambo
+
+            c_toshi_rambo = {
+               color = { 71 206 191 }
+
+               b_toshi_rambo = {
+                   province = 323
+               }
+          }
+            
+           c_nanashi_mura_province = {
+                color = { 141 129 124 }
+
+                b_nanashi_mura = {
+                    province = 321
+                }
+           }
+           c_shinsei_monastery_rambo = {
+                color = { 141 129 124 }
+
+                b_shinsei_monastery_rambo = {
+                    province = 322
+                }
+                b_shinsei_monastery_rambo_empty = {
+                    province = 324
+                }
+           }       
+       }
+	}
+
+    #######################
+	###### West Shinomen lands
+	######### adding non-canon kingdom to proper display counties as vassal of the emperor
+    k_owl_clan = {
+        color = { 163 223 135 }
+
+        d_kaikoga= {
+            color = { 163 223 135 }
+            capital = c_kaikoga_province
+            definite_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
+            
+            c_kaikoga_province = {
+                color = { 50 120 153 }
+
+                b_shiro_kaikoga = {
+                    province = 406
+                }
+           }
+       }
+       d_toritaka = {
+            color = { 50 120 153 }
+            capital = c_toritaka_province
+            definite_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
+            
+            c_toritaka_province = {
+                color = { 50 120 153 }
+
+                b_shiro_toritaka = {
+                    province = 346
+                }
+                b_kyuden_toketsu = {
+                    province = 347
+                }
+             }
+         }
+
+        d_usagi = {
+            color = { 235 102 79 }
+            capital = c_usagi_province
+            definite_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
+            
+            c_usagi_province = {
+                color = { 235 102 79 }
+
+                b_shiro_usagi = {
+                    province = 258
+                }
+                b_kudo_mura = {
+                    province = 259
+                }
+                b_meidochi = {
+                    province = 260
+                }
+                b_usagi_mori = {
+                   province = 462
+               }
+           }
+       }
+
+        d_east_shinomen_monasteries= {
+            color = { 83 55 35 }
+
+            c_conflagration_temple = {
+                color = { 70 57 43 }
+
+                b_conflagration_temple = {
+                    province = 330
+                }
+            }
+            c_shinden_kasai = {
+                    color = { 52 35 17 }
+
+                    b_shinden_kasai = {
+                        province = 331
+                    }
+            }
+        }
+        d_west_shinomen_monasteries= {
+            color = { 83 55 35 }
+            
+            c_west_shinomen_monastery_1 = {
+                color = { 83 55 35 }
+
+                b_west_shinomen_monastery_1 = {
+                    province = 404
+                }
+             }
+             c_west_shinomen_monastery_2 = {
+                color = { 123 63 22 }
+
+                b_west_shinomen_monastery_2 = {
+                    province = 405
+                }
+             }
+             c_west_shinomen_monastery_3 = {
+                color = { 160 133 115 }
+
+                b_west_shinomen_monastery_3 = {
+                    province = 407
+                }
+             }
+             c_west_shinomen_monastery_4 = {
+                color = { 91 61 41}
+
+                b_west_shinomen_monastery_4 = {
+                    province = 408
+                }
+             }
+        }
+        d_south_shinomen= {
+            color = { 100 72 77 }
+            capital = c_south_shinomen_ronin_2
+
+            c_south_shinomen_ronin_2 = {
+                color = { 100 72 77 }
+                b_south_shinomen_ronin_2 = {
+                    province = 414
+                }
+                b_cherry_blossom_village = {
+                    province = 415
+                }
+             }
+
+            c_south_shinomen_monastery_1 = {
+                color = { 133 119 108 }
+                b_south_shinomen_monastery_1 = {
+                    province = 412
+                }
+             }
+
+             c_south_shinomen_ronin_1 = {
+                color = { 103 49 12 }
+                b_south_shinomen_ronin_1 = {
+                    province = 413
+                }
+             }
+
+             c_south_shinomen_monastery_2 = {
+                color = { 153 118 94 }
+                b_south_shinomen_monastery_2 = {
+                    province = 416
+                }
+             }
+
+             c_south_shinomen_ronin_3 = {
+                color = { 73 41 20 }
+                b_south_shinomen_ronin_3 = {
+                    province = 417
+                }
+             }
         }
     }
-		
-	#######################
-	###### Un-aligned lands
-	######### adding non-canon kingdom to proper display counties as vassal of the emperor
-	k_kintani_valley = {
-        color = { 212 175 55 }
-        capital = c_toshi_rambo
-
-		d_kintani_valley = {
-			 color = { 218 165 32 }
-			 capital = c_kintani_province
-
-             c_kintani_province = {
-                color = { 18 151 207 }
-
-                b_shiro_kyotei = {
-                    province = 45
-                }
-           }
-			 
-			 c_north_kintani_province = {
-				 color = { 171 159 144 }
-
-				 b_shinsei_monastery_1 = {
-					 province = 129
-				 }
-			}
-			 
-			 c_kintani_mori_province = {
-				 color = { 141 129 124 }
-
-				 b_shinsei_monastery_2 = {
-					 province = 130
-				 }
-				  b_kintani_mori_mura = {
-					 province = 131
-				 }
-				  b_kintani_mori_empty = {
-					 province = 132
-				 }
-			}
-			c_east_kintani_province = {
-				 color = { 75 26 7 }
-
-				 b_shinsei_monastery_3 = {
-					 province = 133
-				 }
-			}
-						
-		}
-		d_kintani_valley_2 = {
-			color = { 212 175 55 }
-			 capital = c_toshi_rambo
-
-             c_toshi_rambo = {
-                color = { 71 206 191 }
-
-                b_toshi_rambo = {
-                    province = 323
-                }
-           }
-			 
-			c_nanashi_mura_province = {
-                 color = { 141 129 124 }
- 
-                 b_nanashi_mura = {
-                     province = 321
-                 }
-			}
-			c_shinsei_monastery_rambo = {
-                 color = { 141 129 124 }
- 
-                 b_shinsei_monastery_rambo = {
-                     province = 322
-                 }
-				 b_shinsei_monastery_rambo_empty = {
-                     province = 324
-                 }
-			}
-
-		
-		}
-	}
  }
  
  #TODO title of master of elements Isawa as landless duchy titles ???

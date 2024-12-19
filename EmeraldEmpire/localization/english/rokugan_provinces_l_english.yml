@@ -441,7 +441,7 @@
  c_miya_province:0 "Miya"
  b_kyuden_miya:0 "Miya family Palace"
  ##### Minor Clans
- k_minor_clans:0 "Minor Clan Alliance"
+ k_minor_clans:0 "Unaligned Lands"
  d_kasuga:0 "Tortoise Clan"
  c_kasuga_province:0 "Kasuga"
  b_kyuden_kasuga:0 "Castle of the Tortoise"
@@ -524,7 +524,6 @@
  d_oriole:0 "Oriole Clan"
  d_bat:0 "Bat Clan"
  ##### Ronin / Monks / Unaligned Lands
- k_kintani_valley:0 "Golden Lands"
  d_kintani_valley:0 "Valley of Gold"
  c_north_kintani_province:0 "Ishikawa"
  b_shinsei_monastery_1:0 "Rocky River"
@@ -547,7 +546,6 @@
  b_rich_frog:0 "City of the Rich Frog"
  b_frog_mura:0 "Kaeru Mura"
  b_frog_temple:0 "Kaeru Temple"
- k_south_east_shinomen_mori:0 "Cherry Blossom Lands"
  d_south_shinomen:0 "Cherry Blossom"
  c_daidoji_yukan_see:0 "Yukan See"
  b_daidoji_yukan_see:0 "Valiant Daidoji Tower"
@@ -572,7 +570,7 @@
  b_central_lands_ronin_3:0 "Uragiru"
  c_central_lands_ronin_4:0 "Hankyaku"
  b_central_lands_ronin_4:0 "Hankyaku"
- k_west_shinomen_mori:0 "Lands of the Owl"
+ k_owl_clan:0 "Lands of the Owl"
  d_east_shinomen_monasteries:0 "Conflagration Monasteries"
  c_shinden_kasai:0 "Kasai"
  b_shinden_kasai:0 "Shinden Kasai"

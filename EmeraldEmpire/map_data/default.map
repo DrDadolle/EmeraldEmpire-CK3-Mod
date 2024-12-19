@@ -109,7 +109,10 @@ impassable_mountains = LIST { 409 410 463 }
 impassable_mountains = LIST { 316 }
 
 # Wall of the north
-impassable_mountains = LIST { 317 }
+impassable_mountains = LIST { 317 472 473 }
+
+# Wall of the West
+impassable_mountains = LIST { 474 475 }
 
 # uninhabited_islands
 impassable_mountains = LIST { 411 }
