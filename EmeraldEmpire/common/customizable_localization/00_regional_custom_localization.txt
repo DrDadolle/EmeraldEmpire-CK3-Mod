@@ -777,23 +777,24 @@ Abortifacient = {
 
 	random_valid = yes
 
-	text = {
-		localization_key = abortifacient_pennyroyal
-		weight_multiplier = {
-			base = 3
-		}
-		#Europe, North Africa, Middle East
-		trigger = {
-			location = {
-				OR = {
-					geographical_region = world_europe
-					geographical_region = world_asia_minor
-					geographical_region = world_middle_east
-					geographical_region = world_africa_north
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = abortifacient_pennyroyal
+	# 	weight_multiplier = {
+	# 		base = 3
+	# 	}
+	# 	#Europe, North Africa, Middle East
+	# 	trigger = {
+	# 		location = {
+	# 			OR = {
+	# 				geographical_region = world_europe
+	# 				geographical_region = world_asia_minor
+	# 				geographical_region = world_middle_east
+	# 				geographical_region = world_africa_north
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	text = {
 		localization_key = abortifacient_catmint
@@ -807,29 +808,31 @@ Abortifacient = {
 		trigger = {
 			location = {
 				OR = {
-					geographical_region = world_europe_south
-					geographical_region = world_asia_minor
-					geographical_region = world_middle_east
-					geographical_region = world_steppe
-					geographical_region = world_africa_north
+					#L5R Modified
+					geographical_region = rokugan_unicorn
+					# geographical_region = world_europe_south
+					# geographical_region = world_asia_minor
+					# geographical_region = world_middle_east
+					# geographical_region = world_steppe
+					# geographical_region = world_africa_north
 				}
 			}
 		}
 	}
-
-	text = {
-		localization_key = abortifacient_broadleaf_sage
-		#Mediterranean
-		trigger = {
-			location = {
-				OR = {
-					geographical_region = world_europe_south
-					geographical_region = world_asia_minor
-					geographical_region = world_africa_north
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = abortifacient_broadleaf_sage
+	# 	#Mediterranean
+	# 	trigger = {
+	# 		location = {
+	# 			OR = {
+	# 				geographical_region = world_europe_south
+	# 				geographical_region = world_asia_minor
+	# 				geographical_region = world_africa_north
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	text = {
 		localization_key = abortifacient_soapwort
@@ -837,11 +840,13 @@ Abortifacient = {
 		trigger = {
 			location = {
 				OR = {
-					geographical_region = world_europe
-					geographical_region = world_steppe
-					geographical_region = world_middle_east
-					geographical_region = world_india
-					geographical_region = world_tibet
+					#L5R Modified
+					geographical_region = world_rokugan
+					# geographical_region = world_europe
+					# geographical_region = world_steppe
+					# geographical_region = world_middle_east
+					# geographical_region = world_india
+					# geographical_region = world_tibet
 				}
 			}
 		}
@@ -853,30 +858,33 @@ Abortifacient = {
 		trigger = {
 			location = {
 				OR = {
-					geographical_region = world_africa
-					geographical_region = world_steppe
-					geographical_region = world_middle_east
-					geographical_region = world_india
-					geographical_region = world_tibet
+					#L5R Modified
+					geographical_region = world_rokugan
+					# geographical_region = world_africa
+					# geographical_region = world_steppe
+					# geographical_region = world_middle_east
+					# geographical_region = world_india
+					# geographical_region = world_tibet
 				}
 			}
 		}
 	}
 
-	text = {
-		localization_key = abortifacient_bishops_lace
-		#Christian only
-		#Europe and Southwest Asia
-		trigger = {
-			location = {
-				OR = {
-					geographical_region = world_europe
-					geographical_region = world_asia_minor
-					geographical_region = world_middle_east
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = abortifacient_bishops_lace
+	# 	#Christian only
+	# 	#Europe and Southwest Asia
+	# 	trigger = {
+	# 		location = {
+	# 			OR = {
+	# 				geographical_region = world_europe
+	# 				geographical_region = world_asia_minor
+	# 				geographical_region = world_middle_east
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	text = {
 		localization_key = abortifacient_wild_carrot
@@ -885,9 +893,11 @@ Abortifacient = {
 		trigger = {
 			location = {
 				OR = {
-					geographical_region = world_europe
-					geographical_region = world_asia_minor
-					geographical_region = world_middle_east
+					#L5R Modified
+					geographical_region = world_rokugan
+					# geographical_region = world_europe
+					# geographical_region = world_asia_minor
+					# geographical_region = world_middle_east
 				}
 			}
 		}
@@ -897,7 +907,11 @@ Abortifacient = {
 		localization_key = abortifacient_bitter_melon
 		#India
 		trigger = {
-			location = { geographical_region = world_india }
+			location = {
+				#L5R Modified
+				geographical_region = rokugan_spice_and_silk_isles
+				# geographical_region = world_india
+			}
 		}
 	}
 
@@ -905,7 +919,11 @@ Abortifacient = {
 		localization_key = abortifacient_nutmeg
 		#India
 		trigger = {
-			location = { geographical_region = world_india }
+			location = {
+				#L5R Modified
+				geographical_region = rokugan_spice_and_silk_isles
+				# geographical_region = world_india
+			}
 		}
 	}
 
@@ -913,17 +931,22 @@ Abortifacient = {
 		localization_key = abortifacient_saffron
 		#India
 		trigger = {
-			location = { geographical_region = world_india }
+			location = { 
+				#L5R Modified
+				geographical_region = rokugan_spice_and_silk_isles
+				# geographical_region = world_india
+			 }
 		}
 	}
 
-	text = {
-		localization_key = abortifacient_vervain
-		#Europe
-		trigger = {
-			location = { geographical_region = world_europe }
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = abortifacient_vervain
+	# 	#Europe
+	# 	trigger = {
+	# 		location = { geographical_region = world_europe }
+	# 	}
+	# }
 
 	#text = {
 	#	localization_key = abortifacient_mugwort
@@ -947,45 +970,46 @@ Abortifacient = {
 	# 	}
 	# }
 
-	text = {
-		localization_key = abortifacient_rue
-		#Same as herb-of-grace
-		#Balkans, Anatolia, Mediterranean
-		trigger = {
-			location = {
-				OR = {
-					geographical_region = world_europe_south
-					geographical_region = world_africa_north
-					geographical_region = world_asia_minor
-				}
-			}
-		}
-	}
-
-	text = {
-		localization_key = abortifacient_tansy
-		#Europe, Mediterranean
-		trigger = {
-			location = {
-				OR = {
-					geographical_region = world_europe
-					geographical_region = world_africa_north
-					geographical_region = world_asia_minor
-				}
-			}
-		}
-	}
-
-	text = {
-		localization_key = abortifacient_ergot
-		weight_multiplier = {
-			base = 3
-		}
-		#Europe
-		trigger = {
-			location = { geographical_region = world_europe }
-		}
-	}
+	#L5R Disabled
+	# text = {
+	# 	localization_key = abortifacient_rue
+	# 	#Same as herb-of-grace
+	# 	#Balkans, Anatolia, Mediterranean
+	# 	trigger = {
+	# 		location = {
+	# 			OR = {
+	# 				geographical_region = world_europe_south
+	# 				geographical_region = world_africa_north
+	# 				geographical_region = world_asia_minor
+	# 			}
+	# 		}
+	# 	}
+	# }
+	#L5R Disabled
+	# text = {
+	# 	localization_key = abortifacient_tansy
+	# 	#Europe, Mediterranean
+	# 	trigger = {
+	# 		location = {
+	# 			OR = {
+	# 				geographical_region = world_europe
+	# 				geographical_region = world_africa_north
+	# 				geographical_region = world_asia_minor
+	# 			}
+	# 		}
+	# 	}
+	# }
+	#L5R Disabled
+	# text = {
+	# 	localization_key = abortifacient_ergot
+	# 	weight_multiplier = {
+	# 		base = 3
+	# 	}
+	# 	#Europe
+	# 	trigger = {
+	# 		location = { geographical_region = world_europe }
+	# 	}
+	# }
 }
 
 

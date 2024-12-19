@@ -31,15 +31,18 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
 - Add thumbnail image for the mod !
+- Add event where ronin samurai wants to seppuku (ref to Harakiri)
+	- Refuse him (lose prestige & legimity)
+	- refuse him & give alms (lose money)
+	- authorize
+		- might kill one of your bushi at random 
+		- wants to duel to death you 
+		- he kill himself, you gain prestige and legitimity
+	
 
 
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)
-- restore court_events_general.txt from vanilla
-- Update "Reclaim Yasuki Family lands" & "Reborn Snake" decision
-	- check description Yasuki decision
-	- check yasuki crane culture (tribal)
-	- check chuda culture (tribal)
 - Why so much empty space in portrait debug mod ?
 - Create MaA for each great clan
 	- add special icons/images for MaA !!!!!!!!!!!!!!!!!!!!! (crab done, rest to do)
@@ -49,14 +52,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Based on shogunate mod
 		- common/coat_of_arms/template_lists coa_templates
 	- check ronins & church_holders
-- update regional_custom_loc with L5R References
-- update loc artifact_book_topic_travels_china with Burning Sands
-- update loc book_topic_learning_mahabharata
-- update loc book_topic_learning_mufaddaliyat
-- Why always fortunism faith goes heretic ? Up the base fervor of seven fortunes ?
-- Why always there is rebellion early game ? (especially in unicorn)
 - transform "mahotsukai" trait into the secret / trait combo of witch
-- finish localisation of religious stuff (like sacred text etc...)
 - more namelists & dynasty list
 
 ## Fixes to do

@@ -25,30 +25,30 @@
  shinseism_house_of_worship:0 "Monastery"
  shinseism_house_of_worship_plural:0 "Monasteries"
  shinseism_religious_symbol:0 "Crow"
- shinseism_religious_text:0 "Tao of Shinsei"
+ shinseism_religious_text:0 "tao"
  shinseism_religious_head_title:0 "Son of Heaven"
  shinseism_religious_head_title_name:0 "Kingdom of Heaven"
- shinseism_devotee_male:0 "shinseism_devotee_male"
- shinseism_devotee_male_plural:0 "shinseism_devotee_male_plural"
- shinseism_devotee_female:0 "shinseism_devotee_female"
- shinseism_devotee_female_plural:0 "shinseism_devotee_female_plural"
- shinseism_devotee_neuter:0 "shinseism_devotee_neuter"
- shinseism_devotee_neuter_plural:0 "shinseism_devotee_neuter_plural"
- shinseism_priest_male:0 "Monk"
- shinseism_priest_male_plural:0 "Monks"
- shinseism_priest_female:0 "Nun"
- shinseism_priest_female_plural:0 "Nuns"
- shinseism_priest_neuter:0 "shinseism_priest_neuter"
- shinseism_priest_neuter_plural:0 "shinseism_priest_neuter_plural"
- shinseism_alternate_priest_term_plural:0 "shinseism_alternate_priest_term_plural"
+ shinseism_devotee_male:0 "monk"
+ shinseism_devotee_male_plural:0 "monks"
+ shinseism_devotee_female:0 "nun"
+ shinseism_devotee_female_plural:0 "nuns"
+ shinseism_devotee_neuter:0 "monastic"
+ shinseism_devotee_neuter_plural:0 "monastics"
+ shinseism_priest_male:0 "chief monk"
+ shinseism_priest_male_plural:0 "chief monks"
+ shinseism_priest_female:0 "chief nun"
+ shinseism_priest_female_plural:0 "chief nuns"
+ shinseism_priest_neuter:0 "chief monastic"
+ shinseism_priest_neuter_plural:0 "chief monastics"
+ shinseism_alternate_priest_term_plural:0 "$shinseism_priest_neuter_plural$"
         
  ##############################
  #####    OTHER FAITHS    #####
  ##############################
 #Perfect lands sect doesn't recognize fortunes
  # Others
- religion_perfect_land_sect_gods:0 "religion_perfect_land_sect_gods"
- religion_perfect_land_sect_gods_2:0 "religion_perfect_land_sect_gods_2"
+ religion_perfect_land_sect_gods:0 "$shinseism_high_god_name$"
+ religion_perfect_land_sect_gods_2:0 "$shinseism_high_god_name$"
 
 
  # Perfect Earth Sect Faith
