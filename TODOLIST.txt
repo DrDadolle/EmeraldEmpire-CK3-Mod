@@ -25,22 +25,17 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Events ideas
 - more artifacts
 
+
 ## CK3 1.13.* patch
 - remove bunch of errors
-- change the "male only" succession
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
 - Add thumbnail image for the mod !
-- Change map (wall of the north) to divide it in 2/3 (to avoid phoenix clan with duchy mirumoto to border ALL the north)
-- Why Succession "Male Only" by default ?
+
 
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)
 - restore court_events_general.txt from vanilla
-- add moto culture AS hybrid culture ujik/unicorn
-- found Great Clan description decision
-	- missing description descision, issue with custom description
-- Tortoise clan always destroy their title, why ????
 - Update "Reclaim Yasuki Family lands" & "Reborn Snake" decision
 	- check description Yasuki decision
 	- check yasuki crane culture (tribal)
@@ -62,6 +57,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Why always there is rebellion early game ? (especially in unicorn)
 - transform "mahotsukai" trait into the secret / trait combo of witch
 - finish localisation of religious stuff (like sacred text etc...)
+- more namelists & dynasty list
 
 ## Fixes to do
 - Spammed with rokugan_char_interaction.0231 event boxes...

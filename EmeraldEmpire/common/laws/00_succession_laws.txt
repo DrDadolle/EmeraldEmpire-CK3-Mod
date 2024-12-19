@@ -914,12 +914,13 @@ succession_gender_laws = {
 				top_liege = { has_realm_law = male_only_law }
 			}
 			#L5R Disabled
-			# trigger_else = {
-			# 	faith = {
-			# 		has_doctrine = doctrine_gender_male_dominated
-			# 		religion_tag = islam_religion
-			# 	}
-			# }
+			trigger_else = {
+				always = no
+				# faith = {
+				# 	has_doctrine = doctrine_gender_male_dominated
+				# 	religion_tag = islam_religion
+				# }
+			}
 		}
 		succession = {
 			gender_law = male_only

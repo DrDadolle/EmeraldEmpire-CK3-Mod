@@ -3,7 +3,6 @@ d_ikoma = {
 		liege = "k_lion_clan"
 		holder = lineofikomaanakazu1 # Ikoma Anakazu
 		government = feudal_government
-		succession_laws = { high_partition_succession_law }
 	}
 }
 

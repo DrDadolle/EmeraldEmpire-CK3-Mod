@@ -2,7 +2,6 @@ d_matsu = {
 	1082.1.1 = { 
 		liege = "k_lion_clan"
 		government = feudal_government
-		succession_laws = { female_only_law }
 		holder = lineofmatsuuniri1 # Matsu Uniri
 	}
 	1100.1.1 = { 
@@ -14,7 +13,6 @@ c_yama_province = {
 	1082.1.1 = { 
 		liege = "d_matsu"
 		holder = lineofmatsuuniri1 # Matsu Uniri
-		succession_laws = { female_only_law }
 	}
 	1100.1.1 = { 
 		holder = lineofmatsuuniri2 # Matsu Tsuko
@@ -26,7 +24,6 @@ c_azuma_province = {
 	1082.1.1 = { 
 		liege = "d_matsu"
 		holder = lineofmatsuuniri1 # Matsu Uniri
-		succession_laws = { female_only_law }
 	}
 	1100.1.1 = { 
 		holder = lineofmatsuuniri2 # Matsu Tsuko
@@ -38,7 +35,6 @@ c_heigen_province = {
 	1082.1.1 = { 
 		liege = "d_matsu"
 		holder = lineofkoritome1 # Matsu Uniri
-		succession_laws = { female_only_law }
 	}
 	1100.1.1 = { 
 		holder = lineofkoritome1 # Koritome Aki #TODO change name
@@ -50,7 +46,6 @@ c_kaeru_province = {
 	1082.1.1 = { 
 		liege = "d_matsu"
 		holder = lineofmatsuuniri1 # Matsu Uniri
-		succession_laws = { female_only_law }
 	}
 	1100.1.1 = { 
 		holder = lineofmatsuuniri3 # Matsu Hiroru
@@ -62,7 +57,6 @@ c_tonfajutsen_province = {
 	1123.1.1 = { 
 		liege = "d_matsu"
 		holder = placeholdermatsu1 
-		succession_laws = { female_only_law }
 		change_development_level = 10
 	}
 }
@@ -71,7 +65,6 @@ c_yojin_province = {
 	1123.1.1 = { 
 		liege = "d_matsu"
 		holder = placeholdermatsu1 
-		succession_laws = { female_only_law }
 		change_development_level = 20
 	}
 }
@@ -80,7 +73,6 @@ c_gakka_province = {
 	1123.1.1 = { 
 		liege = "d_matsu"
 		holder = placeholdermatsu2 
-		succession_laws = { female_only_law }
 		change_development_level = 10
 	}
 }
@@ -89,7 +81,6 @@ c_chugen_province = {
 	1123.1.1 = { 
 		liege = "d_matsu"
 		holder = placeholdermatsu2 
-		succession_laws = { female_only_law }
 		change_development_level = 10
 	}
 }

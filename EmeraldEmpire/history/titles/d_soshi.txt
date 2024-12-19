@@ -3,7 +3,6 @@ d_soshi = {
 		liege = "k_scorpion_clan"
 		holder = lineofsoshishiori1 # Soshi Shiori
 		government = feudal_government
-		succession_laws = { high_partition_succession_law }
 	}
 
 }

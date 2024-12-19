@@ -4,7 +4,6 @@ k_phoenix_clan = {
 		liege = "e_rokugan"
 		# holder = kami Shiba
 		government = feudal_government
-		succession_laws = { high_partition_succession_law }
 	}
 	# 43.1.1 = {
 	# 	succession_laws = { phoenix_elective_succession_law }

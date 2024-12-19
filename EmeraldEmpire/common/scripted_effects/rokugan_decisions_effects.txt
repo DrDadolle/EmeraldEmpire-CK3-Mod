@@ -16,6 +16,8 @@ create_custom_major_clan_effect = {
 			custom_tooltip = create_custom_kingdom_de_jure_changes
 		}
 	}
+	#TODO
+	custom_tooltip = create_custom_major_clan_de_jure_changes_ally
 
 	hidden_effect = {
 		save_scope_as = founder

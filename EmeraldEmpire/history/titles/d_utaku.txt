@@ -2,7 +2,6 @@ d_utaku = {
 	1111.1.1 = {
 		liege = "k_unicorn_clan"
 		government = feudal_government
-		succession_laws = { female_only_law }
 		holder = lineofutakurumaru1 # Utaku Rumaru
 	}
 }
@@ -11,7 +10,6 @@ c_manaka_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = lineofutakurumaru1 # Utaku Rumaru
-		succession_laws = { female_only_law }
 		change_development_level = 15
 	}
 }
@@ -28,7 +26,6 @@ c_isei_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = placeholderutaku1
-		succession_laws = { female_only_law }
 		change_development_level = 5
 	}
 }
@@ -37,7 +34,6 @@ c_tsuriai_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = placeholderutaku1
-		succession_laws = { female_only_law }
 		change_development_level = 8
 	}
 }
@@ -46,7 +42,6 @@ c_koubaku_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = placeholderutaku2
-		succession_laws = { female_only_law }
 		change_development_level = 5
 	}
 }
@@ -55,7 +50,6 @@ c_senseki_province = {
 	1111.1.1 = {
 		liege = "d_utaku"
 		holder = placeholderutaku2
-		succession_laws = { female_only_law }
 		change_development_level = 0
 	}
 }

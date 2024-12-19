@@ -78,10 +78,11 @@ found_major_clan_decision = {
 		# TODO replace with custom_kingdom effect !!
 
 		# all allies with opinion > 25 will join as vassal in your new kingdom !
-		custom_description_no_bullet = {
-			text = create_custom_major_clan_de_jure_changes_ally
-		}
-		create_custom_major_clan_effect = yes
+		# custom_description_no_bullet = {
+		# 	text = create_custom_major_clan_de_jure_changes_ally
+			create_custom_major_clan_effect = yes
+		# }
+
 		if = {
 			limit = {
 				is_ai = no
@@ -97,11 +98,6 @@ found_major_clan_decision = {
 			}
 		}
 
-		# custom_description = {
-		# 	text = create_custom_major_clan_de_jure_changes_ally
-		# }
-
-		##TODO : Add Dynasty & legitimacy ?
 		add_legitimacy = major_legitimacy_gain
 		dynasty = { add_dynasty_prestige = 1000 }
 	}

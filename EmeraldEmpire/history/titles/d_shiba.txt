@@ -3,7 +3,6 @@ d_shiba = {
 		liege = "k_phoenix_clan"
 		holder = lineofshiba1 # Shiba Ujimitsu
 		government = feudal_government
-		succession_laws = { high_partition_succession_law }
 	}
 	1123.4.25 = {
 		holder = lineofshiba2 # Shiba Tsukune
