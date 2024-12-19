@@ -13,6 +13,7 @@
 		tradition_forest_folk
 		tradition_welcoming
 		tradition_vegetarianism
+		tradition_friend_spirits
 	}
    
 	name_list = name_list_crane_family
@@ -42,6 +43,7 @@ moshi = {
 		tradition_female_only_inheritance
 		tradition_mountain_homes
 		tradition_charitable
+		tradition_friend_spirits
 	}
    
 	name_list = name_list_crane_family
@@ -96,7 +98,7 @@ tonbo = {
 		tradition_bushido
 		tradition_esteemed_hospitality
 		tradition_mountain_homes
-		tradition_philosopher_culture
+		tradition_friend_spirits
 	}
    
 	name_list = name_list_crane_family
@@ -124,6 +126,7 @@ toritaka = {
 			tradition_bushido
 			tradition_warrior_monks # For combat shugenja ?
 			tradition_yokai_hunter # new custom tradition, mix of philosopher & hunter.
+			tradition_friend_spirits
 	}
    
 	name_list = name_list_crane_family
@@ -319,6 +322,7 @@ komori = {
 			tradition_bushido
 			tradition_seafaring
 			tradition_philosopher_culture
+			tradition_friend_spirits
 	}
    
 	name_list = name_list_crane_family
@@ -346,6 +350,7 @@ shika = {
 			tradition_bushido
 			tradition_wedding_ceremonies
 			tradition_forest_folk
+			tradition_friend_spirits
 	}
    
 	name_list = name_list_crane_family
@@ -369,7 +374,7 @@ kaikoga = {
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
-			tradition_philosopher_culture #Placeholder for shugenja families
+			tradition_friend_spirits
 	}
    
 	name_list = name_list_crane_family
@@ -396,7 +401,7 @@ chuda = { # Defunct culture
 	martial_custom = martial_custom_equal
 	traditions = {
 			tradition_bushido
-			tradition_philosopher_culture #Placeholder for shugenja families
+			tradition_friend_spirits
 			tradition_eye_for_an_eye
 	}
    

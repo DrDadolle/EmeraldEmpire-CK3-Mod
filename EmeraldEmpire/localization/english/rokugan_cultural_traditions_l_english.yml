@@ -8,5 +8,14 @@
 
  tradition_yokai_hunter_name:0 "Yokai Hunters"
  tradition_yokai_hunter_desc:0 "This culture specializes in tracking, hunting and killing dangerous spirits known as yokais."
+
+ tradition_friend_spirits_name:0 "Friends of the Spirits"
+ tradition_friend_spirits_desc:0 "This culture is well-known for having an unusual amount of shindoshi among them, and they are particulary pious and reverent of the elemental spirits.."
+
+ tradition_child_isawa_name:0 "Children of Isawa"
+ tradition_child_isawa_desc:0 "This culture follows the traditions set up by Isawa himself. As such, a large amount of shindoshi can be found among them."
  # Cultural Parameter
  culture_parameter_can_seppuku:1 "Gain a [decision|E] to do seppuku when the character is [prestige_i][GetModifier( 'prestige_level_0' ).GetNameWithTooltip|L]"
+ culture_parameter_shindoshi_ishiken_born_more_often:0 "[children|E] are more likely be born with the [GetTrait('shindoshi').GetName( GetNullCharacter )] [trait|E] or the [GetTrait('ishiken').GetName( GetNullCharacter )] [trait|E]"
+ culture_parameter_better_invocation_result:0 "Characters have more chance to have good outcomes during [decision|E] or events with the spirits."
+ culture_parameter_isawa_shindoshi_ishiken_born_more_often:0 "[children|E] are way likely be born with the [GetTrait('shindoshi').GetName( GetNullCharacter )] [trait|E] or the [GetTrait('ishiken').GetName( GetNullCharacter )] [trait|E]"

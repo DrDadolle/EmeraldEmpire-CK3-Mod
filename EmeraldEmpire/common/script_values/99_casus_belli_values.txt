@@ -496,7 +496,7 @@ common_cb_prestige_cost_multiplier_core = {
 			war_declarer_declaring_war_on_imperial_family = yes
 		}
 		multiply = {
-			value = 20
+			value = l5r_war_vs_imperial_penality
 			desc = "CB_ATTACK_IMPERIAL_EDICT_VS_IMPERIAL_FAMILY"
 		}
 	}
@@ -508,7 +508,7 @@ common_cb_prestige_cost_multiplier_core = {
 			war_declarer_not_respecting_imperial_peace = yes
 		}
 		multiply = {
-			value = 5 
+			value = l5r_war_vs_smaller_clan_penality 
 			desc = "CB_ATTACK_IMPERIAL_EDICT_WEAKER_CLAN"
 		}
 	}
@@ -521,7 +521,7 @@ common_cb_prestige_cost_multiplier_core = {
 			war_declarer_declaring_great_clan_war = yes
 		}
 		multiply = {
-			value = 2
+			value = l5r_war_between_major_clans_penality
 			desc = "CB_ATTACK_IMPERIAL_EDICT_GREAT_CLAN_WAR"
 		}
 	}

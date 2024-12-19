@@ -702,18 +702,119 @@ on_birth_child = {
 				}
 			}
 		}
-
-		hidden_effect = { # Track El Cid's Lineage (FP2) for achievement
+		#L5R Added
+		#  Doji, Kakita & Daidoji should have white hair children more often !
+		hidden_effect = {
 			if = {
-				limit = { 
-					OR = {
-						scope:real_father = { has_character_flag = fp2_el_cid_blood_relation_legacy }
-						scope:mother = { has_character_flag = fp2_el_cid_blood_relation_legacy }
+				limit = {
+					exists = scope:child.dynasty
+					scope:child.dynasty = {
+						OR = {
+							this = dynasty:dynasty_doji
+							this = dynasty:dynasty_kakita
+							this = dynasty:dynasty_daidoji
+						}
+
+					 }
+					OR = { # The child must have a real parent of the Dynasty...
+						scope:mother.dynasty = scope:child.dynasty
+						scope:real_father.dynasty = scope:child.dynasty
 					}
-				}				
-				scope:child = { add_character_flag = fp2_el_cid_blood_relation_legacy }
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_trait = natural_white_hair
+						}
+					}
+					random = {
+						chance = crane_white_hair_chance
+						modifier = {
+							add = crane_white_hair_extra_player_chance
+							any_parent = { is_ai = no }
+						}
+						add_trait = natural_white_hair
+					}
+				}
 			}
 		}
+
+
+		# More Shindoshi if tradition friend of the spirit
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = scope:child.dynasty
+					scope:child.culture = {	
+						OR = { 
+							has_cultural_parameter = shindoshi_ishiken_born_more_often
+							has_cultural_parameter = isawa_shindoshi_ishiken_born_more_often
+						}
+					}
+					OR = { # The child must have a real parent of the Culture...
+						scope:mother.culture = scope:child.culture
+						scope:real_father.culture = scope:child.culture
+					}
+				}
+				#Try to add more common shindoshi trait
+				if = {
+					limit = {
+						NOR = {
+							has_trait = ishiken
+							has_trait = shindoshi
+						}
+					}
+					random = {
+						chance = shindoshi_chance
+						modifier = {
+							add = shindoshi_extra_player_chance
+							any_parent = { is_ai = no }
+						}
+						modifier = {
+							add = isawa_shindoshi_extra_chance
+							scope:child.culture = { has_cultural_parameter = isawa_shindoshi_ishiken_born_more_often }
+						}
+						add_trait = shindoshi
+					}
+				}
+				# Try to add less common ishiken trait
+				if = {
+					limit = {
+						NOR = {
+							has_trait = ishiken
+							has_trait = shindoshi
+						}
+					}
+					random = {
+						chance = ishiken_chance
+						modifier = {
+							add = ishiken_extra_player_chance
+							any_parent = { is_ai = no }
+						}
+						modifier = {
+							add = isawa_ishiken_extra_chance
+							scope:child.culture = { has_cultural_parameter = isawa_shindoshi_ishiken_born_more_often }
+						}
+						add_trait = ishiken
+					}
+				}
+			}
+		}
+
+
+
+		#L5R Disabled
+		# hidden_effect = { # Track El Cid's Lineage (FP2) for achievement
+		# 	if = {
+		# 		limit = { 
+		# 			OR = {
+		# 				scope:real_father = { has_character_flag = fp2_el_cid_blood_relation_legacy }
+		# 				scope:mother = { has_character_flag = fp2_el_cid_blood_relation_legacy }
+		# 			}
+		# 		}				
+		# 		scope:child = { add_character_flag = fp2_el_cid_blood_relation_legacy }
+		# 	}
+		# }
 	}
 }
 
