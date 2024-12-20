@@ -333,15 +333,16 @@ court_physician_court_position = {
 	salary = {
 		gold = {
 			value = court_position_physician_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = court_physician } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = court_physician } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
@@ -1744,15 +1745,16 @@ cultural_emissary_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = cultural_emissary } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = cultural_emissary } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -1984,15 +1986,16 @@ keeper_of_swans_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = keeper_of_swans } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = keeper_of_swans } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -2775,15 +2778,16 @@ court_gardener_court_position = {
 		round = no
 		gold = {
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = court_gardener } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = court_gardener } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -3007,15 +3011,16 @@ lady_in_waiting_court_position = {
 		round = no
 		gold = {
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = lady_in_waiting } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = lady_in_waiting } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -3394,15 +3399,16 @@ antiquarian_court_position = {
 		round = no
 		gold = {
 			value = court_position_antiquarian_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = antiquarian } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = antiquarian } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -3924,15 +3930,16 @@ travel_leader_court_position = {
 		round = no
 		gold = {
 			value = court_position_travel_leader_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = travel_leader } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = travel_leader } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -4279,15 +4286,16 @@ wet_nurse_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = wet_nurse } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = wet_nurse } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -4718,15 +4726,16 @@ court_tutor_court_position = {
 		round = no
 		gold = {
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = court_tutor } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = court_tutor } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -5035,15 +5044,16 @@ food_taster_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = food_taster } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = food_taster } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -5286,15 +5296,16 @@ master_of_horse_court_position = {
 		round = no
 		gold = {
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = master_of_horse } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = master_of_horse } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -5586,15 +5597,16 @@ master_of_hunt_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = master_of_hunt } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = master_of_hunt } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved with obligation hook
 			else_if = {
 				limit = { 
@@ -5828,15 +5840,16 @@ royal_architect_court_position = {
 		round = no
 		gold = {
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = royal_architect } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = royal_architect } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -6135,15 +6148,16 @@ high_almoner_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = high_almoner } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = high_almoner } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -6365,15 +6379,16 @@ seneschal_court_position = {
 		round = no
 		gold = {
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = seneschal } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = seneschal } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -6626,15 +6641,16 @@ cupbearer_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = cupbearer } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = cupbearer } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -6859,15 +6875,16 @@ chief_eunuch_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = chief_eunuch } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = chief_eunuch } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -7139,15 +7156,16 @@ court_jester_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = court_jester } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = court_jester } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -7478,15 +7496,16 @@ court_poet_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = court_poet } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = court_poet } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -7779,15 +7798,16 @@ court_musician_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = court_musician } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = court_musician } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = {
@@ -8268,15 +8288,16 @@ bodyguard_court_position = {
 		round = no
 		gold = {
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = bodyguard } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = bodyguard } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -8647,15 +8668,16 @@ champion_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = champion } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = champion } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -8896,15 +8918,16 @@ executioner_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = executioner } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = executioner } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -9169,15 +9192,16 @@ court_artificer_court_position = {
 		round = no
 		gold = {
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = court_artificer } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = court_artificer } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -9448,16 +9472,16 @@ cave_hermit_court_position = {
 		gold = {
 			# Update X_salary_tooltip if script_value is changed
 			value = court_position_antiquarian_salary #it's cheap to maintain a hermit in a cave
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = cave_hermit } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = cave_hermit } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -9838,15 +9862,16 @@ master_assassin_court_position = {
 		round = no
 		gold = {
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = master_assassin } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = master_assassin } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = {
@@ -10175,15 +10200,16 @@ court_scholar_court_position = {
 		round = no
 		gold = {
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = court_scholar } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = court_scholar } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 
@@ -10463,15 +10489,16 @@ chronicler_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = chronicler } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = chronicler } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = {
@@ -10778,15 +10805,16 @@ court_brewmaster_court_position = {
 		round = no
 		gold = {
 			value = minor_court_position_salary # Update X_salary_tooltip if script_value is changed
+			#L5R Disabled
 			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = court_brewmaster } }
-				multiply = {
-					value = 0.0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			# if = {
+			# 	limit = { court_position_inner_circle_salary_trigger = { POS = court_brewmaster } }
+			# 	multiply = {
+			# 		value = 0.0
+			# 		desc = inner_circle_salary_mod
+			# 		format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+			# 	}
+			# }
 			# Halved via obligation hook
 			else_if = {
 				limit = { 

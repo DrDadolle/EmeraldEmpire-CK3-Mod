@@ -8423,14 +8423,15 @@ faith_warrior = {
 				trigger = { NOT = { exists = this } }
 				desc = faith_warrior.dds
 			}
-			triggered_desc = {
-				trigger = { faith = { religion_tag = christianity_religion } }
-				desc = crusader.dds
-			}
-			triggered_desc = {
-				trigger = { faith = { religion_tag = islam_religion } }
-				desc = mujahid.dds
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = { faith = { religion_tag = christianity_religion } }
+			# 	desc = crusader.dds
+			# }
+			# triggered_desc = {
+			# 	trigger = { faith = { religion_tag = islam_religion } }
+			# 	desc = mujahid.dds
+			# }
 			desc = faith_warrior.dds
 		}
 	}

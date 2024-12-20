@@ -1223,9 +1223,11 @@ lancer_attribute = {
 		culture ?= {
 			OR = {
 				has_innovation = innovation_arched_saddle
-				has_cultural_tradition = tradition_caucasian_wolves
+				#L5R Disabled
+				# has_cultural_tradition = tradition_caucasian_wolves
 				has_cultural_tradition = tradition_roman_legacy
-				has_innovation = innovation_valets
+				#L5R Disabled
+				# has_innovation = innovation_valets
 				has_cultural_tradition = tradition_ep3_audacious_cadets
 				has_cultural_tradition = tradition_ep3_imperial_tagmata
 			}
