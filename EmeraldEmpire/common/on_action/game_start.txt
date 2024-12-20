@@ -337,9 +337,40 @@ on_game_start_after_lobby = {
 					VARIABLE = started_one_of_a_kind_achievement
 						VALUE = yes
 				}
+				## 14. Sir Lance-a-Lot
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_sir_lance_a_lot_achievement
+					VALUE = yes
+				}
 				# 15. I'm in my Element(s)
 				add_achievement_global_variable_effect = {
 					VARIABLE = started_im_in_my_elements_achievement
+					VALUE = yes
+				}
+				# EP2
+				## 01. The Grandest Tour
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_the_grandest_tour_achievement
+					VALUE = yes
+				}
+				## 02. Your Eternal Reward
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_your_eternal_reward_achievement
+					VALUE = yes
+				}
+				## 03. Imperial March
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_imperial_march_achievement
+					VALUE = yes
+				}
+				## 04. Black Dinner
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_black_dinner_achievement
+					VALUE = yes
+				}
+				## 05. There and Back Again
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_there_and_back_again_achievement
 					VALUE = yes
 				}
 			}

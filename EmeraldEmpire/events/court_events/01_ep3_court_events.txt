@@ -3278,8 +3278,9 @@ scripted_effect court_8301_position_effect = {
 	court_8301_aptitude_effect = { POS = court_physician VALUE = $VALUE$ }
 	court_8301_aptitude_effect = { POS = cultural_emissary VALUE = $VALUE$ }
 	court_8301_aptitude_effect = { POS = keeper_of_swans VALUE = $VALUE$ }
-	court_8301_aptitude_effect = { POS = chief_qadi VALUE = $VALUE$ }
-	court_8301_aptitude_effect = { POS = garuda VALUE = $VALUE$ }
+	#L5R Disabled
+	# court_8301_aptitude_effect = { POS = chief_qadi VALUE = $VALUE$ }
+	# court_8301_aptitude_effect = { POS = garuda VALUE = $VALUE$ }
 	court_8301_aptitude_effect = { POS = court_gardener VALUE = $VALUE$ }
 	court_8301_aptitude_effect = { POS = lady_in_waiting VALUE = $VALUE$ }
 	court_8301_aptitude_effect = { POS = antiquarian VALUE = $VALUE$ }
@@ -3307,7 +3308,8 @@ scripted_effect court_8301_position_effect = {
 	court_8301_aptitude_effect = { POS = court_scholar VALUE = $VALUE$ }
 	court_8301_aptitude_effect = { POS = charioteer VALUE = $VALUE$ }
 	court_8301_aptitude_effect = { POS = bookmaker VALUE = $VALUE$ }
-	court_8301_aptitude_effect = { POS = akolouthos VALUE = $VALUE$ }
+	#L5R Disabled
+	# court_8301_aptitude_effect = { POS = akolouthos VALUE = $VALUE$ }
 	court_8301_aptitude_effect = { POS = court_brewmaster VALUE = $VALUE$ }
 }
 

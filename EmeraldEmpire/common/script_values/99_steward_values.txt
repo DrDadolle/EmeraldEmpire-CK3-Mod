@@ -635,6 +635,60 @@ steward_promote_culture_contextual_bonuses = {
 	# 		desc = STRUGGLE_EASIER_TO_CULTURE_CONVERT_DUE_TO_STRUGGLE_PHASE_MODIFIER
 	# 	}
 	# }
+	#L5R Disabled
+	# Decisions
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			scope:councillor_liege.culture = { has_cultural_pillar = heritage_goidelic }
+	# 			scope:councillor_liege.culture = { has_cultural_pillar = heritage_brythonic }
+	# 		}
+	# 		exists = scope:county
+	# 		scope:county = {
+	# 			has_county_modifier = reclaim_britannia_culture_modifier
+	# 			NOR= {
+	# 				culture = { has_cultural_pillar = heritage_goidelic }
+	# 				culture = { has_cultural_pillar = heritage_brythonic }
+	# 			}
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = promote_culture_reclaimed_brittania_bonus
+	# 		desc = STEWARD_PROMOTE_CULTURE_RECLAIMING_BRITANNIA
+	# 	}
+	# }
+
+	# if = {
+	# 	limit = {
+	# 		scope:county.culture ?= { has_cultural_pillar = heritage_iranian }
+	# 		exists = global_var:fp3_struggle_ending  
+	# 		global_var:fp3_struggle_ending = flag:fp3_struggle_rekindle_iran_ending
+
+	# 		NOT = {
+	# 			scope:councillor_liege.culture = { has_same_culture_heritage = scope:county.culture }
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = conversion_culture_resistant_to_culture_change
+	# 		desc = struggle_persia_ending_rekindle_iran_harder_to_convert_culture_reason
+	# 	}
+	# }
+
+	# if = {
+	# 	limit = {
+	# 		scope:councillor_liege.culture = { has_cultural_pillar = heritage_iranian }
+	# 		exists = global_var:fp3_struggle_ending  
+	# 		global_var:fp3_struggle_ending = flag:fp3_struggle_rekindle_iran_ending
+
+	# 		NOT = {
+	# 			scope:councillor_liege.culture = { has_same_culture_heritage = scope:county.culture }
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = conversion_culture_easy
+	# 		desc = struggle_persia_ending_rekindle_iran_harder_to_convert_culture_reason
+	# 	}
+	# }
 	# Events
 	if = { 
 		limit = {

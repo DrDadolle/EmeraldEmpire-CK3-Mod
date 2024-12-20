@@ -24290,25 +24290,34 @@ scripted_trigger hold_court_8200_infidel_trigger = {
 	is_available_ai_adult = yes
 	NOT = { faith = root.faith }
 	NOR = {
-		AND = { # Eastern
-			religion = { is_in_family = rf_eastern }
-			root.faith = { has_doctrine = tenet_eastern_syncretism }
+		#L5R Modified
+		# AND = { # Eastern
+		# 	religion = { is_in_family = rf_eastern }
+		# 	root.faith = { has_doctrine = tenet_eastern_syncretism }
+		# }
+		# AND = { # Pagan
+		# 	faith = { has_doctrine_parameter = unreformed }
+		# 	root.faith = { has_doctrine = tenet_unreformed_syncretism }
+		# }
+		# AND = { # Christian
+		# 	religion = religion:christianity_religion
+		# 	root.faith = { has_doctrine = tenet_christian_syncretism }
+		# }
+		# AND = { # Islam
+		# 	religion = religion:islam_religion
+		# 	root.faith = { has_doctrine = tenet_islamic_syncretism }
+		# }
+		# AND = { # Judaism
+		# 	religion = religion:judaism_religion
+		# 	root.faith = { has_doctrine = tenet_jewish_syncretism }
+		# }
+		AND = { # Rokugan
+			scope:peasant.faith.religion = { is_in_family = rf_rokugan }
+			faith = { has_doctrine = tenet_rokugani_syncretism }
 		}
-		AND = { # Pagan
-			faith = { has_doctrine_parameter = unreformed }
-			root.faith = { has_doctrine = tenet_unreformed_syncretism }
-		}
-		AND = { # Christian
-			religion = religion:christianity_religion
-			root.faith = { has_doctrine = tenet_christian_syncretism }
-		}
-		AND = { # Islam
-			religion = religion:islam_religion
-			root.faith = { has_doctrine = tenet_islamic_syncretism }
-		}
-		AND = { # Judaism
-			religion = religion:judaism_religion
-			root.faith = { has_doctrine = tenet_jewish_syncretism }
+		AND = { #  Shadowlands
+			scope:peasant.faith.religion = { is_in_family = rf_shadowlands }
+			faith = { has_doctrine = tenet_shadowlands_syncretism }
 		}
 	}
 	NAND = {
