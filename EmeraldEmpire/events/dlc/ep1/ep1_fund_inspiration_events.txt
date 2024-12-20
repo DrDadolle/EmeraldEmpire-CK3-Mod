@@ -1032,12 +1032,13 @@ scripted_trigger fund_inspiration_0031_title_based_option_trigger = {
 			exists = global_var:found_kingdom_decision_kingdom
 			NOT = { exists = scope:book_topic_creation }
 		}
-		AND = {
-			exists = global_var:found_empire_decision
-			global_var:found_empire_decision = root
-			exists = global_var:found_empire_decision_empire
-			NOT = { exists = scope:book_topic_creation }
-		}
+		#L5R Disabled
+		# AND = {
+		# 	exists = global_var:found_empire_decision
+		# 	global_var:found_empire_decision = root
+		# 	exists = global_var:found_empire_decision_empire
+		# 	NOT = { exists = scope:book_topic_creation }
+		# }
 	}
 }
 
@@ -1475,12 +1476,32 @@ scripted_effect fund_inspiration_0031_pick_options_to_show_effect = {
 						save_scope_as = created_title
 					}
 				}
+				#L5R Disabled
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:found_empire_decision
+				# 			global_var:found_empire_decision = root
+				# 			exists =  global_var:found_empire_decision_empire
+				# 		}
+				# 		NOT = { exists = scope:book_topic_creation }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_creation
+				# 		value = yes
+				# 	}
+				# 	global_var:found_empire_decision_empire = {
+				# 		save_scope_as = created_title
+				# 	}
+				# }
+				#L5R Added
+				# Snake Clan Reborn
 				else_if = {
 					limit = {
 						AND = {
-							exists = global_var:found_empire_decision
-							global_var:found_empire_decision = root
-							exists =  global_var:found_empire_decision_empire
+							exists = global_var:reborn_snake_clan_decision
+							global_var:reborn_snake_clan_decision = root
+							exists =  global_var:reborn_snake_clan_decision_duchy
 						}
 						NOT = { exists = scope:book_topic_creation }
 					}
@@ -1488,10 +1509,47 @@ scripted_effect fund_inspiration_0031_pick_options_to_show_effect = {
 						name = book_topic_creation
 						value = yes
 					}
-					global_var:found_empire_decision_empire = {
+					global_var:reborn_snake_clan_decision_duchy = {
 						save_scope_as = created_title
 					}
 				}
+				# Great Clan Creation
+				else_if = {
+					limit = {
+						AND = {
+							exists = global_var:found_major_clan_decision
+							global_var:found_major_clan_decision = root
+							exists =  global_var:found_major_clan_decision_kingdom
+						}
+						NOT = { exists = scope:book_topic_creation }
+					}
+					save_scope_value_as = {
+						name = book_topic_creation
+						value = yes
+					}
+					global_var:found_major_clan_decision_kingdom = {
+						save_scope_as = created_title
+					}
+				}
+				# Minor Creation
+				else_if = {
+					limit = {
+						AND = {
+							exists = global_var:found_minor_clan_decision
+							global_var:found_minor_clan_decision = root
+							exists =  global_var:found_minor_clan_decision_duchy
+						}
+						NOT = { exists = scope:book_topic_creation }
+					}
+					save_scope_value_as = {
+						name = book_topic_creation
+						value = yes
+					}
+					global_var:found_minor_clan_decision_duchy = {
+						save_scope_as = created_title
+					}
+				}
+				
 			}
 			5 = { # Dynasty
 				trigger = {

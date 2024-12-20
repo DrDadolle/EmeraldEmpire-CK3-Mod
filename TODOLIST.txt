@@ -30,13 +30,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - remove bunch of errors
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
+- Add onsen line of eco building
+- Add event  drinking tea
 - Add thumbnail image for the mod !
-		
-  Error: Invalid left side during comparison 'var'
-  Script location: file: common/customizable_localization/00_signature_weapon_custom_localization.txt line: 380 (SignatureWeaponAttemptedHeavyPlural)
-  
-    Error: Failed to fetch a valid faith 'catholic'
-  Script location: file: common/script_values/destiny_score_interest_value.txt line: 1415 (destiny_score_interesting_circumstances)
+
 
 
 ## short term goals 
@@ -68,10 +65,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## Futures Features & Nice to have
 - Set up github branches (dev/release/beta) and pratices/rights
-- Pilgrimage images (update scripted_illustration/ingame.txt)
-- new building type for Mantis : https://discord.com/channels/735413460439007241/1139782281142222969
-- new building type for Dragon : https://github.com/Ivan-2/KefirsHoldings
-
 
 ##  Waiting & placeholders
 - Cat mon : @Bamba 
@@ -92,6 +85,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - BUG : "location must have some hunting game"
 	- Happens when sighting but not hunting grounds I guess ? Should be in vanilla as well
 - BUG : (spammed error) unit_japanese_infantry_02_shield_entity has no attachment node named shield_effect_2
+- BUG during duel : 	
+	Error: Invalid left side during comparison 'var'
+	Script location: file: common/customizable_localization/00_signature_weapon_custom_localization.txt line: 380 (SignatureWeaponAttemptedHeavyPlural)
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================
@@ -99,7 +95,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Events for l5R => "yearly_on_actions.txt"/on_yearly_events (for instance). Ideas
 	- Random duels
 	- Paiting stuff
-	- Tea
 	- Opium
 	- others
 	- introduce_a_new_fashion_at_court_decision for Crane ? @Imperial court ?
@@ -110,7 +105,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- same for Unicorn => duchy put but they are spread out in reality...
 	- same for crane
 	- same for crab
-
 - Special events setting the start of the clan wars
 	- Doji Hotaru
 	- Doji Kuwanan
@@ -124,7 +118,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- tiger clan (ask permission)
 - Duel to end War (check Tales of Ireland mod)
 - Event for redistribution of non-imperial title update => try to give vassalage as well ?
-- Remove black plague (kept for now) J
 - Universities ?
 - add "animal" (clan animal) as motif for CoA (instead of just textured one)
 	- generated dynasties of ronins have random CoA
@@ -137,10 +130,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Blood feud (like Matsu vs Kakita)	: https://steamcommunity.com/sharedfiles/filedetails/?id=2914047110. Need the Friends & Foes DLC sadly...
 	- shogunate_bookmark_events.txt/shogunate_bookmark.8300/shogunate_historical_feud_effect => shogunate_bookmark_effects/shogunate_bookmark.8310
 	- add more events? Duels ?
-- Prevent imperial family from doing wars against other clans...? Only for AI ? or not ?
 - Add modifiers to dynasties to prove their link to great clans ????
 - genes & ethnicities
-- Removal wall map object in crab clan
 - Create MaA for each minor clan
 	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
 	- 00_men_at_arms_values to update too
@@ -149,6 +140,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Add river map (more ?)
 - Check & Test Create Minor Clan decision
 	- Add (later) special choices of Dynasty/Name/CoA animal based with an event
+- Pilgrimage images (update scripted_illustration/ingame.txt)
 - Check Major Clan decision
 	- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance. Are they all landless à la Hiruma ?
 	- Name of Kingdom title. Duchy titles become "[DYNASTY] lands"
@@ -156,9 +148,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Kaiu Wall (done) : add models from AEP
 - if emperor : get a doji bride
 - if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
-- Integrate the mod "House tradition" ????
 - Emerald Champion stuff ?
-- economic Opium building for Scorpion heritage ?
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 
 	- Current issues : only Holder can vote => Special landess title of Ofushikai.

@@ -583,11 +583,21 @@ reborn_snake_clan_scripted_effect = {
 		}
 	}
 
-		#Innovations
-		culture:chuda = {
-			add_random_innovation = culture_group_military
-			add_random_innovation = culture_group_civic
-		}
+	#Innovations
+	culture:chuda = {
+		add_random_innovation = culture_group_military
+		add_random_innovation = culture_group_civic
+	}
+
+
+	set_global_variable = {
+		name = reborn_snake_clan_decision
+		value = root
+	}
+	set_global_variable = {
+		name = reborn_snake_clan_decision_duchy
+		value = title:d_chuda
+	}
 
 	add_to_global_variable_list = {
 		name = unavailable_unique_decisions

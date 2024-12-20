@@ -3038,9 +3038,12 @@ travel_events.4017 = {
 				trigger = {
 					root.location = {
 						OR = {
-							geographical_region = world_steppe
-							county = { culture = { has_cultural_pillar = heritage_turkic } }
-							county = { culture = { has_cultural_pillar = heritage_mongolic } }
+							#L5R Modified
+							geographical_region = rokugan_unicorn
+							county = { culture = { has_cultural_pillar = heritage_ujik } }
+							# geographical_region = world_steppe
+							# county = { culture = { has_cultural_pillar = heritage_turkic } }
+							# county = { culture = { has_cultural_pillar = heritage_mongolic } }
 						}
 						county = { culture = { has_cultural_tradition = tradition_horse_lords } }
 					}
@@ -6581,296 +6584,296 @@ travel_events.4035 = {
 }
 
 # Caravaneers want to sell you some cool stuff
-travel_events.4036 = { 
-	type = character_event
-	title = travel_events.4036.t
-	desc = travel_events.4036.desc
-	theme = travel
-	left_portrait = {
-		character = root 
-	   	animation = personality_rational
-	}
-	right_portrait = {
-		character = scope:merchant_character_scope
-	   	animation = admiration
-	}
-	artifact = {
-		target = scope:merchant_artifact_scope
-		position = lower_left_portrait
-	}
-	cooldown = { years = 10 }
-	trigger = {
-		is_available_travelling = yes
-        is_playable_character = yes
-		is_location_valid_for_travel_event_on_land = yes
-		location.culture = {
-			has_cultural_tradition = tradition_caravaneers
-		}
-	}
-	immediate = {
-		create_character = {
-			template = generic_peasant_character
-			location = root.location
-			culture = root.location.culture
-			faith = root.location.faith
-			#Set up the scope
-			save_scope_as = merchant_character_scope
-		}
-		root.location.kingdom = { save_scope_as = kingdom_scope }
-		scope:merchant_character_scope = {
-			hidden_effect = {
-				add_trait = avaricious
-				random_list = {
-					10 = {
-						set_artifact_rarity_masterwork = yes
-						create_artifact = {
-							name = mysterious_lamp
-							description = mysterious_lamp_description
-							type = goblet
-							visuals = riches
-							modifier = artifact_monthly_prestige_2_modifier
-							modifier = artifact_court_grandeur_baseline_add_5_modifier
-							wealth = scope:wealth
-							quality = scope:quality
-							save_scope_as = merchant_artifact_scope
-						}
-					}
-					10 = {
-						set_artifact_rarity_masterwork = yes
-						create_artifact = {
-							name = mysterious_puzzle
-							description = mysterious_puzzle_description
-							type = miscellaneous
-							visuals = small_box
-							template = mysterious_puzzle_template
-							modifier = artifact_learn_language_scheme_phase_duration_add_2_modifier
-							modifier = artifact_learning_per_stress_level_2_modifier
-							wealth = scope:wealth
-							quality = scope:quality
-							save_scope_as = merchant_artifact_scope
-						}
-					}
-					5 = {
-						set_artifact_rarity_famed = yes 
-						create_artifact = {
-							name = lunchbox
-							description = lunchbox_description
-							type = miscellaneous
-							visuals = small_box
-							modifier = artifact_negate_health_penalty_add_2_modifier
-							modifier = artifact_stress_gain_4_modifier
-							wealth = scope:wealth
-							quality = scope:quality
-							save_scope_as = merchant_artifact_scope
-						}
-					}
-				}
-			}
-		}
-	}
-	# Buy the artifact!
-	option = {
-		name = travel_events.4036.a
-		if = {
-			limit = {
-				scope:merchant_artifact_scope = {
-					rarity = famed
-				}
-			}
-			remove_short_term_gold = major_gold_value
-		}
-		else = {
-			remove_short_term_gold = medium_gold_value
-		}
-		scope:merchant_artifact_scope = { set_owner = root }
-		stress_impact = {
-			greedy = medium_stress_impact_gain
-			callous = medium_stress_impact_gain
-			sadistic = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = greedy
-					has_trait = callous
-					has_trait = sadistic
-				}
-			}
-			modifier = {
-				factor = 0
-				short_term_gold <= major_gold_value
-			}
-		}
-	}
-	# Attempt to steal the artifact
-	option = {
-		name = travel_events.4036.b
-		duel = {
-			skill = intrigue
-			value = very_high_skill_rating
-			50 = { # You beat up the fisherman
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 0.5
-				}
-				send_interface_toast = {
-					title = travel.stole_artifact
-					left_icon = root
-					scope:merchant_artifact_scope = { set_owner = root }
-				}
-			}
-			50 = { # You get caught and exposed as a dirty thief!
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -0.5
-				}
-				send_interface_toast = {
-					title = travel.caught_red_handed
-					left_icon = root
-					increase_wounds_no_death_effect = { REASON = fight }
-					add_prestige = major_prestige_loss
-					add_character_modifier = {
-						modifier = caught_thief_modifier
-						years = 5
-					}
-				}
-			}
-		}
-		stress_impact = {
-			sadistic = minor_stress_impact_loss
-			callous = minor_stress_impact_loss
-			base = medium_stress_impact_gain
-			compassionate = medium_stress_impact_gain
-			just = medium_stress_impact_gain
-			forgiving = medium_stress_impact_gain
-			craven = medium_stress_impact_gain
-			generous = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 50
-			modifier = {
-				add = 50
-				OR = {
-					has_trait = sadistic
-					has_trait = callous
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = compassionate
-					has_trait = just
-					has_trait = forgiving
-					has_trait = generous
-					has_trait = craven
-				}
-			}
-		}
-	}
-	# Haggle the price
-	option = {
-		name = travel_events.4036.d
-		duel = {
-			skill = stewardship
-			target = scope:merchant_character_scope
-			50 = { # You pay a lower price
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 0.5
-				}
-				send_interface_toast = {
-					title = travel.haggled_for_artifact
-					left_icon = root
-					scope:merchant_artifact_scope = { set_owner = root }
-					if = {
-						limit = {
-							scope:merchant_artifact_scope = {
-								rarity = famed
-							}
-						}
-						remove_short_term_gold = medium_gold_value
-					}
-					else = {
-						remove_short_term_gold = minor_gold_value
-					}
-				}
-			}
-			50 = { # You pay a higher price
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -0.5
-				}
-				send_interface_toast = {
-					title = travel.failed_to_haggle
-					left_icon = root
-					scope:merchant_artifact_scope = { set_owner = root }
-					if = {
-						limit = {
-							scope:merchant_artifact_scope = {
-								rarity = famed
-							}
-						}
-						remove_short_term_gold = massive_gold_value
-					}
-					else = {
-						remove_short_term_gold = major_gold_value
-					}
-				}
-			}
-		}
-		stress_impact = {
-			shy = medium_stress_impact_gain
-			deceitful = medium_stress_impact_gain
-			honest = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = shy
-					has_trait = deceitful
-					has_trait = honest
-				}
-			}
-			modifier = {
-				factor = 0
-				short_term_gold <= major_gold_value
-			}
-		}
-	}
-	# Just go by without buying anything
-	option = {
-		name = travel_events.4036.c
-		ai_chance = {
-			base = 50
-			modifier = {
-				add = 100
-				gold <= massive_gold_value
-			}
-		}
-	}
-	after = {
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { scope:merchant_artifact_scope.artifact_owner = root }
-				}
-				destroy_artifact = scope:merchant_artifact_scope
-			}
-			scope:merchant_character_scope = {
-				if = {
-					limit = {
-						root = { is_ai = yes }
-					}
-					silent_disappearance_effect = yes
-				}
-			}
-		}
-	}
-}
+# travel_events.4036 = { 
+# 	type = character_event
+# 	title = travel_events.4036.t
+# 	desc = travel_events.4036.desc
+# 	theme = travel
+# 	left_portrait = {
+# 		character = root 
+# 	   	animation = personality_rational
+# 	}
+# 	right_portrait = {
+# 		character = scope:merchant_character_scope
+# 	   	animation = admiration
+# 	}
+# 	artifact = {
+# 		target = scope:merchant_artifact_scope
+# 		position = lower_left_portrait
+# 	}
+# 	cooldown = { years = 10 }
+# 	trigger = {
+# 		is_available_travelling = yes
+#         is_playable_character = yes
+# 		is_location_valid_for_travel_event_on_land = yes
+# 		location.culture = {
+# 			has_cultural_tradition = tradition_caravaneers
+# 		}
+# 	}
+# 	immediate = {
+# 		create_character = {
+# 			template = generic_peasant_character
+# 			location = root.location
+# 			culture = root.location.culture
+# 			faith = root.location.faith
+# 			#Set up the scope
+# 			save_scope_as = merchant_character_scope
+# 		}
+# 		root.location.kingdom = { save_scope_as = kingdom_scope }
+# 		scope:merchant_character_scope = {
+# 			hidden_effect = {
+# 				add_trait = avaricious
+# 				random_list = {
+# 					10 = {
+# 						set_artifact_rarity_masterwork = yes
+# 						create_artifact = {
+# 							name = mysterious_lamp
+# 							description = mysterious_lamp_description
+# 							type = goblet
+# 							visuals = riches
+# 							modifier = artifact_monthly_prestige_2_modifier
+# 							modifier = artifact_court_grandeur_baseline_add_5_modifier
+# 							wealth = scope:wealth
+# 							quality = scope:quality
+# 							save_scope_as = merchant_artifact_scope
+# 						}
+# 					}
+# 					10 = {
+# 						set_artifact_rarity_masterwork = yes
+# 						create_artifact = {
+# 							name = mysterious_puzzle
+# 							description = mysterious_puzzle_description
+# 							type = miscellaneous
+# 							visuals = small_box
+# 							template = mysterious_puzzle_template
+# 							modifier = artifact_learn_language_scheme_phase_duration_add_2_modifier
+# 							modifier = artifact_learning_per_stress_level_2_modifier
+# 							wealth = scope:wealth
+# 							quality = scope:quality
+# 							save_scope_as = merchant_artifact_scope
+# 						}
+# 					}
+# 					5 = {
+# 						set_artifact_rarity_famed = yes 
+# 						create_artifact = {
+# 							name = lunchbox
+# 							description = lunchbox_description
+# 							type = miscellaneous
+# 							visuals = small_box
+# 							modifier = artifact_negate_health_penalty_add_2_modifier
+# 							modifier = artifact_stress_gain_4_modifier
+# 							wealth = scope:wealth
+# 							quality = scope:quality
+# 							save_scope_as = merchant_artifact_scope
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	# Buy the artifact!
+# 	option = {
+# 		name = travel_events.4036.a
+# 		if = {
+# 			limit = {
+# 				scope:merchant_artifact_scope = {
+# 					rarity = famed
+# 				}
+# 			}
+# 			remove_short_term_gold = major_gold_value
+# 		}
+# 		else = {
+# 			remove_short_term_gold = medium_gold_value
+# 		}
+# 		scope:merchant_artifact_scope = { set_owner = root }
+# 		stress_impact = {
+# 			greedy = medium_stress_impact_gain
+# 			callous = medium_stress_impact_gain
+# 			sadistic = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					has_trait = greedy
+# 					has_trait = callous
+# 					has_trait = sadistic
+# 				}
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				short_term_gold <= major_gold_value
+# 			}
+# 		}
+# 	}
+# 	# Attempt to steal the artifact
+# 	option = {
+# 		name = travel_events.4036.b
+# 		duel = {
+# 			skill = intrigue
+# 			value = very_high_skill_rating
+# 			50 = { # You beat up the fisherman
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 0.5
+# 				}
+# 				send_interface_toast = {
+# 					title = travel.stole_artifact
+# 					left_icon = root
+# 					scope:merchant_artifact_scope = { set_owner = root }
+# 				}
+# 			}
+# 			50 = { # You get caught and exposed as a dirty thief!
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -0.5
+# 				}
+# 				send_interface_toast = {
+# 					title = travel.caught_red_handed
+# 					left_icon = root
+# 					increase_wounds_no_death_effect = { REASON = fight }
+# 					add_prestige = major_prestige_loss
+# 					add_character_modifier = {
+# 						modifier = caught_thief_modifier
+# 						years = 5
+# 					}
+# 				}
+# 			}
+# 		}
+# 		stress_impact = {
+# 			sadistic = minor_stress_impact_loss
+# 			callous = minor_stress_impact_loss
+# 			base = medium_stress_impact_gain
+# 			compassionate = medium_stress_impact_gain
+# 			just = medium_stress_impact_gain
+# 			forgiving = medium_stress_impact_gain
+# 			craven = medium_stress_impact_gain
+# 			generous = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 50
+# 			modifier = {
+# 				add = 50
+# 				OR = {
+# 					has_trait = sadistic
+# 					has_trait = callous
+# 				}
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					has_trait = compassionate
+# 					has_trait = just
+# 					has_trait = forgiving
+# 					has_trait = generous
+# 					has_trait = craven
+# 				}
+# 			}
+# 		}
+# 	}
+# 	# Haggle the price
+# 	option = {
+# 		name = travel_events.4036.d
+# 		duel = {
+# 			skill = stewardship
+# 			target = scope:merchant_character_scope
+# 			50 = { # You pay a lower price
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 0.5
+# 				}
+# 				send_interface_toast = {
+# 					title = travel.haggled_for_artifact
+# 					left_icon = root
+# 					scope:merchant_artifact_scope = { set_owner = root }
+# 					if = {
+# 						limit = {
+# 							scope:merchant_artifact_scope = {
+# 								rarity = famed
+# 							}
+# 						}
+# 						remove_short_term_gold = medium_gold_value
+# 					}
+# 					else = {
+# 						remove_short_term_gold = minor_gold_value
+# 					}
+# 				}
+# 			}
+# 			50 = { # You pay a higher price
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -0.5
+# 				}
+# 				send_interface_toast = {
+# 					title = travel.failed_to_haggle
+# 					left_icon = root
+# 					scope:merchant_artifact_scope = { set_owner = root }
+# 					if = {
+# 						limit = {
+# 							scope:merchant_artifact_scope = {
+# 								rarity = famed
+# 							}
+# 						}
+# 						remove_short_term_gold = massive_gold_value
+# 					}
+# 					else = {
+# 						remove_short_term_gold = major_gold_value
+# 					}
+# 				}
+# 			}
+# 		}
+# 		stress_impact = {
+# 			shy = medium_stress_impact_gain
+# 			deceitful = medium_stress_impact_gain
+# 			honest = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					has_trait = shy
+# 					has_trait = deceitful
+# 					has_trait = honest
+# 				}
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				short_term_gold <= major_gold_value
+# 			}
+# 		}
+# 	}
+# 	# Just go by without buying anything
+# 	option = {
+# 		name = travel_events.4036.c
+# 		ai_chance = {
+# 			base = 50
+# 			modifier = {
+# 				add = 100
+# 				gold <= massive_gold_value
+# 			}
+# 		}
+# 	}
+# 	after = {
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					NOT = { scope:merchant_artifact_scope.artifact_owner = root }
+# 				}
+# 				destroy_artifact = scope:merchant_artifact_scope
+# 			}
+# 			scope:merchant_character_scope = {
+# 				if = {
+# 					limit = {
+# 						root = { is_ai = yes }
+# 					}
+# 					silent_disappearance_effect = yes
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
 # You enter a place that is syncretic with your faith
 travel_events.4037 = { 

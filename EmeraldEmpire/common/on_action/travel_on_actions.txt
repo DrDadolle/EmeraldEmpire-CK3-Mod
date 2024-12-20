@@ -1606,12 +1606,14 @@ on_travel_leader_removed = {
 
 #On action triggered from the poi_grand_city point of interest:
 on_visited_grand_city = {
-	events = {
-		delay = { days = 1 }
-		travel_events_cities.1010
-		travel_events_cities.1020
-		travel_events_cities.1030
-	}
+	# 	#L5R Disabled
+	# events = {
+	# 	delay = { days = 1 }
+	#L5R TODO add otosan uchi later 
+	# 	# travel_events_cities.1010
+	# 	# travel_events_cities.1020
+	# 	# travel_events_cities.1030
+	# }
 }
 
 #On action triggered from ep3 points of interest

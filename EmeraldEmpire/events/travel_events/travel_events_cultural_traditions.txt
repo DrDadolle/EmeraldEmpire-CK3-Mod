@@ -705,8 +705,9 @@ travel_events.1207 = { #Vegetarians
 				has_cultural_tradition = tradition_vegetarianism
 				has_cultural_tradition = tradition_sacred_hunts
 				has_cultural_tradition = tradition_hunters
-				has_cultural_pillar = heritage_indo_aryan
-				has_cultural_pillar = heritage_dravidian
+				#L5R Disabled
+				# has_cultural_pillar = heritage_indo_aryan
+				# has_cultural_pillar = heritage_dravidian
 			}
 		}
 	}
