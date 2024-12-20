@@ -1,12 +1,16 @@
 ﻿l_english:
-
- rokugan_crab:0 "Crab Lands"
- rokugan_crane:0 "Crane Lands"
- rokugan_dragon:0 "Dragon Lands"
- rokugan_lion:0 "Lion Lands"
- rokugan_phoenix:0 "Phoenix Lands"
- rokugan_scorpion:0 "Scorpion Lands"
- rokugan_unicorn:0 "Unicorn Lands"
- rokugan_imperial:0 "Imperial Lands"
- rokugan_spice_and_silk_isles:0 "Isles of Spice and Silk"
- rokugan_shinomen_mori:0 "Shinomen Mori"
+ # Regions
+ rokugan_north:0 "Northern Rokugan"
+ rokugan_south:0 "Southern Rokugan"
+ rokugan_east:0 "Eastern Rokugan"
+#Inspiration Events
+ fund_inspiration.0051.rokugan_north:0 "Northern Rokugan has always fascinated me!"
+ fund_inspiration.0051.rokugan_south:0 "Travel to Southern Rokugan!"
+ fund_inspiration.0051.rokugan_east:0 "Journey to Eastern Rokugan!"
+# Laamp Contract
+ treasure_hunting_contract_decision_option_search_rokugan_north:0 "[GetGeographicalRegion('rokugan_north').GetNameNoTooltip]"
+ search_rokugan_north_tooltip:0 "$search_region_tooltip$ [GetGeographicalRegion('rokugan_north').GetName]"
+ treasure_hunting_contract_decision_option_search_rokugan_south:0 "[GetGeographicalRegion('rokugan_south').GetNameNoTooltip]"
+ search_rokugan_south_tooltip:0 "$search_region_tooltip$ [GetGeographicalRegion('rokugan_south').GetName]"
+ treasure_hunting_contract_decision_option_search_rokugan_east:0 "[GetGeographicalRegion('rokugan_east').GetNameNoTooltip]"
+ search_rokugan_east_tooltip:0 "$search_region_tooltip$ [GetGeographicalRegion('rokugan_east').GetName]"

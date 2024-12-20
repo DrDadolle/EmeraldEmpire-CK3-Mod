@@ -88,6 +88,7 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
     # # Make someone afraid 
 	option = {
 		name = l5r_pray_spirit.0001.c
+		remove_short_term_gold = minor_gold_value
 		custom_tooltip = l5r_pray_spirit.0001.c.tt
 
 		stress_impact = {

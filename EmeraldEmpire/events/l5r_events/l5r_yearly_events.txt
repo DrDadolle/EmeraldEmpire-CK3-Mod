@@ -157,6 +157,8 @@ l5r_yearly.0010 = {
 		# Standard checks.
 		is_available_at_peace_adult = yes
 		is_landless_adventurer = no
+		# is ruler
+		is_playable_character = yes
 		NOT = { has_character_flag = had_event_trait_specific_l5r_yearly_0010 }
 	}
 
