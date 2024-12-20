@@ -3188,35 +3188,36 @@ jason_locale_events.210 = {
 			any_attending_character = {
 				jason_locale_events_210_foreign_lord_trigger = yes
 				OR = {
-					AND = {
-						jason_locale_events_210_camel_cavalry_trigger = yes
-						root = {
-							jason_locale_events_210_camel_cavalry_trigger = no
+					#L5R Disabled
+					# AND = {
+					# 	jason_locale_events_210_camel_cavalry_trigger = yes
+					# 	root = {
+					# 		jason_locale_events_210_camel_cavalry_trigger = no
 							
-							NOR = {
-								any_acclaimed_knight = {
-									accolade = {
-										has_accolade_type = camelry_attribute
-									}
-								}
-								has_character_flag = camel_challenge
-							}
-						}
-					}
-					AND = {
-						jason_locale_events_210_elephant_cavalry_trigger = yes
-						root = {
-							jason_locale_events_210_elephant_cavalry_trigger = no
-							NOR = {
-								has_character_flag = elephant_challenge
-								any_acclaimed_knight = {
-									accolade = {
-										has_accolade_type = elephantry_attribute
-									}
-								}
-							}
-						}
-					}
+					# 		NOR = {
+					# 			any_acclaimed_knight = {
+					# 				accolade = {
+					# 					has_accolade_type = camelry_attribute
+					# 				}
+					# 			}
+					# 			has_character_flag = camel_challenge
+					# 		}
+					# 	}
+					# }
+					# AND = {
+					# 	jason_locale_events_210_elephant_cavalry_trigger = yes
+					# 	root = {
+					# 		jason_locale_events_210_elephant_cavalry_trigger = no
+					# 		NOR = {
+					# 			has_character_flag = elephant_challenge
+					# 			any_acclaimed_knight = {
+					# 				accolade = {
+					# 					has_accolade_type = elephantry_attribute
+					# 				}
+					# 			}
+					# 		}
+					# 	}
+					# }
 					AND = {
 						jason_locale_events_210_horse_archer_trigger = yes
 						root = {
@@ -3415,14 +3416,15 @@ jason_locale_events.210 = {
 		else_if = {
 			limit = {
 				jason_locale_events_210_camel_cavalry_trigger = no
-				NOR = {
-					any_acclaimed_knight = {
-						accolade = {
-							has_accolade_type = camelry_attribute
-						}
-					}
-					has_character_flag = camel_challenge
-				}
+				#L5R Disabled
+				# NOR = {
+				# 	any_acclaimed_knight = {
+				# 		accolade = {
+				# 			has_accolade_type = camelry_attribute
+				# 		}
+				# 	}
+				# 	has_character_flag = camel_challenge
+				# }
 				scope:activity = {
 					any_attending_character = {
 						jason_locale_events_210_foreign_lord_trigger = yes

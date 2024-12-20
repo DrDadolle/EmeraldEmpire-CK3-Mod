@@ -30,10 +30,16 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - remove bunch of errors
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
-- Add event  drinking tea
 - Add thumbnail image for the mod !
+- in map editor : move up the bridge between usagi west & east
+[17:57:24][E][jomini_custom_text.cpp:179]: Missing loc key 'rokugan_north' for custom localization 'InspirationAdventureDestination' (or variant), at 'file: common/customizable_localization/01_ep1_custom_loc.txt line: 601 (InspirationAdventureDestination)'
+[17:57:24][E][jomini_custom_text.cpp:179]: Missing loc key 'rokugan_south' for custom localization 'InspirationAdventureDestination' (or variant), at 'file: common/customizable_localization/01_ep1_custom_loc.txt line: 601 (InspirationAdventureDestination)'
+[17:57:24][E][jomini_custom_text.cpp:179]: Missing loc key 'rokugan_east' for custom localization 'InspirationAdventureDestination' (or variant), at 'file: common/customizable_localization/01_ep1_custom_loc.txt line: 601 (InspirationAdventureDestination)'
 
-
+Error: "Failed to read key reference: }: }, near line: 282707" in file: "" near line: 282707 => Scheme_effects ? scheme_scripted triggers ?
+-ck3tiger fixes to do !
+- "son of heaven" even if female ruler loc to fix
+-TODO remove fortunes bakthi bugg when changing faith ?
 
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)

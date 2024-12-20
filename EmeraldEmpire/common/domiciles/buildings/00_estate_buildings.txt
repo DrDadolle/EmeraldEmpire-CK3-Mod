@@ -9218,8 +9218,9 @@ camel_pasture_04 = {
 			text = can_recruit_camel_cavalry_trigger_desc
 			OR = {
 				can_create_maa = camel_rider
-				can_create_maa = desert_screamers
-				can_create_maa = desert_spearmen
+				#L5R Disabled
+				# can_create_maa = desert_screamers
+				# can_create_maa = desert_spearmen
 			}
 		}
 		domicile ?= { has_domicile_building_or_higher = estate_main_03 }
@@ -9311,8 +9312,9 @@ camel_pasture_05 = {
 			text = can_recruit_camel_cavalry_trigger_desc
 			OR = {
 				can_create_maa = camel_rider
-				can_create_maa = desert_screamers
-				can_create_maa = desert_spearmen
+				#L5R Disabled
+				# can_create_maa = desert_screamers
+				# can_create_maa = desert_spearmen
 			}
 		}
 		domicile ?= { has_domicile_building_or_higher = estate_main_04 }
@@ -9404,8 +9406,9 @@ camel_pasture_06 = {
 			text = can_recruit_camel_cavalry_trigger_desc
 			OR = {
 				can_create_maa = camel_rider
-				can_create_maa = desert_screamers
-				can_create_maa = desert_spearmen
+				#L5R Disabled
+				# can_create_maa = desert_screamers
+				# can_create_maa = desert_spearmen
 			}
 		}
 		domicile ?= { has_domicile_building_or_higher = estate_main_05 }
@@ -9487,211 +9490,212 @@ camel_pasture_06 = {
 	}
 }
 
+#L5R Disabled
 # Elephant sub-branch
-elephant_pasture_04 = {
-	construction_time = 730
-	allowed_domicile_types = { estate }
-	previous_building = grazing_land_03
+# elephant_pasture_04 = {
+# 	construction_time = 730
+# 	allowed_domicile_types = { estate }
+# 	previous_building = grazing_land_03
 	
-	can_construct = {
-		# culture ?= { has_innovation = innovation_elephantry } #L5R Disabled
-		custom_tooltip = {
-			text = can_recruit_elephant_cavalry_trigger_desc
-			OR = {
-				can_create_maa = annammon_kin
-				can_create_maa = war_mumak
-			}
-		}
-		domicile ?= { has_domicile_building_or_higher = estate_main_03 }
-	}
+# 	can_construct = {
+# 		# culture ?= { has_innovation = innovation_elephantry } #L5R Disabled
+# 		custom_tooltip = {
+# 			text = can_recruit_elephant_cavalry_trigger_desc
+# 			OR = {
+# 				can_create_maa = annammon_kin
+# 				can_create_maa = war_mumak
+# 			}
+# 		}
+# 		domicile ?= { has_domicile_building_or_higher = estate_main_03 }
+# 	}
 
-	cost = {
-		gold = {
-			value = estate_external_building_high_cost_tier_4_value
-			if = {
-				limit = { has_character_modifier = raid_insight_grazing_land }
-				multiply = 0.75
-				desc = raid_insight_grazing_land
-			}
-		}
-	}
+# 	cost = {
+# 		gold = {
+# 			value = estate_external_building_high_cost_tier_4_value
+# 			if = {
+# 				limit = { has_character_modifier = raid_insight_grazing_land }
+# 				multiply = 0.75
+# 				desc = raid_insight_grazing_land
+# 			}
+# 		}
+# 	}
 
-	character_modifier = {
-		elephant_cavalry_damage_mult = 0.06
-		elephant_cavalry_toughness_mult = 0.03
-		elephant_cavalry_maintenance_mult = 0.05
-	}
+# 	character_modifier = {
+# 		elephant_cavalry_damage_mult = 0.06
+# 		elephant_cavalry_toughness_mult = 0.03
+# 		elephant_cavalry_maintenance_mult = 0.05
+# 	}
 	
-	ai_value = {
-		value = 12
-		add = estate_building_ai_modifier_value
-	}
+# 	ai_value = {
+# 		value = 12
+# 		add = estate_building_ai_modifier_value
+# 	}
 	
-	# asset = {
-	# 	trigger = {
-	# 		domicile_location.culture = {
-	# 			has_graphical_mena_culture_group_trigger = yes
-	# 		}
-	# 	}
-	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
-	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
-	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
-	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
-	# }
-	# asset = {
-	# 	trigger = {
-	# 		domicile_location.culture = {
-	# 			has_graphical_western_culture_group_trigger = yes
-	# 		}
-	# 	}
-	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
-	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
-	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
-	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
-	# }
-	asset = {
-		icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
-		texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
-		intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
-		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
-	}
-}
-elephant_pasture_05 = {
-	construction_time = 730
-	allowed_domicile_types = { estate }
-	previous_building = elephant_pasture_04
+# 	# asset = {
+# 	# 	trigger = {
+# 	# 		domicile_location.culture = {
+# 	# 			has_graphical_mena_culture_group_trigger = yes
+# 	# 		}
+# 	# 	}
+# 	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
+# 	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
+# 	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
+# 	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
+# 	# }
+# 	# asset = {
+# 	# 	trigger = {
+# 	# 		domicile_location.culture = {
+# 	# 			has_graphical_western_culture_group_trigger = yes
+# 	# 		}
+# 	# 	}
+# 	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
+# 	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
+# 	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
+# 	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
+# 	# }
+# 	asset = {
+# 		icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
+# 		texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
+# 		intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
+# 		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
+# 	}
+# }
+# elephant_pasture_05 = {
+# 	construction_time = 730
+# 	allowed_domicile_types = { estate }
+# 	previous_building = elephant_pasture_04
 	
-	can_construct = {
-		# culture ?= { has_innovation = innovation_elephantry } #L5R Disabled
-		custom_tooltip = {
-			text = can_recruit_elephant_cavalry_trigger_desc
-			OR = {
-				can_create_maa = annammon_kin
-				can_create_maa = war_mumak
-			}
-		}
-		domicile ?= { has_domicile_building_or_higher = estate_main_04 }
-	}
+# 	can_construct = {
+# 		# culture ?= { has_innovation = innovation_elephantry } #L5R Disabled
+# 		custom_tooltip = {
+# 			text = can_recruit_elephant_cavalry_trigger_desc
+# 			OR = {
+# 				can_create_maa = annammon_kin
+# 				can_create_maa = war_mumak
+# 			}
+# 		}
+# 		domicile ?= { has_domicile_building_or_higher = estate_main_04 }
+# 	}
 
-	cost = {
-		gold = {
-			value = estate_external_building_high_cost_tier_5_value
-			if = {
-				limit = { has_character_modifier = raid_insight_grazing_land }
-				multiply = 0.75
-				desc = raid_insight_grazing_land
-			}
-		}
-	}
+# 	cost = {
+# 		gold = {
+# 			value = estate_external_building_high_cost_tier_5_value
+# 			if = {
+# 				limit = { has_character_modifier = raid_insight_grazing_land }
+# 				multiply = 0.75
+# 				desc = raid_insight_grazing_land
+# 			}
+# 		}
+# 	}
 
-	character_modifier = {
-		elephant_cavalry_damage_mult = 0.06
-		elephant_cavalry_toughness_mult = 0.03
-		elephant_cavalry_maintenance_mult = 0.05
-	}
+# 	character_modifier = {
+# 		elephant_cavalry_damage_mult = 0.06
+# 		elephant_cavalry_toughness_mult = 0.03
+# 		elephant_cavalry_maintenance_mult = 0.05
+# 	}
 	
-	ai_value = {
-		value = 10
-		add = estate_building_ai_modifier_value
-	}
+# 	ai_value = {
+# 		value = 10
+# 		add = estate_building_ai_modifier_value
+# 	}
 	
-	# asset = {
-	# 	trigger = {
-	# 		domicile_location.culture = {
-	# 			has_graphical_mena_culture_group_trigger = yes
-	# 		}
-	# 	}
-	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
-	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
-	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
-	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
-	# }
-	# asset = {
-	# 	trigger = {
-	# 		domicile_location.culture = {
-	# 			has_graphical_western_culture_group_trigger = yes
-	# 		}
-	# 	}
-	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
-	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
-	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
-	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
-	# }
-	asset = {
-		icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
-		texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
-		intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
-		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
-	}
-}
-elephant_pasture_06 = {
-	construction_time = 730
-	allowed_domicile_types = { estate }
-	previous_building = elephant_pasture_05
+# 	# asset = {
+# 	# 	trigger = {
+# 	# 		domicile_location.culture = {
+# 	# 			has_graphical_mena_culture_group_trigger = yes
+# 	# 		}
+# 	# 	}
+# 	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
+# 	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
+# 	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
+# 	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
+# 	# }
+# 	# asset = {
+# 	# 	trigger = {
+# 	# 		domicile_location.culture = {
+# 	# 			has_graphical_western_culture_group_trigger = yes
+# 	# 		}
+# 	# 	}
+# 	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
+# 	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
+# 	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
+# 	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
+# 	# }
+# 	asset = {
+# 		icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
+# 		texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
+# 		intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
+# 		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
+# 	}
+# }
+# elephant_pasture_06 = {
+# 	construction_time = 730
+# 	allowed_domicile_types = { estate }
+# 	previous_building = elephant_pasture_05
 	
-	can_construct = {
-		# culture ?= { has_innovation = innovation_elephantry } #L5R Disabled
-		custom_tooltip = {
-			text = can_recruit_elephant_cavalry_trigger_desc
-			OR = {
-				can_create_maa = annammon_kin
-				can_create_maa = war_mumak
-			}
-		}
-		domicile ?= { has_domicile_building_or_higher = estate_main_05 }
-	}
+# 	can_construct = {
+# 		# culture ?= { has_innovation = innovation_elephantry } #L5R Disabled
+# 		custom_tooltip = {
+# 			text = can_recruit_elephant_cavalry_trigger_desc
+# 			OR = {
+# 				can_create_maa = annammon_kin
+# 				can_create_maa = war_mumak
+# 			}
+# 		}
+# 		domicile ?= { has_domicile_building_or_higher = estate_main_05 }
+# 	}
 
-	cost = {
-		gold = {
-			value = estate_external_building_high_cost_tier_6_value
-			if = {
-				limit = { has_character_modifier = raid_insight_grazing_land }
-				multiply = 0.75
-				desc = raid_insight_grazing_land
-			}
-		}
-	}
+# 	cost = {
+# 		gold = {
+# 			value = estate_external_building_high_cost_tier_6_value
+# 			if = {
+# 				limit = { has_character_modifier = raid_insight_grazing_land }
+# 				multiply = 0.75
+# 				desc = raid_insight_grazing_land
+# 			}
+# 		}
+# 	}
 
-	character_modifier = {
-		elephant_cavalry_damage_mult = 0.06
-		elephant_cavalry_toughness_mult = 0.03
-		elephant_cavalry_maintenance_mult = 0.1
-	}
+# 	character_modifier = {
+# 		elephant_cavalry_damage_mult = 0.06
+# 		elephant_cavalry_toughness_mult = 0.03
+# 		elephant_cavalry_maintenance_mult = 0.1
+# 	}
 	
-	ai_value = {
-		value = 8
-		add = estate_building_ai_modifier_value
-	}
+# 	ai_value = {
+# 		value = 8
+# 		add = estate_building_ai_modifier_value
+# 	}
 	
-	# asset = {
-	# 	trigger = {
-	# 		domicile_location.culture = {
-	# 			has_graphical_mena_culture_group_trigger = yes
-	# 		}
-	# 	}
-	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
-	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
-	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
-	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
-	# }
-	# asset = {
-	# 	trigger = {
-	# 		domicile_location.culture = {
-	# 			has_graphical_western_culture_group_trigger = yes
-	# 		}
-	# 	}
-	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
-	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
-	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
-	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
-	# }
-	asset = {
-		icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
-		texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
-		intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
-		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
-	}
-}
+# 	# asset = {
+# 	# 	trigger = {
+# 	# 		domicile_location.culture = {
+# 	# 			has_graphical_mena_culture_group_trigger = yes
+# 	# 		}
+# 	# 	}
+# 	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
+# 	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
+# 	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
+# 	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
+# 	# }
+# 	# asset = {
+# 	# 	trigger = {
+# 	# 		domicile_location.culture = {
+# 	# 			has_graphical_western_culture_group_trigger = yes
+# 	# 		}
+# 	# 	}
+# 	# 	icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
+# 	# 	texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
+# 	# 	intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
+# 	# 	soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
+# 	# }
+# 	asset = {
+# 		icon = "gfx/interface/icons/domicile_building/domicile_building_elephantry_reserves.dds"
+# 		texture = "gfx/interface/window_domiciles/estate_building_grazing_fields.dds"
+# 		intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_grazing_fields_mask.png"
+# 		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_grazing_lands_elephant"
+# 	}
+# }
 
 ### Grain Fields
 grain_field_01 = {

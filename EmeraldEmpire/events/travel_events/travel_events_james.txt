@@ -4293,623 +4293,625 @@ travel_events.4022 = {
 
 #L5R Disabled
 # Prester John! You find a same-religion ruler in a faraway land
-# travel_events.4023 = {
-# 	type = character_event
-# 	title = travel_events.4023.t
-# 	desc = {
-# 		desc = travel_events.4023.desc.intro
-# 		first_valid = {
-# 			triggered_desc = {
-# 				trigger = {
-# 					religion = religion:christianity_religion
-# 					scope:prester_john_scope = { is_male = yes }
-# 				}
-# 				desc = travel_events.4023.desc.mid.john
-# 			}
-# 			triggered_desc = {
-# 				trigger = {
-# 					religion = religion:christianity_religion
-# 					scope:prester_john_scope = { is_female = yes }
-# 				}
-# 				desc = travel_events.4023.desc.mid.joan
-# 			}
-# 			desc = travel_events.4023.desc.mid
-# 		}
-# 		desc = travel_events.4023.desc.outro
-# 	}
-# 	theme = travel
-# 	left_portrait = {
-# 		character = root
-# 		triggered_animation = {
-# 			trigger = {
-# 				has_trait = cynical
-# 			}
-# 			animation = personality_cynical
-# 		}
-# 	   	animation = admiration
-# 	}
-# 	right_portrait = {
-# 		character = scope:prester_john_scope
-# 	   	animation = personality_zealous
-# 	}
-# 	cooldown = { years = 10 }
-# 	trigger = {
-# 		is_available_travelling = yes
-#         is_landed = yes
-# 		is_location_valid_for_travel_event_on_land = yes
-# 		location.county.holder.top_liege ?= {
-# 			religion = root.religion
-# 			NOT = { faith = root.faith } # This shouldn't happen for Icelandic Catholics visiting Catholic Jerusalem
-# 			NOT = { in_diplomatic_range = root }
-# 			# They must be "surrounded" by other religions
-# 			save_temporary_scope_as = location_top_liege
-# 			any_neighboring_top_liege_realm = {
-# 				count < 3
-# 				holder = {
-# 					religion = scope:location_top_liege.religion
-# 				}
-# 			}
-# 			any_neighboring_top_liege_realm = {
-# 				count > 3
-# 				holder = {
-# 					NOT = { religion = scope:location_top_liege.religion }
-# 				}
-# 			}
-# 		}
-# 	}
-# 	immediate = {
-# 		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
-# 		root.location.county.holder.top_liege = {
-# 			save_scope_as = prester_john_scope
-# 		}
-# 		save_scope_as = foreign_visitor
-# 	}
-# 	# Fanboy out and ask to see "Prester John"
-# 	option = {
-# 		name = travel_events.4023.a
-# 		add_piety = minor_piety_gain
-# 		custom_tooltip = john_may_reward_you_tt
-# 		scope:prester_john_scope = {
-# 			trigger_event = travel_events.4024
-# 		}
-# 		stress_impact = {
-# 			arrogant = medium_stress_impact_gain
-# 			cynical = medium_stress_impact_gain
-# 			shy = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = arrogant
-# 					has_trait = cynical
-# 					has_trait = shy
-# 				}
-# 			}
-# 		}
-# 	}
-# 	# Visit "Prester John" and tell him that it is his duty to spread the faith
-# 	option = {
-# 		name = travel_events.4023.b
-# 		add_piety = medium_piety_gain
-# 		if = {
-# 			limit = {
-# 				NOT = {
-# 					has_trait = holy_warrior
-# 				}
-# 			}
-# 			add_trait = holy_warrior
-# 		}
-# 		hidden_effect = {
-# 			scope:prester_john_scope = {
-# 				trigger_event = travel_events.4025
-# 			}
-# 		}
-# 		stress_impact = {
-# 			arrogant = medium_stress_impact_gain
-# 			cynical = medium_stress_impact_gain
-# 			shy = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 2
-# 				OR = {
-# 					has_trait = zealous
-# 					has_trait = holy_warrior
-# 				}
-# 			}
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = arrogant
-# 					has_trait = cynical
-# 					has_trait = shy
-# 				}
-# 			}
-# 		}
-# 	}
-# 	# They may be [religion], but they are still [faith] heretics!
-# 	option = {
-# 		name = travel_events.4023.c
-# 		trigger = {
-# 			faith = {
-# 				faith_hostility_level = {
-# 					target = root.location.faith
-# 					value >= faith_hostile_level
-# 				}
-# 			}
-# 		}
-# 		add_piety = minor_piety_gain
-# 		stress_impact = {
-# 			zealous = minor_stress_impact_loss
-# 			arrogant = minor_stress_impact_loss
-# 			compassionate = medium_stress_impact_gain
-# 			humble = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = compassionate
-# 					has_trait = humble
-# 				}
-# 			}
-# 		}
-# 	}
+travel_events.4023 = {
+	type = character_event
+	title = travel_events.4023.t
+	desc = {
+		desc = travel_events.4023.desc.intro
+		first_valid = {
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		religion = religion:christianity_religion
+			# 		scope:prester_john_scope = { is_male = yes }
+			# 	}
+			# 	desc = travel_events.4023.desc.mid.john
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		religion = religion:christianity_religion
+			# 		scope:prester_john_scope = { is_female = yes }
+			# 	}
+			# 	desc = travel_events.4023.desc.mid.joan
+			# }
+			desc = travel_events.4023.desc.mid
+		}
+		desc = travel_events.4023.desc.outro
+	}
+	theme = travel
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				has_trait = cynical
+			}
+			animation = personality_cynical
+		}
+	   	animation = admiration
+	}
+	right_portrait = {
+		character = scope:prester_john_scope
+	   	animation = personality_zealous
+	}
+	cooldown = { years = 10 }
+	trigger = {
+		is_available_travelling = yes
+        is_landed = yes
+		is_location_valid_for_travel_event_on_land = yes
+		location.county.holder.top_liege ?= {
+			religion = root.religion
+			NOT = { faith = root.faith } # This shouldn't happen for Icelandic Catholics visiting Catholic Jerusalem
+			NOT = { in_diplomatic_range = root }
+			# They must be "surrounded" by other religions
+			save_temporary_scope_as = location_top_liege
+			any_neighboring_top_liege_realm = {
+				count < 3
+				holder = {
+					religion = scope:location_top_liege.religion
+				}
+			}
+			any_neighboring_top_liege_realm = {
+				count > 3
+				holder = {
+					NOT = { religion = scope:location_top_liege.religion }
+				}
+			}
+		}
+	}
+	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
+		root.location.county.holder.top_liege = {
+			save_scope_as = prester_john_scope
+		}
+		save_scope_as = foreign_visitor
+	}
+	# Fanboy out and ask to see "Prester John"
+	option = {
+		name = travel_events.4023.a
+		add_piety = minor_piety_gain
+		custom_tooltip = john_may_reward_you_tt
+		scope:prester_john_scope = {
+			trigger_event = travel_events.4024
+		}
+		stress_impact = {
+			arrogant = medium_stress_impact_gain
+			cynical = medium_stress_impact_gain
+			shy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = arrogant
+					has_trait = cynical
+					has_trait = shy
+				}
+			}
+		}
+	}
+	# Visit "Prester John" and tell him that it is his duty to spread the faith
+	option = {
+		name = travel_events.4023.b
+		add_piety = medium_piety_gain
+		if = {
+			limit = {
+				NOT = {
+					has_trait = holy_warrior
+				}
+			}
+			add_trait = holy_warrior
+		}
+		hidden_effect = {
+			scope:prester_john_scope = {
+				trigger_event = travel_events.4025
+			}
+		}
+		stress_impact = {
+			arrogant = medium_stress_impact_gain
+			cynical = medium_stress_impact_gain
+			shy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 2
+				OR = {
+					has_trait = zealous
+					has_trait = holy_warrior
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = arrogant
+					has_trait = cynical
+					has_trait = shy
+				}
+			}
+		}
+	}
+	# They may be [religion], but they are still [faith] heretics!
+	option = {
+		name = travel_events.4023.c
+		trigger = {
+			faith = {
+				faith_hostility_level = {
+					target = root.location.faith
+					value >= faith_hostile_level
+				}
+			}
+		}
+		add_piety = minor_piety_gain
+		stress_impact = {
+			zealous = minor_stress_impact_loss
+			arrogant = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			humble = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = compassionate
+					has_trait = humble
+				}
+			}
+		}
+	}
 
-# 	# That's cool I guess. Moving on
-# 	option = {
-# 		name = travel_events.4023.d
+	# That's cool I guess. Moving on
+	option = {
+		name = travel_events.4023.d
 		
-# 		stress_impact = {
-# 			zealous = medium_stress_impact_gain
-# 			curious = medium_stress_impact_gain
-# 			gregarious = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = zealous
-# 					has_trait = curious
-# 					has_trait = gregarious
-# 				}
-# 			}
-# 		}
-# 	}
-# }
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+			curious = medium_stress_impact_gain
+			gregarious = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = zealous
+					has_trait = curious
+					has_trait = gregarious
+				}
+			}
+		}
+	}
+}
 
-# # Prester John is told of the visitor
-# travel_events.4024 = {
-# 	type = character_event
-# 	title = travel_events.4024.t
-# 	desc = {
-# 		desc = travel_events.4024.desc.intro
-# 		desc = travel_events.4024.desc.mid
-# 	}
-# 	theme = travel
-# 	left_portrait = {
-# 		character = root
-# 	   	animation = personality_rational
-# 	}
-# 	right_portrait = {
-# 		character = scope:foreign_visitor
-# 	   	animation = admiration
-# 	}
-# 	cooldown = { years = 10 }
+# Prester John is told of the visitor
+travel_events.4024 = {
+	type = character_event
+	title = travel_events.4024.t
+	desc = {
+		desc = travel_events.4024.desc.intro
+		desc = travel_events.4024.desc.mid
+	}
+	theme = travel
+	left_portrait = {
+		character = root
+	   	animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:foreign_visitor
+	   	animation = admiration
+	}
+	cooldown = { years = 10 }
 
-# 	immediate = {
-# 		cp:councillor_court_chaplain = { save_scope_as = chaplain_scope }
-# 	}
+	immediate = {
+		cp:councillor_court_chaplain = { save_scope_as = chaplain_scope }
+	}
 
-# 	# Fanboy back! Become friends :)
-# 	option = {
-# 		name = travel_events.4024.a
-# 		add_piety = minor_piety_gain
-# 		custom_tooltip = may_become_friends_tt
-# 		scope:foreign_visitor = {
-# 			trigger_event = travel_events.4026
-# 		}
-# 		stress_impact = {
-# 			arrogant = medium_stress_impact_gain
-# 			cynical = medium_stress_impact_gain
-# 			shy = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = arrogant
-# 					has_trait = cynical
-# 					has_trait = shy
-# 				}
-# 			}
-# 		}
-# 	}
-# 	# They may be [religion], but they are still [faith] heretics!
-# 	option = {
-# 		name = travel_events.4024.b
-# 		trigger = {
-# 			# This should be true anyway, but just in case
-# 			NOT = { faith = scope:foreign_visitor.faith }
-# 		}
-# 		show_as_tooltip = {
-# 			duel = {
-# 				skill = learning
-# 				target = scope:foreign_visitor
-# 				50 = { # You win the debate
-# 					compare_modifier = {
-# 						value = scope:duel_value
-# 						multiplier = 0.5
-# 					}
-# 					send_interface_toast = {
-# 						title = travel.debate_won
-# 						left_icon = root
-# 						add_piety = medium_piety_gain
-# 					}
-# 				}
-# 				50 = { # You lose the debate
-# 					compare_modifier = {
-# 						value = scope:duel_value
-# 						multiplier = -0.5
-# 					}
-# 					send_interface_toast = {
-# 						title = travel.debate_lost
-# 						left_icon = root
-# 						add_piety = minor_piety_loss
-# 						add_stress = minor_stress_gain
-# 					}
-# 				}
-# 			}
-# 		}
-# 		hidden_effect = {
-# 			scope:foreign_visitor = {
-# 				trigger_event = travel_events.4027
-# 			}
-# 		}
-# 		stress_impact = {
-# 			zealous = minor_stress_impact_loss
-# 			arrogant = minor_stress_impact_loss
-# 			compassionate = medium_stress_impact_gain
-# 			humble = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = compassionate
-# 					has_trait = humble
-# 				}
-# 			}
-# 		}
-# 	}
+	# Fanboy back! Become friends :)
+	option = {
+		name = travel_events.4024.a
+		add_piety = minor_piety_gain
+		custom_tooltip = may_become_friends_tt
+		scope:foreign_visitor = {
+			trigger_event = travel_events.4026
+		}
+		stress_impact = {
+			arrogant = medium_stress_impact_gain
+			cynical = medium_stress_impact_gain
+			shy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = arrogant
+					has_trait = cynical
+					has_trait = shy
+				}
+			}
+		}
+	}
+	# They may be [religion], but they are still [faith] heretics!
+	option = {
+		name = travel_events.4024.b
+		trigger = {
+			# This should be true anyway, but just in case
+			NOT = { faith = scope:foreign_visitor.faith }
+		}
+		show_as_tooltip = {
+			duel = {
+				skill = learning
+				target = scope:foreign_visitor
+				50 = { # You win the debate
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 0.5
+					}
+					send_interface_toast = {
+						title = travel.debate_won
+						left_icon = root
+						add_piety = medium_piety_gain
+					}
+				}
+				50 = { # You lose the debate
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -0.5
+					}
+					send_interface_toast = {
+						title = travel.debate_lost
+						left_icon = root
+						add_piety = minor_piety_loss
+						add_stress = minor_stress_gain
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			scope:foreign_visitor = {
+				trigger_event = travel_events.4027
+			}
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_loss
+			arrogant = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			humble = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = compassionate
+					has_trait = humble
+				}
+			}
+		}
+	}
 
-# 	# Give them your chaplain as a gift
-# 	option = {
-# 		name = travel_events.4024.c
-# 		trigger = { scope:chaplain_scope = { is_landed = no } is_available_allow_travelling = yes }
-# 		scope:foreign_visitor = {
-# 			send_interface_toast = {
-# 				title = travel.gift_from_john
-# 				left_icon = scope:foreign_visitor
-# 				right_icon = scope:chaplain_scope
-# 				add_courtier = scope:chaplain_scope
-# 				root.current_travel_plan = {
-# 					add_companion = scope:chaplain_scope
-# 				}
-# 				add_opinion = {
-# 					modifier = gift_opinion
-# 					opinion = 25
-# 					target = scope:prester_john_scope
-# 				}
-# 			}
-# 		}
-# 		stress_impact = {
-# 			zealous = minor_stress_impact_loss
-# 			arrogant = minor_stress_impact_loss
-# 			gregarious = medium_stress_impact_gain
-# 			just = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = gregarious
-# 					has_trait = just
-# 				}
-# 			}
-# 		}
-# 	}
+	# Give them your chaplain as a gift
+	option = {
+		name = travel_events.4024.c
+		trigger = { scope:chaplain_scope = { is_landed = no } is_available_allow_travelling = yes }
+		scope:foreign_visitor = {
+			send_interface_toast = {
+				title = travel.gift_from_john
+				left_icon = scope:foreign_visitor
+				right_icon = scope:chaplain_scope
+				add_courtier = scope:chaplain_scope
+				root.current_travel_plan = {
+					add_companion = scope:chaplain_scope
+				}
+				add_opinion = {
+					modifier = gift_opinion
+					opinion = 25
+					target = scope:prester_john_scope
+				}
+			}
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_loss
+			arrogant = minor_stress_impact_loss
+			gregarious = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = gregarious
+					has_trait = just
+				}
+			}
+		}
+	}
 
-# 	# That's cool I guess. Moving on
-# 	option = {
-# 		name = travel_events.4024.d
-# 		scope:foreign_visitor = {
-# 			send_interface_toast = {
-# 				title = travel.turned_away_from_john
-# 				left_icon = scope:foreign_visitor
-# 				right_icon = scope:prester_john_scope
-# 				add_prestige = minor_prestige_loss
-# 				add_opinion = {
-# 					modifier = insulted_opinion
-# 					opinion = -20
-# 					target = scope:prester_john_scope
-# 				}
-# 			}
-# 		}
-# 		stress_impact = {
-# 			zealous = medium_stress_impact_gain
-# 			curious = medium_stress_impact_gain
-# 			gregarious = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = zealous
-# 					has_trait = curious
-# 					has_trait = gregarious
-# 				}
-# 			}
-# 		}
-# 	}
-# }
+	# That's cool I guess. Moving on
+	option = {
+		name = travel_events.4024.d
+		scope:foreign_visitor = {
+			send_interface_toast = {
+				title = travel.turned_away_from_john
+				left_icon = scope:foreign_visitor
+				right_icon = scope:prester_john_scope
+				add_prestige = minor_prestige_loss
+				add_opinion = {
+					modifier = insulted_opinion
+					opinion = -20
+					target = scope:prester_john_scope
+				}
+			}
+		}
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+			curious = medium_stress_impact_gain
+			gregarious = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = zealous
+					has_trait = curious
+					has_trait = gregarious
+				}
+			}
+		}
+	}
+}
 
-# # Prester John encouraged to to take up the sword against heretics
-# travel_events.4025 = {
-# 	type = character_event
-# 	title = travel_events.4025.t
-# 	desc = {
-# 		desc = travel_events.4024.desc.intro
-# 		desc = travel_events.4025.desc.mid
-# 	}
-# 	theme = travel
-# 	left_portrait = {
-# 		character = root
-# 	   	animation = personality_rational
-# 	}
-# 	right_portrait = {
-# 		character = scope:foreign_visitor
-# 	   	animation = personality_bold
-# 	}
-# 	cooldown = { years = 10 }
+# Prester John encouraged to to take up the sword against heretics
+travel_events.4025 = {
+	type = character_event
+	title = travel_events.4025.t
+	desc = {
+		desc = travel_events.4024.desc.intro
+		desc = travel_events.4025.desc.mid
+	}
+	theme = travel
+	left_portrait = {
+		character = root
+	   	animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:foreign_visitor
+	   	animation = personality_bold
+	}
+	cooldown = { years = 10 }
 
-# 	# Heretic bashing time
-# 	option = {
-# 		name = travel_events.4025.a
-# 		add_trait = holy_warrior
-# 		if = {
-# 			limit = {
-# 				religion = religion:christianity_religion
-# 				OR = {
-# 					has_any_nickname = no
-# 					has_bad_nickname = yes
-# 				}
-# 			}
-# 			if = {
-# 				limit = { is_male = yes }
-# 				give_nickname = nick_prester_john
-# 			}
-# 			else = {
-# 				give_nickname = nick_prester_joan
-# 			}
-# 		}
-# 		every_neighboring_and_across_water_top_liege_realm = {
-# 			custom = travel_events.4025.different_religion_neighbors_and_vassals
-# 			limit = {
-# 				NOT = { holder.religion = root.religion }
-# 			}
-# 			holder = {
-# 				add_opinion = {
-# 					modifier = insult_opinion
-# 					opinion = -25
-# 					target = root
-# 				}
-# 			}
-# 		}
-# 		#Hidden because the above tooltip should inform you
-# 		hidden_effect = {
-# 			every_vassal = {
-# 				limit = {
-# 					NOT = { religion = root.religion }
-# 				}
-# 				add_opinion = {
-# 					modifier = insult_opinion
-# 					opinion = -25
-# 					target = root
-# 				}
-# 			}
-# 		}
-# 		stress_impact = {
-# 			zealous = medium_stress_impact_loss
-# 			compassionate = medium_stress_impact_gain
-# 			cynical = medium_stress_impact_gain
-# 			gregarious = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = compassionate
-# 					has_trait = cynical
-# 					has_trait = gregarious
-# 				}
-# 			}
-# 		}
-# 	}
-# 	# No
-# 	option = {
-# 		name = travel_events.4025.b
-# 		scope:foreign_visitor = {
-# 			send_interface_toast = {
-# 				title = travel.visitor_rejected_me
-# 				left_icon = scope:foreign_visitor
-# 				right_icon = scope:prester_john_scope
-# 				add_opinion = {
-# 					modifier = disappointed_opinion
-# 					opinion = -25
-# 					target = root
-# 				}
-# 			}
-# 		}
-# 		stress_impact = {
-# 			gregarious = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 0
-# 			modifier = {
-# 				add = 100
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-# }
+	# Heretic bashing time
+	option = {
+		name = travel_events.4025.a
+		add_trait = holy_warrior
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		religion = religion:christianity_religion
+		# 		OR = {
+		# 			has_any_nickname = no
+		# 			has_bad_nickname = yes
+		# 		}
+		# 	}
+		# 	if = {
+		# 		limit = { is_male = yes }
+		# 		give_nickname = nick_prester_john
+		# 	}
+		# 	else = {
+		# 		give_nickname = nick_prester_joan
+		# 	}
+		# }
+		every_neighboring_and_across_water_top_liege_realm = {
+			custom = travel_events.4025.different_religion_neighbors_and_vassals
+			limit = {
+				NOT = { holder.religion = root.religion }
+			}
+			holder = {
+				add_opinion = {
+					modifier = insult_opinion
+					opinion = -25
+					target = root
+				}
+			}
+		}
+		#Hidden because the above tooltip should inform you
+		hidden_effect = {
+			every_vassal = {
+				limit = {
+					NOT = { religion = root.religion }
+				}
+				add_opinion = {
+					modifier = insult_opinion
+					opinion = -25
+					target = root
+				}
+			}
+		}
+		stress_impact = {
+			zealous = medium_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			cynical = medium_stress_impact_gain
+			gregarious = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = compassionate
+					has_trait = cynical
+					has_trait = gregarious
+				}
+			}
+		}
+	}
+	# No
+	option = {
+		name = travel_events.4025.b
+		scope:foreign_visitor = {
+			send_interface_toast = {
+				title = travel.visitor_rejected_me
+				left_icon = scope:foreign_visitor
+				right_icon = scope:prester_john_scope
+				add_opinion = {
+					modifier = disappointed_opinion
+					opinion = -25
+					target = root
+				}
+			}
+		}
+		stress_impact = {
+			gregarious = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_trait = shy
+			}
+		}
+	}
+}
 
-# # Prester John wants to be penpals!
-# travel_events.4026 = {
-# 	type = character_event
-# 	title = travel_events.4026.t
-# 	desc = travel_events.4026.desc
-# 	theme = travel
-# 	left_portrait = {
-# 		character = root
-# 	   	animation = personality_rational
-# 	}
-# 	right_portrait = {
-# 		character = scope:prester_john_scope
-# 	   	animation = admiration
-# 	}
-# 	cooldown = { years = 10 }
+# Prester John wants to be penpals!
+travel_events.4026 = {
+	type = character_event
+	title = travel_events.4026.t
+	desc = travel_events.4026.desc
+	theme = travel
+	left_portrait = {
+		character = root
+	   	animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:prester_john_scope
+	   	animation = admiration
+	}
+	cooldown = { years = 10 }
 
-# 	# Fren time
-# 	option = {
-# 		name = travel_events.4026.a
-# 		scope:prester_john_scope = {
-# 			send_interface_toast = {
-# 				title = travel.became_friends_with_visitor
-# 				left_icon = scope:prester_john_scope
-# 				right_icon = scope:foreign_visitor
-# 				set_relation_friend = {
-# 					reason = friend_respected_other_religion
-# 					target = scope:foreign_visitor
-# 				}
-# 			}
-# 		}
-# 		stress_impact = {
-# 			shy = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-# 	# No frens
-# 	option = {
-# 		name = travel_events.4026.b
-# 		scope:prester_john_scope = {
-# 			send_interface_toast = {
-# 				title = travel.visitor_rejected_friendship
-# 				left_icon = scope:prester_john_scope
-# 				right_icon = scope:foreign_visitor
-# 				add_opinion = {
-# 					modifier = disappointed_opinion
-# 					opinion = -25
-# 					target = root
-# 				}
-# 			}
-# 		}
-# 		stress_impact = {
-# 			gregarious = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 0
-# 			modifier = {
-# 				add = 100
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-# }
+	# Fren time
+	option = {
+		name = travel_events.4026.a
+		scope:prester_john_scope = {
+			send_interface_toast = {
+				title = travel.became_friends_with_visitor
+				left_icon = scope:prester_john_scope
+				right_icon = scope:foreign_visitor
+				set_relation_friend = {
+					reason = friend_respected_other_religion
+					target = scope:foreign_visitor
+				}
+			}
+		}
+		stress_impact = {
+			shy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_trait = shy
+			}
+		}
+	}
+	# No frens
+	option = {
+		name = travel_events.4026.b
+		scope:prester_john_scope = {
+			send_interface_toast = {
+				title = travel.visitor_rejected_friendship
+				left_icon = scope:prester_john_scope
+				right_icon = scope:foreign_visitor
+				add_opinion = {
+					modifier = disappointed_opinion
+					opinion = -25
+					target = root
+				}
+			}
+		}
+		stress_impact = {
+			gregarious = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_trait = shy
+			}
+		}
+	}
+}
 
-# # Prester John wants to debate you
-# travel_events.4027 = {
-# 	type = character_event
-# 	title = travel_events.4027.t
-# 	desc = travel_events.4027.desc
-# 	theme = travel
-# 	left_portrait = {
-# 		character = root
-# 	   	animation = shock
-# 	}
-# 	right_portrait = {
-# 		character = scope:prester_john_scope
-# 	   	animation = anger
-# 	}
-# 	cooldown = { years = 10 }
+# Prester John wants to debate you
+travel_events.4027 = {
+	type = character_event
+	title = travel_events.4027.t
+	desc = travel_events.4027.desc
+	theme = travel
+	left_portrait = {
+		character = root
+	   	animation = shock
+	}
+	right_portrait = {
+		character = scope:prester_john_scope
+	   	animation = anger
+	}
+	cooldown = { years = 10 }
 
-# 	# Debate me bro
-# 	option = {
-# 		name = travel_events.4027.a
-# 		duel = {
-# 			skill = learning
-# 			target = scope:prester_john_scope
-# 			50 = { # You win the debate
-# 				compare_modifier = {
-# 					value = scope:duel_value
-# 					multiplier = 0.5
-# 				}
-# 				send_interface_toast = {
-# 					title = travel.debate_won
-# 					left_icon = scope:prester_john_scope
-# 					right_icon = scope:foreign_visitor
-# 					add_piety = medium_piety_gain
-# 				}
-# 				scope:prester_john_scope = {
-# 					send_interface_toast = {
-# 						title = travel.debate_lost
-# 						left_icon = scope:prester_john_scope
-# 						right_icon = scope:foreign_visitor
-# 						add_piety = minor_piety_loss
-# 						add_stress = minor_stress_gain
-# 					}
-# 				}
-# 			}
-# 			50 = { # You lose the debate
-# 				compare_modifier = {
-# 					value = scope:duel_value
-# 					multiplier = -0.5
-# 				}
-# 				send_interface_toast = {
-# 					title = travel.debate_lost
-# 					left_icon = scope:prester_john_scope
-# 					right_icon = scope:foreign_visitor
-# 					add_piety = minor_piety_loss
-# 					add_stress = minor_stress_gain
-# 					scope:prester_john_scope = {
-# 						send_interface_toast = {
-# 							title = travel.debate_won
-# 							left_icon = scope:prester_john_scope
-# 							right_icon = scope:foreign_visitor
-# 							add_piety = medium_piety_gain
-# 						}
-# 					}
-# 				}
-# 			}
-# 		}
-# 	}
-# }
+	# Debate me bro
+	option = {
+		name = travel_events.4027.a
+		duel = {
+			skill = learning
+			target = scope:prester_john_scope
+			50 = { # You win the debate
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 0.5
+				}
+				send_interface_toast = {
+					title = travel.debate_won
+					left_icon = scope:prester_john_scope
+					right_icon = scope:foreign_visitor
+					add_piety = medium_piety_gain
+				}
+				scope:prester_john_scope = {
+					send_interface_toast = {
+						title = travel.debate_lost
+						left_icon = scope:prester_john_scope
+						right_icon = scope:foreign_visitor
+						add_piety = minor_piety_loss
+						add_stress = minor_stress_gain
+					}
+				}
+			}
+			50 = { # You lose the debate
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -0.5
+				}
+				send_interface_toast = {
+					title = travel.debate_lost
+					left_icon = scope:prester_john_scope
+					right_icon = scope:foreign_visitor
+					add_piety = minor_piety_loss
+					add_stress = minor_stress_gain
+					scope:prester_john_scope = {
+						send_interface_toast = {
+							title = travel.debate_won
+							left_icon = scope:prester_john_scope
+							right_icon = scope:foreign_visitor
+							add_piety = medium_piety_gain
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 # You come across a runestone!
 travel_events.4028 = {
@@ -5051,166 +5053,167 @@ travel_events.4028 = {
 }
 
 # You come across dimwit strung up on a post
-# travel_events.4029 = {
-# 	type = character_event
-# 	title = travel_events.4029.t
-# 	desc = {
-# 		desc = travel_events.4029.desc.intro
-# 		first_valid = {
-# 			triggered_desc = {
-# 				trigger = {
-# 					religion = religion:christianity_religion
-# 				}
-# 				desc = travel_events.4029.desc.mid.christian
-# 			}
-# 			desc = travel_events.4029.desc.mid
-# 		}
-# 		desc = travel_events.4029.desc.outro
-# 	}
-# 	theme = travel
-# 	left_portrait = {
-# 		character = root
-# 		triggered_animation = {
-# 			trigger = {
-# 				has_trait = sadistic
-# 			}
-# 			animation = admiration
-# 		}
-# 		triggered_animation = {
-# 			trigger = {
-# 				has_trait = callous
-# 			}
-# 			animation = personality_rational
-# 		}
-# 	   	animation = shock
-# 	}
-# 	right_portrait = {
-# 		character = scope:brainless_character
-# 	   	animation = pain
-# 	}
-# 	override_background = { reference = battlefield }
-# 	cooldown = { years = 30 }
-# 	trigger = {
-# 		static_group_filter = {
-# 			group = wizard_of_oz_group
-# 			match = 0.1
-# 		}
-# 		is_available_travelling = yes
-#         is_playable_character = yes
-# 		root.location = { terrain = farmlands }
-# 	}
-# 	immediate = {
-# 		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_medium }
-# 		create_character = {
-# 			template = brainless_character_template
-# 			location = root.location
-# 			culture = root.location.county.culture
-# 			faith = root.location.county.faith
-# 			#Set up the scope
-# 			save_scope_as = brainless_character
-# 		}
-# 		hidden_effect = {
-# 			scope:brainless_character = {
-# 				give_nickname = nick_the_thoughtless
-# 				random_list = {
-# 					50 = {
-# 						set_to_lowborn = yes
-# 					}
-# 					50 = { # They're someone important!
-# 						add_gold = 50
-# 					}
-# 				}
-# 			}
-# 		}
-# 	}
-# 	# Cut them down from there
-# 	option = {
-# 		name = travel_events.4029.a
-# 		custom_tooltip = brainless_may_reward_you_tt
-# 		trigger_event = travel_events.4030
-# 		stress_impact = {
-# 			compassionate = medium_stress_impact_loss
-# 			paranoid = medium_stress_impact_gain
-# 			callous = medium_stress_impact_gain
-# 			sadistic = medium_stress_impact_gain
-# 			arbitrary = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = paranoid
-# 					has_trait = callous
-# 					has_trait = sadistic
-# 					has_trait = arbitrary
-# 				}
-# 			}
-# 		}
-# 	}
+travel_events.4029 = {
+	type = character_event
+	title = travel_events.4029.t
+	desc = {
+		desc = travel_events.4029.desc.intro
+		first_valid = {
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		religion = religion:christianity_religion
+			# 	}
+			# 	desc = travel_events.4029.desc.mid.christian
+			# }
+			desc = travel_events.4029.desc.mid
+		}
+		desc = travel_events.4029.desc.outro
+	}
+	theme = travel
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				has_trait = sadistic
+			}
+			animation = admiration
+		}
+		triggered_animation = {
+			trigger = {
+				has_trait = callous
+			}
+			animation = personality_rational
+		}
+	   	animation = shock
+	}
+	right_portrait = {
+		character = scope:brainless_character
+	   	animation = pain
+	}
+	override_background = { reference = battlefield }
+	cooldown = { years = 30 }
+	trigger = {
+		static_group_filter = {
+			group = wizard_of_oz_group
+			match = 0.1
+		}
+		is_available_travelling = yes
+        is_playable_character = yes
+		root.location = { terrain = farmlands }
+	}
+	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_medium }
+		create_character = {
+			template = brainless_character_template
+			location = root.location
+			culture = root.location.county.culture
+			faith = root.location.county.faith
+			#Set up the scope
+			save_scope_as = brainless_character
+		}
+		hidden_effect = {
+			scope:brainless_character = {
+				give_nickname = nick_the_thoughtless
+				random_list = {
+					50 = {
+						set_to_lowborn = yes
+					}
+					50 = { # They're someone important!
+						add_gold = 50
+					}
+				}
+			}
+		}
+	}
+	# Cut them down from there
+	option = {
+		name = travel_events.4029.a
+		custom_tooltip = brainless_may_reward_you_tt
+		trigger_event = travel_events.4030
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			paranoid = medium_stress_impact_gain
+			callous = medium_stress_impact_gain
+			sadistic = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = paranoid
+					has_trait = callous
+					has_trait = sadistic
+					has_trait = arbitrary
+				}
+			}
+		}
+	}
 
-# 	# Cut them down.... and imprison them!
-# 	option = {
-# 		name = travel_events.4029.b
-# 		rightfully_imprison_character_effect = {
-# 			TARGET = scope:brainless_character
-# 			IMPRISONER = root
-# 		}
-# 		add_piety = minor_piety_gain
-# 		stress_impact = {
-# 			callous = minor_stress_impact_loss
-# 			sadistic = minor_stress_impact_loss
-# 			compassionate = medium_stress_impact_gain
-# 			just = medium_stress_impact_gain
-# 			forgiving = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 0
-# 			modifier = {
-# 				add = 100
-# 				OR = {
-# 					has_trait = callous
-# 					has_trait = sadistic
-# 				}
-# 			}
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = compassionate
-# 					has_trait = just
-# 					has_trait = forgiving
-# 				}
-# 			}
-# 		}
-# 	}
+	# Cut them down.... and imprison them!
+	option = {
+		name = travel_events.4029.b
+		rightfully_imprison_character_effect = {
+			TARGET = scope:brainless_character
+			IMPRISONER = root
+		}
+		add_piety = minor_piety_gain
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			forgiving = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					has_trait = callous
+					has_trait = sadistic
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = compassionate
+					has_trait = just
+					has_trait = forgiving
+				}
+			}
+		}
+	}
 
-# 	# Just pass by
-# 	option = {
-# 		name = travel_events.4029.c
-# 		scope:brainless_character = {
-# 			if = {
-# 				limit = {
-# 					root = { is_ai = yes }
-# 				}
-# 				silent_disappearance_effect = yes
-# 			}
-# 		}
-# 		stress_impact = {
-# 			compassionate = minor_stress_impact_gain
-# 			just = medium_stress_impact_gain
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 			modifier = {
-# 				factor = 0
-# 				OR = {
-# 					has_trait = compassionate
-# 					has_trait = just
-# 				}
-# 			}
-# 		}
-# 	}
-# }
+	# Just pass by
+	option = {
+		name = travel_events.4029.c
+		scope:brainless_character = {
+			if = {
+				limit = {
+					root = { is_ai = yes }
+				}
+				silent_disappearance_effect = yes
+			}
+		}
+		stress_impact = {
+			compassionate = minor_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = compassionate
+					has_trait = just
+				}
+			}
+		}
+	}
+}
 
 travel_events.4030 = {
 	type = character_event

@@ -414,23 +414,24 @@ on_county_auto_granted_to_liege_culture = {
 				}
 			}
 
+			#L5R Disabled
 			# Struggle parameter
-		 	 scope:actor = {
-		 	 	if = {
-					limit = {
-						any_character_struggle = {
-							involvement = involved
-							has_struggle_phase_parameter = granting_title_to_local_noble_gives_prestige
-						}
-					}
-					send_interface_toast = {
-						type = event_toast_effect_good
-						title = prestige_from_granting_title.tt
-	 					left_icon = scope:actor
-						add_prestige = medium_prestige_gain
-					}
-				}
-		  	}
+		 	#  scope:actor = {
+		 	#  	if = {
+			# 		limit = {
+			# 			any_character_struggle = {
+			# 				involvement = involved
+			# 				has_struggle_phase_parameter = granting_title_to_local_noble_gives_prestige
+			# 			}
+			# 		}
+			# 		send_interface_toast = {
+			# 			type = event_toast_effect_good
+			# 			title = prestige_from_granting_title.tt
+	 		# 			left_icon = scope:actor
+			# 			add_prestige = medium_prestige_gain
+			# 		}
+			# 	}
+		  	# }
 
 			# Struggle Catalyst
 			if = {
@@ -533,23 +534,24 @@ on_county_auto_granted_to_local_culture = {
 				}
 			}
 
+			#L5R Disabled
 			# Struggle parameter
-		 	 scope:actor = {
-		 	 	if = {
-					limit = {
-						any_character_struggle = {
-							involvement = involved
-							has_struggle_phase_parameter = granting_title_to_local_noble_gives_prestige
-						}
-					}
-					send_interface_toast = {
-						type = event_toast_effect_good
-						title = prestige_from_granting_title.tt
-	 					left_icon = scope:actor
-						add_prestige = medium_prestige_gain
-					}
-				}
-		  	}
+		 	#  scope:actor = {
+		 	#  	if = {
+			# 		limit = {
+			# 			any_character_struggle = {
+			# 				involvement = involved
+			# 				has_struggle_phase_parameter = granting_title_to_local_noble_gives_prestige
+			# 			}
+			# 		}
+			# 		send_interface_toast = {
+			# 			type = event_toast_effect_good
+			# 			title = prestige_from_granting_title.tt
+	 		# 			left_icon = scope:actor
+			# 			add_prestige = medium_prestige_gain
+			# 		}
+			# 	}
+		  	# }
 
 			# Struggle Catalyst
 			if = {

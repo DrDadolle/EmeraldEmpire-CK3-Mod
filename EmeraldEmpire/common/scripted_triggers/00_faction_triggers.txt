@@ -12,7 +12,7 @@
 ############################
 immune_to_factions_trigger = {
 	#L5R Disabled
-	always = yes
+	always = no
 	# OR = {
 	# 	# Genghis Khan is immune to factions
 	# 	has_character_flag = is_temujin

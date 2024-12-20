@@ -13576,7 +13576,7 @@ set_object_of_significance_effect = {
 
 set_random_religious_text_effect = {
 	random_list = {
-		# L5R Disabled
+		#L5R Disabled
 		# 1 = {
 		# 	#Christian
 		# 	trigger = { faith.religion = religion:christianity_religion }
@@ -14676,7 +14676,7 @@ claim_throne_set_mythical_founder_variable_effect = {
 	# 		value = flag:zenobia
 	# 	}
 	# }
-		#L5R Added
+	#L5R Added
 	if = { # Hida
 		limit = {
 			OR = {

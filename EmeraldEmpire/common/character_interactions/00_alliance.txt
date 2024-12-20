@@ -3160,13 +3160,14 @@ join_war_interaction = {
 								}
 							}
 						}
+						#L5R Disabled
 						# Special case for Iberians helping each other after FP2 Conciliation ending
-						AND = {
-							fp2_struggle_conciliation_recipient_actor_involved_trigger = no
-							NOT = {
-								fp2_struggle_conciliation_scope_uninvolved_trigger = { SCOPE = scope:target.primary_attacker }
-							}
-						} 
+						# AND = {
+						# 	fp2_struggle_conciliation_recipient_actor_involved_trigger = no
+						# 	NOT = {
+						# 		fp2_struggle_conciliation_scope_uninvolved_trigger = { SCOPE = scope:target.primary_attacker }
+						# 	}
+						# } 
 					}
 					custom_description = {
 						text = join_war_interaction_recipient_not_def_GHW
@@ -3199,13 +3200,14 @@ join_war_interaction = {
 					primary_attacker = {
 						is_leading_faction_type = peasant_faction
 					}
+					#L5R Disabled
 					# Special case for Iberians helping each other after FP2 Conciliation ending
-					AND = {
-						fp2_struggle_conciliation_recipient_actor_involved_trigger = no
-						NOT = {
-							fp2_struggle_conciliation_scope_uninvolved_trigger = { SCOPE = scope:target.primary_attacker }
-						}
-					}
+					# AND = {
+					# 	fp2_struggle_conciliation_recipient_actor_involved_trigger = no
+					# 	NOT = {
+					# 		fp2_struggle_conciliation_scope_uninvolved_trigger = { SCOPE = scope:target.primary_attacker }
+					# 	}
+					# }
 				}
 				always = yes
 			}
@@ -3214,13 +3216,14 @@ join_war_interaction = {
 				limit = {
 					is_religious_war = no
 					scope:actor = { NOT = { target_is_liege_or_above = scope:recipient } }
+					#L5R Disabled
 					# Special case for Iberians helping each other after FP2 Conciliation ending
-					AND = {
-						fp2_struggle_conciliation_recipient_actor_involved_trigger = no
-						NOT = {
-							fp2_struggle_conciliation_scope_uninvolved_trigger = { SCOPE = scope:target.primary_attacker }
-						}
-					}
+					# AND = {
+					# 	fp2_struggle_conciliation_recipient_actor_involved_trigger = no
+					# 	NOT = {
+					# 		fp2_struggle_conciliation_scope_uninvolved_trigger = { SCOPE = scope:target.primary_attacker }
+					# 	}
+					# }
 				}
 				custom_description = {
 					text = join_war_interaction_recipient_not_ally

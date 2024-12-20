@@ -367,115 +367,118 @@ on_set_relation_friend = {
 			}
 		}
 
+		#L5R Disabled
 		# Struggle Parameter
-		if = {
-			limit = {
-				# Does the current phase have the right parameter?
-				any_character_struggle = {
-					involvement = involved
-					has_struggle_phase_parameter = struggle_becoming_friend_gives_prestige
-				}
-					# check diff faith or culture and involvement
-				is_diff_faith_or_culture_trigger = {
-					CHAR = scope:target
-					STATUS = involved
-				}
-			}
-			send_interface_toast = {
-				type = event_toast_effect_good
-				title = bonus_from_new_friend
-				left_icon = root
-				right_icon = scope:target
-				add_prestige = {
-					value = {
-						add = minor_prestige_gain
-						multiply = scope:target.primary_title.tier
-					}
-				}
-			}
-			scope:target = {
-				send_interface_toast = {
-					type = event_toast_effect_good
-					title = bonus_from_new_friend
-					left_icon = scope:target
-					right_icon = root
-					add_prestige = {
-						value = {
-							add = minor_prestige_gain
-							multiply = scope:target.primary_title.tier
-						}
-					}
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		# Does the current phase have the right parameter?
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			has_struggle_phase_parameter = struggle_becoming_friend_gives_prestige
+		# 		}
+		# 			# check diff faith or culture and involvement
+		# 		is_diff_faith_or_culture_trigger = {
+		# 			CHAR = scope:target
+		# 			STATUS = involved
+		# 		}
+		# 	}
+		# 	send_interface_toast = {
+		# 		type = event_toast_effect_good
+		# 		title = bonus_from_new_friend
+		# 		left_icon = root
+		# 		right_icon = scope:target
+		# 		add_prestige = {
+		# 			value = {
+		# 				add = minor_prestige_gain
+		# 				multiply = scope:target.primary_title.tier
+		# 			}
+		# 		}
+		# 	}
+		# 	scope:target = {
+		# 		send_interface_toast = {
+		# 			type = event_toast_effect_good
+		# 			title = bonus_from_new_friend
+		# 			left_icon = scope:target
+		# 			right_icon = root
+		# 			add_prestige = {
+		# 				value = {
+		# 					add = minor_prestige_gain
+		# 					multiply = scope:target.primary_title.tier
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 
-		if = {
-			limit = {
-				faith = scope:target.faith
-				# Does the current phase have the right parameter?
-				any_character_struggle = {
-					involvement = involved
-					has_struggle_phase_parameter = same_faith_friend_piety_gain
-				}
-			}
-			send_interface_toast = {
-				type = event_toast_effect_good
-				title = bonus_from_new_friend
-				left_icon = root
-				right_icon = scope:target
-				add_piety = medium_piety_gain
-			}
-			scope:target = {
-				send_interface_toast = {
-					type = event_toast_effect_good
-					title = bonus_from_new_friend
-					left_icon = scope:target
-					right_icon = root
-					add_piety = medium_piety_gain
-				}
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		faith = scope:target.faith
+		# 		# Does the current phase have the right parameter?
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			has_struggle_phase_parameter = same_faith_friend_piety_gain
+		# 		}
+		# 	}
+		# 	send_interface_toast = {
+		# 		type = event_toast_effect_good
+		# 		title = bonus_from_new_friend
+		# 		left_icon = root
+		# 		right_icon = scope:target
+		# 		add_piety = medium_piety_gain
+		# 	}
+		# 	scope:target = {
+		# 		send_interface_toast = {
+		# 			type = event_toast_effect_good
+		# 			title = bonus_from_new_friend
+		# 			left_icon = scope:target
+		# 			right_icon = root
+		# 			add_piety = medium_piety_gain
+		# 		}
+		# 	}
+		# }
 
-		if = {
-			limit = {
-				# Does the current phase have the right parameter?
-				any_character_struggle = {
-					involvement = involved
-					has_struggle_phase_parameter = struggle_prestige_from_befriending_same_culture
-				}
-					# check diff faith or culture and involvement
-				is_same_culture_trigger = {
-					CHAR = scope:target
-					STATUS = involved
-				}
-			}
-			send_interface_toast = {
-				type = event_toast_effect_good
-				title = bonus_from_new_friend
-				left_icon = root
-				right_icon = scope:target
-				add_prestige = {
-					value = {
-						add = minor_prestige_gain
-						multiply = scope:target.primary_title.tier
-					}
-				}
-			}
-			scope:target = {
-				send_interface_toast = {
-					type = event_toast_effect_good
-					title = bonus_from_new_friend
-					left_icon = scope:target
-					right_icon = root
-					add_prestige = {
-						value = {
-							add = minor_prestige_gain
-							multiply = scope:target.primary_title.tier
-						}
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		# Does the current phase have the right parameter?
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			has_struggle_phase_parameter = struggle_prestige_from_befriending_same_culture
+		# 		}
+		# 			# check diff faith or culture and involvement
+		# 		is_same_culture_trigger = {
+		# 			CHAR = scope:target
+		# 			STATUS = involved
+		# 		}
+		# 	}
+		# 	send_interface_toast = {
+		# 		type = event_toast_effect_good
+		# 		title = bonus_from_new_friend
+		# 		left_icon = root
+		# 		right_icon = scope:target
+		# 		add_prestige = {
+		# 			value = {
+		# 				add = minor_prestige_gain
+		# 				multiply = scope:target.primary_title.tier
+		# 			}
+		# 		}
+		# 	}
+		# 	scope:target = {
+		# 		send_interface_toast = {
+		# 			type = event_toast_effect_good
+		# 			title = bonus_from_new_friend
+		# 			left_icon = scope:target
+		# 			right_icon = root
+		# 			add_prestige = {
+		# 				value = {
+		# 					add = minor_prestige_gain
+		# 					multiply = scope:target.primary_title.tier
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 
 
 		# Struggle Catalyst

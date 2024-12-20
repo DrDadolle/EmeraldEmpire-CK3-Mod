@@ -108,15 +108,14 @@ demanded_seppuku_effect = {
 			death_reason = death_demanded_seppuku
 			killer = $EXECUTIONER$
 		}
-
-		root = {
-			hidden_effect = {
-				send_interface_message = {
-					type = event_generic_neutral
-					title = msg_demanded_seppuku
-					right_icon = root
-					custom_tooltip = msg_demanded_seppuku_desc
-				}
+	}
+	root = {
+		hidden_effect = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = msg_demanded_seppuku
+				right_icon = root
+				custom_tooltip = msg_demanded_seppuku_desc
 			}
 		}
 	}

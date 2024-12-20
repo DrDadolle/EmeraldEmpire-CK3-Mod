@@ -133,7 +133,7 @@ l5r_yearly.0001 = {
 #########################
 #  A Ronin come to harakiri #
 # by  Leskinen          #
-# 0001-0010				#
+# 0010-0019				#
 #########################
 
 l5r_yearly.0010 = { 
@@ -553,8 +553,8 @@ l5r_yearly.0012 = {
 }
 
 #	Bout ended, sort after effects.
-#TODO loc : fp1_yearly.2201 !!!!
 l5r_yearly.0013 = {
+	content_source = l5r_dlc
 	type = character_event
 	title = l5r_yearly.0013.t
 	desc = l5r_yearly.0013.desc
@@ -591,9 +591,205 @@ l5r_yearly.0013 = {
 	}	
 }
 
+#########################
+#  TEA PARTY           #
+# by  Leskinen          #
+# 0020-0029				#
+#########################
+scripted_trigger l5r_yearly_0020_powerful_vassal = {
+	is_available = yes
+	is_at_war = no
+	NOT = { has_relation_rival = root }
+}
+
+
+l5r_yearly.0020 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = l5r_yearly.0020.t
+	desc = l5r_yearly.0020.desc
+
+	theme = court
+
+	left_portrait = {
+		character = root
+		animation = idle
+	}
+
+	right_portrait = {
+		character = scope:tea_vassal
+		animation = personality_rational
+	}
+
+	trigger = {
+		# Standard checks.
+		is_available_at_peace_adult = yes
+		NOT = { has_character_flag = had_event_trait_specific_l5r_yearly_0020 }
+		# A non-rival powerful vassal
+		any_powerful_vassal = { l5r_yearly_0020_powerful_vassal = yes }
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		# Not showing for 6 years
+		add_character_flag = {
+			flag = had_event_trait_specific_l5r_yearly_0020
+			days = 1825
+		}
+		random_powerful_vassal = {
+			limit = {
+				l5r_yearly_0020_powerful_vassal = yes
+			}
+			save_scope_as = tea_vassal
+		}
+		# Fall back
+		if = {
+			limit = {
+				NOT = { exists = scope:tea_vassal }
+			}
+			random_courtier_or_guest = {
+				limit = {
+					l5r_yearly_0020_powerful_vassal = yes
+				}
+				save_scope_as = tea_vassal
+			}
+		}
+
+	}
+
+	# I am a tea master, let me do it
+	option = {
+		name = l5r_yearly.0020.a
+
+		trigger = {
+			has_trait = tea_master
+		}
+
+		# Opt-out stress.
+		add_stress = minor_stress_loss
+		scope:tea_vassal = {
+			add_stress = medium_stress_loss
+		}
+		
+		add_prestige = minor_prestige_gain
+
+		stress_impact = {
+			lazy = medium_stress_impact_gain
+			diligent = minuscule_stress_impact_loss
+		}
+
+
+		ai_chance = {
+			base = 150
+			ai_value_modifier = {
+				ai_boldness = 0.25
+			}
+			modifier = {	# Weight down for stress.
+				add = -50
+				has_trait = lazy
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = diligent
+			}
+		}
+	}
+
+	# Okay thanks
+	option = {
+		name = l5r_yearly.0020.b
+
+		stress_impact = {
+			shy = minor_stress_impact_gain
+			paranoid = medium_stress_impact_gain
+		}
+
+		add_stress = minor_stress_loss
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_sociability = 0.05
+			}
+			modifier = {	# Weight down for stress.
+				add = -25
+				has_trait = shy
+			}
+			modifier = {	# Weight down for stress.
+				add = -100
+				has_trait = paranoid
+			}
+
+		}
+	}
+	
+	# I want to discuss with you
+	option = {
+		name = l5r_yearly.0020.c
+
+		stress_impact = {
+			shy = major_stress_impact_gain
+		}
+		progress_towards_friend_effect = {
+			REASON = friend_shared_tea_with
+			CHARACTER = scope:tea_vassal
+			OPINION = default_friend_opinion
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = -0.5
+				ai_sociability = 0.25
+			}
+			modifier = {	# Weight down for stress.
+				add = 50
+				has_trait = shy
+			}
+
+		}
+	}
 
 
 
+	# no Thanks
+	option = {
+		name = l5r_yearly.0020.d
+
+		stress_impact = {
+			shy = minor_stress_impact_loss
+			gregarious = minor_stress_impact_gain
+		}
+
+		scope:tea_vassal = {
+			add_opinion = {				
+				modifier = wasted_my_time_opinion
+				opinion = -25
+				target = root
+			}
+		}
+
+
+		ai_chance = {
+			base = 75
+			ai_value_modifier = {
+				ai_sociability = -0.5
+			}
+			modifier = {	# Weight up for stress.
+				add = 50
+				has_trait = shy
+			}
+			modifier = {	# Weight down for stress.
+				add = -5
+				has_trait = gregarious
+			}
+
+		}
+	}
+}
 
 #########################
 #  Learning Mahotsukai ways

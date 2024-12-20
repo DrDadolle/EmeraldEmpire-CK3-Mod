@@ -3,13 +3,12 @@
 		chance_to_happen = 75
 		200 = 0
 		
-        #L5R TODO
         ####################
         #   Common Events  #
         ####################
-		# 200 = trait_specific.9001 # Become Poet
-        200 = l5r_yearly.0001 # Become Tea Master
-        200 = l5r_yearly.0010 # A ronin comes to beg for seppuku
+        100 = l5r_yearly.0001 # Become Tea Master
+        100 = l5r_yearly.0010 # A ronin comes to beg for seppuku
+        200 = l5r_yearly.0020 # A powerful vassal wants to drink tea with me
         20 = l5r_yearly.1000 # If Witch, become mahotsukai and/or evil faith
 
 	}

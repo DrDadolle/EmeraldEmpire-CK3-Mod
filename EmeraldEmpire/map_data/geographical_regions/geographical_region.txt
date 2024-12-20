@@ -662,7 +662,11 @@ world_horse_buildings_in_hills_and_mountains = {
 ### Hunts
 
 # Deer Spread
-hunt_animal_deer_region = {}
+hunt_animal_deer_region = { 
+	regions = {
+		world_rokugan	
+	}
+}
 
 # Antelope Spread
 hunt_animal_antelope_region = {}
@@ -671,13 +675,25 @@ hunt_animal_antelope_region = {}
 hunt_animal_gazelle_region = {}
 
 # Boar Spread
-hunt_animal_boar_region = {}
+hunt_animal_boar_region = {
+	regions = {
+		world_rokugan	
+	}
+}
 
 # Bear Spread
-hunt_animal_bear_region = {}
+hunt_animal_bear_region = {
+	regions = {
+		world_rokugan	
+	}
+}
 
 # Big Cat Spread
-hunt_animal_big_cat_region = {}
+hunt_animal_big_cat_region = {
+	regions = {
+		world_rokugan	
+	}
+}
 
 # Bison Spread
 hunt_animal_bison_region = {}
@@ -685,7 +701,11 @@ hunt_animal_bison_region = {}
 # Aurochs Spread
 hunt_animal_aurochs_region = {}
 
-hunt_animal_reindeer_region = {}
+hunt_animal_reindeer_region = {
+	regions = {
+		rokugan_dragon	
+	}
+}
 
 hunt_animal_elk_region = {}
 
