@@ -1410,23 +1410,24 @@ destiny_score_interesting_circumstances = {
 			desc = strong_hook_liege_interesting_desc
 		}
 	}
-	if = {
-		limit = {
-			faith = faith:catholic
-			faith.religious_head ?= {
-				opinion = {
-					target = scope:predecessor
-					value >= 80
-				}
-			}
-		}
-		add = {
-			value = {
-				value = 100
-			}
-			desc = beloved_by_pope_interesting_desc
-		}
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		faith = faith:catholic
+	# 		faith.religious_head ?= {
+	# 			opinion = {
+	# 				target = scope:predecessor
+	# 				value >= 80
+	# 			}
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = {
+	# 			value = 100
+	# 		}
+	# 		desc = beloved_by_pope_interesting_desc
+	# 	}
+	# }
 	if = {
 		limit = {
 			faith.religious_head ?= this

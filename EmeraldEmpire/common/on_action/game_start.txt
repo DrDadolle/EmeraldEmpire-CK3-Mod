@@ -337,6 +337,11 @@ on_game_start_after_lobby = {
 					VARIABLE = started_one_of_a_kind_achievement
 						VALUE = yes
 				}
+				# 15. I'm in my Element(s)
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_im_in_my_elements_achievement
+					VALUE = yes
+				}
 			}
 		}
 
