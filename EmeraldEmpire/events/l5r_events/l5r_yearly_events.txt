@@ -572,13 +572,13 @@ l5r_yearly.0013 = {
 
 	immediate = {
 		play_music_cue = "mx_cue_combat_stinger"
-
-		scope:beggar_ronin = {
-			death = {
-				killer = root
-				death_reason = death_duel
-			}
-		}
+		# Already killed ?
+		# scope:beggar_ronin = {
+		# 	death = {
+		# 		killer = root
+		# 		death_reason = death_duel
+		# 	}
+		# }
 	}
 
 	# You won wouhou !
