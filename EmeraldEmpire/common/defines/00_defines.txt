@@ -740,7 +740,7 @@ NReligion = {
 	MAX_FERVOR = 100 # Max amount of fervor
 	HEAD_OF_FAITH_PIETY_GAIN = 1.0 # Monthly piety gain for heads of faith
 	#L5R Modified Fervor reduced as the map is smaller
-	MINIMUM_FAITH_SIZE_FERVOR_MODIFIER = 5 # Adjusts the size modifier for monthly fervor gain for a faith according to the following formula: 1/squareroot(max(define_value, faith_size)/define_value) where define value is the value of MINIMUM_FAITH_SIZE_FERVOR_MODIFIER and faith_size is the current amount of provinces that follows the faith.
+	MINIMUM_FAITH_SIZE_FERVOR_MODIFIER = 3 # Adjusts the size modifier for monthly fervor gain for a faith according to the following formula: 1/squareroot(max(define_value, faith_size)/define_value) where define value is the value of MINIMUM_FAITH_SIZE_FERVOR_MODIFIER and faith_size is the current amount of provinces that follows the faith.
 	# MINIMUM_FAITH_SIZE_FERVOR_MODIFIER = 10 # Adjusts the size modifier for monthly fervor gain for a faith according to the following formula: 1/squareroot(max(define_value, faith_size)/define_value) where define value is the value of MINIMUM_FAITH_SIZE_FERVOR_MODIFIER and faith_size is the current amount of provinces that follows the faith.
 	FERVOR_CHANGELOG_DURATION = 10 # After how many years do fervor changelog entries get deleted?
 
