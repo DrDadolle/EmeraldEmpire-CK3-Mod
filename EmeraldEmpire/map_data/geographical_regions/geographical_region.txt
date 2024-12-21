@@ -352,7 +352,7 @@ rokugan_scorpion = {
 #####################################
 rokugan_shinomen_mori_west = {
 	duchies = {
-		d_toritaka d_kaikoga d_west_shinomen_monasteries
+		d_toritaka d_kaikoga d_west_shinomen_monasteries d_west_steppes_1 d_west_steppes_2
 	}
 }
 
@@ -373,6 +373,7 @@ rokugan_shinomen_mori_north = {
  		d_miya
  	}
 }
+
 
 
 rokugan_shinomen_mori = {

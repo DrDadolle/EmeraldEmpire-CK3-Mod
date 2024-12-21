@@ -522,36 +522,36 @@ corridor_night = {
 	# 	environment = "environment_event_fp2_corridor_night" 
 	# 	ambience = "event:/DLC/FP2/SFX/Events/corridor_night" 
 	# }
-	# background = {	#FP1
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
-	# 					location.culture ?= { has_building_gfx = norse_building_gfx }
-	# 					should_use_tribal_realm_palace_graphics_trigger = yes
-	# 					AND = {
-	# 						government_has_flag = government_is_tribal
-	# 						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 					}
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				location.culture ?= { has_building_gfx = norse_building_gfx }
-	# 				should_use_tribal_realm_palace_graphics_trigger = yes
-	# 				AND = {
-	# 					government_has_flag = government_is_tribal
-	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_corridor.dds"
-	# 	environment = "environment_event_fp1_tribal_corridor"
-	# 	ambience = "event:/DLC/FP1/SFX/Events/event_tribal_corridor"
-	# }
+	background = {	#FP1
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						# location.culture ?= { has_building_gfx = norse_building_gfx }
+						should_use_tribal_realm_palace_graphics_trigger = yes
+						AND = {
+							government_has_flag = government_is_tribal
+							location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+						}
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					# location.culture ?= { has_building_gfx = norse_building_gfx }
+					should_use_tribal_realm_palace_graphics_trigger = yes
+					AND = {
+						government_has_flag = government_is_tribal
+						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					}
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_corridor.dds"
+		environment = "environment_event_fp1_tribal_corridor"
+		ambience = "event:/DLC/FP1/SFX/Events/event_tribal_corridor"
+	}
 	# background = {	#Indian Corridor
 	# 	trigger = {
 	# 		trigger_if = {
@@ -615,36 +615,36 @@ corridor_day = {
 	# 	environment = "environment_event_fp2_corridor_day" 
 	# 	ambience = "event:/DLC/FP2/SFX/Events/corridor_day"
 	# }
-	# background = {	#FP1
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
-	# 					location.culture ?= { has_building_gfx = norse_building_gfx }
-	# 					should_use_tribal_realm_palace_graphics_trigger = yes
-	# 					AND = {
-	# 						government_has_flag = government_is_tribal
-	# 						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 					}
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				location.culture ?= { has_building_gfx = norse_building_gfx }
-	# 				should_use_tribal_realm_palace_graphics_trigger = yes
-	# 				AND = {
-	# 					government_has_flag = government_is_tribal
-	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_corridor.dds"
-	# 	environment = "environment_event_fp1_tribal_corridor"
-	# 	ambience = "event:/DLC/FP1/SFX/Events/event_tribal_corridor"
-	# }
+	background = {	#FP1
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						# location.culture ?= { has_building_gfx = norse_building_gfx }
+						should_use_tribal_realm_palace_graphics_trigger = yes
+						AND = {
+							government_has_flag = government_is_tribal
+							location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+						}
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					# location.culture ?= { has_building_gfx = norse_building_gfx }
+					should_use_tribal_realm_palace_graphics_trigger = yes
+					AND = {
+						government_has_flag = government_is_tribal
+						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					}
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_corridor.dds"
+		environment = "environment_event_fp1_tribal_corridor"
+		ambience = "event:/DLC/FP1/SFX/Events/event_tribal_corridor"
+	}
 	# background = {	#Indian Corridor
 	# 	trigger = {
 	# 		trigger_if = {
@@ -714,36 +714,36 @@ council_chamber = {
 	# 	environment = "environment_ep3_relaxing_room"
 	# 	ambience = "event:/DLC/EP3/SFX/Events/Event_Images/ep3_evn_eventimage_byzantine_relaxing_room"
 	# }
-	# background = { #MENA, Africa
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
+	background = { #MENA, Africa
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
 	# 					location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
 	# 					location.culture ?= { has_building_gfx = iranian_building_gfx }
 	# 					location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
 	# 					location.culture ?= { has_graphical_african_culture_group_trigger = yes }
 	# 					location.culture ?= { has_building_gfx = berber_group_building_gfx }
-	# 					location.culture ?= { has_building_gfx = steppe_building_gfx }
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+						location.culture ?= { has_building_gfx = steppe_building_gfx }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
 	# 				location.culture ?= { has_building_gfx = iranian_building_gfx }
 	# 				location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
 	# 				location.culture ?= { has_graphical_african_culture_group_trigger = yes }
 	# 				location.culture ?= { has_building_gfx = berber_group_building_gfx }
-	# 				location.culture ?= { has_building_gfx = steppe_building_gfx }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_mena.dds"
-	# 	environment = "environment_event_bp1_relaxing_room_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/office_workplace"
-	# }
+					location.culture ?= { has_building_gfx = steppe_building_gfx }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_mena.dds"
+		environment = "environment_event_bp1_relaxing_room_mena"
+		ambience = "event:/SFX/Events/Backgrounds/office_workplace"
+	}
 	# background = {	#Indian Study
 	# 	trigger = {
 	# 		trigger_if = {
@@ -864,30 +864,30 @@ courtyard = {
 	# 	environment = "environment_event_bp1_courtyard_indian" 
 	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
 	# }
-	# background = {	#MENA Courtyard
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
-	# 					location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 					location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 				location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 				location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
-	# 	environment = "environment_event_bp1_courtyard_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
-	# }
+	background = {	#MENA Courtyard
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+						# location.culture ?= { has_building_gfx = iranian_building_gfx }
+						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+					# location.culture ?= { has_building_gfx = iranian_building_gfx }
+					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
+		environment = "environment_event_bp1_courtyard_mena"
+		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	}
 	background = { #Fallback
 		reference = "gfx/interface/illustrations/event_scenes/courtyard.dds"
 		environment = "environment_event_courtyard"
@@ -975,30 +975,30 @@ courtyard_location = {
 	# 	environment = "environment_event_bp1_courtyard_indian" 
 	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
 	# }
-	# background = {	#MENA Courtyard
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
-	# 					location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 					location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 				location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 				location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
-	# 	environment = "environment_event_bp1_courtyard_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
-	# }
+	background = {	#MENA Courtyard
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+						# location.culture ?= { has_building_gfx = iranian_building_gfx }
+						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+					# location.culture ?= { has_building_gfx = iranian_building_gfx }
+					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
+		environment = "environment_event_bp1_courtyard_mena"
+		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	}
 	background = { #Fallback
 		reference = "gfx/interface/illustrations/event_scenes/courtyard.dds"
 		environment = "environment_event_courtyard"
@@ -1047,18 +1047,18 @@ courtyard_scope = {
 	# 	environment = "environment_event_bp1_courtyard_indian" 
 	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
 	# }
-	# background = {	#MENA Courtyard
-	# 	trigger = {
-	# 		OR = {
-	# 			scope:background_courtyard_scope.location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 			scope:background_courtyard_scope.location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 			scope:background_courtyard_scope.location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
-	# 	environment = "environment_event_bp1_courtyard_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
-	# }
+	background = {	#MENA Courtyard
+		trigger = {
+			OR = {
+				# scope:background_courtyard_scope.location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+				# scope:background_courtyard_scope.location.culture ?= { has_building_gfx = iranian_building_gfx }
+				scope:background_courtyard_scope.location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
+		environment = "environment_event_bp1_courtyard_mena"
+		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	}
 	background = { #Fallback
 		reference = "gfx/interface/illustrations/event_scenes/courtyard.dds"
 		environment = "environment_event_courtyard"
@@ -1113,24 +1113,24 @@ dungeon = {
 						#L5R Disabled
 						# location.culture ?= { has_building_gfx = norse_building_gfx }
 						should_use_tribal_realm_palace_graphics_trigger = yes
-						# AND = {
-						# 	government_has_flag = government_is_tribal
-						# 	location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-						# }
+						AND = {
+							government_has_flag = government_is_tribal
+							location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+						}
 					}
 				}
 			}
 			#L5R Disabled
-			# trigger_else = {
-			# 	OR = {
-			# 		location.culture ?= { has_building_gfx = norse_building_gfx }
-			# 		should_use_tribal_realm_palace_graphics_trigger = yes
-			# 		AND = {
-			# 			government_has_flag = government_is_tribal
-			# 			location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-			# 		}
-			# 	}
-			# }
+			trigger_else = {
+				OR = {
+					# location.culture ?= { has_building_gfx = norse_building_gfx }
+					should_use_tribal_realm_palace_graphics_trigger = yes
+					AND = {
+						government_has_flag = government_is_tribal
+						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					}
+				}
+			}
 			
 		}
 		reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_prison.dds"
@@ -1166,11 +1166,10 @@ dungeon_scope = {
 				OR = {
 					# capital_province.culture = { has_building_gfx = norse_building_gfx } #L5R Disabled
 					should_use_tribal_realm_palace_graphics_trigger = yes
-					#L5R Disabled
-					# AND = {
-					# 	government_has_flag = government_is_tribal
-					# 	capital_province.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-					# }
+					AND = {
+						government_has_flag = government_is_tribal
+						capital_province.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					}
 				}
 			}
 		}
@@ -3687,24 +3686,24 @@ feast = {
 	# 	environment = "environment_mena_feast"
 	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_feast_mena"
 	# }
-	# background = {
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = {
-	# 				NOT = { exists = scope:activity }
-	# 			}
-	# 			location.culture ?= {
-	# 				has_building_gfx = steppe_building_gfx
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			scope:activity.activity_location.culture ?= { has_building_gfx = steppe_building_gfx }
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
-	# 	environment = "environment_steppe_feast"
-	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
-	# }
+	background = {
+		trigger = {
+			trigger_if = {
+				limit = {
+					NOT = { exists = scope:activity }
+				}
+				location.culture ?= {
+					has_building_gfx = steppe_building_gfx
+				}
+			}
+			trigger_else = {
+				scope:activity.activity_location.culture ?= { has_building_gfx = steppe_building_gfx }
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
+		environment = "environment_steppe_feast"
+		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
+	}
 	# background = {
 	# 	trigger = {
 	# 		trigger_if = {
@@ -3810,22 +3809,22 @@ feast_event = {
 	# 	environment = "environment_mena_feast"
 	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_feast_mena"
 	# }
-	# background = {
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				location.culture = { has_building_gfx = steppe_building_gfx }
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			location.culture = { has_building_gfx = steppe_building_gfx }
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
-	# 	environment = "environment_steppe_feast"
-	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
-	# }
+	background = {
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					location.culture = { has_building_gfx = steppe_building_gfx }
+				}
+			}
+			trigger_else = {
+				location.culture = { has_building_gfx = steppe_building_gfx }
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
+		environment = "environment_steppe_feast"
+		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
+	}
 	# background = {
 	# 	trigger = {
 	# 		trigger_if = {
@@ -4401,28 +4400,28 @@ bedchamber = {
 	# 	environment = "environment_event_mena_bedchamber"
 	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_bedroom"
 	# }
-	# background = {
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
-	# 					location.culture ?= { has_building_gfx = indian_building_gfx }
-	# 					location.culture ?= { has_building_gfx = steppe_building_gfx }
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				location.culture ?= { has_building_gfx = indian_building_gfx }
-	# 				location.culture ?= { has_building_gfx = steppe_building_gfx }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_bedroom_indian.dds"
-	# 	environment = "environment_event_indian_bedchamber"
-	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_bedroom"
-	# }
+	background = {
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						# location.culture ?= { has_building_gfx = indian_building_gfx }
+						location.culture ?= { has_building_gfx = steppe_building_gfx }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					# location.culture ?= { has_building_gfx = indian_building_gfx }
+					location.culture ?= { has_building_gfx = steppe_building_gfx }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_bedroom_indian.dds"
+		environment = "environment_event_indian_bedchamber"
+		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_bedroom"
+	}
 	
 	background = {
 		reference = "gfx/interface/illustrations/event_scenes/bedchamber.dds"
@@ -4537,34 +4536,34 @@ study = {
 	# 	environment = "environment_ep3_relaxing_room"
 	# 	ambience = "event:/DLC/EP3/SFX/Events/Event_Images/ep3_evn_eventimage_byzantine_relaxing_room"
 	# }
-	# background = { #MENA uses relaxing room as fallback
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
-	# 					location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 					location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 					location.culture ?= { has_graphical_african_culture_group_trigger = yes }
-	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 					location.culture ?= { has_building_gfx = berber_group_building_gfx }
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 				location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 				location.culture ?= { has_graphical_african_culture_group_trigger = yes }
-	# 				location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 				location.culture ?= { has_building_gfx = berber_group_building_gfx }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_mena.dds"
-	# 	environment = "environment_event_bp1_relaxing_room_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/office_workplace"
-	# }
+	background = { #MENA uses relaxing room as fallback
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+						# location.culture ?= { has_building_gfx = iranian_building_gfx }
+						# location.culture ?= { has_graphical_african_culture_group_trigger = yes }
+						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+						# location.culture ?= { has_building_gfx = berber_group_building_gfx }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+					# location.culture ?= { has_building_gfx = iranian_building_gfx }
+					# location.culture ?= { has_graphical_african_culture_group_trigger = yes }
+					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					# location.culture ?= { has_building_gfx = berber_group_building_gfx }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_mena.dds"
+		environment = "environment_event_bp1_relaxing_room_mena"
+		ambience = "event:/SFX/Events/Backgrounds/office_workplace"
+	}
 	# background = {	#Indian Study
 	# 	trigger = {
 	# 		trigger_if = {
@@ -4638,20 +4637,20 @@ location_study = {
 	# 	environment = "environment_ep3_relaxing_room"
 	# 	ambience = "event:/DLC/EP3/SFX/Events/Event_Images/ep3_evn_eventimage_byzantine_relaxing_room"
 	# }
-	# background = { #MENA uses relaxing room as fallback
-	# 	trigger = {
-	# 		OR = {
-	# 			location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 			location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 			location.culture ?= { has_graphical_african_culture_group_trigger = yes }
-	# 			location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 			location.culture ?= { has_building_gfx = berber_group_building_gfx }
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_mena.dds"
-	# 	environment = "environment_event_bp1_relaxing_room_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/office_workplace"
-	# }
+	background = { #MENA uses relaxing room as fallback
+		trigger = {
+			OR = {
+				# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+				# location.culture ?= { has_building_gfx = iranian_building_gfx }
+				# location.culture ?= { has_graphical_african_culture_group_trigger = yes }
+				location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+				# location.culture ?= { has_building_gfx = berber_group_building_gfx }
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_mena.dds"
+		environment = "environment_event_bp1_relaxing_room_mena"
+		ambience = "event:/SFX/Events/Backgrounds/office_workplace"
+	}
 	# background = {	#Indian Study
 	# 	trigger = {
 	# 		location.culture ?= { has_building_gfx = indian_building_gfx }
@@ -4745,34 +4744,34 @@ relaxing_room = {
 	# 	environment = "environment_ep3_byzantine_study"
 	# 	ambience = "event:/SFX/Events/Backgrounds/office_workplace"
 	# }
-	# background = { #MENA Relaxing Room
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
-	# 					location.culture ?= { has_graphical_india_culture_group_trigger = yes }
-	# 					location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 					location.culture ?= { has_graphical_african_culture_group_trigger = yes }
-	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 					location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				location.culture ?= { has_graphical_india_culture_group_trigger = yes }
-	# 				location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 				location.culture ?= { has_graphical_african_culture_group_trigger = yes }
-	# 				location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 				location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_mena.dds"
-	# 	environment = "environment_event_bp1_relaxing_room_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/office_workplace"
-	# }
+	background = { #MENA Relaxing Room
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						# location.culture ?= { has_graphical_india_culture_group_trigger = yes }
+						# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+						# location.culture ?= { has_graphical_african_culture_group_trigger = yes }
+						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+						# location.culture ?= { has_building_gfx = iranian_building_gfx }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					# location.culture ?= { has_graphical_india_culture_group_trigger = yes }
+					# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+					# location.culture ?= { has_graphical_african_culture_group_trigger = yes }
+					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					# location.culture ?= { has_building_gfx = iranian_building_gfx }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_mena.dds"
+		environment = "environment_event_bp1_relaxing_room_mena"
+		ambience = "event:/SFX/Events/Backgrounds/office_workplace"
+	}
 
 	background = {	#Western Relaxing Room - Also Fallback
 		reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_western.dds"
@@ -4818,22 +4817,22 @@ relaxing_room_scope = {
 	# 	environment = "environment_ep3_byzantine_study"
 	# 	ambience = "event:/SFX/Events/Backgrounds/office_workplace"
 	# }
-	# background = { #MENA Relaxing Room
-	# 	trigger = {
-	# 		scope:background_relaxing_room_scope = {
-	# 			OR = {
-	# 				capital_province.culture = { has_graphical_india_culture_group_trigger = yes }
-	# 				capital_province.culture = { has_graphical_mena_culture_group_trigger = yes }
-	# 				capital_province.culture = { has_graphical_african_culture_group_trigger = yes }
-	# 				capital_province.culture = { has_graphical_steppe_culture_group_trigger = yes }
-	# 				capital_province.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_mena.dds"
-	# 	environment = "environment_event_bp1_relaxing_room_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/office_workplace"
-	# }
+	background = { #MENA Relaxing Room
+		trigger = {
+			scope:background_relaxing_room_scope = {
+				OR = {
+					# capital_province.culture = { has_graphical_india_culture_group_trigger = yes }
+					# capital_province.culture = { has_graphical_mena_culture_group_trigger = yes }
+					# capital_province.culture = { has_graphical_african_culture_group_trigger = yes }
+					capital_province.culture = { has_graphical_steppe_culture_group_trigger = yes }
+					# capital_province.culture ?= { has_building_gfx = iranian_building_gfx }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_mena.dds"
+		environment = "environment_event_bp1_relaxing_room_mena"
+		ambience = "event:/SFX/Events/Backgrounds/office_workplace"
+	}
 	background = {	#Western Relaxing Room - Also Fallback
 		reference = "gfx/interface/illustrations/event_scenes/bp1_relaxing_room_western.dds"
 		environment = "environment_event_bp1_relaxing_room_western" 
@@ -4905,30 +4904,30 @@ physicians_study = {
 	# 	environment = "environment_ce1_study_physician_indian"
 	# 	ambience = "event:/SFX/Events/Backgrounds/FP4/fp4_mena_physician"
 	# }
-	# background = { #MENA Physician Study
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
-	# 					location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 					location.culture ?= { has_graphical_african_culture_group_trigger = yes }
-	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 				location.culture ?= { has_graphical_african_culture_group_trigger = yes }
-	# 				location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/fp4_study_physician_mena.dds"
-	# 	environment = "environment_ce1_study_physician_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/FP4/fp4_mena_physician"
-	# }
+	background = { #MENA Physician Study
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+						# location.culture ?= { has_graphical_african_culture_group_trigger = yes }
+						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+					# location.culture ?= { has_graphical_african_culture_group_trigger = yes }
+					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/fp4_study_physician_mena.dds"
+		environment = "environment_ce1_study_physician_mena"
+		ambience = "event:/SFX/Events/Backgrounds/FP4/fp4_mena_physician"
+	}
 	background = { #Western Physician Study
 		reference = "gfx/interface/illustrations/event_scenes/study_physician.dds"
 		environment = "environment_event_study_physician"
@@ -4938,35 +4937,36 @@ physicians_study = {
 
 ### TAVERN ###
 tavern = {
-	# L5R Disabled
-	# background = { #MENA Tavern
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
-	# 					location.culture ?= { has_graphical_india_culture_group_trigger = yes }
-	# 					location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 					location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 					location.culture ?= { has_graphical_african_culture_group_trigger = yes }
-	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				location.culture ?= { has_graphical_india_culture_group_trigger = yes }
-	# 				location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 				location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 				location.culture ?= { has_graphical_african_culture_group_trigger = yes }
-	# 				location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/bp2_tavern_mena.dds"
-	# 	environment = "environment_bp2_tavern_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/corner_of_tavern"
-	# }
+	background = { #MENA Tavern
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						# L5R Disabled
+						# location.culture ?= { has_graphical_india_culture_group_trigger = yes }
+						# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+						# location.culture ?= { has_building_gfx = iranian_building_gfx }
+						# location.culture ?= { has_graphical_african_culture_group_trigger = yes }
+						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					# L5R Disabled
+					# location.culture ?= { has_graphical_india_culture_group_trigger = yes }
+					# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+					# location.culture ?= { has_building_gfx = iranian_building_gfx }
+					# location.culture ?= { has_graphical_african_culture_group_trigger = yes }
+					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp2_tavern_mena.dds"
+		environment = "environment_bp2_tavern_mena"
+		ambience = "event:/SFX/Events/Backgrounds/corner_of_tavern"
+	}
 	background = { # Western Tavern
 		reference = "gfx/interface/illustrations/event_scenes/tavern.dds"
 		environment = "environment_event_tavern"
@@ -6529,54 +6529,58 @@ holy_site_generic = {
 	# 	ambience = "event:/SFX/Events/Backgrounds/temple_christian"
 	# }
 
-	# background = { #Pagan generic holy site
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				OR = {
-	# 					AND = {
-	# 						exists = scope:activity
-	# 						scope:activity.activity_location.province_owner ?= { 
-	# 							OR = {
-	# 								government_has_flag = government_is_clan
-	# 								government_has_flag = government_is_tribal
-	# 							} 
-	# 						}
-	# 					}
-	# 					AND = {
-	# 						exists = scope:activity
-	# 						scope:activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
-	# 					}
-	# 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 					religion = { is_in_family = rf_pagan }
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			OR = {
-	# 				AND = {
-	# 					exists = scope:activity
-	# 					scope:activity.activity_location.province_owner ?= { 
-	# 						OR = {
-	# 							government_has_flag = government_is_clan
-	# 							government_has_flag = government_is_tribal
-	# 						} 
-	# 					}
-	# 				}
-	# 				AND = {
-	# 					exists = scope:activity
-	# 					scope:activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
-	# 				}
-	# 				location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 				religion = { is_in_family = rf_pagan }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
-	# 	environment = "environment_event_garden"
-	# 	ambience = "event:/DLC/FP1/SFX/Events/event_temple"
-	# }
+	background = { #Pagan generic holy site
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						AND = {
+							exists = scope:activity
+							scope:activity.activity_location.province_owner ?= { 
+								OR = {
+									government_has_flag = government_is_clan
+									government_has_flag = government_is_tribal
+								} 
+							}
+						}
+						AND = {
+							exists = scope:activity
+							scope:activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
+						}
+						location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+						#L5R Modified
+						religion = { is_in_family = rf_gaijin }
+						# religion = { is_in_family = rf_pagan }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					AND = {
+						exists = scope:activity
+						scope:activity.activity_location.province_owner ?= { 
+							OR = {
+								government_has_flag = government_is_clan
+								government_has_flag = government_is_tribal
+							} 
+						}
+					}
+					AND = {
+						exists = scope:activity
+						scope:activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
+					}
+					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+					#L5R Modified
+					religion = { is_in_family = rf_gaijin }
+					# religion = { is_in_family = rf_pagan }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
+		environment = "environment_event_garden"
+		ambience = "event:/DLC/FP1/SFX/Events/event_temple"
+	}
 
 	# background = { #MENA generic holy site
 	# 	trigger = {
@@ -6736,30 +6740,32 @@ holy_site_generic_scope = {
 	# 	ambience = "event:/SFX/Events/Backgrounds/temple_christian"
 	# }
 
-	# background = { #Pagan generic holy site
-	# 	trigger = {
-	# 		OR = {
-	# 			AND = {
-	# 				exists = scope:activity
-	# 				scope:activity.activity_location.province_owner ?= { 
-	# 					OR = {
-	# 						government_has_flag = government_is_clan
-	# 						government_has_flag = government_is_tribal
-	# 					} 
-	# 				}
-	# 			}
-	# 			AND = {
-	# 				exists = scope:activity
-	# 				scope:activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
-	# 			}
-	# 			scope:holy_site_scope.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 			scope:holy_site_scope.religion = { is_in_family = rf_pagan }
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
-	# 	environment = "environment_event_garden"
-	# 	ambience = "event:/DLC/FP1/SFX/Events/event_temple"
-	# }
+	background = { #Pagan generic holy site
+		trigger = {
+			OR = {
+				AND = {
+					exists = scope:activity
+					scope:activity.activity_location.province_owner ?= { 
+						OR = {
+							government_has_flag = government_is_clan
+							government_has_flag = government_is_tribal
+						} 
+					}
+				}
+				AND = {
+					exists = scope:activity
+					scope:activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
+				}
+				scope:holy_site_scope.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+				#L5R Modified
+				scope:holy_site_scope.religion = { is_in_family = rf_gaijin }
+				# scope:holy_site_scope.religion = { is_in_family = rf_pagan }
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
+		environment = "environment_event_garden"
+		ambience = "event:/DLC/FP1/SFX/Events/event_temple"
+	}
 
 	# background = { #MENA generic holy site
 	# 	trigger = {
@@ -6909,15 +6915,17 @@ holy_site_scope = {
 	# 	ambience = "event:/SFX/Events/Backgrounds/temple_christian"
 	# }
 
-	# background = { #Pagan generic holy site
-	# 	trigger = {
-	# 		scope:background_terrain_scope.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 		scope:background_terrain_scope.religion = { is_in_family = rf_pagan }
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
-	# 	environment = "environment_event_garden"
-	# 	ambience = "event:/DLC/FP1/SFX/Events/event_temple"
-	# }
+	background = { #Pagan generic holy site
+		trigger = {
+			scope:background_terrain_scope.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+			#L5R Modified
+			scope:background_terrain_scope.religion = { is_in_family = rf_gaijin }
+			# scope:background_terrain_scope.religion = { is_in_family = rf_pagan }
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
+		environment = "environment_event_garden"
+		ambience = "event:/DLC/FP1/SFX/Events/event_temple"
+	}
 
 	# background = { #MENA generic holy site
 	# 	trigger = {
@@ -7175,20 +7183,20 @@ ep2_wedding_ceremony = {
 	# 	environment = "environment_indian_wedding"
 	# 	ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Weddings/ep2_event_grand_wedding"
 	# }
-	# background = {	 #MENA (also steppes and African )
-	# 	trigger = {
-	# 		scope:activity ?= { has_activity_type = activity_wedding }
-	# 		OR = {
-	# 			location.culture = { has_graphical_mena_culture_group_trigger = yes }
-	# 			location.culture = { has_graphical_steppe_culture_group_trigger = yes }
-	# 			location.culture = { has_graphical_african_culture_group_trigger = yes }
-	# 			location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_mena.dds"
-	# 	environment = "environment_mena_wedding"
-	# 	ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Weddings/ep2_event_grand_wedding"
-	# }
+	background = {	 #MENA (also steppes and African )
+		trigger = {
+			scope:activity ?= { has_activity_type = activity_wedding }
+			OR = {
+				# location.culture = { has_graphical_mena_culture_group_trigger = yes }
+				location.culture = { has_graphical_steppe_culture_group_trigger = yes }
+				# location.culture = { has_graphical_african_culture_group_trigger = yes }
+				# location.culture ?= { has_building_gfx = iranian_building_gfx }
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_mena.dds"
+		environment = "environment_mena_wedding"
+		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Weddings/ep2_event_grand_wedding"
+	}
 	background = {	 # Western - Fallback
 		reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_western.dds"
 		environment = "environment_western_wedding"
@@ -7269,34 +7277,34 @@ ep2_involved_activity = {
 	# 	environment = "environment_western_wedding"
 	# 	ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Weddings/ep2_event_grand_wedding"
 	# }
-	# background = {	#MENA (also for steppe and African)
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				involved_activity ?= { has_activity_type = activity_wedding }
-	# 				OR = {
-	# 					location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 					location.culture = { has_graphical_mena_culture_group_trigger = yes }
-	# 					location.culture = { has_graphical_steppe_culture_group_trigger = yes }
-	# 					location.culture = { has_graphical_african_culture_group_trigger = yes }
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			involved_activity ?= { has_activity_type = activity_wedding }
-	# 			OR = {
-	# 				location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 				location.culture = { has_graphical_mena_culture_group_trigger = yes }
-	# 				location.culture = { has_graphical_steppe_culture_group_trigger = yes }
-	# 				location.culture = { has_graphical_african_culture_group_trigger = yes }
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_mena.dds"
-	# 	environment = "environment_mena_wedding"
-	# 	ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Weddings/ep2_event_grand_wedding"
-	# }
+	background = {	#MENA (also for steppe and African)
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					involved_activity ?= { has_activity_type = activity_wedding }
+					OR = {
+						# location.culture ?= { has_building_gfx = iranian_building_gfx }
+						# location.culture = { has_graphical_mena_culture_group_trigger = yes }
+						location.culture = { has_graphical_steppe_culture_group_trigger = yes }
+						# location.culture = { has_graphical_african_culture_group_trigger = yes }
+					}
+				}
+			}
+			trigger_else = {
+				involved_activity ?= { has_activity_type = activity_wedding }
+				OR = {
+					# location.culture ?= { has_building_gfx = iranian_building_gfx }
+					# location.culture = { has_graphical_mena_culture_group_trigger = yes }
+					location.culture = { has_graphical_steppe_culture_group_trigger = yes }
+					# location.culture = { has_graphical_african_culture_group_trigger = yes }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_mena.dds"
+		environment = "environment_mena_wedding"
+		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Weddings/ep2_event_grand_wedding"
+	}
 	# background = {	#Indian
 	# 	trigger = {
 	# 		trigger_if = {
@@ -7611,40 +7619,40 @@ ep2_involved_activity = {
 	# 	environment = "environment_western_holy_site"
 	# 	ambience = "event:/SFX/Events/Backgrounds/temple_christian"
 	# }
-	# background = {
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				involved_activity ?= { has_activity_type = activity_pilgrimage }
-	# 				OR = {
-	# 					involved_activity.activity_location.province_owner ?= { 
-	# 						OR = {
-	# 							government_has_flag = government_is_clan
-	# 							government_has_flag = government_is_tribal
-	# 						} 
-	# 					}
-	# 					involved_activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }	
-	# 				}
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			involved_activity ?= { has_activity_type = activity_pilgrimage }
-	# 			OR = {
-	# 				involved_activity.activity_location.province_owner ?= { 
-	# 					OR = {
-	# 						government_has_flag = government_is_clan
-	# 						government_has_flag = government_is_tribal
-	# 					} 
-	# 				}
-	# 				involved_activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }	
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
-	# 	environment = "environment_event_garden"
-	# 	ambience = "event:/DLC/FP1/SFX/Events/event_temple"
-	# }
+	background = {
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					involved_activity ?= { has_activity_type = activity_pilgrimage }
+					OR = {
+						involved_activity.activity_location.province_owner ?= { 
+							OR = {
+								government_has_flag = government_is_clan
+								government_has_flag = government_is_tribal
+							} 
+						}
+						involved_activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }	
+					}
+				}
+			}
+			trigger_else = {
+				involved_activity ?= { has_activity_type = activity_pilgrimage }
+				OR = {
+					involved_activity.activity_location.province_owner ?= { 
+						OR = {
+							government_has_flag = government_is_clan
+							government_has_flag = government_is_tribal
+						} 
+					}
+					involved_activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }	
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
+		environment = "environment_event_garden"
+		ambience = "event:/DLC/FP1/SFX/Events/event_temple"
+	}
 	# background = {
 	# 	trigger = {
 	# 		trigger_if = {
@@ -7763,24 +7771,24 @@ ep2_involved_activity = {
 	# 	environment = "environment_mena_feast"
 	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_feast_mena"
 	# }
-	# background = {
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				involved_activity ?= { has_activity_type = activity_feast }
-	# 				involved_activity.activity_location.culture = { has_building_gfx = steppe_building_gfx }
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			involved_activity ?= { has_activity_type = activity_feast }
-	# 			involved_activity.activity_location.culture = { has_building_gfx = steppe_building_gfx }
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
-	# 	environment = "environment_steppe_feast"
-	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
-	# }
+	background = {
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					involved_activity ?= { has_activity_type = activity_feast }
+					involved_activity.activity_location.culture = { has_building_gfx = steppe_building_gfx }
+				}
+			}
+			trigger_else = {
+				involved_activity ?= { has_activity_type = activity_feast }
+				involved_activity.activity_location.culture = { has_building_gfx = steppe_building_gfx }
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
+		environment = "environment_steppe_feast"
+		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
+	}
 	# background = {
 	# 	trigger = {
 	# 		trigger_if = {
@@ -7881,29 +7889,29 @@ ep2_activity = {
 	# 	environment = "environment_western_wedding"
 	# 	ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Weddings/ep2_event_grand_wedding"
 	# }
-	# background = {	#MENA (also for steppe and African)
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				##
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			##
-	# 		}
-	# 		scope:activity ?= { has_activity_type = activity_wedding }
-	# 		OR = {
-	# 			location.culture = { has_graphical_mena_culture_group_trigger = yes }
-	# 			location.culture = { has_graphical_steppe_culture_group_trigger = yes }
-	# 			location.culture = { has_graphical_african_culture_group_trigger = yes }
-	# 			location.culture = { has_building_gfx = iranian_building_gfx }
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_mena.dds"
-	# 	environment = "environment_mena_wedding"
-	# 	ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Weddings/ep2_event_grand_wedding"
-	# }
+	background = {	#MENA (also for steppe and African)
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					##
+				}
+			}
+			trigger_else = {
+				##
+			}
+			scope:activity ?= { has_activity_type = activity_wedding }
+			OR = {
+				# location.culture = { has_graphical_mena_culture_group_trigger = yes }
+				location.culture = { has_graphical_steppe_culture_group_trigger = yes }
+				# location.culture = { has_graphical_african_culture_group_trigger = yes }
+				# location.culture = { has_building_gfx = iranian_building_gfx }
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_mena.dds"
+		environment = "environment_mena_wedding"
+		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Weddings/ep2_event_grand_wedding"
+	}
 	# background = {	#Indian
 	# 	trigger = {
 	# 		trigger_if = {
@@ -8154,32 +8162,32 @@ ep2_activity = {
 	# 	environment = "environment_western_holy_site"
 	# 	ambience = "event:/SFX/Events/Backgrounds/temple_christian"
 	# }
-	# background = {
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				##
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			##
-	# 		}
-	# 		scope:activity ?= { has_activity_type = activity_pilgrimage }
-	# 		OR = {
-	# 			scope:activity.activity_location.province_owner ?= { 
-	# 				OR = {
-	# 					government_has_flag = government_is_clan
-	# 					government_has_flag = government_is_tribal
-	# 				} 
-	# 			}
-	# 			scope:activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }	
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
-	# 	environment = "environment_event_garden"
-	# 	ambience = "event:/DLC/FP1/SFX/Events/event_temple"
-	# }
+	background = {
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					##
+				}
+			}
+			trigger_else = {
+				##
+			}
+			scope:activity ?= { has_activity_type = activity_pilgrimage }
+			OR = {
+				scope:activity.activity_location.province_owner ?= { 
+					OR = {
+						government_has_flag = government_is_clan
+						government_has_flag = government_is_tribal
+					} 
+				}
+				scope:activity.activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }	
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
+		environment = "environment_event_garden"
+		ambience = "event:/DLC/FP1/SFX/Events/event_temple"
+	}
 	# background = {
 	# 	trigger = {
 	# 		trigger_if = {
@@ -8294,24 +8302,24 @@ ep2_activity = {
 	# 	environment = "environment_mena_feast"
 	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_feast_mena"
 	# }
-	# background = {
-	# 	trigger = {
-	# 		trigger_if = {
-	# 			limit = { exists = scope:bg_override_char }
-	# 			scope:bg_override_char = {
-	# 				##
-	# 			}
-	# 		}
-	# 		trigger_else = {
-	# 			##
-	# 		}
-	# 		scope:activity ?= { has_activity_type = activity_feast }
-	# 		scope:activity.activity_location.culture = { has_building_gfx = steppe_building_gfx }
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
-	# 	environment = "environment_steppe_feast"
-	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
-	# }
+	background = {
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					##
+				}
+			}
+			trigger_else = {
+				##
+			}
+			scope:activity ?= { has_activity_type = activity_feast }
+			scope:activity.activity_location.culture = { has_building_gfx = steppe_building_gfx }
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
+		environment = "environment_steppe_feast"
+		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
+	}
 	# background = {
 	# 	trigger = {
 	# 		trigger_if = {
@@ -9294,7 +9302,7 @@ journey_activity_background = {
 				activity_location.county.holder = { #Local Host
 					OR = {
 						should_use_tribal_realm_palace_graphics_trigger = yes
-						# culture = { has_graphical_steppe_culture_group_trigger = yes } #L5R Disabled
+						culture = { has_graphical_steppe_culture_group_trigger = yes }
 					}
 				}
 			}
@@ -9394,18 +9402,18 @@ survey_activity_background = {
 	# 	environment = "environment_event_bp1_courtyard_indian" 
 	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
 	# }
-	# background = {	#MENA Courtyard
-	# 	trigger = {
-	# 		OR = {
-	# 			location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-	# 			location.culture ?= { has_building_gfx = iranian_building_gfx }
-	# 			location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
-	# 		}
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
-	# 	environment = "environment_event_bp1_courtyard_mena"
-	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
-	# }
+	background = {	#MENA Courtyard
+		trigger = {
+			OR = {
+				# location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+				# location.culture ?= { has_building_gfx = iranian_building_gfx }
+				location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
+		environment = "environment_event_bp1_courtyard_mena"
+		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	}
 	background = { # Fallback
 		reference = "gfx/interface/illustrations/event_scenes/bp2_courtyard.dds"
 		environment = "environment_bp2_courtyard"
@@ -9890,14 +9898,14 @@ village_festival = {
 	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_feast_mena"
 	# }
 
-	# background = { # Steppes
-	# 	trigger = {
-	# 		location.culture ?= { has_building_gfx = steppe_building_gfx }
-	# 	}
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
-	# 	environment = "environment_steppe_feast"
-	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
-	# }
+	background = { # Steppes
+		trigger = {
+			location.culture ?= { has_building_gfx = steppe_building_gfx }
+		}
+		reference = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
+		environment = "environment_steppe_feast"
+		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
+	}
 
 	# background = { # African
 	# 	trigger = {

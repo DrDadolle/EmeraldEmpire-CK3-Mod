@@ -48,9 +48,7 @@ has_graphical_african_culture_group_trigger = {
 }
 
 has_graphical_steppe_culture_group_trigger = {
-	#L5R Disabled
-	always = no
-	# has_building_gfx = steppe_building_gfx
+	 has_building_gfx = steppe_building_gfx
 }
 
 has_graphical_iberian_culture_group_trigger = {

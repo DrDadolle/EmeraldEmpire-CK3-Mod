@@ -121,6 +121,43 @@ b_kyuden_miya = {
 	}
 }
 
+d_rich_frog = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_miya.dds"
+	}
+}
+
+c_rich_frog = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_miya.dds"
+	}
+}
+b_rich_frog = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_miya.dds"
+	}
+}
+b_frog_temple = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_miya.dds"
+	}
+}
+b_frog_mura = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_imperial_miya.dds"
+	}
+}
+
 d_otomo = {
 	pattern = "pattern_solid.dds"	
 	color1 = "white"
@@ -4176,6 +4213,154 @@ b_nanashi_mura = {
 		texture = "te_ronin_wolf.dds"
 	}
 }
+##### West Steppes
+d_west_steppes_1 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+c_west_steppes_1 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_1 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_2 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+c_west_steppes_2 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_3 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_4 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+c_west_steppes_3 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_5 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_6 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+
+d_west_steppes_2 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+c_west_steppes_4 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_7 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+c_west_steppes_5 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_8 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+c_west_steppes_6 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_9 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+c_west_steppes_7 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_10 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_steppes_11 = {
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+
+
 ##########################
 ##### Kintani
 ##########################

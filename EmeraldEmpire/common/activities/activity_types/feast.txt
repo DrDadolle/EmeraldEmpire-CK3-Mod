@@ -1972,14 +1972,14 @@ activity_feast = {
 	# 	environment = "environment_mena_feast"
 	# 	ambience = "event:/SFX/Events/Backgrounds/feasthall"
 	# }
-	# background = {
-	# 	trigger = {
-	# 		activity_location.culture = { has_building_gfx = steppe_building_gfx }
-	# 	}
-	# 	texture = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
-	# 	environment = "environment_steppe_feast"
-	# 	ambience = "event:/SFX/Events/Backgrounds/feasthall"
-	# }
+	background = {
+		trigger = {
+			activity_location.culture = { has_building_gfx = steppe_building_gfx }
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
+		environment = "environment_steppe_feast"
+		ambience = "event:/SFX/Events/Backgrounds/feasthall"
+	}
 	# background = {
 	# 	trigger = {
 	# 		activity_location.culture = { has_building_gfx = african_building_gfx }

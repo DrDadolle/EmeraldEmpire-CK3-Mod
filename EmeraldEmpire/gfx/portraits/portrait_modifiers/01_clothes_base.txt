@@ -1048,67 +1048,67 @@ clothes_base = { # The lowest priority group of clothes with triggers based on r
 
 # ## Steppe ##
 
-#     steppe_commoners = {
-#         dna_modifiers = {
-#             accessory = {
-#                 mode = add
-#                 gene = clothes
-#                 template = steppe_commoner_clothes
-#                 range = { 0 1 } # For the randomness to work correctly
-#             }
-#         }   
-#         weight = {
-#             base = 0
-#             modifier = {
-#                 add = 20
-#                 portrait_commoner_clothing_trigger = {
-#                     CULTURE_INPUT = steppe
-#                 }
-#             }
-#         }
-#     }
+    steppe_commoners = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = steppe_commoner_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+            modifier = {
+                add = 20
+                portrait_commoner_clothing_trigger = {
+                    CULTURE_INPUT = steppe
+                }
+            }
+        }
+    }
 
-#     steppe_low_nobles = {
-#         dna_modifiers = {
-#             accessory = {
-#                 mode = add
-#                 gene = clothes
-#                 template = steppe_low_nobility_clothes
-#                 range = { 0 1 } # For the randomness to work correctly
-#             }
-#         }   
-#         weight = {
-#             base = 0
-#             court_fashion_level_4_modifier = { INPUT_PARAMETER = steppe } 
-#             modifier = {
-#                 add = 50
-#                 portrait_low_nobles_clothing_trigger = { 
-#                     CULTURE_INPUT = steppe
-#                 }  
-#             }
-#         }
-#     }
+    steppe_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = steppe_low_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+            court_fashion_level_4_modifier = { INPUT_PARAMETER = steppe } 
+            modifier = {
+                add = 50
+                portrait_low_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = steppe
+                }  
+            }
+        }
+    }
 
-#     steppe_high_nobles = {
-#         dna_modifiers = {
-#             accessory = {
-#                 mode = add
-#                 gene = clothes
-#                 template = steppe_high_nobility_clothes
-#                 range = { 0 1 } # For the randomness to work correctly
-#             }
-#         }       
-#         weight = {
-#             base = 0
-#             court_fashion_level_5_modifier = { INPUT_PARAMETER = steppe } 
-#             modifier = {
-#                 add = 50
-#                 portrait_high_nobles_clothing_trigger = { 
-#                     CULTURE_INPUT = steppe
-#                 } 
-#             }
-#         }
-#     }
+    steppe_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = steppe_high_nobility_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }       
+        weight = {
+            base = 0
+            court_fashion_level_5_modifier = { INPUT_PARAMETER = steppe } 
+            modifier = {
+                add = 50
+                portrait_high_nobles_clothing_trigger = { 
+                    CULTURE_INPUT = steppe
+                } 
+            }
+        }
+    }
 
 # ## Northern Pagans ##
 

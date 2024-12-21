@@ -700,21 +700,17 @@ portrait_fp1_norse_clothing_spouse_trigger = {
 }
 
 portrait_steppe_clothing_trigger = {
-	#L5R Disabled
-	always = no
-	# portrait_shared_clothing_contents_trigger = {
-	# 	CULTURE_SCOPE = scope:culture
-	# 	CULTURE_FLAG = mongol
-	# }
+	portrait_shared_clothing_contents_trigger = {
+		CULTURE_SCOPE = scope:culture
+		CULTURE_FLAG = mongol
+	}
 }
 
 portrait_steppe_clothing_spouse_trigger = {
-	#L5R Disabled
-	always = no
-	# portrait_shared_clothing_contents_trigger = {
-	# 	CULTURE_SCOPE = culture
-	# 	CULTURE_FLAG = mongol
-	# }
+	portrait_shared_clothing_contents_trigger = {
+		CULTURE_SCOPE = culture
+		CULTURE_FLAG = mongol
+	}
 }
 
 portrait_western_clothing_trigger = {

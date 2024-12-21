@@ -2619,19 +2619,19 @@
 
 	#L5R Disabled
 	### Graphics
-	# map_entity = {
-	# 	trigger = {
-	# 		activity_location.culture = {
-	# 			OR = {
-	# 				has_graphical_iranian_culture_group_trigger = yes
-	# 				has_graphical_mena_culture_group_trigger = yes
-	# 				has_graphical_steppe_culture_group_trigger = yes
-	# 				has_graphical_african_culture_group_trigger = yes
-	# 			}
-	# 		}
-	# 	}
-	# 	reference = "building_mena_feast_01_entity"
-	# }
+	map_entity = {
+		trigger = {
+			activity_location.culture = {
+				OR = {
+					# has_graphical_iranian_culture_group_trigger = yes
+					# has_graphical_mena_culture_group_trigger = yes
+					has_graphical_steppe_culture_group_trigger = yes
+					# has_graphical_african_culture_group_trigger = yes
+				}
+			}
+		}
+		reference = "building_mena_feast_01_entity"
+	}
 
 	# map_entity = {
 	# 	trigger = {
@@ -2978,15 +2978,15 @@
 	# 	environment = "environment_mena_feast"
 	# 	ambience = "event:/SFX/Events/Backgrounds/feasthall"
 	# }
-	# background = {
-	# 	trigger = {
-	# 		has_current_phase = tour_phase_dinner
-	# 		activity_location.culture = { has_building_gfx = steppe_building_gfx }
-	# 	}
-	# 	texture = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
-	# 	environment = "environment_steppe_feast"
-	# 	ambience = "event:/SFX/Events/Backgrounds/feasthall"
-	# }
+	background = {
+		trigger = {
+			has_current_phase = tour_phase_dinner
+			activity_location.culture = { has_building_gfx = steppe_building_gfx }
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_feast_steppe.dds"
+		environment = "environment_steppe_feast"
+		ambience = "event:/SFX/Events/Backgrounds/feasthall"
+	}
 	# background = {
 	# 	trigger = {
 	# 		has_current_phase = tour_phase_dinner

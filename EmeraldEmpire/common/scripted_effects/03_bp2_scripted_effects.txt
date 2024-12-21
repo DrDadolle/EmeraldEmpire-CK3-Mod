@@ -419,13 +419,13 @@ adopt_cultural_fashion_effect = {
 	# 	}
 	# 	adopt_cultural_fashion_culture_effect = { CULTURE = iberian_christian }
 	# }
-	# else_if = {
-	# 	limit = {
-	# 		NOT = { culture = { has_clothing_gfx = mongol_clothing_gfx } }
-	# 		scope:advanced_culture = { has_clothing_gfx = mongol_clothing_gfx }
-	# 	}
-	# 	adopt_cultural_fashion_culture_effect = { CULTURE = mongol }
-	# }
+	else_if = {
+		limit = {
+			NOT = { culture = { has_clothing_gfx = mongol_clothing_gfx } }
+			scope:advanced_culture = { has_clothing_gfx = mongol_clothing_gfx }
+		}
+		adopt_cultural_fashion_culture_effect = { CULTURE = mongol }
+	}
 	# else_if = {
 	# 	limit = {
 	# 		NOT = { culture = { has_clothing_gfx = fp1_norse_clothing_gfx } }

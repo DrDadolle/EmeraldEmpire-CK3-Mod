@@ -1556,7 +1556,10 @@ nation_fracturing_faction_modifiers = {
 		desc = "FACTION_REASON_BUSHIDO"
 		add = -500
 	 	trigger = {
-			is_from_samurai_culture = yes
+			OR = {
+				is_from_samurai_culture = yes
+				is_from_rokugani_culture = yes
+			}
 		}
 	 	$FACTION_TARGET$ = {
 			has_title = title:e_rokugan

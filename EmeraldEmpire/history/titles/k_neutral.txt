@@ -248,3 +248,48 @@ c_shinden_kasai = {
 		government = theocracy_government
 	}
 }
+
+#####################
+#	West Steppes
+#####################
+c_west_steppes_1 = { 
+	1123.1.1 = {
+		holder = 4000001
+	}
+}
+
+c_west_steppes_2 = { 
+	1123.1.1 = {
+		holder = 4000002
+	}
+}
+
+c_west_steppes_3 = { 
+	1123.1.1 = {
+		holder = 4000003 
+	}
+}
+
+c_west_steppes_4 = { 
+	1123.1.1 = {
+		holder = 4000004
+	}
+}
+
+c_west_steppes_5 = { 
+	1123.1.1 = {
+		holder = 4000005
+	}
+}
+
+c_west_steppes_6 = { 
+	1123.1.1 = {
+		holder = 4000006
+	}
+}
+
+c_west_steppes_7 = { 
+	1123.1.1 = {
+		holder = 4000007
+	}
+}

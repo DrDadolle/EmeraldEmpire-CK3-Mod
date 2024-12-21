@@ -28,8 +28,11 @@ l5r_yearly.0001 = {
 		# Standard checks.
 		is_available_at_peace_adult = yes
 		NOT = { has_character_flag = had_event_trait_specific_l5r_yearly_0001 }
+		# Must be rokugani culture
+		is_from_rokugani_culture = yes
 		# Can't already be a tea_master.
 		NOT = { has_trait = tea_master }
+
 	}
 
 	weight_multiplier = {
@@ -157,6 +160,8 @@ l5r_yearly.0010 = {
 		# Standard checks.
 		is_available_at_peace_adult = yes
 		is_landless_adventurer = no
+		# Must be rokugani culture
+		is_from_rokugani_culture = yes
 		# is ruler
 		is_playable_character = yes
 		NOT = { has_character_flag = had_event_trait_specific_l5r_yearly_0010 }
@@ -627,6 +632,8 @@ l5r_yearly.0020 = {
 		# Standard checks.
 		is_available_at_peace_adult = yes
 		NOT = { has_character_flag = had_event_trait_specific_l5r_yearly_0020 }
+		# Must be rokugani culture
+		is_from_rokugani_culture = yes
 		# A non-rival powerful vassal
 		any_powerful_vassal = { l5r_yearly_0020_powerful_vassal = yes }
 	}

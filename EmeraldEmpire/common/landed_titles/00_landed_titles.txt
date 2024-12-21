@@ -2026,7 +2026,6 @@ e_rokugan = {
                }
            }
        }
-
         d_east_shinomen_monasteries= {
             color = { 83 55 35 }
 
@@ -2118,6 +2117,72 @@ e_rokugan = {
                     province = 417
                 }
              }
+        }
+        d_west_steppes_1 = {
+            color = { 100 100 100 }
+            capital = c_west_steppes_1
+
+            c_west_steppes_1 = {
+                color = { 100 100 100 }
+                b_west_steppes_1 = {
+                    province = 476
+                }
+                b_west_steppes_2 = {
+                    province = 477
+                }
+            }
+            c_west_steppes_2 = {
+                color = { 50 50 50 }
+                b_west_steppes_3 = {
+                    province = 478
+                }
+                b_west_steppes_4 = {
+                    province = 479
+                }
+            }
+            c_west_steppes_3 = {
+                color = { 50 100 50 }
+                b_west_steppes_5 = {
+                    province = 480
+                }
+                b_west_steppes_6 = {
+                    province = 481
+                }
+            }
+           
+        }
+        d_west_steppes_2 = {
+            color = { 100 200 100 }
+            capital = c_west_steppes_4
+
+            c_west_steppes_4 = {
+                color = { 100 100 50 }
+                b_west_steppes_7 = {
+                    province = 482
+                }
+            }
+
+            c_west_steppes_5 = {
+                color = { 100 200 100 }
+                b_west_steppes_8 = {
+                    province = 483
+                }
+            }
+            c_west_steppes_6 = {
+                color = { 50 200 200 }
+                b_west_steppes_9 = {
+                    province = 484
+                }
+            }
+            c_west_steppes_7 = {
+                color = { 50 200 250 }
+                b_west_steppes_11 = {
+                    province = 486
+                }
+                b_west_steppes_10 = {
+                    province = 485
+                }
+            }
         }
     }
  }

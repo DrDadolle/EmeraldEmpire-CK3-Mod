@@ -204,6 +204,71 @@
 	religion = seven_fortunes
 	holding = tribal_holding
 }
+
+##d_west_steppes_1 ###################################
+###c_west_steppes_1
+476 = {		#b_west_steppes_1
+	culture = ujik
+	religion = lords_of_the_death
+	holding = tribal_holding
+}
+477 = {		#b_west_steppes_2
+	culture = ujik
+	religion = lords_of_the_death
+	holding = none
+}
+###c_west_steppes_2
+478 = {		#b_west_steppes_3
+	culture = ujik
+	religion = lords_of_the_death
+	holding = tribal_holding
+}
+479 = {		#b_west_steppes_4
+	culture = ujik
+	religion = lords_of_the_death
+	holding = none
+}
+###c_west_steppes_3
+480 = {		#b_west_steppes_5
+	culture = ujik
+	religion = lords_of_the_death
+	holding = tribal_holding
+}
+481 = {		#b_west_steppes_6
+	culture = ujik
+	religion = lords_of_the_death
+	holding = none
+}
+##d_west_steppes_2 ###################################
+###c_west_steppes_4
+482 = {		#b_west_steppes_7
+	culture = ujik
+	religion = lords_of_the_death
+	holding = tribal_holding
+}
+###c_west_steppes_5
+483 = {		#b_west_steppes_8
+	culture = ujik
+	religion = lords_of_the_death
+	holding = tribal_holding
+}
+###c_west_steppes_6
+484 = {		#b_west_steppes_9
+	culture = ujik
+	religion = lords_of_the_death
+	holding = tribal_holding
+}
+###c_west_steppes_7
+485 = {		#b_west_steppes_10
+	culture = ujik
+	religion = lords_of_the_death
+	holding = none
+}
+486 = {		#b_west_steppes_11
+	culture = ujik
+	religion = lords_of_the_death
+	holding = tribal_holding
+}
 #castle_holding
 #church_holding
 #city_holding

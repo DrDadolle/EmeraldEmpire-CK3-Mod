@@ -1144,8 +1144,7 @@
 				activity_location.county.holder = { #Local Host
 					OR = {
 						should_use_tribal_realm_palace_graphics_trigger = yes
-						#L5R Disabled
-						# culture = { has_graphical_steppe_culture_group_trigger = yes }
+						culture = { has_graphical_steppe_culture_group_trigger = yes }
 					}
 				}
 			}

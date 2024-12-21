@@ -1368,3 +1368,47 @@
 463 = { # spine of the world mountains
 	winter_severity_bias = @severe_winter
 }
+
+### d_west_steppes_1
+## c_west_steppes_1
+476 = { #b_west_steppes_1
+	winter_severity_bias = @warm_winter
+}
+477 = { #b_west_steppes_2
+	winter_severity_bias = @warm_winter
+}
+## c_west_steppes_2
+478 = { #b_west_steppes_3
+	winter_severity_bias = @warm_winter
+}
+479 = { #b_west_steppes_4
+	winter_severity_bias = @warm_winter
+}
+## c_west_steppes_3
+480 = { #b_west_steppes_5
+	winter_severity_bias = @warm_winter
+}
+481 = { #b_west_steppes_6
+	winter_severity_bias = @warm_winter
+}
+
+### d_west_steppes_2
+## c_west_steppes_4
+482 = { #b_west_steppes_7
+	winter_severity_bias = @no_winter
+}
+## c_west_steppes_5
+483 = { #b_west_steppes_8
+	winter_severity_bias = @no_winter
+}
+## c_west_steppes_6
+484 = { #b_west_steppes_9
+	winter_severity_bias = @warm_winter
+}
+## c_west_steppes_7
+485 = { #b_west_steppes_10
+	winter_severity_bias = @warm_winter
+}
+486 = { #b_west_steppes_11
+	winter_severity_bias = @warm_winter
+}

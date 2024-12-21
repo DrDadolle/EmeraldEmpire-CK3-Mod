@@ -109,14 +109,15 @@ character_view_bg = {
 				NOR = {
 					government_has_flag = government_is_tribal
 					culture = {
-							# OR = {
+							#L5R Modified
+							OR = {
 							# 	has_graphical_mena_culture_group_trigger = yes
 							# 	has_graphical_african_culture_group_trigger = yes
-							# 	has_graphical_steppe_culture_group_trigger = yes
+								has_graphical_steppe_culture_group_trigger = yes
 							# 	has_graphical_india_culture_group_trigger = yes
 							# 	has_graphical_iberian_culture_group_trigger = yes
-							has_graphical_rokugan_culture_group_trigger = yes
-							# }
+								has_graphical_rokugan_culture_group_trigger = yes
+							}
 					}
 				}
 			}
@@ -132,14 +133,14 @@ character_view_bg = {
 				NOR = {
 					government_has_flag = government_is_tribal
 					culture = {
-							# OR = {
+							OR = {
 							# 	has_graphical_mena_culture_group_trigger = yes
 							# 	has_graphical_african_culture_group_trigger = yes
-							# 	has_graphical_steppe_culture_group_trigger = yes
+								has_graphical_steppe_culture_group_trigger = yes
 							# 	has_graphical_india_culture_group_trigger = yes
 							# 	has_graphical_iberian_culture_group_trigger = yes
 							has_graphical_rokugan_culture_group_trigger = yes
-							# }
+							}
 					}
 				}
 			}
@@ -157,14 +158,14 @@ character_view_bg = {
 						NOR = {
 							government_has_flag = government_is_tribal
 							culture = {
-								# OR = {
+								OR = {
 								# 	has_graphical_mena_culture_group_trigger = yes
 								# 	has_graphical_african_culture_group_trigger = yes
-								# 	has_graphical_steppe_culture_group_trigger = yes
+									has_graphical_steppe_culture_group_trigger = yes
 								# 	has_graphical_india_culture_group_trigger = yes
 								# 	has_graphical_iberian_culture_group_trigger = yes
 								has_graphical_rokugan_culture_group_trigger = yes
-								# }
+								}
 							}
 						}
 					}
@@ -175,14 +176,14 @@ character_view_bg = {
 						NOR = {
 							government_has_flag = government_is_tribal
 							culture = {
-								# OR = {
+								OR = {
 								# 	has_graphical_mena_culture_group_trigger = yes
 								# 	has_graphical_african_culture_group_trigger = yes
-								# 	has_graphical_steppe_culture_group_trigger = yes
+									has_graphical_steppe_culture_group_trigger = yes
 								# 	has_graphical_india_culture_group_trigger = yes
 								# 	has_graphical_iberian_culture_group_trigger = yes
-								has_graphical_rokugan_culture_group_trigger = yes
-								# }
+									has_graphical_rokugan_culture_group_trigger = yes
+								}
 							}
 						}
 					}
@@ -195,14 +196,14 @@ character_view_bg = {
 							NOR = {
 								government_has_flag = government_is_tribal
 								culture = {
-									# OR = {
+									OR = {
 									# 	has_graphical_mena_culture_group_trigger = yes
 									# 	has_graphical_african_culture_group_trigger = yes
-									# 	has_graphical_steppe_culture_group_trigger = yes
+										has_graphical_steppe_culture_group_trigger = yes
 									# 	has_graphical_india_culture_group_trigger = yes
 									# 	has_graphical_iberian_culture_group_trigger = yes
 									has_graphical_rokugan_culture_group_trigger = yes
-									# }
+									}
 								}
 							}
 						}
@@ -1104,59 +1105,59 @@ character_view_bg = {
 	# 	}
 	# }
 	
-	# texture = {
-	# 	reference = "event_scenes/bp1_garden_mena_day.dds"
+	texture = {
+		reference = "event_scenes/bp1_garden_mena_day.dds"
 
-	# 	trigger = {
-	# 		OR = {
-	# 			AND = {
-	# 				is_landed = no
-	# 				domicile ?= { is_domicile_type = estate }
-	# 				OR = {
-	# 					has_graphical_mena_region_trigger = yes
-	# 					has_graphical_african_culture_group_trigger = yes
-	# 					has_graphical_steppe_culture_group_trigger = yes
-	# 				}
-	# 			}
-	# 			primary_spouse ?= { # Primary Spouse
-	# 				is_landed = no
-	# 				domicile ?= { is_domicile_type = estate }
-	# 				OR = {
-	# 					has_graphical_mena_region_trigger = yes
-	# 					has_graphical_african_culture_group_trigger = yes
-	# 					has_graphical_steppe_culture_group_trigger = yes
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
+		trigger = {
+			OR = {
+				AND = {
+					is_landed = no
+					domicile ?= { is_domicile_type = estate }
+					OR = {
+						# has_graphical_mena_region_trigger = yes
+						# has_graphical_african_culture_group_trigger = yes
+						has_graphical_steppe_culture_group_trigger = yes
+					}
+				}
+				primary_spouse ?= { # Primary Spouse
+					is_landed = no
+					domicile ?= { is_domicile_type = estate }
+					OR = {
+						# has_graphical_mena_region_trigger = yes
+						# has_graphical_african_culture_group_trigger = yes
+						has_graphical_steppe_culture_group_trigger = yes
+					}
+				}
+			}
+		}
+	}
 
-	# environment = {
-	# 	reference = "environment_event_forest_pine"
+	environment = {
+		reference = "environment_event_forest_pine"
 
-	# 	trigger = {
-	# 		OR = {
-	# 			AND = {
-	# 				is_landed = no
-	# 				domicile ?= { is_domicile_type = estate }
-	# 				OR = {
-	# 					has_graphical_mena_region_trigger = yes
-	# 					has_graphical_african_culture_group_trigger = yes
-	# 					has_graphical_steppe_culture_group_trigger = yes
-	# 				}
-	# 			}
-	# 			primary_spouse ?= { # Primary Spouse
-	# 				is_landed = no
-	# 				domicile ?= { is_domicile_type = estate }
-	# 				OR = {
-	# 					has_graphical_mena_region_trigger = yes
-	# 					has_graphical_african_culture_group_trigger = yes
-	# 					has_graphical_steppe_culture_group_trigger = yes
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
+		trigger = {
+			OR = {
+				AND = {
+					is_landed = no
+					domicile ?= { is_domicile_type = estate }
+					OR = {
+						# has_graphical_mena_region_trigger = yes
+						# has_graphical_african_culture_group_trigger = yes
+						has_graphical_steppe_culture_group_trigger = yes
+					}
+				}
+				primary_spouse ?= { # Primary Spouse
+					is_landed = no
+					domicile ?= { is_domicile_type = estate }
+					OR = {
+						# has_graphical_mena_region_trigger = yes
+						# has_graphical_african_culture_group_trigger = yes
+						has_graphical_steppe_culture_group_trigger = yes
+					}
+				}
+			}
+		}
+	}
 
 
 
@@ -5315,68 +5316,68 @@ character_view_bg = {
 
 	##########################################
 
-	# texture = { # MENA
-	# 	reference = "event_scenes/fp4_study_physician_mena.dds"
+	texture = { # MENA
+		reference = "event_scenes/fp4_study_physician_mena.dds"
 
-	# 	trigger = {
-	# 		has_court_position = court_physician_court_position
-	# 		employer.culture ?= {
-	# 			OR = {
-	# 				has_graphical_mena_culture_group_trigger = yes
-	# 				has_graphical_african_culture_group_trigger = yes
-	# 				has_graphical_steppe_culture_group_trigger = yes
-	# 			}
-	# 		}
-	# 	}
-	# }
+		trigger = {
+			has_court_position = court_physician_court_position
+			employer.culture ?= {
+				OR = {
+					# has_graphical_mena_culture_group_trigger = yes
+					# has_graphical_african_culture_group_trigger = yes
+					has_graphical_steppe_culture_group_trigger = yes
+				}
+			}
+		}
+	}
 
-	# environment = {
-	# 	reference = "environment_ce1_study_physician_mena"
+	environment = {
+		reference = "environment_ce1_study_physician_mena"
 
-	# 	trigger = {
-	# 		has_court_position = court_physician_court_position
-	# 		employer.culture ?= {
-	# 			OR = {
-	# 				has_graphical_mena_culture_group_trigger = yes
-	# 				has_graphical_african_culture_group_trigger = yes
-	# 				has_graphical_steppe_culture_group_trigger = yes
-	# 			}
-	# 		}
-	# 		is_character_window_main_character = yes
-	# 	}
-	# }
+		trigger = {
+			has_court_position = court_physician_court_position
+			employer.culture ?= {
+				OR = {
+					# has_graphical_mena_culture_group_trigger = yes
+					# has_graphical_african_culture_group_trigger = yes
+					has_graphical_steppe_culture_group_trigger = yes
+				}
+			}
+			is_character_window_main_character = yes
+		}
+	}
 
-	# environment = {
-	# 	reference = "environment_ce1_study_physician_mena"
+	environment = {
+		reference = "environment_ce1_study_physician_mena"
 
-	# 	trigger = {
-	# 		OR = {
-	# 			primary_spouse ?= {
-	# 				has_court_position = court_physician_court_position
-	# 				employer.culture ?= {
-	# 					OR = {
-	# 						has_graphical_mena_culture_group_trigger = yes
-	# 						has_graphical_african_culture_group_trigger = yes
-	# 						has_graphical_steppe_culture_group_trigger = yes
-	# 					}
-	# 				}
-	# 				is_character_window_main_character = yes
-	# 			}
-	# 			betrothed ?= {
-	# 				has_court_position = court_physician_court_position
-	# 				employer.culture ?= {
-	# 					OR = {
-	# 						has_graphical_mena_culture_group_trigger = yes
-	# 						has_graphical_african_culture_group_trigger = yes
-	# 						has_graphical_steppe_culture_group_trigger = yes
-	# 					}
-	# 				}
-	# 				is_character_window_main_character = yes
-	# 			}
-	# 		}
-	# 		is_character_window_main_character = no
-	# 	}
-	# }
+		trigger = {
+			OR = {
+				primary_spouse ?= {
+					has_court_position = court_physician_court_position
+					employer.culture ?= {
+						OR = {
+							# has_graphical_mena_culture_group_trigger = yes
+							# has_graphical_african_culture_group_trigger = yes
+							has_graphical_steppe_culture_group_trigger = yes
+						}
+					}
+					is_character_window_main_character = yes
+				}
+				betrothed ?= {
+					has_court_position = court_physician_court_position
+					employer.culture ?= {
+						OR = {
+							# has_graphical_mena_culture_group_trigger = yes
+							# has_graphical_african_culture_group_trigger = yes
+							has_graphical_steppe_culture_group_trigger = yes
+						}
+					}
+					is_character_window_main_character = yes
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
 
 
 	##########################################

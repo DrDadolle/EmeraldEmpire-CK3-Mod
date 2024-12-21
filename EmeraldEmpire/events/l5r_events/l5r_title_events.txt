@@ -202,7 +202,35 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 					
 				save_scope_as = valid_language_option
 			}
-			## Fallback, random character
+			## Fallback, nearby character
+			if = {
+				limit = { 
+					NOR = { 
+						exists = scope:valid_dynasty_option
+						exists = scope:valid_heritage_option
+						exists = scope:valid_language_option
+					}
+				}
+				scope:gained_title = {
+					random_neighboring_county = {
+						limit = {
+							holder = {
+								is_ai = yes
+								is_under_e_rokugan_rule = yes
+								
+								NOR  = {
+									this = scope:previous_holder
+									this = scope:new_holder
+									scope:new_holder.house ?= this.house
+									is_imperial_family = yes
+								}
+							}
+						}
+						save_scope_as = valid_dynasty_option
+					}
+				}
+			}
+			#Second fallback, any random character in rokugan
 			if = {
 				limit = { 
 					NOR = { 
