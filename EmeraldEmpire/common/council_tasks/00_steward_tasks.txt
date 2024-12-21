@@ -1703,7 +1703,8 @@ task_accept_culture = {
 					culture = {
 						OR = {
 							has_cultural_tradition = tradition_xenophilic
-							has_cultural_tradition = tradition_fp2_malleable_subjects
+							#L5R Disabled
+							# has_cultural_tradition = tradition_fp2_malleable_subjects
 						}
 					}
 				}

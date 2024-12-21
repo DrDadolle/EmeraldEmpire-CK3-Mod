@@ -107,23 +107,24 @@ tradition_ep3_indomitable_azatani = {
 	
 	ai_will_do = {
 		value = 200
-		if = {
-			limit = { # Reduce chance slightly if the culture has access to other "cavalry" types
-				OR = {
-					has_innovation = innovation_war_camels
-					has_innovation = innovation_elephantry
-				}
-			}
-			multiply = 0.4
-		}
-		else_if = {
-			limit = {
-				scope:character ?= {
-					ai_has_warlike_personality = yes
-				}
-			}
-			multiply = 4
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = { # Reduce chance slightly if the culture has access to other "cavalry" types
+		# 		OR = {
+		# 			has_innovation = innovation_war_camels
+		# 			has_innovation = innovation_elephantry
+		# 		}
+		# 	}
+		# 	multiply = 0.4
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		scope:character ?= {
+		# 			ai_has_warlike_personality = yes
+		# 		}
+		# 	}
+		# 	multiply = 4
+		# }
 	}
 }
 
@@ -420,22 +421,23 @@ tradition_ep3_roman_ceremonies = {
 					desc = not_bureaucratic_courtly_or_egalitarian_desc
 				}
 			}
-			if = {
-				limit = {
-					NOT = {
-						any_culture_county = {
-							count >= 50
-							any_county_province = {
-								geographical_region = custom_eastern_roman_empire
-							}
-						}
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = culture_in_roman_empire_desc
-				}
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		NOT = {
+			# 			any_culture_county = {
+			# 				count >= 50
+			# 				any_county_province = {
+			# 					geographical_region = custom_eastern_roman_empire
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# 	add = {
+			# 		value = tradition_unfulfilled_criteria_penalty
+			# 		desc = culture_in_roman_empire_desc
+			# 	}
+			# }
 			
 			multiply = tradition_replacement_cost_if_relevant
 		}

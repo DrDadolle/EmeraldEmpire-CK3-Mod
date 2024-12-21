@@ -4203,17 +4203,18 @@ release_from_prison_interaction = {
 				if = {
 					limit = { scope:take_vows = yes }
 					send_child_to_clergy_effect = yes
+					#L5R Disabled
 					#Does Byzan go hay-wire with deposing vassals?
-					if = {
-						limit = {
-							scope:actor = {
-								is_ai = yes
-								culture = { has_cultural_pillar = heritage_byzantine }
-							}
-						}
-						debug_log = debug_ai_byzan_forced_vows_on_prison_release
-						debug_log_scopes = yes
-					}
+					# if = {
+					# 	limit = {
+					# 		scope:actor = {
+					# 			is_ai = yes
+					# 			culture = { has_cultural_pillar = heritage_byzantine }
+					# 		}
+					# 	}
+					# 	debug_log = debug_ai_byzan_forced_vows_on_prison_release
+					# 	debug_log_scopes = yes
+					# }
 					#Does the AI in general go haywire with deposing prisoners?
 					else_if = {
 						limit = {
@@ -4401,23 +4402,24 @@ release_from_prison_interaction = {
 								callous = minor_stress_impact_gain
 							}
 						}
+						#L5R Disabled
 						# Struggle impact
-						if = {
-							limit = {
-								any_character_struggle = {
-									involvement = involved
-									OR = {
-										has_struggle_phase_parameter = release_prisoner_diff_culture_gives_prestige
-										has_struggle_phase_parameter = release_prisoner_diff_faith_gives_prestige
-									}
-								}
-								is_diff_faith_or_culture_trigger = {
-									CHAR = scope:recipient
-									STATUS = involved
-								}
-							}
-							add_prestige = medium_prestige_gain
-						}
+						# if = {
+						# 	limit = {
+						# 		any_character_struggle = {
+						# 			involvement = involved
+						# 			OR = {
+						# 				has_struggle_phase_parameter = release_prisoner_diff_culture_gives_prestige
+						# 				has_struggle_phase_parameter = release_prisoner_diff_faith_gives_prestige
+						# 			}
+						# 		}
+						# 		is_diff_faith_or_culture_trigger = {
+						# 			CHAR = scope:recipient
+						# 			STATUS = involved
+						# 		}
+						# 	}
+						# 	add_prestige = medium_prestige_gain
+						# }
 
 						# Struggle Catalyst
 						if = {
@@ -4825,43 +4827,43 @@ release_from_prison_interaction = {
 					scope:actor = { is_ai = yes }
 				}
 				#We're AI and Byzantium
-				trigger_if = {
-					limit = {
-						scope:actor = {
-							culture = { has_cultural_pillar = heritage_byzantine }
-						}
-					}
-					scope:recipient = {
-						is_ai = yes #Not gonna depose player characters, for now
-						OR = {
-							is_close_or_extended_family_of = scope:actor
-							is_vassal_or_below_of = scope:actor #Weigh this for Byz AI in the modifiers below
-							has_relation_rival = scope:actor
-							is_courtier_of = scope:actor
-						}
-						NOT = {
-							is_heir_of = scope:actor
-						}
-					}
-					#Get rid of rivals despite potentially liking them
-					trigger_if = {
-						limit = {
-							scope:recipient = { has_relation_rival = scope:actor }
-						}
-						always = yes
-					}
-					#Only get rid of family members if we dislike them
-					trigger_else = {
-						scope:actor = {
-							opinion = {
-								target = scope:recipient
-								value <= medium_negative_opinion
-							}
-						}
-					}
-				}
+				# trigger_if = {
+				# 	limit = {
+				# 		scope:actor = {
+				# 			culture = { has_cultural_pillar = heritage_byzantine }
+				# 		}
+				# 	}
+				# 	scope:recipient = {
+				# 		is_ai = yes #Not gonna depose player characters, for now
+				# 		OR = {
+				# 			is_close_or_extended_family_of = scope:actor
+				# 			is_vassal_or_below_of = scope:actor #Weigh this for Byz AI in the modifiers below
+				# 			has_relation_rival = scope:actor
+				# 			is_courtier_of = scope:actor
+				# 		}
+				# 		NOT = {
+				# 			is_heir_of = scope:actor
+				# 		}
+				# 	}
+				# 	#Get rid of rivals despite potentially liking them
+				# 	trigger_if = {
+				# 		limit = {
+				# 			scope:recipient = { has_relation_rival = scope:actor }
+				# 		}
+				# 		always = yes
+				# 	}
+				# 	#Only get rid of family members if we dislike them
+				# 	trigger_else = {
+				# 		scope:actor = {
+				# 			opinion = {
+				# 				target = scope:recipient
+				# 				value <= medium_negative_opinion
+				# 			}
+				# 		}
+				# 	}
+				# }
 				#We're not Byzantium but plain AI
-				trigger_else = {
+				trigger_if = {
 					scope:recipient = {
 						is_ai = yes #Not gonna depose player characters, for now
 						is_close_or_extended_family_of = scope:actor
@@ -4886,28 +4888,29 @@ release_from_prison_interaction = {
 					}
 				}
 			}
+			#L5R Disabled
 			#Enhanced Take the Vows for Byzantium players -- who do we want to boot to a monastery far, far away?
-			trigger_else_if = {
-				limit = {
-					scope:actor = {
-						culture = { has_cultural_pillar = heritage_byzantine }
-					}
-				}
-				scope:recipient = {
-					is_ai = yes #Not gonna depose player characters, for now
-					custom_description = {
-						text = "release_byz_vows_invalid"
-						object = scope:recipient
-						subject = scope:actor
-						OR = {
-							is_close_or_extended_family_of = scope:actor
-							is_vassal_or_below_of = scope:actor
-							has_relation_rival = scope:actor
-							is_courtier_of = scope:actor
-						}
-					}
-				}
-			}
+			# trigger_else_if = {
+			# 	limit = {
+			# 		scope:actor = {
+			# 			culture = { has_cultural_pillar = heritage_byzantine }
+			# 		}
+			# 	}
+			# 	scope:recipient = {
+			# 		is_ai = yes #Not gonna depose player characters, for now
+			# 		custom_description = {
+			# 			text = "release_byz_vows_invalid"
+			# 			object = scope:recipient
+			# 			subject = scope:actor
+			# 			OR = {
+			# 				is_close_or_extended_family_of = scope:actor
+			# 				is_vassal_or_below_of = scope:actor
+			# 				has_relation_rival = scope:actor
+			# 				is_courtier_of = scope:actor
+			# 			}
+			# 		}
+			# 	}
+			# }
 			#Otherwise standard procedure Take the Vows requirements
 			trigger_else = {
 				scope:recipient = {
@@ -5089,27 +5092,28 @@ release_from_prison_interaction = {
 			scope:recipient = {
 				NOT = { has_trait = disfigured }
 			}
+			#L5R Disabled
 			# Byzantines can't disfigure those not in their realm
-			trigger_if = {
-				limit = {
-					scope:actor = {
-						culture = { has_cultural_pillar = heritage_byzantine }
-					}
-				}
-				scope:recipient = {
-					custom_description = {
-						text = "release_byz_disfigure_invalid"
-						object = scope:recipient
-						subject = scope:actor
-						OR = {
-							is_close_or_extended_family_of = scope:actor
-							is_vassal_or_below_of = scope:actor
-							has_relation_rival = scope:actor
-							is_courtier_of = scope:actor
-						}
-					}
-				}
-			}
+			# trigger_if = {
+			# 	limit = {
+			# 		scope:actor = {
+			# 			culture = { has_cultural_pillar = heritage_byzantine }
+			# 		}
+			# 	}
+			# 	scope:recipient = {
+			# 		custom_description = {
+			# 			text = "release_byz_disfigure_invalid"
+			# 			object = scope:recipient
+			# 			subject = scope:actor
+			# 			OR = {
+			# 				is_close_or_extended_family_of = scope:actor
+			# 				is_vassal_or_below_of = scope:actor
+			# 				has_relation_rival = scope:actor
+			# 				is_courtier_of = scope:actor
+			# 			}
+			# 		}
+			# 	}
+			# }
 			custom_description = {
 				text = "release_prisoner_disfigure_blind_castrate_condition"
 				object = scope:recipient
@@ -5679,15 +5683,16 @@ release_from_prison_interaction = {
 				}
 			}
 		}
+		#L5R Disabled
 		#Byz AI can shove vassals off to remote monasteries - weigh that here
-		modifier = {
-			add = -10
-			scope:take_vows = yes
-			scope:actor = {
-				culture = { has_cultural_pillar = heritage_byzantine }
-			}
-			scope:recipient = { is_vassal_or_below_of = scope:actor }
-		}
+		# modifier = {
+		# 	add = -10
+		# 	scope:take_vows = yes
+		# 	scope:actor = {
+		# 		culture = { has_cultural_pillar = heritage_byzantine }
+		# 	}
+		# 	scope:recipient = { is_vassal_or_below_of = scope:actor }
+		# }
 
 		evaluate_action_increasing_house_unity = {
 			VALUE = 100
@@ -5967,21 +5972,22 @@ execute_prisoner_interaction = {
 			}
 		}
 
+		#L5R Disabled
 		# Blocked by current struggle phase
-		custom_tooltip = {
-			text = struggle_parameter_struggle_cannot_execute_involved_prisoners
-			NOT = {
-				scope:actor = {
-					any_character_struggle = {
-						involvement = involved
-						has_struggle_phase_parameter = struggle_cannot_execute_involved_prisoners
-						is_secondary_character_involvement_involved_trigger = {
-							CHAR = scope:recipient
-						}
-					}
-				}
-			}
-		}
+		# custom_tooltip = {
+		# 	text = struggle_parameter_struggle_cannot_execute_involved_prisoners
+		# 	NOT = {
+		# 		scope:actor = {
+		# 			any_character_struggle = {
+		# 				involvement = involved
+		# 				has_struggle_phase_parameter = struggle_cannot_execute_involved_prisoners
+		# 				is_secondary_character_involvement_involved_trigger = {
+		# 					CHAR = scope:recipient
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 
 		# For use with co-ruler diarchs.
 		scope:recipient = { is_imprisoned_by = scope:actor }

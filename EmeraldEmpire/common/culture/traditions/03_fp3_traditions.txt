@@ -16,37 +16,40 @@ tradition_fp3_frontier_warriors = {
 	}
 	
 	is_shown = {
-		# DLC check.
-		has_fp3_dlc_trigger = yes
+		# L5R Disabled
+		always = no	
+		# # DLC check.
+		# has_fp3_dlc_trigger = yes
 		
-		# Any culture present in the given area can pick this
-		any_culture_county = {
-			any_county_province = {
-				OR = {
-					geographical_region = world_transoxiana
-					geographical_region = world_khorasan
-					geographical_region = world_steppe_tarim
-				}
-			}
-		}
+		# # Any culture present in the given area can pick this
+		# any_culture_county = {
+		# 	any_county_province = {
+		# 		OR = {
+		# 			geographical_region = world_transoxiana
+		# 			geographical_region = world_khorasan
+		# 			geographical_region = world_steppe_tarim
+		# 		}
+		# 	}
+		# }
 	}
 
 	can_pick = {
 		culture_not_pacifistic_trigger = yes
+		#L5R Disabled
 		# Must have a significant cultural presence in the general Turanian area, i.e. the "frontier"
-		custom_tooltip = {
-			text = culture_on_eastern_frontier_desc
-			any_culture_county = {
-				percent >= 0.2
-				any_county_province = {
-					OR = {
-						geographical_region = world_transoxiana
-						geographical_region = world_khorasan
-						geographical_region = world_steppe_tarim
-					}
-				}
-			}
-		}	
+		# custom_tooltip = {
+		# 	text = culture_on_eastern_frontier_desc
+		# 	any_culture_county = {
+		# 		percent >= 0.2
+		# 		any_county_province = {
+		# 			OR = {
+		# 				geographical_region = world_transoxiana
+		# 				geographical_region = world_khorasan
+		# 				geographical_region = world_steppe_tarim
+		# 			}
+		# 		}
+		# 	}
+		# }	
 	}
 	
 	parameters = {
@@ -157,8 +160,8 @@ tradition_fp3_irrigation_experts = {
 	}
 
 	is_shown = {
-		always = no
 		# L5R Disabled
+		always = no	
 		# DLC check.
 		# has_fp3_dlc_trigger = yes
 		# has_cultural_pillar = heritage_iranian

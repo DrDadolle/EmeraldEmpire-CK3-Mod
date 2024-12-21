@@ -32,14 +32,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Fix era time line. 
 - Add thumbnail image for the mod !
 - in map editor : move up the bridge between usagi west & east
-- Name list !
-- add special opinion modifier for lion culture / crane culture ?
-- change to "lower control augmentation" for Ryoko Owari
-- Error: "Failed to read key reference: }: }, near line: 282707" in file: "" near line: 282707 => Scheme_effects ? scheme_scripted triggers ?
--ck3tiger fixes to do !
+- more namelists & dynasty list
+- ck3tiger fixes to do !
 - "son of heaven" even if female ruler loc to fix
 - Bug Why kingdom have no de-jure drifts ?
-- Check why error with "map object locator "special_building" is incomplete!"
+- Shiro Kaikoga => Wrong religion & culture 
 
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)
@@ -53,7 +50,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 		- common/coat_of_arms/template_lists coa_templates
 	- check ronins & church_holders
 - transform "mahotsukai" trait into the secret / trait combo of witch
-- more namelists & dynasty list
+
 
 ## Fixes to do
 - Spammed with rokugan_char_interaction.0231 event boxes...
