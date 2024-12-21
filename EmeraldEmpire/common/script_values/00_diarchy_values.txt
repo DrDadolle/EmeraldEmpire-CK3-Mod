@@ -251,14 +251,15 @@ diarch_loyalty_score_standard_values_general_sympathies_value = {
 
 diarch_loyalty_score_standard_values_general_culture_value = {
 	culture = {
+		#L5R Disabled
 		# +++ Malleable Subjects.
-		if = {
-			limit = { has_cultural_tradition = tradition_fp2_malleable_subjects }
-			add = {
-				desc = diarch_loyalty_score.regency.tradition_fp2_malleable_subjects
-				value = diarch_loyalty_score_add_major_gain
-			}
-		}
+		# if = {
+		# 	limit = { has_cultural_tradition = tradition_fp2_malleable_subjects }
+		# 	add = {
+		# 		desc = diarch_loyalty_score.regency.tradition_fp2_malleable_subjects
+		# 		value = diarch_loyalty_score_add_major_gain
+		# 	}
+		# }
 		# +++ Recognition of Talent & lowborn.
 		if = {
 			limit = {
