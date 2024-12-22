@@ -1841,255 +1841,256 @@ fp3_challenge_house_head_interaction = {
 ###################################
 # Request honorary titles
 ###################################
-fp3_request_honorary_titles_interaction = { # todo_cd_polish add different option to pick different titles
-	interface_priority = 30
-	category = interaction_category_religion
-	common_interaction = yes
-	desc = fp3_request_honorary_titles_interaction_desc
-	icon = honorary_titles
+#L5R Disabled
+# fp3_request_honorary_titles_interaction = { # todo_cd_polish add different option to pick different titles
+# 	interface_priority = 30
+# 	category = interaction_category_religion
+# 	common_interaction = yes
+# 	desc = fp3_request_honorary_titles_interaction_desc
+# 	icon = honorary_titles
 
-	greeting = positive
+# 	greeting = positive
 
-	auto_accept = yes
+# 	auto_accept = yes
 
-	cooldown = { years = 10 }
+# 	cooldown = { years = 10 }
 
-	cost = {
-		piety =  {
-			value = major_piety_value
-			# if = { #L5R Disabled
-			# 	limit = { # cheaper for the actual liege
-			# 		any_vassal = {
-			# 			any_held_title = {
-			# 				this = title:d_sunni
-			# 			}
-			# 		}
-			# 	}
-			# 	subtract = medium_piety_value
-			# }
-		}
-	}
+# 	cost = {
+# 		piety =  {
+# 			value = major_piety_value
+# 			if = { 
+# 				limit = { # cheaper for the actual liege
+# 					any_vassal = {
+# 						any_held_title = {
+# 							this = title:d_sunni
+# 						}
+# 					}
+# 				}
+# 				subtract = medium_piety_value
+# 			}
+# 		}
+# 	}
 
-	is_shown = {
-		fp3_reward_from_vassalization_ending = yes
-	}
+# 	is_shown = {
+# 		fp3_reward_from_vassalization_ending = yes
+# 	}
 
-	is_valid = {
-		# honorary titles should be unique
-		custom_tooltip = {
-			text = one_of_the_title_is_available_tt
-			scope:actor = {
-				house ?= {
-					NAND = {
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_intrigue_modifier
-						}
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_scholarship_modifier
-						}
+# 	is_valid = {
+# 		# honorary titles should be unique
+# 		custom_tooltip = {
+# 			text = one_of_the_title_is_available_tt
+# 			scope:actor = {
+# 				house ?= {
+# 					NAND = {
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_intrigue_modifier
+# 						}
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_scholarship_modifier
+# 						}
 
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_stewardship_modifier
-						}
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_diplomacy_modifier
-						}
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_piety_modifier
-						}
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_prestige_modifier
-						}
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_martial_modifier
-						}
-					}
-				}
-			}
-		}
-	}
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_stewardship_modifier
+# 						}
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_diplomacy_modifier
+# 						}
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_piety_modifier
+# 						}
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_prestige_modifier
+# 						}
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_martial_modifier
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	send_option = {
-		flag = intrigue_option
-		localization = fp3_honorary_title_intrigue_modifier
-		is_valid = {
-			NOT = {
-				scope:actor = {
-					house ?= {
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_intrigue_modifier
-						}
-					}
-				}
-			}
-		}
-	}
+# 	send_option = {
+# 		flag = intrigue_option
+# 		localization = fp3_honorary_title_intrigue_modifier
+# 		is_valid = {
+# 			NOT = {
+# 				scope:actor = {
+# 					house ?= {
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_intrigue_modifier
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	send_option = {
-		flag = scholarship_option
-		localization = fp3_honorary_title_scholarship_modifier
-		is_valid = {
-			NOT = {
-				scope:actor = {
-					house ?= {
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_scholarship_modifier
-						}
-					}
-				}
-			}
-		}
-	}
+# 	send_option = {
+# 		flag = scholarship_option
+# 		localization = fp3_honorary_title_scholarship_modifier
+# 		is_valid = {
+# 			NOT = {
+# 				scope:actor = {
+# 					house ?= {
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_scholarship_modifier
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	send_option = {
-		flag = stewardship_option
-		localization = fp3_honorary_title_stewardship_modifier
-		is_valid = {
-			NOT = {
-				scope:actor = {
-					house ?= {
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_stewardship_modifier
-						}
-					}
-				}
-			}
-		}
-	}
+# 	send_option = {
+# 		flag = stewardship_option
+# 		localization = fp3_honorary_title_stewardship_modifier
+# 		is_valid = {
+# 			NOT = {
+# 				scope:actor = {
+# 					house ?= {
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_stewardship_modifier
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	send_option = {
-		flag = diplomacy_option
-		localization = fp3_honorary_title_diplomacy_modifier
-		is_valid = {
-			NOT = {
-				scope:actor = {
-					house ?= {
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_diplomacy_modifier
-						}
-					}
-				}
-			}
-		}
-	}
+# 	send_option = {
+# 		flag = diplomacy_option
+# 		localization = fp3_honorary_title_diplomacy_modifier
+# 		is_valid = {
+# 			NOT = {
+# 				scope:actor = {
+# 					house ?= {
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_diplomacy_modifier
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	send_option = {
-		flag = piety_option
-		localization = fp3_honorary_title_piety_modifier
-		is_valid = {
-			NOT = {
-				scope:actor = {
-					house ?= {
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_piety_modifier
-						}
-					}
-				}
-			}
-		}
-	}
+# 	send_option = {
+# 		flag = piety_option
+# 		localization = fp3_honorary_title_piety_modifier
+# 		is_valid = {
+# 			NOT = {
+# 				scope:actor = {
+# 					house ?= {
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_piety_modifier
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	send_option = {
-		flag = prestige_option
-		localization = fp3_honorary_title_prestige_modifier
-		is_valid = {
-			NOT = {
-				scope:actor = {
-					house ?= {
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_prestige_modifier
-						}
-					}
-				}
-			}
-		}
-	}
+# 	send_option = {
+# 		flag = prestige_option
+# 		localization = fp3_honorary_title_prestige_modifier
+# 		is_valid = {
+# 			NOT = {
+# 				scope:actor = {
+# 					house ?= {
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_prestige_modifier
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	send_option = {
-		flag = martial_option
-		localization = fp3_honorary_title_martial_modifier
-		is_valid = {
-			NOT = {
-				scope:actor = {
-					house ?= {
-						any_house_member = {
-				 			has_character_modifier = fp3_honorary_title_martial_modifier
-						}
-					}
-				}
-			}
-		}
-	}
+# 	send_option = {
+# 		flag = martial_option
+# 		localization = fp3_honorary_title_martial_modifier
+# 		is_valid = {
+# 			NOT = {
+# 				scope:actor = {
+# 					house ?= {
+# 						any_house_member = {
+# 				 			has_character_modifier = fp3_honorary_title_martial_modifier
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	on_accept = {
-		scope:actor = {
-			send_interface_toast = {
-				type = event_toast_effect_good
-				title = new_honorary_title_acquired_title
-				left_icon = scope:recipient
+# 	on_accept = {
+# 		scope:actor = {
+# 			send_interface_toast = {
+# 				type = event_toast_effect_good
+# 				title = new_honorary_title_acquired_title
+# 				left_icon = scope:recipient
 
-				switch = {
-					trigger = yes
-					scope:intrigue_option = {
-						add_character_modifier = {
-							modifier = fp3_honorary_title_intrigue_modifier
-						}
-					}
-					scope:scholarship_option = {
-						add_character_modifier = {
-							modifier = fp3_honorary_title_scholarship_modifier
-						}
-					}
-					scope:stewardship_option = {
-						add_character_modifier = {
-							modifier = fp3_honorary_title_stewardship_modifier
-						}
-					}
-					scope:diplomacy_option = {
-						add_character_modifier = {
-							modifier = fp3_honorary_title_diplomacy_modifier
-						}
-					}
-					scope:piety_option = {
-						add_character_modifier = {
-							modifier = fp3_honorary_title_piety_modifier
-						}
-					}
-					scope:prestige_option = {
-						add_character_modifier = {
-							modifier = fp3_honorary_title_prestige_modifier
-						}
-					}
-					scope:martial_option = {
-						add_character_modifier = {
-							modifier = fp3_honorary_title_martial_modifier
-						}
-					}
-				}
-			}
-		}
-	}
+# 				switch = {
+# 					trigger = yes
+# 					scope:intrigue_option = {
+# 						add_character_modifier = {
+# 							modifier = fp3_honorary_title_intrigue_modifier
+# 						}
+# 					}
+# 					scope:scholarship_option = {
+# 						add_character_modifier = {
+# 							modifier = fp3_honorary_title_scholarship_modifier
+# 						}
+# 					}
+# 					scope:stewardship_option = {
+# 						add_character_modifier = {
+# 							modifier = fp3_honorary_title_stewardship_modifier
+# 						}
+# 					}
+# 					scope:diplomacy_option = {
+# 						add_character_modifier = {
+# 							modifier = fp3_honorary_title_diplomacy_modifier
+# 						}
+# 					}
+# 					scope:piety_option = {
+# 						add_character_modifier = {
+# 							modifier = fp3_honorary_title_piety_modifier
+# 						}
+# 					}
+# 					scope:prestige_option = {
+# 						add_character_modifier = {
+# 							modifier = fp3_honorary_title_prestige_modifier
+# 						}
+# 					}
+# 					scope:martial_option = {
+# 						add_character_modifier = {
+# 							modifier = fp3_honorary_title_martial_modifier
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	ai_frequency = 60
+# 	ai_frequency = 60
 
-	ai_potential = {
-		# any_vassal = { #L5R Disabled
-		# 	any_held_title = {
-		# 		this = title:d_sunni
-		# 	}
-		# }
-		always = no #L5R Disabled
-	}
+# 	ai_potential = {
+# 		# any_vassal = { #L5R Disabled
+# 		# 	any_held_title = {
+# 		# 		this = title:d_sunni
+# 		# 	}
+# 		# }
+# 		always = no #L5R Disabled
+# 	}
 
-	ai_targets = {
-		# For the AI, we limit it to neighboring_rulers
-		ai_recipients = vassals
-	}
+# 	ai_targets = {
+# 		# For the AI, we limit it to neighboring_rulers
+# 		ai_recipients = vassals
+# 	}
 
-	ai_will_do = {
-		base = 100
-	}
-}
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+# }
 
 
 ###################################

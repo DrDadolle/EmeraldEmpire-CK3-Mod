@@ -861,50 +861,50 @@ fp3_sided_with_tax_collector_tax_dispute = {
 # }
 
 ####### FP3 Ending: Honorary titles
-
+#L5R Disabled
 ## Intrigue boost
-fp3_honorary_title_intrigue_modifier = {
-	icon = intrigue_positive
-	max_hostile_schemes_add = 1
-}
+# fp3_honorary_title_intrigue_modifier = {
+# 	icon = intrigue_positive
+# 	max_hostile_schemes_add = 1
+# }
 
-## Scholarship boost
-fp3_honorary_title_scholarship_modifier = {
-	icon = learning_positive
-	max_learn_language_schemes_add = 1
-	learning = 2
-}
+# ## Scholarship boost
+# fp3_honorary_title_scholarship_modifier = {
+# 	icon = learning_positive
+# 	max_learn_language_schemes_add = 1
+# 	learning = 2
+# }
 
-## Stewardship boost
-fp3_honorary_title_stewardship_modifier = {
-	icon = stewardship_positive
-	build_speed = -0.1
-	build_gold_cost = -0.1
-}
+# ## Stewardship boost
+# fp3_honorary_title_stewardship_modifier = {
+# 	icon = stewardship_positive
+# 	build_speed = -0.1
+# 	build_gold_cost = -0.1
+# }
 
-## Diplomacy boost
-fp3_honorary_title_diplomacy_modifier = {
-	icon = diplomacy_positive
-	max_personal_schemes_add = 1
-}
+# ## Diplomacy boost
+# fp3_honorary_title_diplomacy_modifier = {
+# 	icon = diplomacy_positive
+# 	max_personal_schemes_add = 1
+# }
 
-## Piety boost
-fp3_honorary_title_piety_modifier = {
-	icon = piety_positive
-	monthly_piety = 1
-}
+# ## Piety boost
+# fp3_honorary_title_piety_modifier = {
+# 	icon = piety_positive
+# 	monthly_piety = 1
+# }
 
-## Prestige boost
-fp3_honorary_title_prestige_modifier = {
-	icon = piety_positive
-	monthly_prestige = 1
-}
+# ## Prestige boost
+# fp3_honorary_title_prestige_modifier = {
+# 	icon = piety_positive
+# 	monthly_prestige = 1
+# }
 
-## Martial boost
-fp3_honorary_title_martial_modifier = {
-	icon = martial_positive
-	army_maintenance_mult = -0.15
-}
+# ## Martial boost
+# fp3_honorary_title_martial_modifier = {
+# 	icon = martial_positive
+# 	army_maintenance_mult = -0.15
+# }
 
 ####### Clan events 2000 modifiers
 fp3_efficient_tax_collector = {

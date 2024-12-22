@@ -187,72 +187,73 @@ gift_interaction = {
 							}
 						}
 					}
-					if = {
-						limit = {
-							fp3_struggle_involves_one_supporter_and_one_detractor = {
-								FIRST = scope:actor
-								SECOND = scope:recipient
-							}
-							scope:actor = {
-								any_character_struggle = {
-									#involvement = involved
-									activate_struggle_catalyst_secondary_character_involvement_either_trigger = {
-										CATALYST = catalyst_gift_supporter_detractor_ruler
-										CHAR = scope:recipient
-									}
-								}
-							}
-						}
-						hidden_effect = {
-							scope:actor = {
-								every_character_struggle = {
-									#involvement = involved
-									limit = {
-										activate_struggle_catalyst_secondary_character_involvement_either_trigger = {
-											CATALYST = catalyst_gift_supporter_detractor_ruler
-											CHAR = scope:recipient
-										}
-									}
-									activate_struggle_catalyst = {
-										catalyst = catalyst_gift_supporter_detractor_ruler
-										character = scope:actor
-									}
-									#L5R Disabled
-									# log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_gift_supporter_detractor_ruler }
-								}
-							}
-						}
-					}
-					
-					# FP2 Urbanism Legacy Perk 2: increase cultural acceptance when gifting a republican vassal
-					if = {
-						limit = {
-							scope:actor = {
-								exists = dynasty
-								dynasty = { has_dynasty_perk = fp2_urbanism_legacy_4 }
-							}
-							scope:recipient = {
-								AND = {
-									is_vassal_of = scope:actor
-									government_has_flag = government_is_republic
-								}
-							}
-							NOT = {
-								scope:actor.culture = scope:recipient.capital_province.county.culture
-							}
-						}
-						scope:recipient.capital_province.county.culture = {
-							change_cultural_acceptance = {
-								target = scope:actor.culture
-								value = {
-									value = 20
-									multiply = scope:recipient.capital_province.county.development_level
-									divide = 100
-								}
-								desc = cultural_acceptance_gain_gift_dynasty_perk
-							}
-						}
-					}
+					#L5R Disabled
+					# if = {
+					# 	limit = {
+					# 		fp3_struggle_involves_one_supporter_and_one_detractor = {
+					# 			FIRST = scope:actor
+					# 			SECOND = scope:recipient
+					# 		}
+					# 		scope:actor = {
+					# 			any_character_struggle = {
+					# 				#involvement = involved
+					# 				activate_struggle_catalyst_secondary_character_involvement_either_trigger = {
+					# 					CATALYST = catalyst_gift_supporter_detractor_ruler
+					# 					CHAR = scope:recipient
+					# 				}
+					# 			}
+					# 		}
+					# 	}
+					# 	hidden_effect = {
+					# 		scope:actor = {
+					# 			every_character_struggle = {
+					# 				#involvement = involved
+					# 				limit = {
+					# 					activate_struggle_catalyst_secondary_character_involvement_either_trigger = {
+					# 						CATALYST = catalyst_gift_supporter_detractor_ruler
+					# 						CHAR = scope:recipient
+					# 					}
+					# 				}
+					# 				activate_struggle_catalyst = {
+					# 					catalyst = catalyst_gift_supporter_detractor_ruler
+					# 					character = scope:actor
+					# 				}
+					# 				#L5R Disabled
+					# 				# log_debug_variable_for_persian_struggle_effect = { VAR = concession_catalyst_gift_supporter_detractor_ruler }
+					# 			}
+					# 		}
+					# 	}
+					# }
+					#L5R Disabled
+					# # FP2 Urbanism Legacy Perk 2: increase cultural acceptance when gifting a republican vassal
+					# if = {
+					# 	limit = {
+					# 		scope:actor = {
+					# 			exists = dynasty
+					# 			dynasty = { has_dynasty_perk = fp2_urbanism_legacy_4 }
+					# 		}
+					# 		scope:recipient = {
+					# 			AND = {
+					# 				is_vassal_of = scope:actor
+					# 				government_has_flag = government_is_republic
+					# 			}
+					# 		}
+					# 		NOT = {
+					# 			scope:actor.culture = scope:recipient.capital_province.county.culture
+					# 		}
+					# 	}
+					# 	scope:recipient.capital_province.county.culture = {
+					# 		change_cultural_acceptance = {
+					# 			target = scope:actor.culture
+					# 			value = {
+					# 				value = 20
+					# 				multiply = scope:recipient.capital_province.county.development_level
+					# 				divide = 100
+					# 			}
+					# 			desc = cultural_acceptance_gain_gift_dynasty_perk
+					# 		}
+					# 	}
+					# }
 				}
 				
 				# Let's apply the opinion modifier last, as to apply everything else correctly first
