@@ -574,10 +574,11 @@ martial_strategy.7000 = {
 					trait = education_martial
 					rank >= 2
 				}
-				number_maa_regiments_of_type = {
-	  					type = war_elephant
-	  					value > 0
-	  			}
+				#L5R Disabled
+				# number_maa_regiments_of_type = {
+	  			# 		type = war_elephant
+	  			# 		value > 0
+	  			# }
 			}
 		}
 		name = martial_strategy.7000.b

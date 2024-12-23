@@ -4293,7 +4293,8 @@ ep3_emperor_yearly.2170 = {
 		is_governor = yes
 		any_sub_realm_county = {
 			OR = {
-				any_county_province = { has_building = fairy_chimneys }
+				#L5R Disabled
+				# any_county_province = { has_building = fairy_chimneys }
 				AND = {
 					county_control <= 50
 					any_county_province = {
@@ -4326,12 +4327,13 @@ ep3_emperor_yearly.2170 = {
 	}
 
 	immediate = {
-		random_sub_realm_county = {
-			limit = {
-				any_county_province = { has_building = fairy_chimneys }
-			}
-			save_scope_as = our_county
-		}
+		#L5R Disabled
+		# random_sub_realm_county = {
+		# 	limit = {
+		# 		any_county_province = { has_building = fairy_chimneys }
+		# 	}
+		# 	save_scope_as = our_county
+		# }
 		if = {
 			limit = {
 				NOT = { exists = scope:our_county }

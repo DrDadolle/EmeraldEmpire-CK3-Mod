@@ -1054,7 +1054,8 @@ trait_specific.7001 = {
 				OR = {
 					location.culture ?= { has_graphical_india_culture_group_trigger = yes }
 					location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-					location.culture ?= { has_building_gfx = iranian_building_gfx }
+					#L5R Disabled
+					# location.culture ?= { has_building_gfx = iranian_building_gfx }
 					location.culture ?= { has_graphical_african_culture_group_trigger = yes }
 					location.culture ?= { has_graphical_steppe_culture_group_trigger = yes }
 				}
