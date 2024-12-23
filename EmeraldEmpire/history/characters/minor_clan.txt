@@ -142,7 +142,7 @@ lineofusagi1 = {
 #	Tsuruchi
 #####################
 lineoftsuruchi1 = {
-	name = "" 	# Tsuruchi herself, Daimyo of Wasp Clan
+	name = "name_tsuruchi" 	# Tsuruchi herself, Daimyo of Wasp Clan
 	dynasty = dynasty_tsuruchi 	
 	religion = "seven_fortunes"
 	culture = "tsuruchi"
@@ -163,7 +163,7 @@ lineoftsuruchi1 = {
 #	Yoritomo
 #####################
 lineofyoritomo1 = {
-	name = "" 	# Yoritomo himself, Daimyo of Mantis Clan
+	name = "name_yoritomo" 	# Yoritomo himself, Daimyo of Mantis Clan
 	dynasty = dynasty_yoritomo 	
 	religion = "seven_fortunes"
 	culture = "yoritomo"

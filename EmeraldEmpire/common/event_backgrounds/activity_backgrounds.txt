@@ -1139,32 +1139,33 @@ activity_playdate = {
 	}
 	# End Travel
 	
-	background = {
-		trigger = {
-			activity_location = {
-				OR = {
-					geographical_region = world_middle_east
-					geographical_region = world_africa
-				}
-			}
-		}
-		reference = "gfx/interface/illustrations/activity_backgrounds/bp1_garden_mena_day.dds"
-		environment = "environment_event_forest_pine" 
-		ambience = "event:/SFX/Events/Backgrounds/coniferous_forest_day" 
-	}
-	background = {
-		trigger = {
-			activity_location = {
-				OR = {
-					geographical_region = world_europe_west_iberia
-					culture = { has_building_gfx = iberian_building_gfx }
-				}
-			}
-		}
-		reference = "gfx/interface/illustrations/activity_backgrounds/fp2_garden.dds"
-		environment = "environment_event_forest_pine" 
-		ambience = "event:/SFX/Events/Backgrounds/coniferous_forest_day" 
-	}
+	#L5R Disabled
+	# background = {
+	# 	trigger = {
+	# 		activity_location = {
+	# 			OR = {
+	# 				geographical_region = world_middle_east
+	# 				geographical_region = world_africa
+	# 			}
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/activity_backgrounds/bp1_garden_mena_day.dds"
+	# 	environment = "environment_event_forest_pine" 
+	# 	ambience = "event:/SFX/Events/Backgrounds/coniferous_forest_day" 
+	# }
+	# background = {
+	# 	trigger = {
+	# 		activity_location = {
+	# 			OR = {
+	# 				geographical_region = world_europe_west_iberia
+	# 				culture = { has_building_gfx = iberian_building_gfx }
+	# 			}
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/activity_backgrounds/fp2_garden.dds"
+	# 	environment = "environment_event_forest_pine" 
+	# 	ambience = "event:/SFX/Events/Backgrounds/coniferous_forest_day" 
+	# }
 	background = {
 		reference = "gfx/interface/illustrations/activity_backgrounds/garden.dds"
 		environment = "environment_event_forest_pine" 

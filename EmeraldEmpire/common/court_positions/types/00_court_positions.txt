@@ -1756,7 +1756,8 @@ cultural_emissary_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = cultural_emissary
@@ -1997,7 +1998,8 @@ keeper_of_swans_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = keeper_of_swans
@@ -2789,7 +2791,8 @@ court_gardener_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = court_gardener
@@ -3022,7 +3025,8 @@ lady_in_waiting_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = lady_in_waiting
@@ -3410,7 +3414,8 @@ antiquarian_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = antiquarian
@@ -3941,7 +3946,8 @@ travel_leader_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = travel_leader
@@ -4297,7 +4303,8 @@ wet_nurse_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = wet_nurse
@@ -4737,7 +4744,8 @@ court_tutor_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = court_tutor
@@ -5055,7 +5063,8 @@ food_taster_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = food_taster
@@ -5307,7 +5316,8 @@ master_of_horse_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = master_of_horse
@@ -5608,7 +5618,8 @@ master_of_hunt_court_position = {
 			# 	}
 			# }
 			# Halved with obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = master_of_hunt
