@@ -97,7 +97,7 @@ building_pastures_requirement_terrain = {
 		terrain = floodplains
 		AND = {
 			terrain = jungle
-			NOT = { geographical_region = world_innovation_elephants }
+			# NOT = { geographical_region = world_innovation_elephants }
 		}
 	}
 }
@@ -220,7 +220,9 @@ building_barracks_requirement_terrain = {
 }
 
 building_camel_farms_requirement_terrain = {
-	geographical_region = world_innovation_camels # new
+	#L5R Disabled
+	always = no
+	# geographical_region = world_innovation_camels # new
 	OR = {
 		terrain = desert
 		terrain = desert_mountains
@@ -260,13 +262,16 @@ building_hill_farms_requirement_terrain = {
 
 building_elephant_pens_requirement_terrain = {
 	terrain = jungle
-	geographical_region = world_innovation_elephants
+	#L5R Disabled
+	always = no
+	# geographical_region = world_innovation_elephants
 }
 
 building_horse_pastures_requirement_terrain = {
 	OR = {
 		terrain = steppe
-		geographical_region = world_steppe_east
+		#L5R Disabled
+		# geographical_region = world_steppe_east
 		culture = { has_cultural_parameter = unlock_horse_pastures_building }
 	}
 }
@@ -298,7 +303,8 @@ building_warrior_lodges_requirement_terrain = {
 		terrain = desert_mountains
 		terrain = hills
 	}
-	NOT = { geographical_region = world_horse_buildings_in_hills_and_mountains }
+	#L5R Disabled
+	# NOT = { geographical_region = world_horse_buildings_in_hills_and_mountains }
 }
 
 building_hillside_grazing_requirement_terrain = {
@@ -307,12 +313,17 @@ building_hillside_grazing_requirement_terrain = {
 		terrain = desert_mountains
 		terrain = hills
 	}
-	geographical_region = world_horse_buildings_in_hills_and_mountains
+	#L5R Disabled
+	always = no
+	# geographical_region = world_horse_buildings_in_hills_and_mountains
 }
 
 building_wind_furnace_requirement_terrain = {
-	#L5R Disabled
-	always = no
+	#L5R Modified
+	
+	geographical_region = rokugan_crab
+	scope:holder.culture = { has_innovation = innovation_kaiu_steel }
+
 	# geographical_region = world_india
 	# OR = {
 	# 	is_coastal = yes
@@ -713,3 +724,34 @@ religious_special_building_exclusion_trigger = { # checks if any special buildin
 		# }
 	}
 }
+
+
+building_murex_farm_requirement_terrain = {
+	#L5R Disabled
+	always = no
+	# is_county_capital = yes
+	# is_coastal = yes
+	# geographical_region = mediteranean_coast
+	# NOR = {
+	# 	this.barony = title:b_salmydessus
+	# 	this.barony = title:b_chelai
+	# }
+}
+
+building_breweries_requirement = {
+	OR = {
+		AND = {
+			has_building_or_higher = temple_$NUMBER$
+			OR = {
+				#L5R Disabled
+				# faith = faith:catholic
+				faith = { has_doctrine_parameter = allows_brewery }
+			}
+		}
+		AND = {
+			has_building_or_higher = city_$NUMBER$
+			culture = { has_cultural_parameter = allows_brewery }
+		}
+	}
+}
+

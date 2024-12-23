@@ -142,12 +142,13 @@ BrewTypes = {
 	# 	localization_key = BrewTypePriorsAle 
 	# }
 
-	text = { 
-		trigger = {
-			faith = { has_doctrine_parameter = allows_brewery }
-		}
-		localization_key = BrewTypeSanctuaryAle 
-	}
+	#L5R Disabled
+	# text = { 
+	# 	trigger = {
+	# 		faith = { has_doctrine_parameter = allows_brewery }
+	# 	}
+	# 	localization_key = BrewTypeSanctuaryAle 
+	# }
 
 	#L5R Disabled
 	# text = { 

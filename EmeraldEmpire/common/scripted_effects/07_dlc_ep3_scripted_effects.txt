@@ -8560,34 +8560,35 @@ ep3_pick_random_maa_regiment_effect = {
 					value = flag:accolade_maa_crossbowers
 				}
 			}
-			1 = {
-				trigger = {
-					any_active_accolade = {
-						primary_type = {
-							this = accolade_type:camelry_attribute
-						} 
-						accolade_rank >= 3
-					}
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:accolade_maa_cameliers
-				}
-			}
-			1 = {
-				trigger = {
-					any_active_accolade = {
-						primary_type = {
-							this = accolade_type:elephantry_attribute
-						} 
-						accolade_rank >= 3
-					}
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:accolade_maa_elephantiers
-				}
-			}
+			#L5R Disabled
+			# 1 = {
+			# 	trigger = {
+			# 		any_active_accolade = {
+			# 			primary_type = {
+			# 				this = accolade_type:camelry_attribute
+			# 			} 
+			# 			accolade_rank >= 3
+			# 		}
+			# 	}
+			# 	save_scope_value_as = {
+			# 		name = maa_to_create
+			# 		value = flag:accolade_maa_cameliers
+			# 	}
+			# }
+			# 1 = {
+			# 	trigger = {
+			# 		any_active_accolade = {
+			# 			primary_type = {
+			# 				this = accolade_type:elephantry_attribute
+			# 			} 
+			# 			accolade_rank >= 3
+			# 		}
+			# 	}
+			# 	save_scope_value_as = {
+			# 		name = maa_to_create
+			# 		value = flag:accolade_maa_elephantiers
+			# 	}
+			# }
 			1 = {
 				trigger = {
 					any_active_accolade = {
@@ -9104,18 +9105,19 @@ ep3_create_random_maa_regiment_effect = {
 					SIZE = $SIZE$
 				}
 			}
-			flag:accolade_maa_cameliers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = accolade_maa_cameliers
-					SIZE = $SIZE$
-				}
-			}
-			flag:accolade_maa_elephantiers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = accolade_maa_elephantiers
-					SIZE = $SIZE$
-				}
-			}
+			#L5R Disabled
+			# flag:accolade_maa_cameliers = {	
+			# 	create_maa_or_upgrade_regiment_effect = {
+			# 		TYPE = accolade_maa_cameliers
+			# 		SIZE = $SIZE$
+			# 	}
+			# }
+			# flag:accolade_maa_elephantiers = {	
+			# 	create_maa_or_upgrade_regiment_effect = {
+			# 		TYPE = accolade_maa_elephantiers
+			# 		SIZE = $SIZE$
+			# 	}
+			# }
 			flag:accolade_maa_horse_archers = {	
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = accolade_maa_horse_archers

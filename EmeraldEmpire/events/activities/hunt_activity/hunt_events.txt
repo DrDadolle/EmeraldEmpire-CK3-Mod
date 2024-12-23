@@ -6257,14 +6257,16 @@ hunt.1023 = {
 		}
 		hunt_activity_dangerous_game_effect = { PROVINCE = activity_location }
 		hunt_activity_success_change_effect = { CHANGE = increase_minor  }
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		exists = court_position:akolouthos_court_position
+		# 		court_position:akolouthos_court_position = { is_participant_in_activity = scope:activity }
+		# 	}
+		# 	court_position:akolouthos_court_position = { save_scope_as = bodyguard }
+		# }
+		# else_
 		if = {
-			limit = {
-				exists = court_position:akolouthos_court_position
-				court_position:akolouthos_court_position = { is_participant_in_activity = scope:activity }
-			}
-			court_position:akolouthos_court_position = { save_scope_as = bodyguard }
-		}
-		else_if = {
 			limit = {
 				exists = court_position:bodyguard_court_position
 				court_position:bodyguard_court_position = { is_participant_in_activity = scope:activity }
@@ -7931,15 +7933,16 @@ hunt.1080 = {
 						}
 						save_scope_as = bodyguard_betray
 					}
-					else_if = {
-						limit = {
-							is_court_position_employer = {
-								court_position = akolouthos_court_position
-								who = root
-							}
-						}
-						save_scope_as = bodyguard_betray
-					}
+					#L5R Disabled
+					# else_if = {
+					# 	limit = {
+					# 		is_court_position_employer = {
+					# 			court_position = akolouthos_court_position
+					# 			who = root
+					# 		}
+					# 	}
+					# 	save_scope_as = bodyguard_betray
+					# }
 					add_to_list = murderer_list
 					add_to_list = murder_participants
 				}
@@ -8007,15 +8010,16 @@ hunt.1080 = {
 						}
 						save_scope_as = bodyguard_betray
 					}
-					else_if = {
-						limit = {
-							is_court_position_employer = {
-								court_position = akolouthos_court_position
-								who = root
-							}
-						}
-						save_scope_as = bodyguard_betray
-					}
+					#L5R Disabled
+					# else_if = {
+					# 	limit = {
+					# 		is_court_position_employer = {
+					# 			court_position = akolouthos_court_position
+					# 			who = root
+					# 		}
+					# 	}
+					# 	save_scope_as = bodyguard_betray
+					# }
 					add_to_list = murderer_list
 					add_to_list = murder_participants
 				}
@@ -12894,15 +12898,16 @@ hunt.4003 = {
 
 scripted_trigger can_eat_boar_trigger = {
 	NOT = { culture = { has_cultural_tradition = tradition_vegetarianism } }
-	NAND = {
-		scope:activity.var:animal_type = flag:boar
-		faith = {
-			OR = {
-				religion = religion:islam_religion
-				religion = religion:judaism_religion
-			}
-		}
-	}
+	#L5R Disabled
+	# NAND = {
+	# 	scope:activity.var:animal_type = flag:boar
+	# 	faith = {
+	# 		OR = {
+	# 			religion = religion:islam_religion
+	# 			religion = religion:judaism_religion
+	# 		}
+	# 	}
+	# }
 }
 
 hunt.4004 = {
@@ -14123,7 +14128,8 @@ hunt.4007 = {
 							5 = { # Aurochs
 								trigger = {
 									scope:activity.activity_location = { hunt_animal_aurochs_trigger = yes }
-									NOT = { scope:host.religion = religion:hinduism_religion }
+									#L5R Disabled
+									# NOT = { scope:host.religion = religion:hinduism_religion }
 								}
 								set_variable = { name = animal_type value = flag:aurochs }
 							}
@@ -15854,12 +15860,13 @@ hunt.4009 = {
 							exists = root.court_position:bodyguard_court_position
 							this = root.court_position:bodyguard_court_position
 						}
-						modifier = {
-							add = 25
-							has_court_position = akolouthos_court_position
-							exists = root.court_position:akolouthos_court_position
-							this = root.court_position:akolouthos_court_position
-						}
+						#L5R Disabled
+						# modifier = {
+						# 	add = 25
+						# 	has_court_position = akolouthos_court_position
+						# 	exists = root.court_position:akolouthos_court_position
+						# 	this = root.court_position:akolouthos_court_position
+						# }
 					}
 					save_scope_as = saving_participant
 				}

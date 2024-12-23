@@ -101,8 +101,12 @@ city_holding = {
 		common_tradeport_01
 		# qanats_01
 		# murex_farm_01
+		
+		breweries_01
+
 		#L5R Added
 		onsen_01
+		
 
 	}
 
@@ -148,6 +152,9 @@ church_holding = {
 		#L5R Disabled
 		# hall_of_heroes_01
 		# qanats_01
+
+		breweries_01
+
 		#L5R Added
 		onsen_01
 	}

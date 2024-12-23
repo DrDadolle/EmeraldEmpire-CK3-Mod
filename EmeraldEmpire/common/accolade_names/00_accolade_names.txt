@@ -1484,20 +1484,21 @@ accolade_leader_of_the_culture_maa = {
 				}
 				desc = accolade_soldiery
 			}
-			triggered_desc = {
-				trigger = {
-					scope:accolade_type = {
-						AND = {
-							type_has_accolade_category = cavalry
-							type_has_accolade_category = heavy_fighter
-						}
-						NOT = {
-							this = accolade_type:elephantry_attribute
-						}
-					}
-				}
-				desc = accolade_lances
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:accolade_type = {
+			# 			AND = {
+			# 				type_has_accolade_category = cavalry
+			# 				type_has_accolade_category = heavy_fighter
+			# 			}
+			# 			NOT = {
+			# 				this = accolade_type:elephantry_attribute
+			# 			}
+			# 		}
+			# 	}
+			# 	desc = accolade_lances
+			# }
 			triggered_desc = {
 				trigger = {
 					scope:accolade_type = {
@@ -1536,33 +1537,34 @@ accolade_leader_of_the_culture_maa = {
 				}
 				desc = accolade_engineers
 			}
-			triggered_desc = {
-				trigger = {
-					scope:accolade_type = {
-						this = accolade_type:camelry_attribute
-					}
-				}
-				desc = accolade_camels
-			}
-			triggered_desc = {
-				trigger = {
-					culture = {
-						has_cultural_era_or_later = culture_era_high_medieval
-					}
-					scope:accolade_type = {
-						this = accolade_type:camelry_attribute
-					}
-				}
-				desc = accolade_cameliers
-			}
-			triggered_desc = {
-				trigger = {
-					scope:accolade_type = {
-						this = accolade_type:elephantry_attribute
-					}
-				}
-				desc = accolade_elephants
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:accolade_type = {
+			# 			this = accolade_type:camelry_attribute
+			# 		}
+			# 	}
+			# 	desc = accolade_camels
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		culture = {
+			# 			has_cultural_era_or_later = culture_era_high_medieval
+			# 		}
+			# 		scope:accolade_type = {
+			# 			this = accolade_type:camelry_attribute
+			# 		}
+			# 	}
+			# 	desc = accolade_cameliers
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:accolade_type = {
+			# 			this = accolade_type:elephantry_attribute
+			# 		}
+			# 	}
+			# 	desc = accolade_elephants
+			# }
 			triggered_desc = {
 				trigger = {
 					scope:accolade_type = {
@@ -1924,9 +1926,10 @@ accolade_leader_of_the_lieges_maa = {
 							type_has_accolade_category = cavalry
 							type_has_accolade_category = heavy_fighter
 						}
-						NOT = {
-							this = accolade_type:elephantry_attribute
-						}
+						#L5R Disabled
+						# NOT = {
+						# 	this = accolade_type:elephantry_attribute
+						# }
 					}
 				}
 				desc = accolade_lances
@@ -1974,33 +1977,34 @@ accolade_leader_of_the_lieges_maa = {
 				}
 				desc = accolade_engineers
 			}
-			triggered_desc = {
-				trigger = {
-					scope:accolade_type = {
-						this = accolade_type:camelry_attribute
-					}
-				}
-				desc = accolade_camels
-			}
-			triggered_desc = {
-				trigger = {
-					culture = {
-						has_cultural_era_or_later = culture_era_high_medieval
-					}
-					scope:accolade_type = {
-						this = accolade_type:camelry_attribute
-					}
-				}
-				desc = accolade_cameliers
-			}
-			triggered_desc = {
-				trigger = {
-					scope:accolade_type = {
-						this = accolade_type:elephantry_attribute
-					}
-				}
-				desc = accolade_elephants
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:accolade_type = {
+			# 			this = accolade_type:camelry_attribute
+			# 		}
+			# 	}
+			# 	desc = accolade_camels
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		culture = {
+			# 			has_cultural_era_or_later = culture_era_high_medieval
+			# 		}
+			# 		scope:accolade_type = {
+			# 			this = accolade_type:camelry_attribute
+			# 		}
+			# 	}
+			# 	desc = accolade_cameliers
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:accolade_type = {
+			# 			this = accolade_type:elephantry_attribute
+			# 		}
+			# 	}
+			# 	desc = accolade_elephants
+			# }
 			triggered_desc = {
 				trigger = {
 					scope:accolade_type = {
@@ -4720,20 +4724,21 @@ accolade_goodest_of_knights = {
 				}
 				desc = accolade_infantry
 			}
-			triggered_desc = {
-				trigger = {
-					scope:accolade_type = {
-						OR = {
-							type_has_accolade_category = cavalry
-							type_has_accolade_category = equestrian
-						}
-						NOT = {
-							this = accolade_type:elephantry_attribute
-						}
-					}
-				}
-				desc = accolade_lances
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:accolade_type = {
+			# 			OR = {
+			# 				type_has_accolade_category = cavalry
+			# 				type_has_accolade_category = equestrian
+			# 			}
+			# 			NOT = {
+			# 				this = accolade_type:elephantry_attribute
+			# 			}
+			# 		}
+			# 	}
+			# 	desc = accolade_lances
+			# }
 			triggered_desc = {
 				trigger = {
 					scope:accolade_type = {
@@ -4750,17 +4755,18 @@ accolade_goodest_of_knights = {
 				}
 				desc = accolade_crossbowmen
 			}
-			triggered_desc = {
-				trigger = {
-					culture = {
-						has_cultural_era_or_later = culture_era_high_medieval
-					}
-					scope:accolade_type = {
-						this = accolade_type:camelry_attribute
-					}
-				}
-				desc = accolade_cameliers
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		culture = {
+			# 			has_cultural_era_or_later = culture_era_high_medieval
+			# 		}
+			# 		scope:accolade_type = {
+			# 			this = accolade_type:camelry_attribute
+			# 		}
+			# 	}
+			# 	desc = accolade_cameliers
+			# }
 			triggered_desc = {
 				trigger = {
 					NOT = {

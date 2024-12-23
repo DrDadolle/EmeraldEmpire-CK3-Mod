@@ -1377,11 +1377,12 @@ doctrine_funeral = {
 			mummification_funeral = yes
 		}
 
-		can_pick = {
-			custom_description = {
-				text = incompatible_tenet_aniconism_trigger
-				NOT = { doctrine:tenet_aniconism = { is_in_list = selected_doctrines } }
-			}
-		}
+		#L5R Disabled
+		# can_pick = {
+		# 	custom_description = {
+		# 		text = incompatible_tenet_aniconism_trigger
+		# 		NOT = { doctrine:tenet_aniconism = { is_in_list = selected_doctrines } }
+		# 	}
+		# }
 	}
 }
