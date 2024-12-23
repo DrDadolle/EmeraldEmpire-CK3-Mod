@@ -1346,7 +1346,10 @@
 417 = { # b_south_shinomen_ronin_3
 	winter_severity_bias = @mild_winter
 }
-
+## c_west_usagi
+487 = { # b_west_usagi
+	winter_severity_bias = @mild_winter
+}
 
 ## Impassible terrains 
 418 = { # Suzume mountains

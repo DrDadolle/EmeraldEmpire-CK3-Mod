@@ -2117,6 +2117,13 @@ e_rokugan = {
                     province = 417
                 }
              }
+             
+             c_west_usagi = {
+                color = { 93 61 40 }
+                b_west_usagi = {
+                    province = 487
+                }
+             }
         }
         d_west_steppes_1 = {
             color = { 100 100 100 }

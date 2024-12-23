@@ -218,6 +218,15 @@ c_central_lands_ronin_4 = {
 	}
 }
 
+c_west_usagi = {
+
+	1123.1.1 = {
+		liege = "e_rokugan"
+		holder = 3004109 #  PlaceHolder ronin
+		change_development_level = 2
+	}
+}
+
 #####################
 #	Ronin lands around Daidoji Yukan See
 #####################

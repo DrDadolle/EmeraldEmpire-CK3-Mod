@@ -4114,7 +4114,20 @@ b_south_shinomen_ronin_3 = {
 	}
 }
 
-
+c_west_usagi = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
+b_west_usagi = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "white"
+	textured_emblem = {
+		texture = "te_ronin_wolf.dds"
+	}
+}
 ##### Lands 3 armies
 d_ronin_central = { 
 	pattern = "pattern_solid.dds"	
