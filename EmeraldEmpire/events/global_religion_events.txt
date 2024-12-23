@@ -270,13 +270,16 @@ global_religion.0001 = {
 						# 	capital_province = { geographical_region = world_steppe }
 						# }
 					}
-					if = {
-						limit = {
-							faith = { religion_tag = islam_religion }
-						}
-						change_government = clan_government
-					}
-					else = { change_government = feudal_government }
+					#L5R Disabled
+					# if = {
+					# 	limit = {
+					# 		faith = { religion_tag = islam_religion }
+					# 	}
+					# 	change_government = clan_government
+					# }
+					# else = { 
+					change_government = feudal_government 
+					# }
 					capital_county = {
 						set_county_faith = prev.faith
 					}
@@ -295,13 +298,16 @@ global_religion.0001 = {
 					# 	capital_province = { geographical_region = world_steppe }
 					# }
 				}
-				if = {
-					limit = {
-						faith = { religion_tag = islam_religion }
-					}
-					change_government = clan_government
-				}
-				else = { change_government = feudal_government }
+				#L5R Disabled
+				# if = {
+				# 	limit = {
+				# 		faith = { religion_tag = islam_religion }
+				# 	}
+				# 	change_government = clan_government
+				# }
+				# else = { 
+				change_government = feudal_government
+				# }
 				capital_county = {
 					set_county_faith = root.faith
 				}

@@ -62,9 +62,9 @@ vizier_default_task_diplomacy_scale = {
 	# 	}
 	# 	ceiling = yes
 	# }
-	else = {
+	# else = {
 		floor = yes
-	}
+	# }
 	min = 1
 }
 

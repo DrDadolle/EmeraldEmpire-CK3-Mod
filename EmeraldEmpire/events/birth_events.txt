@@ -919,75 +919,76 @@ birth.1001 = {
 				}
 			}
 		}
+		#L5R Disabled
 		# Special effects for Taltos
-		scope:child = {
-			if = {
-				limit = {
-					faith = {
-						has_doctrine_parameter = mystic_birthright_active
-						NOT = { has_variable = recent_taltos_born }
-					}
-				}
-				random_list = {
-					# 1% chance of super rare Taltos birth for AI characters
-					1 = {
-						modifier = { # 5% chance for players
-							add = 4
-							OR = {
-								scope:mother = {
-									is_ai = no
-								}
-								scope:father = {
-									is_ai = no
-								}
-							}
-						}
+		# scope:child = {
+		# 	if = {
+		# 		limit = {
+		# 			faith = {
+		# 				has_doctrine_parameter = mystic_birthright_active
+		# 				NOT = { has_variable = recent_taltos_born }
+		# 			}
+		# 		}
+		# 		random_list = {
+		# 			# 1% chance of super rare Taltos birth for AI characters
+		# 			1 = {
+		# 				modifier = { # 5% chance for players
+		# 					add = 4
+		# 					OR = {
+		# 						scope:mother = {
+		# 							is_ai = no
+		# 						}
+		# 						scope:father = {
+		# 							is_ai = no
+		# 						}
+		# 					}
+		# 				}
 
-						add_character_flag = born_as_taltos
-						add_trait = lifestyle_mystic
-						hidden_effect = {
-							add_trait_xp = {
-								trait = lifestyle_mystic
-								value = 100
-							}
-						}
-						faith = {
-							set_variable = {
-								name = recent_taltos_born
-								value = yes
-								years = 30
-							}
-						}
-						# Notify other players about the birth of a Taltos.
-						every_player = {
-							limit = {
-								faith = scope:child.faith
-								NOR = {
-									this = scope:father
-									this = scope:mother
-								}
-							}
-							trigger_event = birth.1100
-						}
-					}
-					99 = {
-						modifier = { # 5% chance for players
-							add = -4
-							OR = {
-								scope:mother = {
-									is_ai = no
-								}
-								scope:father = {
-									is_ai = no
-								}
-							}
-						}
-						# 99% chance of normal uninteresting birth
-					}
+		# 				add_character_flag = born_as_taltos
+		# 				add_trait = lifestyle_mystic
+		# 				hidden_effect = {
+		# 					add_trait_xp = {
+		# 						trait = lifestyle_mystic
+		# 						value = 100
+		# 					}
+		# 				}
+		# 				faith = {
+		# 					set_variable = {
+		# 						name = recent_taltos_born
+		# 						value = yes
+		# 						years = 30
+		# 					}
+		# 				}
+		# 				# Notify other players about the birth of a Taltos.
+		# 				every_player = {
+		# 					limit = {
+		# 						faith = scope:child.faith
+		# 						NOR = {
+		# 							this = scope:father
+		# 							this = scope:mother
+		# 						}
+		# 					}
+		# 					trigger_event = birth.1100
+		# 				}
+		# 			}
+		# 			99 = {
+		# 				modifier = { # 5% chance for players
+		# 					add = -4
+		# 					OR = {
+		# 						scope:mother = {
+		# 							is_ai = no
+		# 						}
+		# 						scope:father = {
+		# 							is_ai = no
+		# 						}
+		# 					}
+		# 				}
+		# 				# 99% chance of normal uninteresting birth
+		# 			}
 
-				}
-			}
-		}
+		# 		}
+		# 	}
+		# }
 	}
 
 

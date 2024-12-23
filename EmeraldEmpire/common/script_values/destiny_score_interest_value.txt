@@ -1469,7 +1469,8 @@ destiny_score_interesting_circumstances = {
 		limit = {
 			OR = {
 				can_execute_decision = convert_whole_realm_to_feudalism_decision
-				can_execute_decision = convert_whole_realm_to_feudalism_west_african_pagan_decision
+				#L5R Disabled
+				# can_execute_decision = convert_whole_realm_to_feudalism_west_african_pagan_decision
 			}
 		}
 		add = {
@@ -1677,56 +1678,57 @@ destiny_score_interesting_circumstances = {
 			desc = killed_a_lot_interesting_desc
 		}
 	}
-	if = {
-		limit = {
-			is_landed = yes
-			has_title = title:c_roma
-		}
-		add = {
-			value = 85
-			desc = holds_rome_interesting_desc
-		}
-	}
-	if = {
-		limit = {
-			is_landed = yes
-			has_title = title:c_byzantion
-		}
-		add = {
-			value = 85
-			desc = holds_byzantion_interesting_desc
-		}
-	}
-	if = {
-		limit = {
-			is_landed = yes
-			has_title = title:c_jerusalem
-		}
-		add = {
-			value = 85
-			desc = holds_jerusalem_interesting_desc
-		}
-	}
-	if = {
-		limit = {
-			is_landed = yes
-			has_title = title:c_mecca
-		}
-		add = {
-			value = 85
-			desc = holds_mecca_interesting_desc
-		}
-	}
-	if = {
-		limit = {
-			is_landed = yes
-			has_title = title:c_baghdad
-		}
-		add = {
-			value = 85
-			desc = holds_baghdad_interesting_desc
-		}
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		is_landed = yes
+	# 		has_title = title:c_roma
+	# 	}
+	# 	add = {
+	# 		value = 85
+	# 		desc = holds_rome_interesting_desc
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		is_landed = yes
+	# 		has_title = title:c_byzantion
+	# 	}
+	# 	add = {
+	# 		value = 85
+	# 		desc = holds_byzantion_interesting_desc
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		is_landed = yes
+	# 		has_title = title:c_jerusalem
+	# 	}
+	# 	add = {
+	# 		value = 85
+	# 		desc = holds_jerusalem_interesting_desc
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		is_landed = yes
+	# 		has_title = title:c_mecca
+	# 	}
+	# 	add = {
+	# 		value = 85
+	# 		desc = holds_mecca_interesting_desc
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		is_landed = yes
+	# 		has_title = title:c_baghdad
+	# 	}
+	# 	add = {
+	# 		value = 85
+	# 		desc = holds_baghdad_interesting_desc
+	# 	}
+	# }
 	if = {
 		limit = {
 			any_character_artifact = {
