@@ -2056,13 +2056,14 @@ yearly.4051 = {
 	type = character_event
 	title = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					has_fp3_dlc_trigger = yes
-					culture = { has_cultural_pillar = heritage_iranian }
-				}
-				desc = intrigue_scheme_ongoing.5014.t_persian
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		has_fp3_dlc_trigger = yes
+			# 		culture = { has_cultural_pillar = heritage_iranian }
+			# 	}
+			# 	desc = intrigue_scheme_ongoing.5014.t_persian
+			# }
 			desc = intrigue_scheme_ongoing.5014.t
 		}
 	}

@@ -9079,12 +9079,13 @@ travel_events.2026 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					OR ={
+					#L5R Disabled
+					# OR ={
 						scope:estate_owner = {
-							faith = { religion_tag = buddhism_religion }
+							# faith = { religion_tag = buddhism_religion }
 							has_cultural_tradition = tradition_vegetarianism
 						}
-					}
+					# }
 				}
 				desc = travel_events.2026.desc_vegetarians
 			}
