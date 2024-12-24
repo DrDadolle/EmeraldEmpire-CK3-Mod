@@ -115,6 +115,8 @@ tradition_forest_fighters = {
 					OR = {
 						terrain = forest
 						terrain = taiga
+						#L5R Added
+						terrain = shadowlands_forest
 					}
 				}
 			}
@@ -128,12 +130,17 @@ tradition_forest_fighters = {
 	character_modifier = {
 		forest_travel_danger = forest_low_danger_reduction
 		taiga_travel_danger = taiga_low_danger_reduction
+		#L5R Added
+		shadowlands_forest_travel_danger = shadowlands_forest_low_danger_reduction
 	}
 	province_modifier = {
 		forest_levy_size = 0.1
 		taiga_levy_size = 0.1
 		forest_supply_limit_mult = 0.25
 		taiga_supply_limit_mult = 0.25
+		#L5R Added
+		shadowlands_forest_levy_size = 0.1
+		shadowlands_forest_supply_limit_mult = 0.25
 	}
 	cost = {
 		prestige = {
@@ -164,6 +171,8 @@ tradition_forest_fighters = {
 								OR = {
 									terrain = forest
 									terrain = taiga
+									#L5R Added
+									terrain = shadowlands_forest
 								}
 							}
 						}
@@ -191,6 +200,8 @@ tradition_forest_fighters = {
 								OR = {
 									terrain = forest
 									terrain = taiga
+									#L5R Added
+									terrain = shadowlands_forest
 								}
 							}
 						}
@@ -207,6 +218,8 @@ tradition_forest_fighters = {
 						OR = {
 							terrain = forest
 							terrain = taiga
+							#L5R Added
+							terrain = shadowlands_forest
 						}
 					}
 				}
@@ -250,6 +263,8 @@ tradition_mountaineers = {
 					OR = {
 						terrain = mountains
 						terrain = desert_mountains
+						#L5R Added
+						terrain = shadowlands_mountains
 					}
 				}
 			}
@@ -264,12 +279,17 @@ tradition_mountaineers = {
 	character_modifier = {
 		mountains_travel_danger = mountains_low_danger_reduction
 		desert_mountains_travel_danger = desert_mountains_low_danger_reduction
+		#L5R Added
+		shadowlands_mountains_travel_danger = shadowlands_mountains_low_danger_reduction
 	}
 	province_modifier = {
 		mountains_levy_size = 0.1
 		desert_mountains_levy_size = 0.1
 		mountains_supply_limit_mult = 0.25
 		desert_mountains_supply_limit_mult = 0.25
+		#L5R Added
+		shadowlands_mountains_levy_size = 0.1
+		shadowlands_mountains_supply_limit_mult = 0.25
 	}
 	cost = {
 		prestige = {
@@ -300,6 +320,8 @@ tradition_mountaineers = {
 								OR = {
 									terrain = mountains
 									terrain = desert_mountains
+									#L5R Added
+									terrain = shadowlands_mountains
 								}
 							}
 						}
@@ -327,6 +349,8 @@ tradition_mountaineers = {
 								OR = {
 									terrain = mountains
 									terrain = desert_mountains
+									#L5R Added
+									terrain = shadowlands_mountains
 								}
 							}
 						}
@@ -344,6 +368,8 @@ tradition_mountaineers = {
 							OR = {
 								terrain = mountains
 								terrain = desert_mountains
+								#L5R Added
+								terrain = shadowlands_mountains
 							}
 						}
 					}
@@ -360,6 +386,8 @@ tradition_mountaineers = {
 							OR = {
 								terrain = mountains
 								terrain = desert_mountains
+								#L5R Added
+								terrain = shadowlands_mountains
 							}
 						}
 					}
@@ -538,7 +566,11 @@ tradition_highland_warriors = {
 			text = culture_in_hills_desc
 			any_culture_county = {
 				any_county_province = {
-					terrain = hills
+					OR = {
+						terrain = hills
+						#L5R Added
+						terrain = shadowlands_hills
+					}
 				}
 			}
 		}
@@ -552,9 +584,14 @@ tradition_highland_warriors = {
 	province_modifier = {
 		hills_levy_size = 0.1
 		hills_supply_limit_mult = 0.25
+		#L5R Added
+		shadowlands_hills_levy_size = 0.1
+		shadowlands_hills_supply_limit_mult = 0.25
 	}
 	character_modifier = {
 		hills_travel_danger = hills_low_danger_reduction
+		#L5R Added
+		shadowlands_hills_travel_danger = shadowlands_hills_low_danger_reduction
 	}
 	
 	cost = {
@@ -583,7 +620,11 @@ tradition_highland_warriors = {
 						any_culture_county = {
 							percent >= 0.3
 							any_county_province = {
-								terrain = hills
+								OR = {
+									terrain = hills
+									#L5R Added
+									terrain = shadowlands_hills
+								}
 							}
 						}
 					}
@@ -608,7 +649,11 @@ tradition_highland_warriors = {
 							percent >= 0.2
 							culture = scope:character.culture
 							any_county_province = {
-								terrain = hills
+								OR = {
+									terrain = hills
+									#L5R Added
+									terrain = shadowlands_hills
+								}
 							}
 						}
 					}
@@ -622,7 +667,11 @@ tradition_highland_warriors = {
 					any_culture_county = {
 						percent > 0.6
 						any_county_province = {
-							terrain = hills
+							OR = {
+								terrain = hills
+								#L5R Added
+								terrain = shadowlands_hills
+							}
 						}
 					}
 				}
@@ -635,7 +684,11 @@ tradition_highland_warriors = {
 					any_culture_county = {
 						percent > 0.4
 						any_county_province = {
-							terrain = hills
+							OR = {
+								terrain = hills
+								#L5R Added
+								terrain = shadowlands_hills
+							}
 						}
 					}
 				}

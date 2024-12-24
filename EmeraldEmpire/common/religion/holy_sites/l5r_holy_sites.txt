@@ -341,7 +341,18 @@ snake_castle = {
 		learning = 1
 		monthly_piety_gain_mult = 0.1
 	}
+}
 
+fallen_hiruma_castle = {
+
+	county = c_shiro_hiruma
+	barony = b_shiro_hiruma
+
+	character_modifier = {
+		name = fallen_hiruma_castle_effect_name
+		martial = 2
+		prowess = 2
+	}
 }
 
 

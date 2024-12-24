@@ -43,6 +43,10 @@ crane_iron_warrior= {
 		mountains = { toughness = 12 }
  		hills = { damage = 4 toughness = 8 }
  		forest = { damage = 4 toughness = 8 pursuit = 4 }
+		#L5R Added
+		shadowlands_mountains = { toughness = 12 }
+		shadowlands_hills = { damage = 4 toughness = 8 }
+		shadowlands_forest = { damage = 4 toughness = 8 pursuit = 4 }
 	}
 
 

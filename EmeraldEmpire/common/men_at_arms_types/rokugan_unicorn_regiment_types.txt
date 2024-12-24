@@ -45,6 +45,11 @@ unicorn_utaku_maiden = {
 		mountains = { damage = -50 }
 		desert_mountains = { damage = -50 }
 		wetlands = { damage = -75 }
+		#L5R Added
+		shadowlands_plains = { damage = 30 }
+		shadowlands_hills = { damage = -10 }
+		shadowlands_mountains = { damage = -50 }
+		shadowlands_wetlands = { damage = -75 }
 	}
 
 	winter_bonus = {

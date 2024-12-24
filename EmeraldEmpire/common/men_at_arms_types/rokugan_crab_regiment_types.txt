@@ -40,6 +40,8 @@ crab_hida_defender= {
 	
  	terrain_bonus = {
  		mountains = { toughness = 4 }
+		#L5R Added
+		shadowlands_mountains = { toughness = 4 }
  	}
 
  	buy_cost = { gold = hida_defender_recruitment_cost }

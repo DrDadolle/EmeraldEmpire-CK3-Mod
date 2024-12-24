@@ -1,0 +1,159 @@
+﻿# L5R terrains:
+### NOTE - ANY NEW TERRAINS SHOULD BE ADDED TO MEDITATION LOCATIONS (religious_decision_events.txt)
+# shadowlands_forest
+# shadowlands_plains
+# shadowlands_hills
+# shadowlands_mountains
+# shadowlands_wetlands
+
+@provisions_cost_minimal = 25
+@provisions_cost_light = 50
+@provisions_cost_medium = 80
+@provisions_cost_high = 100
+@provisions_cost_extreme = 150
+
+
+
+shadowlands_plains = {
+	color = hsv { 0.1 0.5 0.8 }
+	travel_danger_color = hsv { 0.1 0.5 0.8 }
+	travel_danger_score = shadowlands_plains_danger_value
+	provision_cost = @provisions_cost_medium
+
+	county_capital_modifier = {
+		development_growth_factor = -0.15
+	}
+
+	province_modifier = {
+		supply_limit_mult = -0.1
+		travel_danger = shadowlands_plains_danger_value
+	}
+	
+	movement_speed = 0.8
+
+	audio_parameter = 1.0
+}
+
+shadowlands_forest = {
+	color = hsv { 0.15 0.35 0.30 } #50 255 25
+	travel_danger_color = hsv { 0.37 0.8 0.5 }
+	travel_danger_score = shadowlands_forest_danger_value
+	provision_cost = @provisions_cost_medium
+	
+	province_modifier = {
+		supply_limit_mult = -0.2
+		travel_danger = forest_danger_value
+	}
+
+	county_capital_modifier = {
+		development_growth_factor = -0.2
+	}
+	
+	defender_combat_effects = {
+		name = combat_forest
+		image = defender_forest
+		advantage = 3
+	}
+	
+	movement_speed = 0.6
+	combat_width = 0.9
+
+	audio_parameter = 4.0
+
+	entity = "forest_birds_01"
+}
+
+
+shadowlands_hills = {
+	color = hsv { 15 0.467 0.153 }
+	travel_danger_color = hsv { 29 0.6 0.353 }
+	travel_danger_score = shadowlands_hills_danger_value
+	provision_cost = @provisions_cost_high
+	
+	province_modifier = {
+		supply_limit_mult = -0.3
+		travel_danger = shadowlands_hills_danger_value
+	}
+
+	county_capital_modifier = {
+		development_growth_factor = -0.4
+	}
+	
+	defender_combat_effects = {
+		name = combat_hills
+		image = combat_hills
+		advantage = 5
+	}
+	
+	movement_speed = 0.5
+	combat_width = 0.8
+	
+	audio_parameter = 1.0
+}
+
+shadowlands_mountains = {
+	color = hsv { 0 0 0.392 }
+	travel_danger_color = hsv { 0 0 0.392 }
+	travel_danger_score = shadowlands_mountains_danger_value
+	provision_cost = @provisions_cost_extreme
+	
+	province_modifier = {
+		supply_limit_mult = -0.6
+		travel_danger = shadowlands_mountains_danger_value
+	}
+
+	county_capital_modifier = {
+		development_growth_factor = -0.5
+	}
+	
+	defender_combat_effects = {
+		name = combat_mountain
+		image = combat_mountain
+		advantage = 12
+	}
+	
+	movement_speed = 0.4
+	combat_width = 0.5
+	
+	audio_parameter = 6.0
+}
+
+shadowlands_wetlands = {
+	color = hsv { 0.5 0.5 0.6 } #75 200 200
+	travel_danger_color = { 47 128 97 } 
+	travel_danger_score = shadowlands_wetlands_danger_value
+	provision_cost = @provisions_cost_high
+	
+	province_modifier = {
+		supply_limit_mult = -0.35
+		travel_danger = shadowlands_wetlands_danger_value
+	}
+
+	county_capital_modifier = {
+		development_growth_factor = -0.35
+	}
+	
+	attacker_modifier = {
+		hard_casualty_modifier = 0.2
+		retreat_losses = 0.25
+	}
+	
+	defender_modifier = {
+		hard_casualty_modifier = 0.2
+		retreat_losses = 0.25
+	}
+	
+	defender_combat_effects = {
+		name = combat_wetlands
+		image = defender_wetlands
+		advantage = 5
+	}
+	
+	movement_speed = 0.5
+	combat_width = 0.6
+	
+	audio_parameter = 3.0
+}
+
+
+

@@ -36,6 +36,10 @@ horse_archers = {
 		wetlands = { damage = -30 pursuit = -30 }
 		mountains = { damage = -30 pursuit = -30 }
 		desert_mountains = { damage = -30 pursuit = -30 }
+		#L5R Added
+		shadowlands_plains = { damage = 20 }
+		shadowlands_wetlands = { damage = -30 pursuit = -30 }
+		shadowlands_mountains = { damage = -30 pursuit = -30 }
 	}
 
 	counters = {

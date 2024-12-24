@@ -1121,6 +1121,12 @@
 					terrain = desert
 					terrain = desert_mountains
 					terrain = oasis
+					#L5R Added
+					terrain = shadowlands_forest
+					terrain = shadowlands_plains
+					terrain = shadowlands_mountains
+					terrain = shadowlands_hills
+					terrain = shadowlands_wetlands
 				}
 			}
 			desc = activity_hunt_province_desc_terrain_bad

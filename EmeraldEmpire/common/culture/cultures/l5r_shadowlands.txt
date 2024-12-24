@@ -3,9 +3,6 @@
 #######################
 daigotsu = {
 	color = { 0.1 0.1 0.1 } # The color of the culture, used e.g. on the map
-
-	created = 90.1.1
-	parents = { shinjo }
 	
 	ethos = ethos_bellicose
 	heritage = heritage_spider

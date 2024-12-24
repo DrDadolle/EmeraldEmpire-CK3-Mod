@@ -40,6 +40,10 @@ phoenix_elemental_guard = {
 		mountains = { toughness = 12 }
 		hills = { toughness = 8 }
 		plains = { damage = 8 }
+		#L5R Added
+		shadowlands_mountains = { toughness = 12 }
+		shadowlands_hills = { toughness = 8 }
+		shadowlands_plains = { damage = 8 }
 	}
 
 	buy_cost = { gold = elemental_guard_recruitment_cost }

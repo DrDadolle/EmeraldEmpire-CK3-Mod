@@ -927,6 +927,9 @@ scripted_trigger religious_decision_0201_has_two_meditation_options_trigger = {
 		has_character_flag = meditation_option_wetlands
 		has_character_flag = meditation_option_jungle
 		has_character_flag = meditation_option_desert
+		#L5R Added
+		has_character_flag = meditation_option_shadowlands
+
 	}
 }
 
@@ -1071,6 +1074,40 @@ religious_decision.0201 = {
 			limit = { religious_decision_0201_can_meditate_in_terrain_trigger = {TERRAIN = wetlands}}
 			save_meditation_option_effect = { TERRAIN = wetlands }
 		}
+		#L5R Added
+		if = {
+			limit = {
+				religious_decision_0201_has_two_meditation_options_trigger = no
+				any_sub_realm_barony = {
+					NOT = { this = root.capital_barony }
+					title_province = {
+						OR = {
+							terrain = shadowlands_plains
+							terrain = shadowlands_forest
+							terrain = shadowlands_hills
+							terrain = shadowlands_mountains
+							terrain = shadowlands_wetlands
+						}
+					}
+				}
+			}
+			add_character_flag = meditation_option_shadowlands
+			random_sub_realm_barony = {
+				limit = {
+					NOT = { this = root.capital_barony }
+					title_province = {
+						OR = {
+							terrain = shadowlands_plains
+							terrain = shadowlands_forest
+							terrain = shadowlands_hills
+							terrain = shadowlands_mountains
+							terrain = shadowlands_wetlands
+						}
+					}
+				}
+				title_province = { save_scope_as = shadowlands_location }
+			}
+		}
 	}
 
 	# Option 1: Meditate at home. Lowest risk, lowest reward.
@@ -1171,6 +1208,14 @@ religious_decision.0201 = {
 		meditate_at_location_effect = { TERRAIN = jungle }
 		custom_tooltip = religious_decision.0201.difficulty.hard
 	}
+	#L5R Added
+	# Option 2-K: Meditate in the shadowlands. High risk, low reward.
+	option = {
+		trigger = { has_character_flag = meditation_option_shadowlands}
+		name = religious_decision.0201.shadowlands
+		meditate_at_location_effect = { TERRAIN = shadowlands }
+		custom_tooltip = religious_decision.0201.difficulty.hard
+	}
 
 	# Option 3: Opt-out
 	option = {
@@ -1194,6 +1239,7 @@ religious_decision.0201 = {
 		remove_character_flag = meditation_option_wetlands
 		remove_character_flag = meditation_option_jungle
 		remove_character_flag = meditation_option_desert
+		remove_character_flag = meditation_option_shadowlands
 		remove_character_flag = planning_an_activity
 	}
 }
@@ -1292,6 +1338,21 @@ religious_decision.0211 = {
 			triggered_desc = {
 				trigger = {var:meditation_location = { terrain = desert }}
 				desc = religious_decision.0211.desc.beginning.desert
+			}
+			#L5R Added
+			triggered_desc = {
+				trigger = {
+					var:meditation_location = {
+						OR = {
+							terrain = shadowlands_plains
+							terrain = shadowlands_forest
+							terrain = shadowlands_hills
+							terrain = shadowlands_mountains
+							terrain = shadowlands_wetlands
+						}
+				}
+				}
+				desc = religious_decision.0211.desc.beginning.shadowlands
 			}
 		}
 		first_valid = {
@@ -1545,6 +1606,12 @@ religious_decision.0211 = {
 							terrain = mountains
 							terrain = wetlands
 							terrain = jungle
+							#L5R Added
+							terrain = shadowlands_plains
+							terrain = shadowlands_forest
+							terrain = shadowlands_hills
+							terrain = shadowlands_mountains
+							terrain = shadowlands_wetlands
 						}
 					}
 				}
@@ -1651,6 +1718,12 @@ religious_decision.0211 = {
 								OR = {
 									terrain = mountains
 									terrain = desert_mountains
+									#L5R Added
+									terrain = shadowlands_plains
+									terrain = shadowlands_forest
+									terrain = shadowlands_hills
+									terrain = shadowlands_mountains
+									terrain = shadowlands_wetlands
 								}
 							}
 						}

@@ -633,6 +633,28 @@ TerrainType = {
 		trigger = { location = { terrain = drylands } }
 		localization_key = terrain_drylands
 	}
+	#L5R Added
+	text = {	
+		trigger = { location = { terrain = shadowlands_plains } }
+		localization_key = terrain_shadowlands_plains
+	}
+	text = {	
+		trigger = { location = { terrain = shadowlands_forest } }
+		localization_key = terrain_shadowlands_forest
+	}
+	text = {	
+		trigger = { location = { terrain = shadowlands_hills } }
+		localization_key = terrain_shadowlands_hills
+	}
+	text = {	
+		trigger = { location = { terrain = shadowlands_mountains } }
+		localization_key = terrain_shadowlands_mountains
+	}
+	text = {	
+		trigger = { location = { terrain = shadowlands_wetlands } }
+		localization_key = terrain_shadowlands_wetlands
+	}
+
 }
 
 TerrainTypeProvince = {
@@ -706,6 +728,27 @@ TerrainTypeProvince = {
 	text = {	
 		trigger = { terrain = drylands }
 		localization_key = terrain_drylands
+	}
+	#L5R Added
+	text = {	
+		trigger = { location = { terrain = shadowlands_plains } }
+		localization_key = terrain_shadowlands_plains
+	}
+	text = {	
+		trigger = { location = { terrain = shadowlands_forest } }
+		localization_key = terrain_shadowlands_forest
+	}
+	text = {	
+		trigger = { location = { terrain = shadowlands_hills } }
+		localization_key = terrain_shadowlands_hills
+	}
+	text = {	
+		trigger = { location = { terrain = shadowlands_mountains } }
+		localization_key = terrain_shadowlands_mountains
+	}
+	text = {	
+		trigger = { location = { terrain = shadowlands_wetlands } }
+		localization_key = terrain_shadowlands_wetlands
 	}
 }
 

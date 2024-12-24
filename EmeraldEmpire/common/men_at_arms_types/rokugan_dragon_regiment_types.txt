@@ -39,6 +39,8 @@ dragon_mirumoto_elite_guard= {
 	terrain_bonus = {
 		mountains = { damage = 12 toughness = 12 }
 		desert_mountains = { damage = 12 toughness = 12 }
+		#L5R Added
+		shadowlands_mountains = { damage = 12 toughness = 12 }
 	}
 	
 

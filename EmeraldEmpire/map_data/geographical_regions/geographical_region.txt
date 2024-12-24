@@ -440,6 +440,12 @@ rokugan_spice_and_silk_isles = {
 #####################################						
 #####################################
 
+world_shadowlands_dark_coast = {
+	duchies = {
+		d_vs_hida d_hiruma_shadowlands d_earthquake_bay
+	}
+}
+
 #####################################						
 #####################################						
 ######          ALL            ######						
@@ -479,6 +485,15 @@ graphical_world_rokugan = {
 		rokugan_lion rokugan_phoenix rokugan_dragon rokugan_unicorn rokugan_imperial rokugan_crab rokugan_crane
 		rokugan_scorpion rokugan_shinomen_mori rokugan_spine_world_mountains rokugan_spice_and_silk_isles
 	}
+}
+
+graphical_world_shadowlands = {
+	graphical = yes
+	color = { 5 5 5 }
+	regions = {
+		world_shadowlands_dark_coast
+	}
+
 }
 
 #####################

@@ -42,6 +42,9 @@ accolade_maa_archers = {
 		hills = { damage = 20 toughness = 8 }
 		forest = { toughness = 8 screen = 8 }
 		taiga = { toughness = 8 screen = 8 }
+		#L5R Added
+		shadowlands_forest = { toughness = 8 screen = 8 }
+		shadowlands_hills = { damage = 20 toughness = 8 }
 	}
 
 	counters = {
@@ -84,6 +87,8 @@ accolade_maa_skirmishers = {
 		forest = { damage = 8 toughness = 12 }
 		taiga = { damage = 8 toughness = 12 }
 		jungle = { damage = 8 toughness = 12 }
+		#L5R Added
+		shadowlands_forest = { damage = 8 toughness = 12 }
 	}
 
 	counters = {
@@ -127,6 +132,9 @@ accolade_maa_pikes = {
 		mountains = { toughness = 24 }
 		desert_mountains = { toughness = 24 }
 		hills = { toughness = 16 }
+		#L5R Added
+		shadowlands_mountains = { toughness = 24 }
+		shadowlands_hills = { toughness = 16 }
 	}
 
 	counters = {
@@ -175,6 +183,11 @@ accolade_maa_outriders = {
 		mountains = { damage = -5 pursuit = -10 }
 		desert_mountains = { damage = -8 pursuit = -10 }
 		wetlands = { damage = -8 toughness = -5 pursuit = -15 screen = -15 }
+		#L5R Added
+		shadowlands_plains = { damage = 30 }
+		shadowlands_hills = { damage = -3 }
+		shadowlands_mountains = { damage = -5 pursuit = -10 }
+		shadowlands_wetlands = { damage = -8 toughness = -5 pursuit = -15 screen = -15 }
 	}
 	
 	counters = {
@@ -263,6 +276,11 @@ accolade_maa_lancers = {
 		mountains = { damage = -35 }
 		desert_mountains = { damage = -35 }
 		wetlands = { damage = -35 toughness = -5 pursuit = -5 }
+		#L5R Added
+		shadowlands_plains = { damage = 60 }
+		shadowlands_hills = { damage = -10 }
+		shadowlands_mountains = { damage = -35 }
+		shadowlands_wetlands = { damage = -35 toughness = -5 pursuit = -5 }
 	}
 
 	counters = {
@@ -311,6 +329,9 @@ accolade_maa_crossbowers = {
 		plains = { toughness = -4 }
 		drylands = { toughness = -4 }
 		desert = { toughness = -4 }
+		#L5R Added
+		shadowlands_hills = { damage = 20 }
+		shadowlands_plains = { toughness = -4 }
 	}
 
 	counters = {
@@ -463,6 +484,10 @@ accolade_maa_horse_archers = {
 		wetlands = { damage = -30 pursuit = -30 }
 		mountains = { damage = -30 pursuit = -30 }
 		desert_mountains = { damage = -30 pursuit = -30 }
+		#L5R Added
+		shadowlands_plains = { damage = 20 }
+		shadowlands_wetlands = { damage = -30 pursuit = -30 }
+		shadowlands_mountains = { damage = -30 pursuit = -30 }
 	}
 
 	counters = {

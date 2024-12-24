@@ -4,6 +4,15 @@
 heritage_crane = {
 	type = heritage
 
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
 	parameters = {
 		white_hair_valued = yes
 	}
@@ -18,6 +27,15 @@ heritage_crane = {
 
 heritage_lion = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_lion
@@ -28,6 +46,15 @@ heritage_lion = {
 
 heritage_phoenix = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_phoenix
@@ -38,6 +65,14 @@ heritage_phoenix = {
 
 heritage_dragon = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
 
 	parameters = {
 		tattoo_valued = yes
@@ -53,6 +88,15 @@ heritage_dragon = {
 
 heritage_scorpion = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_scorpion
@@ -63,6 +107,22 @@ heritage_scorpion = {
 
 heritage_crab = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -10
+		shadowlands_forest_advantage = -10
+		shadowlands_hills_advantage = -10
+		shadowlands_mountains_advantage = -10
+		shadowlands_wetlands_advantage = -10
+
+		shadowlands_plains_travel_danger = shadowlands_plains_low_danger_reduction
+		shadowlands_forest_travel_danger = shadowlands_forest_low_danger_reduction
+		shadowlands_hills_travel_danger = shadowlands_hills_low_danger_reduction
+		shadowlands_mountains_travel_danger = shadowlands_mountains_low_danger_reduction
+		shadowlands_wetlands_travel_danger = shadowlands_wetlands_low_danger_reduction
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_crab
@@ -73,6 +133,15 @@ heritage_crab = {
 
 heritage_unicorn = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_unicorn
@@ -83,6 +152,16 @@ heritage_unicorn = {
 
 heritage_imperial = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_imperial
@@ -96,6 +175,16 @@ heritage_imperial = {
 #######################
 heritage_kitsune = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_kitsune
@@ -106,6 +195,16 @@ heritage_kitsune = {
 
 heritage_moshi = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_moshi
@@ -116,6 +215,16 @@ heritage_moshi = {
 
 heritage_kasuga = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_kasuga
@@ -126,6 +235,16 @@ heritage_kasuga = {
 
 heritage_tonbo = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_tonbo
@@ -136,6 +255,16 @@ heritage_tonbo = {
 
 heritage_toritaka = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_toritaka
@@ -146,6 +275,15 @@ heritage_toritaka = {
 
 heritage_usagi = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_usagi
@@ -156,6 +294,16 @@ heritage_usagi = {
 
 heritage_yoritomo = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_yoritomo
@@ -166,6 +314,16 @@ heritage_yoritomo = {
 
 heritage_tsuruchi = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_tsuruchi
@@ -176,6 +334,16 @@ heritage_tsuruchi = {
 
 heritage_suzume = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_suzume
@@ -186,6 +354,16 @@ heritage_suzume = {
 
 heritage_ichiro = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_ichiro
@@ -197,6 +375,16 @@ heritage_ichiro = {
 
 heritage_nekoma = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_nekoma
@@ -207,6 +395,16 @@ heritage_nekoma = {
 
 heritage_komori = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_komori
@@ -217,6 +415,16 @@ heritage_komori = {
 
 heritage_shika = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_shika
@@ -227,6 +435,16 @@ heritage_shika = {
 
 heritage_kaikoga = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_kaikoga
@@ -237,6 +455,16 @@ heritage_kaikoga = {
 
 heritage_chuda = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_chuda
@@ -247,6 +475,16 @@ heritage_chuda = {
 
 heritage_kuma = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_kuma
@@ -257,6 +495,16 @@ heritage_kuma = {
 
 heritage_kaeru = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_kaeru
@@ -272,6 +520,16 @@ heritage_kaeru = {
 #######################
 heritage_yobanjin = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_yobanjin
@@ -282,6 +540,16 @@ heritage_yobanjin = {
 
 heritage_ujik = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_advantage = -20
+		shadowlands_forest_advantage = -20
+		shadowlands_hills_advantage = -20
+		shadowlands_mountains_advantage = -20
+		shadowlands_wetlands_advantage = -20
+	}
+
+	
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_ujik
@@ -295,6 +563,18 @@ heritage_ujik = {
 #######################
 heritage_spider = {
 	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_travel_danger = shadowlands_plains_high_danger_reduction
+		shadowlands_forest_travel_danger = shadowlands_forest_high_danger_reduction
+		shadowlands_hills_travel_danger = shadowlands_hills_high_danger_reduction
+		shadowlands_mountains_travel_danger = shadowlands_mountains_high_danger_reduction
+		shadowlands_wetlands_travel_danger = shadowlands_wetlands_high_danger_reduction
+	}
+	culture_modifier = {
+		mercenary_count_mult = -10
+	}
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_spider

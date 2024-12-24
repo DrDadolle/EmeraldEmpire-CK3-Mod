@@ -24,3 +24,12 @@
  tormented_by_air_spirit_desc:0 "An air spirit torments you, scaring you every other day."
  amused_by_air_spirit:0 "Amused by an air spirit"
  amused_by_air_spirit_desc:0 "An air spirit seems to have taken a liking into you and do playful pranks around you"
+
+#####################
+#####  Travel   #####
+#####################
+ shadowlands_plains_travel_danger:0 "[GetTerrain( 'shadowlands_plains' ).GetName] [travel_danger|E]"
+ shadowlands_forest_travel_danger:0 "[GetTerrain( 'shadowlands_forest' ).GetName] [travel_danger|E]"
+ shadowlands_hills_travel_danger:0 "[GetTerrain( 'shadowlands_hills' ).GetName] [travel_danger|E]"
+ shadowlands_mountains_travel_danger:0 "[GetTerrain( 'shadowlands_mountains' ).GetName] [travel_danger|E]"
+ shadowlands_wetlands_travel_danger:0 "[GetTerrain( 'shadowlands_wetlands' ).GetName] [travel_danger|E]"

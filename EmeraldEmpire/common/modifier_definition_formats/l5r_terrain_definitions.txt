@@ -1,0 +1,534 @@
+﻿shadowlands_plains_attrition_mult = {
+	decimals = 0
+	color = bad
+	percent = yes
+}
+
+shadowlands_plains_cancel_negative_supply = {
+	decimals = 0
+}
+
+shadowlands_plains_advantage = {
+	prefix = MOD_ADVANTAGE_PREFIX
+	decimals = 0
+}
+
+shadowlands_plains_min_combat_roll = {
+	decimals = 0
+}
+
+shadowlands_plains_max_combat_roll = {
+	decimals = 0
+}
+
+shadowlands_plains_development_growth = {
+	prefix = MOD_DEVELOPMENT_PREFIX
+	decimals = 1
+}
+
+shadowlands_plains_development_growth_factor = {
+	prefix = MOD_DEVELOPMENT_PREFIX
+	decimals = 0
+	percent = yes
+}
+
+shadowlands_plains_construction_gold_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_plains_holding_construction_gold_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_plains_construction_piety_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PIETY_PREFIX
+	percent = yes
+}
+
+shadowlands_plains_holding_construction_piety_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PIETY_PREFIX
+	percent = yes
+}
+
+shadowlands_plains_construction_prestige_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PRESTIGE_PREFIX
+	percent = yes
+}
+
+shadowlands_plains_holding_construction_prestige_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PRESTIGE_PREFIX
+	percent = yes
+}
+
+shadowlands_plains_supply_limit = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+}
+
+shadowlands_plains_supply_limit_mult = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+	percent = yes
+}
+
+shadowlands_plains_tax_mult = {
+	decimals = 0
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_plains_levy_size = {
+	decimals = 0
+	prefix = MOD_SOLDIER_PREFIX
+	percent = yes
+}
+
+
+shadowlands_hills_attrition_mult = {
+	decimals = 0
+	color = bad
+	percent = yes
+}
+
+shadowlands_hills_cancel_negative_supply = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+}
+
+shadowlands_hills_advantage = {
+	prefix = MOD_ADVANTAGE_PREFIX
+	decimals = 0
+}
+
+shadowlands_hills_min_combat_roll = {
+	decimals = 0
+}
+
+shadowlands_hills_max_combat_roll = {
+	decimals = 0
+}
+
+shadowlands_hills_development_growth = {
+	prefix = MOD_DEVELOPMENT_PREFIX
+	decimals = 1
+}
+
+shadowlands_hills_development_growth_factor = {
+	prefix = MOD_DEVELOPMENT_PREFIX
+	decimals = 0
+	percent = yes
+}
+
+shadowlands_hills_construction_gold_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_hills_holding_construction_gold_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_hills_construction_piety_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PIETY_PREFIX
+	percent = yes
+}
+
+shadowlands_hills_holding_construction_piety_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PIETY_PREFIX
+	percent = yes
+}
+
+shadowlands_hills_construction_prestige_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PRESTIGE_PREFIX
+	percent = yes
+}
+
+shadowlands_hills_holding_construction_prestige_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PRESTIGE_PREFIX
+	percent = yes
+}
+
+shadowlands_hills_supply_limit = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+}
+
+shadowlands_hills_supply_limit_mult = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+	percent = yes
+}
+
+shadowlands_hills_tax_mult = {
+	decimals = 0
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_hills_levy_size = {
+	decimals = 0
+	prefix = MOD_SOLDIER_PREFIX
+	percent = yes
+}
+
+shadowlands_mountains_attrition_mult = {
+	decimals = 0
+	color = bad
+	percent = yes
+}
+
+shadowlands_mountains_cancel_negative_supply = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+}
+
+shadowlands_mountains_advantage = {
+	prefix = MOD_ADVANTAGE_PREFIX
+	decimals = 0
+}
+
+shadowlands_mountains_min_combat_roll = {
+	decimals = 0
+}
+
+shadowlands_mountains_max_combat_roll = {
+	decimals = 0
+}
+
+shadowlands_mountains_development_growth = {
+	prefix = MOD_DEVELOPMENT_PREFIX
+	decimals = 1
+}
+
+shadowlands_mountains_development_growth_factor = {
+	prefix = MOD_DEVELOPMENT_PREFIX
+	decimals = 0
+	percent = yes
+}
+
+shadowlands_mountains_construction_gold_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_mountains_holding_construction_gold_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_mountains_construction_piety_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PIETY_PREFIX
+	percent = yes
+}
+
+shadowlands_mountains_holding_construction_piety_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PIETY_PREFIX
+	percent = yes
+}
+
+shadowlands_mountains_construction_prestige_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PRESTIGE_PREFIX
+	percent = yes
+}
+
+shadowlands_mountains_holding_construction_prestige_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PRESTIGE_PREFIX
+	percent = yes
+}
+
+shadowlands_mountains_supply_limit = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+}
+
+shadowlands_mountains_supply_limit_mult = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+	percent = yes
+}
+
+shadowlands_mountains_tax_mult = {
+	decimals = 0
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_mountains_levy_size = {
+	decimals = 0
+	prefix = MOD_SOLDIER_PREFIX
+	percent = yes
+}
+
+shadowlands_forest_attrition_mult = {
+	decimals = 0
+	color = bad
+	percent = yes
+}
+
+shadowlands_forest_cancel_negative_supply = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+}
+
+shadowlands_forest_advantage = {
+	prefix = MOD_ADVANTAGE_PREFIX
+	decimals = 0
+}
+
+shadowlands_forest_min_combat_roll = {
+	decimals = 0
+}
+
+shadowlands_forest_max_combat_roll = {
+	decimals = 0
+}
+
+shadowlands_forest_development_growth = {
+	prefix = MOD_DEVELOPMENT_PREFIX
+	decimals = 1
+}
+
+shadowlands_forest_development_growth_factor = {
+	prefix = MOD_DEVELOPMENT_PREFIX
+	decimals = 0
+	percent = yes
+}
+
+shadowlands_forest_construction_gold_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_forest_holding_construction_gold_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_forest_construction_piety_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PIETY_PREFIX
+	percent = yes
+}
+
+shadowlands_forest_holding_construction_piety_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PIETY_PREFIX
+	percent = yes
+}
+
+shadowlands_forest_construction_prestige_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PRESTIGE_PREFIX
+	percent = yes
+}
+
+shadowlands_forest_holding_construction_prestige_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PRESTIGE_PREFIX
+	percent = yes
+}
+
+shadowlands_forest_supply_limit = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+}
+
+shadowlands_forest_supply_limit_mult = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+	percent = yes
+}
+
+shadowlands_forest_tax_mult = {
+	decimals = 0
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_forest_levy_size = {
+	decimals = 0
+	prefix = MOD_SOLDIER_PREFIX
+	percent = yes
+}
+
+shadowlands_wetlands_attrition_mult = {
+	decimals = 0
+	color = bad
+	percent = yes
+}
+
+shadowlands_wetlands_cancel_negative_supply = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+}
+
+shadowlands_wetlands_advantage = {
+	prefix = MOD_ADVANTAGE_PREFIX
+	decimals = 0
+}
+
+shadowlands_wetlands_min_combat_roll = {
+	decimals = 0
+}
+
+shadowlands_wetlands_max_combat_roll = {
+	decimals = 0
+}
+
+shadowlands_wetlands_development_growth = {
+	prefix = MOD_DEVELOPMENT_PREFIX
+	decimals = 1
+}
+
+shadowlands_wetlands_development_growth_factor = {
+	prefix = MOD_DEVELOPMENT_PREFIX
+	decimals = 0
+	percent = yes
+}
+
+shadowlands_wetlands_construction_gold_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_wetlands_holding_construction_gold_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_wetlands_construction_piety_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PIETY_PREFIX
+	percent = yes
+}
+
+shadowlands_wetlands_holding_construction_piety_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PIETY_PREFIX
+	percent = yes
+}
+
+shadowlands_wetlands_construction_prestige_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PRESTIGE_PREFIX
+	percent = yes
+}
+
+shadowlands_wetlands_holding_construction_prestige_cost = {
+	decimals = 0
+	color = bad
+	prefix = MOD_PRESTIGE_PREFIX
+	percent = yes
+}
+
+shadowlands_wetlands_supply_limit = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+}
+
+shadowlands_wetlands_supply_limit_mult = {
+	prefix = MOD_SUPPLY_PREFIX
+	decimals = 0
+	percent = yes
+}
+
+shadowlands_wetlands_tax_mult = {
+	decimals = 0
+	prefix = MOD_GOLD_PREFIX
+	percent = yes
+}
+
+shadowlands_wetlands_levy_size = {
+	decimals = 0
+	prefix = MOD_SOLDIER_PREFIX
+	percent = yes
+}
+
+shadowlands_plains_provisions_use_mult = {
+	decimals = 0
+	prefix = MOD_PROVISIONS_PREFIX
+	color = bad
+	percent = yes
+}
+
+shadowlands_hills_provisions_use_mult = {
+	decimals = 0
+	prefix = MOD_PROVISIONS_PREFIX
+	color = bad
+	percent = yes
+}
+
+shadowlands_mountains_provisions_use_mult = {
+	decimals = 0
+	prefix = MOD_PROVISIONS_PREFIX
+	color = bad
+	percent = yes
+}
+
+shadowlands_forest_provisions_use_mult = {
+	decimals = 0
+	prefix = MOD_PROVISIONS_PREFIX
+	color = bad
+	percent = yes
+}
+
+shadowlands_wetlands_provisions_use_mult = {
+	decimals = 0
+	prefix = MOD_PROVISIONS_PREFIX
+	color = bad
+	percent = yes
+}

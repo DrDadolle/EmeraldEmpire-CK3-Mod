@@ -10997,6 +10997,8 @@ logistician = {
 		parameter = forest_trait_bonuses
 		forest_attrition_mult = -0.25
 		taiga_attrition_mult = -0.25
+		#L5R Added
+		shadowlands_forest_attrition_mult = -0.25
 	}
 	
 	culture_modifier = {
@@ -11008,6 +11010,8 @@ logistician = {
 		parameter = mountain_trait_bonuses
 		mountains_attrition_mult= -0.35
 		desert_mountains_attrition_mult = -0.35
+		#L5R Added
+		shadowlands_mountains_attrition_mult = -0.25
 	}
 	
 	culture_modifier = {
@@ -11043,11 +11047,15 @@ military_engineer = {
 		parameter = mountain_trait_bonuses
 		mountains_attrition_mult= -0.25
 		desert_mountains_attrition_mult = -0.25
+		#L5R Added
+		shadowlands_mountains_attrition_mult = -0.25
 	}
 	
 	culture_modifier = {
 		parameter = hill_trait_bonuses
 		hills_attrition_mult = -0.25
+		#L5R Added
+		shadowlands_hills_attrition_mult = -0.25
 	}
 
 	desc = {
@@ -11139,6 +11147,8 @@ unyielding_defender = {
 		parameter = mountain_trait_bonuses
 		mountains_advantage = 2
 		desert_mountains_advantage = 2
+		#L5R Added
+		shadowlands_mountains_advantage = 2
 	}
 	
 	culture_modifier = {
@@ -11407,6 +11417,9 @@ open_terrain_expert = {
 	plains_advantage = 4
 	steppe_advantage = 4
 	
+	#L5R Added
+	shadowlands_plains_advantage = 4
+	
 	culture_modifier = {
 		parameter = winter_trait_bonuses
 		winter_movement_speed = 0.2
@@ -11424,6 +11437,7 @@ open_terrain_expert = {
 		farmlands
 		plains
 		steppe
+		shadowlands_plains
 	}
 
 	desc = {
@@ -11446,6 +11460,9 @@ rough_terrain_expert = {
 	hills_advantage = 4
 	mountains_advantage = 4
 	wetlands_advantage = 4
+	#L5R Added
+	shadowlands_hills_advantage = 4
+	shadowlands_mountains_advantage = 4
 	
 	culture_modifier = {
 		parameter = winter_trait_bonuses
@@ -11456,6 +11473,8 @@ rough_terrain_expert = {
 		parameter = forest_trait_bonuses
 		forest_advantage = 2
 		taiga_advantage = 2
+		#L5R Added
+		shadowlands_forest_advantage = 2
 	}
 	
 	culture_modifier = {
@@ -11481,6 +11500,10 @@ rough_terrain_expert = {
 		hills
 		mountains
 		wetlands
+		shadowlands_hills
+		shadowlands_mountains
+		shadowlands_wetlands
+		
 	}
 
 	desc = {
@@ -11502,12 +11525,15 @@ forest_fighter = {
 	
 	forest_advantage = 5
 	taiga_advantage = 5
+	#L5R Added
+	shadowlands_forest_advantage = 5
 	
 	ruler_designer_cost = 25
 
 	trait_exclusive_if_realm_contains = {
 		forest
 		taiga
+		shadowlands_forest
 	}
 
 	desc = {
@@ -11576,6 +11602,8 @@ organizer = {
 		parameter = mountain_trait_bonuses
 		mountains_attrition_mult = -0.15
 		desert_mountains_attrition_mult = -0.15
+		#L5R Added
+		shadowlands_mountains_attrition_mult = -0.15
 	}
 	
 	culture_modifier = {
