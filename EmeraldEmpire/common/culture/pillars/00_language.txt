@@ -162,6 +162,26 @@ language_ujik = {
 	color = rgb { 75 0 130 }
 }
 
+#######################
+### Shadowlands
+#######################
+language_shadowlands_rokugani = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_shadowlands_rokugani
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_shadowlands_rokugani }
+			multiply = 10
+		}
+	}
+	color = rgb { 10 10 10 }
+}
+
 
 #######################
 ### Non-Human

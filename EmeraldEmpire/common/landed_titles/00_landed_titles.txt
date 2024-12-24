@@ -1198,8 +1198,7 @@ e_rokugan = {
 		# Hiruma title is Landless title.
 		d_hiruma = {
 			color = { 18 151 207 }
-			# L5R TODO : adding workaround to avoid pool_guest errors
-            capital = c_kyoukan_province
+            capital = c_shiro_hiruma
 			# To not lost it
 			always_follows_primary_heir = yes
 			# Nothing can de-jure drift into it
@@ -2194,11 +2193,156 @@ e_rokugan = {
     }
  }
  
+
+e_shadowlands = {
+    color = { 2 2 2 }
+    capital = c_shiro_hiruma
+
+    k_earthquake_bay = {
+        color = { 25 5 5 }
+        capital = c_shiro_hiruma
+
+        d_earthquake_bay = {
+            color = { 25 5 5 }
+            capital = c_shinsei_last_hope_shadowlands
+            
+            c_shinsei_last_hope_shadowlands = {
+                color = { 25 5 5 }
+
+                b_shinsei_last_hope_shadowlands = {
+                    province = 488
+                    
+                }
+            }
+
+            c_shadowlands_coast_1 = {
+                color = { 35 15 15 }
+
+                b_shadowlands_coast_1 = {
+                    province = 489
+                }
+                b_shadowlands_coast_2 = {
+                    province = 490   
+                }
+                b_shadowlands_coast_3 = {
+                    province = 491 
+                }
+            }
+            c_shadowlands_coast_2 = {
+                color = { 28 18 18 }
+
+                b_shadowlands_coast_4 = {
+                    province = 492
+                }
+                b_shadowlands_coast_5 = {
+                    province = 493   
+                }
+                b_shadowlands_coast_6 = {
+                    province = 494 
+                }
+            }
+        }
+        d_hiruma_shadowlands = {
+            color = { 22 3 3 }
+            capital = c_shiro_hiruma
+
+            c_shiro_hiruma = {
+                color = { 22 3 3 }
+
+                b_shiro_hiruma = {
+                    province = 498
+                }
+                b_shadowlands_daylight_coast_5 = {
+                    province = 499
+                }
+                b_shadowlands_daylight_coast_6 = {
+                    province = 500
+                }
+            }
+            
+            c_shadowlands_daylight_coast_1 = {
+                color = { 29 11 11 }
+
+                b_shadowlands_daylight_coast_1 = {
+                    province = 495
+                }
+                b_shadowlands_daylight_coast_2 = {
+                    province = 496
+                }
+                b_shadowlands_daylight_coast_3 = {
+                    province = 497
+                }
+            }
+
+            c_shadowlands_daylight_coast_3 = {
+                color = { 26 7 7 }
+
+                b_shadowlands_daylight_coast_7 = {
+                    province = 501
+                }
+                b_shadowlands_daylight_coast_8 = {
+                    province = 502
+                }
+            }
+        }
+        d_vs_hida = {
+            color = { 25 5 5 }
+            capital = c_shadowlands_daylight_coast_4
+            
+            c_shadowlands_daylight_coast_4 = {
+                color = { 25 5 5 }
+
+                b_shadowlands_daylight_coast_9 = {
+                    province = 503
+                }
+                b_shadowlands_daylight_coast_10 = {
+                    province = 504
+                }
+            }
+            c_shadowlands_daylight_coast_5 = {
+                color = { 25 20 20 }
+
+                b_shadowlands_daylight_coast_11 = {
+                    province = 505
+                }
+                b_shadowlands_daylight_coast_12 = {
+                    province = 506
+                }
+            }
+            c_shadowlands_daylight_coast_6 = {
+                color = { 15 5 5 }
+
+                b_shadowlands_daylight_coast_13 = {
+                    province = 507
+                }
+                b_shadowlands_daylight_coast_14 = {
+                    province = 508
+                }
+                b_shadowlands_daylight_coast_15 = {
+                    province = 509
+                }
+            }
+            c_shadowlands_daylight_coast_7 = {
+                color = { 30 10 10 }
+
+                b_shadowlands_daylight_coast_16 = {
+                    province = 510
+                }
+                b_shadowlands_daylight_coast_17 = {
+                    province = 511
+                }
+            }
+        }
+    }
+ }
+
+
+
  #TODO title of master of elements Isawa as landless duchy titles ???
 
 
  # Emperor Head of faith title
-d_rokugani_faith = {
+ d_rokugani_faith = {
 	color = { 40 160 40 }
 	definite_form = yes
 	ruler_uses_title_name = no

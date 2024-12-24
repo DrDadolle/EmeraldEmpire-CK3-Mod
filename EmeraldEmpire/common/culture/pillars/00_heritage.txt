@@ -290,6 +290,18 @@ heritage_ujik = {
 	audio_parameter = european
 }
 
+#######################
+### Shadowlands
+#######################
+heritage_spider = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_spider
+		}
+	}
+	audio_parameter = european
+}
 
 #######################
 ### Non-Human Heritages

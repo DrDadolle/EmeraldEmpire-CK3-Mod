@@ -1,0 +1,137 @@
+##d_earthquake_bay ###################################
+###c_shinsei_last_hope_shadowlands
+488 = {		#b_shinsei_last_hope_shadowlands
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+###c_shadowlands_coast_1
+489 = {		#b_shadowlands_coast_1
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+490 = {		#b_shadowlands_coast_2
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+491 = {		#b_shadowlands_coast_3
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_shadowlands_coast_2
+492 = {		#b_shadowlands_coast_4
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+493 = {		#b_shadowlands_coast_5
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+494 = {		#b_shadowlands_coast_6
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+##d_hiruma_shadowlands ###################################
+###c_shadowlands_daylight_coast_1
+495 = {		#b_shadowlands_daylight_coast_1
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+496 = {		#b_shadowlands_daylight_coast_2
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+497 = {		#b_shadowlands_daylight_coast_3
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_shiro_hiruma
+498 = {		#b_shiro_hiruma
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = castle_holding
+}
+499 = {		#b_shadowlands_daylight_coast_5
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = church_holding
+}
+500 = {		#b_shadowlands_daylight_coast_6
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_shadowlands_daylight_coast_3
+501 = {		#b_shadowlands_daylight_coast_7
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+502 = {		#b_shadowlands_daylight_coast_8
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+##d_vs_hida ###################################
+###c_shadowlands_daylight_coast_4
+503 = {		#b_shadowlands_daylight_coast_9
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+504 = {		#b_shadowlands_daylight_coast_10
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_shadowlands_daylight_coast_5
+505 = {		#b_shadowlands_daylight_coast_11
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+506 = {		#b_shadowlands_daylight_coast_12
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_shadowlands_daylight_coast_6
+507 = {		#b_shadowlands_daylight_coast_13
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+508 = {		#b_shadowlands_daylight_coast_14
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+509 = {		#b_shadowlands_daylight_coast_15
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_shadowlands_daylight_coast_7
+510 = {		#b_shadowlands_daylight_coast_16
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+511 = {		#b_shadowlands_daylight_coast_17
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+#castle_holding
+#church_holding
+#city_holding
+#none

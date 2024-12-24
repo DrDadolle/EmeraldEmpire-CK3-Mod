@@ -1415,3 +1415,90 @@
 486 = { #b_west_steppes_11
 	winter_severity_bias = @warm_winter
 }
+##### e_shadowlands
+#### k_earthquake_bay
+### d_earthquake_bay
+## c_shinsei_last_hope_shadowlands
+488 = { #b_shinsei_last_hope_shadowlands
+	winter_severity_bias = @warm_winter
+}
+## c_shadowlands_coast_1
+489 = { #b_shadowlands_coast_1
+	winter_severity_bias = @warm_winter
+}
+490 = { #b_shadowlands_coast_2
+	winter_severity_bias = @no_winter
+}
+491 = { #b_shadowlands_coast_3
+	winter_severity_bias = @warm_winter
+}
+## c_shadowlands_coast_2
+492 = { #b_shadowlands_coast_4
+	winter_severity_bias = @no_winter
+}
+493 = { #b_shadowlands_coast_5
+	winter_severity_bias = @warm_winter
+}
+494 = { #b_shadowlands_coast_6
+	winter_severity_bias = @no_winter
+}
+### d_hiruma_shadowlands
+## c_shadowlands_daylight_coast_1
+495 = { #b_shadowlands_daylight_coast_1
+	winter_severity_bias = @warm_winter
+}
+496 = { #b_shadowlands_daylight_coast_2
+	winter_severity_bias = @warm_winter
+}
+497 = { #b_shadowlands_daylight_coast_3
+	winter_severity_bias = @warm_winter
+}
+## c_shiro_hiruma
+498 = { #b_shiro_hiruma
+	winter_severity_bias = @warm_winter
+}
+499 = { #b_shadowlands_daylight_coast_5
+	winter_severity_bias = @no_winter
+}
+500 = { #b_shadowlands_daylight_coast_6
+	winter_severity_bias = @warm_winter
+}
+## c_shadowlands_daylight_coast_3
+501 = { #b_shadowlands_daylight_coast_7
+	winter_severity_bias = @no_winter
+}
+502 = { #b_shadowlands_daylight_coast_8
+	winter_severity_bias = @no_winter
+}
+### d_vs_hida
+## c_shadowlands_daylight_coast_4
+503 = { #b_shadowlands_daylight_coast_9
+	winter_severity_bias = @warm_winter
+}
+504 = { #b_shadowlands_daylight_coast_10
+	winter_severity_bias = @no_winter
+}
+## c_shadowlands_daylight_coast_5
+505 = { #b_shadowlands_daylight_coast_11
+	winter_severity_bias = @warm_winter
+}
+506 = { #b_shadowlands_daylight_coast_12
+	winter_severity_bias = @warm_winter
+}
+## c_shadowlands_daylight_coast_6
+507 = { #b_shadowlands_daylight_coast_13
+	winter_severity_bias = @warm_winter
+}
+508 = { #b_shadowlands_daylight_coast_14
+	winter_severity_bias = @warm_winter
+}
+509 = { #b_shadowlands_daylight_coast_15
+	winter_severity_bias = @warm_winter
+}
+## c_shadowlands_daylight_coast_7
+510 = { #b_shadowlands_daylight_coast_16
+	winter_severity_bias = @warm_winter
+}
+511 = { #b_shadowlands_daylight_coast_17
+	winter_severity_bias = @warm_winter
+}

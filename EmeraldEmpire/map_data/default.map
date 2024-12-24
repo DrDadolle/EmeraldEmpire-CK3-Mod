@@ -75,8 +75,10 @@ river_provinces = RANGE { 396 399 }
 river_provinces = RANGE { 424 428 }
 
 
-#Shadowlands river 
-#river_provinces = LIST { 461 }
+#Shadowlands river With Crab
+river_provinces = RANGE { 512 516 }
+#Shadowlands coastal river
+river_provinces = RANGE { 517 521 }
 
 ########
 # LAKES
