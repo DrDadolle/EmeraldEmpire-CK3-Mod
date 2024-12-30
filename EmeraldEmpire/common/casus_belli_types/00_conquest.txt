@@ -8,6 +8,7 @@
 
 	allowed_for_character = {
 		can_use_conquest_cbs_trigger = yes
+		#L5R Added
 		#Prevent imperial families to do conquests
 		is_imperial_family = no
 		NOT = {
@@ -19,11 +20,16 @@
 		#L5R Modified
 		# Enable interclan conquests !
 		OR = {
-			## Attacking out of Rokugan
-			scope:attacker = {
-				ALL_FALSE = {
-					top_liege = scope:defender.top_liege
-					liege = scope:defender
+			AND = {
+				## Attacking out of Rokugan
+				scope:attacker = {
+					ALL_FALSE = {
+						top_liege = scope:defender.top_liege
+						liege = scope:defender
+					}
+				}
+				scope:attacker = {
+					is_under_e_rokugan_rule = no
 				}
 			}
 			## Attacking In Rokugan different heritages
@@ -33,6 +39,12 @@
 					scope:attacker = {
 						culture = { has_same_culture_heritage = scope:defender.culture}
 					}
+				}
+				scope:attacker = {
+					is_under_e_rokugan_rule = yes
+				}
+				scope:defender = {
+					is_under_e_rokugan_rule = yes
 				}
 			}
 		}
@@ -159,7 +171,7 @@
 				limit = {
 					AND = { 
 						scope:attacker = { is_under_e_rokugan_rule = yes }
-						scope:attacker = { is_under_e_rokugan_rule = yes }
+						scope:defender = { is_under_e_rokugan_rule = yes }
 					}
 				}
 				add = {
@@ -394,6 +406,9 @@ duchy_conquest_cb = {
 
 	allowed_for_character = {
 		can_use_conquest_cbs_trigger = yes
+		#L5R Added
+		#Prevent imperial families to do conquests
+		is_imperial_family = no
 		NOT = {
 			government_has_flag = government_is_landless_adventurer
 		}
@@ -440,21 +455,34 @@ duchy_conquest_cb = {
 	}
 
 	allowed_against_character = {
-				#L5R Modified
+		#L5R Modified
 		# Enable interclan conquests !
 		OR = {
-			## Attacking out of Rokugan
-			scope:attacker = {
-				ALL_FALSE = {
-					top_liege = scope:defender.top_liege
-					liege = scope:defender
+			AND = {
+				## Attacking out of Rokugan
+				scope:attacker = {
+					ALL_FALSE = {
+						top_liege = scope:defender.top_liege
+						liege = scope:defender
+					}
+				}
+				scope:attacker = {
+					is_under_e_rokugan_rule = no
 				}
 			}
 			## Attacking In Rokugan different heritages
 			# Because noone like other heritages !
-			NOT = {
+			AND = {
+				NOT = {
+					scope:attacker = {
+						culture = { has_same_culture_heritage = scope:defender.culture}
+					}
+				}
 				scope:attacker = {
-					culture = { has_same_culture_heritage = scope:defender.culture}
+					is_under_e_rokugan_rule = yes
+				}
+				scope:defender = {
+					is_under_e_rokugan_rule = yes
 				}
 			}
 		}
@@ -593,7 +621,7 @@ duchy_conquest_cb = {
 				limit = {
 					AND = { 
 						scope:attacker = { is_under_e_rokugan_rule = yes }
-						scope:attacker = { is_under_e_rokugan_rule = yes }
+						scope:defender = { is_under_e_rokugan_rule = yes }
 					}
 				}
 				add = {

@@ -27,16 +27,28 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 
 ## CK3 1.13.* patch
+- New Shadowlands stuff
+	- add placeholder guys & title history
+		- one with conqueror trait for fun
+	- add new religion / culture (i.e dark moto)
+	- move where fu leng pit castle is (to visible area)
+	- change color of titles to dark
+	- add loc
+	- add coa
+	- fix starting culture != placeholder guys (ronin lands)
+	- add holy site for jigoku faiths
+	- add lost library & festering pit special building (last one => check how done for rome)
 - remove bunch of errors
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
+- Prevent unicorn from spamming conquest of tribal stuff ??? see conquest_cb ai mult
+- see loc "castellanny of fu leng stuff" when conquered by rokugani guy
 - Add localization & era innovation to spider heritage
 - Add special regional tradition for shadowlands
 	- buff developtments, hunt chances, etc... (like mountain homes i.e)
 	- character_view_bg in gfx, need to add some fallback images
 	- update hunt.txt and other stuff
 	- check in various events where terrain type is important
-- Add thumbnail image for the mod !
 - more namelists & dynasty list
 - ck3tiger fixes to do !
 - "son of heaven" even if female ruler loc to fix
@@ -44,6 +56,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Shiro Kaikoga => Wrong religion & culture 
 - Hunt is buggy => You SHOULD be able to hunt on empty properties
 - No valid texture found for illustration 'character_view_bg' for shadowlands guys feudal
+- Add thumbnail image for the mod !
 
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)

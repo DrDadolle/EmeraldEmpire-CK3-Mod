@@ -1502,3 +1502,152 @@
 511 = { #b_shadowlands_daylight_coast_17
 	winter_severity_bias = @warm_winter
 }
+#### k_festering_pit
+### d_dark_coast
+## c_shadowlands_festering_pit_coast_1
+522 = { #b_shadowlands_festering_pit_coast_1
+	winter_severity_bias = @no_winter
+}
+523 = { #b_shadowlands_festering_pit_coast_2
+	winter_severity_bias = @no_winter
+}
+## c_shadowlands_yukiko_mountains_1
+524 = { #b_shadowlands_yukiko_mountains_1
+	winter_severity_bias = @warm_winter
+}
+525 = { #b_shadowlands_yukiko_mountains_2 
+	winter_severity_bias = @warm_winter
+}
+## c_shadowlands_yukiko_swamps_1
+526 = { #b_shadowlands_yukiko_swamps_1
+	winter_severity_bias = @no_winter
+}
+527 = { #b_shadowlands_yukiko_swamps_2 
+	winter_severity_bias = @no_winter
+}
+## c_shadowlands_yukiko_mountains_2
+528 = { #b_shadowlands_yukiko_mountains_3
+	winter_severity_bias = @warm_winter
+}
+529 = { #b_shadowlands_yukiko_mountains_4 
+	winter_severity_bias = @warm_winter
+}
+### d_yukiko_court
+## c_shadowlands_yukiko_court_1
+530 = { #b_shadowlands_yukiko_court_1
+	winter_severity_bias = @no_winter
+}
+531 = { #b_shadowlands_yukiko_court_2
+	winter_severity_bias = @no_winter
+}
+532 = { #b_shadowlands_yukiko_court_3
+	winter_severity_bias = @warm_winter
+}
+533 = { #b_shadowlands_yukiko_court_4
+	winter_severity_bias = @no_winter
+}
+## c_shadowlands_yukiko_court_2
+534 = { #b_shadowlands_yukiko_court_5
+	winter_severity_bias = @warm_winter
+}
+535 = { #b_shadowlands_yukiko_court_6
+	winter_severity_bias = @warm_winter
+}
+536 = { #b_shadowlands_yukiko_court_7
+	winter_severity_bias = @warm_winter
+}
+## c_shadowlands_yukiko_court_3
+540 = { #b_shadowlands_yukiko_court_11
+	winter_severity_bias = @warm_winter
+}
+541 = { #b_shadowlands_yukiko_court_12
+	winter_severity_bias = @warm_winter
+}
+### d_false_lantern
+## c_false_lantern_grove_1
+537 = { #b_shadowlands_yukiko_court_8
+	winter_severity_bias = @warm_winter
+}
+## c_false_lantern_grove_2
+538 = { #b_shadowlands_yukiko_court_9
+	winter_severity_bias = @no_winter
+}
+539 = { #b_shadowlands_yukiko_court_10
+	winter_severity_bias = @no_winter
+}
+## c_false_lantern_grove_3
+542 = { #b_shadowlands_yukiko_court_13
+	winter_severity_bias = @no_winter
+}
+### d_lost_library
+## c_shadowlands_lost_library_1
+543 = { #b_shadowlands_lost_library_1
+	winter_severity_bias = @warm_winter
+}
+## c_shadowlands_lost_library_2
+544 = { #b_shadowlands_lost_library_2
+	winter_severity_bias = @warm_winter
+}
+545 = { #b_shadowlands_lost_library_3
+	winter_severity_bias = @no_winter
+}
+## c_shadowlands_lost_library_3
+546 = { #b_shadowlands_lost_library_4
+	winter_severity_bias = @warm_winter
+}
+547 = { #b_shadowlands_lost_library_5
+	winter_severity_bias = @warm_winter
+}
+548 = { #b_shadowlands_lost_library_6
+	winter_severity_bias = @no_winter
+}
+## c_shadowlands_lost_library_4
+549 = { #b_shadowlands_lost_library_7
+	winter_severity_bias = @no_winter
+}
+550 = { #b_shadowlands_lost_library_8
+	winter_severity_bias = @no_winter
+}
+### d_the_pit
+## c_shadowlands_festering_pit_5
+551 = { #b_shadowlands_festering_pit_coast_the_one
+	winter_severity_bias = @no_winter
+}
+552 = { #b_shadowlands_festering_pit_coast_9
+	winter_severity_bias = @no_winter
+}
+553 = { #b_shadowlands_festering_pit_coast_10
+	winter_severity_bias = @no_winter
+}
+554 = { #b_shadowlands_festering_pit_coast_11
+	winter_severity_bias = @no_winter
+}
+## c_shadowlands_festering_pit_6
+555 = { #b_shadowlands_festering_pit_coast_12
+	winter_severity_bias = @no_winter
+}
+556 = { #b_shadowlands_festering_pit_coast_13
+	winter_severity_bias = @no_winter
+}
+557 = { #b_shadowlands_festering_pit_coast_14
+	winter_severity_bias = @no_winter
+}
+558 = { #b_shadowlands_festering_pit_coast_15
+	winter_severity_bias = @no_winter
+}
+## c_shadowlands_festering_pit_7
+559 = { #b_shadowlands_festering_pit_coast_16
+	winter_severity_bias = @no_winter
+}
+560 = { #b_shadowlands_festering_pit_coast_17
+	winter_severity_bias = @no_winter
+}
+## c_shadowlands_festering_pit_8
+561 = { #b_shadowlands_festering_pit_coast_18
+	winter_severity_bias = @no_winter
+}
+562 = { #b_shadowlands_festering_pit_coast_19
+	winter_severity_bias = @no_winter
+}
+
+

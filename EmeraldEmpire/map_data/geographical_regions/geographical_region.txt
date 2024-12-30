@@ -440,9 +440,15 @@ rokugan_spice_and_silk_isles = {
 #####################################						
 #####################################
 
-world_shadowlands_dark_coast = {
+world_shadowlands_earthquake_bay = {
 	duchies = {
 		d_vs_hida d_hiruma_shadowlands d_earthquake_bay
+	}
+}
+
+world_shadowlands_festering_pit = {
+	duchies = {
+		d_dark_coast d_yukiko_court d_false_lantern d_lost_library d_the_pit
 	}
 }
 
@@ -491,7 +497,7 @@ graphical_world_shadowlands = {
 	graphical = yes
 	color = { 5 5 5 }
 	regions = {
-		world_shadowlands_dark_coast
+		world_shadowlands_earthquake_bay world_shadowlands_festering_pit
 	}
 
 }

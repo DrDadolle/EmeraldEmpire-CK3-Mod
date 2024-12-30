@@ -80,6 +80,9 @@ river_provinces = RANGE { 512 516 }
 #Shadowlands coastal river
 river_provinces = RANGE { 517 521 }
 
+#Shadowlands Festering pit south
+river_provinces = RANGE { 563 566 }
+
 ########
 # LAKES
 ########

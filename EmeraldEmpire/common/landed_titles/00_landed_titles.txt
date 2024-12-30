@@ -2196,7 +2196,7 @@ e_rokugan = {
 
 e_shadowlands = {
     color = { 2 2 2 }
-    capital = c_shiro_hiruma
+    capital = c_shadowlands_festering_pit_5
 
     k_earthquake_bay = {
         color = { 25 5 5 }
@@ -2330,6 +2330,240 @@ e_shadowlands = {
                 }
                 b_shadowlands_daylight_coast_17 = {
                     province = 511
+                }
+            }
+        }
+    }
+
+    k_festering_pit = {
+        color = { 55 45 45 }
+        capital = c_shadowlands_festering_pit_5
+
+        d_dark_coast = {
+            color = { 55 45 45 }
+            capital = c_shadowlands_festering_pit_coast_1
+            
+            c_shadowlands_festering_pit_coast_1 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_festering_pit_coast_1 = {
+                    province = 522
+                }
+                b_shadowlands_festering_pit_coast_2 = {
+                    province = 523
+                }
+            }
+
+            c_shadowlands_yukiko_mountains_1 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_yukiko_mountains_1 = {
+                    province = 524
+                }
+                b_shadowlands_yukiko_mountains_2 = {
+                    province = 525
+                }
+            }
+
+            c_shadowlands_yukiko_swamps_1 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_yukiko_swamps_1 = {
+                    province = 526
+                }
+                b_shadowlands_yukiko_swamps_2 = {
+                    province = 527
+                }
+            }
+
+            c_shadowlands_yukiko_mountains_2 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_yukiko_mountains_3 = {
+                    province = 528
+                }
+                b_shadowlands_yukiko_mountains_4 = {
+                    province = 529
+                }
+            }
+        }
+
+        d_yukiko_court = {
+            color = { 85 85 45 }
+            capital = c_shadowlands_yukiko_court_1
+            
+            c_shadowlands_yukiko_court_1 = {
+                color =  { 85 85 45 }
+
+                b_shadowlands_yukiko_court_1 = {
+                    province = 530
+                }
+                b_shadowlands_yukiko_court_2 = {
+                    province = 531
+                }
+                b_shadowlands_yukiko_court_3 = {
+                    province = 532
+                }
+                b_shadowlands_yukiko_court_4 = {
+                    province = 533
+                }
+            }
+
+            c_shadowlands_yukiko_court_2 = {
+                color =  { 85 85 45 }
+
+                b_shadowlands_yukiko_court_5 = {
+                    province = 534
+                }
+                b_shadowlands_yukiko_court_6 = {
+                    province = 535
+                }
+                b_shadowlands_yukiko_court_7 = {
+                    province = 536
+                }
+            }
+
+            c_shadowlands_yukiko_court_3 = {
+                color =  { 85 85 45 }
+
+                b_shadowlands_yukiko_court_11 = {
+                    province = 540
+                }
+                b_shadowlands_yukiko_court_12 = {
+                    province = 541
+                }
+            }
+        }
+        d_false_lantern = {
+            color = { 85 85 45 }
+            capital = c_false_lantern_grove_2
+            
+            c_false_lantern_grove_1 = {
+                color =  { 85 85 45 }
+
+                b_shadowlands_yukiko_court_8 = {
+                    province = 537
+                }
+            }
+            c_false_lantern_grove_2 = {
+                color =  { 85 85 45 }
+
+                b_shadowlands_yukiko_court_9 = {
+                    province = 538
+                }
+                b_shadowlands_yukiko_court_10 = {
+                    province = 539
+                }
+            }
+            c_false_lantern_grove_3 = {
+                color =  { 85 85 45 }
+
+                b_shadowlands_yukiko_court_13 = {
+                    province = 542
+                }
+            }
+        }
+
+
+        d_lost_library = {
+            color = { 55 45 45 }
+            capital = c_shadowlands_lost_library_3
+            
+            c_shadowlands_lost_library_1 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_lost_library_1 = {
+                    province = 543
+                }
+            }
+            c_shadowlands_lost_library_2 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_lost_library_2 = {
+                    province = 544
+                }
+                b_shadowlands_lost_library_3 = {
+                    province = 545
+                }
+            }
+            c_shadowlands_lost_library_3 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_lost_library_4 = {
+                    province = 546
+                }
+                b_shadowlands_lost_library_5 = {
+                    province = 547
+                }
+                b_shadowlands_lost_library_6 = {
+                    province = 548
+                }
+            }
+            c_shadowlands_lost_library_4 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_lost_library_7 = {
+                    province = 549
+                }
+                b_shadowlands_lost_library_8 = {
+                    province = 550
+                }
+            }
+        }
+        d_the_pit = {
+            color = { 55 45 45 }
+            capital = c_shadowlands_festering_pit_5
+            
+            c_shadowlands_festering_pit_5 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_festering_pit_coast_the_one = {
+                    province = 551
+                }
+                b_shadowlands_festering_pit_coast_9 = {
+                    province = 552
+                }
+                b_shadowlands_festering_pit_coast_10 = {
+                    province = 553
+                }
+                b_shadowlands_festering_pit_coast_11 = {
+                    province = 554
+                }
+            }
+            c_shadowlands_festering_pit_6 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_festering_pit_coast_12 = {
+                    province = 555
+                }
+                b_shadowlands_festering_pit_coast_13 = {
+                    province = 556
+                }
+                b_shadowlands_festering_pit_coast_14 = {
+                    province = 557
+                }
+                b_shadowlands_festering_pit_coast_15 = {
+                    province = 558
+                }
+            }
+            c_shadowlands_festering_pit_7 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_festering_pit_coast_16 = {
+                    province = 559
+                }
+                b_shadowlands_festering_pit_coast_17 = {
+                    province = 560
+                }
+            }
+            c_shadowlands_festering_pit_8 = {
+                color = {  25 25 85 }
+
+                b_shadowlands_festering_pit_coast_18 = {
+                    province = 561
+                }
+                b_shadowlands_festering_pit_coast_19 = {
+                    province = 562
                 }
             }
         }
