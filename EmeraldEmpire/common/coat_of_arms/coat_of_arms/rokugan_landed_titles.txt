@@ -4744,3 +4744,522 @@ b_shadowlands_daylight_coast_17 = {
 		texture = "te_shadowlands.dds"
 	}
 }
+### k_festering_pit
+k_festering_pit = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+d_dark_coast = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_festering_pit_coast_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_yukiko_mountains_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_mountains_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_mountains_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_yukiko_swamps_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_swamps_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_yukiko_mountains_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_yukiko_mountains_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_mountains_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_mountains_4 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+d_yukiko_court = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_yukiko_court_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_4 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_yukiko_court_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_5 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_6 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_7 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_yukiko_court_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_11 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_12 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+d_false_lantern = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_false_lantern_grove_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_8 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_false_lantern_grove_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_9 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_10 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_false_lantern_grove_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_yukiko_court_13 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+d_lost_library = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_lost_library_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_lost_library_1 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_lost_library_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_lost_library_2 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_lost_library_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_lost_library_3 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_lost_library_4 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_lost_library_5 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_lost_library_6 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_lost_library_4 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_lost_library_7 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_lost_library_8 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+d_the_pit = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_festering_pit_5 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_the_one = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_9 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_10 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_11 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_festering_pit_6 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_12 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_13 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_14 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_15 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+c_shadowlands_festering_pit_7 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_16 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_17 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+c_shadowlands_festering_pit_8 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_18 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}
+
+b_shadowlands_festering_pit_coast_19 = { 
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_shadowlands.dds"
+	}
+}

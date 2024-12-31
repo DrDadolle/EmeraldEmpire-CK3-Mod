@@ -330,9 +330,8 @@ temple_lost_moto = {
 #################
 # Shadowlands placeholder faith
 #################
-
+# A place of unholiness, where a whole clan has been corrupted
 snake_castle = {
-
 	county = c_chuda_province
 	barony = b_shiro_chuda_ruins
 
@@ -343,6 +342,7 @@ snake_castle = {
 	}
 }
 
+# The ruins of the hiruma castle, where the shadowlands won the war
 fallen_hiruma_castle = {
 
 	county = c_shiro_hiruma
@@ -355,6 +355,54 @@ fallen_hiruma_castle = {
 	}
 }
 
+# As the most important holy site for jigoku, I give it 3 good bonuses
+festering_pit_of_fuleng = {
+	county = c_shadowlands_festering_pit_5
+	barony = b_shadowlands_festering_pit_coast_the_one
+
+	character_modifier = {
+		name = festering_pit_of_fuleng_effect_name
+		martial_per_piety_level = 1
+		dread_baseline_add = 10
+		controlled_province_advantage = 5
+	}
+}
+
+# Lair of the Word Hungry Oni, site of knowledge
+repository_of_all_knowledge = {
+	county = c_shadowlands_lost_library_3
+	barony = b_shadowlands_lost_library_4
+
+	character_modifier = {
+		name = repository_of_all_knowledge_effect_name
+		monthly_piety = 0.2
+		learning_per_piety_level = 1
+	}
+}
+
+# Shrine to Fu Leng and Jigoku made by an oni
+false_grove_lantern = {
+	county = c_false_lantern_grove_2
+	barony = b_shadowlands_yukiko_court_9
+
+	character_modifier = {
+		name = false_grove_lantern_effect_name
+		monthly_prestige = 0.2
+		dread_baseline_add = 10
+	}
+}
+
+# A defiled oni court
+defiled_court = {
+	county = c_shadowlands_yukiko_court_2
+	barony = b_shadowlands_yukiko_court_5
+
+	character_modifier = {
+		name = defiled_court_effect_name
+		supply_capacity_mult = 0.05
+		intrigue_per_piety_level = 1
+	}
+}
 
 
 
