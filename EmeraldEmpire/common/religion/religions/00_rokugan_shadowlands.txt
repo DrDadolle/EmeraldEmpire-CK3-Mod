@@ -224,12 +224,13 @@
 	faiths = {
 		faith_cult_of_fu_leng = {
 			color = "black"
-			icon = christianity_cathar
+			icon = baltic
+			reformed_icon = baltic_reformed
 
 			holy_site = festering_pit_of_fuleng
 			holy_site = fallen_hiruma_castle
 			holy_site = repository_of_all_knowledge
-			holy_site = false_grove_lantern
+			holy_site = false_lantern_grove
 			holy_site = hantei_temple # For revenge !
 
 
@@ -243,7 +244,8 @@
 
 		faith_cult_of_atsuko = {
 			color = { 0.4 0.3 0.2 }
-			icon = hellenic
+			icon = siberian
+			reformed_icon = siberian_reformed
 
 			holy_site = festering_pit_of_fuleng
 			holy_site = fallen_hiruma_castle

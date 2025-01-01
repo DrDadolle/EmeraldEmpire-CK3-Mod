@@ -713,3 +713,40 @@ kami_descendant = {
 		}
 	}
 }
+###############################
+## Shadowlands traits
+undead= {
+	immortal = yes
+	flag = immune_to_disease  # L5R TODO why it can still become sick ?
+	life_expectancy = 1000
+	negate_health_penalty_add = 50
+
+	shown_in_ruler_designer = no
+	#ruler_designer_cost = 40
+
+	monthly_lifestyle_xp_gain_mult = -0.5
+	monthly_prestige_gain_mult = -0.45
+	monthly_piety_gain_mult = -0.45
+	stress_loss_mult = -0.35
+	stress_gain_mult = -0.35
+
+	dread_baseline_add = 25
+	dread_gain_mult = 0.5
+
+	enemy_hostile_scheme_phase_duration_add = 10
+	enemy_hostile_scheme_success_chance_max_add = -10
+	enemy_hostile_scheme_success_chance_growth_add = -1
+
+	can_have_children = no
+
+	triggered_opinion = {
+		parameter = witchcraft_illegal
+		opinion_modifier = witchcraft_crime
+		ignore_opinion_value_if_same_trait = yes
+	}
+	triggered_opinion = {
+		parameter = witchcraft_shunned
+		opinion_modifier = witchcraft_intolerant
+		ignore_opinion_value_if_same_trait = yes
+	}
+}

@@ -37,6 +37,11 @@
  trait_mahotsukai_3_desc:0 "Profane ritual and dark rite - the Master [mahotsukai|E] stands unparalleled in the [maho|e], renouncing their humanity in the pursuit of power"
  trait_mahotsukai_3_character_desc:0 "Profane ritual and dark rite - [ROOT.GetCharacter.GetFirstNameNoTooltip] stands unparalleled in the [maho|e], renouncing their humanity in the pursuit of power"
  ###################
+ ### SHADOWLANDS ###
+ # Undead
+ trait_undead:0 "Undead"
+ trait_undead_desc:0 "This character has lived beyond death, and now walks Rokugan as a spooky undead"
+ ###################
  ### CLAN TRAITS ###
  # bleached_white_hair
  trait_bleached_white_hair:0 "Bleached White Hair"

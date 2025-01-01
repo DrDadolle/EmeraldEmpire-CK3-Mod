@@ -134,9 +134,10 @@ rokugan_abdicate_decision = {
 			age >= 60
 			has_trait = incapable
 			has_trait = infirm
-
 			# Not sure how to check for length of reign
 		}
+		NOT = {	has_trait = immortal }
+		NOT = { has_trait = undead }
 	}
 
 	is_valid_showing_failures_only = {

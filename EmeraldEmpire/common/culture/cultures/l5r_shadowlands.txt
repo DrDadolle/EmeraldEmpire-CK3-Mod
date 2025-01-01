@@ -1,7 +1,7 @@
 ﻿#######################
 ### Lost Samourai Culture
 #######################
-daigotsu = {
+daigotsu = { # Do not exist in 1123
 	color = { 0.1 0.1 0.1 } # The color of the culture, used e.g. on the map
 	
 	ethos = ethos_bellicose
@@ -21,6 +21,60 @@ daigotsu = {
 	building_gfx = { japanese_building_gfx }
 	clothing_gfx = { minor_clothing_gfx }
 	unit_gfx = { japanese_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+gyushi  = { # Do not exist in 1123
+	color = { 0.13 0.25 0.4 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_spider
+	language = language_shadowlands_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_sorcerous_metallurgy
+		tradition_warrior_monks
+		tradition_zealous_people
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { minor_group_coa_gfx }
+	building_gfx = { japanese_building_gfx }
+	clothing_gfx = { minor_clothing_gfx }
+	unit_gfx = { japanese_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+dark_moto = {
+	color = { 5 5 5 } # The color of the culture, used e.g. on the map
+
+	created = 825.1.1
+	parents = { moto  }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_spider
+	language = language_shadowlands_rokugani
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_bushido
+		tradition_horse_breeder
+		tradition_quarrelsome
+		tradition_polygamous
+	}
+   
+	name_list = name_list_crane_family
+	
+	coa_gfx = { minor_group_coa_gfx }
+	building_gfx = { japanese_building_gfx }
+	clothing_gfx = { minor_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
 	
 	ethnicities = {
 		10 = asian

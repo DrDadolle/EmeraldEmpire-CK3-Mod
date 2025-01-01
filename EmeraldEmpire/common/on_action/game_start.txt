@@ -660,16 +660,16 @@ on_game_start_after_lobby = {
 			}
 		}
 		# Conquerors
-		# Rokugan : keep it as example
-		# character:144133 ?= {
-		# 	if = {
-		# 		limit = {
-		# 			is_alive = yes
-		# 			NOT = { has_game_rule = no_conquerors_frequency }
-		# 		}
-		# 		create_story = story_conqueror
-		# 	}
-		# }
+		# L5R Added : add one guy in shadowlands as conqueror for fun
+		character:shadowlandsplaceholder022 ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					NOT = { has_game_rule = no_conquerors_frequency }
+				}
+				create_story = story_conqueror
+			}
+		}
 	}
 	events = {
 		game_rule.1000	#Autopopulate families.

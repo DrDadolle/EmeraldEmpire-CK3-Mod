@@ -381,12 +381,12 @@ repository_of_all_knowledge = {
 }
 
 # Shrine to Fu Leng and Jigoku made by an oni
-false_grove_lantern = {
+false_lantern_grove = {
 	county = c_false_lantern_grove_2
 	barony = b_shadowlands_yukiko_court_9
 
 	character_modifier = {
-		name = false_grove_lantern_effect_name
+		name = false_lantern_grove_effect_name
 		monthly_prestige = 0.2
 		dread_baseline_add = 10
 	}

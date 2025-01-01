@@ -1,6 +1,64 @@
 ﻿#####################
 #	Lost Samurai 
 #####################
+lineofmototsume1 = {
+	name = name_tsume
+	dynasty = dynasty_moto
+	religion = "faith_cult_of_fu_leng"
+	culture = "dark_moto"
+
+	trait = education_martial_4
+	trait = brave
+	trait = arrogant
+	trait = wrathful
+	trait = strong
+	trait = undead
+
+	martial = 20
+	prowess = 25
+	intrigue = 10
+
+	785.1.1 = {
+		birth = yes
+	}
+}
+
+lineofmototsume2 = {
+	name = name_katsuda
+	dynasty = dynasty_moto
+	religion = "faith_cult_of_fu_leng"
+	culture = "dark_moto"
+
+	trait = undead
+
+	### Family
+	father = lineofmototsume1 #Moto Tsume
+
+	805.1.1 = {
+		birth = yes
+	}
+}
+
+lineofmototsume3 = {
+	name = name_tsanuri
+	dynasty = dynasty_moto
+	religion = "faith_cult_of_fu_leng"
+	culture = "dark_moto"
+	female = yes
+
+	trait = undead
+
+	### Family
+	father = lineofmototsume1 #Moto Tsume
+
+	807.1.1 = {
+		birth = yes
+	}
+}
+
+#####################
+#	Placeholders
+#####################
 shadowlandsplaceholder001 = {
 	name = name_aki 	# TODO Placeholder name
 	religion = "faith_cult_of_fu_leng"
@@ -33,7 +91,7 @@ shadowlandsplaceholder003 = {
 
 shadowlandsplaceholder004 = {
 	name = name_aki 	# TODO Placeholder name
-	religion = "faith_cult_of_fu_leng"
+	religion = "faith_bloodspeaker"
 	culture = "daigotsu"
 
 	1100.1.1 = {
@@ -43,7 +101,7 @@ shadowlandsplaceholder004 = {
 
 shadowlandsplaceholder005 = {
 	name = name_aki 	# TODO Placeholder name
-	religion = "faith_cult_of_fu_leng"
+	religion = "faith_bloodspeaker"
 	culture = "daigotsu"
 
 	1100.1.1 = {
@@ -53,7 +111,7 @@ shadowlandsplaceholder005 = {
 
 shadowlandsplaceholder006 = {
 	name = name_aki 	# TODO Placeholder name
-	religion = "faith_cult_of_fu_leng"
+	religion = "faith_bloodspeaker"
 	culture = "daigotsu"
 
 	1100.1.1 = {
@@ -92,6 +150,146 @@ shadowlandsplaceholder009 = {
 }
 
 shadowlandsplaceholder010 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "daigotsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+# Placeholder for k_festering_pit
+shadowlandsplaceholder011 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "daigotsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+shadowlandsplaceholder012 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "daigotsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+shadowlandsplaceholder013 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "daigotsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+shadowlandsplaceholder014 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_atsuko"
+	culture = "gyushi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+shadowlandsplaceholder015 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_atsuko"
+	culture = "gyushi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+shadowlandsplaceholder016 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_atsuko"
+	culture = "gyushi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+shadowlandsplaceholder017 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_atsuko"
+	culture = "gyushi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+shadowlandsplaceholder018 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "gyushi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+shadowlandsplaceholder019 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "gyushi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+shadowlandsplaceholder020 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "gyushi"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+shadowlandsplaceholder021 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "daigotsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+shadowlandsplaceholder022 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "daigotsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+shadowlandsplaceholder023 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "daigotsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+shadowlandsplaceholder024 = {
+	name = name_aki 	# TODO Placeholder name
+	religion = "faith_cult_of_fu_leng"
+	culture = "daigotsu"
+
+	1100.1.1 = {
+		birth = yes
+	}
+}
+
+shadowlandsplaceholder025 = {
 	name = name_aki 	# TODO Placeholder name
 	religion = "faith_cult_of_fu_leng"
 	culture = "daigotsu"

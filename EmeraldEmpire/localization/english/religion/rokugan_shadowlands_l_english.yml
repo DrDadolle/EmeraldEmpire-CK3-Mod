@@ -9,11 +9,16 @@
 
  #####
  # Cult of Fu Leng Faith
- faith_cult_of_fu_leng:0 "Cult of Dark Kami"
- faith_cult_of_fu_leng_adj:0 "Cult of Dark Kami"
+ faith_cult_of_fu_leng:0 "Dark Kami"
+ faith_cult_of_fu_leng_adj:0 "Dark Kami"
  faith_cult_of_fu_leng_adherent:0 "Child of the Dark Kami"
  faith_cult_of_fu_leng_adherent_plural:0 "Children of the Dark Kami"
  faith_cult_of_fu_leng_desc:0 "The Dark Kami fell from [ningendo|E] to [jigoku|E]. He was sealed by the Seven Thunders during the First War and bind by the Dark Scrolls, but many people seeks to release the Dark Kami from them."
+
+ faith_cult_of_fu_leng_old:0 "Old Dark Kami"
+ faith_cult_of_fu_leng_old_adj:0 "Old Dark Kami"
+ faith_cult_of_fu_leng_old_adherent:0 "Child of the Old Dark Kami"
+ faith_cult_of_fu_leng_old_adherent_plural:0 "Children of the Old Dark Kami"
  # High God
  shadowlands_high_god_name:0 "The Dark Kami"
  shadowlands_high_god_name_possessive:0 "The Dark Kami's"
@@ -47,6 +52,18 @@
  shadowlands_positive_afterlife:0 "Jigoku"
  shadowlands_negative_afterlife:0 "Tengoku"
 
+  #####
+ # Cult of Fu Leng Faith
+ faith_cult_of_atsuko:0 "Atsukoism"
+ faith_cult_of_atsuko_adj:0 "Atsukoist"
+ faith_cult_of_atsuko_adherent:0 "Child of Lady Atsuko"
+ faith_cult_of_atsuko_adherent_plural:0 "Children of Lady Atsuko"
+ faith_cult_of_atsuko_desc:0 "The wiry, willow Lady Atsuko was born from a Tainted marsh in the Shinomen Forest, made from the corrupting powers of the Taint mixed with the spiritual power of the Shinomen. She spread Taint and sickness everywhere she went, and swinged wildly between responding with terse, one word replies and then sickly sweet compliments."
+
+ faith_cult_of_atsuko_old:0 "Old Atsukoism"
+ faith_cult_of_atsuko_old_adj:0 "Old Atsukoist"
+ faith_cult_of_atsuko_old_adherent:0 "Child of the Old Lady Atsuko"
+ faith_cult_of_atsuko_old_adherent_plural:0 "Children of the Old Lady Atsuko"
 
  #####
  # Cult of Fu Leng Faith

@@ -2195,7 +2195,7 @@ e_rokugan = {
  
 
 e_shadowlands = {
-    color = { 2 2 2 }
+    color = { 40 2 2 }
     capital = c_shadowlands_festering_pit_5
 
     k_earthquake_bay = {
@@ -2243,11 +2243,11 @@ e_shadowlands = {
             }
         }
         d_hiruma_shadowlands = {
-            color = { 22 3 3 }
+            color = { 9 75 103 }
             capital = c_shiro_hiruma
 
             c_shiro_hiruma = {
-                color = { 22 3 3 }
+                color = { 9 75 103 }
 
                 b_shiro_hiruma = {
                     province = 498
@@ -2261,7 +2261,7 @@ e_shadowlands = {
             }
             
             c_shadowlands_daylight_coast_1 = {
-                color = { 29 11 11 }
+                color = { 4 85 133 }
 
                 b_shadowlands_daylight_coast_1 = {
                     province = 495
@@ -2275,7 +2275,7 @@ e_shadowlands = {
             }
 
             c_shadowlands_daylight_coast_3 = {
-                color = { 26 7 7 }
+                color = { 12 95 153 }
 
                 b_shadowlands_daylight_coast_7 = {
                     province = 501
@@ -2336,15 +2336,15 @@ e_shadowlands = {
     }
 
     k_festering_pit = {
-        color = { 55 45 45 }
+        color = { 40 2 2 }
         capital = c_shadowlands_festering_pit_5
 
         d_dark_coast = {
-            color = { 55 45 45 }
+            color = { 5 5 95 }
             capital = c_shadowlands_festering_pit_coast_1
             
             c_shadowlands_festering_pit_coast_1 = {
-                color = {  25 25 85 }
+                color = { 5 5 95 }
 
                 b_shadowlands_festering_pit_coast_1 = {
                     province = 522
@@ -2355,7 +2355,7 @@ e_shadowlands = {
             }
 
             c_shadowlands_yukiko_mountains_1 = {
-                color = {  25 25 85 }
+                color = { 5 5 75 }
 
                 b_shadowlands_yukiko_mountains_1 = {
                     province = 524
@@ -2366,7 +2366,7 @@ e_shadowlands = {
             }
 
             c_shadowlands_yukiko_swamps_1 = {
-                color = {  25 25 85 }
+                color = { 10 10 65 }
 
                 b_shadowlands_yukiko_swamps_1 = {
                     province = 526
@@ -2377,7 +2377,7 @@ e_shadowlands = {
             }
 
             c_shadowlands_yukiko_mountains_2 = {
-                color = {  25 25 85 }
+                color = { 5 5 55 }
 
                 b_shadowlands_yukiko_mountains_3 = {
                     province = 528
@@ -2389,11 +2389,11 @@ e_shadowlands = {
         }
 
         d_yukiko_court = {
-            color = { 85 85 45 }
+            color = { 74 24 10 }
             capital = c_shadowlands_yukiko_court_1
             
             c_shadowlands_yukiko_court_1 = {
-                color =  { 85 85 45 }
+                color =  { 74 24 10 }
 
                 b_shadowlands_yukiko_court_1 = {
                     province = 530
@@ -2410,7 +2410,7 @@ e_shadowlands = {
             }
 
             c_shadowlands_yukiko_court_2 = {
-                color =  { 85 85 45 }
+                color =  { 94 24 10 }
 
                 b_shadowlands_yukiko_court_5 = {
                     province = 534
@@ -2424,7 +2424,7 @@ e_shadowlands = {
             }
 
             c_shadowlands_yukiko_court_3 = {
-                color =  { 85 85 45 }
+                color =  { 94 4 1 }
 
                 b_shadowlands_yukiko_court_11 = {
                     province = 540
@@ -2435,18 +2435,18 @@ e_shadowlands = {
             }
         }
         d_false_lantern = {
-            color = { 85 85 45 }
+            color = { 5 85 25 }
             capital = c_false_lantern_grove_2
             
             c_false_lantern_grove_1 = {
-                color =  { 85 85 45 }
+                color =  { 10 105 35 }
 
                 b_shadowlands_yukiko_court_8 = {
                     province = 537
                 }
             }
             c_false_lantern_grove_2 = {
-                color =  { 85 85 45 }
+                color =  { 5 85 25 }
 
                 b_shadowlands_yukiko_court_9 = {
                     province = 538
@@ -2456,7 +2456,7 @@ e_shadowlands = {
                 }
             }
             c_false_lantern_grove_3 = {
-                color =  { 85 85 45 }
+                color =  { 35 115 55 }
 
                 b_shadowlands_yukiko_court_13 = {
                     province = 542
@@ -2466,18 +2466,18 @@ e_shadowlands = {
 
 
         d_lost_library = {
-            color = { 55 45 45 }
+            color = { 5 5 45 }
             capital = c_shadowlands_lost_library_3
             
             c_shadowlands_lost_library_1 = {
-                color = {  25 25 85 }
+                color = { 15 15 55 }
 
                 b_shadowlands_lost_library_1 = {
                     province = 543
                 }
             }
             c_shadowlands_lost_library_2 = {
-                color = {  25 25 85 }
+                color = { 10 7 65 }
 
                 b_shadowlands_lost_library_2 = {
                     province = 544
@@ -2487,7 +2487,7 @@ e_shadowlands = {
                 }
             }
             c_shadowlands_lost_library_3 = {
-                color = {  25 25 85 }
+                color = { 5 5 45 }
 
                 b_shadowlands_lost_library_4 = {
                     province = 546
@@ -2500,7 +2500,7 @@ e_shadowlands = {
                 }
             }
             c_shadowlands_lost_library_4 = {
-                color = {  25 25 85 }
+                color = { 10 25 75 }
 
                 b_shadowlands_lost_library_7 = {
                     province = 549
@@ -2511,11 +2511,11 @@ e_shadowlands = {
             }
         }
         d_the_pit = {
-            color = { 55 45 45 }
+            color = { 40 2 2 }
             capital = c_shadowlands_festering_pit_5
             
             c_shadowlands_festering_pit_5 = {
-                color = {  25 25 85 }
+                color = { 40 2 2 }
 
                 b_shadowlands_festering_pit_coast_the_one = {
                     province = 551
@@ -2531,7 +2531,7 @@ e_shadowlands = {
                 }
             }
             c_shadowlands_festering_pit_6 = {
-                color = {  25 25 85 }
+                color = { 25 15 15 }
 
                 b_shadowlands_festering_pit_coast_12 = {
                     province = 555
@@ -2547,7 +2547,7 @@ e_shadowlands = {
                 }
             }
             c_shadowlands_festering_pit_7 = {
-                color = {  25 25 85 }
+                color = {  65 25 25 }
 
                 b_shadowlands_festering_pit_coast_16 = {
                     province = 559
@@ -2557,7 +2557,7 @@ e_shadowlands = {
                 }
             }
             c_shadowlands_festering_pit_8 = {
-                color = {  25 25 85 }
+                color = {  75 15 25 }
 
                 b_shadowlands_festering_pit_coast_18 = {
                     province = 561
