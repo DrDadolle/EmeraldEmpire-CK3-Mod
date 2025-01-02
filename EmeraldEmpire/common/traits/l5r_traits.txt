@@ -718,7 +718,7 @@ kami_descendant = {
 undead= {
 	immortal = yes
 	flag = immune_to_disease  # L5R TODO why it can still become sick ?
-	life_expectancy = 1000
+	life_expectancy = 10000
 	negate_health_penalty_add = 50
 
 	shown_in_ruler_designer = no

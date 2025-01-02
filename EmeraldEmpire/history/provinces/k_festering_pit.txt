@@ -23,25 +23,25 @@
 }
 ###c_shadowlands_yukiko_swamps_1
 526 = {		#b_shadowlands_yukiko_swamps_1
-	culture = daigotsu
+	culture = dark_moto
 	religion = faith_cult_of_fu_leng
-	holding = tribal_holding
+	holding = castle_holding
 }
 527 = {		#b_shadowlands_yukiko_swamps_2
-	culture = daigotsu
+	culture = dark_moto
 	religion = faith_cult_of_fu_leng
-	holding = none
+	holding = church_holding
 }
 ###c_shadowlands_yukiko_mountains_2
 528 = {		#b_shadowlands_yukiko_mountains_3
 	culture = gyushi
 	religion = faith_cult_of_atsuko
-	holding = tribal_holding
+	holding = castle_holding
 }
 529 = {		#b_shadowlands_yukiko_mountains_4
 	culture = gyushi
 	religion = faith_cult_of_atsuko
-	holding = none
+	holding = city_holding
 }
 ##d_yukiko_court ###################################
 ###c_shadowlands_yukiko_court_1
@@ -95,24 +95,24 @@
 ##d_false_lantern ###################################
 ###c_false_lantern_grove_1
 537 = {		#b_shadowlands_yukiko_court_8
-	culture = dark_moto
+	culture = gyushi
 	religion = faith_cult_of_atsuko
 	holding = tribal_holding
 }
 ###c_false_lantern_grove_2
 538 = {		#b_shadowlands_yukiko_court_9
-	culture = dark_moto
+	culture = gyushi
 	religion = faith_cult_of_fu_leng
 	holding = tribal_holding
 }
 539 = {		#b_shadowlands_yukiko_court_10
-	culture = dark_moto
+	culture = gyushi
 	religion = faith_cult_of_fu_leng
 	holding = none
 }
 ###c_false_lantern_grove_3
 542 = {		#b_shadowlands_yukiko_court_13
-	culture = dark_moto
+	culture = gyushi
 	religion = faith_cult_of_fu_leng
 	holding = tribal_holding
 }
@@ -139,6 +139,10 @@
 	culture = gyushi
 	religion = faith_cult_of_fu_leng
 	holding = tribal_holding
+	
+	1.1.1 = {
+		special_building = lost_library_01
+	}
 }
 547 = {		#b_shadowlands_lost_library_5
 	culture = gyushi
@@ -167,6 +171,11 @@
 	culture = daigotsu
 	religion = faith_cult_of_fu_leng
 	holding = tribal_holding
+
+	1.1.1 = {
+		special_building = festering_pit_01
+	}
+
 }
 552 = {		#b_shadowlands_festering_pit_coast_9
 	culture = daigotsu

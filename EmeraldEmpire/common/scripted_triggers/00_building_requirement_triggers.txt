@@ -36,8 +36,8 @@ building_requirement_castle_city_church = {
 		has_building_or_higher = temple_$LEVEL$
 	}
 	trigger_else_if = {
-		limit = { has_holding_type = shiro_chuda_ruins_holding }
-		has_building_or_higher = haunted_ruins_shiro_chuda_$LEVEL$
+		limit = { has_holding_type = ruins_holding }
+		has_building_or_higher = haunted_ruins_shiro_$LEVEL$
 	}
 	trigger_else = {
 		custom_description = {

@@ -6,7 +6,7 @@ seppuku_reason = {
 	alias = { seppuku_reasons }
 }
 
-shiro_chuda_ruins_holding = {
+ruins_holding = {
 	#alias = { castle castles castle_holdings }
 	parent = holding_type
 	texture = "gfx/interface/icons/icon_holding_castle.dds"

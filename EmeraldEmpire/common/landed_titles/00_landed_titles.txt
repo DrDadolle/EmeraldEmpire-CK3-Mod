@@ -2199,15 +2199,15 @@ e_shadowlands = {
     capital = c_shadowlands_festering_pit_5
 
     k_earthquake_bay = {
-        color = { 25 5 5 }
+        color = { 5 5 25 }
         capital = c_shiro_hiruma
 
         d_earthquake_bay = {
-            color = { 25 5 5 }
+            color = { 5 5 25 }
             capital = c_shinsei_last_hope_shadowlands
             
             c_shinsei_last_hope_shadowlands = {
-                color = { 25 5 5 }
+                color = { 5 5 25 }
 
                 b_shinsei_last_hope_shadowlands = {
                     province = 488
@@ -2216,7 +2216,7 @@ e_shadowlands = {
             }
 
             c_shadowlands_coast_1 = {
-                color = { 35 15 15 }
+                color = { 5 5 35 }
 
                 b_shadowlands_coast_1 = {
                     province = 489
@@ -2229,7 +2229,7 @@ e_shadowlands = {
                 }
             }
             c_shadowlands_coast_2 = {
-                color = { 28 18 18 }
+                color = { 15 15 25 }
 
                 b_shadowlands_coast_4 = {
                     province = 492
@@ -2564,6 +2564,210 @@ e_shadowlands = {
                 }
                 b_shadowlands_festering_pit_coast_19 = {
                     province = 562
+                }
+            }
+        }
+    }
+
+    k_twilight_mountains = {
+        color = { 40 2 2 }
+        capital = c_forgotten_tomb_2
+
+        d_forgotten_tomb = {
+            color = { 60 1 1 }
+            capital = c_forgotten_tomb_2
+            
+            c_forgotten_tomb_1 = {
+                color = { 60 1 1 }
+
+                b_shadowlands_forgotten_tomb_1 = {
+                    province = 567
+                }
+                b_shadowlands_forgotten_tomb_2 = {
+                    province = 568
+                }
+                b_shadowlands_forgotten_tomb_3 = {
+                    province = 569
+                }
+            }
+
+            c_forgotten_tomb_2 = {
+                color = { 20 1 1 }
+
+                b_shadowlands_forgotten_tomb_4 = {
+                    province = 570
+                }
+                b_shadowlands_forgotten_tomb_5 = {
+                    province = 571
+                }
+                b_shadowlands_forgotten_tomb_6 = {
+                    province = 572
+                }
+            }
+            c_forgotten_tomb_3 = {
+                color = { 30 1 1 }
+
+                b_shadowlands_forgotten_tomb_7 = {
+                    province = 573
+                }
+                b_shadowlands_forgotten_tomb_8 = {
+                    province = 574
+                }
+            }
+        }
+
+        d_tsumegiri = {
+            color = { 120 6 6 }
+            capital = c_tsumegiri_5
+            
+            c_tsumegiri_1 = {
+                color = { 120 30 30 }
+
+                b_shadowlands_tsumegiri_1 = {
+                    province = 576
+                }
+                b_shadowlands_tsumegiri_2 = {
+                    province = 577
+                }
+            }
+            c_tsumegiri_2 = {
+                color = { 100 20 20 }
+
+                b_shadowlands_tsumegiri_3 = {
+                    province = 578
+                }
+                b_shadowlands_tsumegiri_4 = {
+                    province = 579
+                }
+                b_shadowlands_tsumegiri_5 = {
+                    province = 580
+                }
+            }
+            c_tsumegiri_3 = {
+                color = { 145 6 6 }
+
+                b_shadowlands_tsumegiri_6 = {
+                    province = 582
+                }
+                b_shadowlands_tsumegiri_7 = {
+                    province = 583
+                }
+                b_shadowlands_tsumegiri_8 = {
+                    province = 584
+                }
+                b_shadowlands_tsumegiri_9 = {
+                    province = 585
+                }
+            }
+            c_tsumegiri_4 = {
+                color = { 130 15 15 }
+
+                b_shadowlands_tsumegiri_10 = {
+                    province = 586
+                }
+                b_shadowlands_tsumegiri_11 = {
+                    province = 587
+                }
+                b_shadowlands_tsumegiri_12 = {
+                    province = 588
+                }
+            }
+            c_tsumegiri_5 = {
+                color = { 120 6 6 }
+
+                b_shadowlands_tsumegiri_13 = {
+                    province = 589
+                }
+                b_shadowlands_tsumegiri_14 = {
+                    province = 590
+                }
+                b_shadowlands_tsumegiri_15 = {
+                    province = 591
+                }
+                b_shadowlands_tsumegiri_16 = {
+                    province = 592
+                }
+            }
+        }
+        d_black_peak = {
+            color = { 25 25 5 }
+            capital = c_black_peak_1
+            
+            c_black_peak_1 = {
+                color = { 25 25 5 }
+                b_shadowlands_black_peak_3 = {
+                    province = 595
+                }
+                b_shadowlands_black_peak_1 = {
+                    province = 593
+                }
+                b_shadowlands_black_peak_2 = {
+                    province = 594
+                }
+                
+            }
+            c_black_peak_2 = {
+                color = { 35 35 15 }
+
+                b_shadowlands_black_peak_4 = {
+                    province = 596
+                }
+                b_shadowlands_black_peak_5 = {
+                    province = 597
+                }
+                b_shadowlands_black_peak_6 = {
+                    province = 598
+                }
+            }
+            c_black_peak_3 = {
+                color = { 55 55 5 }
+
+                b_shadowlands_black_peak_7 = {
+                    province = 599
+                }
+                b_shadowlands_black_peak_8 = {
+                    province = 600
+                }
+            }
+        }
+        d_nezumi = {
+            color = { 190 200 190 }
+            capital = c_nezumi_1
+            
+            c_nezumi_1 = {
+                color = { 190 200 190 }
+
+                b_nezumi_1  = {
+                    province = 605
+                }
+                b_nezumi_2  = {
+                    province = 606
+                }
+                b_nezumi_3  = {
+                    province = 607
+                }
+            }
+            c_nezumi_2 = {
+                color = { 180 220 200 }
+
+                b_nezumi_4  = {
+                    province = 608
+                }
+                b_nezumi_5  = {
+                    province = 609
+                }
+            }
+            c_nezumi_3 = {
+                color = { 210 240 190 }
+
+                b_nezumi_6  = {
+                    province = 610
+                }
+                b_nezumi_7  = {
+                    province = 611
+                }
+                b_nezumi_8  = {
+                    province = 612
                 }
             }
         }

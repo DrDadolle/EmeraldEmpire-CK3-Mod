@@ -232,6 +232,9 @@
 								is_independent_ruler = no
 								is_landed = no
 								highest_held_title_tier <= tier_county
+								# L5R Added
+								# Prevent emperor of rokugan from conquering everything.
+								has_title = title:e_rokugan
 							}
 							#L5R Disabled
 							# NOT = { this = character:140 }

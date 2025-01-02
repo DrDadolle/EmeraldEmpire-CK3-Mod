@@ -231,7 +231,7 @@
 			holy_site = fallen_hiruma_castle
 			holy_site = repository_of_all_knowledge
 			holy_site = false_lantern_grove
-			holy_site = hantei_temple # For revenge !
+			holy_site = forgotten_tomb_of_fu_leng
 
 
 			doctrine = tenet_pursuit_of_power
@@ -258,12 +258,44 @@
 			doctrine = tenet_exaltation_of_pain
 			doctrine = tenet_hedonistic
 
+			doctrine = doctrine_clerical_gender_female_only
+			doctrine = doctrine_homosexuality_shunned
+			doctrine = doctrine_gender_female_dominated
 			doctrine = doctrine_deviancy_accepted
 			doctrine = doctrine_adultery_men_crime
 			doctrine = doctrine_adultery_women_accepted
 
 			doctrine = unreformed_faith_doctrine
 			doctrine = doctrine_clerical_succession_spiritual_appointment
+		}
+
+
+		faith_obsidian_bride = {
+			color = { 0.6 0.05 0.5 }
+			icon = spirit_bon
+			reformed_icon = spirit_bon
+
+			holy_site = festering_pit_of_fuleng
+			holy_site = fallen_hiruma_castle
+			holy_site = repository_of_all_knowledge
+			holy_site = false_lantern_grove
+			holy_site = forgotten_tomb_of_fu_leng
+
+
+			doctrine = tenet_human_sacrifice 
+			doctrine = tenet_exaltation_of_pain
+			doctrine = tenet_carnal_exaltation
+
+			doctrine = doctrine_clerical_marriage_disallowed
+			doctrine = doctrine_homosexuality_accepted
+			doctrine = doctrine_gender_female_dominated
+			doctrine = doctrine_consanguinity_unrestricted
+			doctrine = doctrine_deviancy_shunned
+			doctrine = doctrine_adultery_men_accepted
+			doctrine = doctrine_adultery_women_accepted
+
+			doctrine = unreformed_faith_doctrine
+			doctrine = doctrine_clerical_succession_temporal_appointment
 		}
 		
 
@@ -280,6 +312,7 @@
 			doctrine = tenet_esotericism
 			doctrine = tenet_human_sacrifice
 
+			doctrine = doctrine_gender_equal
 			doctrine = doctrine_monogamy
 
 			doctrine = doctrine_clerical_succession_temporal_appointment

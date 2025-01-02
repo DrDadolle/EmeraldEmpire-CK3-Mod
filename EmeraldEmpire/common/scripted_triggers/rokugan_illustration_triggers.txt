@@ -42,3 +42,41 @@ has_graphical_rokugan_region_trigger = {
 		}
 	}
 }
+
+has_graphical_shadowlands_region_trigger = {
+	trigger_if = {
+		limit = {
+			exists = capital_province
+		}
+		capital_province = {
+			geographical_region = graphical_world_shadowlands
+		}
+	}
+	trigger_if = {
+		limit = {
+			exists = host.capital_province
+			NOT = { exists = capital_province }
+		}
+		host.capital_province = {
+			geographical_region = graphical_world_shadowlands
+		}
+	}
+	trigger_if = {
+		limit = {
+			exists = liege.capital_province
+			NOT = { exists = capital_province }
+		}
+		liege.capital_province = {
+			geographical_region = graphical_world_shadowlands
+		}
+	}
+	trigger_if = {
+		limit = {
+			exists = location.province_owner.capital_province
+			NOT = { exists = capital_province }
+		}
+		location.province_owner.capital_province = {
+			geographical_region = graphical_world_shadowlands
+		}
+	}
+}

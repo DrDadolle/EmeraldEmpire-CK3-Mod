@@ -4,7 +4,7 @@
 ##########
 # Shiro Chuda Ruins
 ##########
-haunted_ruins_shiro_chuda_01 = {
+haunted_ruins_shiro_01 = {
 	construction_time = slow_construction_time
 
 	### JAPANESE
@@ -29,7 +29,7 @@ haunted_ruins_shiro_chuda_01 = {
 	}
 
 	cost_gold = main_building_tier_1_cost
-	next_building = haunted_ruins_shiro_chuda_02
+	next_building = haunted_ruins_shiro_02
 
 	levy = poor_building_levy_tier_1
 	max_garrison = normal_building_max_garrison_tier_1
@@ -43,7 +43,7 @@ haunted_ruins_shiro_chuda_01 = {
 		travel_danger = 30
 	}
 
-	flag = shiro_chuda_ruins_holding
+	flag = ruins_holding
 
 	type_icon = "icon_building_ramparts.dds"
 
@@ -54,7 +54,7 @@ haunted_ruins_shiro_chuda_01 = {
 	}
 }
 
-haunted_ruins_shiro_chuda_02 = {
+haunted_ruins_shiro_02 = {
 	construction_time = slow_construction_time
 
 	### JAPANESE
@@ -80,7 +80,7 @@ haunted_ruins_shiro_chuda_02 = {
 	}
 
 	cost_gold = main_building_tier_2_cost
-	next_building = haunted_ruins_shiro_chuda_03
+	next_building = haunted_ruins_shiro_03
 
 	levy = poor_building_levy_tier_1
 	max_garrison = normal_building_max_garrison_tier_1
@@ -94,7 +94,7 @@ haunted_ruins_shiro_chuda_02 = {
 		travel_danger = 20
 	}
 
-	flag = shiro_chuda_ruins_holding
+	flag = ruins_holding
 
 	type_icon = "icon_building_ramparts.dds"
 
@@ -118,7 +118,7 @@ haunted_ruins_shiro_chuda_02 = {
 	}
 }
 
-haunted_ruins_shiro_chuda_03 = {
+haunted_ruins_shiro_03 = {
 	construction_time = slow_construction_time
 
 	### JAPANESE
@@ -144,7 +144,7 @@ haunted_ruins_shiro_chuda_03 = {
 	}
 
 	cost_gold = main_building_tier_2_cost
-	next_building = haunted_ruins_shiro_chuda_04
+	next_building = haunted_ruins_shiro_04
 
 	levy = poor_building_levy_tier_1
 	max_garrison = normal_building_max_garrison_tier_1
@@ -158,7 +158,7 @@ haunted_ruins_shiro_chuda_03 = {
 		travel_danger = 10
 	}
 
-	flag = shiro_chuda_ruins_holding
+	flag = ruins_holding
 
 	type_icon = "icon_building_ramparts.dds"
 
@@ -182,7 +182,7 @@ haunted_ruins_shiro_chuda_03 = {
 	}
 }
 
-haunted_ruins_shiro_chuda_04 = {
+haunted_ruins_shiro_04 = {
 	construction_time = slow_construction_time	
 	
 	can_construct = {
@@ -221,7 +221,7 @@ haunted_ruins_shiro_chuda_04 = {
 		}
 	}
 
-	flag = shiro_chuda_ruins_holding	
+	flag = ruins_holding	
 
 	#On complete, change this holding by castle_01
 	on_complete = {

@@ -452,6 +452,12 @@ world_shadowlands_festering_pit = {
 	}
 }
 
+world_shadowlands_twilight_mountains = {
+	duchies = {
+		d_forgotten_tomb d_tsumegiri d_black_peak d_nezumi
+	}
+}
+
 #####################################						
 #####################################						
 ######          ALL            ######						
@@ -495,9 +501,9 @@ graphical_world_rokugan = {
 
 graphical_world_shadowlands = {
 	graphical = yes
-	color = { 5 5 5 }
+	color = { 62 5 5 }
 	regions = {
-		world_shadowlands_earthquake_bay world_shadowlands_festering_pit
+		world_shadowlands_earthquake_bay world_shadowlands_festering_pit world_shadowlands_twilight_mountains
 	}
 
 }

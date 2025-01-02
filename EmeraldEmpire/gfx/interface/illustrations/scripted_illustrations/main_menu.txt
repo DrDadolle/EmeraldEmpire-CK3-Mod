@@ -11,14 +11,20 @@ main_menu_background = {
 		reference = "main_menu/frontend_yamato.dds"
 
 		trigger = {
-			has_graphical_rokugan_region_trigger = yes
+			OR = {
+				has_graphical_rokugan_region_trigger = yes
+				has_graphical_shadowlands_region_trigger = yes
+			}
 		}
 	}
 	environment = {
 		reference = "environment_frontend_yamato_main"
 
 		trigger = {
-			has_graphical_rokugan_region_trigger = yes
+			OR = {
+				has_graphical_rokugan_region_trigger = yes
+				has_graphical_shadowlands_region_trigger = yes
+			}
 		}
 	}
 

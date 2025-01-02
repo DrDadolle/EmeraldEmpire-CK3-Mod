@@ -5090,17 +5090,17 @@ character_view_bg = {
 			trigger_if = {
 				limit = { is_in_prison_type = house_arrest }
 				imprisoner = {
-					# OR = {
+					OR = {
 						has_graphical_rokugan_region_trigger = yes
-					# 	has_graphical_ryukyu_region_trigger = yes
-					# }
+						has_graphical_shadowlands_region_trigger = yes
+					}
 				}
 			}
 			trigger_else = {
-				# OR = {
+				OR = {
 					has_graphical_rokugan_region_trigger = yes
-				# 	has_graphical_ryukyu_region_trigger = yes
-				# }
+					has_graphical_shadowlands_region_trigger = yes
+				}
 			}
 		}
 	}
@@ -5112,17 +5112,17 @@ character_view_bg = {
 			trigger_if = {
 				limit = { is_in_prison_type = house_arrest }
 				imprisoner = {
-					# OR = {
+					OR = {
 						has_graphical_rokugan_region_trigger = yes
-					# 	has_graphical_ryukyu_region_trigger = yes
-					# }
+						has_graphical_shadowlands_region_trigger = yes
+					}
 				}
 			}
 			trigger_else = {
-				# OR = {
+				OR = {
 					has_graphical_rokugan_region_trigger = yes
-					# 	has_graphical_ryukyu_region_trigger = yes
-					# }
+					has_graphical_shadowlands_region_trigger = yes
+				}
 			}
 			is_character_window_main_character = yes
 		}
@@ -5136,34 +5136,34 @@ character_view_bg = {
 					trigger_if = {
 						limit = { is_in_prison_type = house_arrest }
 						imprisoner = {
-							# OR = {
-							has_graphical_rokugan_region_trigger = yes
-							# 	has_graphical_ryukyu_region_trigger = yes
-							# }
+							OR = {
+								has_graphical_rokugan_region_trigger = yes
+								has_graphical_shadowlands_region_trigger = yes
+							}
 						}
 					}
 					trigger_else = {
-						# OR = {
+						OR = {
 							has_graphical_rokugan_region_trigger = yes
-							# 	has_graphical_ryukyu_region_trigger = yes
-							# }
+							has_graphical_shadowlands_region_trigger = yes
+						}
 					}
 				}
 				betrothed ?= {
 					trigger_if = {
 						limit = { is_in_prison_type = house_arrest }
 						imprisoner = {
-								# OR = {
+							OR = {
 								has_graphical_rokugan_region_trigger = yes
-								# 	has_graphical_ryukyu_region_trigger = yes
-								# }
+								has_graphical_shadowlands_region_trigger = yes
 							}
+						}
 					}
 					trigger_else = {
-						# OR = {
+						OR = {
 							has_graphical_rokugan_region_trigger = yes
-							# 	has_graphical_ryukyu_region_trigger = yes
-						# }
+							has_graphical_shadowlands_region_trigger = yes
+						}
 					}
 				}
 				AND = {
@@ -5172,17 +5172,17 @@ character_view_bg = {
 						trigger_if = {
 							limit = { is_in_prison_type = house_arrest }
 							imprisoner = {
-								# OR = {
+								OR = {
 									has_graphical_rokugan_region_trigger = yes
-									# 	has_graphical_ryukyu_region_trigger = yes
-									# }
+									has_graphical_shadowlands_region_trigger = yes
+								}
 							}
 						}
 						trigger_else = {
-							# OR = {
-							has_graphical_rokugan_region_trigger = yes
-							# 	has_graphical_ryukyu_region_trigger = yes
-							# }
+							OR = {
+								has_graphical_rokugan_region_trigger = yes
+								has_graphical_shadowlands_region_trigger = yes
+							}
 						}
 					}
 				}

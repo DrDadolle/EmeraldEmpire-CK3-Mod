@@ -2,17 +2,17 @@
  ##################
  ##### Holdings
  ##################
- shiro_chuda_ruins_holding_concept_key:0 "Ruins"
- shiro_chuda_ruins_holding:0 "Ruins"
- building_type_haunted_ruins_shiro_chuda_01:0 "Haunted Ruins"
- building_haunted_ruins_shiro_chuda_01:0 "Haunted Ruins"
- building_haunted_ruins_shiro_chuda_01_desc:0 "Haunted Ruins description TODO"
- building_haunted_ruins_shiro_chuda_02:0 "Ruins"
- building_haunted_ruins_shiro_chuda_02_desc:0 "Haunted Ruins description 2 TODO"
- building_haunted_ruins_shiro_chuda_03:0 "Castle in reparation"
- building_haunted_ruins_shiro_chuda_03_desc:0 "Castle in reparation description TODO"
- building_haunted_ruins_shiro_chuda_04:0 "Castle Restored"
- building_haunted_ruins_shiro_chuda_04_desc:0 "Castle Restored description TODO"
+ ruins_holding_concept_key:0 "Ruins"
+ ruins_holding:0 "Ruins"
+ building_type_haunted_ruins_shiro_01:0 "Haunted Ruins"
+ building_haunted_ruins_shiro_01:0 "Haunted Ruins"
+ building_haunted_ruins_shiro_01_desc:0 "Haunted Ruins description TODO"
+ building_haunted_ruins_shiro_02:0 "Ruins"
+ building_haunted_ruins_shiro_02_desc:0 "Haunted Ruins description 2 TODO"
+ building_haunted_ruins_shiro_03:0 "Castle in reparation"
+ building_haunted_ruins_shiro_03_desc:0 "Castle in reparation description TODO"
+ building_haunted_ruins_shiro_04:0 "Castle Restored"
+ building_haunted_ruins_shiro_04_desc:0 "Castle Restored description TODO"
 
  building_type_onsen_01:0 "Hot Springs"
  building_type_onsen_01_desc:1 "The geothermal source presents in this area are used as hot springs where all social classes can come to relax after an hard day of work."
@@ -55,11 +55,29 @@
  building_forbidden_city_01:0 "$building_type_forbidden_city_01$"
  building_forbidden_city_01_desc:0 "$building_type_forbidden_city_01_desc$"
 
+ building_type_festering_pit_01:0 "Festering Pit of Fu Leng"
+ building_type_festering_pit_01_desc:0 "The Festering Pit of Fu Leng, also known as the Demon's Gate, was the place where [fuleng|E] landed when the Kami fell from [tengoku|E], the center of what would be known as the [shadowlands|E]. [fuleng|U] plunged through the earth to [jigoku|E] itself. The corruption of [jigoku|E] spread from the hole in the earth to the surrounding lands, and demons followed in his shadow."
+ building_festering_pit_01:0 "$building_type_festering_pit_01$"
+ building_festering_pit_01_desc:0 "$building_type_festering_pit_01_desc$"
+ NOT_FESTERING_PIT_ENABLED:0 "The [holder|E] must be of the $rf_shadowlands$ [religious_family|E]"
+
+ building_type_lost_library_01:0 "Lost Library"
+ building_type_lost_library_01_desc:0 "The Lost Library appeared as a large spike on the horizon of the [shadowlands|E], a tall tower of black stone, rough and jagged to the touch. Lining the inside walls were curved shelves stuffed with crumbling tomes and ancient scrolls. The original collector was unknown, were they sorcerer, demon, or being as old and alien as the tower itself. The tower had no visible entrances, but it haf windows high up the walls, just below the roofline. The uneven walls were climbable, with a tangle of lurid green brambles growing around its base. Tunnels below the tower led to a hidden entrance, home to vermin and small [shadowlands|E] creatures."
+ building_lost_library_01:0 "$building_type_lost_library_01$"
+ building_lost_library_01_desc:0 "$building_type_lost_library_01_desc$"
+ NOT_LOST_LIBRARY_ENABLED:0 "The [holder|E] must be of the $rf_shadowlands$ [religious_family|E]"
+
+ building_type_forgotten_tomb_01:0 "Forgotten Tomb of Fu Leng"
+ building_type_forgotten_tomb_01_desc:0 "The Forgotten Tomb of Fu Leng was an utterly inhuman building which laid deep within the [shadowlands|E]. The architecture of this ancient structure was alien, with impossible angles no mortal could fully comprehend. Its aura of doom and decay had given rise to the belief that it was a tomb, but no one has found evidence or written records to prove anyone was buried there. Some legends held that the Black Scrolls contained the sundered body of [fuleng|E], his bones, his breath, his skin, his eyes, and other animating parts. Theologians had long argued over whether the Fallen Kami's soul was banished back to [jigoku|E], split among the scrolls, or trapped in [ningendo|E]. What the Tomb actually contained was a haunting question with no comforting answers, for evil creatures thronged about it and no mortal had returned from it sane."
+ building_forgotten_tomb_01:0 "$building_type_forgotten_tomb_01$"
+ building_forgotten_tomb_01_desc:0 "$building_type_forgotten_tomb_01_desc$"
+ NOT_FORGOTTEN_TOMB_ENABLED:0 "The [holder|E] must be of the $rf_shadowlands$ [religious_family|E]"
+
  ##################
  ##### Kaiu Wall
  ##################
  building_type_kaiu_wall_01:0 "Kaiu Wall"
- building_type_kaiu_wall_01_desc:0 "The Kaiu Wall, also known as the Carpenter Wall or the Kaiu Miracle, for centuries was the very physical demarcation of the southern border of Rokugan. On its north side lie the lands of the Crab Clan, and on its south the River of the Last Stand separated it to the blighted reaches of the Shadowlands. It was here that the forces of Rokugan entrenched themselves in their eternal battle against the forces of Jigoku."
+ building_type_kaiu_wall_01_desc:0 "The Kaiu Wall, also known as the Carpenter Wall or the Kaiu Miracle, for centuries was the very physical demarcation of the southern border of [rokugan|E]. On its north side lie the lands of the Crab Clan, and on its south the River of the Last Stand separated it to the blighted reaches of the [shadowlands|E]. It was here that the forces of [rokugan|E] entrenched themselves in their eternal battle against the forces of [jigoku|E]."
  building_kaiu_wall_01:0 "Kaiu Wall"
  building_kaiu_wall_01_desc:0 "building_kaiu_wall_01_desc"
  building_kaiu_wall_02:0 "Kaiu Towers"

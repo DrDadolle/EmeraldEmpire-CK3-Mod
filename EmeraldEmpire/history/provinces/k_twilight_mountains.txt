@@ -1,0 +1,228 @@
+##d_forgotten_tomb ###################################
+###c_forgotten_tomb_1
+567 = {		#b_shadowlands_forgotten_tomb_1
+	culture = daigotsu
+	religion = faith_obsidian_bride
+	holding = tribal_holding
+}
+568 = {		#b_shadowlands_forgotten_tomb_2
+	culture = daigotsu
+	religion = faith_obsidian_bride
+	holding = none
+}
+569 = {		#b_shadowlands_forgotten_tomb_3
+	culture = daigotsu
+	religion = faith_obsidian_bride
+	holding = none
+}
+###c_forgotten_tomb_2
+570 = {		#b_shadowlands_forgotten_tomb_4
+	culture = daigotsu
+	religion = faith_obsidian_bride
+	holding = tribal_holding
+
+	50.1.1 = {
+		special_building = forgotten_tomb_01
+	}
+	
+}
+571 = {		#b_shadowlands_forgotten_tomb_5
+	culture = daigotsu
+	religion = faith_obsidian_bride
+	holding = church_holding
+}
+572 = {		#b_shadowlands_forgotten_tomb_6
+	culture = daigotsu
+	religion = faith_obsidian_bride
+	holding = none
+}
+###c_forgotten_tomb_3
+573 = {		#b_shadowlands_forgotten_tomb_7
+	culture = daigotsu
+	religion = faith_obsidian_bride
+	holding = tribal_holding
+}
+574 = {		#b_shadowlands_forgotten_tomb_8
+	culture = daigotsu
+	religion = faith_obsidian_bride
+	holding = none
+}
+##d_tsumegiri ###################################
+###c_tsumegiri_1
+576 = {		#b_shadowlands_tsumegiri_1
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+577 = {		#b_shadowlands_tsumegiri_2
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_tsumegiri_2
+578 = {		#b_shadowlands_tsumegiri_3
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+579 = {		#b_shadowlands_tsumegiri_4
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+580 = {		#b_shadowlands_tsumegiri_5
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_tsumegiri_3
+582 = {		#b_shadowlands_tsumegiri_6
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+583 = {		#b_shadowlands_tsumegiri_7
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+584 = {		#b_shadowlands_tsumegiri_8
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+585 = {		#b_shadowlands_tsumegiri_9
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_tsumegiri_4
+586 = {		#b_shadowlands_tsumegiri_10
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+587 = {		#b_shadowlands_tsumegiri_11
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+588 = {		#b_shadowlands_tsumegiri_12
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_tsumegiri_5
+589 = {		#b_shadowlands_tsumegiri_13
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+590 = {		#b_shadowlands_tsumegiri_14
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+591 = {		#b_shadowlands_tsumegiri_15
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+592 = {		#b_shadowlands_tsumegiri_16
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+##d_black_peak ###################################
+###c_black_peak_1
+593 = {		#b_shadowlands_black_peak_1
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+594 = {		#b_shadowlands_black_peak_2
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+595 = {		#b_shadowlands_black_peak_3
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+###c_black_peak_2
+596 = {		#b_shadowlands_black_peak_4
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+597 = {		#b_shadowlands_black_peak_5
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+598 = {		#b_shadowlands_black_peak_6
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_black_peak_3
+599 = {		#b_shadowlands_black_peak_7
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+600 = {		#b_shadowlands_black_peak_8
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+##d_nezumi ###################################
+###c_nezumi_1
+605 = {		#b_nezumi_1
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+606 = {		#b_nezumi_2
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+607 = {		#b_nezumi_3
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_nezumi_2
+608 = {		#b_nezumi_4
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+609 = {		#b_nezumi_5
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+###c_nezumi_3
+610 = {		#b_nezumi_6
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = tribal_holding
+}
+611 = {		#b_nezumi_7
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+612 = {		#b_nezumi_8
+	culture = daigotsu
+	religion = faith_cult_of_fu_leng
+	holding = none
+}
+#castle_holding
+#church_holding
+#city_holding
+#tribal_holding
+#none

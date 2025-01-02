@@ -25,6 +25,7 @@
  shadowlands_high_god_name_alternate:0 "The Ninth Kami"
  shadowlands_high_god_name_alternate_possessive:0 "The Ninth Kami's"
  # Others
+ religion_shadowlands_gods:0 "Cursed Ancestors"
  shadowlands_devil_name:0 "Amaterasu"
  shadowlands_devil_name_possessive:0 "Amaterasu's"
  shadowlands_death_deity_name:0 "Emma-O"
@@ -52,8 +53,8 @@
  shadowlands_positive_afterlife:0 "Jigoku"
  shadowlands_negative_afterlife:0 "Tengoku"
 
-  #####
- # Cult of Fu Leng Faith
+ #####
+ # Cult of Lady Atsuko
  faith_cult_of_atsuko:0 "Atsukoism"
  faith_cult_of_atsuko_adj:0 "Atsukoist"
  faith_cult_of_atsuko_adherent:0 "Child of Lady Atsuko"
@@ -66,7 +67,20 @@
  faith_cult_of_atsuko_old_adherent_plural:0 "Children of the Old Lady Atsuko"
 
  #####
- # Cult of Fu Leng Faith
+ # Cult of Obsidian Flower
+ faith_obsidian_bride:0 "Obsidian Flower"
+ faith_obsidian_bride_adj:0 "Obsidian Flower"
+ faith_obsidian_bride_adherent:0 "Crimson Petal"
+ faith_obsidian_bride_adherent_plural:0 "Crimson Petals"
+ faith_obsidian_bride_desc:0 "The Obsidian Flower, also known as the High Priest of [fuleng|E], or the Demon Bride, was an ancient entity who was once a human. Some bloodspeakers attempted to win her attention over the centuries carrying out a number of dark sacrifices, and they were known as the Crimson Petals."
+
+ faith_obsidian_bride_old:0 "Old Obsidian Flower"
+ faith_obsidian_bride_old_adj:0 "Old Obsidian Flower"
+ faith_obsidian_bride_old_adherent:0 "Old Crimson Petal"
+ faith_obsidian_bride_old_adherent_plural:0 "Old Crimson Petals"
+
+ #####
+ # Bloodspeakers Faith
  faith_bloodspeaker:0 "The Bloodspeakers"
  faith_bloodspeaker_adj:0 "The Bloodspeakers"
  faith_bloodspeaker_adherent:0 "Bloodspeaker"

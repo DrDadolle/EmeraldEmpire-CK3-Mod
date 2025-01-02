@@ -165,6 +165,7 @@ ai_budget_manipulation_effect = {
 	
 	if = { # Conquerors are special; they don't care about states or eras - they just want to conquer, and put their resources towards just that.
 		limit = {
+			is_ai = yes
 			ai_has_conqueror_personality = yes
 		}
 		# For now they just buff the war chest, and nothing else

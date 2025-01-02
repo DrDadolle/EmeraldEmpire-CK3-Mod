@@ -56,9 +56,31 @@
 }
 ###c_shiro_hiruma
 498 = {		#b_shiro_hiruma
-	culture = daigotsu
-	religion = faith_bloodspeaker
+	culture = hiruma
+	religion = cult_ancestors
 	holding = castle_holding
+
+	339.1.1={
+		buildings = {
+			castle_01
+		}
+	}
+
+	717.1.1={
+		culture = daigotsu
+		religion = faith_bloodspeaker
+		holding = ruins_holding
+		buildings = {
+			haunted_ruins_shiro_01
+			hill_farms_01
+		}
+	}
+	1123.1.1={
+		buildings = {
+			haunted_ruins_shiro_02
+			hill_farms_02
+		}
+	}
 }
 499 = {		#b_shadowlands_daylight_coast_5
 	culture = daigotsu

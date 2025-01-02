@@ -42,7 +42,7 @@ shadowlands_forest = {
 	
 	province_modifier = {
 		supply_limit_mult = -0.2
-		travel_danger = forest_danger_value
+		travel_danger = shadowlands_forest_danger_value
 	}
 
 	county_capital_modifier = {

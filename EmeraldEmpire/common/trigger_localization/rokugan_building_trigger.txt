@@ -1,0 +1,11 @@
+﻿festering_pit_trigger = {
+	global_not = NOT_FESTERING_PIT_ENABLED
+}
+
+lost_library_trigger = {
+	global_not = NOT_LOST_LIBRARY_ENABLED
+}
+
+forgotten_tomb_trigger = {
+	global_not = NOT_FORGOTTEN_TOMB_ENABLED
+}

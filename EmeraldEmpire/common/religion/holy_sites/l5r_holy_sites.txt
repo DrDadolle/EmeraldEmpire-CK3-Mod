@@ -404,6 +404,22 @@ defiled_court = {
 	}
 }
 
+# Where the corpse of Fu leng is rumored to be
+forgotten_tomb_of_fu_leng = {
+	county = c_forgotten_tomb_2
+	barony = b_shadowlands_forgotten_tomb_4
+
+	character_modifier = {
+		name = forgotten_tomb_of_fu_leng_effect_name
+		shadowlands_plains_advantage = 4
+		shadowlands_forest_advantage = 4
+		shadowlands_hills_advantage = 4
+		shadowlands_mountains_advantage = 4
+		shadowlands_wetlands_advantage = 4
+		monthly_piety = 0.2
+	}
+}
+
 
 
 

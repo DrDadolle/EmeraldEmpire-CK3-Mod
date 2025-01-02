@@ -83,6 +83,9 @@ river_provinces = RANGE { 517 521 }
 #Shadowlands Festering pit south
 river_provinces = RANGE { 563 566 }
 
+#Shadowlands Twilight Mountains
+river_provinces = RANGE { 614 622 }
+
 ########
 # LAKES
 ########
@@ -127,6 +130,9 @@ impassable_mountains = LIST { 418 }
 
 #Shinomen Mori
 impassable_mountains = LIST { 458 }
+
+#Shadowlands
+impassable_mountains = LIST { 575 581 601 602 603 604 613}
 
 #TODO placeholder rest of the map
 impassable_mountains = LIST { 460 }

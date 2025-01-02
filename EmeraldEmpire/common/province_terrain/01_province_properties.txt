@@ -1649,5 +1649,163 @@
 562 = { #b_shadowlands_festering_pit_coast_19
 	winter_severity_bias = @no_winter
 }
-
+#### k_twilight_mountains
+### d_forgotten_tomb
+## c_forgotten_tomb_1
+567 = { #b_shadowlands_forgotten_tomb_1
+	winter_severity_bias = @no_winter
+}
+568 = { #b_shadowlands_forgotten_tomb_2
+	winter_severity_bias = @warm_winter
+}
+569 = { #b_shadowlands_forgotten_tomb_3
+	winter_severity_bias = @warm_winter
+}
+## c_forgotten_tomb_2
+570 = { #b_shadowlands_forgotten_tomb_4
+	winter_severity_bias = @warm_winter
+}
+571 = { #b_shadowlands_forgotten_tomb_5
+	winter_severity_bias = @no_winter
+}
+572 = { #b_shadowlands_forgotten_tomb_6
+	winter_severity_bias = @warm_winter
+}
+## c_forgotten_tomb_3
+573 = { #b_shadowlands_forgotten_tomb_7
+	winter_severity_bias = @warm_winter
+}
+574 = { #b_shadowlands_forgotten_tomb_8
+	winter_severity_bias = @warm_winter
+}
+### d_tsumegiri
+## c_tsumegiri_1
+576 = { #b_shadowlands_tsumegiri_1
+	winter_severity_bias = @warm_winter
+}
+577 = { #b_shadowlands_tsumegiri_2
+	winter_severity_bias = @no_winter
+}
+## c_tsumegiri_2
+578 = { #b_shadowlands_tsumegiri_3
+	winter_severity_bias = @warm_winter
+}
+579 = { #b_shadowlands_tsumegiri_4
+	winter_severity_bias = @no_winter
+}
+580 = { #b_shadowlands_tsumegiri_5
+	winter_severity_bias = @warm_winter
+}
+## c_tsumegiri_3
+582 = { #b_shadowlands_tsumegiri_6
+	winter_severity_bias = @no_winter
+}
+583 = { #b_shadowlands_tsumegiri_7
+	winter_severity_bias = @warm_winter
+}
+584 = { #b_shadowlands_tsumegiri_8
+	winter_severity_bias = @warm_winter
+}
+585 = { #b_shadowlands_tsumegiri_9
+	winter_severity_bias = @warm_winter
+}
+## c_tsumegiri_4
+586 = { #b_shadowlands_tsumegiri_10
+	winter_severity_bias = @no_winter
+}
+587 = { #b_shadowlands_tsumegiri_11
+	winter_severity_bias = @warm_winter
+}
+588 = { #b_shadowlands_tsumegiri_12
+	winter_severity_bias = @warm_winter
+}
+## c_tsumegiri_5
+589 = { #b_shadowlands_tsumegiri_13
+	winter_severity_bias = @warm_winter
+}
+590 = { #b_shadowlands_tsumegiri_14
+	winter_severity_bias = @no_winter
+}
+591 = { #b_shadowlands_tsumegiri_15
+	winter_severity_bias = @no_winter
+}
+592 = { #b_shadowlands_tsumegiri_16
+	winter_severity_bias = @no_winter
+}
+### d_black_peak
+## c_black_peak_1
+593 = { #b_shadowlands_black_peak_1
+	winter_severity_bias = @warm_winter
+}
+594 = { #b_shadowlands_black_peak_2
+	winter_severity_bias = @warm_winter
+}
+595 = { #b_shadowlands_black_peak_3
+	winter_severity_bias = @warm_winter
+}
+## c_black_peak_2
+596 = { #b_shadowlands_black_peak_4
+	winter_severity_bias = @no_winter
+}
+597 = { #b_shadowlands_black_peak_5
+	winter_severity_bias = @warm_winter
+}
+598 = { #b_shadowlands_black_peak_6
+	winter_severity_bias = @warm_winter
+}
+## c_black_peak_3
+599 = { #b_shadowlands_black_peak_7
+	winter_severity_bias = @no_winter
+}
+600 = { #b_shadowlands_black_peak_8
+	winter_severity_bias = @no_winter
+}
+### d_nezumi
+## c_nezumi_1
+605 = { #b_nezumi_1
+	winter_severity_bias = @warm_winter
+}
+606 = { #b_nezumi_2
+	winter_severity_bias = @no_winter
+}
+607 = { #b_nezumi_3
+	winter_severity_bias = @warm_winter
+}
+## c_nezumi_2
+608 = { #b_nezumi_4
+	winter_severity_bias = @no_winter
+}
+609 = { #b_nezumi_5
+	winter_severity_bias = @no_winter
+}
+## c_nezumi_3
+610 = { #b_nezumi_6
+	winter_severity_bias = @no_winter
+}
+611 = { #b_nezumi_7
+	winter_severity_bias = @warm_winter
+}
+612 = { #b_nezumi_8
+	winter_severity_bias = @warm_winter
+}
+## Impassible terrains 
+# Shadowlands
+575 = { 
+	winter_severity_bias = @warm_winter
+}
+581 = { 
+	winter_severity_bias = @warm_winter
+}
+601 = { 
+	winter_severity_bias = @no_winter
+}
+602 = { 
+	winter_severity_bias = @no_winter
+}
+603 = { 
+	winter_severity_bias = @no_winter
+}
+604 = { 
+	winter_severity_bias = @warm_winter
+}
 

@@ -77,7 +77,6 @@ gisei_toshi_01 = {
 ##########
 # Forbidden City
 ##########
-#TODO as duchy building ! à la Constantinople
 forbidden_city_01 = {
 	construction_time = very_slow_construction_time
 
@@ -121,6 +120,155 @@ forbidden_city_01 = {
 	type = special
 
 	flag = travel_point_of_interest_diplomatic
+}
+
+##########
+# Festering Pit of Fu Leng
+##########
+
+festering_pit_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_grand_library_of_baghdad.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	is_enabled = {
+		custom_description = {
+			text = NOT_FESTERING_PIT_ENABLED
+			scope:holder = {
+				religion = { is_in_family = rf_shadowlands }
+			}
+		}
+	}
+
+	cost_gold = 3000
+
+	province_modifier = {
+		garrison_size = 0.25
+	}
+
+	county_modifier = {
+		development_growth_factor = -0.3
+	}
+
+	levy = 2000
+
+	character_modifier = {
+		dread_gain_mult = 0.2
+		dread_baseline_add = 20
+		levy_maintenance = -0.25	
+		levy_reinforcement_rate = 0.25
+		monthly_prestige = 1
+		knight_limit = 3
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
+}
+
+##########
+# Lost Library
+##########
+
+lost_library_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_grand_library_of_baghdad.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	is_enabled = {
+		custom_description = {
+			text = lost_library_trigger
+			scope:holder = {
+				religion = { is_in_family = rf_shadowlands }
+			}
+		}
+	}
+
+	cost_gold = 3000
+
+	character_modifier = {
+		learning_per_piety_level = 1
+		monthly_lifestyle_xp_gain_mult = 0.10
+		cultural_head_fascination_mult = 0.10
+		faith_creation_piety_cost_mult = -0.2
+		monthly_piety = 0.3
+		stress_gain_mult = 0.25
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_learning
+}
+
+
+##########
+# Forgotten Tomb of Fu
+##########
+
+forgotten_tomb_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_grand_library_of_baghdad.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = forgotten_tomb_trigger
+			scope:holder = {
+				religion = { is_in_family = rf_shadowlands }
+			}
+		}
+	}
+
+	cost_gold = 3000
+
+	province_modifier = {
+		tax_mult = 0.1
+	}
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	character_modifier = {
+		monthly_piety = 1
+		same_faith_opinion = 10
+	}
+
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
 }
 
 ##########

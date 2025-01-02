@@ -171,16 +171,16 @@
 	}
 
 	402.1.1={
-		holding = shiro_chuda_ruins_holding
+		holding = ruins_holding
 		buildings = {
-			haunted_ruins_shiro_chuda_01
+			haunted_ruins_shiro_01
 			hill_farms_01
 
 		}
 	}
 	1123.1.1={
 		buildings = {
-			haunted_ruins_shiro_chuda_02
+			haunted_ruins_shiro_02
 			hill_farms_02
 		}
 	}
