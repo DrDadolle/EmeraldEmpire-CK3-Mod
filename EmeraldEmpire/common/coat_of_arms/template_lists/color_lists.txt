@@ -26,54 +26,83 @@ color_lists = {
 
 
 	### MAJOR CLANS ###
-	imperial_normal_colors = {
-		10 = "imperial_light"
+	imperial_dark_colors = {
 		10 = "imperial_dark"
 	}
 
-	crab_normal_colors = {
-		10 = "crab_light"
+	imperial_light_colors = {
+		10 = "imperial_light"
+	}
+
+	crab_dark_colors = {
 		10 = "crab_dark"
+		5  = "black"
 	}
 
-	crane_normal_colors = {
-		10 = "crane_light"
+	crab_light_colors = {
+		10 = "crab_light"
+		5 = "blue"
+	}
+
+	crane_dark_colors = {
+		5 = "blue"
 		10 = "crane_dark"
-		# 5 = "white"
 	}
 
-	dragon_normal_colors = {
-		10 = "dragon_light"
+	crane_light_colors = {
+		10 = "crane_light"
+		5 = "white"
+	}
+
+	dragon_dark_colors = {
 		10 = "dragon_dark"
-		# 5 = "dark"
 	}
 
-	lion_normal_colors = {
-		10 = "lion_light"
+	dragon_light_colors = {
+		10 = "dragon_light"
+	}
+
+	lion_dark_colors = {
 		10 = "lion_dark"
 	}
 
-	phoenix_normal_colors = {
-		10 = "phoenix_light"
+	lion_light_colors = {
+		10 = "lion_light"
+	}
+
+	phoenix_dark_colors = {
 		10 = "phoenix_dark"
 	}
 
-	scorpion_normal_colors = {
-		10 = "scorpion_light"
-		10 = "scorpion_dark"
-		# 5 = "dark"
+	phoenix_light_colors = {
+		10 = "phoenix_light"
 	}
 
-	unicorn_normal_colors = {
-		10 = "unicorn_light"
+	scorpion_dark_colors = {
+		10 = "scorpion_dark"
+		5 = "dark"
+	}
+
+	scorpion_light_colors = {
+		10 = "scorpion_light"
+	}
+
+	unicorn_dark_colors = {
 		10 = "unicorn_dark"
+	}
+
+	unicorn_light_colors = {
+		10 = "unicorn_light"
 	}
 
 	### MINOR CLANS
 
-	mantis_normal_colors = {
-		10 = "mantis_light"
+	mantis_dark_colors = {
 		10 = "mantis_dark"
+	}
+
+	mantis_light_colors = {
+		10 = "mantis_light"
 	}
 
 	

@@ -5,11 +5,54 @@ coat_of_arms_template_lists = {
 	# scope:title is the primary title of the character, may be unset
 	all = {
 		# Simple catch all
+		1 = blank_charge
+
 		
-		3 = basic_charge_01
-		3 = basic_charge_01b
-		3 = basic_ordinary_01
-		3 = basic_ordinary_01_inverted
+		special_selection = {
+			trigger = {
+				scope:culture = {
+					NOR = {
+						has_coa_gfx = crab_group_coa_gfx 
+						has_coa_gfx = crane_group_coa_gfx 
+						has_coa_gfx = dragon_group_coa_gfx 
+						has_coa_gfx = lion_group_coa_gfx 
+						has_coa_gfx = phoenix_group_coa_gfx 
+						has_coa_gfx = scorpion_group_coa_gfx 
+						has_coa_gfx = unicorn_group_coa_gfx 
+						has_coa_gfx = imperial_group_coa_gfx 
+						has_coa_gfx = minor_group_coa_gfx 
+					}
+				}
+			}
+			3 = basic_charge_01
+			3 = basic_charge_01b
+			3 = basic_ordinary_01
+			3 = basic_ordinary_01_inverted
+		}
+
+		# Catch all for rokugani stuff
+		special_selection = {
+			trigger = {
+				scope:culture = {
+					OR = {
+						has_coa_gfx = crab_group_coa_gfx 
+						has_coa_gfx = crane_group_coa_gfx 
+						has_coa_gfx = dragon_group_coa_gfx 
+						has_coa_gfx = lion_group_coa_gfx 
+						has_coa_gfx = phoenix_group_coa_gfx 
+						has_coa_gfx = scorpion_group_coa_gfx 
+						has_coa_gfx = unicorn_group_coa_gfx 
+						has_coa_gfx = imperial_group_coa_gfx 
+						has_coa_gfx = minor_group_coa_gfx 
+					}
+				}
+			}
+			100 = basic_charge
+			100 = basic_charge_inv
+			10 = circular_combo_1
+			10 = circular_combo_1_inv
+		}
+
 		
 		#500 = basic_charge_02
 		#50000 = basic_charge_03
@@ -39,97 +82,111 @@ coat_of_arms_template_lists = {
 			trigger = { 
 				is_imperial_family = yes 
 			}
-			10000 = basic_imperial_template_01 # Rokugan TODO Placeholder
+			10000 = basic_charge_imperial
+			10000 = basic_charge_inv_imperial
+			1000 = circular_combo_1_imperial
+			1000 = circular_combo_1_inv_imperial
 		}
 
 		### MAJOR CLANS ###
+		# CRAB
 		special_selection = {
 			trigger = { 
-				is_major_clan = yes 
+				scope:culture = {
+					 has_coa_gfx = crab_group_coa_gfx 
+				} 
 			}
-			1 = basic_charge_01 # Rokugan TODO Placeholder
-			# CRAB
-			special_selection = {
-				trigger = { 
-					scope:culture = {
-						 has_coa_gfx = crab_group_coa_gfx 
-					} 
-				}
-				10000 = basic_crab_template_01
+			10000 = basic_charge_crab
+			10000 = basic_charge_inv_crab
+			1000 = circular_combo_1_crab
+			1000 = circular_combo_1_inv_crab
+		}
+		# CRANE
+		special_selection = {
+			trigger = { 
+				scope:culture = {
+					 has_coa_gfx = crane_group_coa_gfx 
+				} 
 			}
-			# CRANE
-			special_selection = {
-				trigger = { 
-					scope:culture = {
-						 has_coa_gfx = crane_group_coa_gfx 
-					} 
-				}
-				10000 = basic_crane_template_01
+			10000 = basic_charge_crane
+			10000 = basic_charge_inv_crane
+			1000 = circular_combo_1_crane
+			1000 = circular_combo_1_inv_crane
+		}
+		# DRAGON
+		special_selection = {
+			trigger = { 
+				scope:culture = {
+					 has_coa_gfx = dragon_group_coa_gfx 
+				} 
 			}
-			# DRAGON
-			special_selection = {
-				trigger = { 
-					scope:culture = {
-						 has_coa_gfx = dragon_group_coa_gfx 
-					} 
-				}
-				10000 = basic_dragon_template_01
+			10000 = basic_charge_dragon
+			10000 = basic_charge_inv_dragon
+			1000 = circular_combo_1_dragon
+			1000 = circular_combo_1_inv_dragon
+		}
+		# LION
+		special_selection = {
+			trigger = { 
+				scope:culture = {
+					 has_coa_gfx = lion_group_coa_gfx 
+				} 
 			}
-			# LION
-			special_selection = {
-				trigger = { 
-					scope:culture = {
-						 has_coa_gfx = lion_group_coa_gfx 
-					} 
-				}
-				10000 = basic_lion_template_01
+			10000 = basic_charge_lion
+			10000 = basic_charge_inv_lion
+			1000 = circular_combo_1_lion
+			1000 = circular_combo_1_inv_lion
+		}
+		# PHOENIX
+		special_selection = {
+			trigger = { 
+				scope:culture = {
+					 has_coa_gfx = phoenix_group_coa_gfx 
+				} 
 			}
-			# PHOENIX
-			special_selection = {
-				trigger = { 
-					scope:culture = {
-						 has_coa_gfx = phoenix_group_coa_gfx 
-					} 
-				}
-				10000 = basic_phoenix_template_01
+			10000 = basic_charge_phoenix
+			10000 = basic_charge_inv_phoenix
+			1000 = circular_combo_1_phoenix
+			1000 = circular_combo_1_inv_phoenix
+		}
+		# SCORPION
+		special_selection = {
+			trigger = { 
+				scope:culture = {
+					 has_coa_gfx = scorpion_group_coa_gfx 
+				} 
 			}
-			# SCORPION
-			special_selection = {
-				trigger = { 
-					scope:culture = {
-						 has_coa_gfx = scorpion_group_coa_gfx 
-					} 
-				}
-				10000 = basic_scorpion_template_01
+			10000 = basic_charge_scorpion
+			10000 = basic_charge_inv_scorpion
+			1000 = circular_combo_1_scorpion
+			1000 = circular_combo_1_inv_scorpion
+		}
+		# UNICORN
+		special_selection = {
+			trigger = { 
+				scope:culture = {
+					 has_coa_gfx = unicorn_group_coa_gfx 
+				} 
 			}
-			# UNICORN
-			special_selection = {
-				trigger = { 
-					scope:culture = {
-						 has_coa_gfx = unicorn_group_coa_gfx 
-					} 
-				}
-				10000 = basic_unicorn_template_01
-			}
+			10000 = basic_charge_unicorn
+			10000 = basic_charge_inv_unicorn
+			1000 = circular_combo_1_unicorn
+			1000 = circular_combo_1_inv_unicorn
 		}
 
 		### MINOR CLANS ###
+		# MANTIS
 		special_selection = {
 			trigger = { 
-				is_minor_clan = yes 
+				scope:culture = {
+					 has_coa_gfx = mantis_group_coa_gfx 
+				} 
 			}
-			1 = basic_charge_01 # Rokugan TODO Placeholder
-			# MANTIS
-			special_selection = {
-				trigger = { 
-					scope:culture = {
-						 has_coa_gfx = mantis_group_coa_gfx 
-					} 
-				}
-				10000 = mantis_crane_template_01
-			}
+			10000 = basic_charge_mantis
+			10000 = basic_charge_inv_mantis
+			1000 = circular_combo_1_mantis
+			1000 = circular_combo_1_inv_mantis
 		}
-
 
 		
 		# Crosses
