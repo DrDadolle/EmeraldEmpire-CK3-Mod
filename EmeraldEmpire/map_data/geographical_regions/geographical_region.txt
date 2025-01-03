@@ -486,6 +486,12 @@ world_rokugan = {
 		rokugan_scorpion rokugan_shinomen_mori rokugan_spine_world_mountains rokugan_spice_and_silk_isles
 	}
 }
+
+world_shadowlands = {
+	regions = {
+		world_shadowlands_earthquake_bay world_shadowlands_festering_pit world_shadowlands_twilight_mountains
+	}
+}
 ###########################################################################
 # Graphical Regions
 ###########################################################################
@@ -515,6 +521,16 @@ graphical_world_shadowlands = {
 ghw_region_otosan_uchi = {
 	regions = {
 		rokugan_imperial
+	}
+}
+
+
+#####################
+# Other Stuff
+#####################
+custom_old_shadowlands_forest = {
+	regions = {
+		d_tsumegiri
 	}
 }
 
@@ -551,9 +567,15 @@ material_wood_yew = {}
 
 # EP2 Bow Woods
 material_woods_bamboo = {
+	regions = {
+		world_rokugan world_shadowlands
+	}
 }
 
 material_woods_cherry = {
+	regions = {
+		world_rokugan
+	}
 }
 
 material_woods_dogwood = {
@@ -566,6 +588,9 @@ material_woods_hickory = {
 }
 
 material_woods_palm = {
+	regions = {
+		rokugan_spice_and_silk_isles
+	}
 }
 
 material_woods_mulberry = {
@@ -582,9 +607,9 @@ material_woods_mediterranean = {
 material_woods_sri_lanka = {}
 
 material_cloth_no_silk = {
-	# regions = {
-	# 	world_africa_west
-	# }
+	regions = {
+		world_rokugan world_shadowlands
+	}
 }
 
 material_cloth_linen = {}
@@ -704,24 +729,13 @@ hunt_animal_gazelle_region = {}
 
 # Boar Spread
 hunt_animal_boar_region = {
-	regions = {
-		world_rokugan	
-	}
 }
 
 # Bear Spread
-hunt_animal_bear_region = {
-	regions = {
-		world_rokugan	
-	}
-}
+hunt_animal_bear_region = {}
 
 # Big Cat Spread
-hunt_animal_big_cat_region = {
-	regions = {
-		world_rokugan	
-	}
-}
+hunt_animal_big_cat_region = {}
 
 # Bison Spread
 hunt_animal_bison_region = {}
@@ -729,11 +743,7 @@ hunt_animal_bison_region = {}
 # Aurochs Spread
 hunt_animal_aurochs_region = {}
 
-hunt_animal_reindeer_region = {
-	regions = {
-		rokugan_dragon	
-	}
-}
+hunt_animal_reindeer_region = {}
 
 hunt_animal_elk_region = {}
 

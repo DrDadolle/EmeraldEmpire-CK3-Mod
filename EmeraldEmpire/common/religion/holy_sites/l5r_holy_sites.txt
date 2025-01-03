@@ -363,8 +363,7 @@ festering_pit_of_fuleng = {
 	character_modifier = {
 		name = festering_pit_of_fuleng_effect_name
 		martial_per_piety_level = 1
-		dread_baseline_add = 10
-		controlled_province_advantage = 5
+		monster_siege_value_add = 0.1
 	}
 }
 

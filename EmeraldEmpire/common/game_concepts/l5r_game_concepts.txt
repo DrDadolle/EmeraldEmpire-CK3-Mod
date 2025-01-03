@@ -157,3 +157,11 @@ ruins_holding = {
 	parent = holding_type
 	texture = "gfx/interface/icons/icon_holding_castle.dds"
 }
+
+monster = {
+	parent = men_at_arms
+}
+
+heavy_monster = {
+	parent = men_at_arms
+}

@@ -108,4 +108,14 @@
  game_concept_maho:0 "Mahō"
  game_concept_maho_desc:0 "Mahō is an evil sorcery practiced only by sorcerers called [mahotsukai|E]. It is poared by blood, that of the user or their victims, whether willing or unwilling. The purer the blood, the greater the power it imparted, and the more powerful the [kansen|E] that would answer the summoner's call. [kansen|E] ceaselessly corrupted those who wielded their power, turning [mahotsukai|E] to [fuleng|E]'s wicked ends whether they knew it or not."
 
+
+ ### SHADOWLANDS CONCEPT ###
+ heavy_monster:0 "[heavy_monster|E]"
+ game_concept_heavy_monster:0 "Monster"
+ game_concept_heavy_monster_desc:0 "Monsters are unique creatures and can be considered similar to heavily armoured [men_at_arms|E] who perform a specific role on the battlefield for certain races.\n\nWhile each kind of Monster is unique, they generally [counter|E] [skirmishers|E], and sometime [heavy_infantry|E]. They are in turn countered by [spearmen|E] and [heavy_cavalry|E].\n\nMonsters often have specific strengths and weaknesses on certain [terrain|E] types.\n\nWhen compared to [light_cavalry|E] and [heavy_cavalry|E], they usually will have greater [toughness|E], but lesser numbers overall."
+ #
+ monster:0 "[monster|E]"
+ game_concept_monster:0 "Monster"
+ game_concept_monster_desc:0 "Monsters are unique creatures and can be considered similar to heavily armoured [men_at_arms|E] who perform a specific role on the battlefield for certain races."
+ 
  
