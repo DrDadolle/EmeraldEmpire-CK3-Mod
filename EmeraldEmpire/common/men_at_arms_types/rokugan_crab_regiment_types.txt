@@ -36,6 +36,8 @@ crab_hida_defender= {
 	counters = {
 		skirmishers = 1
 		pikemen = 1
+		#L5R Added
+		monster = 0.5
 	}
 	
  	terrain_bonus = {

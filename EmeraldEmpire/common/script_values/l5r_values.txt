@@ -8,3 +8,24 @@ isawa_shindoshi_extra_chance = 10
 ishiken_chance = 2
 ishiken_extra_player_chance = 2
 isawa_ishiken_extra_chance = 4
+
+
+### Culture weight
+culture_ai_weight_monsters = {
+	value = -10
+	
+	if = { # Cultures that favours monsters
+		limit = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_spider }
+			}
+		}
+		add = 20
+	}
+	if = { # Cultures that dislike monsters
+		limit = {
+			is_from_rokugani_culture = yes
+		}
+		add = -100
+	}
+}

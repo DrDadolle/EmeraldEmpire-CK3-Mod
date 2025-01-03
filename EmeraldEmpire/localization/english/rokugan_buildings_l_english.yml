@@ -36,6 +36,14 @@
  ##################
  ##### Buildings
  ##################
+  stationed_monster_damage_mult:0 "[stationed|E] [monster|E] [damage|E]"
+  stationed_monster_toughness_mult:0 "[stationed|E] [monster|E] [toughness|E]"
+  stationed_monster_pursuit_mult:0 "[stationed|E] [monster|E] [pursuit|E]"
+  stationed_monster_screen_mult:0 "[stationed|E] [monster|E] [screen|E]"
+  stationed_monster_damage_add:0 "[stationed|E] [monster|E] [damage|E]"
+  stationed_monster_toughness_add:0 "[stationed|E] [monster|E] [toughness|E]"
+  stationed_monster_pursuit_add:0 "[stationed|E] [monster|E] [pursuit|E]"
+  stationed_monster_screen_add:0 "[stationed|E] [monster|E] [screen|E]"
 
  ##################
  ##### Special Building

@@ -147,6 +147,8 @@ festering_pit_01 = {
 
 	province_modifier = {
 		garrison_size = 0.25
+		stationed_monster_damage_mult = 1
+		stationed_monster_toughness_mult = 1
 	}
 
 	county_modifier = {
@@ -158,10 +160,14 @@ festering_pit_01 = {
 	character_modifier = {
 		dread_gain_mult = 0.2
 		dread_baseline_add = 20
-		levy_maintenance = -0.25	
-		levy_reinforcement_rate = 0.25
+		dread_decay_mult = -0.2
+		army_maintenance_mult = -0.30
+		levy_reinforcement_rate = 1
+		levy_size = 1
 		monthly_prestige = 1
-		knight_limit = 3
+		maa_damage_mult = 0.20
+		maa_toughness_mult = 0.20
+		men_at_arms_recruitment_cost = -0.10
 	}
 	
 	ai_value = {
