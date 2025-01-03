@@ -126,6 +126,12 @@ hunt_animal_temperate_terrain_trigger = {
 		# Rough
 		terrain = hills
 		terrain = mountains
+		#L5R Added
+		terrain = shadowlands_plains
+		terrain = shadowlands_wetlands
+		terrain = shadowlands_forest
+		terrain = shadowlands_hills
+		terrain = shadowlands_mountains
 	}
 }
 
@@ -153,6 +159,10 @@ hunt_animal_wolf_trigger = {
 			terrain = forest
 			terrain = jungle
 			terrain = mountains
+			#L5R Added
+			terrain = shadowlands_forest
+			terrain = shadowlands_hills
+			terrain = shadowlands_mountains
 		}
 	}
 }
@@ -259,10 +269,11 @@ hunt_animal_big_cat_trigger = {
 }
 
 hunt_animal_lion_trigger = {
-	OR = {
-		geographical_region = world_africa
-		geographical_region = world_middle_east
-	}
+	#L5R Added
+	# OR = {
+	# 	geographical_region = world_africa
+	# 	geographical_region = world_middle_east
+	# }
 	OR = {
 		terrain = drylands
 		terrain = desert
@@ -271,6 +282,10 @@ hunt_animal_lion_trigger = {
 		terrain = forest
 		terrain = hills
 		terrain = mountains
+		#L5R Added
+		terrain = shadowlands_forest
+		terrain = shadowlands_hills
+		terrain = shadowlands_mountains
 	}
 	NOR = {
 		terrain = farmlands
@@ -293,6 +308,10 @@ hunt_animal_tiger_trigger = {
 		terrain = taiga
 		terrain = mountains
 		terrain = hills
+		#L5R Added
+		terrain = shadowlands_forest
+		terrain = shadowlands_hills
+		terrain = shadowlands_mountains
 	}
 	NOR = {
 		terrain = farmlands
@@ -353,42 +372,39 @@ hunt_animal_big_available_trigger = {
 					# county = title:c_naxos # Extinct
 				}
 			}
-			#L5R Disabled
-			# trigger_if = {
-			# 	limit = { exists = duchy }
-			# 	NOR = {
-			# 		duchy = title:d_canarias # Not native
-			# 		duchy = title:d_krete # Extinct
-			# 		duchy = title:d_iceland # Not native
-			# 		duchy = title:d_mallorca # Not native
-			# 		duchy = title:d_socotra # Not native
-			# 	}
-			# }
+			#L5R Modified
+			trigger_if = {
+				limit = { exists = duchy }
+				NOR = {
+					duchy = title:d_yoritomo # Not Native
+					# duchy = title:d_canarias # Not native
+					# duchy = title:d_krete # Extinct
+					# duchy = title:d_iceland # Not native
+					# duchy = title:d_mallorca # Not native
+					# duchy = title:d_socotra # Not native
+				}
+			}
 		}
 	}
 }
 
 hunt_animal_small_available_trigger = {
-	# OR = {
+	OR = {
 		OR = {
 			has_building_or_higher = hunting_grounds_01
 			has_building_or_higher = royal_forest_01
 		}
-		#L5R Disabled
-		# AND = {
-		# 	trigger_if = {
-		# 		limit = { exists = county }
-		# 		NOR = {
-		# 			county = title:c_dahlak # Not native
-		# 			county = title:c_maldives # Not native
-		# 		}
-		# 	}
-		# 	trigger_if = {
-		# 		limit = { exists = duchy }
-		# 		NOT = { duchy = title:d_canarias } # Not native 
-		# 	}
-		# }
-	# }
+		AND = {
+			#L5R Modified
+			trigger_if = {
+				limit = { exists = county }
+				NOR = {
+					county = title:c_shadowlands_festering_pit_5 # No native hunting game around the pit
+					county = title:c_nekoma_province # Not native
+				}
+			}
+		}
+	}
 }
 
 hunt_activity_attendee_trigger = {
