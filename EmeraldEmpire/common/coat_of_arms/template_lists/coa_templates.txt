@@ -6,7 +6,6 @@ coat_of_arms_template_lists = {
 	all = {
 		# Simple catch all
 		1 = blank_charge
-
 		
 		special_selection = {
 			trigger = {
@@ -20,37 +19,15 @@ coat_of_arms_template_lists = {
 						has_coa_gfx = scorpion_group_coa_gfx 
 						has_coa_gfx = unicorn_group_coa_gfx 
 						has_coa_gfx = imperial_group_coa_gfx 
+						has_coa_gfx = mantis_group_coa_gfx 
 						has_coa_gfx = minor_group_coa_gfx 
 					}
 				}
 			}
-			3 = basic_charge_01
-			3 = basic_charge_01b
-			3 = basic_ordinary_01
-			3 = basic_ordinary_01_inverted
-		}
-
-		# Catch all for rokugani stuff
-		special_selection = {
-			trigger = {
-				scope:culture = {
-					OR = {
-						has_coa_gfx = crab_group_coa_gfx 
-						has_coa_gfx = crane_group_coa_gfx 
-						has_coa_gfx = dragon_group_coa_gfx 
-						has_coa_gfx = lion_group_coa_gfx 
-						has_coa_gfx = phoenix_group_coa_gfx 
-						has_coa_gfx = scorpion_group_coa_gfx 
-						has_coa_gfx = unicorn_group_coa_gfx 
-						has_coa_gfx = imperial_group_coa_gfx 
-						has_coa_gfx = minor_group_coa_gfx 
-					}
-				}
-			}
-			100 = basic_charge
-			100 = basic_charge_inv
-			10 = circular_combo_1
-			10 = circular_combo_1_inv
+			1000 = basic_charge_01
+			1000 = basic_charge_01b
+			200 = basic_ordinary_01
+			200 = basic_ordinary_01_inverted
 		}
 
 		
@@ -80,7 +57,9 @@ coat_of_arms_template_lists = {
 		### IMPERIAL ###
 		special_selection = {
 			trigger = { 
-				is_imperial_family = yes 
+				scope:culture = {
+					has_coa_gfx = imperial_group_coa_gfx 
+			   } 
 			}
 			10000 = basic_charge_imperial
 			10000 = basic_charge_inv_imperial
@@ -93,7 +72,7 @@ coat_of_arms_template_lists = {
 		special_selection = {
 			trigger = { 
 				scope:culture = {
-					 has_coa_gfx = crab_group_coa_gfx 
+					has_coa_gfx = crab_group_coa_gfx 
 				} 
 			}
 			10000 = basic_charge_crab
@@ -113,7 +92,7 @@ coat_of_arms_template_lists = {
 			1000 = circular_combo_1_crane
 			1000 = circular_combo_1_inv_crane
 		}
-		# DRAGON
+		# # DRAGON
 		special_selection = {
 			trigger = { 
 				scope:culture = {
@@ -174,8 +153,8 @@ coat_of_arms_template_lists = {
 			1000 = circular_combo_1_inv_unicorn
 		}
 
-		### MINOR CLANS ###
-		# MANTIS
+		# ### MINOR CLANS ###
+		# # MANTIS
 		special_selection = {
 			trigger = { 
 				scope:culture = {
@@ -186,6 +165,18 @@ coat_of_arms_template_lists = {
 			10000 = basic_charge_inv_mantis
 			1000 = circular_combo_1_mantis
 			1000 = circular_combo_1_inv_mantis
+		}
+		# All others
+		special_selection = {
+			trigger = { 
+				scope:culture = {
+					 has_coa_gfx = minor_group_coa_gfx 
+				} 
+			}
+			10000 = basic_charge
+			10000 = basic_charge_inv
+			1000 = circular_combo_1
+			1000 = circular_combo_1_inv
 		}
 
 		

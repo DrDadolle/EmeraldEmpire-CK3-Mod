@@ -26,31 +26,35 @@ is_from_samurai_culture = {
 
 # Hardcoded culture list
 is_from_rokugani_culture = {
+     culture = { is_rokugani_culture = yes }
+}
+
+is_rokugani_culture = {
     OR = {
-        culture = { has_cultural_pillar = heritage_crane }
-        culture = { has_cultural_pillar = heritage_lion }
-        culture = { has_cultural_pillar = heritage_phoenix }
-        culture = { has_cultural_pillar = heritage_dragon }
-        culture = { has_cultural_pillar = heritage_scorpion }
-        culture = { has_cultural_pillar = heritage_crab }
-        culture = { has_cultural_pillar = heritage_unicorn }
-        culture = { has_cultural_pillar = heritage_imperial }
-        culture = { has_cultural_pillar = heritage_kitsune }
-        culture = { has_cultural_pillar = heritage_kasuga }
-        culture = { has_cultural_pillar = heritage_tonbo }
-        culture = { has_cultural_pillar = heritage_toritaka }
-        culture = { has_cultural_pillar = heritage_usagi }
-        culture = { has_cultural_pillar = heritage_yoritomo }
-        culture = { has_cultural_pillar = heritage_tsuruchi }
-        culture = { has_cultural_pillar = heritage_suzume }
-        culture = { has_cultural_pillar = heritage_ichiro }
-        culture = { has_cultural_pillar = heritage_nekoma }
-        culture = { has_cultural_pillar = heritage_komori }
-        culture = { has_cultural_pillar = heritage_shika }
-        culture = { has_cultural_pillar = heritage_kaikoga }
-        culture = { has_cultural_pillar = heritage_chuda }
-        culture = { has_cultural_pillar = heritage_kuma }
-        culture = { has_cultural_pillar = heritage_kaeru }
+       has_cultural_pillar = heritage_crane 
+       has_cultural_pillar = heritage_lion 
+       has_cultural_pillar = heritage_phoenix 
+       has_cultural_pillar = heritage_dragon 
+       has_cultural_pillar = heritage_scorpion 
+       has_cultural_pillar = heritage_crab 
+       has_cultural_pillar = heritage_unicorn 
+       has_cultural_pillar = heritage_imperial 
+       has_cultural_pillar = heritage_kitsune 
+       has_cultural_pillar = heritage_kasuga 
+       has_cultural_pillar = heritage_tonbo 
+       has_cultural_pillar = heritage_toritaka 
+       has_cultural_pillar = heritage_usagi 
+       has_cultural_pillar = heritage_yoritomo 
+       has_cultural_pillar = heritage_tsuruchi 
+       has_cultural_pillar = heritage_suzume 
+       has_cultural_pillar = heritage_ichiro 
+       has_cultural_pillar = heritage_nekoma 
+       has_cultural_pillar = heritage_komori 
+       has_cultural_pillar = heritage_shika 
+       has_cultural_pillar = heritage_kaikoga 
+       has_cultural_pillar = heritage_chuda 
+       has_cultural_pillar = heritage_kuma 
+       has_cultural_pillar = heritage_kaeru 
     }
 }
 
