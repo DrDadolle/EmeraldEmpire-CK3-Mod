@@ -37,6 +37,6 @@
 #####################
 #### MEN AT ARMS ####
 #####################
- monster_damage_mult:0 "[heavy_monster|E] [damage|E]"
- monster_toughness_mult:0 "[heavy_monster|E] [toughness|E]"
- monster_siege_value_add:0 "[heavy_monster|E] [siege_progress|E]"
+ monster_damage_mult:0 "[monster|E] [damage|E]"
+ monster_toughness_mult:0 "[monster|E] [toughness|E]"
+ monster_siege_value_add:0 "[monster|E] [siege_progress|E]"

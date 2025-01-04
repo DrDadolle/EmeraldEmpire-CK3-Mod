@@ -92,7 +92,7 @@ pit_oni = {
 	}
 
  	siege_tier = 1
- 	siege_value = 0.05
+ 	siege_value = 0.1
 	
  	terrain_bonus = {
 		# Very strong in shadowlands
@@ -126,7 +126,7 @@ giant_spiders = {
 			religion = { is_in_family = rf_shadowlands }
 			culture = { has_cultural_pillar = heritage_spider }
 			## special innovations
-			# culture = { has_innovation = innovation_giant_spiders_warfare }
+			culture = { has_innovation = innovation_giant_spiders_warfare }
 		}	
 
 	

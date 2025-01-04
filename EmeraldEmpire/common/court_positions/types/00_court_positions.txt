@@ -6173,7 +6173,8 @@ high_almoner_court_position = {
 			# 	}
 			# }
 			# Halved via obligation hook
-			else_if = {
+			# else_
+			if = {
 				limit = { 
 					court_position_obligation_hook_salary_trigger = {
 						POS = high_almoner

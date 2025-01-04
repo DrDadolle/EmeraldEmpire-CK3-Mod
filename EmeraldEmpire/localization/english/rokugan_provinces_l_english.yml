@@ -760,7 +760,7 @@
  c_black_peak_3:0 "c_black_peak_3"
  b_shadowlands_black_peak_7:0 "b_shadowlands_black_peak_7"
  b_shadowlands_black_peak_8:0 "b_shadowlands_black_peak_8"
- d_nezumi:0 "d_nezumi"
+ d_nezumi:0 "Broken Teeth"
  c_nezumi_1:0 "c_nezumi_1"
  b_nezumi_1:0 "b_nezumi_1"
  b_nezumi_2:0 "b_nezumi_2"
@@ -910,3 +910,7 @@
  uninhabited_islands_sea_south:0 "Sea of the Jade Dawn"
  shadowlands_sea:0 "Sea of Shadows"
  sabishii_detroit:0 "Lonely Detroit"
+
+
+ ### Geographical region
+ custom_old_shadowlands_forest:0 "Old Tsumegiri Forest"

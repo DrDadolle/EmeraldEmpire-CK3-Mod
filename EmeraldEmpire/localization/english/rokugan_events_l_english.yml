@@ -3,7 +3,7 @@
  ###### INTRODUCTION 
  ############################
  rokugan_introduction.0001.t:0 "Welcome to Rokugan"
- rokugan_introduction.0001.desc:0 "Welcome to the Emerald Empire Mod, an Legend of the Five Rings fan mod.\n It is currently in development by just  me and it's in alpha state, so expect content to be missing, placeholder graphics to be present, text to be incorrect (not a native), bug to be present, etc... If you would like to help, you are very welcome !\n I do not own any DLC so I cannot guarante any compatibility with any DLCs. I cannot guarantee compatibility with others mods. Run them at your own risk. \n Nevertheless, what do you want to know about this mod ?"
+ rokugan_introduction.0001.desc:0 "Welcome to the Emerald Empire Mod, an Legend of the Five Rings fan mod.\n It is currently in development and is in alpha state. \nSo expect content to be missing, placeholder graphics to be present, text to be incorrect, bugs to be present, etc...\n\n If you would like to help, you are very welcome !\n I do not own any DLC so I cannot guarante any compatibility with any DLCs. I cannot guarantee compatibility with others mods. Run them at your own risk. \n Nevertheless, what do you want to know about this mod ?"
  rokugan_introduction.0001.a:0 "This place and about myself"
  rokugan_introduction.0001.b:0 "Changes compared to vanilla"
  rokugan_introduction.0001.c:0 "The Empire of Rokugan"
@@ -22,10 +22,10 @@
  rokugan_introduction.0004.desc:0 "Rokugan is the setting of the Legend of the Five Rings franchise. It is based on feudal Japan with influences from other East Asian cultures, where samurai, shugenja, and trained courtiers vie for control of the noble courts. \n\n Rokugani society is based on a clan structure, with seven so-called 'Great Clans', as well as several minor clans. Each clan has areas of land bequeathed to them by the Emperor, which they were tasked with maintaining. The Emperor retained ownership of all lands, however, and the clans essentially rented the lands they used by paying taxes annually.\n\n The Great Clans were each formed by one of the Kami after their fall from Tengoku, and their histories dated back to the very beginning of the Empire. The Great Clans were made up of several family lines, and each Family had their own general purpose within the Clan. Each Clan also had a specific purpose within Rokugan -- some area of expertise or mandate that the specific Clan could fulfill better than any others."
 
  rokugan_introduction.0005.t:0 "The Shadowlands"
- rokugan_introduction.0005.desc:0 "As the Kami created the Empire of Rokugan, the fallen Kami Fu Leng created the Shadowlands. The Shadowlands is the wasteland that laid to the southwest of Rokugan, a twisted, nightmarish place corrupted by the power of Jigoku, the Realm of Evil. It is home to oni, ogres, trolls, goblins, the Lost and countless other vile creatures.\n\nCurrently, the Shadowlands are not mapped nor implemented. Their implementation will take a lot of time and require to create several 3D asset for all the oni, goblins and the like.\n Hopefully I will be able to implement it later."
+ rokugan_introduction.0005.desc:0 "As the Kami created the Empire of Rokugan, the fallen Kami Fu Leng created the Shadowlands. The Shadowlands is the wasteland that laid to the southwest of Rokugan, a twisted, nightmarish place corrupted by the power of Jigoku, the Realm of Evil. It is home to oni, ogres, trolls, goblins, the Lost and countless other vile creatures.\n\nCurrently, the Shadowlands is mapped but not implemented. Their implementation will take a lot of time and require to create several 3D asset for all the oni, goblins and the like.\n Hopefully I will be able to implement it later."
 
  rokugan_introduction.0006.t:0 "Magic System"
- rokugan_introduction.0006.desc:0 "Currently, there is no magic system implemented. The Shindoshi trait that some character have only gives passive bonus.\n In a later update, Shindoshi characters (as well as Mahotsukai ones) will be able to perform feats of magic using prayers to sacred spirits."
+ rokugan_introduction.0006.desc:0 "Currently, there is a placeholder magic system implemented, in the decision if you have the Shindoshin trait."
  ############################
  ###### MAJOR DECISION
  ############################

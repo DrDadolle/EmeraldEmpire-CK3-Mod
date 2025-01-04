@@ -529,8 +529,8 @@ ghw_region_otosan_uchi = {
 # Other Stuff
 #####################
 custom_old_shadowlands_forest = {
-	regions = {
-		d_tsumegiri
+	provinces = {
+		589 590 591 592 599 600
 	}
 }
 

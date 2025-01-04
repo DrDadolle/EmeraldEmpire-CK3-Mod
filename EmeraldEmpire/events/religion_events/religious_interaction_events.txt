@@ -1551,7 +1551,8 @@ religious_interaction.2100 = {
 							# 	faith = {
 							# 		has_doctrine = tenet_sun_worship
 							# 	}
-							}
+							# }
+							always = yes
 						}
 						desc = religious_interaction.2100.a.unbeliever
 					}

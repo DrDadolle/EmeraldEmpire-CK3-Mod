@@ -1453,7 +1453,7 @@ artifact_feature_earthware_stone_trigger = {
 	trigger_if = {
 		limit = { exists = scope:potter }
 		#L5R Modified
-		scope:potter.culture = { is_from_rokugani_culture = yes}
+		scope:potter.culture = { is_rokugani_culture = yes}
 		# scope:potter.culture = { has_cultural_pillar = heritage_chinese }
 	}
 	trigger_else = {
@@ -1479,6 +1479,7 @@ artifact_feature_earthware_porcelain_trigger = {
 	trigger_else = {
 		always = no
 	}
+	
 	trigger_if = {
 		limit = { exists = scope:wealth }
 		scope:wealth >= 60

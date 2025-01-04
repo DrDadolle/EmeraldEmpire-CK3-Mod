@@ -652,6 +652,10 @@ culture_ai_weight_vigmen = {
 	}
 }
 
+culture_ai_weight_monster = {
+	value = 20
+}
+
 counter_synergy_ai_weight_archers = {
 	value = 0
 	if = {
