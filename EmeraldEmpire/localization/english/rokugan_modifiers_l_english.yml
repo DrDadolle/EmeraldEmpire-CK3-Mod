@@ -33,10 +33,3 @@
  shadowlands_hills_travel_danger:0 "[GetTerrain( 'shadowlands_hills' ).GetName] [travel_danger|E]"
  shadowlands_mountains_travel_danger:0 "[GetTerrain( 'shadowlands_mountains' ).GetName] [travel_danger|E]"
  shadowlands_wetlands_travel_danger:0 "[GetTerrain( 'shadowlands_wetlands' ).GetName] [travel_danger|E]"
-
-#####################
-#### MEN AT ARMS ####
-#####################
- monster_damage_mult:0 "[heavy_monster|E] [damage|E]"
- monster_toughness_mult:0 "[heavy_monster|E] [toughness|E]"
- monster_siege_value_add:0 "[heavy_monster|E] [siege_progress|E]"

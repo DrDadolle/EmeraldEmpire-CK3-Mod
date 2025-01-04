@@ -263,13 +263,6 @@ culture_has_archer_cavalry_maa = {
 	}
 }
 
-#L5R Added
-culture_has_monster_maa = {
-	OR = {
-		has_cultural_pillar = heritage_spider
-	}
-}
-
 # Language trigger - Makes languages available when you diverge your culture
 language_is_shown_trigger = {
 	scope:character = {
