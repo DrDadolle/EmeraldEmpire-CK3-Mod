@@ -112,7 +112,7 @@ pit_oni = {
 
  	stack = 5
  	ai_quality = { value = culture_ai_weight_monsters }
- 	icon = oni
+ 	icon = pit_oni
 }
 
 giant_spiders = {

@@ -159,6 +159,6 @@ ruins_holding = {
 }
 
 monster = {
-	texture = "gfx/interface/icons/regimenttypes/war_elephants.dds"
+	texture = "gfx/interface/icons/regimenttypes/monster.dds"
 	parent = men_at_arms
 }
