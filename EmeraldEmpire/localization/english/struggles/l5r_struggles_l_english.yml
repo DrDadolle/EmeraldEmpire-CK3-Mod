@@ -1,0 +1,35 @@
+﻿l_english:
+ shadowlands_struggle:0 "Struggle in the Shadowlands"
+ shadowlands_struggle_desc:1 "The $shadowlands_struggle$ depicts the relationship between the [crabclan|E] and the [shadowlands|E]. One side trying to defend their live, and the other trying to destroy everything."
+ struggle_shadowlands_phase_dormant:0 "Dormant"
+ struggle_shadowlands_phase_dormant_desc:0 "The [shadowlands|E] are as peaceful as they can be. Demons and gobelins alike are weakened and disorganised."
+ struggle_shadowlands_phase_agitated:0 "Agitated"
+ struggle_shadowlands_phase_agitated_desc:0 "Oni and undead leader are growing stronger and stronger by the day. The [crabclan|E] must do everything it must to kill those leaders and divide them to avoid a full scale war."
+ struggle_shadowlands_phase_invasion:0 "Invasion"
+ struggle_shadowlands_phase_invasion_desc:0 "A [shadowlands|E] leader has emeerged a de facto leaders of large contingents of Shadowlands forces. [rokugan|U] must stand strong, for their reaction will determine its survival. "
+
+ # Catalysts
+ catalyst_l5r_crab_champion_died_violently:0 "Crab Clan Champion died violently [struggle_catalyst_catalyst|E]"
+ catalyst_l5r_crab_champion_died_naturally:0 "Crab Clan Champion died naturally  [struggle_catalyst_catalyst|E]"
+
+
+ # Effects
+
+
+ # Modifiers
+
+
+ # Events
+
+ shadowlands_struggle.0001.t:0 "The $shadowlands_struggle$"
+ shadowlands_struggle.0001.desc:0 "The evil denizens of the [shadowlands|E] all dream of one thing. Casting down the Kaiu Wall and invade [rokugan|E]. It is the sacred duty of the [crabclan|E] to protect it and defend the rest of the empire against hordes of undead and nightmares. A lot of their samurais will die, and the empire will never acknowledge their sacrifice, but it has been this way for centuries...\n\n$shadowlands_struggle_desc$"
+ shadowlands_struggle.0001.a:0 "We will not fail."
+ shadowlands_struggle.0001.b:0 "Let's break the Kaiu Wall!"
+ shadowlands_struggle.0001.c:0 "This fight doesn't concern me."
+
+
+ shadowlands_struggle.0002.t:0 "Shadowlands Invasion"
+ shadowlands_struggle.0002.desc:0 "Nobody quite knows what straw broke the camel's back. But it did. The [shadowlands|E] forces are united and they will attack Rokugan.\n\nTime will tell if the [crabclan|E] will manage to survive its assault..."
+ shadowlands_struggle.0002.a:0 "Let's defend Rokugan !"
+ shadowlands_struggle.0002.b:0 "We will destroy them."
+ shadowlands_struggle.0002.c:0 "Let's survive."

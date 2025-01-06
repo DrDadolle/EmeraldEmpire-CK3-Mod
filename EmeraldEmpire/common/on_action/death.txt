@@ -859,6 +859,63 @@ on_death = {
 			# 	}
 			# }
 		}
+		# L5R Added
+		# Crab Clan Champion death
+		if = {
+			limit = {
+				 has_title = title:k_crab_clan 
+			}
+			## Did they die violently?
+			if = {
+				limit = {
+					exists = scope:killer
+					any_character_struggle = {
+						involvement = involved
+						phase_has_catalyst = catalyst_l5r_crab_champion_died_violently
+					}
+					struggle:shadowlands_struggle ?= {
+						phase_has_catalyst = catalyst_l5r_crab_champion_died_violently
+						NOT = { has_variable = significant_character_death_cooldown }
+					}
+				}
+				struggle:shadowlands_struggle = {
+					activate_struggle_catalyst = {
+						catalyst = catalyst_l5r_crab_champion_died_violently
+						character = root
+					}
+					set_variable = {
+						name = significant_character_death_cooldown
+						value = yes
+						years = catalyst_cooldown_between_significant_character_deaths_years_value
+					}
+				}
+			}
+			## If not, give the natural version.
+			else_if = {
+				limit = {
+					any_character_struggle = {
+						involvement = involved
+						phase_has_catalyst = catalyst_l5r_crab_champion_died_naturally
+					}
+					struggle:shadowlands_struggle ?= {
+						phase_has_catalyst = catalyst_l5r_crab_champion_died_naturally
+						NOT = { has_variable = significant_character_death_cooldown }
+					}
+				}
+				struggle:shadowlands_struggle = {
+					activate_struggle_catalyst = {
+						catalyst = catalyst_l5r_crab_champion_died_naturally
+						character = root
+					}
+					set_variable = {
+						name = significant_character_death_cooldown
+						value = yes
+						years = catalyst_cooldown_between_significant_character_deaths_years_value
+					}
+				}
+			}
+		}
+
 		#L5R Disabled
 		# ## Caliphal deaths.
 		# if = {

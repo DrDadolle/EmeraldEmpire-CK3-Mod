@@ -1,4 +1,27 @@
-﻿#########################
+﻿##############################
+### Game Mechanic Concepts ###
+##############################
+
+#### Shadowlands Struggle ####
+
+shadowlands_struggle = {
+	parent = struggle
+}
+
+struggle_shadowlands_phase_dormant = {
+	parent = shadowlands_struggle
+}
+
+struggle_shadowlands_phase_agitated = {
+	parent = shadowlands_struggle
+}
+
+struggle_shadowlands_phase_invasion = {
+	parent = shadowlands_struggle
+}
+
+
+#########################
 #### World Concepts #####
 #########################
 conceptworld = {

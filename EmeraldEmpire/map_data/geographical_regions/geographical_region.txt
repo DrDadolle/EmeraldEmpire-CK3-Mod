@@ -492,6 +492,18 @@ world_shadowlands = {
 		world_shadowlands_earthquake_bay world_shadowlands_festering_pit world_shadowlands_twilight_mountains
 	}
 }
+
+#####################################						
+#####################################						
+######        STRUGGLE         ######						
+#####################################						
+#####################################
+rokugan_shadowlands_struggle_region = {
+	regions = {
+		rokugan_crab world_shadowlands
+	}
+}
+
 ###########################################################################
 # Graphical Regions
 ###########################################################################

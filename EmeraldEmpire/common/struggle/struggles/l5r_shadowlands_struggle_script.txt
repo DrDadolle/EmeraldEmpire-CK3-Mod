@@ -1,0 +1,398 @@
+﻿l5r_shadowlands_struggle = {
+
+	##################################################
+	# Setup
+	##################################################
+	### List of Culture and/or Faiths considered as part of the Struggle from the beginning and independently of the involvement prerequisites
+	cultures = {
+        # Crab
+        hida
+        hiruma
+        kuni
+        kaiu
+        yasuki
+        
+        # Shadowlands
+        daigotsu
+        gyushi
+        dark_moto
+	}
+	faiths = {
+        # Rokugani Faith
+        cult_ancestors # Keep it ?
+
+        # Shadowlands Faiths
+        faith_cult_of_fu_leng
+        faith_cult_of_atsuko
+        faith_obsidian_bride
+	}
+	regions = { 
+        rokugan_shadowlands_struggle_region
+	}
+
+	# A culture or faith becomes involved if 50% of the total number of counties belonging to it are inside the struggle region.
+	involvement_prerequisite_percentage = 0.5
+
+	transition_state_duration = { months = 3 }
+
+	on_start = {
+        #Start the over-time catalysts.
+		trigger_event = neutral_struggle.0001
+	}
+
+	on_change_phase = {
+        #L5R TODO
+		# every_player = { # Global News Announcement
+		# 	trigger_event = {
+		# 		id = balrog_struggle.0004
+		# 		days = 1
+		# 	}
+		# }
+	}
+
+	# Root = the current struggle
+	# scope:character = the character which has joined the struggle
+ 	on_join = {
+        if = {
+			limit = { is_ai = no }
+			trigger_event = shadowlands_struggle.0001
+		}
+ 	}  
+
+	##################################################
+	# Phases
+	##################################################
+
+	start_phase = struggle_shadowlands_phase_agitated
+
+	phase_list = {
+
+        struggle_shadowlands_phase_dormant = {
+            ##################################################
+			# General Set-Up
+
+			duration = { points = 1000 }
+
+			future_phases = {
+
+				struggle_shadowlands_phase_agitated = {
+
+					catalysts = {
+                        catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
+						catalyst_l5r_crab_champion_died_violently = monumental_struggle_catalyst_gain
+                        catalyst_l5r_crab_champion_died_naturally = major_struggle_catalyst_gain
+					}
+
+				}
+
+			}
+
+			war_effects = {
+				name = WAR_EFFECTS_NAME
+
+				###### Common
+
+				# Nothing
+
+				###### Involved
+
+
+				###### Interlopers
+
+
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			faith_effects = {
+				name = FAITH_EFFECTS_NAME
+
+				###### Common
+
+				# Nothing
+
+				###### Involved
+
+
+				###### Interlopers
+
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			culture_effects = {
+				name = CULTURE_EFFECTS_NAME
+
+				###### Common
+
+				# Nothing
+
+				###### Involved
+
+				# Nothing
+
+				###### Interlopers
+
+				# Nothing
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			other_effects = {
+				name = OTHER_EFFECTS_NAME
+
+				###### Common
+
+
+				###### Involved
+
+
+
+				###### Interlopers
+
+
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			# We are listing all available decision to give players insights on how they can end the Struggle
+			ending_decisions = {
+                l5r_shadowlands_struggle_ending_shadowlands_domination
+                l5r_shadowlands_struggle_ending_crab_domination
+                l5r_shadowlands_struggle_ending_spider_domination
+			}
+        }
+
+        struggle_shadowlands_phase_agitated = {
+            ##################################################
+			# General Set-Up
+
+			duration = { points = 1000 }
+
+			future_phases = {
+
+				struggle_shadowlands_phase_dormant = {
+
+					catalysts = {
+						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
+					}
+				}
+
+                struggle_shadowlands_phase_invasion = {
+
+					catalysts = {
+						catalyst_l5r_crab_champion_died_violently = monumental_struggle_catalyst_gain
+                        catalyst_l5r_crab_champion_died_naturally = major_struggle_catalyst_gain
+					}
+				}
+
+			}
+
+			war_effects = {
+				name = WAR_EFFECTS_NAME
+
+				###### Common
+
+				# Nothing
+
+				###### Involved
+
+
+				###### Interlopers
+
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			faith_effects = {
+				name = FAITH_EFFECTS_NAME
+
+				###### Common
+
+				# Nothing
+
+				###### Involved
+
+				###### Interlopers
+
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			culture_effects = {
+				name = CULTURE_EFFECTS_NAME
+
+				###### Common
+
+				# Nothing
+
+				###### Involved
+
+				# Nothing
+
+				###### Interlopers
+
+				# Nothing
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			other_effects = {
+				name = OTHER_EFFECTS_NAME
+
+				###### Common
+
+
+				###### Involved
+
+				###### Interlopers
+
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			# We are listing all available decision to give players insights on how they can end the Struggle
+			ending_decisions = {
+                l5r_shadowlands_struggle_ending_shadowlands_domination
+                l5r_shadowlands_struggle_ending_crab_domination
+                l5r_shadowlands_struggle_ending_spider_domination
+			}
+        }
+
+        struggle_shadowlands_phase_invasion = {
+            ##################################################
+			# General Set-Up
+
+			duration = { points = 1000 }
+
+			future_phases = {
+
+				struggle_shadowlands_phase_dormant = {
+
+					catalysts = {
+						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
+					}
+
+				}
+
+			}
+
+			war_effects = {
+				name = WAR_EFFECTS_NAME
+
+				###### Common
+
+				# Nothing
+
+				###### Involved
+
+				###### Interlopers
+
+
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			faith_effects = {
+				name = FAITH_EFFECTS_NAME
+
+				###### Common
+
+				# Nothing
+
+				###### Involved
+
+
+
+				###### Interlopers
+
+
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			culture_effects = {
+				name = CULTURE_EFFECTS_NAME
+
+				###### Common
+
+				# Nothing
+
+				###### Involved
+
+				# Nothing
+
+				###### Interlopers
+
+				# Nothing
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			other_effects = {
+				name = OTHER_EFFECTS_NAME
+
+				###### Common
+
+				###### Involved
+
+				###### Interlopers
+
+
+				###### Uninvolved
+
+				# Nothing
+
+			}
+
+			# We are listing all available decision to give players insights on how they can end the Struggle
+			ending_decisions = {
+                l5r_shadowlands_struggle_ending_shadowlands_domination
+                l5r_shadowlands_struggle_ending_crab_domination
+                l5r_shadowlands_struggle_ending_spider_domination
+			}
+        }
+
+
+	}
+
+}
+# minimal_struggle_catalyst_over_time_gain = 1
+# minor_struggle_catalyst_over_time_gain = 2
+# medium_struggle_catalyst_over_time_gain = 3
+# major_struggle_catalyst_over_time_gain = 5
+# massive_struggle_catalyst_over_time_gain = 10
+# monumental_struggle_catalyst_over_time_gain = 20

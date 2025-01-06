@@ -1,0 +1,134 @@
+﻿# Shadowlands beats the crab
+l5r_shadowlands_struggle_ending_shadowlands_domination = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/struggle_balrog_ending_kill_balrog.dds"
+	}
+	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_balrog_ending_kill_balrog_button.dds"
+
+	title = l5r_shadowlands_struggle_ending_shadowlands_domination_decision
+	desc = l5r_shadowlands_struggle_ending_shadowlands_domination_desc
+	selection_tooltip = l5r_shadowlands_struggle_ending_shadowlands_domination_tooltip
+	confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
+	is_invisible = yes
+
+	ai_check_interval = 12
+
+	is_shown = {
+		is_landless_adventurer = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+
+	effect = {
+		# every_player = {
+		# 	trigger_event = shogunate_sengoku.0003
+		# }
+	}
+
+	ai_check_interval = 36
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+}
+
+# Crab beats the shadowlands
+l5r_shadowlands_struggle_ending_crab_domination = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/struggle_balrog_ending_kill_balrog.dds"
+	}
+	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_balrog_ending_kill_balrog_button.dds"
+
+	title = l5r_shadowlands_struggle_ending_crab_domination_decision
+	desc = l5r_shadowlands_struggle_ending_crab_domination_desc
+	selection_tooltip = l5r_shadowlands_struggle_ending_crab_domination_tooltip
+	confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
+	is_invisible = yes
+
+	ai_check_interval = 12
+
+	is_shown = {
+		is_landless_adventurer = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+
+	effect = {
+		# every_player = {
+		# 	trigger_event = shogunate_sengoku.0003
+		# }
+	}
+
+	ai_check_interval = 36
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+}
+
+# A new clan emerges ?
+l5r_shadowlands_struggle_ending_spider_domination = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/struggle_balrog_ending_kill_balrog.dds"
+	}
+	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_balrog_ending_kill_balrog_button.dds"
+
+	title = l5r_shadowlands_struggle_ending_spider_domination_decision
+	desc = l5r_shadowlands_struggle_ending_spider_domination_desc
+	selection_tooltip = l5r_shadowlands_struggle_ending_spider_domination_tooltip
+	confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
+	is_invisible = yes
+
+	ai_check_interval = 12
+
+	is_shown = {
+		is_landless_adventurer = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+
+	effect = {
+		# every_player = {
+		# 	trigger_event = shogunate_sengoku.0003
+		# }
+	}
+
+	ai_check_interval = 36
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+}

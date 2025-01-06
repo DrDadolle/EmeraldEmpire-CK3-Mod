@@ -1,0 +1,86 @@
+﻿namespace = shadowlands_struggle
+
+# 0000-0999 - Maintenance
+# 1000-1999 - Decision Events
+# 2000-2999 - Minor Shadowlands Events
+# 3000-3999 - Major Shadowlands Events
+# 4000-4999 - Invasion Balrog Events
+
+## Maintenance
+# Struggle Introduction
+shadowlands_struggle.0001 = {
+	content_source = l5r_dlc
+	type = character_event
+	window = fullscreen_event
+	title = shadowlands_struggle.0001.t
+	desc = shadowlands_struggle.0001.desc
+	theme = war
+	override_background = { reference = shadowlands_struggle_start }
+
+	trigger = {
+		is_ai = no
+ 	}
+
+	option = {
+		name = shadowlands_struggle.0001.a
+		trigger = {
+			religion = { is_in_family = rf_rokugan}
+		}
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
+	}
+	option = {
+		name = shadowlands_struggle.0001.b
+		trigger = {
+			religion = { is_in_family = rf_shadowlands}
+		}
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
+	}
+
+	option = {
+		name = shadowlands_struggle.0001.c
+		trigger = {
+			religion = { is_in_family = rf_gaijin}
+		}
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
+	}
+}
+
+
+# Struggle On Change Phase
+# The Great Invasion Begin
+shadowlands_struggle.0002 = {
+	content_source = l5r_dlc
+	type = character_event
+	window = fullscreen_event
+	title = shadowlands_struggle.0002.t
+	desc = shadowlands_struggle.0002.desc
+	theme = war
+	override_background = { reference = shadowlands_struggle_start }
+
+	trigger = {
+		is_ai = no
+		any_character_struggle = {
+			is_struggle_type = shadowlands_struggle
+			is_struggle_phase = struggle_shadowlands_phase_invasion
+		}
+ 	}
+	
+	option = {
+		name = shadowlands_struggle.0002.a
+		trigger = {
+			religion = { is_in_family = rf_rokugan}
+		}
+	}
+	option = {
+		name = shadowlands_struggle.0002.b
+		trigger = {
+			religion = { is_in_family = rf_shadowlands}
+		}
+	}
+	option = {
+		name = shadowlands_struggle.0002.c
+		trigger = {
+			religion = { is_in_family = rf_gaijin}
+		}
+	}
+}

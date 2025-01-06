@@ -24,6 +24,23 @@ on_game_start = {
 	}
 
 	effect = {
+		### START L5R Struggle Setup
+		# L5R Added
+		### Initialise Shadowlands Struggle
+		start_struggle = { 
+			struggle_type = shadowlands_struggle
+			start_phase = struggle_shadowlands_phase_dormant
+		}
+		if = {
+			limit = { # Elemental Imbalanced, shadowlands is agitated
+				game_start_date >= 1123.1.1
+			}
+			struggle:shadowlands_struggle = {
+				change_struggle_phase = struggle_shadowlands_phase_agitated	
+			}
+		}
+		### END L5R Struggle Setup
+
 		#Epidemics 3 months grace
 		set_global_variable = {
 			name = start_epidemic_grace
