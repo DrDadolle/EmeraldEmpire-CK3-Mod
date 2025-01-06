@@ -4,6 +4,12 @@
  trait_tea_master:0 "Tea Master"
  trait_tea_master_desc:0 "This character mastered the way of tea ceremony and knows the value of tea sets. This skill enables this person better diplomatic negotiations by organizing tea ceremony or giving precious tea cups."
  trait_tea_master_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] mastered the way of tea ceremony and knows the value of tea sets. This skill enables this person better diplomatic negotiations by organizing tea ceremony or giving precious tea cups."
+
+ #L5R Modified : replace Hashish by Opium
+ trait_hashishiyah:0 "Opium Smoker"
+ trait_hashishiyah_desc:0 "This character is dependent on the consumption of opium to deal with the stress of everyday life." 
+ trait_hashishiyah_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is dependent on the consumption of opium to deal with the stress of everyday life."
+ 
  
  ###################
  ### KAMI TRAITS ###
