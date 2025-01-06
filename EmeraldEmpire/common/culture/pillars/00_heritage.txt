@@ -575,6 +575,11 @@ heritage_spider = {
 		mercenary_count_mult = -10
 	}
 
+	character_modifier  = {
+		# Disliked by all rokugani faiths
+		rf_rokugan_opinion = -10
+	}
+
 	is_shown = {
 		heritage_is_shown_trigger = {
 			HERITAGE = heritage_spider

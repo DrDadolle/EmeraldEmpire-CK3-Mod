@@ -715,7 +715,7 @@ kami_descendant = {
 }
 ###############################
 ## Shadowlands traits
-undead= {
+undead = {
 	immortal = yes
 	flag = immune_to_disease  # L5R TODO why it can still become sick ?
 	life_expectancy = 10000
