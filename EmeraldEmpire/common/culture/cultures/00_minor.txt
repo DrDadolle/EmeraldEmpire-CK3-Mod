@@ -16,7 +16,7 @@
 		tradition_friend_spirits
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -46,7 +46,7 @@ moshi = {
 		tradition_friend_spirits
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -72,7 +72,7 @@ kasuga = {
 			tradition_bushido
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -101,7 +101,7 @@ tonbo = {
 		tradition_friend_spirits
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -129,7 +129,7 @@ toritaka = {
 			tradition_friend_spirits
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -157,7 +157,7 @@ usagi = {
 			tradition_adaptive_skirmishing
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -187,7 +187,7 @@ yoritomo = {
 			tradition_maritime_mercantilism
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { mantis_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -215,7 +215,7 @@ tsuruchi = {
 			tradition_swords_for_hire
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -243,7 +243,7 @@ suzume = {
 			tradition_hard_working #Keep it ?
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -272,7 +272,7 @@ ichiro = {
 			tradition_stand_and_fight
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -296,7 +296,7 @@ nekoma = {
 			tradition_family_entrepreneurship # No idea, placeholder
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -325,7 +325,7 @@ komori = {
 			tradition_friend_spirits
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -353,7 +353,7 @@ shika = {
 			tradition_friend_spirits
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -377,7 +377,7 @@ kaikoga = {
 			tradition_friend_spirits
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -405,7 +405,7 @@ chuda = { # Defunct culture
 			tradition_eye_for_an_eye
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -431,7 +431,7 @@ kuma = { # Defunct culture
 			tradition_forest_folk # their land were close to shinomen forest
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -455,7 +455,7 @@ heichi = { # Defunct boar culture ? Dispapered mysteriously
 			tradition_only_the_strong # Boars are big and strong and scary
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -480,7 +480,7 @@ kaeru = {
 			tradition_swords_for_hire
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }

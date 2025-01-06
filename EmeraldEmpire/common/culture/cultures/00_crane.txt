@@ -12,7 +12,7 @@
 		tradition_agrarian
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { crane_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -42,7 +42,7 @@ kakita = {
 		tradition_only_the_strong
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { crane_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -71,7 +71,7 @@ daidoji = {
 		 tradition_adaptive_skirmishing
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { crane_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -100,7 +100,7 @@ asahina = {
 		tradition_vegetarianism
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { crane_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -127,7 +127,7 @@ yasuki_crane = {
 		tradition_welcoming # instead of tradition_warrior_culture
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { crane_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }

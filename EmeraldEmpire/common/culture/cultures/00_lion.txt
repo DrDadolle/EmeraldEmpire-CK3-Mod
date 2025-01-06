@@ -13,7 +13,7 @@
 		#TODO tabletop warrior
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { lion_group_coa_gfx }
 	building_gfx = { chinese_building_gfx }
@@ -39,7 +39,7 @@ matsu = {
 		tradition_quarrelsome
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { lion_group_coa_gfx }
 	building_gfx = { chinese_building_gfx }
@@ -65,7 +65,7 @@ kitsu = {
 		tradition_mystical_ancestors
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { lion_group_coa_gfx }
 	building_gfx = { chinese_building_gfx }
@@ -91,7 +91,7 @@ ikoma = {
 		tradition_life_is_just_a_joke
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { lion_group_coa_gfx }
 	building_gfx = { chinese_building_gfx }

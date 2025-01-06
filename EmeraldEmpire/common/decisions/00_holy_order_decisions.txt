@@ -10,11 +10,12 @@
 		is_landed = yes
 		faith = {
 			NOR = {
-				religion_tag = fortunism_religion
-				religion_tag = ancestors_religion
+				# religion_tag = fortunism_religion
+				# religion_tag = ancestors_religion
+				# religion_tag = jigoku_religion
 				religion_tag = unicorn_religion
 				religion_tag = shinseism_religion
-				religion_tag = jigoku_religion
+
 			}		
 		}
 		NOT = {

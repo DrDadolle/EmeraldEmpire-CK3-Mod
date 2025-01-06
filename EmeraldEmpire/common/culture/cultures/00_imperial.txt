@@ -12,7 +12,7 @@
 		tradition_hereditary_hierarchy
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { imperial_group_coa_gfx }
 	building_gfx = { chinese_building_gfx }
@@ -38,7 +38,7 @@ otomo = {
 		tradition_eye_for_an_eye
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { imperial_group_coa_gfx }
 	building_gfx = { chinese_building_gfx }
@@ -64,7 +64,7 @@ miya = {
 		tradition_language_scholars
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { imperial_group_coa_gfx }
 	building_gfx = { chinese_building_gfx }
@@ -90,7 +90,7 @@ seppun = {
 		tradition_by_the_sword
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { imperial_group_coa_gfx }
 	building_gfx = { chinese_building_gfx }

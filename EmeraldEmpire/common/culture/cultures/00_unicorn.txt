@@ -12,7 +12,7 @@
 		tradition_hunters
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_unicorn
 	
 	coa_gfx = { unicorn_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -38,7 +38,7 @@ ide = {
 		tradition_xenophilic
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_unicorn
 	
 	coa_gfx = { unicorn_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -64,7 +64,7 @@ utaku = {
 		tradition_horse_breeder
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_unicorn
 	
 	coa_gfx = { unicorn_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -91,7 +91,7 @@ iuchi = {
 		tradition_friend_spirits
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_unicorn
 	
 	coa_gfx = { unicorn_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -120,7 +120,7 @@ moto = {
 		tradition_polygamous
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_unicorn
 	
 	coa_gfx = { unicorn_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }

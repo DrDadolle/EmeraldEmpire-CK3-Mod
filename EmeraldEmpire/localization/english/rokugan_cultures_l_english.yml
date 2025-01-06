@@ -1,5 +1,5 @@
 ﻿l_english:
- # Rokugan Common
+ # language
  language_northern_rokugani_name:0 "Northern Rokugani"
  language_central_rokugani_name:0 "Central Rokugani"
  language_southern_rokugani_name:0 "Southern Rokugani"
@@ -8,10 +8,32 @@
  language_island_rokugani_name:0 "Sea Rokugani"
  language_imperial_rokugani_name:0 "Imperial Rokugani"
  language_shadowlands_rokugani_name:0 "Shadowlands Speech"
+ language_yobanjin_name:0 "Yobanjin"
+ language_ujik_name:0 "Ujik"
+ # unit_gfx
  japanese_unit_gfx:0 "Rokugani"
  mongol_unit_gfx:0 "Unicorn"
- chinese_building_gfx:0 "Old Rokugani"
+ chinese_building_gfx:0 "Traditional Rokugani"
  japanese_building_gfx:0 "Rokugani"
+
+ # name_list
+ name_list_crane:0 "Crane"
+ name_list_unicorn:0 "Unicorn"
+ name_list_mongol:0 "Ujik"
+
+ # clothing_gfx
+ crab_clothing_gfx:0 "Crab"
+ crane_clothing_gfx:0 "Crane"
+ dragon_clothing_gfx:0 "Dragon"
+ lion_clothing_gfx:0 "Lion"
+ phoenix_clothing_gfx:0 "Phoenix"
+ scorpion_clothing_gfx:0 "Scorpion"
+ unicorn_clothing_gfx:0 "Unicorn"
+ imperial_clothing_gfx:0 "Imperial"
+ minor_clothing_gfx:0 "Minor Clan"
+
+ ###########################
+ # Heritages
  ##########
  # Crab
  ##########
@@ -366,31 +388,14 @@
  heichi_collective_noun:0 "Heichi"
  heichi_prefix:0 "Heichi"
  heichi_desc:0 "#size:15    todo some blabla about the heichi culture.#"
- 
- # Naming
- name_list_crane_family:0 "Crane"
 
- # Clothings
- crab_clothing_gfx:0 "Crab"
- crane_clothing_gfx:0 "Crane"
- dragon_clothing_gfx:0 "Dragon"
- lion_clothing_gfx:0 "Lion"
- phoenix_clothing_gfx:0 "Phoenix"
- scorpion_clothing_gfx:0 "Scorpion"
- unicorn_clothing_gfx:0 "Unicorn"
- imperial_clothing_gfx:0 "Imperial"
- minor_clothing_gfx:0 "Minor Clan"
 
 
  ####################
  # 
  #      FOREIGN
  #
- ####################
- # Language
- language_yobanjin_name:0 "Yobanjin"
- language_ujik_name:0 "Ujik"
- 
+ #################### 
  # Heritages
 
  heritage_yobanjin_name:0 "Yobanjin"
@@ -424,9 +429,6 @@
  #      SHADOWLANDS
  #
  ####################
- # Language
- language_shadowlands_rokugani:0 "Shadowlands Rokugani"
-
  # Heritages
  heritage_spider_name:0 "Spider"
  heritage_spider_collective_noun:0 "Spider"

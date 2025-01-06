@@ -12,7 +12,7 @@
 		tradition_welcoming
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { scorpion_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -38,7 +38,7 @@ shosuro = {
 		tradition_city_keepers
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { scorpion_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -65,7 +65,7 @@ soshi = {
 		tradition_friend_spirits
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { scorpion_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -92,7 +92,7 @@ yogo = {
 		tradition_friend_spirits
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { scorpion_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }

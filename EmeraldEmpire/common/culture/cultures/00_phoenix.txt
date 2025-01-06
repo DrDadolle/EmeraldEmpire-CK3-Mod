@@ -12,7 +12,7 @@
 		tradition_vegetarianism
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { phoenix_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -38,7 +38,7 @@ asako = {
 		tradition_medicinal_plants
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { phoenix_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -64,7 +64,7 @@ shiba = {
 		tradition_modest
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { phoenix_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -93,7 +93,7 @@ kaito = {
 		tradition_longbow_competitions
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { phoenix_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }

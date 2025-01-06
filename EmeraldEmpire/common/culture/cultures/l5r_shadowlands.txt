@@ -15,7 +15,7 @@ daigotsu = { # Do not exist in 1123
 		
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
@@ -40,7 +40,7 @@ gyushi  = { # Do not exist in 1123
 		tradition_zealous_people
 	}
    
-	name_list = name_list_crane_family
+	name_list = name_list_crane
 	
 	coa_gfx = { minor_group_coa_gfx }
 	building_gfx = { japanese_building_gfx }
