@@ -27,7 +27,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 # TO TEST
 - test fixed mercenary companies names
 - test holy orders decisions/ names
-- check namelist for Unicorns
+- check namelist for Unicorns & Ujiks
 
 ## CK3 1.13.* patch
 - New Shadowlands stuff
@@ -57,7 +57,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Spammed with rokugan_char_interaction.0231 event boxes...
 	- "an honorable death" event procs for outsite of player stuff
 - shiba mon is off-center (too much top left)
-- update holy_order decisions & dynasty decisions (taken from shogunate)
+- update dynasty decisions (taken from shogunate)
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - Issues with missing accolades in innovations description ? Why ?
@@ -69,8 +69,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Set up github branches (dev/release/beta) and pratices/rights
 
 ##  Waiting & placeholders
-- Cat mon : @Bamba 
-- Add CoA placeholder : missing Frog Duchy, Kingdom of Cherry blossom and that's it ?
+- Add CoA placeholder : Kingdom of Cherry blossom and that's it ?
 
 ## Workaround to be careful with & unsure behaviours
 - WORKAROUND : Doji Hotaru black hair on bookmarks to avoid having white hair children without the crane trait
@@ -84,8 +83,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- I guess it is the "select_and_move_to_pool_effect" localization which fails ?
 	- Object of type 'character' is not valid for 'GetCourtConcept' ???
 	- happens in Vanilla, so prod issue, not mod issue
-- BUG : "location must have some hunting game"
-	- Happens when sighting but not hunting grounds I guess ? Should be in vanilla as well
 - BUG : (spammed error) unit_japanese_infantry_02_shield_entity has no attachment node named shield_effect_2
 - BUG during duel : 	
 	Error: Invalid left side during comparison 'var'
@@ -126,7 +123,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- tanuki (ask permission)
 	- tiger clan (ask permission)
 - Duel to end War (check Tales of Ireland mod)
-- Event for redistribution of non-imperial title update => try to give vassalage as well ?
 - Universities ?
 - add "animal" (clan animal) as motif for CoA (instead of just textured one)
 	- generated dynasties of ronins have random CoA
@@ -141,14 +137,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- add more events? Duels ?
 - Add modifiers to dynasties to prove their link to great clans ????
 - genes & ethnicities
-- Create MaA for each minor clan
-	- MaA preferences by heritage => Building_Modifiers.txt & 04_ep2_maa_attributes to update
-	- 00_men_at_arms_values to update too
-	- update culture_has_skirmisher_maa to each culture with such maa
-	- add special icons/images for MaA
 - Add river map (more ?)
-- Check & Test Create Minor Clan decision
-	- Add (later) special choices of Dynasty/Name/CoA animal based with an event
 - Pilgrimage images (update scripted_illustration/ingame.txt)
 - Check Major Clan decision
 	- Are the "duchy" minor clan & the "kingdom" major clan titles special titles ? Rework those titles with a special flag "recognized_major_clan" for instance. Are they all landless à la Hiruma ?

@@ -6,18 +6,21 @@ d_black_peak = {
 
 c_black_peak_1 = {
 	1123.1.1 = {
+		liege = "d_black_peak"
 		holder = shadowlandsplaceholder037 # TODO placeholder chief
 	}
 }
 
 c_black_peak_2 = {
 	1123.1.1 = {
+		liege = "d_black_peak"
 		holder = shadowlandsplaceholder038 # TODO placeholder chief
 	}
 }
 
 c_black_peak_3 = {
 	1123.1.1 = {
+		liege = "d_black_peak"
 		holder = shadowlandsplaceholder039 # TODO placeholder chief
 	}
 }

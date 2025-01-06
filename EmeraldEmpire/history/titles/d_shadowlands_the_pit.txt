@@ -6,24 +6,28 @@ d_the_pit = {
 
 c_shadowlands_festering_pit_5 = {
 	1123.1.1 = {
+		liege = "d_the_pit"
 		holder = shadowlandsplaceholder022 # TODO placeholder chief
 	}
 }
 
 c_shadowlands_festering_pit_6 = {
 	1123.1.1 = {
+		liege = "d_the_pit"
 		holder = shadowlandsplaceholder023 # TODO placeholder chief
 	}
 }
 
 c_shadowlands_festering_pit_7 = {
 	1123.1.1 = {
+		liege = "d_the_pit"
 		holder = shadowlandsplaceholder024 # TODO placeholder chief
 	}
 }
 
 c_shadowlands_festering_pit_8 = {
 	1123.1.1 = {
+		liege = "d_the_pit"
 		holder = shadowlandsplaceholder025 # TODO placeholder chief
 	}
 }
