@@ -964,35 +964,33 @@ court_chaplain_conversion_contextual_bonuses = {
 
 	# Struggle Bonuses/Penalties
 	## Boost conversion in some phases.
-	#L5R Disabled
-	# if = {
-	# 	limit = {
-	# 		exists = scope:county
-	# 		scope:county = {
-	# 			any_county_struggle = { has_struggle_phase_parameter = county_faith_conversion_in_region_proceeds_faster }
-	# 		}
-	# 	}
-	# 	add = {
-	# 		value = scope:councillor.boost_county_conversion_phase_bonus_value
-	# 		desc = CHAPLAIN_CONVERT_COUNTY_STRUGGLE_BONUS
-	# 	}
-	# }
-	#L5R Disabled
+	if = {
+		limit = {
+			exists = scope:county
+			scope:county = {
+				any_county_struggle = { has_struggle_phase_parameter = county_faith_conversion_in_region_proceeds_faster }
+			}
+		}
+		add = {
+			value = scope:councillor.boost_county_conversion_phase_bonus_value
+			desc = CHAPLAIN_CONVERT_COUNTY_STRUGGLE_BONUS
+		}
+	}
 	## Reduce it in others.
-	# if = {
-	# 	limit = {
-	# 		exists = scope:county
-	# 		scope:county = {
-	# 			any_county_struggle = {
-	# 				has_struggle_phase_parameter = county_faith_conversion_in_region_proceeds_slower
-	# 			}
-	# 		}
-	# 	}
-	# 	add = {
-	# 		value = scope:councillor.boost_county_conversion_phase_malus_value
-	# 		desc = CHAPLAIN_CONVERT_COUNTY_STRUGGLE_PENALTY
-	# 	}
-	# }
+	if = {
+		limit = {
+			exists = scope:county
+			scope:county = {
+				any_county_struggle = {
+					has_struggle_phase_parameter = county_faith_conversion_in_region_proceeds_slower
+				}
+			}
+		}
+		add = {
+			value = scope:councillor.boost_county_conversion_phase_malus_value
+			desc = CHAPLAIN_CONVERT_COUNTY_STRUGGLE_PENALTY
+		}
+	}
 
 	# FP3 ending
 	#L5R Disabled
