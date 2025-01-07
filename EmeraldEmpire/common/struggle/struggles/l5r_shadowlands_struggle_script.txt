@@ -234,7 +234,7 @@
                     truces_by_involved_or_interlopers_within_region_shorter = yes
 					involved_or_interloper_wars_in_struggle_region_cheaper_prestige_costs = yes
                     unlocks_forced_vassalization_casus_belli = yes
-                    unlocks_border_raid_casus_belli = yes # Keep it ?
+                    # unlocks_border_raid_casus_belli = yes # Keep it ?
                 }
 
                 involved_character_modifier = {

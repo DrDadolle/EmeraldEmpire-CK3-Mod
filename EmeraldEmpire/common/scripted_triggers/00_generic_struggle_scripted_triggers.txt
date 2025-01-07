@@ -369,8 +369,9 @@ is_large_conquest_war_for_struggle_trigger = {
 			using_cb = imperial_reconquest_cb
 			using_cb = invasion_war
 			using_cb = clan_invasion_war
-			using_cb = mongol_invasion_war
-			using_cb = mongol_realm_invasion_war
+			#L5R Disabled
+			# using_cb = mongol_invasion_war
+			# using_cb = mongol_realm_invasion_war
 			using_cb = major_religious_war
 			using_cb = undirected_great_holy_war
 			using_cb = directed_great_holy_war
@@ -381,27 +382,25 @@ is_large_conquest_war_for_struggle_trigger = {
 
 # Can conquest holy wars be accessed in the current phase of the struggle?
 are_holy_wars_disabled_in_struggle_phase_trigger = {
-	#L5R Disabled
-	always = no
-	# exists = scope:target
-	# trigger_if = {
-	# 	scope:target.tier = tier_county
-	# 	scope:target = {
-	# 		any_county_struggle = {
-	# 			NOT = {	has_struggle_phase_parameter = holy_wars_in_region_cannot_be_declared }
-	# 		}
-	# 	}
-	# }
-	# trigger_else = { # For Duchy and Kingdom Holy War
-	# 	scope:target = {
-	# 		any_in_de_facto_hierarchy = {  # We only consider county within the realm of the target's holder
-	# 				tier = tier_county
-	# 			any_county_struggle = {
-	# 				NOT = {	has_struggle_phase_parameter = holy_wars_in_region_cannot_be_declared }
-	# 			}
-	# 		}
-	# 	}
-	# }
+	exists = scope:target
+	trigger_if = {
+		scope:target.tier = tier_county
+		scope:target = {
+			any_county_struggle = {
+				NOT = {	has_struggle_phase_parameter = holy_wars_in_region_cannot_be_declared }
+			}
+		}
+	}
+	trigger_else = { # For Duchy and Kingdom Holy War
+		scope:target = {
+			any_in_de_facto_hierarchy = {  # We only consider county within the realm of the target's holder
+					tier = tier_county
+				any_county_struggle = {
+					NOT = {	has_struggle_phase_parameter = holy_wars_in_region_cannot_be_declared }
+				}
+			}
+		}
+	}
 }
 
 # Can the struggle conquest CB be used?
