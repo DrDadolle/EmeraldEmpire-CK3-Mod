@@ -6,3 +6,9 @@ offended_shadowlands_modifier = {
 	icon = diplomacy_negative
 	rf_shadowlands_opinion = -10
 }
+
+shinsei_last_hope_modifier = {
+	icon = piety_positive
+	monthly_piety = 0.5
+	defender_advantage = 50
+}

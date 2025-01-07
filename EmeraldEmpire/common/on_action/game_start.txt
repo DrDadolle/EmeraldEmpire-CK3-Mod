@@ -155,6 +155,14 @@ on_game_start = {
 # Like on_game_start, except it is called once the host (or player, in single player) exits the lobby. Good for anything where you need to know who the players are, or what the game rules are
 on_game_start_after_lobby = {
 	effect = {
+		# L5R Starting effects
+		# L5R Added
+		
+		## Special Shinsei Last hope Modifier
+		#L5R TODO depends on date + add special event to remove the modifier when hold by not crab (as per the prophecy "Shinsei prophesized that while the Crab Clan protected the valley, it would remain pure of Taint")
+		title:c_shinsei_last_hope = { add_county_modifier = shinsei_last_hope_modifier }
+
+		# L5R END
 		# Make sure that Realm Priests are landed theocrats where it makes sense
 		every_ruler = {
 			limit = {
