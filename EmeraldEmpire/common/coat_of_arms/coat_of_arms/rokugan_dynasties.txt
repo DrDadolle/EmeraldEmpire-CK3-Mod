@@ -420,6 +420,17 @@ dynasty_ox = {
 	}
 }
 
+##########################
+##### Shadowlands
+##########################
+dynasty_dark_moto = { #moto
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	textured_emblem = {
+		texture = "te_unicorn_moto.dds"
+	}
+}
+
 #2100117 = { #TODO Otter Clan
 #	name = dynn_xxx
 #	culture = xxx

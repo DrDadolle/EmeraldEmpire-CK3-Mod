@@ -3,7 +3,7 @@
 #####################
 lineofmototsume1 = {
 	name = name_tsume
-	dynasty = dynasty_moto
+	dynasty_house = house_dark_moto  
 	religion = "faith_cult_of_fu_leng"
 	culture = "dark_moto"
 
@@ -25,7 +25,7 @@ lineofmototsume1 = {
 
 lineofmototsume2 = {
 	name = name_katsuda
-	dynasty = dynasty_moto
+	dynasty_house = house_dark_moto  
 	religion = "faith_cult_of_fu_leng"
 	culture = "dark_moto"
 
@@ -41,7 +41,7 @@ lineofmototsume2 = {
 
 lineofmototsume3 = {
 	name = name_tsanuri
-	dynasty = dynasty_moto
+	dynasty_house = house_dark_moto  
 	religion = "faith_cult_of_fu_leng"
 	culture = "dark_moto"
 	female = yes

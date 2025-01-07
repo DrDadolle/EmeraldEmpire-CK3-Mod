@@ -161,3 +161,12 @@ house_onshigawa = { # Moto vassal
 	name = dynn_onshigawa
     dynasty = dynasty_moto # Moto
 }
+
+##########################
+##### Shadowlands
+##########################
+# Dynasty house from Moto
+house_dark_moto = { # Dark Moto
+	name = dynn_dark_moto
+    dynasty = dynasty_moto # Moto
+}
