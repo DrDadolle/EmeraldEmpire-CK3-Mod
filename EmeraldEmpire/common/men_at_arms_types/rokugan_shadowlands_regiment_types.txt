@@ -111,7 +111,7 @@ pit_oni = {
  	}
 
  	stack = 5
- 	ai_quality = { value = culture_ai_weight_monsters }
+ 	ai_quality = { value = culture_ai_weight_monster }
  	icon = pit_oni
 }
 
@@ -152,7 +152,7 @@ giant_spiders = {
 	}
 	
 	allowed_in_hired_troops = no
-	ai_quality = { value = culture_ai_weight_monsters }
+	ai_quality = { value = culture_ai_weight_monster }
 	icon = giant_spiders
 }
 	

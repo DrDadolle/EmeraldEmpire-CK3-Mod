@@ -285,6 +285,13 @@ rokugan_crab = {
 	}
 }
 
+rokugan_crab_clan = {
+	regions = {
+		rokugan_crab_yasuki rokugan_crab_kuni rokugan_crab_wall_region 
+		rokugan_crab_north
+	}
+}
+
 #####################################						
 #####################################						
 ######       CRANE  LANDS      ######						
@@ -500,7 +507,7 @@ world_shadowlands = {
 #####################################
 rokugan_shadowlands_struggle_region = {
 	regions = {
-		rokugan_crab world_shadowlands
+		rokugan_crab_clan world_shadowlands
 	}
 }
 

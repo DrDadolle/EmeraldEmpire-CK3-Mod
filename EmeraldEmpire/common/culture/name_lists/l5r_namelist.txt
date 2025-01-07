@@ -96,7 +96,8 @@
 
 
 	# In L5R, first names becomes dynasties names
-	founder_named_dynasties = yes
+	# Remove as it creates the "NAME OF DYNASTY" lands
+	# founder_named_dynasties = yes
 
 	mercenary_names = {
 		{ name = "mercenary_company_shinobi" }
@@ -203,7 +204,8 @@ name_list_unicorn = {
 	mother_name_chance = 0
 
 	# In L5R, first names becomes dynasties names
-	founder_named_dynasties = yes
+	# Remove as it creates the "NAME OF DYNASTY" lands
+	# founder_named_dynasties = yes
 
 	mercenary_names = {
 		{ name = "mercenary_company_shinobi" }

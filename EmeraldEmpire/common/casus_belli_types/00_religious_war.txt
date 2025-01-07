@@ -113,8 +113,8 @@
 				scope:defender = {
 					any_character_struggle = {
 						involvement = involved
-						#L5R Disabled
-						# is_struggle_type = iberian_struggle
+						#L5R Modified
+						is_struggle_type = shadowlands_struggle
 					}
 				}
 			}
@@ -655,19 +655,20 @@ religious_war = {
 				}
 			}
 		}
-		#L5R Disabled
+		
 		# Filter for struggles
-		# trigger_if = {
-		# 	limit = {
-		# 		scope:defender = {
-		# 			any_character_struggle = {
-		# 				involvement = involved
-		# 				is_struggle_type = iberian_struggle
-		# 			}
-		# 		}
-		# 	}
-		# 	are_holy_wars_disabled_in_struggle_phase_trigger = yes
-		# }
+		trigger_if = {
+			limit = {
+				scope:defender = {
+					any_character_struggle = {
+						involvement = involved
+						#L5R Modified
+						is_struggle_type = shadowlands_struggle
+					}
+				}
+			}
+			are_holy_wars_disabled_in_struggle_phase_trigger = yes
+		}
 		are_holy_wars_disabled_by_struggle_conciliation_trigger = no # Disabled against other involved faiths in FP2 Conciliation ending
 
 	}
@@ -1242,19 +1243,19 @@ major_religious_war = {
 		scope:target = {
 			tier = tier_kingdom
 		}
-		#L5R Disabled
 		# Filter for struggles
-		# trigger_if = {
-		# 	limit = {
-		# 		scope:defender = {
-		# 			any_character_struggle = {
-		# 				involvement = involved
-		# 				is_struggle_type = iberian_struggle
-		# 			}
-		# 		}
-		# 	}
-		# 	are_holy_wars_disabled_in_struggle_phase_trigger = yes
-		# }
+		trigger_if = {
+			limit = {
+				scope:defender = {
+					any_character_struggle = {
+						involvement = involved
+						#L5R Modified
+						is_struggle_type = shadowlands_struggle
+					}
+				}
+			}
+			are_holy_wars_disabled_in_struggle_phase_trigger = yes
+		}
 		are_holy_wars_disabled_by_struggle_conciliation_trigger = no # Disabled against other involved faiths in FP2 Conciliation ending
 
 		scope:target = {

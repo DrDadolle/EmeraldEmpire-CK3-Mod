@@ -57,13 +57,8 @@ struggle_shadowlands_ending_shadowlands_domination = {
 		struggle:shadowlands_struggle = {
 			end_struggle = yes
 		}
-		if = {
-			limit = { # Major News
-				NOT = { has_game_rule = no_news }
-			}
-			every_player = { #Global News Announcement
-				trigger_event = shadowlands_struggle.1000 
-			}
+		every_player = { #Global News Announcement
+			trigger_event = shadowlands_struggle.1000 
 		}
 	}
 
@@ -141,13 +136,9 @@ struggle_shadowlands_ending_crab_domination = {
 		struggle:shadowlands_struggle = {
 			end_struggle = yes
 		}
-		if = {
-			limit = { # Major News
-				NOT = { has_game_rule = no_news }
-			}
-			every_player = { #Global News Announcement
-				trigger_event = shadowlands_struggle.1001 
-			}
+
+		every_player = { #Global News Announcement
+			trigger_event = shadowlands_struggle.1001 
 		}
 	}
 
@@ -241,13 +232,8 @@ struggle_shadowlands_ending_spider_domination = {
 		struggle:shadowlands_struggle = {
 			end_struggle = yes
 		}
-		if = {
-			limit = { # Major News
-				NOT = { has_game_rule = no_news }
-			}
-			every_player = { #Global News Announcement
-				trigger_event = shadowlands_struggle.1002
-			}
+		every_player = { #Global News Announcement
+			trigger_event = shadowlands_struggle.1002
 		}
 	}
 

@@ -2697,22 +2697,23 @@ incite_revolts_interaction = {
 					}
 				}
 			}
-			AND = {
-				has_fp3_dlc_trigger = yes
-				scope:actor = {
-					has_trait = fp3_struggle_detractor
-					any_character_struggle = {
-						involvement = involved
-						is_struggle_type = persian_struggle
-					}
-				}
-				scope:recipient = {
-					any_character_struggle = {
-						is_struggle_type = persian_struggle
-						involvement = involved
-					}
-				}
-			}
+			#L5R Disabled
+			# AND = {
+			# 	has_fp3_dlc_trigger = yes
+			# 	scope:actor = {
+			# 		has_trait = fp3_struggle_detractor
+			# 		any_character_struggle = {
+			# 			involvement = involved
+			# 			is_struggle_type = persian_struggle
+			# 		}
+			# 	}
+			# 	scope:recipient = {
+			# 		any_character_struggle = {
+			# 			is_struggle_type = persian_struggle
+			# 			involvement = involved
+			# 		}
+			# 	}
+			# }
 		}
 	}
 

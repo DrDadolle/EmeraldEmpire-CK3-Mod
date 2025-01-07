@@ -1,4 +1,4 @@
-﻿l5r_shadowlands_struggle = {
+﻿shadowlands_struggle = {
 
 	##################################################
 	# Setup
@@ -19,12 +19,17 @@
 	}
 	faiths = {
         # Rokugani Faith
-        # cult_ancestors # Keep it ?
+        cult_ancestors 
+		seven_fortunes
+		cult_amaterasu
+		shinseism
+
 
         # Shadowlands Faiths
         faith_cult_of_fu_leng
         faith_cult_of_atsuko
         faith_obsidian_bride
+		faith_bloodspeaker
 	}
 	regions = { 
         rokugan_shadowlands_struggle_region
@@ -43,7 +48,7 @@
 	on_change_phase = {
 		every_player = { # Global News Announcement
 			trigger_event = {
-				id = balrog_struggle.0002
+				id = shadowlands_struggle.0002
 				days = 1
 			}
 		}
