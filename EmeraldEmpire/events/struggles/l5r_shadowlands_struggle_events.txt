@@ -84,3 +84,110 @@ shadowlands_struggle.0002 = {
 		}
 	}
 }
+
+
+## Decisions
+# Struggle Ending : Shadowlands Domination
+shadowlands_struggle.1000 = {
+	content_source = l5r_dlc
+	type = character_event
+	window = fullscreen_event
+	title = shadowlands_struggle.1000.t
+	desc = shadowlands_struggle.1000.desc
+	theme = war
+	override_background = { reference = shadowlands_struggle_start }
+
+	trigger = {
+		is_ai = no
+ 	}
+
+	option = {
+		name = shadowlands_struggle.1000.a
+		trigger = {
+			religion = { is_in_family = rf_rokugan}
+		}
+	}
+	option = {
+		name = shadowlands_struggle.1000.b
+		trigger = {
+			religion = { is_in_family = rf_shadowlands}
+		}
+	}
+
+	option = {
+		name = shadowlands_struggle.1000.c
+		trigger = {
+			religion = { is_in_family = rf_gaijin}
+		}
+	}
+}
+
+# Struggle Ending : Crab Domination
+shadowlands_struggle.1000 = {
+	content_source = l5r_dlc
+	type = character_event
+	window = fullscreen_event
+	title = shadowlands_struggle.1001.t
+	desc = shadowlands_struggle.1001.desc
+	theme = war
+	override_background = { reference = shadowlands_struggle_start }
+
+	trigger = {
+		is_ai = no
+ 	}
+
+	option = {
+		name = shadowlands_struggle.1001.a
+		trigger = {
+			religion = { is_in_family = rf_rokugan}
+		}
+	}
+	option = {
+		name = shadowlands_struggle.1001.b
+		trigger = {
+			religion = { is_in_family = rf_shadowlands}
+		}
+	}
+
+	option = {
+		name = shadowlands_struggle.1001.c
+		trigger = {
+			religion = { is_in_family = rf_gaijin}
+		}
+	}
+}
+
+# Struggle Ending : Spider Domination
+shadowlands_struggle.1002 = {
+	content_source = l5r_dlc
+	type = character_event
+	window = fullscreen_event
+	title = shadowlands_struggle.1002.t
+	desc = shadowlands_struggle.1002.desc
+	theme = crown
+	override_background = { reference = shadowlands_struggle_start }
+
+	trigger = {
+		is_ai = no
+ 	}
+
+	option = {
+		name = shadowlands_struggle.1002.a
+		trigger = {
+			religion = { is_in_family = rf_rokugan}
+		}
+	}
+	option = {
+		name = shadowlands_struggle.1002.b
+		trigger = {
+			religion = { is_in_family = rf_shadowlands}
+		}
+	}
+
+	option = {
+		name = shadowlands_struggle.1002.c
+		trigger = {
+			religion = { is_in_family = rf_gaijin}
+		}
+	}
+}

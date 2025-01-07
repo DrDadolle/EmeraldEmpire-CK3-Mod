@@ -138,3 +138,30 @@
  pray_spirit_void_kami_cooldown_tt:0 "You have recently requested the blessing of the Void Kami."
  pray_spirits_void_tooltip:0 "The most rare of the elemental kami. They led solitary and eternal existences, tending to stay near items and people of great power."
  decision_prayed_spirits:0 "You have not ask for the kami's blessing the last 24 months."
+
+
+ ##########################
+ ### Struggle Decisions ###
+ ##########################
+
+ ### Shadowlands Struggle ###
+ shadowlands_struggle_ending_decision_correct_involvement_tt:1 "You are [struggle_involved|E] in the [shadowlands_struggle|E]"
+
+
+ struggle_shadowlands_ending_shadowlands_domination:0 "Destroy the Crab Clan"
+ struggle_shadowlands_ending_shadowlands_domination_desc:0 "The [crabclan|E] of [rokugan|E] has been a blight our people since its creation. Their repeted assaults killed thousands, and their wall kept us at bay. We can finally destroy them."
+ struggle_shadowlands_ending_shadowlands_domination_tooltip:0 "You will destroy the Kaiu Wall and the Crab Clan."
+ struggle_shadowlands_ending_shadowlands_domination_confirm:0 "You have failed your sacred duty !"
+ struggle_shadowlands_ending_shadowlands_domination_decision_correct_phase_tt:1 "$shadowlands_struggle_ending_decision_correct_involvement_tt$ and the current [struggle_phase|E] is [struggle_shadowlands_phase_invasion|E]"
+
+ struggle_shadowlands_ending_crab_domination:0 "Drive"
+ struggle_shadowlands_ending_crab_domination_desc:0 "The [shadowlands|E] has been a blight on the kingdom since the dawn of time. It has killed our brothers and sisters, wife and husband, parent and child. No longer ! We have retaken the ancestral Hiruma castle, purified its lands and rebuild the defenses of old. The [shadowlands|E] won't scare us again... until the prophetised Day of Thunder."
+ struggle_shadowlands_ending_crab_domination_tooltip:0 "You will drive away the [shadowlands|E] of the Hiruma lands, and purify them"
+ struggle_shadowlands_ending_crab_domination_confirm:0 "Out of here, wrentched creatures !"
+ struggle_shadowlands_ending_crab_domination_decision_correct_phase_tt:1 "$shadowlands_struggle_ending_decision_correct_involvement_tt$ and the current [struggle_phase|E] is [struggle_shadowlands_phase_dormant|E]"
+
+ struggle_shadowlands_ending_spider_domination:0 "Unify the Shadowlands"
+ struggle_shadowlands_ending_spider_domination_desc:0 "The [shadowlands|E] have been divided for too long, we must unify it under one banner."
+ struggle_shadowlands_ending_spider_domination_tooltip:0 "You will unify the shadowlands under the same banner."
+ struggle_shadowlands_ending_spider_domination_confirm:0 "We will name ourselves the Spider Clan !"
+ struggle_shadowlands_ending_spider_domination_decision_correct_phase_tt:1 "$shadowlands_struggle_ending_decision_correct_involvement_tt$ and the current [struggle_phase|E] is [struggle_shadowlands_phase_dormant|E]"

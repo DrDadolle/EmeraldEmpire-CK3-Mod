@@ -504,6 +504,12 @@ rokugan_shadowlands_struggle_region = {
 	}
 }
 
+custom_d_hiruma = {
+	duchies = { 
+		d_hiruma_shadowlands
+	}
+}
+
 ###########################################################################
 # Graphical Regions
 ###########################################################################

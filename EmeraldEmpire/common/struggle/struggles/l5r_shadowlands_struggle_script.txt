@@ -78,9 +78,9 @@
 				struggle_shadowlands_phase_agitated = {
 
 					catalysts = {
-                        catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
 						catalyst_l5r_crab_champion_died_violently = monumental_struggle_catalyst_gain
                         catalyst_l5r_crab_champion_died_naturally = major_struggle_catalyst_gain
+                        catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
 					}
 
 				}
@@ -169,9 +169,9 @@
 
 			# We are listing all available decision to give players insights on how they can end the Struggle
 			ending_decisions = {
-                l5r_shadowlands_struggle_ending_shadowlands_domination
-                l5r_shadowlands_struggle_ending_crab_domination
-                l5r_shadowlands_struggle_ending_spider_domination
+                struggle_shadowlands_ending_shadowlands_domination
+                struggle_shadowlands_ending_crab_domination
+                struggle_shadowlands_ending_spider_domination
 			}
         }
 
@@ -195,6 +195,7 @@
 					catalysts = {
 						catalyst_l5r_crab_champion_died_violently = monumental_struggle_catalyst_gain
                         catalyst_l5r_crab_champion_died_naturally = major_struggle_catalyst_gain
+                        catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
 					}
 				}
 
@@ -277,9 +278,9 @@
 
 			# We are listing all available decision to give players insights on how they can end the Struggle
 			ending_decisions = {
-                l5r_shadowlands_struggle_ending_shadowlands_domination
-                l5r_shadowlands_struggle_ending_crab_domination
-                l5r_shadowlands_struggle_ending_spider_domination
+                struggle_shadowlands_ending_shadowlands_domination
+                struggle_shadowlands_ending_crab_domination
+                struggle_shadowlands_ending_spider_domination
 			}
         }
 
@@ -380,9 +381,9 @@
 
 			# We are listing all available decision to give players insights on how they can end the Struggle
 			ending_decisions = {
-                l5r_shadowlands_struggle_ending_shadowlands_domination
-                l5r_shadowlands_struggle_ending_crab_domination
-                l5r_shadowlands_struggle_ending_spider_domination
+                struggle_shadowlands_ending_shadowlands_domination
+                struggle_shadowlands_ending_crab_domination
+                struggle_shadowlands_ending_spider_domination
 			}
         }
 

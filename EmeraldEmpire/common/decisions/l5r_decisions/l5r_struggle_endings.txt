@@ -1,13 +1,13 @@
 ﻿# Shadowlands beats the crab
-l5r_shadowlands_struggle_ending_shadowlands_domination = {
+struggle_shadowlands_ending_shadowlands_domination = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/struggle_balrog_ending_kill_balrog.dds"
 	}
 	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_balrog_ending_kill_balrog_button.dds"
 
-	title = l5r_shadowlands_struggle_ending_shadowlands_domination_decision
-	desc = l5r_shadowlands_struggle_ending_shadowlands_domination_desc
-	selection_tooltip = l5r_shadowlands_struggle_ending_shadowlands_domination_tooltip
+	title = struggle_shadowlands_ending_shadowlands_domination
+	desc = struggle_shadowlands_ending_shadowlands_domination_desc
+	selection_tooltip = struggle_shadowlands_ending_shadowlands_domination_tooltip
 	confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
 	is_invisible = yes
 
@@ -18,17 +18,53 @@ l5r_shadowlands_struggle_ending_shadowlands_domination = {
 	}
 
 	is_valid = {
+		custom_tooltip = {
+			text = struggle_shadowlands_ending_shadowlands_domination_decision_correct_phase_tt
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = shadowlands_struggle
+				is_struggle_phase = struggle_shadowlands_phase_invasion
+			}
+		}
+		# Is a shadowlands guy
+		religion = { is_in_family = rf_shadowlands}
+		culture = { has_cultural_pillar = heritage_spider }
+
+		# Got Crab Clan territory
+		# AND = {
+		completely_controls = title:k_crab_clan
+		# }
+
+		# No
 		always = no
 	}
 
 	is_valid_showing_failures_only = {
+
 		is_at_war = no
 	}
 
 	effect = {
-		# every_player = {
-		# 	trigger_event = shogunate_sengoku.0003
-		# }
+		add_prestige = 2500
+		dynasty = { add_dynasty_prestige = 1500 }
+		dynasty = { add_dynasty_prestige_level = 1 }
+		give_nickname = nick_wall_breaker
+
+		# reduce fervor of rokugani religion ? To have lot of heresy
+
+
+
+		struggle:shadowlands_struggle = {
+			end_struggle = yes
+		}
+		if = {
+			limit = { # Major News
+				NOT = { has_game_rule = no_news }
+			}
+			every_player = { #Global News Announcement
+				trigger_event = shadowlands_struggle.1000 
+			}
+		}
 	}
 
 	ai_check_interval = 36
@@ -44,15 +80,15 @@ l5r_shadowlands_struggle_ending_shadowlands_domination = {
 }
 
 # Crab beats the shadowlands
-l5r_shadowlands_struggle_ending_crab_domination = {
+struggle_shadowlands_ending_crab_domination = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/struggle_balrog_ending_kill_balrog.dds"
 	}
 	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_balrog_ending_kill_balrog_button.dds"
 
-	title = l5r_shadowlands_struggle_ending_crab_domination_decision
-	desc = l5r_shadowlands_struggle_ending_crab_domination_desc
-	selection_tooltip = l5r_shadowlands_struggle_ending_crab_domination_tooltip
+	title = struggle_shadowlands_ending_crab_domination
+	desc = struggle_shadowlands_ending_crab_domination_desc
+	selection_tooltip = struggle_shadowlands_ending_crab_domination_tooltip
 	confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
 	is_invisible = yes
 
@@ -63,6 +99,30 @@ l5r_shadowlands_struggle_ending_crab_domination = {
 	}
 
 	is_valid = {
+		custom_tooltip = {
+			text = struggle_shadowlands_ending_crab_domination_decision_correct_phase_tt
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = shadowlands_struggle
+				is_struggle_phase = struggle_shadowlands_phase_dormant
+			}
+		}
+
+		# Is a crab shadowlands
+		religion = { is_in_family = rf_rokugan}
+		culture = { has_cultural_pillar = heritage_crab }
+
+		# Got Hiruma Castle & converted
+		AND = {
+			completely_controls = title:d_hiruma_shadowlands
+			any_county_in_region = {
+				region = custom_d_hiruma
+				count = all
+				religion = { is_in_family = rf_rokugan}
+			}
+		}
+
+		# no
 		always = no
 	}
 
@@ -71,9 +131,23 @@ l5r_shadowlands_struggle_ending_crab_domination = {
 	}
 
 	effect = {
-		# every_player = {
-		# 	trigger_event = shogunate_sengoku.0003
-		# }
+		add_prestige = 2500
+		dynasty = { add_dynasty_prestige = 1500 }
+		dynasty = { add_dynasty_prestige_level = 1 }
+		give_nickname = nick_vanquisher_of_darkness
+
+
+		struggle:shadowlands_struggle = {
+			end_struggle = yes
+		}
+		if = {
+			limit = { # Major News
+				NOT = { has_game_rule = no_news }
+			}
+			every_player = { #Global News Announcement
+				trigger_event = shadowlands_struggle.1001 
+			}
+		}
 	}
 
 	ai_check_interval = 36
@@ -89,15 +163,15 @@ l5r_shadowlands_struggle_ending_crab_domination = {
 }
 
 # A new clan emerges ?
-l5r_shadowlands_struggle_ending_spider_domination = {
+struggle_shadowlands_ending_spider_domination = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/struggle_balrog_ending_kill_balrog.dds"
 	}
 	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_balrog_ending_kill_balrog_button.dds"
 
-	title = l5r_shadowlands_struggle_ending_spider_domination_decision
-	desc = l5r_shadowlands_struggle_ending_spider_domination_desc
-	selection_tooltip = l5r_shadowlands_struggle_ending_spider_domination_tooltip
+	title = struggle_shadowlands_ending_spider_domination
+	desc = struggle_shadowlands_ending_spider_domination_desc
+	selection_tooltip = struggle_shadowlands_ending_spider_domination_tooltip
 	confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
 	is_invisible = yes
 
@@ -108,6 +182,22 @@ l5r_shadowlands_struggle_ending_spider_domination = {
 	}
 
 	is_valid = {
+		custom_tooltip = {
+			text = struggle_shadowlands_ending_spider_domination_decision_correct_phase_tt
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = shadowlands_struggle
+				is_struggle_phase = struggle_shadowlands_phase_dormant
+			}
+		}
+		# Is a shadowlands guy
+		religion = { is_in_family = rf_shadowlands}
+		culture = { has_cultural_pillar = heritage_spider }
+
+		highest_held_title_tier <= tier_kingdom
+		
+		
+		#no
 		always = no
 	}
 
@@ -116,9 +206,25 @@ l5r_shadowlands_struggle_ending_spider_domination = {
 	}
 
 	effect = {
-		# every_player = {
-		# 	trigger_event = shogunate_sengoku.0003
-		# }
+		add_prestige = 2500
+		dynasty = { add_dynasty_prestige = 1500 }
+		dynasty = { add_dynasty_prestige_level = 1 }
+		give_nickname = nick_the_unifier
+
+
+
+
+		struggle:shadowlands_struggle = {
+			end_struggle = yes
+		}
+		if = {
+			limit = { # Major News
+				NOT = { has_game_rule = no_news }
+			}
+			every_player = { #Global News Announcement
+				trigger_event = shadowlands_struggle.1002
+			}
+		}
 	}
 
 	ai_check_interval = 36
