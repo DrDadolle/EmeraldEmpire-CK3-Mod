@@ -1558,7 +1558,7 @@ nation_fracturing_faction_modifiers = {
 		add = -500
 	 	trigger = {
 			OR = {
-				is_from_samurai_culture = yes
+				culture = { has_cultural_tradition = tradition_bushido }
 				is_from_rokugani_culture = yes
 			}
 		}

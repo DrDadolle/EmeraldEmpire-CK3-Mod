@@ -125,7 +125,7 @@ rokugan_abdicate_decision = {
 	is_shown = {
 		# always = yes
 		is_landed_or_landless_administrative = yes
-		is_from_samurai_culture = yes
+		culture = { has_cultural_tradition = tradition_bushido }
 	}
 
 	is_valid = {

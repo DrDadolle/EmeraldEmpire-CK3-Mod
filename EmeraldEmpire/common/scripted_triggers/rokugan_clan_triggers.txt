@@ -19,11 +19,6 @@ is_under_direct_e_rokugan_rule = {
     }
 }
 
-# Is from samurai culture
-is_from_samurai_culture = {
-        culture = { has_cultural_tradition = tradition_bushido }
-}
-
 # Hardcoded culture list
 is_from_rokugani_culture = {
      culture = { is_rokugani_culture = yes }
