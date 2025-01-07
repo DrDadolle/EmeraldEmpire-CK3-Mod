@@ -1361,8 +1361,9 @@ random_yearly_playable_pulse = {
 		court_scholar_ongoing
 		delay = { days = { 25 44 } }
 		clan_events_on_action
-		ep3_akolouthos_on_action
-		delay = { days = { 25 44 } }
+		#L5r Disabled
+		# ep3_akolouthos_on_action
+		# delay = { days = { 25 44 } }
 	}
 }
 

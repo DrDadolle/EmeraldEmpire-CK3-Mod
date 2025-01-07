@@ -9,6 +9,10 @@
         100 = l5r_yearly.0001 # Become Tea Master
         100 = l5r_yearly.0010 # A ronin comes to beg for seppuku
         200 = l5r_yearly.0020 # A powerful vassal wants to drink tea with me
+
+        ####################
+        #   Magic  Events  #
+        ####################
         20 = l5r_yearly.1000 # If Witch, become mahotsukai and/or evil faith
 
 	}
