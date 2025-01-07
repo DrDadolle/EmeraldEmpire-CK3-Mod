@@ -916,6 +916,32 @@ on_death = {
 			}
 		}
 
+		# important ruler of the shadowlands dies of unnatural death
+		if = {
+			limit = { 
+				exists = scope:killer 
+			}
+			if = { 
+				limit = {
+					is_important_or_vip_struggle_character = yes
+					religion = { is_in_family = rf_shadowlands}
+					culture = { has_cultural_pillar = heritage_spider }
+
+					any_character_struggle = {
+						involvement = involved
+						phase_has_catalyst = catalyst_l5r_shadowlands_ruler_died_violently
+					}
+				}
+				every_character_struggle = {
+					involvement = involved
+					activate_struggle_catalyst = {
+						catalyst = catalyst_l5r_shadowlands_ruler_died_violently
+						character = root
+					}
+				}
+			}
+		}
+
 		#L5R Disabled
 		# ## Caliphal deaths.
 		# if = {

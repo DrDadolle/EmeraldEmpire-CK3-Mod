@@ -81,6 +81,9 @@
 						catalyst_l5r_crab_champion_died_violently = monumental_struggle_catalyst_gain
                         catalyst_l5r_crab_champion_died_naturally = major_struggle_catalyst_gain
                         catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
+                        catalyst_declared_a_war = major_struggle_catalyst_over_time_gain
+						catalyst_declared_war_upon = major_struggle_catalyst_over_time_gain
+                        catalyst_raided_involved = minor_struggle_catalyst_over_time_gain
 					}
 
 				}
@@ -187,6 +190,8 @@
 
 					catalysts = {
 						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
+                        catalyst_l5r_shadowlands_ruler_died_violently = major_struggle_catalyst_gain
+                        catalyst_new_building_in_castle = minor_struggle_catalyst_gain
 					}
 				}
 
@@ -196,6 +201,9 @@
 						catalyst_l5r_crab_champion_died_violently = monumental_struggle_catalyst_gain
                         catalyst_l5r_crab_champion_died_naturally = major_struggle_catalyst_gain
                         catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
+                        catalyst_declared_a_war = major_struggle_catalyst_over_time_gain
+						catalyst_declared_war_upon = major_struggle_catalyst_over_time_gain
+                        catalyst_raided_involved = minor_struggle_catalyst_over_time_gain
 					}
 				}
 
@@ -296,6 +304,8 @@
 
 					catalysts = {
 						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
+                        catalyst_l5r_shadowlands_ruler_died_violently = major_struggle_catalyst_gain
+                        catalyst_new_building_in_castle = minor_struggle_catalyst_gain
 					}
 
 				}

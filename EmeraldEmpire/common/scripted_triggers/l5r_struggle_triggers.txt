@@ -1,0 +1,8 @@
+﻿# Checks more than 70% of Shadowlands owned
+struggle_shadowlands_spider_ending_percent_trigger = {
+	any_county_in_region = {
+		region = world_shadowlands
+		percent < shadowlands_struggle_spider_domination_owned_percent_decimal_value
+		holder.top_liege = root
+	}
+}

@@ -1,0 +1,9 @@
+﻿# Paramameter for percentage of Iberia that you control
+shadowlands_struggle_spider_domination_owned_percent_value = 70
+
+# Uses above to plug in to script as a decimal
+shadowlands_struggle_spider_domination_owned_percent_decimal_value = {
+	value = shadowlands_struggle_spider_domination_owned_percent_value
+	divide = 100
+	max = 1
+}

@@ -112,13 +112,14 @@ struggle_shadowlands_ending_crab_domination = {
 		religion = { is_in_family = rf_rokugan}
 		culture = { has_cultural_pillar = heritage_crab }
 
-		# Got Hiruma Castle & converted
+		# Got Hiruma Castle & converted & good culture ?
 		AND = {
 			completely_controls = title:d_hiruma_shadowlands
 			any_county_in_region = {
 				region = custom_d_hiruma
 				count = all
 				religion = { is_in_family = rf_rokugan}
+				# culture = root.culture
 			}
 		}
 
@@ -194,9 +195,32 @@ struggle_shadowlands_ending_spider_domination = {
 		religion = { is_in_family = rf_shadowlands}
 		culture = { has_cultural_pillar = heritage_spider }
 
-		highest_held_title_tier <= tier_kingdom
+		# Only a king
+		# for 5 years
+		AND = {
+			highest_held_title_tier = tier_kingdom
+			primary_title =  {
+				tier >= tier_kingdom
+				title_held_years >= 5
+			}
+		}
+
+		# Control more than  than 70% of Shadowlands
+		custom_tooltip = {
+			text = struggle_shadowlands_ending_spider_domination_decision_region_tt
+			struggle_shadowlands_spider_ending_percent_trigger = yes
+		}
+
+		# organized faith
+		custom_description = {
+			text = faith_is_reformed
+			subject = root
+			faith = { NOT = { has_doctrine_parameter = unreformed } }
+		}
 		
-		
+		# Very prestigious
+		prestige_level >= 4
+
 		#no
 		always = no
 	}

@@ -2,7 +2,8 @@
 
 # catalyst_shogunate_win_against_liege = {}
 # catalyst_shogunate_start_any_war = {}
-
+catalyst_declared_a_war = {}
+catalyst_declared_war_upon = {}
 
 ### Culture
 
@@ -37,6 +38,7 @@
 
 catalyst_l5r_crab_champion_died_violently = {}
 catalyst_l5r_crab_champion_died_naturally = {}
+catalyst_l5r_shadowlands_ruler_died_violently = {}
 
 
 ### Titles

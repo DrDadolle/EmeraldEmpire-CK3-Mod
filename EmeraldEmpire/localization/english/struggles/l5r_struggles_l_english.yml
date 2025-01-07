@@ -10,7 +10,15 @@
 
  # Catalysts
  catalyst_l5r_crab_champion_died_violently:0 "Crab Clan Champion died violently [struggle_catalyst_catalyst|E]"
+ catalyst_l5r_crab_champion_died_violently_desc:0 "The [crabclan|E] [ruler|E] dies of unnatural causes"
  catalyst_l5r_crab_champion_died_naturally:0 "Crab Clan Champion died naturally  [struggle_catalyst_catalyst|E]"
+ catalyst_l5r_crab_champion_died_naturally_desc:0 "The [crabclan|E] [ruler|E] dies of natural causes"
+ catalyst_l5r_shadowlands_ruler_died_violently:0 "Shadowlands ruler died violently [struggle_catalyst_catalyst|E]"
+ catalyst_l5r_shadowlands_ruler_died_violently_desc:0 "A [shadowlands|E]  [ruler|E] dies of unnatural causes"
+ catalyst_declared_a_war:0 "Declared [war|E] as an Attacker [struggle_catalyst_catalyst|E]"
+ catalyst_declared_a_war_desc:0 "Declared [war|E] as an Attacker"
+ catalyst_declared_war_upon:0 "Declared [war|E] upon as a Defender [struggle_catalyst_catalyst|E]"
+ catalyst_declared_war_upon_desc:0 "Declared [war|E] upon as a Defender"
 
 
  # Effects
