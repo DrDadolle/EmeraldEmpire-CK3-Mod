@@ -24,14 +24,14 @@ shadowlands_struggle.0001 = {
 	option = {
 		name = shadowlands_struggle.0001.a
 		trigger = {
-			religion = { is_in_family = rf_rokugan}
+			faith_is_good = yes
 		}
 		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
 	}
 	option = {
 		name = shadowlands_struggle.0001.b
 		trigger = {
-			religion = { is_in_family = rf_shadowlands}
+			faith_is_evil = yes
 		}
 		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
 	}
@@ -39,7 +39,7 @@ shadowlands_struggle.0001 = {
 	option = {
 		name = shadowlands_struggle.0001.c
 		trigger = {
-			religion = { is_in_family = rf_gaijin}
+			faith_is_neutral = yes
 		}
 		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
 	}
@@ -68,19 +68,19 @@ shadowlands_struggle.0002 = {
 	option = {
 		name = shadowlands_struggle.0002.a
 		trigger = {
-			religion = { is_in_family = rf_rokugan}
+			faith_is_good = yes
 		}
 	}
 	option = {
 		name = shadowlands_struggle.0002.b
 		trigger = {
-			religion = { is_in_family = rf_shadowlands}
+			faith_is_evil = yes
 		}
 	}
 	option = {
 		name = shadowlands_struggle.0002.c
 		trigger = {
-			religion = { is_in_family = rf_gaijin}
+			faith_is_neutral = yes
 		}
 	}
 }
@@ -104,20 +104,20 @@ shadowlands_struggle.1000 = {
 	option = {
 		name = shadowlands_struggle.1000.a
 		trigger = {
-			religion = { is_in_family = rf_rokugan}
+			faith_is_good = yes
 		}
 	}
 	option = {
 		name = shadowlands_struggle.1000.b
 		trigger = {
-			religion = { is_in_family = rf_shadowlands}
+			faith_is_evil = yes
 		}
 	}
 
 	option = {
 		name = shadowlands_struggle.1000.c
 		trigger = {
-			religion = { is_in_family = rf_gaijin}
+			faith_is_neutral = yes
 		}
 	}
 }
@@ -139,20 +139,20 @@ shadowlands_struggle.1001 = {
 	option = {
 		name = shadowlands_struggle.1001.a
 		trigger = {
-			religion = { is_in_family = rf_rokugan}
+			faith_is_good = yes
 		}
 	}
 	option = {
 		name = shadowlands_struggle.1001.b
 		trigger = {
-			religion = { is_in_family = rf_shadowlands}
+			faith_is_evil = yes
 		}
 	}
 
 	option = {
 		name = shadowlands_struggle.1001.c
 		trigger = {
-			religion = { is_in_family = rf_gaijin}
+			faith_is_neutral = yes
 		}
 	}
 }
@@ -174,20 +174,20 @@ shadowlands_struggle.1002 = {
 	option = {
 		name = shadowlands_struggle.1002.a
 		trigger = {
-			religion = { is_in_family = rf_rokugan}
+			faith_is_good = yes
 		}
 	}
 	option = {
 		name = shadowlands_struggle.1002.b
 		trigger = {
-			religion = { is_in_family = rf_shadowlands}
+			faith_is_evil = yes
 		}
 	}
 
 	option = {
 		name = shadowlands_struggle.1002.c
 		trigger = {
-			religion = { is_in_family = rf_gaijin}
+			faith_is_neutral = yes
 		}
 	}
 }

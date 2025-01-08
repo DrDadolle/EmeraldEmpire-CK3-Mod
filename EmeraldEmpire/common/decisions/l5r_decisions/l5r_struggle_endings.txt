@@ -27,7 +27,7 @@ struggle_shadowlands_ending_shadowlands_domination = {
 			}
 		}
 		# Is a shadowlands guy
-		religion = { is_in_family = rf_shadowlands}
+		faith_is_evil = yes
 		culture = { has_cultural_pillar = heritage_spider }
 
 		# Got Crab Clan territory
@@ -103,8 +103,8 @@ struggle_shadowlands_ending_crab_domination = {
 			}
 		}
 
-		# Is a crab shadowlands
-		religion = { is_in_family = rf_rokugan}
+		# Is a crab rokugani
+		faith_is_good = yes
 		culture = { has_cultural_pillar = heritage_crab }
 
 		# Got Hiruma Castle & converted & good culture ?
@@ -113,7 +113,7 @@ struggle_shadowlands_ending_crab_domination = {
 			any_county_in_region = {
 				region = custom_d_hiruma
 				count = all
-				religion = { is_in_family = rf_rokugan}
+				faith_is_good = yes
 				# culture = root.culture
 			}
 		}
@@ -183,7 +183,7 @@ struggle_shadowlands_ending_spider_domination = {
 			}
 		}
 		# Is a shadowlands guy
-		religion = { is_in_family = rf_shadowlands}
+		faith_is_evil = yes
 		culture = { has_cultural_pillar = heritage_spider }
 
 		# Only a king

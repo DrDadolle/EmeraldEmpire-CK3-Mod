@@ -1,0 +1,22 @@
+﻿l_english:
+ FAITH_IS_GOOD_TRIGGER_GLOBAL:0 "This character's faith is in the [GetReligionFamily('rf_rokugan').GetName] [religious_family|E] or has the [GetFaithDoctrine('tenet_rokugani_syncretism').GetBaseName] [doctrine|E]"
+ NOT_FAITH_IS_GOOD_TRIGGER_GLOBAL:0 "This character's faith is #bold not#! in the [GetReligionFamily('rf_rokugan').GetName] [religious_family|E] and #bold does not have#! the [GetFaithDoctrine('tenet_rokugani_syncretism').GetBaseName] [doctrine|E]"
+ FAITH_IS_GOOD_TRIGGER_FIRST:0 "Your faith is in the [GetReligionFamily('rf_rokugan').GetName] [religious_family|E] or has the [GetFaithDoctrine('tenet_rokugani_syncretism').GetBaseName] [doctrine|E]"
+ NOT_FAITH_IS_GOOD_TRIGGER_FIRST:0 "Your faith is #bold not#! in the [GetReligionFamily('rf_rokugan').GetName] [religious_family|E] and #bold does not have#! the [GetFaithDoctrine('tenet_rokugani_syncretism').GetBaseName] [doctrine|E]"
+ FAITH_IS_GOOD_TRIGGER_THIRD:0 "This character's faith is in the [GetReligionFamily('rf_rokugan').GetName] [religious_family|E] or has the [GetFaithDoctrine('tenet_rokugani_syncretism').GetBaseName] [doctrine|E]"
+ NOT_FAITH_IS_GOOD_TRIGGER_THIRD:0 "This character's faith is #bold not#! in the [GetReligionFamily('rf_rokugan').GetName] [religious_family|E] and #bold does not have#! the [GetFaithDoctrine('tenet_rokugani_syncretism').GetBaseName] [doctrine|E]"
+ 
+ FAITH_IS_EVIL_TRIGGER_GLOBAL:0 "This character's faith is in the [GetReligionFamily('rf_shadowlands').GetName] [religious_family|E] or has the [GetFaithDoctrine('tenet_shadowlands_syncretism').GetBaseName] [doctrine|E]"
+ NOT_FAITH_IS_EVIL_TRIGGER_GLOBAL:0 "This character's faith is #bold not#! in the [GetReligionFamily('rf_shadowlands').GetName] [religious_family|E] and #bold does not have#! the [GetFaithDoctrine('tenet_shadowlands_syncretism').GetBaseName] [doctrine|E]"
+ FAITH_IS_EVIL_TRIGGER_FIRST:0 "Your faith is in the [GetReligionFamily('rf_shadowlands').GetName] [religious_family|E] or has the [GetFaithDoctrine('tenet_shadowlands_syncretism').GetBaseName] [doctrine|E]"
+ NOT_FAITH_IS_EVIL_TRIGGER_FIRST:0 "Your faith is #bold not#! in the [GetReligionFamily('rf_shadowlands').GetName] [religious_family|E] and #bold does not have#! the [GetFaithDoctrine('tenet_shadowlands_syncretism').GetBaseName] [doctrine|E]"
+ FAITH_IS_EVIL_TRIGGER_THIRD:0 "This character's faith is in the [GetReligionFamily('rf_shadowlands').GetName] [religious_family|E] or has the [GetFaithDoctrine('tenet_shadowlands_syncretism').GetBaseName] [doctrine|E]"
+ NOT_FAITH_IS_EVIL_TRIGGER_THIRD:0 "This character's faith is #bold not#! in the [GetReligionFamily('rf_shadowlands').GetName] [religious_family|E] and #bold does not have#! the [GetFaithDoctrine('tenet_shadowlands_syncretism').GetBaseName] [doctrine|E]"
+ 
+ FAITH_IS_NEUTRAL_TRIGGER_GLOBAL:0 "This character's faith is in the [GetReligionFamily('rf_gaijin').GetName] [religious_family|E]."
+ NOT_FAITH_IS_NEUTRAL_TRIGGER_GLOBAL:0 "This character's faith is #bold not#! in the [GetReligionFamily('rf_gaijin').GetName] [religious_family|E] or #bold have#! the [GetFaithDoctrine('tenet_rokugani_syncretism').GetBaseName] or the [GetFaithDoctrine('tenet_shadowlands_syncretism').GetBaseName] [doctrine|E]"
+ FAITH_IS_NEUTRAL_TRIGGER_FIRST:0 "Your faith is in the [GetReligionFamily('rf_gaijin').GetName] [religious_family|E]."
+ NOT_FAITH_IS_NEUTRAL_TRIGGER_FIRST:0 "Your faith is #bold not#! in the [GetReligionFamily('rf_gaijin').GetName] [religious_family|E] or #bold have#! the [GetFaithDoctrine('tenet_rokugani_syncretism').GetBaseName] or the [GetFaithDoctrine('tenet_shadowlands_syncretism').GetBaseName] [doctrine|E]"
+ FAITH_IS_NEUTRAL_TRIGGER_THIRD:0 "This character's faith is in the [GetReligionFamily('rf_gaijin').GetName] [religious_family|E] and has the [GetFaithDoctrine('doctrine_a_people_apart').GetBaseName] [doctrine|E]"
+ NOT_FAITH_IS_NEUTRAL_TRIGGER_THIRD:0 "This character's faith is #bold not#! in the [GetReligionFamily('rf_gaijin').GetName] [religious_family|E] or #bold have#! the [GetFaithDoctrine('tenet_rokugani_syncretism').GetBaseName] or the [GetFaithDoctrine('tenet_shadowlands_syncretism').GetBaseName] [doctrine|E]"
+ 

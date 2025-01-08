@@ -15,3 +15,22 @@ any_courtier_or_guest = {
 any_courtier_or_guest_all = {
 	global = ALL_OF_CHARACTERS_COURTIER_OR_GUEST
 }
+
+
+faith_is_good = {
+	global = FAITH_IS_GOOD_TRIGGER_GLOBAL
+	first = FAITH_IS_GOOD_TRIGGER_FIRST
+	third = FAITH_IS_GOOD_TRIGGER_THIRD
+}
+
+faith_is_evil = {
+	global = FAITH_IS_EVIL_TRIGGER_GLOBAL
+	first = FAITH_IS_EVIL_TRIGGER_FIRST
+	third = FAITH_IS_EVIL_TRIGGER_THIRD
+}
+
+faith_is_neutral = {
+	global = FAITH_IS_NEUTRAL_TRIGGER_GLOBAL
+	first = FAITH_IS_NEUTRAL_TRIGGER_FIRST
+	third = FAITH_IS_NEUTRAL_TRIGGER_THIRD
+}

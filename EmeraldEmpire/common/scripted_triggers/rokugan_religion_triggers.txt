@@ -1,0 +1,63 @@
+﻿
+#####################################
+### CULTURAL AND RELIGIOUS GROUPS ###
+#####################################
+
+faith_is_good = {
+	custom_description = {
+		text = faith_is_good
+		OR = {
+			religion = { is_in_family = rf_rokugan }
+			faith = { has_doctrine = tenet_rokugani_syncretism }
+			
+		}
+	}
+}
+
+faith_is_evil = {
+	custom_description = {
+		text = faith_is_evil
+		OR = {
+			religion = { is_in_family = rf_shadowlands }
+			faith = { has_doctrine = tenet_shadowlands_syncretism }
+		}
+	}
+}
+
+faith_is_neutral = {
+	custom_description = {
+		text = faith_is_neutral
+		faith_is_good = no
+		faith_is_evil = no
+	}
+}
+
+opposite_alignment = { #compares two scopes, example opposite_alignment = { TARGET = scope:target_ruler }
+	OR = {
+		AND = {
+			faith_is_good = yes
+			$TARGET$ = { faith_is_evil = yes }
+		}
+		AND = {
+			faith_is_evil = yes
+			$TARGET$ = { faith_is_good = yes }
+		}
+	}
+}
+
+same_alignment = { #compares two scopes, example same_alignment = { TARGET = scope:target_ruler }
+	OR = {
+		AND = {
+			faith_is_good = yes
+			$TARGET$ = { faith_is_good = yes }
+		}
+		AND = {
+			faith_is_evil = yes
+			$TARGET$ = { faith_is_evil = yes }
+		}
+		AND = {
+			faith_is_neutral = yes
+			$TARGET$ = { faith_is_neutral = yes }
+		}
+	}
+}
