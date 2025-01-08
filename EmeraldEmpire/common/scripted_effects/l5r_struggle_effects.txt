@@ -1,0 +1,37 @@
+﻿
+#######################################################################
+# EFFECT LIST
+#######################################################################
+# !!! Remember to add all new effects with a short description here !!!
+#######################################################################
+spawn_army_invasion_crab_clan = {
+	#One army to conquer.
+	spawn_army = {
+		name = event_troop_default_name
+		levies = 3000
+		men_at_arms = {
+			type = pit_oni
+			stacks = 10
+		}
+		location = scope:attacker.capital_province
+		uses_supply = no
+		war = scope:war
+		inheritable = no
+	}
+	#And one army to hold.
+	spawn_army = {
+		name = event_troop_default_name
+		levies = 1000
+		men_at_arms = {
+			type = pit_oni
+			stacks = 10
+		}
+		location = scope:attacker.capital_province
+		uses_supply = no
+		inheritable = no
+	}
+
+	add_character_modifier = {
+		modifier = shadowlands_invasion_leader_modifier
+	}
+}

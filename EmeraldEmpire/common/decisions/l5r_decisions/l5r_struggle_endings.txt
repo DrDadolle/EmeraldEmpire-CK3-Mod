@@ -40,7 +40,6 @@ struggle_shadowlands_ending_shadowlands_domination = {
 	}
 
 	is_valid_showing_failures_only = {
-
 		is_at_war = no
 	}
 
@@ -51,7 +50,7 @@ struggle_shadowlands_ending_shadowlands_domination = {
 		give_nickname = nick_wall_breaker
 
 		# reduce fervor of rokugani religion ? To have lot of heresy
-
+		# Destroy the Kaiu Wall ?
 
 
 		struggle:shadowlands_struggle = {

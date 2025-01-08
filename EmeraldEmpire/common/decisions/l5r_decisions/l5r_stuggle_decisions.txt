@@ -1,0 +1,77 @@
+﻿
+decision_invade_crab_clan = {
+	title = decision_invade_crab_clan
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_shadowlands.dds"
+	}
+	selection_tooltip = decision_invade_crab_clan_tooltip
+	desc = decision_invade_crab_clan_desc
+	confirm_text = decision_invade_crab_clan_confirm
+
+	decision_group_type = l5r_clan
+	
+	ai_goal = yes
+
+	ai_potential = {
+		always = yes
+	}
+
+
+	ai_will_do = {
+		base = 1000
+
+		# AI will not attempt unless they are at least a king ? 
+		modifier = { 
+			factor = 0
+			highest_held_title_tier <= tier_duchy
+		}
+
+	}
+
+	cooldown = { years = 20 }
+	
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		NOT = {
+			government_has_flag = government_is_landless_adventurer
+		}
+		culture = { has_cultural_pillar = heritage_spider }
+		faith_is_evil = yes 
+		any_character_struggle = {
+			involvement = involved
+			is_struggle_type = shadowlands_struggle
+			is_struggle_phase = struggle_shadowlands_phase_invasion
+		}
+
+		NOT = { #to prevent who conquered crab clan already from destroying himself
+			has_title = title:k_crab_clan
+		}
+		exists = title:k_crab_clan
+	}
+
+	is_valid = {
+		always = yes
+	}
+
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+		is_at_war = no
+	}
+
+
+	effect = {
+		custom_tooltip = invade_crab_clan_decision
+		trigger_event = {
+			id = shadowlands_struggle.2000
+		}
+
+		# The invasion_of_crab_clan_cb  on_declaration  create the army.
+		# And gives an neat modifier
+		show_as_tooltip = {
+			spawn_army_invasion_crab_clan = yes
+		}
+	}
+}

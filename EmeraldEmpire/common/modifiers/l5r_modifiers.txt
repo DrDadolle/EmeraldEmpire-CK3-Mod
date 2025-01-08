@@ -12,3 +12,25 @@ shinsei_last_hope_modifier = {
 	monthly_piety = 0.5
 	defender_advantage = 50
 }
+
+###############
+### Struggles
+shadowlands_invasion_leader_modifier = {
+	icon = martial_positive
+	# Stats
+	martial = 5
+	prowess = 5
+	# Protection
+	health = 1
+	negate_health_penalty_add = 1
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	enemy_hostile_scheme_success_chance_max_add = -20
+	enemy_hostile_scheme_success_chance_growth_add = -1
+	# Army
+	same_faith_opinion = 20
+	ai_boldness = 50
+	monthly_income = 5
+	levy_maintenance = -0.1
+	men_at_arms_maintenance = -0.1
+	levy_size = 0.5
+}

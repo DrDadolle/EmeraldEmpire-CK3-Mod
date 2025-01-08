@@ -265,14 +265,15 @@ on_death = {
 					}
 				}
 			}
-			if = {
-				limit = { has_character_flag = undertaking_hungarian_migration }
-				player_heir = {
-					add_character_flag = {
-						flag = undertaking_hungarian_migration
-					}
-				}
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = { has_character_flag = undertaking_hungarian_migration }
+			# 	player_heir = {
+			# 		add_character_flag = {
+			# 			flag = undertaking_hungarian_migration
+			# 		}
+			# 	}
+			# }
 		}
 
 		if = {

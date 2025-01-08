@@ -8,7 +8,9 @@
  struggle_shadowlands_phase_invasion:0 "Invasion"
  struggle_shadowlands_phase_invasion_desc:0 "A [shadowlands|E] leader has emerged a de facto leaders of large contingents of Shadowlands forces. [rokugan|U] must stand strong, for their reaction will determine its survival. "
 
- # Catalysts
+ ############################
+ ###### Catalysts
+ ############################
  catalyst_l5r_crab_champion_died_violently:0 "Crab Clan Champion died violently [struggle_catalyst_catalyst|E]"
  catalyst_l5r_crab_champion_died_violently_desc:0 "The [crabclan|E] [ruler|E] dies of unnatural causes"
  catalyst_l5r_crab_champion_died_naturally:0 "Crab Clan Champion died naturally  [struggle_catalyst_catalyst|E]"
@@ -19,6 +21,8 @@
  catalyst_declared_a_war_desc:0 "Declared [war|E] as an Attacker"
  catalyst_declared_war_upon:0 "Declared [war|E] upon as a Defender [struggle_catalyst_catalyst|E]"
  catalyst_declared_war_upon_desc:0 "Declared [war|E] upon as a Defender"
+ catalyst_shadowlands_invasion_war_declared:0 "Shadowlands declared the [crabclan|E] invasion [war|E]"
+ catalyst_shadowlands_invasion_war_declared_desc:0 "Shadowlands declared the [crabclan|E] invasion [war|E]"
 
 
  # Effects
@@ -26,8 +30,18 @@
 
  # Modifiers
 
+ ############################
+ ###### Decisions
+ ############################
+ decision_invade_crab_clan:0 "Invade the Crab Clan"
+ decision_invade_crab_clan_tooltip:0 "Launch an invasion that, if successful, will destroy the Crab Clan once and for all"
+ decision_invade_crab_clan_desc:0 "The Crab Clan has looked down upon us from their remparts for far too long. has stood defiant against your will, Great Lord, for far too long. If we can secure Ithilien as a point of attack against it, we could amass such an army that even Minas Tirith itself could not resist. And if Minas Tirith falls, then Gondor shall be leaderless, and fracture."
+ decision_invade_crab_clan_confirm:0 "All the Shadowlands is gathered"
+ invade_crab_clan_decision:0 "Gather your troops and launch the final assault on the Wall"
 
- # Events
+ ############################
+ ###### EVENTS
+ ############################
 
  shadowlands_struggle.0001.t:0 "The $shadowlands_struggle$"
  shadowlands_struggle.0001.desc:0 "The evil denizens of the [shadowlands|E] all dream of one thing. Casting down the Kaiu Wall and invade [rokugan|E]. It is the sacred duty of the [crabclan|E] to protect it and defend the rest of the empire against hordes of undead and nightmares. A lot of their samurais will die, and the empire will never acknowledge their sacrifice, but it has been this way for centuries...\n\n$shadowlands_struggle_desc$"
@@ -61,3 +75,9 @@
  shadowlands_struggle.1002.a:0 "I do not trust their intentions in the slightest."
  shadowlands_struggle.1002.b:0 "Interesting..."
  shadowlands_struggle.1002.c:0 "Let's be cautious with them..."
+
+
+
+ shadowlands_struggle.2000.t:0 "The March on Crab Clan"
+ shadowlands_struggle.2000.desc:0 "The last pitiful defence of Rokugan, the Crab Clan and its Kaiu Wall, has stood against your ambitions. Now, with your vast hordes and the onis at your side, the Crab Clan cannot hope to stand against you. If the Kaiu Wall falls, the empire of Rokugan will be next..."
+ shadowlands_struggle.2000.a:0 "The Wall will fall."

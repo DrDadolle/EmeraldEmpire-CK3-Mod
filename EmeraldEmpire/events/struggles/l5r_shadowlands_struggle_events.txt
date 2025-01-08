@@ -191,3 +191,55 @@ shadowlands_struggle.1002 = {
 		}
 	}
 }
+
+##########
+#### Invasion of Crab Clan Event
+shadowlands_struggle.2000 = { # Invasion of Crab Clan
+	content_source = l5r_dlc
+	type = character_event
+	title = shadowlands_struggle.2000.t
+	desc = shadowlands_struggle.2000.desc
+	theme = war
+	left_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	right_portrait = {
+		character = character:crab_clan
+		animation = anger
+	}
+
+	
+	immediate = {
+		if = {
+			limit = { exists = title:k_crab_clan.holder }
+			title:k_crab_clan.holder = { save_scope_as = crab_clan }
+		}
+		else_if = {
+			limit = { exists = title:e_rokugan.holder }
+			title:e_rokugan.holder = { save_scope_as = crab_clan }
+		}
+	}
+	
+	option = {
+		name = shadowlands_struggle.2000.a
+
+		show_as_tooltip = {
+			spawn_army_invasion_crab_clan = yes
+		}
+
+		start_war = {
+			casus_belli = invasion_of_crab_clan_cb
+			target = scope:crab_clan
+			target_title = title:k_crab_clan
+		}
+		# TODO : ask for help ? Dunno
+		# scope:crab_clan = {
+		# 	trigger_event = {
+		# 		id = shadowlands_struggle.2001
+		# 		days = 1
+		# 	}
+		# }
+		
+	}
+}

@@ -1,0 +1,409 @@
+﻿##########
+# Special 'invasion' CB used by the Hungarians to migrate from the steppe to Pannonia
+# If victorious, the Hungarians directly usurp all land within Pannonia not held by a player.
+##########
+# Based on the hungarian_migration_cb event cb & Great Holy Wars
+#L5R Disabled
+invasion_of_crab_clan_cb = {
+	icon = invasion
+	group = invasion	#Switching this to event will render the CB invisible.
+	ai = no # AI targeting is handled through game_rule events.
+	
+	#No White peace, no hostages
+	white_peace_possible = no
+	allow_hostages = no
+
+	gui_attacker_faith_might_join = yes
+	gui_defender_faith_might_join = yes
+	check_all_defenders_for_ticking_war_score = yes
+	on_primary_attacker_death = inherit
+	on_primary_defender_death = inherit
+	transfer_behavior = transfer
+	attacker_allies_inherit = yes
+	defender_allies_inherit = yes
+	
+	war_name = "SHADOWLANDS_INVASION_WAR_NAME"
+	war_name_base = "SHADOWLANDS_INVASION_WAR_NAME_BASE"
+	cb_name = "SHADOWLANDS_INVASION_CB_NAME"
+	
+	interface_priority = 1000
+	
+	use_de_jure_wargoal_only = yes
+	
+	attacker_wargoal_percentage = 0.8
+
+	target_titles = all
+	target_title_tier = kingdom
+	target_de_jure_regions_above = yes
+	ignore_effect = change_title_holder
+	use_de_jure_wargoal_only = yes
+	combine_into_one = yes
+
+	#Configure war-score. This is a bit different to usual, focusing mostly on battles and almost not at all on back-capping the attacker: Shadowlands literally do not care at all if you occupy their homelands, they're trying to destroy the crab clan.
+	max_attacker_score_from_battles = 200
+	max_defender_score_from_battles = 200
+	max_defender_score_from_occupation = 25
+	max_attacker_score_from_occupation = 150
+	full_occupation_by_defender_gives_victory = no
+	landless_attacker_needs_armies = no
+	attacker_capital_gives_war_score = no
+
+	# Done via a decision decision_invade_crab_clan
+	allowed_for_character = {
+		always = no
+	}
+
+	# allowed_for_character = {
+	# 	# If evil faith, spider, involved in struggle
+	# 	culture = { has_cultural_pillar = heritage_spider }
+	# 	faith_is_evil = yes 
+	# 	any_character_struggle = {
+	# 		involvement = involved
+	# 		is_struggle_type = shadowlands_struggle
+	# 		is_struggle_phase = struggle_shadowlands_phase_invasion
+	# 	}
+	# 	NOT = {
+	# 		government_has_flag = government_is_landless_adventurer
+	# 	}
+	# }
+
+	# No special target, is handled by the decision decision_invade_crab_clan
+	# allowed_against_character = {
+	# 	# Target good faith & non-spider characters
+	# 	#Realm must have at least some land in Crab Lands.
+	# 	scope:defender = {
+	# 		faith_is_good = yes
+	# 		NOT = { culture = { has_cultural_pillar = heritage_spider } }
+	# 		any_realm_county = {
+	# 			title_province = { geographical_region = rokugan_crab_clan }
+	# 		}
+	# 	}
+	# }
+
+ 	# Done via a decision decision_invade_crab_clan
+	# valid_to_start = {
+	# 	#May only target Crab Clan.
+	# 	scope:target = title:k_crab_clan
+	# }
+
+	# Cannot be invalidated 
+	# should_invalidate = {
+	# 	NOT = {
+	# 		any_in_list = {
+	# 			list = target_titles
+	# 			any_in_de_jure_hierarchy = {
+	# 				tier = tier_county
+	# 				holder = {
+	# 					target_is_same_character_or_above = scope:defender
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	#Emperors do not deign to migrate. Plus it'll mess up title destruction.
+	# 	# scope:attacker = { highest_held_title_tier >= tier_empire }
+	# }
+
+	# Cannot be invalidated !
+	# on_invalidated = {
+	# 	if = {
+	# 		limit = { exists = scope:attacker.player_heir }
+	# 		scope:attacker.player_heir = {
+	# 			if = {
+	# 				limit = {
+	# 					culture = { has_cultural_pillar = heritage_spider }
+	# 					faith_is_evil = yes 
+	# 					any_character_struggle = {
+	# 						involvement = involved
+	# 						is_struggle_type = shadowlands_struggle
+	# 						is_struggle_phase = struggle_shadowlands_phase_invasion
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	on_invalidated_desc = msg_invasion_war_invalidated_message
+
+	#No cost: that's paid in the decision.
+	
+	on_declaration = {
+		on_declared_war = yes
+
+		scope:attacker = {
+			# Struggle catalyst for shadowlands
+			if = {
+				limit = {
+					any_character_struggle = {
+						involvement = involved
+						phase_has_catalyst = catalyst_declared_a_war
+					}
+				}
+				every_character_struggle = {
+					involvement = involved
+					activate_struggle_catalyst = {
+						catalyst = catalyst_declared_a_war
+						character = root
+					}
+				}
+			}
+
+			#Give scope:attacker some armies to ensure success & use up their free invasion.
+			spawn_army_invasion_crab_clan = yes
+		}
+	}	
+
+	on_victory_desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:attacker = { is_local_player = yes }
+				}
+				desc = shadowlands_invasion_war_victory_desc_attacker
+				# desc = hungarian_invasion_war_victory_desc_attacker
+			}
+			# desc = hungarian_invasion_war_victory_desc
+			desc = shadowlands_invasion_war_victory_desc
+		}
+		triggered_desc = {
+			trigger = {
+				scope:attacker = { is_local_player = yes }
+			}
+			# desc = hungarian_invasion_war_warning_desc
+			desc = shadowlands_invasion_war_warning_desc
+		}
+	}
+	
+	on_victory = {
+		scope:attacker = { 
+			show_pow_release_message_effect = yes 
+			# Remove the character modifier
+			remove_character_modifier = shadowlands_invasion_leader_modifier
+		}
+
+
+		
+		# Legitimacy
+		add_legitimacy_attacker_victory_effect = yes
+
+		#EP2 accolade glory gain for winning against higher ranked enemy
+		scope:attacker = { accolade_attacker_war_end_glory_gain_high_effect = yes }
+
+		#If the Mogyers aren't independent, make them so.
+		if = {
+			limit = {
+				scope:attacker = { is_independent_ruler = no }
+			}
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			change_liege_or_become_independent = {
+				CHANGE = scope:change
+				VASSAL = scope:attacker
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		#Take lands within Crab Lands.
+		hidden_effect = {
+			create_title_and_vassal_change = {
+				type = conquest
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			setup_invasion_cb = {
+				titles = target_titles
+				attacker = scope:attacker
+				defender = scope:defender
+				change = scope:change
+				take_occupied = no
+			}
+			every_in_list = {
+				list = target_titles
+
+				# Personally seize all duchy titles in k_crab_clan AND duchy titles personally held by the target king.
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier = tier_duchy
+						special_invasion_cb_seize_land_in_region_trigger = {
+							TARGET_REGION = rokugan_crab_clan
+							TARGET_KINGDOM = title:k_crab_clan
+						}
+					}
+					if = {
+						limit = {
+							exists = holder
+							holder = {
+								exists = top_liege
+								top_liege = scope:defender
+
+								# L5R Nah, let's game over them
+								# Vassal players in Hungary  get to keep their holdings, so they can play as vassals of the new king instead of game-overing.
+								# NAND = {
+								# 	NOT = { this = top_liege }
+								# 	is_ai = no
+								# }
+							}
+						}
+						hidden_effect = {
+							# As a security set all the county below the duchy as under transfer in case the defender owned the duchy and the counties below
+							every_in_de_jure_hierarchy = {
+								limit = {
+									tier = tier_county
+									exists = holder
+									holder = scope:defender
+								}
+								add_to_temporary_list = county_titles_under_transfer
+							}
+						}
+						custom_description = {
+							text = custom_seize_title_and_below_de_jure
+							subject = scope:attacker
+							object = this
+							change_title_holder = {
+								holder = scope:attacker
+								change = scope:change
+								take_baronies = yes
+							}
+						}
+					}
+				}
+
+				# Grab counties belonging to duchies that don't exist
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier = tier_county
+						exists = holder
+						holder = {
+							top_liege = scope:defender
+
+							# L5R Nah, let's game over them
+							# Vassal players in Crab Clan get to keep their holdings, so they can play as vassals of the new king instead of game-overing.
+							# NAND = {
+							# 	NOT = { this = top_liege }
+							# 	is_ai = no
+							# }
+						}
+					}
+					hidden_effect = {
+						if = { 
+							limit = { NOT = { is_in_list = county_titles_under_transfer } } # Theoretically prevents cases in which a title was already on the list
+							add_to_temporary_list = county_titles_under_transfer
+							change_title_holder = {
+								holder = scope:attacker
+								change = scope:change
+								take_baronies = yes
+							}
+						}
+					}
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		#Start processing the Hungarian-specific effects.
+		# Start processing Shadowlands specific effects.
+		scope:attacker = {
+			#L5R TODO ? Or handle by struggle endings
+			# launch_hungarian_migration_scripted_effect = { INVADER = scope:attacker }
+		}
+
+		# Attacker gets Prestige Experience, Defender loses Prestige, all other participants gain Prestige based on their war contribution.
+		modify_all_participants_fame_values = {
+			WINNER = scope:attacker
+			LOSER = scope:defender
+			FAME_BASE = scope:cb_prestige_factor # Set by 'setup_invasion_cb'
+			IS_RELIGIOUS_WAR = no
+			WINNER_FAME_SCALE = 10
+			LOSER_FAME_SCALE = -10
+			WINNER_ALLY_FAME_SCALE = 10
+			LOSER_ALLY_FAME_SCALE = 10
+		}
+
+		# Truce
+		add_truce_attacker_victory_effect = yes
+
+		# FP1: note the victory for future memorialisation via stele (if applicable).
+		scope:attacker = { fp1_remember_recent_conquest_victory_effect = yes }
+
+		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
+		laamp_as_mercenary_payout_tooltip_effect = yes
+	}
+
+	on_white_peace_desc = {
+		desc = WHITE_PEACE_DISABLED
+	}
+	
+	# No White peace !
+	# on_white_peace = {
+	# }
+
+	on_defeat_desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:defender = { is_local_player = yes } }
+				desc = invasion_war_white_peace_desc_defender
+			}
+			desc = invasion_war_white_peace_desc
+		}
+	}
+	
+	on_defeat = {
+		scope:attacker = { 
+			show_pow_release_message_effect = yes 
+			# Remove the character modifier
+			remove_character_modifier = shadowlands_invasion_leader_modifier
+		}
+		
+		# Legitimacy
+		add_legitimacy_attacker_defeat_effect = yes
+
+		#EP2 accolade glory gain for winning against higher ranked enemy
+		scope:defender = { accolade_defender_war_end_glory_gain_high_effect = yes }
+
+		# Prestige loss for the attacker
+		scope:attacker = {
+			pay_short_term_gold_reparations_effect = {
+				GOLD_VALUE = 5
+			}
+			add_prestige = {
+				value = massive_prestige_value
+				multiply = -1.0
+			}
+		}
+		
+		setup_invasion_cb = {
+			titles = target_titles
+			attacker = scope:attacker
+			defender = scope:defender
+			claimant = scope:claimant
+			victory = no
+		}
+
+		# Attacker loses Prestige, all other war participants gain Prestige (Defender gains full prestige, all allies on both sides gain based on war contribution).
+		modify_all_participants_fame_values = {
+			WINNER = scope:defender
+			LOSER = scope:attacker
+			FAME_BASE = scope:cb_prestige_factor # Set by 'setup_claim_cb'
+			IS_RELIGIOUS_WAR = no
+			WINNER_FAME_SCALE = scale_10_war_defender_win
+			LOSER_FAME_SCALE = -10
+			WINNER_ALLY_FAME_SCALE = 10
+			LOSER_ALLY_FAME_SCALE = 10
+		}
+	
+		add_truce_attacker_defeat_effect = yes
+		
+		scope:attacker = {
+			save_temporary_scope_as = loser
+		}
+		on_lost_aggression_war_discontent_loss = yes
+
+		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
+		laamp_as_mercenary_payout_tooltip_effect = yes
+	}
+	
+}
+
