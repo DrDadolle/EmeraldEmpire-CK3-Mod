@@ -26,7 +26,7 @@
 
 
  # Effects
-
+ shadowlands_duchies_kingdoms_empires_explodes:0 "All [de_jure|E][duchy|E], [kingdom|E] as well as the [shadowlands|E] [empire|E] title, that you or your vassal own are destroyed."
 
  # Modifiers
 
@@ -37,7 +37,7 @@
  decision_invade_crab_clan_tooltip:0 "Launch an invasion that, if successful, will destroy the Crab Clan once and for all"
  decision_invade_crab_clan_desc:0 "The Crab Clan has looked down upon us from their remparts for far too long. has stood defiant against your will, Great Lord, for far too long. If we can secure Ithilien as a point of attack against it, we could amass such an army that even Minas Tirith itself could not resist. And if Minas Tirith falls, then Gondor shall be leaderless, and fracture."
  decision_invade_crab_clan_confirm:0 "All the Shadowlands is gathered"
- invade_crab_clan_decision:0 "Gather your troops and launch the final assault on the Wall.\n\n If you fail however, all empire and kingdom [title|E] within the [shadowlands|E] [dejure|E] lands will be destroyed."
+ invade_crab_clan_decision:0 "Gather your troops and launch the final assault on the Wall.\n\n If you fail however, all empire and kingdom [title|E] within the [shadowlands|E] [de_jure|E] lands will be destroyed."
  invasion_of_crab_clan_cb:0 "Invasion of Crab Clan Casus Belli"
 
  ############################
@@ -82,3 +82,26 @@
  shadowlands_struggle.2000.t:0 "The March on Crab Clan"
  shadowlands_struggle.2000.desc:0 "The last pitiful defence of Rokugan, the Crab Clan and its Kaiu Wall, has stood against your ambitions. Now, with your vast hordes and the onis at your side, the Crab Clan cannot hope to stand against you. If the Kaiu Wall falls, the empire of Rokugan will be next..."
  shadowlands_struggle.2000.a:0 "The Wall will fall."
+
+ shadowlands_struggle.2001.t:0 "The Fall of the Crab Clan"
+ shadowlands_struggle.2001.desc:0 "Kyuden Hida has fallen! \n\nThe Castle is pillaged while your hordes are slaughtering all inhabitants. The Crab Clan is destroyed, its leadership scattered and disorganised. \n\nThe rest of Rokugan now lay open, with no force strong enough to assail your lands, your conquest is all but inevitable. A glorious day for the Shadowlands !"
+ shadowlands_struggle.2001.a:0 "The sun has finally set on the damned crabs!"
+ 
+ shadowlands_struggle.2002.t:0 "The Fall of the Crab Clan"
+ shadowlands_struggle.2002.desc:0 "Shocking news. Hordes of undead, goblins and other horrors have breached the Kaiu Wall, swarming the ancestral lands of the crab and ultimately sacking Kyuden Hida. The Crab Clan, once the proud bulwark of the South, lays broken, its leadership dead or running for their lives. The road toward Otosan Uchi now lies open for the unending legions of the Shadowlands, plundering and slaughtering as they go. \n\nThe world is changing, and the embers of Tengoku are fading. A choking darkness is upon the world, and who now can stand against it?"
+ shadowlands_struggle.2002.a:0 "No! All samurais must now unite, or we shall soon be dead."
+ shadowlands_struggle.2002.b:0 "At long last, the accursed Crab Clan fall!"
+
+ shadowlands_struggle.2003.t:0 "The Crab Clan Stand Strong"
+ shadowlands_struggle.2003.desc:0 "Your plan of grandeur have failed! The stalward defender of the empire have succeded in defending against your assaults. Your forces are broken and runs again into the Shadowlands.\n\n  Your leadership is failing as well as all the different clans and creatures are now fighting against one another! \n\n A disastrous day for the Shadowlands !"
+ shadowlands_struggle.2003.a:0 "Damn you sun has finally set on the damned crabs!"
+ 
+ shadowlands_struggle.2004.t:0 "The Crab Clan Stand Strong"
+ shadowlands_struggle.2004.desc:0 "Hordes of undead, goblins and other horrors lays dead at the base of the Kaiu Wall, standing proud and undefeated against the darkness. The Crab Clan, like always, have not failed their sacred duty. The undomitable resolve and overwhelming strength proved to be insurmontable.\n\n All people in Rokugan rejoices!"
+ shadowlands_struggle.2004.a:0 "A glorious day to be remembered!"
+ shadowlands_struggle.2004.b:0 "Damn you, one day, you will fail!"
+
+ shadowlands_struggle.2010.t:0 "Shadowlands Invasion"
+ shadowlands_struggle.2010.desc:0 "Hordes of undead, goblins and other horrors are united under the banner of a corrupted warlord. They threaten Rokugan as a whole. It is time for me, Champion of the Crab Clan, to honor my sacred duty!"
+ shadowlands_struggle.2010.a:0 "We are the wall."
+ shadowlands_struggle.2010.b:0 "They do not deserve my help."

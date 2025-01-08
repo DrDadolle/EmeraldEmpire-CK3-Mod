@@ -87,41 +87,20 @@ invasion_of_crab_clan_cb = {
 	# }
 
 	# Cannot be invalidated 
-	# should_invalidate = {
-	# 	NOT = {
-	# 		any_in_list = {
-	# 			list = target_titles
-	# 			any_in_de_jure_hierarchy = {
-	# 				tier = tier_county
-	# 				holder = {
-	# 					target_is_same_character_or_above = scope:defender
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	#Emperors do not deign to migrate. Plus it'll mess up title destruction.
-	# 	# scope:attacker = { highest_held_title_tier >= tier_empire }
-	# }
+	should_invalidate = {
+		OR = {
+			scope:defender = { faith_is_evil = yes	}
+			scope:defender = { culture = { has_cultural_pillar = heritage_spider }  }
+			scope:defender = { top_liege = title:e_shadowlands.holder }
+		}
+	}
 
 	# Cannot be invalidated !
-	# on_invalidated = {
-	# 	if = {
-	# 		limit = { exists = scope:attacker.player_heir }
-	# 		scope:attacker.player_heir = {
-	# 			if = {
-	# 				limit = {
-	# 					culture = { has_cultural_pillar = heritage_spider }
-	# 					faith_is_evil = yes 
-	# 					any_character_struggle = {
-	# 						involvement = involved
-	# 						is_struggle_type = shadowlands_struggle
-	# 						is_struggle_phase = struggle_shadowlands_phase_invasion
-	# 					}
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
+	on_invalidated = {
+		desc = msg_invalidate_war_title
+		# Remove the character modifier
+		remove_character_modifier = shadowlands_invasion_leader_modifier
+	}
 
 	on_invalidated_desc = msg_invasion_war_invalidated_message
 
@@ -129,6 +108,18 @@ invasion_of_crab_clan_cb = {
 	
 	on_declaration = {
 		on_declared_war = yes
+
+		# Event to add Crab Clan Ruler as ally if not the target of the war
+		if = {
+			limit = {
+				 exists = title:k_crab_clan.holder
+				 NOT = { scope:defender = title:k_crab_clan.holder }
+				}
+			title:k_crab_clan.holder = {
+				trigger_event = shadowlands_struggle.2010
+			}
+			
+		}
 
 		scope:attacker = {
 			# Struggle catalyst for shadowlands
@@ -177,12 +168,8 @@ invasion_of_crab_clan_cb = {
 	on_victory = {
 		scope:attacker = { 
 			show_pow_release_message_effect = yes 
-			# Remove the character modifier
-			remove_character_modifier = shadowlands_invasion_leader_modifier
 		}
 
-
-		
 		# Legitimacy
 		add_legitimacy_attacker_victory_effect = yes
 
@@ -322,6 +309,22 @@ invasion_of_crab_clan_cb = {
 			LOSER_ALLY_FAME_SCALE = 10
 		}
 
+		# Inform everyone about it
+		hidden_effect = {
+			scope:attacker = {
+				trigger_event = shadowlands_struggle.2001
+			}
+			every_living_character = {
+				limit = {
+					NOT = { this = scope:attacker }
+				}
+				trigger_event = {
+					id = shadowlands_struggle.2002
+					days = 10
+				}
+			}
+		}
+
 		# Truce
 		add_truce_attacker_victory_effect = yes
 
@@ -353,30 +356,6 @@ invasion_of_crab_clan_cb = {
 	on_defeat = {
 		scope:attacker = { 
 			show_pow_release_message_effect = yes 
-			# Remove the character modifier
-			remove_character_modifier = shadowlands_invasion_leader_modifier
-		}
-
-		#TODO : destroy all empire/ kingdom / duchy titles within e_shadowlands
-		title:e_shadowlands = {
-			every_in_de_jure_hierarchy = {
-				limit = {
-					tier >= duchy
-					exists = holder
-				}
-				add_to_temporary_list = titles_to_destroy
-			}
-			if = {
-				limit = {  }
-			}
-			add_to_temporary_list = titles_to_destroy
-		}
-
-		every_in_list = {
-			list = titles_to_destroy
-			scope:defender = {
-				destroy_title = prev
-			}
 		}
 		
 		# Legitimacy
@@ -415,6 +394,22 @@ invasion_of_crab_clan_cb = {
 			WINNER_ALLY_FAME_SCALE = 10
 			LOSER_ALLY_FAME_SCALE = 10
 		}
+
+		hidden_effect = {
+            scope:attacker = {
+                trigger_event = shadowlands_struggle.2003
+            }
+			every_living_character = {
+				limit = {
+					NOT = { this = scope:attacker }
+				}
+				trigger_event = {
+					id = shadowlands_struggle.2004
+					days = 30
+				}
+			}
+		}
+		
 	
 		add_truce_attacker_defeat_effect = yes
 		

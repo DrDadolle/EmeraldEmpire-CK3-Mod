@@ -252,3 +252,161 @@ shadowlands_struggle.2000 = { # Invasion of Crab Clan
 		
 	}
 }
+# Victory against Crab Clan. Invasion Won
+shadowlands_struggle.2001 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = shadowlands_struggle.2001.t
+	desc = shadowlands_struggle.2001.desc
+	theme = war
+
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	
+	option = {
+		name = shadowlands_struggle.2001.a
+		# Remove the character modifier
+		remove_character_modifier = shadowlands_invasion_leader_modifier
+	}
+}
+# Notification of Crab Clan's defeat. Invasion Won
+shadowlands_struggle.2002 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = shadowlands_struggle.2002.t
+	desc = shadowlands_struggle.2002.desc
+	theme = war
+
+
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = personality_callous
+	}
+	
+	option = {
+		name = shadowlands_struggle.2002.a
+	}
+	option = {
+		name = shadowlands_struggle.2002.b
+	}
+}
+
+# Defeat against Crab Clan. Invasion Failed
+shadowlands_struggle.2003 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = shadowlands_struggle.2003.t
+	desc = shadowlands_struggle.2003.desc
+	theme = war
+
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	
+	option = {
+		name = shadowlands_struggle.2003.a
+		# Remove the character modifier
+		remove_character_modifier = shadowlands_invasion_leader_modifier
+		#destroy all empire/ kingdom / duchy titles within e_shadowlands
+		#L5R TODO change from de_jure to owned by you or vassal ?
+		custom_description = {
+			text = shadowlands_duchies_kingdoms_empires_explodes
+			primary_title = {
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier >= tier_duchy
+						exists = holder
+					}
+					add_to_temporary_list = titles_to_destroy
+				}
+				add_to_temporary_list = titles_to_destroy
+			}
+
+			every_in_list = {
+				list = titles_to_destroy
+				scope:defender = {
+					destroy_title = prev
+				}
+			}
+		}
+	}
+}
+# Notification of Crab Clan's victory. Invasion Failed
+shadowlands_struggle.2004 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = shadowlands_struggle.2004.t
+	desc = shadowlands_struggle.2004.desc
+	theme = war
+
+
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = personality_callous
+	}
+	
+	option = {
+		name = shadowlands_struggle.2004.a
+	}
+	option = {
+		name = shadowlands_struggle.2004.b
+	}
+}
+
+# Notification to Crab Clan's ruler to add them as ally in the invasion war.
+shadowlands_struggle.2010 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = shadowlands_struggle.2010.t
+	desc = shadowlands_struggle.2010.desc
+	theme = war
+
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = personality_callous
+	}
+	
+	option = {
+		name = shadowlands_struggle.2010.a
+		scope:war = { add_defender = root }
+
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = shadowlands_struggle.2010.b
+		stress_impact = {
+			craven = medium_stress_loss
+		}
+		stress_impact = {
+			brave = major_stress_gain
+		}
+		dynasty = {
+			add_dynasty_prestige = major_dynasty_prestige_loss
+		}
+		add_prestige = monumental_prestige_loss
+		add_piety = major_piety_loss
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+

@@ -27,11 +27,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 # TO TEST
 - Test basic Struggle Shadowlands ?
 	- any county in region_all has no loc, do not use it (or custom tt)
-	- add a UBER STRONG invasion casus_belli targetting the crab clan à la mongol, so the AI uses it ASAP
-		- test it ?
 	- add border raids from fp2
-	- add events upon victory/defeat à la lotr (to inform breaking of shadowlands btw)
-		
+	#L5R TODO change from de_jure to owned by you or vassal ?
+	text = shadowlands_duchies_kingdoms_empires_explodes
+	- add in struggle script info war invasion about unlocks powerful invasion war !
 
 
 ## CK3 1.13.* patch
