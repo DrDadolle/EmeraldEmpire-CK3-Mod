@@ -1,0 +1,47 @@
+﻿l_english:
+
+ ### L5R: Hashish reflavored to Opium ###
+
+ #L5R Modified : replace Hashish by Opium
+ trait_hashishiyah:0 "Opium Smoker"
+ trait_hashishiyah_desc:0 "This character is dependent on the consumption of opium to deal with the stress of everyday life." 
+ trait_hashishiyah_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is dependent on the consumption of opium to deal with the stress of everyday life."
+ 
+ 
+ stress_loss_hashishiyah_decision:1 "Indulge in Opium" 
+ stress_loss_hashishiyah_decision_desc:1 "I am feeling rather stressed lately. Perhaps I should smoke some opium to relax."
+ stress_loss_hashishiyah_decision_tooltip:1 "Relax and blow off some steam"
+ stress_loss_hashishiyah_decision_confirm:1 "Now, where is my pipe?"
+ 
+
+ hashishiyah_desire:0 "sit on my porch and smoke some Opium"
+
+ ###################
+ ### Events
+ ###################
+
+fund_inspiration.2070.desc.hashishiyah:0 "I am told of the great quantities of opium which [inspiration_owner.GetFirstNameNoTooltip] spends [inspiration_owner.GetHerHis] funding on, before locking [inspiration_owner.GetHerselfHimself] away in the dark."
+
+ ep2_wedding_ewan.0051.desc.hashishiyah:0 "$ep2_wedding_ewan.0051.desc.boilerplate.stress_pitch$ purchase of a supposedly unfairly-maligned stash of opium."
+ ep2_wedding_ewan.0052.desc.hashishiyah:0 "The opium plantation has become a major income booster." 
+ ep2_wedding_ewan.0053.desc.hashishiyah:0 "The opium farm's crops didn't grow well at all, and now most of the plants  have shrivelled."
+
+ martial_authority.2040.c.hashishiyah:0 "Sod this, I'm going to go have some opium."
+
+ stress_threshold.1701.j.hashishiyah.gain:0 "Opium will sooth my troubled nerves..."
+ stress_threshold.1711.h.hashishiyah.gain:0 "Opium! This is too much for a sober mind."
+ stress_threshold.1731.i.hashishiyah.gain:0 "Do we have opium for the ride?"
+ stress_threshold.3401.f.hashishiyah.gain:0 "And bring out some opium!"
+ stress_threshold.3411.k.hashishiyah.gain:0 "I want enough opium to obliterate this shame."
+ stress_threshold.3421.h.hashishiyah.gain:0 "Bring me opium and a pipe."
+
+ tragic_stoner_modifier:0 "Tragic Opium Smoker"
+
+ stress_threshold.1001.hashishiyah.gain:0 "Some opium will put my mind at ease..."
+ stress_threshold.1001.hashishiyah.effect:1 "A relaxing night smoking opium will help."
+ stress_threshold.1601.hashishiyah.gain:0 "Some opium will hopefully calm my mind..."
+ stress_threshold.1601.hashishiyah.effect:1 "I am never calmer than after smoking some opium."
+ stress_threshold.1602.hashishiyah.gain:0 "Perhaps some opium will bring calm."
+ stress_threshold.1602.hashishiyah.effect:0 "Opium always relaxes me."
+
+ court.1000.desc.hashishiyah:0 "spend [child.GetHerHis] days on the couch and smoking opium."
