@@ -645,9 +645,10 @@ doctrine_gender = {
 		}
 
 		can_pick = {
+			#L5R Disabled
 			NAND = {
 				exists = religious_head
-				religious_head.culture = { has_cultural_parameter = male_only_inheritance }
+				# religious_head.culture = { has_cultural_parameter = male_only_inheritance }
 			}
 		}
 	}

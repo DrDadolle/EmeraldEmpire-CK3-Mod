@@ -138,7 +138,7 @@ festering_pit_01 = {
 		custom_description = {
 			text = NOT_FESTERING_PIT_ENABLED
 			scope:holder = {
-				religion = { is_in_family = rf_shadowlands }
+				faith_is_evil = yes
 			}
 		}
 	}
@@ -199,7 +199,7 @@ lost_library_01 = {
 		custom_description = {
 			text = lost_library_trigger
 			scope:holder = {
-				religion = { is_in_family = rf_shadowlands }
+				faith_is_evil = yes
 			}
 		}
 	}
@@ -246,7 +246,7 @@ forgotten_tomb_01 = {
 		custom_description = {
 			text = forgotten_tomb_trigger
 			scope:holder = {
-				religion = { is_in_family = rf_shadowlands }
+				faith_is_evil = yes
 			}
 		}
 	}

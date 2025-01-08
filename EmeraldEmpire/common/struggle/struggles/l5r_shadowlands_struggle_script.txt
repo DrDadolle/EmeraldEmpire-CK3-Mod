@@ -209,7 +209,7 @@
 					catalysts = {
 						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
                         catalyst_l5r_shadowlands_ruler_died_violently = major_struggle_catalyst_gain
-                        catalyst_new_building_in_castle = minor_struggle_catalyst_gain
+                        catalyst_new_building_in_holdings = minor_struggle_catalyst_gain
 					}
 				}
 
@@ -374,11 +374,11 @@
 				struggle_shadowlands_phase_dormant = {
 					catalysts = {
 						# BIG Invasion
-						catalyst_shadowlands_invasion_war_declared = 250
+						catalyst_shadowlands_invasion_war_declared = 500
 
 						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain						
                         catalyst_l5r_shadowlands_ruler_died_violently = major_struggle_catalyst_gain
-                        catalyst_new_building_in_castle = minor_struggle_catalyst_gain
+                        catalyst_new_building_in_holdings = minor_struggle_catalyst_gain
 						# TODO occupation of counties ?
 					}
 

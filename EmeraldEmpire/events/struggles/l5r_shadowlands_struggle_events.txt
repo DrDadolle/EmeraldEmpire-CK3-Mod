@@ -211,7 +211,16 @@ shadowlands_struggle.2000 = { # Invasion of Crab Clan
 
 	
 	immediate = {
+		# Target top liege
 		if = {
+			limit = { 
+				exists = title:k_crab_clan.holder 
+				exists = title:e_rokugan.holder 
+				title:k_crab_clan.holder.top_liege = title:e_rokugan.holder 
+			}
+			title:e_rokugan.holder = { save_scope_as = crab_clan }
+		}
+		else_if = {
 			limit = { exists = title:k_crab_clan.holder }
 			title:k_crab_clan.holder = { save_scope_as = crab_clan }
 		}

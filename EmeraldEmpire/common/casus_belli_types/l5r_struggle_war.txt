@@ -136,13 +136,13 @@ invasion_of_crab_clan_cb = {
 				limit = {
 					any_character_struggle = {
 						involvement = involved
-						phase_has_catalyst = catalyst_declared_a_war
+						phase_has_catalyst = catalyst_shadowlands_invasion_war_declared
 					}
 				}
 				every_character_struggle = {
 					involvement = involved
 					activate_struggle_catalyst = {
-						catalyst = catalyst_declared_a_war
+						catalyst = catalyst_shadowlands_invasion_war_declared
 						character = root
 					}
 				}
@@ -355,6 +355,28 @@ invasion_of_crab_clan_cb = {
 			show_pow_release_message_effect = yes 
 			# Remove the character modifier
 			remove_character_modifier = shadowlands_invasion_leader_modifier
+		}
+
+		#TODO : destroy all empire/ kingdom / duchy titles within e_shadowlands
+		title:e_shadowlands = {
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier >= duchy
+					exists = holder
+				}
+				add_to_temporary_list = titles_to_destroy
+			}
+			if = {
+				limit = {  }
+			}
+			add_to_temporary_list = titles_to_destroy
+		}
+
+		every_in_list = {
+			list = titles_to_destroy
+			scope:defender = {
+				destroy_title = prev
+			}
 		}
 		
 		# Legitimacy

@@ -2907,16 +2907,17 @@ lady_in_waiting_court_position = {
 			max = 50
 			desc = court_position_skill_diplomacy
 		}
-		if = {
-			limit = {
-				exists = dynasty
-				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_1 }
-			}
-			add = {
-				value = 10
-				desc =  court_position_khvarenah_legacy_1
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		exists = dynasty
+		# 		dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_1 }
+		# 	}
+		# 	add = {
+		# 		value = 10
+		# 		desc =  court_position_khvarenah_legacy_1
+		# 	}
+		# }
 		if = {
 			limit = {
 				has_trait = gregarious
@@ -5746,16 +5747,17 @@ royal_architect_court_position = {
 			max = 50
 			desc = court_position_skill_stewardship
 		}
-		if = {
-			limit = {
-				exists = dynasty
-				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_1 }
-			}
-			add = {
-				value = 10
-				desc =  court_position_khvarenah_legacy_1
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		exists = dynasty
+		# 		dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_1 }
+		# 	}
+		# 	add = {
+		# 		value = 10
+		# 		desc =  court_position_khvarenah_legacy_1
+		# 	}
+		# }
 		if = {
 			limit = {
 				has_trait = architect
@@ -9677,16 +9679,17 @@ master_assassin_court_position = {
 			max = 50
 			desc = court_position_skill_prowess
 		}
-		if = {
-			limit = {
-				exists = dynasty
-				dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_1 }
-			}
-			add = {
-				value = 10
-				desc =  court_position_khvarenah_legacy_1
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		exists = dynasty
+		# 		dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_1 }
+		# 	}
+		# 	add = {
+		# 		value = 10
+		# 		desc =  court_position_khvarenah_legacy_1
+		# 	}
+		# }
 		if = {
 			limit = {
 				has_trait = lifestyle_blademaster
@@ -10048,15 +10051,16 @@ court_scholar_court_position = {
 			desc = court_position_skill_learning
 			max = 65
 		}
-		if = {
-			limit = {
-				scope:liege.dynasty ?= { has_dynasty_perk = fp3_khvarenah_legacy_1 }
-			}
-			add = {
-				value = 10
-				desc =  court_position_khvarenah_legacy_1
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		scope:liege.dynasty ?= { has_dynasty_perk = fp3_khvarenah_legacy_1 }
+		# 	}
+		# 	add = {
+		# 		value = 10
+		# 		desc =  court_position_khvarenah_legacy_1
+		# 	}
+		# }
 		if = {
 			limit = { has_trait = theologian }
 			add = {

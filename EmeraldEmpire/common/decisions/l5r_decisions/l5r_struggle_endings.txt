@@ -34,9 +34,6 @@ struggle_shadowlands_ending_shadowlands_domination = {
 		# AND = {
 		completely_controls = title:k_crab_clan
 		# }
-
-		# No
-		always = no
 	}
 
 	is_valid_showing_failures_only = {
@@ -116,9 +113,6 @@ struggle_shadowlands_ending_crab_domination = {
 				# culture = root.culture
 			}
 		}
-
-		# no
-		always = no
 	}
 
 	is_valid_showing_failures_only = {
@@ -210,9 +204,6 @@ struggle_shadowlands_ending_spider_domination = {
 		
 		# Very prestigious
 		prestige_level >= 4
-
-		#no
-		always = no
 	}
 
 	is_valid_showing_failures_only = {
@@ -223,7 +214,7 @@ struggle_shadowlands_ending_spider_domination = {
 		add_prestige = 2500
 		dynasty = { add_dynasty_prestige = 1500 }
 		dynasty = { add_dynasty_prestige_level = 1 }
-		give_nickname = nick_the_unifier
+		give_nickname = nick_the_spider_unifier
 
 
 
