@@ -1,9 +1,9 @@
 ﻿# Shadowlands beats the crab
 struggle_shadowlands_ending_shadowlands_domination = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/struggle_balrog_ending_kill_balrog.dds"
+		reference = "gfx/interface/illustrations/decisions/struggle_shadowlands_ending_shadowlands_domination.dds"
 	}
-	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_balrog_ending_kill_balrog_button.dds"
+	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_shadowlands_ending_shadowlands_domination_button.dds"
 
 	title = struggle_shadowlands_ending_shadowlands_domination
 	desc = struggle_shadowlands_ending_shadowlands_domination_desc
@@ -77,9 +77,9 @@ struggle_shadowlands_ending_shadowlands_domination = {
 # Crab beats the shadowlands
 struggle_shadowlands_ending_crab_domination = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/struggle_balrog_ending_kill_balrog.dds"
+		reference = "gfx/interface/illustrations/decisions/struggle_shadowlands_ending_crab_domination.dds"
 	}
-	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_balrog_ending_kill_balrog_button.dds"
+	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_shadowlands_ending_crab_domination_button.dds"
 
 	title = struggle_shadowlands_ending_crab_domination
 	desc = struggle_shadowlands_ending_crab_domination_desc
@@ -157,9 +157,9 @@ struggle_shadowlands_ending_crab_domination = {
 # A new clan emerges ?
 struggle_shadowlands_ending_spider_domination = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/struggle_balrog_ending_kill_balrog.dds"
+		reference = "gfx/interface/illustrations/decisions/struggle_shadowlands_ending_spider_domination.dds"
 	}
-	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_balrog_ending_kill_balrog_button.dds"
+	extra_picture = "gfx/interface/illustrations/struggle_decision_buttons/struggle_shadowlands_ending_spider_domination_button.dds"
 
 	title = struggle_shadowlands_ending_spider_domination
 	desc = struggle_shadowlands_ending_spider_domination_desc

@@ -6,5 +6,7 @@ building_onsen_requirement_terrain = {
 	OR = {
 		terrain = mountains
 		terrain = hills
+		terrain = shadowlands_hills
+		terrain = shadowlands_mountains
 	}
 }
