@@ -43,7 +43,6 @@
  # Tenets
  tenet_rokugani_syncretism_name:0 "Rokugani Syncretism"
  tenet_rokugani_syncretism_desc:0 "There is something to be learned from the way the different rokugani religions tolerate each other. They may not follow the true faith, but that does not make them evil."
- doctrine_parameter_hostility_override_tenet_rejection_of_the_kami:1 "Rokugani [faiths|E] with the tenet $tenet_rejection_of_the_kami_name$ are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_special_doctrine_is_rokugani_faith:1 "Rokugani [faiths|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_rokugan_syncretic_actor_opinion_active:0 ""
  doctrine_parameter_opinion_of_rokugan_syncretic_recipient_opinion_active:0 ""
@@ -58,9 +57,3 @@
 
  tenet_amaterasu_worship_name:0 "Sun Workship"
  tenet_amaterasu_worship_desc:0 "Amaterasu-ōmikami, also known as Lady Sun, is a Goddess of the Rokugani pantheon. The Sea of the Sun Goddess was named after her. Jade, the sacred stone, was said to be her tears."
-
- # Replace
- tenet_bhakti_name:0 "Patron Fortune"   #L5R
- tenet_bhakti_patron_god_name:0 "Patron Fortune"   #L5R
- tenet_bhakti_desc:0 "Mortals cannot live up to the full glory of the divine, but by selecting a single aspect of divinity to emulate, worship, and devote oneself to, we can come closer to them than would otherwise be possible."
- doctrine_parameter_select_personal_god_active:1 "Rulers can [decide|E] to pick a personal Fortune to venerate, gaining a related bonus"
