@@ -158,6 +158,17 @@ graphical_hills_trigger = {
 	terrain = hills
 }
 
+#L5R Added
+graphical_shadowlands_trigger = {
+	OR = {
+		terrain = shadowlands_hills
+		terrain = shadowlands_mountains
+		terrain = shadowlands_forest
+		terrain = shadowlands_wetlands
+		terrain = shadoxwlands_palins
+	}
+}
+
 ### Scripted illustrations
 
 # This doesn't really evaluate anything, it just saves the scope out for later things to use
