@@ -14,6 +14,17 @@ shinsei_last_hope_modifier = {
 }
 
 ###############
+### Activities
+feeling_fresh_onsen_major = {
+	icon = stress_positive
+	stress_gain_mult = -0.2
+}
+feeling_fresh_onsen_medium = {
+	icon = stress_positive
+	stress_gain_mult = -0.1
+}
+
+###############
 ### Struggles
 shadowlands_invasion_leader_modifier = {
 	icon = martial_positive

@@ -1,0 +1,104 @@
+﻿namespace = hot_springs_visit
+
+######################################################################################
+# 
+# ONSEN VISIT ACTIVITIES
+#
+# hot_springs_visit.0001 - hot_springs_visit.0002
+# 
+######################################################################################
+
+
+# Arrive at the onsen - Intro Event
+hot_springs_visit.0001 = {
+	type = activity_event
+	title = hot_springs_visit.0001.t
+
+	desc = {
+		desc = hot_springs_visit.0001.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						has_activity_option = {
+							category = special_type
+							option = l5r_hot_springs_visit_type_public
+						}
+					}
+				}
+				desc =  hot_springs_visit.0001.desc.public
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						has_activity_option = {
+							category = special_type
+							option = l5r_hot_springs_visit_type_private
+						}
+					}
+				}
+				desc =  hot_springs_visit.0001.desc.private
+			}
+		}
+		desc = hot_springs_visit.0001.desc.conclusion
+	}
+
+	theme = friendly
+	override_background  = { reference = relaxing_room }
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	# Just relax
+	option = {
+		name = hot_springs_visit.0001.a
+	}
+
+	after = {
+			trigger_event = {
+				id = hot_springs_visit.0002 
+				days = 7
+			}	
+	}
+
+}
+
+
+
+
+# Done with the hot Springs
+hot_springs_visit.0002 = {
+	type = activity_event
+	title = hot_springs_visit.0002.t
+	desc = hot_springs_visit.0002.desc
+	theme = friendly
+	override_background  = { reference = relaxing_room }
+
+	right_portrait = {
+		character = root
+		animation = happiness
+	}
+
+	immediate = {
+		add_character_flag = is_naked
+	}
+
+	# Ok
+	option = {
+		name = hot_springs_visit.0002.a
+		l5r_hot_springs_visit_completed_log_entry_effect = yes
+	}
+
+	after = {
+		if = {
+			limit = { has_character_flag = is_naked }
+			remove_character_flag = is_naked
+		}
+		scope:activity = {
+			hidden_effect = { skip_activity_phase = yes }
+		}
+	}
+
+}

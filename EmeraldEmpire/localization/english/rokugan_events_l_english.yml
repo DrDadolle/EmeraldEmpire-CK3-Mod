@@ -231,3 +231,20 @@
  rokugan_char_interaction.0233.title:0 "An honorable death"
  rokugan_char_interaction.0233.desc:0 "Due to crimes against the Crown, you are request to do seppuku."
  rokugan_char_interaction.0233.a:0 "What!?! This is outrageous!"
+
+
+ ############################
+ ###### ACTIVITIES
+ ############################
+ ###### Hot Springs Visit
+ ############################
+ hot_springs_visit.0001.t:0 "The Hot Springs of [ROOT.Char.GetInvolvedActivity.GetCurrentPhase.GetLocation.GetName]"
+ hot_springs_visit.0001.desc:0 "We have just arrived at one of the local hot springs in [ROOT.Char.GetInvolvedActivity.GetCurrentPhase.GetLocation.GetName]. Even though this hot springs isn't particularly famous, compared to some other more popular ones, soaking up the warm waters is still quite the enjoyable experience!\n\n"
+ hot_springs_visit.0001.desc.private:0 "I feel like I've rarely feel this at ease in my daily life. I close my eyes and relax, as all my worries leave my mind, even if for just a moment."
+ hot_springs_visit.0001.desc.public:0 "While here, I also take time to chat with some of the locals, and meet with a few prominent notables from the area. It's good to socialize while relaxing like this."
+ hot_springs_visit.0001.desc.conclusion:0 "It's a pity that this visit will only last so long, so I'll try to make the most of it while I'm here."
+ hot_springs_visit.0001.a:0 "Let's enjoy the hot waters."
+
+ hot_springs_visit.0002.t:0 "The Hot Springs of [ROOT.Char.GetInvolvedActivity.GetCurrentPhase.GetLocation.GetName]"
+ hot_springs_visit.0002.desc:0 "I feel several years younger after spending my time in the onsen [ROOT.Char.GetInvolvedActivity.GetCurrentPhase.GetLocation.GetName]. Both my mind and body feels fresh soaking up the warm waters is still quite the enjoyable experience!\n\n"
+ hot_springs_visit.0002.a:0 "I'm glad I came here."

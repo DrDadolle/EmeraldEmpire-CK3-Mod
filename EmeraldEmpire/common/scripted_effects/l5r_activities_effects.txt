@@ -1,0 +1,127 @@
+﻿l5r_hot_springs_visit_completed_log_entry_effect = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = l5r_hot_springs_visit_completed_log
+			tags = { completed }
+			# this line below adds the entry to the Effects section of the conclusion UI
+			show_in_conclusion = yes
+			character = root
+			scope:host = {
+				if = {
+					limit = {
+						scope:activity = {
+							has_activity_option = {
+								category = special_type
+								option = l5r_hot_springs_visit_type_private
+							}
+						}
+					}
+					# High Quality Onsen
+					if = {
+						limit = {
+							scope:activity.activity_location = {has_building_or_higher = onsen_06 }
+						}
+						add_character_modifier = {
+							modifier = feeling_fresh_onsen_major
+							years = 2
+						}
+						stress_impact = {
+							base = medium_stress_impact_loss
+							lazy = minor_stress_impact_loss
+							calm = minor_stress_impact_loss
+						}
+					}
+					# Medium Quality Onsen
+					else_if = {
+						limit = {
+							scope:activity.activity_location = {
+								has_building_or_higher = onsen_03
+								NOT = { has_building_or_higher = onsen_06 }
+							}
+						}
+						add_character_modifier = {
+							modifier = feeling_fresh_onsen_medium
+							years = 2
+						}
+						stress_impact = {
+							base = minor_stress_impact_loss
+							lazy = minor_stress_impact_loss
+							calm = minor_stress_impact_loss
+						}
+					}
+					#Basic Onsen
+					else = {
+						stress_impact = {
+							base = minor_stress_impact_loss
+							lazy = miniscule_stress_impact_loss
+							calm = miniscule_stress_impact_loss
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						scope:activity = {
+							has_activity_option = {
+								category = special_type
+								option = l5r_hot_springs_visit_type_public
+							}
+						}
+					}
+					# High Quality Onsen
+					if = {
+						limit = {
+							scope:activity.activity_location = {has_building_or_higher = onsen_06 }
+						}
+						add_character_modifier = {
+							modifier = feeling_fresh_onsen_major
+							years = 2
+						}
+						add_prestige = 100
+						stress_impact = {
+							base = minor_stress_impact_loss
+							lazy = minor_stress_impact_loss
+							calm = minor_stress_impact_loss
+						}
+					}
+					# Medium Quality Onsen
+					else_if = {
+						limit = {
+							scope:activity.activity_location = {
+								has_building_or_higher = onsen_03
+								NOT = { has_building_or_higher = onsen_06 }
+							}
+						}
+						add_character_modifier = {
+							modifier = feeling_fresh_onsen_medium
+							years = 2
+						}
+						add_prestige = 50
+						stress_impact = {
+							base = minor_stress_impact_loss
+							lazy = miniscule_stress_impact_loss
+							calm = miniscule_stress_impact_loss
+						}
+					}
+					#Basic Onsen
+					else = {
+						add_prestige = 25
+						stress_impact = {
+							base = miniscule_stress_impact_loss
+							lazy = miniscule_stress_impact_loss
+							calm = miniscule_stress_impact_loss
+						}
+					}
+				}
+			}
+
+			# Other participants
+			every_attending_character = {
+				limit = { NOT = { this = scope:host } }
+				custom = EVERY_ACTIVITY_PARTICIPANT_EFFECT
+				stress_impact = {
+					base = minor_stress_impact_loss
+				}
+			}		
+		}
+	}
+}
