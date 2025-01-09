@@ -374,7 +374,8 @@
 				struggle_shadowlands_phase_dormant = {
 					catalysts = {
 						# BIG Invasion
-						catalyst_shadowlands_invasion_war_declared = 300
+						catalyst_shadowlands_invasion_war_declared = 250
+						catalyst_shadowlands_invasion_war_lost = 250
 
 						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain						
                         catalyst_l5r_shadowlands_ruler_died_violently = major_struggle_catalyst_gain

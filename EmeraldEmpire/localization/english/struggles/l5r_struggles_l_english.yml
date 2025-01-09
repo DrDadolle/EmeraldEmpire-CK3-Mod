@@ -21,8 +21,10 @@
  catalyst_declared_a_war_desc:0 "Declared [war|E] as an Attacker"
  catalyst_declared_war_upon:0 "Declared [war|E] upon as a Defender [struggle_catalyst_catalyst|E]"
  catalyst_declared_war_upon_desc:0 "Declared [war|E] upon as a Defender"
- catalyst_shadowlands_invasion_war_declared:0 "Shadowlands declared the [crabclan|E] invasion [war|E]"
- catalyst_shadowlands_invasion_war_declared_desc:0 "Shadowlands declared the [crabclan|E] invasion [war|E]"
+ catalyst_shadowlands_invasion_war_declared:0 "A [shadowlands|E] ruler declared the [crabclan|E] invasion [war|E]"
+ catalyst_shadowlands_invasion_war_declared_desc:0 "A [shadowlands|E] ruler declared the [crabclan|E] invasion [war|E]"
+ catalyst_shadowlands_invasion_war_lost:0 "A [shadowlands|E] ruler lost a [crabclan|E] invasion [war|E]"
+ catalyst_shadowlands_invasion_war_lost_desc:0 "A [shadowlands|E] ruler lost a [crabclan|E] invasion [war|E]"
 
 
  # Effects
