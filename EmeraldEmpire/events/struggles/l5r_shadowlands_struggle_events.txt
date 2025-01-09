@@ -347,23 +347,18 @@ shadowlands_struggle.2003 = {
 				add_to_temporary_list = titles_to_destroy
 			}
 
+
+			# Every duchy or above vassal will receive a similar event, with title destruction
+			every_vassal_or_below = {
+				trigger_event = shadowlands_struggle.2005
+			}
+
 			every_in_list = {
 				list = titles_to_destroy
 				scope:defender = {
 					destroy_title = prev
 				}
 			}
-
-			# Every duchy or above vassal will receive a similar event, with title destruction
-			every_vassal_or_below = {
-				every_held_title = {
-					limit = {
-						tier >= tier_duchy
-					}
-					trigger_event = shadowlands_struggle.2005
-				}
-			}
-
 			
 		}
 	}
@@ -430,7 +425,7 @@ shadowlands_struggle.2005 = {
 
 			every_in_list = {
 				list = titles_to_destroy
-				scope:defender = {
+				root = {
 					destroy_title = prev
 				}
 			}
@@ -600,6 +595,9 @@ shadowlands_struggle.3000 = {
 				}
 			}
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 
 	option = { # If you can't beat them...
@@ -609,6 +607,9 @@ shadowlands_struggle.3000 = {
 		set_character_faith_with_conversion = scope:heretical_faith_spreading
 		stress_impact = {
 			zealous = massive_stress_impact_gain
+		}
+		ai_chance = {
+			base = 0
 		}
 	}
 }

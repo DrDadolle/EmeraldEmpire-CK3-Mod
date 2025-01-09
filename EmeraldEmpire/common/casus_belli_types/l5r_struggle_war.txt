@@ -94,18 +94,18 @@ invasion_of_crab_clan_cb = {
 			scope:defender = { culture = { has_cultural_pillar = heritage_spider }  }
 			scope:defender = { top_liege = title:e_shadowlands.holder }
 			# Not in invasion phase anymore or struggle does not exists anymore
-			NOT = { exists = struggle:shadowlands_struggle } }
+			# NOT = { exists = struggle:shadowlands_struggle } }
 			struggle:shadowlands_struggle = {
 				NOT = { is_struggle_phase = struggle_shadowlands_phase_invasion }
 			}
 		}
 	}
 
-	# Cannot be invalidated !
 	on_invalidated = {
-		desc = msg_invalidate_war_title
 		# Remove the character modifier
-		remove_character_modifier = shadowlands_invasion_leader_modifier
+		scope:attacker = {
+			remove_character_modifier = shadowlands_invasion_leader_modifier
+		}
 	}
 
 	on_invalidated_desc = msg_invasion_war_invalidated_message
@@ -157,16 +157,13 @@ invasion_of_crab_clan_cb = {
 					scope:attacker = { is_local_player = yes }
 				}
 				desc = shadowlands_invasion_war_victory_desc_attacker
-				# desc = hungarian_invasion_war_victory_desc_attacker
 			}
-			# desc = hungarian_invasion_war_victory_desc
 			desc = shadowlands_invasion_war_victory_desc
 		}
 		triggered_desc = {
 			trigger = {
 				scope:attacker = { is_local_player = yes }
 			}
-			# desc = hungarian_invasion_war_warning_desc
 			desc = shadowlands_invasion_war_warning_desc
 		}
 	}

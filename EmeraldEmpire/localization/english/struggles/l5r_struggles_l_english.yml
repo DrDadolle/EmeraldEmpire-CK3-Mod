@@ -28,8 +28,8 @@
 
 
  # Effects
- EFFECT_FAILED_INVASION_TITLES_EXPLODES:0 "All [held|E][duchy|E], [kingdom|E] as well as the [shadowlands|E] [empire|E] [title|E], that you or your vassal own are destroyed."
- EFFECT_FAILED_INVASION_TITLES_EXPLODES_VASSAL:0 "All [held|E][duchy|E] or [kingdom|E] [title|E] that you or your vassal own are destroyed."
+ EFFECT_FAILED_INVASION_TITLES_EXPLODES:0 "All held [duchy|E], [kingdom|E] as well as the [shadowlands|E] [empire|E] [title|E], that you or your vassal own are destroyed."
+ EFFECT_FAILED_INVASION_TITLES_EXPLODES_VASSAL:0 "All held [duchy|E] or [kingdom|E] [title|E] that you or your vassal own are destroyed."
 
  # Struggle parameters
   struggle_parameter_unlocks_invasion_crab_clan_cb:0 "Unlocks for [shadowlands|E] [independent|E] [rulers|E] a powerful [casus_belli|E] targeting the [crabclan|E] [kingdom|E] [title|E]"

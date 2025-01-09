@@ -11,15 +11,6 @@
 		}
 	}
 
-	can_start = {
-		custom_description = {
-			text = l5r_hot_springs_province_req
-			any_realm_province = {
-				has_building_or_higher = onsen_01
-			}
-		}
-	}
-
 	can_start_showing_failures_only = {
 		is_available_adult = yes
 	}
@@ -384,13 +375,13 @@
 	}
 
 	host_intents = {
-		intents = { l5r_hot_springs_visit_relaxation_intent }
-		default = l5r_hot_springs_visit_relaxation_intent
+		intents = { reduce_stress_intent }
+		default = reduce_stress_intent
 	}
 
 	guest_intents = {
-		intents = { l5r_hot_springs_visit_relaxation_intent }
-		default = l5r_hot_springs_visit_relaxation_intent
+		intents = { reduce_stress_intent }
+		default = reduce_stress_intent
 	}
 
 	guest_join_chance = {
