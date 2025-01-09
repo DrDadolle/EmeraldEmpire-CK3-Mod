@@ -27,8 +27,7 @@ struggle_shadowlands_ending_shadowlands_domination = {
 			}
 		}
 		# Is a shadowlands guy
-		faith_is_evil = yes
-		culture = { has_cultural_pillar = heritage_spider }
+		is_shadowlands_evil = yes
 
 		# Got Crab Clan territory
 		# AND = {
@@ -176,8 +175,7 @@ struggle_shadowlands_ending_spider_domination = {
 			}
 		}
 		# Is a shadowlands guy
-		faith_is_evil = yes
-		culture = { has_cultural_pillar = heritage_spider }
+		is_shadowlands_evil = yes
 
 		# Only a king
 		# for 5 years

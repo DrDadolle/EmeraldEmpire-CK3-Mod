@@ -36,8 +36,8 @@ decision_invade_crab_clan = {
 		NOT = {
 			government_has_flag = government_is_landless_adventurer
 		}
-		culture = { has_cultural_pillar = heritage_spider }
-		faith_is_evil = yes 
+		is_shadowlands_evil = yes
+		
 		any_character_struggle = {
 			involvement = involved
 			is_struggle_type = shadowlands_struggle

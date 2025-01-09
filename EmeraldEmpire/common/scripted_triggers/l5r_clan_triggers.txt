@@ -107,7 +107,6 @@ is_minor_clan = {
     }
 }
 
-
 ######################
 # Clan Definition
 ######################
@@ -145,4 +144,14 @@ is_under_k_unicorn_clan_rule_or_is_ruler = {
             primary_title = title:k_unicorn_clan
         }
     }
+}
+
+######################
+# Shadowlands Definition
+######################
+is_shadowlands_evil = {
+    faith_is_evil = yes
+    culture = { has_cultural_pillar = heritage_spider }
+    # L5R TODO later
+    # culture = { has_cultural_parameter = is_from_shadowlands}
 }

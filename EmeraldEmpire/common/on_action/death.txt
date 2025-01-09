@@ -925,8 +925,7 @@ on_death = {
 			if = { 
 				limit = {
 					is_important_or_vip_struggle_character = yes
-					religion = { is_in_family = rf_shadowlands}
-					culture = { has_cultural_pillar = heritage_spider }
+					is_shadowlands_evil = yes
 
 					any_character_struggle = {
 						involvement = involved

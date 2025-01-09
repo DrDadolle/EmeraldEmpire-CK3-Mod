@@ -87,8 +87,7 @@ pit_oni = {
 	can_recruit = { 
 		# Control the festering pit & is workshipping shadowlands
 		has_title = title:b_shadowlands_festering_pit_coast_the_one
-		religion = { is_in_family = rf_shadowlands }
-		culture = { has_cultural_pillar = heritage_spider }
+		is_shadowlands_evil = yes
 	}
 
  	siege_tier = 1
@@ -122,9 +121,8 @@ giant_spiders = {
 	high_maintenance_cost = { gold = 2.1 }
 	provision_cost = @provisions_cost_cavalry_expensive
 	can_recruit = {
-			# Is evil faith
-			religion = { is_in_family = rf_shadowlands }
-			culture = { has_cultural_pillar = heritage_spider }
+			# Is evil
+			is_shadowlands_evil = yes
 			## special innovations
 			culture = { has_innovation = innovation_giant_spiders_warfare }
 		}	
