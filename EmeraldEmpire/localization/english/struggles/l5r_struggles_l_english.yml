@@ -52,14 +52,11 @@
  shadowlands_struggle.0001.b:0 "Let's break the Kaiu Wall!"
  shadowlands_struggle.0001.c:0 "This fight doesn't concern me."
 
-
  shadowlands_struggle.0002.t:0 "Shadowlands Invasion"
  shadowlands_struggle.0002.desc:0 "Nobody quite knows what straw broke the camel's back. But it did. The [shadowlands|E] forces are united and they will attack Rokugan.\n\nTime will tell if the [crabclan|E] will manage to survive its assault..."
  shadowlands_struggle.0002.a:0 "Let's defend Rokugan !"
  shadowlands_struggle.0002.b:0 "We will destroy them."
  shadowlands_struggle.0002.c:0 "Let's survive."
-
-
 
  shadowlands_struggle.1000.t:0 "Crab Clan Falls"
  shadowlands_struggle.1000.desc:0 "To the shock of all, the Kaiu Wall has been breached and the [crabclan|E] failed in its sacred duty. Survivors flees their ancestral lands as the unstoppable tides of the [shadowlands|E] forces ravages the crab lands. Without their defenders, will [rokugan|E] survive or fall into centuries of darkness ?"
@@ -111,3 +108,12 @@
  shadowlands_struggle.2010.desc:0 "Hordes of undead, goblins and other horrors are united under the banner of a corrupted warlord. They threaten Rokugan as a whole. It is time for me, Champion of the Crab Clan, to honor my sacred duty!"
  shadowlands_struggle.2010.a:0 "We are the wall."
  shadowlands_struggle.2010.b:0 "They do not deserve my help."
+
+ ############################
+ ###### PULSE EVENTS
+ ############################
+shadowlands_struggle.3000.t:0 "Cult Takes Hold"
+shadowlands_struggle.3000.desc:0 "[cultist.GetName] approaches me one day after meal, after the fires have died and I sit on my chair, thinking. [cultist.GetSheHe] has a manic look in [cultist.GetHerHis] eye, a terrible fanaticism boiling under the surface. \n\n"My liege! Surely you can understand! Why should we resist the will of the [heretical_faith_spreading.DivineRealm]! Join me in repentance, and you may be spared from the hour of judgement! Confess your sins and submit yourself to [heretical_faith_spreading.HighGodName]!"\n\nI feel distinctly off-kilter, but before I respond, [cultist.GetName] wanders off, muttering and gigling under [cultist.GetHerHis] breath. I had heard rumors, but now, here they are before my very eyes!"
+shadowlands_struggle.3000.a:0 "Let us hope it does not spread further!"
+shadowlands_struggle.3000.a.spread:0 "The cult spreads further"
+shadowlands_struggle.3000.b:0 "Repent, for the time draws near!"

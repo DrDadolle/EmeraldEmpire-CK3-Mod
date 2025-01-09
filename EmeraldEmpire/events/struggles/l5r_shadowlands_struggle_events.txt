@@ -3,10 +3,11 @@
 # 0000-0999 - Maintenance
 # 1000-1999 - Decision Events
 # 2000-2999 - Invasion of Shadowlands Events
-# 3000-3999 - Minor Shadowlands Events
-# 4000-4999 - Major Shadowlands Events
+# 3000-3999 - Major Shadowlands Events
+# 4000-4999 - Minor Shadowlands Events
 
-## Maintenance
+##########
+#### Maintenance
 # Struggle Introduction
 shadowlands_struggle.0001 = {
 	content_source = l5r_dlc
@@ -86,7 +87,8 @@ shadowlands_struggle.0002 = {
 }
 
 
-## Decisions
+##########
+#### Decision Events
 # Struggle Ending : Shadowlands Domination
 shadowlands_struggle.1000 = {
 	content_source = l5r_dlc
@@ -468,3 +470,312 @@ shadowlands_struggle.2010 = {
 }
 
 
+##########
+#### Major Events
+# Shadowlands Faith is spreading
+shadowlands_struggle.3000 = {
+	content_source = l5r_dlc
+	type = character_event
+	title = shadowlands_struggle.3000.t
+	desc = shadowlands_struggle.3000.desc
+	theme = faith
+	override_background = {
+		reference = throne_room
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+
+	right_portrait = {
+		character = scope:cultist
+		animation = personality_zealous
+	}
+
+	immediate = {
+		# Get Random cultist
+		if = {
+			limit = {
+				any_vassal_or_below = {
+					faith_is_evil = no
+					is_ai = yes
+				}
+			}
+			random_vassal_or_below = {
+				limit = {
+					faith_is_evil = no
+					is_ai = yes
+				}
+				weight = {
+					base = 1
+					modifier = { add = max_military_strength }
+				}
+				save_scope_as = cultist
+			}
+		}
+		else_if = {
+			limit = {
+				any_councillor = {
+					faith_is_evil = no
+					is_ai = yes
+				}
+			}
+			random_councillor = {
+				limit = {
+					faith_is_evil = no
+					is_ai = yes
+				}
+				weight = {
+					base = 1
+					modifier = { add = diplomacy }
+					modifier = { add = learning }
+				}
+				save_scope_as = cultist
+			}
+		}
+		else = {
+			random_courtier_or_guest = {
+				limit = {
+					faith_is_evil = no
+					is_ai = yes
+				}
+				save_scope_as = cultist
+			}
+		}
+		# Random Evil Religion
+		religion:jigoku_religion = {
+			random_faith = {
+				save_scope_as = heretical_faith_spreading
+			}
+		}
+		scope:cultist = {
+			set_character_faith_with_conversion = scope:heretical_faith_spreading
+		}
+		if = {
+			limit = {
+				any_held_county = {
+					faith_is_evil = no
+				}
+			}
+			random_held_title = {
+				limit = {
+					tier = tier_county
+					faith_is_evil = no
+				}
+				save_scope_as = cultist_county
+			}
+		}
+	}
+	
+	option = { # Heathens! 
+		name = shadowlands_struggle.3000.a
+		add_piety = 100
+		if = {
+			limit = {
+				exists = scope:cultist_county
+			}
+			random = {
+				chance = 30
+				send_interface_toast = {
+					title = shadowlands_struggle.3000.a.spread
+					left_icon = root
+					scope:cultist_county = {
+						set_county_faith = scope:heretical_faith_spreading
+					}
+				}
+			}
+		}
+	}
+
+	option = { # If you can't beat them...
+		name = shadowlands_struggle.3000.b
+		add_prestige = -500
+		add_piety = medium_piety_loss
+		set_character_faith_with_conversion = scope:heretical_faith_spreading
+		stress_impact = {
+			zealous = massive_stress_impact_gain
+		}
+	}
+}
+
+
+##########
+#### Minor Events
+# (Hidden) someone in your court or a vassal secretly converts to a shadowlands faith
+shadowlands_struggle.4000 = {
+	hidden = yes
+
+	immediate = {
+		# Get Random cultist
+		if = {
+			limit = {
+				any_vassal_or_below = {
+					faith_is_evil = no
+					is_ai = yes
+				}
+			}
+			random_vassal_or_below = {
+				limit = {
+					faith_is_evil = no
+					is_ai = yes
+				}
+				weight = {
+					base = 1
+					modifier = { add = max_military_strength }
+				}
+				save_scope_as = cultist
+			}
+		}
+		else_if = {
+			limit = {
+				any_councillor = {
+					faith_is_evil = no
+					is_ai = yes
+				}
+			}
+			random_councillor = {
+				limit = {
+					faith_is_evil = no
+					is_ai = yes
+				}
+				weight = {
+					base = 1
+					modifier = { add = diplomacy }
+					modifier = { add = learning }
+				}
+				save_scope_as = cultist
+			}
+		}
+		else = {
+			random_courtier_or_guest = {
+				limit = {
+					faith_is_evil = no
+					is_ai = yes
+				}
+				save_scope_as = cultist
+			}
+		}
+		# Random Evil Religion
+		religion:jigoku_religion = {
+			random_faith = {
+				save_scope_as = heretical_faith_spreading
+			}
+		}
+		scope:cultist = {
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = scope:heretical_faith_spreading}
+		}
+	}
+}
+
+
+# (Hidden) someone in your court or a vassal with a secret shadowlands faith becomes a witch
+shadowlands_struggle.4001 = {
+	hidden = yes
+
+	immediate = {
+		# Get Random vassal or courtier with a secret shadowlands faith
+		if = {
+			limit = {
+				any_vassal_or_below = {
+					any_secret = { secret_type = secret_crypto_religionist }
+					exists = secret_faith
+					secret_faith = { 
+						faith_is_evil = yes
+					}
+					NOT = { has_trait = witch } 
+					NOT = { any_secret = { secret_type = secret_witch } }
+					is_ai = yes
+				}
+			}
+			random_vassal_or_below = {
+				limit = {
+					any_secret = { secret_type = secret_crypto_religionist }
+					exists = secret_faith
+					secret_faith = { 
+						faith_is_evil = yes
+					}
+					NOT = { has_trait = witch } 
+					NOT = { any_secret = { secret_type = secret_witch } }
+					is_ai = yes
+				}
+				weight = {
+					base = 1
+					# Shindoshi have more chance to become witches
+					modifier = { 
+						add = 10
+						has_trait = shindoshi
+					}
+				}
+				save_scope_as = cultist
+			}
+		}
+		else_if = {
+			limit = {
+				any_councillor = {
+					any_secret = { secret_type = secret_crypto_religionist }
+					exists = secret_faith
+					secret_faith = { 
+						faith_is_evil = yes
+					}
+					NOT = { has_trait = witch } 
+					NOT = { any_secret = { secret_type = secret_witch } }
+					is_ai = yes
+				}
+			}
+			random_councillor = {
+				limit = {
+					any_secret = { secret_type = secret_crypto_religionist }
+					exists = secret_faith
+					secret_faith = { 
+						faith_is_evil = yes
+					}
+					NOT = { has_trait = witch } 
+					NOT = { any_secret = { secret_type = secret_witch } }
+					is_ai = yes
+				}
+				weight = {
+					base = 1
+					# Shindoshi have more chance to become witches
+					modifier = { 
+						add = 10
+						has_trait = shindoshi
+					}
+				}
+				save_scope_as = cultist
+			}
+		}
+		else = {
+			random_courtier_or_guest = {
+				limit = {
+					any_secret = { secret_type = secret_crypto_religionist }
+					exists = secret_faith
+					secret_faith = { 
+						faith_is_evil = yes
+					}
+					NOT = { has_trait = witch } 
+					NOT = { any_secret = { secret_type = secret_witch } }
+					is_ai = yes
+				}
+				weight = {
+					base = 1
+					# Shindoshi have more chance to become witches
+					modifier = { 
+						add = 10
+						has_trait = shindoshi
+					}
+				}
+				save_scope_as = cultist
+			}
+		}
+
+		# If there is no wannabe witches, it is okay
+		if = {
+			limit = { exists = scope:cultist}
+			scope:cultist = {
+				give_witch_secret_or_trait_effect = yes
+		   }
+		}
+		
+	}
+}

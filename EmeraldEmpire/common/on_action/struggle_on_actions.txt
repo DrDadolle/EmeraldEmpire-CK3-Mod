@@ -1,48 +1,58 @@
 ﻿# root: is involved (or interloper) character
 # Scope:struggle is the currently pulsing struggle.
-yearly_struggle_playable_pulse = {}
+yearly_struggle_playable_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+	}
+	on_actions = {
+		#L5R Added
+		l5r_shadowlands_struggle_random_minor_events_crab
+	}
+}
 
 # root: is involved (or interloper) character
 # Scope:struggle is the currently pulsing struggle.
 five_year_struggle_playable_pulse = {
 	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
 		#L5R Disabled
-		always = no
-		# basic_is_valid_for_yearly_events_trigger = yes
 		# OR = {
 		# 	fp2_character_interloper_in_struggle_trigger = yes
 		# 	fp2_character_involved_in_struggle_trigger = yes
 		# }	
 	}
 	on_actions = {
-		fp2_iberian_struggle_random_events
-	}
-}
-
-fp2_iberian_struggle_random_events = {
-	trigger = {
-		fp2_character_involved_in_struggle_trigger = yes
-	}
-	random_events = {
-		chance_to_happen = 95
-		1 = 0
-
 		#L5R Disabled
-		# 80 = fp2_struggle.1000 #Stoking the Fire 
-		# 50 = fp2_struggle.1001 #War Widows 
-		# 50 = fp2_struggle.1010 #Soul of Iron
-		# 45 = fp2_struggle.1020 #Death of a Councilman 
-		# 70 = fp2_struggle.2001 #Desperate Villagers Seek New Lord
-		# #80 = fp2_struggle.2003 #Band of Lost Birds removed for FP3
-		# 25 = fp2_struggle.2004 #The weights inside this event are a bit high, but since the event is struggle-exclusive it will probably not be an issue
-		# 70 = fp2_struggle.2006 #The Borders of Faith
-		# 70 = fp2_struggle.2007 #Castle Worthy of Iberia
-		# 5 = fp2_struggle.2009 #Catching Thieves of Myth
-		# 90 = fp2_struggle.3001 #The Price of War Not particularly struggle related, but making it only appear during the struggle makes it more unique and special
-		# 50 = fp2_struggle.3011 #Order of the Hatchet
-		# 25 = fp2_struggle.3021 #The Wrath of Heaven Usually the lower chance is because the effects are too great, in this case it is to ensure people don't think every other iberian had discovered han powder.
+		# fp2_iberian_struggle_random_events
+		#L5R Added
+		l5r_shadowlands_struggle_random_major_events_crab
 	}
 }
+#L5R Disabled
+# fp2_iberian_struggle_random_events = {
+# 	trigger = {
+# 		fp2_character_involved_in_struggle_trigger = yes
+# 	}
+# 	random_events = {
+# 		chance_to_happen = 95
+# 		1 = 0
+
+
+# 		80 = fp2_struggle.1000 #Stoking the Fire 
+# 		50 = fp2_struggle.1001 #War Widows 
+# 		50 = fp2_struggle.1010 #Soul of Iron
+# 		45 = fp2_struggle.1020 #Death of a Councilman 
+# 		70 = fp2_struggle.2001 #Desperate Villagers Seek New Lord
+# 		#80 = fp2_struggle.2003 #Band of Lost Birds removed for FP3
+# 		25 = fp2_struggle.2004 #The weights inside this event are a bit high, but since the event is struggle-exclusive it will probably not be an issue
+# 		70 = fp2_struggle.2006 #The Borders of Faith
+# 		70 = fp2_struggle.2007 #Castle Worthy of Iberia
+# 		5 = fp2_struggle.2009 #Catching Thieves of Myth
+# 		90 = fp2_struggle.3001 #The Price of War Not particularly struggle related, but making it only appear during the struggle makes it more unique and special
+# 		50 = fp2_struggle.3011 #Order of the Hatchet
+# 		25 = fp2_struggle.3021 #The Wrath of Heaven Usually the lower chance is because the effects are too great, in this case it is to ensure people don't think every other iberian had discovered han powder.
+# 	}
+# }
 
 #L5R Disabled
 # fp2_iberian_struggle_starting_events = {
@@ -51,3 +61,67 @@ fp2_iberian_struggle_random_events = {
 # 		fp2_struggle.0003
 # 	}
 # }
+
+#L5R Added
+l5r_shadowlands_struggle_random_major_events_crab = {
+	trigger = {
+		any_character_struggle = {
+			involvement = involved
+			is_struggle_type = shadowlands_struggle
+		}
+		faith_is_evil = no
+		NOT = {
+			OR = {
+				has_title = title:e_shadowlands
+				any_liege_or_above = {
+					has_title = title:e_shadowlands
+				}
+			}
+		}
+	}
+	random_events = {
+		chance_to_happen = 95
+
+
+		#Major
+		4 = shadowlands_struggle.3000 # Shadowlands Faith is spreading
+
+		#Minor
+		1 = shadowlands_struggle.4000  # (Hidden) someone in your court or a vassal secretly converts to a shadowlands faith
+		1 = shadowlands_struggle.4001 # (Hidden) someone in your court or a vassal with a secret shadowlands faith becomes a witch
+
+
+	}
+}
+
+l5r_shadowlands_struggle_random_minor_events_crab = {
+	trigger = {
+		OR = {
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = shadowlands_struggle
+			}
+			any_character_struggle = {
+				involvement = interloper
+				is_struggle_type = shadowlands_struggle
+			}
+		}
+		faith_is_evil = no
+		NOT = {
+			OR = {
+				has_title = title:e_shadowlands
+				any_liege_or_above = {
+					has_title = title:e_shadowlands
+				}
+			}
+		}
+	}
+	random_events = {
+		chance_to_happen = 50
+
+		#Minor
+		4 = shadowlands_struggle.4000  # (Hidden) someone in your court or a vassal secretly converts to a shadowlands faith
+		2 = shadowlands_struggle.4001 # (Hidden) someone in your court or a vassal with a secret shadowlands faith becomes a witch
+
+	}
+}
