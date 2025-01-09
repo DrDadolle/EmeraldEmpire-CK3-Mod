@@ -318,6 +318,10 @@ shadowlands_struggle.2003 = {
 		custom_description_no_bullet = {
 			text = shadowlands_duchies_kingdoms_empires_explodes
 		}
+		# Stuggle goes to dormant
+		struggle:shadowlands_struggle = {
+			change_struggle_phase = struggle_shadowlands_phase_dormant
+		}
 		hidden_effect = {
 			# Every held titles of duchy or above
 			every_held_title = {

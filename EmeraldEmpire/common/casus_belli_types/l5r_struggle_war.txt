@@ -89,9 +89,15 @@ invasion_of_crab_clan_cb = {
 	# Cannot be invalidated 
 	should_invalidate = {
 		OR = {
+			# Already conquered by someone else
 			scope:defender = { faith_is_evil = yes	}
 			scope:defender = { culture = { has_cultural_pillar = heritage_spider }  }
 			scope:defender = { top_liege = title:e_shadowlands.holder }
+			# Not in invasion phase anymore or struggle does not exists anymore
+			NOT = { exists = struggle:shadowlands_struggle } }
+			struggle:shadowlands_struggle = {
+				NOT = { is_struggle_phase = struggle_shadowlands_phase_invasion }
+			}
 		}
 	}
 
