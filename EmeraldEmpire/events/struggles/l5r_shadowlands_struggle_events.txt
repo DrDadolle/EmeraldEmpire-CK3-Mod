@@ -315,16 +315,14 @@ shadowlands_struggle.2003 = {
 		# Remove the character modifier
 		remove_character_modifier = shadowlands_invasion_leader_modifier
 		#destroy all empire/ kingdom / duchy titles within e_shadowlands
-		#L5R TODO change from de_jure to owned by you or vassal ?
-		custom_description = {
+		custom_description_no_bullet = {
 			text = shadowlands_duchies_kingdoms_empires_explodes
-			primary_title = {
-				every_in_de_jure_hierarchy = {
-					limit = {
-						tier >= tier_duchy
-						exists = holder
-					}
-					add_to_temporary_list = titles_to_destroy
+		}
+		hidden_effect = {
+			# Every held titles of duchy or above
+			every_held_title = {
+				limit = {
+					tier >= tier_duchy
 				}
 				add_to_temporary_list = titles_to_destroy
 			}
@@ -335,6 +333,18 @@ shadowlands_struggle.2003 = {
 					destroy_title = prev
 				}
 			}
+
+			# Every duchy or above vassal will receive a similar event, with title destruction
+			every_vassal_or_below = {
+				every_held_title = {
+					limit = {
+						tier >= tier_duchy
+					}
+					trigger_event = shadowlands_struggle.2005
+				}
+			}
+
+			
 		}
 	}
 }
@@ -361,6 +371,50 @@ shadowlands_struggle.2004 = {
 	}
 	option = {
 		name = shadowlands_struggle.2004.b
+	}
+}
+
+# Sub event for vassal (as well as indirect ones) of the guy which failed the invasion
+# Inform them that  all their duchy titles or above will be destroyed
+shadowlands_struggle.2005 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = shadowlands_struggle.2005.t
+	desc = shadowlands_struggle.2005.desc
+	theme = war
+
+
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = personality_callous
+	}
+	
+	option = {
+		name = shadowlands_struggle.2005.a
+
+		custom_description_no_bullet = {
+			text = shadowlands_duchies_kingdoms_empires_explodes
+		}
+		hidden_effect = {
+			# Every held titles of duchy or above
+			every_held_title = {
+				limit = {
+					tier >= tier_duchy
+				}
+				add_to_temporary_list = titles_to_destroy
+			}
+
+			every_in_list = {
+				list = titles_to_destroy
+				scope:defender = {
+					destroy_title = prev
+				}
+			}
+		}
 	}
 }
 

@@ -1,0 +1,9 @@
+﻿shadowlands_duchies_kingdoms_empires_explodes = {
+	global = EFFECT_FAILED_INVASION_TITLES_EXPLODES
+	first = EFFECT_FAILED_INVASION_TITLES_EXPLODES
+}
+
+shadowlands_duchies_kingdoms_empires_explodes_vassal = {
+	global = EFFECT_FAILED_INVASION_TITLES_EXPLODES_VASSAL
+	first = EFFECT_FAILED_INVASION_TITLES_EXPLODES_VASSAL
+}

@@ -26,7 +26,8 @@
 
 
  # Effects
- shadowlands_duchies_kingdoms_empires_explodes:0 "All [de_jure|E][duchy|E], [kingdom|E] as well as the [shadowlands|E] [empire|E] title, that you or your vassal own are destroyed."
+ EFFECT_FAILED_INVASION_TITLES_EXPLODES:0 "All [held|E][duchy|E], [kingdom|E] as well as the [shadowlands|E] [empire|E] [title|E], that you or your vassal own are destroyed."
+ EFFECT_FAILED_INVASION_TITLES_EXPLODES_VASSAL:0 "All [held|E][duchy|E] or [kingdom|E] [title|E] that you or your vassal own are destroyed."
 
  # Modifiers
 
@@ -92,14 +93,18 @@
  shadowlands_struggle.2002.a:0 "No! All samurais must now unite, or we shall soon be dead."
  shadowlands_struggle.2002.b:0 "At long last, the accursed Crab Clan fall!"
 
- shadowlands_struggle.2003.t:0 "The Crab Clan Stand Strong"
- shadowlands_struggle.2003.desc:0 "Your plan of grandeur have failed! The stalward defender of the empire have succeded in defending against your assaults. Your forces are broken and runs again into the Shadowlands.\n\n  Your leadership is failing as well as all the different clans and creatures are now fighting against one another! \n\n A disastrous day for the Shadowlands !"
- shadowlands_struggle.2003.a:0 "Damn you sun has finally set on the damned crabs!"
+ shadowlands_struggle.2003.t:0 "The Crab Clan Stands Strong"
+ shadowlands_struggle.2003.desc:0 "Your plans of grandeur have failed! The stalward defenders of the empire have succeded in defending against your assaults. Your forces are broken and runs again into the Shadowlands.\n\n  Your leadership is failing as well as all the different clans and creatures are now fighting against one another! \n\n A disastrous day for the Shadowlands !"
+ shadowlands_struggle.2003.a:0 "Damn you, damned crabs!"
  
- shadowlands_struggle.2004.t:0 "The Crab Clan Stand Strong"
- shadowlands_struggle.2004.desc:0 "Hordes of undead, goblins and other horrors lays dead at the base of the Kaiu Wall, standing proud and undefeated against the darkness. The Crab Clan, like always, have not failed their sacred duty. The undomitable resolve and overwhelming strength proved to be insurmontable.\n\n All people in Rokugan rejoices!"
+ shadowlands_struggle.2004.t:0 "The Crab Clan Stands Strong"
+ shadowlands_struggle.2004.desc:0 "Hordes of undead, goblins and other horrors lays dead at the base of the Kaiu Wall, standing proud and undefeated against the darkness. The invasion leader, [attacker.GetName] failed in [attacker.GetHerHis] ambitions. The Crab Clan, like always, have not failed their sacred duty.\n\n All people in Rokugan rejoice!"
  shadowlands_struggle.2004.a:0 "A glorious day to be remembered!"
  shadowlands_struggle.2004.b:0 "Damn you, one day, you will fail!"
+
+ shadowlands_struggle.2005.t:0 "The Crab Clan Stands Strong"
+ shadowlands_struggle.2005.desc:0 "The plans of grandeur of [attacker.GetName] have failed! The stalward defender of the empire have succeded in defending against [attacker.GetHerHis] assaults. \n\n  Now, leadership in all the Shadowlands are being scattered, and all clans and creatures are fighting against one another! \n\n A disastrous day for the Shadowlands !"
+ shadowlands_struggle.2005.a:0 "We are now scatterred..."
 
  shadowlands_struggle.2010.t:0 "Shadowlands Invasion"
  shadowlands_struggle.2010.desc:0 "Hordes of undead, goblins and other horrors are united under the banner of a corrupted warlord. They threaten Rokugan as a whole. It is time for me, Champion of the Crab Clan, to honor my sacred duty!"
