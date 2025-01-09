@@ -651,12 +651,13 @@ befriend_interaction = {
 	ai_potential = {
 		OR = {
 			has_perk = befriend_perk # Unlocked by the Befriend Perk
-			AND = {
-				exists = dynasty
-				dynasty = {
-					has_dynasty_perk = fp1_adventure_legacy_5
-				}
-			}
+			#L5R Disabled
+			# AND = {
+			# 	exists = dynasty
+			# 	dynasty = {
+			# 		has_dynasty_perk = fp1_adventure_legacy_5
+			# 	}
+			# }
 			culture = { has_cultural_parameter = automatic_befriend_access }
 			any_character_struggle = {
 				involvement = involved
@@ -1172,13 +1173,14 @@ seduce_interaction = {
 			}
 		}
 		
-		modifier = {
-			add = 25
-			exists = scope:actor.dynasty
-			scope:actor.dynasty = {
-				has_dynasty_perk = fp1_adventure_legacy_2
-			}
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	add = 25
+		# 	exists = scope:actor.dynasty
+		# 	scope:actor.dynasty = {
+		# 		has_dynasty_perk = fp1_adventure_legacy_2
+		# 	}
+		# }
 		
 		modifier = { # Focus on befriending if that's the path you've chosen
 			add = -50

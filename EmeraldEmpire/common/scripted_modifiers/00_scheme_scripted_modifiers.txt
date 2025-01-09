@@ -1039,17 +1039,18 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 		add = -10
 		desc = SCHEME_DUTY_FOCUS
 	}
+	#L5R Disabled
 	# Dynasty Legacies
 	## FP3 legacy track bonus 
-	modifier = {
-		add = 10
-		scope:target = {
-			is_lowborn = no
-			dynasty = root.dynasty
-			dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_2 }
-		}
-		desc = "KHVARENAH_LEGACY_DESC"
-	}
+	# modifier = {
+	# 	add = 10
+	# 	scope:target = {
+	# 		is_lowborn = no
+	# 		dynasty = root.dynasty
+	# 		dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_2 }
+	# 	}
+	# 	desc = "KHVARENAH_LEGACY_DESC"
+	# }
 	# Event Content
 	## Generic bonus modifier.
 	modifier = {
@@ -2315,16 +2316,17 @@ hostile_scheme_base_chance_modifier = {
 		desc = "SCHEME_TARGET_TRAVELLING_INCOGNITO"
 	}
 
-	modifier = { # FP3 legacy track bonus for murdering dynasty members
-		add = 10
-		scope:target = {
-			exists = dynasty
-			exists = scope:owner.dynasty
-			dynasty = scope:owner.dynasty
-			dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_2 }
-		}
-		desc = "KHVARENAH_LEGACY_DESC"
-	}
+	#L5R Disabled
+	# modifier = { # FP3 legacy track bonus for murdering dynasty members
+	# 	add = 10
+	# 	scope:target = {
+	# 		exists = dynasty
+	# 		exists = scope:owner.dynasty
+	# 		dynasty = scope:owner.dynasty
+	# 		dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_2 }
+	# 	}
+	# 	desc = "KHVARENAH_LEGACY_DESC"
+	# }
 	
 	first_valid = { # Essentially the Base
 		modifier = {
@@ -2569,16 +2571,17 @@ hostile_scheme_title_base_chance_modifier = {
 		desc = "SCHEME_PREPARED_FOR_ANYTHING_LIEGE_PERK_MODIFIER"
 	}
 
-	modifier = { # FP3 legacy track bonus for murdering dynasty members
-		add = 10
-		scope:target.holder ?= {
-			exists = dynasty
-			exists = scope:owner.dynasty
-			dynasty = scope:owner.dynasty
-			dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_2 }
-		}
-		desc = "KHVARENAH_LEGACY_DESC"
-	}
+	#L5R Disabled
+	# modifier = { # FP3 legacy track bonus for murdering dynasty members
+	# 	add = 10
+	# 	scope:target.holder ?= {
+	# 		exists = dynasty
+	# 		exists = scope:owner.dynasty
+	# 		dynasty = scope:owner.dynasty
+	# 		dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_2 }
+	# 	}
+	# 	desc = "KHVARENAH_LEGACY_DESC"
+	# }
 	
 	first_valid = { # Essentially the Base
 		modifier = {
@@ -3060,17 +3063,18 @@ ai_agent_join_chance_hostile_title_modifier = {
 		add = -10
 		desc = SCHEME_DUTY_FOCUS
 	}
+	#L5R Disabled
 	# Dynasty Legacies
 	## FP3 legacy track bonus 
-	modifier = {
-		add = 10
-		scope:target.holder = {
-			is_lowborn = no
-			dynasty = root.dynasty
-			dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_2 }
-		}
-		desc = "KHVARENAH_LEGACY_DESC"
-	}
+	# modifier = {
+	# 	add = 10
+	# 	scope:target.holder = {
+	# 		is_lowborn = no
+	# 		dynasty = root.dynasty
+	# 		dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_2 }
+	# 	}
+	# 	desc = "KHVARENAH_LEGACY_DESC"
+	# }
 	# Event Content
 	## Generic bonus modifier.
 	modifier = {

@@ -4,433 +4,434 @@
 # Share secrets
 # by Maxence Voleau
 ##################################################
-share_known_secrets_interaction = {
-	icon = secret
-	category = interaction_category_friendly
-	common_interaction = yes
+#L5R Disabled
+# share_known_secrets_interaction = {
+# 	icon = secret
+# 	category = interaction_category_friendly
+# 	common_interaction = yes
 
-	send_name = SEND_PROPOSAL
+# 	send_name = SEND_PROPOSAL
 
-	interface_priority = 120
+# 	interface_priority = 120
 
-	ai_targets = {
-		ai_recipients = dynasty
-	}
+# 	ai_targets = {
+# 		ai_recipients = dynasty
+# 	}
 
-	ai_frequency = 180
+# 	ai_frequency = 180
 
-	is_shown = {
-		scope:actor = {
-			# DLC checking
-			has_fp2_dlc_trigger = yes
-			# Standard check
-			# Has access to the appropriate legacy perk.
-			dynasty = { has_dynasty_perk = fp2_coterie_legacy_4 }
+# 	is_shown = {
+# 		scope:actor = {
+# 			# DLC checking
+# 			has_fp2_dlc_trigger = yes
+# 			# Standard check
+# 			# Has access to the appropriate legacy perk.
+# 			dynasty = { has_dynasty_perk = fp2_coterie_legacy_4 }
 
-			# they are from the same house
-			house = scope:recipient.house
-		}
-	}
+# 			# they are from the same house
+# 			house = scope:recipient.house
+# 		}
+# 	}
 
-	is_valid_showing_failures_only = {
-		custom_tooltip = {
-			text = share_known_secrets_interaction.tt.no_secrets_to_share
-			# We try to keep the criteria vague to obfuscate things.
-			scope:actor = { any_known_secret = { count > 0 } } # Must have a secret to share
-			OR = {
-				scope:actor = {
-					# At least one secret is unknown from recipient
-					any_known_secret = {
-						NOT = { is_known_by = scope:recipient }
-					}
-				}
-				scope:recipient = {
-					# At least one secret is unknown from actor
-					any_known_secret = {
-						NOT = { is_known_by = scope:actor }
-					}
-				}
-			}
-		}
-	}
+# 	is_valid_showing_failures_only = {
+# 		custom_tooltip = {
+# 			text = share_known_secrets_interaction.tt.no_secrets_to_share
+# 			# We try to keep the criteria vague to obfuscate things.
+# 			scope:actor = { any_known_secret = { count > 0 } } # Must have a secret to share
+# 			OR = {
+# 				scope:actor = {
+# 					# At least one secret is unknown from recipient
+# 					any_known_secret = {
+# 						NOT = { is_known_by = scope:recipient }
+# 					}
+# 				}
+# 				scope:recipient = {
+# 					# At least one secret is unknown from actor
+# 					any_known_secret = {
+# 						NOT = { is_known_by = scope:actor }
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	desc = share_known_secrets_interaction_desc
+# 	desc = share_known_secrets_interaction_desc
 
-	on_accept = {
-		scope:actor = {
-			if = {
-				limit = {
-					scope:recipient = {
-						any_known_secret = {
-							count >= 7
-							NOT = { is_known_by = scope:actor }
-						}
-					}
-				}
-				add_prestige = major_prestige_loss
+# 	on_accept = {
+# 		scope:actor = {
+# 			if = {
+# 				limit = {
+# 					scope:recipient = {
+# 						any_known_secret = {
+# 							count >= 7
+# 							NOT = { is_known_by = scope:actor }
+# 						}
+# 					}
+# 				}
+# 				add_prestige = major_prestige_loss
 
-				custom_description = {
-					text = many_secrets_exchanged
-				}
-			}
-			else_if = {
-				limit = {
-					scope:recipient = {
-						any_known_secret = {
-							count >= 3
-							NOT = { is_known_by = scope:actor }
-						}
-					}
-				}
-				add_prestige = medium_prestige_loss
-				custom_description = {
-					text = several_secrets_exchanged
-				}
-			}
-			else = {
-				add_prestige = minor_prestige_loss
-				custom_description = {
-					text = few_secrets_exchanged
-				}
-			}
+# 				custom_description = {
+# 					text = many_secrets_exchanged
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					scope:recipient = {
+# 						any_known_secret = {
+# 							count >= 3
+# 							NOT = { is_known_by = scope:actor }
+# 						}
+# 					}
+# 				}
+# 				add_prestige = medium_prestige_loss
+# 				custom_description = {
+# 					text = several_secrets_exchanged
+# 				}
+# 			}
+# 			else = {
+# 				add_prestige = minor_prestige_loss
+# 				custom_description = {
+# 					text = few_secrets_exchanged
+# 				}
+# 			}
 
-			# Stress impact
-			stress_impact = {
-				honest = minor_stress_impact_gain
-				just = minor_stress_impact_gain
-				compassionate = minor_stress_impact_gain
-			}
-		}
+# 			# Stress impact
+# 			stress_impact = {
+# 				honest = minor_stress_impact_gain
+# 				just = minor_stress_impact_gain
+# 				compassionate = minor_stress_impact_gain
+# 			}
+# 		}
 
-		scope:recipient = {
-			if = {
-				limit = {
-					scope:actor = {
-						any_known_secret = {
-							count >= 7
-							NOT = { is_known_by = scope:recipient }
-							OR = {
-								NOR = {
-									secret_owner = scope:recipient
-									AND = {
-										exists = secret_target
-										secret_target = scope:recipient
-									}
-								}
-								scope:recipient = {
-									OR = {
-										has_trait = dull
-										has_trait = intellect_bad
-										has_trait = contrite
-									}
-								}
-							}
-						}
-					}
-				}
-				add_prestige = major_prestige_loss
+# 		scope:recipient = {
+# 			if = {
+# 				limit = {
+# 					scope:actor = {
+# 						any_known_secret = {
+# 							count >= 7
+# 							NOT = { is_known_by = scope:recipient }
+# 							OR = {
+# 								NOR = {
+# 									secret_owner = scope:recipient
+# 									AND = {
+# 										exists = secret_target
+# 										secret_target = scope:recipient
+# 									}
+# 								}
+# 								scope:recipient = {
+# 									OR = {
+# 										has_trait = dull
+# 										has_trait = intellect_bad
+# 										has_trait = contrite
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+# 				add_prestige = major_prestige_loss
 
-				custom_description = {
-					text = many_secrets_exchanged
-				}
-			}
-			else_if = {
-				limit = {
-					scope:actor = {
-						any_known_secret = {
-							count >= 3
-							NOT = { is_known_by = scope:recipient }
-							OR = {
-								NOR = {
-									secret_owner = scope:actor
-									AND = {
-										exists = secret_target
-										secret_target = scope:actor
-									}
-								}
-								scope:actor = {
-									OR = {
-										has_trait = dull
-										has_trait = intellect_bad
-										has_trait = contrite
-									}
-								}
-							}
-						}
-					}
-				}
-				add_prestige = medium_prestige_loss
+# 				custom_description = {
+# 					text = many_secrets_exchanged
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					scope:actor = {
+# 						any_known_secret = {
+# 							count >= 3
+# 							NOT = { is_known_by = scope:recipient }
+# 							OR = {
+# 								NOR = {
+# 									secret_owner = scope:actor
+# 									AND = {
+# 										exists = secret_target
+# 										secret_target = scope:actor
+# 									}
+# 								}
+# 								scope:actor = {
+# 									OR = {
+# 										has_trait = dull
+# 										has_trait = intellect_bad
+# 										has_trait = contrite
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+# 				add_prestige = medium_prestige_loss
 
-				custom_description = {
-					text = several_secrets_exchanged
-				}
-			}
-			else = {
-				add_prestige = minor_prestige_loss
+# 				custom_description = {
+# 					text = several_secrets_exchanged
+# 				}
+# 			}
+# 			else = {
+# 				add_prestige = minor_prestige_loss
 
-				custom_description = {
-					text = few_secrets_exchanged
-				}
-			}
+# 				custom_description = {
+# 					text = few_secrets_exchanged
+# 				}
+# 			}
 
-			# Stress impact
-			stress_impact = {
-				honest = minor_stress_impact_gain
-				just = minor_stress_impact_gain
-				compassionate = minor_stress_impact_gain
-			}
-		}
+# 			# Stress impact
+# 			stress_impact = {
+# 				honest = minor_stress_impact_gain
+# 				just = minor_stress_impact_gain
+# 				compassionate = minor_stress_impact_gain
+# 			}
+# 		}
 
-		hidden_effect = {
-			scope:recipient = { save_scope_as = END_TARGET } # This should make the loc work 2-ways, as notifs do not update themselves
-			scope:actor = {
-				if = { # Recipient has no secrets to share
-					limit = {
-						scope:recipient = {
-							any_known_secret = {
-								NOT = { is_known_by = scope:actor }
-								OR = {
-									NOR = {
-										secret_owner = scope:recipient
-										AND = {
-											exists = secret_target
-											secret_target = scope:recipient
-										}
-									}
-									scope:recipient = {
-										OR = {
-											has_trait = dull
-											has_trait = intellect_bad
-											has_trait = contrite
-										}
-									}
-								}
-								count = 0 
-							}
-						}
-					}
-					send_interface_message = {
-						type = event_intrigue_bad_with_text
-						title = share_known_secrets_interaction_outcome_notif_title
-						desc = share_known_secrets_interaction_recipient_had_no_secrets
-						left_icon = scope:recipient
-					}
-				}
-				else = { # They had secrets to share
-					send_interface_message = {
-						type = event_intrigue_good_with_text
-						title = share_known_secrets_interaction_outcome_notif_title
-						desc = share_known_secrets_interaction_desc_intro
-						left_icon = scope:recipient
+# 		hidden_effect = {
+# 			scope:recipient = { save_scope_as = END_TARGET } # This should make the loc work 2-ways, as notifs do not update themselves
+# 			scope:actor = {
+# 				if = { # Recipient has no secrets to share
+# 					limit = {
+# 						scope:recipient = {
+# 							any_known_secret = {
+# 								NOT = { is_known_by = scope:actor }
+# 								OR = {
+# 									NOR = {
+# 										secret_owner = scope:recipient
+# 										AND = {
+# 											exists = secret_target
+# 											secret_target = scope:recipient
+# 										}
+# 									}
+# 									scope:recipient = {
+# 										OR = {
+# 											has_trait = dull
+# 											has_trait = intellect_bad
+# 											has_trait = contrite
+# 										}
+# 									}
+# 								}
+# 								count = 0 
+# 							}
+# 						}
+# 					}
+# 					send_interface_message = {
+# 						type = event_intrigue_bad_with_text
+# 						title = share_known_secrets_interaction_outcome_notif_title
+# 						desc = share_known_secrets_interaction_recipient_had_no_secrets
+# 						left_icon = scope:recipient
+# 					}
+# 				}
+# 				else = { # They had secrets to share
+# 					send_interface_message = {
+# 						type = event_intrigue_good_with_text
+# 						title = share_known_secrets_interaction_outcome_notif_title
+# 						desc = share_known_secrets_interaction_desc_intro
+# 						left_icon = scope:recipient
 
-						scope:recipient = {
-							every_known_secret = {
-								limit = {
-									NOT = { is_known_by = scope:actor }
-									OR = {
-										NOR = {
-											secret_owner = scope:recipient
-											AND = {
-												exists = secret_target
-												secret_target = scope:recipient
-											}
-										}
-										scope:recipient = {
-											OR = {
-												has_trait = dull
-												has_trait = intellect_bad
-												has_trait = contrite
-											}
-										}
-									}
-								}
-								reveal_to = scope:actor
-							}
-						}
-					}
-				}
-			}
+# 						scope:recipient = {
+# 							every_known_secret = {
+# 								limit = {
+# 									NOT = { is_known_by = scope:actor }
+# 									OR = {
+# 										NOR = {
+# 											secret_owner = scope:recipient
+# 											AND = {
+# 												exists = secret_target
+# 												secret_target = scope:recipient
+# 											}
+# 										}
+# 										scope:recipient = {
+# 											OR = {
+# 												has_trait = dull
+# 												has_trait = intellect_bad
+# 												has_trait = contrite
+# 											}
+# 										}
+# 									}
+# 								}
+# 								reveal_to = scope:actor
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
 
-			scope:actor = { save_scope_as = END_TARGET }
-			scope:recipient = {
-				if = { # actor has no secrets to share
-					limit = { 
-						scope:actor = { 
-							any_known_secret = {
-								NOT = { is_known_by = scope:recipient }
-								OR = {
-									NOR = {
-										secret_owner = scope:actor
-										AND = {
-											exists = secret_target
-											secret_target = scope:actor
-										}
-									}
-									scope:actor = {
-										OR = {
-											has_trait = dull
-											has_trait = intellect_bad
-											has_trait = contrite
-										}
-									}
-								}
-								count = 0 
-							} 
-						}
-					}
-					send_interface_message = {
-						type = event_intrigue_bad_with_text
-						title = share_known_secrets_interaction_outcome_notif_title
-						desc = share_known_secrets_interaction_recipient_had_no_secrets
-						left_icon = scope:actor
-					}
-				}
-				else = { # They had secrets to share
-					send_interface_message = {
-						type = event_intrigue_good_with_text
-						title = share_known_secrets_interaction_outcome_notif_title
-						desc = share_known_secrets_interaction_desc_intro
-						left_icon = scope:actor
+# 			scope:actor = { save_scope_as = END_TARGET }
+# 			scope:recipient = {
+# 				if = { # actor has no secrets to share
+# 					limit = { 
+# 						scope:actor = { 
+# 							any_known_secret = {
+# 								NOT = { is_known_by = scope:recipient }
+# 								OR = {
+# 									NOR = {
+# 										secret_owner = scope:actor
+# 										AND = {
+# 											exists = secret_target
+# 											secret_target = scope:actor
+# 										}
+# 									}
+# 									scope:actor = {
+# 										OR = {
+# 											has_trait = dull
+# 											has_trait = intellect_bad
+# 											has_trait = contrite
+# 										}
+# 									}
+# 								}
+# 								count = 0 
+# 							} 
+# 						}
+# 					}
+# 					send_interface_message = {
+# 						type = event_intrigue_bad_with_text
+# 						title = share_known_secrets_interaction_outcome_notif_title
+# 						desc = share_known_secrets_interaction_recipient_had_no_secrets
+# 						left_icon = scope:actor
+# 					}
+# 				}
+# 				else = { # They had secrets to share
+# 					send_interface_message = {
+# 						type = event_intrigue_good_with_text
+# 						title = share_known_secrets_interaction_outcome_notif_title
+# 						desc = share_known_secrets_interaction_desc_intro
+# 						left_icon = scope:actor
 
-						scope:actor = {
-							every_known_secret = {
-								limit = {
-									NOT = { is_known_by = scope:recipient }
-									OR = {
-										NOR = {
-											secret_owner = scope:actor
-											AND = {
-												exists = secret_target
-												secret_target = scope:actor
-											}
-										}
-										scope:actor = {
-											OR = {
-												has_trait = dull
-												has_trait = intellect_bad
-												has_trait = contrite
-											}
-										}
-									}
-								}
-								reveal_to = scope:recipient
-							}
-							hidden_effect = { add_prestige = major_prestige_loss }
-						}
-					}
-				}
-			}
-		}
+# 						scope:actor = {
+# 							every_known_secret = {
+# 								limit = {
+# 									NOT = { is_known_by = scope:recipient }
+# 									OR = {
+# 										NOR = {
+# 											secret_owner = scope:actor
+# 											AND = {
+# 												exists = secret_target
+# 												secret_target = scope:actor
+# 											}
+# 										}
+# 										scope:actor = {
+# 											OR = {
+# 												has_trait = dull
+# 												has_trait = intellect_bad
+# 												has_trait = contrite
+# 											}
+# 										}
+# 									}
+# 								}
+# 								reveal_to = scope:recipient
+# 							}
+# 							hidden_effect = { add_prestige = major_prestige_loss }
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
 
-		# If we're a clan this interaction affects unity
-		add_clan_unity_interaction_effect = {
-			CHARACTER = scope:actor
-			TARGET = scope:recipient
-			VALUE = minor_unity_loss
-			DESC = clan_unity_secret_sharing.desc
-			REVERSE_NON_HOUSE_TARGET = no
-		}
-	}
+# 		# If we're a clan this interaction affects unity
+# 		add_clan_unity_interaction_effect = {
+# 			CHARACTER = scope:actor
+# 			TARGET = scope:recipient
+# 			VALUE = minor_unity_loss
+# 			DESC = clan_unity_secret_sharing.desc
+# 			REVERSE_NON_HOUSE_TARGET = no
+# 		}
+# 	}
 
-	auto_accept = {
-		custom_description = {
-			text = "spending_hook"
-			subject = scope:actor
-			object = scope:recipient
-			AND = {
-				always = scope:hook
-				scope:actor = { has_strong_hook = scope:recipient }
-			}
-		}
-	}
+# 	auto_accept = {
+# 		custom_description = {
+# 			text = "spending_hook"
+# 			subject = scope:actor
+# 			object = scope:recipient
+# 			AND = {
+# 				always = scope:hook
+# 				scope:actor = { has_strong_hook = scope:recipient }
+# 			}
+# 		}
+# 	}
 
-	send_option = {
-		is_valid = {
-			scope:actor = { has_strong_hook = scope:recipient }
-		}
-		flag = hook
-		localization = SCHEME_HOOK
-	}
-	should_use_extra_icon = {
-		scope:actor = { has_strong_hook = scope:recipient }
-	}
-	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
+# 	send_option = {
+# 		is_valid = {
+# 			scope:actor = { has_strong_hook = scope:recipient }
+# 		}
+# 		flag = hook
+# 		localization = SCHEME_HOOK
+# 	}
+# 	should_use_extra_icon = {
+# 		scope:actor = { has_strong_hook = scope:recipient }
+# 	}
+# 	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
 	
-	send_options_exclusive = no
+# 	send_options_exclusive = no
 
-	ai_potential = {
-		#Has access to the appropriate cultural parameter.
-		AND = {
-			exists = dynasty
-			dynasty = { has_dynasty_perk = fp2_coterie_legacy_4 }
-		}
-		prestige > major_prestige_value
-	}
+# 	ai_potential = {
+# 		#Has access to the appropriate cultural parameter.
+# 		AND = {
+# 			exists = dynasty
+# 			dynasty = { has_dynasty_perk = fp2_coterie_legacy_4 }
+# 		}
+# 		prestige > major_prestige_value
+# 	}
 	
-	auto_accept = no
+# 	auto_accept = no
 
-	ai_accept = {
-		# AI should accept by default
-		base = 10
+# 	ai_accept = {
+# 		# AI should accept by default
+# 		base = 10
 
-		modifier = {
-			trigger = {
-				always = scope:hook
-			}
-			add = 100
-			desc = SCHEME_WEAK_HOOK_USED
-		}
+# 		modifier = {
+# 			trigger = {
+# 				always = scope:hook
+# 			}
+# 			add = 100
+# 			desc = SCHEME_WEAK_HOOK_USED
+# 		}
 
-		modifier = {
-			trigger = {
-				has_education_intrigue_trigger = yes
-			}
-			add = 20
-			desc = INTERACTION_INTRIGUE_EDUCATION
-		}
+# 		modifier = {
+# 			trigger = {
+# 				has_education_intrigue_trigger = yes
+# 			}
+# 			add = 20
+# 			desc = INTERACTION_INTRIGUE_EDUCATION
+# 		}
 		
-		modifier = {
-			add = -100
-			has_trait = honest
-			desc = INTERACTION_HONEST
-		}
+# 		modifier = {
+# 			add = -100
+# 			has_trait = honest
+# 			desc = INTERACTION_HONEST
+# 		}
 		
-		modifier = {
-			add = -50
-			has_trait = just
-			desc = INTERACTION_JUST
-		}
+# 		modifier = {
+# 			add = -50
+# 			has_trait = just
+# 			desc = INTERACTION_JUST
+# 		}
 
-		modifier = {
-			add = -50
-			has_trait = paranoid
-			desc = INTERACTION_PARANOID
-		}
+# 		modifier = {
+# 			add = -50
+# 			has_trait = paranoid
+# 			desc = INTERACTION_PARANOID
+# 		}
 
-		modifier = {
-			add = 100
-			has_trait = fickle
-			desc = INTERACTION_FICKLE
-		}
+# 		modifier = {
+# 			add = 100
+# 			has_trait = fickle
+# 			desc = INTERACTION_FICKLE
+# 		}
 		
-		modifier = {
-			add = 100
-			has_trait = deceitful
-			desc = INTERACTION_DECEITFUL
-		}
+# 		modifier = {
+# 			add = 100
+# 			has_trait = deceitful
+# 			desc = INTERACTION_DECEITFUL
+# 		}
 
-		modifier = {
-			add = 25
-			has_trait = ambitious
-			desc = INTERACTION_AMBITIOUS
-		}
+# 		modifier = {
+# 			add = 25
+# 			has_trait = ambitious
+# 			desc = INTERACTION_AMBITIOUS
+# 		}
 
-	}
+# 	}
 	
-	ai_will_do = {
-		base = 100
-	}
-}
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+# }
 
 ##################################################
 # Propose Best Friendship
