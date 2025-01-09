@@ -5003,24 +5003,25 @@ invite_foreign_ruler_to = {
 
 		NOT = { scope:actor = scope:recipient }
 		# Scope:actor needs to either be involved in certain struggle types or else have a specific perk.
-		scope:actor = {
-			any_character_struggle = {
-				involvement = involved
-				is_struggle_type = iberian_struggle
-			}
-		}
-		# Scope:recipient must be landed, and neither over or under scope:actor.
-		scope:recipient = {
-			any_character_struggle = {
-				involvement = involved
-				is_struggle_type = iberian_struggle
-			}
-			is_playable_character = yes
-			NOR = {
-				any_liege_or_above = { this = scope:actor }
-				any_vassal_or_below = { this = scope:actor }
-			}
-		}
+		#L5R Disabled
+		# scope:actor = {
+		# 	any_character_struggle = {
+		# 		involvement = involved
+		# 		is_struggle_type = iberian_struggle
+		# 	}
+		# }
+		# # Scope:recipient must be landed, and neither over or under scope:actor.
+		# scope:recipient = {
+		# 	any_character_struggle = {
+		# 		involvement = involved
+		# 		is_struggle_type = iberian_struggle
+		# 	}
+		# 	is_playable_character = yes
+		# 	NOR = {
+		# 		any_liege_or_above = { this = scope:actor }
+		# 		any_vassal_or_below = { this = scope:actor }
+		# 	}
+		# }
 	}
 
 	is_valid_showing_failures_only = {

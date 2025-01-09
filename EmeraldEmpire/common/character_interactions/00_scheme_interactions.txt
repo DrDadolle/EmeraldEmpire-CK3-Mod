@@ -764,63 +764,64 @@ befriend_interaction = {
 		}
 		
 		# Struggle
-		modifier = {
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-					is_struggle_type = iberian_struggle
-					phase_has_catalyst = catalyst_became_friend_lover_with_character
-				}
-			}
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-					is_struggle_type = iberian_struggle
-					phase_has_catalyst = catalyst_became_friend_lover_with_character
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							has_character_flag = agenda_towards_deescalation
-							trait_compatibility = {
-								target = scope:recipient
-								value >= low_positive_trait_compatibility
-							}
-						}
-						scope:recipient = {
-							has_character_flag = agenda_towards_deescalation
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							has_character_flag = agenda_towards_deescalation
-							trait_compatibility = {
-								target = scope:recipient
-								value >= low_positive_trait_compatibility
-							}
-						}
-					}
-					add = 50
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = -200
-				}
-				else = {
-					add = 10
-				}
-			}
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			is_struggle_type = iberian_struggle
+		# 			phase_has_catalyst = catalyst_became_friend_lover_with_character
+		# 		}
+		# 	}
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			is_struggle_type = iberian_struggle
+		# 			phase_has_catalyst = catalyst_became_friend_lover_with_character
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					has_character_flag = agenda_towards_deescalation
+		# 					trait_compatibility = {
+		# 						target = scope:recipient
+		# 						value >= low_positive_trait_compatibility
+		# 					}
+		# 				}
+		# 				scope:recipient = {
+		# 					has_character_flag = agenda_towards_deescalation
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					has_character_flag = agenda_towards_deescalation
+		# 					trait_compatibility = {
+		# 						target = scope:recipient
+		# 						value >= low_positive_trait_compatibility
+		# 					}
+		# 				}
+		# 			}
+		# 			add = 50
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = -200
+		# 		}
+		# 		else = {
+		# 			add = 10
+		# 		}
+		# 	}
+		# }
 
 		modifier = {
 			factor = 25
@@ -1320,51 +1321,52 @@ seduce_interaction = {
 		}
 		
 		# Struggle
-		modifier = {
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-					is_struggle_type = iberian_struggle
-					phase_has_catalyst = catalyst_became_friend_lover_with_character
-				}
-			}
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-					is_struggle_type = iberian_struggle
-					phase_has_catalyst = catalyst_became_friend_lover_with_character
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							has_character_flag = agenda_towards_deescalation
-							trait_compatibility = {
-								target = scope:recipient
-								value >= low_positive_trait_compatibility
-							}
-						}
-						scope:recipient = {
-							has_character_flag = agenda_towards_deescalation
-						}
-					}
-					add = 50
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = -200
-				}
-				else = {
-					add = 5
-				}
-			}
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			is_struggle_type = iberian_struggle
+		# 			phase_has_catalyst = catalyst_became_friend_lover_with_character
+		# 		}
+		# 	}
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			is_struggle_type = iberian_struggle
+		# 			phase_has_catalyst = catalyst_became_friend_lover_with_character
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					has_character_flag = agenda_towards_deescalation
+		# 					trait_compatibility = {
+		# 						target = scope:recipient
+		# 						value >= low_positive_trait_compatibility
+		# 					}
+		# 				}
+		# 				scope:recipient = {
+		# 					has_character_flag = agenda_towards_deescalation
+		# 				}
+		# 			}
+		# 			add = 50
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = -200
+		# 		}
+		# 		else = {
+		# 			add = 5
+		# 		}
+		# 	}
+		# }
 
 		modifier = {
 			factor = 1.25
@@ -1763,14 +1765,15 @@ court_interaction = {
 					culture = {
 						has_cultural_parameter = ai_romance_scheme_increase
 					}
-					AND = {
-						has_character_flag = agenda_towards_deescalation
-						any_character_struggle = {
-							involvement = involved
-							is_struggle_type = iberian_struggle
-							phase_has_catalyst = catalyst_became_best_friend_soulmate_with_very_important_character
-						}
-					}
+					#L5R Disabled
+					# AND = {
+					# 	has_character_flag = agenda_towards_deescalation
+					# 	any_character_struggle = {
+					# 		involvement = involved
+					# 		is_struggle_type = iberian_struggle
+					# 		phase_has_catalyst = catalyst_became_best_friend_soulmate_with_very_important_character
+					# 	}
+					# }
 				}
 			}
 			ai_honor >= high_positive_ai_value
@@ -1796,67 +1799,69 @@ court_interaction = {
 		
 		
 		# Struggle
-		modifier = {
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-					is_struggle_type = iberian_struggle
-					phase_has_catalyst = catalyst_became_best_friend_soulmate_with_very_important_character
-				}
-			}
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-					is_struggle_type = iberian_struggle
-					phase_has_catalyst = catalyst_became_best_friend_soulmate_with_very_important_character
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							has_character_flag = agenda_towards_deescalation
-						}
-						scope:recipient = {
-							has_character_flag = agenda_towards_deescalation
-						}
-					}
-					add = 25
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = -200
-				}
-				else = {
-					add = 5
-				}
-			}
-		}
+		#L5R Disabled
+		# modifier = {
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			is_struggle_type = iberian_struggle
+		# 			phase_has_catalyst = catalyst_became_best_friend_soulmate_with_very_important_character
+		# 		}
+		# 	}
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			is_struggle_type = iberian_struggle
+		# 			phase_has_catalyst = catalyst_became_best_friend_soulmate_with_very_important_character
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					has_character_flag = agenda_towards_deescalation
+		# 				}
+		# 				scope:recipient = {
+		# 					has_character_flag = agenda_towards_deescalation
+		# 				}
+		# 			}
+		# 			add = 25
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = -200
+		# 		}
+		# 		else = {
+		# 			add = 5
+		# 		}
+		# 	}
+		# }
 		
-		modifier = { # Motivate AI's to use it on catalyst providers exclusively
-			add = -50
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-					is_struggle_type = iberian_struggle
-					phase_has_catalyst = catalyst_became_best_friend_soulmate_with_very_important_character
-				}
-			}
-			scope:recipient = {
-				NOT = {
-					any_character_struggle = {
-						involvement = involved
-						is_struggle_type = iberian_struggle
-						phase_has_catalyst = catalyst_became_best_friend_soulmate_with_very_important_character
-					}
-				}
-			}
-		}
+		#L5R Disabled
+		# modifier = { # Motivate AI's to use it on catalyst providers exclusively
+		# 	add = -50
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			is_struggle_type = iberian_struggle
+		# 			phase_has_catalyst = catalyst_became_best_friend_soulmate_with_very_important_character
+		# 		}
+		# 	}
+		# 	scope:recipient = {
+		# 		NOT = {
+		# 			any_character_struggle = {
+		# 				involvement = involved
+		# 				is_struggle_type = iberian_struggle
+		# 				phase_has_catalyst = catalyst_became_best_friend_soulmate_with_very_important_character
+		# 			}
+		# 		}
+		# 	}
+		# }
 
 		opinion_modifier = {
 			opinion_target = scope:recipient
