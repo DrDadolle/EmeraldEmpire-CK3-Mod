@@ -4082,6 +4082,21 @@ scripted_effect fund_inspiration_0051_pick_options_to_show_effect = {
 					value = yes
 				}
 			}
+			1 = {
+				# Shadowlands 
+				trigger = {
+					scope:inspiration_owner = {
+						adventurer_potential_destination_distance_check = {
+							REGION = world_shadowlands
+						}
+					}
+					NOT = { exists = scope:world_shadowlands_option }
+				}
+				save_scope_value_as = {
+					name = world_shadowlands_option
+					value = yes
+				}
+			}
 		}
 	}
 }
@@ -4187,6 +4202,30 @@ fund_inspiration.0051 = {
 
 		ai_chance = {
 			base = 50
+		}
+	}
+
+	option = { #shadowlands
+		name = fund_inspiration.0051.rokugan_shadowlands
+		trigger = { exists = scope:world_shadowlands_option }
+		custom_tooltip = fund_inspiration.you_decide_option_tt
+		scope:inspiration_owner = {
+			set_variable = {
+				name = adventure_destination
+				value = flag:world_shadowlands
+			}
+		}
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 200
+				faith_is_evil = yes
+			}
+			modifier = {
+				add = 1000
+				culture = { has_cultural_pillar = heritage_spider } 
+			}
 		}
 	}
 	# option = { #africa
@@ -4632,6 +4671,15 @@ scripted_effect fund_adventure_inspiration_travel_progress_effect = {
 		}
 		random_county_in_region = {
 			region = world_rokugan_east
+			title_province = { save_scope_as = location }
+		}
+	}
+	else_if = {# shadowlands
+		limit = {
+			var:adventure_destination = flag:world_shadowlands
+		}
+		random_county_in_region = {
+			region = world_shadowlands
 			title_province = { save_scope_as = location }
 		}
 	}
@@ -16277,6 +16325,44 @@ fund_inspiration.5021 = {
 						value = yes
 					}
 				}
+				1 = {
+					# shadowlands 
+					trigger = {
+	  					#There's a county you don't hold there
+	  					any_county_in_region = {
+							region = world_shadowlands
+							NOT = { holder = root }
+						}
+						scope:inspiration_owner = { #Distance check - from where the adventurer is right now.
+							adventurer_potential_destination_distance_check = {
+								REGION = world_shadowlands
+							}
+						}
+						#This was not the original destination of the adventurer
+	  					NOT = { scope:inspiration_owner.var:adventure_destination = flag:world_shadowlands }
+					}
+					modifier = {
+						add = 30
+						NOT = {
+							any_county_in_region = {
+								region = world_shadowlands
+								holder = root 
+								count >= 1
+							}
+						}
+					}
+					random_county_in_region = {
+						region = world_shadowlands
+						limit = { 
+							NOT = { holder = root }
+						}
+						save_scope_as = adventuring_location
+					}
+					save_scope_value_as = {
+						name = world_shadowlands_location
+						value = yes
+					}
+				}
 			}
 
 			if = {
@@ -16424,11 +16510,11 @@ fund_inspiration.5021 = {
 			# }
 			if = {
 				limit = {
-					exists = scope:world_rokugan_east_location
+					exists = scope:world_rokugan_north_location
 				}
 				set_variable = {
 					name = adventure_destination
-					value = flag:rokugan_east
+					value = flag:rokugan_north
 				}
 			}
 			else_if = {
@@ -16447,6 +16533,15 @@ fund_inspiration.5021 = {
 				set_variable = {
 					name = adventure_destination
 					value = flag:rokugan_south
+				}
+			}
+			else_if = {
+				limit = {
+					exists = scope:world_shadowlands_location
+				}
+				set_variable = {
+					name = adventure_destination
+					value = flag:world_shadowlands
 				}
 			}
 			hidden_effect = {

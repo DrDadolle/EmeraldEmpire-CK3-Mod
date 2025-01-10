@@ -639,6 +639,32 @@ treasure_hunting_contract_decision = {
 				value = 50
 			}
 		}
+		item = {
+			value = search_world_shadowlands
+			is_valid = {
+				custom_description = {
+					text = treasure_hunting_contract_decision_limit
+					capital_province = {
+						OR = {
+							geographical_region = search_world_shadowlands
+						}
+					}
+				}
+			}
+			localization = treasure_hunting_contract_decision_option_search_world_shadowlands
+			icon = "gfx/interface/icons/terrain_types/shadowlands_plains.dds"
+			ai_chance = {
+				value = 0
+				modifier = {
+					add = 200
+					faith_is_evil = yes
+				}
+				modifier = {
+					add = 1000
+					culture = { has_cultural_pillar = heritage_spider}
+				}
+			}
+		}
 		# item = {
 		# 	value = search_europe_north
 		# 	is_valid = {
@@ -1060,6 +1086,15 @@ treasure_hunting_contract_decision = {
 				set_variable = {
 					name = adventure_destination
 					value = flag:rokugan_east
+				}
+				get_adventure_inspiration_start_location = {
+					ADVENTURER = root
+				}
+			}
+			scope:search_shadowlands = {
+				set_variable = {
+					name = adventure_destination
+					value = flag:world_shadowlands
 				}
 				get_adventure_inspiration_start_location = {
 					ADVENTURER = root

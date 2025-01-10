@@ -5,64 +5,30 @@ InspirationAdventureDestination = {
 
 	text = {
 		trigger = {
-			var:adventure_destination = flag:crab
+			var:adventure_destination = flag:rokugan_north
 		}
-		localization_key = rokugan_crab
+		localization_key = rokugan_north
 	}
 
 	text = {
 		trigger = {
-			var:adventure_destination = flag:crane
+			var:adventure_destination = flag:rokugan_south
 		}
-		localization_key = rokugan_crane
+		localization_key = rokugan_south
 	}
 
 	text = {
 		trigger = {
-			var:adventure_destination = flag:dragon
+			var:adventure_destination = flag:rokugan_east
 		}
-		localization_key = rokugan_dragon
+		localization_key = rokugan_east
 	}
 
+	
 	text = {
 		trigger = {
-			var:adventure_destination = flag:lion
+			var:adventure_destination = flag:world_shadowlands
 		}
-		localization_key = rokugan_lion
-	}
-
-	text = {
-		trigger = {
-			var:adventure_destination = flag:phoenix
-		}
-		localization_key = rokugan_phoenix
-	}
-
-	text = {
-		trigger = {
-			var:adventure_destination = flag:scorpion
-		}
-		localization_key = rokugan_scorpion
-	}
-
-	text = {
-		trigger = {
-			var:adventure_destination = flag:unicorn
-		}
-		localization_key = rokugan_unicorn
-	}
-
-	text = {
-		trigger = {
-			var:adventure_destination = flag:imperial
-		}
-		localization_key = rokugan_imperial
-	}
-
-	text = {
-		trigger = {
-			var:adventure_destination = flag:spice_and_silk_isles
-		}
-		localization_key = rokugan_spice_and_silk_isles
+		localization_key = world_shadowlands
 	}
 }

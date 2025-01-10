@@ -788,6 +788,12 @@ InspirationAdventureDestination = {
 		}
 		localization_key = rokugan_east
 	}
+	text = { #Shadowlands
+		trigger = {
+			var:adventure_destination = flag:world_shadowlands
+		}
+		localization_key = world_shadowlands
+	}
 
 }
 

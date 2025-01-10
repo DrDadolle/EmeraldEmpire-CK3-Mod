@@ -583,6 +583,21 @@ set_adventure_location_effect = {
 							value = flag:rokugan_east
 						}
 					}
+					1 = {
+						# shadowlands
+						trigger = {
+							trigger_if = {
+								limit = { exists = location }
+								adventurer_potential_destination_distance_check = {
+									REGION = world_shadowlands
+								}
+							}
+						}
+						set_variable = {
+							name = adventure_destination
+							value = flag:world_shadowlands
+						}
+					}
 
 					85 = { #Very skillde adventurers are often going to let you decide!
 						trigger = {
@@ -771,6 +786,12 @@ get_adventure_inspiration_start_location = {
 				flag:rokugan_east = { # rokugan_east
 					random_county_in_region = {
 						region = world_rokugan_east
+						title_province = { save_scope_as = location }
+					}
+				}
+				flag:world_shadowlands = { # shadowlands
+					random_county_in_region = {
+						region = world_shadowlands
 						title_province = { save_scope_as = location }
 					}
 				}

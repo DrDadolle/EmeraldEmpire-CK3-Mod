@@ -3,10 +3,13 @@
  rokugan_north:0 "Northern Rokugan"
  rokugan_south:0 "Southern Rokugan"
  rokugan_east:0 "Eastern Rokugan"
+ world_shadowlands:0 "Shadowlands"
+
 #Inspiration Events
  fund_inspiration.0051.rokugan_north:0 "Northern Rokugan has always fascinated me!"
  fund_inspiration.0051.rokugan_south:0 "Travel to Southern Rokugan!"
  fund_inspiration.0051.rokugan_east:0 "Journey to Eastern Rokugan!"
+ fund_inspiration.0051.rokugan_shadowlands:0 "Brave the Shadowlands!"
 # Laamp Contract
  treasure_hunting_contract_decision_option_search_rokugan_north:0 "[GetGeographicalRegion('rokugan_north').GetNameNoTooltip]"
  search_rokugan_north_tooltip:0 "$search_region_tooltip$ [GetGeographicalRegion('rokugan_north').GetName]"
@@ -14,3 +17,5 @@
  search_rokugan_south_tooltip:0 "$search_region_tooltip$ [GetGeographicalRegion('rokugan_south').GetName]"
  treasure_hunting_contract_decision_option_search_rokugan_east:0 "[GetGeographicalRegion('rokugan_east').GetNameNoTooltip]"
  search_rokugan_east_tooltip:0 "$search_region_tooltip$ [GetGeographicalRegion('rokugan_east').GetName]"
+ treasure_hunting_contract_decision_option_search_world_shadowlands:0 "[GetGeographicalRegion('world_shadowlands').GetNameNoTooltip]"
+ search_world_shadowlands_tooltip:0 "$search_region_tooltip$ [GetGeographicalRegion('world_shadowlands').GetName]"

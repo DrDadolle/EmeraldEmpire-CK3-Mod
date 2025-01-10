@@ -425,10 +425,11 @@ WakeName = {
 WakeDesc = {
 	type = character
 
-	text = {
-		localization_key = wakedesc_offering_of_libations
-		trigger = { faith_qualifies_for_west_african_pagan_feudalisation_trigger = yes }
-	}
+	# L5R Disabled
+	# text = {
+	# 	localization_key = wakedesc_offering_of_libations
+	# 	trigger = { faith_qualifies_for_west_african_pagan_feudalisation_trigger = yes }
+	# }
 
 	text = {
 		localization_key = wakedesc_sky_burial
@@ -461,30 +462,35 @@ WakeDesc = {
 CeremonyName = {
 	type = character
 
-	text = {
-		localization_key = ceremonyname_public_bewailment
-		trigger = { faith_qualifies_for_west_african_pagan_feudalisation_trigger = yes }
-	}
+	# L5R Disabled
+	# text = {
+	# 	localization_key = ceremonyname_public_bewailment
+	# 	trigger = { faith_qualifies_for_west_african_pagan_feudalisation_trigger = yes }
+	# }
 
 	text = {
 		localization_key = ceremonyname_sky_burial
 		trigger = { faith = { has_doctrine_parameter = sky_burials_active } }
 	}
 
-	text = {
-		localization_key = ceremonyname_ground_burial
-		trigger = {
-			religion = { is_in_family = rf_abrahamic }
-		}
-	}
-
 	#L5R Disabled
 	# text = {
-	# 	localization_key = ceremonyname_cremation
+	# 	localization_key = ceremonyname_ground_burial
 	# 	trigger = {
-	# 		religion = religion:germanic_religion
+	# 		religion = { is_in_family = rf_abrahamic }
 	# 	}
 	# }
+
+	text = {
+		localization_key = ceremonyname_cremation
+		trigger = {
+			#L5R Modified
+			# religion = religion:germanic_religion
+			faith = {
+				has_doctrine_parameter = cremation_funeral
+			}
+		}
+	}
 
 	text = {
 		localization_key = ceremonyname_mummification
@@ -504,30 +510,36 @@ CeremonyName = {
 CeremonyDesc = {
 	type = character
 
-	text = {
-		localization_key = ceremonydesc_public_bewailment
-		trigger = { faith_qualifies_for_west_african_pagan_feudalisation_trigger = yes }
-	}
+	# L5R Disabled
+	# text = {
+	# 	localization_key = ceremonydesc_public_bewailment
+	# 	trigger = { faith_qualifies_for_west_african_pagan_feudalisation_trigger = yes }
+	# }
 
 	text = {
 		localization_key = ceremonydesc_sky_burial
 		trigger = { faith = { has_doctrine_parameter = sky_burials_active } }
 	}
 
-	text = {
-		localization_key = ceremonydesc_ground_burial
-		trigger = {
-			religion = { is_in_family = rf_abrahamic }
-		}
-	}
-
 	#L5R Disabled
 	# text = {
-	# 	localization_key = ceremonydesc_cremation
+	# 	localization_key = ceremonydesc_ground_burial
 	# 	trigger = {
-	# 		religion = religion:germanic_religion
+	# 		religion = { is_in_family = rf_abrahamic }
 	# 	}
 	# }
+
+	
+	text = {
+		localization_key = ceremonydesc_cremation
+		trigger = {
+			#L5R Modified
+			# religion = religion:germanic_religion
+			faith = {
+				has_doctrine_parameter = cremation_funeral
+			}
+		}
+	}
 
 	text = {
 		localization_key = ceremonydesc_mummification

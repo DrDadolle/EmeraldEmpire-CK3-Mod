@@ -1890,19 +1890,27 @@ epidemic_events.1060 = {
 			random_list = {
 				30 = {
 					# blamed_pague_on determines what or who has been blamed for the plague
+					#L5R Added
+					trigger = {
+						NOT = {
+							# No attacking the cats if cat clan !
+							root.culture = { has_cultural_pillar = heritage_nekoma }
+						}
+					}
 					set_variable = {
 						name = blamed_plague_on
 						value = flag:cats
 					}
 				}
 				20 = {
-					trigger = {
-						NOT = {
-							# No attacking the puppos for Zoroastrians and Canary Islanders
-							root.faith.religion = religion:zoroastrianism_religion
-							root.faith.religion = religion:north_african_religion
-						}
-					}
+					#L5R Disabled
+					# trigger = {
+					# 	NOT = {
+					# 		# No attacking the puppos for Zoroastrians and Canary Islanders
+					# 		root.faith.religion = religion:zoroastrianism_religion
+					# 		root.faith.religion = religion:north_african_religion
+					# 	}
+					# }
 					set_variable = {
 						name = blamed_plague_on
 						value = flag:dogs
@@ -2027,18 +2035,19 @@ epidemic_events.1060 = {
 		trigger = {
 			piety_level >= very_high_piety_level
 		}
-		if = {
-			limit = {
-				scope:story_scope = {
-					exists = var:faith_blamed
-					var:faith_blamed.religion = religion:judaism_religion
-				}
-			}
-			add_character_modifier = {
-				modifier = protected_jews
-				years = 10
-			}
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		scope:story_scope = {
+		# 			exists = var:faith_blamed
+		# 			var:faith_blamed.religion = religion:judaism_religion
+		# 		}
+		# 	}
+		# 	add_character_modifier = {
+		# 		modifier = protected_jews
+		# 		years = 10
+		# 	}
+		# }
 		every_sub_realm_county = {
 			custom = every_infected_county
 			limit = {
@@ -8260,16 +8269,26 @@ epidemic_events.5010 = {
 
 	trigger = {
 		OR = {
-			capital_barony = title:b_cairo
-			capital_barony = title:b_toledo
-			capital_barony = title:b_praha
-			capital_barony = title:b_constantinople
-			capital_barony = title:b_paris
-			capital_barony = title:b_roma
-			capital_barony = title:b_london
-			capital_barony = title:b_santiago
-			capital_barony = title:b_kanyakubja
-			capital_barony = title:b_varanasi
+			#L5R Modified
+			capital_barony = title:b_otosan_uchi
+			capital_barony = title:b_kyuden_doji
+			capital_barony = title:b_shiro_akodo
+			capital_barony = title:b_shiro_shiba
+			capital_barony = title:b_shiro_togashi
+			capital_barony = title:b_kyuden_bayushi
+			capital_barony = title:b_kyuden_hida
+			capital_barony = title:b_shiro_shinjo
+			capital_barony = title:b_shadowlands_festering_pit_coast_the_one
+			# capital_barony = title:b_cairo
+			# capital_barony = title:b_toledo
+			# capital_barony = title:b_praha
+			# capital_barony = title:b_constantinople
+			# capital_barony = title:b_paris
+			# capital_barony = title:b_roma
+			# capital_barony = title:b_london
+			# capital_barony = title:b_santiago
+			# capital_barony = title:b_kanyakubja
+			# capital_barony = title:b_varanasi
 		}
 
 		# There be a plague in your capital
