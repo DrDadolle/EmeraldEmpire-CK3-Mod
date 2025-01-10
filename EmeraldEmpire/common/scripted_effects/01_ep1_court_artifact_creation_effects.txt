@@ -470,7 +470,9 @@ create_artifact_animal_hide_effect = {
 			}
 			random_list = {
 				8 = {
-					hunt_activity_standard_game_effect = { PROVINCE = scope:hunter.location HUNTER = scope:hunter }
+					#L5R Modified
+					# hunt_activity_standard_game_effect = { PROVINCE = scope:hunter.location HUNTER = scope:hunter }
+					hunt_activity_standard_game_effect = { PROVINCE = scope:hunter.location }
 				}
 				2 = {
 					hunt_activity_dangerous_game_effect = { PROVINCE = scope:hunter.location }
@@ -656,7 +658,9 @@ create_artifact_wall_skull_effect = {
 			}
 			random_list = {
 				8 = {
-					hunt_activity_standard_game_effect = { PROVINCE = scope:hunter.location HUNTER = scope:hunter }
+					#L5R Modified
+					# hunt_activity_standard_game_effect = { PROVINCE = scope:hunter.location HUNTER = scope:hunter }
+					hunt_activity_standard_game_effect = { PROVINCE = scope:hunter.location }
 				}
 				2 = {
 					hunt_activity_dangerous_game_effect = { PROVINCE = scope:hunter.location }
@@ -859,7 +863,9 @@ create_artifact_animal_trinket_effect = {
 			}
 			random_list = {
 				8 = {
-					hunt_activity_standard_game_effect = { PROVINCE = scope:hunter.location HUNTER = scope:hunter }
+					#L5R Modified
+					# hunt_activity_standard_game_effect = { PROVINCE = scope:hunter.location HUNTER = scope:hunter }
+					hunt_activity_standard_game_effect = { PROVINCE = scope:hunter.location }
 				}
 				2 = {
 					hunt_activity_dangerous_game_effect = { PROVINCE = scope:hunter.location }

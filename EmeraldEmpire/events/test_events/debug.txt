@@ -3224,14 +3224,18 @@ debug.9620 = { # Hunt Artifacts
 		hidden_effect = {
 			random_list = {
 				1 = {
-					hunt_activity_standard_game_effect = { PROVINCE = root.capital_province HUNTER = root }
+					#L5R Modified
+					# hunt_activity_standard_game_effect = { PROVINCE = root.capital_province HUNTER = root }
+					hunt_activity_standard_game_effect = { PROVINCE = root.capital_province }
 				}
 				1 = {
 					hunt_activity_dangerous_game_effect = { PROVINCE = root.capital_province }
 				}
 			}
 		}
-		hunt_activity_standard_game_effect = { PROVINCE = root.capital_province HUNTER = root }
+		#L5R Modified
+		# hunt_activity_standard_game_effect = { PROVINCE = root.capital_province HUNTER = root }
+		hunt_activity_standard_game_effect = { PROVINCE = root.capital_province }
 		create_artifact_animal_hide_effect = {
 			OWNER = root
 			HUNTER = scope:hunter
@@ -3302,14 +3306,18 @@ debug.9621 = { # Legendary Artifacts
 		hidden_effect = {
 			random_list = {
 				1 = {
-					hunt_activity_standard_game_effect = { PROVINCE = root.capital_province HUNTER = root }
+					#L5R Modified
+					# hunt_activity_standard_game_effect = { PROVINCE = root.capital_province HUNTER = root }
+					hunt_activity_standard_game_effect = { PROVINCE = root.capital_province }
 				}
 				1 = {
 					hunt_activity_dangerous_game_effect = { PROVINCE = root.capital_province }
 				}
 			}
 		}
-		hunt_activity_standard_game_effect = { PROVINCE = root.capital_province HUNTER = root }
+		#L5R Modified
+		# hunt_activity_standard_game_effect = { PROVINCE = root.capital_province HUNTER = root }
+		hunt_activity_standard_game_effect = { PROVINCE = root.capital_province }
 		create_artifact_animal_hide_effect = {
 			OWNER = root
 			HUNTER = scope:hunter

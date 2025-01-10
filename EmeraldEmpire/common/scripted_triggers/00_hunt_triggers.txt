@@ -362,6 +362,7 @@ hunt_animal_big_available_trigger = {
 				NOR = {
 					#L5R Modified
 					county = title:c_nekoma_province
+					county = title:c_shadowlands_festering_pit_5
 					# Counties
 					# county = title:c_dahlak # Not native
 					# county = title:c_faereyar # Not native
@@ -375,7 +376,7 @@ hunt_animal_big_available_trigger = {
 			#L5R Modified
 			trigger_if = {
 				limit = { exists = duchy }
-				NOR = {
+				NOT = {
 					duchy = title:d_yoritomo # Not Native
 					# duchy = title:d_canarias # Not native
 					# duchy = title:d_krete # Extinct

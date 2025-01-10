@@ -1383,7 +1383,9 @@ hunt.0500 = {
 						}
 						random_list = {
 							4 = {
-								hunt_activity_standard_game_effect = { PROVINCE = scope:activity.activity_location HUNTER = scope:host }
+								#L5R Modified
+								# hunt_activity_standard_game_effect = { PROVINCE = scope:activity.activity_location HUNTER = scope:host }
+								hunt_activity_standard_game_effect = { PROVINCE = scope:activity.activity_location }
 							}
 							1 = {
 								hunt_activity_dangerous_game_effect = { PROVINCE = scope:activity.activity_location }
@@ -10707,7 +10709,9 @@ hunt.2500 = {
 		hunt_sighting_county_province_effect = yes
 		# Save sighting
 		scope:sighting_county = {
-			hunt_activity_standard_game_effect = { PROVINCE = scope:sighting_province HUNTER = root }
+			#L5R Modified
+			# hunt_activity_standard_game_effect = { PROVINCE = scope:sighting_province HUNTER = root }
+			hunt_activity_standard_game_effect = { PROVINCE = scope:sighting_province }
 			# Create new sighting
 			hunt_create_sighting_effect = {
 				TYPE = standard
@@ -10916,7 +10920,9 @@ hunt.2510 = {
 				save_scope_as = big_local_game
 				random_list = {
 					2 = {
-						hunt_activity_standard_game_effect = { PROVINCE = scope:sighting_province HUNTER = root }
+						#L5R Modified
+						# hunt_activity_standard_game_effect = { PROVINCE = scope:sighting_province HUNTER = root }
+						hunt_activity_standard_game_effect = { PROVINCE = scope:sighting_province }
 					}
 					2 = {
 						hunt_activity_dangerous_game_effect = { PROVINCE = scope:sighting_province }
@@ -17332,7 +17338,9 @@ hunt.4012 = {
 			scope:host = {
 				random_list = {
 					2 = {
-						hunt_activity_standard_game_effect = { PROVINCE = scope:activity.activity_location HUNTER = root }
+						#L5R Modified
+						# hunt_activity_standard_game_effect = { PROVINCE = scope:activity.activity_location HUNTER = root }
+						hunt_activity_standard_game_effect = { PROVINCE = scope:activity.activity_location }
 					}
 					2 = {
 						hunt_activity_dangerous_game_effect = { PROVINCE = scope:activity.activity_location }

@@ -754,13 +754,24 @@ hunt_animal_gazelle_region = {}
 
 # Boar Spread
 hunt_animal_boar_region = {
+	regions = {
+		world_rokugan	
+	}
 }
 
 # Bear Spread
-hunt_animal_bear_region = {}
+hunt_animal_bear_region = {
+	regions = {
+		world_rokugan	
+	}
+}
 
 # Big Cat Spread
-hunt_animal_big_cat_region = {}
+hunt_animal_big_cat_region = {
+	regions = {
+		world_rokugan	
+	}
+}
 
 # Bison Spread
 hunt_animal_bison_region = {}
@@ -770,7 +781,11 @@ hunt_animal_aurochs_region = {}
 
 hunt_animal_reindeer_region = {}
 
-hunt_animal_elk_region = {}
+hunt_animal_elk_region = {
+	regions = {
+		world_rokugan_north	
+	}
+}
 
 # Chiefly the Celtic Rim.
 board_game_fidchell_region = {}
