@@ -90,8 +90,10 @@ invasion_of_crab_clan_cb = {
 	should_invalidate = {
 		OR = {
 			# Already conquered by someone else
-			scope:defender = { faith_is_evil = yes	}
-			scope:defender = { culture = { has_cultural_pillar = heritage_spider }  }
+			AND = {
+				scope:defender = { faith_is_evil = yes	}
+				scope:defender = { culture = { has_cultural_pillar = heritage_spider }  }
+			}
 			scope:defender = { top_liege = title:e_shadowlands.holder }
 			# Not in invasion phase anymore or struggle does not exists anymore
 			# NOT = { exists = struggle:shadowlands_struggle } }
@@ -115,16 +117,11 @@ invasion_of_crab_clan_cb = {
 	on_declaration = {
 		on_declared_war = yes
 
-		# Event to add Crab Clan Ruler as ally if not the target of the war
-		if = {
-			limit = {
-				 exists = title:k_crab_clan.holder
-				 NOT = { scope:defender = title:k_crab_clan.holder }
-				}
-			title:k_crab_clan.holder = {
+		# Event to add all vassal as ally in the war for defender, to balance the HUGE amount of special troops of the attacker
+		scope:defender = {
+			every_vassal = {
 				trigger_event = shadowlands_struggle.2010
 			}
-			
 		}
 
 		scope:attacker = {
@@ -159,12 +156,6 @@ invasion_of_crab_clan_cb = {
 				desc = shadowlands_invasion_war_victory_desc_attacker
 			}
 			desc = shadowlands_invasion_war_victory_desc
-		}
-		triggered_desc = {
-			trigger = {
-				scope:attacker = { is_local_player = yes }
-			}
-			desc = shadowlands_invasion_war_warning_desc
 		}
 	}
 	
@@ -350,9 +341,17 @@ invasion_of_crab_clan_cb = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { scope:defender = { is_local_player = yes } }
-				desc = invasion_war_white_peace_desc_defender
+				desc = shadowlands_invasion_war_white_peace_desc_defender
 			}
-			desc = invasion_war_white_peace_desc
+			desc = shadowlands_invasion_war_white_peace_desc
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:attacker = { is_local_player = yes }
+				}
+				desc = shadowlands_invasion_war_warning_desc
+			}
 		}
 	}
 	

@@ -44,7 +44,7 @@ hot_springs_visit.0001 = {
 	}
 
 	theme = friendly
-	override_background  = { reference = relaxing_room }
+	override_background  = { reference = l5r_hot_springs }
 
 	right_portrait = {
 		character = root
@@ -74,7 +74,7 @@ hot_springs_visit.0002 = {
 	title = hot_springs_visit.0002.t
 	desc = hot_springs_visit.0002.desc
 	theme = friendly
-	override_background  = { reference = relaxing_room }
+	override_background  = { reference = l5r_hot_springs }
 
 	right_portrait = {
 		character = root

@@ -9993,3 +9993,12 @@ bp3_coast = {
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_waterbank"
 	}
 }
+### L5R Added
+### HOT SPRINGS ###
+l5r_hot_springs = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/hot_springs.dds"
+		environment = "environment_event_garden"
+		ambience = "event:/SFX/Events/Backgrounds/castle_garden_day"
+	}
+}

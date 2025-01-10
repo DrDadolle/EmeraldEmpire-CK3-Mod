@@ -25,7 +25,8 @@
  catalyst_shadowlands_invasion_war_declared_desc:0 "A [shadowlands|E] ruler declared the [crabclan|E] invasion [war|E]"
  catalyst_shadowlands_invasion_war_lost:0 "A [shadowlands|E] ruler lost a [crabclan|E] invasion [war|E]"
  catalyst_shadowlands_invasion_war_lost_desc:0 "A [shadowlands|E] ruler lost a [crabclan|E] invasion [war|E]"
-
+ catalyst_conversion_to_faith_evil:0 "A ruler with a good [faith|E] or neutral [faith|E] converts to an evil [faith|E]"
+ catalyst_conversion_to_faith_evil_desc:0 "A ruler with a good [faith|E] or neutral [faith|E] converts to an evil [faith|E]"
 
  # Effects
  EFFECT_FAILED_INVASION_TITLES_EXPLODES:0 "All held [duchy|E], [kingdom|E] as well as the [shadowlands|E] [empire|E] [title|E], that you or your vassal own are destroyed."
@@ -107,9 +108,12 @@
  shadowlands_struggle.2005.a:0 "We are now scatterred..."
 
  shadowlands_struggle.2010.t:0 "Shadowlands Invasion"
- shadowlands_struggle.2010.desc:0 "Hordes of undead, goblins and other horrors are united under the banner of a corrupted warlord. They threaten Rokugan as a whole. It is time for me, Champion of the Crab Clan, to honor my sacred duty!"
+ shadowlands_struggle.2010.desc.crab_champion:0 "Hordes of undead, goblins and other horrors are united under the banner of a corrupted warlord. They threaten Rokugan as a whole. It is time for me, Champion of the Crab Clan, to honor my sacred duty!"
+ shadowlands_struggle.2010.desc:0 "Hordes of undead, goblins and other horrors are united under the banner of a corrupted warlord. They threaten Rokugan as a whole. I could help the Crab Clan and join the war, but it could be a waste of ressources and time."
  shadowlands_struggle.2010.a:0 "We are the wall."
- shadowlands_struggle.2010.b:0 "They do not deserve my help."
+ shadowlands_struggle.2010.b:0 "I will defend Rokugan !"
+ shadowlands_struggle.2010.c:0 "They do not deserve my help."
+ shadowlands_struggle.2010.d:0 "The Crab Clan do not need my help."
 
  ############################
  ###### PULSE EVENTS

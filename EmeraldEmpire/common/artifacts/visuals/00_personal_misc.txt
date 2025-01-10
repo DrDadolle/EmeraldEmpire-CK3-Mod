@@ -413,6 +413,9 @@ crown = {
 
 armor = {
 	icon = "artifact_armor.dds"
+	# L5R Added
+	# Fallback
+	asset = ep1_western_box_medium_basic_01_a_entity
 	#L5R Disabled
     # Western and Medi
 	# asset = {

@@ -1044,14 +1044,14 @@ learning_theology.3021 = {
 		}
 		desc = {
 			first_valid = {
-				triggered_desc = {
-					trigger = {
-						faith = {
-							religion_tag = christianity_religion
-						}
-					}
-					desc = learning_theology.3021.desc_christian
-				}
+				# triggered_desc = {
+				# 	trigger = {
+				# 		faith = {
+				# 			religion_tag = christianity_religion
+				# 		}
+				# 	}
+				# 	desc = learning_theology.3021.desc_christian
+				# }
 				desc = learning_theology.3021.desc_other
 			}
 		}

@@ -15,7 +15,7 @@ shadowlands_struggle.0001 = {
 	window = fullscreen_event
 	title = shadowlands_struggle.0001.t
 	desc = shadowlands_struggle.0001.desc
-	theme = war
+	theme = shadowlands
 	override_background = { reference = shadowlands_struggle_start }
 
 	trigger = {
@@ -96,7 +96,7 @@ shadowlands_struggle.1000 = {
 	window = fullscreen_event
 	title = shadowlands_struggle.1000.t
 	desc = shadowlands_struggle.1000.desc
-	theme = war
+	theme = shadowlands
 	override_background = { reference = shadowlands_struggle_start }
 
 	trigger = {
@@ -131,7 +131,7 @@ shadowlands_struggle.1001 = {
 	window = fullscreen_event
 	title = shadowlands_struggle.1001.t
 	desc = shadowlands_struggle.1001.desc
-	theme = war
+	theme = shadowlands
 	override_background = { reference = shadowlands_struggle_start }
 
 	trigger = {
@@ -166,7 +166,7 @@ shadowlands_struggle.1002 = {
 	window = fullscreen_event
 	title = shadowlands_struggle.1002.t
 	desc = shadowlands_struggle.1002.desc
-	theme = crown
+	theme = shadowlands
 	override_background = { reference = shadowlands_struggle_start }
 
 	trigger = {
@@ -438,8 +438,17 @@ shadowlands_struggle.2010 = {
 	content_source = l5r_dlc
 	type = character_event
 	title = shadowlands_struggle.2010.t
-	desc = shadowlands_struggle.2010.desc
-	theme = war
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_title = title:k_crab_clan }
+				desc = shadowlands_struggle.2010.desc.crab_champion
+			}
+			desc = 	shadowlands_struggle.2010.desc
+		}
+	}
+	
+	theme = shadowlands
 
 	left_portrait = {
 		character = root
@@ -450,20 +459,68 @@ shadowlands_struggle.2010 = {
 		animation = personality_callous
 	}
 	
+	# We are the wall !
 	option = {
 		name = shadowlands_struggle.2010.a
 		scope:war = { add_defender = root }
+		trigger = {
+			has_title = title:k_crab_clan
+		}
+		# Get free Hida defenders !
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 2000
+			men_at_arms = {
+				type = crab_hida_defender
+				stacks = 5
+			}
+			location = scope:attacker.capital_province
+			uses_supply = no
+			war = scope:war
+			inheritable = no
+		}
 
 		ai_chance = {
 			base = 100
 		}
 	}
+
+	# Help the crab clan !
 	option = {
 		name = shadowlands_struggle.2010.b
-		stress_impact = {
-			craven = medium_stress_loss
+		scope:war = { add_defender = root }
+		trigger = {
+			NOT = { has_title = title:k_crab_clan }
 		}
 		stress_impact = {
+			craven = major_stress_gain
+			brave = medium_stress_loss
+		}
+
+		#Brave AI will always join
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 25
+				has_trait = brave
+			}
+			modifier = {
+				add = -25
+				has_trait = craven
+			}
+		}
+	}
+
+
+	# Crab clan champion does no want to help...
+	# AI will never do this
+	option = {
+		name = shadowlands_struggle.2010.c
+		trigger = {
+			has_title = title:k_crab_clan
+		}
+		stress_impact = {
+			craven = medium_stress_loss
 			brave = major_stress_gain
 		}
 		dynasty = {
@@ -474,6 +531,40 @@ shadowlands_struggle.2010 = {
 
 		ai_chance = {
 			base = 0
+		}
+	}
+
+	# Don't want to help
+	option = {
+		name = shadowlands_struggle.2010.d
+		trigger = {
+			NOT = { has_title = title:k_crab_clan }
+		}
+		stress_impact = {
+			craven = medium_stress_loss
+			brave = major_stress_gain
+			greedy = minuscule_stress_loss
+		}
+		add_prestige = medium_prestige_loss
+		add_piety = minor_piety_loss
+
+		#TODO special coward modificator ?
+
+		# Brave AI will always join
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 25
+					has_trait = craven
+			}
+			modifier = {
+				add = 5
+					has_trait = greedy
+			}
+			modifier = {
+				factor = 0
+				has_trait = brave
+			}
 		}
 	}
 }
@@ -487,10 +578,7 @@ shadowlands_struggle.3000 = {
 	type = character_event
 	title = shadowlands_struggle.3000.t
 	desc = shadowlands_struggle.3000.desc
-	theme = faith
-	override_background = {
-		reference = throne_room
-	}
+	theme = shadowlands
 
 	left_portrait = {
 		character = root

@@ -6828,12 +6828,23 @@ character_location_exterior = {
 
 	# L5R Added
 	texture = {
-		reference = "terrain_types/volcanic_plains.dds"
+		reference = "terrain_types/shadowlands_plains.dds"
 
 		trigger = {
 			NOT = {
 				exists = liege
 			}
+			exists = location
+			location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+	}
+
+	texture = { #Fallback
+		reference = "terrain_types/shadowlands_plains.dds"
+
+		trigger = {
 			exists = location
 			location = {
 				graphical_shadowlands_trigger = yes

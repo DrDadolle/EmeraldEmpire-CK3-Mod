@@ -1,0 +1,13 @@
+﻿ ### Use @generic_event_theme_sound for new themes.
+
+shadowlands = {
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_shadowlands.dds"
+	}
+	sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_intimidation"
+	}
+	background = {
+		reference = throne_room
+	}
+}

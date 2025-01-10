@@ -28,7 +28,7 @@ decision_invade_crab_clan = {
 
 	}
 
-	cooldown = { years = 20 }
+	cooldown = { years = 50 }
 	
 	is_shown = {
 		is_independent_ruler = yes
@@ -48,7 +48,6 @@ decision_invade_crab_clan = {
 			has_title = title:k_crab_clan
 		}
 		exists = title:k_crab_clan
-
 		NOT = { has_character_flag = declared_shadowlands_invasion_already }
 	}
 
@@ -71,6 +70,8 @@ decision_invade_crab_clan = {
 		}
 		hidden_effect = {
 			add_character_flag = declared_shadowlands_invasion_already
+			# Block it for 50 years, for immortal characters
+			years = 50
 		}
 
 		# The invasion_of_crab_clan_cb  on_declaration  create the army.

@@ -413,6 +413,35 @@ on_character_faith_change = {
 				}
 			}
 		}
+		#L5R Added
+		# faith_is_good change faith
+		if = {
+			limit = {
+				# New faith is evil
+				faith_is_evil = yes
+				# Count or more
+				is_ruler = yes
+				is_semi_important_ruler_struggle_character = yes
+				# Old faith is neutral or good
+				scope:old_faith = {
+					OR = {
+						religion = { is_in_family = rf_rokugan }
+						has_doctrine = tenet_rokugani_syncretism
+						AND = {
+							NOT = { religion = {  is_in_family = rf_shadowlands } }
+							NOT = { has_doctrine = tenet_shadowlands_syncretism }
+						}
+					}
+				}
+			}
+			every_character_struggle = {
+				involvement = involved
+				activate_struggle_catalyst = {
+					catalyst = catalyst_conversion_to_faith_evil
+					character = root
+				}
+			}
+		}
 		#L5R Disabled
 		## Struggle Effects
 		### persian_struggle: switching faith to anything that isn't an orthodox Sunni creed'll flip you to detractor.
