@@ -135,6 +135,8 @@ l5r_title_events.0001 = { #redistribute non-imperial titles to other families
 		any_held_title = {
 			this = scope:gained_title
 		}
+		#Only for AI ! 
+		is_ai = yes
 	}
 
 

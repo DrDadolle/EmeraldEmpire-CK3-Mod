@@ -985,24 +985,25 @@ activity_feast = {
 						desc = feast_cost_discount_leisure_palaces
 					}
 				}
-				if = {
-					limit = {
-						scope:province ?= { has_building_or_higher = alhambra_01 }
-					}
-					add = {
-						value = 0
-						add = {
-							value = feast_activity_cost
-							add = {
-								value = feast_activity_cost
-								multiply = activity_cost_scale_by_era
-								subtract = feast_activity_cost
-							}
-						}
-						multiply = feast_activity_cost_discount_max_value
-						desc = feast_cost_discount_alhambra
-					}
-				}
+				#L5R Disabled
+				# if = {
+				# 	limit = {
+				# 		scope:province ?= { has_building_or_higher = alhambra_01 }
+				# 	}
+				# 	add = {
+				# 		value = 0
+				# 		add = {
+				# 			value = feast_activity_cost
+				# 			add = {
+				# 				value = feast_activity_cost
+				# 				multiply = activity_cost_scale_by_era
+				# 				subtract = feast_activity_cost
+				# 			}
+				# 		}
+				# 		multiply = feast_activity_cost_discount_max_value
+				# 		desc = feast_cost_discount_alhambra
+				# 	}
+				# }
 				if = {
 					limit = { 
 						scope:province ?= {

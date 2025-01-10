@@ -6841,14 +6841,9 @@ character_location_exterior = {
 		}
 	}
 
-	texture = { #Fallback
-		reference = "terrain_types/shadowlands_plains.dds"
-
-		trigger = {
-			location = {
-				graphical_shadowlands_trigger = yes
-			}
-		}
+	#Fallback
+	texture = {
+		reference = "event_scenes/bp1_plains.dds"
 	}
 }
 

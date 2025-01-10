@@ -1231,21 +1231,22 @@ set_war_memory_casus_belli_effect = {
 						set_variable = { name = war_cb value = flag:war_memory_cb_ducal_conquest }
 					}
 				}
-				imperial_reconquest_cb = { # imperial reconquest
-					scope:memory = {
-						set_variable = { name = war_cb value = flag:war_memory_cb_imperial_reconquest }
-					}
-				}
-				dismantle_holy_pretender_cb = { # holy pretender
-					scope:memory = {
-						set_variable = { name = war_cb value = flag:war_memory_cb_holy_pretender }
-					}
-				}
-				dismantle_byz_pretender_cb = { # byz pretender
-					scope:memory = {
-						set_variable = { name = war_cb value = flag:war_memory_cb_byz_pretender }
-					}
-				}
+				#L5R Disabled
+				# imperial_reconquest_cb = { # imperial reconquest
+				# 	scope:memory = {
+				# 		set_variable = { name = war_cb value = flag:war_memory_cb_imperial_reconquest }
+				# 	}
+				# }
+				# dismantle_holy_pretender_cb = { # holy pretender
+				# 	scope:memory = {
+				# 		set_variable = { name = war_cb value = flag:war_memory_cb_holy_pretender }
+				# 	}
+				# }
+				# dismantle_byz_pretender_cb = { # byz pretender
+				# 	scope:memory = {
+				# 		set_variable = { name = war_cb value = flag:war_memory_cb_byz_pretender }
+				# 	}
+				# }
 				excommunication_war = { # excommunicate
 					scope:memory = {
 						set_variable = { name = war_cb value = flag:war_memory_cb_excommunicate }
@@ -1283,11 +1284,12 @@ set_war_memory_casus_belli_effect = {
 						set_variable = { name = war_cb value = flag:war_memory_cb_border }
 					}
 				}
-				fp2_expel_interloper = {
-					scope:memory = {
-						set_variable = { name = war_cb value = flag:war_memory_cb_expel }
-					}
-				}
+				#L5R Disabled
+				# fp2_expel_interloper = {
+				# 	scope:memory = {
+				# 		set_variable = { name = war_cb value = flag:war_memory_cb_expel }
+				# 	}
+				# }
 				diarch_vassalisation_cb = {
 					scope:memory = {
 						set_variable = { name = war_cb value = flag:war_memory_cb_vassalization }

@@ -9411,270 +9411,270 @@ epidemic_events.5905 = {
 
 # A roving band of flagellants turn up
 # by Nick Meredith
-epidemic_events.5906 = {
-	type = character_event
-	title = epidemic_events.5906.t
-	desc = epidemic_events.5906.desc
-	theme = plague
-	override_background = { reference = council_chamber }
-	left_portrait = {
-		character = root
-		animation = stress
-	}
-	right_portrait = {
-		character = scope:flagellant
-		animation = paranoia
-	}
-	lower_center_portrait = scope:marshal
-	cooldown = { years = 10 }
+# epidemic_events.5906 = {
+# 	type = character_event
+# 	title = epidemic_events.5906.t
+# 	desc = epidemic_events.5906.desc
+# 	theme = plague
+# 	override_background = { reference = council_chamber }
+# 	left_portrait = {
+# 		character = root
+# 		animation = stress
+# 	}
+# 	right_portrait = {
+# 		character = scope:flagellant
+# 		animation = paranoia
+# 	}
+# 	lower_center_portrait = scope:marshal
+# 	cooldown = { years = 10 }
 
-	trigger = {
-		is_available_adult = yes
-		is_landed = yes
-		faith = {
-			religion_tag = christianity_religion
-		}
-		exists = cp:councillor_marshal
-	}
+# 	trigger = {
+# 		is_available_adult = yes
+# 		is_landed = yes
+# 		faith = {
+# 			religion_tag = christianity_religion
+# 		}
+# 		exists = cp:councillor_marshal
+# 	}
 
-	immediate = {
-		location.county = {
-			random_county_province = {
-				save_scope_as = doomsday_province
-			}
-		}
+# 	immediate = {
+# 		location.county = {
+# 			random_county_province = {
+# 				save_scope_as = doomsday_province
+# 			}
+# 		}
 
-		cp:councillor_marshal = {
-			save_scope_as = marshal
-		}
+# 		cp:councillor_marshal = {
+# 			save_scope_as = marshal
+# 		}
 
-		if = {
-			limit = {
-				any_pool_character = {
-					province = root.location
-					is_adult = yes
-					has_no_particular_noble_roots_trigger = yes
-					has_trait = flagellant
-					is_imprisoned = no
-				}
-			}
-			random_pool_character = {
-				province = root.location
-				limit = {
-					is_adult = yes
-					has_no_particular_noble_roots_trigger = yes
-					has_trait = flagellant
-					is_imprisoned = no
-				}
-				save_scope_as = flagellant
-			}
-		}
-		else = {
-			create_character = {
-				template = peasant_character
-				dynasty = none
-				location = root.location
-				culture = root.location.culture
-				faith = root.location.faith
-				gender_female_chance = 50
-				trait = flagellant
-				save_scope_as = flagellant
-			}
-		}
+# 		if = {
+# 			limit = {
+# 				any_pool_character = {
+# 					province = root.location
+# 					is_adult = yes
+# 					has_no_particular_noble_roots_trigger = yes
+# 					has_trait = flagellant
+# 					is_imprisoned = no
+# 				}
+# 			}
+# 			random_pool_character = {
+# 				province = root.location
+# 				limit = {
+# 					is_adult = yes
+# 					has_no_particular_noble_roots_trigger = yes
+# 					has_trait = flagellant
+# 					is_imprisoned = no
+# 				}
+# 				save_scope_as = flagellant
+# 			}
+# 		}
+# 		else = {
+# 			create_character = {
+# 				template = peasant_character
+# 				dynasty = none
+# 				location = root.location
+# 				culture = root.location.culture
+# 				faith = root.location.faith
+# 				gender_female_chance = 50
+# 				trait = flagellant
+# 				save_scope_as = flagellant
+# 			}
+# 		}
 
-		save_scope_as = root_scope
-	}
+# 		save_scope_as = root_scope
+# 	}
 
-	option = { # You're tearing the faith apart, you maniacs!
-		name = epidemic_events.5906.a
+# 	option = { # You're tearing the faith apart, you maniacs!
+# 		name = epidemic_events.5906.a
 
-		trigger = {
-			has_trait = zealous
-		}
+# 		trigger = {
+# 			has_trait = zealous
+# 		}
 
-		duel = {
-			skill = learning
-			target = scope:flagellant
-			# You convince them
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = epidemic_events.5906.a.tt.success
-				send_interface_toast = {
-					title = epidemic_events.5906.a.tt.success
-					left_icon = root
-					right_icon = scope:flagellant
+# 		duel = {
+# 			skill = learning
+# 			target = scope:flagellant
+# 			# You convince them
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = epidemic_events.5906.a.tt.success
+# 				send_interface_toast = {
+# 					title = epidemic_events.5906.a.tt.success
+# 					left_icon = root
+# 					right_icon = scope:flagellant
 
-					add_character_modifier = {
-						modifier = flagellants_acquiesce
-						years = 10
-					}
-				}
-			}
-			# They are unconvinced
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = epidemic_events.5906.a.tt.failure
-				send_interface_toast = {
-					title = epidemic_events.5906.a.tt.failure
-					left_icon = root
-					right_icon = scope:flagellant
-					add_legitimacy = miniscule_legitimacy_loss
-					scope:doomsday_province = {
-						add_province_modifier = {
-							modifier = unrestrained_flagellants
-							years = 10
-						}
-					}
-				}
-			}
-		}
+# 					add_character_modifier = {
+# 						modifier = flagellants_acquiesce
+# 						years = 10
+# 					}
+# 				}
+# 			}
+# 			# They are unconvinced
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = epidemic_events.5906.a.tt.failure
+# 				send_interface_toast = {
+# 					title = epidemic_events.5906.a.tt.failure
+# 					left_icon = root
+# 					right_icon = scope:flagellant
+# 					add_legitimacy = miniscule_legitimacy_loss
+# 					scope:doomsday_province = {
+# 						add_province_modifier = {
+# 							modifier = unrestrained_flagellants
+# 							years = 10
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			base = miniscule_stress_impact_loss
-			ambitious = minor_stress_impact_loss
-			content = medium_stress_impact_gain
-			diligent = miniscule_stress_impact_loss
-			lazy = minor_stress_impact_gain
-		}
+# 		stress_impact = {
+# 			base = miniscule_stress_impact_loss
+# 			ambitious = minor_stress_impact_loss
+# 			content = medium_stress_impact_gain
+# 			diligent = miniscule_stress_impact_loss
+# 			lazy = minor_stress_impact_gain
+# 		}
 
-		ai_chance = {
-			base = 50
-			ai_value_modifier = {
-				ai_zeal = 1
-			}
-		}
-	}
+# 		ai_chance = {
+# 			base = 50
+# 			ai_value_modifier = {
+# 				ai_zeal = 1
+# 			}
+# 		}
+# 	}
 
-	option = { # You're right, honestly.
-		name = epidemic_events.5906.b
+# 	option = { # You're right, honestly.
+# 		name = epidemic_events.5906.b
 
-		trigger = {
-			OR = {
-				has_trait = paranoid
-				has_trait = fickle
-			}
-		}
+# 		trigger = {
+# 			OR = {
+# 				has_trait = paranoid
+# 				has_trait = fickle
+# 			}
+# 		}
 
-		add_trait = flagellant
+# 		add_trait = flagellant
 
-		stress_impact = {
-			base = major_stress_impact_loss
-			craven = miniscule_stress_impact_loss
-			brave = minor_stress_impact_gain
-			cynical = miniscule_stress_impact_loss
-			zealous = medium_stress_impact_gain
-		}
+# 		stress_impact = {
+# 			base = major_stress_impact_loss
+# 			craven = miniscule_stress_impact_loss
+# 			brave = minor_stress_impact_gain
+# 			cynical = miniscule_stress_impact_loss
+# 			zealous = medium_stress_impact_gain
+# 		}
 
-		ai_chance = {
-			base = 0 # Don't do this unless you're already flagellant
-			modifier = {
-				add = 50
-				has_trait = flagellant
-			}
-		}
-	}
+# 		ai_chance = {
+# 			base = 0 # Don't do this unless you're already flagellant
+# 			modifier = {
+# 				add = 50
+# 				has_trait = flagellant
+# 			}
+# 		}
+# 	}
 
 
-	option = { # Lock 'em up!
-		name = epidemic_events.5906.c
+# 	option = { # Lock 'em up!
+# 		name = epidemic_events.5906.c
 
-		hard_imprison_character_effect = {
-			TARGET = scope:flagellant
-			IMPRISONER = root
-		}
+# 		hard_imprison_character_effect = {
+# 			TARGET = scope:flagellant
+# 			IMPRISONER = root
+# 		}
 
-		random = {
-			chance = 50
-			scope:doomsday_province = {
-				add_province_modifier = {
-					modifier = pacified_flagellants
-					years = 10
-				}
-				hidden_effect = {
-					every_neighboring_province = {
-						random = {
-							chance = 25
-							add_province_modifier = {
-								modifier = pacified_flagellants
-								years = 10
-							}
-						}
-					}
-				}
-			}
-		}
+# 		random = {
+# 			chance = 50
+# 			scope:doomsday_province = {
+# 				add_province_modifier = {
+# 					modifier = pacified_flagellants
+# 					years = 10
+# 				}
+# 				hidden_effect = {
+# 					every_neighboring_province = {
+# 						random = {
+# 							chance = 25
+# 							add_province_modifier = {
+# 								modifier = pacified_flagellants
+# 								years = 10
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
 
-		custom_tooltip = epidemic_events.5906.d.tt
+# 		custom_tooltip = epidemic_events.5906.d.tt
 
-		stress_impact = {
-			calm = minor_stress_impact_gain
-			wrathful = miniscule_stress_impact_loss
-			diligent = miniscule_stress_impact_loss
-			lazy = minor_stress_impact_gain
-		}
+# 		stress_impact = {
+# 			calm = minor_stress_impact_gain
+# 			wrathful = miniscule_stress_impact_loss
+# 			diligent = miniscule_stress_impact_loss
+# 			lazy = minor_stress_impact_gain
+# 		}
 
-		ai_chance = {
-			base = 50
-			ai_value_modifier = {
-				ai_energy = 0.5
-			}
-		}
-	}
+# 		ai_chance = {
+# 			base = 50
+# 			ai_value_modifier = {
+# 				ai_energy = 0.5
+# 			}
+# 		}
+# 	}
 
-	option = { # Let them flagellate
-		name = epidemic_events.5906.d
+# 	option = { # Let them flagellate
+# 		name = epidemic_events.5906.d
 
-		random = {
-			chance = 50
-			faith = {
-				change_fervor = {
-					value = -5
-					desc = fervor_loss_flagellants
-				}
-			}
-			scope:doomsday_province = {
-				add_province_modifier = {
-					modifier = eager_populace
-					years = 10
-				}
-			}
-		}
+# 		random = {
+# 			chance = 50
+# 			faith = {
+# 				change_fervor = {
+# 					value = -5
+# 					desc = fervor_loss_flagellants
+# 				}
+# 			}
+# 			scope:doomsday_province = {
+# 				add_province_modifier = {
+# 					modifier = eager_populace
+# 					years = 10
+# 				}
+# 			}
+# 		}
 
-		every_vassal_or_below = {
-			limit = { has_vassal_stance = zealot }
-			custom = every_zealot_vassal
-			add_opinion = {
-				modifier = disrespect_opinion
-				target = root
-				opinion = -20
-			}
-		}
+# 		every_vassal_or_below = {
+# 			limit = { has_vassal_stance = zealot }
+# 			custom = every_zealot_vassal
+# 			add_opinion = {
+# 				modifier = disrespect_opinion
+# 				target = root
+# 				opinion = -20
+# 			}
+# 		}
 
-		stress_impact = {
-			fickle = minor_stress_impact_loss
-			stubborn = minor_stress_impact_gain
-			lazy = medium_stress_impact_loss
-			diligent = medium_stress_impact_gain
-			zealous = medium_stress_impact_gain
-			cynical = medium_stress_impact_loss
-		}
+# 		stress_impact = {
+# 			fickle = minor_stress_impact_loss
+# 			stubborn = minor_stress_impact_gain
+# 			lazy = medium_stress_impact_loss
+# 			diligent = medium_stress_impact_gain
+# 			zealous = medium_stress_impact_gain
+# 			cynical = medium_stress_impact_loss
+# 		}
 
-		ai_chance = {
-			base = 50
-			ai_value_modifier = {
-				ai_energy = -1
-			}
-		}
-	}
-}
+# 		ai_chance = {
+# 			base = 50
+# 			ai_value_modifier = {
+# 				ai_energy = -1
+# 			}
+# 		}
+# 	}
+# }
 
 # You develop a slight cough
 # by Nick Meredith

@@ -1288,13 +1288,13 @@ GetSaintlyTrait = {
 		}
 		localization_key = GetSaintlyTrait_theologian
 	}
-
-	text = {
-		trigger = {
-			has_trait = sayyid
-		}
-		localization_key = GetSaintlyTrait_sayyid
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		has_trait = sayyid
+	# 	}
+	# 	localization_key = GetSaintlyTrait_sayyid
+	# }
 }
 
 GetPiousAdj = {

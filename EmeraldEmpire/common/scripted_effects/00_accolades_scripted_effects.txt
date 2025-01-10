@@ -2591,13 +2591,13 @@ save_type_specific_successor_culture_effect = {
 							this = accolade_type:outrider_attribute
 						}
 					}
-					OR = {
-						has_cultural_tradition = tradition_ep3_indomitable_azatani
-						#L5R Disabled
+					#L5R Disabled
+					# OR = {
+						# has_cultural_tradition = tradition_ep3_indomitable_azatani
 						# has_cultural_tradition = tradition_desert_ribat
 						# has_cultural_tradition = tradition_chanson_de_geste
 						# has_cultural_tradition = tradition_hussar
-					}
+					# }
 					OR = {
 						#L5R Modified
 						has_cultural_pillar = heritage_unicorn

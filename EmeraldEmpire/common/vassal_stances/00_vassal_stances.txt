@@ -769,13 +769,26 @@ minority = {
 							# 		has_doctrine = tenet_christian_syncretism
 							# 	}
 							# }
+							# AND = {
+							# 	scope:liege.faith = {
+							# 		has_doctrine_parameter = unreformed
+							# 	}
+							# 	faith = {
+							# 		has_doctrine = tenet_unreformed_syncretism
+							# 	}
+							# }
+							#L5R Added
 							AND = {
-								scope:liege.faith = {
-									has_doctrine_parameter = unreformed
+								scope:liege = {
+									faith_is_evil = yes
 								}
-								faith = {
-									has_doctrine = tenet_unreformed_syncretism
+								faith_is_evil = yes
+							}
+							AND = {
+								scope:liege = {
+									faith_is_good = yes
 								}
+								faith_is_good = yes
 							}
 						}
 					}
@@ -787,15 +800,16 @@ minority = {
 							culture = {
 								cultural_acceptance = { target = scope:liege.culture value < 30 }
 							}
-							AND = {
-								any_character_struggle = {
-									involvement = involved
-									has_struggle_phase_parameter = struggle_different_culture_more_likely_to_use_minority_stance
-								}
-								culture = {
-									cultural_acceptance = { target = scope:liege.culture value < 70 }
-								}
-							}
+							#L5R Disabled
+							# AND = {
+							# 	any_character_struggle = {
+							# 		involvement = involved
+							# 		has_struggle_phase_parameter = struggle_different_culture_more_likely_to_use_minority_stance
+							# 	}
+							# 	culture = {
+							# 		cultural_acceptance = { target = scope:liege.culture value < 70 }
+							# 	}
+							# }
 						}
 					}
 				}
@@ -892,13 +906,26 @@ minority = {
 					# 		has_doctrine = tenet_christian_syncretism
 					# 	}
 					# }
+					# AND = {
+					# 	scope:liege.faith = {
+					# 		has_doctrine_parameter = unreformed
+					# 	}
+					# 	faith = {
+					# 		has_doctrine = tenet_unreformed_syncretism
+					# 	}
+					# }
+					#L5R Added
 					AND = {
-						scope:liege.faith = {
-							has_doctrine_parameter = unreformed
+						scope:liege = {
+							faith_is_evil = yes
 						}
-						faith = {
-							has_doctrine = tenet_unreformed_syncretism
+						faith_is_evil = yes
+					}
+					AND = {
+						scope:liege = {
+							faith_is_good = yes
 						}
+						faith_is_good = yes
 					}
 				}
 			}
@@ -913,15 +940,16 @@ minority = {
 					culture = {
 						cultural_acceptance = { target = scope:liege.culture value < 30 }
 					}
-					AND = {
-						any_character_struggle = {
-							involvement = involved
-							has_struggle_phase_parameter = struggle_different_culture_more_likely_to_use_minority_stance
-						}
-						culture = {
-							cultural_acceptance = { target = scope:liege.culture value < 70 }
-						}
-					}
+					#L5R Disabled
+					# AND = {
+					# 	any_character_struggle = {
+					# 		involvement = involved
+					# 		has_struggle_phase_parameter = struggle_different_culture_more_likely_to_use_minority_stance
+					# 	}
+					# 	culture = {
+					# 		cultural_acceptance = { target = scope:liege.culture value < 70 }
+					# 	}
+					# }
 				}
 			}
 		}
