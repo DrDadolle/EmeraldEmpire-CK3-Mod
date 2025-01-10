@@ -203,19 +203,20 @@ faith_conversion.0004 = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				OR = {
-					culture = { has_cultural_pillar = heritage_arabic }
-					culture = { has_cultural_pillar = heritage_iranian }
-					culture = { has_cultural_pillar = heritage_turkic }
-				}
-			}
-			change_government = clan_government
-		}	
-		else = {
+		#L5R Disabled
+		# if = {
+		# 	limit = {
+		# 		OR = {
+		# 			culture = { has_cultural_pillar = heritage_arabic }
+		# 			culture = { has_cultural_pillar = heritage_iranian }
+		# 			culture = { has_cultural_pillar = heritage_turkic }
+		# 		}
+		# 	}
+		# 	change_government = clan_government
+		# }	
+		# else = {
 			change_government = feudal_government
-		}
+		# }
 	}
 }
 

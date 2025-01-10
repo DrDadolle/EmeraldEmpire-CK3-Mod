@@ -6845,7 +6845,6 @@ character_location_exterior = {
 		reference = "terrain_types/shadowlands_plains.dds"
 
 		trigger = {
-			exists = location
 			location = {
 				graphical_shadowlands_trigger = yes
 			}

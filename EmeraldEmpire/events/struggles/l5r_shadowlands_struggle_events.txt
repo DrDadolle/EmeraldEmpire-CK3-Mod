@@ -496,6 +496,7 @@ shadowlands_struggle.2010 = {
 			craven = major_stress_gain
 			brave = medium_stress_loss
 		}
+		add_prestige = medium_prestige_gain
 
 		#Brave AI will always join
 		ai_chance = {
@@ -527,7 +528,6 @@ shadowlands_struggle.2010 = {
 			add_dynasty_prestige = major_dynasty_prestige_loss
 		}
 		add_prestige = monumental_prestige_loss
-		add_piety = major_piety_loss
 
 		ai_chance = {
 			base = 0

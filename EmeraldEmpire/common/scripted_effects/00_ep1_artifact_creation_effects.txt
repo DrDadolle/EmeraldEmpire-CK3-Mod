@@ -10184,25 +10184,26 @@ create_artifact_regalia_effect = {
 			# Prestige modifier is scaled based on the Wealth of the artifact (opulence).
 			add_scaled_artifact_modifier_minor_prestige_effect = yes
 
+			#L5R Disabled
 			# If we're using the cross-bearing orb (explicit religious symbol), trade some prestige for piety.
-			if = {
-				limit = {
-					has_artifact_feature = regalia_accessory_orb
-				}
-				add_artifact_modifier = artifact_monthly_prestige_penalty_modifier
-				if = {
-					limit = { # Give a tiny bit more piety for high rarity artifacts.
-						OR = {
-							rarity = famed
-							rarity = illustrious
-						}
-					}
-					add_artifact_modifier = artifact_monthly_piety_5_modifier
-				}
-				else = {
-					add_artifact_modifier = artifact_monthly_piety_2_modifier
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		has_artifact_feature = regalia_accessory_orb
+			# 	}
+			# 	add_artifact_modifier = artifact_monthly_prestige_penalty_modifier
+			# 	if = {
+			# 		limit = { # Give a tiny bit more piety for high rarity artifacts.
+			# 			OR = {
+			# 				rarity = famed
+			# 				rarity = illustrious
+			# 			}
+			# 		}
+			# 		add_artifact_modifier = artifact_monthly_piety_5_modifier
+			# 	}
+			# 	else = {
+			# 		add_artifact_modifier = artifact_monthly_piety_2_modifier
+			# 	}
+			# }
 
 			# Add a Majesty-related modifier based on the Quality of the artifact.
 			if = {

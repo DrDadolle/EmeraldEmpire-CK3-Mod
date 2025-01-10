@@ -8864,456 +8864,457 @@ fp1_yearly.0561 = {
 # by Ewan Cowhig Croft
 # 0571 - 0580
 ##################################################
+#L5R Disabled
+# scripted_trigger fp1_0571_suitable_vandal_child_available_trigger = {
+# 	# Is available for events.
+# 	is_available_ai_child = yes
+# 	# Child is old enough to have travelled that far.
+# 	age >= 10
+# 	# Must not be a quiet child.
+# 	childhood_quiet_child_trigger = no
+# }
 
-scripted_trigger fp1_0571_suitable_vandal_child_available_trigger = {
-	# Is available for events.
-	is_available_ai_child = yes
-	# Child is old enough to have travelled that far.
-	age >= 10
-	# Must not be a quiet child.
-	childhood_quiet_child_trigger = no
-}
+# scripted_trigger fp1_0571_suitable_annoyed_courtier_trigger = {
+# 	# Is available for events.
+# 	is_available_ai_adult = yes
+# 	# Likely to be annoyed at the vandalism.
+# 	NOR = {
+# 		has_trait = calm
+# 		has_trait = patient
+# 		has_trait = shy
+# 		has_trait = craven
+# 		has_trait = arbitrary
+# 		has_trait = fickle
+# 		has_trait = lazy
+# 		has_trait = trusting
+# 	}
+# }
 
-scripted_trigger fp1_0571_suitable_annoyed_courtier_trigger = {
-	# Is available for events.
-	is_available_ai_adult = yes
-	# Likely to be annoyed at the vandalism.
-	NOR = {
-		has_trait = calm
-		has_trait = patient
-		has_trait = shy
-		has_trait = craven
-		has_trait = arbitrary
-		has_trait = fickle
-		has_trait = lazy
-		has_trait = trusting
-	}
-}
+# scripted_trigger fp1_0571_suitable_vandal_site_trigger = {
+# 	tier = tier_county
+# 	fp1_county_has_stele_trigger = yes
+# 	squared_distance = {
+# 		target = root.capital_county
+# 		value <= squared_distance_small
+# 	}
+# }
 
-scripted_trigger fp1_0571_suitable_vandal_site_trigger = {
-	tier = tier_county
-	fp1_county_has_stele_trigger = yes
-	squared_distance = {
-		target = root.capital_county
-		value <= squared_distance_small
-	}
-}
-
+#L5R Disabled
 #	A runestone in your lands has been damaged by one of your children.
-fp1_yearly.0571 = {
-	type = character_event
-	title = fp1_yearly.0571.t
-	desc = fp1_yearly.0571.desc
-	theme = family
-	left_portrait = {
-		character = scope:courtier
-		animation = disapproval
-	}
-	right_portrait = {
-		character = scope:child
-		animation = shame
-	}
-	override_background = { reference = fp1_runestone }
+# fp1_yearly.0571 = {
+# 	type = character_event
+# 	title = fp1_yearly.0571.t
+# 	desc = fp1_yearly.0571.desc
+# 	theme = family
+# 	left_portrait = {
+# 		character = scope:courtier
+# 		animation = disapproval
+# 	}
+# 	right_portrait = {
+# 		character = scope:child
+# 		animation = shame
+# 	}
+# 	override_background = { reference = fp1_runestone }
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0571 }
-		is_landed = yes
-		# Filter to flavour-appropriate characters.
-		fp1_is_norse = yes
-		# Must have an appropriate runestone in your territory.
-		any_held_title = { fp1_0571_suitable_vandal_site_trigger = yes }
-		# A valid child.
-		any_child = { fp1_0571_suitable_vandal_child_available_trigger = yes }
-		# And a courtier who might not appreciate things.
-		any_courtier = { fp1_0571_suitable_annoyed_courtier_trigger = yes }
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0571 }
+# 		is_landed = yes
+# 		# Filter to flavour-appropriate characters.
+# 		fp1_is_norse = yes
+# 		# Must have an appropriate runestone in your territory.
+# 		any_held_title = { fp1_0571_suitable_vandal_site_trigger = yes }
+# 		# A valid child.
+# 		any_child = { fp1_0571_suitable_vandal_child_available_trigger = yes }
+# 		# And a courtier who might not appreciate things.
+# 		any_courtier = { fp1_0571_suitable_annoyed_courtier_trigger = yes }
 
-	}
+# 	}
 
-	weight_multiplier = {
-		base = 1
+# 	weight_multiplier = {
+# 		base = 1
 
-		# If you're setting a good example, kids are less likely to imitate.
-		modifier = {
-			add = 0.5
-			has_trait = just
-		}
-		# And the reverse.
-		modifier = {
-			add = -0.5
-			has_trait = arbitrary
-		}
-	}
+# 		# If you're setting a good example, kids are less likely to imitate.
+# 		modifier = {
+# 			add = 0.5
+# 			has_trait = just
+# 		}
+# 		# And the reverse.
+# 		modifier = {
+# 			add = -0.5
+# 			has_trait = arbitrary
+# 		}
+# 	}
 
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0571
-			days = 1825
-		}
-		# Select a runestone location.
-		random_held_title = {
-			limit = { fp1_0571_suitable_vandal_site_trigger = yes }
-			save_scope_as = vandal_site
-		}
-		# Grab a suitable child.
-		random_child = {
-			# Prefer rowdy or mean-spirited children.
-			limit = {
-				fp1_0541_valid_child_prankster_trigger = yes
-				OR = {
-					childhood_loud_child_trigger = yes
-					childhood_mean_child_trigger = yes
-				}
-			}
-			# Though otherwise any valid child is acceptable.
-			alternative_limit = { fp1_0571_suitable_vandal_child_available_trigger = yes }
-			save_scope_as = child
-		}
-		# And the courtier.
-		random_courtier = {
-			# Try to get someone who dislikes the child first.
-			limit = {
-				fp1_0571_suitable_annoyed_courtier_trigger = yes
-				opinion = {
-					target = scope:child
-					value <= neutral_opinion
-				}
-			}
-			# Otherwise, whoever is fine.
-			alternative_limit = { fp1_0571_suitable_annoyed_courtier_trigger = yes }
-			save_scope_as = courtier
-		}
-		# Quietly make the two potential rivals for later.
-		hidden_effect = {
-			if = {
-				limit = {
-					scope:child = {
-						can_set_relation_potential_rival_trigger = { CHARACTER = scope:courtier }
-					}
-				}
-				scope:child = { set_relation_potential_rival = scope:courtier }
-			}
-		}
-	}
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0571
+# 			days = 1825
+# 		}
+# 		# Select a runestone location.
+# 		random_held_title = {
+# 			limit = { fp1_0571_suitable_vandal_site_trigger = yes }
+# 			save_scope_as = vandal_site
+# 		}
+# 		# Grab a suitable child.
+# 		random_child = {
+# 			# Prefer rowdy or mean-spirited children.
+# 			limit = {
+# 				fp1_0541_valid_child_prankster_trigger = yes
+# 				OR = {
+# 					childhood_loud_child_trigger = yes
+# 					childhood_mean_child_trigger = yes
+# 				}
+# 			}
+# 			# Though otherwise any valid child is acceptable.
+# 			alternative_limit = { fp1_0571_suitable_vandal_child_available_trigger = yes }
+# 			save_scope_as = child
+# 		}
+# 		# And the courtier.
+# 		random_courtier = {
+# 			# Try to get someone who dislikes the child first.
+# 			limit = {
+# 				fp1_0571_suitable_annoyed_courtier_trigger = yes
+# 				opinion = {
+# 					target = scope:child
+# 					value <= neutral_opinion
+# 				}
+# 			}
+# 			# Otherwise, whoever is fine.
+# 			alternative_limit = { fp1_0571_suitable_annoyed_courtier_trigger = yes }
+# 			save_scope_as = courtier
+# 		}
+# 		# Quietly make the two potential rivals for later.
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					scope:child = {
+# 						can_set_relation_potential_rival_trigger = { CHARACTER = scope:courtier }
+# 					}
+# 				}
+# 				scope:child = { set_relation_potential_rival = scope:courtier }
+# 			}
+# 		}
+# 	}
 
-	# Look, you can't be defacing expensive monuments, 'kay?
-	option = {
-		name = fp1_yearly.0571.a
+# 	# Look, you can't be defacing expensive monuments, 'kay?
+# 	option = {
+# 		name = fp1_yearly.0571.a
 
-		# Diplomacy challenge to persuade the child.
-		duel = {
-			skill = diplomacy
-			target = scope:child
-			# Child sees how they've gone wrong.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 3.5
-					min = -49
-				}
-				desc = fp1_yearly.0571.tt_success
-				send_interface_toast = {
-					title = fp1_yearly.0571.tt_success
-					left_icon = scope:child
-					# If the child's personality can accept it, make them honourable.
-					scope:child = {
-						if = {
-							limit = {
-								number_of_personality_traits < personality_trait_standard
-								NOR = {
-									has_trait = arbitrary
-									has_trait = just
-								}
-							}
-							add_trait = just
-						}
-					}
-					# Otherwise, just give opinion.
-					reverse_add_opinion = {
-						target = scope:child
-						modifier = respect_opinion
-						opinion = 30
-					}
-				}
-			}
-			# Child doesn't understand what the issue even is.
-			50 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -3.5
-					min = -49
-				}
-				desc = fp1_yearly.0571.tt_failure
-				send_interface_toast = {
-					title = fp1_yearly.0571.tt_failure
-					left_icon = scope:child
-					# If the child's personality can accept it, make them arbitrary.
-					scope:child = {
-						if = {
-							limit = {
-								number_of_personality_traits < personality_trait_standard
-								NOT = { has_trait = just }
-							}
-							add_trait = arbitrary
-						}
-					}
-					# Otherwise, just give opinion.
-					reverse_add_opinion = {
-						target = scope:child
-						modifier = respect_opinion
-						opinion = -20
-					}
-				}
-			}
-		}
-		# Courtier is satisfied that something has been done.
-		reverse_add_opinion = {
-			target = scope:courtier
-			modifier = impressed_opinion
-			opinion = 30
-		}
-		#L5R Disabled
-		# The runestone is destroyed.
-		# scope:vandal_site = { fp1_remove_stele_effect = yes }
+# 		# Diplomacy challenge to persuade the child.
+# 		duel = {
+# 			skill = diplomacy
+# 			target = scope:child
+# 			# Child sees how they've gone wrong.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0571.tt_success
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0571.tt_success
+# 					left_icon = scope:child
+# 					# If the child's personality can accept it, make them honourable.
+# 					scope:child = {
+# 						if = {
+# 							limit = {
+# 								number_of_personality_traits < personality_trait_standard
+# 								NOR = {
+# 									has_trait = arbitrary
+# 									has_trait = just
+# 								}
+# 							}
+# 							add_trait = just
+# 						}
+# 					}
+# 					# Otherwise, just give opinion.
+# 					reverse_add_opinion = {
+# 						target = scope:child
+# 						modifier = respect_opinion
+# 						opinion = 30
+# 					}
+# 				}
+# 			}
+# 			# Child doesn't understand what the issue even is.
+# 			50 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -3.5
+# 					min = -49
+# 				}
+# 				desc = fp1_yearly.0571.tt_failure
+# 				send_interface_toast = {
+# 					title = fp1_yearly.0571.tt_failure
+# 					left_icon = scope:child
+# 					# If the child's personality can accept it, make them arbitrary.
+# 					scope:child = {
+# 						if = {
+# 							limit = {
+# 								number_of_personality_traits < personality_trait_standard
+# 								NOT = { has_trait = just }
+# 							}
+# 							add_trait = arbitrary
+# 						}
+# 					}
+# 					# Otherwise, just give opinion.
+# 					reverse_add_opinion = {
+# 						target = scope:child
+# 						modifier = respect_opinion
+# 						opinion = -20
+# 					}
+# 				}
+# 			}
+# 		}
+# 		# Courtier is satisfied that something has been done.
+# 		reverse_add_opinion = {
+# 			target = scope:courtier
+# 			modifier = impressed_opinion
+# 			opinion = 30
+# 		}
+# 		#L5R Disabled
+# 		# The runestone is destroyed.
+# 		# scope:vandal_site = { fp1_remove_stele_effect = yes }
 
-		stress_impact = {
-			trusting = medium_stress_impact_loss
-			vengeful = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.25
-				ai_greed = -0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = trusting
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = vengeful
-			}
-		}
-	}
+# 		stress_impact = {
+# 			trusting = medium_stress_impact_loss
+# 			vengeful = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.25
+# 				ai_greed = -0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = trusting
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = vengeful
+# 			}
+# 		}
+# 	}
 
-	# I'll be fining the cost of the runestone from your things.
-	option = {
-		name = fp1_yearly.0571.b
+# 	# I'll be fining the cost of the runestone from your things.
+# 	option = {
+# 		name = fp1_yearly.0571.b
 
-		# Gain opinion with the courtier.
-		reverse_add_opinion = {
-			target = scope:courtier
-			modifier = pleased_opinion
-			opinion = 30
-		}
-		# The runestone is repaired.
-		custom_tooltip = fp1_yearly.0571.b.tt
-		# Lose opinion with the child, and fine them gold.
-		scope:child = {
-			add_opinion = {
-				target = root
-				modifier = respect_opinion
-				opinion = -40
-			}
-			remove_short_term_gold = root.raise_stele_gold_cost
-		}
+# 		# Gain opinion with the courtier.
+# 		reverse_add_opinion = {
+# 			target = scope:courtier
+# 			modifier = pleased_opinion
+# 			opinion = 30
+# 		}
+# 		# The runestone is repaired.
+# 		custom_tooltip = fp1_yearly.0571.b.tt
+# 		# Lose opinion with the child, and fine them gold.
+# 		scope:child = {
+# 			add_opinion = {
+# 				target = root
+# 				modifier = respect_opinion
+# 				opinion = -40
+# 			}
+# 			remove_short_term_gold = root.raise_stele_gold_cost
+# 		}
 
-		stress_impact = {
-			vengeful = minor_stress_impact_loss
-			greedy = medium_stress_impact_loss
-			forgiving = minor_stress_impact_gain
-			generous = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 0.5
-				ai_vengefulness = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = vengeful
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = greedy
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = forgiving
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = generous
-			}
-		}
-	}
+# 		stress_impact = {
+# 			vengeful = minor_stress_impact_loss
+# 			greedy = medium_stress_impact_loss
+# 			forgiving = minor_stress_impact_gain
+# 			generous = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 0.5
+# 				ai_vengefulness = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = forgiving
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = generous
+# 			}
+# 		}
+# 	}
 
-	# Look, you can't be defacing expensive monuments, 'kay?
-	option = {
-		name = fp1_yearly.0571.b.2
+# 	# Look, you can't be defacing expensive monuments, 'kay?
+# 	option = {
+# 		name = fp1_yearly.0571.b.2
 
-		# Gain lots of opinion with your child.
-		reverse_add_opinion = {
-			target = scope:child
-			modifier = pleased_opinion
-			opinion = 70
-		}
-		# Lose some with your courtier.
-		reverse_add_opinion = {
-			target = scope:courtier
-			modifier = respect_opinion
-			opinion = -40
-		}
-		# The runestone is repaired.
-		custom_tooltip = fp1_yearly.0571.b.tt
-		remove_short_term_gold = root.raise_stele_gold_cost
-		# If your child is still growing, this may leave a mark.
-		scope:child = {
-			## Making them more arbitrary.
-			if = {
-				limit = {
-					# If they have room.
-					number_of_personality_traits < personality_trait_standard
-					# And don't already feel strongly either way.
-					NOR = {
-						has_trait = just
-						has_trait = arbitrary
-					}
-				}
-				add_trait = arbitrary
-			}
-			## And less attached to money.
-			if = {
-				limit = {
-					NOR = {
-						has_trait = profligate
-						has_trait = greedy
-					}
-				}
-				add_trait = profligate
-			}
-		}
+# 		# Gain lots of opinion with your child.
+# 		reverse_add_opinion = {
+# 			target = scope:child
+# 			modifier = pleased_opinion
+# 			opinion = 70
+# 		}
+# 		# Lose some with your courtier.
+# 		reverse_add_opinion = {
+# 			target = scope:courtier
+# 			modifier = respect_opinion
+# 			opinion = -40
+# 		}
+# 		# The runestone is repaired.
+# 		custom_tooltip = fp1_yearly.0571.b.tt
+# 		remove_short_term_gold = root.raise_stele_gold_cost
+# 		# If your child is still growing, this may leave a mark.
+# 		scope:child = {
+# 			## Making them more arbitrary.
+# 			if = {
+# 				limit = {
+# 					# If they have room.
+# 					number_of_personality_traits < personality_trait_standard
+# 					# And don't already feel strongly either way.
+# 					NOR = {
+# 						has_trait = just
+# 						has_trait = arbitrary
+# 					}
+# 				}
+# 				add_trait = arbitrary
+# 			}
+# 			## And less attached to money.
+# 			if = {
+# 				limit = {
+# 					NOR = {
+# 						has_trait = profligate
+# 						has_trait = greedy
+# 					}
+# 				}
+# 				add_trait = profligate
+# 			}
+# 		}
 
-		stress_impact = {
-			forgiving = minor_stress_impact_loss
-			generous = minor_stress_impact_loss
-			lazy = medium_stress_impact_loss
-			arbitrary = medium_stress_impact_loss
-			vengeful = minor_stress_impact_gain
-			greedy = medium_stress_impact_gain
-			diligent = medium_stress_impact_gain
-			just = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = -0.5
-				ai_honor = -0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = forgiving
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = generous
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = lazy
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = arbitrary
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = vengeful
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = greedy
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = diligent
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = just
-			}
-		}
-	}
+# 		stress_impact = {
+# 			forgiving = minor_stress_impact_loss
+# 			generous = minor_stress_impact_loss
+# 			lazy = medium_stress_impact_loss
+# 			arbitrary = medium_stress_impact_loss
+# 			vengeful = minor_stress_impact_gain
+# 			greedy = medium_stress_impact_gain
+# 			diligent = medium_stress_impact_gain
+# 			just = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = -0.5
+# 				ai_honor = -0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = forgiving
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = generous
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = diligent
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = just
+# 			}
+# 		}
+# 	}
 
-	# *Sigh* This isn't worth the bother.
-	option = {
-		name = fp1_yearly.0571.c
+# 	# *Sigh* This isn't worth the bother.
+# 	option = {
+# 		name = fp1_yearly.0571.c
 
-		# Gain lots of opinion with your child.
-		reverse_add_opinion = {
-			target = scope:child
-			modifier = pleased_opinion
-			opinion = 50
-		}
-		# Lose some with your courtier.
-		reverse_add_opinion = {
-			target = scope:courtier
-			modifier = respect_opinion
-			opinion = -30
-		}
-		#L5R Disabled
-		# Lose the runestone.
-		# scope:vandal_site = { fp1_remove_stele_effect = yes }
+# 		# Gain lots of opinion with your child.
+# 		reverse_add_opinion = {
+# 			target = scope:child
+# 			modifier = pleased_opinion
+# 			opinion = 50
+# 		}
+# 		# Lose some with your courtier.
+# 		reverse_add_opinion = {
+# 			target = scope:courtier
+# 			modifier = respect_opinion
+# 			opinion = -30
+# 		}
+# 		#L5R Disabled
+# 		# Lose the runestone.
+# 		# scope:vandal_site = { fp1_remove_stele_effect = yes }
 
-		stress_impact = {
-			forgiving = minor_stress_impact_loss
-			lazy = medium_stress_impact_loss
-			arbitrary = medium_stress_impact_loss
-			vengeful = minor_stress_impact_gain
-			diligent = medium_stress_impact_gain
-			just = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_energy = -0.5
-				ai_honor = -0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = forgiving
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = lazy
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = arbitrary
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = vengeful
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = diligent
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = just
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			forgiving = minor_stress_impact_loss
+# 			lazy = medium_stress_impact_loss
+# 			arbitrary = medium_stress_impact_loss
+# 			vengeful = minor_stress_impact_gain
+# 			diligent = medium_stress_impact_gain
+# 			just = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_energy = -0.5
+# 				ai_honor = -0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = forgiving
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = diligent
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = just
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # When I Grow Up

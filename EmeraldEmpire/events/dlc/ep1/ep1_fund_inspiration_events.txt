@@ -4218,13 +4218,13 @@ fund_inspiration.0051 = {
 
 		ai_chance = {
 			base = 0
-			modifier = {
+			if = {
+				limit = { faith_is_evil = yes  }
 				add = 200
-				faith_is_evil = yes
 			}
-			modifier = {
+			if = {
+				limit = { culture = { has_cultural_pillar = heritage_spider}  }
 				add = 1000
-				culture = { has_cultural_pillar = heritage_spider } 
 			}
 		}
 	}

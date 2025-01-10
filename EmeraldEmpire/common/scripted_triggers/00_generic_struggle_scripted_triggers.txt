@@ -134,7 +134,8 @@ catalyst_granted_powerful_diff_faith_vassal_religious_protection_preliminary_tri
 			vassal_contract_type = {
 				OR = {
 					this = vassal_contract:religious_rights
-					this = vassal_contract:jizya_special_rights
+					#L5R Disabled
+					# this = vassal_contract:jizya_special_rights
 				}
 			}
 			obligation_level_score >= 1
@@ -150,7 +151,8 @@ catalyst_revoked_powerful_diff_faith_vassal_religious_protection_preliminary_tri
 			vassal_contract_type = {
 				OR = {
 					this = vassal_contract:religious_rights
-					this = vassal_contract:jizya_special_rights
+					#L5R Disabled
+					# this = vassal_contract:jizya_special_rights
 				}
 			}
 			obligation_level_score >= 1

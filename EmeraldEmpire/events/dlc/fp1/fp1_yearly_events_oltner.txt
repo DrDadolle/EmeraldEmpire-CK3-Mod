@@ -1399,181 +1399,181 @@ scripted_effect court_berserkergang_effect = {
 # 	}
 # }
 
-fp1_yearly.2201 = {
-	hidden = yes
+# fp1_yearly.2201 = {
+# 	hidden = yes
 
-	immediate = {
-		if = {
-			limit = {
-				scope:potential_employer = scope:sc_victor
-			}
-			trigger_event = { id = fp1_yearly.2203 days = 1 }
-		}
-		else = {
-			trigger_event = { id = fp1_yearly.2204 days = 1 }
-		}
-	}
-}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				scope:potential_employer = scope:sc_victor
+# 			}
+# 			trigger_event = { id = fp1_yearly.2203 days = 1 }
+# 		}
+# 		else = {
+# 			trigger_event = { id = fp1_yearly.2204 days = 1 }
+# 		}
+# 	}
+# }
 
-#	Bout has invalidated, inform affected parties.
-fp1_yearly.2202 = {
-	hidden = yes
+# #	Bout has invalidated, inform affected parties.
+# fp1_yearly.2202 = {
+# 	hidden = yes
 
-	immediate = {
-		# Inform both parties that the duel has invalidated.
-		scope:potential_employer = {
-			send_interface_toast = {	
-				title = fp1_yearly.2200.trigger_failure
-				left_icon = scope:new_berserker
-			}
-		}
-	}
-}
+# 	immediate = {
+# 		# Inform both parties that the duel has invalidated.
+# 		scope:potential_employer = {
+# 			send_interface_toast = {	
+# 				title = fp1_yearly.2200.trigger_failure
+# 				left_icon = scope:new_berserker
+# 			}
+# 		}
+# 	}
+# }
 
-fp1_yearly.2203 = {
-	type = character_event
-	title = fp1_yearly.2203.t
-	desc = fp1_yearly.2203.desc
-	theme = battle
-	left_portrait = {
-		character = scope:new_berserker
-		animation = fear
-	}
-	override_background = { reference = market_tribal }
+# fp1_yearly.2203 = {
+# 	type = character_event
+# 	title = fp1_yearly.2203.t
+# 	desc = fp1_yearly.2203.desc
+# 	theme = battle
+# 	left_portrait = {
+# 		character = scope:new_berserker
+# 		animation = fear
+# 	}
+# 	override_background = { reference = market_tribal }
 
-	trigger = {
-		scope:new_berserker = {
-			is_alive = yes
-		}
-	}
+# 	trigger = {
+# 		scope:new_berserker = {
+# 			is_alive = yes
+# 		}
+# 	}
 
-	option = {
-		name = fp1_yearly.2203.a
+# 	option = {
+# 		name = fp1_yearly.2203.a
 		
-		add_dread = major_dread_gain
-		add_prestige = medium_prestige_gain
-		add_prowess_skill = 2
+# 		add_dread = major_dread_gain
+# 		add_prestige = medium_prestige_gain
+# 		add_prowess_skill = 2
 		
-		scope:new_berserker = {
-			death = {
-				death_reason = death_duel
-				killer = scope:potential_employer
-			}
-		}
+# 		scope:new_berserker = {
+# 			death = {
+# 				death_reason = death_duel
+# 				killer = scope:potential_employer
+# 			}
+# 		}
 
-		stress_impact = {
-			trusting = major_stress_impact_gain
-			forgiving = medium_stress_impact_gain
-			compassionate = major_stress_impact_gain
-			calm = medium_stress_impact_gain
-			content = medium_stress_impact_gain
-			just = medium_stress_impact_gain
-			humble = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 10
-			ai_value_modifier = {
-				ai_honor = -1
-			}
-			modifier = {
-				factor = 0
-				prowess < scope:new_berserker.prowess
-			}
-		}
-	}
+# 		stress_impact = {
+# 			trusting = major_stress_impact_gain
+# 			forgiving = medium_stress_impact_gain
+# 			compassionate = major_stress_impact_gain
+# 			calm = medium_stress_impact_gain
+# 			content = medium_stress_impact_gain
+# 			just = medium_stress_impact_gain
+# 			humble = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 10
+# 			ai_value_modifier = {
+# 				ai_honor = -1
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				prowess < scope:new_berserker.prowess
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = fp1_yearly.2203.b
+# 	option = {
+# 		name = fp1_yearly.2203.b
 
-		stress_impact = {
-			arrogant = major_stress_impact_gain
-			vengeful = major_stress_impact_gain
-			cynical = major_stress_impact_gain
-		}
+# 		stress_impact = {
+# 			arrogant = major_stress_impact_gain
+# 			vengeful = major_stress_impact_gain
+# 			cynical = major_stress_impact_gain
+# 		}
 		
-		add_prestige = medium_prestige_gain
-		add_prowess_skill = 2
-		add_courtier = scope:new_berserker
-		set_relation_potential_friend = scope:new_berserker
+# 		add_prestige = medium_prestige_gain
+# 		add_prowess_skill = 2
+# 		add_courtier = scope:new_berserker
+# 		set_relation_potential_friend = scope:new_berserker
 		
-		ai_chance = {
-			base = 100
-		}
-	}
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
 
-	option = {
-		name = fp1_yearly.2203.c
+# 	option = {
+# 		name = fp1_yearly.2203.c
 
-		stress_impact = {
-			arrogant = major_stress_impact_gain
-			vengeful = major_stress_impact_gain
-			trusting = major_stress_impact_gain
-		}
+# 		stress_impact = {
+# 			arrogant = major_stress_impact_gain
+# 			vengeful = major_stress_impact_gain
+# 			trusting = major_stress_impact_gain
+# 		}
 		
-		add_prestige = medium_prestige_gain
-		add_prowess_skill = 2
+# 		add_prestige = medium_prestige_gain
+# 		add_prowess_skill = 2
 		
-		ai_chance = {
-			base = 0
-		}
-	}
-}
+# 		ai_chance = {
+# 			base = 0
+# 		}
+# 	}
+# }
 
-fp1_yearly.2204 = {
-	type = character_event
-	title = fp1_yearly.2204.t
-	desc = fp1_yearly.2204.desc
-	theme = battle
-	left_portrait = {
-		character = scope:new_berserker
-		animation = worry
-	}
-	override_background = { reference = market_tribal }
+# fp1_yearly.2204 = {
+# 	type = character_event
+# 	title = fp1_yearly.2204.t
+# 	desc = fp1_yearly.2204.desc
+# 	theme = battle
+# 	left_portrait = {
+# 		character = scope:new_berserker
+# 		animation = worry
+# 	}
+# 	override_background = { reference = market_tribal }
 
-	trigger = {
-		scope:new_berserker = {
-			is_alive = yes
-		}
-	}
+# 	trigger = {
+# 		scope:new_berserker = {
+# 			is_alive = yes
+# 		}
+# 	}
 
-	option = {
-		name = fp1_yearly.2204.a
+# 	option = {
+# 		name = fp1_yearly.2204.a
 		
-		add_prestige = medium_prestige_loss
-		add_courtier = scope:new_berserker
-		set_relation_friend = { reason = friend_rousing_fight target = scope:new_berserker }
+# 		add_prestige = medium_prestige_loss
+# 		add_courtier = scope:new_berserker
+# 		set_relation_friend = { reason = friend_rousing_fight target = scope:new_berserker }
 
-		stress_impact = {
-			arrogant = major_stress_impact_gain
-			vengeful = major_stress_impact_gain
-			cynical = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 1
-				ai_honor = 1
-			}
-		}
-	}
+# 		stress_impact = {
+# 			arrogant = major_stress_impact_gain
+# 			vengeful = major_stress_impact_gain
+# 			cynical = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 1
+# 				ai_honor = 1
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = fp1_yearly.2204.b
+# 	option = {
+# 		name = fp1_yearly.2204.b
 
-		stress_impact = {
-			trusting = major_stress_impact_gain
-			forgiving = major_stress_impact_gain
-			humble = major_stress_impact_gain
-			compassionate = medium_stress_impact_gain
-		}
+# 		stress_impact = {
+# 			trusting = major_stress_impact_gain
+# 			forgiving = major_stress_impact_gain
+# 			humble = major_stress_impact_gain
+# 			compassionate = medium_stress_impact_gain
+# 		}
 		
-		add_prestige = medium_prestige_loss
+# 		add_prestige = medium_prestige_loss
 		
-		ai_chance = {
-			base = 0
-		}
-	}
-}
+# 		ai_chance = {
+# 			base = 0
+# 		}
+# 	}
+# }
 
 # Convince a group of soldiers to join you
 fp1_yearly.2300 = {
@@ -2362,301 +2362,301 @@ fp1_yearly.2400 = {
 # 	}
 # }
 
-scripted_effect berserker_killing_spree_effect = {
-	random_list = {
-		10 = {
-			death = {
-				death_reason = death_head_ripped_off
-				killer = root
-			}
-		}
-		10 = {
-			death = {
-				death_reason = death_cloven_in_half
-				killer = root
-			}
-		}
-		10 = {
-			death = {
-				death_reason = death_viciously_dismembered
-				killer = root
-			}
-		}
-		10 = {
-			death = {
-				death_reason = death_ripped_apart_limb_by_limb
-				killer = root
-			}
-		}
-		10 = {
-			death = {
-				death_reason = death_chopped_to_pieces
-				killer = root
-			}
-		}
-		10 = {
-			death = {
-				death_reason = death_heart_ripped_out
-				killer = root
-			}
-		}
-		1 = {
-			trigger = {
-				NOT = {
-					has_trait = brave
-				}
-			}
-			death = {
-				death_reason = death_fear
-				killer = root
-			}
-		}
-		10 = {
-			death = {
-				death_reason = death_skull_cracked_open
-				killer = root
-			}
-		}
-		10 = {
-			death = {
-				death_reason = death_strangled_with_own_intestines
-				killer = root
-			}
-		}
-	}
-}
+# scripted_effect berserker_killing_spree_effect = {
+# 	random_list = {
+# 		10 = {
+# 			death = {
+# 				death_reason = death_head_ripped_off
+# 				killer = root
+# 			}
+# 		}
+# 		10 = {
+# 			death = {
+# 				death_reason = death_cloven_in_half
+# 				killer = root
+# 			}
+# 		}
+# 		10 = {
+# 			death = {
+# 				death_reason = death_viciously_dismembered
+# 				killer = root
+# 			}
+# 		}
+# 		10 = {
+# 			death = {
+# 				death_reason = death_ripped_apart_limb_by_limb
+# 				killer = root
+# 			}
+# 		}
+# 		10 = {
+# 			death = {
+# 				death_reason = death_chopped_to_pieces
+# 				killer = root
+# 			}
+# 		}
+# 		10 = {
+# 			death = {
+# 				death_reason = death_heart_ripped_out
+# 				killer = root
+# 			}
+# 		}
+# 		1 = {
+# 			trigger = {
+# 				NOT = {
+# 					has_trait = brave
+# 				}
+# 			}
+# 			death = {
+# 				death_reason = death_fear
+# 				killer = root
+# 			}
+# 		}
+# 		10 = {
+# 			death = {
+# 				death_reason = death_skull_cracked_open
+# 				killer = root
+# 			}
+# 		}
+# 		10 = {
+# 			death = {
+# 				death_reason = death_strangled_with_own_intestines
+# 				killer = root
+# 			}
+# 		}
+# 	}
+# }
 
-fp1_yearly.2601 = {
-	type = character_event
-	title = fp1_yearly.2600.t
-	desc = {
-		desc = fp1_yearly.2601.desc
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					exists = var:success_no_one_harmed
-				}
-				desc = fp1_yearly.2601.success_no_one_harmed
-			}
-			triggered_desc = {
-				trigger = {
-					exists = var:success_harm_close_one
-				}
-				desc = fp1_yearly.2601.success_harm_close_one
-			}
-			triggered_desc = {
-				trigger = {
-					exists = var:success_kill_berserker
-				}
-				desc = fp1_yearly.2601.success_kill_berserker
-			}
-			triggered_desc = {
-				trigger = {
-					exists = var:success_kill_everyone
-				}
-				desc = fp1_yearly.2601.success_kill_everyone
-			}
-			triggered_desc = {
-				trigger = {
-					exists = var:fail_fall_asleep
-				}
-				desc = fp1_yearly.2601.fail_fall_asleep
-			}
-		}
-	}
-	theme = war
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = {
-				exists = var:success_no_one_harmed
-			}
-			animation = rage
-		}
-		triggered_animation = {
-			trigger = {
-				OR = {
-					exists = var:success_harm_close_one
-					exists = var:success_kill_berserker
-					exists = var:success_kill_everyone
-				}
-			}
-			animation = shock
-		}
-		triggered_animation = {
-			trigger = {
-				exists = var:fail_fall_asleep
-			}
-			animation = personality_irrational
-		}
-	}
-	right_portrait = {
-		character = scope:harmed_victim
-		triggered_animation = {
-			trigger = {
-				root = {
-					exists = var:success_no_one_harmed
-				}
-			}
-			animation = happiness
-		}
-		triggered_animation = {
-			trigger = {
-				root = {
-					OR = {
-						exists = var:success_harm_close_one
-						exists = var:success_kill_berserker
-						exists = var:success_kill_everyone
-					}
-				}
-			}
-			animation = fear
-		}
-		triggered_animation = {
-			trigger = {
-				root = {
-					exists = var:fail_fall_asleep
-				}
-			}
-			animation = disapproval
-		}
-	}
-	override_background = { reference = fp1_tribal_temple }
+# fp1_yearly.2601 = {
+# 	type = character_event
+# 	title = fp1_yearly.2600.t
+# 	desc = {
+# 		desc = fp1_yearly.2601.desc
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = {
+# 					exists = var:success_no_one_harmed
+# 				}
+# 				desc = fp1_yearly.2601.success_no_one_harmed
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					exists = var:success_harm_close_one
+# 				}
+# 				desc = fp1_yearly.2601.success_harm_close_one
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					exists = var:success_kill_berserker
+# 				}
+# 				desc = fp1_yearly.2601.success_kill_berserker
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					exists = var:success_kill_everyone
+# 				}
+# 				desc = fp1_yearly.2601.success_kill_everyone
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					exists = var:fail_fall_asleep
+# 				}
+# 				desc = fp1_yearly.2601.fail_fall_asleep
+# 			}
+# 		}
+# 	}
+# 	theme = war
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = {
+# 				exists = var:success_no_one_harmed
+# 			}
+# 			animation = rage
+# 		}
+# 		triggered_animation = {
+# 			trigger = {
+# 				OR = {
+# 					exists = var:success_harm_close_one
+# 					exists = var:success_kill_berserker
+# 					exists = var:success_kill_everyone
+# 				}
+# 			}
+# 			animation = shock
+# 		}
+# 		triggered_animation = {
+# 			trigger = {
+# 				exists = var:fail_fall_asleep
+# 			}
+# 			animation = personality_irrational
+# 		}
+# 	}
+# 	right_portrait = {
+# 		character = scope:harmed_victim
+# 		triggered_animation = {
+# 			trigger = {
+# 				root = {
+# 					exists = var:success_no_one_harmed
+# 				}
+# 			}
+# 			animation = happiness
+# 		}
+# 		triggered_animation = {
+# 			trigger = {
+# 				root = {
+# 					OR = {
+# 						exists = var:success_harm_close_one
+# 						exists = var:success_kill_berserker
+# 						exists = var:success_kill_everyone
+# 					}
+# 				}
+# 			}
+# 			animation = fear
+# 		}
+# 		triggered_animation = {
+# 			trigger = {
+# 				root = {
+# 					exists = var:fail_fall_asleep
+# 				}
+# 			}
+# 			animation = disapproval
+# 		}
+# 	}
+# 	override_background = { reference = fp1_tribal_temple }
 
-	trigger = {
+# 	trigger = {
 		
-	}
+# 	}
 
-	immediate = {
-		scope:berserker_teacher = {
-			save_scope_as = harmed_victim
-		}
-		if = {
-			limit = {
-				exists = var:success_no_one_harmed
-			}
-			add_trait = berserker
-		}
-		else_if = {
-			limit = {
-				exists = var:success_harm_close_one
-			}
-			random_courtier = {
-				limit = {
-					is_of_major_interest_to_root_trigger = yes
-					is_ai = yes
-					age > 12
-					NOT = {
-						this = scope:berserker_teacher
-					}
-				}
-				increase_wounds_effect = { REASON = duel }
-				add_opinion = {
-					modifier = cruelty_opinion
-					target = root
-					opinion = -20
-				}
-				save_scope_as = harmed_victim
-			}
-			add_trait = berserker
-			add_dread = minor_dread_gain
+# 	immediate = {
+# 		scope:berserker_teacher = {
+# 			save_scope_as = harmed_victim
+# 		}
+# 		if = {
+# 			limit = {
+# 				exists = var:success_no_one_harmed
+# 			}
+# 			add_trait = berserker
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				exists = var:success_harm_close_one
+# 			}
+# 			random_courtier = {
+# 				limit = {
+# 					is_of_major_interest_to_root_trigger = yes
+# 					is_ai = yes
+# 					age > 12
+# 					NOT = {
+# 						this = scope:berserker_teacher
+# 					}
+# 				}
+# 				increase_wounds_effect = { REASON = duel }
+# 				add_opinion = {
+# 					modifier = cruelty_opinion
+# 					target = root
+# 					opinion = -20
+# 				}
+# 				save_scope_as = harmed_victim
+# 			}
+# 			add_trait = berserker
+# 			add_dread = minor_dread_gain
 		
-			create_character_memory = {
-				type = hurt_someone_close_to_me
-				participants = { close_relation = scope:harmed_victim }
-			}
-		}
-		else_if = {
-			limit = {
-				exists = var:success_kill_berserker
-			}
-			scope:berserker_teacher = {
-				berserker_killing_spree_effect = yes
-			}
-			add_trait = berserker
-			add_dread = minor_dread_gain
+# 			create_character_memory = {
+# 				type = hurt_someone_close_to_me
+# 				participants = { close_relation = scope:harmed_victim }
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				exists = var:success_kill_berserker
+# 			}
+# 			scope:berserker_teacher = {
+# 				berserker_killing_spree_effect = yes
+# 			}
+# 			add_trait = berserker
+# 			add_dread = minor_dread_gain
 		
-			create_character_memory = {
-				type = hurt_someone_close_to_me
-				participants = { close_relation = scope:berserker_teacher }
-			}
-		}
-		else_if = {
-			limit = {
-				exists = var:success_kill_everyone
-			}
-			every_courtier = {
-				limit = {
-					is_ai = yes
-				}
-				berserker_killing_spree_effect = yes
-			}
-			add_trait = berserker
-			add_dread = 100
+# 			create_character_memory = {
+# 				type = hurt_someone_close_to_me
+# 				participants = { close_relation = scope:berserker_teacher }
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				exists = var:success_kill_everyone
+# 			}
+# 			every_courtier = {
+# 				limit = {
+# 					is_ai = yes
+# 				}
+# 				berserker_killing_spree_effect = yes
+# 			}
+# 			add_trait = berserker
+# 			add_dread = 100
 		
-			create_character_memory = {
-				type = killed_everyone
-			}
-		}
-	}
+# 			create_character_memory = {
+# 				type = killed_everyone
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = fp1_yearly.2601.a
+# 	option = {
+# 		name = fp1_yearly.2601.a
 		
-		trigger = {
-			exists = var:success_no_one_harmed
-		}
+# 		trigger = {
+# 			exists = var:success_no_one_harmed
+# 		}
 		
-		ai_chance = {
-			base = 100
-		}
-	}
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
 
-	option = {
-		name = fp1_yearly.2601.b
+# 	option = {
+# 		name = fp1_yearly.2601.b
 		
-		trigger = {
-			OR = {
-				exists = var:success_harm_close_one
-				exists = var:success_kill_berserker
-				exists = var:success_kill_everyone
-			}
-		}
+# 		trigger = {
+# 			OR = {
+# 				exists = var:success_harm_close_one
+# 				exists = var:success_kill_berserker
+# 				exists = var:success_kill_everyone
+# 			}
+# 		}
 		
-		if = {
-			limit = {
-				NOT = {
-					has_trait = sadistic
-				}
-			}
-			add_stress = massive_stress_impact_gain
-		}
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					has_trait = sadistic
+# 				}
+# 			}
+# 			add_stress = massive_stress_impact_gain
+# 		}
 		
-		ai_chance = {
-			base = 100
-		}
-	}
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
 
-	option = {
-		name = fp1_yearly.2601.c
+# 	option = {
+# 		name = fp1_yearly.2601.c
 		
-		trigger = {
-			exists = var:fail_fall_asleep
-		}
+# 		trigger = {
+# 			exists = var:fail_fall_asleep
+# 		}
 		
-		add_prestige = minor_prestige_loss
-		add_stress = minor_stress_loss
+# 		add_prestige = minor_prestige_loss
+# 		add_stress = minor_stress_loss
 
-		ai_chance = {
-			base = 100
-		}
-	}
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
 	
-	after = {
-		remove_variable = success_no_one_harmed
-		remove_variable = success_harm_close_one
-		remove_variable = success_kill_berserker
-		remove_variable = success_kill_everyone
-		remove_variable = fail_fall_asleep
-	}
-}
+# 	after = {
+# 		remove_variable = success_no_one_harmed
+# 		remove_variable = success_harm_close_one
+# 		remove_variable = success_kill_berserker
+# 		remove_variable = success_kill_everyone
+# 		remove_variable = fail_fall_asleep
+# 	}
+# }

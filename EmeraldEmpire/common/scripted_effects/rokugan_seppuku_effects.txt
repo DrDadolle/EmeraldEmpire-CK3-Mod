@@ -60,8 +60,6 @@ seppuku_effect = {
 	}
 
 	if = {
-		name = rokugan_seppuku_decision_effect.0002.a1
-
 		limit = {
 			list_size = {
 				name = supporters

@@ -190,7 +190,8 @@ artifact_armor_type_mail_weight_value = {
 	if = {
 		limit = {
 			current_date >= 1100.1.1 #Chainmail arrives in India during 12th century
-			culture_has_south_asian_heritage_pillar_trigger = yes
+			#L5R Disabled
+			# culture_has_south_asian_heritage_pillar_trigger = yes
 		}
 		add = 10
 	}
@@ -211,13 +212,14 @@ artifact_armor_type_plate_weight_value = {
 		}
 		add = 10
 	}
-	if = {
-		limit = {
-			#Mostly used in Europe (at least initially)
-			culture_has_european_heritage_pillar_trigger = yes
-		}
-		multiply = 2
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		#Mostly used in Europe (at least initially)
+	# 		culture_has_european_heritage_pillar_trigger = yes
+	# 	}
+	# 	multiply = 2
+	# }
 }
 
 artifact_armor_type_scale_weight_value = {
@@ -251,8 +253,10 @@ artifact_armor_type_lamellar_weight_value = {
 		#More common in the Middle East and Asia
 		limit = {
 			OR = {
-				culture_has_mena_heritage_pillar_trigger = yes
-				culture_has_asian_heritage_pillar_trigger = yes
+				#L5R Modified
+				# culture_has_mena_heritage_pillar_trigger = yes
+				# culture_has_asian_heritage_pillar_trigger = yes
+				culture = { portrait_rokugani_clothing_contents_trigger = yes }
 			}
 		}
 		add = 30
@@ -265,11 +269,11 @@ artifact_armor_type_laminar_weight_value = {
 
 		limit = {
 			OR = {
-				culture_has_asian_heritage_pillar_trigger = yes
 				#L5R Modified
+				# culture_has_asian_heritage_pillar_trigger = yes
 				# culture = { has_cultural_pillar = heritage_ugro_permian }
 				culture = { portrait_rokugani_clothing_contents_trigger = yes }
-				culture_has_mena_heritage_pillar_trigger = yes
+				# culture_has_mena_heritage_pillar_trigger = yes
 			}
 		}
 		add = 30
@@ -279,26 +283,29 @@ artifact_armor_type_brigandine_weight_value = {
 	value = 0
 	if = {
 		limit = {
-			culture_has_mena_heritage_pillar_trigger = yes
-			culture_has_asian_heritage_pillar_trigger = yes
+			#L5R Modified
+			# culture_has_mena_heritage_pillar_trigger = yes
+			# culture_has_asian_heritage_pillar_trigger = yes
+			culture = { portrait_rokugani_clothing_contents_trigger = yes }
 		}
 		add = 30
 	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					current_date >= 1240.1.1 #Reached eastern Europe after the Mongol invasion
-					culture_has_east_european_heritage_pillar_trigger = yes
-				}
-				AND = {
-					current_date >= 1270.1.1 #Reached the rest of Europe some centuries later
-					culture_has_european_heritage_pillar_trigger = yes
-				}
-			}
-		}
-		add = 10
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			AND = {
+	# 				current_date >= 1240.1.1 #Reached eastern Europe after the Mongol invasion
+	# 				culture_has_east_european_heritage_pillar_trigger = yes
+	# 			}
+	# 			AND = {
+	# 				current_date >= 1270.1.1 #Reached the rest of Europe some centuries later
+	# 				culture_has_european_heritage_pillar_trigger = yes
+	# 			}
+	# 		}
+	# 	}
+	# 	add = 10
+	# }
 }
 
 # Used to set quality and wealth for banners found after a battle

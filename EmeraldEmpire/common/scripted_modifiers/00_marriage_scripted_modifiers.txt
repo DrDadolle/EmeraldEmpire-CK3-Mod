@@ -1859,11 +1859,12 @@
 		}
 	}
 
-	modifier = { # This could technically go in piety, but since it is tied to the struggle, it goes here
-		add = 25
-		desc = STRUGGLE_MARRIAGE_ACCEPTANCE_USING_PIETY_AS_CURRENCY
-		scope:piety_cost_reduction ?= yes
-	}
+	#L5R Disabled
+	# modifier = { # This could technically go in piety, but since it is tied to the struggle, it goes here
+	# 	add = 25
+	# 	desc = STRUGGLE_MARRIAGE_ACCEPTANCE_USING_PIETY_AS_CURRENCY
+	# 	scope:piety_cost_reduction ?= yes
+	# }
 
 	modifier = {
 		add = 25

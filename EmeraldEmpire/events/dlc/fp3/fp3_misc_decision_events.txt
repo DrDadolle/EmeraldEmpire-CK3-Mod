@@ -13,122 +13,124 @@
 # Request Invasion
 # By Hugo Cortell
 ###################################
-fp3_misc_decisions.0005 = {
-	hidden = yes
+#L5R Disabled
+# fp3_misc_decisions.0005 = {
+# 	hidden = yes
 
-	immediate = {
-		random_character_war = { # We need to locate the war we just created, since we can't save it on creation
-			limit = {
-				using_cb = fp3_turkic_invasion_cb
-				primary_attacker = scope:secondary_recipient # root
-				primary_defender = scope:recipient
-			}
-			add_attacker = scope:actor
-		}
-	}
-}
-fp3_misc_decisions.0006 = {
-	hidden = yes
+# 	immediate = {
+# 		random_character_war = { # We need to locate the war we just created, since we can't save it on creation
+# 			limit = {
+# 				using_cb = fp3_turkic_invasion_cb
+# 				primary_attacker = scope:secondary_recipient # root
+# 				primary_defender = scope:recipient
+# 			}
+# 			add_attacker = scope:actor
+# 		}
+# 	}
+# }
+# fp3_misc_decisions.0006 = {
+# 	hidden = yes
 
-	immediate = {
-		random_character_war = { # We need to locate the war we just created, since we can't save it on creation
-			limit = {
-				using_cb = fp3_turkic_invasion_cb
-				primary_attacker = scope:secondary_recipient # root
-				primary_defender = scope:recipient
-			}
-			save_scope_as = turkic_war
-		}
-		spawn_army = {
-			men_at_arms = {
-				type = horse_archers
-				stacks = fp3_request_invasion_troop_value_bonus_troops
-			}
-			men_at_arms = {
-				type = light_horsemen
-				stacks = fp3_request_invasion_troop_value_bonus_troops
-			}
-			levies = fp3_request_invasion_troop_value_bonus_levy_troops
-			location = capital_province
-			uses_supply = yes
-			war = scope:turkic_war
-			inheritable = no
-			name = turkic_tribal_event_troops
-		}
-	}
-}
+# 	immediate = {
+# 		random_character_war = { # We need to locate the war we just created, since we can't save it on creation
+# 			limit = {
+# 				using_cb = fp3_turkic_invasion_cb
+# 				primary_attacker = scope:secondary_recipient # root
+# 				primary_defender = scope:recipient
+# 			}
+# 			save_scope_as = turkic_war
+# 		}
+# 		spawn_army = {
+# 			men_at_arms = {
+# 				type = horse_archers
+# 				stacks = fp3_request_invasion_troop_value_bonus_troops
+# 			}
+# 			men_at_arms = {
+# 				type = light_horsemen
+# 				stacks = fp3_request_invasion_troop_value_bonus_troops
+# 			}
+# 			levies = fp3_request_invasion_troop_value_bonus_levy_troops
+# 			location = capital_province
+# 			uses_supply = yes
+# 			war = scope:turkic_war
+# 			inheritable = no
+# 			name = turkic_tribal_event_troops
+# 		}
+# 	}
+# }
 
 # Demand Submission Letter Events
-fp3_misc_decisions.0010 = {
-	type = letter_event
-	opening = fp3_misc_decisions.0010.opening
-	desc = {
-		desc = fp3_misc_decisions.0010.desc_intro
-		# If the Persian Struggle is still ongoing, comment on that
-		# triggered_desc = {
-		# 	trigger = {
-		# 		exists = struggle:persian_struggle
-		# 		scope:actor ?= title:d_sunni.holder
-		# 	}
-		# 	desc = fp3_misc_decisions.0010.desc_struggle
-		# }
-	}
-	sender = scope:recipient
+# fp3_misc_decisions.0010 = {
+# 	type = letter_event
+# 	opening = fp3_misc_decisions.0010.opening
+# 	desc = {
+# 		desc = fp3_misc_decisions.0010.desc_intro
+# 		# If the Persian Struggle is still ongoing, comment on that
+# 		# triggered_desc = {
+# 		# 	trigger = {
+# 		# 		exists = struggle:persian_struggle
+# 		# 		scope:actor ?= title:d_sunni.holder
+# 		# 	}
+# 		# 	desc = fp3_misc_decisions.0010.desc_struggle
+# 		# }
+# 	}
+# 	sender = scope:recipient
 
-	immediate = {
-		show_as_tooltip = {
-			if = {
-				limit = { scope:piety_cost_reduction ?= yes }
-				add_piety = massive_piety_loss
-			}
-			add_hook = {
-				target = scope:recipient
-				type = caliphal_submission_hook
-			}
-			# Remove "rejected my authority" negative opinion, if valid
-			if = {
-				limit = {
-					has_opinion_modifier = {
-						modifier = fp3_rejected_my_authority_opinion
-						target = scope:recipient
-					}
-				}
-				remove_opinion = {
-					modifier = fp3_rejected_my_authority_opinion
-					target = scope:recipient
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		show_as_tooltip = {
+# 			#L5R Disabled
+# 			# if = {
+# 			# 	limit = { scope:piety_cost_reduction ?= yes }
+# 			# 	add_piety = massive_piety_loss
+# 			# }
+# 			add_hook = {
+# 				target = scope:recipient
+# 				type = caliphal_submission_hook
+# 			}
+# 			# Remove "rejected my authority" negative opinion, if valid
+# 			if = {
+# 				limit = {
+# 					has_opinion_modifier = {
+# 						modifier = fp3_rejected_my_authority_opinion
+# 						target = scope:recipient
+# 					}
+# 				}
+# 				remove_opinion = {
+# 					modifier = fp3_rejected_my_authority_opinion
+# 					target = scope:recipient
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = fp3_misc_decisions.0010.a
-	}
-}
+# 	option = {
+# 		name = fp3_misc_decisions.0010.a
+# 	}
+# }
 
-fp3_misc_decisions.0011 = {
-	type = letter_event
-	opening = fp3_misc_decisions.0010.opening
-	desc = fp3_misc_decisions.0011.desc
-	sender = scope:recipient
+# fp3_misc_decisions.0011 = {
+# 	type = letter_event
+# 	opening = fp3_misc_decisions.0010.opening
+# 	desc = fp3_misc_decisions.0011.desc
+# 	sender = scope:recipient
 
-	immediate = {
-		show_as_tooltip = {
-			scope:recipient = {
-				add_piety = medium_piety_loss
-				reverse_add_opinion = {
-					target = scope:actor
-					modifier = fp3_rejected_my_authority_opinion
-					years = 30
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		show_as_tooltip = {
+# 			scope:recipient = {
+# 				add_piety = medium_piety_loss
+# 				reverse_add_opinion = {
+# 					target = scope:actor
+# 					modifier = fp3_rejected_my_authority_opinion
+# 					years = 30
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = fp3_misc_decisions.0011.a
-	}
-}
+# 	option = {
+# 		name = fp3_misc_decisions.0011.a
+# 	}
+# }
 
 # Embrace Zoroastrianism faith selection event
 # fp3_misc_decisions.0015 = {
@@ -2743,58 +2745,58 @@ fp3_misc_decisions.0032 = {
 # by Joe Parkin
 # 0051-0060
 ##################################################
+#L5R Disabled
+# fp3_misc_decisions.0051 = { # Adopt Clan Government through House
+# 	type = character_event
+# 	title = fp3_misc_decisions.0051.t
+# 	desc = fp3_misc_decisions.0051.desc
+# 	theme = dynasty
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_rational
+# 	}
+# 	lower_right_portrait = house.house_head
 
-fp3_misc_decisions.0051 = { # Adopt Clan Government through House
-	type = character_event
-	title = fp3_misc_decisions.0051.t
-	desc = fp3_misc_decisions.0051.desc
-	theme = dynasty
-	left_portrait = {
-		character = root
-		animation = personality_rational
-	}
-	lower_right_portrait = house.house_head
+# 	immediate = {
+# 		change_government = clan_government
+# 		# Increase unity, uses this effect since both chars are not clan when script is evaluated
+# 		house.house_head = {
+# 			apply_clan_unity_interaction_effect = {
+# 				CHARACTER = root
+# 				TARGET = root.house.house_head
+# 				DESC = clan_unity_adopt_clan.desc
+# 				VALUE = medium_unity_gain
+# 				VALUE_REVERSED = no
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			house.house_head = {
+# 				send_interface_toast = {
+# 					title = fp3_become_clan_government_decision_toast
+# 					left_icon = root
+# 					right_icon = house.house_head
+# 					show_as_tooltip = {
+# 						root = {
+# 							# Change government type
+# 							change_government = clan_government
+# 							# Increase unity, uses this effect since both chars are not clan when script is evaluated
+# 							house.house_head = {
+# 								apply_clan_unity_interaction_effect = {
+# 									CHARACTER = root
+# 									TARGET = root.house.house_head
+# 									DESC = clan_unity_adopt_clan.desc
+# 									VALUE = medium_unity_gain
+# 									VALUE_REVERSED = no
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	immediate = {
-		change_government = clan_government
-		# Increase unity, uses this effect since both chars are not clan when script is evaluated
-		house.house_head = {
-			apply_clan_unity_interaction_effect = {
-				CHARACTER = root
-				TARGET = root.house.house_head
-				DESC = clan_unity_adopt_clan.desc
-				VALUE = medium_unity_gain
-				VALUE_REVERSED = no
-			}
-		}
-		hidden_effect = {
-			house.house_head = {
-				send_interface_toast = {
-					title = fp3_become_clan_government_decision_toast
-					left_icon = root
-					right_icon = house.house_head
-					show_as_tooltip = {
-						root = {
-							# Change government type
-							change_government = clan_government
-							# Increase unity, uses this effect since both chars are not clan when script is evaluated
-							house.house_head = {
-								apply_clan_unity_interaction_effect = {
-									CHARACTER = root
-									TARGET = root.house.house_head
-									DESC = clan_unity_adopt_clan.desc
-									VALUE = medium_unity_gain
-									VALUE_REVERSED = no
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	option = {
-		name = fp3_misc_decisions.0051.a
-	}
-}
+# 	option = {
+# 		name = fp3_misc_decisions.0051.a
+# 	}
+# }

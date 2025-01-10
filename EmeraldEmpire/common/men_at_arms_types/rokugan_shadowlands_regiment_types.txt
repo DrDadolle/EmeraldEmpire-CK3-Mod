@@ -120,12 +120,14 @@ giant_spiders = {
 	low_maintenance_cost = { gold = 0.7 }
 	high_maintenance_cost = { gold = 2.1 }
 	provision_cost = @provisions_cost_cavalry_expensive
-	can_recruit = {
-			# Is evil
-			is_shadowlands_evil = yes
-			## special innovations
-			culture = { has_innovation = innovation_giant_spiders_warfare }
-		}	
+	
+	# Linked to the special innovation
+	# can_recruit = {
+	# 		# Is evil
+	# 		is_shadowlands_evil = yes
+	# 		## special innovations
+	# 		culture = { has_innovation = innovation_giant_spiders_warfare }
+	# 	}	
 
 	
 	stack = 5

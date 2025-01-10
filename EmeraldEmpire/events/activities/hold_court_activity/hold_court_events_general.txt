@@ -11847,23 +11847,24 @@ hold_court.6230 = {
 		}
 	}
 
+	#L5R Disabled
 	#Option D: Ganesh leads them
-	option = {
-		name = hold_court.6230.d
-		trigger = {
-			faith.religion = religion:hinduism_religion
-		}
-		add_piety = major_piety_gain
-		stress_impact = {
-			cynical = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_zeal = 1
-			}
-		}
-	}
+	# option = {
+	# 	name = hold_court.6230.d
+	# 	trigger = {
+	# 		faith.religion = religion:hinduism_religion
+	# 	}
+	# 	add_piety = major_piety_gain
+	# 	stress_impact = {
+	# 		cynical = major_stress_impact_gain
+	# 	}
+	# 	ai_chance = {
+	# 		base = 100
+	# 		ai_value_modifier = {
+	# 			ai_zeal = 1
+	# 		}
+	# 	}
+	# }
 
 	#Option E: nope
 	option = {
@@ -12994,25 +12995,26 @@ hold_court.8020 = {
 			court_event_character_flag_effect = yes
 		}
 		hidden_effect = {
-			if = {
-				limit = { religion = religion:christianity_religion }
-				create_artifact_pedestal_reliquary_christian_effect = { OWNER = scope:bishop }
-			}
-			else_if = {
-				limit = { religion = religion:islam_religion }
-				create_artifact_pedestal_reliquary_islam_effect = { OWNER = scope:bishop }
-			}
-			else_if = {
-				limit = { religion = religion:buddhism_religion }
-				create_artifact_pedestal_reliquary_buddhism_effect = { OWNER = scope:bishop }
-			}
-			else_if = {
-				limit = { religion = religion:judaism_religion }
-				create_artifact_pedestal_reliquary_judaism_effect = { OWNER = scope:bishop }
-			}
-			else = {
+			#L5R Disabled
+			# if = {
+			# 	limit = { religion = religion:christianity_religion }
+			# 	create_artifact_pedestal_reliquary_christian_effect = { OWNER = scope:bishop }
+			# }
+			# else_if = {
+			# 	limit = { religion = religion:islam_religion }
+			# 	create_artifact_pedestal_reliquary_islam_effect = { OWNER = scope:bishop }
+			# }
+			# else_if = {
+			# 	limit = { religion = religion:buddhism_religion }
+			# 	create_artifact_pedestal_reliquary_buddhism_effect = { OWNER = scope:bishop }
+			# }
+			# else_if = {
+			# 	limit = { religion = religion:judaism_religion }
+			# 	create_artifact_pedestal_reliquary_judaism_effect = { OWNER = scope:bishop }
+			# }
+			# else = {
 				create_artifact_sculpture_religious_effect = { OWNER = scope:bishop }
-			}
+			# }
 			scope:newly_created_artifact = { save_scope_as = bishop_relic }
 		}
 		if = {
@@ -15365,25 +15367,27 @@ hold_court.8061 = {
 	}
 	theme = realm
 	override_background = {
-		trigger = {
-			NOR = {
-				faith = { religion = religion:hinduism_religion }
-				faith = { religion = religion:buddhism_religion }
-				faith = { religion = religion:jainism_religion }
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	NOR = {
+		# 		faith = { religion = religion:hinduism_religion }
+		# 		faith = { religion = religion:buddhism_religion }
+		# 		faith = { religion = religion:jainism_religion }
+		# 	}
+		# }
 		reference = temple
 	}
-	override_background = {
-		trigger = {
-			OR = {
-				faith = { religion = religion:hinduism_religion }
-				faith = { religion = religion:buddhism_religion }
-				faith = { religion = religion:jainism_religion }
-			}
-		}
-		reference = ep2_holy_site_indian
-	}
+	#L5R Disabled
+	# override_background = {
+	# 	trigger = {
+	# 		OR = {
+	# 			faith = { religion = religion:hinduism_religion }
+	# 			faith = { religion = religion:buddhism_religion }
+	# 			faith = { religion = religion:jainism_religion }
+	# 		}
+	# 	}
+	# 	reference = ep2_holy_site_indian
+	# }
 	left_portrait = {
 		character = scope:bishop
 		animation = happiness
