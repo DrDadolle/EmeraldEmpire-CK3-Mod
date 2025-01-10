@@ -2153,1119 +2153,1119 @@ fp3_yearly.2030 = {
 
 # Commander of the Faithful: Attacker Version
 # The Caliph has asked your armies to stand down and they complied!
-fp3_yearly.2041 = {
-	type = character_event
-	title = fp3_yearly.2040.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				# You do not respect the caliph
-				trigger = {
-					OR = {
-						has_trait = cynical
-						NOT = { faith.religious_head = scope:caliph }
-					}
-				}
-				desc = fp3_yearly.2041.desc_cynical
-			}
-			desc = fp3_yearly.2041.desc_fallback
-		}
-	}
-	theme = martial
-	override_background = {
-		reference = terrain_scope
-	}
-	left_portrait = {
-		character = scope:caliph
-		animation = war_defender
-	}
+# fp3_yearly.2041 = {
+# 	type = character_event
+# 	title = fp3_yearly.2040.t
+# 	desc = {
+# 		first_valid = {
+# 			triggered_desc = {
+# 				# You do not respect the caliph
+# 				trigger = {
+# 					OR = {
+# 						has_trait = cynical
+# 						NOT = { faith.religious_head = scope:caliph }
+# 					}
+# 				}
+# 				desc = fp3_yearly.2041.desc_cynical
+# 			}
+# 			desc = fp3_yearly.2041.desc_fallback
+# 		}
+# 	}
+# 	theme = martial
+# 	override_background = {
+# 		reference = terrain_scope
+# 	}
+# 	left_portrait = {
+# 		character = scope:caliph
+# 		animation = war_defender
+# 	}
 
-	immediate = {
-		fp3_yearly_2040_religious_desertion_effect = yes
-		scope:caliph.location = { save_scope_as = background_terrain_scope }
-	}
+# 	immediate = {
+# 		fp3_yearly_2040_religious_desertion_effect = yes
+# 		scope:caliph.location = { save_scope_as = background_terrain_scope }
+# 	}
 
-	option = { # Curse them!
-		name = fp3_yearly.2041.a
-	}
-}
+# 	option = { # Curse them!
+# 		name = fp3_yearly.2041.a
+# 	}
+# }
 
 # Futuwaa Lodges: Check if root has any valid members of futuwaa lodges. If so, trigger ongoing_futuwaa_lodges_events
-fp3_yearly.2050 = {
-	hidden = yes
+# fp3_yearly.2050 = {
+# 	hidden = yes
 
-	immediate = {
-		every_courtier = {
-			limit = { fp3_is_valid_futuwaa_member = { SPONSOR = root } }
-			add_to_list = futuwaa_members
-		}
-		house ?= {
-			every_house_member = {
-				limit = {
-					fp3_is_valid_futuwaa_member = { SPONSOR = root }
-					NOT = { is_courtier_of = root }
-				}
-				add_to_list = futuwaa_members
-			}
-		}
-		if = {
-			limit = { any_in_list = { list = futuwaa_members } }
-			trigger_event = { on_action = ongoing_futuwaa_lodges_events }
-		}
-	}
-}
+# 	immediate = {
+# 		every_courtier = {
+# 			limit = { fp3_is_valid_futuwaa_member = { SPONSOR = root } }
+# 			add_to_list = futuwaa_members
+# 		}
+# 		house ?= {
+# 			every_house_member = {
+# 				limit = {
+# 					fp3_is_valid_futuwaa_member = { SPONSOR = root }
+# 					NOT = { is_courtier_of = root }
+# 				}
+# 				add_to_list = futuwaa_members
+# 			}
+# 		}
+# 		if = {
+# 			limit = { any_in_list = { list = futuwaa_members } }
+# 			trigger_event = { on_action = ongoing_futuwaa_lodges_events }
+# 		}
+# 	}
+# }
 
-# Futuwaa Lodges: Prowess skill increased
-fp3_yearly.2051 = {
-	hidden = yes
+# # Futuwaa Lodges: Prowess skill increased
+# fp3_yearly.2051 = {
+# 	hidden = yes
 
-	# This event is more likely to trigger if you have more futuwaa members
-	weight_multiplier = {
-		base = 1
-		modifier = {
-			add = {
-				value = list_size:futuwaa_members
-				subtract = 1
-			}
-		}
-	}
+# 	# This event is more likely to trigger if you have more futuwaa members
+# 	weight_multiplier = {
+# 		base = 1
+# 		modifier = {
+# 			add = {
+# 				value = list_size:futuwaa_members
+# 				subtract = 1
+# 			}
+# 		}
+# 	}
 
-	immediate = {
-		random_in_list = {
-			list = futuwaa_members
-			weight = {
-				base = 1
-				# Unskilled members are more likely to have their stats improved
-				modifier = {
-					add = {
-						value = prowess
-						multiply = -0.1
-					}
-				}
-				# Virtuous members are more likely to benefit
-				modifier = {
-					add = {
-						value = num_virtuous_traits
-						subtract = num_sinful_traits
-					}
-				}
-				# Martial members are more likely to... you get the idea
-				modifier = {
-					OR = {
-						has_focus = education_martial
-						has_education_martial_trigger = yes
-					}
-					add = 2
-				}
-				# AI energy (Diligent, lazy, etc.)
-				modifier = {
-					ai_energy <= high_negative_ai_value
-					add = -2
-				}
-				modifier = {
-					ai_energy >= high_positive_ai_value
-					add = 2
-				}
-			}
-			save_scope_as = improved_youth
-		}
-		send_interface_message = {
-			type = event_martial_good
-			title = fp3_yearly.2050.t
-			left_icon = scope:improved_youth
-			scope:improved_youth = { add_prowess_skill = 2 }
-		}
-	}
-}
+# 	immediate = {
+# 		random_in_list = {
+# 			list = futuwaa_members
+# 			weight = {
+# 				base = 1
+# 				# Unskilled members are more likely to have their stats improved
+# 				modifier = {
+# 					add = {
+# 						value = prowess
+# 						multiply = -0.1
+# 					}
+# 				}
+# 				# Virtuous members are more likely to benefit
+# 				modifier = {
+# 					add = {
+# 						value = num_virtuous_traits
+# 						subtract = num_sinful_traits
+# 					}
+# 				}
+# 				# Martial members are more likely to... you get the idea
+# 				modifier = {
+# 					OR = {
+# 						has_focus = education_martial
+# 						has_education_martial_trigger = yes
+# 					}
+# 					add = 2
+# 				}
+# 				# AI energy (Diligent, lazy, etc.)
+# 				modifier = {
+# 					ai_energy <= high_negative_ai_value
+# 					add = -2
+# 				}
+# 				modifier = {
+# 					ai_energy >= high_positive_ai_value
+# 					add = 2
+# 				}
+# 			}
+# 			save_scope_as = improved_youth
+# 		}
+# 		send_interface_message = {
+# 			type = event_martial_good
+# 			title = fp3_yearly.2050.t
+# 			left_icon = scope:improved_youth
+# 			scope:improved_youth = { add_prowess_skill = 2 }
+# 		}
+# 	}
+# }
 
-# Futuwaa Lodges: Martial skill increased (martial focus only)
-fp3_yearly.2052 = {
-	hidden = yes
+# # Futuwaa Lodges: Martial skill increased (martial focus only)
+# fp3_yearly.2052 = {
+# 	hidden = yes
 
-	trigger = {
-		any_in_list = {
-			list = futuwaa_members
-			OR = {
-				has_focus = education_martial
-				has_education_martial_trigger = yes
-			}
-		}
-	}
+# 	trigger = {
+# 		any_in_list = {
+# 			list = futuwaa_members
+# 			OR = {
+# 				has_focus = education_martial
+# 				has_education_martial_trigger = yes
+# 			}
+# 		}
+# 	}
 
-	# This event is more likely to trigger if you have more futuwaa members
-	weight_multiplier = {
-		base = 1
-		modifier = {
-			add = {
-				value = list_size:futuwaa_members
-				subtract = 1
-			}
-		}
-	}
+# 	# This event is more likely to trigger if you have more futuwaa members
+# 	weight_multiplier = {
+# 		base = 1
+# 		modifier = {
+# 			add = {
+# 				value = list_size:futuwaa_members
+# 				subtract = 1
+# 			}
+# 		}
+# 	}
 
-	immediate = {
-		random_in_list = {
-			list = futuwaa_members
-			weight = {
-				base = 1
-				# Unskilled members are more likely to have their stats improved
-				modifier = {
-					add = {
-						value = martial
-						multiply = -0.1
-					}
-				}
-				# Virtuous members are more likely to benefit
-				modifier = {
-					add = {
-						value = num_virtuous_traits
-						subtract = num_sinful_traits
-					}
-				}
-				# AI energy (Diligent, lazy, etc.)
-				modifier = {
-					ai_energy <= high_negative_ai_value
-					add = -2
-				}
-				modifier = {
-					ai_energy >= high_positive_ai_value
-					add = 2
-				}
-			}
-			save_scope_as = improved_youth
-		}
-		send_interface_message = {
-			type = event_martial_good
-			title = fp3_yearly.2050.t
-			left_icon = scope:improved_youth
-			scope:improved_youth = { add_martial_skill = 2 }
-		}
-	}
-}
+# 	immediate = {
+# 		random_in_list = {
+# 			list = futuwaa_members
+# 			weight = {
+# 				base = 1
+# 				# Unskilled members are more likely to have their stats improved
+# 				modifier = {
+# 					add = {
+# 						value = martial
+# 						multiply = -0.1
+# 					}
+# 				}
+# 				# Virtuous members are more likely to benefit
+# 				modifier = {
+# 					add = {
+# 						value = num_virtuous_traits
+# 						subtract = num_sinful_traits
+# 					}
+# 				}
+# 				# AI energy (Diligent, lazy, etc.)
+# 				modifier = {
+# 					ai_energy <= high_negative_ai_value
+# 					add = -2
+# 				}
+# 				modifier = {
+# 					ai_energy >= high_positive_ai_value
+# 					add = 2
+# 				}
+# 			}
+# 			save_scope_as = improved_youth
+# 		}
+# 		send_interface_message = {
+# 			type = event_martial_good
+# 			title = fp3_yearly.2050.t
+# 			left_icon = scope:improved_youth
+# 			scope:improved_youth = { add_martial_skill = 2 }
+# 		}
+# 	}
+# }
 
-# Futuwaa Lodges: Virtuous trait added
-fp3_yearly.2053 = {
-	hidden = yes
+# # Futuwaa Lodges: Virtuous trait added
+# fp3_yearly.2053 = {
+# 	hidden = yes
 
-	trigger = {
-		any_in_list = {
-			list = futuwaa_members
-			number_of_personality_traits < childhood_personality_trait_gain_limit
-		}
-	}
+# 	trigger = {
+# 		any_in_list = {
+# 			list = futuwaa_members
+# 			number_of_personality_traits < childhood_personality_trait_gain_limit
+# 		}
+# 	}
 
-	# This event is more likely to trigger if you have more futuwaa members
-	weight_multiplier = {
-		base = 1
-		modifier = {
-			add = {
-				value = list_size:futuwaa_members
-				subtract = 1
-			}
-		}
-	}
+# 	# This event is more likely to trigger if you have more futuwaa members
+# 	weight_multiplier = {
+# 		base = 1
+# 		modifier = {
+# 			add = {
+# 				value = list_size:futuwaa_members
+# 				subtract = 1
+# 			}
+# 		}
+# 	}
 
-	immediate = {
-		random_in_list = {
-			list = futuwaa_members
-			weight = {
-				base = 1
-				# More zealous members are more likely to benefit (and vice versa)
-				modifier = {
-					add = {
-						value = ai_zeal
-						divide = 100
-					}
-				}
-			}
-			save_scope_as = improved_youth
-		}
-		# Choose a random virtue to give the youth
-		# I know... there is no better way to do this
-		random_list = {
-			# Brave
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = brave }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = brave
-							has_trait = craven
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:brave
-				}
-			}
-			# Craven
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = craven }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = brave
-							has_trait = craven
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:craven
-				}
-			}
-			# Calm
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = calm }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = calm
-							has_trait = wrathful
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:calm
-				}
-			}
-			# Wrathful
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = wrathful }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = calm
-							has_trait = wrathful
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:wrathful
-				}
-			}
-			# Chaste
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = chaste }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = chaste
-							has_trait = lustful
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:chaste
-				}
-			}
-			# Lustful
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = lustful }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = chaste
-							has_trait = lustful
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:lustful
-				}
-			}
-			# Content
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = content }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = content
-							has_trait = ambitious
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:content
-				}
-			}
-			# Ambitious
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = ambitious }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = content
-							has_trait = ambitious
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:ambitious
-				}
-			}
-			# Diligent
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = diligent }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = diligent
-							has_trait = lazy
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:diligent
-				}
-			}
-			# Lazy
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = lazy }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = diligent
-							has_trait = lazy
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:lazy
-				}
-			}
-			# Fickle
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = fickle }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = fickle
-							has_trait = stubborn
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:fickle
-				}
-			}
-			# Stubborn
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = stubborn }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = fickle
-							has_trait = stubborn
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:stubborn
-				}
-			}
-			# Forgiving
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = forgiving }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = forgiving
-							has_trait = vengeful
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:forgiving
-				}
-			}
-			# Vengeful
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = vengeful }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = forgiving
-							has_trait = vengeful
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:vengeful
-				}
-			}
-			# Generous
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = generous }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = generous
-							has_trait = greedy
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:generous
-				}
-			}
-			# Greedy
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = greedy }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = generous
-							has_trait = greedy
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:greedy
-				}
-			}
-			# Gregarious
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = gregarious }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = gregarious
-							has_trait = shy
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:gregarious
-				}
-			}
-			# Shy
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = shy }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = gregarious
-							has_trait = shy
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:shy
-				}
-			}
-			# Honest
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = honest }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = honest
-							has_trait = deceitful
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:honest
-				}
-			}
-			# Deceitful
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = deceitful }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = honest
-							has_trait = deceitful
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:deceitful
-				}
-			}
-			# Humble
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = humble }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = humble
-							has_trait = arrogant
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:humble
-				}
-			}
-			# Arrogant
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = arrogant }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = humble
-							has_trait = arrogant
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:arrogant
-				}
-			}
-			# Just
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = just }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = just
-							has_trait = arbitrary
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:just
-				}
-			}
-			# Arbitrary
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = arbitrary }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = just
-							has_trait = arbitrary
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:arbitrary
-				}
-			}
-			# Patient
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = patient }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = patient
-							has_trait = impatient
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:patient
-				}
-			}
-			# Impatient
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = impatient }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = patient
-							has_trait = impatient
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:impatient
-				}
-			}
-			# Temperate
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = temperate }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = temperate
-							has_trait = gluttonous
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:temperate
-				}
-			}
-			# Gluttonous
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = gluttonous }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = temperate
-							has_trait = gluttonous
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:gluttonous
-				}
-			}
-			# Trusting
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = trusting }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = trusting
-							has_trait = paranoid
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:trusting
-				}
-			}
-			# Paranoid
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = paranoid }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = trusting
-							has_trait = paranoid
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:paranoid
-				}
-			}
-			# Zealous
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = zealous }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = zealous
-							has_trait = cynical
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:zealous
-				}
-			}
-			# Cynical
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = cynical }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = zealous
-							has_trait = cynical
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:cynical
-				}
-			}
-			# Compassionate
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = compassionate }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = compassionate
-							has_trait = callous
-							has_trait = sadistic
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:compassionate
-				}
-			}
-			# Callous
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = callous }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = compassionate
-							has_trait = callous
-							has_trait = sadistic
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:callous
-				}
-			}
-			# Sadistic
-			1 = {
-				trigger = {
-					faith = { trait_is_virtue = sadistic }
-					scope:improved_youth = {
-						NOR = {
-							has_trait = compassionate
-							has_trait = callous
-							has_trait = sadistic
-						}
-					}
-				}
-				save_scope_value_as = {
-					name = virtuous_trait
-					value = flag:sadistic
-				}
-			}
-		}
-		send_interface_message = {
-			type = event_martial_good
-			title = fp3_yearly.2050.t
-			left_icon = scope:improved_youth
-			scope:improved_youth = {
-				if = {
-					limit = { scope:virtuous_trait = flag:brave }
-					add_trait = brave
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:craven }
-					add_trait = craven
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:calm }
-					add_trait = calm
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:wrathful }
-					add_trait = wrathful
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:chaste }
-					add_trait = chaste
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:lustful }
-					add_trait = lustful
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:content }
-					add_trait = content
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:ambitious }
-					add_trait = ambitious
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:diligent }
-					add_trait = diligent
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:lazy }
-					add_trait = lazy
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:fickle }
-					add_trait = fickle
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:stubborn }
-					add_trait = stubborn
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:forgiving }
-					add_trait = forgiving
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:vengeful }
-					add_trait = vengeful
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:generous }
-					add_trait = generous
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:greedy }
-					add_trait = greedy
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:gregarious }
-					add_trait = gregarious
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:shy }
-					add_trait = shy
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:honest }
-					add_trait = honest
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:deceitful }
-					add_trait = deceitful
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:humble }
-					add_trait = humble
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:arrogant }
-					add_trait = arrogant
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:just }
-					add_trait = just
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:arbitrary }
-					add_trait = arbitrary
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:patient }
-					add_trait = patient
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:impatient }
-					add_trait = impatient
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:temperate }
-					add_trait = temperate
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:gluttonous }
-					add_trait = gluttonous
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:trusting }
-					add_trait = trusting
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:paranoid }
-					add_trait = paranoid
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:zealous }
-					add_trait = zealous
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:cynical }
-					add_trait = cynical
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:compassionate }
-					add_trait = compassionate
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:callous }
-					add_trait = callous
-				}
-				if = {
-					limit = { scope:virtuous_trait = flag:sadistic }
-					add_trait = sadistic
-				}
-			}
-		}
-	}
-}
+# 	immediate = {
+# 		random_in_list = {
+# 			list = futuwaa_members
+# 			weight = {
+# 				base = 1
+# 				# More zealous members are more likely to benefit (and vice versa)
+# 				modifier = {
+# 					add = {
+# 						value = ai_zeal
+# 						divide = 100
+# 					}
+# 				}
+# 			}
+# 			save_scope_as = improved_youth
+# 		}
+# 		# Choose a random virtue to give the youth
+# 		# I know... there is no better way to do this
+# 		random_list = {
+# 			# Brave
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = brave }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = brave
+# 							has_trait = craven
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:brave
+# 				}
+# 			}
+# 			# Craven
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = craven }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = brave
+# 							has_trait = craven
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:craven
+# 				}
+# 			}
+# 			# Calm
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = calm }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = calm
+# 							has_trait = wrathful
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:calm
+# 				}
+# 			}
+# 			# Wrathful
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = wrathful }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = calm
+# 							has_trait = wrathful
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:wrathful
+# 				}
+# 			}
+# 			# Chaste
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = chaste }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = chaste
+# 							has_trait = lustful
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:chaste
+# 				}
+# 			}
+# 			# Lustful
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = lustful }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = chaste
+# 							has_trait = lustful
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:lustful
+# 				}
+# 			}
+# 			# Content
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = content }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = content
+# 							has_trait = ambitious
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:content
+# 				}
+# 			}
+# 			# Ambitious
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = ambitious }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = content
+# 							has_trait = ambitious
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:ambitious
+# 				}
+# 			}
+# 			# Diligent
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = diligent }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = diligent
+# 							has_trait = lazy
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:diligent
+# 				}
+# 			}
+# 			# Lazy
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = lazy }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = diligent
+# 							has_trait = lazy
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:lazy
+# 				}
+# 			}
+# 			# Fickle
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = fickle }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = fickle
+# 							has_trait = stubborn
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:fickle
+# 				}
+# 			}
+# 			# Stubborn
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = stubborn }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = fickle
+# 							has_trait = stubborn
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:stubborn
+# 				}
+# 			}
+# 			# Forgiving
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = forgiving }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = forgiving
+# 							has_trait = vengeful
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:forgiving
+# 				}
+# 			}
+# 			# Vengeful
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = vengeful }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = forgiving
+# 							has_trait = vengeful
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:vengeful
+# 				}
+# 			}
+# 			# Generous
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = generous }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = generous
+# 							has_trait = greedy
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:generous
+# 				}
+# 			}
+# 			# Greedy
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = greedy }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = generous
+# 							has_trait = greedy
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:greedy
+# 				}
+# 			}
+# 			# Gregarious
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = gregarious }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = gregarious
+# 							has_trait = shy
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:gregarious
+# 				}
+# 			}
+# 			# Shy
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = shy }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = gregarious
+# 							has_trait = shy
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:shy
+# 				}
+# 			}
+# 			# Honest
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = honest }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = honest
+# 							has_trait = deceitful
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:honest
+# 				}
+# 			}
+# 			# Deceitful
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = deceitful }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = honest
+# 							has_trait = deceitful
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:deceitful
+# 				}
+# 			}
+# 			# Humble
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = humble }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = humble
+# 							has_trait = arrogant
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:humble
+# 				}
+# 			}
+# 			# Arrogant
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = arrogant }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = humble
+# 							has_trait = arrogant
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:arrogant
+# 				}
+# 			}
+# 			# Just
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = just }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = just
+# 							has_trait = arbitrary
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:just
+# 				}
+# 			}
+# 			# Arbitrary
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = arbitrary }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = just
+# 							has_trait = arbitrary
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:arbitrary
+# 				}
+# 			}
+# 			# Patient
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = patient }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = patient
+# 							has_trait = impatient
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:patient
+# 				}
+# 			}
+# 			# Impatient
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = impatient }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = patient
+# 							has_trait = impatient
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:impatient
+# 				}
+# 			}
+# 			# Temperate
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = temperate }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = temperate
+# 							has_trait = gluttonous
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:temperate
+# 				}
+# 			}
+# 			# Gluttonous
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = gluttonous }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = temperate
+# 							has_trait = gluttonous
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:gluttonous
+# 				}
+# 			}
+# 			# Trusting
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = trusting }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = trusting
+# 							has_trait = paranoid
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:trusting
+# 				}
+# 			}
+# 			# Paranoid
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = paranoid }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = trusting
+# 							has_trait = paranoid
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:paranoid
+# 				}
+# 			}
+# 			# Zealous
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = zealous }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = zealous
+# 							has_trait = cynical
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:zealous
+# 				}
+# 			}
+# 			# Cynical
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = cynical }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = zealous
+# 							has_trait = cynical
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:cynical
+# 				}
+# 			}
+# 			# Compassionate
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = compassionate }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = compassionate
+# 							has_trait = callous
+# 							has_trait = sadistic
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:compassionate
+# 				}
+# 			}
+# 			# Callous
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = callous }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = compassionate
+# 							has_trait = callous
+# 							has_trait = sadistic
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:callous
+# 				}
+# 			}
+# 			# Sadistic
+# 			1 = {
+# 				trigger = {
+# 					faith = { trait_is_virtue = sadistic }
+# 					scope:improved_youth = {
+# 						NOR = {
+# 							has_trait = compassionate
+# 							has_trait = callous
+# 							has_trait = sadistic
+# 						}
+# 					}
+# 				}
+# 				save_scope_value_as = {
+# 					name = virtuous_trait
+# 					value = flag:sadistic
+# 				}
+# 			}
+# 		}
+# 		send_interface_message = {
+# 			type = event_martial_good
+# 			title = fp3_yearly.2050.t
+# 			left_icon = scope:improved_youth
+# 			scope:improved_youth = {
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:brave }
+# 					add_trait = brave
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:craven }
+# 					add_trait = craven
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:calm }
+# 					add_trait = calm
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:wrathful }
+# 					add_trait = wrathful
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:chaste }
+# 					add_trait = chaste
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:lustful }
+# 					add_trait = lustful
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:content }
+# 					add_trait = content
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:ambitious }
+# 					add_trait = ambitious
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:diligent }
+# 					add_trait = diligent
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:lazy }
+# 					add_trait = lazy
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:fickle }
+# 					add_trait = fickle
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:stubborn }
+# 					add_trait = stubborn
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:forgiving }
+# 					add_trait = forgiving
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:vengeful }
+# 					add_trait = vengeful
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:generous }
+# 					add_trait = generous
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:greedy }
+# 					add_trait = greedy
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:gregarious }
+# 					add_trait = gregarious
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:shy }
+# 					add_trait = shy
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:honest }
+# 					add_trait = honest
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:deceitful }
+# 					add_trait = deceitful
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:humble }
+# 					add_trait = humble
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:arrogant }
+# 					add_trait = arrogant
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:just }
+# 					add_trait = just
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:arbitrary }
+# 					add_trait = arbitrary
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:patient }
+# 					add_trait = patient
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:impatient }
+# 					add_trait = impatient
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:temperate }
+# 					add_trait = temperate
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:gluttonous }
+# 					add_trait = gluttonous
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:trusting }
+# 					add_trait = trusting
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:paranoid }
+# 					add_trait = paranoid
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:zealous }
+# 					add_trait = zealous
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:cynical }
+# 					add_trait = cynical
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:compassionate }
+# 					add_trait = compassionate
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:callous }
+# 					add_trait = callous
+# 				}
+# 				if = {
+# 					limit = { scope:virtuous_trait = flag:sadistic }
+# 					add_trait = sadistic
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
-# Madrasas: Check if root has any valid members of madrasas. If so, trigger ongoing_madrasas_events
-fp3_yearly.2060 = {
-	hidden = yes
+# # Madrasas: Check if root has any valid members of madrasas. If so, trigger ongoing_madrasas_events
+# fp3_yearly.2060 = {
+# 	hidden = yes
 
-	immediate = {
-		every_courtier = {
-			limit = { fp3_is_valid_madrasa_pupil = { SPONSOR = root } }
-			add_to_list = madrasa_pupils
-		}
-		house ?= {
-			every_house_member = {
-				limit = {
-					fp3_is_valid_madrasa_pupil = { SPONSOR = root }
-					NOT = { is_courtier_of = root }
-				}
-			}
-			add_to_list = madrasa_pupils
-		}
+# 	immediate = {
+# 		every_courtier = {
+# 			limit = { fp3_is_valid_madrasa_pupil = { SPONSOR = root } }
+# 			add_to_list = madrasa_pupils
+# 		}
+# 		house ?= {
+# 			every_house_member = {
+# 				limit = {
+# 					fp3_is_valid_madrasa_pupil = { SPONSOR = root }
+# 					NOT = { is_courtier_of = root }
+# 				}
+# 			}
+# 			add_to_list = madrasa_pupils
+# 		}
 
-		if = {
-			limit = { any_in_list = { list = madrasa_pupils } }
-			trigger_event = { on_action = ongoing_madrasas_events }
-		}
-		else = {
-			add_trait = giant
-		}
-	}
-}
+# 		if = {
+# 			limit = { any_in_list = { list = madrasa_pupils } }
+# 			trigger_event = { on_action = ongoing_madrasas_events }
+# 		}
+# 		else = {
+# 			add_trait = giant
+# 		}
+# 	}
+# }
 
-# Madrasas: Learning skill increased
-fp3_yearly.2061 = {
-	hidden = yes
+# # Madrasas: Learning skill increased
+# fp3_yearly.2061 = {
+# 	hidden = yes
 
-	# This event is more likely to trigger if you have more madrasa pupils
-	weight_multiplier = {
-		base = 1
-		modifier = {
-			add = {
-				value = list_size:madrasa_pupils
-				subtract = 1
-			}
-		}
-	}
+# 	# This event is more likely to trigger if you have more madrasa pupils
+# 	weight_multiplier = {
+# 		base = 1
+# 		modifier = {
+# 			add = {
+# 				value = list_size:madrasa_pupils
+# 				subtract = 1
+# 			}
+# 		}
+# 	}
 
-	immediate = {
-		random_in_list = {
-			list = madrasa_pupils
-			weight = {
-				base = 1
-				# Skilled members are more likely to have their stats improved
-				modifier = {
-					add = {
-						value = learning
-						multiply = 0.1
-					}
-				}
-				# Learning education members are more likely to gain more learning
-				modifier = {
-					has_focus = education_learning
-					add = 2
-				}
-				# AI energy (Diligent, lazy, etc.)
-				modifier = {
-					ai_energy <= high_negative_ai_value
-					add = -2
-				}
-				modifier = {
-					ai_energy >= high_positive_ai_value
-					add = 2
-				}
-			}
-			save_scope_as = improved_youth
-		}
-		send_interface_message = {
-			type = event_learning_good
-			title = {
-				first_valid = {
-					# Call them madrasas if our capital is advanced enough
-					triggered_desc = {
-						trigger = {
-							capital_county ?= {
-								development_level >= bad_development_level
-							}
-						}
-						desc = fp3_yearly.2060.t_madrasas
-					}
-					# Otherwise just say that the youth are being educated in houses of worship
-					desc = fp3_yearly.2060.t_houses_of_worship
-				}
-			}
-			left_icon = scope:improved_youth
-			scope:improved_youth = { add_learning_skill = 2 }
-		}
-	}
-}
+# 	immediate = {
+# 		random_in_list = {
+# 			list = madrasa_pupils
+# 			weight = {
+# 				base = 1
+# 				# Skilled members are more likely to have their stats improved
+# 				modifier = {
+# 					add = {
+# 						value = learning
+# 						multiply = 0.1
+# 					}
+# 				}
+# 				# Learning education members are more likely to gain more learning
+# 				modifier = {
+# 					has_focus = education_learning
+# 					add = 2
+# 				}
+# 				# AI energy (Diligent, lazy, etc.)
+# 				modifier = {
+# 					ai_energy <= high_negative_ai_value
+# 					add = -2
+# 				}
+# 				modifier = {
+# 					ai_energy >= high_positive_ai_value
+# 					add = 2
+# 				}
+# 			}
+# 			save_scope_as = improved_youth
+# 		}
+# 		send_interface_message = {
+# 			type = event_learning_good
+# 			title = {
+# 				first_valid = {
+# 					# Call them madrasas if our capital is advanced enough
+# 					triggered_desc = {
+# 						trigger = {
+# 							capital_county ?= {
+# 								development_level >= bad_development_level
+# 							}
+# 						}
+# 						desc = fp3_yearly.2060.t_madrasas
+# 					}
+# 					# Otherwise just say that the youth are being educated in houses of worship
+# 					desc = fp3_yearly.2060.t_houses_of_worship
+# 				}
+# 			}
+# 			left_icon = scope:improved_youth
+# 			scope:improved_youth = { add_learning_skill = 2 }
+# 		}
+# 	}
+# }
 
-# Madrasas: Physician experience gain
-fp3_yearly.2062 = {
-	hidden = yes
+# # Madrasas: Physician experience gain
+# fp3_yearly.2062 = {
+# 	hidden = yes
 
-	# This event is more likely to trigger if you have more futuwaa members
-	weight_multiplier = {
-		base = 1
-		modifier = {
-			add = {
-				value = list_size:madrasa_pupils
-				subtract = 1
-			}
-		}
-	}
+# 	# This event is more likely to trigger if you have more futuwaa members
+# 	weight_multiplier = {
+# 		base = 1
+# 		modifier = {
+# 			add = {
+# 				value = list_size:madrasa_pupils
+# 				subtract = 1
+# 			}
+# 		}
+# 	}
 
-	immediate = {
-		random_in_list = {
-			list = madrasa_pupils
-			weight = {
-				base = 1
-				# Members w/high learning are more likely to gain physician experience
-				modifier = {
-					add = {
-						value = learning
-						multiply = 0.1
-					}
-				}
-				# AI energy (Diligent, lazy, etc.)
-				modifier = {
-					ai_energy <= high_negative_ai_value
-					add = -2
-				}
-				modifier = {
-					ai_energy >= high_positive_ai_value
-					add = 2
-				}
-			}
-			save_scope_as = improved_youth
-		}
-		send_interface_message = {
-			type = event_learning_good
-			# "Madrasas" vs "Schooling in Mosques"
-			title = {
-				first_valid = {
-					# Call them madrasas if our capital is advanced enough
-					triggered_desc = {
-						trigger = {
-							capital_county ?= {
-								development_level >= bad_development_level
-							}
-						}
-						desc = fp3_yearly.2060.t_madrasas
-					}
-					# Otherwise just say that the youth are being educated in houses of worship
-					desc = fp3_yearly.2060.t_houses_of_worship
-				}
-			}
-			left_icon = scope:improved_youth
-			scope:improved_youth = {
-				if = {
-					limit = { has_trait = lifestyle_physician }
-					add_trait_xp = {
-						trait = lifestyle_physician
-						value = {
-							integer_range = {
-								min = 5
-								max = 10
-							}
-						}
-					}
-				}
-				else = { add_trait = lifestyle_physician }
-			}
-		}
-	}
-}
+# 	immediate = {
+# 		random_in_list = {
+# 			list = madrasa_pupils
+# 			weight = {
+# 				base = 1
+# 				# Members w/high learning are more likely to gain physician experience
+# 				modifier = {
+# 					add = {
+# 						value = learning
+# 						multiply = 0.1
+# 					}
+# 				}
+# 				# AI energy (Diligent, lazy, etc.)
+# 				modifier = {
+# 					ai_energy <= high_negative_ai_value
+# 					add = -2
+# 				}
+# 				modifier = {
+# 					ai_energy >= high_positive_ai_value
+# 					add = 2
+# 				}
+# 			}
+# 			save_scope_as = improved_youth
+# 		}
+# 		send_interface_message = {
+# 			type = event_learning_good
+# 			# "Madrasas" vs "Schooling in Mosques"
+# 			title = {
+# 				first_valid = {
+# 					# Call them madrasas if our capital is advanced enough
+# 					triggered_desc = {
+# 						trigger = {
+# 							capital_county ?= {
+# 								development_level >= bad_development_level
+# 							}
+# 						}
+# 						desc = fp3_yearly.2060.t_madrasas
+# 					}
+# 					# Otherwise just say that the youth are being educated in houses of worship
+# 					desc = fp3_yearly.2060.t_houses_of_worship
+# 				}
+# 			}
+# 			left_icon = scope:improved_youth
+# 			scope:improved_youth = {
+# 				if = {
+# 					limit = { has_trait = lifestyle_physician }
+# 					add_trait_xp = {
+# 						trait = lifestyle_physician
+# 						value = {
+# 							integer_range = {
+# 								min = 5
+# 								max = 10
+# 							}
+# 						}
+# 					}
+# 				}
+# 				else = { add_trait = lifestyle_physician }
+# 			}
+# 		}
+# 	}
+# }

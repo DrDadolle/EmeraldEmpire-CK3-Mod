@@ -202,13 +202,16 @@ ep3_13_epic_paperwork_achievement = {
 # 14. Against the Odds
 ep3_14_against_the_odds_achievement = {
 	possible = {
-		
+		#L5R Disabled
+		always = no
 	}
 	happened = {
-		custom_description = {
-			text = against_the_odds_achievement_trigger
-			exists = global_var:achieved_against_the_odds_achievement
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = against_the_odds_achievement_trigger
+		# 	exists = global_var:achieved_against_the_odds_achievement
+		# }
 	}
 }
 

@@ -1339,150 +1339,150 @@
 # }
 
 
-fp3_yearly.8046 = { #Buzina
-	type = character_event
-	title = fp3_yearly.8046.t
-	desc = fp3_yearly.8046.desc
-	theme = medicine
-	left_portrait = {
-		character = root
-		animation = worry
-	}
-	right_portrait = {
-		character = scope:court_physician
-		animation = newborn
-	}
+# fp3_yearly.8046 = { #Buzina
+# 	type = character_event
+# 	title = fp3_yearly.8046.t
+# 	desc = fp3_yearly.8046.desc
+# 	theme = medicine
+# 	left_portrait = {
+# 		character = root
+# 		animation = worry
+# 	}
+# 	right_portrait = {
+# 		character = scope:court_physician
+# 		animation = newborn
+# 	}
 
-	trigger = {
+# 	trigger = {
 
-		is_available = yes
-		is_incapable = no
-		has_contagious_deadly_disease_trigger = no
+# 		is_available = yes
+# 		is_incapable = no
+# 		has_contagious_deadly_disease_trigger = no
 
-		has_character_modifier = fp3_sickly_monkey_modifier 
+# 		has_character_modifier = fp3_sickly_monkey_modifier 
 		
-		exists = scope:court_physician	
-	}
+# 		exists = scope:court_physician	
+# 	}
 
-	option = {
-		name = fp3_yearly.8046.a
-		flavor = fp3_wait_and_see.tt
-		remove_short_term_gold = minor_gold_value
-		custom_tooltip = monkey_recover_better_chances_tt
+# 	option = {
+# 		name = fp3_yearly.8046.a
+# 		flavor = fp3_wait_and_see.tt
+# 		remove_short_term_gold = minor_gold_value
+# 		custom_tooltip = monkey_recover_better_chances_tt
 		
-		hidden_effect = {
-			random_list = {
-				80 = {
-					trigger_event = { 
- 						id = fp3_yearly.8047
- 						days = { 30 100 }
- 					}
-				}
-				20 = {
-					trigger_event = { 
- 						id = fp3_yearly.8048
- 						days = { 100 200 }
- 					}
-				}
-			}
-		}
+# 		hidden_effect = {
+# 			random_list = {
+# 				80 = {
+# 					trigger_event = { 
+#  						id = fp3_yearly.8047
+#  						days = { 30 100 }
+#  					}
+# 				}
+# 				20 = {
+# 					trigger_event = { 
+#  						id = fp3_yearly.8048
+#  						days = { 100 200 }
+#  					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = { 
-			compassionate = minor_stress_impact_loss
-			generous = minor_stress_impact_loss
-			greedy = medium_stress_impact_gain 
-		}
+# 		stress_impact = { 
+# 			compassionate = minor_stress_impact_loss
+# 			generous = minor_stress_impact_loss
+# 			greedy = medium_stress_impact_gain 
+# 		}
 
-		ai_chance = { 
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.5
-				ai_rationality = 1
-				ai_greed = -0.5
-			}
-		}	
-	}
+# 		ai_chance = { 
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_compassion = 0.5
+# 				ai_rationality = 1
+# 				ai_greed = -0.5
+# 			}
+# 		}	
+# 	}
 
-	option = {
-		name = fp3_yearly.8046.b
-		flavor = fp3_wait_and_see.tt
-		hidden_effect = {
-			random_list = {
-				50 = {
-					trigger_event = { 
- 						id = fp3_yearly.8047
- 						days = { 30 100 }
- 					}
-				}
-				50 = {
-					trigger_event = { 
- 						id = fp3_yearly.8048
- 						days = { 100 200 }
- 					}
-				}
-			}
-		}
+# 	option = {
+# 		name = fp3_yearly.8046.b
+# 		flavor = fp3_wait_and_see.tt
+# 		hidden_effect = {
+# 			random_list = {
+# 				50 = {
+# 					trigger_event = { 
+#  						id = fp3_yearly.8047
+#  						days = { 30 100 }
+#  					}
+# 				}
+# 				50 = {
+# 					trigger_event = { 
+#  						id = fp3_yearly.8048
+#  						days = { 100 200 }
+#  					}
+# 				}
+# 			}
+# 		}
 
-		stress_impact = { 
-			greedy = minor_stress_impact_loss
-		}
+# 		stress_impact = { 
+# 			greedy = minor_stress_impact_loss
+# 		}
 
-		ai_chance = { 
-			base = 100
-			ai_value_modifier = {
-				ai_greed = 1
-			}
-		}	
-	}
-}
+# 		ai_chance = { 
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_greed = 1
+# 			}
+# 		}	
+# 	}
+# }
 
-fp3_yearly.8047 = {
-	type = character_event
-	title = fp3_yearly.8047.t
-	desc = fp3_yearly.8047.desc
-	theme = pet
+# fp3_yearly.8047 = {
+# 	type = character_event
+# 	title = fp3_yearly.8047.t
+# 	desc = fp3_yearly.8047.desc
+# 	theme = pet
 	
-	left_portrait = {
-		character = root
-		animation = chess_cocky
-	}
-	right_portrait = {
-		character = scope:court_physician
-		animation = newborn
-	}
+# 	left_portrait = {
+# 		character = root
+# 		animation = chess_cocky
+# 	}
+# 	right_portrait = {
+# 		character = scope:court_physician
+# 		animation = newborn
+# 	}
 
-	trigger = { has_character_modifier = fp3_sickly_monkey_modifier }	
+# 	trigger = { has_character_modifier = fp3_sickly_monkey_modifier }	
 
-	immediate = {
-		remove_character_modifier = fp3_sickly_monkey_modifier 
-	}
+# 	immediate = {
+# 		remove_character_modifier = fp3_sickly_monkey_modifier 
+# 	}
 
-	option = {
-		name = fp3_yearly.8047.a
-		add_character_modifier = {
-			modifier = fp3_chess_playing_monkey_modifier  
-			years = 15
-		}
-		custom_tooltip = playing_chess_with_monkey.tt
-	}
-}
+# 	option = {
+# 		name = fp3_yearly.8047.a
+# 		add_character_modifier = {
+# 			modifier = fp3_chess_playing_monkey_modifier  
+# 			years = 15
+# 		}
+# 		custom_tooltip = playing_chess_with_monkey.tt
+# 	}
+# }
 
-fp3_yearly.8048 = {
-	hidden = yes
+# fp3_yearly.8048 = {
+# 	hidden = yes
 	
-	trigger = { has_character_modifier = fp3_sickly_monkey_modifier }
+# 	trigger = { has_character_modifier = fp3_sickly_monkey_modifier }
 
-	immediate = {
-		root = {
-			send_interface_toast = {
-				title = monkey_died_from_sickness_toast
-				left_icon = root 
-				remove_character_modifier = fp3_sickly_monkey_modifier
-			}
-		}
+# 	immediate = {
+# 		root = {
+# 			send_interface_toast = {
+# 				title = monkey_died_from_sickness_toast
+# 				left_icon = root 
+# 				remove_character_modifier = fp3_sickly_monkey_modifier
+# 			}
+# 		}
 
-	}		
-}
+# 	}		
+# }
 
 ##################################
 # The Fate of the Dead

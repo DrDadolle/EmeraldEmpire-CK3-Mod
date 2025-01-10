@@ -203,8 +203,9 @@ portrait_wear_armor_trigger = {
 			}
 		}
 		has_character_flag = wear_armor
+		#L5R Disabled
 		# Serving Varangian
-		has_character_flag = is_currently_varangian
+		# has_character_flag = is_currently_varangian
 		# In a Duel
 		has_character_flag = single_combat_duel_armor
 		has_character_flag = forced_knight_armor
@@ -340,8 +341,9 @@ portrait_wear_helmet_trigger = { # Different from Armor, as Kings and Emperors s
 			}
 		}
 		has_character_flag = wear_armor
+		#L5R Disabled
 		# Serving Varangian
-		has_character_flag = is_currently_varangian
+		# has_character_flag = is_currently_varangian
 		# In a Duel
 		has_character_flag = single_combat_duel_armor
 		# In a Tournament

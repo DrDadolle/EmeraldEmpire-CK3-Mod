@@ -276,10 +276,11 @@
         }
         weight = {
             base = 0
-            modifier = {
-                add = 200
-                has_character_flag = pope_larper_flag
-            }
+            #L5R Disabled
+            # modifier = {
+            #     add = 200
+            #     has_character_flag = pope_larper_flag
+            # }
         }
     }
 
@@ -300,10 +301,11 @@
         }
         weight = {
             base = 0
-            modifier = {
-                add = 200
-                has_character_flag = cardinal_larper_flag
-            }
+            #L5R Disabled
+            # modifier = {
+            #     add = 200
+            #     has_character_flag = cardinal_larper_flag
+            # }
         }
     }
 

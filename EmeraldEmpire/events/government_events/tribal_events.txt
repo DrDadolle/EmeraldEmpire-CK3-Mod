@@ -740,316 +740,316 @@ tribal.1015 = {
 	}
 }
 
-
+#L5R Disabled
 #They will fight you, time for flyting
-tribal.1006 = {
-	type = character_event
-	title = tribal.1001.t
-	desc = {
-		desc = tribal.1003.desc_opening
-		desc = {
-			first_valid = {
-				triggered_desc = {
-					trigger = {
-						scope:liege_to_challenge.age > root.age
-					}
-					desc = tribal.1006.desc_old
-				}
-				desc = tribal.1006.desc_young
-			}
-		}
-		desc = tribal.1006.desc
-		desc = {
-			random_valid = {
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:a }
-					desc = insult_poetry_line_1_a_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:a }
-					desc = insult_poetry_line_1_a_02
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:b }
-					desc = insult_poetry_line_1_b_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:b }
-					desc = insult_poetry_line_1_b_02
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_1_c_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_1_c_02
-				}
-			}
-			random_valid = {
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:a }
-					desc = insult_poetry_line_2_a_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:b }
-					desc = insult_poetry_line_2_b_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_2_c_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_2_c_02
-				}
-			}
-		}
-	}
-	theme = realm
-	left_portrait = {
-		character = scope:liege_to_challenge
-		animation = anger
-	}
+# tribal.1006 = {
+# 	type = character_event
+# 	title = tribal.1001.t
+# 	desc = {
+# 		desc = tribal.1003.desc_opening
+# 		desc = {
+# 			first_valid = {
+# 				triggered_desc = {
+# 					trigger = {
+# 						scope:liege_to_challenge.age > root.age
+# 					}
+# 					desc = tribal.1006.desc_old
+# 				}
+# 				desc = tribal.1006.desc_young
+# 			}
+# 		}
+# 		desc = tribal.1006.desc
+# 		desc = {
+# 			random_valid = {
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:a }
+# 					desc = insult_poetry_line_1_a_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:a }
+# 					desc = insult_poetry_line_1_a_02
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:b }
+# 					desc = insult_poetry_line_1_b_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:b }
+# 					desc = insult_poetry_line_1_b_02
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_1_c_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_1_c_02
+# 				}
+# 			}
+# 			random_valid = {
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:a }
+# 					desc = insult_poetry_line_2_a_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:b }
+# 					desc = insult_poetry_line_2_b_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_2_c_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_2_c_02
+# 				}
+# 			}
+# 		}
+# 	}
+# 	theme = realm
+# 	left_portrait = {
+# 		character = scope:liege_to_challenge
+# 		animation = anger
+# 	}
 
-	immediate = {
-		hidden_effect = {
-			random_list = {
-				1 = {
-					save_scope_value_as = {
-						name = rhyme_group
-						value = flag:a
-					}
-				}
-				1 = {
-					save_scope_value_as = {
-						name = rhyme_group
-						value = flag:b
-					}
-				}
-				1 = {
-					save_scope_value_as = {
-						name = rhyme_group
-						value = flag:c
-					}
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			random_list = {
+# 				1 = {
+# 					save_scope_value_as = {
+# 						name = rhyme_group
+# 						value = flag:a
+# 					}
+# 				}
+# 				1 = {
+# 					save_scope_value_as = {
+# 						name = rhyme_group
+# 						value = flag:b
+# 					}
+# 				}
+# 				1 = {
+# 					save_scope_value_as = {
+# 						name = rhyme_group
+# 						value = flag:c
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = tribal.1006.a
-		duel = {
-			skill = learning
-			target = scope:liege_to_challenge
-			10 = {
-				desc = tribal.1006.a_success
-				send_interface_toast = {
-					title = tribal.1006.a_success
-					left_icon = scope:liege_to_challenge
-					show_as_tooltip = {
-						tribal_transfer_liege_title_effect = yes
-					}
-				}
-				scope:liege_to_challenge = {
-					trigger_event = tribal.1007
-				}
-			}
-			10 = {
-				desc = tribal.1006.a_failure
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -2
-				}
-				send_interface_toast = {
-					title = tribal.1006.a_failure
-					left_icon = scope:liege_to_challenge
-					tribal_challenger_lost_effect = yes
-				}
-				scope:liege_to_challenge = {
-					trigger_event = tribal.1008
-				}
-			}
-		}
-	}
+# 	option = {
+# 		name = tribal.1006.a
+# 		duel = {
+# 			skill = learning
+# 			target = scope:liege_to_challenge
+# 			10 = {
+# 				desc = tribal.1006.a_success
+# 				send_interface_toast = {
+# 					title = tribal.1006.a_success
+# 					left_icon = scope:liege_to_challenge
+# 					show_as_tooltip = {
+# 						tribal_transfer_liege_title_effect = yes
+# 					}
+# 				}
+# 				scope:liege_to_challenge = {
+# 					trigger_event = tribal.1007
+# 				}
+# 			}
+# 			10 = {
+# 				desc = tribal.1006.a_failure
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -2
+# 				}
+# 				send_interface_toast = {
+# 					title = tribal.1006.a_failure
+# 					left_icon = scope:liege_to_challenge
+# 					tribal_challenger_lost_effect = yes
+# 				}
+# 				scope:liege_to_challenge = {
+# 					trigger_event = tribal.1008
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = { #Back out
-		name = tribal.1006.b
-		tribal_1001_challenger_backed_out_effect = yes
-		scope:liege_to_challenge = {
-			trigger_event = tribal.1010
-		}
-	}
-}
+# 	option = { #Back out
+# 		name = tribal.1006.b
+# 		tribal_1001_challenger_backed_out_effect = yes
+# 		scope:liege_to_challenge = {
+# 			trigger_event = tribal.1010
+# 		}
+# 	}
+# }
 
 #Challenger won!
-tribal.1007 = {
-	type = character_event
-	title = tribal.1001.t
-	desc = {
-		desc = tribal.1008.desc
-		desc = {
-			random_valid = {
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:a }
-					desc = insult_poetry_line_1_a_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:a }
-					desc = insult_poetry_line_1_a_02
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:b }
-					desc = insult_poetry_line_1_b_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:b }
-					desc = insult_poetry_line_1_b_02
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_1_c_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_1_c_02
-				}
-			}
-			random_valid = {
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:a }
-					desc = insult_poetry_line_2_a_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:b }
-					desc = insult_poetry_line_2_b_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_2_c_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_2_c_02
-				}
-			}
-		}
-		desc = tribal.1007.desc_ending
-	}
-	theme = realm
-	left_portrait = {
-		character = scope:challenger
-		animation = happiness
-	}
+# tribal.1007 = {
+# 	type = character_event
+# 	title = tribal.1001.t
+# 	desc = {
+# 		desc = tribal.1008.desc
+# 		desc = {
+# 			random_valid = {
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:a }
+# 					desc = insult_poetry_line_1_a_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:a }
+# 					desc = insult_poetry_line_1_a_02
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:b }
+# 					desc = insult_poetry_line_1_b_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:b }
+# 					desc = insult_poetry_line_1_b_02
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_1_c_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_1_c_02
+# 				}
+# 			}
+# 			random_valid = {
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:a }
+# 					desc = insult_poetry_line_2_a_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:b }
+# 					desc = insult_poetry_line_2_b_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_2_c_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_2_c_02
+# 				}
+# 			}
+# 		}
+# 		desc = tribal.1007.desc_ending
+# 	}
+# 	theme = realm
+# 	left_portrait = {
+# 		character = scope:challenger
+# 		animation = happiness
+# 	}
 
-	immediate = {
-		scope:challenger = {
-			tribal_transfer_liege_title_effect = yes
-		}
-	}
+# 	immediate = {
+# 		scope:challenger = {
+# 			tribal_transfer_liege_title_effect = yes
+# 		}
+# 	}
 
-	option = {
-		name = tribal.1007.a
-	}
-}
+# 	option = {
+# 		name = tribal.1007.a
+# 	}
+# }
 
-#Challenger lost
-tribal.1008 = {
-	type = character_event
-	title = tribal.1001.t
-	desc = {
-		desc = tribal.1008.desc
-		desc = {
-			random_valid = {
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:a }
-					desc = insult_poetry_line_1_a_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:a }
-					desc = insult_poetry_line_1_a_02
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:b }
-					desc = insult_poetry_line_1_b_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:b }
-					desc = insult_poetry_line_1_b_02
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_1_c_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_1_c_02
-				}
-			}
-			random_valid = {
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:a }
-					desc = insult_poetry_line_2_a_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:b }
-					desc = insult_poetry_line_2_b_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_2_c_01
-				}
-				triggered_desc = {
-					trigger = { scope:rhyme_group = flag:c }
-					desc = insult_poetry_line_2_c_02
-				}
-			}
-		}
-		desc = tribal.1008.desc_ending
-	}
-	theme = realm
-	left_portrait = {
-		character = scope:challenger
-		animation = sadness
-	}
+# #Challenger lost
+# tribal.1008 = {
+# 	type = character_event
+# 	title = tribal.1001.t
+# 	desc = {
+# 		desc = tribal.1008.desc
+# 		desc = {
+# 			random_valid = {
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:a }
+# 					desc = insult_poetry_line_1_a_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:a }
+# 					desc = insult_poetry_line_1_a_02
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:b }
+# 					desc = insult_poetry_line_1_b_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:b }
+# 					desc = insult_poetry_line_1_b_02
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_1_c_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_1_c_02
+# 				}
+# 			}
+# 			random_valid = {
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:a }
+# 					desc = insult_poetry_line_2_a_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:b }
+# 					desc = insult_poetry_line_2_b_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_2_c_01
+# 				}
+# 				triggered_desc = {
+# 					trigger = { scope:rhyme_group = flag:c }
+# 					desc = insult_poetry_line_2_c_02
+# 				}
+# 			}
+# 		}
+# 		desc = tribal.1008.desc_ending
+# 	}
+# 	theme = realm
+# 	left_portrait = {
+# 		character = scope:challenger
+# 		animation = sadness
+# 	}
 
-	immediate = {
-		show_as_tooltip = {
-			scope:challenger = {
-				tribal_challenger_lost_effect = yes
-			}
-		}
-	}
+# 	immediate = {
+# 		show_as_tooltip = {
+# 			scope:challenger = {
+# 				tribal_challenger_lost_effect = yes
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = tribal.1008.a
-	}
-}
+# 	option = {
+# 		name = tribal.1008.a
+# 	}
+# }
 
-#They back out
-tribal.1010 = {
-	type = character_event
-	title = tribal.1001.t
-	desc = tribal.1010.desc
-	theme = realm
-	left_portrait = {
-		character = scope:challenger
-		animation = fear
-	}
+# #They back out
+# tribal.1010 = {
+# 	type = character_event
+# 	title = tribal.1001.t
+# 	desc = tribal.1010.desc
+# 	theme = realm
+# 	left_portrait = {
+# 		character = scope:challenger
+# 		animation = fear
+# 	}
 
-	immediate = {
-		add_prestige = medium_prestige_gain
-		show_as_tooltip = {
-			scope:challenger = {
-				tribal_1001_challenger_backed_out_effect = yes
-			}
-		}
-	}
+# 	immediate = {
+# 		add_prestige = medium_prestige_gain
+# 		show_as_tooltip = {
+# 			scope:challenger = {
+# 				tribal_1001_challenger_backed_out_effect = yes
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = tribal.1010.a
-	}
-}
+# 	option = {
+# 		name = tribal.1010.a
+# 	}
+# }
 
 #	Bout has ended, inform affected parties.
 tribal.1021 = {
@@ -1159,19 +1159,19 @@ tribal.1022 = {
 # by Linnéa Thimrén						#
 #########################################
 
-scripted_trigger tribal_1101_victim_trigger = {
-	basic_is_available_ai = yes
-	is_in_the_same_court_as_or_guest = root
-	NOR = {
-		this = scope:rival
-		has_relation_lover = scope:rival
-		has_relation_friend = scope:rival
-		has_trait_rank = {
-			trait = wounded
-			rank >= 2
-		}
-	}
-}
+# scripted_trigger tribal_1101_victim_trigger = {
+# 	basic_is_available_ai = yes
+# 	is_in_the_same_court_as_or_guest = root
+# 	NOR = {
+# 		this = scope:rival
+# 		has_relation_lover = scope:rival
+# 		has_relation_friend = scope:rival
+# 		has_trait_rank = {
+# 			trait = wounded
+# 			rank >= 2
+# 		}
+# 	}
+# }
 
 # tribal.1101 = {
 # 	type = character_event
@@ -1471,124 +1471,124 @@ scripted_trigger tribal_1101_victim_trigger = {
 # }
 
 #You won!!
-tribal.1102 = {
-	type = character_event
-	title = tribal.1101.t
-	desc = {
-		desc = tribal.1102.desc_opening
-		desc = tribal.1102.desc
-	}
-	theme = rival_relation
-	left_portrait = scope:rival
+# tribal.1102 = {
+# 	type = character_event
+# 	title = tribal.1101.t
+# 	desc = {
+# 		desc = tribal.1102.desc_opening
+# 		desc = tribal.1102.desc
+# 	}
+# 	theme = rival_relation
+# 	left_portrait = scope:rival
 
-	immediate = {
-		set_signature_weapon_effect = yes
-		scope:rival = {
-			add_prestige_level = -1
-			death = {
-				death_reason = death_duel
-				killer = root
-			}
-		}
-		add_prestige = medium_prestige_gain
-	}
+# 	immediate = {
+# 		set_signature_weapon_effect = yes
+# 		scope:rival = {
+# 			add_prestige_level = -1
+# 			death = {
+# 				death_reason = death_duel
+# 				killer = root
+# 			}
+# 		}
+# 		add_prestige = medium_prestige_gain
+# 	}
 
-	option = {
-		name = tribal.1102.a
-	}
-}
+# 	option = {
+# 		name = tribal.1102.a
+# 	}
+# }
 
-#You won!! By the help of your friend
-tribal.1103 = {
-	type = character_event
-	title = tribal.1101.t
-	desc = {
-		desc = tribal.1103.desc_opening
-		desc = tribal.1103.desc
-	}
-	theme = rival_relation
-	left_portrait = scope:rival
-	right_portrait = {
-		character = scope:friend
-		animation = personality_bold
-	}
+# #You won!! By the help of your friend
+# tribal.1103 = {
+# 	type = character_event
+# 	title = tribal.1101.t
+# 	desc = {
+# 		desc = tribal.1103.desc_opening
+# 		desc = tribal.1103.desc
+# 	}
+# 	theme = rival_relation
+# 	left_portrait = scope:rival
+# 	right_portrait = {
+# 		character = scope:friend
+# 		animation = personality_bold
+# 	}
 
-	immediate = {
-		scope:friend = {
-			set_signature_weapon_effect = yes
-		}
-		scope:rival = {
-			add_prestige_level = -1
-			death = {
-				death_reason = death_duel
-				killer = root
-			}
-		}
-		add_prestige = medium_prestige_gain
-	}
+# 	immediate = {
+# 		scope:friend = {
+# 			set_signature_weapon_effect = yes
+# 		}
+# 		scope:rival = {
+# 			add_prestige_level = -1
+# 			death = {
+# 				death_reason = death_duel
+# 				killer = root
+# 			}
+# 		}
+# 		add_prestige = medium_prestige_gain
+# 	}
 
-	option = {
-		name = tribal.1102.a
-	}
-}
+# 	option = {
+# 		name = tribal.1102.a
+# 	}
+# }
 
-#Rival won...
-tribal.1104 = {
-	type = character_event
-	title = tribal.1101.t
-	desc = {
-		desc = tribal.1102.desc_opening
-		desc = tribal.1104.desc
-	}
-	theme = rival_relation
-	left_portrait = {
-		character = scope:rival
-		animation = personality_bold
-	}
+# #Rival won...
+# tribal.1104 = {
+# 	type = character_event
+# 	title = tribal.1101.t
+# 	desc = {
+# 		desc = tribal.1102.desc_opening
+# 		desc = tribal.1104.desc
+# 	}
+# 	theme = rival_relation
+# 	left_portrait = {
+# 		character = scope:rival
+# 		animation = personality_bold
+# 	}
 
-	immediate = {
-		set_signature_weapon_effect = yes
-		scope:rival = {
-			set_signature_weapon_effect = yes
-		}
-		increase_wounds_effect = { REASON = fight }
-		add_prestige = minor_prestige_loss
-	}
+# 	immediate = {
+# 		set_signature_weapon_effect = yes
+# 		scope:rival = {
+# 			set_signature_weapon_effect = yes
+# 		}
+# 		increase_wounds_effect = { REASON = fight }
+# 		add_prestige = minor_prestige_loss
+# 	}
 
-	option = {
-		name = tribal.1104.a
-	}
-}
+# 	option = {
+# 		name = tribal.1104.a
+# 	}
+# }
 
-#Rival won over friend...
-tribal.1105 = {
-	type = character_event
-	title = tribal.1101.t
-	desc = {
-		desc = tribal.1102.desc_opening
-		desc = tribal.1105.desc
-	}
-	theme = rival_relation
-	left_portrait = {
-		character = scope:rival
-		animation = personality_bold
-	}
+# #Rival won over friend...
+# tribal.1105 = {
+# 	type = character_event
+# 	title = tribal.1101.t
+# 	desc = {
+# 		desc = tribal.1102.desc_opening
+# 		desc = tribal.1105.desc
+# 	}
+# 	theme = rival_relation
+# 	left_portrait = {
+# 		character = scope:rival
+# 		animation = personality_bold
+# 	}
 
-	immediate = {
-		scope:friend = {
-			set_signature_weapon_effect = yes
-			increase_wounds_effect = { REASON = fight }
-		}
-		scope:rival = {
-			set_signature_weapon_effect = yes
-		}
-		add_prestige = minor_prestige_loss
-	}
+# 	immediate = {
+# 		scope:friend = {
+# 			set_signature_weapon_effect = yes
+# 			increase_wounds_effect = { REASON = fight }
+# 		}
+# 		scope:rival = {
+# 			set_signature_weapon_effect = yes
+# 		}
+# 		add_prestige = minor_prestige_loss
+# 	}
 
-	option = {
-		name = tribal.1105.a
-	}
-}
+# 	option = {
+# 		name = tribal.1105.a
+# 	}
+# }
 
 
 #########################################

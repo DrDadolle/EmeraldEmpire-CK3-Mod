@@ -1186,223 +1186,223 @@
 # by Ola Jentzsch
 ###################################
 
-fp3_yearly.8022 = {
-	type = character_event  
-	title = fp3_yearly.8022.t
-	desc = fp3_yearly.8022.desc	
-	theme = learning_medicine_focus
+# fp3_yearly.8022 = {
+# 	type = character_event  
+# 	title = fp3_yearly.8022.t
+# 	desc = fp3_yearly.8022.desc	
+# 	theme = learning_medicine_focus
 
-	left_portrait = {
-		character = root
-		animation = chancellor 
-	}
+# 	left_portrait = {
+# 		character = root
+# 		animation = chancellor 
+# 	}
 
-	right_portrait = {
-		character = scope:enthusiastic_alchemist
-		animation = personality_cynical
-	}
+# 	right_portrait = {
+# 		character = scope:enthusiastic_alchemist
+# 		animation = personality_cynical
+# 	}
 
-	trigger = { exists = scope:enthusiastic_alchemist } #safety check
+# 	trigger = { exists = scope:enthusiastic_alchemist } #safety check
 
-	immediate = {}
+# 	immediate = {}
 
-	option = { #fascinating, let's delve deeper
-		name = fp3_yearly.8022.a
-		custom_tooltip = fp3_studying_acid_ominously_tooltip
+# 	option = { #fascinating, let's delve deeper
+# 		name = fp3_yearly.8022.a
+# 		custom_tooltip = fp3_studying_acid_ominously_tooltip
 
-		trigger_event = fp3_yearly.8023
+# 		trigger_event = fp3_yearly.8023
 
-	}
+# 	}
 
-	option = { #might it have military uses?
-		name = fp3_yearly.8022.b
-		flavor = fp3_yearly.8022.b.flavor
+# 	option = { #might it have military uses?
+# 		name = fp3_yearly.8022.b
+# 		flavor = fp3_yearly.8022.b.flavor
 
-		remove_short_term_gold = major_gold_value 
+# 		remove_short_term_gold = major_gold_value 
 
-		if = {
-			limit = {
-				faith = {
-					OR = {
-						#L5R Disabled
-						# has_doctrine = tenet_dharmic_pacifism
-						has_doctrine = tenet_pacifism
-					}
-				}
-			}
-			add_piety = minor_piety_loss 
-		}
+# 		if = {
+# 			limit = {
+# 				faith = {
+# 					OR = {
+# 						#L5R Disabled
+# 						# has_doctrine = tenet_dharmic_pacifism
+# 						has_doctrine = tenet_pacifism
+# 					}
+# 				}
+# 			}
+# 			add_piety = minor_piety_loss 
+# 		}
 
-		add_character_modifier = {
-			modifier = fp3_oil_of_vitriol_modifier
-			years = 25
-		}
+# 		add_character_modifier = {
+# 			modifier = fp3_oil_of_vitriol_modifier
+# 			years = 25
+# 		}
 
-		stress_impact = {
-			compassionate = medium_stress_impact_gain
-		}
-	}
+# 		stress_impact = {
+# 			compassionate = medium_stress_impact_gain
+# 		}
+# 	}
 
-	#L5R Disabled
-	# option = { #leave now
-	# 	name = fp3_yearly.8022.c
-	# 	flavor = fp3_yearly.8022.c.flavor
+# 	#L5R Disabled
+# 	# option = { #leave now
+# 	# 	name = fp3_yearly.8022.c
+# 	# 	flavor = fp3_yearly.8022.c.flavor
 
 
-	# 	if = {
-	# 		limit = {
-	# 			AND = {
-	# 				OR = {
-	# 					exists = global_var:avicenna_created
-	# 					exists = global_var:rhazes_created
-	# 				}
-	# 				scope:enthusiastic_alchemist = { has_character_flag = fp3_historical_person_flag }
-	# 			}
-	# 		}
-	# 		scope:enthusiastic_alchemist = { #Let's keep the historical characters around, if they were created
-	# 			move_to_pool = yes 
-	# 		}
-	# 	}
-	# 	else = {
-	# 		scope:enthusiastic_alchemist = { #otherwise, let's just have him disappear 
-	# 			move_to_pool = yes
-	# 			silent_disappearance_effect = yes
-	# 		}
-	# 	}
+# 	# 	if = {
+# 	# 		limit = {
+# 	# 			AND = {
+# 	# 				OR = {
+# 	# 					exists = global_var:avicenna_created
+# 	# 					exists = global_var:rhazes_created
+# 	# 				}
+# 	# 				scope:enthusiastic_alchemist = { has_character_flag = fp3_historical_person_flag }
+# 	# 			}
+# 	# 		}
+# 	# 		scope:enthusiastic_alchemist = { #Let's keep the historical characters around, if they were created
+# 	# 			move_to_pool = yes 
+# 	# 		}
+# 	# 	}
+# 	# 	else = {
+# 	# 		scope:enthusiastic_alchemist = { #otherwise, let's just have him disappear 
+# 	# 			move_to_pool = yes
+# 	# 			silent_disappearance_effect = yes
+# 	# 		}
+# 	# 	}
 
-	# 	stress_impact = {
-   	# 		base = minor_stress_impact_loss
-   	# 		ambitious = medium_stress_impact_gain					
-	# 	}
-	# }
-}
+# 	# 	stress_impact = {
+#    	# 		base = minor_stress_impact_loss
+#    	# 		ambitious = medium_stress_impact_gain					
+# 	# 	}
+# 	# }
+# }
 
 ###################################
 # Corrosive Conundrums (The Path to Disfigurement, part 3)
 # by Ola Jentzsch
 ###################################
 
-fp3_yearly.8023 = {
-	type = character_event  
-	title = fp3_yearly.8023.t
-	desc = fp3_yearly.8023.desc	
-	theme = learning_medicine_focus
+# fp3_yearly.8023 = {
+# 	type = character_event  
+# 	title = fp3_yearly.8023.t
+# 	desc = fp3_yearly.8023.desc	
+# 	theme = learning_medicine_focus
 
-	left_portrait = {
-		character = root
-		animation = personality_greedy
-	}
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_greedy
+# 	}
 
-	right_portrait = {
-		character = scope:enthusiastic_alchemist
-		animation = worry
-	}
+# 	right_portrait = {
+# 		character = scope:enthusiastic_alchemist
+# 		animation = worry
+# 	}
 
-	trigger = { exists = scope:enthusiastic_alchemist } #safety check
+# 	trigger = { exists = scope:enthusiastic_alchemist } #safety check
 
-	immediate = {}
+# 	immediate = {}
 
-	option = { #I have come this far
-		name = fp3_yearly.8023.a
+# 	option = { #I have come this far
+# 		name = fp3_yearly.8023.a
 
 		
-		flavor = fp3_horrible_accident.flavor
-		if = {
-			limit = { 
-				NOT = { has_trait = disfigured }
-			}
-			random = {
-				chance = 10
-				add_trait = disfigured	
-			}
-		}
+# 		flavor = fp3_horrible_accident.flavor
+# 		if = {
+# 			limit = { 
+# 				NOT = { has_trait = disfigured }
+# 			}
+# 			random = {
+# 				chance = 10
+# 				add_trait = disfigured	
+# 			}
+# 		}
 
-		duel = {
-			skill = learning
-			value = high_skill_rating
+# 		duel = {
+# 			skill = learning
+# 			value = high_skill_rating
 
-			20 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = 2
-				}
-				root = {
-					send_interface_toast = {
-						title = experimenting_with_acid_toast.success
-						left_icon = root
+# 			20 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = 2
+# 				}
+# 				root = {
+# 					send_interface_toast = {
+# 						title = experimenting_with_acid_toast.success
+# 						left_icon = root
 				
-						add_character_modifier = {
-							modifier = fp3_alchemical_insights_modifier
-						}
-					}
-				}	
-			}
-			20 = {
-				compare_modifier = {
-					value = scope:duel_value
-					multiplier = -1
-				}
-				root = {
-					send_interface_toast = {
-						title = experimenting_with_acid_toast.failure
-						left_icon = root
-						add_character_modifier = {
-							modifier = fp3_dabbling_in_alchemy_modifier
-							years = 25
-						}
-					}
-				}
-			}
-		}
-	}
+# 						add_character_modifier = {
+# 							modifier = fp3_alchemical_insights_modifier
+# 						}
+# 					}
+# 				}	
+# 			}
+# 			20 = {
+# 				compare_modifier = {
+# 					value = scope:duel_value
+# 					multiplier = -1
+# 				}
+# 				root = {
+# 					send_interface_toast = {
+# 						title = experimenting_with_acid_toast.failure
+# 						left_icon = root
+# 						add_character_modifier = {
+# 							modifier = fp3_dabbling_in_alchemy_modifier
+# 							years = 25
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = { #At least I learned something
-		name = fp3_yearly.8023.b
+# 	option = { #At least I learned something
+# 		name = fp3_yearly.8023.b
 
-		add_learning_lifestyle_xp = major_lifestyle_experience
+# 		add_learning_lifestyle_xp = major_lifestyle_experience
 
-		add_character_modifier = {
-			modifier = fp3_dabbling_in_alchemy_modifier
-			years = 25
-		}
+# 		add_character_modifier = {
+# 			modifier = fp3_dabbling_in_alchemy_modifier
+# 			years = 25
+# 		}
 
-		stress_impact = {
-   			#no stress for this event
-		}
-	}
+# 		stress_impact = {
+#    			#no stress for this event
+# 		}
+# 	}
 
-	#L5R Disabled
-	# option = { #Go, and take your acid with you
-	# 	name = fp3_yearly.8023.c
+# 	#L5R Disabled
+# 	# option = { #Go, and take your acid with you
+# 	# 	name = fp3_yearly.8023.c
 
-	# 	add_learning_lifestyle_xp = major_lifestyle_experience
+# 	# 	add_learning_lifestyle_xp = major_lifestyle_experience
 
-	# 	if = {
-	# 		limit = {
-	# 			AND = {
-	# 				OR = {
-	# 					exists = global_var:avicenna_created
-	# 					exists = global_var:rhazes_created
-	# 				}
-	# 				scope:enthusiastic_alchemist = { has_character_flag = fp3_historical_person_flag }
-	# 			}
-	# 		}
-	# 		scope:enthusiastic_alchemist = { #Let's keep the historical characters around, if they were created
-	# 			move_to_pool = yes 
-	# 		}
-	# 	}
-	# 	else = {
-	# 		scope:enthusiastic_alchemist = { #otherwise, let's just have him disappear 
-	# 			move_to_pool = yes
-	# 			silent_disappearance_effect = yes
-	# 		}
-	# 	}
+# 	# 	if = {
+# 	# 		limit = {
+# 	# 			AND = {
+# 	# 				OR = {
+# 	# 					exists = global_var:avicenna_created
+# 	# 					exists = global_var:rhazes_created
+# 	# 				}
+# 	# 				scope:enthusiastic_alchemist = { has_character_flag = fp3_historical_person_flag }
+# 	# 			}
+# 	# 		}
+# 	# 		scope:enthusiastic_alchemist = { #Let's keep the historical characters around, if they were created
+# 	# 			move_to_pool = yes 
+# 	# 		}
+# 	# 	}
+# 	# 	else = {
+# 	# 		scope:enthusiastic_alchemist = { #otherwise, let's just have him disappear 
+# 	# 			move_to_pool = yes
+# 	# 			silent_disappearance_effect = yes
+# 	# 		}
+# 	# 	}
 			
-	# 	stress_impact = {
-   	# 		#no stress for this event
-	# 	}
-	# }
-}
+# 	# 	stress_impact = {
+#    	# 		#no stress for this event
+# 	# 	}
+# 	# }
+# }
 
 ###################################
 # The Return to the Sky 

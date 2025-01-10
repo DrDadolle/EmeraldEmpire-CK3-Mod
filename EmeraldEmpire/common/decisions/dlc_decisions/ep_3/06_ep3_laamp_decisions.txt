@@ -1091,7 +1091,7 @@ treasure_hunting_contract_decision = {
 					ADVENTURER = root
 				}
 			}
-			scope:search_shadowlands = {
+			scope:search_world_shadowlands = {
 				set_variable = {
 					name = adventure_destination
 					value = flag:world_shadowlands

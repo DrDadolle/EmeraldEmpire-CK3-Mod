@@ -555,17 +555,18 @@ weaver_inspiration = {
 										value = flag:geometric_patterns
 									}
 								}
-								#L5R Disabled
-								# 25 = {
-								# 	trigger = { religion = religion:islam_religion }
-								# 	ai_value_modifier = {
-								# 		ai_zeal = 0.25
-								# 	}
-								# 	set_variable = {
-								# 		name = artifact_tapestry_scene
-								# 		value = flag:calligraphic
-								# 	}
-								# }
+								25 = {
+									#L5R Disabled
+									# Everyone in Rokugan loves calligraphy
+									# trigger = { religion = religion:islam_religion }
+									ai_value_modifier = {
+										ai_zeal = 0.25
+									}
+									set_variable = {
+										name = artifact_tapestry_scene
+										value = flag:calligraphic
+									}
+								}
 
 								# Natural Scene - Depicts Animals (Aniconic Allowed)
 								10 = {

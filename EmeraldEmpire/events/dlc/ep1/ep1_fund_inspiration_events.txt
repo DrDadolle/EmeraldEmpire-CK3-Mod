@@ -362,10 +362,11 @@ scripted_effect inspiration_completion_effect = {
 				limit = { has_character_flag = had_event_fund_inspiration_6001 }
 				remove_character_flag = had_event_fund_inspiration_6001
 			}
-			if = {
-				limit = { has_character_flag = had_event_fund_inspiration_6002 }
-				remove_character_flag = had_event_fund_inspiration_6002
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = { has_character_flag = had_event_fund_inspiration_6002 }
+			# 	remove_character_flag = had_event_fund_inspiration_6002
+			# }
 			if = {
 				limit = { has_character_flag = had_event_fund_inspiration_6003 }
 				remove_character_flag = had_event_fund_inspiration_6003
@@ -374,10 +375,11 @@ scripted_effect inspiration_completion_effect = {
 				limit = { has_character_flag = had_event_fund_inspiration_6004 }
 				remove_character_flag = had_event_fund_inspiration_6004
 			}
-			if = {
-				limit = { has_character_flag = had_event_fund_inspiration_6005 }
-				remove_character_flag = had_event_fund_inspiration_6005
-			}
+			#L5r Disabled
+			# if = {
+			# 	limit = { has_character_flag = had_event_fund_inspiration_6005 }
+			# 	remove_character_flag = had_event_fund_inspiration_6005
+			# }
 			if = {
 				limit = { has_character_flag = had_event_fund_inspiration_6006 }
 				remove_character_flag = had_event_fund_inspiration_6006
@@ -3260,25 +3262,27 @@ fund_inspiration.0041 = {
 		name = fund_inspiration.0041.option_abstract
 
 		hidden_effect = {
-			# random_list = {
-			# 	40 = {
+			random_list = {
+				40 = {
 					scope:inspiration_owner = {
 						set_variable = {
 							name = artifact_tapestry_scene
 							value = flag:geometric_patterns
 						}
 					}
-			# 	}
-			# 	60 = {
-			# 		trigger = {	scope:inspiration_owner = {	religion = religion:islam_religion } }
-			# 		scope:inspiration_owner = {
-			# 			set_variable = {
-			# 				name = artifact_tapestry_scene
-			# 				value = flag:calligraphic
-			# 			}
-			# 		}
-			# 	}
-			# }
+				}
+				60 = {
+					#L5R Disabled
+					# Everyone in Rokugan loves calligraphy
+					# trigger = {	scope:inspiration_owner = {	religion = religion:islam_religion } }
+					scope:inspiration_owner = {
+						set_variable = {
+							name = artifact_tapestry_scene
+							value = flag:calligraphic
+						}
+					}
+				}
+			}
 		}
 
 		ai_chance = {

@@ -362,6 +362,11 @@ on_game_start_after_lobby = {
 					VARIABLE = started_one_of_a_kind_achievement
 						VALUE = yes
 				}
+				##9 True Tolerance
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_true_tolerance_achievement
+					VALUE = yes
+				}
 				## 14. Sir Lance-a-Lot
 				add_achievement_global_variable_effect = {
 					VARIABLE = started_sir_lance_a_lot_achievement
@@ -397,6 +402,52 @@ on_game_start_after_lobby = {
 				add_achievement_global_variable_effect = {
 					VARIABLE = started_there_and_back_again_achievement
 					VALUE = yes
+				}
+				## 06. The Very Best
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_the_very_best_achievement
+					VALUE = yes
+				}
+				## 07. Like No One Ever Was
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_like_no_one_ever_was_achievement
+					VALUE = yes
+				}
+				## 20. The Iron and Golden King
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_the_iron_and_golden_king_achievement
+					VALUE = yes
+				}
+				### RULER DESIGNER ACHIEVEMENT BLOCKS ###
+				if = {
+					limit = {
+						num_virtuous_traits >= 3
+					}
+					add_achievement_flag_effect = { FLAG = rd_character_blocked_paragon_of_virtue_achievement_flag	}
+				}
+				if = {
+					limit = {
+						any_child = {
+							count >= 10
+							is_alive = yes
+						}
+					}
+					add_achievement_flag_effect = { FLAG = rd_character_blocked_the_succession_is_safe_achievement_flag }
+				}
+				if = {
+					limit = {
+						any_child = {
+							has_trait = inbred
+						}
+					}
+					add_achievement_flag_effect = { FLAG = rd_character_blocked_keeping_it_in_the_family_achievement_flag }
+				}
+				if = {
+					limit = {
+						highest_held_title_tier >= tier_empire
+						should_be_naked_trigger = yes
+					}
+					add_achievement_flag_effect = { FLAG = rd_character_blocked_the_emperors_new_clothes_achievement_flag }
 				}
 			}
 		}

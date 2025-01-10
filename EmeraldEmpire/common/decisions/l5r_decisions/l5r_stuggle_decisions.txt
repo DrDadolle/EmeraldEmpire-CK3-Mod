@@ -20,10 +20,16 @@ decision_invade_crab_clan = {
 	ai_will_do = {
 		base = 1000
 
-		# AI will not attempt unless they are at least a king ? 
+		# AI will not attempt unless Rokugan and Crab Clan is weaker
 		modifier = { 
 			factor = 0
-			highest_held_title_tier <= tier_duchy
+			exists = title:e_rokugan.holder
+			root.total_strength < title:e_rokugan.holder.total_strength
+		}
+		modifier = {
+			factor = 0
+			exists = title:k_crab_clan.holder
+			root.total_strength < title:k_crab_clan.holder.total_strength
 		}
 
 	}
