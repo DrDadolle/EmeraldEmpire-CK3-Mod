@@ -377,6 +377,11 @@ on_game_start_after_lobby = {
 					VARIABLE = started_im_in_my_elements_achievement
 					VALUE = yes
 				}
+				## 16. Ahab
+				add_achievement_global_variable_effect = {
+					VARIABLE = started_ahab_achievement
+					VALUE = yes
+				}
 				# EP2
 				## 01. The Grandest Tour
 				add_achievement_global_variable_effect = {

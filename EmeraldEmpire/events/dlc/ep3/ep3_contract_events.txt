@@ -1654,10 +1654,10 @@ scripted_effect change_treasure_type = {
 		# 	}
 		# 	reforge_artifact = { type = regalia }
 		# }
-		else_if = {
-			limit = { has_variable = iron_crown }
-			reforge_artifact = { type = helmet }				
-		}
+		# else_if = {
+		# 	limit = { has_variable = iron_crown }
+		# 	reforge_artifact = { type = helmet }				
+		# }
 		else_if = {
 			limit = { artifact_type = pedestal }
 			reforge_artifact = { type = miscellaneous }

@@ -634,21 +634,22 @@ birth.1001 = {
 		}
 		#Conclusion
 		first_valid = {
+			#L5R Disabled
 			# Mystical Birthright
-			triggered_desc = {
-				trigger = {
-					scope:child = { has_character_flag = born_as_taltos }
-					faith = scope:child.faith
-				}
-				desc = birth.1001.taltos.desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:child = { has_character_flag = born_as_taltos }
-					NOT = {faith = scope:child.faith}
-				}
-				desc = birth.1001.taltos_unfaithful.desc
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:child = { has_character_flag = born_as_taltos }
+			# 		faith = scope:child.faith
+			# 	}
+			# 	desc = birth.1001.taltos.desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:child = { has_character_flag = born_as_taltos }
+			# 		NOT = {faith = scope:child.faith}
+			# 	}
+			# 	desc = birth.1001.taltos_unfaithful.desc
+			# }
 			# Twins
 			triggered_desc = {
 				trigger = {
@@ -1305,21 +1306,22 @@ birth.1003 = {
 		}
 		#Conclusion
 		first_valid = {
+			#L5R Disabled
 			# Mystical Birthright
-			triggered_desc = {
-				trigger = {
-					scope:child = { has_character_flag = born_as_taltos }
-					faith = scope:child.faith
-				}
-				desc = birth.1001.taltos.desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:child = { has_character_flag = born_as_taltos }
-					NOT = {faith = scope:child.faith}
-				}
-				desc = birth.1001.taltos_unfaithful.desc
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:child = { has_character_flag = born_as_taltos }
+			# 		faith = scope:child.faith
+			# 	}
+			# 	desc = birth.1001.taltos.desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:child = { has_character_flag = born_as_taltos }
+			# 		NOT = {faith = scope:child.faith}
+			# 	}
+			# 	desc = birth.1001.taltos_unfaithful.desc
+			# }
 			# Twins
 			triggered_desc = {
 				trigger = {

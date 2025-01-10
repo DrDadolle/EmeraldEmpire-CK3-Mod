@@ -1317,25 +1317,26 @@ on_war_won_attacker = { # As in, won BY attacker. Only one of the two on_actions
 				}
 			}
 		}
+		#L5R Disabled
 		# EP3 - Is it valid for a Byzantine triumph?
-		if = {
-			limit = {
-				scope:attacker = {
-					OR = {
-						has_title = title:e_byzantium
-						has_title = title:e_roman_empire
-					}
-					culture = { has_cultural_parameter = holds_triumphs }
-				}
-			}
-			scope:attacker = {
-				set_variable = {
-					name = ep3_valid_triumph_victory
-					value = scope:defender
-					years = 5
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:attacker = {
+		# 			OR = {
+		# 				has_title = title:e_byzantium
+		# 				has_title = title:e_roman_empire
+		# 			}
+		# 			culture = { has_cultural_parameter = holds_triumphs }
+		# 		}
+		# 	}
+		# 	scope:attacker = {
+		# 		set_variable = {
+		# 			name = ep3_valid_triumph_victory
+		# 			value = scope:defender
+		# 			years = 5
+		# 		}
+		# 	}
+		# }
 		# EP3 - War Group Contracts
 		war_task_contracts_completion_effect = yes
 		# EP3 - LAAMPS hired as mercenaries
@@ -1651,25 +1652,26 @@ on_war_won_defender = {
 			}
 		}
 
+		#L5R Disabled
 		#Ep3 - Is it valid for a Byzantine triumph?
-		if = {
-			limit = {
-				scope:defender = {
-					OR = {
-						has_title = title:e_byzantium
-						has_title = title:e_roman_empire
-					}
-					culture = { has_cultural_parameter = holds_triumphs }
-				}
-			}
-			scope:defender = {
-				set_variable = {
-					name = ep3_valid_triumph_victory
-					value = scope:attacker
-					years = 5
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			OR = {
+		# 				has_title = title:e_byzantium
+		# 				has_title = title:e_roman_empire
+		# 			}
+		# 			culture = { has_cultural_parameter = holds_triumphs }
+		# 		}
+		# 	}
+		# 	scope:defender = {
+		# 		set_variable = {
+		# 			name = ep3_valid_triumph_victory
+		# 			value = scope:attacker
+		# 			years = 5
+		# 		}
+		# 	}
+		# }
 		# EP3 - War Group Contracts
 		war_task_contracts_completion_effect = yes
 		# EP3 - LAAMPS hired as mercenaries

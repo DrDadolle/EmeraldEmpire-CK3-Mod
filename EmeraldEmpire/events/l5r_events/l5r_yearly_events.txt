@@ -621,12 +621,12 @@ l5r_yearly.0020 = {
 
 	left_portrait = {
 		character = root
-		animation = idle
+		animation = personality_rational
 	}
 
 	right_portrait = {
 		character = scope:tea_vassal
-		animation = personality_rational
+		animation = happiness
 	}
 
 	trigger = {

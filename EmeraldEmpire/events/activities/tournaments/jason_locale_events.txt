@@ -3442,10 +3442,11 @@ jason_locale_events.210 = {
 					save_scope_as = camel_lord
 				}
 			}
-			add_character_flag = {
-				flag = camel_challenge
-				years = 30
-			}
+			#L5R Disabled
+			# add_character_flag = {
+			# 	flag = camel_challenge
+			# 	years = 30
+			# }
 		}
 		else = {
 			scope:activity = {
@@ -3458,10 +3459,11 @@ jason_locale_events.210 = {
 					save_scope_as = elephant_lord
 				}
 			}
-			add_character_flag = {
-				flag = elephant_challenge
-				years = 30
-			}
+			#L5R Disabled
+			# add_character_flag = {
+			# 	flag = elephant_challenge
+			# 	years = 30
+			# }
 		}
 		# find a same culture knight to represent you
 		if = {

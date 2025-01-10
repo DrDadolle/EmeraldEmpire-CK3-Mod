@@ -64,7 +64,7 @@ struggle_shadowlands_ending_shadowlands_domination = {
 	}
 
 	ai_will_do = {
-		base = 0
+		base = 100
 	}
 	
 }
@@ -141,7 +141,7 @@ struggle_shadowlands_ending_crab_domination = {
 	}
 
 	ai_will_do = {
-		base = 0
+		base = 100
 	}
 	
 }
@@ -232,7 +232,7 @@ struggle_shadowlands_ending_spider_domination = {
 	}
 
 	ai_will_do = {
-		base = 0
+		base = 100
 	}
 	
 }

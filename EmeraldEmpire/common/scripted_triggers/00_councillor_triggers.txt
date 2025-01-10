@@ -872,7 +872,8 @@ councillor_liege_has_family_business_bonus = {
 }
 
 councillor_liege_has_consulted_house_bonus = {
-	scope:councillor_liege ?= { has_character_flag = fp3_consulted_house }
+	#L5R Disabled
+	# scope:councillor_liege ?= { has_character_flag = fp3_consulted_house }
 	exists = scope:councillor_liege.house
 	exists = scope:councillor.house
 	scope:councillor ?= { house = scope:councillor_liege.house }

@@ -403,14 +403,15 @@ task_develop_county = {
 					scope:councillor_liege = {
 						primary_title.tier < tier_duchy
 					}
-					AND = {
-						scope:councillor_liege = {
-							has_character_flag = agenda_towards_deescalation
-						}
-						NOT = {
-							culture = scope:councillor_liege.culture
-						}
-					}
+					#L5R Disabled
+					# AND = {
+					# 	scope:councillor_liege = {
+					# 		has_character_flag = agenda_towards_deescalation
+					# 	}
+					# 	NOT = {
+					# 		culture = scope:councillor_liege.culture
+					# 	}
+					# }
 				}
 			}
 		}
@@ -1243,19 +1244,20 @@ task_promote_culture = {
 			}
 			add = 200
 		}
+		#L5R Disabled
 		# Motivate the AI with an escalation agenda to take this task
-		if = {
-			limit = {
-				has_character_flag = agenda_towards_escalation
-			}
-			add = 500
-		}
-		else_if = {
-			limit = {
-				has_character_flag = agenda_towards_deescalation
-			}
-			add = -250
-		}
+		# if = {
+		# 	limit = {
+		# 		has_character_flag = agenda_towards_escalation
+		# 	}
+		# 	add = 500
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		has_character_flag = agenda_towards_deescalation
+		# 	}
+		# 	add = -250
+		# }
 		if = {
 			# Don't do this too often
 			limit = {

@@ -294,20 +294,21 @@ mythical_ancestor_war = {
 	max_defender_score_from_occupation = 150
 	max_attacker_score_from_occupation = 150
 
-	ai_score_mult = {
-		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
-	}
+	#L5R Disabled
+	# ai_score_mult = {
+	# 	#Declaring war on the frankokratia leader can really ruin the whole thing
+	# 	if = {
+	# 		limit = {
+	# 			scope:defender = {
+	# 				any_owned_story = {
+	# 					story_type = frankokratia_story
+	# 					NOT = { has_variable = franko_war_complete }
+	# 				}
+	# 			}
+	# 		}
+	# 		multiply = 0
+	# 	}
+	# }
 }
 
 legendary_adventure = {
@@ -367,18 +368,19 @@ legendary_adventure = {
 	ai_can_target_all_titles = { always = yes }
 	ai_score_mult = {
 		value = varangian_adventure_ai_targeting_value
+		#L5R Disabled
 		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:defender = {
+		# 			any_owned_story = {
+		# 				story_type = frankokratia_story
+		# 				NOT = { has_variable = franko_war_complete }
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply = 0
+		# }
 	}
 
 	valid_to_start = {
@@ -1827,18 +1829,19 @@ leg_demand_fealty_cb = {
 	
 	on_invalidated_desc = msg_invalidate_war_title
 
-	ai_score_mult = {
-		#Declaring war on the frankokratia leader can really ruin the whole thing
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
-	}
+	#L5R Disabled
+	# ai_score_mult = {
+	# 	#Declaring war on the frankokratia leader can really ruin the whole thing
+	# 	if = {
+	# 		limit = {
+	# 			scope:defender = {
+	# 				any_owned_story = {
+	# 					story_type = frankokratia_story
+	# 					NOT = { has_variable = franko_war_complete }
+	# 				}
+	# 			}
+	# 		}
+	# 		multiply = 0
+	# 	}
+	# }
 }

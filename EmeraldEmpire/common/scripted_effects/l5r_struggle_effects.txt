@@ -13,7 +13,7 @@ spawn_army_invasion_crab_clan = {
 			type = pit_oni
 			stacks = 10
 		}
-		location = scope:attacker.capital_province
+		location = root.capital_province
 		uses_supply = no
 		war = scope:war
 		inheritable = no
@@ -26,7 +26,7 @@ spawn_army_invasion_crab_clan = {
 			type = pit_oni
 			stacks = 10
 		}
-		location = scope:attacker.capital_province
+		location = root.capital_province
 		uses_supply = no
 		inheritable = no
 	}

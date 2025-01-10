@@ -1177,39 +1177,40 @@
 			add = scope:recipient.primary_title.tier
 		}
 
+		#L5R Disabled
 		# Agenda impact
-		modifier = {
-			scope:recipient = {
-				is_important_or_vip_struggle_character = yes
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_imprison_important
-							}
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_imprison_important
-							}
-						}
-					}
-					add = -100
-				}
-			}
-		}
+		# modifier = {
+		# 	scope:recipient = {
+		# 		is_important_or_vip_struggle_character = yes
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_imprison_important
+		# 					}
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_imprison_important
+		# 					}
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 	}
+		# }
 		#L5R Disabled
 		# modifier = {
 		# 	scope:recipient = {
@@ -2069,43 +2070,44 @@ ransom_interaction = {
 			}
 		}
 
+		#L5R Disabled
 		# Struggle Agenda
-		modifier = {
-			scope:secondary_recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_ransom_important
-							}
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = -100
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_ransom_important
-							}
-						}
-					}
-					add = 200
-				}
-			}
-		}
+		# modifier = {
+		# 	scope:secondary_recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_ransom_important
+		# 					}
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_ransom_important
+		# 					}
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 	}
+		# }
 
 		modifier = {
 			factor = 0
@@ -3183,43 +3185,44 @@ pay_ransom_interaction = {
 			}
 		}
 
+		#L5R Disabled
 		# Struggle Agenda
-		modifier = {
-			scope:secondary_recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_ransom_important
-							}
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = -100
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_ransom_important
-							}
-						}
-					}
-					add = 200
-				}
-			}
-		}
+		# modifier = {
+		# 	scope:secondary_recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_ransom_important
+		# 					}
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_ransom_important
+		# 					}
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 	}
+		# }
 
 		evaluate_action_increasing_house_unity = {
 			VALUE = 100
@@ -3816,43 +3819,44 @@ ransom_me_interaction = {
 			}
 		}
 
+		#L5R Disabled
 		# Struggle Agenda
-		modifier = {
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_ransom_important
-							}
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = -100
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_ransom_important
-							}
-						}
-					}
-					add = 200
-				}
-			}
-		}
+		# modifier = {
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_ransom_important
+		# 					}
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_ransom_important
+		# 					}
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 	}
+		# }
 
 		modifier = { # Don't give away prisoners for free
 			factor = 0
@@ -5397,51 +5401,52 @@ release_from_prison_interaction = {
 			}
 			desc = "RECRUITMET_NEGATIVE_REASON"
 		}
+		#L5R Disabled
 		# Struggle
-		modifier = {
-			trigger = {
-				scope:demand_conversion = no
-				scope:renounce_claims = no
-				scope:banish = no
-				scope:gain_hook = no
-				scope:take_vows = no
-				scope:recruit = no
-			}
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:recipient = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_release_important
-							}
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = -100
-				}
-				else_if = {
-					limit = {
-						scope:recipient = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_release_important
-							}
-						}
-					}
-					add = 200
-				}
-			}
-		}
+		# modifier = {
+		# 	trigger = {
+		# 		scope:demand_conversion = no
+		# 		scope:renounce_claims = no
+		# 		scope:banish = no
+		# 		scope:gain_hook = no
+		# 		scope:take_vows = no
+		# 		scope:recruit = no
+		# 	}
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:recipient = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_release_important
+		# 					}
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:recipient = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_release_important
+		# 					}
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 	}
+		# }
 	}
 
 	# AI
@@ -5608,63 +5613,64 @@ release_from_prison_interaction = {
 				is_child_of = scope:actor
 			}
 		}
+		#L5R Disabled
 		# Struggle
-		modifier = {
-			trigger = {
-				scope:demand_conversion = no
-				scope:renounce_claims = no
-				scope:banish = no
-				scope:gain_hook = no
-				scope:take_vows = no
-				scope:recruit = no
-			}
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_release_important
-							}
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = -100
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_release_important
-							}
-							NOT = {
-								ai_greed >= 25
-							}
-							OR = {
-								ai_compassion > 50
-								AND  = {
-									ai_compassion > 0
-									scope:recipient = {
-										time_in_prison = { years > 1 }
-									}
-								}
-							}
-						}
-					}
-					add = 200
-				}
-			}
-		}
+		# modifier = {
+		# 	trigger = {
+		# 		scope:demand_conversion = no
+		# 		scope:renounce_claims = no
+		# 		scope:banish = no
+		# 		scope:gain_hook = no
+		# 		scope:take_vows = no
+		# 		scope:recruit = no
+		# 	}
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_release_important
+		# 					}
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_release_important
+		# 					}
+		# 					NOT = {
+		# 						ai_greed >= 25
+		# 					}
+		# 					OR = {
+		# 						ai_compassion > 50
+		# 						AND  = {
+		# 							ai_compassion > 0
+		# 							scope:recipient = {
+		# 								time_in_prison = { years > 1 }
+		# 							}
+		# 						}
+		# 					}
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 	}
+		# }
 		modifier = { # Family Feud
 			add = -50
 			exists = scope:actor.house
@@ -5841,39 +5847,40 @@ execute_prisoner_interaction = {
 			}
 		}
 
+		#L5R Disabled
 		# Agenda impact
-		modifier = {
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-				is_important_or_vip_struggle_character = yes
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_execute_important
-							}
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_execute_important
-							}
-						}
-					}
-					add = -100
-				}
-			}
-		}
+		# modifier = {
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 		is_important_or_vip_struggle_character = yes
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_execute_important
+		# 					}
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_execute_important
+		# 					}
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 	}
+		# }
 
 		#L5R Disabled
 		# modifier = {

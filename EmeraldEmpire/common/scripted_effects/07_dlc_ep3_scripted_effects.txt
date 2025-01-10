@@ -7296,42 +7296,42 @@ ep3_send_akolouthos_message_varangian = {
 	# }
 }
 
-ep3_palace_looting_random_malus_effect = {
-	if = {
-		limit = {
-			has_character_flag = malus_court_grandeur
-			var:varangian_regiments >= 7
-		}
-		change_current_court_grandeur = massive_court_grandeur_loss
-	}
-	else_if = {
-		limit = {
-			has_character_flag = malus_court_grandeur
-			var:varangian_regiments >= 4
-		}
-		change_current_court_grandeur = major_court_grandeur_loss
-	}
-	else_if = {
-		limit = {
-			has_character_flag = malus_court_grandeur
-		}
-		change_current_court_grandeur = medium_court_grandeur_loss
-	}
-	if = {
-		limit = {
-			has_character_flag = malus_broken_artifact
-		}
-		scope:broken_artifact = {
-			add_durability = -40
-		}
-	}
-	if = {
-		limit = {
-			has_character_flag = malus_stolen_artifact
-		}
-		destroy_artifact = scope:stolen_artifact
-	}
-}
+# ep3_palace_looting_random_malus_effect = {
+# 	if = {
+# 		limit = {
+# 			has_character_flag = malus_court_grandeur
+# 			var:varangian_regiments >= 7
+# 		}
+# 		change_current_court_grandeur = massive_court_grandeur_loss
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_character_flag = malus_court_grandeur
+# 			var:varangian_regiments >= 4
+# 		}
+# 		change_current_court_grandeur = major_court_grandeur_loss
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_character_flag = malus_court_grandeur
+# 		}
+# 		change_current_court_grandeur = medium_court_grandeur_loss
+# 	}
+# 	if = {
+# 		limit = {
+# 			has_character_flag = malus_broken_artifact
+# 		}
+# 		scope:broken_artifact = {
+# 			add_durability = -40
+# 		}
+# 	}
+# 	if = {
+# 		limit = {
+# 			has_character_flag = malus_stolen_artifact
+# 		}
+# 		destroy_artifact = scope:stolen_artifact
+# 	}
+# }
 
 ep3_child_castration_effect = {
 	add_trait = beardless_eunuch

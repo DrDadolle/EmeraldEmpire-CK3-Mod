@@ -309,7 +309,7 @@ shadowlands_struggle.2003 = {
 
 	right_portrait = {
 		character = root
-		animation = personality_callous
+		animation = disbelief
 	}
 	
 	option = {
@@ -374,11 +374,11 @@ shadowlands_struggle.2004 = {
 
 	left_portrait = {
 		character = root
-		animation = worry
+		animation = happiness
 	}
 	right_portrait = {
 		character = scope:attacker
-		animation = personality_callous
+		animation = disbelief
 	}
 	
 	option = {
@@ -405,7 +405,7 @@ shadowlands_struggle.2005 = {
 	}
 	right_portrait = {
 		character = scope:attacker
-		animation = personality_callous
+		animation = disbelief
 	}
 	
 	option = {
@@ -433,7 +433,7 @@ shadowlands_struggle.2005 = {
 	}
 }
 
-# Notification to Crab Clan's ruler to add them as ally in the invasion war.
+# Notification to invasion target to all vassal to add them as ally in the invasion war.
 shadowlands_struggle.2010 = { 
 	content_source = l5r_dlc
 	type = character_event
@@ -474,7 +474,7 @@ shadowlands_struggle.2010 = {
 				type = crab_hida_defender
 				stacks = 5
 			}
-			location = scope:attacker.capital_province
+			location = root.capital_province
 			uses_supply = no
 			war = scope:war
 			inheritable = no
@@ -569,6 +569,99 @@ shadowlands_struggle.2010 = {
 	}
 }
 
+# Notification to invasion attacker vassal to add them as ally in the invasion war.
+shadowlands_struggle.2011 = { 
+	content_source = l5r_dlc
+	type = character_event
+	title = shadowlands_struggle.2011.t
+	desc = 	shadowlands_struggle.2011.desc
+
+	theme = shadowlands
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = personality_callous
+	}
+
+	# Help my liege
+	option = {
+		name = shadowlands_struggle.2011.a
+		scope:war = { add_attacker = root }
+		stress_impact = {
+			craven = major_stress_gain
+			brave = medium_stress_loss
+			vengeful = medium_stress_loss
+			ambitious = minor_stress_loss
+		}
+		add_prestige = medium_prestige_gain
+
+		#Brave AI will always join
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 25
+				has_trait = brave
+			}
+			modifier = {
+				add = -25
+				has_trait = craven
+			}
+			modifier = {
+				add = 25
+				has_trait = vengeful
+			}
+			modifier = {
+				add = 10
+				has_trait = ambitious
+			}
+		}
+	}
+
+	# Don't want to help
+	option = {
+		name = shadowlands_struggle.2011.b
+		stress_impact = {
+			craven = medium_stress_loss
+			brave = major_stress_gain
+			greedy = minuscule_stress_loss
+			vengeful = medium_stress_gain
+			ambitious = minor_stress_gain
+		}
+		add_prestige = medium_prestige_loss
+		add_piety = minor_piety_loss
+
+		#TODO special coward modificator ?
+
+		# Brave AI will always join
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 25
+					has_trait = craven
+			}
+			modifier = {
+				add = 5
+					has_trait = greedy
+			}
+			modifier = {
+				add = -25
+				has_trait = vengeful
+			}
+			modifier = {
+				add = -10
+				has_trait = ambitious
+			}
+			modifier = {
+				factor = 0
+				has_trait = brave
+			}
+		}
+	}
+}
 
 ##########
 #### Major Events

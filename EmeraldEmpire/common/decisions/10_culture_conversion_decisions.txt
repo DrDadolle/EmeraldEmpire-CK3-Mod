@@ -260,31 +260,32 @@
 		# 	}
 		# }
 
-		modifier = { # Iberian Struggle modifiers
-			any_character_struggle = {
-				involvement = involved
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						any_character_struggle = {
-							phase_has_catalyst = catalyst_convert_local_culture_faith
-						}
-						has_character_flag = agenda_towards_escalation
-					}
-					add = -300
-				}
-				else_if = { # Slight boost, so players can't exploit landing lots of characters to bump catalyst progress
-					limit = {
-						any_character_struggle = {
-							phase_has_catalyst = catalyst_convert_local_culture_faith
-						}
-					}
-					add = 20
-				}
-			}
-		}
+		#L5R Disabled
+		# modifier = { # Iberian Struggle modifiers
+		# 	any_character_struggle = {
+		# 		involvement = involved
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				any_character_struggle = {
+		# 					phase_has_catalyst = catalyst_convert_local_culture_faith
+		# 				}
+		# 				has_character_flag = agenda_towards_escalation
+		# 			}
+		# 			add = -300
+		# 		}
+		# 		else_if = { # Slight boost, so players can't exploit landing lots of characters to bump catalyst progress
+		# 			limit = {
+		# 				any_character_struggle = {
+		# 					phase_has_catalyst = catalyst_convert_local_culture_faith
+		# 				}
+		# 			}
+		# 			add = 20
+		# 		}
+		# 	}
+		# }
 		
 		modifier = { # If you're the same culture as your liege, and your Capital is in a Duchy with your culture in it, never convert
 			factor = 0

@@ -1,0 +1,49 @@
+﻿#Events for birth on actions
+namespace = rokugan_birth
+
+# Child of Kami's line gains proper trait (fired on_birth).
+rokugan_birth.0010 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				exists = mother
+				mother = {
+					OR = {
+						has_trait = kami
+						has_trait = kami_descendant
+					}
+				}
+			}
+			AND = {
+				exists = father
+				father = {
+					OR = {
+						has_trait = kami
+						has_trait = kami_descendant
+					}
+				}
+			}
+			# AND = {
+			# 	exists = scope:saoshyant_progenitor
+			# 	OR = {
+			# 		is_grandchild_of = scope:saoshyant_progenitor
+			# 		is_great_grandchild_of = scope:saoshyant_progenitor
+			# 	}
+			# }
+		}
+		NOR = {
+			has_trait = kami # Just in case the tree was horribly tangled...
+			has_trait = kami_descendant
+		}
+	}
+
+	immediate = {
+		add_trait = kami_descendant
+		every_child = {
+			trigger_event = rokugan_birth.0010
+		}
+	}
+}

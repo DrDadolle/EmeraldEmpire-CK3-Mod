@@ -56,8 +56,9 @@ error_suppression.0001 = {
 				name = trait_rewards
 				target = root
 			}
-			exists = var:reichskrone
-			exists = var:pope_hat
+			#L5R Disabled
+			# exists = var:reichskrone
+			# exists = var:pope_hat
 			has_variable = show_historical_gui
 		} }
 	}

@@ -1072,41 +1072,6 @@
 			add = scope:recipient.primary_title.tier
 		}
 
-		# Agenda impact
-		modifier = {
-			scope:recipient = {
-				is_important_or_vip_struggle_character = yes
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_imprison_important
-							}
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_imprison_important
-							}
-						}
-					}
-					add = -100
-				}
-			}
-		}
-
-
 		modifier = { # Avoid triggering Tyranny wars mid-grand activity
 			factor = 0
 			scope:actor = {

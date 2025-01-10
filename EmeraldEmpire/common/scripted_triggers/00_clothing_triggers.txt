@@ -413,16 +413,17 @@ portrait_shared_clothing_contents_trigger = {
 		limit = { exists = top_liege.var:adopted_cultural_style }
 		top_liege.var:adopted_cultural_style = flag:$CULTURE_FLAG$
 	}
-	trigger_else_if = {
-		limit = {
-			exists = this
-			exists = var:adopted_cultural_style
-		}
+	#L5R Disabled
+	# trigger_else_if = {
+	# 	limit = {
+	# 		exists = this
+	# 		exists = var:adopted_cultural_style
+	# 	}
 
-		var:adopted_cultural_style = flag:$CULTURE_FLAG$
-		has_variable = years_as_varangian
-		is_landed = no
-	}
+	# 	var:adopted_cultural_style = flag:$CULTURE_FLAG$
+	# 	has_variable = years_as_varangian
+	# 	is_landed = no
+	# }
 	trigger_else = {
 		$CULTURE_SCOPE$ ?= { has_clothing_gfx = $CULTURE_FLAG$_clothing_gfx }
 	}

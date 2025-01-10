@@ -538,31 +538,32 @@ activity_feast = {
             	desc = "Warlike"
             }
         }
+		#L5R Disabled
 		# Struggles.
-		if = {
-			limit = {
-				any_character_struggle = {
-					involvement = involved
-					phase_has_catalyst = catalyst_invite_diff_faith_culture_to_feast
-				}
-			}
-			# Escalating.
-			if = {
-				limit = { has_character_flag = agenda_towards_escalation }
-				add = {
-					value = -25
-					desc = debug_gui.activity_weight.struggle.wants_to_escalate
-				}
-			}
-			# Deescalating.
-			if = {
-				limit = { has_character_flag = agenda_towards_deescalation }
-				add = {
-					value = 50
-					desc = debug_gui.activity_weight.struggle.wants_to_deescalate
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			phase_has_catalyst = catalyst_invite_diff_faith_culture_to_feast
+		# 		}
+		# 	}
+		# 	# Escalating.
+		# 	if = {
+		# 		limit = { has_character_flag = agenda_towards_escalation }
+		# 		add = {
+		# 			value = -25
+		# 			desc = debug_gui.activity_weight.struggle.wants_to_escalate
+		# 		}
+		# 	}
+		# 	# Deescalating.
+		# 	if = {
+		# 		limit = { has_character_flag = agenda_towards_deescalation }
+		# 		add = {
+		# 			value = 50
+		# 			desc = debug_gui.activity_weight.struggle.wants_to_deescalate
+		# 		}
+		# 	}
+		# }
         if = {
         	limit = {
 				ai_has_warlike_personality = yes

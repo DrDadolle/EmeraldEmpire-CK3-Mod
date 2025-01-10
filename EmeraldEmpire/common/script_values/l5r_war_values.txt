@@ -5,3 +5,12 @@ l5r_war_vs_imperial_penality = 20
 l5r_war_vs_smaller_clan_penality = 5
 # between major Clans
 l5r_war_between_major_clans_penality = 2
+
+
+total_strength = {
+	value = 0
+    add = max_military_strength
+	every_ally = {
+		add = max_military_strength
+	}
+}

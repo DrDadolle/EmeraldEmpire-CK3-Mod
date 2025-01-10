@@ -1987,48 +1987,49 @@ grant_independence_interaction = {
 	ai_will_do = {
 		base = 0 #The AI should never do this!
 
+		#L5R Disabled
 		# Except in the context of Struggle
-		modifier = {
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-				}
-				NOT = {
-					any_held_title = {
-						is_de_jure_liege_or_above_target = scope:recipient.primary_title
-					}
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_independence_from_non_dejure_vassal
-							}
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = -50
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_independence_from_non_dejure_vassal
-							}
-						}
-					}
-					add = 100
-				}
-			}
-		}
+		# modifier = {
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 		NOT = {
+		# 			any_held_title = {
+		# 				is_de_jure_liege_or_above_target = scope:recipient.primary_title
+		# 			}
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_independence_from_non_dejure_vassal
+		# 					}
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = -50
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_independence_from_non_dejure_vassal
+		# 					}
+		# 				}
+		# 			}
+		# 			add = 100
+		# 		}
+		# 	}
+		# }
 
 		# Unity modifiers
 		evaluate_action_decreasing_house_unity = {
@@ -2068,44 +2069,45 @@ expose_secret_interaction = {
 	ai_will_do = {
 		base = 0
 
+		#L5R Disabled
 		# Struggle
-		modifier = {
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-				}
-				is_important_or_vip_struggle_character = yes
-			}
-			scope:actor = {
-				any_character_struggle = {
-					involvement = involved
-				}
-			}
-			add = {
-				value = 0
-				if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_reveal_secret_important
-							}
-							has_character_flag = agenda_towards_escalation
-						}
-					}
-					add = 200
-				}
-				else_if = {
-					limit = {
-						scope:actor = {
-							any_character_struggle = {
-								phase_has_catalyst = catalyst_reveal_secret_important
-							}
-						}
-					}
-					add = -100
-				}
-			}
-		}
+		# modifier = {
+		# 	scope:recipient = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 		is_important_or_vip_struggle_character = yes
+		# 	}
+		# 	scope:actor = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = 0
+		# 		if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_reveal_secret_important
+		# 					}
+		# 					has_character_flag = agenda_towards_escalation
+		# 				}
+		# 			}
+		# 			add = 200
+		# 		}
+		# 		else_if = {
+		# 			limit = {
+		# 				scope:actor = {
+		# 					any_character_struggle = {
+		# 						phase_has_catalyst = catalyst_reveal_secret_important
+		# 					}
+		# 				}
+		# 			}
+		# 			add = -100
+		# 		}
+		# 	}
+		# }
 		#L5R Disabled
 		# modifier = {
 		# 	scope:recipient = {

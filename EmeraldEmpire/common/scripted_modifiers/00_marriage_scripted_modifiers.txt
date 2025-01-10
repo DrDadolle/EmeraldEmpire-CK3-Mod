@@ -2174,11 +2174,12 @@ elopment_ai_accept_modifier = { #Should copy marriage_ai_accept_modifier on rele
 					NOR = {
 						# Exempt certain struggle phases.
 						is_struggle_parameter_active_interfaith_marriages_available_between_involved_characters_trigger = yes
+						#L5R Disabled
 						# Exempt Conciliation struggle resolution
-						AND = {
-							has_global_variable = fp2_struggle_conciliation_ending
-							fp2_struggle_conciliation_special_cultural_rules_trigger = { C1 = scope:recipient C2 = scope:actor }
-						}
+						# AND = {
+						# 	has_global_variable = fp2_struggle_conciliation_ending
+						# 	fp2_struggle_conciliation_special_cultural_rules_trigger = { C1 = scope:recipient C2 = scope:actor }
+						# }
 					}
 				}
 				if = {

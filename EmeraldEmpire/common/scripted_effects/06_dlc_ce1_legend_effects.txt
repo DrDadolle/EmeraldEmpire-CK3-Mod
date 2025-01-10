@@ -1474,68 +1474,70 @@ legend_ending_rewards_legitimizing_effect = {
 			}
 		}
 	}
-	if = { 
-		#L5R Disabled
-		#Roman Heritage legend without a Roman Empire
-		# limit = {
-		# 	scope:title_claim = title:e_roman_empire
-		# 	NOT = {
-		# 		exists = global_var:flag_restored_roman_empire
-		# 	}
-		# }
-		# title:d_latium.empire = { #Italy
-		# 	add_to_list = roman_heritage_claims
-		# }
-		# title:d_tunis.kingdom = { #North Africa
-		# 	add_to_list = roman_heritage_claims
-		# }
-		# title:d_thrace.empire = { #Byz
-		# 	add_to_list = roman_heritage_claims 
-		# }
-		# title:d_alexandria.kingdom = { #Egypt
-		# 	add_to_list = roman_heritage_claims 
-		# }
-		# title:d_antioch.kingdom = { #Syria
-		# 	add_to_list = roman_heritage_claims 
-		# }
-		# title:d_palestine.kingdom = { #Palestine
-		# 	add_to_list = roman_heritage_claims 
-		# }
-		custom_tooltip = {
-			text = legend_title_does_not_exist_sub_realm_claims_given_tt
-		}
-		hidden_effect = {
-			every_in_list = {
-				list = roman_heritage_claims
+	#L5R Disabled
+	# if = { 
 
-				if = {
-					limit = {
-						exists = this.holder
-						NOT = {
-							this.holder = root
-						}
-					}
-					root = {
-						add_pressed_claim = prev
-						add_to_variable_list = {
-							name = legendary_claims
-							target = prev
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						this.tier > tier_county
-					}
-					hidden_effect = {
-						legend_distribute_claims_in_de_jure = yes
-					}
-				}
-			}
-		}
+	# 	#Roman Heritage legend without a Roman Empire
+	# 	limit = {
+	# 		scope:title_claim = title:e_roman_empire
+	# 		NOT = {
+	# 			exists = global_var:flag_restored_roman_empire
+	# 		}
+	# 	}
+	# 	title:d_latium.empire = { #Italy
+	# 		add_to_list = roman_heritage_claims
+	# 	}
+	# 	title:d_tunis.kingdom = { #North Africa
+	# 		add_to_list = roman_heritage_claims
+	# 	}
+	# 	title:d_thrace.empire = { #Byz
+	# 		add_to_list = roman_heritage_claims 
+	# 	}
+	# 	title:d_alexandria.kingdom = { #Egypt
+	# 		add_to_list = roman_heritage_claims 
+	# 	}
+	# 	title:d_antioch.kingdom = { #Syria
+	# 		add_to_list = roman_heritage_claims 
+	# 	}
+	# 	title:d_palestine.kingdom = { #Palestine
+	# 		add_to_list = roman_heritage_claims 
+	# 	}
+	# 	custom_tooltip = {
+	# 		text = legend_title_does_not_exist_sub_realm_claims_given_tt
+	# 	}
+	# 	hidden_effect = {
+	# 		every_in_list = {
+	# 			list = roman_heritage_claims
 
-	}
-	else_if = {
+	# 			if = {
+	# 				limit = {
+	# 					exists = this.holder
+	# 					NOT = {
+	# 						this.holder = root
+	# 					}
+	# 				}
+	# 				root = {
+	# 					add_pressed_claim = prev
+	# 					add_to_variable_list = {
+	# 						name = legendary_claims
+	# 						target = prev
+	# 					}
+	# 				}
+	# 			}
+	# 			else_if = {
+	# 				limit = {
+	# 					this.tier > tier_county
+	# 				}
+	# 				hidden_effect = {
+	# 					legend_distribute_claims_in_de_jure = yes
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+
+	# }
+	# else_
+	if = {
 		limit = {
 			exists = scope:title_claim.holder
 			NOT = {

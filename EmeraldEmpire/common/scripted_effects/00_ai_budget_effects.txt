@@ -203,12 +203,13 @@ ai_budget_manipulation_effect = {
 					}
 					prestige >= expensive_building_tier_1_cost
 				}
-				NAND = { # Iberian Struggle rulers that go for escalation should always go for a full war chest
-					any_character_struggle = {
-						phase_has_catalyst = catalyst_winning_large_conquest_war
-					}
-					has_character_flag = agenda_towards_escalation
-				}
+				#L5R Disabled
+				# NAND = { # Iberian Struggle rulers that go for escalation should always go for a full war chest
+				# 	any_character_struggle = {
+				# 		phase_has_catalyst = catalyst_winning_large_conquest_war
+				# 	}
+				# 	has_character_flag = agenda_towards_escalation
+				# }
 			}
 			
 			# Chance to make an AI boom its economy if they do not fall into an archetype

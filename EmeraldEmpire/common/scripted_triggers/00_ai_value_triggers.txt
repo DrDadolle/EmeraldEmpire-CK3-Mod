@@ -193,7 +193,8 @@ ai_wants_low_unity = {
 		}
 		ai_has_warlike_personality = yes
 		ai_has_conqueror_personality = yes
-		has_character_flag = agenda_towards_escalation
+		#L5R Disabled
+		# has_character_flag = agenda_towards_escalation
 	}
 }
 
@@ -220,7 +221,7 @@ ai_wants_high_unity = {
 		# 	}
 		# 	trigger_else = { house = title:d_sunni.previous_holder.house }
 		# }
-		has_character_flag = agenda_towards_deescalation
+		# has_character_flag = agenda_towards_deescalation
 	}
 	
 	# And to make sure the AI doesn't want to increase and decrease Unity at the same time

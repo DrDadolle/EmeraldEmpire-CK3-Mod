@@ -117,10 +117,16 @@ invasion_of_crab_clan_cb = {
 	on_declaration = {
 		on_declared_war = yes
 
-		# Event to add all vassal as ally in the war for defender, to balance the HUGE amount of special troops of the attacker
+		# Event to add all vassal as ally in the war for defender, MEGA WAR (pseudo crusade)
 		scope:defender = {
 			every_vassal = {
 				trigger_event = shadowlands_struggle.2010
+			}
+		}
+		# Event to add all vassal as ally in the war for attacker, MEGA WAR (pseudo crusade)
+		scope:attacker = {
+			every_vassal = {
+				trigger_event = shadowlands_struggle.2011
 			}
 		}
 
