@@ -13775,7 +13775,7 @@ immortal = {
 	# This is definitely a very clever allusion to the 10k immortals and not just landing arbitrarily on a certain number of zeros.
 	ruler_designer_cost = 10000
 
-	opposites = { incapable }
+	opposites = { incapable undead }
 	
 	desc = {
 		first_valid = {

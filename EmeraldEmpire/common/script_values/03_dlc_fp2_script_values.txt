@@ -336,100 +336,100 @@ mozarabic_fate_county_count = 12
 favour_the_countryside_basques_decision_basque_pagan_virtues_tally_value = 2
 
 favour_the_countryside_basques_decision_counties_to_control_value = 9
+#L5R Disabled
+# council_of_toledo_decision_decision_cooldown_value = 25
 
-council_of_toledo_decision_decision_cooldown_value = 25
+# council_of_toledo_piety_cost_value = 250
 
-council_of_toledo_piety_cost_value = 250
+# council_of_toledo_gold_cost_value = 100
 
-council_of_toledo_gold_cost_value = 100
+# council_of_toledo_realm_size_value = 20
 
-council_of_toledo_realm_size_value = 20
+# council_toledo_conversion_modifier_value = 1.5
 
-council_toledo_conversion_modifier_value = 1.5
+# council_toledo_culture_acceptance_value = 10
 
-council_toledo_culture_acceptance_value = 10
+# council_toledo_modifier_duration_value = 10
 
-council_toledo_modifier_duration_value = 10
+# council_toledo_success_guest_value = 3
 
-council_toledo_success_guest_value = 3
+# council_of_toledo_counter_value = {
+# 	value = 0
+# 	if = {
+# 		limit = { exists = global_var:council_of_toledo_counter }
+# 		add = global_var:council_of_toledo_counter
+# 	}
+# }
 
-council_of_toledo_counter_value = {
-	value = 0
-	if = {
-		limit = { exists = global_var:council_of_toledo_counter }
-		add = global_var:council_of_toledo_counter
-	}
-}
+# council_of_toledo_counter_less_one_value = {
+# 	value = council_of_toledo_counter_value
+# 	subtract = 1
+# }
 
-council_of_toledo_counter_less_one_value = {
-	value = council_of_toledo_counter_value
-	subtract = 1
-}
+# council_toledo_divided_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	divide = 10
+# }
 
-council_toledo_divided_svalue = {
-	value = council_of_toledo_counter_value
-	divide = 10
-}
+# council_toledo_divided_floor_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	divide = 10
+# 	floor = yes
+# }
 
-council_toledo_divided_floor_svalue = {
-	value = council_of_toledo_counter_value
-	divide = 10
-	floor = yes
-}
+# council_toledo_divided_1_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	subtract = 1
+# 	divide = 10
+# }
 
-council_toledo_divided_1_svalue = {
-	value = council_of_toledo_counter_value
-	subtract = 1
-	divide = 10
-}
+# council_toledo_divided_2_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	subtract = 2
+# 	divide = 10
+# }
 
-council_toledo_divided_2_svalue = {
-	value = council_of_toledo_counter_value
-	subtract = 2
-	divide = 10
-}
+# council_toledo_divided_3_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	subtract = 3
+# 	divide = 10
+# }
 
-council_toledo_divided_3_svalue = {
-	value = council_of_toledo_counter_value
-	subtract = 3
-	divide = 10
-}
+# council_toledo_divided_4_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	subtract = 4
+# 	divide = 10
+# }
 
-council_toledo_divided_4_svalue = {
-	value = council_of_toledo_counter_value
-	subtract = 4
-	divide = 10
-}
+# council_toledo_divided_5_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	subtract = 5
+# 	divide = 10
+# }
 
-council_toledo_divided_5_svalue = {
-	value = council_of_toledo_counter_value
-	subtract = 5
-	divide = 10
-}
+# council_toledo_divided_6_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	subtract = 6
+# 	divide = 10
+# }
 
-council_toledo_divided_6_svalue = {
-	value = council_of_toledo_counter_value
-	subtract = 6
-	divide = 10
-}
+# council_toledo_divided_7_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	subtract = 7
+# 	divide = 10
+# }
 
-council_toledo_divided_7_svalue = {
-	value = council_of_toledo_counter_value
-	subtract = 7
-	divide = 10
-}
+# council_toledo_divided_8_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	subtract = 8
+# 	divide = 10
+# }
 
-council_toledo_divided_8_svalue = {
-	value = council_of_toledo_counter_value
-	subtract = 8
-	divide = 10
-}
-
-council_toledo_divided_9_svalue = {
-	value = council_of_toledo_counter_value
-	subtract = 9
-	divide = 10
-}
+# council_toledo_divided_9_svalue = {
+# 	value = council_of_toledo_counter_value
+# 	subtract = 9
+# 	divide = 10
+# }
 
 ##################################################
 # Council Tasks

@@ -40,9 +40,8 @@
  ############################
  decision_invade_crab_clan:0 "Invade the Crab Clan"
  decision_invade_crab_clan_tooltip:0 "Launch an invasion that, if successful, will destroy the Crab Clan once and for all"
- decision_invade_crab_clan_desc:0 "The Crab Clan has looked down upon us from their remparts for far too long. has stood defiant against your will, Great Lord, for far too long. If we can secure Ithilien as a point of attack against it, we could amass such an army that even Minas Tirith itself could not resist. And if Minas Tirith falls, then Gondor shall be leaderless, and fracture."
- decision_invade_crab_clan_confirm:0 "All the Shadowlands is gathered"
- invade_crab_clan_decision:0 "Gather your troops and launch the final assault on the Wall.\n\n If you fail however, all empire, kingdom and duchy [title|E] within the [shadowlands|E] [de_jure|E] lands will be destroyed."
+ decision_invade_crab_clan_desc:0 "The Crab Clan has looked down upon us from their remparts for far too long. It is now time that we launch a large scale assault against them, and destroy their clan, their wall and their pride."
+ invade_crab_clan_decision:0 "Gather your troops and launch the final assault on the Wall. If you fail however, all empire, kingdom and duchy [title|E] within the [shadowlands|E] [de_jure|E] lands will be destroyed."
  invasion_of_crab_clan_cb:0 "Invasion of Crab Clan Casus Belli"
 
  ############################

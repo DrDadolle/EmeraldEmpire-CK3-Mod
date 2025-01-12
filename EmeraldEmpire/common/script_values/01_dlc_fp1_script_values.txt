@@ -309,11 +309,12 @@ raise_stele_variant_ancestor_value = {
 		value = this.county_opinion
 		multiply = -1
 	}
+	#L5R Disabled
 	# Weight down for existing stele.
-	if = {
-		limit = { exists = this.var:stele_slot_occupied }
-		add = -100
-	}
+	# if = {
+	# 	limit = { exists = this.var:stele_slot_occupied }
+	# 	add = -100
+	# }
 }
 
 raise_stele_variant_conquest_value = {
@@ -329,11 +330,12 @@ raise_stele_variant_conquest_value = {
 		value = 100
 		subtract = this.county_control
 	}
+	#L5R Disabled
 	# Weight down for existing stele.
-	if = {
-		limit = { exists = this.var:stele_slot_occupied }
-		add = -100
-	}
+	# if = {
+	# 	limit = { exists = this.var:stele_slot_occupied }
+	# 	add = -100
+	# }
 }
 
 raise_stele_variant_promotion_value = {
@@ -346,11 +348,12 @@ raise_stele_variant_promotion_value = {
 	}
 	# Weight up for development.
 	add = this.development_level
+	#L5R Disabled
 	# Weight down for existing stele.
-	if = {
-		limit = { exists = this.var:stele_slot_occupied }
-		add = -100
-	}
+	# if = {
+	# 	limit = { exists = this.var:stele_slot_occupied }
+	# 	add = -100
+	# }
 }
 
 fp1_stele_duration_value = {

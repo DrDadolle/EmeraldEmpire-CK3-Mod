@@ -358,24 +358,23 @@ scripted_effect inspiration_completion_effect = {
 				limit = { has_character_flag = had_event_fund_inspiration_5021 }
 				remove_character_flag = had_event_fund_inspiration_5021
 			}
-			if = {
-				limit = { has_character_flag = had_event_fund_inspiration_6001 }
-				remove_character_flag = had_event_fund_inspiration_6001
-			}
 			#L5R Disabled
+			# if = {
+			# 	limit = { has_character_flag = had_event_fund_inspiration_6001 }
+			# 	remove_character_flag = had_event_fund_inspiration_6001
+			# }
 			# if = {
 			# 	limit = { has_character_flag = had_event_fund_inspiration_6002 }
 			# 	remove_character_flag = had_event_fund_inspiration_6002
 			# }
-			if = {
-				limit = { has_character_flag = had_event_fund_inspiration_6003 }
-				remove_character_flag = had_event_fund_inspiration_6003
-			}
-			if = {
-				limit = { has_character_flag = had_event_fund_inspiration_6004 }
-				remove_character_flag = had_event_fund_inspiration_6004
-			}
-			#L5r Disabled
+			# if = {
+			# 	limit = { has_character_flag = had_event_fund_inspiration_6003 }
+			# 	remove_character_flag = had_event_fund_inspiration_6003
+			# }
+			# if = {
+			# 	limit = { has_character_flag = had_event_fund_inspiration_6004 }
+			# 	remove_character_flag = had_event_fund_inspiration_6004
+			# }
 			# if = {
 			# 	limit = { has_character_flag = had_event_fund_inspiration_6005 }
 			# 	remove_character_flag = had_event_fund_inspiration_6005

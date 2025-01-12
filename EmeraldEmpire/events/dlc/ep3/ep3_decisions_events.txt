@@ -5126,7 +5126,8 @@ ep3_decisions_event.4060 = {
 			change_government = administrative_government
 			if = {
 				limit = {
-					NOT = { has_character_flag = latin_emp_force_admin_flag }
+					#L5R Disabled
+					# NOT = { has_character_flag = latin_emp_force_admin_flag }
 					is_independent_ruler = yes
 				}
 				add_character_modifier = { modifier = first_admin_emperor }

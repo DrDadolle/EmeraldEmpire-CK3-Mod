@@ -423,7 +423,7 @@ l5r_yearly.0011 = {
 		}
 
 		add_prestige = medium_prestige_gain
-		add_legitimacy = minor_legitimacy_gain
+		add_legitimacy = miniscule_legitimacy_gain
 
 		ai_chance = {
 			base = 100
@@ -462,7 +462,7 @@ l5r_yearly.0011 = {
 		}
 
 		add_prestige = medium_prestige_loss
-		add_legitimacy = minor_legitimacy_loss
+		add_legitimacy = miniscule_legitimacy_loss
 
 		stress_impact = {
 			brave = medium_stress_impact_gain

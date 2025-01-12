@@ -139,7 +139,7 @@ character_view_bg = {
 								has_graphical_steppe_culture_group_trigger = yes
 							# 	has_graphical_india_culture_group_trigger = yes
 							# 	has_graphical_iberian_culture_group_trigger = yes
-							has_graphical_rokugan_culture_group_trigger = yes
+								has_graphical_rokugan_culture_group_trigger = yes
 							}
 					}
 				}
@@ -164,7 +164,7 @@ character_view_bg = {
 									has_graphical_steppe_culture_group_trigger = yes
 								# 	has_graphical_india_culture_group_trigger = yes
 								# 	has_graphical_iberian_culture_group_trigger = yes
-								has_graphical_rokugan_culture_group_trigger = yes
+									has_graphical_rokugan_culture_group_trigger = yes
 								}
 							}
 						}
@@ -202,7 +202,7 @@ character_view_bg = {
 										has_graphical_steppe_culture_group_trigger = yes
 									# 	has_graphical_india_culture_group_trigger = yes
 									# 	has_graphical_iberian_culture_group_trigger = yes
-									has_graphical_rokugan_culture_group_trigger = yes
+										has_graphical_rokugan_culture_group_trigger = yes
 									}
 								}
 							}
@@ -211,6 +211,25 @@ character_view_bg = {
 				}
 			}
 			is_character_window_main_character = no
+		}
+	}
+
+	#L5R Added
+	###Fallback
+	texture = {
+		reference = "event_scenes/dungeon.dds"
+
+		trigger = {
+			is_in_prison_type = dungeon
+
+		}
+	}
+
+	environment = {
+		reference = "environment_event_dungeon"
+
+		trigger = {
+			is_in_prison_type = dungeon
 		}
 	}
 
@@ -5093,6 +5112,7 @@ character_view_bg = {
 					OR = {
 						has_graphical_rokugan_region_trigger = yes
 						has_graphical_shadowlands_region_trigger = yes
+
 					}
 				}
 			}
@@ -5100,6 +5120,7 @@ character_view_bg = {
 				OR = {
 					has_graphical_rokugan_region_trigger = yes
 					has_graphical_shadowlands_region_trigger = yes
+
 				}
 			}
 		}

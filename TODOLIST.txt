@@ -25,10 +25,31 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 # TO TEST
-- Missing longbow animation lol
+- hot spring actyivity a bit too zoomed out when selecting it
 
-- fix the missing character_bg !!! As it is ugly & spawn error log
+[22:01:00][E][jomini_script_system.cpp:284]: Script system error!
+  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
+  Script location: file: common/men_at_arms_types/rokugan_shadowlands_regiment_types.txt line: 87 (pit_oni:can_recruit)
 
+[22:01:00][E][jomini_script_system.cpp:284]: Script system error!
+  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
+  Script location: file: common/men_at_arms_types/00_cultural_maa_types.txt line: 50 (horse_archers:can_recruit)
+  
+  [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
+  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
+  Script location: file: common/men_at_arms_types/07_ep3_maa_types.txt line: 200 (skoutatoi:can_recruit)
+
+[22:01:00][E][jomini_script_system.cpp:284]: Script system error!
+  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
+  Script location: file: common/men_at_arms_types/07_ep3_maa_types.txt line: 225 (varangian_guards:can_recruit)
+  
+  [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
+  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
+  Script location: file: common/men_at_arms_types/01_accolade_maa_types.txt line: 465 (accolade_maa_horse_archers:can_recruit)
+
+[22:01:00][E][jomini_script_system.cpp:284]: Script system error!
+  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
+  Script location: file: common/men_at_arms_types/01_fp1_maa_types.txt line: 31 (vigmen:can_recruit)
 
 ## CK3 1.13.* patch
 - update vanilla travel background for acitivites to add shadowlands bg
@@ -36,6 +57,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - New Shadowlands stuff
 	- up ishigaki bridge a little
 	- move down yukiko 13 & forgotten 13 bridge
+- - Missing longbow animation during hunts
 - remove bunch of errors
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
@@ -47,7 +69,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Shiro Kaikoga => Wrong religion & culture 
 - Add thumbnail image for the mod !
 - add images for mma
-- Still some backgrounds are buggy for feudal shadowlands ? Child ruler shadowlands ?
+- Why people can be eunuques ?! wtf even Dark Moto Tsume ?! 
+- Dakr Moto Tsume can get Cancer, Eunuque, and Incapable. Prevent this.
 
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)

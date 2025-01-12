@@ -406,10 +406,10 @@ shindoshi = {
 		ishiken
 	}
 
-	birth=1.0 # 1.0% chance de be born with this trait 
-	random_creation= 1.0 # 0.2% of new character have this ??
-	inherit_chance = 25 # 25% of chance to pass to the child
-	both_parent_has_trait_inherit_chance = 50 # 50% of chance to pass to the child if both parents have it
+	birth=2.0 # 2.0% chance de be born with this trait 
+	random_creation= 2.0 # 0.2% of new character have this ??
+	inherit_chance = 30 # 30% of chance to pass to the child
+	both_parent_has_trait_inherit_chance = 60 # 60% of chance to pass to the child if both parents have it
 
 	#TODO event when child with shindoshi is born ? Generate an elemental affinity ??
 
@@ -446,10 +446,10 @@ ishiken = {
 		shindoshi
 	}
 
-	birth=0.1 # 0.1% chance de be born with this trait 
-	random_creation=0.1 # 0.1% of new character have this ??
-	inherit_chance = 10 # 10% of chance to pass to the child
-	both_parent_has_trait_inherit_chance = 25 # 25% of chance to pass to the child if both parents have it
+	birth=0.5 # 0.1% chance de be born with this trait 
+	random_creation=0.5 # 0.1% of new character have this ??
+	inherit_chance = 20 # 20% of chance to pass to the child
+	both_parent_has_trait_inherit_chance = 40 # 40% of chance to pass to the child if both parents have it
 
 	#TODO event when child with shindoshi is born ? Generate an elemental affinity ??
 
@@ -716,6 +716,10 @@ kami_descendant = {
 ###############################
 ## Shadowlands traits
 undead = {
+
+
+	opposites = { incapable cancer eunuch_1 beardless_eunuch cancer lovers_pox}
+
 	immortal = yes
 	flag = immune_to_disease  # L5R TODO why it can still become sick ?
 	life_expectancy = 10000
@@ -743,6 +747,9 @@ undead = {
 	rf_rokugan_opinion = -1000
 	general_opinion = -30
 	same_opinion = 60
+
+	# Dummy flags — just here for loc really.
+	flag = immortal_incapability
 
 	# triggered_opinion = {
 	# 	parameter = witchcraft_illegal
