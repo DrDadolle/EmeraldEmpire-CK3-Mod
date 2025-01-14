@@ -128,6 +128,9 @@ travel_events.2000 = {
 				terrain = desert
 				terrain = desert_mountains
 				terrain = mountains
+				#L5R Added
+				# Good things never happen in the shadowlands
+				is_shadowlands_terrain = yes
 			}
 		}
 	}
@@ -809,6 +812,8 @@ scripted_trigger is_suitable_guide_trigger = {
 			OR = {
 				location = { terrain = plains }
 				location = { terrain = farmlands }
+				#L5R Added
+				location = { terrain = shadowlands_plains }
 			}
 			has_trait = open_terrain_expert
 		}
@@ -817,6 +822,9 @@ scripted_trigger is_suitable_guide_trigger = {
 			OR = {
 				location = { terrain = hills }
 				location = { terrain = mountains }
+				#L5R Added
+				location = { terrain = shadowlands_hills }
+				location = { terrain = shadowlands_mountains }
 			}
 			has_trait = rough_terrain_expert
 		}
@@ -827,13 +835,21 @@ scripted_trigger is_suitable_guide_trigger = {
 		}
 		#River person
 		AND = {
-			location = { terrain = floodplains }
-			location = { terrain = wetlands }
+			OR = {
+				location = { terrain = floodplains }
+				location = { terrain = wetlands }
+				#L5R Added
+				location = { terrain = shadowlands_wetlands }
+			}
 			has_trait = forder
 		}
 		#Forest person
 		AND = {
-			location = { terrain = forest }
+			OR = {
+				location = { terrain = forest }
+				#L5R Added
+				location = { terrain = shadowlands_forest }
+			}
 			has_trait = forest_fighter
 		}
 		#Winter person
@@ -14036,6 +14052,8 @@ travel_events.2100 = {
 						OR = {
 							terrain = forest
 							terrain = taiga
+							#L5R Added
+							terrain = shadowlands_forest
 						}
 					}
 				}
@@ -14047,6 +14065,9 @@ travel_events.2100 = {
 						OR = {
 							terrain = hills
 							terrain = mountains
+							#L5R Added
+							terrain = shadowlands_hills
+							terrain = shadowlands_mountains
 						}
 					}
 				}
@@ -14119,7 +14140,11 @@ travel_events.2100 = {
 			triggered_desc = {
 				trigger = {
 					location = {
-						terrain = forest
+						OR = {
+							terrain = forest
+							#L5R Added
+							terrain = shadowlands_forest
+						}
 					}
 				}
 				desc = travel_events.2100.desc_trees
@@ -14130,6 +14155,9 @@ travel_events.2100 = {
 						OR = {
 							terrain = hills
 							terrain = mountains
+							#L5R Added
+							terrain = shadowlands_hills
+							terrain = shadowlands_mountains
 						}
 					}
 				}
@@ -15250,6 +15278,8 @@ travel_events.2107 = {
 							terrain = farmlands
 							terrain = plains
 							terrain = steppe
+							#L5R Added
+							terrain = shadowlands_plains
 						}
 					}
 				}
@@ -15274,6 +15304,8 @@ travel_events.2107 = {
 						OR = {
 							terrain = floodplains
 							terrain = wetlands
+							#L5R Added
+							terrain = shadowlands_wetlands
 						}
 					}
 				}
@@ -15286,6 +15318,8 @@ travel_events.2107 = {
 						OR = {
 							terrain = forest
 							terrain = taiga
+							#L5R Added
+							terrain = shadowlands_forest
 						}
 					}
 				}
@@ -15295,7 +15329,11 @@ travel_events.2107 = {
 			triggered_desc = {
 				trigger = {
 					scope:holding_location = {
-						terrain = mountains
+						OR = {
+							terrain = mountains
+							#L5R Added
+							terrain = shadowlands_mountains
+						}
 					}
 				}
 				desc = travel_events.2107.desc_intro_mountains
@@ -15304,7 +15342,11 @@ travel_events.2107 = {
 			triggered_desc = {
 				trigger = {
 					scope:holding_location = {
-						terrain = hills
+						OR = {
+							terrain = hills
+							#L5R Added
+							terrain = shadowlands_hills
+						}
 					}
 				}
 				desc = travel_events.2107.desc_intro_hills

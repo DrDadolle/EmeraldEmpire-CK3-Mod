@@ -70,6 +70,11 @@ travel_danger_events.3000 = { # Highlands terrain. Someone falls from a mountain
 					travel_plan = root.current_travel_plan
 					terrain = mountains
 				}
+				#L5R Added
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+					terrain = shadowlands_mountains
+				}
 			}
 		}
 	}
@@ -628,6 +633,11 @@ travel_danger_events.3001 = { #Avalanche, Highlands terrain. Based on Gesta Abba
 				travel_danger_type = {
 					travel_plan = root.current_travel_plan
 					terrain = mountains
+				}
+				#L5R Added
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+					terrain = shadowlands_mountains
 				}
 			}
 			has_holding = yes
@@ -1507,9 +1517,16 @@ travel_danger_events.3005 = { #brushfire, hill terrain, no winter present
 		}
 
 		location = {
-			travel_danger_type = {
-				travel_plan = root.current_travel_plan
-				terrain = hills
+			OR = {
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+					terrain = hills
+				}
+				#L5R Added
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+					terrain = shadowlands_hills
+				}
 			}
 		}
 	}

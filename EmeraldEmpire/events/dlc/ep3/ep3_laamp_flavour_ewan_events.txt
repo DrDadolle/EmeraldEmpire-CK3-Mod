@@ -17448,6 +17448,9 @@ ep3_laamp_flavour_ewan.4041 = {
 									OR = {
 										terrain = hills
 										terrain = mountains
+										#L5R Added
+										terrain = shadowlands_hills
+										terrain = shadowlands_mountains
 									}
 								}
 							}
@@ -17460,6 +17463,8 @@ ep3_laamp_flavour_ewan.4041 = {
 										terrain = jungle
 										terrain = forest
 										terrain = taiga
+										#L5R Added
+										terrain = shadowlands_forest
 									}
 								}
 							}
@@ -17683,17 +17688,26 @@ ep3_laamp_flavour_ewan.4041 = {
 							terrain = taiga
 							terrain = steppe
 							terrain = drylands
+							#L5R Added
+							terrain = shadowlands_plains
+							terrain = shadowlands_hills
+							terrain = shadowlands_mountains
+							terrain = shadowlands_forest
 						}
 						# And places where they occur.
 						OR = {
-							geographical_region = world_europe_south
-							geographical_region = world_europe_east
-							geographical_region = world_asia_minor
-							geographical_region = world_middle_east
-							geographical_region = world_india
-							geographical_region = world_africa
-							geographical_region = world_steppe
-							geographical_region = world_burma
+							#L5R Modified
+							# They occur everywhere 
+							geographical_region = world_rokugan
+							geographical_region = world_shadowlands
+							# geographical_region = world_europe_south
+							# geographical_region = world_europe_east
+							# geographical_region = world_asia_minor
+							# geographical_region = world_middle_east
+							# geographical_region = world_india
+							# geographical_region = world_africa
+							# geographical_region = world_steppe
+							# geographical_region = world_burma
 						}
 					}
 				}
@@ -17706,7 +17720,15 @@ ep3_laamp_flavour_ewan.4041 = {
 			200 = {
 				trigger = {
 					location_has_normal_or_worse_winter_trigger = yes
-					location = { terrain = mountains }
+					OR = {
+						#L5R Added
+						location = {
+							OR = {
+								terrain = mountains
+								terrain = shadowlands_mountains
+							}
+						}
+					}
 					# Some people won't consider this excessive hardship.
 					NOR = {
 						has_trait = rough_terrain_expert
@@ -17726,6 +17748,8 @@ ep3_laamp_flavour_ewan.4041 = {
 							OR = {
 								terrain = floodplains
 								terrain = wetlands
+								#L5R Added
+								terrain = shadowlands_wetlands
 							}
 						}
 						AND = {
@@ -17739,6 +17763,10 @@ ep3_laamp_flavour_ewan.4041 = {
 									terrain = farmlands
 									terrain = jungle
 									terrain = forest
+									#L5R Added
+									terrain = shadowlands_plains
+									terrain = shadowlands_hills
+									terrain = shadowlands_forest
 								}
 								# Some places will never have floods — not that they mightn't IRL, but they'd be potentially verisimilitude-breaking at a glance IG.
 								NOR = {
@@ -17746,6 +17774,8 @@ ep3_laamp_flavour_ewan.4041 = {
 									terrain = desert
 									terrain = desert_mountains
 									terrain = oasis
+									#L5R Added
+									terrain = shadowlands_mountains
 								}
 							}
 						}
@@ -17767,6 +17797,10 @@ ep3_laamp_flavour_ewan.4041 = {
 							terrain = plains
 							terrain = forest
 							terrain = taiga
+							#L5R Added
+							# In case I add land corruption
+							terrain = shadowlands_plains
+							terrain = shadowlands_forest
 						}
 					}
 					# Rule out anyone who wouldn't be fooled by this.
@@ -17787,6 +17821,7 @@ ep3_laamp_flavour_ewan.4041 = {
 						OR = {
 							#L5R Modified
 							geographical_region = world_rokugan
+							geographical_region = world_shadowlands
 							# geographical_region = world_europe_south_east
 							# geographical_region = world_europe_south_italy
 							# geographical_region = world_asia_minor
@@ -18585,13 +18620,25 @@ ep3_laamp_flavour_ewan.4061 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = hills }
+					#L5R Modified
+					location = { 
+						OR = {
+							terrain = hills 
+							terrain = shadowlands_hills 
+						}
+					}
 				}
 				desc = ep3_laamp_flavour_ewan.4061.desc.terrain.hills
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = mountains }
+					#L5R Modified
+					location = { 
+						OR = {
+							terrain = mountains 
+							terrain = shadowlands_mountains 
+						}
+					}
 				}
 				desc = ep3_laamp_flavour_ewan.4061.desc.terrain.mountains
 			}
@@ -18621,7 +18668,13 @@ ep3_laamp_flavour_ewan.4061 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = forest }
+					#L5R Modified
+					location = { 
+						OR = {
+							terrain = forest 
+							terrain = shadowlands_forest 
+						}
+					}
 				}
 				desc = ep3_laamp_flavour_ewan.4061.desc.terrain.forest
 			}
@@ -18633,7 +18686,13 @@ ep3_laamp_flavour_ewan.4061 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = wetlands }
+					#L5R Modified
+					location = { 
+						OR = {
+							terrain = wetlands 
+							terrain = shadowlands_wetlands 
+						}
+					}
 				}
 				desc = ep3_laamp_flavour_ewan.4061.desc.terrain.wetlands
 			}
@@ -19622,13 +19681,25 @@ ep3_laamp_flavour_ewan.4062 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = hills }
+					#L5R Modified
+					location = { 
+						OR = {
+							terrain = hills 
+							terrain = shadowlands_hills
+						}
+					}
 				}
 				desc = ep3_laamp_flavour_ewan.4062.desc.terrain.hills
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = mountains }
+					#L5R Modified
+					location = { 
+						OR = {
+							terrain = mountains 
+							terrain = shadowlands_mountains
+						}
+					}
 				}
 				desc = ep3_laamp_flavour_ewan.4062.desc.terrain.mountains
 			}
@@ -19658,7 +19729,13 @@ ep3_laamp_flavour_ewan.4062 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = forest }
+					#L5R Modified
+					location = { 
+						OR = {
+							terrain = forest 
+							terrain = shadowlands_forest
+						}
+					}
 				}
 				desc = ep3_laamp_flavour_ewan.4062.desc.terrain.forest
 			}
@@ -19670,7 +19747,13 @@ ep3_laamp_flavour_ewan.4062 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = wetlands }
+					#L5R Modified
+					location = { 
+						OR = {
+							terrain = wetlands 
+							terrain = shadowlands_wetlands
+						}
+					}
 				}
 				desc = ep3_laamp_flavour_ewan.4062.desc.terrain.wetlands
 			}

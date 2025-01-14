@@ -27,9 +27,16 @@ travel_danger_events.1000 = { # Hills Terrain - Mounts get tired
 		is_location_valid_for_travel_event_on_land = yes
 
 		location = {
-			travel_danger_type = {
-				travel_plan = root.current_travel_plan
-				terrain = hills
+			#L5R Modified
+			OR = {
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+						terrain = hills
+				}
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+						terrain = shadowlands_hills
+				}
 			}
 		}
 
@@ -174,9 +181,16 @@ travel_danger_events.1002 = { # Mountain Terrain - Bandits
 		is_available_travelling_adult = yes
 		is_location_valid_for_travel_event_on_land = yes
 		location = {
-			travel_danger_type = {
-				travel_plan = root.current_travel_plan
-				terrain = mountains
+			#L5R Modified
+			OR = {
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+						terrain = mountains
+				}
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+						terrain = shadowlands_mountains
+				}
 			}
 		}
 		NOR = {
@@ -486,12 +500,19 @@ travel_danger_events.1003 = { # Companion disappears in the bog
 		}
 
 		location = {
-			travel_danger_type = {
-				travel_plan = root.current_travel_plan
-				terrain = wetlands
+			#L5R Modified
+			OR = {
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+						terrain = wetlands
+				}
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+						terrain = shadowlands_wetlands
+				}
 			}
-		}		
-	}
+		}
+	}		
 
 	cooldown = { months = 1 }
 
@@ -607,6 +628,11 @@ travel_danger_events.1006 = { # Lost in the forest
 				travel_danger_type = {
 					travel_plan = root.current_travel_plan
 					terrain = taiga
+				}
+				#L5R Added
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+					terrain = shadowlands_forest
 				}
 			}
 		}

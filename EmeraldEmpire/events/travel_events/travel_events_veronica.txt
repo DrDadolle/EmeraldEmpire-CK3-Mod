@@ -4462,7 +4462,9 @@ travel_events.3100 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { #if you're from a Steppe culture or not
-					capital_province = { geographical_region = world_steppe }
+					#L5R Modified
+					capital_province = { geographical_region = rokugan_unicorn }
+					# capital_province = { geographical_region = world_steppe }
 				}
 				desc = travel_events.3100.desc_steppe
 			}
@@ -4557,7 +4559,9 @@ travel_events.3100 = {
 			35 = { #they make it
 				modifier = {
 					factor = 1.5
-					capital_province = { geographical_region = world_steppe } #you know how to do this stuff
+					#L5R Modified
+					capital_province = { geographical_region = rokugan_unicorn }#you know how to do this stuff
+					# capital_province = { geographical_region = world_steppe } #you know how to do this stuff
 				}
 				modifier = {
 					factor = 1
@@ -4690,7 +4694,9 @@ travel_events.3100 = {
 			70 = { #they make it
 				modifier = {
 					factor = 1.5
-					capital_province = { geographical_region = world_steppe }
+					#L5R Modified
+					capital_province = { geographical_region = rokugan_unicorn }
+					# capital_province = { geographical_region = world_steppe }
 				}
 				modifier = {
 					factor = 1
@@ -4783,6 +4789,11 @@ travel_events.3120 = {
 				travel_danger_type = {
 					travel_plan = root.current_travel_plan
 					terrain = taiga
+				}
+				#L5R Added
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+					terrain = shadowlands_forest
 				}
 			}
 		}
@@ -6352,6 +6363,11 @@ travel_events.3160 = {
 				travel_danger_type = {
 					travel_plan = root.current_travel_plan
 					terrain = taiga
+				}
+				#L5R Added
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+					terrain = shadowlands_forest
 				}
 			}
 		}

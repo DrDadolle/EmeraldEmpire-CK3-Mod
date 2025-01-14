@@ -52,6 +52,15 @@ travel_danger_events.9000 = { # Wetlands, Floodplains, Forest, Jungle: Blood-suc
 					travel_plan = root.current_travel_plan
 					terrain = jungle
 				}
+				#L5R Added
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+					terrain = shadowlands_wetlands
+				}
+				travel_danger_type = {
+					travel_plan = root.current_travel_plan
+					terrain = shadowlands_forest
+				}
 			}
 		}
 

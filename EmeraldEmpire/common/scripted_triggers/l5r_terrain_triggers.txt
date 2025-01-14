@@ -1,0 +1,13 @@
+﻿######################################################################
+# Terrain
+######################################################################
+
+is_shadowlands_terrain = {
+	OR = {
+		terrain = shadowlands_forest
+		terrain = shadowlands_plains
+		terrain = shadowlands_hills
+		terrain = shadowlands_mountains
+        terrain = shadowlands_wetlands
+	}
+}

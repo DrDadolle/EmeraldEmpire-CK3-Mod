@@ -2816,34 +2816,47 @@ travel_events.4015 = {
 scripted_trigger 4016_is_hot_climate_trigger = {
 	NOT = { terrain = mountains }
 	NOT = { terrain = taiga }
+	#L5R Added
+	NOT = { terrain = shadowlands_mountains }
 	OR = {
-		geographical_region = world_middle_east
-		geographical_region = world_india
-		geographical_region = world_africa
-		geographical_region = world_burma
+		#L5R Modified
+		geographical_region = rokugan_spice_and_silk_isles
+		# geographical_region = world_middle_east
+		# geographical_region = world_india
+		# geographical_region = world_africa
+		# geographical_region = world_burma
 		AND = {
 			OR = {
 				is_desert_trigger = yes
 				terrain = jungle
 			}
 			NOR = {
-				geographical_region = world_steppe
-				geographical_region = world_tibet
+				#L5R Modified
+				geographical_region = rokugan_dragon
+				geographical_region = rokugan_phoenix
+				# geographical_region = world_steppe
+				# geographical_region = world_tibet
 			}
 		}
 	}
 }
 scripted_trigger 4016_is_cold_climate_trigger = { # Explicitly looking for places that are *cold*, not merely that they're not hot
 	OR = {
-		geographical_region = world_steppe
-		geographical_region = world_tibet
+		#L5R Modified
+		geographical_region = rokugan_dragon
+		geographical_region = rokugan_phoenix
+		# geographical_region = world_steppe
+		# geographical_region = world_tibet
 		NOT = { is_desert_trigger = yes }
 		NOT = { terrain = jungle }
 	}
 	OR = {
-		geographical_region = world_steppe
-		geographical_region = world_tibet
-		#L5R Disabled
+		#L5R Modified
+		geographical_region = rokugan_unicorn
+		geographical_region = rokugan_scorpion
+		geographical_region = rokugan_lion
+		# geographical_region = world_steppe
+		# geographical_region = world_tibet
 		# geographical_region = world_europe_west_britannia
 		# geographical_region = world_europe_west_germania
 		# geographical_region = world_europe_north
@@ -2851,13 +2864,15 @@ scripted_trigger 4016_is_cold_climate_trigger = { # Explicitly looking for place
 		terrain = taiga
 	}
 	NOT = {
+		#L5R Modified
+		geographical_region = rokugan_spice_and_silk_isles
 		#L5R Disabled
 		# geographical_region = world_europe_west_iberia
 		# geographical_region = world_europe_south
 		# geographical_region = world_middle_east
-		geographical_region = world_india
-		geographical_region = world_africa
-		geographical_region = world_burma
+		# geographical_region = world_india
+		# geographical_region = world_africa
+		# geographical_region = world_burma
 	}
 }
 
