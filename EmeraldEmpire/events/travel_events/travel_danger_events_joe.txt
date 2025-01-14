@@ -2518,6 +2518,12 @@ travel_danger_events.6030 = { #Spoiled food
 				}
 			}
 		}
+		#L5R Added
+		# Spoiled Food in Shadowlands
+		random_add_taint_effect_if_in_shadowlands_terrain = { 
+			CHANCE_OF_TAINT = 10 
+			VALUE_OF_TAINT = 5 
+		}
 		ai_chance = {
 			base = 50
 			ai_value_modifier = {
@@ -2694,6 +2700,12 @@ travel_danger_events.6030 = { #Spoiled food
 							contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
 							domicile ?= {
 								change_provisions = medium_provisions_loss
+							}
+							#L5R Added
+							# Forage Food in Shadowlands is a bad idea
+							random_add_taint_effect_if_in_shadowlands_terrain = { 
+								CHANCE_OF_TAINT = 30 
+								VALUE_OF_TAINT = 10
 							}
 						}
 					}
@@ -2902,6 +2914,12 @@ travel_danger_events.6030 = { #Spoiled food
 					contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
 					domicile ?= {
 						change_provisions = medium_provisions_loss
+					}
+					#L5R Added
+					# Forage Food in Shadowlands is a bad idea
+					random_add_taint_effect_if_in_shadowlands_terrain = { 
+						CHANCE_OF_TAINT = 30 
+						VALUE_OF_TAINT = 10
 					}
 				}
 				1 = { # Poison self real bad

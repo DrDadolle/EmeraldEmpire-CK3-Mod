@@ -122,10 +122,19 @@ travel_danger_events.9000 = { # Wetlands, Floodplains, Forest, Jungle: Blood-suc
 			modifier = drained_by_mosquitoes_modifier
 			years = 3
 		}
+		
 		add_character_modifier = {
 			modifier = diplomacy_majesty_4090_no_raiment_modifier
 			years = 1
 		}
+
+		#L5R Added
+		# Mosquitoes give taint
+		random_add_taint_effect_if_in_shadowlands_terrain = { 
+			CHANCE_OF_TAINT = 10 
+			VALUE_OF_TAINT = 5 
+		}
+
 		current_travel_plan = {
 			every_entourage_character = {
 				custom = every_entourage_tt
@@ -142,6 +151,13 @@ travel_danger_events.9000 = { # Wetlands, Floodplains, Forest, Jungle: Blood-suc
 					modifier = diplomacy_majesty_4090_no_raiment_modifier
 					years = 1
 				}
+				#L5R Added
+				# Mosquitoes give taint
+				random_add_taint_effect_if_in_shadowlands_terrain = { 
+					CHANCE_OF_TAINT = 10 
+					VALUE_OF_TAINT = 5 
+				}
+
 			}
 		}
 	}
@@ -175,6 +191,12 @@ travel_danger_events.9000 = { # Wetlands, Floodplains, Forest, Jungle: Blood-suc
 					modifier = drained_by_mosquitoes_modifier
 					years = 3
 				}
+				#L5R Added
+				# Mosquitoes give taint
+				random_add_taint_effect_if_in_shadowlands_terrain = { 
+					CHANCE_OF_TAINT = 10 
+					VALUE_OF_TAINT = 5 
+				}
 			}
 		}
 		current_travel_plan = {
@@ -190,6 +212,12 @@ travel_danger_events.9000 = { # Wetlands, Floodplains, Forest, Jungle: Blood-suc
 					add_character_modifier = {
 						modifier = drained_by_mosquitoes_modifier
 						years = 3
+					}
+					#L5R Added
+					# Mosquitoes give taint
+					random_add_taint_effect_if_in_shadowlands_terrain = { 
+						CHANCE_OF_TAINT = 10 
+						VALUE_OF_TAINT = 5 
 					}
 				}
 			}
@@ -218,6 +246,12 @@ travel_danger_events.9000 = { # Wetlands, Floodplains, Forest, Jungle: Blood-suc
 					modifier = drained_by_mosquitoes_modifier
 					years = 3
 				}
+				#L5R Added
+				# Mosquitoes give taint
+				random_add_taint_effect_if_in_shadowlands_terrain = { 
+					CHANCE_OF_TAINT = 10 
+					VALUE_OF_TAINT = 5 
+				}
 			}
 		}
 		current_travel_plan = {
@@ -228,6 +262,12 @@ travel_danger_events.9000 = { # Wetlands, Floodplains, Forest, Jungle: Blood-suc
 					add_character_modifier = {
 						modifier = drained_by_mosquitoes_modifier
 						years = 3
+					}
+					#L5R Added
+					# Mosquitoes give taint
+					random_add_taint_effect_if_in_shadowlands_terrain = { 
+						CHANCE_OF_TAINT = 10 
+						VALUE_OF_TAINT = 5 
 					}
 				}
 			}
@@ -273,6 +313,12 @@ travel_danger_events.9000 = { # Wetlands, Floodplains, Forest, Jungle: Blood-suc
 				modifier = diplomacy_majesty_4090_no_raiment_modifier
 				years = 1
 			}
+			#L5R Added
+			# Mosquitoes give taint
+			random_add_taint_effect_if_in_shadowlands_terrain = { 
+				CHANCE_OF_TAINT = 10 
+				VALUE_OF_TAINT = 5 
+			}
 		}
 		current_travel_plan = {
 			every_entourage_character = {
@@ -285,6 +331,12 @@ travel_danger_events.9000 = { # Wetlands, Floodplains, Forest, Jungle: Blood-suc
 					add_character_modifier = {
 						modifier = drained_by_mosquitoes_modifier
 						years = 3
+					}
+					#L5R Added
+					# Mosquitoes give taint
+					random_add_taint_effect_if_in_shadowlands_terrain = { 
+						CHANCE_OF_TAINT = 10 
+						VALUE_OF_TAINT = 5 
 					}
 				}
 			}
