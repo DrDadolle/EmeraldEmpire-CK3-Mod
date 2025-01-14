@@ -2767,7 +2767,8 @@ special_genes = {
 			mena_wedding = {
 				index = 2
 				male = {
-					1 = m_headgear_spec_ep2_mena_wedding
+					#L5R Disabled
+					#1 = m_headgear_spec_ep2_mena_wedding
 				}
 				female = {
 					1 = f_headgear_spec_ep2_mena_wedding

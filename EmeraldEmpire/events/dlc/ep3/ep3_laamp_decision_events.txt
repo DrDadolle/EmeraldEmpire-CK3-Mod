@@ -1666,7 +1666,8 @@ ep3_laamp_decision_event.1000 = {
 	after = {
 		remove_variable ?= 1000_is_currently_raining
 		remove_variable ?= 1000_is_currently_snowing
-		remove_variable ?= 1000_is_currently_foggy
+		#L5R Disabled
+		# remove_variable ?= 1000_is_currently_foggy
 		#For all options that are NOT Page 2
 		if = {
 			limit = {
