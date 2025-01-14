@@ -25,7 +25,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 # TO TEST
-- hot spring actyivity a bit too zoomed out when selecting it
+- hot spring actyivity a bit too zoomed out when selecting it. Test it
+- Dakr Moto Tsume can get Cancer, and Incapable. Prevent this.
+- Added feudal elective to Emerald Champion stuff.
 
 [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
   Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
@@ -65,20 +67,17 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more namelists & dynasty list
 - ck3tiger fixes to do !
 - "son of heaven" even if female ruler loc to fix. Does it happens ?
-- Bug Why kingdom have no de-jure drifts ?
 - Shiro Kaikoga => Wrong religion & culture 
 - Add thumbnail image for the mod !
 - add images for mma
-- Why people can be eunuques ?! wtf even Dark Moto Tsume ?! 
-- Dakr Moto Tsume can get Cancer, Eunuque, and Incapable. Prevent this.
+- Why people can be eunuch ?! wtf even Dark Moto Tsume ?! 
+
 
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)
 - Why so much empty space in portrait debug mod ?
 - Create MaA for each great clan
 	- add special icons/images for MaA !!!!!!!!!!!!!!!!!!!!! (crab, oni & crane done, rest to do)
-- transform "mahotsukai" trait into the secret / trait combo of witch
-
 
 ## Fixes to do
 - Spammed with rokugan_char_interaction.0231 event boxes...
@@ -143,6 +142,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Doji Kuwanan
 	- Akodo Toturi
 - use "event invasion of vikings" for yobanjin
+- transform "mahotsukai" trait into the secret / trait combo of witch
 - add choice of new mon and names for new minor clans !
 	- boar clan (disappear mysteriously) https://l5r.fandom.com/wiki/Boar_Clan?file=Boar.png
 	- firefly 
@@ -173,6 +173,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Kaiu Wall (done) : add models from AEP
 - if emperor : get a doji bride
 - if emperor : all siblings goes to "Otomo" once there is an heir + The revert decision
+- Bug Why kingdom have no de-jure drifts ? Inside same de_jure empire. Change de jure drift rules ?
 - Emerald Champion stuff ?
 - Special Phoenix champion succession, test it !
 	- rework princely election, with special character "Ofushikai" being out of map immortal 

@@ -592,7 +592,6 @@ c_otosan_uchi_province = {
 	}
 
 	1103.1.1 = {
-		
 		holder = lineofhantei38 # Hantei 38th
 		change_development_level = 40
 	}
@@ -688,7 +687,21 @@ c_miya_province = {
 k_emerald_champ = {
 	1123.1.1 = { #TODO for now, it's not historic, but emerald champion stuff is not vanilla friendly. To code later
 		liege = "e_rokugan"
-		#holder = lineofakododaio2 # Toturi
-		change_development_level = 30
+		holder = lineofakododaio2 # Toturi, as we need someone to have it
+		succession_laws = { feudal_elective_succession_law }
+	}
+}
+
+d_emerald = {
+	1123.1.1 = { #TODO for now, it's not historic, but emerald champion stuff is not vanilla friendly. To code later
+		liege = "k_emerald_champ"
+		holder = lineofakododaio2 # Toturi
+	}
+}
+
+c_emerald_castle_province = {
+	1123.1.1 = { #TODO for now, it's not historic, but emerald champion stuff is not vanilla friendly. To code later
+		liege = "d_emerald"
+		holder = lineofakododaio2 # Toturi
 	}
 }

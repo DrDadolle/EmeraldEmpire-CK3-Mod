@@ -73,8 +73,11 @@
 		}
 	}
 
-	province_filter = top_realm
-	ai_province_filter = domicile_realm
+	province_filter = domicile_realm
+	ai_province_filter = domicile_domain
+
+	# province_filter = top_realm
+	# ai_province_filter = domicile_realm
 
 	province_description = {
 		# +++ / triple plus good

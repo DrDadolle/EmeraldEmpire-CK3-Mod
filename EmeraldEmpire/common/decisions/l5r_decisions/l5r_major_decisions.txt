@@ -276,7 +276,7 @@ decision_claim_toshi_rambo_crane = {
 			levies = 1000
 			men_at_arms = {
 				type = crane_iron_warrior
-				stacks = 2
+				stacks = 5
 			}
 			location = capital_province
 		}
@@ -385,7 +385,7 @@ decision_claim_toshi_rambo_lion = {
 			levies = 1500
 			men_at_arms = {
 				type = lion_matsu_berserker
-				stacks = 2
+				stacks = 5
 			}
 			location = capital_province
 		}
@@ -494,7 +494,7 @@ decision_claim_city_rich_frog_lion = {
 			levies = 1500
 			men_at_arms = {
 				type = lion_matsu_berserker
-				stacks = 2
+				stacks = 5
 			}
 			location = capital_province
 		}
@@ -604,7 +604,7 @@ decision_claim_city_rich_frog_unicorn = {
 			levies = 1500
 			men_at_arms = {
 				type = unicorn_utaku_maiden
-				stacks = 2
+				stacks = 5
 			}
 			location = capital_province
 		}
