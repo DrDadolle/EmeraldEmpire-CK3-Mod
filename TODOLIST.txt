@@ -26,8 +26,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 # TO TEST
 - hot spring actyivity a bit too zoomed out when selecting it. Test it
-- Dakr Moto Tsume can get Cancer, and Incapable. Prevent this.
-- Added feudal elective to Emerald Champion stuff.
+- Dakr Moto Tsume can get Cancer, and Incapable. Prevent this. Test it doesn't happens anymore
 
 [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
   Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
@@ -54,6 +53,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
   Script location: file: common/men_at_arms_types/01_fp1_maa_types.txt line: 31 (vigmen:can_recruit)
 
 ## CK3 1.13.* patch
+- Add traited trait
+	- Add yearly event in shadowlands to get it/progress it
+	- Add event when travelling in shadowlands/fighting
+	- add image for the trait
 - update vanilla travel background for acitivites to add shadowlands bg
 	- graphical_shadowlands_trigger = yes
 - New Shadowlands stuff
@@ -63,7 +66,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - remove bunch of errors
 - Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
-- see loc "castellanny of fu leng stuff" when conquered by rokugani guy
 - more namelists & dynasty list
 - ck3tiger fixes to do !
 - "son of heaven" even if female ruler loc to fix. Does it happens ?
@@ -71,6 +73,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Add thumbnail image for the mod !
 - add images for mma
 - Why people can be eunuch ?! wtf even Dark Moto Tsume ?! 
+- redo images of tatoo ?
 
 
 ## short term goals 

@@ -39,6 +39,20 @@
  trait_mahotsukai_3_character_desc:0 "Profane ritual and dark rite - [ROOT.GetCharacter.GetFirstNameNoTooltip] stands unparalleled in the [maho|e], renouncing their humanity in the pursuit of power"
  ###################
  ### SHADOWLANDS ###
+ # Tainted
+ trait_lifestyle_tainted:0 "Taint"
+ trait_track_lifestyle_tainted:0 "Taint"
+ trait_track_lifestyle_tainted_desc:0 "The Taint cannot be cured, it will always win."
+ trait_tainted_1:0 "Lightly Tainted"
+ trait_tainted_1_desc:0 "Cursed ty the Taint of the Shadowlands, the Lightly Tainted can still hope to live a normal life if they follow the proper treatment."
+ trait_tainted_1_character_desc:0 "Cursed ty the Taint of the Shadowlands,[ROOT.GetCharacter.GetFirstNameNoTooltip] can still hope to live a normal life if [ROOT.GetCharacter.GetSheHe] follow the proper treatment."
+ trait_tainted_2:0 "Heavily Tainted"
+ trait_tainted_2_desc:0 "The Heavily Tainted starts to have hallucinations and signs of physicial corruption, an appropriate time for ritual suicide."
+ trait_tainted_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] starts to have hallucinations and signs of physicial corruption, an appropriate time for ritual suicide."
+ trait_tainted_3:0 "Lost"
+ trait_tainted_3_desc:0 "Completely corrupted by the Taint, the Lost is a complete puppet to the Shadowlands, having lost all free will."
+ trait_tainted_3_character_desc:0 "Completely corrupted by the Taint, [ROOT.GetCharacter.GetFirstNameNoTooltip] is a complete puppet to the Shadowlands, having lost all free will."
+ 
  # Undead
  trait_undead:0 "Undead"
  trait_undead_desc:0 "This character has lived beyond death, and now walks Rokugan as a spooky undead"

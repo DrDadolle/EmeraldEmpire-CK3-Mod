@@ -75,7 +75,13 @@ commit_seppuku_decision = {
 		is_landed_or_landless_administrative = yes
 		is_adult = yes
 		#Dishonored
-		prestige_level = 0
+		OR = {
+			prestige_level = 0
+			has_trait_xp = {
+				trait = tainted
+				value >= 100
+			}
+		}
 		#Can seppuku
 		culture = { has_cultural_parameter = can_seppuku }
 	}
@@ -106,6 +112,20 @@ commit_seppuku_decision = {
 			add = 50
 			culture = { has_cultural_pillar = heritage_lion}
 		}
+
+		# More often seppuku for tainted people
+		modifier = {
+			add = 50
+			has_trait_xp = {
+				trait = tainted
+				value >= 100
+			}
+		}
+
+		modifier = {
+			add = -20
+			has_trait = craven
+		}
 	}
 }
 
@@ -135,6 +155,10 @@ rokugan_abdicate_decision = {
 			has_trait = incapable
 			has_trait = infirm
 			# Not sure how to check for length of reign
+			has_trait_xp = {
+				trait = tainted
+				value >= 100
+			}
 		}
 		NOT = {	has_trait = immortal }
 		NOT = { has_trait = undead }
