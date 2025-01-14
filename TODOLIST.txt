@@ -28,7 +28,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - hot spring actyivity a bit too zoomed out when selecting it. Test it
 - Dakr Moto Tsume can get Cancer, and Incapable. Prevent this. Test it doesn't happens anymore
 - Added shadowlands_terrain in events triggers + add trait_tainted in some cases
+	- travel_danger_events.6030 for spoiled food
+	- travel_danger_events.9000 for mosquitoes
+	- travel_danger_events.1012 for bad plant to eat
 - TODO events travel check geographical_region
+- Test
 
 [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
   Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]

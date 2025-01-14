@@ -835,6 +835,12 @@ scripted_effect ate_poisonous_plant_effect = {
 							modifier = travel_ate_poisonous_plant_modifier
 							years = 5
 						}
+						#L5R Added
+						# eating random plants in the shadowlands wtf
+						random_add_taint_effect_if_in_shadowlands_terrain = { 
+							CHANCE_OF_TAINT = 50 
+							VALUE_OF_TAINT = 5 
+						}
 					}
 				}
 			}
@@ -850,6 +856,12 @@ scripted_effect ate_poisonous_plant_effect = {
 					title = travel_danger_events.1012.regular_plant
 					left_icon = scope:poisonous_plant_eater
 					add_learning_lifestyle_xp = medium_lifestyle_xp
+				}
+				#L5R Added
+				# eating random plants in the shadowlands wtf
+				random_add_taint_effect_if_in_shadowlands_terrain = { 
+					CHANCE_OF_TAINT = 10 
+					VALUE_OF_TAINT = 5 
 				}
 			}
 		}
@@ -1074,6 +1086,7 @@ travel_danger_events.1012 = { #Someone from you entourage finds a plant
 	option = { #let them eat it
 		name = travel_danger_events.1012.b
 		ate_poisonous_plant_effect = { PLANT_EATER = scope:poisonous_plant_eater }
+
 		stress_impact = {
 			cynical = minor_stress_impact_loss
 			paranoid = minor_stress_impact_gain
