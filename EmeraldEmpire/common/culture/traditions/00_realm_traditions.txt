@@ -1837,7 +1837,9 @@ tradition_pastoralists = {
 					OR = {
 						terrain = plains
 						terrain = steppe
-						geographical_region = world_steppe
+						#L5R Modified
+						terrain = shadowlands_plains
+						# geographical_region = world_steppe
 					}
 				}
 			}
@@ -1883,7 +1885,9 @@ tradition_pastoralists = {
 								OR = {
 									terrain = plains
 									terrain = steppe
-									geographical_region = world_steppe
+									#L5R Modified
+									terrain = shadowlands_plains
+									# geographical_region = world_steppe
 								}
 							}
 						}
@@ -1912,6 +1916,8 @@ tradition_pastoralists = {
 								OR = {
 									terrain = plains
 									terrain = steppe
+									#L5R Added
+									terrain = shadowlands_plains
 								}
 							}
 						}
@@ -2265,7 +2271,11 @@ tradition_hill_dwellers = {
 			text = culture_in_hills_desc
 			any_culture_county = {
 				any_county_province = {
-					terrain = hills
+					OR = {
+						terrain = hills
+						#L5R Added
+						terrain = shadowlands_hills
+					}
 				}
 			}
 		}
@@ -2309,7 +2319,11 @@ tradition_hill_dwellers = {
 						any_culture_county = {
 							percent >= 0.3
 							any_county_province = {
-								terrain = hills
+								OR = {
+									terrain = hills
+									#L5R Added
+									terrain = shadowlands_hills
+								}
 							}
 						}
 					}
@@ -2334,7 +2348,11 @@ tradition_hill_dwellers = {
 							percent >= 0.2
 							culture = scope:character.culture
 							any_county_province = {
-								terrain = hills
+								OR = {
+									terrain = hills
+									#L5R Added
+									terrain = shadowlands_hills
+								}
 							}
 						}
 					}
@@ -2347,7 +2365,11 @@ tradition_hill_dwellers = {
 				any_culture_county = {
 					percent >= 0.6
 					any_county_province = {
-						terrain = hills
+						OR = {
+							terrain = hills
+							#L5R Added
+							terrain = shadowlands_hills
+						}
 					}
 				}
 			}
@@ -2384,6 +2406,8 @@ tradition_forest_folk = {
 					OR = {
 						terrain = forest
 						terrain = taiga
+						#L5R Added
+						terrain = shadowlands_forest
 					}
 				}
 			}
@@ -2435,6 +2459,8 @@ tradition_forest_folk = {
 								OR = {
 									terrain = forest
 									terrain = taiga
+									#L5R Added
+									terrain = shadowlands_forest
 								}
 							}
 						}
@@ -2463,6 +2489,8 @@ tradition_forest_folk = {
 								OR = {
 									terrain = forest
 									terrain = taiga
+									#L5R Added
+									terrain = shadowlands_forest
 								}
 							}
 						}
@@ -2479,6 +2507,8 @@ tradition_forest_folk = {
 						OR = {
 							terrain = forest
 							terrain = taiga
+							#L5R Added
+							terrain = shadowlands_forest
 						}
 					}
 				}
@@ -2524,6 +2554,8 @@ tradition_mountain_homes = {
 					OR = {
 						terrain = mountains
 						terrain = desert_mountains
+						#L5R Added
+						terrain = shadowlands_mountains
 					}
 				}
 			}
@@ -2575,6 +2607,8 @@ tradition_mountain_homes = {
 								OR = {
 									terrain = mountains
 									terrain = desert_mountains
+									#L5R Added
+									terrain = shadowlands_mountains
 								}
 							}
 						}
@@ -2603,6 +2637,8 @@ tradition_mountain_homes = {
 								OR = {
 									terrain = mountains
 									terrain = desert_mountains
+									#L5R Added
+									terrain = shadowlands_mountains
 								}
 							}
 						}
@@ -2619,6 +2655,8 @@ tradition_mountain_homes = {
 						OR = {
 							terrain = mountains
 							terrain = desert_mountains
+							#L5R Added
+							terrain = shadowlands_mountains
 						}
 					}
 				}
@@ -2879,7 +2917,11 @@ tradition_wetlanders = {
 			text = culture_in_wetlands_desc
 			any_culture_county = {
 				any_county_province = {
-					terrain = wetlands
+					OR = {
+						terrain = wetlands
+						#L5R Added
+						terrain = shadowlands_wetlands
+					}
 				}
 			}
 		}
@@ -2926,7 +2968,11 @@ tradition_wetlanders = {
 						any_culture_county = {
 							count >= 3
 							any_county_province = {
-								terrain = wetlands
+								OR = {
+									terrain = wetlands
+									#L5R Added
+									terrain = shadowlands_wetlands
+								}
 							}
 						}
 					}
@@ -2951,7 +2997,11 @@ tradition_wetlanders = {
 							count >= 3
 							culture = scope:character.culture
 							any_county_province = {
-								terrain = wetlands
+								OR = {
+									terrain = wetlands
+									#L5R Added
+									terrain = shadowlands_wetlands
+								}
 							}
 						}
 					}
@@ -2964,7 +3014,11 @@ tradition_wetlanders = {
 				any_culture_county = {
 					percent >= 0.6
 					any_county_province = {
-						terrain = wetlands
+						OR = {
+							terrain = wetlands
+							#L5R Added
+							terrain = shadowlands_wetlands
+						}
 					}
 				}
 			}
@@ -3089,7 +3143,11 @@ tradition_hidden_cities = {
 				any_culture_county = {
 					percent >= 0.6
 					any_county_province = {
-						terrain = wetlands
+						OR = {
+							terrain = wetlands
+							#L5R Added
+							terrain = shadowlands_wetlands
+						}
 					}
 				}
 			}
@@ -3138,7 +3196,11 @@ tradition_ancient_miners = {
 						any_sub_realm_county = {
 							culture = scope:character.culture
 							any_county_province = {
-								terrain = hills
+								OR = {
+									terrain = hills
+									#L5R Added
+									terrain = shadowlands_hills
+								}
 							}
 						}
 					}

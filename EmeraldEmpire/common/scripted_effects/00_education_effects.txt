@@ -697,10 +697,11 @@ assign_commander_trait_effect = {
 					any_directly_owned_province = {
 						OR = {
 							terrain = taiga
-							geographical_region = world_tibet
-							geographical_region = world_europe_north
-							geographical_region = world_europe_east
-							geographical_region = world_steppe
+							#L5R Disabled
+							# geographical_region = world_tibet
+							# geographical_region = world_europe_north
+							# geographical_region = world_europe_east
+							# geographical_region = world_steppe
 						}
 					}
 					AND = {
@@ -709,10 +710,11 @@ assign_commander_trait_effect = {
 							any_directly_owned_province = {
 								OR = {
 									terrain = taiga
-									geographical_region = world_tibet
-									geographical_region = world_europe_north
-									geographical_region = world_europe_east
-									geographical_region = world_steppe
+									#L5R Disabled
+									# geographical_region = world_tibet
+									# geographical_region = world_europe_north
+									# geographical_region = world_europe_east
+									# geographical_region = world_steppe
 								}
 							}
 						}
@@ -724,10 +726,11 @@ assign_commander_trait_effect = {
 							any_directly_owned_province = {
 								OR = {
 									terrain = taiga
-									geographical_region = world_tibet
-									geographical_region = world_europe_north
-									geographical_region = world_europe_east
-									geographical_region = world_steppe
+									#L5R Disabled
+									# geographical_region = world_tibet
+									# geographical_region = world_europe_north
+									# geographical_region = world_europe_east
+									# geographical_region = world_steppe
 								}
 							}
 						}
@@ -765,6 +768,8 @@ assign_commander_trait_effect = {
 						OR = {
 							terrain = forest
 							terrain = taiga
+							#L5R Added
+							terrain = shadowlands_forest
 						}
 					}
 					AND = {
@@ -774,6 +779,8 @@ assign_commander_trait_effect = {
 								OR = {
 									terrain = forest
 									terrain = taiga
+									#L5R Added
+									terrain = shadowlands_forest
 								}
 							}
 						}
@@ -786,6 +793,8 @@ assign_commander_trait_effect = {
 								OR = {
 									terrain = forest
 									terrain = taiga
+									#L5R Added
+									terrain = shadowlands_forest
 								}
 							}
 						}
@@ -812,6 +821,10 @@ assign_commander_trait_effect = {
 							terrain = mountains
 							terrain = hills
 							terrain = wetlands
+							#L5R Added
+							terrain = shadowlands_mountains
+							terrain = shadowlands_hills
+							terrain = shadowlands_wetlands
 						}
 					}
 					AND = {
@@ -822,6 +835,10 @@ assign_commander_trait_effect = {
 									terrain = mountains
 									terrain = hills
 									terrain = wetlands
+									#L5R Added
+									terrain = shadowlands_mountains
+									terrain = shadowlands_hills
+									terrain = shadowlands_wetlands
 								}
 							}
 						}
@@ -835,6 +852,10 @@ assign_commander_trait_effect = {
 									terrain = mountains
 									terrain = hills
 									terrain = wetlands
+									#L5R Added
+									terrain = shadowlands_mountains
+									terrain = shadowlands_hills
+									terrain = shadowlands_wetlands
 								}
 							}
 						}

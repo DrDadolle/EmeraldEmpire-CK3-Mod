@@ -2253,6 +2253,11 @@ scripted_trigger harm_0551_child_location_has_trees_trigger = {
 			terrain = plains
 			terrain = taiga
 			terrain = wetlands
+			#L5R Added
+			terrain = shadowlands_hills
+			terrain = shadowlands_forest
+			terrain = shadowlands_mountains
+			terrain = shadowlands_wetlands
 		}
 	}
 }
@@ -6942,6 +6947,12 @@ scripted_trigger harm_1081_normal_storms_trigger = {
 			terrain = taiga
 			terrain = wetlands
 			terrain = steppe
+			#L5R Added
+			terrain = shadowlands_hills
+			terrain = shadowlands_forest
+			terrain = shadowlands_mountains
+			terrain = shadowlands_wetlands
+			terrain = shadowlands_plains
 		}
 	}
 }
@@ -9146,6 +9157,8 @@ harm.2051 = {
 							terrain = farmlands
 							terrain = plains
 							terrain = steppe
+							#L5R Added
+							terrain = shadowlands_plains
 						}
 					}
 				}
@@ -9157,6 +9170,10 @@ harm.2051 = {
 							terrain = mountains
 							terrain = wetlands
 							terrain = desert_mountains
+							#L5R Added
+							terrain = shadowlands_hills
+							terrain = shadowlands_mountains
+							terrain = shadowlands_wetlands
 						}
 					}
 				}
@@ -9166,6 +9183,8 @@ harm.2051 = {
 						OR = {
 							terrain = forest
 							terrain = taiga
+							#L5R Added
+							terrain = shadowlands_forest
 						}
 					}
 				}
