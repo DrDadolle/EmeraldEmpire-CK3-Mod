@@ -94,11 +94,6 @@
 	mat_grm_name_chance = 25
 	mother_name_chance = 0
 
-
-	# In L5R, first names becomes dynasties names
-	# Remove as it creates the "NAME OF DYNASTY" lands
-	# founder_named_dynasties = yes
-
 	mercenary_names = {
 		{ name = "mercenary_company_shinobi" }
 	}
@@ -108,15 +103,6 @@
 name_list_unicorn = {
 
 	dynasty_names = {
-		dynn_ashidaka
-		dynn_fujihiro
-		dynn_hiramichi		
-		dynn_hiramori		
-		dynn_iwasaki
-		dynn_junichi
-		dynn_katogama
-		dynn_morehei
-		dynn_tsume
 		dynn_ando 		#fictionnal
 		dynn_nakano 	#fictionnal
 		dynn_tendo 		#fictionnal
@@ -202,10 +188,6 @@ name_list_unicorn = {
 	pat_grm_name_chance = 10
 	mat_grm_name_chance = 25
 	mother_name_chance = 0
-
-	# In L5R, first names becomes dynasties names
-	# Remove as it creates the "NAME OF DYNASTY" lands
-	# founder_named_dynasties = yes
 
 	mercenary_names = {
 		{ name = "mercenary_company_shinobi" }

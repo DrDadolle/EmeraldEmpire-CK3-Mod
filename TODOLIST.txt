@@ -32,7 +32,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- travel_danger_events.9000 for mosquitoes
 	- travel_danger_events.1012 for bad plant to eat
 - TODO events travel check geographical_region
-- Test
+- Test fix 
+	- Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 
 [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
   Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
@@ -41,10 +42,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
   Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
   Script location: file: common/men_at_arms_types/00_cultural_maa_types.txt line: 50 (horse_archers:can_recruit)
-  
-  [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
-  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
-  Script location: file: common/men_at_arms_types/07_ep3_maa_types.txt line: 200 (skoutatoi:can_recruit)
 
 [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
   Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
@@ -68,9 +65,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - New Shadowlands stuff
 	- up ishigaki bridge a little
 	- move down yukiko 13 & forgotten 13 bridge
-- - Missing longbow animation during hunts
 - remove bunch of errors
-- Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
 - Fix era time line. 
 - more namelists & dynasty list
 - ck3tiger fixes to do !

@@ -179,10 +179,7 @@ l5r_clan_decision.0001 = {
 		trait = patient
 
 		name = l5r_clan_decision.0001.a
-		show_as_tooltip = { 
-			resolve_tattoo_effect = yes 
-			add_trait = avalanche_tattoo
-		}
+
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -190,6 +187,9 @@ l5r_clan_decision.0001 = {
 			name = tattoo
 			value = flag:avalanche
 		}
+
+		resolve_tattoo_effect = yes 
+
 		trigger_event = {
 			id = l5r_clan_decision.0002
 		}
@@ -214,10 +214,7 @@ l5r_clan_decision.0001 = {
 		trait = zealous
 		
 		name = l5r_clan_decision.0001.b
-		show_as_tooltip = { 
-			resolve_tattoo_effect = yes 
-			add_trait = volcano_tattoo
-		}
+
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -225,6 +222,9 @@ l5r_clan_decision.0001 = {
 			name = tattoo
 			value = flag:volcano
 		}
+
+		resolve_tattoo_effect = yes 
+
 		trigger_event = {
 			id = l5r_clan_decision.0002
 		}
@@ -245,10 +245,7 @@ l5r_clan_decision.0001 = {
 		trait = lunatic_1
 
 		name = l5r_clan_decision.0001.c
-		show_as_tooltip = { 
-			resolve_tattoo_effect = yes 
-			add_trait = void_dragon_tattoo
-		}
+
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -256,6 +253,9 @@ l5r_clan_decision.0001 = {
 			name = tattoo
 			value = flag:void_dragon
 		}
+
+		resolve_tattoo_effect = yes 
+
 		trigger_event = {
 			id = l5r_clan_decision.0002
 		}
@@ -280,10 +280,7 @@ l5r_clan_decision.0001 = {
 		trait = honest
 
 		name = l5r_clan_decision.0001.d
-		show_as_tooltip = { 
-			resolve_tattoo_effect = yes 
-			add_trait = cloud_tattoo
-		}
+
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -291,6 +288,9 @@ l5r_clan_decision.0001 = {
 			name = tattoo
 			value = flag:cloud
 		}
+
+		resolve_tattoo_effect = yes 
+
 		trigger_event = {
 			id = l5r_clan_decision.0002
 		}
@@ -317,11 +317,7 @@ l5r_clan_decision.0001 = {
 		trait = ambitious
 
 		name = l5r_clan_decision.0001.e
-		show_as_tooltip = { 
-			resolve_tattoo_effect = yes 
-			add_trait = vine_tattoo
-		}
-		
+
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -329,6 +325,9 @@ l5r_clan_decision.0001 = {
 			name = tattoo
 			value = flag:vine
 		}
+
+		resolve_tattoo_effect = yes 
+
 		trigger_event = {
 			id = l5r_clan_decision.0002
 		}
@@ -342,10 +341,6 @@ l5r_clan_decision.0001 = {
 	# Default choice
 	option = {
 		name = l5r_clan_decision.0001.f
-		show_as_tooltip = { 
-			resolve_tattoo_effect = yes 
-			add_trait = cherry_blossom_tattoo
-		}
         stress_impact = {
 			craven = medium_stress_gain
 		}
@@ -353,6 +348,9 @@ l5r_clan_decision.0001 = {
 			name = tattoo
 			value = flag:cherry_blossom
 		}
+
+		resolve_tattoo_effect = yes 
+
 		trigger_event = {
 			id = l5r_clan_decision.0002
 		}
@@ -418,11 +416,6 @@ l5r_clan_decision.0002 = {
 			animation = disbelief
 		}
 		animation = personality_rational
-	}
-
-	immediate = {
-		# get tatooed
-		resolve_tattoo_effect = yes
 	}
 
 	#Exit
