@@ -1365,6 +1365,10 @@ tour_travel.1007 = {
 					terrain = desert
 					terrain = desert_mountains
 					terrain = steppe
+					#L5R Added
+					terrain = shadowlands_mountains
+					terrain = shadowlands_wetlands
+					terrain = shadowlands_forest
 				}
 			}
 		}

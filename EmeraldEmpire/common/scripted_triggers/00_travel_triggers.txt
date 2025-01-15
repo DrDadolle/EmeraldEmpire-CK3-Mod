@@ -194,6 +194,27 @@ has_terrain_danger_type = {
 			travel_plan = $TRAVEL$
 			terrain = steppe
 		}
+		#L5R Added
+		travel_danger_type = {
+			travel_plan = $TRAVEL$
+			terrain = shadowlands_plains
+		}
+		travel_danger_type = {
+			travel_plan = $TRAVEL$
+			terrain = shadowlands_hills
+		}
+		travel_danger_type = {
+			travel_plan = $TRAVEL$
+			terrain = shadowlands_mountains
+		}
+		travel_danger_type = {
+			travel_plan = $TRAVEL$
+			terrain = shadowlands_forest
+		}
+		travel_danger_type = {
+			travel_plan = $TRAVEL$
+			terrain = shadowlands_wetlands
+		}
 	}
 }
 

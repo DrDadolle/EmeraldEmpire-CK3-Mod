@@ -4058,6 +4058,12 @@ legend_spread_events.5220 = {
 						terrain = steppe
 						terrain = farmlands
 						terrain = floodplains
+						#L5R Added
+						terrain = shadowlands_hills
+						terrain = shadowlands_mountains
+						terrain = shadowlands_wetlands
+						terrain = shadowlands_plains
+						terrain = shadowlands_forest
 					}
 				}
 			}

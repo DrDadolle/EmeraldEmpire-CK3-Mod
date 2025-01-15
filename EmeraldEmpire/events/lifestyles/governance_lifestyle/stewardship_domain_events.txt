@@ -1193,7 +1193,11 @@ scripted_trigger stewardship_domain_6001_marshland_barony_trigger = {
 		is_available_adult = yes
 	}
 	title_province = {
-		terrain = wetlands
+		OR = {
+			terrain = wetlands
+			#L5R Added
+			terrain = shadowlands_wetlands
+		}
 		county = {
 			holder = root
 			NOR = {
@@ -1297,7 +1301,11 @@ scripted_trigger stewardship_domain_6002_forest_barony_trigger = {
 		is_available_adult = yes
 	}
 	title_province = {
-		terrain = forest
+		OR = {
+			terrain = forest
+			#L5R Added
+			terrain = shadowlands_forest
+		}
 		county = {
 			holder = root
 			NOR = {

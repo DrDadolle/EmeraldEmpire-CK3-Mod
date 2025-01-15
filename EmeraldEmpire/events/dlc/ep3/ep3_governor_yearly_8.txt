@@ -2809,7 +2809,11 @@ scripted_trigger ep3_governor_yearly_8120_flood_trigger = {
 	OR = {
 		is_riverside_county = yes
 		any_county_province = {
-			terrain = wetlands
+			OR = {
+				terrain = wetlands
+				#L5R Added
+				terrain = shadowlands_wetlands
+			}
 			OR = {
 				is_coastal = yes
 				is_riverside_province = yes

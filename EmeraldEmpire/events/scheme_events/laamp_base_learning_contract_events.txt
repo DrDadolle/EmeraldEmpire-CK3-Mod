@@ -5507,6 +5507,12 @@ scripted_trigger 4100_terrain_with_background_trigger = {
 		terrain = hills
 		terrain = mountains
 		terrain = wetlands
+		#L5R Added
+		terrain = shadowlands_hills
+		terrain = shadowlands_mountains
+		terrain = shadowlands_wetlands
+		terrain = shadowlands_plains
+		terrain = shadowlands_forest
 	}
 }
 
@@ -5917,6 +5923,27 @@ scripted_effect 4100_save_background_effect = {
 	if = {
 		limit = { terrain = wetlands }
 		4100_actual_save_background_effect = { FLAG = wetlands }
+	}
+	#L5R Added
+	if = {
+		limit = { terrain = shadowlands_plains }
+		4100_actual_save_background_effect = { FLAG = shadowlands_plains }
+	}
+	if = {
+		limit = { terrain = shadowlands_hills }
+		4100_actual_save_background_effect = { FLAG = shadowlands_hills }
+	}
+	if = {
+		limit = { terrain = shadowlands_mountains }
+		4100_actual_save_background_effect = { FLAG = shadowlands_mountains }
+	}
+	if = {
+		limit = { terrain = shadowlands_forest }
+		4100_actual_save_background_effect = { FLAG = shadowlands_forest }
+	}
+	if = {
+		limit = { terrain = shadowlands_wetlands }
+		4100_actual_save_background_effect = { FLAG = shadowlands_wetlands }
 	}
 	#Plenty of different forest backgrounds
 	if = {

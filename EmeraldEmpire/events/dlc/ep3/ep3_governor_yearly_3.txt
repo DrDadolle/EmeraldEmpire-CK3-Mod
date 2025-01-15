@@ -155,6 +155,9 @@ ep3_governor_yearly.3001 = {
 					terrain = farmlands
 					terrain = wetlands
 					terrain = jungle
+					#L5R Added
+					terrain = shadowlands_wetlands
+					terrain = shadowlands_plains
 				}
 			}
 		}
@@ -173,6 +176,10 @@ ep3_governor_yearly.3001 = {
 					terrain = hills
 					terrain = forest
 					terrain = taiga
+					#L5R Added
+					terrain = shadowlands_hills
+					terrain = shadowlands_mountains
+					terrain = shadowlands_forest
 				}
 			}
 		}
@@ -3864,6 +3871,8 @@ ep3_governor_yearly.3040 = {
 					OR = {
 						terrain = plains
 						terrain = drylands
+						#L5R Added
+						terrain = shadowlands_plains
 					}
 				}
 			}
@@ -3880,6 +3889,9 @@ ep3_governor_yearly.3040 = {
 						terrain = forest
 						terrain = taiga
 						terrain = hills
+						#L5R Added
+						terrain = shadowlands_hills
+						terrain = shadowlands_forest
 					}
 				}
 			}
@@ -3895,6 +3907,8 @@ ep3_governor_yearly.3040 = {
 					OR = {
 						terrain = jungle
 						terrain = wetlands
+						#L5R Added
+						terrain = shadowlands_wetlands
 					}
 				}
 			}
@@ -4191,6 +4205,8 @@ ep3_governor_yearly.3040 = {
 						terrain = desert
 						terrain = drylands
 						terrain = plains
+						#L5R Added
+						terrain = shadowlands_plains
 					}
 				}
 			}
@@ -4246,6 +4262,8 @@ ep3_governor_yearly.3040 = {
 					OR = {
 						terrain = plains
 						terrain = drylands
+						#L5R Added
+						terrain = shadowlands_plains
 					}
 				}
 			}
@@ -4263,6 +4281,9 @@ ep3_governor_yearly.3040 = {
 						terrain = forest
 						terrain = taiga
 						terrain = hills
+						#L5R Added
+						terrain = shadowlands_hills
+						terrain = shadowlands_forest
 					}
 				}
 			}
@@ -4279,6 +4300,8 @@ ep3_governor_yearly.3040 = {
 					OR = {
 						terrain = jungle
 						terrain = wetlands
+						#L5R Added
+						terrain = shadowlands_wetlands
 					}
 				}
 			}

@@ -5030,6 +5030,42 @@ bp2_yearly.7025 = { #seclusion on arrival
 								}
 								add_trait = forest_fighter
 							}
+							#L5R Added
+							else_if = {
+								limit = {
+									location = { terrain = shadowlands_forest }
+									NOT = { has_trait = forest_fighter }
+								}
+								add_trait = forest_fighter
+							}
+							else_if = {
+								limit = {
+									location = { terrain = shadowlands_plains }
+									NOT = { has_trait = open_terrain_expert }
+								}
+								add_trait = open_terrain_expert
+							}
+							else_if = {
+								limit = {
+									location = { terrain = shadowlands_hills }
+									NOT = { has_trait = rough_terrain_expert }
+								}
+								add_trait = rough_terrain_expert
+							}
+							else_if = {
+								limit = {
+									location = { terrain = shadowlands_mountains }
+									NOT = { has_trait = rough_terrain_expert }
+								}
+								add_trait = rough_terrain_expert
+							}
+							else_if = {
+								limit = {
+									location = { terrain = shadowlands_wetlands }
+									NOT = { has_trait = rough_terrain_expert }
+								}
+								add_trait = rough_terrain_expert
+							}
 							else_if = {
 								limit = {
 									NOT = { has_trait = lifestyle_traveler }

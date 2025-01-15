@@ -5399,6 +5399,8 @@ ep3_decisions_event.7000 = {
 							terrain = farmlands
 							terrain = floodplains
 							terrain = wetlands
+							#L5R Added
+							terrain = shadowlands_wetlands
 						}
 					}
 				}
@@ -5411,6 +5413,10 @@ ep3_decisions_event.7000 = {
 							terrain = forest
 							terrain = hills
 							terrain = plains
+							#L5R Added
+							terrain = shadowlands_hills
+							terrain = shadowlands_plains
+							terrain = shadowlands_forest
 						}
 					}
 				}
@@ -5579,6 +5585,9 @@ ep3_decisions_event.7000 = {
 									terrain = oasis
 									terrain = farmlands
 									terrain = plains
+									#L5R Added
+									terrain = shadowlands_wetlands
+									terrain = shadowlands_plains
 								}
 							}
 						}
@@ -5799,6 +5808,9 @@ ep3_decisions_event.7000 = {
 												terrain = oasis
 												terrain = farmlands
 												terrain = plains
+												#L5R Added
+												terrain = shadowlands_wetlands
+												terrain = shadowlands_plains
 											}
 										}
 									}

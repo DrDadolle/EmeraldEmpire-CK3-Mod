@@ -18866,7 +18866,11 @@ fund_inspiration.6501 = {
 		}
 		scope:inspiration_owner = {
 			location = {
-				terrain = hills
+				OR = {
+					terrain = hills
+					#L5R Added
+					terrain = shadowlands_hills
+				}
 			}
 		}
 	}
@@ -19945,7 +19949,11 @@ fund_inspiration.6506 = {
 		}
 		scope:inspiration_owner = {
 			location = {
-				terrain = wetlands
+				OR = {
+					terrain = wetlands
+					#L5R Added
+					terrain = shadowlands_wetlands
+				}
 			}
 			NOT = {
 				has_trait = rough_terrain_expert
@@ -20107,7 +20115,11 @@ fund_inspiration.6507 = {
 		scope:inspiration_owner = {
 			NOT = { has_character_flag = had_fund_inspiration.6507 }
 			location = {
-				terrain = plains
+				OR = {
+					terrain = plains
+					#L5R Added
+					terrain = shadowlands_plains
+				}
 				exists = this.barony.holder
 				this.barony.holder = {
 					is_adult = yes
@@ -20643,7 +20655,11 @@ fund_inspiration.6510 = {
 		}
 		scope:inspiration_owner = {
 			location = {
-				terrain = forest
+				OR = {
+					terrain = forest
+					#L5R Added
+					terrain = shadowlands_forest
+				}
 			}
 			NOT = { has_trait = greedy }
 			NOT = { is_councillor_of = root }
@@ -20808,7 +20824,11 @@ fund_inspiration.6511 = {
 		}
 		scope:inspiration_owner = {
 			location = {
-				terrain = mountains
+				OR = {
+					terrain = mountains
+					#L5R Added
+					terrain = shadowlands_mountains
+				}
 			}
 			OR = {
 				age > 60

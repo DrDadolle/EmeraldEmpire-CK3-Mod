@@ -3315,6 +3315,9 @@ hunt.1002 = {
 					terrain = desert_mountains
 					terrain = taiga
 					terrain = forest
+					#L5R Added
+					terrain = shadowlands_mountains
+					terrain = shadowlands_forest
 				}
 			}
 		}
@@ -11862,6 +11865,8 @@ hunt.3020 = {
 						terrain = farmlands
 						terrain = plains
 						terrain = steppe
+						#L5R Added
+						terrain = shadowlands_plains
 					}
 				}
 			}
@@ -11872,6 +11877,10 @@ hunt.3020 = {
 						terrain = hills
 						terrain = mountains
 						terrain = wetlands
+						#L5R Added
+						terrain = shadowlands_hills
+						terrain = shadowlands_mountains
+						terrain = shadowlands_wetlands
 					}
 				}
 			}
@@ -11881,6 +11890,8 @@ hunt.3020 = {
 					OR = {
 						terrain = taiga
 						terrain = forest
+						#L5R Added
+						terrain = shadowlands_forest
 					}
 				}
 			}
@@ -12599,6 +12610,8 @@ hunt.4003 = {
 					terrain = forest
 					terrain = taiga
 					terrain = jungle
+					#L5R Added
+					terrain = shadowlands_forest
 				}
 			}
 		}
@@ -18308,6 +18321,8 @@ hunt.4910 = { # Pre-event requried to determine outcomes for tooltips
 									terrain = forest
 									terrain = taiga
 									terrain = jungle
+									#L5R Added
+									terrain = shadowlands_forest
 								}
 							}
 						}
@@ -22479,6 +22494,10 @@ hunt.7001 = {
 				terrain = oasis
 				terrain = hills
 				terrain = drylands
+				#L5R Added
+				terrain = shadowlands_hills
+				terrain = shadowlands_mountains
+				terrain = shadowlands_plains
 			}
 		}
 		NOT = { has_character_modifier = hunt_guide_local_madman_modifier }
@@ -22488,7 +22507,13 @@ hunt.7001 = {
 		base = 1
 		modifier = {
 			add = 19
-			scope:activity.activity_location = { terrain = wetlands }
+			scope:activity.activity_location = {
+				OR = {
+					terrain = wetlands
+					#L5R Added
+					terrain = shadowlands_wetlands
+				}
+			 }
 		}
 	}
 
@@ -23178,6 +23203,9 @@ hunt.7020 = {
 					terrain = plains
 					terrain = wetlands
 					terrain = steppe
+					#L5R Added
+					terrain = shadowlands_wetlands
+					terrain = shadowlands_plains
 				}
 			}
 		}
@@ -23192,6 +23220,9 @@ hunt.7020 = {
 					terrain = hills
 					terrain = mountains
 					terrain = desert_mountains
+					#L5R Added
+					terrain = shadowlands_hills
+					terrain = shadowlands_mountains
 				}
 			}
 		}
@@ -26533,6 +26564,8 @@ hunt.7800 = {
 						OR = {
 							terrain = taiga
 							terrain = forest
+							#L5R Added
+							terrain = shadowlands_forest
 						}
 					}
 				}

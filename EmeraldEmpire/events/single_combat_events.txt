@@ -133,6 +133,9 @@ scripted_trigger rocky_locale_trigger = {
 		terrain = hills
 		terrain = mountains
 		terrain = desert_mountains
+		#L5R Added
+		terrain = shadowlands_hills
+		terrain = shadowlands_mountains
 	}
 }
 
@@ -445,6 +448,8 @@ scripted_effect select_special_tier_move_effect = {
 						terrain = farmlands
 						terrain = plains
 						terrain = steppe
+						#L5R Added
+						terrain = shadowlands_plains
 					}
 				}
 				# Block special moves twice in a row.
@@ -484,6 +489,10 @@ scripted_effect select_special_tier_move_effect = {
 						terrain = mountains
 						terrain = desert_mountains	#Technically a desert, but not for single combat purposes.
 						terrain = wetlands
+						#L5R Added
+						terrain = shadowlands_hills
+						terrain = shadowlands_mountains
+						terrain = shadowlands_wetlands
 					}
 				}
 				# Block special moves twice in a row.
@@ -521,6 +530,8 @@ scripted_effect select_special_tier_move_effect = {
 					OR = {
 						terrain = forest
 						terrain = taiga
+						#L5R Added
+						terrain = shadowlands_forest
 					}
 				}
 				# Block special moves twice in a row.
@@ -1971,7 +1982,13 @@ scripted_effect finalise_combat_results_effect = {
 								scope:sc_attacker_last_move = flag:is_that_a_crocodile
 								AND = {
 									scope:sc_attacker_last_move = flag:rough_terrain_expert
-									scope:sc_defender.location = { terrain = wetlands }
+									scope:sc_defender.location = { 
+										OR = {
+											terrain = wetlands
+											#L5R Added
+											terrain = shadowlands_wetlands
+										}
+									}
 								}
 							}
 						}
@@ -1979,7 +1996,13 @@ scripted_effect finalise_combat_results_effect = {
 							this = scope:sc_attacker
 							# Scope:sc_attacker currently only suffers this for the wetlands death. It'll need to be sub-AND'ed as above if any more are added.
 							scope:sc_defender_last_move = flag:rough_terrain_expert
-							scope:sc_defender.location = { terrain = wetlands }
+							scope:sc_defender.location = { 
+								OR = {
+									terrain = wetlands
+									#L5R Added
+									terrain = shadowlands_wetlands
+								}
+							 }
 						}
 					}
 				}
@@ -4973,7 +4996,13 @@ single_combat.0001 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_defender_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										}
 									}
 									desc = single_combat.0001.desc.my_feedback.rough_terrain_expert.boggy
 								}
@@ -5169,7 +5198,13 @@ single_combat.0001 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0001.desc.opponent_response.rough_terrain_expert.boggy
 								}
@@ -5485,7 +5520,13 @@ single_combat.0001 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0001.desc.my_feedback.rough_terrain_expert.boggy
 								}
@@ -5681,7 +5722,13 @@ single_combat.0001 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_defender_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0001.desc.opponent_response.rough_terrain_expert.boggy
 								}
@@ -8743,7 +8790,13 @@ single_combat.0031 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0031.desc.opponent_response.rough_terrain_expert.injury.boggy
 								}
@@ -8917,7 +8970,13 @@ single_combat.0031 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0031.desc.opponent_response.rough_terrain_expert.fatality.boggy
 								}
@@ -9102,7 +9161,13 @@ single_combat.0031 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0031.desc.sc_attacker.rough_terrain_expert.boggy
 								}
@@ -9273,7 +9338,13 @@ single_combat.0031 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0031.desc.sc_attacker.rough_terrain_expert.injury.boggy
 								}
@@ -9447,7 +9518,13 @@ single_combat.0031 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0031.desc.sc_attacker.rough_terrain_expert.fatality.boggy
 								}
@@ -10178,7 +10255,13 @@ single_combat.0041 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										}
 									}
 									desc = single_combat.0041.desc.opponent_response.rough_terrain_expert.boggy
 								}
@@ -10349,7 +10432,13 @@ single_combat.0041 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0041.desc.opponent_response.rough_terrain_expert.injury.boggy
 								}
@@ -10523,7 +10612,13 @@ single_combat.0041 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0041.desc.opponent_response.rough_terrain_expert.fatality.boggy
 								}
@@ -10708,7 +10803,13 @@ single_combat.0041 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0041.desc.sc_attacker.rough_terrain_expert.boggy
 								}
@@ -10879,7 +10980,13 @@ single_combat.0041 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0041.desc.sc_attacker.rough_terrain_expert.injury.boggy
 								}
@@ -11053,7 +11160,13 @@ single_combat.0041 = {
 								triggered_desc = {
 									trigger = {
 										scope:sc_attacker_last_move = flag:rough_terrain_expert
-										scope:sc_defender.location = { terrain = wetlands }
+										scope:sc_defender.location = { 
+											OR = {
+												terrain = wetlands
+												#L5R Added
+												terrain = shadowlands_wetlands
+											}
+										 }
 									}
 									desc = single_combat.0041.desc.sc_attacker.rough_terrain_expert.fatality.boggy
 								}

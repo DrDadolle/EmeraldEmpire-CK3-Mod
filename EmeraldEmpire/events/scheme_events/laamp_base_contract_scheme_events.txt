@@ -10162,7 +10162,13 @@ laamp_base_contract_schemes.1301 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					location = { terrain = plains }
+					location = { 
+						OR = {
+							terrain = plains
+							#L5R Added
+							terrain = shadowlands_plains
+						}
+					 }
 				}
 				desc = laamp_base_contract_schemes.1301.desc.intro.plains
 			}
@@ -10174,13 +10180,25 @@ laamp_base_contract_schemes.1301 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = hills }
+					location = { 
+						OR = {
+							terrain = hills
+							#L5R Added
+							terrain = shadowlands_hills
+						}
+					 }
 				}
 				desc = laamp_base_contract_schemes.1301.desc.intro.hills
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = mountains }
+					location = { 
+						OR = {
+							terrain = mountains
+							#L5R Added
+							terrain = shadowlands_mountains
+						}
+					 }
 				}
 				desc = laamp_base_contract_schemes.1301.desc.intro.mountains
 			}
@@ -10210,7 +10228,13 @@ laamp_base_contract_schemes.1301 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = forest }
+					location = { 
+						OR = {
+							terrain = forest
+							#L5R Added
+							terrain = shadowlands_forest
+						}
+					 }
 				}
 				desc = laamp_base_contract_schemes.1301.desc.intro.forest
 			}
@@ -10222,7 +10246,13 @@ laamp_base_contract_schemes.1301 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = wetlands }
+					location = { 
+						OR = {
+							terrain = wetlands
+							#L5R Added
+							terrain = shadowlands_wetlands
+						}
+					 }
 				}
 				desc = laamp_base_contract_schemes.1301.desc.intro.wetlands
 			}
@@ -22935,6 +22965,10 @@ laamp_base_contract_schemes.3661 = {
 							terrain = hills
 							terrain = mountains
 							terrain = drylands
+							#L5R Added
+							terrain = shadowlands_hills
+							terrain = shadowlands_mountains
+							terrain = shadowlands_plains
 						}
 					}
 					scope:target = {
@@ -27667,13 +27701,20 @@ laamp_base_contract_schemes.5661 = {
 	title = laamp_base_contract_schemes.5661.t
 	desc = {
 		first_valid = {
-			triggered_desc = {
-				trigger = { scope:current_county = title:c_byzantion }
-				desc = laamp_base_contract_schemes.5661.desc.intro.constantinople
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = { scope:current_county = title:c_byzantion }
+			# 	desc = laamp_base_contract_schemes.5661.desc.intro.constantinople
+			# }
 			triggered_desc = {
 				trigger = {
-					location = { terrain = plains }
+					location = { 
+						OR = {
+							terrain = plains
+							#L5R Added
+							terrain = shadowlands_plains
+						}
+					 }
 				}
 				desc = laamp_base_contract_schemes.5661.desc.intro.plains
 			}
@@ -27685,13 +27726,25 @@ laamp_base_contract_schemes.5661 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = hills }
+					location = { 
+						OR = {
+							terrain = hills
+							#L5R Added
+							terrain = shadowlands_hills
+						}
+					 }
 				}
 				desc = laamp_base_contract_schemes.5661.desc.intro.hills
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = mountains }
+					location = { 
+						OR = {
+							terrain = mountains
+							#L5R Added
+							terrain = shadowlands_mountains
+						}
+					 }
 				}
 				desc = laamp_base_contract_schemes.5661.desc.intro.mountains
 			}
@@ -27721,7 +27774,13 @@ laamp_base_contract_schemes.5661 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = forest }
+					location = { 
+						OR = {
+							terrain = forest
+							#L5R Added
+							terrain = shadowlands_forest
+						}
+					 }
 				}
 				desc = laamp_base_contract_schemes.5661.desc.intro.forest
 			}
@@ -27733,7 +27792,13 @@ laamp_base_contract_schemes.5661 = {
 			}
 			triggered_desc = {
 				trigger = {
-					location = { terrain = wetlands }
+					location = { 
+						OR = {
+							terrain = wetlands
+							#L5R Added
+							terrain = shadowlands_wetlands
+						}
+					 }
 				}
 				desc = laamp_base_contract_schemes.5661.desc.intro.wetlands
 			}

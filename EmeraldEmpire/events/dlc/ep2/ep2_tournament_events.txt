@@ -5118,6 +5118,9 @@ ep2_tournament_events.1012 = {
 				terrain = oasis
 				terrain = steppe
 				terrain = wetlands
+				#L5R Added
+				terrain = shadowlands_mountains
+				terrain = shadowlands_wetlands
 			}
 		}
 	}

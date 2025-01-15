@@ -5001,6 +5001,8 @@ ep3_laamps.5010 = {
 							terrain = plains
 							terrain = oasis
 							terrain = forest
+							#L5R Added
+							terrain = shadowlands_forest
 						}
 					}
 				}
@@ -5032,6 +5034,9 @@ ep3_laamps.5010 = {
 							terrain = mountains
 							terrain = desert_mountains
 							terrain = wetlands
+							#L5R Added
+							terrain = shadowlands_mountains
+							terrain = shadowlands_wetlands
 						}
 					}
 				}
@@ -6225,6 +6230,9 @@ ep3_laamps.5035 = {
 					terrain = wetlands
 					terrain = desert_mountains
 					terrain = jungle
+					#L5R Added
+					terrain = shadowlands_mountains
+					terrain = shadowlands_wetlands
 				}
 			}
 		}

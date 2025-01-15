@@ -5904,7 +5904,13 @@ bp1_yearly.9034 = {
 		is_adult = no
 		any_held_title = {
 			tier = tier_county
-			any_county_province = { terrain = wetlands }
+			any_county_province = { 
+				OR = {
+					terrain = wetlands
+					#L5R Added
+					terrain = shadowlands_wetlands
+				}
+			 }
 		}
 		any_relation = {
 			type = friend
@@ -5926,11 +5932,21 @@ bp1_yearly.9034 = {
 		random_held_title = {
 			limit = {
 				tier = tier_county
-				any_county_province = { terrain = wetlands }
+				any_county_province = { 
+					OR = {
+						terrain = wetlands
+						#L5R Added
+						terrain = shadowlands_wetlands
+					}
+				 }
 			}
 			random_county_province = {
 				limit = {
-					terrain = wetlands
+					OR = {
+						terrain = wetlands
+						#L5R Added
+						terrain = shadowlands_wetlands
+					}
 				}
 				save_scope_as = bp1_yearly_9034_swampy_location
 			}
@@ -6281,7 +6297,13 @@ bp1_yearly.9037 = {
 		}
 		any_held_title = {
 			tier = 2
-			any_county_province = { terrain = wetlands }
+			any_county_province = { 
+				OR = {
+					terrain = wetlands
+					#L5R Added
+					terrain = shadowlands_wetlands
+				}
+			 }
 		}
 		any_relation = {
 			type = guardian
@@ -6298,12 +6320,24 @@ bp1_yearly.9037 = {
 		random_held_title = {
 			limit = {
 				tier = 2
-				any_county_province = { terrain = wetlands }
+				any_county_province = { 
+					OR = {
+						terrain = wetlands
+						#L5R Added
+						terrain = shadowlands_wetlands
+					}
+				 }
 			}
 			random_in_de_jure_hierarchy = {
 				limit = {
 					tier = 1
-					title_province = { terrain = wetlands }
+					title_province = { 
+						OR = {
+							terrain = wetlands
+							#L5R Added
+							terrain = shadowlands_wetlands
+						}
+					 }
 				}
 				save_scope_as = bp1_yearly_9037_swampy_location
 			}
