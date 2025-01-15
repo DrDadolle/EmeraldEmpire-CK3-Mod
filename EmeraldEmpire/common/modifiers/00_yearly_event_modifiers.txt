@@ -80,11 +80,12 @@ yearly_reduced_theocracy_levies_modifier = {
 	levy_size = -0.1
 }
 
-yearly_9020_personal_war_elephant = {
-	icon = prowess_positive
-	prowess = 10
-	monthly_prestige = 0.5
-}
+#L5R Disabled
+# yearly_9020_personal_war_elephant = {
+# 	icon = prowess_positive
+# 	prowess = 10
+# 	monthly_prestige = 0.5
+# }
 
 yearly_0011_friends_in_high_places = {
 	icon = magic_positive

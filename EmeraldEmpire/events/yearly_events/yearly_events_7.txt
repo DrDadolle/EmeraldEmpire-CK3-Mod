@@ -1441,6 +1441,8 @@ yearly.7010 = {
 	trigger = {
 		is_landed = yes
 		is_available_at_peace_adult = yes
+		#L5R Disabled
+		always = no
 		# capital_province = {
 		# 	geographical_region = world_europe
 		# }
