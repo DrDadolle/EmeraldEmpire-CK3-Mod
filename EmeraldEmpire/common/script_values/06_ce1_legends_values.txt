@@ -189,6 +189,10 @@ spread_chance_legends_default_value = {
 				terrain = forest
 				terrain = floodplains
 				terrain = wetlands
+				#L5R Added
+				terrain = shadowlands_forest
+				terrain = shadowlands_hills
+				terrain = shadowlands_wetlands
 			}
 		}
 		add = legend_spread_decrease_add_low
@@ -208,6 +212,8 @@ spread_chance_legends_default_value = {
 				terrain = desert
 				terrain = desert_mountains
 				terrain = mountains
+				#L5R Added
+				terrain = shadowlands_mountains
 			}
 		}
 		add = legend_spread_decrease_add_high

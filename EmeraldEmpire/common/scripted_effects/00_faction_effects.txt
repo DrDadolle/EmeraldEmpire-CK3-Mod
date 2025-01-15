@@ -1125,6 +1125,10 @@ spawn_popular_revolt_troops = {
 					terrain = desert
 					terrain = wetlands
 					terrain = steppe
+					#L5R Added
+					terrain = shadowlands_forest
+					terrain = shadowlands_plains
+					terrain = shadowlands_wetlands
 				}
 			}
 		}
@@ -1154,6 +1158,8 @@ spawn_popular_revolt_troops = {
 				OR = {
 					terrain = mountains
 					terrain = desert_mountains
+					#L5R Added
+					terrain = shadowlands_mountains
 				}
 			}
 		}
@@ -1184,6 +1190,8 @@ spawn_popular_revolt_troops = {
 					terrain = hills
 					terrain = farmlands
 					terrain = floodplains
+					#L5R Added
+					terrain = shadowlands_hills
 				}
 			}
 		}

@@ -821,6 +821,19 @@ hunt_province_reference_value = {
 			}
 			add = 10
 		}
+		#L5R Added
+		else_if = {
+			limit = {
+				OR = {
+					terrain = shadowlands_mountains
+					terrain = shadowlands_hills
+					terrain = shadowlands_plains
+					terrain = shadowlands_wetlands
+					#shadowlands_forest add 0, no drawbacks
+				}
+			}
+			add = -5
+		}
 		desc = hunt_success_chance.terrain
 	}
 	# POPULATION

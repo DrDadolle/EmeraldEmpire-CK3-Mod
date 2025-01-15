@@ -4195,6 +4195,9 @@ gather_provisions_forage_base_value = {
 				terrain = mountains
 				terrain = wetlands
 				terrain = steppe
+				#L5R Added
+				terrain = shadowlands_mountains
+				terrain = shadowlands_wetlands
 			}
 		}
 		add = 250
@@ -4276,6 +4279,8 @@ gather_provisions_hunt_base_value = {
 				terrain = farmlands
 				terrain = floodplains
 				terrain = wetlands
+				#L5R Added
+				terrain = shadowlands_wetlands
 			}
 		}
 		add = 100
@@ -4291,6 +4296,8 @@ gather_provisions_hunt_base_value = {
 				terrain = mountains
 				terrain = taiga
 				terrain = steppe
+				#L5R Added
+				terrain = shadowlands_mountains
 			}
 		}
 		add = 250

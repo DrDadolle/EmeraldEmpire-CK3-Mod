@@ -1969,6 +1969,9 @@ hunt_activity_sighting_county_modifier = {
 				terrain = forest
 				terrain = mountains
 				terrain = jungle
+				#L5R Added
+				terrain = shadowlands_forest
+				terrain = shadowlands_mountains
 			}
 		}
 		add = 10
@@ -1984,6 +1987,8 @@ hunt_activity_sighting_terrain_modifier = {
 			terrain = wetlands
 			terrain = farmlands
 			terrain = floodplains
+			#L5R Added
+			terrain = shadowlands_wetlands
 		}
 		add = -7.5
 	}
@@ -1993,6 +1998,8 @@ hunt_activity_sighting_terrain_modifier = {
 			terrain = forest
 			terrain = mountains
 			terrain = jungle
+			#L5R Added
+			terrain = shadowlands_forest
 		}
 		add = 7.5
 	}

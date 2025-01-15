@@ -95,10 +95,15 @@ building_pastures_requirement_terrain = {
 		terrain = desert_mountains
 		terrain = hills
 		terrain = floodplains
-		AND = {
+		#L5R Added
+		terrain = shadowlands_plains
+		terrain = shadowlands_mountains
+		terrain = shadowlands_hills
+		#L5R Modified
+		# AND = {
 			terrain = jungle
 			# NOT = { geographical_region = world_innovation_elephants }
-		}
+		# }
 	}
 }
 
@@ -112,6 +117,11 @@ building_hunting_grounds_requirement_terrain = {
 		terrain = forest
 		terrain = jungle
 		terrain = wetlands
+		#L5R Added
+		terrain = shadowlands_plains
+		terrain = shadowlands_wetlands
+		terrain = shadowlands_forest
+		terrain = shadowlands_hills
 	}
 }
 
@@ -159,6 +169,8 @@ building_ramparts_requirement_terrain = {
 		terrain = taiga
 		terrain = forest
 		terrain = jungle
+		#L5R Added
+		terrain = shadowlands_forest
 	}
 }
 
@@ -168,6 +180,9 @@ building_curtain_walls_requirement_terrain = {
 		terrain = plains
 		terrain = wetlands
 		terrain = floodplains
+		#L5R Added
+		terrain = shadowlands_plains
+		terrain = shadowlands_wetlands
 	}
 }
 
@@ -186,6 +201,8 @@ building_cereal_fields_requirement_terrain = {
 		terrain = plains
 		terrain = drylands
 		terrain = floodplains
+		#L5R Added
+		terrain = shadowlands_plains
 		county = {
 			has_county_modifier = fertile_desert_mountains_modifier
 		}
@@ -200,6 +217,9 @@ building_outposts_requirement_terrain = {
 		terrain = taiga
 		terrain = forest
 		terrain = jungle
+		#L5R Added
+		terrain = shadowlands_forest
+		terrain = shadowlands_wetlands
 	}
 }
 
@@ -249,15 +269,25 @@ building_logging_camps_requirement_terrain = {
 		terrain = taiga
 		terrain = forest
 		terrain = jungle
+		#L5R Added
+		terrain = shadowlands_forest
 	}
 }
 
 building_peat_quarries_requirement_terrain = {
-	terrain = wetlands
+	OR = {
+		terrain = wetlands
+		#L5R Added
+		terrain = shadowlands_wetlands
+	}
 }
 
 building_hill_farms_requirement_terrain = {
-	terrain = hills
+	OR = {
+		terrain = hills
+		#L5R Added
+		terrain = shadowlands_hills
+	}
 }
 
 building_elephant_pens_requirement_terrain = {
@@ -288,8 +318,15 @@ building_quarries_requirement_terrain = {
 	OR = {
 		terrain = mountains
 		terrain = desert_mountains
+		#L5R Added
+		terrain = shadowlands_mountains
 		AND = {
-			terrain = hills
+			#L5R Modified
+			OR = { 
+				terrain = hills
+				#L5R Added
+				terrain = shadowlands_hills
+			}
 			culture = {
 				has_cultural_parameter = can_build_quarries_in_hills
 			}
@@ -302,6 +339,9 @@ building_warrior_lodges_requirement_terrain = {
 		terrain = mountains
 		terrain = desert_mountains
 		terrain = hills
+		#L5R Added
+		terrain = shadowlands_mountains
+		terrain = shadowlands_hills
 	}
 	#L5R Disabled
 	# NOT = { geographical_region = world_horse_buildings_in_hills_and_mountains }
@@ -312,6 +352,9 @@ building_hillside_grazing_requirement_terrain = {
 		terrain = mountains
 		terrain = desert_mountains
 		terrain = hills
+		#L5R Added
+		terrain = shadowlands_mountains
+		terrain = shadowlands_hills
 	}
 	#L5R Disabled
 	always = no
@@ -354,6 +397,9 @@ building_hill_forts_requirement_terrain = {
 		terrain = mountains
 		terrain = desert_mountains
 		terrain = hills
+		#L5R Added
+		terrain = shadowlands_mountains
+		terrain = shadowlands_hills
 	}
 }
 
@@ -364,6 +410,9 @@ building_windmills_requirement_terrain = {
 				terrain = farmlands
 				terrain = plains
 				terrain = hills
+				#L5R Added
+				terrain = shadowlands_plains
+				terrain = shadowlands_hills
 				is_coastal = yes
 			}
 		}
@@ -379,6 +428,10 @@ building_watermills_requirement_terrain = {
 				terrain = forest
 				terrain = taiga
 				terrain = jungle
+				#L5R Added
+				terrain = shadowlands_mountains
+				terrain = shadowlands_forest
+				terrain = shadowlands_wetlands
 				is_riverside_province = yes
 			}
 		}

@@ -60,6 +60,9 @@ choose_designated_terrain_decision = {
 								terrain = jungle
 								terrain = taiga
 								terrain = wetlands
+								#L5R Added
+								terrain = shadowlands_forest
+								terrain = shadowlands_wetlands
 							}
 						}
 					}
@@ -81,6 +84,9 @@ choose_designated_terrain_decision = {
 								terrain = mountains
 								terrain = hills
 								terrain = desert_mountains
+								#L5R Added
+								terrain = shadowlands_mountains
+								terrain = shadowlands_hills
 							}
 						}
 					}
@@ -103,6 +109,8 @@ choose_designated_terrain_decision = {
 								terrain = steppe
 								terrain = farmlands
 								terrain = floodplains
+								#L5R Added
+								terrain = shadowlands_plains
 							}
 						}
 					}
@@ -225,7 +233,13 @@ choose_master_terrain_decision = {
 				value = 0
 				if = {
 					limit = {
-						location = { terrain = forest }
+						location = { 
+							OR = {
+								terrain = forest
+								#L5R Added
+								terrain = shadowlands_forest
+							}
+						 }
 					}
 					add = 100
 				}
@@ -279,7 +293,13 @@ choose_master_terrain_decision = {
 				value = 0
 				if = {
 					limit = {
-						location = { terrain = wetlands }
+						location = { 
+							OR = {
+								terrain = wetlands
+								#L5R Added
+								terrain = shadowlands_wetlands
+							}
+						}
 					}
 					add = 100
 				}
@@ -299,7 +319,13 @@ choose_master_terrain_decision = {
 				value = 0
 				if = {
 					limit = {
-						location = { terrain = mountains }
+						location = { 
+							OR = {
+								terrain = mountains
+								#L5R Added
+								terrain = shadowlands_mountains
+							}
+						 }
 					}
 					add = 100
 				}
@@ -317,7 +343,13 @@ choose_master_terrain_decision = {
 				value = 0
 				if = {
 					limit = {
-						location = { terrain = hills }
+						location = { 
+							OR = {
+								terrain = hills
+								#L5R Added
+								terrain = shadowlands_hills
+							}
+						}
 					}
 					add = 100
 				}
@@ -355,7 +387,13 @@ choose_master_terrain_decision = {
 				value = 0
 				if = {
 					limit = {
-						location = { terrain = plains }
+						location = { 
+							OR = {
+								terrain = plains
+								#L5R Added
+								terrain = shadowlands_plains
+							}
+						 }
 					}
 					add = 100
 				}
@@ -493,6 +531,13 @@ choose_master_terrain_decision = {
 				scope:master_terrain_wetlands_terrain = {
 					landless_inspector_master_terrain_effect = { TERRAIN = wetlands }
 				}
+				#L5R Added
+				scope:master_terrain_forest_terrain = {
+					landless_inspector_master_terrain_effect = { TERRAIN = shadowlands_forest }
+				}
+				scope:master_terrain_wetlands_terrain = {
+					landless_inspector_master_terrain_effect = { TERRAIN = shadowlands_wetlands }
+				}
 			}
 		}
 		else_if = {
@@ -509,6 +554,13 @@ choose_master_terrain_decision = {
 				}
 				scope:master_terrain_desert_mountains_terrain = {
 					landless_inspector_master_terrain_effect = { TERRAIN = desert_mountains }
+				}
+				#L5R Added
+				scope:master_terrain_forest_terrain = {
+					landless_inspector_master_terrain_effect = { TERRAIN = shadowlands_mountains }
+				}
+				scope:master_terrain_wetlands_terrain = {
+					landless_inspector_master_terrain_effect = { TERRAIN = shadowlands_hills }
 				}
 			}
 		}
@@ -529,6 +581,10 @@ choose_master_terrain_decision = {
 				}
 				scope:master_terrain_floodplains_terrain = {
 					landless_inspector_master_terrain_effect = { TERRAIN = floodplains }
+				}
+				#L5R Added
+				scope:master_terrain_forest_terrain = {
+					landless_inspector_master_terrain_effect = { TERRAIN = shadowlands_plains }
 				}
 			}
 		}

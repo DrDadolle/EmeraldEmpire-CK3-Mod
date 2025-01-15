@@ -173,6 +173,8 @@ select_local_animal_effect = {
 									OR = {
 										terrain = desert
 										terrain = forest
+										#L5R Added
+										terrain = shadowlands_forest
 									}
 								}
 							}				
@@ -198,6 +200,8 @@ select_local_animal_effect = {
 									OR = {
 										terrain = desert
 										terrain = mountains
+										#L5R Added
+										terrain = shadowlands_mountains
 									}
 								}
 							}
@@ -445,6 +449,8 @@ hunt_activity_deer_game_effect = {
 								OR = {
 									terrain = taiga
 									terrain = forest
+									#L5R Added
+									terrain = shadowlands_forest
 								}
 							}
 						}
@@ -474,6 +480,8 @@ hunt_activity_deer_game_effect = {
 								OR = {
 									terrain = taiga
 									terrain = forest
+									#L5R Added
+									terrain = shadowlands_forest
 								}
 							}
 						}
@@ -579,6 +587,8 @@ hunt_activity_dangerous_game_effect = {
 							OR = {
 								terrain = desert
 								terrain = forest
+								#L5R Added
+								terrain = shadowlands_forest
 							}
 						}
 					}				
@@ -604,6 +614,8 @@ hunt_activity_dangerous_game_effect = {
 							OR = {
 								terrain = desert
 								terrain = mountains
+								#L5R Added
+								terrain = shadowlands_mountains
 							}
 						}
 					}
@@ -683,6 +695,8 @@ hunt_activity_falconry_game_effect = {
 								terrain = floodplains
 								terrain = oasis
 								is_riverside_province = yes 
+								#L5R Added
+								terrain = shadowlands_wetlands
 							}
 						}
 					}
@@ -711,6 +725,8 @@ hunt_activity_falconry_game_effect = {
 								terrain = floodplains
 								terrain = oasis
 								is_riverside_province = yes 
+								#L5R Added
+								terrain = shadowlands_wetlands
 							}
 						}
 					}
@@ -725,6 +741,8 @@ hunt_activity_falconry_game_effect = {
 								terrain = floodplains
 								terrain = oasis
 								is_riverside_province = yes 
+								#L5R Added
+								terrain = shadowlands_wetlands
 							}
 						}
 					}
@@ -739,6 +757,8 @@ hunt_activity_falconry_game_effect = {
 								terrain = floodplains
 								terrain = oasis
 								is_riverside_province = yes 
+								#L5R Added
+								terrain = shadowlands_wetlands
 							}
 						}
 					}
@@ -801,6 +821,8 @@ hunt_falconry_select_waterfowl_effect = {
 						terrain = wetlands
 						terrain = floodplains
 						is_riverside_province = yes
+						#L5R Added
+						terrain = shadowlands_wetlands
 					}
 				}
 
@@ -834,6 +856,8 @@ hunt_falconry_select_waterfowl_effect = {
 						terrain = wetlands
 						terrain = floodplains
 						is_riverside_province = yes
+						#L5R Added
+						terrain = shadowlands_wetlands
 					}
 				}
 			}
@@ -852,6 +876,9 @@ hunt_falconry_select_gamebird_effect = {
 						terrain = farmlands
 						terrain = plains
 						terrain = hills
+						#L5R Added
+						terrain = shadowlands_plains
+						terrain = shadowlands_hills
 					}
 				}
 			}
@@ -867,6 +894,8 @@ hunt_falconry_select_gamebird_effect = {
 						terrain = drylands
 						terrain = desert
 						terrain = oasis
+						#L5R Added
+						terrain = shadowlands_plains
 					}
 				}
 			}
@@ -890,6 +919,11 @@ hunt_falconry_select_gamebird_effect = {
 						terrain = taiga
 						terrain = forest
 						terrain = plains
+						#L5R Added
+						terrain = shadowlands_forest
+						terrain = shadowlands_mountains
+						terrain = shadowlands_hills
+						terrain = shadowlands_plains
 					}
 				}
 			}
@@ -904,6 +938,10 @@ hunt_falconry_select_gamebird_effect = {
 						terrain = hills
 						terrain = steppe
 						terrain = plains
+						#L5R Added
+						terrain = shadowlands_mountains
+						terrain = shadowlands_hills
+						terrain = shadowlands_plains
 					}
 				}
 			}

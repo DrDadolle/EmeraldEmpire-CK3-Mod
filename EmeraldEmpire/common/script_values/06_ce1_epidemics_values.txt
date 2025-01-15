@@ -1372,6 +1372,8 @@ spread_chance_epidemics_default_value = {
 			OR = {
 				terrain = floodplains
 				terrain = wetlands
+				#L5R Added
+				terrain = shadowlands_wetlands
 			}
 		}
 		add = spread_increase_add_low
@@ -1381,6 +1383,8 @@ spread_chance_epidemics_default_value = {
 			OR = {
 				terrain = plains
 				terrain = steppe
+				#L5R Added
+				terrain = shadowlands_plains
 			}
 		}
 		add = spread_increase_add_low
@@ -1392,6 +1396,9 @@ spread_chance_epidemics_default_value = {
 				terrain = drylands
 				terrain = oasis
 				terrain = forest
+				#L5R Added
+				terrain = shadowlands_hills
+				terrain = shadowlands_forest
 			}
 		}
 		add = spread_decrease_add_low
@@ -1411,6 +1418,8 @@ spread_chance_epidemics_default_value = {
 				terrain = desert
 				terrain = desert_mountains
 				terrain = mountains
+				#L5R Added
+				terrain = shadowlands_mountains
 			}
 		}
 		add = spread_decrease_add_medium

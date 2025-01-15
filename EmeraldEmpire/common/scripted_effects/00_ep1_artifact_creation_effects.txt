@@ -1762,6 +1762,12 @@ add_scaled_artifact_modifier_combat_effect = {
 									terrain = steppe
 									terrain = floodplains
 									terrain = drylands
+									#L5R Added
+									terrain = shadowlands_mountains
+									terrain = shadowlands_hills
+									terrain = shadowlands_plains
+									terrain = shadowlands_forest
+									terrain = shadowlands_wetlands
 								}
 							}
 						}
@@ -1783,6 +1789,12 @@ add_scaled_artifact_modifier_combat_effect = {
 									terrain = steppe
 									terrain = floodplains
 									terrain = drylands
+									#L5R Added
+									terrain = shadowlands_mountains
+									terrain = shadowlands_hills
+									terrain = shadowlands_plains
+									terrain = shadowlands_forest
+									terrain = shadowlands_wetlands
 								}
 							}
 						}
@@ -2409,6 +2421,227 @@ add_scaled_artifact_modifier_combat_effect = {
 							rarity = illustrious
 						}
 						add_artifact_modifier = artifact_drylands_advantage_4_modifier
+					}
+				}
+				#L5R Added
+				10 = { # shadowlands_plains_advantage
+					trigger = {
+						scope:owner = {
+							OR = {
+								any_sub_realm_county = {
+									count >= 5
+									title_province = {
+										terrain = shadowlands_plains
+									}
+								}
+								any_sub_realm_county = {
+									percent >= 0.3
+									title_province = {
+										terrain = shadowlands_plains
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							rarity = common
+						}
+						add_artifact_modifier = artifact_shadowlands_plains_advantage_1_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = masterwork
+						}
+						add_artifact_modifier = artifact_shadowlands_plains_advantage_2_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = famed
+						}
+						add_artifact_modifier = artifact_shadowlands_plains_advantage_3_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = illustrious
+						}
+						add_artifact_modifier = artifact_shadowlands_plains_advantage_4_modifier
+					}
+				}
+				10 = { # shadowlands_hills_advantage
+					trigger = {
+						scope:owner = {
+							OR = {
+								any_sub_realm_county = {
+									count >= 5
+									title_province = {
+										terrain = shadowlands_hills
+									}
+								}
+								any_sub_realm_county = {
+									percent >= 0.3
+									title_province = {
+										terrain = shadowlands_hills
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							rarity = common
+						}
+						add_artifact_modifier = artifact_shadowlands_hills_advantage_1_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = masterwork
+						}
+						add_artifact_modifier = artifact_shadowlands_hills_advantage_2_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = famed
+						}
+						add_artifact_modifier = artifact_shadowlands_hills_advantage_3_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = illustrious
+						}
+						add_artifact_modifier = artifact_shadowlands_hills_advantage_4_modifier
+					}
+				}
+				10 = { # shadowlands_mountains_advantage
+					trigger = {
+						scope:owner = {
+							OR = {
+								any_sub_realm_county = {
+									count >= 5
+									title_province = {
+										terrain = shadowlands_mountains
+									}
+								}
+								any_sub_realm_county = {
+									percent >= 0.3
+									title_province = {
+										terrain = shadowlands_mountains
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							rarity = common
+						}
+						add_artifact_modifier = artifact_shadowlands_mountains_advantage_1_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = masterwork
+						}
+						add_artifact_modifier = artifact_shadowlands_mountains_advantage_2_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = famed
+						}
+						add_artifact_modifier = artifact_shadowlands_mountains_advantage_3_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = illustrious
+						}
+						add_artifact_modifier = artifact_shadowlands_mountains_advantage_4_modifier
+					}
+				}
+				10 = { # shadowlands_forest_advantage
+					trigger = {
+						scope:owner = {
+							OR = {
+								any_sub_realm_county = {
+									count >= 5
+									title_province = {
+										terrain = shadowlands_forest
+									}
+								}
+								any_sub_realm_county = {
+									percent >= 0.3
+									title_province = {
+										terrain = shadowlands_forest
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							rarity = common
+						}
+						add_artifact_modifier = artifact_shadowlands_forest_advantage_1_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = masterwork
+						}
+						add_artifact_modifier = artifact_shadowlands_forest_advantage_2_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = famed
+						}
+						add_artifact_modifier = artifact_shadowlands_forest_advantage_3_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = illustrious
+						}
+						add_artifact_modifier = artifact_shadowlands_forest_advantage_4_modifier
+					}
+				}
+				10 = { # shadowlands_wetlands_advantage
+					trigger = {
+						scope:owner = {
+							OR = {
+								any_sub_realm_county = {
+									count >= 5
+									title_province = {
+										terrain = shadowlands_wetlands
+									}
+								}
+								any_sub_realm_county = {
+									percent >= 0.3
+									title_province = {
+										terrain = shadowlands_wetlands
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							rarity = common
+						}
+						add_artifact_modifier = artifact_shadowlands_wetlands_advantage_1_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = masterwork
+						}
+						add_artifact_modifier = artifact_shadowlands_wetlands_advantage_2_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = famed
+						}
+						add_artifact_modifier = artifact_shadowlands_wetlands_advantage_3_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = illustrious
+						}
+						add_artifact_modifier = artifact_shadowlands_wetlands_advantage_4_modifier
 					}
 				}
 			}
@@ -3069,6 +3302,12 @@ add_2_scaled_artifact_modifier_combat_effect = {
 									terrain = steppe
 									terrain = floodplains
 									terrain = drylands
+									#L5R Added
+									terrain = shadowlands_mountains
+									terrain = shadowlands_hills
+									terrain = shadowlands_plains
+									terrain = shadowlands_forest
+									terrain = shadowlands_wetlands
 								}
 							}
 						}
@@ -3090,6 +3329,12 @@ add_2_scaled_artifact_modifier_combat_effect = {
 									terrain = steppe
 									terrain = floodplains
 									terrain = drylands
+									#L5R Added
+									terrain = shadowlands_mountains
+									terrain = shadowlands_hills
+									terrain = shadowlands_plains
+									terrain = shadowlands_forest
+									terrain = shadowlands_wetlands
 								}
 							}
 						}
@@ -3713,6 +3958,228 @@ add_2_scaled_artifact_modifier_combat_effect = {
 						add_artifact_modifier = artifact_drylands_advantage_4_modifier
 					}
 				}
+				#L5R Added
+				10 = { # shadowlands_plains_advantage
+					trigger = {
+						scope:owner = {
+							OR = {
+								any_sub_realm_county = {
+									count >= 5
+									title_province = {
+										terrain = shadowlands_plains
+									}
+								}
+								any_sub_realm_county = {
+									percent >= 0.3
+									title_province = {
+										terrain = shadowlands_plains
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							rarity = common
+						}
+						add_artifact_modifier = artifact_shadowlands_plains_advantage_1_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = masterwork
+						}
+						add_artifact_modifier = artifact_shadowlands_plains_advantage_2_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = famed
+						}
+						add_artifact_modifier = artifact_shadowlands_plains_advantage_3_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = illustrious
+						}
+						add_artifact_modifier = artifact_shadowlands_plains_advantage_4_modifier
+					}
+				}
+				10 = { # shadowlands_hills_advantage
+					trigger = {
+						scope:owner = {
+							OR = {
+								any_sub_realm_county = {
+									count >= 5
+									title_province = {
+										terrain = shadowlands_hills
+									}
+								}
+								any_sub_realm_county = {
+									percent >= 0.3
+									title_province = {
+										terrain = shadowlands_hills
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							rarity = common
+						}
+						add_artifact_modifier = artifact_shadowlands_hills_advantage_1_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = masterwork
+						}
+						add_artifact_modifier = artifact_shadowlands_hills_advantage_2_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = famed
+						}
+						add_artifact_modifier = artifact_shadowlands_hills_advantage_3_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = illustrious
+						}
+						add_artifact_modifier = artifact_shadowlands_hills_advantage_4_modifier
+					}
+				}
+				10 = { # shadowlands_mountains_advantage
+					trigger = {
+						scope:owner = {
+							OR = {
+								any_sub_realm_county = {
+									count >= 5
+									title_province = {
+										terrain = shadowlands_mountains
+									}
+								}
+								any_sub_realm_county = {
+									percent >= 0.3
+									title_province = {
+										terrain = shadowlands_mountains
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							rarity = common
+						}
+						add_artifact_modifier = artifact_shadowlands_mountains_advantage_1_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = masterwork
+						}
+						add_artifact_modifier = artifact_shadowlands_mountains_advantage_2_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = famed
+						}
+						add_artifact_modifier = artifact_shadowlands_mountains_advantage_3_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = illustrious
+						}
+						add_artifact_modifier = artifact_shadowlands_mountains_advantage_4_modifier
+					}
+				}
+				10 = { # shadowlands_forest_advantage
+					trigger = {
+						scope:owner = {
+							OR = {
+								any_sub_realm_county = {
+									count >= 5
+									title_province = {
+										terrain = shadowlands_forest
+									}
+								}
+								any_sub_realm_county = {
+									percent >= 0.3
+									title_province = {
+										terrain = shadowlands_forest
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							rarity = common
+						}
+						add_artifact_modifier = artifact_shadowlands_forest_advantage_1_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = masterwork
+						}
+						add_artifact_modifier = artifact_shadowlands_forest_advantage_2_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = famed
+						}
+						add_artifact_modifier = artifact_shadowlands_forest_advantage_3_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = illustrious
+						}
+						add_artifact_modifier = artifact_shadowlands_forest_advantage_4_modifier
+					}
+				}
+				10 = { # shadowlands_wetlands_advantage
+					trigger = {
+						scope:owner = {
+							OR = {
+								any_sub_realm_county = {
+									count >= 5
+									title_province = {
+										terrain = shadowlands_wetlands
+									}
+								}
+								any_sub_realm_county = {
+									percent >= 0.3
+									title_province = {
+										terrain = shadowlands_wetlands
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							rarity = common
+						}
+						add_artifact_modifier = artifact_shadowlands_wetlands_advantage_1_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = masterwork
+						}
+						add_artifact_modifier = artifact_shadowlands_wetlands_advantage_2_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = famed
+						}
+						add_artifact_modifier = artifact_shadowlands_wetlands_advantage_3_modifier
+					}
+					else_if = {
+						limit = {
+							rarity = illustrious
+						}
+						add_artifact_modifier = artifact_shadowlands_wetlands_advantage_4_modifier
+					}
+				}
+
 			}
 		}
 
@@ -8664,6 +9131,162 @@ add_scaled_artifact_modifier_terrain_advantage_effect = {
 		else_if = {
 			limit = { rarity = illustrious }
 			add_artifact_modifier = artifact_drylands_advantage_4_modifier
+		}
+	}
+	#L5R Added
+	#Shadowlands plains
+	if = {
+		limit = { 
+			artifact_owner.location ?= { terrain = shadowlands_plains } 
+		}
+		if = {
+			limit = { rarity = common }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_plains_advantage_1_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_plains_advantage_2_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = masterwork }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_plains_advantage_2_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_plains_advantage_3_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = famed }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_plains_advantage_3_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_plains_advantage_4_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = illustrious }
+			add_artifact_modifier = artifact_shadowlands_plains_advantage_4_modifier
+		}
+	}
+	#Shadowlands hills
+	if = {
+		limit = { 
+			artifact_owner.location ?= { terrain = shadowlands_hills } 
+		}
+		if = {
+			limit = { rarity = common }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_hills_advantage_1_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_hills_advantage_2_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = masterwork }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_hills_advantage_2_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_hills_advantage_3_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = famed }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_hills_advantage_3_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_hills_advantage_4_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = illustrious }
+			add_artifact_modifier = artifact_shadowlands_hills_advantage_4_modifier
+		}
+	}
+	#Shadowlands Mountains
+	if = {
+		limit = { 
+			artifact_owner.location ?= { terrain = shadowlands_mountains } 
+		}
+		if = {
+			limit = { rarity = common }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_mountains_advantage_1_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_mountains_advantage_2_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = masterwork }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_mountains_advantage_2_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_mountains_advantage_3_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = famed }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_mountains_advantage_3_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_mountains_advantage_4_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = illustrious }
+			add_artifact_modifier = artifact_shadowlands_mountains_advantage_4_modifier
+		}
+	}
+	#Shadowlands Forest
+	if = {
+		limit = { 
+			artifact_owner.location ?= { terrain = shadowlands_forest } 
+		}
+		if = {
+			limit = { rarity = common }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_forest_advantage_1_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_forest_advantage_2_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = masterwork }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_forest_advantage_2_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_forest_advantage_3_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = famed }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_forest_advantage_3_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_forest_advantage_4_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = illustrious }
+			add_artifact_modifier = artifact_shadowlands_forest_advantage_4_modifier
+		}
+	}
+	#Shadowlands Wetlands
+	if = {
+		limit = { 
+			artifact_owner.location ?= { terrain = shadowlands_wetlands } 
+		}
+		if = {
+			limit = { rarity = common }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_wetlands_advantage_1_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_wetlands_advantage_2_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = masterwork }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_wetlands_advantage_2_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_wetlands_advantage_3_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = famed }
+			random_list = {
+				20 = { add_artifact_modifier = artifact_shadowlands_wetlands_advantage_3_modifier }
+				5 = { add_artifact_modifier = artifact_shadowlands_wetlands_advantage_4_modifier }
+			}
+		}
+		else_if = {
+			limit = { rarity = illustrious }
+			add_artifact_modifier = artifact_shadowlands_wetlands_advantage_4_modifier
 		}
 	}
 }
