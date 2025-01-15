@@ -23,8 +23,14 @@ recruit_isawa_shindoshi = {
 		is_lowborn = no
 		is_landless_adventurer = no
 		OR = {
-			title:k_phoenix_clan = { exists = holder }
-			title:d_isawa = { exists = holder }
+			AND = {
+				title:k_phoenix_clan = { exists = holder }
+				NOT = { title:k_phoenix_clan.holder = root }
+			}
+			AND = {
+				title:d_isawa = { exists = holder }
+				NOT = { title:d_isawa.holder = root }
+			}
 		}
 		is_under_direct_e_rokugan_rule = yes
 	}
@@ -46,6 +52,7 @@ recruit_isawa_shindoshi = {
 		OR = {
 			AND = {
 				title:k_phoenix_clan = { exists = holder }
+				NOT = { title:k_phoenix_clan.holder = root }
 				title:k_phoenix_clan.holder = {
 					opinion = {
 						value >= 25
@@ -55,6 +62,7 @@ recruit_isawa_shindoshi = {
 			}
 			AND = {
 				title:d_isawa = { exists = holder }
+				NOT = { title:d_isawa.holder = root }
 				title:d_isawa.holder = {
 					opinion = {
 						value >= 25
@@ -76,6 +84,7 @@ recruit_isawa_shindoshi = {
 					trigger = {
 						AND = {
 							title:k_phoenix_clan = { exists = holder }
+							NOT = { title:k_phoenix_clan.holder = root }
 							title:k_phoenix_clan.holder = {
 								opinion = {
 									value >= 25
@@ -91,6 +100,7 @@ recruit_isawa_shindoshi = {
 					trigger = {
 						AND = {
 							title:d_isawa = { exists = holder }
+							NOT = { title:d_isawa.holder = root }
 							title:d_isawa.holder = {
 								opinion = {
 									value >= 25
@@ -303,6 +313,106 @@ pray_the_spirits_decision = {
 	ai_will_do = {
 		base = 50
 	}
+}
+
+
+##################################################
+# TAINT Decisions
+##################################################
+# Drink Tea of Jade Petals
+##################################################
+drink_tea_of_jade_petals = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_crab.dds"
+	}
+	decision_group_type = l5r_magic
+	sort_order = 59
+	
+	ai_check_interval = 24
+	cooldown = { years = 5 }
+
+    title = drink_tea_of_jade_petals
+    selection_tooltip = drink_tea_of_jade_petals_tooltip
+	desc = drink_tea_of_jade_petals_desc
+	confirm_text = drink_tea_of_jade_petals_confirm
+
+	is_shown = {
+		is_lowborn = no
+		is_landless_adventurer = no
+		has_trait = tainted
+		is_under_direct_e_rokugan_rule = yes
+	}
+
+	is_valid = {
+		NOT = { has_character_modifier = tea_of_jade_petals_modifier }
+		# need good opinion of kuni daimyo or control the production itself
+		root = { faith_is_evil = no  }
+
+		trigger_if = { 
+			limit = { title:d_kuni = { exists = holder } }
+			title:d_kuni.holder = { faith_is_evil = no	}
+			title:d_kuni.holder = {
+				opinion = {
+					value >= 30
+					target = root
+				}
+			}
+		} 
+		trigger_else = {
+			OR = {
+				AND = {
+					title:c_adauchi_province.holder = { faith_is_evil = no	}
+					title:c_adauchi_province.holder = {
+						opinion = {
+							value >= 30
+							target = root
+						}
+					}
+				}
+				AND = {
+					title:c_midakai_province.holder = { faith_is_evil = no	}
+					title:c_midakai_province.holder = {
+						opinion = {
+							value >= 30
+							target = root
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+	}
+
+	effect = {
+		add_character_modifier = {
+			modifier = tea_of_jade_petals_modifier
+			years = 5
+		}		
+	}
+
+	cost = {
+		prestige = medium_prestige_value
+		gold = medium_gold_value
+	}
+
+	# Only dukes will try to drink it
+	ai_potential = {
+		highest_held_title_tier >= tier_duchy
+		short_term_gold >= medium_gold_value
+	}
+
+	ai_will_do = {
+		base = 30
+		
+		modifier = {
+			add = 20
+			has_trait = zealous
+		}
+	}
+
 }
 
 ##################################################
