@@ -5735,6 +5735,36 @@ execute_prisoner_interaction = {
 	ai_will_do = {
 		base = 0
 
+		#L5R Added
+		# Ask for seppuku if the recipient is heavely tainted and if actor is good faith aligned
+		modifier = {
+			add = 100
+			scope:actor = {
+				faith_is_good = yes 
+			}
+			scope:recipient = {
+				has_trait = tainted
+				has_trait_xp = {
+					tait = tainted
+					value >= 50
+				}
+			}
+		}
+		# Ask for seppuku if the recipient is heavely tainted and if actor is neutral faith aligned
+		modifier = {
+			add = 20
+			scope:actor = {
+				faith_is_neutral = yes 
+			}
+			scope:recipient = {
+				has_trait = tainted
+				has_trait_xp = {
+					tait = tainted
+					value >= 50
+				}
+			}
+		}
+
 		opinion_modifier = {
 			trigger = {
 				NOT = { scope:actor = scope:recipient }

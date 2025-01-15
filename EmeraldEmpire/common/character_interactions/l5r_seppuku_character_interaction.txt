@@ -844,6 +844,36 @@
 
 	ai_will_do = {
 		base = -100
+
+		#L5R Added
+		# Ask for seppuku if the recipient is heavely tainted and if actor is good faith aligned
+		modifier = {
+			add = 1000
+			scope:actor = {
+				faith_is_good = yes 
+			}
+			scope:recipient = {
+				has_trait = tainted
+				has_trait_xp = {
+					tait = tainted
+					value >= 50
+				}
+			}
+		}
+		# Ask for seppuku if the recipient is heavely tainted and if actor is neutral faith aligned
+		modifier = {
+			add = 200
+			scope:actor = {
+				faith_is_neutral = yes 
+			}
+			scope:recipient = {
+				has_trait = tainted
+				has_trait_xp = {
+					tait = tainted
+					value >= 50
+				}
+			}
+		}
 		
 		modifier = { # Make sure the AI uses hooks for this as it's % based
 			scope:hook = yes
