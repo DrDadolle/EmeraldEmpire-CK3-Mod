@@ -101,94 +101,198 @@ l5r_taint.0001 = {
 
 
 #########################
-#  Taint Pulse          #
+#  You become tainted   #
 # by  Leskinen          #
-# 0001-0010				#
+# 0100-0109				#
 #########################
-# l5r_taint.0100 = {
-# 	hidden = yes
+l5r_taint.0100 = {
 
-# 	immediate = {
-# 		if = {
-# 			# Slow Progression
-# 			limit = {
-# 				 has_character_modifier = tea_of_jade_petals_modifier
-# 			}
-# 			send_interface_message = {
-# 				type = event_generic_bad
-# 				title = l5r_taint.0001.title
-	
-# 				# left_icon = root
-	
-# 				add_trait_xp = {
-# 					trait = tainted
-# 					value = 1
-# 				}
-# 			}
-# 		}
-# 		else = {
-# 			# Random Progression
-# 			send_interface_message = {
-# 				type = event_generic_bad
-# 				title = l5r_taint.0001.title
-	
-# 				# left_icon = root
-	
-# 				add_trait_xp = {
-# 					trait = tainted
-# 					value = {
-# 						integer_range = {
-# 							min = 1
-# 							max = 5
-# 						}
-# 					}
-# 				}
-# 			}
-# 		}
-# 	}
+	content_source = l5r_dlc
+	type = character_event
+	title = l5r_taint.0100.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					faith_is_evil = yes
+				}
+				desc =  l5r_taint.0100.desc.evil
+			}
+			desc =  l5r_taint.0100.desc
+		}
+	}
 
-# 	weight_multiplier = {
-# 		base = 1
+	theme = physical_health
 
-# 		modifier = {
-# 			health >= fine_health
-# 			factor = 0.9
-# 		}
-# 		modifier = {
-# 			health <= poor_health
-# 			factor = 5
-# 		}
-# 		modifier = {
-# 			has_trait = physique_bad_2
-# 			factor = 1.1
-# 		}
-# 		modifier = {
-# 			has_trait = physique_bad_2
-# 			factor = 1.2
-# 		}
-# 		modifier = {
-# 			has_trait = physique_bad_3
-# 			factor = 1.5
-# 		}
-# 		modifier = {
-# 			has_trait = physique_good_1
-# 			factor = 0.9
-# 		}
-# 		modifier = {
-# 			has_trait = physique_good_2
-# 			factor = 0.8
-# 		}
-# 		modifier = {
-# 			has_trait = physique_good_3
-# 			factor = 0.7
-# 		}
-# 		modifier = {
-# 			has_trait = athletic 
-# 			factor = 0.9
-# 		}
-# 		modifier = {
-# 			has_trait = whole_of_body 
-# 			factor = 0.5
-# 		}
-# 	}
-# }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { faith_is_evil = yes }
+			animation = zealous
+		}
+		animation = shock
+	}
+
+	trigger = {
+		# Only if currently in corrupted terrain
+		location = {
+			is_shadowlands_terrain = yes
+		}
+		#Not Already Tainted
+		NOT = { has_trait = tainted }
+	}
+
+
+	option = {
+		name = l5r_taint.0100.a
+
+		# Gain taint
+		add_trait = tainted
+
+		if = {
+			limit = {faith_is_evil = yes }
+			stress_impact = {
+				zealous = medium_stress_impact_loss
+			}
+		}
+		else = {
+			stress_impact = {
+				base = medium_stress_impact_gain
+				zealous = medium_stress_impact_gain
+			}
+		}
+		
+	}
+
+	weight_multiplier = {
+		base = 1
+
+		modifier = {
+			# If living permanently in corrupted lands
+			capital_province = {
+				is_shadowlands_terrain = yes
+			}
+			factor = 1.5
+		}
+		modifier = {
+			# Actually lives in shadowlands
+			capital_province = {
+				geographical_region = world_shadowlands
+			}
+			factor = 4
+		}
+		
+	}
+}
+
+#########################
+#  Someone random in your court
+#  becomes tainted      #
+# by  Leskinen          #
+# 0110-0119				#
+#########################
+l5r_taint.0110 = {
+
+	content_source = l5r_dlc
+	type = character_event
+	title = l5r_taint.0110.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					faith_is_evil = yes
+				}
+				desc =  l5r_taint.0110.desc.evil
+			}
+			desc =  l5r_taint.0110.desc
+		}
+	}
+	theme = physical_health
+	
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { faith_is_evil = yes }
+			animation = zealous
+		}
+		animation = shock
+	}
+	right_portrait = {
+		character = scope:char_to_taint
+		triggered_animation = {
+			trigger = { scope:char_to_taint = { faith_is_evil = yes } }
+			animation = happiness
+		}
+		animation = worry
+	}
+	
+
+	trigger = {
+		# Only if currently in corrupted terrain
+		location = {
+			is_shadowlands_terrain = yes
+		}
+		any_courtier = {
+			# someones is still not tainted
+			NOT = { has_trait = tainted }
+		}
+	}
+
+	immediate = {
+		random_courtier = {
+			limit = {
+				NOT = { has_trait = tainted }
+			}
+			save_scope_as = char_to_taint
+		}
+		scope:char_to_taint = {
+			add_trait = tainted
+			if = {
+				limit = {faith_is_evil = yes }
+				stress_impact = {
+					zealous = medium_stress_impact_loss
+				}
+			}
+			else = {
+				stress_impact = {
+					base = medium_stress_impact_gain
+					zealous = medium_stress_impact_gain
+				}
+			}
+		}
+	}
+
+
+	option = {
+		name = l5r_taint.0110.a
+		if = {
+			limit = { faith_is_evil = no }
+			stress_impact = {
+				craven = medium_stress_impact_gain
+				paranoid = massive_stress_impact_gain
+				zealous = minor_stress_impact_gain
+			}
+		}
+		
+	}
+
+	weight_multiplier = {
+		base = 1
+
+		modifier = {
+			# If living permanently in corrupted lands
+			capital_province = {
+				is_shadowlands_terrain = yes
+			}
+			factor = 1.5
+		}
+		modifier = {
+			# Actually lives in shadowlands
+			capital_province = {
+				geographical_region = world_shadowlands
+			}
+			factor = 4
+		}
+		
+	}
+}

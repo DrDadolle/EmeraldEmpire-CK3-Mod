@@ -1469,6 +1469,35 @@ five_year_everyone_pulse = {
 				move_budget_gold = { gold = long_term_gold from = budget_long_term to = budget_short_term }
 			}
 
+			# L5R Added
+			# Barons in corrupted lands should have a chance to become tainted themselves or their family
+			if = {
+				limit = {
+					is_ai = yes 
+					highest_held_title_tier = tier_barony
+					capital_province = { is_shadowlands_terrain = yes }
+				}
+				if = { 
+					limit = { NOT = { has_trait = tainted } }
+					random = {
+						chance = 50
+						add_trait = tainted
+					}
+				}			
+				# for members in court
+				every_courtier_or_guest = {
+					limit = {
+						NOT = { has_trait = tainted }
+						is_ai = yes
+					}
+					random = {
+						chance = 50
+						add_trait = tainted
+					}
+				}
+
+			}
+
 			#L5R Disabled
 			# FP2 - Checks to start El Cid's Travels
 			# if = {

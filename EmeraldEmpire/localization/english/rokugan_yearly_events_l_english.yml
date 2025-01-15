@@ -42,4 +42,16 @@
  l5r_yearly.1000.a:0 "Adopt the old beliefs."
  l5r_yearly.1000.b:0 "I'll try this ritual with my own blood."
  l5r_yearly.1000.c:0 "I'll destroy it immediately."
+
+ # You get the taint
+ l5r_taint.0100.t:0 "Spiritual Corruption"
+ l5r_taint.0100.desc.evil:0 "When I woke up this morning, I felt different, more powerful, more capable. I could hear whispers of spirits. My presence on corrupted grounds finally bear it fruits. I am corrupted by the Taint of the Shadowlands."
+ l5r_taint.0100.desc:0 "When I woke up this morning, I felt different, my head spins. I feel like I am being watched by dark entities. I could hear whispers of spirits, giving me heretical thoughts. My presence on corrupted grounds finally costs me. I am corrupted by the Taint of the Shadowlands."
+ l5r_taint.0100.a:0 "My soul belongs to Jigoku now."
+
+# random courtier get the taint
+ l5r_taint.0110.t:0 "Spiritual Corruption"
+ l5r_taint.0110.desc.evil:0 "I heard great news this morning, [char_to_taint.GetFullNameNoTooltip] seems to have receive the blessing of the dark Kansen."
+ l5r_taint.0110.desc:0 "I heard worrying news this morning, [char_to_taint.GetFullNameNoTooltip] seems to have receive the curse of the dark Kansen."
+ l5r_taint.0110.a:0 "[char_to_taint.GetHerHis] soul belong to Jigoku now."
  

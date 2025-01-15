@@ -34,6 +34,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - TODO events travel check geographical_region
 - Test fix 
 	- Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
+- test l5r_taint.0100 & l5r_taint.0110
+- test pulse events for taint !
+- test barons in shadowlands taint
 
 [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
   Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
@@ -81,7 +84,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - finish shindoshi decision for MAGIC (at least for air kami)
 - Why so much empty space in portrait debug mod ?
 - Create MaA for each great clan
-	- add special icons/images for MaA !!!!!!!!!!!!!!!!!!!!! (crab, oni & crane done, rest to do)
+	- add special icons/images for MaA ! (crab, oni & crane done, rest to do)
 
 ## Fixes to do
 - Spammed with rokugan_char_interaction.0231 event boxes...

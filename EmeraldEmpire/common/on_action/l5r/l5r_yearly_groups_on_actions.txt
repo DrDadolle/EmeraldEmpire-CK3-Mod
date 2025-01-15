@@ -15,5 +15,11 @@
         ####################
         20 = l5r_yearly.1000 # If Witch, become mahotsukai and/or evil faith
 
+        ####################
+        #   Taint  Events  #
+        ####################
+        10 = l5r_taint.0100 # You become tainted
+        30 = l5r_taint.0110 # Someone random in your court becomes tainted
+
 	}
 }
