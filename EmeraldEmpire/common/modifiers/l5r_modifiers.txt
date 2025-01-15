@@ -45,3 +45,10 @@ shadowlands_invasion_leader_modifier = {
 	men_at_arms_maintenance = -0.1
 	levy_size = 0.5
 }
+
+###############
+### Taint
+tea_of_jade_petals_modifier = {
+	icon = treatment_positive
+	rf_rokugan_opinion = 10
+}

@@ -1,0 +1,20 @@
+﻿#On actions related to taint events
+
+
+yearly_taint_pulse = { #Fired from the birthday pulse
+	trigger = {
+        has_trait = tainted
+        has_trait_xp = {
+            trait = tainted 
+            value < 100
+        }
+	}
+	random_events = {
+		# No Progression
+		20 = 0
+		
+        #50% chances of progression
+        # health & traits are taken into account in the weight multiplicator of this hidden event
+		20 = l5r_taint.0001	# Automatic Taint Progression
+	}
+}

@@ -733,6 +733,9 @@ tainted = {
 	fertility = -0.1
 	life_expectancy = -5
 	rf_rokugan_opinion = -20
+	# AI behaviour changes
+	ai_rationality = -5
+	ai_boldness = 5
 
 	track = {
 		50 = {
@@ -745,6 +748,11 @@ tainted = {
 			fertility = -0.2
 			life_expectancy = -10
 			rf_rokugan_opinion = -40
+			# AI behaviour changes
+			# Madness time
+			ai_honor = -10
+			ai_rationality = -50
+			ai_boldness = 5
 		}
 		100 = {
 			erudition = -2
@@ -756,6 +764,9 @@ tainted = {
 			fertility = -0.3
 			life_expectancy = -20
 			rf_rokugan_opinion = -80
+			# AI behaviour changes
+			# Fully dishonorable now
+			ai_honor = -100
 		}
 	}
 

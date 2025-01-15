@@ -1374,6 +1374,8 @@ random_yearly_everyone_pulse = {
 		yearly_health_pulse
 		stress_pulse
 		prison_maintenance_pulse
+		#L5R Added
+		yearly_taint_pulse
 	}
 	random_on_action = {
 		chance_of_no_event = {
