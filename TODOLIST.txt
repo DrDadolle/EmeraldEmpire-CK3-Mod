@@ -26,14 +26,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 # TO TEST
 - Dakr Moto Tsume can get Cancer, and Incapable. Prevent this. Test it doesn't happens anymore
-- Added shadowlands_terrain in events triggers + add trait_tainted in some cases
-	- travel_danger_events.6030 for spoiled food
-	- travel_danger_events.9000 for mosquitoes
-	- travel_danger_events.1012 for bad plant to eat
 - TODO events travel check geographical_region
-- Test fix 
-	- Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
-- test new drink tea of jade petals decision
 
 [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
   Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
@@ -56,10 +49,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
   Script location: file: common/men_at_arms_types/01_fp1_maa_types.txt line: 31 (vigmen:can_recruit)
 
 ## CK3 1.13.* patch
-- Add traited trait
-	- Add yearly event in shadowlands to get it/progress it
-	- Add event when travelling in shadowlands/fighting
-	- add image for the trait
+-Only B8G8R8A8_UNORM support so far.
 - update vanilla travel background for acitivites to add shadowlands bg
 	- graphical_shadowlands_trigger = yes
 - New Shadowlands stuff

@@ -204,27 +204,28 @@ common_cb_cost_multiplier_core = {
 
 common_cb_cost_multiplier = {
 	value = common_cb_cost_multiplier_core
+	#L5R Disabled
 	# Struggle Multipliers
-	if = {
-		limit = {
-			scope:attacker = {
-				OR = {
-					any_character_struggle = {
-						involvement = involved
-						is_struggle_parameter_active_variable_cb_target_secondary_county_trigger = { PARAMETER = involved_or_interloper_wars_in_struggle_region_cheaper_costs }
-					}
-					any_character_struggle = {
-						involvement = interloper
-						is_struggle_parameter_active_variable_cb_target_secondary_county_trigger = { PARAMETER = involved_or_interloper_wars_in_struggle_region_cheaper_costs }
-					}
-				}
-			}
-		}
-		multiply = {
-			value = 0.5
-			desc = CB_STRUGGLE_PHASE_DISCOUNT
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		scope:attacker = {
+	# 			OR = {
+	# 				any_character_struggle = {
+	# 					involvement = involved
+	# 					is_struggle_parameter_active_variable_cb_target_secondary_county_trigger = { PARAMETER = involved_or_interloper_wars_in_struggle_region_cheaper_costs }
+	# 				}
+	# 				any_character_struggle = {
+	# 					involvement = interloper
+	# 					is_struggle_parameter_active_variable_cb_target_secondary_county_trigger = { PARAMETER = involved_or_interloper_wars_in_struggle_region_cheaper_costs }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	multiply = {
+	# 		value = 0.5
+	# 		desc = CB_STRUGGLE_PHASE_DISCOUNT
+	# 	}
+	# }
 }
 
 

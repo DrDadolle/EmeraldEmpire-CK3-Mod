@@ -2486,10 +2486,11 @@ ep3_contract_event.0011 = {
 										scope:escorted_story = { story_type = story_cycle_pet_cat }
 										has_character_modifier = cat_story_allergy_modifier
 									}
-									AND = {
-										scope:escorted_story = { story_type = story_cycle_pet_dog }
-										faith = { religion_tag = islam_religion }
-									}
+									#L5R Disabled
+									# AND = {
+									# 	scope:escorted_story = { story_type = story_cycle_pet_dog }
+									# 	faith = { religion_tag = islam_religion }
+									# }
 								}
 							}
 							save_scope_value_as = {

@@ -595,8 +595,9 @@ pool_character_development_effect = {
 					has_trait = poet
 				}
 				OR = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					religion = religion:germanic_religion
+					#L5R Disabled
+					# culture = { has_cultural_pillar = heritage_north_germanic }
+					# religion = religion:germanic_religion
 					culture = { has_cultural_parameter = poet_trait_more_common }
 				}
 			}

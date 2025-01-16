@@ -3293,1304 +3293,1304 @@ scripted_trigger suitable_islamic_realm_trigger = {
 # by Ewan Cowhig Croft
 # 0071 - 0090
 ##################################################
-#L5R Modified
+#L5R Disabled
 #L5R TODO Modify to replace with real Rokugani monster
-scripted_trigger fp1_0071_loveli_lakes_trigger = {
-	has_trait = shieldmaiden
-	is_courtier_of = root
-	is_available_ai_adult = yes
-	is_healthy = yes
-}
+# scripted_trigger fp1_0071_loveli_lakes_trigger = {
+# 	has_trait = shieldmaiden
+# 	is_courtier_of = root
+# 	is_available_ai_adult = yes
+# 	is_healthy = yes
+# }
 
-scripted_trigger fp1_0071_valid_marshal_for_delegation_trigger = {
-	exists = this
-	is_available_ai_adult = yes
-}
+# scripted_trigger fp1_0071_valid_marshal_for_delegation_trigger = {
+# 	exists = this
+# 	is_available_ai_adult = yes
+# }
 
-scripted_effect fp1_0071_apply_hungry_troll_modifier_effect = {
-	capital_county = {
-		add_county_modifier = {
-			modifier = fp1_yearly_0071_troll_attacks_modifier
-			years = 30
-		}
-	}
-}
+# scripted_effect fp1_0071_apply_hungry_troll_modifier_effect = {
+# 	capital_county = {
+# 		add_county_modifier = {
+# 			modifier = fp1_yearly_0071_troll_attacks_modifier
+# 			years = 30
+# 		}
+# 	}
+# }
 
-#	[Rural] A Troll has been sighted & is attacking villages/peasants
-fp1_yearly.0071 = {
-	type = character_event
-	title = fp1_yearly.0071.t
-	desc = {
-		desc = fp1_yearly.0071.desc.intro
-		# Troll type.
-		first_valid = {
-			# A towering bear.
-			triggered_desc = {
-				trigger = { scope:troll_type = flag:bear }
-				desc = fp1_yearly.0071.desc.troll_type.bear
-			}
-			# An ancient wolf.
-			triggered_desc = {
-				trigger = { scope:troll_type = flag:wolf }
-				desc = fp1_yearly.0071.desc.troll_type.wolf
-			}
-			# A colossal wolverine.
-			triggered_desc = {
-				trigger = { scope:troll_type = flag:wolverine }
-				desc = fp1_yearly.0071.desc.troll_type.wolverine
-			}
-			# A stealthy lynx.
-			triggered_desc = {
-				trigger = { scope:troll_type = flag:lynx }
-				desc = fp1_yearly.0071.desc.troll_type.lynx
-			}
-			# An enraged moose.
-			triggered_desc = {
-				trigger = { scope:troll_type = flag:moose }
-				desc = fp1_yearly.0071.desc.troll_type.moose
-			}
-		}
-		# Outro type.
-		first_valid = {
-			triggered_desc = {
-				trigger = { exists = scope:loveli_lakes }
-				desc = fp1_yearly.0071.desc.outro.loveli_lakes
-			}
-			desc = fp1_yearly.0071.desc.outro.fallback
-		}
-	}
-	theme = hunting
-	left_portrait = {
-		character = root
-		animation = disbelief
-	}
-	right_portrait = {
-		character = scope:marshal
-		animation = dismissal
-	}
-	lower_left_portrait = scope:loveli_lakes
-	override_background = { reference = throne_room }
+# #	[Rural] A Troll has been sighted & is attacking villages/peasants
+# fp1_yearly.0071 = {
+# 	type = character_event
+# 	title = fp1_yearly.0071.t
+# 	desc = {
+# 		desc = fp1_yearly.0071.desc.intro
+# 		# Troll type.
+# 		first_valid = {
+# 			# A towering bear.
+# 			triggered_desc = {
+# 				trigger = { scope:troll_type = flag:bear }
+# 				desc = fp1_yearly.0071.desc.troll_type.bear
+# 			}
+# 			# An ancient wolf.
+# 			triggered_desc = {
+# 				trigger = { scope:troll_type = flag:wolf }
+# 				desc = fp1_yearly.0071.desc.troll_type.wolf
+# 			}
+# 			# A colossal wolverine.
+# 			triggered_desc = {
+# 				trigger = { scope:troll_type = flag:wolverine }
+# 				desc = fp1_yearly.0071.desc.troll_type.wolverine
+# 			}
+# 			# A stealthy lynx.
+# 			triggered_desc = {
+# 				trigger = { scope:troll_type = flag:lynx }
+# 				desc = fp1_yearly.0071.desc.troll_type.lynx
+# 			}
+# 			# An enraged moose.
+# 			triggered_desc = {
+# 				trigger = { scope:troll_type = flag:moose }
+# 				desc = fp1_yearly.0071.desc.troll_type.moose
+# 			}
+# 		}
+# 		# Outro type.
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { exists = scope:loveli_lakes }
+# 				desc = fp1_yearly.0071.desc.outro.loveli_lakes
+# 			}
+# 			desc = fp1_yearly.0071.desc.outro.fallback
+# 		}
+# 	}
+# 	theme = hunting
+# 	left_portrait = {
+# 		character = root
+# 		animation = disbelief
+# 	}
+# 	right_portrait = {
+# 		character = scope:marshal
+# 		animation = dismissal
+# 	}
+# 	lower_left_portrait = scope:loveli_lakes
+# 	override_background = { reference = throne_room }
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		NOT = { has_character_flag = had_event_fp1_yearly_0071 }
-		is_landed = yes
-		# Must be a tribal in Scandinavia.
-		#L5R Disabled
-		# government_has_flag = government_is_tribal
-		# fp1_is_in_scandinavia = yes
-		# With a rural, North Germanic capital.
-		capital_county = {
-			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		NOT = { has_character_flag = had_event_fp1_yearly_0071 }
+# 		is_landed = yes
+# 		# Must be a tribal in Scandinavia.
+# 		#L5R Disabled
+# 		# government_has_flag = government_is_tribal
+# 		# fp1_is_in_scandinavia = yes
+# 		# With a rural, North Germanic capital.
+# 		capital_county = {
+# 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
 			
-			#L5R Modified
-			OR = {
-				title_province = { geographical_region = rokugan_dragon }
-				title_province = { geographical_region = rokugan_shinomen_mori }
-			}
-			#L5R Disabled
-			# culture = { has_cultural_pillar = heritage_north_germanic }
-			# development_level <= terrible_development_level
-			# And ensure it doesn't already have a troll problem.
-			NOT = { has_county_modifier = fp1_yearly_0071_troll_attacks_modifier }
-		}
-	}
-
-	weight_multiplier = {
-		base = 1
-
-		# Weight down a little if you're a hunter, since it means you're probably trimming the local wildlife down quite dramatically.
-		modifier = {
-			add = -0.5
-			has_trait = lifestyle_hunter
-		}
-	}
-
-	immediate = {
-		add_character_flag = {
-			flag = had_event_fp1_yearly_0071
-			days = 1825
-		}
-		# Roll to determine what type of beast we get.
-		## Five options of 20% each.
-		random_list = {
-			# A towering bear.
-			200 = {
-				save_scope_value_as = {
-					name = troll_type
-					value = flag:bear
-				}
-			}
-			# An ancient wolf.
-			200 = {
-				save_scope_value_as = {
-					name = troll_type
-					value = flag:wolf
-				}
-			}
-			# A colossal wolverine.
-			200 = {
-				save_scope_value_as = {
-					name = troll_type
-					value = flag:wolverine
-				}
-			}
-			# A stealthy lynx.
-			200 = {
-				save_scope_value_as = {
-					name = troll_type
-					value = flag:lynx
-				}
-			}
-			# An enraged moose.
-			200 = {
-				save_scope_value_as = {
-					name = troll_type
-					value = flag:moose
-				}
-			}
-		}
-		## Did a møøse bite root's sister?
-		if = {
-			limit = {
-				scope:troll_type = flag:moose
-				# We could go for a more complex implementation, but as we want to keep the meme rare (and therefore less stale), we hard-lock it down to just shieldmaidens.
-				any_sibling = { fp1_0071_loveli_lakes_trigger = yes }
-			}
-			random_sibling = {
-				limit = { fp1_0071_loveli_lakes_trigger = yes }
-				save_scope_as = loveli_lakes
-			}
-		}
-		# Grab the martial, if possible, for delegation.
-		if = {
-			limit = {
-				any_martial_councillor = { fp1_0071_valid_marshal_for_delegation_trigger = yes }
-			}
-			random_martial_councillor = {
-				limit = { fp1_0071_valid_marshal_for_delegation_trigger = yes }
-				save_scope_as = marshal
-			}
-		}
-	}
-
-	# I'll kill the beast myself!
-	option = {
-		name = fp1_yearly.0071.a
-
-		# Inform root that they'll get a follow-up event.
-		custom_tooltip = fp1_yearly.0071.a.tt
-		# Calc which event to send out.
-		## A towering bear.
-		if = {
-			limit = { scope:troll_type = flag:bear }
-			trigger_event = {
-				id = fp1_yearly.0081
-				days = 14
-			}
-		}
-		## An ancient wolf.
-		else_if = {
-			limit = { scope:troll_type = flag:wolf }
-			trigger_event = {
-				id = fp1_yearly.0082
-				days = 14
-			}
-		}
-		## A colossal wolverine.
-		else_if = {
-			limit = { scope:troll_type = flag:wolverine }
-			trigger_event = {
-				id = fp1_yearly.0083
-				days = 14
-			}
-		}
-		## A stealthy lynx.
-		else_if = {
-			limit = { scope:troll_type = flag:lynx }
-			trigger_event = {
-				id = fp1_yearly.0084
-				days = 14
-			}
-		}
-		## An enraged moose.
-		else = {
-			trigger_event = {
-				id = fp1_yearly.0085
-				days = 14
-			}
-		}
-
-		stress_impact = {
-			brave = minor_stress_impact_loss
-			craven = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = 0.5
-				ai_vengefulness = 0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = craven
-			}
-		}
-	}
-
-	# Scope:marshal, take care of this.
-	option = {
-		name = fp1_yearly.0071.b
-		trigger = { exists = scope:marshal }
-
-		# Martial duel for the marshal.
-		scope:marshal = {
-			duel = {
-				skill = martial
-				value = very_high_skill_rating
-				# Your marshal and their troops hunt down the beast.
-				50 = {
-					compare_modifier = {
-						value = scope:duel_value
-						multiplier = 3.5
-						min = -49
-					}
-					desc = fp1_yearly.0071.b.tt_success
-					root = {
-						send_interface_toast = {
-							title = fp1_yearly.0071.b.tt_success
-							left_icon = scope:marshal
-							# Huzzah! Everyone's a hero!
-							scope:marshal = { add_prestige = major_prestige_gain }
-							add_prestige = medium_prestige_gain
-						}
-					}
-				}
-				# The beast eludes scope:marshal and continues to stalk the province.
-				50 = {
-					compare_modifier = {
-						value = scope:duel_value
-						multiplier = -3.5
-						min = -49
-					}
-					desc = fp1_yearly.0071.b.tt_failure
-					root = {
-						send_interface_toast = {
-							title = fp1_yearly.0071.b.tt_failure
-							left_icon = scope:marshal
-							# Welp, that's a lot of failure involved for everyone.
-							scope:marshal = { add_prestige = major_prestige_loss }
-							add_prestige = medium_prestige_loss
-							# Capital_county isn't happy.
-							fp1_0071_apply_hungry_troll_modifier_effect = yes
-						}
-					}
-				}
-			}
-		}
-
-		stress_impact = {
-			craven = minor_stress_impact_loss
-			lazy = medium_stress_impact_loss
-			brave = minor_stress_impact_gain
-			diligent = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.25
-				ai_energy = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = craven
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = lazy
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = diligent
-			}
-		}
-	}
-
-	# It's probably just a bear. Deal with it yourselves, cravens.
-	option = {
-		name = fp1_yearly.0071.c
-
-		# Gain some prestige for your toughness.
-		add_prestige = minor_prestige_gain
-		# But your capital county is upset.
-		fp1_0071_apply_hungry_troll_modifier_effect = yes
-
-		stress_impact = {
-			cynical = minor_stress_impact_loss
-			craven = medium_stress_impact_loss
-			brave = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_vengefulness = -0.25
-				ai_honor = -0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = cynical
-			}
-			modifier = {	# Weight up for stress.
-				add = 20
-				has_trait = craven
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = brave
-			}
-		}
-	}
-}
-
-scripted_effect fp1_0081_invalidation_toast_effect = {
-	send_interface_toast = {
-		title = fp1_yearly.0081.hunt_invalidated
-		left_icon = root
-		custom_tooltip = fp1_yearly.0081.hunt_invalidated.tt
-	}
-}
-
-scripted_effect fp1_0081_troll_duel_victory_effect = {
-	# Add unique character modifier.
-	add_character_modifier = {
-		modifier = $MODIFIER$
-		years = 20
-	}
-	# And prestige.
-	add_prestige = major_prestige_gain
-	# Low chance for characters to become styled "Troll-Slayer".
-	if = {
-		limit = {
-			has_any_nickname = no
-			AND = {
-				has_bad_nickname = yes
-				is_ai = yes
-			}
-		}
-		random = {
-			chance = 25
-			give_nickname = nick_troll_slayer
-		}
-	}
-	# Or automatically if they're players with bad nicknames.
-	else_if = {
-		limit = {
-			has_bad_nickname = yes
-			is_ai = no
-		}
-		give_nickname = nick_troll_slayer
-	}
-}
-
-scripted_effect fp1_0081_troll_duel_effect = {
-	duel = {
-		skill = prowess
-		value = high_skill_rating
-		# You murderise the animal.
-		50 = {
-			compare_modifier = {
-				value = scope:duel_value
-				multiplier = 3.5
-				min = -49
-			}
-			desc = $SUCCESS_TITLE$
-			send_interface_toast = {
-				title = $SUCCESS_TITLE$
-				left_icon = root
-				# Apply victory effects.
-				fp1_0081_troll_duel_victory_effect = { MODIFIER = $MODIFIER$ }
-			}
-		}
-		# The animal wounds you and your retinue carries you off.
-		50 = {
-			compare_modifier = {
-				value = scope:duel_value
-				multiplier = -3.5
-				min = -49
-			}
-			desc = $FAILURE_TITLE$
-			send_interface_toast = {
-				title = $FAILURE_TITLE$
-				left_icon = root
-				# Capital_county is unhappy.
-				fp1_0071_apply_hungry_troll_modifier_effect = yes
-				# The beast kills you.
-				death = { death_reason = $REASON$ }
-			}
-		}
-	}
-}
-
-scripted_effect fp1_0081_troll_duel_alternate_effect = {
-	duel = {
-		skill = $SKILL$
-		value = high_skill_rating
-		# You murderise the animal.
-		50 = {
-			compare_modifier = {
-				value = scope:duel_value
-				multiplier = 3.5
-				min = -49
-			}
-			desc = $SUCCESS_TITLE$
-			send_interface_toast = {
-				title = $SUCCESS_TITLE$
-				left_icon = root
-				# Apply victory effects.
-				fp1_0081_troll_duel_victory_effect = { MODIFIER = $MODIFIER$ }
-			}
-		}
-		# The animal wounds you and your retinue carries you off.
-		50 = {
-			compare_modifier = {
-				value = scope:duel_value
-				multiplier = -3.5
-				min = -49
-			}
-			desc = $FAILURE_TITLE$
-			send_interface_toast = {
-				title = $FAILURE_TITLE$
-				left_icon = root
-				# The beast merely maims you.
-				custom_tooltip = $FAILURE_TITLE$.tt
-				hidden_effect = { maimed_in_battle_effect = yes }
-				# Capital_county is unhappy.
-				fp1_0071_apply_hungry_troll_modifier_effect = yes
-			}
-		}
-	}
-}
-
-scripted_effect fp1_0081_flee_option_effect = {
-	# Lose prestige.
-	add_prestige = medium_prestige_loss
-	# Your capital county doesn't do too well, either.
-	fp1_0071_apply_hungry_troll_modifier_effect = yes
-}
-
-#	Troll: towering bear.
-fp1_yearly.0081 = {
-	type = character_event
-	title = fp1_yearly.0081.t
-	desc = fp1_yearly.0081.desc
-	theme = hunting
-	left_portrait = {
-		character = root
-		animation = shock
-	}
-
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		is_landed = yes
-		# Must be a tribal...
-		government_has_flag = government_is_tribal
-		# With a rural, North Germanic capital.
-		capital_county = {
-			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			development_level <= terrible_development_level
-		}
-	}
-
-	on_trigger_fail = { fp1_0081_invalidation_toast_effect = yes }
-
-	immediate = { play_music_cue = "mx_cue_combat_stinger" }
-
-	# Charge in, blade swinging.
-	option = {
-		name = fp1_yearly.0081.a
-		trigger = {
-			NOT = { has_trait = berserker }
-		}
-
-		# Risky prowess duel.
-		fp1_0081_troll_duel_effect = {
-			SUCCESS_TITLE = fp1_yearly.0081.a.tt_success
-			FAILURE_TITLE = fp1_yearly.0081.a.tt_failure
-			MODIFIER = fp1_yearly_0071_troll_victory_bear_modifier
-			REASON = death_bear
-		}
-
-		#We need to check that they didn't die - if we apply stress to a dead character the error-log complains
-		if = {
-			limit = {
-				is_alive = yes
-			}
-			stress_impact = {
-				brave = major_stress_impact_loss
-				craven = major_stress_impact_gain
-			}
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = 0.5
-				ai_vengefulness = 0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
-
-	# (Berserker) Auto-win due to Hulkery.
-	option = {
-		name = fp1_yearly.0081.b
-		trigger = { has_trait = berserker }
-		trait = berserker
-
-		# Explain what's happening.
-		custom_tooltip = fp1_yearly.0081.b.tt
-		# And apply victory effects.
-		fp1_0081_troll_duel_victory_effect = { MODIFIER = fp1_yearly_0071_troll_victory_bear_modifier }
-
-		stress_impact = {
-			berserker = massive_stress_impact_loss
-			wrathful = major_stress_impact_loss
-			calm = major_stress_impact_gain
-		}
-		ai_chance = {
-			# The AI should basically always take this option, since it's both an automatic win and something representing a sudden & total loss of control.
-			base = 10000
-		}
-	}
-
-	# Diplomacy: at it, Wolves of [Capital]!
-	option = {
-		name = fp1_yearly.0081.c
-
-		# Risky diplomacy duel.
-		fp1_0081_troll_duel_alternate_effect = {
-			SKILL = diplomacy
-			SUCCESS_TITLE = fp1_yearly.0081.c.tt_success
-			FAILURE_TITLE = fp1_yearly.0081.c.tt_failure
-			MODIFIER = fp1_yearly_0071_troll_victory_bear_modifier
-		}
-
-		stress_impact = {
-			brave = medium_stress_impact_loss
-			craven = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.5
-				ai_vengefulness = 0.5
-				ai_honor = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
-
-	# FLEE!
-	option = {
-		name = fp1_yearly.0081.d
-
-		# Apply flee effects.
-		fp1_0081_flee_option_effect = yes
-
-		stress_impact = {
-			craven = major_stress_impact_loss
-			brave = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	# Weight up for stress; weight up even further for cravens not wanting to immediately die.
-				add = 1000
-				has_trait = craven
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = brave
-			}
-		}
-	}
-}
-
-#	Troll: ancient wolf.
-fp1_yearly.0082 = {
-	type = character_event
-	title = fp1_yearly.0082.t
-	desc = fp1_yearly.0082.desc
-	theme = hunting
-	left_portrait = {
-		character = root
-		animation = shock
-	}
-
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		is_landed = yes
-		# Must be a tribal...
-		government_has_flag = government_is_tribal
-		# With a rural, North Germanic capital.
-		capital_county = {
-			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			development_level <= terrible_development_level
-		}
-	}
-
-	on_trigger_fail = { fp1_0081_invalidation_toast_effect = yes }
-
-	immediate = { play_music_cue = "mx_cue_combat_stinger" }
-
-	# Charge in, blade swinging.
-	option = {
-		name = fp1_yearly.0082.a
-		trigger = {
-			NOT = { has_trait = berserker }
-		}
-
-		# Risky prowess duel.
-		fp1_0081_troll_duel_effect = {
-			SUCCESS_TITLE = fp1_yearly.0082.a.tt_success
-			FAILURE_TITLE = fp1_yearly.0082.a.tt_failure
-			MODIFIER = fp1_yearly_0071_troll_victory_wolf_modifier
-			REASON = death_wolf
-		}
-
-		#We need to check that they didn't die - if we apply stress to a dead character the error-log complains
-		if = {
-			limit = {
-				is_alive = yes
-			}
-			stress_impact = {
-				brave = major_stress_impact_loss
-				craven = major_stress_impact_gain
-			}
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = 0.5
-				ai_vengefulness = 0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
-
-	# (Berserker) Auto-win due to Hulkery.
-	option = {
-		name = fp1_yearly.0082.b
-		trigger = { has_trait = berserker }
-		trait = berserker
-
-		# Explain what's happening.
-		custom_tooltip = fp1_yearly.0082.b.tt
-		# And apply victory effects.
-		fp1_0081_troll_duel_victory_effect = { MODIFIER = fp1_yearly_0071_troll_victory_wolf_modifier }
-
-		stress_impact = {
-			berserker = massive_stress_impact_loss
-			wrathful = major_stress_impact_loss
-			calm = major_stress_impact_gain
-		}
-		ai_chance = {
-			# The AI should basically always take this option, since it's both an automatic win and something representing a sudden & total loss of control.
-			base = 10000
-		}
-	}
-
-	# Martial: rally! Form a circle!
-	option = {
-		name = fp1_yearly.0082.c
-
-		# Risky martial duel.
-		fp1_0081_troll_duel_alternate_effect = {
-			SKILL = martial
-			SUCCESS_TITLE = fp1_yearly.0082.c.tt_success
-			FAILURE_TITLE = fp1_yearly.0082.c.tt_failure
-			MODIFIER = fp1_yearly_0071_troll_victory_wolf_modifier
-		}
-
-		stress_impact = {
-			brave = medium_stress_impact_loss
-			craven = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.5
-				ai_vengefulness = 0.5
-				ai_honor = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
-
-	# FLEE!
-	option = {
-		name = fp1_yearly.0082.d
-
-		# Apply flee effects.
-		fp1_0081_flee_option_effect = yes
-
-		stress_impact = {
-			craven = major_stress_impact_loss
-			brave = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	# Weight up for stress; weight up even further for cravens not wanting to immediately die.
-				add = 1000
-				has_trait = craven
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = brave
-			}
-		}
-	}
-}
-
-#	Troll: colossal wolverine.
-fp1_yearly.0083 = {
-	type = character_event
-	title = fp1_yearly.0083.t
-	desc = fp1_yearly.0083.desc
-	theme = hunting
-	left_portrait = {
-		character = root
-		animation = shock
-	}
-
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		is_landed = yes
-		# Must be a tribal...
-		government_has_flag = government_is_tribal
-		# With a rural, North Germanic capital.
-		capital_county = {
-			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			development_level <= terrible_development_level
-		}
-	}
-
-	on_trigger_fail = { fp1_0081_invalidation_toast_effect = yes }
-
-	immediate = { play_music_cue = "mx_cue_combat_stinger" }
-
-	# Charge in, blade swinging.
-	option = {
-		name = fp1_yearly.0083.a
-		trigger = {
-			NOT = { has_trait = berserker }
-		}
-
-		# Risky prowess duel.
-		fp1_0081_troll_duel_effect = {
-			SUCCESS_TITLE = fp1_yearly.0083.a.tt_success
-			FAILURE_TITLE = fp1_yearly.0083.a.tt_failure
-			MODIFIER = fp1_yearly_0071_troll_victory_wolverine_modifier
-			REASON = death_wolverine
-		}
-
-		#We need to check that they didn't die - if we apply stress to a dead character the error-log complains
-		if = {
-			limit = {
-				is_alive = yes
-			}
-			stress_impact = {
-				brave = major_stress_impact_loss
-				craven = major_stress_impact_gain
-			}
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = 0.5
-				ai_vengefulness = 0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
-
-	# (Berserker) Auto-win due to Hulkery.
-	option = {
-		name = fp1_yearly.0083.b
-		trigger = { has_trait = berserker }
-		trait = berserker
-
-		# Explain what's happening.
-		custom_tooltip = fp1_yearly.0083.b.tt
-		# And apply victory effects.
-		fp1_0081_troll_duel_victory_effect = { MODIFIER = fp1_yearly_0071_troll_victory_wolverine_modifier }
-
-		stress_impact = {
-			berserker = massive_stress_impact_loss
-			wrathful = major_stress_impact_loss
-			calm = major_stress_impact_gain
-		}
-		ai_chance = {
-			# The AI should basically always take this option, since it's both an automatic win and something representing a sudden & total loss of control.
-			base = 10000
-		}
-	}
-
-	# Stewardship: there's a lodge near here, fall back for reinforcements!
-	option = {
-		name = fp1_yearly.0083.c
-
-		# Risky stewardship duel.
-		fp1_0081_troll_duel_alternate_effect = {
-			SKILL = stewardship
-			SUCCESS_TITLE = fp1_yearly.0083.c.tt_success
-			FAILURE_TITLE = fp1_yearly.0083.c.tt_failure
-			MODIFIER = fp1_yearly_0071_troll_victory_wolverine_modifier
-		}
-
-		stress_impact = {
-			brave = medium_stress_impact_loss
-			craven = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.5
-				ai_vengefulness = 0.5
-				ai_honor = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
-
-	# FLEE!
-	option = {
-		name = fp1_yearly.0083.d
-
-		# Apply flee effects.
-		fp1_0081_flee_option_effect = yes
-
-		stress_impact = {
-			craven = major_stress_impact_loss
-			brave = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	# Weight up for stress; weight up even further for cravens not wanting to immediately die.
-				add = 1000
-				has_trait = craven
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = brave
-			}
-		}
-	}
-}
-
-#	Troll: stealthy lynx.
-fp1_yearly.0084 = {
-	type = character_event
-	title = fp1_yearly.0084.t
-	desc = fp1_yearly.0084.desc
-	theme = hunting
-	left_portrait = {
-		character = root
-		animation = shock
-	}
-
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		is_landed = yes
-		# Must be a tribal...
-		government_has_flag = government_is_tribal
-		# With a rural, North Germanic capital.
-		capital_county = {
-			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			development_level <= terrible_development_level
-		}
-	}
-
-	on_trigger_fail = { fp1_0081_invalidation_toast_effect = yes }
-
-	immediate = { play_music_cue = "mx_cue_combat_stinger" }
-
-	# Charge in, blade swinging.
-	option = {
-		name = fp1_yearly.0084.a
-		trigger = {
-			NOT = { has_trait = berserker }
-		}
-
-		# Risky prowess duel.
-		fp1_0081_troll_duel_effect = {
-			SUCCESS_TITLE = fp1_yearly.0084.a.tt_success
-			FAILURE_TITLE = fp1_yearly.0084.a.tt_failure
-			MODIFIER = fp1_yearly_0071_troll_victory_lynx_modifier
-			REASON = death_lynx
-		}
-
-		#We need to check that they didn't die - if we apply stress to a dead character the error-log complains
-		if = {
-			limit = {
-				is_alive = yes
-			}
-			stress_impact = {
-				brave = major_stress_impact_loss
-				craven = major_stress_impact_gain
-			}
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = 0.5
-				ai_vengefulness = 0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
-
-	# (Berserker) Auto-win due to Hulkery.
-	option = {
-		name = fp1_yearly.0084.b
-		trigger = { has_trait = berserker }
-		trait = berserker
-
-		# Explain what's happening.
-		custom_tooltip = fp1_yearly.0084.b.tt
-		# And apply victory effects.
-		fp1_0081_troll_duel_victory_effect = { MODIFIER = fp1_yearly_0071_troll_victory_lynx_modifier }
-
-		stress_impact = {
-			berserker = massive_stress_impact_loss
-			wrathful = major_stress_impact_loss
-			calm = major_stress_impact_gain
-		}
-		ai_chance = {
-			# The AI should basically always take this option, since it's both an automatic win and something representing a sudden & total loss of control.
-			base = 10000
-		}
-	}
-
-	# Intrigue: quiet; you two flank it, we'll flush it towards you...
-	option = {
-		name = fp1_yearly.0084.c
-
-		# Risky diplomacy duel.
-		fp1_0081_troll_duel_alternate_effect = {
-			SKILL = intrigue
-			SUCCESS_TITLE = fp1_yearly.0084.c.tt_success
-			FAILURE_TITLE = fp1_yearly.0084.c.tt_failure
-			MODIFIER = fp1_yearly_0071_troll_victory_lynx_modifier
-		}
-
-		stress_impact = {
-			brave = medium_stress_impact_loss
-			craven = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.5
-				ai_vengefulness = 0.5
-				ai_honor = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
-
-	# FLEE!
-	option = {
-		name = fp1_yearly.0084.d
-
-		# Apply flee effects.
-		fp1_0081_flee_option_effect = yes
-
-		stress_impact = {
-			craven = major_stress_impact_loss
-			brave = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	# Weight up for stress; weight up even further for cravens not wanting to immediately die.
-				add = 1000
-				has_trait = craven
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = brave
-			}
-		}
-	}
-}
-
-#	Troll: enraged moose.
-fp1_yearly.0085 = {
-	type = character_event
-	title = fp1_yearly.0085.t
-	desc = {
-		# Account for sibling violence.
-		first_valid = {
-			triggered_desc = {
-				trigger = { exists = scope:loveli_lakes }
-				desc = fp1_yearly.0085.desc.loveli_lakes
-			}
-			desc = fp1_yearly.0085.desc.fallback
-		}
-	}
-	theme = hunting
-	left_portrait = {
-		character = root
-		animation = shock
-	}
-	right_portrait = {
-		character = scope:loveli_lakes
-		animation = anger
-	}
-
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_available_even_at_war_adult = yes
-		is_landed = yes
-		# Must be a tribal...
-		government_has_flag = government_is_tribal
-		# With a rural, North Germanic capital.
-		capital_county = {
-			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			development_level <= terrible_development_level
-		}
-	}
-
-	on_trigger_fail = { fp1_0081_invalidation_toast_effect = yes }
-
-	immediate = { play_music_cue = "mx_cue_combat_stinger" }
-
-	# Charge in, blade swinging.
-	option = {
-		name = fp1_yearly.0085.a
-		trigger = {
-			NOT = { has_trait = berserker }
-		}
-
-		# Risky prowess duel.
-		fp1_0081_troll_duel_effect = {
-			SUCCESS_TITLE = fp1_yearly.0085.a.tt_success
-			FAILURE_TITLE = fp1_yearly.0085.a.tt_failure
-			MODIFIER = fp1_yearly_0071_troll_victory_moose_modifier
-			REASON = death_moose
-		}
-
-		#We need to check that they didn't die - if we apply stress to a dead character the error-log complains
-		if = {
-			limit = {
-				is_alive = yes
-			}
-			stress_impact = {
-				brave = major_stress_impact_loss
-				craven = major_stress_impact_gain
-			}
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = 0.5
-				ai_vengefulness = 0.5
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
-
-	# (Berserker) Auto-win due to Hulkery.
-	option = {
-		name = fp1_yearly.0085.b
-		trigger = { has_trait = berserker }
-		trait = berserker
-
-		# Explain what's happening.
-		custom_tooltip = fp1_yearly.0085.b.tt
-		# And apply victory effects.
-		fp1_0081_troll_duel_victory_effect = { MODIFIER = fp1_yearly_0071_troll_victory_moose_modifier }
-
-		stress_impact = {
-			berserker = massive_stress_impact_loss
-			wrathful = major_stress_impact_loss
-			calm = major_stress_impact_gain
-		}
-		ai_chance = {
-			# The AI should basically always take this option, since it's both an automatic win and something representing a sudden & total loss of control.
-			base = 10000
-		}
-	}
-
-	# Learning: remember its weak spot, spears and bows only!
-	option = {
-		name = fp1_yearly.0085.c
-
-		# Risky learning duel.
-		fp1_0081_troll_duel_alternate_effect = {
-			SKILL = learning
-			SUCCESS_TITLE = fp1_yearly.0085.c.tt_success
-			FAILURE_TITLE = fp1_yearly.0085.c.tt_failure
-			MODIFIER = fp1_yearly_0071_troll_victory_moose_modifier
-		}
-
-		stress_impact = {
-			brave = medium_stress_impact_loss
-			craven = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.5
-				ai_vengefulness = 0.5
-				ai_honor = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 30
-				has_trait = brave
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = craven
-			}
-		}
-	}
-
-	# FLEE!
-	option = {
-		name = fp1_yearly.0085.d
-
-		# Apply flee effects.
-		fp1_0081_flee_option_effect = yes
-
-		stress_impact = {
-			craven = major_stress_impact_loss
-			brave = major_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {	# Weight up for stress; weight up even further for cravens not wanting to immediately die.
-				add = 1000
-				has_trait = craven
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = brave
-			}
-		}
-	}
-}
+# 			#L5R Modified
+# 			OR = {
+# 				title_province = { geographical_region = rokugan_dragon }
+# 				title_province = { geographical_region = rokugan_shinomen_mori }
+# 			}
+# 			#L5R Disabled
+# 			# culture = { has_cultural_pillar = heritage_north_germanic }
+# 			# development_level <= terrible_development_level
+# 			# And ensure it doesn't already have a troll problem.
+# 			NOT = { has_county_modifier = fp1_yearly_0071_troll_attacks_modifier }
+# 		}
+# 	}
+
+# 	weight_multiplier = {
+# 		base = 1
+
+# 		# Weight down a little if you're a hunter, since it means you're probably trimming the local wildlife down quite dramatically.
+# 		modifier = {
+# 			add = -0.5
+# 			has_trait = lifestyle_hunter
+# 		}
+# 	}
+
+# 	immediate = {
+# 		add_character_flag = {
+# 			flag = had_event_fp1_yearly_0071
+# 			days = 1825
+# 		}
+# 		# Roll to determine what type of beast we get.
+# 		## Five options of 20% each.
+# 		random_list = {
+# 			# A towering bear.
+# 			200 = {
+# 				save_scope_value_as = {
+# 					name = troll_type
+# 					value = flag:bear
+# 				}
+# 			}
+# 			# An ancient wolf.
+# 			200 = {
+# 				save_scope_value_as = {
+# 					name = troll_type
+# 					value = flag:wolf
+# 				}
+# 			}
+# 			# A colossal wolverine.
+# 			200 = {
+# 				save_scope_value_as = {
+# 					name = troll_type
+# 					value = flag:wolverine
+# 				}
+# 			}
+# 			# A stealthy lynx.
+# 			200 = {
+# 				save_scope_value_as = {
+# 					name = troll_type
+# 					value = flag:lynx
+# 				}
+# 			}
+# 			# An enraged moose.
+# 			200 = {
+# 				save_scope_value_as = {
+# 					name = troll_type
+# 					value = flag:moose
+# 				}
+# 			}
+# 		}
+# 		## Did a møøse bite root's sister?
+# 		if = {
+# 			limit = {
+# 				scope:troll_type = flag:moose
+# 				# We could go for a more complex implementation, but as we want to keep the meme rare (and therefore less stale), we hard-lock it down to just shieldmaidens.
+# 				any_sibling = { fp1_0071_loveli_lakes_trigger = yes }
+# 			}
+# 			random_sibling = {
+# 				limit = { fp1_0071_loveli_lakes_trigger = yes }
+# 				save_scope_as = loveli_lakes
+# 			}
+# 		}
+# 		# Grab the martial, if possible, for delegation.
+# 		if = {
+# 			limit = {
+# 				any_martial_councillor = { fp1_0071_valid_marshal_for_delegation_trigger = yes }
+# 			}
+# 			random_martial_councillor = {
+# 				limit = { fp1_0071_valid_marshal_for_delegation_trigger = yes }
+# 				save_scope_as = marshal
+# 			}
+# 		}
+# 	}
+
+# 	# I'll kill the beast myself!
+# 	option = {
+# 		name = fp1_yearly.0071.a
+
+# 		# Inform root that they'll get a follow-up event.
+# 		custom_tooltip = fp1_yearly.0071.a.tt
+# 		# Calc which event to send out.
+# 		## A towering bear.
+# 		if = {
+# 			limit = { scope:troll_type = flag:bear }
+# 			trigger_event = {
+# 				id = fp1_yearly.0081
+# 				days = 14
+# 			}
+# 		}
+# 		## An ancient wolf.
+# 		else_if = {
+# 			limit = { scope:troll_type = flag:wolf }
+# 			trigger_event = {
+# 				id = fp1_yearly.0082
+# 				days = 14
+# 			}
+# 		}
+# 		## A colossal wolverine.
+# 		else_if = {
+# 			limit = { scope:troll_type = flag:wolverine }
+# 			trigger_event = {
+# 				id = fp1_yearly.0083
+# 				days = 14
+# 			}
+# 		}
+# 		## A stealthy lynx.
+# 		else_if = {
+# 			limit = { scope:troll_type = flag:lynx }
+# 			trigger_event = {
+# 				id = fp1_yearly.0084
+# 				days = 14
+# 			}
+# 		}
+# 		## An enraged moose.
+# 		else = {
+# 			trigger_event = {
+# 				id = fp1_yearly.0085
+# 				days = 14
+# 			}
+# 		}
+
+# 		stress_impact = {
+# 			brave = minor_stress_impact_loss
+# 			craven = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = 0.5
+# 				ai_vengefulness = 0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# Scope:marshal, take care of this.
+# 	option = {
+# 		name = fp1_yearly.0071.b
+# 		trigger = { exists = scope:marshal }
+
+# 		# Martial duel for the marshal.
+# 		scope:marshal = {
+# 			duel = {
+# 				skill = martial
+# 				value = very_high_skill_rating
+# 				# Your marshal and their troops hunt down the beast.
+# 				50 = {
+# 					compare_modifier = {
+# 						value = scope:duel_value
+# 						multiplier = 3.5
+# 						min = -49
+# 					}
+# 					desc = fp1_yearly.0071.b.tt_success
+# 					root = {
+# 						send_interface_toast = {
+# 							title = fp1_yearly.0071.b.tt_success
+# 							left_icon = scope:marshal
+# 							# Huzzah! Everyone's a hero!
+# 							scope:marshal = { add_prestige = major_prestige_gain }
+# 							add_prestige = medium_prestige_gain
+# 						}
+# 					}
+# 				}
+# 				# The beast eludes scope:marshal and continues to stalk the province.
+# 				50 = {
+# 					compare_modifier = {
+# 						value = scope:duel_value
+# 						multiplier = -3.5
+# 						min = -49
+# 					}
+# 					desc = fp1_yearly.0071.b.tt_failure
+# 					root = {
+# 						send_interface_toast = {
+# 							title = fp1_yearly.0071.b.tt_failure
+# 							left_icon = scope:marshal
+# 							# Welp, that's a lot of failure involved for everyone.
+# 							scope:marshal = { add_prestige = major_prestige_loss }
+# 							add_prestige = medium_prestige_loss
+# 							# Capital_county isn't happy.
+# 							fp1_0071_apply_hungry_troll_modifier_effect = yes
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+
+# 		stress_impact = {
+# 			craven = minor_stress_impact_loss
+# 			lazy = medium_stress_impact_loss
+# 			brave = minor_stress_impact_gain
+# 			diligent = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.25
+# 				ai_energy = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = craven
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = lazy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = diligent
+# 			}
+# 		}
+# 	}
+
+# 	# It's probably just a bear. Deal with it yourselves, cravens.
+# 	option = {
+# 		name = fp1_yearly.0071.c
+
+# 		# Gain some prestige for your toughness.
+# 		add_prestige = minor_prestige_gain
+# 		# But your capital county is upset.
+# 		fp1_0071_apply_hungry_troll_modifier_effect = yes
+
+# 		stress_impact = {
+# 			cynical = minor_stress_impact_loss
+# 			craven = medium_stress_impact_loss
+# 			brave = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_vengefulness = -0.25
+# 				ai_honor = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = cynical
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 20
+# 				has_trait = craven
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = brave
+# 			}
+# 		}
+# 	}
+# }
+
+# scripted_effect fp1_0081_invalidation_toast_effect = {
+# 	send_interface_toast = {
+# 		title = fp1_yearly.0081.hunt_invalidated
+# 		left_icon = root
+# 		custom_tooltip = fp1_yearly.0081.hunt_invalidated.tt
+# 	}
+# }
+
+# scripted_effect fp1_0081_troll_duel_victory_effect = {
+# 	# Add unique character modifier.
+# 	add_character_modifier = {
+# 		modifier = $MODIFIER$
+# 		years = 20
+# 	}
+# 	# And prestige.
+# 	add_prestige = major_prestige_gain
+# 	# Low chance for characters to become styled "Troll-Slayer".
+# 	if = {
+# 		limit = {
+# 			has_any_nickname = no
+# 			AND = {
+# 				has_bad_nickname = yes
+# 				is_ai = yes
+# 			}
+# 		}
+# 		random = {
+# 			chance = 25
+# 			give_nickname = nick_troll_slayer
+# 		}
+# 	}
+# 	# Or automatically if they're players with bad nicknames.
+# 	else_if = {
+# 		limit = {
+# 			has_bad_nickname = yes
+# 			is_ai = no
+# 		}
+# 		give_nickname = nick_troll_slayer
+# 	}
+# }
+
+# scripted_effect fp1_0081_troll_duel_effect = {
+# 	duel = {
+# 		skill = prowess
+# 		value = high_skill_rating
+# 		# You murderise the animal.
+# 		50 = {
+# 			compare_modifier = {
+# 				value = scope:duel_value
+# 				multiplier = 3.5
+# 				min = -49
+# 			}
+# 			desc = $SUCCESS_TITLE$
+# 			send_interface_toast = {
+# 				title = $SUCCESS_TITLE$
+# 				left_icon = root
+# 				# Apply victory effects.
+# 				fp1_0081_troll_duel_victory_effect = { MODIFIER = $MODIFIER$ }
+# 			}
+# 		}
+# 		# The animal wounds you and your retinue carries you off.
+# 		50 = {
+# 			compare_modifier = {
+# 				value = scope:duel_value
+# 				multiplier = -3.5
+# 				min = -49
+# 			}
+# 			desc = $FAILURE_TITLE$
+# 			send_interface_toast = {
+# 				title = $FAILURE_TITLE$
+# 				left_icon = root
+# 				# Capital_county is unhappy.
+# 				fp1_0071_apply_hungry_troll_modifier_effect = yes
+# 				# The beast kills you.
+# 				death = { death_reason = $REASON$ }
+# 			}
+# 		}
+# 	}
+# }
+
+# scripted_effect fp1_0081_troll_duel_alternate_effect = {
+# 	duel = {
+# 		skill = $SKILL$
+# 		value = high_skill_rating
+# 		# You murderise the animal.
+# 		50 = {
+# 			compare_modifier = {
+# 				value = scope:duel_value
+# 				multiplier = 3.5
+# 				min = -49
+# 			}
+# 			desc = $SUCCESS_TITLE$
+# 			send_interface_toast = {
+# 				title = $SUCCESS_TITLE$
+# 				left_icon = root
+# 				# Apply victory effects.
+# 				fp1_0081_troll_duel_victory_effect = { MODIFIER = $MODIFIER$ }
+# 			}
+# 		}
+# 		# The animal wounds you and your retinue carries you off.
+# 		50 = {
+# 			compare_modifier = {
+# 				value = scope:duel_value
+# 				multiplier = -3.5
+# 				min = -49
+# 			}
+# 			desc = $FAILURE_TITLE$
+# 			send_interface_toast = {
+# 				title = $FAILURE_TITLE$
+# 				left_icon = root
+# 				# The beast merely maims you.
+# 				custom_tooltip = $FAILURE_TITLE$.tt
+# 				hidden_effect = { maimed_in_battle_effect = yes }
+# 				# Capital_county is unhappy.
+# 				fp1_0071_apply_hungry_troll_modifier_effect = yes
+# 			}
+# 		}
+# 	}
+# }
+
+# scripted_effect fp1_0081_flee_option_effect = {
+# 	# Lose prestige.
+# 	add_prestige = medium_prestige_loss
+# 	# Your capital county doesn't do too well, either.
+# 	fp1_0071_apply_hungry_troll_modifier_effect = yes
+# }
+
+# #	Troll: towering bear.
+# fp1_yearly.0081 = {
+# 	type = character_event
+# 	title = fp1_yearly.0081.t
+# 	desc = fp1_yearly.0081.desc
+# 	theme = hunting
+# 	left_portrait = {
+# 		character = root
+# 		animation = shock
+# 	}
+
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		is_landed = yes
+# 		# Must be a tribal...
+# 		government_has_flag = government_is_tribal
+# 		# With a rural, North Germanic capital.
+# 		capital_county = {
+# 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
+# 			culture = { has_cultural_pillar = heritage_north_germanic }
+# 			development_level <= terrible_development_level
+# 		}
+# 	}
+
+# 	on_trigger_fail = { fp1_0081_invalidation_toast_effect = yes }
+
+# 	immediate = { play_music_cue = "mx_cue_combat_stinger" }
+
+# 	# Charge in, blade swinging.
+# 	option = {
+# 		name = fp1_yearly.0081.a
+# 		trigger = {
+# 			NOT = { has_trait = berserker }
+# 		}
+
+# 		# Risky prowess duel.
+# 		fp1_0081_troll_duel_effect = {
+# 			SUCCESS_TITLE = fp1_yearly.0081.a.tt_success
+# 			FAILURE_TITLE = fp1_yearly.0081.a.tt_failure
+# 			MODIFIER = fp1_yearly_0071_troll_victory_bear_modifier
+# 			REASON = death_bear
+# 		}
+
+# 		#We need to check that they didn't die - if we apply stress to a dead character the error-log complains
+# 		if = {
+# 			limit = {
+# 				is_alive = yes
+# 			}
+# 			stress_impact = {
+# 				brave = major_stress_impact_loss
+# 				craven = major_stress_impact_gain
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = 0.5
+# 				ai_vengefulness = 0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# (Berserker) Auto-win due to Hulkery.
+# 	option = {
+# 		name = fp1_yearly.0081.b
+# 		trigger = { has_trait = berserker }
+# 		trait = berserker
+
+# 		# Explain what's happening.
+# 		custom_tooltip = fp1_yearly.0081.b.tt
+# 		# And apply victory effects.
+# 		fp1_0081_troll_duel_victory_effect = { MODIFIER = fp1_yearly_0071_troll_victory_bear_modifier }
+
+# 		stress_impact = {
+# 			berserker = massive_stress_impact_loss
+# 			wrathful = major_stress_impact_loss
+# 			calm = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			# The AI should basically always take this option, since it's both an automatic win and something representing a sudden & total loss of control.
+# 			base = 10000
+# 		}
+# 	}
+
+# 	# Diplomacy: at it, Wolves of [Capital]!
+# 	option = {
+# 		name = fp1_yearly.0081.c
+
+# 		# Risky diplomacy duel.
+# 		fp1_0081_troll_duel_alternate_effect = {
+# 			SKILL = diplomacy
+# 			SUCCESS_TITLE = fp1_yearly.0081.c.tt_success
+# 			FAILURE_TITLE = fp1_yearly.0081.c.tt_failure
+# 			MODIFIER = fp1_yearly_0071_troll_victory_bear_modifier
+# 		}
+
+# 		stress_impact = {
+# 			brave = medium_stress_impact_loss
+# 			craven = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.5
+# 				ai_vengefulness = 0.5
+# 				ai_honor = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# FLEE!
+# 	option = {
+# 		name = fp1_yearly.0081.d
+
+# 		# Apply flee effects.
+# 		fp1_0081_flee_option_effect = yes
+
+# 		stress_impact = {
+# 			craven = major_stress_impact_loss
+# 			brave = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress; weight up even further for cravens not wanting to immediately die.
+# 				add = 1000
+# 				has_trait = craven
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = brave
+# 			}
+# 		}
+# 	}
+# }
+
+# #	Troll: ancient wolf.
+# fp1_yearly.0082 = {
+# 	type = character_event
+# 	title = fp1_yearly.0082.t
+# 	desc = fp1_yearly.0082.desc
+# 	theme = hunting
+# 	left_portrait = {
+# 		character = root
+# 		animation = shock
+# 	}
+
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		is_landed = yes
+# 		# Must be a tribal...
+# 		government_has_flag = government_is_tribal
+# 		# With a rural, North Germanic capital.
+# 		capital_county = {
+# 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
+# 			culture = { has_cultural_pillar = heritage_north_germanic }
+# 			development_level <= terrible_development_level
+# 		}
+# 	}
+
+# 	on_trigger_fail = { fp1_0081_invalidation_toast_effect = yes }
+
+# 	immediate = { play_music_cue = "mx_cue_combat_stinger" }
+
+# 	# Charge in, blade swinging.
+# 	option = {
+# 		name = fp1_yearly.0082.a
+# 		trigger = {
+# 			NOT = { has_trait = berserker }
+# 		}
+
+# 		# Risky prowess duel.
+# 		fp1_0081_troll_duel_effect = {
+# 			SUCCESS_TITLE = fp1_yearly.0082.a.tt_success
+# 			FAILURE_TITLE = fp1_yearly.0082.a.tt_failure
+# 			MODIFIER = fp1_yearly_0071_troll_victory_wolf_modifier
+# 			REASON = death_wolf
+# 		}
+
+# 		#We need to check that they didn't die - if we apply stress to a dead character the error-log complains
+# 		if = {
+# 			limit = {
+# 				is_alive = yes
+# 			}
+# 			stress_impact = {
+# 				brave = major_stress_impact_loss
+# 				craven = major_stress_impact_gain
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = 0.5
+# 				ai_vengefulness = 0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# (Berserker) Auto-win due to Hulkery.
+# 	option = {
+# 		name = fp1_yearly.0082.b
+# 		trigger = { has_trait = berserker }
+# 		trait = berserker
+
+# 		# Explain what's happening.
+# 		custom_tooltip = fp1_yearly.0082.b.tt
+# 		# And apply victory effects.
+# 		fp1_0081_troll_duel_victory_effect = { MODIFIER = fp1_yearly_0071_troll_victory_wolf_modifier }
+
+# 		stress_impact = {
+# 			berserker = massive_stress_impact_loss
+# 			wrathful = major_stress_impact_loss
+# 			calm = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			# The AI should basically always take this option, since it's both an automatic win and something representing a sudden & total loss of control.
+# 			base = 10000
+# 		}
+# 	}
+
+# 	# Martial: rally! Form a circle!
+# 	option = {
+# 		name = fp1_yearly.0082.c
+
+# 		# Risky martial duel.
+# 		fp1_0081_troll_duel_alternate_effect = {
+# 			SKILL = martial
+# 			SUCCESS_TITLE = fp1_yearly.0082.c.tt_success
+# 			FAILURE_TITLE = fp1_yearly.0082.c.tt_failure
+# 			MODIFIER = fp1_yearly_0071_troll_victory_wolf_modifier
+# 		}
+
+# 		stress_impact = {
+# 			brave = medium_stress_impact_loss
+# 			craven = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.5
+# 				ai_vengefulness = 0.5
+# 				ai_honor = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# FLEE!
+# 	option = {
+# 		name = fp1_yearly.0082.d
+
+# 		# Apply flee effects.
+# 		fp1_0081_flee_option_effect = yes
+
+# 		stress_impact = {
+# 			craven = major_stress_impact_loss
+# 			brave = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress; weight up even further for cravens not wanting to immediately die.
+# 				add = 1000
+# 				has_trait = craven
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = brave
+# 			}
+# 		}
+# 	}
+# }
+
+# #	Troll: colossal wolverine.
+# fp1_yearly.0083 = {
+# 	type = character_event
+# 	title = fp1_yearly.0083.t
+# 	desc = fp1_yearly.0083.desc
+# 	theme = hunting
+# 	left_portrait = {
+# 		character = root
+# 		animation = shock
+# 	}
+
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		is_landed = yes
+# 		# Must be a tribal...
+# 		government_has_flag = government_is_tribal
+# 		# With a rural, North Germanic capital.
+# 		capital_county = {
+# 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
+# 			culture = { has_cultural_pillar = heritage_north_germanic }
+# 			development_level <= terrible_development_level
+# 		}
+# 	}
+
+# 	on_trigger_fail = { fp1_0081_invalidation_toast_effect = yes }
+
+# 	immediate = { play_music_cue = "mx_cue_combat_stinger" }
+
+# 	# Charge in, blade swinging.
+# 	option = {
+# 		name = fp1_yearly.0083.a
+# 		trigger = {
+# 			NOT = { has_trait = berserker }
+# 		}
+
+# 		# Risky prowess duel.
+# 		fp1_0081_troll_duel_effect = {
+# 			SUCCESS_TITLE = fp1_yearly.0083.a.tt_success
+# 			FAILURE_TITLE = fp1_yearly.0083.a.tt_failure
+# 			MODIFIER = fp1_yearly_0071_troll_victory_wolverine_modifier
+# 			REASON = death_wolverine
+# 		}
+
+# 		#We need to check that they didn't die - if we apply stress to a dead character the error-log complains
+# 		if = {
+# 			limit = {
+# 				is_alive = yes
+# 			}
+# 			stress_impact = {
+# 				brave = major_stress_impact_loss
+# 				craven = major_stress_impact_gain
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = 0.5
+# 				ai_vengefulness = 0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# (Berserker) Auto-win due to Hulkery.
+# 	option = {
+# 		name = fp1_yearly.0083.b
+# 		trigger = { has_trait = berserker }
+# 		trait = berserker
+
+# 		# Explain what's happening.
+# 		custom_tooltip = fp1_yearly.0083.b.tt
+# 		# And apply victory effects.
+# 		fp1_0081_troll_duel_victory_effect = { MODIFIER = fp1_yearly_0071_troll_victory_wolverine_modifier }
+
+# 		stress_impact = {
+# 			berserker = massive_stress_impact_loss
+# 			wrathful = major_stress_impact_loss
+# 			calm = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			# The AI should basically always take this option, since it's both an automatic win and something representing a sudden & total loss of control.
+# 			base = 10000
+# 		}
+# 	}
+
+# 	# Stewardship: there's a lodge near here, fall back for reinforcements!
+# 	option = {
+# 		name = fp1_yearly.0083.c
+
+# 		# Risky stewardship duel.
+# 		fp1_0081_troll_duel_alternate_effect = {
+# 			SKILL = stewardship
+# 			SUCCESS_TITLE = fp1_yearly.0083.c.tt_success
+# 			FAILURE_TITLE = fp1_yearly.0083.c.tt_failure
+# 			MODIFIER = fp1_yearly_0071_troll_victory_wolverine_modifier
+# 		}
+
+# 		stress_impact = {
+# 			brave = medium_stress_impact_loss
+# 			craven = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.5
+# 				ai_vengefulness = 0.5
+# 				ai_honor = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# FLEE!
+# 	option = {
+# 		name = fp1_yearly.0083.d
+
+# 		# Apply flee effects.
+# 		fp1_0081_flee_option_effect = yes
+
+# 		stress_impact = {
+# 			craven = major_stress_impact_loss
+# 			brave = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress; weight up even further for cravens not wanting to immediately die.
+# 				add = 1000
+# 				has_trait = craven
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = brave
+# 			}
+# 		}
+# 	}
+# }
+
+# #	Troll: stealthy lynx.
+# fp1_yearly.0084 = {
+# 	type = character_event
+# 	title = fp1_yearly.0084.t
+# 	desc = fp1_yearly.0084.desc
+# 	theme = hunting
+# 	left_portrait = {
+# 		character = root
+# 		animation = shock
+# 	}
+
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		is_landed = yes
+# 		# Must be a tribal...
+# 		government_has_flag = government_is_tribal
+# 		# With a rural, North Germanic capital.
+# 		capital_county = {
+# 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
+# 			culture = { has_cultural_pillar = heritage_north_germanic }
+# 			development_level <= terrible_development_level
+# 		}
+# 	}
+
+# 	on_trigger_fail = { fp1_0081_invalidation_toast_effect = yes }
+
+# 	immediate = { play_music_cue = "mx_cue_combat_stinger" }
+
+# 	# Charge in, blade swinging.
+# 	option = {
+# 		name = fp1_yearly.0084.a
+# 		trigger = {
+# 			NOT = { has_trait = berserker }
+# 		}
+
+# 		# Risky prowess duel.
+# 		fp1_0081_troll_duel_effect = {
+# 			SUCCESS_TITLE = fp1_yearly.0084.a.tt_success
+# 			FAILURE_TITLE = fp1_yearly.0084.a.tt_failure
+# 			MODIFIER = fp1_yearly_0071_troll_victory_lynx_modifier
+# 			REASON = death_lynx
+# 		}
+
+# 		#We need to check that they didn't die - if we apply stress to a dead character the error-log complains
+# 		if = {
+# 			limit = {
+# 				is_alive = yes
+# 			}
+# 			stress_impact = {
+# 				brave = major_stress_impact_loss
+# 				craven = major_stress_impact_gain
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = 0.5
+# 				ai_vengefulness = 0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# (Berserker) Auto-win due to Hulkery.
+# 	option = {
+# 		name = fp1_yearly.0084.b
+# 		trigger = { has_trait = berserker }
+# 		trait = berserker
+
+# 		# Explain what's happening.
+# 		custom_tooltip = fp1_yearly.0084.b.tt
+# 		# And apply victory effects.
+# 		fp1_0081_troll_duel_victory_effect = { MODIFIER = fp1_yearly_0071_troll_victory_lynx_modifier }
+
+# 		stress_impact = {
+# 			berserker = massive_stress_impact_loss
+# 			wrathful = major_stress_impact_loss
+# 			calm = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			# The AI should basically always take this option, since it's both an automatic win and something representing a sudden & total loss of control.
+# 			base = 10000
+# 		}
+# 	}
+
+# 	# Intrigue: quiet; you two flank it, we'll flush it towards you...
+# 	option = {
+# 		name = fp1_yearly.0084.c
+
+# 		# Risky diplomacy duel.
+# 		fp1_0081_troll_duel_alternate_effect = {
+# 			SKILL = intrigue
+# 			SUCCESS_TITLE = fp1_yearly.0084.c.tt_success
+# 			FAILURE_TITLE = fp1_yearly.0084.c.tt_failure
+# 			MODIFIER = fp1_yearly_0071_troll_victory_lynx_modifier
+# 		}
+
+# 		stress_impact = {
+# 			brave = medium_stress_impact_loss
+# 			craven = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.5
+# 				ai_vengefulness = 0.5
+# 				ai_honor = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# FLEE!
+# 	option = {
+# 		name = fp1_yearly.0084.d
+
+# 		# Apply flee effects.
+# 		fp1_0081_flee_option_effect = yes
+
+# 		stress_impact = {
+# 			craven = major_stress_impact_loss
+# 			brave = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress; weight up even further for cravens not wanting to immediately die.
+# 				add = 1000
+# 				has_trait = craven
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = brave
+# 			}
+# 		}
+# 	}
+# }
+
+# #	Troll: enraged moose.
+# fp1_yearly.0085 = {
+# 	type = character_event
+# 	title = fp1_yearly.0085.t
+# 	desc = {
+# 		# Account for sibling violence.
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { exists = scope:loveli_lakes }
+# 				desc = fp1_yearly.0085.desc.loveli_lakes
+# 			}
+# 			desc = fp1_yearly.0085.desc.fallback
+# 		}
+# 	}
+# 	theme = hunting
+# 	left_portrait = {
+# 		character = root
+# 		animation = shock
+# 	}
+# 	right_portrait = {
+# 		character = scope:loveli_lakes
+# 		animation = anger
+# 	}
+
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_available_even_at_war_adult = yes
+# 		is_landed = yes
+# 		# Must be a tribal...
+# 		government_has_flag = government_is_tribal
+# 		# With a rural, North Germanic capital.
+# 		capital_county = {
+# 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
+# 			culture = { has_cultural_pillar = heritage_north_germanic }
+# 			development_level <= terrible_development_level
+# 		}
+# 	}
+
+# 	on_trigger_fail = { fp1_0081_invalidation_toast_effect = yes }
+
+# 	immediate = { play_music_cue = "mx_cue_combat_stinger" }
+
+# 	# Charge in, blade swinging.
+# 	option = {
+# 		name = fp1_yearly.0085.a
+# 		trigger = {
+# 			NOT = { has_trait = berserker }
+# 		}
+
+# 		# Risky prowess duel.
+# 		fp1_0081_troll_duel_effect = {
+# 			SUCCESS_TITLE = fp1_yearly.0085.a.tt_success
+# 			FAILURE_TITLE = fp1_yearly.0085.a.tt_failure
+# 			MODIFIER = fp1_yearly_0071_troll_victory_moose_modifier
+# 			REASON = death_moose
+# 		}
+
+# 		#We need to check that they didn't die - if we apply stress to a dead character the error-log complains
+# 		if = {
+# 			limit = {
+# 				is_alive = yes
+# 			}
+# 			stress_impact = {
+# 				brave = major_stress_impact_loss
+# 				craven = major_stress_impact_gain
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = 0.5
+# 				ai_vengefulness = 0.5
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# (Berserker) Auto-win due to Hulkery.
+# 	option = {
+# 		name = fp1_yearly.0085.b
+# 		trigger = { has_trait = berserker }
+# 		trait = berserker
+
+# 		# Explain what's happening.
+# 		custom_tooltip = fp1_yearly.0085.b.tt
+# 		# And apply victory effects.
+# 		fp1_0081_troll_duel_victory_effect = { MODIFIER = fp1_yearly_0071_troll_victory_moose_modifier }
+
+# 		stress_impact = {
+# 			berserker = massive_stress_impact_loss
+# 			wrathful = major_stress_impact_loss
+# 			calm = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			# The AI should basically always take this option, since it's both an automatic win and something representing a sudden & total loss of control.
+# 			base = 10000
+# 		}
+# 	}
+
+# 	# Learning: remember its weak spot, spears and bows only!
+# 	option = {
+# 		name = fp1_yearly.0085.c
+
+# 		# Risky learning duel.
+# 		fp1_0081_troll_duel_alternate_effect = {
+# 			SKILL = learning
+# 			SUCCESS_TITLE = fp1_yearly.0085.c.tt_success
+# 			FAILURE_TITLE = fp1_yearly.0085.c.tt_failure
+# 			MODIFIER = fp1_yearly_0071_troll_victory_moose_modifier
+# 		}
+
+# 		stress_impact = {
+# 			brave = medium_stress_impact_loss
+# 			craven = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.5
+# 				ai_vengefulness = 0.5
+# 				ai_honor = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 30
+# 				has_trait = brave
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = craven
+# 			}
+# 		}
+# 	}
+
+# 	# FLEE!
+# 	option = {
+# 		name = fp1_yearly.0085.d
+
+# 		# Apply flee effects.
+# 		fp1_0081_flee_option_effect = yes
+
+# 		stress_impact = {
+# 			craven = major_stress_impact_loss
+# 			brave = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.5
+# 				ai_vengefulness = -0.5
+# 			}
+# 			modifier = {	# Weight up for stress; weight up even further for cravens not wanting to immediately die.
+# 				add = 1000
+# 				has_trait = craven
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = brave
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # A Ship fit for a [ROOT.Char.GetTitleAsName]

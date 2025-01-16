@@ -19,3 +19,4 @@
  culture_parameter_shindoshi_ishiken_born_more_often:0 "[children|E] are more likely be born with the [GetTrait('shindoshi').GetName( GetNullCharacter )] [trait|E] or the [GetTrait('ishiken').GetName( GetNullCharacter )] [trait|E]"
  culture_parameter_better_invocation_result:0 "Characters have more chance to have good outcomes during [decision|E] or events with the spirits."
  culture_parameter_isawa_shindoshi_ishiken_born_more_often:0 "[children|E] are way likely be born with the [GetTrait('shindoshi').GetName( GetNullCharacter )] [trait|E] or the [GetTrait('ishiken').GetName( GetNullCharacter )] [trait|E]"
+ culture_parameter_can_mystical_tattooes:1 "Gain a [decision|E] to ink Mystical Tattoes, gaining a Tattoo [trait|E]."
