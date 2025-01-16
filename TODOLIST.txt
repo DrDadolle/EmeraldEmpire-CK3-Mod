@@ -25,13 +25,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 # TO TEST
-- Dakr Moto Tsume can get Cancer, and Incapable. Prevent this. Test it doesn't happens anymore
 - Test Nezumi starting point, culture & religion
 	- test is in shadowlands struggle
 	- test new decision ending
 		-test dejure transformation works !
 	- add images for new shadowlands ending
-	- change events of shadowlands ending appropriately
+	- change events of shadowlands ending images appropriately
 - TODO events travel check geographical_region
 
 [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
@@ -55,7 +54,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
   Script location: file: common/men_at_arms_types/01_fp1_maa_types.txt line: 31 (vigmen:can_recruit)
 
 ## CK3 1.13.* patch
--Only B8G8R8A8_UNORM support so far.
+-Only B8G8R8A8_UNORM support so far. => Wrong color encoding
 - Replace the conquer cassus belli internal by the AGOT Neighbour CB ?
 - Add à la AGOT an event when emperor dies "Succession of the Iron Throne" title event
 - update vanilla travel background for acitivites to add shadowlands bg

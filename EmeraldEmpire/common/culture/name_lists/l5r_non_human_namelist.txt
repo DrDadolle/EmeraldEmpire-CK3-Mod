@@ -42,7 +42,7 @@
 		name_three_toes name_white_whisker name_rapid_scout name_fearless_warrior name_fisher
 	}
 
-	dynasty_title_names = yes
+	founder_named_dynasties = yes
 	dynasty_of_location_prefix = ""
 
 	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.

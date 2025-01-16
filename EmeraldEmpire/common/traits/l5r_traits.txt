@@ -739,7 +739,7 @@ tainted = {
 
 	track = {
 		50 = {
-			erudition = -1
+			learning = -1
 			stewardship = -1 
 			diplomacy = -1
 			martial = 2
@@ -755,7 +755,7 @@ tainted = {
 			ai_boldness = 5
 		}
 		100 = {
-			erudition = -2
+			learning = -2
 			stewardship = -2 
 			diplomacy = -2
 			martial = 4

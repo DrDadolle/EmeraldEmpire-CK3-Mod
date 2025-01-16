@@ -198,10 +198,11 @@
 
 			# We are listing all available decision to give players insights on how they can end the Struggle
 			ending_decisions = {
-                struggle_shadowlands_ending_shadowlands_domination
+				struggle_shadowlands_ending_shadowlands_domination
                 struggle_shadowlands_ending_crab_domination
                 struggle_shadowlands_ending_spider_domination
-				struggle_shadowlands_ending_nezumi_restauration
+				#Only 3 endings can be displayed at the same time...
+				# struggle_shadowlands_ending_nezumi_restauration
 			}
         }
 
@@ -369,7 +370,9 @@
                 struggle_shadowlands_ending_shadowlands_domination
                 struggle_shadowlands_ending_crab_domination
                 struggle_shadowlands_ending_spider_domination
-				struggle_shadowlands_ending_nezumi_restauration
+				#Only 3 endings can be displayed at the same time...
+				# struggle_shadowlands_ending_nezumi_restauration
+				
 			}
         }
 
@@ -572,7 +575,8 @@
                 struggle_shadowlands_ending_shadowlands_domination
                 struggle_shadowlands_ending_crab_domination
                 struggle_shadowlands_ending_spider_domination
-				struggle_shadowlands_ending_nezumi_restauration
+				#Only 3 endings can be displayed at the same time...
+				# struggle_shadowlands_ending_nezumi_restauration
 			}
         }
 

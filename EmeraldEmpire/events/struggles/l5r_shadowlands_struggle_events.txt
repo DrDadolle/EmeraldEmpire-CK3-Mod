@@ -41,6 +41,16 @@ shadowlands_struggle.0001 = {
 		name = shadowlands_struggle.0001.c
 		trigger = {
 			faith_is_neutral = yes
+			NOT = { culture = { has_cultural_pillar = heritage_nezumi } }
+		}
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
+	}
+
+	option = {
+		name = shadowlands_struggle.0001.d
+		trigger = {
+			faith_is_neutral = yes
+			culture = { has_cultural_pillar = heritage_nezumi }
 		}
 		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
 	}
