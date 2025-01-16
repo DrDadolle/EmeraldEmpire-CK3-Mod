@@ -8,6 +8,7 @@
  language_island_rokugani_name:0 "Sea Rokugani"
  language_imperial_rokugani_name:0 "Imperial Rokugani"
  language_shadowlands_rokugani_name:0 "Shadowlands Speech"
+ language_nezumi_name:0 "Nezumi Squeak"
  language_yobanjin_name:0 "Yobanjin"
  language_ujik_name:0 "Ujik"
  # unit_gfx
@@ -447,3 +448,22 @@
  dark_moto_collective_noun:0 "Dark Moto"
  dark_moto_prefix:0 "Dark Moto"
  dark_moto_desc:0 "#size:15    todo some blabla about the Dark Moto culture.#"
+
+ ####################
+ # 
+ #      NEZUMI
+ #
+ ####################
+ # Heritages
+ heritage_nezumi_name:0 "Nezumi"
+ heritage_nezumi_collective_noun:0 "Nezumi"
+ #spider_group_coa_gfx:0 "Spider"
+ shadowlands_nezumi:0 "Knotted Tails"
+ shadowlands_nezumi_collective_noun:0 "Knotted Tails"
+ shadowlands_nezumi_prefix:0 "Knotted Tails"
+ shadowlands_nezumi_desc:0 "#size:15    todo some blabla about the Knotted Tails Nezumi culture.#"
+
+ shinomen_nezumi:0 "Tattered Ear"
+ shinomen_nezumi_collective_noun:0 "Tattered Ear"
+ shinomen_nezumi_prefix:0 "Tattered Ear"
+ shinomen_nezumi_desc:0 "#size:15    todo some blabla about the Tattered Ear Nezumi culture.#"

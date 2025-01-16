@@ -194,6 +194,43 @@ shadowlands_struggle.1002 = {
 	}
 }
 
+# Struggle Ending : Nezumi Restauration
+shadowlands_struggle.1003 = {
+	content_source = l5r_dlc
+	type = character_event
+	window = fullscreen_event
+	title = shadowlands_struggle.1003.t
+	desc = shadowlands_struggle.1003.desc
+	theme = shadowlands
+	override_background = { reference = shadowlands_struggle_start }
+
+	trigger = {
+		is_ai = no
+ 	}
+
+	option = {
+		name = shadowlands_struggle.1003.a
+		trigger = {
+			culture = { has_cultural_pillar = heritage_nezumi }
+		}
+	}
+	option = {
+		name = shadowlands_struggle.1003.b
+		trigger = {
+			faith_is_evil = yes
+			NOT = { culture = { has_cultural_pillar = heritage_nezumi } }
+		}
+	}
+
+	option = {
+		name = shadowlands_struggle.1003.c
+		trigger = {
+			faith_is_not_evil = yes
+			NOT = { culture = { has_cultural_pillar = heritage_nezumi } }
+		}
+	}
+}
+
 ##########
 #### Invasion of Crab Clan Event
 shadowlands_struggle.2000 = { # Invasion of Crab Clan

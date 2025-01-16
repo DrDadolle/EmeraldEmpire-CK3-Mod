@@ -16,6 +16,9 @@
         daigotsu
         gyushi
         dark_moto
+
+		# Nezumi
+		shadowlands_nezumi
 	}
 	faiths = {
         # Rokugani Faith
@@ -30,6 +33,9 @@
         faith_cult_of_atsuko
         faith_obsidian_bride
 		faith_bloodspeaker
+
+		# Nezumi Faiths
+		great_dream
 	}
 	regions = { 
         rokugan_shadowlands_struggle_region
@@ -195,6 +201,7 @@
                 struggle_shadowlands_ending_shadowlands_domination
                 struggle_shadowlands_ending_crab_domination
                 struggle_shadowlands_ending_spider_domination
+				struggle_shadowlands_ending_nezumi_restauration
 			}
         }
 
@@ -362,6 +369,7 @@
                 struggle_shadowlands_ending_shadowlands_domination
                 struggle_shadowlands_ending_crab_domination
                 struggle_shadowlands_ending_spider_domination
+				struggle_shadowlands_ending_nezumi_restauration
 			}
         }
 
@@ -564,6 +572,7 @@
                 struggle_shadowlands_ending_shadowlands_domination
                 struggle_shadowlands_ending_crab_domination
                 struggle_shadowlands_ending_spider_domination
+				struggle_shadowlands_ending_nezumi_restauration
 			}
         }
 

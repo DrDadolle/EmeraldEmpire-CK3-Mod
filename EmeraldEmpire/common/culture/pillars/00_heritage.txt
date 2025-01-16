@@ -591,3 +591,33 @@ heritage_spider = {
 #######################
 ### Non-Human Heritages
 #######################
+heritage_nezumi = {
+	type = heritage
+
+	character_modifier = {
+		shadowlands_plains_travel_danger = shadowlands_plains_medium_danger_reduction
+		shadowlands_forest_travel_danger = shadowlands_forest_medium_danger_reduction
+		shadowlands_hills_travel_danger = shadowlands_hills_medium_danger_reduction
+		shadowlands_mountains_travel_danger = shadowlands_mountains_medium_danger_reduction
+		shadowlands_wetlands_travel_danger = shadowlands_wetlands_medium_danger_reduction
+	}
+
+	#L5R TODO
+	#Later add diseases resistences
+	# Taint Immunity
+	# Shorten life-span, quicker adulthood, etc...
+
+	culture_modifier = {
+		mercenary_count_mult = -10
+	}
+
+	character_modifier  = {
+	}
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_nezumi
+		}
+	}
+	audio_parameter = european
+}

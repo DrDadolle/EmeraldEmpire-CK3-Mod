@@ -420,7 +420,20 @@ forgotten_tomb_of_fu_leng = {
 }
 
 
+#################
+# Nezumi
+#################
+# Found in L5R 5E "The Knotted Tails" adventure
+shrine_to_memory = {
+	county = c_nezumi_1
+	barony = b_nezumi_2
 
+	character_modifier = {
+		name = shrine_to_memory_effect_name
+		monthly_prestige = 0.2
+		martial_per_piety_level = 1
+	}
+}
 
 
 

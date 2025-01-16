@@ -1,0 +1,62 @@
+﻿name_list_nezumi = {
+
+	dynasty_names = {
+		dynn_burnt_paws
+		dynn_ghost_paws
+		dynn_long_claws
+		dynn_knotted_tails
+		dynn_round_ear
+		dynn_scorched_fur
+		dynn_tattered_ear
+		dynn_third_whisker
+		dynn_blazing_gullet
+		dynn_blue_fur
+		dynn_broken_shinbone
+		dynn_chewed_bark
+		dynn_chipped_tooth
+		dynn_clawbiter
+		dynn_crippled_bone
+		dynn_crimson_paw
+		dynn_crooked_tail
+		dynn_forever_racing_tomorrow
+		dynn_grasping_paw
+		dynn_green_green_white
+		dynn_shadow_runners
+		dynn_squeaky_eyeball
+		dynn_stained_paw
+		dynn_those_who_wait
+		
+		}
+
+	male_names = {
+		name_sharp_eye name_quick_to_fight name_silver_ears name_silver_claws name_lucky_silver
+		name_notched_ear name_weaver name_tree_watcher name_looter name_harvester name_lucky_hunter
+		name_three_toes name_white_whisker name_rapid_scout name_fearless_warrior name_fisher
+		
+		
+	}
+
+	female_names = {
+		name_sharp_eye name_quick_to_fight name_silver_ears name_silver_claws name_lucky_silver
+		name_notched_ear name_weaver name_tree_watcher name_looter name_harvester name_lucky_hunter
+		name_three_toes name_white_whisker name_rapid_scout name_fearless_warrior name_fisher
+	}
+
+	dynasty_title_names = yes
+	dynasty_of_location_prefix = ""
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 0
+	mat_grf_name_chance = 0
+	father_name_chance = 0
+
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 0
+	mat_grm_name_chance = 0
+	mother_name_chance = 0
+
+	mercenary_names = {
+		{ name = "mercenary_company_shinobi" }
+	}
+}
+

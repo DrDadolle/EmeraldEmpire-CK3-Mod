@@ -1,0 +1,248 @@
+﻿##### Nezumi religions
+# 		faith great_dream
+
+
+nezumi_religion = {
+	family = rf_gaijin
+	graphical_faith = dharmic_gfx
+	doctrine = gaijin_hostility_doctrine
+
+	#Main Group
+	doctrine = doctrine_spiritual_head
+	doctrine = doctrine_gender_equal
+	doctrine = doctrine_pluralism_pluralistic
+	doctrine = doctrine_theocracy_lay_clergy
+
+	#Marriage
+	doctrine = doctrine_concubines
+	doctrine = doctrine_divorce_disallowed
+	doctrine = doctrine_bastardry_all
+	doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+
+	#Crimes
+	doctrine = doctrine_homosexuality_shunned
+	doctrine = doctrine_adultery_men_crime
+	doctrine = doctrine_adultery_women_crime
+	doctrine = doctrine_kinslaying_any_dynasty_member_crime
+	doctrine = doctrine_deviancy_crime
+	doctrine = doctrine_witchcraft_crime
+
+	#Clerical Functions
+	doctrine = doctrine_clerical_function_alms_and_pacification
+	doctrine = doctrine_clerical_gender_either
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
+	
+	#Allow pilgrimages
+	doctrine = doctrine_pilgrimage_encouraged
+
+	#Funeral tradition
+	doctrine = doctrine_funeral_stoic
+
+	#TODO change the virtues
+	traits = {
+		virtues = {
+			generous
+			honest
+		}
+		sins = {
+			greedy
+			arbitrary
+		}
+	}
+
+	custom_faith_icons = {
+		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 dualism_custom_1 zoroastrian_custom_1 zoroastrian_custom_2 buddhism_custom_1 buddhism_custom_2 buddhism_custom_3 buddhism_custom_4 taoism_custom_1 yazidi_custom_1 sunni_custom_2 sunni_custom_3 sunni_custom_4 muhakkima_1 muhakkima_2 muhakkima_4 muhakkima_5 muhakkima_6 judaism_custom_1 custom_faith_fp1_fenrir custom_faith_fp1_irminsul custom_faith_fp1_jormungandr custom_faith_fp1_odins_ravens custom_faith_fp1_runestone_moon custom_faith_fp1_thors_hammer custom_faith_fp1_valknut custom_faith_fp1_yggdrasil custom_faith_boromian_circles custom_faith_lotus custom_faith_aum_tibetan custom_faith_pentagram custom_faith_pentagram_inverted custom_faith_burning_bush custom_faith_allah custom_faith_gankyil custom_faith_eye_of_providence custom_faith_dove custom_faith_ichthys custom_faith_lamb custom_faith_black_sheep custom_faith_ankh custom_faith_chi_rho custom_faith_hamsa custom_faith_cool_s
+	}
+
+	#TODO : change the localisation
+	localization = {
+		HighGodName = nezumi_high_god_name
+		HighGodName2 = nezumi_high_god_name
+		HighGodNamePossessive = nezumi_high_god_name_possessive
+		HighGodNameSheHe = CHARACTER_SHEHE_IT
+		HighGodHerselfHimself = CHARACTER_ITSELF
+		HighGodHerHis = CHARACTER_HERHIS_ITS
+		HighGodNameAlternate = nezumi_high_god_name_alternate
+		HighGodNameAlternatePossessive = nezumi_high_god_name_alternate_possessive
+
+		#Creator
+		CreatorName = nezumi_high_god_name
+		CreatorNamePossessive = nezumi_high_god_name_possessive
+		CreatorSheHe = CHARACTER_SHEHE_HE
+		CreatorHerHis = CHARACTER_HERHIS_HIS
+		CreatorHerHim = CHARACTER_HERHIM_HIM
+
+		#HealthGod
+		HealthGodName = nezumi_health_god_name
+		HealthGodNamePossessive = nezumi_health_god_name_possessive
+		HealthGodSheHe = CHARACTER_SHEHE_HE
+		HealthGodHerHis = CHARACTER_HERHIS_HIS
+		HealthGodHerHim = CHARACTER_HERHIM_HIM
+		
+		#FertilityGod
+		FertilityGodName = nezumi_fertility_god_name
+		FertilityGodNamePossessive = nezumi_fertility_god_name_possessive
+		FertilityGodSheHe = CHARACTER_SHEHE_HE
+		FertilityGodHerHis = CHARACTER_HERHIS_HIS
+		FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WealthGod
+		WealthGodName = nezumi_wealth_god_name
+		WealthGodNamePossessive = nezumi_wealth_god_name_possessive
+		WealthGodSheHe = CHARACTER_SHEHE_HE
+		WealthGodHerHis = CHARACTER_HERHIS_HIS
+		WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+		#HouseholdGod
+		HouseholdGodName = nezumi_household_god_name
+		HouseholdGodNamePossessive = nezumi_household_god_name_possessive
+		HouseholdGodSheHe = CHARACTER_SHEHE_HE
+		HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+		HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+		#FateGod
+		FateGodName = nezumi_high_god_name
+		FateGodNamePossessive = nezumi_high_god_name_possessive
+		FateGodSheHe = CHARACTER_SHEHE_IT
+		FateGodHerHis = CHARACTER_HERHIS_ITS
+		FateGodHerHim = CHARACTER_HERHIM_IT
+
+		#KnowledgeGod
+		KnowledgeGodName = nezumi_knowledge_god_name
+		KnowledgeGodNamePossessive = nezumi_knowledge_god_name_possessive
+		KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+		KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+		KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WarGod
+		WarGodName = nezumi_war_god_name
+		WarGodNamePossessive = nezumi_war_god_name_possessive
+		WarGodSheHe = CHARACTER_SHEHE_HE
+		WarGodHerHis = CHARACTER_HERHIS_HIS
+		WarGodHerHim = CHARACTER_HERHIM_HIM
+
+		#TricksterGod
+		TricksterGodName = nezumi_night_god_name
+		TricksterGodNamePossessive = nezumi_night_god_name_possessive
+		TricksterGodSheHe = CHARACTER_SHEHE_SHE
+		TricksterGodHerHis = CHARACTER_HERHIS_HER
+		TricksterGodHerHim = CHARACTER_HERHIM_HER
+
+		#NightGod
+		NightGodName = nezumi_night_god_name
+		NightGodNamePossessive = nezumi_night_god_name_possessive
+		NightGodSheHe = CHARACTER_SHEHE_SHE
+		NightGodHerHis = CHARACTER_HERHIS_HER
+		NightGodHerHim = CHARACTER_HERHIM_HER
+
+		#WaterGod
+		WaterGodName = nezumi_high_god_name
+		WaterGodNamePossessive = nezumi_high_god_name
+		WaterGodSheHe = CHARACTER_SHEHE_HE
+		WaterGodHerHis = CHARACTER_HERHIS_HIS
+		WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+		PantheonTerm = religion_nezumi_gods
+		PantheonTerm2 = religion_nezumi_gods_2
+		PantheonTerm3 = religion_nezumi_gods
+		PantheonTermHasHave = pantheon_term_have
+		GoodGodNames = {
+			nezumi_wealth_god_name
+			nezumi_health_god_name
+			nezumi_wealth_god_name
+			nezumi_household_god_name
+			nezumi_knowledge_god_name
+			nezumi_war_god_name
+			nezumi_water_god_name
+		}
+		DevilName = nezumi_devil_name
+		DevilNamePossessive = nezumi_devil_name_possessive
+		DevilSheHe = CHARACTER_SHEHE_IT
+		DevilHerHis = CHARACTER_HERHIS_ITS
+		DevilHerselfHimself = CHARACTER_ITSELF
+		EvilGodNames = { nezumi_devil_name nezumi_night_god_name}
+		HouseOfWorship = nezumi_house_of_worship
+		HouseOfWorship2 = nezumi_house_of_worship
+		HouseOfWorship3 = nezumi_house_of_worship
+		HouseOfWorshipPlural = nezumi_house_of_worship_plural
+		ReligiousSymbol = nezumi_religious_symbol
+		ReligiousSymbol2 = nezumi_religious_symbol
+		ReligiousSymbol3 = nezumi_religious_symbol
+		ReligiousText = nezumi_religious_text
+		ReligiousText2 = nezumi_religious_text
+		ReligiousText3 = nezumi_religious_text
+		ReligiousHeadName = nezumi_religious_head_title
+		ReligiousHeadTitleName = nezumi_religious_head_title_name
+		DevoteeMale = nezumi_devotee_male
+		DevoteeMalePlural = nezumi_devotee_male_plural
+		DevoteeFemale = nezumi_devotee_female
+		DevoteeFemalePlural = nezumi_devotee_female_plural
+		DevoteeNeuter = nezumi_devotee_neuter
+		DevoteeNeuterPlural = nezumi_devotee_neuter_plural
+		PriestMale = nezumi_priest_male
+		PriestMalePlural = nezumi_priest_male_plural
+		PriestFemale = nezumi_priest_female
+		PriestFemalePlural = nezumi_priest_female_plural
+		PriestNeuter = nezumi_priest_neuter
+		PriestNeuterPlural = nezumi_priest_neuter_plural
+		AltPriestTermPlural = nezumi_alternate_priest_term_plural
+		BishopMale = nezumi_priest_male
+		BishopMalePlural = nezumi_priest_male_plural
+		BishopFemale = nezumi_priest_female
+		BishopFemalePlural = nezumi_priest_female_plural
+		BishopNeuter = nezumi_priest_neuter
+		BishopNeuterPlural = nezumi_priest_neuter_plural
+
+		DivineRealm = nezumi_divine_realm
+		DivineRealm2 = nezumi_divine_realm
+		DivineRealm3 = nezumi_divine_realm
+		PositiveAfterLife = nezumi_positive_afterlife
+		PositiveAfterLife2 = nezumi_positive_afterlife
+		PositiveAfterLife3 = nezumi_positive_afterlife
+		NegativeAfterLife = nezumi_negative_afterlife
+		NegativeAfterLife2 = nezumi_negative_afterlife
+		NegativeAfterLife3 = nezumi_negative_afterlife
+		DeathDeityName = nezumi_death_deity_name
+		DeathDeityNamePossessive = nezumi_death_deity_name_possessive
+		DeathDeitySheHe = CHARACTER_SHEHE_IT
+		DeathDeityHerHis = CHARACTER_HERSHIS_ITS
+		WitchGodName = nezumi_devil_name
+		WitchGodNamePossessive = nezumi_devil_name_possessive
+		WitchGodHerHis = CHARACTER_HERHIS_HER
+		WitchGodSheHe = CHARACTER_SHEHE_SHE
+		WitchGodHerHim = CHARACTER_HERHIM_HER
+		WitchGodMistressMaster = mistress
+		WitchGodMotherFather = mother
+
+		GHWName = ghw_purification
+		GHWNamePlural = ghw_purifications
+	}
+	
+	##TODO icon are placeholders
+	##TODO doctrines are placeholders too
+	faiths = {
+		great_dream = {
+			color = { 0.43 0.63 0.90 }
+			#TODO change it
+			icon = baltic
+			reformed_icon = baltic_reformed
+
+			#L5R TODO : add at least 2 more
+			holy_site = shrine_to_memory
+			holy_site = repository_of_all_knowledge
+
+
+			doctrine = tenet_sanctity_of_nature
+			doctrine = tenet_communal_identity
+			doctrine = tenet_ritual_celebrations
+
+
+			doctrine = unreformed_faith_doctrine
+
+			localization = {
+				#TODO
+			}
+		}
+	}
+}

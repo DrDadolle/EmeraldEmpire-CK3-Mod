@@ -2864,6 +2864,19 @@ d_otter = {
 #     no_automatic_claims = yes
 # }
 
+## Decisions titles
+# The One Tribe
+e_the_one_tribe = {
+	color = { 10 30 130 }
+	definite_form = yes
+	capital = c_shadowlands_lost_library_3 # Random county chosen because why not 
+	ignore_titularity_for_title_weighting = yes
+
+	ai_primary_priority = {
+		add = @always_primary_score #1000
+	}
+}
+
 ###VANILLA FASHION###
 
 k_fashion = { # Kingdom of Fashion from Establish a New Fashion at Court decision

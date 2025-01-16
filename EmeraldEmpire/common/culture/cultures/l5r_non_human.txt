@@ -1,0 +1,52 @@
+﻿#######################
+### Nezumi Culture
+#######################
+shadowlands_nezumi  = { 
+	color = { 0.13 0.25 0.4 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_communal
+	heritage = heritage_nezumi
+	language = language_nezumi
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_welcoming
+		tradition_adaptive_skirmishing
+		tradition_storytellers
+	}
+   
+	name_list = name_list_nezumi
+	
+	coa_gfx = { minor_group_coa_gfx }
+	building_gfx = { japanese_building_gfx }
+	clothing_gfx = { minor_clothing_gfx }
+	unit_gfx = { japanese_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+
+shinomen_nezumi  = { 
+	color = { 0.13 0.25 0.4 } # The color of the culture, used e.g. on the map
+	
+	ethos = ethos_communal
+	heritage = heritage_nezumi
+	language = language_nezumi
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_welcoming
+		tradition_adaptive_skirmishing
+		tradition_storytellers
+	}
+   
+	name_list = name_list_nezumi
+	
+	coa_gfx = { minor_group_coa_gfx }
+	building_gfx = { japanese_building_gfx }
+	clothing_gfx = { minor_clothing_gfx }
+	unit_gfx = { japanese_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}

@@ -1,0 +1,71 @@
+﻿l_english:
+ ############################
+ # nezumi Religion
+ nezumi_religion:0 "Nezumi"
+ nezumi_religion_adj:0 "Nezumi"
+ nezumi_religion_adherent:0 "Dreamer"
+ nezumi_religion_adherent_plural:0 "Dreamers"
+ nezumi_religion_desc:0 "The Nezumi did not worship the Kami and Fortunes as did the Rokugani. Their religion was mostly based around the idea that life was a great dream, and that death was an awakening from that dream. This led to their relatively strange perceptions of time, as exhibited by their speech."
+
+ #####
+ # Seven Fortunes Faith
+ great_dream:0 "Great Dream"
+ great_dream_adj:0 "Fortunist"
+ great_dream_adherent:0 "Dreamer"
+ great_dream_adherent_plural:0 "Dreamers"
+ great_dream_desc:0 "The Nezumi did not worship the Kami and Fortunes as did the Rokugani. Their religion was mostly based around the idea that life was a great dream, and that death was an awakening from that dream. This led to their relatively strange perceptions of time, as exhibited by their speech."
+ # High God
+ nezumi_high_god_name:0 "Those-Whose-Power-Shines-Brighter-Than-a-Thousand-Torches-and-Whose-Name-Stands-As-a-Great-Wall-Against-Tomorrow"
+ nezumi_high_god_name_possessive:0 "Those-Whose-Power-Shines-Brighter-Than-a-Thousand-Torches-and-Whose-Name-Stands-As-a-Great-Wall-Against-Tomorrow's"
+ nezumi_high_god_name_alternate:0 "Transcendents"
+ nezumi_high_god_name_alternate_possessive:0 "Transcendents's"
+ #HealthGod
+ nezumi_health_god_name:0 "$nezumi_high_god_name$"
+ nezumi_health_god_name_possessive:0 "$nezumi_high_god_name_possessive$"
+ #FertilityGod
+ nezumi_fertility_god_name:0 "$nezumi_high_god_name$"
+ nezumi_fertility_god_name_possessive:0 "$nezumi_high_god_name_possessive$"
+ #WealthGod
+ nezumi_wealth_god_name:0 ""$nezumi_high_god_name$"
+ nezumi_wealth_god_name_possessive:0 "$nezumi_high_god_name_possessive$"
+ #HouseholdGod
+ nezumi_household_god_name:0 "$nezumi_high_god_name$"
+ nezumi_household_god_name_possessive:0 "$nezumi_high_god_name_possessive$"
+ #KnowledgeGod
+ nezumi_knowledge_god_name:0 "$nezumi_high_god_name$"
+ nezumi_knowledge_god_name_possessive:0 "$nezumi_high_god_name_possessive$"
+ #WarGod
+ nezumi_war_god_name:0 "$nezumi_high_god_name$"
+ nezumi_war_god_name_possessive:0 "$nezumi_high_god_name_possessive$"
+ #NightGod
+ nezumi_night_god_name:0 "$nezumi_high_god_name$"
+ nezumi_night_god_name_possessive:0 "$nezumi_high_god_name_possessive$"
+ # Others
+ religion_nezumi_gods:0 "$nezumi_high_god_name$"
+ religion_nezumi_gods_2:0 "The Transcendents"
+ nezumi_devil_name:0 "Fu Leng"
+ nezumi_devil_name_possessive:0 "Fu Leng's"
+ nezumi_death_deity_name:0 "Tomorrow"
+ nezumi_death_deity_name_possessive:0 "Tomorrow"
+ nezumi_house_of_worship:0 "Shrine"
+ nezumi_house_of_worship_plural:0 "Shrines"
+ nezumi_religious_symbol:0 "time"
+ nezumi_religious_text:0 "oral traditions"
+ nezumi_religious_head_title:0 "Old Dreamer"
+ nezumi_religious_head_title_name:0 "Kingdom of Dream"
+ nezumi_devotee_male:0 "monk"
+ nezumi_devotee_male_plural:0 "monks"
+ nezumi_devotee_female:0 "nun"
+ nezumi_devotee_female_plural:0 "nuns"
+ nezumi_devotee_neuter:0 "monastic"
+ nezumi_devotee_neuter_plural:0 "monastics"
+ nezumi_priest_male:0 "nametaker"
+ nezumi_priest_male_plural:0 "nametakers"
+ nezumi_priest_female:0 "nametaker"
+ nezumi_priest_female_plural:0 "nametakers"
+ nezumi_priest_neuter:0 "shrine priest"
+ nezumi_priest_neuter_plural:0 "shrine priests"
+ nezumi_alternate_priest_term_plural:0 "$nezumi_priest_neuter_plural$"
+ nezumi_divine_realm:0 "Realm of Dreams"
+ nezumi_positive_afterlife:0 "Realm of Dreams"
+ nezumi_negative_afterlife:0 "Jigoku"
