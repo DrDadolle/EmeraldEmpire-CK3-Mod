@@ -50,6 +50,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## CK3 1.13.* patch
 -Only B8G8R8A8_UNORM support so far.
+- Replace the conquer cassus belli internal by the AGOT Neighbour CB ?
+- Add à la AGOT an event when emperor dies "Succession of the Iron Throne" title event
 - update vanilla travel background for acitivites to add shadowlands bg
 	- graphical_shadowlands_trigger = yes
 - New Shadowlands stuff
@@ -64,7 +66,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Add thumbnail image for the mod !
 - add images for mma
 - Why people can be eunuch ?! wtf even Dark Moto Tsume ?! 
-- redo images of tatoo ?
+- More baronnies in spice & silk islands
 - Update activites terrain with shadowlands, as well as activity_backgrounds.txt
 
 
@@ -78,7 +80,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Spammed with rokugan_char_interaction.0231 event boxes...
 	- "an honorable death" event procs for outsite of player stuff
 - shiba mon is off-center (too much top left)
-- update dynasty decisions (taken from shogunate)
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - Issues with missing accolades in innovations description ? Why ?
@@ -188,16 +189,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 =====================================================================================================
 ==================================== RECAPS & TIPS ==================================================
 =====================================================================================================
-# Decisions Done
-- Bleach Hair White (crane) and it's opposite
-- Avenge Yasuki War (crane)
-- Commit Seppuku (when dishonored)
-- Restore Snake Clan (phoenix)
-- Found minor clan (count)
-- Found great clan (duke)
-- Reclaim Roshi Rambo (Lion/Crane)
-
-
 # Permissions to asks
 - Tachi CK3 Mod dev, for inspiration ?
 
