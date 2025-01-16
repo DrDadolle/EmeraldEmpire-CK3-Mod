@@ -1081,8 +1081,10 @@
 					ai_rationality < 0
 					location = {
 						NOR = {
-							geographical_region = world_steppe_east
-							geographical_region = world_steppe_west
+							#L5R Modified
+							geographical_region = rokugan_unicorn
+							# geographical_region = world_steppe_east
+							# geographical_region = world_steppe_west
 						}
 					}
 				}
@@ -2141,9 +2143,10 @@ GetAdventureNamePrefixes = {
 				scope:new_landless_adventurer ?= {
 					OR = {
 						has_trait = rough_terrain_expert
-						culture = {
-							has_cultural_tradition = tradition_forest_wardens
-						}
+						#L5R Disabled
+						# culture = {
+						# 	has_cultural_tradition = tradition_forest_wardens
+						# }
 						culture = {
 							has_cultural_tradition = tradition_forest_folk
 						}
@@ -2334,8 +2337,10 @@ GetAdventureNamePrefixes = {
 				scope:new_landless_adventurer ?= {
 					location = {
 						OR = {
-							geographical_region = world_steppe_east
-							geographical_region = world_steppe_tarim
+							#L5R Modified
+							geographical_region = world_rokugan
+							# geographical_region = world_steppe_east
+							# geographical_region = world_steppe_tarim
 						}
 					}
 				}
@@ -4721,22 +4726,23 @@ GetAdventureNameSuffix = {
 		}
 		localization_key = codex
 	}
-	text = {
-		setup_scope = {
-			save_scope_as = new_landless_adventurer
-			house ?= { save_scope_as = new_landless_adventurer_house }
-			location ?= { save_scope_as = new_landless_adventurer_location }
-		}
-		trigger = {
-			OR = {
-				NOT = { exists = scope:new_landless_adventurer }
-				scope:new_landless_adventurer_location ?= {
-					geographical_region = ghw_region_egypt_et_al
-				}
-			}
-		}
-		localization_key = obelisk
-	}
+	#L5R Disabled
+	# text = {
+	# 	setup_scope = {
+	# 		save_scope_as = new_landless_adventurer
+	# 		house ?= { save_scope_as = new_landless_adventurer_house }
+	# 		location ?= { save_scope_as = new_landless_adventurer_location }
+	# 	}
+	# 	trigger = {
+	# 		OR = {
+	# 			NOT = { exists = scope:new_landless_adventurer }
+	# 			scope:new_landless_adventurer_location ?= {
+	# 				geographical_region = ghw_region_egypt_et_al
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = obelisk
+	# }
 	text = {
 		setup_scope = {
 			save_scope_as = new_landless_adventurer

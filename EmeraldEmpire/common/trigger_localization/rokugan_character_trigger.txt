@@ -23,11 +23,25 @@ faith_is_good = {
 	third = FAITH_IS_GOOD_TRIGGER_THIRD
 }
 
+faith_is_not_good = {
+	global = NOT_FAITH_IS_GOOD_TRIGGER_GLOBAL
+	first = NOT_FAITH_IS_GOOD_TRIGGER_FIRST
+	third = NOT_FAITH_IS_GOOD_TRIGGER_THIRD
+}
+
+faith_is_not_evil = {
+	global = NOT_FAITH_IS_EVIL_TRIGGER_GLOBAL
+	first = NOT_FAITH_IS_EVIL_TRIGGER_FIRST
+	third = NOT_FAITH_IS_EVIL_TRIGGER_THIRD
+}
+
 faith_is_evil = {
 	global = FAITH_IS_EVIL_TRIGGER_GLOBAL
 	first = FAITH_IS_EVIL_TRIGGER_FIRST
 	third = FAITH_IS_EVIL_TRIGGER_THIRD
 }
+
+
 
 faith_is_neutral = {
 	global = FAITH_IS_NEUTRAL_TRIGGER_GLOBAL

@@ -4220,7 +4220,8 @@ release_from_prison_interaction = {
 					# 	debug_log_scopes = yes
 					# }
 					#Does the AI in general go haywire with deposing prisoners?
-					else_if = {
+					# else_
+					if = {
 						limit = {
 							scope:actor = { is_ai = yes }
 						}
@@ -5745,7 +5746,7 @@ execute_prisoner_interaction = {
 			scope:recipient = {
 				has_trait = tainted
 				has_trait_xp = {
-					tait = tainted
+					trait = tainted
 					value >= 50
 				}
 			}
@@ -5759,7 +5760,7 @@ execute_prisoner_interaction = {
 			scope:recipient = {
 				has_trait = tainted
 				has_trait_xp = {
-					tait = tainted
+					trait = tainted
 					value >= 50
 				}
 			}

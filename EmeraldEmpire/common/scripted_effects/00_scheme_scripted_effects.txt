@@ -11359,9 +11359,10 @@ cap_schemes_and_fire_reminders_effect = {
 				raid_estate = {
 					raid_estate_scheme_prep_effect = yes
 				}
-				prepare_fire_dromons_scheme = {
-					prepare_fire_dromons_scheme_prep_effect = yes
-				}
+				#L5R Disabled
+				# prepare_fire_dromons_scheme = {
+				# 	prepare_fire_dromons_scheme_prep_effect = yes
+				# }
 			}
 		}
 		# If the player hasn't been reminded once, tell them that their scheme has hit max opportunities.
@@ -11896,19 +11897,20 @@ ingratiate_family_scheme_prep_effect = {
 	}
 }
 
-prepare_fire_dromons_scheme_prep_effect = {
-	save_scope_as = scheme
-	save_scope_value_as = {
-		name = follow_up_event
-		value = event_id:scheme_critical_moments.8060
-	}
-	if = {
-		limit = {
-			NOT = { exists = scope:suppress_next_event }
-		}
-		scheme_owner = { trigger_event = scheme_critical_moments.0002 }
-	}
-}
+#L5R Disabled
+# prepare_fire_dromons_scheme_prep_effect = {
+# 	save_scope_as = scheme
+# 	save_scope_value_as = {
+# 		name = follow_up_event
+# 		value = event_id:scheme_critical_moments.8060
+# 	}
+# 	if = {
+# 		limit = {
+# 			NOT = { exists = scope:suppress_next_event }
+# 		}
+# 		scheme_owner = { trigger_event = scheme_critical_moments.0002 }
+# 	}
+# }
 
 ##################################################
 # AI Usage Critical Moment Effects — Contract Schemes

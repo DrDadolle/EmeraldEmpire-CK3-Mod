@@ -202,17 +202,18 @@
 		nation_fracturing_faction_modifiers = {
 			FACTION_TARGET = scope:target
 		}
+		#L5R Disabled
 		#House Hostility from Armenian tradition
-	    modifier = {
-			desc = "FACTION_REASON_HOUSE_HOSTILITY"
+	    # modifier = {
+		# 	desc = "FACTION_REASON_HOUSE_HOSTILITY"
 
-			scope:target.house ?= {
-				NOT = { this = root.house }
-			}
-			culture = { has_cultural_parameter = house_hostility_more_common }
+		# 	scope:target.house ?= {
+		# 		NOT = { this = root.house }
+		# 	}
+		# 	culture = { has_cultural_parameter = house_hostility_more_common }
 
-			factor = 1.25
-	    }
+		# 	factor = 1.25
+	    # }
 	}
 
 	can_character_join = {
@@ -283,17 +284,18 @@
 			liege.dynasty = { has_dynasty_perk = ce1_legitimacy_legacy_4 }
 			add = -35
 		}
+		#L5R Disabled
 		#House Hostility from Armenian tradition
-	    modifier = {
-			desc = "FACTION_REASON_HOUSE_HOSTILITY"
+	    # modifier = {
+		# 	desc = "FACTION_REASON_HOUSE_HOSTILITY"
 
-			scope:target.house ?= {
-				NOT = { this = root.house }
-			}
-			culture = { has_cultural_parameter = house_hostility_more_common }
+		# 	scope:target.house ?= {
+		# 		NOT = { this = root.house }
+		# 	}
+		# 	culture = { has_cultural_parameter = house_hostility_more_common }
 
-			factor = 1.25
-	    }
+		# 	factor = 1.25
+	    # }
 		#EP3 admin legitimacy event
 		modifier = {
 			desc = "FACTION_REASON_LOW_LEGITIMACY_CHALLENGER"

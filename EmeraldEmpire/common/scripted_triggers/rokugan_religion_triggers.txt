@@ -8,8 +8,17 @@ faith_is_good = {
 		text = faith_is_good
 		OR = {
 			religion = { is_in_family = rf_rokugan }
-			faith = { has_doctrine = tenet_rokugani_syncretism }
-			
+			faith = { has_doctrine = tenet_rokugani_syncretism }	
+		}
+	}
+}
+
+faith_is_not_good = {
+	custom_description = {
+		text = faith_is_not_good
+		OR = {
+			religion = { is_in_family = rf_rokugan }
+			faith = { has_doctrine = tenet_rokugani_syncretism }	
 		}
 	}
 }
@@ -18,6 +27,16 @@ faith_is_evil = {
 	custom_description = {
 		text = faith_is_evil
 		OR = {
+			religion = { is_in_family = rf_shadowlands }
+			faith = { has_doctrine = tenet_shadowlands_syncretism }
+		}
+	}
+}
+
+faith_is_not_evil = {
+	custom_description = {
+		text = faith_is_not_evil
+		NAND = {
 			religion = { is_in_family = rf_shadowlands }
 			faith = { has_doctrine = tenet_shadowlands_syncretism }
 		}

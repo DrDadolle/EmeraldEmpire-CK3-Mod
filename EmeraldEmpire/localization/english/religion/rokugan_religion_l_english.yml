@@ -31,9 +31,10 @@
  doctrine_parameter_is_rokugani_faith_hostile_desc:0 ""
  doctrine_parameter_is_rokugani_faith_evil_desc:0 ""
 
+# Deprecated ?
  special_doctrine_is_shadowlands_faith_name:0 "Veneration of Jigoku"
  special_doctrine_is_shadowlands_faith_desc:0 "Although all creatures in the [shadowlands|E] reveres the power of [jigoku|E], they have their own way to do so. Internal strife is common among them. However, they all agree that the Rokugani faiths are meant to be destroyed, by all means necessary"
- doctrine_parameter_hostility_override_tenet_shadowlands_syncretism:0 "Gaijin [faiths|E] with the $tenet_shadowlands_syncretism$ tenet are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
+ doctrine_parameter_hostility_override_tenet_shadowlands_syncretism:0 "Gaijin [faiths|E] with the $tenet_shadowlands_syncretism_name$ tenet are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
  doctrine_parameter_is_shadowlands_faith_righteous_desc:0 ""
  doctrine_parameter_is_shadowlands_faith_astray_desc:0 ""
  doctrine_parameter_is_shadowlands_faith_hostile_desc:0 ""
@@ -53,7 +54,9 @@
 
  tenet_shadowlands_syncretism_name:0 "Veneration of Jigoku"
  tenet_shadowlands_syncretism_desc:0 "There is a lot of way to venerate the evil power of [jigoku|E]. Even faiths outside of [rokugan|E] could venerate the twisted spirits of Jigoku."
- doctrine_parameter_doctrine_shadowlands_veneration_desc:0 ""
+ doctrine_parameter_hostility_override_special_doctrine_is_shadowlands_faith:1 "Shadowlands [faiths|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_shadowlands_syncretic_actor_opinion_active:0 ""
+ doctrine_parameter_opinion_of_shadowlands_syncretic_recipient_opinion_active:0 ""
 
  tenet_amaterasu_worship_name:0 "Sun Workship"
  tenet_amaterasu_worship_desc:0 "Amaterasu-ōmikami, also known as Lady Sun, is a Goddess of the Rokugani pantheon. The Sea of the Sun Goddess was named after her. Jade, the sacred stone, was said to be her tears."

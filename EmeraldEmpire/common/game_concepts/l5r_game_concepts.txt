@@ -98,6 +98,10 @@ shadowlands = {
 	parent = ningendo
 }	
 
+taint = {
+	parent = shadowlands
+}
+
 
 #########################
 ## Character Concepts ###

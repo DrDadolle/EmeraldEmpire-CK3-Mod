@@ -1026,30 +1026,30 @@ tribal.1015 = {
 # 	}
 # }
 
-# #They back out
-# tribal.1010 = {
-# 	type = character_event
-# 	title = tribal.1001.t
-# 	desc = tribal.1010.desc
-# 	theme = realm
-# 	left_portrait = {
-# 		character = scope:challenger
-# 		animation = fear
-# 	}
+#They back out
+tribal.1010 = {
+	type = character_event
+	title = tribal.1001.t
+	desc = tribal.1010.desc
+	theme = realm
+	left_portrait = {
+		character = scope:challenger
+		animation = fear
+	}
 
-# 	immediate = {
-# 		add_prestige = medium_prestige_gain
-# 		show_as_tooltip = {
-# 			scope:challenger = {
-# 				tribal_1001_challenger_backed_out_effect = yes
-# 			}
-# 		}
-# 	}
+	immediate = {
+		add_prestige = medium_prestige_gain
+		show_as_tooltip = {
+			scope:challenger = {
+				tribal_1001_challenger_backed_out_effect = yes
+			}
+		}
+	}
 
-# 	option = {
-# 		name = tribal.1010.a
-# 	}
-# }
+	option = {
+		name = tribal.1010.a
+	}
+}
 
 #	Bout has ended, inform affected parties.
 tribal.1021 = {

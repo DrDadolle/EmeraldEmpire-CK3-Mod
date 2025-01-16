@@ -147,9 +147,6 @@ invasion_of_crab_clan_cb = {
 					}
 				}
 			}
-
-			#Give scope:attacker some armies to ensure success & use up their free invasion.
-			spawn_army_invasion_crab_clan = yes
 		}
 	}	
 

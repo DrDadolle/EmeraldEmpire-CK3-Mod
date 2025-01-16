@@ -2979,7 +2979,8 @@ set_book_subject_effect = {
 									prowess >= high_skill_rating
 									has_trait = faith_warrior
 									has_trait = crusader_king
-									has_trait = viking
+									#L5R Disabled
+									# has_trait = viking
 									number_of_commander_traits >= 1
 								}
 							}

@@ -46,7 +46,9 @@ scripted_effect debug_sort_scheme_save_scopes_for_testing_effect = {
 			}
 			if = {
 				limit = { always = yes }
-				title:k_france.holder = { save_scope_as = assassin }
+				#L5R Modified
+				title:k_scorpion_clan.holder = { save_scope_as = assassin }
+				# title:k_france.holder = { save_scope_as = assassin }
 			}
 		}
 	}

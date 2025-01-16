@@ -857,12 +857,6 @@ scripted_effect ate_poisonous_plant_effect = {
 					left_icon = scope:poisonous_plant_eater
 					add_learning_lifestyle_xp = medium_lifestyle_xp
 				}
-				#L5R Added
-				# eating random plants in the shadowlands wtf
-				random_add_taint_effect_if_in_shadowlands_terrain = { 
-					CHANCE_OF_TAINT = 10 
-					VALUE_OF_TAINT = 5 
-				}
 			}
 		}
 		1 = {

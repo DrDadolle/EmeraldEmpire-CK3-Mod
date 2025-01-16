@@ -13,6 +13,22 @@ spawn_army_invasion_crab_clan = {
 			type = pit_oni
 			stacks = 10
 		}
+		men_at_arms = {
+			type = pit_oni
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 10
+		}
 		location = root.capital_province
 		uses_supply = no
 		war = scope:war
@@ -23,23 +39,12 @@ spawn_army_invasion_crab_clan = {
 		name = event_troop_default_name
 		levies = 1000
 		men_at_arms = {
-			type = pit_oni
-			stacks = 10
-		}
-		location = root.capital_province
-		uses_supply = no
-		inheritable = no
-	}
-	#one huge army to make people afraid
-	spawn_army = {
-		name = event_troop_default_name
-		levies = 5000
-		men_at_arms = {
 			type = light_footmen
 			stacks = 10
 		}
 		location = root.capital_province
 		uses_supply = no
+		war = scope:war
 		inheritable = no
 	}
 

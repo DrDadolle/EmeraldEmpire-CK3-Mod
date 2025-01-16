@@ -75,9 +75,11 @@ decision_invade_crab_clan = {
 			id = shadowlands_struggle.2000
 		}
 		hidden_effect = {
-			add_character_flag = declared_shadowlands_invasion_already
-			# Block it for 10 years, for immortal characters
-			years = 10
+			add_character_flag = {
+				flag =  declared_shadowlands_invasion_already
+				# Block it for 10 years, for immortal characters
+				years = 10
+			}
 		}
 
 		# The invasion_of_crab_clan_cb  on_declaration  create the army.

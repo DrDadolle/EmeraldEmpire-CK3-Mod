@@ -235,9 +235,7 @@ shadowlands_struggle.2000 = { # Invasion of Crab Clan
 	option = {
 		name = shadowlands_struggle.2000.a
 
-		show_as_tooltip = {
-			spawn_army_invasion_crab_clan = yes
-		}
+		spawn_army_invasion_crab_clan = yes
 
 		start_war = {
 			casus_belli = invasion_of_crab_clan_cb
@@ -543,7 +541,7 @@ shadowlands_struggle.2010 = {
 		stress_impact = {
 			craven = medium_stress_loss
 			brave = major_stress_gain
-			greedy = minuscule_stress_loss
+			greedy = minor_stress_loss
 		}
 		add_prestige = medium_prestige_loss
 		add_piety = minor_piety_loss
@@ -627,7 +625,7 @@ shadowlands_struggle.2011 = {
 		stress_impact = {
 			craven = medium_stress_loss
 			brave = major_stress_gain
-			greedy = minuscule_stress_loss
+			greedy = minor_stress_loss
 			vengeful = medium_stress_gain
 			ambitious = minor_stress_gain
 		}

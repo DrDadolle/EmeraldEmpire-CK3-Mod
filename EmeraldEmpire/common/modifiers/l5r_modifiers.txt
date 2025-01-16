@@ -1,4 +1,69 @@
-﻿offended_rokugan_modifier = {
+﻿
+@master_terrain_danger = -20
+@master_terrain_advantage = 5
+@master_terrain_max_roll = 1
+@master_terrain_min_roll = 1
+@master_terrain_use_mult = -0.25
+@master_terrain_attrition = -0.5
+
+master_terrain_shadowlands_forest_modifier = {
+	icon = camp_positive
+	shadowlands_forest_travel_danger = @master_terrain_danger
+	shadowlands_forest_advantage = @master_terrain_advantage
+	shadowlands_forest_max_combat_roll = @master_terrain_max_roll
+	shadowlands_forest_min_combat_roll = @master_terrain_min_roll
+	shadowlands_forest_provisions_use_mult = @master_terrain_use_mult
+	shadowlands_forest_cancel_negative_supply = yes
+	shadowlands_forest_attrition_mult = @master_terrain_attrition
+}
+
+master_terrain_shadowlands_plains_modifier = {
+	icon = camp_positive
+	shadowlands_plains_travel_danger = @master_terrain_danger
+	shadowlands_plains_advantage = @master_terrain_advantage
+	shadowlands_plains_max_combat_roll = @master_terrain_max_roll
+	shadowlands_plains_min_combat_roll = @master_terrain_min_roll
+	shadowlands_plains_provisions_use_mult = @master_terrain_use_mult
+	shadowlands_plains_cancel_negative_supply = yes
+	shadowlands_plains_attrition_mult = @master_terrain_attrition
+}
+
+master_terrain_shadowlands_hills_modifier = {
+	icon = camp_positive
+	shadowlands_hills_travel_danger = @master_terrain_danger
+	shadowlands_hills_advantage = @master_terrain_advantage
+	shadowlands_hills_max_combat_roll = @master_terrain_max_roll
+	shadowlands_hills_min_combat_roll = @master_terrain_min_roll
+	shadowlands_hills_provisions_use_mult = @master_terrain_use_mult
+	shadowlands_hills_cancel_negative_supply = yes
+	shadowlands_hills_attrition_mult = @master_terrain_attrition
+}
+
+master_terrain_shadowlands_mountains_modifier = {
+	icon = camp_positive
+	shadowlands_mountains_travel_danger = @master_terrain_danger
+	shadowlands_mountains_advantage = @master_terrain_advantage
+	shadowlands_mountains_max_combat_roll = @master_terrain_max_roll
+	shadowlands_mountains_min_combat_roll = @master_terrain_min_roll
+	shadowlands_mountains_provisions_use_mult = @master_terrain_use_mult
+	shadowlands_mountains_cancel_negative_supply = yes
+	shadowlands_mountains_attrition_mult = @master_terrain_attrition
+}
+
+master_terrain_shadowlands_wetlands_modifier = {
+	icon = camp_positive
+	shadowlands_wetlands_travel_danger = @master_terrain_danger
+	shadowlands_wetlands_advantage = @master_terrain_advantage
+	shadowlands_wetlands_max_combat_roll = @master_terrain_max_roll
+	shadowlands_wetlands_min_combat_roll = @master_terrain_min_roll
+	shadowlands_wetlands_provisions_use_mult = @master_terrain_use_mult
+	shadowlands_wetlands_cancel_negative_supply = yes
+	shadowlands_wetlands_attrition_mult = @master_terrain_attrition
+}
+
+###############
+### Other Modifiers
+offended_rokugan_modifier = {
 	icon = diplomacy_negative
 	rf_rokugan_opinion = -10
 }

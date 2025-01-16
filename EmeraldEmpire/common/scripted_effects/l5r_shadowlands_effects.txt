@@ -1,6 +1,6 @@
 ﻿add_taint_effect_if_in_shadowlands_terrain = {
 	if = {
-		limit = { is_shadowlands_terrain = yes }
+		limit = { location = { is_shadowlands_terrain = yes } }
 			if = {
 				limit = { NOT = { has_trait = tainted } }
 				add_trait = tainted 
@@ -17,7 +17,7 @@
 
 random_add_taint_effect_if_in_shadowlands_terrain = {
 	if = {
-		limit = { is_shadowlands_terrain = yes }
+		limit = { location = {  is_shadowlands_terrain = yes } } 
 		random = {
 		 	chance = $CHANCE_OF_TAINT$ 
 			if = {

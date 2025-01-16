@@ -1217,10 +1217,11 @@ contest_foot_aptitude_value = {
 		limit = { has_trait = strong }
 		add = 4
 	}
-	if = {
-		limit = { has_trait = viking }
-		add = 2
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = { has_trait = viking }
+	# 	add = 2
+	# }
 	if = {
 		limit = { has_trait = faith_warrior }
 		add = 2

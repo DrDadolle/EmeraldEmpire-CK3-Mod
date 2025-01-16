@@ -855,7 +855,7 @@
 			scope:recipient = {
 				has_trait = tainted
 				has_trait_xp = {
-					tait = tainted
+					trait = tainted
 					value >= 50
 				}
 			}
@@ -869,7 +869,7 @@
 			scope:recipient = {
 				has_trait = tainted
 				has_trait_xp = {
-					tait = tainted
+					trait = tainted
 					value >= 50
 				}
 			}

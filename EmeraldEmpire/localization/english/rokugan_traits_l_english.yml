@@ -40,9 +40,11 @@
  ###################
  ### SHADOWLANDS ###
  # Tainted
- trait_lifestyle_tainted:0 "Taint"
- trait_track_lifestyle_tainted:0 "Taint"
- trait_track_lifestyle_tainted_desc:0 "The Taint cannot be cured, it will always win."
+ trait_tainted:0 "Taint"
+ trait_tainted_desc:0 "This character is affected by the Taint, a spiritual corruption from the Shadowlands. With time, the grasp of Jigoku will become stronger on this character, resulting in physical and mental changes."
+ trait_tainted_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip]  is affected by the Taint, a spiritual corruption from the Shadowlands. With time, the grasp of Jigoku will become stronger on [ROOT.GetCharacter.GetFirstNameNoTooltip], resulting in physical and mental changes."
+ trait_track_tainted:0 "Taint"
+ trait_track_tainted_desc:0 "The Taint cannot be cured, it will always win."
  trait_tainted_1:0 "Lightly Tainted"
  trait_tainted_1_desc:0 "Cursed ty the Taint of the Shadowlands, the Lightly Tainted can still hope to live a normal life if they follow the proper treatment."
  trait_tainted_1_character_desc:0 "Cursed ty the Taint of the Shadowlands,[ROOT.GetCharacter.GetFirstNameNoTooltip] can still hope to live a normal life if [ROOT.GetCharacter.GetSheHe] follow the proper treatment."

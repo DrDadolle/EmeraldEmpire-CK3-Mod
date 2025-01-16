@@ -25,7 +25,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 # TO TEST
-- hot spring actyivity a bit too zoomed out when selecting it. Test it
 - Dakr Moto Tsume can get Cancer, and Incapable. Prevent this. Test it doesn't happens anymore
 - Added shadowlands_terrain in events triggers + add trait_tainted in some cases
 	- travel_danger_events.6030 for spoiled food
@@ -34,9 +33,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - TODO events travel check geographical_region
 - Test fix 
 	- Decision to tatoo => Wounded message in option incorrect for some reasons. Maybe because both the effect and the tooltip are random ?
-- test l5r_taint.0100 & l5r_taint.0110
-- test pulse events for taint !
-- test barons in shadowlands taint
 - test new drink tea of jade petals decision
 
 [22:01:00][E][jomini_script_system.cpp:284]: Script system error!

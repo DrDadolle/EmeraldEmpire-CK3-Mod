@@ -340,43 +340,45 @@ drink_tea_of_jade_petals = {
 		is_lowborn = no
 		is_landless_adventurer = no
 		has_trait = tainted
-		is_under_direct_e_rokugan_rule = yes
+		is_under_e_rokugan_rule = yes
 	}
 
 	is_valid = {
 		NOT = { has_character_modifier = tea_of_jade_petals_modifier }
 		# need good opinion of kuni daimyo or control the production itself
-		root = { faith_is_evil = no  }
+		root = { faith_is_not_evil = yes  }
 
 		trigger_if = { 
 			limit = { title:d_kuni = { exists = holder } }
-			title:d_kuni.holder = { faith_is_evil = no	}
 			title:d_kuni.holder = {
-				opinion = {
-					value >= 30
-					target = root
+				AND = {
+					faith_is_not_evil = yes
+					opinion = {
+						value >= 30
+						target = root
+					}
 				}
 			}
 		} 
 		trigger_else = {
 			OR = {
-				AND = {
-					title:c_adauchi_province.holder = { faith_is_evil = no	}
 					title:c_adauchi_province.holder = {
-						opinion = {
-							value >= 30
-							target = root
+						AND = {
+							faith_is_not_evil = yes
+							opinion = {
+								value >= 30
+								target = root
+							}
 						}
 					}
-				}
-				AND = {
-					title:c_midakai_province.holder = { faith_is_evil = no	}
 					title:c_midakai_province.holder = {
-						opinion = {
-							value >= 30
-							target = root
+						AND = {
+							faith_is_not_evil = yes
+							opinion = {
+								value >= 30
+								target = root
+							}
 						}
-					}
 				}
 			}
 		}

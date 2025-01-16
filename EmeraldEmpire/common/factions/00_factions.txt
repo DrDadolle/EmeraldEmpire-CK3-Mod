@@ -115,17 +115,18 @@
 			FACTION_TARGET = scope:target
 		}
 
+		#L5R Disabled
 		#House Hostility from Armenian tradition
-	    modifier = {
-			desc = "FACTION_REASON_HOUSE_HOSTILITY"
+	    # modifier = {
+		# 	desc = "FACTION_REASON_HOUSE_HOSTILITY"
 
-			scope:target.house ?= {
-				NOT = { this = root.house }
-			}
-			culture = { has_cultural_parameter = house_hostility_more_common }
+		# 	scope:target.house ?= {
+		# 		NOT = { this = root.house }
+		# 	}
+		# 	culture = { has_cultural_parameter = house_hostility_more_common }
 
-			factor = 1.25
-	    }
+		# 	factor = 1.25
+	    # }
 
 	    # EP3 - Grand Ambitions Story Cycle
 	    modifier = {
@@ -200,17 +201,18 @@
 
 	    struggle_faction_modifiers = yes
 
+		#L5R Disabled
 	    #House Hostility from Armenian tradition
-	    modifier = {
-			desc = "FACTION_REASON_HOUSE_HOSTILITY"
+	    # modifier = {
+		# 	desc = "FACTION_REASON_HOUSE_HOSTILITY"
 
-			scope:faction.faction_target.house ?= {
-				NOT = { this = root.house }
-			}
-			culture = { has_cultural_parameter = house_hostility_more_common }
+		# 	scope:faction.faction_target.house ?= {
+		# 		NOT = { this = root.house }
+		# 	}
+		# 	culture = { has_cultural_parameter = house_hostility_more_common }
 
-			factor = 1.25
-	    }
+		# 	factor = 1.25
+	    # }
 		#EP3 admin legitimacy event
 		modifier = {
 			desc = "FACTION_REASON_LOW_LEGITIMACY_CHALLENGER"
@@ -708,17 +710,18 @@ liberty_faction = {
 		liberty_faction_modifiers = {
 			FACTION_TARGET = scope:target
 		}
+		#L5R Disabled
 		#House Hostility from Armenian tradition
-	    modifier = {
-			desc = "FACTION_REASON_HOUSE_HOSTILITY"
+	    # modifier = {
+		# 	desc = "FACTION_REASON_HOUSE_HOSTILITY"
 
-			scope:target.house ?= {
-				NOT = { this = root.house }
-			}
-			culture = { has_cultural_parameter = house_hostility_more_common }
+		# 	scope:target.house ?= {
+		# 		NOT = { this = root.house }
+		# 	}
+		# 	culture = { has_cultural_parameter = house_hostility_more_common }
 
-			factor = 1.25
-	    }		
+		# 	factor = 1.25
+	    # }		
 	}
 
 	ai_join_score = {
@@ -749,17 +752,18 @@ liberty_faction = {
 
 		struggle_faction_modifiers = yes
 
+		#L5R Disabled
 		#House Hostility from Armenian tradition
-	    modifier = {
-			desc = "FACTION_REASON_HOUSE_HOSTILITY"
+	    # modifier = {
+		# 	desc = "FACTION_REASON_HOUSE_HOSTILITY"
 
-			scope:faction.faction_target.house ?= {
-				NOT = { this = root.house }
-			}
-			culture = { has_cultural_parameter = house_hostility_more_common }
+		# 	scope:faction.faction_target.house ?= {
+		# 		NOT = { this = root.house }
+		# 	}
+		# 	culture = { has_cultural_parameter = house_hostility_more_common }
 
-			factor = 1.25
-	    }
+		# 	factor = 1.25
+	    # }
 		#EP3 admin legitimacy event
 		modifier = {
 			desc = "FACTION_REASON_LOW_LEGITIMACY_CHALLENGER"

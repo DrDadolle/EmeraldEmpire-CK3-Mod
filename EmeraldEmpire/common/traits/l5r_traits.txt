@@ -719,7 +719,7 @@ kami_descendant = {
 ## Shadowlands traits
 ###############################
 tainted = {
-	category = physical
+	category = health
 	
 	birth=0.0 # 0.0% chance de be born with this trait 
 	random_creation= 0.0 # 0.0% of new character have this ??
