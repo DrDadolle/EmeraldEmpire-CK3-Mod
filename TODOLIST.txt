@@ -55,10 +55,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 
 ## CK3 1.13.* patch
 -Only B8G8R8A8_UNORM support so far. => Wrong color encoding
-- Replace the conquer cassus belli internal by the AGOT Neighbour CB ?
 - Add à la AGOT an event when emperor dies "Succession of the Iron Throne" title event
+- Replace the conquer cassus belli internal by the AGOT Neighbour CB ?
 - update vanilla travel background for acitivites to add shadowlands bg
 	- graphical_shadowlands_trigger = yes
+- More baronnies in spice & silk islands
+	- Some more Shinoment county as well for nezumi
 - New Shadowlands stuff
 	- up ishigaki bridge a little
 	- move down yukiko 13 & forgotten 13 bridge
@@ -71,13 +73,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Add thumbnail image for the mod !
 - add images for mma
 - Why people can be eunuch ?! wtf even Dark Moto Tsume ?! 
-- More baronnies in spice & silk islands
 - Update activites terrain with shadowlands, as well as activity_backgrounds.txt
 - for namelists, use "dynasty_name_first = yes" flag for L5R ??? Avoid doing all the weird stuff in name
 -Nezumi shinomen placement TODO
 	- religion nezumi icon
 	- How to prevent crab to annihilate Nezumis ? The faith is "hostile" after all
-	- Add new ending to Struggle Shadowlands ? For Nezumis ?
 	
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)
@@ -157,10 +157,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Special naming convention for Kamis (no first name)
 - Integrate "Border Disputes" mod ?
 - More mythical creatures for artifact_custom_loc.txt ?
-- Add "minor clothes" probability to Great Clan clothes to have more variety of clothing styles
-- Blood feud (like Matsu vs Kakita)	: https://steamcommunity.com/sharedfiles/filedetails/?id=2914047110. Need the Friends & Foes DLC sadly...
-	- shogunate_bookmark_events.txt/shogunate_bookmark.8300/shogunate_historical_feud_effect => shogunate_bookmark_effects/shogunate_bookmark.8310
-	- add more events? Duels ?
 - Add modifiers to dynasties to prove their link to great clans ????
 - genes & ethnicities
 - Add river map (more ?)
