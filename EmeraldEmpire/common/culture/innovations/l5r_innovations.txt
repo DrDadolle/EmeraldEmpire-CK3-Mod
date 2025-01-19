@@ -78,9 +78,9 @@ innovation_unicorn_steeds = {
     icon = @maa_01
 
     potential = {
-		OR = {
+		# OR = {
 			has_cultural_pillar = heritage_unicorn
-		}
+		# }
 	}
 
     unlock_maa = unicorn_utaku_maiden

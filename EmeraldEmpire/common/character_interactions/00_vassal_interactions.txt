@@ -681,13 +681,13 @@ retract_vassal_interaction = {
 		# 	}
 		# 	add = 500
 		# }
-		modifier = {
-			add = -25
-			scope:recipient = {
-				culture = { has_cultural_parameter = vassals_more_likely_to_refuse_demands }
-			}
-			desc = VASSALS_REFUSAL_indomitable_azatani
-		}
+		# modifier = {
+		# 	add = -25
+		# 	scope:recipient = {
+		# 		culture = { has_cultural_parameter = vassals_more_likely_to_refuse_demands }
+		# 	}
+		# 	desc = VASSALS_REFUSAL_indomitable_azatani
+		# }
 	}
 
 	#Use hook
@@ -2198,16 +2198,17 @@ pardon_interaction = {
 
 	desc = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:actor = {
-						culture = {
-							has_cultural_parameter = pardoning_gives_prestige
-						}
-					}
-				}
-				desc = pardon_interaction_has_jirga_desc
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:actor = {
+			# 			culture = {
+			# 				has_cultural_parameter = pardoning_gives_prestige
+			# 			}
+			# 		}
+			# 	}
+			# 	desc = pardon_interaction_has_jirga_desc
+			# }
 			desc = pardon_interaction_desc
 		}
 	}
@@ -2236,14 +2237,15 @@ pardon_interaction = {
 		}
 
 		scope:actor = {
-			if = {
-				limit = {
-					culture = {
-						has_cultural_parameter = pardoning_gives_prestige
-					}
-				}
-				add_prestige = minor_prestige_gain
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		culture = {
+			# 			has_cultural_parameter = pardoning_gives_prestige
+			# 		}
+			# 	}
+			# 	add_prestige = minor_prestige_gain
+			# }
 
 			#L5R Disabled
 			# hidden_effect = {

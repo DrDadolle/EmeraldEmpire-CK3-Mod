@@ -28,10 +28,10 @@ unicorn_utaku_maiden = {
 	pursuit = 20
 	screen = 10
 	
-	can_recruit = {
-		culture = { has_cultural_pillar = heritage_unicorn }
-   }
-   # Locked by an innovation ?
+# 	can_recruit = {
+# 		culture = { has_cultural_pillar = heritage_unicorn }
+#    }
+   # Locked by an innovation innovation_unicorn_steeds
 
 
    counters = {

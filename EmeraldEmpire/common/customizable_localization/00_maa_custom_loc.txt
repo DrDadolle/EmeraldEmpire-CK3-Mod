@@ -170,10 +170,11 @@ GetRegionalCavalryMAA = {
 	# 	trigger = { culture = { has_innovation = innovation_valets } } #Gendarme - Later Era MAA
 	# 	localization_key = gendarme
 	# }
-	text = {
-		trigger = { culture = { has_cultural_parameter = unlock_maa_ayrudzi } }
-		localization_key = ayrudzi
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { culture = { has_cultural_parameter = unlock_maa_ayrudzi } }
+	# 	localization_key = ayrudzi
+	# }
 	text = {
 		trigger = { culture = { has_cultural_parameter = unlock_maa_conrois } }
 		localization_key = conrois

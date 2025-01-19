@@ -2870,11 +2870,12 @@ bp1_yearly.5602 = {
 	option = {
 		name = bp1_yearly.5602.b
 
-		trigger = { #Unavailable for Muslims
-			NOT = {
-				root.religion = religion:islam_religion
-			}
-		}
+		#L5R Disabled
+		# trigger = { #Unavailable for Muslims
+		# 	NOT = {
+		# 		root.religion = religion:islam_religion
+		# 	}
+		# }
 
 		add_character_modifier = {
 			modifier = bp1_well_fed_pigs_modifier

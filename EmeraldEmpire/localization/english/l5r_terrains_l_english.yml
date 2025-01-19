@@ -42,3 +42,15 @@
 # Events
  religious_decision.0201.shadowlands:0 "The nightmarish, corrupted wastelands of [shadowlands_plains_location.GetNameNoTier]."
  religious_decision.0211.desc.beginning.shadowlands:0 "The murmuring kansen of the [ROOT.Char.GetCurrentActivity.GetLocation.GetName] shadowlands provided an inner turmoil for me to discover."
+
+# Wanderer Lifestyle
+ master_terrain_shadowlands_plains_decision: "Shadowlands Plains"
+ master_terrain_shadowlands_plains_tooltip: "" # This and following tooltips intentionally empty
+ master_terrain_shadowlands_hills_decision: "Shadowlands Hills"
+ master_terrain_shadowlands_hills_terrain_tooltip: "" 
+ master_terrain_shadowlands_mountains_decision: "Shadowlands Mountains"
+ master_terrain_shadowlands_mountains_terrain_tooltip: "" 
+ master_terrain_shadowlands_forest_decision: "Shadowlands Forest"
+ master_terrain_shadowlands_forest_terrain_tooltip: "" 
+ master_terrain_shadowlands_wetlands_decision: "Shadowlands Wetlands"
+ master_terrain_shadowlands_wetlands_terrain_tooltip: "" 

@@ -112,13 +112,16 @@ ep3_07_kingdom_of_heaven_achievement = {
 # 08. New Management, same as the Old Management
 ep3_08_new_management_achievement = {
 	possible = {
-		
+		#L5R Disabled
+		always = no
 	}
 	happened = {
-		custom_description = {
-			text = new_management_achievement_trigger
-			exists = global_var:finished_new_management_achievement
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = new_management_achievement_trigger
+		# 	exists = global_var:finished_new_management_achievement
+		# }
 	}
 }
 

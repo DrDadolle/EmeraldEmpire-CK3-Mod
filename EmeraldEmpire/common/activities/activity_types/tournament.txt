@@ -598,17 +598,18 @@
     	        desc = "Apocalyptic Plague in Top Realm"
     	    }
     	}
+		#L5R Disabled
     	#we don't want the Pope to host tournaments
-    	if = {
-    		limit = {
-    			government_has_flag = government_is_theocracy
-    			has_title = title:k_papal_state
-    		}
-    		add = {
-    			value = -1000
-    			desc = "Is Pope"
-    		}
-    	}
+    	# if = {
+    	# 	limit = {
+    	# 		government_has_flag = government_is_theocracy
+    	# 		has_title = title:k_papal_state
+    	# 	}
+    	# 	add = {
+    	# 		value = -1000
+    	# 		desc = "Is Pope"
+    	# 	}
+    	# }
 		if = {
 			limit = {
 				is_ai = yes
