@@ -1650,12 +1650,16 @@
 # regalia_clothes
 	regalia_clothes_cloak = {
 		group = regalia_clothes
-		trigger = { artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe } }
+		#L5R Disabled
+		trigger = { always = no }
+		# trigger = { artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe } }
 		weight = 100
 	}
 	regalia_clothes_robe = {
 		group = regalia_clothes
-		trigger = { NOT = { artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe } } }
+		#L5R Disabled
+		trigger = { always = yes }
+		# trigger = { NOT = { artifact_region_trigger = { CHARACTER = scope:owner REGION = world_europe } } }
 		weight = 100
 	}
 

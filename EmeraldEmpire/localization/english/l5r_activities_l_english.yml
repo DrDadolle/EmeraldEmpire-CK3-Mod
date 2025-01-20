@@ -8,7 +8,7 @@
  activity_l5r_hot_springs_visit_desc:0 "There are many onsen in this world, and I am fortunate enough to live close to one. I should visit it to destress and take my mind off the worries of everyday life."
  activity_l5r_hot_springs_visit_selection_tooltip: "Relax at a local onsen."
  activity_l5r_hot_springs_visit_host_desc: "\n$BULLET_WITH_TAB$Lose [stress_loss_i|E] [stress|E]\n$BULLET_WITH_TAB$Other possible benefits depending on location"
-#  activity_l5r_hot_springs_visit_guest_desc: "$activity_l5r_hot_springs_visit_host_desc$"
+  activity_l5r_hot_springs_visit_guest_desc: "$activity_l5r_hot_springs_visit_host_desc$"
 #  activity_l5r_hot_springs_visit_province_minor: "\n#N - The onsen here aren't as well-known, but should still suffice as a place for relaxation.#!\n#weak This will lead to less [stress_loss_i|E] [stress|E] loss, and no special bonuses, compared to more well-known onsen."
 #   activity_l5r_hot_springs_visit_province_medium: "\n#N - The onsen here are well-known to the local population, will suffice as a place for relaxation.#!\n#weak This will lead to [stress_loss_i|E] [stress|E] loss, and no special bonuses, compared to more well-known onsen."
 #  activity_l5r_hot_springs_visit_province_major: "\n#N - The onsen here are well-known, used for centuries by various people.#!\n#weak This will lead to more [stress_loss_i|E] [stress|E] loss, and special bonuses."

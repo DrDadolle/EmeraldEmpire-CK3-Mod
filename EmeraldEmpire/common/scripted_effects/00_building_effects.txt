@@ -1945,10 +1945,11 @@ destroy_random_estate_building_effect = {
 					limit = { has_domicile_building_or_higher = camel_pasture_04 }
 					destroy_or_downgrade_estate_building_3_6_replacement_effect = { BUILDING = camel_pasture }
 				}
-				else_if = {
-					limit = { has_domicile_building_or_higher = elephant_pasture_04 }
-					destroy_or_downgrade_estate_building_3_6_replacement_effect = { BUILDING = elephant_pasture }
-				}
+				#L5R Disabled
+				# else_if = {
+				# 	limit = { has_domicile_building_or_higher = elephant_pasture_04 }
+				# 	destroy_or_downgrade_estate_building_3_6_replacement_effect = { BUILDING = elephant_pasture }
+				# }
 				else = {
 					destroy_or_downgrade_estate_building_6_effect = { BUILDING = grazing_land }
 				}
