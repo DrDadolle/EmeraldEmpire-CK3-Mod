@@ -7089,15 +7089,16 @@ court_jester_court_position = {
 			}
 		}
 		add = court_position_aptitude_traveling_friends_value
-		if = { # ep3_emperor_yearly.2090
-			limit = {
-				has_character_flag = famous_mime_court
-			}
-			add = {
-				value = 30
-				desc = court_position_famous_mime
-			}
-		}
+		#L5R Disabled
+		# if = { # ep3_emperor_yearly.2090
+		# 	limit = {
+		# 		has_character_flag = famous_mime_court
+		# 	}
+		# 	add = {
+		# 		value = 30
+		# 		desc = court_position_famous_mime
+		# 	}
+		# }
 		add = court_position_aptitude_eunuch_tradition_value
 		add = court_position_aptitude_family_business_value
 		add = court_position_aptitude_high_penalty_value

@@ -1736,9 +1736,10 @@
 						scope:activity = { progress_activity_phase_after = { months = 3 } }
 					# }
 
-					scope:activity = {
-						set_variable = at_pilgrimage_destination
-					}
+					#L5R Disabled
+					# scope:activity = {
+					# 	set_variable = at_pilgrimage_destination
+					# }
 
 					#Boost short pilgrimages a bit so they don't always get shafted
 					account_for_pilgrimage_length_type_effect = yes

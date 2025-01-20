@@ -162,14 +162,16 @@ GetAnimalType = {
 		trigger = { var:animal_type ?= flag:egret }
 		localization_key = animal_type_egret
 	}
-	text = {
-		trigger = { var:animal_type ?= flag:pelican }
-		localization_key = animal_type_pelican
-	}
-	text = {
-		trigger = { var:animal_type ?= flag:flamingo }
-		localization_key = animal_type_flamingo
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:animal_type ?= flag:pelican }
+	# 	localization_key = animal_type_pelican
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:animal_type ?= flag:flamingo }
+	# 	localization_key = animal_type_flamingo
+	# }
 
 	### WATER ###
 	text = {
@@ -1127,7 +1129,8 @@ GetAnimalFeature = {
 				var:animal_type ?= flag:duck
 				var:animal_type ?= flag:goose
 				var:animal_type ?= flag:swan
-				var:animal_type ?= flag:pelican
+				#L5R Disabled
+				# var:animal_type ?= flag:pelican
 			}
 		}
 		localization_key = hunt_animal_feature_bill
@@ -1147,7 +1150,8 @@ GetAnimalFeature = {
 				var:animal_type ?= flag:heron
 				var:animal_type ?= flag:egret
 				var:animal_type ?= flag:stork
-				var:animal_type ?= flag:flamingo
+				#L5R Disabled
+				# var:animal_type ?= flag:flamingo
 			}
 		}
 		localization_key = hunt_animal_feature_long_legs
@@ -1258,7 +1262,8 @@ GetAnimalFeatureKill = {
 				var:kill_animal_type = flag:duck
 				var:kill_animal_type = flag:goose
 				var:kill_animal_type = flag:swan
-				var:kill_animal_type = flag:pelican
+				#L5R Disabled
+				# var:kill_animal_type = flag:pelican
 			}
 		}
 		localization_key = hunt_animal_feature_bill
@@ -1278,7 +1283,8 @@ GetAnimalFeatureKill = {
 				var:kill_animal_type = flag:heron
 				var:kill_animal_type = flag:egret
 				var:kill_animal_type = flag:stork
-				var:kill_animal_type = flag:flamingo
+				#L5R Disabled
+				# var:kill_animal_type = flag:flamingo
 			}
 		}
 		localization_key = hunt_animal_feature_long_legs
@@ -1359,15 +1365,16 @@ GetAnimalGroup = {
 		localization_key = hunt_animal_group_siege
 	}
 
-	text = {
-		trigger = { var:animal_type ?= flag:flamingo }
-		localization_key = hunt_animal_group_stand
-	}
-
-	text = {
-		trigger = { var:animal_type ?= flag:pelican }
-		localization_key = hunt_animal_group_pod
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:animal_type ?= flag:flamingo }
+	# 	localization_key = hunt_animal_group_stand
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:animal_type ?= flag:pelican }
+	# 	localization_key = hunt_animal_group_pod
+	# }
 
 	text = {
 		trigger = { var:animal_type ?= flag:goose }
@@ -1490,15 +1497,16 @@ GetAnimalGroupPlural = {
 		localization_key = hunt_animal_group_siege_plural
 	}
 
-	text = {
-		trigger = { var:animal_type ?= flag:flamingo }
-		localization_key = hunt_animal_group_stand_plural
-	}
-
-	text = {
-		trigger = { var:animal_type ?= flag:pelican }
-		localization_key = hunt_animal_group_pod_plural
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:animal_type ?= flag:flamingo }
+	# 	localization_key = hunt_animal_group_stand_plural
+	# }
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:animal_type ?= flag:pelican }
+	# 	localization_key = hunt_animal_group_pod_plural
+	# }
 
 	text = {
 		trigger = { var:animal_type ?= flag:goose }
@@ -2120,7 +2128,8 @@ GetAnimalColor = {
 			}
 			trigger_else = {
 				OR = {
-					var:animal_type ?= flag:pelican
+					#L5R Disabled
+					# var:animal_type ?= flag:pelican
 					var:animal_type ?= flag:stork
 					var:animal_type ?= flag:heron
 					var:animal_type ?= flag:crane
@@ -2217,10 +2226,11 @@ GetAnimalColor = {
 		localization_key = fur_color_tawny
 	}
 
-	text = { # Pink
-		trigger = { var:animal_type ?= flag:flamingo }
-		localization_key = fur_color_pink
-	}
+	#L5R Disabled
+	# text = { # Pink
+	# 	trigger = { var:animal_type ?= flag:flamingo }
+	# 	localization_key = fur_color_pink
+	# }
 }
 
 ### ANIMAL MALE ###

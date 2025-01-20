@@ -480,8 +480,9 @@ hunt_activity_exotic_bird_trigger = {
 		$VAR$ ?= flag:crane
 		$VAR$ ?= flag:heron
 		$VAR$ ?= flag:egret
-		$VAR$ ?= flag:flamingo
-		$VAR$ ?= flag:pelican
+		#L5R Disabled
+		# $VAR$ ?= flag:flamingo
+		# $VAR$ ?= flag:pelican
 	}
 }
 
@@ -499,8 +500,9 @@ hunt_activity_bird_trigger = {
 		$VAR$ ?= flag:crane
 		$VAR$ ?= flag:heron
 		$VAR$ ?= flag:egret
-		$VAR$ ?= flag:flamingo
-		$VAR$ ?= flag:pelican
+		#L5R Disabled
+		# $VAR$ ?= flag:flamingo
+		# $VAR$ ?= flag:pelican
 	}
 }
 

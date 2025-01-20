@@ -254,7 +254,7 @@ shadowlands_struggle.2000 = { # Invasion of Crab Clan
 		animation = personality_callous
 	}
 	right_portrait = {
-		character = character:crab_clan
+		character = scope:crab_clan
 		animation = anger
 	}
 

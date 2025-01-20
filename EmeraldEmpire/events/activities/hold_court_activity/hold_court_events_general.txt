@@ -16771,7 +16771,8 @@ hold_court.8090 = {
 				trigger = {
 					OR = {
 						scope:vassal.var:target_court_position = flag:bodyguard
-						scope:vassal.var:target_court_position = flag:akolouthos
+						#L5R Disabled
+						# scope:vassal.var:target_court_position = flag:akolouthos
 					}
 					has_relation_soulmate = scope:vassal
 				}
@@ -16781,7 +16782,8 @@ hold_court.8090 = {
 				trigger = {
 					OR = {
 						scope:vassal.var:target_court_position = flag:bodyguard
-						scope:vassal.var:target_court_position = flag:akolouthos
+						#L5R Disabled
+						# scope:vassal.var:target_court_position = flag:akolouthos
 					}
 					has_relation_lover = scope:vassal
 				}
@@ -16791,7 +16793,8 @@ hold_court.8090 = {
 				trigger = {
 					OR = {
 						scope:vassal.var:target_court_position = flag:bodyguard
-						scope:vassal.var:target_court_position = flag:akolouthos
+						#L5R Disabled
+						# scope:vassal.var:target_court_position = flag:akolouthos
 					}
 					has_relation_best_friend = scope:vassal
 				}
@@ -16801,7 +16804,8 @@ hold_court.8090 = {
 				trigger = {
 					OR = {
 						scope:vassal.var:target_court_position = flag:bodyguard
-						scope:vassal.var:target_court_position = flag:akolouthos
+						#L5R Disabled
+						# scope:vassal.var:target_court_position = flag:akolouthos
 					}
 					has_relation_friend = scope:vassal
 				}
@@ -16811,7 +16815,8 @@ hold_court.8090 = {
 				trigger = {
 					OR = {
 						scope:vassal.var:target_court_position = flag:champion
-						scope:vassal.var:target_court_position = flag:garuda
+						#L5R Disabled
+						# scope:vassal.var:target_court_position = flag:garuda
 					}
 					scope:vassal = { has_trait = lifestyle_blademaster }
 				}
@@ -16915,20 +16920,22 @@ hold_court.8090 = {
 				}
 				desc = hold_court_8090_interest_emissary
 			}
-			triggered_desc = {
-				trigger = {
-					scope:vassal.var:target_court_position = flag:chief_qadi
-					scope:vassal = { has_trait = scholar }
-				}
-				desc = hold_court_8090_interest_qadi
-			}
-			triggered_desc = {
-				trigger = {
-					scope:vassal.var:target_court_position = flag:garuda
-					scope:vassal = { has_trait = lifestyle_blademaster }
-				}
-				desc = hold_court_8090_interest_garuda
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:vassal.var:target_court_position = flag:chief_qadi
+			# 		scope:vassal = { has_trait = scholar }
+			# 	}
+			# 	desc = hold_court_8090_interest_qadi
+			# }
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:vassal.var:target_court_position = flag:garuda
+			# 		scope:vassal = { has_trait = lifestyle_blademaster }
+			# 	}
+			# 	desc = hold_court_8090_interest_garuda
+			# }
 			triggered_desc = {
 				trigger = {
 					scope:vassal.var:target_court_position = flag:keeper_of_swans
@@ -17117,7 +17124,8 @@ hold_court.8090 = {
 			trigger = {
 				OR = {
 					scope:vassal.var:target_court_position = flag:bodyguard
-					scope:vassal.var:target_court_position = flag:akolouthos
+					#L5R Disabled
+					# scope:vassal.var:target_court_position = flag:akolouthos
 				}
 				has_relation_soulmate = scope:vassal
 			}
@@ -17127,7 +17135,8 @@ hold_court.8090 = {
 			trigger = {
 				OR = {
 					scope:vassal.var:target_court_position = flag:bodyguard
-					scope:vassal.var:target_court_position = flag:akolouthos
+					#L5R Disabled
+					# scope:vassal.var:target_court_position = flag:akolouthos
 				}
 				has_relation_lover = scope:vassal
 			}
@@ -17173,7 +17182,8 @@ hold_court.8090 = {
 				}
 				OR = {
 					scope:vassal.var:target_court_position = flag:bodyguard
-					scope:vassal.var:target_court_position = flag:akolouthos
+					#L5R Disabled
+					# scope:vassal.var:target_court_position = flag:akolouthos
 					scope:vassal.var:target_court_position = flag:lady_in_waiting
 				}
 			}

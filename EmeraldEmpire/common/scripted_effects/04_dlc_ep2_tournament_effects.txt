@@ -5603,12 +5603,13 @@ tournament_horse_race_fetch_horse_effect = {
 										}
 										set_variable = { name = contest_horse_race_name value = flag:berserker }
 									}
-									5 = {
-										trigger = {
-											faith = { has_doctrine_parameter = great_holy_wars_active }
-										}
-										set_variable = { name = contest_horse_race_name value = flag:crusader }
-									}
+									#L5R Disabled
+									# 5 = {
+									# 	trigger = {
+									# 		faith = { has_doctrine_parameter = great_holy_wars_active }
+									# 	}
+									# 	set_variable = { name = contest_horse_race_name value = flag:crusader }
+									# }
 									5 = {
 										set_variable = { name = contest_horse_race_name value = flag:commander }
 									}

@@ -1582,10 +1582,11 @@ court_yearly.5001 = {
 							scope:story = { story_type = story_cycle_pet_cat }
 							has_character_modifier = cat_story_allergy_modifier
 						}
-						AND = {
-							scope:story = { story_type = story_cycle_pet_dog }
-							faith = { religion_tag = islam_religion }
-						}
+						#L5R Disabled
+						# AND = {
+						# 	scope:story = { story_type = story_cycle_pet_dog }
+						# 	faith = { religion_tag = islam_religion }
+						# }
 					}
 				}
 				add_opinion = {

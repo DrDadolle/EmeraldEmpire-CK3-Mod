@@ -105,8 +105,9 @@ fp1_is_in_scandinavia_or_colonies = {
 }
 
 fp1_remove_stele_new_holder_trigger = {
+	#L5R Disabled
 	# Is there a rogue stone around?
-	$TITLE$ = { exists = var:stele_commissioner }
+	# $TITLE$ = { exists = var:stele_commissioner }
 	# And would the new holder want to tear down the stele?
 	$NEW_HOLDER$ = {
 		OR = {

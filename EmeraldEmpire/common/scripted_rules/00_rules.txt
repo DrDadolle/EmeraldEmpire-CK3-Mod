@@ -73,12 +73,13 @@ faith_creation = {
 			}
 		}
 
-		custom_tooltip = {
-			text = faith_reformation_via_decision
-			faith = {
-				NOT = { has_variable = block_reformation_var }
-			}
-		}
+		#L5R Disabled
+		# custom_tooltip = {
+		# 	text = faith_reformation_via_decision
+		# 	faith = {
+		# 		NOT = { has_variable = block_reformation_var }
+		# 	}
+		# }
 	}
 }
 

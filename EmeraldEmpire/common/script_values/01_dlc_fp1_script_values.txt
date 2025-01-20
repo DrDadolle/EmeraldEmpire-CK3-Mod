@@ -359,11 +359,12 @@ raise_stele_variant_promotion_value = {
 fp1_stele_duration_value = {
 	value = 50
 
+	#L5R Disabled
 	# Tone the power down for promotion stelae, as they're quite powerful.
-	if = {
-		limit = { scope:stele_type = flag:promotion }
-		add = -30
-	}
+	# if = {
+	# 	limit = { scope:stele_type = flag:promotion }
+	# 	add = -30
+	# }
 }
 
 fp1_stele_desc_normal_weight_value = 1
