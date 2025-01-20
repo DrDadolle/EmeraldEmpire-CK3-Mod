@@ -7201,21 +7201,22 @@ court_jester_court_position = {
 					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
 				}
 			}
-			if = {
-				limit = {
-					scope:liege = {
-						employs_court_position = court_jester_court_position
-						any_court_position_holder = {
-					        type = court_jester_court_position
-					        has_variable = king_of_fools_var
-						}
-					}
-				}
-				multiply = {
-					value = 0.25
-					desc = king_of_fools_salary
-				}
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		scope:liege = {
+			# 			employs_court_position = court_jester_court_position
+			# 			any_court_position_holder = {
+			# 		        type = court_jester_court_position
+			# 		        has_variable = king_of_fools_var
+			# 			}
+			# 		}
+			# 	}
+			# 	multiply = {
+			# 		value = 0.25
+			# 		desc = king_of_fools_salary
+			# 	}
+			# }
 			if = {
 				limit = {
 					scope:liege = {

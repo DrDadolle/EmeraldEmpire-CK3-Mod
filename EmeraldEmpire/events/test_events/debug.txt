@@ -1204,7 +1204,7 @@ debug.322 = {
 		set_variable = { name = book_artifact_topic value = flag:stewardship_trade_routes days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:stewardship_lawmaking days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:stewardship_best_practices_tax_collectors days = 1 }
-		set_variable = { name = book_artifact_topic value = flag:digest days = 1 }
+		# set_variable = { name = book_artifact_topic value = flag:digest days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:architect days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:speculum days = 1 }
 		set_variable = { name = book_artifact_topic value = flag:admin days = 1 }

@@ -1278,15 +1278,16 @@ found_witch_coven_decision_effects = {
 			modifier = witch_coven
 		}
 	}
+	#L5R Disabled
 	# Check for the Volva achievement.
-	if = {
-		limit = {
-			# DLC check.
-			has_fp1_dlc_trigger = yes
-			fp1_achievement_religious_norse_trigger = yes
-		}
-		add_achievement_flag_effect = { FLAG = volva_achievement_flag }
-	}
+	# if = {
+	# 	limit = {
+	# 		# DLC check.
+	# 		has_fp1_dlc_trigger = yes
+	# 		fp1_achievement_religious_norse_trigger = yes
+	# 	}
+	# 	add_achievement_flag_effect = { FLAG = volva_achievement_flag }
+	# }
 }
 
 convert_whole_realm_to_feudalism_effect = {

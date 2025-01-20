@@ -2057,14 +2057,15 @@ GetTargetCourtPosition = {
 		trigger = { var:target_court_position ?= flag:cultural_emissary }
 		localization_key = court_position_emissary
 	}
-	text = {
-		trigger = { var:target_court_position ?= flag:chief_qadi }
-		localization_key = court_position_qadi
-	}
-	text = {
-		trigger = { var:target_court_position ?= flag:garuda }
-		localization_key = court_position_garuda
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:target_court_position ?= flag:chief_qadi }
+	# 	localization_key = court_position_qadi
+	# }
+	# text = {
+	# 	trigger = { var:target_court_position ?= flag:garuda }
+	# 	localization_key = court_position_garuda
+	# }
 	text = {
 		trigger = { var:target_court_position ?= flag:keeper_of_swans }
 		localization_key = court_position_keeper_of_swans
@@ -2073,10 +2074,11 @@ GetTargetCourtPosition = {
 		trigger = { var:target_court_position ?= flag:travel_leader }
 		localization_key = court_position_travel_leader
 	}
-	text = {
-		trigger = { var:target_court_position ?= flag:akolouthos }
-		localization_key = court_position_akolouthos
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:target_court_position ?= flag:akolouthos }
+	# 	localization_key = court_position_akolouthos
+	# }
 	text = {
 		trigger = { var:target_court_position ?= flag:chronicler }
 		localization_key = court_position_chronicler
@@ -2178,14 +2180,15 @@ GetTargetCourtPositionDesc = {
 		trigger = { var:target_court_position = flag:cultural_emissary }
 		localization_key = court_position_desc_emissary
 	}
-	text = {
-		trigger = { var:target_court_position = flag:chief_qadi }
-		localization_key = court_position_desc_qadi
-	}
-	text = {
-		trigger = { var:target_court_position = flag:garuda }
-		localization_key = court_position_desc_garuda
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:target_court_position = flag:chief_qadi }
+	# 	localization_key = court_position_desc_qadi
+	# }
+	# text = {
+	# 	trigger = { var:target_court_position = flag:garuda }
+	# 	localization_key = court_position_desc_garuda
+	# }
 	text = {
 		trigger = { var:target_court_position = flag:keeper_of_swans }
 		localization_key = court_position_desc_keeper_of_swans
@@ -2194,10 +2197,11 @@ GetTargetCourtPositionDesc = {
 		trigger = { var:target_court_position = flag:travel_leader }
 		localization_key = court_position_desc_travel_leader
 	}
-	text = {
-		trigger = { var:target_court_position = flag:akolouthos }
-		localization_key = court_position_desc_akolouthos
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:target_court_position = flag:akolouthos }
+	# 	localization_key = court_position_desc_akolouthos
+	# }
 	text = {
 		trigger = { var:target_court_position ?= flag:chronicler }
 		localization_key = court_position_desc_chronicler

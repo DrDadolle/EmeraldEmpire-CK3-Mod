@@ -516,7 +516,8 @@ bp2_adult_education.1010 = {
 	trigger = {
 		NOR = {
 			scope:activity = { has_variable = has_had_event_1010 }
-			scope:activity = { has_variable = has_had_event_1011 }
+			#L5R Disabled
+			# scope:activity = { has_variable = has_had_event_1011 }
 			scope:activity = { has_variable = has_had_event_1012 }
 			knows_language_of_culture = scope:activity.activity_location.county.culture
 		}
@@ -1193,7 +1194,8 @@ bp2_adult_education.1012 = {
 	trigger = {
 		NOR = {
 			scope:activity = { has_variable = has_had_event_1010 }
-			scope:activity = { has_variable = has_had_event_1011 }
+			#L5R Disabled
+			# scope:activity = { has_variable = has_had_event_1011 }
 			scope:activity = { has_variable = has_had_event_1012 }
 		}
 		num_of_known_languages <= language_soft_cap

@@ -81,9 +81,10 @@
 			custom_tooltip = {
 				text = nation_fracturing_faction.can_character_create_ui.blocked_by_struggle
 				# We could use a parameter but this is just infinitely more performant.
-				NOT = {
-					any_held_title = { has_variable = struggle_block_dissolution_faction }
-				}
+				#L5R Disabled
+				# NOT = {
+				# 	any_held_title = { has_variable = struggle_block_dissolution_faction }
+				# }
 			}
 		}
 
@@ -133,9 +134,10 @@
 			custom_tooltip = {
 				text = nation_fracturing_faction.can_character_create_ui.blocked_by_struggle
 				# We could use a parameter but this is just infinitely more performant.
-				NOT = {
-					any_held_title = { has_variable = struggle_block_dissolution_faction }
-				}
+				#L5R Disabled
+				# NOT = {
+				# 	any_held_title = { has_variable = struggle_block_dissolution_faction }
+				# }
 			}
 		}
 		

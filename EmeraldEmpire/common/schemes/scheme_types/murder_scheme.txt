@@ -115,15 +115,16 @@
 			}
 		}
 		
+		#L5R Disabled
 		# They crowned you king/queen of fools
-		modifier = {
-			add = 20
-			desc = "MURDER_FOOL_NEMESIS_BONUS"
-			scope:owner = {
-				exists = var:festival_nemesis_fool_var
-				var:festival_nemesis_fool_var = scope:target
-			}
-		}
+		# modifier = {
+		# 	add = 20
+		# 	desc = "MURDER_FOOL_NEMESIS_BONUS"
+		# 	scope:owner = {
+		# 		exists = var:festival_nemesis_fool_var
+		# 		var:festival_nemesis_fool_var = scope:target
+		# 	}
+		# }
 		
 		# You found their escape tunnel
 		modifier = {

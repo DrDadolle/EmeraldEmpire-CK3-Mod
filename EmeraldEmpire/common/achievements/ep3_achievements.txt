@@ -99,13 +99,16 @@ ep3_06_quantum_leap_achievement = {
 # 07. Kingdom of Heaven
 ep3_07_kingdom_of_heaven_achievement = {
 	possible = {
-		
+		#L5R Disabled
+		always = no
 	}
 	happened = {
-		custom_description = {
-			text = kingdom_of_heaven_achievement_trigger
-			exists = global_var:finished_kingdom_of_heaven_achievement
-		}
+		#L5R Disabled
+		always = no
+		# custom_description = {
+		# 	text = kingdom_of_heaven_achievement_trigger
+		# 	exists = global_var:finished_kingdom_of_heaven_achievement
+		# }
 	}
 }
 

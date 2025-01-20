@@ -16664,7 +16664,8 @@ hold_court.8090 = {
 							scope:vassal.var:target_court_position = flag:court_physician
 							scope:vassal.var:target_court_position = flag:antiquarian
 							scope:vassal.var:target_court_position = flag:court_artificer
-							scope:vassal.var:target_court_position = flag:chief_qadi
+							#L5R Disabled
+							# scope:vassal.var:target_court_position = flag:chief_qadi
 							scope:vassal.learning > scope:old_holder.learning
 						}
 						AND = { # Martial roles
@@ -16672,9 +16673,11 @@ hold_court.8090 = {
 							scope:vassal.var:target_court_position = flag:bodyguard
 							scope:vassal.var:target_court_position = flag:champion
 							scope:vassal.var:target_court_position = flag:master_of_hunt
-							scope:vassal.var:target_court_position = flag:garuda
+							#L5R Disabled
+							# scope:vassal.var:target_court_position = flag:garuda
 							scope:vassal.martial > scope:old_holder.martial
-							scope:vassal.var:target_court_position = flag:akolouthos
+							#L5R Disabled
+							# scope:vassal.var:target_court_position = flag:akolouthos
 						}
 						AND = { # Diplomacy roles
 							scope:vassal.var:target_court_position = flag:court_poet

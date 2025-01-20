@@ -3329,8 +3329,9 @@ scripted_effect court_8301_fire_effect = {
 		flag:court_physician = { court_8301_revoke_effect = { POS = court_physician } }
 		flag:cultural_emissary = { court_8301_revoke_effect = { POS = cultural_emissary } }
 		flag:keeper_of_swans = { court_8301_revoke_effect = { POS = keeper_of_swans } }
-		flag:chief_qadi = { court_8301_revoke_effect = { POS = chief_qadi } }
-		flag:garuda = { court_8301_revoke_effect = { POS = garuda } }
+		#L5R Disabled
+		# flag:chief_qadi = { court_8301_revoke_effect = { POS = chief_qadi } }
+		# flag:garuda = { court_8301_revoke_effect = { POS = garuda } }
 		flag:court_gardener  = { court_8301_revoke_effect = { POS = court_gardener } }
 		flag:lady_in_waiting = { court_8301_revoke_effect = { POS = lady_in_waiting } }
 		flag:antiquarian = { court_8301_revoke_effect = { POS = antiquarian } }
@@ -3358,7 +3359,8 @@ scripted_effect court_8301_fire_effect = {
 		flag:court_scholar = { court_8301_revoke_effect = { POS = court_scholar } }
 		flag:charioteer = { court_8301_revoke_effect = { POS = charioteer } }
 		flag:bookmaker = { court_8301_revoke_effect = { POS = bookmaker } }
-		flag:akolouthos = { court_8301_revoke_effect = { POS = akolouthos } }
+		#L5R Disabled
+		# flag:akolouthos = { court_8301_revoke_effect = { POS = akolouthos } }
 		flag:court_brewmaster = { court_8301_revoke_effect = { POS = court_brewmaster } }
 	}
 	remove_variable = penalized_position
@@ -3638,7 +3640,8 @@ court.8311 = {
 			else_if = { # Martial
 				limit = {
 					OR = {
-						var:target_court_position ?= flag:akolouthos
+						#L5R Disabled
+						# var:target_court_position ?= flag:akolouthos
 						var:target_court_position ?= flag:master_of_horse
 					}
 				}
@@ -3673,7 +3676,8 @@ court.8311 = {
 				limit = {
 					OR = {
 						var:target_court_position ?= flag:court_physician
-						var:target_court_position ?= flag:chief_qadi
+						#L5R Disabled
+						# var:target_court_position ?= flag:chief_qadi
 						var:target_court_position ?= flag:court_scholar
 						var:target_court_position ?= flag:antiquarian
 						var:target_court_position ?= flag:court_artificer

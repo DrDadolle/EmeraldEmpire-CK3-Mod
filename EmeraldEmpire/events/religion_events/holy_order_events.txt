@@ -377,16 +377,18 @@ holy_order.0202 = {
 	}
 
 	option = { #Pretty please give me more time?
+		#L5R Disabled
+		# name = {
+		# 	trigger = {
+		# 		faith = { religion_tag = christianity_religion }
+		# 	}
+		# 	text = holy_order.0202.b_christian
+		# }
 		name = {
-			trigger = {
-				faith = { religion_tag = christianity_religion }
-			}
-			text = holy_order.0202.b_christian
-		}
-		name = {
-			trigger = {
-				NOT = { faith = { religion_tag = christianity_religion } }
-			}
+			#L5R Disabled
+			# trigger = {
+			# 	NOT = { faith = { religion_tag = christianity_religion } }
+			# }
 			text = holy_order.0202.b
 		}
 		trigger = {
