@@ -169,8 +169,9 @@ on_faith_created = {
 				limit = {
 					# Assuming they exist.
 					exists = scope:old_faith.religious_head
+					#L5R Disabled
 					# & have the appropriate doctrine parameter.
-					has_doctrine_parameter = maintains_head_of_faith_on_creation
+					# has_doctrine_parameter = maintains_head_of_faith_on_creation
 				}
 				set_religious_head_title = scope:old_faith.religious_head_title
 				#L5R Disabled

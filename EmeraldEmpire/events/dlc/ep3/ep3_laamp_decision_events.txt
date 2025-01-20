@@ -1234,7 +1234,7 @@ ep3_laamp_decision_event.1000 = {
 				end_of_year_season_trigger = yes
 				location_has_winter_trigger = yes
 				#L5R Modified
-				scope:visiting_location = { geographical_region = rokuga_dragon }
+				scope:visiting_location = { geographical_region = rokugan_dragon }
 				# scope:visiting_location = { geographical_region = world_europe_north }
 			}
 			random_list = {
@@ -20090,12 +20090,13 @@ ep3_laamp_decision_event.1103 = {
 				modifier = {
 					add = root.current_military_strength
 				}
-				modifier = {
-					factor = 1.2
-					root.faith = {
-						has_doctrine = tenet_armed_pilgrimages
-					}
-				}
+				#L5R Disabled
+				# modifier = {
+				# 	factor = 1.2
+				# 	root.faith = {
+				# 		has_doctrine = tenet_armed_pilgrimages
+				# 	}
+				# }
 				send_interface_toast = {
 					type = event_toast_effect_good
 					title = ep3_laamp_decision_event.1103.a.success

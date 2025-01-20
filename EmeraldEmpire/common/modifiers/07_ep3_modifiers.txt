@@ -1556,10 +1556,10 @@ admin_eunuch_puppet_modifier = {
 	monthly_influence = 1.0
 }
 
-# ep3_consolidated_rule_modifier = {
-# 	icon = legitimacy_positive
-# 	legitimacy_gain_mult = 0.25
-# }
+ep3_consolidated_rule_modifier = {
+	icon = legitimacy_positive
+	legitimacy_gain_mult = 0.25
+}
  
 ### GRAND AMBITIONS STORY CYCLE MODIFIERS
 

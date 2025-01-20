@@ -3828,24 +3828,25 @@ ep3_governor_yearly.3040 = {
 				size = 1
 			}
 		}
-		else_if = {
-			limit = {
-				culture = {
-					has_innovation = innovation_war_camels
-				}
-				capital_province = {
-					OR = {
-						terrain = desert
-						terrain = drylands
-					}
-				}
-			}
-			create_maa_regiment = {
-				type = camel_rider
-				check_can_recruit = no
-				size = 1
-			}
-		}
+		#L5R Disabled
+		# else_if = {
+		# 	limit = {
+		# 		culture = {
+		# 			has_innovation = innovation_war_camels
+		# 		}
+		# 		capital_province = {
+		# 			OR = {
+		# 				terrain = desert
+		# 				terrain = drylands
+		# 			}
+		# 		}
+		# 	}
+		# 	create_maa_regiment = {
+		# 		type = camel_rider
+		# 		check_can_recruit = no
+		# 		size = 1
+		# 	}
+		# }
 		else_if = {
 			limit = {
 				capital_province = {
@@ -4217,25 +4218,26 @@ ep3_governor_yearly.3040 = {
 				size = 2
 			}
 		}
-		else_if = {
-			limit = {
-				culture = {
-					has_innovation = innovation_war_camels
-				}
-				capital_province = {
-					OR = {
-						terrain = desert
-						terrain = drylands
-					}
-				}
-			}
-			create_maa_regiment = {
-				type = camel_rider
-				check_can_recruit = no
-				title = root.primary_title
-				size = 2
-			}
-		}
+		#L5R Disabled
+		# else_if = {
+		# 	limit = {
+		# 		culture = {
+		# 			has_innovation = innovation_war_camels
+		# 		}
+		# 		capital_province = {
+		# 			OR = {
+		# 				terrain = desert
+		# 				terrain = drylands
+		# 			}
+		# 		}
+		# 	}
+		# 	create_maa_regiment = {
+		# 		type = camel_rider
+		# 		check_can_recruit = no
+		# 		title = root.primary_title
+		# 		size = 2
+		# 	}
+		# }
 		else_if = {
 			limit = {
 				capital_province = {
