@@ -853,23 +853,23 @@ tough_and_confident_modifier = {
 	health = 0.2
 	attraction_opinion = 20
 }
-
-peace_over_honor_modifier = {
-	icon = social_positive
-	parochial_opinion = 15
-	glory_hound_opinion = -10
-}
-
-a_noble_fight_modifier = {
-	icon = martial_mixed
-	accolade_glory_gain_mult = 0.33
-	glory_hound_opinion = 10
-	parochial_opinion = -25
-}
-
-aggressive_unpredictable_modifier = {
-	icon = martial_mixed
-	dread_baseline_add = 15
-	glory_hound_opinion = 15
-	parochial_opinion = -30
-}
+#L5R Disabled
+# peace_over_honor_modifier = {
+# 	icon = social_positive
+# 	parochial_opinion = 15
+# 	glory_hound_opinion = -10
+# }
+#L5R Disabled
+# a_noble_fight_modifier = {
+# 	icon = martial_mixed
+# 	accolade_glory_gain_mult = 0.33
+# 	glory_hound_opinion = 10
+# 	parochial_opinion = -25
+# }
+#L5R Disabled
+# aggressive_unpredictable_modifier = {
+# 	icon = martial_mixed
+# 	dread_baseline_add = 15
+# 	glory_hound_opinion = 15
+# 	parochial_opinion = -30
+# }

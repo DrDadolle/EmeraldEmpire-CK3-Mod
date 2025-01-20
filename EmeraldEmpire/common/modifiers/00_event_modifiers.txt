@@ -110,12 +110,12 @@ avenger_of_the_martyrs = {
 	icon = piety_positive
 	same_faith_opinion = 10
 }
-
-defender_of_the_faith = {
-	icon = piety_positive
-	same_faith_opinion = 10
-	prowess = 1
-}
+#L5R Disabled
+# defender_of_the_faith = {
+# 	icon = piety_positive
+# 	same_faith_opinion = 10
+# 	prowess = 1
+# }
 
 strong_blood = {
 	icon = health_positive
