@@ -741,6 +741,78 @@ accessory_genes = {
 				boy = male
 				girl = female
 		}
+		ep3_byzantine_era1_nob = {
+			index = 14
+			male = {
+				1 = m_cloaks_ep3_byzantine_era1_nob_01
+
+			}
+			female = {
+				1 = f_cloaks_ep3_byzantine_era1_nob_01
+		    }
+		    boy = male
+			girl = female
+	    }
+
+		ep3_byzantine_era1_imperial = {
+			index = 15
+			male = {
+				1 = m_cloaks_ep3_byzantine_era1_imp_01
+
+			}
+			female = {
+				1 = f_cloaks_ep3_byzantine_era1_imp_01
+		    }
+		    boy = male
+			girl = female
+	    }
+
+		ep3_byzantine_era2_nob = {
+			index = 16
+			male = {
+				1 = m_cloaks_ep3_byzantine_era2_nob_01
+			}
+			female = {
+		    }
+		    boy = male
+			girl = female
+	    }
+
+		ep3_byzantine_era2_roy_01_loros = {
+			index = 17
+			male = {
+				1 = m_cloaks_sec_ep3_byzantine_era2_roy_01_loros
+			}
+			female = {
+			}
+			boy = male
+			girl = female
+		}
+
+		ep3_byzantine_era2_imp_01_loros = {
+			index = 18
+			male = {
+				1 = m_cloaks_sec_ep3_byzantine_era2_imp_01_loros
+			}
+			female = {
+			}
+			boy = male
+			girl = female
+		}
+
+		camp_purpose_brigands_cloaks = {
+			index = 19
+			male = {
+				1 = male_furs_secular_fp1_nobility_01
+				1 = male_furs_secular_fp1_nobility_02
+				1 = male_furs_secular_fp1_nobility_03
+			}
+			female = {
+				1 = female_furs_secular_fp1_nobility_01
+				1 = female_furs_secular_fp1_nobility_02
+				1 = female_furs_secular_fp1_nobility_03
+			}
+		}
 	}		
 
 #####################################

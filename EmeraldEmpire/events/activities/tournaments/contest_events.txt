@@ -392,7 +392,8 @@ contest_events.0500 = { # Start
 
 	option = { # Wager
 		name = contest_events.0500.b
-		tournament_contest_maysir_tooltip_effect = yes
+		#L5R Disabled
+		# tournament_contest_maysir_tooltip_effect = yes
 		custom_tooltip = contest_events_place_wager_tt
 		trigger_event = {
 			id = tournament_events.1000
@@ -2464,7 +2465,8 @@ contest_events.0700 = { # Start
 
 	option = { # Wager
 		name = contest_events.0700.b
-		tournament_contest_maysir_tooltip_effect = yes
+		#L5R Disabled
+		# tournament_contest_maysir_tooltip_effect = yes
 		custom_tooltip = contest_events_place_wager_tt
 		trigger_event = {
 			id = tournament_events.1000
@@ -4148,7 +4150,8 @@ contest_events.0800 = { # Start
 
 	option = { # Wager
 		name = contest_events.0800.b
-		tournament_contest_maysir_tooltip_effect = yes
+		#L5R Disabled
+		# tournament_contest_maysir_tooltip_effect = yes
 		custom_tooltip = contest_events_place_wager_tt
 		if = {
 			limit = { exists = scope:versus_contestant }

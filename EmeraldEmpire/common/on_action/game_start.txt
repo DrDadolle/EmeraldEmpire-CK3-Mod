@@ -160,7 +160,7 @@ on_game_start_after_lobby = {
 		
 		## Special Shinsei Last hope Modifier
 		#L5R TODO depends on date + add special event to remove the modifier when hold by not crab (as per the prophecy "Shinsei prophesized that while the Crab Clan protected the valley, it would remain pure of Taint")
-		title:b_shinsei_last_hope = { add_province_modifier = shinsei_last_hope_modifier }
+		title:c_shinsei_last_hope.title_province = { add_province_modifier = shinsei_last_hope_modifier }
 
 		# L5R END
 		# Make sure that Realm Priests are landed theocrats where it makes sense
