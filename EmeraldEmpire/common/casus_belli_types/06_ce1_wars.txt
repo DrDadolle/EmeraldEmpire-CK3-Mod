@@ -1432,18 +1432,19 @@ legendary_adventure = {
 					add = 1
 				}
 			}
+			#L5R Disabled
 			# Aaaaaand track the A Dangerous Business achievement.
-			if = {
-				limit = {
-					has_trait = dwarf
-					NOT = {
-						capital_county = {
-							title_province = { geographical_region = world_europe } 
-						}
-					}
-				}
-				add_achievement_flag_effect = { FLAG = a_dangerous_business_achievement_flag }
-			}
+			# if = {
+			# 	limit = {
+			# 		has_trait = dwarf
+			# 		NOT = {
+			# 			capital_county = {
+			# 				title_province = { geographical_region = world_europe } 
+			# 			}
+			# 		}
+			# 	}
+			# 	add_achievement_flag_effect = { FLAG = a_dangerous_business_achievement_flag }
+			# }
 		}
 
 		# Prestige Progress for the Attacker

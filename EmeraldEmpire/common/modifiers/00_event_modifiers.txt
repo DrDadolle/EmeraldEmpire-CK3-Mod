@@ -406,26 +406,27 @@ suspicious_of_carpet_modifier = {
 	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
 }
 
-the_great_khan_modifier = {
-	icon = horse_positive
-	dread_baseline_add = 30
-	dread_decay_mult = -0.5
-	enemy_hostile_scheme_phase_duration_add = major_scheme_phase_duration_malus_value
-	enemy_hostile_scheme_success_chance_add = -75
-	vassal_limit = 75
-	minority_opinion = 20
-	army_maintenance_mult = -0.5
-	archer_cavalry_siege_value_add = 0.3
-	light_cavalry_siege_value_add = 0.3
+#L5R Disabled
+# the_great_khan_modifier = {
+# 	icon = horse_positive
+# 	dread_baseline_add = 30
+# 	dread_decay_mult = -0.5
+# 	enemy_hostile_scheme_phase_duration_add = major_scheme_phase_duration_malus_value
+# 	enemy_hostile_scheme_success_chance_add = -75
+# 	vassal_limit = 75
+# 	minority_opinion = 20
+# 	army_maintenance_mult = -0.5
+# 	archer_cavalry_siege_value_add = 0.3
+# 	light_cavalry_siege_value_add = 0.3
 	
-	archer_cavalry_toughness_mult = 0.75
-	light_cavalry_toughness_mult = 0.75
-	heavy_cavalry_toughness_mult = 0.75
+# 	archer_cavalry_toughness_mult = 0.75
+# 	light_cavalry_toughness_mult = 0.75
+# 	heavy_cavalry_toughness_mult = 0.75
 	
-	archer_cavalry_damage_mult = 0.75
-	light_cavalry_damage_mult = 0.75
-	heavy_cavalry_damage_mult = 0.75
-}
+# 	archer_cavalry_damage_mult = 0.75
+# 	light_cavalry_damage_mult = 0.75
+# 	heavy_cavalry_damage_mult = 0.75
+# }
 
 focused_reading_modifier = {
 	icon = learning_positive

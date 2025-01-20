@@ -298,24 +298,24 @@ fp3_forgotten_runestones_county_modifier = {
 # 	light_cavalry_maintenance_mult = -0.4
 # 	archer_cavalry_maintenance_mult = -0.4 
 # }
-
-fp3_nomad_friction_county_modifier = {
-	icon = horse_dead_negative
-	county_opinion_add = -10
-	monthly_county_control_growth_factor = -0.2
-}
-
-fp3_resentful_nomads_county_modifier = {
-	icon = economy_negative
-	hostile_raid_time = -0.5
-	monthly_county_control_growth_factor = -0.2
-}
-
-fp3_banning_archery_modifier = {
-	icon = hunt_negative
-	archers_damage_mult = -0.2
-	archer_cavalry_damage_mult = -0.2 
-}
+#L5R Disabled
+# fp3_nomad_friction_county_modifier = {
+# 	icon = horse_dead_negative
+# 	county_opinion_add = -10
+# 	monthly_county_control_growth_factor = -0.2
+# }
+#L5R Disabled
+# fp3_resentful_nomads_county_modifier = {
+# 	icon = economy_negative
+# 	hostile_raid_time = -0.5
+# 	monthly_county_control_growth_factor = -0.2
+# }
+#L5R Disabled
+# fp3_banning_archery_modifier = {
+# 	icon = hunt_negative
+# 	archers_damage_mult = -0.2
+# 	archer_cavalry_damage_mult = -0.2 
+# }
 #L5R Disabled
 # fp3_crushed_by_failure_modifier = {
 # 	icon = stress_negative
@@ -371,24 +371,24 @@ fp3_lackluster_diet_modifier = {
 # 	opinion_of_male_rulers = -20
 # 	intrigue_per_stress_level = 2
 # }
-
-fp3_oil_of_vitriol_modifier = {
-	icon = blood_positive
-	learning = 1
-	martial = 1
-}
-
-fp3_dabbling_in_alchemy_modifier = {
-	icon = treatment_negative
-	learning = 2
-	health = -0.1
-}
-
-fp3_alchemical_insights_modifier = {
-	icon = treatment_positive 
-	learning = 2
-	cultural_head_fascination_mult = 0.15
-}
+#L5R Disabled
+# fp3_oil_of_vitriol_modifier = {
+# 	icon = blood_positive
+# 	learning = 1
+# 	martial = 1
+# }
+#L5R Disabled
+# fp3_dabbling_in_alchemy_modifier = {
+# 	icon = treatment_negative
+# 	learning = 2
+# 	health = -0.1
+# }
+#L5R Disabled
+# fp3_alchemical_insights_modifier = {
+# 	icon = treatment_positive 
+# 	learning = 2
+# 	cultural_head_fascination_mult = 0.15
+# }
 #L5R Disabled
 # fp3_reneged_on_promise_modifier = {
 # 	icon = diplomacy_negative

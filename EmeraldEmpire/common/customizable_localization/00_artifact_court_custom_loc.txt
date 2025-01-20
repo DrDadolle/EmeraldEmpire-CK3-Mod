@@ -1131,9 +1131,11 @@ ArtifactBookDescType = {
 	text = { #This desc is only for subjects related to actions tied to a title in the game
 		trigger = {
 			OR = {
-				has_artifact_feature = book_topic_unification
+				#L5R Disabled
+				# has_artifact_feature = book_topic_unification
 				has_artifact_feature = book_topic_creation
-				has_artifact_feature = book_topic_restoration
+				#L5R Disabled
+				# has_artifact_feature = book_topic_restoration
 			}
 		}
 		localization_key = artifact_book_title_based_desc

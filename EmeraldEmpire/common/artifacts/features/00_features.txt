@@ -4074,20 +4074,21 @@
 		weight = 1
 	}
 
-	book_topic_unification = {
-		group = book_topic
-		trigger = {
-			OR = {
-				has_artifact_feature = book_subject_empire
-				has_artifact_feature = book_subject_kingdom
-			}
-			trigger_if = { # If the subject has been pre-saved from events etc. we make sure it's picked
-				limit = { exists = scope:owner.var:book_artifact_topic }
-				scope:owner.var:book_artifact_topic = flag:unification
-			}
-		}
-		weight = 1
-	}
+	#L5R Disabled
+	# book_topic_unification = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		OR = {
+	# 			has_artifact_feature = book_subject_empire
+	# 			has_artifact_feature = book_subject_kingdom
+	# 		}
+	# 		trigger_if = { # If the subject has been pre-saved from events etc. we make sure it's picked
+	# 			limit = { exists = scope:owner.var:book_artifact_topic }
+	# 			scope:owner.var:book_artifact_topic = flag:unification
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 
 	book_topic_creation = {
 		group = book_topic
@@ -4104,20 +4105,21 @@
 		weight = 1
 	}
 
-	book_topic_restoration = {
-		group = book_topic
-		trigger = {
-			OR = {
-				has_artifact_feature = book_subject_empire
-				has_artifact_feature = book_subject_kingdom
-			}
-			trigger_if = { # If the subject has been pre-saved from events etc. we make sure it's picked
-				limit = { exists = scope:owner.var:book_artifact_topic }
-				scope:owner.var:book_artifact_topic = flag:restoration
-			}
-		}
-		weight = 1
-	}
+	#L5R Disabled
+	# book_topic_restoration = {
+	# 	group = book_topic
+	# 	trigger = {
+	# 		OR = {
+	# 			has_artifact_feature = book_subject_empire
+	# 			has_artifact_feature = book_subject_kingdom
+	# 		}
+	# 		trigger_if = { # If the subject has been pre-saved from events etc. we make sure it's picked
+	# 			limit = { exists = scope:owner.var:book_artifact_topic }
+	# 			scope:owner.var:book_artifact_topic = flag:restoration
+	# 		}
+	# 	}
+	# 	weight = 1
+	# }
 
 	# martial topics
 	book_topic_martial_troop_compositions = {
@@ -6226,24 +6228,25 @@
 	}
 
 # book_title
+	#L5R Disabled
 	# misc titles
-	book_title_unification = {
-		group = book_title
-		trigger = { has_artifact_feature = book_topic_unification }
-		weight = 1
-	}
+	# book_title_unification = {
+	# 	group = book_title
+	# 	trigger = { has_artifact_feature = book_topic_unification }
+	# 	weight = 1
+	# }
 
 	book_title_creation = {
 		group = book_title
 		trigger = { has_artifact_feature = book_topic_creation }
 		weight = 1
 	}
-
-	book_title_restoration = {
-		group = book_title
-		trigger = { has_artifact_feature = book_topic_restoration }
-		weight = 1
-	}
+	#L5R Disabled
+	# book_title_restoration = {
+	# 	group = book_title
+	# 	trigger = { has_artifact_feature = book_topic_restoration }
+	# 	weight = 1
+	# }
 
 	book_title_mystical_animal = {
 		group = book_title

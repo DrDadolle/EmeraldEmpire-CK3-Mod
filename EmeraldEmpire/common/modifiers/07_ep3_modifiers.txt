@@ -1379,12 +1379,12 @@ brutal_castration_modifier = {
 # 	county_opinion_add = -20
 # }
 
-defensive_fire_dromons_modifier = {
-	icon = flame_positive
-	fort_level = 1
-	county_opinion_add = 5
-	tax_mult = -0.05
-}
+# defensive_fire_dromons_modifier = {
+# 	icon = flame_positive
+# 	fort_level = 1
+# 	county_opinion_add = 5
+# 	tax_mult = -0.05
+# }
 #L5R Disabled
 # assaulted_by_greek_fire_modifier = {
 # 	icon = flame_negative

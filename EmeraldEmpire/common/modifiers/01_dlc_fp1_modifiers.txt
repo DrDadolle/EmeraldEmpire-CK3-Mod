@@ -191,31 +191,31 @@ fp1_bathing_attraction_modifier = {
 	icon = fertility_positive
 	attraction_opinion = 25
 }
+#L5R Disabled
+# fp1_yearly_0071_troll_victory_bear_modifier = {
+# 	icon = bear_positive
+# 	same_culture_opinion = 20
+# }
 
-fp1_yearly_0071_troll_victory_bear_modifier = {
-	icon = bear_positive
-	same_culture_opinion = 20
-}
+# fp1_yearly_0071_troll_victory_wolf_modifier = {
+# 	icon = bear_positive
+# 	prowess_per_prestige_level = 2
+# }
 
-fp1_yearly_0071_troll_victory_wolf_modifier = {
-	icon = bear_positive
-	prowess_per_prestige_level = 2
-}
+# fp1_yearly_0071_troll_victory_wolverine_modifier = {
+# 	icon = bear_positive
+# 	prowess_per_prestige_level = 2
+# }
 
-fp1_yearly_0071_troll_victory_wolverine_modifier = {
-	icon = bear_positive
-	prowess_per_prestige_level = 2
-}
+# fp1_yearly_0071_troll_victory_lynx_modifier = {
+# 	icon = bear_positive
+# 	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+# }
 
-fp1_yearly_0071_troll_victory_lynx_modifier = {
-	icon = bear_positive
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-}
-
-fp1_yearly_0071_troll_victory_moose_modifier = {
-	icon = bear_positive
-	learning_per_prestige_level = 1
-}
+# fp1_yearly_0071_troll_victory_moose_modifier = {
+# 	icon = bear_positive
+# 	learning_per_prestige_level = 1
+# }
 
 brand_new_hunting_tools = {
 	icon = hunt_positive

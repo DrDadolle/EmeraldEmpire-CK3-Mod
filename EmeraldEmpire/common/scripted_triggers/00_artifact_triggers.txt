@@ -1671,9 +1671,11 @@ artifact_feature_gem_jade_trigger = {
 
 artifact_book_topic_preface_trigger = {
 	OR = {
-		has_artifact_feature = book_topic_unification
+		#L5R Disabled
+		# has_artifact_feature = book_topic_unification
 		has_artifact_feature = book_topic_creation
-		has_artifact_feature = book_topic_restoration
+		#L5R Disabled
+		# has_artifact_feature = book_topic_restoration
 		has_artifact_feature = book_topic_martial_troop_compositions
 		has_artifact_feature = book_topic_martial_military_strategies
 		has_artifact_feature = book_topic_martial_ancient_military_campaigns

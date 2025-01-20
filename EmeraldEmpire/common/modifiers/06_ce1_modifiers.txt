@@ -905,30 +905,30 @@ uncaring_ruler = {
 	icon = county_modifier_opinion_negative
 	county_opinion_add = -30
 }
-
-flagellants_acquiesce = {
-	icon = piety_positive
-	monthly_piety_gain_mult = 0.2
-	zealot_opinion = 10
-}
-
-unrestrained_flagellants = {
-	icon = county_modifier_opinion_negative
-	monthly_county_control_decline_add = -0.2
-	levy_size = -0.1
-}
-
-pacified_flagellants = {
-	icon = county_modifier_opinion_mixed
-	county_opinion_add = -20
-	monthly_county_control_growth_add = 0.1
-}
-
-eager_populace = {
-	icon = county_modifier_opinion_positive
-	build_gold_cost = -0.05
-	holding_build_speed = -0.25
-}
+#L5R Disabled
+# flagellants_acquiesce = {
+# 	icon = piety_positive
+# 	monthly_piety_gain_mult = 0.2
+# 	zealot_opinion = 10
+# }
+#L5R Disabled
+# unrestrained_flagellants = {
+# 	icon = county_modifier_opinion_negative
+# 	monthly_county_control_decline_add = -0.2
+# 	levy_size = -0.1
+# }
+#L5R Disabled
+# pacified_flagellants = {
+# 	icon = county_modifier_opinion_mixed
+# 	county_opinion_add = -20
+# 	monthly_county_control_growth_add = 0.1
+# }
+#L5R Disabled
+# eager_populace = {
+# 	icon = county_modifier_opinion_positive
+# 	build_gold_cost = -0.05
+# 	holding_build_speed = -0.25
+# }
 
 regular_checkups = {
 	icon = stress_positive

@@ -295,9 +295,9 @@ footballer_modifier = {
 		#display_mode = scaled
 	}
 }
-
-7053_scratched_modifier = {
-	icon = stress_negative
-	health = -0.1
-	stress_gain_mult = 0.1
-}
+#L5R Disabled
+# 7053_scratched_modifier = {
+# 	icon = stress_negative
+# 	health = -0.1
+# 	stress_gain_mult = 0.1
+# }

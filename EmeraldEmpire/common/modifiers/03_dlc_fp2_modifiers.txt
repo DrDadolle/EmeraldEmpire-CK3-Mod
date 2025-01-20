@@ -1100,12 +1100,12 @@ fp2_struggle_hostility_house_combined_modifier = {
 }
 
 # Compromise
-
-fp2_struggle_compromise_house_reward_modifier = {
-	icon = county_modifier_development_positive
-	same_heritage_county_advantage_add = 5
-	independent_ruler_opinion = 15
-}
+#L5R Disabled
+# fp2_struggle_compromise_house_reward_modifier = {
+# 	icon = county_modifier_development_positive
+# 	same_heritage_county_advantage_add = 5
+# 	independent_ruler_opinion = 15
+# }
 #L5R Disabled
 # fp2_struggle_compromise_defensive_reward_modifier = {
 # 	icon = rock_positive

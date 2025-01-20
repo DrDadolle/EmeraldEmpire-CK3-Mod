@@ -71,10 +71,11 @@ pilgrimage_worldly_modifier = {
 	owned_personal_scheme_success_chance_add = 15
 }
 
-keen_eye_modifier = {
-	icon = learning_positive
-	learning_per_piety_level = 1
-}
+#L5R Disabled
+# keen_eye_modifier = {
+# 	icon = learning_positive
+# 	learning_per_piety_level = 1
+# }
 
 hajj_halq_modifier = {
 	icon = letter_positive
