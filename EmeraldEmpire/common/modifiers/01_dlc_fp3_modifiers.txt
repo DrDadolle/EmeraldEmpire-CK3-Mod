@@ -115,59 +115,59 @@ ulema_displeased_drinking = {
 	monthly_piety = -0.1
 }
 
-fp3_plundered_county_modifier = {
-	icon = county_modifier_development_negative
-	county_opinion_add = -20
-	development_growth_factor = -0.4
-}
+# fp3_plundered_county_modifier = {
+# 	icon = county_modifier_development_negative
+# 	county_opinion_add = -20
+# 	development_growth_factor = -0.4
+# }
 
-fp3_architectural_splendor_county_modifier = {
-	icon = prestige_positive 
-	county_opinion_add = 30
-	tax_mult = 0.20
-}
+# fp3_architectural_splendor_county_modifier = {
+# 	icon = prestige_positive 
+# 	county_opinion_add = 30
+# 	tax_mult = 0.20
+# }
 
-fp3_luxurious_bathhouse_modifier = {
-	icon = treatment_positive 
-	stress_loss_mult = 0.25
-	courtier_and_guest_opinion = 15
-	courtly_opinion = 10
-}
+# fp3_luxurious_bathhouse_modifier = {
+# 	icon = treatment_positive 
+# 	stress_loss_mult = 0.25
+# 	courtier_and_guest_opinion = 15
+# 	courtly_opinion = 10
+# }
 
-fp3_less_luxurious_bathhouse_modifier = {
-	icon = treatment_positive 
-	stress_loss_mult = 0.15
-}
+# fp3_less_luxurious_bathhouse_modifier = {
+# 	icon = treatment_positive 
+# 	stress_loss_mult = 0.15
+# }
 
-fp3_very_lofty_tower_modifier = {
-	icon = compass_positive
-	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
-	attraction_opinion = 10
-}
+# fp3_very_lofty_tower_modifier = {
+# 	icon = compass_positive
+# 	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+# 	attraction_opinion = 10
+# }
 
-fp3_less_lofty_tower_modifier = {
-	icon = compass_positive
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-	attraction_opinion = 5
-}
+# fp3_less_lofty_tower_modifier = {
+# 	icon = compass_positive
+# 	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+# 	attraction_opinion = 5
+# }
 
-fp3_spiritual_splendor_county_modifier = {
-	icon = piety_positive 
-	county_opinion_add = 20
-	church_holding_build_gold_cost = -0.25
-	church_holding_build_speed = -0.25
-	development_growth_factor = 0.1
-}
+# fp3_spiritual_splendor_county_modifier = {
+# 	icon = piety_positive 
+# 	county_opinion_add = 20
+# 	church_holding_build_gold_cost = -0.25
+# 	church_holding_build_speed = -0.25
+# 	development_growth_factor = 0.1
+# }
 
-fp3_great_tower_of_silence_modifier = {
-	icon = bird_positive
-	learning = 2
-}
+# fp3_great_tower_of_silence_modifier = {
+# 	icon = bird_positive
+# 	learning = 2
+# }
 
-fp3_less_great_tower_of_silence_modifier = {
-	icon = bird_positive 
-	learning = 1
-}
+# fp3_less_great_tower_of_silence_modifier = {
+# 	icon = bird_positive 
+# 	learning = 1
+# }
 
 fp3_praying_too_much_modifier = {
 	icon = piety_positive
@@ -240,11 +240,11 @@ fp3_better_company_modifier = {
 # 	church_holding_holding_build_speed = -0.25
 # 	church_holding_holding_build_gold_cost = -0.25
 # }
-
-fp3_forgotten_runestones_county_modifier = {
-	icon = rock_positive
-	county_opinion_add = 10
-}
+#L5R Disabled
+# fp3_forgotten_runestones_county_modifier = {
+# 	icon = rock_positive
+# 	county_opinion_add = 10
+# }
 #L5R Disabled
 # fp3_dismayed_daylamites_county_modifier = {
 # 	icon = rock_negative

@@ -460,11 +460,11 @@ held_human_sacrifice_fp1_modifier = {
 # 	levy_reinforcement_rate = -0.25
 # }
 
-fp1_yearly_0071_troll_attacks_modifier = {
-	icon = bear_negative
-	county_opinion_add = -50
-	travel_danger = 10
-}
+# fp1_yearly_0071_troll_attacks_modifier = {
+# 	icon = bear_negative
+# 	county_opinion_add = -50
+# 	travel_danger = 10
+# }
 
 #L5R Disabled
 # fp1_mann_pirate_capital_modifier = {

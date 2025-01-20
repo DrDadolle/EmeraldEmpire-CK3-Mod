@@ -2022,208 +2022,209 @@
 		# competed
 		# spectator
 
+		#L5R Disabled
 		# MELEE
 		# contest_foot_aptitude_value
-		tournament_phase_melee = {
-			can_pick = { #Should be able to host this basically anywhere in Europe and certain areas outside too
-				NOT = { government_has_flag = government_is_tribal }
-				trigger_if = {
-					limit = {
-						capital_province = { geographical_region = world_europe }
-					}
-				}
-				trigger_else = {
-					culture = { has_cultural_parameter = can_host_joust_contests }
-				}
-			}
+		# tournament_phase_melee = {
+		# 	can_pick = { #Should be able to host this basically anywhere in Europe and certain areas outside too
+		# 		NOT = { government_has_flag = government_is_tribal }
+		# 		trigger_if = {
+		# 			limit = {
+		# 				capital_province = { geographical_region = world_europe }
+		# 			}
+		# 		}
+		# 		trigger_else = {
+		# 			culture = { has_cultural_parameter = can_host_joust_contests }
+		# 		}
+		# 	}
 
-			on_enter_phase = {
-				if = {
-					limit = { this = scope:host }
-					scope:activity = { progress_activity_phase_after = { weeks = tournament_qualification_duration_weeks } }
-				}
-			}
+		# 	on_enter_phase = {
+		# 		if = {
+		# 			limit = { this = scope:host }
+		# 			scope:activity = { progress_activity_phase_after = { weeks = tournament_qualification_duration_weeks } }
+		# 		}
+		# 	}
 
-			on_phase_active = {
-				if = {
-					limit = { this = scope:host }
-					scope:activity = { progress_activity_phase_after = { months = tournament_standard_duration_months } }
-					tournament_contest_team_composition_effect = { CONTEST = melee SKILL = melee } # Create two teams
-					tournament_team_pulse_effect = { CONTEST = melee }
-				}
-				tournament_add_as_spectator_effect = yes
-			}
+		# 	on_phase_active = {
+		# 		if = {
+		# 			limit = { this = scope:host }
+		# 			scope:activity = { progress_activity_phase_after = { months = tournament_standard_duration_months } }
+		# 			tournament_contest_team_composition_effect = { CONTEST = melee SKILL = melee } # Create two teams
+		# 			tournament_team_pulse_effect = { CONTEST = melee }
+		# 		}
+		# 		tournament_add_as_spectator_effect = yes
+		# 	}
 
-			on_end = {
-				if = {
-					limit = { this = scope:activity.activity_host }
-					tournament_contest_team_winner_effect = { CONTEST = melee }
-				}
-			}
+		# 	on_end = {
+		# 		if = {
+		# 			limit = { this = scope:activity.activity_host }
+		# 			tournament_contest_team_winner_effect = { CONTEST = melee }
+		# 		}
+		# 	}
 
-			ai_will_do = {
-				add = {
-					value = 100
-					desc = contest_ai_base
-				}
-				add = {
-					value = contest_foot_aptitude_value
-					desc = contest_foot_aptitude_value
-				}
-				if = {
-					limit = {
-						has_trait = tourney_participant
-						has_trait_xp = {
-							trait = tourney_participant
-							track = foot
-							value >= 25
-						}
-					}
-					add = {
-						value = 25
-						desc = tourney_participant_foot
-					}
-				}
-				if = {
-					limit = { 
-						culture = { has_cultural_tradition = tradition_warrior_culture }
-					}
-					add = {
-						value = 25
-						desc = tradition_warrior_culture_name
-					}
-				}
-				if = {
-					limit = { 
-						culture = { has_cultural_tradition = tradition_martial_admiration }
-					}
-					add = {
-						value = 25
-						desc = tradition_martial_admiration_name
-					}
-				}
-				#L5R Disabled
-				# if = {
-				# 	limit = { 
-				# 		culture = { has_cultural_tradition = tradition_chanson_de_geste }
-				# 	}
-				# 	add = {
-				# 		value = 25
-				# 		desc = tradition_chanson_de_geste_name
-				# 	}
-				# }
-				if = {
-					limit = { 
-						culture = { 
-							OR = {
-								#L5R Modified
-								has_cultural_pillar = heritage_lion
-								has_cultural_pillar = heritage_crab
-								# has_cultural_pillar = heritage_central_germanic
-								# has_cultural_pillar = heritage_frankish
-								# has_cultural_pillar = heritage_iberian
-								# has_cultural_pillar = heritage_west_germanic
-								# has_cultural_pillar = heritage_west_slavic
-							}
-						}
-					}
-					add = {
-						value = 15
-						desc = game_rule_category_culture
-					}
-				}
-			}
+		# 	ai_will_do = {
+		# 		add = {
+		# 			value = 100
+		# 			desc = contest_ai_base
+		# 		}
+		# 		add = {
+		# 			value = contest_foot_aptitude_value
+		# 			desc = contest_foot_aptitude_value
+		# 		}
+		# 		if = {
+		# 			limit = {
+		# 				has_trait = tourney_participant
+		# 				has_trait_xp = {
+		# 					trait = tourney_participant
+		# 					track = foot
+		# 					value >= 25
+		# 				}
+		# 			}
+		# 			add = {
+		# 				value = 25
+		# 				desc = tourney_participant_foot
+		# 			}
+		# 		}
+		# 		if = {
+		# 			limit = { 
+		# 				culture = { has_cultural_tradition = tradition_warrior_culture }
+		# 			}
+		# 			add = {
+		# 				value = 25
+		# 				desc = tradition_warrior_culture_name
+		# 			}
+		# 		}
+		# 		if = {
+		# 			limit = { 
+		# 				culture = { has_cultural_tradition = tradition_martial_admiration }
+		# 			}
+		# 			add = {
+		# 				value = 25
+		# 				desc = tradition_martial_admiration_name
+		# 			}
+		# 		}
+		# 		#L5R Disabled
+		# 		# if = {
+		# 		# 	limit = { 
+		# 		# 		culture = { has_cultural_tradition = tradition_chanson_de_geste }
+		# 		# 	}
+		# 		# 	add = {
+		# 		# 		value = 25
+		# 		# 		desc = tradition_chanson_de_geste_name
+		# 		# 	}
+		# 		# }
+		# 		if = {
+		# 			limit = { 
+		# 				culture = { 
+		# 					OR = {
+		# 						#L5R Modified
+		# 						has_cultural_pillar = heritage_lion
+		# 						has_cultural_pillar = heritage_crab
+		# 						# has_cultural_pillar = heritage_central_germanic
+		# 						# has_cultural_pillar = heritage_frankish
+		# 						# has_cultural_pillar = heritage_iberian
+		# 						# has_cultural_pillar = heritage_west_germanic
+		# 						# has_cultural_pillar = heritage_west_slavic
+		# 					}
+		# 				}
+		# 			}
+		# 			add = {
+		# 				value = 15
+		# 				desc = game_rule_category_culture
+		# 			}
+		# 		}
+		# 	}
 
-			cost = {
-				prestige = {
-					if = {
-						limit = { government_has_flag = government_is_tribal }
-						add = {
-							value = tournament_contest_base_tribal_cost
-							desc = tournament_melee_cost
-							if = {
-								limit = {
-									is_ai = yes
-									has_character_flag = tournament_ai_override
-								}
-								multiply = 0
-							}
-						}
-					}
-				}
-				gold = {
-					add = {
-						add = {
-							value = tournament_contest_base_cost #Base level for Contest
-							if = {
-								limit = { government_has_flag = government_is_tribal }
-								divide = 2
-							}
-							desc = tournament_melee_cost
-						}
-						add = {
-							value = tournament_contest_base_cost
-							multiply = activity_cost_scale_by_era
-							subtract = tournament_contest_base_cost
-							desc = activity_cost_scale_by_era_desc
-						}
-						if = { #building reducing the cost
-							limit = {
-								scope:province ?= {
-									has_building_or_higher = royal_armory_01
-								}
-							}
-							add = {
-								value = 0
-								add = {
-									value = tournament_contest_base_cost
-									add = {
-										value = tournament_contest_base_cost
-										multiply = activity_cost_scale_by_era
-										subtract = tournament_contest_base_cost
-									}
-								}
-								multiply = tournament_contest_cost_discount_value
-								desc = tournament_melee_contest_cost_discount_desc
-							}
-						}
-						if = { #building reducing the cost
-							limit = {
-								scope:province ?= {
-									has_building_or_higher = stables_01
-								}
-							}
-							add = {
-								value = 0
-								add = {
-									value = tournament_contest_base_cost
-									add = {
-										value = tournament_contest_base_cost
-										multiply = activity_cost_scale_by_era
-										subtract = tournament_contest_base_cost
-									}
-								}
-								multiply = tournament_contest_cost_low_discount_value
-								desc = tournament_melee_contest_cost_low_discount_desc
-							}
-						}
-						# Some people get one free.
-						if = {
-							limit = { factor_zero_if_entitled_to_freebie_activity_trigger = yes }
-							multiply = 0
-						}
-						min = 0
-						if = {
-							limit = {
-								is_ai = yes
-								has_character_flag = tournament_ai_override
-							}
-							multiply = 0
-						}
-					}
-				}
-			}
-		}
+		# 	cost = {
+		# 		prestige = {
+		# 			if = {
+		# 				limit = { government_has_flag = government_is_tribal }
+		# 				add = {
+		# 					value = tournament_contest_base_tribal_cost
+		# 					desc = tournament_melee_cost
+		# 					if = {
+		# 						limit = {
+		# 							is_ai = yes
+		# 							has_character_flag = tournament_ai_override
+		# 						}
+		# 						multiply = 0
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 		gold = {
+		# 			add = {
+		# 				add = {
+		# 					value = tournament_contest_base_cost #Base level for Contest
+		# 					if = {
+		# 						limit = { government_has_flag = government_is_tribal }
+		# 						divide = 2
+		# 					}
+		# 					desc = tournament_melee_cost
+		# 				}
+		# 				add = {
+		# 					value = tournament_contest_base_cost
+		# 					multiply = activity_cost_scale_by_era
+		# 					subtract = tournament_contest_base_cost
+		# 					desc = activity_cost_scale_by_era_desc
+		# 				}
+		# 				if = { #building reducing the cost
+		# 					limit = {
+		# 						scope:province ?= {
+		# 							has_building_or_higher = royal_armory_01
+		# 						}
+		# 					}
+		# 					add = {
+		# 						value = 0
+		# 						add = {
+		# 							value = tournament_contest_base_cost
+		# 							add = {
+		# 								value = tournament_contest_base_cost
+		# 								multiply = activity_cost_scale_by_era
+		# 								subtract = tournament_contest_base_cost
+		# 							}
+		# 						}
+		# 						multiply = tournament_contest_cost_discount_value
+		# 						desc = tournament_melee_contest_cost_discount_desc
+		# 					}
+		# 				}
+		# 				if = { #building reducing the cost
+		# 					limit = {
+		# 						scope:province ?= {
+		# 							has_building_or_higher = stables_01
+		# 						}
+		# 					}
+		# 					add = {
+		# 						value = 0
+		# 						add = {
+		# 							value = tournament_contest_base_cost
+		# 							add = {
+		# 								value = tournament_contest_base_cost
+		# 								multiply = activity_cost_scale_by_era
+		# 								subtract = tournament_contest_base_cost
+		# 							}
+		# 						}
+		# 						multiply = tournament_contest_cost_low_discount_value
+		# 						desc = tournament_melee_contest_cost_low_discount_desc
+		# 					}
+		# 				}
+		# 				# Some people get one free.
+		# 				if = {
+		# 					limit = { factor_zero_if_entitled_to_freebie_activity_trigger = yes }
+		# 					multiply = 0
+		# 				}
+		# 				min = 0
+		# 				if = {
+		# 					limit = {
+		# 						is_ai = yes
+		# 						has_character_flag = tournament_ai_override
+		# 					}
+		# 					multiply = 0
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 
 		############
 		### TURN ###
@@ -2703,285 +2704,286 @@
 		# contestant
 		# spectator
 
+		#L5R Disabled
 		# JOUST
 		# contest_horse_aptitude_value
-		tournament_phase_joust = {			
-			is_shown = {}
+		# tournament_phase_joust = {			
+		# 	is_shown = {}
 
-			can_pick = {
-				NOT = { government_has_flag = government_is_tribal }
-				trigger_if = {
-					limit = {
-						capital_province = { geographical_region = world_europe }
-					}
-				}
-				trigger_else = {
-					culture = { has_cultural_parameter = can_host_joust_contests }
-				}
-				scope:province = { #Horses do not like big hills or marshes
-					NOR = {
-						terrain = mountains
-						terrain = desert_mountains
-						terrain = wetlands
-					} 
-				}
-				scope:province.culture = { #Ensure the honses are properly shod and such
-					AND = {
-						has_innovation = innovation_horseshoes
-						has_innovation = innovation_arched_saddle
-					}
-				}
-			}
+		# 	can_pick = {
+		# 		NOT = { government_has_flag = government_is_tribal }
+		# 		trigger_if = {
+		# 			limit = {
+		# 				capital_province = { geographical_region = world_europe }
+		# 			}
+		# 		}
+		# 		trigger_else = {
+		# 			culture = { has_cultural_parameter = can_host_joust_contests }
+		# 		}
+		# 		scope:province = { #Horses do not like big hills or marshes
+		# 			NOR = {
+		# 				terrain = mountains
+		# 				terrain = desert_mountains
+		# 				terrain = wetlands
+		# 			} 
+		# 		}
+		# 		scope:province.culture = { #Ensure the honses are properly shod and such
+		# 			AND = {
+		# 				has_innovation = innovation_horseshoes
+		# 				has_innovation = innovation_arched_saddle
+		# 			}
+		# 		}
+		# 	}
 
-			on_enter_phase = {
-				if = {
-					limit = { this = scope:host }
-					scope:activity = { progress_activity_phase_after = { weeks = tournament_qualification_duration_weeks } }
-				}
-			}
+		# 	on_enter_phase = {
+		# 		if = {
+		# 			limit = { this = scope:host }
+		# 			scope:activity = { progress_activity_phase_after = { weeks = tournament_qualification_duration_weeks } }
+		# 		}
+		# 	}
 
-			on_phase_active = {
-				if = {
-					limit = { this = scope:host }
-					scope:activity = { progress_activity_phase_after = { months = tournament_versus_duration_months } }
-					tournament_contest_versus_composition_effect = { CONTEST = joust SKILL = horse } # Create competitor list and log entry
-				}
-				tournament_add_as_spectator_effect = yes
-				# Achievements.
-				if = {
-					limit = {
-						exists = global_var:started_sir_lance_a_lot_achievement
-						is_ai = no
-						has_trait_xp = {
-							trait = tourney_participant
-							track = horse
-							value >= 100
-						}
-					}
-					set_global_variable = {
-						name = achieved_sir_lance_a_lot_achievement
-						value = yes
-					}
-				}
-			}
+		# 	on_phase_active = {
+		# 		if = {
+		# 			limit = { this = scope:host }
+		# 			scope:activity = { progress_activity_phase_after = { months = tournament_versus_duration_months } }
+		# 			tournament_contest_versus_composition_effect = { CONTEST = joust SKILL = horse } # Create competitor list and log entry
+		# 		}
+		# 		tournament_add_as_spectator_effect = yes
+		# 		# Achievements.
+		# 		if = {
+		# 			limit = {
+		# 				exists = global_var:started_sir_lance_a_lot_achievement
+		# 				is_ai = no
+		# 				has_trait_xp = {
+		# 					trait = tourney_participant
+		# 					track = horse
+		# 					value >= 100
+		# 				}
+		# 			}
+		# 			set_global_variable = {
+		# 				name = achieved_sir_lance_a_lot_achievement
+		# 				value = yes
+		# 			}
+		# 		}
+		# 	}
 
-			on_weekly_pulse = {
-			}
+		# 	on_weekly_pulse = {
+		# 	}
 
-			on_end = {
-				if = {
-					limit = { this = scope:host }
-					tournament_contest_versus_winner_effect = { CONTEST = joust }
-				}
-				# Achievements.
-				if = {
-					limit = {
-						exists = global_var:started_a_knights_tale_achievement
-						is_ai = no
-						scope:activity = {
-							any_guest_subset = {
-								name = winner
-								phase = tournament_phase_joust
-								is_knight_of = root
-								NOT = { exists = dynasty }
-							}
-						}
-					}
-					scope:activity = {
-						random_guest_subset = {
-							name = winner
-							phase = tournament_phase_joust
-							limit = {
-								is_knight_of = root
-								NOT = { exists = dynasty }
-							}
-							save_scope_as = cheevo_knight
-						}
-					}
-					add_to_variable_list = {
-						name = candidate_a_knights_tale_achievement
-						target = scope:cheevo_knight
-					}
-				}
-			}
+		# 	on_end = {
+		# 		if = {
+		# 			limit = { this = scope:host }
+		# 			tournament_contest_versus_winner_effect = { CONTEST = joust }
+		# 		}
+		# 		# Achievements.
+		# 		if = {
+		# 			limit = {
+		# 				exists = global_var:started_a_knights_tale_achievement
+		# 				is_ai = no
+		# 				scope:activity = {
+		# 					any_guest_subset = {
+		# 						name = winner
+		# 						phase = tournament_phase_joust
+		# 						is_knight_of = root
+		# 						NOT = { exists = dynasty }
+		# 					}
+		# 				}
+		# 			}
+		# 			scope:activity = {
+		# 				random_guest_subset = {
+		# 					name = winner
+		# 					phase = tournament_phase_joust
+		# 					limit = {
+		# 						is_knight_of = root
+		# 						NOT = { exists = dynasty }
+		# 					}
+		# 					save_scope_as = cheevo_knight
+		# 				}
+		# 			}
+		# 			add_to_variable_list = {
+		# 				name = candidate_a_knights_tale_achievement
+		# 				target = scope:cheevo_knight
+		# 			}
+		# 		}
+		# 	}
 
-			ai_will_do = {
-				add = {
-					value = 100 # Popular contest
-					desc = contest_ai_base
-				}
-				add = {
-					value = contest_horse_aptitude_value
-					desc = contest_horse_aptitude_value
-				}
-				if = {
-					limit = {
-						has_trait = tourney_participant
-						has_trait_xp = {
-							trait = tourney_participant
-							track = horse
-							value >= 25
-						}
-					}
-					add = {
-						value = 50
-						desc = tourney_participant_horse
-					}
-				}
-				if = {
-					limit = { 
-						culture = { has_cultural_tradition = tradition_chivalry }
-					}
-					add = {
-						value = 25
-						desc = tradition_chivalry_name
-					}
-				}
-				if = {
-					limit = { 
-						culture = { has_cultural_tradition = tradition_martial_admiration }
-					}
-					add = {
-						value = 25
-						desc = tradition_martial_admiration_name
-					}
-				}
-				#L5R Disabled
-				# if = {
-				# 	limit = { 
-				# 		culture = { has_cultural_tradition = tradition_chanson_de_geste }
-				# 	}
-				# 	add = {
-				# 		value = 25
-				# 		desc = tradition_chanson_de_geste_name
-				# 	}
-				# }
-				if = {
-					limit = {
-						culture = { has_cultural_era_or_later = culture_era_high_medieval }
-					}
-					add = {
-						value = 50
-						desc = culture_era_high_medieval
-					}
-				}
-				if = {
-					limit = {
-						culture = { has_cultural_era_or_later = culture_era_late_medieval }
-					}
-					add = {
-						value = 50
-						desc = culture_era_late_medieval
-					}
-				}
-				#L5R Disabled
-				# if = {
-				# 	limit = { 
-				# 		culture = { 
-				# 			OR = {
-				# 				has_cultural_pillar = heritage_frankish
-				# 				has_cultural_pillar = heritage_west_germanic
-				# 				has_cultural_pillar = heritage_central_germanic
-				# 			}
-				# 		}
-				# 	}
-				# 	add = {
-				# 		value = 15
-				# 		desc = game_rule_category_culture
-				# 	}
-				# }
-			}
+		# 	ai_will_do = {
+		# 		add = {
+		# 			value = 100 # Popular contest
+		# 			desc = contest_ai_base
+		# 		}
+		# 		add = {
+		# 			value = contest_horse_aptitude_value
+		# 			desc = contest_horse_aptitude_value
+		# 		}
+		# 		if = {
+		# 			limit = {
+		# 				has_trait = tourney_participant
+		# 				has_trait_xp = {
+		# 					trait = tourney_participant
+		# 					track = horse
+		# 					value >= 25
+		# 				}
+		# 			}
+		# 			add = {
+		# 				value = 50
+		# 				desc = tourney_participant_horse
+		# 			}
+		# 		}
+		# 		if = {
+		# 			limit = { 
+		# 				culture = { has_cultural_tradition = tradition_chivalry }
+		# 			}
+		# 			add = {
+		# 				value = 25
+		# 				desc = tradition_chivalry_name
+		# 			}
+		# 		}
+		# 		if = {
+		# 			limit = { 
+		# 				culture = { has_cultural_tradition = tradition_martial_admiration }
+		# 			}
+		# 			add = {
+		# 				value = 25
+		# 				desc = tradition_martial_admiration_name
+		# 			}
+		# 		}
+		# 		#L5R Disabled
+		# 		# if = {
+		# 		# 	limit = { 
+		# 		# 		culture = { has_cultural_tradition = tradition_chanson_de_geste }
+		# 		# 	}
+		# 		# 	add = {
+		# 		# 		value = 25
+		# 		# 		desc = tradition_chanson_de_geste_name
+		# 		# 	}
+		# 		# }
+		# 		if = {
+		# 			limit = {
+		# 				culture = { has_cultural_era_or_later = culture_era_high_medieval }
+		# 			}
+		# 			add = {
+		# 				value = 50
+		# 				desc = culture_era_high_medieval
+		# 			}
+		# 		}
+		# 		if = {
+		# 			limit = {
+		# 				culture = { has_cultural_era_or_later = culture_era_late_medieval }
+		# 			}
+		# 			add = {
+		# 				value = 50
+		# 				desc = culture_era_late_medieval
+		# 			}
+		# 		}
+		# 		#L5R Disabled
+		# 		# if = {
+		# 		# 	limit = { 
+		# 		# 		culture = { 
+		# 		# 			OR = {
+		# 		# 				has_cultural_pillar = heritage_frankish
+		# 		# 				has_cultural_pillar = heritage_west_germanic
+		# 		# 				has_cultural_pillar = heritage_central_germanic
+		# 		# 			}
+		# 		# 		}
+		# 		# 	}
+		# 		# 	add = {
+		# 		# 		value = 15
+		# 		# 		desc = game_rule_category_culture
+		# 		# 	}
+		# 		# }
+		# 	}
 
-			cost = {
-				prestige = {
-					if = {
-						limit = { government_has_flag = government_is_tribal }
-						add = {
-							value = tournament_contest_expensive_tribal_cost
-							desc = tournament_joust_cost
-							if = {
-								limit = {
-									is_ai = yes
-									has_character_flag = tournament_ai_override
-								}
-								multiply = 0
-							}
-						}
-					}
-				}
-				gold = {
-					add = {
-						add = {
-							value = tournament_contest_expensive_cost #Very cheap, requires basically nothing
-							if = {
-								limit = { government_has_flag = government_is_tribal }
-								divide = 2
-							}
-							desc = tournament_joust_cost
-						}
-						add = {
-							value = tournament_contest_expensive_cost
-							multiply = activity_cost_scale_by_era
-							subtract = tournament_contest_expensive_cost
-							desc = activity_cost_scale_by_era_desc
-						}
-						if = { #building reducing the cost
-							limit = {
-								scope:province ?= {
-									has_building_or_higher = jousting_lists_01
-								}
-							}
-							add = {
-								value = 0
-								add = {
-									value = tournament_contest_expensive_cost
-									add = {
-										value = tournament_contest_expensive_cost
-										multiply = activity_cost_scale_by_era
-										subtract = tournament_contest_expensive_cost
-									}
-								}
-								multiply = tournament_contest_cost_discount_value
-								desc = tournament_joust_contest_cost_discount_desc
-							}
-						}
-						if = { #building reducing the cost
-							limit = {
-								scope:province ?= {
-									has_building_or_higher = stables_01
-								}
-							}
-							add = {
-								value = 0
-								add = {
-									value = tournament_contest_expensive_cost
-									add = {
-										value = tournament_contest_expensive_cost
-										multiply = activity_cost_scale_by_era
-										subtract = tournament_contest_expensive_cost
-									}
-								}
-								multiply = tournament_contest_cost_low_discount_value
-								desc = tournament_joust_contest_cost_low_discount_desc
-							}
-						}
-						# Some people get one free.
-						if = {
-							limit = { factor_zero_if_entitled_to_freebie_activity_trigger = yes }
-							multiply = 0
-						}
-						min = 0
-						if = {
-							limit = {
-								is_ai = yes
-								has_character_flag = tournament_ai_override
-							}
-							multiply = 0
-						}
-					}
-				}
-			}
-		}
+		# 	cost = {
+		# 		prestige = {
+		# 			if = {
+		# 				limit = { government_has_flag = government_is_tribal }
+		# 				add = {
+		# 					value = tournament_contest_expensive_tribal_cost
+		# 					desc = tournament_joust_cost
+		# 					if = {
+		# 						limit = {
+		# 							is_ai = yes
+		# 							has_character_flag = tournament_ai_override
+		# 						}
+		# 						multiply = 0
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 		gold = {
+		# 			add = {
+		# 				add = {
+		# 					value = tournament_contest_expensive_cost #Very cheap, requires basically nothing
+		# 					if = {
+		# 						limit = { government_has_flag = government_is_tribal }
+		# 						divide = 2
+		# 					}
+		# 					desc = tournament_joust_cost
+		# 				}
+		# 				add = {
+		# 					value = tournament_contest_expensive_cost
+		# 					multiply = activity_cost_scale_by_era
+		# 					subtract = tournament_contest_expensive_cost
+		# 					desc = activity_cost_scale_by_era_desc
+		# 				}
+		# 				if = { #building reducing the cost
+		# 					limit = {
+		# 						scope:province ?= {
+		# 							has_building_or_higher = jousting_lists_01
+		# 						}
+		# 					}
+		# 					add = {
+		# 						value = 0
+		# 						add = {
+		# 							value = tournament_contest_expensive_cost
+		# 							add = {
+		# 								value = tournament_contest_expensive_cost
+		# 								multiply = activity_cost_scale_by_era
+		# 								subtract = tournament_contest_expensive_cost
+		# 							}
+		# 						}
+		# 						multiply = tournament_contest_cost_discount_value
+		# 						desc = tournament_joust_contest_cost_discount_desc
+		# 					}
+		# 				}
+		# 				if = { #building reducing the cost
+		# 					limit = {
+		# 						scope:province ?= {
+		# 							has_building_or_higher = stables_01
+		# 						}
+		# 					}
+		# 					add = {
+		# 						value = 0
+		# 						add = {
+		# 							value = tournament_contest_expensive_cost
+		# 							add = {
+		# 								value = tournament_contest_expensive_cost
+		# 								multiply = activity_cost_scale_by_era
+		# 								subtract = tournament_contest_expensive_cost
+		# 							}
+		# 						}
+		# 						multiply = tournament_contest_cost_low_discount_value
+		# 						desc = tournament_joust_contest_cost_low_discount_desc
+		# 					}
+		# 				}
+		# 				# Some people get one free.
+		# 				if = {
+		# 					limit = { factor_zero_if_entitled_to_freebie_activity_trigger = yes }
+		# 					multiply = 0
+		# 				}
+		# 				min = 0
+		# 				if = {
+		# 					limit = {
+		# 						is_ai = yes
+		# 						has_character_flag = tournament_ai_override
+		# 					}
+		# 					multiply = 0
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 
 		# WRESTLING
 		# contest_pugilism_aptitude_value
