@@ -251,7 +251,7 @@ lineofdojisatsume4 = {
 
 ##### Historic characters
 lineofkamidoji1 = {
-	name = "" 	# TODO : special naming for Kami
+	name = name_doji 	# TODO : special naming for Kami
 	dynasty = dynasty_doji 	
 	religion = "seven_fortunes"
 	culture = "doji"
@@ -498,7 +498,7 @@ lineofkakitatoshimo5 = {
 }
 ##### Historical characters 
 lineofkakita1 = {
-	name = "" 	# TODO : special naming for Kakita
+	name = name_kakita 	# TODO : special naming for Kakita
 	dynasty = dynasty_kakita
 	religion = "seven_fortunes"
 	culture = "kakita"

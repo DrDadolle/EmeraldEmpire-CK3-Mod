@@ -19,7 +19,7 @@
 #	HANTEI
 #####################
 lineofhantei1 = {
-	name = "" 	# TODO : special naming for Kami
+	name = name_hantei 	# TODO : special naming for Kami
 	dynasty = dynasty_hantei 	
 	religion = "cult_ancestors"
 	culture = "hantei"
