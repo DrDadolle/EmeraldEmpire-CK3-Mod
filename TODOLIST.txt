@@ -25,35 +25,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 # TO TEST
-- Test Nezumi starting point, culture & religion
-	- test new decision ending
-		-test dejure transformation works !
-	- add images for new shadowlands ending
-	- change events of shadowlands ending images appropriately
-- TODO events travel check geographical_region
-
-[22:01:00][E][jomini_script_system.cpp:284]: Script system error!
-  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
-  Script location: file: common/men_at_arms_types/rokugan_shadowlands_regiment_types.txt line: 87 (pit_oni:can_recruit)
-
-[22:01:00][E][jomini_script_system.cpp:284]: Script system error!
-  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
-  Script location: file: common/men_at_arms_types/00_cultural_maa_types.txt line: 50 (horse_archers:can_recruit)
-
-[22:01:00][E][jomini_script_system.cpp:284]: Script system error!
-  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
-  Script location: file: common/men_at_arms_types/07_ep3_maa_types.txt line: 225 (varangian_guards:can_recruit)
-  
-  [22:01:00][E][jomini_script_system.cpp:284]: Script system error!
-  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
-  Script location: file: common/men_at_arms_types/01_accolade_maa_types.txt line: 465 (accolade_maa_horse_archers:can_recruit)
-
-[22:01:00][E][jomini_script_system.cpp:284]: Script system error!
-  Error: untyped trigger [ Scoped object of type 'character' is not valid (null weak (Character - 4294967295)!) ]
-  Script location: file: common/men_at_arms_types/01_fp1_maa_types.txt line: 31 (vigmen:can_recruit)
+- change events of shadowlands ending images appropriately
 
 ## CK3 1.13.* patch
 -Only B8G8R8A8_UNORM support so far. => Wrong color encoding
+	Gimp 2: Use .DDS plugin and use Export as ABGR8 format, .DDS with Compression=None.
+	OR compress as BC2 / DXT3 ? => check kami_descendant trait
+	OR https://www.gimp-forum.net/attachment.php?aid=2871
 - Add à la AGOT an event when emperor dies "Succession of the Iron Throne" title event
 - Replace the conquer cassus belli internal by the AGOT Neighbour CB ?
 - update vanilla travel background for acitivites to add shadowlands bg
