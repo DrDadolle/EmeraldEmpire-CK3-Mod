@@ -52,18 +52,18 @@ dynasty_beneficiary_won_ghw = {
 	monthly_prestige_gain_mult = 0.1
 	levy_reinforcement_rate_same_faith = 0.15
 }
-
-house_beneficiary_won_ghw_crusade = {
-	icon = piety_positive
-	religious_head_opinion = 5
-	monthly_piety_gain_mult = 0.1
-}
-
-house_beneficiary_won_ghw_jihad = {
-	icon = piety_positive
-	religious_head_opinion = 5
-	monthly_piety_gain_mult = 0.1
-}
+#L5R Disabled
+# house_beneficiary_won_ghw_crusade = {
+# 	icon = piety_positive
+# 	religious_head_opinion = 5
+# 	monthly_piety_gain_mult = 0.1
+# }
+#L5R Disabled
+# house_beneficiary_won_ghw_jihad = {
+# 	icon = piety_positive
+# 	religious_head_opinion = 5
+# 	monthly_piety_gain_mult = 0.1
+# }
 
 house_beneficiary_won_ghw = {
 	icon = piety_positive
