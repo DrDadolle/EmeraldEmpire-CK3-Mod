@@ -135,26 +135,25 @@ fallback_army_03 = {
 
 
 # Turko-Mongol
-#L5R Disabled
-# turkomongol_army_01 = {
-# 	type = army
-# 	graphical_cultures = { mongol_unit_gfx }
-# 	entity = unit_turko_mongol_infantry_01_entity
-# }
+turkomongol_army_01 = {
+	type = army
+	graphical_cultures = { mongol_unit_gfx }
+	entity = unit_turko_mongol_infantry_01_entity
+}
 
-# turkomongol_army_02 = {
-# 	type = army
-# 	quality = @tier2_quality
-# 	graphical_cultures = { mongol_unit_gfx }
-# 	entity = unit_turko_mongol_infantry_02_entity
-# }
+turkomongol_army_02 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { mongol_unit_gfx }
+	entity = unit_turko_mongol_infantry_02_entity
+}
 
-# turkomongol_army_03 = {
-# 	type = army
-# 	quality = @tier3_quality
-# 	graphical_cultures = { mongol_unit_gfx }
-# 	entity = unit_turko_mongol_infantry_03_entity
-# }
+turkomongol_army_03 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { mongol_unit_gfx }
+	entity = unit_turko_mongol_infantry_03_entity
+}
 
 # Sub Saharab
 #L5R Disabled
@@ -275,7 +274,7 @@ fallback_army_03 = {
 # 	entity = unit_fp3_iranian_infantry_03_entity
 # }
 
-# Japanese
+# Japanese (provided from Asia Expansion Project)
 
 japanese_army_01 = {
 	type = army
