@@ -1594,10 +1594,11 @@ ContestHorseRaceName = {
 		trigger = { var:contest_horse_race_name = flag:berserker }
 		localization_key = racehorse_name_berserker
 	}
-	text = {
-		trigger = { var:contest_horse_race_name = flag:crusader }
-		localization_key = racehorse_name_crusader
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = { var:contest_horse_race_name = flag:crusader }
+	# 	localization_key = racehorse_name_crusader
+	# }
 	text = {
 		trigger = { var:contest_horse_race_name = flag:pilgrim }
 		localization_key = racehorse_name_pilgrim

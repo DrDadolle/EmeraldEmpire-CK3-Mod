@@ -103,7 +103,8 @@ wedding_banquet_ongoing_event_pulse = {
 		5 = feast_default.6101 #Shy guest
 		5 = feast_default.1002 #Gluttonous
 		5 = feast_default.1020 #Deface court artifact
-		3 = feast_default.5005 #You just love Garum
+		#L5R Disabled
+		# 3 = feast_default.5005 #You just love Garum
 		3 = feast_default.6111 #A guest rambles on and on
 		3 = feast_default.6121 #Serve guest food you know they hate
 	}

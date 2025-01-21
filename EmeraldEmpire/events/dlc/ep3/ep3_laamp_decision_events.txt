@@ -740,7 +740,7 @@ ep3_laamp_decision_event.1000 = {
 							has_variable = return_from_location
 							NOT = { exists = scope:is_unique_location }
 							#L5R Modified
-							scope:visiting_location = { geographical_region = rokugan_unicorn }
+							scope:visiting_location = { geographical_region = world_rokugan_unicorn }
 							# scope:visiting_location = { geographical_region = world_steppe }
 						}
 						desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_01
@@ -750,7 +750,7 @@ ep3_laamp_decision_event.1000 = {
 							has_variable = return_from_location
 							NOT = { exists = scope:is_unique_location }
 							#L5R Modified
-							scope:visiting_location = { geographical_region = rokugan_unicorn }
+							scope:visiting_location = { geographical_region = world_rokugan_unicorn }
 							# scope:visiting_location = { geographical_region = world_steppe }
 						}
 						desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_02
@@ -760,7 +760,7 @@ ep3_laamp_decision_event.1000 = {
 							has_variable = return_from_location
 							NOT = { exists = scope:is_unique_location }
 							#L5R Modified
-							scope:visiting_location = { geographical_region = rokugan_unicorn }
+							scope:visiting_location = { geographical_region = world_rokugan_unicorn }
 							# scope:visiting_location = { geographical_region = world_steppe }
 						}
 						desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_03
@@ -1953,7 +1953,7 @@ ep3_laamp_decision_event.1001 = {
 					trigger = { 
 						exists = scope:been_to_second
 						#L5R Modified
-						scope:visiting_location = { geographical_region = rokugan_unicorn }
+						scope:visiting_location = { geographical_region = world_rokugan_unicorn }
 						# scope:visiting_location = { geographical_region = world_steppe }
 					}
 					desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_01
@@ -1962,7 +1962,7 @@ ep3_laamp_decision_event.1001 = {
 					trigger = { 
 						exists = scope:been_to_second
 						#L5R Modified
-						scope:visiting_location = { geographical_region = rokugan_unicorn }
+						scope:visiting_location = { geographical_region = world_rokugan_unicorn }
 						# scope:visiting_location = { geographical_region = world_steppe }
 					}
 					desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_02
@@ -1971,7 +1971,7 @@ ep3_laamp_decision_event.1001 = {
 					trigger = { 
 						exists = scope:been_to_second
 						#L5R Modified
-						scope:visiting_location = { geographical_region = rokugan_unicorn }
+						scope:visiting_location = { geographical_region = world_rokugan_unicorn }
 						# scope:visiting_location = { geographical_region = world_steppe }
 					}
 					desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_03

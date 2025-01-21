@@ -739,20 +739,21 @@ on_war_started = {
 					involvement = involved
 					save_scope_as = struggle
 				}
-				scope:war = {
-					set_variable = {
-						name = struggle_involvement_defender
-						value = flag:involved
-					}
-					set_variable = {
-						name = struggle_scope_defender
-						value = scope:struggle
-					}
-					set_variable = {
-						name = struggle_defender_tier
-						value = scope:defender.highest_held_title_tier
-					}
-				}
+				#L5R Disabled
+				# scope:war = {
+				# 	set_variable = {
+				# 		name = struggle_involvement_defender
+				# 		value = flag:involved
+				# 	}
+				# 	set_variable = {
+				# 		name = struggle_scope_defender
+				# 		value = scope:struggle
+				# 	}
+				# 	set_variable = {
+				# 		name = struggle_defender_tier
+				# 		value = scope:defender.highest_held_title_tier
+				# 	}
+				# }
 			}
 			### Interloper.
 			else_if = {

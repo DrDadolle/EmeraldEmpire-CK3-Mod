@@ -607,11 +607,11 @@ phallic_mountain_modifier = {
 	attraction_opinion = 20
 	fertility = 0.1
 }
-
-tomb_robber_modifier = {
-	icon = social_negative
-	different_faith_opinion = -5
-}
+#L5R Disabled
+# tomb_robber_modifier = {
+# 	icon = social_negative
+# 	different_faith_opinion = -5
+# }
 
 respect_for_the_dead_modifier = {
 	icon = social_positive
