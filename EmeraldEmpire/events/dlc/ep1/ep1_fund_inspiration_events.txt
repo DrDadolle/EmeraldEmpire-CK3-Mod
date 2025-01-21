@@ -19147,98 +19147,99 @@ fund_inspiration.6503 = {
 		base = 1
 	}
 
-	immediate = {
-		hidden_effect = {
-			scope:inspiration_owner = {
-				create_artifact = {
-					name = kurgan_ornament_name
-					description = kurgan_ornament_description
-					type = miscellaneous
-					visuals = small_box
-					modifier = artifact_court_grandeur_baseline_add_1_modifier
-					save_scope_as = kurgan_ornament
-				}
-			}
-			hidden_effect_new_object = {
-				scope:kurgan_ornament = {
-					flag_as_trash_artifact = yes
-					set_variable = {
-						name = kurgan_ornament
-						value = yes
-					}
-				}
-			}
-		}
-		hidden_effect = {
-			scope:inspiration_owner = {
-				create_artifact = {
-					name = kurgan_saddle_name
-					description = kurgan_saddle_description
-					type = miscellaneous
-					visuals = medium_box
-					modifier = artifact_monthly_martial_lifestyle_xp_1_modifier
-					save_scope_as = kurgan_saddle
-				}
-			}
-			hidden_effect_new_object = {
-				scope:kurgan_saddle = {
-					flag_as_trash_artifact = yes
-					set_variable = {
-						name = kurgan_saddle
-						value = yes
-					}
-				}
-			}
-		}
-	}
-
-	option = {  # get a fancy little bauble from the tomb
-		name = fund_inspiration.6503.a
-		scope:kurgan_ornament = {
-			set_owner = root
-		}
-		hidden_effect = { destroy_artifact = scope:kurgan_saddle }
-		scope:inspiration_owner = {
-			add_character_modifier = {
-				modifier = tomb_robber_modifier
-				years = 2
-			}
-		}
-		add_character_modifier = {
-			modifier = tomb_robber_modifier
-			years = 2
-		}
-		ai_chance = {
-			base = 25
-			ai_value_modifier = {
-				ai_greed = 0.5
-			}
-		}
-	}
-
-	option = { # study the saddles and horsemanship of the scythians
-		name = fund_inspiration.6503.b
-		scope:kurgan_saddle = {
-			set_owner = root
-		}
-		hidden_effect = { destroy_artifact = scope:kurgan_ornament }
-		scope:inspiration_owner = {
-			add_character_modifier = {
-				modifier = tomb_robber_modifier
-				years = 2
-			}
-		}
-		add_character_modifier = {
-			modifier = tomb_robber_modifier
-			years = 2
-		}
-		ai_chance = {
-			base = 25
-			ai_value_modifier = {
-				ai_boldness = 0.5
-			}
-		}
-	}
+	#L5R Disabled
+	# immediate = {
+	# 	hidden_effect = {
+	# 		scope:inspiration_owner = {
+	# 			create_artifact = {
+	# 				name = kurgan_ornament_name
+	# 				description = kurgan_ornament_description
+	# 				type = miscellaneous
+	# 				visuals = small_box
+	# 				modifier = artifact_court_grandeur_baseline_add_1_modifier
+	# 				save_scope_as = kurgan_ornament
+	# 			}
+	# 		}
+	# 		hidden_effect_new_object = {
+	# 			scope:kurgan_ornament = {
+	# 				flag_as_trash_artifact = yes
+	# 				set_variable = {
+	# 					name = kurgan_ornament
+	# 					value = yes
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	hidden_effect = {
+	# 		scope:inspiration_owner = {
+	# 			create_artifact = {
+	# 				name = kurgan_saddle_name
+	# 				description = kurgan_saddle_description
+	# 				type = miscellaneous
+	# 				visuals = medium_box
+	# 				modifier = artifact_monthly_martial_lifestyle_xp_1_modifier
+	# 				save_scope_as = kurgan_saddle
+	# 			}
+	# 		}
+	# 		hidden_effect_new_object = {
+	# 			scope:kurgan_saddle = {
+	# 				flag_as_trash_artifact = yes
+	# 				set_variable = {
+	# 					name = kurgan_saddle
+	# 					value = yes
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	#L5R Disabled
+	# option = {  # get a fancy little bauble from the tomb
+	# 	name = fund_inspiration.6503.a
+	# 	scope:kurgan_ornament = {
+	# 		set_owner = root
+	# 	}
+	# 	hidden_effect = { destroy_artifact = scope:kurgan_saddle }
+	# 	scope:inspiration_owner = {
+	# 		add_character_modifier = {
+	# 			modifier = tomb_robber_modifier
+	# 			years = 2
+	# 		}
+	# 	}
+	# 	add_character_modifier = {
+	# 		modifier = tomb_robber_modifier
+	# 		years = 2
+	# 	}
+	# 	ai_chance = {
+	# 		base = 25
+	# 		ai_value_modifier = {
+	# 			ai_greed = 0.5
+	# 		}
+	# 	}
+	# }
+	#L5R Disabled
+	# option = { # study the saddles and horsemanship of the scythians
+	# 	name = fund_inspiration.6503.b
+	# 	scope:kurgan_saddle = {
+	# 		set_owner = root
+	# 	}
+	# 	hidden_effect = { destroy_artifact = scope:kurgan_ornament }
+	# 	scope:inspiration_owner = {
+	# 		add_character_modifier = {
+	# 			modifier = tomb_robber_modifier
+	# 			years = 2
+	# 		}
+	# 	}
+	# 	add_character_modifier = {
+	# 		modifier = tomb_robber_modifier
+	# 		years = 2
+	# 	}
+	# 	ai_chance = {
+	# 		base = 25
+	# 		ai_value_modifier = {
+	# 			ai_boldness = 0.5
+	# 		}
+	# 	}
+	# }
 
 	option = { # refuse to rob the tomb
 		name = fund_inspiration.6503.c

@@ -5,7 +5,8 @@ ransom_interaction_effect = {
 		limit = {
 			NOR = {
 				scope:influence_send_option = yes
-				scope:extortionate_current_gold = yes
+				#L5R Disabled
+				# scope:extortionate_current_gold = yes
 				scope:extortionate_gold = yes
 				scope:gold = yes
 				scope:current_gold = yes
@@ -145,14 +146,15 @@ ransom_interaction_effect = {
 				}
 				scope:imprisoner = { add_prestige = scope:prisoner.increased_ransom_cost_value }
 			}
+			#L5R Disabled
 			# Perk: whatever they can pay + bonus prestige
-			scope:extortionate_current_gold = {
-				pay_short_term_gold = {
-					gold = scope:ransom_saved_gold_value # Calculated earlier in the ransom interaction.
-					target = scope:imprisoner
-				}
-				scope:imprisoner = { add_prestige = scope:ransom_saved_gold_value }
-			}
+			# scope:extortionate_current_gold = {
+			# 	pay_short_term_gold = {
+			# 		gold = scope:ransom_saved_gold_value # Calculated earlier in the ransom interaction.
+			# 		target = scope:imprisoner
+			# 	}
+			# 	scope:imprisoner = { add_prestige = scope:ransom_saved_gold_value }
+			# }
 			# Full ransom
 			scope:gold = {
 				pay_short_term_gold = {
