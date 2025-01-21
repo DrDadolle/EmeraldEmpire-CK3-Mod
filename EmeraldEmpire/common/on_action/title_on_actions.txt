@@ -1790,10 +1790,11 @@ on_title_lost = {
 		# Additional Flavor Title
 		additional_flavor_check_effect = yes
 		
-		if = {
-			limit = { scope:title = title:e_roman_empire }
-			remove_variable = uses_custom_caesar_flavourization
-		}
+		#L5R Disabled
+		# if = {
+		# 	limit = { scope:title = title:e_roman_empire }
+		# 	remove_variable = uses_custom_caesar_flavourization
+		# }
 		#Notification for house members of loser
 		if = {
 			limit = {

@@ -566,345 +566,345 @@
 # by Ewan Cowhig Croft
 # 0011 - 0020
 ##################################################
+#L5R Disabled
+# scripted_trigger fp1_prime_trade_partner_still_valid_trigger = {
+# 	exists = $RAIDER$.var:fp1_prime_trade_deal
+# 	$RAIDER$.var:fp1_prime_trade_deal = {
+# 		this = $RECIPIENT$
+# 		is_alive = yes
+# 		is_landed = yes
+# 		# Make sure the truce hasn't been cancelled.
+# 		has_truce = $RAIDER$
+# 		$RAIDER$ = { has_truce = var:fp1_prime_trade_deal }
+# 		# And that the characters haven't wound up in the same realm somehow.
+# 		NOT = { top_liege = $RAIDER$.top_liege }
+# 	}
+# }
+#L5R Disabled
+# scripted_effect fp1_trade_events_trade_renewed_raider_perspective_effect = {
+# 	# Add the truce.
+# 	add_truce_both_ways = {
+# 		character = scope:recipient
+# 		days = fp1_trade_events_truce_length_value
+# 		name = TRUCE_TRADE_DEAL
+# 	}
+# 	# Nudge towards friendship.
+# 	progress_towards_friend_effect = {
+# 		CHARACTER = scope:recipient
+# 		OPINION = 30
+# 		REASON = friend_fp1_renewed_trade_deal
+# 	}
+# 	# Gain some prestige.
+# 	add_prestige = major_prestige_gain
+# 	# Sort deal veterancy.
+# 	set_variable = {
+# 		name = fp1_renewed_trade_deal
+# 		value = scope:recipient
+# 		days = fp1_trade_events_truce_length_value
+# 	}
+# }
+#L5R Disabled
+# scripted_effect fp1_trade_events_trade_renewed_defender_perspective_effect = {
+# 	# Truce added in scope:raider's perspective.
+# 	show_as_tooltip = {
+# 		add_truce_both_ways = {
+# 			character = scope:raider
+# 			days = fp1_trade_events_truce_length_value
+# 			name = TRUCE_TRADE_DEAL
+# 		}
+# 	}
+# 	# Nudge towards friendship.
+# 	show_as_tooltip = {
+# 		progress_towards_friend_effect = {
+# 			CHARACTER = scope:raider
+# 			OPINION = 30
+# 			REASON = friend_fp1_renewed_trade_deal
+# 		}
+# 	}
+# 	# Since prestige is the independence reward, we give a little bit of static cash.
+# 	add_gold = 50
+# }
+#L5R Disabled
+# scripted_effect fp1_trade_events_trade_renewal_rejected_effect = {
+# 	add_prestige = minor_prestige_loss
+# 	custom_tooltip = fp1_trade_events.0011.b.tt
+# }
+#L5R Disabled
+# #	A trade ceasefire has expired and can be renewed.
+# fp1_trade_events.0011 = {
+# 	type = character_event
+# 	title = fp1_trade_events.0011.t
+# 	desc = {
+# 		first_valid = {
+# 			# Not your first renewal.
+# 			triggered_desc = {
+# 				trigger = {
+# 					exists = var:fp1_renewed_trade_deal
+# 					var:fp1_renewed_trade_deal = var:fp1_prime_trade_deal
+# 				}
+# 				desc = fp1_trade_events.0011.desc.subsequent_renewal
+# 			}
+# 			# First time renewing this particular deal.
+# 			desc = fp1_trade_events.0011.desc.first_renewal
+# 		}
+# 		desc = fp1_trade_events.0011.desc.outro
+# 	}
+# 	theme = stewardship
+# 	left_portrait = {
+# 		character = scope:raider
+# 		animation = personality_rational
+# 	}
+# 	right_portrait = {
+# 		character = scope:recipient
+# 		animation = personality_bold
+# 	}
+# 	override_background = { reference = market }
 
-scripted_trigger fp1_prime_trade_partner_still_valid_trigger = {
-	exists = $RAIDER$.var:fp1_prime_trade_deal
-	$RAIDER$.var:fp1_prime_trade_deal = {
-		this = $RECIPIENT$
-		is_alive = yes
-		is_landed = yes
-		# Make sure the truce hasn't been cancelled.
-		has_truce = $RAIDER$
-		$RAIDER$ = { has_truce = var:fp1_prime_trade_deal }
-		# And that the characters haven't wound up in the same realm somehow.
-		NOT = { top_liege = $RAIDER$.top_liege }
-	}
-}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Standard checks.
+# 		is_landed = yes
+# 		# Scope:raider's prime trade deal must still be valid.
+# 		fp1_prime_trade_partner_still_valid_trigger = {
+# 			RECIPIENT = scope:recipient
+# 			RAIDER = scope:raider
+# 		}
+# 	}
 
-scripted_effect fp1_trade_events_trade_renewed_raider_perspective_effect = {
-	# Add the truce.
-	add_truce_both_ways = {
-		character = scope:recipient
-		days = fp1_trade_events_truce_length_value
-		name = TRUCE_TRADE_DEAL
-	}
-	# Nudge towards friendship.
-	progress_towards_friend_effect = {
-		CHARACTER = scope:recipient
-		OPINION = 30
-		REASON = friend_fp1_renewed_trade_deal
-	}
-	# Gain some prestige.
-	add_prestige = major_prestige_gain
-	# Sort deal veterancy.
-	set_variable = {
-		name = fp1_renewed_trade_deal
-		value = scope:recipient
-		days = fp1_trade_events_truce_length_value
-	}
-}
+# 	# A grand offer!
+# 	option = {
+# 		name = fp1_trade_events.0011.a
+# 		# Make sure players in MP don't cheese anything.
+# 		trigger = {
+# 			fp1_prime_trade_partner_still_valid_trigger = {
+# 				RECIPIENT = scope:recipient
+# 				RAIDER = scope:raider
+# 			}
+# 		}
 
-scripted_effect fp1_trade_events_trade_renewed_defender_perspective_effect = {
-	# Truce added in scope:raider's perspective.
-	show_as_tooltip = {
-		add_truce_both_ways = {
-			character = scope:raider
-			days = fp1_trade_events_truce_length_value
-			name = TRUCE_TRADE_DEAL
-		}
-	}
-	# Nudge towards friendship.
-	show_as_tooltip = {
-		progress_towards_friend_effect = {
-			CHARACTER = scope:raider
-			OPINION = 30
-			REASON = friend_fp1_renewed_trade_deal
-		}
-	}
-	# Since prestige is the independence reward, we give a little bit of static cash.
-	add_gold = 50
-}
+# 		# You offer a renewal to scope:recipient.
+# 		random_list = {
+# 			100 = {
+# 				show_chance = no
+# 				desc = fp1_trade_events.0011.a.accepted
+# 				show_as_tooltip = { fp1_trade_events_trade_renewed_raider_perspective_effect = yes }
+# 			}
+# 			100 = {
+# 				show_chance = no
+# 				desc = fp1_trade_events.0011.a.rejected
+# 				show_as_tooltip = { fp1_trade_events_trade_renewal_rejected_effect = yes }
+# 			}
+# 		}
+# 		scope:recipient = { trigger_event = fp1_trade_events.0012 }
 
-scripted_effect fp1_trade_events_trade_renewal_rejected_effect = {
-	add_prestige = minor_prestige_loss
-	custom_tooltip = fp1_trade_events.0011.b.tt
-}
-
-#	A trade ceasefire has expired and can be renewed.
-fp1_trade_events.0011 = {
-	type = character_event
-	title = fp1_trade_events.0011.t
-	desc = {
-		first_valid = {
-			# Not your first renewal.
-			triggered_desc = {
-				trigger = {
-					exists = var:fp1_renewed_trade_deal
-					var:fp1_renewed_trade_deal = var:fp1_prime_trade_deal
-				}
-				desc = fp1_trade_events.0011.desc.subsequent_renewal
-			}
-			# First time renewing this particular deal.
-			desc = fp1_trade_events.0011.desc.first_renewal
-		}
-		desc = fp1_trade_events.0011.desc.outro
-	}
-	theme = stewardship
-	left_portrait = {
-		character = scope:raider
-		animation = personality_rational
-	}
-	right_portrait = {
-		character = scope:recipient
-		animation = personality_bold
-	}
-	override_background = { reference = market }
-
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Standard checks.
-		is_landed = yes
-		# Scope:raider's prime trade deal must still be valid.
-		fp1_prime_trade_partner_still_valid_trigger = {
-			RECIPIENT = scope:recipient
-			RAIDER = scope:raider
-		}
-	}
-
-	# A grand offer!
-	option = {
-		name = fp1_trade_events.0011.a
-		# Make sure players in MP don't cheese anything.
-		trigger = {
-			fp1_prime_trade_partner_still_valid_trigger = {
-				RECIPIENT = scope:recipient
-				RAIDER = scope:raider
-			}
-		}
-
-		# You offer a renewal to scope:recipient.
-		random_list = {
-			100 = {
-				show_chance = no
-				desc = fp1_trade_events.0011.a.accepted
-				show_as_tooltip = { fp1_trade_events_trade_renewed_raider_perspective_effect = yes }
-			}
-			100 = {
-				show_chance = no
-				desc = fp1_trade_events.0011.a.rejected
-				show_as_tooltip = { fp1_trade_events_trade_renewal_rejected_effect = yes }
-			}
-		}
-		scope:recipient = { trigger_event = fp1_trade_events.0012 }
-
-		stress_impact = {
-			honest = minor_stress_impact_loss
-			arbitrary = medium_stress_impact_gain
-			fickle = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = 0.5
-				ai_sociability = 0.25
-				ai_rationality = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = honest
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = arbitrary
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = fickle
-			}
-		}
-	}
+# 		stress_impact = {
+# 			honest = minor_stress_impact_loss
+# 			arbitrary = medium_stress_impact_gain
+# 			fickle = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = 0.5
+# 				ai_sociability = 0.25
+# 				ai_rationality = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = honest
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = fickle
+# 			}
+# 		}
+# 	}
 	
-	# This has run its course...
-	option = {
-		name = fp1_trade_events.0011.b
+# 	# This has run its course...
+# 	option = {
+# 		name = fp1_trade_events.0011.b
 
-		# A bit of consolation prestige for your hard-work.
-		add_prestige = minor_prestige_gain
-		# Confirm that the deal will lapse as expected.
-		custom_tooltip = fp1_trade_events.0011.b.tt
+# 		# A bit of consolation prestige for your hard-work.
+# 		add_prestige = minor_prestige_gain
+# 		# Confirm that the deal will lapse as expected.
+# 		custom_tooltip = fp1_trade_events.0011.b.tt
 
-		stress_impact = {
-			arbitrary = minor_stress_impact_loss
-			fickle = minor_stress_impact_loss
-			honest = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.25
-				ai_sociability = -0.25
-				ai_rationality = -0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arbitrary
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = fickle
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = honest
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			arbitrary = minor_stress_impact_loss
+# 			fickle = minor_stress_impact_loss
+# 			honest = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.25
+# 				ai_sociability = -0.25
+# 				ai_rationality = -0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = fickle
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = honest
+# 			}
+# 		}
+# 	}
+# }
+#L5R Disabled
+# #	A trading partner proposes an extension.
+# fp1_trade_events.0012 = {
+# 	type = character_event
+# 	title = fp1_trade_events.0012.t
+# 	desc = {
+# 		first_valid = {
+# 			# Not your first renewal.
+# 			triggered_desc = {
+# 				trigger = {
+# 					exists = var:fp1_renewed_trade_deal
+# 					var:fp1_renewed_trade_deal = var:fp1_prime_trade_deal
+# 				}
+# 				desc = fp1_trade_events.0012.desc.subsequent_renewal
+# 			}
+# 			# First time renewing this particular deal.
+# 			desc = fp1_trade_events.0012.desc.first_renewal
+# 		}
+# 		desc = fp1_trade_events.0012.desc.outro
+# 	}
+# 	theme = stewardship
+# 	left_portrait = {
+# 		character = scope:recipient
+# 		animation = personality_rational
+# 	}
+# 	right_portrait = {
+# 		character = scope:raider
+# 		animation = admiration
+# 	}
+# 	override_background = { reference = market }
 
-#	A trading partner proposes an extension.
-fp1_trade_events.0012 = {
-	type = character_event
-	title = fp1_trade_events.0012.t
-	desc = {
-		first_valid = {
-			# Not your first renewal.
-			triggered_desc = {
-				trigger = {
-					exists = var:fp1_renewed_trade_deal
-					var:fp1_renewed_trade_deal = var:fp1_prime_trade_deal
-				}
-				desc = fp1_trade_events.0012.desc.subsequent_renewal
-			}
-			# First time renewing this particular deal.
-			desc = fp1_trade_events.0012.desc.first_renewal
-		}
-		desc = fp1_trade_events.0012.desc.outro
-	}
-	theme = stewardship
-	left_portrait = {
-		character = scope:recipient
-		animation = personality_rational
-	}
-	right_portrait = {
-		character = scope:raider
-		animation = admiration
-	}
-	override_background = { reference = market }
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Scope:raider's prime trade deal must still be valid.
+# 		fp1_prime_trade_partner_still_valid_trigger = {
+# 			RECIPIENT = scope:recipient
+# 			RAIDER = scope:raider
+# 		}
+# 	}
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Scope:raider's prime trade deal must still be valid.
-		fp1_prime_trade_partner_still_valid_trigger = {
-			RECIPIENT = scope:recipient
-			RAIDER = scope:raider
-		}
-	}
+# 	# A most agreeable proposal.
+# 	option = {
+# 		name = fp1_trade_events.0012.a
+# 		# Make sure players in MP don't cheese anything.
+# 		trigger = {
+# 			fp1_prime_trade_partner_still_valid_trigger = {
+# 				RECIPIENT = scope:recipient
+# 				RAIDER = scope:raider
+# 			}
+# 		}
 
-	# A most agreeable proposal.
-	option = {
-		name = fp1_trade_events.0012.a
-		# Make sure players in MP don't cheese anything.
-		trigger = {
-			fp1_prime_trade_partner_still_valid_trigger = {
-				RECIPIENT = scope:recipient
-				RAIDER = scope:raider
-			}
-		}
+# 		# You agree to a renewal with scope:raider.
+# 		fp1_trade_events_trade_renewed_defender_perspective_effect = yes
+# 		# Inform scope:raider.
+# 		scope:raider = {
+# 			hidden_effect = {
+# 				send_interface_toast = {
+# 					title = fp1_trade_events.0012.a.tt_success
+# 					left_icon = scope:recipient
+# 					fp1_trade_events_trade_renewed_raider_perspective_effect = yes
+# 				}
+# 			}
+# 		}
 
-		# You agree to a renewal with scope:raider.
-		fp1_trade_events_trade_renewed_defender_perspective_effect = yes
-		# Inform scope:raider.
-		scope:raider = {
-			hidden_effect = {
-				send_interface_toast = {
-					title = fp1_trade_events.0012.a.tt_success
-					left_icon = scope:recipient
-					fp1_trade_events_trade_renewed_raider_perspective_effect = yes
-				}
-			}
-		}
-
-		stress_impact = {
-			honest = minor_stress_impact_loss
-			arbitrary = medium_stress_impact_gain
-			fickle = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			opinion_modifier = { opinion_target = scope:raider}
-			ai_value_modifier = {
-				ai_honor = 0.5
-				ai_sociability = 0.25
-				ai_rationality = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = honest
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = arbitrary
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = fickle
-			}
-		}
-	}
+# 		stress_impact = {
+# 			honest = minor_stress_impact_loss
+# 			arbitrary = medium_stress_impact_gain
+# 			fickle = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			opinion_modifier = { opinion_target = scope:raider}
+# 			ai_value_modifier = {
+# 				ai_honor = 0.5
+# 				ai_sociability = 0.25
+# 				ai_rationality = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = honest
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = fickle
+# 			}
+# 		}
+# 	}
 	
-	# I'm done with this GetWomanMan.
-	option = {
-		name = fp1_trade_events.0012.b
+# 	# I'm done with this GetWomanMan.
+# 	option = {
+# 		name = fp1_trade_events.0012.b
 
-		# A bit of consolation prestige for your independence.
-		add_prestige = minor_prestige_gain
-		# Confirm that the deal will lapse as expected.
-		custom_tooltip = fp1_trade_events.0012.b.tt
-		# Inform scope:raider, who is disappointed.
-		scope:raider = {
-			add_opinion = {
-				target = scope:recipient
-				modifier = disappointed_opinion
-				opinion = -20
-			}
-			hidden_effect = {
-				send_interface_toast = {	
-					title = fp1_trade_events.0012.b.tt_failure
-					left_icon = scope:recipient
-					fp1_trade_events_trade_renewal_rejected_effect = yes
-				}
-			}
-		}
+# 		# A bit of consolation prestige for your independence.
+# 		add_prestige = minor_prestige_gain
+# 		# Confirm that the deal will lapse as expected.
+# 		custom_tooltip = fp1_trade_events.0012.b.tt
+# 		# Inform scope:raider, who is disappointed.
+# 		scope:raider = {
+# 			add_opinion = {
+# 				target = scope:recipient
+# 				modifier = disappointed_opinion
+# 				opinion = -20
+# 			}
+# 			hidden_effect = {
+# 				send_interface_toast = {	
+# 					title = fp1_trade_events.0012.b.tt_failure
+# 					left_icon = scope:recipient
+# 					fp1_trade_events_trade_renewal_rejected_effect = yes
+# 				}
+# 			}
+# 		}
 
-		stress_impact = {
-			arbitrary = minor_stress_impact_loss
-			fickle = minor_stress_impact_loss
-			honest = minor_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_honor = -0.25
-				ai_sociability = -0.25
-				ai_rationality = -0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arbitrary
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = fickle
-			}
-			modifier = {	# Weight down for stress.
-				add = -10
-				has_trait = honest
-			}
-		}
-	}
-}
+# 		stress_impact = {
+# 			arbitrary = minor_stress_impact_loss
+# 			fickle = minor_stress_impact_loss
+# 			honest = minor_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_honor = -0.25
+# 				ai_sociability = -0.25
+# 				ai_rationality = -0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arbitrary
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = fickle
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -10
+# 				has_trait = honest
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # Visitors from Afar
@@ -1867,329 +1867,329 @@ fp1_trade_events.0051 = {
 # by Ewan Cowhig Croft
 # 1131 - 1170
 ##################################################
-
+#L5R Disabled
 #	You buy off an SA's troops, or offer them a position under you.
-fp1_trade_events.1131 = {
-	type = character_event
-	title = fp1_trade_events.1131.t
-	desc = fp1_trade_events.1131.desc
-	theme = war
-	left_portrait = {
-		character = scope:defender
-		animation = worry
-	}
-	right_portrait = {
-		character = scope:attacker
-		animation = personality_greedy
-	}
-	override_background = { reference = fp1_beached_longships }
+# fp1_trade_events.1131 = {
+# 	type = character_event
+# 	title = fp1_trade_events.1131.t
+# 	desc = fp1_trade_events.1131.desc
+# 	theme = war
+# 	left_portrait = {
+# 		character = scope:defender
+# 		animation = worry
+# 	}
+# 	right_portrait = {
+# 		character = scope:attacker
+# 		animation = personality_greedy
+# 	}
+# 	override_background = { reference = fp1_beached_longships }
 
-	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Make sure the war is still ongoing
-		any_character_war = {
-			using_cb = fp1_scandi_adventurer_conquest
-			primary_attacker = scope:attacker
-			primary_defender = scope:defender
-		}
-	}
+# 	trigger = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Make sure the war is still ongoing
+# 		any_character_war = {
+# 			using_cb = fp1_scandi_adventurer_conquest
+# 			primary_attacker = scope:attacker
+# 			primary_defender = scope:defender
+# 		}
+# 	}
 
-	immediate = {
-		# Grab the CB for general reference.
-		random_character_war = {
-			limit = {
-				using_cb = fp1_scandi_adventurer_conquest
-				primary_attacker = scope:attacker
-				primary_defender = scope:defender
-			}
-			save_scope_as = sa_war
-		}
-	}
+# 	immediate = {
+# 		# Grab the CB for general reference.
+# 		random_character_war = {
+# 			limit = {
+# 				using_cb = fp1_scandi_adventurer_conquest
+# 				primary_attacker = scope:attacker
+# 				primary_defender = scope:defender
+# 			}
+# 			save_scope_as = sa_war
+# 		}
+# 	}
 
-	# Never! Back to your frozen hellscape of a home, scum!
-	option = {
-		name = fp1_trade_events.1131.a
+# 	# Never! Back to your frozen hellscape of a home, scum!
+# 	option = {
+# 		name = fp1_trade_events.1131.a
 
-		# Gain a bit of prestige for your boasting.
-		add_prestige = medium_prestige_gain
-		# Stress gain trade-off handled in stress impact.
-		# Clarify that this is merely another trade-off option.
-		custom_tooltip = fp1_trade_events.1131.d.tt
+# 		# Gain a bit of prestige for your boasting.
+# 		add_prestige = medium_prestige_gain
+# 		# Stress gain trade-off handled in stress impact.
+# 		# Clarify that this is merely another trade-off option.
+# 		custom_tooltip = fp1_trade_events.1131.d.tt
 
-		stress_impact = {
-			base = medium_stress_gain
-			arrogant = minor_stress_impact_loss
-			ambitious = minor_stress_impact_loss
-			stubborn = minor_stress_impact_loss
-			vengeful = minor_stress_impact_loss
-			humble = medium_stress_impact_gain
-			content = medium_stress_impact_gain
-			fickle = medium_stress_impact_gain
-			forgiving = medium_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_vengefulness = 0.5
-				ai_energy = 0.25
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = arrogant
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = ambitious
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = stubborn
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = vengeful
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = humble
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = content
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = fickle
-			}
-			modifier = {	# Weight down for stress.
-				add = -20
-				has_trait = forgiving
-			}
-		}
-	}
+# 		stress_impact = {
+# 			base = medium_stress_gain
+# 			arrogant = minor_stress_impact_loss
+# 			ambitious = minor_stress_impact_loss
+# 			stubborn = minor_stress_impact_loss
+# 			vengeful = minor_stress_impact_loss
+# 			humble = medium_stress_impact_gain
+# 			content = medium_stress_impact_gain
+# 			fickle = medium_stress_impact_gain
+# 			forgiving = medium_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_vengefulness = 0.5
+# 				ai_energy = 0.25
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = ambitious
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = stubborn
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = vengeful
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = humble
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = content
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = fickle
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -20
+# 				has_trait = forgiving
+# 			}
+# 		}
+# 	}
 	
-	# Well, if it's land they want...
-	option = {
-		name = fp1_trade_events.1131.b
-		trigger = {
-			# Must be able to vassalise a duke.
-			highest_held_title_tier >= tier_kingdom
-			# Target duchy doesn't contain a player that isn't scope:defender.
-			NOT = {
-				any_player = {
-					# First, see if they're a vassal of scope:defender.
-					any_liege_or_above = { this = scope:defender }
-					# And if they are, make sure they have no titles held within the appropriate lands.
-					save_temporary_scope_as = vassal_player
-					any_in_list = {
-						list = target_titles
-						holder = scope:vassal_player
-					}
-				}
-			}
-			# Scope:defender must control at least some lands outside of the target duchy.
-			any_held_title = {
-				NOT = { is_in_list = target_titles }
-			}
-		}
+# 	# Well, if it's land they want...
+# 	option = {
+# 		name = fp1_trade_events.1131.b
+# 		trigger = {
+# 			# Must be able to vassalise a duke.
+# 			highest_held_title_tier >= tier_kingdom
+# 			# Target duchy doesn't contain a player that isn't scope:defender.
+# 			NOT = {
+# 				any_player = {
+# 					# First, see if they're a vassal of scope:defender.
+# 					any_liege_or_above = { this = scope:defender }
+# 					# And if they are, make sure they have no titles held within the appropriate lands.
+# 					save_temporary_scope_as = vassal_player
+# 					any_in_list = {
+# 						list = target_titles
+# 						holder = scope:vassal_player
+# 					}
+# 				}
+# 			}
+# 			# Scope:defender must control at least some lands outside of the target duchy.
+# 			any_held_title = {
+# 				NOT = { is_in_list = target_titles }
+# 			}
+# 		}
 
-		# You allow them to win the war...
-		scope:sa_war = { end_war = attacker }
-		add_prestige = major_prestige_loss
-		# ... but then immediately vassalise them.
-		create_title_and_vassal_change = {
-			type = swear_fealty
-			save_scope_as = change
-		}
-		scope:attacker = {
-			change_liege = {
-				liege = scope:defender
-				change = scope:change
-			}
-		}
-		resolve_title_and_vassal_change = scope:change
-		# This also gives a nice long truce so that they can't immediately usurp you.
-		hidden_effect = {
-			cancel_truce_both_ways = scope:attacker
-		}
-		add_truce_both_ways = {
-			character = scope:attacker
-			days = 7300
-			name = FP1_SCANDINAVIAN_ADVENTURER_VASSAL_TRUCE_NAME
-		}
-		# Plus we whack some opinion in there for good measure.
-		progress_towards_friend_effect = {
-			CHARACTER = scope:attacker
-			OPINION = 50
-			REASON = friend_fp1_renewed_trade_deal
-		}
-		# Finally, add a breather before the next SA.
-		fp1_add_realm_size_appropriate_sa_reprieve_effect = yes
+# 		# You allow them to win the war...
+# 		scope:sa_war = { end_war = attacker }
+# 		add_prestige = major_prestige_loss
+# 		# ... but then immediately vassalise them.
+# 		create_title_and_vassal_change = {
+# 			type = swear_fealty
+# 			save_scope_as = change
+# 		}
+# 		scope:attacker = {
+# 			change_liege = {
+# 				liege = scope:defender
+# 				change = scope:change
+# 			}
+# 		}
+# 		resolve_title_and_vassal_change = scope:change
+# 		# This also gives a nice long truce so that they can't immediately usurp you.
+# 		hidden_effect = {
+# 			cancel_truce_both_ways = scope:attacker
+# 		}
+# 		add_truce_both_ways = {
+# 			character = scope:attacker
+# 			days = 7300
+# 			name = FP1_SCANDINAVIAN_ADVENTURER_VASSAL_TRUCE_NAME
+# 		}
+# 		# Plus we whack some opinion in there for good measure.
+# 		progress_towards_friend_effect = {
+# 			CHARACTER = scope:attacker
+# 			OPINION = 50
+# 			REASON = friend_fp1_renewed_trade_deal
+# 		}
+# 		# Finally, add a breather before the next SA.
+# 		fp1_add_realm_size_appropriate_sa_reprieve_effect = yes
 
-		stress_impact = {
-			generous = minor_stress_impact_loss
-			humble = minor_stress_impact_loss
-			content = minor_stress_impact_loss
-			fickle = minor_stress_impact_loss
-			forgiving = minor_stress_impact_loss
-			greedy = major_stress_impact_gain
-			arrogant = major_stress_impact_gain
-			ambitious = major_stress_impact_gain
-			stubborn = major_stress_impact_gain
-			vengeful = major_stress_impact_gain
-		}
-		ai_chance = {
-			# Base 0 so that only a particular kind of AI will go for this.
-			base = 0
-			ai_value_modifier = {
-				ai_rationality = 0.25
-				ai_greed = -0.5
-				ai_vengefulness = -0.75
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = generous
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = humble
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = content
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = fickle
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = forgiving
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = greedy
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = arrogant
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = ambitious
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = stubborn
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = vengeful
-			}
-		}
-	}
+# 		stress_impact = {
+# 			generous = minor_stress_impact_loss
+# 			humble = minor_stress_impact_loss
+# 			content = minor_stress_impact_loss
+# 			fickle = minor_stress_impact_loss
+# 			forgiving = minor_stress_impact_loss
+# 			greedy = major_stress_impact_gain
+# 			arrogant = major_stress_impact_gain
+# 			ambitious = major_stress_impact_gain
+# 			stubborn = major_stress_impact_gain
+# 			vengeful = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			# Base 0 so that only a particular kind of AI will go for this.
+# 			base = 0
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.25
+# 				ai_greed = -0.5
+# 				ai_vengefulness = -0.75
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = generous
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = humble
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = content
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = fickle
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = forgiving
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = ambitious
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = stubborn
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = vengeful
+# 			}
+# 		}
+# 	}
 	
-	# In my experience, soldiers prefer gold to glory.
-	option = {
-		name = fp1_trade_events.1131.c
-		trigger = {
-			can_make_expensive_purchase_trigger = { PRICE = monumental_gold_value }
-		}
+# 	# In my experience, soldiers prefer gold to glory.
+# 	option = {
+# 		name = fp1_trade_events.1131.c
+# 		trigger = {
+# 			can_make_expensive_purchase_trigger = { PRICE = monumental_gold_value }
+# 		}
 
-		# Pay scope:attacker's troops to sod off...
-		custom_tooltip = fp1_trade_events.1131.c.tt
-		remove_short_term_gold = monumental_gold_value
-		# ... thereby winning the war.
-		scope:sa_war = { end_war = defender }
-		reverse_add_opinion = {
-			target = scope:attacker
-			modifier = humiliated_opinion
-			opinion = -50
-		}
-		# Add a breather before the next SA.
-		fp1_add_realm_size_appropriate_sa_reprieve_effect = yes
+# 		# Pay scope:attacker's troops to sod off...
+# 		custom_tooltip = fp1_trade_events.1131.c.tt
+# 		remove_short_term_gold = monumental_gold_value
+# 		# ... thereby winning the war.
+# 		scope:sa_war = { end_war = defender }
+# 		reverse_add_opinion = {
+# 			target = scope:attacker
+# 			modifier = humiliated_opinion
+# 			opinion = -50
+# 		}
+# 		# Add a breather before the next SA.
+# 		fp1_add_realm_size_appropriate_sa_reprieve_effect = yes
 
-		stress_impact = {
-			generous = minor_stress_impact_loss
-			humble = minor_stress_impact_loss
-			content = minor_stress_impact_loss
-			fickle = minor_stress_impact_loss
-			forgiving = minor_stress_impact_loss
-			greedy = major_stress_impact_gain
-			arrogant = major_stress_impact_gain
-			ambitious = major_stress_impact_gain
-			stubborn = major_stress_impact_gain
-			vengeful = major_stress_impact_gain
-		}
-		ai_chance = {
-			# Base allowed to stay high, since the fiscal purchase here is pretty high and the AI usually won't make it anyway.
-			base = 100
-			ai_value_modifier = {
-				ai_rationality = 0.25
-				ai_greed = -0.5
-				ai_vengefulness = -0.75
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = generous
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = humble
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = content
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = fickle
-			}
-			modifier = {	# Weight up for stress.
-				add = 10
-				has_trait = forgiving
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = greedy
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = arrogant
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = ambitious
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = stubborn
-			}
-			modifier = {	# Weight down for stress.
-				add = -30
-				has_trait = vengeful
-			}
-		}
-	}
+# 		stress_impact = {
+# 			generous = minor_stress_impact_loss
+# 			humble = minor_stress_impact_loss
+# 			content = minor_stress_impact_loss
+# 			fickle = minor_stress_impact_loss
+# 			forgiving = minor_stress_impact_loss
+# 			greedy = major_stress_impact_gain
+# 			arrogant = major_stress_impact_gain
+# 			ambitious = major_stress_impact_gain
+# 			stubborn = major_stress_impact_gain
+# 			vengeful = major_stress_impact_gain
+# 		}
+# 		ai_chance = {
+# 			# Base allowed to stay high, since the fiscal purchase here is pretty high and the AI usually won't make it anyway.
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_rationality = 0.25
+# 				ai_greed = -0.5
+# 				ai_vengefulness = -0.75
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = generous
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = humble
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = content
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = fickle
+# 			}
+# 			modifier = {	# Weight up for stress.
+# 				add = 10
+# 				has_trait = forgiving
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = greedy
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = arrogant
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = ambitious
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = stubborn
+# 			}
+# 			modifier = {	# Weight down for stress.
+# 				add = -30
+# 				has_trait = vengeful
+# 			}
+# 		}
+# 	}
 
-	# Then we'll banish these Nords to the sea.
-	option = {
-		name = fp1_trade_events.1131.d
+# 	# Then we'll banish these Nords to the sea.
+# 	option = {
+# 		name = fp1_trade_events.1131.d
 
-		# Opt-out.
-		custom_tooltip = fp1_trade_events.1131.d.tt
+# 		# Opt-out.
+# 		custom_tooltip = fp1_trade_events.1131.d.tt
 
-		# No stress impact for the opt-out.
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_energy = -0.25
-				ai_vengefulness = -0.25
-			}
-		}
-	}
-}
+# 		# No stress impact for the opt-out.
+# 		ai_chance = {
+# 			base = 100
+# 			ai_value_modifier = {
+# 				ai_energy = -0.25
+# 				ai_vengefulness = -0.25
+# 			}
+# 		}
+# 	}
+# }
 
 ##################################################
 # A Holy Helping Hand
