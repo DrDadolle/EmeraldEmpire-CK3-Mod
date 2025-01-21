@@ -2393,82 +2393,82 @@ create_artifact_pedestal_religious_head_letter_effect = {
 		add_scaled_artifact_modifier_piety_effect = yes
 	}
 }
-
+#L5R Disabled
 #The crucifix should be preferred by non-aniconic Christian faiths
-create_artifact_pedestal_crucifix_effect = {
-	$OWNER$ = { save_scope_as = owner }
+# create_artifact_pedestal_crucifix_effect = {
+# 	$OWNER$ = { save_scope_as = owner }
 
-	get_artifact_quality_effect = yes
-	get_artifact_wealth_effect = yes
+# 	get_artifact_quality_effect = yes
+# 	get_artifact_wealth_effect = yes
 
-	scope:owner = {
-		create_artifact = {	
-			name = artifact_pedestal_crucifix_name
-			creator = scope:owner
-			description = artifact_pedestal_crucifix_description
-			visuals = cross
-			type = pedestal
-			template = cross_template
-			modifier = artifact_placeholder_modifier
-			save_scope_as = newly_created_artifact
-			wealth = scope:wealth
-			quality = scope:quality
-			#decaying = no
-		}
-	}
+# 	scope:owner = {
+# 		create_artifact = {	
+# 			name = artifact_pedestal_crucifix_name
+# 			creator = scope:owner
+# 			description = artifact_pedestal_crucifix_description
+# 			visuals = cross
+# 			type = pedestal
+# 			template = cross_template
+# 			modifier = artifact_placeholder_modifier
+# 			save_scope_as = newly_created_artifact
+# 			wealth = scope:wealth
+# 			quality = scope:quality
+# 			#decaying = no
+# 		}
+# 	}
 
-	scope:newly_created_artifact = {
-		add_scaled_artifact_modifier_devotion_effect = yes
-		add_scaled_artifact_modifier_grandeur_small_effect = yes
-		if = {
-			limit = {
-				OR = {
-					rarity = famed
-					rarity = illustrious
-				}
-			}
-			add_scaled_artifact_modifier_piety_effect = yes
-		}
-		remove_artifact_modifier = artifact_placeholder_modifier
-	}
-}
+# 	scope:newly_created_artifact = {
+# 		add_scaled_artifact_modifier_devotion_effect = yes
+# 		add_scaled_artifact_modifier_grandeur_small_effect = yes
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					rarity = famed
+# 					rarity = illustrious
+# 				}
+# 			}
+# 			add_scaled_artifact_modifier_piety_effect = yes
+# 		}
+# 		remove_artifact_modifier = artifact_placeholder_modifier
+# 	}
+# }
+#L5R Disabled
+# #The cross is for aniconic Christian faiths
+# create_artifact_pedestal_cross_effect = {
+# 	$OWNER$ = { save_scope_as = owner }
 
-#The cross is for aniconic Christian faiths
-create_artifact_pedestal_cross_effect = {
-	$OWNER$ = { save_scope_as = owner }
+# 	get_artifact_quality_effect = yes
+# 	get_artifact_wealth_effect = yes
 
-	get_artifact_quality_effect = yes
-	get_artifact_wealth_effect = yes
+# 	scope:owner = {
+# 		create_artifact = {
+# 			name = artifact_pedestal_cross_name
+# 			description = artifact_pedestal_cross_description
+# 			visuals = cross
+# 			type = pedestal
+# 			template = cross_template
+# 			modifier = artifact_placeholder_modifier
+# 			save_scope_as = newly_created_artifact
+# 			wealth = scope:wealth
+# 			quality = scope:quality
+# 		}
+# 	}
 
-	scope:owner = {
-		create_artifact = {
-			name = artifact_pedestal_cross_name
-			description = artifact_pedestal_cross_description
-			visuals = cross
-			type = pedestal
-			template = cross_template
-			modifier = artifact_placeholder_modifier
-			save_scope_as = newly_created_artifact
-			wealth = scope:wealth
-			quality = scope:quality
-		}
-	}
-
-	scope:newly_created_artifact = {
-		add_scaled_artifact_modifier_devotion_effect = yes
-		add_scaled_artifact_modifier_grandeur_small_effect = yes
-		if = {
-			limit = {
-				OR = {
-					rarity = famed
-					rarity = illustrious
-				}
-			}
-			add_scaled_artifact_modifier_piety_effect = yes
-		}
-		remove_artifact_modifier = artifact_placeholder_modifier
-	}
-}
+# 	scope:newly_created_artifact = {
+# 		add_scaled_artifact_modifier_devotion_effect = yes
+# 		add_scaled_artifact_modifier_grandeur_small_effect = yes
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					rarity = famed
+# 					rarity = illustrious
+# 				}
+# 			}
+# 			add_scaled_artifact_modifier_piety_effect = yes
+# 		}
+# 		remove_artifact_modifier = artifact_placeholder_modifier
+# 	}
+# }
 
 create_artifact_pedestal_human_skull_effect = {
 	$OWNER$ = { save_scope_as = owner }

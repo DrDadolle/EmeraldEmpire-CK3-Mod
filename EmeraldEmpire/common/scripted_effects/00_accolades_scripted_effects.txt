@@ -2888,10 +2888,12 @@ accolade_character_creation_effect = {
 		}
 		#save a general knight-y culture that can randomly be used
 		save_general_accolade_successor_culture_effect = yes
+		#L5R Disabled
 		#varangians if relevant
-		save_varangian_successor_culture_effect = yes
+		# save_varangian_successor_culture_effect = yes
+		#L5R Disabled
 		#turkic warriors if relevant
-		save_turkic_successor_culture_effect = yes
+		# save_turkic_successor_culture_effect = yes
 		#save one specific to the accolade type
 		save_type_specific_successor_culture_effect = yes
 	}

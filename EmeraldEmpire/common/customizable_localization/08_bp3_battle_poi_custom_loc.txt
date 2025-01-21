@@ -286,15 +286,16 @@ BattlePoIDescriptionLocOutcome = {
 		localization_key = BattlePoiDescriptionLocOutcomeBerserker
 	}
 
-	text = {
-		trigger = {
-			has_variable = battle_poi_brave_knight
-			var:battle_poi_brave_knight = {
-				has_trait = varangian
-			}
-		}
-		localization_key = BattlePoiDescriptionLocOutcomeBerserkerFled
-	}
+	#L5R Disabled
+	# text = {
+	# 	trigger = {
+	# 		has_variable = battle_poi_brave_knight
+	# 		var:battle_poi_brave_knight = {
+	# 			has_trait = varangian
+	# 		}
+	# 	}
+	# 	localization_key = BattlePoiDescriptionLocOutcomeBerserkerFled
+	# }
 
 	text = {
 		trigger = {

@@ -171,8 +171,9 @@ call_house_member_to_war_interaction = {
 				limit = { exists = scope:target }
 				scope:target = { using_cb = fp2_border_raid }
 				scope:recipient = { # Unless they like going on raids
-					NOR = {
-						has_trait = viking
+					NOT = {
+						#L5R Disabled
+						# has_trait = viking
 						has_trait = reaver
 					}
 				}
