@@ -9214,15 +9214,6 @@ camel_pasture_04 = {
 	
 	can_construct = {
 		# culture ?= { has_innovation = innovation_war_camels } #L5R Disabled
-		custom_tooltip = {
-			text = can_recruit_camel_cavalry_trigger_desc
-			OR = {
-				can_create_maa = camel_rider
-				#L5R Disabled
-				# can_create_maa = desert_screamers
-				# can_create_maa = desert_spearmen
-			}
-		}
 		domicile ?= { has_domicile_building_or_higher = estate_main_03 }
 	}
 
@@ -9308,15 +9299,6 @@ camel_pasture_05 = {
 	
 	can_construct = {
 		# culture ?= { has_innovation = innovation_war_camels } #L5R Disabled
-		custom_tooltip = {
-			text = can_recruit_camel_cavalry_trigger_desc
-			OR = {
-				can_create_maa = camel_rider
-				#L5R Disabled
-				# can_create_maa = desert_screamers
-				# can_create_maa = desert_spearmen
-			}
-		}
 		domicile ?= { has_domicile_building_or_higher = estate_main_04 }
 	}
 
@@ -9401,16 +9383,8 @@ camel_pasture_06 = {
 	previous_building = camel_pasture_05
 	
 	can_construct = {
-		# culture ?= { has_innovation = innovation_war_camels } #L5R Disabled
-		custom_tooltip = {
-			text = can_recruit_camel_cavalry_trigger_desc
-			OR = {
-				can_create_maa = camel_rider
-				#L5R Disabled
-				# can_create_maa = desert_screamers
-				# can_create_maa = desert_spearmen
-			}
-		}
+		#L5R Disabled
+		# culture ?= { has_innovation = innovation_war_camels }
 		domicile ?= { has_domicile_building_or_higher = estate_main_05 }
 	}
 

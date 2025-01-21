@@ -531,8 +531,9 @@ on_set_relation_friend = {
 		# 	}
 		# }
 
+		#L5R Disabled
 		# Harrying logic.
-		relation_increase_harrying_stats_effect = { STAT = pacification }
+		# relation_increase_harrying_stats_effect = { STAT = pacification }
 
 		# If we're a clan this interaction affects unity
 		add_clan_unity_interaction_effect = {
@@ -833,8 +834,9 @@ on_set_relation_best_friend = {
 		# 	}
 		# }
 
+		#L5R Disabled
 		# Harrying logic.
-		relation_increase_harrying_stats_effect = { STAT = pacification }
+		# relation_increase_harrying_stats_effect = { STAT = pacification }
 
 		# If we're a clan this interaction affects unity
 		add_clan_unity_interaction_effect = {
@@ -1048,8 +1050,9 @@ on_set_relation_rival = {
 			}
 		}
 
+		#L5R Disabled
 		# Harrying logic.
-		relation_increase_harrying_stats_effect = { STAT = resistance }
+		# relation_increase_harrying_stats_effect = { STAT = resistance }:
 
 		# If we're a clan this interaction affects unity
 		add_clan_unity_interaction_effect = {
@@ -1167,8 +1170,9 @@ on_set_relation_nemesis = {
 			}
 		}
 
+		#L5R Disabled
 		# Harrying logic.
-		relation_increase_harrying_stats_effect = { STAT = resistance }
+		# relation_increase_harrying_stats_effect = { STAT = resistance }
 
 		# If we're a clan this interaction affects unity
 		add_clan_unity_interaction_effect = {

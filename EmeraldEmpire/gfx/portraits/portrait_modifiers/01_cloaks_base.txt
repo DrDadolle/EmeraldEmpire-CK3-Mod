@@ -918,17 +918,18 @@ cloaks = {
                 	portrait_era4_trigger = yes  
                 }   
             }
-            modifier = {
-                factor = 0
-                OR = {
-	                portrait_royalty_clothing_trigger = { 
-	                    CULTURE_INPUT = byzantine
-	                } 
-	                portrait_imperial_clothing_trigger = { 
-	                    CULTURE_INPUT = byzantine
-	                } 
-                } 
-            }
+			#L5R Disabled
+            # modifier = {
+            #     factor = 0
+            #     OR = {
+	        #         portrait_royalty_clothing_trigger = { 
+	        #             CULTURE_INPUT = byzantine
+	        #         } 
+	        #         portrait_imperial_clothing_trigger = { 
+	        #             CULTURE_INPUT = byzantine
+	        #         } 
+            #     } 
+            # }
         }
     }
 

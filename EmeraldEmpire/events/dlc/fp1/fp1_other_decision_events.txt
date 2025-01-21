@@ -26,8 +26,7 @@ scripted_effect gruesome_sacrifices_clean_up_declining_guests_effect = {
 
 scripted_trigger sacrifice_method_hang_n_fang_trigger = {
 	scope:activity.var:gf_faith = {
-		# religion = religion:germanic_religion
-		always = no
+		religion = religion:germanic_religion
 		has_doctrine_parameter = cannibalism_legal
 	}
 }
@@ -35,8 +34,7 @@ scripted_trigger sacrifice_method_eat_em_trigger = {
 	scope:activity.var:gf_faith = { has_doctrine_parameter = cannibalism_legal }
 }
 scripted_trigger sacrifice_method_hang_em_trigger = {
-	always = no
-	# scope:activity.var:gf_faith.religion = religion:germanic_religion
+	scope:activity.var:gf_faith.religion = religion:germanic_religion
 }
 
 scripted_trigger gruesome_festivals_available_impressable_nobles = {
@@ -1971,22 +1969,22 @@ fp1_other_decisions.1000 = {
 		character = scope:blotter
 		animation = personality_zealous
 	}
-	# override_background = {
-	# 	trigger = {
-	# 		scope:blotter = {
-	# 			religion = religion:germanic_religion
-	# 		}
-	# 	}
-	# 	reference = fp1_tribal_temple
-	# }
 	override_background = {
-		# trigger = {
-		# 	scope:blotter = {
-		# 		NOT = {
-		# 			religion = religion:germanic_religion
-		# 		}
-		# 	}
-		# }
+		trigger = {
+			scope:blotter = {
+				religion = religion:germanic_religion
+			}
+		}
+		reference = fp1_tribal_temple
+	}
+	override_background = {
+		trigger = {
+			scope:blotter = {
+				NOT = {
+					religion = religion:germanic_religion
+				}
+			}
+		}
 		reference = temple_scope
 	}
 
@@ -2040,7 +2038,7 @@ fp1_other_decisions.0063 = {
 				limit = { exists = imprisoner }
 				imprisoner = {
 					send_interface_message = {
-						type = designated_sacrifice_unsacrificed
+						type = event_religious_bad_with_text
 						title = fp1_other_decisions.0063.t
 						desc = fp1_other_decisions.0063.desc
 						right_icon = scope:designated_sacrifice
@@ -2065,7 +2063,7 @@ fp1_other_decisions.0064 = {
 # by Ewan Cowhig Croft & Linnéa Thimrén
 # 0101 - 0120
 ##################################################
-
+#L5R Disabled
 #	Select which type of stele you'll be raising.
 # fp1_other_decisions.0101 = {
 # 	type = character_event
@@ -2666,7 +2664,7 @@ fp1_other_decisions.0064 = {
 # 	}
 # }
 
-#	Error suppression.
+# #	Error suppression.
 # fp1_other_decisions.0112 = {
 # 	hidden = yes
 # 	orphan = yes
@@ -2684,8 +2682,8 @@ fp1_other_decisions.0064 = {
 # 		}
 # 	}
 # }
-#L5R Disabled
-#	New holder for a county with a stele.
+
+# #	New holder for a county with a stele.
 # fp1_other_decisions.0113 = {
 # 	hidden = yes
 

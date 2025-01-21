@@ -2025,16 +2025,18 @@ mapmaking.1000 = {
 											add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_1_modifier
 										}
 									}
-									poi_mausoleum_at_halicarnassus = {
-										scope:newly_created_artifact = {
-											add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_1_modifier
-										}
-									}
-									poi_lighthouse_of_alexandria = {
-										scope:newly_created_artifact = {
-											add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_1_modifier
-										}
-									}
+									#L5R Disabled
+									# poi_mausoleum_at_halicarnassus = {
+									# 	scope:newly_created_artifact = {
+									# 		add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_1_modifier
+									# 	}
+									# }
+									#L5R Disabled
+									# poi_lighthouse_of_alexandria = {
+									# 	scope:newly_created_artifact = {
+									# 		add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_1_modifier
+									# 	}
+									# }
 									poi_natural_feature = {
 										scope:newly_created_artifact = {
 											add_artifact_modifier = artifact_hunt_lifestyle_xp_gain_mult_modifier
@@ -2118,16 +2120,18 @@ mapmaking.1000 = {
 											add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_2_modifier
 										}
 									}
-									poi_mausoleum_at_halicarnassus = {
-										scope:newly_created_artifact = {
-											add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_2_modifier
-										}
-									}
-									poi_lighthouse_of_alexandria = {
-										scope:newly_created_artifact = {
-											add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_2_modifier
-										}
-									}
+									#L5R Disabled
+									# poi_mausoleum_at_halicarnassus = {
+									# 	scope:newly_created_artifact = {
+									# 		add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_2_modifier
+									# 	}
+									# }
+									#L5R Disabled
+									# poi_lighthouse_of_alexandria = {
+									# 	scope:newly_created_artifact = {
+									# 		add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_2_modifier
+									# 	}
+									# }
 									poi_natural_feature = {
 										scope:newly_created_artifact = {
 											add_artifact_modifier = artifact_hunt_lifestyle_xp_gain_mult_modifier
@@ -2204,16 +2208,18 @@ mapmaking.1000 = {
 											add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_3_modifier
 										}
 									}
-									poi_mausoleum_at_halicarnassus = {
-										scope:newly_created_artifact = {
-											add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_3_modifier
-										}
-									}
-									poi_lighthouse_of_alexandria = {
-										scope:newly_created_artifact = {
-											add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_3_modifier
-										}
-									}
+									#L5R Disabled
+									# poi_mausoleum_at_halicarnassus = {
+									# 	scope:newly_created_artifact = {
+									# 		add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_3_modifier
+									# 	}
+									# }
+									#L5R Disabled
+									# poi_lighthouse_of_alexandria = {
+									# 	scope:newly_created_artifact = {
+									# 		add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_3_modifier
+									# 	}
+									# }
 									poi_natural_feature = {
 										scope:newly_created_artifact = {
 											add_artifact_modifier = artifact_hunt_lifestyle_xp_gain_mult_modifier

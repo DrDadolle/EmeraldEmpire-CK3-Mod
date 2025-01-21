@@ -4044,7 +4044,7 @@ great_holy_war.0061 = {
 			every_dynasty_member = {
 				limit = { is_ai = no }
 				send_interface_message = {
-					type = great_holy_war_good_message
+					type = event_great_holy_war_good_message
 					title = great_holy_war.0061.title
 					desc = great_holy_war.0061.notification
 					left_icon = scope:scoped_beneficiary.primary_title
