@@ -93,6 +93,13 @@ rokugan_historical_artifacts.0001 = {
 			}
 		}
 
+		if = {
+			limit = { character:lineofmototsume1 = { is_alive = yes} }
+			character:lineofmototsume1 = {
+				create_artifact_kiro_ancestral_sword_unicorn_effect = { OWNER = this }
+			}
+		}
+
 		##################
 		## Imperial Clan #
 		##################

@@ -576,6 +576,54 @@ create_artifact_hayai_ancestral_sword_unicorn_effect = {
 	}
 }
 
+create_artifact_kiro_ancestral_sword_unicorn_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = kiro_ancestral_sword_unicorn_name
+		description = kiro_ancestral_sword_unicorn_description
+		template = ancestral_blade_template
+		type = japanese_sword
+		visuals = japanese_sword
+		wealth = scope:wealth
+		quality = scope:quality
+		#L5R TODO update date
+		# history = {
+		# 	type = created
+		# 	date = 35.1.1
+		# 	#recipient = character:7862 #TODO Shiba
+		# }
+		history = {
+			type = created_before_history
+		}
+		modifier = kiro_ancestral_sword_unicorn_modifier
+		save_scope_as = newly_created_artifact
+		#decaying = no # Unbreakable
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = historical_unique_artifact
+        # set_variable = kiro_ancestral_sword_unicorn
+		set_variable = japanese_sword
+		save_scope_as = epic
+
+		
+		# set_variable = {
+		# 	name = artifact_succession_title
+		# 	value = title:k_unicorn_clan
+		# }
+
+        add_artifact_history = {
+			type = inherited
+			date = 805.1.1
+			recipient = character:lineofmototsume1 # Moto Tsume
+		}
+	}
+}
+
 create_artifact_yuki_ancestral_armor_unicorn_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
