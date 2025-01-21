@@ -37,6 +37,8 @@ faith_conversion.0002 = {
 				NOR = {
 					has_character_flag = converted_by_heresy_0010_event
 					has_character_flag = converted_by_heresy_0011_event
+					has_character_flag = converted_by_heresy_decision
+					has_character_flag = new_heresiarch
 				}
 			}
 			remove_trait = heresiarch
@@ -416,16 +418,19 @@ faith_conversion.1002 = {
 	hidden = yes
 
 	immediate = {
-		# If it's desirable to delay this event (e.g., due to decision) a little, do so.
-		if = {
-			limit = { has_character_flag = delay_player_faith_conversion_notification_event }
-			trigger_event = {
-				id = faith_conversion.1001
-				days = 7
-			}
-		}
-		# Otherwise, just send it.
-		else = { trigger_event = faith_conversion.1001 }
+		#L5R Disabled
+		# # If it's desirable to delay this event (e.g., due to decision) a little, do so.
+		# if = {
+		# 	limit = { has_character_flag = delay_player_faith_conversion_notification_event }
+		# 	trigger_event = {
+		# 		id = faith_conversion.1001
+		# 		days = 7
+		# 	}
+		# }
+		# # Otherwise, just send it.
+		# else = {
+			 trigger_event = faith_conversion.1001
+		#  }
 	}
 }
 

@@ -413,6 +413,11 @@ on_game_start_after_lobby = {
 					VARIABLE = started_i_made_this_achievement
 					VALUE = yes
 				}
+				## 20 The True Royal Court
+		 		add_achievement_global_variable_effect = {
+		 			VARIABLE = started_the_true_royal_court_achievement
+		 				VALUE = yes
+				}
 				# EP2
 				## 01. The Grandest Tour
 				add_achievement_global_variable_effect = {
