@@ -910,9 +910,10 @@ fp3_challenge_house_head_interaction = {
 			house_head = scope:recipient
 			OR = {
 				has_house_unity_parameter = unity_can_challenge_house_head
-				scope:actor = {
-					any_character_struggle = { has_struggle_phase_parameter = unlocks_challenge_house_head_for_clans }
-				}
+				#L5R Disabled
+				# scope:actor = {
+				# 	any_character_struggle = { has_struggle_phase_parameter = unlocks_challenge_house_head_for_clans }
+				# }
 			}
 		}
 	}

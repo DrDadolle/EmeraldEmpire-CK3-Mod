@@ -3259,28 +3259,33 @@ send_interface_toast_legend_notification_effect = {
 }
 
 create_swan_knight_legend_seed_effect = {
+	#L5R Disabled
+	# if = {
+	# 	limit = {
+	# 		location = {
+	# 			geographical_region = world_europe
+	# 		}
+	# 	}
+	# 	create_legend_seed = {
+	# 		type = heroic
+	# 		quality = famed
+	# 		chronicle = swan_knight
+	# 		properties = {
+	# 			friendly_animal = flag:swan
+	# 		}
+	# 	}
+	# }
+	# else_
 	if = {
 		limit = {
 			location = {
-				geographical_region = world_europe
-			}
-		}
-		create_legend_seed = {
-			type = heroic
-			quality = famed
-			chronicle = swan_knight
-			properties = {
-				friendly_animal = flag:swan
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			location = {
 				OR = {
-					geographical_region = world_india
-					geographical_region = world_burma
-					geographical_region = ghw_region_caucasus
+					#L5R Modified
+					geographical_region = world_rokugan
+					geographical_region = world_shadowlands
+					# geographical_region = world_india
+					# geographical_region = world_burma
+					# geographical_region = ghw_region_caucasus
 				}
 			}
 		}
@@ -3293,21 +3298,22 @@ create_swan_knight_legend_seed_effect = {
 			}
 		}
 	}
-	else_if = {
-		limit = {
-			location = {
-				geographical_region = world_africa
-			}
-		}
-		create_legend_seed = {
-			type = heroic
-			quality = famed
-			chronicle = swan_knight
-			properties = {
-				friendly_animal = flag:lion
-			}
-		}
-	}
+	#L5R Disabled
+	# else_if = {
+	# 	limit = {
+	# 		location = {
+	# 			geographical_region = world_africa
+	# 		}
+	# 	}
+	# 	create_legend_seed = {
+	# 		type = heroic
+	# 		quality = famed
+	# 		chronicle = swan_knight
+	# 		properties = {
+	# 			friendly_animal = flag:lion
+	# 		}
+	# 	}
+	# }
 	else = {
 		create_legend_seed = {
 			type = heroic

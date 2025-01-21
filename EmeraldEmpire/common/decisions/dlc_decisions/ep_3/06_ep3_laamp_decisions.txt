@@ -646,7 +646,7 @@ treasure_hunting_contract_decision = {
 					text = treasure_hunting_contract_decision_limit
 					capital_province = {
 						OR = {
-							geographical_region = search_world_shadowlands
+							geographical_region = world_shadowlands
 						}
 					}
 				}
