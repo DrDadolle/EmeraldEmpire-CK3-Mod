@@ -251,10 +251,10 @@ l5r_pray_spirit.0003 = {
 			}
 			triggered_desc = {
 				trigger = {
-					scope:outcome = flag:no_change
+					scope:outcome = flag:no_effect
 					has_trait = zealous
 				}
-				desc = l5r_pray_spirit.0003.no_change.zealous.desc
+				desc = l5r_pray_spirit.0003.no_effect.zealous.desc
 			}
 			triggered_desc = {
 				trigger = {
@@ -262,7 +262,7 @@ l5r_pray_spirit.0003 = {
 				}
 				desc = l5r_pray_spirit.0003.bad.desc
 			}
-			desc = l5r_pray_spirit.0003.no_change.desc
+			desc = l5r_pray_spirit.0003.no_effect.desc
 		}
 	}
 	theme = faith
@@ -663,14 +663,14 @@ l5r_pray_spirit.0003 = {
 				scope:outcome = flag:no_effect
 				has_trait = zealous
 			}
-			text = l5r_pray_spirit.0003.no_change.zealous
+			text = l5r_pray_spirit.0003.no_effect.zealous
 		}
 		name = {
 			trigger = {
 				scope:outcome = flag:no_effect
 				NOT = { has_trait = zealous }
 			}
-			text = l5r_pray_spirit.0003.no_change
+			text = l5r_pray_spirit.0003.no_effect
 		}
         name = {
 			trigger = {	scope:outcome = flag:ill}
@@ -928,10 +928,10 @@ l5r_pray_spirit.0005 = {
 			}
 			triggered_desc = {
 				trigger = {
-					scope:outcome = flag:no_change
+					scope:outcome = flag:no_effect
 					has_trait = zealous
 				}
-				desc = l5r_pray_spirit.0003.no_change.zealous.desc
+				desc = l5r_pray_spirit.0003.no_effect.zealous.desc
 			}
 			triggered_desc = {
 				trigger = {
@@ -939,7 +939,7 @@ l5r_pray_spirit.0005 = {
 				}
 				desc = l5r_pray_spirit.0003.bad.desc
 			}
-			desc = l5r_pray_spirit.0003.no_change.desc
+			desc = l5r_pray_spirit.0003.no_effect.desc
 		}
 	}
 	theme = faith
@@ -1342,14 +1342,14 @@ l5r_pray_spirit.0005 = {
 				scope:outcome = flag:no_effect
 				has_trait = zealous
 			}
-			text = l5r_pray_spirit.0003.no_change.zealous
+			text = l5r_pray_spirit.0003.no_effect.zealous
 		}
 		name = {
 			trigger = {
 				scope:outcome = flag:no_effect
 				NOT = { has_trait = zealous }
 			}
-			text = l5r_pray_spirit.0003.no_change
+			text = l5r_pray_spirit.0003.no_effect
 		}
         name = {
 			trigger = {	scope:outcome = flag:ill}

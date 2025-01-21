@@ -151,7 +151,7 @@ religious_decision.0002 = {
 				trigger = {
 					scope:outcome = flag:no_effect
 				}
-				desc = religious_decision.0002.desc.end_no_change
+				desc = religious_decision.0002.desc.end_no_effect
 			}
 			desc = religious_decision.0002.desc.end_changed
 		}
@@ -469,14 +469,14 @@ religious_decision.0002 = {
 				scope:outcome = flag:no_effect
 				has_trait = zealous
 			}
-			text = religious_decision.0002.no_change.zealous
+			text = religious_decision.0002.no_effect.zealous
 		}
 		name = {
 			trigger = {
 				scope:outcome = flag:no_effect
 				NOT = { has_trait = zealous }
 			}
-			text = religious_decision.0002.no_change
+			text = religious_decision.0002.no_effect
 		}
 
 		# Apply the actual outcome effects:

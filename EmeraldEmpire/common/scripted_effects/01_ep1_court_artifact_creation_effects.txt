@@ -3296,41 +3296,42 @@ get_book_variables_effect = {
 				}
 			}
 		}
+		#L5R Disabled
 		# Restoration
-		if = {
-			limit = {
-				exists = var:book_artifact_topic
-				var:book_artifact_topic = flag:restoration
-			}
-			#Check for title variable
-			if = {
-				limit = {
-					exists = scope:author
-					exists = scope:author.var:book_topic_restored_title
-				}
-				set_variable = {
-					name = relevant_title
-					value = scope:author.var:book_topic_restored_title
-					days = 1
-				}
-				scope:author.var:book_topic_restored_title = {
-					save_scope_as = relevant_title
-				}
-			}
-			else_if = {
-				limit = {
-					exists = var:book_topic_restored_title
-				}
-				set_variable = {
-					name = relevant_title
-					value = scope:owner.var:book_topic_restored_title
-					days = 1
-				}
-				var:book_topic_restored_title = {
-					save_scope_as = relevant_title
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		exists = var:book_artifact_topic
+		# 		var:book_artifact_topic = flag:restoration
+		# 	}
+		# 	#Check for title variable
+		# 	if = {
+		# 		limit = {
+		# 			exists = scope:author
+		# 			exists = scope:author.var:book_topic_restored_title
+		# 		}
+		# 		set_variable = {
+		# 			name = relevant_title
+		# 			value = scope:author.var:book_topic_restored_title
+		# 			days = 1
+		# 		}
+		# 		scope:author.var:book_topic_restored_title = {
+		# 			save_scope_as = relevant_title
+		# 		}
+		# 	}
+		# 	else_if = {
+		# 		limit = {
+		# 			exists = var:book_topic_restored_title
+		# 		}
+		# 		set_variable = {
+		# 			name = relevant_title
+		# 			value = scope:owner.var:book_topic_restored_title
+		# 			days = 1
+		# 		}
+		# 		var:book_topic_restored_title = {
+		# 			save_scope_as = relevant_title
+		# 		}
+		# 	}
+		# }
 	}
 }
 
