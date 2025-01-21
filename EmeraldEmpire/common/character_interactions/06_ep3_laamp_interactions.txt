@@ -7238,7 +7238,8 @@ laamp_war_change_sides_interaction = {
 				}
 				remove_variable = owed_contract_assistance_war
 				remove_variable = owed_contract_assistance_contribution
-				remove_variable = owed_contract_assistance_gold
+				#L5R Disabled
+				# remove_variable = owed_contract_assistance_gold
 			}
 		}
 		scope:war = {
@@ -7703,7 +7704,8 @@ laamp_leave_war_interaction = {
 				}
 				remove_variable = owed_contract_assistance_war
 				remove_variable = owed_contract_assistance_contribution
-				remove_variable = owed_contract_assistance_gold
+				#L5R Disabled
+				# remove_variable = owed_contract_assistance_gold
 			}
 		}
 		scope:recipient = {

@@ -11428,10 +11428,11 @@ laamp_as_mercenary_payout_tooltip_effect = {
 								has_task_contract_type = laamp_join_war_contract
 								var:task_contract_war = scope:war
 							}
-							AND = {
-								has_variable = owed_contract_assistance_gold
-								var:owed_contract_assistance_war ?= scope:war
-							}
+							#L5R Disabled
+							# AND = {
+							# 	has_variable = owed_contract_assistance_gold
+							# 	var:owed_contract_assistance_war ?= scope:war
+							# }
 							has_variable = joined_as_mercenary
 						}
 					}
@@ -11490,21 +11491,22 @@ laamp_as_mercenary_payout_tooltip_effect = {
 								}
 							}
 						}
-						if = {
-							limit = {
-								has_variable = owed_contract_assistance_gold
-								var:owed_contract_assistance_war ?= scope:war
-							}
-							save_scope_as = contract_assistance_helper
-							scope:defender = {
-								save_scope_as = recipient
-								custom_tooltip = contract_assistance_interaction_condition_tt
-								pay_short_term_gold = {
-									target = scope:actor
-									gold = scope:actor.var:owed_contract_assistance_gold
-								}
-							}
-						}
+						#L5R Disabled
+						# if = {
+						# 	limit = {
+						# 		has_variable = owed_contract_assistance_gold
+						# 		var:owed_contract_assistance_war ?= scope:war
+						# 	}
+						# 	save_scope_as = contract_assistance_helper
+						# 	scope:defender = {
+						# 		save_scope_as = recipient
+						# 		custom_tooltip = contract_assistance_interaction_condition_tt
+						# 		pay_short_term_gold = {
+						# 			target = scope:actor
+						# 			gold = scope:actor.var:owed_contract_assistance_gold
+						# 		}
+						# 	}
+						# }
 					}
 				}
 			}
@@ -11519,10 +11521,11 @@ laamp_as_mercenary_payout_tooltip_effect = {
 								has_task_contract_type = laamp_join_war_contract
 								var:task_contract_war = scope:war
 							}
-							AND = {
-								has_variable = owed_contract_assistance_gold
-								var:owed_contract_assistance_war ?= scope:war
-							}
+							#L5R Disabled
+							# AND = {
+							# 	has_variable = owed_contract_assistance_gold
+							# 	var:owed_contract_assistance_war ?= scope:war
+							# }
 							has_variable = joined_as_mercenary
 						}
 					}
@@ -11581,20 +11584,21 @@ laamp_as_mercenary_payout_tooltip_effect = {
 								}
 							}
 						}
-						if = {
-							limit = {
-								has_variable = owed_contract_assistance_gold
-								var:owed_contract_assistance_war ?= scope:war
-							}
-							save_scope_as = contract_assistance_helper
-							scope:attacker = {
-								custom_tooltip = contract_assistance_interaction_condition_tt
-								pay_short_term_gold = {
-									target = scope:actor
-									gold = scope:actor.var:owed_contract_assistance_gold
-								}
-							}
-						}
+						#L5R Disabled
+						# if = {
+						# 	limit = {
+						# 		has_variable = owed_contract_assistance_gold
+						# 		var:owed_contract_assistance_war ?= scope:war
+						# 	}
+						# 	save_scope_as = contract_assistance_helper
+						# 	scope:attacker = {
+						# 		custom_tooltip = contract_assistance_interaction_condition_tt
+						# 		pay_short_term_gold = {
+						# 			target = scope:actor
+						# 			gold = scope:actor.var:owed_contract_assistance_gold
+						# 		}
+						# 	}
+						# }
 					}
 				}
 			}

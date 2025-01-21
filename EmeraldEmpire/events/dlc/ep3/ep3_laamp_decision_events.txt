@@ -992,7 +992,7 @@ ep3_laamp_decision_event.1000 = {
 			# 	}
 			# 	desc = ep3_laamp_decision_event.1000.desc_outro_revisit_constantinople
 			# }
-			FIRST TIME: Revisiting Otosan Uchi
+			#FIRST TIME: Revisiting Otosan Uchi
 			triggered_desc = {
 				trigger = {
 					NOT = { has_variable = return_from_location }
