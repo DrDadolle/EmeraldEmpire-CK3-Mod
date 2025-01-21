@@ -1619,9 +1619,10 @@ on_visited_grand_city = {
 
 #On action triggered from ep3 points of interest
 on_visited_ep3_monument = {
-	events = {
-		ep3_travel_events.3001
-	}
+	#L5R Disabled
+	# events = {
+	# 	ep3_travel_events.3001
+	# }
 }
 
 #Used in the debug interaction debug_move_domicile_interaction
