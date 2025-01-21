@@ -451,7 +451,7 @@ set_up_regional_mythical_creature_effect = {
 	if = {
 		#Crane Lands
 		limit = {
-			location = { geographical_region = rokugan_crane }
+			location = { geographical_region = world_rokugan_crane }
 			NOT = { exists = var:regional_mythical_creature_trinket }
 		}
 		random_list = {
@@ -505,7 +505,7 @@ set_up_regional_mythical_creature_effect = {
 	else_if = {
 		#Phoenix Lands
 		limit = {
-			location = { geographical_region = rokugan_phoenix }
+			location = { geographical_region = world_rokugan_phoenix }
 			NOT = { exists = var:regional_mythical_creature_trinket }
 		}
 		random_list = {
@@ -601,7 +601,7 @@ select_local_farm_animal_effect = {
 				location = {
 					NOR = {
 						#L5R Modified
-						geographical_region = rokugan_dragon
+						geographical_region = world_rokugan_dragon
 						# geographical_region = world_tibet
 						# geographical_region = ghw_region_mongolia
 					}

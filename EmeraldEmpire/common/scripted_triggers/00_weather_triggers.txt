@@ -72,11 +72,11 @@ temperate_seasons_trigger = {
 	$LOCATION$ = {
 		OR = {
 			#L5R Modified
-			geographical_region = rokugan_scorpion
-			geographical_region = rokugan_crane
+			geographical_region = world_rokugan_scorpion
+			geographical_region = world_rokugan_crane
 			geographical_region = rokugan_lion
-			geographical_region = rokugan_imperial
-			geographical_region = rokugan_shinomen_mori
+			geographical_region = world_rokugan_imperial
+			geographical_region = world_rokugan_shinomen_mori
 			# geographical_region = world_africa_north
 			# geographical_region = world_steppe
 			# geographical_region = world_tibet
@@ -93,7 +93,7 @@ tropical_seasons_trigger = {
 tropical_seasons_region_trigger = {
 	OR = {
 		#L5R Modified
-		geographical_region = rokugan_spice_and_silk_isles
+		geographical_region = world_rokugan_spice_and_silk_isles
 		# geographical_region = world_africa_east
 		# geographical_region = world_india_deccan
 		# geographical_region = world_burma
@@ -459,7 +459,7 @@ current_season_hot_season = {
 				OR = {
 					#L5R Modified
 					# geographical_region = seasonal_region_east_africa
-					geographical_region = rokugan_spice_and_silk_isles
+					geographical_region = world_rokugan_spice_and_silk_isles
 				}
 			}
 			current_season_rainy_season = yes

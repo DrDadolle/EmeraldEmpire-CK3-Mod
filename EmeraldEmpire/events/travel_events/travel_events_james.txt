@@ -2820,7 +2820,7 @@ scripted_trigger 4016_is_hot_climate_trigger = {
 	NOT = { terrain = shadowlands_mountains }
 	OR = {
 		#L5R Modified
-		geographical_region = rokugan_spice_and_silk_isles
+		geographical_region = world_rokugan_spice_and_silk_isles
 		# geographical_region = world_middle_east
 		# geographical_region = world_india
 		# geographical_region = world_africa
@@ -2832,8 +2832,8 @@ scripted_trigger 4016_is_hot_climate_trigger = {
 			}
 			NOR = {
 				#L5R Modified
-				geographical_region = rokugan_dragon
-				geographical_region = rokugan_phoenix
+				geographical_region = world_rokugan_dragon
+				geographical_region = world_rokugan_phoenix
 				# geographical_region = world_steppe
 				# geographical_region = world_tibet
 			}
@@ -2843,8 +2843,8 @@ scripted_trigger 4016_is_hot_climate_trigger = {
 scripted_trigger 4016_is_cold_climate_trigger = { # Explicitly looking for places that are *cold*, not merely that they're not hot
 	OR = {
 		#L5R Modified
-		geographical_region = rokugan_dragon
-		geographical_region = rokugan_phoenix
+		geographical_region = world_rokugan_dragon
+		geographical_region = world_rokugan_phoenix
 		# geographical_region = world_steppe
 		# geographical_region = world_tibet
 		NOT = { is_desert_trigger = yes }
@@ -2852,8 +2852,8 @@ scripted_trigger 4016_is_cold_climate_trigger = { # Explicitly looking for place
 	}
 	OR = {
 		#L5R Modified
-		geographical_region = rokugan_unicorn
-		geographical_region = rokugan_scorpion
+		geographical_region = world_rokugan_unicorn
+		geographical_region = world_rokugan_scorpion
 		geographical_region = rokugan_lion
 		# geographical_region = world_steppe
 		# geographical_region = world_tibet
@@ -2865,7 +2865,7 @@ scripted_trigger 4016_is_cold_climate_trigger = { # Explicitly looking for place
 	}
 	NOT = {
 		#L5R Modified
-		geographical_region = rokugan_spice_and_silk_isles
+		geographical_region = world_rokugan_spice_and_silk_isles
 		#L5R Disabled
 		# geographical_region = world_europe_west_iberia
 		# geographical_region = world_europe_south
@@ -3054,7 +3054,7 @@ travel_events.4017 = {
 					root.location = {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							county = { culture = { has_cultural_pillar = heritage_ujik } }
 							# geographical_region = world_steppe
 							# county = { culture = { has_cultural_pillar = heritage_turkic } }

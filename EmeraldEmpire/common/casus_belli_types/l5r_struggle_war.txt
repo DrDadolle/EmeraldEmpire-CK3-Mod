@@ -75,7 +75,7 @@ invasion_of_crab_clan_cb = {
 	# 		faith_is_good = yes
 	# 		NOT = { culture = { has_cultural_pillar = heritage_spider } }
 	# 		any_realm_county = {
-	# 			title_province = { geographical_region = rokugan_crab_clan }
+	# 			title_province = { geographical_region = world_rokugan_crab_clan }
 	# 		}
 	# 	}
 	# }
@@ -212,7 +212,7 @@ invasion_of_crab_clan_cb = {
 					limit = {
 						tier = tier_duchy
 						special_invasion_cb_seize_land_in_region_trigger = {
-							TARGET_REGION = rokugan_crab_clan
+							TARGET_REGION = world_rokugan_crab_clan
 							TARGET_KINGDOM = title:k_crab_clan
 						}
 					}

@@ -47,7 +47,7 @@ accolade_the_knight_of_the_animal = {
 					liege.capital_county.title_province ?= {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_spice_and_silk_isles
+							geographical_region = world_rokugan_spice_and_silk_isles
 							# geographical_region = world_india
 							# geographical_region = world_middle_east
 							# geographical_region = world_burma
@@ -94,7 +94,7 @@ accolade_the_knight_of_the_animal = {
 					liege.capital_county.title_province ?= {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_africa_north
 							# geographical_region = world_africa_east
 							# geographical_region = world_asia_minor
@@ -288,7 +288,7 @@ accolade_the_knight_of_the_animal = {
 					liege.capital_county.title_province ?= {
 						NOT = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_steppe_west
 							# geographical_region = world_europe_north
 							# geographical_region = world_steppe_east
@@ -483,7 +483,7 @@ accolade_the_knight_of_the_animal = {
 					liege.capital_county.title_province ?= {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_scorpion
+							geographical_region = world_rokugan_scorpion
 							# geographical_region = world_africa
 							# geographical_region = world_middle_east
 							# geographical_region = world_india
@@ -606,7 +606,7 @@ accolade_the_animal_of_capital = {
 					liege.capital_county.title_province ?= {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_spice_and_silk_isles
+							geographical_region = world_rokugan_spice_and_silk_isles
 							# geographical_region = world_india
 							# geographical_region = world_middle_east
 							# geographical_region = world_burma
@@ -653,7 +653,7 @@ accolade_the_animal_of_capital = {
 					liege.capital_county.title_province ?= {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_africa_north
 							# geographical_region = world_africa_east
 							# geographical_region = world_asia_minor
@@ -847,7 +847,7 @@ accolade_the_animal_of_capital = {
 					liege.capital_county.title_province ?= {
 						NOT = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_steppe_west
 							# geographical_region = world_europe_north
 							# geographical_region = world_steppe_east
@@ -1065,7 +1065,7 @@ accolade_the_animal_of_capital = {
 					liege.capital_county.title_province ?= {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_scorpion
+							geographical_region = world_rokugan_scorpion
 							# geographical_region = world_africa
 							# geographical_region = world_middle_east
 							# geographical_region = world_india

@@ -3388,8 +3388,8 @@ scripted_trigger suitable_islamic_realm_trigger = {
 			
 # 			#L5R Modified
 # 			OR = {
-# 				title_province = { geographical_region = rokugan_dragon }
-# 				title_province = { geographical_region = rokugan_shinomen_mori }
+# 				title_province = { geographical_region = world_rokugan_dragon }
+# 				title_province = { geographical_region = world_rokugan_shinomen_mori }
 # 			}
 # 			#L5R Disabled
 # 			# culture = { has_cultural_pillar = heritage_north_germanic }

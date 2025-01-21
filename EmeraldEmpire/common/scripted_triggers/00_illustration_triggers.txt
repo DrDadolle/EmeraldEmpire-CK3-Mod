@@ -87,8 +87,8 @@ graphical_wilderness_forest_pine_trigger = {
 			terrain = forest
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_dragon
-				geographical_region = rokugan_phoenix
+				geographical_region = world_rokugan_dragon
+				geographical_region = world_rokugan_phoenix
 				# geographical_region = world_europe_north
 				# geographical_region = world_steppe
 			}
@@ -114,7 +114,7 @@ graphical_wilderness_steppe_trigger = {
 			terrain = hills
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_steppe
 				# geographical_region = world_middle_east_persia
 				# geographical_region = world_middle_east_jerusalem

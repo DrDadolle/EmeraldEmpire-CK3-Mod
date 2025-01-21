@@ -471,24 +471,24 @@ grant_new_inspiration_in_world_effect = {
 		#L5R Added
 		# Crab
 		1 = {
-			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = rokugan_crab } } }
-			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = rokugan_crab }
-			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = rokugan_crab }
-			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = rokugan_crab }
+			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = world_rokugan_crab } } }
+			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = world_rokugan_crab }
+			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = world_rokugan_crab }
+			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = world_rokugan_crab }
 		}
 		# Crane
 		1 = {
-			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = rokugan_crane } } }
-			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = rokugan_crane }
-			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = rokugan_crane }
-			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = rokugan_crane }
+			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = world_rokugan_crane } } }
+			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = world_rokugan_crane }
+			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = world_rokugan_crane }
+			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = world_rokugan_crane }
 		}
 		# Dragon
 		1 = {
-			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = rokugan_dragon } } }
-			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = rokugan_dragon }
-			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = rokugan_dragon }
-			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = rokugan_dragon }
+			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = world_rokugan_dragon } } }
+			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = world_rokugan_dragon }
+			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = world_rokugan_dragon }
+			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = world_rokugan_dragon }
 		}
 		# Lion
 		1 = {
@@ -499,45 +499,45 @@ grant_new_inspiration_in_world_effect = {
 		}
 		# Phoenix
 		1 = {
-			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = rokugan_phoenix } } }
-			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = rokugan_phoenix }
-			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = rokugan_phoenix }
-			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = rokugan_phoenix }
+			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = world_rokugan_phoenix } } }
+			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = world_rokugan_phoenix }
+			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = world_rokugan_phoenix }
+			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = world_rokugan_phoenix }
 		}
 		# Scorpion
 		1 = {
-			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = rokugan_scorpion } } }
-			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = rokugan_scorpion }
-			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = rokugan_scorpion }
-			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = rokugan_scorpion }
+			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = world_rokugan_scorpion } } }
+			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = world_rokugan_scorpion }
+			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = world_rokugan_scorpion }
+			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = world_rokugan_scorpion }
 		}
 		# Unicorn
 		1 = {
-			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = rokugan_unicorn } } }
-			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = rokugan_unicorn }
-			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = rokugan_unicorn }
-			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = rokugan_unicorn }
+			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = world_rokugan_unicorn } } }
+			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = world_rokugan_unicorn }
+			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = world_rokugan_unicorn }
+			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = world_rokugan_unicorn }
 		}
 		# Imperial
 		1 = {
-			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = rokugan_imperial } } }
-			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = rokugan_imperial }
-			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = rokugan_imperial }
-			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = rokugan_imperial }
+			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = world_rokugan_imperial } } }
+			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = world_rokugan_imperial }
+			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = world_rokugan_imperial }
+			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = world_rokugan_imperial }
 		}
 		# Mantis
 		1 = {
-			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = rokugan_spice_and_silk_isles } } }
-			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = rokugan_spice_and_silk_isles }
-			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = rokugan_spice_and_silk_isles }
-			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = rokugan_spice_and_silk_isles }
+			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = world_rokugan_spice_and_silk_isles } } }
+			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = world_rokugan_spice_and_silk_isles }
+			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = world_rokugan_spice_and_silk_isles }
+			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = world_rokugan_spice_and_silk_isles }
 		}
 		# Shinomen
 		1 = {
-			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = rokugan_shinomen_mori } } }
-			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = rokugan_shinomen_mori }
-			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = rokugan_shinomen_mori }
-			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = rokugan_shinomen_mori }
+			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = world_rokugan_shinomen_mori } } }
+			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = world_rokugan_shinomen_mori }
+			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = world_rokugan_shinomen_mori }
+			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = world_rokugan_shinomen_mori }
 		}
 
 	}

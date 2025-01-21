@@ -852,7 +852,7 @@ Abortifacient = {
 			location = {
 				OR = {
 					#L5R Modified
-					geographical_region = rokugan_unicorn
+					geographical_region = world_rokugan_unicorn
 					# geographical_region = world_europe_south
 					# geographical_region = world_asia_minor
 					# geographical_region = world_middle_east
@@ -952,7 +952,7 @@ Abortifacient = {
 		trigger = {
 			location = {
 				#L5R Modified
-				geographical_region = rokugan_spice_and_silk_isles
+				geographical_region = world_rokugan_spice_and_silk_isles
 				# geographical_region = world_india
 			}
 		}
@@ -964,7 +964,7 @@ Abortifacient = {
 		trigger = {
 			location = {
 				#L5R Modified
-				geographical_region = rokugan_spice_and_silk_isles
+				geographical_region = world_rokugan_spice_and_silk_isles
 				# geographical_region = world_india
 			}
 		}
@@ -976,7 +976,7 @@ Abortifacient = {
 		trigger = {
 			location = { 
 				#L5R Modified
-				geographical_region = rokugan_spice_and_silk_isles
+				geographical_region = world_rokugan_spice_and_silk_isles
 				# geographical_region = world_india
 			 }
 		}
@@ -1081,7 +1081,7 @@ VenomousCreature = {
 			trigger_else = { 
 				location = { 
 					#L5R Modified
-					geographical_region = rokugan_scorpion
+					geographical_region = world_rokugan_scorpion
 					# geographical_region = world_india 
 				}
 			}
@@ -1209,7 +1209,7 @@ VenomousCreature = {
 				location = { 
 					OR = {
 						#L5R Modified
-						geographical_region = rokugan_spice_and_silk_isles
+						geographical_region = world_rokugan_spice_and_silk_isles
 						# geographical_region = world_africa_north
 						# geographical_region = world_middle_east
 						# geographical_region = world_india
@@ -1230,7 +1230,7 @@ VenomousCreature = {
 				location = { 
 					OR = {
 						#L5R Modified
-						geographical_region = rokugan_spice_and_silk_isles
+						geographical_region = world_rokugan_spice_and_silk_isles
 						# geographical_region = world_india
 						# geographical_region = world_burma
 					}
@@ -2345,7 +2345,7 @@ get_region_dog_type = {
 			capital_province = {
 				OR = {
 					#L5R Modified
-					geographical_region = rokugan_dragon
+					geographical_region = world_rokugan_dragon
 					# geographical_region = world_himalaya
 					# geographical_region = world_steppe_tarim
 					# geographical_region = world_steppe_east
@@ -2369,8 +2369,8 @@ get_region_flower_type = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_scorpion
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_scorpion
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_india
 				# geographical_region = world_middle_east
 				# geographical_region = world_middle_east_persia
@@ -2435,7 +2435,7 @@ get_region_flower_type = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe
 				# geographical_region = world_middle_east
 				# geographical_region = world_middle_east_persia
@@ -2476,7 +2476,7 @@ get_region_flower_type = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe
 				# geographical_region = world_middle_east
 				# geographical_region = world_middle_east_persia
@@ -2505,7 +2505,7 @@ get_region_flower_type = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe
 				# geographical_region = world_middle_east
 				# geographical_region = world_middle_east_persia
@@ -2519,7 +2519,7 @@ get_region_flower_type = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe
 				# geographical_region = world_middle_east
 				# geographical_region = world_middle_east_persia
@@ -2565,7 +2565,7 @@ get_region_flower_type = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe
 				# geographical_region = world_africa_north
 				# geographical_region = world_asia_minor
@@ -2580,7 +2580,7 @@ get_region_flower_type = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe_south
 				# geographical_region = world_africa_north
 				# geographical_region = world_asia_minor
@@ -2607,7 +2607,7 @@ get_region_flower_type = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe_south
 				# geographical_region = world_africa_north
 				# geographical_region = world_asia_minor
@@ -2640,8 +2640,8 @@ get_region_flower_type_plural = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_scorpion
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_scorpion
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_india
 				# geographical_region = world_middle_east
 				# geographical_region = world_middle_east_persia
@@ -2705,7 +2705,7 @@ get_region_flower_type_plural = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe
 				# geographical_region = world_middle_east
 				# geographical_region = world_middle_east_persia
@@ -2746,7 +2746,7 @@ get_region_flower_type_plural = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe
 				# geographical_region = world_middle_east
 				# geographical_region = world_middle_east_persia
@@ -2775,7 +2775,7 @@ get_region_flower_type_plural = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe
 				# geographical_region = world_middle_east
 				# geographical_region = world_middle_east_persia
@@ -2789,7 +2789,7 @@ get_region_flower_type_plural = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe
 				# geographical_region = world_middle_east
 				# geographical_region = world_middle_east_persia
@@ -2837,7 +2837,7 @@ get_region_flower_type_plural = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe
 				# geographical_region = world_africa_north
 				# geographical_region = world_asia_minor
@@ -2852,7 +2852,7 @@ get_region_flower_type_plural = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe_south
 				# geographical_region = world_africa_north
 				# geographical_region = world_asia_minor
@@ -2879,7 +2879,7 @@ get_region_flower_type_plural = {
 		trigger = {
 			OR = {
 				#L5R Modified
-				geographical_region = rokugan_unicorn
+				geographical_region = world_rokugan_unicorn
 				# geographical_region = world_europe_south
 				# geographical_region = world_africa_north
 				# geographical_region = world_asia_minor
@@ -3204,7 +3204,7 @@ RegionalFarmAnimal = {
 				location = {
 					OR = {
 						#L5R Modified
-						geographical_region = rokugan_dragon
+						geographical_region = world_rokugan_dragon
 						# geographical_region = world_tibet
 						# geographical_region = ghw_region_mongolia
 					}
@@ -3341,7 +3341,7 @@ RegionalFarmAnimalPlural = {
 				location = {
 					OR = {
 						#L5R Modified
-						geographical_region = rokugan_dragon
+						geographical_region = world_rokugan_dragon
 						# geographical_region = world_tibet
 						# geographical_region = ghw_region_mongolia
 					}
@@ -3438,7 +3438,7 @@ SoundingRegionalFarmAnimal = {
 				location = {
 					OR = {
 						#L5R Modified
-						geographical_region = rokugan_dragon
+						geographical_region = world_rokugan_dragon
 						# geographical_region = world_tibet
 						# geographical_region = ghw_region_mongolia
 					}
@@ -3607,7 +3607,7 @@ RegionalPoxAnimal = {
 			capital_province = {
 				OR = {
 					#L5R Modified
-					geographical_region = rokugan_dragon
+					geographical_region = world_rokugan_dragon
 					# geographical_region = world_tibet
 					# geographical_region = ghw_region_mongolia
 				}
@@ -3623,8 +3623,8 @@ RegionalPoxAnimal = {
 				OR = {
 					#L5R Modified
 					geographical_region = rokugan_lion
-					geographical_region = rokugan_scorpion
-					geographical_region = rokugan_shinomen_mori
+					geographical_region = world_rokugan_scorpion
+					geographical_region = world_rokugan_shinomen_mori
 					# geographical_region = world_middle_east
 					# geographical_region = world_india
 					# geographical_region = world_africa

@@ -83,8 +83,8 @@ hunt_animal_roe_trigger = {
 		# geographical_region = world_india
 		# geographical_region = world_burma
 		# geographical_region = world_tibet
-		geographical_region = rokugan_phoenix
-		geographical_region = rokugan_dragon
+		geographical_region = world_rokugan_phoenix
+		geographical_region = world_rokugan_dragon
 	}
 }
 
@@ -182,8 +182,8 @@ hunt_animal_hyena_trigger = {
 hunt_animal_lynx_trigger = {
 	OR = {
 		#L5R Modified
-		geographical_region = rokugan_scorpion
-		geographical_region = rokugan_shinomen_mori
+		geographical_region = world_rokugan_scorpion
+		geographical_region = world_rokugan_shinomen_mori
 		# geographical_region = world_europe_north
 		# geographical_region = world_europe_east
 		# geographical_region = world_steppe_east
@@ -322,7 +322,7 @@ hunt_animal_tiger_trigger = {
 hunt_animal_leopard_trigger = {
 	OR = {
 		#L5R Modified
-		geographical_region = rokugan_unicorn
+		geographical_region = world_rokugan_unicorn
 		# geographical_region = world_africa_north_west
 		# geographical_region = world_africa_east
 		# geographical_region = world_africa_west

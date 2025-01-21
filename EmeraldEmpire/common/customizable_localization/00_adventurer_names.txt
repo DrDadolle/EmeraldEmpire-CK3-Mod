@@ -195,7 +195,7 @@
 					location = {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_spice_and_silk_isles
+							geographical_region = world_rokugan_spice_and_silk_isles
 							# geographical_region = world_africa
 							# geographical_region = world_middle_east
 							# geographical_region = world_europe_south
@@ -325,7 +325,7 @@
 					location = {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_spice_and_silk_isles
+							geographical_region = world_rokugan_spice_and_silk_isles
 							# geographical_region = world_africa
 							# geographical_region = world_india
 							# geographical_region = world_burma
@@ -832,7 +832,7 @@
 				scope:new_landless_adventurer ?= {
 					location = {
 						OR = {
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 						}
 						#L5R Modified
 						# NOR = {
@@ -860,7 +860,7 @@
 				scope:new_landless_adventurer ?= {
 					location = {
 						OR = {
-							geographical_region = rokugan_phoenix
+							geographical_region = world_rokugan_phoenix
 						}
 					}
 				}
@@ -1082,7 +1082,7 @@
 					location = {
 						NOR = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_steppe_east
 							# geographical_region = world_steppe_west
 						}

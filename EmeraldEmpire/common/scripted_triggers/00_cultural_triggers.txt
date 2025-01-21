@@ -44,9 +44,9 @@ culture_in_winter_geographical_region_trigger = {
 			any_county_province = {
 				OR = {
 					#L5R Modified
-					geographical_region = rokugan_phoenix
-					geographical_region = rokugan_dragon
-					geographical_region = rokugan_spine_world_mountains
+					geographical_region = world_rokugan_phoenix
+					geographical_region = world_rokugan_dragon
+					geographical_region = world_rokugan_spine_world_mountains
 				}
 			}
 		}
@@ -389,21 +389,21 @@ cultures_share_relevant_region_trigger = {
 	# L5R Modified
 	OR = {
 		AND = {
-			culture_overlaps_geographical_region = rokugan_crab
+			culture_overlaps_geographical_region = world_rokugan_crab
 			scope:culture = {
-				culture_overlaps_geographical_region = rokugan_crab
+				culture_overlaps_geographical_region = world_rokugan_crab
 			}
 		}
 		AND = {
-			culture_overlaps_geographical_region = rokugan_crane
+			culture_overlaps_geographical_region = world_rokugan_crane
 			scope:culture = {
-				culture_overlaps_geographical_region = rokugan_crane
+				culture_overlaps_geographical_region = world_rokugan_crane
 			}
 		}
 		AND = {
-			culture_overlaps_geographical_region = rokugan_dragon
+			culture_overlaps_geographical_region = world_rokugan_dragon
 			scope:culture = {
-				culture_overlaps_geographical_region = rokugan_dragon
+				culture_overlaps_geographical_region = world_rokugan_dragon
 			}
 		}
 		AND = {
@@ -413,27 +413,27 @@ cultures_share_relevant_region_trigger = {
 			}
 		}
 		AND = {
-			culture_overlaps_geographical_region = rokugan_phoenix
+			culture_overlaps_geographical_region = world_rokugan_phoenix
 			scope:culture = {
-				culture_overlaps_geographical_region = rokugan_phoenix
+				culture_overlaps_geographical_region = world_rokugan_phoenix
 			}
 		}
 		AND = {
-			culture_overlaps_geographical_region = rokugan_scorpion
+			culture_overlaps_geographical_region = world_rokugan_scorpion
 			scope:culture = {
-				culture_overlaps_geographical_region = rokugan_scorpion
+				culture_overlaps_geographical_region = world_rokugan_scorpion
 			}
 		}
 		AND = {
-			culture_overlaps_geographical_region = rokugan_unicorn
+			culture_overlaps_geographical_region = world_rokugan_unicorn
 			scope:culture = {
-				culture_overlaps_geographical_region = rokugan_unicorn
+				culture_overlaps_geographical_region = world_rokugan_unicorn
 			}
 		}
 		AND = {
-			culture_overlaps_geographical_region = rokugan_imperial
+			culture_overlaps_geographical_region = world_rokugan_imperial
 			scope:culture = {
-				culture_overlaps_geographical_region = rokugan_imperial
+				culture_overlaps_geographical_region = world_rokugan_imperial
 			}
 		}
 	}

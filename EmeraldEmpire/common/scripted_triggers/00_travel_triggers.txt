@@ -220,7 +220,7 @@ has_terrain_danger_type = {
 
 is_nomadic_location_trigger = {
 	#L5R Modified
-	geographical_region = rokugan_unicorn
+	geographical_region = world_rokugan_unicorn
 	# geographical_region = world_steppe
 	culture = {
 		OR = {

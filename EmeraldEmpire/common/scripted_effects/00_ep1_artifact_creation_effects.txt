@@ -11652,7 +11652,7 @@ get_pressed_flower_species_effect = {
 					$LOCATION$ = {
 						NOR = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_europe_south
 							# geographical_region = world_africa_north
 							# geographical_region = world_asia_minor
@@ -11673,7 +11673,7 @@ get_pressed_flower_species_effect = {
 					$LOCATION$ = {
 						NOR = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_europe
 							# geographical_region = world_africa_north
 							# geographical_region = world_asia_minor
@@ -11694,8 +11694,8 @@ get_pressed_flower_species_effect = {
 					$LOCATION$ = {
 						NOR = {
 							#L5R Modified
-							geographical_region = rokugan_scorpion
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_scorpion
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_india
 							# geographical_region = world_middle_east
 							# geographical_region = world_africa_west
@@ -11789,7 +11789,7 @@ get_pressed_flower_species_effect = {
 					$LOCATION$ = {
 						NOR = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_europe
 							# geographical_region = world_middle_east
 							# geographical_region = world_asia_minor
@@ -11847,7 +11847,7 @@ get_pressed_flower_species_effect = {
 					$LOCATION$ = {
 						NOR = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_europe
 							# geographical_region = world_middle_east
 							# geographical_region = world_asia_minor
@@ -11888,7 +11888,7 @@ get_pressed_flower_species_effect = {
 					$LOCATION$ = {
 						NOR = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_europe
 							# geographical_region = world_middle_east
 							# geographical_region = world_asia_minor
@@ -11908,7 +11908,7 @@ get_pressed_flower_species_effect = {
 					$LOCATION$ = {
 						NOR = {
 							#L5R Modified
-							geographical_region = rokugan_unicorn
+							geographical_region = world_rokugan_unicorn
 							# geographical_region = world_europe
 							# geographical_region = world_middle_east
 							# geographical_region = world_asia_minor

@@ -1879,7 +1879,7 @@ get_appropriate_ancient_people = {
 		1 = { # Doji (fallback, placeholder)
 			set_variable = {
 				name = original_region
-				value = geographical_region:rokugan_crane
+				value = geographical_region:world_rokugan_crane
 				years = 1
 			}
 			culture:doji = { save_scope_as = ancient_culture }

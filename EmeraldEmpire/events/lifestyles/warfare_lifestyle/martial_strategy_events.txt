@@ -383,8 +383,8 @@ martial_strategy.2000 = {
 					# game_start_date >= 1066.10.15
 					location = { 
 						OR = { 
-							 geographical_region = rokugan_dragon 
-							 geographical_region = rokugan_phoenix 
+							 geographical_region = world_rokugan_dragon 
+							 geographical_region = world_rokugan_phoenix 
 							}
 						}
 				}
@@ -396,7 +396,7 @@ martial_strategy.2000 = {
 				trigger = {
 					location = {
 						OR = {
-							geographical_region = rokugan_crab
+							geographical_region = world_rokugan_crab
 						}
 					}
 					# NOT = { faith = { religion_tag = islam_religion } }
@@ -409,7 +409,7 @@ martial_strategy.2000 = {
 				trigger = {
 					location = {
 						OR = {
-							geographical_region = rokugan_dragon
+							geographical_region = world_rokugan_dragon
 							geographical_region = rokugan_lion
 						}
 					}
@@ -424,7 +424,7 @@ martial_strategy.2000 = {
 					location = {
 						OR = {
 							geographical_region = rokugan_lion
-							geographical_region = rokugan_phoenix
+							geographical_region = world_rokugan_phoenix
 						}
 					}
 				}
@@ -437,7 +437,7 @@ martial_strategy.2000 = {
 					location = {
 						OR = {
 							geographical_region = rokugan_lion
-							geographical_region = rokugan_scorpion
+							geographical_region = world_rokugan_scorpion
 						}
 					}
 				}

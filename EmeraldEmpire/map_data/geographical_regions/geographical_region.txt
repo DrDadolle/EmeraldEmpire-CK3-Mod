@@ -20,53 +20,53 @@
 
 
 # rokugan_lion
-	# rokugan_lion_plains
-	# rokugan_lion_kitsu_tombs
-# rokugan_phoenix
-	# rokugan_phoenix_isawa_mori
-	# rokugan_phoenix_kaito_mountains
-	# rokugan_phoenix_shiba_coast
-	# rokugan_phoenix_west_mountains
-	# rokugan_phoenix_south
-# rokugan_dragon
-	# rokugan_dragon_dragonfly
-	# rokugan_dragon_central
-	# rokugan_dragon_wall_north
-# rokugan_unicorn
-	# rokugan_unicorn_north
-	# rokugan_unicorn_west_plains
-	# rokugan_unicorn_east_spine
-	# rokugan_unicorn_east_dragon
-	# rokugan_unicorn_west_desert
-# rokugan_imperial
-	# rokugan_imperial_lands
-	# rokugan_imperial_kasuga_bay
-	# rokugan_imperial_crane_north
-# rokugan_crab
-	# rokugan_crab_yasuki
-	# rokugan_crab_kuni
-	# rokugan_crab_wall_region
-	# rokugan_crab_central
-	# rokugan_crab_north
-# rokugan_crane
-	# rokugan_crane_daidoji_swamps
-	# rokugan_crane_coast
-	# rokugan_crane_asahina_island
-	# rokugan_crane_daidoji_island
-# rokugan_scorpion
-	# rokugan_scorpion_yogo_swamps
-	# rokugan_scorpion_central
-# rokugan_shinomen_mori
-	# rokugan_shinomen_mori_west
-	# rokugan_shinomen_mori_east
-	# rokugan_shinomen_mori_south
-	# rokugan_shinomen_mori_north
-# rokugan_spine_world_mountains
-	# rokugan_spine_world_mountains_crane
-	# rokugan_spine_world_mountains_scorpion
-	# rokugan_spine_world_mountains_unicorn
-	# rokugan_spine_world_mountains_beiden_pass
-# rokugan_spice_and_silk_isles
+	# world_rokugan_lion_plains
+	# world_rokugan_lion_kitsu_tombs
+# world_rokugan_phoenix
+	# world_rokugan_phoenix_isawa_mori
+	# world_rokugan_phoenix_kaito_mountains
+	# world_rokugan_phoenix_shiba_coast
+	# world_rokugan_phoenix_west_mountains
+	# world_rokugan_phoenix_south
+# world_rokugan_dragon
+	# world_rokugan_dragon_dragonfly
+	# world_rokugan_dragon_central
+	# world_rokugan_dragon_wall_north
+# world_rokugan_unicorn
+	# world_rokugan_unicorn_north
+	# world_rokugan_unicorn_west_plains
+	# world_rokugan_unicorn_east_spine
+	# world_rokugan_unicorn_east_dragon
+	# world_rokugan_unicorn_west_desert
+# world_rokugan_imperial
+	# world_rokugan_imperial_lands
+	# world_rokugan_imperial_kasuga_bay
+	# world_rokugan_imperial_crane_north
+# world_rokugan_crab
+	# world_rokugan_crab_yasuki
+	# world_rokugan_crab_kuni
+	# world_rokugan_crab_wall_region
+	# world_rokugan_crab_central
+	# world_rokugan_crab_north
+# world_rokugan_crane
+	# world_rokugan_crane_daidoji_swamps
+	# world_rokugan_crane_coast
+	# world_rokugan_crane_asahina_island
+	# world_rokugan_crane_daidoji_island
+# world_rokugan_scorpion
+	# world_rokugan_scorpion_yogo_swamps
+	# world_rokugan_scorpion_central
+# world_rokugan_shinomen_mori
+	# world_rokugan_shinomen_mori_west
+	# world_rokugan_shinomen_mori_east
+	# world_rokugan_shinomen_mori_south
+	# world_rokugan_shinomen_mori_north
+# world_rokugan_spine_world_mountains
+	# world_rokugan_spine_world_mountains_crane
+	# world_rokugan_spine_world_mountains_scorpion
+	# world_rokugan_spine_world_mountains_unicorn
+	# world_rokugan_spine_world_mountains_beiden_pass
+# world_rokugan_spice_and_silk_isles
 
 # TODO how to define river of gold ???? Special Region
 # TODO same for drowned merchant river
@@ -80,13 +80,13 @@
 ######        LION LANDS       ######						
 #####################################						
 #####################################
-rokugan_lion_plains = {
+world_rokugan_lion_plains = {
 	duchies = {
 		d_matsu d_ikoma d_akodo 
 	}
 }
 
-rokugan_lion_kitsu_tombs = {
+world_rokugan_lion_kitsu_tombs = {
 	duchies = {
 		d_kitsu d_shika
 	}
@@ -94,7 +94,7 @@ rokugan_lion_kitsu_tombs = {
 
 rokugan_lion = {
 	regions = {
-		rokugan_lion_plains rokugan_lion_kitsu_tombs
+		world_rokugan_lion_plains world_rokugan_lion_kitsu_tombs
 	}
 }
 
@@ -103,40 +103,40 @@ rokugan_lion = {
 ######     PHOENIX LANDS       ######						
 #####################################						
 #####################################
-rokugan_phoenix_isawa_mori = {
+world_rokugan_phoenix_isawa_mori = {
 	duchies = {
 		d_isawa
 	}
 }
 
-rokugan_phoenix_kaito_mountains = {
+world_rokugan_phoenix_kaito_mountains = {
 	duchies = {
 		d_kaito
 	}
 }
 
-rokugan_phoenix_shiba_coast = {
+world_rokugan_phoenix_shiba_coast = {
 	duchies = {
 		d_shiba d_nekoma
 	}
 }
 
-rokugan_phoenix_west_mountains = {
+world_rokugan_phoenix_west_mountains = {
 	duchies = {
 		d_chuda
 	}
 }
 
-rokugan_phoenix_south = {
+world_rokugan_phoenix_south = {
 	duchies = {
 		d_asako d_kintani_valley  d_moshi
 	}
 }
 
-rokugan_phoenix = {
+world_rokugan_phoenix = {
 	regions = {
-		rokugan_phoenix_isawa_mori rokugan_phoenix_kaito_mountains rokugan_phoenix_shiba_coast
-		rokugan_phoenix_west_mountains rokugan_phoenix_south
+		world_rokugan_phoenix_isawa_mori world_rokugan_phoenix_kaito_mountains world_rokugan_phoenix_shiba_coast
+		world_rokugan_phoenix_west_mountains world_rokugan_phoenix_south
 	}
 }
 
@@ -145,27 +145,27 @@ rokugan_phoenix = {
 ######     DRAGON  LANDS       ######						
 #####################################						
 #####################################
-rokugan_dragon_dragonfly = {
+world_rokugan_dragon_dragonfly = {
 	duchies = {
 		d_tonbo d_kintani_valley_2 d_rich_frog
 	}
 }
 
-rokugan_dragon_central = {
+world_rokugan_dragon_central = {
 	duchies = {
 		d_agasha d_kitsuki
 	}
 }
 
-rokugan_dragon_wall_north = {
+world_rokugan_dragon_wall_north = {
 	duchies = {
 		d_togashi d_mirumoto
 	}
 }
 
-rokugan_dragon = {
+world_rokugan_dragon = {
 	regions = {
-		rokugan_dragon_wall_north rokugan_dragon_central rokugan_dragon_dragonfly
+		world_rokugan_dragon_wall_north world_rokugan_dragon_central world_rokugan_dragon_dragonfly
 	}
 }
 
@@ -174,40 +174,40 @@ rokugan_dragon = {
 ######     UNICORN  LANDS      ######						
 #####################################						
 #####################################
-rokugan_unicorn_north = {
+world_rokugan_unicorn_north = {
 	duchies = {
 		d_utaku d_ichiro
 	}
 }
 
-rokugan_unicorn_west_plains = {
+world_rokugan_unicorn_west_plains = {
 	duchies = {
 		d_ide
 	}
 }
 
-rokugan_unicorn_east_spine = {
+world_rokugan_unicorn_east_spine = {
 	duchies = {
 		d_iuchi
 	}
 }
 
-rokugan_unicorn_east_dragon = {
+world_rokugan_unicorn_east_dragon = {
 	duchies = {
 		d_shinjo
 	}
 }
 
-rokugan_unicorn_west_desert = {
+world_rokugan_unicorn_west_desert = {
 	duchies = {
 		d_moto
 	}
 }
 
-rokugan_unicorn = {
+world_rokugan_unicorn = {
 	regions = {
-		rokugan_unicorn_north rokugan_unicorn_west_plains rokugan_unicorn_east_spine
-		rokugan_unicorn_east_dragon  rokugan_unicorn_west_desert
+		world_rokugan_unicorn_north world_rokugan_unicorn_west_plains world_rokugan_unicorn_east_spine
+		world_rokugan_unicorn_east_dragon  world_rokugan_unicorn_west_desert
 	}
 }
 
@@ -218,27 +218,27 @@ rokugan_unicorn = {
 #####################################						
 #####################################
 
-rokugan_imperial_lands = {
+world_rokugan_imperial_lands = {
 	duchies = {
 		d_emerald d_hantei d_seppun d_otomo
 	}
 }
 
-rokugan_imperial_kasuga_bay = {
+world_rokugan_imperial_kasuga_bay = {
 	duchies = {
 		d_kasuga
 	}
 }
 
-rokugan_imperial_crane_north = {
+world_rokugan_imperial_crane_north = {
 	duchies = {
 		d_kakita
 	}
 }
 
-rokugan_imperial = {
+world_rokugan_imperial = {
 	regions = {
-		rokugan_imperial_lands rokugan_imperial_kasuga_bay rokugan_imperial_crane_north
+		world_rokugan_imperial_lands world_rokugan_imperial_kasuga_bay world_rokugan_imperial_crane_north
 	}
 }
 
@@ -248,47 +248,47 @@ rokugan_imperial = {
 #####################################						
 #####################################
 
-rokugan_crab_yasuki = {
+world_rokugan_crab_yasuki = {
 	duchies = {
 		d_yasuki
 	}
 }
 
-rokugan_crab_kuni = {
+world_rokugan_crab_kuni = {
 	duchies = {
 		d_kuni
 	}
 }
 
-rokugan_crab_wall_region = {
+world_rokugan_crab_wall_region = {
 	duchies = {
 		d_hida
 	}
 }
-rokugan_crab_central = {
+world_rokugan_crab_central = {
 	duchies = {
 		d_suzume
 	}
 }
 
-rokugan_crab_north = {
+world_rokugan_crab_north = {
 	duchies = {
 		d_kaiu
 	}
 }
 
-rokugan_crab = {
+world_rokugan_crab = {
 	regions = {
-		rokugan_crab_yasuki rokugan_crab_kuni rokugan_crab_wall_region
-		rokugan_crab_central 
-		rokugan_crab_north
+		world_rokugan_crab_yasuki world_rokugan_crab_kuni world_rokugan_crab_wall_region
+		world_rokugan_crab_central 
+		world_rokugan_crab_north
 	}
 }
 
-rokugan_crab_clan = {
+world_rokugan_crab_clan = {
 	regions = {
-		rokugan_crab_yasuki rokugan_crab_kuni rokugan_crab_wall_region 
-		rokugan_crab_north
+		world_rokugan_crab_yasuki world_rokugan_crab_kuni world_rokugan_crab_wall_region 
+		world_rokugan_crab_north
 	}
 }
 
@@ -297,35 +297,35 @@ rokugan_crab_clan = {
 ######       CRANE  LANDS      ######						
 #####################################						
 #####################################
-rokugan_crane_daidoji_swamps = {
+world_rokugan_crane_daidoji_swamps = {
 	duchies = {
 		d_kitsune
 	}
 }
 
-rokugan_crane_coast = {
+world_rokugan_crane_coast = {
 	duchies = {
 		d_doji
 	}
 }
 
-rokugan_crane_asahina_island = {
+world_rokugan_crane_asahina_island = {
 	duchies = {
 		d_asahina
 	}
 }
 
-rokugan_crane_daidoji_island = {
+world_rokugan_crane_daidoji_island = {
 	duchies = {
 		d_daidoji
 	}
 }
 
-rokugan_crane = {
+world_rokugan_crane = {
 	regions = {
-		rokugan_crane_daidoji_swamps 
-		rokugan_crane_coast
-		rokugan_crane_asahina_island rokugan_crane_daidoji_island
+		world_rokugan_crane_daidoji_swamps 
+		world_rokugan_crane_coast
+		world_rokugan_crane_asahina_island world_rokugan_crane_daidoji_island
 	}
 }
 
@@ -334,21 +334,21 @@ rokugan_crane = {
 ######     SCORPION  LANDS     ######						
 #####################################						
 #####################################
-rokugan_scorpion_yogo_swamps = {
+world_rokugan_scorpion_yogo_swamps = {
 	duchies = {
 		d_yogo
 	}
 }
 
-rokugan_scorpion_central = {
+world_rokugan_scorpion_central = {
 	duchies = {
 		d_shosuro d_bayushi d_ronin_central d_tsuruchi
 	}
 }
 
-rokugan_scorpion = {
+world_rokugan_scorpion = {
 	regions = {
-		rokugan_scorpion_yogo_swamps rokugan_scorpion_central
+		world_rokugan_scorpion_yogo_swamps world_rokugan_scorpion_central
 	}
 }
 
@@ -357,25 +357,25 @@ rokugan_scorpion = {
 ######     SHINOMEN  LANDS     ######						
 #####################################						
 #####################################
-rokugan_shinomen_mori_west = {
+world_rokugan_shinomen_mori_west = {
 	duchies = {
 		d_toritaka d_kaikoga d_west_shinomen_monasteries d_west_steppes_1 d_west_steppes_2
 	}
 }
 
-rokugan_shinomen_mori_east = {
+world_rokugan_shinomen_mori_east = {
 	duchies = {
 		d_east_shinomen_monasteries
 	}
 }
 
-rokugan_shinomen_mori_south = {
+world_rokugan_shinomen_mori_south = {
 	duchies = {
 		d_south_shinomen d_usagi
 	}
 }
 
-rokugan_shinomen_mori_north = {
+world_rokugan_shinomen_mori_north = {
 	duchies = {
  		d_miya
  	}
@@ -383,11 +383,11 @@ rokugan_shinomen_mori_north = {
 
 
 
-rokugan_shinomen_mori = {
+world_rokugan_shinomen_mori = {
 	regions = {
-		rokugan_shinomen_mori_west rokugan_shinomen_mori_east
-		rokugan_shinomen_mori_south
-		rokugan_shinomen_mori_north
+		world_rokugan_shinomen_mori_west world_rokugan_shinomen_mori_east
+		world_rokugan_shinomen_mori_south
+		world_rokugan_shinomen_mori_north
 	}
 }
 
@@ -397,36 +397,36 @@ rokugan_shinomen_mori = {
 #####################################						
 #####################################
 #TODO
-rokugan_spine_world_mountains_crane = {
+world_rokugan_spine_world_mountains_crane = {
 	duchies = {
 		d_toritaka d_kaikoga d_west_shinomen_monasteries
 	}
 }
 
-rokugan_spine_world_mountains_scorpion = {
+world_rokugan_spine_world_mountains_scorpion = {
 	duchies = {
 		d_soshi
 	}
 }
 #TODO
-# rokugan_spine_world_mountains_unicorn = {
+# world_rokugan_spine_world_mountains_unicorn = {
 # 	duchies = {
 # 		d_south_shinomen
 # 	}
 # }
 #TODO
-# rokugan_spine_world_mountains_beiden_pass = {
+# world_rokugan_spine_world_mountains_beiden_pass = {
 # 	duchies = {
 # 		d_shosuro d_bayushi d_ronin_central d_tsuruchi
 # 	}
 # }
 
 
-rokugan_spine_world_mountains = {
+world_rokugan_spine_world_mountains = {
 	regions = {
-		# rokugan_spine_world_mountains_crane 
-		rokugan_spine_world_mountains_scorpion
-		# rokugan_spine_world_mountains_unicorn rokugan_spine_world_mountains_beiden_pass
+		# world_rokugan_spine_world_mountains_crane 
+		world_rokugan_spine_world_mountains_scorpion
+		# world_rokugan_spine_world_mountains_unicorn world_rokugan_spine_world_mountains_beiden_pass
 	}
 }
 
@@ -435,7 +435,7 @@ rokugan_spine_world_mountains = {
 ######  ISLES SPICE AND SILK   ######						
 #####################################						
 #####################################
-rokugan_spice_and_silk_isles = {
+world_rokugan_spice_and_silk_isles = {
 	duchies = {
 		d_yoritomo
 	}
@@ -472,25 +472,25 @@ world_shadowlands_twilight_mountains = {
 #####################################
 world_rokugan_north = {
 	regions = {
-		rokugan_lion rokugan_phoenix rokugan_dragon rokugan_unicorn
+		rokugan_lion world_rokugan_phoenix world_rokugan_dragon world_rokugan_unicorn
 	}
 }
 world_rokugan_south = {
 	regions = {
-		rokugan_crab rokugan_scorpion rokugan_shinomen_mori
+		world_rokugan_crab world_rokugan_scorpion world_rokugan_shinomen_mori
 	}
 }
 
 world_rokugan_east = {
 	regions = {
-		rokugan_imperial rokugan_crane rokugan_spice_and_silk_isles
+		world_rokugan_imperial world_rokugan_crane world_rokugan_spice_and_silk_isles
 	}
 }
 
 world_rokugan = {
 	regions = {
-		rokugan_lion rokugan_phoenix rokugan_dragon rokugan_unicorn rokugan_imperial rokugan_crab rokugan_crane
-		rokugan_scorpion rokugan_shinomen_mori rokugan_spine_world_mountains rokugan_spice_and_silk_isles
+		rokugan_lion world_rokugan_phoenix world_rokugan_dragon world_rokugan_unicorn world_rokugan_imperial world_rokugan_crab world_rokugan_crane
+		world_rokugan_scorpion world_rokugan_shinomen_mori world_rokugan_spine_world_mountains world_rokugan_spice_and_silk_isles
 	}
 }
 
@@ -505,9 +505,9 @@ world_shadowlands = {
 ######        STRUGGLE         ######						
 #####################################						
 #####################################
-rokugan_shadowlands_struggle_region = {
+world_rokugan_shadowlands_struggle_region = {
 	regions = {
-		rokugan_crab_clan world_shadowlands
+		world_rokugan_crab_clan world_shadowlands
 	}
 }
 
@@ -525,8 +525,8 @@ graphical_world_rokugan = {
 	graphical = yes
 	color = { 232 57 41 }
 	regions = {
-		rokugan_lion rokugan_phoenix rokugan_dragon rokugan_unicorn rokugan_imperial rokugan_crab rokugan_crane
-		rokugan_scorpion rokugan_shinomen_mori rokugan_spine_world_mountains rokugan_spice_and_silk_isles
+		rokugan_lion world_rokugan_phoenix world_rokugan_dragon world_rokugan_unicorn world_rokugan_imperial world_rokugan_crab world_rokugan_crane
+		world_rokugan_scorpion world_rokugan_shinomen_mori world_rokugan_spine_world_mountains world_rokugan_spice_and_silk_isles
 	}
 }
 
@@ -545,7 +545,7 @@ graphical_world_shadowlands = {
 
 ghw_region_otosan_uchi = {
 	regions = {
-		rokugan_imperial
+		world_rokugan_imperial
 	}
 }
 
@@ -614,7 +614,7 @@ material_woods_hickory = {
 
 material_woods_palm = {
 	regions = {
-		rokugan_spice_and_silk_isles
+		world_rokugan_spice_and_silk_isles
 	}
 }
 
@@ -660,7 +660,7 @@ material_hsb_boar_tusk = {}
 
 material_hsb_ivory_imported = {
 	regions = {
-		rokugan_spice_and_silk_isles
+		world_rokugan_spice_and_silk_isles
 	}
 }
 
@@ -672,19 +672,19 @@ material_hsb_ivory_native = {
 
 material_hsb_mother_of_pearl = {
 	regions = {
-		rokugan_spice_and_silk_isles
+		world_rokugan_spice_and_silk_isles
 	}
 }
 
 material_hsb_tortoiseshell = {
 	regions = {
-		rokugan_imperial
+		world_rokugan_imperial
 	}
 }
 
 material_hsb_seashell = {
 	regions = {
-		rokugan_crane rokugan_spice_and_silk_isles
+		world_rokugan_crane world_rokugan_spice_and_silk_isles
 	}
 }
 
@@ -728,12 +728,12 @@ divergence_island_regions = {
 # Enable horse pastures buildings
 world_steppe_east = {
 	regions = {
-		rokugan_unicorn
+		world_rokugan_unicorn
 	}
 }
 world_horse_buildings_in_hills_and_mountains = {
 	regions = {
-		rokugan_unicorn
+		world_rokugan_unicorn
 	}
 }
 

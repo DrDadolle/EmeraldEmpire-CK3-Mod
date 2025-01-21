@@ -7404,7 +7404,7 @@
 			if = {
 				limit = {
 					#L5R Modified
-					artifact_region_trigger = { CHARACTER = scope:owner REGION = rokugan_unicorn }
+					artifact_region_trigger = { CHARACTER = scope:owner REGION = world_rokugan_unicorn }
 				}
 				add = 45
 			}
@@ -7424,7 +7424,7 @@
 				limit = {
 					OR = {
 						#L5R Modified
-						artifact_region_trigger = { CHARACTER = scope:owner REGION = rokugan_unicorn }
+						artifact_region_trigger = { CHARACTER = scope:owner REGION = world_rokugan_unicorn }
 						# artifact_region_trigger = { CHARACTER = scope:owner REGION = world_middle_east_arabia }
 					}
 				}

@@ -968,7 +968,7 @@ fp3_scholarship.2010 = {
 		# Find a random faraway county to pull a character from
 		random_county_in_region = {
 			#L5R Modified
-			region = rokugan_unicorn
+			region = world_rokugan_unicorn
 			# region = world_india
 			limit = {
 				faith = {
