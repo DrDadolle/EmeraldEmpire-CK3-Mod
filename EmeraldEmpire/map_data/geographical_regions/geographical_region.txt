@@ -588,7 +588,7 @@ material_woods_india_burma = {}
 material_woods_ebony = {}
 
 # Regional - France, England, Wales, Ireland
-material_wood_yew = {}
+material_woods_yew = {}
 
 # EP2 Bow Woods
 material_woods_bamboo = {
@@ -632,9 +632,9 @@ material_woods_mediterranean = {
 material_woods_sri_lanka = {}
 
 material_cloth_no_silk = {
-	regions = {
-		world_rokugan world_shadowlands
-	}
+	# regions = {
+	# 	world_rokugan world_shadowlands
+	# }
 }
 
 material_cloth_linen = {}
@@ -659,9 +659,9 @@ material_hsb_deer_antler = {}
 material_hsb_boar_tusk = {}
 
 material_hsb_ivory_imported = {
-	# regions = {
-	# 	world_africa_north
-	# }
+	regions = {
+		rokugan_spice_and_silk_isles
+	}
 }
 
 material_hsb_ivory_native = {
@@ -671,21 +671,21 @@ material_hsb_ivory_native = {
 }
 
 material_hsb_mother_of_pearl = {
-	# regions = {
-	# 	world_africa_north
-	# }
+	regions = {
+		rokugan_spice_and_silk_isles
+	}
 }
 
 material_hsb_tortoiseshell = {
-	# regions = {
-	# 	world_africa_north
-	# }
+	regions = {
+		rokugan_imperial
+	}
 }
 
 material_hsb_seashell = {
-	# regions = {
-	# 	world_africa_north
-	# }
+	regions = {
+		rokugan_crane rokugan_spice_and_silk_isles
+	}
 }
 
 ###########################################################################

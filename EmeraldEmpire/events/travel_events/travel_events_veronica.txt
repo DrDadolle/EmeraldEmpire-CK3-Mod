@@ -3184,7 +3184,7 @@ travel_events.3062 = {
 		trigger = {
 			can_appoint_char_to_court_position = {
 				CHAR = scope:hermit_scope
-				COURT_POS = court_cave_hermit_position
+				COURT_POS = cave_hermit_court_position
 			}
 		}
 		custom_tooltip = travel_events.3062.b.tt
@@ -3204,7 +3204,7 @@ travel_events.3062 = {
 		}
 		appoint_court_position = { #they're now your personal hermit
 			recipient = scope:hermit_scope
-			court_position = court_cave_hermit_position
+			court_position = cave_hermit_court_position
 		}
 		scope:hermit_owner = {
 			add_opinion = {
@@ -3261,7 +3261,7 @@ travel_events.3062 = {
 					title = travel_events.3062.c.success
 					appoint_court_position = { #he's now your personal hermit
 						recipient = scope:hermit_scope
-						court_position = court_cave_hermit_position
+						court_position = cave_hermit_court_position
 					}
 				}
 			}
