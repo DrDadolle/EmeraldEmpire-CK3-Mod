@@ -375,7 +375,15 @@ ep3_laamp_decision_event.1000 = {
 			#RETURN: Return from where?
 			first_valid = {
 				#RETURN: Unique locations
-				#L5R Disabled
+				#L5R Modified
+				#Otosan Uchi
+				triggered_desc = { 
+					trigger = { 
+						has_variable = return_from_location
+						exists = scope:is_otosan_uchi
+					}
+					desc = ep3_laamp_decision_event.1000.desc_intro_returned_constantinople_01
+				}
 				#Constantinople
 				# triggered_desc = { 
 				# 	trigger = { 
@@ -511,7 +519,7 @@ ep3_laamp_decision_event.1000 = {
 							has_variable = 1000_is_currently_snowing
 						}
 						#L5R Modified
-						scope:visiting_location = { geographical_region = world_rokugan_dragon }
+						scope:visiting_location = { geographical_region = rokugan_dragon }
 						# scope:visiting_location = { geographical_region = world_europe_north }
 					}
 					desc = ep3_laamp_decision_event.1000.desc_outro_regional_scandinavia_summer_returned_01
@@ -522,7 +530,7 @@ ep3_laamp_decision_event.1000 = {
 						NOT = { exists = scope:is_unique_location }
 						has_variable = 1000_is_currently_raining
 						#L5R Modified
-						scope:visiting_location = { geographical_region = world_rokugan_dragon }
+						scope:visiting_location = { geographical_region = rokugan_dragon }
 						# scope:visiting_location = { geographical_region = world_europe_north }
 					}
 					desc = ep3_laamp_decision_event.1000.desc_outro_regional_scandinavia_summer_returned_02
@@ -533,7 +541,7 @@ ep3_laamp_decision_event.1000 = {
 						has_variable = return_from_location
 						NOT = { exists = scope:is_unique_location }
 						#L5R Modified
-						scope:visiting_location = { geographical_region = world_rokugan_dragon }
+						scope:visiting_location = { geographical_region = rokugan_dragon }
 						# scope:visiting_location = { geographical_region = world_europe_north }
 						has_variable = 1000_is_currently_snowing
 					}
@@ -546,7 +554,7 @@ ep3_laamp_decision_event.1000 = {
 							NOT = { exists = scope:is_unique_location }
 							end_of_year_season_trigger = yes #Dark out
 							#L5R Modified
-						scope:visiting_location = { geographical_region = world_rokugan_dragon }
+						scope:visiting_location = { geographical_region = rokugan_dragon }
 							# scope:visiting_location = { geographical_region = world_europe_north }
 						}
 						desc = ep3_laamp_decision_event.1000.desc_outro_regional_scandinavia_winter_returned_02
@@ -557,7 +565,7 @@ ep3_laamp_decision_event.1000 = {
 							NOT = { exists = scope:is_unique_location }
 							end_of_year_season_trigger = yes #Dark out
 							#L5R Modified
-							scope:visiting_location = { geographical_region = world_rokugan_dragon }
+							scope:visiting_location = { geographical_region = rokugan_dragon }
 							# scope:visiting_location = { geographical_region = world_europe_north }
 						}
 						desc = ep3_laamp_decision_event.1000.desc_outro_regional_scandinavia_winter_returned_03
@@ -732,7 +740,7 @@ ep3_laamp_decision_event.1000 = {
 							has_variable = return_from_location
 							NOT = { exists = scope:is_unique_location }
 							#L5R Modified
-							scope:visiting_location = { geographical_region = world_rokugan_unicorn }
+							scope:visiting_location = { geographical_region = rokugan_unicorn }
 							# scope:visiting_location = { geographical_region = world_steppe }
 						}
 						desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_01
@@ -742,7 +750,7 @@ ep3_laamp_decision_event.1000 = {
 							has_variable = return_from_location
 							NOT = { exists = scope:is_unique_location }
 							#L5R Modified
-							scope:visiting_location = { geographical_region = world_rokugan_unicorn }
+							scope:visiting_location = { geographical_region = rokugan_unicorn }
 							# scope:visiting_location = { geographical_region = world_steppe }
 						}
 						desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_02
@@ -752,7 +760,7 @@ ep3_laamp_decision_event.1000 = {
 							has_variable = return_from_location
 							NOT = { exists = scope:is_unique_location }
 							#L5R Modified
-							scope:visiting_location = { geographical_region = world_rokugan_unicorn }
+							scope:visiting_location = { geographical_region = rokugan_unicorn }
 							# scope:visiting_location = { geographical_region = world_steppe }
 						}
 						desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_03
@@ -971,7 +979,7 @@ ep3_laamp_decision_event.1000 = {
 				}
 			}
 			##FIRST TIME
-			#L5R Disabled
+			#L5R Modified
 			#FIRST TIME: Revisiting Constantinople
 			# triggered_desc = {
 			# 	trigger = {
@@ -984,7 +992,19 @@ ep3_laamp_decision_event.1000 = {
 			# 	}
 			# 	desc = ep3_laamp_decision_event.1000.desc_outro_revisit_constantinople
 			# }
-			#L5R Disabled
+			FIRST TIME: Revisiting Otosan Uchi
+			triggered_desc = {
+				trigger = {
+					NOT = { has_variable = return_from_location }
+					exists = scope:is_otosan_uchi
+					any_in_list = {
+						variable = laamp_visited_settlements_list
+						this = scope:visiting_location
+					}
+				}
+				desc = ep3_laamp_decision_event.1000.desc_outro_revisit_constantinople
+			}
+			#L5R Modified
 			# #FIRST TIME: It's Constantinople
 			# triggered_desc = {
 			# 	trigger = {
@@ -993,6 +1013,14 @@ ep3_laamp_decision_event.1000 = {
 			# 	}
 			# 	desc = ep3_laamp_decision_event.1000.desc_outro_constantinople
 			# }
+			# #FIRST TIME: It's Otosan Uchi
+			triggered_desc = {
+				trigger = {
+					NOT = { has_variable = return_from_location }
+					exists = scope:is_otosan_uchi 
+				}
+				desc = ep3_laamp_decision_event.1000.desc_outro_constantinople
+			}
 			#FIRST TIME: Our visiting partner flavor
 			random_valid = {
 				triggered_desc = {
@@ -1059,7 +1087,7 @@ ep3_laamp_decision_event.1000 = {
 				has_variable = return_from_location
 				NOT = { exists = scope:is_unique_location }
 				#L5R Modified
-				scope:visiting_location = { geographical_region = world_rokugan_dragon }
+				scope:visiting_location = { geographical_region = rokugan_dragon }
 				# scope:visiting_location = { geographical_region = world_europe_north }
 				has_variable = 1000_is_currently_snowing
 			}
@@ -1091,12 +1119,17 @@ ep3_laamp_decision_event.1000 = {
 			}
 			reference = terrain_settlement
 		}
-		#L5R Disabled
+		#L5R Modified
 		# #Constantinople
 		# override_background = { 
 		# 	trigger = { exists = scope:is_constantinople }
 		# 	reference = ep3_constantinople
 		# }
+		#Otosan Uchi
+		override_background = { 
+			trigger = { exists = scope:is_otosan_uchi }
+			reference = ep3_constantinople
+		}
 		#Church Holding
 		override_background = { 
 			trigger = { 
@@ -1211,7 +1244,7 @@ ep3_laamp_decision_event.1000 = {
 				scope:visiting_location = {
 					OR = { 
 						#L5R Modified
-						geographical_region = world_rokugan_dragon
+						geographical_region = rokugan_dragon
 						# geographical_region = world_europe_north
 						# geographical_region = world_europe_west_britannia
 					}
@@ -1234,7 +1267,7 @@ ep3_laamp_decision_event.1000 = {
 				end_of_year_season_trigger = yes
 				location_has_winter_trigger = yes
 				#L5R Modified
-				scope:visiting_location = { geographical_region = world_rokugan_dragon }
+				scope:visiting_location = { geographical_region = rokugan_dragon }
 				# scope:visiting_location = { geographical_region = world_europe_north }
 			}
 			random_list = {
@@ -1263,13 +1296,19 @@ ep3_laamp_decision_event.1000 = {
 		# 		}
 		# 	}
 		# }
-		#L5R Disabled
+		#L5R Modified
 		#This. Is. _Constantinople_
 		# if = {
 		# 	limit = { scope:visiting_location.barony = title:b_constantinople }
 		# 	save_scope_as = is_constantinople
 		# 	save_scope_as = is_unique_location #In case we add more unique locations
 		# }
+		# This is Otosan Uchi
+		if = {
+			limit = { scope:visiting_location.barony = title:b_otosan_uchi }
+			save_scope_as = is_otosan_uchi
+			save_scope_as = is_unique_location #In case we add more unique locations
+		}
 		#Assemble the list of options the first time this window pops
 		if = {
 			limit = {
@@ -1914,7 +1953,7 @@ ep3_laamp_decision_event.1001 = {
 					trigger = { 
 						exists = scope:been_to_second
 						#L5R Modified
-						scope:visiting_location = { geographical_region = world_rokugan_unicorn }
+						scope:visiting_location = { geographical_region = rokugan_unicorn }
 						# scope:visiting_location = { geographical_region = world_steppe }
 					}
 					desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_01
@@ -1923,7 +1962,7 @@ ep3_laamp_decision_event.1001 = {
 					trigger = { 
 						exists = scope:been_to_second
 						#L5R Modified
-						scope:visiting_location = { geographical_region = world_rokugan_unicorn }
+						scope:visiting_location = { geographical_region = rokugan_unicorn }
 						# scope:visiting_location = { geographical_region = world_steppe }
 					}
 					desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_02
@@ -1932,7 +1971,7 @@ ep3_laamp_decision_event.1001 = {
 					trigger = { 
 						exists = scope:been_to_second
 						#L5R Modified
-						scope:visiting_location = { geographical_region = world_rokugan_unicorn }
+						scope:visiting_location = { geographical_region = rokugan_unicorn }
 						# scope:visiting_location = { geographical_region = world_steppe }
 					}
 					desc = ep3_laamp_decision_event.1000.desc_outro_regional_steppe_returned_03

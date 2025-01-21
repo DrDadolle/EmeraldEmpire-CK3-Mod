@@ -7389,12 +7389,13 @@ fund_inspiration.1051 = {
 				}
 				desc = fund_inspiration.1051_ark_covenant.desc
 			}
-			triggered_desc = {
-				trigger = {
-					exists = scope:cupboard
-				}
-				desc = fund_inspiration.1051_cupboard.desc
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		exists = scope:cupboard
+			# 	}
+			# 	desc = fund_inspiration.1051_cupboard.desc
+			# }
 			desc = fund_inspiration.1051.desc
 		}
 		
@@ -7412,16 +7413,18 @@ fund_inspiration.1051 = {
 				}
 				desc = fund_inspiration.1051.desc.epic.ark
 			}
-			triggered_desc = {
-				trigger = {
-					exists = scope:cupboard
-				}
-				desc = fund_inspiration.1051.desc.epic.cupboard
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		exists = scope:cupboard
+			# 	}
+			# 	desc = fund_inspiration.1051.desc.epic.cupboard
+			# }
 			triggered_desc = {
 				trigger = {
 					exists = scope:epic
-					NOT = { exists = scope:cupboard }
+					#L5R Disabled
+					# NOT = { exists = scope:cupboard }
 					NOT = { exists = scope:ark_covenant }
 					NOT = { exists = scope:throne }
 				}

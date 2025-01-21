@@ -358,20 +358,21 @@ on_war_started = {
 					involvement = involved
 					save_scope_as = struggle
 				}
-				scope:war = {
-					set_variable = {
-						name = struggle_involvement_attacker
-						value = flag:involved
-					}
-					set_variable = {
-						name = struggle_scope_attacker
-						value = scope:struggle
-					}
-					set_variable = {
-						name = struggle_attacker_tier
-						value = scope:attacker.highest_held_title_tier
-					}
-				}
+				#L5R Disabled
+				# scope:war = {
+				# 	set_variable = {
+				# 		name = struggle_involvement_attacker
+				# 		value = flag:involved
+				# 	}
+				# 	set_variable = {
+				# 		name = struggle_scope_attacker
+				# 		value = scope:struggle
+				# 	}
+				# 	set_variable = {
+				# 		name = struggle_attacker_tier
+				# 		value = scope:attacker.highest_held_title_tier
+				# 	}
+				# }
 			}
 			### Interloper.
 			else_if = {
@@ -382,20 +383,21 @@ on_war_started = {
 					involvement = interloper
 					save_scope_as = struggle
 				}
-				scope:war = {
-					set_variable = {
-						name = struggle_involvement_attacker
-						value = flag:interloper
-					}
-					set_variable = {
-						name = struggle_scope_attacker
-						value = scope:struggle
-					}
-					set_variable = {
-						name = struggle_attacker_tier
-						value = scope:attacker.highest_held_title_tier
-					}
-				}
+				#L5R Disabled
+				# scope:war = {
+				# 	set_variable = {
+				# 		name = struggle_involvement_attacker
+				# 		value = flag:interloper
+				# 	}
+				# 	set_variable = {
+				# 		name = struggle_scope_attacker
+				# 		value = scope:struggle
+				# 	}
+				# 	set_variable = {
+				# 		name = struggle_attacker_tier
+				# 		value = scope:attacker.highest_held_title_tier
+				# 	}
+				# }
 			}
 			#L5R Disabled
 			## Unfair wars.
