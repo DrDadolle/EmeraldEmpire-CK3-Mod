@@ -39,6 +39,9 @@ nezumi_religion = {
 	#Funeral tradition
 	doctrine = doctrine_funeral_stoic
 
+	#Special hostility towards rokugani faiths => only "hostile"
+	doctrine = special_doctrine_non_human_tolerance
+
 	#TODO change the virtues
 	traits = {
 		virtues = {

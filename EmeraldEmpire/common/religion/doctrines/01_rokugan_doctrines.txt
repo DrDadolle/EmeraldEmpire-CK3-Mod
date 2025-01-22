@@ -13,3 +13,30 @@ special_tolerance = {
 		}
 	}
 }
+
+
+# Special doctrine for Rokugani Non-human faiths (Nezumi, Naga)
+non_human_tolerance = {
+	group = "main_group"
+	
+	is_available_on_create = {
+		has_doctrine = special_doctrine_non_human_tolerance # Keeps it
+	}
+
+	special_doctrine_non_human_tolerance = {
+		parameters = {
+			# Since doctrines cannot modify other faith's views of us, only our view of others
+			# Rokugani Faiths are hostile instead of Evil
+			hostility_override_special_doctrine_is_rokugani_faith = 2
+			hostility_override_tenet_rokugani_syncretism = 2
+			#Other Non-humans are astray
+			hostility_override_special_doctrine_non_human_tolerance = 1
+
+			# For loc:
+			# is_other_rokugani_faith_righteous_desc = 1
+			# is_other_rokugani_faith_astray_desc = 1
+			# is_other_rokugani_faith_hostile_desc = 1
+			# is_other_rokugani_faith_evil_desc = 1
+		}
+	}
+}

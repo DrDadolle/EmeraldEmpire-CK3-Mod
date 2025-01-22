@@ -465,67 +465,68 @@
 		}
 	}
 
-	tenet_gnosticism = {
-		icon = core_tenet_gnosticism
-		piety_cost = {
-			if = {
-				limit = {
-					OR = {
-						religion_tag = shinseism_religion #L5R Modified
-						religion_tag = fortunism_religion
-					}
-				}
-				value = faith_tenet_cost_low
-			}
-			else_if = {
-				limit = {
-					OR = {
-						religion = { is_in_family = rf_shadowlands }  #L5R Modified
-					}
-				}
-				value = faith_tenet_cost_high
-			}
-			else = {
-				value = faith_tenet_cost_mid
-			}
+	#L5R Disabled
+	# tenet_gnosticism = {
+	# 	icon = core_tenet_gnosticism
+	# 	piety_cost = {
+	# 		if = {
+	# 			limit = {
+	# 				OR = {
+	# 					religion_tag = shinseism_religion #L5R Modified
+	# 					religion_tag = fortunism_religion
+	# 				}
+	# 			}
+	# 			value = faith_tenet_cost_low
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				OR = {
+	# 					religion = { is_in_family = rf_shadowlands }  #L5R Modified
+	# 				}
+	# 			}
+	# 			value = faith_tenet_cost_high
+	# 		}
+	# 		else = {
+	# 			value = faith_tenet_cost_mid
+	# 		}
 
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_gnosticism }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
+	# 		# Multiplier for keeping same tenet
+	# 		if = {
+	# 			limit = { has_doctrine = tenet_gnosticism }
+	# 			multiply = faith_unchanged_doctrine_cost_mult
+	# 		}
+	# 	}
 
-		traits = {
-			virtues = { temperate }
-			sins = { gluttonous }
-		}
+	# 	traits = {
+	# 		virtues = { temperate }
+	# 		sins = { gluttonous }
+	# 	}
 
-		can_pick = {
-			#L5R Disabled
-			# custom_description = {
-			# 	text = incompatible_tenet_eastern_syncretism_trigger
-			# 	NOT = {
-			# 		doctrine:tenet_eastern_syncretism = { is_in_list = selected_doctrines }
-			# 	}
-			# }
-		}
+	# 	can_pick = {
+	# 		#L5R Disabled
+	# 		# custom_description = {
+	# 		# 	text = incompatible_tenet_eastern_syncretism_trigger
+	# 		# 	NOT = {
+	# 		# 		doctrine:tenet_eastern_syncretism = { is_in_list = selected_doctrines }
+	# 		# 	}
+	# 		# }
+	# 	}
 
-		parameters = {
-			hostility_override_tenet_gnosticism = 0
-			hostility_override_special_doctrine_is_gnostic_faith = 0
-			granting_titles_gives_stress = yes
-		}
+	# 	parameters = {
+	# 		hostility_override_tenet_gnosticism = 0
+	# 		hostility_override_special_doctrine_is_gnostic_faith = 0
+	# 		granting_titles_gives_stress = yes
+	# 	}
 
-		character_modifier = {
-			learning = 2
-			stewardship = -2
-		}
+	# 	character_modifier = {
+	# 		learning = 2
+	# 		stewardship = -2
+	# 	}
 
-		is_shown = {
-			NOT = { has_doctrine = special_doctrine_is_gnostic_faith } # Can't be Gnostic if ye already are Gnostic
-		}
-	}
+	# 	is_shown = {
+	# 		NOT = { has_doctrine = special_doctrine_is_gnostic_faith } # Can't be Gnostic if ye already are Gnostic
+	# 	}
+	# }
 
 	tenet_mendicant_preachers = {
 		icon = core_tenet_mendicant_preachers
@@ -3037,7 +3038,8 @@
 				limit = {
 					OR = {
 						has_doctrine = tenet_mendicant_preachers
-						has_doctrine = tenet_gnosticism 
+						#L5R Disabled
+						# has_doctrine = tenet_gnosticism 
 						religion_tag = shinseism_religion
 					}
 				}
@@ -3180,6 +3182,7 @@
 					doctrine:tenet_rokugani_syncretism = { is_in_list = selected_doctrines }
 				}
 			}
+			NOT = { has_doctrine = special_doctrine_non_human_tolerance }
 		}
 
 		parameters = {

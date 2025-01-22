@@ -402,7 +402,8 @@ master_of_revels_attribute = {
 					faith = {
 						OR = {
 							has_doctrine = tenet_monasticism
-							has_doctrine = tenet_gnosticism
+							#L5R Disabled
+							# has_doctrine = tenet_gnosticism
 							has_doctrine = tenet_mendicant_preachers
 						}
 					}
