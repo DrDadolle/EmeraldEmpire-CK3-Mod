@@ -52,7 +52,7 @@ seppuku_effect = {
 					type = event_generic_neutral
 					title = msg_demanded_seppuku
 					right_icon = root
-					# custom_tooltip = msg_demanded_seppuku_desc
+					custom_tooltip = msg_demanded_seppuku_desc
 				}
 			}
 		}
@@ -81,7 +81,7 @@ seppuku_effect = {
 					type = event_generic_neutral
 					title = msg_demanded_seppuku
 					right_icon = root
-					# custom_tooltip = msg_demanded_seppuku_desc
+					custom_tooltip = msg_demanded_seppuku_desc
 				}
 			}
 		}
@@ -113,7 +113,7 @@ demanded_seppuku_effect = {
 				type = event_generic_neutral
 				title = msg_demanded_seppuku
 				right_icon = root
-				# custom_tooltip = msg_demanded_seppuku_desc
+				custom_tooltip = msg_demanded_seppuku_desc
 			}
 		}
 	}
