@@ -30,7 +30,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ## CK3 1.13.* patch
 -Only B8G8R8A8_UNORM support so far. => Wrong color encoding
 	Gimp 2: Use .DDS plugin and use Export as ABGR8 format, .DDS with Compression=None.
-	OR compress as BC2 / DXT3 ? => check kami_descendant trait
+	OR compress as BC2 / DXT3 ? => check kami_descendant trait => NOT WORKING :(
 	OR https://www.gimp-forum.net/attachment.php?aid=2871
 - Add à la AGOT an event when emperor dies "Succession of the Iron Throne" title event
 - Replace the conquer cassus belli internal by the AGOT Neighbour CB ?
@@ -46,8 +46,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more namelists & dynasty list
 - ck3tiger fixes to do !
 - "son of heaven" even if female ruler loc to fix. Does it happens ?
-- Shiro Kaikoga => Wrong religion & culture 
-- Add thumbnail image for the mod !
+- Shiro Kaikoga => Wrong religion & culture, why ?
 - add images for mma
 - Why people can be eunuch ?! wtf even Dark Moto Tsume ?! 
 - Update activites terrain with shadowlands, as well as activity_backgrounds.txt
@@ -57,6 +56,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 -Nezumi shinomen placement TODO
 	- religion nezumi icon
 	- How to prevent crab to annihilate Nezumis ? The faith is "hostile" after all
+- add trait_portrait_modifiers for undead based on elder-kings lich stuff
+- Add thumbnail image for the mod !
 	
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)
