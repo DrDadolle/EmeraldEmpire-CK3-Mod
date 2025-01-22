@@ -1,8 +1,24 @@
 ﻿l_english:
  ##Phoenix Elective 
  phoenix_acclamation_succession_law:0 "Ofushikai's Champion Choice"
- phoenix_acclamation_succession_law_effects:2 "phoenix_acclamation_succession_law_effects"
- phoenix_elective_electors:0 "Ofushikai "
+ phoenix_acclamation_succession_law_effects:2 "The Spirit of Shiba inside Ofushikai will choose the next Phoenix Clan Champion, instead of the normal succession law."
+ phoenix_elective_electors:0 "Ofushikai"
  phoenix_elective_electors_tooltip:0 "Ofushikai was the way to know the next Phoenix Clan  Champion. When it was required to choose a new Champion, many representatives of the Shiba family were gathered, and the ceremony was presided by the Elemental Masters, accompanied by their favored apprentices. The sword was offered by the Master of the Void to a Shiba member, who in turn passed it to the next one, until Ofushikai jutted out from the sheath, exposing one inch of flawless blade, when it was wielded by the proper one. The rest of the Phoenix accepted the selected as their new Champion, who knelt before the Isawa and swore to serve."
  phoenix_elective_candidates:0 "All members of the Shiba Dynasty"
  phoenix_elective_candidates_tooltip:0 " Ofushikai's choice was not related to bloodline, prestige, skill, or even experience, the Shiba chosen was forged just as the sword was through harsh trial and gentle guidance."
+
+ # succession law
+ county_tier_desc:0 "[county|E]-[title_tier|E]"
+ phoenix_court_position_succession_desc:0 "Phoenix [court_position|E]"
+ phoenix_councillor_position_desc:0 "Phoenix [councillor|E]"
+ not_shiba_desc:0 "Is not a member of the Shiba Dynasty"
+ phoenix_accepted_faith_succession_desc:0 "[faith|E] considered Accepted by [holder|E]"
+ phoenix_astray_faith_succession_desc:0 "[faith|E] considered Astray by [holder|E]"
+ phoenix_hostile_faith_succession_desc:0 "[faith|E] considered Hostile by [holder|E]"
+ phoenix_evil_faith_sucession_desc:0 "[faith|E] considered Evil by [holder|E]"
+
+ phoenix_accepted_foreign_culture:0 "Integrated [culture|E] in [ROOT.Char.GetLiege.GetCapitalLocation.GetTitle.GetNameNoTier]"
+ phoenix_mediocre_cultural_acceptance:0 "Mild [cultural_acceptance|E] in [ROOT.Char.GetLiege.GetCapitalLocation.GetTitle.GetNameNoTier]"
+ phoenix_poor_cultural_acceptance:0 "Low [cultural_acceptance|E] in [ROOT.Char.GetLiege.GetCapitalLocation.GetTitle.GetNameNoTier]"
+ phoenix_terrible_cultural_acceptance:0 "Very Low [cultural_acceptance|E] in [ROOT.Char.GetLiege.GetCapitalLocation.GetTitle.GetNameNoTier]"
+ phoenix_no_cultural_acceptance:0 "No [cultural_acceptance|E] in [ROOT.Char.GetLiege.GetCapitalLocation.GetTitle.GetNameNoTier]"

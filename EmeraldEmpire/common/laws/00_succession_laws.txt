@@ -869,6 +869,43 @@
 
 		widget_name = "widget_clan_law"
 	}
+
+	#L5R Added
+	phoenix_acclamation_succession_law = {
+		can_keep = {
+			government_has_flag = government_is_feudal
+		}
+		can_have = {
+			primary_title = title:k_phoenix_clan
+			government_has_flag = government_is_feudal
+			culture = {
+				has_cultural_pillar = heritage_phoenix
+			}
+		}
+		can_pass = {
+			# Can be passed
+			can_change_title_law_trigger = yes
+		}
+		can_title_have = {
+			# Only Phoenix clan can have this
+			this = title:k_phoenix_clan 
+			can_title_have_law_general_trigger = yes
+		}
+		should_start_with = {
+			has_title = title:k_phoenix_clan
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = ofushikai_choice
+		}
+		flag = advanced_succession_law
+		revoke_cost = {
+			prestige = 100000
+		}
+		pass_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+	}
 }
 
 succession_gender_laws = {

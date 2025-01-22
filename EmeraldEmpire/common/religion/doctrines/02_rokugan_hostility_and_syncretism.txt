@@ -42,6 +42,7 @@ is_rokugani_faith = {
 			# Since doctrines cannot modify other faith's views of us, only our view of others
 			hostility_override_tenet_rejection_of_the_kami = 2
 			hostility_override_tenet_rokugani_syncretism = 1 # Syncretism goes to FAITH_HOSTILITY_ASTRAY
+			hostility_override_special_doctrine_non_human_tolerance = 2
 			# For loc:
 			is_rokugani_faith_righteous_desc = 1
 			is_rokugani_faith_astray_desc = 1

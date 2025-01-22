@@ -10,6 +10,15 @@
 			# 	culture = { has_cultural_parameter = scandinavian_elective_enabled }
 			# 	culture = { has_cultural_parameter = tribal_elective_enabled } #FP3 addition
 			# }
+			#Not available if has special phoenix law
+			trigger_if = {
+				limit = { 
+					exists = title:k_phoenix_clan
+					has_title = title:k_phoenix_clan
+				}
+				NOT = { title:k_phoenix_clan = { has_title_law = phoenix_acclamation_succession_law }}
+			}
+			
 		}
 		can_pass = {
 			can_change_title_law_trigger = yes

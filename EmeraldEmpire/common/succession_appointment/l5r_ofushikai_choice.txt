@@ -1,7 +1,7 @@
 ﻿#L5R TODO base it on admin_governor instead of admin_emperor
 ofushikai_choice = {
-	default_candidates = { holder_close_extended_family landed_vassal_house_member  }
-	invested_candidates = {  holder_house_member }
+	default_candidates = {  landed_vassal holder_house_member }
+	invested_candidates = {  }
 
 	# default_candidates = { holder_close_family landed_vassal_close_extended_family }
 	# invested_candidates = { holder_close_extended_family unlanded_noble_close_extended_family unlanded_noble_house_head }
@@ -27,7 +27,7 @@ ofushikai_choice = {
 					add = martial
 					add = intrigue
 					add = stewardship
-					multiply = 2
+					multiply = 1
 				}
 				desc = sum_of_skills_desc
 			}
@@ -50,11 +50,71 @@ ofushikai_choice = {
 					desc = negative_trait_succession
 				}
 			}
+			
 			if = {
 				limit = { has_trait = gallivanter }
 				subtract = {
 					value = 1000
 					desc = trait_gallivanter
+				}
+			}
+			# Fortunist vertues
+			if = {
+				limit = { has_trait = just }
+				add = {
+					value = 10
+					desc = trait_just
+				}
+			}
+			if = {
+				limit = { has_trait = honest }
+				add = {
+					value = 10
+					desc = trait_honest
+				}
+			}
+			if = {
+				limit = { has_trait = temperate }
+				add = {
+					value = 10
+					desc = trait_temperate
+				}
+			}
+			# Fortunist sins
+			if = {
+				limit = { has_trait = arbitrary }
+				add = {
+					value = -10
+					desc = trait_arbitrary
+				}
+			}
+			if = {
+				limit = { has_trait = deceitful }
+				add = {
+					value = -10
+					desc = trait_deceitful
+				}
+			}
+			if = {
+				limit = { has_trait = gluttonous }
+				add = {
+					value = -10
+					desc = trait_gluttonous
+				}
+			}
+			# No Shindoshi
+			if = {
+				limit = { has_trait = shindoshi }
+				subtract = {
+					value = 50
+					desc = trait_shindoshi
+				}
+			}
+			if = {
+				limit = { has_trait = ishiken }
+				subtract = {
+					value = 100
+					desc = trait_ishiken
 				}
 			}
 
@@ -170,7 +230,7 @@ ofushikai_choice = {
 				}
 				add = {
 					value = 20
-					desc = councillor_position_desc
+					desc = phoenix_councillor_position_desc
 				}
 			}
 			else_if = {
@@ -181,7 +241,7 @@ ofushikai_choice = {
 				}
 				add = {
 					value = 10
-					desc = councillor_position_desc
+					desc = phoenix_councillor_position_desc
 				}
 			}
 
@@ -197,7 +257,7 @@ ofushikai_choice = {
 				}
 				add = {
 					value = 10
-					desc = court_position_succession_desc
+					desc = phoenix_court_position_succession_desc
 				}
 			}
 			else_if = {
@@ -210,7 +270,7 @@ ofushikai_choice = {
 				}
 				add = {
 					value = 5
-					desc = court_position_succession_desc
+					desc = phoenix_court_position_succession_desc
 				}
 			}
 
@@ -227,7 +287,7 @@ ofushikai_choice = {
 				} #Change to faith acceptance
 				subtract = {
 					value = 5
-					desc = accepted_faith_succession_desc
+					desc = phoenix_accepted_faith_succession_desc
 				}
 			}
 			else_if = {
@@ -241,7 +301,7 @@ ofushikai_choice = {
 				} #Change to faith acceptance
 				subtract = {
 					value = 20
-					desc = astray_faith_succession_desc
+					desc = phoenix_astray_faith_succession_desc
 				}
 			}
 			else_if = {
@@ -255,7 +315,7 @@ ofushikai_choice = {
 				} #Change to faith acceptance
 				subtract = {
 					value = 50
-					desc = hostile_faith_succession_desc
+					desc = phoenix_hostile_faith_succession_desc
 				}
 			}
 			else_if = {
@@ -269,7 +329,7 @@ ofushikai_choice = {
 				} #Change to faith acceptance
 				subtract = {
 					value = 100
-					desc = evil_faith_sucession_desc
+					desc = phoenix_evil_faith_sucession_desc
 				}
 			}
 
@@ -277,14 +337,14 @@ ofushikai_choice = {
 			if = {
 				limit = { has_strong_claim_on = scope:title }
 				add = {
-					value = 50
+					value = 20
 					desc = title_claim_desc
 				}
 			}
 			else_if = {
 				limit = { has_weak_claim_on = scope:title }
 				add = {
-					value = 30
+					value = 10
 					desc = title_weak_claim_desc
 				}
 			}
@@ -369,7 +429,7 @@ ofushikai_choice = {
 				}
 				subtract = {
 					value = 50
-					desc = no_cultural_acceptance
+					desc = phoenix_no_cultural_acceptance
 				}
 			}
 			else_if = {
@@ -384,7 +444,7 @@ ofushikai_choice = {
 				}
 				subtract = {
 					value = 40
-					desc = terrible_cultural_acceptance
+					desc = phoenix_terrible_cultural_acceptance
 				}
 			}
 			else_if = {
@@ -399,7 +459,7 @@ ofushikai_choice = {
 				}
 				subtract = {
 					value = 30
-					desc = poor_cultural_acceptance
+					desc = phoenix_poor_cultural_acceptance
 				}
 			}
 			else_if = {
@@ -414,7 +474,7 @@ ofushikai_choice = {
 				}
 				subtract = {
 					value = 20
-					desc = mediocre_cultural_acceptance
+					desc = phoenix_mediocre_cultural_acceptance
 				}
 			}
 			else_if = {
@@ -429,7 +489,7 @@ ofushikai_choice = {
 				}
 				subtract = {
 					value = 10
-					desc = accepted_foreign_culture
+					desc = phoenix_accepted_foreign_culture
 				}
 			}
 
