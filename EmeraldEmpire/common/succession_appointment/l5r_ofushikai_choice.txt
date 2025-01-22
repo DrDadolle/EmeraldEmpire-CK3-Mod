@@ -62,7 +62,7 @@ ofushikai_choice = {
 			if = {
 				limit = {
 					has_trait = deviant
-					trait_is_criminal_in_faith_trigger = { TRAIT = deviant FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = deviant FAITH = scope:title.holder.faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20
@@ -72,7 +72,7 @@ ofushikai_choice = {
 			if = {
 				limit = {
 					has_trait = incestuous
-					trait_is_criminal_in_faith_trigger = { TRAIT = incestuous FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = incestuous FAITH = scope:title.holder.faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20
@@ -82,7 +82,7 @@ ofushikai_choice = {
 			if = {
 				limit = {
 					has_trait = sodomite
-					trait_is_criminal_in_faith_trigger = { TRAIT = sodomite FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = sodomite FAITH = scope:title.holder.faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20
@@ -92,7 +92,7 @@ ofushikai_choice = {
 			if = {
 				limit = {
 					has_trait = cannibal
-					trait_is_criminal_in_faith_trigger = { TRAIT = cannibal FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = cannibal FAITH = scope:title.holder.faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20
@@ -102,7 +102,7 @@ ofushikai_choice = {
 			if = {
 				limit = {
 					has_trait = kinslayer_1
-					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_1 FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_1 FAITH = scope:title.holder.faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20
@@ -112,7 +112,7 @@ ofushikai_choice = {
 			if = {
 				limit = {
 					has_trait = kinslayer_2
-					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_2 FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_2 FAITH = scope:title.holder.faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20
@@ -122,7 +122,7 @@ ofushikai_choice = {
 			if = {
 				limit = {
 					has_trait = kinslayer_3
-					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_3 FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_3 FAITH = scope:title.holder.faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20
@@ -132,7 +132,7 @@ ofushikai_choice = {
 			if = {
 				limit = {
 					has_trait = witch
-					trait_is_criminal_in_faith_trigger = { TRAIT = witch FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = witch FAITH = scope:title.holder.faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20
@@ -142,7 +142,7 @@ ofushikai_choice = {
 			if = {
 				limit = {
 					has_trait = adulterer
-					trait_is_criminal_in_faith_trigger = { TRAIT = adulterer FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = adulterer FAITH = scope:title.holder.faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20
@@ -152,7 +152,7 @@ ofushikai_choice = {
 			if = {
 				limit = {
 					has_trait = fornicator
-					trait_is_criminal_in_faith_trigger = { TRAIT = fornicator FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = fornicator FAITH = scope:title.holder.faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20
@@ -163,7 +163,7 @@ ofushikai_choice = {
 			# COUNCIL POSITIONS
 			if = {
 				limit = {
-					title:k_phoenix_clan.holder ?= {
+					scope:title.holder ?= {
 						legitimacy_level >= 3
 						any_councillor ?= { this = root }
 					}
@@ -175,7 +175,7 @@ ofushikai_choice = {
 			}
 			else_if = {
 				limit = {
-					title:k_phoenix_clan.holder ?= {
+					scope:title.holder ?= {
 						any_councillor ?= { this = root }
 					}
 				}
@@ -188,7 +188,7 @@ ofushikai_choice = {
 			# COURT POSITIONS
 			if = {
 				limit = {
-					title:k_phoenix_clan.holder ?= {
+					scope:title.holder ?= {
 						legitimacy_level >= 3
 						any_court_position_holder ?= {
 							this = root
@@ -202,7 +202,7 @@ ofushikai_choice = {
 			}
 			else_if = {
 				limit = {
-					title:k_phoenix_clan.holder ?= {
+					scope:title.holder ?= {
 						any_court_position_holder ?= {
 							this = root
 						}
@@ -217,7 +217,7 @@ ofushikai_choice = {
 			# FAITH HOSTILITY
 			if = {
 				limit = {
-					title:k_phoenix_clan.holder.faith ?= {
+					scope:title.holder.faith ?= {
 						NOT = { this = root.faith }
 						faith_hostility_level = {
 							target = root.faith
@@ -232,7 +232,7 @@ ofushikai_choice = {
 			}
 			else_if = {
 				limit = {
-					title:k_phoenix_clan.holder.faith ?= {
+					scope:title.holder.faith ?= {
 						faith_hostility_level = {
 							target = root.faith
 							value = faith_astray_level
@@ -246,7 +246,7 @@ ofushikai_choice = {
 			}
 			else_if = {
 				limit = {
-					title:k_phoenix_clan.holder.faith ?= {
+					scope:title.holder.faith ?= {
 						faith_hostility_level = {
 							target = root.faith
 							value = faith_hostile_level
@@ -260,7 +260,7 @@ ofushikai_choice = {
 			}
 			else_if = {
 				limit = {
-					title:k_phoenix_clan.holder.faith ?= {
+					scope:title.holder.faith ?= {
 						faith_hostility_level = {
 							target = root.faith
 							value >= faith_evil_level
@@ -359,7 +359,7 @@ ofushikai_choice = {
 			#DIFFERENT CULTURE FROM PHOENIX CAPITAL
 			if = {
 				limit = {
-					title:k_phoenix_clan.holder.capital_county.culture ?= {
+					scope:title.holder.capital_county.culture ?= {
 						NOT = { this = root.culture }
 						cultural_acceptance = {
 							target = root.culture
@@ -374,7 +374,7 @@ ofushikai_choice = {
 			}
 			else_if = {
 				limit = {
-					title:k_phoenix_clan.holder.capital_county.culture ?= {
+					scope:title.holder.capital_county.culture ?= {
 						NOT = { this = root.culture }
 						cultural_acceptance = {
 							target = root.culture
@@ -389,7 +389,7 @@ ofushikai_choice = {
 			}
 			else_if = {
 				limit = {
-					title:k_phoenix_clan.holder.capital_county.culture ?= {
+					scope:title.holder.capital_county.culture ?= {
 						NOT = { this = root.culture }
 						cultural_acceptance = {
 							target = root.culture
@@ -404,7 +404,7 @@ ofushikai_choice = {
 			}
 			else_if = {
 				limit = {
-					title:k_phoenix_clan.holder.capital_county.culture ?= {
+					scope:title.holder.capital_county.culture ?= {
 						NOT = { this = root.culture }
 						cultural_acceptance = {
 							target = root.culture
@@ -419,7 +419,7 @@ ofushikai_choice = {
 			}
 			else_if = {
 				limit = {
-					title:k_phoenix_clan.holder.capital_county.culture ?= {
+					scope:title.holder.capital_county.culture ?= {
 						NOT = { this = root.culture }
 						cultural_acceptance = {
 							target = root.culture
