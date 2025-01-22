@@ -14544,7 +14544,7 @@ generate_health_trinket_effect = {
 
 generate_historical_artifact_based_on_location_effect = {
 	#L5R Disabled
-	# random_list = {
+	random_list = {
 	# 	2 = { #Ark of the covenant
 	# 		trigger = {
 	# 			NOT = {
@@ -15438,7 +15438,7 @@ generate_historical_artifact_based_on_location_effect = {
 				RELIGION = $LOCATION$.religion
 			}
 		}
-	# }
+	}
 }
 
 select_random_saint_effect = {

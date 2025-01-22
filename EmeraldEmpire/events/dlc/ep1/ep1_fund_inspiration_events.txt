@@ -7377,18 +7377,20 @@ fund_inspiration.1051 = {
 	title = fund_inspiration.1001.t
 	desc = { 	
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					exists = scope:throne
-				}
-				desc = fund_inspiration.1051_throne.desc
-			}
-			triggered_desc = {
-				trigger = {
-					exists = scope:ark_covenant
-				}
-				desc = fund_inspiration.1051_ark_covenant.desc
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		exists = scope:throne
+			# 	}
+			# 	desc = fund_inspiration.1051_throne.desc
+			# }
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		exists = scope:ark_covenant
+			# 	}
+			# 	desc = fund_inspiration.1051_ark_covenant.desc
+			# }
 			#L5R Disabled
 			# triggered_desc = {
 			# 	trigger = {
@@ -7401,18 +7403,20 @@ fund_inspiration.1051 = {
 		
 		first_valid = {
 			
-			triggered_desc = {
-				trigger = {
-					exists = scope:throne
-				}
-				desc = fund_inspiration.1051.desc.epic.throne
-			}
-			triggered_desc = {
-				trigger = {
-					exists = scope:ark_covenant
-				}
-				desc = fund_inspiration.1051.desc.epic.ark
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		exists = scope:throne
+			# 	}
+			# 	desc = fund_inspiration.1051.desc.epic.throne
+			# }
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		exists = scope:ark_covenant
+			# 	}
+			# 	desc = fund_inspiration.1051.desc.epic.ark
+			# }
 			#L5R Disabled
 			# triggered_desc = {
 			# 	trigger = {
@@ -7425,8 +7429,8 @@ fund_inspiration.1051 = {
 					exists = scope:epic
 					#L5R Disabled
 					# NOT = { exists = scope:cupboard }
-					NOT = { exists = scope:ark_covenant }
-					NOT = { exists = scope:throne }
+					# NOT = { exists = scope:ark_covenant }
+					# NOT = { exists = scope:throne }
 				}
 				desc = fund_inspiration.1051.desc.epic
 			}
@@ -7527,9 +7531,10 @@ fund_inspiration.1051 = {
 	
 	option = {
 		name = fund_inspiration.1051.a
-		trigger = {
-			NOT = { exists = scope:ark_covenant }
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	NOT = { exists = scope:ark_covenant }
+		# }
 		# To give the right tooltip
 		if = {
 			limit = {
@@ -7582,13 +7587,14 @@ fund_inspiration.1051 = {
 		}
 	}
 
-	option = {
-		name = fund_inspiration.1051.b
-		trigger = {
-			exists = scope:ark_covenant
-		}
-		custom_tooltip = create_artifact_adventure_tooltip
-	}
+	#L5R Disabled
+	# option = {
+	# 	name = fund_inspiration.1051.b
+	# 	trigger = {
+	# 		exists = scope:ark_covenant
+	# 	}
+	# 	custom_tooltip = create_artifact_adventure_tooltip
+	# }
 
 	after = {
 		scope:inspiration_owner = {
@@ -7693,12 +7699,13 @@ fund_inspiration.1061 = {
 				}
 				desc = artifact_table_description
 			}
-			triggered_desc = {
-				trigger = {
-					exists = scope:throne
-				}
-				desc = artifact_throne_description
-			}
+			#L5R Disabled
+			# triggered_desc = {
+			# 	trigger = {
+			# 		exists = scope:throne
+			# 	}
+			# 	desc = artifact_throne_description
+			# }
 			triggered_desc = {
 				trigger = {
 					exists = scope:armillary_sphere

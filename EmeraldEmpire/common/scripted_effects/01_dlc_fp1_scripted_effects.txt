@@ -794,7 +794,6 @@ fp1_add_realm_size_appropriate_sa_reprieve_effect = {
 
 fp1_remember_recent_conquest_victory_effect = {
 	#L5R Disabled
-	always = no
 	# if = {
 	# 	limit = {
 	# 		# DLC check.

@@ -256,12 +256,13 @@ activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
 			var:struggle_involvement_attacker = flag:$INVOLVEMENT$
 			var:struggle_scope_attacker = scope:struggle_temp
 		}
-		trigger_else = {
-			has_variable = struggle_involvement_defender
-			has_variable = struggle_scope_defender
-			var:struggle_involvement_defender = flag:$INVOLVEMENT$
-			var:struggle_scope_defender = scope:struggle_temp
-		}
+		#L5R Disabled
+		# trigger_else = {
+		# 	has_variable = struggle_involvement_defender
+		# 	has_variable = struggle_scope_defender
+		# 	var:struggle_involvement_defender = flag:$INVOLVEMENT$
+		# 	var:struggle_scope_defender = scope:struggle_temp
+		# }
 	}
 }
 

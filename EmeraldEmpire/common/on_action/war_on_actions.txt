@@ -764,20 +764,21 @@ on_war_started = {
 					involvement = interloper
 					save_scope_as = struggle
 				}
-				scope:war = {
-					set_variable = {
-						name = struggle_involvement_defender
-						value = flag:interloper
-					}
-					set_variable = {
-						name = struggle_scope_defender
-						value = scope:struggle
-					}
-					set_variable = {
-						name = struggle_defender_tier
-						value = scope:defender.highest_held_title_tier
-					}
-				}
+				#L5R Disabled
+				# scope:war = {
+				# 	set_variable = {
+				# 		name = struggle_involvement_defender
+				# 		value = flag:interloper
+				# 	}
+				# 	set_variable = {
+				# 		name = struggle_scope_defender
+				# 		value = scope:struggle
+				# 	}
+				# 	set_variable = {
+				# 		name = struggle_defender_tier
+				# 		value = scope:defender.highest_held_title_tier
+				# 	}
+				# }
 			}
 		}
 		#Admin governors notice war has been dragging on event
