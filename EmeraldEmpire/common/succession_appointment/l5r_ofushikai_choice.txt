@@ -1,0 +1,552 @@
+﻿#L5R TODO base it on admin_governor instead of admin_emperor
+ofushikai_choice = {
+	default_candidates = { holder_close_extended_family landed_vassal_house_member  }
+	invested_candidates = {  holder_house_member }
+
+	# default_candidates = { holder_close_family landed_vassal_close_extended_family }
+	# invested_candidates = { holder_close_extended_family unlanded_noble_close_extended_family unlanded_noble_house_head }
+
+	allow_children = no
+
+	candidate_score = {
+		value = {
+			# AGE
+			if = {
+				limit = { age > 60 }
+				subtract = {
+					value = 20
+					desc = geriatric_candidate_desc
+				}
+			}
+
+			# SKILLS
+			add = {
+				value = {
+					add = diplomacy
+					add = learning
+					add = martial
+					add = intrigue
+					add = stewardship
+					multiply = 2
+				}
+				desc = sum_of_skills_desc
+			}
+
+			# TRAITS
+			if = {
+				limit = {
+					OR = {
+						has_trait = inbred
+						has_trait = spindly
+						has_trait = scaly
+						# has_trait = albino
+						has_trait = wheezing
+						has_trait = bleeder
+						has_trait = infirm
+					}
+				}
+				subtract = {
+					value = 50
+					desc = negative_trait_succession
+				}
+			}
+			if = {
+				limit = { has_trait = gallivanter }
+				subtract = {
+					value = 1000
+					desc = trait_gallivanter
+				}
+			}
+
+			# CRIMINAL
+			if = {
+				limit = {
+					has_trait = deviant
+					trait_is_criminal_in_faith_trigger = { TRAIT = deviant FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -20
+					desc = "deviant_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = incestuous
+					trait_is_criminal_in_faith_trigger = { TRAIT = incestuous FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -20
+					desc = "incestuous_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = sodomite
+					trait_is_criminal_in_faith_trigger = { TRAIT = sodomite FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -20
+					desc = "sodomite_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = cannibal
+					trait_is_criminal_in_faith_trigger = { TRAIT = cannibal FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -20
+					desc = "cannibal_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = kinslayer_1
+					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_1 FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -20
+					desc = "kinslayer_1_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = kinslayer_2
+					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_2 FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -20
+					desc = "kinslayer_2_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = kinslayer_3
+					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_3 FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -20
+					desc = "kinslayer_3_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = witch
+					trait_is_criminal_in_faith_trigger = { TRAIT = witch FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -20
+					desc = "witch_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = adulterer
+					trait_is_criminal_in_faith_trigger = { TRAIT = adulterer FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -20
+					desc = "adulterer_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = fornicator
+					trait_is_criminal_in_faith_trigger = { TRAIT = fornicator FAITH = title:k_phoenix_clan.holder.faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -20
+					desc = "fornicator_and_criminal_desc"
+				}
+			}
+
+			# COUNCIL POSITIONS
+			if = {
+				limit = {
+					title:k_phoenix_clan.holder ?= {
+						legitimacy_level >= 3
+						any_councillor ?= { this = root }
+					}
+				}
+				add = {
+					value = 20
+					desc = councillor_position_desc
+				}
+			}
+			else_if = {
+				limit = {
+					title:k_phoenix_clan.holder ?= {
+						any_councillor ?= { this = root }
+					}
+				}
+				add = {
+					value = 10
+					desc = councillor_position_desc
+				}
+			}
+
+			# COURT POSITIONS
+			if = {
+				limit = {
+					title:k_phoenix_clan.holder ?= {
+						legitimacy_level >= 3
+						any_court_position_holder ?= {
+							this = root
+						}
+					}
+				}
+				add = {
+					value = 10
+					desc = court_position_succession_desc
+				}
+			}
+			else_if = {
+				limit = {
+					title:k_phoenix_clan.holder ?= {
+						any_court_position_holder ?= {
+							this = root
+						}
+					}
+				}
+				add = {
+					value = 5
+					desc = court_position_succession_desc
+				}
+			}
+
+			# FAITH HOSTILITY
+			if = {
+				limit = {
+					title:k_phoenix_clan.holder.faith ?= {
+						NOT = { this = root.faith }
+						faith_hostility_level = {
+							target = root.faith
+							value = faith_fully_accepted_level
+						}
+					}
+				} #Change to faith acceptance
+				subtract = {
+					value = 5
+					desc = accepted_faith_succession_desc
+				}
+			}
+			else_if = {
+				limit = {
+					title:k_phoenix_clan.holder.faith ?= {
+						faith_hostility_level = {
+							target = root.faith
+							value = faith_astray_level
+						}
+					}
+				} #Change to faith acceptance
+				subtract = {
+					value = 20
+					desc = astray_faith_succession_desc
+				}
+			}
+			else_if = {
+				limit = {
+					title:k_phoenix_clan.holder.faith ?= {
+						faith_hostility_level = {
+							target = root.faith
+							value = faith_hostile_level
+						}
+					}
+				} #Change to faith acceptance
+				subtract = {
+					value = 50
+					desc = hostile_faith_succession_desc
+				}
+			}
+			else_if = {
+				limit = {
+					title:k_phoenix_clan.holder.faith ?= {
+						faith_hostility_level = {
+							target = root.faith
+							value >= faith_evil_level
+						}
+					}
+				} #Change to faith acceptance
+				subtract = {
+					value = 100
+					desc = evil_faith_sucession_desc
+				}
+			}
+
+			# CLAIMS
+			if = {
+				limit = { has_strong_claim_on = scope:title }
+				add = {
+					value = 50
+					desc = title_claim_desc
+				}
+			}
+			else_if = {
+				limit = { has_weak_claim_on = scope:title }
+				add = {
+					value = 30
+					desc = title_weak_claim_desc
+				}
+			}
+
+			# POPULAR OPINION
+			if = {
+				limit = { is_landed = yes }
+				add = {
+					value = {
+						value = capital_county.county_holder_opinion
+						multiply = 0.5
+					}
+					desc = county_holder_opinion_desc
+				}
+			}
+
+			#L5R Disabled
+			# # LIFESTYLE PERKS
+			# if = {
+			# 	limit = { has_perk = dignitas_perk }
+			# 	add = {
+			# 		value = 30
+			# 		desc = dignitas_perk_name
+			# 	}
+			# }
+
+			#TITLE TIER
+			if = {
+				limit = {
+					is_landed = yes
+					highest_held_title_tier = tier_county
+				}
+				add = {
+					value = 5
+					desc = county_tier_desc
+				}
+			}
+			if = {
+				limit = {
+					is_landed = yes
+					highest_held_title_tier = tier_duchy
+				}
+				add = {
+					value = 10
+					desc = duchy_tier_desc
+				}
+			}
+			
+			# Not SHIBA DYNASTY ? Ew no
+			if = {
+				limit = {
+					exists = dynasty
+					NOT = { dynasty = dynasty:dynasty_shiba }
+				}
+				subtract = {
+					value = 1000
+					desc = not_shiba_desc
+				}
+			}
+
+			#LOWBORN? EW no
+			if = {
+				limit = {
+					is_lowborn = yes
+				}
+				subtract = {
+					value = 1000
+					desc = lowborn_desc_succession
+				}
+			}
+
+			#DIFFERENT CULTURE FROM PHOENIX CAPITAL
+			if = {
+				limit = {
+					title:k_phoenix_clan.holder.capital_county.culture ?= {
+						NOT = { this = root.culture }
+						cultural_acceptance = {
+							target = root.culture
+							value = 0
+						}
+					}
+				}
+				subtract = {
+					value = 50
+					desc = no_cultural_acceptance
+				}
+			}
+			else_if = {
+				limit = {
+					title:k_phoenix_clan.holder.capital_county.culture ?= {
+						NOT = { this = root.culture }
+						cultural_acceptance = {
+							target = root.culture
+							value <= 20
+						}
+					}
+				}
+				subtract = {
+					value = 40
+					desc = terrible_cultural_acceptance
+				}
+			}
+			else_if = {
+				limit = {
+					title:k_phoenix_clan.holder.capital_county.culture ?= {
+						NOT = { this = root.culture }
+						cultural_acceptance = {
+							target = root.culture
+							value <= 40
+						}
+					}
+				}
+				subtract = {
+					value = 30
+					desc = poor_cultural_acceptance
+				}
+			}
+			else_if = {
+				limit = {
+					title:k_phoenix_clan.holder.capital_county.culture ?= {
+						NOT = { this = root.culture }
+						cultural_acceptance = {
+							target = root.culture
+							value <= 60
+						}
+					}
+				}
+				subtract = {
+					value = 20
+					desc = mediocre_cultural_acceptance
+				}
+			}
+			else_if = {
+				limit = {
+					title:k_phoenix_clan.holder.capital_county.culture ?= {
+						NOT = { this = root.culture }
+						cultural_acceptance = {
+							target = root.culture
+							value <= 80
+						}
+					}
+				}
+				subtract = {
+					value = 10
+					desc = accepted_foreign_culture
+				}
+			}
+
+			# ADJUST BASED ON GENDER LAW - MUST GO AT THE END
+			save_temporary_value_as = pre_gender_law_calc
+			if = { # If the temp value is negative, flip it for the coming calculations
+				limit = { scope:pre_gender_law_calc < 0 }
+				if = {
+					limit = {
+						scope:title.holder = {
+							has_realm_law = male_preference_law
+						}
+						is_female = yes
+					}
+					subtract = {
+						value = scope:pre_gender_law_calc
+						multiply = -1
+						multiply = 0.5
+						desc = male_preference_law
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title.holder = {
+							has_realm_law = male_only_law
+						}
+						is_female = yes
+					}
+					multiply = {
+						value = 0
+						desc = male_only_law
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title.holder = {
+							has_realm_law = female_preference_law
+						}
+						is_female = no
+					}
+					subtract = {
+						value = scope:pre_gender_law_calc
+						multiply = -1
+						multiply = 0.5
+						desc = female_only_law
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title.holder = {
+							has_realm_law = female_only_law
+						}
+						is_female = no
+					}
+					multiply = {
+						value = 0
+						desc = female_only_law
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						scope:title.holder = {
+							has_realm_law = male_preference_law
+						}
+						is_female = yes
+					}
+					subtract = {
+						value = scope:pre_gender_law_calc
+						multiply = 0.5
+						desc = male_preference_law
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title.holder = {
+							has_realm_law = male_only_law
+						}
+						is_female = yes
+					}
+					multiply = {
+						value = 0
+						desc = male_only_law
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title.holder = {
+							has_realm_law = female_preference_law
+						}
+						is_female = no
+					}
+					subtract = {
+						value = scope:pre_gender_law_calc
+						multiply = 0.5
+						desc = female_only_law
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title.holder = {
+							has_realm_law = female_only_law
+						}
+						is_female = no
+					}
+					multiply = {
+						value = 0
+						desc = female_only_law
+					}
+				}
+			}
+
+			# ROUND THE NUMBER
+			divide = 1
+			ceiling = yes
+			multiply = 1
+		}
+	}
+}

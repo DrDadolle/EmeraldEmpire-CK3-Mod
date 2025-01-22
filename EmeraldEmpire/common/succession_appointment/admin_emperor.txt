@@ -50,15 +50,16 @@
 			}
 
 			# TRAITS
-			if = {
-				limit = {
-					has_trait = born_in_the_purple
-				}
-				add = {
-					value = 50
-					desc = trait_born_in_the_purple
-				}
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = {
+			# 		has_trait = born_in_the_purple
+			# 	}
+			# 	add = {
+			# 		value = 50
+			# 		desc = trait_born_in_the_purple
+			# 	}
+			# }
 			if = {
 				limit = {
 					has_trait = disfigured
