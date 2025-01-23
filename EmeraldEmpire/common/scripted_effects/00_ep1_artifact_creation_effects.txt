@@ -15443,8 +15443,8 @@ generate_historical_artifact_based_on_location_effect = {
 
 select_random_saint_effect = {
 	save_scope_as = owner
-	random_list = {
-		#L5R Disabled
+	#L5R Disabled
+	# random_list = {
 		# 1 = {
 		# 	trigger = {
 		# 		OR = {
@@ -15604,7 +15604,7 @@ select_random_saint_effect = {
 		# 		days = 5
 		# 	} 
 		# }
-	}
+	# }
 	#fallback
 	if = {
 		limit = { NOT = { exists = var:saint } }

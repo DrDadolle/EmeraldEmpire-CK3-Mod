@@ -1040,7 +1040,7 @@ diarchy.0131 = {
 				exists = global_var:di_track_appcomon_accept
 				exists = global_var:di_track_appcomon_accept_actor_list
 				exists = global_var:di_track_appcomon_accept_recipient_list
-				var:struggle_involvement_defender ?= flag:interloper
+				# var:struggle_involvement_defender ?= flag:interloper
 			}
 		}
 	}

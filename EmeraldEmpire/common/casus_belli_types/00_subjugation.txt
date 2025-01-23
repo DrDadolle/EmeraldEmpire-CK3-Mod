@@ -22,9 +22,10 @@
 			faith = {
 				has_doctrine = shadowlands_hostility_doctrine
 			}
-			house ?= {
-				has_variable = subjugations_expanded
-			}
+			#L5R D isabled
+			# house ?= {
+			# 	has_variable = subjugations_expanded
+			# }
 		}
 		NOT = {
 			government_has_flag = government_is_landless_adventurer

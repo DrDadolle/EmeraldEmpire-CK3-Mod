@@ -614,21 +614,22 @@ task_increase_control = {
 				desc = MARSHAL_INCREASE_CONTROL_LOCAL_COUNTY_MODIFIERS
 			}
 		}
+		#L5R Disabled
 		#EP3
-		if = {
-			limit = {
-				scope:councillor_liege = {
-					employs_court_position = court_jester_court_position
-					court_position:court_jester_court_position = {
-						has_character_flag = famous_mime_control
-					}
-				}
-			}
-			add = {
-				value = scope:councillor_liege.court_position:court_jester_court_position.marshal_court_jester_contribution_value
-				desc = MARSHAL_INCREASE_CONTROL_MIME_MODIFIER
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:councillor_liege = {
+		# 			employs_court_position = court_jester_court_position
+		# 			court_position:court_jester_court_position = {
+		# 				has_character_flag = famous_mime_control
+		# 			}
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = scope:councillor_liege.court_position:court_jester_court_position.marshal_court_jester_contribution_value
+		# 		desc = MARSHAL_INCREASE_CONTROL_MIME_MODIFIER
+		# 	}
+		# }
 	}
 
 	full_progress = marshal_increase_control_full_progress

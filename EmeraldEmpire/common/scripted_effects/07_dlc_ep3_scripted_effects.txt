@@ -8931,12 +8931,12 @@ ep3_create_random_maa_regiment_effect = {
 			# 		SIZE = $SIZE$
 			# 	}
 			# }
-			# flag:horse_archers = {	
-			# 	create_maa_or_upgrade_regiment_effect = {
-			# 		TYPE = horse_archers
-			# 		SIZE = $SIZE$
-			# 	}
-			# }
+			flag:horse_archers = {	
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = horse_archers
+					SIZE = $SIZE$
+				}
+			}
 			# flag:ayyar = {	
 			# 	create_maa_or_upgrade_regiment_effect = {
 			# 		TYPE = ayyar

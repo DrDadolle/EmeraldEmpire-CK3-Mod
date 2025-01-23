@@ -158,18 +158,20 @@ scripted_effect inspiration_completion_removal_basic_effect = {
 		limit = { has_variable = book_topic_dog_name }
 		remove_variable = book_topic_dog_name
 	}
-	if = {
-		limit = { has_variable = book_topic_united_title }
-		remove_variable = book_topic_united_title
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = { has_variable = book_topic_united_title }
+	# 	remove_variable = book_topic_united_title
+	# }
 	if = {
 		limit = { has_variable = book_topic_created_title }
 		remove_variable = book_topic_created_title
 	}
-	if = {
-		limit = { has_variable = book_topic_restored_title }
-		remove_variable = book_topic_restored_title
-	}
+	#L5R Disabled
+	# if = {
+	# 	limit = { has_variable = book_topic_restored_title }
+	# 	remove_variable = book_topic_restored_title
+	# }
 	if = {
 		limit = { has_variable = relevant_title }
 		remove_variable = relevant_title
