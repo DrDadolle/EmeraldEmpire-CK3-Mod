@@ -47,7 +47,7 @@ game_rule.1 = { # De Jure Requirement
 			save_scope_as = title_to_destroy
 		}
 		send_interface_message = {
-			type = event_chancellor_task_bad
+			type = event_title_bad
 			title = de_jure_requirement_title
 			desc = de_jure_requirement_desc
 

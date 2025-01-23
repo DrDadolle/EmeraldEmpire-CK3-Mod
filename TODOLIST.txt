@@ -28,7 +28,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - change events of shadowlands ending images appropriately
 
 ## CK3 1.13.* patch
-- Traits => Reexport all of them.
 - update vanilla travel background for acitivites to add shadowlands bg
 	- graphical_shadowlands_trigger = yes
 - More baronnies in spice & silk islands
@@ -65,7 +64,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ## Fixes to do
 - Spammed with rokugan_char_interaction.0231 event boxes...
 	- "an honorable death" event procs for outsite of player stuff
-- shiba mon is off-center (too much top left)
 - Added demand seppuku character interaction ? (and made by liege too)
 	- Issue with Opinion crimed (but no idea how HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER works)
 - Issues with missing accolades in innovations description ? Why ?

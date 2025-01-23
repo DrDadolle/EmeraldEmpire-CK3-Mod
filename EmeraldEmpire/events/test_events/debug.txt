@@ -1779,9 +1779,10 @@ debug.348 = {
 		# }
 	}
 
-	immediate = {
-		create_artifact_sculpture_religious_christian_effect = { OWNER = root }
-	}
+	#L5R Disabled
+	# immediate = {
+	# 	create_artifact_sculpture_religious_christian_effect = { OWNER = root }
+	# }
 
 	option = { 
 		name = debug_test_artifact_cloth_option
@@ -1795,11 +1796,12 @@ debug.349 = {
 	theme = stewardship_wealth_focus
 	orphan = yes
 
-	immediate = {
-		create_artifact_pedestal_christian_relic_effect_hist = { OWNER = root }
-		create_artifact_pedestal_islamic_relic_effect_hist = { OWNER = root }
-		create_artifact_pedestal_buddhism_relic_effect_hist = { OWNER = root }
-	}
+	#L5R Disabled
+	# immediate = {
+	# 	create_artifact_pedestal_christian_relic_effect_hist = { OWNER = root }
+	# 	create_artifact_pedestal_islamic_relic_effect_hist = { OWNER = root }
+	# 	create_artifact_pedestal_buddhism_relic_effect_hist = { OWNER = root }
+	# }
 
 	option = { 
 		name = debug_test_artifact_cloth_option

@@ -191,9 +191,9 @@ pet_animal.0001 = {
 			# 	}
 			# 	add_character_flag = name_tigon
 			# }
-			else = {
-				add_character_flag = name_tail_of_city
-			}
+			# else = {
+			add_character_flag = name_tail_of_city
+			# }
 			if = {
 				limit = { is_ai = yes }
 				random_list = {
