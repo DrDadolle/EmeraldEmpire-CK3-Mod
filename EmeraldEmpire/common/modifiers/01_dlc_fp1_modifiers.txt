@@ -473,25 +473,25 @@ held_human_sacrifice_fp1_modifier = {
 # 	build_gold_cost = -0.5
 # }
 
-fp1_trade_events_foreign_architects_modifier = {
-	icon = stewardship_positive
-	build_gold_cost = -0.10
-	build_piety_cost = -0.25
-	build_prestige_cost = -0.25
-	development_growth = 0.2
-}
+# fp1_trade_events_foreign_architects_modifier = {
+# 	icon = stewardship_positive
+# 	build_gold_cost = -0.10
+# 	build_piety_cost = -0.25
+# 	build_prestige_cost = -0.25
+# 	development_growth = 0.2
+# }
 
-fp1_trade_events_foreign_architects_no_growth_modifier = {
-	icon = stewardship_positive
-	build_gold_cost = -0.10
-	build_piety_cost = -0.25
-	build_prestige_cost = -0.25
-}
+# fp1_trade_events_foreign_architects_no_growth_modifier = {
+# 	icon = stewardship_positive
+# 	build_gold_cost = -0.10
+# 	build_piety_cost = -0.25
+# 	build_prestige_cost = -0.25
+# }
 
-fp1_trade_events_raid_consultants_modifier = {
-	icon = martial_positive
-	hostile_raid_time = 1
-}
+# fp1_trade_events_raid_consultants_modifier = {
+# 	icon = martial_positive
+# 	hostile_raid_time = 1
+# }
 
 ##################################################
 # #Dynasty Modifiers

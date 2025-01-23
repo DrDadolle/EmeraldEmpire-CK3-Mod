@@ -34,8 +34,8 @@
 		decisions =  {
 			unity_reinforce_army_decision
 			unity_organize_house_for_war_decision
-			unity_improve_logistics_decision
 			#L5R Disabled
+			# unity_improve_logistics_decision
 			# unity_establish_futuwaa_lodges_decision
 		}
 		
@@ -75,8 +75,8 @@
 		decisions =  {
 			unity_establish_network_decision
 			unity_organize_house_for_war_decision
-			unity_improve_logistics_decision
 			#L5R Disabled
+			# unity_improve_logistics_decision
 			# unity_establish_futuwaa_lodges_decision
 		}
 		
@@ -146,8 +146,8 @@
 		decisions =  {
 			unity_send_bailiffs_decision
 			unity_encourage_house_economy_decision
-			unity_promote_development_decision
 			#L5R Disabled
+			# unity_promote_development_decision
 			# unity_educate_youth_in_madrasas_decision
 		}
 		
@@ -186,8 +186,8 @@
 		decisions =  {
 			unity_placate_vassals_decision
 			unity_encourage_house_economy_decision
-			unity_promote_development_decision
 			#L5R Disabled
+			# unity_promote_development_decision
 			# unity_educate_youth_in_madrasas_decision
 		}
 		

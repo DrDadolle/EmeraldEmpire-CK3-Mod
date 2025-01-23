@@ -130,12 +130,13 @@ historical_char_creation_events.1 = {
 			}
 			animation = admiration
 		}
-		triggered_animation = {
-			trigger = {
-				has_variable = hodja
-			}
-			animation = laugh
-		}
+		#L5R Disabled
+		# triggered_animation = {
+		# 	trigger = {
+		# 		has_variable = hodja
+		# 	}
+		# 	animation = laugh
+		# }
 		triggered_animation = {
 			trigger = {
 				has_trait = diplomat

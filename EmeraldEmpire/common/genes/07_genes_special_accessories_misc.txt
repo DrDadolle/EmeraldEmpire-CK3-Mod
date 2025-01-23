@@ -1300,6 +1300,15 @@ props_left = {
 		boy = male
 		girl = female
 	}
+	pol_marshal_sword_left = {
+		index = 55
+		male = {
+			1 = pol_marshal_sword_01_left
+		}
+		female = male
+		boy = male
+		girl = female
+	}
 }
 
 	#####################################
@@ -1997,6 +2006,70 @@ props_left = {
 			boy = male
 			girl = female
 		}
+		steward_pouches_right = {
+			index = 74
+			male = {
+				1 = western_pouch_02_right
+			}
+			female = male
+			boy = male
+			girl = female
+		}
+		ep3_byzantine_scepter = {
+			index = 75
+			male = {
+				1 = ep3_byzantine_scepter_01_a
+				1 = ep3_byzantine_scepter_01_b
+			}
+			female = male
+			boy = male
+			girl = female
+		}
+		ep1_indian_shield_01_right = {
+			index = 76
+			male = {
+				1 = ep1_indian_shield_01_a_portrait_right
+			}
+			female = male
+			boy = male
+			girl = female
+		}
+		ep1_mediterranean_shield_01_right = {
+			index = 77
+			male = {
+				1 = ep1_mediterranean_shield_01_a_portrait_right
+			}
+			female = male
+			boy = male
+			girl = female
+		}
+		ep1_mena_shield_01_right = {
+			index = 78
+			male = {
+				1 = ep1_mena_shield_01_a_portrait_right
+			}
+			female = male
+			boy = male
+			girl = female
+		}
+		ep1_western_shield_01_right = {
+			index = 79
+			male = {
+				1 = ep1_western_shield_01_a_portrait_right
+			}
+			female = male
+			boy = male
+			girl = female
+		}
+		pol_marshal_sword = {
+			index = 80
+			male = {
+				1 = pol_marshal_sword_01
+			}
+			female = male
+			boy = male
+			girl = female
+		}
 	}
 
 	#####################################
@@ -2138,6 +2211,142 @@ props_left = {
 			female = male
 			boy = male
 			girl = female
+		}
+		ep3_byzantine_chariot_blue = {
+			index = 11
+			male = {
+				1 = ep3_byzantine_chariot_01_c
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		ep3_byzantine_chariot_green = {
+			index = 12
+			male = {
+				1 = ep3_byzantine_chariot_01_d
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		ep3_byzantine_chariot_white = {
+			index = 13
+			male = {
+				1 = ep3_byzantine_chariot_01_a
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		ep3_byzantine_chariot_red = {
+			index = 14
+			male = {
+				1 = ep3_byzantine_chariot_01_b
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		ep3_byzantine_chariot_random = {
+			index = 15
+			male = {
+				1 = ep3_byzantine_chariot_01_a
+				1 = ep3_byzantine_chariot_01_b
+				1 = ep3_byzantine_chariot_01_c
+				1 = ep3_byzantine_chariot_01_d
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		ep3_byzantine_chariot_w_horses_blue = {
+			index = 16
+			male = {
+				1 = ep3_byzantine_chariot_w_horses_01_c
+				1 = ep3_byzantine_chariot_w_horses_01_alt_c
+				1 = ep3_byzantine_chariot_w_horses_02_c
+				1 = ep3_byzantine_chariot_w_horses_02_alt_c
+				1 = ep3_byzantine_chariot_w_horses_03_c
+				1 = ep3_byzantine_chariot_w_horses_03_alt_c
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		ep3_byzantine_chariot_w_horses_green = {
+			index = 17
+			male = {
+				1 = ep3_byzantine_chariot_w_horses_01_d
+				1 = ep3_byzantine_chariot_w_horses_01_alt_d
+				1 = ep3_byzantine_chariot_w_horses_02_d
+				1 = ep3_byzantine_chariot_w_horses_02_alt_d
+				1 = ep3_byzantine_chariot_w_horses_03_d
+				1 = ep3_byzantine_chariot_w_horses_03_alt_d
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		ep3_byzantine_chariot_w_horses_white = {
+			index = 18
+			male = {
+				1 = ep3_byzantine_chariot_w_horses_01_a
+				1 = ep3_byzantine_chariot_w_horses_01_alt_a
+				1 = ep3_byzantine_chariot_w_horses_02_a
+				1 = ep3_byzantine_chariot_w_horses_02_alt_a
+				1 = ep3_byzantine_chariot_w_horses_03_a
+				1 = ep3_byzantine_chariot_w_horses_03_alt_a
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		ep3_byzantine_chariot_w_horses_red = {
+			index = 19
+			male = {
+				1 = ep3_byzantine_chariot_w_horses_01_b
+				1 = ep3_byzantine_chariot_w_horses_01_alt_b
+				1 = ep3_byzantine_chariot_w_horses_02_b
+				1 = ep3_byzantine_chariot_w_horses_02_alt_b
+				1 = ep3_byzantine_chariot_w_horses_03_b
+				1 = ep3_byzantine_chariot_w_horses_03_alt_b
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		ep3_byzantine_chariot_w_horses_random = {
+			index = 20
+			male = {
+				1 = ep3_byzantine_chariot_w_horses_01_a
+				1 = ep3_byzantine_chariot_w_horses_01_alt_a
+				1 = ep3_byzantine_chariot_w_horses_02_a
+				1 = ep3_byzantine_chariot_w_horses_02_alt_a
+				1 = ep3_byzantine_chariot_w_horses_03_a
+				1 = ep3_byzantine_chariot_w_horses_03_alt_a
+				1 = ep3_byzantine_chariot_w_horses_01_b
+				1 = ep3_byzantine_chariot_w_horses_01_alt_b
+				1 = ep3_byzantine_chariot_w_horses_02_b
+				1 = ep3_byzantine_chariot_w_horses_02_alt_b
+				1 = ep3_byzantine_chariot_w_horses_03_b
+				1 = ep3_byzantine_chariot_w_horses_03_alt_b
+				1 = ep3_byzantine_chariot_w_horses_01_c
+				1 = ep3_byzantine_chariot_w_horses_01_alt_c
+				1 = ep3_byzantine_chariot_w_horses_02_c
+				1 = ep3_byzantine_chariot_w_horses_02_alt_c
+				1 = ep3_byzantine_chariot_w_horses_03_c
+				1 = ep3_byzantine_chariot_w_horses_03_alt_c
+				1 = ep3_byzantine_chariot_w_horses_01_d
+				1 = ep3_byzantine_chariot_w_horses_01_alt_d
+				1 = ep3_byzantine_chariot_w_horses_02_d
+				1 = ep3_byzantine_chariot_w_horses_02_alt_d
+				1 = ep3_byzantine_chariot_w_horses_03_d
+				1 = ep3_byzantine_chariot_w_horses_03_alt_d
+			}
+			female = male
+			boy = male
+			girl = male
 		}
 	}
 }

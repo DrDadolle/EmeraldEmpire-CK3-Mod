@@ -150,7 +150,8 @@ special_contract = {
 					scope:vassal = {
 						OR = {
 							vassal_contract_has_flag = has_march_contract
-							primary_title = { has_variable = historical_margrave }
+							#L5R Disabled
+							# primary_title = { has_variable = historical_margrave }
 							any_sub_realm_county = {
 								any_neighboring_county = {
 									NOT = { holder.top_liege = scope:vassal.top_liege }
