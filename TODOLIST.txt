@@ -25,9 +25,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 # TO TEST
-- Test phoenix acclamation stuff
-	-check admin_governor acclamation succession. Kinda Working
-
 - change events of shadowlands ending images appropriately
 
 ## CK3 1.13.* patch
@@ -35,8 +32,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	Gimp 2: Use .DDS plugin and use Export as ABGR8 format, .DDS with Compression=None.
 	OR compress as BC2 / DXT3 ? => check kami_descendant trait => NOT WORKING :(
 	OR https://www.gimp-forum.net/attachment.php?aid=2871
-- Add à la AGOT an event when emperor dies "Succession of the Iron Throne" title event
-- Replace the conquer cassus belli internal by the AGOT Neighbour CB ?
+	- Trying BC2/DXT5 with white hair
+	- religion nezumi icon
+	
 - update vanilla travel background for acitivites to add shadowlands bg
 	- graphical_shadowlands_trigger = yes
 - More baronnies in spice & silk islands
@@ -61,7 +59,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - update ep3_constantinople => otosan_uchi
 - add description for is_otosan_uchi (ep3_laamp_decision_events) (ep3_laamp_decision_event.1000.desc_outro_revisit_constantinople for instance)
 -Nezumi shinomen placement TODO
-	- religion nezumi icon
+
 - add trait_portrait_modifiers for undead based on elder-kings lich stuff
 - Add thumbnail image for the mod !
 	
@@ -118,6 +116,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- same for Unicorn => duchy put but they are spread out in reality...
 	- same for crane
 	- same for crab
+- Add à la AGOT an event when emperor dies "Succession of the Iron Throne" title event
 - Add special regional tradition for shadowlands
 	- buff developtments, hunt chances, etc... (like mountain homes i.e)
 	- character_view_bg in gfx, need to add some fallback images

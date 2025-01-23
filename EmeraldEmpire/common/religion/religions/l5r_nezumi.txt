@@ -227,16 +227,15 @@ nezumi_religion = {
 	faiths = {
 		great_dream = {
 			color = { 0.43 0.63 0.90 }
-			#TODO change it
-			icon = baltic
-			reformed_icon = baltic_reformed
+			icon = great_dream
+			reformed_icon = great_dream_reformed
 
 			#L5R TODO : add at least 2 more
 			holy_site = shrine_to_memory
 			holy_site = repository_of_all_knowledge
 
 
-			doctrine = tenet_sanctity_of_nature
+			doctrine = tenet_megaliths
 			doctrine = tenet_communal_identity
 			doctrine = tenet_sacred_childbirth
 
