@@ -282,13 +282,14 @@ shadowlands_struggle.2000 = { # Invasion of Crab Clan
 	option = {
 		name = shadowlands_struggle.2000.a
 
-		spawn_army_invasion_crab_clan = yes
-
 		start_war = {
 			casus_belli = invasion_of_crab_clan_cb
 			target = scope:crab_clan
 			target_title = title:k_crab_clan
 		}
+
+		spawn_army_invasion_crab_clan = yes
+
 		# TODO : ask for help ? Dunno
 		# scope:crab_clan = {
 		# 	trigger_event = {

@@ -41,7 +41,9 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- graphical_shadowlands_trigger = yes
 - More baronnies in spice & silk islands
 	- Some more Shinoment county as well for nezumi
+		- more holy sites for them, at least 4 total (2 now)
 	- more in Shiba lands as well ??
+		- one more baronni in nejiro, bachitari
 - New Shadowlands stuff
 	- up ishigaki bridge a little
 	- move down yukiko 13 & forgotten 13 bridge
@@ -53,13 +55,13 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Shiro Kaikoga => Wrong religion & culture, why ?
 - add images for mma
 - Why people can be eunuch ?! wtf even Dark Moto Tsume ?! 
+	- He got again fucking cancer, why ?!
 - Update activites terrain with shadowlands, as well as activity_backgrounds.txt
 - for namelists, use "dynasty_name_first = yes" flag for L5R ??? Avoid doing all the weird stuff in name
 - update ep3_constantinople => otosan_uchi
 - add description for is_otosan_uchi (ep3_laamp_decision_events) (ep3_laamp_decision_event.1000.desc_outro_revisit_constantinople for instance)
 -Nezumi shinomen placement TODO
 	- religion nezumi icon
-	- How to prevent crab to annihilate Nezumis ? The faith is "hostile" after all
 - add trait_portrait_modifiers for undead based on elder-kings lich stuff
 - Add thumbnail image for the mod !
 	
@@ -99,6 +101,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - BUG during duel : 	
 	Error: Invalid left side during comparison 'var'
 	Script location: file: common/customizable_localization/00_signature_weapon_custom_localization.txt line: 380 (SignatureWeaponAttemptedHeavyPlural)
+- WORKAROUND : special phoenix succession kinda working using admin acclamation. But GUI is ugly because it has all the admin special button & loc
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
 =====================================================================================================

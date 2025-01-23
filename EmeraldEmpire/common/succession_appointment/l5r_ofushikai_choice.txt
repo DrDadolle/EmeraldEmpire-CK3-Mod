@@ -1,8 +1,15 @@
 ﻿#L5R TODO base it on admin_governor instead of admin_emperor
 ofushikai_choice = {
-	default_candidates = {  landed_vassal holder_house_member }
-	invested_candidates = {  }
 
+
+	default_candidates = { holder_close_extended_family holder_house_member landed_vassal_close_extended_family landed_vassal direct_subject unlanded_noble_close_extended_family}
+	invested_candidates = { unlanded_noble_house_head }
+
+	#Governor
+	# default_candidates = { holder_close_family }
+	# invested_candidates = { holder_house_member landed_vassal landed_vassal_house_member unlanded_noble_house_head unlanded_noble_close_family }
+
+	#Emperor
 	# default_candidates = { holder_close_family landed_vassal_close_extended_family }
 	# invested_candidates = { holder_close_extended_family unlanded_noble_close_extended_family unlanded_noble_house_head }
 
