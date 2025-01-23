@@ -4,6 +4,9 @@ tags={
 }
 name="Emerald Empire"
 picture="thumbnail.png"
+replace_path="common/bookmarks/bookmarks"
+replace_path="common/bookmarks/challenge_characters"
+replace_path="common/bookmarks/groups"
 replace_path="common/culture/cultures"
 replace_path="common/culture/name_lists"
 replace_path="common/dynasties"
