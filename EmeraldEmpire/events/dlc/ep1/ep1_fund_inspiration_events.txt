@@ -20263,16 +20263,15 @@ fund_inspiration.6507 = {
 			}
 			save_scope_as = grumpy_liege_murder
 		}
-		scope:inspiration_owner = {
-			force_add_to_scheme = {
-				scheme = scope:grumpy_liege_murder
-				years = 15
-			}
-			add_opinion = {
-				target = root
-				modifier = grateful_opinion
-				opinion = 40
-			}
+		try_to_force_assign_character_to_random_agent_slot_effect = {
+			SCHEME = scope:grumpy_liege_murder
+			CHAR = scope:inspiration_owner
+			YEARS = 20
+		}
+		reverse_add_opinion = {
+			target = scope:inspiration_owner
+			modifier = grateful_opinion
+			opinion = 40
 		}
 		ai_chance = {
 			base = 10

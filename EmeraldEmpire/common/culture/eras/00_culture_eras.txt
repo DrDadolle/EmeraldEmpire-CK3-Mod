@@ -19,12 +19,11 @@ culture_era_early_medieval = {
 
 	# Cultural 
 	## Longbowmen
-	#L5R Disabled
-	# maa_upgrade = {
-	# 	men_at_arms = longbowmen
-	# 	damage = 8
-	# 	toughness = 2
-	# }
+	maa_upgrade = {
+		men_at_arms = longbowmen
+		damage = 8
+		toughness = 2
+	}
 
 	# Accolade
 	## Accolade Archers
@@ -74,12 +73,11 @@ culture_era_high_medieval = {
 
 	# Cultural 
 	## Longbowmen
-	#L5R Disabled
-	# maa_upgrade = {
-	# 	men_at_arms = longbowmen
-	# 	damage = 8
-	# 	toughness = 2
-	# }
+	maa_upgrade = {
+		men_at_arms = longbowmen
+		damage = 8
+		toughness = 2
+	}
 
 	# Accolade
 	## Accolade Archers
@@ -152,12 +150,11 @@ culture_era_late_medieval = {
 
 	# Cultural 
 	## Longbowmen
-	#L5R Disabled
-	# maa_upgrade = {
-	# 	men_at_arms = longbowmen
-	# 	damage = 8
-	# 	toughness = 2
-	# }
+	maa_upgrade = {
+		men_at_arms = longbowmen
+		damage = 8
+		toughness = 2
+	}
 
 	# Accolade
 	## Accolade Archers

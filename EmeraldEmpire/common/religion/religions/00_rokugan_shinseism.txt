@@ -226,7 +226,7 @@
 	faiths = {
 		shinseism = {
 			color = { 0.9 0.2 0.2 }
-			icon = taoism
+			icon = shinseism
 
 			holy_site = shinsei_and_sumai_mura
 			holy_site = pillars_of_virtue
@@ -248,7 +248,7 @@
 		
 		perfect_earth_sect = {
 			color = { 0.22 0.02 0.03 }
-			icon = shangqing
+			icon = perfect_land_sect
 
 			holy_site = shinsei_and_sumai_mura
 			holy_site = pillars_of_virtue

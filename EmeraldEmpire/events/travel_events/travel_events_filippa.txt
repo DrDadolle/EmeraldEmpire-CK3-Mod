@@ -6891,14 +6891,15 @@ travel_events.2018 = {
 							limit = {
 								NOT = {
 									scope:scheme_to_expose = { 
-										scheme_is_character_agent = this
+										scheme_is_character_agent = scope:estate_character
 									}
 								}
-								is_valid_as_agent_in_scheme = scope:scheme_to_expose
+								char_can_fit_into_scheme_trigger = { SCHEME = scope:scheme_to_expose }
 							}
-							force_add_to_scheme = {
-								scheme = scope:scheme_to_expose
-								years = 5
+							try_to_force_assign_character_to_random_agent_slot_effect = {
+								SCHEME = scope:scheme_to_expose
+								CHAR = scope:estate_character
+								YEARS = 5
 							}
 						}
 					}
@@ -14317,11 +14318,11 @@ travel_events.2100 = {
 		scope:murder_scheme = {
 			if = {
 				limit = {
-					any_scheme_agent = {
+					any_scheme_agent_character = {
 						is_appropriate_assassin_trigger = yes
 					}
 				}
-				random_scheme_agent = {
+				random_scheme_agent_character = {
 					limit = {
 						is_appropriate_assassin_trigger = yes
 					}
@@ -14341,11 +14342,10 @@ travel_events.2100 = {
 				}
 			}
 		}
-		scope:our_would_be_assassin = {
-			force_add_to_scheme = {
-				scheme = scope:murder_scheme
-				years = 5
-			}
+		try_to_force_assign_character_to_random_agent_slot_effect = {
+			SCHEME = scope:murder_scheme
+			CHAR = scope:our_would_be_assassin
+			YEARS = 5
 		}
 	}
 	#Good riddance

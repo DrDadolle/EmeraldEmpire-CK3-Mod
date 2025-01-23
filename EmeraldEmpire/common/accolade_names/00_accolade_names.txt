@@ -2029,36 +2029,38 @@ accolade_leader_of_the_lieges_maa = {
 				}
 				desc = accolade_war_party
 			}
-			#L5R Disabled
-			# triggered_desc = {
-			# 	trigger = {
-			# 		OR = {
-			# 			AND = {
-			# 				scope:accolade_type = {
-			# 					this = accolade_type:archer_attribute
-			# 				}
-			# 				culture = {
-			# 					OR = {
-			# 						has_cultural_parameter = unlock_maa_archers_of_the_nile
-			# 						has_cultural_parameter = unlock_maa_bush_hunter
-			# 						has_cultural_parameter = unlock_maa_metsanvartija
-			# 						has_cultural_parameter = unlock_maa_longbowmen
-			# 						has_innovation = innovation_bamboo_bows
-			# 					}
-			# 				}
-			# 			}
-			# 			AND = {
-			# 				scope:accolade_type = {
-			# 					this = accolade_type:crossbowmen_attribute
-			# 				}
-			# 				culture = {
-			# 					has_innovation = innovation_repeating_crossbow
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	desc = accolade_cultural_archers
-			# }
+			
+			triggered_desc = {
+				trigger = {
+					OR = {
+						AND = {
+							scope:accolade_type = {
+								this = accolade_type:archer_attribute
+							}
+							culture = {
+								OR = {
+									#L5R Disabled
+									# has_cultural_parameter = unlock_maa_archers_of_the_nile
+									# has_cultural_parameter = unlock_maa_bush_hunter
+									# has_cultural_parameter = unlock_maa_metsanvartija
+									has_cultural_parameter = unlock_maa_longbowmen
+									# has_innovation = innovation_bamboo_bows
+								}
+							}
+						}
+						#L5R Disabled
+						# AND = {
+						# 	scope:accolade_type = {
+						# 		this = accolade_type:crossbowmen_attribute
+						# 	}
+						# 	culture = {
+						# 		has_innovation = innovation_repeating_crossbow
+						# 	}
+						# }
+					}
+				}
+				desc = accolade_cultural_archers
+			}
 			#L5R Disabled
 			# triggered_desc = {
 			# 	trigger = {

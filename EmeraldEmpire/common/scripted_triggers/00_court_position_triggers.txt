@@ -233,8 +233,8 @@ court_position_martial_trigger = {
 		number_of_commander_traits > 0
 		has_trait = brave
 		prowess >= mediocre_skill_rating
-		has_trait = viking
 		#L5R Disabled
+		# has_trait = viking
 		# has_trait = varangian
 		has_trait = berserker
 		has_trait = shieldmaiden

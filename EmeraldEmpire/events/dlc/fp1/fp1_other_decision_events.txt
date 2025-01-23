@@ -1973,22 +1973,23 @@ fp1_other_decisions.1000 = {
 		character = scope:blotter
 		animation = personality_zealous
 	}
+	# override_background = {
+	# 	trigger = {
+	# 		scope:blotter = {
+	# 			religion = religion:germanic_religion
+	# 		}
+	# 	}
+	# 	reference = fp1_tribal_temple
+	# }
 	override_background = {
-		trigger = {
-			scope:blotter = {
-				religion = religion:germanic_religion
-			}
-		}
-		reference = fp1_tribal_temple
-	}
-	override_background = {
-		trigger = {
-			scope:blotter = {
-				NOT = {
-					religion = religion:germanic_religion
-				}
-			}
-		}
+		#L5R Disabled
+		# trigger = {
+		# 	scope:blotter = {
+		# 		NOT = {
+		# 			religion = religion:germanic_religion
+		# 		}
+		# 	}
+		# }
 		reference = temple_scope
 	}
 

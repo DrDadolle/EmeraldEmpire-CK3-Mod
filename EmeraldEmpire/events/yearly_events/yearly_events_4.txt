@@ -1157,11 +1157,12 @@ yearly.4014 = {
 						scope:murder_friends_scheme = {
 							NOT = { scheme_is_character_agent = prev }
 						}
-						is_valid_as_agent_in_scheme = scope:murder_friends_scheme
+						char_can_fit_into_scheme_trigger = { SCHEME = scope:murder_friends_scheme }
 					}
-					force_add_to_scheme = {
-						scheme = scope:murder_friends_scheme
-						years = 5
+					force_assign_character_to_random_agent_slot_effect = {
+						SCHEME = scope:murder_friends_scheme
+						CHAR = scope:heir
+						YEARS = 5
 					}
 				}
 			}
@@ -1194,23 +1195,18 @@ yearly.4014 = {
 						scope:murder_friends_scheme = {
 							NOT = { scheme_is_character_agent = prev }
 						}
-						is_valid_as_agent_in_scheme = scope:murder_friends_scheme
+						char_can_fit_into_scheme_trigger = { SCHEME = scope:murder_friends_scheme }
 					}
-					force_add_to_scheme = {
-						scheme = scope:murder_friends_scheme
-						years = 5
+					force_assign_character_to_random_agent_slot_effect = {
+						SCHEME = scope:murder_friends_scheme
+						CHAR = scope:vassal
+						YEARS = 5
 					}
 				}
 			}
 		}
 		scope:murder_friends_scheme = {
 			add_scheme_progress = scheme_progress_gain
-			if = { #If the progress is negative it will get a boost
-				limit = {
-					scheme_monthly_progress <= 0
-				}
-				add_scheme_modifier = {	type = murder_trusted_by_target_modifier days = 1825 }
-			}
 		}
 	}
 }

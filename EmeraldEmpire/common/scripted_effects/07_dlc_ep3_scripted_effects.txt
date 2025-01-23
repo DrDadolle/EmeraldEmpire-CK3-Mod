@@ -8222,15 +8222,15 @@ ep3_pick_random_maa_regiment_effect = {
 			# 		value = flag:huscarl
 			# 	}
 			# }
-			# 1 = {
-			# 	trigger = {
-			# 		culture = { has_cultural_parameter = unlock_maa_longbowmen }
-			# 	}
-			# 	save_scope_value_as = {
-			# 		name = maa_to_create
-			# 		value = flag:longbowmen
-			# 	}
-			# }
+			1 = {
+				trigger = {
+					culture = { has_cultural_parameter = unlock_maa_longbowmen }
+				}
+				save_scope_value_as = {
+					name = maa_to_create
+					value = flag:longbowmen
+				}
+			}
 			# 1 = {
 			# 	trigger = {
 			# 		culture = { has_cultural_parameter = unlock_maa_monaspa }
@@ -8907,12 +8907,12 @@ ep3_create_random_maa_regiment_effect = {
 			# 		SIZE = $SIZE$
 			# 	}
 			# }
-			# flag:longbowmen = {	
-			# 	create_maa_or_upgrade_regiment_effect = {
-			# 		TYPE = longbowmen
-			# 		SIZE = $SIZE$
-			# 	}
-			# }
+			flag:longbowmen = {	
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = longbowmen
+					SIZE = $SIZE$
+				}
+			}
 			# flag:monaspa = {	
 			# 	create_maa_or_upgrade_regiment_effect = {
 			# 		TYPE = monaspa

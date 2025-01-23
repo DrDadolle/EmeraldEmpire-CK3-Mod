@@ -28,13 +28,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - change events of shadowlands ending images appropriately
 
 ## CK3 1.13.* patch
--Only B8G8R8A8_UNORM support so far. => Wrong color encoding
-	Gimp 2: Use .DDS plugin and use Export as ABGR8 format, .DDS with Compression=None.
-	OR compress as BC2 / DXT3 ? => check kami_descendant trait => NOT WORKING :(
-	OR https://www.gimp-forum.net/attachment.php?aid=2871
-	- Trying BC2/DXT5 with white hair
-	- religion nezumi icon
-	
+- Traits => Reexport all of them.
 - update vanilla travel background for acitivites to add shadowlands bg
 	- graphical_shadowlands_trigger = yes
 - More baronnies in spice & silk islands
@@ -59,9 +53,8 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - update ep3_constantinople => otosan_uchi
 - add description for is_otosan_uchi (ep3_laamp_decision_events) (ep3_laamp_decision_event.1000.desc_outro_revisit_constantinople for instance)
 -Nezumi shinomen placement TODO
-
-- add trait_portrait_modifiers for undead based on elder-kings lich stuff
 - Add thumbnail image for the mod !
+-Data error in loc string 'motto_custom_loc_god'
 	
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)

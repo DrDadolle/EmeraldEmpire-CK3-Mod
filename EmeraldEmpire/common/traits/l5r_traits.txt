@@ -73,6 +73,7 @@ natural_white_hair = {
 
 	physical = yes
 	genetic = yes
+	good = yes
 
 	birth = 0.15 # 0.15% chance de be born with this trait 
 	random_creation = 0.15 # 0.15% of new character have this ??
