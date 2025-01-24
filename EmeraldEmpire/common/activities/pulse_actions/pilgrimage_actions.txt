@@ -575,15 +575,16 @@ apa_preaching_to_unbelievers = {
 					}
 				}
 			}
-			if = {
-				limit = { exists = scope:new_memory }
-				scope:new_memory = {
-					set_variable = {
-						name = memory_location
-						value = scope:activity.activity_location
-					}
-				}
-			}
+			#L5R Disabled
+			# if = {
+			# 	limit = { exists = scope:new_memory }
+			# 	scope:new_memory = {
+			# 		set_variable = {
+			# 			name = memory_location
+			# 			value = scope:activity.activity_location
+			# 		}
+			# 	}
+			# }
 			scope:second = {
 				create_character_memory = {
 					type = memory_apa_was_converted

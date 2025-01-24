@@ -677,6 +677,8 @@ court_chaplain_conversion_contextual_bonuses = {
 					OR = {
 						terrain = mountains
 						terrain = desert_mountains
+						#L5R Added
+						terrain = shadowlands_mountains
 					}
 				}
 			}
@@ -698,6 +700,8 @@ court_chaplain_conversion_contextual_bonuses = {
 					OR = {
 						terrain = mountains
 						terrain = desert_mountains
+						#L5R Added
+						terrain = shadowlands_mountains
 					}
 				}
 			}

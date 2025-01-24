@@ -61,12 +61,12 @@ NSetup = {
 	GENERATED_POOL_CHARACTER_TEMPLATE_WEIGHTS = {
 		2
 		5
-		2
-		2
-		2
-		2
-		2
 		1
+		1
+		1
+		1
+		1
+		5
 	}
 	DESIRED_NEIGHBOR_POOLS = 4		# How many pools should we try to consider bordering? Pools bordering the sea will consider pools further removed by sea neighboring until this number is hit, or MAX_POOL_NEIGHBOR_DISTANCE is hit
 	MAX_POOL_NEIGHBOR_DISTANCE = 3	# How many sea zones away can we search at most?
@@ -227,8 +227,8 @@ NCharacter = {
 	MAA_STARTING_PRESTIGE_EXPENSE_MIN = 0.4 # Rulers at game start will start out spending this much prestige (or a bit more, as it'll overshoot) on men at arms
 	MAA_STARTING_PRESTIGE_EXPENSE_MAX = 0.55 # Rulers will never start out spending more than this much prestige on men at arms. For prestige-poor rulers this can mean they end up under MAA_STARTING_PRESTIGE_EXPENSE_MIN if one more MaA would put them above the max
 	
-	MAXIMUM_DIPLOMATIC_RANGE = 3400 # 1000
-	MAXIMUM_DIPLOMATIC_RANGE_RESTRICTED = 2550 # 750		# Used if a game rule with the restricted_diplomatic_range flag is used
+	MAXIMUM_DIPLOMATIC_RANGE = 1000
+	MAXIMUM_DIPLOMATIC_RANGE_RESTRICTED = 750 	# Used if a game rule with the restricted_diplomatic_range flag is used
 	HOOK_COOLDOWN_DURATION_YEARS = 5	# How many years do strong hooks go on cooldown when used?
 	MAX_COUNTIES_IN_REALM_AS_DUKE = 30						# As a duke or below, the player (but not the AI) will suffer penalties when they go beyond this # of counties in their realm. They can form a kingdom to get the penalties to go away
 	INCOME_PENALTY_PER_COUNTY_ABOVE_LIMIT = 0.05			# For each county above MAX_COUNTIES_IN_REALM_AS_DUKE, you get 10% less income
@@ -555,8 +555,8 @@ NCombat = {
 }
 
 NArmy = {
-	MOVEMENT_SPEED_RETREAT = 11.25 # 4.5			# Movement speed while retreating
-	MOVEMENT_SPEED = 7.5 # 3						# Normal movement speed
+	MOVEMENT_SPEED_RETREAT = 4.5					# Movement speed while retreating
+	MOVEMENT_SPEED = 3								# Normal movement speed
 	MOVEMENT_SPEED_BONUS_FRIENDLY_AREA = 0.2		# In friendly areas you get a 20% speed bonus
 	REGIMENT_MONTHLY_REINFORCE_SPEED = 0.03			# Monthly reinforcement percentage of unraised chunks [0-1]
 	REGIMENT_MONTHLY_MAA_REINFORCE_SPEED = 0.1		# Monthly reinforcement percentage of unraised MAA chunks [0-1]
@@ -1041,12 +1041,12 @@ NCulture = {
 NMercenary = {
 	LEVELS = { 0 7 14 }						# Defines how many different sizes of mercenary companies are there and how many are spawned for a given culture
 											# The numbers correspond to numbers of counties of the culture. No company exists if the number is lower than the first value specified here.
-	HIRE_RANGE = 300 # 500					# The maximum distance of mercenaries that can be hired (capital to mercenary location)
+	HIRE_RANGE = 500						# The maximum distance of mercenaries that can be hired (capital to mercenary location)
 	HIRE_RANGE_SAME_CULTURE = 1500			# The maximum distance of mercenaries with the same culture that can be hired (capital to mercenary location)
 	LEVIES = { 400 800 1200 }				# The base numbers of levies for levels of mercenary bands
-	MAA_REGIMENTS = { 0 0 1 } # { 1 2 3 }	# The number of MAA regiments for levels of mercenary bands
+	MAA_REGIMENTS =  { 1 2 3 }				# The number of MAA regiments for levels of mercenary bands
 	NUM_KNIGHTS = { 2 3 4 }					# The number of knights for levels of mercenary bands
-	MAA_REGIMENT_SIZES = { 3 3 3 }	# The base sizes of MAA regiments for levels of mercenary bands, in number of sub-regiments
+	MAA_REGIMENT_SIZES = { 3 3 3 }			# The base sizes of MAA regiments for levels of mercenary bands, in number of sub-regiments
 
 	SIZE_INNOVATIONS_RATIO = 1.0			# How much are mercenary companies growing with the ratio of discovered to all cultural innovations of the culture. 1.0 means +100%
 											# if SIZE_INNOVATIONS_RATIO = 2, the mercenaries will be 3x their original size if all innovations are discovered
@@ -1541,7 +1541,9 @@ NTaskContract = {
 	LOW_TASK_CONTRACT_TIER = 0
 	MEDIUM_TASK_CONTRACT_TIER = 3
 	HIGH_TASK_CONTRACT_TIER = 4
-	ADVENTURER_DISTANCE_RESTRICTION = 22500 # Squared radius distance from adventurer camp to contract location (rough illustrations can be found in 00_distance_values.txt)
+	#L5R Modified : Distance reduced as the map is smaller
+	ADVENTURER_DISTANCE_RESTRICTION = 12500 # Squared radius distance from adventurer camp to contract location (rough illustrations can be found in 00_distance_values.txt)
+	# ADVENTURER_DISTANCE_RESTRICTION = 22500 # Squared radius distance from adventurer camp to contract location (rough illustrations can be found in 00_distance_values.txt)
 }
 
 NAdministrative = {

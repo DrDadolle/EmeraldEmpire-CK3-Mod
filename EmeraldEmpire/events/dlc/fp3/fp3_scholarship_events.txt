@@ -11,196 +11,196 @@
 # 9000 – 9999: Research Project conclusion events							   =
 #																			   =
 # ==============================================================================
-
+#L5R Disabled
 # Sponsor Persian Scholars
-fp3_scholarship.0001 = {
-	hidden = yes
+# fp3_scholarship.0001 = {
+# 	hidden = yes
 
-	trigger = {
-		exists = var:number_of_invite_scholars_countdown
-	}
+# 	trigger = {
+# 		exists = var:number_of_invite_scholars_countdown
+# 	}
 
-	immediate = {
-		#Set up a list of provinces, one per duchy in the realm, find all relevant pool characters there
-		every_realm_province = {
-			if = {
-				limit = {
-					save_temporary_scope_as = potential_province
-					NOT = {
-						any_in_list = {
-							list = pool_provinces
-							county.duchy = scope:potential_province.county.duchy
-						}
-					}
-				}
-				add_to_temporary_list = pool_provinces
-			}
-		}
+# 	immediate = {
+# 		#Set up a list of provinces, one per duchy in the realm, find all relevant pool characters there
+# 		every_realm_province = {
+# 			if = {
+# 				limit = {
+# 					save_temporary_scope_as = potential_province
+# 					NOT = {
+# 						any_in_list = {
+# 							list = pool_provinces
+# 							county.duchy = scope:potential_province.county.duchy
+# 						}
+# 					}
+# 				}
+# 				add_to_temporary_list = pool_provinces
+# 			}
+# 		}
 
-		every_in_list = {
-			list = pool_provinces
-			save_temporary_scope_as = pool_province
+# 		every_in_list = {
+# 			list = pool_provinces
+# 			save_temporary_scope_as = pool_province
 
-			every_pool_character = {
-				province = scope:pool_province
-				limit = {
-					learning >= 10
-					has_trait = education_learning
-					NOT = { has_trait = intellect_bad }
-				}
-				add_to_temporary_list = potential_scholars
-			}
-		}
+# 			every_pool_character = {
+# 				province = scope:pool_province
+# 				limit = {
+# 					learning >= 10
+# 					has_trait = education_learning
+# 					NOT = { has_trait = intellect_bad }
+# 				}
+# 				add_to_temporary_list = potential_scholars
+# 			}
+# 		}
 
-		#Prioritize good scholars
-		random_in_list = {
-			list = potential_scholars
-			limit = { is_alive = yes }
-			weight = {
-				base = 1
-				modifier = {
-					add = {
-						value = learning
-						subtract = 12
-						multiply = 5
-					}
-				}
-			}
-			save_scope_as = scholar
-		}
+# 		#Prioritize good scholars
+# 		random_in_list = {
+# 			list = potential_scholars
+# 			limit = { is_alive = yes }
+# 			weight = {
+# 				base = 1
+# 				modifier = {
+# 					add = {
+# 						value = learning
+# 						subtract = 12
+# 						multiply = 5
+# 					}
+# 				}
+# 			}
+# 			save_scope_as = scholar
+# 		}
 
-		#If no one was found, make a new scholar
-		if = {
-			limit = { NOT = { exists = scope:scholar } }
+# 		#If no one was found, make a new scholar
+# 		if = {
+# 			limit = { NOT = { exists = scope:scholar } }
 
-			# Can be either anywhere from a great to mediocre scholar
+# 			# Can be either anywhere from a great to mediocre scholar
 
-			create_character = {
-				location = root.capital_province
-				age = { 20 70 }
-				gender_female_chance = {
-					if = {
-						limit = {
-							faith = { has_doctrine = doctrine_gender_male_dominated }
-						}
-						add = 0
-					}
-					else_if = {
-						limit = {
-							faith = { has_doctrine = doctrine_gender_female_dominated }
-						}
-						add = 100
-					}
-					else = {
-						add = 50
-					}
-				}
-				culture = root.culture
-				faith = root.faith
+# 			create_character = {
+# 				location = root.capital_province
+# 				age = { 20 70 }
+# 				gender_female_chance = {
+# 					if = {
+# 						limit = {
+# 							faith = { has_doctrine = doctrine_gender_male_dominated }
+# 						}
+# 						add = 0
+# 					}
+# 					else_if = {
+# 						limit = {
+# 							faith = { has_doctrine = doctrine_gender_female_dominated }
+# 						}
+# 						add = 100
+# 					}
+# 					else = {
+# 						add = 50
+# 					}
+# 				}
+# 				culture = root.culture
+# 				faith = root.faith
 
-				random_traits = yes
-				diplomacy	= { 2 10 }
-				martial		= { 0 8 }
-				stewardship = { 2 10 }
-				intrigue	= { 2 10 }
-				learning	= { 10 18 }
-				prowess		= { 0 8 }
+# 				random_traits = yes
+# 				diplomacy	= { 2 10 }
+# 				martial		= { 0 8 }
+# 				stewardship = { 2 10 }
+# 				intrigue	= { 2 10 }
+# 				learning	= { 10 18 }
+# 				prowess		= { 0 8 }
 				
-				random_traits_list = {
-					count = { 0 2 }
-					scholar = {}
-					theologian = {}
-					lifestyle_physician = {}
-				}
+# 				random_traits_list = {
+# 					count = { 0 2 }
+# 					scholar = {}
+# 					theologian = {}
+# 					lifestyle_physician = {}
+# 				}
 
-				dynasty = none
+# 				dynasty = none
 
-				after_creation = {
-					remove_any_education_traits_effect = yes
-					random_list = { 
-						10 = { add_trait = education_learning_1 }
-						35 = { add_trait = education_learning_2 }
-						35 = { add_trait = education_learning_3 }
-						20 = { add_trait = education_learning_4 }
-					}
-					random = {
-						chance = 10
-						add_trait = shrewd
-					}
-					random_list = {
-						85 = {}
-						20 = {
-							trigger = {
-								NOR = {
-									has_trait = intellect_good_1
-									has_trait = intellect_good_2
-									has_trait = intellect_good_3
-								}
-							}
-							add_trait = intellect_good_1
-						}
-						10 = {
-							trigger = {
-								NOR = {
-									has_trait = intellect_good_1
-									has_trait = intellect_good_2
-									has_trait = intellect_good_3
-								}
-							}
-							add_trait = intellect_good_2
-						}
-					}
-					add_random_tiered_trait_xp_effect = {
-						TRAIT = lifestyle_physician
-						LEVEL_1 = yes
-						LEVEL_3 = yes
-					}
-					random = {
-						chance = 2
-						add_trait = depressed_1
-					}
-					random = {
-						chance = 2
-						add_trait = reclusive
-					}
-					random = {
-						chance = 2
-						add_trait = journaller
-					}
-				}
+# 				after_creation = {
+# 					remove_any_education_traits_effect = yes
+# 					random_list = { 
+# 						10 = { add_trait = education_learning_1 }
+# 						35 = { add_trait = education_learning_2 }
+# 						35 = { add_trait = education_learning_3 }
+# 						20 = { add_trait = education_learning_4 }
+# 					}
+# 					random = {
+# 						chance = 10
+# 						add_trait = shrewd
+# 					}
+# 					random_list = {
+# 						85 = {}
+# 						20 = {
+# 							trigger = {
+# 								NOR = {
+# 									has_trait = intellect_good_1
+# 									has_trait = intellect_good_2
+# 									has_trait = intellect_good_3
+# 								}
+# 							}
+# 							add_trait = intellect_good_1
+# 						}
+# 						10 = {
+# 							trigger = {
+# 								NOR = {
+# 									has_trait = intellect_good_1
+# 									has_trait = intellect_good_2
+# 									has_trait = intellect_good_3
+# 								}
+# 							}
+# 							add_trait = intellect_good_2
+# 						}
+# 					}
+# 					add_random_tiered_trait_xp_effect = {
+# 						TRAIT = lifestyle_physician
+# 						LEVEL_1 = yes
+# 						LEVEL_3 = yes
+# 					}
+# 					random = {
+# 						chance = 2
+# 						add_trait = depressed_1
+# 					}
+# 					random = {
+# 						chance = 2
+# 						add_trait = reclusive
+# 					}
+# 					random = {
+# 						chance = 2
+# 						add_trait = journaller
+# 					}
+# 				}
 
-				save_scope_as = scholar
-			}
-		}
+# 				save_scope_as = scholar
+# 			}
+# 		}
 
-		#Add scholar to court
-		send_interface_message = {
-			type = event_learning_good_with_text
-			title = fp3_scholarship.0001.t
-			desc = fp3_scholarship.0001.desc
-			left_icon = scope:scholar
-			add_visiting_courtier = scope:scholar
-		}
+# 		#Add scholar to court
+# 		send_interface_message = {
+# 			type = event_learning_good_with_text
+# 			title = fp3_scholarship.0001.t
+# 			desc = fp3_scholarship.0001.desc
+# 			left_icon = scope:scholar
+# 			add_visiting_courtier = scope:scholar
+# 		}
 
-		#Count down the number of extra scholars and either end the chain or resend this event
-		change_variable = {
-			name = number_of_invite_scholars_countdown
-			subtract = 1
-		}
+# 		#Count down the number of extra scholars and either end the chain or resend this event
+# 		change_variable = {
+# 			name = number_of_invite_scholars_countdown
+# 			subtract = 1
+# 		}
 
-		if = {
-			limit = { var:number_of_invite_scholars_countdown = 0 }
-			remove_variable = number_of_invite_scholars_countdown
-		}
-		else = {
-			clear_saved_scope = scholar
-			trigger_event = {
-				id = fp3_scholarship.0001
-				days = { 100 200 }
-			}
-		}
-	}
-}
+# 		if = {
+# 			limit = { var:number_of_invite_scholars_countdown = 0 }
+# 			remove_variable = number_of_invite_scholars_countdown
+# 		}
+# 		else = {
+# 			clear_saved_scope = scholar
+# 			trigger_event = {
+# 				id = fp3_scholarship.0001
+# 				days = { 100 200 }
+# 			}
+# 		}
+# 	}
+# }
 
 ##########################################
 # 1000 - 1999: No Court Scholar Required #

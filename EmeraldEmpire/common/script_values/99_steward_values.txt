@@ -475,6 +475,8 @@ steward_promote_culture_contextual_bonuses = {
 					OR = {
 						terrain = mountains
 						terrain = desert_mountains
+						#L5R Added
+						terrain = shadowlands_mountains
 					}
 				}
 			}

@@ -97,7 +97,7 @@ c_rich_frog = {
 c_west_shinomen_monastery_1 = {
 
 	1123.1.1 = {
-		liege = "e_rokugan"
+		# liege = "e_rokugan"
 		holder = 3004004 #  PlaceHolder monk
 		government = theocracy_government
 	}
@@ -106,7 +106,7 @@ c_west_shinomen_monastery_1 = {
 c_west_shinomen_monastery_2 = {
 
 	1123.1.1 = {
-		liege = "e_rokugan"
+		# liege = "e_rokugan"
 		holder = 3004005 #  PlaceHolder monk
 		government = theocracy_government
 	}
@@ -115,7 +115,7 @@ c_west_shinomen_monastery_2 = {
 c_west_shinomen_monastery_3 = {
 
 	1123.1.1 = {
-		liege = "e_rokugan"
+		# liege = "e_rokugan"
 		holder = 3004006 #  PlaceHolder monk
 		government = theocracy_government
 	}
@@ -124,7 +124,7 @@ c_west_shinomen_monastery_3 = {
 c_west_shinomen_monastery_4 = {
 
 	1123.1.1 = {
-		liege = "e_rokugan"
+		# liege = "e_rokugan"
 		holder = 3004007 #  PlaceHolder monk
 		change_development_level = 5
 		government = theocracy_government

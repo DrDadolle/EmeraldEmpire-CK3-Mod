@@ -1235,10 +1235,10 @@ tournament_contest_race_composition_effect = {
 		# 	}
 		# }
 		# else = {
-			set_variable = {
-				name = contest_horse_race_variant
-				value = flag:default
-			}
+			# set_variable = {
+			# 	name = contest_horse_race_variant
+			# 	value = flag:default
+			# }
 		# }
 		# Players
 		every_guest_subset = {

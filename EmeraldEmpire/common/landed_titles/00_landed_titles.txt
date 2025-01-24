@@ -1965,13 +1965,6 @@ e_rokugan = {
                 }
            }       
        }
-	}
-
-    #######################
-	###### West Shinomen lands
-	######### adding non-canon kingdom to proper display counties as vassal of the emperor
-    k_owl_clan = {
-        color = { 163 223 135 }
 
         d_kaikoga= {
             color = { 163 223 135 }
@@ -2190,7 +2183,224 @@ e_rokugan = {
                 }
             }
         }
-    }
+        d_kaikoga= {
+            color = { 163 223 135 }
+            capital = c_kaikoga_province
+            definite_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
+            
+            c_kaikoga_province = {
+                color = { 50 120 153 }
+
+                b_shiro_kaikoga = {
+                    province = 406
+                }
+           }
+       }
+       d_toritaka = {
+            color = { 50 120 153 }
+            capital = c_toritaka_province
+            definite_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
+            
+            c_toritaka_province = {
+                color = { 50 120 153 }
+
+                b_shiro_toritaka = {
+                    province = 346
+                }
+                b_kyuden_toketsu = {
+                    province = 347
+                }
+             }
+         }
+
+        d_usagi = {
+            color = { 235 102 79 }
+            capital = c_usagi_province
+            definite_form = yes # To display "XXX Clan" instead of "Kuni of XXX Clan"
+            
+            c_usagi_province = {
+                color = { 235 102 79 }
+
+                b_shiro_usagi = {
+                    province = 258
+                }
+                b_kudo_mura = {
+                    province = 259
+                }
+                b_meidochi = {
+                    province = 260
+                }
+                b_usagi_mori = {
+                   province = 462
+               }
+           }
+       }
+        d_east_shinomen_monasteries= {
+            color = { 83 55 35 }
+
+            c_conflagration_temple = {
+                color = { 70 57 43 }
+
+                b_conflagration_temple = {
+                    province = 330
+                }
+            }
+            c_shinden_kasai = {
+                    color = { 52 35 17 }
+
+                    b_shinden_kasai = {
+                        province = 331
+                    }
+            }
+        }
+        d_west_shinomen_monasteries= {
+            color = { 83 55 35 }
+            
+            c_west_shinomen_monastery_1 = {
+                color = { 83 55 35 }
+
+                b_west_shinomen_monastery_1 = {
+                    province = 404
+                }
+             }
+             c_west_shinomen_monastery_2 = {
+                color = { 123 63 22 }
+
+                b_west_shinomen_monastery_2 = {
+                    province = 405
+                }
+             }
+             c_west_shinomen_monastery_3 = {
+                color = { 160 133 115 }
+
+                b_west_shinomen_monastery_3 = {
+                    province = 407
+                }
+             }
+             c_west_shinomen_monastery_4 = {
+                color = { 91 61 41}
+
+                b_west_shinomen_monastery_4 = {
+                    province = 408
+                }
+             }
+        }
+        d_south_shinomen= {
+            color = { 100 72 77 }
+            capital = c_south_shinomen_ronin_2
+
+            c_south_shinomen_ronin_2 = {
+                color = { 100 72 77 }
+                b_south_shinomen_ronin_2 = {
+                    province = 414
+                }
+                b_cherry_blossom_village = {
+                    province = 415
+                }
+             }
+
+            c_south_shinomen_monastery_1 = {
+                color = { 133 119 108 }
+                b_south_shinomen_monastery_1 = {
+                    province = 412
+                }
+             }
+
+             c_south_shinomen_ronin_1 = {
+                color = { 103 49 12 }
+                b_south_shinomen_ronin_1 = {
+                    province = 413
+                }
+             }
+
+             c_south_shinomen_monastery_2 = {
+                color = { 153 118 94 }
+                b_south_shinomen_monastery_2 = {
+                    province = 416
+                }
+             }
+
+             c_south_shinomen_ronin_3 = {
+                color = { 73 41 20 }
+                b_south_shinomen_ronin_3 = {
+                    province = 417
+                }
+             }
+             
+             c_west_usagi = {
+                color = { 93 61 40 }
+                b_west_usagi = {
+                    province = 487
+                }
+             }
+        }
+        d_west_steppes_1 = {
+            color = { 100 100 100 }
+            capital = c_west_steppes_1
+
+            c_west_steppes_1 = {
+                color = { 100 100 100 }
+                b_west_steppes_1 = {
+                    province = 476
+                }
+                b_west_steppes_2 = {
+                    province = 477
+                }
+            }
+            c_west_steppes_2 = {
+                color = { 50 50 50 }
+                b_west_steppes_3 = {
+                    province = 478
+                }
+                b_west_steppes_4 = {
+                    province = 479
+                }
+            }
+            c_west_steppes_3 = {
+                color = { 50 100 50 }
+                b_west_steppes_5 = {
+                    province = 480
+                }
+                b_west_steppes_6 = {
+                    province = 481
+                }
+            }
+           
+        }
+        d_west_steppes_2 = {
+            color = { 100 200 100 }
+            capital = c_west_steppes_4
+
+            c_west_steppes_4 = {
+                color = { 100 100 50 }
+                b_west_steppes_7 = {
+                    province = 482
+                }
+            }
+
+            c_west_steppes_5 = {
+                color = { 100 200 100 }
+                b_west_steppes_8 = {
+                    province = 483
+                }
+            }
+            c_west_steppes_6 = {
+                color = { 50 200 200 }
+                b_west_steppes_9 = {
+                    province = 484
+                }
+            }
+            c_west_steppes_7 = {
+                color = { 50 200 250 }
+                b_west_steppes_11 = {
+                    province = 486
+                }
+                b_west_steppes_10 = {
+                    province = 485
+                }
+            }
+        }
+	}
  }
  
 
@@ -2809,6 +3019,16 @@ d_chuda = {
 d_komori = {
     color = { 7 41 12 }
     capital = c_komori_province
+}
+
+
+#######################
+###### Special Major Clan
+######### acan be created by decision
+k_owl_clan = {
+    color = { 163 223 135 }
+
+
 }
 
 ######## Generated Minor Clans

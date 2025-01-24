@@ -2237,6 +2237,9 @@
 			taiga_attrition_mult = -0.25
 			jungle_advantage = 5
 			jungle_attrition_mult = -0.25
+			#L5R Added
+			shadowlands_forest_advantage = 5
+			shadowlands_forest_attrition_mult = -0.25
 			build_gold_cost = 0.1
 			county_opinion_add = 5
 		}
@@ -2498,6 +2501,10 @@
 			desert_mountains_attrition_mult = -0.5
 			desert_mountains_levy_size = 0.3
 			desert_mountains_advantage = 5
+			#L5R Added
+			shadowlands_mountains_attrition_mult = -0.5
+			shadowlands_mountains_levy_size = 0.3
+			shadowlands_mountains_advantage = 5
 		}
 
 		piety_cost = faith_tenet_cost_mid
@@ -2939,6 +2946,11 @@
 			hills_tax_mult = 0.1
 			hills_levy_size = 0.3
 			hills_advantage = 5
+			#L5R Added
+			shadowlands_hills_development_growth_factor = 0.15
+			shadowlands_hills_tax_mult = 0.1
+			shadowlands_hills_levy_size = 0.3
+			shadowlands_hills_advantage = 5
 		}
 	}
 
