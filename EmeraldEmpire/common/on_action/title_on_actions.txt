@@ -2058,22 +2058,23 @@ on_rank_up = { # Will not fire during history execution or for dying characters
 			limit = { is_independent_ruler = yes }
 			remove_variable = use_co_ruler_title
 		}
+		#L5R Disabled
 		# Make a note of ranking up for stele purposes.
-		if = {
-			limit = {
-				# DLC check.
-				has_fp1_dlc_trigger = yes
-				# Is the culture eligible?
-				fp1_can_raise_stele_trigger = yes
-				# Aaaaand, for balance reasons, were they landed already?
-				exists = scope:title
-			}
-			set_variable = {
-				name = recent_rank_increase
-				value = root.primary_title
-				years = 5
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		# DLC check.
+		# 		has_fp1_dlc_trigger = yes
+		# 		# Is the culture eligible?
+		# 		fp1_can_raise_stele_trigger = yes
+		# 		# Aaaaand, for balance reasons, were they landed already?
+		# 		exists = scope:title
+		# 	}
+		# 	set_variable = {
+		# 		name = recent_rank_increase
+		# 		value = root.primary_title
+		# 		years = 5
+		# 	}
+		# }
 		# Remove any rank-inappropriate modifiers (e.g., baron buffs).
 		remove_character_modifier = mandate_baronial_troops_trained_modifier
 		remove_character_modifier = mandate_baronial_troops_half_trained_modifier

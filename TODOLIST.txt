@@ -25,7 +25,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 # TO TEST
-- change events of shadowlands ending images appropriately
+[11:27:30][E][jomini_dynamicdescription.cpp:57]: Unrecognized loc key religious_decision.0002.desc.end_no_effect. Near file: events/religion_events/religious_decision_events.txt line: 138 (religious_decision.0002)
+[11:27:30][E][jomini_dynamicdescription.cpp:66]: Unrecognized loc key religious_decision.0002.no_effect.zealous. file: events/religion_events/religious_decision_events.txt line: 472 (religious_decision.0002:option)
+[11:27:30][E][jomini_dynamicdescription.cpp:66]: Unrecognized loc key religious_decision.0002.no_effect. file: events/religion_events/religious_decision_events.txt line: 479 (religious_decision.0002:option)
+[11:27:31][E][jomini_dynamicdescription.cpp:66]: Unrecognized loc key stress_threshold.1503.a.f. file: CEventOptionDesc line: 139
+[11:27:31][E][jomini_dynamicdescription.cpp:66]: Unrecognized loc key stress_threshold.1503.a.f. file: CEventOptionDesc line: 139
+[11:27:33][E][jomini_script_argument.cpp:192]: Compiling source for hunt_activity_standard_game_effect failed for unknown arguments: HUNTER. At common/scripted_effects
 
 ## CK3 1.13.* patch
 - update vanilla travel background for acitivites to add shadowlands bg
@@ -46,7 +51,6 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Why people can be eunuch ?! wtf even Dark Moto Tsume ?! 
 	- He got again fucking cancer, why ?!
 - Update activites terrain with shadowlands, as well as activity_backgrounds.txt
-- for namelists, use "dynasty_name_first = yes" flag for L5R ??? Avoid doing all the weird stuff in name
 - update ep3_constantinople => otosan_uchi
 - add description for is_otosan_uchi (ep3_laamp_decision_events) (ep3_laamp_decision_event.1000.desc_outro_revisit_constantinople for instance)
 -Nezumi shinomen placement TODO

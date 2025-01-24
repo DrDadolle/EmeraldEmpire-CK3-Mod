@@ -271,25 +271,29 @@ activate_struggle_catalyst_warfare_check_attacker_involvement_trigger = {
 ## If a parameter is triggered in multiple places, we use a scripted trigger to keep things unified.
 
 is_struggle_parameter_active_interfaith_marriages_available_between_involved_characters_trigger = {
-	scope:actor = {
-		any_character_struggle = {
-			involvement = involved
-			has_struggle_phase_parameter = interfaith_marriages_available_between_involved_characters
-			save_temporary_scope_as = struggle_temp
-			scope:recipient = {
-				any_character_struggle = {
-					involvement = involved
-					this = scope:struggle_temp
-				}
-			}
-		}
-	}
+	#L5R Disabled
+	always = no 
+	# scope:actor = {
+	# 	any_character_struggle = {
+	# 		involvement = involved
+	# 		has_struggle_phase_parameter = interfaith_marriages_available_between_involved_characters
+	# 		save_temporary_scope_as = struggle_temp
+	# 		scope:recipient = {
+	# 			any_character_struggle = {
+	# 				involvement = involved
+	# 				this = scope:struggle_temp
+	# 			}
+	# 		}
+	# 	}
+	# }
 }
 
 is_struggle_parameter_active_cheaper_to_convert_to_struggle_culture_trigger = {
-	capital_county = {
-		any_county_struggle = { has_struggle_phase_parameter = cheaper_to_convert_to_struggle_culture }
-	}
+	#L5R Disabled
+	always = no
+	# capital_county = {
+	# 	any_county_struggle = { has_struggle_phase_parameter = cheaper_to_convert_to_struggle_culture }
+	# }
 }
 
 is_struggle_parameter_active_secondary_character_involvement_involved_trigger = {

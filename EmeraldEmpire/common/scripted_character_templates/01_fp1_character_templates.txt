@@ -897,60 +897,61 @@
 
 ##################################################
 # #Raid-Trade Templates
-
-fp1_trade_partner_merchant = {
-	#General
-	age = { 20 50 }
-	faith = root.var:fp1_prime_trade_deal.faith
-	culture = root.var:fp1_prime_trade_deal.capital_county.culture
-	dynasty = none
-	#Education
-	random_traits_list = {
-		count = 1
-		education_stewardship_1 = {
-			weight = { base = 20 }
-		}
-		education_stewardship_2 = {
-			weight = { base = 30 }
-		}
-		education_stewardship_3 = {
-			weight = { base = 30 }
-		}
-		education_stewardship_4 = {
-			weight = { base = 20 }
-		}
-	}
-	#Personality
-	random_traits_list = {
-		count = 3
-		greedy = {}
-		diligent = {}
-		calm = {}
-		patient = {}
-		honest = {}
-		brave = {}
-		gregarious = {}
-		ambitious = {}
-		just = {}
-		trusting = {}
-	}
-	#Misc
-	random_traits = no
-	gender_female_chance = root_soldier_female_chance
-	#Skills
-	diplomacy = { min_template_low_skill max_template_average_skill }
-	martial = { min_template_low_skill min_template_average_skill }
-	stewardship = { min_template_decent_skill max_template_high_skill }
-	intrigue = { min_template_low_skill min_template_average_skill }
-	learning = { min_template_low_skill max_template_average_skill }
-	prowess = { min_template_low_skill min_template_average_skill }
-}
+#L5r Disabled
+# fp1_trade_partner_merchant = {
+# 	#General
+# 	age = { 20 50 }
+# 	faith = root.var:fp1_prime_trade_deal.faith
+# 	culture = root.var:fp1_prime_trade_deal.capital_county.culture
+# 	dynasty = none
+# 	#Education
+# 	random_traits_list = {
+# 		count = 1
+# 		education_stewardship_1 = {
+# 			weight = { base = 20 }
+# 		}
+# 		education_stewardship_2 = {
+# 			weight = { base = 30 }
+# 		}
+# 		education_stewardship_3 = {
+# 			weight = { base = 30 }
+# 		}
+# 		education_stewardship_4 = {
+# 			weight = { base = 20 }
+# 		}
+# 	}
+# 	#Personality
+# 	random_traits_list = {
+# 		count = 3
+# 		greedy = {}
+# 		diligent = {}
+# 		calm = {}
+# 		patient = {}
+# 		honest = {}
+# 		brave = {}
+# 		gregarious = {}
+# 		ambitious = {}
+# 		just = {}
+# 		trusting = {}
+# 	}
+# 	#Misc
+# 	random_traits = no
+# 	gender_female_chance = root_soldier_female_chance
+# 	#Skills
+# 	diplomacy = { min_template_low_skill max_template_average_skill }
+# 	martial = { min_template_low_skill min_template_average_skill }
+# 	stewardship = { min_template_decent_skill max_template_high_skill }
+# 	intrigue = { min_template_low_skill min_template_average_skill }
+# 	learning = { min_template_low_skill max_template_average_skill }
+# 	prowess = { min_template_low_skill min_template_average_skill }
+# }
 
 fp1_trade_partner_priest = {
 	#General
 	age = { 20 50 }
-	faith = root.var:fp1_prime_trade_deal.faith
-	culture = root.var:fp1_prime_trade_deal.capital_county.culture
+	#L5R Disabled
+	faith = root.faith
+	culture = root.culture
 	dynasty = none
 	#Education
 	random_traits_list = {
@@ -976,117 +977,117 @@ fp1_trade_partner_priest = {
 		count = 2
 		lustful = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = lustful }
+				root.faith = { trait_is_virtue = lustful }
 			}
 		}
 		chaste = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = chaste }
+				root.faith = { trait_is_virtue = chaste }
 			}
 		}
 		gluttonous = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = gluttonous }
+				root.faith = { trait_is_virtue = gluttonous }
 			}
 		}
 		temperate = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = temperate }
+				root.faith = { trait_is_virtue = temperate }
 			}
 		}
 		greedy = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = greedy }
+				root.faith = { trait_is_virtue = greedy }
 			}
 		}
 		generous = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = generous }
+				root.faith = { trait_is_virtue = generous }
 			}
 		}
 		wrathful = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = wrathful }
+				root.faith = { trait_is_virtue = wrathful }
 			}
 		}
 		calm = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = calm }
+				root.faith = { trait_is_virtue = calm }
 			}
 		}
 		patient = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = patient }
+				root.faith = { trait_is_virtue = patient }
 			}
 		}
 		impatient = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = impatient }
+				root.faith = { trait_is_virtue = impatient }
 			}
 		}
 		arrogant = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = arrogant }
+				root.faith = { trait_is_virtue = arrogant }
 			}
 		}
 		humble = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = humble }
+				root.faith = { trait_is_virtue = humble }
 			}
 		}
 		honest = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = honest }
+				root.faith = { trait_is_virtue = honest }
 			}
 		}
 		brave = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = brave }
+				root.faith = { trait_is_virtue = brave }
 			}
 		}
 		ambitious = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = ambitious }
+				root.faith = { trait_is_virtue = ambitious }
 			}
 		}
 		just = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = just }
+				root.faith = { trait_is_virtue = just }
 			}
 		}
 		trusting = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = trusting }
+				root.faith = { trait_is_virtue = trusting }
 			}
 		}
 		compassionate = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = compassionate }
+				root.faith = { trait_is_virtue = compassionate }
 			}
 		}
 		callous = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = callous }
+				root.faith = { trait_is_virtue = callous }
 			}
 		}
 		sadistic = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = sadistic }
+				root.faith = { trait_is_virtue = sadistic }
 			}
 		}
 		stubborn = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = stubborn }
+				root.faith = { trait_is_virtue = stubborn }
 			}
 		}
 		vengeful = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = vengeful }
+				root.faith = { trait_is_virtue = vengeful }
 			}
 		}
 		forgiving = {
 			trigger = {
-				root.var:fp1_prime_trade_deal.faith = { trait_is_virtue = forgiving }
+				root.faith = { trait_is_virtue = forgiving }
 			}
 		}
 	}
@@ -1103,58 +1104,58 @@ fp1_trade_partner_priest = {
 	learning = { min_template_decent_skill max_template_high_skill }
 	prowess = { min_template_low_skill min_template_average_skill }
 }
-
-fp1_trade_partner_spy = {
-	#General
-	age = { 20 50 }
-	faith = root.var:fp1_prime_trade_deal.faith
-	culture = root.var:fp1_prime_trade_deal.capital_county.culture
-	dynasty = none
-	#Education
-	random_traits_list = {
-		count = 1
-		education_intrigue_1 = {
-			weight = { base = 20 }
-		}
-		education_intrigue_2 = {
-			weight = { base = 30 }
-		}
-		education_intrigue_3 = {
-			weight = { base = 30 }
-		}
-		education_intrigue_4 = {
-			weight = { base = 20 }
-		}
-	}
-	#Personality
-	trait = deceitful
-	random_traits_list = {
-		count = 2
-		diligent = {}
-		calm = {}
-		patient = {}
-		arrogant = {}
-		brave = {}
-		gregarious = {}
-		shy = {}
-		ambitious = {}
-		arbitrary = {}
-		cynical = {}
-		paranoid = {}
-		callous = {}
-		stubborn = {}
-	}
-	#Misc
-	random_traits = no
-	gender_female_chance = root_soldier_female_chance
-	#Skills
-	diplomacy = { min_template_low_skill max_template_average_skill }
-	martial = { min_template_low_skill min_template_average_skill }
-	stewardship = { min_template_low_skill min_template_average_skill }
-	intrigue = { min_template_decent_skill max_template_high_skill }
-	learning = { min_template_low_skill max_template_average_skill }
-	prowess = { min_template_low_skill min_template_average_skill }
-}
+#L5R Disabled
+# fp1_trade_partner_spy = {
+# 	#General
+# 	age = { 20 50 }
+# 	faith = root.var:fp1_prime_trade_deal.faith
+# 	culture = root.var:fp1_prime_trade_deal.capital_county.culture
+# 	dynasty = none
+# 	#Education
+# 	random_traits_list = {
+# 		count = 1
+# 		education_intrigue_1 = {
+# 			weight = { base = 20 }
+# 		}
+# 		education_intrigue_2 = {
+# 			weight = { base = 30 }
+# 		}
+# 		education_intrigue_3 = {
+# 			weight = { base = 30 }
+# 		}
+# 		education_intrigue_4 = {
+# 			weight = { base = 20 }
+# 		}
+# 	}
+# 	#Personality
+# 	trait = deceitful
+# 	random_traits_list = {
+# 		count = 2
+# 		diligent = {}
+# 		calm = {}
+# 		patient = {}
+# 		arrogant = {}
+# 		brave = {}
+# 		gregarious = {}
+# 		shy = {}
+# 		ambitious = {}
+# 		arbitrary = {}
+# 		cynical = {}
+# 		paranoid = {}
+# 		callous = {}
+# 		stubborn = {}
+# 	}
+# 	#Misc
+# 	random_traits = no
+# 	gender_female_chance = root_soldier_female_chance
+# 	#Skills
+# 	diplomacy = { min_template_low_skill max_template_average_skill }
+# 	martial = { min_template_low_skill min_template_average_skill }
+# 	stewardship = { min_template_low_skill min_template_average_skill }
+# 	intrigue = { min_template_decent_skill max_template_high_skill }
+# 	learning = { min_template_low_skill max_template_average_skill }
+# 	prowess = { min_template_low_skill min_template_average_skill }
+# }
 
 fp1_trade_partner_warrior = {
 	#General

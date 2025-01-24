@@ -1866,7 +1866,8 @@ unreformed_or_syncretic_with_unreformed_trigger = {
 		faith = {
 			OR = {
 				religion = religion:unreformed_religion
-				has_doctrine = tenet_unreformed_syncretism
+				#L5R Disabled
+				# has_doctrine = tenet_unreformed_syncretism
 			}
 		}
 	}

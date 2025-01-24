@@ -2623,40 +2623,42 @@ travel_events_oltner_2.1100 = {
 		}
 	}
 
-	option = {
-		name = travel_events_oltner_2.1100.c
+	#L5R Disabled
+	# Sorry cheese lover, but there is none in rokugan :(
+	# option = {
+	# 	name = travel_events_oltner_2.1100.c
 		
-		create_artifact = {
-			name = fp2_cheese_artifact
-			description = fp2_cheese_artifact_desc
-			modifier = artifact_health_gain_1_modifier
-			modifier = artifact_attraction_opinion_negative_1_modifier
-			type = miscellaneous
-			visuals = pouch
-			save_scope_as = newly_created_artifact
-		}
+	# 	create_artifact = {
+	# 		name = fp2_cheese_artifact
+	# 		description = fp2_cheese_artifact_desc
+	# 		modifier = artifact_health_gain_1_modifier
+	# 		modifier = artifact_attraction_opinion_negative_1_modifier
+	# 		type = miscellaneous
+	# 		visuals = pouch
+	# 		save_scope_as = newly_created_artifact
+	# 	}
 
-		scope:newly_created_artifact = {
-			flag_as_trash_artifact = yes
-			set_variable = has_cheese_artifact
-			save_scope_as = cheese_artifact
-		}
+	# 	scope:newly_created_artifact = {
+	# 		flag_as_trash_artifact = yes
+	# 		set_variable = has_cheese_artifact
+	# 		save_scope_as = cheese_artifact
+	# 	}
 		
-		stress_impact = {
-			temperate = minor_stress_impact_gain
-			gluttonous = minor_stress_impact_loss
-		}
+	# 	stress_impact = {
+	# 		temperate = minor_stress_impact_gain
+	# 		gluttonous = minor_stress_impact_loss
+	# 	}
 
-		ai_chance = {
-			base = 25
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = temperate
-				}
-			}
-		}
-	}
+	# 	ai_chance = {
+	# 		base = 25
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				has_trait = temperate
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	option = {
 		name = travel_events_oltner_2.1100.d
