@@ -34,6 +34,9 @@
 	holding = castle_holding
 }
 419 = { #b_north_shinkyou
+	holding = church_holding
+}
+633 = { #b_never_sleeps_port_empty
 	holding = none
 }
 ###c_anshin_province
@@ -248,6 +251,9 @@
 	}
 }
 34 = {		#b_daidoji_training_grounds
+	holding = none
+}
+634 = {		#b_daidoji_training_grounds_empty
 	holding = none
 }
 ##d_kakita ###################################

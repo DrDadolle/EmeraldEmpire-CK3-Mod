@@ -435,6 +435,17 @@ shrine_to_memory = {
 	}
 }
 
+mouse_nest = {
+	county = c_nezumi_shinomen
+	barony = b_nezumi_shinomen_1
+
+	character_modifier = {
+		name = mouse_nest_effect_name
+		diplomacy = 2
+		fertility = 0.1
+	}
+}
+
 
 
 

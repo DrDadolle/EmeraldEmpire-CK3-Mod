@@ -167,6 +167,35 @@
 	religion = cult_amaterasu
 	holding = church_holding
 }
+###c_nezumi_shinomen
+641 = {		#b_nezumi_shinomen_1
+	culture = shinomen_nezumi
+	religion = great_dream
+	holding = tribal_holding
+}
+642 = {		#b_nezumi_shinomen_2
+	culture = shinomen_nezumi
+	religion = great_dream
+	holding = church_holding
+}
+# ##d_kaikoga ###################################
+# ###c_kaikoga_province
+# 406 = {		#b_shiro_kaikoga
+# 	culture = kaikoga
+# 	religion = seven_fortunes
+# 	holding = castle_holding
+
+# 	1123.1.1={
+# 		buildings = {
+# 			castle_02
+# 		}
+# 	}
+# }
+# 635 = {		#b_shiro_kaikoga_2
+# 	culture = kaikoga
+# 	religion = seven_fortunes
+# 	holding = church_holding
+# }
 ##d_south_shinomen ###################################
 ###c_south_shinomen_monastery_1
 412 = {		#b_south_shinomen_monastery_1

@@ -10,7 +10,7 @@ default_coastal_sea=coastal_sea
 4=plains
 5=plains
 6=plains
-7=wetlands
+7=plains
 8=hills
 9=wetlands
 10=plains
@@ -54,7 +54,8 @@ default_coastal_sea=coastal_sea
 43=farmlands
 44=mountains
 45=farmlands
-
+633=wetlands
+634=wetlands
 ###############
 ### Lion
 46=hills
@@ -125,7 +126,7 @@ default_coastal_sea=coastal_sea
 108=wetlands
 109=hills
 110=forest
-111=forest
+111=plains
 112=plains
 113=plains
 114=forest
@@ -142,6 +143,10 @@ default_coastal_sea=coastal_sea
 124=mountains
 125=mountains
 126=mountains
+636=plains
+637=forest
+638=forest
+639=plains
 ###############
 ### Moshi
 127=mountains
@@ -236,6 +241,7 @@ default_coastal_sea=coastal_sea
 202=plains
 203=mountains
 204=plains
+632=farmlands
 ###############
 ### Unicorn
 205=plains
@@ -336,6 +342,7 @@ default_coastal_sea=coastal_sea
 307=mountains
 308=mountains
 309=mountains
+640=mountains
 ###############
 ### Nekoma
 318=plains
@@ -377,6 +384,15 @@ default_coastal_sea=coastal_sea
 343=plains
 344=hills
 345=forest
+623=jungle
+624=jungle
+625=hills
+626=plains
+627=mountains
+628=hills
+629=mountains
+630=plains
+631=plains
 ###############
 ### Toritaka
 346=hills
@@ -401,6 +417,7 @@ default_coastal_sea=coastal_sea
 ###############
 ### Kaikoga
 406=forest
+635=mountains
 ###############
 ### Shika
 461=forest
@@ -524,3 +541,7 @@ default_coastal_sea=coastal_sea
 610=shadowlands_plains
 611=shadowlands_mountains
 612=shadowlands_hills
+###############
+### Nezumi
+641=mountains
+642=mountains

@@ -230,9 +230,10 @@ nezumi_religion = {
 			icon = great_dream
 			reformed_icon = great_dream_reformed
 
-			#L5R TODO : add at least 2 more
+			#L5R TODO : add at least 1 more
 			holy_site = shrine_to_memory
 			holy_site = repository_of_all_knowledge
+			holy_site = mouse_nest
 
 
 			doctrine = tenet_megaliths

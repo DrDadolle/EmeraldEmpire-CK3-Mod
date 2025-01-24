@@ -6,6 +6,9 @@
  shadowlands_plains_advantage:0 "[command_modifier_i|E][advantage|E] in Shadowlands Plains"
  shadowlands_plains_supply_limit_mult:0 "$MOD_SUPPLY_LIMIT_MULT$ in Shadowlands Plains"
  shadowlands_plains_levy_size:0 "$MOD_LEVY_SIZE$ in Shadowlands Plains"
+ shadowlands_plains_attrition_mult:1 "[command_modifier_i|E][attrition|E] Taken in Shadowlands Plains"
+ shadowlands_plains_tax_mult:0 "$MOD_TAX_MULT$ in Shadowlands Plains"
+ shadowlands_plains_development_growth_factor:1 "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ in Shadowlands Plains ([terrain|E])"
 
  shadowlands_forest:0 "Shadowlands Forest"
  terrain_shadowlands_forest:0 "Shadowlands Forest"
@@ -14,6 +17,9 @@
  shadowlands_forest_advantage:0 "[command_modifier_i|E][advantage|E] in Shadowlands Forest"
  shadowlands_forest_supply_limit_mult:0 "$MOD_SUPPLY_LIMIT_MULT$ in Shadowlands Forest"
  shadowlands_forest_levy_size:0 "$MOD_LEVY_SIZE$ in Shadowlands Forest"
+ shadowlands_forest_attrition_mult:1 "[command_modifier_i|E][attrition|E] Taken in Shadowlands Forest"
+ shadowlands_forest_tax_mult:0 "$MOD_TAX_MULT$ in Shadowlands Forest"
+ shadowlands_forest_development_growth_factor:1 "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ in Shadowlands Forest ([terrain|E])"
 
  shadowlands_hills:0 "Shadowlands Hills"
  terrain_shadowlands_hills:0 "Shadowlands Hills"
@@ -22,6 +28,9 @@
  shadowlands_hills_advantage:0 "[command_modifier_i|E][advantage|E] in Shadowlands Hills"
  shadowlands_hills_supply_limit_mult:0 "$MOD_SUPPLY_LIMIT_MULT$ in Shadowlands Hills"
  shadowlands_hills_levy_size:0 "$MOD_LEVY_SIZE$ in Shadowlands Hills"
+ shadowlands_hills_attrition_mult:1 "[command_modifier_i|E][attrition|E] Taken in Shadowlands Hills"
+ shadowlands_hills_tax_mult:0 "$MOD_TAX_MULT$ in Shadowlands Hills"
+ shadowlands_hills_development_growth_factor:1 "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ in Shadowlands Hills ([terrain|E])"
 
  shadowlands_mountains:0 "Shadowlands Mountains"
  terrain_shadowlands_mountains:0 "Shadowlands Mountains"
@@ -30,6 +39,9 @@
  shadowlands_mountains_advantage:0 "[command_modifier_i|E][advantage|E] in Shadowlands Mountains"
  shadowlands_mountains_supply_limit_mult:0 "$MOD_SUPPLY_LIMIT_MULT$ in Shadowlands Mountains"
  shadowlands_mountains_levy_size:0 "$MOD_LEVY_SIZE$ in Shadowlands Mountains"
+ shadowlands_mountains_attrition_mult:1 "[command_modifier_i|E][attrition|E] Taken in Shadowlands Mountains"
+ shadowlands_mountains_tax_mult:0 "$MOD_TAX_MULT$ in Shadowlands Mountains"
+ shadowlands_mountains_development_growth_factor:1 "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ in Shadowlands Mountains ([terrain|E])"
 
  shadowlands_wetlands:0 "Shadowlands Wetlands"
  terrain_shadowlands_wetlands:0 "Shadowlands Wetlands"
@@ -38,6 +50,9 @@
  shadowlands_wetlands_advantage:0 "[command_modifier_i|E][advantage|E] in Shadowlands Wetlands"
  shadowlands_wetlands_supply_limit_mult:0 "$MOD_SUPPLY_LIMIT_MULT$ in Shadowlands Wetlands"
  shadowlands_wetlands_levy_size:0 "$MOD_LEVY_SIZE$ in Shadowlands Wetlands"
+ shadowlands_wetlands_attrition_mult:1 "[command_modifier_i|E][attrition|E] Taken in Shadowlands Wetlands"
+ shadowlands_wetlands_tax_mult:0 "$MOD_TAX_MULT$ in Shadowlands Wetlands"
+ shadowlands_wetlands_development_growth_factor:1 "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ in Shadowlands Wetlands ([terrain|E])"
 
 # Events
  religious_decision.0201.shadowlands:0 "The nightmarish, corrupted wastelands of [shadowlands_plains_location.GetNameNoTier]."

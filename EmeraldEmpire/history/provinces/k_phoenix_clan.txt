@@ -185,9 +185,13 @@
 	}
 }
 111 = {		#b_shadow_forest_village
-	culture = shiba
-	religion = seven_fortunes
 	holding = city_holding
+}
+637 = {		#b_shiba_artisan_academy_empty
+	holding = church_holding
+}
+638 = {		#b_shadow_forest_city_empty
+	holding = none
 }
 ###c_nejiro_province
 113 = {		#b_shiro_shiba
@@ -212,9 +216,10 @@
 	holding = church_holding
 }
 116 = {		#b_nejiro_mura
-	culture = shiba
-	religion = seven_fortunes
 	holding = city_holding
+}
+636 = {		#b_nejiro_mura_empty
+	holding = none
 }
 ##d_isawa ###################################
 ###c_aoijiroi_province
@@ -296,7 +301,9 @@
 		}
 	}
 }
-
+639 = {		#b_eight_guardian_temple_empty
+	holding = none
+}
 ##d_kaito ###################################
 ###c_garanto_province
 124 = {		#b_sanpuku_seido
