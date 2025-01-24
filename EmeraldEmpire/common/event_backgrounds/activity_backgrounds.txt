@@ -373,6 +373,35 @@
 		ambience = "event:/SFX/Events/Backgrounds/desert_day"
 	}
 
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			OR = {
+				NOT = {
+					scope:host.location = scope:activity.activity_location
+				}
+				AND = {
+					exists = scope:activity.special_guest:honorary_guest.location
+					NOT = {
+						scope:activity.special_guest:honorary_guest.location ?= scope:activity.activity_location
+					}
+				}
+				AND = {
+					exists = scope:activity.special_guest:honorary_guest_regular.location
+					NOT = {
+						scope:activity.special_guest:honorary_guest_regular.location ?= scope:activity.activity_location
+					}
+				}
+			}
+			scope:host.location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
 	background = { #wetlands
 		trigger = {
 			OR = {
@@ -792,6 +821,19 @@ activity_gruesome_festival = {
 		ambience = "event:/SFX/Events/Backgrounds/desert_day"
 	}
 
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
 	background = { #wetlands
 		trigger = {
 			NOT = { scope:host.location = scope:activity.activity_location }
@@ -1050,6 +1092,19 @@ activity_playdate = {
 		reference = "gfx/interface/illustrations/event_scenes/drylands.dds"
 		environment = "environment_event_desert"
 		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
 
 	background = { #wetlands
@@ -1340,6 +1395,19 @@ activity_witch_ritual = {
 		ambience = "event:/SFX/Events/Backgrounds/desert_day"
 	}
 
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
 	background = { #wetlands
 		trigger = {
 			NOT = { scope:host.location = scope:activity.activity_location }
@@ -1598,6 +1666,19 @@ activity_pilgrimage = {
 		reference = "gfx/interface/illustrations/event_scenes/drylands.dds"
 		environment = "environment_event_desert"
 		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
 
 	background = { #wetlands
@@ -1969,6 +2050,19 @@ activity_hunt = {
 		ambience = "event:/SFX/Events/Backgrounds/desert_day"
 	}
 
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
 	background = { #wetlands
 		trigger = {
 			NOT = { scope:host.location = scope:activity.activity_location }
@@ -2114,6 +2208,16 @@ activity_hunt = {
 		reference = "gfx/interface/illustrations/event_scenes/drylands.dds"
 		environment = "environment_event_desert"
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
+	}
+
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			activity_location = { graphical_shadowlands_trigger = yes }
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
 
 	background = {
@@ -2288,6 +2392,19 @@ activity_tour = {
 		reference = "gfx/interface/illustrations/event_scenes/drylands.dds"
 		environment = "environment_event_desert"
 		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
 
 	background = { #wetlands
@@ -2990,6 +3107,35 @@ activity_wedding = {
 		reference = "gfx/interface/illustrations/event_scenes/drylands.dds"
 		environment = "environment_event_desert"
 		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			OR = {
+				NOT = {
+					scope:host.location = scope:activity.activity_location
+				}
+				AND = {
+					exists = scope:activity.special_guest:spouse_2.location
+					NOT = {
+						scope:activity.special_guest:spouse_2.location ?= scope:activity.activity_location
+					}
+				}
+				AND = {
+					exists = scope:activity.special_guest:spouse_1.location
+					NOT = {
+						scope:activity.special_guest:spouse_1.location ?= scope:activity.activity_location
+					}
+				}
+			}
+			scope:host.location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
 
 	background = { #wetlands

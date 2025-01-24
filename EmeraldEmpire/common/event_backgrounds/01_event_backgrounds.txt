@@ -1432,6 +1432,29 @@ wilderness = {
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
 	}
 
+
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					location = {
+						graphical_shadowlands_trigger = yes
+					}
+				}
+			}
+			trigger_else = {
+				location = {
+					graphical_shadowlands_trigger = yes
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
 	background = { #wetlands
 		trigger = {
 			trigger_if = {
@@ -1685,6 +1708,18 @@ wilderness_scope = {
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
 	}
 
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			scope:background_wilderness_scope = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
 	background = { #wetlands
 		trigger = {
 			scope:background_wilderness_scope = {
@@ -1885,6 +1920,16 @@ wilderness_activity = {
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
 	}
 
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			scope:activity.activity_location ?= { graphical_shadowlands_trigger = yes }
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
 	background = { #wetlands
 		trigger = {
 			scope:activity.activity_location ?= { graphical_wilderness_wetlands_trigger = yes }
@@ -2043,6 +2088,15 @@ drylands = { #Formerly Desert
 		reference = "gfx/interface/illustrations/event_scenes/drylands.dds"
 		environment = "environment_event_desert"
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
+	}
+}
+
+#L5R Added
+shadowlands = { #L5R Shadowlands
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
 }
 
@@ -2468,6 +2522,28 @@ terrain = {
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
 	}
 
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					location = {
+						graphical_shadowlands_trigger = yes
+					}
+				}
+			}
+			trigger_else = {
+				location = {
+					graphical_shadowlands_trigger = yes
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
 	background = { #Wetlands, Winter
 		trigger = {
 			location = {
@@ -2855,6 +2931,18 @@ terrain_scope = {
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
 	}
 
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			scope:background_terrain_scope = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
 	background = { #Wetlands, Winter
 		trigger = {
 			scope:background_terrain_scope = {
@@ -3108,6 +3196,19 @@ terrain_activity = {
 		reference = "gfx/interface/illustrations/event_scenes/drylands.dds"
 		environment = "environment_event_desert"
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
+	}
+
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			exists = scope:activity.activity_location
+			scope:activity.activity_location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
 
 	background = { #Wetlands, Winter
@@ -3447,6 +3548,18 @@ terrain_travel = {
 		reference = "gfx/interface/illustrations/event_scenes/drylands.dds"
 		environment = "environment_event_desert"
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
+	}
+
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
 
 	background = { #wetlands, winter
@@ -7163,6 +7276,16 @@ ep2_hunt_activity_camp = {
 		reference = "gfx/interface/illustrations/event_scenes/drylands.dds"
 		environment = "environment_event_desert"
 		ambience = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ep2_event_grand_hunt_praire"
+	}
+
+	#L5R Added
+	background = { #L5R Shadowlands
+		trigger = {
+			scope:activity.activity_location = { graphical_shadowlands_trigger = yes }
+		}
+		reference = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
 
 	background = { # Camp

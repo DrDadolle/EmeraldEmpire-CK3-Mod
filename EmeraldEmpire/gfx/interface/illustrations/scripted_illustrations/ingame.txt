@@ -6849,7 +6849,7 @@ character_location_exterior = {
 
 	# L5R Added
 	texture = {
-		reference = "terrain_types/shadowlands_plains.dds"
+		reference = "event_scenes/shadowlands_plains.dds"
 
 		trigger = {
 			NOT = {

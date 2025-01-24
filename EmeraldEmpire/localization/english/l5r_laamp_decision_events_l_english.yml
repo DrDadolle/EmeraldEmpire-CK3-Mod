@@ -1,0 +1,9 @@
+﻿l_english:
+ 
+  #Unique Location
+  ep3_laamp_decision_event.1000.desc_intro_returned_otosan_uchi_01: "At the vantage point, I look out over [visiting_location.GetTitle.GetNameNoTierNoTooltip] in an effort to grasp this jewel of [visiting_location.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip].\n\nCultures from all over are represented here, among the [visiting_location.GetCulture.GetNameNoTooltip], truly a melting pot of traditions and customs.\n\nOver by the Forbidden City, a delegation appears to have started, judging from the faint shouts of the guards and the bright colors of the noble."
+
+ ep3_laamp_decision_event.1000.desc_intro_otosan_uchi: "As we pass through arches and colonnades, we enter the great city of [visiting_location.GetBaronyNameExplicitlyNoTooltip]. It is no wonder this is the jewel in the crown of [visiting_location.GetCounty.GetTitle.GetHolder.GetTopLiege.GetTitledFirstName], and I look yonder, through to the heart of the city."
+
+ ep3_laamp_decision_event.1000.desc_outro_revisit_otosan_uchi: "\n\nHaving been here before, I still find myself feeling quite small as I observe the Forbidden City on the horizon."
+ ep3_laamp_decision_event.1000.desc_outro_otosan_uchi: "\n\nThe Forbidden City readily available on the horizon, I start to feel quite small, in awe of this palace."

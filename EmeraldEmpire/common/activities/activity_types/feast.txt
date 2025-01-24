@@ -1738,6 +1738,35 @@ activity_feast = {
 		environment = "environment_event_desert"
 		ambience = "event:/SFX/Events/Backgrounds/desert_day"
 	}
+	
+	#L5R Added
+	background = { #Shadowlands
+		trigger = {
+			OR = {
+				NOT = {
+					scope:host.location = scope:activity.activity_location
+				}
+				AND = {
+					exists = scope:activity.special_guest:honorary_guest.location
+					NOT = {
+						scope:activity.special_guest:honorary_guest.location ?= scope:activity.activity_location
+					}
+				}
+				AND = {
+					exists = scope:activity.special_guest:honorary_guest_regular.location
+					NOT = {
+						scope:activity.special_guest:honorary_guest_regular.location ?= scope:activity.activity_location
+					}
+				}
+			}
+			scope:host.location = {
+				graphical_shadowlands_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/shadowlands_plains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
 
 	background = { #wetlands
 		trigger = {
@@ -1766,7 +1795,7 @@ activity_feast = {
 		environment = "environment_event_bp1_wetlands" 
 		ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
 	}
-
+	
 	background = { #jungle
 		trigger = {
 			OR = {
