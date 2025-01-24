@@ -401,6 +401,8 @@ hunt_activity_standard_game_effect = {
 		5 = { # Fox
 			trigger = {
 				$PROVINCE$ = { hunt_animal_fox_trigger = yes }
+				#L5R Added
+				NOT = { $HUNTER$.culture = culture:kitsune }
 				NOT = { exists = scope:big_local_game }
 			}
 			set_variable = { name = animal_type value = flag:fox }

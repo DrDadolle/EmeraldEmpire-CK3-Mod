@@ -25,12 +25,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 # TO TEST
-[11:27:30][E][jomini_dynamicdescription.cpp:57]: Unrecognized loc key religious_decision.0002.desc.end_no_effect. Near file: events/religion_events/religious_decision_events.txt line: 138 (religious_decision.0002)
-[11:27:30][E][jomini_dynamicdescription.cpp:66]: Unrecognized loc key religious_decision.0002.no_effect.zealous. file: events/religion_events/religious_decision_events.txt line: 472 (religious_decision.0002:option)
-[11:27:30][E][jomini_dynamicdescription.cpp:66]: Unrecognized loc key religious_decision.0002.no_effect. file: events/religion_events/religious_decision_events.txt line: 479 (religious_decision.0002:option)
-[11:27:31][E][jomini_dynamicdescription.cpp:66]: Unrecognized loc key stress_threshold.1503.a.f. file: CEventOptionDesc line: 139
-[11:27:31][E][jomini_dynamicdescription.cpp:66]: Unrecognized loc key stress_threshold.1503.a.f. file: CEventOptionDesc line: 139
-[11:27:33][E][jomini_script_argument.cpp:192]: Compiling source for hunt_activity_standard_game_effect failed for unknown arguments: HUNTER. At common/scripted_effects
+
 
 ## CK3 1.13.* patch
 - update vanilla travel background for acitivites to add shadowlands bg
