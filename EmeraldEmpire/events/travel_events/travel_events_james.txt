@@ -6909,10 +6909,10 @@ travel_events.4037 = {
 	}
 	cooldown = { years = 10 }
 	trigger = {
+		is_available_travelling = yes
+        is_playable_character = yes
+		is_location_valid_for_travel_event_on_land = yes
 		#L5R Modified
-		# is_available_travelling = yes
-        # is_playable_character = yes
-		# is_location_valid_for_travel_event_on_land = yes
 		# OR = {
 		# 	AND = {
 		# 		religion = { is_in_family = rf_eastern }
@@ -7121,21 +7121,19 @@ travel_events.4038 = {
 	}
 	cooldown = { years = 10 }
 	trigger = {
-		#L5R Disabled
-		always = no
-		#L5R TODO
-		# is_available_travelling = yes
-        # is_playable_character = yes
-		# is_location_valid_for_travel_event_on_land = yes
-		# location = {
-		# 	# Make sure this is a church held by a theocratic or lay clergy character
-		# 	has_holding = yes
-		# 	has_holding_type = church_holding
-		# 	barony = { has_wrong_holding_type = no }
-		# 	# Make sure you don't bother player lay clergy characters
-		# 	barony.holder = { is_ai = yes }
-		# 	NOT = { barony.holder = root }
-		# }
+		is_available_travelling = yes
+        is_playable_character = yes
+		is_location_valid_for_travel_event_on_land = yes
+		location = {
+			# Make sure this is a church held by a theocratic or lay clergy character
+			has_holding = yes
+			has_holding_type = church_holding
+			barony = { has_wrong_holding_type = no }
+			# Make sure you don't bother player lay clergy characters
+			barony.holder = { is_ai = yes }
+			NOT = { barony.holder = root }
+		}
+		#L5R Modified
 		# OR = {
 		# 	AND = {
 		# 		faith = { has_doctrine_parameter = eastern_syncretic_actor_opinion_active }
@@ -7158,6 +7156,16 @@ travel_events.4038 = {
 		# 		location.religion = religion:judaism_religion
 		# 	}
 		# }
+		OR = {
+			AND = {
+				religion = { is_in_family = rf_rokugani }
+				location.faith = { has_doctrine_parameter = rokugan_syncretic_actor_opinion_active }
+			}
+			AND = {
+				religion = { is_in_family = rf_shadowlands }
+				location.faith = { has_doctrine_parameter = shadowlands_syncretic_actor_opinion_active }
+			}
+		}
 	}
 	immediate = {
 		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
