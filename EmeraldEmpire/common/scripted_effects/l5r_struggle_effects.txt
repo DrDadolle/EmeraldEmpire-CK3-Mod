@@ -52,3 +52,36 @@ spawn_army_invasion_crab_clan = {
 		modifier = shadowlands_invasion_leader_modifier
 	}
 }
+
+
+shadowlands_devastate_county_effect = {
+	change_development_level = {
+		subtract = scope:county.development_level
+		multiply = 0.5
+		floor = yes
+	}
+}
+
+shadowlands_culture_religion_replacement_effect = {
+	#Replace all Crab territories .
+	custom_tooltip = shadowlands_culture_religion_replacement_effect.tt
+	hidden_effect = {
+		every_sub_realm_county = {
+			limit = {
+				title_capital_county.title_province = { geographical_region = world_rokugan_crab }
+				NOR = {
+					has_cultural_pillar = heritage_spider
+					has_cultural_pillar = heritage_nezumi
+				}
+			}
+			set_county_culture = $INVADER$.culture
+			#Switch 'em to $INVADER$'s faith is any Jigoku
+			if = {
+				limit = {
+					$INVADER$.faith.religion = religion:jigoku_religion
+				}
+				set_county_faith = $INVADER$.faith
+			}
+		}
+	}
+}

@@ -187,6 +187,7 @@ found_minor_clan_decision = {
 	}
 }
 
+
 ##################################################
 # CLAIM DECISIONS
 ##################################################
@@ -792,5 +793,3 @@ decision_restore_snake_clan = {
 # Avenge Snake Clan
 ##################################################
 #TODO only if flag:restore_snake_clan = yes
-
-

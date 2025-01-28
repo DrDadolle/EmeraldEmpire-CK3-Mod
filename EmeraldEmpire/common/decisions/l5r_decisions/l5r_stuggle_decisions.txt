@@ -1,4 +1,8 @@
-﻿
+﻿##################################################
+# Shadowlands
+##################################################
+# Launch special war against crab clan
+##################################################
 decision_invade_crab_clan = {
 	title = decision_invade_crab_clan
 	picture = {
@@ -78,7 +82,7 @@ decision_invade_crab_clan = {
 			add_character_flag = {
 				flag =  declared_shadowlands_invasion_already
 				# Block it for 10 years, for immortal characters
-				years = 10
+				years = 20
 			}
 		}
 
@@ -88,4 +92,252 @@ decision_invade_crab_clan = {
 			spawn_army_invasion_crab_clan = yes
 		}
 	}
+}
+
+
+##################################################
+# NEZUMI
+##################################################
+# Restore the One Tribe
+##################################################
+# Taken from shadowlands possible endings, cause it is limited to 3...
+# Special Struggle Ender !
+struggle_shadowlands_ending_nezumi_restauration = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_phoenix.dds"
+	}
+
+
+	decision_group_type = l5r_clan
+	sort_order = 100
+
+	title = struggle_shadowlands_ending_nezumi_restauration
+	desc = struggle_shadowlands_ending_nezumi_restauration_desc
+	selection_tooltip = struggle_shadowlands_ending_nezumi_restauration_tooltip
+	confirm_text = decision_one_tribe_restoration
+
+	# confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
+	# is_invisible = yes
+
+	ai_check_interval = 12
+
+	is_shown = {
+		is_landless_adventurer = no
+		culture = { has_cultural_pillar = heritage_nezumi}
+	}
+
+	is_valid = {
+		custom_tooltip = {
+			text = struggle_shadowlands_ending_nezumi_restauration_decision_correct_phase_tt
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = shadowlands_struggle
+				is_struggle_phase = struggle_shadowlands_phase_dormant
+			}
+		}
+		# Is a nezumi with appropriate faith
+		religion = { this = religion:nezumi_religion }
+		# Faith is reformed
+		custom_description = {
+			text = faith_is_reformed
+			subject = root
+			faith = { NOT = { has_doctrine_parameter = unreformed } }
+		}
+
+
+		# Very prestigious
+		prestige_level >= 4
+
+		# Only a king
+		# for 5 years
+		AND = {
+			highest_held_title_tier = tier_kingdom
+			primary_title =  {
+				tier >= tier_kingdom
+				title_held_years >= 5
+			}
+		}
+
+		# Control more than  than 70% of Shadowlands
+		custom_tooltip = {
+			text = struggle_shadowlands_ending_nezumi_restauration_decision_region_tt
+			struggle_shadowlands_spider_ending_percent_trigger = yes
+		}
+
+
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+
+	effect = {
+		add_prestige = 2500
+		dynasty = { add_dynasty_prestige = 1500 }
+		dynasty = { add_dynasty_prestige_level = 1 }
+		give_nickname = nick_the_nezumi_unifier
+
+		#create a new empire title
+		show_as_tooltip = {
+			get_title = title:e_the_one_tribe
+			set_primary_title_to = title:e_the_one_tribe
+		}
+
+		#L5R update slightly the custom_tooltip I guess
+		show_as_tooltip = {
+			every_held_title = {
+				custom = create_title_every_held_kingdom
+				limit = {
+					tier = tier_kingdom
+				}
+				custom_tooltip = create_custom_empire_de_jure_changes
+			}
+		}
+
+		# Taken from create_custom_empire_effect
+		hidden_effect = {
+			save_scope_as = founder
+
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+
+			get_title = title:e_the_one_tribe
+			set_primary_title_to = title:e_the_one_tribe
+
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				if = {
+					limit = {
+						#Check if you need to notify a player
+						exists = empire
+						empire = {
+							exists = holder
+							holder = {
+								NOT = { this = root }
+								is_ai = no
+							}
+						}
+					}
+					add_to_temporary_list = kingdoms_for_notification
+					root = {
+						save_temporary_scope_value_as = {
+							name = send_notifications
+							value = yes
+						}
+					}
+				}
+				set_de_jure_liege_title = title:e_the_one_tribe
+			}
+	
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = title:e_the_one_tribe
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			every_player = {
+				if = {
+					limit = {
+						top_liege = scope:founder
+						NOT = { this = root }
+					}
+					trigger_event = major_decisions.1104
+				}
+				else_if = {
+					#Notify any players who lose de jure territory
+					limit = {
+						exists = scope:send_notifications
+						NOT = { this = root }
+						NOT = { top_liege = scope:founder }
+						any_held_title = {
+							any_in_de_jure_hierarchy = {
+								continue = {
+									tier > tier_kingdom
+								}
+								tier = tier_kingdom
+								is_in_list = kingdoms_for_notification
+							}
+						}
+					}
+					every_held_title = {
+						every_in_de_jure_hierarchy = {
+							continue = {
+								tier > tier_kingdom
+							}
+							limit = {
+								tier = tier_kingdom
+								is_in_list = kingdoms_for_notification
+							}
+							add_to_list = notification_titles
+						}
+					}
+					if = {
+						limit = {
+							any_in_list = {
+								list = notification_titles
+								count > 0
+							}
+						}
+						trigger_event = major_decisions.1105
+					}
+				}
+			}
+
+		}
+
+		gain_heroic_legend_seed_tooltip_effect = yes
+		hidden_effect = {
+			legend_seed_new_title_effect = yes
+		}
+
+		struggle:shadowlands_struggle = {
+			end_struggle = yes
+		}
+
+		root = {
+			save_scope_as = nezumi_restorator
+		}
+
+		every_player = { #Global News Announcement
+			trigger_event = shadowlands_struggle.1003
+		}
+	}
+
+	ai_check_interval = 36
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+	
 }
