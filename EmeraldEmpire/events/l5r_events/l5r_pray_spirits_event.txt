@@ -52,8 +52,6 @@ l5r_pray_spirit.0001 = { #Prayer to the Air Kami by the Realm Priest
 		NOT = { has_character_flag = flag_prayed_spirits }
 	}
 
-
-	#L5R TODO : what's this for ?
     weight_multiplier = {
 		base = 1
 	}

@@ -159,7 +159,7 @@ on_game_start_after_lobby = {
 		# L5R Added
 		
 		## Special Shinsei Last hope Modifier
-		#L5R TODO depends on date + add special event to remove the modifier when hold by not crab (as per the prophecy "Shinsei prophesized that while the Crab Clan protected the valley, it would remain pure of Taint")
+		#L5R depends on date + add special event to remove the modifier when hold by not crab (as per the prophecy "Shinsei prophesized that while the Crab Clan protected the valley, it would remain pure of Taint")
 		title:c_shinsei_last_hope.title_province = { add_province_modifier = shinsei_last_hope_modifier }
 
 		# L5R END

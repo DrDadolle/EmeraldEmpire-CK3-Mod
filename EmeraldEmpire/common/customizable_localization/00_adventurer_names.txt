@@ -922,23 +922,23 @@
 			house ?= { save_scope_as = new_landless_adventurer_house }
 			location ?= { save_scope_as = new_landless_adventurer_location }
 		}
-		#L5R Disabled
-		#L5R TODO : for shadowlands adventurers
-		# trigger = {
-		# 	OR = {
-		# 		NOT = { exists = scope:new_landless_adventurer }
-		# 		scope:new_landless_adventurer ?= {
-		# 			location = {
-		# 				NOR = {
-		# 					geographical_region = world_africa
-		# 					geographical_region = world_india
-		# 					geographical_region = world_burma
-		# 				}
-		# 			}
-		# 			ai_compassion < 0
-		# 		}
-		# 	}
-		# }
+		#L5R Modified
+		trigger = {
+			OR = {
+				NOT = { exists = scope:new_landless_adventurer }
+				scope:new_landless_adventurer ?= {
+					location = {
+						geographical_region = world_shadowlands
+						# NOR = {
+						# 	geographical_region = world_africa
+						# 	geographical_region = world_india
+						# 	geographical_region = world_burma
+						# }
+					}
+					ai_compassion < 0
+				}
+			}
+		}
 		localization_key = ogres
 	}
 	#L5R Disabled

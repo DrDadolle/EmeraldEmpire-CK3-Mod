@@ -221,7 +221,7 @@ bleach_hair_white_crane_decision = {
 	effect = {
 		send_interface_toast = {
 			title = msg_bleached_hair_white
-			left_icon = root # TODO crane icon ???
+			left_icon = root
 			add_trait = bleached_white_hair
 		}
 	}
@@ -233,7 +233,6 @@ bleach_hair_white_crane_decision = {
 		always = yes
 	}
 
-	# TODO AI
 	ai_will_do = {
 		base = 30
 	}

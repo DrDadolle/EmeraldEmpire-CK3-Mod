@@ -771,9 +771,8 @@ grab_mythical_founder_effect = {
 				10 = { #hiruma
 					trigger = {
 						OR = {
-							#L5R TODO add future old Hiruma castle
-							# root.primary_title = title:c_byzantion
-							root.primary_title = title:d_hiruma
+							root.primary_title = title:c_shiro_hiruma
+							root.primary_title = title:c_hiruma_castle
 						}
 					}
 					set_variable = { name = mythical_ancestor_var value = flag:hiruma }

@@ -690,33 +690,39 @@ great_holy_war_target_kingdom_weight = {
 		# Rokugan
 		# world_rokugan_crane								# heartlands
 		# world_rokugan_imperial							# heartlands
-		# rokugan_lion								# frontier
+		# world_rokugan_lion								# frontier
 		# world_rokugan_scorpion							# frontier
-		# world_rokugan_phoenix							# frontier
-		# world_rokugan_dragon							# frontier
-		# world_rokugan_unicorn							# fringe
+		# world_rokugan_phoenix								# frontier
+		# world_rokugan_dragon								# frontier
+		# world_rokugan_unicorn								# fringe
 		# world_rokugan_crab								# fringe
 		# world_rokugan_shinomen_mori						# fringe
 		# world_rokugan_spice_and_silk_isles				# fringe
 
 		# Gaijin
 		# world_rokugan_unicorn 							# heartlands
-		# world_rokugan_dragon							# frontier
+		# world_rokugan_dragon								# frontier
 		# world_rokugan_shinomen_mori						# frontier
-		# rokugan_lion								# fringe
+		# world_rokugan_lion								# fringe
 		# world_rokugan_scorpion							# fringe
 
-		# Jigoku TODO to change with adding shadowlands provinces
-		# world_rokugan_crab								# heartlands
-		# world_rokugan_crane								# frontier
-		# world_rokugan_scorpion							# frontier
+		# Nezumi
+		# world_shadowlands_twilight_mountains 				# heartlands
+		# world_shadowlands_earthquake_bay					# frontier
 		# world_rokugan_shinomen_mori						# frontier
-		#  rokugan_lion								# fringe
-		#  world_rokugan_imperial							# fringe
-		#  world_rokugan_unicorn							# fringe
-		#  world_rokugan_phoenix							# stretch
-		#  world_rokugan_dragon							# stretch
-		#  world_rokugan_spice_and_silk_isles				# stretch
+		# world_rokugan_crab_clan							# fringe
+		# world_shadowlands_festering_pit					# fringe
+
+		# Jigoku TODO to change with adding shadowlands provinces
+		# world_shadowlands									# heartlands
+		# world_rokugan_crab_clan							# frontier
+		# world_rokugan_shinomen_mori						# frontier
+		# world_rokugan_crane								# fringe
+		# world_rokugan_scorpion							# fringe
+		# world_rokugan_unicorn								# fringe
+		# world_rokugan_lion								# stretch
+		# world_rokugan_imperial							# stretch
+		# world_rokugan_spice_and_silk_isles				# stretch
 
 	# }
 
@@ -812,12 +818,50 @@ great_holy_war_target_kingdom_weight = {
 		}
 		add = ghw_target_fringe
 	}
+	#Nezumi heartlands
+	else_if = {
+		limit = {
+			scope:the_faith.religion = religion:nezumi_religion
+			title_capital_county.title_province = { 
+				geographical_region = world_shadowlands_twilight_mountains
+				#L5R  TODO special custom region for shinomen nezumi holy site ?
+			}
+		}
+		add = ghw_target_heartlands
+	}
+	# Nezumi frontier
+	else_if = {
+		limit = {
+			scope:the_faith.religion = religion:nezumi_religion
+			title_capital_county.title_province = {
+				OR = {
+					geographical_region = world_shadowlands_earthquake_bay
+					geographical_region = world_rokugan_shinomen_mori
+				}
+			}
+		}
+		add = ghw_target_frontier
+	}
+	# Nezumi fringe
+	else_if = {
+		limit = {
+			scope:the_faith.religion = religion:nezumi_religion
+			title_capital_county.title_province = {
+				OR = {
+					geographical_region = world_rokugan_crab_clan
+					geographical_region = world_shadowlands_festering_pit
+				}
+			}
+		}
+		add = ghw_target_fringe
+	}
+
 	#Jigoku heartlands
 	else_if = {
 		limit = {
 			scope:the_faith.religion = religion:jigoku_religion
 			title_capital_county.title_province = { 
-					geographical_region = world_rokugan_crab
+					geographical_region = world_shadowlands
 			}
 		}
 		add = ghw_target_heartlands
@@ -828,8 +872,7 @@ great_holy_war_target_kingdom_weight = {
 			scope:the_faith.religion = religion:jigoku_religion
 			title_capital_county.title_province = {
 				OR = {
-					geographical_region = world_rokugan_crane
-					geographical_region = world_rokugan_scorpion
+					geographical_region = world_rokugan_crab_clan
 					geographical_region = world_rokugan_shinomen_mori
 				}
 			}
@@ -842,8 +885,8 @@ great_holy_war_target_kingdom_weight = {
 			scope:the_faith.religion = religion:jigoku_religion
 			title_capital_county.title_province = {
 				OR = {
-					geographical_region = rokugan_lion
-					geographical_region = world_rokugan_imperial
+					geographical_region = world_rokugan_crane
+					geographical_region = world_rokugan_scorpion
 					geographical_region = world_rokugan_unicorn
 				}
 			}
@@ -856,8 +899,8 @@ great_holy_war_target_kingdom_weight = {
 			scope:the_faith.religion = religion:jigoku_religion
 			title_capital_county.title_province = {
 				OR = {
-					geographical_region = world_rokugan_phoenix
-					geographical_region = world_rokugan_dragon
+					geographical_region = world_rokugan_lion
+					geographical_region = world_rokugan_imperial
 					geographical_region = world_rokugan_spice_and_silk_isles
 				}
 			}

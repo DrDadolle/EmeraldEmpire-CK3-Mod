@@ -29,7 +29,6 @@ found_major_clan_decision = {
 				target = root
 			}
 		}
-		#TODO how about alliances with others dukes ? instead of owning tier_duchy ?
 		# any_ally with opinion > 20 and dukes will become your vassal
 		OR = {
 			# custom_description = {

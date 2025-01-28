@@ -6909,9 +6909,7 @@ travel_events.4037 = {
 	}
 	cooldown = { years = 10 }
 	trigger = {
-		#L5R TODO
-		always = no
-		#L5R Disabled
+		#L5R Modified
 		# is_available_travelling = yes
         # is_playable_character = yes
 		# is_location_valid_for_travel_event_on_land = yes
@@ -6937,6 +6935,16 @@ travel_events.4037 = {
 		# 		location.faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
 		# 	}
 		# }
+		OR = {
+			AND = {
+				religion = { is_in_family = rf_rokugani }
+				location.faith = { has_doctrine_parameter = rokugan_syncretic_actor_opinion_active }
+			}
+			AND = {
+				religion = { is_in_family = rf_shadowlands }
+				location.faith = { has_doctrine_parameter = shadowlands_syncretic_actor_opinion_active }
+			}
+		}
 	}
 	immediate = {
 		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }

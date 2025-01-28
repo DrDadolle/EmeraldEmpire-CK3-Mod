@@ -43,6 +43,10 @@ is_rokugani_faith = {
 			hostility_override_tenet_rejection_of_the_kami = 2
 			hostility_override_tenet_rokugani_syncretism = 1 # Syncretism goes to FAITH_HOSTILITY_ASTRAY
 			hostility_override_special_doctrine_non_human_tolerance = 2
+
+			rokugan_syncretic_actor_opinion_active = yes
+			opinion_of_rokugan_syncretic_recipient_opinion_active = 30 #Sync this to syncretic_mutual_opinion_bonus_value		}
+
 			# For loc:
 			is_rokugani_faith_righteous_desc = 1
 			is_rokugani_faith_astray_desc = 1
@@ -66,6 +70,10 @@ is_shadowlands_faith = {
 			# Since doctrines cannot modify other faith's views of us, only our view of others
 			#hostility_override_tenet_rejection_of_the_kami = 2
 			hostility_override_tenet_shadowlands_syncretism = 2 # Syncretism goes to FAITH_HOSTILITY_ASTRAY
+
+			shadowlands_syncretic_actor_opinion_active = yes
+			opinion_of_shadowlands_syncretic_recipient_opinion_active = 30 #Sync this to syncretic_mutual_opinion_bonus_value		}
+
 			# For loc:
 			is_shadowlands_faith_righteous_desc = 1
 			is_shadowlands_faith_astray_desc = 1
