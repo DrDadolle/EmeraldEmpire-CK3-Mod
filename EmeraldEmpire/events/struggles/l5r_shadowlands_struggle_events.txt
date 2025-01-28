@@ -81,18 +81,21 @@ shadowlands_struggle.0002 = {
 		trigger = {
 			faith_is_good = yes
 		}
+		custom_tooltip = shadowlands_struggle.1002.genghis_khan_tt
 	}
 	option = {
 		name = shadowlands_struggle.0002.b
 		trigger = {
 			faith_is_evil = yes
 		}
+		custom_tooltip = shadowlands_struggle.1002.genghis_khan_tt
 	}
 	option = {
 		name = shadowlands_struggle.0002.c
 		trigger = {
 			faith_is_neutral = yes
 		}
+		custom_tooltip = shadowlands_struggle.1002.genghis_khan_tt
 	}
 }
 

@@ -203,7 +203,7 @@ accolade_the_knight_of_the_animal = {
 					liege.capital_county.title_province ?= {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_lion
+							geographical_region = world_rokugan_lion
 							# geographical_region = world_africa
 							# geographical_region = world_middle_east
 							# geographical_region = world_europe
@@ -762,7 +762,7 @@ accolade_the_animal_of_capital = {
 					liege.capital_county.title_province ?= {
 						OR = {
 							#L5R Modified
-							geographical_region = rokugan_lion
+							geographical_region = world_rokugan_lion
 							# geographical_region = world_africa
 							# geographical_region = world_middle_east
 							# geographical_region = world_europe

@@ -407,9 +407,9 @@ cultures_share_relevant_region_trigger = {
 			}
 		}
 		AND = {
-			culture_overlaps_geographical_region = rokugan_lion
+			culture_overlaps_geographical_region = world_rokugan_lion
 			scope:culture = {
-				culture_overlaps_geographical_region = rokugan_lion
+				culture_overlaps_geographical_region = world_rokugan_lion
 			}
 		}
 		AND = {

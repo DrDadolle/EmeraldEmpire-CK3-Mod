@@ -478,7 +478,7 @@ set_up_regional_mythical_creature_effect = {
 	else_if = {
 		#Lion Lands
 		limit = {
-			location = { geographical_region = rokugan_lion }
+			location = { geographical_region = world_rokugan_lion }
 			NOT = { exists = var:regional_mythical_creature_trinket }
 		}
 		random_list = {

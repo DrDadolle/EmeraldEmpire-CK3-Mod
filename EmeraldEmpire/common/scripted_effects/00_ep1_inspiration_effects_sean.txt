@@ -492,10 +492,10 @@ grant_new_inspiration_in_world_effect = {
 		}
 		# Lion
 		1 = {
-			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = rokugan_lion } } }
-			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = rokugan_lion }
-			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = rokugan_lion }
-			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = rokugan_lion }
+			trigger = { any_character_with_royal_court = { exists = capital_province capital_province = { geographical_region = world_rokugan_lion } } }
+			inspiration_region_court_grandeur_attraction_modifier = { GEOGRAPHICAL_REGION = world_rokugan_lion }
+			inspiration_region_oversaturation_penalty_modifier = { GEOGRAPHICAL_REGION = world_rokugan_lion }
+			grant_new_inspiration_in_region_effect = { GEOGRAPHICAL_REGION = world_rokugan_lion }
 		}
 		# Phoenix
 		1 = {

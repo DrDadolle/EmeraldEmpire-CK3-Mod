@@ -25,51 +25,51 @@
 
 ##### Cavalry
 # Dark version of utaku maiden cavalry, but 5 times smaller and more powerful
-dark_moto_cavalry = {
-	type = heavy_cavalry
+# dark_moto_cavalry = {
+# 	type = heavy_cavalry
 	
-	damage = 525
-	toughness = 200
-	pursuit = 100
-	screen = 50
+# 	damage = 525
+# 	toughness = 200
+# 	pursuit = 100
+# 	screen = 50
 	
-	can_recruit = {
-		culture = { this = culture:dark_moto }
-   }
+# 	can_recruit = {
+# 		any_parent_culture = { this = culture:dark_moto }
+#    }
 
-   counters = {
-		archers = 1
-	}
+#    counters = {
+# 		archers = 1
+# 	}
 
-	terrain_bonus = {
-		plains = { damage = 150 }
-		drylands = { damage = 150 }
-		hills = { damage = -50 }
-		mountains = { damage = -250 }
-		desert_mountains = { damage = -250 }
-		wetlands = { damage = -375 }
-		#L5R Added
-		shadowlands_plains = { damage = 300 }
-		shadowlands_hills = { damage = -25 }
-		shadowlands_mountains = { damage = -125 }
-		shadowlands_wetlands = { damage = -185 }
-	}
+# 	terrain_bonus = {
+# 		plains = { damage = 150 }
+# 		drylands = { damage = 150 }
+# 		hills = { damage = -50 }
+# 		mountains = { damage = -250 }
+# 		desert_mountains = { damage = -250 }
+# 		wetlands = { damage = -375 }
+# 		#L5R Added
+# 		shadowlands_plains = { damage = 300 }
+# 		shadowlands_hills = { damage = -25 }
+# 		shadowlands_mountains = { damage = -125 }
+# 		shadowlands_wetlands = { damage = -185 }
+# 	}
 
-	winter_bonus = {
-		normal_winter = { damage = -45 toughness = -25 }
-		harsh_winter = { damage = -150 toughness = -50 }
-	}
+# 	winter_bonus = {
+# 		normal_winter = { damage = -45 toughness = -25 }
+# 		harsh_winter = { damage = -150 toughness = -50 }
+# 	}
 
 
-	buy_cost = { gold = utaku_maiden_recruitment_cost }
-	low_maintenance_cost = { gold = utaku_maiden_low_maint_cost }
-	high_maintenance_cost = { gold = utaku_maiden_high_maint_cost }
-	provision_cost = @provisions_cost_cavalry_expensive
+# 	buy_cost = { gold = utaku_maiden_recruitment_cost }
+# 	low_maintenance_cost = { gold = utaku_maiden_low_maint_cost }
+# 	high_maintenance_cost = { gold = utaku_maiden_high_maint_cost }
+# 	provision_cost = @provisions_cost_cavalry_expensive
 	
-	stack = 10
-	ai_quality = { value = culture_ai_weight_heavy_cavalry }
-	icon = heavy_cavalry
-}
+# 	stack = 10
+# 	ai_quality = { value = culture_ai_weight_heavy_cavalry }
+# 	icon = heavy_cavalry
+# }
 
 ##### Monsters
 pit_oni = {

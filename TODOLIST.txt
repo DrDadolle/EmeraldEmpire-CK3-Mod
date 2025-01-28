@@ -25,18 +25,11 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ##TEST TODO
-- Shiba Ujimitsu family
-- check opinion/syncretism (some +30 opinion things ?)
 - check nezumi one tribe decision
 	- update nezumi restauration decision picture
-- Add this effect to the crab invasion 
-	- mongols_devastate_county_effect / mongol_invasion_county_looting_chance_effect (army_on_actions.txt/on_county_occupied) 
-	- but repealble (like 20 years cooldown on counties)
-	- Test shadowlands_devastate + add loc (upon occupation & on_victory)
-	- Test shadowlands_culture_religion_replacement_effect + add loc
-
 
 ## CK3 1.13.* patch
+- Conqueror pose with sword missing
 - Shiro Kaikoga => Wrong religion & culture, why ?
 - Fix starting zoom table when choosing map character
 - Fix era time line. 

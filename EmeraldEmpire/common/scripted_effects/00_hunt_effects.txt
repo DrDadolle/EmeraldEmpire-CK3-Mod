@@ -709,7 +709,7 @@ hunt_activity_falconry_game_effect = {
 						$PROVINCE$ = {
 							OR = {
 								#L5R Modified
-								geographical_region = rokugan_lion
+								geographical_region = world_rokugan_lion
 								# geographical_region = world_africa_north
 								# geographical_region = world_africa_east
 								# geographical_region = world_europe_north

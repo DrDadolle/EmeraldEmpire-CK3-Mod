@@ -19,7 +19,7 @@
 
 
 
-# rokugan_lion
+# world_rokugan_lion
 	# world_rokugan_lion_plains
 	# world_rokugan_lion_kitsu_tombs
 # world_rokugan_phoenix
@@ -92,7 +92,7 @@ world_rokugan_lion_kitsu_tombs = {
 	}
 }
 
-rokugan_lion = {
+world_rokugan_lion = {
 	regions = {
 		world_rokugan_lion_plains world_rokugan_lion_kitsu_tombs
 	}
@@ -472,7 +472,7 @@ world_shadowlands_twilight_mountains = {
 #####################################
 world_rokugan_north = {
 	regions = {
-		rokugan_lion world_rokugan_phoenix world_rokugan_dragon world_rokugan_unicorn
+		world_rokugan_lion world_rokugan_phoenix world_rokugan_dragon world_rokugan_unicorn
 	}
 }
 world_rokugan_south = {
@@ -489,7 +489,7 @@ world_rokugan_east = {
 
 world_rokugan = {
 	regions = {
-		rokugan_lion world_rokugan_phoenix world_rokugan_dragon world_rokugan_unicorn world_rokugan_imperial world_rokugan_crab world_rokugan_crane
+		world_rokugan_lion world_rokugan_phoenix world_rokugan_dragon world_rokugan_unicorn world_rokugan_imperial world_rokugan_crab world_rokugan_crane
 		world_rokugan_scorpion world_rokugan_shinomen_mori world_rokugan_spine_world_mountains world_rokugan_spice_and_silk_isles
 	}
 }
@@ -525,7 +525,7 @@ graphical_world_rokugan = {
 	graphical = yes
 	color = { 232 57 41 }
 	regions = {
-		rokugan_lion world_rokugan_phoenix world_rokugan_dragon world_rokugan_unicorn world_rokugan_imperial world_rokugan_crab world_rokugan_crane
+		world_rokugan_lion world_rokugan_phoenix world_rokugan_dragon world_rokugan_unicorn world_rokugan_imperial world_rokugan_crab world_rokugan_crane
 		world_rokugan_scorpion world_rokugan_shinomen_mori world_rokugan_spine_world_mountains world_rokugan_spice_and_silk_isles
 	}
 }

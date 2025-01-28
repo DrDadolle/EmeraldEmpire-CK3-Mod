@@ -6,7 +6,7 @@ is_under_e_rokugan_rule = {
     AND = {
         is_independent_ruler = no
         #top liege is rokugani emperor
-        top_liege = { primary_title = title:e_rokugan }
+        top_liege = { has_primary_title = title:e_rokugan }
     }
 }
 
@@ -15,7 +15,7 @@ is_under_direct_e_rokugan_rule = {
     AND = {
         is_independent_ruler = no
         #liege is rokugani emperor
-        liege = { primary_title = title:e_rokugan }
+        liege = { has_primary_title = title:e_rokugan }
     }
 }
 

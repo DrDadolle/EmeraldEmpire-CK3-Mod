@@ -410,7 +410,7 @@ martial_strategy.2000 = {
 					location = {
 						OR = {
 							geographical_region = world_rokugan_dragon
-							geographical_region = rokugan_lion
+							geographical_region = world_rokugan_lion
 						}
 					}
 					# faith = { religion_tag = islam_religion }
@@ -423,7 +423,7 @@ martial_strategy.2000 = {
 				trigger = {
 					location = {
 						OR = {
-							geographical_region = rokugan_lion
+							geographical_region = world_rokugan_lion
 							geographical_region = world_rokugan_phoenix
 						}
 					}
@@ -436,7 +436,7 @@ martial_strategy.2000 = {
 				trigger = {
 					location = {
 						OR = {
-							geographical_region = rokugan_lion
+							geographical_region = world_rokugan_lion
 							geographical_region = world_rokugan_scorpion
 						}
 					}

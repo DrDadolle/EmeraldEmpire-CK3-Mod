@@ -754,7 +754,7 @@ great_holy_war_target_kingdom_weight = {
 			}
 			title_capital_county.title_province = {
 				OR = {
-					geographical_region = rokugan_lion
+					geographical_region = world_rokugan_lion
 					geographical_region = world_rokugan_scorpion
 					geographical_region = world_rokugan_phoenix
 					geographical_region = world_rokugan_dragon
@@ -811,7 +811,7 @@ great_holy_war_target_kingdom_weight = {
 			scope:the_faith.religion = religion:unicorn_religion
 			title_capital_county.title_province = {
 				OR = {
-					geographical_region = rokugan_lion
+					geographical_region = world_rokugan_lion
 					geographical_region = world_rokugan_scorpion
 				}
 			}

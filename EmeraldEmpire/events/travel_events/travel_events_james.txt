@@ -2854,7 +2854,7 @@ scripted_trigger 4016_is_cold_climate_trigger = { # Explicitly looking for place
 		#L5R Modified
 		geographical_region = world_rokugan_unicorn
 		geographical_region = world_rokugan_scorpion
-		geographical_region = rokugan_lion
+		geographical_region = world_rokugan_lion
 		# geographical_region = world_steppe
 		# geographical_region = world_tibet
 		# geographical_region = world_europe_west_britannia
@@ -6937,7 +6937,7 @@ travel_events.4037 = {
 		# }
 		OR = {
 			AND = {
-				religion = { is_in_family = rf_rokugani }
+				religion = { is_in_family = rf_rokugan }
 				location.faith = { has_doctrine_parameter = rokugan_syncretic_actor_opinion_active }
 			}
 			AND = {
@@ -7158,7 +7158,7 @@ travel_events.4038 = {
 		# }
 		OR = {
 			AND = {
-				religion = { is_in_family = rf_rokugani }
+				religion = { is_in_family = rf_rokugan }
 				location.faith = { has_doctrine_parameter = rokugan_syncretic_actor_opinion_active }
 			}
 			AND = {

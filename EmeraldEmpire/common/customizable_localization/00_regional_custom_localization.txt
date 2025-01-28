@@ -3622,7 +3622,7 @@ RegionalPoxAnimal = {
 			capital_province = {
 				OR = {
 					#L5R Modified
-					geographical_region = rokugan_lion
+					geographical_region = world_rokugan_lion
 					geographical_region = world_rokugan_scorpion
 					geographical_region = world_rokugan_shinomen_mori
 					# geographical_region = world_middle_east

@@ -43,7 +43,7 @@
  decision_invade_crab_clan_desc:0 "The Crab Clan has looked down upon us from their remparts for far too long. It is now time that we launch a large scale assault against them, and destroy their clan, their wall and their pride."
  decision_invade_crab_clan_confirm:0 "The Wall will fall."
  invade_crab_clan_decision:0 "Gather your troops and launch the final assault on the Wall. If you fail however, all empire, kingdom and duchy [title|E] within the [shadowlands|E] [de_jure|E] lands will be destroyed."
- invasion_of_crab_clan_cb:0 "Invasion of Crab Clan Casus Belli"
+ invasion_of_crab_clan_cb:0 "Great Invasion of Crab Clan Casus Belli"
 
  ############################
  ###### EVENTS
@@ -56,11 +56,12 @@
  shadowlands_struggle.0001.c:0 "This fight doesn't concern me."
  shadowlands_struggle.0001.d:0 "Let's reclaim our lost empire !"
 
- shadowlands_struggle.0002.t:0 "Shadowlands Invasion"
+ shadowlands_struggle.0002.t:0 "Great Shadowlands Invasion"
  shadowlands_struggle.0002.desc:0 "Nobody quite knows what straw broke the camel's back. But it did. The [shadowlands|E] forces are united and they will attack Rokugan.\n\nTime will tell if the [crabclan|E] will manage to survive its assault..."
  shadowlands_struggle.0002.a:0 "Let's defend Rokugan !"
  shadowlands_struggle.0002.b:0 "We will destroy them."
  shadowlands_struggle.0002.c:0 "Let's survive."
+ shadowlands_struggle.1002.genghis_khan_tt:0 "Any [county|E] occupied by the Shadowlands Horde will lose a large portion of its [development|E]"
 
  shadowlands_struggle.1000.t:0 "Crab Clan Falls"
  shadowlands_struggle.1000.desc:0 "To the shock of all, the Kaiu Wall has been breached and the [crabclan|E] failed in its sacred duty. Survivors flees their ancestral lands as the unstoppable tides of the [shadowlands|E] forces ravages the crab lands. Without their defenders, will [rokugan|E] survive or fall into centuries of darkness ?"
@@ -136,3 +137,13 @@ shadowlands_struggle.3000.desc:0 "[cultist.GetName] approaches me one day after 
 shadowlands_struggle.3000.a:0 "Let us hope it does not spread further!"
 shadowlands_struggle.3000.a.spread:0 "The cult spreads further"
 shadowlands_struggle.3000.b:0 "Repent, for the time draws near!"
+
+ ############################
+ ###### EFFECTS
+ ############################
+ shadowlands_sieged_county.t:0 "[county.GetName] Razed by the Shadowlands Horde"
+ shadowlands_invasion_loot_county_tt: "Every [de_jure|E] [county|E] of the target titles"
+ shadowlands_invasion_loot_gold_tt: "[attacker.GetShortUIName|U] will gain @gold_icon! [gold|E] equal to #V 5#! times the [development|E]"
+ shadowlands_invasion_loot_development_tt: "[development|E] of the [county|E] will be #N halved#!"
+ shadowlands_invasion_loot_dread_tt: "[attacker.GetShortUIName|U] will gain 2 [dread|E]"
+ shadowlands_culture_religion_replacement_effect.tt:0 "The Shadowlands Horde will kill all other heritage and religion people within $k_crab_clan$"
