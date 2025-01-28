@@ -340,13 +340,13 @@ drink_tea_of_jade_petals = {
 		is_lowborn = no
 		is_landless_adventurer = no
 		has_trait = tainted
-		is_under_e_rokugan_rule = yes
+		root = { faith_is_not_evil = yes  }
+		# is_under_e_rokugan_rule = yes
 	}
 
 	is_valid = {
 		NOT = { has_character_modifier = tea_of_jade_petals_modifier }
 		# need good opinion of kuni daimyo or control the production itself
-		root = { faith_is_not_evil = yes  }
 
 		trigger_if = { 
 			limit = { title:d_kuni = { exists = holder } }

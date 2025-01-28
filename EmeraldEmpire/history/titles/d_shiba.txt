@@ -1,22 +1,22 @@
 d_shiba = {
 	1110.1.1 = {
 		liege = "k_phoenix_clan"
-		holder = lineofshiba1 # Shiba Ujimitsu
+		holder = lineofshibaujimitsu1 # Shiba Ujimitsu
 		government = feudal_government
 	}
 	1123.4.25 = {
-		holder = lineofshiba2 # Shiba Tsukune
+		holder = lineofshibatsukune1 # Shiba Tsukune
 	}
 }
 
 c_nejiro_province = {
 	1110.1.1 = {
 		liege = "d_shiba"
-		holder = lineofshiba1 # Shiba Ujimitsu
+		holder = lineofshibaujimitsu1 # Shiba Ujimitsu
 		change_development_level = 20
 	}
 	1123.4.25 = {
-		holder = lineofshiba2 # Shiba Tsukune
+		holder = lineofshibatsukune1 # Shiba Tsukune
 	}
 }
 

@@ -859,9 +859,9 @@ undead = {
 	dread_baseline_add = 25
 	dread_gain_mult = 0.5
 
-	enemy_hostile_scheme_phase_duration_add = 10
-	enemy_hostile_scheme_success_chance_max_add = -10
-	enemy_hostile_scheme_success_chance_growth_add = -1
+	# enemy_hostile_scheme_phase_duration_add = 10
+	# enemy_hostile_scheme_success_chance_max_add = -10
+	# enemy_hostile_scheme_success_chance_growth_add = -1
 
 	can_have_children = no
 

@@ -19,7 +19,7 @@
 #####################
 #	Shiba
 #####################
-lineofshiba2 = {
+lineofshibatsukune1 = {
 	name = name_tsukune 	# Shiba Tsukune, phoenix clan champion of 1123
 	dynasty = dynasty_shiba 	
 	religion = "seven_fortunes"
@@ -62,21 +62,33 @@ lineofshiba2 = {
 	}
 }
 
-lineofshiba1 = {
+lineofshibaujimitsu1 = {
 	name = name_ujimitsu 	# Shiba Ujimitsu, previous phoenix clan champion 
 	dynasty = dynasty_shiba 	
 	religion = "seven_fortunes"
 	culture = "shiba"
 	
 	### Stats
-	
+	martial = 9
+	diplomacy = 12
+	learning = 11
+	prowess = 10
+
 	### Traits
+	trait = education_martial_4
+	trait = just
+	trait = forgiving
+	trait = temperate
 	
 	### Family
-	#TODO brother Shiba Suzaku ?
+	father = lineofshibaujimitsu4 # Placeholder father to add sibling relationship between him and his brother Suzaku
 
-	1106.1.1 = {
+	1086.1.1 = {
 		birth = yes
+	}
+
+	1105.1.1 = {
+		add_spouse=lineofseppunshimiko1 #Seppun Shimiko
 	}
 	
 	1123.4.25 = {
@@ -84,25 +96,81 @@ lineofshiba1 = {
 	}
 }
 
-
-lineofshibakatsuda3 = {
-	name = name_itsuyo 	#  Shiba Itsuyo, wife of Tsume no Doji Takashi
+lineofshibaujimitsu2 = {
+	name = name_saija 	# Shiba Saija, daughter of Shiba Ujimitsu 
 	dynasty = dynasty_shiba 	
 	religion = "seven_fortunes"
 	culture = "shiba"
 	female = yes
 	
-	### Traits
-	# Martial training in the lore
+	### Stats
 	
-	#Family
-	father = lineofshibakatsuda1 # Shiba Katsuda Retsu
-	mother = lineofshibakatsuda2 # Shiba Chisei
+	### Traits
+	
+	### Family
+	father = lineofshibaujimitsu1 #Shiba Ujimitsu
+	mother = lineofseppunshimiko1 #Seppun Shimiko
 
-	1101.1.1 = {
+	1115.1.1 = {
 		birth = yes
 	}
+
 }
+
+lineofshibaujimitsu3 = {
+	name = name_suzaku 	# Shiba Suzaku, brother of Shiba Ujimitsu
+	dynasty = dynasty_shiba 	
+	religion = "seven_fortunes"
+	culture = "shiba"
+	
+	### Stats
+	diplomacy = 10
+	stewardship = 10
+	learning = 15
+
+	
+	### Traits 
+	# Good Trait to have more probability to be chosen as the heir
+	trait = education_diplomacy_4
+	trait = just
+	trait = content
+	trait = generous
+
+	### Family
+	father = lineofshibaujimitsu4 # Placeholder father to add sibling relationship between him and his brother Ujimitsu
+
+	1103.1.1 = {
+		birth = yes
+	}
+
+}
+
+lineofshibaujimitsu4 = {
+	name = name_jiro 	# Shiba Jiro, Father of Shiba Ujimitsu. Not canon, used to have brother relationshp
+	dynasty = dynasty_shiba 	
+	religion = "seven_fortunes"
+	culture = "shiba"
+	
+	### Stats
+	
+	### Traits
+
+	
+	### Family
+
+	1066.1.1 = {
+		birth = yes
+	}
+
+	#Lets kill him before the 1123 start date
+	1122.1.1 = {
+		death = yes
+	}
+
+
+}
+
+
 
 lineofshibakatsuda1 = {
 	name = name_katsuda	#  Shiba Katsuda, Lord of Nikesake
@@ -131,6 +199,26 @@ lineofshibakatsuda2 = {
 	### Traits
 
 	1068.1.1 = {
+		birth = yes
+	}
+}
+
+
+lineofshibakatsuda3 = {
+	name = name_itsuyo 	#  Shiba Itsuyo, wife of Tsume no Doji Takashi
+	dynasty = dynasty_shiba 	
+	religion = "seven_fortunes"
+	culture = "shiba"
+	female = yes
+	
+	### Traits
+	# Martial training in the lore
+	
+	#Family
+	father = lineofshibakatsuda1 # Shiba Katsuda Retsu
+	mother = lineofshibakatsuda2 # Shiba Chisei
+
+	1101.1.1 = {
 		birth = yes
 	}
 }
@@ -350,19 +438,11 @@ lineofisawachuda1 = {
 	religion = "seven_fortunes"
 	culture = "isawa"
 
-	### Stats TODO
-	# martial = 10
-	# diplomacy = 12
-	# prowess = 15
+	### Stats
+
 
 	### Traits
-	# trait = education_martial_4
-	# trait = brave
-	# trait = calm
-	# trait = beauty_good_2
-	# trait = lifestyle_blademaster
-	# trait = kami_descendant
-	# trait = natural_white_hair
+
 
 	### DNA
 	dna = isawa_giichi_dna_entry
@@ -523,7 +603,7 @@ lineofkaito3 = {
 	# # Link already exists
 	# 1123.1.1 = {
 	# 	effect = {
-	# 		set_relation_friend = { reason = friend_generic_history target = character:lineofshiba2 } #friend with Shiba Tsukune since  the Sanpuku Seido incident
+	# 		set_relation_friend = { reason = friend_generic_history target = character:lineofshibatsukune1 } #friend with Shiba Tsukune since  the Sanpuku Seido incident
 	# 	}
 	# }
 

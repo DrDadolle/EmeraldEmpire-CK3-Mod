@@ -406,12 +406,12 @@ create_artifact_ofushikai_ancestral_sword_phoenix_effect = {
         add_artifact_history = {
 			type = inherited
 			date = 1110.1.1
-			recipient = character:lineofshiba1 # Shiba Ujimitsu
+			recipient = character:lineofshibaujimitsu1 # Shiba Ujimitsu
 		}
         add_artifact_history = {
 			type = inherited
 			date = 1123.4.25
-			recipient = character:lineofshiba2 # Shiba Tsukune
+			recipient = character:lineofshibatsukune1 # Shiba Tsukune
 		}
 	}
 }
@@ -458,12 +458,12 @@ create_artifact_mezameru_ancestral_armor_phoenix_effect = {
         add_artifact_history = {
 			type = inherited
 			date = 1110.1.1
-			recipient = character:lineofshiba1 # Shiba Ujimitsu
+			recipient = character:lineofshibaujimitsu1 # Shiba Ujimitsu
 		}
         add_artifact_history = {
 			type = inherited
 			date = 1123.4.25
-			recipient = character:lineofshiba2 # Shiba Tsukune
+			recipient = character:lineofshibatsukune1 # Shiba Tsukune
 		}
 	}
 }

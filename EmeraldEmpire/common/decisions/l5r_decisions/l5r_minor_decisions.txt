@@ -116,9 +116,12 @@ commit_seppuku_decision = {
 		# More often seppuku for tainted people
 		modifier = {
 			add = 50
-			has_trait_xp = {
-				trait = tainted
-				value >= 100
+			AND = {
+				has_trait_xp = {
+					trait = tainted
+					value >= 100
+				}
+				faith_is_not_evil = yes
 			}
 		}
 
@@ -155,9 +158,12 @@ rokugan_abdicate_decision = {
 			has_trait = incapable
 			has_trait = infirm
 			# Not sure how to check for length of reign
-			has_trait_xp = {
-				trait = tainted
-				value >= 100
+			AND = {
+				has_trait_xp = {
+					trait = tainted
+					value >= 100
+				}
+				faith_is_not_evil = yes
 			}
 		}
 		NOT = {	has_trait = immortal }

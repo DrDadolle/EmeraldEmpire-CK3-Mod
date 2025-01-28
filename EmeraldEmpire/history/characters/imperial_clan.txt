@@ -932,6 +932,23 @@ lineofseppundaiori1 = {
 	}
 }
 
+
+lineofseppunshimiko1 = {
+	name = name_shimiko 	# Seppun Shimiko Wife of Phoenix Clan Champion Shiba Ujimitsu (TCG stuff)
+	dynasty = dynasty_seppun 	
+	religion = "shinseism"
+	culture = "seppun"
+	female = yes
+	
+	### Stats
+	
+	### Traits
+
+	1089.1.1 = {
+		birth = yes
+	}
+}
+
 ##### Random county holder for the Seppun
 placeholderseppun1 = {
 	name = name_aki 	#  Doji Aki  #TODO replace name
