@@ -132,8 +132,8 @@ NCamera = {
 	ZOOM_AUDIO_PARAMETER_SCALE = 0.1		# The audio parameter "CameraHeight" will be set to the camera's height X ZOOM_AUDIO_PARAMETER_SCALE
 
 	MAX_PAN_TO_ZOOM_STEP = 4							# The camera will lower to this height (but only if above it) when panning to characters/provinces etc.
-	START_LOOK_AT = { 5250.0 0 5800.0 } # { 3860.0 0 1730.0 }					# Initial look at (X/Y)
-	START_ZOOM_STEP = 32								# Initial zoom step
+	START_LOOK_AT = { 1000.0 0 800.0 }					# Initial look at (X/Y)
+	START_ZOOM_STEP = 16 # 32								# Initial zoom step
 
 	MAPTABLE_FLOOR_LEVEL = -3100 						# What is the floor level of the map-table view (influences shadows)
 	MAPTABLE_CEILING_LEVEL = 3000 						# What is the ceiling level of the map-table view (influences shadows)
@@ -188,7 +188,7 @@ NBorder = {
 	REGION_FADE_NEAR = 0.0
 	PROVINCE_FADE_FAR = 1.0
 	PROVINCE_FADE_NEAR = 0.0
-	DISABLE_PROVINCE_AND_COUNTY_IN_FLAT_MAP = yes	# For performance reasons we disable these entirely, since they're not actually visible anyway in the flat map
+	DISABLE_PROVINCE_AND_COUNTY_IN_ = yes	# For performance reasons we disable these entirely, since they're not actually visible anyway in the flat map
 	DISABLE_SUB_REALM_IN_FLAT_MAP = yes	# For performance reasons we disable these entirely, since they're not actually visible anyway in the flat map
 	ENABLE_GRADIENT_BORDERS_SHORELINE = yes # need to restart the game for this setting to take effect
 	BORDERS_FULL_UPDATE_INTERVAL = 20 # interval between full border updates instead of partial one

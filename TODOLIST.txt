@@ -25,24 +25,14 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ##TEST TODO
-- check nezumi one tribe decision
-	- update nezumi restauration decision picture
-- Conqueror pose with sword missing
-	- recheck daigotsu
-	- check Ujik (unique mongol sword) (give them trait) 
-	- check Crane (generic sword) (give them trait)
 
 ## CK3 1.13.* patch
-
 - Shiro Kaikoga => Wrong religion & culture, why ?
-- Fix starting zoom table when choosing map character
 - Fix era time line. 
 - ck3tiger fixes to do !
-- "son of heaven" even if female ruler loc to fix. Does it happens ?
 - add images for mma
 - Why people can be eunuch ?! wtf even Dark Moto Tsume ?! 
 	- He got again fucking cancer, why ?!
--Data error in loc string 'motto_custom_loc_god'
 	
 ## short term goals 
 - finish shindoshi decision for MAGIC (at least for air kami)
@@ -76,9 +66,12 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 	- Object of type 'character' is not valid for 'GetCourtConcept' ???
 	- happens in Vanilla, so prod issue, not mod issue
 - BUG : (spammed error) unit_japanese_infantry_02_shield_entity has no attachment node named shield_effect_2
-- BUG during duel : 	
+- BUG : during duel : 	
 	Error: Invalid left side during comparison 'var'
 	Script location: file: common/customizable_localization/00_signature_weapon_custom_localization.txt line: 380 (SignatureWeaponAttemptedHeavyPlural)
+- BUG : Data error in loc string 'motto_custom_loc_god'
+	- I do not understand the issue... Maybe it bugs out only for starting dynasties ?
+	- Workaround : add motto for ALL starting dynasties ?
 - WORKAROUND : special phoenix succession kinda working using admin acclamation. But GUI is ugly because it has all the admin special button & loc
 =====================================================================================================
 ============ STOP DEV FEATURES & START POLISHING & ADD 3D/2D ASSETS THEN ASK FOR TESTERS ============
