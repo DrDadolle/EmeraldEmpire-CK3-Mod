@@ -2021,8 +2021,6 @@ axe_unique_gfx_trigger = {
 			# has_clothing_gfx = iranian_clothing_gfx
 			# has_clothing_gfx = iberian_christian_clothing_gfx
 			# has_clothing_gfx = iberian_muslim_clothing_gfx
-			has_cultural_pillar = heritage_crab
-			has_cultural_pillar = heritage_ichiro
 		}
 	}
 }
@@ -2031,8 +2029,7 @@ sword_unique_gfx_trigger = {
 	culture = {
 		OR = {
 			# L5R Modified
-			has_building_gfx = japanese_building_gfx
-			has_clothing_gfx = chinese_building_gfx
+			has_clothing_gfx = mongol_clothing_gfx
 			# has_clothing_gfx = byzantine_clothing_gfx
 			# has_clothing_gfx = indian_clothing_gfx
 			# has_clothing_gfx = african_clothing_gfx
@@ -2054,24 +2051,20 @@ hammer_unique_gfx_trigger = {
 			# has_clothing_gfx = mena_clothing_gfx
 			# has_clothing_gfx = iberian_christian_clothing_gfx
 			# has_clothing_gfx = iberian_muslim_clothing_gfx
-			has_cultural_pillar = heritage_crab
-			has_cultural_pillar = heritage_ichiro
 		}
 	}
 }
 
 dagger_unique_gfx_trigger = {
-	culture = {
-		OR = {
-			#L5R Modified
-			# has_clothing_gfx = iberian_christian_clothing_gfx
-			# has_clothing_gfx = iberian_muslim_clothing_gfx
-			# has_clothing_gfx = indian_clothing_gfx
-			has_cultural_pillar = heritage_lion
-			has_cultural_pillar = heritage_scorpion
-			has_cultural_pillar = heritage_crane
-		}
-	}
+	#L5R Disabled
+	always = no
+	# culture = {
+	# 	OR = {
+	# 		has_clothing_gfx = iberian_christian_clothing_gfx
+	# 		has_clothing_gfx = iberian_muslim_clothing_gfx
+	# 		has_clothing_gfx = indian_clothing_gfx
+	# 	}
+	# }
 }
 
 mace_unique_gfx_trigger = {
@@ -2085,8 +2078,6 @@ mace_unique_gfx_trigger = {
 			# has_clothing_gfx = mena_clothing_gfx
 			# has_clothing_gfx = iberian_christian_clothing_gfx
 			# has_clothing_gfx = iberian_muslim_clothing_gfx
-			has_cultural_pillar = heritage_crab
-			has_cultural_pillar = heritage_ichiro
 		}
 	}
 }
@@ -2095,8 +2086,6 @@ spear_unique_gfx_trigger = {
 	culture = {
 		OR = {
 			# L5R Modified
-			has_building_gfx = japanese_building_gfx
-			has_clothing_gfx = chinese_building_gfx
 			# has_clothing_gfx = indian_clothing_gfx
 			has_clothing_gfx = mongol_clothing_gfx
 			# has_clothing_gfx = african_clothing_gfx
