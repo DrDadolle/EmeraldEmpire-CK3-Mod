@@ -63,6 +63,6 @@ imperial_legion= {
 	
  	stack = 100
  	ai_quality = { value = @[cultural_maa_extra_ai_score +20] }
- 	icon = zupin_spearmen
+ 	icon = imperial_legion
 	allowed_in_hired_troops = no
 }
