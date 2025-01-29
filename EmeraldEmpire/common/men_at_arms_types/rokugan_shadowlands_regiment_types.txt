@@ -116,7 +116,7 @@ pit_oni = {
 
 giant_spiders = {
 	type = monster
-	buy_cost = { gold = 300 }
+	buy_cost = { gold = 350 }
 	low_maintenance_cost = { gold = 0.7 }
 	high_maintenance_cost = { gold = 2.1 }
 	provision_cost = @provisions_cost_cavalry_expensive
@@ -133,7 +133,7 @@ giant_spiders = {
 	stack = 5
 	damage = 900
 	toughness = 300
-	pursuit = 0
+	pursuit = 100
 	screen = 0
 	
 	terrain_bonus = {
@@ -153,6 +153,6 @@ giant_spiders = {
 	
 	allowed_in_hired_troops = no
 	ai_quality = { value = culture_ai_weight_monster }
-	icon = giant_spiders
+	icon = kumo
 }
 	
