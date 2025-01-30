@@ -25,8 +25,10 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - more artifacts
 
 ##TEST TODO
+- test removing shield_effect_2 no error log
 
 ## CK3 1.13.* patch
+- Fix Inconsistent trigger scopes (landed_title vs. culture) infile: common/scripted_effects/l5r_struggle_effects.txt 
 - Shiro Kaikoga => Wrong religion & culture, why ?
 - Fix era time line. 
 - ck3tiger fixes to do !
