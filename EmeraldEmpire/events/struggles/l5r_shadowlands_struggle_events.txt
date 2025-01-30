@@ -482,7 +482,7 @@ shadowlands_struggle.2005 = {
 	}
 }
 
-# Notification to invasion target to all vassal to add them as ally in the invasion war.
+# Notification to great shadowlands invasion target to all vassal of rokugani great invasion target to add them as ally in the invasion war.
 shadowlands_struggle.2010 = { 
 	content_source = l5r_dlc
 	type = character_event
@@ -529,6 +529,7 @@ shadowlands_struggle.2010 = {
 			inheritable = no
 		}
 
+		# Crabs always joins
 		ai_chance = {
 			base = 100
 		}
@@ -557,6 +558,12 @@ shadowlands_struggle.2010 = {
 			modifier = {
 				add = -25
 				has_trait = craven
+			}
+			ai_value_modifier = {
+				ai_energy = 0.5
+				ai_zeal = 2
+				ai_honor = 1
+				ai_greed = -0.25
 			}
 		}
 	}
@@ -597,8 +604,6 @@ shadowlands_struggle.2010 = {
 		add_prestige = medium_prestige_loss
 		add_piety = minor_piety_loss
 
-		#TODO special coward modificator ?
-
 		# Brave AI will always join
 		ai_chance = {
 			base = 50
@@ -614,11 +619,17 @@ shadowlands_struggle.2010 = {
 				factor = 0
 				has_trait = brave
 			}
+			ai_value_modifier = {
+				ai_energy = -0.5
+				ai_zeal = -2
+				ai_honor = -1
+				ai_greed = 0.25
+			}
 		}
 	}
 }
 
-# Notification to invasion attacker vassal to add them as ally in the invasion war.
+# Notification to great shadowlands invasion attacker's vassals to add them as ally in the invasion war.
 shadowlands_struggle.2011 = { 
 	content_source = l5r_dlc
 	type = character_event
@@ -655,17 +666,23 @@ shadowlands_struggle.2011 = {
 				add = 25
 				has_trait = brave
 			}
-			modifier = {
-				add = -25
-				has_trait = craven
-			}
+			# modifier = {
+			# 	add = -25
+			# 	has_trait = craven
+			# }
 			modifier = {
 				add = 25
 				has_trait = vengeful
 			}
-			modifier = {
-				add = 10
-				has_trait = ambitious
+			# modifier = {
+			# 	add = 10
+			# 	has_trait = ambitious
+			# }
+			ai_value_modifier = {
+				ai_energy = 0.5
+				ai_zeal = 2
+				ai_honor = 1
+				ai_greed = -0.25
 			}
 		}
 	}
@@ -688,25 +705,31 @@ shadowlands_struggle.2011 = {
 		# Brave AI will always join
 		ai_chance = {
 			base = 50
-			modifier = {
-				add = 25
-					has_trait = craven
-			}
-			modifier = {
-				add = 5
-					has_trait = greedy
-			}
+			# modifier = {
+			# 	add = 25
+			# 		has_trait = craven
+			# }
+			# modifier = {
+			# 	add = 5
+			# 		has_trait = greedy
+			# }
 			modifier = {
 				add = -25
 				has_trait = vengeful
 			}
-			modifier = {
-				add = -10
-				has_trait = ambitious
-			}
+			# modifier = {
+			# 	add = -10
+			# 	has_trait = ambitious
+			# }
 			modifier = {
 				factor = 0
 				has_trait = brave
+			}
+			ai_value_modifier = {
+				ai_energy = -0.5
+				ai_zeal = -2
+				ai_honor = -1
+				ai_greed = 0.25
 			}
 		}
 	}
