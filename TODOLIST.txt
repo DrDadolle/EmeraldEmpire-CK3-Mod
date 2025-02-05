@@ -27,10 +27,14 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 ##TEST TODO
 - test removing shield_effect_2 no error log
 - test vassal call upon great shadowlands invasion, how much are responding ?
+- Fix Inconsistent trigger scopes (landed_title vs. culture) infile: common/scripted_effects/l5r_struggle_effects.txt 
+	- test error log not appearing again
+- check shinsei last hop modifier
 
 ## CK3 1.13.* patch
-- Fix Inconsistent trigger scopes (landed_title vs. culture) infile: common/scripted_effects/l5r_struggle_effects.txt 
 - Shiro Kaikoga => Wrong religion & culture, why ?
+- Fix  japanese_sword japanese_armor artifact types	
+	- add shadowlands japanese sword with shadowlands_terrains_advantage ???
 - Fix era time line. 
 - ck3tiger fixes to do !
 - Why people can be eunuch ?! wtf even Dark Moto Tsume ?! 
@@ -144,6 +148,7 @@ https://cdn.discordapp.com/attachments/739793880010063893/1159210531832479815/MA
 - Black scrolls, cursed artifacts
 - Bunch of new events !
 - Shindoshi stuff 
+- Ask ivenend_zwei833 if can integrate "japanese weapons (for shogunate)" submod
 - Maho stuff (very low priority)
 	- Tomb of Iuchiban special building ?
 - Shadowlands stuff (very low priority)
