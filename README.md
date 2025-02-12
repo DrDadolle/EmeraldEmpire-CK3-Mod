@@ -1,4 +1,4 @@
-# What is RokuganModCK3 ?
+# What is Emerald Empire ?
 It is a CK3 Mod based on the Emerald Empire of Rokugan from the Card Game & TTRPG setting Legend of the Five Rings.
 
 This mod is in an early stage of development. Please note that many features are not yet implemented, stability is not guaranteed and bugs will occur. You can help by providing feedbacks on your playthroughs. \
