@@ -29,7 +29,7 @@
 
 # Special Titles
 # Unicorn Title naming
-rokugan_king_unicorn {
+rokugan_king_unicorn = {
 	type = character
 	gender = male
 	special = holder
@@ -41,7 +41,7 @@ rokugan_king_unicorn {
 	heritages = { heritage_unicorn }
 }
 
-rokugan_king_unicorn_female {
+rokugan_king_unicorn_female = {
 	type = character
 	gender = female
 	special = holder
@@ -53,7 +53,7 @@ rokugan_king_unicorn_female {
 	heritages = { heritage_unicorn }
 }
 
-rokugan_duke_unicorn {
+rokugan_duke_unicorn = {
 	type = character
 	gender = male
 	special = holder
@@ -65,7 +65,7 @@ rokugan_duke_unicorn {
 	heritages = { heritage_unicorn }
 }
 
-rokugan_duke_unicorn_female {
+rokugan_duke_unicorn_female = {
 	type = character
 	gender = female
 	special = holder
@@ -78,7 +78,7 @@ rokugan_duke_unicorn_female {
 }
 
 # Tortoise Title naming
-rokugan_king_tortoise {
+rokugan_king_tortoise = {
 	type = character
 	gender = male
 	special = holder
@@ -89,7 +89,7 @@ rokugan_king_tortoise {
 	}
 	heritages = { heritage_kasuga }
 }
-rokugan_king_tortoise_female {
+rokugan_king_tortoise_female = {
 	type = character
 	gender = female
 	special = holder
@@ -101,7 +101,7 @@ rokugan_king_tortoise_female {
 	heritages = { heritage_kasuga }
 }
 
-rokugan_duke_tortoise {
+rokugan_duke_tortoise = {
 	type = character
 	gender = male
 	special = holder
@@ -113,7 +113,7 @@ rokugan_duke_tortoise {
 	heritages = { heritage_kasuga }
 }
 
-rokugan_duke_tortoise_female {
+rokugan_duke_tortoise_female = {
 	type = character
 	gender = female
 	special = holder

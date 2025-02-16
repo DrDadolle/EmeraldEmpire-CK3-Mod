@@ -1059,7 +1059,7 @@ e_rokugan = {
 				 b_friendly_traveler_village = {
                      province = 176
                  }
-				 b_watch_tower_east {
+				 b_watch_tower_east = {
 					province = 177
 				 }
             }
@@ -1073,10 +1073,10 @@ e_rokugan = {
 				 b_fundai_village = {
                      province = 179
                  }
-				 b_shiro_kano {
+				 b_shiro_kano = {
 					province = 180
 				 }
-				 b_yasuki_hanko {
+				 b_yasuki_hanko = {
 					province = 181
 				 }
             }
