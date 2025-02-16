@@ -652,6 +652,24 @@ poi_battles_historical = {
 		# 	limit = { game_start_date > 1071.8.26 }
 		# 	province:701 = { add_to_list = provinces }
 		# }
+		#L5R Added
+		if = { # Victory with no strike
+			limit = { game_start_date > 353.1.1 }
+			province:37 = { add_to_list = provinces }
+		}
+		if = { # Battle of Stolen Graves
+			limit = { game_start_date > 510.1.1 }
+			province:140 = { add_to_list = provinces }
+		}
+		if = { # Battle of the Cresting Wave
+			limit = { game_start_date > 716.1.1 }
+			province:191 = { add_to_list = provinces }
+		}
+		if = { # Battle of White Shore Plain
+			limit = { game_start_date > 815.1.1 }
+			province:232 = { add_to_list = provinces }
+		}
+
 	}
 
 	on_visit = {
@@ -713,6 +731,15 @@ poi_battles_historical = {
 								# province:2605 = { battle_poi_trait_effect = { TRAIT = open_terrain_expert } }
 								# # Battle of Talas
 								# province:7132 = { battle_poi_trait_effect = { TRAIT = desert_warrior } }
+								#L5R Added
+								# Victory with no Strike
+								province:37 = { battle_poi_trait_effect = { TRAIT = unyielding_defender } }
+								# Battle of Stolen Graves
+								province:140 = { battle_poi_trait_effect = { TRAIT = holy_warrior } }
+								# Battle of the Cresting Wave
+								province:191 = { battle_poi_trait_effect = { TRAIT = unyielding_defender } }
+								# Battle of White Shore Plain
+								province:232 = { battle_poi_trait_effect = { TRAIT = open_terrain_expert } }
 							}
 						}
 						set_variable = battle_poi_trait_gained

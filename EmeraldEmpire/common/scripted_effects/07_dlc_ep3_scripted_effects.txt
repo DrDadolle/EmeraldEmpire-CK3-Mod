@@ -2679,13 +2679,15 @@ points_of_interest_tracker_effect = {
 						province_owner.top_liege.capital_province ?= this
 						province_owner.top_liege ?= { highest_held_title_tier >= tier_kingdom }
 					}
+					#L5R Modified
 					# Grand Cities
-					this = province:4828 #Baghdad
-					this = province:2575 #Rome
-					this = province:496 #Constantinople
+					this = province:139 #Otosan Uchi
+					# this = province:4828 #Baghdad
+					# this = province:2575 #Rome
+					# this = province:496 #Constantinople
 					# Points of interest
-					this = province:747 # Halikarnassos
-					this = province:6053 # Alexandria
+					# this = province:747 # Halikarnassos
+					# this = province:6053 # Alexandria
 					# Legend stuff
 					any_legend = {
 						legend_owner.capital_province ?= scope:province_temp
